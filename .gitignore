@@ -1,0 +1,28 @@
+# Ignore all git submodules (separate repos)
+The office/
+ai-venture-studio-template/
+autonomous-venture-studio/
+business-template-marketplace/
+bw-001-lash-extension-studio/
+civilization-os-local/
+Claude/
+con-001-ace-construction/
+iza-os-rag-system/
+mcp-dashboard/
+pitch-kit/
+SecondBrain/
+venture-factory-core/
+venture-hub/
+data/
+
+# System files
+.DS_Store
+.localized
+*.orig
+
+# IDE settings
+.vscode/
+.idea/
+
+# Node modules
+node_modules/
