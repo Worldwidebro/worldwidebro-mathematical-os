@@ -1,0 +1,92 @@
+[
+  {
+    "timestamp": "2026-05-11T22:40:10.907529",
+    "event_type": "metrics_loaded",
+    "data": {
+      "venture_id": "FIN-001-GenixBank-Lite",
+      "timestamp": "2026-05-11T22:40:10.907417",
+      "monthly_revenue": 12500,
+      "monthly_costs": 8200,
+      "active_customers": 145,
+      "new_customers_mom": 18,
+      "churn_rate": 0.04,
+      "marketing_spend_mom": 2500,
+      "runway_months": 6.2
+    }
+  },
+  {
+    "timestamp": "2026-05-11T22:40:10.907548",
+    "event_type": "analysis_complete",
+    "data": {
+      "venture_id": "FIN-001-GenixBank-Lite",
+      "timestamp": "2026-05-11T22:40:10.907536",
+      "metrics": {
+        "venture_id": "FIN-001-GenixBank-Lite",
+        "timestamp": "2026-05-11T22:40:10.907417",
+        "monthly_revenue": 12500,
+        "monthly_costs": 8200,
+        "active_customers": 145,
+        "new_customers_mom": 18,
+        "churn_rate": 0.04,
+        "marketing_spend_mom": 2500,
+        "runway_months": 6.2
+      },
+      "cac": 138.89,
+      "ltv": 25862.07,
+      "cac_ltv_ratio": 186.21,
+      "gross_margin": 0.344,
+      "runway_months": 6.2,
+      "health_score": 100,
+      "assessment": "\ud83d\udfe2 HEALTHY: Strong unit economics"
+    }
+  },
+  {
+    "timestamp": "2026-05-11T22:40:10.907555",
+    "event_type": "decision_made",
+    "data": {
+      "venture_id": "FIN-001-GenixBank-Lite",
+      "timestamp": "2026-05-11T22:40:10.907552",
+      "decision": "scale",
+      "reasoning": "Strong fundamentals. Aggressive scaling recommended.",
+      "capital_allocation": 10000,
+      "timeline": "Immediate"
+    }
+  },
+  {
+    "timestamp": "2026-05-11T22:40:10.907560",
+    "event_type": "execution_queued",
+    "data": {
+      "decision_id": "2026-05-11T22:40:10.907552",
+      "venture_id": "FIN-001-GenixBank-Lite",
+      "decision": "scale",
+      "tasks_queued": 3,
+      "tasks": [
+        {
+          "title": "Increase marketing budget",
+          "priority": "high",
+          "owner": "PM"
+        },
+        {
+          "title": "Hire customer success lead",
+          "priority": "high",
+          "owner": "HR"
+        },
+        {
+          "title": "Plan product roadmap Q3",
+          "priority": "medium",
+          "owner": "PM"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2026-05-11T22:40:10.907562",
+    "event_type": "execution_started",
+    "data": {
+      "venture_id": "FIN-001-GenixBank-Lite",
+      "tasks_started": 3,
+      "tasks_completed": 3,
+      "status": "in_progress"
+    }
+  }
+]

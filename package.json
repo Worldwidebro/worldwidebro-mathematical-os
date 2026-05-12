@@ -1,0 +1,33 @@
+{
+  "name": "vapi-ai-calling-system",
+  "version": "1.0.0",
+  "description": "Autonomous voice agent system for B2B sales (E-Commerce, Tech, Beauty)",
+  "main": "webhook-server.js",
+  "scripts": {
+    "start": "node webhook-server.js",
+    "dev": "nodemon webhook-server.js",
+    "test": "echo 'Running tests...'",
+    "setup": "npm install && cp .env.example .env && echo 'Setup complete. Edit .env with your credentials.'"
+  },
+  "keywords": [
+    "vapi",
+    "ai-sales",
+    "voice-agents",
+    "sdrs",
+    "b2b-sales"
+  ],
+  "author": "Worldwidebro Holdings",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.95.1",
+    "@composio/core": "^0.9.0",
+    "@supabase/supabase-js": "^2.38.0",
+    "axios": "^1.6.0",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

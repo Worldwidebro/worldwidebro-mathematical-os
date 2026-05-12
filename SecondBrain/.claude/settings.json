@@ -1,0 +1,43 @@
+{
+  "env": {
+    "VAULT_PATH": "/Users/acebless/Library/Mobile Documents/com~apple~CloudDocs/Documents/Obsidian Vault",
+    "IZA_RAG_URL": "http://localhost:8000",
+    "IZA_RAG_DIR": "/Users/acebless/Documents/iza-os-rag-system"
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"hookSpecificOutput\": {\"hookEventName\": \"SessionStart\", \"additionalContext\": \"VAULT CONTEXT: The Obsidian vault is at /Users/acebless/Library/Mobile Documents/com~apple~CloudDocs/Documents/Obsidian Vault (2,200+ notes). This SecondBrain directory is empty — always use the full iCloud path for vault operations. LightRAG server: http://localhost:8000 (start: cd /Users/acebless/Documents/iza-os-rag-system && source .venv/bin/activate && python3 -m src.serve). See CLAUDE.md for full context.\"}}'"
+          }
+        ]
+      }
+    ]
+  },
+  "permissions": {
+    "additionalDirectories": [
+      "/Users/acebless/Library/Mobile Documents/com~apple~CloudDocs/Documents/Obsidian Vault",
+      "/Users/acebless/Documents/iza-os-rag-system"
+    ]
+  },
+  "mcpServers": {
+    "vault-filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/Users/acebless/Library/Mobile Documents/com~apple~CloudDocs/Documents/Obsidian Vault"
+      ]
+    },
+    "iza-rag-filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/Users/acebless/Documents/iza-os-rag-system"
+      ]
+    }
+  }
+}

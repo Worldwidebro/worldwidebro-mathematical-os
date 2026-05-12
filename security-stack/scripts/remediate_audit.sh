@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+# Applies repo-local remediations that do not require cloud-specific secrets.
+set -euo pipefail
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+cd "$ROOT"
+
+echo "=== Remediation checklist (manual steps required) ==="
+echo ""
+echo "1) Docker: Postgres/Redis have NO host ports in docker/docker-compose.yml — recreate stack:"
+echo "     cd docker && docker compose up -d --force-recreate"
+echo ""
+echo "2) Firewall: block metadata egress + optional HTTP:"
+echo "     sudo ADMIN_SSH_SOURCE=x.x.x.x ALLOW_PUBLIC_HTTP=0 ./scripts/iptables_rules.sh"
+echo ""
+echo "3) OpenBao: production init (no dev root token):"
+echo "     ./scripts/openbao_production.sh"
+echo ""
+echo "4) Host: swap/kernel (optional, review before swapoff):"
+echo "     See docs/EXPOSURE_AUDIT.md"
+echo ""
+echo "5) Secrets: migrate .env → OpenBao / Infisical; delete local .env from servers."
+echo ""
+echo "6) Run audit:"
+echo "     sudo ./scripts/security_audit.sh"
+echo ""
