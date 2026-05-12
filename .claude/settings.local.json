@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s https://api.github.com/repos/Worldwidebro/resume)",
+      "Bash(curl -s https://api.github.com/repos/Worldwidebro/divine-johns-portfolio)",
+      "Bash(curl -s https://api.github.com/repos/Worldwidebro/fin-023-investment-portfolio-ai)",
+      "Bash(curl -s https://api.github.com/repos/Worldwidebro/tech-ventures-portfolio)",
+      "WebFetch(domain:github.com)",
+      "Bash(env)",
+      "Bash(python3 src/ingest.py --help)",
+      "Bash(python3 -m src.ingest --source vault)",
+      "Bash(PYTHONPATH=/Users/acebless/Documents/iza-os-rag-system python3 src/ingest.py --source ventures)",
+      "Bash(curl -s http://100.87.214.70:11434/api/tags)",
+      "Bash(python3.12 --version)",
+      "Bash(python3.11 --version)",
+      "Bash(PYTHONPATH=/Users/acebless/Documents/iza-os-rag-system python3.12 src/ingest.py --source ventures)"
+    ]
+  }
+}

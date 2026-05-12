@@ -1,0 +1,21 @@
+# T17 — Example Loki ruler rules (adapt to LogQL + your labels).
+groups:
+  - name: openclaw_security
+    rules:
+      - alert: OpenClawPromptInjection
+        expr: |
+          sum(count_over_time({job="openclaw"} |= "override security" [5m])) > 0
+        for: 1m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Possible prompt-injection phrase in OpenClaw logs"
+
+      - alert: OpenClawToolAbuse
+        expr: |
+          sum(count_over_time({job="openclaw"} |~ "(?i)(curl|wget|ncat|base64).*exfil" [5m])) > 3
+        for: 2m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Elevated suspicious tool patterns in OpenClaw logs"

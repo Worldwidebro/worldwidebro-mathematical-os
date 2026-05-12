@@ -1,0 +1,138 @@
+{
+  "name": "Task Executor",
+  "description": "Executes queued tasks based on task_type. Handles osint_contact, score_venture, and cold_outreach tasks.",
+  "trigger": "webhook",
+  "trigger_config": {
+    "type": "custom_webhook",
+    "endpoint": "task_executor_webhook"
+  },
+  "steps": [
+    {
+      "id": "step_1",
+      "name": "Get task from webhook payload",
+      "action": "javascript",
+      "config": {
+        "script": "return {task_id: data.task_id, task_type: data.task_type, payload: data.payload};"
+      },
+      "output": "task_info"
+    },
+    {
+      "id": "step_2",
+      "name": "Update task status to executing",
+      "action": "supabase_update",
+      "config": {
+        "table": "aoc_tasks",
+        "filter": {
+          "id": "{{task_info.task_id}}"
+        },
+        "data": {
+          "status": "executing",
+          "started_at": "{{now()}}"
+        }
+      },
+      "output": "task_updated"
+    },
+    {
+      "id": "step_3",
+      "name": "Route by task type",
+      "action": "javascript",
+      "config": {
+        "script": "return {type: task_info.task_type};"
+      },
+      "output": "task_type"
+    },
+    {
+      "id": "step_4",
+      "name": "Execute osint_contact task",
+      "action": "http_request",
+      "config": {
+        "url": "http://localhost:9024/mcp/query_graph",
+        "method": "POST",
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "query": "MATCH (c:Contact {id: '{{task_info.payload.contact_id}}'})-[r:KNOWS]-(v:Venture {id: '{{task_info.payload.venture_id}}'}) RETURN c, r, v",
+          "task_type": "osint_contact"
+        }
+      },
+      "condition": "task_type.type == 'osint_contact'",
+      "output": "osint_result"
+    },
+    {
+      "id": "step_5",
+      "name": "Execute score_venture task",
+      "action": "http_request",
+      "config": {
+        "url": "http://100.87.214.70:11434/api/generate",
+        "method": "POST",
+        "body": {
+          "model": "qwen2.5:32b",
+          "prompt": "Score venture {{task_info.payload.venture_id}} on completeness (0-100). Consider: roles filled, capabilities assigned, customer acquisition started. Return JSON with score and reasoning.",
+          "stream": false
+        }
+      },
+      "condition": "task_type.type == 'score_venture'",
+      "output": "score_result"
+    },
+    {
+      "id": "step_6",
+      "name": "Execute cold_outreach task",
+      "action": "javascript",
+      "config": {
+        "script": "return {contact_name: task_info.payload.contact_name, venture_id: task_info.payload.venture_id, script: 'Cold outreach to ' + task_info.payload.contact_name + ' for ' + task_info.payload.venture_id};"
+      },
+      "condition": "task_type.type == 'cold_outreach'",
+      "output": "outreach_result"
+    },
+    {
+      "id": "step_7",
+      "name": "Determine execution result",
+      "action": "javascript",
+      "config": {
+        "script": "let result = null; if (task_type.type === 'osint_contact' && osint_result) result = osint_result; else if (task_type.type === 'score_venture' && score_result) result = score_result; else if (task_type.type === 'cold_outreach' && outreach_result) result = outreach_result; return {success: result !== null, result: result};"
+      },
+      "output": "execution_result"
+    },
+    {
+      "id": "step_8",
+      "name": "Update task to complete",
+      "action": "supabase_update",
+      "config": {
+        "table": "aoc_tasks",
+        "filter": {
+          "id": "{{task_info.task_id}}"
+        },
+        "data": {
+          "status": "complete",
+          "result": "{{execution_result.result}}",
+          "completed_at": "{{now()}}"
+        }
+      },
+      "condition": "execution_result.success",
+      "output": "task_completed"
+    },
+    {
+      "id": "step_9",
+      "name": "Handle execution error",
+      "action": "supabase_update",
+      "config": {
+        "table": "aoc_tasks",
+        "filter": {
+          "id": "{{task_info.task_id}}"
+        },
+        "data": {
+          "status": "failed",
+          "error_message": "Execution failed for task type: {{task_type.type}}",
+          "completed_at": "{{now()}}"
+        }
+      },
+      "condition": "!execution_result.success",
+      "output": "task_failed"
+    }
+  ],
+  "error_handling": {
+    "on_error": "send_alert",
+    "alert_email": "winnerscirclewcllc@gmail.com"
+  }
+}

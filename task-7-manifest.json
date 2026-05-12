@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-05-11T22:39:57.629868",
+  "ventures_loaded": 712,
+  "sectors": 18,
+  "sectors_breakdown": {
+    "financial": 41,
+    "beauty-wellness": 40,
+    "food-hospitality": 35,
+    "fitness-sports": 25,
+    "logistics-transport": 30,
+    "professional-services": 25,
+    "media-content": 21,
+    "education-training": 16,
+    "software-technology": 30,
+    "e-commerce": 110,
+    "technology": 61,
+    "operations": 67,
+    "education": 40,
+    "community": 50,
+    "emerging": 50,
+    "specialized": 50,
+    "construction": 20,
+    "real-estate": 1
+  },
+  "total_budget_allocated": 1087500,
+  "mode": "full"
+}

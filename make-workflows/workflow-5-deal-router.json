@@ -1,0 +1,147 @@
+{
+  "name": "Deal Router",
+  "description": "Routes high-fit contact-venture pairs to deal execution. Generates scripts, assigns to you or agents, creates ClickUp tasks.",
+  "trigger": "webhook",
+  "trigger_config": {
+    "type": "custom_webhook",
+    "endpoint": "deal_router_webhook"
+  },
+  "steps": [
+    {
+      "id": "step_1",
+      "name": "Get contact-venture fit from webhook",
+      "action": "javascript",
+      "config": {
+        "script": "return {contact_id: data.contact_id, venture_id: data.venture_id, fit_score: data.fit_score, warmth_score: data.warmth_score};"
+      },
+      "output": "deal_pair"
+    },
+    {
+      "id": "step_2",
+      "name": "Filter: only route high-fit pairs (fit_score > 0.7)",
+      "action": "javascript",
+      "config": {
+        "script": "return deal_pair.fit_score > 0.7;"
+      },
+      "output": "should_route"
+    },
+    {
+      "id": "step_3",
+      "name": "Get contact details from Supabase",
+      "action": "supabase_query",
+      "config": {
+        "table": "contacts",
+        "columns": ["id", "name", "email", "phone", "sector", "warmth_score"],
+        "filter": {
+          "id": "{{deal_pair.contact_id}}"
+        }
+      },
+      "output": "contact_data"
+    },
+    {
+      "id": "step_4",
+      "name": "Get venture details from Supabase",
+      "action": "supabase_query",
+      "config": {
+        "table": "ventures",
+        "columns": ["id", "name", "description", "sector", "revenue_potential", "stage"],
+        "filter": {
+          "id": "{{deal_pair.venture_id}}"
+        }
+      },
+      "output": "venture_data"
+    },
+    {
+      "id": "step_5",
+      "name": "Generate cold outreach script (Ollama)",
+      "action": "http_request",
+      "config": {
+        "url": "http://100.87.214.70:11434/api/generate",
+        "method": "POST",
+        "body": {
+          "model": "qwen2.5:32b",
+          "prompt": "Generate a 3-sentence cold outreach script for {{contact_data[0].name}} ({{contact_data[0].sector}} background) about {{venture_data[0].name}} ({{venture_data[0].description}}). Make it personalized, specific to their sector expertise, mention 1 key pain point the venture solves. Format: {script: string, hook: string, cta: string}",
+          "stream": false
+        }
+      },
+      "condition": "should_route",
+      "output": "outreach_script"
+    },
+    {
+      "id": "step_6",
+      "name": "Determine assignment (warmth > 80 → you, else → sector agent)",
+      "action": "javascript",
+      "config": {
+        "script": "const assigned_to = deal_pair.warmth_score > 80 ? 'you' : 'sector_agent_' + contact_data[0].sector; return {assigned_to, warmth_threshold_met: deal_pair.warmth_score > 80};"
+      },
+      "condition": "should_route",
+      "output": "assignment"
+    },
+    {
+      "id": "step_7",
+      "name": "Create cold_outreach task in aoc_tasks",
+      "action": "supabase_insert",
+      "config": {
+        "table": "aoc_tasks",
+        "data": {
+          "task_type": "cold_outreach",
+          "venture_id": "{{deal_pair.venture_id}}",
+          "contact_id": "{{deal_pair.contact_id}}",
+          "assigned_agent": "{{assignment.assigned_to}}",
+          "status": "queued",
+          "priority": "{{deal_pair.fit_score > 0.85 ? 9 : 8}}",
+          "payload": {
+            "contact_name": "{{contact_data[0].name}}",
+            "contact_email": "{{contact_data[0].email}}",
+            "venture_id": "{{deal_pair.venture_id}}",
+            "venture_name": "{{venture_data[0].name}}",
+            "script": "{{outreach_script.script}}",
+            "hook": "{{outreach_script.hook}}",
+            "cta": "{{outreach_script.cta}}",
+            "fit_score": "{{deal_pair.fit_score}}",
+            "warmth_score": "{{deal_pair.warmth_score}}"
+          },
+          "due_at": "{{now() + 1 day}}"
+        }
+      },
+      "condition": "should_route",
+      "output": "aoc_task_created"
+    },
+    {
+      "id": "step_8",
+      "name": "Create ClickUp task for human review (if warmth > 80)",
+      "action": "http_request",
+      "config": {
+        "url": "https://api.clickup.com/api/v2/list/{{CLICKUP_LIST_ID}}/task",
+        "method": "POST",
+        "headers": {
+          "Authorization": "Bearer {{CLICKUP_API_TOKEN}}",
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "name": "Warm Intro: {{contact_data[0].name}} → {{venture_data[0].name}}",
+          "description": "High-warmth contact ({{deal_pair.warmth_score}}/100) fit for {{venture_data[0].name}}.\n\nContact: {{contact_data[0].name}} ({{contact_data[0].email}})\nVenture: {{venture_data[0].name}}\nRevenue Potential: {{venture_data[0].revenue_potential}}\nStage: {{venture_data[0].stage}}\n\nScript:\n{{outreach_script.script}}\n\nFit Score: {{deal_pair.fit_score}}\nWarmth Score: {{deal_pair.warmth_score}}",
+          "priority": "{{deal_pair.fit_score > 0.85 ? 1 : 2}}",
+          "due_date": "{{now() + 6 hours}}"
+        }
+      },
+      "condition": "should_route && assignment.warmth_threshold_met",
+      "output": "clickup_task_created"
+    },
+    {
+      "id": "step_9",
+      "name": "Send routing notification",
+      "action": "gmail_send",
+      "config": {
+        "to": "{{assignment.assigned_to == 'you' ? 'winnerscirclewcllc@gmail.com' : 'agents@example.com'}}",
+        "subject": "Deal Route: {{contact_data[0].name}} → {{venture_data[0].name}} ({{(deal_pair.fit_score * 100) | round}}% fit)",
+        "body": "Contact: {{contact_data[0].name}} ({{contact_data[0].email}})\nSector: {{contact_data[0].sector}}\nWarmth: {{deal_pair.warmth_score}}/100\n\nVenture: {{venture_data[0].name}}\nRevenue Potential: {{venture_data[0].revenue_potential}}\nStage: {{venture_data[0].stage}}\n\nFit Score: {{deal_pair.fit_score}}\nAssigned To: {{assignment.assigned_to}}\n\nScript:\n{{outreach_script.script}}\n\nAction: {{assignment.warmth_threshold_met ? 'ClickUp task created for immediate follow-up' : 'Queued for agent execution'}}"
+      },
+      "condition": "should_route"
+    }
+  ],
+  "error_handling": {
+    "on_error": "continue",
+    "log_errors": true
+  }
+}
