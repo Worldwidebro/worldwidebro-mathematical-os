@@ -5,6 +5,19 @@ Connects: Supabase (data) → Ollama (reasoning) → CEO logic → Composio (exe
 
 This is the single source of truth for agent autonomy. Runs 24/7 decision loop.
 Tasks 9, 10, 14 all use this loop.
+
+DECISION AUTHORITY HIERARCHY:
+  CEO (Final Authority) - Makes KILL, OPTIMIZE, SCALE, COMPOUND decisions
+  ├── Financial Analyst (CFO) - OWNS all metrics: CAC, LTV, churn, margin, burn, health score
+  ├── Operations Manager (CTO) - Executes decisions, escalates operational risks
+  └── Sector PMs (4 leads) - Manage ventures in their sector, escalate via Ops Manager
+
+Authority Rules:
+  - CFO calculates ALL financial metrics (no other agent does)
+  - Ops Manager requests metrics from CFO, does NOT calculate
+  - Sector PMs request metrics from CFO for their ventures
+  - CEO receives metrics ONLY from CFO
+  - Risk escalation: Financial → CFO → Ops Manager → CEO
 """
 
 import os
@@ -198,21 +211,70 @@ class AgentControlLoop:
         return decision
 
     def composio_execute(self, decision: AgentDecision) -> Dict[str, Any]:
-        """Execute decision through Composio command router"""
+        """Execute decision through Operations Manager execution layers:
+        Lead Activation → SMS Messaging → Outreach & Acquisition → Composio command router
 
-        # Map decision to Composio commands
-        commands = {
-            "KILL": ["venture_kill", "reallocate_budget"],
-            "OPTIMIZE": ["reduce_burn", "optimize_channels"],
-            "SCALE": ["increase_budget", "hire_team"],
-            "COMPOUND": ["reinvest_profits", "expand_markets"]
+        Execution Hierarchy:
+          CEO Decision (KILL/OPTIMIZE/SCALE/COMPOUND)
+            ↓ Ops Manager receives with capital allocation
+            ↓ Dispatch to execution teams
+            ├─ Lead Activation Team (identify high-intent leads)
+            ├─ SMS Messaging Service (send campaigns)
+            └─ Outreach & Acquisition Team (direct outreach, track CAC)
+            ↓ Route through Composio for cross-platform commands
+        """
+
+        # Map decision to execution teams + Composio commands
+        execution_plan = {
+            "KILL": {
+                "teams": ["lead_activation_pause", "sms_halt"],
+                "composio": ["venture_kill", "reallocate_budget"]
+            },
+            "OPTIMIZE": {
+                "teams": ["lead_activation_retarget", "sms_optimize_messages"],
+                "composio": ["reduce_burn", "optimize_channels"]
+            },
+            "SCALE": {
+                "teams": ["lead_activation_expand_segment", "sms_increase_volume", "outreach_hire_team"],
+                "composio": ["increase_budget", "hire_team"]
+            },
+            "COMPOUND": {
+                "teams": ["lead_activation_aggressive", "sms_multi_channel", "outreach_expansion"],
+                "composio": ["reinvest_profits", "expand_markets"]
+            }
         }
 
+        plan = execution_plan.get(decision.decision_type, {"teams": [], "composio": []})
         execution_results = {}
 
-        for cmd in commands.get(decision.decision_type, []):
+        # Step 1: Execute via Ops Manager execution teams
+        for team_cmd in plan["teams"]:
             try:
-                # Send to Composio for execution
+                payload = {
+                    "command": team_cmd,
+                    "venture_id": decision.venture_id,
+                    "capital": decision.capital_allocation,
+                    "actions": decision.action_items,
+                    "team": self._get_team_from_command(team_cmd)
+                }
+
+                response = requests.post(
+                    f"{COMPOSIO_URL}/execute",
+                    json=payload,
+                    timeout=10
+                )
+
+                execution_results[team_cmd] = {
+                    "status": "queued" if response.status_code == 200 else "failed",
+                    "response": response.json() if response.status_code == 200 else str(response.text)
+                }
+
+            except Exception as e:
+                execution_results[team_cmd] = {"status": "error", "error": str(e)}
+
+        # Step 2: Execute Composio commands
+        for cmd in plan["composio"]:
+            try:
                 payload = {
                     "command": cmd,
                     "venture_id": decision.venture_id,
@@ -235,6 +297,16 @@ class AgentControlLoop:
                 execution_results[cmd] = {"status": "error", "error": str(e)}
 
         return execution_results
+
+    def _get_team_from_command(self, cmd: str) -> str:
+        """Extract team name from execution command"""
+        if "lead_activation" in cmd:
+            return "Lead Activation Team"
+        elif "sms" in cmd:
+            return "SMS Messaging Service"
+        elif "outreach" in cmd:
+            return "Outreach & Acquisition Team"
+        return "Unknown Team"
 
     def audit_log(self, decision: AgentDecision, execution: Dict[str, Any]):
         """Log decision and execution to aoc_tasks for complete audit trail"""
