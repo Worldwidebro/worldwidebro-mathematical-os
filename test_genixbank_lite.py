@@ -73,68 +73,60 @@ class VentureMetrics:
         }
 
 # ============================================================================
-# FINANCIAL ANALYST AGENT
+# FINANCIAL ANALYST AGENT (Enhanced with Network Intelligence)
 # ============================================================================
 
+from financial_analyst_v2 import FinancialAnalystV2
+
 class FinancialAnalystAgent:
-    """Calculate unit economics and financial health"""
+    """Calculate unit economics and financial health with network intelligence"""
 
     def __init__(self):
         self.name = "Financial Analyst Agent"
+        self.v2_analyzer = FinancialAnalystV2()
 
-    def analyze(self, venture_id, metrics):
-        """Analyze unit economics"""
-        print(f"\n📊 {self.name} analyzing {venture_id}...")
+    def analyze(self, venture_id, metrics, synergies=None):
+        """Analyze unit economics + network effects"""
+        if synergies is None:
+            synergies = []
 
-        # Calculate CAC (Customer Acquisition Cost)
-        cac = metrics.marketing_spend_mom / metrics.new_customers_mom if metrics.new_customers_mom > 0 else 0
+        # Run full v2 analysis
+        full_analysis = self.v2_analyzer.analyze_venture(venture_id, metrics, synergies)
 
-        # Calculate LTV (Lifetime Value)
-        # Simple model: revenue per customer per month * expected lifetime
-        revenue_per_customer = metrics.monthly_revenue / metrics.active_customers
-        expected_lifetime_months = 12 / metrics.churn_rate if metrics.churn_rate > 0 else 12
-        ltv = revenue_per_customer * expected_lifetime_months
-
-        # Calculate margin
-        gross_margin = (metrics.monthly_revenue - metrics.monthly_costs) / metrics.monthly_revenue
-
-        # Health assessment
-        cac_ltv_ratio = ltv / cac if cac > 0 else 0
-        health_score = min(100, cac_ltv_ratio * 20)  # Scale to 100
-
+        # Format for compatibility with CEO decision
         analysis = {
             'venture_id': venture_id,
-            'timestamp': datetime.utcnow().isoformat(),
-            'metrics': metrics.to_dict(),
-            'cac': round(cac, 2),
-            'ltv': round(ltv, 2),
-            'cac_ltv_ratio': round(cac_ltv_ratio, 2),
-            'gross_margin': round(gross_margin, 3),
-            'runway_months': round(metrics.runway_months, 1),
-            'health_score': round(health_score, 1),
-            'assessment': self._assess_health(cac_ltv_ratio, gross_margin, metrics.runway_months),
+            'timestamp': full_analysis['timestamp'],
+            'metrics': full_analysis['metrics'],
+            # Unit economics
+            'cac': full_analysis['cac'],
+            'ltv': full_analysis['ltv'],
+            'cac_ltv_ratio': full_analysis['cac_ltv_ratio'],
+            'gross_margin': full_analysis['gross_margin'],
+            'runway_months': full_analysis['runway_months'],
+            # Network intelligence
+            'degree_centrality': full_analysis['degree_centrality'],
+            'network_density': full_analysis['network_density'],
+            'network_value': full_analysis['network_value'],
+            # Risk metrics
+            'portfolio_variance': full_analysis['portfolio_variance'],
+            'fragility_score': full_analysis['fragility_score'],
+            # Probability & system
+            'success_probability': full_analysis['success_probability'],
+            'system_value': full_analysis['system_value'],
+            # Health assessment
+            'health_score': full_analysis['health_score'],
+            'assessment': full_analysis['assessment'],
         }
 
-        print(f"   CAC: ${analysis['cac']}")
-        print(f"   LTV: ${analysis['ltv']}")
-        print(f"   LTV/CAC Ratio: {analysis['cac_ltv_ratio']}x (target: 3x+)")
-        print(f"   Gross Margin: {analysis['gross_margin']:.1%}")
-        print(f"   Runway: {analysis['runway_months']} months")
-        print(f"   Health: {analysis['health_score']}/100")
-        print(f"   Assessment: {analysis['assessment']}")
+        # Print enhanced metrics
+        print(f"   Unit Economics: CAC ${analysis['cac']} | LTV ${analysis['ltv']} | Ratio {analysis['cac_ltv_ratio']}x")
+        print(f"   Network Position: Degree {analysis['degree_centrality']} | Density {analysis['network_density']:.1%}")
+        print(f"   Risk Assessment: Fragility {analysis['fragility_score']:.0%} | Variance {analysis['portfolio_variance']:.4f}")
+        print(f"   Probability: Success {analysis['success_probability']:.0%} | System Value {analysis['system_value']:.1f}")
+        print(f"   Health: {analysis['health_score']}/100 — {analysis['assessment']}")
 
         return analysis
-
-    def _assess_health(self, cac_ltv_ratio, gross_margin, runway):
-        """Simple health assessment"""
-        if cac_ltv_ratio < 1:
-            return "🔴 CRITICAL: Unprofitable unit economics"
-        elif cac_ltv_ratio < 2:
-            return "🟡 WARNING: Below 2x LTV/CAC target"
-        elif cac_ltv_ratio < 3:
-            return "🟠 MONITOR: Below 3x target but viable"
-        else:
-            return "🟢 HEALTHY: Strong unit economics"
 
 # ============================================================================
 # CEO AGENT
