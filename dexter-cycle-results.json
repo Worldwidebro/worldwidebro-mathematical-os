@@ -1,0 +1,72 @@
+{
+  "timestamp": "2026-05-15T18:19:23.724940",
+  "cycle_duration_hours": 24,
+  "layer_1": {
+    "ventures_analyzed": 5,
+    "synergies_identified": 1,
+    "network_density": 0.1,
+    "network_value": 3.75
+  },
+  "layer_2": {
+    "portfolio_variance": 0.0037500000000000007,
+    "portfolio_fragility": 0.00830748781568454,
+    "avg_margin": 0.4513999999999999,
+    "avg_health": 100.0,
+    "avg_fragility": 0.2,
+    "sector_concentration": 0.28,
+    "correlated_failure_probability": 0.04101850321040063
+  },
+  "layer_3": {
+    "total_capital_allocated": 500000.0,
+    "synergy_structures": 1
+  },
+  "layer_4": {
+    "decisions": {
+      "scale": 4,
+      "hold": 0,
+      "kill": 1
+    },
+    "by_sector": {
+      "ecommerce": {
+        "count": 2,
+        "kill": 1,
+        "hold": 0,
+        "scale": 1,
+        "total_capital": 8365,
+        "avg_health": 100.0,
+        "avg_success": 1.0
+      },
+      "financial": {
+        "count": 1,
+        "kill": 0,
+        "hold": 0,
+        "scale": 1,
+        "total_capital": 3810,
+        "avg_health": 100.0,
+        "avg_success": 1.0
+      },
+      "saas": {
+        "count": 1,
+        "kill": 0,
+        "hold": 0,
+        "scale": 1,
+        "total_capital": 8880,
+        "avg_health": 100.0,
+        "avg_success": 1.0
+      },
+      "construction": {
+        "count": 1,
+        "kill": 0,
+        "hold": 0,
+        "scale": 1,
+        "total_capital": 9393,
+        "avg_health": 100.0,
+        "avg_success": 1.0
+      }
+    }
+  },
+  "layer_5": {
+    "tasks_queued": 14,
+    "next_cycle": "2026-05-16T18:19:23.724932"
+  }
+}
