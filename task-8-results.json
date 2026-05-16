@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-05-11T22:40:10.907815",
+  "timestamp": "2026-05-14T00:22:02.081163",
   "venture_id": "FIN-001-GenixBank-Lite",
   "test_status": "PASSED",
   "metrics": {
     "venture_id": "FIN-001-GenixBank-Lite",
-    "timestamp": "2026-05-11T22:40:10.907417",
+    "timestamp": "2026-05-14T00:22:02.080678",
     "monthly_revenue": 12500,
     "monthly_costs": 8200,
     "active_customers": 145,
@@ -15,10 +15,10 @@
   },
   "analysis": {
     "venture_id": "FIN-001-GenixBank-Lite",
-    "timestamp": "2026-05-11T22:40:10.907536",
+    "timestamp": "2026-05-14T00:22:02.080810",
     "metrics": {
       "venture_id": "FIN-001-GenixBank-Lite",
-      "timestamp": "2026-05-11T22:40:10.907417",
+      "timestamp": "2026-05-14T00:22:02.080678",
       "monthly_revenue": 12500,
       "monthly_costs": 8200,
       "active_customers": 145,
@@ -32,19 +32,26 @@
     "cac_ltv_ratio": 186.21,
     "gross_margin": 0.344,
     "runway_months": 6.2,
+    "degree_centrality": 0.0,
+    "network_density": 0.0,
+    "network_value": 0.0,
+    "portfolio_variance": 0.0002,
+    "fragility_score": 0.0,
+    "success_probability": 1.0,
+    "system_value": -0.2,
     "health_score": 100,
-    "assessment": "\ud83d\udfe2 HEALTHY: Strong unit economics"
+    "assessment": "\ud83d\udfe1 GOOD: Solid metrics, monitor risk exposure"
   },
   "decision": {
     "venture_id": "FIN-001-GenixBank-Lite",
-    "timestamp": "2026-05-11T22:40:10.907552",
+    "timestamp": "2026-05-14T00:22:02.080832",
     "decision": "scale",
-    "reasoning": "Strong fundamentals. Aggressive scaling recommended.",
+    "reasoning": "Strong fundamentals. Health=100, Success=100%, System Value=-0.2. Aggressive scaling.",
     "capital_allocation": 10000,
     "timeline": "Immediate"
   },
   "execution": {
-    "decision_id": "2026-05-11T22:40:10.907552",
+    "decision_id": "2026-05-14T00:22:02.080832",
     "venture_id": "FIN-001-GenixBank-Lite",
     "decision": "scale",
     "tasks_queued": 3,

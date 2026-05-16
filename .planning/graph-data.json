@@ -1,0 +1,278 @@
+{
+  "entities": [
+    {
+      "id": "entity_0",
+      "name": "HRMS",
+      "entity_type": "Venture",
+      "venture_id": "venture_hrms_001",
+      "description": "Identified from context: \nHRMS Payroll Platform - May 14 Report\n====================================\n\nVenture Owner: Worldwid",
+      "metadata": {
+        "source": "pattern_match",
+        "confidence": 0.85
+      },
+      "extracted_at": "2026-05-14T17:58:24.04093",
+      "created_at": "2026-05-14T17:58:24.498473",
+      "updated_at": "2026-05-14T17:58:24.498473"
+    },
+    {
+      "id": "entity_1",
+      "name": "campaigns",
+      "entity_type": "Venture",
+      "venture_id": "venture_ai_002",
+      "description": "Identified from context: venture.name: AI SaaS Assistant\nventure.owner: Worldwidebro Holdings\nventure.status: ACTIVE\nventure.",
+      "metadata": {
+        "source": "pattern_match",
+        "confidence": 0.85
+      },
+      "extracted_at": "2026-05-14T17:58:24.518332",
+      "created_at": "2026-05-14T17:58:24.777343",
+      "updated_at": "2026-05-14T17:58:24.777343"
+    },
+    {
+      "id": "entity_2",
+      "name": "Decision_SCALE",
+      "entity_type": "Decision",
+      "venture_id": "venture_hrms_001",
+      "description": "CEO decision type identified: scale",
+      "metadata": {
+        "source": "keyword_match",
+        "confidence": 0.95
+      },
+      "extracted_at": "2026-05-14T17:58:24.795363",
+      "created_at": "2026-05-14T17:58:24.968103",
+      "updated_at": "2026-05-14T17:58:24.968103"
+    },
+    {
+      "id": "entity_3",
+      "name": "ROI",
+      "entity_type": "Metric",
+      "venture_id": "venture_marketplace_003",
+      "description": "Financial metric: roi",
+      "metadata": {
+        "source": "metric_pattern",
+        "confidence": 0.9
+      },
+      "extracted_at": "2026-05-14T17:58:24.979006",
+      "created_at": "2026-05-14T17:58:25.123818",
+      "updated_at": "2026-05-14T17:58:25.123818"
+    },
+    {
+      "id": "entity_4",
+      "name": "CAC",
+      "entity_type": "Metric",
+      "venture_id": "venture_marketplace_003",
+      "description": "Financial metric: cac",
+      "metadata": {
+        "source": "metric_pattern",
+        "confidence": 0.9
+      },
+      "extracted_at": "2026-05-14T17:58:25.136507",
+      "created_at": "2026-05-14T17:58:25.388991",
+      "updated_at": "2026-05-14T17:58:25.388991"
+    },
+    {
+      "id": "entity_5",
+      "name": "LTV",
+      "entity_type": "Metric",
+      "venture_id": "venture_marketplace_003",
+      "description": "Financial metric: ltv",
+      "metadata": {
+        "source": "metric_pattern",
+        "confidence": 0.9
+      },
+      "extracted_at": "2026-05-14T17:58:25.419228",
+      "created_at": "2026-05-14T17:58:25.586423",
+      "updated_at": "2026-05-14T17:58:25.586423"
+    },
+    {
+      "id": "entity_6",
+      "name": "CHURN",
+      "entity_type": "Metric",
+      "venture_id": "venture_hrms_001",
+      "description": "Financial metric: churn",
+      "metadata": {
+        "source": "metric_pattern",
+        "confidence": 0.9
+      },
+      "extracted_at": "2026-05-14T17:58:25.598655",
+      "created_at": "2026-05-14T17:58:25.848704",
+      "updated_at": "2026-05-14T17:58:25.848704"
+    },
+    {
+      "id": "entity_7",
+      "name": "Risk_RISK",
+      "entity_type": "Risk",
+      "venture_id": "venture_marketplace_003",
+      "description": "Risk identified: risk",
+      "metadata": {
+        "source": "risk_pattern",
+        "confidence": 0.8
+      },
+      "extracted_at": "2026-05-14T17:58:25.86297",
+      "created_at": "2026-05-14T17:58:26.045283",
+      "updated_at": "2026-05-14T17:58:26.045283"
+    },
+    {
+      "id": "entity_8",
+      "name": "AI",
+      "entity_type": "Venture",
+      "venture_id": "venture_ai_002",
+      "description": "Identified from context: venture.name: AI SaaS Assistant\nventure.owner: Worldwidebro Holdings\nventure.status: ACTIVE\nventure.",
+      "metadata": {
+        "source": "pattern_match",
+        "confidence": 0.85
+      },
+      "extracted_at": "2026-05-14T17:58:26.061322",
+      "created_at": "2026-05-14T17:58:26.307403",
+      "updated_at": "2026-05-14T17:58:26.307403"
+    },
+    {
+      "id": "entity_9",
+      "name": "SaaS",
+      "entity_type": "Venture",
+      "venture_id": "venture_ai_002",
+      "description": "Identified from context: venture.name: AI SaaS Assistant\nventure.owner: Worldwidebro Holdings\nventure.status: ACTIVE\nventure.",
+      "metadata": {
+        "source": "pattern_match",
+        "confidence": 0.85
+      },
+      "extracted_at": "2026-05-14T17:58:26.319988",
+      "created_at": "2026-05-14T17:58:26.506978",
+      "updated_at": "2026-05-14T17:58:26.506978"
+    },
+    {
+      "id": "entity_10",
+      "name": "Email",
+      "entity_type": "Venture",
+      "venture_id": "venture_ai_002",
+      "description": "Identified from context: venture.name: AI SaaS Assistant\nventure.owner: Worldwidebro Holdings\nventure.status: ACTIVE\nventure.",
+      "metadata": {
+        "source": "pattern_match",
+        "confidence": 0.85
+      },
+      "extracted_at": "2026-05-14T17:58:26.520008",
+      "created_at": "2026-05-14T17:58:26.713463",
+      "updated_at": "2026-05-14T17:58:26.713463"
+    },
+    {
+      "id": "entity_11",
+      "name": "Decision_COMPOUND",
+      "entity_type": "Decision",
+      "venture_id": "venture_ai_002",
+      "description": "CEO decision type identified: compound",
+      "metadata": {
+        "source": "keyword_match",
+        "confidence": 0.95
+      },
+      "extracted_at": "2026-05-14T17:58:26.793275",
+      "created_at": "2026-05-14T17:58:26.982182",
+      "updated_at": "2026-05-14T17:58:26.982182"
+    },
+    {
+      "id": "entity_12",
+      "name": "SURVIVAL_METRIC",
+      "entity_type": "Metric",
+      "venture_id": "venture_marketplace_003",
+      "description": "Financial metric: survival_metric",
+      "metadata": {
+        "source": "metric_pattern",
+        "confidence": 0.9
+      },
+      "extracted_at": "2026-05-14T17:58:26.996302",
+      "created_at": "2026-05-14T17:58:27.165081",
+      "updated_at": "2026-05-14T17:58:27.165081"
+    },
+    {
+      "id": "entity_13",
+      "name": "Risk_THREAT",
+      "entity_type": "Risk",
+      "venture_id": "venture_ai_002",
+      "description": "Risk identified: threat",
+      "metadata": {
+        "source": "risk_pattern",
+        "confidence": 0.8
+      },
+      "extracted_at": "2026-05-14T17:58:27.176777",
+      "created_at": "2026-05-14T17:58:27.44555",
+      "updated_at": "2026-05-14T17:58:27.44555"
+    },
+    {
+      "id": "entity_14",
+      "name": "Decision_OPTIMIZE",
+      "entity_type": "Decision",
+      "venture_id": "venture_marketplace_003",
+      "description": "CEO decision type identified: optimize",
+      "metadata": {
+        "source": "keyword_match",
+        "confidence": 0.95
+      },
+      "extracted_at": "2026-05-14T17:58:27.466063",
+      "created_at": "2026-05-14T17:58:27.627027",
+      "updated_at": "2026-05-14T17:58:27.627027"
+    },
+    {
+      "id": "entity_15",
+      "name": "Risk_BLOCKER",
+      "entity_type": "Risk",
+      "venture_id": "venture_marketplace_003",
+      "description": "Risk identified: blocker",
+      "metadata": {
+        "source": "risk_pattern",
+        "confidence": 0.8
+      },
+      "extracted_at": "2026-05-14T17:58:27.637488",
+      "created_at": "2026-05-14T17:58:27.893064",
+      "updated_at": "2026-05-14T17:58:27.893064"
+    },
+    {
+      "id": "entity_16",
+      "name": "Risk_CRITICAL",
+      "entity_type": "Risk",
+      "venture_id": "venture_marketplace_003",
+      "description": "Risk identified: critical",
+      "metadata": {
+        "source": "risk_pattern",
+        "confidence": 0.8
+      },
+      "extracted_at": "2026-05-14T17:58:27.923598",
+      "created_at": "2026-05-14T17:58:28.13714",
+      "updated_at": "2026-05-14T17:58:28.13714"
+    }
+  ],
+  "relationships": [
+    {
+      "id": "rel_0",
+      "source_id": "entity_0",
+      "target_id": "entity_1",
+      "relation_type": "risks",
+      "weight": 0.85,
+      "context": "\nHRMS Payroll Platform - May 14 Report\n====================================\n\nVen",
+      "created_at": "2026-05-14T17:58:28.152291",
+      "updated_at": "2026-05-14T17:58:28.448799"
+    },
+    {
+      "id": "rel_1",
+      "source_id": "entity_0",
+      "target_id": "entity_1",
+      "relation_type": "benefits",
+      "weight": 0.85,
+      "context": "\nHRMS Payroll Platform - May 14 Report\n====================================\n\nVen",
+      "created_at": "2026-05-14T17:58:28.463794",
+      "updated_at": "2026-05-14T17:58:28.621433"
+    },
+    {
+      "id": "rel_2",
+      "source_id": "entity_8",
+      "target_id": "entity_9",
+      "relation_type": "risks",
+      "weight": 0.85,
+      "context": "venture.name: AI SaaS Assistant\nventure.owner: Worldwidebro Holdings\nventure.sta",
+      "created_at": "2026-05-14T17:58:28.631597",
+      "updated_at": "2026-05-14T17:58:28.850479"
+    }
+  ],
+  "status": "success",
+  "synced_at": "2026-05-14T22:38:31.630658",
+  "entity_count": 17,
+  "relationship_count": 3
+}
