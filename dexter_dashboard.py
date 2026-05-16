@@ -594,23 +594,27 @@ class DexterDashboard:
             return None
 
     def _fetch_owned_repos(self) -> List[Dict[str, Any]]:
-        """Fetch all owned repos from Supabase (GitHub-sourced)"""
+        """Fetch all owned repos from SocratiCode profiles (semantic analysis)"""
         try:
-            response = self.session.get(
-                f"{SUPABASE_URL}/rest/v1/repos",
-                params={
-                    "select": "name,description,purpose,capabilities,integration_effort,language,github_stars",
-                    "repo_type": "eq.owned",
-                    "order": "github_stars.desc"
-                }
-            )
-            if response.status_code == 200:
-                return response.json()
+            profiles_path = os.path.join(os.path.dirname(__file__), "socraticode_profiles.json")
+            if os.path.exists(profiles_path):
+                with open(profiles_path, 'r') as f:
+                    profiles = json.load(f)
+                    repos = []
+                    for repo_name, profile in profiles.items():
+                        repos.append({
+                            'name': repo_name,
+                            'capabilities': profile.get('capabilities', []),
+                            'languages': profile.get('languages', []),
+                            'size_mb': profile.get('size_mb', 0),
+                            'files': profile.get('files', 0)
+                        })
+                    return repos
             else:
-                print(f"⚠️  Failed to fetch owned repos: {response.status_code}")
+                print(f"⚠️  socraticode_profiles.json not found at {profiles_path}")
                 return []
         except Exception as e:
-            print(f"⚠️  Error fetching owned repos: {e}")
+            print(f"⚠️  Error loading owned repos: {e}")
             return []
 
     def _match_repos_to_venture(self, venture: Dict[str, Any], owned_repos: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
