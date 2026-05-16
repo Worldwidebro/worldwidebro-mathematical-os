@@ -14,7 +14,7 @@ from datetime import datetime
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-OLLAMA_URL = os.getenv("OLLAMA_URL", "http://100.87.214.70:11434")
+OLLAMA_URL = os.getenv("OLLAMA_URL", "http://localhost:11434")
 
 def test_ollama_connection():
     """Test basic connection to Ollama"""

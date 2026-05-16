@@ -13,7 +13,12 @@
       "Bash(curl -s http://100.87.214.70:11434/api/tags)",
       "Bash(python3.12 --version)",
       "Bash(python3.11 --version)",
-      "Bash(PYTHONPATH=/Users/acebless/Documents/iza-os-rag-system python3.12 src/ingest.py --source ventures)"
+      "Bash(PYTHONPATH=/Users/acebless/Documents/iza-os-rag-system python3.12 src/ingest.py --source ventures)",
+      "Bash(cat)",
+      "Bash(export SUPABASE_URL=\"https://cyhzilqldouzgynacqpe.supabase.co\")",
+      "Bash(export SUPABASE_KEY=\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImN5aHppbHFsZG91emd5bmFjcXBlIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc2NDY2OTQwOCwiZXhwIjoyMDgwMjQ1NDA4fQ.1M6V3fR9rNxonIJvtNkV4isrZK9VIvy3J-gNLJGMp2k\")",
+      "Bash(python3 /tmp/debug_relationships.py)",
+      "Bash(python3 /tmp/check_ids.py)"
     ]
   }
 }

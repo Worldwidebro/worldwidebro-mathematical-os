@@ -1,0 +1,74 @@
+{
+  "nodes": [
+    {
+      "id": "node_0",
+      "type": "file",
+      "file": "Knowledge Graph/HRMS.md",
+      "x": 400.0,
+      "y": 0.0,
+      "width": 200,
+      "height": 100,
+      "color": "#4285F4"
+    },
+    {
+      "id": "node_1",
+      "type": "file",
+      "file": "Knowledge Graph/Marketing Decision.md",
+      "x": 123.60679774997898,
+      "y": 380.4226065180614,
+      "width": 200,
+      "height": 100,
+      "color": "#34A853"
+    },
+    {
+      "id": "node_2",
+      "type": "file",
+      "file": "Knowledge Graph/CAC Metric.md",
+      "x": -323.6067977499789,
+      "y": 235.1141009169893,
+      "width": 200,
+      "height": 100,
+      "color": "#FBBC04"
+    },
+    {
+      "id": "node_3",
+      "type": "file",
+      "file": "Knowledge Graph/API Deployment Risk.md",
+      "x": -323.60679774997897,
+      "y": -235.1141009169892,
+      "width": 200,
+      "height": 100,
+      "color": "#EA4335"
+    },
+    {
+      "id": "node_4",
+      "type": "file",
+      "file": "Knowledge Graph/Revenue Target.md",
+      "x": 123.6067977499789,
+      "y": -380.42260651806146,
+      "width": 200,
+      "height": 100,
+      "color": "#FBBC04"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge_rel_1",
+      "fromNode": "node_0",
+      "toNode": "node_1",
+      "label": "owns"
+    },
+    {
+      "id": "edge_rel_2",
+      "fromNode": "node_0",
+      "toNode": "node_2",
+      "label": "reports"
+    },
+    {
+      "id": "edge_rel_3",
+      "fromNode": "node_0",
+      "toNode": "node_3",
+      "label": "risks"
+    }
+  ]
+}

@@ -33,7 +33,7 @@ GITHUB_TOKEN = os.getenv("GITHUB_TOKEN", "")
 SUPABASE_URL = os.getenv("NEXT_PUBLIC_SUPABASE_URL", "https://cyhzilqldouzgynacqpe.supabase.co")
 SUPABASE_SERVICE_KEY = os.getenv("SUPABASE_SERVICE_ROLE_KEY", "")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
-OLLAMA_URL = os.getenv("OLLAMA_URL", "http://100.87.214.70:11434")
+OLLAMA_URL = os.getenv("OLLAMA_URL", "http://localhost:11434")
 
 # Choose embedding model: "openai" or "ollama"
 EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "ollama")  # Default to local Ollama

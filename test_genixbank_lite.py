@@ -90,8 +90,11 @@ class FinancialAnalystAgent:
         if synergies is None:
             synergies = []
 
+        # Convert metrics object to dict if needed
+        metrics_dict = metrics.to_dict() if hasattr(metrics, 'to_dict') else metrics
+
         # Run full v2 analysis
-        full_analysis = self.v2_analyzer.analyze_venture(venture_id, metrics, synergies)
+        full_analysis = self.v2_analyzer.analyze_venture(venture_id, metrics_dict, synergies)
 
         # Format for compatibility with CEO decision
         analysis = {
@@ -139,29 +142,34 @@ class CEOAgent:
         self.name = "CEO Agent"
 
     def decide(self, analysis):
-        """Generate decision"""
+        """Generate decision with network + risk intelligence"""
         print(f"\n👔 {self.name} making decision...")
 
         cac_ltv_ratio = analysis['cac_ltv_ratio']
         gross_margin = analysis['gross_margin']
         health_score = analysis['health_score']
 
-        # Decision logic
-        if health_score < 30:
+        # Use advanced metrics if available
+        fragility = analysis.get('fragility_score', 0)
+        success_prob = analysis.get('success_probability', 0.65)
+        system_value = analysis.get('system_value', 0)
+
+        # Decision logic enhanced with risk + network metrics
+        if health_score < 30 or fragility > 0.8:
             decision = DecisionType.KILL
-            reasoning = "Health score critically low. Unit economics unsustainable."
+            reasoning = f"Health critically low (score={health_score}) or fragile (fragility={fragility:.1%}). Unsustainable."
             capital_action = 0
-        elif health_score < 50:
+        elif health_score < 50 or success_prob < 0.5:
             decision = DecisionType.HOLD
-            reasoning = "Below profitability threshold. Optimize before scaling."
+            reasoning = f"Below thresholds. Health={health_score}, Success Prob={success_prob:.0%}. Optimize before scaling."
             capital_action = 0
-        elif health_score < 75:
+        elif health_score < 75 or success_prob < 0.8:
             decision = DecisionType.SCALE
-            reasoning = "Healthy metrics. Ready for moderate growth investment."
+            reasoning = f"Moderate health (score={health_score}, success={success_prob:.0%}). Controlled growth."
             capital_action = 5000
         else:
             decision = DecisionType.SCALE
-            reasoning = "Strong fundamentals. Aggressive scaling recommended."
+            reasoning = f"Strong fundamentals. Health={health_score}, Success={success_prob:.0%}, System Value={system_value:.1f}. Aggressive scaling."
             capital_action = 10000
 
         decision_record = {

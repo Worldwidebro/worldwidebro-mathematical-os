@@ -9,7 +9,7 @@ from datetime import datetime
 from dataclasses import dataclass
 from typing import Dict, List, Any
 
-OLLAMA_URL = "http://100.87.214.70:11434"
+OLLAMA_URL = "http://localhost:11434"
 PAPERCLIP_URL = "http://localhost:3101"
 
 @dataclass

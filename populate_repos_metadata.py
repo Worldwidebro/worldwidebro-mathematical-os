@@ -32,7 +32,7 @@ logger = logging.getLogger(__name__)
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN", "")
 SUPABASE_URL = os.getenv("NEXT_PUBLIC_SUPABASE_URL", "https://cyhzilqldouzgynacqpe.supabase.co")
 SUPABASE_SERVICE_KEY = os.getenv("SUPABASE_SERVICE_KEY", "")
-OLLAMA_URL = os.getenv("OLLAMA_URL", "http://100.87.214.70:11434")
+OLLAMA_URL = os.getenv("OLLAMA_URL", "http://localhost:11434")
 
 # Constants
 REPOS_CAPABILITIES_FILE = "/Users/acebless/Documents/starred-repos-capabilities.md"
