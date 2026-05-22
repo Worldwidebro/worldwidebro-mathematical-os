@@ -1,0 +1,57 @@
+{
+  "name": "Worker Onboarding Flow",
+  "description": "Automates worker verification, skill assessment, and system registration",
+  "nodes": [
+    {
+      "id": "webhook-trigger",
+      "type": "webhook",
+      "config": {
+        "path": "/worker-onboarding",
+        "method": "POST"
+      }
+    },
+    {
+      "id": "extract-skills",
+      "type": "code",
+      "code": "const skills = item.skills || []; return { skills, count: skills.length };"
+    },
+    {
+      "id": "validate-worker",
+      "type": "if",
+      "condition": "item.phone && item.email && item.hourlyRate > 0"
+    },
+    {
+      "id": "create-worker-api",
+      "type": "http",
+      "method": "POST",
+      "url": "http://app:3000/api/workers",
+      "headers": { "Content-Type": "application/json" },
+      "body": {
+        "fullName": "{{item.fullName}}",
+        "phone": "{{item.phone}}",
+        "email": "{{item.email}}",
+        "skills": "{{item.skills}}",
+        "hourlyRate": "{{item.hourlyRate}}"
+      }
+    },
+    {
+      "id": "send-welcome-email",
+      "type": "email",
+      "to": "{{item.email}}",
+      "subject": "Welcome to Worldwidebro Staffing Network",
+      "body": "Hi {{item.fullName}},\n\nYou've been successfully registered in our staffing system.\n\nYour profile:\n- Hourly Rate: ${{item.hourlyRate}}\n- Skills: {{item.skills.join(', ')}}\n\nJobs will be routed to your dashboard as they match your skills.\n\nBest,\nWorldwidebro Operations"
+    },
+    {
+      "id": "log-onboarding",
+      "type": "code",
+      "code": "console.log('Worker onboarded:', item.fullName, item.phone); return item;"
+    }
+  ],
+  "connections": [
+    { "from": "webhook-trigger", "to": "extract-skills" },
+    { "from": "extract-skills", "to": "validate-worker" },
+    { "from": "validate-worker", "to": "create-worker-api", "condition": "true" },
+    { "from": "create-worker-api", "to": "send-welcome-email" },
+    { "from": "send-welcome-email", "to": "log-onboarding" }
+  ]
+}

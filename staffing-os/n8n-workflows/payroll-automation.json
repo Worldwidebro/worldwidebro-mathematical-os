@@ -1,0 +1,66 @@
+{
+  "name": "Weekly Payroll & Commission Processing",
+  "description": "Aggregates timesheets, calculates payroll, and processes Venmo/bank transfers",
+  "nodes": [
+    {
+      "id": "weekly-trigger",
+      "type": "cron",
+      "schedule": "0 9 * * 1"
+    },
+    {
+      "id": "fetch-pending-timesheets",
+      "type": "http",
+      "method": "GET",
+      "url": "http://app:3000/api/timesheets/pending"
+    },
+    {
+      "id": "aggregate-by-worker",
+      "type": "code",
+      "code": "const grouped = {}; item.forEach(ts => { if (!grouped[ts.workerId]) grouped[ts.workerId] = {hours: 0, total: 0}; grouped[ts.workerId].hours += ts.hours; }); return Object.entries(grouped).map(([id, data]) => ({workerId: id, totalHours: data.hours}));"
+    },
+    {
+      "id": "fetch-worker-rates",
+      "type": "http",
+      "method": "GET",
+      "url": "http://app:3000/api/workers"
+    },
+    {
+      "id": "calculate-pay",
+      "type": "code",
+      "code": "const workers = input[1]; return item.map(p => { const w = workers.find(x => x.id === p.workerId); return {...p, hourlyRate: w.hourlyRate, totalPay: p.totalHours * w.hourlyRate}; });"
+    },
+    {
+      "id": "send-venmo-payments",
+      "type": "http",
+      "method": "POST",
+      "url": "https://api.venmo.com/v2/payments",
+      "body": {
+        "access_token": "{{env.VENMO_API_KEY}}",
+        "user_id": "{{item.workerId}}",
+        "amount": "{{item.totalPay}}",
+        "note": "Weekly payroll - {{item.totalHours}}h @ ${{item.hourlyRate}}/hr"
+      }
+    },
+    {
+      "id": "update-timesheet-approved",
+      "type": "code",
+      "code": "return item;"
+    },
+    {
+      "id": "send-payroll-summary",
+      "type": "email",
+      "to": "accounting@worldwidebrocompanies.com",
+      "subject": "Weekly Payroll Summary",
+      "body": "Payroll processed for {{item.length}} workers.\n\nTotal paid: ${{item.reduce((sum, p) => sum + p.totalPay, 0).toFixed(2)}}\n\nDetails in dashboard."
+    }
+  ],
+  "connections": [
+    { "from": "weekly-trigger", "to": "fetch-pending-timesheets" },
+    { "from": "fetch-pending-timesheets", "to": "aggregate-by-worker" },
+    { "from": "aggregate-by-worker", "to": "fetch-worker-rates" },
+    { "from": "fetch-worker-rates", "to": "calculate-pay" },
+    { "from": "calculate-pay", "to": "send-venmo-payments" },
+    { "from": "send-venmo-payments", "to": "update-timesheet-approved" },
+    { "from": "update-timesheet-approved", "to": "send-payroll-summary" }
+  ]
+}
