@@ -1,0 +1,62 @@
+{
+  "EDU-002-Code-Bootcamp-Pro": {
+    "topic": "Full-Stack Web Development Bootcamp",
+    "chapters": 12,
+    "level": "intermediate",
+    "notes": "Hands-on coding bootcamp with real projects"
+  },
+  "EDU-003-Math-Mastery-Platform": {
+    "topic": "Advanced Mathematics: Calculus to Linear Algebra",
+    "chapters": 16,
+    "level": "advanced-undergrad",
+    "notes": "Mastery-based learning with confidence calibration"
+  },
+  "EDU-004-Language-Learning-App": {
+    "topic": "Spanish Language Proficiency",
+    "chapters": 24,
+    "level": "beginner-intermediate",
+    "notes": "Interactive language learning with immersion"
+  },
+  "EDU-008-Data-Science-Bootcamp": {
+    "topic": "Data Science & Machine Learning",
+    "chapters": 10,
+    "level": "intermediate",
+    "notes": "Python, statistics, real-world datasets"
+  },
+  "EDU-017-Cloud-Computing-Academy": {
+    "topic": "Cloud Architecture & AWS Fundamentals",
+    "chapters": 10,
+    "level": "intermediate",
+    "notes": "AWS certification track with labs"
+  },
+  "EDU-023-Cybersecurity-Bootcamp": {
+    "topic": "Cybersecurity Fundamentals & Ethical Hacking",
+    "chapters": 12,
+    "level": "intermediate",
+    "notes": "Hands-on security labs and penetration testing"
+  },
+  "EDU-014-Coding-For-Beginners": {
+    "topic": "Python for Complete Beginners",
+    "chapters": 14,
+    "level": "beginner",
+    "notes": "Fundamentals to first app in 4 weeks"
+  },
+  "EDU-022-Leadership-Development-Program": {
+    "topic": "Executive Leadership & Management",
+    "chapters": 8,
+    "level": "advanced",
+    "notes": "For managers and aspiring executives"
+  },
+  "EDU-006-Executive-Mba-Online": {
+    "topic": "Executive MBA Fundamentals",
+    "chapters": 20,
+    "level": "advanced",
+    "notes": "Business strategy, finance, ops for executives"
+  },
+  "EDU-015-Fitness-Coach-Certification": {
+    "topic": "Personal Training & Fitness Coaching",
+    "chapters": 8,
+    "level": "intermediate",
+    "notes": "NASM-aligned certification program"
+  }
+}

@@ -1,0 +1,19 @@
+sector,required_count,satisfied,gaps,gap_count,recommendation
+beauty-wellness,4,dashboard(290)|api(349)|database(363)|workflow(78),none,0,Well covered
+community,4,dashboard(290)|api(349)|database(363)|workflow(78),none,0,Well covered
+construction,5,dashboard(290)|api(349)|database(363)|workflow(78)|monitoring(299),none,0,Well covered
+e-commerce,5,api(349)|payment(10)|database(363)|dashboard(290)|security(55),none,0,Well covered
+education,5,dashboard(290)|api(349)|database(363)|workflow(78)|testing(23),none,0,Well covered
+education-training,5,dashboard(290)|api(349)|database(363)|workflow(78)|testing(23),none,0,Well covered
+emerging,5,ai(477)|api(349)|database(363)|monitoring(299)|knowledge-graph(42),none,0,Well covered
+financial,5,api(349)|payment(10)|security(55)|database(363)|monitoring(299),none,0,Well covered
+fitness-sports,4,dashboard(290)|api(349)|database(363)|payment(10),none,0,Well covered
+food-hospitality,4,api(349)|database(363)|payment(10)|dashboard(290),none,0,Well covered
+logistics-transport,4,api(349)|monitoring(299)|database(363)|workflow(78),none,0,Well covered
+media-content,4,dashboard(290)|api(349)|database(363)|knowledge-graph(42),none,0,Well covered
+operations,5,workflow(78)|monitoring(299)|api(349)|database(363),automation(0),1,Need 1 capability types
+professional-services,4,dashboard(290)|api(349)|database(363)|workflow(78),none,0,Well covered
+real-estate,5,dashboard(290)|api(349)|database(363)|payment(10)|monitoring(299),none,0,Well covered
+software-technology,5,devtools(306)|api(349)|testing(23)|deployment(174)|database(363),none,0,Well covered
+specialized,4,api(349)|database(363)|dashboard(290)|knowledge-graph(42),none,0,Well covered
+technology,5,devtools(306)|ai(477)|api(349)|testing(23)|deployment(174),none,0,Well covered

@@ -1,0 +1,40 @@
+{
+  "workspace": "/Users/acebless/Documents",
+  "include": [
+    "pitch-kit",
+    "venture-hub",
+    "mission-control",
+    "omi",
+    "iza-os-rag-system",
+    "LightRAG",
+    "mcp-dashboard",
+    "venture-factory-core",
+    "vibetunnel",
+    "vibe-kanban",
+    "ai-venture-studio-template",
+    "autonomous-venture-studio",
+    "security-stack",
+    "opensre",
+    "bw-001-lash-extension-studio",
+    "con-001-ace-construction",
+    "civilization-os-local",
+    "thunderbolt"
+  ],
+  "exclude": [
+    "node_modules",
+    ".git",
+    "dist",
+    "build",
+    ".next"
+  ],
+  "embeddings": {
+    "model": "nomic-embed-text",
+    "backend": "ollama"
+  },
+  "vectordb": {
+    "type": "qdrant",
+    "persistent": true
+  },
+  "autoBatch": true,
+  "watchMode": true
+}

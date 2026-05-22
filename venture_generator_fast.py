@@ -40,7 +40,7 @@ BUSINESS_MODELS_BY_SECTOR = {
     "Logistics": "Logistics Network",
     "Construction": "Project Management",
     "Community": "Membership Platform",
-    "Education": "Online Academy",
+    "Education": "Subscription SaaS + Per-Student Licensing",
     "Emerging": "MVP Exploration",
     "Fitness-Sports": "Membership + Digital",
     "Media-Content": "Content Monetization",
@@ -223,10 +223,14 @@ def discover_and_generate():
             total_ventures += 1
             ventures_by_sector[sector]["total"] += 1
 
-            # Parse venture code + name
-            parts = venture_dir.name.split("-", 1)
-            code = parts[0]
-            name = parts[1].replace("-", " ").title() if len(parts) > 1 else "Unknown"
+            # Parse venture code + name (e.g., "EC-001-Angels-in-Daylight" -> code="EC-001", name="Angels in Daylight")
+            parts = venture_dir.name.split("-")
+            if len(parts) >= 2:
+                code = f"{parts[0]}-{parts[1]}"  # e.g., "EC-001"
+                name = "-".join(parts[2:]).replace("-", " ").title() if len(parts) > 2 else "Unknown"
+            else:
+                code = parts[0]
+                name = "Unknown"
 
             # Skip if already fully populated
             if (venture_dir / "README.md").exists() and (venture_dir / "VENTURE.json").exists():

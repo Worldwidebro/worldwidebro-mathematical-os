@@ -12,6 +12,9 @@ import numpy as np
 from typing import Dict, List, Any, Optional
 from datetime import datetime, timedelta
 import requests
+from dotenv import load_dotenv
+
+load_dotenv("/Users/acebless/Documents/.env")
 
 try:
     import plotly.graph_objects as go
@@ -619,7 +622,16 @@ class DexterDashboard:
 
     def _match_repos_to_venture(self, venture: Dict[str, Any], owned_repos: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         """Match repos to venture based on required_capabilities"""
-        venture_caps = venture.get('required_capabilities', [])
+        # Extract capabilities from metadata field (stored as JSON)
+        metadata = venture.get('metadata') or {}
+        if isinstance(metadata, str):
+            try:
+                import json as json_module
+                metadata = json_module.loads(metadata)
+            except:
+                metadata = {}
+
+        venture_caps = metadata.get('required_capabilities', [])
         if isinstance(venture_caps, str):
             venture_caps = [venture_caps]
 

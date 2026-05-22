@@ -7,22 +7,41 @@
 
 ---
 
-## 📎 PHASE 0.5: PAPERCLIP DEPLOYMENT (NEW — BLOCKS ALL DOWNSTREAM WORK)
+## 🎯 WEEK 0 SCAFFOLD: INSTITUTIONAL KNOWLEDGE GOVERNANCE (NEW — CRITICAL PATH)
 
-**User directive (2026-05-10):** *"We want to see this information on paperclip first."*
+**User directive (2026-05-16):** *"Classify 1,520 repos by institutional function; prevent knowledge graph entropy."*
 
-Paperclip (`paperclipai/paperclip`) will be deployed as the root orchestration layer before resuming Phase 1.2/1.3. All existing state (Supabase ventures, repos, Graphify KG, OpenVolo contacts, Make workflows) will be surfaced inside Paperclip as the single pane of glass.
+Replace Paperclip deployment with immediate institutional governance execution. Reduces repo deep-indexing from 1,520 → ~50 VCC repos using red-team filters (economic, governance, simplification lenses).
 
-**Plan:** See `PAPERCLIP-DEPLOYMENT-PLAN.md` (6 steps, 6 checkpoints, ~13h realistic)
+**Architecture:** See `MOVE-2A-SETUP.md` (3 moves, ~20h total, 5h-15h optimizable with parallelization)
 
-- [x] Step 1 — Verify repo is real + inspect actual install reqs ✓
-- [x] Step 2 — Install Paperclip locally ✓ (server running at 127.0.0.1:3103)
-- [ ] Step 3 — Model org structure (divisions → companies) (1–4h) ← **IN PROGRESS**
-- [ ] Step 4 — Wire Supabase/repos/Graphify/OpenVolo in (3–12h)
-- [ ] Step 5 — Surface GTM Phase 0/1/2 status dashboard (2–8h)
-- [ ] Step 6 — Resume GTM Phase 1.2 (contact wishlist) + 1.3 (social from scratch)
+### Move 1: Infrastructure Setup (5 min) ✓ COMPLETE
+- [x] Supabase schema: `repo_institutional_index` table with governance tracking
+- [x] Indexes: institutional_function, ingest_status, owner_type
+- [x] Views: venture_active_repos (VCC+CI pending repos)
 
-**Fallback if Paperclip fails Step 1 verification:** Pivot to `mission-control` or `venture-hub` as status UI. Decision made at Step 1 checkpoint.
+### Move 2a: GitHub API + LLM Classification Script (2 hours) ✓ COMPLETE
+- [x] Script created: `classify_repos_institutional.py` (400 LOC)
+- [x] Fetches 853 owned + 667 starred repos via GitHub API (pagination)
+- [x] Batches into 20-repo chunks for LLM efficiency
+- [x] Institutional ontology prompt (Level 4: analyzes name, description, language, topics, activity)
+- [x] Inserts classifications into Supabase (upsert handles duplicates)
+- [x] Prints distribution: VCC|CI|EXP|ARC|COMP|TOOL|REF|UNCATEGORIZED
+- [ ] **Next:** Add GITHUB_TOKEN + ANTHROPIC_API_KEY to `.env`, then run script
+  ```bash
+  python3 classify_repos_institutional.py  # ~2 hours total
+  ```
+
+### Move 2b: Parallel Classification (2 hours) ⏸️ PENDING
+- Run Move 2a script in foreground (owned + starred repos in sequence)
+- Or: Spawn two agent processes for parallel execution (owned repos + starred repos simultaneously)
+
+### Move 3: Human Review Interface (Ongoing) ⏸️ PENDING
+- Query repos with `needs_human_review = true` OR `confidence < 0.7`
+- Manual reclassification for edge cases (estimated 50-100 repos)
+- Set `ingest_status = 'ingested'` to trigger deep indexing in Task 13
+
+**Fallback if LLM classification fails:** Use heuristic classifier based on repo name patterns + language
 
 ---
 
