@@ -1,0 +1,275 @@
+{
+  "registry_version": "1.0",
+  "last_updated": "2026-06-02T15:30:00Z",
+  "repos": {
+    "civilization-os": {
+      "id": "civilization-os",
+      "owner": "COO",
+      "type": "base-os",
+      "description": "Foundation OS - core architecture, patterns, and shared components",
+      "dependencies": [],
+      "dependents": [
+        "venture-hub",
+        "mission-control",
+        "iza-os-rag-system"
+      ],
+      "agents_with_access": [
+        "qwen-operations",
+        "qwen-technology",
+        "qwen-finance"
+      ],
+      "agent_permissions": {
+        "qwen-operations": "read-write",
+        "qwen-technology": "read-write",
+        "qwen-finance": "read-only"
+      },
+      "integration_contracts": {
+        "ventures": "Read RACI_Matrix.json, update MASTER_FOLDER_STRUCTURE.md",
+        "venture-hub": "Provide base templates, expose schema validation endpoints",
+        "mission-control": "Serve as command reference, provide decision logs"
+      },
+      "startup_validation": [
+        "MASTER_FOLDER_STRUCTURE.md exists",
+        "UNIFIED-KNOWLEDGE-GRAPH-OS-v1.md is current",
+        "All base templates valid"
+      ],
+      "escalation_contact": "COO"
+    },
+    "venture-hub": {
+      "id": "venture-hub",
+      "local_path": "venture-hub",
+      "github_repo": "worldwidebro/venture-hub",
+      "owner": "COO",
+      "type": "operational-hub",
+      "description": "Central hub for venture operations, dashboards, and orchestration",
+      "dependencies": [
+        "civilization-os",
+        "iza-os-rag-system",
+        "mission-control"
+      ],
+      "dependents": [],
+      "agents_with_access": [
+        "qwen-ecommerce",
+        "qwen-operations",
+        "qwen-finance"
+      ],
+      "agent_permissions": {
+        "qwen-ecommerce": "read-write",
+        "qwen-operations": "read-write",
+        "qwen-finance": "read-only"
+      },
+      "integration_contracts": {
+        "civilization-os": "Fetch base templates, validate against schema",
+        "iza-os-rag-system": "Query RAG for venture intelligence",
+        "mission-control": "Send operational decisions, receive commands"
+      },
+      "startup_validation": [
+        "civilization-os is online",
+        "iza-os-rag-system vector DB is accessible",
+        "Supabase venture_resources table has >700 rows"
+      ],
+      "escalation_contact": "COO",
+      "escalation_threshold": "$100000"
+    },
+    "mission-control": {
+      "id": "mission-control",
+      "local_path": "mission-control",
+      "github_repo": "worldwidebro/mission-control",
+      "owner": "COO",
+      "type": "command-center",
+      "description": "Decision logs, agent coordination, executive dashboards",
+      "dependencies": [
+        "civilization-os",
+        "venture-hub"
+      ],
+      "dependents": [],
+      "agents_with_access": [
+        "qwen-operations",
+        "qwen-finance"
+      ],
+      "agent_permissions": {
+        "qwen-operations": "read-write",
+        "qwen-finance": "read-write"
+      },
+      "integration_contracts": {
+        "civilization-os": "Log decisions to master audit trail",
+        "venture-hub": "Receive venture decisions for logging"
+      },
+      "startup_validation": [
+        "civilization-os is online",
+        "Supabase decision_logs table exists"
+      ],
+      "escalation_contact": "COO"
+    },
+    "iza-os-rag-system": {
+      "id": "iza-os-rag-system",
+      "local_path": "iza-os-rag-system",
+      "github_repo": "worldwidebro/iza-os-rag-system",
+      "owner": "Tech Manager",
+      "type": "intelligence-layer",
+      "description": "RAG system for knowledge graph queries and semantic search",
+      "dependencies": [
+        "civilization-os"
+      ],
+      "dependents": [
+        "venture-hub",
+        "mission-control"
+      ],
+      "agents_with_access": [
+        "qwen-finance",
+        "qwen-operations",
+        "qwen-technology"
+      ],
+      "agent_permissions": {
+        "qwen-finance": "query-only",
+        "qwen-operations": "query-only",
+        "qwen-technology": "read-write"
+      },
+      "integration_contracts": {
+        "ventures": "Index venture data via LightRAG",
+        "Supabase": "Sync with venture_resources table"
+      },
+      "startup_validation": [
+        "Vector DB (Qdrant/Chroma) is online",
+        "LightRAG is initialized",
+        "Supabase connection active"
+      ],
+      "escalation_contact": "Tech Manager"
+    },
+    "the-office": {
+      "id": "the-office",
+      "local_path": "The office",
+      "github_repo": "worldwidebro/the-office",
+      "owner": "COO",
+      "type": "shared-service",
+      "description": "Communication, knowledge sharing, and organizational hub",
+      "dependencies": ["civilization-os"],
+      "dependents": ["venture-hub"],
+      "agents_with_access": ["qwen-operations"],
+      "agent_permissions": {"qwen-operations": "read-write"},
+      "escalation_contact": "COO"
+    },
+    "venture-factory-core": {
+      "id": "venture-factory-core",
+      "local_path": "venture-factory-core",
+      "github_repo": "worldwidebro/venture-factory-core",
+      "owner": "COO",
+      "type": "platform",
+      "description": "Venture creation and lifecycle management platform",
+      "dependencies": ["civilization-os", "venture-hub"],
+      "dependents": [],
+      "agents_with_access": ["qwen-operations", "qwen-ecommerce"],
+      "agent_permissions": {"qwen-operations": "read-write", "qwen-ecommerce": "read-only"},
+      "escalation_contact": "COO"
+    },
+    "bw-001-up-next-web": {
+      "id": "bw-001-up-next-web",
+      "local_path": "bw-001-lash-extension-studio/bw-001-up-next-web",
+      "github_repo": "worldwidebro/bw-001-up-next-web",
+      "owner": "COO",
+      "type": "venture-app",
+      "description": "Beauty & Wellness venture: Lash extension studio appointment platform",
+      "dependencies": ["civilization-os", "venture-hub"],
+      "dependents": [],
+      "agents_with_access": ["qwen-ecommerce"],
+      "agent_permissions": {"qwen-ecommerce": "read-write"},
+      "escalation_contact": "COO"
+    }
+  },
+  "ownership_matrix": {
+    "COO": {
+      "teams": ["Worldwidebro"],
+      "repos_count": 687,
+      "approval_authority": true,
+      "deployment_authority": true
+    },
+    "Tech Manager": {
+      "teams": ["POS-TECH-MANAGER"],
+      "repos_count": 51,
+      "approval_authority": false,
+      "deployment_authority": true
+    },
+    "CFO+COO": {
+      "teams": ["Finance", "COO"],
+      "repos_count": 115,
+      "approval_authority": false,
+      "deployment_authority": true
+    }
+  },
+  "agent_name_map": {
+    "description": "Cross-reference between 16 sector agents and 4 core operations agents",
+    "sector_to_core": {
+      "qwen-beauty-wellness": "qwen-operations",
+      "qwen-construction": "qwen-operations",
+      "qwen-ecommerce": "qwen-ecommerce",
+      "qwen-education": "qwen-operations",
+      "qwen-energy": "qwen-operations",
+      "qwen-entertainment": "qwen-operations",
+      "qwen-finance": "qwen-finance",
+      "qwen-health": "qwen-operations",
+      "qwen-manufacturing": "qwen-operations",
+      "qwen-media": "qwen-operations",
+      "qwen-non-profit": "qwen-operations",
+      "qwen-real-estate": "qwen-operations",
+      "qwen-retail": "qwen-ecommerce",
+      "qwen-saas": "qwen-technology",
+      "qwen-technology": "qwen-technology",
+      "qwen-emerging-markets": "qwen-technology"
+    }
+  },
+  "agent_routing": {
+    "qwen-finance": {
+      "primary_repos": ["venture-hub", "mission-control"],
+      "shared_service_access": [
+        "iza-os-financial-core",
+        "genixbank-financial-system",
+        "iza-os-analytics"
+      ],
+      "escalation_threshold": "$50000"
+    },
+    "qwen-operations": {
+      "primary_repos": ["civilization-os", "venture-hub", "mission-control"],
+      "shared_service_access": [
+        "iza-os-api-gateway",
+        "deployment-orchestrator"
+      ],
+      "escalation_threshold": "$100000"
+    },
+    "qwen-ecommerce": {
+      "primary_repos": ["venture-hub"],
+      "shared_service_access": [
+        "shared-kernels",
+        "iza-os-analytics"
+      ],
+      "escalation_threshold": "$25000"
+    },
+    "qwen-technology": {
+      "primary_repos": ["iza-os-rag-system", "civilization-os"],
+      "shared_service_access": [
+        "iza-os-api-gateway",
+        "iza-os-cybersecurity-monitoring-bot",
+        "deployment-orchestrator"
+      ],
+      "escalation_threshold": "$75000"
+    }
+  },
+  "startup_sequence": [
+    "1. civilization-os: Load base schema, validate RACI matrix",
+    "2. iza-os-rag-system: Initialize vector DB, sync with Supabase",
+    "3. mission-control: Connect to decision_logs table",
+    "4. venture-hub: Bootstrap from civilization-os, load venture data"
+  ],
+  "validation_rules": {
+    "before_agent_execution": [
+      "All dependencies online and healthy",
+      "Agent has permission for target repo",
+      "Escalation contact available if threshold exceeded",
+      "Supabase tables accessible"
+    ],
+    "before_commit": [
+      "Changes logged in mission-control decision_logs",
+      "Access control verified",
+      "Owner approval obtained if threshold exceeded"
+    ]
+  }
+}

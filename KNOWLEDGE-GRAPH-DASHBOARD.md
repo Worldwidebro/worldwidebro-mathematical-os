@@ -10,6 +10,7 @@ last-updated: 2026-05-14
 
 **Status**: ✅ Live with Supabase → Obsidian sync  
 **Data Source**: `.planning/graph-data.json`  
+**Alignment Source**: `.planning/venture-hub-alignment.json`  
 **Last Updated**: `=dateformat(now(), "yyyy-MM-dd HH:mm")`  
 
 ---
@@ -132,6 +133,30 @@ if (data && data.entities) {
 
 ---
 
+## Repo Registry
+
+```dataviewjs
+const data = await dv.io.load(".planning/graph-data.json");
+if (data && data.entities) {
+  const repos = data.entities.filter(e => e.entity_type === "Repo");
+  if (repos.length > 0) {
+    dv.table(
+      ["Name", "Type", "Owner", "Description"],
+      repos.map(r => [
+        r.name,
+        r.metadata?.type || "—",
+        r.metadata?.owner || "—",
+        r.description || "—"
+      ])
+    );
+  } else {
+    dv.paragraph("No repos in graph yet. Run `python3 obsidian_graph_sync.py` after adding Repo entities to Supabase.");
+  }
+}
+```
+
+---
+
 ## Entity Relationships
 
 ```dataviewjs
@@ -192,6 +217,43 @@ if (data?.synced_at) {
 }
 dv.paragraph(`**Entities**: ${data?.entity_count || 0}`);
 dv.paragraph(`**Relationships**: ${data?.relationship_count || 0}`);
+```
+
+---
+
+## Venture Hub Alignment
+
+```dataviewjs
+const align = await dv.io.load(".planning/venture-hub-alignment.json");
+if (!align || !align.summary) {
+  dv.paragraph("⏳ Alignment data not available yet. Run `python3 obsidian_graph_sync.py`.");
+} else {
+  const summary = align.summary;
+  dv.paragraph(`
+🔗 **Alignment Summary**
+- Total ventures: ${summary.total_ventures || 0}
+- Aligned: ${summary.ventures_aligned || 0}
+- Needs attention: ${summary.ventures_needing_attention || 0}
+- With graph entities: ${summary.ventures_with_graph_entities || 0}
+- Supabase repos indexed: ${summary.supabase_repo_count || 0}
+  `);
+
+  const mismatches = (align.mismatches || []).slice(0, 25);
+  if (mismatches.length > 0) {
+    dv.table(
+      ["Venture", "Venture ID", "Graph Connected", "Missing Required Repos", "Status"],
+      mismatches.map(v => [
+        v.venture_name || "—",
+        v.venture_id || "—",
+        v.graph_connected ? "✅" : "❌",
+        (v.missing_required_repos || []).join(", ") || "—",
+        v.alignment_status || "—"
+      ])
+    );
+  } else {
+    dv.paragraph("✅ All ventures are aligned.");
+  }
+}
 ```
 
 ---
