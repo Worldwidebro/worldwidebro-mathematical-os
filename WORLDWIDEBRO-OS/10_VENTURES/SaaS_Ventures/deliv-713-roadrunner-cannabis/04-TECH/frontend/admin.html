@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadrunner Admin Dashboard</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #1a1a1a; color: #fff; }
+        .dashboard { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; padding: 2rem; }
+        .metric-card { background: rgba(0, 216, 79, 0.1); border-left: 4px solid #00d84f; padding: 1.5rem; border-radius: 8px; cursor: pointer; transition: all 0.3s; }
+        .metric-card:hover { background: rgba(0, 216, 79, 0.2); transform: translateY(-2px); }
+        .metric-label { color: #aaa; font-size: 0.85rem; text-transform: uppercase; margin-bottom: 0.5rem; }
+        .metric-value { font-size: 2.5rem; font-weight: bold; color: #00d84f; }
+        .metric-change { color: #4caf50; font-size: 0.85rem; margin-top: 0.5rem; }
+        .change-negative { color: #ff6b6b; }
+        .section { grid-column: 1 / -1; background: rgba(0, 0, 0, 0.5); padding: 2rem; border-radius: 8px; border: 1px solid #333; }
+        .section-title { font-size: 1.5rem; color: #00d84f; margin-bottom: 1.5rem; }
+        .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+        .table { width: 100%; border-collapse: collapse; }
+        .table th { background: #1a1a1a; padding: 1rem; text-align: left; color: #aaa; font-weight: bold; border-bottom: 2px solid #333; }
+        .table td { padding: 1rem; border-bottom: 1px solid #333; cursor: pointer; }
+        .table tr:hover { background: rgba(0, 216, 79, 0.05); }
+        .status-badge { padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.8rem; font-weight: bold; }
+        .status-completed { background: rgba(76, 175, 80, 0.3); color: #4caf50; }
+        .status-pending { background: rgba(255, 193, 7, 0.3); color: #ffc107; }
+        .status-in-progress { background: rgba(0, 216, 79, 0.3); color: #00d84f; }
+        .chart { height: 200px; background: linear-gradient(135deg, rgba(0, 216, 79, 0.2) 0%, rgba(0, 100, 50, 0.1) 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #666; }
+        .chart-bar { display: flex; gap: 0.5rem; align-items: flex-end; height: 80%; width: 100%; justify-content: space-around; }
+        .bar { background: linear-gradient(180deg, #00d84f 0%, #00994d 100%); border-radius: 4px 4px 0 0; flex: 1; cursor: pointer; transition: all 0.3s; }
+        .bar:hover { background: linear-gradient(180deg, #00ff56 0%, #00b83d 100%); }
+        .chart-label { text-align: center; font-size: 0.75rem; color: #aaa; margin-top: 0.5rem; }
+        .controls { display: flex; gap: 1rem; margin-bottom: 1rem; }
+        button { padding: 0.75rem 1.5rem; background: #00d84f; color: black; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; transition: all 0.3s; }
+        button:hover { background: #00b83d; transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0, 216, 79, 0.3); }
+        .button-secondary { background: #333; color: white; }
+        .button-secondary:hover { background: #444; }
+        .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); z-index: 1000; justify-content: center; align-items: center; }
+        .modal.active { display: flex; }
+        .modal-content { background: #1a1a1a; padding: 2rem; border-radius: 8px; max-width: 400px; border: 2px solid #00d84f; }
+        .modal-content h3 { color: #00d84f; margin-bottom: 1rem; }
+        .modal-close { position: absolute; top: 1rem; right: 1rem; background: #333; color: white; border: none; width: 30px; height: 30px; border-radius: 50%; cursor: pointer; }
+        @media (max-width: 1024px) {
+            .dashboard { grid-template-columns: repeat(2, 1fr); }
+            .grid-2 { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 640px) {
+            .dashboard { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div style="background: #00d84f; color: black; padding: 1.5rem 2rem; font-weight: bold; font-size: 1.3rem; cursor: pointer;" onclick="alert('Dashboard refreshed!')">🏃 ROADRUNNER ADMIN DASHBOARD</div>
+
+    <div id="modal" class="modal">
+        <button class="modal-close" onclick="closeModal()">✕</button>
+        <div class="modal-content" id="modalContent"></div>
+    </div>
+
+    <div class="dashboard">
+        <div class="metric-card" onclick="openModal('Revenue', 'Detailed revenue analytics and daily breakdown')">
+            <div class="metric-label">Today's Revenue</div>
+            <div class="metric-value">$2,847</div>
+            <div class="metric-change">↑ 12% vs yesterday</div>
+        </div>
+
+        <div class="metric-card" onclick="openModal('Orders', 'Current order status: 47 total, 18 pending')">
+            <div class="metric-label">Active Orders</div>
+            <div class="metric-value">47</div>
+            <div class="metric-change">18 pending</div>
+        </div>
+
+        <div class="metric-card" onclick="openModal('Drivers', '23 drivers currently online and active')">
+            <div class="metric-label">Drivers Online</div>
+            <div class="metric-value">23</div>
+            <div class="metric-change">Avg distance: 24.3 mi</div>
+        </div>
+
+        <div class="metric-card" onclick="openModal('Performance', 'Average delivery time: 18 minutes')">
+            <div class="metric-label">Avg Delivery Time</div>
+            <div class="metric-value">18 min</div>
+            <div class="metric-change change-negative">↓ 2 min vs avg</div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Revenue & Performance</div>
+            <div class="grid-2">
+                <div>
+                    <div style="margin-bottom: 1rem; color: #aaa;">Weekly Revenue Trend</div>
+                    <div class="chart">
+                        <div class="chart-bar">
+                            <div class="bar" style="height: 60%;" onclick="alert('Monday revenue loaded')"></div>
+                            <div class="bar" style="height: 75%;" onclick="alert('Tuesday revenue loaded')"></div>
+                            <div class="bar" style="height: 80%;" onclick="alert('Wednesday revenue loaded')"></div>
+                            <div class="bar" style="height: 70%;" onclick="alert('Thursday revenue loaded')"></div>
+                            <div class="bar" style="height: 85%;" onclick="alert('Friday revenue loaded')"></div>
+                            <div class="bar" style="height: 90%;" onclick="alert('Saturday revenue loaded')"></div>
+                            <div class="bar" style="height: 95%;" onclick="alert('Sunday revenue loaded')"></div>
+                        </div>
+                    </div>
+                    <div style="display: flex; justify-content: space-around; margin-top: 1rem; font-size: 0.75rem; color: #aaa;">
+                        <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
+                    </div>
+                </div>
+
+                <div>
+                    <div style="margin-bottom: 1rem; color: #aaa;">Order Distribution</div>
+                    <div style="padding: 1rem; background: rgba(0, 0, 0, 0.3); border-radius: 8px;">
+                        <div style="display: flex; justify-content: space-between; padding: 0.5rem; border-bottom: 1px solid #333; cursor: pointer;" onclick="alert('Flower orders details loaded')">
+                            <span>🌿 Flower</span><span style="color: #00d84f;">35%</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; padding: 0.5rem; border-bottom: 1px solid #333; cursor: pointer;" onclick="alert('Edibles orders details loaded')">
+                            <span>🍬 Edibles</span><span style="color: #00d84f;">25%</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; padding: 0.5rem; border-bottom: 1px solid #333; cursor: pointer;" onclick="alert('Concentrates orders details loaded')">
+                            <span>💎 Concentrates</span><span style="color: #00d84f;">20%</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; padding: 0.5rem; cursor: pointer;" onclick="alert('Wellness orders details loaded')">
+                            <span>🧴 Wellness</span><span style="color: #00d84f;">20%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Active Drivers</div>
+            <div class="controls">
+                <button onclick="alert('Opening driver assignment panel...')">+ Assign Delivery</button>
+                <button class="button-secondary" onclick="alert('Loading driver analytics...')">View Analytics</button>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Driver</th>
+                        <th>Status</th>
+                        <th>Deliveries</th>
+                        <th>Earnings</th>
+                        <th>Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr onclick="alert('Marcus J. details loaded')">
+                        <td>🏃 Marcus J.</td>
+                        <td><span class="status-badge status-in-progress">In Transit</span></td>
+                        <td>6 completed</td>
+                        <td>$142.50</td>
+                        <td>⭐ 4.9</td>
+                    </tr>
+                    <tr onclick="alert('Sarah M. details loaded')">
+                        <td>🏃 Sarah M.</td>
+                        <td><span class="status-badge status-completed">Idle</span></td>
+                        <td>4 completed</td>
+                        <td>$98.00</td>
+                        <td>⭐ 5.0</td>
+                    </tr>
+                    <tr onclick="alert('Alex R. details loaded')">
+                        <td>🏃 Alex R.</td>
+                        <td><span class="status-badge status-in-progress">In Transit</span></td>
+                        <td>5 completed</td>
+                        <td>$125.00</td>
+                        <td>⭐ 4.8</td>
+                    </tr>
+                    <tr onclick="alert('James W. details loaded')">
+                        <td>🏃 James W.</td>
+                        <td><span class="status-badge status-pending">Waiting</span></td>
+                        <td>0 completed</td>
+                        <td>$0.00</td>
+                        <td>⭐ N/A</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Recent Orders</div>
+            <div class="controls">
+                <button onclick="alert('Exporting order report...')">Export Report</button>
+                <button class="button-secondary" onclick="alert('Opening order filters...')">Filter</button>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Customer</th>
+                        <th>Status</th>
+                        <th>Amount</th>
+                        <th>Driver</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr onclick="alert('Order RR-2847 details loaded')">
+                        <td>RR-2847</td>
+                        <td>Sarah M.</td>
+                        <td><span class="status-badge status-completed">Delivered</span></td>
+                        <td>$85.00</td>
+                        <td>Marcus J.</td>
+                    </tr>
+                    <tr onclick="alert('Order RR-2846 details loaded')">
+                        <td>RR-2846</td>
+                        <td>John D.</td>
+                        <td><span class="status-badge status-completed">Delivered</span></td>
+                        <td>$50.00</td>
+                        <td>Sarah M.</td>
+                    </tr>
+                    <tr onclick="alert('Order RR-2845 details loaded')">
+                        <td>RR-2845</td>
+                        <td>Emma R.</td>
+                        <td><span class="status-badge status-in-progress">In Transit</span></td>
+                        <td>$120.00</td>
+                        <td>Alex R.</td>
+                    </tr>
+                    <tr onclick="alert('Order RR-2844 details loaded')">
+                        <td>RR-2844</td>
+                        <td>Carlos L.</td>
+                        <td><span class="status-badge status-pending">Pending</span></td>
+                        <td>$95.00</td>
+                        <td>Unassigned</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Inventory Management</div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Stock</th>
+                        <th>Status</th>
+                        <th>Reorder Point</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr onclick="alert('OG Kush inventory details loaded')">
+                        <td>🌿 OG Kush (oz)</td>
+                        <td>247 units</td>
+                        <td><span class="status-badge status-completed">✓ In Stock</span></td>
+                        <td>100</td>
+                    </tr>
+                    <tr onclick="alert('Sour Diesel - low stock warning. Reorder recommended!')">
+                        <td>🌿 Sour Diesel (oz)</td>
+                        <td>89 units</td>
+                        <td><span class="status-badge status-pending">⚠ Low</span></td>
+                        <td>100</td>
+                    </tr>
+                    <tr onclick="alert('Gummy Pack inventory details loaded')">
+                        <td>🍬 Gummy Pack (10ct)</td>
+                        <td>342 units</td>
+                        <td><span class="status-badge status-completed">✓ In Stock</span></td>
+                        <td>200</td>
+                    </tr>
+                    <tr onclick="alert('Live Resin - CRITICAL LOW STOCK! Immediate reorder required!')">
+                        <td>💎 Live Resin (g)</td>
+                        <td>52 units</td>
+                        <td><span class="status-badge status-pending">⚠ Critical</span></td>
+                        <td>100</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        function openModal(title, content) {
+            document.getElementById('modalContent').innerHTML = `
+                <h3>${title}</h3>
+                <p style="margin-bottom: 1rem; color: #aaa;">${content}</p>
+                <button style="width: 100%;" onclick="closeModal()">Close</button>
+            `;
+            document.getElementById('modal').classList.add('active');
+        }
+
+        function closeModal() {
+            document.getElementById('modal').classList.remove('active');
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadrunner Driver App</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f5f5; color: #333; }
+        .driver-container { display: grid; grid-template-columns: 1fr 1fr; height: 100vh; gap: 1rem; padding: 1rem; }
+        .header { background: #00d84f; color: black; padding: 1rem; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; grid-column: 1 / -1; font-weight: bold; }
+        .driver-stats { background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .stat { display: flex; justify-content: space-between; padding: 0.75rem; border-bottom: 1px solid #eee; }
+        .stat:last-child { border-bottom: none; }
+        .stat-label { color: #666; }
+        .stat-value { font-weight: bold; color: #00d84f; font-size: 1.2rem; }
+        .map-container { background: linear-gradient(135deg, #e0e0e0 0%, #f0f0f0 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #999; font-weight: bold; }
+        .deliveries-list { background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); overflow-y: auto; max-height: calc(100vh - 120px); }
+        .delivery-item { padding: 1rem; border-bottom: 1px solid #eee; cursor: pointer; transition: all 0.3s; }
+        .delivery-item:hover { background: #f9f9f9; border-left: 4px solid #00d84f; padding-left: calc(1rem - 4px); }
+        .delivery-item.active { background: #e8f5e9; border-left: 4px solid #00d84f; }
+        .delivery-address { font-weight: bold; margin-bottom: 0.25rem; color: #1a472a; }
+        .delivery-customer { font-size: 0.9rem; color: #666; margin-bottom: 0.25rem; }
+        .delivery-time { font-size: 0.85rem; color: #999; margin-bottom: 0.5rem; }
+        .delivery-status { display: flex; justify-content: space-between; align-items: center; }
+        .status-badge { padding: 0.25rem 0.75rem; background: #00d84f; color: black; border-radius: 20px; font-size: 0.8rem; font-weight: bold; }
+        .status-badge.completed { background: #4caf50; }
+        .detail-panel { background: white; border-radius: 8px; padding: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1); overflow-y: auto; max-height: calc(100vh - 120px); }
+        .detail-title { font-size: 1.5rem; color: #1a472a; margin-bottom: 1rem; font-weight: bold; }
+        .detail-section { margin-bottom: 1.5rem; }
+        .section-label { font-size: 0.9rem; color: #666; font-weight: bold; margin-bottom: 0.5rem; text-transform: uppercase; }
+        .section-content { padding: 1rem; background: #f9f9f9; border-radius: 4px; font-size: 0.95rem; }
+        .customer-info { display: flex; align-items: center; gap: 1rem; }
+        .customer-avatar { width: 50px; height: 50px; background: #00d84f; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; }
+        .customer-name { font-weight: bold; color: #1a472a; }
+        .gps-location { display: flex; align-items: center; gap: 0.5rem; margin-top: 0.5rem; color: #00d84f; font-weight: bold; }
+        button { padding: 0.5rem 1rem; border: none; border-radius: 4px; cursor: pointer; font-size: 0.85rem; transition: all 0.3s; }
+        .btn-primary { background: #00d84f; color: black; font-weight: bold; }
+        .btn-primary:hover { background: #00b83d; }
+        .btn-secondary { background: #f0f0f0; color: #333; }
+        .btn-secondary:hover { background: #e0e0e0; }
+        .controls { display: flex; gap: 1rem; margin-top: 1rem; }
+        .controls button { flex: 1; }
+        .verification-input { padding: 0.75rem; border: 2px solid #e0e0e0; border-radius: 4px; margin-top: 0.5rem; width: 100%; }
+        .verification-input:focus { outline: none; border-color: #00d84f; }
+        @media (max-width: 1024px) {
+            .driver-container { grid-template-columns: 1fr; }
+            .map-container { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="driver-container">
+        <div class="header">
+            <div>🏃 ROADRUNNER DRIVER</div>
+            <div>Earnings: <span style="color: #00d84f;">$<span id="earnings">145.60</span></span></div>
+        </div>
+
+        <div class="driver-stats">
+            <div class="stat"><span class="stat-label">Today's Deliveries</span><span class="stat-value">8</span></div>
+            <div class="stat"><span class="stat-label">Completed</span><span class="stat-value" id="completed">5</span></div>
+            <div class="stat"><span class="stat-label">In Progress</span><span class="stat-value" id="inProgress">3</span></div>
+            <div class="stat"><span class="stat-label">Rating</span><span class="stat-value">⭐ 4.9</span></div>
+            <div class="stat"><span class="stat-label">Distance Today</span><span class="stat-value">23.4 mi</span></div>
+        </div>
+
+        <div class="map-container">📍 Live GPS Map (Integration Ready)</div>
+
+        <div class="deliveries-list" id="deliveriesList"></div>
+
+        <div class="detail-panel" id="detailContent">
+            <div class="detail-title">Select a Delivery</div>
+            <p style="color: #999;">Tap a delivery from the list to view details, navigate, and complete the order.</p>
+        </div>
+    </div>
+
+    <script>
+        const deliveries = [
+            { id: 1, customer: "Sarah M.", address: "123 Oak Street, Denver CO", orderId: "RR-001", items: ["OG Kush", "Gummy Pack"], price: 80, eta: "12 mins", status: "in-progress", phone: "(303) 555-0101", rating: 5 },
+            { id: 2, customer: "John D.", address: "456 Pine Ave, Denver CO", orderId: "RR-002", items: ["Sour Diesel"], price: 50, eta: "18 mins", status: "pending", phone: "(303) 555-0102", rating: 4 },
+            { id: 3, customer: "Emma R.", address: "789 Maple Dr, Denver CO", orderId: "RR-003", items: ["Wellness Oil"], price: 55, eta: "25 mins", status: "pending", phone: "(303) 555-0103", rating: 5 },
+            { id: 4, customer: "Alex T.", address: "321 Cedar Lane, Denver CO", orderId: "RR-004", items: ["Live Resin"], price: 65, eta: "10 mins", status: "completed", phone: "(303) 555-0104", rating: 5 }
+        ];
+
+        let currentDelivery = null;
+
+        function renderDeliveries() {
+            document.getElementById("deliveriesList").innerHTML = deliveries.map(d => `
+                <div class="delivery-item ${d.status === 'completed' ? 'completed' : ''} ${currentDelivery?.id === d.id ? 'active' : ''}" onclick="selectDelivery(${d.id})">
+                    <div class="delivery-address">${d.address.split(',')[0]}</div>
+                    <div class="delivery-customer">📦 ${d.customer}</div>
+                    <div class="delivery-time">⏱ ${d.eta}</div>
+                    <div class="delivery-status">
+                        <span>${d.orderId}</span>
+                        <span class="status-badge ${d.status === 'completed' ? 'completed' : ''}">${d.status === 'pending' ? 'Ready' : d.status === 'in-progress' ? 'In Route' : 'Delivered'}</span>
+                    </div>
+                </div>
+            `).join("");
+        }
+
+        function selectDelivery(id) {
+            currentDelivery = deliveries.find(d => d.id === id);
+            renderDeliveries();
+            renderDetail();
+        }
+
+        function renderDetail() {
+            if (!currentDelivery) return;
+            document.getElementById("detailContent").innerHTML = `
+                <div class="detail-title">${currentDelivery.orderId}</div>
+                <div class="detail-section">
+                    <div class="section-label">Customer</div>
+                    <div class="section-content">
+                        <div class="customer-info">
+                            <div class="customer-avatar">👤</div>
+                            <div>
+                                <div class="customer-name">${currentDelivery.customer}</div>
+                                <div style="color: #666; font-size: 0.9rem;">⭐ ${currentDelivery.rating}.0 rating</div>
+                                <div class="gps-location">📍 ${currentDelivery.address}</div>
+                            </div>
+                        </div>
+                        <div style="margin-top: 1rem;">
+                            <div style="color: #666; font-size: 0.9rem;">Phone</div>
+                            <div><a href="tel:${currentDelivery.phone}" style="color: #00d84f; text-decoration: none; font-weight: bold;">📞 ${currentDelivery.phone}</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail-section">
+                    <div class="section-label">Order Items</div>
+                    <div class="section-content">
+                        ${currentDelivery.items.map(item => `<div>✓ ${item}</div>`).join('')}
+                        <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #e0e0e0; font-weight: bold; color: #00d84f;">Total: $${currentDelivery.price}</div>
+                    </div>
+                </div>
+                ${currentDelivery.status !== 'completed' ? `
+                <div class="detail-section">
+                    <div class="section-label">Verification</div>
+                    <input type="text" class="verification-input" placeholder="Enter 4-digit code">
+                </div>
+                ` : ''}
+                <div class="controls">
+                    <button class="btn-secondary" onclick="alert('📍 Navigating to ' + '${currentDelivery.address}')">📍 Navigate</button>
+                    ${currentDelivery.status !== 'completed' ? `<button class="btn-primary" onclick="completeDelivery(${currentDelivery.id})">✓ Deliver</button>` : `<button class="btn-secondary" disabled>✓ Delivered</button>`}
+                </div>
+            `;
+        }
+
+        function completeDelivery(id) {
+            const d = deliveries.find(x => x.id === id);
+            d.status = 'completed';
+            const completed = deliveries.filter(x => x.status === 'completed').length;
+            document.getElementById('completed').textContent = completed;
+            document.getElementById('inProgress').textContent = 8 - completed;
+            document.getElementById('earnings').textContent = (parseFloat(document.getElementById('earnings').textContent) + d.price * 0.25).toFixed(2);
+            currentDelivery = null;
+            renderDeliveries();
+            renderDetail();
+        }
+
+        renderDeliveries();
+    </script>
+</body>
+</html>
