@@ -32,7 +32,7 @@ class MonitoringEngine:
 
             results[repo_name] = {
                 "status": "unknown",
-                "boot_checks": [check.get("check_name") for check in boot_checks],
+                "boot_checks": boot_checks,
                 "required_services": [svc.get("service_name") for svc in services],
                 "owner_agent": repo.get("owner_agent"),
             }
