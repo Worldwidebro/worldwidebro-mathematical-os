@@ -36,8 +36,8 @@ class RegistryLoader:
 
     def get_agent_repos(self, agent_id: str) -> Dict[str, List[str]]:
         """Get primary and secondary repos for an agent."""
-        agents = self.registry.get("agents", {})
-        agent = agents.get(agent_id, {})
+        assignments = self.registry.get("agent_repo_assignments", {})
+        agent = assignments.get(agent_id, {})
         return {
             "primary_repos": agent.get("primary_repos", []),
             "secondary_repos": agent.get("secondary_repos", []),

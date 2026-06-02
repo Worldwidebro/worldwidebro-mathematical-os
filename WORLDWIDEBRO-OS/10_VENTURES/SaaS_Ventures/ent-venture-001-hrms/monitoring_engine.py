@@ -125,7 +125,7 @@ class MonitoringEngine:
 
     def check_agent_authority(self) -> Dict[str, Any]:
         """Validate agent RACI assignments and decision authority."""
-        agents = self.loader.registry.get("agents", {})
+        agents = self.loader.registry.get("agent_repo_assignments", {})
         authority_matrix = {}
 
         for agent_id, agent_def in agents.items():
