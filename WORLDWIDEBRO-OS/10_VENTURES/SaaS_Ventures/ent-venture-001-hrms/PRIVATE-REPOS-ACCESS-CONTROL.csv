@@ -1,0 +1,8 @@
+repo_name,access_tier,required_roles,mfa_required,ip_whitelist_required,data_classification,access_policy
+civilization-os,internal,"hrms-founder-001, hrms-operations-ai-001, venture-factory-core",true,false,confidential,"Knowledge graph backbone: restricted to core ops"
+iza-os-rag-system,internal,"hrms-founder-001, hrms-operations-ai-001, hrms-product-ai-001",true,false,confidential,"RAG indexing: MCP servers and agents only"
+the-office,internal,"all hrms agents, hrms-founder-001",true,false,internal,"Workspace dashboard: all internal agents can access"
+venture-hub,internal,"hrms-founder-001, hrms-operations-ai-001, hrms-sales-ai-001",true,false,internal,"Venture management: ops and sales tiers"
+venture-factory-core,internal,"hrms-founder-001, venture-factory-core",true,true,confidential,"Provisioning engine: highest security tier"
+autonomous-venture-studio,internal,"hrms-founder-001, hrms-product-ai-001",true,false,confidential,"Simulation sandbox: R&D use only"
+lt-009-hvac-technician-dispatch,internal,"hrms-product-ai-001, con-012-hvac-services",true,false,internal,"Dispatch optimization: technician roster access"

@@ -1,0 +1,8 @@
+agent_id,agent_type,primary_repos,secondary_repos,decision_authority,escalation_to,monitoring_frequency,status
+hrms-founder-001,human,venture-hub|venture-factory-core|autonomous-venture-studio,all repos,strategic,none,weekly,active
+hrms-support-ai-001,ai-agent,the-office|venture-hub,iza-os-rag-system,operational,hrms-founder-001,hourly,to_deploy
+hrms-sales-ai-001,ai-agent,venture-hub|pitch-kit|business-template-marketplace,con-001-ace-construction,operational,hrms-founder-001,hourly,to_deploy
+hrms-operations-ai-001,ai-agent,venture-factory-core|civilization-os,venture-hub,operational,hrms-founder-001,hourly,to_deploy
+hrms-product-ai-001,ai-agent,autonomous-venture-studio|lt-009-hvac-technician-dispatch,con-012-hvac-services,operational,hrms-founder-001,hourly,to_deploy
+con-001-construction-agent,venture-specific,con-001-ace-construction,venture-hub,tactical,hrms-founder-001|hrms-sales-ai-001,daily,active
+con-012-dispatch-agent,venture-specific,con-012-hvac-services|lt-009-hvac-technician-dispatch,venture-hub,tactical,hrms-founder-001|hrms-product-ai-001,hourly,active
