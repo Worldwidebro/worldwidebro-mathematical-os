@@ -1,0 +1,54 @@
+{
+  "category": "HVAC",
+  "month": "2026-05",
+  "as_of": "2026-05-31",
+  "equipment": [
+    {
+      "id": "hvac-tool-001",
+      "name": "Digital Multimeter",
+      "purpose": "Electrical diagnostics",
+      "vendors": [
+        {"name": "Amazon", "price": 24.99, "shipping": "Prime", "link": "amazon.com"},
+        {"name": "Home Depot", "price": 29.99, "shipping": "In-store", "link": "homedepot.com"},
+        {"name": "Lowe's", "price": 27.50, "shipping": "In-store", "link": "lowes.com"}
+      ],
+      "best_price": 24.99,
+      "best_vendor": "Amazon",
+      "price_trend": "stable",
+      "quantity_discount": "10+ units: -15%"
+    },
+    {
+      "id": "hvac-tool-002",
+      "name": "Refrigerant Recovery Machine",
+      "purpose": "Freon recycling",
+      "vendors": [
+        {"name": "HVAC Depot", "price": 850, "shipping": "3-5 days", "link": ""},
+        {"name": "Supplyhouse", "price": 920, "shipping": "3-5 days", "link": ""},
+        {"name": "Amazon", "price": 995, "shipping": "Prime", "link": ""}
+      ],
+      "best_price": 850,
+      "best_vendor": "HVAC Depot",
+      "price_trend": "down 5% YoY",
+      "quantity_discount": "2+ units: -10%"
+    },
+    {
+      "id": "hvac-supply-001",
+      "name": "HVAC Ductwork (per 10ft)",
+      "purpose": "Duct installation",
+      "vendors": [
+        {"name": "Local Supplier", "price": 45, "shipping": "Local pickup", "link": ""},
+        {"name": "Supply House", "price": 52, "shipping": "Delivery", "link": ""}
+      ],
+      "best_price": 45,
+      "best_vendor": "Local Supplier",
+      "price_trend": "up 3% YoY",
+      "bulk_pricing": "50+ feet: $42/unit"
+    }
+  ],
+  "summary": {
+    "total_tracked_items": 3,
+    "avg_price_stability": "stable",
+    "supplier_with_best_deals": "Amazon (tools)",
+    "note": "Local suppliers competitive on materials"
+  }
+}

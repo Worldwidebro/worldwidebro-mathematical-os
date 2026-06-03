@@ -1,0 +1,4439 @@
+{
+  "alignment_type": "graphify_socraticode_bridge",
+  "created_at": "2026-06-01",
+  "total_ventures": 633,
+  "total_graph_nodes": 1582,
+  "total_graph_edges": 1520,
+  "venture_repos_mapping": {
+    "FIN-001-GenixBank-Lite": [
+      "fin-001-genixbank-lite",
+      "fin-002-credit-repair-automation",
+      "fin-003-ai-boss-hub-lite",
+      "fin-004-genixbanks-ai-treasurer",
+      "fin-005-u-haul-rental-affiliate"
+    ],
+    "FIN-002-Credit-Repair-Automation": [
+      "fin-002-credit-repair-automation",
+      "business-template-marketplace",
+      "civilization-os-infra",
+      "fin-001-genixbank-lite",
+      "fin-003-ai-boss-hub-lite"
+    ],
+    "FIN-003-AI-Boss-Hub-Lite": [
+      "fin-003-ai-boss-hub-lite",
+      "iza-os-vector-database",
+      "tech-022-database-optimizer",
+      "fin-001-genixbank-lite",
+      "fin-002-credit-repair-automation"
+    ],
+    "FIN-004-GenixBanks-AI-Treasurer": [
+      "fin-004-genixbanks-ai-treasurer",
+      "fin-001-genixbank-lite",
+      "fin-002-credit-repair-automation",
+      "fin-003-ai-boss-hub-lite",
+      "fin-005-u-haul-rental-affiliate"
+    ],
+    "FIN-005-U-Haul-Rental-Affiliate": [
+      "fin-005-u-haul-rental-affiliate",
+      "ai-001-ai-command-center",
+      "ai-002-api",
+      "fin-001-genixbank-lite",
+      "fin-002-credit-repair-automation"
+    ],
+    "FIN-006-Tax-Prep-Filing-Services": [
+      "fin-006-tax-prep-filing-services",
+      "business-template-marketplace",
+      "civilization-os-infra",
+      "fin-001-genixbank-lite",
+      "fin-002-credit-repair-automation"
+    ],
+    "FIN-007-Business-Credit-Building": [
+      "fin-007-business-credit-building",
+      "business-template-marketplace",
+      "civilization-os-infra",
+      "fin-001-genixbank-lite",
+      "fin-002-credit-repair-automation"
+    ],
+    "FIN-008-Business-Formation-Services": [
+      "fin-008-business-formation-services",
+      "fin-001-genixbank-lite",
+      "fin-002-credit-repair-automation",
+      "fin-003-ai-boss-hub-lite",
+      "fin-004-genixbanks-ai-treasurer"
+    ],
+    "FIN-009-Crypto-Tax-Optimizer": [
+      "fin-009-crypto-tax-optimizer",
+      "business-template-marketplace",
+      "civilization-os-infra",
+      "fin-001-genixbank-lite",
+      "fin-002-credit-repair-automation"
+    ],
+    "FIN-010-AI-Powered-Garbage-Collection": [
+      "fin-010-ai-powered-garbage-collection",
+      "fin-001-genixbank-lite",
+      "fin-002-credit-repair-automation",
+      "fin-003-ai-boss-hub-lite",
+      "fin-004-genixbanks-ai-treasurer"
+    ],
+    "FIN-011-Automated-Bookkeeping": [
+      "fin-011-automated-bookkeeping",
+      "business-template-marketplace",
+      "civilization-os-infra",
+      "fin-001-genixbank-lite",
+      "fin-002-credit-repair-automation"
+    ],
+    "FIN-012-Invoice-Factoring-AI": [
+      "fin-012-invoice-factoring-ai",
+      "business-template-marketplace",
+      "civilization-os-infra",
+      "fin-001-genixbank-lite",
+      "fin-002-credit-repair-automation"
+    ],
+    "FIN-013-Charity-Donation-AI": [
+      "fin-013-charity-donation-ai",
+      "fin-001-genixbank-lite",
+      "fin-002-credit-repair-automation",
+      "fin-003-ai-boss-hub-lite",
+      "fin-004-genixbanks-ai-treasurer"
+    ],
+    "FIN-014-Expense-Tracker-AI": [
+      "fin-014-expense-tracker-ai",
+      "fin-001-genixbank-lite",
+      "fin-002-credit-repair-automation",
+      "fin-003-ai-boss-hub-lite",
+      "fin-004-genixbanks-ai-treasurer"
+    ],
+    "FIN-015-Financial-Wellness-Coach": [
+      "fin-015-financial-wellness-coach",
+      "business-template-marketplace",
+      "civilization-os-infra",
+      "fin-001-genixbank-lite",
+      "fin-002-credit-repair-automation"
+    ],
+    "FIN-016-Trade-Finance-AI": [
+      "fin-016-trade-finance-ai",
+      "fin-001-genixbank-lite",
+      "fin-002-credit-repair-automation",
+      "fin-003-ai-boss-hub-lite",
+      "fin-004-genixbanks-ai-treasurer"
+    ],
+    "FIN-017-Remittance-AI": [
+      "fin-017-remittance-ai",
+      "fin-001-genixbank-lite",
+      "fin-002-credit-repair-automation",
+      "fin-003-ai-boss-hub-lite",
+      "fin-004-genixbanks-ai-treasurer"
+    ],
+    "FIN-018-Wealth-Transfer-AI": [
+      "fin-018-wealth-transfer-ai",
+      "fin-001-genixbank-lite",
+      "fin-002-credit-repair-automation",
+      "fin-003-ai-boss-hub-lite",
+      "fin-004-genixbanks-ai-treasurer"
+    ],
+    "FIN-019-Payment-Gateway-AI": [
+      "fin-019-payment-gateway-ai",
+      "business-template-marketplace",
+      "civilization-os-infra",
+      "fin-001-genixbank-lite",
+      "fin-002-credit-repair-automation"
+    ],
+    "FIN-020-Debt-Consolidation-AI": [
+      "fin-020-debt-consolidation-ai",
+      "fin-001-genixbank-lite",
+      "fin-002-credit-repair-automation",
+      "fin-003-ai-boss-hub-lite",
+      "fin-004-genixbanks-ai-treasurer"
+    ],
+    "FIN-021-Tax-Deduction-Finder": [
+      "fin-021-tax-deduction-finder",
+      "business-template-marketplace",
+      "civilization-os-infra",
+      "fin-001-genixbank-lite",
+      "fin-002-credit-repair-automation"
+    ],
+    "FIN-022-Budget-Forecasting-AI": [
+      "fin-022-budget-forecasting-ai",
+      "fin-001-genixbank-lite",
+      "fin-002-credit-repair-automation",
+      "fin-003-ai-boss-hub-lite",
+      "fin-004-genixbanks-ai-treasurer"
+    ],
+    "FIN-023-Investment-Portfolio-AI": [
+      "fin-023-investment-portfolio-ai",
+      "fin-001-genixbank-lite",
+      "fin-002-credit-repair-automation",
+      "fin-003-ai-boss-hub-lite",
+      "fin-004-genixbanks-ai-treasurer"
+    ],
+    "FIN-024-Crowdfunding-AI": [
+      "fin-024-crowdfunding-ai",
+      "fin-001-genixbank-lite",
+      "fin-002-credit-repair-automation",
+      "fin-003-ai-boss-hub-lite",
+      "fin-004-genixbanks-ai-treasurer"
+    ],
+    "FIN-025-Escrow-Automation": [
+      "fin-025-escrow-automation",
+      "fin-001-genixbank-lite",
+      "fin-002-credit-repair-automation",
+      "fin-003-ai-boss-hub-lite",
+      "fin-004-genixbanks-ai-treasurer"
+    ],
+    "FIN-026-Financial-Compliance-Scanner": [
+      "fin-026-financial-compliance-scanner",
+      "fin-001-genixbank-lite",
+      "fin-002-credit-repair-automation",
+      "fin-003-ai-boss-hub-lite",
+      "fin-004-genixbanks-ai-treasurer"
+    ],
+    "FIN-027-Patent-Writer-AI": [
+      "fin-027-patent-writer-ai",
+      "fin-001-genixbank-lite",
+      "fin-002-credit-repair-automation",
+      "fin-003-ai-boss-hub-lite",
+      "fin-004-genixbanks-ai-treasurer"
+    ],
+    "FIN-028-Legal-Analyzer-AI": [
+      "fin-028-legal-analyzer-ai",
+      "fin-001-genixbank-lite",
+      "fin-002-credit-repair-automation",
+      "fin-003-ai-boss-hub-lite",
+      "fin-004-genixbanks-ai-treasurer"
+    ],
+    "FIN-029-Compliance-Wallet-SaaS": [
+      "fin-029-compliance-wallet-saas",
+      "fin-001-genixbank-lite",
+      "fin-002-credit-repair-automation",
+      "fin-003-ai-boss-hub-lite",
+      "fin-004-genixbanks-ai-treasurer"
+    ],
+    "FIN-030-Local-SEO-Ranker-AI": [
+      "fin-030-local-seo-ranker-ai",
+      "fin-001-genixbank-lite",
+      "fin-002-credit-repair-automation",
+      "fin-003-ai-boss-hub-lite",
+      "fin-004-genixbanks-ai-treasurer"
+    ],
+    "FIN-031-Investor-Dashboard-Builder": [
+      "fin-031-investor-dashboard-builder",
+      "fin-001-genixbank-lite",
+      "fin-002-credit-repair-automation",
+      "fin-003-ai-boss-hub-lite",
+      "fin-004-genixbanks-ai-treasurer"
+    ],
+    "FIN-032-Legal-Toolkit-AI": [
+      "fin-032-legal-toolkit-ai",
+      "fin-001-genixbank-lite",
+      "fin-002-credit-repair-automation",
+      "fin-003-ai-boss-hub-lite",
+      "fin-004-genixbanks-ai-treasurer"
+    ],
+    "FIN-033-AI-Tax-Preparation-Service": [
+      "fin-033-ai-tax-preparation-service",
+      "fin-033-legal-toolkit-ai",
+      "fin-001-genixbank-lite",
+      "fin-002-credit-repair-automation",
+      "fin-003-ai-boss-hub-lite"
+    ],
+    "FIN-034-Payroll-Automation": [
+      "fin-034-payroll-automation",
+      "fin-001-genixbank-lite",
+      "fin-002-credit-repair-automation",
+      "fin-003-ai-boss-hub-lite",
+      "fin-004-genixbanks-ai-treasurer"
+    ],
+    "FIN-035-Insurance-Underwriting-AI": [
+      "fin-035-insurance-underwriting-ai",
+      "fin-001-genixbank-lite",
+      "fin-002-credit-repair-automation",
+      "fin-003-ai-boss-hub-lite",
+      "fin-004-genixbanks-ai-treasurer"
+    ],
+    "FIN-036-Arbitrage-Nexus-Platform": [
+      "fin-036-arbitrage-nexus-platform",
+      "fin-001-genixbank-lite",
+      "fin-002-credit-repair-automation",
+      "fin-003-ai-boss-hub-lite",
+      "fin-004-genixbanks-ai-treasurer"
+    ],
+    "BW-001-Lash-Extension-Studio": [
+      "bw-001-lash-extension-studio",
+      "bw-001-contracts",
+      "bw-001-up-next",
+      "bw-001-up-next-business",
+      "bw-001-up-next-code"
+    ],
+    "BW-002-Mobile-Lash-Service": [
+      "bw-002-mobile-lash-service",
+      "bw-001-contracts",
+      "bw-001-lash-extension-studio",
+      "bw-001-up-next",
+      "bw-001-up-next-business"
+    ],
+    "BW-003-Luxury-Lash-Bar": [
+      "bw-003-luxury-lash-bar",
+      "bw-001-contracts",
+      "bw-001-lash-extension-studio",
+      "bw-001-up-next",
+      "bw-001-up-next-business"
+    ],
+    "BW-004-Lash-Training-Academy": [
+      "bw-004-lash-training-academy",
+      "bw-001-contracts",
+      "bw-001-lash-extension-studio",
+      "bw-001-up-next",
+      "bw-001-up-next-business"
+    ],
+    "BW-005-Lash-Supply-Company": [
+      "bw-005-lash-supply-company",
+      "bw-001-contracts",
+      "bw-001-lash-extension-studio",
+      "bw-001-up-next",
+      "bw-001-up-next-business"
+    ],
+    "BW-006-Lash-Glue-Brand": [
+      "bw-006-lash-glue-brand",
+      "bw-001-contracts",
+      "bw-001-lash-extension-studio",
+      "bw-001-up-next",
+      "bw-001-up-next-business"
+    ],
+    "BW-007-Lash-Kits-&-Tools": [
+      "bw-007-lash-kits---tools",
+      "bw-001-contracts",
+      "bw-001-lash-extension-studio",
+      "bw-001-up-next",
+      "bw-001-up-next-business"
+    ],
+    "BW-008-Private-Label-Lashes": [
+      "bw-008-private-label-lashes",
+      "bw-001-contracts",
+      "bw-001-lash-extension-studio",
+      "bw-001-up-next",
+      "bw-001-up-next-business"
+    ],
+    "BW-009-Franchise-Lash-Salons": [
+      "bw-009-franchise-lash-salons",
+      "bw-001-contracts",
+      "bw-001-lash-extension-studio",
+      "bw-001-up-next",
+      "bw-001-up-next-business"
+    ],
+    "BW-010-Online-Lash-Education": [
+      "bw-010-online-lash-education",
+      "bw-001-contracts",
+      "bw-001-lash-extension-studio",
+      "bw-001-up-next",
+      "bw-001-up-next-business"
+    ],
+    "BW-011-Nail-Salon": [
+      "bw-011-nail-salon",
+      "bw-001-contracts",
+      "bw-001-lash-extension-studio",
+      "bw-001-up-next",
+      "bw-001-up-next-business"
+    ],
+    "BW-012-Mobile-Nail-Tech": [
+      "bw-012-mobile-nail-tech",
+      "bw-001-contracts",
+      "bw-001-lash-extension-studio",
+      "bw-001-up-next",
+      "bw-001-up-next-business"
+    ],
+    "BW-013-Luxury-Nail-Spa": [
+      "bw-013-luxury-nail-spa",
+      "bw-001-contracts",
+      "bw-001-lash-extension-studio",
+      "bw-001-up-next",
+      "bw-001-up-next-business"
+    ],
+    "BW-014-Press-On-Nail-Brand": [
+      "bw-014-press-on-nail-brand",
+      "bw-001-contracts",
+      "bw-001-lash-extension-studio",
+      "bw-001-up-next",
+      "bw-001-up-next-business"
+    ],
+    "BW-015-Nail-Art-Studio": [
+      "bw-015-nail-art-studio",
+      "bw-001-contracts",
+      "bw-001-lash-extension-studio",
+      "bw-001-up-next",
+      "bw-001-up-next-business"
+    ],
+    "BW-016-Nail-Polish-Brand": [
+      "bw-016-nail-polish-brand",
+      "bw-001-contracts",
+      "bw-001-lash-extension-studio",
+      "bw-001-up-next",
+      "bw-001-up-next-business"
+    ],
+    "BW-017-Nail-Care-Products": [
+      "bw-017-nail-care-products",
+      "bw-001-contracts",
+      "bw-001-lash-extension-studio",
+      "bw-001-up-next",
+      "bw-001-up-next-business"
+    ],
+    "BW-018-Nail-Booking-Marketplace": [
+      "bw-018-nail-booking-marketplace",
+      "bw-001-contracts",
+      "bw-001-lash-extension-studio",
+      "bw-001-up-next",
+      "bw-001-up-next-business"
+    ],
+    "BW-019-Salon-Management-Software": [
+      "bw-019-salon-management-software",
+      "bw-001-contracts",
+      "bw-001-lash-extension-studio",
+      "bw-001-up-next",
+      "bw-001-up-next-business"
+    ],
+    "BW-020-AI-Nail-Design-Generator": [
+      "bw-020-ai-nail-design-generator",
+      "bw-001-contracts",
+      "bw-001-lash-extension-studio",
+      "bw-001-up-next",
+      "bw-001-up-next-business"
+    ],
+    "BW-021-Hair-Salon": [
+      "bw-021-hair-salon",
+      "bw-001-contracts",
+      "bw-001-lash-extension-studio",
+      "bw-001-up-next",
+      "bw-001-up-next-business"
+    ],
+    "BW-022-Barbershop": [
+      "bw-022-barbershop",
+      "bw-001-contracts",
+      "bw-001-lash-extension-studio",
+      "bw-001-up-next",
+      "bw-001-up-next-business"
+    ],
+    "BW-023-Mobile-Hairstyling": [
+      "bw-023-mobile-hairstyling",
+      "bw-001-contracts",
+      "bw-001-lash-extension-studio",
+      "bw-001-up-next",
+      "bw-001-up-next-business"
+    ],
+    "BW-024-Hair-Braiding-Studio": [
+      "bw-024-hair-braiding-studio",
+      "bw-001-contracts",
+      "bw-001-lash-extension-studio",
+      "bw-001-up-next",
+      "bw-001-up-next-business"
+    ],
+    "BW-025-Wig-Installation-Studio": [
+      "bw-025-wig-installation-studio",
+      "bw-001-contracts",
+      "bw-001-lash-extension-studio",
+      "bw-001-up-next",
+      "bw-001-up-next-business"
+    ],
+    "BW-026-Hair-Extension-Salon": [
+      "bw-026-hair-extension-salon",
+      "bw-001-contracts",
+      "bw-001-lash-extension-studio",
+      "bw-001-up-next",
+      "bw-001-up-next-business"
+    ],
+    "BW-027-Hair-Care-Line": [
+      "bw-027-hair-care-line",
+      "bw-001-contracts",
+      "bw-001-lash-extension-studio",
+      "bw-001-up-next",
+      "bw-001-up-next-business"
+    ],
+    "BW-028-Wig-Brand": [
+      "bw-028-wig-brand",
+      "bw-001-contracts",
+      "bw-001-lash-extension-studio",
+      "bw-001-up-next",
+      "bw-001-up-next-business"
+    ],
+    "BW-029-Hair-Extensions-Brand": [
+      "bw-029-hair-extensions-brand",
+      "bw-001-contracts",
+      "bw-001-lash-extension-studio",
+      "bw-001-up-next",
+      "bw-001-up-next-business"
+    ],
+    "BW-030-Scalp-Treatment-Products": [
+      "bw-030-scalp-treatment-products",
+      "bw-001-contracts",
+      "bw-001-lash-extension-studio",
+      "bw-001-up-next",
+      "bw-001-up-next-business"
+    ],
+    "BW-031-Hair-Marketplace": [
+      "bw-031-hair-marketplace",
+      "bw-001-contracts",
+      "bw-001-lash-extension-studio",
+      "bw-001-up-next",
+      "bw-001-up-next-business"
+    ],
+    "BW-032-Stylist-Booking-Platform": [
+      "bw-032-stylist-booking-platform",
+      "bw-001-contracts",
+      "bw-001-lash-extension-studio",
+      "bw-001-up-next",
+      "bw-001-up-next-business"
+    ],
+    "BW-033-AI-Hairstyle-Simulator": [
+      "bw-033-ai-hairstyle-simulator",
+      "bw-001-contracts",
+      "bw-001-lash-extension-studio",
+      "bw-001-up-next",
+      "bw-001-up-next-business"
+    ],
+    "BW-034-Salon-Franchise-Chain": [
+      "bw-034-salon-franchise-chain",
+      "bw-001-contracts",
+      "bw-001-lash-extension-studio",
+      "bw-001-up-next",
+      "bw-001-up-next-business"
+    ],
+    "BW-035-Makeup-Studio": [
+      "bw-035-makeup-studio",
+      "bw-001-contracts",
+      "bw-001-lash-extension-studio",
+      "bw-001-up-next",
+      "bw-001-up-next-business"
+    ],
+    "BW-036-Bridal-Makeup-Service": [
+      "bw-036-bridal-makeup-service",
+      "bw-001-contracts",
+      "bw-001-lash-extension-studio",
+      "bw-001-up-next",
+      "bw-001-up-next-business"
+    ],
+    "BW-037-Mobile-Makeup-Artist": [
+      "bw-037-mobile-makeup-artist",
+      "bw-001-contracts",
+      "bw-001-lash-extension-studio",
+      "bw-001-up-next",
+      "bw-001-up-next-business"
+    ],
+    "BW-038-Photoshoot-Makeup-Team": [
+      "bw-038-photoshoot-makeup-team",
+      "bw-001-contracts",
+      "bw-001-lash-extension-studio",
+      "bw-001-up-next",
+      "bw-001-up-next-business"
+    ],
+    "BW-039-Cosmetics-Brand": [
+      "bw-039-cosmetics-brand",
+      "bw-001-contracts",
+      "bw-001-lash-extension-studio",
+      "bw-001-up-next",
+      "bw-001-up-next-business"
+    ],
+    "BW-040-Beauty-Tools-Brand": [
+      "bw-040-beauty-tools-brand",
+      "bw-001-contracts",
+      "bw-001-lash-extension-studio",
+      "bw-001-up-next",
+      "bw-001-up-next-business"
+    ],
+    "FH-001-Personal-Chef-Service": [
+      "fh-001-personal-chef-service",
+      "fh-002-meal-prep-delivery",
+      "fh-003-private-dinner-experiences",
+      "fh-004-catering-company",
+      "fh-005-corporate-lunch-service"
+    ],
+    "FH-002-Meal-Prep-Delivery": [
+      "fh-002-meal-prep-delivery",
+      "fh-001-personal-chef-service",
+      "fh-003-private-dinner-experiences",
+      "fh-004-catering-company",
+      "fh-005-corporate-lunch-service"
+    ],
+    "FH-003-Private-Dinner-Experiences": [
+      "fh-003-private-dinner-experiences",
+      "fh-001-personal-chef-service",
+      "fh-002-meal-prep-delivery",
+      "fh-004-catering-company",
+      "fh-005-corporate-lunch-service"
+    ],
+    "FH-004-Catering-Company": [
+      "fh-004-catering-company",
+      "fh-001-personal-chef-service",
+      "fh-002-meal-prep-delivery",
+      "fh-003-private-dinner-experiences",
+      "fh-005-corporate-lunch-service"
+    ],
+    "FH-005-Corporate-Lunch-Service": [
+      "fh-005-corporate-lunch-service",
+      "fh-001-personal-chef-service",
+      "fh-002-meal-prep-delivery",
+      "fh-003-private-dinner-experiences",
+      "fh-004-catering-company"
+    ],
+    "FH-006-Healthy-Meal-Prep-for-Gyms": [
+      "fh-006-healthy-meal-prep-for-gyms",
+      "fh-001-personal-chef-service",
+      "fh-002-meal-prep-delivery",
+      "fh-003-private-dinner-experiences",
+      "fh-004-catering-company"
+    ],
+    "FH-007-Elderly-Meal-Service": [
+      "fh-007-elderly-meal-service",
+      "fh-001-personal-chef-service",
+      "fh-002-meal-prep-delivery",
+      "fh-003-private-dinner-experiences",
+      "fh-004-catering-company"
+    ],
+    "FH-008-Athlete-Nutrition-Service": [
+      "fh-008-athlete-nutrition-service",
+      "fh-001-personal-chef-service",
+      "fh-002-meal-prep-delivery",
+      "fh-003-private-dinner-experiences",
+      "fh-004-catering-company"
+    ],
+    "FH-009-Packaged-Food-Brand": [
+      "fh-009-packaged-food-brand",
+      "fh-001-personal-chef-service",
+      "fh-002-meal-prep-delivery",
+      "fh-003-private-dinner-experiences",
+      "fh-004-catering-company"
+    ],
+    "FH-010-Frozen-Meals-Company": [
+      "fh-010-frozen-meals-company",
+      "fh-001-personal-chef-service",
+      "fh-002-meal-prep-delivery",
+      "fh-003-private-dinner-experiences",
+      "fh-004-catering-company"
+    ],
+    "FH-011-Sauce-or-Seasoning-Brand": [
+      "fh-011-sauce-or-seasoning-brand",
+      "fh-001-personal-chef-service",
+      "fh-002-meal-prep-delivery",
+      "fh-003-private-dinner-experiences",
+      "fh-004-catering-company"
+    ],
+    "FH-012-Protein-Snacks-Brand": [
+      "fh-012-protein-snacks-brand",
+      "fh-001-personal-chef-service",
+      "fh-002-meal-prep-delivery",
+      "fh-003-private-dinner-experiences",
+      "fh-004-catering-company"
+    ],
+    "FH-013-Meal-Kit-Company": [
+      "fh-013-meal-kit-company",
+      "fh-001-personal-chef-service",
+      "fh-002-meal-prep-delivery",
+      "fh-003-private-dinner-experiences",
+      "fh-004-catering-company"
+    ],
+    "FH-014-Cloud-Kitchen-": [
+      "fh-014-cloud-kitchen-",
+      "fh-014-cloud-kitchen",
+      "fh-001-personal-chef-service",
+      "fh-002-meal-prep-delivery",
+      "fh-003-private-dinner-experiences"
+    ],
+    "FH-015-AI-Nutrition-Planner": [
+      "fh-015-ai-nutrition-planner",
+      "fh-001-personal-chef-service",
+      "fh-002-meal-prep-delivery",
+      "fh-003-private-dinner-experiences",
+      "fh-004-catering-company"
+    ],
+    "FH-016-Recipe-App": [
+      "fh-016-recipe-app",
+      "fh-001-personal-chef-service",
+      "fh-002-meal-prep-delivery",
+      "fh-003-private-dinner-experiences",
+      "fh-004-catering-company"
+    ],
+    "FH-017-Cooking-Content-Brand": [
+      "fh-017-cooking-content-brand",
+      "fh-001-personal-chef-service",
+      "fh-002-meal-prep-delivery",
+      "fh-003-private-dinner-experiences",
+      "fh-004-catering-company"
+    ],
+    "FH-018-Food-Influencer-Brand": [
+      "fh-018-food-influencer-brand",
+      "fh-001-personal-chef-service",
+      "fh-002-meal-prep-delivery",
+      "fh-003-private-dinner-experiences",
+      "fh-004-catering-company"
+    ],
+    "FH-019-Cooking-Course-Platform": [
+      "fh-019-cooking-course-platform",
+      "fh-001-personal-chef-service",
+      "fh-002-meal-prep-delivery",
+      "fh-003-private-dinner-experiences",
+      "fh-004-catering-company"
+    ],
+    "FH-020-Restaurant-POS-System": [
+      "fh-020-restaurant-pos-system",
+      "fh-001-personal-chef-service",
+      "fh-002-meal-prep-delivery",
+      "fh-003-private-dinner-experiences",
+      "fh-004-catering-company"
+    ],
+    "FH-021-Food-Truck-Business": [
+      "fh-021-food-truck-business",
+      "fh-001-personal-chef-service",
+      "fh-002-meal-prep-delivery",
+      "fh-003-private-dinner-experiences",
+      "fh-004-catering-company"
+    ],
+    "FH-022-Specialty-Coffee-Shop": [
+      "fh-022-specialty-coffee-shop",
+      "fh-001-personal-chef-service",
+      "fh-002-meal-prep-delivery",
+      "fh-003-private-dinner-experiences",
+      "fh-004-catering-company"
+    ],
+    "FH-023-Bakery-&-Pastry-Shop": [
+      "fh-023-bakery---pastry-shop",
+      "fh-001-personal-chef-service",
+      "fh-002-meal-prep-delivery",
+      "fh-003-private-dinner-experiences",
+      "fh-004-catering-company"
+    ],
+    "FH-024-Juice-Bar": [
+      "fh-024-juice-bar",
+      "fh-001-personal-chef-service",
+      "fh-002-meal-prep-delivery",
+      "fh-003-private-dinner-experiences",
+      "fh-004-catering-company"
+    ],
+    "FH-025-Ice-Cream-Shop": [
+      "fh-025-ice-cream-shop",
+      "fh-001-personal-chef-service",
+      "fh-002-meal-prep-delivery",
+      "fh-003-private-dinner-experiences",
+      "fh-004-catering-company"
+    ],
+    "FH-026-Gourmet-Food-Market": [
+      "fh-026-gourmet-food-market",
+      "fh-001-personal-chef-service",
+      "fh-002-meal-prep-delivery",
+      "fh-003-private-dinner-experiences",
+      "fh-004-catering-company"
+    ],
+    "FH-027-Food-Delivery-Platform": [
+      "fh-027-food-delivery-platform",
+      "fh-001-personal-chef-service",
+      "fh-002-meal-prep-delivery",
+      "fh-003-private-dinner-experiences",
+      "fh-004-catering-company"
+    ],
+    "FH-028-Restaurant-Management-SaaS": [
+      "fh-028-restaurant-management-saas",
+      "fh-001-personal-chef-service",
+      "fh-002-meal-prep-delivery",
+      "fh-003-private-dinner-experiences",
+      "fh-004-catering-company"
+    ],
+    "FH-029-Food-Quality-Testing-Lab": [
+      "fh-029-food-quality-testing-lab",
+      "fh-001-personal-chef-service",
+      "fh-002-meal-prep-delivery",
+      "fh-003-private-dinner-experiences",
+      "fh-004-catering-company"
+    ],
+    "FH-030-Organic-Food-Brand": [
+      "fh-030-organic-food-brand",
+      "fh-001-personal-chef-service",
+      "fh-002-meal-prep-delivery",
+      "fh-003-private-dinner-experiences",
+      "fh-004-catering-company"
+    ],
+    "FH-031-Vegan-Food-Company": [
+      "fh-031-vegan-food-company",
+      "fh-001-personal-chef-service",
+      "fh-002-meal-prep-delivery",
+      "fh-003-private-dinner-experiences",
+      "fh-004-catering-company"
+    ],
+    "FH-032-Keto-Meal-Service": [
+      "fh-032-keto-meal-service",
+      "fh-001-personal-chef-service",
+      "fh-002-meal-prep-delivery",
+      "fh-003-private-dinner-experiences",
+      "fh-004-catering-company"
+    ],
+    "FH-033-Food-Photography-Service": [
+      "fh-033-food-photography-service",
+      "fh-001-personal-chef-service",
+      "fh-002-meal-prep-delivery",
+      "fh-003-private-dinner-experiences",
+      "fh-004-catering-company"
+    ],
+    "FH-034-Restaurant-Consulting": [
+      "fh-034-restaurant-consulting",
+      "fh-001-personal-chef-service",
+      "fh-002-meal-prep-delivery",
+      "fh-003-private-dinner-experiences",
+      "fh-004-catering-company"
+    ],
+    "FH-035-Food-Safety-Training": [
+      "fh-035-food-safety-training",
+      "fh-001-personal-chef-service",
+      "fh-002-meal-prep-delivery",
+      "fh-003-private-dinner-experiences",
+      "fh-004-catering-company"
+    ],
+    "FS-001-Gym": [
+      "fs-001-gym",
+      "fs-002-boutique-fitness-studio",
+      "fs-003-personal-training-studio",
+      "fs-004-women-only-gym",
+      "fs-005-boxing-gym"
+    ],
+    "FS-002-Boutique-Fitness-Studio": [
+      "fs-002-boutique-fitness-studio",
+      "fs-001-gym",
+      "fs-003-personal-training-studio",
+      "fs-004-women-only-gym",
+      "fs-005-boxing-gym"
+    ],
+    "FS-003-Personal-Training-Studio": [
+      "fs-003-personal-training-studio",
+      "fs-001-gym",
+      "fs-002-boutique-fitness-studio",
+      "fs-004-women-only-gym",
+      "fs-005-boxing-gym"
+    ],
+    "FS-004-Women-Only-Gym": [
+      "fs-004-women-only-gym",
+      "fs-001-gym",
+      "fs-002-boutique-fitness-studio",
+      "fs-003-personal-training-studio",
+      "fs-005-boxing-gym"
+    ],
+    "FS-005-Boxing-Gym": [
+      "fs-005-boxing-gym",
+      "fs-001-gym",
+      "fs-002-boutique-fitness-studio",
+      "fs-003-personal-training-studio",
+      "fs-004-women-only-gym"
+    ],
+    "FS-006-CrossFit-Gym": [
+      "fs-006-crossfit-gym",
+      "fs-001-gym",
+      "fs-002-boutique-fitness-studio",
+      "fs-003-personal-training-studio",
+      "fs-004-women-only-gym"
+    ],
+    "FS-007-Luxury-Fitness-Club": [
+      "fs-007-luxury-fitness-club",
+      "fs-001-gym",
+      "fs-002-boutique-fitness-studio",
+      "fs-003-personal-training-studio",
+      "fs-004-women-only-gym"
+    ],
+    "FS-008-Online-Coaching": [
+      "fs-008-online-coaching",
+      "fs-001-gym",
+      "fs-002-boutique-fitness-studio",
+      "fs-003-personal-training-studio",
+      "fs-004-women-only-gym"
+    ],
+    "FS-009-Personal-Trainer-Business": [
+      "fs-009-personal-trainer-business",
+      "fs-001-gym",
+      "fs-002-boutique-fitness-studio",
+      "fs-003-personal-training-studio",
+      "fs-004-women-only-gym"
+    ],
+    "FS-010-Transformation-Program": [
+      "fs-010-transformation-program",
+      "fs-001-gym",
+      "fs-002-boutique-fitness-studio",
+      "fs-003-personal-training-studio",
+      "fs-004-women-only-gym"
+    ],
+    "FS-011-Athlete-Training-Company": [
+      "fs-011-athlete-training-company",
+      "fs-001-gym",
+      "fs-002-boutique-fitness-studio",
+      "fs-003-personal-training-studio",
+      "fs-004-women-only-gym"
+    ],
+    "FS-012-Supplement-Brand": [
+      "fs-012-supplement-brand",
+      "fs-001-gym",
+      "fs-002-boutique-fitness-studio",
+      "fs-003-personal-training-studio",
+      "fs-004-women-only-gym"
+    ],
+    "FS-013-Fitness-Apparel": [
+      "fs-013-fitness-apparel",
+      "fs-001-gym",
+      "fs-002-boutique-fitness-studio",
+      "fs-003-personal-training-studio",
+      "fs-004-women-only-gym"
+    ],
+    "FS-014-Workout-Equipment-Brand": [
+      "fs-014-workout-equipment-brand",
+      "fs-001-gym",
+      "fs-002-boutique-fitness-studio",
+      "fs-003-personal-training-studio",
+      "fs-004-women-only-gym"
+    ],
+    "FS-015-Recovery-Products": [
+      "fs-015-recovery-products",
+      "fs-001-gym",
+      "fs-002-boutique-fitness-studio",
+      "fs-003-personal-training-studio",
+      "fs-004-women-only-gym"
+    ],
+    "FS-016-Fitness-App": [
+      "fs-016-fitness-app",
+      "fs-001-gym",
+      "fs-002-boutique-fitness-studio",
+      "fs-003-personal-training-studio",
+      "fs-004-women-only-gym"
+    ],
+    "FS-017-AI-Personal-Trainer": [
+      "fs-017-ai-personal-trainer",
+      "fs-001-gym",
+      "fs-002-boutique-fitness-studio",
+      "fs-003-personal-training-studio",
+      "fs-004-women-only-gym"
+    ],
+    "FS-018-Gym-Management-Software": [
+      "fs-018-gym-management-software",
+      "fs-001-gym",
+      "fs-002-boutique-fitness-studio",
+      "fs-003-personal-training-studio",
+      "fs-004-women-only-gym"
+    ],
+    "FS-019-Wearable-Analytics-Platform": [
+      "fs-019-wearable-analytics-platform",
+      "fs-001-gym",
+      "fs-002-boutique-fitness-studio",
+      "fs-003-personal-training-studio",
+      "fs-004-women-only-gym"
+    ],
+    "FS-020-Yoga-Studio": [
+      "fs-020-yoga-studio",
+      "fs-001-gym",
+      "fs-002-boutique-fitness-studio",
+      "fs-003-personal-training-studio",
+      "fs-004-women-only-gym"
+    ],
+    "FS-021-Pilates-Studio": [
+      "fs-021-pilates-studio",
+      "fs-001-gym",
+      "fs-002-boutique-fitness-studio",
+      "fs-003-personal-training-studio",
+      "fs-004-women-only-gym"
+    ],
+    "FS-022-Dance-Studio": [
+      "fs-022-dance-studio",
+      "fs-001-gym",
+      "fs-002-boutique-fitness-studio",
+      "fs-003-personal-training-studio",
+      "fs-004-women-only-gym"
+    ],
+    "FS-023-Martial-Arts-Dojo": [
+      "fs-023-martial-arts-dojo",
+      "fs-001-gym",
+      "fs-002-boutique-fitness-studio",
+      "fs-003-personal-training-studio",
+      "fs-004-women-only-gym"
+    ],
+    "FS-024-Sports-Performance-Center": [
+      "fs-024-sports-performance-center",
+      "fs-001-gym",
+      "fs-002-boutique-fitness-studio",
+      "fs-003-personal-training-studio",
+      "fs-004-women-only-gym"
+    ],
+    "FS-025-Corporate-Wellness-Program": [
+      "fs-025-corporate-wellness-program",
+      "fs-001-gym",
+      "fs-002-boutique-fitness-studio",
+      "fs-003-personal-training-studio",
+      "fs-004-women-only-gym"
+    ],
+    "LT-001-Truck-Dispatch-Company": [
+      "lt-001-truck-dispatch-company",
+      "lt-002-freight-brokerage",
+      "lt-003-logistics-dispatch-service",
+      "lt-004-last-mile-delivery-dispatch",
+      "lt-005-medical-courier-dispatch"
+    ],
+    "LT-002-Freight-Brokerage": [
+      "lt-002-freight-brokerage",
+      "lt-001-truck-dispatch-company",
+      "lt-003-logistics-dispatch-service",
+      "lt-004-last-mile-delivery-dispatch",
+      "lt-005-medical-courier-dispatch"
+    ],
+    "LT-003-Logistics-Dispatch-Service": [
+      "lt-003-logistics-dispatch-service",
+      "lt-001-truck-dispatch-company",
+      "lt-002-freight-brokerage",
+      "lt-004-last-mile-delivery-dispatch",
+      "lt-005-medical-courier-dispatch"
+    ],
+    "LT-004-Last-Mile-Delivery-Dispatch": [
+      "lt-004-last-mile-delivery-dispatch",
+      "lt-001-truck-dispatch-company",
+      "lt-002-freight-brokerage",
+      "lt-003-logistics-dispatch-service",
+      "lt-005-medical-courier-dispatch"
+    ],
+    "LT-005-Medical-Courier-Dispatch": [
+      "lt-005-medical-courier-dispatch",
+      "lt-001-truck-dispatch-company",
+      "lt-002-freight-brokerage",
+      "lt-003-logistics-dispatch-service",
+      "lt-004-last-mile-delivery-dispatch"
+    ],
+    "LT-006-Amazon": [
+      "lt-006-amazon",
+      "lt-001-truck-dispatch-company",
+      "lt-002-freight-brokerage",
+      "lt-003-logistics-dispatch-service",
+      "lt-004-last-mile-delivery-dispatch"
+    ],
+    "LT-007-Construction-Dispatch": [
+      "lt-007-construction-dispatch",
+      "lt-001-truck-dispatch-company",
+      "lt-002-freight-brokerage",
+      "lt-003-logistics-dispatch-service",
+      "lt-004-last-mile-delivery-dispatch"
+    ],
+    "LT-008-Towing-Dispatch": [
+      "lt-008-towing-dispatch",
+      "lt-001-truck-dispatch-company",
+      "lt-002-freight-brokerage",
+      "lt-003-logistics-dispatch-service",
+      "lt-004-last-mile-delivery-dispatch"
+    ],
+    "LT-009-HVAC-Technician-Dispatch": [
+      "lt-009-hvac-technician-dispatch",
+      "lt-001-truck-dispatch-company",
+      "lt-002-freight-brokerage",
+      "lt-003-logistics-dispatch-service",
+      "lt-004-last-mile-delivery-dispatch"
+    ],
+    "LT-010-Field-Service-Dispatch": [
+      "lt-010-field-service-dispatch",
+      "lt-001-truck-dispatch-company",
+      "lt-002-freight-brokerage",
+      "lt-003-logistics-dispatch-service",
+      "lt-004-last-mile-delivery-dispatch"
+    ],
+    "LT-011-Dispatch-Software": [
+      "lt-011-dispatch-software",
+      "lt-001-truck-dispatch-company",
+      "lt-002-freight-brokerage",
+      "lt-003-logistics-dispatch-service",
+      "lt-004-last-mile-delivery-dispatch"
+    ],
+    "LT-012-Fleet-Tracking-Platform": [
+      "lt-012-fleet-tracking-platform",
+      "lt-001-truck-dispatch-company",
+      "lt-002-freight-brokerage",
+      "lt-003-logistics-dispatch-service",
+      "lt-004-last-mile-delivery-dispatch"
+    ],
+    "LT-013-Logistics-Automation-System": [
+      "lt-013-logistics-automation-system",
+      "lt-001-truck-dispatch-company",
+      "lt-002-freight-brokerage",
+      "lt-003-logistics-dispatch-service",
+      "lt-004-last-mile-delivery-dispatch"
+    ],
+    "LT-014-AI-Route-Optimization": [
+      "lt-014-ai-route-optimization",
+      "lt-001-truck-dispatch-company",
+      "lt-002-freight-brokerage",
+      "lt-003-logistics-dispatch-service",
+      "lt-004-last-mile-delivery-dispatch"
+    ],
+    "LT-015-Driver-Management-Platform": [
+      "lt-015-driver-management-platform",
+      "lt-001-truck-dispatch-company",
+      "lt-002-freight-brokerage",
+      "lt-003-logistics-dispatch-service",
+      "lt-004-last-mile-delivery-dispatch"
+    ],
+    "LT-016-Trucking-Company": [
+      "lt-016-trucking-company",
+      "lt-001-truck-dispatch-company",
+      "lt-002-freight-brokerage",
+      "lt-003-logistics-dispatch-service",
+      "lt-004-last-mile-delivery-dispatch"
+    ],
+    "LT-017-Courier-Service": [
+      "lt-017-courier-service",
+      "lt-001-truck-dispatch-company",
+      "lt-002-freight-brokerage",
+      "lt-003-logistics-dispatch-service",
+      "lt-004-last-mile-delivery-dispatch"
+    ],
+    "LT-018-Local-Delivery-Company": [
+      "lt-018-local-delivery-company",
+      "lt-001-truck-dispatch-company",
+      "lt-002-freight-brokerage",
+      "lt-003-logistics-dispatch-service",
+      "lt-004-last-mile-delivery-dispatch"
+    ],
+    "LT-019-Moving-Company": [
+      "lt-019-moving-company",
+      "lt-001-truck-dispatch-company",
+      "lt-002-freight-brokerage",
+      "lt-003-logistics-dispatch-service",
+      "lt-004-last-mile-delivery-dispatch"
+    ],
+    "LT-020-Freight-Company": [
+      "lt-020-freight-company",
+      "lt-001-truck-dispatch-company",
+      "lt-002-freight-brokerage",
+      "lt-003-logistics-dispatch-service",
+      "lt-004-last-mile-delivery-dispatch"
+    ],
+    "LT-021-Warehouse-Company": [
+      "lt-021-warehouse-company",
+      "lt-001-truck-dispatch-company",
+      "lt-002-freight-brokerage",
+      "lt-003-logistics-dispatch-service",
+      "lt-004-last-mile-delivery-dispatch"
+    ],
+    "LT-022-Fulfillment-Center": [
+      "lt-022-fulfillment-center",
+      "lt-001-truck-dispatch-company",
+      "lt-002-freight-brokerage",
+      "lt-003-logistics-dispatch-service",
+      "lt-004-last-mile-delivery-dispatch"
+    ],
+    "LT-023-Storage-Business": [
+      "lt-023-storage-business",
+      "lt-001-truck-dispatch-company",
+      "lt-002-freight-brokerage",
+      "lt-003-logistics-dispatch-service",
+      "lt-004-last-mile-delivery-dispatch"
+    ],
+    "LT-024-Distribution-Company": [
+      "lt-024-distribution-company",
+      "lt-001-truck-dispatch-company",
+      "lt-002-freight-brokerage",
+      "lt-003-logistics-dispatch-service",
+      "lt-004-last-mile-delivery-dispatch"
+    ],
+    "LT-025-Logistics-Marketplace": [
+      "lt-025-logistics-marketplace",
+      "lt-001-truck-dispatch-company",
+      "lt-002-freight-brokerage",
+      "lt-003-logistics-dispatch-service",
+      "lt-004-last-mile-delivery-dispatch"
+    ],
+    "LT-026-Shipping-Platform": [
+      "lt-026-shipping-platform",
+      "lt-001-truck-dispatch-company",
+      "lt-002-freight-brokerage",
+      "lt-003-logistics-dispatch-service",
+      "lt-004-last-mile-delivery-dispatch"
+    ],
+    "LT-027-Fleet-Management-SaaS": [
+      "lt-027-fleet-management-saas",
+      "lt-001-truck-dispatch-company",
+      "lt-002-freight-brokerage",
+      "lt-003-logistics-dispatch-service",
+      "lt-004-last-mile-delivery-dispatch"
+    ],
+    "LT-028-Freight-AI-Optimization": [
+      "lt-028-freight-ai-optimization",
+      "lt-001-truck-dispatch-company",
+      "lt-002-freight-brokerage",
+      "lt-003-logistics-dispatch-service",
+      "lt-004-last-mile-delivery-dispatch"
+    ],
+    "LT-029-Supply-Chain-Analytics": [
+      "lt-029-supply-chain-analytics",
+      "lt-001-truck-dispatch-company",
+      "lt-002-freight-brokerage",
+      "lt-003-logistics-dispatch-service",
+      "lt-004-last-mile-delivery-dispatch"
+    ],
+    "LT-030-Cold-Chain-Logistics": [
+      "lt-030-cold-chain-logistics",
+      "lt-001-truck-dispatch-company",
+      "lt-002-freight-brokerage",
+      "lt-003-logistics-dispatch-service",
+      "lt-004-last-mile-delivery-dispatch"
+    ],
+    "PS-001-Business-Consulting": [
+      "ps-001-business-consulting",
+      "ps-002-legal-services",
+      "ps-003-accounting-services",
+      "ps-004-hr-consulting",
+      "ps-005-marketing-agency"
+    ],
+    "PS-002-Legal-Services": [
+      "ps-002-legal-services",
+      "ps-001-business-consulting",
+      "ps-003-accounting-services",
+      "ps-004-hr-consulting",
+      "ps-005-marketing-agency"
+    ],
+    "PS-003-Accounting-Services": [
+      "ps-003-accounting-services",
+      "ps-001-business-consulting",
+      "ps-002-legal-services",
+      "ps-004-hr-consulting",
+      "ps-005-marketing-agency"
+    ],
+    "PS-004-HR-Consulting": [
+      "ps-004-hr-consulting",
+      "ps-001-business-consulting",
+      "ps-002-legal-services",
+      "ps-003-accounting-services",
+      "ps-005-marketing-agency"
+    ],
+    "PS-005-Marketing-Agency": [
+      "ps-005-marketing-agency",
+      "ps-001-business-consulting",
+      "ps-002-legal-services",
+      "ps-003-accounting-services",
+      "ps-004-hr-consulting"
+    ],
+    "PS-006-Web-Design-Agency": [
+      "ps-006-web-design-agency",
+      "ps-001-business-consulting",
+      "ps-002-legal-services",
+      "ps-003-accounting-services",
+      "ps-004-hr-consulting"
+    ],
+    "PS-007-IT-Support-Services": [
+      "ps-007-it-support-services",
+      "ps-001-business-consulting",
+      "ps-002-legal-services",
+      "ps-003-accounting-services",
+      "ps-004-hr-consulting"
+    ],
+    "PS-008-Virtual-Assistant-Service": [
+      "ps-008-virtual-assistant-service",
+      "ps-001-business-consulting",
+      "ps-002-legal-services",
+      "ps-003-accounting-services",
+      "ps-004-hr-consulting"
+    ],
+    "PS-009-Bookkeeping-Service": [
+      "ps-009-bookkeeping-service",
+      "ps-001-business-consulting",
+      "ps-002-legal-services",
+      "ps-003-accounting-services",
+      "ps-004-hr-consulting"
+    ],
+    "PS-010-Tax-Preparation-Service": [
+      "ps-010-tax-preparation-service",
+      "ps-001-business-consulting",
+      "ps-002-legal-services",
+      "ps-003-accounting-services",
+      "ps-004-hr-consulting"
+    ],
+    "PS-011-Real-Estate-Agency": [
+      "ps-011-real-estate-agency",
+      "ps-001-business-consulting",
+      "ps-002-legal-services",
+      "ps-003-accounting-services",
+      "ps-004-hr-consulting"
+    ],
+    "PS-012-Insurance-Agency": [
+      "ps-012-insurance-agency",
+      "ps-001-business-consulting",
+      "ps-002-legal-services",
+      "ps-003-accounting-services",
+      "ps-004-hr-consulting"
+    ],
+    "PS-013-Financial-Planning": [
+      "ps-001-business-consulting",
+      "ps-002-legal-services",
+      "ps-003-accounting-services",
+      "ps-004-hr-consulting",
+      "ps-005-marketing-agency"
+    ],
+    "PS-014-Event-Planning": [
+      "ps-001-business-consulting",
+      "ps-002-legal-services",
+      "ps-003-accounting-services",
+      "ps-004-hr-consulting",
+      "ps-005-marketing-agency"
+    ],
+    "PS-015-Interior-Design": [
+      "ps-001-business-consulting",
+      "ps-002-legal-services",
+      "ps-003-accounting-services",
+      "ps-004-hr-consulting",
+      "ps-005-marketing-agency"
+    ],
+    "PS-016-Photography-Service": [
+      "ps-016-photography-service",
+      "ps-001-business-consulting",
+      "ps-002-legal-services",
+      "ps-003-accounting-services",
+      "ps-004-hr-consulting"
+    ],
+    "PS-017-Videography-Service": [
+      "ps-017-videography-service",
+      "ps-001-business-consulting",
+      "ps-002-legal-services",
+      "ps-003-accounting-services",
+      "ps-004-hr-consulting"
+    ],
+    "PS-018-Translation-Services": [
+      "ps-018-translation-services",
+      "ps-001-business-consulting",
+      "ps-002-legal-services",
+      "ps-003-accounting-services",
+      "ps-004-hr-consulting"
+    ],
+    "PS-019-Copywriting-Service": [
+      "ps-019-copywriting-service",
+      "ps-001-business-consulting",
+      "ps-002-legal-services",
+      "ps-003-accounting-services",
+      "ps-004-hr-consulting"
+    ],
+    "PS-020-Social-Media-Management": [
+      "ps-020-social-media-management",
+      "ps-001-business-consulting",
+      "ps-002-legal-services",
+      "ps-003-accounting-services",
+      "ps-004-hr-consulting"
+    ],
+    "PS-021-SEO-Agency": [
+      "ps-021-seo-agency",
+      "ps-001-business-consulting",
+      "ps-002-legal-services",
+      "ps-003-accounting-services",
+      "ps-004-hr-consulting"
+    ],
+    "PS-022-PPC-Management": [
+      "ps-022-ppc-management",
+      "ps-001-business-consulting",
+      "ps-002-legal-services",
+      "ps-003-accounting-services",
+      "ps-004-hr-consulting"
+    ],
+    "PS-023-PR-Agency": [
+      "ps-023-pr-agency",
+      "ps-001-business-consulting",
+      "ps-002-legal-services",
+      "ps-003-accounting-services",
+      "ps-004-hr-consulting"
+    ],
+    "PS-024-Recruiting-Agency": [
+      "ps-024-recruiting-agency",
+      "ps-001-business-consulting",
+      "ps-002-legal-services",
+      "ps-003-accounting-services",
+      "ps-004-hr-consulting"
+    ],
+    "PS-025-Business-Brokerage": [
+      "ps-025-business-brokerage",
+      "ps-001-business-consulting",
+      "ps-002-legal-services",
+      "ps-003-accounting-services",
+      "ps-004-hr-consulting"
+    ],
+    "MC-001-YouTube-Channel-Network": [
+      "mc-001-youtube-channel-network",
+      "mc-002-podcast-network",
+      "mc-003-blog-network",
+      "mc-004-influencer-agency",
+      "mc-005-content-creation-studio"
+    ],
+    "MC-002-Podcast-Network": [
+      "mc-002-podcast-network",
+      "mc-001-youtube-channel-network",
+      "mc-003-blog-network",
+      "mc-004-influencer-agency",
+      "mc-005-content-creation-studio"
+    ],
+    "MC-003-Blog-Network": [
+      "mc-003-blog-network",
+      "mc-001-youtube-channel-network",
+      "mc-002-podcast-network",
+      "mc-004-influencer-agency",
+      "mc-005-content-creation-studio"
+    ],
+    "MC-004-Influencer-Agency": [
+      "mc-004-influencer-agency",
+      "mc-001-youtube-channel-network",
+      "mc-002-podcast-network",
+      "mc-003-blog-network",
+      "mc-005-content-creation-studio"
+    ],
+    "MC-005-Content-Creation-Studio": [
+      "mc-005-content-creation-studio",
+      "mc-001-youtube-channel-network",
+      "mc-002-podcast-network",
+      "mc-003-blog-network",
+      "mc-004-influencer-agency"
+    ],
+    "MC-006-Video-Production-Company": [
+      "mc-006-video-production-company",
+      "mc-001-youtube-channel-network",
+      "mc-002-podcast-network",
+      "mc-003-blog-network",
+      "mc-004-influencer-agency"
+    ],
+    "MC-007-Animation-Studio": [
+      "mc-007-animation-studio",
+      "mc-001-youtube-channel-network",
+      "mc-002-podcast-network",
+      "mc-003-blog-network",
+      "mc-004-influencer-agency"
+    ],
+    "MC-008-Music-Production": [
+      "mc-008-music-production",
+      "mc-001-youtube-channel-network",
+      "mc-002-podcast-network",
+      "mc-003-blog-network",
+      "mc-004-influencer-agency"
+    ],
+    "MC-009-Stock-Photography": [
+      "mc-009-stock-photography",
+      "mc-001-youtube-channel-network",
+      "mc-002-podcast-network",
+      "mc-003-blog-network",
+      "mc-004-influencer-agency"
+    ],
+    "MC-010-Stock-Video": [
+      "mc-010-stock-video",
+      "mc-001-youtube-channel-network",
+      "mc-002-podcast-network",
+      "mc-003-blog-network",
+      "mc-004-influencer-agency"
+    ],
+    "MC-011-Online-Magazine": [
+      "mc-011-online-magazine",
+      "mc-001-youtube-channel-network",
+      "mc-002-podcast-network",
+      "mc-003-blog-network",
+      "mc-004-influencer-agency"
+    ],
+    "MC-012-News-Website": [
+      "mc-012-news-website",
+      "mc-001-youtube-channel-network",
+      "mc-002-podcast-network",
+      "mc-003-blog-network",
+      "mc-004-influencer-agency"
+    ],
+    "MC-013-Streaming-Platform": [
+      "mc-013-streaming-platform",
+      "mc-001-youtube-channel-network",
+      "mc-002-podcast-network",
+      "mc-003-blog-network",
+      "mc-004-influencer-agency"
+    ],
+    "MC-014-Gaming-Channel": [
+      "mc-014-gaming-channel",
+      "mc-001-youtube-channel-network",
+      "mc-002-podcast-network",
+      "mc-003-blog-network",
+      "mc-004-influencer-agency"
+    ],
+    "MC-015-Esports-Team": [
+      "mc-015-esports-team",
+      "mc-001-youtube-channel-network",
+      "mc-002-podcast-network",
+      "mc-003-blog-network",
+      "mc-004-influencer-agency"
+    ],
+    "MC-016-Virtual-Events-Platform": [
+      "mc-016-virtual-events-platform",
+      "mc-001-youtube-channel-network",
+      "mc-002-podcast-network",
+      "mc-003-blog-network",
+      "mc-004-influencer-agency"
+    ],
+    "MC-017-Online-Course-Platform": [
+      "mc-017-online-course-platform",
+      "mc-001-youtube-channel-network",
+      "mc-002-podcast-network",
+      "mc-003-blog-network",
+      "mc-004-influencer-agency"
+    ],
+    "MC-018-Membership-Site": [
+      "mc-018-membership-site",
+      "mc-001-youtube-channel-network",
+      "mc-002-podcast-network",
+      "mc-003-blog-network",
+      "mc-004-influencer-agency"
+    ],
+    "MC-019-Digital-Download-Store": [
+      "mc-019-digital-download-store",
+      "mc-001-youtube-channel-network",
+      "mc-002-podcast-network",
+      "mc-003-blog-network",
+      "mc-004-influencer-agency"
+    ],
+    "MC-020-NFT-Marketplace": [
+      "mc-020-nft-marketplace",
+      "mc-001-youtube-channel-network",
+      "mc-002-podcast-network",
+      "mc-003-blog-network",
+      "mc-004-influencer-agency"
+    ],
+    "ET-001-Online-Tutoring-Platform": [
+      "et-001-online-tutoring-platform",
+      "et-002-language-learning-app",
+      "et-003-content",
+      "et-003-platform",
+      "et-003-test-prep-service"
+    ],
+    "ET-002-Language-Learning-App": [
+      "et-002-language-learning-app",
+      "et-001-online-tutoring-platform",
+      "et-003-content",
+      "et-003-platform",
+      "et-003-test-prep-service"
+    ],
+    "ET-003-Test-Prep-Service": [
+      "et-003-test-prep-service",
+      "et-003-content",
+      "et-003-platform",
+      "et-001-online-tutoring-platform",
+      "et-002-language-learning-app"
+    ],
+    "ET-004-Coding-Bootcamp": [
+      "et-004-coding-bootcamp",
+      "et-001-online-tutoring-platform",
+      "et-002-language-learning-app",
+      "et-003-content",
+      "et-003-platform"
+    ],
+    "ET-005-Professional-Certification": [
+      "et-005-professional-certification",
+      "et-001-online-tutoring-platform",
+      "et-002-language-learning-app",
+      "et-003-content",
+      "et-003-platform"
+    ],
+    "ET-006-Corporate-Training": [
+      "et-006-corporate-training",
+      "et-001-online-tutoring-platform",
+      "et-002-language-learning-app",
+      "et-003-content",
+      "et-003-platform"
+    ],
+    "ET-007-Skills-Assessment-Platform": [
+      "et-007-skills-assessment-platform",
+      "et-001-online-tutoring-platform",
+      "et-002-language-learning-app",
+      "et-003-content",
+      "et-003-platform"
+    ],
+    "ET-008-Career-Coaching": [
+      "et-008-career-coaching",
+      "et-001-online-tutoring-platform",
+      "et-002-language-learning-app",
+      "et-003-content",
+      "et-003-platform"
+    ],
+    "ET-009-Resume-Writing-Service": [
+      "et-009-resume-writing-service",
+      "et-001-online-tutoring-platform",
+      "et-002-language-learning-app",
+      "et-003-content",
+      "et-003-platform"
+    ],
+    "ET-010-Interview-Prep-Platform": [
+      "et-010-interview-prep-platform",
+      "et-001-online-tutoring-platform",
+      "et-002-language-learning-app",
+      "et-003-content",
+      "et-003-platform"
+    ],
+    "ET-011-Mentorship-Platform": [
+      "et-011-mentorship-platform",
+      "et-001-online-tutoring-platform",
+      "et-002-language-learning-app",
+      "et-003-content",
+      "et-003-platform"
+    ],
+    "ET-012-Educational-Content-Library": [
+      "et-012-educational-content-library",
+      "et-001-online-tutoring-platform",
+      "et-002-language-learning-app",
+      "et-003-content",
+      "et-003-platform"
+    ],
+    "ET-013-VR-Training-Simulations": [
+      "et-013-vr-training-simulations",
+      "et-001-online-tutoring-platform",
+      "et-002-language-learning-app",
+      "et-003-content",
+      "et-003-platform"
+    ],
+    "ET-014-Gamified-Learning-App": [
+      "et-014-gamified-learning-app",
+      "et-001-online-tutoring-platform",
+      "et-002-language-learning-app",
+      "et-003-content",
+      "et-003-platform"
+    ],
+    "ET-015-Homeschool-Curriculum": [
+      "et-015-homeschool-curriculum",
+      "et-001-online-tutoring-platform",
+      "et-002-language-learning-app",
+      "et-003-content",
+      "et-003-platform"
+    ],
+    "EC-001-Angels-in-Daylight": [
+      "ec-001-angels-in-daylight",
+      "ec-002-new-world-apparel",
+      "ec-003-hella-scars",
+      "ec-003-shopify-autopilot",
+      "ec-004-godbody-luxuries"
+    ],
+    "EC-002-New-World-Apparel": [
+      "ec-002-new-world-apparel",
+      "ec-001-angels-in-daylight",
+      "ec-003-hella-scars",
+      "ec-003-shopify-autopilot",
+      "ec-004-godbody-luxuries"
+    ],
+    "EC-003-Shopify-Autopilot": [
+      "ec-003-shopify-autopilot",
+      "ec-003-hella-scars",
+      "ec-001-angels-in-daylight",
+      "ec-002-new-world-apparel",
+      "ec-004-godbody-luxuries"
+    ],
+    "EC-004-Shoe-Customizer": [
+      "ec-004-shoe-customizer",
+      "ec-004-godbody-luxuries",
+      "ec-001-angels-in-daylight",
+      "ec-002-new-world-apparel",
+      "ec-003-hella-scars"
+    ],
+    "EC-005-Sunglasses-AI": [
+      "ec-005-sunglasses-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-005-nwa-products"
+    ],
+    "EC-006-Dropship-Hub": [
+      "ec-006-dropship-hub",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-007-Personal-Shopper-AI": [
+      "ec-007-personal-shopper-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-008-Custom-Sneaker-AI": [
+      "ec-008-custom-sneaker-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-009-Sustainable-Fashion-AI": [
+      "ec-009-sustainable-fashion-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-010-Jewelry-Designer-AI": [
+      "ec-010-jewelry-designer-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-011-Virtual-Try-On-AI": [
+      "ec-011-virtual-try-on-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-012-Fashion-Designer-AI": [
+      "ec-012-fashion-designer-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-013-Merch-Licensing": [
+      "ec-013-merch-licensing",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-014-Subscription-Box-AI": [
+      "ec-014-subscription-box-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-015-Surf-Gear-AI": [
+      "ec-015-surf-gear-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-016-Ski-Gear-AI": [
+      "ec-016-ski-gear-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-017-Golf-Gear-AI": [
+      "ec-017-golf-gear-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-018-Fishing-Gear-AI": [
+      "ec-018-fishing-gear-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-019-Yoga-Gear-AI": [
+      "ec-019-yoga-gear-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-020-Costume-Shop-AI": [
+      "ec-020-costume-shop-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-021-Luggage-AI": [
+      "ec-021-luggage-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-022-Home-Appliance-AI": [
+      "ec-022-home-appliance-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-023-Tool-Shop-AI": [
+      "ec-023-tool-shop-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-024-Garden-Supply-AI": [
+      "ec-024-garden-supply-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-025-Collectible-AI": [
+      "ec-025-collectible-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-026-Hobby-Shop-AI": [
+      "ec-026-hobby-shop-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-027-Kids-Toy-Line": [
+      "ec-027-kids-toy-line",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-028-NFT-Fashion-Licensing": [
+      "ec-028-nft-fashion-licensing",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-029-Instant-Brand-Generator": [
+      "ec-029-instant-brand-generator",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-030-AI-Product-Photographer": [
+      "ec-030-ai-product-photographer",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-031-Automated-Inventory-Forecaster": [
+      "ec-031-automated-inventory-forecaster",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-032-Dynamic-Pricing-Engine": [
+      "ec-032-dynamic-pricing-engine",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-033-Ad-Optimizer-AI": [
+      "ec-033-ad-optimizer-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-034-Recommendation-Engine": [
+      "ec-034-recommendation-engine",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-035-Review-Aggregator-AI": [
+      "ec-035-review-aggregator-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-036-Fulfillment-Network-AI": [
+      "ec-036-fulfillment-network-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-037-Return-Optimization-AI": [
+      "ec-037-return-optimization-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-038-Chatbot-Customer-Service": [
+      "ec-038-chatbot-customer-service",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-039-Visual-Search-AI": [
+      "ec-039-visual-search-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-040-Abandoned-Cart-Recovery": [
+      "ec-040-abandoned-cart-recovery",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-041-Seasonal-Trend-Predictor": [
+      "ec-041-seasonal-trend-predictor",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-042-Influencer-Matchmaker": [
+      "ec-042-influencer-matchmaker",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-043-UGC-Content-Aggregator": [
+      "ec-043-ugc-content-aggregator",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-044-Live-Commerce-Platform": [
+      "ec-044-live-commerce-platform",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-045-AR-Virtual-Fitting-Room": [
+      "ec-045-ar-virtual-fitting-room",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-046-3D-Product-Viewer": [
+      "ec-046-3d-product-viewer",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-047-Carbon-Footprint-Tracker": [
+      "ec-047-carbon-footprint-tracker",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-048-Wholesale-Marketplace-AI": [
+      "ec-048-wholesale-marketplace-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "ec-001-angels-in-daylight",
+      "ec-002-new-world-apparel"
+    ],
+    "EC-049-Rental-Marketplace": [
+      "ec-049-rental-marketplace",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "ec-001-angels-in-daylight",
+      "ec-002-new-world-apparel"
+    ],
+    "EC-050-AI-Product-Descriptions": [
+      "ec-050-ai-product-descriptions",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-051-AI-Email-Marketing": [
+      "ec-051-ai-email-marketing",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-052-AI-Product-Bundler": [
+      "ec-052-ai-product-bundler",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-053-AI-Visual-Merchandiser": [
+      "ec-053-ai-visual-merchandiser",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-054-AI-Demand-Forecasting": [
+      "ec-054-ai-demand-forecasting",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-055-AI-Warehouse-Management": [
+      "ec-055-ai-warehouse-management",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-056-AI-Supplier-Matching": [
+      "ec-056-ai-supplier-matching",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-057-AI-Quality-Control": [
+      "ec-057-ai-quality-control",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-058-AI-Packaging-Designer": [
+      "ec-058-ai-packaging-designer",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-059-AI-Logistics-Planner": [
+      "ec-059-ai-logistics-planner",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-060-AI-Customer-Loyalty": [
+      "ec-060-ai-customer-loyalty",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-061-AI-Gift-Finder": [
+      "ec-061-ai-gift-finder",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-062-AI-Trend-Hunter": [
+      "ec-062-ai-trend-hunter",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-063-AI-Market-Research": [
+      "ec-063-ai-market-research",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-064-AI-Competitor-Watcher": [
+      "ec-064-ai-competitor-watcher",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-065-AI-Product-Development": [
+      "ec-065-ai-product-development",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-066-AI-Customer-Journey": [
+      "ec-066-ai-customer-journey",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-067-AI-Payment-Optimization": [
+      "ec-067-ai-payment-optimization",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "iza-os-marketing-automation-security-bot",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-068-AI-Returns-Management": [
+      "ec-068-ai-returns-management",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-069-AI-Shipping-Labeler": [
+      "ec-069-ai-shipping-labeler",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-070-AI-Product-Launch-Coach": [
+      "ec-070-ai-product-launch-coach",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-071-AI-Vendor-Negotiator": [
+      "ec-071-ai-vendor-negotiator",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-072-AI-Product-Cataloger": [
+      "ec-072-ai-product-cataloger",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-073-AI-Order-Prioritizer": [
+      "ec-073-ai-order-prioritizer",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-074-AI-Customer-Segmentation": [
+      "ec-074-ai-customer-segmentation",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-075-AI-Pricing-Analyst": [
+      "ec-075-ai-pricing-analyst",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-076-AI-Sales-Forecasting": [
+      "ec-076-ai-sales-forecasting",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-077-AI-Inventory-Reordering": [
+      "ec-077-ai-inventory-reordering",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-078-AI-Product-Comparison": [
+      "ec-078-ai-product-comparison",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-079-AI-Customer-Feedback": [
+      "ec-079-ai-customer-feedback",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-080-AI-Product-Updates": [
+      "ec-080-ai-product-updates",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-081-AI-Cross-Selling": [
+      "ec-081-ai-cross-selling",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-082-AI-Up-Selling": [
+      "ec-082-ai-up-selling",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-083-AI-Product-Education": [
+      "ec-083-ai-product-education",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-084-AI-Purchase-Timing": [
+      "ec-084-ai-purchase-timing",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-085-AI-Customer-Support": [
+      "ec-085-ai-customer-support",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-086-AI-Order-Tracking": [
+      "ec-086-ai-order-tracking",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-087-AI-Product-Reviews": [
+      "ec-087-ai-product-reviews",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-088-AI-Customer-Community": [
+      "ec-088-ai-customer-community",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-089-AI-Product-Customization": [
+      "ec-089-ai-product-customization",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-090-AI-Gift-Registry": [
+      "ec-090-ai-gift-registry",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-091-AI-Wedding-Registry": [
+      "ec-091-ai-wedding-registry",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-092-AI-Baby-Registry": [
+      "ec-092-ai-baby-registry",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-093-AI-Holiday-Planner": [
+      "ec-093-ai-holiday-planner",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-094-AI-Personal-Shopper": [
+      "ec-094-ai-personal-shopper",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-095-AI-Color-Match": [
+      "ec-095-ai-color-match",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-096-AI-Fabric-Advisor": [
+      "ec-096-ai-fabric-advisor",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-097-AI-Fit-Recommendation": [
+      "ec-097-ai-fit-recommendation",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-098-AI-Outfit-Builder": [
+      "ec-098-ai-outfit-builder",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-099-AI-Seasonal-Forecast": [
+      "ec-099-ai-seasonal-forecast",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-100-AI-Wardrobe-Planner": [
+      "ec-100-ai-wardrobe-planner",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-101-AI-Accessory-Match": [
+      "ec-101-ai-accessory-match",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-102-AI-Shoe-Match": [
+      "ec-102-ai-shoe-match",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-103-AI-Jewelry-Match": [
+      "ec-103-ai-jewelry-match",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-104-AI-Bag-Match": [
+      "ec-104-ai-bag-match",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-105-AI-Color-Palette": [
+      "ec-105-ai-color-palette",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-106-AI-Outfit-Recycling": [
+      "ec-106-ai-outfit-recycling",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-107-AI-Style-Evolution": [
+      "ec-107-ai-style-evolution",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-108-AI-Budget-Stylist": [
+      "ec-108-ai-budget-stylist",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-109-AI-Trend-Archive": [
+      "ec-109-ai-trend-archive",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "EC-110-AI-Vintage-Advisor": [
+      "ec-110-ai-vintage-advisor",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "ec-001-angels-in-daylight"
+    ],
+    "TECH-001-Quantum-Algorithm-AI": [
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai",
+      "tech-005-customer-insights-ai"
+    ],
+    "TECH-002-AI-Compliance-Scanner": [
+      "tech-002-ai-compliance-scanner",
+      "tech-001-quantum-algorithm-ai",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai",
+      "tech-005-customer-insights-ai"
+    ],
+    "TECH-003-Cloud-Management-AI": [
+      "tech-003-cloud-management-ai",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-004-robotics-training-ai",
+      "tech-005-customer-insights-ai"
+    ],
+    "TECH-004-Robotics-Training-AI": [
+      "tech-004-robotics-training-ai",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-005-customer-insights-ai"
+    ],
+    "TECH-005-Customer-Insights-AI": [
+      "tech-005-customer-insights-ai",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai"
+    ],
+    "TECH-006-Voice-Assistant-AI": [
+      "tech-006-voice-assistant-ai",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai"
+    ],
+    "TECH-007-Blockchain-Verifier-AI": [
+      "tech-007-blockchain-verifier-ai",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai"
+    ],
+    "TECH-008-Cybersecurity-Shield": [
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai",
+      "tech-005-customer-insights-ai"
+    ],
+    "TECH-009-Content-Studio-AI": [
+      "tech-009-content-studio-ai",
+      "iza-os-vector-database",
+      "tech-022-database-optimizer",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner"
+    ],
+    "TECH-010-Smart-Home-AI": [
+      "tech-010-smart-home-ai",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai"
+    ],
+    "TECH-011-Supply-Chain-Optimizer": [
+      "tech-011-supply-chain-optimizer",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai"
+    ],
+    "TECH-012-Data-Visualization-AI": [
+      "tech-012-data-visualization-ai",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai"
+    ],
+    "TECH-013-Workflow-Automation": [
+      "tech-013-workflow-automation",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai"
+    ],
+    "TECH-014-Sentiment-Analyzer": [
+      "tech-014-sentiment-analyzer",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai"
+    ],
+    "TECH-015-Image-Recognition-AI": [
+      "tech-015-image-recognition-ai",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai"
+    ],
+    "TECH-016-Video-Editor-AI": [
+      "tech-016-video-editor-ai",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai"
+    ],
+    "TECH-017-Speech-to-Text-AI": [
+      "tech-017-speech-to-text-ai",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai"
+    ],
+    "TECH-018-Text-to-Speech-AI": [
+      "tech-018-text-to-speech-ai",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai"
+    ],
+    "TECH-019-Fraud-Prevention-AI": [
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai",
+      "tech-005-customer-insights-ai"
+    ],
+    "TECH-020-Recommendation-Engine": [
+      "tech-020-recommendation-engine",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "tech-001-quantum-algorithm-ai"
+    ],
+    "TECH-021-Network-Security-AI": [
+      "tech-021-network-security-ai",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai"
+    ],
+    "TECH-022-Database-Optimizer": [
+      "tech-022-database-optimizer",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai"
+    ],
+    "TECH-023-AI-Testing-Platform": [
+      "tech-023-ai-testing-platform",
+      "iza-os-vector-database",
+      "tech-022-database-optimizer",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner"
+    ],
+    "TECH-024-Virtual-Assistant-Builder": [
+      "tech-024-virtual-assistant-builder",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai"
+    ],
+    "TECH-025-Machine-Learning-Builder": [
+      "tech-025-machine-learning-builder",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai"
+    ],
+    "TECH-026-AI-Ethics-Auditor": [
+      "tech-026-ai-ethics-auditor",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai"
+    ],
+    "TECH-027-Predictive-Analytics-AI": [
+      "tech-027-predictive-analytics-ai",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai"
+    ],
+    "TECH-028-AI-Training-Platform": [
+      "tech-028-ai-training-platform",
+      "iza-os-vector-database",
+      "tech-022-database-optimizer",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner"
+    ],
+    "TECH-029-Digital-Twin-AI": [
+      "tech-029-digital-twin-ai",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai"
+    ],
+    "TECH-030-AI-Monitoring-System": [
+      "tech-030-ai-monitoring-system",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai"
+    ],
+    "TECH-031-Edge-Computing-AI": [
+      "tech-031-edge-computing-ai",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai"
+    ],
+    "TECH-032-AI-Integration-Hub": [
+      "tech-032-ai-integration-hub",
+      "iza-os-vector-database",
+      "tech-022-database-optimizer",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner"
+    ],
+    "TECH-033-Quantum-Algorithm-AI": [
+      "tech-033-quantum-algorithm-ai",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai"
+    ],
+    "TECH-034-AI-Compliance-Scanner": [
+      "tech-034-ai-compliance-scanner",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai"
+    ],
+    "TECH-035-Cloud-Management-AI": [
+      "tech-035-cloud-management-ai",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai"
+    ],
+    "TECH-036-Robotics-Training-AI": [
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai",
+      "tech-005-customer-insights-ai"
+    ],
+    "TECH-037-Customer-Insights-AI": [
+      "tech-037-customer-insights-ai",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai"
+    ],
+    "TECH-038-Voice-Assistant-AI": [
+      "tech-038-voice-assistant-ai",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai"
+    ],
+    "TECH-039-Blockchain-Verifier-AI": [
+      "tech-039-blockchain-verifier-ai",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai"
+    ],
+    "TECH-040-Cybersecurity-Shield": [
+      "tech-040-cybersecurity-shield",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai"
+    ],
+    "TECH-041-Content-Studio-AI": [
+      "tech-041-content-studio-ai",
+      "iza-os-vector-database",
+      "tech-022-database-optimizer",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner"
+    ],
+    "TECH-042-Smart-Home-AI": [
+      "tech-042-smart-home-ai",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai"
+    ],
+    "TECH-043-Supply-Chain-Optimizer": [
+      "tech-043-supply-chain-optimizer",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai"
+    ],
+    "TECH-044-Data-Visualization-AI": [
+      "tech-044-data-visualization-ai",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai"
+    ],
+    "TECH-045-Workflow-Automation": [
+      "tech-045-workflow-automation",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai"
+    ],
+    "TECH-046-Sentiment-Analyzer": [
+      "tech-046-sentiment-analyzer",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai"
+    ],
+    "TECH-047-Image-Recognition-AI": [
+      "tech-047-image-recognition-ai",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai"
+    ],
+    "TECH-048-Video-Editor-AI": [
+      "tech-048-video-editor-ai",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai"
+    ],
+    "TECH-049-Speech-to-Text-AI": [
+      "tech-049-speech-to-text-ai",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai"
+    ],
+    "TECH-050-Text-to-Speech-AI": [
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai",
+      "tech-005-customer-insights-ai"
+    ],
+    "TECH-051-Fraud-Prevention-AI": [
+      "tech-051-fraud-prevention-ai",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai"
+    ],
+    "TECH-052-Recommendation-Engine": [
+      "tech-052-recommendation-engine",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "tech-001-quantum-algorithm-ai"
+    ],
+    "TECH-053-Network-Security-AI": [
+      "tech-053-network-security-ai",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai"
+    ],
+    "TECH-054-Database-Optimizer": [
+      "tech-054-database-optimizer",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai"
+    ],
+    "TECH-055-AI-Testing-Platform": [
+      "tech-055-ai-testing-platform",
+      "iza-os-vector-database",
+      "tech-022-database-optimizer",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner"
+    ],
+    "TECH-056-Virtual-Assistant-Builder": [
+      "tech-056-virtual-assistant-builder",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai"
+    ],
+    "TECH-057-Machine-Learning-Builder": [
+      "tech-057-machine-learning-builder",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai"
+    ],
+    "TECH-058-AI-Ethics-Auditor": [
+      "tech-058-ai-ethics-auditor",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai"
+    ],
+    "TECH-059-Predictive-Analytics-AI": [
+      "tech-059-predictive-analytics-ai",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai"
+    ],
+    "TECH-060-AI-Training-Platform": [
+      "tech-060-ai-training-platform",
+      "iza-os-vector-database",
+      "tech-022-database-optimizer",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner"
+    ],
+    "OPS-001-Fractional-CTO-Agency": [
+      "ops-001-fractional-cto-agency",
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-002-Supply-Chain-Optimizer": [
+      "ops-002-supply-chain-optimizer",
+      "ops-001-fractional-cto-agency",
+      "ops-003-event-planning-ai",
+      "ops-004-inventory-management-ai",
+      "ops-005-project-management-ai"
+    ],
+    "OPS-003-Event-Planning-AI": [
+      "ops-003-event-planning-ai",
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency"
+    ],
+    "OPS-004-Inventory-Management-AI": [
+      "ops-004-inventory-management-ai",
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency"
+    ],
+    "OPS-005-Project-Management-AI": [
+      "ops-005-project-management-ai",
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency"
+    ],
+    "OPS-006-Document-Automation-AI": [
+      "ops-006-document-automation-ai",
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency"
+    ],
+    "OPS-007-Meeting-Assistant-AI": [
+      "ops-007-meeting-assistant-ai",
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency"
+    ],
+    "OPS-008-Recruitment-AI": [
+      "ops-008-recruitment-ai",
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency"
+    ],
+    "OPS-009-Onboarding-AI": [
+      "ops-009-onboarding-ai",
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency"
+    ],
+    "OPS-010-Training-Platform-AI": [
+      "ops-010-training-platform-ai",
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency"
+    ],
+    "OPS-011-Performance-Review-AI": [
+      "ops-011-performance-review-ai",
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency"
+    ],
+    "OPS-012-IT-Support-AI": [
+      "ops-012-it-support-ai",
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency"
+    ],
+    "OPS-013-Facilities-Management-AI": [
+      "ops-013-facilities-management-ai",
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency"
+    ],
+    "OPS-014-Travel-Booking-AI": [
+      "ops-014-travel-booking-ai",
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency"
+    ],
+    "OPS-015-Expense-Management-AI": [
+      "ops-015-expense-management-ai",
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency"
+    ],
+    "OPS-016-Contract-Management-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-017-Compliance-Monitoring-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-018-Quality-Control-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-019-Asset-Management-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-020-Time-Tracking-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-021-Document-Security-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-022-Knowledge-Management-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-023-Meeting-Transcription-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-024-Task-Automation-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-025-Resource-Allocation-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-026-Budget-Planning-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-027-Cost-Optimization-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-028-Procurement-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-029-Vendor-Management-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-030-Contract-Negotiation-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-031-Legal-Document-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-032-Compliance-Reporting-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-033-Training-Content-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-034-Employee-Engagement-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-035-Succession-Planning-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-036-Workspace-Design-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-037-Energy-Efficiency-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-038-Security-Monitoring-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-039-Health-Safety-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-040-Disaster-Recovery-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-041-IT-Asset-Management": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-042-Cloud-Cost-Management": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-043-Data-Governance-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-044-Network-Monitoring-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-045-Software-Licensing-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-046-IT-Procurement-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-047-System-Integration-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-048-Data-Backup-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-049-Business-Continuity-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-050-Compliance-Audit-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-051-Document-Collaboration-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-052-Video-Conferencing-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-053-Email-Management-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-054-Calendar-Optimization-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-055-Project-Budget-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-056-Resource-Forecasting-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-057-Task-Prioritization-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-058-Time-Management-AI": [
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer",
+      "ops-003-event-planning-ai",
+      "ops-004-inventory-management-ai",
+      "ops-005-project-management-ai"
+    ],
+    "OPS-059-Meeting-Minutes-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-060-Document-Translation-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-061-Form-Automation-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-062-Report-Generation-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-063-Dashboard-Creation-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-064-Analytics-Platform-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-065-Data-Cleaning-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "OPS-066-Workflow-Management-AI": [
+      "civilization-os-infra",
+      "comm-036-public-infrastructure-ai",
+      "iza-os-infra",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer"
+    ],
+    "EDU-001-Youth-Entrepreneurship-Curriculum": [
+      "edu-001-youth-entrepreneurship-curriculum",
+      "edu-002-ai-literacy-program",
+      "edu-003-coding-mentor-certification",
+      "edu-004-real-estate-licensing-prep",
+      "edu-005-coding-bootcamp"
+    ],
+    "EDU-002-AI-Literacy-Program": [
+      "edu-002-ai-literacy-program",
+      "edu-001-youth-entrepreneurship-curriculum",
+      "edu-003-coding-mentor-certification",
+      "edu-004-real-estate-licensing-prep",
+      "edu-005-coding-bootcamp"
+    ],
+    "EDU-003-Coding-Mentor-Certification": [
+      "edu-003-coding-mentor-certification",
+      "edu-001-youth-entrepreneurship-curriculum",
+      "edu-002-ai-literacy-program",
+      "edu-004-real-estate-licensing-prep",
+      "edu-005-coding-bootcamp"
+    ],
+    "EDU-004-Real-Estate-Licensing-Prep": [
+      "edu-004-real-estate-licensing-prep",
+      "edu-001-youth-entrepreneurship-curriculum",
+      "edu-002-ai-literacy-program",
+      "edu-003-coding-mentor-certification",
+      "edu-005-coding-bootcamp"
+    ],
+    "EDU-005-Coding-Bootcamp": [
+      "edu-005-coding-bootcamp",
+      "edu-001-youth-entrepreneurship-curriculum",
+      "edu-002-ai-literacy-program",
+      "edu-003-coding-mentor-certification",
+      "edu-004-real-estate-licensing-prep"
+    ],
+    "EDU-006-Homeschooling-Content-AI": [
+      "edu-006-homeschooling-content-ai",
+      "edu-001-youth-entrepreneurship-curriculum",
+      "edu-002-ai-literacy-program",
+      "edu-003-coding-mentor-certification",
+      "edu-004-real-estate-licensing-prep"
+    ],
+    "EDU-007-AI-Tutoring-Platform": [
+      "edu-007-ai-tutoring-platform",
+      "iza-os-vector-database",
+      "tech-022-database-optimizer",
+      "tech-054-database-optimizer",
+      "edu-001-youth-entrepreneurship-curriculum"
+    ],
+    "EDU-008-Branding-Templates-Marketplace": [
+      "edu-008-branding-templates-marketplace",
+      "ai-001-ai-command-center",
+      "ai-002-api",
+      "capital-orchestrator",
+      "edu-001-youth-entrepreneurship-curriculum"
+    ],
+    "EDU-009-Voiceover-Script-Library": [
+      "edu-009-voiceover-script-library",
+      "edu-001-youth-entrepreneurship-curriculum",
+      "edu-002-ai-literacy-program",
+      "edu-003-coding-mentor-certification",
+      "edu-004-real-estate-licensing-prep"
+    ],
+    "EDU-010-Trade-Skills-Bootcamp": [
+      "edu-010-trade-skills-bootcamp",
+      "edu-001-youth-entrepreneurship-curriculum",
+      "edu-002-ai-literacy-program",
+      "edu-003-coding-mentor-certification",
+      "edu-004-real-estate-licensing-prep"
+    ],
+    "EDU-011-Franchise-Blueprint-System": [
+      "edu-011-franchise-blueprint-system",
+      "edu-001-youth-entrepreneurship-curriculum",
+      "edu-002-ai-literacy-program",
+      "edu-003-coding-mentor-certification",
+      "edu-004-real-estate-licensing-prep"
+    ],
+    "EDU-012-Low-Income-Housing-Blueprint": [
+      "edu-012-low-income-housing-blueprint",
+      "edu-001-youth-entrepreneurship-curriculum",
+      "edu-002-ai-literacy-program",
+      "edu-003-coding-mentor-certification",
+      "edu-004-real-estate-licensing-prep"
+    ],
+    "EDU-013-Automated-Empire-Book": [
+      "edu-013-automated-empire-book",
+      "edu-001-youth-entrepreneurship-curriculum",
+      "edu-002-ai-literacy-program",
+      "edu-003-coding-mentor-certification",
+      "edu-004-real-estate-licensing-prep"
+    ],
+    "EDU-014-BIPOC-Creator-Incubator": [
+      "edu-014-bipoc-creator-incubator",
+      "edu-001-youth-entrepreneurship-curriculum",
+      "edu-002-ai-literacy-program",
+      "edu-003-coding-mentor-certification",
+      "edu-004-real-estate-licensing-prep"
+    ],
+    "EDU-015-AI-Legal-Doc-Generator": [
+      "edu-015-ai-legal-doc-generator",
+      "edu-001-youth-entrepreneurship-curriculum",
+      "edu-002-ai-literacy-program",
+      "edu-003-coding-mentor-certification",
+      "edu-004-real-estate-licensing-prep"
+    ],
+    "EDU-016-Virtual-Black-Art-Museum": [
+      "edu-016-virtual-black-art-museum",
+      "edu-001-youth-entrepreneurship-curriculum",
+      "edu-002-ai-literacy-program",
+      "edu-003-coding-mentor-certification",
+      "edu-004-real-estate-licensing-prep"
+    ],
+    "EDU-017-AI-Coding-Tutor": [
+      "edu-017-ai-coding-tutor",
+      "edu-001-youth-entrepreneurship-curriculum",
+      "edu-002-ai-literacy-program",
+      "edu-003-coding-mentor-certification",
+      "edu-004-real-estate-licensing-prep"
+    ],
+    "EDU-018-Online-Course-Creator": [
+      "edu-018-online-course-creator",
+      "edu-001-youth-entrepreneurship-curriculum",
+      "edu-002-ai-literacy-program",
+      "edu-003-coding-mentor-certification",
+      "edu-004-real-estate-licensing-prep"
+    ],
+    "EDU-019-Executive-Education-Program": [
+      "edu-019-executive-education-program",
+      "edu-001-youth-entrepreneurship-curriculum",
+      "edu-002-ai-literacy-program",
+      "edu-003-coding-mentor-certification",
+      "edu-004-real-estate-licensing-prep"
+    ],
+    "EDU-020-Youth-STEM-Program": [
+      "edu-020-youth-stem-program",
+      "edu-001-youth-entrepreneurship-curriculum",
+      "edu-002-ai-literacy-program",
+      "edu-003-coding-mentor-certification",
+      "edu-004-real-estate-licensing-prep"
+    ],
+    "EDU-021-Remote-Work-Certification": [
+      "edu-021-remote-work-certification",
+      "edu-001-youth-entrepreneurship-curriculum",
+      "edu-002-ai-literacy-program",
+      "edu-003-coding-mentor-certification",
+      "edu-004-real-estate-licensing-prep"
+    ],
+    "EDU-022-AI-Research-Assistant": [
+      "edu-022-ai-research-assistant",
+      "edu-001-youth-entrepreneurship-curriculum",
+      "edu-002-ai-literacy-program",
+      "edu-003-coding-mentor-certification",
+      "edu-004-real-estate-licensing-prep"
+    ],
+    "EDU-023-Personal-Finance-Coach": [
+      "edu-023-personal-finance-coach",
+      "edu-001-youth-entrepreneurship-curriculum",
+      "edu-002-ai-literacy-program",
+      "edu-003-coding-mentor-certification",
+      "edu-004-real-estate-licensing-prep"
+    ],
+    "EDU-024-Language-Learning-AI": [
+      "edu-024-language-learning-ai",
+      "edu-001-youth-entrepreneurship-curriculum",
+      "edu-002-ai-literacy-program",
+      "edu-003-coding-mentor-certification",
+      "edu-004-real-estate-licensing-prep"
+    ],
+    "EDU-025-Test-Preparation-AI": [
+      "edu-025-test-preparation-ai",
+      "edu-001-youth-entrepreneurship-curriculum",
+      "edu-002-ai-literacy-program",
+      "edu-003-coding-mentor-certification",
+      "edu-004-real-estate-licensing-prep"
+    ],
+    "EDU-026-Corporate-Training-AI": [
+      "edu-026-corporate-training-ai",
+      "edu-001-youth-entrepreneurship-curriculum",
+      "edu-002-ai-literacy-program",
+      "edu-003-coding-mentor-certification",
+      "edu-004-real-estate-licensing-prep"
+    ],
+    "EDU-027-Medical-Education-AI": [
+      "edu-027-medical-education-ai",
+      "edu-001-youth-entrepreneurship-curriculum",
+      "edu-002-ai-literacy-program",
+      "edu-003-coding-mentor-certification",
+      "edu-004-real-estate-licensing-prep"
+    ],
+    "EDU-028-Legal-Education-AI": [
+      "edu-028-legal-education-ai",
+      "edu-001-youth-entrepreneurship-curriculum",
+      "edu-002-ai-literacy-program",
+      "edu-003-coding-mentor-certification",
+      "edu-004-real-estate-licensing-prep"
+    ],
+    "EDU-029-Music-Education-AI": [
+      "edu-029-music-education-ai",
+      "edu-001-youth-entrepreneurship-curriculum",
+      "edu-002-ai-literacy-program",
+      "edu-003-coding-mentor-certification",
+      "edu-004-real-estate-licensing-prep"
+    ],
+    "EDU-030-Art-Education-AI": [
+      "edu-030-art-education-ai",
+      "edu-001-youth-entrepreneurship-curriculum",
+      "edu-002-ai-literacy-program",
+      "edu-003-coding-mentor-certification",
+      "edu-004-real-estate-licensing-prep"
+    ],
+    "EDU-031-Physical-Education-AI": [
+      "edu-031-physical-education-ai",
+      "edu-001-youth-entrepreneurship-curriculum",
+      "edu-002-ai-literacy-program",
+      "edu-003-coding-mentor-certification",
+      "edu-004-real-estate-licensing-prep"
+    ],
+    "EDU-032-Environmental-Education-AI": [
+      "edu-032-environmental-education-ai",
+      "edu-001-youth-entrepreneurship-curriculum",
+      "edu-002-ai-literacy-program",
+      "edu-003-coding-mentor-certification",
+      "edu-004-real-estate-licensing-prep"
+    ],
+    "EDU-033-Social-Studies-AI": [
+      "edu-033-social-studies-ai",
+      "edu-001-youth-entrepreneurship-curriculum",
+      "edu-002-ai-literacy-program",
+      "edu-003-coding-mentor-certification",
+      "edu-004-real-estate-licensing-prep"
+    ],
+    "EDU-034-Math-Education-AI": [
+      "edu-034-math-education-ai",
+      "edu-001-youth-entrepreneurship-curriculum",
+      "edu-002-ai-literacy-program",
+      "edu-003-coding-mentor-certification",
+      "edu-004-real-estate-licensing-prep"
+    ],
+    "EDU-035-Science-Education-AI": [
+      "edu-035-science-education-ai",
+      "edu-001-youth-entrepreneurship-curriculum",
+      "edu-002-ai-literacy-program",
+      "edu-003-coding-mentor-certification",
+      "edu-004-real-estate-licensing-prep"
+    ],
+    "EDU-036-Reading-Comprehension-AI": [
+      "edu-036-reading-comprehension-ai",
+      "edu-001-youth-entrepreneurship-curriculum",
+      "edu-002-ai-literacy-program",
+      "edu-003-coding-mentor-certification",
+      "edu-004-real-estate-licensing-prep"
+    ],
+    "EDU-037-Writing-Instruction-AI": [
+      "edu-037-writing-instruction-ai",
+      "edu-001-youth-entrepreneurship-curriculum",
+      "edu-002-ai-literacy-program",
+      "edu-003-coding-mentor-certification",
+      "edu-004-real-estate-licensing-prep"
+    ],
+    "EDU-038-Critical-Thinking-AI": [
+      "edu-038-critical-thinking-ai",
+      "edu-001-youth-entrepreneurship-curriculum",
+      "edu-002-ai-literacy-program",
+      "edu-003-coding-mentor-certification",
+      "edu-004-real-estate-licensing-prep"
+    ],
+    "EDU-039-Emotional-Intelligence-AI": [
+      "edu-039-emotional-intelligence-ai",
+      "edu-001-youth-entrepreneurship-curriculum",
+      "edu-002-ai-literacy-program",
+      "edu-003-coding-mentor-certification",
+      "edu-004-real-estate-licensing-prep"
+    ],
+    "EDU-040-Time-Management-AI": [
+      "edu-040-time-management-ai",
+      "edu-001-youth-entrepreneurship-curriculum",
+      "edu-002-ai-literacy-program",
+      "edu-003-coding-mentor-certification",
+      "edu-004-real-estate-licensing-prep"
+    ],
+    "COMM-001-Luminary-Worldwide-Events": [
+      "comm-001-luminary-worldwide-events",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-002-brotherhood-coaching-network"
+    ],
+    "COMM-002-Brotherhood-Coaching-Network": [
+      "comm-002-brotherhood-coaching-network",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-003-Ace-Senior-Care-Connect": [
+      "comm-003-ace-senior-care-connect",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-004-Community-Outreach-Nonprofit": [
+      "comm-004-community-outreach-nonprofit",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-005-Ace-Food-Security-AI": [
+      "comm-005-ace-food-security-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-006-Community-Technology-Access-AI": [
+      "comm-006-community-technology-access-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-007-Youth-Leadership-AI": [
+      "comm-007-youth-leadership-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-008-Community-Fundraising-AI": [
+      "comm-008-community-fundraising-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-009-Volunteer-Hub-AI": [
+      "comm-009-volunteer-hub-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-010-Disaster-Relief-AI": [
+      "comm-010-disaster-relief-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-011-Indigenous-Creator-Hub": [
+      "comm-011-indigenous-creator-hub",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-012-Black-Art-Museum-AI": [
+      "comm-012-black-art-museum-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-013-Women-s-Empowerment-Network": [
+      "comm-013-women-s-empowerment-network",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-014-Veterans-Support-AI": [
+      "comm-014-veterans-support-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-015-Youth-Mentorship-Program": [
+      "comm-015-youth-mentorship-program",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-016-Community-Health-AI": [
+      "comm-016-community-health-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-017-Local-Business-Directory": [
+      "comm-017-local-business-directory",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-018-Neighborhood-Watch-AI": [
+      "comm-018-neighborhood-watch-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-019-Community-Garden-AI": [
+      "comm-019-community-garden-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-020-Public-Transportation-AI": [
+      "comm-020-public-transportation-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-021-Housing-Assistance-AI": [
+      "comm-021-housing-assistance-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-022-Job-Training-Center": [
+      "comm-022-job-training-center",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-023-Elder-Companion-AI": [
+      "comm-023-elder-companion-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-024-Youth-Sports-AI": [
+      "comm-024-youth-sports-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-025-Community-Legal-Aid": [
+      "comm-025-community-legal-aid",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-026-Public-Education-AI": [
+      "comm-026-public-education-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-027-Local-Government-AI": [
+      "comm-027-local-government-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-028-Public-Safety-AI": [
+      "comm-028-public-safety-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-029-Community-Wellness-AI": [
+      "comm-029-community-wellness-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-030-Cultural-Exchange-AI": [
+      "comm-030-cultural-exchange-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-031-Community-Investment-AI": [
+      "comm-031-community-investment-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-032-Public-Health-AI": [
+      "comm-032-public-health-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-033-Youth-Innovation-Hub": [
+      "comm-033-youth-innovation-hub",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-034-Senior-Tech-Support": [
+      "comm-034-senior-tech-support",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-035-Community-Arts-AI": [
+      "comm-035-community-arts-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-036-Public-Infrastructure-AI": [
+      "comm-036-public-infrastructure-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-037-Neighborhood-Development-AI": [
+      "comm-037-neighborhood-development-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-038-Community-Policing-AI": [
+      "comm-038-community-policing-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-039-Public-Space-AI": [
+      "comm-039-public-space-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-040-Community-Recycling-AI": [
+      "comm-040-community-recycling-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-041-Public-Wi-Fi-AI": [
+      "comm-041-public-wi-fi-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-042-Community-Energy-AI": [
+      "comm-042-community-energy-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-043-Local-Food-Network-AI": [
+      "comm-043-local-food-network-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-044-Community-Volunteering-AI": [
+      "comm-044-community-volunteering-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-045-Public-Childcare-AI": [
+      "comm-045-public-childcare-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-046-Community-Pet-Care-AI": [
+      "comm-046-community-pet-care-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-047-Public-Fitness-AI": [
+      "comm-047-public-fitness-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-048-Community-Transportation-AI": [
+      "comm-048-community-transportation-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-049-Public-Event-AI": [
+      "comm-049-public-event-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "COMM-050-Community-Cultural-AI": [
+      "comm-050-community-cultural-ai",
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace",
+      "comm-001-luminary-worldwide-events"
+    ],
+    "EM-001-Space-Habitat-AI": [
+      "em-001-space-habitat-ai",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-002-fusion-energy-ai"
+    ],
+    "EM-002-Fusion-Energy-AI": [
+      "em-002-fusion-energy-ai",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-001-space-habitat-ai"
+    ],
+    "EM-003-Teleportation-Research-AI": [
+      "em-003-teleportation-research-ai",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-001-space-habitat-ai"
+    ],
+    "EM-004-Climate-Solutions-AI": [
+      "em-004-climate-solutions-ai",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-001-space-habitat-ai"
+    ],
+    "EM-005-Holographic-Events-AI": [
+      "em-005-holographic-events-ai",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-001-space-habitat-ai"
+    ],
+    "EM-006-Neurofeedback-AI": [
+      "em-006-neurofeedback-ai",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-001-space-habitat-ai"
+    ],
+    "EM-007-Autonomous-Delivery-AI": [
+      "em-007-autonomous-delivery-ai",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-001-space-habitat-ai"
+    ],
+    "EM-008-Gene-Editing-AI": [
+      "em-008-gene-editing-ai",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-001-space-habitat-ai"
+    ],
+    "EM-009-Space-Tourism-AI": [
+      "em-009-space-tourism-ai",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-001-space-habitat-ai"
+    ],
+    "EM-010-Wearables-AI": [
+      "em-010-wearables-ai",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-001-space-habitat-ai"
+    ],
+    "EM-011-Metaverse-Hub-AI": [
+      "em-011-metaverse-hub-ai",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "em-001-space-habitat-ai",
+      "em-002-fusion-energy-ai"
+    ],
+    "EM-012-Energy-Grid-AI": [
+      "em-012-energy-grid-ai",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-001-space-habitat-ai"
+    ],
+    "EM-013-Brain-Computer-Interface": [
+      "em-013-brain-computer-interface",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-001-space-habitat-ai"
+    ],
+    "EM-014-Ocean-Cleanup-AI": [
+      "em-014-ocean-cleanup-ai",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-001-space-habitat-ai"
+    ],
+    "EM-015-Crypto-Trading-AI": [
+      "em-015-crypto-trading-ai",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-001-space-habitat-ai"
+    ],
+    "EM-016-Synthetic-Media-AI": [
+      "em-016-synthetic-media-ai",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-001-space-habitat-ai"
+    ],
+    "EM-017-Space-Mining-AI": [
+      "em-017-space-mining-ai",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-001-space-habitat-ai"
+    ],
+    "EM-018-VR-Therapy-AI": [
+      "em-018-vr-therapy-ai",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-001-space-habitat-ai"
+    ],
+    "EM-019-Weather-Prediction-AI": [
+      "em-019-weather-prediction-ai",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-001-space-habitat-ai"
+    ],
+    "EM-020-Autonomous-Farming-AI": [
+      "em-020-autonomous-farming-ai",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-001-space-habitat-ai"
+    ],
+    "EM-021-Traffic-Optimizer-AI": [
+      "em-021-traffic-optimizer-ai",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-001-space-habitat-ai"
+    ],
+    "EM-022-Smart-Grid-AI": [
+      "em-022-smart-grid-ai",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-001-space-habitat-ai"
+    ],
+    "EM-023-Disaster-Prediction-AI": [
+      "em-023-disaster-prediction-ai",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-001-space-habitat-ai"
+    ],
+    "EM-024-Nanotech-AI": [
+      "em-024-nanotech-ai",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-001-space-habitat-ai"
+    ],
+    "EM-025-Personalized-Medicine-AI": [
+      "em-025-personalized-medicine-ai",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-001-space-habitat-ai"
+    ],
+    "EM-026-AI-Diagnostic-Lab": [
+      "em-026-ai-diagnostic-lab",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "em-001-space-habitat-ai",
+      "em-002-fusion-energy-ai"
+    ],
+    "EM-027-Sustainable-Cities-AI": [
+      "em-027-sustainable-cities-ai",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-001-space-habitat-ai"
+    ],
+    "EM-028-Renewable-Energy-AI": [
+      "em-028-renewable-energy-ai",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-001-space-habitat-ai"
+    ],
+    "EM-029-Climate-Modeling-AI": [
+      "em-029-climate-modeling-ai",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-001-space-habitat-ai"
+    ],
+    "EM-030-Policy-Advisor-AI": [
+      "em-030-policy-advisor-ai",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-001-space-habitat-ai"
+    ],
+    "EM-031-Governance-Hub-AI": [
+      "em-031-governance-hub-ai",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "em-001-space-habitat-ai",
+      "em-002-fusion-energy-ai"
+    ],
+    "EM-032-Global-Challenges-AI": [
+      "em-032-global-challenges-ai",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-001-space-habitat-ai"
+    ],
+    "EM-033-Space-Exploration-AI": [
+      "em-033-space-exploration-ai",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-001-space-habitat-ai"
+    ],
+    "EM-034-Education-Equity-AI": [
+      "em-034-education-equity-ai",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-001-space-habitat-ai"
+    ],
+    "EM-035-Health-Equity-AI": [
+      "em-035-health-equity-ai",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-001-space-habitat-ai"
+    ],
+    "EM-036-Economic-Equity-AI": [
+      "em-036-economic-equity-ai",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-001-space-habitat-ai"
+    ],
+    "EM-037-Environmental-Justice-AI": [
+      "em-037-environmental-justice-ai",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-001-space-habitat-ai"
+    ],
+    "EM-038-Human-Rights-AI": [
+      "em-038-human-rights-ai",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-001-space-habitat-ai"
+    ],
+    "EM-039-Peacebuilding-AI": [
+      "em-039-peacebuilding-ai",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-001-space-habitat-ai"
+    ],
+    "EM-040-Telemedicine-AI": [
+      "em-040-telemedicine-ai",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-001-space-habitat-ai"
+    ],
+    "EM-041-AI-Climate-Adaptation": [
+      "em-041-ai-climate-adaptation",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-001-space-habitat-ai"
+    ],
+    "EM-042-Space-Agriculture-AI": [
+      "em-042-space-agriculture-ai",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-001-space-habitat-ai"
+    ],
+    "EM-043-Quantum-Communication-AI": [
+      "em-043-quantum-communication-ai",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-001-space-habitat-ai"
+    ],
+    "EM-044-Robotics-Surgery-AI": [
+      "em-044-robotics-surgery-ai",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-001-space-habitat-ai"
+    ],
+    "EM-045-AI-Disaster-Response": [
+      "em-045-ai-disaster-response",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-001-space-habitat-ai"
+    ],
+    "EM-046-Smart-City-Governance": [
+      "em-046-smart-city-governance",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-001-space-habitat-ai"
+    ],
+    "EM-047-AI-Environmental-Monitoring": [
+      "em-047-ai-environmental-monitoring",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-001-space-habitat-ai"
+    ],
+    "EM-048-Space-Manufacturing-AI": [
+      "em-048-space-manufacturing-ai",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation",
+      "ai-001-ai-command-center",
+      "em-001-space-habitat-ai"
+    ],
+    "EM-049-AI-Ocean-Exploration": [
+      "em-049-ai-ocean-exploration",
+      "em-001-space-habitat-ai",
+      "em-002-fusion-energy-ai",
+      "em-003-teleportation-research-ai",
+      "em-004-climate-solutions-ai"
+    ],
+    "EM-050-AI-Archaeology": [
+      "em-050-ai-archaeology",
+      "em-001-space-habitat-ai",
+      "em-002-fusion-energy-ai",
+      "em-003-teleportation-research-ai",
+      "em-004-climate-solutions-ai"
+    ],
+    "SPEC-018-AI-Personal-Shopper": [
+      "business-template-marketplace",
+      "bw-018-nail-booking-marketplace",
+      "bw-031-hair-marketplace"
+    ],
+    "FI-dist": [
+      "fin-001-genixbank-lite",
+      "fin-002-credit-repair-automation",
+      "fin-003-ai-boss-hub-lite",
+      "fin-004-genixbanks-ai-treasurer",
+      "fin-005-u-haul-rental-affiliate"
+    ],
+    "FI-node_modules": [
+      "fin-001-genixbank-lite",
+      "fin-002-credit-repair-automation",
+      "fin-003-ai-boss-hub-lite",
+      "fin-004-genixbanks-ai-treasurer",
+      "fin-005-u-haul-rental-affiliate"
+    ],
+    "FI-public": [
+      "fin-001-genixbank-lite",
+      "fin-002-credit-repair-automation",
+      "fin-003-ai-boss-hub-lite",
+      "fin-004-genixbanks-ai-treasurer",
+      "fin-005-u-haul-rental-affiliate"
+    ],
+    "FI-src": [
+      "fin-001-genixbank-lite",
+      "fin-002-credit-repair-automation",
+      "fin-003-ai-boss-hub-lite",
+      "fin-004-genixbanks-ai-treasurer",
+      "fin-005-u-haul-rental-affiliate"
+    ],
+    "FI-supabase": [
+      "fin-001-genixbank-lite",
+      "fin-002-credit-repair-automation",
+      "fin-003-ai-boss-hub-lite",
+      "fin-004-genixbanks-ai-treasurer",
+      "fin-005-u-haul-rental-affiliate"
+    ],
+    "CON-001-ACE-CONSTRUCTION": [
+      "con-001-ace-construction",
+      "acquisition-vehicle-automation",
+      "billionaire-brain-assistant",
+      "billionaire-consciousness-empire",
+      "con-002-residential-construction"
+    ],
+    "CON-002-RESIDENTIAL-CONSTRUCTION": [
+      "con-002-residential-construction",
+      "acquisition-vehicle-automation",
+      "billionaire-brain-assistant",
+      "con-001-ace-construction",
+      "con-003-commercial-construction"
+    ],
+    "CON-003-COMMERCIAL-CONSTRUCTION": [
+      "con-003-commercial-construction",
+      "acquisition-vehicle-automation",
+      "billionaire-brain-assistant",
+      "billionaire-consciousness-empire",
+      "con-001-ace-construction"
+    ],
+    "CON-004-INDUSTRIAL-CONSTRUCTION": [
+      "con-004-industrial-construction",
+      "acquisition-vehicle-automation",
+      "billionaire-brain-assistant",
+      "billionaire-consciousness-empire",
+      "con-001-ace-construction"
+    ],
+    "CON-005-CONSTRUCTION-EQUIPMENT-RENTAL": [
+      "con-005-construction-equipment-rental",
+      "acquisition-vehicle-automation",
+      "billionaire-brain-assistant",
+      "billionaire-consciousness-empire",
+      "con-001-ace-construction"
+    ],
+    "CON-006-CONSTRUCTION-PROJECT-MANAGEMENT": [
+      "con-006-construction-project-management",
+      "acquisition-vehicle-automation",
+      "billionaire-brain-assistant",
+      "billionaire-consciousness-empire",
+      "con-001-ace-construction"
+    ],
+    "CON-007-GREEN-BUILDING-SERVICES": [
+      "con-007-green-building-services",
+      "acquisition-vehicle-automation",
+      "billionaire-brain-assistant",
+      "billionaire-consciousness-empire",
+      "con-001-ace-construction"
+    ],
+    "CON-008-HOME-RENOVATION-SERVICES": [
+      "con-008-home-renovation-services",
+      "acquisition-vehicle-automation",
+      "billionaire-brain-assistant",
+      "billionaire-consciousness-empire",
+      "con-001-ace-construction"
+    ],
+    "CON-009-ROOFING-COMPANY": [
+      "con-009-roofing-company",
+      "acquisition-vehicle-automation",
+      "billionaire-brain-assistant",
+      "billionaire-consciousness-empire",
+      "con-001-ace-construction"
+    ],
+    "CON-010-PLUMBING-SERVICES": [
+      "con-010-plumbing-services",
+      "civilization-os-infra",
+      "iza-os-operations-security-bot",
+      "con-001-ace-construction",
+      "con-002-residential-construction"
+    ],
+    "CON-011-ELECTRICAL-SERVICES": [
+      "con-011-electrical-services",
+      "acquisition-vehicle-automation",
+      "billionaire-brain-assistant",
+      "billionaire-consciousness-empire",
+      "con-001-ace-construction"
+    ],
+    "CON-012-HVAC-SERVICES": [
+      "con-012-hvac-services",
+      "acquisition-vehicle-automation",
+      "billionaire-brain-assistant",
+      "con-001-ace-construction",
+      "con-002-residential-construction"
+    ],
+    "CON-013-PAINTING-SERVICES": [
+      "con-013-painting-services",
+      "acquisition-vehicle-automation",
+      "billionaire-brain-assistant",
+      "con-001-ace-construction",
+      "con-002-residential-construction"
+    ],
+    "CON-014-FLOORING-SERVICES": [
+      "con-014-flooring-services",
+      "acquisition-vehicle-automation",
+      "billionaire-brain-assistant",
+      "billionaire-consciousness-empire",
+      "con-001-ace-construction"
+    ],
+    "CON-015-LANDSCAPING-SERVICES": [
+      "con-015-landscaping-services",
+      "acquisition-vehicle-automation",
+      "billionaire-brain-assistant",
+      "billionaire-consciousness-empire",
+      "con-001-ace-construction"
+    ],
+    "CON-016-DEMOLITION-SERVICES": [
+      "con-016-demolition-services",
+      "acquisition-vehicle-automation",
+      "billionaire-brain-assistant",
+      "billionaire-consciousness-empire",
+      "con-001-ace-construction"
+    ],
+    "CON-017-CONCRETE-SERVICES": [
+      "con-017-concrete-services",
+      "acquisition-vehicle-automation",
+      "iza-os-third-party-apis",
+      "con-001-ace-construction",
+      "con-002-residential-construction"
+    ],
+    "CON-018-CARPENTRY-SERVICES": [
+      "con-018-carpentry-services",
+      "acquisition-vehicle-automation",
+      "billionaire-brain-assistant",
+      "billionaire-consciousness-empire",
+      "con-001-ace-construction"
+    ],
+    "CON-019-WINDOW-INSTALLATION": [
+      "con-019-window-installation",
+      "acquisition-vehicle-automation",
+      "billionaire-brain-assistant",
+      "billionaire-consciousness-empire",
+      "con-001-ace-construction"
+    ],
+    "CON-020-INSULATION-SERVICES": [
+      "con-020-insulation-services",
+      "acquisition-vehicle-automation",
+      "billionaire-brain-assistant",
+      "billionaire-consciousness-empire",
+      "con-001-ace-construction"
+    ],
+    "RE-001-PROPERTY-HOLDINGS": [
+      "re-001-property-holdings",
+      "ace-community-impact-templates",
+      "ace-ecommerce-templates",
+      "acquisition-vehicle-automation"
+    ],
+    "OPS-001-VENTURE-STAFFING": [
+      "ops-staff-001-staffing",
+      "ops-001-fractional-cto-agency",
+      "ops-002-supply-chain-optimizer",
+      "ops-003-event-planning-ai",
+      "ops-004-inventory-management-ai"
+    ],
+    "PROFILE-001-DIVINE-JOHNS-PORTFOLIO": [
+      "divine-johns-portfolio"
+    ],
+    "ET-010-PERSONAL-RESUME": [
+      "resume",
+      "et-010-interview-prep-platform",
+      "et-001-online-tutoring-platform",
+      "et-002-language-learning-app",
+      "et-003-content"
+    ],
+    "TECH-061-TECH-VENTURES-PORTFOLIO": [
+      "tech-ventures-portfolio",
+      "tech-001-quantum-algorithm-ai",
+      "tech-002-ai-compliance-scanner",
+      "tech-003-cloud-management-ai",
+      "tech-004-robotics-training-ai"
+    ]
+  },
+  "integration_strategy": {
+    "phase_1": "Graphify: venture \u2192 repo relationship edges",
+    "phase_2": "SocratiCode: index each repo for capabilities",
+    "phase_3": "Semantic matching: venture business model \u2194 repo capabilities",
+    "phase_4": "Alignment verification: gap detection + file updates"
+  }
+}

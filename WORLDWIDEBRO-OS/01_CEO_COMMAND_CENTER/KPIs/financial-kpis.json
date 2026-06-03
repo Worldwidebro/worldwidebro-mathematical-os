@@ -1,0 +1,29 @@
+{
+  "kpi_set": "Financial",
+  "as_of": "2026-05-31",
+  "targets": {
+    "total_monthly_revenue": 15000,
+    "saas_mrr": 10000,
+    "operations_mrr": 5000,
+    "combined_arr": 180000,
+    "net_margin": "45%"
+  },
+  "current": {
+    "total_monthly_revenue": 3500,
+    "saas_mrr": 3500,
+    "operations_mrr": 0,
+    "combined_arr": 42000,
+    "net_margin": "32%"
+  },
+  "progress": {
+    "monthly_revenue_progress": "23%",
+    "saas_mrr_progress": "35%",
+    "operations_mrr_progress": "0%",
+    "annual_revenue_progress": "23%"
+  },
+  "trend": {
+    "direction": "up",
+    "velocity": "2.3x month-over-month",
+    "eta_to_target": "2026-09-15"
+  }
+}

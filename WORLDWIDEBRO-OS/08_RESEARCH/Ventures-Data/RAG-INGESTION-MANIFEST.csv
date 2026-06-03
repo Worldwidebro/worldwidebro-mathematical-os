@@ -1,0 +1,5 @@
+source_id,file_path,source_type,domain,rag_priority,refresh_cadence,owner,purpose
+starred_repo_installation_priority,STARRED-REPOS-INSTALLATION-PRIORITY.csv,csv,github_repository_operating_system,high,weekly,AI Boss Holdings,Ranked installation order for starred GitHub repositories
+starred_repo_governance,STARRED-REPOS-GOVERNANCE.csv,csv,github_repository_operating_system,high,weekly,AI Boss Holdings,Sector manager and venture relationship metadata for starred repositories
+starred_repo_monitoring_workflow,STARRED-REPOS-MONITORING-WORKFLOW.md,markdown,github_repository_operating_system,medium,monthly,AI Boss Holdings,Monitoring workflow for upstream starred repository changes
+ai_boss_repo_operating_system,AI-BOSS-HOLDINGS-REPO-OPERATING-SYSTEM.md,markdown,ai_operating_system,high,monthly,AI Boss Holdings,Warp workspace and repository operating-system architecture

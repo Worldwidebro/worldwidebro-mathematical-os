@@ -1,0 +1,2950 @@
+{
+  "manifest": "/Users/acebless/Documents/RAG-INGESTION-MANIFEST.csv",
+  "dry_run": false,
+  "sync_to_supabase": true,
+  "sources_total": 4,
+  "sources_ready": 0,
+  "sources_ingested": 4,
+  "sources_missing": 0,
+  "sources_failed": 0,
+  "results": [
+    {
+      "source_id": "starred_repo_installation_priority",
+      "file_path": "STARRED-REPOS-INSTALLATION-PRIORITY.csv",
+      "domain": "github_repository_operating_system",
+      "rag_priority": "high",
+      "status": "ingested",
+      "entities_extracted": 4500,
+      "relationships_extracted": 2
+    },
+    {
+      "source_id": "starred_repo_governance",
+      "file_path": "STARRED-REPOS-GOVERNANCE.csv",
+      "domain": "github_repository_operating_system",
+      "rag_priority": "high",
+      "status": "ingested",
+      "entities_extracted": 2819,
+      "relationships_extracted": 1
+    },
+    {
+      "source_id": "starred_repo_monitoring_workflow",
+      "file_path": "STARRED-REPOS-MONITORING-WORKFLOW.md",
+      "domain": "github_repository_operating_system",
+      "rag_priority": "medium",
+      "status": "ingested",
+      "entities_extracted": 8,
+      "relationships_extracted": 0
+    },
+    {
+      "source_id": "ai_boss_repo_operating_system",
+      "file_path": "AI-BOSS-HOLDINGS-REPO-OPERATING-SYSTEM.md",
+      "domain": "ai_operating_system",
+      "rag_priority": "high",
+      "status": "ingested",
+      "entities_extracted": 20,
+      "relationships_extracted": 0
+    }
+  ],
+  "sync_result": {
+    "entities_synced": 589,
+    "relationships_synced": 3,
+    "ventures": [
+      {
+        "name": "database-schema|diagram-editor|editor|erd|erdiagram|indexeddb|javascript|mariadb|oracle-database|oracle-db|postgresql|react|sql|sql-server|sqlite|svg|tailwindcss",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "aiagents|anthropic|anthropic-claude|claude-code|claude-cowork|eclectron-app|opencode|workflow-automation",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "Klavis-AI",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "document-signing|documents|e-signature|hotwired-turbo|open-source|pdf|pdf-sign|pdf-signature|ruby-on-rails|self-hosted|tailwindcss|vue|webpack",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/ThinkInAIXYZ/deepchat",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/langchain-ai/langchainjs",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "\u2b50AI-driven",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/mountain-loop/yaak",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|annotations|electron|linux|macos|menu-bar|mermaid|ollama|screenshot|semantic-search",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agent|agentic-ai|agents|ai|ai-agents|ai-tools|anthropic|automation|bytebot|computer-use|computer-use-agent|cua|desktop|desktop-automation|docker|gemini|llm|mcp|openai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/jpmorganchase/python-training",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/huggingface/aisheets",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|beauty|devtools|infra|market",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agent|artificial-intelligence|chatgpt|claude-ai|cli|developer-tools|gpt|llm|openai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agents|ai|ai-agents|ai-agents-framework|aiagentframework|chatbots|chatgpt|framework|javascript|llm|llm-observability|mcp|multiagent|nodejs|observability|open-source|openai|rag|tts|typescript",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "AI",
+        "venture_id": "ai_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "guardrails",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agent-memory|agentic-workflow|claude|claude-skills|mcp|memory|openclaw|openclaw-skills|proactive|proactive-ai|sandbox|skills",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/mem0ai/mem0",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/anaisbetts/mcp-youtube",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/bytebot-ai/bytebot",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agent|agentic|ai|cookbook|examples|tinyfish|typescript|web-agents|web-automation",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/amantus-ai/vibetunnel",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/multica-ai/multica",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agents|communication|email|inbox|infrastructure|javascript|nodejs|notification-center|notifications|novu|push-notifications|react|reactjs|sms|transactional|typescript",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/nicobailon/visual-explainer",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "training",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "\"AI-Trader",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "NevaMind-AI",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|edtech",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "generative-ai|grant-proposals|grants|llms|scientific-writing",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "AI-oriented",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|infra",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|cloudflare-workers|coding-agent|durable-objects|text-to-app|vibe-coding",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|crypto|derivatives|economics|equity|finance|fixed-income|machine-learning|openbb|options|python|quantitative-finance|stocks",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "My-Brain-Is-Full-Crew",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/opactorai/Claudable",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "against",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "unslothai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "chatbot|chatbots|chatgpt|chatgpt-4|chatgpt-api|chatgpt-free|chatgpt4|deepseek|deepseek-api|deepseek-r1|gpt|gpt-4|gpt-4o|gpt4|gpt4-api|language-model|openai|openai-api|openai-chatgpt|reverse-engineering",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/shareAI-lab/learn-claude-code",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "langchainjs",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|diagrams|productivity",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "AirTag",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|beauty|devtools|edtech|infra|market",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "airbnb|clone|instagram|netflix|reddit|spotify|tiktok|twitter|whatsapp",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agent-infrastructure|ai-agent|ai-search|automation|bilibili|claude-code|cli|cursor|free-api|llm-tools|mcp|python|reddit-scraper|twitter-scraper|web-scraper|xiaohongshu|youtube-transcript",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/microsoft/call-center-ai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agents|llms|python|rag",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/confident-ai/deepeval",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/contains-studio/agents",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "waiterxiaoyy",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/cjpais/Handy",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "bookstairs",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|devtools|edtech|infra|market",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|devtools|fintech|infra|market",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "Airtable",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/rapidsai/cuml",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "AIDC-AI",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agentic-ai|agentic-framework|agentic-rag|ai-agents|ai-agents-framework|autogen|generative-ai|semantic-kernel",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "containerized",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|mcp",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/dair-ai/Prompt-Engineering-Guide",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "non-jailbroken",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "android-interview-questions|angularjs-interview-questions|awesome|awesome-list|awesomeness|interview-practice|interview-questions|interviewing|javascript|javascript-interview-questions|list|python-interview-questions|rails-interview|ruby",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "brain",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|ai-meeting-assistant|llm|local-ai|mac|meeting-minutes|meeting-notes|offline-first|ollama|parakeet|privacy-focused|privacy-tools|rust|self-hosted|sortformer|speech-to-text|transcription|whisper|whisper-cpp|windows",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "Guardrails",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai-hedge-fund",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "browseros-ai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/Vaibhavs10/insanely-fast-whisper",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "simstudioai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/kvcache-ai/ktransformers",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "Ai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/JCodesMore/ai-website-cloner-template",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "Maintained",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "a2a|a2a-mcp|a2a-protocol|a2a-server|agents|generative-ai|linux-foundation",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/ValueCell-ai/valuecell",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/CodebuffAI/codebuff",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "1337|adversarial-attacks|ai|ai-jailbreak|ai-liberation|artificial-intelligence|cybersecurity|hack|hacking|jailbreak|liberation|llm|offsec|prompts|red-teaming|roleplay|scenario",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agent|ai|ai-agents|ai-tools|automation|browser|browser-automation|browser-use|chrome-extension|comet|dia|extension|manus|mariner|multi-agent|n8n|nano|opensource|playwright|web-automation",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/omnara-ai/omnara",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|code|github|system-design",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "crewAI",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "mem0ai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/langchain-ai/openwork",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "500-AI-Agents-Projects",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "AionUI",
+        "venture_id": "ai_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|con|devtools|infra|market",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agentic|agentic-agi|agents|ai|autogen|autogen-ecosystem|chatgpt|framework|llm-agent|llm-framework",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "train",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai-agents|anthropic|claude|claude-code|developer-tools|llm|mcp|productivity",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|macos|mcp|screenshots|swift",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "source-available",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agentframework|agentic-ai|agents|ai|ai-agents-framework|aiagentframework|android-ai|anthropic|genai|generative-ai|java|jvm|kotlin|ktor|llm|mcp|multi-agent-systems|ollama|openai|spring",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "anaisbetts",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "Maigret",
+        "venture_id": "ai_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "eigent-ai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "pair",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/soxoj/maigret",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/supermemoryai/supermemory",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "BloopAI",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agentic-ai|agents|ai|assitant|crypto|equity|finance|investment|mcp|python|react|stock-market",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agent-skills|agentic-skills|ai-agent-skills|ai-agents|ai-coding|ai-workflows|antigravity|antigravity-skills|claude-code|claude-code-skills|codex-cli|codex-skills|cursor|cursor-skills|developer-tools|gemini-cli|gemini-skills|kiro|mcp|skill-library",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|beauty|edtech|market",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "SkyworkAI",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "mountain-loop",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|automation|chatgpt|moviepy|python|shortvideo|tiktok",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "blueteam|cli|cybersecurity|identification|infosec|investigation|namechecker|open-source|osint|osint-framework|osint-python|pentesting|python|python3|reconnaissance|redteam|scraping|sherlock|social-network|socmint",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|con",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|beauty|devtools|market",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai-prompts|ai-tools|llm|prompt|prompt-engineering|prompt-optimization|prompt-optimizer|prompt-testing|prompt-toolkit|prompt-tuning",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agent-skills|agentic-code|agentic-coding|ai-workflow-optimization|ai-workflows|anthropic|anthropic-claude|awesome|awesome-claude-code|awesome-list|awesome-lists|awesome-resources|claude|claude-code|coding-agent|coding-agents|coding-assistant|coding-assistants|llm",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "Natively-AI-assistant",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai-agents|alerts|automation|email-notifications|firecrawl|nextjs|open-source|openai|posthog|react|resend|supabase|tailwindcss|typescript|vercel|web-monitoring|web-scraping",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agents|ai|api|audio-generation|decentralized|distributed|image-generation|libp2p|llama|llm|mamba|mcp|musicgen|object-detection|rerank|stable-diffusion|text-generation|tts",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ValueCell-ai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "next-auth|nextjs|open-source|postgresql|prisma|t3-stack|tailwindcss|trpc|turborepo|typescript|zod",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/SkyworkAI/DeepResearchAgent",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|ai-agents|amp|anthropic|chatgpt|claude|claude-code|claude-skills|cursor|gemini|ide|openai|opencode|orchestration|tui|typescript",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "campaign|campaign-management|email-marketing|email-subscription|listmonk|mailing-list|newsletter|newsletter-management|newsletter-software|self-hosted|sms-gateway|smtp|transactional-emails",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "midday-ai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/Natively-AI-assistant/natively-cluely-ai-assistant",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "detail",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "a2a|agents|agents-sdk|ai|aiagentframework|gemini|genai|go|llm|mcp|multi-agent-collaboration|multi-agent-systems|sdk|vertex-ai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agent-framework|agent-skills|agentic-ai|agentic-workflow|claude-cowork|claude-cowork-alternative|claude-cowork-free|desktop-agent|multi-agent-systems",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/deepseek-ai/DeepSeek-OCR",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|artificial-intelligence|awesome-list|chatgpt|chatgpt-prompts|claude|gemini|gpt|gpt-4|llm|machine-learning|nextjs|open-source|openai|prompt-engineering|prompts|prompts-chat|typescript",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/snarktank/ai-dev-tasks",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|builder|drag-and-drop|draganddrop|no-code|nocode|page-builder|pagebuilder|react|visual-editor",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agent-framework|agentic-ai|agents|ai|dotnet|multi-agent|orchestration|python|sdk|workflows",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "explaining",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/iOfficeAI/AionUi",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "\u8ba2\u9605\uff0c\u652f\u6301\u5173\u952e\u8bcd\u7cbe\u51c6\u7b5b\u9009\u3002AI",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "css|css-framework|functional-css|postcss|responsive|tailwindcss|utility-classes",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "AI-Trader",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "Domain",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/midday-ai/midday",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "apple-intelligence|apple-silicon|cli|foundationmodels|homebrew|llm|macos|macos-26|on-device|openai-compatible|swift|tool-calling|unix",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/bookstairs/bookhunter",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|ai-agents|ai-memory|anthropic|artificial-intelligence|chromadb|claude|claude-agent-sdk|claude-agents|claude-code|claude-code-plugin|claude-skills|embeddings|long-term-memory|mem0|memory-engine|openmemory|rag|sqlite|supermemory",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "apache-arrow|arrow|awesome|awesome-list|blazingsql|cudf|dask|datafusion|datatable|pandas|polars|python|rapidsai|sql",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai-agents|ai-coding|claude|claude-code|project-management|vibe-coding",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/crewAIInc/crewAI",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai-agents|cloudflare-workers",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/camel-ai/owl",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai-website-cloner-template",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "AI-powered",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "containerd",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agent-memory|financial-forecasting|future-prediction|knowledge-graph|llms|multi-agent-simulation|public-opinion-analysis|python3|social-prediction|swarm-intelligence",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "amantus-ai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agents|ai|ai-agents|api|developer-tools|discord|function-calling|integration|llm|mcp|mcp-client|mcp-server|oauth2|open-source",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/FSoft-AI4Code/CodeWiki",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/langchain-ai/open-swe",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agents|artificial-intelligence|cybersecurity|generative-ai|llm|penetration-testing",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/Skyvern-AI/skyvern",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|authentication|authorization|claude|cursor|fastapi|llm|mcp|mcp-server|mcp-servers|modelcontextprotocol|openapi|windsurf",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai-agent|anthropic|automation|autonomous-agents|claude|claude-code|daemon|git-automation|python|slack|slack-bot|sqlite|task-automation|workflow-automation|workspace-management",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "shanraisshan",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agent|agent-collaboration|agent-harness|ai|chatgpt|claude|deepseek|gemini|gpt|knowledge-base|mcp|openai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agent|anthropic|bigquery|charts|context-engineering|duckdb|genbi|llm|openai|postgresql|rag|sql|sqlai|text-to-chart|text-to-sql|text2sql|vertex",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agentic-ai|agentic-framework|agentic-rag|agentic-workflow|agents|ai-agent|ai-assistant|ai-coding|ai-skills|anthropic-claude|autonomous-agents|claude-code|claude-code-skills|codex|mcp-server|model-context-protocol|multi-agent|multi-agent-systems|swarm|swarm-intelligence",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "digital-products|fastapi|merchant-of-record|nextjs|payments|polar|python|react|saas|subscriptions|turborepo|typescript",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "a11y|accessibility|ai|bounding-box|document-parsing|eaa|html|json|markdown|ocr|ocr-recognition|pdf|pdf-accessibility|pdf-converter|pdf-extraction|pdf-parser|pdf-ua|rag|tables|tagged-pdf",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "paperclipai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agent|agentic-ai|llm|mlops|reinforcement-learning",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|edtech|fintech|infra|market",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai-scraping|gemini-api|llm|llm-scraper|openai|scraper|web-scraper|webscraping",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai-chat|llm-inference",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "endurain-project",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/openai/openai-cookbook",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agent|agentic-ai|agents|ai|ai-applications|ai-dev|ai-developer-tools|ai-generated-code|ai-native|ai-native-development|aigc|api|autonomous|autonomous-agents|autonomous-robots|autonomous-systems|chatbot|cli|developer-tools|golang",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "Aider-AI",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "Explain",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "allenai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "datasets/training",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "adversarial-machine-learning|agent|ai|assistant|chatgpt|gpt|gpt-3|gpt-4|hacking|jailbreak|leaks|llm|prompt-engineering|prompt-injection|prompt-security|prompts|system-prompt",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "kvcache-ai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "(AI",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/allenai/olmocr",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai-agents|ai-assisted-development|anthropic|claude|claude-code|game-design|game-development|gamedev|godot|indie-game-dev|unity|unreal-engine",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "aisheets",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "lucidrains",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai-agent|ai-agent-tools|ai-agents|ai-agents-framework|mcp|mcp-server|mcp-tools|mcps|n8n-alternative|no-code-automation|workflow|workflow-automation|workflows",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|beauty|con|devtools|edtech|fintech|infra|market",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "awesome-ai-apps",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "\u5229\u7528AI\u5927\u6a21\u578b\uff0c\u4e00\u952e\u751f\u6210\u9ad8\u6e05\u77ed\u89c6\u9891",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|ai-assistant|cheating|claude-code|claude-skills|cluely|cluely-alternative|cluely-clone|developer-tools|final-round-ai|interview|interviewcoder|llm|meeting-assistant|moltbook|moltbot|open-source|openclaw|trending|trending-repositories",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|devtools|edtech|infra",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "E-mail",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/sinaptik-ai/pandas-ai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "SaaS",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|fintech|infra|market",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|database|databricks|db2|dbeaver|erd|gui|java|jdbc|mysql|nosql|oracle|postgresql|redshift|snowflake|sql|sqlite|sqlserver",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|edtech|infra",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "paired",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "BerriAI",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agent|agentic-rag|ai-agents|clawbot|context-database|context-engineering|filesystem|llm|memory|openclaw|opencode|rag|skill",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "visual-explainer",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agentmemory|agents|ai|claude|claudecode|codex|copilot|cursor|genai|harness|hermes|memory|openclaw",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "crewAIInc",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "Jailbreaks",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agents|gcp|gemini|genai-agents|generative-ai|llmops|mlops|observability",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/unslothai/unsloth",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "LlamaIndex",
+        "venture_id": "ai_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "02_AI_MODELS_RAG/",
+        "venture_id": "ai_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "Post-Training",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/agentscope-ai/agentscope",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|faiss|gpt-oss|langchain|llama-index|llm|localstorage|offline-first|ollama|privacy|python|rag|retrieval-augmented-generation|vector-database|vector-search|vectors",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "accounting|asset-management|crm|distribution|erp|erpnext|frappe|healthcare|hrms|manufacturing|point-of-sale|procurement|project-management|python|retail|support",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "deepseek-ai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agent|agents|ai|anthropic|claudecode|llm|llms|openai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agentic-ai|agentic-coding|agentic-engineering|agentic-workflow|ai|ai-agents|anthropic|best-practices|boris|claude|claude-ai|claude-code|claude-code-agents|claude-code-best-practices|claude-code-commands|claude-code-skills|context-engineering|pakistan|pakistani-developer|vibe-coding",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "waooAI",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "AiToEarn",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/bragai/bRAG-langchain",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "Vaibhavs10",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "AI-Driven",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agent-framework|data-analysis|deep-research|deep-search|llms|multi-agent-system|nlp|public-opinion-analysis|python3|sentiment-analysis",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai-engineering-hub",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agentic-ai|densepose|esp32|firmware|mcu|mincut|monitoring|pose-estimation|rf|self|self-learning|spatial-intelligence|wifi|wifi-hacking|wifi-security|world-model",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|intelligence|osint",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "autogen|autogen-extension|langchain|markdown|microsoft-office|openai|pdf",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "bRAG-langchain",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "VertexAI",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/eseckel/ai-for-grant-writing",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agent|agents|ai-agents|chatgpt|deep-learning|generative-ai|language-model|llms|openai|prompt-engineering|rag",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "VectifyAI",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "acp|ai|ai-agents|mcp",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/lucidrains/performer-pytorch",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|comfy|comfyui|python|pytorch|stable-diffusion",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "plain",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|augmentation|flourishing|life|work",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai-agents|ai-gateway|anthropic|chatgpt|claude|claude-code|cline|codex|copilot|cursor|deepseek|free-ai|gemini|gemini-cli|llm|llm-gateway|openai|openai-proxy|qwen|token-saver",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|devtools|infra",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "markdown|memos|nextjs|notebook|openai|postgres|react|self-hosted",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|devtools|infra|market",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "analysis|analyzer|cli|information-gathering|javascript|nodejs|nodejs-cli|osint|pentest|pentesting|person-profile|profile|python|reconnaissance|security-tools|social-analyzer|social-media|sosint|username",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "system-prompts-and-models-of-ai-tools",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|api|automation|browser|browser-automation|computer|gpt|llm|playwright|powerautomate|puppeteer|python|rpa|selenium|vision|workflow",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agents|application|data|fine-tuning|framework|llamaindex|llm|multi-agents|rag|vector-database",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/rapidsai/raft",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai-agents|code-execution|copy-on-write|firecracker|kvm|rust|sandbox|virtual-machine|vm",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "blue-team|bugbounty|information-gathering|osint|osint-tools|osinttool|recon|reconnaissance|red-team|security-tools|web",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "plaintext",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "pretrained",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "dnd-kit|markdown|react|react-router|shadcn|supabase|tailwind",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|claude-code|cli|code-search|cursor|developer-tools|embeddings|golang|mcp|privacy-first|semantic-search|vector-search",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "aws|bigquery|blockchain-analytics|csv|erc20|erc20-tokens|erc721|ethereum|etl|export|gcp|google-cloud|sql|transaction",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "gemini|gemini-ai|gemini-api|gemini-flash|gemini-pro|information-extration|large-language-models|llm|nlp|python|structured-data",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/Arindam200/awesome-ai-apps",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "hotwire|kanban|rails|ruby",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "trainer",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|ai-agents|coding|deno|embeddings|insforge|nextjs|oauth2|pgvector|postgresql|realtime|vectors|websockets",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "email",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/openai/gpt-oss",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/eigent-ai/eigent",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "mailing",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|market",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "maigret",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|con|edtech|fintech|market",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "bragai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "Tailscale",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "contains",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ML/GenAI",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "cjpais",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/multica-ai/andrej-karpathy-skills",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "OpenAI",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "Hainrixz",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agents|fastmcp|llms|mcp|mcp-clients|mcp-servers|mcp-tools|model-context-protocol|python",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai-agents|ai-tools|browser-automation|browser-use|llm|playwright|python",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "toolsdk-ai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/HKUDS/AI-Trader",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/openai/symphony",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|ai-transparency|anthropic|chatgpt|claude|claude-code|claude-code-cli|claude-opus-4-7|codex|gemini|gemini-3-1-pro|gpt-5|gpt-5-5|grok|openai|perplexity|prompt-engineering|system-prompt|system-prompts|xai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "FreeDomain",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agent-workflow|agentic-workflow|agents|ai|aiagents|anthropic|artificial-intelligence|automation|chatbot|deepseek|gemini|low-code|nextjs|no-code|openai|rag|react|typescript",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agents|ai|llms|playwright|puppeteer|selenium",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "containerd|lima-vm|macos|qemu|vm",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "Main",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "AI-ready",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai-agent|ai-agents|automation|film-production|generative-ai|short-drama|storyboard|video-generation",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|ai-deep-fake|ai-face|ai-webcam|artificial-intelligence|deep-fake|deepfake|deepfake-webcam|faceswap|fake-webcam|gan|real-time-deepfake|realtime|realtime-deepfake|realtime-face-changer|video-deepfake|webcam|webcamera",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|deep-learning|filetype|keras-classification-models|keras-models|mime-types|onnx",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agents|graph|llms|rag",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai-agent|anthropic|automation|blueprint|claude|claude-code|developer-tools|meta-agent|saas|software-architecture",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|beauty|devtools|edtech|market",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/openai/codex",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|dashboard|geopolitics|monitoring|news|opensource|osint|palantir|situation",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agents|ai|hacktoberfest|llm|mcp",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agent-computer-interface|ai-agents|computer-automation|computer-use|computer-use-agent|cua|grounding|gui-agents|in-context-reinforcement-learning|memory|mllm|planning|retrieval-augmented-generation",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|devtools|edtech|fintech|infra|market",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|bolt|cluely|copilot|cursor|cursorai|devin|github-copilot|lovable|open-source|perplexity|replit|system-prompts|trae|trae-ai|trae-ide|v0|vscode|windsurf|windsurf-ai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "containers",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai-bot|bot|http-api|python-bot|whatsapp|whatsapp-api|whatsapp-automation|whatsapp-bot|whatsapp-chat|whatsapp-web|whatsapp-web-api",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "Train",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "tile-ai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "awesome|awesome-list|cursor|cursor-ai-editor|cursorrules",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "openai-cookbook",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agent|agents|ai|bigquery|clickhouse|cockroachdb|database|elasticsearch|firestore|genai|llm|mcp|mongodb|mysql|oracle|postgresql|redis|server|spanner|tidb",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "google-ai-edge",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai-agents|ai-tutor|clawdbot|cli-tool|deepresearch|interactive-learning|large-language-models|multi-agent-systems|rag",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "PandasAI",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "camel-ai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "call-center-ai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/endurain-project/endurain",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/tile-ai/tilelang",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "NotionAI",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "thumbnails++",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "self-contained",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai-app-builder|anthropic|artificial-intelligence|bolt|deepseek|gemini|generative-ai|github|llm|llms|lovable|nextjs|ollama|openai|qwen|react|typescript|v0|vercel",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|convert|document-parser|document-parsing|documents|docx|html|markdown|pdf|pdf-converter|pdf-to-json|pdf-to-text|pptx|tables|xlsx",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|beauty|fintech|market",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agents|ai|analytics|artificial-inteligence|bigquery|business-intelligence|databases|hacktoberfest|llms|mcp|mssql|mysql|postgresql|rag",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/toolsdk-ai/toolsdk-mcp-registry",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|devtools|edtech|fintech|market",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ThinkInAIXYZ",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|llm-evaluation|llms|nocode|oss|synthetic-data",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai_agents_az",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agentic-coding|ai-agents|automation|claude|claude-code|multi-agent-systems|oh-my-opencode|opencode|parallel-execution|vibe-coding",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/osaurus-ai/osaurus",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/google-ai-edge/gallery",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agentic|agentic-ai|agentic-coding|agentic-workflow|ai|claude|claude-ai|claude-code|cli|developer-tools|productivity|tips-and-tricks",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/waiterxiaoyy/Deep-Dive-Claude-Code",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "shareAI-lab",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "\ud83e\udde0\u300c\u5927\u6a21\u578b\u300d2\u5c0f\u65f6\u5b8c\u5168\u4ece0\u8bad\u7ec364M\u7684\u5c0f\u53c2\u6570LLM\uff01Train",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/Canner/WrenAI",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "OpenAI-compatible",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai-skills|antigravity|claude|claude-code|codex|command-line|copilot|cursor-ai|html5|kiro|landing-page|mobile-ui|qoder|react|tailwindcss|trae|ui-design|uikit|windsurf-ai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|edtech|infra|market",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "blockchain-etl",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/simstudioai/sim",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|beauty|devtools|edtech|fintech|infra|market",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ebay|email|emails|information-gathering|instagram|open-source-intelligence|osint|osint-python|osint-tools|pypi|python|social-network|tellonym|trio|twitter",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "Crawl4AI",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "(CAI)",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/paperclipai/paperclip",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "AionUi",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "aaif-goose",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/DayuanJiang/next-ai-draw-io",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "AI-driven",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agent|agentic|agentic-framework|agentic-workflow|ai|ai-agents|deep-research|harness|langchain|langgraph|langmanus|llm|multi-agent|nodejs|podcast|python|superagent|typescript",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai-agents|genai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "nomic-ai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "finance|nextjs|supabase|tailwind|typescript",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agent-infrastructure|ai|ai-agents|ai-infrastructure|api|context-retrieval|data-connectors|developer-tools|enterprise-data|information-retrieval|integration|llm|open-source|rag|retrieval|retrieval-augmented-generation|sdk|search|search-api|semantic-search",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "natively-cluely-ai-assistant",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "daily",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "tailscale|tailscale-control-server|tailscale-server|wireguard",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai4hpc|cuda|data-science|deep-learning|deepstream|gpu|hpc|machine-learning|mpi|openacc|openmp|rapidsai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/Hainrixz/the-architect",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/rapidsai/cuvs",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agent|agentic-rag|claude|deep-research|deepseek|deepseek-r1|grok|grok3|llama4|llm|milvus|openai|qwen3|rag|reasoning-models|vector-database|zilliz",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "genai|gpt|gpt-4|graphrag|knowledge-graph|large-language-models|llm|rag|retrieval-augmented-generation",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agentic-ai|agents|course|huggingface|langchain|llamaindex|smolagents",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "tailwindcss",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agent|agentic|ai|chatbot|embeddings|evaluation|generative-ai|golang|knowledge-base|llm|multi-tenant|multimodel|ollama|openai|question-answering|rag|reranking|semantic-search|vector-search|wiki",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|assistant|crustacean|molty|openclaw|own-your-data|personal",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "AI-assisted",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|app|bci|c|flutter|friend|mobile|necklace|nextjs|omi|personas|python|smartglasses|summary|transcription|wearable",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "acp|agent-team|ai|ai-agent|chat|chatbot|claude-code|clawdbot|codex|cowork|gemini|gemini-cli|hermes|llm|nano-banana|office|openclaw|opencode|skills|webui",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "MCPSDK.dev(ToolSDK.ai)'s",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/nomic-ai/gpt4all",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "container",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "failing",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "chatgpt|hacktoberfest|huggingface|llm|svelte|svelte-kit|sveltekit|tailwindcss|typescript",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "iOfficeAI",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|infra|market",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "AI-integrated",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/langchain-ai/langgraph",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "confident-ai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai-for-grant-writing",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agentscope-ai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "bpf|cncf|cni|containers|ebpf|k8s|kernel|kubernetes|kubernetes-networking|loadbalancing|monitoring|networking|observability|security|troubleshooting|xdp",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "python-training",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "supermemoryai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|beauty|market",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "self-maintaining",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agentic-ai|agents|ai|claude|copilot|cursor|git|llm|mcp",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "CrewAI",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "[\u0259\u2018fain])",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agent|deepseek|fine-tuning|gemma|gemma3|gpt-oss|llama|llama3|llm|llms|mistral|openai|qwen|reinforcement-learning|self-hosted|text-to-speech|tts|ui|unsloth",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agent-skills|ai-agents|antigravity|automation|claude|claude-code|codex|composio|cursor|developer-tools|gemini-cli|mcp|openai-codex|rube|saas|skill|workflow-automation",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/BigBodyCobain/Shadowbroker",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "aigc|video-generation",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/waooAI/waoowaoo",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "llms|mlx",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "applicant-tracking-system|chat-application|crm|crm-platform|hrms|human-resources|issue-management|issue-tracker|jira-alternative|project-management|qms|support|team-management|team-platform|wiki",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai-agent|aippt|office|powerpoint|powerpoint-generation|ppt|pptx|presentation|slide|slides",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|awesome|awesome-list|llm|local|local-ai|local-llm|resources|self-hosted|selfhosted",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|fin",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "aiagent|automation|openclaw",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/tailwindlabs/tailwindcss",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "langchain-ai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/airweave-ai/airweave",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|automation|bun|claude|cli|coding-assistant|developer-tools|typescript|workflow-engine|yaml",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "bytebot-ai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai-assistant|ai-tools|anthropic|claude|claude-code|context-engineering|developer-tools|llm|plugin|productivity",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|reader|rss|rss-reader|rsshub",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "chatgpt|gpt-4|openai|openai-api",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "chatbot|hugging-face|llm|llm-local|llm-prompting|llm-security|llmops|machine-learning|open-ai|pathway|rag|real-time|retrieval-augmented-generation|vector-database|vector-index",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "accessibility|agent-skill|ai|chrome-extension|claude-code-plugin|cli|css|cursor|design-system|design-to-code|design-tokens|dtcg|figma|mcp-server|npx|playwright|shadcn-ui|skills-sh|tailwind|web-scraping",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agent|ai-agents|kanban|management|task-manager",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "WrenAI",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "air-force-one|airforce1|asdb|cctv|cctv-cameras|cctv-surveillance|earthquake-visualization|elonjet|osint|osint-resources|osint-tool|sattelite|sattelite-imagery|sdr",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "contains-studio",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "anthropic|anthropic-claude|claude|claude-4|claude-4-opus|claude-4-sonnet|claude-ai|claude-code|claude-code-sdk|cursor|ide|llm|llm-code|rust|tauri",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "cai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/JetBrains/koog",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai-agents|android|android-automation|hacktoberfest|mobile-automation",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "data-engineering|data-quality|data-science|deep-learning|distributed-ml|distributed-training|llms|machine-learning|mlops|natural-language-processing|python|pytorch|ray",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "admin-dashboard|ai-agent|ai-agents|ai-assistant|ai-tools|airtable|crm|crud|erp|internal-tool|internal-tools|low-code|lowcode|no-code|nocode|project-management|salesforce|self-hosted|workflows",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|ai-agent|ai-agents|anthropic|chatgpt|claude|claude-code|clawdbot|codex|hermes|hermes-agent|llm|moltbot|nous-research|openai|openclaw",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/containerd/containerd",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|edtech|market",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "(Z.ai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/BerriAI/litellm",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|devtools",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "artificial-intelligence|cybersecurity|framework|generative-ai|llm|pentesting",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "airtable|airtable-alternative|automatic-api|hacktoberfest|low-code|no-code|no-code-database|no-code-platform|postgresql|rest-api|restful-api|spreadsheet|sqlite|swagger",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "Skyvern-AI",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "aiagent|chatgpt|finance|fingpt|large-language-models|multimodal-deep-learning|prompt-engineering|robo-advisor",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "amd|blackwell|cuda|deepseek|deepseek-v3|gpt|gpt-oss|inference|kimi|llama|llm|llm-serving|model-serving|moe|openai|pytorch|qwen|qwen3|tpu|transformer",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "AI-BOSS-HOLDINGS/",
+        "venture_id": "ai_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai-agent|automation|autonomous-agent|browser-automation|claude|computer-control|desktop-automation|gemini|lightweight|llm-agent|memory-system|python|self-evolving|skill-tree|task-automation",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "JetBrains",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "Airbnb",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/unclecode/crawl4ai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|beauty|edtech",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/BloopAI/vibe-kanban",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "nebula|ngrok|ngrok-alternative|self-hosted|ssh|tailscale|tailscale-alternative|tunnel-proxy|tunneling|zerotier",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "brand-audits|css|design-engineering|design-md|design-ops|design-systems|design-to-code|design-tokens|developer-experience|dx|frontend|mcp|nodejs|open-source|playwright|productivity|reverse-engineering|tailwind-css|ui-audit",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/AIDC-AI/Pixelle-Video",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "Domain-specific",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agents|ai|ai-agents|aiagentframework|llms",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "crawl4ai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/virattt/ai-hedge-fund",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "02_AI_MODELS_RAG",
+        "venture_id": "ai_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agent-memory|ai-memory|cloudflare-kv|cloudflare-pages|cloudflare-workers|drizzle-orm|memory|postgres|remix|tailwindcss|typescript|vite",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/blockchain-etl/ethereum-etl",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agent|agentic-ai|agentic-framework|agentic-workflow|ai|automation|gemini|genai|gpt|gpt-4|llm|low-code|mcp|nextjs|no-code|openai|orchestration|python|rag|workflow",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agent|agi|ai|gpt|llm|low-code|mcp|no-code|sandbox|super-magic|workflow",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agents|ai|llms|machine-learning|mcp|rag",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "MoonshotAI",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agent|context-engineering|electron|embedding-models|javascript|memory|proactive-ai|python|python3|rag|react|typescript|vector-database|vision-language-model",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/yoanbernabeu/grepai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/AI4Finance-Foundation/FinRobot",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "mail",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "cross-platform|getting-things-done|gtd|gtd-applications|gtd-workflow|personal-management|productivity|second-brain|task-management|todo-app",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|ai-assistant|ast|claude|claude-code|code-graph|codebase-intelligence|context-engine|docker|embeddings|gemini|gemini-cli-extension|mcp|openai|qdrant|semantic|semantic-search|vector-database|vector-embeddings|vector-search",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "kortix-ai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/unslothai/hyperlearn",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "LocalAI",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "dask|deep-learning|gpu|machine-learning|pytorch|rapidsai|recommendation-system|recommender-system|recsys|tensorflow",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|con|devtools|edtech|infra|market",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "AI4Finance-Foundation",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agent|claude|deepseek|llm|mcp|nextjs|openai|qwen|rag|workflow",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "openai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/Aider-AI/aider",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "Fair-code",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|ai-chat|chatgpt|chatui|enterprise-search|gen-ai|information-retrieval|llm|llm-ui|nextjs|python|rag|self-hosted|vector-search",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/nextjs/saas-starter",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "algorithms|c-plus-plus|containers|cpp|embedded|embedded-applications|embedded-systems|estd|library|std|stl|templates",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "CodebuffAI",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "auto-publish|douyin|douyin-api|electron-app|electron-react|kuaishou|kwai|published|shipinhao|tool|xiaohongshu",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|ai-agents|llms|on-device-ai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai4science|chineseocr|document-parsing|document-translation|kie|ocr|paddleocr-vl|pdf-extractor-rag|pdf-parser|pdf2markdown|pp-ocr|pp-structure|rag",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai-agents-for-beginners",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/VectifyAI/PageIndex",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai-tools|antigravity|chrome-devtools-protocol|claude|developer-tools|mcp|mcp-server|mobile|model-context-protocol|openapi|typescript|vscode-extension",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/aliasrobotics/cai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/gnekt/My-Brain-Is-Full-Crew",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/microsoft/ai-agents-for-beginners",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/DigitalPlatDev/FreeDomain",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "cncf|containerd|containers|cri|docker|hacktoberfest|kubernetes|oci",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "FSoft-AI4Code",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agent|browser|browseros|chromium|hacktoberfest|linux|llm|lmstudio|macos|ollama|windows",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agents|ai|api|backend|developer-tools|framework|genai|javascript|primitives|python|rust|typescript",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai-agents|algorithmic-trading|bloomberg-terminal|cpp|finance|financial-markets|fintech|good-first-issue|investment|investment-research|machine-learning|opensource|python|qt|quantitative-finance|stock-market|trading",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "airweave",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "e-mail/phone",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|ai-agents|ai-memory|cognitive-architecture|cognitive-memory|context-engineering|contributions-welcome|good-first-issue|good-first-pr|graph-database|graph-rag|graphrag|help-wanted|knowledge|knowledge-graph|neo4j|open-source|openai|rag|vector-database",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|apis|automation|cli|data-flow|development|integration-framework|integrations|ipaas|low-code|low-code-platform|mcp|mcp-client|mcp-server|n8n|no-code|self-hosted|typescript|workflow|workflow-automation",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "apm|crash-reporting|crash-reports|csp-report|devops|django|error-logging|error-monitoring|fair-source|hacktoberfest|monitor|monitoring|python|sentry|tag-production",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "a2a|agent-evolution|agent-framework|agent-protocol|ai-agent|auditable-ai|autonomous-agent|cli|evomap|gep|llm-agent|mcp|memory-system|nodejs|prompt-engineering|prompt-governance|self-evolution|self-evolving|skill-library|skills",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|ai-agents|ai-tools|automation|boilerplate|claude|claude-code|clone|developer-tools|nextjs|react|reverse-engineering|shadcn-ui|skills|tailwindcss|template|typescript|web-scraping|website-clone",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/mudler/LocalAI",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|ai-agents|ai-crawler|ai-scraping|ai-search|crawler|data-extraction|html-to-markdown|llm|markdown|scraper|scraping|web-crawler|web-data|web-data-extraction|web-scraper|web-scraping|web-search|webscraping",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|beauty|con|devtools|edtech|infra|market",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "Remaining",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "dair-ai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "sinaptik-ai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "LLMs",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agent|ai|autonomous-agents|cli|coding-assistant|context-memory|developer-tools|knowledge-management|llm|mcp|memory|typescript|vibe-coding",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "Container",
+        "venture_id": "ai_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/ashishpatel26/500-AI-Agents-Projects",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "evomap.ai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "opactorai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai-sre|alerting|datadog|grafana|incident-management|observability|remediation|root-cause-analysis|site-reliability-engineering|slack|sre",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "next-ai-draw-io",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "airweave-ai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/simular-ai/Agent-S",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai-app-builder|ai-applications|crud-app|crud-application|data-application|data-apps|internal-tools|it-workflows|low-code|low-code-no-code|low-code-platform|no-code|no-code-platform|open-source|rest-api-framework|sql-gui|workflow-apps|workflow-automation|workflow-engine",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|csv|data|data-analysis|data-science|data-visualization|database|datalake|gpt-4|llm|pandas|sql|text-to-sql",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai-agents|anti-detect|antidetect-browser|bot-detection|browser-automation|captcha-bypass|chromium|cloudflare|cloudflare-bypass|fingerprint|headless-browser|playwright|puppeteer|python|recaptcha|selenium|stealth-browser|undetected|web-scraping|webscraping",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "anthropic|clickhouse|data-analysis|data-visualization|database|elasticsearch|explorer|golang|lightweight|mariadb|mongodb|mysql|ollama|openai|postgresql|reactjs|sqlite3|typescript|vite",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "detailed",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "osaurus-ai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/aaif-goose/goose",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "automation|data-orchestration|devops|hacktoberfest|high-availability|infrastructure-as-code|java|low-code|lowcode|orchestration|pipeline|pipeline-as-code|workflow",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|ai-gateway|evals|llm|observability|simulation",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/patchy631/ai-engineering-hub",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|ai-agent|ai-tools|awesome|awesome-list|awesome-lists|mcp",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/NevaMind-AI/memU",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "gaia|general-purpose|multiagent-systems|multimodel",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "BigBodyCobain",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "rapidsai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "saas-starter",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/shanraisshan/claude-code-best-practice",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|devtools|fintech|market",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|beauty|devtools|edtech|fintech|market",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agent|agent-skills|ai|ai-assistant|ai-sdk|chatgpt|claude|cross-platform|deepseek|electron|gemini|harness-design|hermes-agent|llm-client|mcp|mcp-client|openai-client|openclaw",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/yikart/AiToEarn",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai-gateway|anthropic|azure-openai|bedrock|gateway|langchain|litellm|llm|llm-gateway|llmops|mcp-gateway|openai|openai-proxy|vertex-ai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "omnara-ai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "cli|cti|cybersecurity|forensics|hacktoberfest|information-gathering|infosec|linux|osint|pentesting|python|python3|reconnaissance|redteam|sherlock|tools",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai-dev-tasks",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agentic-ai|ai|llms|ravishing",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "AI'S!",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/kortix-ai/suna",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|claude|gemini|llama|llm|openai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "grepai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "anthropic|apple-foundation-models|apple-intelligence|apple-neural-engine|llm|mcp|mcp-server|mlx|openai|swift",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "pandas-ai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "digitalplat|domain|domain-platform|domainname|domains|free|freedomain",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agentic-ai|agents|ai|ai-agents|context-engineering|llm|rag|reasoning|retrieval|retrieval-augmented-generation|vector-database",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "Open-Domain",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "endurain",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|ai-agents|llm",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "training/finetuning",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "simular-ai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agents|ai|amp|claude-code|codex|human-in-the-loop|humanlayer|llm|llms|opencode",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "account-manager|antigravity|antigravity-ai|antigravity-ide|antigravity-tools|antigravity2api|electron|gemini|gemini-api|gemini-pro",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|edtech|fintech|market",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|llms|openai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "shadcn|shadcn-theme|shadcn-theme-editor|shadcn-ui|tailwindcss|tailwindcss-v4",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|beauty|infra|market",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|amd|genai|gpu|llama|llm|llm-inference|local-server|mcp|mcp-server|mistral|npu|onnxruntime|openai-api|qwen|radeon|rocm|ryzen|vulkan",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "chatgpt|gpt|llamacpp|llm|localai|open-source|self-hosted|tauri",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/MoonshotAI/kimi-cli",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|bark|data-analysis|docker|hot-news|llm|mail|mcp|mcp-server|news|ntfy|python|rss|trending-topics|wechat|wework",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "available",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai-prompts|ai-skill|bluesky|claude|claude-code|clawhub|deep-research|hackernews|instagram|openclaw|polymarket|recency|reddit|research|social-media|tiktok|trends|twitter|web-search|youtube",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "nicobailon",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "multica-ai",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agents|agents-sdk|ai|ai-agents|ai-agents-automation|chatgpt|claude-code|claude-cowork|generative-ai|llm|multiagent|opeani|open-source|orchestration|productivity",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agents|ai|ai-agents|application|chatbots|chatgpt|genai|llm|long-term-memory|memory|memory-management|python|rag|state-management",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "aigc|comfyui|image-generation|tts|video-generation",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agents|ai|ai-agents|chatgpt|deepagents|enterprise|framework|gemini|generative-ai|langchain|langgraph|llm|multiagent|open-source|openai|pydantic|python|rag",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "aider",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/browseros-ai/BrowserOS",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai-agents|ai-search-engine|answering-engine|artificial-intelligence|llm|machine-learning|open-source-ai-search-engine|perplexica|rag|search-engine|searxng|searxng-copilot|self-hosted-ai|vane",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/Klavis-AI/klavis",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|devtools|edtech|market",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agentic-rag|ai|chatbot|llm|machine-learning|python|rag|retrieval-augmented-generation",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "chatgpt|gpt-3-5|gpt-4|jailbreak|openai|prompt",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "aims",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "anthropic|chatgpt|claude-3|cli|command-line|gemini|gpt-3|gpt-35-turbo|gpt-4|gpt-4o|llama|openai|sonnet",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "https://github.com/gyoridavid/ai_agents_az",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai|ocr",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agent|agent-memory|ai|ai-memory|aiagent|awesome|chatgpt|llm|long-short-term-memory|memori-ai|memory|memory-management|memory-mcp|openclaw-memory|python|rag|state-management|stateful|typescript",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "ai-agents|ai-alignment|customer-service|customer-success|gemini|genai|hacktoberfest|llama3|llm|openai|python",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agent|agent-development|ai-agent|claude|claude-code|educational|llm|python|teaching|tutorial",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "tailwindlabs",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "alertmanager|deduplication|email|hacktoberfest|monitoring|notifications|opsgenie|pagerduty|slack",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "angular-roadmap|backend-roadmap|blockchain-roadmap|computer-science|dba-roadmap|developer-roadmap|devops-roadmap|frontend-roadmap|go-roadmap|java-roadmap|javascript-roadmap|nodejs-roadmap|python-roadmap|qa-roadmap|react-roadmap|roadmap|software-architect-roadmap|vue-roadmap",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      },
+      {
+        "name": "agentic-ai|agents|ai|autonomous-agents|deepseek-r1|llm|llm-agents|voice-assistant",
+        "venture_id": "github_repository_operating_system",
+        "metrics": []
+      }
+    ],
+    "timestamp": "2026-06-02T17:13:22.116783"
+  }
+}

@@ -13,6 +13,7 @@
 - **What's our progress?** → [progress.md](progress.md)
 - **What are the blockers?** → [BLOCKER-STATUS-SESSION-2.md](BLOCKER-STATUS-SESSION-2.md)
 - **What files exist and how do they connect?** → [SYSTEM-INTEGRATION-MAP.md](SYSTEM-INTEGRATION-MAP.md)
+- **How ventures/repos/graph connect now?** → [VENTURE-GITHUB-GRAPH-FLOW-MAP.md](VENTURE-GITHUB-GRAPH-FLOW-MAP.md)
 
 ### I Need to Execute
 - **How do I structure ClickUp?** → [CLICKUP-SETUP-GUIDE.md](CLICKUP-SETUP-GUIDE.md)
@@ -37,6 +38,9 @@
 - **Who are we and what's our structure?** → [ORG-CHART-OPERATIONAL.md](ORG-CHART-OPERATIONAL.md)
 - **What do we need to complete?** → [COMPANY-BRAIN-COMPLETION-REPORT.md](COMPANY-BRAIN-COMPLETION-REPORT.md)
 - **How do I procure vendors?** → [VENDOR-PROCUREMENT-OS.md](VENDOR-PROCUREMENT-OS.md)
+- **How are starred repos becoming the AI operating system?** → [AI-BOSS-HOLDINGS-REPO-OPERATING-SYSTEM.md](AI-BOSS-HOLDINGS-REPO-OPERATING-SYSTEM.md)
+- **What is the install priority order?** → [STARRED-REPOS-INSTALLATION-PRIORITY.csv](STARRED-REPOS-INSTALLATION-PRIORITY.csv)
+- **What sources feed RAG?** → [RAG-INGESTION-MANIFEST.csv](RAG-INGESTION-MANIFEST.csv)
 
 ### I Need Planning Reference
 - **What's the overall plan?** → [task_plan.md](task_plan.md)
@@ -80,6 +84,9 @@ CONTACT-EXTRACTION-PLAN.md          [200 lines] Data extraction process
 CONTACT-DATA-TEMPLATE.csv           Template with all contact fields
 contacts-extracted.csv              58 imported contacts (v1)
 CONTACTS-INITIAL.csv                Original contact source
+STARRED-REPOS-INSTALLATION-PRIORITY.csv  664 repo install priority order
+STARRED-REPOS-GOVERNANCE.csv        Repo sector/manager/venture governance map
+RAG-INGESTION-MANIFEST.csv          Source registry for RAG ingestion
 vapi-agent-bella-config.json        VAPI agent configuration template
 vapi-agent-swift-config.json        VAPI agent configuration template
 package.json                        Node dependencies
@@ -252,7 +259,7 @@ When Phase 0 is complete:
 
 ✅ All files know about each other (cross-referenced)  
 ✅ Obsidian vault is live and indexed  
-✅ Graphify shows 58 contacts + 687 ventures + relationships  
+✅ Graphify shows contacts + 712 ventures (595 aligned repos + 258 infrastructure repos + 20 sector agents + 16 sector managers)  
 ✅ RAG system can answer "Who can fill CEO role?"  
 ✅ You've identified 6,000 incoming contacts  
 ✅ Contact capability schema is defined  
@@ -286,4 +293,3 @@ Once you answer these 3 questions, I can:
 - Prepare for your contact enrichment calls
 
 **Sound good?**
-
