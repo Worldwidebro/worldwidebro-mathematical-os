@@ -202,6 +202,109 @@ class FirecrawlBridge:
 
 
 # ============================================================================
+# 2.5. CHROMA VECTOR STORE (Vector embeddings for ventures)
+# ============================================================================
+
+class ChromaBridge:
+    """Vector storage layer for ventures and knowledge graph."""
+
+    def __init__(self):
+        self.client = None
+        self.collection = None
+        self.is_ready = False
+        try:
+            import chromadb
+            self.client = chromadb.CloudClient(
+                api_key=os.getenv('CHROMA_API_KEY'),
+                tenant=os.getenv('CHROMA_TENANT'),
+                database=os.getenv('CHROMA_DATABASE')
+            )
+            self.is_ready = True
+        except Exception as e:
+            print(f"[Chroma] Init error: {e}")
+
+    async def get_collection(self, name: str = 'worldwidebro-ventures'):
+        """Get or create Chroma collection."""
+        if not self.is_ready:
+            return None
+        try:
+            self.collection = self.client.get_or_create_collection(
+                name=name,
+                metadata={"hnsw:space": "cosine"}
+            )
+            return self.collection
+        except Exception as e:
+            print(f"[Chroma] Collection error: {e}")
+            return None
+
+    async def index_venture(self, venture_id: str, venture_data: Dict[str, Any]):
+        """Index venture into vector store."""
+        if not self.collection:
+            await self.get_collection()
+        try:
+            self.collection.add(
+                ids=[venture_id],
+                documents=[json.dumps(venture_data)],
+                metadatas=[{"venture_id": venture_id, "type": "venture"}]
+            )
+            return {"status": "indexed", "venture_id": venture_id}
+        except Exception as e:
+            return {"status": "error", "error": str(e)}
+
+    async def search_ventures(self, query: str, n_results: int = 5) -> List[Dict]:
+        """Vector search across ventures."""
+        if not self.collection:
+            await self.get_collection()
+        try:
+            results = self.collection.query(query_texts=[query], n_results=n_results)
+            return results
+        except Exception as e:
+            return {"status": "error", "error": str(e)}
+
+
+# ============================================================================
+# 2.6. DUCKDB ANALYTICS (SQL analytics on ventures)
+# ============================================================================
+
+class DuckDBBridge:
+    """Analytics layer for SQL queries on ventures."""
+
+    def __init__(self):
+        try:
+            import duckdb
+            import pandas as pd
+            self.db = duckdb.connect(':memory:')
+            self.pd = pd
+            self.is_ready = True
+        except Exception as e:
+            print(f"[DuckDB] Init error: {e}")
+            self.is_ready = False
+
+    async def load_ventures(self, ventures: List[Dict[str, Any]]) -> bool:
+        """Load ventures into DuckDB table."""
+        if not self.is_ready:
+            return False
+        try:
+            df = self.pd.DataFrame(ventures)
+            self.db.register('ventures', df)
+            return True
+        except Exception as e:
+            print(f"[DuckDB] Load error: {e}")
+            return False
+
+    async def query(self, sql: str) -> List[Any]:
+        """Execute SQL query."""
+        if not self.is_ready:
+            return []
+        try:
+            result = self.db.sql(sql).fetchall()
+            return result
+        except Exception as e:
+            print(f"[DuckDB] Query error: {e}")
+            return []
+
+
+# ============================================================================
 # 3. AGENT ORCHESTRATION (Langgraph + CrewAI)
 # ============================================================================
 
@@ -333,6 +436,10 @@ class IZAIntegrationHub:
         # [7] Data ingestion
         self.data_pipeline = DataIngestionPipeline()
 
+        # [8-9] Vector store + Analytics (NEW)
+        self.chroma = ChromaBridge()
+        self.duckdb = DuckDBBridge()
+
         # Register core agents
         self._init_core_agents()
 
@@ -377,14 +484,16 @@ class IZAIntegrationHub:
         startup_log["vllm"] = "running" if vllm_ok else "failed"
         await asyncio.sleep(2)
 
-        # [2-7] Other components ready (async initialization optional)
+        # [2-9] Other components ready (async initialization optional)
         startup_log.update({
             "graphify": "ready",
             "llama_index": "ready",
             "firecrawl": "ready",
             "rag": "ready",
             "agents": f"{len(self.agents.agents)} agents loaded",
-            "memory": "ready"
+            "memory": "ready",
+            "chroma": "ready" if self.chroma.is_ready else "failed",
+            "duckdb": "ready" if self.duckdb.is_ready else "failed"
         })
 
         return startup_log
@@ -465,6 +574,34 @@ class IZAIntegrationHub:
             "rag_indexed": rag_success,
             "memory_stored": True
         }
+
+    async def ingest_ventures(self, ventures: List[Dict[str, Any]]) -> Dict[str, Any]:
+        """Index ventures into Chroma vector store + DuckDB analytics."""
+        # 1. Index ventures into Chroma
+        await self.chroma.get_collection()
+        chroma_results = []
+        for venture in ventures:
+            result = await self.chroma.index_venture(venture.get("id", ""), venture)
+            chroma_results.append(result)
+
+        # 2. Load ventures into DuckDB
+        duckdb_loaded = await self.duckdb.load_ventures(ventures)
+
+        return {
+            "total_ventures": len(ventures),
+            "chroma_indexed": len([r for r in chroma_results if r.get("status") == "indexed"]),
+            "duckdb_loaded": duckdb_loaded
+        }
+
+    async def search_ventures(self, query: str, n_results: int = 5) -> Dict[str, Any]:
+        """Vector search ventures by natural language query."""
+        results = await self.chroma.search_ventures(query, n_results)
+        return {"query": query, "results": results}
+
+    async def analyze_ventures(self, sql: str) -> Dict[str, Any]:
+        """Run SQL analytics on ventures."""
+        results = await self.duckdb.query(sql)
+        return {"sql": sql, "results": results, "row_count": len(results)}
 
     async def query_ecosystem(self, question: str) -> Dict[str, Any]:
         """Query across all systems."""
