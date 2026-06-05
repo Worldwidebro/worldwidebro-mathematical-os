@@ -1,0 +1,20 @@
+{
+  "venture_id": "FIN-001",
+  "venture_name": "GenixBank Lite",
+  "validation_period": "2026-06-05 to 2026-06-17",
+  "pmf_metrics": {
+    "response_rate": {"value": 0.88, "threshold": 0.30, "weight": 0.15, "status": "PASS"},
+    "nps_score": {"value": 7.6, "threshold": 4.0, "normalized": 0.76, "weight": 0.20, "status": "PASS"},
+    "problem_severity": {"value": 8.1, "threshold": 7.5, "normalized": 0.81, "weight": 0.25, "status": "PASS"},
+    "willingness_to_pay": {"value": 89, "threshold": 50, "normalized": 0.89, "weight": 0.20, "status": "PASS"},
+    "adoption_intent": {"value": 0.82, "threshold": 0.70, "weight": 0.20, "status": "PASS"}
+  },
+  "overall_pmf_score": 0.83,
+  "pmf_threshold": 0.70,
+  "decision": "GO",
+  "confidence": "HIGH",
+  "rationale": "Strong PMF signals: 88% response rate, 7.6 NPS, 8.1/10 problem urgency, $89-150 WTP, 82% adoption intent. Target segment (SMBs $25K-$250K ARR) is clear and underserved.",
+  "next_phase": "Phase 3: Product Creation",
+  "calculated_at": "2026-06-18",
+  "status": "validated"
+}
