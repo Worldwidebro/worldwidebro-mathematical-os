@@ -1,0 +1,27 @@
+{
+  "FINTECH": {
+    "momentum": "HIGH",
+    "forecast_30d": "TRENDING_UP",
+    "confidence": 0.85
+  },
+  "EDTECH": {
+    "momentum": "HIGH",
+    "forecast_30d": "TRENDING_UP",
+    "confidence": 0.85
+  },
+  "HEALTHTECH": {
+    "momentum": "HIGH",
+    "forecast_30d": "TRENDING_UP",
+    "confidence": 0.85
+  },
+  "AI_DEVTOOLS": {
+    "momentum": "HIGH",
+    "forecast_30d": "TRENDING_UP",
+    "confidence": 0.85
+  },
+  "SAAS": {
+    "momentum": "HIGH",
+    "forecast_30d": "TRENDING_UP",
+    "confidence": 0.85
+  }
+}
