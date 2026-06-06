@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roadrunner Driver App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f5f5; color: #333; }
@@ -14,7 +16,11 @@
         .stat:last-child { border-bottom: none; }
         .stat-label { color: #666; }
         .stat-value { font-weight: bold; color: #00d84f; font-size: 1.2rem; }
-        .map-container { background: linear-gradient(135deg, #e0e0e0 0%, #f0f0f0 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #999; font-weight: bold; }
+        #map { width: 100%; height: 100%; border-radius: 8px; }
+        .map-wrapper { border-radius: 8px; overflow: hidden; position: relative; background: #eee; }
+        .map-legend { position: absolute; bottom: 1rem; left: 1rem; background: white; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.2); font-size: 0.85rem; }
+        .legend-item { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem; }
+        .legend-dot { width: 12px; height: 12px; border-radius: 50%; }
         .deliveries-list { background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); overflow-y: auto; max-height: calc(100vh - 120px); }
         .delivery-item { padding: 1rem; border-bottom: 1px solid #eee; cursor: pointer; transition: all 0.3s; }
         .delivery-item:hover { background: #f9f9f9; border-left: 4px solid #00d84f; padding-left: calc(1rem - 4px); }
@@ -45,14 +51,20 @@
         .verification-input:focus { outline: none; border-color: #00d84f; }
         @media (max-width: 1024px) {
             .driver-container { grid-template-columns: 1fr; }
-            .map-container { display: none; }
+            .map-wrapper { display: none; }
         }
     </style>
 </head>
 <body>
+    <nav style="background: rgba(0,0,0,0.9); padding: 0.75rem 1.5rem; display: flex; gap: 2rem; position: sticky; top: 0; z-index: 999; border-bottom: 2px solid #00d84f;">
+        <a href="index.html" style="color: white; text-decoration: none; font-weight: bold;">🏠 Customer</a>
+        <a href="admin.html" style="color: white; text-decoration: none; font-weight: bold;">📊 Admin</a>
+        <a href="driver.html" style="color: #00d84f; text-decoration: none; font-weight: bold;">🏃 Driver (Active)</a>
+    </nav>
+
     <div class="driver-container">
         <div class="header">
-            <div>🏃 ROADRUNNER DRIVER</div>
+            <div>🏃 ROADRUNNER DRIVER - CHARLOTTE, NC</div>
             <div>Earnings: <span style="color: #00d84f;">$<span id="earnings">145.60</span></span></div>
         </div>
 
@@ -64,7 +76,15 @@
             <div class="stat"><span class="stat-label">Distance Today</span><span class="stat-value">23.4 mi</span></div>
         </div>
 
-        <div class="map-container">📍 Live GPS Map (Integration Ready)</div>
+        <div class="map-wrapper">
+            <div id="map"></div>
+            <div class="map-legend">
+                <div class="legend-item"><div class="legend-dot" style="background: #00d84f;"></div> Your Location</div>
+                <div class="legend-item"><div class="legend-dot" style="background: #ff6b6b;"></div> Pending</div>
+                <div class="legend-item"><div class="legend-dot" style="background: #ffd93d;"></div> In Progress</div>
+                <div class="legend-item"><div class="legend-dot" style="background: #4caf50;"></div> Completed</div>
+            </div>
+        </div>
 
         <div class="deliveries-list" id="deliveriesList"></div>
 
@@ -76,13 +96,103 @@
 
     <script>
         const deliveries = [
-            { id: 1, customer: "Sarah M.", address: "123 Oak Street, Denver CO", orderId: "RR-001", items: ["OG Kush", "Gummy Pack"], price: 80, eta: "12 mins", status: "in-progress", phone: "(303) 555-0101", rating: 5 },
-            { id: 2, customer: "John D.", address: "456 Pine Ave, Denver CO", orderId: "RR-002", items: ["Sour Diesel"], price: 50, eta: "18 mins", status: "pending", phone: "(303) 555-0102", rating: 4 },
-            { id: 3, customer: "Emma R.", address: "789 Maple Dr, Denver CO", orderId: "RR-003", items: ["Wellness Oil"], price: 55, eta: "25 mins", status: "pending", phone: "(303) 555-0103", rating: 5 },
-            { id: 4, customer: "Alex T.", address: "321 Cedar Lane, Denver CO", orderId: "RR-004", items: ["Live Resin"], price: 65, eta: "10 mins", status: "completed", phone: "(303) 555-0104", rating: 5 }
+            { id: 1, customer: "Sarah M.", address: "123 Trade Street, Charlotte NC", lat: 35.2280, lng: -80.8420, orderId: "RR-001", items: ["OG Kush", "Gummy Pack"], price: 80, eta: "12 mins", status: "in-progress", phone: "(704) 555-0101", rating: 5 },
+            { id: 2, customer: "John D.", address: "456 Tryon Avenue, Charlotte NC", lat: 35.2310, lng: -80.8350, orderId: "RR-002", items: ["Sour Diesel"], price: 50, eta: "18 mins", status: "pending", phone: "(704) 555-0102", rating: 4 },
+            { id: 3, customer: "Emma R.", address: "789 Lexington Drive, Charlotte NC", lat: 35.2180, lng: -80.8200, orderId: "RR-003", items: ["Wellness Oil"], price: 55, eta: "25 mins", status: "pending", phone: "(704) 555-0103", rating: 5 },
+            { id: 4, customer: "Alex T.", address: "321 Poplar Lane, Charlotte NC", lat: 35.2400, lng: -80.8500, orderId: "RR-004", items: ["Live Resin"], price: 65, eta: "10 mins", status: "completed", phone: "(704) 555-0104", rating: 5 }
         ];
 
+        let map;
+        let driverMarker;
+        let deliveryMarkers = [];
+        let polylines = [];
         let currentDelivery = null;
+        let driverLocation = { lat: 35.2271, lng: -80.8431 };
+
+        function latLngToArray(latLng) {
+            return [latLng.lat, latLng.lng];
+        }
+
+        function initMap() {
+            const charlotteCenter = [35.2271, -80.8431];
+            map = L.map('map').setView(charlotteCenter, 13);
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© OpenStreetMap',
+                maxZoom: 19
+            }).addTo(map);
+
+            driverMarker = L.circleMarker(charlotteCenter, {
+                radius: 10,
+                fillColor: '#00d84f',
+                color: '#00b83d',
+                weight: 2,
+                opacity: 1,
+                fillOpacity: 0.8
+            }).addTo(map).bindPopup('🏃 Your Location');
+
+            renderMapMarkers();
+            startLocationTracking();
+        }
+
+        function renderMapMarkers() {
+            deliveryMarkers.forEach(m => map.removeLayer(m));
+            deliveryMarkers = [];
+
+            deliveries.forEach(delivery => {
+                const color = delivery.status === 'pending' ? '#ff6b6b' : delivery.status === 'in-progress' ? '#ffd93d' : '#4caf50';
+                const marker = L.circleMarker([delivery.lat, delivery.lng], {
+                    radius: 8,
+                    fillColor: color,
+                    color: 'white',
+                    weight: 2,
+                    opacity: 1,
+                    fillOpacity: 0.8
+                }).addTo(map).bindPopup(`${delivery.customer}<br>${delivery.orderId}`);
+
+                marker.on('click', () => selectDelivery(delivery.id));
+                deliveryMarkers.push(marker);
+            });
+        }
+
+        function renderRoute(deliveryId) {
+            polylines.forEach(p => map.removeLayer(p));
+            polylines = [];
+
+            const delivery = deliveries.find(d => d.id === deliveryId);
+            if (!delivery) return;
+
+            const routePoints = [driverLocation, [delivery.lat, delivery.lng]];
+            const otherDeliveries = deliveries.filter(d => d.status !== 'completed' && d.id !== deliveryId);
+            otherDeliveries.forEach(d => routePoints.push([d.lat, d.lng]));
+
+            const polyline = L.polyline(routePoints, {
+                color: '#00d84f',
+                weight: 3,
+                opacity: 0.8,
+                dashArray: '5, 5'
+            }).addTo(map);
+
+            map.fitBounds(polyline.getBounds().pad(0.1));
+            polylines.push(polyline);
+        }
+
+        function startLocationTracking() {
+            if ('geolocation' in navigator) {
+                navigator.geolocation.watchPosition((position) => {
+                    const newLat = position.coords.latitude;
+                    const newLng = position.coords.longitude;
+                    driverLocation = { lat: newLat, lng: newLng };
+                    driverMarker.setLatLng([newLat, newLng]);
+                    map.panTo([newLat, newLng]);
+
+                    fetch(`/api/drivers/1/location`, {
+                        method: 'PATCH',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(driverLocation)
+                    });
+                }, { enableHighAccuracy: true, timeout: 5000, maximumAge: 0 });
+            }
+        }
 
         function renderDeliveries() {
             document.getElementById("deliveriesList").innerHTML = deliveries.map(d => `
@@ -90,6 +200,7 @@
                     <div class="delivery-address">${d.address.split(',')[0]}</div>
                     <div class="delivery-customer">📦 ${d.customer}</div>
                     <div class="delivery-time">⏱ ${d.eta}</div>
+                    <div style="font-size: 0.8rem; color: #00d84f; font-weight: bold;">📍 ${getDistance(d).toFixed(1)} mi away</div>
                     <div class="delivery-status">
                         <span>${d.orderId}</span>
                         <span class="status-badge ${d.status === 'completed' ? 'completed' : ''}">${d.status === 'pending' ? 'Ready' : d.status === 'in-progress' ? 'In Route' : 'Delivered'}</span>
@@ -98,9 +209,19 @@
             `).join("");
         }
 
+        function getDistance(delivery) {
+            const R = 3959;
+            const dLat = (delivery.lat - driverLocation.lat) * Math.PI / 180;
+            const dLng = (delivery.lng - driverLocation.lng) * Math.PI / 180;
+            const a = Math.sin(dLat/2) * Math.sin(dLat/2) + Math.cos(driverLocation.lat * Math.PI / 180) * Math.cos(delivery.lat * Math.PI / 180) * Math.sin(dLng/2) * Math.sin(dLng/2);
+            const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+            return R * c;
+        }
+
         function selectDelivery(id) {
             currentDelivery = deliveries.find(d => d.id === id);
             renderDeliveries();
+            renderRoute(id);
             renderDetail();
         }
 
@@ -139,10 +260,15 @@
                 </div>
                 ` : ''}
                 <div class="controls">
-                    <button class="btn-secondary" onclick="alert('📍 Navigating to ' + '${currentDelivery.address}')">📍 Navigate</button>
+                    <button class="btn-secondary" onclick="openNavigation()">📍 Navigate</button>
                     ${currentDelivery.status !== 'completed' ? `<button class="btn-primary" onclick="completeDelivery(${currentDelivery.id})">✓ Deliver</button>` : `<button class="btn-secondary" disabled>✓ Delivered</button>`}
                 </div>
             `;
+        }
+
+        function openNavigation() {
+            const url = `https://www.google.com/maps/dir/?api=1&destination=${currentDelivery.lat},${currentDelivery.lng}`;
+            window.open(url, '_blank');
         }
 
         function completeDelivery(id) {
@@ -152,11 +278,13 @@
             document.getElementById('completed').textContent = completed;
             document.getElementById('inProgress').textContent = 8 - completed;
             document.getElementById('earnings').textContent = (parseFloat(document.getElementById('earnings').textContent) + d.price * 0.25).toFixed(2);
+            renderMapMarkers();
             currentDelivery = null;
             renderDeliveries();
             renderDetail();
         }
 
+        initMap();
         renderDeliveries();
     </script>
 </body>

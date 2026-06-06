@@ -94,6 +94,35 @@ app.get('/api/drivers/:driverId/deliveries', async (req: Request, res: Response)
   }
 });
 
+app.get('/api/drivers/:driverId/location', async (req: Request, res: Response) => {
+  try {
+    const { data, error } = await supabase
+      .from('drivers')
+      .select('latitude, longitude, current_address')
+      .eq('id', req.params.driverId)
+      .single();
+    if (error) throw error;
+    res.json(data || { latitude: 39.7392, longitude: -104.9903 });
+  } catch (err) {
+    res.json({ latitude: 39.7392, longitude: -104.9903 });
+  }
+});
+
+app.patch('/api/drivers/:driverId/location', async (req: Request, res: Response) => {
+  try {
+    const { latitude, longitude } = req.body;
+    const { data, error } = await supabase
+      .from('drivers')
+      .update({ latitude, longitude, updated_at: new Date().toISOString() })
+      .eq('id', req.params.driverId)
+      .select();
+    if (error) throw error;
+    res.json({ success: true });
+  } catch (err) {
+    res.status(500).json({ error: 'Failed to update location' });
+  }
+});
+
 app.patch('/api/orders/:orderId/status', async (req: Request, res: Response) => {
   try {
     const { status, proof } = req.body;

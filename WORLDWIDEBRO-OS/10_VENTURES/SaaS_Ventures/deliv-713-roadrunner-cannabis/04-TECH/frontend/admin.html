@@ -50,7 +50,13 @@
     </style>
 </head>
 <body>
-    <div style="background: #00d84f; color: black; padding: 1.5rem 2rem; font-weight: bold; font-size: 1.3rem; cursor: pointer;" onclick="alert('Dashboard refreshed!')">🏃 ROADRUNNER ADMIN DASHBOARD</div>
+    <nav style="background: rgba(0,0,0,0.9); padding: 0.75rem 1.5rem; display: flex; gap: 2rem; position: sticky; top: 0; z-index: 999; border-bottom: 2px solid #00d84f;">
+        <a href="index.html" style="color: white; text-decoration: none; font-weight: bold;">🏠 Customer</a>
+        <a href="admin.html" style="color: #00d84f; text-decoration: none; font-weight: bold;">📊 Admin (Active)</a>
+        <a href="driver.html" style="color: white; text-decoration: none; font-weight: bold;">🏃 Driver</a>
+    </nav>
+
+    <div style="background: #00d84f; color: black; padding: 1.5rem 2rem; font-weight: bold; font-size: 1.3rem; cursor: pointer;" onclick="alert('Dashboard refreshed!')">🏃 ROADRUNNER ADMIN DASHBOARD - CHARLOTTE, NC</div>
 
     <div id="modal" class="modal">
         <button class="modal-close" onclick="closeModal()">✕</button>
