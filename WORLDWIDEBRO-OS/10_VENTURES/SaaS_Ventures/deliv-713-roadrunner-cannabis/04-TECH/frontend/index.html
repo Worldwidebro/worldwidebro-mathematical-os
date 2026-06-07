@@ -721,18 +721,20 @@
 
         let cart = [];
 
-        let ageVerified = false;
-        let idVerified = false;
+        let verified = false;
 
         function confirmAge() {
-            ageVerified = true;
-            document.getElementById("ageModal").classList.remove("active");
-            document.getElementById("idModal").classList.add("active");
+            verified = true;
+            const ageModal = document.getElementById("ageModal");
+            if (ageModal) {
+                ageModal.style.display = "none";
+            }
+            renderProducts();
+            alert("✅ Welcome to Roadrunner! Age verified.");
         }
 
         function denyAge() {
-            alert("❌ You must be 21 or older to access this service. Thank you for visiting Roadrunner.");
-            window.location.href = "about:blank";
+            alert("❌ You must be 21 or older to access this service.");
         }
 
         function verifyID() {
@@ -741,15 +743,14 @@
                 alert("⚠️ Please upload an ID photo first");
                 return;
             }
-            idVerified = true;
-            document.getElementById("idModal").classList.remove("active");
+            document.getElementById("idModal").style.display = "none";
             renderProducts();
             alert("✅ ID verified! Welcome to Roadrunner.");
         }
 
         function closeIDModal() {
-            document.getElementById("idModal").classList.remove("active");
-            document.getElementById("ageModal").classList.add("active");
+            document.getElementById("idModal").style.display = "none";
+            document.getElementById("ageModal").style.display = "flex";
         }
 
         function updateCartTotal() {
