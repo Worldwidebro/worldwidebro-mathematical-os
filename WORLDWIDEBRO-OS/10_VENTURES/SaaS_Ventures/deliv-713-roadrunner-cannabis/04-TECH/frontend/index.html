@@ -371,7 +371,7 @@
     </style>
 </head>
 <body>
-    <div id="ageModal" class="modal active">
+    <div id="ageModal" class="modal" style="display: none;">
         <div class="modal-content">
             <h2>Age Verification</h2>
             <p>You must be 21 or older to purchase cannabis products.</p>
@@ -868,6 +868,12 @@
                 document.getElementById("trackingResult").style.display = "block";
             }
         }
+
+        // Initialize products on page load (age verification disabled for now)
+        window.addEventListener("load", function() {
+            renderProducts();
+            updateCartTotal();
+        });
     </script>
 </body>
 </html>
