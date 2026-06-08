@@ -424,6 +424,26 @@ Recommendation: Use ta-lib + talipp
 
 ---
 
+## SEMANTIC SEARCH & VECTOR DATABASES
+
+**You're using:**
+- ✅ Chroma (general semantic search, port 9022)
+
+**Adding:**
+- ✅ TurboVec (fast pattern matching - Rust + Python, 5.5K stars)
+  - High-performance vector search with quantization
+  - SIMD acceleration (AVX512, NEON)
+  - Perfect for finding similar trading patterns
+  - Complements Chroma: general search + fast pattern matching
+
+**Use cases:**
+- Find similar historical trading patterns in milliseconds
+- Detect market regime changes (regime similarity search)
+- Fast nearest-neighbor search on order book snapshots
+- Pattern clustering for strategy optimization
+
+---
+
 ## SENTIMENT & ALTERNATIVE DATA
 
 **You're using:**

@@ -212,6 +212,13 @@
 │                                                                                 │
 │  [Can be integrated for advanced analysis]                                     │
 │                                                                                 │
+│  ├─ Chroma (semantic search, port 9022)                                        │
+│  │  └─ General semantic search for market data                                 │
+│  │                                                                             │
+│  ├─ TurboVec (fast vector search - Rust + Python, 5.5K stars) ✅              │
+│  │  └─ Find similar trading patterns historically                              │
+│  │  └─ SIMD acceleration (AVX512/NEON) for fast pattern matching               │
+│  │                                                                             │
 │  ├─ Microsoft Qlib (backtesting + factor research)                             │
 │  │  └─ Historical strategy validation                                          │
 │  │                                                                             │
