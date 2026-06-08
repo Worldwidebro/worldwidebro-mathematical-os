@@ -1,0 +1,216 @@
+{
+  "version": "1.0",
+  "description": "Campaign Factory Registry - Reusable templates, channels, and automation configs",
+  "generated": "2026-06-08",
+  "campaign_templates": {
+    "product_launch": {
+      "id": "tmpl-product-launch",
+      "name": "90-Day Product Drop",
+      "phases": ["build", "warm_up", "launch"],
+      "duration_days": 90,
+      "stages": 12,
+      "default_budget": 5000,
+      "channels": ["social", "email", "content", "community", "partnerships", "ads"],
+      "description": "Coordinated release across all channels with audience warmup and post-launch optimization"
+    },
+    "service_launch": {
+      "id": "tmpl-service-launch",
+      "name": "Service Launch Campaign",
+      "phases": ["positioning", "positioning_content", "lead_gen", "sales"],
+      "duration_days": 60,
+      "stages": 10,
+      "default_budget": 3000,
+      "channels": ["email", "community", "partnerships", "sales"],
+      "description": "B2B/service focused GTM strategy emphasizing cold email and partnerships"
+    },
+    "content_series": {
+      "id": "tmpl-content-series",
+      "name": "Content Series Campaign",
+      "phases": ["planning", "production", "distribution", "engagement"],
+      "duration_days": 30,
+      "stages": 6,
+      "default_budget": 1000,
+      "channels": ["content", "social", "email"],
+      "description": "Educational/entertaining content drop across platforms"
+    }
+  },
+  "campaign_stages": {
+    "stage_1_research": {
+      "name": "Market Research",
+      "duration_days": 5,
+      "deliverables": ["customer_avatar.md", "competitive_analysis.md", "market_opportunity.md"],
+      "agent": "research_agent",
+      "success_criteria": ["avatar_specificity_score > 8", "competitive_gaps_identified"]
+    },
+    "stage_2_positioning": {
+      "name": "Positioning Strategy",
+      "duration_days": 5,
+      "deliverables": ["positioning.md", "uvp.md", "messaging_guide.md"],
+      "agent": "positioning_agent",
+      "success_criteria": ["differentiation_clarity > 8", "messaging_resonance_test > 7"]
+    },
+    "stage_3_offer": {
+      "name": "Offer Stack Design",
+      "duration_days": 7,
+      "deliverables": ["offer.json", "pricing.json", "bonuses.json"],
+      "agent": "offer_agent",
+      "success_criteria": ["offer_clarity > 8", "perceived_value_score > 7"]
+    },
+    "stage_4_branding": {
+      "name": "Brand Assets",
+      "duration_days": 7,
+      "deliverables": ["logo.svg", "colors.json", "typography.json", "brand_guidelines.md"],
+      "agent": "design_agent",
+      "success_criteria": ["visual_consistency_score > 8", "brand_fit_test > 7"]
+    },
+    "stage_5_creative": {
+      "name": "Creative Production",
+      "duration_days": 14,
+      "deliverables": ["videos.zip", "images.zip", "thumbnails.zip", "ad_copy.json"],
+      "agent": "creative_agent",
+      "success_criteria": ["asset_quality_score > 7", "brand_alignment > 8"]
+    },
+    "stage_6_landing": {
+      "name": "Landing Pages",
+      "duration_days": 7,
+      "deliverables": ["lead_capture.html", "sales_page.html", "checkout.html"],
+      "agent": "landing_page_agent",
+      "success_criteria": ["conversion_potential > 3%", "mobile_score > 90"]
+    },
+    "stage_7_email": {
+      "name": "Email Sequences",
+      "duration_days": 7,
+      "deliverables": ["welcome_sequence.json", "launch_sequence.json", "retention.json"],
+      "agent": "email_agent",
+      "success_criteria": ["open_rate_estimate > 30%", "copy_quality_score > 8"]
+    },
+    "stage_8_social": {
+      "name": "Social Content",
+      "duration_days": 10,
+      "deliverables": ["content_calendar.json", "posts.json", "hashtags.json"],
+      "agent": "social_agent",
+      "success_criteria": ["30_day_content_complete", "platform_optimization > 8"]
+    },
+    "stage_9_ads": {
+      "name": "Paid Advertising",
+      "duration_days": 7,
+      "deliverables": ["ad_copy.json", "creative_variations.json", "targeting.json"],
+      "agent": "ads_agent",
+      "success_criteria": ["estimated_ctr > 2%", "roas_estimate > 3x"]
+    },
+    "stage_10_sales": {
+      "name": "Sales & Partnerships",
+      "duration_days": 7,
+      "deliverables": ["sales_script.md", "pitch_deck.pptx", "affiliate_program.json"],
+      "agent": "sales_agent",
+      "success_criteria": ["script_effectiveness_score > 7", "partner_pipeline_created"]
+    },
+    "stage_11_launch": {
+      "name": "Launch Coordination",
+      "duration_days": 3,
+      "deliverables": ["launch_checklist.md", "timeline.json", "comms_plan.md"],
+      "agent": "launch_agent",
+      "success_criteria": ["readiness_score = 100%", "all_stakeholders_aligned"]
+    },
+    "stage_12_analytics": {
+      "name": "Analytics & Measurement",
+      "duration_days": 3,
+      "deliverables": ["dashboard_config.json", "kpi_tracking.json", "reporting_plan.md"],
+      "agent": "analytics_agent",
+      "success_criteria": ["all_kpis_tracked", "attribution_model_set"]
+    }
+  },
+  "channels": {
+    "twitter": {
+      "id": "twitter",
+      "name": "Twitter/X",
+      "frequency": "3x daily",
+      "monthly_volume": 90,
+      "api_type": "rest_api",
+      "requires_approval": false
+    },
+    "email": {
+      "id": "email",
+      "name": "Email Marketing",
+      "frequency": "weekly",
+      "monthly_volume": 4,
+      "api_type": "smtp",
+      "requires_approval": true
+    },
+    "youtube": {
+      "id": "youtube",
+      "name": "YouTube",
+      "frequency": "2x weekly",
+      "monthly_volume": 8,
+      "api_type": "youtube_api",
+      "requires_approval": true
+    },
+    "instagram": {
+      "id": "instagram",
+      "name": "Instagram",
+      "frequency": "2x daily",
+      "monthly_volume": 60,
+      "api_type": "graph_api",
+      "requires_approval": false
+    },
+    "linkedin": {
+      "id": "linkedin",
+      "name": "LinkedIn",
+      "frequency": "1x daily",
+      "monthly_volume": 20,
+      "api_type": "rest_api",
+      "requires_approval": false
+    }
+  },
+  "agents": {
+    "research_agent": {
+      "role": "Market analysis & customer research",
+      "inputs": ["industry", "target_market", "competitor_list"],
+      "outputs": ["customer_avatar", "competitive_positioning"],
+      "model": "claude-opus-4-8",
+      "tools": ["web_search", "data_analysis"]
+    },
+    "positioning_agent": {
+      "role": "Strategy & messaging framework",
+      "inputs": ["customer_research", "product_info", "competitive_analysis"],
+      "outputs": ["uvp", "messaging_guide"],
+      "model": "claude-opus-4-8",
+      "tools": ["strategy_framework", "copywriting"]
+    },
+    "design_agent": {
+      "role": "Visual identity & branding",
+      "inputs": ["positioning", "brand_values", "industry_trends"],
+      "outputs": ["color_palette", "typography", "moodboard"],
+      "model": "claude-opus-4-8",
+      "tools": ["design_generation", "image_generation"]
+    },
+    "creative_agent": {
+      "role": "Content & creative production",
+      "inputs": ["messaging", "offer", "visual_identity"],
+      "outputs": ["video_scripts", "ad_creative", "thumbnails"],
+      "model": "claude-opus-4-8",
+      "tools": ["content_generation", "image_generation"]
+    },
+    "social_agent": {
+      "role": "Social media content calendar",
+      "inputs": ["messaging", "creative_assets", "platforms"],
+      "outputs": ["content_calendar", "platform_posts"],
+      "model": "claude-opus-4-8",
+      "tools": ["content_generation", "platform_optimization"]
+    },
+    "email_agent": {
+      "role": "Email sequences & automation",
+      "inputs": ["positioning", "customer_journey", "offers"],
+      "outputs": ["email_sequences", "automation_flows"],
+      "model": "claude-opus-4-8",
+      "tools": ["copywriting", "email_templates"]
+    },
+    "analytics_agent": {
+      "role": "Measurement & KPI tracking",
+      "inputs": ["success_metrics", "channels", "conversion_paths"],
+      "outputs": ["analytics_config", "dashboard_setup"],
+      "model": "claude-opus-4-8",
+      "tools": ["analytics_setup", "data_tracking"]
+    }
+  }
+}
