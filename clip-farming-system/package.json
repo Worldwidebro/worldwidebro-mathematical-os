@@ -1,0 +1,13 @@
+{
+  "name": "clip-farming-system",
+  "version": "1.0.0",
+  "description": "Automated clip farming for 712 ventures",
+  "main": "orchestrator.js",
+  "scripts": {
+    "test": "node test-layer-4.js",
+    "test:layer4": "node layers/4-detection.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.20.0"
+  }
+}
