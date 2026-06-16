@@ -7,22 +7,22 @@ date: June 2026
 
 # WORLDWIDEBRO 30-DAY EXECUTION GUIDE
 
-## Complete Task Breakdown: All 3 Options
+## Complete Task Breakdown: All 3 Options + Global Location Intelligence
 
 **Timeline:** June 12 - July 9, 2026  
-**Total Investment:** 15-18 hours  
-**Expected Outcome:** Established ecosystem + clarity + live revenue system
+**Total Investment:** 17-21 hours (includes new location/real estate/repo integration)  
+**Expected Outcome:** Established ecosystem + location intelligence + real estate opportunities + clarity + live revenue system
 
 ---
 
-# OPTION 3: ECOSYSTEM MAPPING (WEEK 1)
+# OPTION 3: ECOSYSTEM MAPPING + LOCATION INTELLIGENCE (WEEK 1)
 
 ## Overview
-Build relationships across 15 stakeholder layers. Establish foundation for capital, permits, partnerships.
+Build relationships across 15 stakeholder layers + scout location opportunities + identify deployment-ready repos.  Establish foundation for capital, permits, partnerships, global strategy.
 
 **Timeline:** Monday Jun 12 - Friday Jun 18  
-**Total Time:** 6-8 hours  
-**Deliverable:** Ecosystem relationship map + gap analysis
+**Total Time:** 8-10 hours (includes new location/real estate/repo tasks)  
+**Deliverable:** Ecosystem relationship map + location intelligence + real estate opportunities + repository assets
 
 ---
 
@@ -102,7 +102,30 @@ Build relationships across 15 stakeholder layers. Establish foundation for capit
   - [ ] Professional Liability: $__/month
 - [ ] Recommended policy: _____________
 
-**Wednesday Total:** 2h | **Cumulative:** 4h 40m
+#### Task 3.15: Scout Real Estate in Top 2 Hubs ⏱️ 45 min (NEW - LOCATION)
+- [ ] Hub 1 (Remote Work): Lisbon, Chiang Mai, or Mexico City
+  - [ ] Cost of living estimate: $__________/month
+  - [ ] Real estate market price: $__________ per sqm
+  - [ ] Rental yield: __________% gross
+  - [ ] Visa/residency option: Y/N Type: __________
+- [ ] Hub 2 (Manufacturing): Vietnam, Mexico, or Poland
+  - [ ] Labor cost: $__________ per worker/month
+  - [ ] Real estate (factory): $__________ per sqm
+  - [ ] Port access: Y/N Distance: __________
+  - [ ] Business-friendly: Y/N
+- [ ] Top location choice: __________
+- [ ] Real estate contact: Name: __________ Phone: __________
+
+#### Task 3.16: Research Auction Platforms & Deal Flow ⏱️ 30 min (NEW - AUCTIONS)
+- [ ] Portuguese auctions (CPRA): Explored Y/N
+- [ ] Bank foreclosures (PT/MX): Explored Y/N
+- [ ] US government auctions (GSA): Explored Y/N
+- [ ] Bulk property platforms: Explored Y/N
+- [ ] Typical discount: __________% below market
+- [ ] Example deal found: Name __________ Price __________ Potential __________
+- [ ] Alerts created: Y/N How many? _____
+
+**Wednesday Total:** 3h 15m | **Cumulative:** 5h 55m
 
 ---
 
@@ -130,7 +153,23 @@ Build relationships across 15 stakeholder layers. Establish foundation for capit
 - [ ] Online communities: __________
 - [ ] Cost: $ __________ /month
 
-**Thursday Total:** 2h | **Cumulative:** 6h 40m
+#### Task 3.17: Query Repositories Relevant to Your Ventures ⏱️ 45 min (NEW - REPOS)
+- [ ] Access REPOSITORY-REGISTRY.json: Y/N
+- [ ] Search for repos by venture type:
+  - [ ] Service/staffing: Found _____ repos
+  - [ ] CRM/team tools: Found _____ repos
+  - [ ] Content tools: Found _____ repos
+  - [ ] Automation/Loops: Found _____ repos
+- [ ] Top 5 repos to use immediately:
+  1. Name: __________ Purpose: __________ Ready: Y/N
+  2. Name: __________ Purpose: __________ Ready: Y/N
+  3. Name: __________ Purpose: __________ Ready: Y/N
+  4. Name: __________ Purpose: __________ Ready: Y/N
+  5. Name: __________ Purpose: __________ Ready: Y/N
+- [ ] Repos needing customization: _____ count
+- [ ] Repos to build custom: _____ count
+
+**Thursday Total:** 2h 45m | **Cumulative:** 8h 40m
 
 ---
 
@@ -152,13 +191,23 @@ Build relationships across 15 stakeholder layers. Establish foundation for capit
 - [ ] Equity or revenue share? __________
 - [ ] Draft initial framework: Yes / No
 
+#### Task 3.18: Identify Visa & Residency Requirements ⏱️ 30 min (NEW)
+- [ ] Hub 1 visa type: __________ Duration: __________ Cost: $__
+- [ ] Hub 2 visa type: __________ Team options: __________
+- [ ] Visa consultant: Y/N Name: __________
+
+#### Task 3.19: Create Location Comparison Matrix ⏱️ 45 min (NEW)
+- [ ] Matrix completed: Cost, ecosystem, visa, yield, repos, timezone, tax
+- [ ] Recommended location: __________
+- [ ] Relocation timeline: __________
+
 #### Create Ecosystem Map ⏱️ 60 min
-- [ ] Document all relationships established
+- [ ] Document all relationships + location + real estate + repos
 - [ ] Identify gaps: _____________
 - [ ] Prioritize next connections: _____________
 - [ ] Rate readiness: 1-10: ___
 
-**Friday Total:** 2.5h | **Cumulative:** 9h 10m
+**Friday Total:** 3h 20m | **Cumulative:** 12h
 
 ---
 
@@ -178,10 +227,15 @@ By end of Friday Jun 18:
 - [ ] Business networks identified
 - [ ] Supplier relationships negotiated
 - [ ] Operator framework drafted
-- [ ] Ecosystem map created (shows all 15 layers)
+- [ ] **Real estate scouting completed for 2 hubs (NEW)**
+- [ ] **Auction platform research completed (NEW)**
+- [ ] **Top 5 deployment-ready repos identified (NEW)**
+- [ ] **Visa/residency options researched (NEW)**
+- [ ] **Location comparison matrix created (NEW)**
+- [ ] Ecosystem map created (shows all 15 layers + locations + repos)
 - [ ] Gaps identified and prioritized
 
-**Week 1 Status:** Ecosystem mapped, relationships established, capital pathway clear
+**Week 1 Status:** Ecosystem mapped + location intelligence + real estate opportunities + repository assets identified
 
 ---
 

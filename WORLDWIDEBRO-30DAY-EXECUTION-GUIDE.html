@@ -10,6 +10,152 @@
     /* Default styles provided by pandoc.
     ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
     */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      white-space: pre-wrap;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
     span.smallcaps{font-variant: small-caps;}
     div.columns{display: flex; gap: min(4vw, 1.5em);}
     div.column{flex: auto; overflow-x: auto;}
@@ -25,8 +171,6 @@
     }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
-  <link rel="stylesheet" href="/dev/null" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2" />
 </head>
 <body>
 <header id="title-block-header">
@@ -41,13 +185,14 @@
 id="toc-worldwidebro-30-day-execution-guide">WORLDWIDEBRO 30-DAY
 EXECUTION GUIDE</a>
 <ul>
-<li><a href="#complete-task-breakdown-all-3-options"
-id="toc-complete-task-breakdown-all-3-options">Complete Task Breakdown:
-All 3 Options</a></li>
+<li><a
+href="#complete-task-breakdown-all-3-options-global-location-intelligence"
+id="toc-complete-task-breakdown-all-3-options-global-location-intelligence">Complete
+Task Breakdown: All 3 Options + Global Location Intelligence</a></li>
 </ul></li>
-<li><a href="#option-3-ecosystem-mapping-week-1"
-id="toc-option-3-ecosystem-mapping-week-1">OPTION 3: ECOSYSTEM MAPPING
-(WEEK 1)</a>
+<li><a href="#option-3-ecosystem-mapping-location-intelligence-week-1"
+id="toc-option-3-ecosystem-mapping-location-intelligence-week-1">OPTION
+3: ECOSYSTEM MAPPING + LOCATION INTELLIGENCE (WEEK 1)</a>
 <ul>
 <li><a href="#overview" id="toc-overview">Overview</a></li>
 <li><a href="#week-1-schedule" id="toc-week-1-schedule">Week 1
@@ -167,22 +312,27 @@ id="toc-critical-success-factors">Critical Success Factors</a></li>
 </nav>
 <h1 id="worldwidebro-30-day-execution-guide">WORLDWIDEBRO 30-DAY
 EXECUTION GUIDE</h1>
-<h2 id="complete-task-breakdown-all-3-options">Complete Task Breakdown:
-All 3 Options</h2>
+<h2
+id="complete-task-breakdown-all-3-options-global-location-intelligence">Complete
+Task Breakdown: All 3 Options + Global Location Intelligence</h2>
 <p><strong>Timeline:</strong> June 12 - July 9, 2026<br />
-<strong>Total Investment:</strong> 15-18 hours<br />
-<strong>Expected Outcome:</strong> Established ecosystem + clarity +
-live revenue system</p>
+<strong>Total Investment:</strong> 17-21 hours (includes new
+location/real estate/repo integration)<br />
+<strong>Expected Outcome:</strong> Established ecosystem + location
+intelligence + real estate opportunities + clarity + live revenue
+system</p>
 <hr />
-<h1 id="option-3-ecosystem-mapping-week-1">OPTION 3: ECOSYSTEM MAPPING
-(WEEK 1)</h1>
+<h1 id="option-3-ecosystem-mapping-location-intelligence-week-1">OPTION
+3: ECOSYSTEM MAPPING + LOCATION INTELLIGENCE (WEEK 1)</h1>
 <h2 id="overview">Overview</h2>
-<p>Build relationships across 15 stakeholder layers. Establish
-foundation for capital, permits, partnerships.</p>
+<p>Build relationships across 15 stakeholder layers + scout location
+opportunities + identify deployment-ready repos. Establish foundation
+for capital, permits, partnerships, global strategy.</p>
 <p><strong>Timeline:</strong> Monday Jun 12 - Friday Jun 18<br />
-<strong>Total Time:</strong> 6-8 hours<br />
-<strong>Deliverable:</strong> Ecosystem relationship map + gap
-analysis</p>
+<strong>Total Time:</strong> 8-10 hours (includes new location/real
+estate/repo tasks)<br />
+<strong>Deliverable:</strong> Ecosystem relationship map + location
+intelligence + real estate opportunities + repository assets</p>
 <hr />
 <h2 id="week-1-schedule">Week 1 Schedule</h2>
 <h3 id="monday-jun-12">MONDAY (Jun 12)</h3>
@@ -313,8 +463,60 @@ $__/month</label></li>
 <li><label><input type="checkbox" />Recommended policy:
 _____________</label></li>
 </ul>
-<p><strong>Wednesday Total:</strong> 2h | <strong>Cumulative:</strong>
-4h 40m</p>
+<h4
+id="task-3.15-scout-real-estate-in-top-2-hubs-45-min-new---location">Task
+3.15: Scout Real Estate in Top 2 Hubs ⏱️ 45 min (NEW - LOCATION)</h4>
+<ul class="task-list">
+<li><label><input type="checkbox" />Hub 1 (Remote Work): Lisbon, Chiang
+Mai, or Mexico City</label>
+<ul class="task-list">
+<li><label><input type="checkbox" />Cost of living estimate:
+$__________/month</label></li>
+<li><label><input type="checkbox" />Real estate market price:
+$__________ per sqm</label></li>
+<li><label><input type="checkbox" />Rental yield: __________%
+gross</label></li>
+<li><label><input type="checkbox" />Visa/residency option: Y/N Type:
+__________</label></li>
+</ul></li>
+<li><label><input type="checkbox" />Hub 2 (Manufacturing): Vietnam,
+Mexico, or Poland</label>
+<ul class="task-list">
+<li><label><input type="checkbox" />Labor cost: $__________ per
+worker/month</label></li>
+<li><label><input type="checkbox" />Real estate (factory): $__________
+per sqm</label></li>
+<li><label><input type="checkbox" />Port access: Y/N Distance:
+__________</label></li>
+<li><label><input type="checkbox" />Business-friendly: Y/N</label></li>
+</ul></li>
+<li><label><input type="checkbox" />Top location choice:
+__________</label></li>
+<li><label><input type="checkbox" />Real estate contact: Name:
+__________ Phone: __________</label></li>
+</ul>
+<h4
+id="task-3.16-research-auction-platforms-deal-flow-30-min-new---auctions">Task
+3.16: Research Auction Platforms &amp; Deal Flow ⏱️ 30 min (NEW -
+AUCTIONS)</h4>
+<ul class="task-list">
+<li><label><input type="checkbox" />Portuguese auctions (CPRA): Explored
+Y/N</label></li>
+<li><label><input type="checkbox" />Bank foreclosures (PT/MX): Explored
+Y/N</label></li>
+<li><label><input type="checkbox" />US government auctions (GSA):
+Explored Y/N</label></li>
+<li><label><input type="checkbox" />Bulk property platforms: Explored
+Y/N</label></li>
+<li><label><input type="checkbox" />Typical discount: __________% below
+market</label></li>
+<li><label><input type="checkbox" />Example deal found: Name __________
+Price __________ Potential __________</label></li>
+<li><label><input type="checkbox" />Alerts created: Y/N How many?
+_____</label></li>
+</ul>
+<p><strong>Wednesday Total:</strong> 3h 15m |
+<strong>Cumulative:</strong> 5h 55m</p>
 <hr />
 <h3 id="thursday-jun-15">THURSDAY (Jun 15)</h3>
 <h4 id="task-3.11-software-tools-setup-30-min">Task 3.11: Software Tools
@@ -358,8 +560,41 @@ __________</label></li>
 <li><label><input type="checkbox" />Cost: $ __________
 /month</label></li>
 </ul>
-<p><strong>Thursday Total:</strong> 2h | <strong>Cumulative:</strong> 6h
-40m</p>
+<h4
+id="task-3.17-query-repositories-relevant-to-your-ventures-45-min-new---repos">Task
+3.17: Query Repositories Relevant to Your Ventures ⏱️ 45 min (NEW -
+REPOS)</h4>
+<ul class="task-list">
+<li><label><input type="checkbox" />Access REPOSITORY-REGISTRY.json:
+Y/N</label></li>
+<li><label><input type="checkbox" />Search for repos by venture
+type:</label>
+<ul class="task-list">
+<li><label><input type="checkbox" />Service/staffing: Found _____
+repos</label></li>
+<li><label><input type="checkbox" />CRM/team tools: Found _____
+repos</label></li>
+<li><label><input type="checkbox" />Content tools: Found _____
+repos</label></li>
+<li><label><input type="checkbox" />Automation/Loops: Found _____
+repos</label></li>
+</ul></li>
+<li><label><input type="checkbox" />Top 5 repos to use
+immediately:</label>
+<ol type="1">
+<li>Name: __________ Purpose: __________ Ready: Y/N</li>
+<li>Name: __________ Purpose: __________ Ready: Y/N</li>
+<li>Name: __________ Purpose: __________ Ready: Y/N</li>
+<li>Name: __________ Purpose: __________ Ready: Y/N</li>
+<li>Name: __________ Purpose: __________ Ready: Y/N</li>
+</ol></li>
+<li><label><input type="checkbox" />Repos needing customization: _____
+count</label></li>
+<li><label><input type="checkbox" />Repos to build custom: _____
+count</label></li>
+</ul>
+<p><strong>Thursday Total:</strong> 2h 45m |
+<strong>Cumulative:</strong> 8h 40m</p>
 <hr />
 <h3 id="friday-jun-18">FRIDAY (Jun 18)</h3>
 <h4 id="task-3.10-supplier-negotiation-45-min">Task 3.10: Supplier
@@ -391,10 +626,30 @@ __________</label></li>
 <li><label><input type="checkbox" />Draft initial framework: Yes /
 No</label></li>
 </ul>
+<h4 id="task-3.18-identify-visa-residency-requirements-30-min-new">Task
+3.18: Identify Visa &amp; Residency Requirements ⏱️ 30 min (NEW)</h4>
+<ul class="task-list">
+<li><label><input type="checkbox" />Hub 1 visa type: __________
+Duration: __________ Cost: $__</label></li>
+<li><label><input type="checkbox" />Hub 2 visa type: __________ Team
+options: __________</label></li>
+<li><label><input type="checkbox" />Visa consultant: Y/N Name:
+__________</label></li>
+</ul>
+<h4 id="task-3.19-create-location-comparison-matrix-45-min-new">Task
+3.19: Create Location Comparison Matrix ⏱️ 45 min (NEW)</h4>
+<ul class="task-list">
+<li><label><input type="checkbox" />Matrix completed: Cost, ecosystem,
+visa, yield, repos, timezone, tax</label></li>
+<li><label><input type="checkbox" />Recommended location:
+__________</label></li>
+<li><label><input type="checkbox" />Relocation timeline:
+__________</label></li>
+</ul>
 <h4 id="create-ecosystem-map-60-min">Create Ecosystem Map ⏱️ 60 min</h4>
 <ul class="task-list">
-<li><label><input type="checkbox" />Document all relationships
-established</label></li>
+<li><label><input type="checkbox" />Document all relationships +
+location + real estate + repos</label></li>
 <li><label><input type="checkbox" />Identify gaps:
 _____________</label></li>
 <li><label><input type="checkbox" />Prioritize next connections:
@@ -402,8 +657,8 @@ _____________</label></li>
 <li><label><input type="checkbox" />Rate readiness: 1-10:
 ___</label></li>
 </ul>
-<p><strong>Friday Total:</strong> 2.5h | <strong>Cumulative:</strong> 9h
-10m</p>
+<p><strong>Friday Total:</strong> 3h 20m | <strong>Cumulative:</strong>
+12h</p>
 <hr />
 <h2 id="option-3-completion-checklist">OPTION 3 COMPLETION
 CHECKLIST</h2>
@@ -431,13 +686,24 @@ identified</label></li>
 negotiated</label></li>
 <li><label><input type="checkbox" />Operator framework
 drafted</label></li>
+<li><label><input type="checkbox" /><strong>Real estate scouting
+completed for 2 hubs (NEW)</strong></label></li>
+<li><label><input type="checkbox" /><strong>Auction platform research
+completed (NEW)</strong></label></li>
+<li><label><input type="checkbox" /><strong>Top 5 deployment-ready repos
+identified (NEW)</strong></label></li>
+<li><label><input type="checkbox" /><strong>Visa/residency options
+researched (NEW)</strong></label></li>
+<li><label><input type="checkbox" /><strong>Location comparison matrix
+created (NEW)</strong></label></li>
 <li><label><input type="checkbox" />Ecosystem map created (shows all 15
-layers)</label></li>
+layers + locations + repos)</label></li>
 <li><label><input type="checkbox" />Gaps identified and
 prioritized</label></li>
 </ul>
-<p><strong>Week 1 Status:</strong> Ecosystem mapped, relationships
-established, capital pathway clear</p>
+<p><strong>Week 1 Status:</strong> Ecosystem mapped + location
+intelligence + real estate opportunities + repository assets
+identified</p>
 <hr />
 <h1 id="option-1-current-state-analysis-week-2">OPTION 1: CURRENT STATE
 ANALYSIS (WEEK 2)</h1>

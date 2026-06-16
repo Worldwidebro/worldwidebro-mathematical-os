@@ -242,6 +242,113 @@
 
 ---
 
+## REAL ESTATE + LOCATION LAYER
+
+### Task 3.15: Scout Real Estate in Top 2 Location Hubs
+- [ ] Hub 1 (Remote Work): Research Lisbon, Chiang Mai, or Mexico City
+  - [ ] Cost of living estimate: $__________/month
+  - [ ] Real estate market price: $__________ per sqm residential
+  - [ ] Rental yield: __________% gross
+  - [ ] Visa/residency option available: Y/N Type: __________
+- [ ] Hub 2 (Manufacturing): Research Vietnam, Mexico, or Poland
+  - [ ] Labor cost: $__________ per skilled worker/month
+  - [ ] Real estate (factory space): $__________ per sqm
+  - [ ] Port access: Y/N Distance: __________
+  - [ ] Visa/residency: Y/N Business-friendly: Y/N
+- [ ] Top location pick for research: __________
+- [ ] Contact 1 local real estate agent: Name: __________ Phone: __________
+**Time:** 45 min | **Priority:** HIGH | **Deadline:** Wed
+
+**Notes:**
+[Your notes here]
+
+---
+
+### Task 3.16: Research Auction Platforms & Deal Flow
+- [ ] Portuguese auctions (CPRA): https://www.venderentregalo.pt/ | Explored: Y/N
+- [ ] Bank foreclosures (Portugal/Mexico): [Names] __________
+- [ ] US government auctions (GSA): https://www.gsa.gov/ | Explored: Y/N
+- [ ] PropertyShark or similar bulk deal platforms: Y/N
+- [ ] Typical discount from market value: __________% 
+- [ ] Example deal found (name, price, potential): __________
+- [ ] Alerts/saved searches created: Y/N How many? _____
+**Time:** 30 min | **Priority:** MEDIUM | **Deadline:** Wed
+
+**Notes:**
+[Your notes here]
+
+---
+
+### Task 3.17: Query Repositories Relevant to Your Ventures
+- [ ] Access REPOSITORY-REGISTRY.json: Y/N
+- [ ] Search for repos by venture type:
+  - [ ] Service/staffing ventures: Found _____ repos (examples: ____)
+  - [ ] CRM/team management: Found _____ repos (examples: ____)
+  - [ ] Content creation tools: Found _____ repos (examples: ____)
+  - [ ] Automation (Loops, n8n alternatives): Found _____ repos
+- [ ] Top 5 repos to use immediately:
+  1. [Name]: __________ Purpose: __________ Ready to deploy: Y/N
+  2. [Name]: __________ Purpose: __________ Ready to deploy: Y/N
+  3. [Name]: __________ Purpose: __________ Ready to deploy: Y/N
+  4. [Name]: __________ Purpose: __________ Ready to deploy: Y/N
+  5. [Name]: __________ Purpose: __________ Ready to deploy: Y/N
+- [ ] Repos needing customization: _____ count
+- [ ] Repos to build custom: _____ count
+**Time:** 45 min | **Priority:** HIGH | **Deadline:** Thu
+
+**Notes:**
+[Your notes here]
+
+---
+
+### Task 3.18: Identify Visa & Residency Requirements
+- [ ] For Hub 1 (Remote Work Location):
+  - [ ] Visa type: __________ (Digital nomad? Tourist? Residency?)
+  - [ ] Duration possible: __________ months/years
+  - [ ] Cost: $__________
+  - [ ] Application process: _________________________________________
+  - [ ] Documentation needed: _________________________________________
+- [ ] For Hub 2 (Manufacturing Location):
+  - [ ] Business visa type: __________
+  - [ ] Team visa options: __________
+  - [ ] Residency path: __________
+  - [ ] Tax residency implications: __________
+- [ ] Professional visa consultant contacted: Y/N Name: __________
+- [ ] Residency plan drafted: Y/N
+**Time:** 30 min | **Priority:** MEDIUM | **Deadline:** Fri
+
+**Notes:**
+[Your notes here]
+
+---
+
+### Task 3.19: Create Location Comparison Matrix
+Build a comparison table for top 3 location options:
+
+| Factor | Hub 1 (____) | Hub 2 (____) | Current (____) |
+|--------|--------------|--------------|----------------|
+| Cost of living | $ | $ | $ |
+| Startup ecosystem | 1-5 | 1-5 | 1-5 |
+| Visa ease | Y/N | Y/N | N/A |
+| Real estate yield | __% | __% | __% |
+| Repos available | ___ | ___ | ___ |
+| Venture fit | __% | __% | __% |
+| Time zone | UTC | UTC | UTC |
+| Internet quality | Mbps | Mbps | Mbps |
+| Tax efficiency | Good/Med/Poor | Good/Med/Poor | Good/Med/Poor |
+| **Overall score** | __/100 | __/100 | __/100 |
+
+- [ ] Matrix completed with all factors scored
+- [ ] Recommended location identified: __________
+- [ ] Reason for recommendation: __________________________________________
+- [ ] Timeline for potential relocation: __________
+**Time:** 45 min | **Priority:** MEDIUM | **Deadline:** Fri
+
+**Notes:**
+[Your notes here]
+
+---
+
 ## SUMMARY COMPLETION CHECKLIST
 
 ### Critical Path (Must Complete This Week)
@@ -254,6 +361,8 @@
 - [ ] Task 3.8: CPA consultation scheduled
 - [ ] Task 3.9: Insurance review
 - [ ] Task 3.11: Software tools setup
+- [ ] Task 3.15: Real estate scouting (NEW)
+- [ ] Task 3.17: Repository mapping (NEW)
 
 ### Important (Complete by Friday)
 - [ ] Task 3.6: Vendor credit exploration
@@ -261,6 +370,9 @@
 - [ ] Task 3.12: CRM setup
 - [ ] Task 3.13: Operator recruitment framework
 - [ ] Task 3.14: Community network
+- [ ] Task 3.16: Auction platform research (NEW)
+- [ ] Task 3.18: Visa/residency requirements (NEW)
+- [ ] Task 3.19: Location comparison matrix (NEW)
 
 ---
 
@@ -302,6 +414,12 @@ Technology
 Community
 ├── Networks: [List] Status: [Joined?]
 └── Next event: [Date/Type]
+
+Real Estate + Location (NEW)
+├── Hub 1 (Remote): [Location] Cost: $[/mo] Yield: [%] Visa: [Type]
+├── Hub 2 (Manufacturing): [Location] Labor: $[/mo] Port: [Y/N]
+├── Auction deals: [Count] Average discount: [%]
+└── Top repos: [Count] Deployment ready: [Count]
 ```
 
 ---
@@ -312,8 +430,8 @@ Community
 - [ ] Critical path relationships are established or scheduled
 - [ ] Next steps are clear
 
-**Total Time Investment:** 6-8 hours across the week  
-**Expected Outcome:** Clear picture of which relationships exist, which need building, what's the highest priority
+**Total Time Investment:** 8-10 hours across the week (includes new location/real estate/repo tasks)  
+**Expected Outcome:** Clear picture of which relationships exist, which need building, what's highest priority + location intelligence + real estate opportunities + repository assets available
 
 ---
 
