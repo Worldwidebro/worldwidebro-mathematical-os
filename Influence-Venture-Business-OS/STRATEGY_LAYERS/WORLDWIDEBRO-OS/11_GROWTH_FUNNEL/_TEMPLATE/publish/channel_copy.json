@@ -1,0 +1,32 @@
+{
+  "venture_id": "{{venture_id}}",
+  "venture_code": "{{venture_code}}",
+  "channels": {
+    "youtube_shorts": {
+      "tof": {
+        "title_template": "{{hook}} | {{brand}}",
+        "description_template": "{{script}}\n\nFollow for more.",
+        "hashtags": ["#shorts", "#construction", "#{{venture_code}}"]
+      },
+      "mof": {
+        "title_template": "How {{brand}} works in 3 steps",
+        "description_template": "{{script}}\n\n{{cta}}",
+        "hashtags": ["#construction", "#demo"]
+      },
+      "bof": {
+        "title_template": "{{cta}} | {{brand}}",
+        "description_template": "{{script}}\n\nBook below.",
+        "hashtags": ["#contractor", "#saas"]
+      }
+    },
+    "instagram_reels": {
+      "caption_max_chars": 2200,
+      "tof_hook_first_line": true,
+      "cta": "Link in bio"
+    },
+    "linkedin": {
+      "mof_preferred": true,
+      "tone": "professional, metric-led"
+    }
+  }
+}

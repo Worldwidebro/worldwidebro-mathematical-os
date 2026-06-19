@@ -16,6 +16,18 @@ Documentation, analysis, and management guides.
 - [[docs/OPTION-D-FINAL-DEPLOYMENT]]
 - [[docs/COMPLETE-EXECUTION-SPEED-RUN]]
 
+## Obsidian Integration (3 GitHub Plugins)
+- [[../../OBSIDIAN-ALIGNMENT-PLAN]]
+- [[../../OBSIDIAN-GRAPH-STATUS]]
+- [[../../WORLDWIDEBRO-OS/07-KNOWLEDGE/research/OBSIDIAN-LINKING-STRATEGY-2026-06-11]]
+
+## Repository Intelligence System
+- [[../../INFRASTRUCTURE_LAYERS/REPOSITORY-INTELLIGENCE-SYSTEM]]
+- [[../../INFRASTRUCTURE_LAYERS/REPOSITORY-ANALYSIS-VOCABULARY]]
+- [[REPO-LAYER-STRATEGY]]
+- [[REPO-CLASSIFICATION-PHASE2-REPORT]]
+- [[analysis/AI-OPPORTUNITIES-BY-VENTURE]]
+
 ## Analysis & Reporting
 - [[analysis/alignment_completion_report]]
 - [[analysis/construction_analysis]]

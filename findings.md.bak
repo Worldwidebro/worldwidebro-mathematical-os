@@ -1,0 +1,85 @@
+# Repo + Capability Registry — Analysis Findings
+
+**Last Updated:** 2026-06-11 20:48  
+**Phase:** 1-4 Complete
+
+---
+
+## Major Discovery
+
+**The Core Problem:** 700+ starred repos contain the EXACT capabilities our 1504 ventures need, but they're not:
+- Installed in our system
+- Wired together
+- Configured to work with our ventures
+- Available to our codebase
+
+**Result:** Files can't understand each other because they're missing the bridge capabilities.
+
+**The Solution:** Wire together 31 repos from our starred collection to provide 7 core capabilities.
+
+---
+
+## Capability Analysis
+
+### Available from Starred Repos (Phase 1: URGENT)
+
+| Capability | Venture Demand | Repos Available | Action |
+|------------|----------------|-----------------|--------|
+| **API** | 618 ventures | 14 repos | **ADOPT** — Wire 2-3 best repos |
+| **Database** | 618 ventures | 6 repos | **ADOPT** — Choose primary repo |
+| **Authentication** | 511 ventures | 2 repos | **ADOPT** — Integrate both |
+| **Dashboard** | 389 ventures | 3 repos | **ADOPT** — Select best-fit |
+| **Monitoring** | 320 ventures | 5 repos | **ADOPT** — Wire observation layer |
+| **Portfolio** | 209 ventures | 1 repo | **ADOPT** — Single repo, configure |
+| **Security** | 157 ventures | 1 repo | **ADOPT** — Single repo, harden |
+
+**Total:** 31 repos to integrate across 7 capabilities
+
+### Missing from Starred Repos (Phase 2: BUILD)
+
+| Capability | Venture Demand | Action |
+|------------|----------------|--------|
+| **Workspace** | 104 ventures | BUILD OUR OWN — Venture collaboration platform |
+
+### Nice-to-Have Enhancements (Phase 3: EXTEND)
+
+| Capability | Venture Demand | Notes |
+|------------|----------------|-------|
+| **Knowledge Graph** | 72 ventures | We're building this (already LIVE!) |
+| **Payment Processing** | 47 ventures | Optional for early ventures |
+| **Construction** (sector-specific) | 20 ventures | Only needed for construction sector |
+
+---
+
+## Current System State
+
+| Component | Status | Details |
+|-----------|--------|---------|
+| **Knowledge Graph** | ✅ LIVE | 3072 entities, 3023 relationships, Obsidian dashboard |
+| **Repos Inventory** | ✅ MAPPED | 700 starred + 6 owned repos catalogued |
+| **Capability Taxonomy** | ✅ EXTRACTED | 11 core capability types, 1276 total repo capabilities |
+| **Venture Requirements** | ✅ EXTRACTED | 618 ventures with capability needs |
+| **Gap Analysis** | ✅ COMPLETE | 7 adoptable capabilities, 1 build, 3 extend |
+| **Files Wiring** | ❌ NOT YET | Ready to execute Phase 1 adoption |
+
+---
+
+## Next Steps to Enable Company Building
+
+1. **Phase 1 (This Week):** Wire 31 starred repos across 7 capabilities
+   - Creates unified API layer
+   - Connects all databases
+   - Implements security + auth
+   - Enables dashboards + monitoring
+
+2. **Phase 2 (Next Week):** Build workspace platform (104 ventures need it)
+   - Venture collaboration layer
+   - Shared resource management
+   - Team communication
+
+3. **Phase 3 (Week 3+):** Enhance with knowledge-graph + payments
+   - Knowledge graph integration (already have foundation)
+   - Payment processing (for monetization)
+   - Sector-specific extensions
+
+**Result:** System will be cohesive, files will understand each other, ready to build 712 ventures.

@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "description": "Agent roster for TOF → MOF → BOF funnel automation",
+  "agents": [
+    {
+      "id": "audience-agent",
+      "stage": "foundation",
+      "role": "Segmentation, ICP, pain/desire/trigger documentation",
+      "prompt": "PROMPTS/audience-agent.md",
+      "outputs": ["00_FOUNDATION/audience.md"],
+      "kpis": ["icp_clarity_score", "segment_count"]
+    },
+    {
+      "id": "brand-agent",
+      "stage": "foundation",
+      "role": "Positioning, tone, visual system, cross-stage consistency",
+      "prompt": "PROMPTS/brand-agent.md",
+      "outputs": ["00_FOUNDATION/brand_identity.md"],
+      "kpis": ["brand_consistency_pass"]
+    },
+    {
+      "id": "tof-viral-agent",
+      "stage": "tof",
+      "role": "Viral hooks, contrarian angles, 5–20s attention content",
+      "prompt": "PROMPTS/tof-viral-agent.md",
+      "outputs": ["01_TOF/hooks.md", "01_TOF/scripts/*.json"],
+      "kpis": ["views", "shares", "saves", "profile_ctr"]
+    },
+    {
+      "id": "mof-proof-agent",
+      "stage": "mof",
+      "role": "Demos, walkthroughs, case studies, before/after",
+      "prompt": "PROMPTS/mof-proof-agent.md",
+      "outputs": ["02_MOF/demos.md", "02_MOF/case_studies.md", "02_MOF/scripts/*.json"],
+      "kpis": ["watch_time", "site_visits", "email_signups"]
+    },
+    {
+      "id": "bof-conversion-agent",
+      "stage": "bof",
+      "role": "Offers, guarantees, objection handling, social proof stacks",
+      "prompt": "PROMPTS/bof-conversion-agent.md",
+      "outputs": ["03_BOF/offers.md", "03_BOF/testimonials.md", "03_BOF/scripts/*.json"],
+      "kpis": ["conversion_rate", "close_rate", "cac"]
+    },
+    {
+      "id": "distribution-agent",
+      "stage": "publish",
+      "role": "Channel-native copy, landing specs, upload metadata",
+      "prompt": "PROMPTS/content-pack-generator.md",
+      "outputs": ["publish/channel_copy.json", "publish/landing_page.spec.md"],
+      "kpis": ["publish_sla", "channel_fit_score"]
+    },
+    {
+      "id": "hook-agent",
+      "stage": "tof",
+      "role": "Generate and rank 20 hooks, return top 5–10",
+      "prompt": "PROMPTS/hook-agent.md",
+      "outputs": ["01_TOF/hooks.md", "gf_content_hooks"],
+      "kpis": ["hooks_generated", "top_hook_score"],
+      "schedule": "monday_9am,sunday_6pm"
+    },
+    {
+      "id": "analytics-agent",
+      "stage": "all",
+      "role": "Pull analytics, rank content, weekly reports, promotion triggers",
+      "prompt": "PROMPTS/analytics-agent.md",
+      "outputs": ["gf_analytics_snapshots", "gf_weekly_reports"],
+      "kpis": ["viral_score", "conversion_score"],
+      "schedule": "saturday_12pm,daily_24h"
+    },
+    {
+      "id": "weekly-prep-agent",
+      "stage": "prep",
+      "role": "Sunday batch: hooks, ideas, scripts, Monday prefetch",
+      "prompt": "PROMPTS/weekly-prep-agent.md",
+      "outputs": ["next_week_ideas.json", "gf_publish_queue"],
+      "kpis": ["prefetch_complete"],
+      "schedule": "sunday_6pm"
+    }
+  ],
+  "default_routing": {
+    "foundation": ["audience-agent", "brand-agent"],
+    "tof": ["tof-viral-agent", "brand-agent"],
+    "mof": ["mof-proof-agent", "brand-agent"],
+    "bof": ["bof-conversion-agent", "brand-agent"],
+    "publish": ["distribution-agent"]
+  }
+}

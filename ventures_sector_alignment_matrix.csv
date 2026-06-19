@@ -1,0 +1,18 @@
+Sector_16,Venture_Count,Pct_of_Total,Top_Venture_Types,Strategic_Priority
+Software-Tech,189,50.8%,"QuantumLedger, Civilization OS, Credit Repair Automation",🔴 CRITICAL
+E-Commerce,38,10.2%,"Business Template Marketplace, Costume Shop Ai, Personal Shopper Ai",🔴 CRITICAL
+Education,32,8.6%,"SkillForge, Job Training Center, Youth Entrepreneurship Curriculum",🟡 HIGH
+Operations,24,6.5%,"Budget Forecasting Ai, Dropship Hub, Workflow Automation",🟡 HIGH
+Community,23,6.2%,"Fulfillment Network Ai, Network Security Ai, Social Studies Ai",🟡 HIGH
+Technology,19,5.1%,"CogniFlow, Cybersecurity Shield, Smart Home Ai",🟡 HIGH
+Financial,14,3.8%,"Tax Intelligence Platform, U Haul Rental Affiliate, Crypto Tax Optimizer",🟡 MEDIUM
+Beauty-Wellness,10,2.7%,"Financial Wellness Coach, Community Wellness Ai, Workspace Design Ai",🟢 LOW
+Logistics,6,1.6%,"Ai Warehouse Management, Ai Logistics Planner, Ai Shipping Labeler",🟡 MEDIUM
+Media-Content,5,1.3%,"Ugc Content Aggregator, Content Studio Ai, Synthetic Media Ai",🟢 LOW
+Professional-Services,4,1.1%,"Business Formation Services, Recruitment Ai, Legal Document Ai",🟡 MEDIUM
+Fitness-Sports,3,0.8%,"VitalSense, Public Fitness Ai, Youth Sports Ai",🟢 LOW
+Construction,2,0.5%,"Business Credit Building, Peacebuilding Ai",🟢 LOW
+Specialized,1,0.3%,Chatbot Customer Service,🟢 LOW
+Food-Hospitality,1,0.3%,Ace Food Security Ai,🟢 LOW
+Emerging,1,0.3%,Youth Innovation Hub,🟢 LOW
+TOTAL,372,100%,,

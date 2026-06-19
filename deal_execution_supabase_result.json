@@ -1,0 +1,72 @@
+{
+  "deal_id": "DEL-20260616184426",
+  "title": "Build E-Commerce Platform",
+  "deal_value": 100000,
+  "originator_id": "contact-sarah-chen",
+  "operator_id": "contact-alex-rodriguez",
+  "capital_provider_id": "contact-venture-fund",
+  "deal_status": "closed",
+  "created_at": "2026-06-16T18:44:26.051935",
+  "splits": {
+    "costs": 40000.0,
+    "referral": 10000.0,
+    "operator": 35000.0,
+    "platform": 10000.0,
+    "profit_buffer": 5000.0
+  },
+  "contracts": [
+    {
+      "deal_id": "DEL-20260616184426",
+      "type": "referral",
+      "recipient": "contact-sarah-chen",
+      "amount": 10000.0
+    },
+    {
+      "deal_id": "DEL-20260616184426",
+      "type": "execution",
+      "recipient": "contact-alex-rodriguez",
+      "amount": 35000.0
+    },
+    {
+      "deal_id": "DEL-20260616184426",
+      "type": "platform",
+      "recipient": "PLATFORM",
+      "amount": 10000.0
+    }
+  ],
+  "workflow": {
+    "deal_id": "DEL-20260616184426",
+    "status": "queued"
+  },
+  "payments": [
+    {
+      "deal_id": "DEL-20260616184426",
+      "recipient": "contact-sarah-chen",
+      "role": "originator",
+      "amount": 10000.0
+    },
+    {
+      "deal_id": "DEL-20260616184426",
+      "recipient": "contact-alex-rodriguez",
+      "role": "operator",
+      "amount": 35000.0
+    },
+    {
+      "deal_id": "DEL-20260616184426",
+      "recipient": "PLATFORM",
+      "role": "platform",
+      "amount": 10000.0
+    }
+  ],
+  "reputation_updates": {
+    "contact-sarah-chen": {
+      "reliability_change": 5,
+      "payment_change": 5
+    },
+    "contact-alex-rodriguez": {
+      "reliability_change": 0,
+      "payment_change": 5
+    }
+  },
+  "completed_at": "2026-06-16T18:44:26.051943"
+}

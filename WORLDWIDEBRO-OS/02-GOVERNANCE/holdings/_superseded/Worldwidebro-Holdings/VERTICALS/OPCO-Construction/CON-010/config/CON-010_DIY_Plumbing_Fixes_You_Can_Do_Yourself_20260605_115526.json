@@ -1,0 +1,24 @@
+{
+  "task_id": "CON-010_DIY_Plumbing_Fixes_You_Can_Do_Yourself_20260605_115526",
+  "video_subject": "DIY Plumbing Fixes You Can Do Yourself",
+  "video_script": "Quick tutorial on simple plumbing fixes: unclogging drains\n                with baking soda, fixing leaky faucets, adjusting water pressure,\n                preventing frozen pipes. When to call a professional.",
+  "video_size": "9:16",
+  "duration": 45,
+  "language": "en",
+  "voice": "female_natural",
+  "bgm": "random",
+  "bgm_volume": 0.4,
+  "subtitle": {
+    "font": "Microsoft YaHei",
+    "size": 40,
+    "color": "#FFFFFF",
+    "stroke_color": "#000000",
+    "stroke_width": 1.5,
+    "style": "modern"
+  },
+  "concurrent_num": 2,
+  "llm_provider": "aihubmix",
+  "video_source": "pexels",
+  "output_path": "/Users/acebless/Documents/moneyprinter-output/videos/CON-010",
+  "webhook_url": null
+}

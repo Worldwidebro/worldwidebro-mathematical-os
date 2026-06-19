@@ -1,0 +1,10 @@
+# Feature toggles — safe defaults for local bootstrap
+
+langgraph_agents: false
+temporal_workflows: false
+kafka_events: true
+neo4j_graph_sync: false
+risk_engine_gate: true
+crewai_sector_crews: true
+live_llm_calls: false
+grafana_dashboards: false

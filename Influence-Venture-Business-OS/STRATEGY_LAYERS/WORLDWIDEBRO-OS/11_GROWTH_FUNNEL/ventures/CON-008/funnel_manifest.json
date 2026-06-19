@@ -1,0 +1,36 @@
+{
+  "venture_id": "64df5998-36bb-4801-beb3-34088ab4bb3c",
+  "venture_code": "CON-008",
+  "venture_name": "CON-008 Site Inspection Tech",
+  "sector": "con",
+  "created_at": "2026-06-05T19:19:21.039676",
+  "stages": [
+    "foundation",
+    "tof",
+    "mof",
+    "bof",
+    "retention"
+  ],
+  "agents": {
+    "foundation": [
+      "audience-agent",
+      "brand-agent"
+    ],
+    "tof": [
+      "tof-viral-agent",
+      "brand-agent"
+    ],
+    "mof": [
+      "mof-proof-agent",
+      "brand-agent"
+    ],
+    "bof": [
+      "bof-conversion-agent",
+      "brand-agent"
+    ],
+    "publish": [
+      "distribution-agent"
+    ]
+  },
+  "output_video_dir": "/Users/acebless/Documents/moneyprinter-output/64df5998-36bb-4801-beb3-34088ab4bb3c"
+}

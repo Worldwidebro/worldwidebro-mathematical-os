@@ -1,0 +1,114 @@
+{
+  "organization": {
+    "name": "Worldwidebro Holdings",
+    "description": "Go-to-Market execution system for 687 ventures",
+    "created_at": "2026-05-15T15:02:46.370816"
+  },
+  "sectors": {
+    "fintech": {
+      "name": "Financial Technology",
+      "color": "#1E40AF",
+      "ventures": [
+        {
+          "id": "dd78dc7f-ab6a-4c1f-9405-b0cbd827ae0d",
+          "name": "QuantumLedger",
+          "description": "Core decentralized ledger and smart contract code for fintech",
+          "sector": "fintech",
+          "status": "active"
+        },
+        {
+          "id": "a4edc8b5-1635-4e87-85eb-bfcc9e168697",
+          "name": "Tax Intelligence Platform",
+          "description": "AI-powered tax preparation and intelligence platform",
+          "sector": "fintech",
+          "status": "active"
+        }
+      ],
+      "count": 2
+    },
+    "ai": {
+      "name": "Artificial Intelligence",
+      "color": "#7C3AED",
+      "ventures": [
+        {
+          "id": "fbf1cfaf-d3e5-413e-9880-5e6944cd3cf5",
+          "name": "CogniFlow",
+          "description": "AI-powered workflow management and orchestration platform",
+          "sector": "ai",
+          "status": "active"
+        }
+      ],
+      "count": 1
+    },
+    "edtech": {
+      "name": "Education Technology",
+      "color": "#DC2626",
+      "ventures": [
+        {
+          "id": "4f3bc116-b77f-4b3a-a9f6-a3327a21762d",
+          "name": "SkillForge",
+          "description": "AI-powered learning platform with automated course creation",
+          "sector": "edtech",
+          "status": "active"
+        }
+      ],
+      "count": 1
+    },
+    "health": {
+      "name": "Healthcare",
+      "color": "#059669",
+      "ventures": [
+        {
+          "id": "484ac493-c394-4ca1-aa18-e514a8844312",
+          "name": "VitalSense",
+          "description": "Wearable health monitoring system with real-time analytics",
+          "sector": "health",
+          "status": "active"
+        }
+      ],
+      "count": 1
+    },
+    "infra": {
+      "name": "Infrastructure",
+      "color": "#0891B2",
+      "ventures": [
+        {
+          "id": "65bcab5b-f1b9-425c-963a-674db3c88f2e",
+          "name": "Civilization OS",
+          "description": "Master orchestrator managing 245 repos, 553 AI agents, 100+ ventures",
+          "sector": "infra",
+          "status": "active"
+        }
+      ],
+      "count": 1
+    },
+    "market": {
+      "name": "Marketplace",
+      "color": "#F59E0B",
+      "ventures": [
+        {
+          "id": "e43ada0c-5456-42a0-b676-4b45e962ccb0",
+          "name": "Business Template Marketplace",
+          "description": "487+ AI-powered business templates with automated generation",
+          "sector": "market",
+          "status": "active"
+        }
+      ],
+      "count": 1
+    },
+    "devtools": {
+      "name": "Developer Tools",
+      "color": "#6366F1",
+      "ventures": [
+        {
+          "id": "b9c1c9a3-5927-480c-857d-6b99be35254b",
+          "name": "Enhanced Cursor Rules",
+          "description": "487+ comprehensive Cursor rules for AI development",
+          "sector": "devtools",
+          "status": "active"
+        }
+      ],
+      "count": 1
+    }
+  }
+}

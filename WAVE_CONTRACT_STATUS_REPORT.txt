@@ -1,0 +1,21 @@
+WAVE RIDESHARE CONTRACTOR ENGAGEMENT
+Date: June 4, 2026
+Interview: June 5, 2026
+
+READ TONIGHT:
+- 00_INTERVIEW_PREP/WAVE_RESEARCH.md (10 min)
+- 00_INTERVIEW_PREP/VALUE_PROPOSITION.md (5 min)
+- 00_INTERVIEW_PREP/INTERVIEW_QUESTIONS.md (5 min)
+- 00_INTERVIEW_PREP/INTERVIEW_STORIES.md (60 min - write + practice)
+
+KEY MESSAGES:
+Opening: "I focus on understanding what you're trying to solve, building reliable solutions, and making sure your team can maintain them."
+
+Core: "I take unclear requirements, organize them into a plan, communicate expectations, build the solution, document it, and deliver something your team can maintain and scale."
+
+Closing: "I'm excited about Wave's mission. Looking forward to learning more."
+
+STATUS: INTERVIEW READY ✅
+Repository: https://github.com/Worldwidebro/YES-LLC-CONTRACTOR-DELIVERY
+
+Good luck tomorrow!

@@ -1,0 +1,147 @@
+{
+  "export_date": "2026-06-13",
+  "export_source": "Team Space (90132724037)",
+  "summary": {
+    "total_ventures": 73,
+    "total_tasks_to_delete": 100,
+    "note": "Some ventures have duplicates (different task IDs, same venture)"
+  },
+  "ventures_by_list": {
+    "finance": {
+      "list_id": "901326879687",
+      "ventures": [
+        {
+          "venture_id": "FIN-001",
+          "name": "Genixbank Lite",
+          "task_ids": ["86agy6nrg", "86agy6mjm"]
+        },
+        {
+          "venture_id": "FIN-006",
+          "name": "Tax Prep Filing Services",
+          "task_ids": ["86agy6nr6", "86agy6mj2"]
+        },
+        {
+          "venture_id": "FIN-009",
+          "name": "Crypto Tax Optimizer",
+          "task_ids": ["86agy6nqy", "86agy6mhf"]
+        },
+        {
+          "venture_id": "FIN-021",
+          "name": "Tax Deduction Finder",
+          "task_ids": ["86agy6nqn", "86agy6mgu"]
+        },
+        {
+          "venture_id": "FIN-033",
+          "name": "Legal Toolkit AI",
+          "task_ids": ["86agy6nqe", "86agy6mgd"]
+        }
+      ]
+    },
+    "engines": {
+      "list_id": "901326879688",
+      "ventures": [
+        {
+          "venture_id": "ARBITRAGE-001",
+          "name": "Arbitrage Nexus",
+          "task_ids": ["86agy6mfq"]
+        }
+      ]
+    },
+    "construction": {
+      "list_id": "901326893091",
+      "ventures": [
+        {
+          "venture_id": "CON-001",
+          "name": "Ace Construction",
+          "task_ids": ["86agy6mfe"]
+        }
+      ]
+    },
+    "beauty_wellness": {
+      "list_id": "901326879708",
+      "ventures": [
+        {"venture_id": "BW-001", "name": "Up Next Marketplace", "task_ids": ["86agy6mf1"]},
+        {"venture_id": "BW-002", "name": "Mobile Lash Service", "task_ids": ["86agy6mer"]},
+        {"venture_id": "BW-003", "name": "Luxury Lash Bar", "task_ids": ["86agy6me4"]},
+        {"venture_id": "BW-004", "name": "Lash Training Academy", "task_ids": ["86agy6mdm"]},
+        {"venture_id": "BW-005", "name": "Lash Supply Company", "task_ids": ["86agy6md9"]},
+        {"venture_id": "BW-006", "name": "Lash Glue Brand", "task_ids": ["86agy6mcr"]},
+        {"venture_id": "BW-007", "name": "Lash Kits & Tools", "task_ids": ["86agy6mcc"]},
+        {"venture_id": "BW-008", "name": "Private Label Lashes", "task_ids": ["86agy6mc2"]},
+        {"venture_id": "BW-009", "name": "Franchise Lash Salons", "task_ids": ["86agy6mbp"]},
+        {"venture_id": "BW-010", "name": "Online Lash Education", "task_ids": ["86agy6mb6"]},
+        {"venture_id": "BW-011", "name": "Nail Salon", "task_ids": ["86agy6mak"]},
+        {"venture_id": "BW-012", "name": "Mobile Nail Tech", "task_ids": ["86agy6m9n"]},
+        {"venture_id": "BW-013", "name": "Luxury Nail Spa", "task_ids": ["86agy6m8x"]},
+        {"venture_id": "BW-014", "name": "Press On Nail Brand", "task_ids": ["86agy6m83"]},
+        {"venture_id": "BW-015", "name": "Nail Art Studio", "task_ids": ["86agy6m7e"]},
+        {"venture_id": "BW-016", "name": "Nail Polish Brand", "task_ids": ["86agy6m6x"]},
+        {"venture_id": "BW-017", "name": "Nail Care Products", "task_ids": ["86agy6m6m"]},
+        {"venture_id": "BW-018", "name": "Nail Booking Marketplace", "task_ids": ["86agy6m5z"]},
+        {"venture_id": "BW-019", "name": "Salon Management Software", "task_ids": ["86agy6m51"]},
+        {"venture_id": "BW-020", "name": "AI Nail Design Generator", "task_ids": ["86agy6m3r"]},
+        {"venture_id": "BW-021", "name": "Hair Salon", "task_ids": ["86agy6m2d"]},
+        {"venture_id": "BW-022", "name": "Barbershop", "task_ids": ["86agy6m1t"]},
+        {"venture_id": "BW-023", "name": "Mobile Hairstyling", "task_ids": ["86agy6m18"]},
+        {"venture_id": "BW-024", "name": "Hair Braiding Studio", "task_ids": ["86agy6m0b"]},
+        {"venture_id": "BW-025", "name": "Wig Installation Studio", "task_ids": ["86agy6kzw"]},
+        {"venture_id": "BW-026", "name": "Hair Extension Salon", "task_ids": ["86agy6kzb"]},
+        {"venture_id": "BW-027", "name": "Hair Care Line", "task_ids": ["86agy6kyv"]},
+        {"venture_id": "BW-028", "name": "Wig Brand", "task_ids": ["86agy6kyb"]},
+        {"venture_id": "BW-029", "name": "Hair Extensions Brand", "task_ids": ["86agy6kxp"]},
+        {"venture_id": "BW-030", "name": "Scalp Treatment Products", "task_ids": ["86agy6kx0"]},
+        {"venture_id": "BW-031", "name": "Hair Marketplace", "task_ids": ["86agy6kwd"]},
+        {"venture_id": "BW-032", "name": "Stylist Booking Platform", "task_ids": ["86agy6kvt"]},
+        {"venture_id": "BW-033", "name": "AI Hairstyle Simulator", "task_ids": ["86agy6kve"]},
+        {"venture_id": "BW-034", "name": "Salon Franchise Chain", "task_ids": ["86agy6ktx"]},
+        {"venture_id": "BW-035", "name": "Makeup Studio", "task_ids": ["86agy6kt6"]},
+        {"venture_id": "BW-036", "name": "Bridal Makeup Service", "task_ids": ["86agy6krd"]},
+        {"venture_id": "BW-037", "name": "Mobile Makeup Artist", "task_ids": ["86agy6kqm"]},
+        {"venture_id": "BW-038", "name": "Photoshoot Makeup Team", "task_ids": ["86agy6kq7"]},
+        {"venture_id": "BW-039", "name": "Cosmetics Brand", "task_ids": ["86agy6kpm"]},
+        {"venture_id": "BW-040", "name": "Beauty Tools Brand", "task_ids": ["86agy6kp8"]}
+      ]
+    },
+    "community": {
+      "list_id": "901326879707",
+      "ventures": [
+        {"venture_id": "COMM-001", "name": "Luminary Worldwide Events", "task_ids": ["86agy6kyk", "86agy6knp"]},
+        {"venture_id": "COMM-002", "name": "Brotherhood Coaching Network", "task_ids": ["86agy6kxm", "86agy6kn2"]},
+        {"venture_id": "COMM-003", "name": "Ace Senior Care Connect", "task_ids": ["86agy6kuz", "86agy6km5"]},
+        {"venture_id": "COMM-004", "name": "Community Outreach Nonprofit", "task_ids": ["86agy6ku6", "86agy6kkk"]},
+        {"venture_id": "COMM-005", "name": "Ace Food Security AI", "task_ids": ["86agy6kt1", "86agy6kjz"]},
+        {"venture_id": "COMM-006", "name": "Community Technology Access AI", "task_ids": ["86agy6kre", "86agy6kjg"]},
+        {"venture_id": "COMM-007", "name": "Youth Leadership AI", "task_ids": ["86agy6kr4", "86agy6khw"]},
+        {"venture_id": "COMM-008", "name": "Community Fundraising AI", "task_ids": ["86agy6kqr", "86agy6kgr"]},
+        {"venture_id": "COMM-009", "name": "Volunteer Hub AI", "task_ids": ["86agy6kqa", "86agy6kgc"]},
+        {"venture_id": "COMM-010", "name": "Disaster Relief AI", "task_ids": ["86agy6kpv", "86agy6kgn", "86agy6ked"]},
+        {"venture_id": "COMM-011", "name": "Indigenous Creator Hub", "task_ids": ["86agy6kph", "86agy6kg8", "86agy6kdk"]},
+        {"venture_id": "COMM-012", "name": "Black Art Museum AI", "task_ids": ["86agy6kp6", "86agy6kf8", "86agy6kcp"]},
+        {"venture_id": "COMM-013", "name": "Women S Empowerment Network", "task_ids": ["86agy6knv", "86agy6kee", "86agy6kbr"]},
+        {"venture_id": "COMM-014", "name": "Veterans Support AI", "task_ids": ["86agy6knf", "86agy6kdm"]},
+        {"venture_id": "COMM-015", "name": "Youth Mentorship Program", "task_ids": ["86agy6kn5", "86agy6kck"]},
+        {"venture_id": "COMM-016", "name": "Community Health AI", "task_ids": ["86agy6kmk", "86agy6kbm"]},
+        {"venture_id": "COMM-017", "name": "Local Business Directory", "task_ids": ["86agy6kkx", "86agy6kaz"]},
+        {"venture_id": "COMM-018", "name": "Neighborhood Watch AI", "task_ids": ["86agy6kk9"]},
+        {"venture_id": "COMM-019", "name": "Community Garden AI", "task_ids": ["86agy6kj0"]},
+        {"venture_id": "COMM-020", "name": "Public Transportation AI", "task_ids": ["86agy6kh7"]},
+        {"venture_id": "COMM-021", "name": "Housing Assistance AI", "task_ids": ["86agy6kgb"]},
+        {"venture_id": "COMM-022", "name": "Job Training Center", "task_ids": ["86agy6kfv"]},
+        {"venture_id": "COMM-023", "name": "Elder Companion AI", "task_ids": ["86agy6kep"]},
+        {"venture_id": "COMM-024", "name": "Youth Sports AI", "task_ids": ["86agy6ke6"]},
+        {"venture_id": "COMM-025", "name": "Community Legal Aid", "task_ids": ["86agy6kch"]},
+        {"venture_id": "COMM-026", "name": "Public Education AI", "task_ids": ["86agy6kc0"]},
+        {"venture_id": "COMM-027", "name": "Local Government AI", "task_ids": ["86agy6kbd"]}
+      ]
+    }
+  },
+  "bulk_delete_instructions": {
+    "step_1": "Go to Team Space in ClickUp",
+    "step_2": "View the 5 lists: Finance, Engines, Construction, Beauty-Wellness, Community",
+    "step_3": "Select all venture tasks (use checkboxes or bulk select feature)",
+    "step_4": "Use ClickUp bulk actions menu: More → Delete",
+    "step_5": "Confirm deletion",
+    "step_6": "Verify Team Space is clean and only agent/employee work remains"
+  },
+  "next_phase": "Step 3: Batch create ventures in AI Boss Hub organized by sector folder"
+}

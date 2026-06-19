@@ -52,22 +52,17 @@ def insert_repos():
     print("[*] Inserting 7 Repo entities into graph_entities...")
     inserted = 0
     for repo_id, repo_data in REPOS.items():
-        sql = f"""
-        INSERT INTO graph_entities (entity_id, entity_type, display_name, description, metadata, created_at)
-        VALUES (
-            '{repo_id}',
-            'Repo',
-            '{repo_id}',
-            '{repo_data["description"].replace("'", "''")}',
-            '{{"owner": "{repo_data["owner"]}", "type": "{repo_data["type"]}"}}'::jsonb,
-            NOW()
-        )
-        ON CONFLICT (entity_id) DO NOTHING;
-        """
+        payload = {
+            "name": repo_id,
+            "entity_type": "Repo",
+            "description": repo_data["description"],
+            "metadata": {"owner": repo_data["owner"], "type": repo_data["type"]},
+            "venture_id": None
+        }
         result = subprocess.run(
-            ["curl", "-s", "-X", "POST", f"{SUPABASE_URL}/rest/v1/rpc/exec_sql",
+            ["curl", "-s", "-X", "POST", f"{SUPABASE_URL}/rest/v1/graph_entities",
              "-H", f"apikey: {SUPABASE_KEY}", "-H", "Content-Type: application/json",
-             "-d", json.dumps({"sql": sql})],
+             "-d", json.dumps(payload)],
             capture_output=True, text=True
         )
         if result.returncode == 0:

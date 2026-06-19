@@ -1,0 +1,232 @@
+{
+  "workflows": [
+    {
+      "name": "Daily Briefing",
+      "trigger": "schedule",
+      "schedule": "0 8 * * *",
+      "description": "Generate daily briefing for Layer 1",
+      "steps": [
+        {
+          "id": "1",
+          "type": "duckdb",
+          "action": "query",
+          "sql": "SELECT venture_id, name, sector, revenue_ytd, status FROM ventures WHERE updated_at > NOW() - INTERVAL 24 HOUR ORDER BY updated_at DESC"
+        },
+        {
+          "id": "2",
+          "type": "duckdb",
+          "action": "query",
+          "sql": "SELECT sector, SUM(CAST(revenue_ytd AS FLOAT)) as total_revenue FROM ventures WHERE status='active' GROUP BY sector"
+        },
+        {
+          "id": "3",
+          "type": "claude",
+          "agent": "Briefer",
+          "prompt": "Generate daily briefing: new ventures, sector performance, health alerts, capital summary. Be concise (< 500 words).",
+          "input": ["venture_updates", "sector_revenue"]
+        },
+        {
+          "id": "4",
+          "type": "slack",
+          "action": "send",
+          "channel": "#briefing",
+          "message": "{{ step3.output }}"
+        }
+      ]
+    },
+    {
+      "name": "New Venture Ingest",
+      "trigger": "webhook",
+      "webhook": "/ventures/new",
+      "description": "Classify and index new ventures",
+      "steps": [
+        {
+          "id": "1",
+          "type": "receive",
+          "input": "venture_data"
+        },
+        {
+          "id": "2",
+          "type": "claude",
+          "agent": "Classifier",
+          "prompt": "Classify venture: sector, stage, business_model, layer, health_score (1-100), top_risks. Return JSON.",
+          "input": ["venture_data"]
+        },
+        {
+          "id": "3",
+          "type": "slack",
+          "action": "approval",
+          "message": "Classified: {{ venture_data.name }}. Sector: {{ step2.sector }}. Approve?"
+        },
+        {
+          "id": "4",
+          "type": "conditional",
+          "if": "approval_approved",
+          "then": "step5",
+          "else": "request_changes"
+        },
+        {
+          "id": "5",
+          "type": "duckdb",
+          "action": "insert",
+          "table": "ventures",
+          "data": "{{ step2.output }}"
+        },
+        {
+          "id": "6",
+          "type": "chroma",
+          "action": "index",
+          "venture_id": "{{ venture_data.id }}",
+          "content": "{{ step2.summary }}"
+        }
+      ]
+    },
+    {
+      "name": "Weekly Advisor Report",
+      "trigger": "schedule",
+      "schedule": "0 9 * * 1",
+      "description": "Capital allocation recommendations",
+      "steps": [
+        {
+          "id": "1",
+          "type": "duckdb",
+          "action": "query",
+          "sql": "SELECT venture_id, name, sector, health_score, cac, ltv, revenue_ytd FROM ventures WHERE status='active'"
+        },
+        {
+          "id": "2",
+          "type": "claude",
+          "agent": "Advisor",
+          "prompt": "Recommend: Kill (LTV<CAC*2 or churn>15%), Double Down (health>70, growing), Watch (40-70).",
+          "input": ["ventures"]
+        },
+        {
+          "id": "3",
+          "type": "email",
+          "to": "{{ owner_email }}",
+          "subject": "Weekly Advisor Report",
+          "body": "{{ step2.output }}"
+        }
+      ]
+    },
+    {
+      "name": "Data Collection",
+      "trigger": "manual",
+      "description": "Assign data collection tasks to contractors",
+      "steps": [
+        {
+          "id": "1",
+          "type": "slack",
+          "action": "send_task",
+          "user": "{{ contractor }}",
+          "task": "Collect {{ data_type }} for {{ entities }}",
+          "due": "{{ deadline }}"
+        },
+        {
+          "id": "2",
+          "type": "wait",
+          "event": "form_submitted"
+        },
+        {
+          "id": "3",
+          "type": "claude",
+          "agent": "Classifier",
+          "prompt": "Validate submission: required fields present, types correct, values reasonable.",
+          "input": ["submission"]
+        },
+        {
+          "id": "4",
+          "type": "conditional",
+          "if": "step3.valid",
+          "then": "store_data",
+          "else": "return_to_contractor"
+        },
+        {
+          "id": "5",
+          "type": "duckdb",
+          "action": "update",
+          "table": "ventures",
+          "data": "{{ step2.submission }}"
+        }
+      ]
+    },
+    {
+      "name": "Exception Monitoring",
+      "trigger": "schedule",
+      "schedule": "0 */6 * * *",
+      "description": "Anomaly detection (every 6 hours)",
+      "steps": [
+        {
+          "id": "1",
+          "type": "duckdb",
+          "action": "query",
+          "sql": "SELECT venture_id, name, revenue_ytd FROM ventures WHERE ABS(revenue_ytd - revenue_ytd_prev) / revenue_ytd_prev > 0.20"
+        },
+        {
+          "id": "2",
+          "type": "conditional",
+          "if": "step1.results.length > 0",
+          "then": "notify"
+        },
+        {
+          "id": "3",
+          "type": "claude",
+          "agent": "Monitor",
+          "prompt": "Which anomalies are critical alerts? Rank by importance.",
+          "input": ["anomalies"]
+        },
+        {
+          "id": "4",
+          "type": "slack",
+          "action": "alert",
+          "channel": "{{ owner_alerts }}",
+          "message": "{{ step3.output }}"
+        }
+      ]
+    },
+    {
+      "name": "Decision Execution",
+      "trigger": "manual",
+      "description": "Execute kill/pivot/double-down decision",
+      "steps": [
+        {
+          "id": "1",
+          "type": "duckdb",
+          "action": "insert",
+          "table": "venture_decisions",
+          "data": {
+            "venture_id": "{{ venture_id }}",
+            "decision": "{{ decision }}",
+            "reasoning": "{{ reasoning }}",
+            "decided_at": "{{ now }}"
+          }
+        },
+        {
+          "id": "2",
+          "type": "duckdb",
+          "action": "update",
+          "table": "ventures",
+          "where": "venture_id = {{ venture_id }}",
+          "data": {
+            "status": "{{ new_status }}",
+            "decision_date": "{{ now }}"
+          }
+        },
+        {
+          "id": "3",
+          "type": "slack",
+          "action": "notify",
+          "channels": "{{ affected_teams }}",
+          "message": "Venture {{ name }} status: {{ new_status }}"
+        },
+        {
+          "id": "4",
+          "type": "claude",
+          "agent": "Curator",
+          "prompt": "Create executive summary: why, what, next steps.",
+          "input": ["decision", "venture"]
+        }
+      ]
+    }
+  ]
+}

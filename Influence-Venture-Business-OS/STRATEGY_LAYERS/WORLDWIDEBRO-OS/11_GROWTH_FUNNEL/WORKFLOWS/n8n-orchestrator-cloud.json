@@ -1,0 +1,60 @@
+{
+  "name": "Master Orchestrator via Webhook (n8n Cloud)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": { "interval": [{ "field": "cronExpression", "expression": "0 8 * * 1-5" }] }
+      },
+      "id": "cron-weekday",
+      "name": "Weekday 8AM",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://YOUR-TUNNEL.example.com/run-orchestrator",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            { "name": "Content-Type", "value": "application/json" },
+            { "name": "X-Funnel-Secret", "value": "={{$env.N8N_WEBHOOK_SECRET}}" }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"auto\": true,\n  \"render\": true,\n  \"higgsfield\": false,\n  \"opus_clip\": true\n}"
+      },
+      "id": "orchestrator",
+      "name": "POST run-orchestrator",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [480, 300],
+      "notes": "Point URL at Tailscale/ngrok tunnel to n8n_webhook_runner.py on Mac"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://YOUR-TUNNEL.example.com/sync-supabase",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [{ "name": "X-Funnel-Secret", "value": "={{$env.N8N_WEBHOOK_SECRET}}" }]
+        }
+      },
+      "id": "sync",
+      "name": "Sync Supabase",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [720, 300]
+    }
+  ],
+  "connections": {
+    "Weekday 8AM": { "main": [[{ "node": "POST run-orchestrator", "type": "main", "index": 0 }]] },
+    "POST run-orchestrator": { "main": [[{ "node": "Sync Supabase", "type": "main", "index": 0 }]] }
+  },
+  "settings": { "executionOrder": "v1", "timezone": "America/New_York" },
+  "meta": {
+    "description": "Single n8n Cloud workflow. Requires: python3 n8n_webhook_runner.py --port 8765 + tunnel."
+  }
+}

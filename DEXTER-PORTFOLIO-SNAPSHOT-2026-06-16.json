@@ -1,0 +1,15 @@
+{
+  "date": "2026-06-16",
+  "cycle": "dexter-001",
+  "timestamp": "2026-06-16T19:59:30.520967",
+  "portfolio_total": 1000,
+  "scale_count": 0,
+  "hold_count": 0,
+  "kill_count": 0,
+  "by_sector": {},
+  "by_layer": {},
+  "repos_assigned": 0,
+  "capital_allocated": 0,
+  "tasks_queued": 2100,
+  "top_10_scale": []
+}

@@ -1,0 +1,6330 @@
+{
+  "total_repos": 700,
+  "total_capabilities": 1276,
+  "capability_taxonomy": [
+    "hybrid-search",
+    "caddyfile",
+    "chatbots",
+    "code-documentation",
+    "agent-fleet",
+    "task-manager",
+    "crypto",
+    "aaron-swartz",
+    "12-factor",
+    "deeplearning",
+    "database",
+    "ios",
+    "work",
+    "esign",
+    "business-intelligence",
+    "list",
+    "cao",
+    "quant",
+    "redis",
+    "local-ai",
+    "brand-audits",
+    "data",
+    "distributed-file-system",
+    "monitoring",
+    "ffmpeg",
+    "agent-workflow",
+    "rsshub",
+    "free-for-developers",
+    "digital-signature",
+    "embeddings",
+    "durable-objects",
+    "rag",
+    "big-data",
+    "agent-team",
+    "ai-deep-fake",
+    "text-to-app",
+    "gcp",
+    "a2a-protocol",
+    "ade",
+    "hrms",
+    "datadog",
+    "angular-roadmap",
+    "cloud-os",
+    "automatic-https",
+    "aippt",
+    "todo-comment",
+    "airtable-alternative",
+    "builder",
+    "derivatives",
+    "colors",
+    "docker",
+    "mcp-clients",
+    "mesh",
+    "langchain",
+    "mcp-host",
+    "mesh-networks",
+    "members-adding-scri",
+    "defuddle",
+    "alpaca",
+    "cncf",
+    "gui",
+    "bot-api",
+    "desktop-application",
+    "slides",
+    "computer-automation",
+    "course",
+    "awesome-resources",
+    "elasticsearch",
+    "clickhouse",
+    "api-client",
+    "osm",
+    "framework",
+    "allinonehackingtool",
+    "react-apps",
+    "large-language-models",
+    "codex",
+    "design-patterns",
+    "business-knowledge",
+    "navigator",
+    "api-wrapper",
+    "fish-prompt",
+    "genai-agents",
+    "ai-search-engine",
+    "customer-success",
+    "headless-browsers",
+    "agentic",
+    "docker-swarm",
+    "crash-reports",
+    "deepagents",
+    "annotations",
+    "openclaw-plugin",
+    "mac",
+    "client-python",
+    "distributed-storage",
+    "authorization",
+    "skill",
+    "gpu",
+    "fastmcp",
+    "startups",
+    "desktop",
+    "android-interview-questions",
+    "mcu",
+    "antigravity-skills",
+    "alertmanager",
+    "alternative",
+    "audiobook",
+    "audio",
+    "osint-python",
+    "chineseocr",
+    "data-processing",
+    "plugin",
+    "golang",
+    "tailwindcss",
+    "chatgpt-prompts",
+    "bitcoin",
+    "task-automation",
+    "tailwind",
+    "terraform-provider",
+    "crm-platform",
+    "cloud-infrastructure",
+    "memo",
+    "ros2",
+    "polygon",
+    "infosec",
+    "bloomberg-terminal",
+    "cursor-ai-editor",
+    "backend-roadmap",
+    "llm-evaluation-framework",
+    "ai-agents-automation",
+    "keras-models",
+    "douyin-api",
+    "curriculum",
+    "merchant-of-record",
+    "presentation",
+    "data-quality",
+    "agentic-agi",
+    "hacktoberfest2024",
+    "youtube",
+    "cheatsheets",
+    "kubernetes",
+    "epub",
+    "macosx",
+    "code-understanding",
+    "anytype",
+    "tts",
+    "agent-framework",
+    "film-production",
+    "education",
+    "application-monitoring",
+    "carbon",
+    "commonmark",
+    "augmentation",
+    "boilerplate",
+    "huggingface",
+    "oss",
+    "startup-credits",
+    "alphavantage",
+    "arrow",
+    "bci",
+    "copilot",
+    "opendata",
+    "sdl3",
+    "cleanup",
+    "rss-reader",
+    "getting-things-done",
+    "cloud-ml",
+    "ai-skills",
+    "linux",
+    "components",
+    "ai-agents-framework",
+    "reader",
+    "ai-skill",
+    "anthropic",
+    "chrome",
+    "document-translation",
+    "sst",
+    "notebook",
+    "hacker101",
+    "electron",
+    "good-first-issue",
+    "stremio",
+    "alerting",
+    "apple",
+    "node",
+    "lists",
+    "blazingsql",
+    "agentframework",
+    "api-gateway",
+    "osint-tools",
+    "directory",
+    "multiagent",
+    "memos",
+    "llama-index",
+    "ai-sre",
+    "realtime-stocks",
+    "ngrok",
+    "localai",
+    "ssl",
+    "ai-agents",
+    "agent-computer-interface",
+    "data-pipelines",
+    "linux-server",
+    "change-detection",
+    "mmorpg-server",
+    "ast",
+    "comfyui",
+    "claude-4",
+    "data-orchestration",
+    "swiftui",
+    "ai-assistant",
+    "data-flow",
+    "discord",
+    "amqp",
+    "monorepo",
+    "coding-interview",
+    "assitant",
+    "document-signing",
+    "intelligence",
+    "ggml",
+    "cloud",
+    "unicorns",
+    "apm",
+    "binder-ready",
+    "video-generation",
+    "agentic-aigc",
+    "geospatial",
+    "inference",
+    "minicpm-o",
+    "life",
+    "nix-flake",
+    "apple-tv",
+    "adal",
+    "pake",
+    "management",
+    "multiagent-systems",
+    "agentic-ai",
+    "distribution",
+    "examples",
+    "cloud-storage",
+    "colima",
+    "tailscale-control-server",
+    "claude-3",
+    "distributed",
+    "multi-agent-systems",
+    "cache-cleaner",
+    "note-taking",
+    "pythonscript",
+    "quantitative-trading",
+    "gpt-3-5",
+    "javascript-applications",
+    "speech-to-text",
+    "llama",
+    "deepseek",
+    "vm",
+    "evals",
+    "data-governance",
+    "cloud-computing",
+    "ai",
+    "high-performance",
+    "deployment",
+    "faceting",
+    "awesome-lists",
+    "external-secrets",
+    "homebrew",
+    "context-window",
+    "headless-chrome",
+    "e2ee",
+    "openai",
+    "photorec",
+    "bruno-alternative",
+    "cli",
+    "deno",
+    "llm-evaluation-metrics",
+    "cowork",
+    "whatsapp",
+    "frontend",
+    "computer-systems",
+    "ai-webcam",
+    "youtube-dl",
+    "color-space",
+    "llms",
+    "flourishing",
+    "claude",
+    "ai-search",
+    "functional-css",
+    "project-management",
+    "fuzzing",
+    "gtd-applications",
+    "ansible",
+    "browser-use",
+    "visualization",
+    "cdp",
+    "visjs",
+    "synchronization",
+    "sdn",
+    "filetype",
+    "rails",
+    "data-engineering",
+    "keycloak",
+    "artificial-intelligence",
+    "dapp",
+    "github-gist",
+    "airtable",
+    "sso",
+    "mlx",
+    "orchestrator",
+    "open-telemetry",
+    "emails",
+    "hnsw",
+    "chatgpt-api",
+    "domain-platform",
+    "saml",
+    "dx",
+    "bilibili",
+    "react",
+    "computer-use",
+    "spec-driven-development",
+    "gps",
+    "crud-application",
+    "github-actions",
+    "bot",
+    "personal-finance",
+    "arm32",
+    "chatgpt",
+    "eventsource",
+    "evaluation-framework",
+    "blockchain-analytics",
+    "scp",
+    "adk",
+    "http-api",
+    "machine-learning",
+    "vits",
+    "spider",
+    "converter",
+    "minicpm",
+    "firmware",
+    "penetration-testing",
+    "low-code",
+    "automated-documentation",
+    "browser-automation",
+    "hiking",
+    "document",
+    "overpass-api",
+    "disk-cleaner",
+    "browser-engine",
+    "animated",
+    "bug-tracker",
+    "netbird",
+    "bar",
+    "robotics",
+    "answering-engine",
+    "image-generation",
+    "sd-wan",
+    "drawing",
+    "llm-scraper",
+    "chat",
+    "comfy",
+    "crm",
+    "diagrams",
+    "game",
+    "mysql",
+    "backup-tool",
+    "decentralization",
+    "relational",
+    "project",
+    "go",
+    "context",
+    "help-wanted",
+    "firefox-browser",
+    "faiss",
+    "file-sync",
+    "csharp",
+    "archiving",
+    "open-source-intelligence",
+    "blazor",
+    "markdown",
+    "chatgpt-4",
+    "privacy",
+    "offline-first",
+    "ai-liberation",
+    "analyzer",
+    "poetry",
+    "ai-gateway",
+    "blogging",
+    "fintech",
+    "courseware",
+    "multilingual",
+    "code",
+    "application-uninstaller",
+    "aiagent",
+    "algorithms",
+    "meta-interview",
+    "developer-productivity",
+    "theme",
+    "deep-search",
+    "looking-for-contributors",
+    "payments",
+    "chat-application",
+    "ideas",
+    "blackwell",
+    "ecommerce",
+    "clojurescript",
+    "uikit",
+    "architecture",
+    "certificate-management",
+    "csv",
+    "colab-notebook",
+    "elt",
+    "wireguard",
+    "alerts",
+    "maps",
+    "mediawiki",
+    "dbt-viewpoint",
+    "pixijs",
+    "bolt",
+    "llm-evaluation",
+    "1337",
+    "source-code-analysis",
+    "evaluation",
+    "fingpt",
+    "sdl",
+    "fastapi",
+    "document-parser",
+    "ai-scraping",
+    "pdf-generator",
+    "opencode",
+    "digitalplat",
+    "blob-storage",
+    "terminal",
+    "crdt",
+    "audit-logs",
+    "bloatware",
+    "apple-design",
+    "equity-trading",
+    "interview",
+    "svelte",
+    "alive",
+    "opentelemetry",
+    "customer-service",
+    "calendar",
+    "ngrok-alternative",
+    "ebay",
+    "file-server",
+    "members-adding-script",
+    "bounding-box",
+    "awesome",
+    "attention",
+    "backup",
+    "gamedev-library",
+    "general-purpose",
+    "lazyssh",
+    "camunda",
+    "data-transfer",
+    "flow-based-programming",
+    "coding-assistant",
+    "obsidian-md",
+    "ssh-askpass",
+    "claude-skills",
+    "application-manager",
+    "osint",
+    "agile",
+    "keras-classification-models",
+    "website",
+    "pdf-parsing",
+    "cursorrules",
+    "control-panel",
+    "vite",
+    "desktop-app",
+    "android-automation",
+    "computer-use-agent",
+    "antigravity-ide",
+    "android",
+    "mcp-client",
+    "brokerage",
+    "campaign-management",
+    "crypto-trading",
+    "digital-products",
+    "apis",
+    "dependency-manager",
+    "cpp",
+    "gtd-workflow",
+    "file-sharing",
+    "macos",
+    "argo",
+    "agents-sdk",
+    "dataset",
+    "gemma",
+    "ci-cd",
+    "qgis",
+    "gtd",
+    "gaia",
+    "ruby",
+    "qemu",
+    "cursive",
+    "bento-grid",
+    "mcp-servers",
+    "nginx-proxy",
+    "local-first",
+    "chrome-extension",
+    "peer-to-peer",
+    "knowledge-graph",
+    "ai4hpc",
+    "draganddrop",
+    "resource",
+    "mlops",
+    "azure-openai",
+    "graphics",
+    "argo-cd",
+    "amp",
+    "3d-gaussian-splatting",
+    "arbitrage-bot",
+    "convert",
+    "apple-foundation-models",
+    "adversarial-attacks",
+    "cognitive-architecture",
+    "deepstream",
+    "flutter",
+    "containers",
+    "issue-management",
+    "chatbot",
+    "csp-report",
+    "ecommerce-framework",
+    "idea",
+    "tutorial",
+    "browseros",
+    "ai-tools",
+    "data-analysis",
+    "fish-theme",
+    "databases",
+    "osinttool",
+    "convex",
+    "open-source-deepwiki",
+    "api-rest",
+    "trading",
+    "obsidian-plugin",
+    "shadcn-ui",
+    "table-extraction",
+    "p2p",
+    "ably",
+    "llm-inference",
+    "asset-management",
+    "apple-vision-pro",
+    "datarecovery",
+    "multi-modal-rag",
+    "api",
+    "dictation",
+    "claurst",
+    "connected-vehicle",
+    "minicpm-v",
+    "openstreetmap",
+    "backstage",
+    "graphql",
+    "qrcode-generator",
+    "asdb",
+    "interview-questions",
+    "agentic-code",
+    "makefile",
+    "markup-language",
+    "resume",
+    "dark",
+    "sysadmin",
+    "menu-bar",
+    "account-manager",
+    "awesome-list",
+    "moviepy",
+    "fine-tuning",
+    "compose-desktop",
+    "context-engineering",
+    "claude-ai",
+    "amqp-0-9-1",
+    "3dgs",
+    "automation",
+    "agent-skills",
+    "agentskills",
+    "playwright",
+    "gemini",
+    "color-converter",
+    "powerpoint",
+    "chromium",
+    "remote",
+    "artificial-inteligence",
+    "responsive",
+    "behavioral-interviews",
+    "datasets",
+    "mass-dm",
+    "crustacean",
+    "development",
+    "hosting",
+    "openai-api",
+    "erc20",
+    "click",
+    "gpt-4",
+    "hacktoberfest",
+    "ssh",
+    "bun",
+    "grpc",
+    "agentic-rag",
+    "deduplication",
+    "dev-tools",
+    "onceui",
+    "automatic-api",
+    "resources",
+    "genai",
+    "bpf",
+    "etcd",
+    "machine-learning-algorithms",
+    "asana",
+    "oidc",
+    "distributed-systems",
+    "a2a",
+    "angularjs-interview-questions",
+    "conversion",
+    "applications",
+    "aiagentframework",
+    "hmr",
+    "console",
+    "agentic-coding",
+    "app",
+    "odoo",
+    "cms",
+    "ai-alignment",
+    "gateway",
+    "openjs-foundation",
+    "coding-interviews",
+    "terminal-based",
+    "angular",
+    "codebase-analysis",
+    "codingagent",
+    "claude-cowork",
+    "firefox-fork",
+    "hardening-steps",
+    "data-contracts",
+    "ci",
+    "hosting-panel",
+    "gamedev",
+    "gemma3",
+    "llm",
+    "self-hosted",
+    "retrieval-augmented-generation",
+    "antispam",
+    "information-gathering",
+    "datacarving",
+    "copy-on-write",
+    "n8n",
+    "http-streaming",
+    "font",
+    "transformers",
+    "transformer",
+    "feature-flags",
+    "gemini-api",
+    "identification",
+    "autonomous-agents",
+    "continuous-integration",
+    "dms",
+    "web",
+    "accessibility",
+    "money",
+    "banking",
+    "flask",
+    "middleware",
+    "drag-and-drop",
+    "ai-workflow-optimization",
+    "web-interaction",
+    "design-md",
+    "issue-tracker",
+    "c-plus-plus",
+    "contributions-welcome",
+    "heltec",
+    "hacking",
+    "design-ops",
+    "cri",
+    "screen-capture",
+    "evaluation-metrics",
+    "email-subscription",
+    "puppeteer",
+    "pdf-designer",
+    "cheating",
+    "ctf-tools",
+    "binder",
+    "wikipedia",
+    "ai-agent-skills",
+    "agent-skill",
+    "data-catalog",
+    "analysis",
+    "node-js",
+    "unix",
+    "gemini-pro",
+    "cryptocurrency",
+    "local",
+    "system-design",
+    "gpt",
+    "backend",
+    "inbox",
+    "minecraft",
+    "cloudflare-pages",
+    "agentmemory",
+    "disk",
+    "campaign",
+    "netflix",
+    "financial-forecasting",
+    "lora",
+    "calligraphy",
+    "high-level-design",
+    "valle",
+    "streaming",
+    "cib",
+    "econometrics",
+    "economics",
+    "skills",
+    "documentation",
+    "blocker",
+    "amd",
+    "es6",
+    "php",
+    "antidetect-browser",
+    "apple-intelligence",
+    "game-engine",
+    "equity",
+    "workflows",
+    "data-science",
+    "molty",
+    "vue",
+    "gamedevelopment",
+    "computer-vision",
+    "agent-evolution",
+    "tui",
+    "future-prediction",
+    "knowledge-base",
+    "dhcp",
+    "blockchain-roadmap",
+    "open-source-social-media-scheduling-tool",
+    "design",
+    "free-software",
+    "dataoriented",
+    "airforce1",
+    "finnhub",
+    "loom",
+    "learning",
+    "chatui",
+    "attention-mechanism",
+    "nl2sql",
+    "realtime",
+    "acme",
+    "free",
+    "prompt",
+    "pandas",
+    "django",
+    "blocknotejs",
+    "context-database",
+    "distributed-ml",
+    "data-visualization",
+    "microsoft-office",
+    "secrets-manager",
+    "clone",
+    "ai-infrastructure",
+    "agent-collaboration",
+    "g2g",
+    "localstack",
+    "claude-4-opus",
+    "ai-tutor",
+    "news",
+    "oauth2-proxy",
+    "dev-server",
+    "e-commerce",
+    "authentication",
+    "http-client",
+    "codex-cli",
+    "compose",
+    "search",
+    "acp",
+    "ghost",
+    "containerd",
+    "portfolio",
+    "shell",
+    "pytorch",
+    "lightpanda",
+    "pdf-generation",
+    "generative-ai",
+    "antigravity-ai",
+    "prisma",
+    "gemini-ai",
+    "lima-vm",
+    "mattermost",
+    "database-schema",
+    "interactive-charts",
+    "design-system",
+    "cloud-native",
+    "cli-app",
+    "data-modeling",
+    "security-tools",
+    "claude-code-plugin",
+    "hacker",
+    "hardening",
+    "coolify",
+    "data-discovery",
+    "community-driven",
+    "mindustry",
+    "erp",
+    "notes-app",
+    "instagram-osint",
+    "apps",
+    "antigravity",
+    "grants",
+    "chrome-devtools-protocol",
+    "context-management",
+    "screenshots",
+    "graphing",
+    "document-parsing",
+    "cryptography",
+    "featured",
+    "autogen-extension",
+    "documents",
+    "ai-agent",
+    "ocr",
+    "file-upload-server",
+    "app-search",
+    "ai-meeting-assistant",
+    "hugging-face",
+    "dataengineering",
+    "git",
+    "vibecoding",
+    "application",
+    "readme",
+    "consul",
+    "hot-news",
+    "nocode",
+    "postcss",
+    "code-search",
+    "pentesting",
+    "mcp-server",
+    "api-management",
+    "clustering",
+    "handwriting",
+    "ai-crawler",
+    "beginner-project",
+    "agent-samples",
+    "dark-theme",
+    "moltbot",
+    "apache-arrow",
+    "nat-traversal",
+    "kvm",
+    "firecracker",
+    "tutorial-exercises",
+    "http",
+    "gplv2",
+    "design-systems",
+    "beautiful",
+    "rust-lang",
+    "algos",
+    "clawbot",
+    "a11y",
+    "productivity",
+    "algorithm-interview-questions",
+    "alpha-vantage",
+    "homelab",
+    "cni",
+    "gpt-oss",
+    "css-framework",
+    "antigravity-tools",
+    "wiki",
+    "earthengine",
+    "cap",
+    "awesomeness",
+    "ai-assisted-development",
+    "deepresearch",
+    "agentic-skills",
+    "yt-dlp",
+    "shadcn",
+    "nextjs",
+    "component-library",
+    "guide",
+    "ai-workflows",
+    "openhaystack",
+    "scala",
+    "abliteration",
+    "devtools",
+    "cybersecurity",
+    "cross-platform",
+    "animations",
+    "geo",
+    "algorithmic-trading-library",
+    "bash",
+    "cleanmymac",
+    "algotrading",
+    "datastore",
+    "algorithms-implemented",
+    "assistant",
+    "supabase",
+    "qgis-plugin",
+    "embedded",
+    "livestreaming",
+    "mobile-automation",
+    "pandoc",
+    "remote-work",
+    "messaging",
+    "node-red",
+    "browser-ide",
+    "kubernetes-secrets",
+    "c",
+    "dashboard",
+    "collaborative",
+    "bare-metal",
+    "back-in-stock",
+    "multimodel",
+    "mcp",
+    "cuda",
+    "dataroom",
+    "homelab-setup",
+    "deep-research",
+    "commerce",
+    "charts",
+    "docker-desktop",
+    "observability",
+    "technical-debt",
+    "disk-space",
+    "tailscale-server",
+    "gpui",
+    "cognitive-memory",
+    "context-layer",
+    "game-development",
+    "nginx",
+    "ai-sdk",
+    "package-manager",
+    "dump",
+    "cicd",
+    "nvidia",
+    "rust",
+    "agentic-engineering",
+    "fileshare",
+    "yaml",
+    "magick",
+    "cc-by-sa",
+    "bigquery",
+    "algorithm-interview",
+    "email",
+    "google-interview",
+    "dask",
+    "blueprint",
+    "ai-jailbreak",
+    "audiobooks",
+    "beginner-friendly",
+    "tauri-v2",
+    "aiagents",
+    "incident-management",
+    "zenoh",
+    "react-router",
+    "docusign-alternative",
+    "golang-library",
+    "prototyping",
+    "forex",
+    "openclaw",
+    "metrics",
+    "meta-prompting",
+    "typescript",
+    "clickjacking",
+    "hotwired-turbo",
+    "headless",
+    "agi",
+    "finance",
+    "kie",
+    "hidden-members",
+    "batch-processing",
+    "cd",
+    "better-auth",
+    "boards",
+    "diagram-editor",
+    "business",
+    "e-signature",
+    "gantt",
+    "ebpf",
+    "shell-script",
+    "auto-quant",
+    "deepseek-r1",
+    "jellyfin",
+    "domains",
+    "bsd",
+    "claude-code",
+    "budgeting",
+    "testing",
+    "dnd-kit",
+    "adder",
+    "apachespark",
+    "graphdb",
+    "academic-pipeline",
+    "books",
+    "a2a-mcp",
+    "anthropic-claude",
+    "domainname",
+    "oh-my-zsh",
+    "clojure",
+    "esp32",
+    "findmy",
+    "llm-agent",
+    "aarch64",
+    "distance",
+    "dotnet",
+    "graph",
+    "discordo",
+    "swift",
+    "embedding-models",
+    "bedrock",
+    "googleadsmcp",
+    "datascience",
+    "infrastructure",
+    "algorithm-competitions",
+    "command-line",
+    "stock",
+    "infrastructure-as-code",
+    "tutorial-code",
+    "pdf",
+    "mobile-app",
+    "on-device-ai",
+    "cloud-management",
+    "shadcn-theme-editor",
+    "google-photos",
+    "ftp-server",
+    "enterprise-search",
+    "ai-prompts",
+    "office",
+    "anti-detect",
+    "journalism",
+    "html",
+    "kafka",
+    "apple-neural-engine",
+    "pdf-lib",
+    "electron-app",
+    "online-assessment",
+    "stripe",
+    "analytics",
+    "logging",
+    "code-execution",
+    "high-availability",
+    "agent-harness",
+    "ravishing",
+    "foundationmodels",
+    "db2",
+    "text-editor",
+    "cloudflare-kv",
+    "cli-tool",
+    "nodejs",
+    "multi-modal",
+    "grafana",
+    "postgresql",
+    "douyin",
+    "discord-bot",
+    "hotwire",
+    "animation",
+    "canvas",
+    "k8s-sig-cli",
+    "audit-trails",
+    "bulk-actions",
+    "admin-dashboard",
+    "packaging",
+    "alibaba",
+    "adsb",
+    "devops",
+    "dba",
+    "bigdata",
+    "tailscale",
+    "browser",
+    "java",
+    "agent-development",
+    "open-source",
+    "developer-experience",
+    "algorithmic-trading",
+    "screen-recorder",
+    "library",
+    "shadcn-theme",
+    "vscode-extension",
+    "caddy",
+    "ecommerce-platform",
+    "gemini-flash",
+    "email-marketing",
+    "ai-coding",
+    "reddit",
+    "programming",
+    "geopolitics",
+    "docker-compose",
+    "communication",
+    "development-environment",
+    "listmonk",
+    "message-broker",
+    "alpaca-api",
+    "bot-detection",
+    "data-collaboration",
+    "financial-data",
+    "agent-platform",
+    "github",
+    "awesome-public-datasets",
+    "document-management",
+    "csrf",
+    "performance",
+    "erd",
+    "agent-infrastructure",
+    "anns",
+    "ai-research",
+    "change-alert",
+    "cluely",
+    "developer-portal",
+    "ai-agent-tools",
+    "qrcode",
+    "algorithmic-trading-engine",
+    "electron-react",
+    "llm-prompting",
+    "apple-watch",
+    "python",
+    "orm",
+    "asr",
+    "cloudflare-workers",
+    "fix-yahoo-finance",
+    "cv",
+    "a-stock",
+    "firecrawl",
+    "obsidian",
+    "cloudnative",
+    "12-factor-agents",
+    "glm",
+    "ad-blocker",
+    "desktop-environment",
+    "collaboration",
+    "lts",
+    "imagemagick",
+    "beginners-friendly",
+    "json",
+    "postgres",
+    "crm-system",
+    "ai-applications",
+    "erdiagram",
+    "wxwidgets-applications",
+    "agent-memory",
+    "python-bot",
+    "aigc",
+    "clickup",
+    "cursor",
+    "rss",
+    "change-monitoring",
+    "cookbook",
+    "css",
+    "browser-extension",
+    "dba-roadmap",
+    "facebook",
+    "powerpoint-generation",
+    "forensics",
+    "cloud-drive",
+    "ai-face",
+    "coss",
+    "security-automation",
+    "resume-builder",
+    "ai-app-builder",
+    "ai4science",
+    "customer",
+    "blazor-webassembly",
+    "graphrag",
+    "agent-swarm",
+    "google-photos-alternative",
+    "foss",
+    "besthackingtool",
+    "native-app",
+    "ads-b",
+    "terraform",
+    "security-audit",
+    "next-auth",
+    "financial-analysis",
+    "agentic-workflow",
+    "airbnb",
+    "bunjs",
+    "coding",
+    "hono",
+    "graph-database",
+    "chakra-ui",
+    "outreach",
+    "autonomous-agent",
+    "ai-memory",
+    "claudecode",
+    "git-worktrees",
+    "embeddings-similarity",
+    "documentation-generator",
+    "sdl2",
+    "ai-bot",
+    "auto-publish",
+    "haskell",
+    "kanban",
+    "cypher",
+    "ai-engineering",
+    "deep-learning",
+    "ai-chat",
+    "dataflow",
+    "zed",
+    "instagram",
+    "agent",
+    "agentic-framework",
+    "ui",
+    "reinforcement-learning",
+    "design-engineering",
+    "amqp1-0",
+    "clawdbot",
+    "bark",
+    "scientific-writing",
+    "bluesky",
+    "git-analysis",
+    "ide",
+    "air-force-one",
+    "academic-writing",
+    "database-backup",
+    "install",
+    "agent-tars",
+    "adyen",
+    "algorithm",
+    "agents",
+    "email-notifications",
+    "firefox",
+    "hackerone",
+    "build-tool",
+    "ddos-attack-tool",
+    "bulk-uninstall",
+    "cti",
+    "loki",
+    "autogen",
+    "databricks",
+    "codingchallenges",
+    "building-blocks",
+    "client",
+    "api-testing",
+    "dbeaver",
+    "amazon-interview",
+    "networking",
+    "aws",
+    "n8n-workflow",
+    "densepose",
+    "editor",
+    "computer-science",
+    "crash-reporting",
+    "jailbreak",
+    "algolia",
+    "data-application",
+    "coding-agent",
+    "accounting",
+    "altcoin",
+    "bug-bounty",
+    "javascript",
+    "audio-generation",
+    "chinese",
+    "googleads",
+    "large-language-model",
+    "agent-protocol",
+    "llm-local",
+    "no-code",
+    "data-analytics",
+    "games",
+    "developer-tools",
+    "apple-silicon",
+    "applicant-tracking-system",
+    "nebula",
+    "a2a-server",
+    "nlp",
+    "crud-app",
+    "environment-variables",
+    "llamacpp",
+    "compose-multiplatform",
+    "jira-alternative",
+    "filesystem",
+    "bot-framework",
+    "chatbi",
+    "fish",
+    "decentralized",
+    "knowledge-management",
+    "arbitrage",
+    "security",
+    "market-data",
+    "figma",
+    "prompt-engineering",
+    "lima",
+    "domain",
+    "grant-proposals",
+    "deepseek-v3",
+    "copyparty"
+  ],
+  "repos_by_capability": {
+    "ai": [
+      "kong",
+      "meilisearch",
+      "easy-vibe",
+      "12-factor-agents",
+      "ai-engineering-from-scratch",
+      "n8n",
+      "SocratiCode",
+      "future-agi",
+      "Fabric",
+      "langgraph",
+      "thunderbolt",
+      "omi",
+      "magika",
+      "design-extract",
+      "agentmemory",
+      "snip",
+      "Awesome-OSINT-List",
+      "lemonade",
+      "goose",
+      "ai-website-cloner-template",
+      "hermes-agent",
+      "chandra",
+      "opendataloader-pdf",
+      "Crucix",
+      "meetily",
+      "claude-code-best-practice",
+      "InsForge",
+      "natively-cluely-ai-assistant",
+      "deer-flow",
+      "worldmonitor",
+      "rowboat",
+      "prompts.chat",
+      "Peekaboo",
+      "oh-my-openagent",
+      "openclaw",
+      "tinyfish-cookbook",
+      "grepai",
+      "Deep-Live-Cam",
+      "claude-code-tips",
+      "next-ai-draw-io",
+      "WeKnora",
+      "claude-mem",
+      "awesome-local-llm",
+      "yao",
+      "valuecell",
+      "agenticSeek",
+      "crewAI",
+      "free-llm-api-resources",
+      "byterover-cli",
+      "TrendRadar",
+      "vibesdk",
+      "adk-go",
+      "Memori",
+      "dbeaver",
+      "cognee",
+      "L1B3RT4S",
+      "LocalAI",
+      "skyvern",
+      "minds-platform",
+      "PageIndex",
+      "pandas-ai",
+      "docling",
+      "deepchat",
+      "bRAG-langchain",
+      "ComfyUI",
+      "agent-framework",
+      "airweave",
+      "MoneyPrinterTurbo",
+      "humanlayer",
+      "onyx",
+      "klavis",
+      "crush",
+      "koog",
+      "AionUi",
+      "LEANN",
+      "puck",
+      "bytebot",
+      "Archon",
+      "system_prompts_leaks",
+      "mem0",
+      "awesome-mcp-servers",
+      "iii",
+      "magic",
+      "sim",
+      "aisheets",
+      "nanobrowser",
+      "voltagent",
+      "git-mcp",
+      "firecrawl",
+      "fastapi_mcp",
+      "open-swe",
+      "toolsdk-mcp-registry",
+      "system-prompts-and-models-of-ai-tools",
+      "llm",
+      "autogen",
+      "mcp-toolbox",
+      "Folo",
+      "OpenBB",
+      "awesome-ai-apps",
+      "stagehand",
+      "gitdiagram",
+      "ai-engineering-hub",
+      "suna",
+      "dify",
+      "lobehub"
+    ],
+    "ai-agents": [
+      "ai-engineering-from-scratch",
+      "9router",
+      "CloakBrowser",
+      "langgraph",
+      "thunderbolt",
+      "FinceptTerminal",
+      "Claude-Code-Game-Studios",
+      "DeepTutor",
+      "antigravity-awesome-skills",
+      "goose",
+      "ai-website-cloner-template",
+      "ECC",
+      "hermes-agent",
+      "oh-my-claudecode",
+      "zeroboot",
+      "InsForge",
+      "OpenViking",
+      "waoowaoo",
+      "rowboat",
+      "moltworker",
+      "oh-my-openagent",
+      "awesome-claude-skills",
+      "claude-mem",
+      "vibe-kanban",
+      "open-scouts",
+      "crewAI",
+      "500-AI-Agents-Projects",
+      "cognee",
+      "mobilerun",
+      "nocobase",
+      "PageIndex",
+      "Prompt-Engineering-Guide",
+      "browser-use",
+      "airweave",
+      "klavis",
+      "Vane",
+      "Agent-S",
+      "bytebot",
+      "ccpm",
+      "parlant",
+      "mem0",
+      "activepieces",
+      "nanobrowser",
+      "voltagent",
+      "firecrawl",
+      "ai-agents-for-beginners",
+      "suna"
+    ],
+    "agents": [
+      "12-factor-agents",
+      "ai-engineering-from-scratch",
+      "langgraph",
+      "llama_index",
+      "paseo",
+      "agentmemory",
+      "opengap",
+      "rowboat",
+      "awesome-llm-apps",
+      "beads",
+      "yao",
+      "valuecell",
+      "agenticSeek",
+      "crewAI",
+      "A2A",
+      "agent-starter-pack",
+      "adk-go",
+      "LocalAI",
+      "strix",
+      "minds-platform",
+      "PageIndex",
+      "adk-samples",
+      "Prompt-Engineering-Guide",
+      "agent-framework",
+      "humanlayer",
+      "agents-course",
+      "klavis",
+      "koog",
+      "bytebot",
+      "mem0",
+      "iii",
+      "sim",
+      "novu",
+      "voltagent",
+      "git-mcp",
+      "open-swe",
+      "ruflo",
+      "autogen",
+      "graphiti",
+      "mcp-toolbox",
+      "awesome-ai-apps",
+      "stagehand",
+      "fastmcp",
+      "ai-engineering-hub"
+    ],
+    "claude": [
+      "academic-research-skills",
+      "SocratiCode",
+      "the-architect",
+      "9router",
+      "Claude-OSINT",
+      "Claude-Code-Game-Studios",
+      "GenericAgent",
+      "agentmemory",
+      "obsidian-skills",
+      "claurst",
+      "ECC",
+      "claude-hud",
+      "last30days-skill",
+      "oh-my-claudecode",
+      "RuView",
+      "ui-ux-pro-max-skill",
+      "claude-code-templates",
+      "antigravity-link-extension",
+      "oh-my-openagent",
+      "awesome-claude-skills",
+      "deep-searcher",
+      "navigator",
+      "learn-claude-code",
+      "planning-with-files",
+      "free-llm-api-resources",
+      "sleepless-agent",
+      "GPT_API_free",
+      "ccpm",
+      "Archon",
+      "Claudable",
+      "memU",
+      "mcp",
+      "git-mcp",
+      "fastapi_mcp",
+      "opcode",
+      "FastGPT"
+    ],
+    "agent": [
+      "easy-vibe",
+      "agentscope",
+      "opengap",
+      "OpenViking",
+      "deer-flow",
+      "tinyfish-cookbook",
+      "deep-searcher",
+      "owl",
+      "learn-claude-code",
+      "WeKnora",
+      "hello-agents",
+      "vibe-kanban",
+      "yao",
+      "byterover-cli",
+      "Memori",
+      "MineContext",
+      "BrowserOS",
+      "agent-lightning",
+      "deepchat",
+      "Prompt-Engineering-Guide",
+      "TradingAgents",
+      "bytebot",
+      "OpenHands",
+      "Claudable",
+      "magic",
+      "UI-TARS-desktop",
+      "nanobrowser",
+      "open-swe",
+      "unsloth",
+      "DeepResearch",
+      "mcp-toolbox",
+      "FastGPT",
+      "WrenAI",
+      "dify",
+      "lobehub"
+    ],
+    "claude-code": [
+      "academic-research-skills",
+      "SocratiCode",
+      "Claude-Code-Game-Studios",
+      "agent-skills",
+      "paseo",
+      "taskdog",
+      "claude-howto",
+      "graphify",
+      "agent-orchestrator",
+      "claurst",
+      "ECC",
+      "claude-hud",
+      "last30days-skill",
+      "oh-my-claudecode",
+      "ui-ux-pro-max-skill",
+      "Understand-Anything",
+      "claudian",
+      "apple-bento-grid",
+      "natively-cluely-ai-assistant",
+      "claude-code-cookbook",
+      "claude-code-templates",
+      "get-shit-done",
+      "claude-plugins-official",
+      "open-claude-cowork",
+      "grepai",
+      "navigator",
+      "beads",
+      "learn-claude-code",
+      "planning-with-files",
+      "humanlayer",
+      "ccpm",
+      "Claudable"
+    ],
+    "llm": [
+      "daily_stock_analysis",
+      "future-agi",
+      "agentscope",
+      "meetily",
+      "heretic",
+      "CyberScraper-2077",
+      "hello-agents",
+      "awesome-local-llm",
+      "osaurus",
+      "free-llm-api-resources",
+      "nano-vllm",
+      "strix",
+      "agent-lightning",
+      "chat-ui",
+      "OM1",
+      "bRAG-langchain",
+      "browser-use",
+      "llm-app",
+      "SQLBot",
+      "Vane",
+      "TradingAgents",
+      "cai",
+      "poml",
+      "magic",
+      "jan",
+      "awesome-ai-apps",
+      "prompt-optimizer",
+      "FastGPT",
+      "suna"
+    ],
+    "awesome": [
+      "awesome-codex-skills",
+      "awesome-scalability",
+      "awesome-startup-credits",
+      "RuView",
+      "awesome-local-llm",
+      "awesome-cli-apps",
+      "awesome-system-design-resources",
+      "Wikipedia-Dark",
+      "awesome-quant",
+      "awesome-pandas-alternatives",
+      "awesome-compose",
+      "awesome-design-patterns",
+      "frontend-dev-bookmarks",
+      "github-cheat-sheet",
+      "awesome",
+      "system_prompts_leaks",
+      "awesome-for-non-programmers",
+      "toolsdk-mcp-registry",
+      "open-source-mac-os-apps",
+      "awesome-react",
+      "awesome-for-beginners",
+      "awesome-interview-questions",
+      "awesome-mac",
+      "Awesome-Hacking",
+      "awesome-go",
+      "awesome-selfhosted",
+      "data-engineer-handbook",
+      "awesome-cursorrules",
+      "the-book-of-secret-knowledge"
+    ],
+    "awesome-list": [
+      "awesome-scalability",
+      "awesome-startup-credits",
+      "Awesome-OSINT-List",
+      "awesome-openclaw-usecases",
+      "prompts.chat",
+      "awesome-local-llm",
+      "awesome-cli-apps",
+      "open-source-games",
+      "awesome-pandas-alternatives",
+      "awesome-compose",
+      "awesome-design-patterns",
+      "frontend-dev-bookmarks",
+      "github-cheat-sheet",
+      "awesome",
+      "awesome-for-non-programmers",
+      "toolsdk-mcp-registry",
+      "free-for-dev",
+      "build-your-own-x",
+      "open-source-mac-os-apps",
+      "awesome-react",
+      "awesome-for-beginners",
+      "awesome-interview-questions",
+      "awesome-go",
+      "awesome-selfhosted",
+      "awesome-cursorrules",
+      "the-book-of-secret-knowledge"
+    ],
+    "hacktoberfest": [
+      "excalidraw",
+      "mattermost",
+      "camunda-platform",
+      "reactive-resume",
+      "prometheus",
+      "kustomize",
+      "loki",
+      "k6",
+      "sherlock",
+      "nocodb",
+      "mobilerun",
+      "alertmanager",
+      "BrowserOS",
+      "chat-ui",
+      "stremio-web",
+      "kestra",
+      "jellyfin",
+      "oauth2-proxy",
+      "kaneo",
+      "telegraf",
+      "external-secrets",
+      "free-programming-books",
+      "awesome-ai-apps",
+      "app-ideas"
+    ],
+    "cli": [
+      "n8n",
+      "maigret",
+      "obsidian-skills",
+      "taskdog",
+      "sherlock",
+      "apfel",
+      "claurst",
+      "claude-hud",
+      "qrcode-pretty",
+      "grepai",
+      "MoneyPrinterV2",
+      "awesome-cli-apps",
+      "byterover-cli",
+      "social-analyzer",
+      "eureka",
+      "infisical",
+      "lazyssh",
+      "diskonaut",
+      "Archon",
+      "OpenHands",
+      "aider",
+      "pastel",
+      "lazygit",
+      "alive-progress"
+    ],
+    "anthropic": [
+      "the-architect",
+      "9router",
+      "Claude-Code-Game-Studios",
+      "ECC",
+      "claude-hud",
+      "hermes-agent",
+      "litellm",
+      "claude-code-templates",
+      "oh-my-openagent",
+      "open-claude-cowork",
+      "navigator",
+      "claude-mem",
+      "osaurus",
+      "sleepless-agent",
+      "whodb",
+      "system_prompts_leaks",
+      "aider",
+      "open-swe",
+      "opcode",
+      "dyad",
+      "WrenAI"
+    ],
+    "automation": [
+      "n8n",
+      "the-architect",
+      "GenericAgent",
+      "mission-control",
+      "ai-website-cloner-template",
+      "Agent-Reach",
+      "oh-my-claudecode",
+      "waoowaoo",
+      "awesome-claude-skills",
+      "MoneyPrinterV2",
+      "open-scouts",
+      "skyvern",
+      "sleepless-agent",
+      "kestra",
+      "MoneyPrinterTurbo",
+      "Archon",
+      "HeadlessBrowsers",
+      "nanobrowser"
+    ],
+    "chatgpt": [
+      "9router",
+      "langgraph",
+      "hermes-agent",
+      "prompts.chat",
+      "FinRobot",
+      "oh-my-openagent",
+      "chat-ui",
+      "GPT_API_free",
+      "Prompt-Engineering-Guide",
+      "gpt4free",
+      "MoneyPrinterTurbo",
+      "onyx",
+      "system_prompts_leaks",
+      "OpenHands",
+      "aider",
+      "jan",
+      "openai-cookbook",
+      "ChatGPT_DAN"
+    ],
+    "agentic-ai": [
+      "claude-code-best-practice",
+      "eigent",
+      "claude-code-tips",
+      "yao",
+      "valuecell",
+      "agenticSeek",
+      "PageIndex",
+      "agent-lightning",
+      "agent-framework",
+      "agents-course",
+      "crush",
+      "koog",
+      "bytebot",
+      "git-mcp",
+      "ruflo",
+      "ai-agents-for-beginners",
+      "dify"
+    ],
+    "mcp": [
+      "goose",
+      "Peekaboo",
+      "claude-plugins-official",
+      "registry",
+      "go-sdk",
+      "mcp",
+      "n8n-mcp",
+      "memU",
+      "awesome-mcp-servers",
+      "mcp",
+      "activepieces",
+      "mcp-for-beginners",
+      "awesome-ai-apps",
+      "FastGPT",
+      "fastmcp",
+      "ai-engineering-hub"
+    ],
+    "javascript": [
+      "node-red",
+      "Ghost",
+      "medusa",
+      "carbon",
+      "k6",
+      "immich",
+      "it-tools",
+      "MineContext",
+      "Web-Dev-For-Beginners",
+      "social-analyzer",
+      "FileSync",
+      "mcp-for-beginners",
+      "awesome-react",
+      "project-based-learning"
+    ],
+    "api": [
+      "meilisearch",
+      "graphql.github.io",
+      "LocalAI",
+      "skyvern",
+      "finnhub-python",
+      "client-python",
+      "hoppscotch",
+      "GPT_API_free",
+      "airweave",
+      "klavis",
+      "ccxt",
+      "iii",
+      "node-telegram-bot-api",
+      "public-apis"
+    ],
+    "ai-agent": [
+      "daily_stock_analysis",
+      "the-architect",
+      "ppt-master",
+      "evolver",
+      "GenericAgent",
+      "Agent-Reach",
+      "hermes-agent",
+      "waoowaoo",
+      "learn-claude-code",
+      "nocobase",
+      "sleepless-agent",
+      "AionUi",
+      "activepieces",
+      "toolsdk-mcp-registry"
+    ],
+    "llms": [
+      "ai-for-grant-writing",
+      "thunderbolt",
+      "MiroFish",
+      "awesome-llm-apps",
+      "crewAI",
+      "BettaFish",
+      "mlx-lm",
+      "crush",
+      "aisheets",
+      "llm",
+      "graphiti",
+      "stagehand",
+      "fastmcp",
+      "ai-engineering-hub"
+    ],
+    "artificial-intelligence": [
+      "prompts.chat",
+      "Deep-Live-Cam",
+      "owl",
+      "claude-mem",
+      "strix",
+      "performer-pytorch",
+      "cs249r_book",
+      "minimind",
+      "Vane",
+      "cai",
+      "OpenHands",
+      "nautilus_trader",
+      "dyad",
+      "DeepResearch"
+    ],
+    "docker": [
+      "plane",
+      "coolify",
+      "orbstack",
+      "dockpanel",
+      "memos",
+      "TrendRadar",
+      "traefik",
+      "containerd",
+      "ebook2audiobook",
+      "wikipedia-mirror",
+      "boilerplates",
+      "FileSync",
+      "full-stack-fastapi-template"
+    ],
+    "golang": [
+      "mattermost",
+      "k6",
+      "pocketbase",
+      "pinchtab",
+      "netbird",
+      "bookhunter",
+      "croc",
+      "act",
+      "traefik",
+      "s",
+      "lazyssh",
+      "awesome-go",
+      "project-based-learning"
+    ],
+    "python": [
+      "VoxCPM",
+      "yesitsme",
+      "awesome-llm-apps",
+      "qrcode-pretty",
+      "QuantMuse",
+      "qgis-gee-data-catalogs-plugin",
+      "client-python",
+      "yfinance",
+      "ComfyUI",
+      "MoneyPrinterTurbo",
+      "poetry"
+    ],
+    "deep-learning": [
+      "magika",
+      "streamlit",
+      "nano-vllm",
+      "Made-With-ML",
+      "performer-pytorch",
+      "cs249r_book",
+      "Prompt-Engineering-Guide",
+      "models",
+      "gpubootcamp",
+      "qlib",
+      "hyperlearn"
+    ],
+    "go": [
+      "ollama",
+      "k6",
+      "caddy",
+      "memos",
+      "traefik",
+      "go-sdk",
+      "infisical",
+      "lazyssh",
+      "syncthing",
+      "awesome-go"
+    ],
+    "nextjs": [
+      "papermark",
+      "cal.diy",
+      "polar",
+      "blinko",
+      "nextjs-starter",
+      "magic-portfolio",
+      "jsoncrack.com",
+      "saas-starter",
+      "midday",
+      "postiz-app"
+    ],
+    "codex": [
+      "awesome-codex-skills",
+      "paseo",
+      "obsidian-skills",
+      "graphify",
+      "claurst",
+      "ui-ux-pro-max-skill",
+      "claudian",
+      "apple-bento-grid",
+      "humanlayer",
+      "Claudable"
+    ],
+    "agent-skills": [
+      "agent-skills",
+      "antigravity-awesome-skills",
+      "awesome-claude-code",
+      "opengap",
+      "apple-bento-grid",
+      "eigent",
+      "awesome-claude-skills",
+      "planning-with-files",
+      "skills",
+      "deepchat"
+    ],
+    "developer-tools": [
+      "ECC",
+      "streamlit",
+      "antigravity-link-extension",
+      "waveterm",
+      "it-tools",
+      "localstack",
+      "hoppscotch",
+      "klavis",
+      "responsively-app",
+      "iii"
+    ],
+    "deepseek": [
+      "ollama",
+      "easy-vibe",
+      "deep-searcher",
+      "GPT_API_free",
+      "SQLBot",
+      "vllm",
+      "unsloth",
+      "dyad",
+      "FastGPT"
+    ],
+    "cloud": [
+      "nats-server",
+      "pi-hole",
+      "server-survival",
+      "localstack",
+      "ubicloud",
+      "server",
+      "terraform",
+      "puter",
+      "awesome-selfhosted"
+    ],
+    "macos": [
+      "warp",
+      "snip",
+      "ssh-askpass",
+      "pindrop",
+      "Peekaboo",
+      "waveterm",
+      "ExcalidrawZ",
+      "lima",
+      "the-art-of-command-line"
+    ],
+    "ai-tools": [
+      "Awesome-OSINT-List",
+      "ai-website-cloner-template",
+      "antigravity-link-extension",
+      "navigator",
+      "nocobase",
+      "browser-use",
+      "nanobrowser",
+      "toolsdk-mcp-registry",
+      "prompt-optimizer"
+    ],
+    "antigravity": [
+      "agent-skills",
+      "graphify",
+      "ui-ux-pro-max-skill",
+      "antigravity-link-extension",
+      "AntigravityManager",
+      "awesome-claude-skills",
+      "planning-with-files",
+      "Antigravity-Manager"
+    ],
+    "agentic-workflow": [
+      "claude-code-best-practice",
+      "deer-flow",
+      "eigent",
+      "claude-code-tips",
+      "memU",
+      "sim",
+      "ruflo",
+      "dify"
+    ],
+    "open-source": [
+      "papermark",
+      "cal.diy",
+      "docuseal",
+      "openscreen",
+      "pindrop",
+      "open-source-games",
+      "postiz-app"
+    ],
+    "linux": [
+      "warp",
+      "orbstack",
+      "snip",
+      "waveterm",
+      "How-To-Secure-A-Linux-Server",
+      "the-art-of-command-line",
+      "pear-desktop"
+    ],
+    "browser-automation": [
+      "CloakBrowser",
+      "GenericAgent",
+      "browser",
+      "pinchtab",
+      "skyvern",
+      "browser-use",
+      "mcp"
+    ],
+    "aws": [
+      "system-design-101",
+      "server-survival",
+      "terraform-provider-aws",
+      "localstack",
+      "mcp",
+      "console",
+      "ethereum-etl"
+    ],
+    "finance": [
+      "FinceptTerminal",
+      "actual",
+      "FinRobot",
+      "hyperswitch",
+      "TradingAgents",
+      "qlib",
+      "midday"
+    ],
+    "electron": [
+      "snip",
+      "openscreen",
+      "MineContext",
+      "AFFiNE",
+      "Trilium",
+      "responsively-app",
+      "pear-desktop"
+    ],
+    "chatbot": [
+      "agentscope",
+      "WeKnora",
+      "bRAG-langchain",
+      "gpt4free",
+      "llm-app",
+      "system_prompts_leaks",
+      "node-telegram-bot-api"
+    ],
+    "database": [
+      "neo4j",
+      "meilisearch",
+      "dbeaver",
+      "SpacetimeDB",
+      "whodb",
+      "convex-backend"
+    ],
+    "react": [
+      "reactive-resume",
+      "dockpanel",
+      "Markdrop",
+      "nextjs-starter",
+      "evershop",
+      "awesome-react"
+    ],
+    "markdown": [
+      "pandoc",
+      "memos",
+      "blinko",
+      "Markdrop",
+      "slidev",
+      "markitdown"
+    ],
+    "devops": [
+      "dockpanel",
+      "sentry",
+      "act",
+      "server-survival",
+      "kestra",
+      "the-book-of-secret-knowledge"
+    ],
+    "backend": [
+      "awesome-scalability",
+      "pocketbase",
+      "awesome-system-design-resources",
+      "convex-backend",
+      "iii",
+      "full-stack-fastapi-template"
+    ],
+    "list": [
+      "awesome-startup-credits",
+      "awesome-cli-apps",
+      "frontend-dev-bookmarks",
+      "github-cheat-sheet",
+      "free-programming-books",
+      "awesome-for-beginners"
+    ],
+    "cursor": [
+      "agent-skills",
+      "grepai",
+      "mcp",
+      "fastapi_mcp",
+      "system-prompts-and-models-of-ai-tools",
+      "awesome-cursorrules"
+    ],
+    "gemini": [
+      "graphify",
+      "langextract",
+      "agent-starter-pack",
+      "free-llm-api-resources",
+      "GPT_API_free",
+      "parlant"
+    ],
+    "browser": [
+      "browser",
+      "skyvern",
+      "BrowserOS",
+      "ladybird",
+      "glide",
+      "HeadlessBrowsers"
+    ],
+    "data-analysis": [
+      "streamlit",
+      "BettaFish",
+      "TrendRadar",
+      "pandas-ai",
+      "whodb",
+      "hyperlearn"
+    ],
+    "data-science": [
+      "streamlit",
+      "Made-With-ML",
+      "pandas-ai",
+      "python-training",
+      "gpubootcamp",
+      "hyperlearn"
+    ],
+    "docker-compose": [
+      "coolify",
+      "camunda-platform",
+      "wikipedia-mirror",
+      "boilerplates",
+      "awesome-compose"
+    ],
+    "analytics": [
+      "langfuse",
+      "grafana",
+      "minds-platform",
+      "dbt-core",
+      "openreplay"
+    ],
+    "education": [
+      "carbon",
+      "server-survival",
+      "Web-Dev-For-Beginners",
+      "hacker101",
+      "free-programming-books"
+    ],
+    "bash": [
+      "warp",
+      "boilerplates",
+      "nvm",
+      "starship",
+      "the-art-of-command-line"
+    ],
+    "ai-assistant": [
+      "SocratiCode",
+      "natively-cluely-ai-assistant",
+      "navigator",
+      "nocobase",
+      "deepchat"
+    ],
+    "cybersecurity": [
+      "maigret",
+      "sherlock",
+      "Awesome-OSINT-List",
+      "strix",
+      "cai"
+    ],
+    "monitoring": [
+      "prometheus",
+      "opentelemetry-collector",
+      "worldmonitor",
+      "alertmanager",
+      "changedetection.io"
+    ],
+    "generative-ai": [
+      "ai-for-grant-writing",
+      "waoowaoo",
+      "agent-starter-pack",
+      "strix",
+      "cai"
+    ],
+    "agent-framework": [
+      "evolver",
+      "opengap",
+      "eigent",
+      "BettaFish",
+      "agent-framework"
+    ],
+    "app": [
+      "omi",
+      "AFFiNE",
+      "Cap",
+      "open-source-ios-apps",
+      "awesome-mac"
+    ],
+    "gpu": [
+      "lemonade",
+      "models",
+      "cuvs",
+      "cuml",
+      "hyperlearn"
+    ],
+    "agentic-coding": [
+      "awesome-claude-code",
+      "oh-my-claudecode",
+      "claude-code-best-practice",
+      "claude-code-tips",
+      "DeepCode"
+    ],
+    "agentic-rag": [
+      "OpenViking",
+      "deep-searcher",
+      "bRAG-langchain",
+      "ruflo",
+      "ai-agents-for-beginners"
+    ],
+    "agentic": [
+      "deer-flow",
+      "tinyfish-cookbook",
+      "claude-code-tips",
+      "WeKnora",
+      "autogen"
+    ],
+    "machine-learning": [
+      "QuantMuse",
+      "bRAG-langchain",
+      "models",
+      "cuml",
+      "ai-engineering-hub"
+    ],
+    "openai": [
+      "CyberScraper-2077",
+      "blinko",
+      "openai-cookbook",
+      "llm",
+      "ChatGPT_DAN"
+    ],
+    "css": [
+      "dembrandt",
+      "Web-Dev-For-Beginners",
+      "Wikipedia-Dark",
+      "tailwindcss",
+      "app-ideas"
+    ],
+    "cuda": [
+      "gpubootcamp",
+      "raft",
+      "vllm",
+      "cuvs",
+      "cuml"
+    ],
+    "langchain": [
+      "langfuse",
+      "agents-course",
+      "LEANN",
+      "markitdown"
+    ],
+    "graph": [
+      "neo4j",
+      "jsoncrack.com",
+      "terraform",
+      "graphiti"
+    ],
+    "ai-gateway": [
+      "kong",
+      "9router",
+      "future-agi",
+      "litellm"
+    ],
+    "coding": [
+      "easy-vibe",
+      "InsForge",
+      "beads",
+      "app-ideas"
+    ],
+    "rust": [
+      "warp",
+      "tauri",
+      "gpui-component",
+      "convex-backend"
+    ],
+    "computer-science": [
+      "system-design-101",
+      "coding-interview-university",
+      "awesome-system-design-resources",
+      "developer-roadmap"
+    ],
+    "cpp": [
+      "FinceptTerminal",
+      "sherpa-onnx",
+      "etl",
+      "project-based-learning"
+    ],
+    "fastapi": [
+      "taskdog",
+      "polar",
+      "FileSync",
+      "full-stack-fastapi-template"
+    ],
+    "gpt": [
+      "LightRAG",
+      "note-companion",
+      "magic",
+      "jan"
+    ],
+    "claude-skills": [
+      "NotFair",
+      "Understand-Anything",
+      "natively-cluely-ai-assistant",
+      "memU"
+    ],
+    "osint": [
+      "InstagramOSINT",
+      "Crucix",
+      "yesitsme",
+      "web-check"
+    ],
+    "agent-memory": [
+      "MiroFish",
+      "Memori",
+      "supermemory",
+      "memU"
+    ],
+    "agentic-framework": [
+      "deer-flow",
+      "ruflo",
+      "ai-agents-for-beginners",
+      "dify"
+    ],
+    "rag": [
+      "awesome-llm-apps",
+      "hello-agents",
+      "SQLBot",
+      "graphiti"
+    ],
+    "context-engineering": [
+      "get-shit-done",
+      "MineContext",
+      "PageIndex",
+      "WrenAI"
+    ],
+    "terminal": [
+      "vibetunnel",
+      "s",
+      "diskonaut",
+      "lazygit"
+    ],
+    "cross-platform": [
+      "Mindwtr",
+      "discordo",
+      "Handy",
+      "audacity"
+    ],
+    "command-line": [
+      "waveterm",
+      "eureka",
+      "aider",
+      "pastel"
+    ],
+    "productivity": [
+      "waveterm",
+      "next-ai-draw-io",
+      "ExcalidrawZ",
+      "eureka"
+    ],
+    "ai-memory": [
+      "claude-mem",
+      "Memori",
+      "cognee",
+      "supermemory"
+    ],
+    "self-hosted": [
+      "metube",
+      "Homelab",
+      "FileSync",
+      "awesome-tunneling"
+    ],
+    "frontend": [
+      "it-tools",
+      "frontend-dev-bookmarks",
+      "full-stack-fastapi-template",
+      "vite"
+    ],
+    "android": [
+      "mobilerun",
+      "Mindustry",
+      "sherpa-onnx",
+      "Awesome-Hacking"
+    ],
+    "bigquery": [
+      "minds-platform",
+      "ethereum-etl",
+      "mcp-toolbox",
+      "WrenAI"
+    ],
+    "bot": [
+      "waha",
+      "ccxt",
+      "telegraf",
+      "node-telegram-bot-api"
+    ],
+    "ai-agents-framework": [
+      "koog",
+      "activepieces",
+      "voltagent",
+      "ai-agents-for-beginners"
+    ],
+    "django": [
+      "plane",
+      "docs",
+      "paperless-ngx"
+    ],
+    "collaboration": [
+      "excalidraw",
+      "mattermost",
+      "server"
+    ],
+    "diagrams": [
+      "excalidraw",
+      "next-ai-draw-io",
+      "jsoncrack.com"
+    ],
+    "autogen": [
+      "langfuse",
+      "autogen",
+      "markitdown"
+    ],
+    "large-language-models": [
+      "langfuse",
+      "agentscope",
+      "FinRobot"
+    ],
+    "ai-search": [
+      "qdrant",
+      "Agent-Reach",
+      "firecrawl"
+    ],
+    "apis": [
+      "kong",
+      "n8n",
+      "public-apis"
+    ],
+    "java": [
+      "kafka",
+      "Mindustry",
+      "mcp-for-beginners"
+    ],
+    "cloud-computing": [
+      "nats-server",
+      "system-design-101",
+      "awesome-design-patterns"
+    ],
+    "distributed-systems": [
+      "nats-server",
+      "seaweedfs",
+      "awesome-system-design-resources"
+    ],
+    "enterprise-search": [
+      "meilisearch",
+      "typesense",
+      "onyx"
+    ],
+    "peer-to-peer": [
+      "ZeroTierOne",
+      "croc",
+      "syncthing"
+    ],
+    "aigc": [
+      "daily_stock_analysis",
+      "Pixelle-Video",
+      "Wan2.2"
+    ],
+    "pdf": [
+      "papermark",
+      "pdfme",
+      "pdfplumber"
+    ],
+    "p2p": [
+      "anytype-ts",
+      "bitcoin",
+      "syncthing"
+    ],
+    "git": [
+      "obsidian-git",
+      "github-cheat-sheet",
+      "lazygit"
+    ],
+    "obsidian": [
+      "obsidian-git",
+      "claudian",
+      "note-companion"
+    ],
+    "video-generation": [
+      "ViMax",
+      "Pixelle-Video",
+      "Wan2.2"
+    ],
+    "apps": [
+      "odoo",
+      "open-source-mac-os-apps",
+      "awesome-mac"
+    ],
+    "framework": [
+      "medusa",
+      "llama_index",
+      "cai"
+    ],
+    "desktop-app": [
+      "tauri",
+      "responsively-app",
+      "pear-desktop"
+    ],
+    "information-gathering": [
+      "maigret",
+      "holehe",
+      "social-analyzer"
+    ],
+    "alerting": [
+      "prometheus",
+      "grafana",
+      "opensre"
+    ],
+    "dashboard": [
+      "grafana",
+      "pi-hole",
+      "worldmonitor"
+    ],
+    "data-visualization": [
+      "grafana",
+      "streamlit",
+      "whodb"
+    ],
+    "cncf": [
+      "cilium",
+      "backstage",
+      "containerd"
+    ],
+    "containers": [
+      "cilium",
+      "containerd",
+      "etl"
+    ],
+    "application": [
+      "llama_index",
+      "mem0",
+      "awesome-mac"
+    ],
+    "data": [
+      "llama_index",
+      "pandas-ai",
+      "data-engineer-handbook"
+    ],
+    "algorithmic-trading": [
+      "FinceptTerminal",
+      "alpaca-py",
+      "qlib"
+    ],
+    "a2a": [
+      "evolver",
+      "A2A",
+      "adk-go"
+    ],
+    "c": [
+      "omi",
+      "lvgl",
+      "open-source-mac-os-apps"
+    ],
+    "clawdbot": [
+      "DeepTutor",
+      "obsidian-skills",
+      "awesome-openclaw-usecases"
+    ],
+    "copilot": [
+      "paseo",
+      "git-mcp",
+      "system-prompts-and-models-of-ai-tools"
+    ],
+    "accessibility": [
+      "design-extract",
+      "opendataloader-pdf",
+      "Handy"
+    ],
+    "genai": [
+      "LightRAG",
+      "lemonade",
+      "500-AI-Agents-Projects"
+    ],
+    "gpt-4": [
+      "LightRAG",
+      "openai-cookbook",
+      "ChatGPT_DAN"
+    ],
+    "knowledge-graph": [
+      "LightRAG",
+      "MiroFish",
+      "Trilium"
+    ],
+    "csharp": [
+      "PrompterOne",
+      "jellyfin",
+      "mcp-for-beginners"
+    ],
+    "dotnet": [
+      "PrompterOne",
+      "agent-framework",
+      "jellyfin"
+    ],
+    "llama": [
+      "lemonade",
+      "free-llm-api-resources",
+      "fish-speech"
+    ],
+    "aiagent": [
+      "mission-control",
+      "FinRobot",
+      "Memori"
+    ],
+    "openclaw": [
+      "mission-control",
+      "awesome-openclaw-usecases",
+      "openclaw"
+    ],
+    "esp32": [
+      "RuView",
+      "macless-haystack",
+      "firmware"
+    ],
+    "document-parsing": [
+      "opendataloader-pdf",
+      "docling",
+      "PaddleOCR"
+    ],
+    "assistant": [
+      "opengap",
+      "openclaw",
+      "open-notebook"
+    ],
+    "ide": [
+      "claudian",
+      "fresh",
+      "code-server"
+    ],
+    "mac": [
+      "meetily",
+      "Cap",
+      "pear-desktop"
+    ],
+    "email": [
+      "holehe",
+      "alertmanager",
+      "novu"
+    ],
+    "instagram": [
+      "holehe",
+      "yesitsme",
+      "Clone-Wars"
+    ],
+    "cloudflare-workers": [
+      "moltworker",
+      "vibesdk",
+      "supermemory"
+    ],
+    "anthropic-claude": [
+      "claude-code-templates",
+      "open-claude-cowork",
+      "opcode"
+    ],
+    "deep-research": [
+      "deep-searcher",
+      "BettaFish",
+      "DeepResearch"
+    ],
+    "graphql": [
+      "graphql.github.io",
+      "twenty",
+      "yaak"
+    ],
+    "oss": [
+      "graphql.github.io",
+      "aisheets",
+      "postiz-app"
+    ],
+    "autonomous-agents": [
+      "agenticSeek",
+      "byterover-cli",
+      "sleepless-agent"
+    ],
+    "crm": [
+      "twenty",
+      "erpnext",
+      "platform"
+    ],
+    "aiagentframework": [
+      "crewAI",
+      "adk-go",
+      "voltagent"
+    ],
+    "algorithm": [
+      "tech-interview-handbook",
+      "coding-interview-university",
+      "Python"
+    ],
+    "algorithms": [
+      "tech-interview-handbook",
+      "coding-interview-university",
+      "etl"
+    ],
+    "documentation": [
+      "docs",
+      "the-art-of-command-line",
+      "storybook"
+    ],
+    "pytorch": [
+      "nano-vllm",
+      "ComfyUI",
+      "models"
+    ],
+    "html": [
+      "Web-Dev-For-Beginners",
+      "wikipedia-mirror",
+      "storybook"
+    ],
+    "cryptocurrency": [
+      "twelvedata-python",
+      "alpha_vantage",
+      "bitcoin"
+    ],
+    "bitcoin": [
+      "alpha_vantage",
+      "bitcoin",
+      "ccxt"
+    ],
+    "csv": [
+      "pandas-ai",
+      "jsoncrack.com",
+      "ethereum-etl"
+    ],
+    "editor": [
+      "AFFiNE",
+      "drawdb",
+      "audacity"
+    ],
+    "desktop": [
+      "Mindustry",
+      "ab-download-manager",
+      "puter"
+    ],
+    "angular": [
+      "paperless-ngx",
+      "openreplay",
+      "storybook"
+    ],
+    "visualization": [
+      "wikipedia-map",
+      "diskonaut",
+      "todoctor"
+    ],
+    "typescript": [
+      "evershop",
+      "convex-backend",
+      "midday"
+    ],
+    "document-signing": [
+      "documenso",
+      "docuseal"
+    ],
+    "e-signature": [
+      "documenso",
+      "docuseal"
+    ],
+    "gantt": [
+      "plane",
+      "leantime"
+    ],
+    "drawing": [
+      "excalidraw",
+      "ExcalidrawZ"
+    ],
+    "low-code": [
+      "node-red",
+      "nocodb"
+    ],
+    "gemma": [
+      "ollama",
+      "unsloth"
+    ],
+    "gemma3": [
+      "ollama",
+      "unsloth"
+    ],
+    "ai-search-engine": [
+      "qdrant",
+      "Vane"
+    ],
+    "data-catalog": [
+      "datahub",
+      "OpenMetadata"
+    ],
+    "next-auth": [
+      "papermark",
+      "cal.diy"
+    ],
+    "obsidian-plugin": [
+      "obsidian-git",
+      "claudian"
+    ],
+    "bot-detection": [
+      "tirreno",
+      "CloakBrowser"
+    ],
+    "resume": [
+      "reactive-resume",
+      "magic-portfolio"
+    ],
+    "course": [
+      "easy-vibe",
+      "agents-course"
+    ],
+    "erp": [
+      "odoo",
+      "erpnext"
+    ],
+    "management": [
+      "odoo",
+      "vibe-kanban"
+    ],
+    "ecommerce": [
+      "medusa",
+      "evershop"
+    ],
+    "design": [
+      "penpot",
+      "server"
+    ],
+    "converter": [
+      "pandoc",
+      "it-tools"
+    ],
+    "electron-app": [
+      "AiToEarn",
+      "Trilium"
+    ],
+    "disk-space": [
+      "PureMac",
+      "diskonaut"
+    ],
+    "coding-interviews": [
+      "system-design-101",
+      "coding-interview-university"
+    ],
+    "awesome-lists": [
+      "awesome-codex-skills",
+      "awesome-for-non-programmers"
+    ],
+    "codex-cli": [
+      "awesome-codex-skills",
+      "agent-orchestrator"
+    ],
+    "comfyui": [
+      "Pixelle-Video",
+      "ComfyUI"
+    ],
+    "tts": [
+      "Pixelle-Video",
+      "fish-speech"
+    ],
+    "documents": [
+      "docuseal",
+      "docling"
+    ],
+    "skills": [
+      "Claude-OSINT",
+      "claude-plugins-official"
+    ],
+    "architecture": [
+      "awesome-scalability",
+      "awesome-design-patterns"
+    ],
+    "observability": [
+      "future-agi",
+      "opentelemetry-collector"
+    ],
+    "metrics": [
+      "prometheus",
+      "opentelemetry-collector"
+    ],
+    "business-intelligence": [
+      "grafana",
+      "dbt-core"
+    ],
+    "grafana": [
+      "loki",
+      "opensre"
+    ],
+    "fine-tuning": [
+      "llama_index",
+      "unsloth"
+    ],
+    "flutter": [
+      "omi",
+      "immich"
+    ],
+    "deepresearch": [
+      "DeepTutor",
+      "DeepResearch"
+    ],
+    "antigravity-ide": [
+      "agent-skills",
+      "AntigravityManager"
+    ],
+    "audio": [
+      "VoxCPM",
+      "audacity"
+    ],
+    "minicpm": [
+      "VoxCPM",
+      "MiniCPM-V"
+    ],
+    "claude-code-plugin": [
+      "design-extract",
+      "NotFair"
+    ],
+    "claudecode": [
+      "agentmemory",
+      "open-swe"
+    ],
+    "tutorial": [
+      "claude-howto",
+      "hello-agents"
+    ],
+    "graphrag": [
+      "LightRAG",
+      "graphify"
+    ],
+    "apple-intelligence": [
+      "apfel",
+      "osaurus"
+    ],
+    "apple-silicon": [
+      "apfel",
+      "pindrop"
+    ],
+    "bug-bounty": [
+      "Awesome-OSINT-List",
+      "Awesome-Hacking"
+    ],
+    "gemini-api": [
+      "langextract",
+      "CyberScraper-2077"
+    ],
+    "ai-coding": [
+      "antigravity-awesome-skills",
+      "ccpm"
+    ],
+    "amd": [
+      "lemonade",
+      "vllm"
+    ],
+    "acp": [
+      "goose",
+      "AionUi"
+    ],
+    "agent-infrastructure": [
+      "Agent-Reach",
+      "airweave"
+    ],
+    "ai-prompts": [
+      "last30days-skill",
+      "prompt-optimizer"
+    ],
+    "llm-agent": [
+      "agentscope",
+      "DeepCode"
+    ],
+    "ocr": [
+      "chandra",
+      "note-companion"
+    ],
+    "authentication": [
+      "pocketbase",
+      "fastapi_mcp"
+    ],
+    "acme": [
+      "caddy",
+      "infisical"
+    ],
+    "hacking": [
+      "facebook-cracker",
+      "Awesome-Hacking"
+    ],
+    "cdp": [
+      "browser",
+      "pinchtab"
+    ],
+    "embeddings": [
+      "InsForge",
+      "WeKnora"
+    ],
+    "agents-sdk": [
+      "rowboat",
+      "adk-go"
+    ],
+    "money": [
+      "actual",
+      "MoneyPrinterV2"
+    ],
+    "transformer": [
+      "heretic",
+      "fish-speech"
+    ],
+    "security-tools": [
+      "shannon",
+      "web-check"
+    ],
+    "claude-cowork": [
+      "eigent",
+      "open-claude-cowork"
+    ],
+    "account-manager": [
+      "AntigravityManager",
+      "Antigravity-Manager"
+    ],
+    "aiagents": [
+      "open-claude-cowork",
+      "sim"
+    ],
+    "grpc": [
+      "centrifugo",
+      "yaak"
+    ],
+    "ai-scraping": [
+      "CyberScraper-2077",
+      "firecrawl"
+    ],
+    "kanban": [
+      "vibe-kanban",
+      "fizzy"
+    ],
+    "json": [
+      "MoneyPrinterV2",
+      "jsoncrack.com"
+    ],
+    "notebook": [
+      "blinko",
+      "open-notebook"
+    ],
+    "ai-applications": [
+      "yao",
+      "budibase"
+    ],
+    "crypto": [
+      "valuecell",
+      "OpenBB"
+    ],
+    "good-first-issue": [
+      "twenty",
+      "responsively-app"
+    ],
+    "file-sharing": [
+      "croc",
+      "copyparty"
+    ],
+    "ios": [
+      "ExcalidrawZ",
+      "openreplay"
+    ],
+    "github-actions": [
+      "act",
+      "ubicloud"
+    ],
+    "shadcn": [
+      "Markdrop",
+      "tweakcn"
+    ],
+    "vite": [
+      "slidev",
+      "vite"
+    ],
+    "text-editor": [
+      "fresh",
+      "zed"
+    ],
+    "game": [
+      "server-survival",
+      "Mindustry"
+    ],
+    "gamedev": [
+      "tracy",
+      "engine"
+    ],
+    "game-development": [
+      "engine",
+      "SpacetimeDB"
+    ],
+    "containerd": [
+      "containerd",
+      "lima"
+    ],
+    "terraform": [
+      "terraform-provider-aws",
+      "terraform"
+    ],
+    "decentralized": [
+      "LocalAI",
+      "server"
+    ],
+    "mcp-clients": [
+      "mcp",
+      "fastmcp"
+    ],
+    "algotrading": [
+      "alpaca-py",
+      "awesome-quant"
+    ],
+    "financial-data": [
+      "twelvedata-python",
+      "yfinance"
+    ],
+    "forex": [
+      "twelvedata-python",
+      "nautilus_trader"
+    ],
+    "knowledge-base": [
+      "AFFiNE",
+      "Trilium"
+    ],
+    "gpui": [
+      "gpui-component",
+      "zed"
+    ],
+    "huggingface": [
+      "chat-ui",
+      "agents-course"
+    ],
+    "archiving": [
+      "paperless-ngx",
+      "wikipedia-mirror"
+    ],
+    "multiagent": [
+      "OM1",
+      "TradingAgents"
+    ],
+    "hosting": [
+      "ubicloud",
+      "awesome-selfhosted"
+    ],
+    "kubernetes": [
+      "ubicloud",
+      "external-secrets"
+    ],
+    "c-plus-plus": [
+      "bitcoin",
+      "etl"
+    ],
+    "n8n": [
+      "n8n-mcp",
+      "ai_agents_az"
+    ],
+    "workflows": [
+      "n8n-mcp",
+      "ai_agents_az"
+    ],
+    "browser-use": [
+      "browser-use",
+      "UI-TARS-desktop"
+    ],
+    "chatbots": [
+      "gpt4free",
+      "mem0"
+    ],
+    "fintech": [
+      "hyperswitch",
+      "qlib"
+    ],
+    "embedded": [
+      "etl",
+      "lvgl"
+    ],
+    "ai-chat": [
+      "onyx",
+      "gpt4all"
+    ],
+    "clickhouse": [
+      "whodb",
+      "mcp-toolbox"
+    ],
+    "llm-evaluation": [
+      "deepeval",
+      "aisheets"
+    ],
+    "algorithmic-trading-engine": [
+      "awesome-quant",
+      "nautilus_trader"
+    ],
+    "shadcn-ui": [
+      "tweakcn",
+      "saas-starter"
+    ],
+    "anns": [
+      "raft",
+      "cuvs"
+    ],
+    "clustering": [
+      "raft",
+      "cuvs"
+    ],
+    "distance": [
+      "raft",
+      "cuvs"
+    ],
+    "github": [
+      "github-cheat-sheet",
+      "gitdiagram"
+    ],
+    "computer-use": [
+      "Agent-S",
+      "UI-TARS-desktop"
+    ],
+    "postgres": [
+      "saas-starter",
+      "drizzle-orm"
+    ],
+    "ai-app-builder": [
+      "budibase",
+      "dyad"
+    ],
+    "bot-framework": [
+      "telegraf",
+      "node-telegram-bot-api"
+    ],
+    "prompt": [
+      "poml",
+      "prompt-optimizer"
+    ],
+    "nodejs": [
+      "node-telegram-bot-api",
+      "drizzle-orm"
+    ],
+    "bolt": [
+      "dyad",
+      "system-prompts-and-models-of-ai-tools"
+    ],
+    "free": [
+      "build-your-own-x",
+      "public-apis"
+    ],
+    "applications": [
+      "open-source-mac-os-apps",
+      "app-ideas"
+    ],
+    "apple": [
+      "open-source-ios-apps",
+      "awesome-mac"
+    ],
+    "beginner-project": [
+      "awesome-for-beginners",
+      "project-based-learning"
+    ],
+    "digital-signature": [
+      "documenso"
+    ],
+    "docusign-alternative": [
+      "documenso"
+    ],
+    "esign": [
+      "documenso"
+    ],
+    "boards": [
+      "plane"
+    ],
+    "bug-tracker": [
+      "plane"
+    ],
+    "canvas": [
+      "excalidraw"
+    ],
+    "coolify": [
+      "coolify"
+    ],
+    "databases": [
+      "coolify"
+    ],
+    "deployment": [
+      "coolify"
+    ],
+    "mattermost": [
+      "mattermost"
+    ],
+    "monorepo": [
+      "mattermost"
+    ],
+    "evaluation": [
+      "langfuse"
+    ],
+    "amqp": [
+      "rabbitmq-server"
+    ],
+    "amqp-0-9-1": [
+      "rabbitmq-server"
+    ],
+    "amqp1-0": [
+      "rabbitmq-server"
+    ],
+    "message-broker": [
+      "rabbitmq-server"
+    ],
+    "messaging": [
+      "rabbitmq-server"
+    ],
+    "camunda": [
+      "camunda-platform"
+    ],
+    "hacktoberfest2024": [
+      "camunda-platform"
+    ],
+    "flow-based-programming": [
+      "node-red"
+    ],
+    "node-red": [
+      "node-red"
+    ],
+    "openjs-foundation": [
+      "node-red"
+    ],
+    "glm": [
+      "ollama"
+    ],
+    "cypher": [
+      "neo4j"
+    ],
+    "graph-database": [
+      "neo4j"
+    ],
+    "graphdb": [
+      "neo4j"
+    ],
+    "embeddings-similarity": [
+      "qdrant"
+    ],
+    "hnsw": [
+      "qdrant"
+    ],
+    "hybrid-search": [
+      "qdrant"
+    ],
+    "api-gateway": [
+      "kong"
+    ],
+    "api-management": [
+      "kong"
+    ],
+    "keycloak": [
+      "keycloak"
+    ],
+    "oidc": [
+      "keycloak"
+    ],
+    "saml": [
+      "keycloak"
+    ],
+    "kafka": [
+      "kafka"
+    ],
+    "scala": [
+      "kafka"
+    ],
+    "streaming": [
+      "kafka"
+    ],
+    "cloud-native": [
+      "nats-server"
+    ],
+    "connected-vehicle": [
+      "nats-server"
+    ],
+    "app-search": [
+      "meilisearch"
+    ],
+    "algolia": [
+      "typesense"
+    ],
+    "datastore": [
+      "typesense"
+    ],
+    "elasticsearch": [
+      "typesense"
+    ],
+    "faceting": [
+      "typesense"
+    ],
+    "agent-platform": [
+      "datahub"
+    ],
+    "context-management": [
+      "datahub"
+    ],
+    "data-discovery": [
+      "datahub"
+    ],
+    "data-governance": [
+      "datahub"
+    ],
+    "context": [
+      "OpenMetadata"
+    ],
+    "context-layer": [
+      "OpenMetadata"
+    ],
+    "data-collaboration": [
+      "OpenMetadata"
+    ],
+    "data-contracts": [
+      "OpenMetadata"
+    ],
+    "decentralization": [
+      "ZeroTierOne"
+    ],
+    "networking": [
+      "ZeroTierOne"
+    ],
+    "sd-wan": [
+      "ZeroTierOne"
+    ],
+    "sdn": [
+      "ZeroTierOne"
+    ],
+    "a-stock": [
+      "daily_stock_analysis"
+    ],
+    "quant": [
+      "daily_stock_analysis"
+    ],
+    "dataroom": [
+      "papermark"
+    ],
+    "anytype": [
+      "anytype-ts"
+    ],
+    "e2ee": [
+      "anytype-ts"
+    ],
+    "local-first": [
+      "anytype-ts"
+    ],
+    "offline-first": [
+      "anytype-ts"
+    ],
+    "obsidian-md": [
+      "obsidian-git"
+    ],
+    "antispam": [
+      "tirreno"
+    ],
+    "application-monitoring": [
+      "tirreno"
+    ],
+    "audit-logs": [
+      "tirreno"
+    ],
+    "audit-trails": [
+      "tirreno"
+    ],
+    "better-auth": [
+      "reactive-resume"
+    ],
+    "resume-builder": [
+      "reactive-resume"
+    ],
+    "12-factor": [
+      "12-factor-agents"
+    ],
+    "12-factor-agents": [
+      "12-factor-agents"
+    ],
+    "context-window": [
+      "12-factor-agents"
+    ],
+    "agentic-aigc": [
+      "ViMax"
+    ],
+    "academic-pipeline": [
+      "academic-research-skills"
+    ],
+    "academic-writing": [
+      "academic-research-skills"
+    ],
+    "ai-research": [
+      "academic-research-skills"
+    ],
+    "business": [
+      "odoo"
+    ],
+    "odoo": [
+      "odoo"
+    ],
+    "ai-engineering": [
+      "ai-engineering-from-scratch"
+    ],
+    "computer-vision": [
+      "ai-engineering-from-scratch"
+    ],
+    "postgresql": [
+      "cal.diy"
+    ],
+    "prisma": [
+      "cal.diy"
+    ],
+    "blogging": [
+      "Ghost"
+    ],
+    "cms": [
+      "Ghost"
+    ],
+    "ghost": [
+      "Ghost"
+    ],
+    "journalism": [
+      "Ghost"
+    ],
+    "data-flow": [
+      "n8n"
+    ],
+    "commerce": [
+      "medusa"
+    ],
+    "e-commerce": [
+      "medusa"
+    ],
+    "campaign": [
+      "listmonk"
+    ],
+    "campaign-management": [
+      "listmonk"
+    ],
+    "email-marketing": [
+      "listmonk"
+    ],
+    "email-subscription": [
+      "listmonk"
+    ],
+    "listmonk": [
+      "listmonk"
+    ],
+    "clojure": [
+      "penpot"
+    ],
+    "clojurescript": [
+      "penpot"
+    ],
+    "prototyping": [
+      "penpot"
+    ],
+    "ui": [
+      "penpot"
+    ],
+    "commonmark": [
+      "pandoc"
+    ],
+    "document": [
+      "pandoc"
+    ],
+    "haskell": [
+      "pandoc"
+    ],
+    "beautiful": [
+      "carbon"
+    ],
+    "carbon": [
+      "carbon"
+    ],
+    "github-gist": [
+      "carbon"
+    ],
+    "shell": [
+      "warp"
+    ],
+    "ast": [
+      "SocratiCode"
+    ],
+    "blueprint": [
+      "the-architect"
+    ],
+    "anti-detect": [
+      "CloakBrowser"
+    ],
+    "antidetect-browser": [
+      "CloakBrowser"
+    ],
+    "auto-publish": [
+      "AiToEarn"
+    ],
+    "douyin": [
+      "AiToEarn"
+    ],
+    "douyin-api": [
+      "AiToEarn"
+    ],
+    "electron-react": [
+      "AiToEarn"
+    ],
+    "high-performance": [
+      "tauri"
+    ],
+    "mobile-app": [
+      "tauri"
+    ],
+    "native-app": [
+      "tauri"
+    ],
+    "cache-cleaner": [
+      "PureMac"
+    ],
+    "cleanmymac": [
+      "PureMac"
+    ],
+    "cleanup": [
+      "PureMac"
+    ],
+    "disk-cleaner": [
+      "PureMac"
+    ],
+    "colima": [
+      "orbstack"
+    ],
+    "docker-desktop": [
+      "orbstack"
+    ],
+    "lima": [
+      "orbstack"
+    ],
+    "interview-questions": [
+      "system-design-101"
+    ],
+    "aippt": [
+      "ppt-master"
+    ],
+    "office": [
+      "ppt-master"
+    ],
+    "powerpoint": [
+      "ppt-master"
+    ],
+    "powerpoint-generation": [
+      "ppt-master"
+    ],
+    "awesome-resources": [
+      "awesome-codex-skills"
+    ],
+    "image-generation": [
+      "Pixelle-Video"
+    ],
+    "identification": [
+      "maigret"
+    ],
+    "infosec": [
+      "maigret"
+    ],
+    "hotwired-turbo": [
+      "docuseal"
+    ],
+    "amazon-interview": [
+      "interview-company-wise-problems"
+    ],
+    "google-interview": [
+      "interview-company-wise-problems"
+    ],
+    "interview": [
+      "interview-company-wise-problems"
+    ],
+    "meta-interview": [
+      "interview-company-wise-problems"
+    ],
+    "online-assessment": [
+      "interview-company-wise-problems"
+    ],
+    "agentskills": [
+      "Claude-OSINT"
+    ],
+    "control-panel": [
+      "dockpanel"
+    ],
+    "hosting-panel": [
+      "dockpanel"
+    ],
+    "big-data": [
+      "awesome-scalability"
+    ],
+    "evals": [
+      "future-agi"
+    ],
+    "augmentation": [
+      "Fabric"
+    ],
+    "flourishing": [
+      "Fabric"
+    ],
+    "life": [
+      "Fabric"
+    ],
+    "work": [
+      "Fabric"
+    ],
+    "apm": [
+      "sentry"
+    ],
+    "crash-reporting": [
+      "sentry"
+    ],
+    "crash-reports": [
+      "sentry"
+    ],
+    "csp-report": [
+      "sentry"
+    ],
+    "graphing": [
+      "prometheus"
+    ],
+    "k8s-sig-cli": [
+      "kustomize"
+    ],
+    "open-telemetry": [
+      "opentelemetry-collector"
+    ],
+    "opentelemetry": [
+      "opentelemetry-collector"
+    ],
+    "argo": [
+      "argo-cd"
+    ],
+    "argo-cd": [
+      "argo-cd"
+    ],
+    "cd": [
+      "argo-cd"
+    ],
+    "ci-cd": [
+      "argo-cd"
+    ],
+    "cicd": [
+      "argo-cd"
+    ],
+    "bpf": [
+      "cilium"
+    ],
+    "cni": [
+      "cilium"
+    ],
+    "ebpf": [
+      "cilium"
+    ],
+    "cloudnative": [
+      "loki"
+    ],
+    "logging": [
+      "loki"
+    ],
+    "loki": [
+      "loki"
+    ],
+    "es6": [
+      "k6"
+    ],
+    "backstage": [
+      "backstage"
+    ],
+    "developer-experience": [
+      "backstage"
+    ],
+    "developer-portal": [
+      "backstage"
+    ],
+    "dx": [
+      "backstage"
+    ],
+    "grant-proposals": [
+      "ai-for-grant-writing"
+    ],
+    "grants": [
+      "ai-for-grant-writing"
+    ],
+    "scientific-writing": [
+      "ai-for-grant-writing"
+    ],
+    "startup-credits": [
+      "awesome-startup-credits"
+    ],
+    "startups": [
+      "awesome-startup-credits"
+    ],
+    "deepagents": [
+      "langgraph"
+    ],
+    "on-device-ai": [
+      "thunderbolt"
+    ],
+    "ad-blocker": [
+      "pi-hole"
+    ],
+    "blocker": [
+      "pi-hole"
+    ],
+    "dhcp": [
+      "pi-hole"
+    ],
+    "bloomberg-terminal": [
+      "FinceptTerminal"
+    ],
+    "ads-b": [
+      "Shadowbroker"
+    ],
+    "adsb": [
+      "Shadowbroker"
+    ],
+    "air-force-one": [
+      "Shadowbroker"
+    ],
+    "airforce1": [
+      "Shadowbroker"
+    ],
+    "asdb": [
+      "Shadowbroker"
+    ],
+    "ai-sre": [
+      "opensre"
+    ],
+    "datadog": [
+      "opensre"
+    ],
+    "incident-management": [
+      "opensre"
+    ],
+    "ai-assisted-development": [
+      "Claude-Code-Game-Studios"
+    ],
+    "agent-evolution": [
+      "evolver"
+    ],
+    "agent-protocol": [
+      "evolver"
+    ],
+    "bci": [
+      "omi"
+    ],
+    "ai-tutor": [
+      "DeepTutor"
+    ],
+    "cli-tool": [
+      "DeepTutor"
+    ],
+    "autonomous-agent": [
+      "GenericAgent"
+    ],
+    "deeplearning": [
+      "VoxCPM"
+    ],
+    "multilingual": [
+      "VoxCPM"
+    ],
+    "filetype": [
+      "magika"
+    ],
+    "keras-classification-models": [
+      "magika"
+    ],
+    "keras-models": [
+      "magika"
+    ],
+    "ade": [
+      "paseo"
+    ],
+    "animation": [
+      "tegaki"
+    ],
+    "calligraphy": [
+      "tegaki"
+    ],
+    "cursive": [
+      "tegaki"
+    ],
+    "font": [
+      "tegaki"
+    ],
+    "handwriting": [
+      "tegaki"
+    ],
+    "agent-skill": [
+      "design-extract"
+    ],
+    "chrome-extension": [
+      "design-extract"
+    ],
+    "agentmemory": [
+      "agentmemory"
+    ],
+    "defuddle": [
+      "obsidian-skills"
+    ],
+    "annotations": [
+      "snip"
+    ],
+    "click": [
+      "taskdog"
+    ],
+    "makefile": [
+      "taskdog"
+    ],
+    "guide": [
+      "claude-howto"
+    ],
+    "pixijs": [
+      "openscreen"
+    ],
+    "screen-capture": [
+      "openscreen"
+    ],
+    "screen-recorder": [
+      "openscreen"
+    ],
+    "cti": [
+      "sherlock"
+    ],
+    "forensics": [
+      "sherlock"
+    ],
+    "multi-modal-rag": [
+      "RAG-Anything"
+    ],
+    "retrieval-augmented-generation": [
+      "RAG-Anything"
+    ],
+    "agent-fleet": [
+      "agent-orchestrator"
+    ],
+    "agent-swarm": [
+      "agent-orchestrator"
+    ],
+    "git-worktrees": [
+      "agent-orchestrator"
+    ],
+    "blazor": [
+      "PrompterOne"
+    ],
+    "blazor-webassembly": [
+      "PrompterOne"
+    ],
+    "livestreaming": [
+      "PrompterOne"
+    ],
+    "foundationmodels": [
+      "apfel"
+    ],
+    "homebrew": [
+      "apfel"
+    ],
+    "geo": [
+      "NotFair"
+    ],
+    "googleads": [
+      "NotFair"
+    ],
+    "googleadsmcp": [
+      "NotFair"
+    ],
+    "gemini-ai": [
+      "langextract"
+    ],
+    "gemini-flash": [
+      "langextract"
+    ],
+    "gemini-pro": [
+      "langextract"
+    ],
+    "agentic-skills": [
+      "antigravity-awesome-skills"
+    ],
+    "ai-agent-skills": [
+      "antigravity-awesome-skills"
+    ],
+    "instagram-osint": [
+      "InstagramOSINT"
+    ],
+    "osint-python": [
+      "InstagramOSINT"
+    ],
+    "osinttool": [
+      "InstagramOSINT"
+    ],
+    "shell-script": [
+      "InstaBrute"
+    ],
+    "claurst": [
+      "claurst"
+    ],
+    "boilerplate": [
+      "ai-website-cloner-template"
+    ],
+    "agentic-code": [
+      "awesome-claude-code"
+    ],
+    "ai-workflow-optimization": [
+      "awesome-claude-code"
+    ],
+    "ai-workflows": [
+      "awesome-claude-code"
+    ],
+    "bilibili": [
+      "Agent-Reach"
+    ],
+    "dapp": [
+      "marketplace"
+    ],
+    "plugin": [
+      "claude-hud"
+    ],
+    "maps": [
+      "arnis"
+    ],
+    "minecraft": [
+      "arnis"
+    ],
+    "openstreetmap": [
+      "arnis"
+    ],
+    "osm": [
+      "arnis"
+    ],
+    "overpass-api": [
+      "arnis"
+    ],
+    "ai-skill": [
+      "last30days-skill"
+    ],
+    "bluesky": [
+      "last30days-skill"
+    ],
+    "densepose": [
+      "RuView"
+    ],
+    "firmware": [
+      "RuView"
+    ],
+    "realtime": [
+      "pocketbase"
+    ],
+    "ai-skills": [
+      "ui-ux-pro-max-skill"
+    ],
+    "antigravity-skills": [
+      "Understand-Anything"
+    ],
+    "business-knowledge": [
+      "Understand-Anything"
+    ],
+    "codebase-analysis": [
+      "Understand-Anything"
+    ],
+    "code-execution": [
+      "zeroboot"
+    ],
+    "copy-on-write": [
+      "zeroboot"
+    ],
+    "firecracker": [
+      "zeroboot"
+    ],
+    "kvm": [
+      "zeroboot"
+    ],
+    "a11y": [
+      "opendataloader-pdf"
+    ],
+    "bounding-box": [
+      "opendataloader-pdf"
+    ],
+    "apple-design": [
+      "apple-bento-grid"
+    ],
+    "bento-grid": [
+      "apple-bento-grid"
+    ],
+    "backup-tool": [
+      "immich"
+    ],
+    "google-photos": [
+      "immich"
+    ],
+    "google-photos-alternative": [
+      "immich"
+    ],
+    "intelligence": [
+      "Crucix"
+    ],
+    "financial-forecasting": [
+      "MiroFish"
+    ],
+    "future-prediction": [
+      "MiroFish"
+    ],
+    "ai-meeting-assistant": [
+      "meetily"
+    ],
+    "local-ai": [
+      "meetily"
+    ],
+    "automatic-https": [
+      "caddy"
+    ],
+    "caddy": [
+      "caddy"
+    ],
+    "caddyfile": [
+      "caddy"
+    ],
+    "facebook": [
+      "facebook-cracker"
+    ],
+    "pythonscript": [
+      "facebook-cracker"
+    ],
+    "headless": [
+      "browser"
+    ],
+    "lightpanda": [
+      "browser"
+    ],
+    "agentic-engineering": [
+      "claude-code-best-practice"
+    ],
+    "deno": [
+      "InsForge"
+    ],
+    "clawbot": [
+      "OpenViking"
+    ],
+    "context-database": [
+      "OpenViking"
+    ],
+    "ssh-askpass": [
+      "ssh-askpass"
+    ],
+    "cheating": [
+      "natively-cluely-ai-assistant"
+    ],
+    "azure-openai": [
+      "litellm"
+    ],
+    "bedrock": [
+      "litellm"
+    ],
+    "gateway": [
+      "litellm"
+    ],
+    "ebay": [
+      "holehe"
+    ],
+    "emails": [
+      "holehe"
+    ],
+    "film-production": [
+      "waoowaoo"
+    ],
+    "open-source-intelligence": [
+      "yesitsme"
+    ],
+    "osint-tools": [
+      "yesitsme"
+    ],
+    "headless-chrome": [
+      "pinchtab"
+    ],
+    "orchestrator": [
+      "pinchtab"
+    ],
+    "geopolitics": [
+      "worldmonitor"
+    ],
+    "news": [
+      "worldmonitor"
+    ],
+    "moltbot": [
+      "awesome-openclaw-usecases"
+    ],
+    "openclaw-plugin": [
+      "awesome-openclaw-usecases"
+    ],
+    "ai-agents-automation": [
+      "rowboat"
+    ],
+    "pdf-designer": [
+      "pdfme"
+    ],
+    "pdf-generation": [
+      "pdfme"
+    ],
+    "pdf-generator": [
+      "pdfme"
+    ],
+    "pdf-lib": [
+      "pdfme"
+    ],
+    "chatgpt-prompts": [
+      "prompts.chat"
+    ],
+    "budgeting": [
+      "actual"
+    ],
+    "personal-finance": [
+      "actual"
+    ],
+    "abliteration": [
+      "heretic"
+    ],
+    "fingpt": [
+      "FinRobot"
+    ],
+    "penetration-testing": [
+      "shannon"
+    ],
+    "pentesting": [
+      "shannon"
+    ],
+    "security-audit": [
+      "shannon"
+    ],
+    "security-automation": [
+      "shannon"
+    ],
+    "chrome-devtools-protocol": [
+      "antigravity-link-extension"
+    ],
+    "nix-flake": [
+      "qrcode-pretty"
+    ],
+    "qrcode": [
+      "qrcode-pretty"
+    ],
+    "qrcode-generator": [
+      "qrcode-pretty"
+    ],
+    "meta-prompting": [
+      "get-shit-done"
+    ],
+    "spec-driven-development": [
+      "get-shit-done"
+    ],
+    "dictation": [
+      "pindrop"
+    ],
+    "menu-bar": [
+      "pindrop"
+    ],
+    "remote": [
+      "vibetunnel"
+    ],
+    "vibecoding": [
+      "vibetunnel"
+    ],
+    "antigravity-ai": [
+      "AntigravityManager"
+    ],
+    "antigravity-tools": [
+      "AntigravityManager"
+    ],
+    "screenshots": [
+      "Peekaboo"
+    ],
+    "swift": [
+      "Peekaboo"
+    ],
+    "getting-things-done": [
+      "Mindwtr"
+    ],
+    "gtd": [
+      "Mindwtr"
+    ],
+    "gtd-applications": [
+      "Mindwtr"
+    ],
+    "gtd-workflow": [
+      "Mindwtr"
+    ],
+    "crustacean": [
+      "openclaw"
+    ],
+    "molty": [
+      "openclaw"
+    ],
+    "cookbook": [
+      "tinyfish-cookbook"
+    ],
+    "examples": [
+      "tinyfish-cookbook"
+    ],
+    "directory": [
+      "clawhub"
+    ],
+    "skill": [
+      "clawhub"
+    ],
+    "code-search": [
+      "grepai"
+    ],
+    "ai-deep-fake": [
+      "Deep-Live-Cam"
+    ],
+    "ai-face": [
+      "Deep-Live-Cam"
+    ],
+    "ai-webcam": [
+      "Deep-Live-Cam"
+    ],
+    "ably": [
+      "centrifugo"
+    ],
+    "alternative": [
+      "centrifugo"
+    ],
+    "eventsource": [
+      "centrifugo"
+    ],
+    "http-streaming": [
+      "centrifugo"
+    ],
+    "quantitative-trading": [
+      "QuantMuse"
+    ],
+    "llm-scraper": [
+      "CyberScraper-2077"
+    ],
+    "help-wanted": [
+      "IPTV"
+    ],
+    "looking-for-contributors": [
+      "IPTV"
+    ],
+    "digital-products": [
+      "polar"
+    ],
+    "merchant-of-record": [
+      "polar"
+    ],
+    "payments": [
+      "polar"
+    ],
+    "multi-agent-systems": [
+      "owl"
+    ],
+    "task-automation": [
+      "owl"
+    ],
+    "web-interaction": [
+      "owl"
+    ],
+    "agent-development": [
+      "learn-claude-code"
+    ],
+    "privacy": [
+      "web-check"
+    ],
+    "security": [
+      "web-check"
+    ],
+    "sysadmin": [
+      "web-check"
+    ],
+    "foss": [
+      "memos"
+    ],
+    "memo": [
+      "memos"
+    ],
+    "airbnb": [
+      "Clone-Wars"
+    ],
+    "clone": [
+      "Clone-Wars"
+    ],
+    "netflix": [
+      "Clone-Wars"
+    ],
+    "reddit": [
+      "Clone-Wars"
+    ],
+    "automated-documentation": [
+      "CodeWiki"
+    ],
+    "code-documentation": [
+      "CodeWiki"
+    ],
+    "code-understanding": [
+      "CodeWiki"
+    ],
+    "documentation-generator": [
+      "CodeWiki"
+    ],
+    "open-source-deepwiki": [
+      "CodeWiki"
+    ],
+    "backup": [
+      "onedump"
+    ],
+    "database-backup": [
+      "onedump"
+    ],
+    "dba": [
+      "onedump"
+    ],
+    "dump": [
+      "onedump"
+    ],
+    "file-sync": [
+      "onedump"
+    ],
+    "adal": [
+      "planning-with-files"
+    ],
+    "earthengine": [
+      "qgis-gee-data-catalogs-plugin"
+    ],
+    "geospatial": [
+      "qgis-gee-data-catalogs-plugin"
+    ],
+    "qgis": [
+      "qgis-gee-data-catalogs-plugin"
+    ],
+    "qgis-plugin": [
+      "qgis-gee-data-catalogs-plugin"
+    ],
+    "youtube": [
+      "metube"
+    ],
+    "youtube-dl": [
+      "metube"
+    ],
+    "yt-dlp": [
+      "metube"
+    ],
+    "task-manager": [
+      "vibe-kanban"
+    ],
+    "airtable": [
+      "nocodb"
+    ],
+    "airtable-alternative": [
+      "nocodb"
+    ],
+    "automatic-api": [
+      "nocodb"
+    ],
+    "local": [
+      "awesome-local-llm"
+    ],
+    "minicpm-o": [
+      "MiniCPM-V"
+    ],
+    "minicpm-v": [
+      "MiniCPM-V"
+    ],
+    "multi-modal": [
+      "MiniCPM-V"
+    ],
+    "datacarving": [
+      "testdisk"
+    ],
+    "datarecovery": [
+      "testdisk"
+    ],
+    "disk": [
+      "testdisk"
+    ],
+    "filesystem": [
+      "testdisk"
+    ],
+    "photorec": [
+      "testdisk"
+    ],
+    "mesh": [
+      "netbird"
+    ],
+    "mesh-networks": [
+      "netbird"
+    ],
+    "nat-traversal": [
+      "netbird"
+    ],
+    "netbird": [
+      "netbird"
+    ],
+    "outreach": [
+      "MoneyPrinterV2"
+    ],
+    "memos": [
+      "blinko"
+    ],
+    "cli-app": [
+      "awesome-cli-apps"
+    ],
+    "assitant": [
+      "valuecell"
+    ],
+    "deepseek-r1": [
+      "agenticSeek"
+    ],
+    "alerts": [
+      "open-scouts"
+    ],
+    "email-notifications": [
+      "open-scouts"
+    ],
+    "firecrawl": [
+      "open-scouts"
+    ],
+    "adder": [
+      "TG-All-In-One-Tool"
+    ],
+    "hidden-members": [
+      "TG-All-In-One-Tool"
+    ],
+    "mass-dm": [
+      "TG-All-In-One-Tool"
+    ],
+    "members-adding-scri": [
+      "TG-All-In-One-Tool"
+    ],
+    "members-adding-script": [
+      "TG-All-In-One-Tool"
+    ],
+    "epub": [
+      "bookhunter"
+    ],
+    "spider": [
+      "bookhunter"
+    ],
+    "crm-system": [
+      "twenty"
+    ],
+    "customer": [
+      "twenty"
+    ],
+    "data-transfer": [
+      "croc"
+    ],
+    "pake": [
+      "croc"
+    ],
+    "apple-foundation-models": [
+      "osaurus"
+    ],
+    "apple-neural-engine": [
+      "osaurus"
+    ],
+    "a2a-mcp": [
+      "A2A"
+    ],
+    "a2a-protocol": [
+      "A2A"
+    ],
+    "a2a-server": [
+      "A2A"
+    ],
+    "mcp-servers": [
+      "registry"
+    ],
+    "swiftui": [
+      "ExcalidrawZ"
+    ],
+    "ci": [
+      "act"
+    ],
+    "application-manager": [
+      "Bulk-Crap-Uninstaller"
+    ],
+    "application-uninstaller": [
+      "Bulk-Crap-Uninstaller"
+    ],
+    "bloatware": [
+      "Bulk-Crap-Uninstaller"
+    ],
+    "bulk-actions": [
+      "Bulk-Crap-Uninstaller"
+    ],
+    "bulk-uninstall": [
+      "Bulk-Crap-Uninstaller"
+    ],
+    "dnd-kit": [
+      "Markdrop"
+    ],
+    "react-router": [
+      "Markdrop"
+    ],
+    "presentation": [
+      "slidev"
+    ],
+    "slides": [
+      "slidev"
+    ],
+    "vue": [
+      "slidev"
+    ],
+    "developer-productivity": [
+      "it-tools"
+    ],
+    "hotwire": [
+      "fizzy"
+    ],
+    "rails": [
+      "fizzy"
+    ],
+    "ruby": [
+      "fizzy"
+    ],
+    "terminal-based": [
+      "fresh"
+    ],
+    "findmy": [
+      "macless-haystack"
+    ],
+    "openhaystack": [
+      "macless-haystack"
+    ],
+    "brand-audits": [
+      "dembrandt"
+    ],
+    "design-engineering": [
+      "dembrandt"
+    ],
+    "design-md": [
+      "dembrandt"
+    ],
+    "design-ops": [
+      "dembrandt"
+    ],
+    "gcp": [
+      "agent-starter-pack"
+    ],
+    "genai-agents": [
+      "agent-starter-pack"
+    ],
+    "coding-assistant": [
+      "byterover-cli"
+    ],
+    "deep-search": [
+      "BettaFish"
+    ],
+    "bark": [
+      "TrendRadar"
+    ],
+    "hot-news": [
+      "TrendRadar"
+    ],
+    "gamedev-library": [
+      "tracy"
+    ],
+    "gamedevelopment": [
+      "tracy"
+    ],
+    "library": [
+      "tracy"
+    ],
+    "performance": [
+      "tracy"
+    ],
+    "homelab": [
+      "Homelab"
+    ],
+    "homelab-setup": [
+      "Homelab"
+    ],
+    "yaml": [
+      "Homelab"
+    ],
+    "coding-agent": [
+      "vibesdk"
+    ],
+    "durable-objects": [
+      "vibesdk"
+    ],
+    "text-to-app": [
+      "vibesdk"
+    ],
+    "conversion": [
+      "VERT"
+    ],
+    "ffmpeg": [
+      "VERT"
+    ],
+    "imagemagick": [
+      "VERT"
+    ],
+    "magick": [
+      "VERT"
+    ],
+    "pandoc": [
+      "VERT"
+    ],
+    "component-library": [
+      "nextjs-starter"
+    ],
+    "design-system": [
+      "nextjs-starter"
+    ],
+    "figma": [
+      "nextjs-starter"
+    ],
+    "cv": [
+      "magic-portfolio"
+    ],
+    "onceui": [
+      "magic-portfolio"
+    ],
+    "portfolio": [
+      "magic-portfolio"
+    ],
+    "games": [
+      "open-source-games"
+    ],
+    "algorithm-interview": [
+      "tech-interview-handbook"
+    ],
+    "algorithm-interview-questions": [
+      "tech-interview-handbook"
+    ],
+    "behavioral-interviews": [
+      "tech-interview-handbook"
+    ],
+    "consul": [
+      "traefik"
+    ],
+    "etcd": [
+      "traefik"
+    ],
+    "3d-gaussian-splatting": [
+      "engine"
+    ],
+    "3dgs": [
+      "engine"
+    ],
+    "game-engine": [
+      "engine"
+    ],
+    "embedding-models": [
+      "MineContext"
+    ],
+    "client": [
+      "discordo"
+    ],
+    "discord": [
+      "discordo"
+    ],
+    "discord-bot": [
+      "discordo"
+    ],
+    "discordo": [
+      "discordo"
+    ],
+    "cri": [
+      "containerd"
+    ],
+    "terraform-provider": [
+      "terraform-provider-aws"
+    ],
+    "lima-vm": [
+      "lima"
+    ],
+    "qemu": [
+      "lima"
+    ],
+    "vm": [
+      "lima"
+    ],
+    "databricks": [
+      "dbeaver"
+    ],
+    "db2": [
+      "dbeaver"
+    ],
+    "dbeaver": [
+      "dbeaver"
+    ],
+    "nginx": [
+      "nginx-proxy-manager"
+    ],
+    "nginx-proxy": [
+      "nginx-proxy-manager"
+    ],
+    "cognitive-architecture": [
+      "cognee"
+    ],
+    "cognitive-memory": [
+      "cognee"
+    ],
+    "1337": [
+      "L1B3RT4S"
+    ],
+    "adversarial-attacks": [
+      "L1B3RT4S"
+    ],
+    "ai-jailbreak": [
+      "L1B3RT4S"
+    ],
+    "ai-liberation": [
+      "L1B3RT4S"
+    ],
+    "continuous-integration": [
+      "localstack"
+    ],
+    "localstack": [
+      "localstack"
+    ],
+    "audio-generation": [
+      "LocalAI"
+    ],
+    "opencode": [
+      "opentui"
+    ],
+    "tui": [
+      "opentui"
+    ],
+    "android-automation": [
+      "mobilerun"
+    ],
+    "mobile-automation": [
+      "mobilerun"
+    ],
+    "blocknotejs": [
+      "docs"
+    ],
+    "collaborative": [
+      "docs"
+    ],
+    "g2g": [
+      "docs"
+    ],
+    "inference": [
+      "nano-vllm"
+    ],
+    "nlp": [
+      "nano-vllm"
+    ],
+    "admin-dashboard": [
+      "nocobase"
+    ],
+    "curriculum": [
+      "Web-Dev-For-Beginners"
+    ],
+    "cc-by-sa": [
+      "How-To-Secure-A-Linux-Server"
+    ],
+    "hardening": [
+      "How-To-Secure-A-Linux-Server"
+    ],
+    "hardening-steps": [
+      "How-To-Secure-A-Linux-Server"
+    ],
+    "linux-server": [
+      "How-To-Secure-A-Linux-Server"
+    ],
+    "alertmanager": [
+      "alertmanager"
+    ],
+    "deduplication": [
+      "alertmanager"
+    ],
+    "browser-ide": [
+      "code-server"
+    ],
+    "dev-tools": [
+      "code-server"
+    ],
+    "development-environment": [
+      "code-server"
+    ],
+    "remote-work": [
+      "code-server"
+    ],
+    "coding-interview": [
+      "coding-interview-university"
+    ],
+    "mcp-client": [
+      "mcp"
+    ],
+    "mcp-host": [
+      "mcp"
+    ],
+    "browseros": [
+      "BrowserOS"
+    ],
+    "chromium": [
+      "BrowserOS"
+    ],
+    "artificial-inteligence": [
+      "minds-platform"
+    ],
+    "finnhub": [
+      "finnhub-python"
+    ],
+    "stock": [
+      "finnhub-python"
+    ],
+    "alpaca": [
+      "alpaca-py"
+    ],
+    "alpaca-api": [
+      "alpaca-py"
+    ],
+    "brokerage": [
+      "alpaca-py"
+    ],
+    "client-python": [
+      "client-python"
+    ],
+    "polygon": [
+      "client-python"
+    ],
+    "realtime-stocks": [
+      "client-python"
+    ],
+    "financial-analysis": [
+      "twelvedata-python"
+    ],
+    "interactive-charts": [
+      "twelvedata-python"
+    ],
+    "alpha-vantage": [
+      "alpha_vantage"
+    ],
+    "alphavantage": [
+      "alpha_vantage"
+    ],
+    "api-wrapper": [
+      "alpha_vantage"
+    ],
+    "fix-yahoo-finance": [
+      "yfinance"
+    ],
+    "market-data": [
+      "yfinance"
+    ],
+    "pandas": [
+      "yfinance"
+    ],
+    "data-engineering": [
+      "Made-With-ML"
+    ],
+    "data-quality": [
+      "Made-With-ML"
+    ],
+    "distributed-ml": [
+      "Made-With-ML"
+    ],
+    "attention": [
+      "performer-pytorch"
+    ],
+    "attention-mechanism": [
+      "performer-pytorch"
+    ],
+    "transformers": [
+      "performer-pytorch"
+    ],
+    "adk": [
+      "adk-samples"
+    ],
+    "agent-samples": [
+      "adk-samples"
+    ],
+    "banking": [
+      "python-training"
+    ],
+    "binder": [
+      "python-training"
+    ],
+    "binder-ready": [
+      "python-training"
+    ],
+    "cib": [
+      "python-training"
+    ],
+    "convert": [
+      "docling"
+    ],
+    "document-parser": [
+      "docling"
+    ],
+    "speech-to-text": [
+      "Handy"
+    ],
+    "tauri-v2": [
+      "Handy"
+    ],
+    "cloud-ml": [
+      "cs249r_book"
+    ],
+    "computer-systems": [
+      "cs249r_book"
+    ],
+    "courseware": [
+      "cs249r_book"
+    ],
+    "tailscale": [
+      "headscale"
+    ],
+    "tailscale-control-server": [
+      "headscale"
+    ],
+    "tailscale-server": [
+      "headscale"
+    ],
+    "wireguard": [
+      "headscale"
+    ],
+    "crdt": [
+      "AFFiNE"
+    ],
+    "desktop-application": [
+      "gpui-component"
+    ],
+    "uikit": [
+      "gpui-component"
+    ],
+    "analysis": [
+      "social-analyzer"
+    ],
+    "analyzer": [
+      "social-analyzer"
+    ],
+    "mlops": [
+      "agent-lightning"
+    ],
+    "reinforcement-learning": [
+      "agent-lightning"
+    ],
+    "search": [
+      "s"
+    ],
+    "large-language-model": [
+      "minimind"
+    ],
+    "bruno-alternative": [
+      "yaak"
+    ],
+    "http": [
+      "yaak"
+    ],
+    "http-client": [
+      "yaak"
+    ],
+    "valle": [
+      "fish-speech"
+    ],
+    "vits": [
+      "fish-speech"
+    ],
+    "dataoriented": [
+      "SpacetimeDB"
+    ],
+    "mmorpg-server": [
+      "SpacetimeDB"
+    ],
+    "relational": [
+      "SpacetimeDB"
+    ],
+    "ai-sdk": [
+      "deepchat"
+    ],
+    "mindustry": [
+      "Mindustry"
+    ],
+    "svelte": [
+      "chat-ui"
+    ],
+    "blob-storage": [
+      "seaweedfs"
+    ],
+    "cloud-drive": [
+      "seaweedfs"
+    ],
+    "distributed-file-system": [
+      "seaweedfs"
+    ],
+    "distributed-storage": [
+      "seaweedfs"
+    ],
+    "database-schema": [
+      "drawdb"
+    ],
+    "diagram-editor": [
+      "drawdb"
+    ],
+    "erd": [
+      "drawdb"
+    ],
+    "erdiagram": [
+      "drawdb"
+    ],
+    "high-level-design": [
+      "awesome-system-design-resources"
+    ],
+    "browser-engine": [
+      "ladybird"
+    ],
+    "dms": [
+      "paperless-ngx"
+    ],
+    "document-management": [
+      "paperless-ngx"
+    ],
+    "robotics": [
+      "OM1"
+    ],
+    "ros2": [
+      "OM1"
+    ],
+    "zenoh": [
+      "OM1"
+    ],
+    "aarch64": [
+      "sherpa-onnx"
+    ],
+    "arm32": [
+      "sherpa-onnx"
+    ],
+    "asr": [
+      "sherpa-onnx"
+    ],
+    "api-client": [
+      "hoppscotch"
+    ],
+    "api-rest": [
+      "hoppscotch"
+    ],
+    "api-testing": [
+      "hoppscotch"
+    ],
+    "bare-metal": [
+      "ubicloud"
+    ],
+    "audiobook": [
+      "ebook2audiobook"
+    ],
+    "audiobooks": [
+      "ebook2audiobook"
+    ],
+    "chinese": [
+      "ebook2audiobook"
+    ],
+    "colab-notebook": [
+      "ebook2audiobook"
+    ],
+    "learning": [
+      "open-notebook"
+    ],
+    "note-taking": [
+      "open-notebook"
+    ],
+    "notes-app": [
+      "open-notebook"
+    ],
+    "distributed": [
+      "server"
+    ],
+    "clickjacking": [
+      "hacker101"
+    ],
+    "csrf": [
+      "hacker101"
+    ],
+    "hacker101": [
+      "hacker101"
+    ],
+    "hackerone": [
+      "hacker101"
+    ],
+    "allinonehackingtool": [
+      "hackingtool"
+    ],
+    "besthackingtool": [
+      "hackingtool"
+    ],
+    "ctf-tools": [
+      "hackingtool"
+    ],
+    "ddos-attack-tool": [
+      "hackingtool"
+    ],
+    "hacker": [
+      "hackingtool"
+    ],
+    "dark": [
+      "Wikipedia-Dark"
+    ],
+    "dark-theme": [
+      "Wikipedia-Dark"
+    ],
+    "theme": [
+      "Wikipedia-Dark"
+    ],
+    "datascience": [
+      "wikipedia-mirror"
+    ],
+    "mediawiki": [
+      "mediawiki"
+    ],
+    "php": [
+      "mediawiki"
+    ],
+    "wiki": [
+      "mediawiki"
+    ],
+    "wikipedia": [
+      "mediawiki"
+    ],
+    "flask": [
+      "wikipedia-map"
+    ],
+    "visjs": [
+      "wikipedia-map"
+    ],
+    "web": [
+      "wikipedia-map"
+    ],
+    "website": [
+      "wikipedia-map"
+    ],
+    "cryptography": [
+      "bitcoin"
+    ],
+    "cloudflare-kv": [
+      "supermemory"
+    ],
+    "cloudflare-pages": [
+      "supermemory"
+    ],
+    "ecommerce-framework": [
+      "evershop"
+    ],
+    "ecommerce-platform": [
+      "evershop"
+    ],
+    "mcp-server": [
+      "n8n-mcp"
+    ],
+    "ai-bot": [
+      "waha"
+    ],
+    "http-api": [
+      "waha"
+    ],
+    "python-bot": [
+      "waha"
+    ],
+    "whatsapp": [
+      "waha"
+    ],
+    "digitalplat": [
+      "FreeDomain"
+    ],
+    "domain": [
+      "FreeDomain"
+    ],
+    "domain-platform": [
+      "FreeDomain"
+    ],
+    "domainname": [
+      "FreeDomain"
+    ],
+    "domains": [
+      "FreeDomain"
+    ],
+    "ansible": [
+      "boilerplates"
+    ],
+    "docker-swarm": [
+      "boilerplates"
+    ],
+    "install": [
+      "nvm"
+    ],
+    "lts": [
+      "nvm"
+    ],
+    "node": [
+      "nvm"
+    ],
+    "node-js": [
+      "nvm"
+    ],
+    "console": [
+      "console"
+    ],
+    "sst": [
+      "console"
+    ],
+    "idea": [
+      "eureka"
+    ],
+    "ideas": [
+      "eureka"
+    ],
+    "gps": [
+      "firmware"
+    ],
+    "heltec": [
+      "firmware"
+    ],
+    "hiking": [
+      "firmware"
+    ],
+    "lora": [
+      "firmware"
+    ],
+    "gplv2": [
+      "audacity"
+    ],
+    "wxwidgets-applications": [
+      "audacity"
+    ],
+    "comfy": [
+      "ComfyUI"
+    ],
+    "chatgpt-4": [
+      "gpt4free"
+    ],
+    "chatgpt-api": [
+      "gpt4free"
+    ],
+    "chrome": [
+      "ab-download-manager"
+    ],
+    "compose": [
+      "ab-download-manager"
+    ],
+    "compose-desktop": [
+      "ab-download-manager"
+    ],
+    "compose-multiplatform": [
+      "ab-download-manager"
+    ],
+    "back-in-stock": [
+      "changedetection.io"
+    ],
+    "change-alert": [
+      "changedetection.io"
+    ],
+    "change-detection": [
+      "changedetection.io"
+    ],
+    "change-monitoring": [
+      "changedetection.io"
+    ],
+    "stremio": [
+      "stremio-web"
+    ],
+    "firefox": [
+      "glide"
+    ],
+    "firefox-browser": [
+      "glide"
+    ],
+    "firefox-fork": [
+      "glide"
+    ],
+    "ai-infrastructure": [
+      "airweave"
+    ],
+    "adyen": [
+      "hyperswitch"
+    ],
+    "beginner-friendly": [
+      "hyperswitch"
+    ],
+    "featured": [
+      "hyperswitch"
+    ],
+    "data-orchestration": [
+      "kestra"
+    ],
+    "high-availability": [
+      "kestra"
+    ],
+    "certificate-management": [
+      "infisical"
+    ],
+    "environment-variables": [
+      "infisical"
+    ],
+    "data-modeling": [
+      "dbt-core"
+    ],
+    "dbt-viewpoint": [
+      "dbt-core"
+    ],
+    "elt": [
+      "dbt-core"
+    ],
+    "hugging-face": [
+      "llm-app"
+    ],
+    "llm-local": [
+      "llm-app"
+    ],
+    "llm-prompting": [
+      "llm-app"
+    ],
+    "lazyssh": [
+      "lazyssh"
+    ],
+    "scp": [
+      "lazyssh"
+    ],
+    "blockchain-analytics": [
+      "ethereum-etl"
+    ],
+    "erc20": [
+      "ethereum-etl"
+    ],
+    "moviepy": [
+      "MoneyPrinterTurbo"
+    ],
+    "pdf-parsing": [
+      "pdfplumber"
+    ],
+    "table-extraction": [
+      "pdfplumber"
+    ],
+    "amp": [
+      "humanlayer"
+    ],
+    "jellyfin": [
+      "jellyfin"
+    ],
+    "angular-roadmap": [
+      "developer-roadmap"
+    ],
+    "backend-roadmap": [
+      "developer-roadmap"
+    ],
+    "blockchain-roadmap": [
+      "developer-roadmap"
+    ],
+    "dba-roadmap": [
+      "developer-roadmap"
+    ],
+    "accounting": [
+      "erpnext"
+    ],
+    "asset-management": [
+      "erpnext"
+    ],
+    "distribution": [
+      "erpnext"
+    ],
+    "chatui": [
+      "onyx"
+    ],
+    "cloud-infrastructure": [
+      "oauth2-proxy"
+    ],
+    "oauth2-proxy": [
+      "oauth2-proxy"
+    ],
+    "ssl": [
+      "oauth2-proxy"
+    ],
+    "sso": [
+      "oauth2-proxy"
+    ],
+    "navigator": [
+      "diskonaut"
+    ],
+    "evaluation-framework": [
+      "deepeval"
+    ],
+    "evaluation-metrics": [
+      "deepeval"
+    ],
+    "llm-evaluation-framework": [
+      "deepeval"
+    ],
+    "llm-evaluation-metrics": [
+      "deepeval"
+    ],
+    "algorithmic-trading-library": [
+      "awesome-quant"
+    ],
+    "arbitrage-bot": [
+      "awesome-quant"
+    ],
+    "knowledge-management": [
+      "Trilium"
+    ],
+    "chatbi": [
+      "SQLBot"
+    ],
+    "nl2sql": [
+      "SQLBot"
+    ],
+    "mlx": [
+      "mlx-lm"
+    ],
+    "gaia": [
+      "DeepResearchAgent"
+    ],
+    "general-purpose": [
+      "DeepResearchAgent"
+    ],
+    "multiagent-systems": [
+      "DeepResearchAgent"
+    ],
+    "multimodel": [
+      "DeepResearchAgent"
+    ],
+    "ai4science": [
+      "PaddleOCR"
+    ],
+    "chineseocr": [
+      "PaddleOCR"
+    ],
+    "document-translation": [
+      "PaddleOCR"
+    ],
+    "kie": [
+      "PaddleOCR"
+    ],
+    "algorithm-competitions": [
+      "Python"
+    ],
+    "algorithms-implemented": [
+      "Python"
+    ],
+    "algos": [
+      "Python"
+    ],
+    "community-driven": [
+      "Python"
+    ],
+    "altcoin": [
+      "ccxt"
+    ],
+    "arbitrage": [
+      "ccxt"
+    ],
+    "answering-engine": [
+      "Vane"
+    ],
+    "fish": [
+      "starship"
+    ],
+    "fish-prompt": [
+      "starship"
+    ],
+    "fish-theme": [
+      "starship"
+    ],
+    "oh-my-zsh": [
+      "starship"
+    ],
+    "apache-arrow": [
+      "awesome-pandas-alternatives"
+    ],
+    "arrow": [
+      "awesome-pandas-alternatives"
+    ],
+    "blazingsql": [
+      "awesome-pandas-alternatives"
+    ],
+    "dask": [
+      "models"
+    ],
+    "ai4hpc": [
+      "gpubootcamp"
+    ],
+    "deepstream": [
+      "gpubootcamp"
+    ],
+    "shadcn-theme": [
+      "tweakcn"
+    ],
+    "shadcn-theme-editor": [
+      "tweakcn"
+    ],
+    "tailwindcss": [
+      "tweakcn"
+    ],
+    "fileshare": [
+      "FileSync"
+    ],
+    "batch-processing": [
+      "pathway"
+    ],
+    "data-analytics": [
+      "pathway"
+    ],
+    "data-pipelines": [
+      "pathway"
+    ],
+    "data-processing": [
+      "pathway"
+    ],
+    "dataflow": [
+      "pathway"
+    ],
+    "building-blocks": [
+      "raft"
+    ],
+    "trading": [
+      "TradingAgents"
+    ],
+    "copyparty": [
+      "copyparty"
+    ],
+    "file-server": [
+      "copyparty"
+    ],
+    "file-upload-server": [
+      "copyparty"
+    ],
+    "ftp-server": [
+      "copyparty"
+    ],
+    "ravishing": [
+      "crush"
+    ],
+    "aaron-swartz": [
+      "awesome-public-datasets"
+    ],
+    "awesome-public-datasets": [
+      "awesome-public-datasets"
+    ],
+    "datasets": [
+      "awesome-public-datasets"
+    ],
+    "opendata": [
+      "awesome-public-datasets"
+    ],
+    "agentframework": [
+      "koog"
+    ],
+    "cloud-management": [
+      "terraform"
+    ],
+    "infrastructure-as-code": [
+      "terraform"
+    ],
+    "contributions-welcome": [
+      "responsively-app"
+    ],
+    "convex": [
+      "convex-backend"
+    ],
+    "agent-team": [
+      "AionUi"
+    ],
+    "chat": [
+      "AionUi"
+    ],
+    "faiss": [
+      "LEANN"
+    ],
+    "gpt-oss": [
+      "LEANN"
+    ],
+    "llama-index": [
+      "LEANN"
+    ],
+    "auto-quant": [
+      "qlib"
+    ],
+    "builder": [
+      "puck"
+    ],
+    "drag-and-drop": [
+      "puck"
+    ],
+    "draganddrop": [
+      "puck"
+    ],
+    "no-code": [
+      "puck"
+    ],
+    "design-patterns": [
+      "awesome-design-patterns"
+    ],
+    "agent-computer-interface": [
+      "Agent-S"
+    ],
+    "computer-automation": [
+      "Agent-S"
+    ],
+    "computer-use-agent": [
+      "Agent-S"
+    ],
+    "lists": [
+      "awesome"
+    ],
+    "resources": [
+      "awesome"
+    ],
+    "unicorns": [
+      "awesome"
+    ],
+    "project-management": [
+      "ccpm"
+    ],
+    "hono": [
+      "kaneo"
+    ],
+    "issue-management": [
+      "kaneo"
+    ],
+    "issue-tracker": [
+      "kaneo"
+    ],
+    "jira-alternative": [
+      "kaneo"
+    ],
+    "bun": [
+      "Archon"
+    ],
+    "ai-alignment": [
+      "parlant"
+    ],
+    "customer-service": [
+      "parlant"
+    ],
+    "customer-success": [
+      "parlant"
+    ],
+    "agile": [
+      "leantime"
+    ],
+    "asana": [
+      "leantime"
+    ],
+    "calendar": [
+      "leantime"
+    ],
+    "clickup": [
+      "leantime"
+    ],
+    "claude-ai": [
+      "OpenHands"
+    ],
+    "codingagent": [
+      "Claudable"
+    ],
+    "headless-browsers": [
+      "HeadlessBrowsers"
+    ],
+    "testing": [
+      "HeadlessBrowsers"
+    ],
+    "rust-lang": [
+      "zed"
+    ],
+    "zed": [
+      "zed"
+    ],
+    "browser-extension": [
+      "mcp"
+    ],
+    "ai-agent-tools": [
+      "activepieces"
+    ],
+    "claude-3": [
+      "aider"
+    ],
+    "stripe": [
+      "saas-starter"
+    ],
+    "crud-app": [
+      "budibase"
+    ],
+    "crud-application": [
+      "budibase"
+    ],
+    "data-application": [
+      "budibase"
+    ],
+    "bot-api": [
+      "telegraf"
+    ],
+    "middleware": [
+      "telegraf"
+    ],
+    "markup-language": [
+      "poml"
+    ],
+    "vscode-extension": [
+      "poml"
+    ],
+    "agi": [
+      "magic"
+    ],
+    "external-secrets": [
+      "external-secrets"
+    ],
+    "kubernetes-secrets": [
+      "external-secrets"
+    ],
+    "secrets-manager": [
+      "external-secrets"
+    ],
+    "synchronization": [
+      "syncthing"
+    ],
+    "agent-workflow": [
+      "sim"
+    ],
+    "cloud-os": [
+      "puter"
+    ],
+    "cloud-storage": [
+      "puter"
+    ],
+    "desktop-environment": [
+      "puter"
+    ],
+    "nocode": [
+      "aisheets"
+    ],
+    "applicant-tracking-system": [
+      "platform"
+    ],
+    "chat-application": [
+      "platform"
+    ],
+    "crm-platform": [
+      "platform"
+    ],
+    "hrms": [
+      "platform"
+    ],
+    "agent-tars": [
+      "UI-TARS-desktop"
+    ],
+    "cowork": [
+      "UI-TARS-desktop"
+    ],
+    "communication": [
+      "novu"
+    ],
+    "inbox": [
+      "novu"
+    ],
+    "infrastructure": [
+      "novu"
+    ],
+    "git-analysis": [
+      "todoctor"
+    ],
+    "source-code-analysis": [
+      "todoctor"
+    ],
+    "technical-debt": [
+      "todoctor"
+    ],
+    "todo-comment": [
+      "todoctor"
+    ],
+    "color-converter": [
+      "pastel"
+    ],
+    "color-space": [
+      "pastel"
+    ],
+    "colors": [
+      "pastel"
+    ],
+    "devtools": [
+      "openreplay"
+    ],
+    "feature-flags": [
+      "openreplay"
+    ],
+    "readme": [
+      "awesome-for-non-programmers"
+    ],
+    "nebula": [
+      "awesome-tunneling"
+    ],
+    "ngrok": [
+      "awesome-tunneling"
+    ],
+    "ngrok-alternative": [
+      "awesome-tunneling"
+    ],
+    "ssh": [
+      "awesome-tunneling"
+    ],
+    "cap": [
+      "Cap"
+    ],
+    "coss": [
+      "Cap"
+    ],
+    "loom": [
+      "Cap"
+    ],
+    "sdl": [
+      "SDL"
+    ],
+    "sdl2": [
+      "SDL"
+    ],
+    "sdl3": [
+      "SDL"
+    ],
+    "llamacpp": [
+      "jan"
+    ],
+    "localai": [
+      "jan"
+    ],
+    "supabase": [
+      "midday"
+    ],
+    "tailwind": [
+      "midday"
+    ],
+    "ai-crawler": [
+      "firecrawl"
+    ],
+    "authorization": [
+      "fastapi_mcp"
+    ],
+    "chakra-ui": [
+      "full-stack-fastapi-template"
+    ],
+    "javascript-applications": [
+      "mcp-for-beginners"
+    ],
+    "openai-api": [
+      "openai-cookbook"
+    ],
+    "graphics": [
+      "lvgl"
+    ],
+    "gui": [
+      "lvgl"
+    ],
+    "mcu": [
+      "lvgl"
+    ],
+    "blackwell": [
+      "vllm"
+    ],
+    "deepseek-v3": [
+      "vllm"
+    ],
+    "dependency-manager": [
+      "poetry"
+    ],
+    "package-manager": [
+      "poetry"
+    ],
+    "packaging": [
+      "poetry"
+    ],
+    "poetry": [
+      "poetry"
+    ],
+    "crypto-trading": [
+      "nautilus_trader"
+    ],
+    "equity-trading": [
+      "nautilus_trader"
+    ],
+    "ggml": [
+      "llama.cpp"
+    ],
+    "llm-inference": [
+      "gpt4all"
+    ],
+    "machine-learning-algorithms": [
+      "cuml"
+    ],
+    "nvidia": [
+      "cuml"
+    ],
+    "econometrics": [
+      "hyperlearn"
+    ],
+    "claude-4": [
+      "opcode"
+    ],
+    "claude-4-opus": [
+      "opcode"
+    ],
+    "free-for-developers": [
+      "free-for-dev"
+    ],
+    "bunjs": [
+      "drizzle-orm"
+    ],
+    "mysql": [
+      "drizzle-orm"
+    ],
+    "orm": [
+      "drizzle-orm"
+    ],
+    "css-framework": [
+      "tailwindcss"
+    ],
+    "functional-css": [
+      "tailwindcss"
+    ],
+    "postcss": [
+      "tailwindcss"
+    ],
+    "responsive": [
+      "tailwindcss"
+    ],
+    "build-tool": [
+      "vite"
+    ],
+    "dev-server": [
+      "vite"
+    ],
+    "hmr": [
+      "vite"
+    ],
+    "cluely": [
+      "system-prompts-and-models-of-ai-tools"
+    ],
+    "books": [
+      "free-programming-books"
+    ],
+    "resource": [
+      "free-programming-books"
+    ],
+    "programming": [
+      "build-your-own-x"
+    ],
+    "tutorial-code": [
+      "build-your-own-x"
+    ],
+    "tutorial-exercises": [
+      "build-your-own-x"
+    ],
+    "agentic-agi": [
+      "autogen"
+    ],
+    "apple-tv": [
+      "open-source-ios-apps"
+    ],
+    "apple-vision-pro": [
+      "open-source-ios-apps"
+    ],
+    "apple-watch": [
+      "open-source-ios-apps"
+    ],
+    "react-apps": [
+      "awesome-react"
+    ],
+    "beginners-friendly": [
+      "awesome-for-beginners"
+    ],
+    "android-interview-questions": [
+      "awesome-interview-questions"
+    ],
+    "angularjs-interview-questions": [
+      "awesome-interview-questions"
+    ],
+    "awesomeness": [
+      "awesome-interview-questions"
+    ],
+    "fuzzing": [
+      "Awesome-Hacking"
+    ],
+    "golang-library": [
+      "awesome-go"
+    ],
+    "free-software": [
+      "awesome-selfhosted"
+    ],
+    "autogen-extension": [
+      "markitdown"
+    ],
+    "microsoft-office": [
+      "markitdown"
+    ],
+    "alibaba": [
+      "DeepResearch"
+    ],
+    "reader": [
+      "Folo"
+    ],
+    "rss": [
+      "Folo"
+    ],
+    "rss-reader": [
+      "Folo"
+    ],
+    "rsshub": [
+      "Folo"
+    ],
+    "derivatives": [
+      "OpenBB"
+    ],
+    "economics": [
+      "OpenBB"
+    ],
+    "equity": [
+      "OpenBB"
+    ],
+    "n8n-workflow": [
+      "ai_agents_az"
+    ],
+    "prompt-engineering": [
+      "prompt-optimizer"
+    ],
+    "apachespark": [
+      "data-engineer-handbook"
+    ],
+    "bigdata": [
+      "data-engineer-handbook"
+    ],
+    "dataengineering": [
+      "data-engineer-handbook"
+    ],
+    "playwright": [
+      "stagehand"
+    ],
+    "puppeteer": [
+      "stagehand"
+    ],
+    "codingchallenges": [
+      "app-ideas"
+    ],
+    "charts": [
+      "WrenAI"
+    ],
+    "open-source-social-media-scheduling-tool": [
+      "postiz-app"
+    ],
+    "redis": [
+      "postiz-app"
+    ],
+    "unix": [
+      "the-art-of-command-line"
+    ],
+    "components": [
+      "storybook"
+    ],
+    "design-systems": [
+      "storybook"
+    ],
+    "alive": [
+      "alive-progress"
+    ],
+    "animated": [
+      "alive-progress"
+    ],
+    "animations": [
+      "alive-progress"
+    ],
+    "bar": [
+      "alive-progress"
+    ],
+    "dataset": [
+      "public-apis"
+    ],
+    "development": [
+      "public-apis"
+    ],
+    "fastmcp": [
+      "fastmcp"
+    ],
+    "code": [
+      "gitdiagram"
+    ],
+    "system-design": [
+      "gitdiagram"
+    ],
+    "cursor-ai-editor": [
+      "awesome-cursorrules"
+    ],
+    "cursorrules": [
+      "awesome-cursorrules"
+    ],
+    "macosx": [
+      "pear-desktop"
+    ],
+    "bsd": [
+      "the-book-of-secret-knowledge"
+    ],
+    "cheatsheets": [
+      "the-book-of-secret-knowledge"
+    ],
+    "gpt-3-5": [
+      "ChatGPT_DAN"
+    ],
+    "jailbreak": [
+      "ChatGPT_DAN"
+    ],
+    "agent-collaboration": [
+      "lobehub"
+    ],
+    "agent-harness": [
+      "lobehub"
+    ],
+    "cao": [
+      "lobehub"
+    ],
+    "project": [
+      "project-based-learning"
+    ]
+  }
+}

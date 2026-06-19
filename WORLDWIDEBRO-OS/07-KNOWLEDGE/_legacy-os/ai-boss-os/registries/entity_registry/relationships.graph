@@ -1,0 +1,3568 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2026-06-05T19:29:40.874215+00:00",
+  "format": "edge_list",
+  "neo4j_sync": "CREATE (v:Venture)-[:BELONGS_TO_SECTOR]->(s:Sector)",
+  "edges": [
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FIN-001-GenixBank-Lite",
+      "to": "FIN"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FIN-002-Credit-Repair-Automation",
+      "to": "FIN"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FIN-003-AI-Boss-Hub-Lite",
+      "to": "FIN"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FIN-004-GenixBanks-AI-Treasurer",
+      "to": "FIN"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FIN-005-U-Haul-Rental-Affiliate",
+      "to": "FIN"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FIN-006-Tax-Prep-Filing-Services",
+      "to": "FIN"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FIN-007-Business-Credit-Building",
+      "to": "FIN"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FIN-008-Business-Formation-Services",
+      "to": "FIN"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FIN-009-Crypto-Tax-Optimizer",
+      "to": "FIN"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FIN-010-AI-Powered-Garbage-Collection",
+      "to": "FIN"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FIN-011-Automated-Bookkeeping",
+      "to": "FIN"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FIN-012-Invoice-Factoring-AI",
+      "to": "FIN"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FIN-013-Charity-Donation-AI",
+      "to": "FIN"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FIN-014-Expense-Tracker-AI",
+      "to": "FIN"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FIN-015-Financial-Wellness-Coach",
+      "to": "FIN"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FIN-016-Trade-Finance-AI",
+      "to": "FIN"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FIN-017-Remittance-AI",
+      "to": "FIN"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FIN-018-Wealth-Transfer-AI",
+      "to": "FIN"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FIN-019-Payment-Gateway-AI",
+      "to": "FIN"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FIN-020-Debt-Consolidation-AI",
+      "to": "FIN"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FIN-021-Tax-Deduction-Finder",
+      "to": "FIN"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FIN-022-Budget-Forecasting-AI",
+      "to": "FIN"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FIN-023-Investment-Portfolio-AI",
+      "to": "FIN"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FIN-024-Crowdfunding-AI",
+      "to": "FIN"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FIN-025-Escrow-Automation",
+      "to": "FIN"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FIN-026-Financial-Compliance-Scanner",
+      "to": "FIN"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FIN-027-Patent-Writer-AI",
+      "to": "FIN"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FIN-028-Legal-Analyzer-AI",
+      "to": "FIN"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FIN-029-Compliance-Wallet-SaaS",
+      "to": "FIN"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FIN-030-Local-SEO-Ranker-AI",
+      "to": "FIN"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FIN-031-Investor-Dashboard-Builder",
+      "to": "FIN"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FIN-032-Legal-Toolkit-AI",
+      "to": "FIN"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FIN-033-AI-Tax-Preparation-Service",
+      "to": "FIN"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FIN-034-Payroll-Automation",
+      "to": "FIN"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FIN-035-Insurance-Underwriting-AI",
+      "to": "FIN"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FIN-036-Arbitrage-Nexus-Platform",
+      "to": "FIN"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "BW-001-Lash-Extension-Studio",
+      "to": "BW"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "BW-002-Mobile-Lash-Service",
+      "to": "BW"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "BW-003-Luxury-Lash-Bar",
+      "to": "BW"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "BW-004-Lash-Training-Academy",
+      "to": "BW"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "BW-005-Lash-Supply-Company",
+      "to": "BW"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "BW-006-Lash-Glue-Brand",
+      "to": "BW"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "BW-007-Lash-Kits-&-Tools",
+      "to": "BW"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "BW-008-Private-Label-Lashes",
+      "to": "BW"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "BW-009-Franchise-Lash-Salons",
+      "to": "BW"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "BW-010-Online-Lash-Education",
+      "to": "BW"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "BW-011-Nail-Salon",
+      "to": "BW"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "BW-012-Mobile-Nail-Tech",
+      "to": "BW"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "BW-013-Luxury-Nail-Spa",
+      "to": "BW"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "BW-014-Press-On-Nail-Brand",
+      "to": "BW"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "BW-015-Nail-Art-Studio",
+      "to": "BW"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "BW-016-Nail-Polish-Brand",
+      "to": "BW"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "BW-017-Nail-Care-Products",
+      "to": "BW"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "BW-018-Nail-Booking-Marketplace",
+      "to": "BW"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "BW-019-Salon-Management-Software",
+      "to": "BW"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "BW-020-AI-Nail-Design-Generator",
+      "to": "BW"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "BW-021-Hair-Salon",
+      "to": "BW"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "BW-022-Barbershop",
+      "to": "BW"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "BW-023-Mobile-Hairstyling",
+      "to": "BW"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "BW-024-Hair-Braiding-Studio",
+      "to": "BW"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "BW-025-Wig-Installation-Studio",
+      "to": "BW"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "BW-026-Hair-Extension-Salon",
+      "to": "BW"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "BW-027-Hair-Care-Line",
+      "to": "BW"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "BW-028-Wig-Brand",
+      "to": "BW"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "BW-029-Hair-Extensions-Brand",
+      "to": "BW"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "BW-030-Scalp-Treatment-Products",
+      "to": "BW"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "BW-031-Hair-Marketplace",
+      "to": "BW"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "BW-032-Stylist-Booking-Platform",
+      "to": "BW"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "BW-033-AI-Hairstyle-Simulator",
+      "to": "BW"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "BW-034-Salon-Franchise-Chain",
+      "to": "BW"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "BW-035-Makeup-Studio",
+      "to": "BW"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "BW-036-Bridal-Makeup-Service",
+      "to": "BW"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "BW-037-Mobile-Makeup-Artist",
+      "to": "BW"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "BW-038-Photoshoot-Makeup-Team",
+      "to": "BW"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "BW-039-Cosmetics-Brand",
+      "to": "BW"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "BW-040-Beauty-Tools-Brand",
+      "to": "BW"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FH-001-Personal-Chef-Service",
+      "to": "FH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FH-002-Meal-Prep-Delivery",
+      "to": "FH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FH-003-Private-Dinner-Experiences",
+      "to": "FH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FH-004-Catering-Company",
+      "to": "FH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FH-005-Corporate-Lunch-Service",
+      "to": "FH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FH-006-Healthy-Meal-Prep-for-Gyms",
+      "to": "FH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FH-007-Elderly-Meal-Service",
+      "to": "FH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FH-008-Athlete-Nutrition-Service",
+      "to": "FH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FH-009-Packaged-Food-Brand",
+      "to": "FH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FH-010-Frozen-Meals-Company",
+      "to": "FH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FH-011-Sauce-or-Seasoning-Brand",
+      "to": "FH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FH-012-Protein-Snacks-Brand",
+      "to": "FH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FH-013-Meal-Kit-Company",
+      "to": "FH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FH-014-Cloud-Kitchen-",
+      "to": "FH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FH-015-AI-Nutrition-Planner",
+      "to": "FH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FH-016-Recipe-App",
+      "to": "FH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FH-017-Cooking-Content-Brand",
+      "to": "FH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FH-018-Food-Influencer-Brand",
+      "to": "FH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FH-019-Cooking-Course-Platform",
+      "to": "FH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FH-020-Restaurant-POS-System",
+      "to": "FH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FH-021-Food-Truck-Business",
+      "to": "FH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FH-022-Specialty-Coffee-Shop",
+      "to": "FH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FH-023-Bakery-&-Pastry-Shop",
+      "to": "FH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FH-024-Juice-Bar",
+      "to": "FH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FH-025-Ice-Cream-Shop",
+      "to": "FH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FH-026-Gourmet-Food-Market",
+      "to": "FH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FH-027-Food-Delivery-Platform",
+      "to": "FH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FH-028-Restaurant-Management-SaaS",
+      "to": "FH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FH-029-Food-Quality-Testing-Lab",
+      "to": "FH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FH-030-Organic-Food-Brand",
+      "to": "FH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FH-031-Vegan-Food-Company",
+      "to": "FH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FH-032-Keto-Meal-Service",
+      "to": "FH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FH-033-Food-Photography-Service",
+      "to": "FH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FH-034-Restaurant-Consulting",
+      "to": "FH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FH-035-Food-Safety-Training",
+      "to": "FH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FS-001-Gym",
+      "to": "FS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FS-002-Boutique-Fitness-Studio",
+      "to": "FS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FS-003-Personal-Training-Studio",
+      "to": "FS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FS-004-Women-Only-Gym",
+      "to": "FS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FS-005-Boxing-Gym",
+      "to": "FS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FS-006-CrossFit-Gym",
+      "to": "FS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FS-007-Luxury-Fitness-Club",
+      "to": "FS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FS-008-Online-Coaching",
+      "to": "FS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FS-009-Personal-Trainer-Business",
+      "to": "FS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FS-010-Transformation-Program",
+      "to": "FS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FS-011-Athlete-Training-Company",
+      "to": "FS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FS-012-Supplement-Brand",
+      "to": "FS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FS-013-Fitness-Apparel",
+      "to": "FS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FS-014-Workout-Equipment-Brand",
+      "to": "FS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FS-015-Recovery-Products",
+      "to": "FS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FS-016-Fitness-App",
+      "to": "FS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FS-017-AI-Personal-Trainer",
+      "to": "FS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FS-018-Gym-Management-Software",
+      "to": "FS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FS-019-Wearable-Analytics-Platform",
+      "to": "FS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FS-020-Yoga-Studio",
+      "to": "FS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FS-021-Pilates-Studio",
+      "to": "FS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FS-022-Dance-Studio",
+      "to": "FS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FS-023-Martial-Arts-Dojo",
+      "to": "FS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FS-024-Sports-Performance-Center",
+      "to": "FS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FS-025-Corporate-Wellness-Program",
+      "to": "FS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "LT-001-Truck-Dispatch-Company",
+      "to": "LT"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "LT-002-Freight-Brokerage",
+      "to": "LT"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "LT-003-Logistics-Dispatch-Service",
+      "to": "LT"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "LT-004-Last-Mile-Delivery-Dispatch",
+      "to": "LT"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "LT-005-Medical-Courier-Dispatch",
+      "to": "LT"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "LT-006-Amazon",
+      "to": "LT"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "LT-007-Construction-Dispatch",
+      "to": "LT"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "LT-008-Towing-Dispatch",
+      "to": "LT"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "LT-009-HVAC-Technician-Dispatch",
+      "to": "LT"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "LT-010-Field-Service-Dispatch",
+      "to": "LT"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "LT-011-Dispatch-Software",
+      "to": "LT"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "LT-012-Fleet-Tracking-Platform",
+      "to": "LT"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "LT-013-Logistics-Automation-System",
+      "to": "LT"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "LT-014-AI-Route-Optimization",
+      "to": "LT"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "LT-015-Driver-Management-Platform",
+      "to": "LT"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "LT-016-Trucking-Company",
+      "to": "LT"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "LT-017-Courier-Service",
+      "to": "LT"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "LT-018-Local-Delivery-Company",
+      "to": "LT"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "LT-019-Moving-Company",
+      "to": "LT"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "LT-020-Freight-Company",
+      "to": "LT"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "LT-021-Warehouse-Company",
+      "to": "LT"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "LT-022-Fulfillment-Center",
+      "to": "LT"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "LT-023-Storage-Business",
+      "to": "LT"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "LT-024-Distribution-Company",
+      "to": "LT"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "LT-025-Logistics-Marketplace",
+      "to": "LT"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "LT-026-Shipping-Platform",
+      "to": "LT"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "LT-027-Fleet-Management-SaaS",
+      "to": "LT"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "LT-028-Freight-AI-Optimization",
+      "to": "LT"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "LT-029-Supply-Chain-Analytics",
+      "to": "LT"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "LT-030-Cold-Chain-Logistics",
+      "to": "LT"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "PS-001-Business-Consulting",
+      "to": "PS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "PS-002-Legal-Services",
+      "to": "PS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "PS-003-Accounting-Services",
+      "to": "PS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "PS-004-HR-Consulting",
+      "to": "PS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "PS-005-Marketing-Agency",
+      "to": "PS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "PS-006-Web-Design-Agency",
+      "to": "PS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "PS-007-IT-Support-Services",
+      "to": "PS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "PS-008-Virtual-Assistant-Service",
+      "to": "PS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "PS-009-Bookkeeping-Service",
+      "to": "PS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "PS-010-Tax-Preparation-Service",
+      "to": "PS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "PS-011-Real-Estate-Agency",
+      "to": "PS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "PS-012-Insurance-Agency",
+      "to": "PS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "PS-013-Financial-Planning",
+      "to": "PS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "PS-014-Event-Planning",
+      "to": "PS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "PS-015-Interior-Design",
+      "to": "PS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "PS-016-Photography-Service",
+      "to": "PS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "PS-017-Videography-Service",
+      "to": "PS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "PS-018-Translation-Services",
+      "to": "PS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "PS-019-Copywriting-Service",
+      "to": "PS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "PS-020-Social-Media-Management",
+      "to": "PS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "PS-021-SEO-Agency",
+      "to": "PS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "PS-022-PPC-Management",
+      "to": "PS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "PS-023-PR-Agency",
+      "to": "PS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "PS-024-Recruiting-Agency",
+      "to": "PS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "PS-025-Business-Brokerage",
+      "to": "PS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "MC-001-YouTube-Channel-Network",
+      "to": "MC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "MC-002-Podcast-Network",
+      "to": "MC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "MC-003-Blog-Network",
+      "to": "MC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "MC-004-Influencer-Agency",
+      "to": "MC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "MC-005-Content-Creation-Studio",
+      "to": "MC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "MC-006-Video-Production-Company",
+      "to": "MC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "MC-007-Animation-Studio",
+      "to": "MC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "MC-008-Music-Production",
+      "to": "MC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "MC-009-Stock-Photography",
+      "to": "MC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "MC-010-Stock-Video",
+      "to": "MC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "MC-011-Online-Magazine",
+      "to": "MC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "MC-012-News-Website",
+      "to": "MC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "MC-013-Streaming-Platform",
+      "to": "MC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "MC-014-Gaming-Channel",
+      "to": "MC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "MC-015-Esports-Team",
+      "to": "MC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "MC-016-Virtual-Events-Platform",
+      "to": "MC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "MC-017-Online-Course-Platform",
+      "to": "MC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "MC-018-Membership-Site",
+      "to": "MC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "MC-019-Digital-Download-Store",
+      "to": "MC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "MC-020-NFT-Marketplace",
+      "to": "MC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ET-001-Online-Tutoring-Platform",
+      "to": "ET"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ET-002-Language-Learning-App",
+      "to": "ET"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ET-003-Test-Prep-Service",
+      "to": "ET"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ET-004-Coding-Bootcamp",
+      "to": "ET"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ET-005-Professional-Certification",
+      "to": "ET"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ET-006-Corporate-Training",
+      "to": "ET"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ET-007-Skills-Assessment-Platform",
+      "to": "ET"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ET-008-Career-Coaching",
+      "to": "ET"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ET-009-Resume-Writing-Service",
+      "to": "ET"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ET-010-Interview-Prep-Platform",
+      "to": "ET"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ET-011-Mentorship-Platform",
+      "to": "ET"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ET-012-Educational-Content-Library",
+      "to": "ET"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ET-013-VR-Training-Simulations",
+      "to": "ET"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ET-014-Gamified-Learning-App",
+      "to": "ET"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ET-015-Homeschool-Curriculum",
+      "to": "ET"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ST-001-SaaS-Platform",
+      "to": "ST"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ST-002-Mobile-App-Development",
+      "to": "ST"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ST-003-Web-Development-Agency",
+      "to": "ST"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ST-004-Custom-Software-Development",
+      "to": "ST"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ST-005-API-Development",
+      "to": "ST"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ST-006-Cloud-Infrastructure",
+      "to": "ST"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ST-007-DevOps-Consulting",
+      "to": "ST"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ST-008-Cybersecurity-Service",
+      "to": "ST"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ST-009-Data-Analytics-Platform",
+      "to": "ST"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ST-010-Business-Intelligence-Tool",
+      "to": "ST"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ST-011-CRM-Platform",
+      "to": "ST"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ST-012-Project-Management-Tool",
+      "to": "ST"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ST-013-Communication-Platform",
+      "to": "ST"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ST-014-Collaboration-Software",
+      "to": "ST"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ST-015-Automation-Platform",
+      "to": "ST"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ST-016-AI",
+      "to": "ST"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ST-017-Chatbot-Builder",
+      "to": "ST"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ST-018-E-commerce-Platform",
+      "to": "ST"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ST-019-Payment-Processing",
+      "to": "ST"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ST-020-Blockchain-Platform",
+      "to": "ST"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ST-021-IoT-Platform",
+      "to": "ST"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ST-022-AR",
+      "to": "ST"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ST-023-Game-Development",
+      "to": "ST"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ST-024-Marketing-Automation",
+      "to": "ST"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ST-025-Sales-Automation",
+      "to": "ST"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ST-026-HR-Tech-Platform",
+      "to": "ST"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ST-027-Legal-Tech-Platform",
+      "to": "ST"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ST-028-Health-Tech-Platform",
+      "to": "ST"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ST-029-EdTech-Platform",
+      "to": "ST"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ST-030-PropTech-Platform",
+      "to": "ST"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-001-Angels-in-Daylight",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-002-New-World-Apparel",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-003-Shopify-Autopilot",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-004-Shoe-Customizer",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-005-Sunglasses-AI",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-006-Dropship-Hub",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-007-Personal-Shopper-AI",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-008-Custom-Sneaker-AI",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-009-Sustainable-Fashion-AI",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-010-Jewelry-Designer-AI",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-011-Virtual-Try-On-AI",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-012-Fashion-Designer-AI",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-013-Merch-Licensing",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-014-Subscription-Box-AI",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-015-Surf-Gear-AI",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-016-Ski-Gear-AI",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-017-Golf-Gear-AI",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-018-Fishing-Gear-AI",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-019-Yoga-Gear-AI",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-020-Costume-Shop-AI",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-021-Luggage-AI",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-022-Home-Appliance-AI",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-023-Tool-Shop-AI",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-024-Garden-Supply-AI",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-025-Collectible-AI",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-026-Hobby-Shop-AI",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-027-Kids-Toy-Line",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-028-NFT-Fashion-Licensing",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-029-Instant-Brand-Generator",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-030-AI-Product-Photographer",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-031-Automated-Inventory-Forecaster",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-032-Dynamic-Pricing-Engine",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-033-Ad-Optimizer-AI",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-034-Recommendation-Engine",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-035-Review-Aggregator-AI",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-036-Fulfillment-Network-AI",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-037-Return-Optimization-AI",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-038-Chatbot-Customer-Service",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-039-Visual-Search-AI",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-040-Abandoned-Cart-Recovery",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-041-Seasonal-Trend-Predictor",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-042-Influencer-Matchmaker",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-043-UGC-Content-Aggregator",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-044-Live-Commerce-Platform",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-045-AR-Virtual-Fitting-Room",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-046-3D-Product-Viewer",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-047-Carbon-Footprint-Tracker",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-048-Wholesale-Marketplace-AI",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-049-Rental-Marketplace",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-050-AI-Product-Descriptions",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-051-AI-Email-Marketing",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-052-AI-Product-Bundler",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-053-AI-Visual-Merchandiser",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-054-AI-Demand-Forecasting",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-055-AI-Warehouse-Management",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-056-AI-Supplier-Matching",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-057-AI-Quality-Control",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-058-AI-Packaging-Designer",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-059-AI-Logistics-Planner",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-060-AI-Customer-Loyalty",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-061-AI-Gift-Finder",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-062-AI-Trend-Hunter",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-063-AI-Market-Research",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-064-AI-Competitor-Watcher",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-065-AI-Product-Development",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-066-AI-Customer-Journey",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-067-AI-Payment-Optimization",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-068-AI-Returns-Management",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-069-AI-Shipping-Labeler",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-070-AI-Product-Launch-Coach",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-071-AI-Vendor-Negotiator",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-072-AI-Product-Cataloger",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-073-AI-Order-Prioritizer",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-074-AI-Customer-Segmentation",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-075-AI-Pricing-Analyst",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-076-AI-Sales-Forecasting",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-077-AI-Inventory-Reordering",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-078-AI-Product-Comparison",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-079-AI-Customer-Feedback",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-080-AI-Product-Updates",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-081-AI-Cross-Selling",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-082-AI-Up-Selling",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-083-AI-Product-Education",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-084-AI-Purchase-Timing",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-085-AI-Customer-Support",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-086-AI-Order-Tracking",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-087-AI-Product-Reviews",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-088-AI-Customer-Community",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-089-AI-Product-Customization",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-090-AI-Gift-Registry",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-091-AI-Wedding-Registry",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-092-AI-Baby-Registry",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-093-AI-Holiday-Planner",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-094-AI-Personal-Shopper",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-095-AI-Color-Match",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-096-AI-Fabric-Advisor",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-097-AI-Fit-Recommendation",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-098-AI-Outfit-Builder",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-099-AI-Seasonal-Forecast",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-100-AI-Wardrobe-Planner",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-101-AI-Accessory-Match",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-102-AI-Shoe-Match",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-103-AI-Jewelry-Match",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-104-AI-Bag-Match",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-105-AI-Color-Palette",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-106-AI-Outfit-Recycling",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-107-AI-Style-Evolution",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-108-AI-Budget-Stylist",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-109-AI-Trend-Archive",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EC-110-AI-Vintage-Advisor",
+      "to": "EC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-001-Quantum-Algorithm-AI",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-002-AI-Compliance-Scanner",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-003-Cloud-Management-AI",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-004-Robotics-Training-AI",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-005-Customer-Insights-AI",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-006-Voice-Assistant-AI",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-007-Blockchain-Verifier-AI",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-008-Cybersecurity-Shield",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-009-Content-Studio-AI",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-010-Smart-Home-AI",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-011-Supply-Chain-Optimizer",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-012-Data-Visualization-AI",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-013-Workflow-Automation",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-014-Sentiment-Analyzer",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-015-Image-Recognition-AI",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-016-Video-Editor-AI",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-017-Speech-to-Text-AI",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-018-Text-to-Speech-AI",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-019-Fraud-Prevention-AI",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-020-Recommendation-Engine",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-021-Network-Security-AI",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-022-Database-Optimizer",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-023-AI-Testing-Platform",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-024-Virtual-Assistant-Builder",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-025-Machine-Learning-Builder",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-026-AI-Ethics-Auditor",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-027-Predictive-Analytics-AI",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-028-AI-Training-Platform",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-029-Digital-Twin-AI",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-030-AI-Monitoring-System",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-031-Edge-Computing-AI",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-032-AI-Integration-Hub",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-033-Quantum-Algorithm-AI",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-034-AI-Compliance-Scanner",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-035-Cloud-Management-AI",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-036-Robotics-Training-AI",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-037-Customer-Insights-AI",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-038-Voice-Assistant-AI",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-039-Blockchain-Verifier-AI",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-040-Cybersecurity-Shield",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-041-Content-Studio-AI",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-042-Smart-Home-AI",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-043-Supply-Chain-Optimizer",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-044-Data-Visualization-AI",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-045-Workflow-Automation",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-046-Sentiment-Analyzer",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-047-Image-Recognition-AI",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-048-Video-Editor-AI",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-049-Speech-to-Text-AI",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-050-Text-to-Speech-AI",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-051-Fraud-Prevention-AI",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-052-Recommendation-Engine",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-053-Network-Security-AI",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-054-Database-Optimizer",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-055-AI-Testing-Platform",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-056-Virtual-Assistant-Builder",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-057-Machine-Learning-Builder",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-058-AI-Ethics-Auditor",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-059-Predictive-Analytics-AI",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-060-AI-Training-Platform",
+      "to": "TECH"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-001-Fractional-CTO-Agency",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-002-Supply-Chain-Optimizer",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-003-Event-Planning-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-004-Inventory-Management-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-005-Project-Management-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-006-Document-Automation-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-007-Meeting-Assistant-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-008-Recruitment-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-009-Onboarding-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-010-Training-Platform-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-011-Performance-Review-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-012-IT-Support-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-013-Facilities-Management-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-014-Travel-Booking-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-015-Expense-Management-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-016-Contract-Management-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-017-Compliance-Monitoring-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-018-Quality-Control-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-019-Asset-Management-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-020-Time-Tracking-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-021-Document-Security-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-022-Knowledge-Management-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-023-Meeting-Transcription-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-024-Task-Automation-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-025-Resource-Allocation-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-026-Budget-Planning-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-027-Cost-Optimization-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-028-Procurement-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-029-Vendor-Management-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-030-Contract-Negotiation-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-031-Legal-Document-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-032-Compliance-Reporting-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-033-Training-Content-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-034-Employee-Engagement-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-035-Succession-Planning-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-036-Workspace-Design-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-037-Energy-Efficiency-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-038-Security-Monitoring-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-039-Health-Safety-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-040-Disaster-Recovery-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-041-IT-Asset-Management",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-042-Cloud-Cost-Management",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-043-Data-Governance-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-044-Network-Monitoring-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-045-Software-Licensing-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-046-IT-Procurement-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-047-System-Integration-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-048-Data-Backup-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-049-Business-Continuity-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-050-Compliance-Audit-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-051-Document-Collaboration-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-052-Video-Conferencing-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-053-Email-Management-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-054-Calendar-Optimization-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-055-Project-Budget-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-056-Resource-Forecasting-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-057-Task-Prioritization-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-058-Time-Management-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-059-Meeting-Minutes-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-060-Document-Translation-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-061-Form-Automation-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-062-Report-Generation-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-063-Dashboard-Creation-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-064-Analytics-Platform-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-065-Data-Cleaning-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-066-Workflow-Management-AI",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EDU-001-Youth-Entrepreneurship-Curriculum",
+      "to": "EDU"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EDU-002-AI-Literacy-Program",
+      "to": "EDU"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EDU-003-Coding-Mentor-Certification",
+      "to": "EDU"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EDU-004-Real-Estate-Licensing-Prep",
+      "to": "EDU"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EDU-005-Coding-Bootcamp",
+      "to": "EDU"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EDU-006-Homeschooling-Content-AI",
+      "to": "EDU"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EDU-007-AI-Tutoring-Platform",
+      "to": "EDU"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EDU-008-Branding-Templates-Marketplace",
+      "to": "EDU"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EDU-009-Voiceover-Script-Library",
+      "to": "EDU"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EDU-010-Trade-Skills-Bootcamp",
+      "to": "EDU"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EDU-011-Franchise-Blueprint-System",
+      "to": "EDU"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EDU-012-Low-Income-Housing-Blueprint",
+      "to": "EDU"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EDU-013-Automated-Empire-Book",
+      "to": "EDU"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EDU-014-BIPOC-Creator-Incubator",
+      "to": "EDU"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EDU-015-AI-Legal-Doc-Generator",
+      "to": "EDU"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EDU-016-Virtual-Black-Art-Museum",
+      "to": "EDU"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EDU-017-AI-Coding-Tutor",
+      "to": "EDU"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EDU-018-Online-Course-Creator",
+      "to": "EDU"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EDU-019-Executive-Education-Program",
+      "to": "EDU"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EDU-020-Youth-STEM-Program",
+      "to": "EDU"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EDU-021-Remote-Work-Certification",
+      "to": "EDU"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EDU-022-AI-Research-Assistant",
+      "to": "EDU"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EDU-023-Personal-Finance-Coach",
+      "to": "EDU"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EDU-024-Language-Learning-AI",
+      "to": "EDU"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EDU-025-Test-Preparation-AI",
+      "to": "EDU"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EDU-026-Corporate-Training-AI",
+      "to": "EDU"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EDU-027-Medical-Education-AI",
+      "to": "EDU"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EDU-028-Legal-Education-AI",
+      "to": "EDU"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EDU-029-Music-Education-AI",
+      "to": "EDU"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EDU-030-Art-Education-AI",
+      "to": "EDU"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EDU-031-Physical-Education-AI",
+      "to": "EDU"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EDU-032-Environmental-Education-AI",
+      "to": "EDU"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EDU-033-Social-Studies-AI",
+      "to": "EDU"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EDU-034-Math-Education-AI",
+      "to": "EDU"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EDU-035-Science-Education-AI",
+      "to": "EDU"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EDU-036-Reading-Comprehension-AI",
+      "to": "EDU"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EDU-037-Writing-Instruction-AI",
+      "to": "EDU"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EDU-038-Critical-Thinking-AI",
+      "to": "EDU"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EDU-039-Emotional-Intelligence-AI",
+      "to": "EDU"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EDU-040-Time-Management-AI",
+      "to": "EDU"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-001-Luminary-Worldwide-Events",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-002-Brotherhood-Coaching-Network",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-003-Ace-Senior-Care-Connect",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-004-Community-Outreach-Nonprofit",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-005-Ace-Food-Security-AI",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-006-Community-Technology-Access-AI",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-007-Youth-Leadership-AI",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-008-Community-Fundraising-AI",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-009-Volunteer-Hub-AI",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-010-Disaster-Relief-AI",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-011-Indigenous-Creator-Hub",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-012-Black-Art-Museum-AI",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-013-Women-s-Empowerment-Network",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-014-Veterans-Support-AI",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-015-Youth-Mentorship-Program",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-016-Community-Health-AI",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-017-Local-Business-Directory",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-018-Neighborhood-Watch-AI",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-019-Community-Garden-AI",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-020-Public-Transportation-AI",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-021-Housing-Assistance-AI",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-022-Job-Training-Center",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-023-Elder-Companion-AI",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-024-Youth-Sports-AI",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-025-Community-Legal-Aid",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-026-Public-Education-AI",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-027-Local-Government-AI",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-028-Public-Safety-AI",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-029-Community-Wellness-AI",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-030-Cultural-Exchange-AI",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-031-Community-Investment-AI",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-032-Public-Health-AI",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-033-Youth-Innovation-Hub",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-034-Senior-Tech-Support",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-035-Community-Arts-AI",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-036-Public-Infrastructure-AI",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-037-Neighborhood-Development-AI",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-038-Community-Policing-AI",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-039-Public-Space-AI",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-040-Community-Recycling-AI",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-041-Public-Wi-Fi-AI",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-042-Community-Energy-AI",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-043-Local-Food-Network-AI",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-044-Community-Volunteering-AI",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-045-Public-Childcare-AI",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-046-Community-Pet-Care-AI",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-047-Public-Fitness-AI",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-048-Community-Transportation-AI",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-049-Public-Event-AI",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "COMM-050-Community-Cultural-AI",
+      "to": "COM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-001-Space-Habitat-AI",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-002-Fusion-Energy-AI",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-003-Teleportation-Research-AI",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-004-Climate-Solutions-AI",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-005-Holographic-Events-AI",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-006-Neurofeedback-AI",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-007-Autonomous-Delivery-AI",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-008-Gene-Editing-AI",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-009-Space-Tourism-AI",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-010-Wearables-AI",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-011-Metaverse-Hub-AI",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-012-Energy-Grid-AI",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-013-Brain-Computer-Interface",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-014-Ocean-Cleanup-AI",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-015-Crypto-Trading-AI",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-016-Synthetic-Media-AI",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-017-Space-Mining-AI",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-018-VR-Therapy-AI",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-019-Weather-Prediction-AI",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-020-Autonomous-Farming-AI",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-021-Traffic-Optimizer-AI",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-022-Smart-Grid-AI",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-023-Disaster-Prediction-AI",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-024-Nanotech-AI",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-025-Personalized-Medicine-AI",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-026-AI-Diagnostic-Lab",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-027-Sustainable-Cities-AI",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-028-Renewable-Energy-AI",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-029-Climate-Modeling-AI",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-030-Policy-Advisor-AI",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-031-Governance-Hub-AI",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-032-Global-Challenges-AI",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-033-Space-Exploration-AI",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-034-Education-Equity-AI",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-035-Health-Equity-AI",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-036-Economic-Equity-AI",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-037-Environmental-Justice-AI",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-038-Human-Rights-AI",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-039-Peacebuilding-AI",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-040-Telemedicine-AI",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-041-AI-Climate-Adaptation",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-042-Space-Agriculture-AI",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-043-Quantum-Communication-AI",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-044-Robotics-Surgery-AI",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-045-AI-Disaster-Response",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-046-Smart-City-Governance",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-047-AI-Environmental-Monitoring",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-048-Space-Manufacturing-AI",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-049-AI-Ocean-Exploration",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "EM-050-AI-Archaeology",
+      "to": "EM"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-001-AI-Auction-House",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-002-Smart-Marina-Management",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-003-AI-Surf-Report",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-004-Private-Chef-AI",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-005-Virtual-Concierge-AI",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-006-Smart-Parking-AI",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-007-AI-Interior-Design",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-008-Personal-Stylist-AI",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-009-Smart-Locker-System",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-010-AI-Fitness-Coach",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-011-Smart-Golf-Caddie",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-012-AI-Nutritionist",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-013-Smart-Hotel-Butler",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-014-AI-Language-Tutor",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-015-Smart-Transportation-AI",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-016-AI-Travel-Planner",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-017-Smart-Agriculture-AI",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-018-AI-Personal-Shopper",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-019-Smart-Home-Security",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-020-AI-Music-Producer",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-021-Smart-Restaurant-AI",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-022-AI-Movie-Critic",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-023-Smart-Museum-Guide",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-024-AI-Sports-Analyst",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-025-Smart-Library-AI",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-026-AI-Art-Curator",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-027-Smart-Fitness-AI",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-028-AI-Poetry-Generator",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-029-Smart-Dating-AI",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-030-AI-Journalism-Tool",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-031-Smart-Legal-AI",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-032-AI-Game-Designer",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-033-Smart-Real-Estate-AI",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-034-AI-Cooking-Assistant",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-035-Smart-Health-AI",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-036-AI-Photography-Tool",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-037-Smart-Writing-AI",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-038-AI-Comedy-Writer",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-039-Smart-Meditation-AI",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-040-AI-Debate-Coach",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-041-Smart-Parenting-AI",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-042-AI-Financial-Advisor",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-043-Smart-Automotive-AI",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-044-AI-Aviation-Planner",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-045-Smart-Maritime-AI",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-046-AI-Weather-Forecast",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-047-Smart-Energy-AI",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-048-AI-Sports-Coach",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-049-Smart-Education-AI",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "SPEC-050-AI-Language-Translator",
+      "to": "SPEC"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FI-dist",
+      "to": "FI"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FI-node_modules",
+      "to": "FI"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FI-public",
+      "to": "FI"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FI-src",
+      "to": "FI"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "FI-supabase",
+      "to": "FI"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "CON-001-ACE-CONSTRUCTION",
+      "to": "CON"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "CON-002-RESIDENTIAL-CONSTRUCTION",
+      "to": "CON"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "CON-003-COMMERCIAL-CONSTRUCTION",
+      "to": "CON"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "CON-004-INDUSTRIAL-CONSTRUCTION",
+      "to": "CON"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "CON-005-CONSTRUCTION-EQUIPMENT-RENTAL",
+      "to": "CON"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "CON-006-CONSTRUCTION-PROJECT-MANAGEMENT",
+      "to": "CON"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "CON-007-GREEN-BUILDING-SERVICES",
+      "to": "CON"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "CON-008-HOME-RENOVATION-SERVICES",
+      "to": "CON"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "CON-009-ROOFING-COMPANY",
+      "to": "CON"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "CON-010-PLUMBING-SERVICES",
+      "to": "CON"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "CON-011-ELECTRICAL-SERVICES",
+      "to": "CON"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "CON-012-HVAC-SERVICES",
+      "to": "CON"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "CON-013-PAINTING-SERVICES",
+      "to": "CON"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "CON-014-FLOORING-SERVICES",
+      "to": "CON"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "CON-015-LANDSCAPING-SERVICES",
+      "to": "CON"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "CON-016-DEMOLITION-SERVICES",
+      "to": "CON"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "CON-017-CONCRETE-SERVICES",
+      "to": "CON"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "CON-018-CARPENTRY-SERVICES",
+      "to": "CON"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "CON-019-WINDOW-INSTALLATION",
+      "to": "CON"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "CON-020-INSULATION-SERVICES",
+      "to": "CON"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "RE-001-PROPERTY-HOLDINGS",
+      "to": "RE"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "OPS-001-VENTURE-STAFFING",
+      "to": "OPS"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "PROFILE-001-DIVINE-JOHNS-PORTFOLIO",
+      "to": "PROFILE"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "ET-010-PERSONAL-RESUME",
+      "to": "ET"
+    },
+    {
+      "type": "BELONGS_TO_SECTOR",
+      "from": "TECH-061-TECH-VENTURES-PORTFOLIO",
+      "to": "TECH"
+    }
+  ]
+}

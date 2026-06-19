@@ -1,0 +1,32 @@
+{
+  "venture_id": "2419bf07-b3f2-400f-a2c5-acab2bce597b",
+  "venture_code": "CON-002",
+  "channels": {
+    "youtube_shorts": {
+      "tof": {
+        "title_template": "{{hook}} | Permit Compliance Platform",
+        "description_template": "{{script}}\n\nFollow for more.",
+        "hashtags": ["#shorts", "#construction", "#CON-002"]
+      },
+      "mof": {
+        "title_template": "How Permit Compliance Platform works in 3 steps",
+        "description_template": "{{script}}\n\nBook a free workflow review",
+        "hashtags": ["#construction", "#demo"]
+      },
+      "bof": {
+        "title_template": "Book a free workflow review | Permit Compliance Platform",
+        "description_template": "{{script}}\n\nBook below.",
+        "hashtags": ["#contractor", "#saas"]
+      }
+    },
+    "instagram_reels": {
+      "caption_max_chars": 2200,
+      "tof_hook_first_line": true,
+      "cta": "Link in bio"
+    },
+    "linkedin": {
+      "mof_preferred": true,
+      "tone": "professional, metric-led"
+    }
+  }
+}

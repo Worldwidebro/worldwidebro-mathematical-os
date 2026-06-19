@@ -1,0 +1,212 @@
+{
+  "name": "Weekly Growth Engine (Mon–Sun)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": { "interval": [{ "field": "cronExpression", "expression": "0 9 * * 1" }] }
+      },
+      "id": "cron-mon",
+      "name": "Mon 9AM TOF",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [200, 100]
+    },
+    {
+      "parameters": {
+        "rule": { "interval": [{ "field": "cronExpression", "expression": "0 10 * * 2" }] }
+      },
+      "id": "cron-tue",
+      "name": "Tue 10AM Amplify",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [200, 220]
+    },
+    {
+      "parameters": {
+        "rule": { "interval": [{ "field": "cronExpression", "expression": "0 9 * * 3" }] }
+      },
+      "id": "cron-wed",
+      "name": "Wed 9AM MOF",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [200, 340]
+    },
+    {
+      "parameters": {
+        "rule": { "interval": [{ "field": "cronExpression", "expression": "0 10 * * 4" }] }
+      },
+      "id": "cron-thu",
+      "name": "Thu 10AM Proof",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [200, 460]
+    },
+    {
+      "parameters": {
+        "rule": { "interval": [{ "field": "cronExpression", "expression": "0 9 * * 5" }] }
+      },
+      "id": "cron-fri",
+      "name": "Fri 9AM BOF",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [200, 580]
+    },
+    {
+      "parameters": {
+        "rule": { "interval": [{ "field": "cronExpression", "expression": "0 12 * * 6" }] }
+      },
+      "id": "cron-sat",
+      "name": "Sat 12PM Analytics",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [200, 700]
+    },
+    {
+      "parameters": {
+        "rule": { "interval": [{ "field": "cronExpression", "expression": "0 18 * * 0" }] }
+      },
+      "id": "cron-sun",
+      "name": "Sun 6PM Prep",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [200, 820]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            { "id": "v1", "name": "venture_id", "value": "1d84705c-8ebd-4c0c-83cf-cf383951b7bb", "type": "string" },
+            { "id": "d1", "name": "day", "value": "monday", "type": "string" }
+          ]
+        }
+      },
+      "id": "set-mon",
+      "name": "Set Mon",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [420, 100]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            { "id": "v1", "name": "venture_id", "value": "1d84705c-8ebd-4c0c-83cf-cf383951b7bb", "type": "string" },
+            { "id": "d1", "name": "day", "value": "tuesday", "type": "string" }
+          ]
+        }
+      },
+      "id": "set-tue",
+      "name": "Set Tue",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [420, 220]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            { "id": "v1", "name": "venture_id", "value": "1d84705c-8ebd-4c0c-83cf-cf383951b7bb", "type": "string" },
+            { "id": "d1", "name": "day", "value": "wednesday", "type": "string" },
+            { "id": "r1", "name": "render_flag", "value": "--render", "type": "string" }
+          ]
+        }
+      },
+      "id": "set-wed",
+      "name": "Set Wed",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [420, 340]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            { "id": "v1", "name": "venture_id", "value": "1d84705c-8ebd-4c0c-83cf-cf383951b7bb", "type": "string" },
+            { "id": "d1", "name": "day", "value": "thursday", "type": "string" }
+          ]
+        }
+      },
+      "id": "set-thu",
+      "name": "Set Thu",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [420, 460]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            { "id": "v1", "name": "venture_id", "value": "1d84705c-8ebd-4c0c-83cf-cf383951b7bb", "type": "string" },
+            { "id": "d1", "name": "day", "value": "friday", "type": "string" },
+            { "id": "r1", "name": "render_flag", "value": "--render", "type": "string" }
+          ]
+        }
+      },
+      "id": "set-fri",
+      "name": "Set Fri",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [420, 580]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            { "id": "v1", "name": "venture_id", "value": "1d84705c-8ebd-4c0c-83cf-cf383951b7bb", "type": "string" },
+            { "id": "d1", "name": "day", "value": "saturday", "type": "string" }
+          ]
+        }
+      },
+      "id": "set-sat",
+      "name": "Set Sat",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [420, 700]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            { "id": "v1", "name": "venture_id", "value": "1d84705c-8ebd-4c0c-83cf-cf383951b7bb", "type": "string" },
+            { "id": "d1", "name": "day", "value": "sunday", "type": "string" }
+          ]
+        }
+      },
+      "id": "set-sun",
+      "name": "Set Sun",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [420, 820]
+    },
+    {
+      "parameters": {
+        "command": "=python3 /Users/acebless/Documents/WORLDWIDEBRO-OS/11_GROWTH_FUNNEL/SCRIPTS/weekly_funnel_runner.py --venture-id {{ $json.venture_id }} --day {{ $json.day }} {{ $json.render_flag || '' }}"
+      },
+      "id": "run-weekly",
+      "name": "Run Weekly Funnel Job",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [660, 460]
+    }
+  ],
+  "connections": {
+    "Mon 9AM TOF": { "main": [[{ "node": "Set Mon", "type": "main", "index": 0 }]] },
+    "Tue 10AM Amplify": { "main": [[{ "node": "Set Tue", "type": "main", "index": 0 }]] },
+    "Wed 9AM MOF": { "main": [[{ "node": "Set Wed", "type": "main", "index": 0 }]] },
+    "Thu 10AM Proof": { "main": [[{ "node": "Set Thu", "type": "main", "index": 0 }]] },
+    "Fri 9AM BOF": { "main": [[{ "node": "Set Fri", "type": "main", "index": 0 }]] },
+    "Sat 12PM Analytics": { "main": [[{ "node": "Set Sat", "type": "main", "index": 0 }]] },
+    "Sun 6PM Prep": { "main": [[{ "node": "Set Sun", "type": "main", "index": 0 }]] },
+    "Set Mon": { "main": [[{ "node": "Run Weekly Funnel Job", "type": "main", "index": 0 }]] },
+    "Set Tue": { "main": [[{ "node": "Run Weekly Funnel Job", "type": "main", "index": 0 }]] },
+    "Set Wed": { "main": [[{ "node": "Run Weekly Funnel Job", "type": "main", "index": 0 }]] },
+    "Set Thu": { "main": [[{ "node": "Run Weekly Funnel Job", "type": "main", "index": 0 }]] },
+    "Set Fri": { "main": [[{ "node": "Run Weekly Funnel Job", "type": "main", "index": 0 }]] },
+    "Set Sat": { "main": [[{ "node": "Run Weekly Funnel Job", "type": "main", "index": 0 }]] },
+    "Set Sun": { "main": [[{ "node": "Run Weekly Funnel Job", "type": "main", "index": 0 }]] }
+  },
+  "settings": { "executionOrder": "v1", "timezone": "America/New_York" },
+  "meta": {
+    "description": "Edit venture_id in each Set node. Requires n8n Execute Command on host with Python paths."
+  }
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Find Work — Worldwidebro Staffing</title>
+  <meta name="description" content="Join the talent network. Get matched to jobs that fit your skills, weekly pay via direct transfer, and a profile that grows with you." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/styles.css" />
+</head>
+<body>
+  <div class="aurora"></div>
+  <div class="grid-overlay"></div>
+
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="/"><span class="dot">◆</span> Worldwidebro Staffing</a>
+      <div class="nav-links" id="navLinks">
+        <a href="/clients.html">For Clients</a>
+        <a href="/workers.html">For Workers</a>
+        <a href="/pricing.html">Pricing &amp; Services</a>
+        <a href="/pricing.html#ai">AI Workforce</a>
+        <a href="#" onclick="return false">Login<span class="soon">soon</span></a>
+      </div>
+      <div class="nav-cta">
+        <a class="btn btn-ghost" href="/clients.html#request">Hire Talent</a>
+        <a class="btn btn-primary" href="#apply">Join Now</a>
+        <button class="menu-btn" data-menu aria-label="Menu">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-hero wrap">
+    <span class="eyebrow"><span class="pill">For Workers</span> Steady work, fast pay</span>
+    <h1>Get matched to <span class="gradient-text">work that fits you</span></h1>
+    <p>Join the talent network in minutes. We connect you with jobs in the trades, warehouse, admin, and more — and pay you weekly by direct transfer.</p>
+    <div class="hero-cta" style="margin-top:28px">
+      <a class="btn btn-primary btn-lg" href="#apply">Join the Network →</a>
+      <a class="btn btn-ghost btn-lg" href="#how">How it works</a>
+    </div>
+  </header>
+
+  <!-- BENEFITS -->
+  <section class="block wrap">
+    <div class="section-head reveal">
+      <div class="kicker">Why join</div>
+      <h2>Built around what workers actually want</h2>
+    </div>
+    <div class="grid grid-3">
+      <div class="card reveal"><div class="ic">💵</div><h3>Weekly pay</h3><p>Get paid every week by direct transfer once your timesheet is approved. No waiting on net-30.</p></div>
+      <div class="card reveal"><div class="ic">🎯</div><h3>Jobs that fit</h3><p>Our matching engine sends you work that matches your skills, rate, and location — not spam postings.</p></div>
+      <div class="card reveal"><div class="ic">📈</div><h3>A profile that grows</h3><p>Build a track record, add certifications, and unlock higher-rate placements over time.</p></div>
+      <div class="card reveal"><div class="ic">🤝</div><h3>Real support</h3><p>A coordinator you can reach — for scheduling, pay questions, and finding your next assignment.</p></div>
+      <div class="card reveal"><div class="ic">🛡️</div><h3>Covered &amp; compliant</h3><p>We handle workers' comp and payroll taxes so you're protected on the job.</p></div>
+      <div class="card reveal"><div class="ic">🚀</div><h3>Room to grow</h3><p>Move from temp shifts to contract roles to direct-hire placements as opportunities open.</p></div>
+    </div>
+  </section>
+
+  <!-- HOW -->
+  <section class="block wrap" id="how">
+    <div class="section-head reveal">
+      <div class="kicker">How it works</div>
+      <h2>From application to your first paycheck</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="n"></div><div><h3>Apply in minutes</h3><p style="color:var(--muted)">Tell us your skills, rate, and how to reach you. No long forms.</p></div></div>
+      <div class="step reveal"><div class="n"></div><div><h3>Get matched</h3><p style="color:var(--muted)">When a job fits your profile, we reach out with the details — you decide if it's a fit.</p></div></div>
+      <div class="step reveal"><div class="n"></div><div><h3>Work the job</h3><p style="color:var(--muted)">Show up, do the work, log your hours. We handle the client relationship.</p></div></div>
+      <div class="step reveal"><div class="n"></div><div><h3>Get paid weekly</h3><p style="color:var(--muted)">Approved timesheets are paid out every week via direct transfer.</p></div></div>
+    </div>
+  </section>
+
+  <!-- APPLY FORM -->
+  <section class="block wrap" id="apply">
+    <div class="section-head reveal">
+      <div class="kicker">Join the talent network</div>
+      <h2>Apply now</h2>
+      <p>Takes about two minutes. We'll reach out when a job matches your skills.</p>
+    </div>
+    <form class="form-card reveal" id="workerForm" novalidate>
+      <div class="field"><label for="fullName">Full name *</label><input id="fullName" name="fullName" required placeholder="Chris Johnson" /></div>
+      <div class="row-2">
+        <div class="field"><label for="phone">Phone *</label><input id="phone" name="phone" required placeholder="(704) 555-0123" /></div>
+        <div class="field"><label for="email">Email *</label><input id="email" name="email" type="email" required placeholder="chris@email.com" /></div>
+      </div>
+      <div class="field"><label for="skills">Skills / trades *</label><input id="skills" name="skills" required placeholder="electrical, hvac, general-labor" /><p class="form-note" style="text-align:left;margin-top:6px">Separate with commas.</p></div>
+      <div class="field"><label for="hourlyRate">Desired hourly rate (USD)</label><input id="hourlyRate" name="hourlyRate" type="number" min="0" step="0.5" placeholder="22" /></div>
+      <button class="btn btn-primary btn-lg" type="submit" style="width:100%">Join the Network →</button>
+      <div class="form-status"></div>
+      <p class="form-note">By applying you agree to be contacted about work opportunities. No spam.</p>
+    </form>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <a class="brand" href="/"><span class="dot">◆</span> Worldwidebro Staffing</a>
+          <p style="color:var(--muted);font-size:14px;margin-top:14px;max-width:34ch">The human + AI workforce platform. Charlotte, NC — serving clients nationwide.</p>
+        </div>
+        <div><h4>Clients</h4><a href="/clients.html">Hire Talent</a><a href="/clients.html#request">Request Staff</a><a href="/pricing.html">Pricing</a></div>
+        <div><h4>Workers</h4><a href="#apply">Apply Now</a><a href="#how">How Payroll Works</a><a href="#" onclick="return false">Open Jobs<span class="soon">soon</span></a><a href="#" onclick="return false">Worker Portal<span class="soon">soon</span></a></div>
+        <div><h4>Solutions</h4><a href="/pricing.html#staffing">Staffing</a><a href="/pricing.html#recruiting">Recruiting</a><a href="/pricing.html#payroll">Payroll</a><a href="/pricing.html#ai">AI Agents</a></div>
+      </div>
+      <div class="foot-bottom"><span>© 2026 Worldwidebro Holdings.</span><span>STAFF-001 · Venture Staffing</span></div>
+    </div>
+  </footer>
+
+  <script src="/assets/app.js" defer></script>
+</body>
+</html>

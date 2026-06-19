@@ -1,0 +1,24 @@
+{
+  "task_id": "CON-011_Home_Electrical_Safety_Checklist_20260605_115526",
+  "video_subject": "Home Electrical Safety Checklist",
+  "video_script": "Safety checklist: outdated wiring, overloaded circuits,\n                faulty outlets, water near electrical, improper grounding. Include warning\n                signs and when to call an electrician.",
+  "video_size": "9:16",
+  "duration": 55,
+  "language": "en",
+  "voice": "male_professional",
+  "bgm": "random",
+  "bgm_volume": 0.35,
+  "subtitle": {
+    "font": "Microsoft YaHei",
+    "size": 40,
+    "color": "#FFFFFF",
+    "stroke_color": "#000000",
+    "stroke_width": 1.5,
+    "style": "bold"
+  },
+  "concurrent_num": 2,
+  "llm_provider": "aihubmix",
+  "video_source": "pexels",
+  "output_path": "/Users/acebless/Documents/moneyprinter-output/videos/CON-011",
+  "webhook_url": null
+}

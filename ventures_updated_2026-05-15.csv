@@ -1,0 +1,584 @@
+ID,Name,Description,Sector,Status
+dd78dc7f-ab6a-4c1f-9405-b0cbd827ae0d,QuantumLedger,Core decentralized ledger and smart contract code for fintech,fintech,active
+fbf1cfaf-d3e5-413e-9880-5e6944cd3cf5,CogniFlow,AI-powered workflow management and orchestration platform,ai,active
+4f3bc116-b77f-4b3a-a9f6-a3327a21762d,SkillForge,AI-powered learning platform with automated course creation,edtech,active
+484ac493-c394-4ca1-aa18-e514a8844312,VitalSense,Wearable health monitoring system with real-time analytics,health,active
+a4edc8b5-1635-4e87-85eb-bfcc9e168697,Tax Intelligence Platform,AI-powered tax preparation and intelligence platform,fintech,active
+65bcab5b-f1b9-425c-963a-674db3c88f2e,Civilization OS,"Master orchestrator managing 245 repos, 553 AI agents, 100+ ventures",infra,active
+a816b258-9f64-471b-98cf-85682d14589b,Credit Repair Automation,Credit Repair Automation,fintech,active
+c3420a69-2d33-48d6-b5bd-eae1021e86e2,Ai Boss Hub Lite,Ai Boss Hub Lite,fintech,active
+8d5aaff7-e742-4eca-8bb5-dbe1a84fff26,Genixbanks Ai Treasurer,Genixbanks Ai Treasurer,fintech,active
+6864b44d-111b-4f8f-9d86-70c7576ba018,U Haul Rental Affiliate,U Haul Rental Affiliate,fintech,active
+da7741e1-3e05-4949-9a87-cfdd2d70d256,Business Credit Building,Business Credit Building,fintech,active
+37827f2a-b6dc-4218-a578-d96cb004b1f0,Business Formation Services,Business Formation Services,fintech,active
+a12d6916-eb38-49ad-8293-17a68098b94f,Crypto Tax Optimizer,Crypto Tax Optimizer,fintech,active
+f2271f17-3ca5-4e9d-9518-bab57abef224,Ai Powered Garbage Collection,Ai Powered Garbage Collection,fintech,active
+db540a0b-9916-4c91-b31c-e6390b861032,Automated Bookkeeping,Automated Bookkeeping,fintech,active
+2456b3b6-1012-4c1c-ace0-0f100383fda2,Invoice Factoring Ai,Invoice Factoring Ai,fintech,active
+994cd260-66b9-4291-84bc-98f04cd9a7f1,Charity Donation Ai,Charity Donation Ai,fintech,active
+a2192e41-9b9d-4d1a-8f84-bed3ecd9d653,Expense Tracker Ai,Expense Tracker Ai,fintech,active
+01f74934-8d29-4292-86d9-4a5c6af217ed,Trade Finance Ai,Trade Finance Ai,fintech,active
+d0ac1d6c-7634-49ef-b53b-1a9d5cad627f,Remittance Ai,Remittance Ai,fintech,active
+af84081d-f743-43b4-9871-c257fcfaf870,Wealth Transfer Ai,Wealth Transfer Ai,fintech,active
+6364ddf9-5003-46c7-b3ee-06947120b0dc,Payment Gateway Ai,Payment Gateway Ai,fintech,active
+54e48239-6fe9-4a4c-8559-d10072f4673a,Debt Consolidation Ai,Debt Consolidation Ai,fintech,active
+987c8140-a75c-4ba6-a401-fe9f9835b963,Tax Deduction Finder,Tax Deduction Finder,fintech,active
+55c975e3-18d8-4af6-be4c-dc5be06d881d,Budget Forecasting Ai,Budget Forecasting Ai,fintech,active
+30a407a5-4af5-42e5-8400-e5df314732e2,Investment Portfolio Ai,Investment Portfolio Ai,fintech,active
+e43ada0c-5456-42a0-b676-4b45e962ccb0,Business Template Marketplace,487+ AI-powered business templates with automated generation,market,active
+b9c1c9a3-5927-480c-857d-6b99be35254b,Enhanced Cursor Rules,487+ comprehensive Cursor rules for AI development,devtools,active
+e0c4a3d9-eebb-40c4-94fc-778c2799ecb8,Housing Assistance Ai,Housing Assistance Ai,market,active
+963b382c-a761-465c-b417-02501d107650,Credit Repair Automation,Credit Repair Automation,fintech,active
+bdf2e0fb-7dde-478e-a48e-d363192d733c,Ai Boss Hub Lite,Ai Boss Hub Lite,fintech,active
+31814643-600d-495d-8d8e-200317f998bf,U Haul Rental Affiliate,U Haul Rental Affiliate,fintech,active
+3ca65cde-afba-402a-a609-514162c04b49,Tax Prep Filing Services,Tax Prep Filing Services,fintech,active
+146ed62c-d9e8-4285-b2c8-8b852dbfa76b,Business Credit Building,Business Credit Building,fintech,active
+e8306358-7f14-4b3a-85e2-38c42a2025c5,Business Formation Services,Business Formation Services,fintech,active
+762cb3e5-3aad-4234-9035-0792b876af01,Crypto Tax Optimizer,Crypto Tax Optimizer,fintech,active
+48078344-8da1-4ee7-8dba-049b8b3e0ec6,Ai Powered Garbage Collection,Ai Powered Garbage Collection,fintech,active
+6a871b02-00ea-42b9-b16d-c14212aa34a3,Automated Bookkeeping,Automated Bookkeeping,fintech,active
+dccea2da-3d6e-4869-8e37-65d90a529fa4,Invoice Factoring Ai,Invoice Factoring Ai,fintech,active
+2d717fcc-a5b1-40db-90c5-0c0c86f2be1e,Expense Tracker Ai,Expense Tracker Ai,fintech,active
+e0e532a2-b8af-43df-98af-90f00445b67c,Financial Wellness Coach,Financial Wellness Coach,fintech,active
+7e0ee192-1311-497f-9d6a-f6993b5cc251,Trade Finance Ai,Trade Finance Ai,fintech,active
+60598b62-cd1d-4be5-8021-3cb3bf7ff370,Remittance Ai,Remittance Ai,fintech,active
+6ecd4ac6-2f01-42c2-8719-7ed67242746e,Wealth Transfer Ai,Wealth Transfer Ai,fintech,active
+2b8ec933-7b91-4aa0-b80a-788d979179e1,Payment Gateway Ai,Payment Gateway Ai,fintech,active
+bb1e8456-d7f0-44fa-a8c3-7fc7cf06363a,Crowdfunding Ai,Crowdfunding Ai,fintech,active
+2c7f67bd-5ef9-43dc-9415-a20b5785d344,Escrow Automation,Escrow Automation,fintech,active
+939878de-81aa-4603-9b28-4492e4d72451,Costume Shop Ai,Costume Shop Ai,market,active
+9d34bc00-2b52-455c-8be7-a9bf8ed213ef,Luggage Ai,Luggage Ai,market,active
+bd6ae181-40ec-439e-8fb2-d2a15abd8927,Home Appliance Ai,Home Appliance Ai,market,active
+19c45bca-ebfb-4dde-8356-5a7fcb406344,Tool Shop Ai,Tool Shop Ai,market,active
+64669816-60f5-4f5d-822c-d542a5398c33,Sunglasses Ai,Sunglasses Ai,market,active
+9ac4f7e2-560a-4868-9965-bb793789d2c0,Dropship Hub,Dropship Hub,market,active
+952ed8f1-ed82-47a2-8fed-f32c90e21c50,Personal Shopper Ai,Personal Shopper Ai,market,active
+7eec5582-b7d3-4814-b1e1-763ce7b7dc52,Custom Sneaker Ai,Custom Sneaker Ai,market,active
+a458a464-3244-4623-847c-9b2fc339b9ec,Jewelry Designer Ai,Jewelry Designer Ai,market,active
+3c4a6a4e-aacd-4c85-b842-c01c18d67eed,Virtual Try On Ai,Virtual Try On Ai,market,active
+ab88f4c6-bfbe-426a-b5be-9de15cbf26ce,Fashion Designer Ai,Fashion Designer Ai,market,active
+1e024252-6dd8-4413-b4c2-462db4ed5320,Job Training Center,Job Training Center,market,active
+96c2276c-5e6a-45ce-9684-726949515b92,Subscription Box Ai,Subscription Box Ai,market,active
+932d609e-11b7-417e-a9da-dc37b7cb457b,Surf Gear Ai,Surf Gear Ai,market,active
+778f1fff-2438-409b-b285-3c43fd9fad4c,Ski Gear Ai,Ski Gear Ai,market,active
+5cef7ad7-0af4-4caf-a5b3-437d60d84100,Golf Gear Ai,Golf Gear Ai,market,active
+70c45815-05f9-4c27-8428-719e4639b1fe,Fishing Gear Ai,Fishing Gear Ai,market,active
+e94b1fc3-1398-4311-92f8-0ef23007110c,Yoga Gear Ai,Yoga Gear Ai,market,active
+51d69a32-a9fe-47b8-b3c7-88780372918b,Luggage Ai,Luggage Ai,market,active
+4872fb01-ff96-431c-9b25-c2a66ad5b763,Home Appliance Ai,Home Appliance Ai,market,active
+d3c46e47-edf0-4e0a-bea5-aa03fc979d45,Tool Shop Ai,Tool Shop Ai,market,active
+8d09481b-71b4-434e-87db-ef902fb4016d,Garden Supply Ai,Garden Supply Ai,market,active
+5723b162-0c6f-4c98-a728-a2fdbbaed952,Garden Supply Ai,Garden Supply Ai,market,active
+c86f1f74-1b0c-4298-bcb0-540ee11c30c1,Collectible Ai,Collectible Ai,market,active
+91a1d2f1-71dc-4a13-8f6c-923b52090248,Hobby Shop Ai,Hobby Shop Ai,market,active
+c9097876-1a20-4574-a8e5-29e893202132,Kids Toy Line,Kids Toy Line,market,active
+0ef43be4-0a97-4b81-bb34-318e99be2e79,Instant Brand Generator,Instant Brand Generator,market,active
+5706db7e-a0aa-4216-8a72-6e423d201490,Ai Product Photographer,Ai Product Photographer,market,active
+23ea35ff-8a7e-46ac-b98e-6aebc0201d77,Review Aggregator Ai,Review Aggregator Ai,market,active
+4e15bedf-ea71-46db-85b6-db02f9a878cd,Fulfillment Network Ai,Fulfillment Network Ai,market,active
+148ae630-ad97-4241-a1e6-2baf1ff50aca,Return Optimization Ai,Return Optimization Ai,market,active
+b6823f63-1d6d-4b98-a640-3766a0637c50,Chatbot Customer Service,Chatbot Customer Service,market,active
+d0345ab1-172d-4756-8b40-62f14e3aa180,Visual Search Ai,Visual Search Ai,market,active
+dc861445-1f5e-4506-a1c9-61d3039e13c9,Abandoned Cart Recovery,Abandoned Cart Recovery,market,active
+9768ddd8-b027-4369-9ae0-e7550b46d7b1,Seasonal Trend Predictor,Seasonal Trend Predictor,market,active
+5f76f4f1-6910-4407-bdb8-a04b51507952,Influencer Matchmaker,Influencer Matchmaker,market,active
+44eacc62-7877-48ea-8ef6-80ebc1b0e846,Ugc Content Aggregator,Ugc Content Aggregator,market,active
+6e163a71-7804-4103-979e-4b2dd53f3486,Live Commerce Platform,Live Commerce Platform,market,active
+bb87cbc7-7f6d-47b9-833d-92b299cc6227,Dynamic Pricing Engine,Dynamic Pricing Engine,market,active
+782c3f1d-0127-464a-b1fa-812c2244f988,Ad Optimizer Ai,Ad Optimizer Ai,market,active
+70a6dd47-0fe7-456e-bf0e-497b09bab3f4,Recommendation Engine,Recommendation Engine,market,active
+f4d11787-2851-45c9-bfa2-88349762a37d,Review Aggregator Ai,Review Aggregator Ai,market,active
+02ee37b5-eb8a-4f42-ad94-79b7e5472d22,Fulfillment Network Ai,Fulfillment Network Ai,market,active
+0ea29e71-8639-4202-925b-ecb70c013800,Return Optimization Ai,Return Optimization Ai,market,active
+135a93dd-eafe-4547-872d-1881adc1a5de,Ai Warehouse Management,Ai Warehouse Management,market,active
+f0069c8b-ac87-4578-bbff-6ebbcc8dbff1,Ai Supplier Matching,Ai Supplier Matching,market,active
+84c1bc81-7c50-455d-958b-e6d4af9b2a24,Community Wellness Ai,Community Wellness Ai,market,active
+bf5bc673-2cc4-4055-baff-af79944b081b,Ai Packaging Designer,Ai Packaging Designer,market,active
+85d90fdc-fe1f-44fe-8c2e-289ae62680df,Ai Logistics Planner,Ai Logistics Planner,market,active
+227ee829-19eb-4140-8f4e-d5c738068733,Ai Customer Loyalty,Ai Customer Loyalty,market,active
+82bae0ac-72af-4173-874c-de5254964862,Ai Gift Finder,Ai Gift Finder,market,active
+b3e568d8-94c6-4a2e-8a4e-369ae8599d95,Ai Trend Hunter,Ai Trend Hunter,market,active
+4cbc4879-fd8f-49cd-8e56-23650b8685c6,Ai Market Research,Ai Market Research,market,active
+9a5aa02f-ac60-48bf-a38d-705835685df5,Ai Competitor Watcher,Ai Competitor Watcher,market,active
+11042f16-27fe-4c22-80d8-719ec6a3dc83,Visual Search Ai,Visual Search Ai,market,active
+d554d438-5692-4d11-8134-b46be9143aa2,Abandoned Cart Recovery,Abandoned Cart Recovery,market,active
+2341307d-f417-4696-8f8f-8900eee85251,Seasonal Trend Predictor,Seasonal Trend Predictor,market,active
+1972105c-4744-4d5f-8ff1-1d5e623dedd4,Influencer Matchmaker,Influencer Matchmaker,market,active
+b1fa7bc1-4ded-401b-ac28-e5b6378c8c8c,Ugc Content Aggregator,Ugc Content Aggregator,market,active
+0ade2bf0-c2a2-4373-9179-2c773ea44a76,Live Commerce Platform,Live Commerce Platform,market,active
+b7a0e981-8ef3-45bf-ad1d-3cbd3b482ba9,Ar Virtual Fitting Room,Ar Virtual Fitting Room,market,active
+8f0f0499-a814-429a-b20a-d1411b016a44,Ai Color Match,Ai Color Match,market,active
+45b36031-545d-4ab0-acac-3aa3db786bcb,Ai Fabric Advisor,Ai Fabric Advisor,market,active
+4b899fec-ce6a-4ada-b6be-d491c765c111,Ai Fit Recommendation,Ai Fit Recommendation,market,active
+ef0b2fc8-daa6-408a-9f95-40059e9c64b7,Ai Outfit Builder,Ai Outfit Builder,market,active
+c4744881-e122-4b66-9c48-f00e0d5d9313,Ai Seasonal Forecast,Ai Seasonal Forecast,market,active
+f31db2ef-f6bc-441f-8fe8-f24f307a1612,Ai Accessory Match,Ai Accessory Match,market,active
+f0f53215-f3d0-405a-9fae-7100d4bc4a29,Ai Shoe Match,Ai Shoe Match,market,active
+69cafbde-7fc1-4870-b3e6-3e5d4149db1c,Ai Jewelry Match,Ai Jewelry Match,market,active
+3f137e95-1a79-4be9-9f29-255b45ba89fc,Ai Bag Match,Ai Bag Match,market,active
+f673b096-f211-4b65-9ff5-20a85605513b,3D Product Viewer,3D Product Viewer,market,active
+7ddb1d25-8677-41dd-af5c-2e3081519676,Customer Insights Ai,Customer Insights Ai,devtools,active
+aae4bb91-f8c0-4971-9733-f3bf13827125,Voice Assistant Ai,Voice Assistant Ai,devtools,active
+54310d28-55be-453f-ba14-c1fa7123c0fc,Blockchain Verifier Ai,Blockchain Verifier Ai,devtools,active
+974d3937-2057-4deb-89e2-c14f919472ab,Cybersecurity Shield,Cybersecurity Shield,devtools,active
+27843a05-3600-4e58-b7e7-a3fa98833782,Content Studio Ai,Content Studio Ai,devtools,active
+fbcf2c5c-e26a-4eec-bb6d-f08c69775135,Smart Home Ai,Smart Home Ai,devtools,active
+42bdbd59-4767-49d3-8fa8-ee850440658a,Data Visualization Ai,Data Visualization Ai,devtools,active
+3a5d86be-26e5-44f4-8ab2-e7c7725e98ba,Workflow Automation,Workflow Automation,devtools,active
+2afc29cb-4bb8-4f85-8a1d-d5e79f2124d5,Sentiment Analyzer,Sentiment Analyzer,devtools,active
+318bd735-f2da-4275-b07f-1c48f67c84a4,Image Recognition Ai,Image Recognition Ai,devtools,active
+42958522-0037-4ce0-a015-4a45bd3df1b6,Neighborhood Development Ai,Neighborhood Development Ai,market,active
+b1dfcf0b-77fe-4738-b2b3-46086996c73a,Speech To Text Ai,Speech To Text Ai,devtools,active
+3fa42e76-1929-4fc0-bc7c-1cff095ca744,Text To Speech Ai,Text To Speech Ai,devtools,active
+8da89383-4c18-4f89-b971-7be9634a59d4,Fraud Prevention Ai,Fraud Prevention Ai,devtools,active
+bbc87e7b-3c1e-4943-8e72-baa206252462,Recommendation Engine,Recommendation Engine,devtools,active
+e77dfaa6-4c0c-405a-80d7-900ee4315000,Network Security Ai,Network Security Ai,devtools,active
+33c71527-b0d1-4e2b-b3f8-c0e556c5e0de,Database Optimizer,Database Optimizer,devtools,active
+5dd71714-9d13-4391-bc0f-e3a5be51968b,Ai Testing Platform,Ai Testing Platform,devtools,active
+0cfa37d1-5dbe-44de-ac1d-bb54b5f2f26b,Virtual Assistant Builder,Virtual Assistant Builder,devtools,active
+150c4561-556e-49c2-a85f-a313bf3157bf,Ai Ethics Auditor,Ai Ethics Auditor,devtools,active
+e7db8a0f-4a0f-4c17-b2ba-1aa5a3f14cfd,Predictive Analytics Ai,Predictive Analytics Ai,devtools,active
+c7e0bd76-25c3-4a34-814e-9cdce4ba6809,Ai Training Platform,Ai Training Platform,devtools,active
+c28ad252-086b-4da9-ae2f-7a4421a005b3,Digital Twin Ai,Digital Twin Ai,devtools,active
+59028581-6f24-4c4c-88f1-2e9efaf6b737,Ai Monitoring System,Ai Monitoring System,devtools,active
+01c5e938-dbea-4bc7-9cdf-441ebc75c1a6,Edge Computing Ai,Edge Computing Ai,devtools,active
+0f6a2756-2bc4-4fd5-abb9-30d24b087aca,Ai Integration Hub,Ai Integration Hub,devtools,active
+607c9d4b-724a-4ebb-960a-b78ed76de826,Quantum Algorithm Ai,Quantum Algorithm Ai,devtools,active
+cf47fab6-7fc9-48dc-b9fc-45dd838454da,Ai Compliance Scanner,Ai Compliance Scanner,devtools,active
+e515e6cd-a5a9-453d-80c6-fc11c9b7a602,Carbon Footprint Tracker,Carbon Footprint Tracker,market,active
+e6ccb583-55bf-43c4-854b-6dfb0b196fca,Rental Marketplace,Rental Marketplace,market,active
+7c528bb7-3515-479f-9928-de0dbdd423c2,Ai Product Descriptions,Ai Product Descriptions,market,active
+0c242bc0-f5ff-4fdc-b9d4-9852ef03e2e9,Project Management Ai,Project Management Ai,infra,active
+7ebbb0c4-8720-45ad-948d-4e0e06dd34d6,Document Automation Ai,Document Automation Ai,infra,active
+39596661-535e-4f2a-8dda-27d1a00d11c1,Meeting Assistant Ai,Meeting Assistant Ai,infra,active
+03bdd08f-74c4-4136-9e20-b1116922c386,Recruitment Ai,Recruitment Ai,infra,active
+efa5c705-5afa-45c0-a27c-94c4e1f966ba,Onboarding Ai,Onboarding Ai,infra,active
+5c08d1ff-20c0-4a01-87cb-956b582323f6,Training Platform Ai,Training Platform Ai,infra,active
+75a5ac21-7939-4c50-98e1-9e4cef26c5db,Performance Review Ai,Performance Review Ai,infra,active
+fe66b03d-776e-4c47-9088-f2cca0c530da,It Support Ai,It Support Ai,infra,active
+a5d1b865-4907-4660-b8f5-de7a837c1e13,Facilities Management Ai,Facilities Management Ai,infra,active
+774b5bed-dc3f-4806-9fb0-f5c21915d1d2,Travel Booking Ai,Travel Booking Ai,infra,active
+9f124150-2361-4a56-9b65-25bf157df311,Contract Management Ai,Contract Management Ai,infra,active
+d4520ce3-e9b3-4d97-ab36-beebe074938a,Compliance Monitoring Ai,Compliance Monitoring Ai,infra,active
+1a613d71-cdf4-44de-bc9f-91c0d8f9284c,Quality Control Ai,Quality Control Ai,infra,active
+0560c36b-06ee-4de2-97ab-60b75d4d1036,Asset Management Ai,Asset Management Ai,infra,active
+5e14ba4a-4152-4f8b-b782-1e9cc56299d4,Document Security Ai,Document Security Ai,infra,active
+6d13bcce-e856-4085-b615-aa4b639ea9cb,Knowledge Management Ai,Knowledge Management Ai,infra,active
+910045da-ac4a-4fa3-8041-15eec3658674,Task Automation Ai,Task Automation Ai,infra,active
+7520fa1f-0055-41a1-a995-9ab6324812be,Ai Email Marketing,Ai Email Marketing,market,active
+9778724e-b6e5-44ec-8aa6-e21712907a75,Ai Product Bundler,Ai Product Bundler,market,active
+ba7d6e14-d315-4a40-8147-df365b2ebecf,Ai Visual Merchandiser,Ai Visual Merchandiser,market,active
+1f79d4d9-0ae0-4d61-9229-bf119ef3e3a9,Ai Demand Forecasting,Ai Demand Forecasting,market,active
+76168880-aee5-4805-9d1e-3f46284bd73e,Ai Warehouse Management,Ai Warehouse Management,market,active
+8d079de0-f036-42a7-b886-62602bc23760,Ai Supplier Matching,Ai Supplier Matching,market,active
+efe6aa1a-59e0-47a7-91da-710cb64d17a3,Ai Quality Control,Ai Quality Control,market,active
+48f21b48-6f8e-4e07-9469-3d7dc790c5a4,Ai Packaging Designer,Ai Packaging Designer,market,active
+4533c051-374d-48ef-a99b-2717cc12f6da,Succession Planning Ai,Succession Planning Ai,infra,active
+ca869877-a5bd-4565-a4eb-ffc45ceffdd3,Workspace Design Ai,Workspace Design Ai,infra,active
+592cbb78-a528-4de6-82bd-cf1ddbefe51b,Security Monitoring Ai,Security Monitoring Ai,infra,active
+222e6e87-7845-44af-971e-3b43b8691ec9,Health Safety Ai,Health Safety Ai,infra,active
+082e7623-58f3-484b-a306-43d607fbf147,Disaster Recovery Ai,Disaster Recovery Ai,infra,active
+c1d528d4-8bfd-4660-9fb7-d835fe2daa36,It Asset Management,It Asset Management,infra,active
+de6c1ef8-064c-459a-b0ba-80ff12ef8e57,Cloud Cost Management,Cloud Cost Management,infra,active
+3e9a6484-ddf8-4282-996b-b6e458e9b39c,Data Governance Ai,Data Governance Ai,infra,active
+63805485-2e71-4db8-ad26-c08b6b4835e1,Network Monitoring Ai,Network Monitoring Ai,infra,active
+344b87d3-150c-422f-9fab-21632cf5f464,Ai Logistics Planner,Ai Logistics Planner,market,active
+eaa8a135-bbca-46d8-8b2d-d715e6cd642e,Ai Customer Loyalty,Ai Customer Loyalty,market,active
+a7e6761c-cc73-46ca-b4d1-3b1ab1aa2bb6,Ai Gift Finder,Ai Gift Finder,market,active
+87003939-3647-4fb8-b810-5576913b0fb5,Ai Trend Hunter,Ai Trend Hunter,market,active
+e316145d-57ff-420a-93da-56a34b0921cd,Resource Forecasting Ai,Resource Forecasting Ai,infra,active
+cd364a11-c88e-4bd2-8e33-597a2d0a1ec9,Task Prioritization Ai,Task Prioritization Ai,infra,active
+39bb131f-998c-4345-9905-8aebe1e526b9,Time Management Ai,Time Management Ai,infra,active
+1fa228ed-bb8b-4a8f-b019-29f445e2983e,Meeting Minutes Ai,Meeting Minutes Ai,infra,active
+1af98735-4007-4473-845b-83800d820bdd,Document Translation Ai,Document Translation Ai,infra,active
+9535c69f-9a5a-48bf-a7b1-4aed7892a4b8,Form Automation Ai,Form Automation Ai,infra,active
+6228a196-53c1-4798-a226-a9a98bc987e7,Report Generation Ai,Report Generation Ai,infra,active
+e2099922-c03e-463e-8b72-744a4fbf93db,Dashboard Creation Ai,Dashboard Creation Ai,infra,active
+36ee7c26-d6b6-47ff-a68c-105df6e12149,Analytics Platform Ai,Analytics Platform Ai,infra,active
+e5ba6735-4b66-48a7-8233-01e0820580e8,Data Cleaning Ai,Data Cleaning Ai,infra,active
+5edf415f-1051-4f10-bb16-670e3dc28dd5,Public Fitness Ai,Public Fitness Ai,market,active
+2c23bb1e-c24d-44fd-8acd-fe8b79856c0d,Youth Entrepreneurship Curriculum,Youth Entrepreneurship Curriculum,edtech,active
+8be57f27-71d3-48bc-b6d9-f5749a6b91a7,Ai Literacy Program,Ai Literacy Program,edtech,active
+1705ea92-cfb4-4491-9398-9eb0cb750c32,Coding Mentor Certification,Coding Mentor Certification,edtech,active
+0142298f-d27e-4f27-b9f7-621d7df2051d,Real Estate Licensing Prep,Real Estate Licensing Prep,edtech,active
+7a6ea56f-3e04-4fc5-bf24-e12f4a4cee49,Coding Bootcamp,Coding Bootcamp,edtech,active
+18473bcf-98a9-48bb-93c9-1e22b475458a,Homeschooling Content Ai,Homeschooling Content Ai,edtech,active
+70623f59-4cac-43da-86d5-c73a378e3717,Ai Tutoring Platform,Ai Tutoring Platform,edtech,active
+34bef434-d5d2-4dab-b6f4-594fa069d2cc,Ai Market Research,Ai Market Research,market,active
+dbfe774d-fa2a-4692-b246-68099c88b85c,Ai Competitor Watcher,Ai Competitor Watcher,market,active
+66f336ca-ac2d-4566-b711-7d8ee8d2e0df,Ai Product Development,Ai Product Development,market,active
+c9ef5321-03f9-4c9e-8c92-c3fbaf73e773,Ai Customer Journey,Ai Customer Journey,market,active
+5469f98f-1926-4d43-9e44-d1e348e08b64,Ai Payment Optimization,Ai Payment Optimization,market,active
+7b38feca-5ac6-4526-9d3f-b7f4edc8e0aa,Executive Education Program,Executive Education Program,edtech,active
+8918a500-82d8-4a29-bd4a-469f2de96491,Youth Stem Program,Youth Stem Program,edtech,active
+6d7d63e5-66ea-43be-b359-3a1ca9e26838,Remote Work Certification,Remote Work Certification,edtech,active
+13a359cd-b81e-4308-97ae-866caa26cbaf,Ai Research Assistant,Ai Research Assistant,edtech,active
+72b96cd0-5984-4223-b27c-d06f4420f48f,Language Learning Ai,Language Learning Ai,edtech,active
+81a03724-68a5-4a57-bdfc-6439241ce809,Test Preparation Ai,Test Preparation Ai,edtech,active
+5939b384-7df2-4b99-9ed4-c45ddb73d28b,Corporate Training Ai,Corporate Training Ai,edtech,active
+754a6478-d209-4875-97b7-99777e212742,Medical Education Ai,Medical Education Ai,edtech,active
+01d525cb-7d20-400d-8755-feb73fdad2be,Legal Education Ai,Legal Education Ai,edtech,active
+d88bedf7-f645-4bb1-808a-2f13a96d6c21,Music Education Ai,Music Education Ai,edtech,active
+165c6d9c-7d5a-437e-bd7b-32ef5591b556,Art Education Ai,Art Education Ai,edtech,active
+18f6048f-e40f-4c14-b15a-7bb1a7a5f3a9,Environmental Education Ai,Environmental Education Ai,edtech,active
+63684a0a-d318-487e-aee9-eb70347fdc04,Social Studies Ai,Social Studies Ai,edtech,active
+89eda625-6182-4a89-b469-d3a926f16591,Math Education Ai,Math Education Ai,edtech,active
+8e3e7611-dbd2-4be2-bc92-d53f64b8faec,Science Education Ai,Science Education Ai,edtech,active
+c001506d-453e-482d-991b-d08be43a4e68,Reading Comprehension Ai,Reading Comprehension Ai,edtech,active
+649519c6-9a3d-4213-bf0e-06d17caecd6d,Writing Instruction Ai,Writing Instruction Ai,edtech,active
+5a37a3c2-1d1d-47ef-b37a-33ab4e203cf0,Critical Thinking Ai,Critical Thinking Ai,edtech,active
+1467e5ce-7a97-4daa-a208-f412fcd8d0b9,Ai Shipping Labeler,Ai Shipping Labeler,market,active
+81ecd43c-8fe7-4d72-b410-bd85f61ed134,Ai Product Launch Coach,Ai Product Launch Coach,market,active
+6c67f50e-b6ae-44d8-9107-2482914ed3f5,Ai Vendor Negotiator,Ai Vendor Negotiator,market,active
+09093afd-1fab-450c-b158-2987b6224e27,Holographic Events Ai,Holographic Events Ai,ai,active
+1c5521f5-b350-4cb0-b3a4-34736d9d383b,Ai Order Prioritizer,Ai Order Prioritizer,market,active
+7b51ad29-9423-424f-83e9-e3865cc498ef,Ai Customer Segmentation,Ai Customer Segmentation,market,active
+0811dbca-04ed-4e24-a051-2fc8ab94d028,Ai Pricing Analyst,Ai Pricing Analyst,market,active
+35cda89c-dc7c-4391-8323-5d8237921766,Ai Sales Forecasting,Ai Sales Forecasting,market,active
+5d1dba3e-c471-4576-8a95-3046773736d3,Ai Inventory Reordering,Ai Inventory Reordering,market,active
+f999b069-6bfe-47b6-9291-64f2477fe2cf,Ai Product Comparison,Ai Product Comparison,market,active
+f9cf7ded-9f65-4bf8-851f-45c3a927951b,Ai Customer Feedback,Ai Customer Feedback,market,active
+5db8782d-eae9-4d82-a273-695467be0159,Ai Product Updates,Ai Product Updates,market,active
+fe3f5bec-194c-4cc5-a5b9-bb7eb4f0d768,Ai Cross Selling,Ai Cross Selling,market,active
+08b32575-d364-4c67-9e6a-137ee4e37c58,Ai Up Selling,Ai Up Selling,market,active
+863af29c-17ba-4e86-b796-048d1a97a443,Ai Purchase Timing,Ai Purchase Timing,market,active
+7ac61052-8b16-4926-9d1c-180d55d137a7,Public Event Ai,Public Event Ai,market,active
+465f5a33-6a8b-4bf2-847b-4a465c95e144,Community Cultural Ai,Community Cultural Ai,market,active
+b746feb5-f28a-4b19-b5fd-99a4134f0811,Space Habitat Ai,Space Habitat Ai,ai,active
+3b81aa14-8681-4f7e-97c5-779f95583946,Fusion Energy Ai,Fusion Energy Ai,ai,active
+082c9549-b479-4b6b-a94d-039c24a9fd70,Teleportation Research Ai,Teleportation Research Ai,ai,active
+d35482fa-2f2f-4f1d-a547-e8ba9939523e,Climate Solutions Ai,Climate Solutions Ai,ai,active
+f9417c58-3412-4b2a-8f60-5935fb4b7880,Holographic Events Ai,Holographic Events Ai,ai,active
+462dc7ad-c2e9-4d02-a180-c1e675dc609a,Autonomous Delivery Ai,Autonomous Delivery Ai,ai,active
+773d1607-b3bd-4fca-9b51-5195c4202d24,Gene Editing Ai,Gene Editing Ai,ai,active
+9f0ce87e-c94f-46c2-a3a6-3deca7f1683f,Space Tourism Ai,Space Tourism Ai,ai,active
+f362e4a1-9b2a-4210-841c-32e5849f033c,Wearables Ai,Wearables Ai,ai,active
+61f08d5a-e28a-4569-a632-21becabb0eb5,Metaverse Hub Ai,Metaverse Hub Ai,ai,active
+2d31ba4a-d946-4fb2-8313-6df24e866477,Energy Grid Ai,Energy Grid Ai,ai,active
+df80379c-7d48-40cb-8e3e-5837f6f71f95,Brain Computer Interface,Brain Computer Interface,ai,active
+cdb90c3f-c73c-4124-917f-e880bf648e9f,Crypto Trading Ai,Crypto Trading Ai,ai,active
+70e9d207-5837-4acd-af2d-023fbab7ea82,Synthetic Media Ai,Synthetic Media Ai,ai,active
+2629051b-ee01-4bea-96a5-78d20d510974,Space Mining Ai,Space Mining Ai,ai,active
+0955b8a2-ea66-407c-b8f4-ff66a162c9f9,Vr Therapy Ai,Vr Therapy Ai,ai,active
+183352d5-3ad0-46bc-830f-4609de0c8361,Ai Customer Support,Ai Customer Support,market,active
+31c6fede-cbc0-44a0-8617-11c205aa0d84,Ai Order Tracking,Ai Order Tracking,market,active
+d16e5b60-facb-48d4-a756-1eb320e77b48,Ai Product Reviews,Ai Product Reviews,market,active
+bfc7ced0-d7ac-4d3d-9c3c-0f986dd4fe00,Ai Product Customization,Ai Product Customization,market,active
+374e89eb-cbba-4476-ae24-9d60206b3dbe,Space Tourism Ai,Space Tourism Ai,ai,active
+dd8c7cb1-1fd7-45b2-9518-3d7bec60cf89,Ai Wedding Registry,Ai Wedding Registry,market,active
+8d5ae8d2-1bbc-4f9f-b4d7-7ecc849614c9,Ai Baby Registry,Ai Baby Registry,market,active
+c7b8d47f-618a-457e-956d-ca1ea69613ef,Peacebuilding Ai,Peacebuilding Ai,ai,active
+bddbf6d2-0a57-4029-8f4a-5a836f9b2518,Telemedicine Ai,Telemedicine Ai,ai,active
+cbc1103d-7555-46c6-bd06-d1e9a252d114,Ai Climate Adaptation,Ai Climate Adaptation,ai,active
+d985554c-f2b7-4b93-9c0d-fb6415d1bcdf,Space Agriculture Ai,Space Agriculture Ai,ai,active
+f04481bb-b6e9-4e0d-bad1-2480feed4a8f,Quantum Communication Ai,Quantum Communication Ai,ai,active
+7cceb5d5-d2de-4a59-8527-c3d852a9f509,Ai Disaster Response,Ai Disaster Response,ai,active
+310c6e69-8b89-4b1f-b438-dc63dd0bc542,Smart City Governance,Smart City Governance,ai,active
+af7e5551-0af1-4c68-8358-cfdb842b2750,Ai Environmental Monitoring,Ai Environmental Monitoring,ai,active
+4f9fc8f1-343e-4350-b721-507bd19da93c,Space Manufacturing Ai,Space Manufacturing Ai,ai,active
+9c7bfa8b-7f10-4440-8653-fb724bb14b96,Ai Holiday Planner,Ai Holiday Planner,market,active
+b43d8d59-cf41-4e0d-9104-5d7aa1c7cc8b,Ai Personal Shopper,Ai Personal Shopper,market,active
+57f222b2-4bd7-47fe-a6b9-4ca9fb85f397,Ai Color Match,Ai Color Match,market,active
+b908c142-2cd7-4dd3-80a3-333072fc2139,Ai Fabric Advisor,Ai Fabric Advisor,market,active
+248ceb22-f8ba-41b3-81e0-83deabb758af,Ai Outfit Builder,Ai Outfit Builder,market,active
+d164ed2d-5fee-4093-8a56-497160748693,Ai Seasonal Forecast,Ai Seasonal Forecast,market,active
+507946b2-75db-480d-a46c-011213b4797f,Ai Wardrobe Planner,Ai Wardrobe Planner,market,active
+efb86511-f300-4a3b-b79c-fd66c475c586,Ai Accessory Match,Ai Accessory Match,market,active
+e6196ee6-bfda-4687-bff6-2ca57d6b5f4c,Ai Shoe Match,Ai Shoe Match,market,active
+8daa80d5-9dc6-4f36-ae07-531d75b141c3,Ai Jewelry Match,Ai Jewelry Match,market,active
+59e5eaf3-ebcb-4166-b3f7-ad1535df269d,Ai Bag Match,Ai Bag Match,market,active
+d6153a57-d968-48fd-aa9f-bf8ba187b554,Ai Color Palette,Ai Color Palette,market,active
+75c46304-481e-4f5e-9d1a-ab0474e66c89,Ai Outfit Recycling,Ai Outfit Recycling,market,active
+f18dc898-2522-49f6-928c-7f9ca7598d20,Ai Style Evolution,Ai Style Evolution,market,active
+2aa052f5-86fa-4b5f-b82c-3803b6fa0658,Ai Budget Stylist,Ai Budget Stylist,market,active
+058bc6e3-2b03-4234-ade7-5bdc10a27e79,Ai Vintage Advisor,Ai Vintage Advisor,market,active
+b389eacf-e7a7-48d9-8fd7-1d99d2dc97e5,Quantum Algorithm Ai,Quantum Algorithm Ai,devtools,active
+d3b24622-a957-4a68-9bb4-dc9e00d6a245,Ai Compliance Scanner,Ai Compliance Scanner,devtools,active
+ede0bdfb-19e6-42a3-935b-4850be760652,Cloud Management Ai,Cloud Management Ai,devtools,active
+2910ebdd-594e-436d-8775-fa972b17b13f,Robotics Training Ai,Robotics Training Ai,devtools,active
+06018304-6677-466a-b2ca-48b723420496,Customer Insights Ai,Customer Insights Ai,devtools,active
+8b0bf5f8-d060-4167-9db6-516793066349,Voice Assistant Ai,Voice Assistant Ai,devtools,active
+d7c6d5b8-6783-493c-bb58-1d185806c1e3,Space Mining Ai,Space Mining Ai,ai,active
+a306d181-86e5-4256-92ba-c37849a7cd19,Cybersecurity Shield,Cybersecurity Shield,devtools,active
+d93dd5eb-9f10-44aa-a99d-d4eb44a83acc,Content Studio Ai,Content Studio Ai,devtools,active
+b562bbaa-659e-4974-8264-80065d382b01,Smart Home Ai,Smart Home Ai,devtools,active
+19572aad-b666-44dc-aff0-f39d630ece7d,Supply Chain Optimizer,Supply Chain Optimizer,devtools,active
+dadadc33-e64c-4c6e-a47b-4cafc13052ad,Data Visualization Ai,Data Visualization Ai,devtools,active
+c60f76e3-d4fb-4978-aca2-9f38198a4cf2,Workflow Automation,Workflow Automation,devtools,active
+a81be96a-951a-4afd-95c3-5cf9ef8bd6a4,Image Recognition Ai,Image Recognition Ai,devtools,active
+785ecd3a-9d1b-4465-a65d-fdd093c2a41d,Video Editor Ai,Video Editor Ai,devtools,active
+9c46c082-a263-4568-be84-f7ffabec8eda,Speech To Text Ai,Speech To Text Ai,devtools,active
+8c27a047-693c-4e80-a4d9-d1fee4b14e6d,Text To Speech Ai,Text To Speech Ai,devtools,active
+6cab83a8-f1f8-4b3a-82df-5ff417b6e4f5,Fraud Prevention Ai,Fraud Prevention Ai,devtools,active
+7220407f-5263-4c7e-9cc4-67593b853661,Recommendation Engine,Recommendation Engine,devtools,active
+773b0048-8659-477f-8859-8378495dc667,Network Security Ai,Network Security Ai,devtools,active
+95c489ba-d841-4d94-977c-b33190309d97,Database Optimizer,Database Optimizer,devtools,active
+fa284812-facc-4c83-b825-106ea6626efd,Ai Testing Platform,Ai Testing Platform,devtools,active
+4eb03215-ebec-4529-b315-9bd4094687b8,Virtual Assistant Builder,Virtual Assistant Builder,devtools,active
+ce33a2c6-164f-4af3-9caf-18d68ce7eb19,Ai Ethics Auditor,Ai Ethics Auditor,devtools,active
+a4ee6bdf-0333-4f5f-b69e-d78b5ddc478a,Predictive Analytics Ai,Predictive Analytics Ai,devtools,active
+8403d2c5-67ed-441c-bc22-8cae50439488,Ai Training Platform,Ai Training Platform,devtools,active
+f98ce20d-3fb9-4dae-a8af-890f97920a98,Digital Twin Ai,Digital Twin Ai,devtools,active
+2fb6e87b-cb75-429f-b212-1b62959a69d6,Ai Monitoring System,Ai Monitoring System,devtools,active
+484527cc-44f6-43f6-af66-a5d5744c370d,Edge Computing Ai,Edge Computing Ai,devtools,active
+8c1bf10c-3b77-4866-9a66-9d6cf79ca183,Ai Integration Hub,Ai Integration Hub,devtools,active
+53d29854-db4f-4077-9bc4-a425e90dd022,Quantum Algorithm Ai,Quantum Algorithm Ai,devtools,active
+983772dd-4f7e-47ce-afc6-99391b68aa7b,Ai Compliance Scanner,Ai Compliance Scanner,devtools,active
+ad144268-9278-4730-aac8-5ca2410c6e9c,Cloud Management Ai,Cloud Management Ai,devtools,active
+76da1050-6573-4962-acd6-03457e2ab645,Robotics Training Ai,Robotics Training Ai,devtools,active
+784227e4-eee7-42d3-81dd-56c84e2bd49b,Customer Insights Ai,Customer Insights Ai,devtools,active
+1beee46c-512a-4465-bea0-930c5cf9b6c4,Voice Assistant Ai,Voice Assistant Ai,devtools,active
+a0752d71-eb3d-4ba9-90b8-5f614fbaf4b6,Cybersecurity Shield,Cybersecurity Shield,devtools,active
+0d31cc43-724b-4f18-ab7e-eee59d351acd,Content Studio Ai,Content Studio Ai,devtools,active
+e4a89c97-b32c-4d4e-b0d7-00f0e8ae2dd0,Smart Home Ai,Smart Home Ai,devtools,active
+844dce42-970c-41a2-9fe5-8d0b48a1e3de,Personalized Medicine Ai,Personalized Medicine Ai,ai,active
+4f726b51-54a4-472d-9f27-78ae5868efb5,Data Visualization Ai,Data Visualization Ai,devtools,active
+dc041a65-d057-4b51-8f6a-ba84c53fb0a2,Workflow Automation,Workflow Automation,devtools,active
+7d04489d-5b1e-4e2b-afb2-68b64e768ed9,Sentiment Analyzer,Sentiment Analyzer,devtools,active
+de1cd4e3-c1c1-4413-9ebf-38e5cc542990,Image Recognition Ai,Image Recognition Ai,devtools,active
+51c2c031-02b0-4148-b832-770c16239b68,Video Editor Ai,Video Editor Ai,devtools,active
+d798fded-ea57-4f57-bc7b-d8da7dd04c61,Text To Speech Ai,Text To Speech Ai,devtools,active
+d07a8663-445f-490b-a178-ac2d19a5120e,Fraud Prevention Ai,Fraud Prevention Ai,devtools,active
+bf1ac472-40b5-4a68-8fc7-cb950d4cd142,Recommendation Engine,Recommendation Engine,devtools,active
+80a66845-2d08-4c50-b0eb-fdfde32cbf73,Network Security Ai,Network Security Ai,devtools,active
+a1fe0e85-0c38-4f3c-8f31-a6170dddfa05,Database Optimizer,Database Optimizer,devtools,active
+f056380a-41a5-4b71-b862-f0617adffbb6,Ai Testing Platform,Ai Testing Platform,devtools,active
+dbf8bf61-5599-467c-b5ad-fc1b6e3e4f83,Virtual Assistant Builder,Virtual Assistant Builder,devtools,active
+aaefb38e-6387-4201-abec-6e5c7f7f25b2,Machine Learning Builder,Machine Learning Builder,devtools,active
+5c2c7466-5d9e-4407-ae8f-1df9d3b589a4,Ai Ethics Auditor,Ai Ethics Auditor,devtools,active
+557a4aa2-7e4e-4eb6-8970-59813355bf0f,Predictive Analytics Ai,Predictive Analytics Ai,devtools,active
+b416b597-7785-44d4-b385-3474f465f588,Fractional Cto Agency,Fractional Cto Agency,infra,active
+ac384256-9843-484a-b8af-07a7c2e700e5,Supply Chain Optimizer,Supply Chain Optimizer,infra,active
+5e3fc237-1b40-4f1a-81f7-b66908c2d4fa,Event Planning Ai,Event Planning Ai,infra,active
+1fb0e709-9257-4ae0-813c-6cb58db2e67f,Inventory Management Ai,Inventory Management Ai,infra,active
+c81d179b-e9bd-4621-9ca6-4549ad54a4c5,Project Management Ai,Project Management Ai,infra,active
+8bbadd79-cc3b-4b86-8e03-cfcf42ba8020,Document Automation Ai,Document Automation Ai,infra,active
+3a440860-6aed-44b2-8493-72da772496b6,Meeting Assistant Ai,Meeting Assistant Ai,infra,active
+bd4104e7-b7a8-46ff-a812-ab83ea81e18f,Recruitment Ai,Recruitment Ai,infra,active
+df8ee065-d3df-42ba-965a-36aa4447dad0,Onboarding Ai,Onboarding Ai,infra,active
+143e7aea-a027-43c8-8d0e-8d0f2bb56ebe,Training Platform Ai,Training Platform Ai,infra,active
+5aa9e65e-074b-4408-807c-0a61a3933178,Performance Review Ai,Performance Review Ai,infra,active
+ca25a4c2-eb95-4398-8a59-9582d5b1d55e,It Support Ai,It Support Ai,infra,active
+791334c8-a949-41bf-b656-a9c2891eec02,Travel Booking Ai,Travel Booking Ai,infra,active
+0cb23daa-89cf-4024-8d48-19ef3070544b,Expense Management Ai,Expense Management Ai,infra,active
+fafe2c68-f76b-4d84-9253-8ea7ac027ba4,Contract Management Ai,Contract Management Ai,infra,active
+72608f4f-f023-4385-821e-8ad4f20052ac,Compliance Monitoring Ai,Compliance Monitoring Ai,infra,active
+2dbe782e-9a2d-4c1d-876f-1809ee9b1044,Quality Control Ai,Quality Control Ai,infra,active
+4dca4506-63b7-47fe-aaed-02f187174e0c,Education Equity Ai,Education Equity Ai,ai,active
+36187a90-6ff7-4f05-8b4f-a38f837a560f,Time Tracking Ai,Time Tracking Ai,infra,active
+99b6908a-8869-480f-9cc3-f82e3ee15e00,Document Security Ai,Document Security Ai,infra,active
+f7a0bd5f-e055-49a7-87ad-36d53d8998c6,Knowledge Management Ai,Knowledge Management Ai,infra,active
+4d4db78a-818f-4ad3-81fb-cb4b4a1f9fbe,Task Automation Ai,Task Automation Ai,infra,active
+933b10c3-7a89-4d1b-82b1-febd2e6a61c1,Resource Allocation Ai,Resource Allocation Ai,infra,active
+4f023153-7cc2-4fd6-a3cd-f26cd8027276,Budget Planning Ai,Budget Planning Ai,infra,active
+783ccaf8-0436-4f3d-9284-79e695dcdf33,Cost Optimization Ai,Cost Optimization Ai,infra,active
+2b217759-65d7-4d87-bced-0e92d53f7731,Procurement Ai,Procurement Ai,infra,active
+9161fa5c-e0fb-4f9d-9a95-6f1134138635,Vendor Management Ai,Vendor Management Ai,infra,active
+64ce1558-ee32-401f-b32d-282226c6334b,Contract Negotiation Ai,Contract Negotiation Ai,infra,active
+a261645e-f15b-413d-8da7-a5322ba956df,Legal Document Ai,Legal Document Ai,infra,active
+2f16da0b-8695-4e68-afe3-b40d36cb83ea,Compliance Reporting Ai,Compliance Reporting Ai,infra,active
+f63eb65f-2a9c-4cf6-857c-a306d4e95c7f,Training Content Ai,Training Content Ai,infra,active
+213c42db-79a1-4d1f-84da-4f7fe03ab2fd,Employee Engagement Ai,Employee Engagement Ai,infra,active
+39a765a6-ab7e-4202-a7a0-2f46f2770030,Workspace Design Ai,Workspace Design Ai,infra,active
+a308c3f3-0233-459a-9e84-6bdc4cfa3643,Energy Efficiency Ai,Energy Efficiency Ai,infra,active
+7a6cd400-f3e4-4653-8fcb-4c4c6a4918ab,Security Monitoring Ai,Security Monitoring Ai,infra,active
+012af0d5-5417-42ba-8396-a5b6a507f98a,Health Safety Ai,Health Safety Ai,infra,active
+cb23cdff-eb11-4032-b28c-bdeb2ba30206,Disaster Recovery Ai,Disaster Recovery Ai,infra,active
+47f63152-0995-4ec3-b05a-aa6fa827cbd7,It Asset Management,It Asset Management,infra,active
+60a726f2-9209-404b-a0e5-dccb069e47e3,Cloud Cost Management,Cloud Cost Management,infra,active
+b1d14f32-5a17-4f6a-93a2-e6b71b9df4f9,Data Governance Ai,Data Governance Ai,infra,active
+69639ed0-9841-4162-9ace-487b616a5091,Network Monitoring Ai,Network Monitoring Ai,infra,active
+66f63ebc-0cf0-41c6-87e0-ece2ac619d71,Software Licensing Ai,Software Licensing Ai,infra,active
+622c2502-572f-453f-93f4-13b966aa4d29,It Procurement Ai,It Procurement Ai,infra,active
+95727391-6ad0-4fd1-9802-046ed618ca5d,System Integration Ai,System Integration Ai,infra,active
+b8200ab5-1190-49c0-b132-4724ca99e76b,Business Continuity Ai,Business Continuity Ai,infra,active
+b3f6845c-1dcd-49dd-942a-d40a725a0c33,Compliance Audit Ai,Compliance Audit Ai,infra,active
+ebb70e0c-1063-4a75-a802-6388956cf2c9,Document Collaboration Ai,Document Collaboration Ai,infra,active
+b4aadd69-a0cd-4372-accb-0f10755d6931,Video Conferencing Ai,Video Conferencing Ai,infra,active
+0c6aee03-1791-4ee5-be62-3b728b329507,Email Management Ai,Email Management Ai,infra,active
+d948b9d2-9bdc-4bfc-9844-a1e41782328d,Calendar Optimization Ai,Calendar Optimization Ai,infra,active
+31235023-353f-4589-a488-017922da121d,Space Agriculture Ai,Space Agriculture Ai,ai,active
+203edd61-c09c-41e0-abef-16e704e8a993,Resource Forecasting Ai,Resource Forecasting Ai,infra,active
+b0c2ff55-8805-49a7-bd66-0e33ea1eda89,Task Prioritization Ai,Task Prioritization Ai,infra,active
+6157c3ab-7857-4765-b145-e5fc04344d95,Time Management Ai,Time Management Ai,infra,active
+ea968b19-2da6-411f-b8be-2afe004e4eea,Meeting Minutes Ai,Meeting Minutes Ai,infra,active
+0b77ec4f-069c-4cec-a1ab-e512b6112c51,Document Translation Ai,Document Translation Ai,infra,active
+36b4103e-f7c1-4c87-a4fb-3c4d6d989890,Form Automation Ai,Form Automation Ai,infra,active
+8e2753b4-45a7-4962-8133-b68e39ecb7b6,Dashboard Creation Ai,Dashboard Creation Ai,infra,active
+5ed5ea2b-a0c7-49c6-88af-40910a9737b4,Analytics Platform Ai,Analytics Platform Ai,infra,active
+46887285-5cb6-44c2-a347-9f941465932c,Data Cleaning Ai,Data Cleaning Ai,infra,active
+070d3984-7a16-478c-af2d-eb1ee1956679,Workflow Management Ai,Workflow Management Ai,infra,active
+1982f9d5-9906-4258-b726-8b7a1dc134ad,Youth Entrepreneurship Curriculum,Youth Entrepreneurship Curriculum,edtech,active
+86a605b4-2b10-40a8-aab4-f18b84d5c0fb,Ai Literacy Program,Ai Literacy Program,edtech,active
+f46b7bb4-f6c6-48f8-ba17-40df684211eb,Coding Mentor Certification,Coding Mentor Certification,edtech,active
+441ec840-4799-4986-b515-9b687e0ea01a,Real Estate Licensing Prep,Real Estate Licensing Prep,edtech,active
+f3a1e437-3730-4ecc-93de-8bd39ce4ab73,Coding Bootcamp,Coding Bootcamp,edtech,active
+76fc699c-07a5-47f1-850b-1b87d4b09383,Ai Tutoring Platform,Ai Tutoring Platform,edtech,active
+f0148df8-77c8-4c40-9ef8-fcd5cb87edef,Branding Templates Marketplace,Branding Templates Marketplace,edtech,active
+50fdd75b-08e3-4b25-adb5-3252b0218edc,Voiceover Script Library,Voiceover Script Library,edtech,active
+ec0ff7a7-721f-46a0-90a3-e3844221e78f,Trade Skills Bootcamp,Trade Skills Bootcamp,edtech,active
+ddd8bd06-d375-4481-bbc8-094e7dd3297a,Franchise Blueprint System,Franchise Blueprint System,edtech,active
+4285eea8-23f3-45c8-8a66-f9fb65d29550,Low Income Housing Blueprint,Low Income Housing Blueprint,edtech,active
+5e6d3547-fc5a-4511-b7dc-ea829aff7b17,Automated Empire Book,Automated Empire Book,edtech,active
+cbd335a4-72a4-4872-ae3d-cf1ba1a704d3,Bipoc Creator Incubator,Bipoc Creator Incubator,edtech,active
+dc8b2b20-b9d9-4fe4-a751-0a6c19e15f63,Virtual Black Art Museum,Virtual Black Art Museum,edtech,active
+563d83e2-b55d-4660-8124-578d94f48393,Ai Coding Tutor,Ai Coding Tutor,edtech,active
+a6ff4191-ea6d-4ae7-8594-4d8e5c817a24,Online Course Creator,Online Course Creator,edtech,active
+32788fce-aee1-4580-be35-f23a5ba2e185,Executive Education Program,Executive Education Program,edtech,active
+eab49199-7a5e-43e3-b17a-7783f2ba88df,Youth Stem Program,Youth Stem Program,edtech,active
+57714f4e-8b35-4ba2-acd6-be638b5651bc,Remote Work Certification,Remote Work Certification,edtech,active
+f24c9f6e-f7d9-45e2-b7c3-eb3983488101,Ai Research Assistant,Ai Research Assistant,edtech,active
+3579fc6c-200c-4f67-af16-e9d6daa8aeef,Language Learning Ai,Language Learning Ai,edtech,active
+a62dd704-6931-4492-a602-8b69579a8f1a,Local Business Directory,Local Business Directory,market,active
+c6c67e0b-3945-4ce9-a06a-bc4908a07584,Neighborhood Watch Ai,Neighborhood Watch Ai,market,active
+5dd46624-6e8a-467e-9e4b-b23248929ede,Community Garden Ai,Community Garden Ai,market,active
+97e20624-c42a-4c26-a4f2-b2b4a23cf7e0,Public Transportation Ai,Public Transportation Ai,market,active
+b0ebffe2-21fe-4d7f-917a-1c648598d852,Medical Education Ai,Medical Education Ai,edtech,active
+7db5a21d-82bf-48aa-a931-5e6b014afa57,Legal Education Ai,Legal Education Ai,edtech,active
+96e42cd0-c04d-49c2-a9c7-696fc08fe1f1,Music Education Ai,Music Education Ai,edtech,active
+c90e4c85-735c-4771-a7b5-d25aff635d61,Art Education Ai,Art Education Ai,edtech,active
+fdfc8bd5-9c3f-484f-8fbe-dcf2287efe1c,Physical Education Ai,Physical Education Ai,edtech,active
+46361eff-dc42-4c53-bb98-9c307b472ff2,Environmental Education Ai,Environmental Education Ai,edtech,active
+09da8b0a-9a94-461e-a1ac-3009d7e8cf5e,Social Studies Ai,Social Studies Ai,edtech,active
+db4cffab-87d5-450e-a9c6-6aa34417c735,Math Education Ai,Math Education Ai,edtech,active
+e6e855f6-f953-4c57-8070-969ec53bbe81,Reading Comprehension Ai,Reading Comprehension Ai,edtech,active
+85ce4f91-864f-40b1-946b-d9c061866584,Writing Instruction Ai,Writing Instruction Ai,edtech,active
+da90d565-e3c0-4f88-b518-d36ebcd01c9b,Critical Thinking Ai,Critical Thinking Ai,edtech,active
+6dbf2ae4-e7cb-4a89-a953-7f7810fff452,Emotional Intelligence Ai,Emotional Intelligence Ai,edtech,active
+f2dd65e6-3f8c-4797-8d8f-b00486d6c65a,Time Management Ai,Time Management Ai,edtech,active
+51b7c13a-d958-4d87-91c1-e4a5a49a789a,Luminary Worldwide Events,Luminary Worldwide Events,market,active
+c4a823cd-b52a-41a9-bea1-1a9762807f93,Brotherhood Coaching Network,Brotherhood Coaching Network,market,active
+a0243d57-44bb-4d84-b65b-6f365551c43a,Community Outreach Nonprofit,Community Outreach Nonprofit,market,active
+96ce7a14-8c57-4c0a-9b22-e4e72ca2b6f5,Ace Food Security Ai,Ace Food Security Ai,market,active
+691a2d51-26a0-40db-b14e-e62995a73f5e,Community Technology Access Ai,Community Technology Access Ai,market,active
+90169a53-ccf0-4bae-b9c5-b8e5c953859b,Youth Leadership Ai,Youth Leadership Ai,market,active
+bbdddf73-f481-4f73-ada7-6fb998501bd2,Community Fundraising Ai,Community Fundraising Ai,market,active
+8d2ef00c-2f60-47ea-8d5f-f94e8b8bc701,Volunteer Hub Ai,Volunteer Hub Ai,market,active
+3a4480a4-8bd4-4746-a444-4858dec05e59,Disaster Relief Ai,Disaster Relief Ai,market,active
+2016874b-887e-4fde-9df6-a28ab07a7f94,Indigenous Creator Hub,Indigenous Creator Hub,market,active
+858c5450-298c-4bd6-bf37-1ab288b1963c,Women S Empowerment Network,Women S Empowerment Network,market,active
+7c7d17f8-d8d1-42ae-8d45-fe0baffe69f4,Veterans Support Ai,Veterans Support Ai,market,active
+e9e457f0-1c93-4c87-b5c2-3ca4024270b0,Youth Mentorship Program,Youth Mentorship Program,market,active
+1f0860d6-28de-4dc9-94a9-b47451525e36,Community Health Ai,Community Health Ai,market,active
+8d2079c2-7cd5-4858-a4e4-38f13d063054,Elder Companion Ai,Elder Companion Ai,market,active
+ed6015ca-25bd-44a5-830a-0c133c775458,Youth Sports Ai,Youth Sports Ai,market,active
+a479d43e-385b-4695-ad6d-7a846697369e,Community Legal Aid,Community Legal Aid,market,active
+043c6a81-c6f6-40e2-9124-2b0e3558d65b,Public Education Ai,Public Education Ai,market,active
+a28e1c68-b54f-4a44-baa8-3b710f6e7068,Local Government Ai,Local Government Ai,market,active
+8ec68695-7424-4caa-8100-8f600999db01,Public Safety Ai,Public Safety Ai,market,active
+6fc00e9b-1417-49ba-b99e-9123e2f6e0aa,Cultural Exchange Ai,Cultural Exchange Ai,market,active
+f2a88c1a-16a4-4338-8635-285e380fa9eb,Community Investment Ai,Community Investment Ai,market,active
+dc375d7b-5925-4346-b232-33e7c09e91ac,Public Health Ai,Public Health Ai,market,active
+35805956-8944-40e8-a4f4-8977fb6b3746,Youth Innovation Hub,Youth Innovation Hub,market,active
+4a1ed3f5-3513-4d52-8bf2-18010dc65aa3,Senior Tech Support,Senior Tech Support,market,active
+05724c9d-2438-42d6-acb5-d56a1ee13700,Community Arts Ai,Community Arts Ai,market,active
+68ec8784-6ac5-4852-ae40-3b82fd4d010e,Public Infrastructure Ai,Public Infrastructure Ai,market,active
+c5e845a8-3112-44b9-8844-f4f54e8a2d9c,Community Policing Ai,Community Policing Ai,market,active
+9b7afdc4-9d07-479c-aeca-87399619086c,Public Space Ai,Public Space Ai,market,active
+2d9b6d1a-bad4-4e8a-ae88-63a5e44419ef,Community Recycling Ai,Community Recycling Ai,market,active
+12502e9e-f74e-477a-aaa7-692515b8e7bf,Public Wi Fi Ai,Public Wi Fi Ai,market,active
+cee277a2-252a-4d6d-a6b4-ca2291f3b047,Community Energy Ai,Community Energy Ai,market,active
+85d54f89-f312-44e7-8496-52e378792fd5,Local Food Network Ai,Local Food Network Ai,market,active
+93f3303f-f348-4a6b-ba2e-6cb8c99e0017,Community Volunteering Ai,Community Volunteering Ai,market,active
+ce8de855-9294-4cc0-b643-58194185a635,Public Childcare Ai,Public Childcare Ai,market,active
+6e03ed0c-0d20-4147-a680-332e759a07dd,Community Pet Care Ai,Community Pet Care Ai,market,active
+f3d6352b-6832-49fc-ae36-cf56de5c2bb1,Community Transportation Ai,Community Transportation Ai,market,active
+e64973ab-ff5b-42b8-8715-b84995c4e0a0,Public Event Ai,Public Event Ai,market,active
+77fab7a8-4d14-40ac-bc3e-e4b65f042b21,Community Cultural Ai,Community Cultural Ai,market,active
+ae1db8ce-e797-4a15-9fe4-3bd28130ede1,Space Habitat Ai,Space Habitat Ai,ai,active
+85d16b40-5ac1-4de3-bf86-6f28db432856,Fusion Energy Ai,Fusion Energy Ai,ai,active
+2f9356bd-2837-42fd-85ff-24afab42dcf7,Teleportation Research Ai,Teleportation Research Ai,ai,active
+bd8b505a-f5cf-4b38-a76f-2421d2152ffb,Climate Solutions Ai,Climate Solutions Ai,ai,active
+60c66a64-9fd3-4e83-9cec-25ebf8435b7c,Neurofeedback Ai,Neurofeedback Ai,ai,active
+dcc90fd7-aefc-4e45-b1e5-95703e50ea87,Autonomous Delivery Ai,Autonomous Delivery Ai,ai,active
+921d1fab-e2b2-407a-a7a5-2613443f7ce4,Gene Editing Ai,Gene Editing Ai,ai,active
+3b1b67db-86a0-43f5-ab28-c3c8f2e30747,Genixbank Lite,Genixbank Lite,fintech,active
+15572af9-e058-492c-b9e9-0938b4d07fb7,Tax Prep Filing Services,Tax Prep Filing Services,fintech,active
+6e468241-bfde-4f52-a4e0-e48cf1c708c6,Wearables Ai,Wearables Ai,ai,active
+bb2867fc-3544-44d1-8990-2168165ffa9b,Metaverse Hub Ai,Metaverse Hub Ai,ai,active
+69a86ec5-7a1f-42b1-ae57-b976b548af46,Energy Grid Ai,Energy Grid Ai,ai,active
+5d2219fc-e6a0-4313-a159-2614709a6ca4,Brain Computer Interface,Brain Computer Interface,ai,active
+d8574cc5-baa6-4f24-bc63-12992dd55968,Ocean Cleanup Ai,Ocean Cleanup Ai,ai,active
+6bbaa1e6-372f-4f89-b412-8558aa0b3f2f,Crypto Trading Ai,Crypto Trading Ai,ai,active
+6ae13ef3-1eb7-405e-874e-025f1a4133e5,Synthetic Media Ai,Synthetic Media Ai,ai,active
+b2c657be-d3be-4c35-9e5f-b5a0b9760346,Vr Therapy Ai,Vr Therapy Ai,ai,active
+acefbd2b-a175-4a66-a598-d551d89fb7ad,Weather Prediction Ai,Weather Prediction Ai,ai,active
+8aa1ac6e-558e-4c0d-ac86-f48764bfe189,Autonomous Farming Ai,Autonomous Farming Ai,ai,active
+acaebb39-b849-4de5-ab89-6e9d17bef695,Traffic Optimizer Ai,Traffic Optimizer Ai,ai,active
+813ea1ce-b9cb-46db-8d8b-8e30dbd2ff18,Smart Grid Ai,Smart Grid Ai,ai,active
+016c0093-6720-41b3-893a-c55ff3677484,Disaster Prediction Ai,Disaster Prediction Ai,ai,active
+f13ca92d-2003-4bcc-a1b7-9ff740be2733,Nanotech Ai,Nanotech Ai,ai,active
+12b83702-3d09-4d1e-8153-309513fa9c5d,Ai Diagnostic Lab,Ai Diagnostic Lab,ai,active
+66ac7cd0-7c20-441b-a8c3-de3431b0edea,Sustainable Cities Ai,Sustainable Cities Ai,ai,active
+c9b5a5f2-5901-40aa-90a2-c7eda2259360,Renewable Energy Ai,Renewable Energy Ai,ai,active
+d65afe5a-bdf0-4f71-8f0f-413a55166c5a,Climate Modeling Ai,Climate Modeling Ai,ai,active
+e59aaf3e-62d8-47b5-89cb-1bba1fa81404,Policy Advisor Ai,Policy Advisor Ai,ai,active
+c733691c-866c-4f3a-86ca-cc71b2d86265,Governance Hub Ai,Governance Hub Ai,ai,active
+eb2d7881-299f-4dd2-9241-d579b309de2c,Global Challenges Ai,Global Challenges Ai,ai,active
+c74bf3af-4f91-4781-a379-e0ae3885030f,Space Exploration Ai,Space Exploration Ai,ai,active
+423e48d7-b18c-433c-976f-6891707eb8db,Health Equity Ai,Health Equity Ai,ai,active
+ebfcbbfd-0c78-4a4a-bbfa-f093388079c1,Economic Equity Ai,Economic Equity Ai,ai,active
+068d1f15-87ae-483c-8f6d-d720b47353ad,Environmental Justice Ai,Environmental Justice Ai,ai,active
+6e32000d-b9a2-4ceb-980b-b86e4b4472ff,Human Rights Ai,Human Rights Ai,ai,active
+75d57c4e-04e8-4c92-9b3e-4af48bb31e73,Peacebuilding Ai,Peacebuilding Ai,ai,active
+d7e0e22f-afbb-47c0-9885-5d906a01cf92,Telemedicine Ai,Telemedicine Ai,ai,active
+29799a86-6a8c-4a38-870b-05dc18536eee,Ai Climate Adaptation,Ai Climate Adaptation,ai,active
+331be19d-de55-4ef5-816c-61b2864cc5f6,Quantum Communication Ai,Quantum Communication Ai,ai,active
+3d54893a-074f-4fbe-834c-e5290d6a81dd,Financial Wellness Coach,Financial Wellness Coach,fintech,active
+b13db59f-e664-4315-9af3-5452a3c9f95c,Genixbank Lite,Genixbank Lite,fintech,active
+358c0fb7-60f0-49f0-af22-165ab5d8088a,Genixbanks Ai Treasurer,Genixbanks Ai Treasurer,fintech,active
+f9de7000-12db-42f4-bf35-6dda7e18e11d,Charity Donation Ai,Charity Donation Ai,fintech,active
+62adf78e-c391-4e8d-a0c5-c45f73b4fa06,Debt Consolidation Ai,Debt Consolidation Ai,fintech,active
+645f19c8-cbab-48ac-8d92-08ee7d424015,Sustainable Fashion Ai,Sustainable Fashion Ai,market,active
+7e68ff6b-17ce-4847-9d52-3fae4260b4bd,Merch Licensing,Merch Licensing,market,active
+8cc3a6d7-c784-480c-b552-179e3c9282fb,Costume Shop Ai,Costume Shop Ai,market,active
+04a3ad6b-edcf-4945-ba81-ca8e0ca8a265,Nft Fashion Licensing,Nft Fashion Licensing,market,active
+d7ddcedd-b082-4e19-b6b4-369cb6a52322,Automated Inventory Forecaster,Automated Inventory Forecaster,market,active
+38f31487-8db1-447f-a399-b058408b194c,Ai Quality Control,Ai Quality Control,market,active
+7959b02f-1512-4880-889c-44c7a6ab1a87,Chatbot Customer Service,Chatbot Customer Service,market,active
+e52fe3ef-7143-493b-972b-842b0e3dc914,Ai Wardrobe Planner,Ai Wardrobe Planner,market,active
+10632f64-18a7-4ee0-98ac-a5cde697b304,Supply Chain Optimizer,Supply Chain Optimizer,devtools,active
+9e4f8a59-04d9-4057-a45f-1674be04bf5c,Video Editor Ai,Video Editor Ai,devtools,active
+8114d985-08c8-4a84-ac8c-66d5ab341429,Machine Learning Builder,Machine Learning Builder,devtools,active
+cf272b81-21e0-4813-b736-6ff0c4ba488c,Wholesale Marketplace Ai,Wholesale Marketplace Ai,market,active
+fd2288c3-1121-4d93-bfaa-29850dfcd027,Expense Management Ai,Expense Management Ai,infra,active
+2471d5ff-1524-4bca-98f6-48080f8b75d6,Time Tracking Ai,Time Tracking Ai,infra,active
+c866fec8-a7a9-49ae-ada3-9ae2b61936a9,Meeting Transcription Ai,Meeting Transcription Ai,infra,active
+ee6e566c-e19d-47b1-a996-460577499ee4,Energy Efficiency Ai,Energy Efficiency Ai,infra,active
+f3ef9069-0b9c-4d4f-ac54-c01848ad3a4c,Project Budget Ai,Project Budget Ai,infra,active
+a3db939f-2f22-4ba6-a702-7fcbc4ef85b7,Workflow Management Ai,Workflow Management Ai,infra,active
+feeefc69-b1fd-4f4e-91f3-9bf4ab607cf2,Branding Templates Marketplace,Branding Templates Marketplace,edtech,active
+14ca9c22-60b1-470f-b4ed-75345f04b6ae,Personal Finance Coach,Personal Finance Coach,edtech,active
+d1f6f63b-92ae-4fbe-8093-37109d55a981,Physical Education Ai,Physical Education Ai,edtech,active
+0f8fb560-a2fe-44f5-a527-8473a64371eb,Ai Returns Management,Ai Returns Management,market,active
+2ff505e9-628e-4851-88c2-891abc76953b,Ai Product Cataloger,Ai Product Cataloger,market,active
+49526c95-3d5f-4702-9c1b-eafe7fa02750,Ai Product Education,Ai Product Education,market,active
+60c4c576-e373-4bf6-95c4-17934c1ec1d9,Neurofeedback Ai,Neurofeedback Ai,ai,active
+74cd1d37-8e52-4440-a31c-43cd4be8e18b,Ocean Cleanup Ai,Ocean Cleanup Ai,ai,active
+55af196a-fcc9-45c2-9890-e711c18cb9e4,Ai Customer Community,Ai Customer Community,market,active
+b54d49c0-24c4-47d7-93f9-d0679060c937,Ai Gift Registry,Ai Gift Registry,market,active
+616c179b-5df3-42f5-b7c8-49ae5b70d9ee,Robotics Surgery Ai,Robotics Surgery Ai,ai,active
+53092cce-000a-4f02-acbd-c38c3e47fe4b,Ai Fit Recommendation,Ai Fit Recommendation,market,active
+8ae79082-a341-4e02-b85d-2d8cb240399d,Ai Trend Archive,Ai Trend Archive,market,active
+69a09970-4f23-4629-898f-68945a6c432b,Blockchain Verifier Ai,Blockchain Verifier Ai,devtools,active
+8071f41e-7e52-471b-bd3a-827275046c85,Sentiment Analyzer,Sentiment Analyzer,devtools,active
+554e22d2-a833-48b3-b9db-a02721589a59,Machine Learning Builder,Machine Learning Builder,devtools,active
+3dd10317-9390-4ece-be1d-7727c9a3c77d,Blockchain Verifier Ai,Blockchain Verifier Ai,devtools,active
+a90fb2af-322e-4d30-a788-cbceb022ffd4,Supply Chain Optimizer,Supply Chain Optimizer,devtools,active
+0d0043e7-228c-4c3c-8a34-bf38798c692c,Speech To Text Ai,Speech To Text Ai,devtools,active
+51b7ebf7-d058-49ec-8833-8021a05b7a09,Ai Training Platform,Ai Training Platform,devtools,active
+0237b0cc-4b8b-4979-9c97-31ecd9f9645d,Facilities Management Ai,Facilities Management Ai,infra,active
+d0d98760-a747-4f6b-b1ca-b7ae450b1c94,Asset Management Ai,Asset Management Ai,infra,active
+735005b0-79ea-4830-9dea-3cbe38f8bdc5,Meeting Transcription Ai,Meeting Transcription Ai,infra,active
+0a663217-7731-41d7-873f-13f9742a9a8c,Succession Planning Ai,Succession Planning Ai,infra,active
+5f4b6855-0f89-4ea3-9c09-d10c6e1b4306,Data Backup Ai,Data Backup Ai,infra,active
+865e4148-4fb4-4fb6-96ec-65c6602936e8,Project Budget Ai,Project Budget Ai,infra,active
+69d0a7bd-f645-48e8-9370-1598d91fce73,Report Generation Ai,Report Generation Ai,infra,active
+970a10cd-39de-444c-ab02-a322ffe9595b,Homeschooling Content Ai,Homeschooling Content Ai,edtech,active
+7bc634f2-5227-4b5b-986d-f73c46f575d3,Ai Legal Doc Generator,Ai Legal Doc Generator,edtech,active
+a7313b93-1f7c-4b8d-a76f-05adc9f19044,Personal Finance Coach,Personal Finance Coach,edtech,active
+b67131dd-d6ff-4b21-8a9d-7e75d37a03ff,Test Preparation Ai,Test Preparation Ai,edtech,active
+3d9e26bd-f37c-4d22-a32c-e6fbc723b813,Corporate Training Ai,Corporate Training Ai,edtech,active
+0b5c6433-971d-4b04-94f9-6fca2e22d482,Science Education Ai,Science Education Ai,edtech,active
+5d0712c4-19f4-4fb0-9fd5-456d688e791b,Ace Senior Care Connect,Ace Senior Care Connect,market,active
+28186c7a-9e4b-4b2c-884c-2bf6a7750009,Black Art Museum Ai,Black Art Museum Ai,market,active

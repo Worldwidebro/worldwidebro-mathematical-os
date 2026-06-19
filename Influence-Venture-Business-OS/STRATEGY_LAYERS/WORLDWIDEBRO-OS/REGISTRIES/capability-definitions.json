@@ -1,0 +1,513 @@
+{
+  "metadata": {
+    "type": "capability-definitions",
+    "version": "1.0",
+    "status": "\ud83d\udd27 BLOCKER #2 FIXED: Definitions created with patterns, SOPs, effort",
+    "total_capabilities": 11,
+    "generated_date": "2026-06-05"
+  },
+  "capabilities": [
+    {
+      "capability": "api",
+      "name": "Application Programming Interface",
+      "description": "Programmatic interface for internal/external services to communicate. Includes REST, GraphQL, gRPC, OpenAPI specs.",
+      "maturity": "mature",
+      "adoption": "100% (618 ventures)",
+      "examples": [
+        "RESTful HTTP API with JSON",
+        "GraphQL query interface",
+        "gRPC for internal services",
+        "WebSocket real-time APIs"
+      ],
+      "implementation_patterns": [
+        "FastAPI/Django REST (Python)",
+        "Express.js/NestJS (Node)",
+        "Gin/Echo (Go)",
+        "Spring Boot (Java)"
+      ],
+      "related_sops": [
+        "API_Design_Standards.md",
+        "API_Authentication.md",
+        "Rate_Limiting_Config.md",
+        "API_Versioning_Strategy.md"
+      ],
+      "estimated_effort_days": 5,
+      "effort_range": "3-10 days",
+      "typical_repos": [
+        "fastapi_mcp",
+        "plane",
+        "documenso"
+      ],
+      "anti_patterns": [
+        "No versioning strategy",
+        "No authentication on endpoints",
+        "No rate limiting",
+        "Returning raw error messages to clients"
+      ],
+      "dependencies": [
+        "database"
+      ],
+      "team_needed": [
+        "backend-engineer",
+        "devops"
+      ],
+      "budget_estimate_usd": 5000
+    },
+    {
+      "capability": "database",
+      "name": "Data Persistence & Storage",
+      "description": "Persistent storage layer for application data. Includes SQL, NoSQL, document stores, caches.",
+      "maturity": "mature",
+      "adoption": "100% (618 ventures)",
+      "examples": [
+        "PostgreSQL relational database",
+        "MongoDB document store",
+        "Redis cache layer",
+        "DuckDB analytics database"
+      ],
+      "implementation_patterns": [
+        "PostgreSQL + Supabase (managed)",
+        "MongoDB Atlas (managed)",
+        "DynamoDB (serverless)",
+        "Firestore (Google)"
+      ],
+      "related_sops": [
+        "Database_Backup_Procedures.md",
+        "Migration_Strategy.md",
+        "Schema_Design_Patterns.md",
+        "Performance_Tuning.md"
+      ],
+      "estimated_effort_days": 7,
+      "effort_range": "4-14 days",
+      "typical_repos": [
+        "pocketbase",
+        "coolify",
+        "rabbitmq-server"
+      ],
+      "anti_patterns": [
+        "No backups",
+        "No indexes on queries",
+        "Monolithic schema",
+        "No connection pooling"
+      ],
+      "dependencies": [],
+      "team_needed": [
+        "backend-engineer",
+        "dba"
+      ],
+      "budget_estimate_usd": 8000
+    },
+    {
+      "capability": "authentication",
+      "name": "User Login & Access Control",
+      "description": "User identity verification, session management, authorization rules. Covers login, signup, password resets, multi-factor auth.",
+      "maturity": "mature",
+      "adoption": "82.7% (511 ventures)",
+      "examples": [
+        "Email/password with sessions",
+        "OAuth2 (Google, GitHub login)",
+        "SAML enterprise SSO",
+        "JWT tokens"
+      ],
+      "implementation_patterns": [
+        "Supabase Auth (managed)",
+        "Auth0 (managed)",
+        "Firebase Auth (managed)",
+        "Custom JWT + refresh tokens"
+      ],
+      "related_sops": [
+        "Auth_Implementation.md",
+        "Security_Best_Practices.md",
+        "Password_Policy.md",
+        "MFA_Setup.md",
+        "Session_Management.md"
+      ],
+      "estimated_effort_days": 4,
+      "effort_range": "2-8 days",
+      "typical_repos": [
+        "fastapi_mcp",
+        "pocketbase"
+      ],
+      "anti_patterns": [
+        "Storing passwords in plaintext",
+        "No session expiration",
+        "No rate limiting on login",
+        "Storing tokens in localStorage"
+      ],
+      "dependencies": [
+        "api"
+      ],
+      "team_needed": [
+        "backend-engineer",
+        "security-engineer"
+      ],
+      "budget_estimate_usd": 6000
+    },
+    {
+      "capability": "dashboard",
+      "name": "User Interface & Data Visualization",
+      "description": "Web or mobile UI for users to interact with the application. Includes charts, tables, forms, real-time updates.",
+      "maturity": "mature",
+      "adoption": "62.9% (389 ventures)",
+      "examples": [
+        "React/Vue single-page app",
+        "Admin dashboard with charts",
+        "Mobile app (iOS/Android)",
+        "Real-time data visualization"
+      ],
+      "implementation_patterns": [
+        "React + Vite + TailwindCSS",
+        "Vue 3 + Nuxt",
+        "Next.js for full-stack",
+        "Flutter for mobile"
+      ],
+      "related_sops": [
+        "UI_Design_System.md",
+        "Component_Library.md",
+        "Accessibility_Standards.md",
+        "Performance_Optimization.md"
+      ],
+      "estimated_effort_days": 8,
+      "effort_range": "5-20 days",
+      "typical_repos": [
+        "plane",
+        "excalidraw"
+      ],
+      "anti_patterns": [
+        "No loading states",
+        "Hardcoded data",
+        "No error handling UI",
+        "Blocking operations on main thread"
+      ],
+      "dependencies": [
+        "api",
+        "authentication"
+      ],
+      "team_needed": [
+        "frontend-engineer",
+        "ui-designer"
+      ],
+      "budget_estimate_usd": 12000
+    },
+    {
+      "capability": "monitoring",
+      "name": "System Health & Observability",
+      "description": "Logging, metrics, alerting, and tracing to understand application health and performance. Includes error tracking, performance metrics, uptime monitoring.",
+      "maturity": "mature",
+      "adoption": "51.8% (320 ventures)",
+      "examples": [
+        "Error tracking (Sentry, Rollbar)",
+        "Metrics collection (Prometheus)",
+        "Log aggregation (ELK, DataDog)",
+        "Uptime monitoring (Pingdom, Uptime Robot)"
+      ],
+      "implementation_patterns": [
+        "Prometheus + Grafana",
+        "DataDog APM",
+        "New Relic",
+        "Sentry for error tracking"
+      ],
+      "related_sops": [
+        "Alerting_Rules.md",
+        "Dashboard_Configuration.md",
+        "On_Call_Procedures.md",
+        "Performance_Baselines.md"
+      ],
+      "estimated_effort_days": 5,
+      "effort_range": "3-8 days",
+      "typical_repos": [
+        "langfuse",
+        "camunda-platform"
+      ],
+      "anti_patterns": [
+        "No alerting",
+        "Logs not aggregated",
+        "Metrics not tracked",
+        "Alerts set too high/low"
+      ],
+      "dependencies": [
+        "api",
+        "database"
+      ],
+      "team_needed": [
+        "devops-engineer"
+      ],
+      "budget_estimate_usd": 5000
+    },
+    {
+      "capability": "payment",
+      "name": "Billing & Payment Processing",
+      "description": "Accepting payments from users, managing subscriptions, invoicing. Includes Stripe, PayPal, crypto wallets.",
+      "maturity": "emerging",
+      "adoption": "7.6% (47 ventures)",
+      "examples": [
+        "Stripe payment processing",
+        "Subscription billing (Recurly, Chargebee)",
+        "Crypto payments (blockchain)",
+        "Invoice generation"
+      ],
+      "implementation_patterns": [
+        "Stripe API + webhook handling",
+        "Stripe Billing for subscriptions",
+        "Square/PayPal as alternatives",
+        "Custom billing engine"
+      ],
+      "related_sops": [
+        "Payment_Integration.md",
+        "PCI_DSS_Compliance.md",
+        "Refund_Procedures.md",
+        "Subscription_Management.md"
+      ],
+      "estimated_effort_days": 10,
+      "effort_range": "7-14 days",
+      "typical_repos": [
+        "ollama"
+      ],
+      "anti_patterns": [
+        "Storing credit cards yourself",
+        "No idempotency on transactions",
+        "No webhook verification",
+        "Missing fraud detection"
+      ],
+      "dependencies": [
+        "api",
+        "authentication"
+      ],
+      "team_needed": [
+        "backend-engineer",
+        "compliance-officer"
+      ],
+      "budget_estimate_usd": 10000,
+      "compliance_notes": "PCI-DSS Level 1 required if handling payment data"
+    },
+    {
+      "capability": "knowledge-graph",
+      "name": "Semantic Intelligence & Relationships",
+      "description": "Structured knowledge representation showing relationships between entities. Used for AI context, recommendations, search.",
+      "maturity": "emerging",
+      "adoption": "11.7% (72 ventures)",
+      "examples": [
+        "LightRAG semantic indexing",
+        "Neo4j knowledge graph",
+        "Elasticsearch for search",
+        "Vector embeddings (Chroma, Pinecone)"
+      ],
+      "implementation_patterns": [
+        "LightRAG + LLM extraction",
+        "Neo4j graph database",
+        "Vector database + embeddings",
+        "Elastic search"
+      ],
+      "related_sops": [
+        "Entity_Extraction.md",
+        "Relationship_Mapping.md",
+        "Graph_Query_Patterns.md",
+        "Semantic_Search_Config.md"
+      ],
+      "estimated_effort_days": 12,
+      "effort_range": "8-20 days",
+      "typical_repos": [
+        "langfuse",
+        "mattermost"
+      ],
+      "anti_patterns": [
+        "No entity deduplication",
+        "Circular relationships unhandled",
+        "No versioning of knowledge",
+        "Poor query performance"
+      ],
+      "dependencies": [
+        "database",
+        "api"
+      ],
+      "team_needed": [
+        "ml-engineer",
+        "backend-engineer"
+      ],
+      "budget_estimate_usd": 15000
+    },
+    {
+      "capability": "security",
+      "name": "Data Protection & Compliance",
+      "description": "Encryption, access control, audit logging, compliance with regulations (GDPR, HIPAA, SOC2). Includes secrets management.",
+      "maturity": "mature",
+      "adoption": "25.4% (157 ventures)",
+      "examples": [
+        "TLS/SSL encryption",
+        "GDPR data export/deletion",
+        "Audit logging",
+        "Secrets management (Vault)"
+      ],
+      "implementation_patterns": [
+        "Let's Encrypt + auto-renewal",
+        "HashiCorp Vault",
+        "AWS Secrets Manager",
+        "Encryption libraries (libsodium)"
+      ],
+      "related_sops": [
+        "Encryption_Standards.md",
+        "Secrets_Management.md",
+        "Access_Control.md",
+        "Audit_Logging.md",
+        "Incident_Response.md"
+      ],
+      "estimated_effort_days": 8,
+      "effort_range": "5-15 days",
+      "typical_repos": [
+        "mattermost"
+      ],
+      "anti_patterns": [
+        "Storing secrets in code",
+        "No TLS enforcement",
+        "No audit logs",
+        "Weak encryption algorithms"
+      ],
+      "dependencies": [
+        "api",
+        "authentication"
+      ],
+      "team_needed": [
+        "security-engineer"
+      ],
+      "budget_estimate_usd": 12000,
+      "compliance_notes": "Required for healthcare, fintech, SaaS with user data"
+    },
+    {
+      "capability": "portfolio",
+      "name": "Asset Management & Display",
+      "description": "Managing and displaying user assets, projects, or content. Portfolio galleries, project showcases, asset versioning.",
+      "maturity": "mature",
+      "adoption": "33.8% (209 ventures)",
+      "examples": [
+        "Portfolio website builder",
+        "Project showcase gallery",
+        "Asset version management",
+        "Creator portfolio (artist, designer, developer)"
+      ],
+      "implementation_patterns": [
+        "Static site generator (Hugo, Gatsby)",
+        "Headless CMS (Strapi, Contentful)",
+        "Custom web builder",
+        "Template-based galleries"
+      ],
+      "related_sops": [
+        "Asset_Upload_Guidelines.md",
+        "Portfolio_Template_Library.md",
+        "Version_Control.md",
+        "Publishing_Workflow.md"
+      ],
+      "estimated_effort_days": 6,
+      "effort_range": "3-10 days",
+      "typical_repos": [
+        "plane"
+      ],
+      "anti_patterns": [
+        "No version history",
+        "No preview before publish",
+        "Poor responsive design",
+        "No SEO optimization"
+      ],
+      "dependencies": [
+        "dashboard",
+        "database"
+      ],
+      "team_needed": [
+        "frontend-engineer",
+        "designer"
+      ],
+      "budget_estimate_usd": 8000
+    },
+    {
+      "capability": "workspace",
+      "name": "Collaboration & Team Tools",
+      "description": "Multi-user collaboration features. Includes real-time editing, comments, permissions, team management.",
+      "maturity": "mature",
+      "adoption": "16.8% (104 ventures)",
+      "examples": [
+        "Real-time collaborative editing",
+        "Comments and mentions",
+        "Team permissions (RBAC)",
+        "Activity logs"
+      ],
+      "implementation_patterns": [
+        "Operational Transformation (OT)",
+        "CRDT (Conflict-free Replicated Data Type)",
+        "WebSocket real-time sync",
+        "Permission middleware"
+      ],
+      "related_sops": [
+        "RBAC_Configuration.md",
+        "Team_Management.md",
+        "Real_Time_Sync.md",
+        "Conflict_Resolution.md"
+      ],
+      "estimated_effort_days": 10,
+      "effort_range": "7-15 days",
+      "typical_repos": [
+        "plane",
+        "mattermost"
+      ],
+      "anti_patterns": [
+        "No conflict resolution",
+        "No permissions checking",
+        "Expensive real-time sync",
+        "No audit trail of changes"
+      ],
+      "dependencies": [
+        "api",
+        "authentication",
+        "database"
+      ],
+      "team_needed": [
+        "backend-engineer",
+        "frontend-engineer"
+      ],
+      "budget_estimate_usd": 15000
+    },
+    {
+      "capability": "construction",
+      "name": "Project Delivery & Operations",
+      "description": "Specialized capability for construction/operations ventures. Project tracking, crew scheduling, equipment management, safety compliance.",
+      "maturity": "emerging",
+      "adoption": "3.2% (20 ventures)",
+      "examples": [
+        "Project scheduling (Gantt charts)",
+        "Crew/equipment dispatch",
+        "Safety compliance tracking",
+        "Cost tracking and estimates"
+      ],
+      "implementation_patterns": [
+        "Project management tools (Procore, Planyard)",
+        "Custom scheduling engine",
+        "GPS tracking integration",
+        "Document management"
+      ],
+      "related_sops": [
+        "Project_Setup.md",
+        "Safety_Protocols.md",
+        "Cost_Tracking.md",
+        "Compliance_Verification.md"
+      ],
+      "estimated_effort_days": 15,
+      "effort_range": "10-25 days",
+      "typical_repos": [],
+      "anti_patterns": [
+        "No compliance documentation",
+        "No real-time location tracking",
+        "Poor cost forecasting",
+        "Inaccurate schedules"
+      ],
+      "dependencies": [
+        "dashboard",
+        "database",
+        "api"
+      ],
+      "team_needed": [
+        "full-stack-engineer",
+        "construction-pm"
+      ],
+      "budget_estimate_usd": 20000,
+      "domain_notes": "Requires understanding of construction workflows, permits, safety regulations"
+    }
+  ]
+}

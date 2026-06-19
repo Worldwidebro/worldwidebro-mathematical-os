@@ -1,0 +1,9 @@
+Sector,Total_Ventures,Sample_Ventures,Color,Priority,Status
+Fintech,47,"QuantumLedger, Tax Intelligence Platform, Credit Repair Automation, Crypto Tax Optimizer, Automated Bookkeeping",#1E40AF,HIGH,Active
+AI,72,"CogniFlow, and 71 other ventures","#7C3AED",MEDIUM,Active
+EdTech,69,"SkillForge, and 68 other ventures","#DC2626",MEDIUM,Active
+Healthcare,1,"VitalSense","#059669",LOW,Active
+Infrastructure,109,"Civilization OS, and 108 other ventures","#0891B2",HIGH,Active
+Marketplace,194,"Business Template Marketplace, and 193 other ventures","#F59E0B",HIGH,Active
+DevTools,91,"Enhanced Cursor Rules, and 90 other ventures","#6366F1",MEDIUM,Active
+TOTAL,583,"All ventures properly classified","#000000",--,Ready

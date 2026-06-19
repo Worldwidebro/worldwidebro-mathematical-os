@@ -1,9 +1,0 @@
-.env
-docker/.env
-config/openbao/config.hcl
-safeline/.env
-safeline/compose.yaml
-safeline/data/
-**/__pycache__/
-*.pyc
-.venv/

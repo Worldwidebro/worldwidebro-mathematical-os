@@ -1,0 +1,107 @@
+{
+  "name": "Growth Funnel TOF → MOF → BOF",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "funnel-intake",
+        "responseMode": "lastNode"
+      },
+      "id": "webhook-intake",
+      "name": "Webhook Intake",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "command": "python3 /Users/acebless/Documents/WORLDWIDEBRO-OS/11_GROWTH_FUNNEL/SCRIPTS/init_venture_funnel.py --venture-id={{$json.body.venture_id}}"
+      },
+      "id": "init-funnel",
+      "name": "Init Funnel Scaffold",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [480, 300]
+    },
+    {
+      "parameters": {
+        "command": "python3 /Users/acebless/Documents/WORLDWIDEBRO-OS/11_GROWTH_FUNNEL/SCRIPTS/generate_funnel_content.py --venture-id={{$json.body.venture_id}} --stages tof,mof,bof"
+      },
+      "id": "gen-scripts",
+      "name": "Generate TOF MOF BOF Scripts",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [720, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "string": [
+            {
+              "value1": "={{$json.body.render_stage}}",
+              "operation": "isNotEmpty"
+            }
+          ]
+        }
+      },
+      "id": "if-render",
+      "name": "Render Video?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [960, 300]
+    },
+    {
+      "parameters": {
+        "command": "bash /Users/acebless/Documents/run_venture_video_pipeline.sh {{$json.body.venture_id}} single"
+      },
+      "id": "render-video",
+      "name": "Render MP4 Pipeline",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [1200, 200]
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "tableId": "funnel_publish_queue",
+        "fieldsUi": {
+          "fieldValues": [
+            { "fieldId": "venture_id", "fieldValue": "={{$json.body.venture_id}}" },
+            { "fieldId": "stage", "fieldValue": "={{$json.body.render_stage || 'mof'}}" },
+            { "fieldId": "status", "fieldValue": "ready_for_review" }
+          ]
+        }
+      },
+      "id": "queue-publish",
+      "name": "Queue Publish (Supabase)",
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [1200, 400],
+      "notes": "Optional — configure Supabase credentials and table"
+    }
+  ],
+  "connections": {
+    "Webhook Intake": {
+      "main": [[{ "node": "Init Funnel Scaffold", "type": "main", "index": 0 }]]
+    },
+    "Init Funnel Scaffold": {
+      "main": [[{ "node": "Generate TOF MOF BOF Scripts", "type": "main", "index": 0 }]]
+    },
+    "Generate TOF MOF BOF Scripts": {
+      "main": [[{ "node": "Render Video?", "type": "main", "index": 0 }]]
+    },
+    "Render Video?": {
+      "main": [
+        [{ "node": "Render MP4 Pipeline", "type": "main", "index": 0 }],
+        [{ "node": "Queue Publish (Supabase)", "type": "main", "index": 0 }]
+      ]
+    },
+    "Render MP4 Pipeline": {
+      "main": [[{ "node": "Queue Publish (Supabase)", "type": "main", "index": 0 }]]
+    }
+  },
+  "settings": { "executionOrder": "v1" },
+  "meta": {
+    "description": "POST body: { \"venture_id\": \"uuid\", \"render_stage\": \"tof|mof|bof\" (optional) }"
+  }
+}

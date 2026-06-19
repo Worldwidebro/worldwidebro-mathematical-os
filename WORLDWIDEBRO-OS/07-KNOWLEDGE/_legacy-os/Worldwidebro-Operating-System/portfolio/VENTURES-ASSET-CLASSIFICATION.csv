@@ -1,0 +1,31 @@
+Venture_Name,Sector,Type,Asset_Classification,Revenue_Potential_1_5,Strategic_Value_1_5,Automation_Potential_1_5,Competitive_Advantage_1_5,Scalability_1_5,Capital_Efficiency_1_5,Asset_Score_0_30,Classification_Rationale,Monthly_Profit_Projection,Status
+QuantumLedger,fintech,Platform,Asset,4,5,4,5,5,4,27,Scarce tech core. Defensible IP. High automation.,8000-15000,Build
+CogniFlow,ai,SaaS,Asset,5,5,5,4,5,5,29,AI workflow platform. Recurring. Scales infinitely.,5000-12000,Build
+SkillForge,edtech,SaaS,Asset,4,4,4,4,5,4,25,Automated course creation. Recurring revenue.,3000-8000,Build
+VitalSense,health,Hardware,Mixed,4,4,2,4,3,2,19,Hardware + software. Lower margins but defensible.,2000-5000,Optimize
+Civilization OS,infra,Platform,Asset,5,5,5,5,5,5,30,Strategic backbone. Scales all ventures.,15000-30000,DoubleDown
+Tax Intelligence Platform,fintech,SaaS,Asset,4,4,4,4,4,4,24,AI tax automation. B2B recurring.,5000-12000,Build
+Automated Bookkeeping,fintech,SaaS,Asset,4,4,5,3,4,5,25,Service automation. Recurring. Scales well.,4000-9000,Build
+Invoice Factoring AI,fintech,SaaS,Asset,4,4,3,4,3,4,22,Financial service. B2B profitable.,3000-7000,Build
+Trade Finance AI,fintech,SaaS,Asset,4,4,3,4,4,4,23,Enterprise niche. Recurring. High switching cost.,5000-10000,Build
+Payment Gateway AI,fintech,SaaS,Asset,5,5,3,4,5,4,26,Infrastructure layer. Network effects.,8000-15000,Build
+Debt Consolidation AI,fintech,SaaS,Asset,4,4,4,4,4,4,24,Large market. Recurring commission.,5000-12000,Build
+Investment Portfolio AI,fintech,SaaS,Asset,4,4,4,4,5,4,25,Robo-advisor. Recurring AUM.,5000-12000,Build
+Escrow Automation,fintech,SaaS,Asset,4,4,3,4,3,4,22,Enterprise financial service. Recurring.,4000-8000,Build
+Remittance AI,fintech,SaaS,Asset,4,4,4,4,4,4,24,Global demand. Regulatory advantage.,4000-9000,Build
+Wealth Transfer AI,fintech,SaaS,Asset,4,4,3,4,4,4,23,Aging population. High-net-worth.,3000-8000,Build
+Business Template Marketplace,market,Marketplace,Asset,4,4,4,3,5,5,25,Low COGS. Scales infinitely. Network effects.,4000-10000,Build
+Credit Repair Automation,fintech,SaaS,Asset,3,3,3,3,4,4,20,Niche automation. Growing demand.,2000-5000,Optimize
+Crypto Tax Optimizer,fintech,SaaS,Asset,4,4,4,4,4,4,24,Crypto niche growing. B2B2C.,3000-8000,Build
+Automated Bookkeeping,fintech,SaaS,Asset,4,4,5,3,4,5,25,High-value automation. Low COGS.,4000-9000,Build
+Business Formation Services,fintech,Service,Mixed,2,2,2,2,3,2,13,Time-for-money service. Manual process.,1000-2000,Reevaluate
+AI Boss Hub Lite,fintech,SaaS,Mixed,3,3,3,3,4,3,19,Lite version. Limited differentiation.,1000-3000,Optimize
+U Haul Rental Affiliate,fintech,Affiliate,Liability,1,1,2,1,1,2,8,Pure affiliate. No differentiation.,0-500,Archive
+Costume Shop AI,market,Ecommerce,Liability,2,1,2,2,2,2,11,Niche ecommerce. Limited audience.,0-1000,Reevaluate
+Housing Assistance AI,market,SaaS,Mixed,3,3,3,3,3,3,18,Non-profit model. Hard to monetize.,1000-3000,Reevaluate
+Expense Tracker AI,fintech,SaaS,Liability,2,2,4,2,4,3,17,Crowded category. Low switching cost.,500-2000,Reevaluate
+Charity Donation AI,fintech,SaaS,Liability,2,1,3,2,3,2,13,Non-profit model. Hard to monetize.,0-1000,Archive
+Tax Deduction Finder,fintech,SaaS,Mixed,3,3,4,3,4,4,21,B2C tax tool. Seasonal demand.,1000-3000,Optimize
+Crowdfunding AI,fintech,SaaS,Mixed,3,3,3,3,4,2,18,Creator economy. High CAC.,1500-4000,Reevaluate
+Financial Wellness Coach,fintech,SaaS,Mixed,3,3,4,3,3,3,19,Coaching hybrid. Automation dependent.,1500-4000,Optimize
+Enhanced Cursor Rules,devtools,Asset,Asset,3,3,3,4,4,4,21,Developer tools. 487+ rules. Strategic brand.,1000-3000,Maintain

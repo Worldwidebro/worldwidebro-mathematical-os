@@ -1,0 +1,99 @@
+# Trading/Markets Stack — Architecture & Integration
+
+**Date:** 2026-06-05  
+**Repos:** 8 interconnected trading system repos  
+**Source:** venture-hub/docs/FIN_REPO_DELEGATION.md
+
+---
+
+## 8 Trading Concerns (Split by Repo)
+
+### 1. FIN-023: Investment Portfolio AI
+**Concerns:** Event bus, ingest, features, strategy registry, risk kernel, journal, Alpaca  
+**Owns:** `src/trading_os/`, `config/strategies.yaml`, `config/risk.yaml`, `scripts/run_daily_pipeline.py`  
+**Provides:** Portfolio data API
+
+### 2. FIN-031: Investor Dashboard Builder
+**Concern:** Portfolio & LP dashboards (read-only)  
+**Owns:** Dashboard UI, LP reports  
+**Calls:** FIN-023 API
+
+### 3. FIN-004: GenixBank's AI Treasurer
+**Concern:** Post-trade capital allocation  
+**Owns:** Allocation YAML, treasury cron, venture weighting  
+**Calls:** FIN-023 (portfolio data)
+
+### 4. FIN-026: Financial Compliance Scanner
+**Concern:** Trade audit & compliance  
+**Owns:** Audit rules, AML checks, KYC validators  
+**Calls:** FIN-023 (trade log)
+
+### 5. EM-015: Crypto Trading AI
+**Concern:** Crypto execution (CCXT adapters)  
+**Called by:** FIN-023 (if crypto enabled)
+
+### 6. FIN-009: Crypto Tax Optimizer
+**Concern:** Tax lots & Form 8949  
+**Owns:** Cost basis engine, tax lot tracking  
+**Called by:** FIN-023 (tax data)
+
+### 7. FIN-036: Arbitrage Nexus Platform
+**Concern:** Deal/venture arbitrage (OSINT)  
+**Calls:** FIN-004 (capital availability)
+
+### 8. FIN-022: Budget Forecasting AI
+**Concern:** Cash flow & budget forecasting  
+**Calls:** FIN-004 (for cash planning)
+
+---
+
+## Event Flow
+
+```
+FIN-023 (Event Bus)
+  ├─→ Strategy Execution → Alpaca API
+  ├─→ Risk Kernel → FIN-026 (compliance)
+  ├─→ Trade Journal → FIN-009 (tax)
+  └─→ API Output
+      ├─→ FIN-031 (dashboards)
+      ├─→ FIN-004 (allocation)
+      └─→ Supabase (trade log)
+```
+
+---
+
+## Integration Contracts
+
+| From | To | Endpoint | Frequency |
+|------|----|-----------| -----------|
+| FIN-023 | FIN-031 | GET /api/portfolio | Every 1 min |
+| FIN-023 | FIN-004 | GET /api/performance | Daily |
+| FIN-023 | FIN-026 | GET /api/trades/log | Real-time |
+| FIN-004 | FIN-023 | POST /api/constraints | Daily |
+
+---
+
+## Deployment Order
+
+1. FIN-023 (core event bus)
+2. FIN-026 (compliance rules)
+3. FIN-004 (allocation engine)
+4. FIN-031 (dashboards)
+5. EM-015, FIN-009, FIN-036, FIN-022 (optional/support)
+
+---
+
+## Configuration Files
+
+**strategies.yaml** - Strategy definitions  
+**risk.yaml** - Risk limits (VAR, leverage, drawdown)  
+**allocation.yaml** - Venture allocation rules
+
+---
+
+## Notes
+
+- All APIs require Bearer token
+- All events logged to Supabase
+- Compliance checks in real-time (pre-execution)
+- Tax calculations nightly

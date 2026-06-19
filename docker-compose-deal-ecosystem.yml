@@ -1,0 +1,66 @@
+version: '3.8'
+
+services:
+  deal-ecosystem:
+    image: python:3.12-slim
+    container_name: deal-ecosystem-service
+    working_dir: /app
+    volumes:
+      - /Users/acebless/Documents:/app
+    environment:
+      - SUPABASE_URL=${SUPABASE_URL}
+      - SUPABASE_KEY=${SUPABASE_KEY}
+    command: python3 deal_ecosystem_orchestrator.py
+    ports:
+      - "8080:8080"
+    networks:
+      - deal-network
+
+  n8n:
+    image: n8nio/n8n:latest
+    container_name: n8n-workflows
+    environment:
+      - N8N_BASIC_AUTH_ACTIVE=false
+      - N8N_HOST=localhost
+      - N8N_PORT=5678
+    ports:
+      - "5678:5678"
+    volumes:
+      - /Users/acebless/Documents/make-workflows:/data/workflows
+    networks:
+      - deal-network
+
+  postgres:
+    image: postgres:15-alpine
+    container_name: deal-db
+    environment:
+      - POSTGRES_USER=deals
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=deals
+    ports:
+      - "5432:5432"
+    volumes:
+      - /Users/acebless/Documents/deal_ecosystem_schema.sql:/docker-entrypoint-initdb.d/init.sql
+      - deal-data:/var/lib/postgresql/data
+    networks:
+      - deal-network
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: deal-dashboard
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana-data:/var/lib/grafana
+    networks:
+      - deal-network
+
+networks:
+  deal-network:
+    driver: bridge
+
+volumes:
+  deal-data:
+  grafana-data:

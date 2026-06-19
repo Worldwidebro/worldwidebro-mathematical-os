@@ -1,0 +1,152 @@
+{
+  "version": 1,
+  "timezone": "America/New_York",
+  "default_thresholds": {
+    "tof_viral_views": 5000,
+    "tof_amplify_top_percent": 0.2,
+    "mof_warm_site_visits": 100,
+    "mof_warm_email_signups": 10,
+    "engagement_pull_interval_hours": 24
+  },
+  "days": {
+    "monday": {
+      "label": "Strategy + viral seeding",
+      "funnel_primary": "tof",
+      "cron": "0 9 * * 1",
+      "agents": ["hook-agent", "tof-viral-agent", "brand-agent"],
+      "outputs": {
+        "hooks": 10,
+        "hooks_keep": 5,
+        "short_videos": 3,
+        "posts": 10
+      },
+      "actions": ["generate_hooks", "generate_tof_scripts", "queue_posts", "optional_render_tof"],
+      "trigger_id": "monday_content_generator"
+    },
+    "tuesday": {
+      "label": "Viral amplification + MOF bridge",
+      "funnel_primary": "tof",
+      "funnel_secondary": "mof",
+      "cron": "0 10 * * 2",
+      "agents": ["analytics-agent", "tof-viral-agent"],
+      "outputs": {
+        "repost_winners": 3,
+        "explainer_posts": 2,
+        "case_study_teasers": 1
+      },
+      "actions": ["pull_analytics", "rank_content", "amplify_top_percent", "generate_mof_bridge"],
+      "trigger_id": "tuesday_amplify",
+      "condition": "engagement_threshold_met"
+    },
+    "wednesday": {
+      "label": "MOF education + showcase",
+      "funnel_primary": "mof",
+      "cron": "0 9 * * 3",
+      "agents": ["mof-proof-agent", "brand-agent"],
+      "outputs": {
+        "demo_videos": 1,
+        "breakdown_posts": 2,
+        "threads": 1
+      },
+      "actions": ["generate_mof_scripts", "generate_demo_outline", "optional_render_mof"],
+      "trigger_id": "wednesday_mof_educate",
+      "event_bridge": "tof_viral_views"
+    },
+    "thursday": {
+      "label": "MOF proof + case studies",
+      "funnel_primary": "mof",
+      "cron": "0 10 * * 4",
+      "agents": ["mof-proof-agent"],
+      "outputs": {
+        "case_studies": 2,
+        "transformation_stories": 1,
+        "comparisons": 1
+      },
+      "actions": ["generate_case_studies", "generate_comparison"],
+      "trigger_id": "thursday_mof_proof",
+      "event_bridge": "user_success"
+    },
+    "friday": {
+      "label": "BOF trust + conversion",
+      "funnel_primary": "bof",
+      "cron": "0 9 * * 5",
+      "agents": ["bof-conversion-agent", "brand-agent"],
+      "outputs": {
+        "pricing_breakdowns": 1,
+        "testimonials": 2,
+        "offer_posts": 1
+      },
+      "actions": ["generate_bof_scripts", "update_offers", "update_landing_spec", "optional_render_bof"],
+      "trigger_id": "friday_bof_push",
+      "event_bridge": "mof_warm_audience"
+    },
+    "saturday": {
+      "label": "Optimization + analytics",
+      "funnel_primary": "all",
+      "cron": "0 12 * * 6",
+      "agents": ["analytics-agent"],
+      "outputs": {
+        "weekly_report": 1,
+        "best_hooks_list": 1,
+        "funnel_conversion_map": 1
+      },
+      "actions": ["pull_all_analytics", "compute_scores", "write_weekly_report", "update_content_brain"],
+      "trigger_id": "saturday_analytics"
+    },
+    "sunday": {
+      "label": "System reset + content prep",
+      "funnel_primary": "prep",
+      "cron": "0 18 * * 0",
+      "agents": ["hook-agent", "weekly-prep-agent", "tof-viral-agent"],
+      "outputs": {
+        "hooks": 20,
+        "content_ideas": 10,
+        "video_scripts": 5,
+        "monday_prefetch": true
+      },
+      "actions": ["generate_next_week_batch", "prequeue_monday_tof", "save_to_content_brain"],
+      "trigger_id": "sunday_weekly_prep"
+    }
+  },
+  "event_triggers": {
+    "tof_viral": {
+      "condition": "views >= tof_viral_views",
+      "actions": ["generate_mof_expansion", "tag_asset_viral"]
+    },
+    "mof_warm": {
+      "condition": "site_visits >= mof_warm_site_visits OR email_signups >= mof_warm_email_signups",
+      "actions": ["trigger_bof_sequence", "queue_bof_assets"]
+    },
+    "user_success": {
+      "condition": "crm_event = new_success",
+      "actions": ["generate_case_study", "queue_mof_proof"]
+    },
+    "comment_objections": {
+      "condition": "comments contain objection keywords",
+      "actions": ["bof_objection_content", "update_faq"]
+    }
+  },
+  "pipelines": {
+    "content_generation": [
+      "trigger",
+      "ai_hook_generator",
+      "content_selector",
+      "mof_bof_transformer",
+      "format_asset",
+      "schedule_or_queue"
+    ],
+    "engagement_feedback": [
+      "post_published",
+      "analytics_pull_24h",
+      "rank_viral_conversion_retention",
+      "promote_to_mof_or_bof",
+      "save_template"
+    ],
+    "conversion_loop": [
+      "mof_threshold_met",
+      "trigger_bof_sequence",
+      "testimonials_pricing_urgency",
+      "track_crm"
+    ]
+  }
+}

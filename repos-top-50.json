@@ -1,0 +1,706 @@
+{
+  "total": 50,
+  "repos": [
+    {
+      "name": "documenso",
+      "owner": "documenso",
+      "language": "TypeScript",
+      "url": "https://github.com/documenso/documenso",
+      "capabilities": [
+        "digital-signature",
+        "document-signing",
+        "docusign-alternative",
+        "e-signature",
+        "esign"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "plane",
+      "owner": "makeplane",
+      "language": "TypeScript",
+      "url": "https://github.com/makeplane/plane",
+      "capabilities": [
+        "boards",
+        "bug-tracker",
+        "django",
+        "docker",
+        "gantt"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "excalidraw",
+      "owner": "excalidraw",
+      "language": "TypeScript",
+      "url": "https://github.com/excalidraw/excalidraw",
+      "capabilities": [
+        "canvas",
+        "collaboration",
+        "diagrams",
+        "drawing",
+        "hacktoberfest"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "coolify",
+      "owner": "coollabsio",
+      "language": "PHP",
+      "url": "https://github.com/coollabsio/coolify",
+      "capabilities": [
+        "coolify",
+        "databases",
+        "deployment",
+        "docker",
+        "docker-compose"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "mattermost",
+      "owner": "mattermost",
+      "language": "TypeScript",
+      "url": "https://github.com/mattermost/mattermost",
+      "capabilities": [
+        "collaboration",
+        "golang",
+        "hacktoberfest",
+        "mattermost",
+        "monorepo"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "langfuse",
+      "owner": "langfuse",
+      "language": "TypeScript",
+      "url": "https://github.com/langfuse/langfuse",
+      "capabilities": [
+        "analytics",
+        "autogen",
+        "evaluation",
+        "langchain",
+        "large-language-models"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "rabbitmq-server",
+      "owner": "rabbitmq",
+      "language": "JavaScript",
+      "url": "https://github.com/rabbitmq/rabbitmq-server",
+      "capabilities": [
+        "amqp",
+        "amqp-0-9-1",
+        "amqp1-0",
+        "message-broker",
+        "messaging"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "node-red",
+      "owner": "node-red",
+      "language": "JavaScript",
+      "url": "https://github.com/node-red/node-red",
+      "capabilities": [
+        "flow-based-programming",
+        "javascript",
+        "low-code",
+        "node-red",
+        "openjs-foundation"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "ollama",
+      "owner": "ollama",
+      "language": "Go",
+      "url": "https://github.com/ollama/ollama",
+      "capabilities": [
+        "deepseek",
+        "gemma",
+        "gemma3",
+        "glm",
+        "go"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "neo4j",
+      "owner": "neo4j",
+      "language": "Java",
+      "url": "https://github.com/neo4j/neo4j",
+      "capabilities": [
+        "cypher",
+        "database",
+        "graph",
+        "graph-database",
+        "graphdb"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "qdrant",
+      "owner": "qdrant",
+      "language": "Rust",
+      "url": "https://github.com/qdrant/qdrant",
+      "capabilities": [
+        "ai-search",
+        "ai-search-engine",
+        "embeddings-similarity",
+        "hnsw",
+        "hybrid-search"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "kong",
+      "owner": "Kong",
+      "language": "Lua",
+      "url": "https://github.com/Kong/kong",
+      "capabilities": [
+        "ai",
+        "ai-gateway",
+        "api-gateway",
+        "api-management",
+        "apis"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "nats-server",
+      "owner": "nats-io",
+      "language": "Go",
+      "url": "https://github.com/nats-io/nats-server",
+      "capabilities": [
+        "cloud",
+        "cloud-computing",
+        "cloud-native",
+        "connected-vehicle",
+        "distributed-systems"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "meilisearch",
+      "owner": "meilisearch",
+      "language": "Rust",
+      "url": "https://github.com/meilisearch/meilisearch",
+      "capabilities": [
+        "ai",
+        "api",
+        "app-search",
+        "database",
+        "enterprise-search"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "typesense",
+      "owner": "typesense",
+      "language": "C++",
+      "url": "https://github.com/typesense/typesense",
+      "capabilities": [
+        "algolia",
+        "datastore",
+        "elasticsearch",
+        "enterprise-search",
+        "faceting"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "datahub",
+      "owner": "datahub-project",
+      "language": "Python",
+      "url": "https://github.com/datahub-project/datahub",
+      "capabilities": [
+        "agent-platform",
+        "context-management",
+        "data-catalog",
+        "data-discovery",
+        "data-governance"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "OpenMetadata",
+      "owner": "open-metadata",
+      "language": "TypeScript",
+      "url": "https://github.com/open-metadata/OpenMetadata",
+      "capabilities": [
+        "context",
+        "context-layer",
+        "data-catalog",
+        "data-collaboration",
+        "data-contracts"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "ZeroTierOne",
+      "owner": "zerotier",
+      "language": "C++",
+      "url": "https://github.com/zerotier/ZeroTierOne",
+      "capabilities": [
+        "decentralization",
+        "networking",
+        "peer-to-peer",
+        "sd-wan",
+        "sdn"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "daily_stock_analysis",
+      "owner": "ZhuLinsen",
+      "language": "Python",
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis",
+      "capabilities": [
+        "a-stock",
+        "ai-agent",
+        "aigc",
+        "llm",
+        "quant"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "papermark",
+      "owner": "papermark",
+      "language": "TypeScript",
+      "url": "https://github.com/papermark/papermark",
+      "capabilities": [
+        "dataroom",
+        "next-auth",
+        "nextjs",
+        "open-source",
+        "pdf"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "anytype-ts",
+      "owner": "anyproto",
+      "language": "TypeScript",
+      "url": "https://github.com/anyproto/anytype-ts",
+      "capabilities": [
+        "anytype",
+        "e2ee",
+        "local-first",
+        "offline-first",
+        "p2p"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "tirreno",
+      "owner": "tirrenotechnologies",
+      "language": "PHP",
+      "url": "https://github.com/tirrenotechnologies/tirreno",
+      "capabilities": [
+        "antispam",
+        "application-monitoring",
+        "audit-logs",
+        "audit-trails",
+        "bot-detection"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "reactive-resume",
+      "owner": "amruthpillai",
+      "language": "TypeScript",
+      "url": "https://github.com/amruthpillai/reactive-resume",
+      "capabilities": [
+        "better-auth",
+        "hacktoberfest",
+        "react",
+        "resume",
+        "resume-builder"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "easy-vibe",
+      "owner": "datawhalechina",
+      "language": "JavaScript",
+      "url": "https://github.com/datawhalechina/easy-vibe",
+      "capabilities": [
+        "agent",
+        "ai",
+        "coding",
+        "course",
+        "deepseek"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "12-factor-agents",
+      "owner": "humanlayer",
+      "language": "TypeScript",
+      "url": "https://github.com/humanlayer/12-factor-agents",
+      "capabilities": [
+        "12-factor",
+        "12-factor-agents",
+        "agents",
+        "ai",
+        "context-window"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "academic-research-skills",
+      "owner": "Imbad0202",
+      "language": "Python",
+      "url": "https://github.com/Imbad0202/academic-research-skills",
+      "capabilities": [
+        "academic-pipeline",
+        "academic-writing",
+        "ai-research",
+        "claude",
+        "claude-code"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "odoo",
+      "owner": "odoo",
+      "language": "Python",
+      "url": "https://github.com/odoo/odoo",
+      "capabilities": [
+        "apps",
+        "business",
+        "erp",
+        "management",
+        "odoo"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "ai-engineering-from-scratch",
+      "owner": "rohitg00",
+      "language": "Python",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "capabilities": [
+        "agents",
+        "ai",
+        "ai-agents",
+        "ai-engineering",
+        "computer-vision"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "cal.diy",
+      "owner": "calcom",
+      "language": "TypeScript",
+      "url": "https://github.com/calcom/cal.diy",
+      "capabilities": [
+        "next-auth",
+        "nextjs",
+        "open-source",
+        "postgresql",
+        "prisma"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "Ghost",
+      "owner": "TryGhost",
+      "language": "JavaScript",
+      "url": "https://github.com/TryGhost/Ghost",
+      "capabilities": [
+        "blogging",
+        "cms",
+        "ghost",
+        "javascript",
+        "journalism"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "n8n",
+      "owner": "n8n-io",
+      "language": "TypeScript",
+      "url": "https://github.com/n8n-io/n8n",
+      "capabilities": [
+        "ai",
+        "apis",
+        "automation",
+        "cli",
+        "data-flow"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "medusa",
+      "owner": "medusajs",
+      "language": "TypeScript",
+      "url": "https://github.com/medusajs/medusa",
+      "capabilities": [
+        "commerce",
+        "e-commerce",
+        "ecommerce",
+        "framework",
+        "javascript"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "listmonk",
+      "owner": "knadh",
+      "language": "Go",
+      "url": "https://github.com/knadh/listmonk",
+      "capabilities": [
+        "campaign",
+        "campaign-management",
+        "email-marketing",
+        "email-subscription",
+        "listmonk"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "penpot",
+      "owner": "penpot",
+      "language": "Clojure",
+      "url": "https://github.com/penpot/penpot",
+      "capabilities": [
+        "clojure",
+        "clojurescript",
+        "design",
+        "prototyping",
+        "ui"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "pandoc",
+      "owner": "jgm",
+      "language": "Haskell",
+      "url": "https://github.com/jgm/pandoc",
+      "capabilities": [
+        "commonmark",
+        "converter",
+        "document",
+        "haskell",
+        "markdown"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "carbon",
+      "owner": "carbon-app",
+      "language": "JavaScript",
+      "url": "https://github.com/carbon-app/carbon",
+      "capabilities": [
+        "beautiful",
+        "carbon",
+        "education",
+        "github-gist",
+        "javascript"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "warp",
+      "owner": "warpdotdev",
+      "language": "Rust",
+      "url": "https://github.com/warpdotdev/warp",
+      "capabilities": [
+        "bash",
+        "linux",
+        "macos",
+        "rust",
+        "shell"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "SocratiCode",
+      "owner": "giancarloerra",
+      "language": "TypeScript",
+      "url": "https://github.com/giancarloerra/SocratiCode",
+      "capabilities": [
+        "ai",
+        "ai-assistant",
+        "ast",
+        "claude",
+        "claude-code"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "the-architect",
+      "owner": "Hainrixz",
+      "language": "",
+      "url": "https://github.com/Hainrixz/the-architect",
+      "capabilities": [
+        "ai-agent",
+        "anthropic",
+        "automation",
+        "blueprint",
+        "claude"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "9router",
+      "owner": "decolua",
+      "language": "JavaScript",
+      "url": "https://github.com/decolua/9router",
+      "capabilities": [
+        "ai-agents",
+        "ai-gateway",
+        "anthropic",
+        "chatgpt",
+        "claude"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "CloakBrowser",
+      "owner": "CloakHQ",
+      "language": "Python",
+      "url": "https://github.com/CloakHQ/CloakBrowser",
+      "capabilities": [
+        "ai-agents",
+        "anti-detect",
+        "antidetect-browser",
+        "bot-detection",
+        "browser-automation"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "AiToEarn",
+      "owner": "yikart",
+      "language": "TypeScript",
+      "url": "https://github.com/yikart/AiToEarn",
+      "capabilities": [
+        "auto-publish",
+        "douyin",
+        "douyin-api",
+        "electron-app",
+        "electron-react"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "tauri",
+      "owner": "tauri-apps",
+      "language": "Rust",
+      "url": "https://github.com/tauri-apps/tauri",
+      "capabilities": [
+        "desktop-app",
+        "high-performance",
+        "mobile-app",
+        "native-app",
+        "rust"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "PureMac",
+      "owner": "momenbasel",
+      "language": "Swift",
+      "url": "https://github.com/momenbasel/PureMac",
+      "capabilities": [
+        "cache-cleaner",
+        "cleanmymac",
+        "cleanup",
+        "disk-cleaner",
+        "disk-space"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "orbstack",
+      "owner": "orbstack",
+      "language": "Shell",
+      "url": "https://github.com/orbstack/orbstack",
+      "capabilities": [
+        "colima",
+        "docker",
+        "docker-desktop",
+        "lima",
+        "linux"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "system-design-101",
+      "owner": "ByteByteGoHq",
+      "language": "",
+      "url": "https://github.com/ByteByteGoHq/system-design-101",
+      "capabilities": [
+        "aws",
+        "cloud-computing",
+        "coding-interviews",
+        "computer-science",
+        "interview-questions"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "ppt-master",
+      "owner": "hugohe3",
+      "language": "Python",
+      "url": "https://github.com/hugohe3/ppt-master",
+      "capabilities": [
+        "ai-agent",
+        "aippt",
+        "office",
+        "powerpoint",
+        "powerpoint-generation"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "awesome-codex-skills",
+      "owner": "ComposioHQ",
+      "language": "Python",
+      "url": "https://github.com/ComposioHQ/awesome-codex-skills",
+      "capabilities": [
+        "awesome",
+        "awesome-lists",
+        "awesome-resources",
+        "codex",
+        "codex-cli"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "Pixelle-Video",
+      "owner": "AIDC-AI",
+      "language": "Python",
+      "url": "https://github.com/AIDC-AI/Pixelle-Video",
+      "capabilities": [
+        "aigc",
+        "comfyui",
+        "image-generation",
+        "tts",
+        "video-generation"
+      ],
+      "cap_count": 5
+    },
+    {
+      "name": "maigret",
+      "owner": "soxoj",
+      "language": "Python",
+      "url": "https://github.com/soxoj/maigret",
+      "capabilities": [
+        "cli",
+        "cybersecurity",
+        "identification",
+        "information-gathering",
+        "infosec"
+      ],
+      "cap_count": 5
+    }
+  ],
+  "scanning_strategy": "Use SocratiCode to build dependency graphs for each repo"
+}

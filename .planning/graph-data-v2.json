@@ -1,0 +1,16 @@
+{
+  "generated": "2026-06-17T08:00:57.373764",
+  "entities": {
+    "repos": 5,
+    "capabilities": 5,
+    "ventures": 1504,
+    "total": 1514
+  },
+  "relationships": 5,
+  "coverage": {
+    "ventures_with_repo_mapping": 712,
+    "capabilities_mapped": 10,
+    "repos_integrated": 5
+  },
+  "status": "READY"
+}

@@ -1,0 +1,257 @@
+{
+  "date": "2026-06-16",
+  "dexter_cycle": "dexter-001",
+  "timestamp": "2026-06-16T19:59:30.520967",
+  "portfolio": {
+    "total_ventures": 1000,
+    "scale": 100,
+    "hold": 0,
+    "kill": 900
+  },
+  "by_sector": {
+    "market": {
+      "count": 38,
+      "kill": 11,
+      "hold": 0,
+      "scale": 27,
+      "total_capital": 202500,
+      "avg_health": 71.05263157894737,
+      "avg_success": 0.7105263157894737
+    },
+    "e-commerce": {
+      "count": 109,
+      "kill": 88,
+      "hold": 0,
+      "scale": 21,
+      "total_capital": 157500,
+      "avg_health": 19.26605504587156,
+      "avg_success": 0.1926605504587156
+    },
+    "fintech": {
+      "count": 22,
+      "kill": 6,
+      "hold": 0,
+      "scale": 16,
+      "total_capital": 120000,
+      "avg_health": 72.72727272727273,
+      "avg_success": 0.7272727272727273
+    },
+    "financial": {
+      "count": 72,
+      "kill": 57,
+      "hold": 0,
+      "scale": 15,
+      "total_capital": 112500,
+      "avg_health": 20.833333333333332,
+      "avg_success": 0.20833333333333334
+    },
+    "devtools": {
+      "count": 60,
+      "kill": 46,
+      "hold": 0,
+      "scale": 14,
+      "total_capital": 105000,
+      "avg_health": 23.333333333333332,
+      "avg_success": 0.23333333333333334
+    },
+    "community": {
+      "count": 52,
+      "kill": 46,
+      "hold": 0,
+      "scale": 6,
+      "total_capital": 45000,
+      "avg_health": 11.538461538461538,
+      "avg_success": 0.11538461538461539
+    },
+    "health": {
+      "count": 1,
+      "kill": 0,
+      "hold": 0,
+      "scale": 1,
+      "total_capital": 7500,
+      "avg_health": 100.0,
+      "avg_success": 1.0
+    },
+    "infra": {
+      "count": 44,
+      "kill": 44,
+      "hold": 0,
+      "scale": 0,
+      "total_capital": 0,
+      "avg_health": 0.0,
+      "avg_success": 0.0
+    },
+    "technology": {
+      "count": 33,
+      "kill": 33,
+      "hold": 0,
+      "scale": 0,
+      "total_capital": 0,
+      "avg_health": 0.0,
+      "avg_success": 0.0
+    },
+    "operations": {
+      "count": 66,
+      "kill": 66,
+      "hold": 0,
+      "scale": 0,
+      "total_capital": 0,
+      "avg_health": 0.0,
+      "avg_success": 0.0
+    },
+    "edtech": {
+      "count": 30,
+      "kill": 30,
+      "hold": 0,
+      "scale": 0,
+      "total_capital": 0,
+      "avg_health": 0.0,
+      "avg_success": 0.0
+    },
+    "emerging": {
+      "count": 50,
+      "kill": 50,
+      "hold": 0,
+      "scale": 0,
+      "total_capital": 0,
+      "avg_health": 0.0,
+      "avg_success": 0.0
+    },
+    "specialized": {
+      "count": 50,
+      "kill": 50,
+      "hold": 0,
+      "scale": 0,
+      "total_capital": 0,
+      "avg_health": 0.0,
+      "avg_success": 0.0
+    },
+    "logistics-transport": {
+      "count": 30,
+      "kill": 30,
+      "hold": 0,
+      "scale": 0,
+      "total_capital": 0,
+      "avg_health": 0.0,
+      "avg_success": 0.0
+    },
+    "ai": {
+      "count": 24,
+      "kill": 24,
+      "hold": 0,
+      "scale": 0,
+      "total_capital": 0,
+      "avg_health": 0.0,
+      "avg_success": 0.0
+    },
+    "education": {
+      "count": 40,
+      "kill": 40,
+      "hold": 0,
+      "scale": 0,
+      "total_capital": 0,
+      "avg_health": 0.0,
+      "avg_success": 0.0
+    },
+    "re": {
+      "count": 15,
+      "kill": 15,
+      "hold": 0,
+      "scale": 0,
+      "total_capital": 0,
+      "avg_health": 0.0,
+      "avg_success": 0.0
+    },
+    "beauty-wellness": {
+      "count": 80,
+      "kill": 80,
+      "hold": 0,
+      "scale": 0,
+      "total_capital": 0,
+      "avg_health": 0.0,
+      "avg_success": 0.0
+    },
+    "food-hospitality": {
+      "count": 46,
+      "kill": 46,
+      "hold": 0,
+      "scale": 0,
+      "total_capital": 0,
+      "avg_health": 0.0,
+      "avg_success": 0.0
+    },
+    "fitness-sports": {
+      "count": 25,
+      "kill": 25,
+      "hold": 0,
+      "scale": 0,
+      "total_capital": 0,
+      "avg_health": 0.0,
+      "avg_success": 0.0
+    },
+    "professional-services": {
+      "count": 25,
+      "kill": 25,
+      "hold": 0,
+      "scale": 0,
+      "total_capital": 0,
+      "avg_health": 0.0,
+      "avg_success": 0.0
+    },
+    "education-training": {
+      "count": 15,
+      "kill": 15,
+      "hold": 0,
+      "scale": 0,
+      "total_capital": 0,
+      "avg_health": 0.0,
+      "avg_success": 0.0
+    },
+    "software-technology": {
+      "count": 30,
+      "kill": 30,
+      "hold": 0,
+      "scale": 0,
+      "total_capital": 0,
+      "avg_health": 0.0,
+      "avg_success": 0.0
+    },
+    "real-estate": {
+      "count": 2,
+      "kill": 2,
+      "hold": 0,
+      "scale": 0,
+      "total_capital": 0,
+      "avg_health": 0.0,
+      "avg_success": 0.0
+    },
+    "media-content": {
+      "count": 21,
+      "kill": 21,
+      "hold": 0,
+      "scale": 0,
+      "total_capital": 0,
+      "avg_health": 0.0,
+      "avg_success": 0.0
+    },
+    "construction": {
+      "count": 20,
+      "kill": 20,
+      "hold": 0,
+      "scale": 0,
+      "total_capital": 0,
+      "avg_health": 0.0,
+      "avg_success": 0.0
+    }
+  },
+  "capital": {
+    "allocated": 750000,
+    "synergies": 0,
+    "network_density": 0.0
+  },
+  "execution": {
+    "tasks_queued": 2100,
+    "next_cycle": "",
+    "cycle_duration_hours": 24
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "total_owned_repos": 6,
+  "repos": [
+    {
+      "name": "awesome-cursorrules",
+      "path": "/Users/acebless/Documents/repos/starred/awesome-cursorrules",
+      "language": "unknown",
+      "has_package_json": false,
+      "has_setup_py": false
+    },
+    {
+      "name": "prompt-eng-interactive-tutorial",
+      "path": "/Users/acebless/Documents/repos/starred/prompt-eng-interactive-tutorial",
+      "language": "unknown",
+      "has_package_json": false,
+      "has_setup_py": false
+    },
+    {
+      "name": "Prompt-Engineering-Guide",
+      "path": "/Users/acebless/Documents/repos/starred/Prompt-Engineering-Guide",
+      "language": "javascript",
+      "has_package_json": true,
+      "has_setup_py": false
+    },
+    {
+      "name": "nanoGPT",
+      "path": "/Users/acebless/Documents/repos/starred/nanoGPT",
+      "language": "unknown",
+      "has_package_json": false,
+      "has_setup_py": false
+    },
+    {
+      "name": "claude-quickstarts",
+      "path": "/Users/acebless/Documents/repos/starred/claude-quickstarts",
+      "language": "unknown",
+      "has_package_json": false,
+      "has_setup_py": false
+    },
+    {
+      "name": "anthropic-skills",
+      "path": "/Users/acebless/Documents/repos/starred/anthropic-skills",
+      "language": "unknown",
+      "has_package_json": false,
+      "has_setup_py": false
+    }
+  ]
+}

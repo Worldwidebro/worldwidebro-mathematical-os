@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worldwidebro Holdings Operating System Blueprint</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: white;
+            padding: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        /* Cover Page */
+        .cover {
+            text-align: center;
+            page-break-after: always;
+            padding: 100px 0;
+            border-bottom: 3px solid #2c3e50;
+            margin-bottom: 50px;
+        }
+        
+        .cover h1 {
+            font-size: 48px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .cover p {
+            font-size: 16px;
+            color: #555;
+            margin: 10px 0;
+        }
+        
+        /* Headings */
+        h1 {
+            font-size: 32px;
+            color: #2c3e50;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+            page-break-after: avoid;
+        }
+        
+        h2 {
+            font-size: 24px;
+            color: #34495e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            page-break-after: avoid;
+        }
+        
+        h3 {
+            font-size: 18px;
+            color: #555;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            page-break-after: avoid;
+        }
+        
+        h4 {
+            font-size: 14px;
+            color: #666;
+            margin-top: 15px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        /* Sections */
+        .section {
+            margin-bottom: 30px;
+            page-break-inside: avoid;
+        }
+        
+        /* Lists */
+        ul, ol {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            page-break-inside: avoid;
+        }
+        
+        table th {
+            background: #2c3e50;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+        }
+        
+        table tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        
+        /* Special boxes */
+        .info-box {
+            background: #ecf0f1;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+            page-break-inside: avoid;
+        }
+        
+        .success-box {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 15px;
+            margin: 20px 0;
+            page-break-inside: avoid;
+        }
+        
+        .warning-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            page-break-inside: avoid;
+        }
+        
+        /* Key highlights */
+        strong {
+            color: #2c3e50;
+            font-weight: 600;
+        }
+        
+        em {
+            color: #555;
+        }
+        
+        /* Code blocks */
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+        }
+        
+        /* Paragraphs */
+        p {
+            margin-bottom: 15px;
+            page-break-inside: avoid;
+        }
+        
+        /* Table of contents link */
+        .toc {
+            page-break-after: always;
+            margin-bottom: 50px;
+        }
+        
+        .toc h2 {
+            margin-bottom: 20px;
+        }
+        
+        .toc ul {
+            list-style: none;
+            margin-left: 0;
+        }
+        
+        .toc li {
+            margin-bottom: 12px;
+            padding-left: 20px;
+        }
+        
+        .toc li a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        .toc li a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Page breaks */
+        .page-break {
+            page-break-after: always;
+        }
+        
+        /* Print styles */
+        @media print {
+            body {
+                padding: 20px;
+            }
+            
+            h1 {
+                color: #2c3e50;
+            }
+            
+            a {
+                color: #2c3e50;
+            }
+            
+            table {
+                border: 1px solid #333;
+            }
+            
+            table th {
+                background: #2c3e50 !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- COVER PAGE -->
+    <div class="cover">
+        <h1>Worldwidebro Holdings</h1>
+        <h2 style="font-size: 28px; border: none; margin-top: 20px;">Operating System Blueprint</h2>
+        <p style="margin-top: 40px;"><strong>Version:</strong> 1.0 FINAL</p>
+        <p><strong>Date:</strong> June 17, 2026</p>
+        <p><strong>Status:</strong> READY FOR IMPLEMENTATION</p>
+        <p style="margin-top: 40px;"><strong>Created for:</strong></p>
+        <p>Antwuan Divine Johns (CEO/Founder)</p>
+        <p style="color: #3498db; margin-top: 20px;">winnerscirclewcllc@gmail.com</p>
+    </div>
+    
+    <!-- TABLE OF CONTENTS -->
+    <div class="toc">
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#executive">Executive Summary</a></li>
+            <li><a href="#part1">Part 1: Organizational Structure</a></li>
+            <li><a href="#part2">Part 2: Deal Flow System</a></li>
+            <li><a href="#part3">Part 3: Automation Layer</a></li>
+            <li><a href="#part4">Part 4: Compensation Examples</a></li>
+            <li><a href="#part5">Part 5: Hiring Timeline</a></li>
+            <li><a href="#part6">Part 6: Your Hiring Decision</a></li>
+            <li><a href="#appendix">Appendices</a></li>
+        </ul>
+    </div>
+    
+    <!-- EXECUTIVE SUMMARY -->
+    <div class="section" id="executive">
+        <h1>Executive Summary</h1>
+        
+        <p>Worldwidebro Holdings is a <strong>multi-party incentive ecosystem</strong> that scales from <strong>$10K/month (bootstrap) to $100K-150K/month (scale phase)</strong>.</p>
+        
+        <div class="info-box">
+            <strong>Core Operating Model:</strong>
+            <ul>
+                <li>6 core positions (CEO, COO, CFO, Chief Operator, Chief Originator, Infra Lead)</li>
+                <li>Standardized deal flow (Referrer → Operator → Execution → Payment)</li>
+                <li>Automatic revenue splits (costs 40%, referrer 10%, operator 35%, platform 10%, profit 5%)</li>
+                <li>MCPs auto-generate contracts, route deals, distribute payments</li>
+            </ul>
+        </div>
+        
+        <p><strong>Key Insight:</strong> You're not centralizing control. You're standardizing trust and enforcing fair splits at scale. Everyone gets paid from the same pool based on percentages defined upfront.</p>
+    </div>
+    
+    <!-- PART 1 -->
+    <div class="section" id="part1">
+        <h1>Part 1: Organizational Structure</h1>
+        
+        <h2>The 6 Core Positions</h2>
+        
+        <h3>Position 1: CEO (You)</h3>
+        <table>
+            <tr>
+                <td><strong>Equity</strong></td>
+                <td>100% → dilutes with capital/hiring</td>
+            </tr>
+            <tr>
+                <td><strong>Comp</strong></td>
+                <td>Founder equity + 2-5% profit bonus</td>
+            </tr>
+            <tr>
+                <td><strong>Time</strong></td>
+                <td>40-50 hrs/week</td>
+            </tr>
+            <tr>
+                <td><strong>Responsibility</strong></td>
+                <td>Vision, capital allocation, final authority</td>
+            </tr>
+        </table>
+        
+        <h3>Position 2: COO (Chief Operating Officer)</h3>
+        <table>
+            <tr>
+                <td><strong>Comp</strong></td>
+                <td>$80K-120K salary + 0.5-2% equity</td>
+            </tr>
+            <tr>
+                <td><strong>Time</strong></td>
+                <td>40-50 hrs/week</td>
+            </tr>
+            <tr>
+                <td><strong>Responsibility</strong></td>
+                <td>Execution management, quality, process design</td>
+            </tr>
+        </table>
+        
+        <h3>Position 3: CFO (Chief Financial Officer)</h3>
+        <table>
+            <tr>
+                <td><strong>Comp</strong></td>
+                <td>$70K-100K salary OR $3K-8K/month fractional</td>
+            </tr>
+            <tr>
+                <td><strong>Time</strong></td>
+                <td>20-40 hrs/week</td>
+            </tr>
+            <tr>
+                <td><strong>Responsibility</strong></td>
+                <td>P&L per venture, payment distributions, compliance</td>
+            </tr>
+        </table>
+        
+        <h3>Position 4: Chief Operator (VP Delivery/Execution)</h3>
+        <table>
+            <tr>
+                <td><strong>Comp</strong></td>
+                <td>$60K-90K salary + 2-5% of operator fees collected</td>
+            </tr>
+            <tr>
+                <td><strong>Time</strong></td>
+                <td>40-50 hrs/week</td>
+            </tr>
+            <tr>
+                <td><strong>Responsibility</strong></td>
+                <td>Operator recruitment, quality assurance, delivery</td>
+            </tr>
+        </table>
+        
+        <h3>Position 5: Chief Originator (VP Sourcing/Deal Flow)</h3>
+        <table>
+            <tr>
+                <td><strong>Comp</strong></td>
+                <td>$60K-90K salary + 2-5% override on ALL referrer fees</td>
+            </tr>
+            <tr>
+                <td><strong>Time</strong></td>
+                <td>40-50 hrs/week</td>
+            </tr>
+            <tr>
+                <td><strong>Responsibility</strong></td>
+                <td>Deal sourcing, referrer network, qualification</td>
+            </tr>
+        </table>
+        
+        <h3>Position 6: Infra Lead (VP Engineering/Platform)</h3>
+        <table>
+            <tr>
+                <td><strong>Comp</strong></td>
+                <td>$80K-120K salary + 1-3% equity OR $3K-5K/month fractional</td>
+            </tr>
+            <tr>
+                <td><strong>Time</strong></td>
+                <td>40-50 hrs/week (build), 20-30 hrs/week (maintenance)</td>
+            </tr>
+            <tr>
+                <td><strong>Responsibility</strong></td>
+                <td>MCPs, automation, data layer, system reliability</td>
+            </tr>
+        </table>
+    </div>
+    
+    <!-- PART 2 -->
+    <div class="page-break"></div>
+    <div class="section" id="part2">
+        <h1>Part 2: Deal Flow System</h1>
+        
+        <h2>Every Deal Has 4 Roles (Not 1)</h2>
+        <ol>
+            <li><strong>REFERRER (Originator)</strong> — Brings the opportunity → Gets 5-20% of net revenue</li>
+            <li><strong>OPERATOR (Executor)</strong> — Does the work → Gets 30-60% of project value</li>
+            <li><strong>CAPITAL PARTNER (Funder)</strong> — Funds resources/capital → Gets 20-50% return or equity</li>
+            <li><strong>PLATFORM (You/System)</strong> — Routes deals, enforces contracts → Gets 10-35% of revenue</li>
+        </ol>
+        
+        <h2>The Split Model</h2>
+        <p><strong>Revenue: $100,000</strong></p>
+        <ul>
+            <li>Costs (delivery): 40% = $40,000</li>
+            <li>Referrer fee: 10% = $10,000</li>
+            <li>Operator payout: 35% = $35,000</li>
+            <li>Platform (company): 10% = $10,000</li>
+            <li>Profit buffer: 5% = $5,000</li>
+        </ul>
+        
+        <h2>Real Example: Ace Construction Website ($50K Deal)</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Timeline</th>
+                    <th>Event</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Day 1</td>
+                    <td>Referral submitted</td>
+                    <td>Marco submits via system: "Ace Construction needs website + lead system"</td>
+                </tr>
+                <tr>
+                    <td>Day 2</td>
+                    <td>Review & approval</td>
+                    <td>CEO approves: "Yes, strategic fit with CON-011 ecosystem" → Assigns to Sarah</td>
+                </tr>
+                <tr>
+                    <td>Day 3</td>
+                    <td>Contracts generated</td>
+                    <td>MCP auto-generates 3 contracts → All sent for signature</td>
+                </tr>
+                <tr>
+                    <td>Day 4</td>
+                    <td>Work begins</td>
+                    <td>Sarah's team starts website build</td>
+                </tr>
+                <tr>
+                    <td>Week 8</td>
+                    <td>Delivery complete</td>
+                    <td>Sarah's team completes → Chief Operator verifies quality</td>
+                </tr>
+                <tr>
+                    <td>Day 57</td>
+                    <td>Distributions</td>
+                    <td>CFO processes: Marco ($5K), Sarah ($20K), Company ($5K), Costs ($20K)</td>
+                </tr>
+                <tr>
+                    <td>Day 58</td>
+                    <td>Reputation updated</td>
+                    <td>System updates reputation scores + marks deal profitable</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <!-- PART 3 -->
+    <div class="page-break"></div>
+    <div class="section" id="part3">
+        <h1>Part 3: Automation Layer</h1>
+        
+        <h2>What Gets Automated</h2>
+        
+        <h3>MCP 1: Contract Engine</h3>
+        <ul>
+            <li>Auto-generates contracts based on deal type</li>
+            <li>Pulls referrer + operator info from database</li>
+            <li>Sets percentages based on deal structure</li>
+            <li><strong>Output:</strong> PDF contracts ready to sign</li>
+        </ul>
+        
+        <h3>MCP 2: Deal Flow Router</h3>
+        <ul>
+            <li>Receives inbound referrals</li>
+            <li>Validates against qualification criteria</li>
+            <li>Routes to Chief Originator for review</li>
+            <li><strong>Output:</strong> Deal queue with priority scores</li>
+        </ul>
+        
+        <h3>MCP 3: Payment Distributor</h3>
+        <ul>
+            <li>Verifies delivery completion</li>
+            <li>Calculates splits from deal contract</li>
+            <li>Generates payment instructions</li>
+            <li>Processes via ACH/wire</li>
+            <li><strong>Output:</strong> Payment receipts + audit trail</li>
+        </ul>
+        
+        <h3>MCP 4: Reputation Scorer</h3>
+        <ul>
+            <li>Tracks operator delivery quality</li>
+            <li>Tracks referrer deal quality</li>
+            <li>Tracks profitability per deal</li>
+            <li>Updates trust scores in knowledge graph</li>
+            <li><strong>Output:</strong> Network health dashboard</li>
+        </ul>
+        
+        <h2>Workflows (n8n)</h2>
+        
+        <h3>Workflow 1: Daily Deal Intake</h3>
+        <ul>
+            <li>Runs every 4 hours</li>
+            <li>Pulls new referrals from intake form</li>
+            <li>Qualifies against criteria</li>
+            <li>Notifies Chief Originator</li>
+        </ul>
+        
+        <h3>Workflow 2: Weekly Payment Run</h3>
+        <ul>
+            <li>Runs every Friday</li>
+            <li>Pulls completed deals from week</li>
+            <li>Calculates all splits</li>
+            <li>Generates payment batch</li>
+        </ul>
+        
+        <h3>Workflow 3: Monthly Reporting</h3>
+        <ul>
+            <li>Runs 1st of month</li>
+            <li>Aggregates all ventures' P&L</li>
+            <li>Generates investor report</li>
+            <li>Updates cap table</li>
+        </ul>
+    </div>
+    
+    <!-- PART 4 -->
+    <div class="page-break"></div>
+    <div class="section" id="part4">
+        <h1>Part 4: Compensation Examples</h1>
+        
+        <h2>Scenario: 20 Deals/Month at $50K Average = $1M/month Revenue</h2>
+        
+        <h3>Revenue Breakdown</h3>
+        <ul>
+            <li>Operator payouts: 35% = $350K (goes to operators)</li>
+            <li>Referrer fees: 10% = $100K (goes to deal finders)</li>
+            <li>Costs: 40% = $400K (delivery)</li>
+            <li><strong style="color: #28a745;">PLATFORM (COMPANY): 10% = $100K/month ← Your take</strong></li>
+            <li>Profit buffer: 5% = $50K</li>
+        </ul>
+        
+        <h3>Plus: CEO Position Earnings</h3>
+        <ul>
+            <li>CEO salary (if you take it): $100K-150K/year</li>
+            <li>CEO profit share: 5% of total profit = $50K/month</li>
+            <li><strong style="color: #28a745;">TOTAL CEO: ~$150K/month when scaled</strong></li>
+        </ul>
+        
+        <div class="success-box">
+            <strong>At Scale: 50 Deals/Month ($2.5M Revenue)</strong>
+            <ul>
+                <li>Your platform fee: 10% = $250K/month</li>
+                <li>CEO profit share: 5% = $125K/month</li>
+                <li><strong>TOTAL: $375K/month from this system alone</strong></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- PART 5 -->
+    <div class="page-break"></div>
+    <div class="section" id="part5">
+        <h1>Part 5: Hiring Timeline</h1>
+        
+        <h2>Phase 1: Bootstrap (Jun-Aug 2026)</h2>
+        <p><strong>Status:</strong> You alone + fractional help</p>
+        
+        <h3>Hire:</h3>
+        <ul>
+            <li>Fractional CFO: $3K-5K/month</li>
+            <li>Contract Infra Lead: $3K-5K/month</li>
+            <li>1-2 Operator contractors (commission-based)</li>
+        </ul>
+        <table>
+            <tr>
+                <td><strong>Cost</strong></td>
+                <td>~$6-10K/month</td>
+            </tr>
+            <tr>
+                <td><strong>Revenue target</strong></td>
+                <td>$10K-20K/month</td>
+            </tr>
+            <tr>
+                <td><strong>Goal</strong></td>
+                <td>Get system running, validate deal flow</td>
+            </tr>
+        </table>
+        
+        <h2>Phase 2: Growth (Sep-Nov 2026)</h2>
+        <p><strong>Status:</strong> Add first full team members</p>
+        
+        <h3>Hire:</h3>
+        <ul>
+            <li>COO (fractional or partnership): $5-15K/month + equity</li>
+            <li>Chief Originator: $5-10K/month + commission override</li>
+            <li>Operator team grows to 3-5 people</li>
+        </ul>
+        <table>
+            <tr>
+                <td><strong>Cost</strong></td>
+                <td>~$15-25K/month</td>
+            </tr>
+            <tr>
+                <td><strong>Revenue target</strong></td>
+                <td>$30K-50K/month</td>
+            </tr>
+            <tr>
+                <td><strong>Goal</strong></td>
+                <td>Scale deal flow, build referrer network</td>
+            </tr>
+        </table>
+        
+        <h2>Phase 3: Scale (Dec 2026 - Mar 2027)</h2>
+        <p><strong>Status:</strong> Full executive team + growing ops</p>
+        
+        <h3>Hire:</h3>
+        <ul>
+            <li>Full-time CFO: $70K-100K/year</li>
+            <li>Chief Operator: $60K-90K/year (if not internal promotion)</li>
+            <li>Infra Lead becomes full-time</li>
+            <li>Operator team grows to 5-10+ people</li>
+        </ul>
+        <table>
+            <tr>
+                <td><strong>Cost</strong></td>
+                <td>~$40-60K/month</td>
+            </tr>
+            <tr>
+                <td><strong>Revenue target</strong></td>
+                <td>$100K-150K/month</td>
+            </tr>
+            <tr>
+                <td><strong>Goal</strong></td>
+                <td>Autonomous operations, profitability</td>
+            </tr>
+        </table>
+    </div>
+    
+    <!-- PART 6 -->
+    <div class="page-break"></div>
+    <div class="section" id="part6">
+        <h1>Part 6: Your Hiring Decision</h1>
+        
+        <h2>OPTION A: COO First</h2>
+        <table>
+            <tr>
+                <td><strong>Rationale</strong></td>
+                <td>Delegate operations, you focus on strategy + deals</td>
+            </tr>
+            <tr>
+                <td><strong>Timeline</strong></td>
+                <td>Hire this month</td>
+            </tr>
+            <tr>
+                <td><strong>Cost</strong></td>
+                <td>$5-15K/month</td>
+            </tr>
+            <tr>
+                <td><strong>Sequence</strong></td>
+                <td>COO → Chief Op joins under COO → Operator teams scale</td>
+            </tr>
+            <tr>
+                <td><strong>Best if</strong></td>
+                <td>You want to step back from daily ops immediately</td>
+            </tr>
+        </table>
+        
+        <h2>OPTION B: CFO First</h2>
+        <table>
+            <tr>
+                <td><strong>Rationale</strong></td>
+                <td>Get financial clarity, know what you're making per deal</td>
+            </tr>
+            <tr>
+                <td><strong>Timeline</strong></td>
+                <td>Hire immediately (can be fractional)</td>
+            </tr>
+            <tr>
+                <td><strong>Cost</strong></td>
+                <td>$3-8K/month</td>
+            </tr>
+            <tr>
+                <td><strong>Sequence</strong></td>
+                <td>CFO → Validate margins → Then hire ops roles</td>
+            </tr>
+            <tr>
+                <td><strong>Best if</strong></td>
+                <td>You want to understand economics before scaling</td>
+            </tr>
+        </table>
+        
+        <h2>OPTION C: Chief Originator First</h2>
+        <table>
+            <tr>
+                <td><strong>Rationale</strong></td>
+                <td>Accelerate deal flow, build referrer network NOW</td>
+            </tr>
+            <tr>
+                <td><strong>Timeline</strong></td>
+                <td>Hire this month</td>
+            </tr>
+            <tr>
+                <td><strong>Cost</strong></td>
+                <td>$5-10K/month + commission override</td>
+            </tr>
+            <tr>
+                <td><strong>Sequence</strong></td>
+                <td>Chief Orig builds network → More deals flow → Other roles follow</td>
+            </tr>
+            <tr>
+                <td><strong>Best if</strong></td>
+                <td>You want revenue growth to happen immediately</td>
+            </tr>
+        </table>
+        
+        <h2>OPTION D: All 3 in Parallel</h2>
+        <table>
+            <tr>
+                <td><strong>Rationale</strong></td>
+                <td>Fastest scaling, full team by month 2</td>
+            </tr>
+            <tr>
+                <td><strong>Timeline</strong></td>
+                <td>Hire all this month (staggered by 1-2 weeks)</td>
+            </tr>
+            <tr>
+                <td><strong>Cost</strong></td>
+                <td>$25K-50K/month in salaries + equity</td>
+            </tr>
+            <tr>
+                <td><strong>Sequence</strong></td>
+                <td>Parallel builds → Roles mature together</td>
+            </tr>
+            <tr>
+                <td><strong>Best if</strong></td>
+                <td>You have capital runway for 90 days to prove model</td>
+            </tr>
+        </table>
+    </div>
+    
+    <!-- APPENDICES -->
+    <div class="page-break"></div>
+    <div class="section" id="appendix">
+        <h1>Appendices</h1>
+        
+        <h2>Appendix A: Equity Allocation Framework</h2>
+        
+        <h3>Total Company: 100% equity</h3>
+        
+        <h4>Initial (Bootstrap Phase)</h4>
+        <ul>
+            <li>CEO (You): 100%</li>
+        </ul>
+        
+        <h4>After Hiring Phase 2</h4>
+        <ul>
+            <li>CEO: 75-80%</li>
+            <li>COO: 5-10%</li>
+            <li>Chief Originator: 2-5%</li>
+            <li>Infra Lead: 2-3%</li>
+            <li>Other: 5-8%</li>
+        </ul>
+        
+        <h4>After Raising Capital ($500K seed)</h4>
+        <ul>
+            <li>CEO: 60-70%</li>
+            <li>Investor: 20-30%</li>
+            <li>Employees/Partners: 5-10%</li>
+        </ul>
+        
+        <h4>After Series A ($5M round)</h4>
+        <ul>
+            <li>CEO: 40-50%</li>
+            <li>Series A Investor: 30-40%</li>
+            <li>Employees/Options pool: 10-20%</li>
+        </ul>
+        
+        <h2>Appendix B: Company Formation & Legal</h2>
+        
+        <table>
+            <tr>
+                <td><strong>Legal Entity</strong></td>
+                <td>Winners Circle WC LLC</td>
+            </tr>
+            <tr>
+                <td><strong>DBA</strong></td>
+                <td>Worldwidebro Holdings</td>
+            </tr>
+            <tr>
+                <td><strong>Owner</strong></td>
+                <td>Antwuan Divine Johns</td>
+            </tr>
+            <tr>
+                <td><strong>Email</strong></td>
+                <td>winnerscirclewcllc@gmail.com</td>
+            </tr>
+        </table>
+        
+        <h3>Contracts to Create</h3>
+        
+        <h4>Executive Agreements:</h4>
+        <ol>
+            <li>CEO Operating Agreement (founder)</li>
+            <li>COO Employment/Partnership Agreement</li>
+            <li>CFO Employment/Fractional Engagement Agreement</li>
+            <li>Chief Operator Employment Agreement</li>
+            <li>Chief Originator Employment/Commission Agreement</li>
+            <li>Infra Lead Employment/Fractional Engagement Agreement</li>
+        </ol>
+        
+        <h4>Standard Deal Contracts (Auto-generated by MCP):</h4>
+        <ol start="7">
+            <li>Referral Agreement (for all deal finders)</li>
+            <li>Operator Agreement (for all executors)</li>
+            <li>Capital/JV Agreement (for investors/partners)</li>
+            <li>Platform Operating Agreement (terms for system use)</li>
+        </ol>
+        
+        <h2>Next Steps</h2>
+        <ol>
+            <li><strong>DECISION:</strong> Choose hiring approach (A / B / C / D)</li>
+            <li><strong>RECRUITMENT:</strong> Post job descriptions</li>
+            <li><strong>ACTIVATION:</strong> First hires start (staggered)</li>
+            <li><strong>DEAL INTAKE:</strong> Launch deal-flow system</li>
+            <li><strong>SCALING:</strong> Grow referrer network + operator teams</li>
+            <li><strong>PROFITABILITY:</strong> Month 6+ ($30K-50K/month)</li>
+            <li><strong>EXPANSION:</strong> Month 12+ ($100K-150K/month)</li>
+        </ol>
+    </div>
+    
+    <!-- FOOTER -->
+    <div class="page-break"></div>
+    <div style="text-align: center; padding: 40px 0; border-top: 1px solid #ddd; margin-top: 60px;">
+        <p><strong>Worldwidebro Holdings Operating System Blueprint</strong></p>
+        <p style="color: #888; margin-top: 20px;">Document ready for distribution to: Potential hires, investors, advisors, board</p>
+        <p style="color: #888; font-size: 12px; margin-top: 40px;">Version 1.0 | June 17, 2026 | Confidential</p>
+    </div>
+</body>
+</html>

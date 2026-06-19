@@ -1,0 +1,12 @@
+capability,ventures_needing,adoption_rate,sample_ventures
+api,618,100.0%,"484ac493-c394-4ca1-a, a4edc8b5-1635-4e87-8, 65bcab5b-f1b9-425c-9"
+database,618,100.0%,"484ac493-c394-4ca1-a, a4edc8b5-1635-4e87-8, 65bcab5b-f1b9-425c-9"
+authentication,511,82.7%,"484ac493-c394-4ca1-a, a4edc8b5-1635-4e87-8, 65bcab5b-f1b9-425c-9"
+dashboard,389,62.9%,"8daa80d5-9dc6-4f36-a, e0c4a3d9-eebb-40c4-9, 939878de-81aa-4603-9"
+monitoring,320,51.8%,"484ac493-c394-4ca1-a, a4edc8b5-1635-4e87-8, 65bcab5b-f1b9-425c-9"
+portfolio,209,33.8%,"8daa80d5-9dc6-4f36-a, e0c4a3d9-eebb-40c4-9, 939878de-81aa-4603-9"
+security,157,25.4%,"484ac493-c394-4ca1-a, a4edc8b5-1635-4e87-8, 65bcab5b-f1b9-425c-9"
+workspace,104,16.8%,"2c23bb1e-c24d-44fd-8, 8be57f27-71d3-48bc-b, 1705ea92-cfb4-4491-9"
+knowledge-graph,72,11.7%,"b746feb5-f28a-4b19-b, 3b81aa14-8681-4f7e-9, d35482fa-2f2f-4f1d-a"
+payment,47,7.6%,"a4edc8b5-1635-4e87-8, a816b258-9f64-471b-9, c3420a69-2d33-48d6-b"
+construction,20,3.2%,"2419bf07-b3f2-400f-a, 2f0bd0aa-8800-4a7e-a, 1d84705c-8ebd-4c0c-8"

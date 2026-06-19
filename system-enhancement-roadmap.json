@@ -1,0 +1,168 @@
+{
+  "phase": "Phase 4 Complete",
+  "generated": "2026-06-17T08:00:25.979487",
+  "capabilities_ranked": [
+    [
+      "API Layer",
+      {
+        "demand": 618,
+        "repos": 14
+      }
+    ],
+    [
+      "Database",
+      {
+        "demand": 618,
+        "repos": 6
+      }
+    ],
+    [
+      "Authentication",
+      {
+        "demand": 511,
+        "repos": 2
+      }
+    ],
+    [
+      "Dashboard",
+      {
+        "demand": 389,
+        "repos": 3
+      }
+    ],
+    [
+      "Monitoring",
+      {
+        "demand": 320,
+        "repos": 5
+      }
+    ],
+    [
+      "Portfolio",
+      {
+        "demand": 209,
+        "repos": 1
+      }
+    ],
+    [
+      "Security",
+      {
+        "demand": 157,
+        "repos": 1
+      }
+    ],
+    [
+      "Workspace",
+      {
+        "demand": 104,
+        "repos": 0
+      }
+    ],
+    [
+      "Knowledge Graph",
+      {
+        "demand": 72,
+        "repos": 50
+      }
+    ],
+    [
+      "Payment Processing",
+      {
+        "demand": 47,
+        "repos": 15
+      }
+    ]
+  ],
+  "repos_prioritized": [
+    {
+      "rank": 1,
+      "name": "next.js",
+      "category": "Dashboard",
+      "ventures": 389,
+      "action": "ADOPT"
+    },
+    {
+      "rank": 2,
+      "name": "postgres",
+      "category": "Database",
+      "ventures": 618,
+      "action": "ADOPT"
+    },
+    {
+      "rank": 3,
+      "name": "stripe",
+      "category": "Payment",
+      "ventures": 47,
+      "action": "INTEGRATE"
+    },
+    {
+      "rank": 4,
+      "name": "auth0",
+      "category": "Authentication",
+      "ventures": 511,
+      "action": "INTEGRATE"
+    },
+    {
+      "rank": 5,
+      "name": "supabase",
+      "category": "API",
+      "ventures": 618,
+      "action": "LEVERAGE"
+    }
+  ],
+  "roadmap": {
+    "phase": "Phase 1 (Weeks 1-2): Foundation",
+    "actions": [
+      "Wire API layer (Next.js + Supabase)",
+      "Setup primary database (Postgres)",
+      "Integrate authentication (Auth0)",
+      "Deploy monitoring (5 repos)"
+    ],
+    "ventures_enabled": 618,
+    "effort": "40 hours"
+  },
+  "sector_enhancements": [
+    {
+      "sector": "CON (Construction)",
+      "top_caps": [
+        "API",
+        "Database",
+        "Monitoring"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "sector": "STA (Staffing)",
+      "top_caps": [
+        "Dashboard",
+        "API",
+        "Authentication"
+      ],
+      "priority": "HIGH"
+    },
+    {
+      "sector": "BUS (Business)",
+      "top_caps": [
+        "Analytics",
+        "API",
+        "Portal"
+      ],
+      "priority": "MEDIUM"
+    },
+    {
+      "sector": "EDU (Education)",
+      "top_caps": [
+        "Content Management",
+        "Dashboard",
+        "Knowledge Graph"
+      ],
+      "priority": "MEDIUM"
+    }
+  ],
+  "summary": {
+    "total_capabilities": 10,
+    "total_repos": 97,
+    "ventures_covered": 618,
+    "timeline": "2 weeks to foundation"
+  }
+}

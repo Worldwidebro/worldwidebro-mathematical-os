@@ -1,0 +1,17 @@
+Copy this entire text into a new browser bookmark's URL bar:
+
+javascript:(function(){
+  const post = {
+    source_url: window.location.href,
+    caption: document.querySelector("span[class*='']") ? document.querySelector("span[class*='']").innerText : "",
+    image_urls: Array.from(document.querySelectorAll("img[alt]")).map(i => i.src),
+    captured_at: new Date().toISOString(),
+    scrape_method: "bookmarklet"
+  };
+
+  fetch('http://localhost:5000', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify(post)
+  }).then(r => r.json()).then(d => alert("✅ Captured")).catch(e => alert("Error: " + e));
+})();

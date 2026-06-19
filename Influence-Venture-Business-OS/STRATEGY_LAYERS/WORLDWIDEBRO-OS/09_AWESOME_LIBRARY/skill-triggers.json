@@ -1,0 +1,347 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "total_skills": 296,
+    "total_phases": 14,
+    "purpose": "Decision logic for WHEN to use each skill — triggers, prerequisites, and outcomes"
+  },
+  "skill_triggers": {
+    "getting-started": {
+      "phase": 1,
+      "trigger": "First time setup OR project initialization",
+      "condition": "venture_status == 'new' AND no_claude_config",
+      "prerequisites": [],
+      "blocks": ["init"],
+      "enables": [],
+      "applies_to": ["all_ventures"],
+      "venture_stage": "ideation"
+    },
+    "init": {
+      "phase": 1,
+      "trigger": "Project structure needs initialization",
+      "condition": "venture_status == 'new' OR (venture_stage == 'ideation' AND no_project_structure)",
+      "prerequisites": ["getting-started"],
+      "blocks": ["configure-ecc"],
+      "enables": ["configure-ecc", "codebase-onboarding"],
+      "applies_to": ["all_ventures"],
+      "venture_stage": "ideation"
+    },
+    "planning-with-files": {
+      "phase": 4,
+      "trigger": "5+ interdependent files need coordinated changes",
+      "condition": "file_count >= 5 AND changes_are_interdependent AND complexity_high",
+      "prerequisites": ["plan"],
+      "blocks": ["feature-dev", "orchestrate"],
+      "enables": ["orchestrate"],
+      "applies_to": ["saas", "software", "automation"],
+      "venture_stage": "build"
+    },
+    "plan": {
+      "phase": 4,
+      "trigger": "Starting a new phase or feature development",
+      "condition": "venture_stage == 'build' OR (venture_stage == 'validation' AND ready_to_scale) OR new_feature_planned",
+      "prerequisites": ["superpowers:brainstorming"],
+      "blocks": ["feature-dev"],
+      "enables": ["planning-with-files", "design-task", "orchestrate"],
+      "applies_to": ["all_ventures"],
+      "venture_stage": "build"
+    },
+    "orchestrate": {
+      "phase": 6,
+      "trigger": "Multiple agents or skills need parallel execution",
+      "condition": "parallel_tasks > 1 AND independent_work AND need_coordination",
+      "prerequisites": ["planning-with-files", "design-task"],
+      "blocks": ["feature-dev"],
+      "enables": ["verify", "code-review"],
+      "applies_to": ["all_ventures"],
+      "venture_stage": "build"
+    },
+    "feature-dev": {
+      "phase": 6,
+      "trigger": "Ready to implement a feature or fix",
+      "condition": "planning_complete AND spec_ready AND (stage == 'build' OR stage == 'growth')",
+      "prerequisites": ["plan", "design-task"],
+      "blocks": ["verify", "code-review"],
+      "enables": ["verify", "code-review"],
+      "applies_to": ["saas", "software", "automation"],
+      "venture_stage": "build"
+    },
+    "verify": {
+      "phase": 7,
+      "trigger": "Code change complete, need manual verification",
+      "condition": "code_written AND (feature_new OR bug_fix) AND ready_to_test",
+      "prerequisites": ["feature-dev"],
+      "blocks": ["code-review"],
+      "enables": ["code-review", "security-review"],
+      "applies_to": ["all_ventures"],
+      "venture_stage": "build"
+    },
+    "code-review": {
+      "phase": 7,
+      "trigger": "Code needs quality review before merge",
+      "condition": "code_complete AND (tests_passing OR ready_for_review) AND need_quality_gate",
+      "prerequisites": ["verify"],
+      "blocks": ["prp-commit"],
+      "enables": ["prp-commit", "security-review"],
+      "applies_to": ["saas", "software", "automation"],
+      "venture_stage": "build"
+    },
+    "security-review": {
+      "phase": 7,
+      "trigger": "Code handles user input, auth, or sensitive data",
+      "condition": "handles_user_input OR handles_auth OR handles_sensitive_data",
+      "prerequisites": ["code-review"],
+      "blocks": ["prp-commit"],
+      "enables": ["prp-commit"],
+      "applies_to": ["saas", "software", "finance", "healthcare"],
+      "venture_stage": "build"
+    },
+    "prp-commit": {
+      "phase": 7,
+      "trigger": "Ready to commit changes to git",
+      "condition": "code_reviewed AND tests_passing AND security_approved",
+      "prerequisites": ["code-review"],
+      "blocks": ["prp-pr"],
+      "enables": ["prp-pr"],
+      "applies_to": ["all_ventures"],
+      "venture_stage": "build"
+    },
+    "prp-pr": {
+      "phase": 10,
+      "trigger": "Ready to create pull request",
+      "condition": "branch_ready AND commits_complete AND tests_passing",
+      "prerequisites": ["prp-commit"],
+      "blocks": ["github-ops"],
+      "enables": ["github-ops", "production-scheduling"],
+      "applies_to": ["all_ventures"],
+      "venture_stage": "growth"
+    },
+    "loop": {
+      "phase": 12,
+      "trigger": "Task needs to run on recurring interval",
+      "condition": "task_repeating AND interval_defined AND automation_desired",
+      "prerequisites": ["orchestrate"],
+      "blocks": [],
+      "enables": ["schedule"],
+      "applies_to": ["all_ventures"],
+      "venture_stage": "scale"
+    },
+    "schedule": {
+      "phase": 12,
+      "trigger": "One-time or cron-scheduled task needed",
+      "condition": "one_time_task OR (recurring_task AND cron_preferred)",
+      "prerequisites": ["loop"],
+      "blocks": [],
+      "enables": [],
+      "applies_to": ["all_ventures"],
+      "venture_stage": "scale"
+    },
+    "deep-research": {
+      "phase": 2,
+      "trigger": "Multi-source investigation needed for decision",
+      "condition": "business_decision_pending AND incomplete_information AND time_available",
+      "prerequisites": [],
+      "blocks": [],
+      "enables": ["superpowers:brainstorming"],
+      "applies_to": ["all_ventures"],
+      "venture_stage": "validation"
+    },
+    "superpowers:brainstorming": {
+      "phase": 3,
+      "trigger": "Ideation phase OR need creative problem-solving",
+      "condition": "stuck_on_problem OR exploring_options OR early_stage_venture",
+      "prerequisites": ["deep-research"],
+      "blocks": ["plan"],
+      "enables": ["design-agent", "plan"],
+      "applies_to": ["all_ventures"],
+      "venture_stage": "ideation"
+    },
+    "design-task": {
+      "phase": 5,
+      "trigger": "Detailed specification needed before implementation",
+      "condition": "feature_defined AND ready_for_engineering AND need_clear_spec",
+      "prerequisites": ["plan"],
+      "blocks": ["feature-dev"],
+      "enables": ["feature-dev"],
+      "applies_to": ["saas", "software"],
+      "venture_stage": "build"
+    },
+    "market-research": {
+      "phase": 2,
+      "trigger": "Need to understand market, competition, or customer",
+      "condition": "early_stage OR competitive_analysis_needed OR customer_discovery",
+      "prerequisites": [],
+      "blocks": [],
+      "enables": ["superpowers:brainstorming", "design-agent"],
+      "applies_to": ["all_ventures"],
+      "venture_stage": "validation"
+    },
+    "ask-docs": {
+      "phase": 2,
+      "trigger": "Need library/API documentation lookup",
+      "condition": "integrating_library OR using_api OR learning_framework",
+      "prerequisites": [],
+      "blocks": [],
+      "enables": ["design-task", "feature-dev"],
+      "applies_to": ["saas", "software", "automation"],
+      "venture_stage": "build"
+    },
+    "socraticode:codebase-exploration": {
+      "phase": 2,
+      "trigger": "Need to understand existing codebase",
+      "condition": "new_to_codebase OR brownfield_project OR complexity_high",
+      "prerequisites": [],
+      "blocks": [],
+      "enables": ["codebase-onboarding", "feature-dev"],
+      "applies_to": ["all_ventures"],
+      "venture_stage": "build"
+    },
+    "investor-outreach": {
+      "phase": 11,
+      "trigger": "Seeking investment or partnership",
+      "condition": "fundraising_round_active OR seeking_partners OR need_capital",
+      "prerequisites": ["investor-materials"],
+      "blocks": [],
+      "enables": [],
+      "applies_to": ["saas", "software", "ventures_scaling"],
+      "venture_stage": "scale"
+    },
+    "automation-audit-ops": {
+      "phase": 12,
+      "trigger": "Need to review and optimize automation",
+      "condition": "running_automated_tasks AND efficiency_review_needed",
+      "prerequisites": ["loop", "schedule"],
+      "blocks": [],
+      "enables": ["loop-advanced"],
+      "applies_to": ["all_ventures"],
+      "venture_stage": "scale"
+    },
+    "github-ops": {
+      "phase": 10,
+      "trigger": "GitHub workflow automation needed",
+      "condition": "using_github AND need_workflow_automation OR ci_cd_setup",
+      "prerequisites": ["prp-pr"],
+      "blocks": [],
+      "enables": ["production-scheduling"],
+      "applies_to": ["saas", "software"],
+      "venture_stage": "growth"
+    },
+    "run": {
+      "phase": 6,
+      "trigger": "Need to launch and test the application",
+      "condition": "code_written AND need_manual_testing OR feature_verification",
+      "prerequisites": ["feature-dev"],
+      "blocks": [],
+      "enables": ["verify"],
+      "applies_to": ["saas", "software", "automation"],
+      "venture_stage": "build"
+    }
+  },
+  "phase_flow": {
+    "phase_1": {
+      "name": "Setup & Environment",
+      "trigger": "New project or onboarding",
+      "order": ["getting-started", "init"],
+      "outcomes": "Development environment ready, permissions configured"
+    },
+    "phase_2": {
+      "name": "Discovery & Research",
+      "trigger": "Starting work on venture",
+      "order": ["market-research", "deep-research", "ask-docs", "socraticode:codebase-exploration"],
+      "outcomes": "Problem understood, market validated, research complete"
+    },
+    "phase_3": {
+      "name": "Ideation & Strategy",
+      "trigger": "Research complete, ready to plan",
+      "order": ["superpowers:brainstorming"],
+      "outcomes": "Strategy aligned, approach decided"
+    },
+    "phase_4": {
+      "name": "Planning & Architecture",
+      "trigger": "Strategy complete, ready to build",
+      "order": ["plan", "planning-with-files"],
+      "outcomes": "Architecture documented, plan complete"
+    },
+    "phase_5": {
+      "name": "Specification & Design",
+      "trigger": "Plan complete, ready for detailed specs",
+      "order": ["design-task"],
+      "outcomes": "Detailed specs ready, design approved"
+    },
+    "phase_6": {
+      "name": "Core Implementation",
+      "trigger": "Specs ready, implementation approved",
+      "order": ["feature-dev", "run", "orchestrate"],
+      "outcomes": "Features implemented, app running"
+    },
+    "phase_7": {
+      "name": "Testing & Verification",
+      "trigger": "Implementation complete, ready for QA",
+      "order": ["verify", "code-review", "security-review"],
+      "outcomes": "Code approved, security verified"
+    },
+    "phase_10": {
+      "name": "Release & Deployment",
+      "trigger": "Feature complete and approved, ready for release",
+      "order": ["prp-commit", "prp-pr", "github-ops"],
+      "outcomes": "Code merged, pipeline triggered"
+    },
+    "phase_11": {
+      "name": "Growth & Marketing",
+      "trigger": "Feature released, ready to promote",
+      "order": ["investor-outreach"],
+      "outcomes": "Marketing live, user acquisition started"
+    },
+    "phase_12": {
+      "name": "Operations & Maintenance",
+      "trigger": "Feature in production, need ongoing ops",
+      "order": ["loop", "schedule", "automation-audit-ops"],
+      "outcomes": "Automation running, monitoring active"
+    }
+  },
+  "decision_matrix": {
+    "venture_stage_ideation": {
+      "active_phases": [1, 2, 3],
+      "primary_skills": ["getting-started", "market-research", "superpowers:brainstorming"],
+      "trigger": "New venture, no code yet"
+    },
+    "venture_stage_validation": {
+      "active_phases": [1, 2, 3, 4],
+      "primary_skills": ["plan", "ask-docs"],
+      "trigger": "MVP exists, validating product-market fit"
+    },
+    "venture_stage_build": {
+      "active_phases": [4, 5, 6, 7],
+      "primary_skills": ["feature-dev", "plan", "code-review", "verify"],
+      "trigger": "Building features, development phase"
+    },
+    "venture_stage_growth": {
+      "active_phases": [10, 11, 12],
+      "primary_skills": ["github-ops", "investor-outreach", "loop"],
+      "trigger": "Product stable, scaling acquisition"
+    },
+    "venture_stage_scale": {
+      "active_phases": [12, 13],
+      "primary_skills": ["loop", "automation-audit-ops", "orchestrate"],
+      "trigger": "Large scale, need automation"
+    }
+  },
+  "business_model_map": {
+    "saas": {
+      "required_phases": [1, 2, 4, 5, 6, 7, 10, 12],
+      "critical_skills": ["feature-dev", "code-review", "verify", "security-review"]
+    },
+    "marketplace": {
+      "required_phases": [1, 2, 3, 4, 6, 7, 10, 11, 12],
+      "critical_skills": ["plan", "feature-dev"]
+    },
+    "service_based": {
+      "required_phases": [1, 2, 3, 4, 10, 11, 12],
+      "critical_skills": ["plan", "investor-outreach", "loop"]
+    },
+    "government_contracting": {
+      "required_phases": [1, 2, 3, 4, 7, 10, 12],
+      "critical_skills": ["deep-research", "plan", "security-review"]
+    }
+  }
+}

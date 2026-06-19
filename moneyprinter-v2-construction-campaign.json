@@ -1,0 +1,388 @@
+{
+  "campaign_name": "Construction Ventures Multi-Channel Monetization",
+  "campaign_id": "CON-MULTIPLAY-2024",
+  "description": "Automated multi-channel distribution across Twitter, YouTube Shorts, and email outreach for 20 construction ventures",
+  "created_at": "2024-06-04T12:00:00Z",
+  "status": "draft",
+  "ventures": [
+    {
+      "venture_id": "CON-001",
+      "name": "Ace Construction",
+      "channels": ["twitter", "youtube", "email"],
+      "monthly_post_target": 90,
+      "email_list_size": 500
+    },
+    {
+      "venture_id": "CON-008",
+      "name": "Home Renovation Services",
+      "channels": ["twitter", "youtube", "instagram"],
+      "monthly_post_target": 120,
+      "email_list_size": 750
+    },
+    {
+      "venture_id": "CON-009",
+      "name": "Roofing Company",
+      "channels": ["twitter", "youtube", "email"],
+      "monthly_post_target": 90,
+      "email_list_size": 600
+    },
+    {
+      "venture_id": "CON-010",
+      "name": "Plumbing Services",
+      "channels": ["twitter", "email"],
+      "monthly_post_target": 60,
+      "email_list_size": 500
+    },
+    {
+      "venture_id": "CON-011",
+      "name": "Electrical Services",
+      "channels": ["twitter", "email"],
+      "monthly_post_target": 60,
+      "email_list_size": 550
+    },
+    {
+      "venture_id": "CON-012",
+      "name": "HVAC Services",
+      "channels": ["twitter", "email"],
+      "monthly_post_target": 60,
+      "email_list_size": 480
+    },
+    {
+      "venture_id": "CON-013",
+      "name": "Painting Services",
+      "channels": ["twitter", "instagram"],
+      "monthly_post_target": 60,
+      "email_list_size": 400
+    },
+    {
+      "venture_id": "CON-014",
+      "name": "Flooring Services",
+      "channels": ["twitter", "youtube"],
+      "monthly_post_target": 60,
+      "email_list_size": 450
+    },
+    {
+      "venture_id": "CON-015",
+      "name": "Landscaping Services",
+      "channels": ["twitter", "instagram"],
+      "monthly_post_target": 60,
+      "email_list_size": 400
+    },
+    {
+      "venture_id": "CON-006",
+      "name": "Construction Project Management",
+      "channels": ["twitter", "youtube", "email"],
+      "monthly_post_target": 90,
+      "email_list_size": 1000
+    }
+  ],
+  "content_topics": {
+    "CON-008": {
+      "video_topics": [
+        "5 Home Renovation Mistakes",
+        "Budget Kitchen Under $5000",
+        "Modern Bathroom Trends 2024",
+        "Living Room Makeovers",
+        "Bedroom Design Ideas"
+      ],
+      "twitter_angles": [
+        "mistake prevention tips",
+        "cost-saving hacks",
+        "before/after transformations",
+        "trending designs",
+        "DIY vs professional"
+      ]
+    },
+    "CON-009": {
+      "video_topics": [
+        "Signs Your Roof Needs Replacement",
+        "Metal vs Asphalt Shingles",
+        "Roof Maintenance 101",
+        "Storm Damage Prevention",
+        "Energy-Efficient Roofing"
+      ],
+      "twitter_angles": [
+        "early warning signs",
+        "material comparisons",
+        "seasonal maintenance",
+        "damage claims tips",
+        "insurance advice"
+      ]
+    },
+    "CON-010": {
+      "video_topics": [
+        "DIY Plumbing Fixes",
+        "When to Call a Plumber",
+        "Water Conservation Tips",
+        "Common Plumbing Myths"
+      ],
+      "twitter_angles": [
+        "emergency fixes",
+        "cost estimates",
+        "prevention tips",
+        "myth-busting"
+      ]
+    },
+    "CON-006": {
+      "video_topics": [
+        "Project Management Best Practices",
+        "Construction Timeline Planning",
+        "Budget Control Methods",
+        "Team Communication Tools",
+        "Risk Management Strategies"
+      ],
+      "twitter_angles": [
+        "PM tips",
+        "efficiency hacks",
+        "cost control",
+        "communication tools",
+        "productivity tips"
+      ]
+    }
+  },
+  "scheduler": {
+    "twitter": {
+      "enabled": true,
+      "posting_frequency": "3x daily",
+      "posting_times": ["09:00", "12:00", "18:00"],
+      "timezone": "UTC-5",
+      "content_rotation": "sequential",
+      "batch_size": 30,
+      "cron_expression": "0 9,12,18 * * *"
+    },
+    "youtube": {
+      "enabled": true,
+      "upload_frequency": "daily",
+      "upload_time": "10:00",
+      "timezone": "UTC-5",
+      "batch_size": 5,
+      "cron_expression": "0 10 * * *"
+    },
+    "instagram": {
+      "enabled": true,
+      "posting_frequency": "2x daily",
+      "posting_times": ["08:00", "17:00"],
+      "timezone": "UTC-5",
+      "batch_size": 10,
+      "cron_expression": "0 8,17 * * *"
+    },
+    "email": {
+      "enabled": true,
+      "sending_frequency": "weekly",
+      "send_day": "Monday",
+      "send_time": "07:00",
+      "timezone": "UTC-5",
+      "batch_size": 5000,
+      "cron_expression": "0 7 * * MON"
+    }
+  },
+  "content_channels": {
+    "twitter": {
+      "description": "Microblogging platform for construction tips and affiliate",
+      "config": {
+        "api_keys": {
+          "consumer_key": "${TWITTER_CONSUMER_KEY}",
+          "consumer_secret": "${TWITTER_CONSUMER_SECRET}",
+          "access_token": "${TWITTER_ACCESS_TOKEN}",
+          "access_token_secret": "${TWITTER_ACCESS_TOKEN_SECRET}"
+        },
+        "content_template": "Construction_Tips",
+        "hashtags": ["#construction", "#homeimprovement", "#contractor", "#diy"],
+        "mention_style": "conversational",
+        "engagement_enabled": true
+      }
+    },
+    "youtube_shorts": {
+      "description": "Video platform for shorts (< 60 seconds)",
+      "config": {
+        "api_keys": {
+          "youtube_api_key": "${YOUTUBE_API_KEY}",
+          "channel_id": "${YOUTUBE_CHANNEL_ID}"
+        },
+        "upload_settings": {
+          "title_template": "{topic} | {venture_name}",
+          "description_template": "Professional {venture_name} tips and insights. {affiliate_link}",
+          "tags": ["construction", "how-to", "home-improvement", "tips"],
+          "privacy": "public",
+          "optimize_for": "youtube_shorts"
+        },
+        "thumbnail_generation": "auto",
+        "caption_generation": "auto"
+      }
+    },
+    "instagram": {
+      "description": "Photo/video sharing for visual construction content",
+      "config": {
+        "api_keys": {
+          "instagram_business_account_id": "${INSTAGRAM_BUSINESS_ACCOUNT_ID}",
+          "access_token": "${INSTAGRAM_ACCESS_TOKEN}"
+        },
+        "content_type": "reels",
+        "hashtag_strategy": "50_hashtags",
+        "posting_frequency": "2x daily",
+        "engagement_automation": "auto_like_comments"
+      }
+    },
+    "email": {
+      "description": "Email outreach to local contractors and homeowners",
+      "config": {
+        "service": "mailgun",
+        "api_key": "${MAILGUN_API_KEY}",
+        "domain": "${MAILGUN_DOMAIN}",
+        "from_address": "noreply@worldwidebro.ventures",
+        "subject_line_template": "Quick {venture_type} Tip from {venture_name}",
+        "email_template": "construction_weekly_digest",
+        "segments": {
+          "homeowners": "local_residents_5mile_radius",
+          "contractors": "construction_professionals_nearby",
+          "businesses": "property_managers_commercial"
+        }
+      }
+    }
+  },
+  "affiliate_tracking": {
+    "enabled": true,
+    "amazon_associates": {
+      "enabled": true,
+      "associate_id": "${AMAZON_ASSOCIATE_ID}",
+      "product_categories": [
+        "construction_tools",
+        "power_tools",
+        "safety_equipment",
+        "building_materials",
+        "smart_home"
+      ]
+    },
+    "custom_affiliate_links": [
+      {
+        "vendor": "Home Depot",
+        "tracking_code": "${HOME_DEPOT_AFFILIATE}",
+        "commission_rate": "0.04"
+      },
+      {
+        "vendor": "Lowes",
+        "tracking_code": "${LOWES_AFFILIATE}",
+        "commission_rate": "0.04"
+      },
+      {
+        "vendor": "Wayfair",
+        "tracking_code": "${WAYFAIR_AFFILIATE}",
+        "commission_rate": "0.06"
+      }
+    ],
+    "tracking_database": "supabase",
+    "tracking_table": "affiliate_clicks",
+    "fields": ["venture_id", "source", "link", "timestamp", "conversion_status"]
+  },
+  "lead_generation": {
+    "enabled": true,
+    "cta_templates": {
+      "CON-008": "Get your free home renovation estimate →",
+      "CON-009": "Schedule your roof inspection today →",
+      "CON-010": "Call for emergency plumbing help →",
+      "CON-011": "Get a free electrical safety audit →",
+      "CON-012": "Book your HVAC tune-up →",
+      "CON-006": "Download our PM checklist (free) →"
+    },
+    "landing_pages": {
+      "estimate_form": "worldwidebro.ventures/{venture_id}/estimate",
+      "inspection_booking": "worldwidebro.ventures/{venture_id}/schedule",
+      "lead_magnet": "worldwidebro.ventures/{venture_id}/free-guide"
+    },
+    "conversion_tracking": {
+      "enabled": true,
+      "database": "supabase",
+      "table": "construction_leads",
+      "fields": ["venture_id", "source", "contact_email", "phone", "message", "created_at", "converted"]
+    }
+  },
+  "analytics": {
+    "enabled": true,
+    "tracking_metrics": {
+      "twitter": ["impressions", "clicks", "retweets", "replies", "link_clicks"],
+      "youtube": ["views", "watch_time", "click_through_rate", "likes", "comments"],
+      "instagram": ["reach", "impressions", "engagement_rate", "saves"],
+      "email": ["open_rate", "click_rate", "conversion_rate", "unsubscribe_rate"],
+      "affiliate": ["clicks", "conversions", "revenue"]
+    },
+    "dashboard_url": "worldwidebro.ventures/admin/construction-dashboard",
+    "reporting": {
+      "frequency": "daily",
+      "report_type": "email",
+      "recipients": ["winnerscirclewcllc@gmail.com"]
+    }
+  },
+  "quality_gates": {
+    "content_review": {
+      "enabled": true,
+      "review_before_publish": true,
+      "reviewers": ["team_lead"],
+      "approval_timeout_hours": 24
+    },
+    "compliance": {
+      "enabled": true,
+      "checks": ["no_false_claims", "proper_disclosures", "no_copyright_issues"],
+      "affiliate_disclosure": "🔗 Affiliate link"
+    },
+    "brand_safety": {
+      "enabled": true,
+      "moderation": "auto",
+      "filters": ["spam", "offensive_content", "misinformation"]
+    }
+  },
+  "integration_points": {
+    "moneyprinter_turbo": {
+      "enabled": true,
+      "input_directory": "./moneyprinter-output/videos",
+      "auto_import_videos": true,
+      "video_to_shorts_converter": "ffmpeg"
+    },
+    "supabase": {
+      "enabled": true,
+      "project_id": "${SUPABASE_PROJECT_ID}",
+      "api_key": "${SUPABASE_API_KEY}",
+      "tables": ["construction_leads", "affiliate_clicks", "campaign_metrics"]
+    },
+    "slack": {
+      "enabled": true,
+      "webhook_url": "${SLACK_WEBHOOK_URL}",
+      "notifications": {
+        "daily_summary": true,
+        "high_engagement": true,
+        "errors": true
+      }
+    }
+  },
+  "expected_outputs": {
+    "monthly_content": {
+      "twitter_posts": 1080,
+      "youtube_shorts": 30,
+      "instagram_reels": 60,
+      "emails_sent": 20000
+    },
+    "monthly_metrics": {
+      "twitter_impressions": 500000,
+      "youtube_views": 50000,
+      "instagram_reach": 100000,
+      "email_opens": 5000,
+      "affiliate_clicks": 2000,
+      "lead_conversions": 30
+    },
+    "monthly_revenue": {
+      "affiliate_commission": "$1500-2500",
+      "lead_value": "$75000-100000",
+      "total_mrr": "$3000-5000"
+    }
+  },
+  "deployment": {
+    "environment": "production",
+    "deployment_date": "2024-06-15",
+    "deployment_notes": "Initial rollout across 10 core construction ventures; scale to 20 by month 2",
+    "rollback_plan": "Disable scheduler; preserve data; restart from backups available",
+    "monitoring": {
+      "uptime_target": "99.5%",
+      "alert_on_failures": true,
+      "log_retention_days": 90
+    }
+  }
+}

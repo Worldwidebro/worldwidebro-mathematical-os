@@ -1,0 +1,202 @@
+# Non-Trading Ventures — Organization (FIN-001 to FIN-036)
+
+**Date:** 2026-06-05  
+**Total:** 32 Ventures in 8 groups  
+**Each:** src/, docs/, config/, tests/ structure
+
+---
+
+## GROUP 1: GenixBank Family (2)
+
+**FIN-001: GenixBank Lite**
+- Purpose: Credit repair GTM
+- Model: Subscription ($9.99/mo) + affiliate
+- Integrate: Supabase, credit bureaus, venture-hub
+
+**FIN-002: Credit Repair Automation**
+- Purpose: B2B automation platform
+- Model: SaaS ($99-$999/mo)
+- Integrate: Bureau APIs, Twilio, Slack, venture-hub
+
+---
+
+## GROUP 2: Corporate Services (3)
+
+**FIN-003: AI Boss Hub Lite**
+- Purpose: Founder ops dashboard
+- Model: Subscription
+- Integrate: venture-hub, Supabase, Slack
+
+**FIN-007: Business Credit Building**
+- Purpose: Tradeline establishment
+- Model: Transaction ($500-$2000) + subscription
+
+**FIN-008: Business Formation**
+- Purpose: LLC/Corp formation + registered agent
+- Model: Transaction ($299-$799) + recurring ($10/mo)
+
+---
+
+## GROUP 3: Accounting & Tax (4)
+
+**FIN-006: Tax Prep & Filing**
+- Purpose: Full-service tax filing
+- Model: Transaction ($299-$999/return)
+- Integrate: IRS eServices, state boards, Stripe
+
+**FIN-011: Automated Bookkeeping**
+- Purpose: QBO/Xero sync, auto-categorization
+- Model: Subscription ($49-$199/mo)
+
+**FIN-021: Tax Deduction Finder**
+- Purpose: Receipt scanning, deduction matching
+- Model: Freemium + premium ($99/year)
+
+**FIN-033: AI Tax Preparation**
+- Purpose: Primary tax SKU
+- Model: Subscription ($249/year)
+
+---
+
+## GROUP 4: Financial Services (5)
+
+**FIN-005: U-Haul Affiliate**
+- Purpose: Rental lead tracking
+- Model: Affiliate commission (10-15%)
+
+**FIN-010: Garbage Collection AI**
+- Purpose: Route optimization SaaS
+- Model: SaaS ($99-$499/mo)
+
+**FIN-012: Invoice Factoring**
+- Purpose: AR factoring workflows
+- Model: Transaction (2-5% fee)
+
+**FIN-013: Charity Donation**
+- Purpose: Donation routing + DAF
+- Model: Transaction (0.5%) + subscription
+
+**FIN-014: Expense Tracker**
+- Purpose: Receipt scanning + categorization
+- Model: Freemium + premium ($4.99/mo)
+
+**FIN-015: Financial Wellness Coach**
+- Purpose: Personalized coaching
+- Model: Subscription ($29/mo)
+
+---
+
+## GROUP 5: Trade Finance (4)
+
+**FIN-016: Trade Finance**
+- Purpose: Import/export financing (LC, factoring)
+
+**FIN-017: Remittance**
+- Purpose: Cross-border money transfer
+
+**FIN-018: Wealth Transfer**
+- Purpose: Estate planning, trust setup
+
+**FIN-020: Debt Consolidation**
+- Purpose: Debt payoff planning + lender matching
+
+---
+
+## GROUP 6: Infrastructure (4)
+
+**FIN-019: Payment Gateway**
+- Purpose: Payment rails abstraction
+- Model: Interchange (0.5-2.9% + $0.30/txn)
+
+**FIN-024: Crowdfunding**
+- Purpose: Campaign pages + investor updates
+
+**FIN-025: Escrow Automation**
+- Purpose: Escrow state machine + release rules
+
+**FIN-029: Compliance Wallet**
+- Purpose: Compliance storage + audit trails
+
+---
+
+## GROUP 7: Legal (3)
+
+**FIN-027: Patent Writer**
+- Purpose: Patent drafting assistants
+- Model: Per-patent ($500-$2000)
+
+**FIN-028: Legal Analyzer**
+- Purpose: Contract analysis
+- Model: Subscription ($99-$499/mo)
+
+**FIN-032: Legal Toolkit**
+- Purpose: Legal templates
+- Model: Subscription ($19/mo) + marketplace
+
+---
+
+## GROUP 8: Emerging (3)
+
+**FIN-030: Local SEO Ranker**
+- Purpose: Local SEO for financial brands
+
+**FIN-034: Payroll Automation**
+- Purpose: Payroll + tax withholding
+- Model: Per-employee ($/mo) + fees
+
+**FIN-035: Insurance Underwriting**
+- Purpose: Underwriting models + quote flows
+- Model: Commission on policies
+
+---
+
+## Standard Structure (All 32)
+
+```
+fin-ventures/fin-NNN-[name]/
+├── src/
+│   ├── core/
+│   ├── api/
+│   ├── models/
+│   └── utils/
+├── docs/
+│   ├── README.md
+│   ├── API.md
+│   └── integrations/
+├── config/
+├── tests/
+└── pyproject.toml
+```
+
+---
+
+## Integration Points
+
+**Upstream:**
+- venture-hub (metrics)
+- iza-os-financial-core (utilities)
+- Supabase (data)
+
+**Downstream:**
+- FIN-004 (allocation by ROI)
+- FIN-022 (forecasting)
+- venture-hub (MRR, CAC, LTV updates)
+
+---
+
+## Push Priority
+
+**Tier 1:** FIN-001, FIN-002, FIN-006 (revenue-generating)  
+**Tier 2:** FIN-007, FIN-008, FIN-011, FIN-021, FIN-033  
+**Tier 3:** Remaining 22 ventures
+
+---
+
+## Summary
+
+✅ 32 ventures organized by business function  
+✅ Standard structure (src/, docs/, config/, tests/)  
+✅ Integration paths documented  
+✅ Push priority defined
+
+Ready for code migration.

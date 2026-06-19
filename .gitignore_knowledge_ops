@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.Python
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+
+# Temp/Test
+/tmp/
+*.log
+.pytest_cache/
+.coverage
+
+# Secrets (NEVER commit)
+.env
+.env.local
+secrets.json
+credentials.json
+
+# Keep directories (even if empty)
+!00_INTAKE_LAYER/.gitkeep
+!00_INTAKE_LAYER/Instagram_Screenshots/.gitkeep
+!00_INTAKE_LAYER/DM_Conversations/.gitkeep
+!00_INTAKE_LAYER/Raw_Inputs/.gitkeep

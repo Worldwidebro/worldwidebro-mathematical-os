@@ -1,0 +1,361 @@
+{
+  "classification": {
+    "agent": 10,
+    "api": 4,
+    "knowledge": 2,
+    "database": 5,
+    "workflow": 4,
+    "messaging": 2,
+    "monitoring": 2,
+    "deployment": 3,
+    "collaboration": 5,
+    "search": 4
+  },
+  "details": {
+    "agent": [
+      {
+        "name": "langfuse",
+        "owner": "langfuse",
+        "capabilities": [
+          "analytics",
+          "autogen",
+          "evaluation"
+        ]
+      },
+      {
+        "name": "datahub",
+        "owner": "datahub-project",
+        "capabilities": [
+          "agent-platform",
+          "context-management",
+          "data-catalog"
+        ]
+      },
+      {
+        "name": "daily_stock_analysis",
+        "owner": "ZhuLinsen",
+        "capabilities": [
+          "a-stock",
+          "ai-agent",
+          "aigc"
+        ]
+      },
+      {
+        "name": "easy-vibe",
+        "owner": "datawhalechina",
+        "capabilities": [
+          "agent",
+          "ai",
+          "coding"
+        ]
+      },
+      {
+        "name": "12-factor-agents",
+        "owner": "humanlayer",
+        "capabilities": [
+          "12-factor",
+          "12-factor-agents",
+          "agents"
+        ]
+      }
+    ],
+    "api": [
+      {
+        "name": "kong",
+        "owner": "Kong",
+        "capabilities": [
+          "ai",
+          "ai-gateway",
+          "api-gateway"
+        ]
+      },
+      {
+        "name": "meilisearch",
+        "owner": "meilisearch",
+        "capabilities": [
+          "ai",
+          "api",
+          "app-search"
+        ]
+      },
+      {
+        "name": "n8n",
+        "owner": "n8n-io",
+        "capabilities": [
+          "ai",
+          "apis",
+          "automation"
+        ]
+      },
+      {
+        "name": "AiToEarn",
+        "owner": "yikart",
+        "capabilities": [
+          "auto-publish",
+          "douyin",
+          "douyin-api"
+        ]
+      }
+    ],
+    "knowledge": [
+      {
+        "name": "qdrant",
+        "owner": "qdrant",
+        "capabilities": [
+          "ai-search",
+          "ai-search-engine",
+          "embeddings-similarity"
+        ]
+      },
+      {
+        "name": "datahub",
+        "owner": "datahub-project",
+        "capabilities": [
+          "agent-platform",
+          "context-management",
+          "data-catalog"
+        ]
+      }
+    ],
+    "database": [
+      {
+        "name": "coolify",
+        "owner": "coollabsio",
+        "capabilities": [
+          "coolify",
+          "databases",
+          "deployment"
+        ]
+      },
+      {
+        "name": "neo4j",
+        "owner": "neo4j",
+        "capabilities": [
+          "cypher",
+          "database",
+          "graph"
+        ]
+      },
+      {
+        "name": "qdrant",
+        "owner": "qdrant",
+        "capabilities": [
+          "ai-search",
+          "ai-search-engine",
+          "embeddings-similarity"
+        ]
+      },
+      {
+        "name": "meilisearch",
+        "owner": "meilisearch",
+        "capabilities": [
+          "ai",
+          "api",
+          "app-search"
+        ]
+      },
+      {
+        "name": "cal.diy",
+        "owner": "calcom",
+        "capabilities": [
+          "next-auth",
+          "nextjs",
+          "open-source"
+        ]
+      }
+    ],
+    "workflow": [
+      {
+        "name": "node-red",
+        "owner": "node-red",
+        "capabilities": [
+          "flow-based-programming",
+          "javascript",
+          "low-code"
+        ]
+      },
+      {
+        "name": "n8n",
+        "owner": "n8n-io",
+        "capabilities": [
+          "ai",
+          "apis",
+          "automation"
+        ]
+      },
+      {
+        "name": "the-architect",
+        "owner": "Hainrixz",
+        "capabilities": [
+          "ai-agent",
+          "anthropic",
+          "automation"
+        ]
+      },
+      {
+        "name": "CloakBrowser",
+        "owner": "CloakHQ",
+        "capabilities": [
+          "ai-agents",
+          "anti-detect",
+          "antidetect-browser"
+        ]
+      }
+    ],
+    "messaging": [
+      {
+        "name": "rabbitmq-server",
+        "owner": "rabbitmq",
+        "capabilities": [
+          "amqp",
+          "amqp-0-9-1",
+          "amqp1-0"
+        ]
+      },
+      {
+        "name": "nats-server",
+        "owner": "nats-io",
+        "capabilities": [
+          "cloud",
+          "cloud-computing",
+          "cloud-native"
+        ]
+      }
+    ],
+    "monitoring": [
+      {
+        "name": "langfuse",
+        "owner": "langfuse",
+        "capabilities": [
+          "analytics",
+          "autogen",
+          "evaluation"
+        ]
+      },
+      {
+        "name": "tirreno",
+        "owner": "tirrenotechnologies",
+        "capabilities": [
+          "antispam",
+          "application-monitoring",
+          "audit-logs"
+        ]
+      }
+    ],
+    "deployment": [
+      {
+        "name": "plane",
+        "owner": "makeplane",
+        "capabilities": [
+          "boards",
+          "bug-tracker",
+          "django"
+        ]
+      },
+      {
+        "name": "coolify",
+        "owner": "coollabsio",
+        "capabilities": [
+          "coolify",
+          "databases",
+          "deployment"
+        ]
+      },
+      {
+        "name": "orbstack",
+        "owner": "orbstack",
+        "capabilities": [
+          "colima",
+          "docker",
+          "docker-desktop"
+        ]
+      }
+    ],
+    "collaboration": [
+      {
+        "name": "documenso",
+        "owner": "documenso",
+        "capabilities": [
+          "digital-signature",
+          "document-signing",
+          "docusign-alternative"
+        ]
+      },
+      {
+        "name": "excalidraw",
+        "owner": "excalidraw",
+        "capabilities": [
+          "canvas",
+          "collaboration",
+          "diagrams"
+        ]
+      },
+      {
+        "name": "mattermost",
+        "owner": "mattermost",
+        "capabilities": [
+          "collaboration",
+          "golang",
+          "hacktoberfest"
+        ]
+      },
+      {
+        "name": "OpenMetadata",
+        "owner": "open-metadata",
+        "capabilities": [
+          "context",
+          "context-layer",
+          "data-catalog"
+        ]
+      },
+      {
+        "name": "pandoc",
+        "owner": "jgm",
+        "capabilities": [
+          "commonmark",
+          "converter",
+          "document"
+        ]
+      }
+    ],
+    "search": [
+      {
+        "name": "qdrant",
+        "owner": "qdrant",
+        "capabilities": [
+          "ai-search",
+          "ai-search-engine",
+          "embeddings-similarity"
+        ]
+      },
+      {
+        "name": "meilisearch",
+        "owner": "meilisearch",
+        "capabilities": [
+          "ai",
+          "api",
+          "app-search"
+        ]
+      },
+      {
+        "name": "typesense",
+        "owner": "typesense",
+        "capabilities": [
+          "algolia",
+          "datastore",
+          "elasticsearch"
+        ]
+      },
+      {
+        "name": "academic-research-skills",
+        "owner": "Imbad0202",
+        "capabilities": [
+          "academic-pipeline",
+          "academic-writing",
+          "ai-research"
+        ]
+      }
+    ]
+  },
+  "unclassified": 19
+}

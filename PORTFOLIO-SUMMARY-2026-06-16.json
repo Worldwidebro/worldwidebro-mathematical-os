@@ -1,0 +1,38 @@
+{
+  "date": "2026-06-16",
+  "total_ventures": 1000,
+  "sectors": 26,
+  "layers": 1,
+  "sector_distribution": {
+    "e-commerce": 109,
+    "beauty-wellness": 80,
+    "financial": 72,
+    "operations": 66,
+    "devtools": 60,
+    "community": 52,
+    "emerging": 50,
+    "specialized": 50,
+    "food-hospitality": 46,
+    "infra": 44,
+    "education": 40,
+    "market": 38,
+    "technology": 33,
+    "edtech": 30,
+    "logistics-transport": 30,
+    "software-technology": 30,
+    "fitness-sports": 25,
+    "professional-services": 25,
+    "ai": 24,
+    "fintech": 22,
+    "media-content": 21,
+    "construction": 20,
+    "re": 15,
+    "education-training": 15,
+    "real-estate": 2,
+    "health": 1
+  },
+  "layer_distribution": {
+    "Layer_Unknown": 1000
+  },
+  "next_action": "Run Dexter on all ventures to generate portfolio decisions"
+}

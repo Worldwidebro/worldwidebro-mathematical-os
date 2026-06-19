@@ -1,0 +1,19 @@
+venture_id,venture_name,sector,assigned_opco,venture_count,opco_category
+BW-001,Beauty Salon Network,BW,OPCO-BeautyWellness,40,Beauty & Wellness
+CON-001,LocalRoof Co,CON,OPCO-Construction,20,Construction & Infrastructure
+EC-001,E-Commerce Marketplace,EC,OPCO-Marketplace,160,Digital Marketplaces
+EDU-001,Online Academy,EDU,OPCO-Education,40,Education & Learning
+FIN-001,GenixBank,FIN,OPCO-Financial,36,Financial Services
+FS-001,Retail Finance,FS,OPCO-Retail,25,Retail & Consumer
+FH-001,Home Health Services,FH,OPCO-Healthcare,35,Healthcare Delivery
+ET-001,Medical Courier,ET,OPCO-Transportation,15,Transportation & Logistics
+COMM-001,Marketing Agency,COMM,OPCO-Media,70,Media & Communications
+MC-001,Podcast Network,MC,OPCO-Media,70,Media & Communications
+OPS-001,BPO Services,OPS,OPCO-Operations,116,Business Operations
+PS-001,Executive Search,PS,OPCO-Staffing,55,Staffing & Talent
+ST-001,Temp Agency,ST,OPCO-Staffing,55,Staffing & Talent
+TECH-001,SaaS Platform,TECH,OPCO-Technology,91,Technology & Software
+LT-001,Legal Tech,LT,OPCO-Technology,91,Technology & Software
+SPEC-001,Job Board,SPEC,OPCO-Marketplace,160,Digital Marketplaces
+EM-001,Energy Consulting,EM,OPCO-Operations,116,Business Operations
+RE-001,Property Management,RE,OPCO-RealEstate,1,Real Estate & Property

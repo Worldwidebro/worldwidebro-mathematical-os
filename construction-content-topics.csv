@@ -1,0 +1,61 @@
+venture_id,venture_name,content_type,topic,channel,target_audience,video_format,estimated_duration_sec,cta,affiliate_products,difficulty_level
+CON-001,Ace Construction,tips,How to Choose a General Contractor,twitter,homeowners,9:16,60,Get free contractor quotes,N/A,easy
+CON-001,Ace Construction,tips,Red Flags When Hiring Contractors,youtube,homeowners,16:9,45,Schedule consultation,contractor_insurance,medium
+CON-001,Ace Construction,tips,Construction Timeline: What to Expect,email,commercial_properties,N/A,N/A,Request timeline guide,project_management_tools,easy
+CON-008,Home Renovation Services,before_after,Budget Kitchen Under $5000,youtube,homeowners,16:9,45,Get kitchen estimate,kitchen_fixtures|countertop_samples,medium
+CON-008,Home Renovation Services,tips,5 Renovation Mistakes to Avoid,twitter,homeowners,9:16,60,Free renovation checklist,home_improvement_tools,easy
+CON-008,Home Renovation Services,tips,Modern Bathroom Trends 2024,instagram,homeowners,9:16,50,View full gallery,bathroom_fixtures|tiles,medium
+CON-008,Home Renovation Services,tips,Living Room Makeovers,instagram,homeowners,9:16,55,Schedule design consultation,furniture|lighting|paint,medium
+CON-008,Home Renovation Services,inspiration,Bedroom Design Ideas,twitter,homeowners,9:16,45,Browse bedroom designs,bedroom_furniture|lighting,easy
+CON-008,Home Renovation Services,educational,DIY vs Professional Renovations,youtube,homeowners,16:9,50,Consult with expert,tools|safety_equipment,medium
+CON-009,Roofing Company,maintenance,Signs Your Roof Needs Replacement,youtube,homeowners,9:16,60,Schedule roof inspection,roofing_materials|tools,easy
+CON-009,Roofing Company,comparison,Metal vs Asphalt Shingles,twitter,commercial_properties,16:9,50,Compare roofing costs,roofing_materials|fasteners,medium
+CON-009,Roofing Company,maintenance,Roof Maintenance 101,email,homeowners,N/A,N/A,Download maintenance guide,roof_maintenance_kits|sealant,easy
+CON-009,Roofing Company,prevention,Storm Damage Prevention,twitter,homeowners,9:16,55,Roof inspection offer,weather_protection|tarps|fasteners,medium
+CON-009,Roofing Company,tips,Energy-Efficient Roofing Options,youtube,eco_conscious_homeowners,16:9,48,Get efficiency audit,cool_roofing|solar_panels,hard
+CON-010,Plumbing Services,tips,DIY Plumbing Fixes,twitter,homeowners,9:16,45,Call for emergency service,plumbing_tools|parts|sealant,easy
+CON-010,Plumbing Services,educational,When to Call a Professional Plumber,youtube,homeowners,16:9,50,Schedule plumbing service,emergency_supplies|fixtures,easy
+CON-010,Plumbing Services,tips,Water Conservation Tips,instagram,eco_conscious_homeowners,9:16,40,Water audit offer,low_flow_fixtures|meters,medium
+CON-010,Plumbing Services,myth_busting,Common Plumbing Myths,email,homeowners,N/A,N/A,Contact for advice,plumbing_books|supplies,easy
+CON-011,Electrical Services,safety,Home Electrical Safety Checklist,twitter,homeowners,9:16,55,Schedule safety audit,electrical_testers|tools|outlets,easy
+CON-011,Electrical Services,educational,Circuit Breaker Guide,youtube,homeowners,16:9,50,Electrical consultation,breaker_boxes|tools|switches,medium
+CON-011,Electrical Services,modernization,Smart Home Electrical Setup,instagram,tech_savvy_homeowners,9:16,45,View smart home gallery,smart_switches|outlets|lighting,hard
+CON-011,Electrical Services,tips,Outlet and Switch Upgrades,email,homeowners,N/A,N/A,Get upgrade estimate,outlets|switches|covers|tools,easy
+CON-012,HVAC Services,maintenance,HVAC Maintenance Schedule,twitter,homeowners,9:16,50,Book maintenance,air_filters|cleaning_supplies|thermostats,easy
+CON-012,HVAC Services,educational,Energy Efficient Cooling Systems,youtube,eco_conscious_homeowners,16:9,55,Efficiency audit,smart_thermostats|efficient_units|insulation,medium
+CON-012,HVAC Services,seasonal,Winter Furnace Prep,email,seasonal_readers,N/A,N/A,Schedule fall tune-up,furnace_filters|sealing|thermostats,easy
+CON-012,HVAC Services,modernization,Smart Thermostat Benefits,instagram,tech_savvy_homeowners,9:16,45,View tech options,smart_thermostats|apps|sensors,medium
+CON-013,Painting Services,before_after,Interior Paint Color Trends,instagram,homeowners,9:16,50,View paint gallery,paint|brushes|rollers|drop_cloths,easy
+CON-013,Painting Services,tips,Exterior Paint Longevity Tips,twitter,homeowners,9:16,45,Get paint estimate,exterior_paint|primers|tools,easy
+CON-013,Painting Services,educational,DIY Painting vs Professional,youtube,homeowners,16:9,50,Painting consultation,paint_supplies|equipment_rental|tools,medium
+CON-013,Painting Services,transformation,Accent Wall Ideas,instagram,homeowners,9:16,45,Schedule consultation,paint|stain|brushes,easy
+CON-014,Flooring Services,comparison,Laminate vs Hardwood Flooring,youtube,homeowners,16:9,55,Flooring consultation,flooring_samples|tools|finish,medium
+CON-014,Flooring Services,trends,Modern Flooring Styles 2024,instagram,homeowners,9:16,50,View flooring gallery,flooring|installation_tools|finish,easy
+CON-014,Flooring Services,tips,Flooring Maintenance Guide,email,homeowners,N/A,N/A,Download care guide,cleaning_products|sealant|tools,easy
+CON-014,Flooring Services,educational,Cost Breakdown: New Flooring,twitter,homeowners,9:16,45,Get flooring quote,flooring_samples|underlayment|tools,easy
+CON-015,Landscaping Services,transformation,Backyard Makeover Ideas,instagram,homeowners,9:16,55,Landscaping quote,plants|seeds|tools|pavers,medium
+CON-015,Landscaping Services,tips,Low-Maintenance Landscaping,email,busy_homeowners,N/A,N/A,Design consultation,drought_resistant_plants|mulch|tools,easy
+CON-015,Landscaping Services,seasonal,Spring Garden Prep,twitter,seasonal_gardeners,9:16,50,Book spring service,plants|soil|tools|seeds,easy
+CON-015,Landscaping Services,inspiration,Modern Outdoor Spaces,youtube,homeowners,16:9,50,Outdoor design consultation,patio_materials|plants|lighting,medium
+CON-006,Construction PM,tips,Project Management Best Practices,twitter,contractors|project_managers,9:16,60,Download PM guide,pm_software|templates|books,easy
+CON-006,Construction PM,tools,Construction Timeline Planning,youtube,contractors,16:9,50,Try PM tool free,pm_software|scheduling_tools|templates,medium
+CON-006,Construction PM,financial,Budget Control Methods,email,contractors|clients,N/A,N/A,Request budget guide,pm_software|accounting_software,medium
+CON-006,Construction PM,communication,Team Communication Tools,twitter,contractors|foremen,9:16,45,Join PM community,pm_software|communication_apps|books,easy
+CON-006,Construction PM,risk,Risk Management Strategies,youtube,project_managers|contractors,16:9,55,Risk assessment tool,pm_software|insurance|books,hard
+CON-006,Construction PM,efficiency,Reducing Project Delays,email,contractors|owners,N/A,N/A,Efficiency webinar,pm_software|scheduling_tools|training,medium
+CON-006,Construction PM,safety,Construction Site Safety,twitter,contractors|foremen,9:16,50,Safety training offer,safety_equipment|software|books,medium
+CON-002,Residential Construction,tips,Home Inspection Checklist,youtube,homebuyers,16:9,50,Request inspection,home_inspection_tools|guides,easy
+CON-002,Residential Construction,planning,New Home Construction Timeline,email,prospective_builders,N/A,N/A,Build timeline guide,construction_books|software,easy
+CON-002,Residential Construction,tips,Selecting Quality Materials,twitter,homeowners|builders,9:16,55,Material consultation,building_materials|samples,medium
+CON-003,Commercial Construction,planning,Commercial Build Cost Breakdown,youtube,commercial_clients,16:9,55,Commercial quote,construction_software|consulting,medium
+CON-003,Commercial Construction,tips,Code Compliance Essentials,email,contractors|architects,N/A,N/A,Compliance guide,construction_codes|software|consulting,hard
+CON-003,Commercial Construction,case_study,Office Space Construction,twitter,commercial_property_managers,9:16,50,View case studies,construction_software|materials,medium
+CON-004,Industrial Construction,tips,Industrial Safety Standards,youtube,industrial_managers,16:9,60,Safety consultation,safety_equipment|training|software,hard
+CON-004,Industrial Construction,planning,Heavy Equipment Usage,email,contractors|foremen,N/A,N/A,Equipment guide,equipment_rentals|manuals|software,medium
+CON-004,Industrial Construction,case_study,Factory Construction,twitter,industrial_clients,9:16,50,View portfolio,construction_software|materials,medium
+CON-005,Construction Equipment Rental,tips,Selecting Right Equipment,twitter,contractors|diy_enthusiasts,9:16,45,View rental catalog,equipment|safety_gear|manuals,easy
+CON-005,Construction Equipment Rental,pricing,Equipment Rental Cost Guide,youtube,contractors,16:9,50,Get rental quote,equipment|insurance|tools,easy
+CON-005,Construction Equipment Rental,educational,Equipment Maintenance Tips,email,contractors|equipment_managers,N/A,N/A,Maintenance guide,equipment|parts|software,medium
+CON-007,Green Building Services,tips,Sustainable Building Materials,youtube,eco_conscious_builders,16:9,55,Green audit,sustainable_materials|software|consulting,hard
+CON-007,Green Building Services,certification,LEED Certification Steps,email,architects|builders,N/A,N/A,Certification guide,leed_resources|consulting|software,hard
+CON-007,Green Building Services,benefits,Environmental Building Benefits,twitter,eco_conscious_clients,9:16,50,Consult sustainability expert,green_materials|tools|books,medium

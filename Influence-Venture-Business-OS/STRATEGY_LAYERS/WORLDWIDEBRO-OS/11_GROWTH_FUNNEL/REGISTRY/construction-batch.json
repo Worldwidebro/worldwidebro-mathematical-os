@@ -1,0 +1,31 @@
+{
+  "name": "construction-top-5",
+  "description": "First 5 construction ventures with moneyprinter-output folders",
+  "ventures": [
+    {
+      "venture_id": "2419bf07-b3f2-400f-a2c5-acab2bce597b",
+      "venture_code": "CON-002",
+      "venture_name": "CON-002 Permit Compliance Platform"
+    },
+    {
+      "venture_id": "2f0bd0aa-8800-4a7e-ae2d-8ce98c11e571",
+      "venture_code": "CON-003",
+      "venture_name": "CON-003 Contractor Network"
+    },
+    {
+      "venture_id": "1d84705c-8ebd-4c0c-83cf-cf383951b7bb",
+      "venture_code": "CON-004",
+      "venture_name": "CON-004 Building Supply Chain"
+    },
+    {
+      "venture_id": "3639fa60-a2aa-4c02-85e6-bb1b8a2f3910",
+      "venture_code": "CON-006",
+      "venture_name": "CON-006 Workforce Management"
+    },
+    {
+      "venture_id": "64df5998-36bb-4801-beb3-34088ab4bb3c",
+      "venture_code": "CON-008",
+      "venture_name": "CON-008 Site Inspection Tech"
+    }
+  ]
+}

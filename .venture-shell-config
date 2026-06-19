@@ -1,0 +1,40 @@
+#!/bin/bash
+# Venture Context Switching System
+# Add to ~/.zshrc: source /Users/acebless/Documents/.venture-shell-config
+
+export VENTURE_MAP="/Users/acebless/Documents/VENTURE-HANDLE-MAP.json"
+export VENTURE_CONTEXT_FILE="/Users/acebless/Documents/.venture-context"
+
+# Switch venture (updates git config + context)
+venture() {
+  [ -z "$1" ] && echo "Usage: venture EDU-006" && jq -r '.ventures[] | .id' "$VENTURE_MAP" | head -10 && return 1
+  
+  VENTURE_INFO=$(jq ".ventures[] | select(.id == \"$1\")" "$VENTURE_MAP")
+  [ -z "$VENTURE_INFO" ] && echo "❌ Venture not found: $1" && return 1
+  
+  ID=$1
+  HANDLE=$(echo "$VENTURE_INFO" | jq -r '.handle')
+  EMAIL=$(echo "$VENTURE_INFO" | jq -r '.email')
+  NAME=$(echo "$VENTURE_INFO" | jq -r '.name')
+  
+  cat > "$VENTURE_CONTEXT_FILE" << EOF
+CURRENT_VENTURE=$ID
+HANDLE=$HANDLE
+EMAIL=$EMAIL
+EOF
+  
+  if [ -d .git ]; then
+    git config user.name "$HANDLE"
+    git config user.email "$EMAIL"
+  fi
+  
+  echo "✅ $ID: $NAME"
+  source "$VENTURE_CONTEXT_FILE"
+}
+
+# Show current context
+vc() { cat "$VENTURE_CONTEXT_FILE"; }
+
+# List ventures
+vl() { jq -r '.ventures[] | "\(.id): \(.name)"' "$VENTURE_MAP"; }
+

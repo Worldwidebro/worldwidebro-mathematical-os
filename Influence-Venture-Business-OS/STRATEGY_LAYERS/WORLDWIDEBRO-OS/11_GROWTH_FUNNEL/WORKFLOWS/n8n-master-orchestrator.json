@@ -1,0 +1,65 @@
+{
+  "name": "Master Orchestrator (single entry)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": { "interval": [{ "field": "cronExpression", "expression": "0 8 * * *" }] }
+      },
+      "id": "cron-daily",
+      "name": "Daily 8AM Factory Run",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            { "name": "render", "value": "={{$json.render ?? '--render'}}", "type": "string" },
+            { "name": "mode", "value": "auto", "type": "string" }
+          ]
+        }
+      },
+      "id": "set-opts",
+      "name": "Set Options",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [460, 300]
+    },
+    {
+      "parameters": {
+        "command": "=python3 /Users/acebless/Documents/WORLDWIDEBRO-OS/11_GROWTH_FUNNEL/MASTER_ORCHESTRATOR.py run --auto {{ $json.render }}"
+      },
+      "id": "orchestrator",
+      "name": "MASTER_ORCHESTRATOR",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [680, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://127.0.0.1:8765/sync-supabase",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [{ "name": "X-Funnel-Secret", "value": "={{$env.N8N_WEBHOOK_SECRET}}" }]
+        }
+      },
+      "id": "sync",
+      "name": "Sync Supabase (optional)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [900, 300],
+      "notes": "Disable if Supabase not configured"
+    }
+  ],
+  "connections": {
+    "Daily 8AM Factory Run": { "main": [[{ "node": "Set Options", "type": "main", "index": 0 }]] },
+    "Set Options": { "main": [[{ "node": "MASTER_ORCHESTRATOR", "type": "main", "index": 0 }]] },
+    "MASTER_ORCHESTRATOR": { "main": [[{ "node": "Sync Supabase (optional)", "type": "main", "index": 0 }]] }
+  },
+  "settings": { "executionOrder": "v1", "timezone": "America/New_York" },
+  "meta": {
+    "description": "One cron replaces scattered weekly nodes. Uses round-robin venture + weekday stage mapping."
+  }
+}

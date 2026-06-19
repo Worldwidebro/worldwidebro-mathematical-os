@@ -1,0 +1,19 @@
+{
+  "deal": {
+    "id": "string",
+    "contact_id": "string",
+    "contact_name": "string",
+    "job_title": "string",
+    "job_description": "text",
+    "budget": "number",
+    "timeline": "enum[urgent|standard|flexible]",
+    "sector": "string",
+    "contractor_ids": "array[string]",
+    "referrer_id": "string",
+    "estimated_profit": "number",
+    "deal_score": "number",
+    "status": "enum[pending_contract|contract_sent|active|completed|disputed]",
+    "created_at": "timestamp",
+    "updated_at": "timestamp"
+  }
+}

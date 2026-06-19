@@ -1,0 +1,108 @@
+{
+  "system": {
+    "version": "1.0",
+    "created": "2026-06-11",
+    "purpose": "Central registry: venture ID → GitHub handle/email mapping",
+    "total_ventures": 712,
+    "documented": 10
+  },
+  "default": {
+    "handle": "@Worldwidebro",
+    "email": "winnerscirclewcllc@gmail.com"
+  },
+  "ventures": [
+    {
+      "id": "EDU-006",
+      "name": "Homeschooling Content AI",
+      "sector": "education",
+      "repo": "https://github.com/Worldwidebro/edu-006-homeschooling-content-ai",
+      "handle": "@Worldwidebro",
+      "email": "winnerscirclewcllc@gmail.com",
+      "owner": "You",
+      "status": "active",
+      "phase": "Phase 1 Testbed"
+    },
+    {
+      "id": "EDU-001",
+      "name": "Youth Entrepreneurship",
+      "sector": "education",
+      "repo": "https://github.com/Worldwidebro/edu-001-youth-entrepreneurship-curriculum",
+      "handle": "@Worldwidebro",
+      "email": "winnerscirclewcllc@gmail.com",
+      "status": "planned"
+    },
+    {
+      "id": "EDU-002",
+      "name": "AI Literacy Program",
+      "sector": "education",
+      "repo": "https://github.com/Worldwidebro/edu-002-ai-literacy-program",
+      "handle": "@Worldwidebro",
+      "email": "winnerscirclewcllc@gmail.com",
+      "status": "planned"
+    },
+    {
+      "id": "EDU-003",
+      "name": "Coding Mentor Certification",
+      "sector": "education",
+      "repo": "https://github.com/Worldwidebro/edu-003-coding-mentor-certification",
+      "handle": "@Worldwidebro",
+      "email": "winnerscirclewcllc@gmail.com",
+      "status": "planned"
+    },
+    {
+      "id": "EDU-005",
+      "name": "Coding Bootcamp",
+      "sector": "education",
+      "repo": "https://github.com/Worldwidebro/edu-005-coding-bootcamp",
+      "handle": "@Worldwidebro",
+      "email": "winnerscirclewcllc@gmail.com",
+      "status": "planned"
+    },
+    {
+      "id": "EDU-007",
+      "name": "AI Tutoring Platform",
+      "sector": "education",
+      "repo": "https://github.com/Worldwidebro/edu-007-ai-tutoring-platform",
+      "handle": "@Worldwidebro",
+      "email": "winnerscirclewcllc@gmail.com",
+      "status": "planned"
+    },
+    {
+      "id": "EDU-020",
+      "name": "Youth STEM Program",
+      "sector": "education",
+      "repo": "https://github.com/Worldwidebro/edu-020-youth-stem-program",
+      "handle": "@Worldwidebro",
+      "email": "winnerscirclewcllc@gmail.com",
+      "status": "planned"
+    },
+    {
+      "id": "EDU-039",
+      "name": "Emotional Intelligence AI",
+      "sector": "education",
+      "repo": "https://github.com/Worldwidebro/edu-039-emotional-intelligence-ai",
+      "handle": "@Worldwidebro",
+      "email": "winnerscirclewcllc@gmail.com",
+      "status": "planned"
+    },
+    {
+      "id": "EDU-040",
+      "name": "Time Management AI",
+      "sector": "education",
+      "repo": "https://github.com/Worldwidebro/edu-040-time-management-ai",
+      "handle": "@Worldwidebro",
+      "email": "winnerscirclewcllc@gmail.com",
+      "status": "planned"
+    },
+    {
+      "id": "HRMS-001",
+      "name": "Payroll SaaS",
+      "sector": "human-resources",
+      "repo": "https://github.com/Worldwidebro/hrms-001-payroll-saas",
+      "handle": "@Worldwidebro",
+      "email": "winnerscirclewcllc@gmail.com",
+      "owner": "You",
+      "status": "active"
+    }
+  ]
+}

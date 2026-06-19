@@ -1,0 +1,115 @@
+{
+  "candidate": {
+    "id": "anissa-valentin-001",
+    "name": "Anissa Valentin",
+    "location": "Charlotte, NC 28202",
+    "phone": "980-636-9191",
+    "email": "anissavalentin2000@gmail.com",
+    "experience_level": "entry_to_mid",
+    "willing_to_relocate": false,
+    "remote_open": true
+  },
+  "core_skills": [
+    "Patient Care & Support",
+    "Childcare & Nanny Services",
+    "Emotional Support & Compassion",
+    "Communication & Interpersonal",
+    "Time Management & Organization",
+    "Adaptability & Flexibility",
+    "Safety Awareness & Compliance",
+    "Conflict Resolution",
+    "Multitasking in Fast-Paced Environments",
+    "Customer Service",
+    "HIPAA Awareness",
+    "Patient Confidentiality"
+  ],
+  "experience_summary": {
+    "healthcare": {
+      "title": "Patient Care Assistant (PCA)",
+      "employer": "Women's Clinic, Charlotte, NC",
+      "duration_months": 4,
+      "end_date": "2026-03-31",
+      "key_activities": [
+        "Direct patient care during procedures",
+        "Patient preparation and post-care",
+        "Patient comfort monitoring",
+        "Clinical environment maintenance",
+        "HIPAA compliance"
+      ]
+    },
+    "childcare": {
+      "title": "Travel Nanny",
+      "duration_months": 36,
+      "end_date": "2025-10-31",
+      "key_activities": [
+        "Full-time childcare across multiple locations",
+        "Daily routines and activity planning",
+        "Safety and developmental support",
+        "Family relationship building",
+        "Travel logistics management"
+      ]
+    }
+  },
+  "ideal_job_titles": [
+    "Patient Care Assistant (PCA)",
+    "Medical Assistant",
+    "Healthcare Support Specialist",
+    "Clinic Assistant",
+    "Care Coordinator",
+    "Childcare Provider",
+    "Nanny",
+    "Family Services Assistant",
+    "Early Childhood Education Assistant",
+    "Home Health Aide",
+    "Administrative Healthcare Support"
+  ],
+  "target_industries": [
+    "Healthcare & Medical",
+    "Childcare & Education",
+    "Family Services",
+    "Mental Health Support",
+    "Elderly Care",
+    "Administrative Support"
+  ],
+  "salary_expectations": {
+    "minimum": 30000,
+    "expected": 35000,
+    "maximum": 45000,
+    "currency": "USD",
+    "annual": true
+  },
+  "job_preferences": {
+    "locations": [
+      "Charlotte, NC (preferred)",
+      "Remote",
+      "Surrounding NC areas"
+    ],
+    "job_type": [
+      "Full-time",
+      "Part-time",
+      "Flexible"
+    ],
+    "schedule_flexibility": true,
+    "travel_willing": false,
+    "shift_preference": "Any"
+  },
+  "matching_criteria": {
+    "must_have": [
+      "Remote OR Charlotte, NC location",
+      "Entry-level friendly",
+      "Growth opportunity"
+    ],
+    "nice_to_have": [
+      "Healthcare background preferred",
+      "Childcare experience valued",
+      "Flexible scheduling",
+      "Supportive work environment"
+    ],
+    "exclude": [
+      "Overnight shifts (unless necessary)",
+      "Excessive travel"
+    ]
+  },
+  "created_date": "2026-06-06T00:00:00Z",
+  "status": "active"
+}
