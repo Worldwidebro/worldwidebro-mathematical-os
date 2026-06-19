@@ -87,6 +87,44 @@ total_urls: 200+
 
 ---
 
+## LANE D: FACILITIES MANAGER (1,000+ jobs available)
+
+- [LinkedIn: 1,000+ Remote Facilities Manager](https://www.linkedin.com/jobs/remote-facilities-manager-jobs)
+- [LinkedIn: 58,000+ Facilities Manager](https://www.linkedin.com/jobs/facilities-manager-jobs)
+- [LinkedIn: 4,000+ Corporate Facilities Manager](https://www.linkedin.com/jobs/corporate-facilities-manager-jobs-greater-houston)
+- [LinkedIn: Facilities Manager San Francisco (882 jobs, 49 new)](https://www.linkedin.com/jobs/facilities-manager-jobs-san-francisco-ca)
+
+---
+
+## LANE F: INSURANCE / UNDERWRITING MANAGER (1,783+ jobs available)
+
+- [Indeed: 1,783+ Insurance Manager Remote](https://www.indeed.com/q-insurance-manager-l-remote-jobs.html)
+- [Indeed: 267+ Insurance Underwriting Remote](https://www.indeed.com/q-Insurance-Underwriting-l-Remote-jobs.html)
+- [Indeed: Remote Underwriting Manager](https://www.indeed.com/q-remote-underwriting-manager-jobs.html)
+- [Indeed: Underwriting Manager Remote](https://www.indeed.com/q-underwriting-manager-l-remote-jobs.html)
+
+---
+
+## LANE G: HR / RECRUITING MANAGER (1,000+ jobs available)
+
+- [Wellfound: Remote HR Manager](https://wellfound.com/role/r/hr-manager)
+- [Wellfound: Remote HR Recruiter](https://wellfound.com/role/r/hr-recruiter)
+- [LinkedIn: 1,000+ Remote Recruiting Manager](https://www.linkedin.com/jobs/remote-recruiting-manager-jobs)
+- [LinkedIn: 1,000+ Remote Recruiting Manager (Updated)](https://www.linkedin.com/jobs/remote-recruiting-manager-jobs?trk=jserp_directory)
+- [LinkedIn: 332+ Remote Talent Acquisition Manager](https://www.linkedin.com/jobs/remote-talent-acquisition-manager-jobs)
+
+---
+
+## LANE I: QUALITY / QA MANAGER (500+ jobs available)
+
+- [Remote OK: Remote QA Manager Timedoctor (~$94K)](https://remoteok.com/remote-jobs/84702-remote-qa-manager-timedoctor-com)
+- [Arc.dev: Remote Quality Assurance](https://arc.dev/remote-jobs/quality-assurance)
+- [Arc.dev: Remote QA Engineer](https://arc.dev/remote-jobs/qa)
+- [Remote OK: Remote Quality Assurance Manager Jobs](https://remoteok.com/remote-qa-manager-jobs)
+- [Remote OK: Executive + Quality Assurance Jobs](https://remoteok.com/remote-exec+quality-assurance+qa-jobs)
+
+---
+
 ## LANE K: PRODUCT MANAGER ⭐ HIGHEST PAY ($141K-$320K) (11,000+ jobs available)
 
 - [Wellfound: Remote Product Manager (Avg: $121K+)](https://wellfound.com/role/r/product-manager)
@@ -112,19 +150,58 @@ total_urls: 200+
 
 ---
 
-## 📊 JOB SUMMARY BY LANE
+## LANE L: SUPPLY CHAIN MANAGER (8,000+ jobs available)
+
+- [Wellfound: Supply Chain Management Startups](https://wellfound.com/startups/l/new-york/supply-chain-management)
+- [LinkedIn: Remote Supply Chain Manager Jobgether](https://www.linkedin.com/jobs/view/remote-supply-chain-manager-at-jobgether-4367162538)
+- [LinkedIn: 8,000+ Global Supply Chain Manager](https://www.linkedin.com/jobs/global-supply-chain-manager-jobs)
+- [LinkedIn: 1,000+ Supply Chain Business Manager](https://www.linkedin.com/jobs/supply-chain-business-manager-jobs)
+- [LinkedIn: 3,000+ Manager Supply Chain Management](https://www.linkedin.com/jobs/manager-supply-chain-management-jobs)
+- [Remote OK: Remote Supply Chain Manager at Ignite (£30K-£35K)](https://remoteok.com/remote-jobs/remote-supply-chain-manager-ignite-1133497)
+
+---
+
+## LANE M: L&D / TRAINING MANAGER (2,000+ jobs available)
+
+- [FlexJobs: Remote Learning and Development](https://www.flexjobs.com/remote-jobs/learning-and-development)
+- [LinkedIn: 2,000+ Remote Training Manager](https://www.linkedin.com/jobs/remote-training-manager-jobs)
+- [LinkedIn: 40,000+ Learning Manager](https://www.linkedin.com/jobs/learning-manager-jobs)
+- [LinkedIn: 20,000+ Operations Training Manager](https://www.linkedin.com/jobs/operations-training-manager-jobs)
+- [LinkedIn: 4,000+ Remote Elearning](https://www.linkedin.com/jobs/remote-elearning-jobs)
+
+---
+
+## LANE N: MANAGEMENT CONSULTANT (2,400+ jobs available)
+
+- [Toptal: Best Freelance Business Consultants](https://www.toptal.com/management-consultants/business-consultants)
+- [Wellfound: Remote Business Consultant](https://wellfound.com/role/r/business-consultant)
+- [Wellfound: Business Consultant Jobs](https://wellfound.com/role/business-consultant)
+- [Toptal: Management Consulting Services](https://www.toptal.com/services/management-consulting)
+- [Toptal: Freelance HR Consultants](https://www.toptal.com/management-consultants/human-resources)
+- [Toptal: Business Consulting Services](https://toptal.com/services/business-consulting)
+
+---
+
+## 📊 JOB SUMMARY BY LANE (ALL 15 LANES)
 
 | Lane | Role | Avg Pay | Jobs | Top Board |
 |------|------|---------|------|-----------|
 | A | Operations Manager | $103K | 5,000+ | LinkedIn |
 | B | Sales Manager | $112K | 2,000+ | Wellfound |
 | C | Finance Manager | $123K | 2,000+ | Wellfound |
+| D | Facilities Manager | $85K | 1,000+ | LinkedIn |
 | E | Implementation/Project Manager | $104K | 4,000+ | Arc.dev |
+| F | Insurance/Underwriting Manager | $85K-$115K | 1,783+ | Indeed |
+| G | HR/Recruiting Manager | $88K | 1,000+ | Wellfound |
 | H | Analytics/Data Manager | $93K-$160K | 2,000+ | Remote OK |
+| I | Quality/QA Manager | $94K | 500+ | Remote OK |
 | J | Marketing Manager | $100K | 2,000+ | Wellfound |
 | K | Product Manager | $141K-$320K | 11,000+ | ZipRecruiter |
+| L | Supply Chain Manager | $99K | 8,000+ | LinkedIn |
+| M | L&D/Training Manager | $85K | 2,000+ | LinkedIn |
+| N | Management Consultant | $130K | 2,400+ | Toptal |
 
-**Lanes D, F, G, I, L, M, N:** All have 1,000-3,000 jobs on LinkedIn, Indeed, and Wellfound (search those boards directly)
+**TOTAL ACROSS ALL LANES: 43,000+ job opportunities**
 
 ---
 
