@@ -119,207 +119,174 @@ verification_date: 2026-06-19
 
 ---
 
-## 📋 LANE F: INSURANCE / UNDERWRITING MANAGER ($85K-$115K, 1,783+ jobs)
+## 📋 LANE F: INSURANCE / UNDERWRITING MANAGER ($129K avg, 1,783+ LIVE JOBS)
 
-### Indeed
-1. **Underwriting Manager (National Average)**
-   - Salary: **$129,350/year**
-   - URL: https://www.indeed.com/q-insurance-manager-l-remote-jobs.html
+### ⭐ APPLY HERE: Indeed (1,783+ Insurance Manager Positions)
+- **Insurance Manager Remote (1,783+ jobs):** https://www.indeed.com/q-insurance-manager-l-remote-jobs.html
+- **Remote Insurance Underwriting (267+ jobs):** https://www.indeed.com/q-Insurance-Underwriting-l-Remote-jobs.html
+- **Remote Underwriting Manager:** https://www.indeed.com/q-remote-underwriting-manager-jobs.html
+- **Remote Underwriter Jobs:** https://www.indeed.com/q-remote-underwriter-jobs.html
+- **Remote Underwriter Houston, TX (Jun 18):** https://www.indeed.com/q-remote-underwriting-l-houston,-tx-jobs.html
+- **Remote Underwriter New York, NY (Jun 19):** https://www.indeed.com/q-remote-underwriter-l-new-york,-ny-jobs.html
+- **Remote Underwriter California (Jan 7):** https://www.indeed.com/q-remote-underwriter-l-california-jobs.html
+- **Entry Level Remote Underwriter (May 20):** https://www.indeed.com/q-remote-entry-level-underwriter-jobs.html
+- **Remote Underwriting Assistant (Jun 2):** https://www.indeed.com/q-underwriting-assistant-l-remote-jobs.html
 
-2. **Executive Underwriter**
-   - Salary: **$105,200–$172,300 + 30% bonus**
-   - URL: https://www.indeed.com/q-remote-underwriting-l-houston,-tx-jobs.html
+### ⭐ APPLY HERE: ZipRecruiter ($61K-$150K)
+- **Remote Insurance Underwriter ($61K-$118K):** https://www.ziprecruiter.com/Jobs/Remote-Insurance-Underwriter
+- **Remote Underwriter ($61K-$150K):** https://www.ziprecruiter.com/Jobs/Remote-Underwriter
 
-3. **Underwriting Manager (New York)**
-   - Salary: **$142,739/year** (higher market)
-   - URL: https://www.indeed.com/q-remote-underwriter-l-new-york,-ny-jobs.html
-
-### Search Pages
-- Indeed Insurance: https://www.indeed.com/q-insurance-underwriting-l-remote-jobs.html
-- Indeed Underwriting: https://www.indeed.com/q-remote-underwriter-jobs.html
-
----
-
-## 👥 LANE G: HR / RECRUITING MANAGER ($88K avg, 1,000+ jobs)
-
-### Wellfound (Startups)
-1. **Remote HR Manager (Startup)**
-   - Salary: Average $85,000–$106,000 (varies by location)
-   - URL: https://wellfound.com/role/r/hr-manager
-
-2. **Remote HR Recruiter (Startup)**
-   - Salary: Average $97,292
-   - Top markets: Cambridge ($150K), Seattle ($129K), LA ($125K)
-   - URL: https://wellfound.com/role/r/hr-recruiter
-
-3. **Recruiting Coordinator (Entry-Level)**
-   - URL: https://wellfound.com/role/r/recruiting-coordinator
-
-### LinkedIn
-4. **Remote Recruiting Manager (US)**
-   - Volume: 1,000+ positions
-   - URL: https://www.linkedin.com/jobs/remote-recruiting-manager-jobs
+### ⭐ APPLY HERE: Glassdoor
+- **Remote Insurance Underwriter (493 jobs, Jun 2026):** https://www.glassdoor.com/Job/remote-insurance-underwriter-jobs-SRCH_IL.0,6_IS11047_KO7,28.htm
 
 ---
 
-## 📊 LANE H: ANALYTICS / DATA MANAGER ($93K-$160K, 2,000+ jobs)
+## 👥 LANE G: HR / RECRUITING MANAGER ($88K avg, 1,000+ LIVE JOBS)
 
-### PayScale / LinkedIn Data
-1. **Analytics Manager (with Data Analysis Skills)**
-   - Salary: **$108,725** (base $77k–$135k)
-   - Bonus: $3k–$18k
-   - URL: https://www.linkedin.com/jobs/analytics-manager-jobs
+### ⭐ APPLY HERE: Wellfound (Startup Equity)
+- **Remote HR Manager (2026):** https://wellfound.com/role/r/hr-manager
+- **Remote HR Recruiter (2026):** https://wellfound.com/role/r/hr-recruiter
+- **Remote HR Business Partner:** https://wellfound.com/role/r/hr-business-partner
+- **Remote People Operations:** https://wellfound.com/role/r/people-operations
+- **Browse Remote Tech & Startup Jobs:** https://wellfound.com/browse/remote-tech-jobs
 
-2. **Entry-Level Analytics Manager (Data Analysis)**
-   - Salary: **$68,031** (base $48k–$98k)
-   - URL: https://www.linkedin.com/jobs/data-analyst-remote-jobs
-
-3. **Analytics Manager (with Data Management)**
-   - Salary: **$85,000** (base $55k–$119k)
-   - URL: https://www.linkedin.com/jobs/data-analytics-manager-jobs
-
-### Remote Analytics
-- Remote Data Analyst: 27,000+ jobs
-- Remote Data Analysis: 21,000+ jobs
-- URL: https://www.linkedin.com/jobs/remote-data-analyst-jobs
+### ⭐ APPLY HERE: LinkedIn (1,000+ Jobs)
+- **Remote Recruiting Manager (1,000+ jobs):** https://www.linkedin.com/jobs/remote-recruiting-manager-jobs
+- **Remote Talent Acquisition Manager (332+ jobs):** https://www.linkedin.com/jobs/remote-talent-acquisition-manager-jobs
 
 ---
 
-## ✅ LANE I: QUALITY / QA MANAGER ($94K avg, 500+ jobs)
+## 📊 LANE H: ANALYTICS / DATA MANAGER ($108K avg, 2,000+ LIVE JOBS)
 
-### Arc.dev
-1. **Remote QA Engineer / Manager**
-   - Hourly: **$75–$95/hour** (Eastern Europe / Latin America)
-   - Full-time varies by location and experience
-   - URL: https://arc.dev/remote-jobs/qa
+### ⭐ APPLY HERE: ZipRecruiter ($66K-$200K)
+- **Data Analytics Manager ($66K-$200K):** https://www.ziprecruiter.com/Jobs/Data-Analytics-Manager
+- **Remote Data Analyst ($62K-$190K):** https://www.ziprecruiter.com/Jobs/Remote-Data-Analyst
 
-2. **Remote Quality Assurance**
-   - URL: https://arc.dev/remote-jobs/quality-assurance
+### ⭐ APPLY HERE: LinkedIn (50,000+ Jobs!)
+- **Analytics Manager Jobs (21,000+ jobs):** https://www.linkedin.com/jobs/analytics-manager-jobs
+- **Data Analytics Manager (6,000+ jobs):** https://www.linkedin.com/jobs/data-analytics-manager-jobs
+- **Remote Data Analyst (27,000+ jobs):** https://www.linkedin.com/jobs/remote-data-analyst-jobs
+- **Data Analyst Remote (21,000+ jobs):** https://www.linkedin.com/jobs/data-analyst-remote-jobs
+- **Remote Data Analytics Dallas (489 jobs):** https://www.linkedin.com/jobs/remote-data-analytics-jobs-dallas-fort-worth-metroplex
+- **Remote Data Analysis Los Angeles (612 jobs):** https://www.linkedin.com/jobs/remote-data-analysis-jobs-los-angeles-ca
 
-### Search Pages
-- Remote OK QA Manager: https://remoteok.com/remote-qa-manager-jobs
-
----
-
-## 📢 LANE J: MARKETING MANAGER ($100K avg, 2,000+ jobs)
-
-### Wellfound (By Industry)
-1. **SaaS Marketing Manager**
-   - Salary: **$137,000** avg (range $62k–$238k)
-   - URL: https://wellfound.com/role/r/marketing-manager
-
-2. **B2B Marketing Manager**
-   - Salary: **$126,000** avg (range $30k–$240k)
-   - URL: https://wellfound.com/hiring-data/r/marketing-manager-2/i/b2b
-
-3. **Small/Medium Business Marketing Manager**
-   - Salary: **$118,000** avg (range $45k–$289k)
-   - URL: https://wellfound.com/hiring-data/r/marketing-manager-2/i/small-and-medium-businesses
-
-4. **Remote Product Marketing Manager**
-   - URL: https://wellfound.com/role/r/product-marketing-manager
-
-### Top-Paying Cities
-- Austin: **$191,000** avg
-- Boston: **$174,500** avg
-- Chicago: **$174,500** avg
+### ⭐ APPLY HERE: Indeed & Glassdoor
+- **Indeed Analytics Manager Remote:** https://www.indeed.com/q-analytics-manager-l-remote-jobs.html
+- **Glassdoor Remote Data & Analytics Manager (444 jobs, Apr 2026):** https://www.glassdoor.com/Job/remote-data-and-analytics-manager-jobs-SRCH_IL.0,6_IS11047_KO7,33.htm
 
 ---
 
-## 🎯 LANE K: PRODUCT MANAGER ⭐ HIGHEST PAY ($141K-$320K, 11,000+ jobs)
+## ✅ LANE I: QUALITY / QA MANAGER ($94K avg, 500+ LIVE JOBS)
 
-### ZipRecruiter (Highest Salaries)
-1. **Remote Product Manager (National)**
-   - Salary: **$141,000–$220,000**
-   - National Average: **$159,405**
-   - URL: https://www.ziprecruiter.com/Jobs/Remote-Product-Manager
+### ⭐ APPLY HERE: Arc.dev
+- **Remote QA Engineer (Jun 2026):** https://arc.dev/remote-jobs/qa
+- **Remote QA (Quality Assurance) - Freelance & Full-time:** https://arc.dev/remote-jobs/quality-assurance
+- **Hire Freelance QA Engineers:** https://arc.dev/hire-developers/qa
 
-2. **Remote Product Manager (Los Angeles)**
-   - Salary: **$151,000–$440,000+**
-   - Average: **$171,760**
-   - URL: https://www.ziprecruiter.com/Jobs/Remote-Product-Manager/-in-Los-Angeles,CA
-
-3. **Remote Product Manager (California)**
-   - Salary: **$139,000–$300,000**
-   - Average: **$157,317**
-   - URL: https://www.ziprecruiter.com/Jobs/Remote-Product-Manager/--in-California
-
-4. **Remote Senior Product Manager**
-   - Salary: **$126,000–$300,000+**
-   - URL: https://www.ziprecruiter.com/Jobs/Remote-Senior-Product-Manager
-
-### Wellfound (Startups)
-5. **Remote Product Manager (Startup)**
-   - URL: https://wellfound.com/role/r/product-manager
-
-### Search Pages
-- LinkedIn 11,000+ jobs: https://www.linkedin.com/jobs/remote-product-manager-jobs
-- Wellfound Startups: https://wellfound.com/role/r/product-manager
+### ⭐ APPLY HERE: Glassdoor & Career Builder
+- **QA Manager Remote (173 jobs, Apr 2026):** https://www.glassdoor.com/Job/remote-qa-manager-jobs-SRCH_IL.0,6_IS11047_KO7,17.htm
+- **Quality Assurance Manager - Software ($100K-$130K Remote, NY/TX):** https://www.careerbuilder.com/job-details/quality-assurance-qa-manager-software-schenectady-ny--bf0cf8f1-cc83-4c10-b571-782c9127fe21
 
 ---
 
-## 📦 LANE L: SUPPLY CHAIN MANAGER ($99K avg, 8,000+ jobs)
+## 📢 LANE J: MARKETING MANAGER ($100K avg, 2,000+ LIVE JOBS)
 
-### LinkedIn
-1. **Remote Supply Chain Manager (US)**
-   - Volume: 1,000+ positions
-   - URL: https://www.linkedin.com/jobs/remote-supply-chain-management-jobs
+### ⭐ APPLY HERE: Wellfound (Startup Equity, BY INDUSTRY)
+- **Remote Marketing Manager (2026):** https://wellfound.com/role/r/marketing-manager
+- **Remote Product Marketing Manager:** https://wellfound.com/role/r/product-marketing-manager
+- **Remote Marketing Operations:** https://wellfound.com/role/r/marketing-operations
+- **Remote Growth Marketer:** https://wellfound.com/role/r/growth-marketer
+- **Remote Digital Marketing:** https://wellfound.com/role/r/digital-marketing
+- **Remote Marketing Director:** https://wellfound.com/role/r/director-of-marketing
+- **30 Startups Hiring Remote Marketing:** https://wellfound.com/job-collections/remote-marketing-jobs
 
-2. **Remote Supply Chain Manager (New York)**
-   - Volume: 383 positions
-   - URL: https://www.linkedin.com/jobs/remote-supply-chain-management-jobs-new-york
-
-3. **Remote Supply Chain Manager (Los Angeles)**
-   - Volume: 116 positions
-   - URL: https://www.linkedin.com/jobs/remote-supply-chain-management-jobs-los-angeles-metropolitan-area
-
-### All Supply Chain Jobs
-- Total: 14,000+ positions nationwide
-- URL: https://www.linkedin.com/jobs/supply-chain-manager-jobs
+### ⭐ APPLY HERE: FlexJobs
+- **Remote Marketing Manager:** https://www.flexjobs.com/remote-jobs/marketing-manager
+- **Remote Product Marketing Manager:** https://www.flexjobs.com/remote-jobs/product-marketing-manager
 
 ---
 
-## 📚 LANE M: L&D / TRAINING MANAGER ($85K avg, 2,000+ jobs)
+## 🎯 LANE K: PRODUCT MANAGER ⭐ HIGHEST PAY ($159K avg, 11,000+ LIVE JOBS!)
 
-### LinkedIn / PayScale
-1. **Remote Training Manager (US)**
-   - Salary: **$86,961** avg (base $65k–$121k)
-   - Volume: 2,000+ positions
-   - URL: https://www.linkedin.com/jobs/remote-training-manager-jobs
+### ⭐ APPLY HERE: ZipRecruiter (HIGHEST SALARIES: $141K-$440K+)
+- **Remote Product Manager National ($141K-$220K):** https://www.ziprecruiter.com/Jobs/Remote-Product-Manager
+- **Remote Product Manager Los Angeles ($151K-$440K+):** https://www.ziprecruiter.com/Jobs/Remote-Product-Manager/-in-Los-Angeles,CA
+- **Remote Product Manager California ($139K-$300K):** https://www.ziprecruiter.com/Jobs/Remote-Product-Manager/--in-California
+- **Remote Senior Product Manager ($126K-$300K+):** https://www.ziprecruiter.com/Jobs/Remote-Senior-Product-Manager
 
-2. **Training Manager (with LMS Skills)**
-   - Salary: **$96,514** (experienced)
-   - URL: https://www.linkedin.com/jobs/learning-and-development-manager-jobs
+### ⭐ APPLY HERE: Wellfound (Startup Equity)
+- **Remote Product Manager (2026):** https://wellfound.com/role/r/product-manager
+- **Product Manager United States:** https://wellfound.com/role/l/product-manager/united-states
+- **Product Manager California:** https://wellfound.com/role/l/product-manager/california
+- **Product Manager Illinois:** https://wellfound.com/role/l/product-manager/illinois
+- **Remote Technical Product Manager:** https://wellfound.com/role/r/technical-product-manager
+- **17 Startups With Remote Product Manager Jobs:** https://wellfound.com/job-collections/remote-product-manager-jobs
 
-3. **Remote L&D Specialist**
-   - Volume: 657+ positions
-   - URL: https://www.linkedin.com/jobs/remote-learning-development-specialist-jobs
+### ⭐ APPLY HERE: LinkedIn & Indeed
+- **LinkedIn Remote Product Manager (11,000+ jobs):** https://www.linkedin.com/jobs/remote-product-manager-jobs
+- **Indeed Product Manager Remote $100K+:** https://www.indeed.com/q-product-manager-remote-$100,000-jobs.html
 
-### Broader Search
-- Learning & Development: 214,000+ jobs
-- Training & Development: 1,000+ remote jobs
-- URL: https://www.linkedin.com/jobs/learning-and-development-jobs
+**🔥 HIGHEST PAY LANE — 11,000 JOBS — MEDIAN $159,405/YEAR**
 
 ---
 
-## 🎓 LANE N: MANAGEMENT CONSULTANT ($130K avg, 2,400+ jobs)
+## 📦 LANE L: SUPPLY CHAIN MANAGER ($99K avg, 8,000+ LIVE JOBS)
 
-### Wellfound (Startups)
-1. **Remote Business Consultant**
-   - Average: **$92,000** (varies 40k–162k)
-   - URL: https://wellfound.com/role/r/business-consultant
+### ⭐ APPLY HERE: ZipRecruiter ($80K-$279K)
+- **Remote Supply Chain Management ($80K-$279K):** https://www.ziprecruiter.com/Jobs/Remote-Supply-Chain-Management
 
-2. **Remote IT Consultant**
-   - URL: https://wellfound.com/role/r/it-consultant
+### ⭐ APPLY HERE: LinkedIn (1,000+ Remote)
+- **Remote Supply Chain Management (1,000+ US jobs):** https://www.linkedin.com/jobs/remote-supply-chain-management-jobs
+- **Supply Chain Manager (14,000+ total jobs):** https://www.linkedin.com/jobs/supply-chain-manager-jobs
+- **Remote Supply Chain New York (383 jobs):** https://www.linkedin.com/jobs/remote-supply-chain-management-jobs-new-york
+- **Remote Supply Chain Los Angeles (116 jobs):** https://www.linkedin.com/jobs/remote-supply-chain-management-jobs-los-angeles-metropolitan-area
+- **Remote Supply Chain San Francisco (48 jobs):** https://www.linkedin.com/jobs/remote-supply-chain-management-jobs-san-francisco-ca
+- **Remote Supply Chain Seattle (36 jobs):** https://www.linkedin.com/jobs/remote-supply-chain-management-jobs-seattle-wa
+- **Remote Supply Chain Atlanta (99 jobs):** https://www.linkedin.com/jobs/remote-supply-chain-management-jobs-atlanta-metropolitan-area
+- **Remote Supply Chain Houston (39 jobs):** https://www.linkedin.com/jobs/remote-supply-chain-management-jobs-greater-houston
 
-### Indeed
-3. **Management Consultant (Remote)**
-   - URL: https://www.indeed.com/q-management-consultant-l-remote-jobs.html
+### ⭐ APPLY HERE: Indeed & Glassdoor
+- **Indeed Supply Chain Manager Remote:** https://www.indeed.com/q-supply-chain-manager-l-remote-jobs.html
+- **Glassdoor Remote Supply Chain Manager (563 jobs, Feb 2026):** https://www.glassdoor.com/Job/remote-supply-chain-manager-jobs-SRCH_IL.0,6_IS11047_KO7,27.htm
+- **Glassdoor Remote Supply Chain Jobs (1,757 jobs, Jun 2026):** https://www.glassdoor.com/Job/remote-supply-chain-jobs-SRCH_IL.0,6_IS11047_KO7,19.htm
 
-### Freelance/Boutique
-4. **Toptal Management Consultants**
-   - Pre-vetted professional consultants
-   - URL: https://www.toptal.com/management-consultants/business-consultants
+---
+
+## 📚 LANE M: L&D / TRAINING MANAGER ($86K avg, 2,000+ LIVE JOBS)
+
+### ⭐ APPLY HERE: Indeed
+- **Remote Learning Development Manager (Mar 29, 2026):** https://www.indeed.com/q-remote-learning-development-manager-jobs.html
+- **Remote Learning Development (May 26, 2026):** https://www.indeed.com/q-learning-development-l-remote-jobs.html
+
+### ⭐ APPLY HERE: LinkedIn (2,000+ Remote)
+- **Remote Training Manager (2,000+ jobs):** https://www.linkedin.com/jobs/remote-training-manager-jobs
+- **Learning & Development Manager (10,000+ jobs):** https://www.linkedin.com/jobs/learning-and-development-manager-jobs
+- **Learning & Development (214,000+ jobs total):** https://www.linkedin.com/jobs/learning-and-development-jobs
+- **Remote L&D Specialist (657 jobs):** https://www.linkedin.com/jobs/remote-learning-development-specialist-jobs
+- **Remote Training & Development (1,000+ jobs):** https://www.linkedin.com/jobs/remote-training-and-development-jobs-jobs
+
+### ⭐ APPLY HERE: Other Boards
+- **Glassdoor Remote L&D Manager (140 jobs, Apr 2026):** https://www.glassdoor.com/Job/remote-learning-and-development-manager-jobs-SRCH_IL.0,6_IS11047_KO7,39.htm
+- **ZipPia Remote L&D Manager (Jan 2026):** https://www.zippia.com/manager-learning-development-jobs/remote-jobs/
+- **Robert Half Learning & Development Manager:** https://www.roberthalf.com/us/en/jobs/all/learning-and-development-manager
+- **JobGether Remote L&D Manager:** https://jobgether.com/remote-jobs/learning-development-l-d-manager
+
+---
+
+## 🎓 LANE N: MANAGEMENT CONSULTANT ($92K avg, 2,400+ LIVE JOBS)
+
+### ⭐ APPLY HERE: Wellfound (Startup Consulting)
+- **Remote Business Consultant (2026):** https://wellfound.com/role/r/business-consultant
+- **Remote IT Consultant:** https://wellfound.com/role/r/it-consultant
+- **Remote Marketing Consultant:** https://wellfound.com/role/r/marketing-consultant
+- **Remote Cloud Consultant:** https://wellfound.com/role/r/cloud-consultant
+- **Management Consulting Startups:** https://wellfound.com/startups/industry/management-consulting-1
+
+### ⭐ APPLY HERE: Toptal (Pre-Vetted Freelance)
+- **11 Best Freelance Business Consultants (Jun 2026):** https://www.toptal.com/management-consultants/business-consultants
+
+### ⭐ APPLY HERE: Indeed
+- **Management Consultant Remote:** https://www.indeed.com/q-management-consultant-l-remote-jobs.html
 
 ---
 
