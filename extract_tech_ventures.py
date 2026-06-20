@@ -79,7 +79,7 @@ def extract_venture_metadata(md_file):
 
 def main():
     """Extract all TECH venture metadata and create CSV."""
-    generated_books_dir = Path('/Users/acebless/Documents/venture-hub/generated-books')
+    generated_books_dir = Path('/Users/acebless/Documents/WORLDWIDEBRO-OS/08-DATA/venture-hub/generated-books')
 
     # Find all TECH venture book files
     venture_files = sorted(generated_books_dir.glob('TECH-*/TECH-*_venture-book_*.md'))

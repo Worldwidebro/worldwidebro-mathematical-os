@@ -247,7 +247,7 @@ def main():
 
     # Load registry
     print("📥 Loading repository registry...")
-    with open('Influence-Venture-Business-OS/REFERENCE/REPOSITORY-REGISTRY.json', 'r') as f:
+    with open('WORLDWIDEBRO-OS/08-DATA/Influence-Venture-Business-OS/REFERENCE/REPOSITORY-REGISTRY.json', 'r') as f:
         registry = json.load(f)
 
     # Extract unclassified
@@ -295,7 +295,7 @@ def main():
     }
 
     # Save updated registry
-    with open('Influence-Venture-Business-OS/REFERENCE/REPOSITORY-REGISTRY.json', 'w') as f:
+    with open('WORLDWIDEBRO-OS/08-DATA/Influence-Venture-Business-OS/REFERENCE/REPOSITORY-REGISTRY.json', 'w') as f:
         json.dump(new_registry, f, indent=2)
 
     print(f"✅ Updated REPOSITORY-REGISTRY.json with {len(new_repositories)} repos")

@@ -21,7 +21,7 @@ def main():
 
     ventures = []
     try:
-        with open('/Users/acebless/Documents/Influence-Venture-Business-OS/INFRASTRUCTURE_LAYERS/venture-hub/ventures-master.csv', 'r') as f:
+        with open('/Users/acebless/Documents/WORLDWIDEBRO-OS/08-DATA/Influence-Venture-Business-OS/INFRASTRUCTURE_LAYERS/venture-hub/ventures-master.csv', 'r') as f:
             ventures = list(csv.DictReader(f))
     except:
         pass

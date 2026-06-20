@@ -45,7 +45,8 @@
       "mcp__docker__image_list",
       "mcp__docker__image_pull",
       "mcp__docker__compose_up",
-      "mcp__docker__compose_down"
+      "mcp__docker__compose_down",
+      "WebSearch"
     ]
   },
   "enabledMcpjsonServers": [

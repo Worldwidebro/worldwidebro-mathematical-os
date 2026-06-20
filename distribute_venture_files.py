@@ -173,7 +173,7 @@ LOCATION:
   {venture_hub}
   
 STRUCTURE:
-  venture-hub/
+  WORLDWIDEBRO-OS/08-DATA/venture-hub/
     ├─ CON-001/
     │   ├─ documents/  (*.md, *.pdf, etc)
     │   ├─ scripts/    (*.py, *.sh, etc)

@@ -22,7 +22,7 @@ def query_ventures():
     import csv
     ventures = []
     try:
-        with open('/Users/acebless/Documents/Influence-Venture-Business-OS/INFRASTRUCTURE_LAYERS/venture-hub/ventures-master.csv', 'r') as f:
+        with open('/Users/acebless/Documents/WORLDWIDEBRO-OS/08-DATA/Influence-Venture-Business-OS/INFRASTRUCTURE_LAYERS/venture-hub/ventures-master.csv', 'r') as f:
             reader = csv.DictReader(f)
             ventures = list(reader)
         print(f"✅ Loaded {len(ventures)} ventures from CSV")

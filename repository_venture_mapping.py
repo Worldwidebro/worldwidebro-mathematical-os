@@ -36,7 +36,7 @@ def load_ventures():
     """Load 773 ventures from ventures-master.csv"""
     ventures = []
     try:
-        with open('/Users/acebless/Documents/venture-hub/ventures-master.csv', 'r') as f:
+        with open('/Users/acebless/Documents/WORLDWIDEBRO-OS/08-DATA/venture-hub/ventures-master.csv', 'r') as f:
             reader = csv.DictReader(f)
             ventures = list(reader)
     except Exception as e:

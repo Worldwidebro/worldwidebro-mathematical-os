@@ -30,7 +30,7 @@ async def load_ventures():
     ventures = []
 
     # Load main venture-hub CSV (712 ventures)
-    ventures_file = "/Users/acebless/Documents/venture-hub/ventures-master.csv"
+    ventures_file = "/Users/acebless/Documents/WORLDWIDEBRO-OS/08-DATA/venture-hub/ventures-master.csv"
     print(f"📊 Loading ventures from {ventures_file}")
 
     with open(ventures_file, 'r', encoding='utf-8') as f:

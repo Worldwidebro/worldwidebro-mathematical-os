@@ -135,7 +135,7 @@ def main():
     print("PHASE 3: REGISTRY GENERATION")
     print("-" * 80)
 
-    registry_path = '/Users/acebless/Documents/Influence-Venture-Business-OS/REFERENCE/REPOSITORY-REGISTRY.json'
+    registry_path = '/Users/acebless/Documents/WORLDWIDEBRO-OS/08-DATA/Influence-Venture-Business-OS/REFERENCE/REPOSITORY-REGISTRY.json'
 
     registry = {
         'metadata': {
