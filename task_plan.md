@@ -29,8 +29,19 @@ consolidate duplicates, retire the husks, build the registry layer as source of 
 | 2 | Full migration map in findings.md | DONE |
 | 3 | Move loose md (242->7) + fold 22 doc-roots | DONE |
 | 4 | Relocate 49 venture/tech/agent repos + 23 infra/ops folders | DONE (root 108->16) |
-| 5 | Backbone (venture-hub, Influence-VBO, Obsidian, scripts) | DECISION PENDING — 28+ live refs |
-| 6 | Build 08-DATA registries + indexes; git commit | pending |
+| 5 | Backbone relocated + 49 files ref-rewritten | DONE (commit de615a3) |
+| 6 | Git commits (fe8d949, de615a3) + backup tag | DONE |
+| 7 | BLOCKED: pause background automations recreating old root paths | NEEDS USER |
+
+## BLOCKER (2026-06-19 ~20:20)
+Active automations recreate moved folders at OLD root paths faster than moves land:
+- crontab `*/15 git_auto_sync.sh` (Civilization OS) — auto-commits+pulls, RESTORES moved
+  tracked files to root. Proven: commits 68fca77, b492adc appeared mid-session (not mine).
+- crontab `*/5 monitor-xyops.sh`, `0 6 obsidian-daily-sync.py` (points at OLD
+  WORLDWIDEBRO-OS/07_AUTOMATIONS underscore path)
+- launchd: com.izaos.daily-triage / weekly-connections / weekly-rag-ingest
+ACTION NEEDED: user pauses these (`crontab -e` comment out; `launchctl unload ~/Library/
+LaunchAgents/com.izaos.*`), THEN final root cleanup sticks. Do NOT disable without user OK.
 
 ## Backbone blast radius (measured)
 - venture-hub: 9 CLAUDE.md refs + 12 root .py scripts (run-from-root, relative paths)

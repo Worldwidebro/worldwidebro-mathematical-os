@@ -15,21 +15,30 @@
 ---
 
 ## TRACK A: Construction Ventures (30 days)
-- CON-011 through CON-007 deployment
-- 7 ventures × $5K = $35K capital
-- **Est. revenue Month 1:** $15-25K
+- CON-011 through CON-007 deployment with **CON OS** backend automation
+- 7 ventures × ($5K + $2K setup) = $49K capital  
+- **Est. revenue Month 1:** $15-25K (passive: $5K/venture × 3-5 ventures)
 
-| Venture | Deploy | Hours | Team |
-|---------|--------|-------|------|
-| CON-011 | Jun 16 | 16 | You/Contractor |
-| CON-012 | Jun 23 | 16 | Contractor |
-| CON-009 | Jun 30 | 16 | Contractor |
-| CON-010 | Jun 30 | 16 | Contractor |
-| CON-006 | Jul 7 | 16 | Contractor |
-| CON-001 | Jul 7 | 16 | Contractor |
-| CON-002 | Jul 14 | 16 | Contractor |
+### ⚙️ CON OS Implementation (One-Time Setup: 3.5 hrs)
+**Reference:** `con-os-functions.py` + `CON-OS-ZAPIER-MAPPING.md` (created Jun 18)
+- Build 5 Zapier zaps: 2.5 hours
+- Domain config (email, Stripe, Slack): 55 minutes
+- End-to-end test: 1 hour
+- **First venture:** 4.5 hours | **Each subsequent:** 1.5 hours (template reuse)
 
-**Total: 112 hours (2-3 contractors for parallel)**
+### Deployment Timeline (Using CON OS Template)
+| Venture | Deploy | Hours | Team | Notes |
+|---------|--------|-------|------|-------|
+| CON-011 Electrical | Jun 19 | 4.5 | You | Pilot (includes CON OS setup) |
+| CON-009 Roofing | Jun 20 | 1.5 | Contractor | Reuse CON OS |
+| CON-012 HVAC | Jun 21 | 1.5 | Contractor | Reuse CON OS |
+| CON-010 Plumbing | Jun 22 | 1.5 | Contractor | Reuse CON OS |
+| CON-006 Green | Jun 24 | 1.5 | Contractor | Reuse CON OS |
+| CON-001 ACE | Jun 25 | 1.5 | Contractor | Reuse CON OS |
+| CON-002 Residential | Jun 26 | 1.5 | Contractor | Reuse CON OS |
+
+**Total: 13.5 hours (vs. 112 hours without template)**
+**Efficiency gain: 98.5 hours saved = $4,925 at $50/hr**
 
 ---
 
