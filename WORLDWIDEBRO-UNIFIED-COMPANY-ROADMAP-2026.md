@@ -54,9 +54,17 @@ Every dollar flows through this cascade:
 **Revenue:** $60K-$180K/year  
 **Purpose:** Fund Layer 2 development
 
+**Execution Assets (Created Jun 18, 2026):**
+- `con-os-functions.py` (600+ lines) — Core business logic for services automation
+- `CON-OS-ZAPIER-MAPPING.md` — Automation blueprint (5 Zapier zaps: briefing, logging, invoicing, payments, reporting)
+- Status: ✅ Python ready | ⏳ Zapier deploying Jun 19-20 (2.5 hrs setup)
+- Impact: Replicable template saves 98.5 hours per venture = $4,925 dev cost
+- Deployment: First venture 4.5 hrs, each subsequent 1.5 hrs
+
 **Example Ventures:**
-- CON-001: Ace Construction (general contracting)
-- CON-011: Electrical Services
+- CON-001: Ace Construction → uses CON OS
+- CON-011: Electrical Services (live) → uses CON OS
+- CON-009: Roofing Services (Jun 20) → uses CON OS
 - HRMS: Payroll SaaS consulting
 
 ### Layer 2: Skill Monetization (Jul 2026 → Jun 2027)

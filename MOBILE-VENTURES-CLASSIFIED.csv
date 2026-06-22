@@ -1,0 +1,183 @@
+venture_id,name,sector,mobile_archetype,confidence,tech_stack,top_competitors,ai_features,candidates
+dd78dc7f,QuantumLedger,fintech,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,fintech_wealth
+fbf1cfaf,CogniFlow,ai,saas_tool,50.0%,"React Native, Flutter","Asana, Monday",AI task automation | Smart scheduling | Auto-summarization,"saas_tool,content_community"
+4f3bc116,SkillForge,edtech,content_community,30.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+484ac493,VitalSense,health,health_wellness,60.0%,"React Native, Flutter","Fitbit, Strava",Personalized workout plans | Health predictions (ML) | Smart coaching (AI),"health_wellness,b2b_enterprise"
+a4edc8b5,Tax Intelligence Platform,fintech,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,"content_community,fintech_wealth"
+a816b258,Credit Repair Automation,fintech,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,fintech_wealth
+c3420a69,Ai Boss Hub Lite,fintech,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,fintech_wealth
+8d5aaff7,Genixbanks Ai Treasurer,fintech,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,fintech_wealth
+6864b44d,U Haul Rental Affiliate,fintech,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,fintech_wealth
+da7741e1,Business Credit Building,fintech,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,fintech_wealth
+37827f2a,Business Formation Services,fintech,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,"marketplace,fintech_wealth"
+a12d6916,Crypto Tax Optimizer,fintech,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,fintech_wealth
+f2271f17,Ai Powered Garbage Collection,fintech,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,fintech_wealth
+db540a0b,Automated Bookkeeping,fintech,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,fintech_wealth
+2456b3b6,Invoice Factoring Ai,fintech,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,fintech_wealth
+994cd260,Charity Donation Ai,fintech,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,fintech_wealth
+a2192e41,Expense Tracker Ai,fintech,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,fintech_wealth
+01f74934,Trade Finance Ai,fintech,fintech_wealth,90.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,fintech_wealth
+d0ac1d6c,Remittance Ai,fintech,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,fintech_wealth
+af84081d,Wealth Transfer Ai,fintech,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,fintech_wealth
+6364ddf9,Payment Gateway Ai,fintech,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,"marketplace,fintech_wealth"
+54e48239,Debt Consolidation Ai,fintech,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,fintech_wealth
+987c8140,Tax Deduction Finder,fintech,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,fintech_wealth
+55c975e3,Budget Forecasting Ai,fintech,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,fintech_wealth
+30a407a5,Investment Portfolio Ai,fintech,fintech_wealth,90.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,fintech_wealth
+e43ada0c,Business Template Marketplace,market,marketplace,50.0%,"React Native, Flutter","TaskRabbit, Handy",Predictive matching (ML) | Dynamic pricing (AI) | Fraud detection (ML),marketplace
+963b382c,Credit Repair Automation,fintech,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,fintech_wealth
+bdf2e0fb,Ai Boss Hub Lite,fintech,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,fintech_wealth
+31814643,U Haul Rental Affiliate,fintech,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,fintech_wealth
+3ca65cde,Tax Prep Filing Services,fintech,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,"marketplace,fintech_wealth"
+146ed62c,Business Credit Building,fintech,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,fintech_wealth
+e8306358,Business Formation Services,fintech,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,"marketplace,fintech_wealth"
+762cb3e5,Crypto Tax Optimizer,fintech,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,fintech_wealth
+48078344,Ai Powered Garbage Collection,fintech,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,fintech_wealth
+6a871b02,Automated Bookkeeping,fintech,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,fintech_wealth
+dccea2da,Invoice Factoring Ai,fintech,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,fintech_wealth
+2d717fcc,Expense Tracker Ai,fintech,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,fintech_wealth
+e0e532a2,Financial Wellness Coach,fintech,health_wellness,60.0%,"React Native, Flutter","Fitbit, Strava",Personalized workout plans | Health predictions (ML) | Smart coaching (AI),"health_wellness,fintech_wealth"
+7e0ee192,Trade Finance Ai,fintech,fintech_wealth,90.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,fintech_wealth
+60598b62,Remittance Ai,fintech,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,fintech_wealth
+6ecd4ac6,Wealth Transfer Ai,fintech,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,fintech_wealth
+2b8ec933,Payment Gateway Ai,fintech,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,"marketplace,fintech_wealth"
+bb1e8456,Crowdfunding Ai,fintech,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,fintech_wealth
+2c7f67bd,Escrow Automation,fintech,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,fintech_wealth
+b6823f63,Chatbot Customer Service,market,marketplace,50.0%,"React Native, Flutter","TaskRabbit, Handy",Predictive matching (ML) | Dynamic pricing (AI) | Fraud detection (ML),marketplace
+44eacc62,Ugc Content Aggregator,market,content_community,50.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+6e163a71,Live Commerce Platform,market,content_community,30.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+135a93dd,Ai Warehouse Management,market,saas_tool,50.0%,"React Native, Flutter","Asana, Monday",AI task automation | Smart scheduling | Auto-summarization,saas_tool
+f0069c8b,Ai Supplier Matching,market,marketplace,30.0%,"React Native, Flutter","TaskRabbit, Handy",Predictive matching (ML) | Dynamic pricing (AI) | Fraud detection (ML),marketplace
+84c1bc81,Community Wellness Ai,market,health_wellness,60.0%,"React Native, Flutter","Fitbit, Strava",Personalized workout plans | Health predictions (ML) | Smart coaching (AI),"content_community,health_wellness"
+b1fa7bc1,Ugc Content Aggregator,market,content_community,50.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+0ade2bf0,Live Commerce Platform,market,content_community,30.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+27843a05,Content Studio Ai,devtools,content_community,50.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+3a5d86be,Workflow Automation,devtools,saas_tool,50.0%,"React Native, Flutter","Asana, Monday",AI task automation | Smart scheduling | Auto-summarization,saas_tool
+5dd71714,Ai Testing Platform,devtools,content_community,30.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+e7db8a0f,Predictive Analytics Ai,devtools,b2b_enterprise,50.0%,"React Native, Flutter","Salesforce, HubSpot",Sales forecasting | Lead scoring (ML) | Auto-response (AI),b2b_enterprise
+c7e0bd76,Ai Training Platform,devtools,content_community,30.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+e6ccb583,Rental Marketplace,market,marketplace,50.0%,"React Native, Flutter","TaskRabbit, Handy",Predictive matching (ML) | Dynamic pricing (AI) | Fraud detection (ML),marketplace
+0c242bc0,Project Management Ai,infra,saas_tool,50.0%,"React Native, Flutter","Asana, Monday",AI task automation | Smart scheduling | Auto-summarization,saas_tool
+5c08d1ff,Training Platform Ai,infra,content_community,30.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+fe66b03d,It Support Ai,infra,b2b_enterprise,50.0%,"React Native, Flutter","Salesforce, HubSpot",Sales forecasting | Lead scoring (ML) | Auto-response (AI),b2b_enterprise
+a5d1b865,Facilities Management Ai,infra,saas_tool,50.0%,"React Native, Flutter","Asana, Monday",AI task automation | Smart scheduling | Auto-summarization,saas_tool
+774b5bed,Travel Booking Ai,infra,marketplace,50.0%,"React Native, Flutter","TaskRabbit, Handy",Predictive matching (ML) | Dynamic pricing (AI) | Fraud detection (ML),marketplace
+9f124150,Contract Management Ai,infra,saas_tool,50.0%,"React Native, Flutter","Asana, Monday",AI task automation | Smart scheduling | Auto-summarization,saas_tool
+0560c36b,Asset Management Ai,infra,saas_tool,50.0%,"React Native, Flutter","Asana, Monday",AI task automation | Smart scheduling | Auto-summarization,saas_tool
+6d13bcce,Knowledge Management Ai,infra,saas_tool,50.0%,"React Native, Flutter","Asana, Monday",AI task automation | Smart scheduling | Auto-summarization,saas_tool
+910045da,Task Automation Ai,infra,marketplace,50.0%,"React Native, Flutter","TaskRabbit, Handy",Predictive matching (ML) | Dynamic pricing (AI) | Fraud detection (ML),marketplace
+76168880,Ai Warehouse Management,market,saas_tool,50.0%,"React Native, Flutter","Asana, Monday",AI task automation | Smart scheduling | Auto-summarization,saas_tool
+8d079de0,Ai Supplier Matching,market,marketplace,30.0%,"React Native, Flutter","TaskRabbit, Handy",Predictive matching (ML) | Dynamic pricing (AI) | Fraud detection (ML),marketplace
+222e6e87,Health Safety Ai,infra,health_wellness,60.0%,"React Native, Flutter","Fitbit, Strava",Personalized workout plans | Health predictions (ML) | Smart coaching (AI),health_wellness
+c1d528d4,It Asset Management,infra,saas_tool,50.0%,"React Native, Flutter","Asana, Monday",AI task automation | Smart scheduling | Auto-summarization,saas_tool
+de6c1ef8,Cloud Cost Management,infra,saas_tool,50.0%,"React Native, Flutter","Asana, Monday",AI task automation | Smart scheduling | Auto-summarization,saas_tool
+cd364a11,Task Prioritization Ai,infra,marketplace,50.0%,"React Native, Flutter","TaskRabbit, Handy",Predictive matching (ML) | Dynamic pricing (AI) | Fraud detection (ML),marketplace
+39bb131f,Time Management Ai,infra,saas_tool,50.0%,"React Native, Flutter","Asana, Monday",AI task automation | Smart scheduling | Auto-summarization,saas_tool
+36ee7c26,Analytics Platform Ai,infra,b2b_enterprise,50.0%,"React Native, Flutter","Salesforce, HubSpot",Sales forecasting | Lead scoring (ML) | Auto-response (AI),"content_community,b2b_enterprise"
+5edf415f,Public Fitness Ai,market,health_wellness,60.0%,"React Native, Flutter","Fitbit, Strava",Personalized workout plans | Health predictions (ML) | Smart coaching (AI),health_wellness
+18473bcf,Homeschooling Content Ai,edtech,content_community,50.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+70623f59,Ai Tutoring Platform,edtech,content_community,30.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+5469f98f,Ai Payment Optimization,market,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,"marketplace,fintech_wealth"
+18f6048f,Environmental Education Ai,edtech,health_wellness,60.0%,"React Native, Flutter","Fitbit, Strava",Personalized workout plans | Health predictions (ML) | Smart coaching (AI),health_wellness
+63684a0a,Social Studies Ai,edtech,content_community,50.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+f9cf7ded,Ai Customer Feedback,market,content_community,50.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+465f5a33,Community Cultural Ai,market,content_community,50.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+f362e4a1,Wearables Ai,ai,health_wellness,60.0%,"React Native, Flutter","Fitbit, Strava",Personalized workout plans | Health predictions (ML) | Smart coaching (AI),health_wellness
+cdb90c3f,Crypto Trading Ai,ai,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,fintech_wealth
+0955b8a2,Vr Therapy Ai,ai,health_wellness,60.0%,"React Native, Flutter","Fitbit, Strava",Personalized workout plans | Health predictions (ML) | Smart coaching (AI),health_wellness
+183352d5,Ai Customer Support,market,b2b_enterprise,50.0%,"React Native, Flutter","Salesforce, HubSpot",Sales forecasting | Lead scoring (ML) | Auto-response (AI),b2b_enterprise
+31c6fede,Ai Order Tracking,market,health_wellness,60.0%,"React Native, Flutter","Fitbit, Strava",Personalized workout plans | Health predictions (ML) | Smart coaching (AI),health_wellness
+af7e5551,Ai Environmental Monitoring,ai,health_wellness,60.0%,"React Native, Flutter","Fitbit, Strava",Personalized workout plans | Health predictions (ML) | Smart coaching (AI),health_wellness
+ede0bdfb,Cloud Management Ai,devtools,saas_tool,50.0%,"React Native, Flutter","Asana, Monday",AI task automation | Smart scheduling | Auto-summarization,saas_tool
+d93dd5eb,Content Studio Ai,devtools,content_community,50.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+c60f76e3,Workflow Automation,devtools,saas_tool,50.0%,"React Native, Flutter","Asana, Monday",AI task automation | Smart scheduling | Auto-summarization,saas_tool
+785ecd3a,Video Editor Ai,devtools,content_community,50.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+fa284812,Ai Testing Platform,devtools,content_community,30.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+a4ee6bdf,Predictive Analytics Ai,devtools,b2b_enterprise,50.0%,"React Native, Flutter","Salesforce, HubSpot",Sales forecasting | Lead scoring (ML) | Auto-response (AI),b2b_enterprise
+8403d2c5,Ai Training Platform,devtools,content_community,30.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+ad144268,Cloud Management Ai,devtools,saas_tool,50.0%,"React Native, Flutter","Asana, Monday",AI task automation | Smart scheduling | Auto-summarization,saas_tool
+0d31cc43,Content Studio Ai,devtools,content_community,50.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+dc041a65,Workflow Automation,devtools,saas_tool,50.0%,"React Native, Flutter","Asana, Monday",AI task automation | Smart scheduling | Auto-summarization,saas_tool
+51c2c031,Video Editor Ai,devtools,content_community,50.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+f056380a,Ai Testing Platform,devtools,content_community,30.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+557a4aa2,Predictive Analytics Ai,devtools,b2b_enterprise,50.0%,"React Native, Flutter","Salesforce, HubSpot",Sales forecasting | Lead scoring (ML) | Auto-response (AI),b2b_enterprise
+1fb0e709,Inventory Management Ai,infra,saas_tool,50.0%,"React Native, Flutter","Asana, Monday",AI task automation | Smart scheduling | Auto-summarization,saas_tool
+c81d179b,Project Management Ai,infra,saas_tool,50.0%,"React Native, Flutter","Asana, Monday",AI task automation | Smart scheduling | Auto-summarization,saas_tool
+143e7aea,Training Platform Ai,infra,content_community,30.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+ca25a4c2,It Support Ai,infra,b2b_enterprise,50.0%,"React Native, Flutter","Salesforce, HubSpot",Sales forecasting | Lead scoring (ML) | Auto-response (AI),b2b_enterprise
+791334c8,Travel Booking Ai,infra,marketplace,50.0%,"React Native, Flutter","TaskRabbit, Handy",Predictive matching (ML) | Dynamic pricing (AI) | Fraud detection (ML),marketplace
+0cb23daa,Expense Management Ai,infra,saas_tool,50.0%,"React Native, Flutter","Asana, Monday",AI task automation | Smart scheduling | Auto-summarization,saas_tool
+fafe2c68,Contract Management Ai,infra,saas_tool,50.0%,"React Native, Flutter","Asana, Monday",AI task automation | Smart scheduling | Auto-summarization,saas_tool
+36187a90,Time Tracking Ai,infra,health_wellness,60.0%,"React Native, Flutter","Fitbit, Strava",Personalized workout plans | Health predictions (ML) | Smart coaching (AI),health_wellness
+f7a0bd5f,Knowledge Management Ai,infra,saas_tool,50.0%,"React Native, Flutter","Asana, Monday",AI task automation | Smart scheduling | Auto-summarization,saas_tool
+4d4db78a,Task Automation Ai,infra,marketplace,50.0%,"React Native, Flutter","TaskRabbit, Handy",Predictive matching (ML) | Dynamic pricing (AI) | Fraud detection (ML),marketplace
+9161fa5c,Vendor Management Ai,infra,saas_tool,50.0%,"React Native, Flutter","Asana, Monday",AI task automation | Smart scheduling | Auto-summarization,saas_tool
+f63eb65f,Training Content Ai,infra,content_community,50.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+012af0d5,Health Safety Ai,infra,health_wellness,60.0%,"React Native, Flutter","Fitbit, Strava",Personalized workout plans | Health predictions (ML) | Smart coaching (AI),health_wellness
+47f63152,It Asset Management,infra,saas_tool,50.0%,"React Native, Flutter","Asana, Monday",AI task automation | Smart scheduling | Auto-summarization,saas_tool
+60a726f2,Cloud Cost Management,infra,saas_tool,50.0%,"React Native, Flutter","Asana, Monday",AI task automation | Smart scheduling | Auto-summarization,saas_tool
+ebb70e0c,Document Collaboration Ai,infra,saas_tool,50.0%,"React Native, Flutter","Asana, Monday",AI task automation | Smart scheduling | Auto-summarization,saas_tool
+b4aadd69,Video Conferencing Ai,infra,content_community,50.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+0c6aee03,Email Management Ai,infra,saas_tool,50.0%,"React Native, Flutter","Asana, Monday",AI task automation | Smart scheduling | Auto-summarization,saas_tool
+b0c2ff55,Task Prioritization Ai,infra,marketplace,50.0%,"React Native, Flutter","TaskRabbit, Handy",Predictive matching (ML) | Dynamic pricing (AI) | Fraud detection (ML),marketplace
+6157c3ab,Time Management Ai,infra,saas_tool,50.0%,"React Native, Flutter","Asana, Monday",AI task automation | Smart scheduling | Auto-summarization,saas_tool
+5ed5ea2b,Analytics Platform Ai,infra,b2b_enterprise,50.0%,"React Native, Flutter","Salesforce, HubSpot",Sales forecasting | Lead scoring (ML) | Auto-response (AI),"content_community,b2b_enterprise"
+070d3984,Workflow Management Ai,infra,saas_tool,50.0%,"React Native, Flutter","Asana, Monday",AI task automation | Smart scheduling | Auto-summarization,saas_tool
+76fc699c,Ai Tutoring Platform,edtech,content_community,30.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+f0148df8,Branding Templates Marketplace,edtech,marketplace,50.0%,"React Native, Flutter","TaskRabbit, Handy",Predictive matching (ML) | Dynamic pricing (AI) | Fraud detection (ML),marketplace
+cbd335a4,Bipoc Creator Incubator,edtech,content_community,50.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+a6ff4191,Online Course Creator,edtech,content_community,50.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+5dd46624,Community Garden Ai,market,content_community,50.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+46361eff,Environmental Education Ai,edtech,health_wellness,60.0%,"React Native, Flutter","Fitbit, Strava",Personalized workout plans | Health predictions (ML) | Smart coaching (AI),health_wellness
+09da8b0a,Social Studies Ai,edtech,content_community,50.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+f2dd65e6,Time Management Ai,edtech,saas_tool,50.0%,"React Native, Flutter","Asana, Monday",AI task automation | Smart scheduling | Auto-summarization,saas_tool
+c4a823cd,Brotherhood Coaching Network,market,health_wellness,60.0%,"React Native, Flutter","Fitbit, Strava",Personalized workout plans | Health predictions (ML) | Smart coaching (AI),health_wellness
+a0243d57,Community Outreach Nonprofit,market,content_community,50.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+691a2d51,Community Technology Access Ai,market,content_community,50.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+bbdddf73,Community Fundraising Ai,market,content_community,50.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+2016874b,Indigenous Creator Hub,market,content_community,50.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+7c7d17f8,Veterans Support Ai,market,b2b_enterprise,50.0%,"React Native, Flutter","Salesforce, HubSpot",Sales forecasting | Lead scoring (ML) | Auto-response (AI),b2b_enterprise
+1f0860d6,Community Health Ai,market,health_wellness,60.0%,"React Native, Flutter","Fitbit, Strava",Personalized workout plans | Health predictions (ML) | Smart coaching (AI),"content_community,health_wellness"
+a479d43e,Community Legal Aid,market,content_community,50.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+f2a88c1a,Community Investment Ai,market,content_community,50.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+dc375d7b,Public Health Ai,market,health_wellness,60.0%,"React Native, Flutter","Fitbit, Strava",Personalized workout plans | Health predictions (ML) | Smart coaching (AI),health_wellness
+4a1ed3f5,Senior Tech Support,market,b2b_enterprise,50.0%,"React Native, Flutter","Salesforce, HubSpot",Sales forecasting | Lead scoring (ML) | Auto-response (AI),b2b_enterprise
+05724c9d,Community Arts Ai,market,content_community,50.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+c5e845a8,Community Policing Ai,market,content_community,50.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+2d9b6d1a,Community Recycling Ai,market,content_community,50.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+cee277a2,Community Energy Ai,market,content_community,50.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+93f3303f,Community Volunteering Ai,market,content_community,50.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+6e03ed0c,Community Pet Care Ai,market,content_community,50.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+f3d6352b,Community Transportation Ai,market,content_community,50.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+77fab7a8,Community Cultural Ai,market,content_community,50.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+60c66a64,Neurofeedback Ai,ai,content_community,50.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+3b1b67db,Genixbank Lite,fintech,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,fintech_wealth
+15572af9,Tax Prep Filing Services,fintech,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,"marketplace,fintech_wealth"
+6e468241,Wearables Ai,ai,health_wellness,60.0%,"React Native, Flutter","Fitbit, Strava",Personalized workout plans | Health predictions (ML) | Smart coaching (AI),health_wellness
+6bbaa1e6,Crypto Trading Ai,ai,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,fintech_wealth
+b2c657be,Vr Therapy Ai,ai,health_wellness,60.0%,"React Native, Flutter","Fitbit, Strava",Personalized workout plans | Health predictions (ML) | Smart coaching (AI),health_wellness
+423e48d7,Health Equity Ai,ai,health_wellness,60.0%,"React Native, Flutter","Fitbit, Strava",Personalized workout plans | Health predictions (ML) | Smart coaching (AI),health_wellness
+068d1f15,Environmental Justice Ai,ai,health_wellness,60.0%,"React Native, Flutter","Fitbit, Strava",Personalized workout plans | Health predictions (ML) | Smart coaching (AI),health_wellness
+3d54893a,Financial Wellness Coach,fintech,health_wellness,60.0%,"React Native, Flutter","Fitbit, Strava",Personalized workout plans | Health predictions (ML) | Smart coaching (AI),"health_wellness,fintech_wealth"
+b13db59f,Genixbank Lite,fintech,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,fintech_wealth
+358c0fb7,Genixbanks Ai Treasurer,fintech,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,fintech_wealth
+f9de7000,Charity Donation Ai,fintech,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,fintech_wealth
+62adf78e,Debt Consolidation Ai,fintech,fintech_wealth,60.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,fintech_wealth
+7959b02f,Chatbot Customer Service,market,marketplace,50.0%,"React Native, Flutter","TaskRabbit, Handy",Predictive matching (ML) | Dynamic pricing (AI) | Fraud detection (ML),marketplace
+9e4f8a59,Video Editor Ai,devtools,content_community,50.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+cf272b81,Wholesale Marketplace Ai,market,marketplace,50.0%,"React Native, Flutter","TaskRabbit, Handy",Predictive matching (ML) | Dynamic pricing (AI) | Fraud detection (ML),marketplace
+fd2288c3,Expense Management Ai,infra,saas_tool,50.0%,"React Native, Flutter","Asana, Monday",AI task automation | Smart scheduling | Auto-summarization,saas_tool
+2471d5ff,Time Tracking Ai,infra,health_wellness,60.0%,"React Native, Flutter","Fitbit, Strava",Personalized workout plans | Health predictions (ML) | Smart coaching (AI),health_wellness
+f3ef9069,Project Budget Ai,infra,saas_tool,50.0%,"React Native, Flutter","Asana, Monday",AI task automation | Smart scheduling | Auto-summarization,saas_tool
+a3db939f,Workflow Management Ai,infra,saas_tool,50.0%,"React Native, Flutter","Asana, Monday",AI task automation | Smart scheduling | Auto-summarization,saas_tool
+feeefc69,Branding Templates Marketplace,edtech,marketplace,50.0%,"React Native, Flutter","TaskRabbit, Handy",Predictive matching (ML) | Dynamic pricing (AI) | Fraud detection (ML),marketplace
+14ca9c22,Personal Finance Coach,edtech,fintech_wealth,30.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,fintech_wealth
+0f8fb560,Ai Returns Management,market,saas_tool,50.0%,"React Native, Flutter","Asana, Monday",AI task automation | Smart scheduling | Auto-summarization,saas_tool
+60c4c576,Neurofeedback Ai,ai,content_community,50.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+55af196a,Ai Customer Community,market,content_community,50.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+51b7ebf7,Ai Training Platform,devtools,content_community,30.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+0237b0cc,Facilities Management Ai,infra,saas_tool,50.0%,"React Native, Flutter","Asana, Monday",AI task automation | Smart scheduling | Auto-summarization,saas_tool
+d0d98760,Asset Management Ai,infra,saas_tool,50.0%,"React Native, Flutter","Asana, Monday",AI task automation | Smart scheduling | Auto-summarization,saas_tool
+865e4148,Project Budget Ai,infra,saas_tool,50.0%,"React Native, Flutter","Asana, Monday",AI task automation | Smart scheduling | Auto-summarization,saas_tool
+970a10cd,Homeschooling Content Ai,edtech,content_community,50.0%,"React Native, Flutter","TikTok, Instagram Reels",AI recommendations | Automated thumbnails | Transcription + captions,content_community
+a7313b93,Personal Finance Coach,edtech,fintech_wealth,30.0%,"React Native, Flutter","Revolut, Chime",Portfolio optimization | Fraud prevention (ML) | Tax optimization,fintech_wealth

@@ -129,7 +129,45 @@ references:
 
 ---
 
-## PART 2: ECOSYSTEM INTEGRATION (PARTNERSHIP-FIRST STRATEGY)
+## PART 2: CON OS BACKEND INTEGRATION (Lead Management Automation)
+
+**What It Does:** Automates lead-to-payment workflow with zero manual overhead
+
+**Files:**
+- `con-os-functions.py` (600+ lines) — Core Python business logic
+- `CON-OS-ZAPIER-MAPPING.md` — Automation blueprint with 5 Zapier zaps
+- Status: ✅ Complete (Jun 18, 2026)
+
+**Workflow:**
+```
+Website Lead Form → ClickUp Task → Project Creation → Invoice → Payment → Notification
+(Vercel)          (Zap #1)        (Python)          (Zap #3) (Zap #4)  (Zap #1,#4)
+```
+
+**5 Production Zaps:**
+1. **Daily Briefing** (ClickUp → Slack) — Team sees daily work at 8 AM
+2. **Work Logging** (Clockify → Notion) — Time entries auto-recorded
+3. **Send Invoice** (Gmail → Client) — Auto-emailed with payment link
+4. **Process Payment** (Stripe webhook) — Payment received → status update → team notified
+5. **Weekly Report** (ClickUp → Email) — Revenue/KPI summary every Friday
+
+**Setup Time:** 3.5 hours one-time
+- Zapier zaps: 2.5 hours
+- Domain config: 55 minutes
+- End-to-end test: 1 hour
+
+**First Venture Deployment:** 4.5 hours (includes setup)
+**Each Subsequent Venture:** 1.5 hours (template reuse)
+
+**Timeline:**
+- [x] Python layer complete (Jun 18)
+- [ ] Deploy Zapier zaps (Jun 19)
+- [ ] Test with CON-011 pilot (Jun 20)
+- [ ] Scale to other ventures (Jun 21+)
+
+---
+
+## PART 3: ECOSYSTEM INTEGRATION (PARTNERSHIP-FIRST STRATEGY)
 
 ### Construction Sector Ventures That Feed CON-011
 
