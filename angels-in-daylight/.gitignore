@@ -1,0 +1,7 @@
+# Derived / regenerable artifacts — not committed
+product-shots/_alpha/
+product-shots/_debug_*.png
+product-shots/_contactsheets/
+product-shots/_contactsheets_clean/
+product-shots/separated/
+product-shots/clean_transparent/
