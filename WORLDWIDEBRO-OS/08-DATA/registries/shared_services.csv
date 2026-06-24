@@ -1,0 +1,2 @@
+service_id,name,source_path,capabilities,dependent_ventures,status,created
+fashion-design-os,Fashion Design OS (garment extraction + catalog pipeline),angels-in-daylight/_shared-fashion-os/,extract|catalog|gallery|vocabulary|10-phase-pipeline,EC-001-Angels-in-Daylight|EC-002-New-World-Apparel|EC-003-Shopify-Autopilot|EC-009-Sustainable-Fashion-AI|EC-012-Fashion-Designer-AI|EC-013-Merch-Licensing|EC-030-AI-Product-Photographer|EC-050-AI-Product-Descriptions|EC-072-AI-Product-Cataloger,active,2026-06-22

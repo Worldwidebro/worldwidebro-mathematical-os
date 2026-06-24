@@ -13,17 +13,30 @@ Emits into registries/:
   Edges:     opco_venture_map.csv, venture_repo_map.csv,
              venture_agent_map.csv, agent_repo_map.csv, venture_capability_map.csv
 """
-import csv, os, json
+import csv, os, json, sys, subprocess
 from collections import defaultdict
 
 BASE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.join(BASE, "Influence-Venture-Business-OS/INFRASTRUCTURE_LAYERS/venture-hub")
 OUT = os.path.join(BASE, "registries")
+OS_ROOT = os.path.dirname(BASE)  # WORLDWIDEBRO-OS/
 os.makedirs(OUT, exist_ok=True)
+
+WARNINGS = []
+
+
+def warn(msg):
+    WARNINGS.append(msg)
+    print(f"  [warn] {msg}", file=sys.stderr)
 
 
 def read(name):
-    with open(os.path.join(SRC, name), newline="", encoding="utf-8") as f:
+    """Read a source CSV; never crash the build if one is missing."""
+    path = os.path.join(SRC, name)
+    if not os.path.isfile(path):
+        warn(f"source missing: {name} -> treating as empty")
+        return []
+    with open(path, newline="", encoding="utf-8") as f:
         return list(csv.DictReader(f))
 
 
@@ -39,9 +52,34 @@ def norm_sector(s):
     return (s or "UNSPECIFIED").strip().upper().replace(" ", "_").replace("&", "AND")
 
 
+def norm_name(s):
+    """Normalize a repo name for matching registry <-> filesystem basename."""
+    return (s or "").strip().lower().replace("_", "-").removesuffix(".git")
+
+
+def scan_local_repos(root):
+    """Filesystem truth: every git clone under root -> (name, rel_path, remote_url)."""
+    found = []
+    for dirpath, dirnames, filenames in os.walk(root):
+        if ".git" in dirnames or ".git" in filenames:
+            dirnames[:] = []  # don't descend into a repo's internals
+            url = ""
+            try:
+                url = subprocess.run(
+                    ["git", "-C", dirpath, "remote", "get-url", "origin"],
+                    capture_output=True, text=True, timeout=10).stdout.strip()
+            except Exception as e:
+                warn(f"git remote failed for {dirpath}: {e}")
+            rel = os.path.relpath(dirpath, os.path.dirname(OS_ROOT))
+            found.append((os.path.basename(dirpath), rel, url))
+    return found
+
+
 ventures = read("ventures-master.csv")
 repos = read("MASTER-REPO-REGISTRY.csv")
 caps = read("ventures_with_capabilities.csv")
+if not ventures or not repos:
+    warn("core source CSV(s) empty — registry will be partial")
 
 stats = {}
 

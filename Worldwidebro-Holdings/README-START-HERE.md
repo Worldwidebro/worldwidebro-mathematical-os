@@ -69,11 +69,20 @@ Every 90 days: **Keep / Scale / Sell / Merge / Pause / Archive**
    - 18 sections per OPCO
    - **Read time:** 10 min | **Owner:** OPCO Presidents
 
+### Integration & Tools (Systems Architecture)
+
+7. **TOOL-INTEGRATION-STACK.md** ⭐ ALL TOOLS MAPPED
+   - ClickUp ↔ Airtable (task management)
+   - Notion ↔ Airtable (documentation + investor deck)
+   - Slack ↔ Airtable (real-time alerts)
+   - Gmail, Google Calendar, Stripe, HubSpot integration
+   - **Read time:** 15 min | **Owner:** Data Admin
+
 ### Phase Overview (Context)
 
-7. **OPERATING-SYSTEM-ROADMAP.md** — Full 8-phase roadmap
-8. **PHASE-BY-PHASE-ANALYSIS.md** — Reality check per phase
-9. **README-OPERATIONS-FIRST.md** — Philosophy overview
+8. **OPERATING-SYSTEM-ROADMAP.md** — Full 8-phase roadmap
+9. **PHASE-BY-PHASE-ANALYSIS.md** — Reality check per phase
+10. **README-OPERATIONS-FIRST.md** — Philosophy overview
 
 ---
 

@@ -70,6 +70,30 @@ services:
       timeout: 5s
       retries: 5
 
+  # Dashboarding & Visualization
+  grafana:
+    image: grafana/grafana:10.2.0
+    container_name: grafana
+    hostname: grafana.internal
+    environment:
+      GF_SECURITY_ADMIN_USER: admin
+      GF_SECURITY_ADMIN_PASSWORD: ventures2026
+      GF_USERS_ALLOW_SIGN_UP: "false"
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana_data:/var/lib/grafana
+    networks:
+      - ventures
+    restart: unless-stopped
+    depends_on:
+      - postgres
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
 volumes:
   neo4j_data:
     driver: local
@@ -78,6 +102,8 @@ volumes:
   redis_data:
     driver: local
   postgres_data:
+    driver: local
+  grafana_data:
     driver: local
 
 networks:

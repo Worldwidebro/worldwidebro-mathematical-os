@@ -39,6 +39,27 @@
 
 ---
 
+### Loop 4: USASpending Contracts (Every 24 hours) — LIVE
+```bash
+/loop python3 loops/04-USASPENDING-CONTRACTS.py --every 24h
+```
+- Pulls awarded NC federal construction contracts (USASpending API, **no key needed**)
+- Filters construction NAICS (238160/238210/238220/236220/236118/238290), NC, last 90d
+- Stores in Supabase `gov_awards`, deduped by award_id
+- These primes = subcontracting targets → see `../GOV-CONTRACT-REVENUE-ACTION-SHEET.md`
+
+---
+
+### Loop 5: SAM.gov Opportunities (Every 24 hours) — needs API key
+```bash
+/loop python3 loops/05-SAM-OPPORTUNITIES.py --every 24h
+```
+- Pulls OPEN federal RFPs you can bid on (SAM.gov Opportunities API)
+- **Requires** `SAM_GOV_API_KEY` in `.env` (free: sam.gov → Account Details → API Key)
+- Stores in Supabase `gov_opportunities`, deduped by notice_id
+
+---
+
 ## QUICK START (TODAY)
 
 ### Step 1: Supabase Table (5 min)

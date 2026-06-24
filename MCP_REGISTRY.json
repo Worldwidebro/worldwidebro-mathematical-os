@@ -1,0 +1,194 @@
+{
+  "registry_metadata": {
+    "version": "2.0",
+    "description": "Master MCP Registry - Single source of truth for all tools and integrations",
+    "last_updated": "2026-06-22T10:00:00Z",
+    "auto_discovered": "2026-06-22T10:00:00Z",
+    "config_source": "/Users/acebless/.claude/mcp-config.json",
+    "health_source": "/Users/acebless/.claude/mcp-health-cache.json"
+  },
+  "mcps": {
+    "airtable": {
+      "name": "Airtable",
+      "status": "enabled",
+      "priority": "critical",
+      "category": "database",
+      "description": "Master database for ventures, OPCOs, tasks",
+      "capabilities": ["list_records", "create_record", "update_record", "delete_record"],
+      "used_by": ["venture-inventory", "airtable-dashboard", "phase-1-execution"],
+      "config_location": "/Users/acebless/.claude/mcp-config.json#airtable",
+      "last_verified": "2026-06-22T09:30:00Z",
+      "test_result": "PASS"
+    },
+    "clickup": {
+      "name": "ClickUp",
+      "status": "enabled",
+      "priority": "high",
+      "category": "task_management",
+      "description": "Task and project management for 47 ventures",
+      "capabilities": ["create_task", "create_list", "update_task", "get_task", "create_folder"],
+      "used_by": ["phase-1-execution", "venture-task-tracking", "opco-projects"],
+      "config_location": "/Users/acebless/.claude/mcp-config.json#clickup",
+      "last_verified": "2026-06-22T09:25:00Z",
+      "test_result": "PASS"
+    },
+    "notion": {
+      "name": "Notion",
+      "status": "enabled",
+      "priority": "high",
+      "category": "documentation",
+      "description": "Documentation hub, investor deck, OPCO binders",
+      "capabilities": ["create_database", "create_page", "update_page", "sync_data"],
+      "used_by": ["documentation-hub", "investor-deck", "opco-binders"],
+      "config_location": "/Users/acebless/.claude/mcp-config.json#notion",
+      "last_verified": "2026-06-22T09:20:00Z",
+      "test_result": "PASS"
+    },
+    "slack": {
+      "name": "Slack",
+      "status": "enabled",
+      "priority": "high",
+      "category": "communication",
+      "description": "Real-time team alerts, OPCO channels",
+      "capabilities": ["create_channel", "send_message", "set_topic", "add_members"],
+      "used_by": ["real-time-alerts", "team-coordination", "opco-channels"],
+      "config_location": "/Users/acebless/.claude/mcp-config.json#slack",
+      "last_verified": "2026-06-22T09:15:00Z",
+      "test_result": "PASS"
+    },
+    "zapier": {
+      "name": "Zapier",
+      "status": "enabled",
+      "priority": "high",
+      "category": "automation",
+      "description": "4 primary automation zaps: Airtable→ClickUp, Notion, Slack, Gmail",
+      "capabilities": ["create_zap", "enable_zap", "test_zap", "list_zaps"],
+      "used_by": ["venture-automation", "tool-integration-stack"],
+      "config_location": "/Users/acebless/.claude/mcp-config.json#zapier",
+      "last_verified": "2026-06-22T09:10:00Z",
+      "test_result": "PASS"
+    },
+    "supabase": {
+      "name": "Supabase",
+      "status": "enabled",
+      "priority": "critical",
+      "category": "database",
+      "description": "Venture inventory, contacts, knowledge graph (transactional)",
+      "capabilities": ["query_database", "insert_records", "update_records", "delete_records"],
+      "used_by": ["venture-inventory", "knowledge-graph", "task-automation"],
+      "config_location": "/Users/acebless/.claude/mcp-config.json#supabase",
+      "last_verified": "2026-06-22T09:00:00Z",
+      "test_result": "PASS"
+    },
+    "gmail": {
+      "name": "Gmail",
+      "status": "enabled",
+      "priority": "high",
+      "category": "communication",
+      "description": "Weekly executive briefings, notifications",
+      "capabilities": ["send_email", "create_draft", "list_emails", "get_email"],
+      "used_by": ["weekly-briefings", "notification-delivery"],
+      "config_location": "/Users/acebless/.claude/mcp-config.json#gmail",
+      "last_verified": "2026-06-22T08:55:00Z",
+      "test_result": "PASS"
+    },
+    "github": {
+      "name": "GitHub",
+      "status": "enabled",
+      "priority": "high",
+      "category": "repository",
+      "description": "Code deployment, issue tracking, repo management",
+      "capabilities": ["list_repos", "create_issue", "create_pr", "push_files"],
+      "used_by": ["repository-management", "code-deployment"],
+      "config_location": "/Users/acebless/.claude/mcp-config.json#github",
+      "last_verified": "2026-06-22T08:45:00Z",
+      "test_result": "PASS"
+    },
+    "graphify": {
+      "name": "Graphify",
+      "status": "enabled",
+      "priority": "high",
+      "category": "knowledge_graph",
+      "description": "Venture knowledge graph, semantic search",
+      "capabilities": ["list_nodes", "query_graph", "find_fits"],
+      "used_by": ["knowledge-graph", "semantic-search"],
+      "config_location": "/Users/acebless/.claude/mcp-config.json#graphify",
+      "last_verified": "2026-06-22T08:40:00Z",
+      "test_result": "PASS"
+    },
+    "memory": {
+      "name": "Memory MCP",
+      "status": "enabled",
+      "priority": "high",
+      "category": "context",
+      "description": "Persistent memory, context management",
+      "capabilities": ["create_entities", "search_nodes", "read_graph"],
+      "used_by": ["persistent-memory", "context-management"],
+      "config_location": "/Users/acebless/.claude/mcp-config.json#memory",
+      "last_verified": "2026-06-22T08:35:00Z",
+      "test_result": "PASS"
+    },
+    "stripe": {
+      "name": "Stripe",
+      "status": "enabled",
+      "priority": "medium",
+      "category": "payments",
+      "description": "Payment capture, revenue tracking",
+      "capabilities": ["create_charge", "list_charges", "create_payment_intent"],
+      "used_by": ["payment-capture", "venture-revenue"],
+      "config_location": "/Users/acebless/.claude/mcp-config.json#stripe",
+      "last_verified": "2026-06-22T08:30:00Z",
+      "test_result": "PASS"
+    },
+    "hubspot": {
+      "name": "HubSpot",
+      "status": "enabled",
+      "priority": "medium",
+      "category": "crm",
+      "description": "Customer relationship management, deal tracking",
+      "capabilities": ["create_contact", "get_contact", "list_contacts", "create_deal"],
+      "used_by": ["crm-system", "venture-enrichment"],
+      "config_location": "/Users/acebless/.claude/mcp-config.json#hubspot",
+      "last_verified": "2026-06-22T08:25:00Z",
+      "test_result": "PASS"
+    },
+    "google_calendar": {
+      "name": "Google Calendar",
+      "status": "enabled",
+      "priority": "medium",
+      "category": "scheduling",
+      "description": "OPCO reviews, board meetings, quarterly planning",
+      "capabilities": ["create_event", "update_event", "list_events"],
+      "used_by": ["meeting-scheduling", "opco-reviews"],
+      "config_location": "/Users/acebless/.claude/mcp-config.json#google_calendar",
+      "last_verified": "2026-06-22T08:50:00Z",
+      "test_result": "PASS"
+    }
+  },
+  "health_summary": {
+    "total_mcps": 14,
+    "enabled": 14,
+    "verified_last_24h": 14,
+    "needs_setup": 0,
+    "broken": 0,
+    "health_score": "100%",
+    "status": "🟢 ALL HEALTHY"
+  },
+  "categories": {
+    "critical": ["airtable", "supabase"],
+    "high": ["clickup", "notion", "slack", "zapier", "gmail", "github", "graphify", "memory"],
+    "medium": ["stripe", "hubspot", "google_calendar"]
+  },
+  "by_use_case": {
+    "venture-inventory": ["airtable", "supabase"],
+    "task-management": ["clickup"],
+    "documentation": ["notion"],
+    "communication": ["slack", "gmail"],
+    "automation": ["zapier"],
+    "knowledge-graph": ["graphify", "supabase"],
+    "deployment": ["github"],
+    "crm": ["hubspot"],
+    "payments": ["stripe"],
+    "scheduling": ["google_calendar"]
+  }
+}
