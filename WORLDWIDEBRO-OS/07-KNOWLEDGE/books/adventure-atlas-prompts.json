@@ -1,0 +1,19 @@
+{
+  "book_id": "adventure-atlas",
+  "_source": "BOOK-ILLUSTRATION-PROMPTS.md — Adventure Atlas v1 (kids book, ages 5-8)",
+  "style_prefix": "Warm, inviting watercolor illustration, children's picture book style, soft colors, friendly characters, emotional storytelling, professional children's book quality, illustration by acclaimed children's book artist",
+  "negative_prompt": "blurry, low quality, text, watermark, distorted, ugly, bad anatomy",
+  "prompts": [
+    {"label": "page02-boy-reaching-for-book", "prompt": "A curious 7-year-old boy reaching for a mysterious leather-bound book on a shelf, cozy morning light, dust particles, warm oranges and blues, books around, grandparent's study, magical atmosphere"},
+    {"label": "page03-opening-blank-book", "prompt": "7-year-old boy opening a large, beautiful leather book with blank glowing pages, sitting at table, amazed expression, soft window light, cozy room, magical feeling"},
+    {"label": "page04-grandma-explaining", "prompt": "Warm scene of grandmother and young boy sitting together, grandmother pointing at blank book, smiling kindly, cozy armchair, wooden furniture, family photos, warm lighting, loving moment"},
+    {"label": "page06-kids-building-blocks", "prompt": "Two 7-year-old children, Max and Zoe, building tall colorful block tower, laughing, playful energy, bright colors, sunny playroom, scattered blocks, joyful"},
+    {"label": "page07-max-drawing-in-atlas", "prompt": "Close-up of boy at wooden desk, drawing and writing in notebook carefully, colored pencils nearby, warm lamplight, focused expression, creative moment"},
+    {"label": "page08-caterpillar-on-leaf", "prompt": "Close-up of bright green caterpillar with dots and tiny legs on green leaf, magnifying glass nearby, boy observing carefully, nature, garden setting, curious observation"},
+    {"label": "page10-adventure-montage", "prompt": "Four small scenes: soccer player scoring goal, child on bike without training wheels, baking cookies in kitchen, catching glowing firefly at dusk. Combined on one page, warm colors, adventure montage"},
+    {"label": "page12-exploring-together", "prompt": "Max and Zoe exploring nature: climbing oak tree, collecting rocks, catching tadpoles in creek, building fort with blankets. Multiple activities, outdoor adventure, friendship, cooperation"},
+    {"label": "page13-atlas-full-and-proud", "prompt": "Young boy proudly holding thick full notebook, the Adventure Atlas, with many pages, smiling, grandmother looking on with pride, cozy home, warm lighting, wooden furniture, family love, achievement"},
+    {"label": "page14-grandma-reviews-atlas", "prompt": "Grandmother and Max sitting together, grandmother reading through full atlas, reviewing drawings, both smiling, emotional bonding moment, cozy, lamp lighting, warm colors, memory making"},
+    {"label": "page18-new-beginning", "prompt": "7-year-old boy by window in morning sunlight, holding brand new blank notebook for Year Two atlas, pen in hand, excited ready expression, peaceful, cozy room, hopeful, new beginning"}
+  ]
+}
