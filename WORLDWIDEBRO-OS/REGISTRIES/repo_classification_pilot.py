@@ -23,7 +23,7 @@ REGISTRY_DIR = Path(__file__).resolve().parent
 DOCUMENTS = REGISTRY_DIR.parent.parent  # ~/Documents
 
 VOCAB_PATH = REGISTRY_DIR / "repo_vocabulary.json"
-OWNED_PATH = DOCUMENTS / "The office/repos.json"
+OWNED_PATH = DOCUMENTS / "WORLDWIDEBRO-OS/04-OPERATIONS/The office/repos.json"
 STARRED_PATH = DOCUMENTS / "repos-index.json"
 
 OUTPUT_CSV = REGISTRY_DIR / "repository_registry_pilot.csv"

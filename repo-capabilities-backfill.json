@@ -1,0 +1,4519 @@
+{
+  "metadata": {
+    "generated_date": "2026-07-04",
+    "total_repos": 1639,
+    "coverage_before": 0,
+    "coverage_before_pct": 0.0,
+    "coverage_after": 1156,
+    "coverage_after_pct": 70.5,
+    "readmes_used": 350,
+    "neo4j_implements_edges": 2273,
+    "neo4j_repos_with_cap": 1165
+  },
+  "repos": {
+    "career-ops": [
+      "dashboard",
+      "devtools",
+      "llm",
+      "search"
+    ],
+    "agency-agents": [
+      "agent",
+      "dashboard",
+      "llm"
+    ],
+    "fin-023-investment-portfolio-ai": [
+      "llm",
+      "portfolio"
+    ],
+    "lt-005-medical-courier-dispatch": [
+      "monitoring"
+    ],
+    "ec-072-ai-product-cataloger": [
+      "llm"
+    ],
+    "ec-050-ai-product-descriptions": [
+      "llm"
+    ],
+    "ec-030-ai-product-photographer": [
+      "llm"
+    ],
+    "ec-012-fashion-designer-ai": [
+      "fashion-design",
+      "llm"
+    ],
+    "ec-009-sustainable-fashion-ai": [
+      "fashion-design",
+      "llm"
+    ],
+    "ec-003-shopify-autopilot": [
+      "agent",
+      "dashboard"
+    ],
+    "ec-002-new-world-apparel": [
+      "fashion-design"
+    ],
+    "con-os-build": [
+      "automation",
+      "construction",
+      "payments"
+    ],
+    "ops-staff-001-staffing": [
+      "agent",
+      "llm"
+    ],
+    "edu-006-homeschooling-content-ai": [
+      "llm"
+    ],
+    "iza-os-financial-core": [
+      "analytics"
+    ],
+    "edu-013-automated-empire-book": [
+      "database"
+    ],
+    "venture-hub": [
+      "agent",
+      "automation",
+      "devtools",
+      "llm",
+      "mcp",
+      "security",
+      "workspace"
+    ],
+    "con-009-roofing-company": [
+      "construction",
+      "crm",
+      "notifications",
+      "workspace"
+    ],
+    "deliv-713-roadrunner-cannabis": [
+      "dashboard"
+    ],
+    "fin-001-genixbank-lite": [
+      "agent",
+      "crm",
+      "dashboard",
+      "payments"
+    ],
+    "YES-LLC-CONTRACTOR-DELIVERY": [
+      "construction"
+    ],
+    "iza-os-tree-of-life": [
+      "agent",
+      "automation",
+      "database",
+      "devtools",
+      "mcp",
+      "monitoring",
+      "rag",
+      "security",
+      "workspace"
+    ],
+    "iza-os-ecosystem": [
+      "agent",
+      "automation",
+      "llm",
+      "scheduling",
+      "security"
+    ],
+    "obsidian-vault": [
+      "workspace"
+    ],
+    "comm-050-community-cultural-ai": [
+      "llm"
+    ],
+    "comm-049-public-event-ai": [
+      "llm"
+    ],
+    "comm-048-community-transportation-ai": [
+      "llm"
+    ],
+    "comm-047-public-fitness-ai": [
+      "llm"
+    ],
+    "comm-046-community-pet-care-ai": [
+      "llm"
+    ],
+    "comm-045-public-childcare-ai": [
+      "llm"
+    ],
+    "comm-044-community-volunteering-ai": [
+      "llm"
+    ],
+    "comm-043-local-food-network-ai": [
+      "llm"
+    ],
+    "comm-042-community-energy-ai": [
+      "llm"
+    ],
+    "comm-041-public-wi-fi-ai": [
+      "llm"
+    ],
+    "comm-040-community-recycling-ai": [
+      "llm"
+    ],
+    "comm-039-public-space-ai": [
+      "llm"
+    ],
+    "comm-038-community-policing-ai": [
+      "llm"
+    ],
+    "comm-037-neighborhood-development-ai": [
+      "llm"
+    ],
+    "comm-036-public-infrastructure-ai": [
+      "llm"
+    ],
+    "comm-035-community-arts-ai": [
+      "llm"
+    ],
+    "comm-033-youth-innovation-hub": [
+      "monitoring"
+    ],
+    "comm-032-public-health-ai": [
+      "llm"
+    ],
+    "comm-031-community-investment-ai": [
+      "llm"
+    ],
+    "comm-030-cultural-exchange-ai": [
+      "llm"
+    ],
+    "comm-029-community-wellness-ai": [
+      "llm"
+    ],
+    "comm-028-public-safety-ai": [
+      "llm"
+    ],
+    "comm-027-local-government-ai": [
+      "llm"
+    ],
+    "comm-026-public-education-ai": [
+      "llm"
+    ],
+    "comm-024-youth-sports-ai": [
+      "llm"
+    ],
+    "comm-023-elder-companion-ai": [
+      "llm"
+    ],
+    "comm-021-housing-assistance-ai": [
+      "llm"
+    ],
+    "comm-020-public-transportation-ai": [
+      "llm"
+    ],
+    "comm-019-community-garden-ai": [
+      "llm"
+    ],
+    "comm-018-neighborhood-watch-ai": [
+      "llm"
+    ],
+    "comm-016-community-health-ai": [
+      "llm"
+    ],
+    "comm-014-veterans-support-ai": [
+      "llm"
+    ],
+    "comm-013-women-s-empowerment-network": [
+      "monitoring"
+    ],
+    "comm-012-black-art-museum-ai": [
+      "llm"
+    ],
+    "comm-011-indigenous-creator-hub": [
+      "monitoring"
+    ],
+    "comm-010-disaster-relief-ai": [
+      "llm"
+    ],
+    "comm-009-volunteer-hub-ai": [
+      "llm"
+    ],
+    "comm-008-community-fundraising-ai": [
+      "llm"
+    ],
+    "comm-007-youth-leadership-ai": [
+      "llm"
+    ],
+    "comm-006-community-technology-access-ai": [
+      "llm"
+    ],
+    "comm-005-ace-food-security-ai": [
+      "llm",
+      "security"
+    ],
+    "comm-002-brotherhood-coaching-network": [
+      "monitoring"
+    ],
+    "civilization-os": [
+      "agent",
+      "llm",
+      "mcp"
+    ],
+    "the-office": [
+      "workspace"
+    ],
+    "pitch-kit": [
+      "construction",
+      "dashboard",
+      "monitoring"
+    ],
+    "con-001-ace-construction": [
+      "construction"
+    ],
+    "bw-001-up-next-code": [
+      "automation",
+      "llm"
+    ],
+    "iza-os-rag-system": [
+      "api",
+      "graph",
+      "rag",
+      "search",
+      "workspace"
+    ],
+    "venture-factory-core": [
+      "automation"
+    ],
+    "iza-os-knowledge-graph": [
+      "graph"
+    ],
+    "iza-os-integrations": [
+      "api"
+    ],
+    "iza-os-ai-orchestration": [
+      "llm"
+    ],
+    "ace-ecommerce-templates": [
+      "automation",
+      "llm"
+    ],
+    "acquisition-vehicle-automation": [
+      "automation"
+    ],
+    "ai-boss-holdings-v4": [
+      "llm"
+    ],
+    "ai-business-commander": [
+      "llm"
+    ],
+    "ai-venture-studio-template": [
+      "llm"
+    ],
+    "aibossoslandingpage": [
+      "llm"
+    ],
+    "autonomous-venture-studio": [
+      "automation",
+      "dashboard",
+      "mcp",
+      "monitoring",
+      "workspace"
+    ],
+    "billionaire-brain-assistant": [
+      "analytics",
+      "llm"
+    ],
+    "billionaire-workflow-automation": [
+      "automation"
+    ],
+    "business-template-marketplace": [
+      "llm",
+      "payments"
+    ],
+    "civilization-os-infra": [
+      "agent",
+      "automation",
+      "database",
+      "llm"
+    ],
+    "claude-workflow-demo": [
+      "automation",
+      "llm",
+      "notifications"
+    ],
+    "con-002-residential-construction": [
+      "construction",
+      "crm",
+      "notifications",
+      "workspace"
+    ],
+    "con-003-commercial-construction": [
+      "construction",
+      "crm",
+      "notifications",
+      "workspace"
+    ],
+    "con-005-construction-equipment-rental": [
+      "construction"
+    ],
+    "con-004-industrial-construction": [
+      "construction",
+      "crm",
+      "notifications",
+      "workspace"
+    ],
+    "con-006-construction-project-management": [
+      "construction",
+      "crm",
+      "notifications",
+      "workspace"
+    ],
+    "con-007-green-building-services": [
+      "construction"
+    ],
+    "con-019-window-installation": [
+      "construction",
+      "crm",
+      "notifications",
+      "workspace"
+    ],
+    "consulting-services-automation": [
+      "automation"
+    ],
+    "deployment-orchestrator": [
+      "api",
+      "automation",
+      "dashboard",
+      "database",
+      "monitoring"
+    ],
+    "divine-johns-portfolio": [
+      "agent",
+      "automation",
+      "llm",
+      "mcp",
+      "notifications",
+      "portfolio"
+    ],
+    "ec-005-nwa-products": [
+      "llm",
+      "monitoring"
+    ],
+    "ec-005-sunglasses-ai": [
+      "llm"
+    ],
+    "ec-006-dropship-hub": [
+      "agent",
+      "dashboard"
+    ],
+    "ec-007-personal-shopper-ai": [
+      "llm"
+    ],
+    "ec-008-custom-sneaker-ai": [
+      "llm"
+    ],
+    "ec-010-jewelry-designer-ai": [
+      "llm"
+    ],
+    "ec-011-virtual-try-on-ai": [
+      "llm"
+    ],
+    "ec-014-subscription-box-ai": [
+      "llm"
+    ],
+    "ec-015-surf-gear-ai": [
+      "llm"
+    ],
+    "ec-016-ski-gear-ai": [
+      "llm"
+    ],
+    "ec-017-golf-gear-ai": [
+      "llm"
+    ],
+    "ec-018-fishing-gear-ai": [
+      "llm"
+    ],
+    "ec-019-yoga-gear-ai": [
+      "llm"
+    ],
+    "ec-020-costume-shop-ai": [
+      "llm"
+    ],
+    "ec-021-luggage-ai": [
+      "llm"
+    ],
+    "ec-022-home-appliance-ai": [
+      "llm"
+    ],
+    "ec-023-tool-shop-ai": [
+      "llm"
+    ],
+    "ec-024-garden-supply-ai": [
+      "llm"
+    ],
+    "ec-025-collectible-ai": [
+      "llm"
+    ],
+    "ec-026-hobby-shop-ai": [
+      "llm"
+    ],
+    "ec-028-nft-fashion-licensing": [
+      "fashion-design"
+    ],
+    "ec-032-dynamic-pricing-engine": [
+      "agent",
+      "dashboard"
+    ],
+    "ec-033-ad-optimizer-ai": [
+      "llm"
+    ],
+    "ec-034-recommendation-engine": [
+      "agent",
+      "dashboard"
+    ],
+    "ec-035-review-aggregator-ai": [
+      "llm"
+    ],
+    "ec-036-fulfillment-network-ai": [
+      "llm"
+    ],
+    "ec-037-return-optimization-ai": [
+      "llm"
+    ],
+    "ec-039-visual-search-ai": [
+      "llm",
+      "search"
+    ],
+    "ec-043-ugc-content-aggregator": [
+      "agent",
+      "dashboard"
+    ],
+    "ec-048-wholesale-marketplace-ai": [
+      "llm"
+    ],
+    "ec-049-rental-marketplace": [
+      "agent",
+      "dashboard"
+    ],
+    "ec-051-ai-email-marketing": [
+      "llm",
+      "notifications"
+    ],
+    "ec-052-ai-product-bundler": [
+      "llm"
+    ],
+    "ec-053-ai-visual-merchandiser": [
+      "llm"
+    ],
+    "ec-054-ai-demand-forecasting": [
+      "llm"
+    ],
+    "ec-055-ai-warehouse-management": [
+      "llm"
+    ],
+    "ec-056-ai-supplier-matching": [
+      "llm"
+    ],
+    "ec-057-ai-quality-control": [
+      "llm"
+    ],
+    "ec-058-ai-packaging-designer": [
+      "llm"
+    ],
+    "ec-059-ai-logistics-planner": [
+      "llm"
+    ],
+    "ec-060-ai-customer-loyalty": [
+      "llm"
+    ],
+    "ec-061-ai-gift-finder": [
+      "llm"
+    ],
+    "ec-062-ai-trend-hunter": [
+      "llm"
+    ],
+    "ec-063-ai-market-research": [
+      "llm"
+    ],
+    "ec-064-ai-competitor-watcher": [
+      "llm"
+    ],
+    "ec-065-ai-product-development": [
+      "llm"
+    ],
+    "ec-066-ai-customer-journey": [
+      "llm"
+    ],
+    "ec-067-ai-payment-optimization": [
+      "llm",
+      "payments"
+    ],
+    "ec-068-ai-returns-management": [
+      "llm"
+    ],
+    "ec-069-ai-shipping-labeler": [
+      "llm"
+    ],
+    "ec-070-ai-product-launch-coach": [
+      "llm"
+    ],
+    "ec-071-ai-vendor-negotiator": [
+      "llm"
+    ],
+    "ec-073-ai-order-prioritizer": [
+      "llm"
+    ],
+    "ec-074-ai-customer-segmentation": [
+      "llm"
+    ],
+    "ec-075-ai-pricing-analyst": [
+      "llm"
+    ],
+    "ec-076-ai-sales-forecasting": [
+      "crm",
+      "llm"
+    ],
+    "ec-077-ai-inventory-reordering": [
+      "llm"
+    ],
+    "ec-078-ai-product-comparison": [
+      "llm"
+    ],
+    "ec-079-ai-customer-feedback": [
+      "llm"
+    ],
+    "ec-080-ai-product-updates": [
+      "llm"
+    ],
+    "ec-081-ai-cross-selling": [
+      "llm"
+    ],
+    "ec-082-ai-up-selling": [
+      "llm"
+    ],
+    "ec-083-ai-product-education": [
+      "llm"
+    ],
+    "ec-084-ai-purchase-timing": [
+      "llm"
+    ],
+    "ec-085-ai-customer-support": [
+      "llm"
+    ],
+    "ec-086-ai-order-tracking": [
+      "llm"
+    ],
+    "ec-087-ai-product-reviews": [
+      "llm"
+    ],
+    "ec-088-ai-customer-community": [
+      "llm"
+    ],
+    "ec-089-ai-product-customization": [
+      "llm"
+    ],
+    "ec-090-ai-gift-registry": [
+      "llm"
+    ],
+    "ec-091-ai-wedding-registry": [
+      "llm"
+    ],
+    "ec-092-ai-baby-registry": [
+      "llm"
+    ],
+    "ec-093-ai-holiday-planner": [
+      "llm"
+    ],
+    "ec-094-ai-personal-shopper": [
+      "llm"
+    ],
+    "ec-095-ai-color-match": [
+      "llm"
+    ],
+    "ec-096-ai-fabric-advisor": [
+      "llm"
+    ],
+    "ec-097-ai-fit-recommendation": [
+      "llm"
+    ],
+    "ec-098-ai-outfit-builder": [
+      "llm"
+    ],
+    "ec-099-ai-seasonal-forecast": [
+      "llm"
+    ],
+    "ec-100-ai-wardrobe-planner": [
+      "llm"
+    ],
+    "ec-101-ai-accessory-match": [
+      "llm"
+    ],
+    "ec-102-ai-shoe-match": [
+      "llm"
+    ],
+    "ec-103-ai-jewelry-match": [
+      "llm"
+    ],
+    "ec-104-ai-bag-match": [
+      "llm"
+    ],
+    "ec-105-ai-color-palette": [
+      "llm"
+    ],
+    "ec-106-ai-outfit-recycling": [
+      "llm"
+    ],
+    "ec-107-ai-style-evolution": [
+      "llm"
+    ],
+    "ec-108-ai-budget-stylist": [
+      "llm"
+    ],
+    "ec-109-ai-trend-archive": [
+      "llm"
+    ],
+    "ec-110-ai-vintage-advisor": [
+      "llm"
+    ],
+    "edu-001-youth-entrepreneurship-curriculum": [
+      "agent",
+      "dashboard"
+    ],
+    "edu-002-ai-literacy-program": [
+      "llm"
+    ],
+    "edu-003-coding-mentor-certification": [
+      "agent",
+      "dashboard"
+    ],
+    "edu-004-real-estate-licensing-prep": [
+      "agent",
+      "dashboard"
+    ],
+    "edu-005-coding-bootcamp": [
+      "agent",
+      "dashboard"
+    ],
+    "edu-007-ai-tutoring-platform": [
+      "llm"
+    ],
+    "edu-009-voiceover-script-library": [
+      "agent",
+      "dashboard"
+    ],
+    "edu-010-trade-skills-bootcamp": [
+      "agent",
+      "dashboard"
+    ],
+    "edu-011-franchise-blueprint-system": [
+      "agent",
+      "dashboard"
+    ],
+    "edu-012-low-income-housing-blueprint": [
+      "agent",
+      "dashboard"
+    ],
+    "edu-014-bipoc-creator-incubator": [
+      "agent",
+      "dashboard"
+    ],
+    "edu-015-ai-legal-doc-generator": [
+      "llm"
+    ],
+    "edu-016-virtual-black-art-museum": [
+      "agent",
+      "dashboard"
+    ],
+    "edu-017-ai-coding-tutor": [
+      "llm"
+    ],
+    "edu-018-online-course-creator": [
+      "agent",
+      "dashboard"
+    ],
+    "edu-019-executive-education-program": [
+      "agent",
+      "dashboard"
+    ],
+    "edu-020-youth-stem-program": [
+      "agent",
+      "dashboard"
+    ],
+    "edu-021-remote-work-certification": [
+      "agent",
+      "dashboard"
+    ],
+    "edu-022-ai-research-assistant": [
+      "llm"
+    ],
+    "edu-023-personal-finance-coach": [
+      "agent",
+      "dashboard"
+    ],
+    "edu-024-language-learning-ai": [
+      "llm"
+    ],
+    "edu-025-test-preparation-ai": [
+      "llm"
+    ],
+    "edu-026-corporate-training-ai": [
+      "llm"
+    ],
+    "edu-027-medical-education-ai": [
+      "llm"
+    ],
+    "edu-028-legal-education-ai": [
+      "llm"
+    ],
+    "edu-029-music-education-ai": [
+      "llm"
+    ],
+    "edu-030-art-education-ai": [
+      "llm"
+    ],
+    "edu-031-physical-education-ai": [
+      "llm"
+    ],
+    "edu-032-environmental-education-ai": [
+      "llm"
+    ],
+    "edu-033-social-studies-ai": [
+      "llm"
+    ],
+    "edu-034-math-education-ai": [
+      "llm"
+    ],
+    "edu-035-science-education-ai": [
+      "llm"
+    ],
+    "edu-036-reading-comprehension-ai": [
+      "llm"
+    ],
+    "edu-037-writing-instruction-ai": [
+      "llm"
+    ],
+    "edu-038-critical-thinking-ai": [
+      "llm"
+    ],
+    "edu-039-emotional-intelligence-ai": [
+      "llm"
+    ],
+    "edu-040-time-management-ai": [
+      "llm"
+    ],
+    "em-001-space-habitat-ai": [
+      "llm"
+    ],
+    "em-002-fusion-energy-ai": [
+      "llm"
+    ],
+    "em-003-teleportation-research-ai": [
+      "llm"
+    ],
+    "em-004-climate-solutions-ai": [
+      "llm"
+    ],
+    "em-005-holographic-events-ai": [
+      "llm"
+    ],
+    "em-006-neurofeedback-ai": [
+      "llm"
+    ],
+    "em-007-autonomous-delivery-ai": [
+      "llm"
+    ],
+    "em-008-gene-editing-ai": [
+      "llm"
+    ],
+    "em-009-space-tourism-ai": [
+      "llm"
+    ],
+    "em-010-wearables-ai": [
+      "llm"
+    ],
+    "em-011-metaverse-hub-ai": [
+      "llm"
+    ],
+    "em-012-energy-grid-ai": [
+      "llm"
+    ],
+    "em-014-ocean-cleanup-ai": [
+      "llm"
+    ],
+    "em-015-crypto-trading-ai": [
+      "llm"
+    ],
+    "em-017-space-mining-ai": [
+      "llm"
+    ],
+    "em-016-synthetic-media-ai": [
+      "llm"
+    ],
+    "em-018-vr-therapy-ai": [
+      "llm"
+    ],
+    "em-019-weather-prediction-ai": [
+      "llm"
+    ],
+    "em-020-autonomous-farming-ai": [
+      "llm"
+    ],
+    "em-021-traffic-optimizer-ai": [
+      "llm"
+    ],
+    "em-022-smart-grid-ai": [
+      "llm"
+    ],
+    "em-023-disaster-prediction-ai": [
+      "llm"
+    ],
+    "em-025-personalized-medicine-ai": [
+      "llm"
+    ],
+    "em-024-nanotech-ai": [
+      "llm"
+    ],
+    "em-026-ai-diagnostic-lab": [
+      "llm"
+    ],
+    "em-027-sustainable-cities-ai": [
+      "llm"
+    ],
+    "em-028-renewable-energy-ai": [
+      "llm"
+    ],
+    "em-029-climate-modeling-ai": [
+      "llm"
+    ],
+    "em-030-policy-advisor-ai": [
+      "llm"
+    ],
+    "em-031-governance-hub-ai": [
+      "llm"
+    ],
+    "em-032-global-challenges-ai": [
+      "llm"
+    ],
+    "em-034-education-equity-ai": [
+      "llm"
+    ],
+    "em-033-space-exploration-ai": [
+      "llm"
+    ],
+    "em-035-health-equity-ai": [
+      "llm"
+    ],
+    "em-036-economic-equity-ai": [
+      "llm"
+    ],
+    "em-037-environmental-justice-ai": [
+      "llm"
+    ],
+    "em-038-human-rights-ai": [
+      "llm"
+    ],
+    "em-039-peacebuilding-ai": [
+      "llm"
+    ],
+    "em-040-telemedicine-ai": [
+      "llm"
+    ],
+    "em-041-ai-climate-adaptation": [
+      "llm"
+    ],
+    "em-042-space-agriculture-ai": [
+      "llm"
+    ],
+    "em-043-quantum-communication-ai": [
+      "llm"
+    ],
+    "em-044-robotics-surgery-ai": [
+      "llm"
+    ],
+    "em-045-ai-disaster-response": [
+      "llm"
+    ],
+    "em-047-ai-environmental-monitoring": [
+      "llm",
+      "monitoring"
+    ],
+    "em-048-space-manufacturing-ai": [
+      "llm"
+    ],
+    "em-049-ai-ocean-exploration": [
+      "llm"
+    ],
+    "em-050-ai-archaeology": [
+      "llm"
+    ],
+    "enhanced-cursor-rules": [
+      "devtools",
+      "llm",
+      "security"
+    ],
+    "et-012-educational-content-library": [
+      "agent",
+      "dashboard"
+    ],
+    "et-015-homeschool-curriculum": [
+      "agent",
+      "dashboard"
+    ],
+    "fh-015-ai-nutrition-planner": [
+      "llm"
+    ],
+    "fh-017-cooking-content-brand": [
+      "agent",
+      "automation",
+      "llm"
+    ],
+    "fh-020-restaurant-pos-system": [
+      "agent",
+      "automation",
+      "llm"
+    ],
+    "fh-022-specialty-coffee-shop": [
+      "agent",
+      "automation",
+      "llm"
+    ],
+    "fh-025-ice-cream-shop": [
+      "agent",
+      "automation",
+      "llm"
+    ],
+    "fin-002-credit-repair-automation": [
+      "automation"
+    ],
+    "fin-003-ai-boss-hub-lite": [
+      "llm"
+    ],
+    "fin-004-genixbanks-ai-treasurer": [
+      "llm"
+    ],
+    "fin-005-u-haul-rental-affiliate": [
+      "agent",
+      "crm",
+      "dashboard",
+      "payments"
+    ],
+    "fin-007-business-credit-building": [
+      "construction"
+    ],
+    "fin-009-crypto-tax-optimizer": [
+      "agent",
+      "crm",
+      "dashboard",
+      "payments"
+    ],
+    "fin-010-ai-powered-garbage-collection": [
+      "llm"
+    ],
+    "fin-011-automated-bookkeeping": [
+      "agent",
+      "crm",
+      "dashboard",
+      "payments"
+    ],
+    "fin-012-invoice-factoring-ai": [
+      "llm"
+    ],
+    "fin-013-charity-donation-ai": [
+      "llm"
+    ],
+    "fin-014-expense-tracker-ai": [
+      "llm"
+    ],
+    "fin-015-financial-wellness-coach": [
+      "agent",
+      "crm",
+      "dashboard",
+      "payments"
+    ],
+    "fin-016-trade-finance-ai": [
+      "llm"
+    ],
+    "fin-017-remittance-ai": [
+      "llm"
+    ],
+    "fin-018-wealth-transfer-ai": [
+      "llm"
+    ],
+    "fin-019-payment-gateway-ai": [
+      "llm",
+      "payments"
+    ],
+    "fin-020-debt-consolidation-ai": [
+      "llm"
+    ],
+    "fin-021-tax-deduction-finder": [
+      "agent",
+      "automation",
+      "llm"
+    ],
+    "fin-022-budget-forecasting-ai": [
+      "llm"
+    ],
+    "fin-024-crowdfunding-ai": [
+      "llm"
+    ],
+    "fin-025-escrow-automation": [
+      "agent",
+      "automation",
+      "llm"
+    ],
+    "fin-026-financial-compliance-scanner": [
+      "agent",
+      "automation",
+      "llm"
+    ],
+    "fin-027-patent-writer-ai": [
+      "llm"
+    ],
+    "fin-028-legal-analyzer-ai": [
+      "llm"
+    ],
+    "fin-030-local-seo-ranker-ai": [
+      "llm"
+    ],
+    "fin-031-investor-dashboard-builder": [
+      "dashboard"
+    ],
+    "fin-032-legal-toolkit-ai": [
+      "llm"
+    ],
+    "fin-033-ai-tax-preparation-service": [
+      "llm"
+    ],
+    "fin-033-legal-toolkit-ai": [
+      "llm"
+    ],
+    "fin-034-payroll-automation": [
+      "agent",
+      "automation",
+      "llm"
+    ],
+    "fin-035-insurance-underwriting-ai": [
+      "llm"
+    ],
+    "fs-013-fitness-apparel": [
+      "fashion-design"
+    ],
+    "fs-017-ai-personal-trainer": [
+      "llm"
+    ],
+    "fs-019-wearable-analytics-platform": [
+      "analytics"
+    ],
+    "genixbank-insight-compass": [
+      "analytics"
+    ],
+    "global-operations-automation": [
+      "automation"
+    ],
+    "iza-os-agents": [
+      "agent"
+    ],
+    "iza-os-ai-consciousness-platform": [
+      "llm"
+    ],
+    "iza-os-ai-core-platform": [
+      "llm"
+    ],
+    "iza-os-ai-nlp-platform": [
+      "llm"
+    ],
+    "iza-os-ai-optimization-platform": [
+      "llm"
+    ],
+    "iza-os-ai-prediction-platform": [
+      "analytics",
+      "llm"
+    ],
+    "iza-os-ai-vision-platform": [
+      "llm"
+    ],
+    "iza-os-analytics": [
+      "agent",
+      "analytics",
+      "dashboard",
+      "monitoring",
+      "notifications"
+    ],
+    "iza-os-api-gateway-bot": [
+      "api",
+      "automation"
+    ],
+    "iza-os-automation": [
+      "automation"
+    ],
+    "iza-os-automation-integration": [
+      "automation"
+    ],
+    "iza-os-business": [
+      "automation",
+      "crm",
+      "llm"
+    ],
+    "iza-os-cli": [
+      "devtools"
+    ],
+    "iza-os-core": [
+      "devtools",
+      "llm"
+    ],
+    "iza-os-cybersecurity-monitoring-bot": [
+      "monitoring",
+      "security"
+    ],
+    "iza-os-data": [
+      "agent",
+      "api",
+      "construction",
+      "graph",
+      "monitoring"
+    ],
+    "iza-os-deployment-automation-bot": [
+      "automation"
+    ],
+    "iza-os-enterprise": [
+      "analytics",
+      "api",
+      "dashboard",
+      "database",
+      "llm",
+      "monitoring"
+    ],
+    "iza-os-inference-engine": [
+      "llm"
+    ],
+    "iza-os-infrastructure": [
+      "devtools"
+    ],
+    "iza-os-infrastructure-monitoring-bot": [
+      "monitoring"
+    ],
+    "iza-os-intelligence-core": [
+      "analytics",
+      "llm",
+      "machine-learning"
+    ],
+    "iza-os-inventory-management-analytics-bot": [
+      "analytics",
+      "automation",
+      "llm",
+      "machine-learning"
+    ],
+    "iza-os-inventory-management-automation-bot": [
+      "analytics",
+      "api",
+      "automation",
+      "dashboard",
+      "database",
+      "llm",
+      "monitoring"
+    ],
+    "iza-os-inventory-management-monitoring-bot": [
+      "automation",
+      "monitoring"
+    ],
+    "iza-os-inventory-management-optimization-bot": [
+      "automation",
+      "llm",
+      "machine-learning"
+    ],
+    "iza-os-legal-research-discovery-bot": [
+      "automation"
+    ],
+    "iza-os-legal-research-processing-bot": [
+      "automation"
+    ],
+    "iza-os-legal-research-synthesis-bot": [
+      "automation"
+    ],
+    "iza-os-llm-adapter": [
+      "llm"
+    ],
+    "iza-os-marketing-automation-analytics-bot": [
+      "analytics",
+      "automation",
+      "llm",
+      "machine-learning"
+    ],
+    "iza-os-marketing-core": [
+      "analytics"
+    ],
+    "iza-os-mcp": [
+      "mcp"
+    ],
+    "iza-os-ml": [
+      "machine-learning"
+    ],
+    "iza-os-model-training": [
+      "crm",
+      "llm"
+    ],
+    "iza-os-monitoring": [
+      "monitoring"
+    ],
+    "iza-os-monitoring-integration": [
+      "monitoring"
+    ],
+    "iza-os-nlp-pipeline": [
+      "crm"
+    ],
+    "iza-os-notification-bot": [
+      "monitoring",
+      "notifications"
+    ],
+    "iza-os-operations-core": [
+      "automation",
+      "monitoring",
+      "security"
+    ],
+    "iza-os-ops": [
+      "automation",
+      "crm",
+      "devtools",
+      "monitoring",
+      "search",
+      "security"
+    ],
+    "iza-os-platform-core": [
+      "api",
+      "mcp"
+    ],
+    "iza-os-predictive-analytics-bot": [
+      "analytics",
+      "llm"
+    ],
+    "iza-os-prompt-engineering": [
+      "llm"
+    ],
+    "iza-os-recommendation-engine": [
+      "llm"
+    ],
+    "iza-os-revenue": [
+      "analytics",
+      "api",
+      "payments"
+    ],
+    "iza-os-sales-core": [
+      "automation",
+      "crm"
+    ],
+    "iza-os-security": [
+      "security"
+    ],
+    "iza-os-security-compliance-bot": [
+      "monitoring",
+      "security"
+    ],
+    "iza-os-semantic-search": [
+      "llm",
+      "search"
+    ],
+    "iza-os-specs": [
+      "llm"
+    ],
+    "iza-os-third-party-apis": [
+      "api"
+    ],
+    "iza-os-vector-database": [
+      "database",
+      "search"
+    ],
+    "legal-001-ai-boss-holdings": [
+      "llm"
+    ],
+    "lt-001-truck-dispatch-company": [
+      "agent",
+      "automation",
+      "crm",
+      "llm"
+    ],
+    "lt-002-freight-brokerage": [
+      "monitoring"
+    ],
+    "lt-004-last-mile-delivery-dispatch": [
+      "monitoring"
+    ],
+    "lt-007-construction-dispatch": [
+      "construction",
+      "monitoring"
+    ],
+    "lt-008-towing-dispatch": [
+      "monitoring"
+    ],
+    "lt-009-hvac-technician-dispatch": [
+      "monitoring"
+    ],
+    "lt-010-field-service-dispatch": [
+      "construction"
+    ],
+    "lt-011-dispatch-software": [
+      "monitoring"
+    ],
+    "lt-013-logistics-automation-system": [
+      "automation",
+      "monitoring"
+    ],
+    "lt-014-ai-route-optimization": [
+      "llm"
+    ],
+    "lt-016-trucking-company": [
+      "monitoring"
+    ],
+    "lt-018-local-delivery-company": [
+      "monitoring"
+    ],
+    "lt-019-moving-company": [
+      "monitoring"
+    ],
+    "lt-020-freight-company": [
+      "monitoring"
+    ],
+    "lt-021-warehouse-company": [
+      "monitoring"
+    ],
+    "lt-022-fulfillment-center": [
+      "monitoring"
+    ],
+    "lt-023-storage-business": [
+      "monitoring"
+    ],
+    "lt-024-distribution-company": [
+      "monitoring"
+    ],
+    "lt-025-logistics-marketplace": [
+      "monitoring"
+    ],
+    "lt-028-freight-ai-optimization": [
+      "llm"
+    ],
+    "lt-029-supply-chain-analytics": [
+      "analytics"
+    ],
+    "mc-001-youtube-channel-network": [
+      "agent",
+      "automation",
+      "llm"
+    ],
+    "mc-002-podcast-network": [
+      "agent",
+      "automation",
+      "llm"
+    ],
+    "mc-003-blog-network": [
+      "agent",
+      "automation",
+      "llm"
+    ],
+    "mc-005-content-creation-studio": [
+      "agent",
+      "automation",
+      "llm"
+    ],
+    "mc-012-news-website": [
+      "agent",
+      "automation",
+      "llm"
+    ],
+    "mc-019-digital-download-store": [
+      "agent",
+      "automation",
+      "llm"
+    ],
+    "mc-020-nft-marketplace": [
+      "agent",
+      "automation",
+      "llm"
+    ],
+    "mcp-integration-hub": [
+      "mcp"
+    ],
+    "mobile-access-manager": [
+      "api",
+      "dashboard",
+      "monitoring",
+      "notifications"
+    ],
+    "nexus-ai-enterprise-platform": [
+      "agent",
+      "llm",
+      "monitoring",
+      "security"
+    ],
+    "op-001-venture-automation-agency": [
+      "automation",
+      "payments"
+    ],
+    "op-003-agent-services-hub": [
+      "agent"
+    ],
+    "ops-001-fractional-cto-agency": [
+      "agent",
+      "automation",
+      "llm"
+    ],
+    "ops-003-event-planning-ai": [
+      "llm"
+    ],
+    "ops-004-inventory-management-ai": [
+      "llm"
+    ],
+    "ops-005-project-management-ai": [
+      "llm"
+    ],
+    "ops-006-document-automation-ai": [
+      "automation",
+      "llm"
+    ],
+    "ops-007-meeting-assistant-ai": [
+      "llm"
+    ],
+    "ops-008-recruitment-ai": [
+      "llm"
+    ],
+    "ops-009-onboarding-ai": [
+      "llm"
+    ],
+    "ops-010-training-platform-ai": [
+      "llm"
+    ],
+    "ops-011-performance-review-ai": [
+      "llm"
+    ],
+    "ops-012-it-support-ai": [
+      "llm"
+    ],
+    "ops-013-facilities-management-ai": [
+      "llm"
+    ],
+    "ops-014-travel-booking-ai": [
+      "llm"
+    ],
+    "ops-015-expense-management-ai": [
+      "llm"
+    ],
+    "quantum-brain-sync-website": [
+      "automation",
+      "llm"
+    ],
+    "research-lab-automation": [
+      "automation"
+    ],
+    "research-processing-pipeline": [
+      "agent",
+      "analytics",
+      "api",
+      "crm",
+      "database",
+      "llm",
+      "mcp",
+      "workspace"
+    ],
+    "shared-kernels": [
+      "authentication",
+      "payments"
+    ],
+    "sovereign-life": [
+      "agent"
+    ],
+    "tech-001-quantum-algorithm-ai": [
+      "llm"
+    ],
+    "tech-002-ai-compliance-scanner": [
+      "llm"
+    ],
+    "tech-003-cloud-management-ai": [
+      "llm"
+    ],
+    "tech-004-robotics-training-ai": [
+      "llm"
+    ],
+    "tech-005-customer-insights-ai": [
+      "llm"
+    ],
+    "tech-006-voice-assistant-ai": [
+      "llm"
+    ],
+    "tech-007-blockchain-verifier-ai": [
+      "llm"
+    ],
+    "tech-009-content-studio-ai": [
+      "llm"
+    ],
+    "tech-010-smart-home-ai": [
+      "llm"
+    ],
+    "tech-012-data-visualization-ai": [
+      "llm"
+    ],
+    "tech-013-workflow-automation": [
+      "agent",
+      "automation",
+      "llm"
+    ],
+    "tech-014-sentiment-analyzer": [
+      "agent",
+      "automation",
+      "llm"
+    ],
+    "tech-015-image-recognition-ai": [
+      "llm"
+    ],
+    "tech-016-video-editor-ai": [
+      "llm"
+    ],
+    "tech-017-speech-to-text-ai": [
+      "llm"
+    ],
+    "tech-018-text-to-speech-ai": [
+      "llm"
+    ],
+    "tech-020-recommendation-engine": [
+      "agent",
+      "automation",
+      "llm"
+    ],
+    "tech-021-network-security-ai": [
+      "llm",
+      "security"
+    ],
+    "tech-022-database-optimizer": [
+      "database"
+    ],
+    "tech-023-ai-testing-platform": [
+      "llm"
+    ],
+    "tech-025-machine-learning-builder": [
+      "machine-learning"
+    ],
+    "tech-026-ai-ethics-auditor": [
+      "llm"
+    ],
+    "tech-027-predictive-analytics-ai": [
+      "analytics",
+      "llm"
+    ],
+    "tech-028-ai-training-platform": [
+      "llm"
+    ],
+    "tech-029-digital-twin-ai": [
+      "llm"
+    ],
+    "tech-030-ai-monitoring-system": [
+      "llm",
+      "monitoring"
+    ],
+    "tech-031-edge-computing-ai": [
+      "llm"
+    ],
+    "tech-032-ai-integration-hub": [
+      "llm"
+    ],
+    "tech-033-quantum-algorithm-ai": [
+      "llm"
+    ],
+    "tech-034-ai-compliance-scanner": [
+      "llm"
+    ],
+    "tech-035-cloud-management-ai": [
+      "llm"
+    ],
+    "tech-037-customer-insights-ai": [
+      "llm"
+    ],
+    "tech-038-voice-assistant-ai": [
+      "llm"
+    ],
+    "tech-039-blockchain-verifier-ai": [
+      "llm"
+    ],
+    "tech-040-cybersecurity-shield": [
+      "agent",
+      "automation",
+      "llm",
+      "security"
+    ],
+    "tech-041-content-studio-ai": [
+      "llm"
+    ],
+    "tech-042-smart-home-ai": [
+      "llm"
+    ],
+    "tech-044-data-visualization-ai": [
+      "llm"
+    ],
+    "tech-045-workflow-automation": [
+      "agent",
+      "automation",
+      "llm"
+    ],
+    "tech-046-sentiment-analyzer": [
+      "agent",
+      "automation",
+      "llm"
+    ],
+    "tech-047-image-recognition-ai": [
+      "llm"
+    ],
+    "tech-048-video-editor-ai": [
+      "llm"
+    ],
+    "tech-049-speech-to-text-ai": [
+      "llm"
+    ],
+    "tech-051-fraud-prevention-ai": [
+      "llm"
+    ],
+    "tech-052-recommendation-engine": [
+      "agent",
+      "automation",
+      "llm"
+    ],
+    "tech-053-network-security-ai": [
+      "llm",
+      "security"
+    ],
+    "tech-054-database-optimizer": [
+      "database"
+    ],
+    "tech-055-ai-testing-platform": [
+      "llm"
+    ],
+    "tech-057-machine-learning-builder": [
+      "machine-learning"
+    ],
+    "tech-058-ai-ethics-auditor": [
+      "llm"
+    ],
+    "tech-059-predictive-analytics-ai": [
+      "analytics",
+      "llm"
+    ],
+    "tech-060-ai-training-platform": [
+      "llm"
+    ],
+    "tech-ventures-portfolio": [
+      "portfolio"
+    ],
+    "unified-dashboard-system": [
+      "dashboard",
+      "monitoring"
+    ],
+    "venture-contract-engine": [
+      "notifications"
+    ],
+    "xyops-integration": [
+      "automation",
+      "crm",
+      "monitoring",
+      "scheduling"
+    ],
+    "_master-governance": [
+      "agent",
+      "llm"
+    ],
+    "venture-pipeline": [
+      "crm"
+    ],
+    "ventures": [
+      "database"
+    ],
+    "bw-040-beauty-tools-brand": [
+      "agent",
+      "dashboard"
+    ],
+    "bw-039-cosmetics-brand": [
+      "agent",
+      "dashboard"
+    ],
+    "bw-038-photoshoot-makeup-team": [
+      "agent",
+      "dashboard"
+    ],
+    "bw-037-mobile-makeup-artist": [
+      "agent",
+      "dashboard"
+    ],
+    "bw-035-makeup-studio": [
+      "agent",
+      "dashboard"
+    ],
+    "bw-033-ai-hairstyle-simulator": [
+      "llm"
+    ],
+    "bw-030-scalp-treatment-products": [
+      "agent",
+      "dashboard"
+    ],
+    "bw-028-wig-brand": [
+      "agent",
+      "dashboard"
+    ],
+    "bw-025-wig-installation-studio": [
+      "agent",
+      "dashboard"
+    ],
+    "bw-022-barbershop": [
+      "agent",
+      "dashboard"
+    ],
+    "bw-020-ai-nail-design-generator": [
+      "llm"
+    ],
+    "bw-019-salon-management-software": [
+      "agent",
+      "dashboard"
+    ],
+    "bw-010-online-lash-education": [
+      "agent",
+      "dashboard"
+    ],
+    "bw-009-franchise-lash-salons": [
+      "agent",
+      "dashboard"
+    ],
+    "bw-008-private-label-lashes": [
+      "agent",
+      "dashboard"
+    ],
+    "bw-007-lash-kits---tools": [
+      "agent",
+      "dashboard"
+    ],
+    "bw-006-lash-glue-brand": [
+      "agent",
+      "dashboard"
+    ],
+    "bw-005-lash-supply-company": [
+      "agent",
+      "dashboard"
+    ],
+    "bw-003-luxury-lash-bar": [
+      "agent",
+      "dashboard"
+    ],
+    "bw-001-lash-extension-studio": [
+      "agent",
+      "dashboard"
+    ],
+    "bw-001-up-next-web": [
+      "authentication",
+      "dashboard",
+      "database",
+      "payments",
+      "scheduling"
+    ],
+    "up-next-marketplace": [
+      "api",
+      "authentication",
+      "dashboard",
+      "database",
+      "notifications",
+      "payments"
+    ],
+    "ai-001-ai-command-center": [
+      "agent",
+      "dashboard",
+      "llm"
+    ],
+    "ht-004-data-api": [
+      "api"
+    ],
+    "et-003-platform": [
+      "dashboard"
+    ],
+    "ai-002-api": [
+      "api",
+      "llm"
+    ],
+    "ai-002-ml-engine": [
+      "llm",
+      "machine-learning"
+    ],
+    "ai-002-web-app": [
+      "dashboard",
+      "llm"
+    ],
+    "ft-001-api-gateway": [
+      "api"
+    ],
+    "iza-os-legal-research-optimization-bot": [
+      "automation"
+    ],
+    "iza-os-legal-research-integration-bot": [
+      "automation"
+    ],
+    "iza-os-legal-research-security-bot": [
+      "automation",
+      "security"
+    ],
+    "iza-os-legal-research-compliance-bot": [
+      "automation"
+    ],
+    "iza-os-legal-research-reporting-bot": [
+      "analytics",
+      "automation"
+    ],
+    "iza-os-legal-research-alerting-bot": [
+      "automation",
+      "monitoring"
+    ],
+    "iza-os-legal-research-management-bot": [
+      "automation"
+    ],
+    "iza-os-legal-research-orchestration-bot": [
+      "automation"
+    ],
+    "iza-os-legal-research-intelligence-bot": [
+      "automation"
+    ],
+    "iza-os-sales-automation-monitoring-bot": [
+      "automation",
+      "crm",
+      "monitoring"
+    ],
+    "iza-os-sales-automation-automation-bot": [
+      "automation",
+      "crm"
+    ],
+    "iza-os-sales-automation-analytics-bot": [
+      "analytics",
+      "automation",
+      "crm"
+    ],
+    "iza-os-sales-automation-optimization-bot": [
+      "automation",
+      "crm"
+    ],
+    "iza-os-sales-automation-integration-bot": [
+      "automation",
+      "crm"
+    ],
+    "iza-os-sales-automation-security-bot": [
+      "automation",
+      "crm",
+      "security"
+    ],
+    "iza-os-sales-automation-compliance-bot": [
+      "automation",
+      "crm"
+    ],
+    "iza-os-sales-automation-reporting-bot": [
+      "analytics",
+      "automation",
+      "crm"
+    ],
+    "iza-os-sales-automation-alerting-bot": [
+      "automation",
+      "crm",
+      "monitoring"
+    ],
+    "iza-os-sales-automation-management-bot": [
+      "automation",
+      "crm"
+    ],
+    "iza-os-sales-automation-orchestration-bot": [
+      "automation",
+      "crm"
+    ],
+    "iza-os-sales-automation-intelligence-bot": [
+      "automation",
+      "crm"
+    ],
+    "iza-os-sales-automation-processing-bot": [
+      "automation",
+      "crm"
+    ],
+    "iza-os-sales-automation-discovery-bot": [
+      "automation",
+      "crm"
+    ],
+    "iza-os-sales-automation-synthesis-bot": [
+      "automation",
+      "crm"
+    ],
+    "iza-os-marketing-automation-monitoring-bot": [
+      "automation",
+      "monitoring"
+    ],
+    "iza-os-marketing-automation-automation-bot": [
+      "automation"
+    ],
+    "iza-os-marketing-automation-optimization-bot": [
+      "automation"
+    ],
+    "iza-os-marketing-automation-integration-bot": [
+      "automation"
+    ],
+    "iza-os-marketing-automation-security-bot": [
+      "automation",
+      "security"
+    ],
+    "iza-os-marketing-automation-compliance-bot": [
+      "automation"
+    ],
+    "iza-os-marketing-automation-reporting-bot": [
+      "analytics",
+      "automation"
+    ],
+    "iza-os-marketing-automation-alerting-bot": [
+      "automation",
+      "monitoring"
+    ],
+    "iza-os-marketing-automation-management-bot": [
+      "automation"
+    ],
+    "iza-os-marketing-automation-orchestration-bot": [
+      "automation"
+    ],
+    "iza-os-marketing-automation-intelligence-bot": [
+      "automation"
+    ],
+    "iza-os-marketing-automation-processing-bot": [
+      "automation"
+    ],
+    "iza-os-marketing-automation-discovery-bot": [
+      "automation"
+    ],
+    "iza-os-marketing-automation-synthesis-bot": [
+      "automation"
+    ],
+    "iza-os-finance-advisor-monitoring-bot": [
+      "automation",
+      "monitoring"
+    ],
+    "iza-os-finance-advisor-automation-bot": [
+      "automation"
+    ],
+    "iza-os-finance-advisor-integration-bot": [
+      "automation"
+    ],
+    "iza-os-finance-advisor-security-bot": [
+      "automation",
+      "security"
+    ],
+    "iza-os-finance-advisor-compliance-bot": [
+      "automation"
+    ],
+    "iza-os-finance-advisor-reporting-bot": [
+      "analytics",
+      "automation"
+    ],
+    "iza-os-finance-advisor-alerting-bot": [
+      "automation",
+      "monitoring"
+    ],
+    "iza-os-finance-advisor-management-bot": [
+      "automation"
+    ],
+    "iza-os-finance-advisor-orchestration-bot": [
+      "automation"
+    ],
+    "iza-os-finance-advisor-optimization-bot": [
+      "analytics",
+      "api",
+      "automation",
+      "database",
+      "llm",
+      "monitoring"
+    ],
+    "iza-os-marketing-automation-campaign-bot": [
+      "automation"
+    ],
+    "iza-os-inventory-management-security-bot": [
+      "analytics",
+      "api",
+      "automation",
+      "database",
+      "llm",
+      "monitoring",
+      "security"
+    ],
+    "iza-os-inventory-management-integration-bot": [
+      "analytics",
+      "api",
+      "automation",
+      "database",
+      "llm",
+      "monitoring"
+    ],
+    "iza-os-inventory-management-compliance-bot": [
+      "analytics",
+      "api",
+      "automation",
+      "database",
+      "llm",
+      "monitoring"
+    ],
+    "iza-os-inventory-management-reporting-bot": [
+      "analytics",
+      "api",
+      "automation",
+      "database",
+      "llm",
+      "monitoring"
+    ],
+    "iza-os-customer-service-automation-bot": [
+      "automation"
+    ],
+    "iza-os-customer-service-email-bot": [
+      "automation",
+      "notifications"
+    ],
+    "iza-os-customer-service-phone-bot": [
+      "automation"
+    ],
+    "iza-os-customer-service-social-bot": [
+      "automation"
+    ],
+    "iza-os-customer-service-faq-bot": [
+      "automation"
+    ],
+    "iza-os-customer-service-escalation-bot": [
+      "automation"
+    ],
+    "iza-os-hr-training-bot": [
+      "automation"
+    ],
+    "iza-os-operations-automation-bot": [
+      "automation"
+    ],
+    "iza-os-operations-analytics-bot": [
+      "analytics"
+    ],
+    "iza-os-operations-security-bot": [
+      "security"
+    ],
+    "iza-os-operations-reporting-bot": [
+      "analytics"
+    ],
+    "iza-os-operations-monitoring-bot": [
+      "monitoring"
+    ],
+    "iza-os-hr-analytics-bot": [
+      "analytics",
+      "automation"
+    ],
+    "iza-os-hr-compliance-bot": [
+      "automation"
+    ],
+    "iza-os-hr-payroll-bot": [
+      "automation"
+    ],
+    "iza-os-hr-onboarding-bot": [
+      "automation"
+    ],
+    "iza-os-hr-recruitment-bot": [
+      "automation"
+    ],
+    "iza-os-project-management-analytics-bot": [
+      "analytics",
+      "automation",
+      "crm",
+      "llm",
+      "machine-learning",
+      "monitoring",
+      "portfolio",
+      "workspace"
+    ],
+    "iza-os-project-management-intelligence-bot": [
+      "automation"
+    ],
+    "iza-os-project-management-management-bot": [
+      "automation"
+    ],
+    "iza-os-project-management-alerting-bot": [
+      "automation",
+      "monitoring"
+    ],
+    "iza-os-project-management-reporting-bot": [
+      "analytics",
+      "automation"
+    ],
+    "iza-os-project-management-compliance-bot": [
+      "automation"
+    ],
+    "iza-os-project-management-security-bot": [
+      "automation",
+      "security"
+    ],
+    "iza-os-project-management-integration-bot": [
+      "automation"
+    ],
+    "iza-os-project-management-optimization-bot": [
+      "automation"
+    ],
+    "iza-os-project-management-automation-bot": [
+      "automation"
+    ],
+    "iza-os-project-management-monitoring-bot": [
+      "automation",
+      "monitoring"
+    ],
+    "iza-os-project-management-synthesis-bot": [
+      "analytics",
+      "api",
+      "automation",
+      "database",
+      "llm",
+      "monitoring"
+    ],
+    "iza-os-project-management-orchestration-bot": [
+      "analytics",
+      "api",
+      "automation",
+      "database",
+      "llm",
+      "monitoring"
+    ],
+    "iza-os-project-management-discovery-bot": [
+      "analytics",
+      "api",
+      "automation",
+      "dashboard",
+      "database",
+      "llm",
+      "monitoring"
+    ],
+    "iza-os-project-management-processing-bot": [
+      "automation",
+      "llm"
+    ],
+    "iza-os-finance-advisor-intelligence-bot": [
+      "automation"
+    ],
+    "iza-os-finance-advisor-processing-bot": [
+      "automation"
+    ],
+    "iza-os-finance-advisor-discovery-bot": [
+      "automation"
+    ],
+    "iza-os-finance-advisor-synthesis-bot": [
+      "automation"
+    ],
+    "iza-os-finance-advisor-analytics-bot": [
+      "analytics",
+      "automation",
+      "llm",
+      "machine-learning",
+      "monitoring",
+      "portfolio"
+    ],
+    "jcode": [
+      "agent"
+    ],
+    "OpenMontage": [
+      "agent",
+      "llm"
+    ],
+    "ponytail": [
+      "agent",
+      "llm"
+    ],
+    "awesome-hermes-agent": [
+      "agent"
+    ],
+    "claude-squad": [
+      "agent",
+      "devtools",
+      "llm"
+    ],
+    "starter": [
+      "api",
+      "database"
+    ],
+    "lastsaas": [
+      "agent",
+      "llm",
+      "payments"
+    ],
+    "CMSaasStarter": [
+      "authentication",
+      "dashboard",
+      "payments"
+    ],
+    "nextacular": [
+      "payments"
+    ],
+    "saas": [
+      "dashboard",
+      "database"
+    ],
+    "magic-mcp": [
+      "dashboard",
+      "devtools",
+      "mcp"
+    ],
+    "plugins": [
+      "llm"
+    ],
+    "taste-skill": [
+      "llm"
+    ],
+    "agent-skills": [
+      "agent",
+      "llm"
+    ],
+    "skills": [
+      "llm"
+    ],
+    "browser-harness": [
+      "llm"
+    ],
+    "claude-skills": [
+      "agent",
+      "devtools",
+      "llm",
+      "workspace"
+    ],
+    "500-AI-Agents-Projects": [
+      "agent",
+      "llm"
+    ],
+    "MinerU": [
+      "agent",
+      "automation",
+      "llm",
+      "workspace"
+    ],
+    "herdr": [
+      "agent"
+    ],
+    "design.md": [
+      "agent",
+      "authentication"
+    ],
+    "hiring-agent": [
+      "agent",
+      "llm"
+    ],
+    "orca": [
+      "agent"
+    ],
+    "codebase-memory-mcp": [
+      "graph",
+      "mcp"
+    ],
+    "Anthropic-Cybersecurity-Skills": [
+      "agent",
+      "devtools",
+      "llm",
+      "security"
+    ],
+    "loop-engineering": [
+      "agent",
+      "devtools",
+      "llm"
+    ],
+    "claude-seo": [
+      "agent",
+      "analytics",
+      "api",
+      "devtools",
+      "llm"
+    ],
+    "awesome-n8n-templates": [
+      "agent",
+      "automation",
+      "devtools",
+      "llm",
+      "notifications",
+      "ocr",
+      "rag",
+      "workspace"
+    ],
+    "Unlimited-OCR": [
+      "ocr"
+    ],
+    "hermes-desktop": [
+      "agent"
+    ],
+    "obsidian-second-brain": [
+      "agent",
+      "devtools",
+      "llm",
+      "search",
+      "workspace"
+    ],
+    "obsidian-mind": [
+      "agent",
+      "devtools",
+      "llm",
+      "workspace"
+    ],
+    "production-grade-agentic-system": [
+      "agent"
+    ],
+    "unlim-cloud": [
+      "authentication",
+      "devtools"
+    ],
+    "mcp-server-qdrant": [
+      "mcp"
+    ],
+    "claude-ads": [
+      "agent",
+      "devtools",
+      "llm"
+    ],
+    "pm-skills": [
+      "agent",
+      "automation",
+      "construction",
+      "devtools",
+      "llm",
+      "monitoring"
+    ],
+    "harness": [
+      "agent"
+    ],
+    "Open-LLM-VTuber": [
+      "llm"
+    ],
+    "CopilotKit": [
+      "agent",
+      "dashboard"
+    ],
+    "codegraph": [
+      "agent",
+      "devtools",
+      "graph",
+      "llm"
+    ],
+    "stop-slop": [
+      "llm"
+    ],
+    "odysseus": [
+      "llm",
+      "workspace"
+    ],
+    "wayland": [
+      "agent",
+      "llm"
+    ],
+    "knowledge-work-plugins": [
+      "agent",
+      "automation",
+      "crm",
+      "devtools",
+      "llm",
+      "workspace"
+    ],
+    "open-code-review": [
+      "agent",
+      "database",
+      "llm"
+    ],
+    "Awesome-AI-Hacking-Agents": [
+      "agent",
+      "llm"
+    ],
+    "ai-devkit": [
+      "agent",
+      "llm"
+    ],
+    "AutoHedge": [
+      "agent",
+      "llm"
+    ],
+    "websites-100-audit": [
+      "dashboard",
+      "search"
+    ],
+    "fli": [
+      "api",
+      "automation",
+      "dashboard",
+      "devtools",
+      "llm",
+      "mcp",
+      "search"
+    ],
+    "Claude-Code-Everything-You-Need-to-Know": [
+      "automation",
+      "devtools",
+      "llm",
+      "mcp"
+    ],
+    "quant-mind": [
+      "graph",
+      "llm"
+    ],
+    "free-claude-code": [
+      "api",
+      "authentication",
+      "automation",
+      "dashboard",
+      "devtools",
+      "llm"
+    ],
+    "awesome-nano-banana-pro-prompts": [
+      "llm"
+    ],
+    "chatwoot": [
+      "notifications"
+    ],
+    "coolify": [
+      "database"
+    ],
+    "mattermost": [
+      "workspace"
+    ],
+    "langfuse": [
+      "devtools",
+      "llm",
+      "monitoring"
+    ],
+    "ollama": [
+      "llm"
+    ],
+    "neo4j": [
+      "graph"
+    ],
+    "qdrant": [
+      "database",
+      "llm",
+      "rag",
+      "search"
+    ],
+    "kong": [
+      "api",
+      "llm"
+    ],
+    "keycloak": [
+      "authentication"
+    ],
+    "nats-server": [
+      "notifications",
+      "security"
+    ],
+    "meilisearch": [
+      "api",
+      "llm",
+      "search"
+    ],
+    "typesense": [
+      "construction",
+      "search"
+    ],
+    "datahub": [
+      "llm"
+    ],
+    "OpenMetadata": [
+      "agent",
+      "construction",
+      "llm"
+    ],
+    "agentic-inbox": [
+      "agent",
+      "llm",
+      "notifications"
+    ],
+    "daily_stock_analysis": [
+      "dashboard",
+      "llm",
+      "notifications"
+    ],
+    "papermark": [
+      "analytics"
+    ],
+    "osiris": [
+      "dashboard"
+    ],
+    "obsidian-git": [
+      "workspace"
+    ],
+    "tirreno": [
+      "security"
+    ],
+    "easy-vibe": [
+      "dashboard",
+      "devtools",
+      "llm",
+      "rag"
+    ],
+    "12-factor-agents": [
+      "agent",
+      "llm"
+    ],
+    "ViMax": [
+      "agent"
+    ],
+    "academic-research-skills": [
+      "devtools",
+      "llm"
+    ],
+    "openhuman": [
+      "llm"
+    ],
+    "ai-engineering-from-scratch": [
+      "llm"
+    ],
+    "cal.diy": [
+      "scheduling"
+    ],
+    "Ghost": [
+      "devtools",
+      "payments",
+      "security"
+    ],
+    "n8n": [
+      "automation",
+      "construction",
+      "llm"
+    ],
+    "listmonk": [
+      "dashboard"
+    ],
+    "penpot": [
+      "workspace"
+    ],
+    "warp": [
+      "agent"
+    ],
+    "SocratiCode": [
+      "api",
+      "database",
+      "mcp",
+      "search"
+    ],
+    "the-architect": [
+      "agent",
+      "devtools",
+      "llm"
+    ],
+    "watch-cli": [
+      "devtools"
+    ],
+    "9router": [
+      "devtools",
+      "llm"
+    ],
+    "CloakBrowser": [
+      "api",
+      "automation",
+      "payments"
+    ],
+    "AiToEarn": [
+      "llm"
+    ],
+    "AI-Trader": [
+      "agent",
+      "llm"
+    ],
+    "tauri": [
+      "dashboard"
+    ],
+    "PureMac": [
+      "monitoring"
+    ],
+    "paperclip": [
+      "agent"
+    ],
+    "OpenSwarm": [
+      "devtools",
+      "llm"
+    ],
+    "engram": [
+      "agent",
+      "api",
+      "database",
+      "devtools",
+      "llm",
+      "mcp"
+    ],
+    "classbuild": [
+      "llm"
+    ],
+    "ppt-master": [
+      "llm",
+      "workspace"
+    ],
+    "awesome-codex-skills": [
+      "api",
+      "automation",
+      "devtools"
+    ],
+    "Pixelle-Video": [
+      "llm"
+    ],
+    "symphony": [
+      "agent"
+    ],
+    "Claude-OSINT": [
+      "llm"
+    ],
+    "dockpanel": [
+      "database",
+      "monitoring",
+      "security"
+    ],
+    "awesome-scalability": [
+      "construction",
+      "machine-learning",
+      "workspace"
+    ],
+    "future-agi": [
+      "agent",
+      "llm"
+    ],
+    "Fabric": [
+      "llm"
+    ],
+    "sentry": [
+      "monitoring"
+    ],
+    "prometheus": [
+      "database",
+      "monitoring"
+    ],
+    "grafana": [
+      "database",
+      "monitoring",
+      "search"
+    ],
+    "argo-cd": [
+      "scheduling"
+    ],
+    "cilium": [
+      "api",
+      "authentication",
+      "monitoring",
+      "security",
+      "workspace"
+    ],
+    "loki": [
+      "agent",
+      "monitoring"
+    ],
+    "backstage": [
+      "construction"
+    ],
+    "ai-for-grant-writing": [
+      "llm"
+    ],
+    "awesome-startup-credits": [
+      "analytics",
+      "database",
+      "notifications"
+    ],
+    "langgraph": [
+      "agent"
+    ],
+    "llama_index": [
+      "agent",
+      "ocr"
+    ],
+    "thunderbolt": [
+      "llm"
+    ],
+    "FinceptTerminal": [
+      "analytics"
+    ],
+    "Shadowbroker": [
+      "agent",
+      "llm"
+    ],
+    "opensre": [
+      "agent",
+      "llm"
+    ],
+    "Claude-Code-Game-Studios": [
+      "agent",
+      "devtools",
+      "llm"
+    ],
+    "evolver": [
+      "agent",
+      "llm"
+    ],
+    "omi": [
+      "llm"
+    ],
+    "andrej-karpathy-skills": [
+      "devtools",
+      "llm"
+    ],
+    "gallery": [
+      "llm",
+      "machine-learning"
+    ],
+    "DeepTutor": [
+      "agent"
+    ],
+    "GenericAgent": [
+      "agent",
+      "llm"
+    ],
+    "multica": [
+      "agent"
+    ],
+    "autoskills": [
+      "llm"
+    ],
+    "magika": [
+      "llm"
+    ],
+    "paseo": [
+      "agent",
+      "devtools",
+      "llm",
+      "monitoring"
+    ],
+    "agentmemory": [
+      "agent",
+      "llm"
+    ],
+    "obsidian-skills": [
+      "agent",
+      "devtools",
+      "workspace"
+    ],
+    "Deep-Dive-Claude-Code": [
+      "agent",
+      "devtools",
+      "llm"
+    ],
+    "snip": [
+      "agent",
+      "llm"
+    ],
+    "reverse-SynthID": [
+      "database",
+      "llm"
+    ],
+    "claude-howto": [
+      "agent",
+      "devtools",
+      "llm"
+    ],
+    "openscreen": [
+      "devtools",
+      "payments"
+    ],
+    "oh-my-codex": [
+      "agent",
+      "devtools"
+    ],
+    "sherlock": [
+      "search",
+      "workspace"
+    ],
+    "RAG-Anything": [
+      "rag",
+      "workspace"
+    ],
+    "LightRAG": [
+      "rag"
+    ],
+    "graphify": [
+      "database",
+      "devtools",
+      "graph",
+      "llm"
+    ],
+    "agent-orchestrator": [
+      "agent"
+    ],
+    "apfel": [
+      "api",
+      "devtools",
+      "llm"
+    ],
+    "Awesome-OSINT-List": [
+      "llm",
+      "search",
+      "security"
+    ],
+    "METATRON": [
+      "llm"
+    ],
+    "My-Brain-Is-Full-Crew": [
+      "workspace"
+    ],
+    "NotFair": [
+      "devtools",
+      "llm"
+    ],
+    "langextract": [
+      "api",
+      "llm",
+      "ocr",
+      "workspace"
+    ],
+    "Bayesian-Credit-Risk-Engine": [
+      "machine-learning"
+    ],
+    "antigravity-awesome-skills": [
+      "agent",
+      "automation",
+      "devtools",
+      "llm",
+      "search",
+      "security"
+    ],
+    "lemonade": [
+      "llm"
+    ],
+    "claude-code-source": [
+      "devtools",
+      "llm"
+    ],
+    "collection-claude-code-source-code": [
+      "agent",
+      "devtools",
+      "llm",
+      "search"
+    ],
+    "claurst": [
+      "agent"
+    ],
+    "learn-coding-agent": [
+      "agent"
+    ],
+    "goose": [
+      "agent",
+      "llm"
+    ],
+    "mission-control": [
+      "agent",
+      "api",
+      "llm"
+    ],
+    "ai-website-cloner-template": [
+      "agent",
+      "llm"
+    ],
+    "awesome-claude-code": [
+      "agent",
+      "devtools",
+      "llm"
+    ],
+    "Agent-Reach": [
+      "agent",
+      "api",
+      "devtools",
+      "llm",
+      "search"
+    ],
+    "marketplace": [
+      "authentication",
+      "dashboard",
+      "workspace"
+    ],
+    "ECC": [
+      "agent",
+      "automation",
+      "devtools",
+      "llm",
+      "security"
+    ],
+    "claude-hud": [
+      "agent",
+      "devtools",
+      "llm"
+    ],
+    "project-nomad": [
+      "llm"
+    ],
+    "hermes-agent": [
+      "agent"
+    ],
+    "last30days-skill": [
+      "agent",
+      "llm"
+    ],
+    "agentscope": [
+      "agent"
+    ],
+    "chandra": [
+      "ocr"
+    ],
+    "oh-my-claudecode": [
+      "agent",
+      "automation",
+      "devtools",
+      "llm"
+    ],
+    "RuView": [
+      "monitoring"
+    ],
+    "ui-ux-pro-max-skill": [
+      "construction",
+      "dashboard",
+      "llm"
+    ],
+    "Understand-Anything": [
+      "devtools",
+      "graph",
+      "llm",
+      "search"
+    ],
+    "zeroboot": [
+      "agent",
+      "llm"
+    ],
+    "context-hub": [
+      "agent",
+      "api",
+      "devtools",
+      "llm",
+      "payments",
+      "search"
+    ],
+    "opendataloader-pdf": [
+      "llm"
+    ],
+    "opengap": [
+      "agent",
+      "llm"
+    ],
+    "crawl4ai": [
+      "llm"
+    ],
+    "claudian": [
+      "devtools",
+      "llm",
+      "workspace"
+    ],
+    "apple-bento-grid": [
+      "agent",
+      "devtools",
+      "llm"
+    ],
+    "gh-aw-mcpg": [
+      "agent",
+      "automation",
+      "llm",
+      "mcp"
+    ],
+    "Crucix": [
+      "agent",
+      "dashboard",
+      "llm",
+      "monitoring",
+      "notifications"
+    ],
+    "MiroFish": [
+      "agent",
+      "analytics",
+      "llm"
+    ],
+    "meetily": [
+      "llm"
+    ],
+    "facebook-cracker": [
+      "database"
+    ],
+    "browser": [
+      "automation",
+      "llm"
+    ],
+    "claude-code-best-practice": [
+      "agent",
+      "automation",
+      "devtools",
+      "llm"
+    ],
+    "InsForge": [
+      "agent",
+      "authentication",
+      "database",
+      "llm"
+    ],
+    "GitNexus": [
+      "agent",
+      "graph",
+      "rag"
+    ],
+    "OpenViking": [
+      "agent",
+      "database",
+      "llm",
+      "rag"
+    ],
+    "autoresearch": [
+      "agent",
+      "llm"
+    ],
+    "claude-in-mobile": [
+      "automation",
+      "llm",
+      "mcp"
+    ],
+    "xyops": [
+      "automation",
+      "monitoring",
+      "notifications",
+      "scheduling"
+    ],
+    "natively-cluely-ai-assistant": [
+      "llm",
+      "payments",
+      "rag",
+      "workspace"
+    ],
+    "DeepSeek-OCR": [
+      "llm",
+      "ocr"
+    ],
+    "ClawWork": [
+      "llm"
+    ],
+    "litellm": [
+      "api",
+      "devtools",
+      "llm",
+      "monitoring"
+    ],
+    "CL1_LLM_Encoder": [
+      "llm",
+      "monitoring"
+    ],
+    "waoowaoo": [
+      "agent",
+      "automation",
+      "llm"
+    ],
+    "deer-flow": [
+      "agent",
+      "automation",
+      "llm"
+    ],
+    "pinchtab": [
+      "automation",
+      "dashboard"
+    ],
+    "worldmonitor": [
+      "dashboard",
+      "llm",
+      "monitoring"
+    ],
+    "awesome-claude-agents": [
+      "agent",
+      "devtools",
+      "llm"
+    ],
+    "awesome-openclaw-usecases": [
+      "agent",
+      "api",
+      "search",
+      "security"
+    ],
+    "rowboat": [
+      "llm"
+    ],
+    "visual-explainer": [
+      "agent"
+    ],
+    "claude-code-telegram": [
+      "devtools",
+      "llm"
+    ],
+    "prompts.chat": [
+      "llm"
+    ],
+    "vectorvfs": [
+      "database",
+      "search"
+    ],
+    "claude-code-cookbook": [
+      "automation",
+      "devtools",
+      "llm"
+    ],
+    "jiron": [
+      "agent",
+      "api",
+      "llm"
+    ],
+    "claude-code-remote": [
+      "api",
+      "dashboard",
+      "devtools",
+      "llm"
+    ],
+    "FinRobot": [
+      "agent",
+      "llm"
+    ],
+    "companion": [
+      "dashboard",
+      "devtools",
+      "llm"
+    ],
+    "bloomberg-terminal": [
+      "api",
+      "llm"
+    ],
+    "claude-code-templates": [
+      "devtools",
+      "llm",
+      "monitoring"
+    ],
+    "awesome-llm-apps": [
+      "agent",
+      "llm",
+      "rag"
+    ],
+    "shannon": [
+      "api",
+      "llm"
+    ],
+    "eigent": [
+      "llm",
+      "workspace"
+    ],
+    "ChatDev": [
+      "agent",
+      "llm",
+      "workspace"
+    ],
+    "antigravity-link-extension": [
+      "api",
+      "devtools",
+      "llm",
+      "mcp"
+    ],
+    "HexSecGPT": [
+      "llm"
+    ],
+    "get-shit-done": [
+      "devtools",
+      "llm"
+    ],
+    "dash": [
+      "agent"
+    ],
+    "vibetunnel": [
+      "agent"
+    ],
+    "Peekaboo": [
+      "agent",
+      "devtools",
+      "llm",
+      "mcp"
+    ],
+    "kimi-cli": [
+      "agent",
+      "devtools"
+    ],
+    "claude-plugins-official": [
+      "devtools",
+      "llm",
+      "mcp",
+      "security"
+    ],
+    "Mindwtr": [
+      "automation",
+      "mcp",
+      "workspace"
+    ],
+    "oh-my-openagent": [
+      "agent",
+      "devtools"
+    ],
+    "openclaw": [
+      "llm"
+    ],
+    "tinyfish-cookbook": [
+      "agent"
+    ],
+    "clawhub": [
+      "agent",
+      "api",
+      "authentication",
+      "database",
+      "devtools",
+      "llm",
+      "rag",
+      "search"
+    ],
+    "awesome-claude-skills": [
+      "automation",
+      "llm"
+    ],
+    "pi": [
+      "agent",
+      "api",
+      "devtools",
+      "llm"
+    ],
+    "postgres-mcp": [
+      "agent",
+      "database",
+      "llm",
+      "mcp"
+    ],
+    "open-claude-cowork": [
+      "llm"
+    ],
+    "SuperNavigator": [
+      "agent",
+      "automation",
+      "dashboard",
+      "devtools",
+      "llm",
+      "monitoring",
+      "workspace"
+    ],
+    "deep-searcher": [
+      "database",
+      "llm",
+      "search",
+      "security"
+    ],
+    "grepai": [
+      "agent",
+      "llm",
+      "search"
+    ],
+    "dexter": [
+      "agent"
+    ],
+    "centrifugo": [
+      "api",
+      "automation",
+      "devtools",
+      "llm",
+      "notifications",
+      "payments"
+    ],
+    "navigator": [
+      "devtools",
+      "graph",
+      "llm",
+      "workspace"
+    ],
+    "QuantMuse": [
+      "llm"
+    ],
+    "CyberScraper-2077": [
+      "llm"
+    ],
+    "the-algorithm-ml": [
+      "machine-learning"
+    ],
+    "waveterm": [
+      "automation",
+      "llm"
+    ],
+    "agent-browser": [
+      "agent",
+      "automation",
+      "devtools",
+      "llm"
+    ],
+    "beads": [
+      "agent"
+    ],
+    "superpowers": [
+      "agent",
+      "construction",
+      "devtools",
+      "llm"
+    ],
+    "graphql.github.io": [
+      "api"
+    ],
+    "claude-code-tips": [
+      "automation",
+      "devtools",
+      "llm"
+    ],
+    "textme": [
+      "api",
+      "dashboard",
+      "devtools",
+      "llm",
+      "notifications",
+      "workspace"
+    ],
+    "polar": [
+      "payments"
+    ],
+    "owl": [
+      "agent",
+      "automation",
+      "llm",
+      "workspace"
+    ],
+    "next-ai-draw-io": [
+      "llm"
+    ],
+    "learn-claude-code": [
+      "agent",
+      "devtools",
+      "llm"
+    ],
+    "WeKnora": [
+      "agent",
+      "llm",
+      "rag"
+    ],
+    "web-check": [
+      "agent",
+      "analytics",
+      "dashboard",
+      "llm",
+      "search",
+      "security"
+    ],
+    "memos": [
+      "workspace"
+    ],
+    "CodeWiki": [
+      "agent",
+      "api",
+      "devtools",
+      "llm"
+    ],
+    "onedump": [
+      "database"
+    ],
+    "planning-with-files": [
+      "agent",
+      "devtools",
+      "llm"
+    ],
+    "qgis-gee-data-catalogs-plugin": [
+      "automation",
+      "dashboard",
+      "search"
+    ],
+    "cc-mirror": [
+      "devtools",
+      "llm"
+    ],
+    "exo": [
+      "llm"
+    ],
+    "agents.md": [
+      "agent"
+    ],
+    "hello-agents": [
+      "agent"
+    ],
+    "claude-mem": [
+      "agent",
+      "devtools",
+      "llm"
+    ],
+    "metube": [
+      "dashboard"
+    ],
+    "vibe-kanban": [
+      "agent",
+      "devtools",
+      "llm"
+    ],
+    "claude-code-voice-skill": [
+      "devtools",
+      "llm"
+    ],
+    "awesome-local-llm": [
+      "llm"
+    ],
+    "netbird": [
+      "agent",
+      "api",
+      "authentication",
+      "automation",
+      "dashboard",
+      "llm",
+      "security"
+    ],
+    "blinko": [
+      "llm"
+    ],
+    "yao": [
+      "agent",
+      "llm"
+    ],
+    "awesome-cli-apps": [
+      "devtools"
+    ],
+    "Awesome-Gui-Agents": [
+      "agent"
+    ],
+    "spec-workflow-mcp": [
+      "dashboard",
+      "llm",
+      "mcp",
+      "monitoring"
+    ],
+    "valuecell": [
+      "agent"
+    ],
+    "agenticSeek": [
+      "agent",
+      "api",
+      "llm"
+    ],
+    "open-scouts": [
+      "llm",
+      "monitoring",
+      "notifications",
+      "search"
+    ],
+    "twenty": [
+      "llm"
+    ],
+    "osaurus": [
+      "agent",
+      "authentication",
+      "llm"
+    ],
+    "crewAI": [
+      "agent",
+      "llm"
+    ],
+    "A2A": [
+      "agent",
+      "mcp"
+    ],
+    "registry": [
+      "mcp"
+    ],
+    "mcp-registry": [
+      "llm",
+      "mcp",
+      "security"
+    ],
+    "act": [
+      "automation"
+    ],
+    "claude-quickstarts": [
+      "api",
+      "construction",
+      "llm"
+    ],
+    "it-tools": [
+      "devtools"
+    ],
+    "fresh": [
+      "devtools"
+    ],
+    "llm-council": [
+      "llm"
+    ],
+    "agent-starter-pack": [
+      "agent",
+      "llm",
+      "monitoring"
+    ],
+    "free-llm-api-resources": [
+      "api",
+      "llm"
+    ],
+    "mcp-youtube": [
+      "mcp"
+    ],
+    "Software-planning-mcp": [
+      "llm",
+      "mcp"
+    ],
+    "perplexity-mcp": [
+      "llm",
+      "mcp"
+    ],
+    "brave-search-mcp-server": [
+      "api",
+      "llm",
+      "mcp",
+      "search"
+    ],
+    "byterover-cli": [
+      "agent",
+      "devtools"
+    ],
+    "BettaFish": [
+      "agent"
+    ],
+    "TrendRadar": [
+      "llm",
+      "mcp",
+      "notifications"
+    ],
+    "qwen-code": [
+      "agent",
+      "llm"
+    ],
+    "cli": [
+      "dashboard",
+      "devtools"
+    ],
+    "nextjs-starter": [
+      "dashboard"
+    ],
+    "magic-portfolio": [
+      "dashboard",
+      "portfolio"
+    ],
+    "adk-go": [
+      "agent",
+      "construction",
+      "llm"
+    ],
+    "n8n-workflows": [
+      "automation",
+      "dashboard",
+      "database",
+      "search",
+      "security"
+    ],
+    "call-center-ai": [
+      "agent",
+      "api",
+      "llm"
+    ],
+    "Memori": [
+      "agent",
+      "analytics",
+      "api",
+      "construction",
+      "dashboard",
+      "database",
+      "devtools",
+      "llm"
+    ],
+    "x402": [
+      "payments"
+    ],
+    "MineContext": [
+      "llm"
+    ],
+    "go-sdk": [
+      "devtools",
+      "mcp",
+      "workspace"
+    ],
+    "terraform-provider-aws": [
+      "security"
+    ],
+    "opencloud": [
+      "workspace"
+    ],
+    "ktransformers": [
+      "agent",
+      "llm"
+    ],
+    "dbeaver": [
+      "database"
+    ],
+    "cognee": [
+      "agent",
+      "graph",
+      "llm"
+    ],
+    "L1B3RT4S": [
+      "llm"
+    ],
+    "LocalAI": [
+      "llm"
+    ],
+    "opentui": [
+      "construction"
+    ],
+    "mobilerun": [
+      "agent",
+      "api",
+      "automation",
+      "dashboard",
+      "devtools",
+      "llm"
+    ],
+    "docs": [
+      "workspace"
+    ],
+    "nocobase": [
+      "automation",
+      "construction",
+      "llm"
+    ],
+    "Web-Dev-For-Beginners": [
+      "llm"
+    ],
+    "alertmanager": [
+      "api",
+      "construction",
+      "monitoring",
+      "notifications"
+    ],
+    "strix": [
+      "llm"
+    ],
+    "skyvern": [
+      "automation",
+      "llm"
+    ],
+    "coding-interview-university": [
+      "search"
+    ],
+    "mcp": [
+      "agent",
+      "construction",
+      "llm",
+      "mcp"
+    ],
+    "BrowserOS": [
+      "agent",
+      "api",
+      "authentication",
+      "llm"
+    ],
+    "agor": [
+      "agent",
+      "devtools",
+      "llm"
+    ],
+    "PageIndex": [
+      "rag"
+    ],
+    "convnetjs": [
+      "machine-learning"
+    ],
+    "nanochat": [
+      "llm"
+    ],
+    "finnhub-python": [
+      "api"
+    ],
+    "alpaca-py": [
+      "api",
+      "devtools"
+    ],
+    "client-python": [
+      "api"
+    ],
+    "twelvedata-python": [
+      "api"
+    ],
+    "alpha_vantage": [
+      "api"
+    ],
+    "yfinance": [
+      "api"
+    ],
+    "nn-zero-to-hero": [
+      "construction",
+      "machine-learning"
+    ],
+    "Made-With-ML": [
+      "machine-learning"
+    ],
+    "performer-pytorch": [
+      "machine-learning"
+    ],
+    "adk-samples": [
+      "agent"
+    ],
+    "coralnpu": [
+      "llm",
+      "machine-learning"
+    ],
+    "pandas-ai": [
+      "analytics",
+      "database",
+      "llm",
+      "rag"
+    ],
+    "olmocr": [
+      "llm"
+    ],
+    "docling": [
+      "llm"
+    ],
+    "aws-devops-zero-to-hero": [
+      "authentication",
+      "devtools",
+      "security"
+    ],
+    "cs249r_book": [
+      "construction",
+      "llm",
+      "machine-learning"
+    ],
+    "AFFiNE": [
+      "workspace"
+    ],
+    "gpui-component": [
+      "construction"
+    ],
+    "social-analyzer": [
+      "api",
+      "devtools"
+    ],
+    "agent-lightning": [
+      "agent",
+      "llm"
+    ],
+    "sleepless-agent": [
+      "agent",
+      "devtools",
+      "llm"
+    ],
+    "s": [
+      "automation",
+      "search"
+    ],
+    "minimind": [
+      "llm"
+    ],
+    "micrograd": [
+      "api",
+      "machine-learning"
+    ],
+    "yaak": [
+      "api"
+    ],
+    "deepchat": [
+      "llm"
+    ],
+    "Mindustry": [
+      "automation",
+      "construction"
+    ],
+    "chat-ui": [
+      "dashboard"
+    ],
+    "drawdb": [
+      "database"
+    ],
+    "ladybird": [
+      "dashboard",
+      "security"
+    ],
+    "paperless-ngx": [
+      "authentication"
+    ],
+    "OM1": [
+      "llm"
+    ],
+    "hoppscotch": [
+      "api",
+      "devtools"
+    ],
+    "ubicloud": [
+      "database",
+      "llm"
+    ],
+    "server": [
+      "api",
+      "authentication",
+      "scheduling",
+      "security"
+    ],
+    "GPT_API_free": [
+      "api",
+      "llm"
+    ],
+    "hacker101": [
+      "security"
+    ],
+    "mediawiki": [
+      "workspace"
+    ],
+    "wikipedia-data-science": [
+      "analytics"
+    ],
+    "Wikipedia": [
+      "api"
+    ],
+    "bRAG-langchain": [
+      "rag"
+    ],
+    "chef": [
+      "llm"
+    ],
+    "AP2": [
+      "construction",
+      "llm",
+      "payments"
+    ],
+    "bitcoin": [
+      "workspace"
+    ],
+    "supermemory": [
+      "api",
+      "llm"
+    ],
+    "n8n-mcp": [
+      "automation",
+      "devtools",
+      "llm",
+      "mcp"
+    ],
+    "prompt-eng-interactive-tutorial": [
+      "llm"
+    ],
+    "langchainjs": [
+      "agent"
+    ],
+    "waha": [
+      "api"
+    ],
+    "Prompt-Engineering-Guide": [
+      "agent",
+      "llm",
+      "rag"
+    ],
+    "browser-use": [
+      "agent",
+      "llm"
+    ],
+    "openagents": [
+      "agent",
+      "llm"
+    ],
+    "models.dev": [
+      "database",
+      "llm"
+    ],
+    "console": [
+      "dashboard"
+    ],
+    "eureka": [
+      "devtools"
+    ],
+    "firmware": [
+      "automation",
+      "construction",
+      "monitoring",
+      "notifications"
+    ],
+    "ComfyUI": [
+      "api",
+      "graph"
+    ],
+    "gpt4free": [
+      "llm"
+    ],
+    "changedetection.io": [
+      "monitoring",
+      "notifications"
+    ],
+    "TradingAgents-CN": [
+      "llm"
+    ],
+    "tunix": [
+      "llm"
+    ],
+    "stremio-web": [
+      "automation"
+    ],
+    "glide": [
+      "api",
+      "llm"
+    ],
+    "agent-framework": [
+      "agent",
+      "automation",
+      "construction",
+      "llm"
+    ],
+    "airweave": [
+      "agent",
+      "llm"
+    ],
+    "hyperswitch": [
+      "monitoring",
+      "payments"
+    ],
+    "kestra": [
+      "scheduling"
+    ],
+    "llm-app": [
+      "api",
+      "database",
+      "llm",
+      "rag",
+      "search"
+    ],
+    "lazyssh": [
+      "agent",
+      "authentication",
+      "dashboard",
+      "search",
+      "security"
+    ],
+    "somo": [
+      "monitoring"
+    ],
+    "MoneyPrinterTurbo": [
+      "llm"
+    ],
+    "ai-dev-tasks": [
+      "agent",
+      "llm"
+    ],
+    "humanlayer": [
+      "agent",
+      "llm"
+    ],
+    "jellyfin": [
+      "api"
+    ],
+    "erpnext": [
+      "automation",
+      "crm"
+    ],
+    "onyx": [
+      "llm"
+    ],
+    "oauth2-proxy": [
+      "authentication"
+    ],
+    "opencode": [
+      "agent"
+    ],
+    "agents-course": [
+      "agent"
+    ],
+    "klavis": [
+      "agent",
+      "llm",
+      "mcp"
+    ],
+    "deepeval": [
+      "agent",
+      "construction",
+      "llm",
+      "monitoring",
+      "rag"
+    ],
+    "Trilium": [
+      "workspace"
+    ],
+    "omnara": [
+      "agent",
+      "llm"
+    ],
+    "ai-hedge-fund": [
+      "llm"
+    ],
+    "SQLBot": [
+      "database",
+      "llm",
+      "rag"
+    ],
+    "mlx-lm": [
+      "llm"
+    ],
+    "DeepResearchAgent": [
+      "agent"
+    ],
+    "PaddleOCR": [
+      "llm",
+      "ocr"
+    ],
+    "ccxt": [
+      "api"
+    ],
+    "Vane": [
+      "llm"
+    ],
+    "ROMA": [
+      "agent"
+    ],
+    "note-companion": [
+      "llm",
+      "workspace"
+    ],
+    "awesome-pandas-alternatives": [
+      "api"
+    ],
+    "models": [
+      "machine-learning"
+    ],
+    "gpubootcamp": [
+      "llm"
+    ],
+    "tweakcn": [
+      "automation",
+      "dashboard"
+    ],
+    "nano-banana-hackathon-kit": [
+      "construction"
+    ],
+    "pathway": [
+      "analytics",
+      "api",
+      "crm",
+      "llm",
+      "machine-learning",
+      "rag"
+    ],
+    "raft": [
+      "construction",
+      "machine-learning"
+    ],
+    "TradingAgents": [
+      "agent",
+      "api",
+      "llm",
+      "portfolio"
+    ],
+    "BitNet": [
+      "llm"
+    ],
+    "claude-code-router": [
+      "devtools",
+      "llm"
+    ],
+    "crush": [
+      "agent"
+    ],
+    "awesome-public-datasets": [
+      "database",
+      "llm"
+    ],
+    "koog": [
+      "agent",
+      "construction",
+      "llm"
+    ],
+    "terraform": [
+      "api"
+    ],
+    "convex-backend": [
+      "database"
+    ],
+    "AionUi": [
+      "agent",
+      "devtools",
+      "llm"
+    ],
+    "LEANN": [
+      "rag"
+    ],
+    "agents": [
+      "agent"
+    ],
+    "qlib": [
+      "agent",
+      "llm",
+      "machine-learning"
+    ],
+    "awesome-compose": [
+      "database",
+      "search"
+    ],
+    "frontend-dev-bookmarks": [
+      "api",
+      "dashboard"
+    ],
+    "github-cheat-sheet": [
+      "llm"
+    ],
+    "Thinking-Claude": [
+      "llm"
+    ],
+    "Agent-S": [
+      "agent",
+      "llm"
+    ],
+    "bytebot": [
+      "agent",
+      "llm"
+    ],
+    "ccpm": [
+      "agent",
+      "devtools",
+      "llm",
+      "workspace"
+    ],
+    "Archon": [
+      "llm"
+    ],
+    "system_prompts_leaks": [
+      "devtools",
+      "llm"
+    ],
+    "parlant": [
+      "agent",
+      "llm"
+    ],
+    "DeepCode": [
+      "agent",
+      "dashboard",
+      "devtools",
+      "llm"
+    ],
+    "cai": [
+      "llm",
+      "security"
+    ],
+    "leantime": [
+      "construction"
+    ],
+    "OpenHands": [
+      "llm"
+    ],
+    "Claudable": [
+      "agent",
+      "devtools",
+      "llm"
+    ],
+    "HeadlessBrowsers": [
+      "api",
+      "automation",
+      "llm"
+    ],
+    "memU": [
+      "agent"
+    ],
+    "mem0": [
+      "agent",
+      "llm"
+    ],
+    "awesome-mcp-servers": [
+      "agent",
+      "api",
+      "database",
+      "llm",
+      "mcp",
+      "payments",
+      "search"
+    ],
+    "activepieces": [
+      "agent",
+      "automation",
+      "llm",
+      "mcp"
+    ],
+    "aider": [
+      "llm"
+    ],
+    "saas-starter": [
+      "dashboard",
+      "database",
+      "payments"
+    ],
+    "budibase": [
+      "agent",
+      "llm"
+    ],
+    "telegraf": [
+      "api",
+      "workspace"
+    ],
+    "superdesign": [
+      "agent",
+      "llm"
+    ],
+    "magic": [
+      "agent",
+      "llm",
+      "workspace"
+    ],
+    "sim": [
+      "agent",
+      "llm"
+    ],
+    "aisheets": [
+      "automation",
+      "llm"
+    ],
+    "platform": [
+      "workspace"
+    ],
+    "UI-TARS-desktop": [
+      "agent",
+      "dashboard",
+      "llm"
+    ],
+    "nanobrowser": [
+      "agent",
+      "api",
+      "automation",
+      "llm"
+    ],
+    "novu": [
+      "agent"
+    ],
+    "todoctor": [
+      "devtools"
+    ],
+    "node-telegram-bot-api": [
+      "api"
+    ],
+    "openreplay": [
+      "analytics"
+    ],
+    "voltagent": [
+      "agent",
+      "llm"
+    ],
+    "git-mcp": [
+      "agent",
+      "devtools",
+      "llm",
+      "mcp",
+      "search",
+      "security"
+    ],
+    "jan": [
+      "llm"
+    ],
+    "midday": [
+      "llm",
+      "payments",
+      "workspace"
+    ],
+    "firecrawl": [
+      "api",
+      "search"
+    ],
+    "fastapi_mcp": [
+      "authentication",
+      "mcp"
+    ],
+    "full-stack-fastapi-template": [
+      "database"
+    ],
+    "lazydocker": [
+      "dashboard"
+    ],
+    "lazygit": [
+      "dashboard"
+    ],
+    "codex": [
+      "agent",
+      "devtools"
+    ],
+    "mcp-for-beginners": [
+      "automation",
+      "construction",
+      "llm",
+      "mcp"
+    ],
+    "openai-cookbook": [
+      "api",
+      "llm"
+    ],
+    "vllm": [
+      "llm"
+    ],
+    "nautilus_trader": [
+      "automation"
+    ],
+    "llama.cpp": [
+      "llm"
+    ],
+    "gpt4all": [
+      "llm"
+    ],
+    "open-swe": [
+      "agent"
+    ],
+    "gpt-oss": [
+      "llm"
+    ],
+    "cuvs": [
+      "api",
+      "construction",
+      "database",
+      "llm",
+      "rag",
+      "search"
+    ],
+    "cuml": [
+      "machine-learning"
+    ],
+    "hyperlearn": [
+      "machine-learning"
+    ],
+    "unsloth": [
+      "dashboard",
+      "llm"
+    ],
+    "toolsdk-mcp-registry": [
+      "database",
+      "llm",
+      "mcp"
+    ],
+    "SuperClaude_Framework": [
+      "agent",
+      "automation",
+      "devtools",
+      "llm",
+      "mcp"
+    ],
+    "opcode": [
+      "agent",
+      "devtools",
+      "llm"
+    ],
+    "ruflo": [
+      "agent",
+      "automation",
+      "devtools",
+      "llm",
+      "rag"
+    ],
+    "claude-code-action": [
+      "devtools",
+      "llm"
+    ],
+    "free-for-dev": [
+      "devtools"
+    ],
+    "tailwindcss": [
+      "dashboard"
+    ],
+    "vite": [
+      "api",
+      "dashboard"
+    ],
+    "dyad": [
+      "llm"
+    ],
+    "system-prompts-and-models-of-ai-tools": [
+      "agent",
+      "devtools",
+      "llm"
+    ],
+    "llm": [
+      "llm"
+    ],
+    "autogen": [
+      "agent",
+      "llm"
+    ],
+    "BMAD-METHOD": [
+      "llm"
+    ],
+    "awesome-react": [
+      "construction"
+    ],
+    "awesome-mac": [
+      "search"
+    ],
+    "Awesome-Hacking": [
+      "security"
+    ],
+    "awesome-go": [
+      "automation",
+      "database",
+      "payments"
+    ],
+    "markitdown": [
+      "workspace"
+    ],
+    "DeepResearch": [
+      "agent"
+    ],
+    "claude-code": [
+      "agent",
+      "automation",
+      "devtools",
+      "llm"
+    ],
+    "graphiti": [
+      "agent",
+      "graph",
+      "llm"
+    ],
+    "mcp-toolbox": [
+      "database",
+      "mcp"
+    ],
+    "Folo": [
+      "llm"
+    ],
+    "OpenBB": [
+      "agent",
+      "llm"
+    ],
+    "ai_agents_az": [
+      "agent",
+      "llm"
+    ],
+    "awesome-ai-apps": [
+      "agent",
+      "automation",
+      "llm",
+      "rag"
+    ],
+    "ai-agents-for-beginners": [
+      "agent",
+      "construction",
+      "llm"
+    ],
+    "prompt-optimizer": [
+      "llm"
+    ],
+    "data-engineer-handbook": [
+      "notifications"
+    ],
+    "stagehand": [
+      "agent",
+      "devtools"
+    ],
+    "FastGPT": [
+      "llm",
+      "rag"
+    ],
+    "WrenAI": [
+      "agent",
+      "analytics",
+      "dashboard",
+      "database",
+      "llm"
+    ],
+    "postiz-app": [
+      "agent",
+      "scheduling"
+    ],
+    "claude-cookbooks": [
+      "api",
+      "llm"
+    ],
+    "storybook": [
+      "construction",
+      "dashboard"
+    ],
+    "public-apis": [
+      "api"
+    ],
+    "fastmcp": [
+      "mcp"
+    ],
+    "gitdiagram": [
+      "api",
+      "llm"
+    ],
+    "awesome-cursorrules": [
+      "devtools",
+      "llm"
+    ],
+    "mcp-go": [
+      "llm",
+      "mcp"
+    ],
+    "pear-desktop": [
+      "agent",
+      "llm"
+    ],
+    "the-book-of-secret-knowledge": [
+      "devtools",
+      "security"
+    ],
+    "ai-engineering-hub": [
+      "agent",
+      "llm"
+    ],
+    "ChatGPT_DAN": [
+      "llm"
+    ],
+    "suna": [
+      "llm"
+    ],
+    "dify": [
+      "agent"
+    ],
+    "lobehub": [
+      "agent",
+      "analytics",
+      "llm",
+      "scheduling"
+    ]
+  }
+}
