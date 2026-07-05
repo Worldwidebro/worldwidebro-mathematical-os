@@ -1,0 +1,31 @@
+{
+  "version": "1.0",
+  "assets": [
+    {
+      "id": "asset-hero",
+      "type": "image",
+      "path": "assets/images/hero-hoodie-front.png",
+      "source_tool": "user_supplied",
+      "scene_id": "s1",
+      "provider": "local",
+      "license": "owned \u2014 Angels in Daylight product photography",
+      "cost_usd": 0,
+      "generation_summary": "Real product cutout, not generated"
+    },
+    {
+      "id": "asset-beat2",
+      "type": "image",
+      "path": "assets/images/beat-wordmark-tee.png",
+      "source_tool": "user_supplied",
+      "scene_id": "s4",
+      "provider": "local",
+      "license": "owned \u2014 Angels in Daylight product photography",
+      "cost_usd": 0,
+      "generation_summary": "Real product cutout, not generated"
+    }
+  ],
+  "total_cost_usd": 0,
+  "metadata": {
+    "concept_id": "c1"
+  }
+}

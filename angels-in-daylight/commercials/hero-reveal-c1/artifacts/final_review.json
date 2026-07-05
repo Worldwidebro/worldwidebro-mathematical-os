@@ -1,0 +1,39 @@
+{
+  "version": "1.0",
+  "output_path": "renders/final.mp4",
+  "status": "revise",
+  "checks": {
+    "technical_probe": {
+      "valid_container": true,
+      "duration_seconds": 13.0,
+      "resolution": "1080x1920",
+      "fps": 30,
+      "has_audio": false,
+      "codec": "h264",
+      "file_size_bytes": 2055156,
+      "issues": []
+    },
+    "visual_spotcheck": {
+      "frames_sampled": 5,
+      "notes": "Frame 1 (t=0): brand-id card pre-animation (expected, tween starts t=0.1s). Frame 2 (t=1.5s): hero red zip hoodie reveal, logo fully legible. Frame 3 (t=5s): myth-busting text card, legible. Frame 4 (t=8s): second product (vintage wordmark tee), correct. Frame 5 (t=11s): placeholder material-fact card \u2014 intentional, must be replaced before publish."
+    },
+    "audio_spotcheck": {
+      "has_audio": false,
+      "notes": "No narration or music by design (kinetic-type-led, silent-friendly per proposal_packet.voice_selection)."
+    },
+    "promise_preservation": {
+      "motion_required": true,
+      "preserved": true,
+      "notes": "render_runtime=hyperframes preserved through compose, no silent swap. composition_mode corrected atelier->templated with logged decision."
+    },
+    "subtitle_check": {
+      "enabled": false,
+      "notes": "No narration to caption."
+    }
+  },
+  "issues_found": [
+    "Scene s5 (9.3-11.0s) is a visible placeholder: '[CONFIRM BEFORE PUBLISHING: one verified, specific material or production fact]'. Intentional \u2014 I do not know Angels in Daylight's actual verified material/production claim, and fabricating one would recreate the exact greenwashing risk this concept was built to avoid.",
+    "No background music track \u2014 deferred for v1 scope."
+  ],
+  "recommended_action": "revise_assets"
+}

@@ -1,0 +1,162 @@
+{
+  "version": "1.0",
+  "topic": "Angels in Daylight — Heavyweight Hoodie hero-reveal ad (product-cutout led, no live-model footage)",
+  "research_date": "2026-07-04",
+  "landscape": {
+    "existing_content": [
+      {
+        "title": "TikTok Ads for Fashion Brands: The Complete 2026 Guide",
+        "url": "https://tikadsuite.com/blog/tiktok-ads-for-fashion-brands/",
+        "source": "blog",
+        "angle": "Product reveal with trending audio, 15-30s, let the outfit do the talking",
+        "what_it_covers": "Timing, transitions, and reveal-moment structure for fashion TikTok ads",
+        "what_it_misses": "Does not address brands without live-model footage (product-only assets)",
+        "engagement_signal": "Referenced as category best-practice guide, no specific view counts given"
+      },
+      {
+        "title": "Kinetic Typography Explained Through 12 Real Brand Examples",
+        "url": "https://motiongility.com/kinetic-typography/",
+        "source": "blog",
+        "angle": "Text-as-visual-lead for silent/scrolling platforms",
+        "what_it_covers": "Why kinetic type increases watch time, click-through, and shares on TikTok/Reels/Shorts",
+        "what_it_misses": "Not fashion-specific; general brand campaign examples",
+        "engagement_signal": "Cites Taylor Swift lyric videos and TNT SAG Awards promo as high-recall examples"
+      },
+      {
+        "title": "8.25 Seconds to Impress: Typography Animation Examples That Maximize Viewer Retention",
+        "url": "https://www.designrush.com/best-designs/video/trends/8-25-seconds-to-impress-typography-animation-examples-that-maximize-viewer-retention",
+        "source": "blog",
+        "angle": "Retention-optimized kinetic typography timing",
+        "what_it_covers": "Typography pacing benchmarks for short-form retention",
+        "what_it_misses": "No product-reveal-specific guidance",
+        "engagement_signal": "n/a"
+      }
+    ],
+    "saturated_angles": [
+      "Generic 'sustainability' claims with no specifics (fabric %, factory practice, certification)",
+      "Model-wearing haul/try-on format (not available to us — no live-model footage)"
+    ],
+    "underserved_gaps": [
+      "Product-cutout-led kinetic reveal ads for unisex streetwear (most examples assume live footage)",
+      "Sustainability messaging that survives Gen Z greenwashing skepticism by being specific rather than aspirational"
+    ]
+  },
+  "trending": {
+    "recent_developments": [],
+    "active_discussions": [],
+    "timeliness_window": "evergreen"
+  },
+  "data_points": [
+    {
+      "claim": "62% of Gen Z shoppers prefer to buy from sustainable brands, and 73% are willing to pay more for sustainable products",
+      "source_url": "https://theroundup.org/sustainable-fashion-statistics/",
+      "source_name": "TheRoundup — 47 Official Sustainable Fashion Statistics 2026",
+      "credibility": "secondary_source",
+      "surprise_factor": "expected",
+      "usable_as": "script_anchor for sustainability scene"
+    },
+    {
+      "claim": "75% of Gen Z say sustainability is more important than brand name when making purchase decisions",
+      "source_url": "https://theroundup.org/sustainable-fashion-statistics/",
+      "source_name": "TheRoundup — 47 Official Sustainable Fashion Statistics 2026",
+      "credibility": "secondary_source",
+      "surprise_factor": "notable",
+      "usable_as": "hook or stat_card"
+    },
+    {
+      "claim": "73% of Gen Z shoppers say they have abandoned a purchase after discovering a brand's poor environmental record",
+      "source_url": "https://theroundup.org/sustainable-fashion-statistics/",
+      "source_name": "TheRoundup — 47 Official Sustainable Fashion Statistics 2026",
+      "credibility": "secondary_source",
+      "surprise_factor": "notable",
+      "usable_as": "closing_punch — reason to make claims specific, not vague"
+    },
+    {
+      "claim": "Roughly 60% of sustainability claims in fashion are unsubstantiated or misleading, driving 'green fatigue' and skepticism toward all environmental claims",
+      "source_url": "https://bestcolorfulsocks.com/blogs/news/fashion-sustainability-claims-accuracy-statistics",
+      "source_name": "Fashion Sustainability Claims Accuracy Statistics 2025",
+      "credibility": "secondary_source",
+      "surprise_factor": "counterintuitive",
+      "usable_as": "risk flag — governs how the sustainability scene must be written (specific, not vague)"
+    },
+    {
+      "claim": "65% of viewers drop off within 3 seconds if not hooked immediately; 71% decide within the first few seconds whether to keep watching",
+      "source_url": "https://cloudixdigital.com/short-form-video-mastery-how-the-3-second-hook-rule-drives-social-discovery-and-roi/",
+      "source_name": "Short-Form Video Mastery: The 3-Second Hook Rule for 2026",
+      "credibility": "secondary_source",
+      "surprise_factor": "expected",
+      "usable_as": "hook — governs Scene 1 pacing and cut speed"
+    },
+    {
+      "claim": "Strong short-form hooks do one of four things immediately: state a problem fast, show the outcome first, create a curiosity gap, or present a sharp contrast",
+      "source_url": "https://www.marketingblocks.ai/50-viral-hook-templates-for-ads-reels-tiktok-or-captions-2026-frameworks-examples-ai-prompts-included/",
+      "source_name": "50+ Viral Hook Templates for Ads, Reels, TikTok (2026)",
+      "credibility": "secondary_source",
+      "surprise_factor": "expected",
+      "usable_as": "script_anchor for Scene 1 structure"
+    }
+  ],
+  "audience_insights": {
+    "common_questions": [
+      "Is this actually sustainable or is it just marketing?",
+      "What is this made of and where is it made?",
+      "Does this fit true to size for a unisex/streetwear cut?"
+    ],
+    "misconceptions": [
+      {
+        "myth": "Any 'sustainable' or 'conscious' label means the product is genuinely eco-friendly",
+        "reality": "~60% of sustainability claims in fashion are unsubstantiated or misleading, so vague claims read as greenwashing to this audience",
+        "source": "https://bestcolorfulsocks.com/blogs/news/fashion-sustainability-claims-accuracy-statistics"
+      }
+    ],
+    "knowledge_level": "Target audience (Gen Z/young millennial, sustainability-aware) is already fluent in greenwashing red flags — vague claims cost more credibility than they gain.",
+    "pain_points": [
+      "Skepticism toward unverified sustainability claims",
+      "Fatigue with model-haul-format ads that all look the same"
+    ]
+  },
+  "expert_voices": [],
+  "angles_discovered": [
+    {
+      "name": "Specific-claim sustainability reveal",
+      "hook": "The label doesn't say 'sustainable.' It says exactly what's in it.",
+      "type": "contrarian",
+      "why_now": "Directly counters greenwashing fatigue found in research — specificity is the differentiator, not the sustainability claim itself",
+      "grounded_in": ["Roughly 60% of sustainability claims in fashion are unsubstantiated or misleading..."]
+    },
+    {
+      "name": "Kinetic hero-product reveal",
+      "hook": "No model. Just the piece.",
+      "type": "trending",
+      "why_now": "Matches available assets (product cutouts only) and rides the kinetic-typography trend that performs well in silent/scrolling feeds",
+      "grounded_in": ["Kinetic Typography Explained Through 12 Real Brand Examples"]
+    },
+    {
+      "name": "Quality-first, sustainability-second",
+      "hook": "Built heavier. Lasts longer. Costs the planet less by costing you fewer replacements.",
+      "type": "data_driven",
+      "why_now": "Reframes sustainability as a durability/value argument, sidestepping greenwashing skepticism entirely",
+      "grounded_in": ["75% of Gen Z say sustainability is more important than brand name..."]
+    }
+  ],
+  "visual_references": [
+    {
+      "description": "Kinetic typography over product hero shot, no model footage",
+      "url": "https://motiongility.com/kinetic-typography/",
+      "what_works": "Text carries the narrative when there's no live footage, and performs well in sound-off scrolling contexts"
+    }
+  ],
+  "sources": [
+    { "url": "https://theroundup.org/sustainable-fashion-statistics/", "title": "47 Official Sustainable Fashion Statistics 2026", "used_for": "data_points on Gen Z sustainability purchase behavior", "reliability": "secondary" },
+    { "url": "https://bestcolorfulsocks.com/blogs/news/fashion-sustainability-claims-accuracy-statistics", "title": "Fashion Sustainability Claims Accuracy Statistics 2025", "used_for": "greenwashing risk framing for the sustainability scene", "reliability": "secondary" },
+    { "url": "https://cloudixdigital.com/short-form-video-mastery-how-the-3-second-hook-rule-drives-social-discovery-and-roi/", "title": "Short-Form Video Mastery: The 3-Second Hook Rule for 2026", "used_for": "hook pacing requirement for Scene 1", "reliability": "secondary" },
+    { "url": "https://www.marketingblocks.ai/50-viral-hook-templates-for-ads-reels-tiktok-or-captions-2026-frameworks-examples-ai-prompts-included/", "title": "50+ Viral Hook Templates for Ads, Reels, TikTok (2026)", "used_for": "hook structure options", "reliability": "secondary" },
+    { "url": "https://motiongility.com/kinetic-typography/", "title": "Kinetic Typography Explained Through 12 Real Brand Examples", "used_for": "visual approach given no live-model footage", "reliability": "secondary" },
+    { "url": "https://tikadsuite.com/blog/tiktok-ads-for-fashion-brands/", "title": "TikTok Ads for Fashion Brands: The Complete 2026 Guide", "used_for": "platform-format and duration benchmarks", "reliability": "secondary" }
+  ],
+  "research_summary": "The single most important finding: the brand kit's planned generic sustainability messaging (\"Beautiful clothing that doesn't cost the earth\") is a real credibility risk, not just soft copy — ~60% of fashion sustainability claims are unsubstantiated, and 73% of this exact audience has abandoned a purchase after spotting a poor environmental record. Since we also lack live-model footage (only product cutouts), the winning move is to combine two adaptations into one concept: replace vague sustainability copy with one specific, verifiable claim, and replace the assumed model-wearing shots with a kinetic hero-product reveal — a format that independently performs well on sound-off, scrolling platforms.",
+  "metadata": {
+    "prepared_by": "claude-code-agent",
+    "method": "targeted WebSearch (4 queries) — not exhaustive; recommend deeper competitor-specific research before scaling spend"
+  }
+}

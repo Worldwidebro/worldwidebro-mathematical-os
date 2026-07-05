@@ -128,6 +128,36 @@ source: MCP_REGISTRY.json
 
 ---
 
+## Video / Media Production Capability Map (added 2026-07-04)
+
+**Reference:** `WORLDWIDEBRO-OS/06-TECHNOLOGY/repositories/OpenMontage/tools/tool_registry.py` (source of truth for this section — run `registry.provider_menu_summary()` for live status, don't trust this table to stay current forever)
+
+Only **OpenMontage** is a real, working, agent-governed video production system today. MoneyPrinterTurbo/V2 are cloned but non-functional (0 packages installed, no config) and redundant with OpenMontage if fixed — do not stand them up.
+
+| Need | Tool | Status | Effort | Notes |
+|------|------|--------|--------|-------|
+| Script → video orchestration | OpenMontage (`cinematic`/`hybrid` pipeline) | ✅ Ready | 0 | Only functional agentic video system; preflight via `registry.provider_menu_summary()` |
+| Composition/render | ffmpeg, HyperFrames | ✅ Ready | 0 | Remotion registered but **not installed** (Node package unresolvable) — HyperFrames is the working motion-graphics runtime |
+| TTS | Google TTS | ✅ Ready | 0 | Only configured TTS provider |
+| TTS (free, better quality) | Piper (`tools/audio/piper_tts.py`) | ⚠️ Registered, not installed | 5 min | Local binary install, no API key needed |
+| TTS (paid, best quality) | ElevenLabs | ❌ Needs key | 1 min | Set `ELEVENLABS_API_KEY` |
+| Video generation (cloud) | Kling/Seedance/Veo/Minimax (via fal.ai) | ❌ Needs key | 1 min | One `FAL_KEY` unlocks all 4 |
+| Video generation (free, local) | ComfyUI (`06-TECHNOLOGY/repositories/comfy`, WAN 2.2 workflows) | ❌ Cloned, zero setup | Complex (GPU + model downloads) | 1.8GB clone exists but no venv, no models, no custom_nodes — not a quick win |
+| Image → motion on product stills (AnimateDiff) | Not wrapped anywhere | ❌ Genuine gap | Complex | Would run as a ComfyUI custom node, not a standalone repo |
+| Shape-preserving product animation (ControlNet) | Not wrapped anywhere | ❌ Genuine gap | Complex | Same — ComfyUI custom node, not standalone |
+| Music generation | `tools/audio/music_gen.py` | ⚠️ Misleading name | 1 min | This wraps **ElevenLabs Music API**, not Meta MusicGen/audiocraft — that's a genuine gap if wanted |
+| Music search (free) | Pixabay | ✅ Ready | 0 | No local `music_library/` tracks yet either |
+| Captions/subtitles | OpenMontage native + Remotion | ✅ Ready | 0 | |
+| Social scheduling/publishing | Real gap — nothing in-house covers this | ❌ Not installed | — | `postiz-app` (starred, registry) is the fix |
+| Paid-ads audit | — | ❌ Not installed | — | `claude-ads` skill (starred, registry) |
+| SEO | — | ❌ Not installed | — | `claude-seo` skill (starred, registry) |
+| Email marketing | — | ❌ Not installed | — | `listmonk` (starred, registry) |
+| Full campaign orchestration | `iza-os-marketing-core/campaign-factory` | ❌ Facade only | — | `_run_agent()` is an explicit simulation stub — writes placeholder files, does not call any LLM. Do not rely on it. |
+
+**PROCEED?** For product-cutout-driven kinetic ads (no live footage): ✅ YES with current free stack (ffmpeg + HyperFrames + Google TTS + Pixabay music). For cinematic b-roll/motion-from-stills: ⚠️ needs either `FAL_KEY` (fast, cheap, cloud) or a real ComfyUI setup investment (free, slow to stand up, local GPU).
+
+---
+
 ## How to Use
 
 **When asked to do something:**

@@ -1,0 +1,208 @@
+{
+  "version": "1.0",
+  "concept_options": [
+    {
+      "id": "c1",
+      "title": "The Label Doesn't Say Sustainable. It Says What's In It.",
+      "hook": "The label doesn't say 'sustainable.' It says exactly what's in it.",
+      "narrative_structure": "myth_busting",
+      "visual_approach": "Kinetic hero-product reveal of the Heavyweight Hoodie (black/red) on cream/navy brand backgrounds, HyperFrames-driven type animation carrying the argument since no live-model footage exists",
+      "suggested_playbook": "flat-motion-graphics",
+      "target_audience": "Gen Z / young millennial streetwear buyers who are sustainability-aware but greenwashing-fatigued",
+      "target_platform": "tiktok",
+      "target_duration_seconds": 15,
+      "key_points": [
+        "Real product, not a model shoot \u2014 the piece is the star",
+        "One specific, verifiable material/production claim replaces vague sustainability language",
+        "Premium construction framed as durability, not just ethics"
+      ],
+      "core_message": "Angels in Daylight proves its claims with specifics, not slogans.",
+      "cta": "Shop the collection \u2014 link in bio",
+      "tone": "confident, specific, understated luxury",
+      "grounded_in": [
+        "Roughly 60% of sustainability claims in fashion are unsubstantiated or misleading..."
+      ],
+      "why_this_works": "Directly neutralizes the #1 research risk: vague sustainability copy reads as greenwashing to 73% of this audience who've already abandoned a purchase over it. Specificity is the differentiator."
+    },
+    {
+      "id": "c2",
+      "title": "No Model. Just the Piece.",
+      "hook": "No model. Just the piece.",
+      "narrative_structure": "comparison",
+      "visual_approach": "Straight kinetic product-reveal treatment leaning fully into the 'product as hero' framing rather than working around the missing model footage",
+      "suggested_playbook": "flat-motion-graphics",
+      "target_audience": "Streetwear-first buyers who care more about the garment than lifestyle imagery",
+      "target_platform": "tiktok",
+      "target_duration_seconds": 12,
+      "key_points": [
+        "Owns the constraint (no live footage) as a stylistic choice instead of hiding it",
+        "Fast cuts matching the 3-second-hook research finding",
+        "Fabric macro insert for texture credibility"
+      ],
+      "core_message": "The product speaks for itself.",
+      "cta": "Shop the collection",
+      "tone": "minimal, confident, editorial",
+      "grounded_in": [
+        "Kinetic Typography Explained Through 12 Real Brand Examples"
+      ],
+      "why_this_works": "Lowest production risk (no dependency on any footage we don't have) and rides the kinetic-typography trend that performs on sound-off feeds \u2014 but it's a weaker sustainability argument than c1."
+    },
+    {
+      "id": "c3",
+      "title": "Built Heavier. Lasts Longer.",
+      "hook": "Built heavier. Lasts longer. Costs the planet less by costing you fewer replacements.",
+      "narrative_structure": "data_narrative",
+      "visual_approach": "Durability-framed reveal \u2014 hoodie weight/construction close-ups, reframes sustainability as a value/longevity argument",
+      "suggested_playbook": "clean-professional",
+      "target_audience": "Value-conscious buyers who are sustainability-adjacent but not activist-motivated",
+      "target_platform": "instagram",
+      "target_duration_seconds": 15,
+      "key_points": [
+        "Sidesteps greenwashing skepticism entirely by not making an environmental claim at all",
+        "Durability is a provable, demonstrable claim from the product itself",
+        "Broadest audience appeal"
+      ],
+      "core_message": "Fewer replacements is the most honest form of sustainability.",
+      "cta": "Shop the collection",
+      "tone": "clean, value-forward, confident",
+      "grounded_in": [
+        "75% of Gen Z say sustainability is more important than brand name..."
+      ],
+      "why_this_works": "Most defensible claim (durability is directly demonstrable) but slower emotional hook than c1 \u2014 better suited to Instagram's slightly longer attention window than TikTok's 3-second cliff."
+    }
+  ],
+  "selected_concept": {
+    "concept_id": "c1",
+    "rationale": "c1 directly answers the research brief's single biggest finding (greenwashing skepticism) while still using the available assets honestly (kinetic product reveal, no fabricated model footage). Recommended over c2 (weaker sustainability argument) and c3 (better for Instagram, but TikTok is the primary distribution target per the brand kit).",
+    "modifications": []
+  },
+  "production_plan": {
+    "pipeline": "cinematic",
+    "playbook": "flat-motion-graphics",
+    "stages": [
+      {
+        "stage": "assets",
+        "tools": [
+          {
+            "tool_name": "user_supplied_images",
+            "role": "8 clean-transparent product cutouts (img1,2,3,6,7,12,13,14)",
+            "provider": "local",
+            "available": true,
+            "estimated_cost_usd": 0,
+            "why_this_provider": "Real product photography already exists \u2014 no need to generate synthetic product images"
+          },
+          {
+            "tool_name": "google_tts",
+            "role": "Optional CTA voiceover line",
+            "provider": "google",
+            "available": true,
+            "estimated_cost_usd": 0,
+            "why_this_provider": "Only TTS provider currently configured; ElevenLabs would sound better but requires a key"
+          },
+          {
+            "tool_name": "pixabay_music",
+            "role": "Royalty-free background track search",
+            "provider": "pixabay",
+            "available": true,
+            "estimated_cost_usd": 0,
+            "why_this_provider": "Only music-search provider configured; no local music_library/ tracks exist yet"
+          }
+        ],
+        "approach": "No new image/video generation needed \u2014 the concept is built entirely from real product cutouts plus HyperFrames kinetic typography and brand color/type treatment.",
+        "fallback_if_unavailable": "If Pixabay search yields nothing on-brief, proceed without music and flag it rather than defaulting to AI music generation (unconfigured)."
+      },
+      {
+        "stage": "compose",
+        "tools": [
+          {
+            "tool_name": "hyperframes_compose",
+            "role": "Primary renderer \u2014 HTML/CSS/GSAP kinetic typography over product stills",
+            "provider": "local",
+            "available": true,
+            "estimated_cost_usd": 0,
+            "why_this_provider": "Remotion is not installed in this environment (composition_runtimes.remotion=false); HyperFrames is purpose-built for 'kinetic typography, product promos, launch reels' per its own capability description \u2014 a better mechanical fit for this concept than Remotion would have been anyway, not just a fallback"
+          }
+        ],
+        "approach": "Atelier composition mode: hand-authored kinetic type + product-reveal motion in this brand's exact palette (gold #D4AF37, cream #F5F1E8, navy #1a2845) and type system (Poppins/Inter/Cormorant Garamond), not the stock scene-type catalog.",
+        "fallback_if_unavailable": "ffmpeg Ken Burns fallback only with explicit user approval \u2014 this concept's whole premise (kinetic type as the visual lead) depends on real motion typography, so a still-image fallback would break the delivery promise."
+      }
+    ],
+    "quality_tradeoffs": [
+      {
+        "tradeoff": "Google TTS (free) vs ElevenLabs ($) for the optional CTA voiceover line",
+        "recommendation": "Skip voiceover entirely for v1 \u2014 the concept is text/kinetic-type-led and TikTok performs well sound-off; add ElevenLabs later only if data shows voiceover lifts performance",
+        "quality_impact": "No meaningful loss \u2014 avoids an unnecessary API key setup for one CTA line"
+      }
+    ],
+    "alternative_paths": [
+      {
+        "description": "Current path: real product cutouts + HyperFrames kinetic type + Pixabay music, no paid providers",
+        "total_cost_usd": 0,
+        "quality_level": "standard",
+        "what_changes": "n/a \u2014 this is the recommended path"
+      },
+      {
+        "description": "Add ElevenLabs voiceover + FAL_KEY for AI-generated lifestyle b-roll inserts",
+        "total_cost_usd": 3.5,
+        "quality_level": "premium",
+        "what_changes": "Adds a spoken CTA and optional golden-hour b-roll cutaways; requires two new API keys"
+      }
+    ],
+    "delivery_promise": {
+      "promise_type": "motion_led",
+      "motion_required": true,
+      "source_required": true,
+      "tone_mode": "confident, specific, understated luxury",
+      "quality_floor": "presentable",
+      "approved_fallback": null
+    },
+    "renderer_family": "product-reveal",
+    "render_runtime": "hyperframes",
+    "composition_mode": "templated",
+    "art_direction": "Angels in Daylight brand kit: gold #D4AF37 / cream #F5F1E8 / navy #1a2845, Poppins headlines + Inter body + Cormorant Garamond accent. Corrected from atelier: edit_decisions.schema.json bespoke.entry is defined as a Remotion .tsx entry \u2014 atelier mode requires Remotion, which is not installed. hyperframes + templated (via hyperframes_compose scaffold_workspace) is the only valid combination on this machine.",
+    "music_source": {
+      "source_type": "ai_generated",
+      "provider": "pixabay_music (search, not generation)",
+      "mood_direction": "Confident, minimal, understated \u2014 not overly upbeat/hype; matches 'conscious luxury' tone",
+      "estimated_cost_usd": 0
+    },
+    "voice_selection": {
+      "provider": "none",
+      "rationale": "Concept is kinetic-type-led; voiceover deferred to a v2 test",
+      "estimated_cost_usd": 0,
+      "sample_approval_required": false
+    }
+  },
+  "cost_estimate": {
+    "total_estimated_usd": 0,
+    "line_items": [
+      {
+        "tool": "hyperframes_compose",
+        "operation": "Render 12-15s vertical video, atelier composition",
+        "quantity": 1,
+        "estimated_usd": 0,
+        "notes": "Local rendering via ffmpeg/HyperFrames, no API cost"
+      },
+      {
+        "tool": "pixabay_music",
+        "operation": "Search + download royalty-free track",
+        "quantity": 1,
+        "estimated_usd": 0,
+        "notes": "Free tier"
+      }
+    ],
+    "budget_cap_usd": 10.0,
+    "budget_verdict": "within_budget",
+    "savings_options": []
+  },
+  "approval": {
+    "status": "approved",
+    "user_notes": "User approved c1 explicitly via direct confirmation, requested render now (no manifest pre-review).",
+    "approved_budget_usd": 0
+  },
+  "metadata": {
+    "prepared_by": "claude-code-agent",
+    "checkpoint_stage": "proposal",
+    "human_approval_required": true
+  }
+}

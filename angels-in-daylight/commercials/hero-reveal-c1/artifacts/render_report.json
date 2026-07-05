@@ -1,0 +1,25 @@
+{
+  "version": "1.0",
+  "outputs": [
+    {
+      "path": "renders/final.mp4",
+      "format": "mp4",
+      "codec": "h264",
+      "resolution": "1080x1920",
+      "fps": 30,
+      "duration_seconds": 13.0,
+      "file_size_bytes": 2055156,
+      "platform_target": "tiktok"
+    }
+  ],
+  "warnings": [
+    "hyperframes lint: 2 non-blocking warnings (composition_self_attribute_selector, timeline_track_too_dense) \u2014 cosmetic, safe for a single-composition v1",
+    "No music/audio track \u2014 deferred for v1 scope, no music_library/ tracks configured"
+  ],
+  "verification_notes": [
+    "hyperframes lint: exit 0, 0 errors, 2 warnings",
+    "hyperframes validate: exit 0, 0 errors, 0 contrast failures",
+    "ffprobe confirmed: h264, 1080x1920, 30fps, 13.000000s duration, valid container",
+    "5 sample frames visually inspected (n=0,45,150,240,330) \u2014 all render correctly"
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "version": "1.0",
+  "style_playbook": "flat-motion-graphics",
+  "scenes": [
+    {
+      "id": "s0",
+      "type": "text_card",
+      "description": "Brand identity card: ANGELS IN DAYLIGHT wordmark on cream background, gold accent",
+      "start_seconds": 0.0,
+      "end_seconds": 1.3,
+      "script_section_id": "sec0",
+      "narrative_role": "introduce_subject"
+    },
+    {
+      "id": "s1",
+      "type": "broll",
+      "description": "Hero product reveal: real product photo, red zip hoodie with full wings/wordmark logo, scale-in entrance",
+      "start_seconds": 1.3,
+      "end_seconds": 4.3,
+      "script_section_id": "sec1",
+      "narrative_role": "introduce_subject",
+      "hero_moment": true,
+      "required_assets": [
+        {
+          "type": "image",
+          "description": "Red zip hoodie product cutout",
+          "source": "provided"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "type": "text_card",
+      "description": "Myth-busting line on navy background",
+      "start_seconds": 4.3,
+      "end_seconds": 5.5,
+      "script_section_id": "sec2",
+      "narrative_role": "build_tension"
+    },
+    {
+      "id": "s3",
+      "type": "text_card",
+      "description": "Payoff line on navy background",
+      "start_seconds": 5.5,
+      "end_seconds": 6.8,
+      "script_section_id": "sec3",
+      "narrative_role": "deliver_payload"
+    },
+    {
+      "id": "s4",
+      "type": "broll",
+      "description": "Second real product photo: vintage wordmark tee, different angle for variety",
+      "start_seconds": 6.8,
+      "end_seconds": 9.3,
+      "script_section_id": "sec4",
+      "narrative_role": "evidence",
+      "required_assets": [
+        {
+          "type": "image",
+          "description": "Vintage wordmark tee product cutout",
+          "source": "provided"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "type": "text_card",
+      "description": "PLACEHOLDER specific material/production fact \u2014 must be confirmed by brand owner before publishing, not fabricated",
+      "start_seconds": 9.3,
+      "end_seconds": 11.0,
+      "script_section_id": "sec5",
+      "narrative_role": "evidence"
+    },
+    {
+      "id": "s6",
+      "type": "text_card",
+      "description": "CTA card: Shop the collection, gold button on cream",
+      "start_seconds": 11.0,
+      "end_seconds": 13.0,
+      "script_section_id": "sec6",
+      "narrative_role": "call_to_action"
+    }
+  ],
+  "metadata": {
+    "concept_id": "c1"
+  }
+}
