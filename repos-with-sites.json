@@ -1,0 +1,487 @@
+{
+  "generated_at": "2026-07-06T16:10:51Z",
+  "total_owned_repos": 864,
+  "repos_with_site_signals": 96,
+  "sites": {
+    "vex-site": {
+      "has_index_html": true,
+      "has_vercel_json": true,
+      "frontend_framework": "vite"
+    },
+    "ops-staff-001-staffing": {
+      "has_index_html": true,
+      "has_vercel_json": true,
+      "frontend_framework": null
+    },
+    "venture-hub": {
+      "has_index_html": true,
+      "has_vercel_json": true,
+      "frontend_framework": "next"
+    },
+    "con-010-plumbing-services": {
+      "has_index_html": true,
+      "has_vercel_json": true,
+      "frontend_framework": null
+    },
+    "con-009-roofing-company": {
+      "has_index_html": true,
+      "has_vercel_json": true,
+      "frontend_framework": null
+    },
+    "iza-os-ecosystem": {
+      "has_index_html": true,
+      "has_vercel_json": true,
+      "frontend_framework": "vite"
+    },
+    "comm-050-community-cultural-ai": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-049-public-event-ai": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-048-community-transportation-ai": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-047-public-fitness-ai": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-046-community-pet-care-ai": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-045-public-childcare-ai": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-044-community-volunteering-ai": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-043-local-food-network-ai": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-042-community-energy-ai": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-041-public-wi-fi-ai": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-040-community-recycling-ai": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-039-public-space-ai": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-038-community-policing-ai": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-037-neighborhood-development-ai": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-036-public-infrastructure-ai": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-035-community-arts-ai": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-034-senior-tech-support": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-033-youth-innovation-hub": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-032-public-health-ai": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-031-community-investment-ai": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-030-cultural-exchange-ai": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-029-community-wellness-ai": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-028-public-safety-ai": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-027-local-government-ai": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-026-public-education-ai": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-025-community-legal-aid": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-024-youth-sports-ai": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-023-elder-companion-ai": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-022-job-training-center": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-021-housing-assistance-ai": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-020-public-transportation-ai": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-019-community-garden-ai": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-018-neighborhood-watch-ai": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-017-local-business-directory": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-016-community-health-ai": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-015-youth-mentorship-program": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-014-veterans-support-ai": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-013-women-s-empowerment-network": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-012-black-art-museum-ai": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-011-indigenous-creator-hub": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-010-disaster-relief-ai": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-009-volunteer-hub-ai": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-008-community-fundraising-ai": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-007-youth-leadership-ai": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-006-community-technology-access-ai": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-005-ace-food-security-ai": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-004-community-outreach-nonprofit": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-003-ace-senior-care-connect": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-002-brotherhood-coaching-network": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "comm-001-luminary-worldwide-events": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "the-office": {
+      "has_index_html": false,
+      "has_vercel_json": true,
+      "frontend_framework": "next"
+    },
+    "pitch-kit": {
+      "has_index_html": false,
+      "has_vercel_json": true,
+      "frontend_framework": "next"
+    },
+    "con-001-ace-construction": {
+      "has_index_html": true,
+      "has_vercel_json": true,
+      "frontend_framework": "next"
+    },
+    "ai-business-commander": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "aibossoslandingpage": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "vite"
+    },
+    "babystepsmatrix1": {
+      "has_index_html": false,
+      "has_vercel_json": false,
+      "frontend_framework": "react"
+    },
+    "business-template-marketplace": {
+      "has_index_html": false,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "con-002-residential-construction": {
+      "has_index_html": true,
+      "has_vercel_json": true,
+      "frontend_framework": null
+    },
+    "con-003-commercial-construction": {
+      "has_index_html": true,
+      "has_vercel_json": true,
+      "frontend_framework": null
+    },
+    "con-005-construction-equipment-rental": {
+      "has_index_html": true,
+      "has_vercel_json": true,
+      "frontend_framework": null
+    },
+    "con-004-industrial-construction": {
+      "has_index_html": true,
+      "has_vercel_json": true,
+      "frontend_framework": null
+    },
+    "con-006-construction-project-management": {
+      "has_index_html": true,
+      "has_vercel_json": true,
+      "frontend_framework": null
+    },
+    "con-007-green-building-services": {
+      "has_index_html": true,
+      "has_vercel_json": true,
+      "frontend_framework": null
+    },
+    "con-008-home-renovation-services": {
+      "has_index_html": true,
+      "has_vercel_json": true,
+      "frontend_framework": null
+    },
+    "con-011-electrical-services": {
+      "has_index_html": true,
+      "has_vercel_json": true,
+      "frontend_framework": null
+    },
+    "con-012-hvac-services": {
+      "has_index_html": true,
+      "has_vercel_json": true,
+      "frontend_framework": null
+    },
+    "con-013-painting-services": {
+      "has_index_html": true,
+      "has_vercel_json": true,
+      "frontend_framework": null
+    },
+    "con-014-flooring-services": {
+      "has_index_html": true,
+      "has_vercel_json": true,
+      "frontend_framework": null
+    },
+    "con-015-landscaping-services": {
+      "has_index_html": true,
+      "has_vercel_json": true,
+      "frontend_framework": null
+    },
+    "con-016-demolition-services": {
+      "has_index_html": true,
+      "has_vercel_json": true,
+      "frontend_framework": null
+    },
+    "con-017-concrete-services": {
+      "has_index_html": true,
+      "has_vercel_json": true,
+      "frontend_framework": null
+    },
+    "con-018-carpentry-services": {
+      "has_index_html": true,
+      "has_vercel_json": true,
+      "frontend_framework": null
+    },
+    "con-019-window-installation": {
+      "has_index_html": true,
+      "has_vercel_json": true,
+      "frontend_framework": null
+    },
+    "con-020-insulation-services": {
+      "has_index_html": true,
+      "has_vercel_json": true,
+      "frontend_framework": null
+    },
+    "design-system": {
+      "has_index_html": false,
+      "has_vercel_json": false,
+      "frontend_framework": "react"
+    },
+    "divine-johns-portfolio": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": null
+    },
+    "fin-006-tax-prep-filing-services": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": null
+    },
+    "fin-009-crypto-tax-optimizer": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": null
+    },
+    "fin-021-tax-deduction-finder": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": null
+    },
+    "fin-033-ai-tax-preparation-service": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": null
+    },
+    "genixbank-financial-system": {
+      "has_index_html": false,
+      "has_vercel_json": true,
+      "frontend_framework": null
+    },
+    "genixbank-insight-compass": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "iza-os-core": {
+      "has_index_html": false,
+      "has_vercel_json": false,
+      "frontend_framework": "react"
+    },
+    "iza-os-specs": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": null
+    },
+    "mc-006-video-production-company": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "vite"
+    },
+    "ps-012-insurance-agency": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": null
+    },
+    "quantum-brain-sync-website": {
+      "has_index_html": true,
+      "has_vercel_json": true,
+      "frontend_framework": null
+    },
+    "capital-orchestrator": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "arbitrage-nexus": {
+      "has_index_html": true,
+      "has_vercel_json": false,
+      "frontend_framework": "next"
+    },
+    "bw-001-up-next-web": {
+      "has_index_html": false,
+      "has_vercel_json": true,
+      "frontend_framework": "next"
+    }
+  }
+}
