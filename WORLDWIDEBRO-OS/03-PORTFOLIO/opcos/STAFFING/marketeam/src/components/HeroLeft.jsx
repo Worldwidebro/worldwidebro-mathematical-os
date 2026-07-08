@@ -10,7 +10,7 @@ export function HeroLeft() {
 
       <div className="cta-row">
         <div className="btn-border-wrap">
-          <button type="button" className="btn-pill btn-start">
+          <a href="/clients.html#request" className="btn-pill btn-start">
             Start Project
             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
               <path
@@ -21,7 +21,7 @@ export function HeroLeft() {
                 strokeLinejoin="round"
               />
             </svg>
-          </button>
+          </a>
         </div>
       </div>
 

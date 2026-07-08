@@ -1,18 +1,20 @@
-const NAV_LINKS = ['Your Team', 'Solutions', 'Blog', 'Pricing']
+const NAV_LINKS = [
+  { label: 'Your Team', href: '/workers.html' },
+  { label: 'Solutions', href: '/clients.html' },
+  { label: 'Pricing', href: '/pricing.html' },
+  { label: 'Open Jobs', href: '/jobs.html' },
+]
 
 export function Header() {
   return (
     <header className="site-header">
       <div className="header-left">
-        <img
-          className="logo"
-          src="https://polo-pecan-73837341.figma.site/_assets/v11/17ae538989a509947a8de3892c644664895e69b1.png"
-          alt="Marketeam"
-          height={32}
-        />
+        <a href="/" className="brand-mark">
+          <span className="brand-dot">◆</span> Worldwidebro Staffing
+        </a>
         <nav className="nav-links">
-          {NAV_LINKS.map((label) => (
-            <a key={label} href="#" className="nav-link">
+          {NAV_LINKS.map(({ label, href }) => (
+            <a key={label} href={href} className="nav-link">
               {label}
             </a>
           ))}
@@ -20,13 +22,13 @@ export function Header() {
       </div>
 
       <div className="header-right">
-        <a href="#" className="login-link">
+        <a href="/login.html" className="login-link">
           Log In
         </a>
         <div className="btn-border-wrap">
-          <button type="button" className="btn-pill btn-join">
+          <a href="/workers.html" className="btn-pill btn-join">
             Join Now
-          </button>
+          </a>
         </div>
       </div>
     </header>

@@ -35,9 +35,17 @@
   gap: 48px;
 }
 
-.logo {
-  height: 32px;
-  width: auto;
+.brand-mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.brand-dot {
+  color: #a068ff;
 }
 
 .nav-links {
