@@ -1,0 +1,39 @@
+{
+  "venture_id": "EC-001-Angels-in-Daylight",
+  "name": "Angels in Daylight",
+  "asset_locations": {
+    "product_images_clean": {
+      "path": "/Users/acebless/Documents/angels-in-daylight/product-shots/clean/",
+      "count": 157,
+      "format": "PNG",
+      "last_synced": "2026-07-05T15:35:36Z"
+    },
+    "product_images_clean_transparent": {
+      "path": "/Users/acebless/Documents/angels-in-daylight/product-shots/clean_transparent/",
+      "count": 162,
+      "format": "PNG",
+      "last_synced": "2026-07-05T15:35:36Z"
+    },
+    "catalog_csv": {
+      "path": "/Users/acebless/Documents/angels-in-daylight/catalog/AID-MASTER-SKU-LIST.csv",
+      "count": 121,
+      "format": "CSV",
+      "last_synced": "2026-07-05T15:35:36Z"
+    },
+    "catalog_html": {
+      "path": "/Users/acebless/Documents/angels-in-daylight/catalog/CATALOG.html",
+      "format": "HTML",
+      "last_synced": "2026-07-05T15:35:36Z"
+    }
+  },
+  "documentation": {
+    "path": "WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/001-Angels-in-Daylight/",
+    "files": [
+      "VENTURE.md",
+      "docs/SALES-SCRIPTS.md",
+      "docs/FORMATION-CREDENTIAL-TRACKER.md",
+      "docs/CAPABILITY-STATEMENT.md",
+      "docs/REPOSITORY-MANIFEST.md"
+    ]
+  }
+}

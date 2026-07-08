@@ -134,3 +134,69 @@ divisions, decide whether to fix scan_repositories.py now or defer.
 **Next (cross-session):** Phase 7's automation blocker (cron/launchd recreating old paths) is still
 unresolved — needs the user to actually pause those jobs before either session's file moves stick.
 
+## Session: 2026-07-04 — Venture wiring reality check + capability join (parallel session, claude-squad handoff)
+
+Independent tab, same repo. Read this file mid-session per the 2026-07-03 convention above;
+logging here so any other tab/claude-squad pane can resume this exact thread.
+
+- Confirmed "vex" in earlier questions = **vex-hero-site** (github.com/Worldwidebro/vex-site, built
+  2026-07-03 per the entry above), NOT Convex — two different things, don't conflate.
+- Ventures exist in 3 disconnected states: (1) Convex seed objects in `The office/convex/
+  ventureFunctions.ts` — hardcoded metadata, no live sync; (2) venture-hub folders under
+  `ventures/active/*` — 735 folders, 14,563 total files, but real content concentrated in ~5
+  folders (rest are doc-only scaffolds); (3) actual working assets scattered in top-level folders
+  outside the venture-hub tree entirely, unlinked to either of the above.
+- Disproved the "sector-prefix" naming assumption (con-xxx/ps-xxx/ec-xxx) used in an earlier
+  planning doc this session — real convention is `NNN-Venture-Name` (e.g. `001-Ace-Construction`),
+  with some legacy lowercase `fin-*`-prefixed folders coexisting unreconciled.
+- Angels-in-Daylight picked as the wiring template (real assets confirmed to exist, unlike most
+  ventures): `/Users/acebless/Documents/angels-in-daylight/catalog/AID-MASTER-SKU-LIST.csv` (121
+  SKUs), `catalog/CATALOG.html`, `product-shots/clean/` (157 files), `product-shots/
+  clean_transparent/` (162 files) — none of this is linked from `ventures/active/
+  001-Angels-in-Daylight/`, which has only VENTURE.md + 4 docs.
+- User decision: **skip Convex** for this wiring pass. Plan is asset-manifest.json +
+  sync-assets.sh + README update in the venture-hub folder only, no Convex mutation. NOT YET
+  CREATED — next action for whoever picks this up.
+- Capability join: `repo-capabilities-backfill.json` (1156 repos, 70.5% coverage, generated
+  today) x `venture-capabilities-proposed.csv` (712 ventures, 22 distinct capability terms).
+  Naive any-overlap join is degenerate (e.g. `500-AI-Agents-Projects` matches 422/712 ventures
+  because `llm`/`dashboard` are near-universal needs). **Strict-subset join** (repo's capability
+  set ⊆ venture's declared set) gives a meaningful result instead: 141 ventures for that same repo.
+  This supersedes the "9/1266 caps join" gap in memory (company-factory-and-repo-platform.md) —
+  that was pre-fix (2026-06-28); today's backfill file already resolves the vocab mismatch.
+  `build_used_by_ventures.py` NOT YET WRITTEN — next action.
+
+**Next (this session):** write and run `build_used_by_ventures.py` → `repo-used-by-ventures.json`;
+create the 3 Angels-in-Daylight wiring files; replicate pattern to CON-001, staffing, fin-*.
+**Do NOT touch Convex** — explicitly out of scope per this session's decision.
+
+### Update — same session, closing
+
+All 4 tracks above completed and verified: `venture-completion-ledger.json` (436/496 repos),
+`venture-completion-ranked.csv`, `repo-used-by-ventures.json` (strict-subset join), and
+Angels-in-Daylight's `asset-manifest.json`/`sync-assets.sh`/`VENTURE.md` (sync tested live: 157
+images, 121 SKUs).
+
+**New finding while wiring:** `github.com/Worldwidebro/ec-001-angels-in-daylight` — the dedicated
+repo matching this venture's ID — exists but contains a completely unrelated generic boilerplate
+business (a "Shopify product research SaaS" concept, same auto-generated schema as 415 other
+ventures), not the real fashion/apparel business. Name collision, not the real venture's home.
+
+User decided: populate the dedicated repo with the real content instead of leaving it as dead
+boilerplate. **IN PROGRESS, NOT YET PUSHED:** cloned `ec-001-angels-in-daylight` to
+`/private/tmp/claude-501/-Users-acebless-Documents/3f740bd5-8d17-403a-a912-ff590b9d4e9c/scratchpad/ec-001-angels-in-daylight`
+and copied the real deliverables in (catalog/, product-shots/clean/, clean_transparent/,
+_shared-fashion-os/, HTML galleries — 35MB, skipped the 100MB of raw _intake/_debug working
+files on purpose). **Still pending, not done:**
+- VENTURE.json and README.md in that clone still have the OLD generic boilerplate content —
+  need to be rewritten with the real business (fashion e-commerce, not SaaS) before commit
+- No commit or push has happened yet — nothing has left the local scratchpad clone
+- Monorepo-side changes (progress.md, the 2 new build scripts + 3 output files, the
+  Angels-in-Daylight venture-hub folder) are also still uncommitted in the main repo
+
+**Next (whoever picks this up):** decide/write real VENTURE.json + README.md content for the
+clone, commit + push to `ec-001-angels-in-daylight`, then separately commit the monorepo-side
+files listed above (these are two separate repos/commits, don't conflate them). Scratchpad clone
+is session-temporary — if it's gone, just re-clone and redo the copy step (see this entry for the
+exact `cp` commands' source/target paths).
+
