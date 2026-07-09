@@ -19,6 +19,7 @@ generated-courses/
 *.duckdb.wal
 *.log
 .DS_Store
+WORLDWIDEBRO-OS/08-DATA/venture-hub-data/neo4j/data/
 
 # Backups (snapshot separately, don't track)
 backups/
