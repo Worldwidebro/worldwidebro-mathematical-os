@@ -19,22 +19,40 @@ You don't buy yourself a driving job. You build a **dispatch/logistics company**
 
 ## What's in here
 
+Reorganized 2026-07-13 from a flat `SALES/`/`HIRING/` structure into domain
+folders. The venture's registry record (stage, ICP, revenue model) lives at
+[`../005-Medical-Courier-Dispatch/VENTURE.md`](../005-Medical-Courier-Dispatch/VENTURE.md) —
+this folder holds the actual operational content.
+
 ### SALES/ (lands the money — do first)
 - `01-CLIENT-OUTREACH-EMAIL.md` — B2B email to labs/dialysis/pharmacies
 - `02-ONE-PAGE-COMPLIANCE-SHEET.md` — credibility doc the email links to
 - `03-RATE-SHEET.md` — pricing by service line
 - `04-DRIVER-RECRUITMENT-EMAIL.md` — candidate outreach
+- `Templates/` — reusable sales templates
 
-### HIRING/ (staffs the routes once a contract is signed)
-- `01-JOB-POST.md`
-- `02-SCREENING-FORM.md` — Jotform/Google Form knockout questions
-- `03-INTERVIEW-SCORECARD.md`
-- `04-DRIVER-AGREEMENT.md` — 1099 + W-2 versions
-- `05-COMPLIANCE-ONBOARDING-CHECKLIST.md`
-- `06-HIPAA-CONFIDENTIALITY-AGREEMENT.md`
-- `07-TRAINING-ACKNOWLEDGMENTS.md` — HIPAA / OSHA bloodborne / UN3373
-- `08-ROUTE-COMPETENCY-SIGNOFF.md`
-- `09-DRIVER-FILE-INDEX.md` — the audit-ready file you keep per driver
+### HR/ (staffs the routes once a contract is signed)
+- `Templates/JOB-POST-DRIVER-v1.0.md`, `DRIVER-RECRUITMENT-EMAIL-v1.0.md`, `DRIVER-AGREEMENT-1099-and-W2-v1.0.md`
+- `Forms/SCREENING-FORM-v1.0.md`, `INTERVIEW-SCORECARD-v1.0.md`, `ONBOARDING-CHECKLIST-v1.0.md`, `ROUTE-COMPETENCY-SIGNOFF-v1.0.md`, `DRIVER-FILE-INDEX-v1.0.md`
+- `Active/` — per-driver folders (e.g. `Anissa-Valentin/`) — the audit-ready file kept per driver
+- `Archive/` — former drivers/candidates
+
+### Legal/
+- `Templates/HIPAA-CONFIDENTIALITY-AGREEMENT-v1.0.md`, `OPERATOR-EMPLOYMENT-PROFIT-SHARE-v1.0.md`
+- `Signed/`, `Amendments/` — executed agreements
+
+### Compliance/
+- `Templates/TRAINING-ACKNOWLEDGMENTS-v1.0.md` — HIPAA / OSHA bloodborne / UN3373
+- `Certifications/`
+
+### Finance/Pricing/
+- `RATE-SCHEDULE-v1.0.md`
+
+### Reference/
+- `PUERTO-RICO-EXPANSION-v1.0.md`
+
+### Build/
+- Original sales packet PDFs (`Medical-Courier-Packet.pdf`, `Medical-Courier-Packet-Antwuan-Anissa.pdf`)
 
 ## Compliance framework (federal — applies in NC AND PR)
 - **HIPAA** — BAA with every client; PHI in transit → hhs.gov/hipaa

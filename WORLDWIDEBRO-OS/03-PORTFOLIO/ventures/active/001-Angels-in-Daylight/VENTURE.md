@@ -10,19 +10,19 @@
 | Entity | TBD (LLC) |
 | State | TBD |
 | Formation Status | pending_formation |
-| First Dollar Action |  |
-| First Dollar Price | $ |
-| First Dollar Platform |  |
-| Days to Revenue |  |
-| Monthly Target | $ |
-| Revenue Model |  |
+| First Dollar Action | Sell 1 graphic tee via Medusa storefront checkout |
+| First Dollar Price | $38-45 |
+| First Dollar Platform | Medusa storefront (Vercel) + Stripe |
+| Days to Revenue | target 14 days from storefront go-live |
+| Monthly Target | $2-4K (50-100 units at $40-50 AOV) |
+| Revenue Model | DTC apparel — unit sales, no marketplace take-rate until wholesale/consignment added |
 
 ## ICP
 
-- **Title:** 
-- **Pain Point:** 
-- **Platform:** 
-- **Opening Line:** 
+- **Title:** Streetwear consumer, 18-30, urban/religious-iconography aesthetic (saint/angel graphics, blackletter type, graffiti tags)
+- **Pain Point:** Wants graphic streetwear with a distinct visual identity — not mass-market logo tees, and not priced out at $150+ hype-brand tiers
+- **Platform:** Instagram + TikTok (visual-first, drop culture); secondary: streetwear Reddit/Discord
+- **Opening Line:** "Saints don't dress like everyone else." — lead with the hero-reveal commercial already built at `angels-in-daylight/commercials/hero-reveal-c1/`, drive to storefront
 
 ## Asset Locations
 
