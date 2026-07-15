@@ -1,0 +1,23 @@
+{
+  "source_path": "/Users/acebless/Documents/MASTER-INDEX.md",
+  "type": "DOC",
+  "confidence": "high",
+  "manifest_override": true,
+  "title": "Worldwidebro Holdings Master Index",
+  "summary": "Navigation entry point routing to Strategy, Infrastructure, Ventures, and Reference orbs of the Worldwidebro system.",
+  "scope": ["navigation", "orbs", "strategy layers", "infrastructure layers", "ventures", "reference hub", "skills taxonomy", "propagation rules"],
+  "cross_refs": [
+    "Influence-Venture-Business-OS/STRATEGY_LAYERS/STRATEGY-HUB",
+    "Influence-Venture-Business-OS/STRATEGY_LAYERS/brain/North-Star",
+    "Influence-Venture-Business-OS/INFRASTRUCTURE_LAYERS/INFRASTRUCTURE-HUB",
+    "Influence-Venture-Business-OS/INFRASTRUCTURE_LAYERS/SKILLS-TAXONOMY",
+    "Influence-Venture-Business-OS/VENTURES/VENTURES-HUB",
+    "Influence-Venture-Business-OS/VENTURES/PROPAGATION-RULES",
+    "Influence-Venture-Business-OS/REFERENCE/REFERENCE-HUB",
+    "Influence-Venture-Business-OS/STRATEGY_LAYERS/brain/Patterns",
+    "WORLDWIDEBRO-OS/08-DATA/Influence-Venture-Business-OS/STRATEGY_LAYERS/WORLDWIDEBRO-OS/01_CEO_COMMAND_CENTER/Indexes/MASTER-INDEX.md"
+  ],
+  "locked": false,
+  "precedence": 0,
+  "notes": ""
+}

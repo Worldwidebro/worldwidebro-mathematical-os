@@ -113,18 +113,35 @@ source: MCP_REGISTRY.json
 | MCP | Priority | Status | Purpose | Last Tested |
 |-----|----------|--------|---------|-------------|
 | **airtable** | 🔴 CRITICAL | ✅ | Venture DB + dashboard | 2026-06-22 |
-| **supabase** | 🔴 CRITICAL | ✅ | Data source + knowledge graph | 2026-06-22 |
-| **clickup** | 🟠 HIGH | ✅ | Task management | 2026-06-22 |
-| **notion** | 🟠 HIGH | ✅ | Documentation + binders | 2026-06-22 |
-| **slack** | 🟠 HIGH | ✅ | Real-time alerts | 2026-06-22 |
+| **supabase** | 🔴 CRITICAL | ✅ | Data source + knowledge graph; also project/branch/migration/edge-function mgmt | 2026-07-08 |
+| **clickup** | 🟠 HIGH | ✅ | Task management (tasks, docs, time tracking, chat) | 2026-07-08 |
+| **notion** | 🟠 HIGH | ✅ | Documentation + binders (pages, databases, comments) | 2026-07-08 |
+| **slack** | 🟠 HIGH | ✅ | Real-time alerts + canvas, channel/thread search | 2026-07-08 |
 | **zapier** | 🟠 HIGH | ✅ | Automation (4 zaps) | 2026-06-22 |
-| **gmail** | 🟠 HIGH | ✅ | Weekly briefings | 2026-06-22 |
-| **github** | 🟠 HIGH | ✅ | Code deployment | 2026-06-22 |
+| **gmail** | 🟠 HIGH | ✅ | Weekly briefings, drafts, labels, sensitive-message handling | 2026-07-08 |
+| **github** | 🟠 HIGH | ✅ | Code deployment, PRs, issues, repo/branch mgmt | 2026-06-22 |
 | **graphify** | 🟠 HIGH | ✅ | Knowledge graph | 2026-06-22 |
 | **memory** | 🟠 HIGH | ✅ | Persistent context | 2026-06-22 |
-| google_calendar | 🟡 MEDIUM | ✅ | Meeting scheduling | 2026-06-22 |
-| stripe | 🟡 MEDIUM | ✅ | Payment capture | 2026-06-22 |
-| hubspot | 🟡 MEDIUM | ✅ | CRM (Phase 2) | 2026-06-22 |
+| google_calendar | 🟡 MEDIUM | ✅ | Meeting scheduling, event response, time suggestions | 2026-07-08 |
+| google_drive | 🟡 MEDIUM | ✅ | File search, read, create, copy, permissions | 2026-07-08 |
+| stripe | 🟡 MEDIUM | ✅ | Payment capture, refunds, docs search | 2026-06-22 |
+| hubspot | 🟡 MEDIUM | ✅ | CRM (contacts, deals, campaigns, analytics) | 2026-07-08 |
+| **vercel** | 🟠 HIGH | ✅ | Deploys, project/domain mgmt, build/runtime logs — used for all sector/venture site launches | 2026-07-08 |
+| jotform | 🟡 MEDIUM | ✅ | Form creation, submissions, app builder | 2026-07-08 |
+| make | 🟢 LOW | ✅ | Scenario/automation builder (alt to Zapier) | 2026-07-08 |
+| mermaid_chart | 🟢 LOW | ✅ | Diagram generation + GitHub/Notion/Jira sync | 2026-07-08 |
+| pitchbook_premium | 🟢 LOW | ⚠️ auth required | Market/deal research | 2026-07-08 |
+| planetscale | 🟢 LOW | ⚠️ auth required | Alt hosted DB | 2026-07-08 |
+| hugging_face | 🟢 LOW | ⚠️ auth required | Model hub access | 2026-07-08 |
+| indeed | 🟢 LOW | ✅ | Job/company data, resume lookup (career-ops) | 2026-07-08 |
+| learning_commons_kg | 🟢 LOW | ✅ | Education standards knowledge graph (EDU sector) | 2026-07-08 |
+| tavily | 🟡 MEDIUM | ✅ | Web search/crawl/extract/research | 2026-07-08 |
+| exa | 🟡 MEDIUM | ✅ | Web search + fetch | 2026-07-08 |
+| context7 | 🟡 MEDIUM | ✅ | Library/framework docs lookup | 2026-07-08 |
+| playwright / puppeteer | 🟡 MEDIUM | ✅ | Browser automation, screenshots, form fill | 2026-07-08 |
+| filesystem | 🟠 HIGH | ✅ | Local file read/write/search beyond default tools | 2026-07-08 |
+
+**Note:** rows added 2026-07-08 reflect MCPs visible in the live tool list that were missing from this map (added 2026-06-22). Re-check this table whenever the deferred-tools system reminder shows names not listed here — that's the signal this file has drifted again.
 
 ---
 

@@ -1,0 +1,4 @@
+timestamp,email,name,ventureId,metadata
+2026-07-15T06:57:12.969690Z,test@worldwidebro.com,John Doe,con-001,"{""cost_estimate"": 145000}"
+2026-07-15T07:04:19.495862Z,taxpayer@gmail.com,Alice Smith,fin-006,"{""has_home_office"": true, ""office_sqft"": 250, ""annual_mileage"": ""4000"", ""annual_charity"": ""1200"", ""medical_expenses"": ""0"", ""has_childcare_loans"": false, ""estimated_deductions"": ""$4,350""}"
+2026-07-15T17:19:53.004150Z,investor@goldman.com,Robert Sterling,RE-001-PROPERTY-HOLDINGS,"{""allocation_tier"": ""250000"", ""accreditation_status"": ""pending_verification""}"

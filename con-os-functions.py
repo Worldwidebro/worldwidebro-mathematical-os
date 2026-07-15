@@ -106,6 +106,51 @@ def create_lead_from_inquiry(inquiry: Dict[str, Any]) -> Dict[str, Any]:
     return lead
 
 
+def parse_jotform_submission(jotform_payload: Dict[str, Any], company_id: str) -> Dict[str, Any]:
+    """Parse a JotForm webhook submission into a CON OS lead.
+
+    Expected JotForm field names in the form:
+      companyName    → company_name
+      contactPerson  → contact_person
+      email1         → email
+      areaCode + phoneNumber → phone
+      projectType    → project_type
+      description1   → project description
+      estimatedValue → estimated_value (USD, parsed as int)
+      timeline1      → project timeline
+    """
+    answers = jotform_payload.get('answers', {})
+
+    def _field(name):
+        for ans in answers.values():
+            if isinstance(ans, dict) and ans.get('name') == name:
+                val = ans.get('answer')
+                if isinstance(val, str) and val.strip():
+                    return val.strip()
+        return None
+
+    area = _field('areaCode') or ''
+    phone_num = _field('phoneNumber') or ''
+    phone = f"{area}{phone_num}" if area and phone_num else (phone_num or '')
+
+    inquiry = {
+        "company_name": _field('companyName') or 'Unknown',
+        "contact_person": _field('contactPerson') or 'Unknown',
+        "email": _field('email1') or '',
+        "phone": phone,
+        "project_type": _field('projectType') or 'General Construction',
+        "description": _field('description1') or '',
+        "estimated_value": int(_field('estimatedValue') or 0),
+        "timeline": _field('timeline1') or 'Not specified',
+        "source": "jotform",
+        "jotform_submission_id": jotform_payload.get('submission_id'),
+        "jotform_form_id": jotform_payload.get('form_id'),
+    }
+
+    lead = create_lead_from_inquiry(inquiry)
+    return lead
+
+
 def score_lead(lead: Dict[str, Any]) -> Dict[str, Any]:
     """Score lead by value, urgency, and fit."""
 
@@ -565,6 +610,8 @@ def execute_con_os_workflow(action: str, data: Dict[str, Any]) -> Dict[str, Any]
 
         # Lead Management
         "create_lead": create_lead_from_inquiry,
+        "parse_jotform": lambda d: parse_jotform_submission(
+            d.get('jotform_payload'), d.get('company_id')),
         "score_lead": score_lead,
 
         # Project Management

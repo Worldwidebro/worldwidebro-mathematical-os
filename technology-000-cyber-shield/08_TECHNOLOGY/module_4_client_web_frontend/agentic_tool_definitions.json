@@ -1,0 +1,8 @@
+{
+  "name": "tec_client_web_frontend",
+  "description": "Orchestrates technical commands for Client Web Frontend in venture Cyber Shield",
+  "parameters": {
+    "type": "object",
+    "properties": {}
+  }
+}

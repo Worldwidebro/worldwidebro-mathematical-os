@@ -1,0 +1,30 @@
+{
+  "business_name": "Worldwidebro Academy — YouTube Channel Network",
+  "sector": "media-content",
+  "opco": "MEDIA-CONTENT",
+  "development_stage": "mvp",
+  "status": "development",
+  "entity": {
+    "name": "Winners Circle WC LLC",
+    "type": "LLC",
+    "state": "TBD",
+    "status": "pending_formation"
+  },
+  "first_dollar": {
+    "action": "Launch Azriel Phase 1 testbed channel (monster trucks, Roblox, reading/writing, sports)",
+    "price": "0",
+    "platform": "YouTube",
+    "days_to_revenue": "90"
+  },
+  "revenue": {
+    "monthly_target": "400000",
+    "model": "5-channel YouTube ad revenue + course/membership upsell from 30-layer curriculum content"
+  },
+  "icp": {
+    "title": "Parents seeking character-first, values-driven content for kids ages 5-12",
+    "pain_point": "Mainstream kids' YouTube content is low-value entertainment with no character or life-skills development baked in",
+    "platform": "YouTube (Character Academy, Thinking Academy, Wealth & Entrepreneurship, Leadership & Impact, Life Mastery channels)",
+    "opening_line": "What if your kid's screen time built character instead of just burning attention?"
+  },
+  "notes": "Consolidated 2026-07-14: this venture slot is the operating home for the Worldwidebro Academy 5-channel YouTube strategy (30-layer curriculum, content atomization system: 1 concept -> 50-100 assets). Active work lives in ventures/active/Azriel-Fathering-Content (Phase 1 testbed, Jun-Aug 2026) and github.com/Worldwidebro/edu-006-homeschooling-content-ai. Previously an empty template pointing at a non-existent repo (mc-001-youtube-channel-network) with zero mapped capabilities."
+}

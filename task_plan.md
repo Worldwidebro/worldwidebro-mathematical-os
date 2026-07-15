@@ -259,3 +259,57 @@ Services, Ventures directory with filters, Venture detail, Contact, Privacy, Ter
 data generator to read the real OPCO mapping (10.1). Committed + pushed to
 `github.com/Worldwidebro/vex-site` (private). Per this plan's own disposition codes, this is a live
 repo → should be REGISTER'd in `08-DATA/registries` like the other live repos, not folded/moved.
+
+## Phase 11 — First real venture deployment: con-001-ace-construction (2026-07-04)
+
+### 11.1 Corrected "0/712 ventures have code" — real completion data exists, just scattered
+Checked actual GitHub repo contents (not just local Documents) for the first time. 496/862 owned
+repos are venture-ID-named; ~93% of a 30-repo sample have a `venture.json` with real completion
+tracking. `con-001-ace-construction`: 60% complete, real Next.js 15 + Supabase app (12 pages incl.
+auth/booking/dashboard/onboarding), Stripe deps installed but unused. Also found a live venture-hub
+dashboard (`venture-hub-pi.vercel.app`, real `/api/ventures` endpoint, 687 ventures) whose own data
+disagrees with the per-repo truth (`hasCode: true` for 0/687) — two disconnected sources, not one
+gap. Full detail in memory: `venture-repo-completion-reality-2026-07.md`.
+
+### 11.2 con-001-ace-construction — deployed live, first real venture in the portfolio
+Cloned locally to `WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/CON-001-Ace-Construction/`.
+Provisioned a real Supabase project (`rhlkjelglvurowdalrgh`), fixed a real schema bug (`references`
+used unquoted as a column name — reserved SQL keyword), applied full schema. Fixed 2 build-blocking
+lint errors (`<a>` vs `<Link>`) and 1 real logic bug (contact route hardcoded a fake domain email,
+ignoring the `CONTACT_TO_EMAIL` env var). Deployed to Vercel: **https://con-001-ace-construction.vercel.app**
+— live, real backend, real contact routing to `winnerscirclewcllc@gmail.com`.
+Wrote Stripe Checkout Session + webhook handler code (`/api/projects/[id]/checkout`,
+`/api/webhooks/stripe`) and wired a "Pay deposit" button into the client project page — blocked on
+3 secrets only the user can retrieve (`STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET`,
+`SUPABASE_SERVICE_ROLE_KEY`). Confirmed via Stripe's implementation-planner tool this should be
+standard (non-Connect) payments with hosted Checkout — not a marketplace/payout system, since
+Winners Circle WC LLC is merchant of record, not splitting funds to contractors.
+
+### 11.3 Identity correction — con-001 "Ace Construction" is a DBA skin, not the real business
+`con-001-ace-construction`'s fictional identity (B2C contractor-marketplace) is unrelated to the
+user's actual real business, **Winners Circle WC LLC** (B2B subcontractor bidding to GCs, real
+capability statement + sales scripts in `04-OPERATIONS/CON-CAPABILITY-STATEMENT.md` /
+`CON-SALES-SCRIPTS.md`). User decided: treat Ace Construction as a DBA/brand config layer over the
+real entity for now, fix later if rebranding. Replaced all placeholder phone/location
+(919-555-1234, Raleigh-Durham NC) across 10 site files + both real sales documents with the real
+number (704) 388-5030 and Charlotte, NC. Capability statement down to 1 real blank (insurance).
+
+### 11.4 BrowserOS — resolved, was a port misconfiguration, not a missing tool
+`browseros` MCP entry existed but pointed at port 9001; the actual running `BrowserOS` process
+(confirmed via `lsof`) was listening on port 9003. Removed and re-added pointing at the correct
+port — now `✔ Connected`. This was the actual root cause behind repeated "show me on BrowserOS"
+requests earlier in the session, not a missing integration.
+
+### 11.5 vex-hero-site — was never actually deployed, deploying now
+Confirmed the site had never been deployed to Vercel despite earlier "verified live in a browser"
+claims (those were a local dev server). Linked a new Vercel project (`vex-hero-site`), added
+`vercel.json` SPA rewrite (needed since it's a Vite + react-router client-routed app with no
+rewrite config) — deploy in progress at time of writing, not yet confirmed live.
+
+**claude-mem**: confirmed NOT working this session (`claude-mem status` → "not installed"),
+despite the npm package + source being present since April. Installed properly via
+`npx claude-mem install` mid-session (user ran it directly).
+
+**Next**: confirm vex-hero-site deploy succeeded; get the 3 Stripe/Supabase secrets from user
+(possibly via BrowserOS now that it's connected); decide whether to build vex-hero-site's missing
+pages (Case Studies, Intake, Advisory Packages, Sector/OpCo pages, 404).

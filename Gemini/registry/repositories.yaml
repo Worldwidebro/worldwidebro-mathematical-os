@@ -1,0 +1,337 @@
+repositories:
+  - name: awesome-gemini-cli
+    url: https://github.com/Piebald-AI/awesome-gemini-cli
+    category: Awesome Lists
+    purpose: Curated index of Gemini CLI extensions and resources
+    status: active
+  - name: awesome-gemini-cli-dtunai
+    url: https://github.com/dtunai/awesome-gemini-cli
+    category: Awesome Lists
+    purpose: Collection of tutorials and examples for Gemini CLI
+    status: active
+  - name: awesome-cli-coding-agents
+    url: https://github.com/bradAGI/awesome-cli-coding-agents
+    category: Awesome Lists
+    purpose: Benchmark comparison of terminal agents (Claude Code, Gemini CLI, etc.)
+    status: active
+  - name: gemini-api-cookbook
+    url: https://github.com/google-gemini/cookbook
+    category: Cookbooks
+    purpose: Official hands-on tutorial and example code for Gemini API
+    status: active
+  - name: gemini-cli-demo-cookbook
+    url: https://github.com/ptone/cli-demo-cookbook
+    category: Cookbooks
+    purpose: Developer showcase of common terminal automation tasks
+    status: active
+  - name: gemini-cli-tips
+    url: https://github.com/addyosmani/gemini-cli-tips
+    category: Best Practices
+    purpose: 30 pro-tips covering agentic coding patterns
+    status: active
+  - name: gemini-cli-best-practice
+    url: https://github.com/shanraisshan/gemini-cli-best-practice
+    category: Best Practices
+    purpose: Guides on moving from vibe coding to structured GEMINI.md templates
+    status: active
+  - name: gemini-skills
+    url: https://github.com/google-gemini/gemini-skills
+    category: Skills
+    purpose: Official skills for adding lightweight capabilities to Gemini agents
+    status: active
+  - name: agent-skills
+    url: https://github.com/addyosmani/agent-skills
+    category: Skills
+    purpose: Skills system that auto-discovers SKILL.md rules files
+    status: active
+  - name: agentic-awesome-skills
+    url: https://github.com/sickn33/agentic-awesome-skills
+    category: Skills
+    purpose: Community registry of agentic skills and modular workflows
+    status: active
+  - name: mcp-openai-bridge
+    url: https://github.com/Intelligent-Internet/gemini-cli-mcp-openai-bridge
+    category: MCP Ecosystem
+    purpose: Hub connecting Gemini CLI to external tools via Model Context Protocol
+    status: active
+  - name: mcp-toolbox
+    url: https://github.com/gemini-cli-extensions/mcp-toolbox
+    category: MCP Ecosystem
+    purpose: Create custom MCP servers with secure, verified tools
+    status: active
+  - name: workspace-extension
+    url: https://github.com/gemini-cli-extensions/workspace
+    category: Extensions
+    purpose: Integrates Google Workspace (Docs, Sheets, Drive) with Gemini CLI
+    status: active
+  - name: conductor-extension
+    url: https://github.com/gemini-cli-extensions/conductor
+    category: Extensions
+    purpose: Context-driven development and proactive project management
+    status: active
+  - name: code-review-extension
+    url: https://github.com/gemini-cli-extensions/code-review
+    category: Extensions
+    purpose: Autonomous reviewer checking Git branches and PRs
+    status: active
+  - name: rtk
+    url: https://github.com/rtk-airtk
+    category: Token Optimization
+    purpose: YAML filter proxy reducing input token counts by 60-90%
+    status: active
+  - name: run-gemini-cli
+    url: https://github.com/google-github-actions/run-gemini-cli
+    category: GitHub Actions
+    purpose: GitHub Action for issue triage, reviews, and codebase scans
+    status: active
+  - name: gpt4all
+    url: https://github.com/nomic-ai/gpt4all
+    category: Local AI Runtime
+    purpose: Running lightweight LLMs locally on edge and desktop environments
+    status: active
+  - name: localai
+    url: https://github.com/mudler/LocalAI
+    category: Local AI Runtime
+    purpose: OpenAI-compatible local API server wrapping models, speech, and vision
+    status: active
+  - name: lemonade-sdk
+    url: https://github.com/lemonade-sdk/lemonade
+    category: Local AI Runtime
+    purpose: NPU and GPU acceleration layer for local models on hardware
+    status: planned
+  - name: codegraph
+    url: https://github.com/colbymchenry/codegraph
+    category: Code Intelligence
+    purpose: Building local codebase graphs mapping directories and symbols
+    status: planned
+  - name: gitnexus
+    url: https://github.com/abhigyanpatwari/GitNexus
+    category: Code Intelligence
+    purpose: Scanning repository graphs and mapping dependency files
+    status: active
+  - name: socraticode
+    url: https://github.com/giancarloerra/SocratiCode
+    category: Code Intelligence
+    purpose: Semantic codebase impact explorer and repository context mapper
+    status: planned
+  - name: grepai
+    url: https://github.com/yoanbernabeu/grepai
+    category: Code Intelligence
+    purpose: Call-graph indexer and rapid semantic grep search
+    status: planned
+  - name: openhuman
+    url: https://github.com/tinyhumansai/openhuman
+    category: Agent Desktop
+    purpose: Personal super-intelligence desktop orchestration framework
+    status: active
+  - name: aionui
+    url: https://github.com/iOfficeAI/AionUi
+    category: Agent Desktop
+    purpose: Desktop launcher integrating Claude Code, Codex, and Gemini CLI
+    status: planned
+  - name: eigent
+    url: https://github.com/eigent-ai/eigent
+    category: Agent Desktop
+    purpose: AI employee cowork desktop interface
+    status: planned
+  - name: agenticseek
+    url: https://github.com/Fosowl/agenticSeek
+    category: Agent Desktop
+    purpose: Fully autonomous web browsing, reasoning, and coding agent
+    status: active
+  - name: dyad
+    url: https://github.com/dyad-sh/dyad
+    category: App Factory
+    purpose: Low-code application builder compiling systems from prompts
+    status: active
+  - name: claudable
+    url: https://github.com/opactorai/Claudable
+    category: App Factory
+    purpose: Autonomous website builder CLI agent
+    status: planned
+  - name: camunda
+    url: https://github.com/camunda/camunda
+    category: Automation
+    purpose: Enterprise BPMN process engine orchestrating complex tasks
+    status: active
+  - name: localstack
+    url: https://github.com/localstack/localstack
+    category: Infrastructure
+    purpose: Offline AWS cloud simulation (Lambda, S3, DynamoDB, SQS)
+    status: active
+  - name: metatron
+    url: https://github.com/AgriciDaniel/METATRON
+    category: Security
+    purpose: AI penetration testing scan helper checking credentials and ports
+    status: planned
+  - name: obsidian-second-brain
+    url: https://github.com/eugeniughelbur/obsidian-second-brain
+    category: Data Memory
+    purpose: Synchronizes personal wikis and obsidian vaults into agent tools
+    status: active
+  - name: meetily
+    url: https://github.com/Zackriya-Solutions/meetily
+    category: Voice Intelligence
+    purpose: Meeting assistant generating audio transcription and summaries
+    status: planned
+  - name: natively-cluely-ai-assistant
+    url: https://github.com/Natively-AI-assistant/natively-cluely-ai-assistant
+    category: Voice Intelligence
+    purpose: Real-time meeting notes compiler and speaker diarization
+    status: planned
+  - name: pindrop
+    url: https://github.com/watzon/pindrop
+    category: Voice Intelligence
+    purpose: macOS Whisper dictation client forwarding to CLI prompts
+    status: active
+  - name: frigate
+    url: https://github.com/blakeblackshear/frigate
+    category: Computer Vision
+    purpose: Local real-time NVR object detection mapping facilities
+    status: planned
+  - name: vert
+    url: https://github.com/VERT-sh/VERT
+    category: Computer Vision
+    purpose: Offline file format and media conversion processor
+    status: active
+  - name: langgraph
+    url: https://github.com/langchain-ai/langgraph
+    category: Agent Frameworks
+    purpose: Stateful multi-actor orchestration supporting cyclic graphs
+    status: active
+  - name: crewai
+    url: https://github.com/crewAIInc/crewAI
+    category: Agent Frameworks
+    purpose: Multi-agent team assembly and task allocation
+    status: active
+  - name: autogen
+    url: https://github.com/microsoft/autogen
+    category: Agent Frameworks
+    purpose: Conversational multi-agent framework mapping complex structures
+    status: planned
+  - name: metagpt
+    url: https://github.com/geekan/MetaGPT
+    category: Agent Frameworks
+    purpose: Software company simulation with PM, Architect, and QA roles
+    status: active
+  - name: awesome-chatgpt-prompts
+    url: https://github.com/f/awesome-chatgpt-prompts
+    category: Prompts Library
+    purpose: Curated library of roles and system prompt blueprints
+    status: active
+  - name: prompt-engineering-guide
+    url: https://github.com/dair-ai/Prompt-Engineering-Guide
+    category: Prompts Library
+    purpose: Advanced guide on CoT, RAG prompts, and system constraints
+    status: active
+  - name: promptfoo
+    url: https://github.com/promptfoo/promptfoo
+    category: Prompts Library
+    purpose: Prompt regression testing comparing accuracy, costs, and safety
+    status: active
+  - name: modelcontextprotocol-servers
+    url: https://github.com/modelcontextprotocol/servers
+    category: MCP Ecosystem
+    purpose: Official MCP server implementations (Git, SQLite, Slack, Drive)
+    status: active
+  - name: modelcontextprotocol-python-sdk
+    url: https://github.com/modelcontextprotocol/python-sdk
+    category: MCP Ecosystem
+    purpose: Python SDK for compiling custom MCP servers and resources
+    status: active
+  - name: modelcontextprotocol-go-sdk
+    url: https://github.com/mark3labs/mcp-go
+    category: MCP Ecosystem
+    purpose: Go SDK for low-latency production MCP tool bindings
+    status: active
+  - name: llamaindex
+    url: https://github.com/run-llama/llama_index
+    category: RAG & Graphs
+    purpose: Data connection framework linking vector indexes to agents
+    status: active
+  - name: haystack
+    url: https://github.com/deepset-ai/haystack
+    category: RAG & Graphs
+    purpose: Enterprise level pipeline designer for search and Q&A systems
+    status: active
+  - name: qdrant
+    url: https://github.com/qdrant/qdrant
+    category: RAG & Graphs
+    purpose: Production vector search engine tracking semantic embeddings
+    status: active
+  - name: neo4j
+    url: https://github.com/neo4j/neo4j
+    category: RAG & Graphs
+    purpose: Graph database connecting repository capabilities and ventures
+    status: active
+  - name: graphrag
+    url: https://github.com/microsoft/graphrag
+    category: RAG & Graphs
+    purpose: Extraction of entities and communities for structured summary RAG
+    status: active
+  - name: activepieces
+    url: https://github.com/activepieces/activepieces
+    category: Automation
+    purpose: Self-hosted open source workflows alternative to Zapier
+    status: active
+  - name: playwright
+    url: https://github.com/microsoft/playwright
+    category: Automation
+    purpose: Browser driver enabling clicks, logins, and form submissions
+    status: active
+  - name: browser-use
+    url: https://github.com/browser-use/browser-use
+    category: Automation
+    purpose: Agentic browser automation overlay navigating pages natively
+    status: active
+  - name: aider
+    url: https://github.com/Aider-AI/aider
+    category: Coding Agents
+    purpose: Terminal-based coding agent integrating direct file edits
+    status: active
+  - name: continue
+    url: https://github.com/continuedev/continue
+    category: Coding Agents
+    purpose: IDE extensions linking models to code windows and chats
+    status: active
+  - name: openhands
+    url: https://github.com/All-Hands-AI/OpenHands
+    category: Coding Agents
+    purpose: Fully autonomous coding workspace executor
+    status: active
+  - name: deepeval
+    url: https://github.com/confident-ai/deepeval
+    category: AI Evaluation
+    purpose: Tests RAG recall, hallucination risks, and conversation quality
+    status: active
+  - name: ragas
+    url: https://github.com/explodinggradients/ragas
+    category: AI Evaluation
+    purpose: Evaluation framework for retrieval augmented generation pipelines
+    status: active
+  - name: openai-cookbook
+    url: https://github.com/openai/openai-cookbook
+    category: Cookbooks
+    purpose: OpenAI guidelines on function calling, agents, and fine-tunes
+    status: active
+  - name: anthropic-cookbook
+    url: https://github.com/anthropics/anthropic-cookbook
+    category: Cookbooks
+    purpose: Anthropic workflows covering tool use, prompts, and caching
+    status: active
+  - name: huggingface-cookbook
+    url: https://github.com/huggingface/cookbook
+    category: Cookbooks
+    purpose: Guides on running models, local fine-tunes, and transformers
+    status: active
+  - name: vex-hero-site
+    url: file:///Users/acebless/Documents/vex-hero-site
+    category: Venture Frontends
+    purpose: Landing platform for VEX (Venture Execution) systems
+    status: active
+  - name: classbuild
+    url: https://github.com/jtangen/classbuild
+    category: App Factory
+    purpose: AI-powered course generator built on evidence-based learning science
+    status: active
+

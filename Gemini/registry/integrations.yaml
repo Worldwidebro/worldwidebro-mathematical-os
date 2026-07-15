@@ -1,0 +1,62 @@
+integrations:
+  - repository: gpt4all
+    provides_capability: local-model-gateway
+    used_by_agent: AI Architect Agent
+    notes: Acts as local model execution gateway for off-grid operations.
+  - repository: localai
+    provides_capability: private-api-layer
+    used_by_agent: Backend Engineer Agent
+    notes: Provides local OpenAI-compatible endpoint wrapper for model queries.
+  - repository: gitnexus
+    provides_capability: repo-scanner
+    used_by_agent: CTO Agent
+    notes: Automatically maps file and folder dependencies across venture repositories.
+  - repository: openhuman
+    provides_capability: personal-ceo
+    used_by_agent: CEO Agent
+    notes: Serves as the user's primary Super-Intelligence orchestration proxy.
+  - repository: dyad
+    provides_capability: mvp-app-factory
+    used_by_agent: Venture Creator Agent
+    notes: Accelerates startup iteration by generating database schemas from text.
+  - repository: camunda
+    provides_capability: process-orchestrator
+    used_by_agent: COO Agent
+    notes: Executes BPMN approvals and triggers multi-step workflows.
+  - repository: localstack
+    provides_capability: aws-simulation
+    used_by_agent: DevOps Agent
+    notes: Runs offline deployment tests for AWS cloud services (S3, Lambda, SQS).
+  - repository: metatron
+    provides_capability: pen-tester
+    used_by_agent: Compliance Agent
+    notes: Automatically executes security compliance audits on code repository files.
+  - repository: obsidian-second-brain
+    provides_capability: second-brain-sync
+    used_by_agent: CEO Agent
+    notes: Synchronizes user notes and strategic documents into local prompt contexts.
+  - repository: meetily
+    provides_capability: meeting-transcriber
+    used_by_agent: Project Manager Agent
+    notes: Diarizes and summarizes strategic meetings and outputs action items.
+  - repository: vex-hero-site
+    provides_capability: landing-frontends
+    used_by_agent: Frontend Engineer Agent
+    notes: Serves as the default visual landing template for venture product presentations.
+  - repository: PaddleOCR
+    provides_capability: document-extraction
+    used_by_agent: Research Agent
+    notes: Extracts text blocks and claims from scanned document manifests.
+  - repository: Qdrant
+    provides_capability: vector-search
+    used_by_agent: Research Agent
+    notes: Indexes document embeddings for semantic search retrievals.
+  - repository: LlamaIndex
+    provides_capability: rag-orchestrator
+    used_by_agent: Research Agent
+    notes: Connects Qdrant vector index to agent decision logic.
+  - repository: classbuild
+    provides_capability: course-generator
+    used_by_agent: Venture Creator Agent
+    notes: Automatically builds complete course materials (slide decks, quizzes, audio assets) using learning science principles.
+

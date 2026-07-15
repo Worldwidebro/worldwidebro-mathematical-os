@@ -1,0 +1,29 @@
+{
+  "source_path": "/Users/acebless/Documents/WORLDWIDEBRO-OS/07-KNOWLEDGE/research/MASTER-INDEX-CONSOLIDATION-PLAN.md",
+  "type": "PRD",
+  "confidence": "high",
+  "manifest_override": true,
+  "title": "Master Index Consolidation Plan",
+  "summary": "Plan to consolidate 71 overlapping master/index files (registries, indexes) into 10-12 unified masters.",
+  "scope": ["repository registries", "master indexes", "REPOSITORY-REGISTRY.json", "venture-hub", "documentation consolidation"],
+  "cross_refs": [
+    "[[Influence-Venture-Business-OS/REFERENCE/REFERENCE-HUB]]",
+    "[[Influence-Venture-Business-OS/INFRASTRUCTURE_LAYERS/INFRASTRUCTURE-HUB]]",
+    "[[Influence-Venture-Business-OS/STRATEGY_LAYERS/STRATEGY-HUB]]",
+    "REPOSITORY-REGISTRY.json",
+    "GITHUB-REPOSITORIES-MASTER-LIST.md",
+    "MASTER-REPO-REGISTRY.csv",
+    "MASTER_REPO_REGISTRY_COMPLETE.csv",
+    "REPO_REGISTRY.json",
+    "00-MASTER-INDEX.md",
+    "MASTER-INDEX.md",
+    "000-OBSIDIAN-MASTER-INDEX.md",
+    "COMPLETE-RESOURCE-INDEX.md",
+    "DASHBOARD-INDEX.md",
+    "ARTIFACT-INDEX.md",
+    "SESSION-INDEX-2026-06-11.md"
+  ],
+  "locked": false,
+  "precedence": 1,
+  "notes": ""
+}

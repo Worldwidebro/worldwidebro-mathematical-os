@@ -1,0 +1,47 @@
+# IZA OS Lead Enrichment & Sync Pipeline
+# Configures validation, profiling, and CRM mapping hooks for raw scraping outputs.
+
+pipeline:
+  stages:
+    - name: validation
+      description: "Verify email format, eliminate disposable domains, and test mailbox liveliness."
+      actions:
+        - engine: "MailChecker"
+          rule: "reject_disposable_domains"
+        - engine: "theHarvester / MX Lookup"
+          rule: "verify_dns_mx_records"
+
+    - name: enrichment
+      description: "Profile target technology stacks, financial status, and organizational data."
+      actions:
+        - engine: "Wappalyzer"
+          mapping:
+            target: "tech_stack"
+            key_technologies: ["React", "Shopify", "WordPress", "HubSpot"]
+        - engine: "OpenBB Finance"
+          mapping:
+            target: "company_market_cap"
+            source: "SEC EDGAR / public filings"
+
+    - name: qualification
+      description: "Classify priority tiers based on revenue target fit and technical dependencies."
+      actions:
+        - classifier: "LangGraph QA Agent"
+          criteria:
+            fit_tier: "IF (revenue_target >= 1M AND tech_stack CONTAINS 'Shopify') -> Tier-A"
+
+    - name: crm_sync
+      description: "Route qualified profiles to the unified Twenty CRM instance."
+      target:
+        instance: "docker:twenty-server"
+        host: "http://100.87.214.70:3002"
+        workspace: "worldwidebro"
+        mappings:
+          - source: "company_name"
+            dest: "Company.name"
+          - source: "email"
+            dest: "People.emails"
+          - source: "tech_stack"
+            dest: "Company.tech_stack_custom"
+          - source: "fit_tier"
+            dest: "Company.tier_custom"

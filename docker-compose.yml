@@ -1,5 +1,3 @@
-version: '3.9'
-
 services:
   # Graph Database for Knowledge Graph Infrastructure
   neo4j:
@@ -70,6 +68,26 @@ services:
       timeout: 5s
       retries: 5
 
+  # Vector Database for Semantic Search & Embeddings
+  qdrant:
+    image: qdrant/qdrant:v1.12.4
+    container_name: qdrant
+    hostname: qdrant.internal
+    ports:
+      - "6333:6333"  # REST API + Web UI
+      - "6334:6334"  # gRPC
+    volumes:
+      - qdrant_data:/qdrant/storage
+    networks:
+      - ventures
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "bash -c ':> /dev/tcp/127.0.0.1/6333' || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 20s
+
   # Dashboarding & Visualization
   grafana:
     image: grafana/grafana:10.2.0
@@ -80,19 +98,137 @@ services:
       GF_SECURITY_ADMIN_PASSWORD: ventures2026
       GF_USERS_ALLOW_SIGN_UP: "false"
     ports:
-      - "3000:3000"
+      - "3001:3000"
     volumes:
       - grafana_data:/var/lib/grafana
     networks:
       - ventures
     restart: unless-stopped
     depends_on:
-      - postgres
+      postgres:
+        condition: service_healthy
+      qdrant:
+        condition: service_healthy
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:3000/api/health"]
       interval: 30s
       timeout: 10s
       retries: 3
+
+  # Local Model Router - OpenAI-compatible proxy in front of Ollama
+  litellm:
+    image: ghcr.io/berriai/litellm:main-latest
+    container_name: litellm
+    hostname: litellm.internal
+    command: ["--config", "/app/config.yaml", "--port", "4000"]
+    env_file:
+      - ./.env.litellm
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./litellm_config.yaml:/app/config.yaml
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    networks:
+      - ventures
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python3", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:4000/health/liveliness')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+
+  # Observability — LLM tracing, metrics, and agent observability
+  langfuse:
+    image: ghcr.io/langfuse/langfuse:2
+    container_name: langfuse
+    hostname: langfuse.internal
+    environment:
+      DATABASE_URL: postgresql://postgres:postgres@postgres.internal:5432/langfuse
+      NEXTAUTH_SECRET: langfuse-dev-secret
+      SALT: langfuse-dev-salt
+      NEXTAUTH_URL: http://localhost:3003
+      TELEMETRY_ENABLED: "false"
+      LANGFUSE_ENABLE_EXPORT: "true"
+      HOSTNAME: "0.0.0.0"
+    ports:
+      - "3003:3000"
+    networks:
+      - ventures
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://127.0.0.1:3000/api/public/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+
+  prometheus:
+    image: prom/prometheus:v2.53.0
+    container_name: prometheus
+    hostname: prometheus.internal
+    command:
+      - "--config.file=/etc/prometheus/prometheus.yml"
+      - "--storage.tsdb.path=/prometheus"
+      - "--web.console.libraries=/usr/share/prometheus/console_libraries"
+      - "--web.console.templates=/usr/share/prometheus/consoles"
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+      - prometheus_data:/prometheus
+    networks:
+      - ventures
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:9090/-/healthy"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  otel-collector:
+    image: otel/opentelemetry-collector-contrib:0.105.0
+    container_name: otel-collector
+    hostname: otel.internal
+    command: ["--config=/etc/otel-collector-config.yaml"]
+    ports:
+      - "4317:4317"
+      - "4318:4318"
+    volumes:
+      - ./otel-collector-config.yaml:/etc/otel-collector-config.yaml
+    networks:
+      - ventures
+    restart: unless-stopped
+
+  # Workflow automation — self-hosted, own SQLite DB (no external dependency)
+  n8n:
+    image: n8nio/n8n:latest
+    container_name: n8n
+    hostname: n8n.internal
+    environment:
+      N8N_HOST: localhost
+      N8N_PORT: "5678"
+      N8N_PROTOCOL: http
+      WEBHOOK_URL: http://localhost:5678/
+      N8N_ENCRYPTION_KEY: n8n-dev-encryption-key-change-me
+      GENERIC_TIMEZONE: America/New_York
+    ports:
+      - "5678:5678"
+    volumes:
+      - n8n_data:/home/node/.n8n
+    networks:
+      - ventures
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://127.0.0.1:5678/healthz"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
 
 volumes:
   neo4j_data:
@@ -104,6 +240,12 @@ volumes:
   postgres_data:
     driver: local
   grafana_data:
+    driver: local
+  qdrant_data:
+    driver: local
+  prometheus_data:
+    driver: local
+  n8n_data:
     driver: local
 
 networks:

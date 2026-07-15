@@ -1,0 +1,504 @@
+{
+  "meta": {
+    "generated": "2026-07-16",
+    "total_ventures": 30,
+    "phase_1_ventures": 3,
+    "phase_2_ventures": 8,
+    "phase_3_ventures": 30
+  },
+  "ventures": [
+    {
+      "id": "LT-001",
+      "name": "Truck Dispatch Company",
+      "sector": "logistics",
+      "status": "validation",
+      "nexusdispatch_module": "trucking",
+      "nexusdispatch_phase": "phase_1",
+      "featured": true,
+      "operations_status": "pilot",
+      "go_live_date": "2027-01-15",
+      "metrics": {
+        "active_carriers": 0,
+        "avg_rpm_improvement": 0,
+        "compliance_violations": 0,
+        "target_carriers": 15
+      }
+    },
+    {
+      "id": "LT-003",
+      "name": "Logistics Dispatch Service",
+      "sector": "logistics",
+      "status": "development",
+      "nexusdispatch_module": "trucking",
+      "nexusdispatch_phase": "phase_1",
+      "featured": true,
+      "operations_status": "core",
+      "go_live_date": "2027-01-15",
+      "metrics": {
+        "active_carriers": 0,
+        "avg_rpm_improvement": 0,
+        "compliance_violations": 0,
+        "target_carriers": 20
+      }
+    },
+    {
+      "id": "LT-016",
+      "name": "Trucking Company",
+      "sector": "logistics",
+      "status": "validation",
+      "nexusdispatch_module": "trucking",
+      "nexusdispatch_phase": "phase_1",
+      "featured": true,
+      "operations_status": "pilot",
+      "go_live_date": "2027-01-15",
+      "metrics": {
+        "active_carriers": 0,
+        "avg_rpm_improvement": 0,
+        "compliance_violations": 0,
+        "target_carriers": 12
+      }
+    },
+    {
+      "id": "LT-004",
+      "name": "Last-Mile Delivery Dispatch",
+      "sector": "logistics",
+      "status": "development",
+      "nexusdispatch_module": "last_mile",
+      "nexusdispatch_phase": "phase_2",
+      "featured": false,
+      "operations_status": "planned",
+      "go_live_date": "2027-09-01",
+      "metrics": {
+        "active_carriers": 0,
+        "avg_rpm_improvement": 0,
+        "compliance_violations": 0,
+        "target_carriers": 25
+      }
+    },
+    {
+      "id": "LT-018",
+      "name": "Local Delivery Company",
+      "sector": "logistics",
+      "status": "development",
+      "nexusdispatch_module": "last_mile",
+      "nexusdispatch_phase": "phase_2",
+      "featured": false,
+      "operations_status": "planned",
+      "go_live_date": "2027-09-01",
+      "metrics": {
+        "active_carriers": 0,
+        "avg_rpm_improvement": 0,
+        "compliance_violations": 0,
+        "target_carriers": 18
+      }
+    },
+    {
+      "id": "LT-022",
+      "name": "Fulfillment Center",
+      "sector": "logistics",
+      "status": "development",
+      "nexusdispatch_module": "fulfillment",
+      "nexusdispatch_phase": "phase_3",
+      "featured": false,
+      "operations_status": "planned",
+      "go_live_date": "2028-01-15",
+      "metrics": {
+        "active_carriers": 0,
+        "avg_rpm_improvement": 0,
+        "compliance_violations": 0,
+        "target_carriers": 8
+      }
+    },
+    {
+      "id": "LT-009",
+      "name": "HVAC Technician Dispatch",
+      "sector": "logistics",
+      "status": "development",
+      "nexusdispatch_module": "field_service",
+      "nexusdispatch_phase": "phase_2",
+      "featured": false,
+      "operations_status": "planned",
+      "go_live_date": "2027-09-01",
+      "metrics": {
+        "active_carriers": 0,
+        "avg_rpm_improvement": 0,
+        "compliance_violations": 0,
+        "target_carriers": 30
+      }
+    },
+    {
+      "id": "LT-010",
+      "name": "Field Service Dispatch",
+      "sector": "logistics",
+      "status": "development",
+      "nexusdispatch_module": "field_service",
+      "nexusdispatch_phase": "phase_2",
+      "featured": false,
+      "operations_status": "planned",
+      "go_live_date": "2027-09-01",
+      "metrics": {
+        "active_carriers": 0,
+        "avg_rpm_improvement": 0,
+        "compliance_violations": 0,
+        "target_carriers": 35
+      }
+    },
+    {
+      "id": "LT-007",
+      "name": "Construction Dispatch",
+      "sector": "logistics",
+      "status": "validation",
+      "nexusdispatch_module": "field_service",
+      "nexusdispatch_phase": "phase_2",
+      "featured": false,
+      "operations_status": "planned",
+      "go_live_date": "2027-09-01",
+      "metrics": {
+        "active_carriers": 0,
+        "avg_rpm_improvement": 0,
+        "compliance_violations": 0,
+        "target_carriers": 20
+      }
+    },
+    {
+      "id": "LT-005",
+      "name": "Medical Courier Dispatch",
+      "sector": "logistics",
+      "status": "validation",
+      "nexusdispatch_module": "medical",
+      "nexusdispatch_phase": "phase_3",
+      "featured": false,
+      "operations_status": "planned",
+      "go_live_date": "2028-01-15",
+      "metrics": {
+        "active_carriers": 0,
+        "avg_rpm_improvement": 0,
+        "compliance_violations": 0,
+        "target_carriers": 12
+      }
+    },
+    {
+      "id": "LT-030",
+      "name": "Cold Chain Logistics",
+      "sector": "logistics",
+      "status": "validation",
+      "nexusdispatch_module": "medical",
+      "nexusdispatch_phase": "phase_3",
+      "featured": false,
+      "operations_status": "planned",
+      "go_live_date": "2028-01-15",
+      "metrics": {
+        "active_carriers": 0,
+        "avg_rpm_improvement": 0,
+        "compliance_violations": 0,
+        "target_carriers": 8
+      }
+    },
+    {
+      "id": "LT-002",
+      "name": "Freight Brokerage",
+      "sector": "logistics",
+      "status": "validation",
+      "nexusdispatch_module": "brokerage",
+      "nexusdispatch_phase": "phase_2",
+      "featured": false,
+      "operations_status": "planned",
+      "go_live_date": "2027-09-01",
+      "metrics": {
+        "active_carriers": 0,
+        "avg_rpm_improvement": 0,
+        "compliance_violations": 0,
+        "target_carriers": 10
+      }
+    },
+    {
+      "id": "LT-020",
+      "name": "Freight Company",
+      "sector": "logistics",
+      "status": "validation",
+      "nexusdispatch_module": "brokerage",
+      "nexusdispatch_phase": "phase_2",
+      "featured": false,
+      "operations_status": "planned",
+      "go_live_date": "2027-09-01",
+      "metrics": {
+        "active_carriers": 0,
+        "avg_rpm_improvement": 0,
+        "compliance_violations": 0,
+        "target_carriers": 15
+      }
+    },
+    {
+      "id": "LT-026",
+      "name": "Shipping Platform",
+      "sector": "logistics",
+      "status": "planned",
+      "nexusdispatch_module": "brokerage",
+      "nexusdispatch_phase": "phase_2",
+      "featured": false,
+      "operations_status": "planned",
+      "go_live_date": "2027-09-01",
+      "metrics": {
+        "active_carriers": 0,
+        "avg_rpm_improvement": 0,
+        "compliance_violations": 0,
+        "target_carriers": 20
+      }
+    },
+    {
+      "id": "LT-021",
+      "name": "Warehouse Company",
+      "sector": "logistics",
+      "status": "planned",
+      "nexusdispatch_module": "warehouse",
+      "nexusdispatch_phase": "phase_3",
+      "featured": false,
+      "operations_status": "planned",
+      "go_live_date": "2028-01-15",
+      "metrics": {
+        "active_carriers": 0,
+        "avg_rpm_improvement": 0,
+        "compliance_violations": 0,
+        "target_carriers": 5
+      }
+    },
+    {
+      "id": "LT-023",
+      "name": "Storage Business",
+      "sector": "logistics",
+      "status": "validation",
+      "nexusdispatch_module": "warehouse",
+      "nexusdispatch_phase": "phase_3",
+      "featured": false,
+      "operations_status": "planned",
+      "go_live_date": "2028-01-15",
+      "metrics": {
+        "active_carriers": 0,
+        "avg_rpm_improvement": 0,
+        "compliance_violations": 0,
+        "target_carriers": 6
+      }
+    },
+    {
+      "id": "LT-012",
+      "name": "Fleet Tracking Platform",
+      "sector": "logistics",
+      "status": "planned",
+      "nexusdispatch_module": "fleet_tracking",
+      "nexusdispatch_phase": "phase_3",
+      "featured": false,
+      "operations_status": "planned",
+      "go_live_date": "2028-01-15",
+      "metrics": {
+        "active_carriers": 0,
+        "avg_rpm_improvement": 0,
+        "compliance_violations": 0,
+        "target_carriers": 25
+      }
+    },
+    {
+      "id": "LT-027",
+      "name": "Fleet Management SaaS",
+      "sector": "logistics",
+      "status": "planned",
+      "nexusdispatch_module": "fleet_tracking",
+      "nexusdispatch_phase": "phase_3",
+      "featured": false,
+      "operations_status": "planned",
+      "go_live_date": "2028-01-15",
+      "metrics": {
+        "active_carriers": 0,
+        "avg_rpm_improvement": 0,
+        "compliance_violations": 0,
+        "target_carriers": 20
+      }
+    },
+    {
+      "id": "LT-015",
+      "name": "Driver Management Platform",
+      "sector": "logistics",
+      "status": "planned",
+      "nexusdispatch_module": "fleet_tracking",
+      "nexusdispatch_phase": "phase_3",
+      "featured": false,
+      "operations_status": "planned",
+      "go_live_date": "2028-01-15",
+      "metrics": {
+        "active_carriers": 0,
+        "avg_rpm_improvement": 0,
+        "compliance_violations": 0,
+        "target_carriers": 15
+      }
+    },
+    {
+      "id": "LT-029",
+      "name": "Supply Chain Analytics",
+      "sector": "logistics",
+      "status": "planned",
+      "nexusdispatch_module": "supply_chain",
+      "nexusdispatch_phase": "phase_3",
+      "featured": false,
+      "operations_status": "planned",
+      "go_live_date": "2028-01-15",
+      "metrics": {
+        "active_carriers": 0,
+        "avg_rpm_improvement": 0,
+        "compliance_violations": 0,
+        "target_carriers": 0
+      }
+    },
+    {
+      "id": "LT-014",
+      "name": "AI Route Optimization",
+      "sector": "logistics",
+      "status": "planned",
+      "nexusdispatch_module": "supply_chain",
+      "nexusdispatch_phase": "phase_3",
+      "featured": false,
+      "operations_status": "planned",
+      "go_live_date": "2028-01-15",
+      "metrics": {
+        "active_carriers": 0,
+        "avg_rpm_improvement": 0,
+        "compliance_violations": 0,
+        "target_carriers": 0
+      }
+    },
+    {
+      "id": "LT-028",
+      "name": "Freight AI Optimization",
+      "sector": "logistics",
+      "status": "planned",
+      "nexusdispatch_module": "supply_chain",
+      "nexusdispatch_phase": "phase_3",
+      "featured": false,
+      "operations_status": "planned",
+      "go_live_date": "2028-01-15",
+      "metrics": {
+        "active_carriers": 0,
+        "avg_rpm_improvement": 0,
+        "compliance_violations": 0,
+        "target_carriers": 0
+      }
+    },
+    {
+      "id": "LT-013",
+      "name": "Logistics Automation System",
+      "sector": "logistics",
+      "status": "planned",
+      "nexusdispatch_module": "supply_chain",
+      "nexusdispatch_phase": "phase_3",
+      "featured": false,
+      "operations_status": "planned",
+      "go_live_date": "2028-01-15",
+      "metrics": {
+        "active_carriers": 0,
+        "avg_rpm_improvement": 0,
+        "compliance_violations": 0,
+        "target_carriers": 0
+      }
+    },
+    {
+      "id": "LT-017",
+      "name": "Courier Service",
+      "sector": "logistics",
+      "status": "development",
+      "nexusdispatch_module": "courier",
+      "nexusdispatch_phase": "phase_3",
+      "featured": false,
+      "operations_status": "planned",
+      "go_live_date": "2028-01-15",
+      "metrics": {
+        "active_carriers": 0,
+        "avg_rpm_improvement": 0,
+        "compliance_violations": 0,
+        "target_carriers": 16
+      }
+    },
+    {
+      "id": "LT-019",
+      "name": "Moving Company",
+      "sector": "logistics",
+      "status": "validation",
+      "nexusdispatch_module": "courier",
+      "nexusdispatch_phase": "phase_3",
+      "featured": false,
+      "operations_status": "planned",
+      "go_live_date": "2028-01-15",
+      "metrics": {
+        "active_carriers": 0,
+        "avg_rpm_improvement": 0,
+        "compliance_violations": 0,
+        "target_carriers": 12
+      }
+    },
+    {
+      "id": "LT-024",
+      "name": "Distribution Company",
+      "sector": "logistics",
+      "status": "validation",
+      "nexusdispatch_module": "courier",
+      "nexusdispatch_phase": "phase_3",
+      "featured": false,
+      "operations_status": "planned",
+      "go_live_date": "2028-01-15",
+      "metrics": {
+        "active_carriers": 0,
+        "avg_rpm_improvement": 0,
+        "compliance_violations": 0,
+        "target_carriers": 10
+      }
+    },
+    {
+      "id": "LT-025",
+      "name": "Logistics Marketplace",
+      "sector": "logistics",
+      "status": "planned",
+      "nexusdispatch_module": "courier",
+      "nexusdispatch_phase": "phase_3",
+      "featured": false,
+      "operations_status": "planned",
+      "go_live_date": "2028-01-15",
+      "metrics": {
+        "active_carriers": 0,
+        "avg_rpm_improvement": 0,
+        "compliance_violations": 0,
+        "target_carriers": 0
+      }
+    },
+    {
+      "id": "LT-011",
+      "name": "Dispatch Software",
+      "sector": "logistics",
+      "status": "planned",
+      "nexusdispatch_module": "courier",
+      "nexusdispatch_phase": "phase_3",
+      "featured": false,
+      "operations_status": "planned",
+      "go_live_date": "2028-01-15",
+      "metrics": {
+        "active_carriers": 0,
+        "avg_rpm_improvement": 0,
+        "compliance_violations": 0,
+        "target_carriers": 0
+      }
+    },
+    {
+      "id": "LT-006",
+      "name": "Amazon",
+      "sector": "logistics",
+      "status": "planned",
+      "nexusdispatch_module": "courier",
+      "nexusdispatch_phase": "phase_3",
+      "featured": false,
+      "operations_status": "planned",
+      "go_live_date": "2028-01-15",
+      "metrics": {
+        "active_carriers": 0,
+        "avg_rpm_improvement": 0,
+        "compliance_violations": 0,
+        "target_carriers": 0
+      }
+    }
+  ]
+}

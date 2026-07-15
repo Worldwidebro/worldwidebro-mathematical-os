@@ -1,0 +1,8 @@
+{
+  "name": "tec_rest_api_gateway",
+  "description": "Orchestrates technical commands for REST API Gateway in venture Cyber Shield",
+  "parameters": {
+    "type": "object",
+    "properties": {}
+  }
+}

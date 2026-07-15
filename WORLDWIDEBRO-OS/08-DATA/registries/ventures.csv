@@ -75,296 +75,296 @@ BW-037-Mobile-Makeup-Artist,Mobile Makeup Artist,beauty-wellness,BEAUTY-WELLNESS
 BW-038-Photoshoot-Makeup-Team,Photoshoot Makeup Team,beauty-wellness,BEAUTY-WELLNESS,validation,validation
 BW-039-Cosmetics-Brand,Cosmetics Brand,beauty-wellness,BEAUTY-WELLNESS,mvp,development
 BW-040-Beauty-Tools-Brand,Beauty Tools Brand,beauty-wellness,BEAUTY-WELLNESS,mvp,development
-FH-001-Personal-Chef-Service,Personal Chef Service,food-hospitality,FOOD-HOSPITALITY,mvp,development
-FH-002-Meal-Prep-Delivery,Meal Prep Delivery,food-hospitality,FOOD-HOSPITALITY,mvp,development
-FH-003-Private-Dinner-Experiences,Private Dinner Experiences,food-hospitality,FOOD-HOSPITALITY,validation,validation
-FH-004-Catering-Company,Catering Company,food-hospitality,FOOD-HOSPITALITY,validation,validation
-FH-005-Corporate-Lunch-Service,Corporate Lunch Service,food-hospitality,FOOD-HOSPITALITY,mvp,development
-FH-006-Healthy-Meal-Prep-for-Gyms,Healthy Meal Prep For Gyms,food-hospitality,FOOD-HOSPITALITY,mvp,development
-FH-007-Elderly-Meal-Service,Elderly Meal Service,food-hospitality,FOOD-HOSPITALITY,validation,validation
-FH-008-Athlete-Nutrition-Service,Athlete Nutrition Service,food-hospitality,FOOD-HOSPITALITY,mvp,development
-FH-009-Packaged-Food-Brand,Packaged Food Brand,food-hospitality,FOOD-HOSPITALITY,validation,validation
-FH-010-Frozen-Meals-Company,Frozen Meals Company,food-hospitality,FOOD-HOSPITALITY,validation,validation
-FH-011-Sauce-or-Seasoning-Brand,Sauce Or Seasoning Brand,food-hospitality,FOOD-HOSPITALITY,mvp,development
-FH-012-Protein-Snacks-Brand,Protein Snacks Brand,food-hospitality,FOOD-HOSPITALITY,mvp,development
-FH-013-Meal-Kit-Company,Meal Kit Company,food-hospitality,FOOD-HOSPITALITY,validation,validation
-FH-014-Cloud-Kitchen-,Cloud Kitchen ,food-hospitality,FOOD-HOSPITALITY,planned,planned
-FH-015-AI-Nutrition-Planner,Ai Nutrition Planner,food-hospitality,FOOD-HOSPITALITY,planned,planned
-FH-016-Recipe-App,Recipe App,food-hospitality,FOOD-HOSPITALITY,mvp,development
-FH-017-Cooking-Content-Brand,Cooking Content Brand,food-hospitality,FOOD-HOSPITALITY,mvp,development
-FH-018-Food-Influencer-Brand,Food Influencer Brand,food-hospitality,FOOD-HOSPITALITY,mvp,development
-FH-019-Cooking-Course-Platform,Cooking Course Platform,food-hospitality,FOOD-HOSPITALITY,mvp,development
-FH-020-Restaurant-POS-System,Restaurant Pos System,food-hospitality,FOOD-HOSPITALITY,planned,planned
-FH-021-Food-Truck-Business,Food Truck Business,food-hospitality,FOOD-HOSPITALITY,validation,validation
-FH-022-Specialty-Coffee-Shop,Specialty Coffee Shop,food-hospitality,FOOD-HOSPITALITY,validation,validation
-FH-023-Bakery-&-Pastry-Shop,Bakery & Pastry Shop,food-hospitality,FOOD-HOSPITALITY,validation,validation
-FH-024-Juice-Bar,Juice Bar,food-hospitality,FOOD-HOSPITALITY,mvp,development
-FH-025-Ice-Cream-Shop,Ice Cream Shop,food-hospitality,FOOD-HOSPITALITY,validation,validation
-FH-026-Gourmet-Food-Market,Gourmet Food Market,food-hospitality,FOOD-HOSPITALITY,validation,validation
-FH-027-Food-Delivery-Platform,Food Delivery Platform,food-hospitality,FOOD-HOSPITALITY,planned,planned
-FH-028-Restaurant-Management-SaaS,Restaurant Management Saas,food-hospitality,FOOD-HOSPITALITY,planned,planned
-FH-029-Food-Quality-Testing-Lab,Food Quality Testing Lab,food-hospitality,FOOD-HOSPITALITY,planned,planned
-FH-030-Organic-Food-Brand,Organic Food Brand,food-hospitality,FOOD-HOSPITALITY,mvp,development
-FH-031-Vegan-Food-Company,Vegan Food Company,food-hospitality,FOOD-HOSPITALITY,mvp,development
-FH-032-Keto-Meal-Service,Keto Meal Service,food-hospitality,FOOD-HOSPITALITY,mvp,development
-FH-033-Food-Photography-Service,Food Photography Service,food-hospitality,FOOD-HOSPITALITY,mvp,development
-FH-034-Restaurant-Consulting,Restaurant Consulting,food-hospitality,FOOD-HOSPITALITY,mvp,development
-FH-035-Food-Safety-Training,Food Safety Training,food-hospitality,FOOD-HOSPITALITY,validation,validation
-FS-001-Gym,Gym,fitness-sports,FITNESS-SPORTS,validation,validation
-FS-002-Boutique-Fitness-Studio,Boutique Fitness Studio,fitness-sports,FITNESS-SPORTS,validation,validation
-FS-003-Personal-Training-Studio,Personal Training Studio,fitness-sports,FITNESS-SPORTS,mvp,development
-FS-004-Women-Only-Gym,Women Only Gym,fitness-sports,FITNESS-SPORTS,validation,validation
-FS-005-Boxing-Gym,Boxing Gym,fitness-sports,FITNESS-SPORTS,validation,validation
-FS-006-CrossFit-Gym,Crossfit Gym,fitness-sports,FITNESS-SPORTS,validation,validation
-FS-007-Luxury-Fitness-Club,Luxury Fitness Club,fitness-sports,FITNESS-SPORTS,planned,planned
-FS-008-Online-Coaching,Online Coaching,fitness-sports,FITNESS-SPORTS,mvp,development
-FS-009-Personal-Trainer-Business,Personal Trainer Business,fitness-sports,FITNESS-SPORTS,mvp,development
-FS-010-Transformation-Program,Transformation Program,fitness-sports,FITNESS-SPORTS,mvp,development
-FS-011-Athlete-Training-Company,Athlete Training Company,fitness-sports,FITNESS-SPORTS,validation,validation
-FS-012-Supplement-Brand,Supplement Brand,fitness-sports,FITNESS-SPORTS,mvp,development
-FS-013-Fitness-Apparel,Fitness Apparel,fitness-sports,FITNESS-SPORTS,mvp,development
-FS-014-Workout-Equipment-Brand,Workout Equipment Brand,fitness-sports,FITNESS-SPORTS,validation,validation
-FS-015-Recovery-Products,Recovery Products,fitness-sports,FITNESS-SPORTS,mvp,development
-FS-016-Fitness-App,Fitness App,fitness-sports,FITNESS-SPORTS,mvp,development
-FS-017-AI-Personal-Trainer,Ai Personal Trainer,fitness-sports,FITNESS-SPORTS,planned,planned
-FS-018-Gym-Management-Software,Gym Management Software,fitness-sports,FITNESS-SPORTS,planned,planned
-FS-019-Wearable-Analytics-Platform,Wearable Analytics Platform,fitness-sports,FITNESS-SPORTS,planned,planned
-FS-020-Yoga-Studio,Yoga Studio,fitness-sports,FITNESS-SPORTS,validation,validation
-FS-021-Pilates-Studio,Pilates Studio,fitness-sports,FITNESS-SPORTS,validation,validation
-FS-022-Dance-Studio,Dance Studio,fitness-sports,FITNESS-SPORTS,validation,validation
-FS-023-Martial-Arts-Dojo,Martial Arts Dojo,fitness-sports,FITNESS-SPORTS,validation,validation
-FS-024-Sports-Performance-Center,Sports Performance Center,fitness-sports,FITNESS-SPORTS,planned,planned
-FS-025-Corporate-Wellness-Program,Corporate Wellness Program,fitness-sports,FITNESS-SPORTS,mvp,development
-LT-001-Truck-Dispatch-Company,Truck Dispatch Company,logistics-transport,LOGISTICS-TRANSPORT,validation,validation
-LT-002-Freight-Brokerage,Freight Brokerage,logistics-transport,LOGISTICS-TRANSPORT,validation,validation
-LT-003-Logistics-Dispatch-Service,Logistics Dispatch Service,logistics-transport,LOGISTICS-TRANSPORT,mvp,development
-LT-004-Last-Mile-Delivery-Dispatch,Last Mile Delivery Dispatch,logistics-transport,LOGISTICS-TRANSPORT,mvp,development
-LT-005-Medical-Courier-Dispatch,Medical Courier Dispatch,logistics-transport,LOGISTICS-TRANSPORT,validation,validation
-LT-006-Amazon,Amazon,logistics-transport,LOGISTICS-TRANSPORT,planned,planned
-LT-007-Construction-Dispatch,Construction Dispatch,logistics-transport,LOGISTICS-TRANSPORT,validation,validation
-LT-008-Towing-Dispatch,Towing Dispatch,logistics-transport,LOGISTICS-TRANSPORT,mvp,development
-LT-009-HVAC-Technician-Dispatch,Hvac Technician Dispatch,logistics-transport,LOGISTICS-TRANSPORT,mvp,development
-LT-010-Field-Service-Dispatch,Field Service Dispatch,logistics-transport,LOGISTICS-TRANSPORT,mvp,development
-LT-011-Dispatch-Software,Dispatch Software,logistics-transport,LOGISTICS-TRANSPORT,planned,planned
-LT-012-Fleet-Tracking-Platform,Fleet Tracking Platform,logistics-transport,LOGISTICS-TRANSPORT,planned,planned
-LT-013-Logistics-Automation-System,Logistics Automation System,logistics-transport,LOGISTICS-TRANSPORT,planned,planned
-LT-014-AI-Route-Optimization,Ai Route Optimization,logistics-transport,LOGISTICS-TRANSPORT,planned,planned
-LT-015-Driver-Management-Platform,Driver Management Platform,logistics-transport,LOGISTICS-TRANSPORT,planned,planned
-LT-016-Trucking-Company,Trucking Company,logistics-transport,LOGISTICS-TRANSPORT,validation,validation
-LT-017-Courier-Service,Courier Service,logistics-transport,LOGISTICS-TRANSPORT,mvp,development
-LT-018-Local-Delivery-Company,Local Delivery Company,logistics-transport,LOGISTICS-TRANSPORT,mvp,development
-LT-019-Moving-Company,Moving Company,logistics-transport,LOGISTICS-TRANSPORT,validation,validation
-LT-020-Freight-Company,Freight Company,logistics-transport,LOGISTICS-TRANSPORT,validation,validation
-LT-021-Warehouse-Company,Warehouse Company,logistics-transport,LOGISTICS-TRANSPORT,planned,planned
-LT-022-Fulfillment-Center,Fulfillment Center,logistics-transport,LOGISTICS-TRANSPORT,mvp,development
-LT-023-Storage-Business,Storage Business,logistics-transport,LOGISTICS-TRANSPORT,validation,validation
-LT-024-Distribution-Company,Distribution Company,logistics-transport,LOGISTICS-TRANSPORT,validation,validation
-LT-025-Logistics-Marketplace,Logistics Marketplace,logistics-transport,LOGISTICS-TRANSPORT,planned,planned
-LT-026-Shipping-Platform,Shipping Platform,logistics-transport,LOGISTICS-TRANSPORT,planned,planned
-LT-027-Fleet-Management-SaaS,Fleet Management Saas,logistics-transport,LOGISTICS-TRANSPORT,planned,planned
-LT-028-Freight-AI-Optimization,Freight Ai Optimization,logistics-transport,LOGISTICS-TRANSPORT,planned,planned
-LT-029-Supply-Chain-Analytics,Supply Chain Analytics,logistics-transport,LOGISTICS-TRANSPORT,planned,planned
-LT-030-Cold-Chain-Logistics,Cold Chain Logistics,logistics-transport,LOGISTICS-TRANSPORT,validation,validation
-PS-001-Business-Consulting,Business Consulting,professional-services,PROFESSIONAL-SERVICES,mvp,development
-PS-002-Legal-Services,Legal Services,professional-services,PROFESSIONAL-SERVICES,validation,validation
-PS-003-Accounting-Services,Accounting Services,professional-services,PROFESSIONAL-SERVICES,mvp,development
-PS-004-HR-Consulting,Hr Consulting,professional-services,PROFESSIONAL-SERVICES,validation,validation
-PS-005-Marketing-Agency,Marketing Agency,professional-services,PROFESSIONAL-SERVICES,mvp,development
-PS-006-Web-Design-Agency,Web Design Agency,professional-services,PROFESSIONAL-SERVICES,mvp,development
-PS-007-IT-Support-Services,It Support Services,professional-services,PROFESSIONAL-SERVICES,mvp,development
-PS-008-Virtual-Assistant-Service,Virtual Assistant Service,professional-services,PROFESSIONAL-SERVICES,mvp,development
-PS-009-Bookkeeping-Service,Bookkeeping Service,professional-services,PROFESSIONAL-SERVICES,mvp,development
-PS-010-Tax-Preparation-Service,Tax Preparation Service,professional-services,PROFESSIONAL-SERVICES,mvp,development
-PS-011-Real-Estate-Agency,Real Estate Agency,professional-services,PROFESSIONAL-SERVICES,validation,validation
-PS-012-Insurance-Agency,Insurance Agency,professional-services,PROFESSIONAL-SERVICES,validation,validation
-PS-013-Financial-Planning,Financial Planning,professional-services,PROFESSIONAL-SERVICES,mvp,development
-PS-014-Event-Planning,Event Planning,professional-services,PROFESSIONAL-SERVICES,validation,validation
-PS-015-Interior-Design,Interior Design,professional-services,PROFESSIONAL-SERVICES,validation,validation
-PS-016-Photography-Service,Photography Service,professional-services,PROFESSIONAL-SERVICES,mvp,development
-PS-017-Videography-Service,Videography Service,professional-services,PROFESSIONAL-SERVICES,mvp,development
-PS-018-Translation-Services,Translation Services,professional-services,PROFESSIONAL-SERVICES,validation,validation
-PS-019-Copywriting-Service,Copywriting Service,professional-services,PROFESSIONAL-SERVICES,mvp,development
-PS-020-Social-Media-Management,Social Media Management,professional-services,PROFESSIONAL-SERVICES,mvp,development
-PS-021-SEO-Agency,Seo Agency,professional-services,PROFESSIONAL-SERVICES,mvp,development
-PS-022-PPC-Management,Ppc Management,professional-services,PROFESSIONAL-SERVICES,mvp,development
-PS-023-PR-Agency,Pr Agency,professional-services,PROFESSIONAL-SERVICES,validation,validation
-PS-024-Recruiting-Agency,Recruiting Agency,professional-services,PROFESSIONAL-SERVICES,validation,validation
-PS-025-Business-Brokerage,Business Brokerage,professional-services,PROFESSIONAL-SERVICES,planned,planned
-MC-001-YouTube-Channel-Network,Youtube Channel Network,media-content,MEDIA-CONTENT,mvp,development
-MC-002-Podcast-Network,Podcast Network,media-content,MEDIA-CONTENT,mvp,development
-MC-003-Blog-Network,Blog Network,media-content,MEDIA-CONTENT,mvp,development
-MC-004-Influencer-Agency,Influencer Agency,media-content,MEDIA-CONTENT,validation,validation
-MC-005-Content-Creation-Studio,Content Creation Studio,media-content,MEDIA-CONTENT,mvp,development
-MC-006-Video-Production-Company,Video Production Company,media-content,MEDIA-CONTENT,validation,validation
-MC-007-Animation-Studio,Animation Studio,media-content,MEDIA-CONTENT,planned,planned
-MC-008-Music-Production,Music Production,media-content,MEDIA-CONTENT,validation,validation
-MC-009-Stock-Photography,Stock Photography,media-content,MEDIA-CONTENT,mvp,development
-MC-010-Stock-Video,Stock Video,media-content,MEDIA-CONTENT,mvp,development
-MC-011-Online-Magazine,Online Magazine,media-content,MEDIA-CONTENT,mvp,development
-MC-012-News-Website,News Website,media-content,MEDIA-CONTENT,validation,validation
-MC-013-Streaming-Platform,Streaming Platform,media-content,MEDIA-CONTENT,planned,planned
-MC-014-Gaming-Channel,Gaming Channel,media-content,MEDIA-CONTENT,mvp,development
-MC-015-Esports-Team,Esports Team,media-content,MEDIA-CONTENT,planned,planned
-MC-016-Virtual-Events-Platform,Virtual Events Platform,media-content,MEDIA-CONTENT,planned,planned
-MC-017-Online-Course-Platform,Online Course Platform,media-content,MEDIA-CONTENT,mvp,development
-MC-018-Membership-Site,Membership Site,media-content,MEDIA-CONTENT,mvp,development
-MC-019-Digital-Download-Store,Digital Download Store,media-content,MEDIA-CONTENT,mvp,development
-MC-020-NFT-Marketplace,Nft Marketplace,media-content,MEDIA-CONTENT,planned,planned
-ET-001-Online-Tutoring-Platform,Online Tutoring Platform,education-training,EDUCATION-TRAINING,mvp,development
-ET-002-Language-Learning-App,Language Learning App,education-training,EDUCATION-TRAINING,mvp,development
-ET-003-Test-Prep-Service,Test Prep Service,education-training,EDUCATION-TRAINING,validation,validation
-ET-004-Coding-Bootcamp,Coding Bootcamp,education-training,EDUCATION-TRAINING,validation,validation
-ET-005-Professional-Certification,Professional Certification,education-training,EDUCATION-TRAINING,validation,validation
-ET-006-Corporate-Training,Corporate Training,education-training,EDUCATION-TRAINING,validation,validation
-ET-007-Skills-Assessment-Platform,Skills Assessment Platform,education-training,EDUCATION-TRAINING,planned,planned
-ET-008-Career-Coaching,Career Coaching,education-training,EDUCATION-TRAINING,mvp,development
-ET-009-Resume-Writing-Service,Resume Writing Service,education-training,EDUCATION-TRAINING,mvp,development
-ET-010-Interview-Prep-Platform,Interview Prep Platform,education-training,EDUCATION-TRAINING,mvp,development
-ET-011-Mentorship-Platform,Mentorship Platform,education-training,EDUCATION-TRAINING,planned,planned
-ET-012-Educational-Content-Library,Educational Content Library,education-training,EDUCATION-TRAINING,mvp,development
-ET-013-VR-Training-Simulations,Vr Training Simulations,education-training,EDUCATION-TRAINING,planned,planned
-ET-014-Gamified-Learning-App,Gamified Learning App,education-training,EDUCATION-TRAINING,planned,planned
-ET-015-Homeschool-Curriculum,Homeschool Curriculum,education-training,EDUCATION-TRAINING,validation,validation
-ST-001-SaaS-Platform,Saas Platform,software-technology,SOFTWARE-TECHNOLOGY,mvp,development
-ST-002-Mobile-App-Development,Mobile App Development,software-technology,SOFTWARE-TECHNOLOGY,mvp,development
-ST-003-Web-Development-Agency,Web Development Agency,software-technology,SOFTWARE-TECHNOLOGY,mvp,development
-ST-004-Custom-Software-Development,Custom Software Development,software-technology,SOFTWARE-TECHNOLOGY,validation,validation
-ST-005-API-Development,Api Development,software-technology,SOFTWARE-TECHNOLOGY,mvp,development
-ST-006-Cloud-Infrastructure,Cloud Infrastructure,software-technology,SOFTWARE-TECHNOLOGY,planned,planned
-ST-007-DevOps-Consulting,Devops Consulting,software-technology,SOFTWARE-TECHNOLOGY,validation,validation
-ST-008-Cybersecurity-Service,Cybersecurity Service,software-technology,SOFTWARE-TECHNOLOGY,validation,validation
-ST-009-Data-Analytics-Platform,Data Analytics Platform,software-technology,SOFTWARE-TECHNOLOGY,planned,planned
-ST-010-Business-Intelligence-Tool,Business Intelligence Tool,software-technology,SOFTWARE-TECHNOLOGY,planned,planned
-ST-011-CRM-Platform,Crm Platform,software-technology,SOFTWARE-TECHNOLOGY,planned,planned
-ST-012-Project-Management-Tool,Project Management Tool,software-technology,SOFTWARE-TECHNOLOGY,planned,planned
-ST-013-Communication-Platform,Communication Platform,software-technology,SOFTWARE-TECHNOLOGY,planned,planned
-ST-014-Collaboration-Software,Collaboration Software,software-technology,SOFTWARE-TECHNOLOGY,planned,planned
-ST-015-Automation-Platform,Automation Platform,software-technology,SOFTWARE-TECHNOLOGY,planned,planned
-ST-016-AI,Ai,software-technology,SOFTWARE-TECHNOLOGY,planned,planned
-ST-017-Chatbot-Builder,Chatbot Builder,software-technology,SOFTWARE-TECHNOLOGY,mvp,development
-ST-018-E-commerce-Platform,E Commerce Platform,software-technology,SOFTWARE-TECHNOLOGY,planned,planned
-ST-019-Payment-Processing,Payment Processing,software-technology,SOFTWARE-TECHNOLOGY,validation,validation
-ST-020-Blockchain-Platform,Blockchain Platform,software-technology,SOFTWARE-TECHNOLOGY,planned,planned
-ST-021-IoT-Platform,Iot Platform,software-technology,SOFTWARE-TECHNOLOGY,planned,planned
-ST-022-AR,Ar,software-technology,SOFTWARE-TECHNOLOGY,planned,planned
-ST-023-Game-Development,Game Development,software-technology,SOFTWARE-TECHNOLOGY,validation,validation
-ST-024-Marketing-Automation,Marketing Automation,software-technology,SOFTWARE-TECHNOLOGY,mvp,development
-ST-025-Sales-Automation,Sales Automation,software-technology,SOFTWARE-TECHNOLOGY,mvp,development
-ST-026-HR-Tech-Platform,Hr Tech Platform,software-technology,SOFTWARE-TECHNOLOGY,planned,planned
-ST-027-Legal-Tech-Platform,Legal Tech Platform,software-technology,SOFTWARE-TECHNOLOGY,planned,planned
-ST-028-Health-Tech-Platform,Health Tech Platform,software-technology,SOFTWARE-TECHNOLOGY,planned,planned
-ST-029-EdTech-Platform,Edtech Platform,software-technology,SOFTWARE-TECHNOLOGY,planned,planned
-ST-030-PropTech-Platform,Proptech Platform,software-technology,SOFTWARE-TECHNOLOGY,planned,planned
-EC-001-Angels-in-Daylight,Angels In Daylight,e-commerce,E-COMMERCE,planned,planned
-EC-002-New-World-Apparel,New World Apparel,e-commerce,E-COMMERCE,planned,planned
-EC-003-Shopify-Autopilot,Shopify Autopilot,e-commerce,E-COMMERCE,planned,planned
-EC-004-Shoe-Customizer,Shoe Customizer,e-commerce,E-COMMERCE,planned,planned
-EC-005-Sunglasses-AI,Sunglasses Ai,e-commerce,E-COMMERCE,planned,planned
-EC-006-Dropship-Hub,Dropship Hub,e-commerce,E-COMMERCE,planned,planned
-EC-007-Personal-Shopper-AI,Personal Shopper Ai,e-commerce,E-COMMERCE,planned,planned
-EC-008-Custom-Sneaker-AI,Custom Sneaker Ai,e-commerce,E-COMMERCE,planned,planned
-EC-009-Sustainable-Fashion-AI,Sustainable Fashion Ai,e-commerce,E-COMMERCE,planned,planned
-EC-010-Jewelry-Designer-AI,Jewelry Designer Ai,e-commerce,E-COMMERCE,planned,planned
-EC-011-Virtual-Try-On-AI,Virtual Try On Ai,e-commerce,E-COMMERCE,planned,planned
-EC-012-Fashion-Designer-AI,Fashion Designer Ai,e-commerce,E-COMMERCE,planned,planned
-EC-013-Merch-Licensing,Merch Licensing,e-commerce,E-COMMERCE,planned,planned
-EC-014-Subscription-Box-AI,Subscription Box Ai,e-commerce,E-COMMERCE,planned,planned
-EC-015-Surf-Gear-AI,Surf Gear Ai,e-commerce,E-COMMERCE,planned,planned
-EC-016-Ski-Gear-AI,Ski Gear Ai,e-commerce,E-COMMERCE,planned,planned
-EC-017-Golf-Gear-AI,Golf Gear Ai,e-commerce,E-COMMERCE,planned,planned
-EC-018-Fishing-Gear-AI,Fishing Gear Ai,e-commerce,E-COMMERCE,planned,planned
-EC-019-Yoga-Gear-AI,Yoga Gear Ai,e-commerce,E-COMMERCE,planned,planned
-EC-020-Costume-Shop-AI,Costume Shop Ai,e-commerce,E-COMMERCE,planned,planned
-EC-021-Luggage-AI,Luggage Ai,e-commerce,E-COMMERCE,planned,planned
-EC-022-Home-Appliance-AI,Home Appliance Ai,e-commerce,E-COMMERCE,planned,planned
-EC-023-Tool-Shop-AI,Tool Shop Ai,e-commerce,E-COMMERCE,planned,planned
-EC-024-Garden-Supply-AI,Garden Supply Ai,e-commerce,E-COMMERCE,planned,planned
-EC-025-Collectible-AI,Collectible Ai,e-commerce,E-COMMERCE,planned,planned
-EC-026-Hobby-Shop-AI,Hobby Shop Ai,e-commerce,E-COMMERCE,planned,planned
-EC-027-Kids-Toy-Line,Kids Toy Line,e-commerce,E-COMMERCE,planned,planned
-EC-028-NFT-Fashion-Licensing,Nft Fashion Licensing,e-commerce,E-COMMERCE,planned,planned
-EC-029-Instant-Brand-Generator,Instant Brand Generator,e-commerce,E-COMMERCE,planned,planned
-EC-030-AI-Product-Photographer,Ai Product Photographer,e-commerce,E-COMMERCE,planned,planned
-EC-031-Automated-Inventory-Forecaster,Automated Inventory Forecaster,e-commerce,E-COMMERCE,planned,planned
-EC-032-Dynamic-Pricing-Engine,Dynamic Pricing Engine,e-commerce,E-COMMERCE,planned,planned
-EC-033-Ad-Optimizer-AI,Ad Optimizer Ai,e-commerce,E-COMMERCE,planned,planned
-EC-034-Recommendation-Engine,Recommendation Engine,e-commerce,E-COMMERCE,planned,planned
-EC-035-Review-Aggregator-AI,Review Aggregator Ai,e-commerce,E-COMMERCE,planned,planned
-EC-036-Fulfillment-Network-AI,Fulfillment Network Ai,e-commerce,E-COMMERCE,planned,planned
-EC-037-Return-Optimization-AI,Return Optimization Ai,e-commerce,E-COMMERCE,planned,planned
-EC-038-Chatbot-Customer-Service,Chatbot Customer Service,e-commerce,E-COMMERCE,planned,planned
-EC-039-Visual-Search-AI,Visual Search Ai,e-commerce,E-COMMERCE,planned,planned
-EC-040-Abandoned-Cart-Recovery,Abandoned Cart Recovery,e-commerce,E-COMMERCE,planned,planned
-EC-041-Seasonal-Trend-Predictor,Seasonal Trend Predictor,e-commerce,E-COMMERCE,planned,planned
-EC-042-Influencer-Matchmaker,Influencer Matchmaker,e-commerce,E-COMMERCE,planned,planned
-EC-043-UGC-Content-Aggregator,Ugc Content Aggregator,e-commerce,E-COMMERCE,planned,planned
-EC-044-Live-Commerce-Platform,Live Commerce Platform,e-commerce,E-COMMERCE,growth,active
-EC-045-AR-Virtual-Fitting-Room,Ar Virtual Fitting Room,e-commerce,E-COMMERCE,planned,planned
-EC-046-3D-Product-Viewer,3D Product Viewer,e-commerce,E-COMMERCE,growth,active
-EC-047-Carbon-Footprint-Tracker,Carbon Footprint Tracker,e-commerce,E-COMMERCE,planned,planned
-EC-048-Wholesale-Marketplace-AI,Wholesale Marketplace Ai,e-commerce,E-COMMERCE,planned,planned
-EC-049-Rental-Marketplace,Rental Marketplace,e-commerce,E-COMMERCE,planned,planned
-EC-050-AI-Product-Descriptions,Ai Product Descriptions,e-commerce,E-COMMERCE,planned,planned
-EC-051-AI-Email-Marketing,Ai Email Marketing,e-commerce,E-COMMERCE,planned,planned
-EC-052-AI-Product-Bundler,Ai Product Bundler,e-commerce,E-COMMERCE,planned,planned
-EC-053-AI-Visual-Merchandiser,Ai Visual Merchandiser,e-commerce,E-COMMERCE,planned,planned
-EC-054-AI-Demand-Forecasting,Ai Demand Forecasting,e-commerce,E-COMMERCE,planned,planned
-EC-055-AI-Warehouse-Management,Ai Warehouse Management,e-commerce,E-COMMERCE,planned,planned
-EC-056-AI-Supplier-Matching,Ai Supplier Matching,e-commerce,E-COMMERCE,planned,planned
-EC-057-AI-Quality-Control,Ai Quality Control,e-commerce,E-COMMERCE,planned,planned
-EC-058-AI-Packaging-Designer,Ai Packaging Designer,e-commerce,E-COMMERCE,planned,planned
-EC-059-AI-Logistics-Planner,Ai Logistics Planner,e-commerce,E-COMMERCE,planned,planned
-EC-060-AI-Customer-Loyalty,Ai Customer Loyalty,e-commerce,E-COMMERCE,planned,planned
-EC-061-AI-Gift-Finder,Ai Gift Finder,e-commerce,E-COMMERCE,planned,planned
-EC-062-AI-Trend-Hunter,Ai Trend Hunter,e-commerce,E-COMMERCE,planned,planned
-EC-063-AI-Market-Research,Ai Market Research,e-commerce,E-COMMERCE,planned,planned
-EC-064-AI-Competitor-Watcher,Ai Competitor Watcher,e-commerce,E-COMMERCE,planned,planned
-EC-065-AI-Product-Development,Ai Product Development,e-commerce,E-COMMERCE,planned,planned
-EC-066-AI-Customer-Journey,Ai Customer Journey,e-commerce,E-COMMERCE,planned,planned
-EC-067-AI-Payment-Optimization,Ai Payment Optimization,e-commerce,E-COMMERCE,planned,planned
-EC-068-AI-Returns-Management,Ai Returns Management,e-commerce,E-COMMERCE,planned,planned
-EC-069-AI-Shipping-Labeler,Ai Shipping Labeler,e-commerce,E-COMMERCE,planned,planned
-EC-070-AI-Product-Launch-Coach,Ai Product Launch Coach,e-commerce,E-COMMERCE,planned,planned
-EC-071-AI-Vendor-Negotiator,Ai Vendor Negotiator,e-commerce,E-COMMERCE,planned,planned
-EC-072-AI-Product-Cataloger,Ai Product Cataloger,e-commerce,E-COMMERCE,planned,planned
-EC-073-AI-Order-Prioritizer,Ai Order Prioritizer,e-commerce,E-COMMERCE,planned,planned
-EC-074-AI-Customer-Segmentation,Ai Customer Segmentation,e-commerce,E-COMMERCE,planned,planned
-EC-075-AI-Pricing-Analyst,Ai Pricing Analyst,e-commerce,E-COMMERCE,planned,planned
-EC-076-AI-Sales-Forecasting,Ai Sales Forecasting,e-commerce,E-COMMERCE,planned,planned
-EC-077-AI-Inventory-Reordering,Ai Inventory Reordering,e-commerce,E-COMMERCE,planned,planned
-EC-078-AI-Product-Comparison,Ai Product Comparison,e-commerce,E-COMMERCE,planned,planned
-EC-079-AI-Customer-Feedback,Ai Customer Feedback,e-commerce,E-COMMERCE,planned,planned
-EC-080-AI-Product-Updates,Ai Product Updates,e-commerce,E-COMMERCE,planned,planned
-EC-081-AI-Cross-Selling,Ai Cross Selling,e-commerce,E-COMMERCE,planned,planned
-EC-082-AI-Up-Selling,Ai Up Selling,e-commerce,E-COMMERCE,planned,planned
-EC-083-AI-Product-Education,Ai Product Education,e-commerce,E-COMMERCE,planned,planned
-EC-084-AI-Purchase-Timing,Ai Purchase Timing,e-commerce,E-COMMERCE,planned,planned
-EC-085-AI-Customer-Support,Ai Customer Support,e-commerce,E-COMMERCE,planned,planned
-EC-086-AI-Order-Tracking,Ai Order Tracking,e-commerce,E-COMMERCE,planned,planned
-EC-087-AI-Product-Reviews,Ai Product Reviews,e-commerce,E-COMMERCE,planned,planned
-EC-088-AI-Customer-Community,Ai Customer Community,e-commerce,E-COMMERCE,planned,planned
-EC-089-AI-Product-Customization,Ai Product Customization,e-commerce,E-COMMERCE,planned,planned
-EC-090-AI-Gift-Registry,Ai Gift Registry,e-commerce,E-COMMERCE,planned,planned
-EC-091-AI-Wedding-Registry,Ai Wedding Registry,e-commerce,E-COMMERCE,planned,planned
-EC-092-AI-Baby-Registry,Ai Baby Registry,e-commerce,E-COMMERCE,planned,planned
-EC-093-AI-Holiday-Planner,Ai Holiday Planner,e-commerce,E-COMMERCE,planned,planned
-EC-094-AI-Personal-Shopper,Ai Personal Shopper,e-commerce,E-COMMERCE,planned,planned
-EC-095-AI-Color-Match,Ai Color Match,e-commerce,E-COMMERCE,planned,planned
-EC-096-AI-Fabric-Advisor,Ai Fabric Advisor,e-commerce,E-COMMERCE,planned,planned
-EC-097-AI-Fit-Recommendation,Ai Fit Recommendation,e-commerce,E-COMMERCE,planned,planned
-EC-098-AI-Outfit-Builder,Ai Outfit Builder,e-commerce,E-COMMERCE,planned,planned
-EC-099-AI-Seasonal-Forecast,Ai Seasonal Forecast,e-commerce,E-COMMERCE,planned,planned
-EC-100-AI-Wardrobe-Planner,Ai Wardrobe Planner,e-commerce,E-COMMERCE,planned,planned
-EC-101-AI-Accessory-Match,Ai Accessory Match,e-commerce,E-COMMERCE,planned,planned
-EC-102-AI-Shoe-Match,Ai Shoe Match,e-commerce,E-COMMERCE,planned,planned
-EC-103-AI-Jewelry-Match,Ai Jewelry Match,e-commerce,E-COMMERCE,planned,planned
-EC-104-AI-Bag-Match,Ai Bag Match,e-commerce,E-COMMERCE,planned,planned
-EC-105-AI-Color-Palette,Ai Color Palette,e-commerce,E-COMMERCE,planned,planned
-EC-106-AI-Outfit-Recycling,Ai Outfit Recycling,e-commerce,E-COMMERCE,planned,planned
-EC-107-AI-Style-Evolution,Ai Style Evolution,e-commerce,E-COMMERCE,planned,planned
-EC-108-AI-Budget-Stylist,Ai Budget Stylist,e-commerce,E-COMMERCE,planned,planned
-EC-109-AI-Trend-Archive,Ai Trend Archive,e-commerce,E-COMMERCE,planned,planned
-EC-110-AI-Vintage-Advisor,Ai Vintage Advisor,e-commerce,E-COMMERCE,planned,planned
+FH-001-Personal-Chef-Service,Personal Chef Service,hospitality,HOSPITALITY,mvp,development
+FH-002-Meal-Prep-Delivery,Meal Prep Delivery,hospitality,HOSPITALITY,mvp,development
+FH-003-Private-Dinner-Experiences,Private Dinner Experiences,hospitality,HOSPITALITY,validation,validation
+FH-004-Catering-Company,Catering Company,hospitality,HOSPITALITY,validation,validation
+FH-005-Corporate-Lunch-Service,Corporate Lunch Service,hospitality,HOSPITALITY,mvp,development
+FH-006-Healthy-Meal-Prep-for-Gyms,Healthy Meal Prep For Gyms,hospitality,HOSPITALITY,mvp,development
+FH-007-Elderly-Meal-Service,Elderly Meal Service,hospitality,HOSPITALITY,validation,validation
+FH-008-Athlete-Nutrition-Service,Athlete Nutrition Service,hospitality,HOSPITALITY,mvp,development
+FH-009-Packaged-Food-Brand,Packaged Food Brand,hospitality,HOSPITALITY,validation,validation
+FH-010-Frozen-Meals-Company,Frozen Meals Company,hospitality,HOSPITALITY,validation,validation
+FH-011-Sauce-or-Seasoning-Brand,Sauce Or Seasoning Brand,hospitality,HOSPITALITY,mvp,development
+FH-012-Protein-Snacks-Brand,Protein Snacks Brand,hospitality,HOSPITALITY,mvp,development
+FH-013-Meal-Kit-Company,Meal Kit Company,hospitality,HOSPITALITY,validation,validation
+FH-014-Cloud-Kitchen-,Cloud Kitchen ,hospitality,HOSPITALITY,planned,planned
+FH-015-AI-Nutrition-Planner,Ai Nutrition Planner,hospitality,HOSPITALITY,planned,planned
+FH-016-Recipe-App,Recipe App,hospitality,HOSPITALITY,mvp,development
+FH-017-Cooking-Content-Brand,Cooking Content Brand,hospitality,HOSPITALITY,mvp,development
+FH-018-Food-Influencer-Brand,Food Influencer Brand,hospitality,HOSPITALITY,mvp,development
+FH-019-Cooking-Course-Platform,Cooking Course Platform,hospitality,HOSPITALITY,mvp,development
+FH-020-Restaurant-POS-System,Restaurant Pos System,hospitality,HOSPITALITY,planned,planned
+FH-021-Food-Truck-Business,Food Truck Business,hospitality,HOSPITALITY,validation,validation
+FH-022-Specialty-Coffee-Shop,Specialty Coffee Shop,hospitality,HOSPITALITY,validation,validation
+FH-023-Bakery-&-Pastry-Shop,Bakery & Pastry Shop,hospitality,HOSPITALITY,validation,validation
+FH-024-Juice-Bar,Juice Bar,hospitality,HOSPITALITY,mvp,development
+FH-025-Ice-Cream-Shop,Ice Cream Shop,hospitality,HOSPITALITY,validation,validation
+FH-026-Gourmet-Food-Market,Gourmet Food Market,hospitality,HOSPITALITY,validation,validation
+FH-027-Food-Delivery-Platform,Food Delivery Platform,hospitality,HOSPITALITY,planned,planned
+FH-028-Restaurant-Management-SaaS,Restaurant Management Saas,hospitality,HOSPITALITY,planned,planned
+FH-029-Food-Quality-Testing-Lab,Food Quality Testing Lab,hospitality,HOSPITALITY,planned,planned
+FH-030-Organic-Food-Brand,Organic Food Brand,hospitality,HOSPITALITY,mvp,development
+FH-031-Vegan-Food-Company,Vegan Food Company,hospitality,HOSPITALITY,mvp,development
+FH-032-Keto-Meal-Service,Keto Meal Service,hospitality,HOSPITALITY,mvp,development
+FH-033-Food-Photography-Service,Food Photography Service,hospitality,HOSPITALITY,mvp,development
+FH-034-Restaurant-Consulting,Restaurant Consulting,hospitality,HOSPITALITY,mvp,development
+FH-035-Food-Safety-Training,Food Safety Training,hospitality,HOSPITALITY,validation,validation
+FS-001-Gym,Gym,healthcare,HEALTHCARE,validation,validation
+FS-002-Boutique-Fitness-Studio,Boutique Fitness Studio,healthcare,HEALTHCARE,validation,validation
+FS-003-Personal-Training-Studio,Personal Training Studio,healthcare,HEALTHCARE,mvp,development
+FS-004-Women-Only-Gym,Women Only Gym,healthcare,HEALTHCARE,validation,validation
+FS-005-Boxing-Gym,Boxing Gym,healthcare,HEALTHCARE,validation,validation
+FS-006-CrossFit-Gym,Crossfit Gym,healthcare,HEALTHCARE,validation,validation
+FS-007-Luxury-Fitness-Club,Luxury Fitness Club,healthcare,HEALTHCARE,planned,planned
+FS-008-Online-Coaching,Online Coaching,healthcare,HEALTHCARE,mvp,development
+FS-009-Personal-Trainer-Business,Personal Trainer Business,healthcare,HEALTHCARE,mvp,development
+FS-010-Transformation-Program,Transformation Program,healthcare,HEALTHCARE,mvp,development
+FS-011-Athlete-Training-Company,Athlete Training Company,healthcare,HEALTHCARE,validation,validation
+FS-012-Supplement-Brand,Supplement Brand,healthcare,HEALTHCARE,mvp,development
+FS-013-Fitness-Apparel,Fitness Apparel,healthcare,HEALTHCARE,mvp,development
+FS-014-Workout-Equipment-Brand,Workout Equipment Brand,healthcare,HEALTHCARE,validation,validation
+FS-015-Recovery-Products,Recovery Products,healthcare,HEALTHCARE,mvp,development
+FS-016-Fitness-App,Fitness App,healthcare,HEALTHCARE,mvp,development
+FS-017-AI-Personal-Trainer,Ai Personal Trainer,healthcare,HEALTHCARE,planned,planned
+FS-018-Gym-Management-Software,Gym Management Software,healthcare,HEALTHCARE,planned,planned
+FS-019-Wearable-Analytics-Platform,Wearable Analytics Platform,healthcare,HEALTHCARE,planned,planned
+FS-020-Yoga-Studio,Yoga Studio,healthcare,HEALTHCARE,validation,validation
+FS-021-Pilates-Studio,Pilates Studio,healthcare,HEALTHCARE,validation,validation
+FS-022-Dance-Studio,Dance Studio,healthcare,HEALTHCARE,validation,validation
+FS-023-Martial-Arts-Dojo,Martial Arts Dojo,healthcare,HEALTHCARE,validation,validation
+FS-024-Sports-Performance-Center,Sports Performance Center,healthcare,HEALTHCARE,planned,planned
+FS-025-Corporate-Wellness-Program,Corporate Wellness Program,healthcare,HEALTHCARE,mvp,development
+LT-001-Truck-Dispatch-Company,Truck Dispatch Company,transportation,TRANSPORTATION,validation,validation
+LT-002-Freight-Brokerage,Freight Brokerage,transportation,TRANSPORTATION,validation,validation
+LT-003-Logistics-Dispatch-Service,Logistics Dispatch Service,transportation,TRANSPORTATION,mvp,development
+LT-004-Last-Mile-Delivery-Dispatch,Last Mile Delivery Dispatch,transportation,TRANSPORTATION,mvp,development
+LT-005-Medical-Courier-Dispatch,Medical Courier Dispatch,transportation,TRANSPORTATION,validation,validation
+LT-006-Amazon,Amazon,transportation,TRANSPORTATION,planned,planned
+LT-007-Construction-Dispatch,Construction Dispatch,transportation,TRANSPORTATION,validation,validation
+LT-008-Towing-Dispatch,Towing Dispatch,transportation,TRANSPORTATION,mvp,development
+LT-009-HVAC-Technician-Dispatch,Hvac Technician Dispatch,transportation,TRANSPORTATION,mvp,development
+LT-010-Field-Service-Dispatch,Field Service Dispatch,transportation,TRANSPORTATION,mvp,development
+LT-011-Dispatch-Software,Dispatch Software,transportation,TRANSPORTATION,planned,planned
+LT-012-Fleet-Tracking-Platform,Fleet Tracking Platform,transportation,TRANSPORTATION,planned,planned
+LT-013-Logistics-Automation-System,Logistics Automation System,transportation,TRANSPORTATION,planned,planned
+LT-014-AI-Route-Optimization,Ai Route Optimization,transportation,TRANSPORTATION,planned,planned
+LT-015-Driver-Management-Platform,Driver Management Platform,transportation,TRANSPORTATION,planned,planned
+LT-016-Trucking-Company,Trucking Company,transportation,TRANSPORTATION,validation,validation
+LT-017-Courier-Service,Courier Service,transportation,TRANSPORTATION,mvp,development
+LT-018-Local-Delivery-Company,Local Delivery Company,transportation,TRANSPORTATION,mvp,development
+LT-019-Moving-Company,Moving Company,transportation,TRANSPORTATION,validation,validation
+LT-020-Freight-Company,Freight Company,transportation,TRANSPORTATION,validation,validation
+LT-021-Warehouse-Company,Warehouse Company,transportation,TRANSPORTATION,planned,planned
+LT-022-Fulfillment-Center,Fulfillment Center,transportation,TRANSPORTATION,mvp,development
+LT-023-Storage-Business,Storage Business,transportation,TRANSPORTATION,validation,validation
+LT-024-Distribution-Company,Distribution Company,transportation,TRANSPORTATION,validation,validation
+LT-025-Logistics-Marketplace,Logistics Marketplace,transportation,TRANSPORTATION,planned,planned
+LT-026-Shipping-Platform,Shipping Platform,transportation,TRANSPORTATION,planned,planned
+LT-027-Fleet-Management-SaaS,Fleet Management Saas,transportation,TRANSPORTATION,planned,planned
+LT-028-Freight-AI-Optimization,Freight Ai Optimization,transportation,TRANSPORTATION,planned,planned
+LT-029-Supply-Chain-Analytics,Supply Chain Analytics,transportation,TRANSPORTATION,planned,planned
+LT-030-Cold-Chain-Logistics,Cold Chain Logistics,transportation,TRANSPORTATION,validation,validation
+PS-001-Business-Consulting,Business Consulting,staffing,STAFFING,mvp,development
+PS-002-Legal-Services,Legal Services,staffing,STAFFING,validation,validation
+PS-003-Accounting-Services,Accounting Services,staffing,STAFFING,mvp,development
+PS-004-HR-Consulting,Hr Consulting,staffing,STAFFING,validation,validation
+PS-005-Marketing-Agency,Marketing Agency,staffing,STAFFING,mvp,development
+PS-006-Web-Design-Agency,Web Design Agency,staffing,STAFFING,mvp,development
+PS-007-IT-Support-Services,It Support Services,staffing,STAFFING,mvp,development
+PS-008-Virtual-Assistant-Service,Virtual Assistant Service,staffing,STAFFING,mvp,development
+PS-009-Bookkeeping-Service,Bookkeeping Service,staffing,STAFFING,mvp,development
+PS-010-Tax-Preparation-Service,Tax Preparation Service,staffing,STAFFING,mvp,development
+PS-011-Real-Estate-Agency,Real Estate Agency,staffing,STAFFING,validation,validation
+PS-012-Insurance-Agency,Insurance Agency,staffing,STAFFING,validation,validation
+PS-013-Financial-Planning,Financial Planning,staffing,STAFFING,mvp,development
+PS-014-Event-Planning,Event Planning,staffing,STAFFING,validation,validation
+PS-015-Interior-Design,Interior Design,staffing,STAFFING,validation,validation
+PS-016-Photography-Service,Photography Service,staffing,STAFFING,mvp,development
+PS-017-Videography-Service,Videography Service,staffing,STAFFING,mvp,development
+PS-018-Translation-Services,Translation Services,staffing,STAFFING,validation,validation
+PS-019-Copywriting-Service,Copywriting Service,staffing,STAFFING,mvp,development
+PS-020-Social-Media-Management,Social Media Management,staffing,STAFFING,mvp,development
+PS-021-SEO-Agency,Seo Agency,staffing,STAFFING,mvp,development
+PS-022-PPC-Management,Ppc Management,staffing,STAFFING,mvp,development
+PS-023-PR-Agency,Pr Agency,staffing,STAFFING,validation,validation
+PS-024-Recruiting-Agency,Recruiting Agency,staffing,STAFFING,validation,validation
+PS-025-Business-Brokerage,Business Brokerage,staffing,STAFFING,planned,planned
+MC-001-YouTube-Channel-Network,Youtube Channel Network,media,MEDIA,mvp,development
+MC-002-Podcast-Network,Podcast Network,media,MEDIA,mvp,development
+MC-003-Blog-Network,Blog Network,media,MEDIA,mvp,development
+MC-004-Influencer-Agency,Influencer Agency,media,MEDIA,validation,validation
+MC-005-Content-Creation-Studio,Content Creation Studio,media,MEDIA,mvp,development
+MC-006-Video-Production-Company,Video Production Company,media,MEDIA,validation,validation
+MC-007-Animation-Studio,Animation Studio,media,MEDIA,planned,planned
+MC-008-Music-Production,Music Production,media,MEDIA,validation,validation
+MC-009-Stock-Photography,Stock Photography,media,MEDIA,mvp,development
+MC-010-Stock-Video,Stock Video,media,MEDIA,mvp,development
+MC-011-Online-Magazine,Online Magazine,media,MEDIA,mvp,development
+MC-012-News-Website,News Website,media,MEDIA,validation,validation
+MC-013-Streaming-Platform,Streaming Platform,media,MEDIA,planned,planned
+MC-014-Gaming-Channel,Gaming Channel,media,MEDIA,mvp,development
+MC-015-Esports-Team,Esports Team,media,MEDIA,planned,planned
+MC-016-Virtual-Events-Platform,Virtual Events Platform,media,MEDIA,planned,planned
+MC-017-Online-Course-Platform,Online Course Platform,media,MEDIA,mvp,development
+MC-018-Membership-Site,Membership Site,media,MEDIA,mvp,development
+MC-019-Digital-Download-Store,Digital Download Store,media,MEDIA,mvp,development
+MC-020-NFT-Marketplace,Nft Marketplace,media,MEDIA,planned,planned
+ET-001-Online-Tutoring-Platform,Online Tutoring Platform,education,EDUCATION,mvp,development
+ET-002-Language-Learning-App,Language Learning App,education,EDUCATION,mvp,development
+ET-003-Test-Prep-Service,Test Prep Service,education,EDUCATION,validation,validation
+ET-004-Coding-Bootcamp,Coding Bootcamp,education,EDUCATION,validation,validation
+ET-005-Professional-Certification,Professional Certification,education,EDUCATION,validation,validation
+ET-006-Corporate-Training,Corporate Training,education,EDUCATION,validation,validation
+ET-007-Skills-Assessment-Platform,Skills Assessment Platform,education,EDUCATION,planned,planned
+ET-008-Career-Coaching,Career Coaching,education,EDUCATION,mvp,development
+ET-009-Resume-Writing-Service,Resume Writing Service,education,EDUCATION,mvp,development
+ET-010-Interview-Prep-Platform,Interview Prep Platform,education,EDUCATION,mvp,development
+ET-011-Mentorship-Platform,Mentorship Platform,education,EDUCATION,planned,planned
+ET-012-Educational-Content-Library,Educational Content Library,education,EDUCATION,mvp,development
+ET-013-VR-Training-Simulations,Vr Training Simulations,education,EDUCATION,planned,planned
+ET-014-Gamified-Learning-App,Gamified Learning App,education,EDUCATION,planned,planned
+ET-015-Homeschool-Curriculum,Homeschool Curriculum,education,EDUCATION,validation,validation
+ST-001-SaaS-Platform,Saas Platform,technology,TECHNOLOGY,mvp,development
+ST-002-Mobile-App-Development,Mobile App Development,technology,TECHNOLOGY,mvp,development
+ST-003-Web-Development-Agency,Web Development Agency,technology,TECHNOLOGY,mvp,development
+ST-004-Custom-Software-Development,Custom Software Development,technology,TECHNOLOGY,validation,validation
+ST-005-API-Development,Api Development,technology,TECHNOLOGY,mvp,development
+ST-006-Cloud-Infrastructure,Cloud Infrastructure,technology,TECHNOLOGY,planned,planned
+ST-007-DevOps-Consulting,Devops Consulting,technology,TECHNOLOGY,validation,validation
+ST-008-Cybersecurity-Service,Cybersecurity Service,technology,TECHNOLOGY,validation,validation
+ST-009-Data-Analytics-Platform,Data Analytics Platform,technology,TECHNOLOGY,planned,planned
+ST-010-Business-Intelligence-Tool,Business Intelligence Tool,technology,TECHNOLOGY,planned,planned
+ST-011-CRM-Platform,Crm Platform,technology,TECHNOLOGY,planned,planned
+ST-012-Project-Management-Tool,Project Management Tool,technology,TECHNOLOGY,planned,planned
+ST-013-Communication-Platform,Communication Platform,technology,TECHNOLOGY,planned,planned
+ST-014-Collaboration-Software,Collaboration Software,technology,TECHNOLOGY,planned,planned
+ST-015-Automation-Platform,Automation Platform,technology,TECHNOLOGY,planned,planned
+ST-016-AI,Ai,technology,TECHNOLOGY,planned,planned
+ST-017-Chatbot-Builder,Chatbot Builder,technology,TECHNOLOGY,mvp,development
+ST-018-E-commerce-Platform,E Commerce Platform,technology,TECHNOLOGY,planned,planned
+ST-019-Payment-Processing,Payment Processing,technology,TECHNOLOGY,validation,validation
+ST-020-Blockchain-Platform,Blockchain Platform,technology,TECHNOLOGY,planned,planned
+ST-021-IoT-Platform,Iot Platform,technology,TECHNOLOGY,planned,planned
+ST-022-AR,Ar,technology,TECHNOLOGY,planned,planned
+ST-023-Game-Development,Game Development,technology,TECHNOLOGY,validation,validation
+ST-024-Marketing-Automation,Marketing Automation,technology,TECHNOLOGY,mvp,development
+ST-025-Sales-Automation,Sales Automation,technology,TECHNOLOGY,mvp,development
+ST-026-HR-Tech-Platform,Hr Tech Platform,technology,TECHNOLOGY,planned,planned
+ST-027-Legal-Tech-Platform,Legal Tech Platform,technology,TECHNOLOGY,planned,planned
+ST-028-Health-Tech-Platform,Health Tech Platform,technology,TECHNOLOGY,planned,planned
+ST-029-EdTech-Platform,Edtech Platform,technology,TECHNOLOGY,planned,planned
+ST-030-PropTech-Platform,Proptech Platform,technology,TECHNOLOGY,planned,planned
+EC-001-Angels-in-Daylight,Angels In Daylight,marketplace,MARKETPLACE,planned,planned
+EC-002-New-World-Apparel,New World Apparel,marketplace,MARKETPLACE,planned,planned
+EC-003-Shopify-Autopilot,Shopify Autopilot,marketplace,MARKETPLACE,planned,planned
+EC-004-Shoe-Customizer,Shoe Customizer,marketplace,MARKETPLACE,planned,planned
+EC-005-Sunglasses-AI,Sunglasses Ai,marketplace,MARKETPLACE,planned,planned
+EC-006-Dropship-Hub,Dropship Hub,marketplace,MARKETPLACE,planned,planned
+EC-007-Personal-Shopper-AI,Personal Shopper Ai,marketplace,MARKETPLACE,planned,planned
+EC-008-Custom-Sneaker-AI,Custom Sneaker Ai,marketplace,MARKETPLACE,planned,planned
+EC-009-Sustainable-Fashion-AI,Sustainable Fashion Ai,marketplace,MARKETPLACE,planned,planned
+EC-010-Jewelry-Designer-AI,Jewelry Designer Ai,marketplace,MARKETPLACE,planned,planned
+EC-011-Virtual-Try-On-AI,Virtual Try On Ai,marketplace,MARKETPLACE,planned,planned
+EC-012-Fashion-Designer-AI,Fashion Designer Ai,marketplace,MARKETPLACE,planned,planned
+EC-013-Merch-Licensing,Merch Licensing,marketplace,MARKETPLACE,planned,planned
+EC-014-Subscription-Box-AI,Subscription Box Ai,marketplace,MARKETPLACE,planned,planned
+EC-015-Surf-Gear-AI,Surf Gear Ai,marketplace,MARKETPLACE,planned,planned
+EC-016-Ski-Gear-AI,Ski Gear Ai,marketplace,MARKETPLACE,planned,planned
+EC-017-Golf-Gear-AI,Golf Gear Ai,marketplace,MARKETPLACE,planned,planned
+EC-018-Fishing-Gear-AI,Fishing Gear Ai,marketplace,MARKETPLACE,planned,planned
+EC-019-Yoga-Gear-AI,Yoga Gear Ai,marketplace,MARKETPLACE,planned,planned
+EC-020-Costume-Shop-AI,Costume Shop Ai,marketplace,MARKETPLACE,planned,planned
+EC-021-Luggage-AI,Luggage Ai,marketplace,MARKETPLACE,planned,planned
+EC-022-Home-Appliance-AI,Home Appliance Ai,marketplace,MARKETPLACE,planned,planned
+EC-023-Tool-Shop-AI,Tool Shop Ai,marketplace,MARKETPLACE,planned,planned
+EC-024-Garden-Supply-AI,Garden Supply Ai,marketplace,MARKETPLACE,planned,planned
+EC-025-Collectible-AI,Collectible Ai,marketplace,MARKETPLACE,planned,planned
+EC-026-Hobby-Shop-AI,Hobby Shop Ai,marketplace,MARKETPLACE,planned,planned
+EC-027-Kids-Toy-Line,Kids Toy Line,marketplace,MARKETPLACE,planned,planned
+EC-028-NFT-Fashion-Licensing,Nft Fashion Licensing,marketplace,MARKETPLACE,planned,planned
+EC-029-Instant-Brand-Generator,Instant Brand Generator,marketplace,MARKETPLACE,planned,planned
+EC-030-AI-Product-Photographer,Ai Product Photographer,marketplace,MARKETPLACE,planned,planned
+EC-031-Automated-Inventory-Forecaster,Automated Inventory Forecaster,marketplace,MARKETPLACE,planned,planned
+EC-032-Dynamic-Pricing-Engine,Dynamic Pricing Engine,marketplace,MARKETPLACE,planned,planned
+EC-033-Ad-Optimizer-AI,Ad Optimizer Ai,marketplace,MARKETPLACE,planned,planned
+EC-034-Recommendation-Engine,Recommendation Engine,marketplace,MARKETPLACE,planned,planned
+EC-035-Review-Aggregator-AI,Review Aggregator Ai,marketplace,MARKETPLACE,planned,planned
+EC-036-Fulfillment-Network-AI,Fulfillment Network Ai,marketplace,MARKETPLACE,planned,planned
+EC-037-Return-Optimization-AI,Return Optimization Ai,marketplace,MARKETPLACE,planned,planned
+EC-038-Chatbot-Customer-Service,Chatbot Customer Service,marketplace,MARKETPLACE,planned,planned
+EC-039-Visual-Search-AI,Visual Search Ai,marketplace,MARKETPLACE,planned,planned
+EC-040-Abandoned-Cart-Recovery,Abandoned Cart Recovery,marketplace,MARKETPLACE,planned,planned
+EC-041-Seasonal-Trend-Predictor,Seasonal Trend Predictor,marketplace,MARKETPLACE,planned,planned
+EC-042-Influencer-Matchmaker,Influencer Matchmaker,marketplace,MARKETPLACE,planned,planned
+EC-043-UGC-Content-Aggregator,Ugc Content Aggregator,marketplace,MARKETPLACE,planned,planned
+EC-044-Live-Commerce-Platform,Live Commerce Platform,marketplace,MARKETPLACE,growth,active
+EC-045-AR-Virtual-Fitting-Room,Ar Virtual Fitting Room,marketplace,MARKETPLACE,planned,planned
+EC-046-3D-Product-Viewer,3D Product Viewer,marketplace,MARKETPLACE,growth,active
+EC-047-Carbon-Footprint-Tracker,Carbon Footprint Tracker,marketplace,MARKETPLACE,planned,planned
+EC-048-Wholesale-Marketplace-AI,Wholesale Marketplace Ai,marketplace,MARKETPLACE,planned,planned
+EC-049-Rental-Marketplace,Rental Marketplace,marketplace,MARKETPLACE,planned,planned
+EC-050-AI-Product-Descriptions,Ai Product Descriptions,marketplace,MARKETPLACE,planned,planned
+EC-051-AI-Email-Marketing,Ai Email Marketing,marketplace,MARKETPLACE,planned,planned
+EC-052-AI-Product-Bundler,Ai Product Bundler,marketplace,MARKETPLACE,planned,planned
+EC-053-AI-Visual-Merchandiser,Ai Visual Merchandiser,marketplace,MARKETPLACE,planned,planned
+EC-054-AI-Demand-Forecasting,Ai Demand Forecasting,marketplace,MARKETPLACE,planned,planned
+EC-055-AI-Warehouse-Management,Ai Warehouse Management,marketplace,MARKETPLACE,planned,planned
+EC-056-AI-Supplier-Matching,Ai Supplier Matching,marketplace,MARKETPLACE,planned,planned
+EC-057-AI-Quality-Control,Ai Quality Control,marketplace,MARKETPLACE,planned,planned
+EC-058-AI-Packaging-Designer,Ai Packaging Designer,marketplace,MARKETPLACE,planned,planned
+EC-059-AI-Logistics-Planner,Ai Logistics Planner,marketplace,MARKETPLACE,planned,planned
+EC-060-AI-Customer-Loyalty,Ai Customer Loyalty,marketplace,MARKETPLACE,planned,planned
+EC-061-AI-Gift-Finder,Ai Gift Finder,marketplace,MARKETPLACE,planned,planned
+EC-062-AI-Trend-Hunter,Ai Trend Hunter,marketplace,MARKETPLACE,planned,planned
+EC-063-AI-Market-Research,Ai Market Research,marketplace,MARKETPLACE,planned,planned
+EC-064-AI-Competitor-Watcher,Ai Competitor Watcher,marketplace,MARKETPLACE,planned,planned
+EC-065-AI-Product-Development,Ai Product Development,marketplace,MARKETPLACE,planned,planned
+EC-066-AI-Customer-Journey,Ai Customer Journey,marketplace,MARKETPLACE,planned,planned
+EC-067-AI-Payment-Optimization,Ai Payment Optimization,marketplace,MARKETPLACE,planned,planned
+EC-068-AI-Returns-Management,Ai Returns Management,marketplace,MARKETPLACE,planned,planned
+EC-069-AI-Shipping-Labeler,Ai Shipping Labeler,marketplace,MARKETPLACE,planned,planned
+EC-070-AI-Product-Launch-Coach,Ai Product Launch Coach,marketplace,MARKETPLACE,planned,planned
+EC-071-AI-Vendor-Negotiator,Ai Vendor Negotiator,marketplace,MARKETPLACE,planned,planned
+EC-072-AI-Product-Cataloger,Ai Product Cataloger,marketplace,MARKETPLACE,planned,planned
+EC-073-AI-Order-Prioritizer,Ai Order Prioritizer,marketplace,MARKETPLACE,planned,planned
+EC-074-AI-Customer-Segmentation,Ai Customer Segmentation,marketplace,MARKETPLACE,planned,planned
+EC-075-AI-Pricing-Analyst,Ai Pricing Analyst,marketplace,MARKETPLACE,planned,planned
+EC-076-AI-Sales-Forecasting,Ai Sales Forecasting,marketplace,MARKETPLACE,planned,planned
+EC-077-AI-Inventory-Reordering,Ai Inventory Reordering,marketplace,MARKETPLACE,planned,planned
+EC-078-AI-Product-Comparison,Ai Product Comparison,marketplace,MARKETPLACE,planned,planned
+EC-079-AI-Customer-Feedback,Ai Customer Feedback,marketplace,MARKETPLACE,planned,planned
+EC-080-AI-Product-Updates,Ai Product Updates,marketplace,MARKETPLACE,planned,planned
+EC-081-AI-Cross-Selling,Ai Cross Selling,marketplace,MARKETPLACE,planned,planned
+EC-082-AI-Up-Selling,Ai Up Selling,marketplace,MARKETPLACE,planned,planned
+EC-083-AI-Product-Education,Ai Product Education,marketplace,MARKETPLACE,planned,planned
+EC-084-AI-Purchase-Timing,Ai Purchase Timing,marketplace,MARKETPLACE,planned,planned
+EC-085-AI-Customer-Support,Ai Customer Support,marketplace,MARKETPLACE,planned,planned
+EC-086-AI-Order-Tracking,Ai Order Tracking,marketplace,MARKETPLACE,planned,planned
+EC-087-AI-Product-Reviews,Ai Product Reviews,marketplace,MARKETPLACE,planned,planned
+EC-088-AI-Customer-Community,Ai Customer Community,marketplace,MARKETPLACE,planned,planned
+EC-089-AI-Product-Customization,Ai Product Customization,marketplace,MARKETPLACE,planned,planned
+EC-090-AI-Gift-Registry,Ai Gift Registry,marketplace,MARKETPLACE,planned,planned
+EC-091-AI-Wedding-Registry,Ai Wedding Registry,marketplace,MARKETPLACE,planned,planned
+EC-092-AI-Baby-Registry,Ai Baby Registry,marketplace,MARKETPLACE,planned,planned
+EC-093-AI-Holiday-Planner,Ai Holiday Planner,marketplace,MARKETPLACE,planned,planned
+EC-094-AI-Personal-Shopper,Ai Personal Shopper,marketplace,MARKETPLACE,planned,planned
+EC-095-AI-Color-Match,Ai Color Match,marketplace,MARKETPLACE,planned,planned
+EC-096-AI-Fabric-Advisor,Ai Fabric Advisor,marketplace,MARKETPLACE,planned,planned
+EC-097-AI-Fit-Recommendation,Ai Fit Recommendation,marketplace,MARKETPLACE,planned,planned
+EC-098-AI-Outfit-Builder,Ai Outfit Builder,marketplace,MARKETPLACE,planned,planned
+EC-099-AI-Seasonal-Forecast,Ai Seasonal Forecast,marketplace,MARKETPLACE,planned,planned
+EC-100-AI-Wardrobe-Planner,Ai Wardrobe Planner,marketplace,MARKETPLACE,planned,planned
+EC-101-AI-Accessory-Match,Ai Accessory Match,marketplace,MARKETPLACE,planned,planned
+EC-102-AI-Shoe-Match,Ai Shoe Match,marketplace,MARKETPLACE,planned,planned
+EC-103-AI-Jewelry-Match,Ai Jewelry Match,marketplace,MARKETPLACE,planned,planned
+EC-104-AI-Bag-Match,Ai Bag Match,marketplace,MARKETPLACE,planned,planned
+EC-105-AI-Color-Palette,Ai Color Palette,marketplace,MARKETPLACE,planned,planned
+EC-106-AI-Outfit-Recycling,Ai Outfit Recycling,marketplace,MARKETPLACE,planned,planned
+EC-107-AI-Style-Evolution,Ai Style Evolution,marketplace,MARKETPLACE,planned,planned
+EC-108-AI-Budget-Stylist,Ai Budget Stylist,marketplace,MARKETPLACE,planned,planned
+EC-109-AI-Trend-Archive,Ai Trend Archive,marketplace,MARKETPLACE,planned,planned
+EC-110-AI-Vintage-Advisor,Ai Vintage Advisor,marketplace,MARKETPLACE,planned,planned
 TECH-001-Quantum-Algorithm-AI,Quantum Algorithm Ai,technology,TECHNOLOGY,planned,planned
 TECH-002-AI-Compliance-Scanner,Ai Compliance Scanner,technology,TECHNOLOGY,planned,planned
 TECH-003-Cloud-Management-AI,Cloud Management Ai,technology,TECHNOLOGY,planned,planned
@@ -531,156 +531,156 @@ EDU-037-Writing-Instruction-AI,Writing Instruction Ai,education,EDUCATION,planne
 EDU-038-Critical-Thinking-AI,Critical Thinking Ai,education,EDUCATION,planned,planned
 EDU-039-Emotional-Intelligence-AI,Emotional Intelligence Ai,education,EDUCATION,planned,planned
 EDU-040-Time-Management-AI,Time Management Ai,education,EDUCATION,planned,planned
-COMM-001-Luminary-Worldwide-Events,Luminary Worldwide Events,community,COMMUNITY,planned,planned
-COMM-002-Brotherhood-Coaching-Network,Brotherhood Coaching Network,community,COMMUNITY,planned,planned
-COMM-003-Ace-Senior-Care-Connect,Ace Senior Care Connect,community,COMMUNITY,planned,planned
-COMM-004-Community-Outreach-Nonprofit,Community Outreach Nonprofit,community,COMMUNITY,planned,planned
-COMM-005-Ace-Food-Security-AI,Ace Food Security Ai,community,COMMUNITY,planned,planned
-COMM-006-Community-Technology-Access-AI,Community Technology Access Ai,community,COMMUNITY,planned,planned
-COMM-007-Youth-Leadership-AI,Youth Leadership Ai,community,COMMUNITY,planned,planned
-COMM-008-Community-Fundraising-AI,Community Fundraising Ai,community,COMMUNITY,planned,planned
-COMM-009-Volunteer-Hub-AI,Volunteer Hub Ai,community,COMMUNITY,planned,planned
-COMM-010-Disaster-Relief-AI,Disaster Relief Ai,community,COMMUNITY,planned,planned
-COMM-011-Indigenous-Creator-Hub,Indigenous Creator Hub,community,COMMUNITY,planned,planned
-COMM-012-Black-Art-Museum-AI,Black Art Museum Ai,community,COMMUNITY,planned,planned
-COMM-013-Women-s-Empowerment-Network,Women S Empowerment Network,community,COMMUNITY,planned,planned
-COMM-014-Veterans-Support-AI,Veterans Support Ai,community,COMMUNITY,planned,planned
-COMM-015-Youth-Mentorship-Program,Youth Mentorship Program,community,COMMUNITY,planned,planned
-COMM-016-Community-Health-AI,Community Health Ai,community,COMMUNITY,planned,planned
-COMM-017-Local-Business-Directory,Local Business Directory,community,COMMUNITY,planned,planned
-COMM-018-Neighborhood-Watch-AI,Neighborhood Watch Ai,community,COMMUNITY,planned,planned
-COMM-019-Community-Garden-AI,Community Garden Ai,community,COMMUNITY,planned,planned
-COMM-020-Public-Transportation-AI,Public Transportation Ai,community,COMMUNITY,planned,planned
-COMM-021-Housing-Assistance-AI,Housing Assistance Ai,community,COMMUNITY,planned,planned
-COMM-022-Job-Training-Center,Job Training Center,community,COMMUNITY,planned,planned
-COMM-023-Elder-Companion-AI,Elder Companion Ai,community,COMMUNITY,planned,planned
-COMM-024-Youth-Sports-AI,Youth Sports Ai,community,COMMUNITY,planned,planned
-COMM-025-Community-Legal-Aid,Community Legal Aid,community,COMMUNITY,planned,planned
-COMM-026-Public-Education-AI,Public Education Ai,community,COMMUNITY,planned,planned
-COMM-027-Local-Government-AI,Local Government Ai,community,COMMUNITY,planned,planned
-COMM-028-Public-Safety-AI,Public Safety Ai,community,COMMUNITY,planned,planned
-COMM-029-Community-Wellness-AI,Community Wellness Ai,community,COMMUNITY,planned,planned
-COMM-030-Cultural-Exchange-AI,Cultural Exchange Ai,community,COMMUNITY,planned,planned
-COMM-031-Community-Investment-AI,Community Investment Ai,community,COMMUNITY,planned,planned
-COMM-032-Public-Health-AI,Public Health Ai,community,COMMUNITY,planned,planned
-COMM-033-Youth-Innovation-Hub,Youth Innovation Hub,community,COMMUNITY,planned,planned
-COMM-034-Senior-Tech-Support,Senior Tech Support,community,COMMUNITY,planned,planned
-COMM-035-Community-Arts-AI,Community Arts Ai,community,COMMUNITY,planned,planned
-COMM-036-Public-Infrastructure-AI,Public Infrastructure Ai,community,COMMUNITY,planned,planned
-COMM-037-Neighborhood-Development-AI,Neighborhood Development Ai,community,COMMUNITY,planned,planned
-COMM-038-Community-Policing-AI,Community Policing Ai,community,COMMUNITY,planned,planned
-COMM-039-Public-Space-AI,Public Space Ai,community,COMMUNITY,planned,planned
-COMM-040-Community-Recycling-AI,Community Recycling Ai,community,COMMUNITY,planned,planned
-COMM-041-Public-Wi-Fi-AI,Public Wi Fi Ai,community,COMMUNITY,planned,planned
-COMM-042-Community-Energy-AI,Community Energy Ai,community,COMMUNITY,planned,planned
-COMM-043-Local-Food-Network-AI,Local Food Network Ai,community,COMMUNITY,planned,planned
-COMM-044-Community-Volunteering-AI,Community Volunteering Ai,community,COMMUNITY,planned,planned
-COMM-045-Public-Childcare-AI,Public Childcare Ai,community,COMMUNITY,planned,planned
-COMM-046-Community-Pet-Care-AI,Community Pet Care Ai,community,COMMUNITY,planned,planned
-COMM-047-Public-Fitness-AI,Public Fitness Ai,community,COMMUNITY,planned,planned
-COMM-048-Community-Transportation-AI,Community Transportation Ai,community,COMMUNITY,planned,planned
-COMM-049-Public-Event-AI,Public Event Ai,community,COMMUNITY,planned,planned
-COMM-050-Community-Cultural-AI,Community Cultural Ai,community,COMMUNITY,planned,planned
-EM-001-Space-Habitat-AI,Space Habitat Ai,emerging,EMERGING,planned,planned
-EM-002-Fusion-Energy-AI,Fusion Energy Ai,emerging,EMERGING,planned,planned
-EM-003-Teleportation-Research-AI,Teleportation Research Ai,emerging,EMERGING,planned,planned
-EM-004-Climate-Solutions-AI,Climate Solutions Ai,emerging,EMERGING,planned,planned
-EM-005-Holographic-Events-AI,Holographic Events Ai,emerging,EMERGING,planned,planned
-EM-006-Neurofeedback-AI,Neurofeedback Ai,emerging,EMERGING,planned,planned
-EM-007-Autonomous-Delivery-AI,Autonomous Delivery Ai,emerging,EMERGING,planned,planned
-EM-008-Gene-Editing-AI,Gene Editing Ai,emerging,EMERGING,planned,planned
-EM-009-Space-Tourism-AI,Space Tourism Ai,emerging,EMERGING,planned,planned
-EM-010-Wearables-AI,Wearables Ai,emerging,EMERGING,planned,planned
-EM-011-Metaverse-Hub-AI,Metaverse Hub Ai,emerging,EMERGING,planned,planned
-EM-012-Energy-Grid-AI,Energy Grid Ai,emerging,EMERGING,planned,planned
-EM-013-Brain-Computer-Interface,Brain Computer Interface,emerging,EMERGING,planned,planned
-EM-014-Ocean-Cleanup-AI,Ocean Cleanup Ai,emerging,EMERGING,planned,planned
-EM-015-Crypto-Trading-AI,Crypto Trading Ai,emerging,EMERGING,planned,planned
-EM-016-Synthetic-Media-AI,Synthetic Media Ai,emerging,EMERGING,planned,planned
-EM-017-Space-Mining-AI,Space Mining Ai,emerging,EMERGING,planned,planned
-EM-018-VR-Therapy-AI,Vr Therapy Ai,emerging,EMERGING,planned,planned
-EM-019-Weather-Prediction-AI,Weather Prediction Ai,emerging,EMERGING,planned,planned
-EM-020-Autonomous-Farming-AI,Autonomous Farming Ai,emerging,EMERGING,planned,planned
-EM-021-Traffic-Optimizer-AI,Traffic Optimizer Ai,emerging,EMERGING,planned,planned
-EM-022-Smart-Grid-AI,Smart Grid Ai,emerging,EMERGING,planned,planned
-EM-023-Disaster-Prediction-AI,Disaster Prediction Ai,emerging,EMERGING,planned,planned
-EM-024-Nanotech-AI,Nanotech Ai,emerging,EMERGING,planned,planned
-EM-025-Personalized-Medicine-AI,Personalized Medicine Ai,emerging,EMERGING,planned,planned
-EM-026-AI-Diagnostic-Lab,Ai Diagnostic Lab,emerging,EMERGING,planned,planned
-EM-027-Sustainable-Cities-AI,Sustainable Cities Ai,emerging,EMERGING,planned,planned
-EM-028-Renewable-Energy-AI,Renewable Energy Ai,emerging,EMERGING,planned,planned
-EM-029-Climate-Modeling-AI,Climate Modeling Ai,emerging,EMERGING,planned,planned
-EM-030-Policy-Advisor-AI,Policy Advisor Ai,emerging,EMERGING,planned,planned
-EM-031-Governance-Hub-AI,Governance Hub Ai,emerging,EMERGING,planned,planned
-EM-032-Global-Challenges-AI,Global Challenges Ai,emerging,EMERGING,planned,planned
-EM-033-Space-Exploration-AI,Space Exploration Ai,emerging,EMERGING,planned,planned
-EM-034-Education-Equity-AI,Education Equity Ai,emerging,EMERGING,planned,planned
-EM-035-Health-Equity-AI,Health Equity Ai,emerging,EMERGING,planned,planned
-EM-036-Economic-Equity-AI,Economic Equity Ai,emerging,EMERGING,planned,planned
-EM-037-Environmental-Justice-AI,Environmental Justice Ai,emerging,EMERGING,planned,planned
-EM-038-Human-Rights-AI,Human Rights Ai,emerging,EMERGING,planned,planned
-EM-039-Peacebuilding-AI,Peacebuilding Ai,emerging,EMERGING,planned,planned
-EM-040-Telemedicine-AI,Telemedicine Ai,emerging,EMERGING,planned,planned
-EM-041-AI-Climate-Adaptation,Ai Climate Adaptation,emerging,EMERGING,planned,planned
-EM-042-Space-Agriculture-AI,Space Agriculture Ai,emerging,EMERGING,planned,planned
-EM-043-Quantum-Communication-AI,Quantum Communication Ai,emerging,EMERGING,planned,planned
-EM-044-Robotics-Surgery-AI,Robotics Surgery Ai,emerging,EMERGING,planned,planned
-EM-045-AI-Disaster-Response,Ai Disaster Response,emerging,EMERGING,planned,planned
-EM-046-Smart-City-Governance,Smart City Governance,emerging,EMERGING,planned,planned
-EM-047-AI-Environmental-Monitoring,Ai Environmental Monitoring,emerging,EMERGING,planned,planned
-EM-048-Space-Manufacturing-AI,Space Manufacturing Ai,emerging,EMERGING,planned,planned
-EM-049-AI-Ocean-Exploration,Ai Ocean Exploration,emerging,EMERGING,planned,planned
-EM-050-AI-Archaeology,Ai Archaeology,emerging,EMERGING,planned,planned
-SPEC-001-AI-Auction-House,Ai Auction House,specialized,SPECIALIZED,planned,planned
-SPEC-002-Smart-Marina-Management,Smart Marina Management,specialized,SPECIALIZED,planned,planned
-SPEC-003-AI-Surf-Report,Ai Surf Report,specialized,SPECIALIZED,planned,planned
-SPEC-004-Private-Chef-AI,Private Chef Ai,specialized,SPECIALIZED,planned,planned
-SPEC-005-Virtual-Concierge-AI,Virtual Concierge Ai,specialized,SPECIALIZED,planned,planned
-SPEC-006-Smart-Parking-AI,Smart Parking Ai,specialized,SPECIALIZED,planned,planned
-SPEC-007-AI-Interior-Design,Ai Interior Design,specialized,SPECIALIZED,planned,planned
-SPEC-008-Personal-Stylist-AI,Personal Stylist Ai,specialized,SPECIALIZED,planned,planned
-SPEC-009-Smart-Locker-System,Smart Locker System,specialized,SPECIALIZED,planned,planned
-SPEC-010-AI-Fitness-Coach,Ai Fitness Coach,specialized,SPECIALIZED,planned,planned
-SPEC-011-Smart-Golf-Caddie,Smart Golf Caddie,specialized,SPECIALIZED,planned,planned
-SPEC-012-AI-Nutritionist,Ai Nutritionist,specialized,SPECIALIZED,planned,planned
-SPEC-013-Smart-Hotel-Butler,Smart Hotel Butler,specialized,SPECIALIZED,planned,planned
-SPEC-014-AI-Language-Tutor,Ai Language Tutor,specialized,SPECIALIZED,planned,planned
-SPEC-015-Smart-Transportation-AI,Smart Transportation Ai,specialized,SPECIALIZED,planned,planned
-SPEC-016-AI-Travel-Planner,Ai Travel Planner,specialized,SPECIALIZED,planned,planned
-SPEC-017-Smart-Agriculture-AI,Smart Agriculture Ai,specialized,SPECIALIZED,planned,planned
-SPEC-018-AI-Personal-Shopper,Ai Personal Shopper,specialized,SPECIALIZED,planned,planned
-SPEC-019-Smart-Home-Security,Smart Home Security,specialized,SPECIALIZED,planned,planned
-SPEC-020-AI-Music-Producer,Ai Music Producer,specialized,SPECIALIZED,planned,planned
-SPEC-021-Smart-Restaurant-AI,Smart Restaurant Ai,specialized,SPECIALIZED,planned,planned
-SPEC-022-AI-Movie-Critic,Ai Movie Critic,specialized,SPECIALIZED,planned,planned
-SPEC-023-Smart-Museum-Guide,Smart Museum Guide,specialized,SPECIALIZED,planned,planned
-SPEC-024-AI-Sports-Analyst,Ai Sports Analyst,specialized,SPECIALIZED,planned,planned
-SPEC-025-Smart-Library-AI,Smart Library Ai,specialized,SPECIALIZED,planned,planned
-SPEC-026-AI-Art-Curator,Ai Art Curator,specialized,SPECIALIZED,planned,planned
-SPEC-027-Smart-Fitness-AI,Smart Fitness Ai,specialized,SPECIALIZED,planned,planned
-SPEC-028-AI-Poetry-Generator,Ai Poetry Generator,specialized,SPECIALIZED,planned,planned
-SPEC-029-Smart-Dating-AI,Smart Dating Ai,specialized,SPECIALIZED,planned,planned
-SPEC-030-AI-Journalism-Tool,Ai Journalism Tool,specialized,SPECIALIZED,planned,planned
-SPEC-031-Smart-Legal-AI,Smart Legal Ai,specialized,SPECIALIZED,planned,planned
-SPEC-032-AI-Game-Designer,Ai Game Designer,specialized,SPECIALIZED,growth,active
-SPEC-033-Smart-Real-Estate-AI,Smart Real Estate Ai,specialized,SPECIALIZED,planned,planned
-SPEC-034-AI-Cooking-Assistant,Ai Cooking Assistant,specialized,SPECIALIZED,planned,planned
-SPEC-035-Smart-Health-AI,Smart Health Ai,specialized,SPECIALIZED,planned,planned
-SPEC-036-AI-Photography-Tool,Ai Photography Tool,specialized,SPECIALIZED,planned,planned
-SPEC-037-Smart-Writing-AI,Smart Writing Ai,specialized,SPECIALIZED,planned,planned
-SPEC-038-AI-Comedy-Writer,Ai Comedy Writer,specialized,SPECIALIZED,planned,planned
-SPEC-039-Smart-Meditation-AI,Smart Meditation Ai,specialized,SPECIALIZED,planned,planned
-SPEC-040-AI-Debate-Coach,Ai Debate Coach,specialized,SPECIALIZED,planned,planned
-SPEC-041-Smart-Parenting-AI,Smart Parenting Ai,specialized,SPECIALIZED,planned,planned
-SPEC-042-AI-Financial-Advisor,Ai Financial Advisor,specialized,SPECIALIZED,planned,planned
-SPEC-043-Smart-Automotive-AI,Smart Automotive Ai,specialized,SPECIALIZED,planned,planned
-SPEC-044-AI-Aviation-Planner,Ai Aviation Planner,specialized,SPECIALIZED,planned,planned
-SPEC-045-Smart-Maritime-AI,Smart Maritime Ai,specialized,SPECIALIZED,planned,planned
-SPEC-046-AI-Weather-Forecast,Ai Weather Forecast,specialized,SPECIALIZED,planned,planned
-SPEC-047-Smart-Energy-AI,Smart Energy Ai,specialized,SPECIALIZED,planned,planned
-SPEC-048-AI-Sports-Coach,Ai Sports Coach,specialized,SPECIALIZED,planned,planned
-SPEC-049-Smart-Education-AI,Smart Education Ai,specialized,SPECIALIZED,planned,planned
-SPEC-050-AI-Language-Translator,Ai Language Translator,specialized,SPECIALIZED,planned,planned
+COMM-001-Luminary-Worldwide-Events,Luminary Worldwide Events,operations,OPERATIONS,planned,planned
+COMM-002-Brotherhood-Coaching-Network,Brotherhood Coaching Network,operations,OPERATIONS,planned,planned
+COMM-003-Ace-Senior-Care-Connect,Ace Senior Care Connect,operations,OPERATIONS,planned,planned
+COMM-004-Community-Outreach-Nonprofit,Community Outreach Nonprofit,operations,OPERATIONS,planned,planned
+COMM-005-Ace-Food-Security-AI,Ace Food Security Ai,operations,OPERATIONS,planned,planned
+COMM-006-Community-Technology-Access-AI,Community Technology Access Ai,operations,OPERATIONS,planned,planned
+COMM-007-Youth-Leadership-AI,Youth Leadership Ai,operations,OPERATIONS,planned,planned
+COMM-008-Community-Fundraising-AI,Community Fundraising Ai,operations,OPERATIONS,planned,planned
+COMM-009-Volunteer-Hub-AI,Volunteer Hub Ai,operations,OPERATIONS,planned,planned
+COMM-010-Disaster-Relief-AI,Disaster Relief Ai,operations,OPERATIONS,planned,planned
+COMM-011-Indigenous-Creator-Hub,Indigenous Creator Hub,operations,OPERATIONS,planned,planned
+COMM-012-Black-Art-Museum-AI,Black Art Museum Ai,operations,OPERATIONS,planned,planned
+COMM-013-Women-s-Empowerment-Network,Women S Empowerment Network,operations,OPERATIONS,planned,planned
+COMM-014-Veterans-Support-AI,Veterans Support Ai,operations,OPERATIONS,planned,planned
+COMM-015-Youth-Mentorship-Program,Youth Mentorship Program,operations,OPERATIONS,planned,planned
+COMM-016-Community-Health-AI,Community Health Ai,operations,OPERATIONS,planned,planned
+COMM-017-Local-Business-Directory,Local Business Directory,operations,OPERATIONS,planned,planned
+COMM-018-Neighborhood-Watch-AI,Neighborhood Watch Ai,operations,OPERATIONS,planned,planned
+COMM-019-Community-Garden-AI,Community Garden Ai,operations,OPERATIONS,planned,planned
+COMM-020-Public-Transportation-AI,Public Transportation Ai,operations,OPERATIONS,planned,planned
+COMM-021-Housing-Assistance-AI,Housing Assistance Ai,operations,OPERATIONS,planned,planned
+COMM-022-Job-Training-Center,Job Training Center,operations,OPERATIONS,planned,planned
+COMM-023-Elder-Companion-AI,Elder Companion Ai,operations,OPERATIONS,planned,planned
+COMM-024-Youth-Sports-AI,Youth Sports Ai,operations,OPERATIONS,planned,planned
+COMM-025-Community-Legal-Aid,Community Legal Aid,operations,OPERATIONS,planned,planned
+COMM-026-Public-Education-AI,Public Education Ai,operations,OPERATIONS,planned,planned
+COMM-027-Local-Government-AI,Local Government Ai,operations,OPERATIONS,planned,planned
+COMM-028-Public-Safety-AI,Public Safety Ai,operations,OPERATIONS,planned,planned
+COMM-029-Community-Wellness-AI,Community Wellness Ai,operations,OPERATIONS,planned,planned
+COMM-030-Cultural-Exchange-AI,Cultural Exchange Ai,operations,OPERATIONS,planned,planned
+COMM-031-Community-Investment-AI,Community Investment Ai,operations,OPERATIONS,planned,planned
+COMM-032-Public-Health-AI,Public Health Ai,operations,OPERATIONS,planned,planned
+COMM-033-Youth-Innovation-Hub,Youth Innovation Hub,operations,OPERATIONS,planned,planned
+COMM-034-Senior-Tech-Support,Senior Tech Support,operations,OPERATIONS,planned,planned
+COMM-035-Community-Arts-AI,Community Arts Ai,operations,OPERATIONS,planned,planned
+COMM-036-Public-Infrastructure-AI,Public Infrastructure Ai,operations,OPERATIONS,planned,planned
+COMM-037-Neighborhood-Development-AI,Neighborhood Development Ai,operations,OPERATIONS,planned,planned
+COMM-038-Community-Policing-AI,Community Policing Ai,operations,OPERATIONS,planned,planned
+COMM-039-Public-Space-AI,Public Space Ai,operations,OPERATIONS,planned,planned
+COMM-040-Community-Recycling-AI,Community Recycling Ai,operations,OPERATIONS,planned,planned
+COMM-041-Public-Wi-Fi-AI,Public Wi Fi Ai,operations,OPERATIONS,planned,planned
+COMM-042-Community-Energy-AI,Community Energy Ai,operations,OPERATIONS,planned,planned
+COMM-043-Local-Food-Network-AI,Local Food Network Ai,operations,OPERATIONS,planned,planned
+COMM-044-Community-Volunteering-AI,Community Volunteering Ai,operations,OPERATIONS,planned,planned
+COMM-045-Public-Childcare-AI,Public Childcare Ai,operations,OPERATIONS,planned,planned
+COMM-046-Community-Pet-Care-AI,Community Pet Care Ai,operations,OPERATIONS,planned,planned
+COMM-047-Public-Fitness-AI,Public Fitness Ai,operations,OPERATIONS,planned,planned
+COMM-048-Community-Transportation-AI,Community Transportation Ai,operations,OPERATIONS,planned,planned
+COMM-049-Public-Event-AI,Public Event Ai,operations,OPERATIONS,planned,planned
+COMM-050-Community-Cultural-AI,Community Cultural Ai,operations,OPERATIONS,planned,planned
+EM-001-Space-Habitat-AI,Space Habitat Ai,investment,INVESTMENT,planned,planned
+EM-002-Fusion-Energy-AI,Fusion Energy Ai,investment,INVESTMENT,planned,planned
+EM-003-Teleportation-Research-AI,Teleportation Research Ai,investment,INVESTMENT,planned,planned
+EM-004-Climate-Solutions-AI,Climate Solutions Ai,investment,INVESTMENT,planned,planned
+EM-005-Holographic-Events-AI,Holographic Events Ai,investment,INVESTMENT,planned,planned
+EM-006-Neurofeedback-AI,Neurofeedback Ai,investment,INVESTMENT,planned,planned
+EM-007-Autonomous-Delivery-AI,Autonomous Delivery Ai,investment,INVESTMENT,planned,planned
+EM-008-Gene-Editing-AI,Gene Editing Ai,investment,INVESTMENT,planned,planned
+EM-009-Space-Tourism-AI,Space Tourism Ai,investment,INVESTMENT,planned,planned
+EM-010-Wearables-AI,Wearables Ai,investment,INVESTMENT,planned,planned
+EM-011-Metaverse-Hub-AI,Metaverse Hub Ai,investment,INVESTMENT,planned,planned
+EM-012-Energy-Grid-AI,Energy Grid Ai,investment,INVESTMENT,planned,planned
+EM-013-Brain-Computer-Interface,Brain Computer Interface,investment,INVESTMENT,planned,planned
+EM-014-Ocean-Cleanup-AI,Ocean Cleanup Ai,investment,INVESTMENT,planned,planned
+EM-015-Crypto-Trading-AI,Crypto Trading Ai,investment,INVESTMENT,planned,planned
+EM-016-Synthetic-Media-AI,Synthetic Media Ai,investment,INVESTMENT,planned,planned
+EM-017-Space-Mining-AI,Space Mining Ai,investment,INVESTMENT,planned,planned
+EM-018-VR-Therapy-AI,Vr Therapy Ai,investment,INVESTMENT,planned,planned
+EM-019-Weather-Prediction-AI,Weather Prediction Ai,investment,INVESTMENT,planned,planned
+EM-020-Autonomous-Farming-AI,Autonomous Farming Ai,investment,INVESTMENT,planned,planned
+EM-021-Traffic-Optimizer-AI,Traffic Optimizer Ai,investment,INVESTMENT,planned,planned
+EM-022-Smart-Grid-AI,Smart Grid Ai,investment,INVESTMENT,planned,planned
+EM-023-Disaster-Prediction-AI,Disaster Prediction Ai,investment,INVESTMENT,planned,planned
+EM-024-Nanotech-AI,Nanotech Ai,investment,INVESTMENT,planned,planned
+EM-025-Personalized-Medicine-AI,Personalized Medicine Ai,investment,INVESTMENT,planned,planned
+EM-026-AI-Diagnostic-Lab,Ai Diagnostic Lab,investment,INVESTMENT,planned,planned
+EM-027-Sustainable-Cities-AI,Sustainable Cities Ai,investment,INVESTMENT,planned,planned
+EM-028-Renewable-Energy-AI,Renewable Energy Ai,investment,INVESTMENT,planned,planned
+EM-029-Climate-Modeling-AI,Climate Modeling Ai,investment,INVESTMENT,planned,planned
+EM-030-Policy-Advisor-AI,Policy Advisor Ai,investment,INVESTMENT,planned,planned
+EM-031-Governance-Hub-AI,Governance Hub Ai,investment,INVESTMENT,planned,planned
+EM-032-Global-Challenges-AI,Global Challenges Ai,investment,INVESTMENT,planned,planned
+EM-033-Space-Exploration-AI,Space Exploration Ai,investment,INVESTMENT,planned,planned
+EM-034-Education-Equity-AI,Education Equity Ai,investment,INVESTMENT,planned,planned
+EM-035-Health-Equity-AI,Health Equity Ai,investment,INVESTMENT,planned,planned
+EM-036-Economic-Equity-AI,Economic Equity Ai,investment,INVESTMENT,planned,planned
+EM-037-Environmental-Justice-AI,Environmental Justice Ai,investment,INVESTMENT,planned,planned
+EM-038-Human-Rights-AI,Human Rights Ai,investment,INVESTMENT,planned,planned
+EM-039-Peacebuilding-AI,Peacebuilding Ai,investment,INVESTMENT,planned,planned
+EM-040-Telemedicine-AI,Telemedicine Ai,investment,INVESTMENT,planned,planned
+EM-041-AI-Climate-Adaptation,Ai Climate Adaptation,investment,INVESTMENT,planned,planned
+EM-042-Space-Agriculture-AI,Space Agriculture Ai,investment,INVESTMENT,planned,planned
+EM-043-Quantum-Communication-AI,Quantum Communication Ai,investment,INVESTMENT,planned,planned
+EM-044-Robotics-Surgery-AI,Robotics Surgery Ai,investment,INVESTMENT,planned,planned
+EM-045-AI-Disaster-Response,Ai Disaster Response,investment,INVESTMENT,planned,planned
+EM-046-Smart-City-Governance,Smart City Governance,investment,INVESTMENT,planned,planned
+EM-047-AI-Environmental-Monitoring,Ai Environmental Monitoring,investment,INVESTMENT,planned,planned
+EM-048-Space-Manufacturing-AI,Space Manufacturing Ai,investment,INVESTMENT,planned,planned
+EM-049-AI-Ocean-Exploration,Ai Ocean Exploration,investment,INVESTMENT,planned,planned
+EM-050-AI-Archaeology,Ai Archaeology,investment,INVESTMENT,planned,planned
+SPEC-001-AI-Auction-House,Ai Auction House,investment,INVESTMENT,planned,planned
+SPEC-002-Smart-Marina-Management,Smart Marina Management,investment,INVESTMENT,planned,planned
+SPEC-003-AI-Surf-Report,Ai Surf Report,investment,INVESTMENT,planned,planned
+SPEC-004-Private-Chef-AI,Private Chef Ai,investment,INVESTMENT,planned,planned
+SPEC-005-Virtual-Concierge-AI,Virtual Concierge Ai,investment,INVESTMENT,planned,planned
+SPEC-006-Smart-Parking-AI,Smart Parking Ai,investment,INVESTMENT,planned,planned
+SPEC-007-AI-Interior-Design,Ai Interior Design,investment,INVESTMENT,planned,planned
+SPEC-008-Personal-Stylist-AI,Personal Stylist Ai,investment,INVESTMENT,planned,planned
+SPEC-009-Smart-Locker-System,Smart Locker System,investment,INVESTMENT,planned,planned
+SPEC-010-AI-Fitness-Coach,Ai Fitness Coach,investment,INVESTMENT,planned,planned
+SPEC-011-Smart-Golf-Caddie,Smart Golf Caddie,investment,INVESTMENT,planned,planned
+SPEC-012-AI-Nutritionist,Ai Nutritionist,investment,INVESTMENT,planned,planned
+SPEC-013-Smart-Hotel-Butler,Smart Hotel Butler,investment,INVESTMENT,planned,planned
+SPEC-014-AI-Language-Tutor,Ai Language Tutor,investment,INVESTMENT,planned,planned
+SPEC-015-Smart-Transportation-AI,Smart Transportation Ai,investment,INVESTMENT,planned,planned
+SPEC-016-AI-Travel-Planner,Ai Travel Planner,investment,INVESTMENT,planned,planned
+SPEC-017-Smart-Agriculture-AI,Smart Agriculture Ai,investment,INVESTMENT,planned,planned
+SPEC-018-AI-Personal-Shopper,Ai Personal Shopper,investment,INVESTMENT,planned,planned
+SPEC-019-Smart-Home-Security,Smart Home Security,investment,INVESTMENT,planned,planned
+SPEC-020-AI-Music-Producer,Ai Music Producer,investment,INVESTMENT,planned,planned
+SPEC-021-Smart-Restaurant-AI,Smart Restaurant Ai,investment,INVESTMENT,planned,planned
+SPEC-022-AI-Movie-Critic,Ai Movie Critic,investment,INVESTMENT,planned,planned
+SPEC-023-Smart-Museum-Guide,Smart Museum Guide,investment,INVESTMENT,planned,planned
+SPEC-024-AI-Sports-Analyst,Ai Sports Analyst,investment,INVESTMENT,planned,planned
+SPEC-025-Smart-Library-AI,Smart Library Ai,investment,INVESTMENT,planned,planned
+SPEC-026-AI-Art-Curator,Ai Art Curator,investment,INVESTMENT,planned,planned
+SPEC-027-Smart-Fitness-AI,Smart Fitness Ai,investment,INVESTMENT,planned,planned
+SPEC-028-AI-Poetry-Generator,Ai Poetry Generator,investment,INVESTMENT,planned,planned
+SPEC-029-Smart-Dating-AI,Smart Dating Ai,investment,INVESTMENT,planned,planned
+SPEC-030-AI-Journalism-Tool,Ai Journalism Tool,investment,INVESTMENT,planned,planned
+SPEC-031-Smart-Legal-AI,Smart Legal Ai,investment,INVESTMENT,planned,planned
+SPEC-032-AI-Game-Designer,Ai Game Designer,investment,INVESTMENT,growth,active
+SPEC-033-Smart-Real-Estate-AI,Smart Real Estate Ai,investment,INVESTMENT,planned,planned
+SPEC-034-AI-Cooking-Assistant,Ai Cooking Assistant,investment,INVESTMENT,planned,planned
+SPEC-035-Smart-Health-AI,Smart Health Ai,investment,INVESTMENT,planned,planned
+SPEC-036-AI-Photography-Tool,Ai Photography Tool,investment,INVESTMENT,planned,planned
+SPEC-037-Smart-Writing-AI,Smart Writing Ai,investment,INVESTMENT,planned,planned
+SPEC-038-AI-Comedy-Writer,Ai Comedy Writer,investment,INVESTMENT,planned,planned
+SPEC-039-Smart-Meditation-AI,Smart Meditation Ai,investment,INVESTMENT,planned,planned
+SPEC-040-AI-Debate-Coach,Ai Debate Coach,investment,INVESTMENT,planned,planned
+SPEC-041-Smart-Parenting-AI,Smart Parenting Ai,investment,INVESTMENT,planned,planned
+SPEC-042-AI-Financial-Advisor,Ai Financial Advisor,investment,INVESTMENT,planned,planned
+SPEC-043-Smart-Automotive-AI,Smart Automotive Ai,investment,INVESTMENT,planned,planned
+SPEC-044-AI-Aviation-Planner,Ai Aviation Planner,investment,INVESTMENT,planned,planned
+SPEC-045-Smart-Maritime-AI,Smart Maritime Ai,investment,INVESTMENT,planned,planned
+SPEC-046-AI-Weather-Forecast,Ai Weather Forecast,investment,INVESTMENT,planned,planned
+SPEC-047-Smart-Energy-AI,Smart Energy Ai,investment,INVESTMENT,planned,planned
+SPEC-048-AI-Sports-Coach,Ai Sports Coach,investment,INVESTMENT,planned,planned
+SPEC-049-Smart-Education-AI,Smart Education Ai,investment,INVESTMENT,planned,planned
+SPEC-050-AI-Language-Translator,Ai Language Translator,investment,INVESTMENT,planned,planned
 FI-dist,Dist,financial,FINANCIAL,planned,planned
 FI-node_modules,Node_Modules,financial,FINANCIAL,planned,planned
 FI-public,Public,financial,FINANCIAL,planned,planned
@@ -708,10 +708,15 @@ CON-019-WINDOW-INSTALLATION,Window Installation,construction,CONSTRUCTION,planne
 CON-020-INSULATION-SERVICES,Insulation Services,construction,CONSTRUCTION,planned,planned
 RE-001-PROPERTY-HOLDINGS,Property Holdings,real-estate,REAL-ESTATE,planned,planned
 OPS-001-VENTURE-STAFFING,Venture Staffing Operations,operations,OPERATIONS,mvp,development
-PROFILE-001-DIVINE-JOHNS-PORTFOLIO,Divine Johns Portfolio,media-content,MEDIA-CONTENT,mvp,development
-ET-010-PERSONAL-RESUME,Personal Resume,education-training,EDUCATION-TRAINING,mvp,development
+PROFILE-001-DIVINE-JOHNS-PORTFOLIO,Divine Johns Portfolio,media,MEDIA,mvp,development
+ET-010-PERSONAL-RESUME,Personal Resume,education,EDUCATION,mvp,development
 TECH-061-TECH-VENTURES-PORTFOLIO,Tech Ventures Portfolio,technology,TECHNOLOGY,mvp,development
-ET-011-Landing-Kit-Template-Demo,Landing Kit Template Demo,education-training,EDUCATION-TRAINING,planned,planned
-EC-111-Miss-Toys,Miss Toys,e-commerce,E-COMMERCE,mvp,development
-EC-112-Cosmic-Kitty,Cosmic Kitty,e-commerce,E-COMMERCE,mvp,development
+ET-011-Landing-Kit-Template-Demo,Landing Kit Template Demo,education,EDUCATION,planned,planned
+EC-111-Miss-Toys,Miss Toys,marketplace,MARKETPLACE,mvp,development
+EC-112-Cosmic-Kitty,Cosmic Kitty,marketplace,MARKETPLACE,mvp,development
 TECH-062-IZA-OS,IZA OS,technology,TECHNOLOGY,mvp,development
+CLE-001,Miami Cleaners,operations,OPERATIONS,planned,planned
+WAS-001,Tampa Carwash,operations,OPERATIONS,planned,planned
+TEC-063,Cyber Shield,technology,TECHNOLOGY,planned,planned
+OPE-001,Orlando Landscaping,operations,OPERATIONS,planned,planned
+OPE-002,Miami Valet,operations,OPERATIONS,planned,planned

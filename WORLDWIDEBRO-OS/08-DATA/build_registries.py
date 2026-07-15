@@ -89,11 +89,46 @@ stats["ventures.csv"] = write(
     [[v["venture_id"], v["name"], v["sector"], norm_sector(v["sector"]),
       v.get("stage", ""), v.get("status", "")] for v in ventures if v.get("venture_id")])
 
-# --- Entity: repositories ---
+# --- Filesystem truth: scan local git clones (the "wire" to product repos) ---
+clones = scan_local_repos(OS_ROOT)
+name_to_clone = {}          # norm_name -> (rel_path, remote_url)  (first wins)
+remote_to_paths = defaultdict(list)
+for nm, rel, url in clones:
+    name_to_clone.setdefault(norm_name(nm), (rel, url))
+    if url:
+        remote_to_paths[url].append(rel)
+
+# repo_clones.csv = authoritative inventory of every local clone
+stats["repo_clones.csv"] = write(
+    "repo_clones.csv", ["repo_name", "local_path", "remote_url"],
+    sorted([[nm, rel, url] for nm, rel, url in clones]))
+
+# repo_duplicates.csv = same remote cloned to >1 location (cleanup targets)
+dupes = [[url, str(len(p)), " | ".join(sorted(p))]
+         for url, p in remote_to_paths.items() if len(p) > 1]
+stats["repo_duplicates.csv"] = write(
+    "repo_duplicates.csv", ["remote_url", "clone_count", "local_paths"], sorted(dupes))
+
+# --- Entity: repositories (registry-of-record + remote_url/local_path wire) ---
+matched = 0
+repo_rows = []
+for r in repos:
+    if not r.get("repo_name"):
+        continue
+    rel, url = name_to_clone.get(norm_name(r["repo_name"]), ("", ""))
+    if rel:
+        matched += 1
+    repo_rows.append([r["repo_name"], r.get("venture_id", ""), r.get("sector", ""),
+                      r.get("status", ""), r.get("health_score", ""), url, rel])
+# local clones not present in the registry -> append so the wire is complete
+registry_names = {norm_name(r.get("repo_name", "")) for r in repos}
+for nm, rel, url in clones:
+    if norm_name(nm) not in registry_names:
+        repo_rows.append([nm, "", "", "local_clone", "", url, rel])
 stats["repositories.csv"] = write(
-    "repositories.csv", ["repo_name", "venture_id", "sector", "status", "health_score"],
-    [[r["repo_name"], r.get("venture_id", ""), r.get("sector", ""),
-      r.get("status", ""), r.get("health_score", "")] for r in repos if r.get("repo_name")])
+    "repositories.csv",
+    ["repo_name", "venture_id", "sector", "status", "health_score", "remote_url", "local_path"],
+    repo_rows)
 
 # --- Entity: opcos (distinct sectors) ---
 sectors = defaultdict(int)

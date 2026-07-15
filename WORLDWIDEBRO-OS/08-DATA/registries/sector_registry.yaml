@@ -1,0 +1,102 @@
+# IZA OS Sector Registry
+# Details default configurations and agent assignments per OpCo.
+
+sectors:
+  - name: ecommerce
+    label: "E-Commerce"
+    required_capabilities:
+      - storefront
+      - payments
+      - inventory
+      - authentication
+      - forms
+    agents:
+      - role: CEO
+        name: "Ecom CEO Agent"
+      - role: ProductManager
+        name: "Store Builder Agent"
+      - role: Operations
+        name: "Inventory Agent"
+      - role: Marketing
+        name: "Marketing Agent"
+
+  - name: construction
+    label: "Construction"
+    required_capabilities:
+      - construction
+      - analytics
+      - dashboard
+      - forms
+      - devtools
+    agents:
+      - role: CEO
+        name: "Construction CEO Agent"
+      - role: Estimator
+        name: "Estimator Agent"
+      - role: Bidding
+        name: "Bid Agent"
+      - role: Operations
+        name: "Project Manager Agent"
+
+  - name: financial
+    label: "Financial"
+    required_capabilities:
+      - payments
+      - analytics
+      - equity-management
+      - ocr
+      - database
+    agents:
+      - role: CEO
+        name: "Finance CEO Agent"
+      - role: CFO
+        name: "Auditor Agent"
+      - role: Analyst
+        name: "Tax Specialist Agent"
+
+  - name: technology
+    label: "Technology"
+    required_capabilities:
+      - devtools
+      - mcp
+      - database
+      - security
+      - rag
+    agents:
+      - role: CEO
+        name: "Tech CEO Agent"
+      - role: Architect
+        name: "Infrastructure Agent"
+      - role: Developer
+        name: "Codebuilder Agent"
+
+  - name: operations
+    label: "Operations"
+    required_capabilities:
+      - automation
+      - scheduling
+      - dashboard
+      - workspace
+      - crm
+    agents:
+      - role: CEO
+        name: "Ops CEO Agent"
+      - role: Orchestrator
+        name: "Task Dispatcher Agent"
+      - role: Support
+        name: "Customer Support Agent"
+
+  - name: real-estate
+    label: "Real Estate"
+    required_capabilities:
+      - storefront
+      - scheduling
+      - forms
+      - analytics
+    agents:
+      - role: CEO
+        name: "Real Estate CEO Agent"
+      - role: CFO
+        name: "Audit Agent"
+      - role: Operations
+        name: "Scheduling Agent"

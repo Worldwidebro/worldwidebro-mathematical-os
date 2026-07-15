@@ -6,7 +6,16 @@ tags: [navigation, index, orbs, system]
 
 # Worldwidebro Holdings Master Index
 
-**START HERE.** This is your entry point to the entire system.
+**START HERE.** This is your entry point to the entire system — broad, current (2026-06-19+).
+
+> **Note:** a related tactical index exists at
+> `WORLDWIDEBRO-OS/08-DATA/Influence-Venture-Business-OS/STRATEGY_LAYERS/WORLDWIDEBRO-OS/01_CEO_COMMAND_CENTER/Indexes/CEO-COMMAND-CENTER-SALES-OPS-INDEX.md`
+> (renamed 2026-07-03 from a duplicate `MASTER-INDEX.md` — it was never actually a competing
+> master index, just a same-named sales-ops file). It's older (2026-05-10, "Phase 0") and
+> narrower in scope — CEO Command Center sales/ops tooling (ClickUp setup, deal scripts, VAPI
+> calling, OSINT enrichment), not a system-wide entry point. Use this file for overall
+> navigation; use that one specifically for
+> sales-ops execution docs.
 
 ---
 

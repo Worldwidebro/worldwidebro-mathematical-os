@@ -1,0 +1,23 @@
+{
+  "source_path": "/Users/acebless/Documents/WORLDWIDEBRO-OS/07-KNOWLEDGE/research/00-MASTER-INDEX.md",
+  "type": "DOC",
+  "confidence": "high",
+  "manifest_override": true,
+  "title": "Master File Index — Worldwidebro OS",
+  "summary": "Central navigation index listing key files, folder structure, and locations across the Worldwidebro operating system.",
+  "scope": ["repo intelligence", "capability analysis", "knowledge graph", "operating system", "ventures", "system roadmap"],
+  "cross_refs": [
+    "[[sector-taxonomy-31]]",
+    "[[holding-company-100m-roadmap]]",
+    "[[unified-os-architecture]]",
+    "/Users/acebless/Documents/SYSTEM-ENHANCEMENT-ROADMAP.md",
+    "/Users/acebless/Documents/repos-classified-by-layer.json",
+    "/Users/acebless/Documents/venture-to-repos-mapping.json",
+    "/Users/acebless/Documents/capability-gap-analysis.json",
+    "/Users/acebless/Documents/KNOWLEDGE-GRAPH-DASHBOARD.md",
+    "/Users/acebless/Documents/.planning/graph-data.json"
+  ],
+  "locked": false,
+  "precedence": 3,
+  "notes": ""
+}

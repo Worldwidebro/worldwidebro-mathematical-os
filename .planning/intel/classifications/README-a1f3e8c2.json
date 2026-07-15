@@ -1,0 +1,22 @@
+{
+  "source_path": "/Users/acebless/Documents/WORLDWIDEBRO-OS/08-DATA/portfolio-reports/README.md",
+  "type": "DOC",
+  "confidence": "high",
+  "manifest_override": true,
+  "title": "Portfolio PDF Reports",
+  "summary": "Guide for a Python/reportlab tool that renders a 3-tier PDF report set for Worldwidebro Holdings from venture CSV data.",
+  "scope": ["portfolio-reports", "generate_portfolio_pdfs.py", "holdings_config.json", "VENTURES-CAPABILITIES-MAPPED.csv", "REPOSITORY-REGISTRY.json", "OPCO layer", "sector books", "venture packets"],
+  "cross_refs": [
+    "[[VENTURE-MASTER]]",
+    "[[unified-company-roadmap-2026]]",
+    "[[ORB-MASTER-CONNECTOR-2026-06-11]]",
+    "config/holdings_config.json",
+    "REPOSITORY-REGISTRY.json",
+    "VENTURES-CAPABILITIES-MAPPED.csv",
+    "MCP_REGISTRY.json",
+    "CLAUDE.md"
+  ],
+  "locked": false,
+  "precedence": 0,
+  "notes": ""
+}

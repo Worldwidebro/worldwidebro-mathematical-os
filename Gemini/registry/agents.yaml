@@ -1,0 +1,133 @@
+agents:
+  - name: CEO Agent
+    role: Executive Leadership (Chief Executive)
+    category: Executive
+    focus: Vision, strategy, venture selection, capital allocation, decision making.
+    inputs: [market data, financial metrics, venture progress report]
+    outputs: [strategic decisions, capital budgets, company priorities]
+  - name: COO Agent
+    role: Executive Operations (Chief Operating Officer)
+    category: Executive
+    focus: Standard Operating Procedure (SOP) design, process optimization, workflow tracking.
+    inputs: [blockers, department reports, executive decisions]
+    outputs: [operations schedules, standard workflow SOPs, execution lists]
+  - name: CTO Agent
+    role: Executive Technology (Chief Technology Officer)
+    category: Executive
+    focus: System architecture, tech stack standards, database setup, deployment rules.
+    inputs: [feature requirements, security mandates, code graphs]
+    outputs: [architecture guides, library standards, infrastructure plans]
+  - name: CFO Agent
+    role: Executive Finance (Chief Financial Officer)
+    category: Executive
+    focus: Financial modeling, cash flow forecasts, venture budgeting, deal valuation.
+    inputs: [revenue entries, operational cost logs, capital requests]
+    outputs: [budget allocations, balance projections, pricing calculators]
+  - name: CPO Agent
+    role: Chief Product Officer
+    category: Executive
+    focus: Product strategy, roadmap planning, user stories, feature prioritization.
+    inputs: [user feedback, competitor features, CEO directives]
+    outputs: [product roadmaps, story definitions, UX specifications]
+  - name: CMO Agent
+    role: Chief Marketing Officer
+    category: Executive
+    focus: Branding, growth loops, social media campaigns, marketing analytics.
+    inputs: [traffic logs, product releases, campaign briefs]
+    outputs: [campaign schedules, copy assets, growth funnels]
+  - name: CRO Agent
+    role: Chief Revenue Officer
+    category: Executive
+    focus: Sales operations, partner pipelines, deal valuation, client onboarding.
+    inputs: [leads list, conversion metrics, customer feedback]
+    outputs: [sales outreach scripts, partnership terms, deal logs]
+  - name: Venture Creator Agent
+    role: Venture Studio Builder
+    category: Venture Studio
+    focus: Ideation, business planning, competitor analysis, MVP specifications.
+    inputs: [raw ideas, market trend stats, competitor features]
+    outputs: [business plans, MVP feature lists, launch templates]
+  - name: Software Architect Agent
+    role: Software System Designer
+    category: Engineering
+    focus: API schemas, database indexing, hosting architecture, data flow paths.
+    inputs: [product specs, user stories, security policies]
+    outputs: [API definitions, database schemas, Dockerfile scripts]
+  - name: Frontend Engineer Agent
+    role: Interface Developer
+    category: Engineering
+    focus: React/Next.js pages, CSS variable systems, responsive tables, animations.
+    inputs: [wireframes, API schemas, design systems]
+    outputs: [JSX/TSX source code, styling rules, page routes]
+  - name: Backend Engineer Agent
+    role: Business Logic Developer
+    category: Engineering
+    focus: REST/GraphQL handlers, auth endpoints, middleware logic, SQL integrations.
+    inputs: [API schemas, DB models, authentication requirements]
+    outputs: [NodeJS/Python handlers, unit test cases, DB triggers]
+  - name: DevOps Agent
+    role: Automation & Hosting Specialist
+    category: Engineering
+    focus: Docker images, kubernetes pods, CI/CD pipeline actions, local cloud setups.
+    inputs: [codebase source, deployment locations, keys]
+    outputs: [CI/CD actions yml, docker-compose files, container images]
+  - name: QA Engineer Agent
+    role: Quality & Test Automation Specialist
+    category: Engineering
+    focus: Regression suites, unit testing verification, API schema audits, latency checks.
+    inputs: [API builds, logic functions, spec mandates]
+    outputs: [test log reports, bug descriptions, playbooks]
+  - name: AI Architect Agent
+    role: AI Agentic Orchestrator
+    category: AI Engineering
+    focus: Multi-agent setups, LangGraph pipelines, RAG routing, tool permissions.
+    inputs: [agent roles, context documents, task variables]
+    outputs: [LangGraph node charts, tool bindings, graph states]
+  - name: Prompt Engineer Agent
+    role: Prompt Optimization Specialist
+    category: AI Engineering
+    focus: System instructions, variable interpolations, promptfoo evaluations.
+    inputs: [draft instructions, LLM completions, test prompts]
+    outputs: [optimized prompts, evaluation scores, system guidelines]
+  - name: RAG Engineer Agent
+    role: Information Retrieval Specialist
+    category: AI Engineering
+    focus: Chunking, embeddings setup, vector database indexing, hybrid search.
+    inputs: [source PDFs/files, query logs, database rules]
+    outputs: [metadata chunks, vector collection schemas, query pipelines]
+  - name: Lead Generation Agent
+    role: Prospect Sourcing Specialist
+    category: Sales
+    focus: Finding businesses, scraping contact emails, qualifying target companies.
+    inputs: [industry sectors, geographic targets, company sizes]
+    outputs: [lead lists, emails, profile cards]
+  - name: Outreach Agent
+    role: Automated Engagement Assistant
+    category: Sales
+    focus: Cold outreach templates, drip campaigns, follow-up scheduler.
+    inputs: [lead lists, value props, tone directions]
+    outputs: [email drafts, outreach calendars, response logs]
+  - name: SEO Agent
+    role: Organic Search Optimization Specialist
+    category: Marketing
+    focus: Keyword research, metadata setup, link-building analysis, blog audits.
+    inputs: [blog posts, search traffic logs, competitor links]
+    outputs: [keyword maps, meta tags, rank checklists]
+  - name: Project Manager Agent
+    role: Operations & Task Coordinator
+    category: Operations
+    focus: Task board updates, timeline tracking, blocker identification.
+    inputs: [chat transcripts, git logs, developer comments]
+    outputs: [task lists, gantt timelines, blocker alerts]
+  - name: Accountant Agent
+    role: Financial Bookkeeper
+    category: Finance
+    focus: Bookkeeping entries, bank reconciliations, ledger reviews, tax filing audits.
+    inputs: [invoice receipts, statements, checkout logs]
+    outputs: [ledger journals, balance spreadsheets, audit logs]
+  - name: Compliance Agent
+    role: Regulatory & License Auditor
+    category: Legal
+    focus: License tracking, contract audits, policy checks against regulations.
+    inputs: [contract briefs, campaign manifests, local statutes]
+    outputs: [audit status logs, violation alerts, legal templates]

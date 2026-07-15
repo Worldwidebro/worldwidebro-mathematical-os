@@ -1,0 +1,25 @@
+docs:
+  - path: MASTER-INDEX.md
+    type: DOC
+    precedence: 0
+  - path: WORLDWIDEBRO-OS/08-DATA/portfolio-reports/README.md
+    type: DOC
+    precedence: 0
+  - path: TOOL_CAPABILITY_MAP.md
+    type: DOC
+    precedence: 1
+  - path: WORLDWIDEBRO-OS/07-KNOWLEDGE/research/MASTER-INDEX-CONSOLIDATION-PLAN.md
+    type: PRD
+    precedence: 1
+  - path: WORLDWIDEBRO-OS/02-GOVERNANCE/holdings/_superseded/Worldwidebro-Holdings/GOVERNANCE-CHARTER.md
+    type: SPEC
+    precedence: 2
+  - path: WORLDWIDEBRO-OS/08-DATA/Influence-Venture-Business-OS/STRATEGY_LAYERS/WORLDWIDEBRO-OS/01_CEO_COMMAND_CENTER/Indexes/CEO-COMMAND-CENTER-SALES-OPS-INDEX.md
+    type: DOC
+    precedence: 3
+  - path: WORLDWIDEBRO-OS/07-KNOWLEDGE/research/00-MASTER-INDEX.md
+    type: DOC
+    precedence: 3
+  - path: Worldwidebro-Holdings/README-START-HERE.md
+    type: DOC
+    precedence: 4

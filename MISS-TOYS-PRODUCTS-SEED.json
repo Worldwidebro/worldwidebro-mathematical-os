@@ -1,0 +1,50 @@
+[
+  {
+    "title": "The Aurore Wand",
+    "subtitle": "Sensory Devices",
+    "description": "Sculpted from a single block of rose-gold aluminum, the Aurore Wand carries five whisper-quiet patterns through a body built to outlast the evening. Medical-grade silicone, IPX7 waterproof, magnetic USB-C charging.",
+    "category": "Vibrators / sensory devices",
+    "price_usd": 285,
+    "handle": "aurore-wand"
+  },
+  {
+    "title": "Luna Duo",
+    "subtitle": "Couples",
+    "description": "A remote-controlled companion for two, finished in brushed rose gold. Touch-responsive intensity, app pairing, and a fit designed to move with you, not against you.",
+    "category": "Couples toys",
+    "price_usd": 199,
+    "handle": "luna-duo"
+  },
+  {
+    "title": "Silk Set Noir",
+    "subtitle": "Lingerie",
+    "description": "French lace and silk charmeuse in charcoal, cut for movement. A set built the way couture is built — by hand, in small runs.",
+    "category": "Lingerie",
+    "price_usd": 225,
+    "handle": "silk-set-noir"
+  },
+  {
+    "title": "Candle Duo — Élan",
+    "subtitle": "Sensual Lifestyle",
+    "description": "Two hand-poured candles in a rose-gold vessel, formulated to melt into a warm massage oil. Amber, sandalwood, and a note of black fig.",
+    "category": "Massage candles / sensual lifestyle",
+    "price_usd": 58,
+    "handle": "candle-duo-elan"
+  },
+  {
+    "title": "Touch Oil",
+    "subtitle": "Intimate Care",
+    "description": "A silicone-forward massage and intimacy oil in a 100ml apothecary bottle. Long-lasting, fragrance-free, and gentle enough for daily use.",
+    "category": "Lubricants / intimate care",
+    "price_usd": 62,
+    "handle": "touch-oil"
+  },
+  {
+    "title": "Quarterly Luxury Edit",
+    "subtitle": "Subscription",
+    "description": "A seasonal collection of premium pieces, limited editions, and a handwritten note from our curator, delivered four times a year.",
+    "category": "Luxury bundles / subscriptions",
+    "price_usd": 340,
+    "handle": "quarterly-luxury-edit"
+  }
+]

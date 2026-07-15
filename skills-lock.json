@@ -19,11 +19,23 @@
       "skillPath": "skills/design-task/SKILL.md",
       "computedHash": "08211f0d39f95cce43b7380aa43a89e0fb1af5da26f7607be3c2d1025cf222dd"
     },
+    "find-skills": {
+      "source": "vercel-labs/skills",
+      "sourceType": "github",
+      "skillPath": "skills/find-skills/SKILL.md",
+      "computedHash": "781bd6d3f9b19f8c9af6b53d8d0e4876d0183841b565db34ca7092ffa412d111"
+    },
     "getting-started": {
       "source": "crewaiinc/skills",
       "sourceType": "github",
       "skillPath": "skills/getting-started/SKILL.md",
       "computedHash": "3128b91809cca7605d69c0a352137e253f95caf5b175adf4c8cdb1fc5e21e8a2"
+    },
+    "gitnexus-cli": {
+      "source": "abhigyanpatwari/gitnexus",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/gitnexus/gitnexus-cli/SKILL.md",
+      "computedHash": "97353cf50e912bb8c4b2a8fb5d3851e154aa8fb06b7caae454892b77c315356a"
     },
     "higgsfield-generate": {
       "source": "higgsfield-ai/skills",
@@ -48,6 +60,24 @@
       "sourceType": "github",
       "skillPath": "higgsfield-soul-id/SKILL.md",
       "computedHash": "7cfc9540f5890dac0035f430c820a7db13c14796b2a8d42edb75f373e9e418c1"
+    },
+    "neo4j-cypher-skill": {
+      "source": "neo4j-contrib/neo4j-skills",
+      "sourceType": "github",
+      "skillPath": "neo4j-cypher-skill/SKILL.md",
+      "computedHash": "1822c0a56aae0e1f3a704671dfae3370260a2489dda3598e8485b9a6733202ae"
+    },
+    "neo4j-graphrag-skill": {
+      "source": "neo4j-contrib/neo4j-skills",
+      "sourceType": "github",
+      "skillPath": "neo4j-graphrag-skill/SKILL.md",
+      "computedHash": "0ce5a306fbb4105ee52d9cefa033f6e6fc7003b34b98389dc89e4f7e651358f5"
+    },
+    "qdrant-clients-sdk": {
+      "source": "qdrant/skills",
+      "sourceType": "github",
+      "skillPath": "skills/qdrant-clients-sdk/SKILL.md",
+      "computedHash": "58df9c656977780dd62db051ab81d84639acf0ead3cce162e765456fb3167c91"
     }
   }
 }

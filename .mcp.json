@@ -1,0 +1,24 @@
+{
+  "mcpServers": {
+    "browseros": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "http://127.0.0.1:9003/mcp"
+      ],
+      "env": {}
+    },
+    "open-design": {
+      "command": "/Applications/Open Design.app/Contents/MacOS/Open Design",
+      "args": [
+        "/Applications/Open Design.app/Contents/Resources/app/prebundled/daemon/daemon-cli.mjs",
+        "mcp"
+      ],
+      "env": {
+        "ELECTRON_RUN_AS_NODE": "1"
+      }
+    }
+  }
+}

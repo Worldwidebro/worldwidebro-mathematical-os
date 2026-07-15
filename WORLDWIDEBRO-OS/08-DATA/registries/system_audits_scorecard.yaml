@@ -1,0 +1,274 @@
+# IZA OS System Audits Scorecard (100)
+# Defines system audits and health checks across the 8 operational layers.
+
+critical_audits:
+  - id: 26
+    name: "Repository Inventory Audit"
+    target: "Ensure all repositories are recorded and cataloged"
+  - id: 29
+    name: "Repository Duplication Audit"
+    target: "Detect and flag duplicate codebases"
+  - id: 91
+    name: "Capability Mapping Audit"
+    target: "Verify all active repos are bound to capability nodes"
+  - id: 1
+    name: "Folder Structure Audit"
+    target: "Enforce standardized venture folder delegation layouts"
+  - id: 93
+    name: "Knowledge Graph Integrity Audit"
+    target: "Verify Neo4j unique constraints and connections"
+  - id: 41
+    name: "Agent Registry Audit"
+    target: "Verify spawned agent profiles match target config files"
+  - id: 23
+    name: "RAG Ingestion Audit"
+    target: "Verify all documents are indexed to vector storage"
+  - id: 60
+    name: "Data Quality Audit"
+    target: "Scan datasets for duplicate or corrupted records"
+  - id: 72
+    name: "Infrastructure Health Audit"
+    target: "Monitor Docker container and API port availability"
+  - id: 85
+    name: "Venture Readiness Audit"
+    target: "Verify milestones match reported developmental stages"
+
+audits:
+  file_system_organization:
+    - id: 1
+      name: "Folder structure audit"
+    - id: 2
+      name: "Missing folder audit"
+    - id: 3
+      name: "Empty folder audit"
+    - id: 4
+      name: "Duplicate file audit"
+    - id: 5
+      name: "Duplicate directory audit"
+    - id: 6
+      name: "Orphan file audit"
+    - id: 7
+      name: "Uncategorized file audit"
+    - id: 8
+      name: "Loose file detection audit"
+    - id: 9
+      name: "Naming convention audit"
+    - id: 10
+      name: "File version audit"
+    - id: 11
+      name: "Old file archive audit"
+    - id: 12
+      name: "Temporary file cleanup audit"
+    - id: 13
+      name: "Broken shortcut/link audit"
+    - id: 14
+      name: "File ownership audit"
+    - id: 15
+      name: "File location optimization audit"
+
+  knowledge_management:
+    - id: 16
+      name: "Knowledge base completeness audit"
+    - id: 17
+      name: "Missing documentation audit"
+    - id: 18
+      name: "Obsolete knowledge audit"
+    - id: 19
+      name: "Conflicting information audit"
+    - id: 20
+      name: "Duplicate knowledge audit"
+    - id: 21
+      name: "Knowledge freshness audit"
+    - id: 22
+      name: "Knowledge source quality audit"
+    - id: 23
+      name: "RAG ingestion audit"
+    - id: 24
+      name: "Embedding coverage audit"
+    - id: 25
+      name: "Knowledge retrieval accuracy audit"
+
+  repository_codebase:
+    - id: 26
+      name: "Repository inventory audit"
+    - id: 27
+      name: "Repository ownership audit"
+    - id: 28
+      name: "Repository purpose audit"
+    - id: 29
+      name: "Repository duplication audit"
+    - id: 30
+      name: "Repository health audit"
+    - id: 31
+      name: "Git history audit"
+    - id: 32
+      name: "Branch cleanliness audit"
+    - id: 33
+      name: "Dependency audit"
+    - id: 34
+      name: "Security vulnerability audit"
+    - id: 35
+      name: "License compliance audit"
+    - id: 36
+      name: "Documentation audit"
+    - id: 37
+      name: "README quality audit"
+    - id: 38
+      name: "Test coverage audit"
+    - id: 39
+      name: "Build success audit"
+    - id: 40
+      name: "Deployment readiness audit"
+
+  ai_agent:
+    - id: 41
+      name: "Agent inventory audit"
+    - id: 42
+      name: "Agent purpose audit"
+    - id: 43
+      name: "Agent duplication audit"
+    - id: 44
+      name: "Agent capability audit"
+    - id: 45
+      name: "Agent permission audit"
+    - id: 46
+      name: "Agent tool access audit"
+    - id: 47
+      name: "Agent memory audit"
+    - id: 48
+      name: "Agent prompt audit"
+    - id: 49
+      name: "Agent workflow audit"
+    - id: 50
+      name: "Agent performance audit"
+    - id: 51
+      name: "Agent cost audit"
+    - id: 52
+      name: "Agent failure audit"
+    - id: 53
+      name: "Agent hallucination audit"
+    - id: 54
+      name: "Agent evaluation audit"
+    - id: 55
+      name: "Agent retirement audit"
+
+  data_system:
+    - id: 56
+      name: "Database inventory audit"
+    - id: 57
+      name: "Database schema audit"
+    - id: 58
+      name: "Unused table audit"
+    - id: 59
+      name: "Duplicate data audit"
+    - id: 60
+      name: "Data quality audit"
+    - id: 61
+      name: "Data completeness audit"
+    - id: 62
+      name: "Data freshness audit"
+    - id: 63
+      name: "Data ownership audit"
+    - id: 64
+      name: "Data pipeline audit"
+    - id: 65
+      name: "ETL workflow audit"
+    - id: 66
+      name: "API data source audit"
+    - id: 67
+      name: "Dataset lineage audit"
+    - id: 68
+      name: "Data security audit"
+    - id: 69
+      name: "Backup audit"
+    - id: 70
+      name: "Recovery audit"
+
+  infrastructure:
+    - id: 71
+      name: "Docker container audit"
+    - id: 72
+      name: "Service health audit"
+    - id: 73
+      name: "Port conflict audit"
+    - id: 74
+      name: "Environment variable audit"
+    - id: 75
+      name: "Secret management audit"
+    - id: 76
+      name: "Storage utilization audit"
+    - id: 77
+      name: "CPU/GPU utilization audit"
+    - id: 78
+      name: "Memory utilization audit"
+    - id: 79
+      name: "Network configuration audit"
+    - id: 80
+      name: "Infrastructure cost audit"
+
+  business_venture:
+    - id: 81
+      name: "Venture inventory audit"
+    - id: 82
+      name: "Venture purpose audit"
+    - id: 83
+      name: "Venture stage audit"
+    - id: 84
+      name: "Business model audit"
+    - id: 85
+      name: "Revenue readiness audit"
+    - id: 86
+      name: "Customer pipeline audit"
+    - id: 87
+      name: "Market validation audit"
+    - id: 88
+      name: "Competitive analysis audit"
+    - id: 89
+      name: "Operational readiness audit"
+    - id: 90
+      name: "Venture profitability audit"
+
+  os_intelligence:
+    - id: 91
+      name: "Capability mapping audit"
+    - id: 92
+      name: "Sector classification audit"
+    - id: 93
+      name: "Knowledge graph integrity audit"
+    - id: 94
+      name: "Repository-to-capability mapping audit"
+    - id: 95
+      name: "Agent-to-capability mapping audit"
+    - id: 96
+      name: "Workflow dependency audit"
+    - id: 97
+      name: "Automation coverage audit"
+    - id: 98
+      name: "System bottleneck audit"
+    - id: 99
+      name: "Technical debt audit"
+    - id: 100
+      name: "Autonomous operation readiness audit"
+
+  repository_intelligence:
+    - id: 101
+      name: "Code dependency audit"
+    - id: 102
+      name: "Function relationship audit"
+    - id: 103
+      name: "Architecture drift audit"
+    - id: 104
+      name: "Duplicate implementation audit"
+    - id: 105
+      name: "Code ownership audit"
+    - id: 106
+      name: "Change impact audit"
+    - id: 107
+      name: "Dead code audit"
+    - id: 108
+      name: "Dependency risk audit"
+    - id: 109
+      name: "Repository intelligence audit"
+    - id: 110
+      name: "AI coding readiness audit"
+

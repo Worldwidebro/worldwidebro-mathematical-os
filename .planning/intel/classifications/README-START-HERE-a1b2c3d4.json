@@ -1,0 +1,28 @@
+{
+  "source_path": "/Users/acebless/Documents/Worldwidebro-Holdings/README-START-HERE.md",
+  "type": "DOC",
+  "confidence": "high",
+  "manifest_override": true,
+  "title": "Worldwidebro Holdings Operating System",
+  "summary": "Quickstart guide indexing the operating system docs and 30-day Phase 1 execution roadmap for 704 ventures across 18 OPCOs.",
+  "scope": ["Worldwidebro Holdings", "OPCOs", "ventures", "governance charter", "Airtable dashboard", "Phase 1 execution checklist"],
+  "cross_refs": [
+    "GOVERNANCE-CHARTER.md",
+    "PHASE-1-EXECUTION-CHECKLIST.md",
+    "AIRTABLE_DASHBOARD_BLUEPRINT.md",
+    "VENTURE_INVENTORY_MASTER.csv",
+    "EXISTING-VENTURE-FILES-AUDIT.md",
+    "18-PDF-MASTER-TEMPLATE.md",
+    "TOOL-INTEGRATION-STACK.md",
+    "OPERATING-SYSTEM-ROADMAP.md",
+    "PHASE-BY-PHASE-ANALYSIS.md",
+    "README-OPERATIONS-FIRST.md",
+    "UNIT-ECONOMICS-BY-VENTURE-TYPE.csv",
+    "/Users/acebless/Documents/ventures_16sector_classification.csv",
+    "/Users/acebless/Documents/ventures_updated_2026-05-15.csv",
+    "/Users/acebless/Documents/ALL-100-SCALE-VENTURES.csv"
+  ],
+  "locked": false,
+  "precedence": 4,
+  "notes": ""
+}

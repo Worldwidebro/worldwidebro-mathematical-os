@@ -1,0 +1,15 @@
+{
+  "id": "TEC-063",
+  "name": "Cyber Shield",
+  "sector": "technology",
+  "stage": "planned",
+  "revenue": 0.0,
+  "customers": 0,
+  "agents_active": 3,
+  "health_score": 100,
+  "next_actions": [
+    "run repo lint",
+    "create landing page waitlist",
+    "link to twenty CRM"
+  ]
+}

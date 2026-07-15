@@ -1,0 +1,84 @@
+{
+  "business_id": "TECH-047-Image-Recognition-AI",
+  "business_name": "Image Recognition AI",
+  "sector": "technology-ai",
+  "development_stage": "mvp",
+  "github_repo": "Worldwidebro/iza-os-ai-vision-platform",
+  "dashboard_url": "https://venture-hub-pi.vercel.app/ventures/tech-047-image-recognition-ai",
+  "capabilities": [
+    "Image Classification",
+    "Object Detection",
+    "Scene Understanding",
+    "Real-time Processing",
+    "Batch Analysis"
+  ],
+  "entity": {
+    "name": "Image Recognition AI LLC",
+    "type": "LLC",
+    "state": "DE",
+    "ein": null,
+    "status": "pending_formation"
+  },
+  "first_dollar": {
+    "action": "Launch API with free tier (100 calls/day) → charge $0.01/call overage → acquire 10 beta customers",
+    "price": 0.01,
+    "platform": "Stripe",
+    "days_to_revenue": 14
+  },
+  "icp": {
+    "title": "SaaS founders, computer vision researchers, e-commerce platforms",
+    "pain_point": "Need reliable image recognition without building/training models in-house",
+    "platform": "Product Hunt, GitHub, Hacker News",
+    "opening_line": "Image Recognition API: 99.2% accuracy, $0.01/call, deployed in 5 minutes"
+  },
+  "revenue": {
+    "monthly_target": 20000,
+    "model": "API-per-call ($0.01-0.05/call based on tier)",
+    "pricing_tiers": {
+      "starter": {
+        "calls_per_month": 10000,
+        "price": 99
+      },
+      "professional": {
+        "calls_per_month": 100000,
+        "price": 799
+      },
+      "enterprise": {
+        "calls_per_month": "unlimited",
+        "price": "custom"
+      }
+    }
+  },
+  "tax": {
+    "classification": "LLC_sole",
+    "return_type": "Schedule_C",
+    "year": 2026,
+    "estimated_annual": 240000
+  },
+  "grants": [],
+  "agents": {
+    "primary": "qwen-agent",
+    "tech": "claude-code",
+    "approval": "human-antwuan"
+  },
+  "supabase": {
+    "project_id": "rhlkjelglvurowdalrgh",
+    "api_key_env": "SUPABASE_ANON_KEY",
+    "tables": [
+      "api_keys",
+      "usage_metrics",
+      "images_processed",
+      "detection_results"
+    ]
+  },
+  "deployment": {
+    "platform": "Vercel",
+    "env_vars": [
+      "SUPABASE_URL",
+      "SUPABASE_ANON_KEY",
+      "STRIPE_SECRET_KEY",
+      "OPENAI_API_KEY"
+    ]
+  },
+  "last_updated": "2026-07-15T00:00:00.000Z"
+}

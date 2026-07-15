@@ -1,8 +1,8 @@
 # SYSTEM ARCHITECTURE — COMPLETE ALIGNMENT MAP
 ## AI BOSS HOLDINGS + WORLDWIDEBRO-OS + 00_INTAKE_LAYER + 712 Ventures
 
-**Last Updated**: 2026-06-04  
-**Completion**: 33% (Option 1 complete, Options 2-3 planned)
+**Last Updated**: 2026-07-15  
+**Completion**: 75% (Core architecture and first B2B venture live)
 
 ---
 
@@ -37,7 +37,7 @@
 ## DATA FLOW
 
 ```
-Instagram / DMs / Screenshots
+Instagram / DMs / Screenshots / Scrapers
     ↓
 00_INTAKE_LAYER (raw storage)
     ↓
@@ -47,11 +47,11 @@ Option 2: n8n automation (hourly sync, Slack alerts)
     ↓
 Option 3: DM agent swarm (people network graph)
     ↓
-Supabase (source of truth) + LightRAG (semantic index)
+Supabase/Postgres (source of truth) + Qdrant (vector) + Neo4j (graph)
     ↓
-Obsidian (dashboards) + Dataview (queries)
+Obsidian (dashboards) + Redis (active state / queues)
     ↓
-AI Agents (route to sales/ops/product/support)
+AI Agents (Hermes Executive routing to sales/ops/product)
     ↓
 Individual Venture metrics.json (KPIs synced daily)
     ↓
@@ -94,12 +94,34 @@ Handoff to operator with full context
 
 ---
 
+## MEMORY ROUTER ARCHITECTURE: OBSIDIAN VS. REDIS
+
+To optimize decision latency and preserve long-term context, the system routes memory access into two distinct layers:
+
+### A. Long-Term Memory & Context (Obsidian + Qdrant + Neo4j)
+*   **Purpose**: Strategic knowledge capture, entity relationship indexing, and long-term storage.
+*   **Storage**: Local-first Markdown files (Obsidian) parsed and indexed into high-dimensional vector search (**Qdrant**) and relationship mapping (**Neo4j**).
+*   **AI Role**: Supplies context for complex reasoning (e.g. funding rules, capability matrices, and venture-to-repo maps).
+
+### B. Short-Term Active Memory (Redis)
+*   **Purpose**: High-speed operational state, task scheduling, caching, and agent queue routing.
+*   **Storage**: In-memory RAM database.
+*   **AI Role**: Holds active agent execution state, task queues, and cached search queries to minimize API round-trips.
+
+| Attribute | Obsidian (Long-Term) | Redis (Short-Term) |
+| :--- | :--- | :--- |
+| **Data Type** | Strategy guides, decisions, schemas, notes | Agent status, jobs, API cache, active queues |
+| **Speed** | Disk-bound (Slower) | Memory-bound (Sub-millisecond) |
+| **Primary User** | Human operators + Knowledge agents | Active runtime agents (Hermes, CTO, CFO) |
+| **Persistence** | Persistent markdown files | Volatile (configurable snapshot) |
+
+---
+
 ## NEXT 24 HOURS
 
-1. **Test Option 1** (2 hours): Drop screenshots, run pipeline, verify Obsidian + Supabase
-2. **Plan Option 2** (1 hour): Check Composio Instagram, n8n setup
-3. **Venture replication** (2 hours): Create generate_venture_folder.py skeleton
-4. **Update memory** (30 min): Document this architecture
+1.  **Stripe/Supabase Secret Wiring**: Integrate live checkout API credentials for Winners Circle LLC.
+2.  **Twenty CRM Soft-Delete**: Clean the duplicate Company rows via database script.
+3.  **VEX site validation**: Verify Vercel deployment of the landing page directories.
 
 ---
 

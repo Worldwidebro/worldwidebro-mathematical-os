@@ -1,0 +1,59 @@
+# IZA OS Workflow Registry
+# Defines standardized process workflows that agents run inside ventures.
+
+workflows:
+  - name: order_fulfillment
+    description: "Orchestrates order capture, invoice generation, payment clearance, and shipping."
+    steps:
+      - step: 1
+        name: "Capture Order"
+        agent: "Product Agent"
+        input: "checkout_form"
+      - step: 2
+        name: "Process Payment"
+        agent: "Finance Agent"
+        tool: "Stripe API"
+      - step: 3
+        name: "Update Inventory"
+        agent: "Inventory Agent"
+        tool: "ERPNext API"
+      - step: 4
+        name: "Send Confirmation"
+        agent: "Customer Agent"
+        tool: "SendGrid API"
+
+  - name: code_build_verification
+    description: "Pulls recent repository commits, runs lint checks, compiles, and verifies deployment."
+    steps:
+      - step: 1
+        name: "Pull Repository"
+        agent: "Developer Agent"
+        tool: "GitHub API"
+      - step: 2
+        name: "Lint & Compile"
+        agent: "Developer Agent"
+        tool: "Ruff/TSC"
+      - step: 3
+        name: "Run Test Suite"
+        agent: "Developer Agent"
+        tool: "Pytest/Vitest"
+      - step: 4
+        name: "Deploy Build"
+        agent: "Infrastructure Agent"
+        tool: "Vercel CLI"
+
+  - name: client_lead_routing
+    description: "Captures waitlist entries, routes to Twenty CRM, and sends personalized alerts."
+    steps:
+      - step: 1
+        name: "Intake Waitlist"
+        agent: "Marketing Agent"
+        input: "signup_fields"
+      - step: 2
+        name: "Write CRM Lead"
+        agent: "Sales Agent"
+        tool: "Twenty CRM API"
+      - step: 3
+        name: "Send Welcome"
+        agent: "Customer Agent"
+        tool: "Courier Mail"

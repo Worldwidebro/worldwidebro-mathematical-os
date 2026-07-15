@@ -1,0 +1,8 @@
+{
+  "name": "ope_rest_api_gateway",
+  "description": "Orchestrates technical commands for REST API Gateway in venture Orlando Landscaping",
+  "parameters": {
+    "type": "object",
+    "properties": {}
+  }
+}

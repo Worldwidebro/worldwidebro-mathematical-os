@@ -1,0 +1,77 @@
+{
+  "business_id": "TECH-017-Speech-to-Text-AI",
+  "business_name": "Speech-to-Text AI",
+  "sector": "technology",
+  "development_stage": "planned",
+  "github_repo": "Worldwidebro/tech-017-speech-to-text-ai",
+  "dashboard_url": "https://venture-hub-pi.vercel.app/ventures/tech-017-speech-to-text-ai",
+  "entity": {
+    "name": "Speech-to-Text AI LLC",
+    "type": "LLC",
+    "state": "WY",
+    "ein": null,
+    "status": "pending_formation"
+  },
+  "capabilities": [
+    "Speech Recognition",
+    "Transcription",
+    "Multi-language STT",
+    "Real-time Streaming",
+    "Accent Detection",
+    "Speaker Identification"
+  ],
+  "first_dollar": {
+    "action": "Launch API MVP with Whisper integration → post on ProductHunt → get 50 early adopters",
+    "price": 29,
+    "platform": "Stripe",
+    "days_to_revenue": 7
+  },
+  "icp": {
+    "title": "Content creators, transcription services, customer support platforms",
+    "pain_point": "Current STT APIs are expensive ($50+/hr) or slow, need real-time accurate transcription",
+    "platform": "Twitter/X, LinkedIn, Product Hunt, Dev.to",
+    "opening_line": "Accurate multi-language STT at 1/10th the cost. API-first, sub-100ms latency. $29/month."
+  },
+  "revenue": {
+    "monthly_target": 12000,
+    "model": "Usage-based API billing ($0.01-$0.05 per minute transcribed) + Premium tier ($99-$299/mo) + Enterprise contracts",
+    "revenue_streams": [
+      "API usage fees",
+      "Subscription tiers",
+      "Enterprise licensing",
+      "Batch processing",
+      "Custom integrations"
+    ]
+  },
+  "pricing": {
+    "starter": {
+      "name": "Starter",
+      "price": 29,
+      "features": "100K minutes/mo, basic API, email support"
+    },
+    "professional": {
+      "name": "Professional",
+      "price": 99,
+      "features": "500K minutes/mo, priority API, chat support, custom webhooks"
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "price": "custom",
+      "features": "Unlimited, dedicated infra, SLA, onboarding"
+    }
+  },
+  "tax": {
+    "classification": "LLC_sole",
+    "return_type": "Schedule_C",
+    "year": 2026,
+    "estimated_annual": 144000
+  },
+  "grants": [],
+  "agents": {
+    "primary": "qwen-agent",
+    "tech": "claude-code",
+    "approval": "human-antwuan"
+  },
+  "launch_date": "2026-07-15",
+  "last_updated": "2026-07-15T12:00:00Z"
+}

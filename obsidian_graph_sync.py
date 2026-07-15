@@ -2,7 +2,7 @@
 """
 Export graph_entities and graph_relationships from Supabase to Obsidian JSON + dashboard.
 Run SECOND (after populate_venture_knowledge_graph.py).
-Exports: .planning/graph-data.json and .planning/venture-hub-alignment.json
+Exports: .obsidian-sync/graph-data.json and .obsidian-sync/venture-hub-alignment.json
 Creates: KNOWLEDGE-GRAPH-DASHBOARD.md with Dataview blocks
 """
 
@@ -107,8 +107,8 @@ class ObsidianGraphSync:
         }
 
     def export_to_json(self):
-        """Export graph data to .planning/graph-data.json"""
-        os.makedirs('.planning', exist_ok=True)
+        """Export graph data to .obsidian-sync/graph-data.json"""
+        os.makedirs('.obsidian-sync', exist_ok=True)
 
         graph_data = {
             "entities": self.entities,
@@ -116,19 +116,19 @@ class ObsidianGraphSync:
             "exported_at": datetime.now().isoformat()
         }
 
-        with open('.planning/graph-data.json', 'w') as f:
+        with open('.obsidian-sync/graph-data.json', 'w') as f:
             json.dump(graph_data, f, indent=2)
 
-        print(f"✅ Exported graph data: .planning/graph-data.json ({len(self.entities)} entities, {len(self.relationships)} relationships)")
+        print(f"✅ Exported graph data: .obsidian-sync/graph-data.json ({len(self.entities)} entities, {len(self.relationships)} relationships)")
 
     def export_alignment_report(self):
-        """Export alignment report to .planning/venture-hub-alignment.json"""
+        """Export alignment report to .obsidian-sync/venture-hub-alignment.json"""
         alignment = self.build_alignment_report()
 
-        with open('.planning/venture-hub-alignment.json', 'w') as f:
+        with open('.obsidian-sync/venture-hub-alignment.json', 'w') as f:
             json.dump(alignment, f, indent=2)
 
-        print(f"✅ Exported alignment report: .planning/venture-hub-alignment.json")
+        print(f"✅ Exported alignment report: .obsidian-sync/venture-hub-alignment.json")
 
     def create_dashboard(self, alignment: Dict[str, Any]):
         """Create KNOWLEDGE-GRAPH-DASHBOARD.md with Dataview blocks"""
@@ -225,8 +225,8 @@ LIMIT 20
 ## Data Source
 
 - **Source:** Supabase (graph_entities, graph_relationships)
-- **Export:** .planning/graph-data.json
-- **Alignment:** .planning/venture-hub-alignment.json
+- **Export:** .obsidian-sync/graph-data.json
+- **Alignment:** .obsidian-sync/venture-hub-alignment.json
 
 ---
 
@@ -243,6 +243,39 @@ LIMIT 20
 2. Verify 8 Dataview blocks render above
 3. If blocks show data, graph is connected
 4. If blocks are empty, check Supabase connection
+
+---
+
+## Repository Map / Venture Index / Knowledge Graph — Master Index
+_Source of truth = CSVs + Supabase, not the GitHub API._
+
+### Venture Index
+| File | Rows | What |
+|------|------|------|
+| `.../INFRASTRUCTURE_LAYERS/venture-hub/ventures-master.csv` | 712 | Canonical ventures (id, name, sector, stage, status, repo_id) |
+| `.../venture-hub/ventures_with_capabilities.csv` | 618 | + required_capabilities + top_repo_1/2/3 |
+| `08-DATA/registries/ventures.csv` / `venture_capability_map.csv` | — | Registry snapshot + venture->capability |
+
+### Repository Map
+| File | Size/Rows | What |
+|------|-----------|------|
+| `.../REFERENCE/REPOSITORY-REGISTRY.json` | 908K | ~1,592 repos, 10 attributes |
+| `.../venture-hub/MASTER-REPO-REGISTRY.csv` | 985 | Repos -> ventures + agents + health_score |
+| `08-DATA/registries/repositories.csv` / `venture_repo_map.csv` | 37K / 137K | Flat repo list + venture<->repo edges |
+
+### Knowledge Graph
+| File / Store | Size | What |
+|--------------|------|------|
+| `.obsidian-sync/graph-data.json` | 7.5M | Full entity+relationship export |
+| `.obsidian-sync/venture-hub-alignment.json` | 221K | Processed alignment |
+| Supabase graph_entities / graph_relationships | — | Source of truth |
+| Neo4j 08-DATA/venture-hub-data/neo4j | — | Graph DB |
+
+### Regenerate
+- python3 populate_venture_knowledge_graph.py   -> graph_entities + relationships
+- python3 obsidian_graph_sync.py                -> .obsidian-sync/*.json + this dashboard
+- python3 scan_repositories.py                  -> REPOSITORY-REGISTRY.json
+- python3 WORLDWIDEBRO-OS/08-DATA/build_registries.py  -> 08-DATA/registries/*.csv
 """
 
         with open('KNOWLEDGE-GRAPH-DASHBOARD.md', 'w') as f:

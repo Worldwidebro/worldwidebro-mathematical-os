@@ -163,10 +163,48 @@
       "config_location": "/Users/acebless/.claude/mcp-config.json#google_calendar",
       "last_verified": "2026-06-22T08:50:00Z",
       "test_result": "PASS"
+    },
+    "unlimited_ocr": {
+      "name": "Unlimited OCR (Baidu)",
+      "status": "available",
+      "priority": "high",
+      "category": "document_processing",
+      "description": "Advanced OCR for PDFs, images, multi-page documents - extract text from any document",
+      "capabilities": ["parse_single_image", "parse_multi_page_pdf", "extract_text", "long_horizon_parsing"],
+      "used_by": ["opco-binder-parsing", "contract-extraction", "document-enrichment", "invoice-processing"],
+      "github": "https://github.com/baidu/Unlimited-OCR",
+      "huggingface": "https://huggingface.co/baidu/Unlimited-OCR",
+      "setup": "pip install torch transformers pillow pymupdf",
+      "last_verified": "2026-06-24T00:00:00Z",
+      "test_result": "AVAILABLE"
+    },
+    "pdf_creation": {
+      "name": "PDF Creation (reportlab/pypdf)",
+      "status": "available",
+      "priority": "high",
+      "category": "document_processing",
+      "description": "Create PDFs from templates, merge PDFs, generate OPCO binders programmatically",
+      "capabilities": ["create_pdf_from_template", "merge_pdfs", "add_watermark", "extract_pdf_metadata"],
+      "used_by": ["opco-binder-generation", "contract-generation", "investor-deck-creation"],
+      "setup": "pip install reportlab pypdf",
+      "last_verified": "2026-06-24T00:00:00Z",
+      "test_result": "AVAILABLE"
+    },
+    "file_operations": {
+      "name": "File Operations (Python native)",
+      "status": "available",
+      "priority": "high",
+      "category": "file_management",
+      "description": "ZIP creation, file compression, directory operations, batch processing",
+      "capabilities": ["create_zip", "extract_zip", "compress_files", "batch_file_operations", "directory_management"],
+      "used_by": ["opco-binder-bundling", "document-archival", "backup-creation"],
+      "setup": "built-in (zipfile, shutil, os)",
+      "last_verified": "2026-06-24T00:00:00Z",
+      "test_result": "AVAILABLE"
     }
   },
   "health_summary": {
-    "total_mcps": 14,
+    "total_mcps": 17,
     "enabled": 14,
     "verified_last_24h": 14,
     "needs_setup": 0,

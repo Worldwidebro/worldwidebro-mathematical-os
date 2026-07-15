@@ -1,0 +1,101 @@
+{
+  "meta": {
+    "generated": "2026-07-16",
+    "last_updated": "2026-07-16T00:00:00Z",
+    "status": "pre_launch"
+  },
+  "phase_1_mvp": {
+    "launch_target": "2027-01-15",
+    "current_status": "pre_development",
+    "progress_percentage": 0,
+    "weeks_remaining": 30,
+    "status_timeline": "Development starts 2026-09-01"
+  },
+  "active_operations": {
+    "fleets_onboarded": 0,
+    "target_fleets_phase_1": 50,
+    "fleet_target_phase_2": 200,
+    "fleet_target_phase_3": 500,
+    "carriers_active": 0
+  },
+  "performance_metrics": {
+    "avg_rpm_improvement": {
+      "current": 0,
+      "target": 15,
+      "unit": "percent",
+      "status": "pre_launch"
+    },
+    "time_to_book_minutes": {
+      "current": 45,
+      "target": 15,
+      "improvement": 67,
+      "unit": "percent",
+      "status": "pre_launch"
+    },
+    "compliance_violations": {
+      "current": 0,
+      "target": 0,
+      "status": "pre_launch"
+    }
+  },
+  "ventures_powered": {
+    "phase_1": {
+      "count": 3,
+      "ventures": ["LT-001", "LT-003", "LT-016"],
+      "launch_date": "2027-01-15",
+      "status": "planned"
+    },
+    "phase_2": {
+      "count": 8,
+      "ventures": ["LT-004", "LT-009", "LT-010", "LT-007", "LT-002", "LT-020", "LT-026", "LT-018"],
+      "launch_date": "2027-09-01",
+      "status": "planned"
+    },
+    "phase_3": {
+      "count": 30,
+      "ventures": "All LT-001 through LT-030",
+      "launch_date": "2028-01-15",
+      "status": "planned"
+    }
+  },
+  "agents": {
+    "total": 8,
+    "load_finder": {"status": "development", "week": 4},
+    "rate_negotiation": {"status": "planned", "week": 8},
+    "broker_communications": {"status": "planned", "week": 8},
+    "driver_scheduling": {"status": "planned", "week": 8},
+    "compliance_monitoring": {"status": "planned", "week": 12},
+    "invoice_automation": {"status": "planned", "week": 12},
+    "maintenance_forecasting": {"status": "planned", "week": 12},
+    "safety_routing": {"status": "planned", "week": 12}
+  },
+  "integrations": {
+    "load_boards": {
+      "dat": {"status": "planned", "week": 2},
+      "truckstop": {"status": "planned", "week": 4}
+    },
+    "elds": {
+      "samsara": {"status": "planned", "week": 6},
+      "motive": {"status": "planned", "week": 6}
+    },
+    "accounting": {
+      "quickbooks": {"status": "planned", "week": 10}
+    }
+  },
+  "beta_program": {
+    "status": "recruitment_starting",
+    "target_fleets": 50,
+    "onboarding_weeks": 4,
+    "success_criteria": {
+      "active_users_target": 40,
+      "rpm_improvement": 15,
+      "retention": 90,
+      "violations": 0
+    }
+  },
+  "sla_targets": {
+    "uptime_percent": 99.9,
+    "api_response_ms": 200,
+    "dashboard_load_seconds": 1
+  }
+}

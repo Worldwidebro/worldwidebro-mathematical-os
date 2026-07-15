@@ -1,0 +1,71 @@
+# IZA OS Lead Intelligence Sector Sources
+# Maps sector targets to specific database APIs, directories, and scraping targets.
+
+sectors:
+  - name: ecommerce
+    lead_targets:
+      - "Shopify storefronts"
+      - "WooCommerce merchants"
+      - "Direct-to-Consumer brands"
+    data_sources:
+      - type: tech_detection
+        engine: "Wappalyzer"
+        target: "Shopify / WooCommerce CMS fingerprinting"
+      - type: scraping
+        engine: "Crawlee"
+        target: "e-commerce product listings & contact pages"
+
+  - name: construction
+    lead_targets:
+      - "General contractors"
+      - "Subcontractors (HVAC, plumbing, electrical)"
+      - "Real estate developers"
+    data_sources:
+      - type: municipal_api
+        engine: "City Permit Scrapers"
+        target: "new construction & renovation permit records"
+      - type: directory
+        engine: "BuildingConnected"
+        target: "commercial subcontractor bid boards"
+      - type: map_extract
+        engine: "OSMnx"
+        target: "contractor offices & active jobsites"
+
+  - name: healthcare
+    lead_targets:
+      - "Private practice clinics"
+      - "Medical specialists (dermatology, dental)"
+      - "Local diagnostic labs"
+    data_sources:
+      - type: federal_registry
+        engine: "NPI API"
+        target: "National Provider Identifier listings"
+      - type: directory
+        engine: "CMS Datasets"
+        target: "Medicare provider & clinical utilization stats"
+
+  - name: logistics_transport
+    lead_targets:
+      - "Medical shipping clients"
+      - "Local cargo warehouses"
+      - "Freight brokers"
+    data_sources:
+      - type: map_routing
+        engine: "OSRM"
+        target: "geographic clinic clusters & hospital drop routes"
+      - type: directory
+        engine: "FMCSA Safety Register"
+        target: "DOT-registered local carrier and trucking lines"
+
+  - name: technology
+    lead_targets:
+      - "Early-stage SaaS startups"
+      - "Independent software developers"
+      - "Tech founders"
+    data_sources:
+      - type: repository_intelligence
+        engine: "GitHub API / Octokit"
+        target: "open-source repo contributors & corporate orgs"
+      - type: tech_detection
+        engine: "Wappalyzer"
+        target: "SaaS backend and database stack profiling"

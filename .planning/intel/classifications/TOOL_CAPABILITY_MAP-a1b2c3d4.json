@@ -1,0 +1,13 @@
+{
+  "source_path": "/Users/acebless/Documents/TOOL_CAPABILITY_MAP.md",
+  "type": "DOC",
+  "confidence": "high",
+  "manifest_override": true,
+  "title": "Tool Capability Map",
+  "summary": "Maps business goals to available MCP tools/servers to avoid re-searching for tool capabilities.",
+  "scope": ["MCP servers", "Airtable", "Slack", "ClickUp", "Notion", "Zapier", "venture dashboards"],
+  "cross_refs": ["MCP_REGISTRY.json", "AIRTABLE_DASHBOARD_BLUEPRINT.md", "ventures_16sector_classification.csv"],
+  "locked": false,
+  "precedence": 1,
+  "notes": ""
+}

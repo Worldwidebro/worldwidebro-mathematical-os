@@ -2264,19 +2264,23 @@
     },
     "ec-001-angels-in-daylight": {
       "name": "ec-001-angels-in-daylight",
-      "category": "Unclassified",
+      "category": "Product",
       "language": "Unknown",
-      "purpose": "Civilization OS \u2014 EC-001-Angels-in-Daylight",
-      "capabilities": [],
+      "purpose": "Angels in Daylight (EC-001) \u2014 DTC apparel brand; source of the Fashion Design OS shared toolkit (rembg+watershed product extraction, catalog/gallery) reused by 9 sibling EC ventures.",
+      "capabilities": [
+        "fashion-design",
+        "machine-learning",
+        "dashboard"
+      ],
       "tech": "Unknown",
       "url": "https://github.com/Worldwidebro/ec-001-angels-in-daylight",
       "scores": {
-        "reusability": 5,
+        "reusability": 8,
         "revenue": 3,
-        "strategic": 4
+        "strategic": 7
       },
-      "high_value": false,
-      "summary_text": "ec-001-angels-in-daylight [Unclassified] \u2014 Civilization OS \u2014 EC-001-Angels-in-Daylight. Capabilities: \u2014. Tech: Unknown. Scores reuse=5 revenue=3 strategic=4."
+      "high_value": true,
+      "summary_text": "ec-001-angels-in-daylight [Product] \u2014 Angels in Daylight (EC-001) \u2014 DTC apparel brand; source of the Fashion Design OS shared toolkit (rembg+watershed product extraction, catalog/gallery) reused by 9 sibling EC ventures. Capabilities: fashion-design, machine-learning, dashboard. Tech: Unknown. Scores reuse=8 revenue=3 strategic=7."
     },
     "ec-003-hella-scars": {
       "name": "ec-003-hella-scars",

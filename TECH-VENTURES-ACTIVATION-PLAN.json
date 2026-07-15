@@ -1,0 +1,353 @@
+[
+  {
+    "venture": "TECH-016",
+    "status": "ready_to_activate",
+    "wiring": {
+      "venture": "TECH-016",
+      "venture_name": "Video-Editor-AI",
+      "domain": "Video",
+      "primary_repo": "mc-006-video-production-company",
+      "primary_url": "https://github.com/Worldwidebro/mc-006-video-production-company",
+      "available_repos": 24
+    },
+    "plan": {
+      "venture": "TECH-016",
+      "name": "Video-Editor-AI",
+      "priority": "high",
+      "domain": "Video",
+      "primary_repo": "mc-006-video-production-company",
+      "primary_url": "https://github.com/Worldwidebro/mc-006-video-production-company",
+      "available_repos": 24,
+      "activation_steps": [
+        "1. Clone primary repo into venture folder",
+        "2. Create venture.json with GitHub URL + capabilities",
+        "3. Wire Supabase table (INSERT venture record)",
+        "4. Deploy to Vercel (vex-{venture_id})",
+        "5. Register in venture registry + capability graph",
+        "6. Activate skills for Video-Editor-AI (Phase 5-6)"
+      ],
+      "skills_to_activate": [
+        "/frontend-design:frontend-design",
+        "/remotion-video-creation",
+        "/manim-video"
+      ],
+      "estimated_revenue": "$30-50K/mo",
+      "activation_time": "2026-07-15T17:58:56.301733"
+    }
+  },
+  {
+    "venture": "TECH-040",
+    "status": "ready_to_activate",
+    "wiring": {
+      "venture": "TECH-040",
+      "venture_name": "Cybersecurity-Shield",
+      "domain": "Security",
+      "primary_repo": "tech-040-cybersecurity-shield",
+      "primary_url": "https://github.com/Worldwidebro/tech-040-cybersecurity-shield",
+      "available_repos": 33
+    },
+    "plan": {
+      "venture": "TECH-040",
+      "name": "Cybersecurity-Shield",
+      "priority": "high",
+      "domain": "Security",
+      "primary_repo": "tech-040-cybersecurity-shield",
+      "primary_url": "https://github.com/Worldwidebro/tech-040-cybersecurity-shield",
+      "available_repos": 33,
+      "activation_steps": [
+        "1. Clone primary repo into venture folder",
+        "2. Create venture.json with GitHub URL + capabilities",
+        "3. Wire Supabase table (INSERT venture record)",
+        "4. Deploy to Vercel (vex-{venture_id})",
+        "5. Register in venture registry + capability graph",
+        "6. Activate skills for Cybersecurity-Shield (Phase 5-6)"
+      ],
+      "skills_to_activate": [
+        "/security-review",
+        "/security-scan"
+      ],
+      "estimated_revenue": "$30-50K/mo",
+      "activation_time": "2026-07-15T17:58:56.301745"
+    }
+  },
+  {
+    "venture": "TECH-047",
+    "status": "ready_to_activate",
+    "wiring": {
+      "venture": "TECH-047",
+      "venture_name": "Image-Recognition-AI",
+      "domain": "Vision",
+      "primary_repo": "iza-os-ai-vision-platform",
+      "primary_url": "https://github.com/Worldwidebro/iza-os-ai-vision-platform",
+      "available_repos": 14
+    },
+    "plan": {
+      "venture": "TECH-047",
+      "name": "Image-Recognition-AI",
+      "priority": "medium",
+      "domain": "Vision",
+      "primary_repo": "iza-os-ai-vision-platform",
+      "primary_url": "https://github.com/Worldwidebro/iza-os-ai-vision-platform",
+      "available_repos": 14,
+      "activation_steps": [
+        "1. Clone primary repo into venture folder",
+        "2. Create venture.json with GitHub URL + capabilities",
+        "3. Wire Supabase table (INSERT venture record)",
+        "4. Deploy to Vercel (vex-{venture_id})",
+        "5. Register in venture registry + capability graph",
+        "6. Activate skills for Image-Recognition-AI (Phase 5-6)"
+      ],
+      "skills_to_activate": [
+        "llm-application-dev:ai-engineer",
+        "/benchmark"
+      ],
+      "estimated_revenue": "$10-20K/mo",
+      "activation_time": "2026-07-15T17:58:56.301750"
+    }
+  },
+  {
+    "venture": "TECH-014",
+    "status": "ready_to_activate",
+    "wiring": {
+      "venture": "TECH-014",
+      "venture_name": "Sentiment-Analyzer",
+      "domain": "NLP",
+      "primary_repo": "edu-024-language-learning-ai",
+      "primary_url": "https://github.com/Worldwidebro/edu-024-language-learning-ai",
+      "available_repos": 32
+    },
+    "plan": {
+      "venture": "TECH-014",
+      "name": "Sentiment-Analyzer",
+      "priority": "medium",
+      "domain": "NLP",
+      "primary_repo": "edu-024-language-learning-ai",
+      "primary_url": "https://github.com/Worldwidebro/edu-024-language-learning-ai",
+      "available_repos": 32,
+      "activation_steps": [
+        "1. Clone primary repo into venture folder",
+        "2. Create venture.json with GitHub URL + capabilities",
+        "3. Wire Supabase table (INSERT venture record)",
+        "4. Deploy to Vercel (vex-{venture_id})",
+        "5. Register in venture registry + capability graph",
+        "6. Activate skills for Sentiment-Analyzer (Phase 5-6)"
+      ],
+      "skills_to_activate": [
+        "llm-application-dev:ai-engineer",
+        "/backend-development:feature-development"
+      ],
+      "estimated_revenue": "$10-20K/mo",
+      "activation_time": "2026-07-15T17:58:56.301755"
+    }
+  },
+  {
+    "venture": "TECH-017",
+    "status": "ready_to_activate",
+    "wiring": {
+      "venture": "TECH-017",
+      "venture_name": "Speech-to-Text-AI",
+      "domain": "Speech",
+      "primary_repo": "edu-009-voiceover-script-library",
+      "primary_url": "https://github.com/Worldwidebro/edu-009-voiceover-script-library",
+      "available_repos": 26
+    },
+    "plan": {
+      "venture": "TECH-017",
+      "name": "Speech-to-Text-AI",
+      "priority": "medium",
+      "domain": "Speech",
+      "primary_repo": "edu-009-voiceover-script-library",
+      "primary_url": "https://github.com/Worldwidebro/edu-009-voiceover-script-library",
+      "available_repos": 26,
+      "activation_steps": [
+        "1. Clone primary repo into venture folder",
+        "2. Create venture.json with GitHub URL + capabilities",
+        "3. Wire Supabase table (INSERT venture record)",
+        "4. Deploy to Vercel (vex-{venture_id})",
+        "5. Register in venture registry + capability graph",
+        "6. Activate skills for Speech-to-Text-AI (Phase 5-6)"
+      ],
+      "skills_to_activate": [
+        "llm-application-dev:prompt-engineer",
+        "/documentation-lookup"
+      ],
+      "estimated_revenue": "$10-20K/mo",
+      "activation_time": "2026-07-15T17:58:56.301760"
+    }
+  },
+  {
+    "venture": "TECH-018",
+    "status": "ready_to_activate",
+    "wiring": {
+      "venture": "TECH-018",
+      "venture_name": "Text-to-Speech-AI",
+      "domain": "Speech",
+      "primary_repo": "edu-009-voiceover-script-library",
+      "primary_url": "https://github.com/Worldwidebro/edu-009-voiceover-script-library",
+      "available_repos": 26
+    },
+    "plan": {
+      "venture": "TECH-018",
+      "name": "Text-to-Speech-AI",
+      "priority": "medium",
+      "domain": "Speech",
+      "primary_repo": "edu-009-voiceover-script-library",
+      "primary_url": "https://github.com/Worldwidebro/edu-009-voiceover-script-library",
+      "available_repos": 26,
+      "activation_steps": [
+        "1. Clone primary repo into venture folder",
+        "2. Create venture.json with GitHub URL + capabilities",
+        "3. Wire Supabase table (INSERT venture record)",
+        "4. Deploy to Vercel (vex-{venture_id})",
+        "5. Register in venture registry + capability graph",
+        "6. Activate skills for Text-to-Speech-AI (Phase 5-6)"
+      ],
+      "skills_to_activate": [
+        "llm-application-dev:prompt-engineer",
+        "/documentation-lookup"
+      ],
+      "estimated_revenue": "$10-20K/mo",
+      "activation_time": "2026-07-15T17:58:56.301764"
+    }
+  },
+  {
+    "venture": "TECH-039",
+    "status": "ready_to_activate",
+    "wiring": {
+      "venture": "TECH-039",
+      "venture_name": "Blockchain-Verifier-AI",
+      "domain": "Blockchain",
+      "primary_repo": "fin-009-crypto-tax-optimizer",
+      "primary_url": "https://github.com/Worldwidebro/fin-009-crypto-tax-optimizer",
+      "available_repos": 9
+    },
+    "plan": {
+      "venture": "TECH-039",
+      "name": "Blockchain-Verifier-AI",
+      "priority": "low",
+      "domain": "Blockchain",
+      "primary_repo": "fin-009-crypto-tax-optimizer",
+      "primary_url": "https://github.com/Worldwidebro/fin-009-crypto-tax-optimizer",
+      "available_repos": 9,
+      "activation_steps": [
+        "1. Clone primary repo into venture folder",
+        "2. Create venture.json with GitHub URL + capabilities",
+        "3. Wire Supabase table (INSERT venture record)",
+        "4. Deploy to Vercel (vex-{venture_id})",
+        "5. Register in venture registry + capability graph",
+        "6. Activate skills for Blockchain-Verifier-AI (Phase 5-6)"
+      ],
+      "skills_to_activate": [
+        "security-scanning:threat-modeling-expert",
+        "/solidity-security"
+      ],
+      "estimated_revenue": "$3-7K/mo",
+      "activation_time": "2026-07-15T17:58:56.301769"
+    }
+  },
+  {
+    "venture": "TECH-054",
+    "status": "ready_to_activate",
+    "wiring": {
+      "venture": "TECH-054",
+      "venture_name": "Database-Optimizer",
+      "domain": "Database",
+      "primary_repo": "iza-os-vector-database",
+      "primary_url": "https://github.com/Worldwidebro/iza-os-vector-database",
+      "available_repos": 32
+    },
+    "plan": {
+      "venture": "TECH-054",
+      "name": "Database-Optimizer",
+      "priority": "low",
+      "domain": "Database",
+      "primary_repo": "iza-os-vector-database",
+      "primary_url": "https://github.com/Worldwidebro/iza-os-vector-database",
+      "available_repos": 32,
+      "activation_steps": [
+        "1. Clone primary repo into venture folder",
+        "2. Create venture.json with GitHub URL + capabilities",
+        "3. Wire Supabase table (INSERT venture record)",
+        "4. Deploy to Vercel (vex-{venture_id})",
+        "5. Register in venture registry + capability graph",
+        "6. Activate skills for Database-Optimizer (Phase 5-6)"
+      ],
+      "skills_to_activate": [
+        "database-design:database-architect",
+        "/performance-engineer"
+      ],
+      "estimated_revenue": "$3-7K/mo",
+      "activation_time": "2026-07-15T17:58:56.301774"
+    }
+  },
+  {
+    "venture": "TECH-035",
+    "status": "ready_to_activate",
+    "wiring": {
+      "venture": "TECH-035",
+      "venture_name": "Cloud-Management-AI",
+      "domain": "Cloud",
+      "primary_repo": "comm-036-public-infrastructure-ai",
+      "primary_url": "https://github.com/Worldwidebro/comm-036-public-infrastructure-ai",
+      "available_repos": 47
+    },
+    "plan": {
+      "venture": "TECH-035",
+      "name": "Cloud-Management-AI",
+      "priority": "low",
+      "domain": "Cloud",
+      "primary_repo": "comm-036-public-infrastructure-ai",
+      "primary_url": "https://github.com/Worldwidebro/comm-036-public-infrastructure-ai",
+      "available_repos": 47,
+      "activation_steps": [
+        "1. Clone primary repo into venture folder",
+        "2. Create venture.json with GitHub URL + capabilities",
+        "3. Wire Supabase table (INSERT venture record)",
+        "4. Deploy to Vercel (vex-{venture_id})",
+        "5. Register in venture registry + capability graph",
+        "6. Activate skills for Cloud-Management-AI (Phase 5-6)"
+      ],
+      "skills_to_activate": [
+        "cloud-infrastructure:cloud-architect",
+        "/cicd-automation:deployment-engineer"
+      ],
+      "estimated_revenue": "$3-7K/mo",
+      "activation_time": "2026-07-15T17:58:56.301779"
+    }
+  },
+  {
+    "venture": "TECH-051",
+    "status": "ready_to_activate",
+    "wiring": {
+      "venture": "TECH-051",
+      "venture_name": "Fraud-Prevention-AI",
+      "domain": "Fraud",
+      "primary_repo": "arbitrage-nexus",
+      "primary_url": "https://github.com/Worldwidebro/arbitrage-nexus",
+      "available_repos": 12
+    },
+    "plan": {
+      "venture": "TECH-051",
+      "name": "Fraud-Prevention-AI",
+      "priority": "low",
+      "domain": "Fraud",
+      "primary_repo": "arbitrage-nexus",
+      "primary_url": "https://github.com/Worldwidebro/arbitrage-nexus",
+      "available_repos": 12,
+      "activation_steps": [
+        "1. Clone primary repo into venture folder",
+        "2. Create venture.json with GitHub URL + capabilities",
+        "3. Wire Supabase table (INSERT venture record)",
+        "4. Deploy to Vercel (vex-{venture_id})",
+        "5. Register in venture registry + capability graph",
+        "6. Activate skills for Fraud-Prevention-AI (Phase 5-6)"
+      ],
+      "skills_to_activate": [
+        "/ml-engineer",
+        "/security-scanning:security-sast"
+      ],
+      "estimated_revenue": "$3-7K/mo",
+      "activation_time": "2026-07-15T17:58:56.301783"
+    }
+  }
+]

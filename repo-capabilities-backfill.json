@@ -4,8 +4,8 @@
     "total_repos": 1639,
     "coverage_before": 0,
     "coverage_before_pct": 0.0,
-    "coverage_after": 1156,
-    "coverage_after_pct": 70.5,
+    "coverage_after": 1157,
+    "coverage_after_pct": 70.6,
     "readmes_used": 350,
     "neo4j_implements_edges": 2273,
     "neo4j_repos_with_cap": 1165
@@ -4514,6 +4514,11 @@
       "analytics",
       "llm",
       "scheduling"
+    ],
+    "ec-001-angels-in-daylight": [
+      "fashion-design",
+      "machine-learning",
+      "dashboard"
     ]
   }
 }

@@ -1,7 +1,14 @@
-# 📑 MASTER INDEX
-**Central Hub for All System Knowledge**  
+# 📑 CEO Command Center — Sales/Ops Index
+**Tactical Index for CEO Command Center Sales/Ops Tooling** (renamed 2026-07-03 from
+`MASTER-INDEX.md` — this was never a competing master index, just a same-named sales-ops
+file; see note below)
 **Last Updated:** 2026-05-10  
 **Status:** Phase 0 - System Awareness Build
+
+> **Note:** this index is scoped to CEO Command Center sales/ops tooling (ClickUp, deal
+> scripts, VAPI calling, OSINT enrichment) and dated 2026-05-10. For the current, broader
+> system-wide entry point (4-Orb model + Holdings/OPCO/Tool/Repo layer), see
+> `/Users/acebless/Documents/MASTER-INDEX.md`.
 
 ---
 

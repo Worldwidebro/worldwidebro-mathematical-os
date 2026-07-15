@@ -1,0 +1,429 @@
+{
+  "metadata": {
+    "generated_date": "2026-06-28",
+    "purpose": "OS install + dependency map: services, MCPs, skills, scripts, and repo<->venture alignment via the knowledge graph."
+  },
+  "services": [
+    {
+      "name": "Ollama",
+      "role": "local LLM + embeddings (nomic-embed, qwen3:8b)",
+      "port": 11434,
+      "install": "brew install ollama; ollama pull nomic-embed-text qwen3:8b",
+      "required": true
+    },
+    {
+      "name": "Qdrant",
+      "role": "vector store (notes + repositories collections)",
+      "port": 6333,
+      "install": "docker run -p 6333:6333 qdrant/qdrant",
+      "required": true
+    },
+    {
+      "name": "Neo4j",
+      "role": "knowledge graph (repos/caps/ventures/opcos/entities/mcps)",
+      "port": 7474,
+      "install": "docker compose up neo4j  (auth neo4j/ventures2026)",
+      "required": true
+    },
+    {
+      "name": "gh CLI",
+      "role": "GitHub API auth for README/metadata fetch",
+      "port": null,
+      "install": "brew install gh; gh auth login",
+      "required": true
+    }
+  ],
+  "mcps": {
+    "airtable": {
+      "name": "Airtable",
+      "status": "enabled",
+      "priority": "critical",
+      "category": "database",
+      "config_location": "/Users/acebless/.claude/mcp-config.json#airtable",
+      "provides_capabilities": [
+        "database"
+      ]
+    },
+    "clickup": {
+      "name": "ClickUp",
+      "status": "enabled",
+      "priority": "high",
+      "category": "task_management",
+      "config_location": "/Users/acebless/.claude/mcp-config.json#clickup",
+      "provides_capabilities": []
+    },
+    "notion": {
+      "name": "Notion",
+      "status": "enabled",
+      "priority": "high",
+      "category": "documentation",
+      "config_location": "/Users/acebless/.claude/mcp-config.json#notion",
+      "provides_capabilities": [
+        "analytics",
+        "database"
+      ]
+    },
+    "slack": {
+      "name": "Slack",
+      "status": "enabled",
+      "priority": "high",
+      "category": "communication",
+      "config_location": "/Users/acebless/.claude/mcp-config.json#slack",
+      "provides_capabilities": [
+        "notifications"
+      ]
+    },
+    "zapier": {
+      "name": "Zapier",
+      "status": "enabled",
+      "priority": "high",
+      "category": "automation",
+      "config_location": "/Users/acebless/.claude/mcp-config.json#zapier",
+      "provides_capabilities": [
+        "automation",
+        "devtools",
+        "llm",
+        "workspace"
+      ]
+    },
+    "supabase": {
+      "name": "Supabase",
+      "status": "enabled",
+      "priority": "critical",
+      "category": "database",
+      "config_location": "/Users/acebless/.claude/mcp-config.json#supabase",
+      "provides_capabilities": [
+        "database",
+        "graph"
+      ]
+    },
+    "gmail": {
+      "name": "Gmail",
+      "status": "enabled",
+      "priority": "high",
+      "category": "communication",
+      "config_location": "/Users/acebless/.claude/mcp-config.json#gmail",
+      "provides_capabilities": [
+        "llm",
+        "notifications"
+      ]
+    },
+    "github": {
+      "name": "GitHub",
+      "status": "enabled",
+      "priority": "high",
+      "category": "repository",
+      "config_location": "/Users/acebless/.claude/mcp-config.json#github",
+      "provides_capabilities": []
+    },
+    "graphify": {
+      "name": "Graphify",
+      "status": "enabled",
+      "priority": "high",
+      "category": "knowledge_graph",
+      "config_location": "/Users/acebless/.claude/mcp-config.json#graphify",
+      "provides_capabilities": [
+        "graph",
+        "search"
+      ]
+    },
+    "memory": {
+      "name": "Memory MCP",
+      "status": "enabled",
+      "priority": "high",
+      "category": "context",
+      "config_location": "/Users/acebless/.claude/mcp-config.json#memory",
+      "provides_capabilities": [
+        "graph",
+        "search"
+      ]
+    },
+    "stripe": {
+      "name": "Stripe",
+      "status": "enabled",
+      "priority": "medium",
+      "category": "payments",
+      "config_location": "/Users/acebless/.claude/mcp-config.json#stripe",
+      "provides_capabilities": [
+        "payments"
+      ]
+    },
+    "hubspot": {
+      "name": "HubSpot",
+      "status": "enabled",
+      "priority": "medium",
+      "category": "crm",
+      "config_location": "/Users/acebless/.claude/mcp-config.json#hubspot",
+      "provides_capabilities": [
+        "crm"
+      ]
+    },
+    "google_calendar": {
+      "name": "Google Calendar",
+      "status": "enabled",
+      "priority": "medium",
+      "category": "scheduling",
+      "config_location": "/Users/acebless/.claude/mcp-config.json#google_calendar",
+      "provides_capabilities": [
+        "scheduling"
+      ]
+    },
+    "unlimited_ocr": {
+      "name": "Unlimited OCR (Baidu)",
+      "status": "available",
+      "priority": "high",
+      "category": "document_processing",
+      "config_location": "",
+      "provides_capabilities": [
+        "ocr"
+      ]
+    },
+    "pdf_creation": {
+      "name": "PDF Creation (reportlab/pypdf)",
+      "status": "available",
+      "priority": "high",
+      "category": "document_processing",
+      "config_location": "",
+      "provides_capabilities": [
+        "analytics",
+        "ocr"
+      ]
+    },
+    "file_operations": {
+      "name": "File Operations (Python native)",
+      "status": "available",
+      "priority": "high",
+      "category": "file_management",
+      "config_location": "",
+      "provides_capabilities": []
+    }
+  },
+  "skills": {
+    "count": 9,
+    "items": {
+      "ask-docs": {
+        "source": "crewaiinc/skills",
+        "path": "skills/ask-docs/SKILL.md"
+      },
+      "design-agent": {
+        "source": "crewaiinc/skills",
+        "path": "skills/design-agent/SKILL.md"
+      },
+      "design-task": {
+        "source": "crewaiinc/skills",
+        "path": "skills/design-task/SKILL.md"
+      },
+      "find-skills": {
+        "source": "vercel-labs/skills",
+        "path": "skills/find-skills/SKILL.md"
+      },
+      "getting-started": {
+        "source": "crewaiinc/skills",
+        "path": "skills/getting-started/SKILL.md"
+      },
+      "higgsfield-generate": {
+        "source": "higgsfield-ai/skills",
+        "path": "higgsfield-generate/SKILL.md"
+      },
+      "higgsfield-marketplace-cards": {
+        "source": "higgsfield-ai/skills",
+        "path": "higgsfield-marketplace-cards/SKILL.md"
+      },
+      "higgsfield-product-photoshoot": {
+        "source": "higgsfield-ai/skills",
+        "path": "higgsfield-product-photoshoot/SKILL.md"
+      },
+      "higgsfield-soul-id": {
+        "source": "higgsfield-ai/skills",
+        "path": "higgsfield-soul-id/SKILL.md"
+      }
+    }
+  },
+  "pipeline_scripts": [
+    "build_capability_catalog.py",
+    "build_repo_summaries.py",
+    "build_repo_rag.py",
+    "build_readme_corpus.py",
+    "build_capability_backfill.py",
+    "build_venture_capabilities.py",
+    "build_repo_graph.py",
+    "build_dependency_map.py",
+    "retrieve.py"
+  ],
+  "data_artifacts": [
+    "REPOSITORY-REGISTRY.json",
+    "repo-summaries.json",
+    "readmes.json",
+    "repo-capabilities-backfill.json",
+    "venture-capabilities-proposed.csv",
+    "registries/capability_vocabulary.json",
+    "registries/capabilities-catalog.json",
+    "registries/ventures.csv",
+    "registries/opco_venture_map.csv"
+  ],
+  "graph_stats": {
+    "Repo": 1701,
+    "Capability": 25,
+    "Venture": 712,
+    "OPCO": 18,
+    "Entity": 7,
+    "MCP": 16,
+    "Skill": 9,
+    "IMPLEMENTS": 2187,
+    "NEEDS": 6542,
+    "BELONGS_TO": 1008,
+    "PROVIDES": 22
+  },
+  "capability_coverage": [
+    {
+      "cap": "llm",
+      "repos": 710,
+      "vents": 422,
+      "mcps": 2
+    },
+    {
+      "cap": "dashboard",
+      "repos": 109,
+      "vents": 712,
+      "mcps": 0
+    },
+    {
+      "cap": "api",
+      "repos": 100,
+      "vents": 712,
+      "mcps": 0
+    },
+    {
+      "cap": "database",
+      "repos": 62,
+      "vents": 712,
+      "mcps": 3
+    },
+    {
+      "cap": "payments",
+      "repos": 26,
+      "vents": 712,
+      "mcps": 1
+    },
+    {
+      "cap": "authentication",
+      "repos": 19,
+      "vents": 712,
+      "mcps": 0
+    },
+    {
+      "cap": "automation",
+      "repos": 202,
+      "vents": 312,
+      "mcps": 1
+    },
+    {
+      "cap": "analytics",
+      "repos": 52,
+      "vents": 455,
+      "mcps": 2
+    },
+    {
+      "cap": "agent",
+      "repos": 279,
+      "vents": 141,
+      "mcps": 0
+    },
+    {
+      "cap": "notifications",
+      "repos": 30,
+      "vents": 338,
+      "mcps": 2
+    },
+    {
+      "cap": "search",
+      "repos": 62,
+      "vents": 288,
+      "mcps": 2
+    },
+    {
+      "cap": "crm",
+      "repos": 41,
+      "vents": 308,
+      "mcps": 1
+    },
+    {
+      "cap": "scheduling",
+      "repos": 14,
+      "vents": 243,
+      "mcps": 1
+    },
+    {
+      "cap": "monitoring",
+      "repos": 92,
+      "vents": 119,
+      "mcps": 0
+    },
+    {
+      "cap": "devtools",
+      "repos": 117,
+      "vents": 91,
+      "mcps": 1
+    },
+    {
+      "cap": "workspace",
+      "repos": 51,
+      "vents": 109,
+      "mcps": 1
+    },
+    {
+      "cap": "security",
+      "repos": 46,
+      "vents": 50,
+      "mcps": 0
+    },
+    {
+      "cap": "construction",
+      "repos": 48,
+      "vents": 10,
+      "mcps": 0
+    },
+    {
+      "cap": "ocr",
+      "repos": 5,
+      "vents": 46,
+      "mcps": 2
+    },
+    {
+      "cap": "portfolio",
+      "repos": 7,
+      "vents": 43,
+      "mcps": 0
+    },
+    {
+      "cap": "mcp",
+      "repos": 46,
+      "vents": 0,
+      "mcps": 0
+    },
+    {
+      "cap": "machine-learning",
+      "repos": 27,
+      "vents": 2,
+      "mcps": 0
+    },
+    {
+      "cap": "rag",
+      "repos": 24,
+      "vents": 0,
+      "mcps": 0
+    },
+    {
+      "cap": "graph",
+      "repos": 13,
+      "vents": 0,
+      "mcps": 3
+    },
+    {
+      "cap": "fashion-design",
+      "repos": 5,
+      "vents": 5,
+      "mcps": 0
+    }
+  ]
+}

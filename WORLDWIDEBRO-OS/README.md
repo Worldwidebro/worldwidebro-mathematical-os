@@ -7,6 +7,21 @@ The single canonical operating system for Worldwidebro Holdings — a unified
 > folders that previously lived at the root of `~/Documents`. See `findings.md` (repo root)
 > for the migration map and `task_plan.md` for consolidation status.
 
+## Start here locally
+
+From `/Users/acebless/Documents`:
+
+1. Start the local stack: `docker compose up -d neo4j redis postgres qdrant grafana wbo`
+2. Confirm health: Neo4j on http://localhost:7474, Grafana on http://localhost:3000
+3. Regenerate local registries from the canonical CSVs:
+   `cd WORLDWIDEBRO-OS && python3 08-DATA/build_registries.py`
+4. Run the bridge pipeline once:
+   `python3 bridge_layer_orchestrator.py --once`
+5. Check outputs:
+   - `WORLDWIDEBRO-OS/08-DATA/registries/*.csv`
+   - `.planning/graph-data.json`
+   - `KNOWLEDGE-GRAPH-DASHBOARD.md`
+
 ## The hierarchy (authority flows downward)
 
 ```

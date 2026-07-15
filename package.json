@@ -2,12 +2,20 @@
   "name": "vapi-ai-calling-system",
   "version": "1.0.0",
   "description": "Autonomous voice agent system for B2B sales (E-Commerce, Tech, Beauty)",
+  "private": true,
   "main": "webhook-server.js",
   "scripts": {
     "start": "node webhook-server.js",
     "dev": "nodemon webhook-server.js",
-    "test": "echo 'Running tests...'",
-    "setup": "npm install && cp .env.example .env && echo 'Setup complete. Edit .env with your credentials.'"
+    "test": "python3 test_stack.py",
+    "setup": "npm install && cp .env.example .env && echo 'Setup complete. Edit .env with your credentials.'",
+    "bridge:once": "python3 bridge_layer_orchestrator.py --once",
+    "bridge:loop": "python3 bridge_layer_orchestrator.py --loop 1h",
+    "registry": "cd WORLDWIDEBRO-OS && python3 08-DATA/build_registries.py",
+    "sync": "python3 obsidian_graph_sync.py",
+    "local:up": "docker compose up -d",
+    "local:down": "docker compose down",
+    "local:health": "docker compose ps"
   },
   "keywords": [
     "vapi",

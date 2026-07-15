@@ -1,0 +1,14 @@
+venture: Miami Cleaners
+id: CLE-001
+agents:
+- name: Clean CEO Agent
+  role: CEO
+  mission: Operate sector workflows dynamically.
+  authority:
+  - read_local_database
+  limits:
+  - cannot_alter_production
+  brain:
+    reasoning: qwen2.5:7b
+    coding: deepseek-coder:6.7b
+    embeddings: nomic-embed-text

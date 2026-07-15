@@ -1,0 +1,713 @@
+venture_id,name,sector,development_stage,entity_status,has_repo,has_revenue_model,capability_coverage_pct,readiness_pct,readiness_tier,repo_key,stage_verified,development_stage_v1_self_reported,development_stage_v2_computed,readiness_pct_v1,readiness_pct_v2
+EDU-017-AI-Coding-Tutor,Ai Coding Tutor,education,growth,pending_formation,True,True,10.0,55.0,Building / MVP,edu-017-ai-coding-tutor,True,growth,validation,55.0,35.8
+FIN-036-Arbitrage-Nexus-Platform,Arbitrage Nexus Platform,financial,growth,pending_formation,True,True,0.0,51.5,Building / MVP,fin-036-arbitrage-nexus-platform,True,growth,planned,51.5,23.5
+EC-044-Live-Commerce-Platform,Live Commerce Platform,e-commerce,growth,pending_formation,True,True,0.0,51.5,Building / MVP,ec-044-live-commerce-platform,True,growth,planned,51.5,23.5
+EC-046-3D-Product-Viewer,3D Product Viewer,e-commerce,growth,pending_formation,True,True,0.0,51.5,Building / MVP,ec-046-3d-product-viewer,True,growth,planned,51.5,23.5
+FS-013-Fitness-Apparel,Fitness Apparel,fitness-sports,mvp,pending_formation,True,True,11.1,46.6,Building / MVP,fs-013-fitness-apparel,True,mvp,validation,46.6,36.1
+FH-001-Personal-Chef-Service,Personal Chef Service,food-hospitality,mvp,pending_formation,True,True,0.0,42.8,Building / MVP,fh-001-personal-chef-service,True,mvp,planned,42.8,23.5
+FH-002-Meal-Prep-Delivery,Meal Prep Delivery,food-hospitality,mvp,pending_formation,True,True,0.0,42.8,Building / MVP,fh-002-meal-prep-delivery,True,mvp,planned,42.8,23.5
+FH-005-Corporate-Lunch-Service,Corporate Lunch Service,food-hospitality,mvp,pending_formation,True,True,0.0,42.8,Building / MVP,fh-005-corporate-lunch-service,True,mvp,planned,42.8,23.5
+FH-006-Healthy-Meal-Prep-for-Gyms,Healthy Meal Prep For Gyms,food-hospitality,mvp,pending_formation,True,True,0.0,42.8,Building / MVP,fh-006-healthy-meal-prep-for-gyms,True,mvp,planned,42.8,23.5
+FH-008-Athlete-Nutrition-Service,Athlete Nutrition Service,food-hospitality,mvp,pending_formation,True,True,0.0,42.8,Building / MVP,fh-008-athlete-nutrition-service,True,mvp,planned,42.8,23.5
+FH-011-Sauce-or-Seasoning-Brand,Sauce Or Seasoning Brand,food-hospitality,mvp,pending_formation,True,True,0.0,42.8,Building / MVP,fh-011-sauce-or-seasoning-brand,True,mvp,planned,42.8,23.5
+FH-012-Protein-Snacks-Brand,Protein Snacks Brand,food-hospitality,mvp,pending_formation,True,True,0.0,42.8,Building / MVP,fh-012-protein-snacks-brand,True,mvp,planned,42.8,23.5
+FH-016-Recipe-App,Recipe App,food-hospitality,mvp,pending_formation,True,True,0.0,42.8,Building / MVP,fh-016-recipe-app,True,mvp,planned,42.8,23.5
+FH-017-Cooking-Content-Brand,Cooking Content Brand,food-hospitality,mvp,pending_formation,True,True,0.0,42.8,Building / MVP,fh-017-cooking-content-brand,True,mvp,planned,42.8,23.5
+FH-018-Food-Influencer-Brand,Food Influencer Brand,food-hospitality,mvp,pending_formation,True,True,0.0,42.8,Building / MVP,fh-018-food-influencer-brand,True,mvp,planned,42.8,23.5
+FH-019-Cooking-Course-Platform,Cooking Course Platform,food-hospitality,mvp,pending_formation,True,True,0.0,42.8,Building / MVP,fh-019-cooking-course-platform,True,mvp,planned,42.8,23.5
+FH-024-Juice-Bar,Juice Bar,food-hospitality,mvp,pending_formation,True,True,0.0,42.8,Building / MVP,fh-024-juice-bar,True,mvp,planned,42.8,23.5
+FH-030-Organic-Food-Brand,Organic Food Brand,food-hospitality,mvp,pending_formation,True,True,0.0,42.8,Building / MVP,fh-030-organic-food-brand,True,mvp,planned,42.8,23.5
+FH-031-Vegan-Food-Company,Vegan Food Company,food-hospitality,mvp,pending_formation,True,True,0.0,42.8,Building / MVP,fh-031-vegan-food-company,True,mvp,planned,42.8,23.5
+FH-032-Keto-Meal-Service,Keto Meal Service,food-hospitality,mvp,pending_formation,True,True,0.0,42.8,Building / MVP,fh-032-keto-meal-service,True,mvp,planned,42.8,23.5
+FH-033-Food-Photography-Service,Food Photography Service,food-hospitality,mvp,pending_formation,True,True,0.0,42.8,Building / MVP,fh-033-food-photography-service,True,mvp,planned,42.8,23.5
+FH-034-Restaurant-Consulting,Restaurant Consulting,food-hospitality,mvp,pending_formation,True,True,0.0,42.8,Building / MVP,fh-034-restaurant-consulting,True,mvp,planned,42.8,23.5
+FS-003-Personal-Training-Studio,Personal Training Studio,fitness-sports,mvp,pending_formation,True,True,0.0,42.8,Building / MVP,fs-003-personal-training-studio,True,mvp,planned,42.8,23.5
+FS-008-Online-Coaching,Online Coaching,fitness-sports,mvp,pending_formation,True,True,0.0,42.8,Building / MVP,fs-008-online-coaching,True,mvp,planned,42.8,23.5
+FS-009-Personal-Trainer-Business,Personal Trainer Business,fitness-sports,mvp,pending_formation,True,True,0.0,42.8,Building / MVP,fs-009-personal-trainer-business,True,mvp,planned,42.8,23.5
+FS-010-Transformation-Program,Transformation Program,fitness-sports,mvp,pending_formation,True,True,0.0,42.8,Building / MVP,fs-010-transformation-program,True,mvp,planned,42.8,23.5
+FS-012-Supplement-Brand,Supplement Brand,fitness-sports,mvp,pending_formation,True,True,0.0,42.8,Building / MVP,fs-012-supplement-brand,True,mvp,planned,42.8,23.5
+FS-015-Recovery-Products,Recovery Products,fitness-sports,mvp,pending_formation,True,True,0.0,42.8,Building / MVP,fs-015-recovery-products,True,mvp,planned,42.8,23.5
+FS-016-Fitness-App,Fitness App,fitness-sports,mvp,pending_formation,True,True,0.0,42.8,Building / MVP,fs-016-fitness-app,True,mvp,planned,42.8,23.5
+FS-025-Corporate-Wellness-Program,Corporate Wellness Program,fitness-sports,mvp,pending_formation,True,True,0.0,42.8,Building / MVP,fs-025-corporate-wellness-program,True,mvp,planned,42.8,23.5
+FIN-001-GenixBank-Lite,Genixbank Lite,financial,validation,pending_formation,True,True,25.0,41.0,Building / MVP,fin-001-genixbank-lite,True,validation,validation,41.0,41.0
+FIN-005-U-Haul-Rental-Affiliate,U Haul Rental Affiliate,financial,validation,pending_formation,True,True,25.0,41.0,Building / MVP,fin-005-u-haul-rental-affiliate,True,validation,validation,41.0,41.0
+FIN-009-Crypto-Tax-Optimizer,Crypto Tax Optimizer,financial,validation,pending_formation,True,True,25.0,41.0,Building / MVP,fin-009-crypto-tax-optimizer,True,validation,validation,41.0,41.0
+FIN-011-Automated-Bookkeeping,Automated Bookkeeping,financial,validation,pending_formation,True,True,25.0,41.0,Building / MVP,fin-011-automated-bookkeeping,True,validation,validation,41.0,41.0
+FIN-015-Financial-Wellness-Coach,Financial Wellness Coach,financial,validation,pending_formation,True,True,25.0,41.0,Building / MVP,fin-015-financial-wellness-coach,True,validation,validation,41.0,41.0
+FIN-019-Payment-Gateway-AI,Payment Gateway Ai,financial,validation,pending_formation,True,True,22.2,40.0,Building / MVP,fin-019-payment-gateway-ai,True,validation,validation,40.0,40.0
+FIN-023-Investment-Portfolio-AI,Investment Portfolio Ai,financial,validation,pending_formation,True,True,22.2,40.0,Building / MVP,fin-023-investment-portfolio-ai,True,validation,validation,40.0,40.0
+TECH-040-Cybersecurity-Shield,Cybersecurity Shield,technology,planned,pending_formation,True,True,40.0,37.5,Planned / Validating,tech-040-cybersecurity-shield,True,planned,validation,37.5,46.2
+FIN-031-Investor-Dashboard-Builder,Investor Dashboard Builder,financial,validation,pending_formation,True,True,12.5,36.6,Planned / Validating,fin-031-investor-dashboard-builder,True,validation,validation,36.6,36.6
+FIN-002-Credit-Repair-Automation,Credit Repair Automation,financial,validation,pending_formation,True,True,11.1,36.1,Planned / Validating,fin-002-credit-repair-automation,True,validation,validation,36.1,36.1
+FIN-003-AI-Boss-Hub-Lite,Ai Boss Hub Lite,financial,validation,pending_formation,True,True,11.1,36.1,Planned / Validating,fin-003-ai-boss-hub-lite,True,validation,validation,36.1,36.1
+FIN-004-GenixBanks-AI-Treasurer,Genixbanks Ai Treasurer,financial,validation,pending_formation,True,True,11.1,36.1,Planned / Validating,fin-004-genixbanks-ai-treasurer,True,validation,validation,36.1,36.1
+FIN-007-Business-Credit-Building,Business Credit Building,financial,validation,pending_formation,True,True,11.1,36.1,Planned / Validating,fin-007-business-credit-building,True,validation,validation,36.1,36.1
+FIN-010-AI-Powered-Garbage-Collection,Ai Powered Garbage Collection,financial,validation,pending_formation,True,True,11.1,36.1,Planned / Validating,fin-010-ai-powered-garbage-collection,True,validation,validation,36.1,36.1
+FIN-012-Invoice-Factoring-AI,Invoice Factoring Ai,financial,validation,pending_formation,True,True,11.1,36.1,Planned / Validating,fin-012-invoice-factoring-ai,True,validation,validation,36.1,36.1
+FIN-013-Charity-Donation-AI,Charity Donation Ai,financial,validation,pending_formation,True,True,11.1,36.1,Planned / Validating,fin-013-charity-donation-ai,True,validation,validation,36.1,36.1
+FIN-014-Expense-Tracker-AI,Expense Tracker Ai,financial,validation,pending_formation,True,True,11.1,36.1,Planned / Validating,fin-014-expense-tracker-ai,True,validation,validation,36.1,36.1
+FIN-016-Trade-Finance-AI,Trade Finance Ai,financial,validation,pending_formation,True,True,11.1,36.1,Planned / Validating,fin-016-trade-finance-ai,True,validation,validation,36.1,36.1
+FIN-017-Remittance-AI,Remittance Ai,financial,validation,pending_formation,True,True,11.1,36.1,Planned / Validating,fin-017-remittance-ai,True,validation,validation,36.1,36.1
+FIN-018-Wealth-Transfer-AI,Wealth Transfer Ai,financial,validation,pending_formation,True,True,11.1,36.1,Planned / Validating,fin-018-wealth-transfer-ai,True,validation,validation,36.1,36.1
+FIN-020-Debt-Consolidation-AI,Debt Consolidation Ai,financial,validation,pending_formation,True,True,11.1,36.1,Planned / Validating,fin-020-debt-consolidation-ai,True,validation,validation,36.1,36.1
+FIN-022-Budget-Forecasting-AI,Budget Forecasting Ai,financial,validation,pending_formation,True,True,11.1,36.1,Planned / Validating,fin-022-budget-forecasting-ai,True,validation,validation,36.1,36.1
+FIN-024-Crowdfunding-AI,Crowdfunding Ai,financial,validation,pending_formation,True,True,11.1,36.1,Planned / Validating,fin-024-crowdfunding-ai,True,validation,validation,36.1,36.1
+FIN-025-Escrow-Automation,Escrow Automation,financial,validation,pending_formation,True,True,11.1,36.1,Planned / Validating,fin-025-escrow-automation,True,validation,validation,36.1,36.1
+FIN-027-Patent-Writer-AI,Patent Writer Ai,financial,validation,pending_formation,True,True,11.1,36.1,Planned / Validating,fin-027-patent-writer-ai,True,validation,validation,36.1,36.1
+FIN-028-Legal-Analyzer-AI,Legal Analyzer Ai,financial,validation,pending_formation,True,True,11.1,36.1,Planned / Validating,fin-028-legal-analyzer-ai,True,validation,validation,36.1,36.1
+FIN-030-Local-SEO-Ranker-AI,Local Seo Ranker Ai,financial,validation,pending_formation,True,True,11.1,36.1,Planned / Validating,fin-030-local-seo-ranker-ai,True,validation,validation,36.1,36.1
+FIN-032-Legal-Toolkit-AI,Legal Toolkit Ai,financial,validation,pending_formation,True,True,11.1,36.1,Planned / Validating,fin-032-legal-toolkit-ai,True,validation,validation,36.1,36.1
+FIN-033-AI-Tax-Preparation-Service,Ai Tax Preparation Service,financial,validation,pending_formation,True,True,11.1,36.1,Planned / Validating,fin-033-ai-tax-preparation-service,True,validation,validation,36.1,36.1
+FIN-034-Payroll-Automation,Payroll Automation,financial,validation,pending_formation,True,True,11.1,36.1,Planned / Validating,fin-034-payroll-automation,True,validation,validation,36.1,36.1
+FIN-035-Insurance-Underwriting-AI,Insurance Underwriting Ai,financial,validation,pending_formation,True,True,11.1,36.1,Planned / Validating,fin-035-insurance-underwriting-ai,True,validation,validation,36.1,36.1
+FH-015-AI-Nutrition-Planner,Ai Nutrition Planner,food-hospitality,validation,pending_formation,True,True,11.1,36.1,Planned / Validating,fh-015-ai-nutrition-planner,True,validation,validation,36.1,36.1
+TECH-039-Blockchain-Verifier-AI,Blockchain Verifier Ai,technology,validation,pending_formation,True,True,11.1,36.1,Planned / Validating,tech-039-blockchain-verifier-ai,True,validation,validation,36.1,36.1
+TECH-013-Workflow-Automation,Workflow Automation,technology,planned,pending_formation,True,True,33.3,35.2,Planned / Validating,tech-013-workflow-automation,True,planned,validation,35.2,43.9
+TECH-014-Sentiment-Analyzer,Sentiment Analyzer,technology,planned,pending_formation,True,True,33.3,35.2,Planned / Validating,tech-014-sentiment-analyzer,True,planned,validation,35.2,43.9
+TECH-020-Recommendation-Engine,Recommendation Engine,technology,planned,pending_formation,True,True,33.3,35.2,Planned / Validating,tech-020-recommendation-engine,True,planned,validation,35.2,43.9
+TECH-045-Workflow-Automation,Workflow Automation,technology,planned,pending_formation,True,True,33.3,35.2,Planned / Validating,tech-045-workflow-automation,True,planned,validation,35.2,43.9
+TECH-046-Sentiment-Analyzer,Sentiment Analyzer,technology,planned,pending_formation,True,True,33.3,35.2,Planned / Validating,tech-046-sentiment-analyzer,True,planned,validation,35.2,43.9
+TECH-052-Recommendation-Engine,Recommendation Engine,technology,planned,pending_formation,True,True,33.3,35.2,Planned / Validating,tech-052-recommendation-engine,True,planned,validation,35.2,43.9
+FIN-006-Tax-Prep-Filing-Services,Tax Prep Filing Services,financial,validation,pending_formation,True,True,0.0,32.2,Planned / Validating,fin-006-tax-prep-filing-services,True,validation,validation,32.2,32.2
+FIN-008-Business-Formation-Services,Business Formation Services,financial,validation,pending_formation,True,True,0.0,32.2,Planned / Validating,fin-008-business-formation-services,True,validation,planned,32.2,23.5
+FIN-021-Tax-Deduction-Finder,Tax Deduction Finder,financial,validation,pending_formation,True,True,0.0,32.2,Planned / Validating,fin-021-tax-deduction-finder,True,validation,validation,32.2,32.2
+FIN-026-Financial-Compliance-Scanner,Financial Compliance Scanner,financial,validation,pending_formation,True,True,0.0,32.2,Planned / Validating,fin-026-financial-compliance-scanner,True,validation,planned,32.2,23.5
+FIN-029-Compliance-Wallet-SaaS,Compliance Wallet Saas,financial,validation,pending_formation,True,True,0.0,32.2,Planned / Validating,fin-029-compliance-wallet-saas,True,validation,planned,32.2,23.5
+FH-003-Private-Dinner-Experiences,Private Dinner Experiences,food-hospitality,validation,pending_formation,True,True,0.0,32.2,Planned / Validating,fh-003-private-dinner-experiences,True,validation,planned,32.2,23.5
+FH-004-Catering-Company,Catering Company,food-hospitality,validation,pending_formation,True,True,0.0,32.2,Planned / Validating,fh-004-catering-company,True,validation,planned,32.2,23.5
+FH-007-Elderly-Meal-Service,Elderly Meal Service,food-hospitality,validation,pending_formation,True,True,0.0,32.2,Planned / Validating,fh-007-elderly-meal-service,True,validation,planned,32.2,23.5
+FH-009-Packaged-Food-Brand,Packaged Food Brand,food-hospitality,validation,pending_formation,True,True,0.0,32.2,Planned / Validating,fh-009-packaged-food-brand,True,validation,planned,32.2,23.5
+FH-010-Frozen-Meals-Company,Frozen Meals Company,food-hospitality,validation,pending_formation,True,True,0.0,32.2,Planned / Validating,fh-010-frozen-meals-company,True,validation,planned,32.2,23.5
+FH-013-Meal-Kit-Company,Meal Kit Company,food-hospitality,validation,pending_formation,True,True,0.0,32.2,Planned / Validating,fh-013-meal-kit-company,True,validation,planned,32.2,23.5
+FH-014-Cloud-Kitchen-,Cloud Kitchen ,food-hospitality,validation,pending_formation,True,True,0.0,32.2,Planned / Validating,fh-014-cloud-kitchen-,True,validation,planned,32.2,23.5
+FH-020-Restaurant-POS-System,Restaurant Pos System,food-hospitality,validation,pending_formation,True,True,0.0,32.2,Planned / Validating,fh-020-restaurant-pos-system,True,validation,planned,32.2,23.5
+FH-021-Food-Truck-Business,Food Truck Business,food-hospitality,validation,pending_formation,True,True,0.0,32.2,Planned / Validating,fh-021-food-truck-business,True,validation,planned,32.2,23.5
+FH-022-Specialty-Coffee-Shop,Specialty Coffee Shop,food-hospitality,validation,pending_formation,True,True,0.0,32.2,Planned / Validating,fh-022-specialty-coffee-shop,True,validation,planned,32.2,23.5
+FH-025-Ice-Cream-Shop,Ice Cream Shop,food-hospitality,validation,pending_formation,True,True,0.0,32.2,Planned / Validating,fh-025-ice-cream-shop,True,validation,planned,32.2,23.5
+FH-026-Gourmet-Food-Market,Gourmet Food Market,food-hospitality,validation,pending_formation,True,True,0.0,32.2,Planned / Validating,fh-026-gourmet-food-market,True,validation,planned,32.2,23.5
+FH-035-Food-Safety-Training,Food Safety Training,food-hospitality,validation,pending_formation,True,True,0.0,32.2,Planned / Validating,fh-035-food-safety-training,True,validation,planned,32.2,23.5
+FS-001-Gym,Gym,fitness-sports,validation,pending_formation,True,True,0.0,32.2,Planned / Validating,fs-001-gym,True,validation,planned,32.2,23.5
+FS-002-Boutique-Fitness-Studio,Boutique Fitness Studio,fitness-sports,validation,pending_formation,True,True,0.0,32.2,Planned / Validating,fs-002-boutique-fitness-studio,True,validation,planned,32.2,23.5
+FS-004-Women-Only-Gym,Women Only Gym,fitness-sports,validation,pending_formation,True,True,0.0,32.2,Planned / Validating,fs-004-women-only-gym,True,validation,planned,32.2,23.5
+FS-005-Boxing-Gym,Boxing Gym,fitness-sports,validation,pending_formation,True,True,0.0,32.2,Planned / Validating,fs-005-boxing-gym,True,validation,planned,32.2,23.5
+FS-006-CrossFit-Gym,Crossfit Gym,fitness-sports,validation,pending_formation,True,True,0.0,32.2,Planned / Validating,fs-006-crossfit-gym,True,validation,planned,32.2,23.5
+FS-011-Athlete-Training-Company,Athlete Training Company,fitness-sports,validation,pending_formation,True,True,0.0,32.2,Planned / Validating,fs-011-athlete-training-company,True,validation,planned,32.2,23.5
+FS-014-Workout-Equipment-Brand,Workout Equipment Brand,fitness-sports,validation,pending_formation,True,True,0.0,32.2,Planned / Validating,fs-014-workout-equipment-brand,True,validation,planned,32.2,23.5
+FS-020-Yoga-Studio,Yoga Studio,fitness-sports,validation,pending_formation,True,True,0.0,32.2,Planned / Validating,fs-020-yoga-studio,True,validation,planned,32.2,23.5
+FS-021-Pilates-Studio,Pilates Studio,fitness-sports,validation,pending_formation,True,True,0.0,32.2,Planned / Validating,fs-021-pilates-studio,True,validation,planned,32.2,23.5
+FS-022-Dance-Studio,Dance Studio,fitness-sports,validation,pending_formation,True,True,0.0,32.2,Planned / Validating,fs-022-dance-studio,True,validation,planned,32.2,23.5
+FS-023-Martial-Arts-Dojo,Martial Arts Dojo,fitness-sports,validation,pending_formation,True,True,0.0,32.2,Planned / Validating,fs-023-martial-arts-dojo,True,validation,planned,32.2,23.5
+PS-012-Insurance-Agency,Insurance Agency,professional-services,validation,pending_formation,True,True,0.0,32.2,Planned / Validating,ps-012-insurance-agency,True,validation,validation,32.2,32.2
+SPEC-032-AI-Game-Designer,Ai Game Designer,specialized,growth,unknown,False,False,0.0,31.5,Planned / Validating,spec-032-ai-game-designer,False,growth,growth,31.5,41.5
+EC-039-Visual-Search-AI,Visual Search Ai,e-commerce,planned,pending_formation,True,True,20.0,30.5,Planned / Validating,ec-039-visual-search-ai,True,planned,validation,30.5,39.2
+EC-051-AI-Email-Marketing,Ai Email Marketing,e-commerce,planned,pending_formation,True,True,20.0,30.5,Planned / Validating,ec-051-ai-email-marketing,True,planned,validation,30.5,39.2
+EC-067-AI-Payment-Optimization,Ai Payment Optimization,e-commerce,planned,pending_formation,True,True,20.0,30.5,Planned / Validating,ec-067-ai-payment-optimization,True,planned,validation,30.5,39.2
+EC-076-AI-Sales-Forecasting,Ai Sales Forecasting,e-commerce,planned,pending_formation,True,True,20.0,30.5,Planned / Validating,ec-076-ai-sales-forecasting,True,planned,validation,30.5,39.2
+TECH-021-Network-Security-AI,Network Security Ai,technology,planned,pending_formation,True,True,20.0,30.5,Planned / Validating,tech-021-network-security-ai,True,planned,validation,30.5,39.2
+TECH-027-Predictive-Analytics-AI,Predictive Analytics Ai,technology,planned,pending_formation,True,True,20.0,30.5,Planned / Validating,tech-027-predictive-analytics-ai,True,planned,validation,30.5,39.2
+TECH-030-AI-Monitoring-System,Ai Monitoring System,technology,planned,pending_formation,True,True,20.0,30.5,Planned / Validating,tech-030-ai-monitoring-system,True,planned,validation,30.5,39.2
+TECH-053-Network-Security-AI,Network Security Ai,technology,planned,pending_formation,True,True,20.0,30.5,Planned / Validating,tech-053-network-security-ai,True,planned,validation,30.5,39.2
+TECH-059-Predictive-Analytics-AI,Predictive Analytics Ai,technology,planned,pending_formation,True,True,20.0,30.5,Planned / Validating,tech-059-predictive-analytics-ai,True,planned,validation,30.5,39.2
+OPS-006-Document-Automation-AI,Document Automation Ai,operations,planned,pending_formation,True,True,20.0,30.5,Planned / Validating,ops-006-document-automation-ai,True,planned,validation,30.5,39.2
+EM-047-AI-Environmental-Monitoring,Ai Environmental Monitoring,emerging,planned,pending_formation,True,True,20.0,30.5,Planned / Validating,em-047-ai-environmental-monitoring,True,planned,validation,30.5,39.2
+EC-009-Sustainable-Fashion-AI,Sustainable Fashion Ai,e-commerce,planned,pending_formation,True,True,18.2,29.9,Planned / Validating,ec-009-sustainable-fashion-ai,True,planned,validation,29.9,38.6
+EC-012-Fashion-Designer-AI,Fashion Designer Ai,e-commerce,planned,pending_formation,True,True,18.2,29.9,Planned / Validating,ec-012-fashion-designer-ai,True,planned,validation,29.9,38.6
+COMM-005-Ace-Food-Security-AI,Ace Food Security Ai,community,planned,pending_formation,True,True,18.2,29.9,Planned / Validating,comm-005-ace-food-security-ai,True,planned,validation,29.9,38.6
+FS-017-AI-Personal-Trainer,Ai Personal Trainer,fitness-sports,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,fs-017-ai-personal-trainer,True,planned,validation,27.4,36.1
+FS-019-Wearable-Analytics-Platform,Wearable Analytics Platform,fitness-sports,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,fs-019-wearable-analytics-platform,True,planned,validation,27.4,36.1
+EC-001-Angels-in-Daylight,Angels In Daylight,e-commerce,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,ec-001-angels-in-daylight,True,planned,validation,27.4,36.1
+EC-003-Shopify-Autopilot,Shopify Autopilot,e-commerce,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,ec-003-shopify-autopilot,True,planned,validation,27.4,36.1
+EC-006-Dropship-Hub,Dropship Hub,e-commerce,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,ec-006-dropship-hub,True,planned,validation,27.4,36.1
+EC-032-Dynamic-Pricing-Engine,Dynamic Pricing Engine,e-commerce,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,ec-032-dynamic-pricing-engine,True,planned,validation,27.4,36.1
+EC-034-Recommendation-Engine,Recommendation Engine,e-commerce,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,ec-034-recommendation-engine,True,planned,validation,27.4,36.1
+EC-043-UGC-Content-Aggregator,Ugc Content Aggregator,e-commerce,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,ec-043-ugc-content-aggregator,True,planned,validation,27.4,36.1
+EC-049-Rental-Marketplace,Rental Marketplace,e-commerce,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,ec-049-rental-marketplace,True,planned,validation,27.4,36.1
+TECH-001-Quantum-Algorithm-AI,Quantum Algorithm Ai,technology,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,tech-001-quantum-algorithm-ai,True,planned,validation,27.4,36.1
+TECH-002-AI-Compliance-Scanner,Ai Compliance Scanner,technology,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,tech-002-ai-compliance-scanner,True,planned,validation,27.4,36.1
+TECH-003-Cloud-Management-AI,Cloud Management Ai,technology,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,tech-003-cloud-management-ai,True,planned,validation,27.4,36.1
+TECH-004-Robotics-Training-AI,Robotics Training Ai,technology,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,tech-004-robotics-training-ai,True,planned,validation,27.4,36.1
+TECH-005-Customer-Insights-AI,Customer Insights Ai,technology,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,tech-005-customer-insights-ai,True,planned,validation,27.4,36.1
+TECH-006-Voice-Assistant-AI,Voice Assistant Ai,technology,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,tech-006-voice-assistant-ai,True,planned,validation,27.4,36.1
+TECH-007-Blockchain-Verifier-AI,Blockchain Verifier Ai,technology,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,tech-007-blockchain-verifier-ai,True,planned,validation,27.4,36.1
+TECH-009-Content-Studio-AI,Content Studio Ai,technology,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,tech-009-content-studio-ai,True,planned,validation,27.4,36.1
+TECH-010-Smart-Home-AI,Smart Home Ai,technology,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,tech-010-smart-home-ai,True,planned,validation,27.4,36.1
+TECH-012-Data-Visualization-AI,Data Visualization Ai,technology,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,tech-012-data-visualization-ai,True,planned,validation,27.4,36.1
+TECH-015-Image-Recognition-AI,Image Recognition Ai,technology,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,tech-015-image-recognition-ai,True,planned,validation,27.4,36.1
+TECH-016-Video-Editor-AI,Video Editor Ai,technology,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,tech-016-video-editor-ai,True,planned,validation,27.4,36.1
+TECH-017-Speech-to-Text-AI,Speech To Text Ai,technology,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,tech-017-speech-to-text-ai,True,planned,validation,27.4,36.1
+TECH-018-Text-to-Speech-AI,Text To Speech Ai,technology,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,tech-018-text-to-speech-ai,True,planned,validation,27.4,36.1
+TECH-022-Database-Optimizer,Database Optimizer,technology,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,tech-022-database-optimizer,True,planned,validation,27.4,36.1
+TECH-023-AI-Testing-Platform,Ai Testing Platform,technology,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,tech-023-ai-testing-platform,True,planned,validation,27.4,36.1
+TECH-026-AI-Ethics-Auditor,Ai Ethics Auditor,technology,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,tech-026-ai-ethics-auditor,True,planned,validation,27.4,36.1
+TECH-028-AI-Training-Platform,Ai Training Platform,technology,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,tech-028-ai-training-platform,True,planned,validation,27.4,36.1
+TECH-029-Digital-Twin-AI,Digital Twin Ai,technology,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,tech-029-digital-twin-ai,True,planned,validation,27.4,36.1
+TECH-031-Edge-Computing-AI,Edge Computing Ai,technology,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,tech-031-edge-computing-ai,True,planned,validation,27.4,36.1
+TECH-032-AI-Integration-Hub,Ai Integration Hub,technology,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,tech-032-ai-integration-hub,True,planned,validation,27.4,36.1
+TECH-033-Quantum-Algorithm-AI,Quantum Algorithm Ai,technology,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,tech-033-quantum-algorithm-ai,True,planned,validation,27.4,36.1
+TECH-034-AI-Compliance-Scanner,Ai Compliance Scanner,technology,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,tech-034-ai-compliance-scanner,True,planned,validation,27.4,36.1
+TECH-035-Cloud-Management-AI,Cloud Management Ai,technology,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,tech-035-cloud-management-ai,True,planned,validation,27.4,36.1
+TECH-037-Customer-Insights-AI,Customer Insights Ai,technology,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,tech-037-customer-insights-ai,True,planned,validation,27.4,36.1
+TECH-038-Voice-Assistant-AI,Voice Assistant Ai,technology,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,tech-038-voice-assistant-ai,True,planned,validation,27.4,36.1
+TECH-041-Content-Studio-AI,Content Studio Ai,technology,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,tech-041-content-studio-ai,True,planned,validation,27.4,36.1
+TECH-042-Smart-Home-AI,Smart Home Ai,technology,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,tech-042-smart-home-ai,True,planned,validation,27.4,36.1
+TECH-044-Data-Visualization-AI,Data Visualization Ai,technology,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,tech-044-data-visualization-ai,True,planned,validation,27.4,36.1
+TECH-047-Image-Recognition-AI,Image Recognition Ai,technology,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,tech-047-image-recognition-ai,True,planned,validation,27.4,36.1
+TECH-048-Video-Editor-AI,Video Editor Ai,technology,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,tech-048-video-editor-ai,True,planned,validation,27.4,36.1
+TECH-049-Speech-to-Text-AI,Speech To Text Ai,technology,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,tech-049-speech-to-text-ai,True,planned,validation,27.4,36.1
+TECH-051-Fraud-Prevention-AI,Fraud Prevention Ai,technology,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,tech-051-fraud-prevention-ai,True,planned,validation,27.4,36.1
+TECH-054-Database-Optimizer,Database Optimizer,technology,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,tech-054-database-optimizer,True,planned,validation,27.4,36.1
+TECH-055-AI-Testing-Platform,Ai Testing Platform,technology,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,tech-055-ai-testing-platform,True,planned,validation,27.4,36.1
+TECH-058-AI-Ethics-Auditor,Ai Ethics Auditor,technology,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,tech-058-ai-ethics-auditor,True,planned,validation,27.4,36.1
+TECH-060-AI-Training-Platform,Ai Training Platform,technology,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,tech-060-ai-training-platform,True,planned,validation,27.4,36.1
+OPS-001-Fractional-CTO-Agency,Fractional Cto Agency,operations,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,ops-001-fractional-cto-agency,True,planned,validation,27.4,36.1
+EDU-001-Youth-Entrepreneurship-Curriculum,Youth Entrepreneurship Curriculum,education,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,edu-001-youth-entrepreneurship-curriculum,True,planned,validation,27.4,36.1
+EDU-003-Coding-Mentor-Certification,Coding Mentor Certification,education,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,edu-003-coding-mentor-certification,True,planned,validation,27.4,36.1
+EDU-004-Real-Estate-Licensing-Prep,Real Estate Licensing Prep,education,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,edu-004-real-estate-licensing-prep,True,planned,validation,27.4,36.1
+EDU-005-Coding-Bootcamp,Coding Bootcamp,education,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,edu-005-coding-bootcamp,True,planned,validation,27.4,36.1
+EDU-009-Voiceover-Script-Library,Voiceover Script Library,education,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,edu-009-voiceover-script-library,True,planned,validation,27.4,36.1
+EDU-010-Trade-Skills-Bootcamp,Trade Skills Bootcamp,education,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,edu-010-trade-skills-bootcamp,True,planned,validation,27.4,36.1
+EDU-011-Franchise-Blueprint-System,Franchise Blueprint System,education,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,edu-011-franchise-blueprint-system,True,planned,validation,27.4,36.1
+EDU-012-Low-Income-Housing-Blueprint,Low Income Housing Blueprint,education,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,edu-012-low-income-housing-blueprint,True,planned,validation,27.4,36.1
+EDU-014-BIPOC-Creator-Incubator,Bipoc Creator Incubator,education,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,edu-014-bipoc-creator-incubator,True,planned,validation,27.4,36.1
+EDU-016-Virtual-Black-Art-Museum,Virtual Black Art Museum,education,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,edu-016-virtual-black-art-museum,True,planned,validation,27.4,36.1
+EDU-018-Online-Course-Creator,Online Course Creator,education,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,edu-018-online-course-creator,True,planned,validation,27.4,36.1
+EDU-019-Executive-Education-Program,Executive Education Program,education,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,edu-019-executive-education-program,True,planned,validation,27.4,36.1
+EDU-020-Youth-STEM-Program,Youth Stem Program,education,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,edu-020-youth-stem-program,True,planned,validation,27.4,36.1
+EDU-021-Remote-Work-Certification,Remote Work Certification,education,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,edu-021-remote-work-certification,True,planned,validation,27.4,36.1
+EDU-023-Personal-Finance-Coach,Personal Finance Coach,education,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,edu-023-personal-finance-coach,True,planned,validation,27.4,36.1
+EM-001-Space-Habitat-AI,Space Habitat Ai,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-001-space-habitat-ai,True,planned,validation,27.4,36.1
+EM-002-Fusion-Energy-AI,Fusion Energy Ai,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-002-fusion-energy-ai,True,planned,validation,27.4,36.1
+EM-003-Teleportation-Research-AI,Teleportation Research Ai,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-003-teleportation-research-ai,True,planned,validation,27.4,36.1
+EM-004-Climate-Solutions-AI,Climate Solutions Ai,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-004-climate-solutions-ai,True,planned,validation,27.4,36.1
+EM-005-Holographic-Events-AI,Holographic Events Ai,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-005-holographic-events-ai,True,planned,validation,27.4,36.1
+EM-006-Neurofeedback-AI,Neurofeedback Ai,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-006-neurofeedback-ai,True,planned,validation,27.4,36.1
+EM-007-Autonomous-Delivery-AI,Autonomous Delivery Ai,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-007-autonomous-delivery-ai,True,planned,validation,27.4,36.1
+EM-008-Gene-Editing-AI,Gene Editing Ai,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-008-gene-editing-ai,True,planned,validation,27.4,36.1
+EM-009-Space-Tourism-AI,Space Tourism Ai,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-009-space-tourism-ai,True,planned,validation,27.4,36.1
+EM-010-Wearables-AI,Wearables Ai,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-010-wearables-ai,True,planned,validation,27.4,36.1
+EM-011-Metaverse-Hub-AI,Metaverse Hub Ai,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-011-metaverse-hub-ai,True,planned,validation,27.4,36.1
+EM-012-Energy-Grid-AI,Energy Grid Ai,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-012-energy-grid-ai,True,planned,validation,27.4,36.1
+EM-014-Ocean-Cleanup-AI,Ocean Cleanup Ai,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-014-ocean-cleanup-ai,True,planned,validation,27.4,36.1
+EM-015-Crypto-Trading-AI,Crypto Trading Ai,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-015-crypto-trading-ai,True,planned,validation,27.4,36.1
+EM-016-Synthetic-Media-AI,Synthetic Media Ai,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-016-synthetic-media-ai,True,planned,validation,27.4,36.1
+EM-017-Space-Mining-AI,Space Mining Ai,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-017-space-mining-ai,True,planned,validation,27.4,36.1
+EM-018-VR-Therapy-AI,Vr Therapy Ai,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-018-vr-therapy-ai,True,planned,validation,27.4,36.1
+EM-019-Weather-Prediction-AI,Weather Prediction Ai,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-019-weather-prediction-ai,True,planned,validation,27.4,36.1
+EM-020-Autonomous-Farming-AI,Autonomous Farming Ai,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-020-autonomous-farming-ai,True,planned,validation,27.4,36.1
+EM-021-Traffic-Optimizer-AI,Traffic Optimizer Ai,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-021-traffic-optimizer-ai,True,planned,validation,27.4,36.1
+EM-022-Smart-Grid-AI,Smart Grid Ai,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-022-smart-grid-ai,True,planned,validation,27.4,36.1
+EM-023-Disaster-Prediction-AI,Disaster Prediction Ai,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-023-disaster-prediction-ai,True,planned,validation,27.4,36.1
+EM-024-Nanotech-AI,Nanotech Ai,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-024-nanotech-ai,True,planned,validation,27.4,36.1
+EM-025-Personalized-Medicine-AI,Personalized Medicine Ai,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-025-personalized-medicine-ai,True,planned,validation,27.4,36.1
+EM-026-AI-Diagnostic-Lab,Ai Diagnostic Lab,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-026-ai-diagnostic-lab,True,planned,validation,27.4,36.1
+EM-027-Sustainable-Cities-AI,Sustainable Cities Ai,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-027-sustainable-cities-ai,True,planned,validation,27.4,36.1
+EM-028-Renewable-Energy-AI,Renewable Energy Ai,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-028-renewable-energy-ai,True,planned,validation,27.4,36.1
+EM-029-Climate-Modeling-AI,Climate Modeling Ai,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-029-climate-modeling-ai,True,planned,validation,27.4,36.1
+EM-030-Policy-Advisor-AI,Policy Advisor Ai,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-030-policy-advisor-ai,True,planned,validation,27.4,36.1
+EM-031-Governance-Hub-AI,Governance Hub Ai,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-031-governance-hub-ai,True,planned,validation,27.4,36.1
+EM-032-Global-Challenges-AI,Global Challenges Ai,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-032-global-challenges-ai,True,planned,validation,27.4,36.1
+EM-033-Space-Exploration-AI,Space Exploration Ai,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-033-space-exploration-ai,True,planned,validation,27.4,36.1
+EM-034-Education-Equity-AI,Education Equity Ai,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-034-education-equity-ai,True,planned,validation,27.4,36.1
+EM-035-Health-Equity-AI,Health Equity Ai,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-035-health-equity-ai,True,planned,validation,27.4,36.1
+EM-036-Economic-Equity-AI,Economic Equity Ai,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-036-economic-equity-ai,True,planned,validation,27.4,36.1
+EM-037-Environmental-Justice-AI,Environmental Justice Ai,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-037-environmental-justice-ai,True,planned,validation,27.4,36.1
+EM-038-Human-Rights-AI,Human Rights Ai,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-038-human-rights-ai,True,planned,validation,27.4,36.1
+EM-039-Peacebuilding-AI,Peacebuilding Ai,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-039-peacebuilding-ai,True,planned,validation,27.4,36.1
+EM-040-Telemedicine-AI,Telemedicine Ai,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-040-telemedicine-ai,True,planned,validation,27.4,36.1
+EM-041-AI-Climate-Adaptation,Ai Climate Adaptation,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-041-ai-climate-adaptation,True,planned,validation,27.4,36.1
+EM-042-Space-Agriculture-AI,Space Agriculture Ai,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-042-space-agriculture-ai,True,planned,validation,27.4,36.1
+EM-043-Quantum-Communication-AI,Quantum Communication Ai,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-043-quantum-communication-ai,True,planned,validation,27.4,36.1
+EM-044-Robotics-Surgery-AI,Robotics Surgery Ai,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-044-robotics-surgery-ai,True,planned,validation,27.4,36.1
+EM-045-AI-Disaster-Response,Ai Disaster Response,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-045-ai-disaster-response,True,planned,validation,27.4,36.1
+EM-048-Space-Manufacturing-AI,Space Manufacturing Ai,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-048-space-manufacturing-ai,True,planned,validation,27.4,36.1
+EM-049-AI-Ocean-Exploration,Ai Ocean Exploration,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-049-ai-ocean-exploration,True,planned,validation,27.4,36.1
+EM-050-AI-Archaeology,Ai Archaeology,emerging,planned,pending_formation,True,True,11.1,27.4,Planned / Validating,em-050-ai-archaeology,True,planned,validation,27.4,36.1
+EC-002-New-World-Apparel,New World Apparel,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-002-new-world-apparel,True,planned,validation,27.0,35.8
+EC-005-Sunglasses-AI,Sunglasses Ai,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-005-sunglasses-ai,True,planned,validation,27.0,35.8
+EC-007-Personal-Shopper-AI,Personal Shopper Ai,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-007-personal-shopper-ai,True,planned,validation,27.0,35.8
+EC-008-Custom-Sneaker-AI,Custom Sneaker Ai,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-008-custom-sneaker-ai,True,planned,validation,27.0,35.8
+EC-010-Jewelry-Designer-AI,Jewelry Designer Ai,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-010-jewelry-designer-ai,True,planned,validation,27.0,35.8
+EC-011-Virtual-Try-On-AI,Virtual Try On Ai,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-011-virtual-try-on-ai,True,planned,validation,27.0,35.8
+EC-014-Subscription-Box-AI,Subscription Box Ai,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-014-subscription-box-ai,True,planned,validation,27.0,35.8
+EC-015-Surf-Gear-AI,Surf Gear Ai,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-015-surf-gear-ai,True,planned,validation,27.0,35.8
+EC-016-Ski-Gear-AI,Ski Gear Ai,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-016-ski-gear-ai,True,planned,validation,27.0,35.8
+EC-017-Golf-Gear-AI,Golf Gear Ai,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-017-golf-gear-ai,True,planned,validation,27.0,35.8
+EC-018-Fishing-Gear-AI,Fishing Gear Ai,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-018-fishing-gear-ai,True,planned,validation,27.0,35.8
+EC-019-Yoga-Gear-AI,Yoga Gear Ai,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-019-yoga-gear-ai,True,planned,validation,27.0,35.8
+EC-020-Costume-Shop-AI,Costume Shop Ai,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-020-costume-shop-ai,True,planned,validation,27.0,35.8
+EC-021-Luggage-AI,Luggage Ai,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-021-luggage-ai,True,planned,validation,27.0,35.8
+EC-022-Home-Appliance-AI,Home Appliance Ai,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-022-home-appliance-ai,True,planned,validation,27.0,35.8
+EC-023-Tool-Shop-AI,Tool Shop Ai,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-023-tool-shop-ai,True,planned,validation,27.0,35.8
+EC-024-Garden-Supply-AI,Garden Supply Ai,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-024-garden-supply-ai,True,planned,validation,27.0,35.8
+EC-025-Collectible-AI,Collectible Ai,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-025-collectible-ai,True,planned,validation,27.0,35.8
+EC-026-Hobby-Shop-AI,Hobby Shop Ai,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-026-hobby-shop-ai,True,planned,validation,27.0,35.8
+EC-028-NFT-Fashion-Licensing,Nft Fashion Licensing,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-028-nft-fashion-licensing,True,planned,validation,27.0,35.8
+EC-030-AI-Product-Photographer,Ai Product Photographer,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-030-ai-product-photographer,True,planned,validation,27.0,35.8
+EC-033-Ad-Optimizer-AI,Ad Optimizer Ai,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-033-ad-optimizer-ai,True,planned,validation,27.0,35.8
+EC-035-Review-Aggregator-AI,Review Aggregator Ai,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-035-review-aggregator-ai,True,planned,validation,27.0,35.8
+EC-036-Fulfillment-Network-AI,Fulfillment Network Ai,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-036-fulfillment-network-ai,True,planned,validation,27.0,35.8
+EC-037-Return-Optimization-AI,Return Optimization Ai,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-037-return-optimization-ai,True,planned,validation,27.0,35.8
+EC-048-Wholesale-Marketplace-AI,Wholesale Marketplace Ai,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-048-wholesale-marketplace-ai,True,planned,validation,27.0,35.8
+EC-050-AI-Product-Descriptions,Ai Product Descriptions,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-050-ai-product-descriptions,True,planned,validation,27.0,35.8
+EC-052-AI-Product-Bundler,Ai Product Bundler,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-052-ai-product-bundler,True,planned,validation,27.0,35.8
+EC-053-AI-Visual-Merchandiser,Ai Visual Merchandiser,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-053-ai-visual-merchandiser,True,planned,validation,27.0,35.8
+EC-054-AI-Demand-Forecasting,Ai Demand Forecasting,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-054-ai-demand-forecasting,True,planned,validation,27.0,35.8
+EC-055-AI-Warehouse-Management,Ai Warehouse Management,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-055-ai-warehouse-management,True,planned,validation,27.0,35.8
+EC-056-AI-Supplier-Matching,Ai Supplier Matching,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-056-ai-supplier-matching,True,planned,validation,27.0,35.8
+EC-057-AI-Quality-Control,Ai Quality Control,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-057-ai-quality-control,True,planned,validation,27.0,35.8
+EC-058-AI-Packaging-Designer,Ai Packaging Designer,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-058-ai-packaging-designer,True,planned,validation,27.0,35.8
+EC-059-AI-Logistics-Planner,Ai Logistics Planner,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-059-ai-logistics-planner,True,planned,validation,27.0,35.8
+EC-060-AI-Customer-Loyalty,Ai Customer Loyalty,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-060-ai-customer-loyalty,True,planned,validation,27.0,35.8
+EC-061-AI-Gift-Finder,Ai Gift Finder,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-061-ai-gift-finder,True,planned,validation,27.0,35.8
+EC-062-AI-Trend-Hunter,Ai Trend Hunter,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-062-ai-trend-hunter,True,planned,validation,27.0,35.8
+EC-063-AI-Market-Research,Ai Market Research,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-063-ai-market-research,True,planned,validation,27.0,35.8
+EC-064-AI-Competitor-Watcher,Ai Competitor Watcher,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-064-ai-competitor-watcher,True,planned,validation,27.0,35.8
+EC-065-AI-Product-Development,Ai Product Development,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-065-ai-product-development,True,planned,validation,27.0,35.8
+EC-066-AI-Customer-Journey,Ai Customer Journey,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-066-ai-customer-journey,True,planned,validation,27.0,35.8
+EC-068-AI-Returns-Management,Ai Returns Management,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-068-ai-returns-management,True,planned,validation,27.0,35.8
+EC-069-AI-Shipping-Labeler,Ai Shipping Labeler,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-069-ai-shipping-labeler,True,planned,validation,27.0,35.8
+EC-070-AI-Product-Launch-Coach,Ai Product Launch Coach,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-070-ai-product-launch-coach,True,planned,validation,27.0,35.8
+EC-071-AI-Vendor-Negotiator,Ai Vendor Negotiator,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-071-ai-vendor-negotiator,True,planned,validation,27.0,35.8
+EC-072-AI-Product-Cataloger,Ai Product Cataloger,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-072-ai-product-cataloger,True,planned,validation,27.0,35.8
+EC-073-AI-Order-Prioritizer,Ai Order Prioritizer,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-073-ai-order-prioritizer,True,planned,validation,27.0,35.8
+EC-074-AI-Customer-Segmentation,Ai Customer Segmentation,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-074-ai-customer-segmentation,True,planned,validation,27.0,35.8
+EC-075-AI-Pricing-Analyst,Ai Pricing Analyst,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-075-ai-pricing-analyst,True,planned,validation,27.0,35.8
+EC-077-AI-Inventory-Reordering,Ai Inventory Reordering,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-077-ai-inventory-reordering,True,planned,validation,27.0,35.8
+EC-078-AI-Product-Comparison,Ai Product Comparison,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-078-ai-product-comparison,True,planned,validation,27.0,35.8
+EC-079-AI-Customer-Feedback,Ai Customer Feedback,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-079-ai-customer-feedback,True,planned,validation,27.0,35.8
+EC-080-AI-Product-Updates,Ai Product Updates,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-080-ai-product-updates,True,planned,validation,27.0,35.8
+EC-081-AI-Cross-Selling,Ai Cross Selling,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-081-ai-cross-selling,True,planned,validation,27.0,35.8
+EC-082-AI-Up-Selling,Ai Up Selling,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-082-ai-up-selling,True,planned,validation,27.0,35.8
+EC-083-AI-Product-Education,Ai Product Education,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-083-ai-product-education,True,planned,validation,27.0,35.8
+EC-084-AI-Purchase-Timing,Ai Purchase Timing,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-084-ai-purchase-timing,True,planned,validation,27.0,35.8
+EC-085-AI-Customer-Support,Ai Customer Support,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-085-ai-customer-support,True,planned,validation,27.0,35.8
+EC-086-AI-Order-Tracking,Ai Order Tracking,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-086-ai-order-tracking,True,planned,validation,27.0,35.8
+EC-087-AI-Product-Reviews,Ai Product Reviews,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-087-ai-product-reviews,True,planned,validation,27.0,35.8
+EC-088-AI-Customer-Community,Ai Customer Community,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-088-ai-customer-community,True,planned,validation,27.0,35.8
+EC-089-AI-Product-Customization,Ai Product Customization,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-089-ai-product-customization,True,planned,validation,27.0,35.8
+EC-090-AI-Gift-Registry,Ai Gift Registry,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-090-ai-gift-registry,True,planned,validation,27.0,35.8
+EC-091-AI-Wedding-Registry,Ai Wedding Registry,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-091-ai-wedding-registry,True,planned,validation,27.0,35.8
+EC-092-AI-Baby-Registry,Ai Baby Registry,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-092-ai-baby-registry,True,planned,validation,27.0,35.8
+EC-093-AI-Holiday-Planner,Ai Holiday Planner,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-093-ai-holiday-planner,True,planned,validation,27.0,35.8
+EC-094-AI-Personal-Shopper,Ai Personal Shopper,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-094-ai-personal-shopper,True,planned,validation,27.0,35.8
+EC-095-AI-Color-Match,Ai Color Match,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-095-ai-color-match,True,planned,validation,27.0,35.8
+EC-096-AI-Fabric-Advisor,Ai Fabric Advisor,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-096-ai-fabric-advisor,True,planned,validation,27.0,35.8
+EC-097-AI-Fit-Recommendation,Ai Fit Recommendation,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-097-ai-fit-recommendation,True,planned,validation,27.0,35.8
+EC-098-AI-Outfit-Builder,Ai Outfit Builder,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-098-ai-outfit-builder,True,planned,validation,27.0,35.8
+EC-099-AI-Seasonal-Forecast,Ai Seasonal Forecast,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-099-ai-seasonal-forecast,True,planned,validation,27.0,35.8
+EC-100-AI-Wardrobe-Planner,Ai Wardrobe Planner,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-100-ai-wardrobe-planner,True,planned,validation,27.0,35.8
+EC-101-AI-Accessory-Match,Ai Accessory Match,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-101-ai-accessory-match,True,planned,validation,27.0,35.8
+EC-102-AI-Shoe-Match,Ai Shoe Match,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-102-ai-shoe-match,True,planned,validation,27.0,35.8
+EC-103-AI-Jewelry-Match,Ai Jewelry Match,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-103-ai-jewelry-match,True,planned,validation,27.0,35.8
+EC-104-AI-Bag-Match,Ai Bag Match,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-104-ai-bag-match,True,planned,validation,27.0,35.8
+EC-105-AI-Color-Palette,Ai Color Palette,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-105-ai-color-palette,True,planned,validation,27.0,35.8
+EC-106-AI-Outfit-Recycling,Ai Outfit Recycling,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-106-ai-outfit-recycling,True,planned,validation,27.0,35.8
+EC-107-AI-Style-Evolution,Ai Style Evolution,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-107-ai-style-evolution,True,planned,validation,27.0,35.8
+EC-108-AI-Budget-Stylist,Ai Budget Stylist,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-108-ai-budget-stylist,True,planned,validation,27.0,35.8
+EC-109-AI-Trend-Archive,Ai Trend Archive,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-109-ai-trend-archive,True,planned,validation,27.0,35.8
+EC-110-AI-Vintage-Advisor,Ai Vintage Advisor,e-commerce,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ec-110-ai-vintage-advisor,True,planned,validation,27.0,35.8
+TECH-025-Machine-Learning-Builder,Machine Learning Builder,technology,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,tech-025-machine-learning-builder,True,planned,validation,27.0,35.8
+TECH-057-Machine-Learning-Builder,Machine Learning Builder,technology,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,tech-057-machine-learning-builder,True,planned,validation,27.0,35.8
+OPS-003-Event-Planning-AI,Event Planning Ai,operations,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ops-003-event-planning-ai,True,planned,validation,27.0,35.8
+OPS-004-Inventory-Management-AI,Inventory Management Ai,operations,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ops-004-inventory-management-ai,True,planned,validation,27.0,35.8
+OPS-005-Project-Management-AI,Project Management Ai,operations,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ops-005-project-management-ai,True,planned,validation,27.0,35.8
+OPS-007-Meeting-Assistant-AI,Meeting Assistant Ai,operations,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ops-007-meeting-assistant-ai,True,planned,validation,27.0,35.8
+OPS-008-Recruitment-AI,Recruitment Ai,operations,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ops-008-recruitment-ai,True,planned,validation,27.0,35.8
+OPS-009-Onboarding-AI,Onboarding Ai,operations,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ops-009-onboarding-ai,True,planned,validation,27.0,35.8
+OPS-010-Training-Platform-AI,Training Platform Ai,operations,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ops-010-training-platform-ai,True,planned,validation,27.0,35.8
+OPS-011-Performance-Review-AI,Performance Review Ai,operations,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ops-011-performance-review-ai,True,planned,validation,27.0,35.8
+OPS-012-IT-Support-AI,It Support Ai,operations,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ops-012-it-support-ai,True,planned,validation,27.0,35.8
+OPS-013-Facilities-Management-AI,Facilities Management Ai,operations,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ops-013-facilities-management-ai,True,planned,validation,27.0,35.8
+OPS-014-Travel-Booking-AI,Travel Booking Ai,operations,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ops-014-travel-booking-ai,True,planned,validation,27.0,35.8
+OPS-015-Expense-Management-AI,Expense Management Ai,operations,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,ops-015-expense-management-ai,True,planned,validation,27.0,35.8
+EDU-002-AI-Literacy-Program,Ai Literacy Program,education,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,edu-002-ai-literacy-program,True,planned,validation,27.0,35.8
+EDU-007-AI-Tutoring-Platform,Ai Tutoring Platform,education,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,edu-007-ai-tutoring-platform,True,planned,validation,27.0,35.8
+EDU-015-AI-Legal-Doc-Generator,Ai Legal Doc Generator,education,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,edu-015-ai-legal-doc-generator,True,planned,validation,27.0,35.8
+EDU-022-AI-Research-Assistant,Ai Research Assistant,education,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,edu-022-ai-research-assistant,True,planned,validation,27.0,35.8
+EDU-024-Language-Learning-AI,Language Learning Ai,education,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,edu-024-language-learning-ai,True,planned,validation,27.0,35.8
+EDU-025-Test-Preparation-AI,Test Preparation Ai,education,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,edu-025-test-preparation-ai,True,planned,validation,27.0,35.8
+EDU-026-Corporate-Training-AI,Corporate Training Ai,education,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,edu-026-corporate-training-ai,True,planned,validation,27.0,35.8
+EDU-027-Medical-Education-AI,Medical Education Ai,education,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,edu-027-medical-education-ai,True,planned,validation,27.0,35.8
+EDU-028-Legal-Education-AI,Legal Education Ai,education,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,edu-028-legal-education-ai,True,planned,validation,27.0,35.8
+EDU-029-Music-Education-AI,Music Education Ai,education,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,edu-029-music-education-ai,True,planned,validation,27.0,35.8
+EDU-030-Art-Education-AI,Art Education Ai,education,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,edu-030-art-education-ai,True,planned,validation,27.0,35.8
+EDU-031-Physical-Education-AI,Physical Education Ai,education,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,edu-031-physical-education-ai,True,planned,validation,27.0,35.8
+EDU-032-Environmental-Education-AI,Environmental Education Ai,education,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,edu-032-environmental-education-ai,True,planned,validation,27.0,35.8
+EDU-033-Social-Studies-AI,Social Studies Ai,education,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,edu-033-social-studies-ai,True,planned,validation,27.0,35.8
+EDU-034-Math-Education-AI,Math Education Ai,education,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,edu-034-math-education-ai,True,planned,validation,27.0,35.8
+EDU-035-Science-Education-AI,Science Education Ai,education,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,edu-035-science-education-ai,True,planned,validation,27.0,35.8
+EDU-036-Reading-Comprehension-AI,Reading Comprehension Ai,education,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,edu-036-reading-comprehension-ai,True,planned,validation,27.0,35.8
+EDU-037-Writing-Instruction-AI,Writing Instruction Ai,education,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,edu-037-writing-instruction-ai,True,planned,validation,27.0,35.8
+EDU-038-Critical-Thinking-AI,Critical Thinking Ai,education,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,edu-038-critical-thinking-ai,True,planned,validation,27.0,35.8
+EDU-039-Emotional-Intelligence-AI,Emotional Intelligence Ai,education,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,edu-039-emotional-intelligence-ai,True,planned,validation,27.0,35.8
+EDU-040-Time-Management-AI,Time Management Ai,education,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,edu-040-time-management-ai,True,planned,validation,27.0,35.8
+COMM-006-Community-Technology-Access-AI,Community Technology Access Ai,community,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,comm-006-community-technology-access-ai,True,planned,validation,27.0,35.8
+COMM-007-Youth-Leadership-AI,Youth Leadership Ai,community,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,comm-007-youth-leadership-ai,True,planned,validation,27.0,35.8
+COMM-008-Community-Fundraising-AI,Community Fundraising Ai,community,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,comm-008-community-fundraising-ai,True,planned,validation,27.0,35.8
+COMM-009-Volunteer-Hub-AI,Volunteer Hub Ai,community,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,comm-009-volunteer-hub-ai,True,planned,validation,27.0,35.8
+COMM-010-Disaster-Relief-AI,Disaster Relief Ai,community,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,comm-010-disaster-relief-ai,True,planned,validation,27.0,35.8
+COMM-012-Black-Art-Museum-AI,Black Art Museum Ai,community,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,comm-012-black-art-museum-ai,True,planned,validation,27.0,35.8
+COMM-014-Veterans-Support-AI,Veterans Support Ai,community,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,comm-014-veterans-support-ai,True,planned,validation,27.0,35.8
+COMM-016-Community-Health-AI,Community Health Ai,community,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,comm-016-community-health-ai,True,planned,validation,27.0,35.8
+COMM-018-Neighborhood-Watch-AI,Neighborhood Watch Ai,community,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,comm-018-neighborhood-watch-ai,True,planned,validation,27.0,35.8
+COMM-019-Community-Garden-AI,Community Garden Ai,community,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,comm-019-community-garden-ai,True,planned,validation,27.0,35.8
+COMM-020-Public-Transportation-AI,Public Transportation Ai,community,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,comm-020-public-transportation-ai,True,planned,validation,27.0,35.8
+COMM-021-Housing-Assistance-AI,Housing Assistance Ai,community,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,comm-021-housing-assistance-ai,True,planned,validation,27.0,35.8
+COMM-023-Elder-Companion-AI,Elder Companion Ai,community,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,comm-023-elder-companion-ai,True,planned,validation,27.0,35.8
+COMM-024-Youth-Sports-AI,Youth Sports Ai,community,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,comm-024-youth-sports-ai,True,planned,validation,27.0,35.8
+COMM-026-Public-Education-AI,Public Education Ai,community,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,comm-026-public-education-ai,True,planned,validation,27.0,35.8
+COMM-027-Local-Government-AI,Local Government Ai,community,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,comm-027-local-government-ai,True,planned,validation,27.0,35.8
+COMM-028-Public-Safety-AI,Public Safety Ai,community,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,comm-028-public-safety-ai,True,planned,validation,27.0,35.8
+COMM-029-Community-Wellness-AI,Community Wellness Ai,community,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,comm-029-community-wellness-ai,True,planned,validation,27.0,35.8
+COMM-030-Cultural-Exchange-AI,Cultural Exchange Ai,community,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,comm-030-cultural-exchange-ai,True,planned,validation,27.0,35.8
+COMM-031-Community-Investment-AI,Community Investment Ai,community,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,comm-031-community-investment-ai,True,planned,validation,27.0,35.8
+COMM-032-Public-Health-AI,Public Health Ai,community,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,comm-032-public-health-ai,True,planned,validation,27.0,35.8
+COMM-035-Community-Arts-AI,Community Arts Ai,community,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,comm-035-community-arts-ai,True,planned,validation,27.0,35.8
+COMM-036-Public-Infrastructure-AI,Public Infrastructure Ai,community,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,comm-036-public-infrastructure-ai,True,planned,validation,27.0,35.8
+COMM-037-Neighborhood-Development-AI,Neighborhood Development Ai,community,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,comm-037-neighborhood-development-ai,True,planned,validation,27.0,35.8
+COMM-038-Community-Policing-AI,Community Policing Ai,community,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,comm-038-community-policing-ai,True,planned,validation,27.0,35.8
+COMM-039-Public-Space-AI,Public Space Ai,community,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,comm-039-public-space-ai,True,planned,validation,27.0,35.8
+COMM-040-Community-Recycling-AI,Community Recycling Ai,community,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,comm-040-community-recycling-ai,True,planned,validation,27.0,35.8
+COMM-041-Public-Wi-Fi-AI,Public Wi Fi Ai,community,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,comm-041-public-wi-fi-ai,True,planned,validation,27.0,35.8
+COMM-042-Community-Energy-AI,Community Energy Ai,community,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,comm-042-community-energy-ai,True,planned,validation,27.0,35.8
+COMM-043-Local-Food-Network-AI,Local Food Network Ai,community,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,comm-043-local-food-network-ai,True,planned,validation,27.0,35.8
+COMM-044-Community-Volunteering-AI,Community Volunteering Ai,community,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,comm-044-community-volunteering-ai,True,planned,validation,27.0,35.8
+COMM-045-Public-Childcare-AI,Public Childcare Ai,community,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,comm-045-public-childcare-ai,True,planned,validation,27.0,35.8
+COMM-046-Community-Pet-Care-AI,Community Pet Care Ai,community,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,comm-046-community-pet-care-ai,True,planned,validation,27.0,35.8
+COMM-047-Public-Fitness-AI,Public Fitness Ai,community,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,comm-047-public-fitness-ai,True,planned,validation,27.0,35.8
+COMM-048-Community-Transportation-AI,Community Transportation Ai,community,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,comm-048-community-transportation-ai,True,planned,validation,27.0,35.8
+COMM-049-Public-Event-AI,Public Event Ai,community,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,comm-049-public-event-ai,True,planned,validation,27.0,35.8
+COMM-050-Community-Cultural-AI,Community Cultural Ai,community,planned,pending_formation,True,True,10.0,27.0,Planned / Validating,comm-050-community-cultural-ai,True,planned,validation,27.0,35.8
+FH-027-Food-Delivery-Platform,Food Delivery Platform,food-hospitality,planned,pending_formation,True,True,0.0,23.5,Planned / Validating,fh-027-food-delivery-platform,True,planned,planned,23.5,23.5
+FH-028-Restaurant-Management-SaaS,Restaurant Management Saas,food-hospitality,planned,pending_formation,True,True,0.0,23.5,Planned / Validating,fh-028-restaurant-management-saas,True,planned,planned,23.5,23.5
+FH-029-Food-Quality-Testing-Lab,Food Quality Testing Lab,food-hospitality,planned,pending_formation,True,True,0.0,23.5,Planned / Validating,fh-029-food-quality-testing-lab,True,planned,planned,23.5,23.5
+FS-007-Luxury-Fitness-Club,Luxury Fitness Club,fitness-sports,planned,pending_formation,True,True,0.0,23.5,Planned / Validating,fs-007-luxury-fitness-club,True,planned,planned,23.5,23.5
+FS-018-Gym-Management-Software,Gym Management Software,fitness-sports,planned,pending_formation,True,True,0.0,23.5,Planned / Validating,fs-018-gym-management-software,True,planned,planned,23.5,23.5
+FS-024-Sports-Performance-Center,Sports Performance Center,fitness-sports,planned,pending_formation,True,True,0.0,23.5,Planned / Validating,fs-024-sports-performance-center,True,planned,planned,23.5,23.5
+EC-004-Shoe-Customizer,Shoe Customizer,e-commerce,planned,pending_formation,True,True,0.0,23.5,Planned / Validating,ec-004-shoe-customizer,True,planned,planned,23.5,23.5
+EC-013-Merch-Licensing,Merch Licensing,e-commerce,planned,pending_formation,True,True,0.0,23.5,Planned / Validating,ec-013-merch-licensing,True,planned,planned,23.5,23.5
+EC-027-Kids-Toy-Line,Kids Toy Line,e-commerce,planned,pending_formation,True,True,0.0,23.5,Planned / Validating,ec-027-kids-toy-line,True,planned,planned,23.5,23.5
+EC-029-Instant-Brand-Generator,Instant Brand Generator,e-commerce,planned,pending_formation,True,True,0.0,23.5,Planned / Validating,ec-029-instant-brand-generator,True,planned,planned,23.5,23.5
+EC-031-Automated-Inventory-Forecaster,Automated Inventory Forecaster,e-commerce,planned,pending_formation,True,True,0.0,23.5,Planned / Validating,ec-031-automated-inventory-forecaster,True,planned,planned,23.5,23.5
+EC-038-Chatbot-Customer-Service,Chatbot Customer Service,e-commerce,planned,pending_formation,True,True,0.0,23.5,Planned / Validating,ec-038-chatbot-customer-service,True,planned,planned,23.5,23.5
+EC-040-Abandoned-Cart-Recovery,Abandoned Cart Recovery,e-commerce,planned,pending_formation,True,True,0.0,23.5,Planned / Validating,ec-040-abandoned-cart-recovery,True,planned,planned,23.5,23.5
+EC-041-Seasonal-Trend-Predictor,Seasonal Trend Predictor,e-commerce,planned,pending_formation,True,True,0.0,23.5,Planned / Validating,ec-041-seasonal-trend-predictor,True,planned,planned,23.5,23.5
+EC-042-Influencer-Matchmaker,Influencer Matchmaker,e-commerce,planned,pending_formation,True,True,0.0,23.5,Planned / Validating,ec-042-influencer-matchmaker,True,planned,planned,23.5,23.5
+EC-045-AR-Virtual-Fitting-Room,Ar Virtual Fitting Room,e-commerce,planned,pending_formation,True,True,0.0,23.5,Planned / Validating,ec-045-ar-virtual-fitting-room,True,planned,planned,23.5,23.5
+EC-047-Carbon-Footprint-Tracker,Carbon Footprint Tracker,e-commerce,planned,pending_formation,True,True,0.0,23.5,Planned / Validating,ec-047-carbon-footprint-tracker,True,planned,planned,23.5,23.5
+TECH-011-Supply-Chain-Optimizer,Supply Chain Optimizer,technology,planned,pending_formation,True,True,0.0,23.5,Planned / Validating,tech-011-supply-chain-optimizer,True,planned,planned,23.5,23.5
+TECH-024-Virtual-Assistant-Builder,Virtual Assistant Builder,technology,planned,pending_formation,True,True,0.0,23.5,Planned / Validating,tech-024-virtual-assistant-builder,True,planned,planned,23.5,23.5
+TECH-043-Supply-Chain-Optimizer,Supply Chain Optimizer,technology,planned,pending_formation,True,True,0.0,23.5,Planned / Validating,tech-043-supply-chain-optimizer,True,planned,planned,23.5,23.5
+TECH-056-Virtual-Assistant-Builder,Virtual Assistant Builder,technology,planned,pending_formation,True,True,0.0,23.5,Planned / Validating,tech-056-virtual-assistant-builder,True,planned,planned,23.5,23.5
+OPS-002-Supply-Chain-Optimizer,Supply Chain Optimizer,operations,planned,pending_formation,True,True,0.0,23.5,Planned / Validating,ops-002-supply-chain-optimizer,True,planned,planned,23.5,23.5
+EDU-008-Branding-Templates-Marketplace,Branding Templates Marketplace,education,planned,pending_formation,True,True,0.0,23.5,Planned / Validating,edu-008-branding-templates-marketplace,True,planned,planned,23.5,23.5
+COMM-001-Luminary-Worldwide-Events,Luminary Worldwide Events,community,planned,pending_formation,True,True,0.0,23.5,Planned / Validating,comm-001-luminary-worldwide-events,True,planned,validation,23.5,32.2
+COMM-002-Brotherhood-Coaching-Network,Brotherhood Coaching Network,community,planned,pending_formation,True,True,0.0,23.5,Planned / Validating,comm-002-brotherhood-coaching-network,True,planned,validation,23.5,32.2
+COMM-003-Ace-Senior-Care-Connect,Ace Senior Care Connect,community,planned,pending_formation,True,True,0.0,23.5,Planned / Validating,comm-003-ace-senior-care-connect,True,planned,validation,23.5,32.2
+COMM-004-Community-Outreach-Nonprofit,Community Outreach Nonprofit,community,planned,pending_formation,True,True,0.0,23.5,Planned / Validating,comm-004-community-outreach-nonprofit,True,planned,validation,23.5,32.2
+COMM-011-Indigenous-Creator-Hub,Indigenous Creator Hub,community,planned,pending_formation,True,True,0.0,23.5,Planned / Validating,comm-011-indigenous-creator-hub,True,planned,validation,23.5,32.2
+COMM-013-Women-s-Empowerment-Network,Women S Empowerment Network,community,planned,pending_formation,True,True,0.0,23.5,Planned / Validating,comm-013-women-s-empowerment-network,True,planned,validation,23.5,32.2
+COMM-015-Youth-Mentorship-Program,Youth Mentorship Program,community,planned,pending_formation,True,True,0.0,23.5,Planned / Validating,comm-015-youth-mentorship-program,True,planned,validation,23.5,32.2
+COMM-017-Local-Business-Directory,Local Business Directory,community,planned,pending_formation,True,True,0.0,23.5,Planned / Validating,comm-017-local-business-directory,True,planned,validation,23.5,32.2
+COMM-022-Job-Training-Center,Job Training Center,community,planned,pending_formation,True,True,0.0,23.5,Planned / Validating,comm-022-job-training-center,True,planned,validation,23.5,32.2
+COMM-025-Community-Legal-Aid,Community Legal Aid,community,planned,pending_formation,True,True,0.0,23.5,Planned / Validating,comm-025-community-legal-aid,True,planned,validation,23.5,32.2
+COMM-033-Youth-Innovation-Hub,Youth Innovation Hub,community,planned,pending_formation,True,True,0.0,23.5,Planned / Validating,comm-033-youth-innovation-hub,True,planned,validation,23.5,32.2
+COMM-034-Senior-Tech-Support,Senior Tech Support,community,planned,pending_formation,True,True,0.0,23.5,Planned / Validating,comm-034-senior-tech-support,True,planned,validation,23.5,32.2
+EM-013-Brain-Computer-Interface,Brain Computer Interface,emerging,planned,pending_formation,True,True,0.0,23.5,Planned / Validating,em-013-brain-computer-interface,True,planned,planned,23.5,23.5
+EM-046-Smart-City-Governance,Smart City Governance,emerging,planned,pending_formation,True,True,0.0,23.5,Planned / Validating,em-046-smart-city-governance,True,planned,planned,23.5,23.5
+BW-002-Mobile-Lash-Service,Mobile Lash Service,beauty-wellness,mvp,unknown,False,False,0.0,22.8,Planned / Validating,bw-002-mobile-lash-service,True,mvp,planned,22.8,13.5
+BW-005-Lash-Supply-Company,Lash Supply Company,beauty-wellness,mvp,unknown,False,False,0.0,22.8,Planned / Validating,bw-005-lash-supply-company,True,mvp,planned,22.8,13.5
+BW-007-Lash-Kits-&-Tools,Lash Kits & Tools,beauty-wellness,mvp,unknown,False,False,0.0,22.8,Planned / Validating,bw-007-lash-kits-&-tools,False,mvp,mvp,22.8,32.8
+BW-010-Online-Lash-Education,Online Lash Education,beauty-wellness,mvp,unknown,False,False,0.0,22.8,Planned / Validating,bw-010-online-lash-education,True,mvp,planned,22.8,13.5
+BW-012-Mobile-Nail-Tech,Mobile Nail Tech,beauty-wellness,mvp,unknown,False,False,0.0,22.8,Planned / Validating,bw-012-mobile-nail-tech,True,mvp,planned,22.8,13.5
+BW-014-Press-On-Nail-Brand,Press On Nail Brand,beauty-wellness,mvp,unknown,False,False,0.0,22.8,Planned / Validating,bw-014-press-on-nail-brand,True,mvp,planned,22.8,13.5
+BW-016-Nail-Polish-Brand,Nail Polish Brand,beauty-wellness,mvp,unknown,False,False,0.0,22.8,Planned / Validating,bw-016-nail-polish-brand,True,mvp,planned,22.8,13.5
+BW-017-Nail-Care-Products,Nail Care Products,beauty-wellness,mvp,unknown,False,False,0.0,22.8,Planned / Validating,bw-017-nail-care-products,True,mvp,planned,22.8,13.5
+BW-023-Mobile-Hairstyling,Mobile Hairstyling,beauty-wellness,mvp,unknown,False,False,0.0,22.8,Planned / Validating,bw-023-mobile-hairstyling,True,mvp,planned,22.8,13.5
+BW-027-Hair-Care-Line,Hair Care Line,beauty-wellness,mvp,unknown,False,False,0.0,22.8,Planned / Validating,bw-027-hair-care-line,True,mvp,planned,22.8,13.5
+BW-028-Wig-Brand,Wig Brand,beauty-wellness,mvp,unknown,False,False,0.0,22.8,Planned / Validating,bw-028-wig-brand,True,mvp,planned,22.8,13.5
+BW-029-Hair-Extensions-Brand,Hair Extensions Brand,beauty-wellness,mvp,unknown,False,False,0.0,22.8,Planned / Validating,bw-029-hair-extensions-brand,True,mvp,planned,22.8,13.5
+BW-036-Bridal-Makeup-Service,Bridal Makeup Service,beauty-wellness,mvp,unknown,False,False,0.0,22.8,Planned / Validating,bw-036-bridal-makeup-service,True,mvp,planned,22.8,13.5
+BW-037-Mobile-Makeup-Artist,Mobile Makeup Artist,beauty-wellness,mvp,unknown,False,False,0.0,22.8,Planned / Validating,bw-037-mobile-makeup-artist,True,mvp,planned,22.8,13.5
+BW-039-Cosmetics-Brand,Cosmetics Brand,beauty-wellness,mvp,unknown,False,False,0.0,22.8,Planned / Validating,bw-039-cosmetics-brand,True,mvp,planned,22.8,13.5
+BW-040-Beauty-Tools-Brand,Beauty Tools Brand,beauty-wellness,mvp,unknown,False,False,0.0,22.8,Planned / Validating,bw-040-beauty-tools-brand,True,mvp,planned,22.8,13.5
+LT-003-Logistics-Dispatch-Service,Logistics Dispatch Service,logistics-transport,mvp,unknown,False,False,0.0,22.8,Planned / Validating,lt-003-logistics-dispatch-service,True,mvp,planned,22.8,13.5
+LT-004-Last-Mile-Delivery-Dispatch,Last Mile Delivery Dispatch,logistics-transport,mvp,unknown,False,False,0.0,22.8,Planned / Validating,lt-004-last-mile-delivery-dispatch,True,mvp,planned,22.8,13.5
+LT-008-Towing-Dispatch,Towing Dispatch,logistics-transport,mvp,unknown,False,False,0.0,22.8,Planned / Validating,lt-008-towing-dispatch,True,mvp,planned,22.8,13.5
+LT-009-HVAC-Technician-Dispatch,Hvac Technician Dispatch,logistics-transport,mvp,unknown,False,False,0.0,22.8,Planned / Validating,lt-009-hvac-technician-dispatch,True,mvp,planned,22.8,13.5
+LT-010-Field-Service-Dispatch,Field Service Dispatch,logistics-transport,mvp,unknown,False,False,0.0,22.8,Planned / Validating,lt-010-field-service-dispatch,True,mvp,planned,22.8,13.5
+LT-017-Courier-Service,Courier Service,logistics-transport,mvp,unknown,False,False,0.0,22.8,Planned / Validating,lt-017-courier-service,True,mvp,planned,22.8,13.5
+LT-018-Local-Delivery-Company,Local Delivery Company,logistics-transport,mvp,unknown,False,False,0.0,22.8,Planned / Validating,lt-018-local-delivery-company,True,mvp,planned,22.8,13.5
+LT-022-Fulfillment-Center,Fulfillment Center,logistics-transport,mvp,unknown,False,False,0.0,22.8,Planned / Validating,lt-022-fulfillment-center,True,mvp,planned,22.8,13.5
+PS-001-Business-Consulting,Business Consulting,professional-services,mvp,unknown,False,False,0.0,22.8,Planned / Validating,ps-001-business-consulting,True,mvp,planned,22.8,13.5
+PS-003-Accounting-Services,Accounting Services,professional-services,mvp,unknown,False,False,0.0,22.8,Planned / Validating,ps-003-accounting-services,True,mvp,planned,22.8,13.5
+PS-005-Marketing-Agency,Marketing Agency,professional-services,mvp,unknown,False,False,0.0,22.8,Planned / Validating,ps-005-marketing-agency,True,mvp,planned,22.8,13.5
+PS-006-Web-Design-Agency,Web Design Agency,professional-services,mvp,unknown,False,False,0.0,22.8,Planned / Validating,ps-006-web-design-agency,True,mvp,planned,22.8,13.5
+PS-007-IT-Support-Services,It Support Services,professional-services,mvp,unknown,False,False,0.0,22.8,Planned / Validating,ps-007-it-support-services,True,mvp,planned,22.8,13.5
+PS-008-Virtual-Assistant-Service,Virtual Assistant Service,professional-services,mvp,unknown,False,False,0.0,22.8,Planned / Validating,ps-008-virtual-assistant-service,True,mvp,planned,22.8,13.5
+PS-009-Bookkeeping-Service,Bookkeeping Service,professional-services,mvp,unknown,False,False,0.0,22.8,Planned / Validating,ps-009-bookkeeping-service,True,mvp,planned,22.8,13.5
+PS-010-Tax-Preparation-Service,Tax Preparation Service,professional-services,mvp,unknown,False,False,0.0,22.8,Planned / Validating,ps-010-tax-preparation-service,True,mvp,planned,22.8,13.5
+PS-013-Financial-Planning,Financial Planning,professional-services,mvp,unknown,False,False,0.0,22.8,Planned / Validating,ps-013-financial-planning,False,mvp,mvp,22.8,32.8
+PS-016-Photography-Service,Photography Service,professional-services,mvp,unknown,False,False,0.0,22.8,Planned / Validating,ps-016-photography-service,True,mvp,planned,22.8,13.5
+PS-017-Videography-Service,Videography Service,professional-services,mvp,unknown,False,False,0.0,22.8,Planned / Validating,ps-017-videography-service,True,mvp,planned,22.8,13.5
+PS-019-Copywriting-Service,Copywriting Service,professional-services,mvp,unknown,False,False,0.0,22.8,Planned / Validating,ps-019-copywriting-service,True,mvp,planned,22.8,13.5
+PS-020-Social-Media-Management,Social Media Management,professional-services,mvp,unknown,False,False,0.0,22.8,Planned / Validating,ps-020-social-media-management,True,mvp,planned,22.8,13.5
+PS-021-SEO-Agency,Seo Agency,professional-services,mvp,unknown,False,False,0.0,22.8,Planned / Validating,ps-021-seo-agency,True,mvp,planned,22.8,13.5
+PS-022-PPC-Management,Ppc Management,professional-services,mvp,unknown,False,False,0.0,22.8,Planned / Validating,ps-022-ppc-management,True,mvp,planned,22.8,13.5
+MC-001-YouTube-Channel-Network,Youtube Channel Network,media-content,mvp,unknown,False,False,0.0,22.8,Planned / Validating,mc-001-youtube-channel-network,True,mvp,planned,22.8,13.5
+MC-002-Podcast-Network,Podcast Network,media-content,mvp,unknown,False,False,0.0,22.8,Planned / Validating,mc-002-podcast-network,True,mvp,planned,22.8,13.5
+MC-003-Blog-Network,Blog Network,media-content,mvp,unknown,False,False,0.0,22.8,Planned / Validating,mc-003-blog-network,True,mvp,planned,22.8,13.5
+MC-005-Content-Creation-Studio,Content Creation Studio,media-content,mvp,unknown,False,False,0.0,22.8,Planned / Validating,mc-005-content-creation-studio,True,mvp,planned,22.8,13.5
+MC-009-Stock-Photography,Stock Photography,media-content,mvp,unknown,False,False,0.0,22.8,Planned / Validating,mc-009-stock-photography,True,mvp,planned,22.8,13.5
+MC-010-Stock-Video,Stock Video,media-content,mvp,unknown,False,False,0.0,22.8,Planned / Validating,mc-010-stock-video,True,mvp,planned,22.8,13.5
+MC-011-Online-Magazine,Online Magazine,media-content,mvp,unknown,False,False,0.0,22.8,Planned / Validating,mc-011-online-magazine,True,mvp,planned,22.8,13.5
+MC-014-Gaming-Channel,Gaming Channel,media-content,mvp,unknown,False,False,0.0,22.8,Planned / Validating,mc-014-gaming-channel,True,mvp,planned,22.8,13.5
+MC-017-Online-Course-Platform,Online Course Platform,media-content,mvp,unknown,False,False,0.0,22.8,Planned / Validating,mc-017-online-course-platform,True,mvp,planned,22.8,13.5
+MC-018-Membership-Site,Membership Site,media-content,mvp,unknown,False,False,0.0,22.8,Planned / Validating,mc-018-membership-site,True,mvp,planned,22.8,13.5
+MC-019-Digital-Download-Store,Digital Download Store,media-content,mvp,unknown,False,False,0.0,22.8,Planned / Validating,mc-019-digital-download-store,True,mvp,planned,22.8,13.5
+ET-001-Online-Tutoring-Platform,Online Tutoring Platform,education-training,mvp,unknown,False,False,0.0,22.8,Planned / Validating,et-001-online-tutoring-platform,True,mvp,planned,22.8,13.5
+ET-002-Language-Learning-App,Language Learning App,education-training,mvp,unknown,False,False,0.0,22.8,Planned / Validating,et-002-language-learning-app,True,mvp,planned,22.8,13.5
+ET-008-Career-Coaching,Career Coaching,education-training,mvp,unknown,False,False,0.0,22.8,Planned / Validating,et-008-career-coaching,True,mvp,planned,22.8,13.5
+ET-009-Resume-Writing-Service,Resume Writing Service,education-training,mvp,unknown,False,False,0.0,22.8,Planned / Validating,et-009-resume-writing-service,True,mvp,planned,22.8,13.5
+ET-010-Interview-Prep-Platform,Interview Prep Platform,education-training,mvp,unknown,False,False,0.0,22.8,Planned / Validating,et-010-interview-prep-platform,True,mvp,planned,22.8,13.5
+ET-012-Educational-Content-Library,Educational Content Library,education-training,mvp,unknown,False,False,0.0,22.8,Planned / Validating,et-012-educational-content-library,True,mvp,planned,22.8,13.5
+ST-001-SaaS-Platform,Saas Platform,software-technology,mvp,unknown,False,False,0.0,22.8,Planned / Validating,st-001-saas-platform,False,mvp,mvp,22.8,32.8
+ST-002-Mobile-App-Development,Mobile App Development,software-technology,mvp,unknown,False,False,0.0,22.8,Planned / Validating,st-002-mobile-app-development,False,mvp,mvp,22.8,32.8
+ST-003-Web-Development-Agency,Web Development Agency,software-technology,mvp,unknown,False,False,0.0,22.8,Planned / Validating,st-003-web-development-agency,False,mvp,mvp,22.8,32.8
+ST-005-API-Development,Api Development,software-technology,mvp,unknown,False,False,0.0,22.8,Planned / Validating,st-005-api-development,False,mvp,mvp,22.8,32.8
+ST-017-Chatbot-Builder,Chatbot Builder,software-technology,mvp,unknown,False,False,0.0,22.8,Planned / Validating,st-017-chatbot-builder,False,mvp,mvp,22.8,32.8
+ST-024-Marketing-Automation,Marketing Automation,software-technology,mvp,unknown,False,False,0.0,22.8,Planned / Validating,st-024-marketing-automation,False,mvp,mvp,22.8,32.8
+ST-025-Sales-Automation,Sales Automation,software-technology,mvp,unknown,False,False,0.0,22.8,Planned / Validating,st-025-sales-automation,False,mvp,mvp,22.8,32.8
+OPS-001-VENTURE-STAFFING,Venture Staffing Operations,operations,mvp,unknown,False,False,0.0,22.8,Planned / Validating,ops-001-venture-staffing,False,mvp,mvp,22.8,32.8
+PROFILE-001-DIVINE-JOHNS-PORTFOLIO,Divine Johns Portfolio,media-content,mvp,unknown,False,False,0.0,22.8,Planned / Validating,profile-001-divine-johns-portfolio,False,mvp,mvp,22.8,32.8
+ET-010-PERSONAL-RESUME,Personal Resume,education-training,mvp,unknown,False,False,0.0,22.8,Planned / Validating,et-010-personal-resume,False,mvp,mvp,22.8,32.8
+TECH-061-TECH-VENTURES-PORTFOLIO,Tech Ventures Portfolio,technology,mvp,unknown,False,False,0.0,22.8,Planned / Validating,tech-061-tech-ventures-portfolio,False,mvp,mvp,22.8,32.8
+BW-001-Lash-Extension-Studio,Lash Extension Studio,beauty-wellness,validation,unknown,False,False,0.0,12.2,Idea,bw-001-lash-extension-studio,True,validation,planned,12.2,13.5
+BW-003-Luxury-Lash-Bar,Luxury Lash Bar,beauty-wellness,validation,unknown,False,False,0.0,12.2,Idea,bw-003-luxury-lash-bar,True,validation,planned,12.2,13.5
+BW-004-Lash-Training-Academy,Lash Training Academy,beauty-wellness,validation,unknown,False,False,0.0,12.2,Idea,bw-004-lash-training-academy,True,validation,planned,12.2,13.5
+BW-006-Lash-Glue-Brand,Lash Glue Brand,beauty-wellness,validation,unknown,False,False,0.0,12.2,Idea,bw-006-lash-glue-brand,True,validation,planned,12.2,13.5
+BW-011-Nail-Salon,Nail Salon,beauty-wellness,validation,unknown,False,False,0.0,12.2,Idea,bw-011-nail-salon,True,validation,planned,12.2,13.5
+BW-013-Luxury-Nail-Spa,Luxury Nail Spa,beauty-wellness,validation,unknown,False,False,0.0,12.2,Idea,bw-013-luxury-nail-spa,True,validation,planned,12.2,13.5
+BW-015-Nail-Art-Studio,Nail Art Studio,beauty-wellness,validation,unknown,False,False,0.0,12.2,Idea,bw-015-nail-art-studio,True,validation,planned,12.2,13.5
+BW-021-Hair-Salon,Hair Salon,beauty-wellness,validation,unknown,False,False,0.0,12.2,Idea,bw-021-hair-salon,True,validation,planned,12.2,13.5
+BW-022-Barbershop,Barbershop,beauty-wellness,validation,unknown,False,False,0.0,12.2,Idea,bw-022-barbershop,True,validation,planned,12.2,13.5
+BW-024-Hair-Braiding-Studio,Hair Braiding Studio,beauty-wellness,validation,unknown,False,False,0.0,12.2,Idea,bw-024-hair-braiding-studio,True,validation,planned,12.2,13.5
+BW-025-Wig-Installation-Studio,Wig Installation Studio,beauty-wellness,validation,unknown,False,False,0.0,12.2,Idea,bw-025-wig-installation-studio,True,validation,planned,12.2,13.5
+BW-026-Hair-Extension-Salon,Hair Extension Salon,beauty-wellness,validation,unknown,False,False,0.0,12.2,Idea,bw-026-hair-extension-salon,True,validation,planned,12.2,13.5
+BW-030-Scalp-Treatment-Products,Scalp Treatment Products,beauty-wellness,validation,unknown,False,False,0.0,12.2,Idea,bw-030-scalp-treatment-products,True,validation,planned,12.2,13.5
+BW-035-Makeup-Studio,Makeup Studio,beauty-wellness,validation,unknown,False,False,0.0,12.2,Idea,bw-035-makeup-studio,True,validation,planned,12.2,13.5
+BW-038-Photoshoot-Makeup-Team,Photoshoot Makeup Team,beauty-wellness,validation,unknown,False,False,0.0,12.2,Idea,bw-038-photoshoot-makeup-team,True,validation,planned,12.2,13.5
+FH-023-Bakery-&-Pastry-Shop,Bakery & Pastry Shop,food-hospitality,validation,unknown,False,False,0.0,12.2,Idea,fh-023-bakery-&-pastry-shop,False,validation,validation,12.2,22.2
+LT-001-Truck-Dispatch-Company,Truck Dispatch Company,logistics-transport,validation,unknown,False,False,0.0,12.2,Idea,lt-001-truck-dispatch-company,True,validation,planned,12.2,13.5
+LT-002-Freight-Brokerage,Freight Brokerage,logistics-transport,validation,unknown,False,False,0.0,12.2,Idea,lt-002-freight-brokerage,True,validation,planned,12.2,13.5
+LT-005-Medical-Courier-Dispatch,Medical Courier Dispatch,logistics-transport,validation,unknown,False,False,0.0,12.2,Idea,lt-005-medical-courier-dispatch,True,validation,planned,12.2,13.5
+LT-007-Construction-Dispatch,Construction Dispatch,logistics-transport,validation,unknown,False,False,0.0,12.2,Idea,lt-007-construction-dispatch,True,validation,planned,12.2,13.5
+LT-016-Trucking-Company,Trucking Company,logistics-transport,validation,unknown,False,False,0.0,12.2,Idea,lt-016-trucking-company,True,validation,planned,12.2,13.5
+LT-019-Moving-Company,Moving Company,logistics-transport,validation,unknown,False,False,0.0,12.2,Idea,lt-019-moving-company,True,validation,planned,12.2,13.5
+LT-020-Freight-Company,Freight Company,logistics-transport,validation,unknown,False,False,0.0,12.2,Idea,lt-020-freight-company,True,validation,planned,12.2,13.5
+LT-023-Storage-Business,Storage Business,logistics-transport,validation,unknown,False,False,0.0,12.2,Idea,lt-023-storage-business,True,validation,planned,12.2,13.5
+LT-024-Distribution-Company,Distribution Company,logistics-transport,validation,unknown,False,False,0.0,12.2,Idea,lt-024-distribution-company,True,validation,planned,12.2,13.5
+LT-030-Cold-Chain-Logistics,Cold Chain Logistics,logistics-transport,validation,unknown,False,False,0.0,12.2,Idea,lt-030-cold-chain-logistics,True,validation,planned,12.2,13.5
+PS-002-Legal-Services,Legal Services,professional-services,validation,unknown,False,False,0.0,12.2,Idea,ps-002-legal-services,True,validation,planned,12.2,13.5
+PS-004-HR-Consulting,Hr Consulting,professional-services,validation,unknown,False,False,0.0,12.2,Idea,ps-004-hr-consulting,True,validation,planned,12.2,13.5
+PS-011-Real-Estate-Agency,Real Estate Agency,professional-services,validation,unknown,False,False,0.0,12.2,Idea,ps-011-real-estate-agency,True,validation,planned,12.2,13.5
+PS-014-Event-Planning,Event Planning,professional-services,validation,unknown,False,False,0.0,12.2,Idea,ps-014-event-planning,False,validation,validation,12.2,22.2
+PS-015-Interior-Design,Interior Design,professional-services,validation,unknown,False,False,0.0,12.2,Idea,ps-015-interior-design,False,validation,validation,12.2,22.2
+PS-018-Translation-Services,Translation Services,professional-services,validation,unknown,False,False,0.0,12.2,Idea,ps-018-translation-services,True,validation,planned,12.2,13.5
+PS-023-PR-Agency,Pr Agency,professional-services,validation,unknown,False,False,0.0,12.2,Idea,ps-023-pr-agency,True,validation,planned,12.2,13.5
+PS-024-Recruiting-Agency,Recruiting Agency,professional-services,validation,unknown,False,False,0.0,12.2,Idea,ps-024-recruiting-agency,True,validation,planned,12.2,13.5
+MC-004-Influencer-Agency,Influencer Agency,media-content,validation,unknown,False,False,0.0,12.2,Idea,mc-004-influencer-agency,True,validation,planned,12.2,13.5
+MC-006-Video-Production-Company,Video Production Company,media-content,validation,unknown,False,False,0.0,12.2,Idea,mc-006-video-production-company,True,validation,validation,12.2,22.2
+MC-008-Music-Production,Music Production,media-content,validation,unknown,False,False,0.0,12.2,Idea,mc-008-music-production,True,validation,planned,12.2,13.5
+MC-012-News-Website,News Website,media-content,validation,unknown,False,False,0.0,12.2,Idea,mc-012-news-website,True,validation,planned,12.2,13.5
+ET-003-Test-Prep-Service,Test Prep Service,education-training,validation,unknown,False,False,0.0,12.2,Idea,et-003-test-prep-service,True,validation,planned,12.2,13.5
+ET-004-Coding-Bootcamp,Coding Bootcamp,education-training,validation,unknown,False,False,0.0,12.2,Idea,et-004-coding-bootcamp,True,validation,planned,12.2,13.5
+ET-005-Professional-Certification,Professional Certification,education-training,validation,unknown,False,False,0.0,12.2,Idea,et-005-professional-certification,True,validation,planned,12.2,13.5
+ET-006-Corporate-Training,Corporate Training,education-training,validation,unknown,False,False,0.0,12.2,Idea,et-006-corporate-training,True,validation,planned,12.2,13.5
+ET-015-Homeschool-Curriculum,Homeschool Curriculum,education-training,validation,unknown,False,False,0.0,12.2,Idea,et-015-homeschool-curriculum,True,validation,planned,12.2,13.5
+ST-004-Custom-Software-Development,Custom Software Development,software-technology,validation,unknown,False,False,0.0,12.2,Idea,st-004-custom-software-development,False,validation,validation,12.2,22.2
+ST-007-DevOps-Consulting,Devops Consulting,software-technology,validation,unknown,False,False,0.0,12.2,Idea,st-007-devops-consulting,False,validation,validation,12.2,22.2
+ST-008-Cybersecurity-Service,Cybersecurity Service,software-technology,validation,unknown,False,False,0.0,12.2,Idea,st-008-cybersecurity-service,False,validation,validation,12.2,22.2
+ST-019-Payment-Processing,Payment Processing,software-technology,validation,unknown,False,False,0.0,12.2,Idea,st-019-payment-processing,False,validation,validation,12.2,22.2
+ST-023-Game-Development,Game Development,software-technology,validation,unknown,False,False,0.0,12.2,Idea,st-023-game-development,False,validation,validation,12.2,22.2
+BW-008-Private-Label-Lashes,Private Label Lashes,beauty-wellness,planned,unknown,False,False,0.0,3.5,Idea,bw-008-private-label-lashes,True,planned,planned,3.5,13.5
+BW-009-Franchise-Lash-Salons,Franchise Lash Salons,beauty-wellness,planned,unknown,False,False,0.0,3.5,Idea,bw-009-franchise-lash-salons,True,planned,planned,3.5,13.5
+BW-018-Nail-Booking-Marketplace,Nail Booking Marketplace,beauty-wellness,planned,unknown,False,False,0.0,3.5,Idea,bw-018-nail-booking-marketplace,True,planned,planned,3.5,13.5
+BW-019-Salon-Management-Software,Salon Management Software,beauty-wellness,planned,unknown,False,False,0.0,3.5,Idea,bw-019-salon-management-software,True,planned,planned,3.5,13.5
+BW-020-AI-Nail-Design-Generator,Ai Nail Design Generator,beauty-wellness,planned,unknown,False,False,0.0,3.5,Idea,bw-020-ai-nail-design-generator,True,planned,planned,3.5,13.5
+BW-031-Hair-Marketplace,Hair Marketplace,beauty-wellness,planned,unknown,False,False,0.0,3.5,Idea,bw-031-hair-marketplace,True,planned,planned,3.5,13.5
+BW-032-Stylist-Booking-Platform,Stylist Booking Platform,beauty-wellness,planned,unknown,False,False,0.0,3.5,Idea,bw-032-stylist-booking-platform,True,planned,planned,3.5,13.5
+BW-033-AI-Hairstyle-Simulator,Ai Hairstyle Simulator,beauty-wellness,planned,unknown,False,False,0.0,3.5,Idea,bw-033-ai-hairstyle-simulator,True,planned,planned,3.5,13.5
+BW-034-Salon-Franchise-Chain,Salon Franchise Chain,beauty-wellness,planned,unknown,False,False,0.0,3.5,Idea,bw-034-salon-franchise-chain,True,planned,planned,3.5,13.5
+LT-006-Amazon,Amazon,logistics-transport,planned,unknown,False,False,0.0,3.5,Idea,lt-006-amazon,True,planned,planned,3.5,13.5
+LT-011-Dispatch-Software,Dispatch Software,logistics-transport,planned,unknown,False,False,0.0,3.5,Idea,lt-011-dispatch-software,True,planned,planned,3.5,13.5
+LT-012-Fleet-Tracking-Platform,Fleet Tracking Platform,logistics-transport,planned,unknown,False,False,0.0,3.5,Idea,lt-012-fleet-tracking-platform,True,planned,planned,3.5,13.5
+LT-013-Logistics-Automation-System,Logistics Automation System,logistics-transport,planned,unknown,False,False,0.0,3.5,Idea,lt-013-logistics-automation-system,True,planned,planned,3.5,13.5
+LT-014-AI-Route-Optimization,Ai Route Optimization,logistics-transport,planned,unknown,False,False,0.0,3.5,Idea,lt-014-ai-route-optimization,True,planned,planned,3.5,13.5
+LT-015-Driver-Management-Platform,Driver Management Platform,logistics-transport,planned,unknown,False,False,0.0,3.5,Idea,lt-015-driver-management-platform,True,planned,planned,3.5,13.5
+LT-021-Warehouse-Company,Warehouse Company,logistics-transport,planned,unknown,False,False,0.0,3.5,Idea,lt-021-warehouse-company,True,planned,planned,3.5,13.5
+LT-025-Logistics-Marketplace,Logistics Marketplace,logistics-transport,planned,unknown,False,False,0.0,3.5,Idea,lt-025-logistics-marketplace,True,planned,planned,3.5,13.5
+LT-026-Shipping-Platform,Shipping Platform,logistics-transport,planned,unknown,False,False,0.0,3.5,Idea,lt-026-shipping-platform,True,planned,planned,3.5,13.5
+LT-027-Fleet-Management-SaaS,Fleet Management Saas,logistics-transport,planned,unknown,False,False,0.0,3.5,Idea,lt-027-fleet-management-saas,True,planned,planned,3.5,13.5
+LT-028-Freight-AI-Optimization,Freight Ai Optimization,logistics-transport,planned,unknown,False,False,0.0,3.5,Idea,lt-028-freight-ai-optimization,True,planned,planned,3.5,13.5
+LT-029-Supply-Chain-Analytics,Supply Chain Analytics,logistics-transport,planned,unknown,False,False,0.0,3.5,Idea,lt-029-supply-chain-analytics,True,planned,planned,3.5,13.5
+PS-025-Business-Brokerage,Business Brokerage,professional-services,planned,unknown,False,False,0.0,3.5,Idea,ps-025-business-brokerage,True,planned,planned,3.5,13.5
+MC-007-Animation-Studio,Animation Studio,media-content,planned,unknown,False,False,0.0,3.5,Idea,mc-007-animation-studio,True,planned,planned,3.5,13.5
+MC-013-Streaming-Platform,Streaming Platform,media-content,planned,unknown,False,False,0.0,3.5,Idea,mc-013-streaming-platform,True,planned,planned,3.5,13.5
+MC-015-Esports-Team,Esports Team,media-content,planned,unknown,False,False,0.0,3.5,Idea,mc-015-esports-team,True,planned,planned,3.5,13.5
+MC-016-Virtual-Events-Platform,Virtual Events Platform,media-content,planned,unknown,False,False,0.0,3.5,Idea,mc-016-virtual-events-platform,True,planned,planned,3.5,13.5
+MC-020-NFT-Marketplace,Nft Marketplace,media-content,planned,unknown,False,False,0.0,3.5,Idea,mc-020-nft-marketplace,True,planned,planned,3.5,13.5
+ET-007-Skills-Assessment-Platform,Skills Assessment Platform,education-training,planned,unknown,False,False,0.0,3.5,Idea,et-007-skills-assessment-platform,True,planned,planned,3.5,13.5
+ET-011-Mentorship-Platform,Mentorship Platform,education-training,planned,unknown,False,False,0.0,3.5,Idea,et-011-mentorship-platform,True,planned,planned,3.5,13.5
+ET-013-VR-Training-Simulations,Vr Training Simulations,education-training,planned,unknown,False,False,0.0,3.5,Idea,et-013-vr-training-simulations,True,planned,planned,3.5,13.5
+ET-014-Gamified-Learning-App,Gamified Learning App,education-training,planned,unknown,False,False,0.0,3.5,Idea,et-014-gamified-learning-app,True,planned,planned,3.5,13.5
+ST-006-Cloud-Infrastructure,Cloud Infrastructure,software-technology,planned,unknown,False,False,0.0,3.5,Idea,st-006-cloud-infrastructure,False,planned,planned,3.5,13.5
+ST-009-Data-Analytics-Platform,Data Analytics Platform,software-technology,planned,unknown,False,False,0.0,3.5,Idea,st-009-data-analytics-platform,False,planned,planned,3.5,13.5
+ST-010-Business-Intelligence-Tool,Business Intelligence Tool,software-technology,planned,unknown,False,False,0.0,3.5,Idea,st-010-business-intelligence-tool,False,planned,planned,3.5,13.5
+ST-011-CRM-Platform,Crm Platform,software-technology,planned,unknown,False,False,0.0,3.5,Idea,st-011-crm-platform,False,planned,planned,3.5,13.5
+ST-012-Project-Management-Tool,Project Management Tool,software-technology,planned,unknown,False,False,0.0,3.5,Idea,st-012-project-management-tool,False,planned,planned,3.5,13.5
+ST-013-Communication-Platform,Communication Platform,software-technology,planned,unknown,False,False,0.0,3.5,Idea,st-013-communication-platform,False,planned,planned,3.5,13.5
+ST-014-Collaboration-Software,Collaboration Software,software-technology,planned,unknown,False,False,0.0,3.5,Idea,st-014-collaboration-software,False,planned,planned,3.5,13.5
+ST-015-Automation-Platform,Automation Platform,software-technology,planned,unknown,False,False,0.0,3.5,Idea,st-015-automation-platform,False,planned,planned,3.5,13.5
+ST-016-AI,Ai,software-technology,planned,unknown,False,False,0.0,3.5,Idea,st-016-ai,False,planned,planned,3.5,13.5
+ST-018-E-commerce-Platform,E Commerce Platform,software-technology,planned,unknown,False,False,0.0,3.5,Idea,st-018-e-commerce-platform,False,planned,planned,3.5,13.5
+ST-020-Blockchain-Platform,Blockchain Platform,software-technology,planned,unknown,False,False,0.0,3.5,Idea,st-020-blockchain-platform,False,planned,planned,3.5,13.5
+ST-021-IoT-Platform,Iot Platform,software-technology,planned,unknown,False,False,0.0,3.5,Idea,st-021-iot-platform,False,planned,planned,3.5,13.5
+ST-022-AR,Ar,software-technology,planned,unknown,False,False,0.0,3.5,Idea,st-022-ar,False,planned,planned,3.5,13.5
+ST-026-HR-Tech-Platform,Hr Tech Platform,software-technology,planned,unknown,False,False,0.0,3.5,Idea,st-026-hr-tech-platform,False,planned,planned,3.5,13.5
+ST-027-Legal-Tech-Platform,Legal Tech Platform,software-technology,planned,unknown,False,False,0.0,3.5,Idea,st-027-legal-tech-platform,False,planned,planned,3.5,13.5
+ST-028-Health-Tech-Platform,Health Tech Platform,software-technology,planned,unknown,False,False,0.0,3.5,Idea,st-028-health-tech-platform,False,planned,planned,3.5,13.5
+ST-029-EdTech-Platform,Edtech Platform,software-technology,planned,unknown,False,False,0.0,3.5,Idea,st-029-edtech-platform,False,planned,planned,3.5,13.5
+ST-030-PropTech-Platform,Proptech Platform,software-technology,planned,unknown,False,False,0.0,3.5,Idea,st-030-proptech-platform,False,planned,planned,3.5,13.5
+TECH-008-Cybersecurity-Shield,Cybersecurity Shield,technology,planned,unknown,False,False,0.0,3.5,Idea,tech-008-cybersecurity-shield,False,planned,planned,3.5,13.5
+TECH-019-Fraud-Prevention-AI,Fraud Prevention Ai,technology,planned,unknown,False,False,0.0,3.5,Idea,tech-019-fraud-prevention-ai,False,planned,planned,3.5,13.5
+TECH-036-Robotics-Training-AI,Robotics Training Ai,technology,planned,unknown,False,False,0.0,3.5,Idea,tech-036-robotics-training-ai,False,planned,planned,3.5,13.5
+TECH-050-Text-to-Speech-AI,Text To Speech Ai,technology,planned,unknown,False,False,0.0,3.5,Idea,tech-050-text-to-speech-ai,False,planned,planned,3.5,13.5
+OPS-016-Contract-Management-AI,Contract Management Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-016-contract-management-ai,False,planned,planned,3.5,13.5
+OPS-017-Compliance-Monitoring-AI,Compliance Monitoring Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-017-compliance-monitoring-ai,False,planned,planned,3.5,13.5
+OPS-018-Quality-Control-AI,Quality Control Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-018-quality-control-ai,False,planned,planned,3.5,13.5
+OPS-019-Asset-Management-AI,Asset Management Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-019-asset-management-ai,False,planned,planned,3.5,13.5
+OPS-020-Time-Tracking-AI,Time Tracking Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-020-time-tracking-ai,False,planned,planned,3.5,13.5
+OPS-021-Document-Security-AI,Document Security Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-021-document-security-ai,False,planned,planned,3.5,13.5
+OPS-022-Knowledge-Management-AI,Knowledge Management Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-022-knowledge-management-ai,False,planned,planned,3.5,13.5
+OPS-023-Meeting-Transcription-AI,Meeting Transcription Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-023-meeting-transcription-ai,False,planned,planned,3.5,13.5
+OPS-024-Task-Automation-AI,Task Automation Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-024-task-automation-ai,False,planned,planned,3.5,13.5
+OPS-025-Resource-Allocation-AI,Resource Allocation Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-025-resource-allocation-ai,False,planned,planned,3.5,13.5
+OPS-026-Budget-Planning-AI,Budget Planning Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-026-budget-planning-ai,False,planned,planned,3.5,13.5
+OPS-027-Cost-Optimization-AI,Cost Optimization Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-027-cost-optimization-ai,False,planned,planned,3.5,13.5
+OPS-028-Procurement-AI,Procurement Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-028-procurement-ai,False,planned,planned,3.5,13.5
+OPS-029-Vendor-Management-AI,Vendor Management Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-029-vendor-management-ai,False,planned,planned,3.5,13.5
+OPS-030-Contract-Negotiation-AI,Contract Negotiation Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-030-contract-negotiation-ai,False,planned,planned,3.5,13.5
+OPS-031-Legal-Document-AI,Legal Document Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-031-legal-document-ai,False,planned,planned,3.5,13.5
+OPS-032-Compliance-Reporting-AI,Compliance Reporting Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-032-compliance-reporting-ai,False,planned,planned,3.5,13.5
+OPS-033-Training-Content-AI,Training Content Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-033-training-content-ai,False,planned,planned,3.5,13.5
+OPS-034-Employee-Engagement-AI,Employee Engagement Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-034-employee-engagement-ai,False,planned,planned,3.5,13.5
+OPS-035-Succession-Planning-AI,Succession Planning Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-035-succession-planning-ai,False,planned,planned,3.5,13.5
+OPS-036-Workspace-Design-AI,Workspace Design Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-036-workspace-design-ai,False,planned,planned,3.5,13.5
+OPS-037-Energy-Efficiency-AI,Energy Efficiency Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-037-energy-efficiency-ai,False,planned,planned,3.5,13.5
+OPS-038-Security-Monitoring-AI,Security Monitoring Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-038-security-monitoring-ai,False,planned,planned,3.5,13.5
+OPS-039-Health-Safety-AI,Health Safety Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-039-health-safety-ai,False,planned,planned,3.5,13.5
+OPS-040-Disaster-Recovery-AI,Disaster Recovery Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-040-disaster-recovery-ai,False,planned,planned,3.5,13.5
+OPS-041-IT-Asset-Management,It Asset Management,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-041-it-asset-management,False,planned,planned,3.5,13.5
+OPS-042-Cloud-Cost-Management,Cloud Cost Management,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-042-cloud-cost-management,False,planned,planned,3.5,13.5
+OPS-043-Data-Governance-AI,Data Governance Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-043-data-governance-ai,False,planned,planned,3.5,13.5
+OPS-044-Network-Monitoring-AI,Network Monitoring Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-044-network-monitoring-ai,False,planned,planned,3.5,13.5
+OPS-045-Software-Licensing-AI,Software Licensing Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-045-software-licensing-ai,False,planned,planned,3.5,13.5
+OPS-046-IT-Procurement-AI,It Procurement Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-046-it-procurement-ai,False,planned,planned,3.5,13.5
+OPS-047-System-Integration-AI,System Integration Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-047-system-integration-ai,False,planned,planned,3.5,13.5
+OPS-048-Data-Backup-AI,Data Backup Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-048-data-backup-ai,False,planned,planned,3.5,13.5
+OPS-049-Business-Continuity-AI,Business Continuity Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-049-business-continuity-ai,False,planned,planned,3.5,13.5
+OPS-050-Compliance-Audit-AI,Compliance Audit Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-050-compliance-audit-ai,False,planned,planned,3.5,13.5
+OPS-051-Document-Collaboration-AI,Document Collaboration Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-051-document-collaboration-ai,False,planned,planned,3.5,13.5
+OPS-052-Video-Conferencing-AI,Video Conferencing Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-052-video-conferencing-ai,False,planned,planned,3.5,13.5
+OPS-053-Email-Management-AI,Email Management Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-053-email-management-ai,False,planned,planned,3.5,13.5
+OPS-054-Calendar-Optimization-AI,Calendar Optimization Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-054-calendar-optimization-ai,False,planned,planned,3.5,13.5
+OPS-055-Project-Budget-AI,Project Budget Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-055-project-budget-ai,False,planned,planned,3.5,13.5
+OPS-056-Resource-Forecasting-AI,Resource Forecasting Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-056-resource-forecasting-ai,False,planned,planned,3.5,13.5
+OPS-057-Task-Prioritization-AI,Task Prioritization Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-057-task-prioritization-ai,False,planned,planned,3.5,13.5
+OPS-058-Time-Management-AI,Time Management Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-058-time-management-ai,False,planned,planned,3.5,13.5
+OPS-059-Meeting-Minutes-AI,Meeting Minutes Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-059-meeting-minutes-ai,False,planned,planned,3.5,13.5
+OPS-060-Document-Translation-AI,Document Translation Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-060-document-translation-ai,False,planned,planned,3.5,13.5
+OPS-061-Form-Automation-AI,Form Automation Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-061-form-automation-ai,False,planned,planned,3.5,13.5
+OPS-062-Report-Generation-AI,Report Generation Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-062-report-generation-ai,False,planned,planned,3.5,13.5
+OPS-063-Dashboard-Creation-AI,Dashboard Creation Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-063-dashboard-creation-ai,False,planned,planned,3.5,13.5
+OPS-064-Analytics-Platform-AI,Analytics Platform Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-064-analytics-platform-ai,False,planned,planned,3.5,13.5
+OPS-065-Data-Cleaning-AI,Data Cleaning Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-065-data-cleaning-ai,False,planned,planned,3.5,13.5
+OPS-066-Workflow-Management-AI,Workflow Management Ai,operations,planned,unknown,False,False,0.0,3.5,Idea,ops-066-workflow-management-ai,False,planned,planned,3.5,13.5
+EDU-006-Homeschooling-Content-AI,Homeschooling Content Ai,education,planned,unknown,False,False,0.0,3.5,Idea,edu-006-homeschooling-content-ai,True,planned,planned,3.5,13.5
+EDU-013-Automated-Empire-Book,Automated Empire Book,education,planned,unknown,False,False,0.0,3.5,Idea,edu-013-automated-empire-book,True,planned,planned,3.5,13.5
+SPEC-001-AI-Auction-House,Ai Auction House,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-001-ai-auction-house,False,planned,planned,3.5,13.5
+SPEC-002-Smart-Marina-Management,Smart Marina Management,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-002-smart-marina-management,False,planned,planned,3.5,13.5
+SPEC-003-AI-Surf-Report,Ai Surf Report,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-003-ai-surf-report,False,planned,planned,3.5,13.5
+SPEC-004-Private-Chef-AI,Private Chef Ai,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-004-private-chef-ai,False,planned,planned,3.5,13.5
+SPEC-005-Virtual-Concierge-AI,Virtual Concierge Ai,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-005-virtual-concierge-ai,False,planned,planned,3.5,13.5
+SPEC-006-Smart-Parking-AI,Smart Parking Ai,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-006-smart-parking-ai,False,planned,planned,3.5,13.5
+SPEC-007-AI-Interior-Design,Ai Interior Design,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-007-ai-interior-design,False,planned,planned,3.5,13.5
+SPEC-008-Personal-Stylist-AI,Personal Stylist Ai,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-008-personal-stylist-ai,False,planned,planned,3.5,13.5
+SPEC-009-Smart-Locker-System,Smart Locker System,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-009-smart-locker-system,False,planned,planned,3.5,13.5
+SPEC-010-AI-Fitness-Coach,Ai Fitness Coach,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-010-ai-fitness-coach,False,planned,planned,3.5,13.5
+SPEC-011-Smart-Golf-Caddie,Smart Golf Caddie,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-011-smart-golf-caddie,False,planned,planned,3.5,13.5
+SPEC-012-AI-Nutritionist,Ai Nutritionist,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-012-ai-nutritionist,False,planned,planned,3.5,13.5
+SPEC-013-Smart-Hotel-Butler,Smart Hotel Butler,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-013-smart-hotel-butler,False,planned,planned,3.5,13.5
+SPEC-014-AI-Language-Tutor,Ai Language Tutor,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-014-ai-language-tutor,False,planned,planned,3.5,13.5
+SPEC-015-Smart-Transportation-AI,Smart Transportation Ai,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-015-smart-transportation-ai,False,planned,planned,3.5,13.5
+SPEC-016-AI-Travel-Planner,Ai Travel Planner,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-016-ai-travel-planner,False,planned,planned,3.5,13.5
+SPEC-017-Smart-Agriculture-AI,Smart Agriculture Ai,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-017-smart-agriculture-ai,False,planned,planned,3.5,13.5
+SPEC-018-AI-Personal-Shopper,Ai Personal Shopper,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-018-ai-personal-shopper,False,planned,planned,3.5,13.5
+SPEC-019-Smart-Home-Security,Smart Home Security,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-019-smart-home-security,False,planned,planned,3.5,13.5
+SPEC-020-AI-Music-Producer,Ai Music Producer,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-020-ai-music-producer,False,planned,planned,3.5,13.5
+SPEC-021-Smart-Restaurant-AI,Smart Restaurant Ai,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-021-smart-restaurant-ai,False,planned,planned,3.5,13.5
+SPEC-022-AI-Movie-Critic,Ai Movie Critic,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-022-ai-movie-critic,False,planned,planned,3.5,13.5
+SPEC-023-Smart-Museum-Guide,Smart Museum Guide,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-023-smart-museum-guide,False,planned,planned,3.5,13.5
+SPEC-024-AI-Sports-Analyst,Ai Sports Analyst,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-024-ai-sports-analyst,False,planned,planned,3.5,13.5
+SPEC-025-Smart-Library-AI,Smart Library Ai,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-025-smart-library-ai,False,planned,planned,3.5,13.5
+SPEC-026-AI-Art-Curator,Ai Art Curator,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-026-ai-art-curator,False,planned,planned,3.5,13.5
+SPEC-027-Smart-Fitness-AI,Smart Fitness Ai,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-027-smart-fitness-ai,False,planned,planned,3.5,13.5
+SPEC-028-AI-Poetry-Generator,Ai Poetry Generator,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-028-ai-poetry-generator,False,planned,planned,3.5,13.5
+SPEC-029-Smart-Dating-AI,Smart Dating Ai,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-029-smart-dating-ai,False,planned,planned,3.5,13.5
+SPEC-030-AI-Journalism-Tool,Ai Journalism Tool,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-030-ai-journalism-tool,False,planned,planned,3.5,13.5
+SPEC-031-Smart-Legal-AI,Smart Legal Ai,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-031-smart-legal-ai,False,planned,planned,3.5,13.5
+SPEC-033-Smart-Real-Estate-AI,Smart Real Estate Ai,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-033-smart-real-estate-ai,False,planned,planned,3.5,13.5
+SPEC-034-AI-Cooking-Assistant,Ai Cooking Assistant,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-034-ai-cooking-assistant,False,planned,planned,3.5,13.5
+SPEC-035-Smart-Health-AI,Smart Health Ai,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-035-smart-health-ai,False,planned,planned,3.5,13.5
+SPEC-036-AI-Photography-Tool,Ai Photography Tool,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-036-ai-photography-tool,False,planned,planned,3.5,13.5
+SPEC-037-Smart-Writing-AI,Smart Writing Ai,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-037-smart-writing-ai,False,planned,planned,3.5,13.5
+SPEC-038-AI-Comedy-Writer,Ai Comedy Writer,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-038-ai-comedy-writer,False,planned,planned,3.5,13.5
+SPEC-039-Smart-Meditation-AI,Smart Meditation Ai,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-039-smart-meditation-ai,False,planned,planned,3.5,13.5
+SPEC-040-AI-Debate-Coach,Ai Debate Coach,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-040-ai-debate-coach,False,planned,planned,3.5,13.5
+SPEC-041-Smart-Parenting-AI,Smart Parenting Ai,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-041-smart-parenting-ai,False,planned,planned,3.5,13.5
+SPEC-042-AI-Financial-Advisor,Ai Financial Advisor,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-042-ai-financial-advisor,False,planned,planned,3.5,13.5
+SPEC-043-Smart-Automotive-AI,Smart Automotive Ai,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-043-smart-automotive-ai,False,planned,planned,3.5,13.5
+SPEC-044-AI-Aviation-Planner,Ai Aviation Planner,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-044-ai-aviation-planner,False,planned,planned,3.5,13.5
+SPEC-045-Smart-Maritime-AI,Smart Maritime Ai,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-045-smart-maritime-ai,False,planned,planned,3.5,13.5
+SPEC-046-AI-Weather-Forecast,Ai Weather Forecast,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-046-ai-weather-forecast,False,planned,planned,3.5,13.5
+SPEC-047-Smart-Energy-AI,Smart Energy Ai,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-047-smart-energy-ai,False,planned,planned,3.5,13.5
+SPEC-048-AI-Sports-Coach,Ai Sports Coach,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-048-ai-sports-coach,False,planned,planned,3.5,13.5
+SPEC-049-Smart-Education-AI,Smart Education Ai,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-049-smart-education-ai,False,planned,planned,3.5,13.5
+SPEC-050-AI-Language-Translator,Ai Language Translator,specialized,planned,unknown,False,False,0.0,3.5,Idea,spec-050-ai-language-translator,False,planned,planned,3.5,13.5
+FI-dist,Dist,financial,planned,unknown,False,False,0.0,3.5,Idea,fi-dist,False,planned,planned,3.5,13.5
+FI-node_modules,Node_Modules,financial,planned,unknown,False,False,0.0,3.5,Idea,fi-node_modules,False,planned,planned,3.5,13.5
+FI-public,Public,financial,planned,unknown,False,False,0.0,3.5,Idea,fi-public,False,planned,planned,3.5,13.5
+FI-src,Src,financial,planned,unknown,False,False,0.0,3.5,Idea,fi-src,False,planned,planned,3.5,13.5
+FI-supabase,Supabase,financial,planned,unknown,False,False,0.0,3.5,Idea,fi-supabase,False,planned,planned,3.5,13.5
+CON-001-ACE-CONSTRUCTION,Ace Construction,construction,planned,unknown,False,False,0.0,3.5,Idea,con-001-ace-construction,True,planned,mvp,3.5,32.8
+CON-002-RESIDENTIAL-CONSTRUCTION,Residential Construction,construction,planned,unknown,False,False,0.0,3.5,Idea,con-002-residential-construction,True,planned,mvp,3.5,32.8
+CON-003-COMMERCIAL-CONSTRUCTION,Commercial Construction,construction,planned,unknown,False,False,0.0,3.5,Idea,con-003-commercial-construction,True,planned,mvp,3.5,32.8
+CON-004-INDUSTRIAL-CONSTRUCTION,Industrial Construction,construction,planned,unknown,False,False,0.0,3.5,Idea,con-004-industrial-construction,True,planned,mvp,3.5,32.8
+CON-005-CONSTRUCTION-EQUIPMENT-RENTAL,Construction Equipment Rental,construction,planned,unknown,False,False,0.0,3.5,Idea,con-005-construction-equipment-rental,True,planned,mvp,3.5,32.8
+CON-006-CONSTRUCTION-PROJECT-MANAGEMENT,Construction Project Management,construction,planned,unknown,False,False,0.0,3.5,Idea,con-006-construction-project-management,True,planned,mvp,3.5,32.8
+CON-007-GREEN-BUILDING-SERVICES,Green Building Services,construction,planned,unknown,False,False,0.0,3.5,Idea,con-007-green-building-services,True,planned,mvp,3.5,32.8
+CON-008-HOME-RENOVATION-SERVICES,Home Renovation Services,construction,planned,unknown,False,False,0.0,3.5,Idea,con-008-home-renovation-services,True,planned,mvp,3.5,32.8
+CON-009-ROOFING-COMPANY,Roofing Company,construction,planned,unknown,False,False,0.0,3.5,Idea,con-009-roofing-company,True,planned,mvp,3.5,32.8
+CON-010-PLUMBING-SERVICES,Plumbing Services,construction,planned,unknown,False,False,0.0,3.5,Idea,con-010-plumbing-services,True,planned,mvp,3.5,32.8
+CON-011-ELECTRICAL-SERVICES,Electrical Services,construction,planned,unknown,False,False,0.0,3.5,Idea,con-011-electrical-services,True,planned,mvp,3.5,32.8
+CON-012-HVAC-SERVICES,HVAC Services,construction,planned,unknown,False,False,0.0,3.5,Idea,con-012-hvac-services,True,planned,mvp,3.5,32.8
+CON-013-PAINTING-SERVICES,Painting Services,construction,planned,unknown,False,False,0.0,3.5,Idea,con-013-painting-services,True,planned,mvp,3.5,32.8
+CON-014-FLOORING-SERVICES,Flooring Services,construction,planned,unknown,False,False,0.0,3.5,Idea,con-014-flooring-services,True,planned,mvp,3.5,32.8
+CON-015-LANDSCAPING-SERVICES,Landscaping Services,construction,planned,unknown,False,False,0.0,3.5,Idea,con-015-landscaping-services,True,planned,mvp,3.5,32.8
+CON-016-DEMOLITION-SERVICES,Demolition Services,construction,planned,unknown,False,False,0.0,3.5,Idea,con-016-demolition-services,True,planned,mvp,3.5,32.8
+CON-017-CONCRETE-SERVICES,Concrete Services,construction,planned,unknown,False,False,0.0,3.5,Idea,con-017-concrete-services,True,planned,mvp,3.5,32.8
+CON-018-CARPENTRY-SERVICES,Carpentry Services,construction,planned,unknown,False,False,0.0,3.5,Idea,con-018-carpentry-services,True,planned,mvp,3.5,32.8
+CON-019-WINDOW-INSTALLATION,Window Installation,construction,planned,unknown,False,False,0.0,3.5,Idea,con-019-window-installation,True,planned,mvp,3.5,32.8
+CON-020-INSULATION-SERVICES,Insulation Services,construction,planned,unknown,False,False,0.0,3.5,Idea,con-020-insulation-services,True,planned,mvp,3.5,32.8
+RE-001-PROPERTY-HOLDINGS,Property Holdings,real-estate,planned,unknown,False,False,0.0,3.5,Idea,re-001-property-holdings,False,planned,planned,3.5,13.5

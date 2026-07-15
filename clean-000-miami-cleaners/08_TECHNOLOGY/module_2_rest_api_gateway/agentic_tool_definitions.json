@@ -1,0 +1,8 @@
+{
+  "name": "cle_rest_api_gateway",
+  "description": "Orchestrates technical commands for REST API Gateway in venture Miami Cleaners",
+  "parameters": {
+    "type": "object",
+    "properties": {}
+  }
+}

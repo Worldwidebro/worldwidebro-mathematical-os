@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-07-15T15:14:06.107339",
+  "entity_summary": {
+    "total_entities": 7082,
+    "ventures": 100,
+    "repos": 0,
+    "contacts": 0,
+    "other": 6982
+  },
+  "relationship_summary": {
+    "total_relationships": 7276,
+    "by_type": {
+      "belongs_to_sector": 3261,
+      "has_risk": 3327,
+      "risks": 2,
+      "benefits": 1,
+      "powers_venture": 385,
+      "PROVIDES_CAPABILITY": 300
+    }
+  },
+  "repo_coverage": {
+    "repos_with_connections": 0
+  },
+  "connection_status": "live"
+}

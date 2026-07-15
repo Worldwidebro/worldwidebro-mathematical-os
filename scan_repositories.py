@@ -36,9 +36,16 @@ def get_starred_repos() -> List[Dict[str, Any]]:
     """Get all starred repositories from GitHub."""
     print("📥 Fetching starred repositories...")
     try:
+        # NOTE: `gh api user/starred` hits the raw GitHub REST API, which returns
+        # snake_case fields (stargazers_count, forks_count, language, updated_at, html_url) —
+        # NOT the camelCase fields `gh repo list` returns. Map them to the camelCase keys
+        # categorize_repo() expects so both owned + starred repos share one shape.
+        # (language is a plain string here; categorize_repo() handles str or dict.)
         result = subprocess.run(
             ["gh", "api", "user/starred", "--paginate",
-             "--jq", ".[] | {name, description, stargazerCount, primaryLanguage, forkCount, updatedAt, url}"],
+             "--jq", ".[] | {name, description, stargazerCount: .stargazers_count, "
+             "primaryLanguage: .language, forkCount: .forks_count, "
+             "updatedAt: .updated_at, url: .html_url}"],
             capture_output=True, text=True, check=True
         )
         repos = [json.loads(line) for line in result.stdout.strip().split('\n') if line]

@@ -1,0 +1,122 @@
+{
+  "_meta": {
+    "model": "entity = role + structure + function + cash_flow_in + cash_flow_out + risk_level",
+    "principle": "Entities are functions in a system, not types. 5 roles: CONTROL, OPERATIONS, EXPERIMENTATION, CAPITAL, PROTECTION.",
+    "grounded_in": "WORLDWIDEBRO-OS/08-DATA/portfolio-reports/config/holdings_config.json",
+    "owner": "Antwuan Divine Johns",
+    "as_of": "2026-06-28"
+  },
+  "roles": {
+    "CONTROL": "Ownership layer — holds equity, allocates capital, defines succession.",
+    "OPERATIONS": "Execution layer — runs the business, signs contracts, employs people.",
+    "EXPERIMENTATION": "Risk-isolation layer — single deal/project, contained blast radius.",
+    "CAPITAL": "Money-movement layer — treasury, factoring, investment vehicles.",
+    "PROTECTION": "Legal/risk firewall — trusts, IP holding, asset isolation."
+  },
+  "entities": [
+    {
+      "id": "TRUST-001",
+      "name": "The Johns Family Trust",
+      "role": "PROTECTION",
+      "structure": "Trust",
+      "function": "Holds ownership interest in the holding company; shields assets, defines succession.",
+      "cash_flow_in": ["distributions from HOLD-001"],
+      "cash_flow_out": ["beneficiary distributions", "reinvestment to HOLD-001"],
+      "risk_level": "isolated",
+      "parent": null,
+      "owns": ["HOLD-001"],
+      "status": "Planned"
+    },
+    {
+      "id": "HOLD-001",
+      "name": "Worldwidebro Holdings",
+      "role": "CONTROL",
+      "structure": "Holding company (LLC or C-Corp TBD)",
+      "function": "Parent brand. Owns operating entities + IP. Allocates capital across OPCOs by capital-layer margin.",
+      "cash_flow_in": ["upstream profit from OPCOs", "IP licensing from IPHOLD-001"],
+      "cash_flow_out": ["capital allocation to OPCOs", "distributions to TRUST-001"],
+      "risk_level": "isolated",
+      "parent": "TRUST-001",
+      "owns": ["WC-LLC-001", "IPHOLD-001", "TREAS-001"],
+      "status": "Operating as brand (rebrand target post-revenue)"
+    },
+    {
+      "id": "WC-LLC-001",
+      "name": "Winners Circle WC LLC",
+      "role": "OPERATIONS",
+      "structure": "LLC (bootstrap operating entity)",
+      "function": "Active legal entity. Contracts, banking, payroll, venture operations run through this TODAY.",
+      "cash_flow_in": ["venture revenue", "service contracts"],
+      "cash_flow_out": ["operating expenses", "payroll", "upstream profit to HOLD-001"],
+      "risk_level": "exposed",
+      "parent": "HOLD-001",
+      "owns": ["OPCO-*"],
+      "status": "Active"
+    },
+    {
+      "id": "IPHOLD-001",
+      "name": "Worldwidebro IP Holding (proposed)",
+      "role": "PROTECTION",
+      "structure": "LLC (asset-holding)",
+      "function": "Owns brand, trademarks, code, systems. Licenses IP down to OPCOs — keeps crown jewels out of the exposed operating entity.",
+      "cash_flow_in": ["license fees from OPCOs"],
+      "cash_flow_out": ["upstream to HOLD-001"],
+      "risk_level": "isolated",
+      "parent": "HOLD-001",
+      "owns": [],
+      "status": "Proposed (form when first asset has value)"
+    },
+    {
+      "id": "TREAS-001",
+      "name": "Treasury / Factoring Vehicle (proposed)",
+      "role": "CAPITAL",
+      "structure": "LLC",
+      "function": "Holds cash reserves, runs invoice factoring for service OPCOs (Layer 1), routes capital to acquisitions (Layer 3).",
+      "cash_flow_in": ["retained earnings from HOLD-001", "factoring spread"],
+      "cash_flow_out": ["working-capital advances to OPCOs", "acquisition funding"],
+      "risk_level": "isolated",
+      "parent": "HOLD-001",
+      "owns": [],
+      "status": "Proposed (form at Layer 3 / acquisitions stage)"
+    },
+    {
+      "id": "OPCO-TEMPLATE",
+      "name": "OPCO (operating company template, x18)",
+      "role": "OPERATIONS",
+      "structure": "LLC (C-Corp election optional for VC-track OPCOs)",
+      "function": "One per sector group (Financial, Construction, Technology...). Houses the ventures in that sector.",
+      "cash_flow_in": ["venture revenue in sector"],
+      "cash_flow_out": ["sector operating costs", "upstream profit to WC-LLC-001 / HOLD-001", "IP license to IPHOLD-001"],
+      "risk_level": "exposed",
+      "parent": "WC-LLC-001",
+      "owns": ["VENTURE-*", "SPV-*"],
+      "status": "Template (18 to instantiate)"
+    },
+    {
+      "id": "SPV-TEMPLATE",
+      "name": "SPV (deal/project isolation template)",
+      "role": "EXPERIMENTATION",
+      "structure": "Project LLC",
+      "function": "One per high-risk deal/client contract/acquisition. Contains liability so a single failure cannot reach the OPCO or holding.",
+      "cash_flow_in": ["deal-specific revenue", "TREAS-001 funding"],
+      "cash_flow_out": ["deal costs", "profit to parent OPCO on close"],
+      "risk_level": "isolated",
+      "parent": "OPCO-TEMPLATE",
+      "owns": [],
+      "status": "Template (spawn per deal, dissolve on close)"
+    }
+  ],
+  "capital_layers": {
+    "1": {"name": "Labor Income", "lives_in": "service OPCOs", "margin": "40-53%", "funds": "Layer 2"},
+    "2": {"name": "Skill Monetization", "lives_in": "SaaS/content OPCOs", "margin": "60-80%", "funds": "Layer 3"},
+    "3": {"name": "Asset Acquisition", "lives_in": "SPVs + TREAS-001", "margin": "34% ROI", "funds": "Layer 4"},
+    "4": {"name": "Capital Compounding", "lives_in": "TREAS-001 / investment arm", "margin": "variable", "funds": "reinvest"}
+  },
+  "red_team_rules": [
+    "Every entity MUST have a non-empty function, cash_flow_in, and cash_flow_out — a holding layer with no cash flow is a dead structure.",
+    "IP and cash reserves live in 'isolated' entities, never in 'exposed' operating entities.",
+    "SPVs are spawned per deal and dissolved on close — never reused across unrelated deals (compliance risk).",
+    "Do not mix CAPITAL-role vehicles (treasury/factoring) with future VC/prop activity in one entity (regulatory exposure).",
+    "Do not form an entity until it has a real cash flow or a real asset to protect."
+  ]
+}

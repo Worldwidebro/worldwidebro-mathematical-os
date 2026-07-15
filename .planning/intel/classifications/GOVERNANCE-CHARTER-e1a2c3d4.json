@@ -1,0 +1,13 @@
+{
+  "source_path": "/Users/acebless/Documents/WORLDWIDEBRO-OS/02-GOVERNANCE/holdings/_superseded/Worldwidebro-Holdings/GOVERNANCE-CHARTER.md",
+  "type": "SPEC",
+  "confidence": "high",
+  "manifest_override": true,
+  "title": "Governance Charter: Worldwidebro Holdings",
+  "summary": "Foundational governance framework defining board structure, OPCO leadership, venture lifecycle, financial controls, and escalation processes.",
+  "scope": ["Worldwidebro Holdings", "Board of Directors", "OPCOs", "Ventures", "Financial Controls", "Compensation", "Risk Management", "Reporting", "Escalation Matrix", "Amendment Process"],
+  "cross_refs": [],
+  "locked": false,
+  "precedence": 2,
+  "notes": ""
+}

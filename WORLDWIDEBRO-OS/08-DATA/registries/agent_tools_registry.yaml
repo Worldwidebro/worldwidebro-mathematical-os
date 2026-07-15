@@ -1,0 +1,160 @@
+# IZA OS Agent Tools Stack Registry
+# Classifies specialized automation tools and maps them to OS execution layers.
+
+tools:
+  - name: office-cli
+    layer: TOOLS
+    category: "Productivity Automation"
+    purpose: "Command-line control for office/document workflows."
+    capabilities:
+      - "generate_pitch_decks"
+      - "compile_financial_spreadsheets"
+      - "create_business_proposals"
+    agent_bindings:
+      - "CFO Agent"
+      - "CEO Agent"
+
+  - name: cube-sandbox
+    layer: EXECUTION
+    category: "Sandbox / Code Execution"
+    purpose: "Isolated, secure code execution environment."
+    capabilities:
+      - "safe_python_evaluation"
+      - "local_repository_testing"
+      - "automated_script_verification"
+    agent_bindings:
+      - "Developer Agent"
+
+  - name: meetily
+    layer: TOOLS
+    category: "Voice Ingestion"
+    purpose: "Meeting transcript extraction, summarization, and key insight capture."
+    capabilities:
+      - "audio_transcription"
+      - "meeting_summarization"
+      - "crm_contact_extraction"
+    agent_bindings:
+      - "Operations Agent"
+      - "Sales Agent"
+
+  - name: claude-video
+    layer: MEDIA
+    category: "Media Intelligence"
+    purpose: "Video analysis, script extraction, and competitor media profiling."
+    capabilities:
+      - "video_scene_detection"
+      - "competitor_ad_scraping"
+    agent_bindings:
+      - "Marketing Agent"
+
+  - name: system-prompts-leaks
+    layer: RESEARCH
+    category: "OSINT / Prompt Datasets"
+    purpose: "Research archive of leaked system prompts to study prompting techniques."
+    capabilities:
+      - "prompt_structure_analysis"
+      - "system_instructions_benchmark"
+    agent_bindings: []
+
+  - name: orca
+    layer: SECURITY
+    category: "Vulnerability Scanning"
+    purpose: "Container, dependency, and infrastructure security auditing."
+    capabilities:
+      - "docker_image_vulnerability_scan"
+      - "dependency_safety_check"
+    agent_bindings:
+      - "Developer Agent"
+
+  - name: omni-route
+    layer: ROUTING
+    category: "Orchestration & Routing"
+    purpose: "Optimize logistics routes and dynamically dispatch workflows to target agents."
+    capabilities:
+      - "agent_request_load_balancing"
+      - "logistics_driver_routing"
+    agent_bindings:
+      - "Operations Agent"
+
+  - name: astryx
+    layer: TOOLS
+    category: "Custom Automation Core"
+    purpose: "Domain-specific AI automation scripting core."
+    capabilities:
+      - "dynamic_script_execution"
+    agent_bindings:
+      - "Developer Agent"
+
+  - name: syncthing
+    layer: INGESTION
+    category: "File Synchronization"
+    purpose: "Peer-to-peer file synchronization across devices."
+    capabilities:
+      - "realtime_knowledge_vault_sync"
+      - "distributed_document_distribution"
+    agent_bindings:
+      - "Operations Agent"
+
+  - name: stirling-pdf
+    layer: INGESTION
+    category: "Document Processing"
+    purpose: "Self-hosted PDF automation, OCR, and format conversions."
+    capabilities:
+      - "pdf_ocr_text_extraction"
+      - "split_merge_compress_documents"
+    agent_bindings:
+      - "Finance Agent"
+      - "Developer Agent"
+
+  - name: gitnexus-cli
+    layer: CODE_INTELLIGENCE
+    category: "Code Graph Intelligence"
+    purpose: "Static dependency indexing, call-graph generation, and architecture mapping."
+    capabilities:
+      - "index_codebase_call_graphs"
+      - "detect_duplicate_implementations"
+      - "codebase_impact_analysis"
+    agent_bindings:
+      - "Developer Agent"
+
+  - name: render-cli
+    layer: INFRASTRUCTURE
+    category: "Cloud Deployment"
+    purpose: "Cloud hosting, container deployments, and web service rendering."
+    capabilities:
+      - "deploy_docker_containers"
+      - "manage_static_sites"
+    agent_bindings:
+      - "Developer Agent"
+
+  - name: n8n-docker
+    layer: AUTOMATION
+    category: "Self-Hosted Workflows"
+    purpose: "Visual workflow automation, webhook endpoints, and data routing."
+    capabilities:
+      - "orchestrate_local_workflows"
+      - "execute_agent_triggers"
+    agent_bindings:
+      - "Operations Agent"
+      - "Developer Agent"
+
+  - name: zapier-api
+    layer: AUTOMATION
+    category: "SaaS Automations"
+    purpose: "SaaS automation triggers and multi-app integration workflows."
+    capabilities:
+      - "trigger_saas_app_actions"
+    agent_bindings:
+      - "Operations Agent"
+
+  - name: make-api
+    layer: AUTOMATION
+    category: "SaaS Automations"
+    purpose: "Complex SaaS integration scenarios and transactional workflows."
+    capabilities:
+      - "execute_make_scenario_pipelines"
+    agent_bindings:
+      - "Operations Agent"
+
+
+

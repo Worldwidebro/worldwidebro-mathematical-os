@@ -1,0 +1,713 @@
+venture_id,name,sector,stage,status,required_capabilities,implemented_capabilities,coverage_pct
+FIN-001-GenixBank-Lite,Genixbank Lite,financial,planned,planned,analytics;api;authentication;dashboard;database;payments;portfolio;security,agent;crm;dashboard;payments,25.0
+FIN-002-Credit-Repair-Automation,Credit Repair Automation,financial,planned,planned,analytics;api;authentication;automation;dashboard;database;payments;portfolio;security,automation,11.1
+FIN-003-AI-Boss-Hub-Lite,Ai Boss Hub Lite,financial,planned,planned,analytics;api;authentication;dashboard;database;llm;payments;portfolio;security,llm,11.1
+FIN-004-GenixBanks-AI-Treasurer,Genixbanks Ai Treasurer,financial,planned,planned,analytics;api;authentication;dashboard;database;llm;payments;portfolio;security,llm,11.1
+FIN-005-U-Haul-Rental-Affiliate,U Haul Rental Affiliate,financial,planned,planned,analytics;api;authentication;dashboard;database;payments;portfolio;security,agent;crm;dashboard;payments,25.0
+FIN-006-Tax-Prep-Filing-Services,Tax Prep Filing Services,financial,planned,planned,analytics;api;authentication;dashboard;database;payments;portfolio;security,,0.0
+FIN-007-Business-Credit-Building,Business Credit Building,financial,planned,planned,analytics;api;authentication;construction;dashboard;database;payments;portfolio;security,construction,11.1
+FIN-008-Business-Formation-Services,Business Formation Services,financial,planned,planned,analytics;api;authentication;dashboard;database;payments;portfolio;security,,0.0
+FIN-009-Crypto-Tax-Optimizer,Crypto Tax Optimizer,financial,planned,planned,analytics;api;authentication;dashboard;database;payments;portfolio;security,agent;crm;dashboard;payments,25.0
+FIN-010-AI-Powered-Garbage-Collection,Ai Powered Garbage Collection,financial,planned,planned,analytics;api;authentication;dashboard;database;llm;payments;portfolio;security,llm,11.1
+FIN-011-Automated-Bookkeeping,Automated Bookkeeping,financial,planned,planned,analytics;api;authentication;dashboard;database;payments;portfolio;security,agent;crm;dashboard;payments,25.0
+FIN-012-Invoice-Factoring-AI,Invoice Factoring Ai,financial,planned,planned,analytics;api;authentication;dashboard;database;llm;payments;portfolio;security,llm,11.1
+FIN-013-Charity-Donation-AI,Charity Donation Ai,financial,planned,planned,analytics;api;authentication;dashboard;database;llm;payments;portfolio;security,llm,11.1
+FIN-014-Expense-Tracker-AI,Expense Tracker Ai,financial,planned,planned,analytics;api;authentication;dashboard;database;llm;payments;portfolio;security,llm,11.1
+FIN-015-Financial-Wellness-Coach,Financial Wellness Coach,financial,planned,planned,analytics;api;authentication;dashboard;database;payments;portfolio;security,agent;crm;dashboard;payments,25.0
+FIN-016-Trade-Finance-AI,Trade Finance Ai,financial,planned,planned,analytics;api;authentication;dashboard;database;llm;payments;portfolio;security,llm,11.1
+FIN-017-Remittance-AI,Remittance Ai,financial,planned,planned,analytics;api;authentication;dashboard;database;llm;payments;portfolio;security,llm,11.1
+FIN-018-Wealth-Transfer-AI,Wealth Transfer Ai,financial,planned,planned,analytics;api;authentication;dashboard;database;llm;payments;portfolio;security,llm,11.1
+FIN-019-Payment-Gateway-AI,Payment Gateway Ai,financial,planned,planned,analytics;api;authentication;dashboard;database;llm;payments;portfolio;security,llm;payments,22.2
+FIN-020-Debt-Consolidation-AI,Debt Consolidation Ai,financial,planned,planned,analytics;api;authentication;dashboard;database;llm;payments;portfolio;security,llm,11.1
+FIN-021-Tax-Deduction-Finder,Tax Deduction Finder,financial,planned,planned,analytics;api;authentication;dashboard;database;payments;portfolio;security,agent;automation;llm,0.0
+FIN-022-Budget-Forecasting-AI,Budget Forecasting Ai,financial,planned,planned,analytics;api;authentication;dashboard;database;llm;payments;portfolio;security,llm,11.1
+FIN-023-Investment-Portfolio-AI,Investment Portfolio Ai,financial,planned,planned,analytics;api;authentication;dashboard;database;llm;payments;portfolio;security,llm;portfolio,22.2
+FIN-024-Crowdfunding-AI,Crowdfunding Ai,financial,planned,planned,analytics;api;authentication;dashboard;database;llm;payments;portfolio;security,llm,11.1
+FIN-025-Escrow-Automation,Escrow Automation,financial,planned,planned,analytics;api;authentication;automation;dashboard;database;payments;portfolio;security,agent;automation;llm,11.1
+FIN-026-Financial-Compliance-Scanner,Financial Compliance Scanner,financial,planned,planned,analytics;api;authentication;dashboard;database;payments;portfolio;security,agent;automation;llm,0.0
+FIN-027-Patent-Writer-AI,Patent Writer Ai,financial,planned,planned,analytics;api;authentication;dashboard;database;llm;payments;portfolio;security,llm,11.1
+FIN-028-Legal-Analyzer-AI,Legal Analyzer Ai,financial,planned,planned,analytics;api;authentication;dashboard;database;llm;payments;portfolio;security,llm,11.1
+FIN-029-Compliance-Wallet-SaaS,Compliance Wallet Saas,financial,planned,planned,analytics;api;authentication;dashboard;database;payments;portfolio;security,,0.0
+FIN-030-Local-SEO-Ranker-AI,Local Seo Ranker Ai,financial,planned,planned,analytics;api;authentication;dashboard;database;llm;payments;portfolio;security,llm,11.1
+FIN-031-Investor-Dashboard-Builder,Investor Dashboard Builder,financial,planned,planned,analytics;api;authentication;dashboard;database;payments;portfolio;security,dashboard,12.5
+FIN-032-Legal-Toolkit-AI,Legal Toolkit Ai,financial,planned,planned,analytics;api;authentication;dashboard;database;llm;payments;portfolio;security,llm,11.1
+FIN-033-AI-Tax-Preparation-Service,Ai Tax Preparation Service,financial,planned,planned,analytics;api;authentication;dashboard;database;llm;payments;portfolio;security,llm,11.1
+FIN-034-Payroll-Automation,Payroll Automation,financial,planned,planned,analytics;api;authentication;automation;dashboard;database;payments;portfolio;security,agent;automation;llm,11.1
+FIN-035-Insurance-Underwriting-AI,Insurance Underwriting Ai,financial,planned,planned,analytics;api;authentication;dashboard;database;llm;payments;portfolio;security,llm,11.1
+FIN-036-Arbitrage-Nexus-Platform,Arbitrage Nexus Platform,financial,growth,active,analytics;api;authentication;dashboard;database;payments;portfolio;security,,0.0
+BW-001-Lash-Extension-Studio,Lash Extension Studio,beauty-wellness,validation,validation,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+BW-002-Mobile-Lash-Service,Mobile Lash Service,beauty-wellness,mvp,development,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+BW-003-Luxury-Lash-Bar,Luxury Lash Bar,beauty-wellness,validation,validation,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+BW-004-Lash-Training-Academy,Lash Training Academy,beauty-wellness,validation,validation,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+BW-005-Lash-Supply-Company,Lash Supply Company,beauty-wellness,mvp,development,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+BW-006-Lash-Glue-Brand,Lash Glue Brand,beauty-wellness,validation,validation,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+BW-007-Lash-Kits-&-Tools,Lash Kits & Tools,beauty-wellness,mvp,development,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+BW-008-Private-Label-Lashes,Private Label Lashes,beauty-wellness,planned,planned,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+BW-009-Franchise-Lash-Salons,Franchise Lash Salons,beauty-wellness,planned,planned,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+BW-010-Online-Lash-Education,Online Lash Education,beauty-wellness,mvp,development,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+BW-011-Nail-Salon,Nail Salon,beauty-wellness,validation,validation,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+BW-012-Mobile-Nail-Tech,Mobile Nail Tech,beauty-wellness,mvp,development,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+BW-013-Luxury-Nail-Spa,Luxury Nail Spa,beauty-wellness,validation,validation,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+BW-014-Press-On-Nail-Brand,Press On Nail Brand,beauty-wellness,mvp,development,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+BW-015-Nail-Art-Studio,Nail Art Studio,beauty-wellness,validation,validation,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+BW-016-Nail-Polish-Brand,Nail Polish Brand,beauty-wellness,mvp,development,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+BW-017-Nail-Care-Products,Nail Care Products,beauty-wellness,mvp,development,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+BW-018-Nail-Booking-Marketplace,Nail Booking Marketplace,beauty-wellness,planned,planned,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+BW-019-Salon-Management-Software,Salon Management Software,beauty-wellness,planned,planned,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+BW-020-AI-Nail-Design-Generator,Ai Nail Design Generator,beauty-wellness,planned,planned,api;authentication;crm;dashboard;database;llm;notifications;payments;scheduling,,0.0
+BW-021-Hair-Salon,Hair Salon,beauty-wellness,validation,validation,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+BW-022-Barbershop,Barbershop,beauty-wellness,validation,validation,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+BW-023-Mobile-Hairstyling,Mobile Hairstyling,beauty-wellness,mvp,development,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+BW-024-Hair-Braiding-Studio,Hair Braiding Studio,beauty-wellness,validation,validation,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+BW-025-Wig-Installation-Studio,Wig Installation Studio,beauty-wellness,validation,validation,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+BW-026-Hair-Extension-Salon,Hair Extension Salon,beauty-wellness,validation,validation,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+BW-027-Hair-Care-Line,Hair Care Line,beauty-wellness,mvp,development,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+BW-028-Wig-Brand,Wig Brand,beauty-wellness,mvp,development,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+BW-029-Hair-Extensions-Brand,Hair Extensions Brand,beauty-wellness,mvp,development,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+BW-030-Scalp-Treatment-Products,Scalp Treatment Products,beauty-wellness,validation,validation,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+BW-031-Hair-Marketplace,Hair Marketplace,beauty-wellness,planned,planned,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+BW-032-Stylist-Booking-Platform,Stylist Booking Platform,beauty-wellness,planned,planned,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+BW-033-AI-Hairstyle-Simulator,Ai Hairstyle Simulator,beauty-wellness,planned,planned,api;authentication;crm;dashboard;database;llm;notifications;payments;scheduling,,0.0
+BW-034-Salon-Franchise-Chain,Salon Franchise Chain,beauty-wellness,planned,planned,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+BW-035-Makeup-Studio,Makeup Studio,beauty-wellness,validation,validation,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+BW-036-Bridal-Makeup-Service,Bridal Makeup Service,beauty-wellness,mvp,development,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+BW-037-Mobile-Makeup-Artist,Mobile Makeup Artist,beauty-wellness,mvp,development,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+BW-038-Photoshoot-Makeup-Team,Photoshoot Makeup Team,beauty-wellness,validation,validation,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+BW-039-Cosmetics-Brand,Cosmetics Brand,beauty-wellness,mvp,development,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+BW-040-Beauty-Tools-Brand,Beauty Tools Brand,beauty-wellness,mvp,development,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FH-001-Personal-Chef-Service,Personal Chef Service,hospitality,mvp,development,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FH-002-Meal-Prep-Delivery,Meal Prep Delivery,hospitality,mvp,development,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FH-003-Private-Dinner-Experiences,Private Dinner Experiences,hospitality,validation,validation,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FH-004-Catering-Company,Catering Company,hospitality,validation,validation,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FH-005-Corporate-Lunch-Service,Corporate Lunch Service,hospitality,mvp,development,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FH-006-Healthy-Meal-Prep-for-Gyms,Healthy Meal Prep For Gyms,hospitality,mvp,development,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FH-007-Elderly-Meal-Service,Elderly Meal Service,hospitality,validation,validation,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FH-008-Athlete-Nutrition-Service,Athlete Nutrition Service,hospitality,mvp,development,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FH-009-Packaged-Food-Brand,Packaged Food Brand,hospitality,validation,validation,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FH-010-Frozen-Meals-Company,Frozen Meals Company,hospitality,validation,validation,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FH-011-Sauce-or-Seasoning-Brand,Sauce Or Seasoning Brand,hospitality,mvp,development,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FH-012-Protein-Snacks-Brand,Protein Snacks Brand,hospitality,mvp,development,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FH-013-Meal-Kit-Company,Meal Kit Company,hospitality,validation,validation,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FH-014-Cloud-Kitchen-,Cloud Kitchen ,hospitality,planned,planned,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FH-015-AI-Nutrition-Planner,Ai Nutrition Planner,hospitality,planned,planned,api;authentication;crm;dashboard;database;llm;notifications;payments;scheduling,llm,11.1
+FH-016-Recipe-App,Recipe App,hospitality,mvp,development,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FH-017-Cooking-Content-Brand,Cooking Content Brand,hospitality,mvp,development,api;authentication;crm;dashboard;database;notifications;payments;scheduling,agent;automation;llm,0.0
+FH-018-Food-Influencer-Brand,Food Influencer Brand,hospitality,mvp,development,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FH-019-Cooking-Course-Platform,Cooking Course Platform,hospitality,mvp,development,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FH-020-Restaurant-POS-System,Restaurant Pos System,hospitality,planned,planned,api;authentication;crm;dashboard;database;notifications;payments;scheduling,agent;automation;llm,0.0
+FH-021-Food-Truck-Business,Food Truck Business,hospitality,validation,validation,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FH-022-Specialty-Coffee-Shop,Specialty Coffee Shop,hospitality,validation,validation,api;authentication;crm;dashboard;database;notifications;payments;scheduling,agent;automation;llm,0.0
+FH-023-Bakery-&-Pastry-Shop,Bakery & Pastry Shop,hospitality,validation,validation,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FH-024-Juice-Bar,Juice Bar,hospitality,mvp,development,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FH-025-Ice-Cream-Shop,Ice Cream Shop,hospitality,validation,validation,api;authentication;crm;dashboard;database;notifications;payments;scheduling,agent;automation;llm,0.0
+FH-026-Gourmet-Food-Market,Gourmet Food Market,hospitality,validation,validation,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FH-027-Food-Delivery-Platform,Food Delivery Platform,hospitality,planned,planned,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FH-028-Restaurant-Management-SaaS,Restaurant Management Saas,hospitality,planned,planned,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FH-029-Food-Quality-Testing-Lab,Food Quality Testing Lab,hospitality,planned,planned,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FH-030-Organic-Food-Brand,Organic Food Brand,hospitality,mvp,development,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FH-031-Vegan-Food-Company,Vegan Food Company,hospitality,mvp,development,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FH-032-Keto-Meal-Service,Keto Meal Service,hospitality,mvp,development,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FH-033-Food-Photography-Service,Food Photography Service,hospitality,mvp,development,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FH-034-Restaurant-Consulting,Restaurant Consulting,hospitality,mvp,development,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FH-035-Food-Safety-Training,Food Safety Training,hospitality,validation,validation,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FS-001-Gym,Gym,healthcare,validation,validation,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FS-002-Boutique-Fitness-Studio,Boutique Fitness Studio,healthcare,validation,validation,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FS-003-Personal-Training-Studio,Personal Training Studio,healthcare,mvp,development,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FS-004-Women-Only-Gym,Women Only Gym,healthcare,validation,validation,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FS-005-Boxing-Gym,Boxing Gym,healthcare,validation,validation,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FS-006-CrossFit-Gym,Crossfit Gym,healthcare,validation,validation,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FS-007-Luxury-Fitness-Club,Luxury Fitness Club,healthcare,planned,planned,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FS-008-Online-Coaching,Online Coaching,healthcare,mvp,development,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FS-009-Personal-Trainer-Business,Personal Trainer Business,healthcare,mvp,development,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FS-010-Transformation-Program,Transformation Program,healthcare,mvp,development,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FS-011-Athlete-Training-Company,Athlete Training Company,healthcare,validation,validation,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FS-012-Supplement-Brand,Supplement Brand,healthcare,mvp,development,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FS-013-Fitness-Apparel,Fitness Apparel,healthcare,mvp,development,api;authentication;crm;dashboard;database;fashion-design;notifications;payments;scheduling,fashion-design,11.1
+FS-014-Workout-Equipment-Brand,Workout Equipment Brand,healthcare,validation,validation,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FS-015-Recovery-Products,Recovery Products,healthcare,mvp,development,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FS-016-Fitness-App,Fitness App,healthcare,mvp,development,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FS-017-AI-Personal-Trainer,Ai Personal Trainer,healthcare,planned,planned,api;authentication;crm;dashboard;database;llm;notifications;payments;scheduling,llm,11.1
+FS-018-Gym-Management-Software,Gym Management Software,healthcare,planned,planned,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FS-019-Wearable-Analytics-Platform,Wearable Analytics Platform,healthcare,planned,planned,analytics;api;authentication;crm;dashboard;database;notifications;payments;scheduling,analytics,11.1
+FS-020-Yoga-Studio,Yoga Studio,healthcare,validation,validation,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FS-021-Pilates-Studio,Pilates Studio,healthcare,validation,validation,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FS-022-Dance-Studio,Dance Studio,healthcare,validation,validation,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FS-023-Martial-Arts-Dojo,Martial Arts Dojo,healthcare,validation,validation,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FS-024-Sports-Performance-Center,Sports Performance Center,healthcare,planned,planned,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+FS-025-Corporate-Wellness-Program,Corporate Wellness Program,healthcare,mvp,development,api;authentication;crm;dashboard;database;notifications;payments;scheduling,,0.0
+LT-001-Truck-Dispatch-Company,Truck Dispatch Company,transportation,validation,validation,analytics;api;authentication;automation;dashboard;database;monitoring;payments;scheduling,,0.0
+LT-002-Freight-Brokerage,Freight Brokerage,transportation,validation,validation,analytics;api;authentication;automation;dashboard;database;monitoring;payments;scheduling,,0.0
+LT-003-Logistics-Dispatch-Service,Logistics Dispatch Service,transportation,mvp,development,analytics;api;authentication;automation;dashboard;database;monitoring;payments;scheduling,,0.0
+LT-004-Last-Mile-Delivery-Dispatch,Last Mile Delivery Dispatch,transportation,mvp,development,analytics;api;authentication;automation;dashboard;database;monitoring;payments;scheduling,,0.0
+LT-005-Medical-Courier-Dispatch,Medical Courier Dispatch,transportation,validation,validation,analytics;api;authentication;automation;dashboard;database;monitoring;payments;scheduling,,0.0
+LT-006-Amazon,Amazon,transportation,planned,planned,analytics;api;authentication;automation;dashboard;database;monitoring;payments;scheduling,,0.0
+LT-007-Construction-Dispatch,Construction Dispatch,transportation,validation,validation,analytics;api;authentication;automation;construction;dashboard;database;monitoring;payments;scheduling,,0.0
+LT-008-Towing-Dispatch,Towing Dispatch,transportation,mvp,development,analytics;api;authentication;automation;dashboard;database;monitoring;payments;scheduling,,0.0
+LT-009-HVAC-Technician-Dispatch,Hvac Technician Dispatch,transportation,mvp,development,analytics;api;authentication;automation;dashboard;database;monitoring;payments;scheduling,,0.0
+LT-010-Field-Service-Dispatch,Field Service Dispatch,transportation,mvp,development,analytics;api;authentication;automation;construction;dashboard;database;monitoring;payments;scheduling,,0.0
+LT-011-Dispatch-Software,Dispatch Software,transportation,planned,planned,analytics;api;authentication;automation;dashboard;database;monitoring;payments;scheduling,,0.0
+LT-012-Fleet-Tracking-Platform,Fleet Tracking Platform,transportation,planned,planned,analytics;api;authentication;automation;dashboard;database;monitoring;payments;scheduling,,0.0
+LT-013-Logistics-Automation-System,Logistics Automation System,transportation,planned,planned,analytics;api;authentication;automation;dashboard;database;monitoring;payments;scheduling,,0.0
+LT-014-AI-Route-Optimization,Ai Route Optimization,transportation,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+LT-015-Driver-Management-Platform,Driver Management Platform,transportation,planned,planned,analytics;api;authentication;automation;dashboard;database;monitoring;payments;scheduling,,0.0
+LT-016-Trucking-Company,Trucking Company,transportation,validation,validation,analytics;api;authentication;automation;dashboard;database;monitoring;payments;scheduling,,0.0
+LT-017-Courier-Service,Courier Service,transportation,mvp,development,analytics;api;authentication;automation;dashboard;database;monitoring;payments;scheduling,,0.0
+LT-018-Local-Delivery-Company,Local Delivery Company,transportation,mvp,development,analytics;api;authentication;automation;dashboard;database;monitoring;payments;scheduling,,0.0
+LT-019-Moving-Company,Moving Company,transportation,validation,validation,analytics;api;authentication;automation;dashboard;database;monitoring;payments;scheduling,,0.0
+LT-020-Freight-Company,Freight Company,transportation,validation,validation,analytics;api;authentication;automation;dashboard;database;monitoring;payments;scheduling,,0.0
+LT-021-Warehouse-Company,Warehouse Company,transportation,planned,planned,analytics;api;authentication;automation;dashboard;database;monitoring;payments;scheduling,,0.0
+LT-022-Fulfillment-Center,Fulfillment Center,transportation,mvp,development,analytics;api;authentication;automation;dashboard;database;monitoring;payments;scheduling,,0.0
+LT-023-Storage-Business,Storage Business,transportation,validation,validation,analytics;api;authentication;automation;dashboard;database;monitoring;payments;scheduling,,0.0
+LT-024-Distribution-Company,Distribution Company,transportation,validation,validation,analytics;api;authentication;automation;dashboard;database;monitoring;payments;scheduling,,0.0
+LT-025-Logistics-Marketplace,Logistics Marketplace,transportation,planned,planned,analytics;api;authentication;automation;dashboard;database;monitoring;payments;scheduling,,0.0
+LT-026-Shipping-Platform,Shipping Platform,transportation,planned,planned,analytics;api;authentication;automation;dashboard;database;monitoring;payments;scheduling,,0.0
+LT-027-Fleet-Management-SaaS,Fleet Management Saas,transportation,planned,planned,analytics;api;authentication;automation;dashboard;database;monitoring;payments;scheduling,,0.0
+LT-028-Freight-AI-Optimization,Freight Ai Optimization,transportation,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+LT-029-Supply-Chain-Analytics,Supply Chain Analytics,transportation,planned,planned,analytics;api;authentication;automation;dashboard;database;monitoring;payments;scheduling,,0.0
+LT-030-Cold-Chain-Logistics,Cold Chain Logistics,transportation,validation,validation,analytics;api;authentication;automation;dashboard;database;monitoring;payments;scheduling,,0.0
+PS-001-Business-Consulting,Business Consulting,staffing,mvp,development,analytics;api;authentication;crm;dashboard;database;ocr;payments;scheduling,,0.0
+PS-002-Legal-Services,Legal Services,staffing,validation,validation,analytics;api;authentication;crm;dashboard;database;ocr;payments;scheduling,,0.0
+PS-003-Accounting-Services,Accounting Services,staffing,mvp,development,analytics;api;authentication;crm;dashboard;database;ocr;payments;scheduling,,0.0
+PS-004-HR-Consulting,Hr Consulting,staffing,validation,validation,analytics;api;authentication;crm;dashboard;database;ocr;payments;scheduling,,0.0
+PS-005-Marketing-Agency,Marketing Agency,staffing,mvp,development,analytics;api;authentication;crm;dashboard;database;ocr;payments;scheduling,,0.0
+PS-006-Web-Design-Agency,Web Design Agency,staffing,mvp,development,analytics;api;authentication;crm;dashboard;database;ocr;payments;scheduling,,0.0
+PS-007-IT-Support-Services,It Support Services,staffing,mvp,development,analytics;api;authentication;crm;dashboard;database;ocr;payments;scheduling,,0.0
+PS-008-Virtual-Assistant-Service,Virtual Assistant Service,staffing,mvp,development,analytics;api;authentication;crm;dashboard;database;ocr;payments;scheduling,,0.0
+PS-009-Bookkeeping-Service,Bookkeeping Service,staffing,mvp,development,analytics;api;authentication;crm;dashboard;database;ocr;payments;scheduling,,0.0
+PS-010-Tax-Preparation-Service,Tax Preparation Service,staffing,mvp,development,analytics;api;authentication;crm;dashboard;database;ocr;payments;scheduling,,0.0
+PS-011-Real-Estate-Agency,Real Estate Agency,staffing,validation,validation,analytics;api;authentication;crm;dashboard;database;ocr;payments;scheduling,,0.0
+PS-012-Insurance-Agency,Insurance Agency,staffing,validation,validation,analytics;api;authentication;crm;dashboard;database;ocr;payments;scheduling,,0.0
+PS-013-Financial-Planning,Financial Planning,staffing,mvp,development,analytics;api;authentication;crm;dashboard;database;ocr;payments;scheduling,,0.0
+PS-014-Event-Planning,Event Planning,staffing,validation,validation,analytics;api;authentication;crm;dashboard;database;ocr;payments;scheduling,,0.0
+PS-015-Interior-Design,Interior Design,staffing,validation,validation,analytics;api;authentication;crm;dashboard;database;ocr;payments;scheduling,,0.0
+PS-016-Photography-Service,Photography Service,staffing,mvp,development,analytics;api;authentication;crm;dashboard;database;ocr;payments;scheduling,,0.0
+PS-017-Videography-Service,Videography Service,staffing,mvp,development,analytics;api;authentication;crm;dashboard;database;ocr;payments;scheduling,,0.0
+PS-018-Translation-Services,Translation Services,staffing,validation,validation,analytics;api;authentication;crm;dashboard;database;ocr;payments;scheduling,,0.0
+PS-019-Copywriting-Service,Copywriting Service,staffing,mvp,development,analytics;api;authentication;crm;dashboard;database;ocr;payments;scheduling,,0.0
+PS-020-Social-Media-Management,Social Media Management,staffing,mvp,development,analytics;api;authentication;crm;dashboard;database;ocr;payments;scheduling,,0.0
+PS-021-SEO-Agency,Seo Agency,staffing,mvp,development,analytics;api;authentication;crm;dashboard;database;ocr;payments;scheduling,,0.0
+PS-022-PPC-Management,Ppc Management,staffing,mvp,development,analytics;api;authentication;crm;dashboard;database;ocr;payments;scheduling,,0.0
+PS-023-PR-Agency,Pr Agency,staffing,validation,validation,analytics;api;authentication;crm;dashboard;database;ocr;payments;scheduling,,0.0
+PS-024-Recruiting-Agency,Recruiting Agency,staffing,validation,validation,analytics;api;authentication;crm;dashboard;database;ocr;payments;scheduling,,0.0
+PS-025-Business-Brokerage,Business Brokerage,staffing,planned,planned,analytics;api;authentication;crm;dashboard;database;ocr;payments;scheduling,,0.0
+MC-001-YouTube-Channel-Network,Youtube Channel Network,media,mvp,development,analytics;api;authentication;automation;dashboard;database;notifications;payments;search,,0.0
+MC-002-Podcast-Network,Podcast Network,media,mvp,development,analytics;api;authentication;automation;dashboard;database;notifications;payments;search,,0.0
+MC-003-Blog-Network,Blog Network,media,mvp,development,analytics;api;authentication;automation;dashboard;database;notifications;payments;search,,0.0
+MC-004-Influencer-Agency,Influencer Agency,media,validation,validation,analytics;api;authentication;automation;dashboard;database;notifications;payments;search,,0.0
+MC-005-Content-Creation-Studio,Content Creation Studio,media,mvp,development,analytics;api;authentication;automation;dashboard;database;notifications;payments;search,,0.0
+MC-006-Video-Production-Company,Video Production Company,media,validation,validation,analytics;api;authentication;automation;dashboard;database;notifications;payments;search,,0.0
+MC-007-Animation-Studio,Animation Studio,media,planned,planned,analytics;api;authentication;automation;dashboard;database;notifications;payments;search,,0.0
+MC-008-Music-Production,Music Production,media,validation,validation,analytics;api;authentication;automation;dashboard;database;notifications;payments;search,,0.0
+MC-009-Stock-Photography,Stock Photography,media,mvp,development,analytics;api;authentication;automation;dashboard;database;notifications;payments;search,,0.0
+MC-010-Stock-Video,Stock Video,media,mvp,development,analytics;api;authentication;automation;dashboard;database;notifications;payments;search,,0.0
+MC-011-Online-Magazine,Online Magazine,media,mvp,development,analytics;api;authentication;automation;dashboard;database;notifications;payments;search,,0.0
+MC-012-News-Website,News Website,media,validation,validation,analytics;api;authentication;automation;dashboard;database;notifications;payments;search,,0.0
+MC-013-Streaming-Platform,Streaming Platform,media,planned,planned,analytics;api;authentication;automation;dashboard;database;notifications;payments;search,,0.0
+MC-014-Gaming-Channel,Gaming Channel,media,mvp,development,analytics;api;authentication;automation;dashboard;database;notifications;payments;search,,0.0
+MC-015-Esports-Team,Esports Team,media,planned,planned,analytics;api;authentication;automation;dashboard;database;notifications;payments;search,,0.0
+MC-016-Virtual-Events-Platform,Virtual Events Platform,media,planned,planned,analytics;api;authentication;automation;dashboard;database;notifications;payments;search,,0.0
+MC-017-Online-Course-Platform,Online Course Platform,media,mvp,development,analytics;api;authentication;automation;dashboard;database;notifications;payments;search,,0.0
+MC-018-Membership-Site,Membership Site,media,mvp,development,analytics;api;authentication;automation;dashboard;database;notifications;payments;search,,0.0
+MC-019-Digital-Download-Store,Digital Download Store,media,mvp,development,analytics;api;authentication;automation;dashboard;database;notifications;payments;search,,0.0
+MC-020-NFT-Marketplace,Nft Marketplace,media,planned,planned,analytics;api;authentication;automation;dashboard;database;notifications;payments;search,,0.0
+ET-001-Online-Tutoring-Platform,Online Tutoring Platform,education,mvp,development,analytics;api;authentication;dashboard;database;notifications;payments;search;workspace,,0.0
+ET-002-Language-Learning-App,Language Learning App,education,mvp,development,analytics;api;authentication;dashboard;database;notifications;payments;search;workspace,,0.0
+ET-003-Test-Prep-Service,Test Prep Service,education,validation,validation,analytics;api;authentication;dashboard;database;notifications;payments;search;workspace,,0.0
+ET-004-Coding-Bootcamp,Coding Bootcamp,education,validation,validation,analytics;api;authentication;dashboard;database;notifications;payments;search;workspace,,0.0
+ET-005-Professional-Certification,Professional Certification,education,validation,validation,analytics;api;authentication;dashboard;database;notifications;payments;search;workspace,,0.0
+ET-006-Corporate-Training,Corporate Training,education,validation,validation,analytics;api;authentication;dashboard;database;notifications;payments;search;workspace,,0.0
+ET-007-Skills-Assessment-Platform,Skills Assessment Platform,education,planned,planned,analytics;api;authentication;dashboard;database;notifications;payments;search;workspace,,0.0
+ET-008-Career-Coaching,Career Coaching,education,mvp,development,analytics;api;authentication;dashboard;database;notifications;payments;search;workspace,,0.0
+ET-009-Resume-Writing-Service,Resume Writing Service,education,mvp,development,analytics;api;authentication;dashboard;database;notifications;payments;search;workspace,,0.0
+ET-010-Interview-Prep-Platform,Interview Prep Platform,education,mvp,development,analytics;api;authentication;dashboard;database;notifications;payments;search;workspace,,0.0
+ET-011-Mentorship-Platform,Mentorship Platform,education,planned,planned,analytics;api;authentication;dashboard;database;notifications;payments;search;workspace,,0.0
+ET-012-Educational-Content-Library,Educational Content Library,education,mvp,development,analytics;api;authentication;dashboard;database;notifications;payments;search;workspace,,0.0
+ET-013-VR-Training-Simulations,Vr Training Simulations,education,planned,planned,analytics;api;authentication;dashboard;database;notifications;payments;search;workspace,,0.0
+ET-014-Gamified-Learning-App,Gamified Learning App,education,planned,planned,analytics;api;authentication;dashboard;database;notifications;payments;search;workspace,,0.0
+ET-015-Homeschool-Curriculum,Homeschool Curriculum,education,validation,validation,analytics;api;authentication;dashboard;database;notifications;payments;search;workspace,,0.0
+ST-001-SaaS-Platform,Saas Platform,technology,mvp,development,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,,0.0
+ST-002-Mobile-App-Development,Mobile App Development,technology,mvp,development,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,,0.0
+ST-003-Web-Development-Agency,Web Development Agency,technology,mvp,development,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,,0.0
+ST-004-Custom-Software-Development,Custom Software Development,technology,validation,validation,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,,0.0
+ST-005-API-Development,Api Development,technology,mvp,development,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,,0.0
+ST-006-Cloud-Infrastructure,Cloud Infrastructure,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,,0.0
+ST-007-DevOps-Consulting,Devops Consulting,technology,validation,validation,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,,0.0
+ST-008-Cybersecurity-Service,Cybersecurity Service,technology,validation,validation,agent;api;authentication;automation;dashboard;database;devtools;llm;payments;security,,0.0
+ST-009-Data-Analytics-Platform,Data Analytics Platform,technology,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;devtools;llm;payments,,0.0
+ST-010-Business-Intelligence-Tool,Business Intelligence Tool,technology,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;devtools;llm;payments,,0.0
+ST-011-CRM-Platform,Crm Platform,technology,planned,planned,agent;api;authentication;automation;crm;dashboard;database;devtools;llm;payments,,0.0
+ST-012-Project-Management-Tool,Project Management Tool,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,,0.0
+ST-013-Communication-Platform,Communication Platform,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,,0.0
+ST-014-Collaboration-Software,Collaboration Software,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments;workspace,,0.0
+ST-015-Automation-Platform,Automation Platform,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,,0.0
+ST-016-AI,Ai,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,,0.0
+ST-017-Chatbot-Builder,Chatbot Builder,technology,mvp,development,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,,0.0
+ST-018-E-commerce-Platform,E Commerce Platform,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,,0.0
+ST-019-Payment-Processing,Payment Processing,technology,validation,validation,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,,0.0
+ST-020-Blockchain-Platform,Blockchain Platform,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,,0.0
+ST-021-IoT-Platform,Iot Platform,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,,0.0
+ST-022-AR,Ar,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,,0.0
+ST-023-Game-Development,Game Development,technology,validation,validation,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,,0.0
+ST-024-Marketing-Automation,Marketing Automation,technology,mvp,development,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,,0.0
+ST-025-Sales-Automation,Sales Automation,technology,mvp,development,agent;api;authentication;automation;crm;dashboard;database;devtools;llm;payments,,0.0
+ST-026-HR-Tech-Platform,Hr Tech Platform,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,,0.0
+ST-027-Legal-Tech-Platform,Legal Tech Platform,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,,0.0
+ST-028-Health-Tech-Platform,Health Tech Platform,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,,0.0
+ST-029-EdTech-Platform,Edtech Platform,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,,0.0
+ST-030-PropTech-Platform,Proptech Platform,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,,0.0
+EC-001-Angels-in-Daylight,Angels In Daylight,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;notifications;payments;search,dashboard;fashion-design;machine-learning,11.1
+EC-002-New-World-Apparel,New World Apparel,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;fashion-design;notifications;payments;search,fashion-design,10.0
+EC-003-Shopify-Autopilot,Shopify Autopilot,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;notifications;payments;search,agent;dashboard,11.1
+EC-004-Shoe-Customizer,Shoe Customizer,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;notifications;payments;search,,0.0
+EC-005-Sunglasses-AI,Sunglasses Ai,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-006-Dropship-Hub,Dropship Hub,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;notifications;payments;search,agent;dashboard,11.1
+EC-007-Personal-Shopper-AI,Personal Shopper Ai,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-008-Custom-Sneaker-AI,Custom Sneaker Ai,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-009-Sustainable-Fashion-AI,Sustainable Fashion Ai,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;fashion-design;llm;notifications;payments;search,fashion-design;llm,18.2
+EC-010-Jewelry-Designer-AI,Jewelry Designer Ai,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-011-Virtual-Try-On-AI,Virtual Try On Ai,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-012-Fashion-Designer-AI,Fashion Designer Ai,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;fashion-design;llm;notifications;payments;search,fashion-design;llm,18.2
+EC-013-Merch-Licensing,Merch Licensing,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;notifications;payments;search,,0.0
+EC-014-Subscription-Box-AI,Subscription Box Ai,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-015-Surf-Gear-AI,Surf Gear Ai,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-016-Ski-Gear-AI,Ski Gear Ai,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-017-Golf-Gear-AI,Golf Gear Ai,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-018-Fishing-Gear-AI,Fishing Gear Ai,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-019-Yoga-Gear-AI,Yoga Gear Ai,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-020-Costume-Shop-AI,Costume Shop Ai,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-021-Luggage-AI,Luggage Ai,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-022-Home-Appliance-AI,Home Appliance Ai,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-023-Tool-Shop-AI,Tool Shop Ai,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-024-Garden-Supply-AI,Garden Supply Ai,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-025-Collectible-AI,Collectible Ai,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-026-Hobby-Shop-AI,Hobby Shop Ai,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-027-Kids-Toy-Line,Kids Toy Line,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;notifications;payments;search,,0.0
+EC-028-NFT-Fashion-Licensing,Nft Fashion Licensing,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;fashion-design;notifications;payments;search,fashion-design,10.0
+EC-029-Instant-Brand-Generator,Instant Brand Generator,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;notifications;payments;search,,0.0
+EC-030-AI-Product-Photographer,Ai Product Photographer,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-031-Automated-Inventory-Forecaster,Automated Inventory Forecaster,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;notifications;payments;search,,0.0
+EC-032-Dynamic-Pricing-Engine,Dynamic Pricing Engine,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;notifications;payments;search,agent;dashboard,11.1
+EC-033-Ad-Optimizer-AI,Ad Optimizer Ai,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-034-Recommendation-Engine,Recommendation Engine,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;notifications;payments;search,agent;dashboard,11.1
+EC-035-Review-Aggregator-AI,Review Aggregator Ai,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-036-Fulfillment-Network-AI,Fulfillment Network Ai,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-037-Return-Optimization-AI,Return Optimization Ai,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-038-Chatbot-Customer-Service,Chatbot Customer Service,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;notifications;payments;search,,0.0
+EC-039-Visual-Search-AI,Visual Search Ai,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm;search,20.0
+EC-040-Abandoned-Cart-Recovery,Abandoned Cart Recovery,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;notifications;payments;search,,0.0
+EC-041-Seasonal-Trend-Predictor,Seasonal Trend Predictor,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;notifications;payments;search,,0.0
+EC-042-Influencer-Matchmaker,Influencer Matchmaker,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;notifications;payments;search,,0.0
+EC-043-UGC-Content-Aggregator,Ugc Content Aggregator,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;notifications;payments;search,agent;dashboard,11.1
+EC-044-Live-Commerce-Platform,Live Commerce Platform,marketplace,growth,active,analytics;api;authentication;crm;dashboard;database;notifications;payments;search,,0.0
+EC-045-AR-Virtual-Fitting-Room,Ar Virtual Fitting Room,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;notifications;payments;search,,0.0
+EC-046-3D-Product-Viewer,3D Product Viewer,marketplace,growth,active,analytics;api;authentication;crm;dashboard;database;notifications;payments;search,,0.0
+EC-047-Carbon-Footprint-Tracker,Carbon Footprint Tracker,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;notifications;payments;search,,0.0
+EC-048-Wholesale-Marketplace-AI,Wholesale Marketplace Ai,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-049-Rental-Marketplace,Rental Marketplace,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;notifications;payments;search,agent;dashboard,11.1
+EC-050-AI-Product-Descriptions,Ai Product Descriptions,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-051-AI-Email-Marketing,Ai Email Marketing,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm;notifications,20.0
+EC-052-AI-Product-Bundler,Ai Product Bundler,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-053-AI-Visual-Merchandiser,Ai Visual Merchandiser,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-054-AI-Demand-Forecasting,Ai Demand Forecasting,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-055-AI-Warehouse-Management,Ai Warehouse Management,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-056-AI-Supplier-Matching,Ai Supplier Matching,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-057-AI-Quality-Control,Ai Quality Control,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-058-AI-Packaging-Designer,Ai Packaging Designer,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-059-AI-Logistics-Planner,Ai Logistics Planner,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-060-AI-Customer-Loyalty,Ai Customer Loyalty,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-061-AI-Gift-Finder,Ai Gift Finder,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-062-AI-Trend-Hunter,Ai Trend Hunter,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-063-AI-Market-Research,Ai Market Research,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-064-AI-Competitor-Watcher,Ai Competitor Watcher,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-065-AI-Product-Development,Ai Product Development,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-066-AI-Customer-Journey,Ai Customer Journey,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-067-AI-Payment-Optimization,Ai Payment Optimization,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm;payments,20.0
+EC-068-AI-Returns-Management,Ai Returns Management,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-069-AI-Shipping-Labeler,Ai Shipping Labeler,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-070-AI-Product-Launch-Coach,Ai Product Launch Coach,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-071-AI-Vendor-Negotiator,Ai Vendor Negotiator,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-072-AI-Product-Cataloger,Ai Product Cataloger,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-073-AI-Order-Prioritizer,Ai Order Prioritizer,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-074-AI-Customer-Segmentation,Ai Customer Segmentation,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-075-AI-Pricing-Analyst,Ai Pricing Analyst,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-076-AI-Sales-Forecasting,Ai Sales Forecasting,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,crm;llm,20.0
+EC-077-AI-Inventory-Reordering,Ai Inventory Reordering,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-078-AI-Product-Comparison,Ai Product Comparison,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-079-AI-Customer-Feedback,Ai Customer Feedback,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-080-AI-Product-Updates,Ai Product Updates,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-081-AI-Cross-Selling,Ai Cross Selling,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-082-AI-Up-Selling,Ai Up Selling,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-083-AI-Product-Education,Ai Product Education,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-084-AI-Purchase-Timing,Ai Purchase Timing,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-085-AI-Customer-Support,Ai Customer Support,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-086-AI-Order-Tracking,Ai Order Tracking,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-087-AI-Product-Reviews,Ai Product Reviews,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-088-AI-Customer-Community,Ai Customer Community,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-089-AI-Product-Customization,Ai Product Customization,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-090-AI-Gift-Registry,Ai Gift Registry,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-091-AI-Wedding-Registry,Ai Wedding Registry,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-092-AI-Baby-Registry,Ai Baby Registry,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-093-AI-Holiday-Planner,Ai Holiday Planner,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-094-AI-Personal-Shopper,Ai Personal Shopper,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-095-AI-Color-Match,Ai Color Match,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-096-AI-Fabric-Advisor,Ai Fabric Advisor,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-097-AI-Fit-Recommendation,Ai Fit Recommendation,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-098-AI-Outfit-Builder,Ai Outfit Builder,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-099-AI-Seasonal-Forecast,Ai Seasonal Forecast,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-100-AI-Wardrobe-Planner,Ai Wardrobe Planner,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-101-AI-Accessory-Match,Ai Accessory Match,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-102-AI-Shoe-Match,Ai Shoe Match,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-103-AI-Jewelry-Match,Ai Jewelry Match,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-104-AI-Bag-Match,Ai Bag Match,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-105-AI-Color-Palette,Ai Color Palette,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-106-AI-Outfit-Recycling,Ai Outfit Recycling,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-107-AI-Style-Evolution,Ai Style Evolution,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-108-AI-Budget-Stylist,Ai Budget Stylist,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-109-AI-Trend-Archive,Ai Trend Archive,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+EC-110-AI-Vintage-Advisor,Ai Vintage Advisor,marketplace,planned,planned,analytics;api;authentication;crm;dashboard;database;llm;notifications;payments;search,llm,10.0
+TECH-001-Quantum-Algorithm-AI,Quantum Algorithm Ai,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,llm,11.1
+TECH-002-AI-Compliance-Scanner,Ai Compliance Scanner,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,llm,11.1
+TECH-003-Cloud-Management-AI,Cloud Management Ai,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,llm,11.1
+TECH-004-Robotics-Training-AI,Robotics Training Ai,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,llm,11.1
+TECH-005-Customer-Insights-AI,Customer Insights Ai,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,llm,11.1
+TECH-006-Voice-Assistant-AI,Voice Assistant Ai,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,llm,11.1
+TECH-007-Blockchain-Verifier-AI,Blockchain Verifier Ai,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,llm,11.1
+TECH-008-Cybersecurity-Shield,Cybersecurity Shield,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments;security,,0.0
+TECH-009-Content-Studio-AI,Content Studio Ai,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,llm,11.1
+TECH-010-Smart-Home-AI,Smart Home Ai,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,llm,11.1
+TECH-011-Supply-Chain-Optimizer,Supply Chain Optimizer,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,,0.0
+TECH-012-Data-Visualization-AI,Data Visualization Ai,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,llm,11.1
+TECH-013-Workflow-Automation,Workflow Automation,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,agent;automation;llm,33.3
+TECH-014-Sentiment-Analyzer,Sentiment Analyzer,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,agent;automation;llm,33.3
+TECH-015-Image-Recognition-AI,Image Recognition Ai,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,llm,11.1
+TECH-016-Video-Editor-AI,Video Editor Ai,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,llm,11.1
+TECH-017-Speech-to-Text-AI,Speech To Text Ai,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,llm,11.1
+TECH-018-Text-to-Speech-AI,Text To Speech Ai,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,llm,11.1
+TECH-019-Fraud-Prevention-AI,Fraud Prevention Ai,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,,0.0
+TECH-020-Recommendation-Engine,Recommendation Engine,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,agent;automation;llm,33.3
+TECH-021-Network-Security-AI,Network Security Ai,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments;security,llm;security,20.0
+TECH-022-Database-Optimizer,Database Optimizer,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,database,11.1
+TECH-023-AI-Testing-Platform,Ai Testing Platform,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,llm,11.1
+TECH-024-Virtual-Assistant-Builder,Virtual Assistant Builder,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,,0.0
+TECH-025-Machine-Learning-Builder,Machine Learning Builder,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;machine-learning;payments,machine-learning,10.0
+TECH-026-AI-Ethics-Auditor,Ai Ethics Auditor,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,llm,11.1
+TECH-027-Predictive-Analytics-AI,Predictive Analytics Ai,technology,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;devtools;llm;payments,analytics;llm,20.0
+TECH-028-AI-Training-Platform,Ai Training Platform,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,llm,11.1
+TECH-029-Digital-Twin-AI,Digital Twin Ai,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,llm,11.1
+TECH-030-AI-Monitoring-System,Ai Monitoring System,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;monitoring;payments,llm;monitoring,20.0
+TECH-031-Edge-Computing-AI,Edge Computing Ai,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,llm,11.1
+TECH-032-AI-Integration-Hub,Ai Integration Hub,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,llm,11.1
+TECH-033-Quantum-Algorithm-AI,Quantum Algorithm Ai,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,llm,11.1
+TECH-034-AI-Compliance-Scanner,Ai Compliance Scanner,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,llm,11.1
+TECH-035-Cloud-Management-AI,Cloud Management Ai,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,llm,11.1
+TECH-036-Robotics-Training-AI,Robotics Training Ai,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,,0.0
+TECH-037-Customer-Insights-AI,Customer Insights Ai,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,llm,11.1
+TECH-038-Voice-Assistant-AI,Voice Assistant Ai,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,llm,11.1
+TECH-039-Blockchain-Verifier-AI,Blockchain Verifier Ai,technology,validation,validation,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,llm,11.1
+TECH-040-Cybersecurity-Shield,Cybersecurity Shield,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments;security,agent;automation;llm;security,40.0
+TECH-041-Content-Studio-AI,Content Studio Ai,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,llm,11.1
+TECH-042-Smart-Home-AI,Smart Home Ai,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,llm,11.1
+TECH-043-Supply-Chain-Optimizer,Supply Chain Optimizer,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,,0.0
+TECH-044-Data-Visualization-AI,Data Visualization Ai,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,llm,11.1
+TECH-045-Workflow-Automation,Workflow Automation,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,agent;automation;llm,33.3
+TECH-046-Sentiment-Analyzer,Sentiment Analyzer,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,agent;automation;llm,33.3
+TECH-047-Image-Recognition-AI,Image Recognition Ai,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,llm,11.1
+TECH-048-Video-Editor-AI,Video Editor Ai,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,llm,11.1
+TECH-049-Speech-to-Text-AI,Speech To Text Ai,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,llm,11.1
+TECH-050-Text-to-Speech-AI,Text To Speech Ai,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,,0.0
+TECH-051-Fraud-Prevention-AI,Fraud Prevention Ai,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,llm,11.1
+TECH-052-Recommendation-Engine,Recommendation Engine,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,agent;automation;llm,33.3
+TECH-053-Network-Security-AI,Network Security Ai,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments;security,llm;security,20.0
+TECH-054-Database-Optimizer,Database Optimizer,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,database,11.1
+TECH-055-AI-Testing-Platform,Ai Testing Platform,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,llm,11.1
+TECH-056-Virtual-Assistant-Builder,Virtual Assistant Builder,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,,0.0
+TECH-057-Machine-Learning-Builder,Machine Learning Builder,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;machine-learning;payments,machine-learning,10.0
+TECH-058-AI-Ethics-Auditor,Ai Ethics Auditor,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,llm,11.1
+TECH-059-Predictive-Analytics-AI,Predictive Analytics Ai,technology,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;devtools;llm;payments,analytics;llm,20.0
+TECH-060-AI-Training-Platform,Ai Training Platform,technology,planned,planned,agent;api;authentication;automation;dashboard;database;devtools;llm;payments,llm,11.1
+OPS-001-Fractional-CTO-Agency,Fractional Cto Agency,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;monitoring;payments;scheduling,agent;automation;llm,11.1
+OPS-002-Supply-Chain-Optimizer,Supply Chain Optimizer,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;monitoring;payments;scheduling,,0.0
+OPS-003-Event-Planning-AI,Event Planning Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,llm,10.0
+OPS-004-Inventory-Management-AI,Inventory Management Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,llm,10.0
+OPS-005-Project-Management-AI,Project Management Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,llm,10.0
+OPS-006-Document-Automation-AI,Document Automation Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,automation;llm,20.0
+OPS-007-Meeting-Assistant-AI,Meeting Assistant Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,llm,10.0
+OPS-008-Recruitment-AI,Recruitment Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,llm,10.0
+OPS-009-Onboarding-AI,Onboarding Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,llm,10.0
+OPS-010-Training-Platform-AI,Training Platform Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,llm,10.0
+OPS-011-Performance-Review-AI,Performance Review Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,llm,10.0
+OPS-012-IT-Support-AI,It Support Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,llm,10.0
+OPS-013-Facilities-Management-AI,Facilities Management Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,llm,10.0
+OPS-014-Travel-Booking-AI,Travel Booking Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,llm,10.0
+OPS-015-Expense-Management-AI,Expense Management Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,llm,10.0
+OPS-016-Contract-Management-AI,Contract Management Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+OPS-017-Compliance-Monitoring-AI,Compliance Monitoring Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+OPS-018-Quality-Control-AI,Quality Control Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+OPS-019-Asset-Management-AI,Asset Management Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+OPS-020-Time-Tracking-AI,Time Tracking Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+OPS-021-Document-Security-AI,Document Security Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling;security,,0.0
+OPS-022-Knowledge-Management-AI,Knowledge Management Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+OPS-023-Meeting-Transcription-AI,Meeting Transcription Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+OPS-024-Task-Automation-AI,Task Automation Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+OPS-025-Resource-Allocation-AI,Resource Allocation Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+OPS-026-Budget-Planning-AI,Budget Planning Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+OPS-027-Cost-Optimization-AI,Cost Optimization Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+OPS-028-Procurement-AI,Procurement Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+OPS-029-Vendor-Management-AI,Vendor Management Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+OPS-030-Contract-Negotiation-AI,Contract Negotiation Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+OPS-031-Legal-Document-AI,Legal Document Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;ocr;payments;scheduling,,0.0
+OPS-032-Compliance-Reporting-AI,Compliance Reporting Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+OPS-033-Training-Content-AI,Training Content Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+OPS-034-Employee-Engagement-AI,Employee Engagement Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+OPS-035-Succession-Planning-AI,Succession Planning Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+OPS-036-Workspace-Design-AI,Workspace Design Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling;workspace,,0.0
+OPS-037-Energy-Efficiency-AI,Energy Efficiency Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+OPS-038-Security-Monitoring-AI,Security Monitoring Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling;security,,0.0
+OPS-039-Health-Safety-AI,Health Safety Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+OPS-040-Disaster-Recovery-AI,Disaster Recovery Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+OPS-041-IT-Asset-Management,It Asset Management,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;monitoring;payments;scheduling,,0.0
+OPS-042-Cloud-Cost-Management,Cloud Cost Management,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;monitoring;payments;scheduling,,0.0
+OPS-043-Data-Governance-AI,Data Governance Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+OPS-044-Network-Monitoring-AI,Network Monitoring Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+OPS-045-Software-Licensing-AI,Software Licensing Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+OPS-046-IT-Procurement-AI,It Procurement Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+OPS-047-System-Integration-AI,System Integration Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+OPS-048-Data-Backup-AI,Data Backup Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+OPS-049-Business-Continuity-AI,Business Continuity Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+OPS-050-Compliance-Audit-AI,Compliance Audit Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+OPS-051-Document-Collaboration-AI,Document Collaboration Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling;workspace,,0.0
+OPS-052-Video-Conferencing-AI,Video Conferencing Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+OPS-053-Email-Management-AI,Email Management Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;notifications;payments;scheduling,,0.0
+OPS-054-Calendar-Optimization-AI,Calendar Optimization Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+OPS-055-Project-Budget-AI,Project Budget Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+OPS-056-Resource-Forecasting-AI,Resource Forecasting Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+OPS-057-Task-Prioritization-AI,Task Prioritization Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+OPS-058-Time-Management-AI,Time Management Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+OPS-059-Meeting-Minutes-AI,Meeting Minutes Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+OPS-060-Document-Translation-AI,Document Translation Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+OPS-061-Form-Automation-AI,Form Automation Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+OPS-062-Report-Generation-AI,Report Generation Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+OPS-063-Dashboard-Creation-AI,Dashboard Creation Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+OPS-064-Analytics-Platform-AI,Analytics Platform Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+OPS-065-Data-Cleaning-AI,Data Cleaning Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+OPS-066-Workflow-Management-AI,Workflow Management Ai,operations,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments;scheduling,,0.0
+EDU-001-Youth-Entrepreneurship-Curriculum,Youth Entrepreneurship Curriculum,education,planned,planned,analytics;api;authentication;dashboard;database;notifications;payments;search;workspace,agent;dashboard,11.1
+EDU-002-AI-Literacy-Program,Ai Literacy Program,education,planned,planned,analytics;api;authentication;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+EDU-003-Coding-Mentor-Certification,Coding Mentor Certification,education,planned,planned,analytics;api;authentication;dashboard;database;notifications;payments;search;workspace,agent;dashboard,11.1
+EDU-004-Real-Estate-Licensing-Prep,Real Estate Licensing Prep,education,planned,planned,analytics;api;authentication;dashboard;database;notifications;payments;search;workspace,agent;dashboard,11.1
+EDU-005-Coding-Bootcamp,Coding Bootcamp,education,planned,planned,analytics;api;authentication;dashboard;database;notifications;payments;search;workspace,agent;dashboard,11.1
+EDU-006-Homeschooling-Content-AI,Homeschooling Content Ai,education,planned,planned,analytics;api;authentication;dashboard;database;llm;notifications;payments;search;workspace,,0.0
+EDU-007-AI-Tutoring-Platform,Ai Tutoring Platform,education,planned,planned,analytics;api;authentication;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+EDU-008-Branding-Templates-Marketplace,Branding Templates Marketplace,education,planned,planned,analytics;api;authentication;dashboard;database;notifications;payments;search;workspace,,0.0
+EDU-009-Voiceover-Script-Library,Voiceover Script Library,education,planned,planned,analytics;api;authentication;dashboard;database;notifications;payments;search;workspace,agent;dashboard,11.1
+EDU-010-Trade-Skills-Bootcamp,Trade Skills Bootcamp,education,planned,planned,analytics;api;authentication;dashboard;database;notifications;payments;search;workspace,agent;dashboard,11.1
+EDU-011-Franchise-Blueprint-System,Franchise Blueprint System,education,planned,planned,analytics;api;authentication;dashboard;database;notifications;payments;search;workspace,agent;dashboard,11.1
+EDU-012-Low-Income-Housing-Blueprint,Low Income Housing Blueprint,education,planned,planned,analytics;api;authentication;dashboard;database;notifications;payments;search;workspace,agent;dashboard,11.1
+EDU-013-Automated-Empire-Book,Automated Empire Book,education,planned,planned,analytics;api;authentication;dashboard;database;notifications;payments;search;workspace,,0.0
+EDU-014-BIPOC-Creator-Incubator,Bipoc Creator Incubator,education,planned,planned,analytics;api;authentication;dashboard;database;notifications;payments;search;workspace,agent;dashboard,11.1
+EDU-015-AI-Legal-Doc-Generator,Ai Legal Doc Generator,education,planned,planned,analytics;api;authentication;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+EDU-016-Virtual-Black-Art-Museum,Virtual Black Art Museum,education,planned,planned,analytics;api;authentication;dashboard;database;notifications;payments;search;workspace,agent;dashboard,11.1
+EDU-017-AI-Coding-Tutor,Ai Coding Tutor,education,growth,active,analytics;api;authentication;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+EDU-018-Online-Course-Creator,Online Course Creator,education,planned,planned,analytics;api;authentication;dashboard;database;notifications;payments;search;workspace,agent;dashboard,11.1
+EDU-019-Executive-Education-Program,Executive Education Program,education,planned,planned,analytics;api;authentication;dashboard;database;notifications;payments;search;workspace,agent;dashboard,11.1
+EDU-020-Youth-STEM-Program,Youth Stem Program,education,planned,planned,analytics;api;authentication;dashboard;database;notifications;payments;search;workspace,agent;dashboard,11.1
+EDU-021-Remote-Work-Certification,Remote Work Certification,education,planned,planned,analytics;api;authentication;dashboard;database;notifications;payments;search;workspace,agent;dashboard,11.1
+EDU-022-AI-Research-Assistant,Ai Research Assistant,education,planned,planned,analytics;api;authentication;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+EDU-023-Personal-Finance-Coach,Personal Finance Coach,education,planned,planned,analytics;api;authentication;dashboard;database;notifications;payments;search;workspace,agent;dashboard,11.1
+EDU-024-Language-Learning-AI,Language Learning Ai,education,planned,planned,analytics;api;authentication;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+EDU-025-Test-Preparation-AI,Test Preparation Ai,education,planned,planned,analytics;api;authentication;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+EDU-026-Corporate-Training-AI,Corporate Training Ai,education,planned,planned,analytics;api;authentication;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+EDU-027-Medical-Education-AI,Medical Education Ai,education,planned,planned,analytics;api;authentication;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+EDU-028-Legal-Education-AI,Legal Education Ai,education,planned,planned,analytics;api;authentication;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+EDU-029-Music-Education-AI,Music Education Ai,education,planned,planned,analytics;api;authentication;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+EDU-030-Art-Education-AI,Art Education Ai,education,planned,planned,analytics;api;authentication;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+EDU-031-Physical-Education-AI,Physical Education Ai,education,planned,planned,analytics;api;authentication;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+EDU-032-Environmental-Education-AI,Environmental Education Ai,education,planned,planned,analytics;api;authentication;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+EDU-033-Social-Studies-AI,Social Studies Ai,education,planned,planned,analytics;api;authentication;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+EDU-034-Math-Education-AI,Math Education Ai,education,planned,planned,analytics;api;authentication;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+EDU-035-Science-Education-AI,Science Education Ai,education,planned,planned,analytics;api;authentication;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+EDU-036-Reading-Comprehension-AI,Reading Comprehension Ai,education,planned,planned,analytics;api;authentication;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+EDU-037-Writing-Instruction-AI,Writing Instruction Ai,education,planned,planned,analytics;api;authentication;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+EDU-038-Critical-Thinking-AI,Critical Thinking Ai,education,planned,planned,analytics;api;authentication;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+EDU-039-Emotional-Intelligence-AI,Emotional Intelligence Ai,education,planned,planned,analytics;api;authentication;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+EDU-040-Time-Management-AI,Time Management Ai,education,planned,planned,analytics;api;authentication;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+COMM-001-Luminary-Worldwide-Events,Luminary Worldwide Events,operations,planned,planned,api;authentication;crm;dashboard;database;notifications;payments;search;workspace,,0.0
+COMM-002-Brotherhood-Coaching-Network,Brotherhood Coaching Network,operations,planned,planned,api;authentication;crm;dashboard;database;notifications;payments;search;workspace,monitoring,0.0
+COMM-003-Ace-Senior-Care-Connect,Ace Senior Care Connect,operations,planned,planned,api;authentication;crm;dashboard;database;notifications;payments;search;workspace,,0.0
+COMM-004-Community-Outreach-Nonprofit,Community Outreach Nonprofit,operations,planned,planned,api;authentication;crm;dashboard;database;notifications;payments;search;workspace,,0.0
+COMM-005-Ace-Food-Security-AI,Ace Food Security Ai,operations,planned,planned,api;authentication;crm;dashboard;database;llm;notifications;payments;search;security;workspace,llm;security,18.2
+COMM-006-Community-Technology-Access-AI,Community Technology Access Ai,operations,planned,planned,api;authentication;crm;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+COMM-007-Youth-Leadership-AI,Youth Leadership Ai,operations,planned,planned,api;authentication;crm;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+COMM-008-Community-Fundraising-AI,Community Fundraising Ai,operations,planned,planned,api;authentication;crm;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+COMM-009-Volunteer-Hub-AI,Volunteer Hub Ai,operations,planned,planned,api;authentication;crm;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+COMM-010-Disaster-Relief-AI,Disaster Relief Ai,operations,planned,planned,api;authentication;crm;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+COMM-011-Indigenous-Creator-Hub,Indigenous Creator Hub,operations,planned,planned,api;authentication;crm;dashboard;database;notifications;payments;search;workspace,monitoring,0.0
+COMM-012-Black-Art-Museum-AI,Black Art Museum Ai,operations,planned,planned,api;authentication;crm;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+COMM-013-Women-s-Empowerment-Network,Women S Empowerment Network,operations,planned,planned,api;authentication;crm;dashboard;database;notifications;payments;search;workspace,monitoring,0.0
+COMM-014-Veterans-Support-AI,Veterans Support Ai,operations,planned,planned,api;authentication;crm;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+COMM-015-Youth-Mentorship-Program,Youth Mentorship Program,operations,planned,planned,api;authentication;crm;dashboard;database;notifications;payments;search;workspace,,0.0
+COMM-016-Community-Health-AI,Community Health Ai,operations,planned,planned,api;authentication;crm;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+COMM-017-Local-Business-Directory,Local Business Directory,operations,planned,planned,api;authentication;crm;dashboard;database;notifications;payments;search;workspace,,0.0
+COMM-018-Neighborhood-Watch-AI,Neighborhood Watch Ai,operations,planned,planned,api;authentication;crm;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+COMM-019-Community-Garden-AI,Community Garden Ai,operations,planned,planned,api;authentication;crm;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+COMM-020-Public-Transportation-AI,Public Transportation Ai,operations,planned,planned,api;authentication;crm;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+COMM-021-Housing-Assistance-AI,Housing Assistance Ai,operations,planned,planned,api;authentication;crm;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+COMM-022-Job-Training-Center,Job Training Center,operations,planned,planned,api;authentication;crm;dashboard;database;notifications;payments;search;workspace,,0.0
+COMM-023-Elder-Companion-AI,Elder Companion Ai,operations,planned,planned,api;authentication;crm;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+COMM-024-Youth-Sports-AI,Youth Sports Ai,operations,planned,planned,api;authentication;crm;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+COMM-025-Community-Legal-Aid,Community Legal Aid,operations,planned,planned,api;authentication;crm;dashboard;database;notifications;payments;search;workspace,,0.0
+COMM-026-Public-Education-AI,Public Education Ai,operations,planned,planned,api;authentication;crm;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+COMM-027-Local-Government-AI,Local Government Ai,operations,planned,planned,api;authentication;crm;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+COMM-028-Public-Safety-AI,Public Safety Ai,operations,planned,planned,api;authentication;crm;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+COMM-029-Community-Wellness-AI,Community Wellness Ai,operations,planned,planned,api;authentication;crm;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+COMM-030-Cultural-Exchange-AI,Cultural Exchange Ai,operations,planned,planned,api;authentication;crm;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+COMM-031-Community-Investment-AI,Community Investment Ai,operations,planned,planned,api;authentication;crm;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+COMM-032-Public-Health-AI,Public Health Ai,operations,planned,planned,api;authentication;crm;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+COMM-033-Youth-Innovation-Hub,Youth Innovation Hub,operations,planned,planned,api;authentication;crm;dashboard;database;notifications;payments;search;workspace,monitoring,0.0
+COMM-034-Senior-Tech-Support,Senior Tech Support,operations,planned,planned,api;authentication;crm;dashboard;database;notifications;payments;search;workspace,,0.0
+COMM-035-Community-Arts-AI,Community Arts Ai,operations,planned,planned,api;authentication;crm;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+COMM-036-Public-Infrastructure-AI,Public Infrastructure Ai,operations,planned,planned,api;authentication;crm;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+COMM-037-Neighborhood-Development-AI,Neighborhood Development Ai,operations,planned,planned,api;authentication;crm;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+COMM-038-Community-Policing-AI,Community Policing Ai,operations,planned,planned,api;authentication;crm;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+COMM-039-Public-Space-AI,Public Space Ai,operations,planned,planned,api;authentication;crm;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+COMM-040-Community-Recycling-AI,Community Recycling Ai,operations,planned,planned,api;authentication;crm;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+COMM-041-Public-Wi-Fi-AI,Public Wi Fi Ai,operations,planned,planned,api;authentication;crm;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+COMM-042-Community-Energy-AI,Community Energy Ai,operations,planned,planned,api;authentication;crm;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+COMM-043-Local-Food-Network-AI,Local Food Network Ai,operations,planned,planned,api;authentication;crm;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+COMM-044-Community-Volunteering-AI,Community Volunteering Ai,operations,planned,planned,api;authentication;crm;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+COMM-045-Public-Childcare-AI,Public Childcare Ai,operations,planned,planned,api;authentication;crm;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+COMM-046-Community-Pet-Care-AI,Community Pet Care Ai,operations,planned,planned,api;authentication;crm;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+COMM-047-Public-Fitness-AI,Public Fitness Ai,operations,planned,planned,api;authentication;crm;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+COMM-048-Community-Transportation-AI,Community Transportation Ai,operations,planned,planned,api;authentication;crm;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+COMM-049-Public-Event-AI,Public Event Ai,operations,planned,planned,api;authentication;crm;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+COMM-050-Community-Cultural-AI,Community Cultural Ai,operations,planned,planned,api;authentication;crm;dashboard;database;llm;notifications;payments;search;workspace,llm,10.0
+EM-001-Space-Habitat-AI,Space Habitat Ai,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-002-Fusion-Energy-AI,Fusion Energy Ai,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-003-Teleportation-Research-AI,Teleportation Research Ai,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-004-Climate-Solutions-AI,Climate Solutions Ai,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-005-Holographic-Events-AI,Holographic Events Ai,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-006-Neurofeedback-AI,Neurofeedback Ai,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-007-Autonomous-Delivery-AI,Autonomous Delivery Ai,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-008-Gene-Editing-AI,Gene Editing Ai,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-009-Space-Tourism-AI,Space Tourism Ai,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-010-Wearables-AI,Wearables Ai,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-011-Metaverse-Hub-AI,Metaverse Hub Ai,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-012-Energy-Grid-AI,Energy Grid Ai,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-013-Brain-Computer-Interface,Brain Computer Interface,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,,0.0
+EM-014-Ocean-Cleanup-AI,Ocean Cleanup Ai,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-015-Crypto-Trading-AI,Crypto Trading Ai,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-016-Synthetic-Media-AI,Synthetic Media Ai,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-017-Space-Mining-AI,Space Mining Ai,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-018-VR-Therapy-AI,Vr Therapy Ai,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-019-Weather-Prediction-AI,Weather Prediction Ai,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-020-Autonomous-Farming-AI,Autonomous Farming Ai,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-021-Traffic-Optimizer-AI,Traffic Optimizer Ai,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-022-Smart-Grid-AI,Smart Grid Ai,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-023-Disaster-Prediction-AI,Disaster Prediction Ai,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-024-Nanotech-AI,Nanotech Ai,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-025-Personalized-Medicine-AI,Personalized Medicine Ai,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-026-AI-Diagnostic-Lab,Ai Diagnostic Lab,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-027-Sustainable-Cities-AI,Sustainable Cities Ai,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-028-Renewable-Energy-AI,Renewable Energy Ai,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-029-Climate-Modeling-AI,Climate Modeling Ai,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-030-Policy-Advisor-AI,Policy Advisor Ai,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-031-Governance-Hub-AI,Governance Hub Ai,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-032-Global-Challenges-AI,Global Challenges Ai,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-033-Space-Exploration-AI,Space Exploration Ai,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-034-Education-Equity-AI,Education Equity Ai,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-035-Health-Equity-AI,Health Equity Ai,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-036-Economic-Equity-AI,Economic Equity Ai,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-037-Environmental-Justice-AI,Environmental Justice Ai,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-038-Human-Rights-AI,Human Rights Ai,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-039-Peacebuilding-AI,Peacebuilding Ai,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-040-Telemedicine-AI,Telemedicine Ai,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-041-AI-Climate-Adaptation,Ai Climate Adaptation,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-042-Space-Agriculture-AI,Space Agriculture Ai,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-043-Quantum-Communication-AI,Quantum Communication Ai,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-044-Robotics-Surgery-AI,Robotics Surgery Ai,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-045-AI-Disaster-Response,Ai Disaster Response,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-046-Smart-City-Governance,Smart City Governance,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,,0.0
+EM-047-AI-Environmental-Monitoring,Ai Environmental Monitoring,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;monitoring;payments,llm;monitoring,20.0
+EM-048-Space-Manufacturing-AI,Space Manufacturing Ai,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-049-AI-Ocean-Exploration,Ai Ocean Exploration,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+EM-050-AI-Archaeology,Ai Archaeology,investment,planned,planned,agent;analytics;api;authentication;automation;dashboard;database;llm;payments,llm,11.1
+SPEC-001-AI-Auction-House,Ai Auction House,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;payments;search,,0.0
+SPEC-002-Smart-Marina-Management,Smart Marina Management,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;payments;search,,0.0
+SPEC-003-AI-Surf-Report,Ai Surf Report,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;payments;search,,0.0
+SPEC-004-Private-Chef-AI,Private Chef Ai,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;payments;search,,0.0
+SPEC-005-Virtual-Concierge-AI,Virtual Concierge Ai,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;payments;search,,0.0
+SPEC-006-Smart-Parking-AI,Smart Parking Ai,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;payments;search,,0.0
+SPEC-007-AI-Interior-Design,Ai Interior Design,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;payments;search,,0.0
+SPEC-008-Personal-Stylist-AI,Personal Stylist Ai,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;payments;search,,0.0
+SPEC-009-Smart-Locker-System,Smart Locker System,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;payments;search,,0.0
+SPEC-010-AI-Fitness-Coach,Ai Fitness Coach,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;payments;search,,0.0
+SPEC-011-Smart-Golf-Caddie,Smart Golf Caddie,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;payments;search,,0.0
+SPEC-012-AI-Nutritionist,Ai Nutritionist,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;payments;search,,0.0
+SPEC-013-Smart-Hotel-Butler,Smart Hotel Butler,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;payments;search,,0.0
+SPEC-014-AI-Language-Tutor,Ai Language Tutor,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;payments;search,,0.0
+SPEC-015-Smart-Transportation-AI,Smart Transportation Ai,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;payments;search,,0.0
+SPEC-016-AI-Travel-Planner,Ai Travel Planner,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;payments;search,,0.0
+SPEC-017-Smart-Agriculture-AI,Smart Agriculture Ai,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;payments;search,,0.0
+SPEC-018-AI-Personal-Shopper,Ai Personal Shopper,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;payments;search,,0.0
+SPEC-019-Smart-Home-Security,Smart Home Security,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;payments;search;security,,0.0
+SPEC-020-AI-Music-Producer,Ai Music Producer,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;payments;search,,0.0
+SPEC-021-Smart-Restaurant-AI,Smart Restaurant Ai,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;payments;search,,0.0
+SPEC-022-AI-Movie-Critic,Ai Movie Critic,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;payments;search,,0.0
+SPEC-023-Smart-Museum-Guide,Smart Museum Guide,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;payments;search,,0.0
+SPEC-024-AI-Sports-Analyst,Ai Sports Analyst,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;payments;search,,0.0
+SPEC-025-Smart-Library-AI,Smart Library Ai,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;payments;search,,0.0
+SPEC-026-AI-Art-Curator,Ai Art Curator,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;payments;search,,0.0
+SPEC-027-Smart-Fitness-AI,Smart Fitness Ai,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;payments;search,,0.0
+SPEC-028-AI-Poetry-Generator,Ai Poetry Generator,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;payments;search,,0.0
+SPEC-029-Smart-Dating-AI,Smart Dating Ai,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;payments;search,,0.0
+SPEC-030-AI-Journalism-Tool,Ai Journalism Tool,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;payments;search,,0.0
+SPEC-031-Smart-Legal-AI,Smart Legal Ai,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;payments;search,,0.0
+SPEC-032-AI-Game-Designer,Ai Game Designer,investment,growth,active,analytics;api;authentication;automation;dashboard;database;llm;payments;search,,0.0
+SPEC-033-Smart-Real-Estate-AI,Smart Real Estate Ai,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;payments;search,,0.0
+SPEC-034-AI-Cooking-Assistant,Ai Cooking Assistant,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;payments;search,,0.0
+SPEC-035-Smart-Health-AI,Smart Health Ai,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;payments;search,,0.0
+SPEC-036-AI-Photography-Tool,Ai Photography Tool,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;payments;search,,0.0
+SPEC-037-Smart-Writing-AI,Smart Writing Ai,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;payments;search,,0.0
+SPEC-038-AI-Comedy-Writer,Ai Comedy Writer,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;payments;search,,0.0
+SPEC-039-Smart-Meditation-AI,Smart Meditation Ai,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;payments;search,,0.0
+SPEC-040-AI-Debate-Coach,Ai Debate Coach,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;payments;search,,0.0
+SPEC-041-Smart-Parenting-AI,Smart Parenting Ai,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;payments;search,,0.0
+SPEC-042-AI-Financial-Advisor,Ai Financial Advisor,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;payments;search,,0.0
+SPEC-043-Smart-Automotive-AI,Smart Automotive Ai,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;payments;search,,0.0
+SPEC-044-AI-Aviation-Planner,Ai Aviation Planner,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;payments;search,,0.0
+SPEC-045-Smart-Maritime-AI,Smart Maritime Ai,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;payments;search,,0.0
+SPEC-046-AI-Weather-Forecast,Ai Weather Forecast,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;payments;search,,0.0
+SPEC-047-Smart-Energy-AI,Smart Energy Ai,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;payments;search,,0.0
+SPEC-048-AI-Sports-Coach,Ai Sports Coach,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;payments;search,,0.0
+SPEC-049-Smart-Education-AI,Smart Education Ai,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;payments;search,,0.0
+SPEC-050-AI-Language-Translator,Ai Language Translator,investment,planned,planned,analytics;api;authentication;automation;dashboard;database;llm;payments;search,,0.0
+FI-dist,Dist,financial,planned,planned,analytics;api;authentication;dashboard;database;payments;portfolio;security,,0.0
+FI-node_modules,Node_Modules,financial,planned,planned,analytics;api;authentication;dashboard;database;payments;portfolio;security,,0.0
+FI-public,Public,financial,planned,planned,analytics;api;authentication;dashboard;database;payments;portfolio;security,,0.0
+FI-src,Src,financial,planned,planned,analytics;api;authentication;dashboard;database;payments;portfolio;security,,0.0
+FI-supabase,Supabase,financial,planned,planned,analytics;api;authentication;dashboard;database;payments;portfolio;security,,0.0
+CON-001-ACE-CONSTRUCTION,Ace Construction,construction,planned,planned,api;authentication;construction;crm;dashboard;database;monitoring;ocr;payments;scheduling,,0.0
+CON-002-RESIDENTIAL-CONSTRUCTION,Residential Construction,construction,planned,planned,api;authentication;construction;crm;dashboard;database;monitoring;ocr;payments;scheduling,,0.0
+CON-003-COMMERCIAL-CONSTRUCTION,Commercial Construction,construction,planned,planned,api;authentication;construction;crm;dashboard;database;monitoring;ocr;payments;scheduling,,0.0
+CON-004-INDUSTRIAL-CONSTRUCTION,Industrial Construction,construction,planned,planned,api;authentication;construction;crm;dashboard;database;monitoring;ocr;payments;scheduling,,0.0
+CON-005-CONSTRUCTION-EQUIPMENT-RENTAL,Construction Equipment Rental,construction,planned,planned,api;authentication;construction;crm;dashboard;database;monitoring;ocr;payments;scheduling,,0.0
+CON-006-CONSTRUCTION-PROJECT-MANAGEMENT,Construction Project Management,construction,planned,planned,api;authentication;construction;crm;dashboard;database;monitoring;ocr;payments;scheduling,,0.0
+CON-007-GREEN-BUILDING-SERVICES,Green Building Services,construction,planned,planned,api;authentication;construction;crm;dashboard;database;monitoring;ocr;payments;scheduling,,0.0
+CON-008-HOME-RENOVATION-SERVICES,Home Renovation Services,construction,planned,planned,api;authentication;crm;dashboard;database;monitoring;ocr;payments;scheduling,,0.0
+CON-009-ROOFING-COMPANY,Roofing Company,construction,planned,planned,api;authentication;crm;dashboard;database;monitoring;ocr;payments;scheduling,,0.0
+CON-010-PLUMBING-SERVICES,Plumbing Services,construction,planned,planned,api;authentication;crm;dashboard;database;monitoring;ocr;payments;scheduling,,0.0
+CON-011-ELECTRICAL-SERVICES,Electrical Services,construction,planned,planned,api;authentication;crm;dashboard;database;monitoring;ocr;payments;scheduling,,0.0
+CON-012-HVAC-SERVICES,HVAC Services,construction,planned,planned,api;authentication;crm;dashboard;database;monitoring;ocr;payments;scheduling,,0.0
+CON-013-PAINTING-SERVICES,Painting Services,construction,planned,planned,api;authentication;crm;dashboard;database;monitoring;ocr;payments;scheduling,,0.0
+CON-014-FLOORING-SERVICES,Flooring Services,construction,planned,planned,api;authentication;crm;dashboard;database;monitoring;ocr;payments;scheduling,,0.0
+CON-015-LANDSCAPING-SERVICES,Landscaping Services,construction,planned,planned,api;authentication;crm;dashboard;database;monitoring;ocr;payments;scheduling,,0.0
+CON-016-DEMOLITION-SERVICES,Demolition Services,construction,planned,planned,api;authentication;crm;dashboard;database;monitoring;ocr;payments;scheduling,,0.0
+CON-017-CONCRETE-SERVICES,Concrete Services,construction,planned,planned,api;authentication;crm;dashboard;database;monitoring;ocr;payments;scheduling,,0.0
+CON-018-CARPENTRY-SERVICES,Carpentry Services,construction,planned,planned,api;authentication;crm;dashboard;database;monitoring;ocr;payments;scheduling,,0.0
+CON-019-WINDOW-INSTALLATION,Window Installation,construction,planned,planned,api;authentication;crm;dashboard;database;monitoring;ocr;payments;scheduling,,0.0
+CON-020-INSULATION-SERVICES,Insulation Services,construction,planned,planned,api;authentication;crm;dashboard;database;monitoring;ocr;payments;scheduling,,0.0
+RE-001-PROPERTY-HOLDINGS,Property Holdings,real-estate,planned,planned,api;authentication;crm;dashboard;database;payments;scheduling;search,,0.0
+OPS-001-VENTURE-STAFFING,Venture Staffing Operations,operations,mvp,development,analytics;api;authentication;automation;dashboard;database;monitoring;payments;scheduling,,0.0
+PROFILE-001-DIVINE-JOHNS-PORTFOLIO,Divine Johns Portfolio,media,mvp,development,analytics;api;authentication;automation;dashboard;database;notifications;payments;portfolio;search,,0.0
+ET-010-PERSONAL-RESUME,Personal Resume,education,mvp,development,analytics;api;authentication;dashboard;database;notifications;payments;search;workspace,,0.0
+TECH-061-TECH-VENTURES-PORTFOLIO,Tech Ventures Portfolio,technology,mvp,development,agent;api;authentication;automation;dashboard;database;devtools;llm;payments;portfolio,,0.0

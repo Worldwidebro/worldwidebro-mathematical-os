@@ -1,0 +1,192 @@
+{
+  "generated_at": "2026-05-31",
+  "total_ventures": 712,
+  "average_readiness_pct": 21.07,
+  "total_sectors": 18,
+  "development_stages": {
+    "growth": 5,
+    "mvp": 93,
+    "validation": 110,
+    "planned": 504
+  },
+  "sector_distribution": {
+    "education": 40,
+    "financial": 41,
+    "e-commerce": 110,
+    "fitness-sports": 25,
+    "food-hospitality": 35,
+    "technology": 61,
+    "professional-services": 25,
+    "specialized": 50,
+    "operations": 67,
+    "emerging": 50,
+    "community": 50,
+    "beauty-wellness": 40,
+    "logistics-transport": 30,
+    "media-content": 21,
+    "education-training": 16,
+    "software-technology": 30,
+    "construction": 20,
+    "real-estate": 1
+  },
+  "revenue_models": {
+    "mapped_count": 712,
+    "distribution": {
+      "Subscription SaaS": 350,
+      "Affiliate commission": 1,
+      "Per-filing fee": 3,
+      "Flat formation fee": 2,
+      "Per-shipment / per-route fee": 28,
+      "Subscription (accounting SaaS)": 5,
+      "Per-transaction fee": 6,
+      "Course fee or subscription": 67,
+      "AUM / management fee": 7,
+      "Capital-raise fee": 2,
+      "B2B compliance SaaS": 9,
+      "Per-document fee or subscription": 12,
+      "Local SaaS subscription": 5,
+      "Per-employee SaaS fee": 1,
+      "Premium-based fee": 2,
+      "Membership / per-session fee": 41,
+      "Marketplace take-rate": 25,
+      "Transaction commission / SaaS": 31,
+      "Membership subscription": 30,
+      "Ad revenue + subscription": 28,
+      "B2B SaaS subscription": 11,
+      "Project fee / margin": 20,
+      "Retainer / project fee": 13,
+      "Transaction commission": 4,
+      "Placement fee": 3,
+      "Project / consulting fee": 6
+    }
+  },
+  "financial_kpis": {
+    "kpi_set": "Financial",
+    "as_of": "2026-05-31",
+    "targets": {
+      "total_monthly_revenue": 15000,
+      "saas_mrr": 10000,
+      "operations_mrr": 5000,
+      "combined_arr": 180000,
+      "net_margin": "45%"
+    },
+    "current": {
+      "total_monthly_revenue": 3500,
+      "saas_mrr": 3500,
+      "operations_mrr": 0,
+      "combined_arr": 42000,
+      "net_margin": "32%"
+    },
+    "progress": {
+      "monthly_revenue_progress": "23%",
+      "saas_mrr_progress": "35%",
+      "operations_mrr_progress": "0%",
+      "annual_revenue_progress": "23%"
+    },
+    "trend": {
+      "direction": "up",
+      "velocity": "2.3x month-over-month",
+      "eta_to_target": "2026-09-15"
+    }
+  },
+  "reference_unit_economics": [
+    {
+      "type": "Service_Labor",
+      "revenue_model": "Time-for-money",
+      "avg_rev": "3000-5000",
+      "margin": "40-44",
+      "example": "Construction, Staffing, Consulting"
+    },
+    {
+      "type": "Service_Scaled",
+      "revenue_model": "Systemized service",
+      "avg_rev": "8000-15000",
+      "margin": "38-53",
+      "example": "Home Services, Recruitment, Project Mgmt"
+    },
+    {
+      "type": "Digital_Product_SaaS",
+      "revenue_model": "Recurring revenue",
+      "avg_rev": "2000-5000",
+      "margin": "15-50",
+      "example": "HRMS, Tools, Platforms"
+    },
+    {
+      "type": "Digital_Product_Templates",
+      "revenue_model": "One-time sales",
+      "avg_rev": "1500-3000",
+      "margin": "27-63",
+      "example": "Pitch Kit, Frameworks, Scripts"
+    },
+    {
+      "type": "Digital_Content_Course",
+      "revenue_model": "Subscription",
+      "avg_rev": "1000-3000",
+      "margin": "20-73",
+      "example": "YouTube Academy, Courses, Memberships"
+    },
+    {
+      "type": "Marketplace_Aggregator",
+      "revenue_model": "Commission",
+      "avg_rev": "2000-6000",
+      "margin": "0-50",
+      "example": "Component Hub, Capabilities Exchange"
+    },
+    {
+      "type": "SMB_Acquisition_Local",
+      "revenue_model": "Operational buyout",
+      "avg_rev": "5000-20000",
+      "margin": "20-50",
+      "example": "Construction firm, Staffing agency, Real estate"
+    },
+    {
+      "type": "SMB_Acquisition_Passive",
+      "revenue_model": "Portfolio hold",
+      "avg_rev": "3000-15000",
+      "margin": "27-50",
+      "example": "Passive holdings, Acquired franchises"
+    },
+    {
+      "type": "Stocks_Dividend",
+      "revenue_model": "Portfolio yield",
+      "avg_rev": "1000-3000",
+      "margin": "90-97",
+      "example": "Index funds, Dividend stocks"
+    },
+    {
+      "type": "Crypto_Yield",
+      "revenue_model": "DeFi strategies",
+      "avg_rev": "500-2000",
+      "margin": "56-86",
+      "example": "Staking, Liquidity pools, Arbitrage"
+    },
+    {
+      "type": "Real_Estate_Rental",
+      "revenue_model": "Passive income",
+      "avg_rev": "4000-12000",
+      "margin": "22-60",
+      "example": "Properties, Passive holdings"
+    },
+    {
+      "type": "Agency_Service",
+      "revenue_model": "Billable hours",
+      "avg_rev": "4000-8000",
+      "margin": "40-50",
+      "example": "Consulting, Freelance, Contracting"
+    },
+    {
+      "type": "Training_Certification",
+      "revenue_model": "Premium content",
+      "avg_rev": "3000-8000",
+      "margin": "20-65",
+      "example": "Training, Certifications, Bootcamps"
+    },
+    {
+      "type": "Affiliate_Network",
+      "revenue_model": "Commission sales",
+      "avg_rev": "1000-4000",
+      "margin": "-50-25",
+      "example": "Affiliate marketing, Referral networks"
+    }
+  ]
+}

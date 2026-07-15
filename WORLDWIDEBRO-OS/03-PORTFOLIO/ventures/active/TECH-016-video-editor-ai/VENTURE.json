@@ -1,0 +1,70 @@
+{
+  "business_id": "TECH-016-video-editor-ai",
+  "business_name": "Video-Editor-AI",
+  "sector": "technology",
+  "development_stage": "mvp",
+  "github_repo": "https://github.com/Worldwidebro/tech-016-video-editor-ai",
+  "dashboard_url": "https://venture-hub-pi.vercel.app/ventures/tech-016-video-editor-ai",
+  "entity": {
+    "name": "Video Editor AI Inc",
+    "type": "LLC",
+    "state": "WY",
+    "ein": null,
+    "status": "pending_formation"
+  },
+  "first_dollar": {
+    "action": "Launch starter tier ($19/mo) → 100 free trials → convert to paid",
+    "price": 19,
+    "platform": "Stripe",
+    "days_to_revenue": 14
+  },
+  "icp": {
+    "title": "Content creators, TikTok producers, YouTube shorts creators aged 18-45",
+    "pain_point": "Video editing takes too long; want AI-powered quick exports for social media",
+    "platform": "TikTok, YouTube, Instagram",
+    "opening_line": "Generate perfect short-form videos in 60 seconds with AI"
+  },
+  "capabilities": [
+    "Video Generation",
+    "AI Editing",
+    "Social Export",
+    "Template Management",
+    "Batch Processing"
+  ],
+  "revenue": {
+    "monthly_target": 30000,
+    "model": "SaaS subscription ($19/mo starter, $99/mo pro, $399/mo enterprise)",
+    "annual_projection": 360000
+  },
+  "pricing": {
+    "starter": {
+      "price": 19,
+      "videos_per_month": 50,
+      "features": ["Basic editing", "HD export", "Email support"]
+    },
+    "professional": {
+      "price": 99,
+      "videos_per_month": 500,
+      "features": ["Advanced editing", "4K export", "Priority support", "Custom branding"]
+    },
+    "enterprise": {
+      "price": 399,
+      "videos_per_month": 5000,
+      "features": ["Unlimited editing", "8K export", "Dedicated support", "API access"]
+    }
+  },
+  "tax": {
+    "classification": "LLC_sole",
+    "return_type": "Schedule_C",
+    "year": 2026,
+    "estimated_annual": 360000
+  },
+  "target_customer": "Content creators, agencies, social media managers",
+  "grants": [],
+  "agents": {
+    "primary": "claude-opus",
+    "tech": "claude-code",
+    "approval": "human-antwuan"
+  },
+  "last_updated": "2026-07-15T00:00:00Z"
+}
