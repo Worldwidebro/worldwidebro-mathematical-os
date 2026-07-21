@@ -1,0 +1,327 @@
+{
+  "timestamp": "2026-07-20T22:02:28.077184",
+  "venture_count": 10,
+  "agent_count": 30,
+  "ventures": {
+    "CON-001": {
+      "venture_id": "CON-001",
+      "agents": {
+        "CON-001-CEO": {
+          "agent_id": "CON-001-CEO",
+          "venture_id": "CON-001",
+          "role": "CEO",
+          "opco": "Construction",
+          "status": "spawned",
+          "created_at": "2026-07-20T22:02:28.077190",
+          "task_queue": []
+        },
+        "CON-001-CTO": {
+          "agent_id": "CON-001-CTO",
+          "venture_id": "CON-001",
+          "role": "CTO",
+          "opco": "Construction",
+          "status": "spawned",
+          "created_at": "2026-07-20T22:02:28.077192",
+          "task_queue": []
+        },
+        "CON-001-CFO": {
+          "agent_id": "CON-001-CFO",
+          "venture_id": "CON-001",
+          "role": "CFO",
+          "opco": "Construction",
+          "status": "spawned",
+          "created_at": "2026-07-20T22:02:28.077193",
+          "task_queue": []
+        }
+      }
+    },
+    "CON-002": {
+      "venture_id": "CON-002",
+      "agents": {
+        "CON-002-CEO": {
+          "agent_id": "CON-002-CEO",
+          "venture_id": "CON-002",
+          "role": "CEO",
+          "opco": "Construction",
+          "status": "spawned",
+          "created_at": "2026-07-20T22:02:28.077194",
+          "task_queue": []
+        },
+        "CON-002-CTO": {
+          "agent_id": "CON-002-CTO",
+          "venture_id": "CON-002",
+          "role": "CTO",
+          "opco": "Construction",
+          "status": "spawned",
+          "created_at": "2026-07-20T22:02:28.077195",
+          "task_queue": []
+        },
+        "CON-002-CFO": {
+          "agent_id": "CON-002-CFO",
+          "venture_id": "CON-002",
+          "role": "CFO",
+          "opco": "Construction",
+          "status": "spawned",
+          "created_at": "2026-07-20T22:02:28.077195",
+          "task_queue": []
+        }
+      }
+    },
+    "STA-001": {
+      "venture_id": "STA-001",
+      "agents": {
+        "STA-001-CEO": {
+          "agent_id": "STA-001-CEO",
+          "venture_id": "STA-001",
+          "role": "CEO",
+          "opco": "Staffing",
+          "status": "spawned",
+          "created_at": "2026-07-20T22:02:28.077196",
+          "task_queue": []
+        },
+        "STA-001-CTO": {
+          "agent_id": "STA-001-CTO",
+          "venture_id": "STA-001",
+          "role": "CTO",
+          "opco": "Staffing",
+          "status": "spawned",
+          "created_at": "2026-07-20T22:02:28.077197",
+          "task_queue": []
+        },
+        "STA-001-CFO": {
+          "agent_id": "STA-001-CFO",
+          "venture_id": "STA-001",
+          "role": "CFO",
+          "opco": "Staffing",
+          "status": "spawned",
+          "created_at": "2026-07-20T22:02:28.077198",
+          "task_queue": []
+        }
+      }
+    },
+    "RE-001": {
+      "venture_id": "RE-001",
+      "agents": {
+        "RE-001-CEO": {
+          "agent_id": "RE-001-CEO",
+          "venture_id": "RE-001",
+          "role": "CEO",
+          "opco": "RealEstate",
+          "status": "spawned",
+          "created_at": "2026-07-20T22:02:28.077199",
+          "task_queue": []
+        },
+        "RE-001-CTO": {
+          "agent_id": "RE-001-CTO",
+          "venture_id": "RE-001",
+          "role": "CTO",
+          "opco": "RealEstate",
+          "status": "spawned",
+          "created_at": "2026-07-20T22:02:28.077200",
+          "task_queue": []
+        },
+        "RE-001-CFO": {
+          "agent_id": "RE-001-CFO",
+          "venture_id": "RE-001",
+          "role": "CFO",
+          "opco": "RealEstate",
+          "status": "spawned",
+          "created_at": "2026-07-20T22:02:28.077200",
+          "task_queue": []
+        }
+      }
+    },
+    "EDU-001": {
+      "venture_id": "EDU-001",
+      "agents": {
+        "EDU-001-CEO": {
+          "agent_id": "EDU-001-CEO",
+          "venture_id": "EDU-001",
+          "role": "CEO",
+          "opco": "Education",
+          "status": "spawned",
+          "created_at": "2026-07-20T22:02:28.077201",
+          "task_queue": []
+        },
+        "EDU-001-CTO": {
+          "agent_id": "EDU-001-CTO",
+          "venture_id": "EDU-001",
+          "role": "CTO",
+          "opco": "Education",
+          "status": "spawned",
+          "created_at": "2026-07-20T22:02:28.077202",
+          "task_queue": []
+        },
+        "EDU-001-CFO": {
+          "agent_id": "EDU-001-CFO",
+          "venture_id": "EDU-001",
+          "role": "CFO",
+          "opco": "Education",
+          "status": "spawned",
+          "created_at": "2026-07-20T22:02:28.077203",
+          "task_queue": []
+        }
+      }
+    },
+    "FIN-001": {
+      "venture_id": "FIN-001",
+      "agents": {
+        "FIN-001-CEO": {
+          "agent_id": "FIN-001-CEO",
+          "venture_id": "FIN-001",
+          "role": "CEO",
+          "opco": "Finance",
+          "status": "spawned",
+          "created_at": "2026-07-20T22:02:28.077204",
+          "task_queue": []
+        },
+        "FIN-001-CTO": {
+          "agent_id": "FIN-001-CTO",
+          "venture_id": "FIN-001",
+          "role": "CTO",
+          "opco": "Finance",
+          "status": "spawned",
+          "created_at": "2026-07-20T22:02:28.077205",
+          "task_queue": []
+        },
+        "FIN-001-CFO": {
+          "agent_id": "FIN-001-CFO",
+          "venture_id": "FIN-001",
+          "role": "CFO",
+          "opco": "Finance",
+          "status": "spawned",
+          "created_at": "2026-07-20T22:02:28.077205",
+          "task_queue": []
+        }
+      }
+    },
+    "LOG-001": {
+      "venture_id": "LOG-001",
+      "agents": {
+        "LOG-001-CEO": {
+          "agent_id": "LOG-001-CEO",
+          "venture_id": "LOG-001",
+          "role": "CEO",
+          "opco": "Logistics",
+          "status": "spawned",
+          "created_at": "2026-07-20T22:02:28.077206",
+          "task_queue": []
+        },
+        "LOG-001-CTO": {
+          "agent_id": "LOG-001-CTO",
+          "venture_id": "LOG-001",
+          "role": "CTO",
+          "opco": "Logistics",
+          "status": "spawned",
+          "created_at": "2026-07-20T22:02:28.077207",
+          "task_queue": []
+        },
+        "LOG-001-CFO": {
+          "agent_id": "LOG-001-CFO",
+          "venture_id": "LOG-001",
+          "role": "CFO",
+          "opco": "Logistics",
+          "status": "spawned",
+          "created_at": "2026-07-20T22:02:28.077208",
+          "task_queue": []
+        }
+      }
+    },
+    "TECH-001": {
+      "venture_id": "TECH-001",
+      "agents": {
+        "TECH-001-CEO": {
+          "agent_id": "TECH-001-CEO",
+          "venture_id": "TECH-001",
+          "role": "CEO",
+          "opco": "Technology",
+          "status": "spawned",
+          "created_at": "2026-07-20T22:02:28.077209",
+          "task_queue": []
+        },
+        "TECH-001-CTO": {
+          "agent_id": "TECH-001-CTO",
+          "venture_id": "TECH-001",
+          "role": "CTO",
+          "opco": "Technology",
+          "status": "spawned",
+          "created_at": "2026-07-20T22:02:28.077210",
+          "task_queue": []
+        },
+        "TECH-001-CFO": {
+          "agent_id": "TECH-001-CFO",
+          "venture_id": "TECH-001",
+          "role": "CFO",
+          "opco": "Technology",
+          "status": "spawned",
+          "created_at": "2026-07-20T22:02:28.077210",
+          "task_queue": []
+        }
+      }
+    },
+    "HEALTH-001": {
+      "venture_id": "HEALTH-001",
+      "agents": {
+        "HEALTH-001-CEO": {
+          "agent_id": "HEALTH-001-CEO",
+          "venture_id": "HEALTH-001",
+          "role": "CEO",
+          "opco": "Healthcare",
+          "status": "spawned",
+          "created_at": "2026-07-20T22:02:28.077211",
+          "task_queue": []
+        },
+        "HEALTH-001-CTO": {
+          "agent_id": "HEALTH-001-CTO",
+          "venture_id": "HEALTH-001",
+          "role": "CTO",
+          "opco": "Healthcare",
+          "status": "spawned",
+          "created_at": "2026-07-20T22:02:28.077212",
+          "task_queue": []
+        },
+        "HEALTH-001-CFO": {
+          "agent_id": "HEALTH-001-CFO",
+          "venture_id": "HEALTH-001",
+          "role": "CFO",
+          "opco": "Healthcare",
+          "status": "spawned",
+          "created_at": "2026-07-20T22:02:28.077213",
+          "task_queue": []
+        }
+      }
+    },
+    "RETAIL-001": {
+      "venture_id": "RETAIL-001",
+      "agents": {
+        "RETAIL-001-CEO": {
+          "agent_id": "RETAIL-001-CEO",
+          "venture_id": "RETAIL-001",
+          "role": "CEO",
+          "opco": "Retail",
+          "status": "spawned",
+          "created_at": "2026-07-20T22:02:28.077214",
+          "task_queue": []
+        },
+        "RETAIL-001-CTO": {
+          "agent_id": "RETAIL-001-CTO",
+          "venture_id": "RETAIL-001",
+          "role": "CTO",
+          "opco": "Retail",
+          "status": "spawned",
+          "created_at": "2026-07-20T22:02:28.077215",
+          "task_queue": []
+        },
+        "RETAIL-001-CFO": {
+          "agent_id": "RETAIL-001-CFO",
+          "venture_id": "RETAIL-001",
+          "role": "CFO",
+          "opco": "Retail",
+          "status": "spawned",
+          "created_at": "2026-07-20T22:02:28.077216",
+          "task_queue": []
+        }
+      }
+    }
+  }
+}

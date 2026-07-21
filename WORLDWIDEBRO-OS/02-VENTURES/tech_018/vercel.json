@@ -1,0 +1,5 @@
+{
+  "name": "vex-tech-018",
+  "buildCommand": "npm run build || echo 'No build'",
+  "outputDirectory": "out"
+}

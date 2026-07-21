@@ -1,66 +1,109 @@
 capabilities:
-  - id: local-model-gateway
-    name: Local AI Model Gateway
-    category: LOCAL AI
-    description: Gateways for accessing local models privately on offline machines.
-  - id: private-api-layer
-    name: Private AI API Layer
-    category: LOCAL AI
-    description: OpenAI-compatible REST server wrapping local models.
-  - id: hardware-acceleration
-    name: NPU/GPU Acceleration
-    category: LOCAL AI
-    description: Optimization hooks for Apple Silicon, NVIDIA CUDA, and AMD NPU hardware.
-  - id: software-brain
-    name: Software Engineering Brain
-    category: CODE INTELLIGENCE
-    description: Semantic codebase graphing, impact assessment, and change tracking.
-  - id: repo-scanner
-    name: Code Dependency Scanner
-    category: CODE INTELLIGENCE
-    description: Zero-server dependency tree scanner mapping repository relations.
-  - id: personal-ceo
-    name: Personal AI CEO Layer
-    category: AI EMPLOYEES
-    description: Top-level coordination, calendar sync, strategy, and personal assistance.
-  - id: cowork-desktop
-    name: Cowork Desktop Workspace
-    category: AI EMPLOYEES
-    description: Local GUI container environment for cooperative AI agent workers.
-  - id: mvp-app-factory
-    name: Rapid MVP App Factory
-    category: APP FACTORY
-    description: Generates database-backed applications from standard text descriptions.
-  - id: process-orchestrator
-    name: BPMN Process Orchestrator
-    category: AUTOMATION
-    description: Formally maps and drives multi-step approvals and integrations.
-  - id: aws-simulation
-    name: Local AWS Cloud Simulator
-    category: INFRASTRUCTURE
-    description: Emulates AWS endpoints (Lambda, S3, DynamoDB) locally for cost-free tests.
-  - id: pen-tester
-    name: Penetration Testing Agent
-    category: SECURITY
-    description: Autonomous scanning of open ports and credentials verification.
-  - id: second-brain-sync
-    name: Second Brain Sync
-    category: DATA MEMORY
-    description: Synchronizes personal notes, wikis, and markdown documents into agent context.
-  - id: meeting-transcriber
-    name: Meeting Transcription & Summary
-    category: VOICE
-    description: Audio diarization, speaker detection, and action item summary generation.
-  - id: cctv-vision
-    name: CCTV Object Detection
-    category: COMPUTER VISION
-    description: Parses video streams for people, objects, and activities locally.
-  - id: landing-frontends
-    name: Venture Presentation Frontends
-    category: VENTURE FRONTENDS
-    description: Static and dynamic web landing layouts for launching ventures.
-  - id: course-generator
-    name: AI Course Generator
-    category: APP FACTORY
-    description: Generates complete multimedia-ready courses, slide decks, and quiz materials based on learning science.
-
+- id: local-model-gateway
+  name: Local AI Model Gateway
+  category: LOCAL AI
+  description: Gateways for accessing local models privately on offline machines.
+- id: private-api-layer
+  name: Private AI API Layer
+  category: LOCAL AI
+  description: OpenAI-compatible REST server wrapping local models.
+- id: hardware-acceleration
+  name: NPU/GPU Acceleration
+  category: LOCAL AI
+  description: Optimization hooks for Apple Silicon, NVIDIA CUDA, and AMD NPU hardware.
+- id: software-brain
+  name: Software Engineering Brain
+  category: CODE INTELLIGENCE
+  description: Semantic codebase graphing, impact assessment, and change tracking.
+- id: repo-scanner
+  name: Code Dependency Scanner
+  category: CODE INTELLIGENCE
+  description: Zero-server dependency tree scanner mapping repository relations.
+- id: personal-ceo
+  name: Personal AI CEO Layer
+  category: AI EMPLOYEES
+  description: Top-level coordination, calendar sync, strategy, and personal assistance.
+- id: cowork-desktop
+  name: Cowork Desktop Workspace
+  category: AI EMPLOYEES
+  description: Local GUI container environment for cooperative AI agent workers.
+- id: mvp-app-factory
+  name: Rapid MVP App Factory
+  category: APP FACTORY
+  description: Generates database-backed applications from standard text descriptions.
+- id: process-orchestrator
+  name: BPMN Process Orchestrator
+  category: AUTOMATION
+  description: Formally maps and drives multi-step approvals and integrations.
+- id: aws-simulation
+  name: Local AWS Cloud Simulator
+  category: INFRASTRUCTURE
+  description: Emulates AWS endpoints (Lambda, S3, DynamoDB) locally for cost-free
+    tests.
+- id: pen-tester
+  name: Penetration Testing Agent
+  category: SECURITY
+  description: Autonomous scanning of open ports and credentials verification.
+- id: second-brain-sync
+  name: Second Brain Sync
+  category: DATA MEMORY
+  description: Synchronizes personal notes, wikis, and markdown documents into agent
+    context.
+- id: meeting-transcriber
+  name: Meeting Transcription & Summary
+  category: VOICE
+  description: Audio diarization, speaker detection, and action item summary generation.
+- id: cctv-vision
+  name: CCTV Object Detection
+  category: COMPUTER VISION
+  description: Parses video streams for people, objects, and activities locally.
+- id: landing-frontends
+  name: Venture Presentation Frontends
+  category: VENTURE FRONTENDS
+  description: Static and dynamic web landing layouts for launching ventures.
+- id: course-generator
+  name: AI Course Generator
+  category: APP FACTORY
+  description: Generates complete multimedia-ready courses, slide decks, and quiz
+    materials based on learning science.
+- id: stealth-browsing
+  name: Stealth Agentic Browsing
+  category: COMPUTER VISION
+  description: Playwright/stealth spoofed browser execution for automated data extraction.
+- id: agent-sandbox-isolation
+  name: Secure Agent Sandbox
+  category: SECURITY
+  description: Filesystem and network command isolation sandbox for AI agents.
+- id: real-time-cost-tracking
+  name: Real-Time Token Cost Tracking
+  category: INFRASTRUCTURE
+  description: OpenTelemetry cost logging and budget limits for multi-agent execution.
+- id: agent-consensus-memory
+  name: Consensus-Based Agent Memory
+  category: DATA MEMORY
+  description: Byzantine Fault Tolerant shared memory systems for collaborative agent
+    fleets.
+- id: repository-graphing
+  name: Repository Graphing
+  category: CODE INTELLIGENCE
+  description: Repository graph generation and visual dependency mappings.
+- id: semantic-understanding
+  name: Semantic Understanding
+  category: CODE INTELLIGENCE
+  description: Semantic code understanding, explanation, and developer onboarding.
+- id: distributed-inference
+  name: Distributed Inference
+  category: LOCAL AI
+  description: Distributed inference across multiple devices locally.
+- id: document-preprocessing
+  name: Document Preprocessing
+  category: AUTOMATION
+  description: Document conversion, Stirling PDF preprocessing, and metadata extraction.
+- id: storage-optimization
+  name: Storage Optimization
+  category: INFRASTRUCTURE
+  description: Disk discovery, duplicate tracking, and storage optimization.
+- id: thinking-routing
+  name: Dynamic LLM Routing
+  category: LOCAL AI
+  description: Dynamic LLM load-balancer and thinking budget routing engine.

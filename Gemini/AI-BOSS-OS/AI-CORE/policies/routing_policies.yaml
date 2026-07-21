@@ -1,0 +1,24 @@
+routing_policies:
+  auto:
+    - anthropic/claude-3-5-sonnet
+    - openai/gpt-4o
+    - ollama/qwen2.5-coder-32b
+  auto/coding:
+    - anthropic/claude-3-5-sonnet
+    - deepseek/deepseek-coder
+    - ollama/qwen2.5-coder-32b
+  auto/smart:
+    - anthropic/claude-3-5-sonnet
+    - openai/gpt-4o
+    - ollama/deepseek-r1
+  auto/cheap:
+    - deepseek/deepseek-chat
+    - openai/gpt-4o-mini
+    - ollama/llama3-8b
+  auto/fast:
+    - openai/gpt-4o-mini
+    - anthropic/claude-3-5-haiku
+    - ollama/qwen2.5-coder-7b
+  auto/offline:
+    - ollama/qwen2.5-coder-32b
+    - ollama/llama3-8b

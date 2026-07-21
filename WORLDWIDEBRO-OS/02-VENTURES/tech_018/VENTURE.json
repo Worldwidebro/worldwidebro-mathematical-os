@@ -1,0 +1,17 @@
+{
+  "business_id": "TECH-018",
+  "business_name": "Text-to-Speech-AI",
+  "sector": "technology",
+  "status": "mvp",
+  "stage": "development",
+  "capabilities": [
+    "Natural TTS",
+    "Voice Cloning",
+    "Real-time Synthesis"
+  ],
+  "revenue": {
+    "model": "API Usage-Based",
+    "monthly_target": 12000
+  },
+  "created_at": "2026-07-16T01:02:33.201808"
+}

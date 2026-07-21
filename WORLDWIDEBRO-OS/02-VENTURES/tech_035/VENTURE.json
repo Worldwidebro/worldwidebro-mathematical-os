@@ -1,0 +1,17 @@
+{
+  "business_id": "TECH-035",
+  "business_name": "Cloud-Management-AI",
+  "sector": "technology",
+  "status": "mvp",
+  "stage": "development",
+  "capabilities": [
+    "Multi-cloud Orchestration",
+    "Cost Optimization",
+    "Resource Scaling"
+  ],
+  "revenue": {
+    "model": "SaaS",
+    "monthly_target": 10000
+  },
+  "created_at": "2026-07-16T01:02:33.202266"
+}

@@ -1,0 +1,34 @@
+Subject: Scalable Partnership Inquiries — 008-Business-Formation-Services
+
+Hello [Prospect Name],
+
+My name is [My Name] representing Winners Circle WC LLC. I am reaching out regarding our automated service portfolio under FIN-008-Business-Formation-Services. 
+
+We provide productized integrations and support systems specifically tailored for the Sales & Billing department. Below is an outline of our pricing and structure:
+
+# FIN Sales Scripts — Accounting & Tax Outreach
+
+**Use:** Acquiring small business owners, contractors, and startups for automated bookkeeping or tax audits.
+**Pairs with:** `FIN-CAPABILITY-STATEMENT.md` · `FIN-FORMATION-CREDENTIAL-TRACKER.md`.
+
+---
+
+## 1) COLD CALL SCRIPT (owner / operations director)
+> "Hi [Name], this is [Rep Name] with Business Formation Services. I'm calling because we work with contractors and small business owners in the Charlotte area to automate their weekly bookkeeping and catch missing tax deductions. I'm not selling bookkeeping software today—we ran a tax deduction check sheet for [Industry Type] showing the 5 most missed write-offs for 2026. Can I email that checklist to you or your operations manager?"
+
+---
+
+## 2) EMAIL SEQUENCE
+
+### Touch 1 — Deduction Finder (Day 0)
+**Subject:** Top 5 missed deductions for [Industry Type] businesses
+
+> Hi [Name],
+>
+> Most [Industry Type] owners in Mecklenburg County lose $5,000+ annually in tax write-offs simply because... (Extracted from local script templates)
+
+If you are open to reviewing a custom presentation deck or scheduling a brief alignment call, please reply to this email.
+
+Best regards,
+Operations Lead
+Winners Circle WC LLC

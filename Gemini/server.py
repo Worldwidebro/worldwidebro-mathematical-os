@@ -2,6 +2,8 @@ import http.server
 import socketserver
 import json
 import os
+import sys
+import asyncio
 import shutil
 import zipfile
 import csv
@@ -52,6 +54,10 @@ class OperationsHTTPHandler(http.server.SimpleHTTPRequestHandler):
             self.handle_get_yaml_registry("agents.yaml")
         elif path == "/api/registry/integrations":
             self.handle_get_yaml_registry("integrations.yaml")
+        elif path == "/api/registry/frameworks":
+            self.handle_get_yaml_registry("frameworks.yaml")
+        elif path == "/api/registry/models":
+            self.handle_get_yaml_registry("models.yaml")
         elif path == "/api/graph/data":
             self.handle_get_graph_data()
         elif path == "/api/courses":
@@ -60,6 +66,17 @@ class OperationsHTTPHandler(http.server.SimpleHTTPRequestHandler):
             query_params = parse_qs(parsed_path.query)
             course_id = query_params.get("id", [None])[0]
             self.handle_get_course_status(course_id)
+        elif path == "/api/search":
+            self.handle_get_search()
+        elif path == "/api/dependencies":
+            self.handle_get_dependencies()
+        elif path == "/api/infrastructure/metrics":
+            self.handle_get_infrastructure_metrics()
+        elif path == "/api/venture/ideate":
+            query_params = parse_qs(parsed_path.query)
+            sector = query_params.get("sector", [""])[0]
+            gap = query_params.get("gap", [""])[0]
+            self.handle_get_venture_ideate(sector, gap)
         else:
             # Fallback to serving static files from workspace/Gemini
             os.chdir(GEMINI_DIR)
@@ -85,6 +102,12 @@ class OperationsHTTPHandler(http.server.SimpleHTTPRequestHandler):
             self.handle_post_move(body)
         elif path == "/api/pdf":
             self.handle_post_pdf(body)
+        elif path == "/api/outreach":
+            self.handle_post_outreach(body)
+        elif path == "/api/compile/playbook":
+            self.handle_compile_playbook(body)
+        elif path == "/api/route":
+            self.handle_post_route(body)
         elif path == "/api/leads":
             self.handle_post_leads(body)
         elif path == "/api/audit":
@@ -93,8 +116,26 @@ class OperationsHTTPHandler(http.server.SimpleHTTPRequestHandler):
             self.handle_post_execute(body)
         elif path == "/api/agent/run":
             self.handle_post_agent_run(body)
+        elif path == "/api/narrative/run":
+            self.handle_post_narrative_run(body)
         elif path == "/api/course/generate":
             self.handle_post_course_generate(body)
+        elif path == "/api/scan":
+            self.handle_post_scan(body)
+        elif path == "/api/impact":
+            self.handle_post_impact(body)
+        elif path == "/api/intelligence":
+            self.handle_post_intelligence(body)
+        elif path == "/api/knowledge/ask":
+            self.handle_post_knowledge_ask(body)
+        elif path == "/api/agent/execute":
+            self.handle_post_agent_execute(body)
+        elif path == "/api/workflow/run":
+            self.handle_post_workflow_run(body)
+        elif path == "/api/governance/check":
+            self.handle_post_governance_check(body)
+        elif path == "/api/venture/spawn":
+            self.handle_post_venture_spawn(body)
         else:
             self.send_json_response(404, {"error": "Endpoint not found"})
 
@@ -267,6 +308,82 @@ class OperationsHTTPHandler(http.server.SimpleHTTPRequestHandler):
             })
         except Exception as e:
             self.send_json_response(500, {"error": f"Move file operation failed: {str(e)}"})
+            
+    def handle_post_outreach(self, body):
+        try:
+            import subprocess
+            result = subprocess.run(
+                ["python3", "/Users/acebless/Documents/WORLDWIDEBRO-OS/04-OPERATIONS/compile_outreach.py"],
+                capture_output=True,
+                text=True,
+                check=True
+            )
+            self.send_json_response(200, {
+                "message": "Zero-Token outreach packages compiled successfully.",
+                "stdout": result.stdout[:2000]
+            })
+        except Exception as e:
+            self.send_json_response(500, {"error": f"Outreach compilation failed: {str(e)}"})
+            
+    def handle_compile_playbook(self, body):
+        venture_dir = body.get("venture_dir")
+        output_path = body.get("output_path")
+        if not venture_dir or not output_path:
+            self.send_json_response(400, {"error": "Missing 'venture_dir' or 'output_path' parameter"})
+            return
+            
+        try:
+            import subprocess
+            result = subprocess.run(
+                ["python3", "/Users/acebless/Documents/WORLDWIDEBRO-OS/04-OPERATIONS/compile_playbook_pdf.py", venture_dir, output_path],
+                capture_output=True,
+                text=True,
+                check=True
+            )
+            self.send_json_response(200, {
+                "message": "Unified PDF Playbook compiled successfully.",
+                "stdout": result.stdout[:2000]
+            })
+        except Exception as e:
+            self.send_json_response(500, {"error": f"Playbook compilation failed: {str(e)}"})
+            
+    def handle_post_route(self, body):
+        mode = body.get("mode")
+        if not mode:
+            self.send_json_response(400, {"error": "Missing 'mode' parameter"})
+            return
+            
+        try:
+            import subprocess
+            if mode == "logistics":
+                source = body.get("source")
+                destination = body.get("destination")
+                if not source or not destination:
+                    self.send_json_response(400, {"error": "Missing 'source' or 'destination' parameter for logistics"})
+                    return
+                cmd = ["python3", "/Users/acebless/Documents/WORLDWIDEBRO-OS/05-AGENTS/orchestration/omni_route.py", "logistics", source, destination]
+            elif mode == "balance":
+                task_type = body.get("task_type")
+                if not task_type:
+                    self.send_json_response(400, {"error": "Missing 'task_type' parameter for balance"})
+                    return
+                cmd = ["python3", "/Users/acebless/Documents/WORLDWIDEBRO-OS/05-AGENTS/orchestration/omni_route.py", "balance", task_type]
+            else:
+                self.send_json_response(400, {"error": f"Invalid mode: {mode}"})
+                return
+                
+            result = subprocess.run(cmd, capture_output=True, text=True, check=True)
+            # Find the JSON block inside stdout
+            stdout_str = result.stdout.strip()
+            # If there are debug prints before JSON, extract the JSON block
+            if "{" in stdout_str:
+                json_start = stdout_str.find("{")
+                json_str = stdout_str[json_start:]
+                self.send_json_response(200, json.loads(json_str))
+            else:
+                self.send_json_response(200, {"message": stdout_str})
+        except Exception as e:
+            self.send_json_response(500, {"error": f"OmniRoute routing failed: {str(e)}"})
 
     def handle_post_pdf(self, body):
         try:
@@ -500,6 +617,218 @@ class OperationsHTTPHandler(http.server.SimpleHTTPRequestHandler):
             self.send_json_response(200, res)
         except Exception as e:
             self.send_json_response(500, {"error": f"Agent processing failed: {str(e)}"})
+
+    def handle_post_narrative_run(self, body):
+        text = body.get("text", "")
+        voice = body.get("voice", "visionary")
+        role = body.get("role", "copywriter")
+        framework = body.get("framework", "direct")
+        venture = body.get("venture", "")
+        
+        try:
+            sys.path.append(os.path.join(GEMINI_DIR, "AI-BOSS-OS", "WRITING-ENGINE"))
+            import run_narrative
+            # Reload module in case it was modified
+            import importlib
+            importlib.reload(run_narrative)
+            res_text = run_narrative.run_narrative_engine(text, voice, role, framework, venture)
+            self.send_json_response(200, {"status": "success", "result": res_text})
+        except Exception as e:
+            self.send_json_response(500, {"error": f"Narrative engine execution failed: {str(e)}"})
+
+    def handle_get_search(self):
+        parsed_path = urlparse(self.path)
+        query_params = parse_qs(parsed_path.query)
+        q = query_params.get("q", [""])[0]
+        limit = int(query_params.get("limit", [10])[0])
+        try:
+            sys.path.append(os.path.join(GEMINI_DIR, "services"))
+            from repository_intelligence import RepoIndexer
+            indexer = RepoIndexer()
+            res = indexer.search(q, limit)
+            self.send_json_response(200, {"results": res})
+        except Exception as e:
+            self.send_json_response(500, {"error": f"Search failed: {str(e)}"})
+
+    def handle_get_dependencies(self):
+        parsed_path = urlparse(self.path)
+        query_params = parse_qs(parsed_path.query)
+        repo = query_params.get("repo", [""])[0]
+        try:
+            from neo4j import GraphDatabase
+            sys.path.append(os.path.join(GEMINI_DIR, "services"))
+            from repository_intelligence import NEO4J_URI, NEO4J_AUTH
+            driver = GraphDatabase.driver(NEO4J_URI, auth=NEO4J_AUTH)
+            with driver.session() as session:
+                query = """
+                MATCH (r:Repository {name: $repo})-[:CONTAINS]->(f:File)
+                OPTIONAL MATCH (f)-[d:DEPENDS_ON]->(dep)
+                RETURN f.path as file, collect(dep.path) as deps
+                """
+                if not repo:
+                    query = """
+                    MATCH (r:Repository)-[:IMPLEMENTS]->(c:Capability)
+                    RETURN r.name as repo, collect(c.name) as capabilities
+                    LIMIT 50
+                    """
+                    result = session.run(query)
+                    data = [{"repo": r["repo"], "capabilities": r["capabilities"]} for r in result]
+                else:
+                    result = session.run(query, repo=repo)
+                    data = [{"file": r["file"], "dependencies": r["deps"]} for r in result]
+            driver.close()
+            self.send_json_response(200, {"dependencies": data})
+        except Exception as e:
+            self.send_json_response(200, {"dependencies": [], "message": f"Unavailable: {str(e)}"})
+
+    def handle_get_infrastructure_metrics(self):
+        try:
+            sys.path.append(os.path.join(GEMINI_DIR, "services"))
+            from infrastructure_engine import InfrastructureEngine
+            engine = InfrastructureEngine()
+            self.send_json_response(200, engine.get_summary())
+        except Exception as e:
+            self.send_json_response(500, {"error": f"Failed to get metrics: {str(e)}"})
+
+    def handle_get_venture_ideate(self, sector, gap):
+        try:
+            sys.path.append(os.path.join(GEMINI_DIR, "services"))
+            from venture_factory import VentureFactoryEngine
+            v_factory = VentureFactoryEngine()
+            res = v_factory.ideate(sector, gap)
+            self.send_json_response(200, {"ideas": res})
+        except Exception as e:
+            self.send_json_response(500, {"error": f"Ideation failed: {str(e)}"})
+
+    def handle_post_scan(self, body):
+        repo_path = body.get("repo_path", "")
+        repo_name = body.get("repo_name", "")
+        try:
+            sys.path.append(os.path.join(GEMINI_DIR, "services"))
+            from repository_intelligence import RepoScanner, RepoIndexer, KnowledgeGraphBuilder
+            scanner = RepoScanner(repo_path)
+            scan_result = scanner.scan()
+            
+            if "error" not in scan_result:
+                indexer = RepoIndexer()
+                for file in scan_result.get("files", []):
+                    indexer.index_file(file, repo_name)
+                    
+                graph = KnowledgeGraphBuilder()
+                graph.build_from_scan(scan_result, repo_name)
+                
+            self.send_json_response(200, scan_result)
+        except Exception as e:
+            self.send_json_response(500, {"error": f"Scan failed: {str(e)}"})
+
+    def handle_post_impact(self, body):
+        file_path = body.get("file_path", "")
+        try:
+            sys.path.append(os.path.join(GEMINI_DIR, "services"))
+            from repository_intelligence import KnowledgeGraphBuilder
+            graph = KnowledgeGraphBuilder()
+            dependents = graph.get_dependents(file_path)
+            self.send_json_response(200, {"file_path": file_path, "dependents": dependents})
+        except Exception as e:
+            self.send_json_response(500, {"error": f"Impact analysis failed: {str(e)}"})
+
+    def handle_post_intelligence(self, body):
+        query = body.get("query", "")
+        try:
+            sys.path.append(os.path.join(GEMINI_DIR, "services"))
+            from repository_intelligence import RepoIndexer
+            indexer = RepoIndexer()
+            hits = indexer.search(query, limit=5)
+            self.send_json_response(200, {"query": query, "results": hits})
+        except Exception as e:
+            self.send_json_response(500, {"error": f"Code intelligence query failed: {str(e)}"})
+
+    def handle_post_knowledge_ask(self, body):
+        query = body.get("query", "")
+        context_sources = body.get("context_sources")
+        use_rag = body.get("use_rag", True)
+        try:
+            sys.path.append(os.path.join(GEMINI_DIR, "services"))
+            from knowledge_engine import KnowledgeEngine
+            engine = KnowledgeEngine()
+            res = engine.ask(query, context_sources=context_sources, use_rag=use_rag)
+            self.send_json_response(200, res)
+        except Exception as e:
+            self.send_json_response(500, {"error": f"RAG query failed: {str(e)}"})
+
+    def handle_post_agent_execute(self, body):
+        agent_name = body.get("agent_name", "")
+        task_payload = body.get("task_payload", {})
+        task_context = body.get("task_context", {})
+        try:
+            sys.path.append(os.path.join(GEMINI_DIR, "services"))
+            from agent_engine import SimpleLangAgent, AgentTask, AgentRegistry
+            agent_info = AgentRegistry.get_agent_info(agent_name) or {}
+            capabilities = agent_info.get("capabilities", [])
+            
+            agent = SimpleLangAgent(agent_name, capabilities)
+            task = AgentTask(
+                id=f"task_{hash(agent_name)}",
+                payload=task_payload,
+                context=task_context
+            )
+            
+            loop = asyncio.new_event_loop()
+            asyncio.set_event_loop(loop)
+            res = loop.run_until_complete(agent.execute(task))
+            loop.close()
+            
+            self.send_json_response(200, res)
+        except Exception as e:
+            self.send_json_response(500, {"error": f"Agent task execution failed: {str(e)}"})
+
+    def handle_post_workflow_run(self, body):
+        workflow_yaml = body.get("workflow_yaml", "")
+        try:
+            sys.path.append(os.path.join(GEMINI_DIR, "services"))
+            from orchestration_engine import WorkflowDefinition, WorkflowRunner
+            
+            wd = WorkflowDefinition(workflow_yaml)
+            runner = WorkflowRunner()
+            
+            loop = asyncio.new_event_loop()
+            asyncio.set_event_loop(loop)
+            res = loop.run_until_complete(runner.run(wd))
+            loop.close()
+            
+            self.send_json_response(200, res)
+        except Exception as e:
+            self.send_json_response(500, {"error": f"Workflow run failed: {str(e)}"})
+
+    def handle_post_governance_check(self, body):
+        user_role = body.get("user_role", "")
+        action = body.get("action", "")
+        resource_sector = body.get("resource_sector", "")
+        details = body.get("details", {})
+        try:
+            sys.path.append(os.path.join(GEMINI_DIR, "services"))
+            from governance_engine import GovernanceEngine
+            gov = GovernanceEngine()
+            res = gov.check_policy(user_role, action, resource_sector, details)
+            gov.log_decision(user_role, action, f"sector:{resource_sector}", "allowed" if res["allowed"] else "denied", res["reason"])
+            self.send_json_response(200, res)
+        except Exception as e:
+            self.send_json_response(500, {"error": f"Governance check failed: {str(e)}"})
+
+    def handle_post_venture_spawn(self, body):
+        name = body.get("name", "")
+        sector = body.get("sector", "")
+        location = body.get("location")
+        target = body.get("target")
+        revenue_goal = body.get("revenue_goal")
+        try:
+            sys.path.append(os.path.join(GEMINI_DIR, "services"))
+            from venture_factory import VentureFactoryEngine
+            v_factory = VentureFactoryEngine()
+            res = v_factory.spawn_venture(name, sector, location, target, revenue_goal)
+            self.send_json_response(200, res)
+        except Exception as e:
+            self.send_json_response(500, {"error": f"Venture spawn failed: {str(e)}"})
 
     def handle_get_yaml_registry(self, filename):
         filepath = os.path.join(GEMINI_DIR, "registry", filename)

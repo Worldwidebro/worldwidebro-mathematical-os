@@ -1,0 +1,52 @@
+[
+  {
+    "venture_id": "TECH-016",
+    "status": "created",
+    "revenue": 40000
+  },
+  {
+    "venture_id": "TECH-040",
+    "status": "created",
+    "revenue": 35000
+  },
+  {
+    "venture_id": "TECH-047",
+    "status": "created",
+    "revenue": 15000
+  },
+  {
+    "venture_id": "TECH-014",
+    "status": "created",
+    "revenue": 12000
+  },
+  {
+    "venture_id": "TECH-017",
+    "status": "created",
+    "revenue": 12000
+  },
+  {
+    "venture_id": "TECH-018",
+    "status": "created",
+    "revenue": 12000
+  },
+  {
+    "venture_id": "TECH-039",
+    "status": "created",
+    "revenue": 5000
+  },
+  {
+    "venture_id": "TECH-054",
+    "status": "created",
+    "revenue": 8000
+  },
+  {
+    "venture_id": "TECH-035",
+    "status": "created",
+    "revenue": 10000
+  },
+  {
+    "venture_id": "TECH-051",
+    "status": "created",
+    "revenue": 10000
+  }
+]

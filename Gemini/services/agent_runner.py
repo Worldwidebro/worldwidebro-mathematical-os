@@ -100,7 +100,21 @@ def ad_compliance_audit(campaign_id: str) -> str:
     except Exception as e:
         return json.dumps({"error": f"Campaign audit runner failed: {str(e)}"})
 
-ALL_TOOLS = [sync_obsidian_graph, repository_scanner, run_pen_tester, ad_compliance_audit]
+@tool
+def search_starred_repositories(query: str, k: int = 12) -> str:
+    """Semantically search the 1,647 starred and owned repositories in our local Qdrant index.
+    Returns matching repositories, their category, similarity score, capabilities (from Neo4j), and summary.
+    Use this to find codebases that implement specific tasks or capabilities.
+    """
+    sys.path.append("/Users/acebless/Documents")
+    try:
+        import retrieve
+        res = retrieve.retrieve(query, k=k)
+        return json.dumps(res, indent=2)
+    except Exception as e:
+        return json.dumps({"error": f"Search failed: {str(e)}"})
+
+ALL_TOOLS = [sync_obsidian_graph, repository_scanner, run_pen_tester, ad_compliance_audit, search_starred_repositories]
 
 def run_agent(agent_name: str, prompt: str):
     logs = []
@@ -176,7 +190,7 @@ def run_agent(agent_name: str, prompt: str):
     )
 
     logs.append("🧠 Compiling ReAct agent graph...")
-    agent_graph = create_react_agent(model, tools=ALL_TOOLS, state_modifier=system_prompt)
+    agent_graph = create_react_agent(model, tools=ALL_TOOLS, prompt=system_prompt)
 
     logs.append("🚀 Executing agentic cognitive loop...")
     final_response = ""

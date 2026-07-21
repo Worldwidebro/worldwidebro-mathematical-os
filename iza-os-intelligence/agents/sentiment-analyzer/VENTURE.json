@@ -1,0 +1,85 @@
+{
+  "business_id": "TECH-014-Sentiment-Analyzer",
+  "business_name": "Sentiment Analyzer",
+  "sector": "technology-ai",
+  "development_stage": "mvp",
+  "github_repo": "Worldwidebro/edu-024-language-learning-ai",
+  "dashboard_url": "https://venture-hub-pi.vercel.app/ventures/tech-014-sentiment-analyzer",
+  "capabilities": [
+    "Sentiment Analysis",
+    "Emotion Detection",
+    "Intent Classification",
+    "Multi-language Support",
+    "Real-time Streaming"
+  ],
+  "entity": {
+    "name": "Sentiment Analyzer Inc",
+    "type": "LLC",
+    "state": "DE",
+    "ein": null,
+    "status": "pending_formation"
+  },
+  "first_dollar": {
+    "action": "SaaS dashboard launch with free tier (1K texts/month) → charge $29/mo starter plan → target 50 trial signups",
+    "price": 29,
+    "platform": "Stripe",
+    "days_to_revenue": 21
+  },
+  "icp": {
+    "title": "Marketing teams, customer support teams, brand monitoring agencies",
+    "pain_point": "Need to understand customer sentiment at scale without hiring analysts",
+    "platform": "LinkedIn, Product Hunt, Slack communities",
+    "opening_line": "Sentiment Analyzer: Understand 10K customer messages/month for $29"
+  },
+  "revenue": {
+    "monthly_target": 15000,
+    "model": "SaaS subscription with volume-based tiers",
+    "pricing_tiers": {
+      "starter": {
+        "texts_per_month": 10000,
+        "price": 29
+      },
+      "professional": {
+        "texts_per_month": 100000,
+        "price": 199
+      },
+      "enterprise": {
+        "texts_per_month": "unlimited",
+        "price": "custom"
+      }
+    }
+  },
+  "tax": {
+    "classification": "LLC_sole",
+    "return_type": "Schedule_C",
+    "year": 2026,
+    "estimated_annual": 180000
+  },
+  "grants": [],
+  "agents": {
+    "primary": "qwen-agent",
+    "tech": "claude-code",
+    "approval": "human-antwuan"
+  },
+  "supabase": {
+    "project_id": "rhlkjelglvurowdalrgh",
+    "api_key_env": "SUPABASE_ANON_KEY",
+    "tables": [
+      "users",
+      "subscriptions",
+      "text_submissions",
+      "sentiment_results",
+      "analytics"
+    ]
+  },
+  "deployment": {
+    "platform": "Vercel",
+    "env_vars": [
+      "SUPABASE_URL",
+      "SUPABASE_ANON_KEY",
+      "STRIPE_SECRET_KEY",
+      "HF_API_KEY"
+    ]
+  },
+  "last_updated": "2026-07-15T00:00:00.000Z"
+}

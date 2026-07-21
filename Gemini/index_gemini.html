@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An interactive portal and complete guide to official and community resources for Gemini CLI. Search, filter, and bookmark templates, extensions, cookbooks, and prompts.">
+  <title>WORLDWIDEBRO-OS Operations Dashboard</title>
+  
+  <!-- Modern Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Global Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- App Header -->
+  <header class="app-header" id="appHeader">
+    <div class="logo-container">
+      <div class="logo-icon" aria-hidden="true">
+        <!-- Sparkle SVG (Gemini logo feel) -->
+        <svg viewBox="0 0 24 24">
+          <path d="M12 2L14.85 9.15L22 12L14.85 14.85L12 22L9.15 14.85L2 12L9.15 9.15L12 2Z" />
+        </svg>
+      </div>
+      <div class="logo-text">WORLDWIDEBRO-OS</div>
+    </div>
+    
+    <div class="header-actions">
+      <button class="btn-icon" id="themeToggle" title="Toggle Light/Dark Theme" aria-label="Toggle theme">
+        <!-- Icon loaded dynamically in JS -->
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="app-container">
+    
+    <!-- Hero Header -->
+    <section class="hero-section">
+      <h1>Operations <span>Control Dashboard</span></h1>
+      <p>System capabilities registry, active venture repositories, campaign auditing, and agentic workspace management tools.</p>
+    </section>
+
+    <!-- Global Main Navigation Tabs -->
+    <nav class="main-nav" role="tablist">
+      <button class="nav-tab active" data-target="resourcesView" role="tab" aria-selected="true">📚 Gemini CLI Guide</button>
+      <button class="nav-tab" data-target="capabilitiesView" role="tab" aria-selected="false">⚙️ Capability Registry</button>
+      <button class="nav-tab" data-target="agentsView" role="tab" aria-selected="false">🤖 Agent Factory</button>
+      <button class="nav-tab" data-target="graphView" role="tab" aria-selected="false">📊 Capability Graph</button>
+      <button class="nav-tab" data-target="repositoriesView" role="tab" aria-selected="false">🏢 Venture Registry</button>
+      <button class="nav-tab" data-target="aipView" role="tab" aria-selected="false">🤖 AIP Control Plane</button>
+      <button class="nav-tab" data-target="operationsView" role="tab" aria-selected="false">🛠️ File Ops & Audits</button>
+      <button class="nav-tab" data-target="courseBuilderView" role="tab" aria-selected="false">🎓 Course Builder</button>
+    </nav>
+
+    <!-- Stats Dashboard Grid -->
+    <section class="stats-grid" aria-label="Dashboard Stats">
+      <div class="stat-card">
+        <div class="stat-val" id="totalCount">0</div>
+        <div class="stat-lbl" id="statLabel1">Total Resources</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val" id="categoryCount">0</div>
+        <div class="stat-lbl" id="statLabel2">Unique Categories</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-val" id="bookmarksCount">0</div>
+        <div class="stat-lbl" id="statLabel3">My Bookmarks</div>
+      </div>
+    </section>
+
+    <!-- VIEW 1: Gemini CLI Resources Guide -->
+    <div id="resourcesView" class="view-panel active">
+      <!-- Search and Filters Hub -->
+      <section class="search-filter-hub" aria-label="Search and filter options">
+        <!-- Search Input -->
+        <div class="search-wrapper">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" class="search-input" id="searchInput" placeholder="Search resources, topics, authors, or descriptions..." aria-label="Search resources">
+          <button class="search-clear" id="searchClear" aria-label="Clear search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Categories Navigation Pills -->
+        <div class="tabs-container" id="tabsContainer" role="tablist">
+          <!-- Rendered dynamically in JS -->
+        </div>
+      </section>
+
+      <!-- Resources Cards Grid -->
+      <section class="cards-grid" id="cardsGrid" aria-label="Resources Grid">
+        <!-- Rendered dynamically in JS -->
+      </section>
+    </div>
+
+    <!-- VIEW 2: System Capabilities Registry -->
+    <div id="capabilitiesView" class="view-panel">
+      <section class="search-filter-hub">
+        <div class="search-wrapper">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" class="search-input" id="capabilitySearchInput" placeholder="Filter capabilities by name, category, or associated repositories..." aria-label="Search capabilities">
+        </div>
+      </section>
+
+      <section class="capabilities-container" id="capabilitiesContainer">
+        <!-- Injected dynamically in JS -->
+      </section>
+    </div>
+
+    <!-- VIEW 3: Agent Factory -->
+    <div id="agentsView" class="view-panel">
+      <section class="search-filter-hub">
+        <div class="search-wrapper">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" class="search-input" id="agentSearchInput" placeholder="Filter agents by name, role, department, or focus areas..." aria-label="Search agents">
+        </div>
+      </section>
+
+      <section class="agents-container" id="agentsContainer">
+        <!-- Injected dynamically in JS -->
+      </section>
+
+      <!-- Agent Execution Sandbox Panel -->
+      <section class="op-panel" style="margin-top: 32px; border-top: 1px solid var(--border-glass); padding-top: 32px;">
+        <h2>🤖 Agent Task Execution Sandbox</h2>
+        <p class="op-panel-desc">Submit instructions to internal C-Suite or Department agents. Watch them invoke local capabilities and scripts (Obsidian Sync, Repo Scanner, Port Probes) in real-time.</p>
+        
+        <div class="operations-grid" style="grid-template-columns: 1fr 1.2fr; gap: 24px; margin-top: 16px; display: grid;">
+          <!-- Left side: Select Agent and Prompt input -->
+          <div class="op-box">
+            <div class="form-group" style="margin-bottom: 16px;">
+              <label for="sandboxAgentSelect">Target Corporate Agent</label>
+              <select id="sandboxAgentSelect" class="search-input" style="width: 100%; border: 1px solid var(--border-glass); background: var(--bg-glass); color: var(--text-primary); margin-top: 8px; padding: 10px; border-radius: var(--radius-sm);">
+                <option value="CEO Agent">CEO Agent (Uses Obsidian Second Brain)</option>
+                <option value="CTO Agent">CTO Agent (Uses GitNexus Code Scanner)</option>
+                <option value="Compliance Agent">Compliance Agent (Uses METATRON Pen-Tester)</option>
+                <option value="CFO Agent">CFO Agent (Uses OpenBB Financial tools)</option>
+              </select>
+            </div>
+            <div class="form-group" style="margin-bottom: 16px;">
+              <label for="sandboxAgentPrompt">Task / Request Instruction</label>
+              <textarea id="sandboxAgentPrompt" placeholder="e.g. Audit open service ports, sync obsidian graph alignments, scan workspace packages..." style="width: 100%; height: 100px; padding: 10px; border-radius: var(--radius-sm); border: 1px solid var(--border-glass); background: var(--bg-glass); color: var(--text-primary); resize: vertical; margin-top: 8px; font-family: inherit; font-size: 0.9rem;"></textarea>
+            </div>
+            <button class="action-btn-primary" id="btnRunAgentSandbox" style="margin-top: 12px;">Execute Agent Sandbox Task</button>
+          </div>
+
+          <!-- Right side: Execution live monitor -->
+          <div class="audit-console" id="sandboxConsole" style="margin-top: 0; min-height: 250px;">
+            <div class="console-header">
+              <span>AGENT AGENTIC RUN CONSOLE</span>
+              <span class="console-status" id="sandboxStatus">IDLE</span>
+            </div>
+            <pre class="console-body" id="sandboxConsoleBody" style="max-height: 250px; overflow-y: auto;">Awaiting sandbox trigger...</pre>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- VIEW 4: Capability Graph Visualization -->
+    <div id="graphView" class="view-panel">
+      <div class="op-panel" style="margin-bottom: 24px;">
+        <h2>📊 Capability Graph Visualization</h2>
+        <p class="op-panel-desc">Interactive capability dependency mapping. Visualizes nodes linked by Cypher relationships.</p>
+        
+        <div class="graph-wrapper" style="background: rgba(0,0,0,0.3); border-radius: var(--radius-md); border: 1px solid var(--border-glass); padding: 24px; min-height: 450px; display: flex; align-items: center; justify-content: center; overflow: auto;">
+          <svg id="capabilityGraphSvg" width="900" height="420" style="overflow: visible;">
+            <!-- Rendered dynamically in JS -->
+          </svg>
+        </div>
+        <div class="box-desc" style="margin-top: 16px; padding: 12px; background: rgba(6, 182, 212, 0.1); border: 1px solid rgba(6, 182, 212, 0.2); border-radius: var(--radius-sm);">
+          <strong>🔮 Obsidian Knowledge Graph Integration:</strong> 
+          Your dashboard capability graph and local markdown vault are kept in sync via Supabase. 
+          You can view the live markdown dashboard at 
+          <a href="file:///Users/acebless/Documents/KNOWLEDGE-GRAPH-DASHBOARD.md" target="_blank" style="color: var(--accent-cyan); text-decoration: underline; font-weight: 600;">KNOWLEDGE-GRAPH-DASHBOARD.md</a>, 
+          or open your Obsidian vault and hit <code>Cmd+G</code> to explore the massive 11,000+ node visual wiki graph.
+        </div>
+      </div>
+    </div>
+
+    <!-- VIEW 5: Venture Registry -->
+    <div id="repositoriesView" class="view-panel">
+      <section class="search-filter-hub">
+        <div class="search-wrapper">
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" class="search-input" id="repositorySearchInput" placeholder="Filter repositories by name, sector, or status..." aria-label="Search repositories">
+        </div>
+      </section>
+
+      <div class="table-scroll-wrapper">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Repository Name</th>
+              <th>Venture ID</th>
+              <th>Sector</th>
+              <th>Status</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="repositoriesTableBody">
+            <!-- Injected dynamically in JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- VIEW 6: File Operations & Audits -->
+    <div id="operationsView" class="view-panel">
+      <div class="operations-grid">
+        <!-- Left Side: File Operations Controller -->
+        <div class="op-panel">
+          <h2>🛠️ Workspace File Controller</h2>
+          <p class="op-panel-desc">Execute server-side operations on folders and documents inside the workspace directory.</p>
+          
+          <!-- ZIP Tool -->
+          <div class="op-box">
+            <h3>🗜️ Archive Folder (ZIP)</h3>
+            <div class="form-group">
+              <label for="zipPath">Target Workspace Folder Path</label>
+              <input type="text" id="zipPath" placeholder="e.g. Gemini, WORLDWIDEBRO-OS/04-OPERATIONS">
+            </div>
+            <button class="action-btn-primary" id="btnRunZip">Run Zip Archive</button>
+          </div>
+
+          <!-- Mover Tool -->
+          <div class="op-box">
+            <h3>📦 Move Document File</h3>
+            <div class="form-group">
+              <label for="moveSrc">Source Path</label>
+              <input type="text" id="moveSrc" placeholder="e.g. Gemini/style.css">
+            </div>
+            <div class="form-group">
+              <label for="moveDest">Destination Path</label>
+              <input type="text" id="moveDest" placeholder="e.g. Gemini/archives/style.css">
+            </div>
+            <button class="action-btn-primary" id="btnRunMove">Move Document</button>
+          </div>
+
+          <!-- PDF Compiler Tool -->
+          <div class="op-box">
+            <h3>📄 Compile Capabilities Report (PDF)</h3>
+            <p class="box-desc">Compiles the active capability catalog vocabulary and venture registries into a formatted PDF using reportlab.</p>
+            <button class="action-btn-primary" id="btnRunPdf">Compile & Export PDF</button>
+          </div>
+
+          <!-- Obsidian & Graphify Sync -->
+          <div class="op-box">
+            <h3>⚡ Local OS Graph Syncing</h3>
+            <p class="box-desc">Execute Obsidian Note Syncing or run Graphify repository dependency injections directly against the Supabase backend database.</p>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+              <button class="action-btn-primary" id="btnRunObsidianSync">Sync Obsidian</button>
+              <button class="action-btn-primary" id="btnRunGraphify">Inject Graphify</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Audit Engine -->
+        <div class="op-panel">
+          <h2>⚖️ Campaign Manifest Audit Engine</h2>
+          <p class="op-panel-desc">Audit advertising campaign script claims against official regulatory criteria guidelines.</p>
+          
+          <div class="op-box">
+            <div class="form-group">
+              <label for="auditCampaignId">Campaign Folder Name</label>
+              <input type="text" id="auditCampaignId" placeholder="e.g. summer_promo_2026">
+            </div>
+            <button class="action-btn-primary" id="btnRunAudit">Run Compliance Audit</button>
+          </div>
+
+          <!-- Audit Output Console -->
+          <div class="audit-console" id="auditConsole">
+            <div class="console-header">
+              <span>AUDIT OUTPUT CONSOLE</span>
+              <span class="console-status" id="consoleStatus">IDLE</span>
+            </div>
+            <pre class="console-body" id="consoleBody">Awaiting campaign audit submission...</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- VIEW 7: Course Builder -->
+    <div id="courseBuilderView" class="view-panel">
+      <div class="operations-grid" style="grid-template-columns: 1fr 1.2fr; gap: 24px; display: grid;">
+        <!-- Left Side: Knowledge Blueprint Configuration -->
+        <div class="op-panel">
+          <h2>🎓 OS Knowledge Blueprint Compiler</h2>
+          <p class="op-panel-desc">Configure and compile structured, evidence-backed knowledge blueprints, operational SOPs, or feature specs.</p>
+          
+          <div class="op-box">
+            <div class="form-group" style="margin-bottom: 16px;">
+              <label for="blueprintType">Blueprint Compilation Type</label>
+              <select id="blueprintType" style="width: 100%; padding: 10px; border-radius: var(--radius-sm); border: 1px solid var(--border-glass); background: var(--bg-glass); color: var(--text-primary); margin-top: 8px;">
+                <option value="course">🎓 Academic Course Pack (ClassBuild)</option>
+                <option value="sop">🏢 Venture SOP &amp; Operations Manual</option>
+                <option value="prd">🛠️ Product PRD &amp; Tech Specifications</option>
+              </select>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 16px;">
+              <label for="courseSubject" id="lblSubject">Subject / Venture Topic</label>
+              <input type="text" id="courseSubject" placeholder="e.g. Cognitive Science of Learning, pressure washing biz, etc." style="width: 100%; padding: 10px; border-radius: var(--radius-sm); border: 1px solid var(--border-glass); background: var(--bg-glass); color: var(--text-primary); margin-top: 8px;">
+            </div>
+            
+            <div class="form-group" style="margin-bottom: 16px;">
+              <label for="courseAudience" id="lblAudience">Target Audience / Sector</label>
+              <select id="courseAudience" style="width: 100%; padding: 10px; border-radius: var(--radius-sm); border: 1px solid var(--border-glass); background: var(--bg-glass); color: var(--text-primary); margin-top: 8px;">
+                <option value="Undergraduate College">Undergraduate College Students</option>
+                <option value="Industry Professionals">Industry Professionals &amp; Executives</option>
+                <option value="Service Sector">Local Service Sector</option>
+                <option value="SaaS Engineering">Software / SaaS Engineering</option>
+                <option value="Graduate Level Research">Graduate Research Fellows</option>
+              </select>
+            </div>
+            
+            <div class="form-group" style="margin-bottom: 16px;">
+              <label for="courseChapters" id="lblChapters">Number of Chapters / Modules: <span id="courseChaptersVal">5</span></label>
+              <input type="range" id="courseChapters" min="1" max="10" value="5" style="width: 100%; margin-top: 8px;" oninput="document.getElementById('courseChaptersVal').innerText = this.value">
+            </div>
+
+            <div style="display: flex; gap: 16px; margin-bottom: 16px;">
+              <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                <input type="checkbox" id="courseNarration" style="cursor: pointer;">
+                <span>🎙️ Voice Narration (ElevenLabs)</span>
+              </label>
+              <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                <input type="checkbox" id="courseImages" style="cursor: pointer;">
+                <span>🎨 Visual Assets (OpenAI)</span>
+              </label>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 16px;">
+              <label for="courseDescription" id="lblDescription">Additional Context / RAG Seed Guidelines</label>
+              <textarea id="courseDescription" placeholder="e.g. Focus on spaced practice schedules, specific safety checklists, or Neo4j mapping." style="width: 100%; height: 80px; padding: 10px; border-radius: var(--radius-sm); border: 1px solid var(--border-glass); background: var(--bg-glass); color: var(--text-primary); resize: vertical; margin-top: 8px; font-family: inherit; font-size: 0.9rem;"></textarea>
+            </div>
+
+            <button class="action-btn-primary" id="btnRunCourseBuilder" style="width: 100%;">🚀 Compile Knowledge Blueprint</button>
+          </div>
+        </div>
+
+        <!-- Right Side: Live Build Progress Tracker & Logs -->
+        <div class="op-panel">
+          <h2>📊 Generation Pipeline &amp; Live Logs</h2>
+          <p class="op-panel-desc">Track setup, syllabus blueprints, source research, artifact build, and zip packaging.</p>
+
+          <!-- Generation Stages Progress UI -->
+          <div class="op-box" style="margin-bottom: 16px; display: none;" id="generationProgressBox">
+            <h3>⚙️ Active Pipeline Status: <span id="pipelineStatusText">Generating</span></h3>
+            <div style="width: 100%; background: rgba(255,255,255,0.1); height: 8px; border-radius: 4px; overflow: hidden; margin-top: 8px; margin-bottom: 16px;">
+              <div id="pipelineProgressBar" style="width: 0%; background: var(--accent-gradient); height: 100%; transition: width 0.3s ease;"></div>
+            </div>
+            
+            <div style="display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--text-muted);">
+              <span id="stage-setup">● Setup</span>
+              <span id="stage-syllabus">● Syllabus</span>
+              <span id="stage-research">● Research</span>
+              <span id="stage-build">● Build</span>
+              <span id="stage-export">● Export</span>
+            </div>
+          </div>
+
+          <!-- Console Terminal Output -->
+          <div class="audit-console" id="courseBuilderConsole" style="margin-top: 0; min-height: 250px;">
+            <div class="console-header">
+              <span>COURSE BUILDER ENGINE CONSOLE</span>
+              <span class="console-status" id="courseBuilderStatus">IDLE</span>
+            </div>
+            <pre class="console-body" id="courseBuilderConsoleBody" style="max-height: 250px; overflow-y: auto;">Awaiting course setup configuration blueprint...</pre>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section: Active / Existing Courses List -->
+      <section class="op-panel" style="margin-top: 32px; border-top: 1px solid var(--border-glass); padding-top: 32px;">
+        <h2>📚 Generated Course Catalog Directory</h2>
+        <p class="op-panel-desc">Access locally archived evidence-based courses, syllabus markdown files, chapter guides, and packaged resources.</p>
+        
+        <div class="table-scroll-wrapper" style="margin-top: 16px;">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Course ID</th>
+                <th>Subject / Topic</th>
+                <th>Target Audience</th>
+                <th>Chapters</th>
+                <th>Status</th>
+                <th>Progress</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="coursesTableBody">
+              <tr>
+                <td colspan="7" style="text-align: center; color: var(--text-muted);">Scanning generated-courses catalog registry...</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <!-- VIEW 8: AIP Control Plane -->
+    <div id="aipView" class="view-panel">
+      <!-- Frameworks Section -->
+      <section class="op-panel" style="margin-bottom: 32px;">
+        <h2>🛠️ Autonomous Agent Framework Registry</h2>
+        <p class="op-panel-desc">Evaluate, benchmark, and select agent frameworks for specialized venture task forces.</p>
+        <div class="table-scroll-wrapper">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Framework</th>
+                <th>Orchestration Model</th>
+                <th>Language</th>
+                <th>MCP Support</th>
+                <th>Scalability</th>
+                <th>Enterprise Readiness</th>
+              </tr>
+            </thead>
+            <tbody id="frameworksTableBody">
+              <tr>
+                <td colspan="6" style="text-align: center; color: var(--text-muted);">Loading agent frameworks...</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Models Section -->
+      <section class="op-panel">
+        <h2>🧠 Model Quality &amp; Latency Registry</h2>
+        <p class="op-panel-desc">Track and compare LLM benchmarks, token pricing, and response latencies.</p>
+        <div class="table-scroll-wrapper">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Model Name</th>
+                <th>Provider</th>
+                <th>Quality (MMLU)</th>
+                <th>Coding Skill</th>
+                <th>Latency (ms)</th>
+                <th>Cost (Input/Output per 1M)</th>
+                <th>Reasoning Budget</th>
+              </tr>
+            </thead>
+            <tbody id="modelsTableBody">
+              <tr>
+                <td colspan="7" style="text-align: center; color: var(--text-muted);">Loading model benchmarks...</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </main>
+
+
+  <!-- Toast Notification Overlay -->
+  <div class="toast" id="toast" role="alert" aria-live="polite">
+    <svg viewBox="0 0 24 24">
+      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+    </svg>
+    <span id="toastMessage">Action performed successfully!</span>
+  </div>
+
+  <!-- Dynamic Application Script -->
+  <script src="app.js"></script>
+</body>
+</html>

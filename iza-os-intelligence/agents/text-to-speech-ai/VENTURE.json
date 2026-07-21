@@ -1,0 +1,78 @@
+{
+  "business_id": "TECH-018-Text-to-Speech-AI",
+  "business_name": "Text-to-Speech AI",
+  "sector": "technology",
+  "development_stage": "planned",
+  "github_repo": "Worldwidebro/tech-018-text-to-speech-ai",
+  "dashboard_url": "https://venture-hub-pi.vercel.app/ventures/tech-018-text-to-speech-ai",
+  "entity": {
+    "name": "Text-to-Speech AI LLC",
+    "type": "LLC",
+    "state": "WY",
+    "ein": null,
+    "status": "pending_formation"
+  },
+  "capabilities": [
+    "Natural TTS",
+    "Voice Cloning",
+    "Real-time Synthesis",
+    "Multi-language Support",
+    "Emotion Detection",
+    "Custom Voice Training"
+  ],
+  "first_dollar": {
+    "action": "Launch API MVP with neural voice models → integrate with 5 SaaS platforms → get revenue share",
+    "price": 29,
+    "platform": "Stripe",
+    "days_to_revenue": 7
+  },
+  "icp": {
+    "title": "E-learning platforms, content creators, accessibility services, customer service bots",
+    "pain_point": "Need natural-sounding voices for video, audiobooks, chatbots; existing TTS sounds robotic or costs $100+/mo",
+    "platform": "Twitter/X, LinkedIn, Product Hunt, Dev.to",
+    "opening_line": "Natural AI voices for any language. Voice cloning in 60 seconds. $29/month or usage-based."
+  },
+  "revenue": {
+    "monthly_target": 12000,
+    "model": "Usage-based API billing ($0.02-$0.08 per 1K characters) + Premium tier ($99-$299/mo) + Enterprise/Voice cloning add-ons",
+    "revenue_streams": [
+      "API usage fees",
+      "Subscription tiers",
+      "Voice cloning service",
+      "Enterprise licensing",
+      "Custom voice training",
+      "Affiliate partnerships"
+    ]
+  },
+  "pricing": {
+    "starter": {
+      "name": "Starter",
+      "price": 29,
+      "features": "5M characters/mo, 20 voices, basic API, email support"
+    },
+    "professional": {
+      "name": "Professional",
+      "price": 99,
+      "features": "50M characters/mo, 100+ voices, priority API, voice cloning (3/mo), chat support"
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "price": "custom",
+      "features": "Unlimited characters, custom voices, dedicated infra, SLA, training"
+    }
+  },
+  "tax": {
+    "classification": "LLC_sole",
+    "return_type": "Schedule_C",
+    "year": 2026,
+    "estimated_annual": 144000
+  },
+  "grants": [],
+  "agents": {
+    "primary": "qwen-agent",
+    "tech": "claude-code",
+    "approval": "human-antwuan"
+  },
+  "launch_date": "2026-07-15",
+  "last_updated": "2026-07-15T12:00:00Z"
+}

@@ -108,6 +108,19 @@ Each orb links to the other 3. Everything connects.
 
 ---
 
+## Active Projects
+
+**Coordinated initiatives currently in development:**
+
+- [[PROJECT-INDEX]] — Master registry of active projects (Code Consolidation, Infrastructure Docs, System Verification)
+
+See **Project Index** for:
+- Status & timeline for each project
+- Dependencies and parallel execution paths
+- Deliverables and completion criteria
+
+---
+
 ## Your Next Step
 
 Choose an orb above and start there.

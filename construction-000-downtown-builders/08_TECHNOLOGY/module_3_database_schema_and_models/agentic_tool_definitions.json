@@ -1,0 +1,8 @@
+{
+  "name": "con_database_schema_and_models",
+  "description": "Orchestrates technical commands for Database Schema & Models in venture Downtown Builders",
+  "parameters": {
+    "type": "object",
+    "properties": {}
+  }
+}

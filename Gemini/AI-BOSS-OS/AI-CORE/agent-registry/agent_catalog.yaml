@@ -1,0 +1,468 @@
+agents:
+  - name: HIA (Health Insights Agent)
+    framework: Custom
+    industry: Healthcare
+    description: Analyses medical reports and provides health insights
+    repo: GitHub
+  - name: AI Health Assistant
+    framework: Custom
+    industry: Healthcare
+    description: Diagnoses and monitors diseases using patient data
+    repo: GitHub
+  - name: Automated Trading Bot
+    framework: Custom
+    industry: Finance
+    description: Automates stock trading with real-time market analysis
+    repo: GitHub
+  - name: Agent Wallet SDK
+    framework: Custom
+    industry: Finance
+    description: Non-custodial smart contract wallet SDK for AI agents with enforced spend limits
+    repo: GitHub
+  - name: Virtual AI Tutor
+    framework: Custom
+    industry: Education
+    description: Provides personalized education tailored to users
+    repo: GitHub
+  - name: 24/7 AI Chatbot
+    framework: Custom
+    industry: Customer Service
+    description: Handles customer queries around the clock
+    repo: GitHub
+  - name: Product Recommendation Agent
+    framework: Custom
+    industry: Retail
+    description: Suggests products based on user preferences and history
+    repo: GitHub
+  - name: Self-Driving Delivery Agent
+    framework: Custom
+    industry: Transportation
+    description: Optimizes routes and autonomously delivers packages
+    repo: GitHub
+  - name: Factory Process Monitoring Agent
+    framework: Custom
+    industry: Manufacturing
+    description: Monitors production lines and ensures quality control
+    repo: GitHub
+  - name: Property Pricing Agent
+    framework: Custom
+    industry: Real Estate
+    description: Analyzes market trends to determine property prices
+    repo: GitHub
+  - name: Smart Farming Assistant
+    framework: Custom
+    industry: Agriculture
+    description: Provides insights on crop health and yield predictions
+    repo: GitHub
+  - name: Energy Demand Forecasting Agent
+    framework: Custom
+    industry: Energy
+    description: Predicts energy usage to optimize grid management
+    repo: GitHub
+  - name: Content Personalization Agent
+    framework: Custom
+    industry: Entertainment
+    description: Recommends personalized media based on preferences
+    repo: GitHub
+  - name: Legal Document Review Assistant
+    framework: Custom
+    industry: Legal
+    description: Automates document review and highlights key clauses
+    repo: GitHub
+  - name: Recruitment Recommendation Agent
+    framework: Custom
+    industry: Human Resources
+    description: Suggests best-fit candidates for job openings
+    repo: GitHub
+  - name: Virtual Travel Assistant
+    framework: Custom
+    industry: Hospitality
+    description: Plans travel itineraries based on preferences
+    repo: GitHub
+  - name: AI Game Companion Agent
+    framework: Custom
+    industry: Gaming
+    description: Enhances player experience with real-time assistance
+    repo: GitHub
+  - name: Real-Time Threat Detection Agent
+    framework: Custom
+    industry: Cybersecurity
+    description: Identifies potential threats and mitigates attacks
+    repo: GitHub
+  - name: E-commerce Personal Shopper Agent
+    framework: Custom
+    industry: E-commerce
+    description: Helps customers find products they'll love
+    repo: GitHub
+  - name: Logistics Optimization Agent
+    framework: Supply Chain
+    description: Plans efficient delivery routes and manages inventory
+    repo: GitHub
+  - name: Vibe Hacking Agent
+    framework: Custom
+    industry: Cybersecurity
+    description: Autonomous Multi-Agent Based Red Team Testing Service
+    repo: GitHub
+  - name: Citadel
+    framework: Custom
+    industry: Software Development
+    description: Orchestrates Claude Code agent fleets with lifecycle hooks, skills, campaign management, and postmortem-driven architecture
+    repo: GitHub
+  - name: MediSuite-AI-Agent
+    framework: Custom
+    industry: Health Insurance
+    description: Automates hospital / insurance claiming workflow
+    repo: GitHub
+  - name: Lina Egyptian Medical Chatbot
+    framework: Custom
+    industry: Healthcare
+    description: Egyptian medical assistant chatbot
+    repo: GitHub
+
+crewai_use_cases:
+  - name: Email Auto Responder Flow
+    industry: Communication
+    description: Automates email responses based on predefined criteria
+    repo: GitHub
+  - name: Meeting Assistant Flow
+    industry: Productivity
+    description: Organizes meetings, scheduling and agenda preparation
+    repo: GitHub
+  - name: Self Evaluation Loop Flow
+    industry: Human Resources
+    description: Facilitates self-assessment for performance reviews
+    repo: GitHub
+  - name: Lead Score Flow
+    industry: Sales
+    description: Evaluates and scores potential leads to prioritize outreach
+    repo: GitHub
+  - name: Marketing Strategy Generator
+    industry: Marketing
+    description: Develops marketing strategies by analyzing market trends
+    repo: GitHub
+  - name: Job Posting Generator
+    industry: Recruitment
+    description: Creates job postings by analyzing job requirements
+    repo: GitHub
+  - name: Recruitment Workflow
+    industry: Recruitment
+    description: Streamlines recruitment by automating hiring tasks
+    repo: GitHub
+  - name: Match Profile to Positions
+    industry: Recruitment
+    description: Matches candidate profiles to suitable job positions
+    repo: GitHub
+  - name: Instagram Post Generator
+    industry: Social Media
+    description: Generates and schedules Instagram posts automatically
+    repo: GitHub
+  - name: Landing Page Generator
+    industry: Web Development
+    description: Automates creation of landing pages for websites
+    repo: GitHub
+  - name: Game Builder Crew
+    industry: Game Development
+    description: Assists in game development by automating aspects of creation
+    repo: GitHub
+  - name: Stock Analysis Tool
+    industry: Finance
+    description: Provides tools for analyzing stock market data
+    repo: GitHub
+  - name: Trip Planner
+    industry: Travel
+    description: Assists in planning trips with itineraries
+    repo: GitHub
+  - name: Surprise Trip Planner
+    industry: Travel
+    description: Plans surprise trips based on user preferences
+    repo: GitHub
+  - name: Write a Book with Flows
+    industry: Creative Writing
+    description: Assists authors with structured writing workflows
+    repo: GitHub
+  - name: Screenplay Writer
+    industry: Creative Writing
+    description: Aids in writing screenplays with templates and guidance
+    repo: GitHub
+  - name: Markdown Validator
+    industry: Documentation
+    description: Validates Markdown files for proper formatting
+    repo: GitHub
+  - name: Meta Quest Knowledge
+    industry: Knowledge Management
+    description: Manages Meta Quest knowledge for information retrieval
+    repo: GitHub
+  - name: NVIDIA Models Integration
+    industry: AI Integration
+    description: Integrates NVIDIA AI models into workflows
+    repo: GitHub
+  - name: Prep for a Meeting
+    industry: Productivity
+    description: Prepares meeting materials and sets agendas
+    repo: GitHub
+  - name: Starter Template
+    industry: Development
+    description: Starter template for new CrewAI projects
+    repo: GitHub
+  - name: CrewAI + LangGraph Integration
+    industry: AI Integration
+    description: Integration between CrewAI and LangGraph
+    repo: GitHub
+
+autogen_use_cases:
+  - name: Automated Task Solving with Code Gen, Execution & Debugging
+    industry: Software Development
+    description: Demonstrates automated task-solving by generating, executing, and debugging code
+    link: Notebook
+  - name: Code Generation and Q&A with Retrieval Augmented Agents
+    industry: Software Development
+    description: Generates code and answers questions using retrieval-augmented methods
+    link: Notebook
+  - name: Code Generation and Q&A with Qdrant-based Retrieval
+    industry: Software Development
+    description: Utilizes Qdrant for enhanced retrieval-augmented agent performance
+    link: Notebook
+  - name: Group Chat (3 members, 1 manager)
+    industry: Collaboration
+    description: Demonstrates group task-solving via multi-agent collaboration
+    link: Notebook
+  - name: Data Visualization by Group Chat
+    industry: Data Analysis
+    description: Uses multi-agent collaboration to create data visualizations
+    link: Notebook
+  - name: Complex Task Solving by Group Chat (6 members)
+    industry: Collaboration
+    description: Solves complex tasks collaboratively with a larger group
+    link: Notebook
+  - name: Task Solving with Coding & Planning Agents
+    industry: Planning & Dev
+    description: Combines coding and planning agents for solving tasks
+    link: Notebook
+  - name: Task Solving with Graph Transition Paths
+    industry: Collaboration
+    description: Uses predefined transition paths in a graph for solving tasks
+    link: Notebook
+  - name: SocietyOfMindAgent Inner-Monologue
+    industry: Cognitive Sciences
+    description: Simulates inner-monologue for problem-solving using group chats
+    link: Notebook
+  - name: Group Chat with Custom Speaker Selection
+    industry: Collaboration
+    description: Implements a custom function for speaker selection
+    link: Notebook
+  - name: Sequential Task-Solving (single initiating agent)
+    industry: Workflow Automation
+    description: Automates sequential task-solving with a single initiating agent
+    link: Notebook
+  - name: Async Sequential Task-Solving
+    industry: Workflow Automation
+    description: Handles asynchronous task-solving in a sequence of chats
+    link: Notebook
+  - name: Sequential Chats with Different Initiating Agents
+    industry: Workflow Automation
+    description: Sequential task-solving with different agents initiating each chat
+    link: Notebook
+  - name: Solving Complex Tasks with Nested Chats
+    industry: Problem Solving
+    description: Uses nested chats to solve hierarchical and complex problems
+    link: Notebook
+  - name: Sequence of Nested Chats
+    industry: Problem Solving
+    description: Demonstrates sequential task-solving using nested chats
+    link: Notebook
+  - name: OptiGuide Supply Chain with Nested Chats
+    industry: Supply Chain
+    description: Solves supply chain optimization using nested chats
+    link: Notebook
+  - name: Conversational Chess with Nested Chats
+    industry: Gaming
+    description: Uses nested chats for playing conversational chess with tools
+    link: Notebook
+  - name: Web Search: Solve Tasks Requiring Web Info
+    industry: Information Retrieval
+    description: Searches the web to gather information for completing tasks
+    link: Notebook
+  - name: Use Provided Tools as Functions
+    industry: Tool Integration
+    description: Demonstrates how to use pre-provided tools as callable functions
+    link: Notebook
+  - name: RAG Group Chat
+    industry: Collaboration
+    description: Enables group chat with Retrieval Augmented Generation
+    link: Notebook
+  - name: Agent Chat with Whisper
+    industry: Audio Processing
+    description: AI agent for transcription and translation using Whisper
+    link: Notebook
+  - name: SQL: Natural Language to SQL Query
+    industry: Database Management
+    description: Converts natural language inputs into SQL queries
+    link: Notebook
+  - name: Multimodal Agent with DALLE and GPT-4V
+    industry: Multimedia AI
+    description: Combines DALLE and GPT-4V for multimodal agent communication
+    link: Notebook
+  - name: Multimodal Agent with Llava
+    industry: Image Processing
+    description: Uses Llava for multimodal agent conversations
+    link: Notebook
+  - name: Multimodal Agent with GPT-4V
+    industry: Multimedia AI
+    description: Leverages GPT-4V for visual and conversational interactions
+    link: Notebook
+  - name: AgentEval: Multi-Agent Assessment System
+    industry: Performance Evaluation
+    description: Evaluating LLM-based application utility
+    link: Notebook
+  - name: Track LLM Calls and Errors using AgentOps
+    industry: Monitoring & Analytics
+    description: Monitors LLM interactions, tool usage, and errors
+    link: Notebook
+  - name: Auto Build Multi-agent System with AgentBuilder
+    industry: AI Development
+    description: Automatically builds multi-agent systems
+    link: Notebook
+
+agno_use_cases:
+  - name: Support Agent
+    industry: AI Framework Support
+    description: Real-time answers, explanations, and code examples for Agno framework
+    code: Python
+  - name: YouTube Agent
+    industry: Media & Content
+    description: Analyzes YouTube videos: summaries, timestamps, themes
+    code: Python
+  - name: Finance Agent (Thinking)
+    industry: Finance
+    description: Real-time stock insights, analyst recommendations, financial deep-dives
+    code: Python
+  - name: Study Partner
+    industry: Education
+    description: Finds resources, answers questions, creates study plans
+    code: Python
+  - name: Shopping Partner Agent
+    industry: E-commerce
+    description: Product recommender based on preferences from Amazon, Flipkart
+    code: Python
+  - name: Research Scholar Agent
+    industry: Education / Research
+    description: Advanced academic searches, publication analysis, structured reports
+    code: Python
+  - name: Research Agent
+    industry: Media & Journalism
+    description: Deep investigations, NYT-style reports
+    code: Python
+  - name: Recipe Creator
+    industry: Food & Culinary
+    description: Personalized recipes based on ingredients and preferences
+    code: Python
+  - name: Financial Reasoning Agent
+    industry: Finance
+    description: Claude 3.5 Sonnet-based stock analysis with Yahoo Finance data
+    code: Python
+  - name: Readme Generator Agent
+    industry: Software Dev
+    description: Generates high-quality READMEs for GitHub repos
+    code: Python
+  - name: Movie Recommendation Agent
+    industry: Entertainment
+    description: Personalized movie recommendations using Exa and GPT-4o
+    code: Python
+  - name: Media Trend Analysis Agent
+    industry: Media & News
+    description: Analyzes emerging trends and influencers from digital platforms
+    code: Python
+  - name: Legal Document Analysis Agent
+    industry: Legal Tech
+    description: Analyzes legal PDFs and provides insights using vector embeddings
+    code: Python
+  - name: DeepKnowledge
+    industry: Research
+    description: Iterative search through knowledge base with deep reasoning
+    code: Python
+  - name: Book Recommendation Agent
+    industry: Publishing & Media
+    description: Personalized book suggestions using literary data and reader preferences
+    code: Python
+  - name: MCP Airbnb Agent
+    industry: Hospitality
+    description: Search Airbnb listings with MCP and Llama 4
+    code: Python
+  - name: Agno Assist Agent
+    industry: AI Framework
+    description: GPT-4o agent for Agno framework Q&A with hybrid search
+    code: Python
+
+langgraph_use_cases:
+  - name: Chatbot Simulation Evaluation
+    industry: AI / QA
+    description: Simulate user interactions to evaluate chatbot performance
+    code: Python
+  - name: Information Gathering via Prompting
+    industry: Research
+    description: LangGraph workflow using prompting to gather information
+    code: Python
+  - name: Code Assistant with LangGraph
+    industry: Software Development
+    description: Resilient code assistant with error checking and iterative refinement
+    code: Python
+  - name: Customer Support Agent
+    industry: Customer Support
+    description: Graph-based agent for handling customer inquiries
+    code: Python
+  - name: Extraction with Retries
+    industry: Data Extraction
+    description: Retry mechanisms for robust data extraction
+    code: Python
+  - name: Multi-Agent Workflow (Supervisor)
+    industry: Workflow Orchestration
+    description: Supervisor agent orchestrating multiple specialized agents
+    code: Python
+  - name: Hierarchical Agent Teams
+    industry: Workflow Orchestration
+    description: Top-level supervisor delegates to specialized sub-agents
+    code: Python
+  - name: Multi-Agent Collaboration
+    industry: Workflow Orchestration
+    description: Multiple specialized agents working together on complex tasks
+    code: Python
+  - name: Plan-and-Execute Agent
+    industry: Workflow Orchestration
+    description: Agent generates multi-step plan then executes sequentially
+    code: Python
+  - name: SQL Agent
+    industry: Database Interaction
+    description: Agent answers questions about SQL databases
+    code: Python
+  - name: Reflection Agent
+    industry: Workflow Orchestration
+    description: Agent critiques and revises its own outputs
+    code: Python
+  - name: Reflexion Agent
+    industry: Workflow Orchestration
+    description: Agent reflects on actions for iterative improvement
+    code: Python
+  - name: Adaptive RAG
+    industry: Information Retrieval
+    description: Dynamic retrieval adjusting based on query complexity
+    code: Python
+  - name: Agentic RAG
+    industry: Intelligent Agents
+    description: Agent determines best retrieval strategy before generating response
+    code: Python
+  - name: Corrective RAG (CRAG)
+    industry: Information Retrieval
+    description: Evaluates and refines retrieved documents before generation
+    code: Python
+  - name: Self-RAG
+    industry: Information Retrieval
+    description: System reflects on responses and retrieves additional info if needed
+    code: Python
+  - name: Adaptive RAG (Local)
+    industry: Information Retrieval
+    description: Adaptive RAG with local models for offline use
+    code: Python
+  - name: Self-RAG (Local)
+    industry: Information Retrieval
+    description: Self-RAG using local models and data sources
+    code: Python

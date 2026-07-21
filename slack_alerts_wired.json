@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-07-20T23:04:22.448996",
+  "total_alerts": 3,
+  "routed_to_slack": 1,
+  "alerts": [
+    {
+      "type": "slack",
+      "channel": "#director-approvals",
+      "message": "\ud83d\udd14 Director approval needed: $8500 for task-1784599375.80226",
+      "routed": true
+    },
+    {
+      "type": "auto",
+      "routed": false
+    },
+    {
+      "type": "auto",
+      "routed": false
+    }
+  ]
+}

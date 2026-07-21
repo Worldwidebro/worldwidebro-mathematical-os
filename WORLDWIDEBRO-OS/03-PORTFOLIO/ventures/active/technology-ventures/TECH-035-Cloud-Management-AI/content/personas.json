@@ -1,0 +1,46 @@
+{
+  "venture_id": "COMM-036-Public-Infrastructure-AI",
+  "personas": [
+    {
+      "id": "primary-beneficiary",
+      "name": "Primary Community Beneficiary",
+      "needs": [
+        "Clear intake",
+        "Fast response",
+        "Transparent follow-up"
+      ],
+      "pain_points": [
+        "Complex forms",
+        "No status visibility",
+        "Slow callbacks"
+      ]
+    },
+    {
+      "id": "program-operator",
+      "name": "Program Operator",
+      "needs": [
+        "Daily operational dashboard",
+        "Prioritized caseload",
+        "Partner coordination tools"
+      ],
+      "pain_points": [
+        "Manual tracking",
+        "Scattered communication",
+        "Limited KPI visibility"
+      ]
+    },
+    {
+      "id": "partner-sponsor",
+      "name": "Partner / Sponsor",
+      "needs": [
+        "Outcome reporting",
+        "Clear initiative scope",
+        "Reliable communication"
+      ],
+      "pain_points": [
+        "Weak impact visibility",
+        "Unclear contribution pathways"
+      ]
+    }
+  ]
+}

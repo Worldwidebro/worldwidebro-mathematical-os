@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-07-20T22:03:22.107952",
+  "decisions_enforced": 3,
+  "decisions": [
+    {
+      "decision_id": "task-1784599375.80226",
+      "amount": 8500,
+      "approval_level": "director",
+      "rule": "Escalate to director, await approval",
+      "enforced_at": "2026-07-20T22:03:22.107944"
+    },
+    {
+      "decision_id": "task-1784599375.802556",
+      "amount": 0,
+      "approval_level": "auto",
+      "rule": "Auto-approve, execute immediately",
+      "enforced_at": "2026-07-20T22:03:22.107950"
+    },
+    {
+      "decision_id": "task-1784599375.802559",
+      "amount": 3200,
+      "approval_level": "auto",
+      "rule": "Auto-approve, execute immediately",
+      "enforced_at": "2026-07-20T22:03:22.107951"
+    }
+  ]
+}

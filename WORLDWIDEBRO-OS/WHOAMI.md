@@ -9,6 +9,52 @@
 
 ---
 
+## 1.5. Organizational Role (CRITICAL CLARITY)
+
+**IZA OS is NOT a venture.** It is the operating system and infrastructure layer that all ventures run on.
+
+### Classification
+- **Layer:** Platform/Infrastructure (not business operation)
+- **Type:** Shared foundation (not profit center or venture)
+- **Comparison:** Think AWS for your ventures
+  - AWS provides EC2, RDS, Lambda (infrastructure)
+  - Your ventures use AWS to operate
+  - AWS is not a venture; it's the foundation
+  
+### What IZA OS Provides to All Ventures
+All 6 OPCOs (and their 712 ventures) depend on IZA OS infrastructure:
+
+- **Data Layer:** Neo4j (knowledge graph), Qdrant (vector search), Supabase (transactional), DuckDB (analytics)
+- **Automation Layer:** n8n (workflow automation), agent orchestration, decision routing
+- **Intelligence Layer:** LLM routing (LiteLLM + Ollama), prompt management, knowledge synthesis
+- **Observability Layer:** Langfuse (LLM tracing), Prometheus/Grafana (metrics), logging and audit trails
+
+### Governance Model
+- **Cost Model:** Cost center (not profit center)
+- **Funding:** Cross-venture allocation — all 6 OPCOs contribute proportionally to infrastructure costs
+- **Ownership:** Technology/Platform team
+- **Accountability:** 99.9%+ uptime SLA across all dependent ventures
+- **Scaling:** Infrastructure grows as ventures scale; not a constraint
+
+### Dependency Relationship (NOT Peer OPCOs)
+```
+                    Worldwidebro Holdings
+                           ↓
+              IZA OS / Tech Sector (Infrastructure)
+                           ↓
+         ┌────────────────────────────────────┐
+         ↓         ↓         ↓        ↓       ↓
+       CON      STA        RE       EDU      FIN    LOG
+    (Con-*)  (Sta-*)    (Re-*)   (Edu-*)  (Fin-*) (Log-*)
+         ↓         ↓         ↓        ↓       ↓
+    Ventures   Ventures   Ventures  Ventures Ventures Ventures
+    (712 total, distributed across 6 OPCOs)
+```
+
+**All arrows point DOWN to IZA OS.** Ventures depend on platform. Platform is NOT a venture.
+
+---
+
 ## 2. Mission & Vision
 *   **Mission**: Build, operate, finance, and scale companies by linking multi-agent autonomy, data intelligence, systematic capital allocation, and repeatable operational pipelines.
 *   **Vision**: Deploy a self-sustaining venture studio engine capable of qualifying permit/market leads, auto-generating contracts, managing client dispatch, and routing transactions using optimized capital channels.

@@ -1,21 +1,21 @@
 {
-  "timestamp": "2026-07-15T15:14:06.107339",
+  "timestamp": "2026-07-20T18:14:23.654220",
   "entity_summary": {
-    "total_entities": 7082,
-    "ventures": 100,
+    "total_entities": 11264,
+    "ventures": 0,
     "repos": 0,
     "contacts": 0,
-    "other": 6982
+    "other": 11264
   },
   "relationship_summary": {
-    "total_relationships": 7276,
+    "total_relationships": 11654,
     "by_type": {
-      "belongs_to_sector": 3261,
-      "has_risk": 3327,
+      "belongs_to_sector": 5292,
+      "has_risk": 5424,
       "risks": 2,
       "benefits": 1,
       "powers_venture": 385,
-      "PROVIDES_CAPABILITY": 300
+      "PROVIDES_CAPABILITY": 550
     }
   },
   "repo_coverage": {

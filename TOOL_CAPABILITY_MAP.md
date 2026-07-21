@@ -1,15 +1,18 @@
 ---
-name: tool-capability-map
-type: Business Goals to MCP Mapping
-date: 2026-06-22
-source: MCP_REGISTRY.json
+name: agent-tool-capability-map
+type: Agent → Tool → Capability Mapping (Current Infrastructure)
+date: 2026-07-20
+source: AGENTS.md + MCP_REGISTRY.json
+version: 2.0
 ---
 
-# Tool Capability Map
+# Agent-Tool Capability Map (Current)
 
-**Reference:** MCP_REGISTRY.json (source of truth) | **Use this. Don't search for tools.**
+**Version:** 2.0 — **Current Infrastructure** (not Phase 1)
 
-**Purpose:** Map business goals → available MCPs. Check this before asking "do we have a tool for X?"
+**Purpose:** Map which agents can use which tools. **This is the 9-systems-engineering gap: tools exist but agents can't discover or use them.**
+
+**Answer to "do we see the MCP or Slack plugin?":** ✅ **MCPs exist but are NOT wired to agents.**
 
 ---
 
@@ -23,6 +26,54 @@ source: MCP_REGISTRY.json
 | Import venture CSV | airtable | ✅ Ready | 5 min | From ventures_16sector_classification.csv |
 | Set up 5 views | airtable | ✅ Ready | 30 min | Views: Executive, OPCO, Status, Revenue, Red Flags |
 | **PROCEED?** | | **✅ YES** | **45 min** | **All ready** |
+
+---
+
+## CRITICAL INSIGHT: 9 Systems Engineering Gaps
+
+You have:
+- ✅ 9 agents defined (AGENTS.md)
+- ✅ Slack MCP available
+- ✅ ClickUp MCP available
+- ✅ OmniRoute (token compression)
+- ✅ Loop Engineering (automation)
+
+You're missing:
+- ❌ **Agent identity in tool calls** — tools don't know who's calling them
+- ❌ **Capability registry** — agents don't know what tools they can use
+- ❌ **Permission layer** — no checks before agent actions
+- ❌ **Tool discovery** — agents can't query "what's available?"
+- ❌ **Event bus** — agents work in isolation
+- ❌ **Memory controller** — agents access databases directly
+- ❌ **Observability wiring** — no telemetry of agent actions
+- ❌ **Coordination protocol** — no workflow orchestration
+- ❌ **Organizational mapping** — tools not mapped to OPCO structure
+
+### The Wiring Layer You Need
+
+**Current flow (broken):**
+```
+venture_classifier → Supabase (direct)
+                  ↓
+                  (no audit, no permission check, no notification)
+```
+
+**Needed flow:**
+```
+venture_classifier
+         ↓
+   Capability Request: "Can I create ClickUp task?"
+         ↓
+   Permission Check: "Is venture_classifier allowed ClickUp?"
+         ↓
+   Tool Dispatch: "Call ClickUp MCP"
+         ↓
+   Audit Log: "venture_classifier called create_task at 11:20"
+         ↓
+   Event Publish: "venture_classified event"
+         ↓
+   Slack Notify: "#con-operations: New venture..."
+```
 
 ---
 
@@ -93,6 +144,51 @@ source: MCP_REGISTRY.json
 | Board meeting (Fri 2pm) | google_calendar | ✅ Ready | 5 min |
 | Quarterly review (Last Fri) | google_calendar | ✅ Ready | 5 min |
 | **PROCEED?** | | **✅ YES** | **20 min** |
+
+---
+
+---
+
+## Wire These First (Priority Order)
+
+### Priority 1: Slack Notifications (Week 1)
+**What:** venture_classifier → Slack #con-operations when venture classified
+
+**Config for venture_classifier:**
+```yaml
+agent_id: venture_classifier
+slack_targets:
+  - channel: "#con-operations"
+    event: "venture_classified"
+    template: "🎯 New venture: {name}, confidence: {confidence}"
+```
+
+**How cadence-check.py already does this:**
+```python
+python3 .grok/skills/cadence-check/cadence-check.py \
+  --slack-webhook https://hooks.slack.com/services/YOUR/WEBHOOK/URL
+```
+
+### Priority 2: ClickUp Task Creation (Week 1-2)
+**What:** venture_classifier → ClickUp: create task per classified venture
+
+**Config:**
+```yaml
+agent_id: venture_classifier
+clickup_targets:
+  - list: "New Ventures (CON)"
+    template: "Follow up: {venture_name}"
+    assigned_to: "Venture Lead"
+```
+
+### Priority 3: Google Calendar Booking (Week 2)
+**What:** project_scheduler → Calendar: book meetings from schedule
+
+### Priority 4: Unified Memory Controller (Week 3)
+**What:** All agents → shared memory access with permission checks
+
+### Priority 5: Event Bus (Week 4)
+**What:** Kafka/Redis topics so agents coordinate
 
 ---
 

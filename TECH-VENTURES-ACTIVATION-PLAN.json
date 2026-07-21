@@ -32,7 +32,7 @@
         "/manim-video"
       ],
       "estimated_revenue": "$30-50K/mo",
-      "activation_time": "2026-07-15T17:58:56.301733"
+      "activation_time": "2026-07-20T19:25:21.835829"
     }
   },
   {
@@ -67,7 +67,7 @@
         "/security-scan"
       ],
       "estimated_revenue": "$30-50K/mo",
-      "activation_time": "2026-07-15T17:58:56.301745"
+      "activation_time": "2026-07-20T19:25:21.835845"
     }
   },
   {
@@ -102,7 +102,7 @@
         "/benchmark"
       ],
       "estimated_revenue": "$10-20K/mo",
-      "activation_time": "2026-07-15T17:58:56.301750"
+      "activation_time": "2026-07-20T19:25:21.835850"
     }
   },
   {
@@ -137,7 +137,7 @@
         "/backend-development:feature-development"
       ],
       "estimated_revenue": "$10-20K/mo",
-      "activation_time": "2026-07-15T17:58:56.301755"
+      "activation_time": "2026-07-20T19:25:21.835855"
     }
   },
   {
@@ -172,7 +172,7 @@
         "/documentation-lookup"
       ],
       "estimated_revenue": "$10-20K/mo",
-      "activation_time": "2026-07-15T17:58:56.301760"
+      "activation_time": "2026-07-20T19:25:21.835860"
     }
   },
   {
@@ -207,7 +207,7 @@
         "/documentation-lookup"
       ],
       "estimated_revenue": "$10-20K/mo",
-      "activation_time": "2026-07-15T17:58:56.301764"
+      "activation_time": "2026-07-20T19:25:21.835865"
     }
   },
   {
@@ -242,7 +242,7 @@
         "/solidity-security"
       ],
       "estimated_revenue": "$3-7K/mo",
-      "activation_time": "2026-07-15T17:58:56.301769"
+      "activation_time": "2026-07-20T19:25:21.835870"
     }
   },
   {
@@ -277,7 +277,7 @@
         "/performance-engineer"
       ],
       "estimated_revenue": "$3-7K/mo",
-      "activation_time": "2026-07-15T17:58:56.301774"
+      "activation_time": "2026-07-20T19:25:21.835876"
     }
   },
   {
@@ -312,7 +312,7 @@
         "/cicd-automation:deployment-engineer"
       ],
       "estimated_revenue": "$3-7K/mo",
-      "activation_time": "2026-07-15T17:58:56.301779"
+      "activation_time": "2026-07-20T19:25:21.835882"
     }
   },
   {
@@ -347,7 +347,7 @@
         "/security-scanning:security-sast"
       ],
       "estimated_revenue": "$3-7K/mo",
-      "activation_time": "2026-07-15T17:58:56.301783"
+      "activation_time": "2026-07-20T19:25:21.835886"
     }
   }
 ]

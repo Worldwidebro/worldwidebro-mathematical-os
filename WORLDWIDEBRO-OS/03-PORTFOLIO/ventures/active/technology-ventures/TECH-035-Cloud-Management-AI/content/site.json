@@ -1,0 +1,123 @@
+{
+  "venture_id": "COMM-036-Public-Infrastructure-AI",
+  "name": "Public Infrastructure Ai",
+  "sector": "community",
+  "stage": "planned",
+  "status": "planned",
+  "repository_url": "https://github.com/Worldwidebro/comm-036-public-infrastructure-ai",
+  "design_version": "v2-multipage-civic-neon",
+  "content_theme": "civic_infra",
+  "tagline": "Public Infrastructure Ai improves public infrastructure, safety, and digital access through community-informed projects.",
+  "elevator_pitch": "Public Infrastructure Ai bridges residents, agencies, and technologists to ship fixes that are visible and accountable.",
+  "mission_detail": "We combine participatory design, open metrics, and pragmatic pilots—lighting, connectivity, resilience, and public space.",
+  "programs_intro": "Wi-Fi zones, sensor transparency dashboards, resilience hubs, and event operations support.",
+  "impact_intro": "Uptime, coverage maps, incident response times (where partners share), and resident satisfaction.",
+  "contact_intro": "City departments, utilities, and sponsors: co-fund pilots with public reporting.",
+  "pillars": [
+    {
+      "title": "Participatory design",
+      "description": "Residents shape priorities and acceptance criteria."
+    },
+    {
+      "title": "Open metrics",
+      "description": "Publish what we measure and why it matters."
+    },
+    {
+      "title": "Maintainability",
+      "description": "Budget for operations, not just ribbon cuttings."
+    },
+    {
+      "title": "Equity",
+      "description": "Underserved areas first when evidence supports."
+    }
+  ],
+  "launch_phases": [
+    {
+      "title": "Asset & gap map",
+      "description": "What exists, what fails, who is left out."
+    },
+    {
+      "title": "Pilot project",
+      "description": "Small capex, clear KPI, 90-day review."
+    },
+    {
+      "title": "Institutionalize",
+      "description": "Line-item or service contract for ongoing ops."
+    }
+  ],
+  "programs": [
+    {
+      "title": "Public connectivity",
+      "description": "Municipal or community-owned Wi-Fi zones."
+    },
+    {
+      "title": "Resilience hubs",
+      "description": "Cooling/heating, power, and info during crises."
+    },
+    {
+      "title": "Safety transparency",
+      "description": "Open data storytelling with community reviewers."
+    },
+    {
+      "title": "Smart public spaces",
+      "description": "Lighting, accessibility, and programming support."
+    }
+  ],
+  "impact_metrics": [
+    {
+      "label": "Coverage / uptime",
+      "target": "Target: SLA for connectivity pilots"
+    },
+    {
+      "label": "Residents served",
+      "target": "Target: unique users where measurable"
+    },
+    {
+      "label": "Cost avoided",
+      "target": "Target: partner-estimated efficiency"
+    },
+    {
+      "title": "Incident response",
+      "target": "Target: partner-provided baselines"
+    }
+  ],
+  "get_involved_paths": [
+    {
+      "title": "Technical volunteer",
+      "description": "Network, GIS, and hardware skills."
+    },
+    {
+      "title": "Community reviewer",
+      "description": "Participatory design sessions."
+    },
+    {
+      "title": "Sponsor hardware",
+      "description": "APs, batteries, and enclosures."
+    },
+    {
+      "title": "Agency liaison",
+      "description": "Champion inside government."
+    }
+  ],
+  "operating_values": [
+    {
+      "title": "Public good",
+      "description": "No dark patterns; no surveillance surprises."
+    },
+    {
+      "title": "Sustainability",
+      "description": "Power, maintenance, and vendor lock-in awareness."
+    },
+    {
+      "title": "Transparency",
+      "description": "Contracts and performance visible where legal."
+    },
+    {
+      "title": "Safety",
+      "description": "Physical and digital security reviewed."
+    }
+  ],
+  "priority_focus": "MOU with a public entity for rights-of-way and liability.",
+  "year_one_goal": "One pilot with public KPI dashboard and maintenance plan.",
+  "enriched_at": "2026-04-27"
+}

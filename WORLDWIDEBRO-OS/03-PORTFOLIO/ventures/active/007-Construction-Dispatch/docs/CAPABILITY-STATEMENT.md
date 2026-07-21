@@ -1,19 +1,62 @@
+---
+execution_metadata:
+  venture_id: "LT-007-Construction-Dispatch"
+  agent_completed: "AG-CEO"
+  department: "Sales & Billing"
+  node: "HW-AIR-01"
+  database_link: "DB-POSTGRES:PT-5433"
+references:
+  - [[LT-007-Construction-Dispatch-SALES-SCRIPTS]]
+  - [[LT-007-Construction-Dispatch-FORMATION-CREDENTIAL-TRACKER]]
+  - [[LT-007-Construction-Dispatch-DEPARTMENTS-AND-ECOSYSTEM]]
+  - [[VENTURE-MASTER]]
+---
+
 # Capability Statement — Construction Dispatch
 
-> Sector: logistics-transport | OPCO: LOGISTICS-TRANSPORT | Status: validation
+**AI-Driven Freight Dispatch, Route Optimization & Carrier Operations**
+*Sector: logistics_transport | OPCO: LOGISTICS-TRANSPORT | Status: development*
 
-## Differentiators
+---
 
-- Capability-linked portfolio: TBD
-- Repository-backed execution: 1 mapped repo(s)
+## Construction Dispatch
+### High-efficiency load matching, route optimization, and carrier communications.
 
-## What we deliver
+---
 
-- Revenue path: TBD
-- First dollar: TBD
-- Target: $TBD/mo
+### COMPANY OVERVIEW
+Construction Dispatch provides logistics coordination, carrier dispatching, and route optimization services. By utilizing AI scheduling, digital load-board crawling, and automated driver communication channels, we help owner-operators and shippers coordinate loads, optimize mileage, and eliminate empty backhauls.
 
-## Trust/credentials
+---
 
-- Entity: TBD (LLC, TBD)
-- Formation: pending_formation
+### CORE COMPETENCIES
+- **AI Load Board Scraping & Matching** — Real-time crawling of major freight networks to find the highest-paying loads
+- **Route Optimization & Fuel Auditing** — Sub-second route scheduling to minimize deadhead miles and fuel usage
+- **Automated Driver Dispatching** — Real-time booking confirmations and directions sent to drivers via SMS/WhatsApp
+- **OCR Document Processing** — Instant extraction of Bills of Lading (BOL) and Rate Confirmations
+
+---
+
+### DIFFERENTIATORS
+- **Backhaul Optimization** — Dynamic route planning that books return loads before the driver departs, securing profit in both directions
+- **Instant rate sheet extraction** — Rate confirmation documents (PDF) are parsed via AI OCR in under 10 seconds to detect payment discrepancies
+- **M/W/SB Subcontracting Support** — Aligned with minority/women goals to help primes meet local transportation quota targets
+- **24/7 Dispatch Monitoring** — Automation scripts running load health checks continuously on scheduling servers
+
+---
+
+### COMPANY DATA
+| Field | Value |
+|-------|-------|
+| Legal name | **Construction Dispatch** |
+| Owner / principal | Winners Circle WC LLC |
+| Sector | Logistics & Transport |
+| Venture ID | **LT-007-Construction-Dispatch** |
+| Primary Stack | temporal-worker · python-shutil · paddle-ocr · postgresql |
+| Core Capabilities | scheduling · notifications · analytics · ocr |
+
+---
+
+### CONTACT
+📧 dispatch@winnerscirclewc.com  ·  ☎ (704) 388-5030
+📍 Charlotte, NC

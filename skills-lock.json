@@ -61,6 +61,12 @@
       "skillPath": "higgsfield-soul-id/SKILL.md",
       "computedHash": "7cfc9540f5890dac0035f430c820a7db13c14796b2a8d42edb75f373e9e418c1"
     },
+    "multi-agent-orchestration": {
+      "source": "qodex-ai/ai-agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/multi-agent-orchestration/SKILL.md",
+      "computedHash": "e5517caccf376ec61d8f94cd22f1bdd44a588a61214fcf8a67b75ba3d23a1864"
+    },
     "neo4j-cypher-skill": {
       "source": "neo4j-contrib/neo4j-skills",
       "sourceType": "github",
@@ -72,6 +78,18 @@
       "sourceType": "github",
       "skillPath": "neo4j-graphrag-skill/SKILL.md",
       "computedHash": "0ce5a306fbb4105ee52d9cefa033f6e6fc7003b34b98389dc89e4f7e651358f5"
+    },
+    "plan": {
+      "source": "hyperb1iss/hyperskills",
+      "sourceType": "github",
+      "skillPath": "skills/plan/SKILL.md",
+      "computedHash": "c12173dcda1fa9776e0e79de757af94645a843b991977bf806518279373cc2af"
+    },
+    "program-manager": {
+      "source": "borghei/claude-skills",
+      "sourceType": "github",
+      "skillPath": "project-management/program-manager/SKILL.md",
+      "computedHash": "4264973d92e4c765ef068d41dc4c1335e722197fbae8e6198ad10accd7747a09"
     },
     "qdrant-clients-sdk": {
       "source": "qdrant/skills",

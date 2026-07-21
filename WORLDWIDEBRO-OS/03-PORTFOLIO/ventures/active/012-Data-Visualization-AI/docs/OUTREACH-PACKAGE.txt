@@ -1,0 +1,34 @@
+Subject: Scalable Partnership Inquiries — 012-Data-Visualization-AI
+
+Hello [Prospect Name],
+
+My name is [My Name] representing Winners Circle WC LLC. I am reaching out regarding our automated service portfolio under TECH-012-Data-Visualization-AI. 
+
+We provide productized integrations and support systems specifically tailored for the Sales & Billing department. Below is an outline of our pricing and structure:
+
+# TEC Sales Scripts — Tech & DevTools Outreach
+
+**Use:** Acquiring engineering teams, software agencies, and companies needing AI code scanning or model routing.
+**Pairs with:** `TEC-CAPABILITY-STATEMENT.md` · `TEC-FORMATION-CREDENTIAL-TRACKER.md`.
+
+---
+
+## 1) COLD CALL / INTRO SCRIPT (CTO / lead architect)
+> "Hi [Name], this is [Rep Name] with Data Visualization Ai. I'm calling because we help engineering teams cut their LLM API token costs by up to 90% when using AI coding agents. We do this by replacing raw codebase context dumps with lightweight symbol indexes. I'm not selling consultancy packages today—we ran a benchmark speed-comparison on standard repository structures. Can I send that benchmark report to your lead architect's email?"
+
+---
+
+## 2) EMAIL SEQUENCE
+
+### Touch 1 — Token Cost Benchmark (Day 0)
+**Subject:** Benchmark: Cutting LLM token costs by 90% on [Company Name] repos
+
+> Hi [Name],
+>
+> Pushing full codebases or massive directories into LLM context windows is highly... (Extracted from local script templates)
+
+If you are open to reviewing a custom presentation deck or scheduling a brief alignment call, please reply to this email.
+
+Best regards,
+Operations Lead
+Winners Circle WC LLC

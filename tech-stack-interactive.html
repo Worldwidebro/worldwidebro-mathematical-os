@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IZA OS Tech Stack Architecture — Interactive</title>
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", monospace;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    color: #e2e8f0;
+    overflow: hidden;
+    height: 100vh;
+  }
+  svg { display: block; width: 100%; height: 100%; }
+
+  .layer-group { transition: all 0.2s; }
+  .layer-rect { fill: rgba(51, 65, 85, 0.3); stroke: #64748b; stroke-width: 2px; rx: 6; cursor: pointer; }
+  .layer-rect:hover { fill: rgba(51, 65, 85, 0.6); stroke: #22d3ee; stroke-width: 3px; }
+  .layer-text { font-size: 12px; font-weight: 700; text-anchor: start; pointer-events: none; fill: #e2e8f0; }
+
+  .tool-circle { transition: all 0.2s; cursor: pointer; }
+  .tool-circle:hover { filter: drop-shadow(0 0 12px rgba(34, 211, 238, 0.8)); stroke-width: 3px; }
+  .tool-text { font-size: 10px; text-anchor: middle; pointer-events: none; font-weight: 600; fill: #fff; }
+
+  .tooltip {
+    position: absolute;
+    background: rgba(15, 23, 42, 0.98);
+    border: 2px solid #22d3ee;
+    border-radius: 8px;
+    padding: 14px;
+    font-size: 11px;
+    z-index: 1000;
+    pointer-events: none;
+    display: none;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8);
+    max-width: 320px;
+    line-height: 1.6;
+  }
+  .tooltip-title { font-weight: bold; color: #22d3ee; font-size: 12px; margin-bottom: 8px; }
+  .tooltip-section { margin: 8px 0; border-top: 1px solid #334155; padding-top: 6px; }
+  .tooltip-row { margin: 4px 0; }
+  .tooltip-label { color: #94a3b8; font-weight: 600; display: inline-block; width: 80px; }
+
+  .status-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; }
+  .status-ready { background: #10b981; }
+  .status-partial { background: #f59e0b; }
+  .status-missing { background: #e11d48; }
+
+  .legend {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(15, 23, 42, 0.95);
+    border: 1px solid #334155;
+    border-radius: 8px;
+    padding: 14px;
+    font-size: 11px;
+    max-width: 220px;
+  }
+  .legend-title { font-weight: bold; color: #22d3ee; margin-bottom: 10px; }
+  .legend-item { margin: 6px 0; display: flex; align-items: center; gap: 8px; }
+  .legend-box { width: 12px; height: 12px; border-radius: 2px; flex-shrink: 0; }
+
+  .controls {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(15, 23, 42, 0.95);
+    border: 1px solid #334155;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 11px;
+  }
+  .control-btn { padding: 6px 10px; margin-right: 6px; background: #22d3ee; color: #0f172a; border: none; border-radius: 4px; cursor: pointer; font-weight: 600; font-size: 10px; }
+  .control-btn:hover { background: #06b6d4; }
+
+  h1 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    font-weight: bold;
+    color: #22d3ee;
+  }
+</style>
+</head>
+<body>
+
+<h1>IZA OS Tech Stack Architecture</h1>
+
+<div class="legend">
+  <div class="legend-title">Tool Status</div>
+  <div class="legend-item">
+    <div class="legend-box status-ready"></div>
+    <span>Ready (90%+)</span>
+  </div>
+  <div class="legend-item">
+    <div class="legend-box status-partial"></div>
+    <span>Partial (40-89%)</span>
+  </div>
+  <div class="legend-item">
+    <div class="legend-box status-missing"></div>
+    <span>Missing (0-39%)</span>
+  </div>
+  <div style="margin-top: 12px; border-top: 1px solid #334155; padding-top: 10px;">
+    <div class="legend-title">Phases</div>
+    <div style="font-size: 10px; line-height: 1.8;">
+      <div>🔴 TIER 1: This Week</div>
+      <div>🟠 TIER 2: Next 2 Weeks</div>
+      <div>🟡 TIER 3: Next Month</div>
+    </div>
+  </div>
+</div>
+
+<div class="controls">
+  <button class="control-btn" onclick="resetView()">Reset View</button>
+  <span style="margin-left: 10px; color: #94a3b8;">Scroll to zoom | Drag to pan | Hover for details</span>
+</div>
+
+<div class="tooltip" id="tooltip"></div>
+<svg id="graph"></svg>
+
+<script>
+// Complete tech stack data
+const techStack = {
+  layers: [
+    {
+      id: "layer-0",
+      name: "Being",
+      subtitle: "Soul, Identity, Purpose",
+      tools: [],
+      status: "missing"
+    },
+    {
+      id: "layer-1",
+      name: "Mind",
+      subtitle: "Knowledge, Understanding, Wisdom",
+      tools: [
+        { id: "neo4j", name: "Neo4j", status: "ready", readiness: 80, tier: 2, description: "Knowledge graph: ventures, capabilities, relationships. 2,273 IMPLEMENTS + 6,542 NEEDS edges live." },
+        { id: "qdrant", name: "Qdrant", status: "ready", readiness: 85, tier: 2, description: "Semantic memory: 1,648 repo vectors, 15,558 note vectors. Ollama nomic-embed local." },
+        { id: "obsidian", name: "Obsidian", status: "ready", readiness: 90, tier: 2, description: "Knowledge capture: 8,476 entities, 8,652 relationships exported + dashboards." }
+      ]
+    },
+    {
+      id: "layer-2",
+      name: "Trivium",
+      subtitle: "Grammar, Logic, Rhetoric",
+      tools: [
+        { id: "stirling", name: "Stirling PDF", status: "missing", readiness: 0, tier: 1, description: "Grammar extraction: PDF → markdown. BLOCKED: not integrated into workflow." },
+        { id: "socraticode", name: "SocratiCode", status: "partial", readiness: 50, tier: 2, description: "Logic analysis: code impact & dependency intelligence via MCP. Not in code review flow." },
+        { id: "remomix", name: "RepoMix", status: "missing", readiness: 0, tier: 2, description: "Rhetoric: AI context packaging available. NOT USED in agent preambles yet." }
+      ]
+    },
+    {
+      id: "layer-3",
+      name: "Quadrivium",
+      subtitle: "Arithmetic, Geometry, Music, Astronomy",
+      tools: [
+        { id: "postgres", name: "PostgreSQL", status: "ready", readiness: 95, tier: 2, description: "Arithmetic: all transactional data. Supabase + T7 native. 712 ventures + decisions." },
+        { id: "neo4j-2", name: "Neo4j Geo", status: "ready", readiness: 80, tier: 2, description: "Geometry: relationship mapping. OPCO tree + agent dependency graph." },
+        { id: "litellm", name: "LiteLLM", status: "ready", readiness: 90, tier: 2, description: "Patterns: model routing. qwen2.5:32b → Claude fallback. All agents use." }
+      ]
+    },
+    {
+      id: "layer-4",
+      name: "Creation",
+      subtitle: "Writing, Design, Engineering",
+      tools: [
+        { id: "graphify", name: "Graphify", status: "partial", readiness: 60, tier: 2, description: "Engineering visualization: repo dependency mapping works. NOT fed to Neo4j yet." },
+        { id: "litellm-gen", name: "LiteLLM Gen", status: "ready", readiness: 90, tier: 2, description: "Generation engine: model-based creation via routing." },
+        { id: "ollama", name: "Ollama", status: "ready", readiness: 85, tier: 2, description: "Local creation: qwen2.5:32b, qwen3:8b, nomic-embed-text. Mac Studio GPU." }
+      ]
+    },
+    {
+      id: "layer-5",
+      name: "Society",
+      subtitle: "Economics, Business, Finance, Law, HR",
+      tools: [
+        { id: "postgres-erp", name: "PostgreSQL ERP", status: "ready", readiness: 95, tier: 2, description: "Business records: ventures, contacts, financials. Source of truth." },
+        { id: "n8n", name: "n8n", status: "ready", readiness: 80, tier: 2, description: "Business workflows: 3 Zapier zaps. form→task, app→CRM, payment→invoice. Running on Mac Studio." },
+        { id: "neo4j-org", name: "Neo4j Org", status: "ready", readiness: 80, tier: 2, description: "Organizational structure: OPCO hierarchy, teams, escalation paths, decision authority." }
+      ]
+    },
+    {
+      id: "layer-6",
+      name: "Civilization",
+      subtitle: "Ethics, Governance, Culture, Long-term",
+      tools: [
+        { id: "langfuse", name: "Langfuse", status: "partial", readiness: 70, tier: 1, description: "Audit trail: LLM tracing FIXED 07/13. No apps instrumented yet. BLOCKED: add to 4 CON agents." },
+        { id: "prometheus", name: "Prometheus", status: "partial", readiness: 40, tier: 1, description: "Measurement: metrics collection. Only self-scraping. BLOCKED: add otel-collector targets." },
+        { id: "grafana", name: "Grafana", status: "partial", readiness: 30, tier: 1, description: "Transparency: dashboards defined. BLOCKED: admin login broken, needs password reset." }
+      ]
+    },
+    {
+      id: "layer-infra",
+      name: "Integration & Orchestration",
+      subtitle: "Data → Automation → Intelligence → Observability → Agency",
+      tools: [
+        { id: "crewai", name: "CrewAI", status: "missing", readiness: 0, tier: 1, description: "Agent orchestration: tool available, NOT WIRED to agents. BLOCKS multi-agent coordination." },
+        { id: "publicapis", name: "Public APIs", status: "missing", readiness: 0, tier: 2, description: "Service discovery: available. NO integration to ventures yet." },
+        { id: "exo", name: "exo", status: "missing", readiness: 0, tier: 3, description: "Distributed inference: installed Mac Studio. NOT RUNNING. GPU sharing not activated." }
+      ]
+    }
+  ],
+  opcoDependencies: [
+    { opco: "CON", tools: ["litellm", "ollama", "neo4j", "postgres", "n8n"], readiness: 95 },
+    { opco: "STA", tools: ["litellm", "qdrant", "postgres", "n8n"], readiness: 80 },
+    { opco: "RE", tools: ["litellm", "qdrant", "postgres"], readiness: 70 },
+    { opco: "EDU", tools: ["litellm", "ollama", "neo4j", "postgres"], readiness: 80 },
+    { opco: "FIN", tools: ["postgres", "neo4j", "prometheus"], readiness: 75 },
+    { opco: "LOG", tools: ["litellm", "neo4j", "postgres", "qdrant"], readiness: 80 },
+    { opco: "IZA OS", tools: ["litellm", "ollama", "neo4j", "qdrant", "postgres", "langfuse", "prometheus", "grafana", "n8n"], readiness: 85 }
+  ]
+};
+
+const svg = d3.select("#graph");
+const width = window.innerWidth;
+const height = window.innerHeight;
+
+svg.attr("width", width).attr("height", height);
+const g = svg.append("g");
+
+// Color mapping
+const statusColor = {
+  "ready": "#10b981",
+  "partial": "#f59e0b",
+  "missing": "#e11d48"
+};
+
+// Zoom
+const zoom = d3.zoom().on("zoom", (e) => {
+  g.attr("transform", e.transform);
+});
+svg.call(zoom);
+
+function resetView() {
+  svg.transition().duration(750).call(
+    zoom.transform,
+    d3.zoomIdentity.translate(width / 2, 40).scale(0.9)
+  );
+}
+
+// Draw layers and tools
+let nodeY = 80;
+
+techStack.layers.forEach((layer, layerIdx) => {
+  const layerX = 80;
+  const layerWidth = width - 260;
+  const layerHeight = 70;
+
+  // Layer background
+  const layerGroup = g.append("g").attr("class", "layer-group");
+
+  layerGroup.append("rect")
+    .attr("class", "layer-rect")
+    .attr("x", layerX)
+    .attr("y", nodeY)
+    .attr("width", layerWidth)
+    .attr("height", layerHeight);
+
+  // Layer label
+  layerGroup.append("text")
+    .attr("class", "layer-text")
+    .attr("x", layerX + 16)
+    .attr("y", nodeY + 22)
+    .text(`${layer.name.toUpperCase()}: ${layer.subtitle}`);
+
+  // Tools within layer
+  if (layer.tools && layer.tools.length > 0) {
+    const toolSpacing = (layerWidth - 80) / Math.max(layer.tools.length, 1);
+    const toolY = nodeY + 50;
+
+    layer.tools.forEach((tool, toolIdx) => {
+      const toolX = layerX + 40 + (toolIdx * toolSpacing);
+      const toolGroup = layerGroup.append("g");
+
+      // Tool circle
+      toolGroup.append("circle")
+        .attr("class", "tool-circle")
+        .attr("cx", toolX)
+        .attr("cy", toolY)
+        .attr("r", 14)
+        .attr("fill", statusColor[tool.status])
+        .attr("stroke", "#1e293b")
+        .attr("stroke-width", 2)
+        .on("mouseover", function(e) {
+          const tooltip = document.getElementById("tooltip");
+          let html = `<div class="tooltip-title">${tool.name}</div>`;
+          html += `<div class="tooltip-section">`;
+          const statusText = { ready: "Ready", partial: "Partial", missing: "Missing" };
+          html += `<span class="status-dot status-${tool.status}"></span>`;
+          html += `<strong>${statusText[tool.status]}</strong> (${tool.readiness}%)`;
+          html += `<div style="margin-top: 4px; color: #cbd5e1;">Tier ${tool.tier}</div>`;
+          html += `</div>`;
+          html += `<div class="tooltip-section">${tool.description}</div>`;
+          tooltip.innerHTML = html;
+          tooltip.style.display = "block";
+          tooltip.style.left = (e.pageX + 12) + "px";
+          tooltip.style.top = (e.pageY + 12) + "px";
+        })
+        .on("mousemove", (e) => {
+          const tooltip = document.getElementById("tooltip");
+          tooltip.style.left = (e.pageX + 12) + "px";
+          tooltip.style.top = (e.pageY + 12) + "px";
+        })
+        .on("mouseout", () => {
+          document.getElementById("tooltip").style.display = "none";
+        });
+
+      // Tool label
+      toolGroup.append("text")
+        .attr("class", "tool-text")
+        .attr("x", toolX)
+        .attr("y", toolY + 4)
+        .text(tool.name.split(" ")[0]);
+    });
+  }
+
+  nodeY += 100;
+});
+
+// Draw OPCO section
+nodeY += 20;
+g.append("text")
+  .attr("x", 80)
+  .attr("y", nodeY)
+  .attr("font-size", "14px")
+  .attr("font-weight", "bold")
+  .attr("fill", "#22d3ee")
+  .text("OPCO TOOL DEPENDENCIES");
+
+nodeY += 30;
+
+techStack.opcoDependencies.forEach((opco, idx) => {
+  const opcoX = 80 + (idx * Math.floor((width - 200) / 7));
+  const opcoY = nodeY;
+
+  // OPCO box
+  g.append("rect")
+    .attr("x", opcoX)
+    .attr("y", opcoY)
+    .attr("width", 130)
+    .attr("height", 50)
+    .attr("fill", "rgba(51, 65, 85, 0.2)")
+    .attr("stroke", "#64748b")
+    .attr("stroke-width", 1)
+    .attr("rx", 4);
+
+  // OPCO name
+  g.append("text")
+    .attr("x", opcoX + 65)
+    .attr("y", opcoY + 18)
+    .attr("text-anchor", "middle")
+    .attr("font-weight", "bold")
+    .attr("fill", "#22d3ee")
+    .text(opco.opco);
+
+  // OPCO readiness
+  const readiness = opco.readiness;
+  const readinessColor = readiness >= 80 ? "#10b981" : readiness >= 60 ? "#f59e0b" : "#e11d48";
+
+  g.append("text")
+    .attr("x", opcoX + 65)
+    .attr("y", opcoY + 34)
+    .attr("text-anchor", "middle")
+    .attr("font-size", "11px")
+    .attr("fill", readinessColor)
+    .text(`${readiness}% Ready`);
+
+  // Tool count
+  g.append("text")
+    .attr("x", opcoX + 65)
+    .attr("y", opcoY + 46)
+    .attr("text-anchor", "middle")
+    .attr("font-size", "9px")
+    .attr("fill", "#94a3b8")
+    .text(`${opco.tools.length} tools`);
+});
+
+resetView();
+
+window.addEventListener("resize", () => {
+  svg.attr("width", window.innerWidth).attr("height", window.innerHeight);
+});
+</script>
+
+</body>
+</html>

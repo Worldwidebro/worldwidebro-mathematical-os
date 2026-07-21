@@ -104,3 +104,21 @@ WORLDWIDEBRO-OS/08-DATA/Influence-Venture-Business-OS/STRATEGY_LAYERS/WORLDWIDEB
 WORLDWIDEBRO-OS/08-DATA/Influence-Venture-Business-OS/STRATEGY_LAYERS/WORLDWIDEBRO-OS/10_VENTURES/SaaS_Ventures/bw-001-lash-extension-studio/up-next-marketplace
 WORLDWIDEBRO-OS/08-DATA/Influence-Venture-Business-OS/STRATEGY_LAYERS/WORLDWIDEBRO-OS/10_VENTURES/SaaS_Ventures/ent-venture-001-hrms/15_PEOPLE_OPERATIONS
 WORLDWIDEBRO-OS/08-DATA/Influence-Venture-Business-OS/STRATEGY_LAYERS/WORLDWIDEBRO-OS/10_VENTURES/SaaS_Ventures/venture-factory-core
+
+# Root directory sprawl prevention (2026-07-21 cleanup)
+# Data registry files → WORLDWIDEBRO-OS/08-DATA/registries/
+repo-*.json
+repo-*.csv
+venture-*.json
+venture-*.csv
+graphify-*.json
+
+# Topology & readiness docs → .planning/
+TOPOLOGY*.md
+MAPS.md
+SECTOR-READINESS*.md
+VENTURE-READINESS*.md
+
+# Archived PDFs (old versions)
+Medical-Courier-Packet.pdf
+Contacts.vcf.pdf

@@ -1,11 +1,11 @@
 ---
 tags: knowledge-graph, dashboard, obsidian
-created: 2026-07-15T15:14:06.111807
+created: 2026-07-20T18:14:23.654398
 ---
 
 # Knowledge Graph Dashboard
 
-**Last Sync:** 2026-07-15T15:14:06.106255
+**Last Sync:** 2026-07-20T18:14:23.652385
 **Status:** LIVE
 
 ---
@@ -14,11 +14,11 @@ created: 2026-07-15T15:14:06.111807
 
 | Metric | Value |
 |--------|-------|
-| **Total Entities** | 7082 |
-| **Ventures** | 100 |
+| **Total Entities** | 11264 |
+| **Ventures** | 0 |
 | **Repos** | 0 |
 | **Contacts** | 0 |
-| **Total Relationships** | 7276 |
+| **Total Relationships** | 11654 |
 | **Repos w/ Connections** | 0 |
 
 ---
@@ -98,9 +98,9 @@ LIMIT 20
 
 ## Sync Status
 
-✅ **Entities imported:** 7082
-✅ **Relationships established:** 7276
-✅ **Dashboard rendered:** 2026-07-15 15:14:06
+✅ **Entities imported:** 11264
+✅ **Relationships established:** 11654
+✅ **Dashboard rendered:** 2026-07-20 18:14:23
 
 ---
 

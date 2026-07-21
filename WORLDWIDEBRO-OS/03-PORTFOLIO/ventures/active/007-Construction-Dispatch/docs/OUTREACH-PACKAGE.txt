@@ -1,0 +1,34 @@
+Subject: Scalable Partnership Inquiries — 007-Construction-Dispatch
+
+Hello [Prospect Name],
+
+My name is [My Name] representing Winners Circle WC LLC. I am reaching out regarding our automated service portfolio under LT-007-Construction-Dispatch. 
+
+We provide productized integrations and support systems specifically tailored for the Sales & Billing department. Below is an outline of our pricing and structure:
+
+# LOG Sales Scripts — Dispatch & Logistics Outreach
+
+**Use:** Acquiring owner-operators, freight brokers, and shippers for route optimization and dispatch services.
+**Pairs with:** `LOG-CAPABILITY-STATEMENT.md` · `LOG-FORMATION-CREDENTIAL-TRACKER.md`.
+
+---
+
+## 1) COLD CALL SCRIPT (carrier / owner-operator)
+> "Hi [Name], this is [Rep Name] with Construction Dispatch. I'm calling because we work with local carriers and owner-operators running out of the Charlotte region to find higher-paying loads and eliminate empty backhauls. I'm not selling load board subscriptions—we actually run an automated dispatch bot that tracks load rates daily. We put together a list of the 3 highest-paying freight lanes leaving NC this week. Can I text or email that lane list to you?"
+
+---
+
+## 2) EMAIL SEQUENCE
+
+### Touch 1 — Lane Rate List (Day 0)
+**Subject:** High-paying freight lanes leaving NC this week
+
+> Hi [Name],
+>
+> Running empty backhauls or hauling cheap freight is the fastest way to bleed money in... (Extracted from local script templates)
+
+If you are open to reviewing a custom presentation deck or scheduling a brief alignment call, please reply to this email.
+
+Best regards,
+Operations Lead
+Winners Circle WC LLC

@@ -1,0 +1,30 @@
+{
+  "venture_classifier": {
+    "tools": ["slack", "clickup", "supabase"],
+    "data_access": ["ventures", "audit_logs", "agent_logs"],
+    "cost_limit_per_month": 100,
+    "rate_limit_per_minute": 100,
+    "description": "Classifies new ventures, posts to Slack, creates ClickUp tasks"
+  },
+  "risk_assessor": {
+    "tools": ["slack"],
+    "data_access": ["ventures", "risks", "audit_logs"],
+    "cost_limit_per_month": 50,
+    "rate_limit_per_minute": 50,
+    "description": "Assesses venture risks, posts alerts"
+  },
+  "candidate_matcher": {
+    "tools": ["slack", "clickup"],
+    "data_access": ["candidates", "jobs"],
+    "cost_limit_per_month": 50,
+    "rate_limit_per_minute": 100,
+    "description": "Matches candidates to jobs"
+  },
+  "property_valuer": {
+    "tools": ["slack", "clickup"],
+    "data_access": ["properties", "audit_logs"],
+    "cost_limit_per_month": 75,
+    "rate_limit_per_minute": 50,
+    "description": "Values properties, updates spreadsheets"
+  }
+}

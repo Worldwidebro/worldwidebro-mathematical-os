@@ -70,6 +70,22 @@ CREATE (:Repository {name: 'anthropic-cookbook', url: 'https://github.com/anthro
 CREATE (:Repository {name: 'huggingface-cookbook', url: 'https://github.com/huggingface/cookbook', category: 'Cookbooks', purpose: 'Guides on running models, local fine-tunes, and transformers', status: 'active'});
 CREATE (:Repository {name: 'vex-hero-site', url: 'file:///Users/acebless/Documents/vex-hero-site', category: 'Venture Frontends', purpose: 'Landing platform for VEX (Venture Execution) systems', status: 'active'});
 CREATE (:Repository {name: 'classbuild', url: 'https://github.com/jtangen/classbuild', category: 'App Factory', purpose: 'AI-powered course generator built on evidence-based learning science', status: 'active'});
+CREATE (:Repository {name: 'graphify', url: 'https://github.com/Worldwidebro/graphify', category: 'Code Intelligence', purpose: 'Repository graph generation', status: 'active'});
+CREATE (:Repository {name: 'serena', url: 'https://github.com/Worldwidebro/serena', category: 'Code Intelligence', purpose: 'Semantic code understanding', status: 'active'});
+CREATE (:Repository {name: 'sourcegraph-mcp', url: 'https://github.com/sourcegraph/mcp', category: 'MCP Ecosystem', purpose: 'Symbol search and code navigation', status: 'active'});
+CREATE (:Repository {name: 'repomix', url: 'https://github.com/yamadashy/repomix', category: 'Code Intelligence', purpose: 'AI context packaging', status: 'active'});
+CREATE (:Repository {name: 'understand-anything', url: 'https://github.com/Worldwidebro/understand-anything', category: 'Code Intelligence', purpose: 'Repository explanation and onboarding', status: 'active'});
+CREATE (:Repository {name: 'litellm', url: 'https://github.com/BerriAI/litellm', category: 'Model Routing', purpose: 'Model routing and gateway management', status: 'active'});
+CREATE (:Repository {name: 'ollama', url: 'https://github.com/ollama/ollama', category: 'Local AI Runtime', purpose: 'Local inference and embeddings', status: 'active'});
+CREATE (:Repository {name: 'colibri', url: 'https://github.com/Worldwidebro/colibri', category: 'Local AI Runtime', purpose: 'High-performance local model inference', status: 'active'});
+CREATE (:Repository {name: 'exo', url: 'https://github.com/exo-explore/exo', category: 'Local AI Runtime', purpose: 'Distributed inference across multiple devices', status: 'active'});
+CREATE (:Repository {name: 'langfuse', url: 'https://github.com/langfuse/langfuse', category: 'AI Evaluation', purpose: 'Tracing, evaluation, and observability', status: 'active'});
+CREATE (:Repository {name: 'postgresql', url: 'https://github.com/postgres/postgres', category: 'Data Layer', purpose: 'Operational database records', status: 'active'});
+CREATE (:Repository {name: 'minio', url: 'https://github.com/minio/minio', category: 'Data Layer', purpose: 'Object storage management', status: 'active'});
+CREATE (:Repository {name: 'stirling-pdf', url: 'https://github.com/Stirling-Tools/Stirling-PDF', category: 'Automation', purpose: 'Document conversion and preprocessing', status: 'active'});
+CREATE (:Repository {name: 'public-apis', url: 'https://github.com/public-apis/public-apis', category: 'Automation', purpose: 'External service discovery', status: 'active'});
+CREATE (:Repository {name: 'treemap', url: 'https://github.com/Worldwidebro/treemap', category: 'Infrastructure', purpose: 'Disk discovery and storage optimization', status: 'active'});
+CREATE (:Repository {name: 'omnirouter', url: 'https://github.com/Worldwidebro/omnirouter', category: 'Model Routing', purpose: 'Dynamic LLM load-balancer / thinking router', status: 'active'});
 
 // 2. Create Capability Nodes
 CREATE (:Capability {id: 'unknown', name: 'unknown', category: '', description: ''});
@@ -82,26 +98,40 @@ CREATE (:Capability {id: 'personal-ceo', name: 'Personal AI CEO Layer', category
 CREATE (:Capability {id: 'cowork-desktop', name: 'Cowork Desktop Workspace', category: 'AI EMPLOYEES', description: 'Local GUI container environment for cooperative AI agent workers.'});
 CREATE (:Capability {id: 'mvp-app-factory', name: 'Rapid MVP App Factory', category: 'APP FACTORY', description: 'Generates database-backed applications from standard text descriptions.'});
 CREATE (:Capability {id: 'process-orchestrator', name: 'BPMN Process Orchestrator', category: 'AUTOMATION', description: 'Formally maps and drives multi-step approvals and integrations.'});
-CREATE (:Capability {id: 'aws-simulation', name: 'Local AWS Cloud Simulator', category: 'INFRASTRUCTURE', description: 'Emulates AWS endpoints (Lambda, S3, DynamoDB) locally for cost-free tests.'});
+CREATE (:Capability {id: 'aws-simulation', name: 'Local AWS Cloud Simulator', category: 'INFRASTRUCTURE', description: 'Emulates AWS endpoints (Lambda, S3, DynamoDB) locally for cost-free'});
 CREATE (:Capability {id: 'pen-tester', name: 'Penetration Testing Agent', category: 'SECURITY', description: 'Autonomous scanning of open ports and credentials verification.'});
-CREATE (:Capability {id: 'second-brain-sync', name: 'Second Brain Sync', category: 'DATA MEMORY', description: 'Synchronizes personal notes, wikis, and markdown documents into agent context.'});
+CREATE (:Capability {id: 'second-brain-sync', name: 'Second Brain Sync', category: 'DATA MEMORY', description: 'Synchronizes personal notes, wikis, and markdown documents into agent'});
 CREATE (:Capability {id: 'meeting-transcriber', name: 'Meeting Transcription & Summary', category: 'VOICE', description: 'Audio diarization, speaker detection, and action item summary generation.'});
 CREATE (:Capability {id: 'cctv-vision', name: 'CCTV Object Detection', category: 'COMPUTER VISION', description: 'Parses video streams for people, objects, and activities locally.'});
 CREATE (:Capability {id: 'landing-frontends', name: 'Venture Presentation Frontends', category: 'VENTURE FRONTENDS', description: 'Static and dynamic web landing layouts for launching ventures.'});
-CREATE (:Capability {id: 'course-generator', name: 'AI Course Generator', category: 'APP FACTORY', description: 'Generates complete multimedia-ready courses, slide decks, and quiz materials based on learning science.'});
+CREATE (:Capability {id: 'course-generator', name: 'AI Course Generator', category: 'APP FACTORY', description: 'Generates complete multimedia-ready courses, slide decks, and quiz'});
+CREATE (:Capability {id: 'stealth-browsing', name: 'Stealth Agentic Browsing', category: 'COMPUTER VISION', description: 'Playwright/stealth spoofed browser execution for automated data extraction.'});
+CREATE (:Capability {id: 'agent-sandbox-isolation', name: 'Secure Agent Sandbox', category: 'SECURITY', description: 'Filesystem and network command isolation sandbox for AI agents.'});
+CREATE (:Capability {id: 'real-time-cost-tracking', name: 'Real-Time Token Cost Tracking', category: 'INFRASTRUCTURE', description: 'OpenTelemetry cost logging and budget limits for multi-agent execution.'});
+CREATE (:Capability {id: 'agent-consensus-memory', name: 'Consensus-Based Agent Memory', category: 'DATA MEMORY', description: 'Byzantine Fault Tolerant shared memory systems for collaborative agent'});
+CREATE (:Capability {id: 'repository-graphing', name: 'Repository Graphing', category: 'CODE INTELLIGENCE', description: 'Repository graph generation and visual dependency mappings.'});
+CREATE (:Capability {id: 'semantic-understanding', name: 'Semantic Understanding', category: 'CODE INTELLIGENCE', description: 'Semantic code understanding, explanation, and developer onboarding.'});
+CREATE (:Capability {id: 'distributed-inference', name: 'Distributed Inference', category: 'LOCAL AI', description: 'Distributed inference across multiple devices locally.'});
+CREATE (:Capability {id: 'document-preprocessing', name: 'Document Preprocessing', category: 'AUTOMATION', description: 'Document conversion, Stirling PDF preprocessing, and metadata extraction.'});
+CREATE (:Capability {id: 'storage-optimization', name: 'Storage Optimization', category: 'INFRASTRUCTURE', description: 'Disk discovery, duplicate tracking, and storage optimization.'});
+CREATE (:Capability {id: 'thinking-routing', name: 'Dynamic LLM Routing', category: 'LOCAL AI', description: 'Dynamic LLM load-balancer and thinking budget routing engine.'});
 
 // 3. Create Agent Nodes
-CREATE (:Agent {name: 'Venture Creator Agent'});
-CREATE (:Agent {name: 'CTO Agent'});
-CREATE (:Agent {name: 'COO Agent'});
 CREATE (:Agent {name: 'DevOps Agent'});
-CREATE (:Agent {name: 'Project Manager Agent'});
 CREATE (:Agent {name: 'Backend Engineer Agent'});
-CREATE (:Agent {name: 'Research Agent'});
-CREATE (:Agent {name: 'Frontend Engineer Agent'});
-CREATE (:Agent {name: 'CEO Agent'});
-CREATE (:Agent {name: 'AI Architect Agent'});
+CREATE (:Agent {name: 'Project Manager Agent'});
 CREATE (:Agent {name: 'Compliance Agent'});
+CREATE (:Agent {name: 'Frontend Engineer Agent'});
+CREATE (:Agent {name: 'Research Agent'});
+CREATE (:Agent {name: 'Opus Prime'});
+CREATE (:Agent {name: 'AI Architect Agent'});
+CREATE (:Agent {name: 'CTO Agent'});
+CREATE (:Agent {name: 'Quinn Ops'});
+CREATE (:Agent {name: 'Claude Architect'});
+CREATE (:Agent {name: 'Mary Analyst'});
+CREATE (:Agent {name: 'CEO Agent'});
+CREATE (:Agent {name: 'Venture Creator Agent'});
+CREATE (:Agent {name: 'COO Agent'});
 
 // 4. Create Graph Relationships
 MATCH (r:Repository {name: ''}), (c:Capability {id: ''}) CREATE (r)-[:PROVIDES]->(c);
@@ -135,3 +165,17 @@ MATCH (r:Repository {name: 'LlamaIndex'}), (c:Capability {id: 'rag-orchestrator'
 MATCH (c:Capability {id: 'rag-orchestrator'}), (a:Agent {name: 'Research Agent'}) CREATE (a)-[:USES]->(c);
 MATCH (r:Repository {name: 'classbuild'}), (c:Capability {id: 'course-generator'}) CREATE (r)-[:PROVIDES]->(c);
 MATCH (c:Capability {id: 'course-generator'}), (a:Agent {name: 'Venture Creator Agent'}) CREATE (a)-[:USES]->(c);
+MATCH (r:Repository {name: 'graphify'}), (c:Capability {id: 'repository-graphing'}) CREATE (r)-[:PROVIDES]->(c);
+MATCH (c:Capability {id: 'repository-graphing'}), (a:Agent {name: 'Claude Architect'}) CREATE (a)-[:USES]->(c);
+MATCH (r:Repository {name: 'serena'}), (c:Capability {id: 'semantic-understanding'}) CREATE (r)-[:PROVIDES]->(c);
+MATCH (c:Capability {id: 'semantic-understanding'}), (a:Agent {name: 'Mary Analyst'}) CREATE (a)-[:USES]->(c);
+MATCH (r:Repository {name: 'understand-anything'}), (c:Capability {id: 'semantic-understanding'}) CREATE (r)-[:PROVIDES]->(c);
+MATCH (c:Capability {id: 'semantic-understanding'}), (a:Agent {name: 'Claude Architect'}) CREATE (a)-[:USES]->(c);
+MATCH (r:Repository {name: 'exo'}), (c:Capability {id: 'distributed-inference'}) CREATE (r)-[:PROVIDES]->(c);
+MATCH (c:Capability {id: 'distributed-inference'}), (a:Agent {name: 'Quinn Ops'}) CREATE (a)-[:USES]->(c);
+MATCH (r:Repository {name: 'stirling-pdf'}), (c:Capability {id: 'document-preprocessing'}) CREATE (r)-[:PROVIDES]->(c);
+MATCH (c:Capability {id: 'document-preprocessing'}), (a:Agent {name: 'Opus Prime'}) CREATE (a)-[:USES]->(c);
+MATCH (r:Repository {name: 'treemap'}), (c:Capability {id: 'storage-optimization'}) CREATE (r)-[:PROVIDES]->(c);
+MATCH (c:Capability {id: 'storage-optimization'}), (a:Agent {name: 'Quinn Ops'}) CREATE (a)-[:USES]->(c);
+MATCH (r:Repository {name: 'omnirouter'}), (c:Capability {id: 'thinking-routing'}) CREATE (r)-[:PROVIDES]->(c);
+MATCH (c:Capability {id: 'thinking-routing'}), (a:Agent {name: 'Claude Architect'}) CREATE (a)-[:USES]->(c);

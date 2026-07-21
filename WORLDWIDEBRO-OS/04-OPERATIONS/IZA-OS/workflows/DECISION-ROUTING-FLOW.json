@@ -1,0 +1,332 @@
+{
+  "name": "Decision Routing Flow",
+  "description": "Routes decisions through authority hierarchy based on amount/type. Auto-approves (<$5K), routes to director ($5K-$25K), escalates to Hermes (>$25K), or escalates irreversible decisions.",
+  "tags": ["IZA-OS", "Phase-3", "Decision-Routing"],
+  "active": true,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "decision-submit",
+        "responseMode": "onReceived"
+      },
+      "id": "webhook-receive",
+      "name": "Webhook: Decision Submit",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [100, 400]
+    },
+    {
+      "parameters": {
+        "operation": "insert",
+        "schema": "public",
+        "table": "decisions",
+        "columns": "decision_type,amount,venture_id,context,status,created_at",
+        "values": "={{ { decision_type: $json.decision_type, amount: $json.amount || 0, venture_id: $json.venture_id, context: JSON.stringify($json.context || {}), status: 'pending', created_at: 'NOW()' } }}"
+      },
+      "id": "log-decision",
+      "name": "Supabase: Log Decision",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 1,
+      "position": [300, 400]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "conditions": [
+            {
+              "condition": "isEqual",
+              "value1": "={{ $json.decision_type }}",
+              "value2": "'irreversible'"
+            }
+          ],
+          "combinator": "or"
+        }
+      },
+      "id": "check-irreversible",
+      "name": "Irreversible Decision?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [500, 400]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "conditions": [
+            {
+              "condition": "isGreaterThan",
+              "value1": "={{ $json.amount }}",
+              "value2": 25000
+            }
+          ],
+          "combinator": "or"
+        }
+      },
+      "id": "check-amount-gt-25k",
+      "name": "Amount > $25K?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [700, 400]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "conditions": [
+            {
+              "condition": "isGreaterThan",
+              "value1": "={{ $json.amount }}",
+              "value2": 5000
+            },
+            {
+              "condition": "isLessThanOrEqual",
+              "value1": "={{ $json.amount }}",
+              "value2": 25000
+            }
+          ],
+          "combinator": "and"
+        }
+      },
+      "id": "check-amount-5-25k",
+      "name": "$5K-$25K?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [700, 200]
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "schema": "public",
+        "table": "decisions",
+        "where": "id = $1",
+        "updateKey": "id",
+        "columns": "status,authority_routed_to,updated_at",
+        "values": "={{ { status: 'approved', authority_routed_to: 'auto', updated_at: 'NOW()' } }}"
+      },
+      "id": "update-auto-approve",
+      "name": "Supabase: Auto-Approve",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 1,
+      "position": [900, 100]
+    },
+    {
+      "parameters": {
+        "url": "http://localhost:3000/api/decision/execute",
+        "method": "POST",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "decision_id",
+              "value": "={{ $json.id }}"
+            },
+            {
+              "name": "approval_source",
+              "value": "'auto'"
+            }
+          ]
+        }
+      },
+      "id": "http-execute-decision",
+      "name": "HTTP: Execute Decision",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [1050, 100]
+    },
+    {
+      "parameters": {
+        "channel": "#iza-os-decisions",
+        "text": "✅ Decision Auto-Approved\n*Type:* {{ $json.decision_type }}\n*Amount:* ${{ $json.amount }}\n*Venture:* {{ $json.venture_id }}\n*Status:* Executed\n*Decision ID:* {{ $json.id }}"
+      },
+      "id": "slack-approve",
+      "name": "Slack: Log Approval",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2,
+      "position": [1200, 100]
+    },
+    {
+      "parameters": {
+        "query": "MATCH (d:Department {venture_id: $venture_id})-[:LED_BY]->(director:Agent) WHERE director.role = 'director' RETURN director.id as director_id, director.name as director_name, director.email as director_email",
+        "parameters": "={{ { venture_id: $json.venture_id } }}"
+      },
+      "id": "neo4j-find-director",
+      "name": "Neo4j: Find Department Director",
+      "type": "n8n-nodes-base.neo4j",
+      "typeVersion": 1,
+      "position": [900, 300]
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "schema": "public",
+        "table": "decisions",
+        "where": "id = $1",
+        "updateKey": "id",
+        "columns": "status,authority_routed_to,updated_at",
+        "values": "={{ { status: 'awaiting_director', authority_routed_to: $json.body[0].director_id, updated_at: 'NOW()' } }}"
+      },
+      "id": "update-route-director",
+      "name": "Supabase: Route to Director",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 1,
+      "position": [1050, 300]
+    },
+    {
+      "parameters": {
+        "channel": "{{ $json.body[0].director_email }}",
+        "text": "🔔 Decision Requires Director Approval\n*Type:* {{ $json.decision_type }}\n*Amount:* ${{ $json.amount }}\n*Venture:* {{ $json.venture_id }}\n*Context:* {{ JSON.stringify($json.context) }}\n*Decision ID:* {{ $json.id }}\n\nPlease review and approve/reject: http://localhost:3000/decisions/{{ $json.id }}"
+      },
+      "id": "slack-notify-director",
+      "name": "Slack: Notify Director",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2,
+      "position": [1200, 300]
+    },
+    {
+      "parameters": {
+        "query": "MATCH (h:Hermes) RETURN h.id as hermes_id, h.name as hermes_name, h.channel as hermes_channel"
+      },
+      "id": "neo4j-find-hermes",
+      "name": "Neo4j: Find Hermes",
+      "type": "n8n-nodes-base.neo4j",
+      "typeVersion": 1,
+      "position": [900, 500]
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "schema": "public",
+        "table": "decisions",
+        "where": "id = $1",
+        "updateKey": "id",
+        "columns": "status,authority_routed_to,updated_at",
+        "values": "={{ { status: 'awaiting_hermes', authority_routed_to: 'hermes-system', updated_at: 'NOW()' } }}"
+      },
+      "id": "update-route-hermes",
+      "name": "Supabase: Route to Hermes",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 1,
+      "position": [1050, 500]
+    },
+    {
+      "parameters": {
+        "channel": "#iza-os-hermes-decisions",
+        "text": "🚀 Decision Escalated to Hermes\n*Type:* {{ $json.decision_type }}\n*Amount:* ${{ $json.amount }}\n*Venture:* {{ $json.venture_id }}\n*Context:* {{ JSON.stringify($json.context) }}\n*Decision ID:* {{ $json.id }}\n*Authority Level:* {{ $json.decision_type === 'irreversible' ? 'IRREVERSIBLE' : 'LARGE_AMOUNT' }}"
+      },
+      "id": "slack-notify-hermes",
+      "name": "Slack: Notify Hermes",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2,
+      "position": [1200, 500]
+    },
+    {
+      "parameters": {
+        "query": "MATCH (h:Human {role: 'approver'}) RETURN h.id as approver_id, h.name as approver_name, h.email as approver_email LIMIT 1"
+      },
+      "id": "neo4j-find-human",
+      "name": "Neo4j: Find Human Approver",
+      "type": "n8n-nodes-base.neo4j",
+      "typeVersion": 1,
+      "position": [900, 700]
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "schema": "public",
+        "table": "decisions",
+        "where": "id = $1",
+        "updateKey": "id",
+        "columns": "status,authority_routed_to,updated_at",
+        "values": "={{ { status: 'awaiting_human', authority_routed_to: $json.body[0].approver_id, updated_at: 'NOW()' } }}"
+      },
+      "id": "update-route-human",
+      "name": "Supabase: Route to Human",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 1,
+      "position": [1050, 700]
+    },
+    {
+      "parameters": {
+        "channel": "{{ $json.body[0].approver_email }}",
+        "text": "⚠️ CRITICAL: Decision Requires Human Approval\n*Type:* {{ $json.decision_type }}\n*Amount:* ${{ $json.amount }}\n*Venture:* {{ $json.venture_id }}\n*Context:* {{ JSON.stringify($json.context) }}\n*Decision ID:* {{ $json.id }}\n*Reason:* IRREVERSIBLE DECISION\n\n⚡ URGENT: Review immediately at http://localhost:3000/decisions/{{ $json.id }}"
+      },
+      "id": "slack-notify-human",
+      "name": "Slack: Notify Human",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2,
+      "position": [1200, 700]
+    },
+    {
+      "parameters": {
+        "responseMode": "responseNode",
+        "body": "={{ { decision_id: $json.id, status: $json.status || 'pending', authority_routed_to: $json.authority_routed_to || 'unknown', timestamp: new Date().toISOString() } }}"
+      },
+      "id": "response-success",
+      "name": "Response: Success",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [1350, 400]
+    }
+  ],
+  "connections": {
+    "webhook-receive": {
+      "main": [[{"node": "log-decision", "type": "main", "index": 0}]]
+    },
+    "log-decision": {
+      "main": [[{"node": "check-irreversible", "type": "main", "index": 0}]]
+    },
+    "check-irreversible": {
+      "main": [
+        [{"node": "check-amount-gt-25k", "type": "main", "index": 0}],
+        [{"node": "neo4j-find-human", "type": "main", "index": 0}]
+      ]
+    },
+    "check-amount-gt-25k": {
+      "main": [
+        [{"node": "neo4j-find-hermes", "type": "main", "index": 0}],
+        [{"node": "check-amount-5-25k", "type": "main", "index": 0}]
+      ]
+    },
+    "check-amount-5-25k": {
+      "main": [
+        [{"node": "neo4j-find-director", "type": "main", "index": 0}],
+        [{"node": "update-auto-approve", "type": "main", "index": 0}]
+      ]
+    },
+    "update-auto-approve": {
+      "main": [[{"node": "http-execute-decision", "type": "main", "index": 0}]]
+    },
+    "http-execute-decision": {
+      "main": [[{"node": "slack-approve", "type": "main", "index": 0}]]
+    },
+    "slack-approve": {
+      "main": [[{"node": "response-success", "type": "main", "index": 0}]]
+    },
+    "neo4j-find-director": {
+      "main": [[{"node": "update-route-director", "type": "main", "index": 0}]]
+    },
+    "update-route-director": {
+      "main": [[{"node": "slack-notify-director", "type": "main", "index": 0}]]
+    },
+    "slack-notify-director": {
+      "main": [[{"node": "response-success", "type": "main", "index": 0}]]
+    },
+    "neo4j-find-hermes": {
+      "main": [[{"node": "update-route-hermes", "type": "main", "index": 0}]]
+    },
+    "update-route-hermes": {
+      "main": [[{"node": "slack-notify-hermes", "type": "main", "index": 0}]]
+    },
+    "slack-notify-hermes": {
+      "main": [[{"node": "response-success", "type": "main", "index": 0}]]
+    },
+    "neo4j-find-human": {
+      "main": [[{"node": "update-route-human", "type": "main", "index": 0}]]
+    },
+    "update-route-human": {
+      "main": [[{"node": "slack-notify-human", "type": "main", "index": 0}]]
+    },
+    "slack-notify-human": {
+      "main": [[{"node": "response-success", "type": "main", "index": 0}]]
+    }
+  }
+}

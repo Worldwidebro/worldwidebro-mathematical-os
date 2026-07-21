@@ -1,0 +1,30 @@
+models:
+  claude:
+    provider: anthropic
+    role: reasoning
+    default_endpoint: anthropic/claude-3-5-sonnet
+    context_window: 200000
+
+  deepseek:
+    provider: deepseek
+    role: coding
+    default_endpoint: deepseek/deepseek-coder
+    context_window: 128000
+
+  qwen:
+    provider: ollama
+    role: local-worker
+    default_endpoint: ollama/qwen2.5-coder
+    context_window: 32000
+
+  gpt:
+    provider: openai
+    role: planning
+    default_endpoint: openai/gpt-4o
+    context_window: 128000
+
+  gemini:
+    provider: google
+    role: analysis
+    default_endpoint: gemini/gemini-1.5-pro
+    context_window: 1048576

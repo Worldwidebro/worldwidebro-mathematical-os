@@ -1,0 +1,10 @@
+councils:
+  acquisition:
+    members:
+      - claude
+      - gpt
+      - gemini
+    chairman:
+      claude
+    threshold:
+      80%

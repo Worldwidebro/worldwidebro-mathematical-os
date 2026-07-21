@@ -1,0 +1,17 @@
+{
+  "business_id": "TECH-014",
+  "business_name": "Sentiment-Analyzer",
+  "sector": "technology",
+  "status": "mvp",
+  "stage": "development",
+  "capabilities": [
+    "Sentiment Analysis",
+    "Emotion Detection",
+    "Intent Classification"
+  ],
+  "revenue": {
+    "model": "SaaS + API",
+    "monthly_target": 12000
+  },
+  "created_at": "2026-07-16T01:02:33.201325"
+}

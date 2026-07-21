@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IZA OS Organizational Structure</title>
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    color: #e2e8f0;
+    overflow: hidden;
+    height: 100vh;
+  }
+  svg { display: block; width: 100%; height: 100%; }
+  .node-circle { transition: all 0.2s ease; cursor: pointer; }
+  .node-circle:hover { filter: drop-shadow(0 0 12px rgba(34, 211, 238, 0.8)); }
+  .node-text { font-size: 11px; font-weight: 600; text-anchor: middle; pointer-events: none; }
+  .link { fill: none; stroke: rgba(100, 116, 139, 0.3); stroke-width: 1.5px; }
+  .link.escalation { stroke: rgba(245, 158, 11, 0.5); stroke-dasharray: 4,4; }
+  .tooltip {
+    position: absolute;
+    background: rgba(15, 23, 42, 0.95);
+    border: 1px solid #22d3ee;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 12px;
+    z-index: 1000;
+    pointer-events: none;
+    display: none;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+    max-width: 280px;
+  }
+  .tooltip-title { font-weight: bold; color: #22d3ee; margin-bottom: 6px; }
+  .tooltip-row { margin: 4px 0; line-height: 1.4; }
+  .tooltip-label { color: #94a3b8; font-weight: 500; }
+  .legend {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(15, 23, 42, 0.9);
+    border: 1px solid #334155;
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 12px;
+    max-width: 200px;
+  }
+  .legend-title { font-weight: bold; margin-bottom: 12px; color: #22d3ee; }
+  .legend-item { display: flex; align-items: center; gap: 8px; margin: 8px 0; }
+  .legend-box { width: 14px; height: 14px; border-radius: 3px; }
+  .controls {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: rgba(15, 23, 42, 0.9);
+    border: 1px solid #334155;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 12px;
+  }
+  .control-btn { margin-right: 8px; padding: 6px 12px; background: #22d3ee; color: #0f172a; border: none; border-radius: 4px; cursor: pointer; font-weight: 600; font-size: 11px; }
+  .control-btn:hover { background: #06b6d4; }
+  h1 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: bold;
+    color: #22d3ee;
+  }
+</style>
+</head>
+<body>
+
+<h1>IZA OS — Organizational Structure (7 OPCOs + Infrastructure)</h1>
+
+<div class="controls">
+  <button class="control-btn" onclick="resetZoom()">Reset View</button>
+</div>
+
+<div class="legend">
+  <div class="legend-title">Authority Levels</div>
+  <div class="legend-item">
+    <div class="legend-box" style="background: #10b981;"></div>
+    <span>Autonomous (90%+)</span>
+  </div>
+  <div class="legend-item">
+    <div class="legend-box" style="background: #f59e0b;"></div>
+    <span>Supervised (80-89%)</span>
+  </div>
+  <div class="legend-item">
+    <div class="legend-box" style="background: #ec7063;"></div>
+    <span>Monitored (70-79%)</span>
+  </div>
+  <div class="legend-item">
+    <div class="legend-box" style="background: #e11d48;"></div>
+    <span>Training (&lt;70%)</span>
+  </div>
+  <div style="margin-top: 12px; border-top: 1px solid #334155; padding-top: 12px;">
+    <div class="legend-item">
+      <div style="width: 20px; height: 2px; background: rgba(245, 158, 11, 0.5); margin-right: 4px;"></div>
+      <span>Escalation</span>
+    </div>
+  </div>
+</div>
+
+<div class="tooltip" id="tooltip"></div>
+<svg id="graph"></svg>
+
+<script>
+// Organizational data from AGENTS.md, TEAMS.md, DEPARTMENTS.md
+const orgData = {
+  nodes: [
+    // CEO
+    { id: "ceo", name: "CEO", type: "executive", level: 0, revenue: "Holding", autonomy: "100%" },
+
+    // OPCOs
+    { id: "con", name: "Construction", type: "opco", level: 1, parent: "ceo", revenue: "$150K/mo", autonomy: "90%+" },
+    { id: "sta", name: "Staffing", type: "opco", level: 1, parent: "ceo", revenue: "$100K/mo", autonomy: "80%+" },
+    { id: "re", name: "Real Estate", type: "opco", level: 1, parent: "ceo", revenue: "$120K/mo", autonomy: "85%+" },
+    { id: "edu", name: "Education", type: "opco", level: 1, parent: "ceo", revenue: "$80K/mo", autonomy: "75%+" },
+    { id: "fin", name: "Finance", type: "opco", level: 1, parent: "ceo", revenue: "Cost Center", autonomy: "95%+" },
+    { id: "log", name: "Logistics", type: "opco", level: 1, parent: "ceo", revenue: "$80K/mo", autonomy: "80%+" },
+    { id: "iza", name: "IZA OS", type: "opco", level: 1, parent: "ceo", revenue: "Cost Center", autonomy: "90%+" },
+
+    // CON Team
+    { id: "con-dir", name: "Director", type: "manager", level: 2, parent: "con", team: "CON" },
+    { id: "con-ops", name: "Ops Manager", type: "manager", level: 2, parent: "con", team: "CON" },
+    { id: "con-lead-est", name: "Lead Estimator", type: "manager", level: 2, parent: "con", team: "CON" },
+    { id: "con-clf", name: "venture_classifier", type: "agent", level: 3, parent: "con-ops", success: "94%", authority: "AUTONOMOUS" },
+    { id: "con-est", name: "estimator_gen1", type: "agent", level: 3, parent: "con-lead-est", success: "88%", authority: "SUPERVISED" },
+    { id: "con-sch", name: "project_scheduler", type: "agent", level: 3, parent: "con-ops", success: "75%", authority: "MONITORED" },
+    { id: "con-risk", name: "risk_assessor", type: "agent", level: 3, parent: "con-ops", success: "91%", authority: "AUTONOMOUS" },
+
+    // STA Team
+    { id: "sta-dir", name: "Director", type: "manager", level: 2, parent: "sta", team: "STA" },
+    { id: "sta-ops", name: "Ops Manager", type: "manager", level: 2, parent: "sta", team: "STA" },
+    { id: "sta-match", name: "Matching Lead", type: "manager", level: 2, parent: "sta", team: "STA" },
+    { id: "sta-cand", name: "candidate_matcher", type: "agent", level: 3, parent: "sta-match", success: "TBD", authority: "TRAINING" },
+    { id: "sta-avail", name: "availability_tracker", type: "agent", level: 3, parent: "sta-ops", success: "TBD", authority: "TRAINING" },
+    { id: "sta-rate", name: "rate_optimizer", type: "agent", level: 3, parent: "sta-ops", success: "TBD", authority: "TRAINING" },
+
+    // RE Team
+    { id: "re-dir", name: "Director", type: "manager", level: 2, parent: "re", team: "RE" },
+    { id: "re-sales", name: "Sales Manager", type: "manager", level: 2, parent: "re", team: "RE" },
+    { id: "re-val", name: "property_valuer", type: "agent", level: 3, parent: "re-sales", success: "TBD", authority: "TRAINING" },
+    { id: "re-cat", name: "listing_categorizer", type: "agent", level: 3, parent: "re-sales", success: "TBD", authority: "TRAINING" },
+    { id: "re-qual", name: "lead_qualifier", type: "agent", level: 3, parent: "re-sales", success: "TBD", authority: "TRAINING" },
+
+    // EDU Team
+    { id: "edu-dir", name: "Director", type: "manager", level: 2, parent: "edu", team: "EDU" },
+    { id: "edu-content", name: "Content Manager", type: "manager", level: 2, parent: "edu", team: "EDU" },
+    { id: "edu-atom", name: "content_atomizer", type: "agent", level: 3, parent: "edu-content", success: "TBD", authority: "TRAINING" },
+    { id: "edu-track", name: "student_tracker", type: "agent", level: 3, parent: "edu-content", success: "TBD", authority: "TRAINING" },
+
+    // FIN Team
+    { id: "fin-cfo", name: "CFO", type: "manager", level: 2, parent: "fin", team: "FIN" },
+    { id: "fin-ctrl", name: "Controller", type: "manager", level: 2, parent: "fin", team: "FIN" },
+    { id: "fin-comp", name: "Compliance Officer", type: "manager", level: 2, parent: "fin", team: "FIN" },
+    { id: "fin-txn", name: "transaction_processor", type: "agent", level: 3, parent: "fin-ctrl", success: "TBD", authority: "TRAINING" },
+    { id: "fin-check", name: "compliance_checker", type: "agent", level: 3, parent: "fin-comp", success: "TBD", authority: "TRAINING" },
+
+    // LOG Team
+    { id: "log-dir", name: "Director", type: "manager", level: 2, parent: "log", team: "LOG" },
+    { id: "log-ops", name: "Ops Manager", type: "manager", level: 2, parent: "log", team: "LOG" },
+    { id: "log-route", name: "route_optimizer", type: "agent", level: 3, parent: "log-ops", success: "TBD", authority: "TRAINING" },
+    { id: "log-track", name: "shipment_tracker", type: "agent", level: 3, parent: "log-ops", success: "TBD", authority: "TRAINING" },
+    { id: "log-cost", name: "cost_calculator", type: "agent", level: 3, parent: "log-ops", success: "TBD", authority: "TRAINING" },
+
+    // IZA OS
+    { id: "iza-vp", name: "VP Infrastructure", type: "manager", level: 2, parent: "iza", team: "IZA" },
+    { id: "iza-sre", name: "Site Reliability Engineer", type: "manager", level: 2, parent: "iza", team: "IZA" },
+    { id: "iza-plat", name: "Platform Engineer", type: "manager", level: 2, parent: "iza", team: "IZA" },
+  ],
+
+  links: []
+};
+
+// Build links from parent relationships
+orgData.nodes.forEach(node => {
+  if (node.parent) {
+    orgData.links.push({ source: node.parent, target: node.id, type: "hierarchy" });
+  }
+});
+
+// Color mapping by authority level
+const authorityColor = {
+  "AUTONOMOUS": "#10b981",
+  "SUPERVISED": "#f59e0b",
+  "MONITORED": "#ec7063",
+  "TRAINING": "#e11d48",
+  "OPCO": "#06b6d4",
+  "MANAGER": "#64748b",
+  "EXECUTIVE": "#22d3ee"
+};
+
+const svg = d3.select("#graph");
+const width = window.innerWidth;
+const height = window.innerHeight;
+
+svg.attr("width", width).attr("height", height);
+
+const g = svg.append("g");
+
+// Add zoom
+const zoom = d3.zoom().on("zoom", (e) => {
+  g.attr("transform", e.transform);
+});
+svg.call(zoom);
+
+function resetZoom() {
+  svg.transition().duration(750).call(
+    zoom.transform,
+    d3.zoomIdentity.translate(width / 2, height / 2).scale(1)
+  );
+}
+
+// Initial position
+svg.call(zoom.transform, d3.zoomIdentity.translate(width / 2, height / 2).scale(0.8));
+
+const simulation = d3.forceSimulation(orgData.nodes)
+  .force("link", d3.forceLink(orgData.links)
+    .id(d => d.id)
+    .distance(d => d.type === "hierarchy" ? 100 : 150))
+  .force("charge", d3.forceManyBody().strength(-400))
+  .force("center", d3.forceCenter(0, 0))
+  .force("collision", d3.forceCollide().radius(30));
+
+// Draw links
+const links = g.selectAll(".link")
+  .data(orgData.links)
+  .enter()
+  .append("line")
+  .attr("class", d => `link ${d.type}`);
+
+// Draw nodes
+const nodes = g.selectAll(".node")
+  .data(orgData.nodes)
+  .enter()
+  .append("g")
+  .attr("class", "node")
+  .on("mouseover", function(e, d) {
+    const tooltip = document.getElementById("tooltip");
+    let content = `<div class="tooltip-title">${d.name}</div>`;
+    if (d.team) content += `<div class="tooltip-row"><span class="tooltip-label">Team:</span> ${d.team}</div>`;
+    if (d.revenue) content += `<div class="tooltip-row"><span class="tooltip-label">Revenue:</span> ${d.revenue}</div>`;
+    if (d.autonomy) content += `<div class="tooltip-row"><span class="tooltip-label">Autonomy:</span> ${d.autonomy}</div>`;
+    if (d.success) content += `<div class="tooltip-row"><span class="tooltip-label">Success:</span> ${d.success}</div>`;
+    if (d.authority) content += `<div class="tooltip-row"><span class="tooltip-label">Authority:</span> ${d.authority}</div>`;
+
+    tooltip.innerHTML = content;
+    tooltip.style.display = "block";
+    tooltip.style.left = (e.pageX + 12) + "px";
+    tooltip.style.top = (e.pageY + 12) + "px";
+  })
+  .on("mousemove", (e) => {
+    const tooltip = document.getElementById("tooltip");
+    tooltip.style.left = (e.pageX + 12) + "px";
+    tooltip.style.top = (e.pageY + 12) + "px";
+  })
+  .on("mouseout", () => {
+    document.getElementById("tooltip").style.display = "none";
+  })
+  .call(d3.drag()
+    .on("start", dragstarted)
+    .on("drag", dragged)
+    .on("end", dragended));
+
+nodes.append("circle")
+  .attr("class", "node-circle")
+  .attr("r", d => {
+    if (d.type === "executive") return 16;
+    if (d.type === "opco") return 14;
+    if (d.type === "manager") return 12;
+    return 10;
+  })
+  .attr("fill", d => {
+    if (d.type === "executive") return authorityColor.EXECUTIVE;
+    if (d.type === "opco") return authorityColor.OPCO;
+    if (d.type === "manager") return authorityColor.MANAGER;
+    if (d.authority) return authorityColor[d.authority];
+    return "#94a3b8";
+  })
+  .attr("stroke", "#1e293b")
+  .attr("stroke-width", 2);
+
+nodes.append("text")
+  .attr("class", "node-text")
+  .attr("dy", "0.3em")
+  .text(d => d.name.split(" ")[0]);
+
+simulation.on("tick", () => {
+  links
+    .attr("x1", d => d.source.x)
+    .attr("y1", d => d.source.y)
+    .attr("x2", d => d.target.x)
+    .attr("y2", d => d.target.y);
+
+  nodes.attr("transform", d => `translate(${d.x},${d.y})`);
+});
+
+function dragstarted(e, d) {
+  if (!e.active) simulation.alphaTarget(0.3).restart();
+  d.fx = d.x;
+  d.fy = d.y;
+}
+
+function dragged(e, d) {
+  d.fx = e.x;
+  d.fy = e.y;
+}
+
+function dragended(e, d) {
+  if (!e.active) simulation.alphaTarget(0);
+  d.fx = null;
+  d.fy = null;
+}
+
+window.addEventListener("resize", () => {
+  svg.attr("width", window.innerWidth).attr("height", window.innerHeight);
+});
+</script>
+
+</body>
+</html>

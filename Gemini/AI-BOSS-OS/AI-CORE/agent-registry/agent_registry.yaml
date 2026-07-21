@@ -1,0 +1,27 @@
+agent:
+  CTO:
+    tools:
+      - github
+      - filesystem
+    model:
+      auto/coding
+    escalation:
+      council
+
+  CFO:
+    tools:
+      - database
+      - calculator
+    model:
+      auto/smart
+    escalation:
+      council
+
+  Research:
+    tools:
+      - web-search
+      - read-url
+    model:
+      auto/cheap
+    escalation:
+      none

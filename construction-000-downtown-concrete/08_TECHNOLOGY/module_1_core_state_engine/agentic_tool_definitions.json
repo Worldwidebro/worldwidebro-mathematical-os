@@ -1,0 +1,8 @@
+{
+  "name": "con_core_state_engine",
+  "description": "Orchestrates technical commands for Core State Engine in venture Downtown Concrete",
+  "parameters": {
+    "type": "object",
+    "properties": {}
+  }
+}

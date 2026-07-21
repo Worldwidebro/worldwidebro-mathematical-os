@@ -1,19 +1,51 @@
-# Sales Scripts — Logistics Automation System
+---
+execution_metadata:
+  venture_id: "LT-013-Logistics-Automation-System"
+  agent_completed: "AG-CAO"
+  department: "Sales & Billing"
+  node: "HW-AIR-01"
+  database_link: "DB-POSTGRES:PT-5433"
+references:
+  - [[LT-013-Logistics-Automation-System-CAPABILITY-STATEMENT]]
+  - [[LT-013-Logistics-Automation-System-FORMATION-CREDENTIAL-TRACKER]]
+  - [[LT-013-Logistics-Automation-System-AGENT-COMMUNICATION]]
+  - [[LOOP-FRAMEWORK]]
+---
 
-## Cold open
+# LOG Sales Scripts — Dispatch & Logistics Outreach
 
-> TBD
+**Use:** Acquiring owner-operators, freight brokers, and shippers for route optimization and dispatch services.
+**Pairs with:** `LOG-CAPABILITY-STATEMENT.md` · `LOG-FORMATION-CREDENTIAL-TRACKER.md`.
 
-## qualifying questions
+---
 
-1. What’s your current timeline for this problem?
-2. Who owns this today?
-3. What would faster execution be worth?
+## 1) COLD CALL SCRIPT (carrier / owner-operator)
+> "Hi [Name], this is [Rep Name] with Logistics Automation System. I'm calling because we work with local carriers and owner-operators running out of the Charlotte region to find higher-paying loads and eliminate empty backhauls. I'm not selling load board subscriptions—we actually run an automated dispatch bot that tracks load rates daily. We put together a list of the 3 highest-paying freight lanes leaving NC this week. Can I text or email that lane list to you?"
 
-## engines
+---
 
-| Engine | Ask | Channel |
-|--------|-----|---------|
-| A — B2G/sub | Add me to prequalified lists | Bid boards + prime prequal |
-| B — retainer | 15 min managing this ongoing | LinkedIn + referrals |
-| C — productized | Fixed-price quote | Direct outbound + web offer |
+## 2) EMAIL SEQUENCE
+
+### Touch 1 — Lane Rate List (Day 0)
+**Subject:** High-paying freight lanes leaving NC this week
+
+> Hi [Name],
+>
+> Running empty backhauls or hauling cheap freight is the fastest way to bleed money in today's trucking market.
+>
+> We specialize in AI-Automated dispatching and load matching that:
+> • Crawls multiple networks to book the highest-paying loads automatically
+> • Chains return loads (backhauls) before you dump the first load
+> • Parses Rate Con sheets via OCR in seconds to catch hidden broker fees
+>
+> Lane list attached. Do you have 5 minutes to see how much we can improve your revenue per mile this month?
+>
+> Best,
+> [Rep Name] · Logistics Automation System
+
+---
+
+## 3) QUALIFYING QUESTIONS
+1. What is your average deadhead percentage?
+2. How do you find and book return loads today?
+3. What is your current target rate per mile?

@@ -1,0 +1,47 @@
+venture: Downtown Builders
+id: CON-021
+agents:
+- name: Construction CEO Agent
+  role: CEO
+  mission: Operate sector workflows dynamically.
+  authority:
+  - read_local_database
+  limits:
+  - cannot_alter_production
+  brain:
+    reasoning: qwen2.5:7b
+    coding: deepseek-coder:6.7b
+    embeddings: nomic-embed-text
+- name: Estimator Agent
+  role: Estimator
+  mission: Operate sector workflows dynamically.
+  authority:
+  - read_local_database
+  limits:
+  - cannot_alter_production
+  brain:
+    reasoning: qwen2.5:7b
+    coding: deepseek-coder:6.7b
+    embeddings: nomic-embed-text
+- name: Bid Agent
+  role: Bidding
+  mission: Operate sector workflows dynamically.
+  authority:
+  - read_local_database
+  limits:
+  - cannot_alter_production
+  brain:
+    reasoning: qwen2.5:7b
+    coding: deepseek-coder:6.7b
+    embeddings: nomic-embed-text
+- name: Project Manager Agent
+  role: Operations
+  mission: Operate sector workflows dynamically.
+  authority:
+  - read_local_database
+  limits:
+  - cannot_alter_production
+  brain:
+    reasoning: qwen2.5:7b
+    coding: deepseek-coder:6.7b
+    embeddings: nomic-embed-text

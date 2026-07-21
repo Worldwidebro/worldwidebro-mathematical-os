@@ -1,8 +1,0 @@
-ticker,support2,support1,resistance1,resistance2,stop_loss,notes
-SPY,730,745,760,,733,iron condor 730/760; stop if closes outside 733/770
-QQQ,700,711,725,730,722,at MA50 711 - key decision point; stop if reclaims/holds above 722
-TTD,18.78,,20.52,24.87,18.78,call debit spread if breaks 20.52; stop below MA20
-NKE,40,43.21,45,46.31,43.6,iron butterfly at 45 wings 43.5/46.5; stop outside 43.6-46.4
-AMAT,554,570,602,620,554,avoid/small size only - wide spreads high IV; hard stop below 554
-XOM,140,,145,146.61,146.61,call credit spread 145/147 fading MA50; stop if closes above 146.61
-CVX,164.78,174.11,182.5,185,182.5,call credit spread 185/187.5 fading MA50; stop if closes above 182.5

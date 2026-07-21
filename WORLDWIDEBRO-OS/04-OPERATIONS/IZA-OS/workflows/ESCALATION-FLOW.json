@@ -1,0 +1,394 @@
+{
+  "name": "Escalation & Fallback Flow",
+  "description": "Handles escalations when decisions need higher authority or request has no available agents. Traverses escalation chain (venture→dept→Hermes→human), checks availability, enforces 4-hour timeout.",
+  "tags": ["IZA-OS", "Phase-3", "Escalation"],
+  "active": true,
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "escalation-flow",
+        "responseMode": "onReceived"
+      },
+      "id": "webhook-receive",
+      "name": "Webhook: Escalation Event",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [100, 400]
+    },
+    {
+      "parameters": {
+        "operation": "insert",
+        "schema": "public",
+        "table": "escalations",
+        "columns": "escalation_type,request_id,decision_id,department_id,venture_id,current_holder,status,escalation_chain,next_escalation_time,created_at",
+        "values": "={{ { escalation_type: $json.escalation_type, request_id: $json.request_id || null, decision_id: $json.decision_id || null, department_id: $json.department_id || null, venture_id: $json.venture_id, current_holder: null, status: 'pending', escalation_chain: JSON.stringify(['venture', 'department', 'hermes', 'human']), next_escalation_time: new Date(Date.now() + 4 * 60 * 60 * 1000).toISOString(), created_at: 'NOW()' } }}"
+      },
+      "id": "log-escalation",
+      "name": "Supabase: Log Escalation",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 1,
+      "position": [300, 400]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "conditions": [
+            {
+              "condition": "isEqual",
+              "value1": "={{ $json.escalation_type }}",
+              "value2": "'no_available_agents'"
+            }
+          ],
+          "combinator": "or"
+        }
+      },
+      "id": "check-escalation-type",
+      "name": "Escalation Type?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [500, 400]
+    },
+    {
+      "parameters": {
+        "query": "MATCH (d:Department {id: $dept_id}) RETURN d.id as dept_id, d.name as dept_name, d.director_id as director_id",
+        "parameters": "={{ { dept_id: $json.department_id } }}"
+      },
+      "id": "neo4j-find-director",
+      "name": "Neo4j: Find Department Director",
+      "type": "n8n-nodes-base.neo4j",
+      "typeVersion": 1,
+      "position": [700, 200]
+    },
+    {
+      "parameters": {
+        "query": "MATCH (a:Agent {id: $director_id}) RETURN a.id as agent_id, a.name as agent_name, a.status as agent_status, a.email as agent_email",
+        "parameters": "={{ { director_id: $json.body[0].director_id } }}"
+      },
+      "id": "neo4j-check-director-avail",
+      "name": "Neo4j: Check Director Availability",
+      "type": "n8n-nodes-base.neo4j",
+      "typeVersion": 1,
+      "position": [850, 200]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "conditions": [
+            {
+              "condition": "isEqual",
+              "value1": "={{ $json.body[0].agent_status }}",
+              "value2": "'available'"
+            }
+          ],
+          "combinator": "or"
+        }
+      },
+      "id": "check-director-available",
+      "name": "Director Available?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [1000, 200]
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "schema": "public",
+        "table": "escalations",
+        "where": "id = $1",
+        "updateKey": "id",
+        "columns": "current_holder,status,updated_at",
+        "values": "={{ { current_holder: $json.body[0].agent_id, status: 'awaiting_director', updated_at: 'NOW()' } }}"
+      },
+      "id": "update-holder-director",
+      "name": "Supabase: Set Director as Holder",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 1,
+      "position": [1150, 200]
+    },
+    {
+      "parameters": {
+        "channel": "{{ $json.body[0].agent_email }}",
+        "text": "🔄 Escalated Request Awaiting Your Review\n*Type:* {{ $json.escalation_type }}\n*Venture:* {{ $json.venture_id }}\n*Department:* {{ $json.department_id }}\n*Escalation ID:* {{ $json.id }}\n\nPlease take action: http://localhost:3000/escalations/{{ $json.id }}\nTimeout: 4 hours from escalation"
+      },
+      "id": "slack-notify-director",
+      "name": "Slack: Notify Director",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2,
+      "position": [1300, 200]
+    },
+    {
+      "parameters": {
+        "query": "MATCH (h:Hermes) RETURN h.id as hermes_id, h.name as hermes_name, h.status as hermes_status, h.channel as hermes_channel"
+      },
+      "id": "neo4j-find-hermes",
+      "name": "Neo4j: Find Hermes",
+      "type": "n8n-nodes-base.neo4j",
+      "typeVersion": 1,
+      "position": [1000, 600]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "conditions": [
+            {
+              "condition": "isEqual",
+              "value1": "={{ $json.body[0].hermes_status }}",
+              "value2": "'available'"
+            }
+          ],
+          "combinator": "or"
+        }
+      },
+      "id": "check-hermes-available",
+      "name": "Hermes Available?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [1150, 600]
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "schema": "public",
+        "table": "escalations",
+        "where": "id = $1",
+        "updateKey": "id",
+        "columns": "current_holder,status,updated_at",
+        "values": "={{ { current_holder: 'hermes-system', status: 'awaiting_hermes', updated_at: 'NOW()' } }}"
+      },
+      "id": "update-holder-hermes",
+      "name": "Supabase: Set Hermes as Holder",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 1,
+      "position": [1300, 600]
+    },
+    {
+      "parameters": {
+        "channel": "{{ $json.body[0].hermes_channel || '#iza-os-hermes' }}",
+        "text": "🚀 Escalation Routed to Hermes\n*Type:* {{ $json.escalation_type }}\n*Venture:* {{ $json.venture_id }}\n*Escalation ID:* {{ $json.id }}\n*Context:* {{ JSON.stringify($json.context || {}) }}\n\nCoordination Engine: Begin analysis and decision routing\nTimeout: 4 hours from escalation"
+      },
+      "id": "slack-notify-hermes",
+      "name": "Slack: Notify Hermes",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2,
+      "position": [1450, 600]
+    },
+    {
+      "parameters": {
+        "query": "MATCH (h:Human {role: 'approver'}) RETURN h.id as approver_id, h.name as approver_name, h.email as approver_email, h.status as approver_status LIMIT 1"
+      },
+      "id": "neo4j-find-human",
+      "name": "Neo4j: Find Human Approver",
+      "type": "n8n-nodes-base.neo4j",
+      "typeVersion": 1,
+      "position": [1000, 1000]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "conditions": [
+            {
+              "condition": "isEqual",
+              "value1": "={{ $json.body[0].approver_status }}",
+              "value2": "'available'"
+            }
+          ],
+          "combinator": "or"
+        }
+      },
+      "id": "check-human-available",
+      "name": "Human Available?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [1150, 1000]
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "schema": "public",
+        "table": "escalations",
+        "where": "id = $1",
+        "updateKey": "id",
+        "columns": "current_holder,status,updated_at",
+        "values": "={{ { current_holder: $json.body[0].approver_id, status: 'awaiting_human', updated_at: 'NOW()' } }}"
+      },
+      "id": "update-holder-human",
+      "name": "Supabase: Set Human as Holder",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 1,
+      "position": [1300, 1000]
+    },
+    {
+      "parameters": {
+        "channel": "{{ $json.body[0].approver_email }}",
+        "text": "⚠️ CRITICAL: Escalation Requires Human Intervention\n*Type:* {{ $json.escalation_type }}\n*Venture:* {{ $json.venture_id }}\n*Escalation ID:* {{ $json.id }}\n\n⚡ URGENT: Review immediately at http://localhost:3000/escalations/{{ $json.id }}\nTimeout: 4 hours from escalation"
+      },
+      "id": "slack-notify-human",
+      "name": "Slack: Notify Human",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2,
+      "position": [1450, 1000]
+    },
+    {
+      "parameters": {
+        "waitTill": "specificTime",
+        "specificTime": "={{ new Date(Date.now() + 4 * 60 * 60 * 1000).toISOString() }}"
+      },
+      "id": "wait-timeout",
+      "name": "Wait: 4-Hour Timeout",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1,
+      "position": [700, 1200]
+    },
+    {
+      "parameters": {
+        "operation": "select",
+        "schema": "public",
+        "table": "escalations",
+        "where": "id = $1",
+        "limit": 1
+      },
+      "id": "check-escalation-status",
+      "name": "Supabase: Check Escalation Status",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 1,
+      "position": [850, 1200]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "conditions": [
+            {
+              "condition": "isEqual",
+              "value1": "={{ $json.body[0].status }}",
+              "value2": "'pending'"
+            }
+          ],
+          "combinator": "or"
+        }
+      },
+      "id": "check-timeout-expired",
+      "name": "Still Pending?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [1000, 1200]
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "schema": "public",
+        "table": "escalations",
+        "where": "id = $1",
+        "updateKey": "id",
+        "columns": "status,escalation_reason,updated_at",
+        "values": "={{ { status: 'timeout_expired', escalation_reason: 'no_response_4hrs', updated_at: 'NOW()' } }}"
+      },
+      "id": "update-timeout",
+      "name": "Supabase: Mark Timeout",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 1,
+      "position": [1150, 1200]
+    },
+    {
+      "parameters": {
+        "channel": "#iza-os-critical",
+        "text": "🚨 ESCALATION TIMEOUT\n*Escalation ID:* {{ $json.id }}\n*Venture:* {{ $json.venture_id }}\n*Current Holder:* {{ $json.body[0].current_holder }}\n*Type:* {{ $json.escalation_type }}\n\nNo response within 4 hours. Automatic escalation triggered to next level."
+      },
+      "id": "slack-alert-timeout",
+      "name": "Slack: Alert Timeout",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2,
+      "position": [1300, 1200]
+    },
+    {
+      "parameters": {
+        "responseMode": "responseNode",
+        "body": "={{ { escalation_id: $json.id, status: $json.status, current_holder: $json.current_holder, timestamp: new Date().toISOString() } }}"
+      },
+      "id": "response-success",
+      "name": "Response: Success",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [1450, 400]
+    }
+  ],
+  "connections": {
+    "webhook-receive": {
+      "main": [[{"node": "log-escalation", "type": "main", "index": 0}]]
+    },
+    "log-escalation": {
+      "main": [[{"node": "check-escalation-type", "type": "main", "index": 0}]]
+    },
+    "check-escalation-type": {
+      "main": [
+        [{"node": "neo4j-find-director", "type": "main", "index": 0}],
+        [{"node": "neo4j-find-hermes", "type": "main", "index": 0}]
+      ]
+    },
+    "neo4j-find-director": {
+      "main": [[{"node": "neo4j-check-director-avail", "type": "main", "index": 0}]]
+    },
+    "neo4j-check-director-avail": {
+      "main": [[{"node": "check-director-available", "type": "main", "index": 0}]]
+    },
+    "check-director-available": {
+      "main": [
+        [{"node": "update-holder-director", "type": "main", "index": 0}],
+        [{"node": "neo4j-find-hermes", "type": "main", "index": 0}]
+      ]
+    },
+    "update-holder-director": {
+      "main": [[{"node": "slack-notify-director", "type": "main", "index": 0}]]
+    },
+    "slack-notify-director": {
+      "main": [[{"node": "response-success", "type": "main", "index": 0}]]
+    },
+    "neo4j-find-hermes": {
+      "main": [[{"node": "check-hermes-available", "type": "main", "index": 0}]]
+    },
+    "check-hermes-available": {
+      "main": [
+        [{"node": "update-holder-hermes", "type": "main", "index": 0}],
+        [{"node": "neo4j-find-human", "type": "main", "index": 0}]
+      ]
+    },
+    "update-holder-hermes": {
+      "main": [[{"node": "slack-notify-hermes", "type": "main", "index": 0}]]
+    },
+    "slack-notify-hermes": {
+      "main": [[{"node": "wait-timeout", "type": "main", "index": 0}]]
+    },
+    "neo4j-find-human": {
+      "main": [[{"node": "check-human-available", "type": "main", "index": 0}]]
+    },
+    "check-human-available": {
+      "main": [
+        [{"node": "update-holder-human", "type": "main", "index": 0}]
+      ]
+    },
+    "update-holder-human": {
+      "main": [[{"node": "slack-notify-human", "type": "main", "index": 0}]]
+    },
+    "slack-notify-human": {
+      "main": [[{"node": "wait-timeout", "type": "main", "index": 0}]]
+    },
+    "wait-timeout": {
+      "main": [[{"node": "check-escalation-status", "type": "main", "index": 0}]]
+    },
+    "check-escalation-status": {
+      "main": [[{"node": "check-timeout-expired", "type": "main", "index": 0}]]
+    },
+    "check-timeout-expired": {
+      "main": [
+        [{"node": "update-timeout", "type": "main", "index": 0}],
+        [{"node": "response-success", "type": "main", "index": 0}]
+      ]
+    },
+    "update-timeout": {
+      "main": [[{"node": "slack-alert-timeout", "type": "main", "index": 0}]]
+    },
+    "slack-alert-timeout": {
+      "main": [[{"node": "response-success", "type": "main", "index": 0}]]
+    }
+  }
+}

@@ -1,0 +1,58 @@
+# Agent Intelligence Platform (AIP) — Model Registry
+# Monitors quality, latency, costs, and coding capabilities of LLM backends.
+
+models:
+  - id: claude-3-5-sonnet
+    name: Claude 3.5 Sonnet
+    provider: Anthropic
+    quality_score: 92.5
+    coding_score: 95.0
+    latency_ms: 1800
+    cost_input_1m: 3.00
+    cost_output_1m: 15.00
+    reasoning_budget: false
+    strengths: Superior coding, precise instruction following, complex refactors
+
+  - id: gpt-4o
+    name: GPT-4o
+    provider: OpenAI
+    quality_score: 90.2
+    coding_score: 88.5
+    latency_ms: 1400
+    cost_input_1m: 2.50
+    cost_output_1m: 10.00
+    reasoning_budget: false
+    strengths: Fast response, excellent tool calling accuracy, multimodal processing
+
+  - id: gemini-1-5-pro
+    name: Gemini 1.5 Pro
+    provider: Google
+    quality_score: 89.4
+    coding_score: 85.0
+    latency_ms: 2200
+    cost_input_1m: 1.25
+    cost_output_1m: 5.00
+    reasoning_budget: false
+    strengths: Massive 2M token context, robust audio/video analysis, structured schemas
+
+  - id: deepseek-v3
+    name: DeepSeek V3
+    provider: DeepSeek
+    quality_score: 91.2
+    coding_score: 90.5
+    latency_ms: 1900
+    cost_input_1m: 0.14
+    cost_output_1m: 0.28
+    reasoning_budget: true
+    strengths: Extremely cost-effective, high quality coding, reasoning trace tag parsing
+
+  - id: qwen-2-5-72b
+    name: Qwen 2.5 72B
+    provider: Alibaba
+    quality_score: 88.1
+    coding_score: 82.0
+    latency_ms: 1100
+    cost_input_1m: 0.40
+    cost_output_1m: 0.40
+    reasoning_budget: false
+    strengths: Fast local hosting (Ollama Fallback), strong multi-lingual math and code

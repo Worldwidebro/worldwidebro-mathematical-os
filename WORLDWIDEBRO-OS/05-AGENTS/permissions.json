@@ -1,0 +1,26 @@
+{
+  "venture_classifier": {
+    "tools": ["slack", "clickup", "postgres", "neo4j"],
+    "data_access": ["ventures", "audit_logs", "policy_decisions"],
+    "cost_limit_per_month": 100.0,
+    "rate_limit_per_minute": 100
+  },
+  "candidate_matcher": {
+    "tools": ["slack", "clickup"],
+    "data_access": ["candidates", "jobs"],
+    "cost_limit_per_month": 50.0,
+    "rate_limit_per_minute": 100
+  },
+  "property_valuer": {
+    "tools": ["slack", "clickup"],
+    "data_access": ["properties"],
+    "cost_limit_per_month": 75.0,
+    "rate_limit_per_minute": 50
+  },
+  "risk_assessor": {
+    "tools": ["slack", "clickup", "postgres", "neo4j"],
+    "data_access": ["ventures", "audit_logs", "policy_decisions"],
+    "cost_limit_per_month": 150.0,
+    "rate_limit_per_minute": 120
+  }
+}

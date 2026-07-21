@@ -2,23 +2,29 @@ model_list:
   - model_name: local-reasoning
     litellm_params:
       model: ollama_chat/qwen3:8b
-      api_base: http://host.docker.internal:11434
+      api_base: http://100.87.214.70:11434
   - model_name: local-large
     litellm_params:
       model: ollama_chat/qwen2.5:32b
-      api_base: http://host.docker.internal:11434
+      api_base: http://100.87.214.70:11434
   - model_name: local-embed
     litellm_params:
       model: ollama/nomic-embed-text
-      api_base: http://host.docker.internal:11434
+      api_base: http://100.87.214.70:11434
   - model_name: coder
     litellm_params:
       model: nvidia_nim/deepseek-ai/deepseek-v4-pro
       api_key: os.environ/NVIDIA_NIM_API_KEY
+  - model_name: claude-fallback
+    litellm_params:
+      model: claude-opus-4-8
+      api_key: os.environ/ANTHROPIC_API_KEY
 
 litellm_settings:
   drop_params: true
 
 router_settings:
   fallbacks:
+    - local-reasoning: ["claude-fallback"]
+    - local-large: ["claude-fallback"]
     - coder: ["local-reasoning"]

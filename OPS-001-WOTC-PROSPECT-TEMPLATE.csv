@@ -1,0 +1,11 @@
+FirstName,LastName,DOB (MM/DD/YYYY),SSN_Last4,Gender,HireDate (MM/DD/YYYY),JobTitle,WagePerHour,EmploymentType,TargetGroup,TargetGroupEvidence,StartDate,EmployerCertification
+[Example],[Row],[01/15/1985],[1234],[M],[06/15/2026],[Staffing Coordinator],[18.50],[Full-time],[TANF Recipient],[TANF Award Letter],[06/15/2026],[Yes]
+[Example],[Row],[02/20/1992],[5678],[F],[06/16/2026],[Administrative Assistant],[16.00],[Full-time],[SNAP Recipient],[SNAP Approval Letter],[06/16/2026],[Yes]
+[Example],[Row],[03/10/1988],[9012],[M],[06/17/2026],[Data Entry Clerk],[17.25],[Part-time],[Long-Term Unemployed],[UI Benefit Statement],[06/17/2026],[Yes]
+[Example],[Row],[04/05/1995],[3456],[F],[06/18/2026],[Customer Service Rep],[15.50],[Full-time],[TANF Recipient],[TANF Award Letter],[06/18/2026],[Yes]
+[Example],[Row],[05/30/1980],[7890],[M],[06/19/2026],[Operations Coordinator],[19.00],[Full-time],[Disabled Veteran],[VA Disability Award Letter],[06/19/2026],[Yes]
+[Example],[Row],[06/12/1990],[2345],[F],[06/20/2026],[Receptionist],[15.00],[Full-time],[SSI Recipient],[SSA Award Letter],[06/20/2026],[Yes]
+[Example],[Row],[07/25/1987],[6789],[M],[06/21/2026],[Temp Staffing Support],[16.50],[Seasonal],[Ex-Felon],[Criminal Record + Court Docs],[06/21/2026],[Yes]
+[Example],[Row],[08/15/2009],[0123],[M],[06/22/2026],[Summer Intern],[13.50],[Part-time],[Summer Youth],[Birth Certificate],[06/22/2026],[Yes]
+[Example],[Row],[09/08/1985],[4567],[F],[06/23/2026],[Payroll Specialist],[20.00],[Full-time],[TANF Recipient],[TANF Award Letter],[06/23/2026],[Yes]
+[Example],[Row],[10/20/1993],[8901],[M],[06/24/2026],[Quality Assurance],[17.75],[Full-time],[SNAP Recipient],[SNAP Approval Letter],[06/24/2026],[Yes]

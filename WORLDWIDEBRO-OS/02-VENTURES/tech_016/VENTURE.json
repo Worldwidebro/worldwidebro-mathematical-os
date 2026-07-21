@@ -1,0 +1,17 @@
+{
+  "business_id": "TECH-016",
+  "business_name": "Video-Editor-AI",
+  "sector": "technology",
+  "status": "mvp",
+  "stage": "development",
+  "capabilities": [
+    "Video Generation",
+    "AI Editing",
+    "Social Export"
+  ],
+  "revenue": {
+    "model": "SaaS Subscription",
+    "monthly_target": 40000
+  },
+  "created_at": "2026-07-16T01:02:33.200875"
+}

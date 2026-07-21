@@ -1,13 +1,39 @@
-# Formation & Credential Tracker — Compliance Wallet Saas
+---
+execution_metadata:
+  venture_id: "FIN-029-Compliance-Wallet-SaaS"
+  agent_completed: "AG-CFO"
+  department: "Operations & Logistics"
+  node: "HW-AIR-01"
+  database_link: "DB-POSTGRES:PT-5433"
+references:
+  - [[FIN-029-Compliance-Wallet-SaaS-CAPABILITY-STATEMENT]]
+  - [[FIN-029-Compliance-Wallet-SaaS-DEPARTMENTS-AND-ECOSYSTEM]]
+  - [[HOLDINGS-PLAYBOOK]]
+---
 
-| Item | Status | Notes |
-|------|--------|-------|
-| Entity Filing | pending_formation | LLC in TBD |
-| EIN | pending | |
-| Insurance GL | pending | |
-| UEI/SAM | pending | Engine A only |
-| Diversity Certs | pending | SBA/MBE/WBE as applicable |
-| Bank Account | pending | |
-| Accounting | pending | TBD |
-| Tax Year | TBD |  |
-| Grants | 0 identified |  |
+# FIN Formation & Credential Tracker — Financial
+
+**Sector:** Financial  ·  **Holdings:** Winners Circle WC LLC
+
+---
+
+## 1) ENTITY REGISTRATION
+*   **Legal Status:** development (e.g. DBA skin under Winners Circle WC LLC)
+*   **EIN:** On file (assigned under parent Winners Circle WC LLC)
+*   **IRS PTIN (Preparer Tax Identification Number):** [PTIN or Pending]
+*   **State Tax Board Registrations:** North Carolina (Charlotte/Mecklenburg County)
+
+---
+
+## 2) FINANCIAL INFRASTRUCTURE
+*   **Plaid Developer API Status:** [Status / Keys configured]
+*   **Bookkeeping DB Schema Version:** `v1.2.0` (Postgres `iza_os_ventures` tables)
+*   **Billing Engine:** Stripe invoice integrations
+*   **ReportLab Engine Path:** `services/report_generator.py` (compiled PDFs)
+
+---
+
+## 3) ECOSYSTEM CHANNELS & DOMAIN LINKS
+*   **Bookkeeping Admin Endpoint:** `https://finance.[domain]`
+*   **Vector Ledger Store:** Qdrant `ledger_embeddings` collection
+*   **Tax Audit API Endpoint:** `https://[id]-tax-engine.vercel.app/api/audit`

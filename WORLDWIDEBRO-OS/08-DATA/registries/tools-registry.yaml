@@ -1,0 +1,586 @@
+# AI Boss OS Tool Registry
+# Last Updated: 2026-07-20
+# Purpose: Single source of truth for all tools, MCPs, services, and their health status
+
+---
+
+# REPOSITORY INTELLIGENCE LAYER
+
+tools:
+  - tool_id: AIBOS-REPO-001
+    name: Repomix
+    category: repository_intelligence
+    purpose: AI context packaging, repository compression, LLM-ready context
+    status: available
+
+    github: https://github.com/yamadashy/repomix
+    install:
+      type: npm
+      command: npm install -g repomix
+
+    health_check:
+      command: repomix --version
+      expected: "Repomix version"
+      type: cli
+
+    used_by:
+      - coding-agent
+      - repository-analyzer
+      - venture-factory
+
+    integration:
+      output_format: xml
+      destination: repomix-output.xml
+      frequency: on-demand
+
+  - tool_id: AIBOS-REPO-002
+    name: SocratiCode
+    category: repository_intelligence
+    purpose: Codebase indexing, dependency intelligence, hybrid search, code graph
+    status: partial
+
+    github: https://github.com/giancarloerra/socraticode
+    install:
+      type: docker-compose
+      command: docker-compose up -d socraticode
+
+    health_check:
+      command: docker ps | grep socraticode
+      expected: socraticode running
+      type: container
+
+    used_by:
+      - socraticode-mcp
+      - codebase-explorer
+
+    integration:
+      port: 8000
+      api_type: rest
+      requires:
+        - qdrant
+        - ollama
+
+  - tool_id: AIBOS-REPO-003
+    name: Serena
+    category: repository_intelligence
+    purpose: Semantic code understanding, symbol-level navigation, MCP coding intelligence
+    status: available
+
+    github: https://github.com/oraios/serena
+    install:
+      type: git_clone
+      command: git clone https://github.com/oraios/serena
+
+    health_check:
+      command: serena --help
+      expected: "Serena help message"
+      type: cli
+
+    used_by:
+      - code-navigator
+      - symbol-resolver
+
+    integration:
+      mcp_capable: true
+      output: symbol_index
+
+  - tool_id: AIBOS-REPO-004
+    name: GitNexus
+    category: repository_intelligence
+    purpose: Repository visualization, dependency graphs, code relationships
+    status: available
+
+    github: https://github.com/jondot/gitnexus
+    install:
+      type: npm
+      command: npm install -g gitnexus
+
+    health_check:
+      command: gitnexus --version
+      expected: "GitNexus version"
+      type: cli
+
+    used_by:
+      - dependency-visualizer
+      - repository-mapper
+
+    integration:
+      output_format: json
+      graph_output: graphml
+
+  - tool_id: AIBOS-REPO-005
+    name: Graphify
+    category: repository_intelligence
+    purpose: Repository graph generation, code relationship mapping
+    status: unknown
+
+    github: https://github.com/search?q=graphify+repository+graph
+    install:
+      type: npm
+      command: npm install -g graphify
+
+    health_check:
+      command: graphify --version
+      expected: "Graphify version"
+      type: cli
+
+    used_by:
+      - graph-generator
+      - dependency-mapper
+
+    integration:
+      output_format: json
+      graph_output: nodes_and_edges
+
+---
+
+# AI MODEL LAYER
+
+models:
+  - model_id: AIBOS-MODEL-001
+    name: LiteLLM
+    category: model_router
+    purpose: Model routing, fallbacks, unified API across vendors
+    status: configured
+
+    github: https://github.com/BerriAI/litellm
+    install:
+      type: pip
+      command: pip install litellm
+
+    config_file: /Users/acebless/Documents/litellm_config.yaml
+
+    health_check:
+      command: curl localhost:4000/health
+      expected: "ok"
+      type: http
+
+    port: 4000
+
+    routes:
+      local-reasoning: http://100.87.214.70:11434
+      local-large: http://100.87.214.70:11434
+      coder: nvidia-nim
+      cloud-fallback: claude-opus-4-8
+
+  - model_id: AIBOS-MODEL-002
+    name: Ollama
+    category: local_inference
+    purpose: Local inference, local embeddings, private LLM access
+    status: running
+
+    github: https://github.com/ollama/ollama
+    install:
+      type: binary
+      command: ollama
+
+    health_check:
+      command: ollama list
+      expected: "models listed"
+      type: cli
+
+    port: 11434
+
+    models_loaded:
+      - qwen2.5:32b (Mac Studio)
+      - qwen3:8b (Mac Studio)
+      - nomic-embed-text (embeddings)
+
+    models_needed:
+      - mistral:latest
+      - llama2:latest
+
+    used_by:
+      - local-reasoning-agent
+      - embedding-pipeline
+      - code-analyzer
+
+  - model_id: AIBOS-MODEL-003
+    name: Colibri
+    category: local_inference
+    purpose: High-performance local inference, optimized for Apple Silicon
+    status: available
+
+    github: https://github.com/xfy520/colibri
+    install:
+      type: binary
+      command: brew install colibri
+
+    health_check:
+      command: colibri --version
+      expected: "Colibri version"
+      type: cli
+
+    used_by:
+      - high-performance-inference
+
+  - model_id: AIBOS-MODEL-004
+    name: exo
+    category: distributed_inference
+    purpose: Distributed inference across devices
+    status: installed_not_running
+
+    github: https://github.com/exo-explore/exo
+    install:
+      type: python_venv
+      location: ~/exo
+
+    health_check:
+      command: exo status
+      expected: "nodes connected"
+      type: cli
+
+    notes: "Installed on Mac Studio, not in cluster yet"
+
+---
+
+# AGENT LAYER
+
+agents:
+  - agent_id: AIBOS-AGENT-001
+    name: Agent Factory
+    category: venture_provisioning
+    purpose: Spawns ventures with folder structure, Supabase projects, n8n workflows
+    status: live
+
+    location: /Users/acebless/Documents/WORLDWIDEBRO-OS/05-AGENTS/agent_factory.py
+
+    health_check:
+      command: python agent_factory.py --status
+      expected: "Agent Factory healthy"
+      type: python
+
+    depends_on:
+      - supabase
+      - n8n
+      - postgres
+
+  - agent_id: AIBOS-AGENT-002
+    name: Hermes
+    category: decision_router
+    purpose: Routes decisions by amount tier, ensures proper authorization
+    status: live
+
+    location: /Users/acebless/Documents/WORLDWIDEBRO-OS/05-AGENTS/hermes.py
+
+    model: claude-opus-4-8
+
+    health_check:
+      command: python hermes.py --test
+      expected: "Hermes operational"
+      type: python
+
+    decision_tiers:
+      - lt_5000: auto_approve
+      - 5000_to_25000: director_approval
+      - gt_25000: hermes_reasoning
+      - irreversible: human_review
+
+  - agent_id: AIBOS-AGENT-003
+    name: Agent Team Orchestrator
+    category: task_execution
+    purpose: Maps task types to execution scripts
+    status: live
+
+    location: /Users/acebless/Documents/WORLDWIDEBRO-OS/05-AGENTS/orchestration/run_agent_team.py
+
+    health_check:
+      command: python run_agent_team.py --status
+      expected: "Orchestrator ready"
+      type: python
+
+    task_types_wired: 3
+    task_types_needed: 50
+
+  - agent_id: AIBOS-AGENT-004
+    name: CrewAI
+    category: multi_agent_coordination
+    purpose: Multi-agent orchestration
+    status: available
+
+    github: https://github.com/crewAIInc/crewAI
+    install:
+      type: pip
+      command: pip install crewai
+
+    health_check:
+      command: crewai --version
+      expected: "CrewAI version"
+      type: cli
+
+---
+
+# OBSERVABILITY LAYER
+
+observability:
+  - service_id: AIBOS-OBS-001
+    name: Langfuse
+    category: llm_observability
+    purpose: Agent tracing, evaluations, prompt monitoring
+    status: running
+
+    github: https://github.com/langfuse/langfuse
+    port: 3003
+
+    health_check:
+      command: curl http://localhost:3003
+      expected: "UI loads"
+      type: http
+
+    integration:
+      instruments: agent_calls
+      frequency: real-time
+
+  - service_id: AIBOS-OBS-002
+    name: Prometheus
+    category: metrics
+    purpose: Metrics collection, alerting
+    status: running
+
+    port: 9090
+
+    health_check:
+      command: curl http://localhost:9090
+      expected: "Prometheus UI loads"
+      type: http
+
+    targets:
+      - localhost:9090/metrics (self)
+      - otel-collector:9464 (NOT YET WIRED)
+      - litellm:8000 (NOT YET WIRED)
+
+  - service_id: AIBOS-OBS-003
+    name: Grafana
+    category: visualization
+    purpose: Dashboard visualization
+    status: running
+
+    port: 3001
+
+    health_check:
+      command: curl http://localhost:3001
+      expected: "Grafana UI loads"
+      type: http
+
+    datasources:
+      - prometheus
+      - duckdb
+
+    notes: "Admin password needs reset"
+
+  - service_id: AIBOS-OBS-004
+    name: OpenTelemetry Collector
+    category: trace_collection
+    purpose: Centralized trace collection
+    status: running
+
+    port: 4317
+
+    health_check:
+      command: curl http://localhost:4317
+      expected: "OTLP responsive"
+      type: http
+
+---
+
+# MEMORY LAYER
+
+memory:
+  - service_id: AIBOS-MEM-001
+    name: Qdrant
+    category: vector_database
+    purpose: Vector storage, RAG retrieval, semantic search
+    status: running
+
+    github: https://github.com/qdrant/qdrant
+    port: 6333
+
+    health_check:
+      command: curl http://localhost:6333/health
+      expected: "ok"
+      type: http
+
+    collections:
+      - repositories (1648 vectors)
+      - notes (15558 vectors)
+      - capabilities (250 vectors)
+
+    embedding_model: nomic-embed-text
+
+  - service_id: AIBOS-MEM-002
+    name: Neo4j
+    category: knowledge_graph
+    purpose: Knowledge graph storage, entity relationships
+    status: running
+
+    github: https://github.com/neo4j/neo4j
+    port: 7474
+    api_port: 7687
+
+    health_check:
+      command: cypher-shell "MATCH (n) RETURN count(n);"
+      expected: "count > 0"
+      type: cypher
+
+    entities:
+      - ventures (712)
+      - repositories (1639)
+      - capabilities (25)
+
+  - service_id: AIBOS-MEM-003
+    name: Redis
+    category: cache
+    purpose: Real-time caching, pub/sub, session storage
+    status: running
+
+    port: 6379
+
+    health_check:
+      command: redis-cli ping
+      expected: "PONG"
+      type: cli
+
+---
+
+# DATA LAYER
+
+data:
+  - service_id: AIBOS-DATA-001
+    name: Supabase
+    category: operational_database
+    purpose: Venture records, decision logs, task tracking
+    status: running
+
+    type: supabase_cloud
+    project_id: cyhzilqldouzgynacqpe
+
+    health_check:
+      command: psql -c "SELECT 1;"
+      expected: "1"
+      type: sql
+
+    tables:
+      - ventures (712)
+      - venture_decisions
+      - tasks
+      - contacts
+      - products
+      - graph_entities
+      - graph_relationships
+
+  - service_id: AIBOS-DATA-002
+    name: DuckDB
+    category: analytical_database
+    purpose: Analytics, aggregations, reporting
+    status: running
+
+    database_file: /Users/acebless/Documents/worldwidebro_os.duckdb
+
+    health_check:
+      command: duckdb worldwidebro_os.duckdb "SELECT COUNT(*) FROM ventures;"
+      expected: "712"
+      type: sql
+
+  - service_id: AIBOS-DATA-003
+    name: MinIO
+    category: object_storage
+    purpose: File storage, artifacts, backups
+    status: available
+
+    github: https://github.com/minio/minio
+    health_check:
+      command: mc admin info
+      expected: "MinIO healthy"
+      type: cli
+
+---
+
+# AUTOMATION LAYER
+
+automation:
+  - service_id: AIBOS-AUTO-001
+    name: n8n
+    category: workflow_automation
+    purpose: Workflow orchestration, task automation
+    status: running
+
+    port: 5678
+
+    health_check:
+      command: curl http://localhost:5678
+      expected: "n8n UI loads"
+      type: http
+
+  - service_id: AIBOS-AUTO-002
+    name: Zapier
+    category: workflow_automation
+    purpose: Cloud automation, third-party integrations
+    status: available
+
+    integration_type: saas
+
+---
+
+# MCP SERVERS
+
+mcp_servers:
+  - mcp_id: AIBOS-MCP-001
+    name: Stripe MCP
+    category: payment_processing
+    purpose: Payment creation, charge processing
+    status: available
+
+  - mcp_id: AIBOS-MCP-002
+    name: Slack MCP
+    category: communication
+    purpose: Message sending, notifications
+    status: configured
+
+  - mcp_id: AIBOS-MCP-003
+    name: GitHub MCP
+    category: repository_management
+    purpose: Repository operations, PR management
+    status: configured
+
+  - mcp_id: AIBOS-MCP-004
+    name: SocratiCode MCP
+    category: code_intelligence
+    purpose: Codebase indexing, semantic search
+    status: configured
+
+  - mcp_id: AIBOS-MCP-005
+    name: Supabase MCP
+    category: data_operations
+    purpose: Database operations, project management
+    status: configured
+
+---
+
+# REGISTRY METADATA
+
+metadata:
+  last_updated: 2026-07-20T20:50:00Z
+  total_tools: 22
+  total_services: 15
+  total_agents: 4
+  total_mcp_servers: 5
+
+  health_status:
+    live: 12
+    running: 8
+    available: 5
+    partial: 3
+    unknown: 1
+
+  critical_services:
+    - Agent Factory
+    - Hermes
+    - Neo4j
+    - Qdrant
+    - Supabase
+
+  needs_attention:
+    - Prometheus not scraping real metrics
+    - Grafana login credentials unknown
+    - exo cluster not configured
+    - 47 task types need wiring

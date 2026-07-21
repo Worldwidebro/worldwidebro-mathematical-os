@@ -1,0 +1,63 @@
+# Agent Intelligence Platform (AIP) — Framework Registry
+# Tracks agent frameworks, orchestration capabilities, and benchmark metrics.
+
+frameworks:
+  - id: crewai
+    name: CrewAI
+    orchestration: Role-playing autonomous agents
+    language: Python
+    mcp_support: true
+    scalability: High
+    strengths: Role-playing dynamics, task context wiring, out-of-the-box templates
+    weaknesses: State loop control, synchronous execution overhead
+    enterprise_readiness: 85%
+
+  - id: autogen
+    name: AutoGen / AG2
+    orchestration: Conversational multi-agent workflows
+    language: Python
+    mcp_support: true
+    scalability: Very High
+    strengths: High-turn conversation patterns, model routing, flexible topologies
+    weaknesses: Memory management complexity, state graph loops
+    enterprise_readiness: 88%
+
+  - id: mastra
+    name: Mastra
+    orchestration: Structured TS workflows & endpoints
+    language: TypeScript
+    mcp_support: true
+    scalability: High
+    strengths: Light runtime dependencies, clean Next.js/Node.js integration, fast loadtimes
+    weaknesses: Smaller library ecosystem compared to Python equivalents
+    enterprise_readiness: 82%
+
+  - id: openclaw
+    name: OpenClaw / SwarmClaw
+    orchestration: Multi-channel messaging & chron jobs
+    language: TypeScript / Java
+    mcp_support: true
+    scalability: High
+    strengths: Signal/Telegram/Discord messaging integrations, native cron scheduling, browser automation
+    weaknesses: Heavy multi-channel setup configuration
+    enterprise_readiness: 84%
+
+  - id: langgraph
+    name: LangGraph
+    orchestration: State graph cycles & workflows
+    language: Python / TypeScript
+    mcp_support: true
+    scalability: Extremely High
+    strengths: Cyclic execution paths, precise agent state machine control, langfuse observability
+    weaknesses: Steep learning curve, verbose boilerplate configs
+    enterprise_readiness: 94%
+
+  - id: praisonai
+    name: PraisonAI
+    orchestration: Multi-AI self-reflection workflows
+    language: Python / TypeScript
+    mcp_support: true
+    scalability: High
+    strengths: Ultra-fast agent instantiation (3.77us), declarative markdown setups, lightweight footprint
+    weaknesses: Limited custom UI integrations out of the box
+    enterprise_readiness: 86%

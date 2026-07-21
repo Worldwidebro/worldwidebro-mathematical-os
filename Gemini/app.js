@@ -584,6 +584,8 @@ let registryCapabilities = [];
 let registryRepositories = [];
 let registryAgents = [];
 let registryIntegrations = [];
+let registryFrameworks = [];
+let registryModels = [];
 
 let capabilitySearchQuery = "";
 let repositorySearchQuery = "";
@@ -703,6 +705,14 @@ function updateStatsDashboard() {
     let chaptersCount = coursesList.reduce((acc, c) => acc + (parseInt(c.chapters) || 0), 0);
     categoryCountEl.textContent = chaptersCount;
     bookmarksCountEl.textContent = coursesList.reduce((acc, c) => acc + (c.status === "completed" ? (parseInt(c.chapters) || 0) * 7 : 0), 0);
+  }
+  else if (activeView === "aipView") {
+    statLabel1.textContent = "Agent Frameworks";
+    statLabel2.textContent = "Available Models";
+    statLabel3.textContent = "Control Tiers";
+    totalCountEl.textContent = registryFrameworks.length;
+    categoryCountEl.textContent = registryModels.length;
+    bookmarksCountEl.textContent = "5 Tiers";
   }
 }
 
@@ -1515,23 +1525,27 @@ document.getElementById("btnRunAgentSandbox").addEventListener("click", async ()
   
   statusEl.textContent = "RUNNING";
   statusEl.className = "console-status running";
-  consoleBody.textContent = `[SANDBOX START] Initializing agent agentic pipeline for '${agentName}'...\n`;
+  
+  let accumulatedText = `[SANDBOX START] Initializing agent agentic pipeline for '${agentName}'...\n`;
+  consoleBody.innerHTML = linkifyConsoleOutput(accumulatedText);
 
   try {
     const res = await postApiRequest("/api/agent/run", { agent_name: agentName, prompt: prompt });
     
     // Simulate step-by-step console outputs for premium feel
     let logIndex = 0;
-    consoleBody.textContent = "";
+    accumulatedText = "";
     
     function printNextLog() {
       if (logIndex < res.logs.length) {
-        consoleBody.textContent += res.logs[logIndex] + "\n";
+        accumulatedText += res.logs[logIndex] + "\n";
+        consoleBody.innerHTML = linkifyConsoleOutput(accumulatedText);
         logIndex++;
         consoleBody.scrollTop = consoleBody.scrollHeight;
         setTimeout(printNextLog, 650);
       } else {
-        consoleBody.textContent += `\n🤖 [AGENT RESPONSE COMPLETED]\n=====================================\n${res.response}`;
+        accumulatedText += `\n🤖 [AGENT RESPONSE COMPLETED]\n=====================================\n${res.response}`;
+        consoleBody.innerHTML = linkifyConsoleOutput(accumulatedText);
         statusEl.textContent = "COMPLETED";
         statusEl.className = "console-status passed";
         consoleBody.scrollTop = consoleBody.scrollHeight;
@@ -1544,7 +1558,7 @@ document.getElementById("btnRunAgentSandbox").addEventListener("click", async ()
   } catch (err) {
     statusEl.textContent = "ERROR";
     statusEl.className = "console-status failed";
-    consoleBody.textContent = `[AGENT SANDBOX RUNNER FATAL ERROR]\n${err.message}`;
+    consoleBody.innerHTML = linkifyConsoleOutput(`[AGENT SANDBOX RUNNER FATAL ERROR]\n${err.message}`);
   }
 });
 
@@ -1806,6 +1820,108 @@ async function pollCourseProgress() {
   }
 }
 
+// Linkify utility for ports, localhost URLs, and custom URLs in console outputs
+function linkifyConsoleOutput(text) {
+  // 1. Escape HTML first
+  let escaped = text
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+
+  // 2. Linkify standard http://localhost:XXXX URLs
+  escaped = escaped.replace(/(https?:\/\/localhost:(\d+)[^\s]*)/gi, (url) => {
+    return `<a href="${url}" target="_blank" class="console-link" style="color: var(--primary-accent, #6366f1); text-decoration: underline; font-weight: 600;">${url}</a>`;
+  });
+
+  // 3. Linkify "localhost:XXXX"
+  escaped = escaped.replace(/(?<!https?:\/\/)(localhost:(\d+))/gi, (match, p1, p2) => {
+    return `<a href="http://localhost:${p2}" target="_blank" class="console-link" style="color: var(--primary-accent, #6366f1); text-decoration: underline; font-weight: 600;">${match}</a>`;
+  });
+
+  // 4. Linkify "Port XXXX" or "port XXXX"
+  escaped = escaped.replace(/(ports?\s+(\d+))/gi, (match, p1, p2) => {
+    return `${p1.split(/\s+/)[0]} <a href="http://localhost:${p2}" target="_blank" class="console-link" style="color: var(--primary-accent, #6366f1); text-decoration: underline; font-weight: 600;">${p2}</a>`;
+  });
+
+  return escaped;
+}
+
+// -------------------------------------------------------------
+// VIEW 8: AIP Control Plane Logic
+// -------------------------------------------------------------
+async function fetchFrameworks() {
+  try {
+    const res = await fetch("/api/registry/frameworks");
+    if (!res.ok) throw new Error("API error fetching frameworks");
+    const jsonRes = await res.json();
+    registryFrameworks = jsonRes.data || [];
+    renderFrameworks();
+    updateStatsDashboard();
+  } catch (err) {
+    console.error(err);
+    document.getElementById("frameworksTableBody").innerHTML = `
+      <tr>
+        <td colspan="6" style="text-align: center; color: var(--text-muted); padding: 20px;">Frameworks Registry Unavailable</td>
+      </tr>`;
+  }
+}
+
+function renderFrameworks() {
+  const tbody = document.getElementById("frameworksTableBody");
+  if (!tbody || registryFrameworks.length === 0) return;
+
+  const list = registryFrameworks.filter(f => f.id);
+
+  tbody.innerHTML = list.map(f => `
+    <tr>
+      <td style="font-weight: 600; color: var(--text-primary);">${f.name}</td>
+      <td style="color: var(--text-secondary);">${f.orchestration}</td>
+      <td style="font-family: monospace; color: var(--accent-cyan);">${f.language}</td>
+      <td style="color: ${f.mcp_support === "true" || f.mcp_support === true ? "var(--accent-cyan)" : "var(--text-muted)"}">${f.mcp_support === "true" || f.mcp_support === true ? "✅ Active" : "❌ No"}</td>
+      <td style="font-weight: 500; color: var(--text-primary);">${f.scalability}</td>
+      <td style="font-weight: 600; color: var(--accent-pink);">${f.enterprise_readiness}</td>
+    </tr>
+  `).join("");
+}
+
+async function fetchModels() {
+  try {
+    const res = await fetch("/api/registry/models");
+    if (!res.ok) throw new Error("API error fetching models");
+    const jsonRes = await res.json();
+    registryModels = jsonRes.data || [];
+    renderModels();
+    updateStatsDashboard();
+  } catch (err) {
+    console.error(err);
+    document.getElementById("modelsTableBody").innerHTML = `
+      <tr>
+        <td colspan="7" style="text-align: center; color: var(--text-muted); padding: 20px;">Models Registry Unavailable</td>
+      </tr>`;
+  }
+}
+
+function renderModels() {
+  const tbody = document.getElementById("modelsTableBody");
+  if (!tbody || registryModels.length === 0) return;
+
+  const list = registryModels.filter(m => m.id);
+
+  tbody.innerHTML = list.map(m => `
+    <tr>
+      <td style="font-weight: 600; color: var(--text-primary);">${m.name}</td>
+      <td style="font-weight: 500; color: var(--accent-cyan);">${m.provider}</td>
+      <td style="font-weight: 600; color: var(--accent-green);">${m.quality_score}</td>
+      <td style="font-weight: 600; color: var(--accent-pink);">${m.coding_score}</td>
+      <td style="font-family: monospace; color: var(--text-secondary);">${m.latency_ms} ms</td>
+      <td style="font-family: monospace; color: var(--text-primary);">$${parseFloat(m.cost_input_1m).toFixed(2)} / $${parseFloat(m.cost_output_1m).toFixed(2)}</td>
+      <td style="color: ${m.reasoning_budget === "true" || m.reasoning_budget === true ? "var(--accent-cyan)" : "var(--text-muted)"}">${m.reasoning_budget === "true" || m.reasoning_budget === true ? "⚡ Enabled" : "❌ No"}</td>
+    </tr>
+  `).join("");
+}
+
 // App Initialization
 function init() {
   initTheme();
@@ -1824,6 +1940,8 @@ function init() {
   fetchAgents();
   fetchGraphData();
   fetchCourses();
+  fetchFrameworks();
+  fetchModels();
 }
 
 document.addEventListener("DOMContentLoaded", init);
