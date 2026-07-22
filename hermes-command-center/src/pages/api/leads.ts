@@ -15,7 +15,7 @@ export default async function handler(req: any, res: any) {
     }]);
     if (error) throw error;
     console.log(`[${now}] ✅ Lead: ${email} | $${budget} | ${venture_id}`);
-    res.status(200).json({ lead_id: data?.[0]?.id, created_at: now });
+    res.status(200).json({ lead_id: (data as any)?.[0]?.id || 'pending', created_at: now });
   } catch (err: any) {
     res.status(500).json({ error: err.message });
   }
