@@ -313,3 +313,83 @@ despite the npm package + source being present since April. Installed properly v
 **Next**: confirm vex-hero-site deploy succeeded; get the 3 Stripe/Supabase secrets from user
 (possibly via BrowserOS now that it's connected); decide whether to build vex-hero-site's missing
 pages (Case Studies, Intake, Advisory Packages, Sector/OpCo pages, 404).
+
+## Phase 12 — IZA OS Cores + vex Integration + Monetization + Playbooks (2026-07-23)
+
+### BLOCKERS (Critical Path)
+1. **Code inventory gap**: Only 1 of 7 OS cores has deployable code
+   - ✅ iza-os-marketing-core (deployed, live on growth-os subdomain)
+   - ⏳ iza-os-construction-core (renamed from con-os-build 2026-07-23, needs code check)
+   - ❌ iza-os-logistics-core (GitHub repo does not exist)
+   - ❌ iza-os-realestate-core (GitHub repo does not exist)
+   - ❌ iza-os-staffing-core (pending, no code provided yet)
+   - ❌ iza-os-education-core (pending, no code provided yet)
+   - ❌ iza-os-finance-core (pending, no code provided yet)
+   **ACTION**: Before wiring vex routing, verify what code actually exists in repos.
+
+2. **vex routing incomplete**: Sector pages not wired to OS cores
+   - vex dev server running (localhost:5173) but dashboard routing missing
+   - sectors.ts needs links to core subdomains (construction-os, staffing-os, etc.)
+   - Auth middleware (user.opco_role filter) not tested against cores
+
+3. **No monetization tracking live**: Revenue models, KPIs, sector dashboards undefined
+   - Unit economics not calculated (CAC, LTV, payback)
+   - Supabase revenue tracking tables not created
+   - Grafana dashboards not configured per sector
+
+4. **No execution playbooks**: 90-day GTM strategies for 7 sectors not drafted
+   - Go-to-market sequencing undefined (sequential vs parallel launch)
+   - Lead gen funnels not designed per sector
+   - Hiring/team structure not defined per sector
+
+### Tasks (TDD-style)
+
+#### T12.1 — Code Inventory & Verification (BLOCKS all following)
+- [ ] 12.1a Verify iza-os-construction-core has Next.js dashboard app code (check GitHub)
+- [ ] 12.1b Check Worldwidebro org for actual existence of logistics/realestate core repos
+- [ ] 12.1c Extract app template from iza-os-marketing-core (auth flow, data fetch pattern, Supabase/Neo4j integration)
+- [ ] 12.1d Decision: Stub 3 missing cores (staffing/education/finance) + deploy stubs, OR create full when code ready?
+
+#### T12.2 — Verify Core Deployment Status
+- [ ] 12.2a Test each deployed core's live Vercel URL (construction-os, logistics-os, realestate-os, growth-os)
+- [ ] 12.2b Verify auth middleware working: login → opco_role check → venture filter
+- [ ] 12.2c Check dashboard data flow: Supabase query → Neo4j enrichment → UI render
+
+#### T12.3 — Wire vex Routing (MVP)
+- [ ] 12.3a Update vex-hero-site/src/data/sectors.ts: add `core_subdomain` + `dashboard_link` per sector
+- [ ] 12.3b Add "View Dashboard" CTA on sector hero components
+- [ ] 12.3c Test e2e: click vex sector → navigates to core subdomain → auth → dashboard shows filtered ventures
+
+#### T12.4 — Monetization Framework (per sector)
+- [ ] 12.4a Define revenue model: CON (service %), STA (commission), RE (deal fees), EDU (subscriptions), FIN (AUM %), LOG (per-shipment), MKT (package)
+- [ ] 12.4b Calculate unit economics using con-001, miss-toys, hermes data as comps (CAC, LTV, payback, margin)
+- [ ] 12.4c Design KPI dashboard schema: `ventures_revenue` (monthly_revenue, bookings, contracts), `sector_metrics` (MRR, churn, LTV), `kpi_snapshots` (daily snapshots for charts)
+- [ ] 12.4d Create Supabase tables + edge functions for KPI aggregation
+
+#### T12.5 — 90-Day Execution Playbooks (7 sectors, sequential)
+- [ ] 12.5a **CON**: GC outreach script, pricing (time+materials? fixed project?), crew hiring plan, 30-day revenue target
+- [ ] 12.5b **STA**: contractor pipeline (LinkedIn, Indeed), matching logic, payroll integration, first 10 placements target
+- [ ] 12.5c **RE**: MLS integration, owner cold-call script, deal pricing, first 5 deals target
+- [ ] 12.5d **EDU**: curriculum launch (Azriel testbed first?), student cohort size, pricing model, growth loop (referrals)
+- [ ] 12.5e **FIN**: ledger schema, risk modeling, advisor onboarding, AUM target
+- [ ] 12.5f **LOG**: carrier relationships, route optimization, pricing per shipment, volume target
+- [ ] 12.5g **MKT**: launch campaign template, multi-venture orchestration, spend budget, ROAS target
+
+#### T12.6 — Deploy & Automate Monitoring
+- [ ] 12.6a Deploy missing cores to Vercel (once 12.1d decision made + code exists)
+- [ ] 12.6b Wire Langfuse observability + Grafana dashboards per sector (MRR chart, churn gauge, runway forecast)
+- [ ] 12.6c Create `/loop` job for nightly KPI collection (run daily 6am, snapshot into Supabase)
+- [ ] 12.6d Set alert thresholds: MRR decline > 20%, churn > 5%/mo, runway < 90 days
+
+### Acceptance Criteria
+- **Phase complete when:**
+  - All 7 cores have code (deployed OR stubbed + documented as "coming soon")
+  - vex sector pages route to core dashboards (e2e tested)
+  - Monetization KPIs live in Supabase + Grafana for each sector
+  - 90-day playbooks drafted, user-approved, scheduled for execution start
+  - `/loop` running KPI collection for 3+ days without errors
+
+### Decision Gates (User Input Required)
+- **12.1d**: Stub missing 3 cores + deploy stubs, OR defer their deployment?
+- **12.4b**: Use existing venture data (con-001, miss-toys, hermes) as comps for unit economics, OR forecast from scratch?
+- **12.5**: Launch sectors sequentially (CON first, 30d apart), or attempt parallel all 7?

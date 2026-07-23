@@ -1,0 +1,206 @@
+{
+  "version": "1.0",
+  "description": "IZA OS Cores: GitHub repos powering OPCO data engines, linked to ventures and vex-hero-site sector pages",
+  "cores": [
+    {
+      "id": "iza-os-construction-core",
+      "name": "Construction Core",
+      "opco": "CON",
+      "venture_id": "CON-001",
+      "repo": "Worldwidebro/iza-os-construction-core",
+      "github_url": "https://github.com/Worldwidebro/iza-os-construction-core",
+      "subdomain": "construction-os",
+      "vex_sector": "construction",
+      "vex_sector_url": "/sectors/construction",
+      "purpose": "Bidding, job costing, crew scheduling, compliance for all CON ventures",
+      "powers": [
+        "WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/CON-*",
+        "Folder structure + file hierarchy",
+        "Data engines: jobs, crews, equipment, compliance"
+      ],
+      "venture_count": 20,
+      "status": "deployed"
+    },
+    {
+      "id": "iza-os-staffing-core",
+      "name": "Staffing Core",
+      "opco": "STA",
+      "venture_id": "STA-001",
+      "repo": "Worldwidebro/iza-os-staffing-core",
+      "github_url": "https://github.com/Worldwidebro/iza-os-staffing-core",
+      "subdomain": "staffing-os",
+      "vex_sector": "staffing",
+      "vex_sector_url": "/sectors/staffing",
+      "purpose": "Contractor matching, skills matrix, payroll, availability for all STA ventures",
+      "powers": [
+        "WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/STA-*",
+        "Folder structure + file hierarchy",
+        "Data engines: candidates, skills, availability, contracts"
+      ],
+      "venture_count": 25,
+      "status": "pending_deployment"
+    },
+    {
+      "id": "iza-os-realestate-core",
+      "name": "Real Estate Core",
+      "opco": "RE",
+      "venture_id": "RE-001",
+      "repo": "Worldwidebro/iza-os-realestate-core",
+      "github_url": "https://github.com/Worldwidebro/iza-os-realestate-core",
+      "subdomain": "realestate-os",
+      "vex_sector": "real-estate",
+      "vex_sector_url": "/sectors/real-estate",
+      "purpose": "Property listings, owner management, deal pipeline, GIS for all RE ventures",
+      "powers": [
+        "WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/RE-*",
+        "Folder structure + file hierarchy",
+        "Data engines: properties, owners, deals, market analysis"
+      ],
+      "venture_count": 48,
+      "status": "deployed"
+    },
+    {
+      "id": "iza-os-education-core",
+      "name": "Education Core",
+      "opco": "EDU",
+      "venture_id": "EDU-001",
+      "repo": "Worldwidebro/iza-os-education-core",
+      "github_url": "https://github.com/Worldwidebro/iza-os-education-core",
+      "subdomain": "education-os",
+      "vex_sector": "education",
+      "vex_sector_url": "/sectors/education",
+      "purpose": "Curriculum management, student tracking, content delivery for all EDU ventures",
+      "powers": [
+        "WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/EDU-*",
+        "Folder structure + file hierarchy",
+        "Data engines: curriculum, students, progress, content"
+      ],
+      "venture_count": 57,
+      "status": "pending_deployment"
+    },
+    {
+      "id": "iza-os-finance-core",
+      "name": "Finance Core",
+      "opco": "FIN",
+      "venture_id": "FIN-001",
+      "repo": "Worldwidebro/iza-os-finance-core",
+      "github_url": "https://github.com/Worldwidebro/iza-os-finance-core",
+      "subdomain": "finance-os",
+      "vex_sector": "financial",
+      "vex_sector_url": "/sectors/financial",
+      "purpose": "Ledger, risk modeling, treasury, compliance for all FIN ventures",
+      "powers": [
+        "WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/FIN-*",
+        "Folder structure + file hierarchy",
+        "Data engines: transactions, risk, forecasts, compliance"
+      ],
+      "venture_count": 41,
+      "status": "pending_deployment"
+    },
+    {
+      "id": "iza-os-logistics-core",
+      "name": "Logistics Core (NexusDispatch)",
+      "opco": "LOG",
+      "venture_id": "LOG-001",
+      "repo": "Worldwidebro/iza-os-logistics-core",
+      "github_url": "https://github.com/Worldwidebro/iza-os-logistics-core",
+      "subdomain": "logistics-os",
+      "vex_sector": "transportation",
+      "vex_sector_url": "/sectors/transportation",
+      "purpose": "Shipment tracking, route optimization, billing for all LOG ventures",
+      "powers": [
+        "WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/LOG-*",
+        "Folder structure + file hierarchy",
+        "Data engines: shipments, routes, tracking, costs"
+      ],
+      "venture_count": 30,
+      "status": "deployed"
+    },
+    {
+      "id": "iza-os-marketing-core",
+      "name": "Marketing Core (GrowthOS)",
+      "opco": "MKT",
+      "venture_id": "MKT-001",
+      "repo": "Worldwidebro/iza-os-marketing-core",
+      "github_url": "https://github.com/Worldwidebro/iza-os-marketing-core",
+      "subdomain": "growth-os",
+      "vex_sector": "marketplace",
+      "vex_sector_url": "/sectors/marketplace",
+      "purpose": "Campaign management, multi-venture coordination for all MKT ventures",
+      "powers": [
+        "WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/MKT-*",
+        "Folder structure + file hierarchy",
+        "Data engines: campaigns, analytics, audience, conversion"
+      ],
+      "venture_count": 112,
+      "status": "deployed"
+    }
+  ],
+  "architecture": {
+    "layer_0": "Legal Entity (Winners Circle WC LLC / Worldwidebro Holdings)",
+    "layer_1": "IZA OS cores (7 repos) - GitHub repos powering OPCO data engines",
+    "layer_2": "6 OPCOs (CON, STA, RE, EDU, FIN, LOG) each with ventures",
+    "layer_3": "712 ventures distributed across OPCOs and sectors"
+  },
+  "vex_connections": {
+    "description": "Each vex-hero-site sector page (/sectors/{slug}) routes to corresponding iza-os-{sector}-core deployed to Vercel",
+    "flow": "User clicks sector hero → navigates to deployed OS subdomain → auth checks OPCO role → dashboard loads OPCO ventures",
+    "routes": {
+      "construction": {
+        "vex_page": "/sectors/construction",
+        "os_subdomain": "construction-os",
+        "core_repo": "iza-os-construction-core",
+        "ventures_shown": "all CON-* ventures in dashboard"
+      },
+      "staffing": {
+        "vex_page": "/sectors/staffing",
+        "os_subdomain": "staffing-os",
+        "core_repo": "iza-os-staffing-core",
+        "ventures_shown": "all STA-* ventures in dashboard"
+      },
+      "real-estate": {
+        "vex_page": "/sectors/real-estate",
+        "os_subdomain": "realestate-os",
+        "core_repo": "iza-os-realestate-core",
+        "ventures_shown": "all RE-* ventures in dashboard"
+      },
+      "education": {
+        "vex_page": "/sectors/education",
+        "os_subdomain": "education-os",
+        "core_repo": "iza-os-education-core",
+        "ventures_shown": "all EDU-* ventures in dashboard"
+      },
+      "financial": {
+        "vex_page": "/sectors/financial",
+        "os_subdomain": "finance-os",
+        "core_repo": "iza-os-finance-core",
+        "ventures_shown": "all FIN-* ventures in dashboard"
+      },
+      "transportation": {
+        "vex_page": "/sectors/transportation",
+        "os_subdomain": "logistics-os",
+        "core_repo": "iza-os-logistics-core",
+        "ventures_shown": "all LOG-* ventures in dashboard",
+        "note": "Transportation sector uses Logistics/LOG core"
+      },
+      "marketplace": {
+        "vex_page": "/sectors/marketplace",
+        "os_subdomain": "growth-os",
+        "core_repo": "iza-os-marketing-core",
+        "ventures_shown": "all MKT-* ventures in dashboard",
+        "note": "Marketplace sector uses Marketing/MKT core"
+      }
+    }
+  },
+  "deployment_checklist": {
+    "per_core": [
+      "✅ GitHub repo created (Worldwidebro/{name})",
+      "⏳ Dashboard deployed to Vercel with {subdomain}-os",
+      "⏳ Supabase filters ventures by opco_slug = '{opco}'",
+      "⏳ Neo4j populated with {opco} agents + ventures",
+      "⏳ vex-hero-site sectors.ts updated with core link",
+      "⏳ Auth middleware verifies user.opco_role matches opco",
+      "⏳ DNS/subdomain routing configured"
+    ]
+  }
+}
