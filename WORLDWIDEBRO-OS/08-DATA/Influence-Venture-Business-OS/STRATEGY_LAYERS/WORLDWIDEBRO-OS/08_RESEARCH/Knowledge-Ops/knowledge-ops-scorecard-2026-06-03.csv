@@ -1,3 +1,0 @@
-week_ending,data_fidelity_pct,graph_connectivity_pct,lightrag_eval_pct,socraticode_coverage_pct,execution_compounding_pct,knowledge_ops_score,notes
-2026-06-03,99.78,94.0,100.0,50.0,20.0,79.25,aligned=629/629 attention=0
-2026-06-03,99.78,100.0,100.0,50.0,20.0,80.44,aligned=629/629 attention=0

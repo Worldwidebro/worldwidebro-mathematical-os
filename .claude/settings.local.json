@@ -51,7 +51,8 @@
       "Read(.planning/*)",
       "Write(.planning/*)",
       "Read(STATE.md)",
-      "Write(STATE.md)"
+      "Write(STATE.md)",
+      "Bash(npm list *)"
     ],
     "deny": [
       "Read(.env)",
