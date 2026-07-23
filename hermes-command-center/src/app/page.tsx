@@ -18,16 +18,21 @@ export default function Dashboard() {
 
   useEffect(() => {
     async function load() {
-      const [ag, tk, dc, sk] = await Promise.all([
-        getAgents(),
-        getAgentTasks(),
-        getAgentDecisions(),
-        getSkillExecutions(),
-      ]);
-      setAgents(ag);
-      setTasks(tk);
-      setDecisions(dc);
-      setSkills(sk);
+      try {
+        const [ag, tk, dc, sk] = await Promise.all([
+          getAgents(),
+          getAgentTasks(),
+          getAgentDecisions(),
+          getSkillExecutions(),
+        ]);
+        setAgents(ag || []);
+        setTasks(tk || []);
+        setDecisions(dc || []);
+        setSkills(sk || []);
+      } catch (err) {
+        console.error('Supabase load error:', err);
+        // Fallback: empty arrays on error
+      }
 
       const defaultMcps = [
         { name: 'slack', status: 'active', category: 'communication', capabilities: ['send_message'], used_by: ['CON-001'] },
@@ -44,6 +49,7 @@ export default function Dashboard() {
         setMrr(data?.reduce((sum, p: any) => sum + (p.amount || 0), 0) || 0);
       } catch (err) {
         console.error('MRR query error:', err);
+        setMrr(0);
       }
 
       setLoading(false);
