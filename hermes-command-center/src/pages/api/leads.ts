@@ -10,7 +10,7 @@ export default async function handler(req: any, res: any) {
   const { email, budget, venture_id } = req.body;
   const now = new Date().toISOString();
   try {
-    const { data, error } = await supabase.from('lead_intake').insert([{
+    const { data, error } = await supabase.from('venture_leads').insert([{
       email, budget, venture_id: venture_id || 'STA-001', status: 'new', created_at: now,
     }]);
     if (error) throw error;

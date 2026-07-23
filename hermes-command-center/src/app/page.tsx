@@ -40,7 +40,7 @@ export default function Dashboard() {
 
       try {
         const sevenDaysAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString();
-        const { data } = await supabase.from('payments').select('amount').eq('status', 'succeeded').gte('created_at', sevenDaysAgo);
+        const { data } = await supabase.from('deal_payments').select('amount').eq('status', 'succeeded').gte('created_at', sevenDaysAgo);
         setMrr(data?.reduce((sum, p: any) => sum + (p.amount || 0), 0) || 0);
       } catch (err) {
         console.error('MRR query error:', err);

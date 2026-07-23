@@ -24,7 +24,7 @@ export default async function handler(req: any, res: any) {
 
       console.log(`[${now}] ✅ Payment confirmed: ${email} | $${amount} | ${ventureId}`);
 
-      const { error } = await supabase.from('payments').insert([{
+      const { error } = await supabase.from('deal_payments').insert([{
         email, amount, venture_id: ventureId, stripe_payment_id: stripePaymentId,
         status: 'succeeded', created_at: now, paid_at: now,
       }]);
