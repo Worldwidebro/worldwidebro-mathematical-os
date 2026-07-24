@@ -1,12 +1,18 @@
 #!/usr/bin/env python3
 """
-Connector 3: Authorization policy engine.
-Before action: agent → policy → approved/denied/requires_approval + audit log.
+Connector 3: Authorization policy engine + Agent Manifest enforcement.
+Before action: agent → check manifest → policy → approved/denied/requires_approval + audit.
+
+Agent Manifest (spec section 4.2):
+  - Declares which tools agent can invoke
+  - Per-tool constraints (e.g., max_amount_cents for payment tools)
+  - Tool invocations blocked if not in manifest
 """
 
 import logging
 from dataclasses import dataclass
 from enum import Enum
+from typing import Optional
 
 from supabase import AsyncClient, create_client
 
@@ -14,6 +20,7 @@ logger = logging.getLogger(__name__)
 
 SUPABASE_URL = "https://cyhzilqldouzgynacqpe.supabase.co"
 AUDIT_TABLE = "audit_logs"
+MANIFEST_TABLE = "agent_manifests"
 
 
 class Decision(str, Enum):
@@ -45,13 +52,94 @@ class PolicyGate:
         if self.client:
             await self.client.aclose()
 
-    async def check(
-        self, agent_id: str, action: str, venture_id: str | None = None
-    ) -> PolicyDecision:
-        """Check if agent can perform action (deploy, charge, delete, update)."""
+    async def check_manifest(
+        self, agent_id: str, tool_id: str, params: dict
+    ) -> Optional[PolicyDecision]:
+        """
+        Check if agent is permitted to invoke a tool (per its manifest).
+        Returns PolicyDecision if denied, None if permitted.
+        """
         if not self.client:
             raise RuntimeError("PolicyGate not connected")
 
+        try:
+            resp = await self.client.table(MANIFEST_TABLE).select("tools").eq(
+                "agent_id", agent_id
+            ).single().execute()
+
+            if not resp.data:
+                return PolicyDecision(
+                    Decision.DENIED,
+                    f"No manifest found for agent {agent_id}",
+                    agent_id,
+                    f"invoke_tool:{tool_id}",
+                    None,
+                )
+
+            tools = resp.data.get("tools", [])
+            tool_manifest = next((t for t in tools if t.get("tool_id") == tool_id), None)
+
+            if not tool_manifest:
+                return PolicyDecision(
+                    Decision.DENIED,
+                    f"Tool {tool_id} not in manifest for {agent_id}",
+                    agent_id,
+                    f"invoke_tool:{tool_id}",
+                    None,
+                )
+
+            permission = tool_manifest.get("permission")
+            if permission == "request_only":
+                return PolicyDecision(
+                    Decision.REQUIRES_APPROVAL,
+                    f"Agent {agent_id} can only request {tool_id}, not invoke",
+                    agent_id,
+                    f"invoke_tool:{tool_id}",
+                    None,
+                )
+
+            # Check per-tool constraints (e.g., max_amount_cents)
+            constraints = tool_manifest.get("constraints", {})
+            for constraint_name, constraint_value in constraints.items():
+                param_value = params.get(constraint_name)
+                if param_value and param_value > constraint_value:
+                    return PolicyDecision(
+                        Decision.REQUIRES_APPROVAL,
+                        f"{constraint_name}={param_value} exceeds constraint {constraint_value}",
+                        agent_id,
+                        f"invoke_tool:{tool_id}",
+                        None,
+                    )
+
+            return None  # Permitted
+
+        except Exception as e:
+            logger.error(f"Manifest check failed: {e}")
+            return PolicyDecision(Decision.DENIED, str(e), agent_id, f"invoke_tool:{tool_id}", None)
+
+    async def check(
+        self,
+        agent_id: str,
+        action: str,
+        venture_id: str | None = None,
+        tool_id: Optional[str] = None,
+        tool_params: Optional[dict] = None,
+    ) -> PolicyDecision:
+        """Check if agent can perform action (deploy, charge, delete, update).
+
+        Optional: verify tool invocation via manifest (if tool_id + tool_params provided).
+        """
+        if not self.client:
+            raise RuntimeError("PolicyGate not connected")
+
+        # 1. Check manifest if tool invocation
+        if tool_id and tool_params:
+            manifest_denial = await self.check_manifest(agent_id, tool_id, tool_params)
+            if manifest_denial:
+                await self.log_decision(manifest_denial)
+                return manifest_denial
+
+        # 2. Check action-specific policies
         if action == "deploy":
             return await self._check_deploy(agent_id, venture_id)
         elif action == "charge":

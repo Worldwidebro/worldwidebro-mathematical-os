@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Agent Manifest Schema",
+  "description": "Defines tool capabilities and constraints for agents (spec section 4.2)",
+  "type": "object",
+  "properties": {
+    "agent_id": { "type": "string" },
+    "agent_type": { "type": "string" },
+    "version": { "type": "string" },
+    "tools": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "tool_id": { "type": "string", "description": "e.g., 'stripe.create_invoice'" },
+          "permission": {
+            "type": "string",
+            "enum": ["invoke", "request_only", "deny"],
+            "description": "invoke: direct call; request_only: needs approval; deny: blocked"
+          },
+          "constraints": {
+            "type": "object",
+            "description": "Per-tool limits (max_amount_cents, rate_limit_per_min, etc.)"
+          }
+        },
+        "required": ["tool_id", "permission"]
+      }
+    }
+  },
+  "required": ["agent_id", "tools"],
+  "examples": [
+    {
+      "agent_id": "hermes",
+      "agent_type": "PaymentAgent",
+      "version": "1.0.0",
+      "tools": [
+        {
+          "tool_id": "stripe.create_invoice",
+          "permission": "invoke",
+          "constraints": { "max_amount_cents": 1000000 }
+        },
+        { "tool_id": "stripe.refund", "permission": "request_only" },
+        { "tool_id": "bank_transfer", "permission": "deny" }
+      ]
+    }
+  ]
+}
