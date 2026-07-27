@@ -5,7 +5,7 @@ services:
     container_name: neo4j
     hostname: neo4j.internal
     environment:
-      NEO4J_AUTH: neo4j/ventures2026
+      NEO4J_AUTH: neo4j/${NEO4J_PASSWORD:-ventures2026}
       NEO4J_ACCEPT_LICENSE_AGREEMENT: "yes"
       NEO4J_apoc_export_use__arrow__for__all: "true"
       NEO4J_apoc_import_file__use__neo4j__config: "true"
@@ -54,7 +54,7 @@ services:
     environment:
       POSTGRES_DB: twenty
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
     ports:
       - "5432:5432"
     volumes:
@@ -95,7 +95,7 @@ services:
     hostname: grafana.internal
     environment:
       GF_SECURITY_ADMIN_USER: admin
-      GF_SECURITY_ADMIN_PASSWORD: ventures2026
+      GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_PASSWORD:-ventures2026}
       GF_USERS_ALLOW_SIGN_UP: "false"
     ports:
       - "3001:3000"
@@ -145,9 +145,9 @@ services:
     container_name: langfuse
     hostname: langfuse.internal
     environment:
-      DATABASE_URL: postgresql://postgres:postgres@postgres.internal:5432/langfuse
-      NEXTAUTH_SECRET: langfuse-dev-secret
-      SALT: langfuse-dev-salt
+      DATABASE_URL: postgresql://postgres:${POSTGRES_PASSWORD:-postgres}@postgres.internal:5432/langfuse
+      NEXTAUTH_SECRET: ${LANGFUSE_SECRET:-langfuse-dev-secret}
+      SALT: ${LANGFUSE_SALT:-langfuse-dev-salt}
       NEXTAUTH_URL: http://localhost:3003
       TELEMETRY_ENABLED: "false"
       LANGFUSE_ENABLE_EXPORT: "true"

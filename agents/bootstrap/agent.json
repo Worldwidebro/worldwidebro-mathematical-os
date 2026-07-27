@@ -1,0 +1,8 @@
+{"agents": [
+  {"id": "coordinator", "name": "Coordinator", "type": "orchestrator", "sector": "all", "capabilities": ["task-dispatch", "management"]},
+  {"id": "researcher", "name": "Researcher", "type": "specialist", "sector": "all", "capabilities": ["search", "analysis"]},
+  {"id": "con-estimator", "name": "Construction Estimator", "type": "domain-expert", "sector": "construction", "capabilities": ["takeoff", "pricing"]},
+  {"id": "fin-analyst", "name": "Finance Analyst", "type": "domain-expert", "sector": "finance", "capabilities": ["forecasting", "compliance"]},
+  {"id": "lt-dispatcher", "name": "Logistics Dispatcher", "type": "domain-expert", "sector": "logistics", "capabilities": ["routing", "dispatch"]},
+  {"id": "re-agent", "name": "Real Estate Agent", "type": "domain-expert", "sector": "real-estate", "capabilities": ["valuation", "listing"]}
+]}
