@@ -7,6 +7,12 @@
       "skillPath": "skills/ask-docs/SKILL.md",
       "computedHash": "f5913fc0f62e37fe5babdf38a377baac77add9cf72cbe47bd86478d3c6f94251"
     },
+    "codebase-memory-mcp-intelligence": {
+      "source": "aradotso/mcp-skills",
+      "sourceType": "github",
+      "skillPath": "skills/codebase-memory-mcp-intelligence/SKILL.md",
+      "computedHash": "419b71fe3f4f9521f5da639099a97eea0cd4808f74977f7cdc9cbf59bcb26f92"
+    },
     "design-agent": {
       "source": "crewaiinc/skills",
       "sourceType": "github",
@@ -79,6 +85,12 @@
       "skillPath": "neo4j-graphrag-skill/SKILL.md",
       "computedHash": "0ce5a306fbb4105ee52d9cefa033f6e6fc7003b34b98389dc89e4f7e651358f5"
     },
+    "pgvector-semantic-search": {
+      "source": "timescale/pg-aiguide",
+      "sourceType": "github",
+      "skillPath": "skills/pgvector-semantic-search/SKILL.md",
+      "computedHash": "ea00b6af03fd3565dca37b282de9b786bd00711db190b671e6e729d9d9972622"
+    },
     "plan": {
       "source": "hyperb1iss/hyperskills",
       "sourceType": "github",
@@ -114,6 +126,12 @@
       "sourceType": "github",
       "skillPath": "templates/.agents/skills/template-saas-app/SKILL.md",
       "computedHash": "0b01198a6b9330141e257a0a67ef9f532c8ec5c7d4798242ce9a456aaec34bd8"
+    },
+    "understand-anything-knowledge-graph": {
+      "source": "aradotso/trending-skills",
+      "sourceType": "github",
+      "skillPath": "skills/understand-anything-knowledge-graph/SKILL.md",
+      "computedHash": "f9534ff5617d2899d308c9f3ecb6d1912c7c3710c61130e0888334e039eb86c6"
     }
   }
 }

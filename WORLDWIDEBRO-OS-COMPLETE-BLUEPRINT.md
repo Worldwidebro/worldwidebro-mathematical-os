@@ -1,8 +1,10 @@
 ---
 title: Worldwidebro OS — Complete System Blueprint
 date: 2026-07-27
-version: 1.0
-status: PHASE 3 COMPLETE
+created: 2026-07-27
+edited: 2026-07-28
+version: 1.1
+status: PHASE 3 COMPLETE (Human OS Integration)
 ---
 
 # Worldwidebro OS — Complete System Blueprint
@@ -31,7 +33,9 @@ status: PHASE 3 COMPLETE
 │                                                                    │
 │ Canonical Repo: worldwidebro-os-business-engine                  │
 │ 22 Agents × 6 OPCOs (CON, STA, RE, EDU, FIN, LOG)                │
-│ Decision Authority: 90%+ AUTONOMOUS, 70-79% MONITORED, <70% TRAINING
+│ Decision Authority (Execution): 90%+ AUTONOMOUS, 70-79% MONITORED, <70% TRAINING
+│ Decision Authority (Growth): Founders develop across 10 Human OS layers
+│ See: [[HUMAN-OS-FRAMEWORK.md]] + [[GOVERNANCE-HUMAN-LAYER.md]]
 │                                                                    │
 │ Files:                                                             │
 │ ├─ .fractal_agent_spawn.py (spawn nodes, 6 parallel children)   │
@@ -95,14 +99,20 @@ status: PHASE 3 COMPLETE
 └────────┬─────────────────────────────────────────────────────────┘
          │
 ┌────────▼─────────────────────────────────────────────────────────┐
-│ LAYER 7: TRUST + GOVERNANCE                                      │
-│ Success Rate → Authority, Audit Logs, Security, Monitoring       │
+│ LAYER 7: TRUST + GOVERNANCE (DUAL-OUTCOME)                       │
+│ Success Rate + Learning Velocity → Authority                      │
+│ Audit Logs, Security, Monitoring, Human OS Development           │
 │                                                                    │
-│ Evaluation: 90%+ AUTONOMOUS, 80-89% SUPERVISED,                  │
-│ 70-79% MONITORED, <70% TRAINING                                  │
+│ Evaluation: Success Rate (execution) + Growth Rate (learning)    │
+│ - 90%+ AUTONOMOUS: Executes well + demonstrates learning         │
+│ - 70-79% MONITORED: Executes well + needs coaching on growth    │
+│ - <70% TRAINING: Needs execution help + intensive feedback       │
+│                                                                    │
+│ See: [[HUMAN-OS-FRAMEWORK.md]] + [[GOVERNANCE-HUMAN-LAYER.md]]  │
 │                                                                    │
 │ Auditing: Supabase + Neo4j + Grafana + Slack                     │
 │ Security: MCP Slack alerts, director approvals                    │
+│ Development: Founder Human OS metrics + learning velocity         │
 └────────────────────────────────────────────────────────────────────┘
 ```
 

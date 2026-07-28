@@ -5,6 +5,8 @@ import { initNeo4j, initSupabase } from './db.js';
 import { networkRouter } from './routes/network.js';
 import { ventureRouter } from './routes/venture.js';
 import { agentRouter } from './routes/agent.js';
+import { founderRouter } from './routes/founder.js';
+import { seedHumanOS } from './seed-human-os.js';
 
 dotenv.config();
 
@@ -27,6 +29,10 @@ app.locals.supabase = supabase;
 app.use('/network', networkRouter);
 app.use('/ventures', ventureRouter);
 app.use('/agents', agentRouter);
+app.use('/founders', founderRouter);
+
+// Seed Human OS framework on startup
+seedHumanOS().catch(err => console.warn('Human OS seeding failed:', err));
 
 // Health check
 app.get('/health', (req, res) => {

@@ -8,24 +8,29 @@ status: Ready to execute
 
 ## 25 Min Launch Window (8:00–8:30 AM)
 
-### 8:00–8:05: Zapier Setup (5 min)
+### 8:00–8:03: Deploy + Configure Jotform Webhook (3 min)
 
-```
-1. zapier.com → Create new Zap
-2. Trigger: Jotform (form 262034682245051)
-   Event: New Submission
-3. Action: Gmail
-   To: [your email]
-   Subject: {{First Name}}, here's your readiness score
-   Body: You scored {{readiness_pct}}% readiness
-4. Test → ON
+**Step A: Deploy (1 min)**
+```bash
+cd con-001-ace-construction
+git push origin main
+# Vercel auto-deploys, watch: https://vercel.com/con-001-ace-construction
 ```
 
-**Done when:** Zap shows "Active"
+**Step B: Jotform Webhook (2 min)**
+```
+1. https://form.jotform.com/262034682245051
+2. Settings → Webhooks → Add Webhook
+3. URL: https://con-001-ace-construction.vercel.app/api/webhooks/jotform
+4. Trigger: Form Submission, Method: POST
+5. Save
+```
+
+**Done when:** Vercel green + Jotform webhook shows "Active"
 
 ---
 
-### 8:05–8:15: Stripe Webhook (10 min)
+### 8:03–8:13: Stripe Webhook (10 min)
 
 **Step A: Stripe Dashboard (2 min)**
 ```
@@ -54,7 +59,7 @@ stripe trigger payment_intent.succeeded
 
 ---
 
-### 8:15–8:25: E2E Test (10 min)
+### 8:13–8:23: E2E Test (10 min)
 
 **Test 1: Form Submission**
 ```
@@ -79,9 +84,10 @@ stripe trigger payment_intent.succeeded
 
 ---
 
-### 8:25–8:30: Final Check
+### 8:23–8:30: Final Check (7 min buffer)
 
-- [ ] Zapier zap is ON
+- [ ] Vercel deployment successful
+- [ ] Jotform webhook configured and active
 - [ ] Stripe webhook endpoint is active
 - [ ] Vercel has STRIPE_WEBHOOK_SECRET env var
 - [ ] Form submission test passed
@@ -100,9 +106,11 @@ stripe trigger payment_intent.succeeded
 
 | Issue | Fix | Time |
 |-------|-----|------|
-| Email didn't arrive | Zapier paused → re-enable zap | 2 min |
-| Payment didn't record | Stripe webhook not wired → check Vercel env var | 3 min |
-| Dashboard still $0 | Vercel build stale → manual redeploy | 2 min |
+| Vercel build fails | Check build logs at vercel.com, fix errors | 5 min |
+| Form email doesn't arrive | Check Resend API key in Vercel env | 2 min |
+| Jotform webhook 500 | Check Supabase connection in logs | 3 min |
+| Payment didn't record | Stripe webhook not active → redo Stripe setup | 5 min |
+| Dashboard still $0 | Vercel deployment outdated → redeploy | 2 min |
 
 **Confidence: 95%** ✅  
 **Rollback:** None needed (all systems isolated, no data loss)

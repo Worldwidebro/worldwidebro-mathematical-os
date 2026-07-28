@@ -97,5 +97,29 @@ Execute + Visualize
 
 ---
 
+---
+
+## Detailed Entity Schemas (v1.1 - 2026-07-28)
+
+### Entity Properties & Storage
+
+**Venture:** id, name, sector, stage, revenue_usd_monthly, owner, repo_id, created_date, status (883 instances) → Supabase + Neo4j  
+**Repository:** id, name, url, venture_id, language, purpose, owner, last_commit_date (700 instances) → GitHub API + repos.json + Neo4j  
+**Agent:** id, name, tools[], memory_size_mb, success_rate, decision_authority, owned_ventures[] (22 instances) → agents.json + Neo4j  
+**Skill:** id, name, parameters[], mcp_tool, dependencies[] (296 instances) → skills.json + MCP_REGISTRY.json + Neo4j  
+**Task:** id, venture_id, agent_id, skill_id, status, cost_usd, created_date, duration_seconds → Supabase + Neo4j  
+**Decision:** id, task_id, agent_id, decision_type, rationale, authority_level, timestamp → Supabase + Neo4j  
+**Outcome:** id, task_id, result_type, metrics, feedback, learned_pattern → Supabase + Langfuse  
+**File:** id (path), repo_id, venture_id, agent_id, skill_ids[], language, purpose, tags[] → file_index.csv + Git repos + Neo4j  
+**Relationship:** source_entity_id, relationship_type, target_entity_id, properties{}, created_date → Neo4j + Supabase  
+**Organization:** id, name, org_type, role, owns[], parent_org_id → Supabase + Neo4j
+
+### Canonical Relationship Types (12)
+
+OWNS | OPERATES | USES | CREATED | MODIFIED | DEPENDS_ON | OPERATED_BY | GENERATES | EXECUTES | PRODUCES | CREATES | TOUCHES
+
+---
+
 **v2.1 (2026-07-25):** Added Chat2DB  
-**v2.0 (2026-07-22):** Initial ontology
+**v2.0 (2026-07-22):** Initial ontology  
+**v1.1 (2026-07-28):** Enhanced with detailed property schemas, storage map, 12 relationship types, 883 ventures × 700 repos × 22 agents × 296 skills
