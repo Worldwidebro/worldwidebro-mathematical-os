@@ -70,7 +70,7 @@ None yet.
 | # | Description | Date | Commit | Status | Directory |
 |---|-------------|------|--------|--------|-----------|
 | 260712-nbx | Clean up confirmed-dead orphaned tables in CivilizationOS Supabase (20 tables: joos_*, folder_*/genius_agents, dead con_001/fin_001/mc_001 trackers) | 2026-07-13 | (pending final commit) | Verified | [260712-nbx-clean-up-confirmed-dead-orphaned-tables-](./quick/260712-nbx-clean-up-confirmed-dead-orphaned-tables-/) |
-| 260727-zapier-stripe-test | Wire Zapier zap (Jotform → Gmail) + Stripe webhook activation + end-to-end test (Form → Email → Payment → Dashboard) for ACE-001 Monday launch | 2026-07-27 | TBD | Complete | [260727-zapier-stripe-test](./quick/260727-zapier-stripe-test-zapier-stripe-test/) |
+| 260727-zapier-stripe-test | Wire Zapier zap (Jotform → Gmail) + Stripe webhook activation + end-to-end test (Form → Email → Payment → Dashboard) for ACE-001 Monday launch | 2026-07-27 | 75aadaf2 | Complete ✅ | [260727-zapier-stripe-test](./quick/260727-zapier-stripe-test-zapier-stripe-test/) |
 
 ## Deferred Items
 
