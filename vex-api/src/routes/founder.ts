@@ -23,9 +23,7 @@ founderRouter.get('/:id/human-os', async (req: Request, res: Response) => {
     // Fetch founder + Human OS metrics
     const result = await session.run(
       `MATCH (f:Founder {id: $id})
-       OPTIONAL MATCH (f)-[r:GOVERNANCE_TIER]->(t:GovernanceTier)
-       OPTIONAL MATCH (f)-[l:LAYER_SCORE]->(layer:HumanOSLayer)
-       RETURN f, t, collect({layer: layer.id, score: l.score}) as layers`,
+       RETURN f`,
       { id }
     );
 
@@ -37,8 +35,7 @@ founderRouter.get('/:id/human-os', async (req: Request, res: Response) => {
     }
 
     const founder = record.get('f').properties;
-    const tier = record.get('t')?.properties || null;
-    const layers = record.get('layers') || [];
+    const layers = founder.layer_scores_json ? JSON.parse(founder.layer_scores_json) : [];
 
     // Calculate governance tier from dual outcomes
     const tier_assignment = calculateTier(
@@ -77,7 +74,7 @@ founderRouter.post('/:id/assessment', async (req: Request, res: Response) => {
     const neo4j = req.app.locals.neo4j;
     const session = neo4j.session();
 
-    // Update founder metrics (create if missing)
+    // Update founder metrics + layer scores (atomic, stored as JSON)
     const tier = calculateTier(execution_success_rate, learning_velocity);
 
     await session.run(
@@ -85,6 +82,7 @@ founderRouter.post('/:id/assessment', async (req: Request, res: Response) => {
        SET f.execution_success_rate = $rate,
            f.learning_velocity = $velocity,
            f.governance_tier = $tier,
+           f.layer_scores_json = $layerScoresJson,
            f.last_assessment = datetime()
        RETURN f`,
       {
@@ -92,24 +90,14 @@ founderRouter.post('/:id/assessment', async (req: Request, res: Response) => {
         rate: execution_success_rate,
         velocity: learning_velocity,
         tier,
+        layerScoresJson: JSON.stringify(layer_scores || []),
       }
     );
-
-    // Update layer scores
-    if (layer_scores) {
-      for (const { layer, score } of layer_scores) {
-        await session.run(
-          `MATCH (f:Founder {id: $id}), (l:HumanOSLayer {id: $layer})
-           MERGE (f)-[r:LAYER_SCORE]->(l)
-           SET r.score = $score, r.assessed_at = datetime()`,
-          { id, layer, score }
-        );
-      }
-    }
 
     await session.close();
     res.json({ success: true, tier });
   } catch (err) {
+    console.error('Assessment error:', err);
     res.status(500).json({ error: 'Failed to record assessment' });
   }
 });
