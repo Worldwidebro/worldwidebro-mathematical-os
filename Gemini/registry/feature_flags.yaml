@@ -1,0 +1,21 @@
+feature_flags:
+- id: enable-distributed-inference
+  name: Local Distributed Inference
+  description: Routes LLM tasks across multiple local machines to scale capacity.
+  value: false
+  status: Active
+- id: enable-npu-acceleration
+  name: Apple Silicon NPU Optimizations
+  description: Enables CoreML hardware acceleration flags for local Ollama weights.
+  value: true
+  status: Active
+- id: sandbox-strict-network
+  name: Strict Network Sandboxing
+  description: Enforces zero network access rules on standard commands run by agents.
+  value: true
+  status: Active
+- id: use-openai-fallback
+  name: OpenAI GPT-4o Gateway Fallback
+  description: Routes calls to OpenAI endpoints when local gateways experience timeouts.
+  value: true
+  status: Active

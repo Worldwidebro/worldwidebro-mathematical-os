@@ -1,0 +1,52 @@
+ventures:
+- id: ECOM-005
+  name: ECOM-005 Venture
+  sector: E-Commerce
+  location: Local Staging
+  stage: MVP Build (Stage 2)
+  description: Database-backed Medusa storefront with Stripe checkouts integrated.
+  status: Active
+- id: CON-022
+  name: CON-022 Venture
+  sector: Construction
+  location: Local Staging
+  stage: Validation (Stage 1)
+  description: Estimation engine modeling project costs using historical blueprints.
+  status: Active
+- id: STARTUP-001
+  name: SaaS MVP Venture
+  sector: SaaS Software
+  location: Planned Staging
+  stage: Idea Validation (Stage 0)
+  description: Multi-tenant software prototype designed using dyad database factory.
+  status: Active
+- id: STARTUP-002
+  name: Viral Brand Agency
+  sector: Media & Attention
+  location: Planned Production
+  stage: Growth Phase (Stage 4)
+  description: Content engines and social newsletters scaling traffic for client operations.
+  status: Active
+- id: DEAL-001
+  name: Worldwidebro Deal Flow Agency
+  sector: Deal Sourcing & Brokerage
+  location: Charlotte, NC
+  stage: v2: Service Execution (Stage 2)
+  description: AI-driven B2B brokerage matching unused capacity, assets, and staffing needs.
+  status: Active
+- id: CON-001
+  name: Ace Construction
+  sector: Construction
+  location: Charlotte, NC
+  stage: Production (Stage 3)
+  description: Project execution, blueprint estimation, and invoice tracking dashboard.
+  status: Active
+- id: STA-001
+  name: Ace Staffing
+  sector: Staffing
+  location: Charlotte, NC
+  stage: Production (Stage 3)
+  description: Staffing agency and labor dispatch system with pre-vetted Charlotte targets.
+  status: Active
+
+

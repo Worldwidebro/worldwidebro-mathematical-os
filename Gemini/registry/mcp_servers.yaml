@@ -1,0 +1,25 @@
+mcp_servers:
+- id: BrowserClaw
+  name: BrowserClaw
+  type: User Browser
+  port: 20120
+  description: Persistent web browser wrapper signed into user accounts. Enables navigating, filling, and acting.
+  status: Active
+- id: Filesystem
+  name: Local Filesystem MCP
+  type: Utility
+  port: 20122
+  description: Direct reading, writing, and listing tools for sandbox-isolated workspace folders.
+  status: Active
+- id: Neo4jGraph
+  name: Neo4j Bolt Gateway
+  type: Graph DB
+  port: 7687
+  description: Direct APOC and Cypher statement execution hub connecting agent context to the central graph.
+  status: Active
+- id: QdrantVector
+  name: Qdrant Vector Server
+  type: Vector DB
+  port: 6333
+  description: Indexing and querying embedding vectors for document and codebase retrievals.
+  status: Active

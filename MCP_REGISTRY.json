@@ -201,20 +201,38 @@
       "setup": "built-in (zipfile, shutil, os)",
       "last_verified": "2026-06-24T00:00:00Z",
       "test_result": "AVAILABLE"
+    },
+    "chat2db": {
+      "name": "Chat2DB",
+      "status": "deploying",
+      "priority": "high",
+      "category": "database_intelligence",
+      "description": "AI-powered database client - natural language SQL generation, schema visualization, multi-database management",
+      "capabilities": ["generate_sql_from_nl", "optimize_sql", "visualize_schema", "explain_queries", "execute_sql", "export_data"],
+      "used_by": ["database-intelligence", "venture-analytics", "sql-optimization"],
+      "deployment_location": "Mac Studio (100.87.214.70:8080) via Tailscale",
+      "docker_image": "chat2db/chat2db:latest",
+      "connected_databases": ["postgresql", "duckdb", "mysql"],
+      "llm_provider": "FreeLLMAPI (100.121.17.63:8000)",
+      "deployment_file": "/private/tmp/claude-501/-Volumes-LaCie/7f55f05f-c069-4a7b-83c7-bcd128f72795/scratchpad/chat2db-docker-compose.yml",
+      "last_verified": "2026-07-25T18:03:00Z",
+      "test_result": "PENDING_DEPLOYMENT"
     }
   },
   "health_summary": {
-    "total_mcps": 17,
+    "total_mcps": 18,
     "enabled": 14,
     "verified_last_24h": 14,
+    "deploying": 1,
+    "available": 3,
     "needs_setup": 0,
     "broken": 0,
     "health_score": "100%",
-    "status": "🟢 ALL HEALTHY"
+    "status": "🟢 ALL HEALTHY (Chat2DB deploying)"
   },
   "categories": {
     "critical": ["airtable", "supabase"],
-    "high": ["clickup", "notion", "slack", "zapier", "gmail", "github", "graphify", "memory"],
+    "high": ["clickup", "notion", "slack", "zapier", "gmail", "github", "graphify", "memory", "chat2db"],
     "medium": ["stripe", "hubspot", "google_calendar"]
   },
   "by_use_case": {
@@ -227,6 +245,9 @@
     "deployment": ["github"],
     "crm": ["hubspot"],
     "payments": ["stripe"],
-    "scheduling": ["google_calendar"]
+    "scheduling": ["google_calendar"],
+    "database-intelligence": ["chat2db"],
+    "venture-analytics": ["chat2db", "supabase"],
+    "sql-optimization": ["chat2db"]
   }
 }

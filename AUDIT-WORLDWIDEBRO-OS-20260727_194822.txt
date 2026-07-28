@@ -1,0 +1,196 @@
+════════════════════════════════════════════════════════════════════════════
+WORLDWIDEBRO OS COMPLETE AUDIT
+Generated: Mon Jul 27 19:48:22 EDT 2026
+════════════════════════════════════════════════════════════════════════════
+
+═══ 1. INFRASTRUCTURE STATUS ═══
+Checking Docker services...
+
+Docker containers:
+freellmapi-freellmapi-1	Up 8 hours (healthy)
+langfuse	Up 8 hours (healthy)
+prometheus	Up 8 hours (healthy)
+otel-collector	Up 8 hours
+litellm	Up 8 hours (healthy)
+grafana	Up 8 hours (healthy)
+postgres	Up 8 hours (healthy)
+redis	Up 8 hours (healthy)
+neo4j	Up 8 hours (healthy)
+qdrant	Up 8 hours (healthy)
+twenty-server	Up 8 hours
+twenty-worker	Up 8 hours
+twenty-postgres	Up 8 hours (healthy)
+twenty-redis	Up 8 hours (healthy)
+socraticode-qdrant	Up 8 hours
+
+Service health checks:
+PostgreSQL: ❌ DOWN
+Neo4j: ✅ ALIVE
+Redis: ✅ ALIVE
+Qdrant: ✅ ALIVE
+Langfuse: ✅ ALIVE
+
+═══ 2. LIVE DATA STATUS ═══
+
+Ventures in Supabase:
+
+Ventures by sector:
+
+Ventures by stage:
+
+Knowledge Graph (Neo4j):
+{"errors":[{"code":"Neo.ClientError.Request.Invalid","message":"Not Found"}]}
+Vector Database (Qdrant):
+{"result":{"collections":[{"name":"notes"},{"name":"repositories"}]},"status":"ok","time":0.000540676}
+═══ 3. CODE INVENTORY ═══
+
+Agent implementations:
+  Python: 17
+  TypeScript/JS: 150
+
+Skill implementations:
+  Python: 5
+  TypeScript/JS: 57
+
+Command implementations:
+  Python: 15
+  TypeScript/JS: 112
+
+Gemini code (business OS):
+  Files: 34
+
+Civilization code (infrastructure OS):
+  Files: 0
+
+Agent framework (.agents/skills):
+  Skill folders: 20
+
+═══ 4. CONFIGURATION & REGISTRY ═══
+
+Registered agents (Gemini/registry/agents.yaml):
+
+Registered MCPs (MCP_REGISTRY.json):
+
+Tool capability map entries:
+
+Skill index entries:
+File not found
+
+═══ 5. STORAGE & DISK USAGE ═══
+
+Disk available:
+/dev/disk3s5   228Gi   177Gi   2.0Gi    99%    3.2M   21M   13%   /System/Volumes/Data
+
+Top folders by size:
+5.1G	OmniRoute/
+840M	worldwidebro-construction-os/
+593M	con-001-ace-construction/
+433M	vex-engine/
+197M	vex-hero-site/
+155M	node_modules/
+145M	angels-in-daylight/
+137M	_career/
+ 74M	vex-api/
+ 74M	ec-112-cosmic-kitty/
+ 66M	ec-001-angels-in-daylight/
+ 30M	glue-layer-mvp/
+ 21M	omnigraph/
+ 21M	classbuild/
+ 20M	captable/
+ 18M	Gemini/
+ 14M	integrations-venv/
+ 10M	awesome-n8n-templates/
+9.8M	antigravity/
+4.1M	iza-os-intelligence/
+
+Large files (>100MB):
+./.gitnexus/lbug
+./con-001-ace-construction/node_modules/@next/swc-darwin-arm64/next-swc.darwin-arm64.node
+./worldwidebro-construction-os/node_modules/@next/swc-darwin-arm64/next-swc.darwin-arm64.node
+./worldwidebro-construction-os/apps/con-001-public/.next/cache/webpack/server-production/0.pack
+./OmniRoute/.build/next/dev/cache/turbopack/v16.2.10/00000037.sst
+./OmniRoute/.build/next/dev/cache/turbopack/v16.2.10/00000036.sst
+./OmniRoute/.build/next/dev/cache/turbopack/v16.2.10/00000035.sst
+./OmniRoute/.build/next/dev/cache/turbopack/v16.2.10/00000038.sst
+./OmniRoute/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/bin/codex
+./OmniRoute/node_modules/@anthropic-ai/claude-agent-sdk-darwin-arm64/claude
+./OmniRoute/node_modules/@next/swc-darwin-arm64/next-swc.darwin-arm64.node
+./OmniRoute/.git/objects/pack/pack-bac7f5b7959fe27a1e36c5969b7d8207d1c1a952.pack
+./vex-engine/node_modules/@next/swc-darwin-arm64/next-swc.darwin-arm64.node
+
+node_modules size:
+155M	node_modules
+
+═══ 6. GIT STATUS ═══
+
+Current branch:
+2026-06-19-os-consolidation
+
+Recent commits:
+375803b7 feat: Continuous repository intelligence system with daemon, implementation guide, and analysis
+4a7646d2 docs: Phase 2 + Phase 3 — Authority Matrix + Master Blueprint
+0a422dd0 feat: Complete automation layer for AI Boss OS bootstrap
+9fc0edf4 docs: Vex Engine multi-venture + document retrieval roadmap
+415a3c21 refactor: rename Hermes → Vex Engine
+697683be docs(hermes): Add complete connectors guide for 4 integrations
+1962c434 feat(hermes): Add 4 integrations for Monday launch
+eed00ba7 feat(spec-alignment): Add message envelope to event_bus + agent manifest enforcement to policy_gate
+8688bc03 feat(runtime): Add 3 connectors (export, event-bus, policy-gate) + orchestrator
+e1f62554 chore(phase-12): stub 3 OS cores (staffing/education/finance) + project board with team assignments
+
+Uncommitted changes:
+  Modified files: 265
+
+All branches:
+  2026-05-22-figt
+* 2026-06-19-os-consolidation
+  main
++ worktree-agent-ac65ac3629807bab2
+  remotes/worldwidebro/2026-05-22-figt
+  remotes/worldwidebro/2026-06-19-os-consolidation
+  remotes/worldwidebro/HEAD -> worldwidebro/main
+  remotes/worldwidebro/main
+
+Remotes:
+origin	https://github.com/Worldwidebro/worldwidebro-mathematical-os.git (fetch)
+origin	https://github.com/Worldwidebro/worldwidebro-mathematical-os.git (push)
+worldwidebro	https://github.com/Worldwidebro/Worldwidebro.git (fetch)
+worldwidebro	https://github.com/Worldwidebro/Worldwidebro.git (push)
+
+═══ 7. GITNEXUS INDEX STATUS ═══
+
+
+═══ 8. LOCALLY CLONED REPOS ═══
+
+Git repos in current directory:
+.git
+awesome-n8n-templates
+bloom-community-hub
+bw-eroticafox
+captable
+classbuild
+con-001-ace-construction
+ec-001-angels-in-daylight
+ec-112-cosmic-kitty
+email-design-os
+fin-006-tax-prep-filing-services
+fin-009-crypto-tax-optimizer
+fin-021-tax-deduction-finder
+fin-033-ai-tax-preparation-service
+Gemini
+glue-layer-mvp
+iza-os-marketing-core
+lt-005-medical-courier-dispatch
+mc-006-video-production-company
+omnigraph
+OmniRoute
+ops-staff-001-staffing
+re-001-property-holdings
+RE-001-Worldwidebro-Holdings
+vex-hero-site
+worldwidebro-construction-os
+
+════════════════════════════════════════════════════════════════════════════
+AUDIT COMPLETE
+Report saved to: AUDIT-WORLDWIDEBRO-OS-20260727_194822.txt
+════════════════════════════════════════════════════════════════════════════

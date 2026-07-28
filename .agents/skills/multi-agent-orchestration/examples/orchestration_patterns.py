@@ -191,13 +191,103 @@ class HierarchicalOrchestrator:
         }
 
 
-class ConsensusOrchestrator:
-    """Orchestrate agent debate and consensus."""
+class GraphOrchestrator:
+    """
+    Graph-based orchestration with explicit dependency edges.
 
-    def __init__(self, agents: List[Agent], mediator_agent: Agent):
-        """Initialize consensus orchestrator."""
-        self.agents = agents
-        self.mediator = mediator_agent
+    Eliminates false dependencies: phases 1-4 run parallel (no real edges).
+    Only phase 5 waits on 4 (real edge: spec needs plan).
+    """
+
+    def __init__(self, graph: Dict[str, Any]):
+        """Initialize with {nodes: [{id, agent}], edges: [{from, to}]}"""
+        self.nodes = {n["id"]: n for n in graph["nodes"]}
+        self.edges = graph["edges"]
+        self.execution_log = []
+        self._build_dependency_map()
+
+    def _build_dependency_map(self):
+        """Build reverse map: node_id → dependencies."""
+        self.dependencies = {nid: [] for nid in self.nodes}
+        for edge in self.edges:
+            self.dependencies[edge["to"]].append(edge["from"])
+
+    async def execute_async(self, task: str) -> Dict[str, Any]:
+        """Execute respecting explicit edges only."""
+        results = {}
+        completed = set()
+
+        while len(completed) < len(self.nodes):
+            ready = [
+                nid for nid in self.nodes
+                if nid not in completed
+                and all(dep in completed for dep in self.dependencies[nid])
+            ]
+
+            if not ready:
+                raise RuntimeError(f"Circular dependency in graph")
+
+            outputs = await asyncio.gather(*[
+                self.nodes[nid]["agent"].work_async(task) for nid in ready
+            ])
+
+            for nid, output in zip(ready, outputs):
+                results[nid] = output
+                completed.add(nid)
+
+        return {"type": "graph", "results": results, "log": self.execution_log}
+
+
+class LayeredFanInOrchestrator:
+    """
+    Consolidate large result sets without context collapse.
+
+    Layer 1: Summarize batches (30-50 nodes each) in parallel
+    Layer 2: Consolidate batch summaries into final report
+    """
+
+    def __init__(self, batch_size: int = 30, summarizer: Optional[Agent] = None,
+                 consolidator: Optional[Agent] = None):
+        self.batch_size = batch_size
+        self.summarizer = summarizer or SimpleAgent("summarizer", "summary", "summarize")
+        self.consolidator = consolidator or SimpleAgent("consolidator", "synthesis", "consolidate")
+
+    async def _summarize_batch(self, batch: List[Dict[str, Any]]) -> str:
+        """Summarize one batch (Layer 1)."""
+        text = "\n".join([f"{r['id']}: {r['output'][:100]}" for r in batch])
+        return await self.summarizer.work_async(f"Summarize: {text}")
+
+    async def execute_layered_fanin(self, results: List[Dict[str, Any]]) -> Dict[str, Any]:
+        """Execute two-layer consolidation."""
+        if len(results) < self.batch_size:
+            final = await self.consolidator.work_async(f"Consolidate: {results}")
+            return {"type": "fanin", "final_report": final}
+
+        batches = [results[i:i+self.batch_size] for i in range(0, len(results), self.batch_size)]
+        summaries = await asyncio.gather(*[self._summarize_batch(b) for b in batches])
+        final = await self.consolidator.work_async(f"Consolidate summaries: {summaries}")
+        return {"type": "fanin", "batch_count": len(batches), "final_report": final}
+
+
+class SafeConsolidationOrchestrator:
+    """Detect silent node failures before consolidation."""
+
+    def __init__(self, expected_count: int):
+        self.expected_count = expected_count
+
+    async def execute_safe(self, results: List[Dict[str, Any]],
+                          consolidator: Agent) -> Dict[str, Any]:
+        """Consolidate only if node count matches expected."""
+        actual = len(results)
+        if actual < self.expected_count:
+            return {
+                "type": "error_missing_nodes",
+                "expected": self.expected_count,
+                "actual": actual,
+                "missing": self.expected_count - actual,
+                "warning": f"WARNING: {self.expected_count - actual} nodes failed silently",
+            }
+        return {"type": "consolidated", "result": await consolidator.work_async(f"Consolidate: {results}")}
         self.debate_history = []
 
     def execute(self, question: str, rounds: int = 2) -> Dict[str, Any]:

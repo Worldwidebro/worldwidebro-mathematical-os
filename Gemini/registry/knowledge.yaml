@@ -1,0 +1,26 @@
+knowledge:
+- id: obsidian-second-brain
+  name: Obsidian Second Brain
+  type: Markdown Vault
+  description: Synchronized personal notes, company blueprints, policies, and strategic documents.
+  status: Active
+- id: twenty-crm-reference
+  name: Twenty CRM API Documentation
+  type: Tech Specs
+  description: API specifications and schema guidelines for integrating sales pipelines.
+  status: Active
+- id: medusa-commerce-docs
+  name: Medusa Commerce Guide
+  type: Commerce Layout
+  description: E-commerce configuration guides, stripe checkout models, and customer routes.
+  status: Active
+- id: litellm-routing-guide
+  name: LiteLLM Gateway Routing Guide
+  type: AI Infrastructure
+  description: Reference sheet for setting up model redundancy and Ollama fallbacks.
+  status: Active
+- id: neo4j-graphrag-index
+  name: Neo4j GraphRAG Reference
+  type: Graph Schema
+  description: Mapping of entities and relations used for sequential retrieval and hybrid queries.
+  status: Active

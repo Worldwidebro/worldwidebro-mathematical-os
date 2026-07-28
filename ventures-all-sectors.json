@@ -1,0 +1,255 @@
+{
+  "metadata": {
+    "total_ventures": 884,
+    "total_sectors": 31,
+    "pages_per_venture": 8,
+    "total_pages": 7072,
+    "generated": "2026-07-25"
+  },
+  "sectors": [
+    {
+      "id": "OPS",
+      "name": "Operations",
+      "ventures_count": 1,
+      "tier": 0
+    },
+    {
+      "id": "TECH",
+      "name": "Technology",
+      "ventures_count": 30,
+      "tier": 0
+    },
+    {
+      "id": "LEGAL",
+      "name": "Legal",
+      "ventures_count": 12,
+      "tier": 0
+    },
+    {
+      "id": "FINANCIAL",
+      "name": "Financial",
+      "ventures_count": 25,
+      "tier": 0
+    },
+    {
+      "id": "FUNDING",
+      "name": "Funding",
+      "ventures_count": 112,
+      "tier": 0
+    },
+    {
+      "id": "INSURANCE",
+      "name": "Insurance",
+      "ventures_count": 18,
+      "tier": 0
+    },
+    {
+      "id": "TELECOM",
+      "name": "Telecommunications",
+      "ventures_count": 15,
+      "tier": 1
+    },
+    {
+      "id": "ENERGY",
+      "name": "Energy & Utilities",
+      "ventures_count": 22,
+      "tier": 1
+    },
+    {
+      "id": "SECURITY",
+      "name": "Security",
+      "ventures_count": 8,
+      "tier": 1
+    },
+    {
+      "id": "STAFFING",
+      "name": "Staffing & Labor",
+      "ventures_count": 93,
+      "tier": 1
+    },
+    {
+      "id": "INVESTMENT",
+      "name": "Investment & Capital",
+      "ventures_count": 112,
+      "tier": 1
+    },
+    {
+      "id": "COMMUNITY",
+      "name": "Community & Social Impact",
+      "ventures_count": 15,
+      "tier": 1
+    },
+    {
+      "id": "CONSTRUCTION",
+      "name": "Construction",
+      "ventures_count": 57,
+      "tier": 2
+    },
+    {
+      "id": "REAL_ESTATE",
+      "name": "Real Estate",
+      "ventures_count": 25,
+      "tier": 2
+    },
+    {
+      "id": "MANUFACTURING",
+      "name": "Manufacturing",
+      "ventures_count": 40,
+      "tier": 2
+    },
+    {
+      "id": "AGRICULTURE",
+      "name": "Agriculture & Food",
+      "ventures_count": 35,
+      "tier": 2
+    },
+    {
+      "id": "ENERGY_PRODUCTION",
+      "name": "Energy Production",
+      "ventures_count": 28,
+      "tier": 2
+    },
+    {
+      "id": "MINING",
+      "name": "Mining",
+      "ventures_count": 10,
+      "tier": 2
+    },
+    {
+      "id": "TRANSPORTATION",
+      "name": "Transportation",
+      "ventures_count": 31,
+      "tier": 3
+    },
+    {
+      "id": "MARITIME",
+      "name": "Maritime & Shipping",
+      "ventures_count": 18,
+      "tier": 3
+    },
+    {
+      "id": "AVIATION",
+      "name": "Aviation",
+      "ventures_count": 12,
+      "tier": 3
+    },
+    {
+      "id": "WAREHOUSING",
+      "name": "Warehousing",
+      "ventures_count": 20,
+      "tier": 3
+    },
+    {
+      "id": "SUPPLY_CHAIN",
+      "name": "Supply Chain",
+      "ventures_count": 25,
+      "tier": 3
+    },
+    {
+      "id": "GOV_PROCUREMENT",
+      "name": "Government Procurement",
+      "ventures_count": 15,
+      "tier": 3
+    },
+    {
+      "id": "COMMERCE",
+      "name": "E-Commerce",
+      "ventures_count": 45,
+      "tier": 4
+    },
+    {
+      "id": "HOSPITALITY",
+      "name": "Hospitality & Travel",
+      "ventures_count": 100,
+      "tier": 4
+    },
+    {
+      "id": "RETAIL",
+      "name": "Retail",
+      "ventures_count": 60,
+      "tier": 4
+    },
+    {
+      "id": "FASHION",
+      "name": "Fashion & Apparel",
+      "ventures_count": 30,
+      "tier": 4
+    },
+    {
+      "id": "BEAUTY",
+      "name": "Beauty & Wellness",
+      "ventures_count": 20,
+      "tier": 4
+    },
+    {
+      "id": "SPORTS",
+      "name": "Sports & Recreation",
+      "ventures_count": 25,
+      "tier": 4
+    },
+    {
+      "id": "EDUCATION",
+      "name": "Education",
+      "ventures_count": 41,
+      "tier": 5
+    },
+    {
+      "id": "HEALTHCARE",
+      "name": "Healthcare",
+      "ventures_count": 35,
+      "tier": 5
+    },
+    {
+      "id": "MEDIA",
+      "name": "Media & Entertainment",
+      "ventures_count": 121,
+      "tier": 5
+    },
+    {
+      "id": "ENTERTAINMENT",
+      "name": "Entertainment & Gaming",
+      "ventures_count": 45,
+      "tier": 5
+    },
+    {
+      "id": "ENVIRONMENTAL",
+      "name": "Environmental",
+      "ventures_count": 20,
+      "tier": 5
+    },
+    {
+      "id": "MARKETPLACE",
+      "name": "Marketplace & Platforms",
+      "ventures_count": 21,
+      "tier": 6
+    },
+    {
+      "id": "DATA",
+      "name": "Data & Analytics",
+      "ventures_count": 18,
+      "tier": 6
+    },
+    {
+      "id": "CONSULTING",
+      "name": "Consulting",
+      "ventures_count": 30,
+      "tier": 6
+    }
+  ],
+  "pages_per_venture": [
+    "home",
+    "product",
+    "pricing",
+    "dashboard",
+    "about",
+    "docs",
+    "contact",
+    "legal"
+  ],
+  "shared_pages": [
+    {"id": "AUTH", "domain": "auth.worldwidebro.com", "pages": ["login", "register", "forgot-password", "mfa"]},
+    {"id": "BILLING", "domain": "billing.worldwidebro.com", "pages": ["subscriptions", "invoices", "payment-methods", "billing-history"]},
+    {"id": "SUPPORT", "domain": "support.worldwidebro.com", "pages": ["help", "tickets", "chat", "faq"]},
+    {"id": "ADMIN", "domain": "admin.worldwidebro.com", "pages": ["users", "analytics", "settings", "audit"]}
+  ]
+}

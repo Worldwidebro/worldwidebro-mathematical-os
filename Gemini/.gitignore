@@ -1,0 +1,15 @@
+# Node / Temp files
+temp_check_*.js
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Project archives and reports
+archives/
+reports/
+*.log
+
+# Obsidian temporary files
+.obsidian-sync/

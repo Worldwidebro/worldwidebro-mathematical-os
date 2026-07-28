@@ -1,0 +1,166 @@
+{
+  "tasks": [
+    {
+      "title": "Create iza-os-real-estate-core",
+      "description": "Implement RE sector OS at iza-os-real-estate-core",
+      "type": "os_implementation",
+      "sector": "RE",
+      "priority": "high",
+      "due_date": "2026-08-01T20:25:55.130740"
+    },
+    {
+      "title": "Create iza-os-logistics-core",
+      "description": "Implement LOG sector OS at iza-os-logistics-core",
+      "type": "os_implementation",
+      "sector": "LOG",
+      "priority": "high",
+      "due_date": "2026-08-01T20:25:55.130749"
+    },
+    {
+      "title": "Create iza-os-agriculture-core",
+      "description": "Implement AG sector OS at iza-os-agriculture-core",
+      "type": "os_implementation",
+      "sector": "AG",
+      "priority": "high",
+      "due_date": "2026-08-01T20:25:55.130753"
+    },
+    {
+      "title": "Create iza-os-growth-core",
+      "description": "Implement GROWTH sector OS at iza-os-growth-core",
+      "type": "os_implementation",
+      "sector": "GROWTH",
+      "priority": "high",
+      "due_date": "2026-08-01T20:25:55.130755"
+    },
+    {
+      "title": "Create iza-os-voice-core",
+      "description": "Implement VOICE sector OS at iza-os-voice-core",
+      "type": "os_implementation",
+      "sector": "VOICE",
+      "priority": "high",
+      "due_date": "2026-08-01T20:25:55.130758"
+    },
+    {
+      "title": "Create iza-os-radio-core",
+      "description": "Implement RADIO sector OS at iza-os-radio-core",
+      "type": "os_implementation",
+      "sector": "RADIO",
+      "priority": "high",
+      "due_date": "2026-08-01T20:25:55.130761"
+    },
+    {
+      "title": "Create iza-os-body-core",
+      "description": "Implement BW sector OS at iza-os-body-core",
+      "type": "os_implementation",
+      "sector": "BW",
+      "priority": "high",
+      "due_date": "2026-08-01T20:25:55.130763"
+    },
+    {
+      "title": "Create iza-os-deal-intelligence",
+      "description": "Implement DEAL sector OS at iza-os-deal-intelligence",
+      "type": "os_implementation",
+      "sector": "DEAL",
+      "priority": "high",
+      "due_date": "2026-08-01T20:25:55.130766"
+    },
+    {
+      "title": "Deploy ec-112-cosmic-kitty",
+      "description": "Test and deploy ec-112-cosmic-kitty to production",
+      "type": "venture_deployment",
+      "venture_id": "ec-112-cosmic-kitty",
+      "priority": "critical",
+      "due_date": "2026-08-02"
+    },
+    {
+      "title": "Deploy con-001-ace-construction",
+      "description": "Test and deploy con-001-ace-construction to production",
+      "type": "venture_deployment",
+      "venture_id": "con-001-ace-construction",
+      "priority": "critical",
+      "due_date": "2026-08-02"
+    },
+    {
+      "title": "Deploy lt-005-medical-courier-dispatch",
+      "description": "Test and deploy lt-005-medical-courier-dispatch to production",
+      "type": "venture_deployment",
+      "venture_id": "lt-005-medical-courier-dispatch",
+      "priority": "critical",
+      "due_date": "2026-08-02"
+    },
+    {
+      "title": "Deploy ops-staff-001-staffing",
+      "description": "Test and deploy ops-staff-001-staffing to production",
+      "type": "venture_deployment",
+      "venture_id": "ops-staff-001-staffing",
+      "priority": "critical",
+      "due_date": "2026-08-02"
+    },
+    {
+      "title": "Deploy ec-001-angels-in-daylight",
+      "description": "Test and deploy ec-001-angels-in-daylight to production",
+      "type": "venture_deployment",
+      "venture_id": "ec-001-angels-in-daylight",
+      "priority": "critical",
+      "due_date": "2026-08-02"
+    },
+    {
+      "title": "Deploy re-001-worldwidebro-holdings",
+      "description": "Test and deploy re-001-worldwidebro-holdings to production",
+      "type": "venture_deployment",
+      "venture_id": "re-001-worldwidebro-holdings",
+      "priority": "critical",
+      "due_date": "2026-08-02"
+    },
+    {
+      "title": "Populate iza-os-finance-core",
+      "description": "Add code/documentation to iza-os-finance-core",
+      "type": "repo_population",
+      "repo_name": "iza-os-finance-core",
+      "priority": "medium"
+    },
+    {
+      "title": "Populate iza-os-education-core",
+      "description": "Add code/documentation to iza-os-education-core",
+      "type": "repo_population",
+      "repo_name": "iza-os-education-core",
+      "priority": "medium"
+    },
+    {
+      "title": "Populate iza-os-staffing-core",
+      "description": "Add code/documentation to iza-os-staffing-core",
+      "type": "repo_population",
+      "repo_name": "iza-os-staffing-core",
+      "priority": "medium"
+    },
+    {
+      "title": "Populate iza-os-knowledge-graph",
+      "description": "Add code/documentation to iza-os-knowledge-graph",
+      "type": "repo_population",
+      "repo_name": "iza-os-knowledge-graph",
+      "priority": "medium"
+    },
+    {
+      "title": "Populate iza-os-ai-orchestration",
+      "description": "Add code/documentation to iza-os-ai-orchestration",
+      "type": "repo_population",
+      "repo_name": "iza-os-ai-orchestration",
+      "priority": "medium"
+    },
+    {
+      "title": "Populate iza-os-computer-vision",
+      "description": "Add code/documentation to iza-os-computer-vision",
+      "type": "repo_population",
+      "repo_name": "iza-os-computer-vision",
+      "priority": "medium"
+    },
+    {
+      "title": "Populate iza-os-customer-core",
+      "description": "Add code/documentation to iza-os-customer-core",
+      "type": "repo_population",
+      "repo_name": "iza-os-customer-core",
+      "priority": "medium"
+    }
+  ],
+  "generated": "2026-07-26T20:25:55.130869"
+}

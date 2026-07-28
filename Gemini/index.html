@@ -1,4 +1,3 @@
-<USER_REQUEST>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -308,6 +307,7 @@ const Store = {
     { id: 'iza-os', name: 'IZA OS', env: 'Infrastructure Layer', color: '#a78bfa', initials: 'IZ' },
     { id: 'worldwidebro', name: 'Worldwidebro', env: 'Public & Brand Layer', color: '#ec4899', initials: 'WB' },
     { id: 'venture-engines', name: 'Venture Factory & Engines', env: 'Production Layer', color: '#10b981', initials: 'VE' },
+    { id: 'library-os', name: 'Worldwidebro Library Core', env: 'Knowledge & SOP Core', color: '#fbbf24', initials: 'LC' },
   ],
   currentWorkspace: 'ai-boss',
   OPCOS: [
@@ -626,6 +626,7 @@ const Router = {
       if (view === 'analytics') setTimeout(initCharts, 50);
       if (view === 'organization') setTimeout(initOrgGraph, 50);
       if (view === 'dependencies') setTimeout(initDepGraph, 50);
+
     } else {
       container.innerHTML = Views.notFound();
     }
@@ -641,7 +642,7 @@ const Router = {
       agents:'Agents', tasks:'Tasks', decisions:'Decisions', approvals:'Approvals',
       memory:'Memory', workflows:'Workflows', analytics:'Analytics', comms:'Communications',
       audit:'Audit Log', settings:'Settings', dependencies:'Dependencies', bottlenecks:'Bottlenecks',
-      repositories:'Repositories',
+      repositories:'Repositories', registries:'Registries Catalog',
     };
     if (view === 'opco' && param1) {
       crumbs.push({ label:'OPCOs', route:'/opcos' });
@@ -1643,17 +1644,24 @@ const Views = {
   dashboard() {
     const ws = Store.currentWorkspace;
     if (ws === 'winners-circle') {
-      return this.winnersCircleDashboard();
+      return Views.winnersCircleDashboard();
     } else if (ws === 'ai-boss') {
-      return this.aiBossDashboard();
+      return Views.aiBossDashboard();
     } else if (ws === 'iza-os') {
-      return this.izaOsDashboard();
+      return Views.izaOsDashboard();
     } else if (ws === 'worldwidebro') {
-      return this.worldwidebroDashboard();
+      return Views.worldwidebroDashboard();
     } else if (ws === 'venture-engines') {
-      return this.ventureEnginesDashboard();
+      return Views.ventureEnginesDashboard();
+    } else if (ws === 'library-os') {
+      return Views.libraryOsDashboard();
     }
-    return this.aiBossDashboard();
+    return Views.aiBossDashboard();
+  },
+
+  libraryOsDashboard() {
+    </div>
+    `;
   },
 
   winnersCircleDashboard() {
@@ -3464,8 +3472,6 @@ const Views = {
     </div>`;
   },
 
-  },
-
   async triggerRAGSearch() {
     const query = $('#rag-search-query').value;
     const answerEl = $('#rag-answer-result');
@@ -3495,6 +3501,7 @@ const Views = {
       }
     } catch(err) {
       answerEl.innerHTML = `<div class="text-red-400">❌ Failed to connect: ${escapeHtml(err.message)}</div>`;
+    }
   },
 
   ventures() {
@@ -3799,13 +3806,13 @@ const Views = {
               <span class="badge text-[10px]" style="background:rgba(34,211,238,0.1);color:var(--cyan);border-color:rgba(34,211,238,0.3)">${escapeHtml(h.type)}</span>
             </div>
             <div class="text-[11px] text-[var(--text-2)]">Repository: <span class="mono font-semibold">${escapeHtml(h.repo)}</span></div>
-            \${h.imports && h.imports.length ? `<div class="text-[10px] text-[var(--text-3)] truncate"><span class="font-medium text-[var(--text-2)]">Imports:</span> \${escapeHtml(h.imports.join(', '))}</div>` : ''}
-            \${h.functions && h.functions.length ? `<div class="text-[10px] text-[var(--text-3)] truncate"><span class="font-medium text-[var(--text-2)]">Functions:</span> \${escapeHtml(h.functions.join(', '))}</div>` : ''}
+            ${h.imports && h.imports.length ? `<div class="text-[10px] text-[var(--text-3)] truncate"><span class="font-medium text-[var(--text-2)]">Imports:</span> ${escapeHtml(h.imports.join(', '))}</div>` : ''}
+            ${h.functions && h.functions.length ? `<div class="text-[10px] text-[var(--text-3)] truncate"><span class="font-medium text-[var(--text-2)]">Functions:</span> ${escapeHtml(h.functions.join(', '))}</div>` : ''}
           </div>
         `).join('');
       }
     } catch(err) {
-      resultsEl.innerHTML = `<div class="text-xs text-red-400 text-center py-8">Search failed: \${escapeHtml(err.message)}</div>`;
+      resultsEl.innerHTML = `<div class="text-xs text-red-400 text-center py-8">Search failed: ${escapeHtml(err.message)}</div>`;
     }
   },
 
@@ -3826,13 +3833,13 @@ const Views = {
         resultsEl.innerHTML = '<div class="text-green-400 font-medium">✅ No downstream dependents found. Safe to modify!</div>';
       } else {
         resultsEl.innerHTML = `
-          <div class="text-amber-400 font-semibold mb-1">⚠️ Affected Dependents (\${dependents.length}):</div>
+          <div class="text-amber-400 font-semibold mb-1">⚠️ Affected Dependents (${dependents.length}):</div>
           <div class="space-y-1 pl-2 border-l border-amber-500/30">
-            \${dependents.map(d => `<div class="mono text-[11px]">\${escapeHtml(d)}</div>`).join('')}
+            ${dependents.map(d => `<div class="mono text-[11px]">${escapeHtml(d)}</div>`).join('')}
           </div>`;
       }
     } catch(err) {
-      resultsEl.innerHTML = `<div class="text-red-400">Error: \${escapeHtml(err.message)}</div>`;
+      resultsEl.innerHTML = `<div class="text-red-400">Error: ${escapeHtml(err.message)}</div>`;
     }
   },
 
@@ -3851,20 +3858,352 @@ const Views = {
           if (d.repo) {
             return `
               <div class="p-2 border-b border-[var(--border)] hover:bg-white/5 flex items-center justify-between">
-                <span class="font-bold text-[var(--cyan)]">\${escapeHtml(d.repo)}</span>
-                <span class="text-[var(--text-3)] text-[10px]">Capabilities: \${escapeHtml(d.capabilities.join(', ') || '—')}</span>
+                <span class="font-bold text-[var(--cyan)]">${escapeHtml(d.repo)}</span>
+                <span class="text-[var(--text-3)] text-[10px]">Capabilities: ${escapeHtml(d.capabilities.join(', ') || '—')}</span>
               </div>`;
           } else {
             return `
               <div class="p-2 border-b border-[var(--border)] hover:bg-white/5">
-                <div class="font-semibold text-[var(--cyan)] mono">\${escapeHtml(d.file)}</div>
-                <div class="text-[10px] text-[var(--text-3)] pl-2">Depends on: \${escapeHtml(d.dependencies.join(', ') || '—')}</div>
+                <div class="font-semibold text-[var(--cyan)] mono">${escapeHtml(d.file)}</div>
+                <div class="text-[10px] text-[var(--text-3)] pl-2">Depends on: ${escapeHtml(d.dependencies.join(', ') || '—')}</div>
               </div>`;
           }
         }).join('');
       }
     } catch(err) {
-      resultsEl.innerHTML = `<div class="text-red-400">Failed: \${escapeHtml(err.message)}</div>`;
+      resultsEl.innerHTML = `<div class="text-red-400">Failed: ${escapeHtml(err.message)}</div>`;
+    }
+  },
+
+  registries() {
+    if (!Store.registries || Store.registries.length === 0) {
+      setTimeout(async () => {
+        try {
+          const res = await fetch('/api/registry/capability_registry');
+          const json = await res.json();
+          Store.registries = (json.data || []).filter(r => r.id);
+          Router.render();
+        } catch (err) {
+          console.error(err);
+          const el = $('#registries-loading-indicator');
+          if (el) el.innerHTML = `<div class="text-red-400 p-4">Failed to load registry: ${escapeHtml(err.message)}</div>`;
+        }
+      }, 0);
+      
+      return `
+        <div class="view p-6 space-y-6">
+          <div class="flex items-start justify-between flex-wrap gap-3">
+            <div>
+              <h1 class="text-2xl font-bold tracking-tight mb-1">Registries Catalog</h1>
+              <p class="text-sm text-[var(--text-2)]">Unified central index of all system registries</p>
+            </div>
+          </div>
+          <div class="card p-8 flex flex-col items-center justify-center space-y-3" id="registries-loading-indicator">
+            <div class="w-8 h-8 rounded-full border-2 border-[var(--cyan)] border-t-transparent animate-spin"></div>
+            <div class="text-xs text-[var(--text-3)] mono">Loading Capability Registry catalog...</div>
+          </div>
+        </div>
+      `;
+    }
+
+    Store.registryFilters = Store.registryFilters || { tier: 'All', category: 'All', status: 'All', search: '' };
+
+    const total = Store.registries.length;
+    const active = Store.registries.filter(r => r.status === 'Active').length;
+    const planned = Store.registries.filter(r => r.status === 'Planned').length;
+
+    const filtered = Store.registries.filter(r => {
+      const f = Store.registryFilters;
+      const matchTier = f.tier === 'All' || r.tier === f.tier;
+      const matchCat = f.category === 'All' || r.category === f.category;
+      const matchStatus = f.status === 'All' || r.status === f.status;
+      const matchSearch = !f.search || r.name.toLowerCase().includes(f.search.toLowerCase()) || r.purpose.toLowerCase().includes(f.search.toLowerCase());
+      return matchTier && matchCat && matchStatus && matchSearch;
+    });
+
+    const categories = ['All', 'Identity', 'Capability', 'Models', 'Data', 'Knowledge', 'Infrastructure', 'Business', 'Governance', 'Operations', 'AI'];
+    const tiers = ['All', 'Tier 1', 'Tier 2', 'Tier 3'];
+    const statuses = ['All', 'Active', 'Planned'];
+
+    return `
+    <div class="view p-6 space-y-6">
+      <div class="flex items-start justify-between flex-wrap gap-3">
+        <div>
+          <h1 class="text-2xl font-bold tracking-tight mb-1">Registries Catalog</h1>
+          <p class="text-sm text-[var(--text-2)]">Central capability catalog mapping 69 discoverable registries across categories & lifecycle stages.</p>
+        </div>
+        <div class="flex items-center gap-2">
+          <button class="btn btn-ghost text-xs" onclick="Views.refreshRegistries()">Refresh Catalog</button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-3 gap-4">
+        <div class="card p-4 relative corner-brackets">
+          <div class="text-[10px] text-[var(--text-3)] mono uppercase">Total Registries</div>
+          <div class="text-2xl font-bold text-[var(--text-0)] mt-1">${total}</div>
+          <div class="text-[10px] text-[var(--text-3)] mt-1">10 Operational Categories</div>
+        </div>
+        <div class="card p-4 relative corner-brackets">
+          <div class="text-[10px] text-[var(--text-3)] mono uppercase">Active (Tiers 1 & 2)</div>
+          <div class="text-2xl font-bold text-[var(--green)] mt-1">${active}</div>
+          <div class="text-[10px] text-[var(--text-3)] mt-1">Linked to live YAML files</div>
+        </div>
+        <div class="card p-4 relative corner-brackets">
+          <div class="text-[10px] text-[var(--text-3)] mono uppercase">Planned (Scale Phase)</div>
+          <div class="text-2xl font-bold text-[var(--text-3)] mt-1">${planned}</div>
+          <div class="text-[10px] text-[var(--text-3)] mt-1">Tier 3 scale blueprints</div>
+        </div>
+      </div>
+
+      <div class="card p-4 space-y-4">
+        <div class="flex items-center gap-2 bg-[var(--bg-2)] border border-[var(--border)] rounded px-3 py-2">
+          <svg class="w-4 h-4 text-[var(--text-3)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          <input type="text" id="registry-search" placeholder="Search registries by name or purpose..." class="bg-transparent border-none outline-none text-xs text-[var(--text-1)] flex-1" value="${escapeHtml(Store.registryFilters.search)}" oninput="Views.handleRegistrySearch(this.value)">
+          ${Store.registryFilters.search ? `<button onclick="Views.clearRegistrySearch()" class="text-[var(--text-3)] hover:text-[var(--text-0)] text-xs">Clear</button>` : ''}
+        </div>
+
+        <div class="space-y-2">
+          <div class="flex items-center gap-2 text-[11px]">
+            <span class="text-[var(--text-3)] w-20 shrink-0 font-medium">Category:</span>
+            <div class="flex items-center gap-1.5 flex-wrap">
+              ${categories.map(c => `
+                <button class="px-2 py-0.5 rounded border ${Store.registryFilters.category === c ? 'border-[var(--cyan)] bg-[var(--cyan)]/10 text-[var(--cyan)]' : 'border-[var(--border)] text-[var(--text-2)] hover:border-[var(--border-hi)] hover:text-[var(--text-0)]'} transition-colors" onclick="Views.setRegistryFilter('category', '${c}')">${c}</button>
+              `).join('')}
+            </div>
+          </div>
+
+          <div class="flex items-center gap-2 text-[11px]">
+            <span class="text-[var(--text-3)] w-20 shrink-0 font-medium">Lifecycle:</span>
+            <div class="flex items-center gap-1.5">
+              ${tiers.map(t => `
+                <button class="px-2 py-0.5 rounded border ${Store.registryFilters.tier === t ? 'border-[var(--cyan)] bg-[var(--cyan)]/10 text-[var(--cyan)]' : 'border-[var(--border)] text-[var(--text-2)] hover:border-[var(--border-hi)] hover:text-[var(--text-0)]'} transition-colors" onclick="Views.setRegistryFilter('tier', '${t}')">${t}</button>
+              `).join('')}
+            </div>
+          </div>
+
+          <div class="flex items-center gap-2 text-[11px]">
+            <span class="text-[var(--text-3)] w-20 shrink-0 font-medium">Status:</span>
+            <div class="flex items-center gap-1.5">
+              ${statuses.map(s => `
+                <button class="px-2 py-0.5 rounded border ${Store.registryFilters.status === s ? 'border-[var(--cyan)] bg-[var(--cyan)]/10 text-[var(--cyan)]' : 'border-[var(--border)] text-[var(--text-2)] hover:border-[var(--border-hi)] hover:text-[var(--text-0)]'} transition-colors" onclick="Views.setRegistryFilter('status', '${s}')">${s}</button>
+              `).join('')}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 items-start">
+        <div class="card overflow-hidden lg:col-span-2">
+          <div class="px-4 py-3 border-b border-[var(--border)]">
+            <h2 class="text-xs font-semibold uppercase tracking-wider text-[var(--text-3)]">Registries (${filtered.length})</h2>
+          </div>
+          <div class="overflow-x-auto">
+            <table class="w-full text-left border-collapse text-xs">
+              <thead>
+                <tr class="bg-white/[0.02] border-b border-[var(--border)] text-[var(--text-3)]">
+                  <th class="p-3 font-semibold">Registry Name</th>
+                  <th class="p-3 font-semibold">Category</th>
+                  <th class="p-3 font-semibold">Lifecycle</th>
+                  <th class="p-3 font-semibold">Status</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-[var(--border)]">
+                ${filtered.length === 0 ? `
+                  <tr>
+                    <td colspan="4" class="p-8 text-center text-[var(--text-3)] italic">No registries match the filters.</td>
+                  </tr>
+                ` : filtered.map(r => {
+                  const isActive = r.status === 'Active';
+                  const isSelected = Store.expandedRegistry === r.id;
+                  return `
+                    <tr class="hover:bg-white/[0.02] cursor-pointer transition-colors ${isSelected ? 'bg-[var(--cyan)]/[0.03] border-l-2 border-l-[var(--cyan)]' : ''}" onclick="Views.selectRegistry('${r.id}')">
+                      <td class="p-3 font-bold text-[var(--text-1)]">
+                        <div class="flex items-center gap-2">
+                          <span>${escapeHtml(r.name)}</span>
+                          ${isActive ? `<span class="w-1.5 h-1.5 rounded-full bg-[var(--green)] pulse-dot"></span>` : ''}
+                        </div>
+                      </td>
+                      <td class="p-3"><span class="tag text-[10px]">${escapeHtml(r.category)}</span></td>
+                      <td class="p-3 text-[var(--text-2)]">${escapeHtml(r.tier)}</td>
+                      <td class="p-3">
+                        <span class="badge ${isActive ? 'bg-green' : 'bg-offline'} text-[10px]">
+                          ${isActive ? 'Active' : 'Planned'}
+                        </span>
+                      </td>
+                    </tr>
+                  `;
+                }).join('')}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card p-4 space-y-4" id="registry-details-panel">
+          ${Views.renderRegistryDetails()}
+        </div>
+      </div>
+    </div>
+    `;
+  },
+
+  renderRegistryDetails() {
+    if (!Store.expandedRegistry) {
+      return `
+        <div class="text-center py-12 text-[var(--text-3)] space-y-2">
+          <div class="text-4xl">⚙</div>
+          <div class="text-xs font-semibold uppercase tracking-wider">Registry Details</div>
+          <p class="text-[11px] max-w-[200px] mx-auto">Select a registry from the catalog table to inspect its schema metadata and live content.</p>
+        </div>
+      `;
+    }
+
+    const reg = Store.registries.find(r => r.id === Store.expandedRegistry);
+    if (!reg) return '';
+
+    const isActive = reg.status === 'Active';
+
+    let contentHtml = '';
+    if (!isActive) {
+      contentHtml = `
+        <div class="p-4 bg-white/[0.01] border border-[var(--border)] rounded text-center space-y-2 text-[var(--text-3)]">
+          <div class="text-lg">⏳</div>
+          <div class="text-xs font-bold text-[var(--text-2)]">Scale-Phase Registry</div>
+          <p class="text-[11px]">This registry is planned for the Tier 3 scale phase. Blueprints and schema definitions will load here once initialized.</p>
+        </div>
+      `;
+    } else if (Views.loadingDetails) {
+      contentHtml = `
+        <div class="flex flex-col items-center justify-center py-12 space-y-2">
+          <div class="w-6 h-6 rounded-full border-2 border-[var(--cyan)] border-t-transparent animate-spin"></div>
+          <div class="text-[10px] text-[var(--text-3)] mono">Fetching live contents...</div>
+        </div>
+      `;
+    } else if (Views.selectedRegistryData) {
+      const items = Views.selectedRegistryData;
+      if (items.length === 0) {
+        contentHtml = `<div class="text-xs text-[var(--text-3)] italic">Registry exists but contains no items yet.</div>`;
+      } else {
+        contentHtml = `
+          <div class="space-y-3">
+            <div class="text-xs font-semibold text-[var(--text-2)] border-b border-[var(--border)] pb-1.5 flex items-center justify-between">
+              <span>Live Items (${items.length})</span>
+              <span class="text-[9px] text-[var(--text-3)] font-normal">${escapeHtml(reg.registry_file)}</span>
+            </div>
+            <div class="space-y-2 max-h-[350px] overflow-y-auto pr-1">
+              ${items.map((item, idx) => {
+                const keys = Object.keys(item).filter(k => !['id', 'name', 'agents', 'capabilities', 'status', 'strength', 'used_by_agent', 'provides_capability'].includes(k));
+                return `
+                  <div class="p-2.5 rounded border border-[var(--border)] bg-white/[0.01] hover:bg-white/5 transition-colors text-[11px] space-y-1">
+                    <div class="flex items-start justify-between gap-2">
+                      <span class="font-bold text-[var(--text-1)]">${escapeHtml(item.name || item.id || item.repository || `Item #${idx + 1}`)}</span>
+                      ${item.type ? `<span class="tag text-[9px]">${escapeHtml(item.type)}</span>` : ''}
+                      ${item.provider ? `<span class="tag text-[9px] text-[var(--cyan)]">${escapeHtml(item.provider)}</span>` : ''}
+                    </div>
+                    ${item.description ? `<p class="text-[var(--text-2)] leading-normal text-[10.5px]">${escapeHtml(item.description)}</p>` : ''}
+                    ${item.purpose ? `<p class="text-[var(--text-2)] leading-normal text-[10.5px]">${escapeHtml(item.purpose)}</p>` : ''}
+                    ${item.role ? `<div class="text-[10px] text-[var(--text-3)]"><span class="text-[var(--text-2)] font-medium">Role:</span> ${escapeHtml(item.role)}</div>` : ''}
+                    ${item.provides_capability ? `<div class="text-[10px] text-[var(--text-3)]"><span class="text-[var(--text-2)] font-medium">Provides Cap:</span> ${escapeHtml(item.provides_capability)}</div>` : ''}
+                    ${item.used_by_agent ? `<div class="text-[10px] text-[var(--text-3)]"><span class="text-[var(--text-2)] font-medium">Agent:</span> ${escapeHtml(item.used_by_agent)}</div>` : ''}
+                    ${item.notes ? `<p class="text-[var(--text-3)] italic text-[10px]">${escapeHtml(item.notes)}</p>` : ''}
+                    
+                    ${keys.map(k => {
+                      if (['description', 'purpose', 'role', 'type', 'provider', 'notes', 'repository'].includes(k)) return '';
+                      let val = item[k];
+                      if (Array.isArray(val)) val = val.join(', ');
+                      return `
+                        <div class="text-[10px] text-[var(--text-3)] truncate">
+                          <span class="text-[var(--text-2)] font-medium uppercase text-[8.5px]">${escapeHtml(k)}:</span> ${escapeHtml(val)}
+                        </div>
+                      `;
+                    }).join('')}
+                  </div>
+                `;
+              }).join('')}
+            </div>
+          </div>
+        `;
+      }
+    } else {
+      contentHtml = `
+        <button class="btn btn-ghost text-xs w-full py-3 border-dashed" onclick="Views.selectRegistry('${reg.id}')">
+          ⚡ Fetch Live Registry Contents
+        </button>
+      `;
+    }
+
+    return `
+      <div class="space-y-3">
+        <div class="flex items-start justify-between">
+          <div>
+            <h3 class="text-sm font-bold text-[var(--cyan)]">${escapeHtml(reg.name)}</h3>
+            <span class="tag text-[9px] mt-0.5">${escapeHtml(reg.category)}</span>
+          </div>
+          <span class="badge ${isActive ? 'bg-green' : 'bg-offline'} text-[10px]">
+            ${escapeHtml(reg.tier)}
+          </span>
+        </div>
+        <p class="text-xs text-[var(--text-2)] leading-normal">${escapeHtml(reg.purpose)}</p>
+        
+        <div class="divider"></div>
+        
+        ${contentHtml}
+      </div>
+    `;
+  },
+
+  loadingDetails: false,
+  selectedRegistryData: null,
+  
+  refreshRegistries() {
+    Store.registries = [];
+    Store.expandedRegistry = null;
+    Views.selectedRegistryData = null;
+    Router.render();
+  },
+  setRegistryFilter(key, val) {
+    Store.registryFilters = Store.registryFilters || { tier: 'All', category: 'All', status: 'All', search: '' };
+    Store.registryFilters[key] = val;
+    Router.render();
+  },
+  handleRegistrySearch(val) {
+    Store.registryFilters = Store.registryFilters || { tier: 'All', category: 'All', status: 'All', search: '' };
+    Store.registryFilters.search = val;
+    Router.render();
+  },
+  clearRegistrySearch() {
+    Store.registryFilters = Store.registryFilters || { tier: 'All', category: 'All', status: 'All', search: '' };
+    Store.registryFilters.search = '';
+    Router.render();
+  },
+  selectRegistry(id) {
+    Store.expandedRegistry = id;
+    Views.selectedRegistryData = null;
+    Views.loadingDetails = true;
+    Router.render();
+    
+    const reg = Store.registries.find(r => r.id === id);
+    if (reg && reg.status === 'Active' && reg.registry_file) {
+      const endpoint = '/api/' + reg.registry_file.replace('.yaml', '');
+      fetch(endpoint)
+        .then(r => r.json())
+        .then(json => {
+          let items = json.data || [];
+          if (Array.isArray(items)) {
+            items = items.filter(item => item.name || item.id || item.repository || item.key);
+          }
+          Views.selectedRegistryData = items;
+          Views.loadingDetails = false;
+          Router.render();
+        })
+        .catch(err => {
+          console.error(err);
+          Views.selectedRegistryData = [{ id: 'error', name: 'Error Loading', description: err.message }];
+          Views.loadingDetails = false;
+          Router.render();
+        });
+    } else {
+      Views.loadingDetails = false;
+      Router.render();
     }
   },
 
@@ -3991,7 +4330,7 @@ function initOrgGraph() {
       node.append('text').attr('text-anchor','middle').attr('y', 5).attr('fill', colors.text)
         .style('font-size','12px').style('font-weight','600').text(label);
       node.append('text').attr('text-anchor','middle').attr('y', 19).attr('fill','rgba(156,163,175,.7)')
-        -weight','500').text(count + ' agents');
+        .style('font-size','9px').style('font-weight','500').text(count + ' agents');
     }
   });
 
@@ -4228,6 +4567,7 @@ function renderShell() {
         <div class="nav-item" data-route="analytics" onclick="Router.navigate('/analytics')">◰ Analytics</div>
         <div class="nav-item" data-route="comms" onclick="Router.navigate('/comms')">💬 Comms</div>
         <div class="nav-item" data-route="audit" onclick="Router.navigate('/audit')">📄 Audit Log</div>
+        <div class="nav-item" data-route="registries" onclick="Router.navigate('/registries')">⚙ Registries Catalog</div>
         <div class="nav-item" data-route="settings" onclick="Router.navigate('/settings')">⚙ Settings</div>
       </nav>
       <div class="p-3 border-t border-[var(--border)] text-xs text-[var(--text-3)] flex items-center justify-between">
@@ -4281,13 +4621,16 @@ document.addEventListener('input', (e) => {
   }
 });
 
+
 async function initApp() {
   try {
     const res = await fetch('/api/registry/agents');
     if (res.ok) {
       const data = await res.json();
-      if (data && data.data && data.data.agents) {
-        const fetchedAgents = data.data.agents.map((a, i) => {
+      if (data && data.data) {
+        const agentsList = Array.isArray(data.data) ? data.data.filter(a => a.name) : (data.data.agents || []);
+        if (agentsList.length > 0) {
+          const fetchedAgents = agentsList.map((a, i) => {
           const categoryLower = (a.category || '').toLowerCase();
           let opco = 'ops';
           let team = 'logistics';
@@ -4339,6 +4682,7 @@ async function initApp() {
         }
       }
     }
+  }
   } catch (err) {
     console.warn("Failed to fetch live agents, using static Store fallback:", err);
   }

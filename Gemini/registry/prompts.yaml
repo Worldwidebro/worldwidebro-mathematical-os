@@ -1,0 +1,31 @@
+prompts:
+- id: system-architecture
+  name: Master System Architecture Prompt
+  role: Chief Architect
+  description: Multi-layer system design guidelines focusing on reusable platform templates.
+  status: Active
+- id: dependency-planner
+  name: Build Dependency Planner Prompt
+  role: Build Planner
+  description: Compiles DAG lists for company builds (Postgres -> Neo4j -> agent endpoints).
+  status: Active
+- id: venture-spawner
+  name: Venture Factory Spawner Prompt
+  role: Venture Creator
+  description: Orchestrates directory setup, database insertions, and VEX frontend updates.
+  status: Active
+- id: knowledge-platform
+  name: Knowledge Platform Query Prompt
+  role: Knowledge Designer
+  description: Standardized search template linking Neo4j Cypher schemas to Qdrant vector retrieval.
+  status: Active
+- id: agent-governance
+  name: Agent Runtime Governance Prompt
+  role: Security Auditor
+  description: Enforces operational spend limits ($5k auto-approve) and token tracking.
+  status: Active
+- id: meta-prompt
+  name: The Meta Board Prompt
+  role: Enterprise Board
+  description: Governs database alignments and platform tool reuse across portfolio companies.
+  status: Active

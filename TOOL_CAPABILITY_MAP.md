@@ -147,6 +147,34 @@ venture_classifier
 
 ---
 
+### Goal: Database Intelligence & Natural Language SQL
+
+| Need | Tool | Status | Effort | Notes |
+|------|------|--------|--------|-------|
+| Query databases (NL → SQL) | chat2db | ✅ Deploying | 15 min | Mac Studio via Tailscale |
+| Schema visualization | chat2db | ✅ Deploying | — | Auto-generated |
+| SQL optimization | chat2db | ✅ Deploying | — | AI-assisted |
+| Connect PostgreSQL | chat2db | ✅ Ready | 2 min | TwentyHQ database |
+| Connect DuckDB | chat2db | ✅ Ready | 2 min | Analytics warehouse |
+| LLM routing (FreeLLMAPI) | chat2db | ✅ Ready | — | Already wired |
+| **PROCEED?** | | **✅ YES (DEPLOY)** | **17 min** | See CHAT2DB-DEPLOYMENT-GUIDE.md |
+
+---
+
+## Chat2DB Deployment
+
+**Reference:** `CHAT2DB-DEPLOYMENT-GUIDE.md`
+
+**Quick steps:**
+1. `scp` docker-compose to Mac Studio
+2. `ssh macstudio && docker-compose up -d`
+3. Open http://100.87.214.70:8080
+4. Login: admin / ventures2026
+
+**Status:** Docker image ready, databases pre-configured, LLM wired to FreeLLMAPI.
+
+---
+
 ---
 
 ## Wire These First (Priority Order)
@@ -236,6 +264,8 @@ clickup_targets:
 | context7 | 🟡 MEDIUM | ✅ | Library/framework docs lookup | 2026-07-08 |
 | playwright / puppeteer | 🟡 MEDIUM | ✅ | Browser automation, screenshots, form fill | 2026-07-08 |
 | filesystem | 🟠 HIGH | ✅ | Local file read/write/search beyond default tools | 2026-07-08 |
+| **floci** | 🟡 MEDIUM | ✅ | Local AWS emulation (S3, DynamoDB, Lambda, SQS, SNS, RDS, Cognito, 69 services); MIT licensed; ~24ms startup; no auth tokens | 2026-07-24 |
+| **browserclaw** | 🟠 HIGH | ✅ | Real browser automation; navigate, click, fill, screenshot, read, wait, evaluate JS; running on localhost:9010 | 2026-07-24 |
 
 **Note:** rows added 2026-07-08 reflect MCPs visible in the live tool list that were missing from this map (added 2026-06-22). Re-check this table whenever the deferred-tools system reminder shows names not listed here — that's the signal this file has drifted again.
 
@@ -268,6 +298,40 @@ Only **OpenMontage** is a real, working, agent-governed video production system 
 | Full campaign orchestration | `iza-os-marketing-core/campaign-factory` | ❌ Facade only | — | `_run_agent()` is an explicit simulation stub — writes placeholder files, does not call any LLM. Do not rely on it. |
 
 **PROCEED?** For product-cutout-driven kinetic ads (no live footage): ✅ YES with current free stack (ffmpeg + HyperFrames + Google TTS + Pixabay music). For cinematic b-roll/motion-from-stills: ⚠️ needs either `FAL_KEY` (fast, cheap, cloud) or a real ComfyUI setup investment (free, slow to stand up, local GPU).
+
+---
+
+## Local AWS for SaaS Ventures (Layer 2) — added 2026-07-24
+
+**Floci enables fast, free local AWS development for ventures needing cloud services.**
+
+| Venture Type | AWS Services Needed | Floci Benefit | Example |
+|--------------|-------------------|--------------|---------|
+| **Marketplace** | S3 (listings), DynamoDB (catalog), Lambda (search), API Gateway | Dev/test in 24ms; no auth tokens; CI pipelines run in seconds | marketplace-core, CON-009 |
+| **Staffing/Recruiting** | DynamoDB (candidates), ElastiCache (real-time), Lambda (matching), RDS (history) | Full matching pipeline tested locally before AWS push | STA-* ventures |
+| **Finance/Accounting** | RDS (ledger), Lambda (calculations), Step Functions (workflows), SNS (alerts) | Complex financial workflows validated locally | FIN-* ventures |
+| **Logistics** | SQS (tracking), SNS (notifications), RDS (routes), Lambda (optimization) | Multi-service coordination tested in CI | LOG-* ventures |
+
+**Usage:** 
+1. `floci start` (starts on port 4566)
+2. `eval $(floci env)` (configures AWS CLI to use local Floci)
+3. `aws s3 mb s3://my-bucket`, `aws dynamodb create-table ...`, etc. (work normally)
+
+**Cost impact:** ~$200–500/month saved per 50 active ventures (reduced AWS dev/sandbox bills during Layer 2 buildout).
+
+**Setup:**
+```bash
+# Mac
+brew install floci/tap/floci
+
+# Docker
+docker run -d -p 4566:4566 -v /var/run/docker.sock:/var/run/docker.sock floci/floci:latest
+
+# Verify
+floci start
+eval $(floci env)
+aws s3 ls  # Should return empty list (success)
+```
 
 ---
 

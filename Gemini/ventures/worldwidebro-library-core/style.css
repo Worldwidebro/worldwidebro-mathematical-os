@@ -1,0 +1,150 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background: #0a0e1a;
+  color: #e5e7eb;
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+}
+
+/* Scrollbar Hide Utilities */
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Custom Glassmorphism Panels */
+.glass { 
+  background: rgba(20, 25, 45, 0.6); 
+  backdrop-filter: blur(20px); 
+  border: 1px solid rgba(255, 255, 255, 0.08); 
+}
+.glass-light { 
+  background: rgba(30, 35, 60, 0.4); 
+  backdrop-filter: blur(12px); 
+  border: 1px solid rgba(255, 255, 255, 0.06); 
+}
+
+/* Gradients */
+.gradient-text { 
+  background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 50%, #f59e0b 100%); 
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  background-clip: text; 
+}
+.gradient-bg { background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); }
+.gradient-purple { background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%); }
+.gradient-blue { background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); }
+.gradient-emerald { background: linear-gradient(135deg, #10b981 0%, #059669 100%); }
+.gradient-rose { background: linear-gradient(135deg, #f43f5e 0%, #e11d48 100%); }
+
+/* Sidebar Navigation Items */
+.lo-sidebar-item { 
+  transition: all 0.2s ease; 
+  position: relative; 
+  color: #9ca3af; 
+  text-align: left; 
+}
+.lo-sidebar-item:hover { 
+  background: rgba(245, 158, 11, 0.1); 
+  color: #fbbf24; 
+}
+.lo-sidebar-item.active { 
+  background: rgba(245, 158, 11, 0.15); 
+  color: #fbbf24; 
+}
+.lo-sidebar-item.active::before { 
+  content: ''; 
+  position: absolute; 
+  left: 0; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  width: 3px; 
+  height: 60%; 
+  background: #f59e0b; 
+  border-radius: 0 2px 2px 0; 
+}
+
+/* View transitions */
+.lo-view { 
+  display: none; 
+  animation: loFadeIn 0.4s ease; 
+}
+.lo-view.active { 
+  display: block; 
+}
+
+@keyframes loFadeIn { 
+  from { opacity: 0; transform: translateY(10px); } 
+  to { opacity: 1; transform: translateY(0); } 
+}
+
+/* Stats and Book Cards */
+.stat-card { transition: all 0.3s ease; }
+.stat-card:hover { 
+  transform: translateY(-4px); 
+  box-shadow: 0 20px 40px rgba(245, 158, 11, 0.15); 
+}
+
+.book-card { transition: all 0.3s ease; }
+.book-card:hover { 
+  transform: translateY(-8px scale(1.02)); 
+  box-shadow: 0 25px 50px rgba(0,0,0,0.5); 
+}
+
+/* Animations */
+.pulse-dot { animation: pulse 2s infinite; }
+.chat-bubble { animation: loSlideIn 0.3s ease; }
+
+@keyframes loSlideIn { 
+  from { opacity: 0; transform: translateY(10px); } 
+  to { opacity: 1; transform: translateY(0); } 
+}
+
+/* Glow effects */
+.glow-amber { box-shadow: 0 0 30px rgba(245, 158, 11, 0.3); }
+.glow-blue { box-shadow: 0 0 30px rgba(59, 130, 246, 0.3); }
+
+/* Inputs and Forms */
+input, textarea, select { 
+  background: rgba(15, 20, 40, 0.6); 
+  border: 1px solid rgba(255,255,255,0.1); 
+  color: #e5e7eb; 
+}
+input:focus, textarea:focus, select:focus { 
+  outline: none; 
+  border-color: #f59e0b; 
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.1); 
+}
+
+/* Badges */
+.badge { 
+  display: inline-flex; 
+  align-items: center; 
+  padding: 2px 10px; 
+  border-radius: 999px; 
+  font-size: 11px; 
+  font-weight: 600; 
+}
+.badge-success { background: rgba(16, 185, 129, 0.15); color: #34d399; }
+.badge-warning { background: rgba(245, 158, 11, 0.15); color: #fbbf24; }
+.badge-danger { background: rgba(244, 63, 94, 0.15); color: #fb7185; }
+.badge-info { background: rgba(59, 130, 246, 0.15); color: #60a5fa; }
+
+/* Table hover */
+.table-row { transition: background 0.2s; }
+.table-row:hover { background: rgba(245, 158, 11, 0.05); }
+
+.nav-tab { transition: all 0.2s; }
+.nav-tab.active { color: #fbbf24; border-bottom: 2px solid #f59e0b; }
+
+.float-anim { animation: loFloat 4s ease-in-out infinite; }
+@keyframes loFloat { 
+  0%, 100% { transform: translateY(0); } 
+  50% { transform: translateY(-10px); } 
+}
+
+.hero-gradient { 
+  background: radial-gradient(ellipse at top, rgba(245, 158, 11, 0.15) 0%, transparent 50%), 
+              radial-gradient(ellipse at bottom right, rgba(139, 92, 246, 0.1) 0%, transparent 50%); 
+}

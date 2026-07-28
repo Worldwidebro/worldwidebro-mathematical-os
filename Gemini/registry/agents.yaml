@@ -131,3 +131,40 @@ agents:
     focus: License tracking, contract audits, policy checks against regulations.
     inputs: [contract briefs, campaign manifests, local statutes]
     outputs: [audit status logs, violation alerts, legal templates]
+  - name: Opportunity Discovery Agent
+    role: Raw Lead & Asset Discovery Specialist
+    category: Sales
+    focus: Scraping public auction registries, zoning notices, liquidation feeds, and B2B directories.
+    inputs: [geographic targets, industry categories, asset types]
+    outputs: [raw asset profiles, raw need profiles]
+  - name: Market Research Agent
+    role: B2B Pricing & Demand Specialist
+    category: Research
+    focus: Estimating market valuation of assets, analyzing local competition, and checking demand indicators.
+    inputs: [raw assets, pricing feeds, local comps]
+    outputs: [valuation reports, market density indices]
+  - name: Lead Qualification Agent
+    role: Lead Scoring & Validation Specialist
+    category: Sales
+    focus: Auditing raw listings, verifying entity viability, and filtering out low-probability opportunities.
+    inputs: [raw assets, raw needs, verification guidelines]
+    outputs: [qualified leads, verified contact details]
+  - name: Buyer Matching Agent
+    role: B2B Matchmaker & Graph Traversal Specialist
+    category: Operations
+    focus: Querying Neo4j graphs to match qualified assets with active buyer requirements.
+    inputs: [qualified leads, active needs, matching rules]
+    outputs: [suggested match options, match scores]
+  - name: Negotiation Agent
+    role: Transaction Structuring Specialist
+    category: Operations
+    focus: Analyzing bid-ask spreads and proposing commission splits or flat finder fees.
+    inputs: [deal structures, margin caps, counter-proposals]
+    outputs: [negotiated terms sheets, pricing scenarios]
+  - name: Contract Agent
+    role: Deal Closing & Referral Agreement Specialist
+    category: Legal
+    focus: Standardizing B2B referral agreements and finder's fee contracts.
+    inputs: [negotiated terms sheets, legal templates]
+    outputs: [referral contract drafts, audit documents]
+

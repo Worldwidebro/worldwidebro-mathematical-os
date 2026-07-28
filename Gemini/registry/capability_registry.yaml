@@ -1,0 +1,500 @@
+registries:
+- id: user-registry
+  name: User Registry
+  category: Identity
+  tier: Tier 1
+  purpose: Users and identities within Civilization OS.
+  status: Active
+  registry_file: registry/users.yaml
+- id: agent-registry
+  name: Agent Registry
+  category: Identity
+  tier: Tier 1
+  purpose: Directory of active AI agents, roles, and profiles.
+  status: Active
+  registry_file: registry/agents.yaml
+- id: team-registry
+  name: Team Registry
+  category: Identity
+  tier: Tier 3
+  purpose: Operational teams and organizations.
+  status: Planned
+  registry_file: 
+- id: tenant-registry
+  name: Tenant Registry
+  category: Identity
+  tier: Tier 3
+  purpose: Multi-tenancy metadata and organization boundaries.
+  status: Planned
+  registry_file: 
+- id: service-account-registry
+  name: Service Account Registry
+  category: Identity
+  tier: Tier 3
+  purpose: Machine and process identities.
+  status: Planned
+  registry_file: 
+
+- id: skill-registry
+  name: Skill Registry
+  category: Capability
+  tier: Tier 1
+  purpose: Reusable skill templates for AI agent execution.
+  status: Active
+  registry_file: registry/skills.yaml
+- id: workflow-registry
+  name: Workflow Registry
+  category: Capability
+  tier: Tier 1
+  purpose: Declarative definitions for n8n/Make automation workflows.
+  status: Active
+  registry_file: registry/workflows.yaml
+- id: mcp-registry
+  name: MCP Registry
+  category: Capability
+  tier: Tier 1
+  purpose: Active MCP server connections and tools.
+  status: Active
+  registry_file: registry/mcp_servers.yaml
+- id: tool-registry
+  name: Tool Registry
+  category: Capability
+  tier: Tier 1
+  purpose: Individual executable tool definitions and sandboxing rules.
+  status: Active
+  registry_file: registry/tools.yaml
+- id: connector-registry
+  name: Connector Registry
+  category: Capability
+  tier: Tier 2
+  purpose: Integrations and mappings between repos, capabilities, and agents.
+  status: Active
+  registry_file: registry/integrations.yaml
+- id: plugin-registry
+  name: Plugin Registry
+  category: Capability
+  tier: Tier 2
+  purpose: Extensions and CLI plugins.
+  status: Planned
+  registry_file: 
+- id: api-registry
+  name: API Registry
+  category: Capability
+  tier: Tier 2
+  purpose: REST/GraphQL API specifications and gateways.
+  status: Planned
+  registry_file: 
+- id: function-registry
+  name: Function Registry
+  category: Capability
+  tier: Tier 2
+  purpose: Lightweight serverless and callable helper functions.
+  status: Planned
+  registry_file: 
+- id: prompt-registry
+  name: Prompt Registry
+  category: Capability
+  tier: Tier 1
+  purpose: Unified catalog of optimized system and developer prompt templates.
+  status: Active
+  registry_file: registry/prompts.yaml
+- id: template-registry
+  name: Template Registry
+  category: Capability
+  tier: Tier 2
+  purpose: Reusable static sites and document template skeletons.
+  status: Planned
+  registry_file: 
+- id: command-registry
+  name: Command Registry
+  category: Capability
+  tier: Tier 2
+  purpose: Slash commands, terminal utilities, and shortcut keys.
+  status: Planned
+  registry_file: 
+
+- id: model-registry
+  name: Model Registry
+  category: Models
+  tier: Tier 1
+  purpose: LLMs, embedding models, and custom routing configurations.
+  status: Active
+  registry_file: registry/models.yaml
+- id: embedding-registry
+  name: Embedding Registry
+  category: Models
+  tier: Tier 2
+  purpose: Text, image, and code embedding models in use.
+  status: Planned
+  registry_file: 
+- id: reranker-registry
+  name: Reranker Registry
+  category: Models
+  tier: Tier 2
+  purpose: Re-ranking models for enhancing retrieval relevance.
+  status: Planned
+  registry_file: 
+- id: evaluation-registry
+  name: Evaluation Registry
+  category: Models
+  tier: Tier 2
+  purpose: Automated testing scenarios and model benchmarks.
+  status: Planned
+  registry_file: 
+
+- id: schema-registry
+  name: Schema Registry
+  category: Data
+  tier: Tier 1
+  purpose: Data structures, database schemas, and validation contracts.
+  status: Active
+  registry_file: registry/schemas.yaml
+- id: dataset-registry
+  name: Dataset Registry
+  category: Data
+  tier: Tier 2
+  purpose: Fine-tuning datasets and business training lists.
+  status: Planned
+  registry_file: 
+- id: table-registry
+  name: Table Registry
+  category: Data
+  tier: Tier 3
+  purpose: Database tables mapping across operating systems.
+  status: Planned
+  registry_file: 
+- id: event-schema-registry
+  name: Event Registry
+  category: Data
+  tier: Tier 1
+  purpose: Structured event models for pub/sub brokers.
+  status: Active
+  registry_file: registry/events.yaml
+- id: data-contract-registry
+  name: Data Contract Registry
+  category: Data
+  tier: Tier 3
+  purpose: Multi-venture schema agreements and versioning.
+  status: Planned
+  registry_file: 
+- id: vector-collection-registry
+  name: Vector Collection Registry
+  category: Data
+  tier: Tier 2
+  purpose: Vector collections and partition indexes inside Qdrant.
+  status: Planned
+  registry_file: 
+- id: graph-registry
+  name: Graph Registry
+  category: Data
+  tier: Tier 2
+  purpose: Neo4j relationship configurations and schema metadata.
+  status: Planned
+  registry_file: 
+
+- id: knowledge-registry
+  name: Knowledge Registry
+  category: Knowledge
+  tier: Tier 1
+  purpose: Document vaults, wikis, and markdown collections.
+  status: Active
+  registry_file: registry/knowledge.yaml
+- id: document-registry
+  name: Document Registry
+  category: Knowledge
+  tier: Tier 2
+  purpose: Scanned PDFs, spreadsheets, and media documents.
+  status: Planned
+  registry_file: 
+- id: prd-registry
+  name: PRD Registry
+  category: Knowledge
+  tier: Tier 2
+  purpose: Product Requirements Documents for portfolio ventures.
+  status: Planned
+  registry_file: 
+- id: sop-registry
+  name: SOP Registry
+  category: Knowledge
+  tier: Tier 2
+  purpose: Standard Operating Procedures for automation task forces.
+  status: Planned
+  registry_file: 
+- id: playbook-registry
+  name: Playbook Registry
+  category: Knowledge
+  tier: Tier 2
+  purpose: Incident response and growth playbook archives.
+  status: Planned
+  registry_file: 
+- id: policy-registry
+  name: Policy Registry
+  category: Knowledge
+  tier: Tier 1
+  purpose: Operating rules, spend thresholds, and permission bounds.
+  status: Active
+  registry_file: registry/policies.yaml
+- id: decision-registry
+  name: Decision Registry
+  category: Knowledge
+  tier: Tier 2
+  purpose: Architecture Decision Records (ADRs) and executive resolutions.
+  status: Planned
+  registry_file: 
+
+- id: cluster-registry
+  name: Cluster Registry
+  category: Infrastructure
+  tier: Tier 3
+  purpose: Local and cloud Kubernetes orchestrations.
+  status: Planned
+  registry_file: 
+- id: node-registry
+  name: Node Registry
+  category: Infrastructure
+  tier: Tier 3
+  purpose: Physical servers and Mac Studio computing nodes.
+  status: Planned
+  registry_file: 
+- id: container-registry
+  name: Container Registry
+  category: Infrastructure
+  tier: Tier 3
+  purpose: Local Docker images and packages.
+  status: Planned
+  registry_file: 
+- id: repository-registry
+  name: Repository Registry
+  category: Infrastructure
+  tier: Tier 1
+  purpose: Git repositories, versions, and deployment scripts.
+  status: Active
+  registry_file: registry/repositories.yaml
+- id: secret-registry
+  name: Secret Registry
+  category: Infrastructure
+  tier: Tier 2
+  purpose: Secret keys and token environments (metadata only).
+  status: Planned
+  registry_file: 
+- id: environment-registry
+  name: Environment Registry
+  category: Infrastructure
+  tier: Tier 2
+  purpose: Development, staging, and production environments.
+  status: Planned
+  registry_file: 
+- id: storage-registry
+  name: Storage Registry
+  category: Infrastructure
+  tier: Tier 3
+  purpose: Shared storage paths and S3 bucket details.
+  status: Planned
+  registry_file: 
+- id: queue-registry
+  name: Queue Registry
+  category: Infrastructure
+  tier: Tier 3
+  purpose: Active messaging brokers, queues, and streams.
+  status: Planned
+  registry_file: 
+- id: cache-registry
+  name: Cache Registry
+  category: Infrastructure
+  tier: Tier 3
+  purpose: Shared cache configurations and instances.
+  status: Planned
+  registry_file: 
+
+- id: venture-registry
+  name: Venture Registry
+  category: Business
+  tier: Tier 1
+  purpose: Spawned business ventures and progress metrics.
+  status: Active
+  registry_file: registry/ventures.yaml
+- id: customer-registry
+  name: Customer Registry
+  category: Business
+  tier: Tier 2
+  purpose: Leads and qualified customer contacts.
+  status: Planned
+  registry_file: 
+- id: vendor-registry
+  name: Vendor Registry
+  category: Business
+  tier: Tier 3
+  purpose: Partner, API, and cloud infrastructure vendors.
+  status: Planned
+  registry_file: 
+- id: product-registry
+  name: Product Registry
+  category: Business
+  tier: Tier 3
+  purpose: Active products, subscriptions, and purchase structures.
+  status: Planned
+  registry_file: 
+- id: project-registry
+  name: Project Registry
+  category: Business
+  tier: Tier 2
+  purpose: Work items and project execution tracks.
+  status: Planned
+  registry_file: 
+- id: asset-registry
+  name: Asset Registry
+  category: Business
+  tier: Tier 2
+  purpose: Domains, brands, content channels, and codebases.
+  status: Planned
+  registry_file: 
+- id: contract-registry
+  name: Contract Registry
+  category: Business
+  tier: Tier 2
+  purpose: Legal agreements and partnership contracts.
+  status: Planned
+  registry_file: 
+- id: license-registry
+  name: License Registry
+  category: Business
+  tier: Tier 3
+  purpose: Open-source licenses and commercial compliance audits.
+  status: Planned
+  registry_file: 
+
+- id: feature-flag-registry
+  name: Feature Flag Registry
+  category: Governance
+  tier: Tier 1
+  purpose: Feature flags and modular toggles.
+  status: Active
+  registry_file: registry/feature_flags.yaml
+- id: permission-registry
+  name: Permission Registry
+  category: Governance
+  tier: Tier 2
+  purpose: Security permissions and endpoint authorization policies.
+  status: Planned
+  registry_file: 
+- id: role-registry
+  name: Role Registry
+  category: Governance
+  tier: Tier 2
+  purpose: System user roles and RBAC constraints.
+  status: Planned
+  registry_file: 
+- id: approval-registry
+  name: Approval Registry
+  category: Governance
+  tier: Tier 3
+  purpose: Spending approvals and sign-off chains.
+  status: Planned
+  registry_file: 
+- id: audit-registry
+  name: Audit Registry
+  category: Governance
+  tier: Tier 3
+  purpose: Immutable record of system changes and user commands.
+  status: Planned
+  registry_file: 
+- id: compliance-registry
+  name: Compliance Registry
+  category: Governance
+  tier: Tier 3
+  purpose: Corporate policy mappings and regional mandates.
+  status: Planned
+  registry_file: 
+
+- id: job-registry
+  name: Job Registry
+  category: Operations
+  tier: Tier 3
+  purpose: Scheduled background tasks and cron jobs.
+  status: Planned
+  registry_file: 
+- id: scheduler-registry
+  name: Scheduler Registry
+  category: Operations
+  tier: Tier 3
+  purpose: Queue runner configurations and timers.
+  status: Planned
+  registry_file: 
+- id: notification-registry
+  name: Notification Registry
+  category: Operations
+  tier: Tier 3
+  purpose: Messaging templates and routing protocols.
+  status: Planned
+  registry_file: 
+- id: dashboard-registry
+  name: Dashboard Registry
+  category: Operations
+  tier: Tier 2
+  purpose: Active operational monitoring dashboards.
+  status: Planned
+  registry_file: 
+- id: metric-registry
+  name: Metric Registry
+  category: Operations
+  tier: Tier 2
+  purpose: Core KPI and system metrics index.
+  status: Planned
+  registry_file: 
+- id: alert-registry
+  name: Alert Registry
+  category: Operations
+  tier: Tier 2
+  purpose: Infrastructure health alerting triggers.
+  status: Planned
+  registry_file: 
+- id: cost-registry
+  name: Cost Registry
+  category: Operations
+  tier: Tier 3
+  purpose: LLM and cloud hosting budget controllers.
+  status: Planned
+  registry_file: 
+- id: sla-registry
+  name: SLA Registry
+  category: Operations
+  tier: Tier 3
+  purpose: Service Level Agreements and reliability limits.
+  status: Planned
+  registry_file: 
+
+- id: memory-registry
+  name: Memory Registry
+  category: AI
+  tier: Tier 2
+  purpose: Shared conversational memory and vector cache.
+  status: Planned
+  registry_file: 
+- id: context-registry
+  name: Context Registry
+  category: AI
+  tier: Tier 2
+  purpose: Context managers and environment injection settings.
+  status: Planned
+  registry_file: 
+- id: conversation-registry
+  name: Conversation Registry
+  category: AI
+  tier: Tier 3
+  purpose: Transcript indices of human-agent chats.
+  status: Planned
+  registry_file: 
+- id: reasoning-strategy-registry
+  name: Reasoning Strategy Registry
+  category: AI
+  tier: Tier 3
+  purpose: Custom agent reasoning and task planning algorithms.
+  status: Planned
+  registry_file: 
+- id: evaluation-scenario-registry
+  name: Evaluation Scenario Registry
+  category: AI
+  tier: Tier 3
+  purpose: Benchmarks for testing LLM agency.
+  status: Planned
+  registry_file: 

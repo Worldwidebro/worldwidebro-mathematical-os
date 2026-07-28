@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Worldwidebro Library Core</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.0.0/index.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#0a0e1a] overflow-hidden">
+  <div class="flex w-full h-screen bg-[#0a0e1a] color-[#e5e7eb] overflow-hidden">
+    <!-- Sidebar -->
+    <aside class="w-56 glass border-r border-white/5 flex flex-col h-full flex-shrink-0">
+      <div class="p-4 border-b border-white/5">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 gradient-bg rounded-lg flex items-center justify-center glow-amber flex-shrink-0">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+          </div>
+          <div>
+            <h1 class="text-xs font-bold text-white leading-tight">Worldwidebro</h1>
+            <p class="text-[9px] text-gray-400">Library Core</p>
+          </div>
+        </div>
+      </div>
+      
+      <nav class="flex-1 overflow-y-auto scrollbar-hide py-3 px-2 space-y-3">
+        <div>
+          <p class="px-2 text-[9px] font-semibold text-gray-500 uppercase tracking-wider mb-1">Overview</p>
+          <button onclick="LibraryOS.switchView('dashboard')" class="lo-sidebar-item active w-full flex items-center gap-2 px-2.5 py-1.5 rounded-lg text-xs" data-lo-view="dashboard">
+            Dashboard
+          </button>
+          <button onclick="LibraryOS.switchView('analytics')" class="lo-sidebar-item w-full flex items-center gap-2 px-2.5 py-1.5 rounded-lg text-xs" data-lo-view="analytics">
+            Analytics
+          </button>
+        </div>
+        
+        <div>
+          <p class="px-2 text-[9px] font-semibold text-gray-500 uppercase tracking-wider mb-1">Core</p>
+          <button onclick="LibraryOS.switchView('catalog')" class="lo-sidebar-item w-full flex items-center gap-2 px-2.5 py-1.5 rounded-lg text-xs" data-lo-view="catalog">
+            Catalog
+          </button>
+          <button onclick="LibraryOS.switchView('circulation')" class="lo-sidebar-item w-full flex items-center gap-2 px-2.5 py-1.5 rounded-lg text-xs" data-lo-view="circulation">
+            Circulation
+          </button>
+          <button onclick="LibraryOS.switchView('members')" class="lo-sidebar-item w-full flex items-center gap-2 px-2.5 py-1.5 rounded-lg text-xs" data-lo-view="members">
+            Members
+          </button>
+          <button onclick="LibraryOS.switchView('digital')" class="lo-sidebar-item w-full flex items-center gap-2 px-2.5 py-1.5 rounded-lg text-xs" data-lo-view="digital">
+            Digital Library
+          </button>
+          <button onclick="LibraryOS.switchView('archives')" class="lo-sidebar-item w-full flex items-center gap-2 px-2.5 py-1.5 rounded-lg text-xs" data-lo-view="archives">
+            Archives
+          </button>
+        </div>
+        
+        <div>
+          <p class="px-2 text-[9px] font-semibold text-gray-500 uppercase tracking-wider mb-1">Operations</p>
+          <button onclick="LibraryOS.switchView('acquisitions')" class="lo-sidebar-item w-full flex items-center gap-2 px-2.5 py-1.5 rounded-lg text-xs" data-lo-view="acquisitions">
+            Acquisitions
+          </button>
+          <button onclick="LibraryOS.switchView('inventory')" class="lo-sidebar-item w-full flex items-center gap-2 px-2.5 py-1.5 rounded-lg text-xs" data-lo-view="inventory">
+            Inventory
+          </button>
+          <button onclick="LibraryOS.switchView('events')" class="lo-sidebar-item w-full flex items-center gap-2 px-2.5 py-1.5 rounded-lg text-xs" data-lo-view="events">
+            Events & Rooms
+          </button>
+          <button onclick="LibraryOS.switchView('finance')" class="lo-sidebar-item w-full flex items-center gap-2 px-2.5 py-1.5 rounded-lg text-xs" data-lo-view="finance">
+            Finance
+          </button>
+        </div>
+        
+        <div>
+          <p class="px-2 text-[9px] font-semibold text-gray-500 uppercase tracking-wider mb-1">Intelligence</p>
+          <button onclick="LibraryOS.switchView('ai')" class="lo-sidebar-item w-full flex items-center gap-2 px-2.5 py-1.5 rounded-lg text-xs" data-lo-view="ai">
+            AI Assistant
+          </button>
+          <button onclick="LibraryOS.switchView('research')" class="lo-sidebar-item w-full flex items-center gap-2 px-2.5 py-1.5 rounded-lg text-xs" data-lo-view="research">
+            Research Portal
+          </button>
+        </div>
+        
+        <div>
+          <p class="px-2 text-[9px] font-semibold text-gray-500 uppercase tracking-wider mb-1">System</p>
+          <button onclick="LibraryOS.switchView('branches')" class="lo-sidebar-item w-full flex items-center gap-2 px-2.5 py-1.5 rounded-lg text-xs" data-lo-view="branches">
+            Branches
+          </button>
+          <button onclick="LibraryOS.switchView('settings')" class="lo-sidebar-item w-full flex items-center gap-2 px-2.5 py-1.5 rounded-lg text-xs" data-lo-view="settings">
+            Settings
+          </button>
+        </div>
+      </nav>
+      
+      <div class="p-3 border-t border-white/5">
+        <div class="glass-light rounded-lg p-2.5">
+          <div class="flex items-center gap-2">
+            <div class="w-7 h-7 rounded-full gradient-bg flex items-center justify-center text-white font-semibold text-xs flex-shrink-0">EM</div>
+            <div class="flex-1 min-w-0">
+              <p class="text-xs font-medium text-white truncate">Elena Martinez</p>
+              <p class="text-[9px] text-gray-400 truncate">Head Librarian</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Nested Panel -->
+    <div class="flex-1 flex flex-col h-full overflow-y-auto p-6 bg-[#0a0e1a]">
+      
+      <!-- NESTED DASHBOARD VIEW -->
+      <div id="lo-view-dashboard" class="lo-view active">
+        <div class="mb-6 flex justify-between items-center">
+          <div>
+            <h2 class="text-2xl font-bold text-white">Good morning, Elena</h2>
+            <p class="text-xs text-gray-400 mt-1">Here's what's happening at Central Branch today — Friday, July 24, 2026</p>
+          </div>
+          <div class="flex gap-2">
+            <button class="px-3 py-1.5 rounded-lg glass text-xs hover:bg-white/10 transition" onclick="Toast.info('Export', 'Exporting today\'s library report')">Export Report</button>
+            <button class="px-3 py-1.5 rounded-lg gradient-bg text-white text-xs font-medium hover:opacity-90 transition" onclick="LibraryOS.switchView('acquisitions')">+ New Acquisition</button>
+          </div>
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="grid grid-cols-4 gap-4 mb-6">
+          <div class="stat-card glass rounded-xl p-4">
+            <div class="flex items-center justify-between mb-2">
+              <p class="text-xs text-gray-400">Books Checked Out</p>
+              <span class="badge badge-success">+12.5%</span>
+            </div>
+            <p class="text-2xl font-bold text-white">2,847</p>
+            <div class="mt-3 h-1 bg-white/5 rounded-full overflow-hidden">
+              <div class="h-full gradient-bg rounded-full" style="width: 72%"></div>
+            </div>
+          </div>
+          
+          <div class="stat-card glass rounded-xl p-4">
+            <div class="flex items-center justify-between mb-2">
+              <p class="text-xs text-gray-400">Overdue Items</p>
+              <span class="badge badge-danger">+3</span>
+            </div>
+            <p class="text-2xl font-bold text-white">47</p>
+            <div class="mt-3 h-1 bg-white/5 rounded-full overflow-hidden">
+              <div class="h-full gradient-rose rounded-full" style="width: 23%"></div>
+            </div>
+          </div>
+          
+          <div class="stat-card glass rounded-xl p-4">
+            <div class="flex items-center justify-between mb-2">
+              <p class="text-xs text-gray-400">Today's Visitors</p>
+              <span class="badge badge-success">+8.2%</span>
+            </div>
+            <p class="text-2xl font-bold text-white">312</p>
+            <div class="mt-3 h-1 bg-white/5 rounded-full overflow-hidden">
+              <div class="h-full gradient-blue rounded-full" style="width: 65%"></div>
+            </div>
+          </div>
+          
+          <div class="stat-card glass rounded-xl p-4">
+            <div class="flex items-center justify-between mb-2">
+              <p class="text-xs text-gray-400">Revenue This Month</p>
+              <span class="badge badge-success">+15.3%</span>
+            </div>
+            <p class="text-2xl font-bold text-white">$14,280</p>
+            <div class="mt-3 h-1 bg-white/5 rounded-full overflow-hidden">
+              <div class="h-full gradient-purple rounded-full" style="width: 58%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Charts Row -->
+        <div class="grid grid-cols-3 gap-4 mb-6">
+          <div class="col-span-2 glass rounded-xl p-4 h-[240px] flex flex-col">
+            <div class="flex justify-between items-center mb-2">
+              <div>
+                <h3 class="text-sm font-semibold text-white">Circulation Trends</h3>
+                <p class="text-[10px] text-gray-400">Books borrowed vs returned</p>
+              </div>
+            </div>
+            <div class="flex-1 min-h-0">
+              <canvas id="lo-circulationChart"></canvas>
+            </div>
+          </div>
+          
+          <div class="glass rounded-xl p-4 h-[240px] flex flex-col">
+            <h3 class="text-sm font-semibold text-white mb-2">Collection</h3>
+            <div class="flex-1 min-h-0 relative flex items-center justify-center">
+              <canvas id="lo-collectionChart"></canvas>
+            </div>
+            <div class="grid grid-cols-2 gap-1 text-[9px] mt-2">
+              <span class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>Print (62%)</span>
+              <span class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-purple-500"></span>Digital (24%)</span>
+              <span class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>Audio (9%)</span>
+              <span class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>Other (5%)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Activity & Recommendations Row -->
+        <div class="grid grid-cols-3 gap-4">
+          <div class="col-span-2 glass rounded-xl p-4">
+            <div class="flex justify-between items-center mb-3">
+              <h3 class="text-sm font-semibold text-white">Recent Activity</h3>
+            </div>
+            <div class="space-y-2 max-h-[220px] overflow-y-auto scrollbar-hide">
+              <div class="flex items-start gap-3 p-2 rounded-lg hover:bg-white/5 transition text-xs">
+                <div class="w-6 h-6 rounded-full gradient-emerald flex items-center justify-center flex-shrink-0 text-[10px]">✓</div>
+                <div class="flex-1 min-w-0">
+                  <p class="text-white"><span class="font-semibold">Sarah Chen</span> returned <span class="text-amber-400">"The Art of Botanical Illustration"</span></p>
+                  <p class="text-[10px] text-gray-400 mt-0.5">2m ago · Central Branch</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start gap-3 p-2 rounded-lg hover:bg-white/5 transition text-xs">
+                <div class="w-6 h-6 rounded-full gradient-blue flex items-center justify-center flex-shrink-0 text-[10px]">+</div>
+                <div class="flex-1 min-w-0">
+                  <p class="text-white"><span class="font-semibold">Marcus Johnson</span> checked out <span class="text-amber-400">"Modern Architecture"</span></p>
+                  <p class="text-[10px] text-gray-400 mt-0.5">15m ago · Due: Aug 21</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start gap-3 p-2 rounded-lg hover:bg-white/5 transition text-xs">
+                <div class="w-6 h-6 rounded-full gradient-rose flex items-center justify-center flex-shrink-0 text-[10px]">!</div>
+                <div class="flex-1 min-w-0">
+                  <p class="text-white"><span class="font-semibold">System</span> flagged <span class="text-amber-400">3 overdue items</span> for member #4821</p>
+                  <p class="text-[10px] text-gray-400 mt-0.5">1h ago · Notification dispatched</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="glass rounded-xl p-4">
+            <h3 class="text-sm font-semibold text-white mb-2">AI Insights</h3>
+            <div class="space-y-2 text-xs">
+              <div class="p-2 rounded bg-purple-500/10 border border-purple-500/20">
+                <p class="text-[10px] text-purple-300 font-semibold mb-0.5">📚 Trending History</p>
+                <p class="text-white font-medium truncate">"Sapiens" — 47 holds</p>
+              </div>
+              <div class="p-2 rounded bg-amber-500/10 border border-amber-500/20">
+                <p class="text-[10px] text-amber-300 font-semibold mb-0.5">⚠️ Inventory Alert</p>
+                <p class="text-white font-medium truncate">Shelf B-14 needs restocking</p>
+              </div>
+            </div>
+            <button onclick="LibraryOS.switchView('ai')" class="w-full mt-3 py-1.5 rounded-lg gradient-purple text-white text-xs font-semibold hover:opacity-90 transition">
+              Open AI Assistant →
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- NESTED CATALOG VIEW -->
+      <div id="lo-view-catalog" class="lo-view">
+        <div class="flex justify-between items-center mb-6">
+          <div>
+            <h2 class="text-2xl font-bold text-white">Catalog</h2>
+            <p class="text-xs text-gray-400 mt-1">24,581 items across all branches</p>
+          </div>
+          <button class="px-3 py-1.5 rounded-lg gradient-bg text-white text-xs font-medium hover:opacity-90 transition" onclick="Toast.info('Create', 'Open Catalog Creation Modal')">+ Add Item</button>
+        </div>
+
+        <div class="grid grid-cols-5 gap-4">
+          <div class="book-card glass rounded-lg overflow-hidden cursor-pointer p-2">
+            <div class="aspect-[2/3] overflow-hidden rounded mb-2">
+              <img src="https://image.qwenlm.ai/public_source/417f8df8-4863-4713-ad67-0621ea5ae41b/15e243c7a-7ae9-45d6-9d77-52875b08da10.png" class="w-full h-full object-cover" alt="Book">
+            </div>
+            <p class="text-[9px] text-amber-400 font-medium">Architecture</p>
+            <h4 class="text-xs font-semibold text-white truncate">The Architecture of Knowledge</h4>
+            <p class="text-[9px] text-gray-400 mt-0.5">E. Mansfield · 2024</p>
+            <div class="flex items-center justify-between mt-2 text-[9px]">
+              <span class="badge badge-success scale-90">Available</span>
+              <span class="text-gray-400">12 copies</span>
+            </div>
+          </div>
+          
+          <div class="book-card glass rounded-lg overflow-hidden cursor-pointer p-2">
+            <div class="aspect-[2/3] overflow-hidden rounded mb-2">
+              <img src="https://image.qwenlm.ai/public_source/417f8df8-4863-4713-ad67-0621ea5ae41b/1d43b1cc0-cea8-45c0-8e72-717e4c7dcfc0.png" class="w-full h-full object-cover" alt="Book">
+            </div>
+            <p class="text-[9px] text-emerald-400 font-medium">Botany</p>
+            <h4 class="text-xs font-semibold text-white truncate">Botanica Antiqua</h4>
+            <p class="text-[9px] text-gray-400 mt-0.5">J. Linnaeus · 1892</p>
+            <div class="flex items-center justify-between mt-2 text-[9px]">
+              <span class="badge badge-warning scale-90">2 left</span>
+              <span class="text-gray-400">3 copies</span>
+            </div>
+          </div>
+
+          <div class="book-card glass rounded-lg overflow-hidden cursor-pointer p-2">
+            <div class="aspect-[2/3] overflow-hidden rounded mb-2">
+              <img src="https://image.qwenlm.ai/public_source/417f8df8-4863-4713-ad67-0621ea5ae41b/159cb0d4f-06a6-4b6d-a871-e95adc0ce12a.png" class="w-full h-full object-cover" alt="Book">
+            </div>
+            <p class="text-[9px] text-purple-400 font-medium">Art</p>
+            <h4 class="text-xs font-semibold text-white truncate">Contemporary Visions</h4>
+            <p class="text-[9px] text-gray-400 mt-0.5">A. Nakamura · 2025</p>
+            <div class="flex items-center justify-between mt-2 text-[9px]">
+              <span class="badge badge-success scale-90">Available</span>
+              <span class="text-gray-400">8 copies</span>
+            </div>
+          </div>
+
+          <div class="book-card glass rounded-lg overflow-hidden cursor-pointer p-2">
+            <div class="aspect-[2/3] overflow-hidden rounded mb-2">
+              <img src="https://image.qwenlm.ai/public_source/417f8df8-4863-4713-ad67-0621ea5ae41b/144a71437-45ea-49b4-ab32-5c8509548e2c.png" class="w-full h-full object-cover" alt="Book">
+            </div>
+            <p class="text-[9px] text-rose-400 font-medium">Literature</p>
+            <h4 class="text-xs font-semibold text-white truncate">Breightial Chronicles</h4>
+            <p class="text-[9px] text-gray-400 mt-0.5">R. Blackwood · 1847</p>
+            <div class="flex items-center justify-between mt-2 text-[9px]">
+              <span class="badge badge-danger scale-90">Checked out</span>
+              <span class="text-gray-400">1 copy</span>
+            </div>
+          </div>
+
+          <div class="book-card glass rounded-lg overflow-hidden cursor-pointer p-2">
+            <div class="aspect-[2/3] overflow-hidden rounded mb-2">
+              <img src="https://image.qwenlm.ai/public_source/417f8df8-4863-4713-ad67-0621ea5ae41b/1d381018d-1dba-4ed0-a730-47760a615241.png" class="w-full h-full object-cover" alt="Book">
+            </div>
+            <p class="text-[9px] text-blue-400 font-medium">Science Fiction</p>
+            <h4 class="text-xs font-semibold text-white truncate">Farhns: Beyond Stars</h4>
+            <p class="text-[9px] text-gray-400 mt-0.5">K. Asimov Jr. · 2026</p>
+            <div class="flex items-center justify-between mt-2 text-[9px]">
+              <span class="badge badge-success scale-90">Available</span>
+              <span class="text-gray-400">15 copies</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NESTED CIRCULATION VIEW -->
+      <div id="lo-view-circulation" class="lo-view">
+        <div class="flex justify-between items-center mb-6">
+          <div>
+            <h2 class="text-2xl font-bold text-white">Circulation</h2>
+            <p class="text-xs text-gray-400 mt-1">Manage loans, returns, and reservations</p>
+          </div>
+          <button class="px-3 py-1.5 rounded-lg gradient-bg text-white text-xs font-medium hover:opacity-90 transition" onclick="Toast.info('RFID Scan', 'Activating reader')">Scan Barcode</button>
+        </div>
+
+        <div class="glass rounded-xl overflow-hidden">
+          <table class="w-full text-xs">
+            <thead>
+              <tr class="text-left text-gray-400 border-b border-white/5 bg-white/5">
+                <th class="px-4 py-2 font-medium">Member</th>
+                <th class="px-4 py-2 font-medium">Item</th>
+                <th class="px-4 py-2 font-medium">Checkout Date</th>
+                <th class="px-4 py-2 font-medium">Due Date</th>
+                <th class="px-4 py-2 font-medium">Status</th>
+                <th class="px-4 py-2 font-medium">Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-row border-b border-white/5">
+                <td class="px-4 py-3 text-white font-medium">Sarah Chen (#M-4821)</td>
+                <td class="px-4 py-3 text-gray-300">The Architecture of Knowledge</td>
+                <td class="px-4 py-3 text-gray-400">Jul 10, 2026</td>
+                <td class="px-4 py-3 text-gray-400">Aug 10, 2026</td>
+                <td class="px-4 py-3"><span class="badge badge-success scale-90">Active</span></td>
+                <td class="px-4 py-3"><button class="text-amber-400 hover:underline" onclick="Toast.success('Renewed', 'Loan extended to Sep 10')">Renew</button></td>
+              </tr>
+              <tr class="table-row border-b border-white/5">
+                <td class="px-4 py-3 text-white font-medium">Marcus Johnson (#M-3294)</td>
+                <td class="px-4 py-3 text-gray-300">Botanica Antiqua</td>
+                <td class="px-4 py-3 text-gray-400">Jun 15, 2026</td>
+                <td class="px-4 py-3 text-rose-400 font-semibold">Jul 15, 2026</td>
+                <td class="px-4 py-3"><span class="badge badge-danger scale-90">Overdue</span></td>
+                <td class="px-4 py-3"><button class="text-amber-400 hover:underline" onclick="Toast.info('Notification', 'Reminder dispatched to Marcus')">Remind</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- NESTED MEMBERS VIEW -->
+      <div id="lo-view-members" class="lo-view">
+        <div class="flex justify-between items-center mb-6">
+          <div>
+            <h2 class="text-2xl font-bold text-white">Members</h2>
+            <p class="text-xs text-gray-400 mt-1">Manage library patrons and registration</p>
+          </div>
+          <button class="px-3 py-1.5 rounded-lg gradient-bg text-white text-xs font-medium hover:opacity-90 transition" onclick="Toast.info('Create', 'Open Patron Registration Modal')">+ Add Member</button>
+        </div>
+        <div class="glass rounded-xl overflow-hidden">
+          <table class="w-full text-xs">
+            <thead>
+              <tr class="text-left text-gray-400 border-b border-white/5 bg-white/5">
+                <th class="px-4 py-2 font-medium">Name</th>
+                <th class="px-4 py-2 font-medium">Card Number</th>
+                <th class="px-4 py-2 font-medium">Membership Type</th>
+                <th class="px-4 py-2 font-medium">Joined</th>
+                <th class="px-4 py-2 font-medium">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-row border-b border-white/5">
+                <td class="px-4 py-3 text-white font-medium">Sarah Chen</td>
+                <td class="px-4 py-3 text-gray-300">#M-4821</td>
+                <td class="px-4 py-3"><span class="badge badge-info scale-90">Student</span></td>
+                <td class="px-4 py-3 text-gray-400">Mar 2024</td>
+                <td class="px-4 py-3"><span class="badge badge-success scale-90">Active</span></td>
+              </tr>
+              <tr class="table-row border-b border-white/5">
+                <td class="px-4 py-3 text-white font-medium">Marcus Johnson</td>
+                <td class="px-4 py-3 text-gray-300">#M-3294</td>
+                <td class="px-4 py-3"><span class="badge badge-warning scale-90">Premium</span></td>
+                <td class="px-4 py-3 text-gray-400">Jan 2023</td>
+                <td class="px-4 py-3"><span class="badge badge-danger scale-90">Overdue</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- NESTED DIGITAL LIBRARY VIEW -->
+      <div id="lo-view-digital" class="lo-view">
+        <div class="hero-gradient rounded-2xl p-6 mb-6 relative overflow-hidden">
+          <div class="relative z-10">
+            <span class="badge badge-info">DIGITAL REPOSITORY</span>
+            <h2 class="text-3xl font-bold text-white mb-2 mt-2">Digital Library</h2>
+            <p class="text-xs text-gray-300 max-w-xl">Access thousands of eBooks, audiobooks, journals, and multimedia files. Borrow digitally with automated DRM return loops.</p>
+            <div class="flex gap-2 mt-4">
+              <button class="px-3 py-1.5 rounded-lg gradient-bg text-white text-xs font-semibold" onclick="Toast.info('Library', 'Opening eBooks list')">eBooks</button>
+              <button class="px-3 py-1.5 rounded-lg glass text-white text-xs" onclick="Toast.info('Library', 'Opening Audiobooks list')">Audiobooks</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NESTED ARCHIVES VIEW -->
+      <div id="lo-view-archives" class="lo-view">
+        <div class="mb-6 flex justify-between items-center">
+          <div>
+            <h2 class="text-2xl font-bold text-white">Archives & Manuscripts</h2>
+            <p class="text-xs text-gray-400 mt-1">Preservation vaults and historical documents</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-3 gap-4">
+          <div class="glass rounded-xl p-4">
+            <span class="badge badge-warning scale-90">1847</span>
+            <h3 class="text-sm font-semibold text-white mt-2">Civil War Correspondence</h3>
+            <p class="text-[10px] text-gray-400 mt-1">Letters from Union soldiers, digitized to 89%.</p>
+          </div>
+          <div class="glass rounded-xl p-4">
+            <span class="badge badge-info scale-90">1920s</span>
+            <h3 class="text-sm font-semibold text-white mt-2">City Photographic Archive</h3>
+            <p class="text-[10px] text-gray-400 mt-1">3,421 photos mapping municipal expansion.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- NESTED ACQUISITIONS VIEW -->
+      <div id="lo-view-acquisitions" class="lo-view">
+        <div class="flex justify-between items-center mb-6">
+          <div>
+            <h2 class="text-2xl font-bold text-white">Acquisitions</h2>
+            <p class="text-xs text-gray-400 mt-1">Procurement flow and vendor orders</p>
+          </div>
+        </div>
+        
+        <div class="glass rounded-xl p-6 mb-6">
+          <h3 class="text-sm font-semibold text-white mb-4">Acquisition Pipeline Steps</h3>
+          <div class="flex justify-between text-center items-center text-[10px]">
+            <div class="flex-1"><div class="w-8 h-8 rounded-full gradient-bg mx-auto flex items-center justify-center text-white font-bold">1</div><p class="mt-1">Request</p></div>
+            <div class="flex-1 h-0.5 bg-white/10"></div>
+            <div class="flex-1"><div class="w-8 h-8 rounded-full gradient-purple mx-auto flex items-center justify-center text-white font-bold">2</div><p class="mt-1">Approval</p></div>
+            <div class="flex-1 h-0.5 bg-white/10"></div>
+            <div class="flex-1"><div class="w-8 h-8 rounded-full gradient-blue mx-auto flex items-center justify-center text-white font-bold">3</div><p class="mt-1">Order</p></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NESTED INVENTORY VIEW -->
+      <div id="lo-view-inventory" class="lo-view">
+        <div class="flex justify-between items-center mb-6">
+          <div>
+            <h2 class="text-2xl font-bold text-white">Inventory & RFID Audit</h2>
+            <p class="text-xs text-gray-400 mt-1">Shelf audits and location reconciliation</p>
+          </div>
+        </div>
+        <div class="glass rounded-xl p-4">
+          <h3 class="text-sm font-semibold text-white mb-3">Auditing Matrix (Shelf Blocks)</h3>
+          <div class="grid grid-cols-8 gap-2">
+            <div class="aspect-square rounded bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center text-[10px] text-emerald-400 font-bold">A1</div>
+            <div class="aspect-square rounded bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center text-[10px] text-emerald-400 font-bold">A2</div>
+            <div class="aspect-square rounded bg-amber-500/20 border border-amber-500/30 flex items-center justify-center text-[10px] text-amber-400 font-bold">B1</div>
+            <div class="aspect-square rounded bg-rose-500/20 border border-rose-500/30 flex items-center justify-center text-[10px] text-rose-400 font-bold">B2</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NESTED EVENTS VIEW -->
+      <div id="lo-view-events" class="lo-view">
+        <div class="mb-6 flex justify-between items-center">
+          <div>
+            <h2 class="text-2xl font-bold text-white">Events & Study Rooms</h2>
+            <p class="text-xs text-gray-400 mt-1">Bookings and community reservations</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="glass rounded-xl p-4">
+            <h3 class="text-sm font-semibold text-white mb-2">Upcoming Events</h3>
+            <div class="p-3 rounded bg-white/5 text-xs">
+              <p class="font-bold text-white">Summer Reading Storytime</p>
+              <p class="text-gray-400 text-[10px] mt-0.5">Today at 6:00 PM</p>
+            </div>
+          </div>
+          <div class="glass rounded-xl p-4">
+            <h3 class="text-sm font-semibold text-white mb-2">Study Rooms</h3>
+            <div class="space-y-2 text-xs">
+              <div class="flex justify-between"><span>Room A (Quiet)</span><span class="text-emerald-400">Available</span></div>
+              <div class="flex justify-between"><span>Room B (Group)</span><span class="text-red-400">Booked</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NESTED FINANCE VIEW -->
+      <div id="lo-view-finance" class="lo-view">
+        <div class="flex justify-between items-center mb-6">
+          <div>
+            <h2 class="text-2xl font-bold text-white">Finance</h2>
+            <p class="text-xs text-gray-400 mt-1">Fines, membership ledgers, and acquisitions budget</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-3 gap-4">
+          <div class="col-span-2 glass rounded-xl p-4 h-[240px] flex flex-col">
+            <h3 class="text-sm font-semibold text-white mb-2">Revenue Streams</h3>
+            <div class="flex-1 min-h-0">
+              <canvas id="lo-revenueChart"></canvas>
+            </div>
+          </div>
+          <div class="glass rounded-xl p-4">
+            <h3 class="text-sm font-semibold text-white mb-3">Expenses</h3>
+            <div class="space-y-2 text-xs">
+              <div><span>Books ($42,180)</span><div class="h-1 bg-white/5"><div class="h-full bg-amber-500" style="width: 43%"></div></div></div>
+              <div><span>Salaries ($28,400)</span><div class="h-1 bg-white/5"><div class="h-full bg-purple-500" style="width: 29%"></div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NESTED AI VIEW -->
+      <div id="lo-view-ai" class="lo-view h-[calc(100vh-10rem)] flex flex-col">
+        <div class="flex-1 min-h-0 flex flex-col border border-white/5 rounded-xl bg-white/5 overflow-hidden">
+          <div class="p-3 border-b border-white/5 bg-white/5 flex items-center justify-between">
+            <span class="text-xs font-semibold text-white">WWB Library AI Terminal</span>
+            <span class="text-[10px] text-emerald-400">● Core Node Online</span>
+          </div>
+          
+          <div id="lo-chatMessages" class="flex-1 overflow-y-auto p-4 space-y-3 scrollbar-hide">
+            <div class="chat-bubble flex gap-2 text-xs">
+              <div class="w-6 h-6 rounded bg-purple-500 flex items-center justify-center flex-shrink-0 text-white font-bold text-[10px]">AI</div>
+              <div class="glass-light rounded-lg p-3 max-w-xl">
+                <p>Welcome Elena! I can perform semantic catalog queries, run circulation forecast models, and handle late fine notifications. Type one of the recommendations below or ask your own question.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="p-3 border-t border-white/5 bg-white/5 flex flex-col gap-2">
+            <div class="flex gap-2 overflow-x-auto scrollbar-hide py-1">
+              <button onclick="LibraryOS.sendAiMessage('Find books on Roman architecture published after 2018')" class="px-2.5 py-1 rounded-lg glass text-[10px] whitespace-nowrap hover:bg-white/10">🏛️ Roman architecture post-2018</button>
+              <button onclick="LibraryOS.sendAiMessage('What are the top 5 most borrowed books this month?')" class="px-2.5 py-1 rounded-lg glass text-[10px] whitespace-nowrap hover:bg-white/10">📊 Top borrowed books</button>
+              <button onclick="LibraryOS.sendAiMessage('Show me overdue items and suggest actions')" class="px-2.5 py-1 rounded-lg glass text-[10px] whitespace-nowrap hover:bg-white/10">⚠️ Overdue analysis</button>
+            </div>
+            <div class="flex gap-2">
+              <input id="lo-aiInput" type="text" placeholder="Ask LibraryOS AI anything..." class="flex-1 px-3 py-1.5 rounded-lg text-xs" onkeypress="if(event.key==='Enter')LibraryOS.sendAiMessage(document.getElementById('lo-aiInput').value)">
+              <button onclick="LibraryOS.sendAiMessage(document.getElementById('lo-aiInput').value)" class="px-4 py-1.5 rounded-lg gradient-purple text-white text-xs font-semibold hover:opacity-90">Ask</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NESTED ANALYTICS VIEW -->
+      <div id="lo-view-analytics" class="lo-view">
+        <div class="flex justify-between items-center mb-6">
+          <div>
+            <h2 class="text-2xl font-bold text-white">Analytics</h2>
+            <p class="text-xs text-gray-400 mt-1">Platform KPIs and dashboard reports</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 h-[240px] mb-6">
+          <div class="glass rounded-xl p-4 flex flex-col">
+            <h3 class="text-xs font-semibold text-white mb-2">Loans by Branch</h3>
+            <div class="flex-1 min-h-0"><canvas id="lo-branchChart"></canvas></div>
+          </div>
+          <div class="glass rounded-xl p-4 flex flex-col">
+            <h3 class="text-xs font-semibold text-white mb-2">Member Growth Curve</h3>
+            <div class="flex-1 min-h-0"><canvas id="lo-memberChart"></canvas></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NESTED RESEARCH VIEW -->
+      <div id="lo-view-research" class="lo-view">
+        <div class="hero-gradient rounded-xl p-6 mb-6">
+          <span class="badge badge-info scale-90">INTELLIGENCE NODE</span>
+          <h2 class="text-2xl font-bold text-white mt-1">Academic Research Portal</h2>
+          <p class="text-xs text-gray-300 mt-1">Direct API pipelines into JSTOR, arXiv, CrossRef, and PubMed registries.</p>
+        </div>
+        <div class="grid grid-cols-4 gap-3 mb-6">
+          <div class="glass p-3 rounded-lg text-center"><p class="text-xs font-bold text-white">JSTOR</p><span class="text-[9px] text-emerald-400">● Connected</span></div>
+          <div class="glass p-3 rounded-lg text-center"><p class="text-xs font-bold text-white">arXiv</p><span class="text-[9px] text-emerald-400">● Connected</span></div>
+          <div class="glass p-3 rounded-lg text-center"><p class="text-xs font-bold text-white">CrossRef</p><span class="text-[9px] text-emerald-400">● Connected</span></div>
+          <div class="glass p-3 rounded-lg text-center"><p class="text-xs font-bold text-white">PubMed</p><span class="text-[9px] text-emerald-400">● Connected</span></div>
+        </div>
+      </div>
+
+      <!-- NESTED BRANCHES VIEW -->
+      <div id="lo-view-branches" class="lo-view">
+        <div class="mb-6 flex justify-between items-center">
+          <div>
+            <h2 class="text-2xl font-bold text-white">Branches</h2>
+            <p class="text-xs text-gray-400 mt-1">Manage physical locations and capacities</p>
+          </div>
+        </div>
+        <div class="grid grid-cols-3 gap-4">
+          <div class="glass p-4 rounded-xl">
+            <span class="badge badge-success scale-90">Main</span>
+            <h3 class="text-sm font-semibold text-white mt-2">Central Branch</h3>
+            <p class="text-[10px] text-gray-400">123 Main Street · Collection: 24.5k</p>
+          </div>
+          <div class="glass p-4 rounded-xl">
+            <span class="badge badge-info scale-90">Branch</span>
+            <h3 class="text-sm font-semibold text-white mt-2">Westside Branch</h3>
+            <p class="text-[10px] text-gray-400">456 Oak Avenue · Collection: 12.4k</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- NESTED SETTINGS VIEW -->
+      <div id="lo-view-settings" class="lo-view">
+        <h2 class="text-2xl font-bold text-white mb-6">Settings</h2>
+        <div class="grid grid-cols-3 gap-4">
+          <div class="glass p-4 rounded-xl cursor-pointer hover:bg-white/5 transition" onclick="Toast.info('Settings', 'Configure security and API keys')">
+            <h3 class="text-sm font-semibold text-white">Security & API Keys</h3>
+            <p class="text-[10px] text-gray-400 mt-1">Configure credentials and DRM sync tokens</p>
+          </div>
+          <div class="glass p-4 rounded-xl cursor-pointer hover:bg-white/5 transition" onclick="Toast.info('Settings', 'Configure multi-branch sync policy')">
+            <h3 class="text-sm font-semibold text-white">Branch Coordination</h3>
+            <p class="text-[10px] text-gray-400 mt-1">Configure inter-library collection sync routes</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>

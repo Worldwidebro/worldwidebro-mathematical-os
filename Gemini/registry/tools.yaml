@@ -1,0 +1,46 @@
+tools:
+- id: grep_search
+  name: Ripgrep Search
+  mcp_server: Filesystem
+  description: Performs ripgrep pattern match searches inside files or directories.
+  status: Active
+- id: replace_file_content
+  name: Replace File Content
+  mcp_server: Filesystem
+  description: Edits a single contiguous block of code or text in a file.
+  status: Active
+- id: run_command
+  name: Terminal Command Execution
+  mcp_server: Filesystem
+  description: Executes commands in zsh on mac. Sandboxed by default.
+  status: Active
+- id: view_file
+  name: View File Content
+  mcp_server: Filesystem
+  description: Read file lines or inspect image/pdf/video/audio assets.
+  status: Active
+- id: write_to_file
+  name: Write File Content
+  mcp_server: Filesystem
+  description: Creates new files or overwrites existing ones with metadata updates.
+  status: Active
+- id: navigate
+  name: Browse Navigate
+  mcp_server: BrowserClaw
+  description: Navigates BrowserClaw to a specific URL.
+  status: Active
+- id: tabs
+  name: Browse Tabs Manager
+  mcp_server: BrowserClaw
+  description: Lists open tabs and allows selecting or closing them.
+  status: Active
+- id: snapshot
+  name: Browse Page Snapshot
+  mcp_server: BrowserClaw
+  description: Retrieves the text contents of the active tab converted to Markdown.
+  status: Active
+- id: screenshot
+  name: Page Screenshot
+  mcp_server: BrowserClaw
+  description: Captures visual images of the active browser viewport.
+  status: Active

@@ -96,6 +96,24 @@
       "sourceType": "github",
       "skillPath": "skills/qdrant-clients-sdk/SKILL.md",
       "computedHash": "58df9c656977780dd62db051ab81d84639acf0ead3cce162e765456fb3167c91"
+    },
+    "stripe-integration": {
+      "source": "davila7/claude-code-templates",
+      "sourceType": "github",
+      "skillPath": "cli-tool/components/skills/development/stripe-integration/SKILL.md",
+      "computedHash": "7230335329ff348a36cba10eed1c1bde69815cb7bf5b670b3fc464760ecec830"
+    },
+    "supabase-database": {
+      "source": "nice-wolf-studio/claude-code-supabase-skills",
+      "sourceType": "github",
+      "skillPath": "skills/supabase-database/SKILL.md",
+      "computedHash": "280ad66f1b1358318d84be7b6e9657233ace517ae4b9b2f0e9beb30f61242def"
+    },
+    "template-saas-app": {
+      "source": "duck4nh/antigravity-kit",
+      "sourceType": "github",
+      "skillPath": "templates/.agents/skills/template-saas-app/SKILL.md",
+      "computedHash": "0b01198a6b9330141e257a0a67ef9f532c8ec5c7d4798242ce9a456aaec34bd8"
     }
   }
 }

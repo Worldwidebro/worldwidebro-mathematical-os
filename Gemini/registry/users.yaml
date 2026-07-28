@@ -1,0 +1,21 @@
+users:
+- id: alex-kowalski
+  name: Alex Kowalski
+  role: Chief Executive Officer (CEO)
+  email: alex@worldwidebro.co
+  status: Active
+- id: sys-operator
+  name: System Operator
+  role: Root System Administrator
+  email: operator@iza-os.net
+  status: Active
+- id: claude-architect
+  name: Claude Architect
+  role: Autonomous AI Systems Engineer
+  email: claude.arch@agents.iza-os.net
+  status: Active
+- id: mary-analyst
+  name: Mary Analyst
+  role: Autonomous Data & Business Analyst
+  email: mary.ana@agents.iza-os.net
+  status: Active

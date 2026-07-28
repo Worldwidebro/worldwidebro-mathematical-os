@@ -52,7 +52,16 @@
       "Write(.planning/*)",
       "Read(STATE.md)",
       "Write(STATE.md)",
-      "Bash(npm list *)"
+      "Bash(npm list *)",
+      "Bash(mkdir -p /Volumes/LaCie/ollama-models)",
+      "Bash(export OLLAMA_MODELS=/Volumes/LaCie/ollama-models)",
+      "Bash(ollama pull *)",
+      "Bash(npx skills *)",
+      "Bash(vercel deploy *)",
+      "Bash(grep -E \"\\\\.\\(ts|js|py|json\\)$\")",
+      "Bash(docker compose *)",
+      "Bash(git push *)",
+      "Bash(grep -E \"\\\\.\\(csv|json|md\\)$\")"
     ],
     "deny": [
       "Read(.env)",

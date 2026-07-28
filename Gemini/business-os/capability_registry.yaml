@@ -1,0 +1,141 @@
+# IZA OS Capability Registry
+# Maps abstract capabilities to reference repositories for code assembly.
+
+capabilities:
+  - name: storefront
+    type: frontend
+    description: "Customer-facing catalog, shopping cart, and product display."
+    repos:
+      - medusa
+      - saleor
+      - vendure
+      - woo-commerce
+
+  - name: payments
+    type: financial
+    description: "Gateway integration, subscription managers, and ledger sync."
+    repos:
+      - stripe
+      - killbill
+      - chargebee
+
+  - name: inventory
+    type: operations
+    description: "Product stock logs, purchase orders, and supplier maps."
+    repos:
+      - erpnext
+      - odoo
+      - inventree
+
+  - name: authentication
+    type: security
+    description: "Identity provider, JWT signer, and role-based permissions."
+    repos:
+      - keycloak
+      - auth0
+      - supabase-auth
+      - clerk
+
+  - name: dashboard
+    type: frontend
+    description: "Operational view, charts, filters, and admin controls."
+    repos:
+      - nextjs-admin-dashboard
+      - admin-lte
+      - shadcn-ui
+
+  - name: monitoring
+    type: infrastructure
+    description: "Liveliness check, trace logging, and alerting systems."
+    repos:
+      - prometheus
+      - grafana
+      - open-telemetry
+
+  - name: graph
+    type: database
+    description: "Knowledge maps, semantic joins, and Cypher executions."
+    repos:
+      - neo4j-community
+      - memgraph
+      - falkordb
+
+  - name: rag
+    type: llm
+    description: "Vector search, knowledge base recall, and embeddings."
+    repos:
+      - llamaindex
+      - langchain-rag
+      - langfuse-rag-eval
+
+  - name: search
+    type: web
+    description: "Web crawler, Tavily queries, and site index builders."
+    repos:
+      - tavily-search-cli
+      - scrapy-crawler
+      - searxng
+
+  - name: scheduling
+    type: operations
+    description: "Cron jobs, time slots, worker queues, and calendars."
+    repos:
+      - bullmq
+      - celery-scheduler
+      - temporal-worker
+
+  - name: notifications
+    type: communication
+    description: "SMS, email triggers, Slack notifications, and Twilio gateways."
+    repos:
+      - novu
+      - courier
+      - sendgrid-wrapper
+
+  - name: ocr
+    type: machine-learning
+    description: "Document scanners, receipt parsers, and PDF line readers."
+    repos:
+      - tesseract-ocr
+      - paddle-ocr
+      - azure-form-recognizer
+
+  - name: crm
+    type: operations
+    description: "Lead pipelines, company tracker database, and contact logs."
+    repos:
+      - twenty-crm
+      - suite-crm
+      - nocodb-crm
+
+  - name: analytics
+    type: financial
+    description: "Metric aggregations, cash flows, and spreadsheet calculators."
+    repos:
+      - openbb-finance
+      - pandas-analytics
+      - clickhouse-olap
+
+  - name: automation
+    type: operations
+    description: "Node workflows, Webhook listeners, and API triggers."
+    repos:
+      - n8n
+      - activepieces
+      - temporal-workflows
+
+  - name: devtools
+    type: technology
+    description: "Codebase compiler, parser, Linter, and builder gates."
+    repos:
+      - gitnexus-cli
+      - code-graph-scanner
+      - ruff-linter
+
+  - name: forms
+    type: frontend
+    description: "Lead signup fields, waitlist collectors, customer survey forms."
+    repos:
+      - react-hook-form
+      - formik
+      - typeform-clone

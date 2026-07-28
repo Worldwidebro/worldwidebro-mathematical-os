@@ -1,0 +1,21 @@
+events:
+- id: venture_spawned
+  name: Venture Spawned Event
+  payload: { venture_id, sector, location, status, timestamp }
+  description: Broadcasts the creation and initialization of a new portfolio company.
+  status: Active
+- id: deployment_started
+  name: Deployment Process Started
+  payload: { repo_id, environment, git_hash, actor }
+  description: Triggers Docker orchestrations and site compiler templates updates.
+  status: Active
+- id: alert_triggered
+  name: System Alert Triggered
+  payload: { severity, component, message, error_stack }
+  description: Sent when server errors, DB latency peaks, or network exceptions occur.
+  status: Active
+- id: cost_limit_exceeded
+  name: Budget Threshold Alert
+  payload: { agent_id, budget_limit, spend_ytd, trace_url }
+  description: Fires immediately when an agent exceeds their allocated run tokens or dollar costs.
+  status: Active

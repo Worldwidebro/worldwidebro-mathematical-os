@@ -1,0 +1,31 @@
+schemas:
+- id: agent_executions
+  name: Agent Executions Log
+  database: PostgreSQL / Supabase
+  description: Table tracking execution IDs, agent names, token counts, run status, and performance metrics.
+  status: Active
+- id: policy_decisions
+  name: Policy Decisions Journal
+  database: PostgreSQL / Supabase
+  description: Record of transactions, spending amounts, approval stages, and signatures.
+  status: Active
+- id: ventures_registry
+  name: Ventures Registry Portfolios
+  database: PostgreSQL / Supabase
+  description: Master registry table storing venture IDs, names, sectors, funding stages, and owner tags.
+  status: Active
+- id: graph_entities
+  name: Neo4j Synced Graph Entities
+  database: PostgreSQL / Neo4j
+  description: Mirror database table storing Node labels, names, and internal attributes.
+  status: Active
+- id: graph_relationships
+  name: Neo4j Synced Graph Edges
+  database: PostgreSQL / Neo4j
+  description: Mirror database table storing relationship types and directional pointers.
+  status: Active
+- id: twenty_crm_leads
+  name: Twenty CRM Leads Layout
+  database: PostgreSQL / CRM
+  description: Lead and contact cards with enrichment, scoring, and workflow ownership flags.
+  status: Active

@@ -1,0 +1,31 @@
+workflows:
+- id: email-auto-responder
+  name: Email Auto Responder Flow
+  trigger: Webhook / IMAP
+  description: Automates drafts and replies to incoming customer inquiries based on sentiment scores.
+  status: Active
+- id: meeting-assistant
+  name: Meeting Assistant Flow
+  trigger: Scheduled Cron
+  description: Compiles calendar events, schedules meetings, and prepares outlines/agenda.
+  status: Active
+- id: lead-scorer
+  name: Lead Score Pipeline
+  trigger: Webhook from landing pages
+  description: Ingests user contacts into Twenty CRM, scores fit metrics, and assigns leads to outreach agents.
+  status: Active
+- id: venture-factory-compiler
+  name: Venture Factory Compiler
+  trigger: CLI Command
+  description: Automatically triggers site compilation, schema creation, and database records provisioning.
+  status: Active
+- id: rag-ingestion
+  name: RAG GraphRAG Ingestion
+  trigger: File Change Trigger
+  description: Scans Obsidian vault markdown and commits embeddings to Qdrant, linking nodes in Neo4j.
+  status: Active
+- id: stripe-sync
+  name: Stripe Revenue Ledger Sync
+  trigger: Stripe Event Webhook
+  description: Ingests completed stripe checkouts into the Postgres treasury ledger database.
+  status: Active

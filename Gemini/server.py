@@ -10,12 +10,17 @@ import csv
 from urllib.parse import urlparse, parse_qs
 import threading
 import time
-from reportlab.lib.pagesizes import letter
-from reportlab.lib import colors
-from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle
-from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 
-PORT = 8000
+try:
+    from reportlab.lib.pagesizes import letter
+    from reportlab.lib import colors
+    from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, TableStyle
+    from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
+    HAS_REPORTLAB = True
+except ImportError:
+    HAS_REPORTLAB = False
+
+PORT = 8085
 WORKSPACE_DIR = "/Users/acebless/Documents"
 GEMINI_DIR = os.path.join(WORKSPACE_DIR, "Gemini")
 REGISTRIES_DIR = os.path.join(WORKSPACE_DIR, "WORLDWIDEBRO-OS/08-DATA/registries")
@@ -58,6 +63,32 @@ class OperationsHTTPHandler(http.server.SimpleHTTPRequestHandler):
             self.handle_get_yaml_registry("frameworks.yaml")
         elif path == "/api/registry/models":
             self.handle_get_yaml_registry("models.yaml")
+        elif path == "/api/registry/capability_registry":
+            self.handle_get_yaml_registry("capability_registry.yaml")
+        elif path == "/api/registry/skills":
+            self.handle_get_yaml_registry("skills.yaml")
+        elif path == "/api/registry/mcp_servers":
+            self.handle_get_yaml_registry("mcp_servers.yaml")
+        elif path == "/api/registry/tools":
+            self.handle_get_yaml_registry("tools.yaml")
+        elif path == "/api/registry/workflows":
+            self.handle_get_yaml_registry("workflows.yaml")
+        elif path == "/api/registry/prompts":
+            self.handle_get_yaml_registry("prompts.yaml")
+        elif path == "/api/registry/policies":
+            self.handle_get_yaml_registry("policies.yaml")
+        elif path == "/api/registry/schemas":
+            self.handle_get_yaml_registry("schemas.yaml")
+        elif path == "/api/registry/events":
+            self.handle_get_yaml_registry("events.yaml")
+        elif path == "/api/registry/knowledge":
+            self.handle_get_yaml_registry("knowledge.yaml")
+        elif path == "/api/registry/ventures":
+            self.handle_get_yaml_registry("ventures.yaml")
+        elif path == "/api/registry/users":
+            self.handle_get_yaml_registry("users.yaml")
+        elif path == "/api/registry/feature_flags":
+            self.handle_get_yaml_registry("feature_flags.yaml")
         elif path == "/api/graph/data":
             self.handle_get_graph_data()
         elif path == "/api/courses":
@@ -312,8 +343,12 @@ class OperationsHTTPHandler(http.server.SimpleHTTPRequestHandler):
     def handle_post_outreach(self, body):
         try:
             import subprocess
+            script_path = "/Users/acebless/Documents/WORLDWIDEBRO-OS/04-OPERATIONS/compile_outreach.py"
+            if not os.path.exists(script_path):
+                script_path = "/Users/acebless/Documents/Gemini/scripts/generate_outbound_campaign.py"
+            
             result = subprocess.run(
-                ["python3", "/Users/acebless/Documents/WORLDWIDEBRO-OS/04-OPERATIONS/compile_outreach.py"],
+                ["python3", script_path],
                 capture_output=True,
                 text=True,
                 check=True
@@ -334,8 +369,12 @@ class OperationsHTTPHandler(http.server.SimpleHTTPRequestHandler):
             
         try:
             import subprocess
+            script_path = "/Users/acebless/Documents/WORLDWIDEBRO-OS/04-OPERATIONS/compile_playbook_pdf.py"
+            if not os.path.exists(script_path):
+                script_path = "/Users/acebless/Documents/Gemini/scripts/converter.py"
+                
             result = subprocess.run(
-                ["python3", "/Users/acebless/Documents/WORLDWIDEBRO-OS/04-OPERATIONS/compile_playbook_pdf.py", venture_dir, output_path],
+                ["python3", script_path, venture_dir, output_path],
                 capture_output=True,
                 text=True,
                 check=True
@@ -355,19 +394,23 @@ class OperationsHTTPHandler(http.server.SimpleHTTPRequestHandler):
             
         try:
             import subprocess
+            script_path = "/Users/acebless/Documents/WORLDWIDEBRO-OS/05-AGENTS/orchestration/omni_route.py"
+            if not os.path.exists(script_path):
+                script_path = "/Users/acebless/Documents/Gemini/scripts/omni_route.py"
+                
             if mode == "logistics":
                 source = body.get("source")
                 destination = body.get("destination")
                 if not source or not destination:
                     self.send_json_response(400, {"error": "Missing 'source' or 'destination' parameter for logistics"})
                     return
-                cmd = ["python3", "/Users/acebless/Documents/WORLDWIDEBRO-OS/05-AGENTS/orchestration/omni_route.py", "logistics", source, destination]
+                cmd = ["python3", script_path, "logistics", source, destination]
             elif mode == "balance":
                 task_type = body.get("task_type")
                 if not task_type:
                     self.send_json_response(400, {"error": "Missing 'task_type' parameter for balance"})
                     return
-                cmd = ["python3", "/Users/acebless/Documents/WORLDWIDEBRO-OS/05-AGENTS/orchestration/omni_route.py", "balance", task_type]
+                cmd = ["python3", script_path, "balance", task_type]
             else:
                 self.send_json_response(400, {"error": f"Invalid mode: {mode}"})
                 return
@@ -386,6 +429,9 @@ class OperationsHTTPHandler(http.server.SimpleHTTPRequestHandler):
             self.send_json_response(500, {"error": f"OmniRoute routing failed: {str(e)}"})
 
     def handle_post_pdf(self, body):
+        if not HAS_REPORTLAB:
+            self.send_json_response(500, {"error": "PDF generation requires 'reportlab' package which is not installed in the environment."})
+            return
         try:
             pdf_path = os.path.join(GEMINI_DIR, "reports/capabilities_report.pdf")
             doc = SimpleDocTemplate(pdf_path, pagesize=letter)
@@ -512,6 +558,9 @@ class OperationsHTTPHandler(http.server.SimpleHTTPRequestHandler):
             return
             
         leads_dir = os.path.join(WORKSPACE_DIR, "WORLDWIDEBRO-OS/08-DATA/leads")
+        # Fallback if symlink is broken
+        if not os.path.exists(os.path.dirname(leads_dir)) or not os.path.isdir(os.path.dirname(leads_dir)):
+            leads_dir = os.path.join(GEMINI_DIR, "leads")
         os.makedirs(leads_dir, exist_ok=True)
         leads_file = os.path.join(leads_dir, "waitlist_leads.csv")
         

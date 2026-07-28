@@ -1,0 +1,46 @@
+skills:
+- id: a11y-debugging
+  name: accessibility-debugging
+  category: UI/UX Testing
+  description: Audits web page accessibility according to WCAG/web.dev guidelines using Chrome DevTools MCP.
+  status: Active
+- id: chrome-devtools
+  name: chrome-devtools-debugging
+  category: Debugging
+  description: Direct Chrome browser debugging, automation, and console monitoring via MCP.
+  status: Active
+- id: modern-web-guidance
+  name: modern-web-guidance
+  category: Frontend Guidelines
+  description: Best practice search engine for layout, scroll, motion, performance, and Web APIs.
+  status: Active
+- id: obsidian-vault
+  name: obsidian-vault-connector
+  category: Knowledge Management
+  description: Indexes, creates, and queries notes inside Obsidian using wikilinks and tags.
+  status: Active
+- id: supabase
+  name: supabase-database-ops
+  category: Backend & DB
+  description: Configures tables, triggers, auth settings, row-level security, and migrations.
+  status: Active
+- id: getting-started
+  name: crewai-flow-starter
+  category: AI Scaffolding
+  description: Orchestrates workflow foundations, flow YAML configurations, and CrewAI classes.
+  status: Active
+- id: design-agent
+  name: crewai-agent-designer
+  category: AI Orchestration
+  description: Customizes agent roles, backstories, models, iteration thresholds, and guardrails.
+  status: Active
+- id: design-task
+  name: crewai-task-designer
+  category: AI Orchestration
+  description: Structured task designer supporting pydantic validation schemas and asynchronous hooks.
+  status: Active
+- id: ask-docs
+  name: crewai-docs-qa
+  category: Documentation
+  description: Context retrieval interface for CrewAI official frameworks, APIs, and updates.
+  status: Active

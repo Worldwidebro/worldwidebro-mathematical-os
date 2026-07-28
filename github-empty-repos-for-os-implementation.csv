@@ -1,0 +1,19 @@
+repo_name,github_url,disk_mb,last_pushed,repo_age_days,sector,intended_use,implementation_status,priority,action_required,notes
+iza-os-computer-vision,https://github.com/Worldwidebro/iza-os-computer-vision,0,2026-04-16,101,TECH,Vision OS expansion,skeleton,high,populate with ComfyUI/vision models,Already named iza-os-*; ready to implement
+iza-os-customer-core,https://github.com/Worldwidebro/iza-os-customer-core,0,2026-04-16,101,TECH,Customer data layer,skeleton,high,populate with customer graph schema,Already named iza-os-*; critical for ventures
+iza-os-knowledge-graph,https://github.com/Worldwidebro/iza-os-knowledge-graph,2,2026-04-16,101,TECH,Knowledge graph expansion,partial,high,expand Neo4j schema queries,Has skeleton; merge consideration with rag-system
+iza-os-ai-orchestration,https://github.com/Worldwidebro/iza-os-ai-orchestration,1,2026-04-16,101,TECH,Multi-agent coordination,partial,high,agent routing + task orchestration,Critical for venture agent dispatch
+callitwhatyouwant,https://github.com/Worldwidebro/callitwhatyouwant,0,2026-07-17,9,VOICE,iza-os-voice-core implementation,empty,high,rename + implement voice routing IVR,Recent activity (Jul 17); good candidate for voice-os
+ace-community-impact-templates,https://github.com/Worldwidebro/ace-community-impact-templates,0,2026-04-16,101,COMM,Community OS foundation,empty,medium,archive or implement as iza-os-community-core,Template repo; could become sector OS
+ace-ecommerce-templates,https://github.com/Worldwidebro/ace-ecommerce-templates,0,2026-04-16,101,EC,E-commerce template library,empty,medium,archive or consolidate,Template repo; consider deletion
+civilization-website,https://github.com/Worldwidebro/civilization-website,0,2026-04-16,101,TECH,Dashboard template,empty,low,delete or populate,Dashboard template; unclear purpose
+fh-014-cloud-kitchen,https://github.com/Worldwidebro/fh-014-cloud-kitchen,0,2026-04-16,101,FH,FH-014 venture skeleton,empty,low,either launch venture or archive,Food/hospitality venture stub
+fh-023-bakery---pastry-shop,https://github.com/Worldwidebro/fh-023-bakery---pastry-shop,0,2026-04-16,101,FH,FH-023 venture skeleton,empty,low,either launch venture or archive,Food/hospitality venture stub
+consult-001-venture-consulting,https://github.com/Worldwidebro/consult-001-venture-consulting,1,2026-04-16,101,CONSULT,CONSULT-001 venture skeleton,empty,low,either launch venture or archive,Consulting venture stub
+ins-001-venture-insurance,https://github.com/Worldwidebro/ins-001-venture-insurance,1,2026-04-16,101,INS,INS-001 venture skeleton,empty,low,either launch venture or archive,Insurance venture stub
+email-design-os,https://github.com/Worldwidebro/email-design-os,4,2026-07-25,1,MARK,Marketing templates + operations,partial,medium,populate or merge with iza-os-marketing-core,Recent activity (Jul 25); expand to full MARK OS
+iza-os-financial-core,https://github.com/Worldwidebro/iza-os-financial-core,2,2026-07-23,3,FIN,Financial operations duplicate,skeleton,high,consolidate with iza-os-finance-core,Duplicate; clarify canonical version
+iza-os-education-core,https://github.com/Worldwidebro/iza-os-education-core,2,2026-07-23,3,EDU,Education OS content expansion,partial,high,add curriculum + student tracking,Has skeleton; active but needs content
+iza-os-staffing-core,https://github.com/Worldwidebro/iza-os-staffing-core,2,2026-07-23,3,STA,Staffing OS feature expansion,partial,high,add payroll + matching algorithms,Has skeleton; active but incomplete
+iza-os-finance-core,https://github.com/Worldwidebro/iza-os-finance-core,2,2026-07-23,3,FIN,Finance OS core operations,partial,high,consolidate duplicates + expand,Duplicate issue; clarify canonical
+iza-os-construction-core,https://github.com/Worldwidebro/iza-os-construction-core,2,2026-07-24,2,CON,Construction OS deal automation,partial,high,expand contract + payment + scoring,Recent updates; core for CON ventures
