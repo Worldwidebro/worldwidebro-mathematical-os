@@ -1,0 +1,11 @@
+id,name,url,venture_id,language,purpose,owner,last_commit_date
+documenso,documenso,https://github.com/documenso/documenso,,TypeScript,,documenso,
+plane,plane,https://github.com/makeplane/plane,,TypeScript,,makeplane,
+excalidraw,excalidraw,https://github.com/excalidraw/excalidraw,,TypeScript,,excalidraw,
+coolify,coolify,https://github.com/coollabsio/coolify,,PHP,,coollabsio,
+mattermost,mattermost,https://github.com/mattermost/mattermost,,TypeScript,,mattermost,
+langfuse,langfuse,https://github.com/langfuse/langfuse,,TypeScript,,langfuse,
+rabbitmq-server,rabbitmq-server,https://github.com/rabbitmq/rabbitmq-server,,JavaScript,,rabbitmq,
+camunda-platform,camunda-platform,https://github.com/camunda/camunda-platform,,Go,,camunda,
+node-red,node-red,https://github.com/node-red/node-red,,JavaScript,,node-red,
+ollama,ollama,https://github.com/ollama/ollama,,Go,,ollama,

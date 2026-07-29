@@ -1,1 +1,3 @@
 id,name,sector,stage,revenue_usd_monthly,owner,repo_id,created_date,status
+CON-001,Ace Construction,CON,growth,15000,agent-ace-ceo,con-001-ace-construction,2026-05-01,active
+FIN-001,Trading Bot,FIN,MVP,,,,2026-07-01,active

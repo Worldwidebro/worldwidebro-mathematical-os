@@ -8,11 +8,13 @@ the 38 sectors and 884 ventures with their repository relationships.
 import os
 import json
 import sys
+import csv
 from pathlib import Path
 from neo4j import GraphDatabase
 
 # Local Configuration
 ALIGNMENT_FILE = "/Users/acebless/Documents/.claude/worktrees/agent-ac65ac3629807bab2/WORLDWIDEBRO-OS/08-DATA/Influence-Venture-Business-OS/STRATEGY_LAYERS/WORLDWIDEBRO-OS/07_AUTOMATIONS/Configs/AUTO-ALIGNMENT-712.json"
+INDEX_DIR = Path("/Users/acebless/Documents")
 NEO4J_URI = os.getenv("NEO4J_URI", "bolt://localhost:7687")
 NEO4J_USER = os.getenv("NEO4J_USER", "neo4j")
 NEO4J_PASSWORD = os.getenv("NEO4J_PASSWORD", "ventures2026")

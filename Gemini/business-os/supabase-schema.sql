@@ -112,3 +112,66 @@ CREATE INDEX idx_assets_owner ON assets(owner_company_id);
 CREATE INDEX idx_needs_buyer ON needs(buyer_company_id);
 CREATE INDEX idx_deals_status ON deals(status);
 
+-- ============================================================================
+-- AI AGENT LEARNING + CONTEXT LAYER (Phase 1 - 2026-07-28)
+-- ============================================================================
+
+-- 10. AGENT EXECUTION HISTORY (Audit trail + learning)
+CREATE TABLE IF NOT EXISTS agent_execution_history (
+  id TEXT PRIMARY KEY,
+  task_id TEXT NOT NULL,
+  venture_id TEXT REFERENCES ventures(id),
+  agent_id TEXT NOT NULL,
+  skill_id TEXT NOT NULL,
+  input_params JSONB,
+  status TEXT CHECK (status IN ('pending', 'in_progress', 'completed', 'failed')),
+  cost_usd DECIMAL(10,4),
+  duration_seconds INT,
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
+  completed_at TIMESTAMP WITH TIME ZONE
+);
+
+-- 11. AGENT PERFORMANCE METRICS
+CREATE TABLE IF NOT EXISTS agent_performance (
+  id TEXT PRIMARY KEY,
+  agent_id TEXT NOT NULL,
+  venture_id TEXT REFERENCES ventures(id),
+  success_rate DECIMAL(5,4),
+  avg_cost_usd DECIMAL(10,4),
+  total_executions INT DEFAULT 0,
+  successful_executions INT DEFAULT 0,
+  failed_executions INT DEFAULT 0,
+  last_updated TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
+
+-- 12. TASK OUTCOMES
+CREATE TABLE IF NOT EXISTS task_outcomes (
+  id TEXT PRIMARY KEY,
+  task_id TEXT NOT NULL,
+  result_type TEXT CHECK (result_type IN ('success', 'failure', 'partial', 'timeout')),
+  output_data JSONB,
+  metrics JSONB,
+  feedback TEXT,
+  learned_pattern TEXT,
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
+
+-- 13. DECISIONS
+CREATE TABLE IF NOT EXISTS decisions (
+  id TEXT PRIMARY KEY,
+  task_id TEXT NOT NULL,
+  agent_id TEXT NOT NULL,
+  decision_type TEXT CHECK (decision_type IN ('approve', 'reject', 'escalate', 'defer')),
+  rationale TEXT NOT NULL,
+  authority_level TEXT CHECK (authority_level IN ('autonomous', 'monitored', 'training', 'human')),
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
+
+CREATE INDEX IF NOT EXISTS idx_agent_execution_venture ON agent_execution_history(venture_id);
+CREATE INDEX IF NOT EXISTS idx_agent_execution_agent ON agent_execution_history(agent_id);
+CREATE INDEX IF NOT EXISTS idx_agent_execution_status ON agent_execution_history(status);
+CREATE INDEX IF NOT EXISTS idx_agent_performance_agent ON agent_performance(agent_id);
+CREATE INDEX IF NOT EXISTS idx_decisions_task ON decisions(task_id);
+CREATE INDEX IF NOT EXISTS idx_decisions_agent ON decisions(agent_id);
+CREATE INDEX IF NOT EXISTS idx_task_outcomes_task ON task_outcomes(task_id);
+

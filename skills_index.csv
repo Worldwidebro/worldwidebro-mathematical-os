@@ -1,0 +1,3 @@
+id,name,description,parameters,mcp_tool,dependencies
+skill-stripe-payment,Process Stripe Payment,Charge customer via Stripe,"amount_usd, customer_id",mcp-stripe,
+skill-send-email,Send Email,Send email via Resend,"to, subject, body",mcp-resend,
