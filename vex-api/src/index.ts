@@ -7,6 +7,8 @@ import { ventureRouter } from './routes/venture.js';
 import { agentRouter } from './routes/agent.js';
 import { founderRouter } from './routes/founder.js';
 import { seedHumanOS } from './seed-human-os.js';
+import { initGraphSchema } from './knowledge-graph/neo4j-client.js';
+import { seedGraph } from './knowledge-graph/seed-graph.js';
 
 dotenv.config();
 
@@ -33,6 +35,10 @@ app.use('/founders', founderRouter);
 
 // Seed Human OS framework on startup
 seedHumanOS().catch(err => console.warn('Human OS seeding failed:', err));
+
+// Initialize knowledge graph schema and seed OPCOs
+initGraphSchema(neo4j).catch(err => console.warn('Graph schema init failed:', err));
+seedGraph(neo4j).catch(err => console.warn('Graph seeding failed:', err));
 
 // Health check
 app.get('/health', (req, res) => {
