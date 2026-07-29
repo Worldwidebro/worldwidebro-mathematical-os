@@ -108,6 +108,24 @@ def log_to_supabase(packet):
 
 
 def main():
+    # Handle --deploy flag (called by capital-routing.ts)
+    if len(sys.argv) >= 3 and sys.argv[1] == '--deploy':
+        try:
+            payload = json.loads(sys.argv[2])
+            for venture_id in payload.get('ventures', []):
+                trigger = f"Capital Deployment: {payload.get('decision_id', 'unknown')}"
+                packet = build_packet(venture_id, trigger)
+                if "error" not in packet:
+                    print(json.dumps(packet, indent=2))
+                    with open(RUNLOG, "a") as f:
+                        f.write(json.dumps(packet) + "\n")
+                    log_to_supabase(packet)
+            return
+        except json.JSONDecodeError as e:
+            print(f"error: invalid JSON payload: {e}", file=sys.stderr)
+            return
+
+    # Original trigger-based flow
     if len(sys.argv) < 3:
         print(__doc__)
         return
