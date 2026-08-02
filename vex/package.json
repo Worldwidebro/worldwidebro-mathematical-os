@@ -1,0 +1,17 @@
+{
+  "name": "vex-integration",
+  "version": "1.0.0",
+  "description": "Vex platform integration layer - wires $500K infrastructure",
+  "scripts": {
+    "sync:clickup": "node scripts/clickup-sync.js",
+    "sync:neo4j": "node scripts/markdown-to-neo4j.js",
+    "build:dashboard": "node scripts/ceo-dashboard.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.2",
+    "@supabase/supabase-js": "^2.38.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
