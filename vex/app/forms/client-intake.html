@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staffing Service Agreement</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; background: #f5f5f5; }
+        .container { max-width: 800px; margin: 40px auto; background: white; padding: 40px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        h1 { font-size: 24px; margin-bottom: 8px; color: #000; }
+        .subtitle { color: #666; font-size: 14px; margin-bottom: 30px; }
+        .section { margin-bottom: 30px; }
+        .section h2 { font-size: 14px; font-weight: 600; color: #000; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .field-group { margin-bottom: 16px; }
+        label { display: block; font-size: 13px; font-weight: 500; margin-bottom: 6px; color: #333; }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+            font-family: inherit;
+            transition: border-color 0.2s;
+        }
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #0066cc;
+            box-shadow: 0 0 0 3px rgba(0,102,204,0.1);
+        }
+        textarea { resize: vertical; min-height: 100px; }
+        .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+        .three-col { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+        .checkbox-group { margin-top: 12px; }
+        .checkbox-item { display: flex; align-items: center; margin-bottom: 8px; }
+        input[type="checkbox"] { margin-right: 8px; width: 16px; height: 16px; cursor: pointer; }
+        .checkbox-item label { margin: 0; font-weight: 400; }
+        button { background: #0066cc; color: white; padding: 12px 24px; border: none; border-radius: 4px; font-size: 14px; font-weight: 600; cursor: pointer; transition: background 0.2s; }
+        button:hover { background: #0052a3; }
+        .helper { font-size: 12px; color: #666; margin-top: 4px; }
+        .required { color: #d32f2f; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Staffing Service Agreement</h1>
+        <p class="subtitle">Worldwidebro Staffing — Contingency Direct-Hire Model</p>
+
+        <form id="clientIntakeForm">
+            <div class="section">
+                <h2>Company Information</h2>
+                <div class="field-group">
+                    <label>Company Name <span class="required">*</span></label>
+                    <input type="text" name="companyName" required>
+                </div>
+                <div class="two-col">
+                    <div class="field-group">
+                        <label>Industry/Sector <span class="required">*</span></label>
+                        <select name="sector" required>
+                            <option value="">Select sector...</option>
+                            <option value="tech">Technology</option>
+                            <option value="fin">Finance</option>
+                            <option value="con">Construction</option>
+                            <option value="re">Real Estate</option>
+                            <option value="med">Medical/Healthcare</option>
+                            <option value="edu">Education</option>
+                            <option value="legal">Legal</option>
+                            <option value="hr">HR/Staffing</option>
+                            <option value="logistics">Logistics/Supply Chain</option>
+                            <option value="marketing">Marketing/Digital</option>
+                            <option value="sales">Sales/B2B</option>
+                            <option value="manufacturing">Manufacturing</option>
+                            <option value="hospitality">Hospitality</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="field-group">
+                        <label>Company Size <span class="required">*</span></label>
+                        <select name="companySize" required>
+                            <option value="">Select size...</option>
+                            <option value="1-10">1-10 employees</option>
+                            <option value="11-50">11-50 employees</option>
+                            <option value="51-200">51-200 employees</option>
+                            <option value="201-500">201-500 employees</option>
+                            <option value="501+">501+ employees</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="two-col">
+                    <div class="field-group">
+                        <label>Website/LinkedIn</label>
+                        <input type="text" name="website" placeholder="https://...">
+                    </div>
+                    <div class="field-group">
+                        <label>Location (City, State)</label>
+                        <input type="text" name="location">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Primary Contact</h2>
+                <div class="field-group">
+                    <label>Contact Name <span class="required">*</span></label>
+                    <input type="text" name="contactName" required>
+                </div>
+                <div class="two-col">
+                    <div class="field-group">
+                        <label>Title (e.g., Hiring Manager, HR Manager)</label>
+                        <input type="text" name="contactTitle">
+                    </div>
+                    <div class="field-group">
+                        <label>Phone <span class="required">*</span></label>
+                        <input type="tel" name="contactPhone" required>
+                    </div>
+                </div>
+                <div class="field-group">
+                    <label>Email <span class="required">*</span></label>
+                    <input type="email" name="contactEmail" required>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Open Role Details</h2>
+                <div class="field-group">
+                    <label>Job Title <span class="required">*</span></label>
+                    <input type="text" name="jobTitle" placeholder="e.g., Senior Software Engineer" required>
+                </div>
+                <div class="two-col">
+                    <div class="field-group">
+                        <label>Experience Level <span class="required">*</span></label>
+                        <select name="level" required>
+                            <option value="">Select level...</option>
+                            <option value="entry">Entry Level (0-2 years)</option>
+                            <option value="mid">Mid Level (3-5 years)</option>
+                            <option value="senior">Senior (6-10 years)</option>
+                            <option value="lead">Lead/Manager (10+ years)</option>
+                            <option value="executive">Executive/C-Suite</option>
+                        </select>
+                    </div>
+                    <div class="field-group">
+                        <label>Salary Range <span class="required">*</span></label>
+                        <input type="text" name="salaryRange" placeholder="e.g., $50K-$75K" required>
+                    </div>
+                </div>
+                <div class="field-group">
+                    <label>Key Requirements (comma-separated) <span class="required">*</span></label>
+                    <input type="text" name="keyRequirements" placeholder="e.g., Python, AWS, 5+ years backend" required>
+                    <p class="helper">What skills/experience are non-negotiable?</p>
+                </div>
+                <div class="field-group">
+                    <label>Nice-to-Haves (comma-separated)</label>
+                    <input type="text" name="niceToHaves" placeholder="e.g., Leadership experience, startup background">
+                </div>
+                <div class="two-col">
+                    <div class="field-group">
+                        <label>Target Start Date</label>
+                        <input type="date" name="startDate">
+                    </div>
+                    <div class="field-group">
+                        <label>Timeline to Hire <span class="required">*</span></label>
+                        <select name="timeline" required>
+                            <option value="">Select timeline...</option>
+                            <option value="urgent">Urgent (1-2 weeks)</option>
+                            <option value="fast">Fast (2-4 weeks)</option>
+                            <option value="normal">Normal (4-8 weeks)</option>
+                            <option value="flexible">Flexible (8+ weeks)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Interview & Hiring Process</h2>
+                <div class="field-group">
+                    <label>Interview Format</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-item">
+                            <input type="checkbox" name="interviewFormat" value="phone">
+                            <label>Phone screen</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" name="interviewFormat" value="technical">
+                            <label>Technical interview</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" name="interviewFormat" value="panel">
+                            <label>Panel interview</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" name="interviewFormat" value="cultural">
+                            <label>Culture fit interview</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="field-group">
+                    <label>Who Conducts Interviews?</label>
+                    <input type="text" name="interviewers" placeholder="e.g., John (manager), Sarah (team lead)">
+                </div>
+                <div class="field-group">
+                    <label>Additional Requirements</label>
+                    <textarea name="additionalRequirements" placeholder="Background check, drug test, reference checks, etc."></textarea>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Placement Terms</h2>
+                <div class="field-group">
+                    <label>Placement Fee Structure <span class="required">*</span></label>
+                    <p style="margin-bottom: 12px; color: #666; font-size: 13px;">Standard: 20% of first-year salary. Contingency model — you pay only if you hire.</p>
+                    <select name="feeStructure" required>
+                        <option value="20%">20% (Standard contingency)</option>
+                        <option value="25%">25% (Expedited placement)</option>
+                        <option value="custom">Custom (discuss below)</option>
+                    </select>
+                </div>
+                <div class="field-group">
+                    <label>Replacement Guarantee</label>
+                    <select name="guarantee">
+                        <option value="">Select guarantee...</option>
+                        <option value="30days">30-day free replacement</option>
+                        <option value="60days">60-day free replacement</option>
+                        <option value="90days">90-day free replacement</option>
+                        <option value="none">No guarantee (reduced fee)</option>
+                    </select>
+                </div>
+                <div class="field-group">
+                    <label>Special Terms or Notes</label>
+                    <textarea name="specialTerms" placeholder="Any unique arrangements, budget constraints, or preferences..."></textarea>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Agreement</h2>
+                <div class="checkbox-item">
+                    <input type="checkbox" name="agreeTerm" id="agreeTerm" required>
+                    <label for="agreeTerm">I agree to the contingency placement model (pay only on hire)</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" name="agreeNDA" id="agreeNDA">
+                    <label for="agreeNDA">I will sign Worldwidebro Staffing Master Service Agreement (MSA)</label>
+                </div>
+            </div>
+
+            <div class="section">
+                <button type="submit">Complete Intake</button>
+                <p class="helper" style="margin-top: 12px;">Summary will be copied to clipboard.</p>
+            </div>
+        </form>
+    </div>
+
+    <script type="module">
+        import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.38.0/dist/module.mjs';
+
+        const supabase = createClient(
+            'https://cyhzilqldouzgynacqpe.supabase.co',
+            'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImN5aHpsamVsbGd2dXJvd2RhbHJnaCIsInJvbGUiOiJhbm9uIiwiaWF0IjoxNzE5MzAwNjI3LCJleHAiOjE4Nzg0NjY2Mjd9.q2K8J9p8k7m8n9o0p1q2r3s4t5u6v7w8x9y0z1a2b'
+        );
+
+        document.getElementById('clientIntakeForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const data = Object.fromEntries(new FormData(e.target));
+            try {
+                await supabase.from('venture_leads').insert({
+                    venture_id: 'STA-001',
+                    form_type: 'client_intake',
+                    company_name: data.companyName,
+                    contact_person: data.contactName,
+                    email: data.contactEmail,
+                    phone: data.contactPhone,
+                    sector: data.sector,
+                    source: 'web_form',
+                    created_at: new Date().toISOString()
+                });
+                alert('✓ Complete! We\'ll review and contact you soon.');
+                e.target.reset();
+            } catch (err) {
+                alert('Error submitting. Try again or email support.');
+            }
+        });
+    </script>
+</body>
+</html>
