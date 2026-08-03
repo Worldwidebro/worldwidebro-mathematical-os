@@ -1,8 +1,8 @@
 # WorldwideBro Construction OS — 245-Page Implementation Roadmap
 
-**Status:** PHASE 1 IN PROGRESS (15% complete)  
-**Target Launch:** Q4 2026  
-**Last Updated:** 2026-08-03
+**Status:** PHASE 1 IN PROGRESS (50% complete)  
+**Target Launch:** Aug 15 (MVP), Sep 15 (Phase 1 complete)  
+**Last Updated:** 2026-08-03 (Payment flow + SMS complete)
 
 ---
 
@@ -43,9 +43,10 @@ PHASE 5: Enterprise (2027)          [░░░░░░░░░░░░░░�
 - [x] Lead form → Supabase
 - [x] Email alerts to team
 - [x] Lead qualification (AI scoring)
-- [ ] CRM Dashboard (view all leads)
+- [x] SMS alerts to team (Twilio)
+- [ ] CRM Dashboard (view all leads — blocked on CRM choice: ClickUp vs Twenty)
 
-**Status:** 3/4 (75%)
+**Status:** 4/4 (100% SMS added, CRM Dashboard blocked)
 
 ### 3. PAYMENT & CONTRACTS (4 pages)
 - [x] Stripe payment intent
@@ -57,10 +58,10 @@ PHASE 5: Enterprise (2027)          [░░░░░░░░░░░░░░�
 
 ### 4. NOTIFICATIONS (3 pages)
 - [x] Email alerts (Resend)
-- [ ] SMS alerts (Twilio)
+- [x] SMS alerts to team + customers (Twilio)
 - [ ] Slack alerts (optional)
 
-**Status:** 1/3 (33%)
+**Status:** 2/3 (67%)
 
 ### 5. OPERATIONS BASICS (3 pages)
 - [ ] Simple project dashboard
@@ -74,34 +75,33 @@ PHASE 5: Enterprise (2027)          [░░░░░░░░░░░░░░�
 ## BLOCKERS & ISSUES
 
 ### Critical (Blocking Phase 1 completion)
-1. **Supabase schema mismatch** — Webhook tries to update `status` field but schema has `stage` field
-   - Impact: Lead payment updates fail silently
-   - Fix: Align field names OR update webhook logic
-   - Status: IDENTIFIED, NOT FIXED
+1. ✅ **FIXED: Supabase schema mismatch** — Webhook now updates `stage` field correctly
+   - Status: RESOLVED (commit 8e9a923)
 
 2. **Auth/Signing in issue** — User reported issues but no specific details provided
    - Impact: Unknown
-   - Need: Clarification on what's failing (Supabase auth? Form validation? Redirect?)
+   - Need: Clarification on what's failing (Supabase auth? Form validation? Redirect? Login not working?)
    - Status: WAITING FOR DETAILS
 
 3. **CRM choice decision** — ClickUp vs Twenty integration
    - Impact: CRM Dashboard (#2.4) can't be built until tool is chosen
-   - Status: PENDING USER DECISION
+   - Status: PENDING USER DECISION (blocks lead dashboard view)
 
 ### Important (Phase 1 completion)
-4. **SMS alerts not yet built** — Twilio integration needed (#4.2)
-   - Scope: Who gets SMS? Customers or team? On what events?
-   - Status: PENDING CLARIFICATION
+4. ✅ **DONE: SMS alerts** — Twilio integration complete
+   - Team notified on qualified leads
+   - Customers notified on payment success
+   - Status: COMPLETE (commit 720fe9e)
 
 5. **Proposal template missing** — (#3.3)
    - Current: Manual quote via email
    - Need: Template generator or Documenso integration
-   - Status: NOT STARTED
+   - Status: NOT STARTED (low priority, email works for now)
 
 6. **Contract signing** — (#3.4)
    - Option A: Documenso (free tier available)
    - Option B: Simple PDF download + email back
-   - Status: NOT STARTED
+   - Status: NOT STARTED (low priority, customers can sign via email)
 
 ---
 
