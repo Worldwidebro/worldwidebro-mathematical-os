@@ -1,0 +1,17 @@
+{
+  "version": "1.0",
+  "note": "Single source of truth for running services, workflows, agents, tools. Consolidates scattered task runners.",
+  "services": {
+    "postgres": {"status": "running", "host": "localhost", "port": 5432, "role": "source_of_truth"},
+    "ollama": {"status": "running", "host": "localhost", "port": 11434, "role": "local_inference"},
+    "qdrant": {"status": "offline", "host": "localhost", "port": 6333, "role": "vector_search"},
+    "redis": {"status": "offline", "host": "localhost", "port": 6379, "role": "cache"}
+  },
+  "workflows": {
+    "fill_job_order": {"trigger": "job_order.created", "agents": ["JOB_AGENT", "SOURCING_AGENT", "MATCHING_AGENT"]},
+    "employee_call_off": {"trigger": "shift_absence.received", "agents": ["EMPLOYEE_AGENT", "MATCHING_AGENT"]},
+    "timesheet_to_payroll": {"trigger": "timesheet.submitted", "agents": ["TIMESHEET_AGENT", "PAYROLL_AGENT"]}
+  },
+  "agents": ["JOB_AGENT", "SOURCING_AGENT", "MATCHING_AGENT", "SCREENING_AGENT", "ONBOARDING_AGENT", "EMPLOYEE_AGENT", "TIMESHEET_AGENT", "PAYROLL_AGENT", "BILLING_AGENT", "COLLECTIONS_AGENT", "ANALYTICS_AGENT"],
+  "consolidates": ["make-workflows (5 workflows)", "vex-engine", "agent-platform-os/task-queue", "agent-platform-os/dispatch-engine", "n8n (eliminated—agentic replaces)", "scattered task JSON files"]
+}
