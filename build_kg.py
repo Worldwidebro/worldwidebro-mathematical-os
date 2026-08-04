@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import json
 import csv
+import re
 from pathlib import Path
 from neo4j import GraphDatabase
 
@@ -33,7 +34,8 @@ def setup_constraints(session):
         "CREATE CONSTRAINT IF NOT EXISTS FOR (v:Venture) REQUIRE v.id IS UNIQUE",
         "CREATE CONSTRAINT IF NOT EXISTS FOR (f:Founder) REQUIRE f.id IS UNIQUE",
         "CREATE CONSTRAINT IF NOT EXISTS FOR (r:Repository) REQUIRE r.id IS UNIQUE",
-        "CREATE CONSTRAINT IF NOT EXISTS FOR (s:Sector) REQUIRE s.name IS UNIQUE"
+        "CREATE CONSTRAINT IF NOT EXISTS FOR (s:Sector) REQUIRE s.name IS UNIQUE",
+        "CREATE CONSTRAINT IF NOT EXISTS FOR (d:Document) REQUIRE d.id IS UNIQUE"
     ]
     for c in constraints:
         try:
@@ -305,6 +307,135 @@ def populate_relationships(session):
                     
     print(f"Relationships populated: {powers_count} POWERS links, {enables_count} ENABLES links.")
 
+def populate_academy_documents(session):
+    print("Populating Academy Documents from Markdown vault...")
+    docs_dir = WORKSPACE_DIR / "docs" / "agentic-systems"
+    if not docs_dir.exists():
+        print(f"❌ Docs directory {docs_dir} not found!")
+        return
+
+    # Regex to find [[wiki-links]]
+    wiki_link_pattern = re.compile(r'\[\[(.*?)\]\]')
+    
+    count = 0
+    link_count = 0
+    
+    # Traverse directory
+    for file_path in docs_dir.rglob("*.md"):
+        layer = file_path.parent.name
+        slug = file_path.stem.lower()
+        title = file_path.stem.replace("-", " ")
+        rel_path = file_path.relative_to(docs_dir).as_posix()
+        
+        # Read content
+        try:
+            content = file_path.read_text(encoding="utf-8")
+        except Exception as e:
+            print(f"  Error reading {rel_path}: {e}")
+            continue
+            
+        # Parse YAML frontmatter simply
+        metadata = {}
+        aliases = []
+        tags = []
+        
+        fm_match = re.match(r'^---\n(.*?)\n---\n?', content, re.DOTALL)
+        if fm_match:
+            fm_text = fm_match.group(1)
+            lines = fm_text.split('\n')
+            current_key = None
+            for line in lines:
+                line_trimmed = line.strip()
+                if not line_trimmed or line_trimmed.startswith('#'):
+                    continue
+                if line_trimmed.startswith('-'):
+                    # Array item
+                    item_val = line_trimmed[1:].strip().replace('"', '').replace("'", "")
+                    if current_key == 'aliases':
+                        aliases.append(item_val)
+                    elif current_key == 'tags':
+                        tags.append(item_val)
+                    continue
+                
+                colon_idx = line_trimmed.find(':')
+                if colon_idx != -1:
+                    key = line_trimmed[:colon_idx].strip()
+                    val = line_trimmed[colon_idx+1:].strip().replace('"', '').replace("'", "")
+                    current_key = key
+                    if key not in ['aliases', 'tags']:
+                        metadata[key] = val
+                    elif key == 'aliases' and val and val != '[]':
+                        aliases.append(val)
+                    elif key == 'tags' and val and val != '[]':
+                        tags.append(val)
+        
+        doc_name = metadata.get("name", title)
+        
+        # Merge Document node in Neo4j
+        session.run("""
+            MERGE (d:Document {id: $id})
+            SET d.name = $name,
+                d.path = $path,
+                d.layer = $layer,
+                d.aliases = $aliases,
+                d.tags = $tags,
+                d.updated_at = datetime()
+        """, {
+            "id": slug,
+            "name": doc_name,
+            "path": rel_path,
+            "layer": layer,
+            "aliases": aliases,
+            "tags": tags
+        })
+        count += 1
+        
+        # Find wiki links in content
+        links = wiki_link_pattern.findall(content)
+        for link in links:
+            # Clean up target (extract slug name from path)
+            target_clean = link.split('/')[-1].replace(".md", "").strip().lower()
+            if not target_clean:
+                continue
+                
+            # Wire link in Neo4j based on target type
+            # 1. Check if linking to another document
+            session.run("""
+                MATCH (d:Document {id: $source_id})
+                MATCH (target:Document {id: $target_id})
+                MERGE (d)-[l:LINKS_TO]->(target)
+                SET l.updated_at = datetime()
+            """, {
+                "source_id": slug,
+                "target_id": target_clean
+            })
+            
+            # 2. Check if linking to a Capability node
+            session.run("""
+                MATCH (d:Document {id: $source_id})
+                MATCH (c:Capability {name: $cap_name})
+                MERGE (d)-[r:DISCUSSES]->(c)
+                SET r.updated_at = datetime()
+            """, {
+                "source_id": slug,
+                "cap_name": target_clean
+            })
+            
+            # 3. Check if linking to a Venture node
+            session.run("""
+                MATCH (d:Document {id: $source_id})
+                MATCH (v:Venture {id: $venture_id})
+                MERGE (d)-[r:DOCUMENTS]->(v)
+                SET r.updated_at = datetime()
+            """, {
+                "source_id": slug,
+                "venture_id": target_clean.upper()
+            })
+            
+            link_count += 1
+            
+    print(f"Populated {count} documents and wired {link_count} wiki relationships.")
+
 def verify_graph(session):
     print("\nVerifying final Graph State in Neo4j...")
     
@@ -330,6 +461,7 @@ def main():
         populate_ventures(session)
         populate_repositories(session)
         populate_relationships(session)
+        populate_academy_documents(session)
         verify_graph(session)
     except Exception as e:
         print(f"\n❌ Ingestion failed: {e}")
