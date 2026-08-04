@@ -35,7 +35,8 @@ def setup_constraints(session):
         "CREATE CONSTRAINT IF NOT EXISTS FOR (f:Founder) REQUIRE f.id IS UNIQUE",
         "CREATE CONSTRAINT IF NOT EXISTS FOR (r:Repository) REQUIRE r.id IS UNIQUE",
         "CREATE CONSTRAINT IF NOT EXISTS FOR (s:Sector) REQUIRE s.name IS UNIQUE",
-        "CREATE CONSTRAINT IF NOT EXISTS FOR (d:Document) REQUIRE d.id IS UNIQUE"
+        "CREATE CONSTRAINT IF NOT EXISTS FOR (d:Document) REQUIRE d.id IS UNIQUE",
+        "CREATE CONSTRAINT IF NOT EXISTS FOR (re:Research) REQUIRE re.id IS UNIQUE"
     ]
     for c in constraints:
         try:
@@ -436,6 +437,100 @@ def populate_academy_documents(session):
             
     print(f"Populated {count} documents and wired {link_count} wiki relationships.")
 
+def populate_research_vault(session):
+    print("Populating Research Vault from markdown files...")
+    research_dir = WORKSPACE_DIR / "research" / "agentic-enterprise"
+    if not research_dir.exists():
+        print(f"❌ Research directory {research_dir} not found!")
+        return
+
+    count = 0
+    link_count = 0
+
+    # Query capabilities from the database first
+    res = session.run("MATCH (c:Capability) RETURN c.name as name")
+    all_caps = [record["name"] for record in res]
+
+    for file_path in research_dir.rglob("*.md"):
+        slug = file_path.stem.lower()
+        title = file_path.stem.replace("-", " ")
+        rel_path = file_path.relative_to(WORKSPACE_DIR).as_posix()
+
+        try:
+            content = file_path.read_text(encoding="utf-8")
+        except Exception as e:
+            print(f"  Error reading {rel_path}: {e}")
+            continue
+
+        metadata = {}
+        tags = []
+        fm_match = re.match(r'^---\n(.*?)\n---\n?', content, re.DOTALL)
+        if fm_match:
+            fm_text = fm_match.group(1)
+            lines = fm_text.split('\n')
+            current_key = None
+            for line in lines:
+                line_trimmed = line.strip()
+                if not line_trimmed or line_trimmed.startswith('#'):
+                    continue
+                if line_trimmed.startswith('-'):
+                    item_val = line_trimmed[1:].strip().replace('"', '').replace("'", "")
+                    if current_key == 'tags':
+                        tags.append(item_val)
+                    continue
+
+                colon_idx = line_trimmed.find(':')
+                if colon_idx != -1:
+                    key = line_trimmed[:colon_idx].strip()
+                    val = line_trimmed[colon_idx+1:].strip().replace('"', '').replace("'", "")
+                    current_key = key
+                    if key != 'tags':
+                        metadata[key] = val
+                    elif key == 'tags' and val and val != '[]':
+                        tags.append(val)
+
+        doc_name = metadata.get("name", title)
+        publisher = metadata.get("publisher", "Unknown")
+        
+        try:
+            year = int(metadata.get("year") or 2026)
+        except ValueError:
+            year = 2026
+
+        session.run("""
+            MERGE (re:Research {id: $id})
+            SET re.name = $name,
+                re.path = $path,
+                re.publisher = $publisher,
+                re.year = $year,
+                re.tags = $tags,
+                re.updated_at = datetime()
+        """, {
+            "id": slug,
+            "name": doc_name,
+            "path": rel_path,
+            "publisher": publisher,
+            "year": year,
+            "tags": tags
+        })
+        count += 1
+
+        content_lower = content.lower()
+        for cap in all_caps:
+            if cap.lower().replace('-', ' ') in content_lower or cap.lower() in content_lower:
+                session.run("""
+                    MATCH (re:Research {id: $re_id})
+                    MATCH (c:Capability {name: $cap_name})
+                    MERGE (re)-[r:RELATED_TO]->(c)
+                    SET r.updated_at = datetime()
+                """, {
+                    "re_id": slug,
+                    "cap_name": cap
+                })
+                link_count += 1
+
+    print(f"Populated {count} research summaries and wired {link_count} capability connections.")
+
 def verify_graph(session):
     print("\nVerifying final Graph State in Neo4j...")
     
@@ -462,6 +557,7 @@ def main():
         populate_repositories(session)
         populate_relationships(session)
         populate_academy_documents(session)
+        populate_research_vault(session)
         verify_graph(session)
     except Exception as e:
         print(f"\n❌ Ingestion failed: {e}")
