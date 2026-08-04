@@ -1,0 +1,3509 @@
+=== 49 ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/49'...
+remote: Repository not found.
+fatal: repository 'https://github.com/Worldwidebro/49.git/' not found
+CLONE FAILED: 49
+=== comm-001-luminary-worldwide-events ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Ucomm-001-Uluminary-Uworldwide-Uevents'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-001-luminary-worldwide-events (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-001-luminary-worldwide-events
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-001-luminary-worldwide-events
+Uploading [--------------------] (0.0B/239.1KB)
+Uploading [=====---------------] (61.1KB/239.1KB)
+Uploading [==========----------] (130.9KB/239.1KB)
+Uploading [================----] (194.9KB/239.1KB)
+Uploading [====================] (239.1KB/239.1KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-001-luminary-worldwide-events/DjcSoTN32ZYLK8QD4uXnp5LQ5DJR [4s]
+Production: https://comm-001-luminary-worldwide-events-d3069ew4t.vercel.app [4s]
+https://comm-001-luminary-worldwide-events-d3069ew4t.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 47 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+Building: added 342 packages in 10s
+Building: 138 packages are looking for funding
+Building: run `npm fund` for details
+Building: Detected Next.js version: 16.2.4
+Building: Running "npm run build"
+Building: > comm-001-luminary-worldwide-events@0.1.0 build
+Building: > next build
+Building: Applying modifyConfig from Vercel
+Building: Attention: Next.js now collects completely anonymous telemetry regarding usage.
+Building: This information is used to shape Next.js' roadmap and prioritize features.
+Building: You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+Building: https://nextjs.org/telemetry
+Building: ▲ Next.js 16.2.4 (Turbopack)
+Building: ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+Building: Creating an optimized production build ...
+Building: ✓ Compiled successfully in 4.7s
+Building: Running TypeScript ...
+Building: Finished TypeScript in 2.9s ...
+Building: Collecting page data using 1 worker ...
+Building: Generating static pages using 1 worker (0/11) ...
+Building: Generating static pages using 1 worker (2/11)
+Building: Generating static pages using 1 worker (5/11)
+Building: Generating static pages using 1 worker (8/11)
+Building: ✓ Generating static pages using 1 worker (11/11) in 258ms
+Building: Finalizing page optimization ...
+Building: Running onBuildComplete from Vercel
+Building: Route (app)
+Building: ┌ ○ /
+Building: ├ ○ /_not-found
+Building: ├ ○ /about
+Building: ├ ○ /contact
+Building: ├ ○ /design-system
+Building: ├ ○ /get-involved
+Building: ├ ○ /impact
+Building: ├ ○ /privacy
+Building: ├ ○ /programs
+Building: └ ○ /terms
+Building: ƒ Proxy (Middleware)
+Building: ○  (Static)  prerendered as static content
+Building: Build Completed in /vercel/output [20s]
+Building: Deploying outputs...
+[2K[1A[2K[GProduction: https://comm-001-luminary-worldwide-events-d3069ew4t.vercel.app [36s]
+Completing...
+Aliased: https://comm-001-luminary-worldwide-events.vercel.app [36s]
+
+Common next commands:
+- `vercel inspect comm-001-luminary-worldwide-events-d3069ew4t.vercel.app --logs`
+- `vercel redeploy comm-001-luminary-worldwide-events-d3069ew4t.vercel.app`
+SUCCESS: comm-001-luminary-worldwide-events -> https://comm-001-luminary-worldwide-events.vercel.app
+=== comm-002-brotherhood-coaching-network ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Ucomm-002-Ubrotherhood-Ucoaching-Unetwork'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-002-brotherhood-coaching-network (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-002-brotherhood-coaching-network
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-002-brotherhood-coaching-network
+Uploading [--------------------] (0.0B/35.1KB)
+Uploading [=====---------------] (10.2KB/35.1KB)
+Uploading [==========----------] (18.8KB/35.1KB)
+Uploading [===============-----] (26.8KB/35.1KB)
+Uploading [====================] (35.1KB/35.1KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-002-brotherhood-coaching-network/5iPn2f8eJbZnhJCX4kSK8hEEyRa9 [2s]
+Production: https://comm-002-brotherhood-coaching-network-r5ncumo09.vercel.app [2s]
+https://comm-002-brotherhood-coaching-network-r5ncumo09.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 46 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+Building: added 344 packages in 39s
+Building: 141 packages are looking for funding
+Building: run `npm fund` for details
+Building: Detected Next.js version: 16.2.10
+Building: Running "npm run build"
+Building: > comm-002-brotherhood-coaching-network@0.1.0 build
+Building: > next build
+Building: Applying modifyConfig from Vercel
+Building: Attention: Next.js now collects completely anonymous telemetry regarding usage.
+Building: This information is used to shape Next.js' roadmap and prioritize features.
+Building: You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+Building: https://nextjs.org/telemetry
+Building: ▲ Next.js 16.2.10 (Turbopack)
+Building: ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+Building: Creating an optimized production build ...
+Building: ✓ Compiled successfully in 4.4s
+Building: Running TypeScript ...
+Building: We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+Building: The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+Building: - include was updated to add '.next/dev/types/**/*.ts'
+Building: Finished TypeScript in 2.8s ...
+Building: Collecting page data using 1 worker ...
+Building: Generating static pages using 1 worker (0/11) ...
+Building: Generating static pages using 1 worker (2/11)
+Building: Generating static pages using 1 worker (5/11)
+Building: Generating static pages using 1 worker (8/11)
+Building: ✓ Generating static pages using 1 worker (11/11) in 234ms
+Building: Finalizing page optimization ...
+Building: Running onBuildComplete from Vercel
+Building: Route (app)
+Building: ┌ ○ /
+Building: ├ ○ /_not-found
+Building: ├ ○ /about
+Building: ├ ○ /contact
+Building: ├ ○ /design-system
+Building: ├ ○ /get-involved
+Building: ├ ○ /impact
+Building: ├ ○ /privacy
+Building: ├ ○ /programs
+Building: └ ○ /terms
+Building: ƒ Proxy (Middleware)
+Building: ○  (Static)  prerendered as static content
+Building: Build Completed in /vercel/output [50s]
+Building: Deploying outputs...
+Building: Deployment completed
+Building: Creating build cache...
+[2K[1A[2K[GProduction: https://comm-002-brotherhood-coaching-network-r5ncumo09.vercel.app [1m]
+Completing...
+Aliased: https://comm-002-brotherhood-coaching-netwo.vercel.app [1m]
+
+Common next commands:
+- `vercel inspect comm-002-brotherhood-coaching-network-r5ncumo09.vercel.app --logs`
+- `vercel redeploy comm-002-brotherhood-coaching-network-r5ncumo09.vercel.app`
+SUCCESS: comm-002-brotherhood-coaching-network -> https://comm-002-brotherhood-coaching-netwo.vercel.app
+=== comm-004-community-outreach-nonprofit ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Ucomm-004-Ucommunity-Uoutreach-Unonprofit'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-004-community-outreach-nonprofit (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-004-community-outreach-nonprofit
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-004-community-outreach-nonprofit
+Uploading [--------------------] (0.0B/35.1KB)
+Uploading [=====---------------] (9.6KB/35.1KB)
+Uploading [==========----------] (18.0KB/35.1KB)
+Uploading [===============-----] (26.5KB/35.1KB)
+Uploading [====================] (35.1KB/35.1KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-004-community-outreach-nonprofit/DzcCNT6H9tnNM6jDTNK6DNR7vH6m [5s]
+Production: https://comm-004-community-outreach-nonprofit-3ylg03h55.vercel.app [5s]
+https://comm-004-community-outreach-nonprofit-3ylg03h55.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 46 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+Building: added 344 packages in 37s
+Building: 141 packages are looking for funding
+Building: run `npm fund` for details
+Building: Detected Next.js version: 16.2.10
+Building: Running "npm run build"
+Building: > comm-004-community-outreach-nonprofit@0.1.0 build
+Building: > next build
+Building: Applying modifyConfig from Vercel
+Building: Attention: Next.js now collects completely anonymous telemetry regarding usage.
+Building: This information is used to shape Next.js' roadmap and prioritize features.
+Building: You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+Building: https://nextjs.org/telemetry
+Building: ▲ Next.js 16.2.10 (Turbopack)
+Building: ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+Building: Creating an optimized production build ...
+Building: ✓ Compiled successfully in 4.7s
+Building: Running TypeScript ...
+Building: We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+Building: The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+Building: - include was updated to add '.next/dev/types/**/*.ts'
+Building: Finished TypeScript in 3.0s ...
+Building: Collecting page data using 1 worker ...
+Building: Generating static pages using 1 worker (0/11) ...
+Building: Generating static pages using 1 worker (2/11)
+Building: Generating static pages using 1 worker (5/11)
+Building: Generating static pages using 1 worker (8/11)
+Building: ✓ Generating static pages using 1 worker (11/11) in 258ms
+Building: Finalizing page optimization ...
+Building: Running onBuildComplete from Vercel
+Building: Route (app)
+Building: ┌ ○ /
+Building: ├ ○ /_not-found
+Building: ├ ○ /about
+Building: ├ ○ /contact
+Building: ├ ○ /design-system
+Building: ├ ○ /get-involved
+Building: ├ ○ /impact
+Building: ├ ○ /privacy
+Building: ├ ○ /programs
+Building: └ ○ /terms
+Building: ƒ Proxy (Middleware)
+Building: ○  (Static)  prerendered as static content
+Building: Build Completed in /vercel/output [47s]
+Building: Deploying outputs...
+[2K[1A[2K[GProduction: https://comm-004-community-outreach-nonprofit-3ylg03h55.vercel.app [1m]
+Completing...
+Aliased: https://comm-004-community-outreach-nonprof.vercel.app [1m]
+
+Common next commands:
+- `vercel inspect comm-004-community-outreach-nonprofit-3ylg03h55.vercel.app --logs`
+- `vercel redeploy comm-004-community-outreach-nonprofit-3ylg03h55.vercel.app`
+SUCCESS: comm-004-community-outreach-nonprofit -> https://comm-004-community-outreach-nonprof.vercel.app
+=== comm-005-ace-food-security-ai ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Ucomm-005-Uace-Ufood-Usecurity-Uai'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-005-ace-food-security-ai (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-005-ace-food-security-ai
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-005-ace-food-security-ai
+Uploading [--------------------] (0.0B/35KB)
+Uploading [=====---------------] (10.0KB/35KB)
+Uploading [==========----------] (18.1KB/35KB)
+Uploading [===============-----] (26.6KB/35KB)
+Uploading [====================] (35.0KB/35KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-005-ace-food-security-ai/AKVT7i6p5znSS5ft6vAkPNegrrcx [4s]
+Production: https://comm-005-ace-food-security-r9ejwde50-worldwidebros-projects.vercel.app [4s]
+https://comm-005-ace-food-security-r9ejwde50-worldwidebros-projects.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 46 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+Building: added 344 packages in 32s
+Building: 141 packages are looking for funding
+Building: run `npm fund` for details
+Building: Detected Next.js version: 16.2.10
+Building: Running "npm run build"
+Building: > comm-005-ace-food-security-ai@0.1.0 build
+Building: > next build
+Building: Applying modifyConfig from Vercel
+Building: Attention: Next.js now collects completely anonymous telemetry regarding usage.
+Building: This information is used to shape Next.js' roadmap and prioritize features.
+Building: You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+Building: https://nextjs.org/telemetry
+Building: ▲ Next.js 16.2.10 (Turbopack)
+Building: ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+Building: Creating an optimized production build ...
+Building: ✓ Compiled successfully in 5.7s
+Building: Running TypeScript ...
+Building: We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+Building: The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+Building: - include was updated to add '.next/dev/types/**/*.ts'
+Building: Finished TypeScript in 3.1s ...
+Building: Collecting page data using 1 worker ...
+Building: Generating static pages using 1 worker (0/11) ...
+Building: Generating static pages using 1 worker (2/11)
+Building: Generating static pages using 1 worker (5/11)
+Building: Generating static pages using 1 worker (8/11)
+Building: ✓ Generating static pages using 1 worker (11/11) in 259ms
+Building: Finalizing page optimization ...
+Building: Running onBuildComplete from Vercel
+Building: Route (app)
+Building: ┌ ○ /
+Building: ├ ○ /_not-found
+Building: ├ ○ /about
+Building: ├ ○ /contact
+Building: ├ ○ /design-system
+Building: ├ ○ /get-involved
+Building: ├ ○ /impact
+Building: ├ ○ /privacy
+Building: ├ ○ /programs
+Building: └ ○ /terms
+Building: ƒ Proxy (Middleware)
+Building: ○  (Static)  prerendered as static content
+Building: Build Completed in /vercel/output [43s]
+Building: Deploying outputs...
+[2K[1A[2K[GProduction: https://comm-005-ace-food-security-r9ejwde50-worldwidebros-projects.vercel.app [58s]
+Completing...
+Aliased: https://comm-005-ace-food-security-ai.vercel.app [58s]
+
+Common next commands:
+- `vercel inspect comm-005-ace-food-security-r9ejwde50-worldwidebros-projects.vercel.app --logs`
+- `vercel redeploy comm-005-ace-food-security-r9ejwde50-worldwidebros-projects.vercel.app`
+SUCCESS: comm-005-ace-food-security-ai -> https://comm-005-ace-food-security-ai.vercel.app
+=== comm-006-community-technology-access-ai ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Ucomm-006-Ucommunity-Utechnology-Uaccess-Uai'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-006-community-technology-access-ai (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-006-community-technology-access-ai
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-006-community-technology-access-ai
+Uploading [--------------------] (0.0B/35.3KB)
+Uploading [======--------------] (11.8KB/35.3KB)
+Uploading [==========----------] (19.0KB/35.3KB)
+Uploading [===============-----] (26.8KB/35.3KB)
+Uploading [====================] (35.3KB/35.3KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-006-community-technology-access-ai/8NNRoW9WW9zbDyTcsgiJBGynzFCr [3s]
+Production: https://comm-006-community-technology-access-4734n7yii.vercel.app [3s]
+https://comm-006-community-technology-access-4734n7yii.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 46 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+Building: added 344 packages in 37s
+Building: 141 packages are looking for funding
+Building: run `npm fund` for details
+Building: Detected Next.js version: 16.2.10
+Building: Running "npm run build"
+Building: > comm-006-community-technology-access-ai@0.1.0 build
+Building: > next build
+Building: Applying modifyConfig from Vercel
+Building: Attention: Next.js now collects completely anonymous telemetry regarding usage.
+Building: This information is used to shape Next.js' roadmap and prioritize features.
+Building: You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+Building: https://nextjs.org/telemetry
+Building: ▲ Next.js 16.2.10 (Turbopack)
+Building: ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+Building: Creating an optimized production build ...
+Building: ✓ Compiled successfully in 5.4s
+Building: Running TypeScript ...
+Building: We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+Building: The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+Building: - include was updated to add '.next/dev/types/**/*.ts'
+Building: Finished TypeScript in 3.1s ...
+Building: Collecting page data using 1 worker ...
+Building: Generating static pages using 1 worker (0/11) ...
+Building: Generating static pages using 1 worker (2/11)
+Building: Generating static pages using 1 worker (5/11)
+Building: Generating static pages using 1 worker (8/11)
+Building: ✓ Generating static pages using 1 worker (11/11) in 280ms
+Building: Finalizing page optimization ...
+Building: Running onBuildComplete from Vercel
+Building: Route (app)
+Building: ┌ ○ /
+Building: ├ ○ /_not-found
+Building: ├ ○ /about
+Building: ├ ○ /contact
+Building: ├ ○ /design-system
+Building: ├ ○ /get-involved
+Building: ├ ○ /impact
+Building: ├ ○ /privacy
+Building: ├ ○ /programs
+Building: └ ○ /terms
+Building: ƒ Proxy (Middleware)
+Building: ○  (Static)  prerendered as static content
+Building: Build Completed in /vercel/output [48s]
+Building: Deploying outputs...
+[2K[1A[2K[GProduction: https://comm-006-community-technology-access-4734n7yii.vercel.app [1m]
+Completing...
+Aliased: https://comm-006-community-technology-acces.vercel.app [1m]
+
+Common next commands:
+- `vercel inspect comm-006-community-technology-access-4734n7yii.vercel.app --logs`
+- `vercel redeploy comm-006-community-technology-access-4734n7yii.vercel.app`
+SUCCESS: comm-006-community-technology-access-ai -> https://comm-006-community-technology-acces.vercel.app
+=== comm-007-youth-leadership-ai ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Ucomm-007-Uyouth-Uleadership-Uai'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-007-youth-leadership-ai (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-007-youth-leadership-ai
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-007-youth-leadership-ai
+Uploading [--------------------] (0.0B/34.5KB)
+Uploading [=====---------------] (9.8KB/34.5KB)
+Uploading [==========----------] (17.6KB/34.5KB)
+Uploading [===============-----] (26.9KB/34.5KB)
+Uploading [====================] (34.5KB/34.5KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-007-youth-leadership-ai/EgaCnw7E27V4GWX3NHv5CFkxXQLc [2s]
+Production: https://comm-007-youth-leadership-biajdmdfk-worldwidebros-projects.vercel.app [2s]
+https://comm-007-youth-leadership-biajdmdfk-worldwidebros-projects.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 46 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+Building: added 344 packages in 34s
+Building: 141 packages are looking for funding
+Building: run `npm fund` for details
+Building: Detected Next.js version: 16.2.10
+Building: Running "npm run build"
+Building: > comm-007-youth-leadership-ai@0.1.0 build
+Building: > next build
+Building: Applying modifyConfig from Vercel
+Building: Attention: Next.js now collects completely anonymous telemetry regarding usage.
+Building: This information is used to shape Next.js' roadmap and prioritize features.
+Building: You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+Building: https://nextjs.org/telemetry
+Building: ▲ Next.js 16.2.10 (Turbopack)
+Building: ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+Building: Creating an optimized production build ...
+Building: ✓ Compiled successfully in 5.2s
+Building: Running TypeScript ...
+Building: We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+Building: The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+Building: - include was updated to add '.next/dev/types/**/*.ts'
+Building: Finished TypeScript in 3.1s ...
+Building: Collecting page data using 1 worker ...
+Building: Generating static pages using 1 worker (0/11) ...
+Building: Generating static pages using 1 worker (2/11)
+Building: Generating static pages using 1 worker (5/11)
+Building: Generating static pages using 1 worker (8/11)
+Building: ✓ Generating static pages using 1 worker (11/11) in 249ms
+Building: Finalizing page optimization ...
+Building: Running onBuildComplete from Vercel
+Building: Route (app)
+Building: ┌ ○ /
+Building: ├ ○ /_not-found
+Building: ├ ○ /about
+Building: ├ ○ /contact
+Building: ├ ○ /design-system
+Building: ├ ○ /get-involved
+Building: ├ ○ /impact
+Building: ├ ○ /privacy
+Building: ├ ○ /programs
+Building: └ ○ /terms
+Building: ƒ Proxy (Middleware)
+Building: ○  (Static)  prerendered as static content
+Building: Build Completed in /vercel/output [45s]
+Building: Deploying outputs...
+Building: Deployment completed
+Building: Creating build cache...
+[2K[1A[2K[GProduction: https://comm-007-youth-leadership-biajdmdfk-worldwidebros-projects.vercel.app [1m]
+Completing...
+Aliased: https://comm-007-youth-leadership-ai.vercel.app [1m]
+
+Common next commands:
+- `vercel inspect comm-007-youth-leadership-biajdmdfk-worldwidebros-projects.vercel.app --logs`
+- `vercel redeploy comm-007-youth-leadership-biajdmdfk-worldwidebros-projects.vercel.app`
+SUCCESS: comm-007-youth-leadership-ai -> https://comm-007-youth-leadership-ai.vercel.app
+=== comm-008-community-fundraising-ai ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Ucomm-008-Ucommunity-Ufundraising-Uai'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-008-community-fundraising-ai (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-008-community-fundraising-ai
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-008-community-fundraising-ai
+Uploading [--------------------] (0.0B/34.7KB)
+Uploading [======--------------] (10.9KB/34.7KB)
+Uploading [==========----------] (18.8KB/34.7KB)
+Uploading [===============-----] (26.4KB/34.7KB)
+Uploading [====================] (34.7KB/34.7KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-008-community-fundraising-ai/8sA3k3Jj7arQ3juuMFkYDwHgNAhi [2s]
+Production: https://comm-008-community-fundraising-3adg4o5ak-worldwidebros-projects.vercel.app [2s]
+https://comm-008-community-fundraising-3adg4o5ak-worldwidebros-projects.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 46 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+[2K[1A[2K[GProduction: https://comm-008-community-fundraising-3adg4o5ak-worldwidebros-projects.vercel.app [1m]
+Completing...
+Aliased: https://comm-008-community-fundraising-ai.vercel.app [1m]
+
+Common next commands:
+- `vercel inspect comm-008-community-fundraising-3adg4o5ak-worldwidebros-projects.vercel.app --logs`
+- `vercel redeploy comm-008-community-fundraising-3adg4o5ak-worldwidebros-projects.vercel.app`
+SUCCESS: comm-008-community-fundraising-ai -> https://comm-008-community-fundraising-ai.vercel.app
+=== comm-009-volunteer-hub-ai ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Ucomm-009-Uvolunteer-Uhub-Uai'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-009-volunteer-hub-ai (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-009-volunteer-hub-ai
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-009-volunteer-hub-ai
+Uploading [--------------------] (0.0B/34KB)
+Uploading [=====---------------] (9.2KB/34KB)
+Uploading [===========---------] (19.9KB/34KB)
+Uploading [===============-----] (25.9KB/34KB)
+Uploading [====================] (34.0KB/34KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-009-volunteer-hub-ai/9jm8RbHoBzonyi86R7GaF4SPrA3m [2s]
+Production: https://comm-009-volunteer-hub-4fme6kaxz-worldwidebros-projects.vercel.app [2s]
+https://comm-009-volunteer-hub-4fme6kaxz-worldwidebros-projects.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 46 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+Error: request to https://api.vercel.com/v13/deployments/dpl_9jm8RbHoBzonyi86R7GaF4SPrA3m?teamId=team_Fq6YcyYtl6dK6c4u4AtaboAt failed, reason: write EPIPE
+SUCCESS: comm-009-volunteer-hub-ai -> https://comm-009-volunteer-hub-4fme6kaxz-worldwidebros-projects.vercel.app
+=== comm-010-disaster-relief-ai ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Ucomm-010-Udisaster-Urelief-Uai'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-010-disaster-relief-ai (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-010-disaster-relief-ai
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-010-disaster-relief-ai
+Uploading [--------------------] (0.0B/35.1KB)
+Uploading [======--------------] (11.6KB/35.1KB)
+Uploading [==========----------] (18.5KB/35.1KB)
+Uploading [================----] (29.4KB/35.1KB)
+Uploading [====================] (35.1KB/35.1KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-010-disaster-relief-ai/H8NWwGavu1Mc1rkUBsjwZC4vA5wS [3s]
+Production: https://comm-010-disaster-relief-o8mbz1n8o-worldwidebros-projects.vercel.app [3s]
+https://comm-010-disaster-relief-o8mbz1n8o-worldwidebros-projects.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 46 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+[2K[1A[2K[GProduction: https://comm-010-disaster-relief-o8mbz1n8o-worldwidebros-projects.vercel.app [1m]
+Completing...
+Aliased: https://comm-010-disaster-relief-ai.vercel.app [1m]
+
+Common next commands:
+- `vercel inspect comm-010-disaster-relief-o8mbz1n8o-worldwidebros-projects.vercel.app --logs`
+- `vercel redeploy comm-010-disaster-relief-o8mbz1n8o-worldwidebros-projects.vercel.app`
+SUCCESS: comm-010-disaster-relief-ai -> https://comm-010-disaster-relief-ai.vercel.app
+=== comm-011-indigenous-creator-hub ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Ucomm-011-Uindigenous-Ucreator-Uhub'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-011-indigenous-creator-hub (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-011-indigenous-creator-hub
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-011-indigenous-creator-hub
+Uploading [--------------------] (0.0B/34.6KB)
+Uploading [======--------------] (11.9KB/34.6KB)
+Uploading [==========----------] (18.7KB/34.6KB)
+Uploading [===============-----] (26.7KB/34.6KB)
+Uploading [====================] (34.6KB/34.6KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-011-indigenous-creator-hub/7ztV24RELDo8vVPkLCvMwq2PTK4B [2s]
+Production: https://comm-011-indigenous-creator-p17bv0zdw-worldwidebros-projects.vercel.app [2s]
+https://comm-011-indigenous-creator-p17bv0zdw-worldwidebros-projects.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 46 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+Building: added 344 packages in 29s
+Building: 141 packages are looking for funding
+Building: run `npm fund` for details
+Building: Detected Next.js version: 16.2.10
+Building: Running "npm run build"
+Building: > comm-011-indigenous-creator-hub@0.1.0 build
+Building: > next build
+Building: Applying modifyConfig from Vercel
+Building: Attention: Next.js now collects completely anonymous telemetry regarding usage.
+Building: This information is used to shape Next.js' roadmap and prioritize features.
+Building: You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+Building: https://nextjs.org/telemetry
+Building: ▲ Next.js 16.2.10 (Turbopack)
+Building: ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+Building: Creating an optimized production build ...
+Building: ✓ Compiled successfully in 4.5s
+Building: Running TypeScript ...
+Building: We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+Building: The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+Building: - include was updated to add '.next/dev/types/**/*.ts'
+Building: Finished TypeScript in 3.0s ...
+Building: Collecting page data using 1 worker ...
+Building: Generating static pages using 1 worker (0/11) ...
+Building: Generating static pages using 1 worker (2/11)
+Building: Generating static pages using 1 worker (5/11)
+Building: Generating static pages using 1 worker (8/11)
+Building: ✓ Generating static pages using 1 worker (11/11) in 229ms
+Building: Finalizing page optimization ...
+Building: Running onBuildComplete from Vercel
+Building: Route (app)
+Building: ┌ ○ /
+Building: ├ ○ /_not-found
+Building: ├ ○ /about
+Building: ├ ○ /contact
+Building: ├ ○ /design-system
+Building: ├ ○ /get-involved
+Building: ├ ○ /impact
+Building: ├ ○ /privacy
+Building: ├ ○ /programs
+Building: └ ○ /terms
+Building: ƒ Proxy (Middleware)
+Building: ○  (Static)  prerendered as static content
+Building: Build Completed in /vercel/output [39s]
+Building: Deploying outputs...
+Building: Deployment completed
+Building: Creating build cache...
+[2K[1A[2K[GProduction: https://comm-011-indigenous-creator-p17bv0zdw-worldwidebros-projects.vercel.app [55s]
+Completing...
+Aliased: https://comm-011-indigenous-creator-hub.vercel.app [55s]
+
+Common next commands:
+- `vercel inspect comm-011-indigenous-creator-p17bv0zdw-worldwidebros-projects.vercel.app --logs`
+- `vercel redeploy comm-011-indigenous-creator-p17bv0zdw-worldwidebros-projects.vercel.app`
+SUCCESS: comm-011-indigenous-creator-hub -> https://comm-011-indigenous-creator-hub.vercel.app
+=== comm-012-black-art-museum-ai ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Ucomm-012-Ublack-Uart-Umuseum-Uai'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-012-black-art-museum-ai (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-012-black-art-museum-ai
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-012-black-art-museum-ai
+Uploading [--------------------] (0.0B/34.3KB)
+Uploading [=====---------------] (9.2KB/34.3KB)
+Uploading [==========----------] (17.3KB/34.3KB)
+Uploading [================----] (28.5KB/34.3KB)
+Uploading [====================] (34.3KB/34.3KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-012-black-art-museum-ai/AaPwGXRwCGfiSYHBX49ZaRQZpoCd [3s]
+Production: https://comm-012-black-art-museum-om8bxbe53-worldwidebros-projects.vercel.app [3s]
+https://comm-012-black-art-museum-om8bxbe53-worldwidebros-projects.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 46 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+Building: added 344 packages in 33s
+Building: 141 packages are looking for funding
+Building: run `npm fund` for details
+Building: Detected Next.js version: 16.2.10
+Building: Running "npm run build"
+Building: > comm-012-black-art-museum-ai@0.1.0 build
+Building: > next build
+Building: Applying modifyConfig from Vercel
+Building: Attention: Next.js now collects completely anonymous telemetry regarding usage.
+Building: This information is used to shape Next.js' roadmap and prioritize features.
+Building: You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+Building: https://nextjs.org/telemetry
+Building: ▲ Next.js 16.2.10 (Turbopack)
+Building: ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+Building: Creating an optimized production build ...
+Building: ✓ Compiled successfully in 4.1s
+Building: Running TypeScript ...
+Building: We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+Building: The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+Building: - include was updated to add '.next/dev/types/**/*.ts'
+Building: Finished TypeScript in 3.0s ...
+Building: Collecting page data using 1 worker ...
+Building: Generating static pages using 1 worker (0/11) ...
+Building: Generating static pages using 1 worker (2/11)
+Building: Generating static pages using 1 worker (5/11)
+Building: Generating static pages using 1 worker (8/11)
+Building: ✓ Generating static pages using 1 worker (11/11) in 222ms
+Building: Finalizing page optimization ...
+Building: Running onBuildComplete from Vercel
+Building: Route (app)
+Building: ┌ ○ /
+Building: ├ ○ /_not-found
+Building: ├ ○ /about
+Building: ├ ○ /contact
+Building: ├ ○ /design-system
+Building: ├ ○ /get-involved
+Building: ├ ○ /impact
+Building: ├ ○ /privacy
+Building: ├ ○ /programs
+Building: └ ○ /terms
+Building: ƒ Proxy (Middleware)
+Building: ○  (Static)  prerendered as static content
+Building: Build Completed in /vercel/output [42s]
+Building: Deploying outputs...
+[2K[1A[2K[GProduction: https://comm-012-black-art-museum-om8bxbe53-worldwidebros-projects.vercel.app [56s]
+Completing...
+Aliased: https://comm-012-black-art-museum-ai.vercel.app [56s]
+
+Common next commands:
+- `vercel inspect comm-012-black-art-museum-om8bxbe53-worldwidebros-projects.vercel.app --logs`
+- `vercel redeploy comm-012-black-art-museum-om8bxbe53-worldwidebros-projects.vercel.app`
+SUCCESS: comm-012-black-art-museum-ai -> https://comm-012-black-art-museum-ai.vercel.app
+=== comm-013-women-s-empowerment-network ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Ucomm-013-Uwomen-Us-Uempowerment-Unetwork'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-013-women-s-empowerment-network (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-013-women-s-empowerment-network
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-013-women-s-empowerment-network
+Uploading [--------------------] (0.0B/35KB)
+Uploading [=====---------------] (9.3KB/35KB)
+Uploading [==========----------] (17.6KB/35KB)
+Uploading [================----] (28.8KB/35KB)
+Uploading [====================] (35.0KB/35KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-013-women-s-empowerment-network/8ha2boDtRNiyuyYuinkz1kP7UTbp [3s]
+Production: https://comm-013-women-s-empowerment-network-lqz3t6pwp.vercel.app [3s]
+https://comm-013-women-s-empowerment-network-lqz3t6pwp.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 46 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+Error: request to https://api.vercel.com/v13/deployments/dpl_8ha2boDtRNiyuyYuinkz1kP7UTbp?teamId=team_Fq6YcyYtl6dK6c4u4AtaboAt failed, reason: write EPIPE
+SUCCESS: comm-013-women-s-empowerment-network -> https://comm-013-women-s-empowerment-network-lqz3t6pwp.vercel.app
+=== comm-014-veterans-support-ai ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Ucomm-014-Uveterans-Usupport-Uai'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-014-veterans-support-ai (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-014-veterans-support-ai
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-014-veterans-support-ai
+Error: request to https://api.vercel.com/v13/deployments?teamId=team_Fq6YcyYtl6dK6c4u4AtaboAt failed, reason: read ECONNRESET
+DEPLOY FAILED: comm-014-veterans-support-ai
+=== comm-015-youth-mentorship-program ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Ucomm-015-Uyouth-Umentorship-Uprogram'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-015-youth-mentorship-program (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-015-youth-mentorship-program
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-015-youth-mentorship-program
+Uploading [--------------------] (0.0B/35KB)
+Uploading [=====---------------] (10.4KB/35KB)
+Uploading [==========----------] (18.0KB/35KB)
+Uploading [===============-----] (26.9KB/35KB)
+Uploading [====================] (35.0KB/35KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-015-youth-mentorship-program/5LFQsvGKg4zibAjRtjBNjc7e5QFZ [2s]
+Production: https://comm-015-youth-mentorship-program-6zlgh054d.vercel.app [2s]
+https://comm-015-youth-mentorship-program-6zlgh054d.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 46 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+Building: added 344 packages in 37s
+Building: 141 packages are looking for funding
+Building: run `npm fund` for details
+Building: Detected Next.js version: 16.2.10
+Building: Running "npm run build"
+Building: > comm-015-youth-mentorship-program@0.1.0 build
+Building: > next build
+Building: Applying modifyConfig from Vercel
+Building: Attention: Next.js now collects completely anonymous telemetry regarding usage.
+Building: This information is used to shape Next.js' roadmap and prioritize features.
+Building: You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+Building: https://nextjs.org/telemetry
+Building: ▲ Next.js 16.2.10 (Turbopack)
+Building: ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+Building: Creating an optimized production build ...
+Building: ✓ Compiled successfully in 5.1s
+Building: Running TypeScript ...
+Building: We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+Building: The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+Building: - include was updated to add '.next/dev/types/**/*.ts'
+Building: Finished TypeScript in 3.1s ...
+Building: Collecting page data using 1 worker ...
+Building: Generating static pages using 1 worker (0/11) ...
+Building: Generating static pages using 1 worker (2/11)
+Building: Generating static pages using 1 worker (5/11)
+Building: Generating static pages using 1 worker (8/11)
+Building: ✓ Generating static pages using 1 worker (11/11) in 254ms
+Building: Finalizing page optimization ...
+Building: Running onBuildComplete from Vercel
+Building: Route (app)
+Building: ┌ ○ /
+Building: ├ ○ /_not-found
+Building: ├ ○ /about
+Building: ├ ○ /contact
+Building: ├ ○ /design-system
+Building: ├ ○ /get-involved
+Building: ├ ○ /impact
+Building: ├ ○ /privacy
+Building: ├ ○ /programs
+Building: └ ○ /terms
+Building: ƒ Proxy (Middleware)
+Building: ○  (Static)  prerendered as static content
+Building: Build Completed in /vercel/output [48s]
+Building: Deploying outputs...
+[2K[1A[2K[GProduction: https://comm-015-youth-mentorship-program-6zlgh054d.vercel.app [1m]
+Completing...
+Aliased: https://comm-015-youth-mentorship-program.vercel.app [1m]
+
+Common next commands:
+- `vercel inspect comm-015-youth-mentorship-program-6zlgh054d.vercel.app --logs`
+- `vercel redeploy comm-015-youth-mentorship-program-6zlgh054d.vercel.app`
+SUCCESS: comm-015-youth-mentorship-program -> https://comm-015-youth-mentorship-program.vercel.app
+=== comm-016-community-health-ai ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Ucomm-016-Ucommunity-Uhealth-Uai'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-016-community-health-ai (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-016-community-health-ai
+> Connected
+=== 36 ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/36'...
+remote: Repository not found.
+fatal: repository 'https://github.com/Worldwidebro/36.git/' not found
+CLONE FAILED: 36
+=== comm-014-veterans-support-ai ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Comm-014VeteransSupportAi'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+Linked to worldwidebros-projects/comm-014-veterans-support-ai (created .vercel and added it to .gitignore)
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-014-veterans-support-ai
+Uploading [--------------------] (0.0B/34.4KB)
+Uploading [=====---------------] (9.0KB/34.4KB)
+Uploading [==========----------] (17.5KB/34.4KB)
+Uploading [===============-----] (26.0KB/34.4KB)
+Uploading [====================] (34.4KB/34.4KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-014-veterans-support-ai/4pkiDAjp4AqmfaLKm6xmC2UAPjB4 [3s]
+Production: https://comm-014-veterans-support-rlgkhox71-worldwidebros-projects.vercel.app [3s]
+https://comm-014-veterans-support-rlgkhox71-worldwidebros-projects.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 46 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+Building: added 344 packages in 28s
+Building: 141 packages are looking for funding
+Building: run `npm fund` for details
+Building: Detected Next.js version: 16.2.10
+Building: Running "npm run build"
+Building: > comm-014-veterans-support-ai@0.1.0 build
+Building: > next build
+Building: Applying modifyConfig from Vercel
+Building: Attention: Next.js now collects completely anonymous telemetry regarding usage.
+Building: This information is used to shape Next.js' roadmap and prioritize features.
+Building: You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+Building: https://nextjs.org/telemetry
+Building: ▲ Next.js 16.2.10 (Turbopack)
+Building: ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+Building: Creating an optimized production build ...
+Building: ✓ Compiled successfully in 5.1s
+Building: Running TypeScript ...
+Building: We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+Building: The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+Building: - include was updated to add '.next/dev/types/**/*.ts'
+Building: Finished TypeScript in 3.0s ...
+Building: Collecting page data using 1 worker ...
+Building: Generating static pages using 1 worker (0/11) ...
+Building: Generating static pages using 1 worker (2/11)
+Building: Generating static pages using 1 worker (5/11)
+Building: Generating static pages using 1 worker (8/11)
+Building: ✓ Generating static pages using 1 worker (11/11) in 247ms
+Building: Finalizing page optimization ...
+Building: Running onBuildComplete from Vercel
+Building: Route (app)
+Building: ┌ ○ /
+Building: ├ ○ /_not-found
+Building: ├ ○ /about
+Building: ├ ○ /contact
+Building: ├ ○ /design-system
+Building: ├ ○ /get-involved
+Building: ├ ○ /impact
+Building: ├ ○ /privacy
+Building: ├ ○ /programs
+Building: └ ○ /terms
+Building: ƒ Proxy (Middleware)
+Building: ○  (Static)  prerendered as static content
+Building: Build Completed in /vercel/output [39s]
+Building: Deploying outputs...
+[2K[1A[2K[GProduction: https://comm-014-veterans-support-rlgkhox71-worldwidebros-projects.vercel.app [52s]
+Completing...
+Aliased: https://comm-014-veterans-support-ai.vercel.app [52s]
+
+Common next commands:
+- `vercel inspect comm-014-veterans-support-rlgkhox71-worldwidebros-projects.vercel.app --logs`
+- `vercel redeploy comm-014-veterans-support-rlgkhox71-worldwidebros-projects.vercel.app`
+SUCCESS: comm-014-veterans-support-ai -> https://comm-014-veterans-support-ai.vercel.app
+=== comm-016-community-health-ai ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Comm-016CommunityHealthAi'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+Linked to worldwidebros-projects/comm-016-community-health-ai (created .vercel and added it to .gitignore)
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-016-community-health-ai
+Inspect: https://vercel.com/worldwidebros-projects/comm-016-community-health-ai/5iS2T8mSHiDZYuyt18MU3gs6aDFw [2s]
+Production: https://comm-016-community-health-45ztqlv6n-worldwidebros-projects.vercel.app [2s]
+https://comm-016-community-health-45ztqlv6n-worldwidebros-projects.vercel.appBuilding...
+Error: Not authorized
+─────────────────────────────────────────────────────────────────────────
+
+Update available! v50.22.1 ≫ v54.20.1
+Changelog: https://github.com/vercel/vercel/releases/tag/vercel%4054.20.1
+Run `npm i -g vercel@latest` to update.
+
+The latest update may fix any errors that occurred.
+
+─────────────────────────────────────────────────────────────────────────
+SUCCESS: comm-016-community-health-ai -> https://comm-016-community-health-45ztqlv6n-worldwidebros-projects.vercel.app
+=== comm-017-local-business-directory ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Comm-017LocalBusinessDirectory'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-017-local-business-directory (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-017-local-business-directory
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-017-local-business-directory
+Uploading [--------------------] (0.0B/34.7KB)
+Uploading [======--------------] (11.6KB/34.7KB)
+Uploading [==========----------] (17.4KB/34.7KB)
+Uploading [===============-----] (26.4KB/34.7KB)
+Uploading [====================] (34.7KB/34.7KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-017-local-business-directory/2t2Dx3GvabQX5Tq9QgXPRvA6u6iG [2s]
+Production: https://comm-017-local-business-directory-qrf7le6bi.vercel.app [2s]
+https://comm-017-local-business-directory-qrf7le6bi.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 46 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+Error: request to https://api.vercel.com/v13/deployments/dpl_2t2Dx3GvabQX5Tq9QgXPRvA6u6iG?teamId=team_Fq6YcyYtl6dK6c4u4AtaboAt failed, reason: read ETIMEDOUT
+SUCCESS: comm-017-local-business-directory -> https://comm-017-local-business-directory-qrf7le6bi.vercel.app
+=== comm-018-neighborhood-watch-ai ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Comm-018NeighborhoodWatchAi'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-018-neighborhood-watch-ai (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-018-neighborhood-watch-ai
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-018-neighborhood-watch-ai
+Uploading [--------------------] (0.0B/34.7KB)
+Uploading [=====---------------] (8.8KB/34.7KB)
+Uploading [==========----------] (18.9KB/34.7KB)
+Uploading [===============-----] (27.4KB/34.7KB)
+Uploading [====================] (34.7KB/34.7KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-018-neighborhood-watch-ai/4egtKWpjnv2v2nn3TpSyyyCUPj9t [2s]
+Production: https://comm-018-neighborhood-watch-n8cx6v79q-worldwidebros-projects.vercel.app [2s]
+https://comm-018-neighborhood-watch-n8cx6v79q-worldwidebros-projects.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 46 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+Error: request to https://api.vercel.com/v13/deployments/dpl_4egtKWpjnv2v2nn3TpSyyyCUPj9t?teamId=team_Fq6YcyYtl6dK6c4u4AtaboAt failed, reason: read ECONNRESET
+SUCCESS: comm-018-neighborhood-watch-ai -> https://comm-018-neighborhood-watch-n8cx6v79q-worldwidebros-projects.vercel.app
+=== comm-019-community-garden-ai ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Comm-019CommunityGardenAi'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-019-community-garden-ai (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-019-community-garden-ai
+Error: Failed to connect the GitHub repository Worldwidebro/comm-019-community-garden-ai.
+FetchError: request to https://api.vercel.com/v9/projects/prj_RPKyg8e0HVBAot9R847jjZ9PsnwT/link?teamId=team_Fq6YcyYtl6dK6c4u4AtaboAt failed, reason: read ECONNRESET
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-019-community-garden-ai
+Uploading [--------------------] (0.0B/34.9KB)
+Uploading [=====---------------] (9.2KB/34.9KB)
+Uploading [==========----------] (17.5KB/34.9KB)
+Uploading [================----] (28.4KB/34.9KB)
+Uploading [====================] (34.9KB/34.9KB)
+Error: request to https://api.vercel.com/v13/deployments?teamId=team_Fq6YcyYtl6dK6c4u4AtaboAt failed, reason: read ECONNRESET
+DEPLOY FAILED: comm-019-community-garden-ai
+=== comm-020-public-transportation-ai ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Comm-020PublicTransportationAi'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-020-public-transportation-ai (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-020-public-transportation-ai
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-020-public-transportation-ai
+Uploading [--------------------] (0.0B/34.5KB)
+Uploading [======--------------] (11.6KB/34.5KB)
+Uploading [===========---------] (20.1KB/34.5KB)
+Uploading [===============-----] (26.2KB/34.5KB)
+Uploading [====================] (34.5KB/34.5KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-020-public-transportation-ai/HGaFXWwcQ2VbL3iUM54MeLw4Zj3e [3s]
+Production: https://comm-020-public-transportation-7tnf6fn8a-worldwidebros-projects.vercel.app [3s]
+https://comm-020-public-transportation-7tnf6fn8a-worldwidebros-projects.vercel.appBuilding...
+Error: request to https://api.vercel.com/v13/deployments/dpl_HGaFXWwcQ2VbL3iUM54MeLw4Zj3e?teamId=team_Fq6YcyYtl6dK6c4u4AtaboAt failed, reason: read ECONNRESET
+SUCCESS: comm-020-public-transportation-ai -> https://comm-020-public-transportation-7tnf6fn8a-worldwidebros-projects.vercel.app
+=== comm-021-housing-assistance-ai ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Comm-021HousingAssistanceAi'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-021-housing-assistance-ai (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-021-housing-assistance-ai
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-021-housing-assistance-ai
+Uploading [--------------------] (0.0B/34.7KB)
+Uploading [=====---------------] (9.3KB/34.7KB)
+Uploading [==========----------] (18.8KB/34.7KB)
+Uploading [===============-----] (26.5KB/34.7KB)
+Uploading [====================] (34.7KB/34.7KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-021-housing-assistance-ai/EKPAKtCrxnVhN9tsUoqJEoLnusWA [16m]
+Production: https://comm-021-housing-assistance-dzaluhq4m-worldwidebros-projects.vercel.app [16m]
+https://comm-021-housing-assistance-dzaluhq4m-worldwidebros-projects.vercel.appBuilding...
+Error: request to https://api.vercel.com/v13/deployments/dpl_EKPAKtCrxnVhN9tsUoqJEoLnusWA?teamId=team_Fq6YcyYtl6dK6c4u4AtaboAt failed, reason: read ECONNRESET
+SUCCESS: comm-021-housing-assistance-ai -> https://comm-021-housing-assistance-dzaluhq4m-worldwidebros-projects.vercel.app
+=== comm-022-job-training-center ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Comm-022JobTrainingCenter'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-022-job-training-center (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-022-job-training-center
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-022-job-training-center
+Uploading [--------------------] (0.0B/35.2KB)
+Uploading [======--------------] (11.0KB/35.2KB)
+Uploading [==========----------] (18.6KB/35.2KB)
+Uploading [===============-----] (27.3KB/35.2KB)
+Uploading [====================] (35.2KB/35.2KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-022-job-training-center/BseHDNZd88RyrbTMj737W492o9Gu [3s]
+Production: https://comm-022-job-training-center-i3kjhzxte-worldwidebros-projects.vercel.app [3s]
+https://comm-022-job-training-center-i3kjhzxte-worldwidebros-projects.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 46 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+Error: request to https://api.vercel.com/v13/deployments/dpl_BseHDNZd88RyrbTMj737W492o9Gu?teamId=team_Fq6YcyYtl6dK6c4u4AtaboAt failed, reason: read ECONNRESET
+SUCCESS: comm-022-job-training-center -> https://comm-022-job-training-center-i3kjhzxte-worldwidebros-projects.vercel.app
+=== comm-023-elder-companion-ai ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Comm-023ElderCompanionAi'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-023-elder-companion-ai (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-023-elder-companion-ai
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-023-elder-companion-ai
+Uploading [--------------------] (0.0B/34.6KB)
+Uploading [=====---------------] (9.1KB/34.6KB)
+Uploading [==========----------] (17.6KB/34.6KB)
+Uploading [===============-----] (26.6KB/34.6KB)
+Uploading [====================] (34.6KB/34.6KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-023-elder-companion-ai/6x6wLxzzba9iwZLK8X9rmwYjsUfs [3s]
+Production: https://comm-023-elder-companion-pyuq6z5a9-worldwidebros-projects.vercel.app [3s]
+https://comm-023-elder-companion-pyuq6z5a9-worldwidebros-projects.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 46 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+Building: added 344 packages in 35s
+Building: 141 packages are looking for funding
+Building: run `npm fund` for details
+Building: Detected Next.js version: 16.2.10
+Building: Running "npm run build"
+Building: > comm-023-elder-companion-ai@0.1.0 build
+Building: > next build
+Building: Applying modifyConfig from Vercel
+Building: Attention: Next.js now collects completely anonymous telemetry regarding usage.
+Building: This information is used to shape Next.js' roadmap and prioritize features.
+Building: You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+Building: https://nextjs.org/telemetry
+Building: ▲ Next.js 16.2.10 (Turbopack)
+Building: ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+Building: Creating an optimized production build ...
+Building: ✓ Compiled successfully in 5.1s
+Building: Running TypeScript ...
+Building: We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+Building: The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+Building: - include was updated to add '.next/dev/types/**/*.ts'
+Building: Finished TypeScript in 2.9s ...
+Building: Collecting page data using 1 worker ...
+Building: Generating static pages using 1 worker (0/11) ...
+Building: Generating static pages using 1 worker (2/11)
+Building: Generating static pages using 1 worker (5/11)
+Building: Generating static pages using 1 worker (8/11)
+Building: ✓ Generating static pages using 1 worker (11/11) in 256ms
+Building: Finalizing page optimization ...
+Building: Running onBuildComplete from Vercel
+Building: Route (app)
+Building: ┌ ○ /
+Building: ├ ○ /_not-found
+Building: ├ ○ /about
+Building: ├ ○ /contact
+Building: ├ ○ /design-system
+Building: ├ ○ /get-involved
+Building: ├ ○ /impact
+Building: ├ ○ /privacy
+Building: ├ ○ /programs
+Building: └ ○ /terms
+Building: ƒ Proxy (Middleware)
+Building: ○  (Static)  prerendered as static content
+Building: Build Completed in /vercel/output [46s]
+Building: Deploying outputs...
+Building: Deployment completed
+Building: Creating build cache...
+Building: Created build cache: 9s
+Building: Uploading build cache [102.83 MB]
+Building: Build cache uploaded: 1.307s
+[2K[1A[2K[GProduction: https://comm-023-elder-companion-pyuq6z5a9-worldwidebros-projects.vercel.app [5m]
+Completing...
+Aliased: https://comm-023-elder-companion-ai.vercel.app [5m]
+
+Common next commands:
+- `vercel inspect comm-023-elder-companion-pyuq6z5a9-worldwidebros-projects.vercel.app --logs`
+- `vercel redeploy comm-023-elder-companion-pyuq6z5a9-worldwidebros-projects.vercel.app`
+SUCCESS: comm-023-elder-companion-ai -> https://comm-023-elder-companion-ai.vercel.app
+=== comm-024-youth-sports-ai ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Comm-024YouthSportsAi'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-024-youth-sports-ai (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-024-youth-sports-ai
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-024-youth-sports-ai
+Uploading [--------------------] (0.0B/34.2KB)
+Uploading [======--------------] (11.4KB/34.2KB)
+Uploading [==========----------] (18.0KB/34.2KB)
+Uploading [=================---] (29.4KB/34.2KB)
+Uploading [====================] (34.2KB/34.2KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-024-youth-sports-ai/BUX5LTUHc49nfVmMcwoEUY4hbFyZ [2s]
+Production: https://comm-024-youth-sports-rmp3v5q95-worldwidebros-projects.vercel.app [2s]
+https://comm-024-youth-sports-rmp3v5q95-worldwidebros-projects.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 46 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+Building: added 344 packages in 33s
+Building: 141 packages are looking for funding
+Building: run `npm fund` for details
+Building: Detected Next.js version: 16.2.10
+Building: Running "npm run build"
+Building: > comm-024-youth-sports-ai@0.1.0 build
+Building: > next build
+Building: Applying modifyConfig from Vercel
+Building: Attention: Next.js now collects completely anonymous telemetry regarding usage.
+Building: This information is used to shape Next.js' roadmap and prioritize features.
+Building: You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+Building: https://nextjs.org/telemetry
+Building: ▲ Next.js 16.2.10 (Turbopack)
+Building: ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+Building: Creating an optimized production build ...
+Building: ✓ Compiled successfully in 5.4s
+Building: Running TypeScript ...
+Building: We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+Building: The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+Building: - include was updated to add '.next/dev/types/**/*.ts'
+Building: Finished TypeScript in 3.1s ...
+Building: Collecting page data using 1 worker ...
+Building: Generating static pages using 1 worker (0/11) ...
+Building: Generating static pages using 1 worker (2/11)
+Building: Generating static pages using 1 worker (5/11)
+Building: Generating static pages using 1 worker (8/11)
+Building: ✓ Generating static pages using 1 worker (11/11) in 255ms
+Building: Finalizing page optimization ...
+Building: Running onBuildComplete from Vercel
+Building: Route (app)
+Building: ┌ ○ /
+Building: ├ ○ /_not-found
+Building: ├ ○ /about
+Building: ├ ○ /contact
+Building: ├ ○ /design-system
+Building: ├ ○ /get-involved
+Building: ├ ○ /impact
+Building: ├ ○ /privacy
+Building: ├ ○ /programs
+Building: └ ○ /terms
+Building: ƒ Proxy (Middleware)
+Building: ○  (Static)  prerendered as static content
+Building: Build Completed in /vercel/output [44s]
+Building: Deploying outputs...
+[2K[1A[2K[GProduction: https://comm-024-youth-sports-rmp3v5q95-worldwidebros-projects.vercel.app [56s]
+Completing...
+Aliased: https://comm-024-youth-sports-ai.vercel.app [1m]
+
+Common next commands:
+- `vercel inspect comm-024-youth-sports-rmp3v5q95-worldwidebros-projects.vercel.app --logs`
+- `vercel redeploy comm-024-youth-sports-rmp3v5q95-worldwidebros-projects.vercel.app`
+SUCCESS: comm-024-youth-sports-ai -> https://comm-024-youth-sports-ai.vercel.app
+=== comm-025-community-legal-aid ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Comm-025CommunityLegalAid'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-025-community-legal-aid (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-025-community-legal-aid
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-025-community-legal-aid
+Uploading [--------------------] (0.0B/34.3KB)
+Uploading [=====---------------] (9.4KB/34.3KB)
+Uploading [==========----------] (17.1KB/34.3KB)
+Uploading [===============-----] (26.8KB/34.3KB)
+Uploading [====================] (34.3KB/34.3KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-025-community-legal-aid/7ig8rtqPR4PygL3iWhNHebtUm3c1 [3s]
+Production: https://comm-025-community-legal-m682mluhi-worldwidebros-projects.vercel.app [3s]
+https://comm-025-community-legal-m682mluhi-worldwidebros-projects.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 46 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+Building: added 344 packages in 34s
+Building: 141 packages are looking for funding
+Building: run `npm fund` for details
+Building: Detected Next.js version: 16.2.10
+Building: Running "npm run build"
+Building: > comm-025-community-legal-aid@0.1.0 build
+Building: > next build
+Building: Applying modifyConfig from Vercel
+Building: Attention: Next.js now collects completely anonymous telemetry regarding usage.
+Building: This information is used to shape Next.js' roadmap and prioritize features.
+Building: You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+Building: https://nextjs.org/telemetry
+Building: ▲ Next.js 16.2.10 (Turbopack)
+Building: ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+Building: Creating an optimized production build ...
+Building: ✓ Compiled successfully in 5.0s
+Building: Running TypeScript ...
+Building: We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+Building: The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+Building: - include was updated to add '.next/dev/types/**/*.ts'
+Building: Finished TypeScript in 3.1s ...
+Building: Collecting page data using 1 worker ...
+Building: Generating static pages using 1 worker (0/11) ...
+Building: Generating static pages using 1 worker (2/11)
+Building: Generating static pages using 1 worker (5/11)
+Building: Generating static pages using 1 worker (8/11)
+Building: ✓ Generating static pages using 1 worker (11/11) in 260ms
+Building: Finalizing page optimization ...
+Building: Running onBuildComplete from Vercel
+Building: Route (app)
+Building: ┌ ○ /
+Building: ├ ○ /_not-found
+Building: ├ ○ /about
+Building: ├ ○ /contact
+Building: ├ ○ /design-system
+Building: ├ ○ /get-involved
+Building: ├ ○ /impact
+Building: ├ ○ /privacy
+Building: ├ ○ /programs
+Building: └ ○ /terms
+Building: ƒ Proxy (Middleware)
+Building: ○  (Static)  prerendered as static content
+Building: Build Completed in /vercel/output [45s]
+Building: Deploying outputs...
+Building: Deployment completed
+Building: Creating build cache...
+[2K[1A[2K[GProduction: https://comm-025-community-legal-m682mluhi-worldwidebros-projects.vercel.app [1m]
+Completing...
+Aliased: https://comm-025-community-legal-aid.vercel.app [1m]
+
+Common next commands:
+- `vercel inspect comm-025-community-legal-m682mluhi-worldwidebros-projects.vercel.app --logs`
+- `vercel redeploy comm-025-community-legal-m682mluhi-worldwidebros-projects.vercel.app`
+SUCCESS: comm-025-community-legal-aid -> https://comm-025-community-legal-aid.vercel.app
+=== comm-026-public-education-ai ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Comm-026PublicEducationAi'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-026-public-education-ai (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-026-public-education-ai
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-026-public-education-ai
+Uploading [--------------------] (0.0B/34.1KB)
+Uploading [======--------------] (11.4KB/34.1KB)
+Uploading [==========----------] (18.0KB/34.1KB)
+Uploading [===============-----] (25.9KB/34.1KB)
+Uploading [====================] (34.1KB/34.1KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-026-public-education-ai/FKqko167TSK8RRiQB4jUzmDfPUVp [3s]
+Production: https://comm-026-public-education-r74c1o2l5-worldwidebros-projects.vercel.app [3s]
+https://comm-026-public-education-r74c1o2l5-worldwidebros-projects.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 46 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+Building: added 344 packages in 43s
+Building: 141 packages are looking for funding
+Building: run `npm fund` for details
+Building: Detected Next.js version: 16.2.10
+Building: Running "npm run build"
+Building: > comm-026-public-education-ai@0.1.0 build
+Building: > next build
+Building: Applying modifyConfig from Vercel
+Building: Attention: Next.js now collects completely anonymous telemetry regarding usage.
+Building: This information is used to shape Next.js' roadmap and prioritize features.
+Building: You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+Building: https://nextjs.org/telemetry
+Building: ▲ Next.js 16.2.10 (Turbopack)
+Building: ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+Building: Creating an optimized production build ...
+Building: ✓ Compiled successfully in 5.1s
+Building: Running TypeScript ...
+Building: We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+Building: The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+Building: - include was updated to add '.next/dev/types/**/*.ts'
+Building: Finished TypeScript in 3.1s ...
+Building: Collecting page data using 1 worker ...
+Building: Generating static pages using 1 worker (0/11) ...
+Building: Generating static pages using 1 worker (2/11)
+Building: Generating static pages using 1 worker (5/11)
+Building: Generating static pages using 1 worker (8/11)
+Building: ✓ Generating static pages using 1 worker (11/11) in 249ms
+Building: Finalizing page optimization ...
+Building: Running onBuildComplete from Vercel
+Building: Route (app)
+Building: ┌ ○ /
+Building: ├ ○ /_not-found
+Building: ├ ○ /about
+Building: ├ ○ /contact
+Building: ├ ○ /design-system
+Building: ├ ○ /get-involved
+Building: ├ ○ /impact
+Building: ├ ○ /privacy
+Building: ├ ○ /programs
+Building: └ ○ /terms
+Building: ƒ Proxy (Middleware)
+Building: ○  (Static)  prerendered as static content
+Building: Build Completed in /vercel/output [54s]
+Building: Deploying outputs...
+[2K[1A[2K[GProduction: https://comm-026-public-education-r74c1o2l5-worldwidebros-projects.vercel.app [1m]
+Completing...
+Aliased: https://comm-026-public-education-ai.vercel.app [1m]
+
+Common next commands:
+- `vercel inspect comm-026-public-education-r74c1o2l5-worldwidebros-projects.vercel.app --logs`
+- `vercel redeploy comm-026-public-education-r74c1o2l5-worldwidebros-projects.vercel.app`
+SUCCESS: comm-026-public-education-ai -> https://comm-026-public-education-ai.vercel.app
+=== comm-027-local-government-ai ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Comm-027LocalGovernmentAi'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-027-local-government-ai (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-027-local-government-ai
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-027-local-government-ai
+Uploading [--------------------] (0.0B/34.3KB)
+Uploading [=====---------------] (8.9KB/34.3KB)
+Uploading [==========----------] (17.2KB/34.3KB)
+Uploading [===============-----] (26.8KB/34.3KB)
+Uploading [====================] (34.3KB/34.3KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-027-local-government-ai/5FCrUQUVHwzWyY6CdMg5CdxCneEJ [2s]
+Production: https://comm-027-local-government-fn0za7pdq-worldwidebros-projects.vercel.app [2s]
+https://comm-027-local-government-fn0za7pdq-worldwidebros-projects.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 46 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+Building: added 344 packages in 32s
+Building: 141 packages are looking for funding
+Building: run `npm fund` for details
+Building: Detected Next.js version: 16.2.10
+Building: Running "npm run build"
+Building: > comm-027-local-government-ai@0.1.0 build
+Building: > next build
+Building: Applying modifyConfig from Vercel
+Building: Attention: Next.js now collects completely anonymous telemetry regarding usage.
+Building: This information is used to shape Next.js' roadmap and prioritize features.
+Building: You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+Building: https://nextjs.org/telemetry
+Building: ▲ Next.js 16.2.10 (Turbopack)
+Building: ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+Building: Creating an optimized production build ...
+Building: ✓ Compiled successfully in 5.4s
+Building: Running TypeScript ...
+Building: We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+Building: The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+Building: - include was updated to add '.next/dev/types/**/*.ts'
+Building: Finished TypeScript in 3.0s ...
+Building: Collecting page data using 1 worker ...
+Building: Generating static pages using 1 worker (0/11) ...
+Building: Generating static pages using 1 worker (2/11)
+Building: Generating static pages using 1 worker (5/11)
+Building: Generating static pages using 1 worker (8/11)
+Building: ✓ Generating static pages using 1 worker (11/11) in 255ms
+Building: Finalizing page optimization ...
+Building: Running onBuildComplete from Vercel
+Building: Route (app)
+Building: ┌ ○ /
+Building: ├ ○ /_not-found
+Building: ├ ○ /about
+Building: ├ ○ /contact
+Building: ├ ○ /design-system
+Building: ├ ○ /get-involved
+Building: ├ ○ /impact
+Building: ├ ○ /privacy
+Building: ├ ○ /programs
+Building: └ ○ /terms
+Building: ƒ Proxy (Middleware)
+Building: ○  (Static)  prerendered as static content
+Building: Build Completed in /vercel/output [43s]
+Building: Deploying outputs...
+[2K[1A[2K[GProduction: https://comm-027-local-government-fn0za7pdq-worldwidebros-projects.vercel.app [57s]
+Completing...
+Aliased: https://comm-027-local-government-ai.vercel.app [57s]
+
+Common next commands:
+- `vercel inspect comm-027-local-government-fn0za7pdq-worldwidebros-projects.vercel.app --logs`
+- `vercel redeploy comm-027-local-government-fn0za7pdq-worldwidebros-projects.vercel.app`
+SUCCESS: comm-027-local-government-ai -> https://comm-027-local-government-ai.vercel.app
+=== comm-028-public-safety-ai ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Comm-028PublicSafetyAi'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-028-public-safety-ai (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-028-public-safety-ai
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-028-public-safety-ai
+Uploading [--------------------] (0.0B/34.9KB)
+Uploading [=====---------------] (9.3KB/34.9KB)
+Uploading [==========----------] (18.0KB/34.9KB)
+Uploading [================----] (28.6KB/34.9KB)
+Uploading [====================] (34.9KB/34.9KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-028-public-safety-ai/55UgRhkCc8L852qLbA3NDDdfgfAX [2s]
+Production: https://comm-028-public-safety-ap5s460pc-worldwidebros-projects.vercel.app [2s]
+https://comm-028-public-safety-ap5s460pc-worldwidebros-projects.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 46 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+Building: added 344 packages in 30s
+Building: 141 packages are looking for funding
+Building: run `npm fund` for details
+Building: Detected Next.js version: 16.2.10
+Building: Running "npm run build"
+Building: > comm-028-public-safety-ai@0.1.0 build
+Building: > next build
+Building: Applying modifyConfig from Vercel
+Building: Attention: Next.js now collects completely anonymous telemetry regarding usage.
+Building: This information is used to shape Next.js' roadmap and prioritize features.
+Building: You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+Building: https://nextjs.org/telemetry
+Building: ▲ Next.js 16.2.10 (Turbopack)
+Building: ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+Building: Creating an optimized production build ...
+Building: ✓ Compiled successfully in 5.3s
+Building: Running TypeScript ...
+Building: We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+Building: The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+Building: - include was updated to add '.next/dev/types/**/*.ts'
+Building: Finished TypeScript in 3.1s ...
+Building: Collecting page data using 1 worker ...
+Building: Generating static pages using 1 worker (0/11) ...
+Building: Generating static pages using 1 worker (2/11)
+Building: Generating static pages using 1 worker (5/11)
+Building: Generating static pages using 1 worker (8/11)
+Building: ✓ Generating static pages using 1 worker (11/11) in 254ms
+Building: Finalizing page optimization ...
+Building: Running onBuildComplete from Vercel
+Building: Route (app)
+Building: ┌ ○ /
+Building: ├ ○ /_not-found
+Building: ├ ○ /about
+Building: ├ ○ /contact
+Building: ├ ○ /design-system
+Building: ├ ○ /get-involved
+Building: ├ ○ /impact
+Building: ├ ○ /privacy
+Building: ├ ○ /programs
+Building: └ ○ /terms
+Building: ƒ Proxy (Middleware)
+Building: ○  (Static)  prerendered as static content
+Building: Build Completed in /vercel/output [41s]
+Building: Deploying outputs...
+Building: Deployment completed
+[2K[1A[2K[GProduction: https://comm-028-public-safety-ap5s460pc-worldwidebros-projects.vercel.app [56s]
+Completing...
+Aliased: https://comm-028-public-safety-ai.vercel.app [56s]
+
+Common next commands:
+- `vercel inspect comm-028-public-safety-ap5s460pc-worldwidebros-projects.vercel.app --logs`
+- `vercel redeploy comm-028-public-safety-ap5s460pc-worldwidebros-projects.vercel.app`
+SUCCESS: comm-028-public-safety-ai -> https://comm-028-public-safety-ai.vercel.app
+=== comm-029-community-wellness-ai ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Comm-029CommunityWellnessAi'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-029-community-wellness-ai (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-029-community-wellness-ai
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-029-community-wellness-ai
+Uploading [--------------------] (0.0B/34.6KB)
+Uploading [=====---------------] (8.8KB/34.6KB)
+Uploading [==========----------] (17.7KB/34.6KB)
+Uploading [===============-----] (26.5KB/34.6KB)
+Uploading [====================] (34.6KB/34.6KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-029-community-wellness-ai/FuzkfJcJ1ip6yPmiin2pzgQP2hd7 [3s]
+Production: https://comm-029-community-wellness-1xlnuxwzt-worldwidebros-projects.vercel.app [3s]
+https://comm-029-community-wellness-1xlnuxwzt-worldwidebros-projects.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 46 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+Building: added 344 packages in 34s
+Building: 141 packages are looking for funding
+Building: run `npm fund` for details
+Building: Detected Next.js version: 16.2.10
+Building: Running "npm run build"
+Building: > comm-029-community-wellness-ai@0.1.0 build
+Building: > next build
+Building: Applying modifyConfig from Vercel
+Building: Attention: Next.js now collects completely anonymous telemetry regarding usage.
+Building: This information is used to shape Next.js' roadmap and prioritize features.
+Building: You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+Building: https://nextjs.org/telemetry
+Building: ▲ Next.js 16.2.10 (Turbopack)
+Building: ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+Building: Creating an optimized production build ...
+Building: ✓ Compiled successfully in 5.0s
+Building: Running TypeScript ...
+Building: We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+Building: The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+Building: - include was updated to add '.next/dev/types/**/*.ts'
+Building: Finished TypeScript in 3.0s ...
+Building: Collecting page data using 1 worker ...
+Building: Generating static pages using 1 worker (0/11) ...
+Building: Generating static pages using 1 worker (2/11)
+Building: Generating static pages using 1 worker (5/11)
+Building: Generating static pages using 1 worker (8/11)
+Building: ✓ Generating static pages using 1 worker (11/11) in 244ms
+Building: Finalizing page optimization ...
+Building: Running onBuildComplete from Vercel
+Building: Route (app)
+Building: ┌ ○ /
+Building: ├ ○ /_not-found
+Building: ├ ○ /about
+Building: ├ ○ /contact
+Building: ├ ○ /design-system
+Building: ├ ○ /get-involved
+Building: ├ ○ /impact
+Building: ├ ○ /privacy
+Building: ├ ○ /programs
+Building: └ ○ /terms
+Building: ƒ Proxy (Middleware)
+Building: ○  (Static)  prerendered as static content
+Building: Build Completed in /vercel/output [45s]
+Building: Deploying outputs...
+[2K[1A[2K[GProduction: https://comm-029-community-wellness-1xlnuxwzt-worldwidebros-projects.vercel.app [1m]
+Completing...
+Aliased: https://comm-029-community-wellness-ai.vercel.app [1m]
+
+Common next commands:
+- `vercel inspect comm-029-community-wellness-1xlnuxwzt-worldwidebros-projects.vercel.app --logs`
+- `vercel redeploy comm-029-community-wellness-1xlnuxwzt-worldwidebros-projects.vercel.app`
+SUCCESS: comm-029-community-wellness-ai -> https://comm-029-community-wellness-ai.vercel.app
+=== comm-030-cultural-exchange-ai ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Comm-030CulturalExchangeAi'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-030-cultural-exchange-ai (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-030-cultural-exchange-ai
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-030-cultural-exchange-ai
+Uploading [--------------------] (0.0B/34.4KB)
+Uploading [=====---------------] (9.2KB/34.4KB)
+Uploading [==========----------] (18.9KB/34.4KB)
+Uploading [===============-----] (26.0KB/34.4KB)
+Uploading [====================] (34.4KB/34.4KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-030-cultural-exchange-ai/FrWTGueqKF2YHt4wFR48UaAKoqNE [2s]
+Production: https://comm-030-cultural-exchange-83qm7q25u-worldwidebros-projects.vercel.app [2s]
+https://comm-030-cultural-exchange-83qm7q25u-worldwidebros-projects.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 46 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+Building: added 344 packages in 33s
+Building: 141 packages are looking for funding
+Building: run `npm fund` for details
+Building: Detected Next.js version: 16.2.10
+Building: Running "npm run build"
+Building: > comm-030-cultural-exchange-ai@0.1.0 build
+Building: > next build
+Building: Applying modifyConfig from Vercel
+Building: Attention: Next.js now collects completely anonymous telemetry regarding usage.
+Building: This information is used to shape Next.js' roadmap and prioritize features.
+Building: You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+Building: https://nextjs.org/telemetry
+Building: ▲ Next.js 16.2.10 (Turbopack)
+Building: ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+Building: Creating an optimized production build ...
+Building: ✓ Compiled successfully in 5.2s
+Building: Running TypeScript ...
+Building: We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+Building: The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+Building: - include was updated to add '.next/dev/types/**/*.ts'
+Building: Finished TypeScript in 3.0s ...
+Building: Collecting page data using 1 worker ...
+Building: Generating static pages using 1 worker (0/11) ...
+Building: Generating static pages using 1 worker (2/11)
+Building: Generating static pages using 1 worker (5/11)
+Building: Generating static pages using 1 worker (8/11)
+Building: ✓ Generating static pages using 1 worker (11/11) in 285ms
+Building: Finalizing page optimization ...
+Building: Running onBuildComplete from Vercel
+Building: Route (app)
+Building: ┌ ○ /
+Building: ├ ○ /_not-found
+Building: ├ ○ /about
+Building: ├ ○ /contact
+Building: ├ ○ /design-system
+Building: ├ ○ /get-involved
+Building: ├ ○ /impact
+Building: ├ ○ /privacy
+Building: ├ ○ /programs
+Building: └ ○ /terms
+Building: ƒ Proxy (Middleware)
+Building: ○  (Static)  prerendered as static content
+Building: Build Completed in /vercel/output [44s]
+Building: Deploying outputs...
+[2K[1A[2K[GProduction: https://comm-030-cultural-exchange-83qm7q25u-worldwidebros-projects.vercel.app [57s]
+Completing...
+Aliased: https://comm-030-cultural-exchange-ai.vercel.app [57s]
+
+Common next commands:
+- `vercel inspect comm-030-cultural-exchange-83qm7q25u-worldwidebros-projects.vercel.app --logs`
+- `vercel redeploy comm-030-cultural-exchange-83qm7q25u-worldwidebros-projects.vercel.app`
+SUCCESS: comm-030-cultural-exchange-ai -> https://comm-030-cultural-exchange-ai.vercel.app
+=== comm-031-community-investment-ai ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Comm-031CommunityInvestmentAi'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-031-community-investment-ai (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-031-community-investment-ai
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-031-community-investment-ai
+Uploading [--------------------] (0.0B/34.6KB)
+Uploading [=====---------------] (9.9KB/34.6KB)
+Uploading [==========----------] (17.4KB/34.6KB)
+Uploading [===============-----] (26.5KB/34.6KB)
+Uploading [====================] (34.6KB/34.6KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-031-community-investment-ai/Cipw4FtvRLKSvWaCt5uG5mHyJsYL [2s]
+Production: https://comm-031-community-investment-5m0e4uaii-worldwidebros-projects.vercel.app [2s]
+https://comm-031-community-investment-5m0e4uaii-worldwidebros-projects.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 46 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+Building: added 344 packages in 34s
+Building: 141 packages are looking for funding
+Building: run `npm fund` for details
+Building: Detected Next.js version: 16.2.10
+Building: Running "npm run build"
+Building: > comm-031-community-investment-ai@0.1.0 build
+Building: > next build
+Building: Applying modifyConfig from Vercel
+Building: Attention: Next.js now collects completely anonymous telemetry regarding usage.
+Building: This information is used to shape Next.js' roadmap and prioritize features.
+Building: You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+Building: https://nextjs.org/telemetry
+Building: ▲ Next.js 16.2.10 (Turbopack)
+Building: ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+Building: Creating an optimized production build ...
+Building: ✓ Compiled successfully in 5.2s
+Building: Running TypeScript ...
+Building: We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+Building: The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+Building: - include was updated to add '.next/dev/types/**/*.ts'
+Building: Finished TypeScript in 3.0s ...
+Building: Collecting page data using 1 worker ...
+Building: Generating static pages using 1 worker (0/11) ...
+Building: Generating static pages using 1 worker (2/11)
+Building: Generating static pages using 1 worker (5/11)
+Building: Generating static pages using 1 worker (8/11)
+Building: ✓ Generating static pages using 1 worker (11/11) in 249ms
+Building: Finalizing page optimization ...
+Building: Running onBuildComplete from Vercel
+Building: Route (app)
+Building: ┌ ○ /
+Building: ├ ○ /_not-found
+Building: ├ ○ /about
+Building: ├ ○ /contact
+Building: ├ ○ /design-system
+Building: ├ ○ /get-involved
+Building: ├ ○ /impact
+Building: ├ ○ /privacy
+Building: ├ ○ /programs
+Building: └ ○ /terms
+Building: ƒ Proxy (Middleware)
+Building: ○  (Static)  prerendered as static content
+Building: Build Completed in /vercel/output [45s]
+Building: Deploying outputs...
+Building: Deployment completed
+Building: Creating build cache...
+[2K[1A[2K[GProduction: https://comm-031-community-investment-5m0e4uaii-worldwidebros-projects.vercel.app [1m]
+Completing...
+Aliased: https://comm-031-community-investment-ai.vercel.app [1m]
+
+Common next commands:
+- `vercel inspect comm-031-community-investment-5m0e4uaii-worldwidebros-projects.vercel.app --logs`
+- `vercel redeploy comm-031-community-investment-5m0e4uaii-worldwidebros-projects.vercel.app`
+SUCCESS: comm-031-community-investment-ai -> https://comm-031-community-investment-ai.vercel.app
+=== comm-032-public-health-ai ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Comm-032PublicHealthAi'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-032-public-health-ai (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-032-public-health-ai
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-032-public-health-ai
+Uploading [--------------------] (0.0B/34.2KB)
+Uploading [=====---------------] (8.8KB/34.2KB)
+Uploading [==========----------] (18.3KB/34.2KB)
+Uploading [================----] (27.8KB/34.2KB)
+Uploading [====================] (34.2KB/34.2KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-032-public-health-ai/FoG19a6LHErcuBRCo6i9DumKjRPW [2s]
+Production: https://comm-032-public-health-efy01f3hi-worldwidebros-projects.vercel.app [2s]
+https://comm-032-public-health-efy01f3hi-worldwidebros-projects.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 46 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+Building: added 344 packages in 49s
+Building: 141 packages are looking for funding
+Building: run `npm fund` for details
+Building: Detected Next.js version: 16.2.10
+Building: Running "npm run build"
+Building: > comm-032-public-health-ai@0.1.0 build
+Building: > next build
+Building: Applying modifyConfig from Vercel
+Building: Attention: Next.js now collects completely anonymous telemetry regarding usage.
+Building: This information is used to shape Next.js' roadmap and prioritize features.
+Building: You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+Building: https://nextjs.org/telemetry
+Building: ▲ Next.js 16.2.10 (Turbopack)
+Building: ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+Building: Creating an optimized production build ...
+Building: ✓ Compiled successfully in 4.7s
+Building: Running TypeScript ...
+Building: We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+Building: The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+Building: - include was updated to add '.next/dev/types/**/*.ts'
+Building: Finished TypeScript in 2.9s ...
+Building: Collecting page data using 1 worker ...
+Building: Generating static pages using 1 worker (0/11) ...
+Building: Generating static pages using 1 worker (2/11)
+Building: Generating static pages using 1 worker (5/11)
+Building: Generating static pages using 1 worker (8/11)
+Building: ✓ Generating static pages using 1 worker (11/11) in 265ms
+Building: Finalizing page optimization ...
+Building: Running onBuildComplete from Vercel
+Building: Route (app)
+Building: ┌ ○ /
+Building: ├ ○ /_not-found
+Building: ├ ○ /about
+Building: ├ ○ /contact
+Building: ├ ○ /design-system
+Building: ├ ○ /get-involved
+Building: ├ ○ /impact
+Building: ├ ○ /privacy
+Building: ├ ○ /programs
+Building: └ ○ /terms
+Building: ƒ Proxy (Middleware)
+Building: ○  (Static)  prerendered as static content
+Building: Build Completed in /vercel/output [59s]
+Building: Deploying outputs...
+Building: Deployment completed
+Building: Creating build cache...
+[2K[1A[2K[GProduction: https://comm-032-public-health-efy01f3hi-worldwidebros-projects.vercel.app [1m]
+Completing...
+Aliased: https://comm-032-public-health-ai.vercel.app [1m]
+
+Common next commands:
+- `vercel inspect comm-032-public-health-efy01f3hi-worldwidebros-projects.vercel.app --logs`
+- `vercel redeploy comm-032-public-health-efy01f3hi-worldwidebros-projects.vercel.app`
+SUCCESS: comm-032-public-health-ai -> https://comm-032-public-health-ai.vercel.app
+=== comm-033-youth-innovation-hub ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Comm-033YouthInnovationHub'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-033-youth-innovation-hub (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-033-youth-innovation-hub
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-033-youth-innovation-hub
+Uploading [--------------------] (0.0B/34.6KB)
+Uploading [=====---------------] (8.8KB/34.6KB)
+Uploading [==========----------] (17.7KB/34.6KB)
+Uploading [================----] (28.1KB/34.6KB)
+Uploading [====================] (34.6KB/34.6KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-033-youth-innovation-hub/FcbX9ULAwe3J5BgpmwQ33Gs35Spx [3s]
+Production: https://comm-033-youth-innovation-2wbs0y9d0-worldwidebros-projects.vercel.app [3s]
+https://comm-033-youth-innovation-2wbs0y9d0-worldwidebros-projects.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 46 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+Building: added 344 packages in 38s
+Building: 141 packages are looking for funding
+Building: run `npm fund` for details
+Building: Detected Next.js version: 16.2.10
+Building: Running "npm run build"
+Building: > comm-033-youth-innovation-hub@0.1.0 build
+Building: > next build
+Building: Applying modifyConfig from Vercel
+Building: Attention: Next.js now collects completely anonymous telemetry regarding usage.
+Building: This information is used to shape Next.js' roadmap and prioritize features.
+Building: You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+Building: https://nextjs.org/telemetry
+Building: ▲ Next.js 16.2.10 (Turbopack)
+Building: ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+Building: Creating an optimized production build ...
+Building: ✓ Compiled successfully in 5.1s
+Building: Running TypeScript ...
+Building: We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+Building: The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+Building: - include was updated to add '.next/dev/types/**/*.ts'
+Building: Finished TypeScript in 3.0s ...
+Building: Collecting page data using 1 worker ...
+Building: Generating static pages using 1 worker (0/11) ...
+Building: Generating static pages using 1 worker (2/11)
+Building: Generating static pages using 1 worker (5/11)
+Building: Generating static pages using 1 worker (8/11)
+Building: ✓ Generating static pages using 1 worker (11/11) in 246ms
+Building: Finalizing page optimization ...
+Building: Running onBuildComplete from Vercel
+Building: Route (app)
+Building: ┌ ○ /
+Building: ├ ○ /_not-found
+Building: ├ ○ /about
+Building: ├ ○ /contact
+Building: ├ ○ /design-system
+Building: ├ ○ /get-involved
+Building: ├ ○ /impact
+Building: ├ ○ /privacy
+Building: ├ ○ /programs
+Building: └ ○ /terms
+Building: ƒ Proxy (Middleware)
+Building: ○  (Static)  prerendered as static content
+Building: Build Completed in /vercel/output [49s]
+Building: Deploying outputs...
+[2K[1A[2K[GProduction: https://comm-033-youth-innovation-2wbs0y9d0-worldwidebros-projects.vercel.app [1m]
+Completing...
+Aliased: https://comm-033-youth-innovation-hub.vercel.app [1m]
+
+Common next commands:
+- `vercel inspect comm-033-youth-innovation-2wbs0y9d0-worldwidebros-projects.vercel.app --logs`
+- `vercel redeploy comm-033-youth-innovation-2wbs0y9d0-worldwidebros-projects.vercel.app`
+SUCCESS: comm-033-youth-innovation-hub -> https://comm-033-youth-innovation-hub.vercel.app
+=== comm-034-senior-tech-support ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Comm-034SeniorTechSupport'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-034-senior-tech-support (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-034-senior-tech-support
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-034-senior-tech-support
+Uploading [--------------------] (0.0B/34.7KB)
+Uploading [=====---------------] (10.1KB/34.7KB)
+Uploading [==========----------] (18.3KB/34.7KB)
+Uploading [===============-----] (27.2KB/34.7KB)
+Uploading [====================] (34.7KB/34.7KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-034-senior-tech-support/DebUYsnrsHe9CHZqALFRQJfuTXGC [2s]
+Production: https://comm-034-senior-tech-support-p6szatetq-worldwidebros-projects.vercel.app [2s]
+https://comm-034-senior-tech-support-p6szatetq-worldwidebros-projects.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 46 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+Building: added 344 packages in 34s
+Building: 141 packages are looking for funding
+Building: run `npm fund` for details
+Building: Detected Next.js version: 16.2.10
+Building: Running "npm run build"
+Building: > comm-034-senior-tech-support@0.1.0 build
+Building: > next build
+Building: Applying modifyConfig from Vercel
+Building: Attention: Next.js now collects completely anonymous telemetry regarding usage.
+Building: This information is used to shape Next.js' roadmap and prioritize features.
+Building: You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+Building: https://nextjs.org/telemetry
+Building: ▲ Next.js 16.2.10 (Turbopack)
+Building: ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+Building: Creating an optimized production build ...
+Building: ✓ Compiled successfully in 5.4s
+Building: Running TypeScript ...
+Building: We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+Building: The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+Building: - include was updated to add '.next/dev/types/**/*.ts'
+Building: Finished TypeScript in 3.1s ...
+Building: Collecting page data using 1 worker ...
+Building: Generating static pages using 1 worker (0/11) ...
+Building: Generating static pages using 1 worker (2/11)
+Building: Generating static pages using 1 worker (5/11)
+Building: Generating static pages using 1 worker (8/11)
+Building: ✓ Generating static pages using 1 worker (11/11) in 257ms
+Building: Finalizing page optimization ...
+Building: Running onBuildComplete from Vercel
+Building: Route (app)
+Building: ┌ ○ /
+Building: ├ ○ /_not-found
+Building: ├ ○ /about
+Building: ├ ○ /contact
+Building: ├ ○ /design-system
+Building: ├ ○ /get-involved
+Building: ├ ○ /impact
+Building: ├ ○ /privacy
+Building: ├ ○ /programs
+Building: └ ○ /terms
+Building: ƒ Proxy (Middleware)
+Building: ○  (Static)  prerendered as static content
+Building: Build Completed in /vercel/output [46s]
+Building: Deploying outputs...
+Building: Deployment completed
+Building: Creating build cache...
+[2K[1A[2K[GProduction: https://comm-034-senior-tech-support-p6szatetq-worldwidebros-projects.vercel.app [1m]
+Completing...
+Aliased: https://comm-034-senior-tech-support.vercel.app [1m]
+
+Common next commands:
+- `vercel inspect comm-034-senior-tech-support-p6szatetq-worldwidebros-projects.vercel.app --logs`
+- `vercel redeploy comm-034-senior-tech-support-p6szatetq-worldwidebros-projects.vercel.app`
+SUCCESS: comm-034-senior-tech-support -> https://comm-034-senior-tech-support.vercel.app
+=== comm-035-community-arts-ai ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Comm-035CommunityArtsAi'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-035-community-arts-ai (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-035-community-arts-ai
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-035-community-arts-ai
+Uploading [--------------------] (0.0B/34.1KB)
+Uploading [=====---------------] (9.4KB/34.1KB)
+Uploading [==========----------] (17.5KB/34.1KB)
+Uploading [===============-----] (26.8KB/34.1KB)
+Uploading [====================] (34.1KB/34.1KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-035-community-arts-ai/3R9iaAexzzyQk5nDm4mwC2Htkx3E [3s]
+Production: https://comm-035-community-arts-cjpspcct0-worldwidebros-projects.vercel.app [3s]
+https://comm-035-community-arts-cjpspcct0-worldwidebros-projects.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 46 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+Building: added 344 packages in 35s
+Building: 141 packages are looking for funding
+Building: run `npm fund` for details
+Building: Detected Next.js version: 16.2.10
+Building: Running "npm run build"
+Building: > comm-035-community-arts-ai@0.1.0 build
+Building: > next build
+Building: Applying modifyConfig from Vercel
+Building: Attention: Next.js now collects completely anonymous telemetry regarding usage.
+Building: This information is used to shape Next.js' roadmap and prioritize features.
+Building: You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+Building: https://nextjs.org/telemetry
+Building: ▲ Next.js 16.2.10 (Turbopack)
+Building: ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+Building: Creating an optimized production build ...
+Building: ✓ Compiled successfully in 5.4s
+Building: Running TypeScript ...
+Building: We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+Building: The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+Building: - include was updated to add '.next/dev/types/**/*.ts'
+Building: Finished TypeScript in 2.9s ...
+Building: Collecting page data using 1 worker ...
+Building: Generating static pages using 1 worker (0/11) ...
+Building: Generating static pages using 1 worker (2/11)
+Building: Generating static pages using 1 worker (5/11)
+Building: Generating static pages using 1 worker (8/11)
+Building: ✓ Generating static pages using 1 worker (11/11) in 286ms
+Building: Finalizing page optimization ...
+Building: Running onBuildComplete from Vercel
+Building: Route (app)
+Building: ┌ ○ /
+Building: ├ ○ /_not-found
+Building: ├ ○ /about
+Building: ├ ○ /contact
+Building: ├ ○ /design-system
+Building: ├ ○ /get-involved
+Building: ├ ○ /impact
+Building: ├ ○ /privacy
+Building: ├ ○ /programs
+Building: └ ○ /terms
+Building: ƒ Proxy (Middleware)
+Building: ○  (Static)  prerendered as static content
+Building: Build Completed in /vercel/output [46s]
+Building: Deploying outputs...
+Building: Deployment completed
+Building: Creating build cache...
+[2K[1A[2K[GProduction: https://comm-035-community-arts-cjpspcct0-worldwidebros-projects.vercel.app [1m]
+Completing...
+Aliased: https://comm-035-community-arts-ai.vercel.app [1m]
+
+Common next commands:
+- `vercel inspect comm-035-community-arts-cjpspcct0-worldwidebros-projects.vercel.app --logs`
+- `vercel redeploy comm-035-community-arts-cjpspcct0-worldwidebros-projects.vercel.app`
+SUCCESS: comm-035-community-arts-ai -> https://comm-035-community-arts-ai.vercel.app
+=== comm-036-public-infrastructure-ai ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Comm-036PublicInfrastructureAi'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-036-public-infrastructure-ai (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-036-public-infrastructure-ai
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-036-public-infrastructure-ai
+Uploading [--------------------] (0.0B/34.8KB)
+Uploading [=====---------------] (9.6KB/34.8KB)
+Uploading [==========----------] (18.5KB/34.8KB)
+Uploading [===============-----] (26.4KB/34.8KB)
+Uploading [====================] (34.8KB/34.8KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-036-public-infrastructure-ai/7ESnvYK9Tg66upU2cNATGhKytL9F [2s]
+Production: https://comm-036-public-infrastructure-h5fl0uywm-worldwidebros-projects.vercel.app [2s]
+https://comm-036-public-infrastructure-h5fl0uywm-worldwidebros-projects.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 46 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+Building: added 344 packages in 34s
+Building: 141 packages are looking for funding
+Building: run `npm fund` for details
+Building: Detected Next.js version: 16.2.10
+Building: Running "npm run build"
+Building: > comm-036-public-infrastructure-ai@0.1.0 build
+Building: > next build
+Building: Applying modifyConfig from Vercel
+Building: Attention: Next.js now collects completely anonymous telemetry regarding usage.
+Building: This information is used to shape Next.js' roadmap and prioritize features.
+Building: You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+Building: https://nextjs.org/telemetry
+Building: ▲ Next.js 16.2.10 (Turbopack)
+Building: ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+Building: Creating an optimized production build ...
+Building: ✓ Compiled successfully in 5.3s
+Building: Running TypeScript ...
+Building: We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+Building: The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+Building: - include was updated to add '.next/dev/types/**/*.ts'
+Building: Finished TypeScript in 2.9s ...
+Building: Collecting page data using 1 worker ...
+Building: Generating static pages using 1 worker (0/11) ...
+Building: Generating static pages using 1 worker (2/11)
+Building: Generating static pages using 1 worker (5/11)
+Building: Generating static pages using 1 worker (8/11)
+Building: ✓ Generating static pages using 1 worker (11/11) in 242ms
+Building: Finalizing page optimization ...
+Building: Running onBuildComplete from Vercel
+Building: Route (app)
+Building: ┌ ○ /
+Building: ├ ○ /_not-found
+Building: ├ ○ /about
+Building: ├ ○ /contact
+Building: ├ ○ /design-system
+Building: ├ ○ /get-involved
+Building: ├ ○ /impact
+Building: ├ ○ /privacy
+Building: ├ ○ /programs
+Building: └ ○ /terms
+Building: ƒ Proxy (Middleware)
+Building: ○  (Static)  prerendered as static content
+Building: Build Completed in /vercel/output [45s]
+Building: Deploying outputs...
+Building: Deployment completed
+Building: Creating build cache...
+[2K[1A[2K[GProduction: https://comm-036-public-infrastructure-h5fl0uywm-worldwidebros-projects.vercel.app [1m]
+Completing...
+Aliased: https://comm-036-public-infrastructure-ai.vercel.app [1m]
+
+Common next commands:
+- `vercel inspect comm-036-public-infrastructure-h5fl0uywm-worldwidebros-projects.vercel.app --logs`
+- `vercel redeploy comm-036-public-infrastructure-h5fl0uywm-worldwidebros-projects.vercel.app`
+SUCCESS: comm-036-public-infrastructure-ai -> https://comm-036-public-infrastructure-ai.vercel.app
+=== comm-037-neighborhood-development-ai ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Comm-037NeighborhoodDevelopmentAi'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-037-neighborhood-development-ai (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-037-neighborhood-development-ai
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-037-neighborhood-development-ai
+Uploading [--------------------] (0.0B/35.2KB)
+Uploading [=====---------------] (10.4KB/35.2KB)
+Uploading [==========----------] (18.7KB/35.2KB)
+Uploading [===============-----] (27.2KB/35.2KB)
+Uploading [====================] (35.2KB/35.2KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-037-neighborhood-development-ai/G8fu89EiF3ueUXksyaZHKPTM2JbN [3s]
+Production: https://comm-037-neighborhood-development-hcnv5icw6.vercel.app [3s]
+https://comm-037-neighborhood-development-hcnv5icw6.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 46 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+Building: added 344 packages in 36s
+Building: 141 packages are looking for funding
+Building: run `npm fund` for details
+Building: Detected Next.js version: 16.2.10
+Building: Running "npm run build"
+Building: > comm-037-neighborhood-development-ai@0.1.0 build
+Building: > next build
+Building: Applying modifyConfig from Vercel
+Building: Attention: Next.js now collects completely anonymous telemetry regarding usage.
+Building: This information is used to shape Next.js' roadmap and prioritize features.
+Building: You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+Building: https://nextjs.org/telemetry
+Building: ▲ Next.js 16.2.10 (Turbopack)
+Building: ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+Building: Creating an optimized production build ...
+Building: ✓ Compiled successfully in 5.2s
+Building: Running TypeScript ...
+Building: We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+Building: The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+Building: - include was updated to add '.next/dev/types/**/*.ts'
+Building: Finished TypeScript in 2.9s ...
+Building: Collecting page data using 1 worker ...
+Building: Generating static pages using 1 worker (0/11) ...
+Building: Generating static pages using 1 worker (2/11)
+Building: Generating static pages using 1 worker (5/11)
+Building: Generating static pages using 1 worker (8/11)
+Building: ✓ Generating static pages using 1 worker (11/11) in 256ms
+Building: Finalizing page optimization ...
+Building: Running onBuildComplete from Vercel
+Building: Route (app)
+Building: ┌ ○ /
+Building: ├ ○ /_not-found
+Building: ├ ○ /about
+Building: ├ ○ /contact
+Building: ├ ○ /design-system
+Building: ├ ○ /get-involved
+Building: ├ ○ /impact
+Building: ├ ○ /privacy
+Building: ├ ○ /programs
+Building: └ ○ /terms
+Building: ƒ Proxy (Middleware)
+Building: ○  (Static)  prerendered as static content
+Building: Build Completed in /vercel/output [47s]
+Building: Deploying outputs...
+[2K[1A[2K[GProduction: https://comm-037-neighborhood-development-hcnv5icw6.vercel.app [1m]
+Completing...
+Aliased: https://comm-037-neighborhood-development-a.vercel.app [1m]
+
+Common next commands:
+- `vercel inspect comm-037-neighborhood-development-hcnv5icw6.vercel.app --logs`
+- `vercel redeploy comm-037-neighborhood-development-hcnv5icw6.vercel.app`
+SUCCESS: comm-037-neighborhood-development-ai -> https://comm-037-neighborhood-development-a.vercel.app
+=== comm-038-community-policing-ai ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Comm-038CommunityPolicingAi'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-038-community-policing-ai (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-038-community-policing-ai
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-038-community-policing-ai
+Uploading [--------------------] (0.0B/34.5KB)
+Uploading [=====---------------] (8.9KB/34.5KB)
+Uploading [==========----------] (17.3KB/34.5KB)
+Uploading [===============-----] (26.5KB/34.5KB)
+Uploading [====================] (34.5KB/34.5KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-038-community-policing-ai/ASDDCCTsN3cNVhV4cttm3jMXCUpQ [2s]
+Production: https://comm-038-community-policing-ncel5fq9q-worldwidebros-projects.vercel.app [2s]
+https://comm-038-community-policing-ncel5fq9q-worldwidebros-projects.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 46 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+Building: added 344 packages in 30s
+Building: 141 packages are looking for funding
+Building: run `npm fund` for details
+Building: Detected Next.js version: 16.2.10
+Building: Running "npm run build"
+Building: > comm-038-community-policing-ai@0.1.0 build
+Building: > next build
+Building: Applying modifyConfig from Vercel
+Building: Attention: Next.js now collects completely anonymous telemetry regarding usage.
+Building: This information is used to shape Next.js' roadmap and prioritize features.
+Building: You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+Building: https://nextjs.org/telemetry
+Building: ▲ Next.js 16.2.10 (Turbopack)
+Building: ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+Building: Creating an optimized production build ...
+Building: ✓ Compiled successfully in 4.4s
+Building: Running TypeScript ...
+Building: We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+Building: The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+Building: - include was updated to add '.next/dev/types/**/*.ts'
+Building: Finished TypeScript in 2.9s ...
+Building: Collecting page data using 1 worker ...
+Building: Generating static pages using 1 worker (0/11) ...
+Building: Generating static pages using 1 worker (2/11)
+Building: Generating static pages using 1 worker (5/11)
+Building: Generating static pages using 1 worker (8/11)
+Building: ✓ Generating static pages using 1 worker (11/11) in 233ms
+Building: Finalizing page optimization ...
+Building: Running onBuildComplete from Vercel
+Building: Route (app)
+Building: ┌ ○ /
+Building: ├ ○ /_not-found
+Building: ├ ○ /about
+Building: ├ ○ /contact
+Building: ├ ○ /design-system
+Building: ├ ○ /get-involved
+Building: ├ ○ /impact
+Building: ├ ○ /privacy
+Building: ├ ○ /programs
+Building: └ ○ /terms
+Building: ƒ Proxy (Middleware)
+Building: ○  (Static)  prerendered as static content
+Building: Build Completed in /vercel/output [39s]
+Building: Deploying outputs...
+[2K[1A[2K[GProduction: https://comm-038-community-policing-ncel5fq9q-worldwidebros-projects.vercel.app [51s]
+Completing...
+Aliased: https://comm-038-community-policing-ai.vercel.app [51s]
+
+Common next commands:
+- `vercel inspect comm-038-community-policing-ncel5fq9q-worldwidebros-projects.vercel.app --logs`
+- `vercel redeploy comm-038-community-policing-ncel5fq9q-worldwidebros-projects.vercel.app`
+SUCCESS: comm-038-community-policing-ai -> https://comm-038-community-policing-ai.vercel.app
+=== comm-039-public-space-ai ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Comm-039PublicSpaceAi'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-039-public-space-ai (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-039-public-space-ai
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-039-public-space-ai
+Uploading [--------------------] (0.0B/34KB)
+Uploading [=====---------------] (9.0KB/34KB)
+Uploading [===========---------] (20.1KB/34KB)
+Uploading [===============-----] (27.1KB/34KB)
+Uploading [====================] (34.0KB/34KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-039-public-space-ai/GeFwxiFaV1NoiDfMQBVzZoefFAKC [13s]
+Production: https://comm-039-public-space-ams2lwgha-worldwidebros-projects.vercel.app [13s]
+https://comm-039-public-space-ams2lwgha-worldwidebros-projects.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 46 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+Building: added 344 packages in 34s
+Building: 141 packages are looking for funding
+Building: run `npm fund` for details
+Building: Detected Next.js version: 16.2.10
+Building: Running "npm run build"
+Building: > comm-039-public-space-ai@0.1.0 build
+Building: > next build
+Building: Applying modifyConfig from Vercel
+Building: Attention: Next.js now collects completely anonymous telemetry regarding usage.
+Building: This information is used to shape Next.js' roadmap and prioritize features.
+Building: You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+Building: https://nextjs.org/telemetry
+Building: ▲ Next.js 16.2.10 (Turbopack)
+Building: ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+Building: Creating an optimized production build ...
+Building: ✓ Compiled successfully in 5.4s
+Building: Running TypeScript ...
+Building: We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+Building: The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+Building: - include was updated to add '.next/dev/types/**/*.ts'
+Building: Finished TypeScript in 3.0s ...
+Building: Collecting page data using 1 worker ...
+Building: Generating static pages using 1 worker (0/11) ...
+Building: Generating static pages using 1 worker (2/11)
+Building: Generating static pages using 1 worker (5/11)
+Building: Generating static pages using 1 worker (8/11)
+Building: ✓ Generating static pages using 1 worker (11/11) in 254ms
+Building: Finalizing page optimization ...
+Building: Running onBuildComplete from Vercel
+Building: Route (app)
+Building: ┌ ○ /
+Building: ├ ○ /_not-found
+Building: ├ ○ /about
+Building: ├ ○ /contact
+Building: ├ ○ /design-system
+Building: ├ ○ /get-involved
+Building: ├ ○ /impact
+Building: ├ ○ /privacy
+Building: ├ ○ /programs
+Building: └ ○ /terms
+Building: ƒ Proxy (Middleware)
+Building: ○  (Static)  prerendered as static content
+Building: Build Completed in /vercel/output [45s]
+Building: Deploying outputs...
+Building: Deployment completed
+Building: Creating build cache...
+[2K[1A[2K[GProduction: https://comm-039-public-space-ams2lwgha-worldwidebros-projects.vercel.app [1m]
+Completing...
+Aliased: https://comm-039-public-space-ai.vercel.app [1m]
+
+Common next commands:
+- `vercel inspect comm-039-public-space-ams2lwgha-worldwidebros-projects.vercel.app --logs`
+- `vercel redeploy comm-039-public-space-ams2lwgha-worldwidebros-projects.vercel.app`
+SUCCESS: comm-039-public-space-ai -> https://comm-039-public-space-ai.vercel.app
+=== comm-040-community-recycling-ai ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Comm-040CommunityRecyclingAi'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-040-community-recycling-ai (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-040-community-recycling-ai
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-040-community-recycling-ai
+Uploading [--------------------] (0.0B/34.6KB)
+Uploading [=====---------------] (9.3KB/34.6KB)
+Uploading [==========----------] (17.3KB/34.6KB)
+Uploading [===============-----] (25.9KB/34.6KB)
+Uploading [====================] (34.6KB/34.6KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-040-community-recycling-ai/6SPSXQj6ZufJzBhAoD7r4TxF6n7t [2s]
+Production: https://comm-040-community-recycling-awt4mvjwq-worldwidebros-projects.vercel.app [2s]
+https://comm-040-community-recycling-awt4mvjwq-worldwidebros-projects.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 46 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+Building: added 344 packages in 36s
+Building: 141 packages are looking for funding
+Building: run `npm fund` for details
+Building: Detected Next.js version: 16.2.10
+Building: Running "npm run build"
+Building: > comm-040-community-recycling-ai@0.1.0 build
+Building: > next build
+Building: Applying modifyConfig from Vercel
+Building: Attention: Next.js now collects completely anonymous telemetry regarding usage.
+Building: This information is used to shape Next.js' roadmap and prioritize features.
+Building: You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+Building: https://nextjs.org/telemetry
+Building: ▲ Next.js 16.2.10 (Turbopack)
+Building: ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+Building: Creating an optimized production build ...
+Building: ✓ Compiled successfully in 5.4s
+Building: Running TypeScript ...
+Building: We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+Building: The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+Building: - include was updated to add '.next/dev/types/**/*.ts'
+Building: Finished TypeScript in 3.0s ...
+Building: Collecting page data using 1 worker ...
+Building: Generating static pages using 1 worker (0/11) ...
+Building: Generating static pages using 1 worker (2/11)
+Building: Generating static pages using 1 worker (5/11)
+Building: Generating static pages using 1 worker (8/11)
+Building: ✓ Generating static pages using 1 worker (11/11) in 250ms
+Building: Finalizing page optimization ...
+Building: Running onBuildComplete from Vercel
+Building: Route (app)
+Building: ┌ ○ /
+Building: ├ ○ /_not-found
+Building: ├ ○ /about
+Building: ├ ○ /contact
+Building: ├ ○ /design-system
+Building: ├ ○ /get-involved
+Building: ├ ○ /impact
+Building: ├ ○ /privacy
+Building: ├ ○ /programs
+Building: └ ○ /terms
+Building: ƒ Proxy (Middleware)
+Building: ○  (Static)  prerendered as static content
+Building: Build Completed in /vercel/output [47s]
+Building: Deploying outputs...
+[2K[1A[2K[GProduction: https://comm-040-community-recycling-awt4mvjwq-worldwidebros-projects.vercel.app [60s]
+Completing...
+Aliased: https://comm-040-community-recycling-ai.vercel.app [60s]
+
+Common next commands:
+- `vercel inspect comm-040-community-recycling-awt4mvjwq-worldwidebros-projects.vercel.app --logs`
+- `vercel redeploy comm-040-community-recycling-awt4mvjwq-worldwidebros-projects.vercel.app`
+SUCCESS: comm-040-community-recycling-ai -> https://comm-040-community-recycling-ai.vercel.app
+=== comm-041-public-wi-fi-ai ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Comm-041PublicWiFiAi'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-041-public-wi-fi-ai (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-041-public-wi-fi-ai
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-041-public-wi-fi-ai
+Uploading [--------------------] (0.0B/34.8KB)
+Uploading [=====---------------] (9.8KB/34.8KB)
+Uploading [==========----------] (18.7KB/34.8KB)
+Uploading [================----] (28.2KB/34.8KB)
+Uploading [====================] (34.8KB/34.8KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-041-public-wi-fi-ai/4qd1od8YqRTwLnrRm5XKRg6Heheg [3s]
+Production: https://comm-041-public-wi-fi-cnj10dvy2-worldwidebros-projects.vercel.app [3s]
+https://comm-041-public-wi-fi-cnj10dvy2-worldwidebros-projects.vercel.appBuilding...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Previous build caches not available.
+Building: Downloading 46 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+Building: added 344 packages in 35s
+Building: 141 packages are looking for funding
+Building: run `npm fund` for details
+Building: Detected Next.js version: 16.2.10
+Building: Running "npm run build"
+Building: > comm-041-public-wi-fi-ai@0.1.0 build
+Building: > next build
+Building: Applying modifyConfig from Vercel
+Building: Attention: Next.js now collects completely anonymous telemetry regarding usage.
+Building: This information is used to shape Next.js' roadmap and prioritize features.
+Building: You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+Building: https://nextjs.org/telemetry
+Building: ▲ Next.js 16.2.10 (Turbopack)
+Building: ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+Building: Creating an optimized production build ...
+Building: ✓ Compiled successfully in 5.1s
+Building: Running TypeScript ...
+Building: We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+Building: The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+Building: - include was updated to add '.next/dev/types/**/*.ts'
+Building: Finished TypeScript in 3.0s ...
+Building: Collecting page data using 1 worker ...
+Building: Generating static pages using 1 worker (0/11) ...
+Building: Generating static pages using 1 worker (2/11)
+Building: Generating static pages using 1 worker (5/11)
+Building: Generating static pages using 1 worker (8/11)
+Building: ✓ Generating static pages using 1 worker (11/11) in 267ms
+Building: Finalizing page optimization ...
+Building: Running onBuildComplete from Vercel
+Building: Route (app)
+Building: ┌ ○ /
+Building: ├ ○ /_not-found
+Building: ├ ○ /about
+Building: ├ ○ /contact
+Building: ├ ○ /design-system
+Building: ├ ○ /get-involved
+Building: ├ ○ /impact
+Building: ├ ○ /privacy
+Building: ├ ○ /programs
+Building: └ ○ /terms
+Building: ƒ Proxy (Middleware)
+Building: ○  (Static)  prerendered as static content
+Building: Build Completed in /vercel/output [46s]
+Building: Deploying outputs...
+Building: Deployment completed
+Building: Creating build cache...
+[2K[1A[2K[GProduction: https://comm-041-public-wi-fi-cnj10dvy2-worldwidebros-projects.vercel.app [1m]
+Completing...
+Aliased: https://comm-041-public-wi-fi-ai.vercel.app [1m]
+
+Common next commands:
+- `vercel inspect comm-041-public-wi-fi-cnj10dvy2-worldwidebros-projects.vercel.app --logs`
+- `vercel redeploy comm-041-public-wi-fi-cnj10dvy2-worldwidebros-projects.vercel.app`
+SUCCESS: comm-041-public-wi-fi-ai -> https://comm-041-public-wi-fi-ai.vercel.app
+=== comm-042-community-energy-ai ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Comm-042CommunityEnergyAi'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-042-community-energy-ai (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-042-community-energy-ai
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-042-community-energy-ai
+Uploading [--------------------] (0.0B/34.3KB)
+Uploading [=====---------------] (9.7KB/34.3KB)
+Uploading [==========----------] (17.3KB/34.3KB)
+Uploading [===============-----] (26.0KB/34.3KB)
+Uploading [====================] (34.3KB/34.3KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-042-community-energy-ai/9SEZZP6xiLnmeanLKa96YansaXWD [2s]
+Production: https://comm-042-community-energy-kay4mk1cv-worldwidebros-projects.vercel.app [2s]
+https://comm-042-community-energy-kay4mk1cv-worldwidebros-projects.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 46 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+Building: added 344 packages in 33s
+Building: 141 packages are looking for funding
+Building: run `npm fund` for details
+Building: Detected Next.js version: 16.2.10
+Building: Running "npm run build"
+Building: > comm-042-community-energy-ai@0.1.0 build
+Building: > next build
+Building: Applying modifyConfig from Vercel
+Building: Attention: Next.js now collects completely anonymous telemetry regarding usage.
+Building: This information is used to shape Next.js' roadmap and prioritize features.
+Building: You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+Building: https://nextjs.org/telemetry
+Building: ▲ Next.js 16.2.10 (Turbopack)
+Building: ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+Building: Creating an optimized production build ...
+Building: ✓ Compiled successfully in 5.2s
+Building: Running TypeScript ...
+Building: We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+Building: The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+Building: - include was updated to add '.next/dev/types/**/*.ts'
+Building: Finished TypeScript in 3.1s ...
+Building: Collecting page data using 1 worker ...
+Building: Generating static pages using 1 worker (0/11) ...
+Building: Generating static pages using 1 worker (2/11)
+Building: Generating static pages using 1 worker (5/11)
+Building: Generating static pages using 1 worker (8/11)
+Building: ✓ Generating static pages using 1 worker (11/11) in 285ms
+Building: Finalizing page optimization ...
+Building: Running onBuildComplete from Vercel
+Building: Route (app)
+Building: ┌ ○ /
+Building: ├ ○ /_not-found
+Building: ├ ○ /about
+Building: ├ ○ /contact
+Building: ├ ○ /design-system
+Building: ├ ○ /get-involved
+Building: ├ ○ /impact
+Building: ├ ○ /privacy
+Building: ├ ○ /programs
+Building: └ ○ /terms
+Building: ƒ Proxy (Middleware)
+Building: ○  (Static)  prerendered as static content
+Building: Build Completed in /vercel/output [44s]
+Building: Deploying outputs...
+Building: Deployment completed
+Building: Creating build cache...
+[2K[1A[2K[GProduction: https://comm-042-community-energy-kay4mk1cv-worldwidebros-projects.vercel.app [1m]
+Completing...
+Aliased: https://comm-042-community-energy-ai.vercel.app [1m]
+
+Common next commands:
+- `vercel inspect comm-042-community-energy-kay4mk1cv-worldwidebros-projects.vercel.app --logs`
+- `vercel redeploy comm-042-community-energy-kay4mk1cv-worldwidebros-projects.vercel.app`
+SUCCESS: comm-042-community-energy-ai -> https://comm-042-community-energy-ai.vercel.app
+=== comm-043-local-food-network-ai ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Comm-043LocalFoodNetworkAi'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-043-local-food-network-ai (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-043-local-food-network-ai
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-043-local-food-network-ai
+Uploading [--------------------] (0.0B/35.1KB)
+Uploading [======--------------] (11.2KB/35.1KB)
+Uploading [==========----------] (18.7KB/35.1KB)
+Uploading [===============-----] (27.0KB/35.1KB)
+Uploading [====================] (35.1KB/35.1KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-043-local-food-network-ai/7YsP4vu2nqZP7R5TUHfobwwcyi4F [2s]
+Production: https://comm-043-local-food-network-gew5l0423-worldwidebros-projects.vercel.app [2s]
+https://comm-043-local-food-network-gew5l0423-worldwidebros-projects.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 46 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+Building: added 344 packages in 35s
+Building: 141 packages are looking for funding
+Building: run `npm fund` for details
+Building: Detected Next.js version: 16.2.10
+Building: Running "npm run build"
+Building: > comm-043-local-food-network-ai@0.1.0 build
+Building: > next build
+Building: Applying modifyConfig from Vercel
+Building: Attention: Next.js now collects completely anonymous telemetry regarding usage.
+Building: This information is used to shape Next.js' roadmap and prioritize features.
+Building: You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+Building: https://nextjs.org/telemetry
+Building: ▲ Next.js 16.2.10 (Turbopack)
+Building: ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+Building: Creating an optimized production build ...
+Building: ✓ Compiled successfully in 5.0s
+Building: Running TypeScript ...
+Building: We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+Building: The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+Building: - include was updated to add '.next/dev/types/**/*.ts'
+Building: Finished TypeScript in 3.0s ...
+Building: Collecting page data using 1 worker ...
+Building: Generating static pages using 1 worker (0/11) ...
+Building: Generating static pages using 1 worker (2/11)
+Building: Generating static pages using 1 worker (5/11)
+Building: Generating static pages using 1 worker (8/11)
+Building: ✓ Generating static pages using 1 worker (11/11) in 244ms
+Building: Finalizing page optimization ...
+Building: Running onBuildComplete from Vercel
+Building: Route (app)
+Building: ┌ ○ /
+Building: ├ ○ /_not-found
+Building: ├ ○ /about
+Building: ├ ○ /contact
+Building: ├ ○ /design-system
+Building: ├ ○ /get-involved
+Building: ├ ○ /impact
+Building: ├ ○ /privacy
+Building: ├ ○ /programs
+Building: └ ○ /terms
+Building: ƒ Proxy (Middleware)
+Building: ○  (Static)  prerendered as static content
+Building: Build Completed in /vercel/output [45s]
+Building: Deploying outputs...
+Building: Deployment completed
+Building: Creating build cache...
+[2K[1A[2K[GProduction: https://comm-043-local-food-network-gew5l0423-worldwidebros-projects.vercel.app [1m]
+Completing...
+Aliased: https://comm-043-local-food-network-ai.vercel.app [1m]
+
+Common next commands:
+- `vercel inspect comm-043-local-food-network-gew5l0423-worldwidebros-projects.vercel.app --logs`
+- `vercel redeploy comm-043-local-food-network-gew5l0423-worldwidebros-projects.vercel.app`
+SUCCESS: comm-043-local-food-network-ai -> https://comm-043-local-food-network-ai.vercel.app
+=== comm-044-community-volunteering-ai ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Comm-044CommunityVolunteeringAi'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-044-community-volunteering-ai (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-044-community-volunteering-ai
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-044-community-volunteering-ai
+Uploading [--------------------] (0.0B/34.8KB)
+Uploading [=======-------------] (12.4KB/34.8KB)
+Uploading [==========----------] (18.2KB/34.8KB)
+Uploading [===============-----] (26.6KB/34.8KB)
+Uploading [====================] (34.8KB/34.8KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-044-community-volunteering-ai/HFi3WnqQRXUmgbd2W6oW6mcCsK2Z [3s]
+Production: https://comm-044-community-volunteering-or11jqigk.vercel.app [3s]
+https://comm-044-community-volunteering-or11jqigk.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 46 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+Building: added 344 packages in 48s
+Building: 141 packages are looking for funding
+Building: run `npm fund` for details
+Building: Detected Next.js version: 16.2.10
+Building: Running "npm run build"
+Building: > comm-044-community-volunteering-ai@0.1.0 build
+Building: > next build
+Building: Applying modifyConfig from Vercel
+Building: Attention: Next.js now collects completely anonymous telemetry regarding usage.
+Building: This information is used to shape Next.js' roadmap and prioritize features.
+Building: You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+Building: https://nextjs.org/telemetry
+Building: ▲ Next.js 16.2.10 (Turbopack)
+Building: ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+Building: Creating an optimized production build ...
+Building: ✓ Compiled successfully in 4.8s
+Building: Running TypeScript ...
+Building: We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+Building: The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+Building: - include was updated to add '.next/dev/types/**/*.ts'
+Building: Finished TypeScript in 3.4s ...
+Building: Collecting page data using 1 worker ...
+Building: Generating static pages using 1 worker (0/11) ...
+Building: Generating static pages using 1 worker (2/11)
+Building: Generating static pages using 1 worker (5/11)
+Building: Generating static pages using 1 worker (8/11)
+Building: ✓ Generating static pages using 1 worker (11/11) in 249ms
+Building: Finalizing page optimization ...
+Building: Running onBuildComplete from Vercel
+Building: Route (app)
+Building: ┌ ○ /
+Building: ├ ○ /_not-found
+Building: ├ ○ /about
+Building: ├ ○ /contact
+Building: ├ ○ /design-system
+Building: ├ ○ /get-involved
+Building: ├ ○ /impact
+Building: ├ ○ /privacy
+Building: ├ ○ /programs
+Building: └ ○ /terms
+Building: ƒ Proxy (Middleware)
+Building: ○  (Static)  prerendered as static content
+Building: Build Completed in /vercel/output [59s]
+Building: Deploying outputs...
+Building: Deployment completed
+Building: Creating build cache...
+[2K[1A[2K[GProduction: https://comm-044-community-volunteering-or11jqigk.vercel.app [1m]
+Completing...
+Aliased: https://comm-044-community-volunteering-ai.vercel.app [1m]
+
+Common next commands:
+- `vercel inspect comm-044-community-volunteering-or11jqigk.vercel.app --logs`
+- `vercel redeploy comm-044-community-volunteering-or11jqigk.vercel.app`
+SUCCESS: comm-044-community-volunteering-ai -> https://comm-044-community-volunteering-ai.vercel.app
+=== comm-045-public-childcare-ai ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Comm-045PublicChildcareAi'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-045-public-childcare-ai (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-045-public-childcare-ai
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-045-public-childcare-ai
+Uploading [--------------------] (0.0B/34.4KB)
+Uploading [=====---------------] (8.9KB/34.4KB)
+Uploading [============--------] (21.1KB/34.4KB)
+Uploading [===============-----] (26.2KB/34.4KB)
+Uploading [====================] (34.4KB/34.4KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-045-public-childcare-ai/Aj8JdjuixiFRA7PPVJeycLrXSwpS [2s]
+Production: https://comm-045-public-childcare-6d3yr6bjw-worldwidebros-projects.vercel.app [2s]
+https://comm-045-public-childcare-6d3yr6bjw-worldwidebros-projects.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 46 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+Building: added 344 packages in 38s
+Building: 141 packages are looking for funding
+Building: run `npm fund` for details
+Building: Detected Next.js version: 16.2.10
+Building: Running "npm run build"
+Building: > comm-045-public-childcare-ai@0.1.0 build
+Building: > next build
+Building: Applying modifyConfig from Vercel
+Building: Attention: Next.js now collects completely anonymous telemetry regarding usage.
+Building: This information is used to shape Next.js' roadmap and prioritize features.
+Building: You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+Building: https://nextjs.org/telemetry
+Building: ▲ Next.js 16.2.10 (Turbopack)
+Building: ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+Building: Creating an optimized production build ...
+Building: ✓ Compiled successfully in 4.6s
+Building: Running TypeScript ...
+Building: We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+Building: The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+Building: - include was updated to add '.next/dev/types/**/*.ts'
+Building: Finished TypeScript in 3.0s ...
+Building: Collecting page data using 1 worker ...
+Building: Generating static pages using 1 worker (0/11) ...
+Building: Generating static pages using 1 worker (2/11)
+Building: Generating static pages using 1 worker (5/11)
+Building: Generating static pages using 1 worker (8/11)
+Building: ✓ Generating static pages using 1 worker (11/11) in 261ms
+Building: Finalizing page optimization ...
+Building: Running onBuildComplete from Vercel
+Building: Route (app)
+Building: ┌ ○ /
+Building: ├ ○ /_not-found
+Building: ├ ○ /about
+Building: ├ ○ /contact
+Building: ├ ○ /design-system
+Building: ├ ○ /get-involved
+Building: ├ ○ /impact
+Building: ├ ○ /privacy
+Building: ├ ○ /programs
+Building: └ ○ /terms
+Building: ƒ Proxy (Middleware)
+Building: ○  (Static)  prerendered as static content
+Building: Build Completed in /vercel/output [49s]
+Building: Deploying outputs...
+[2K[1A[2K[GProduction: https://comm-045-public-childcare-6d3yr6bjw-worldwidebros-projects.vercel.app [1m]
+Completing...
+Aliased: https://comm-045-public-childcare-ai.vercel.app [1m]
+
+Common next commands:
+- `vercel inspect comm-045-public-childcare-6d3yr6bjw-worldwidebros-projects.vercel.app --logs`
+- `vercel redeploy comm-045-public-childcare-6d3yr6bjw-worldwidebros-projects.vercel.app`
+SUCCESS: comm-045-public-childcare-ai -> https://comm-045-public-childcare-ai.vercel.app
+=== comm-046-community-pet-care-ai ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Comm-046CommunityPetCareAi'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-046-community-pet-care-ai (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-046-community-pet-care-ai
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-046-community-pet-care-ai
+Uploading [--------------------] (0.0B/34.6KB)
+Uploading [=====---------------] (9.4KB/34.6KB)
+Uploading [===========---------] (19.6KB/34.6KB)
+Uploading [===============-----] (26.7KB/34.6KB)
+Uploading [====================] (34.6KB/34.6KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-046-community-pet-care-ai/4h4VWMnTw4mP7QRaNdnaTVZGiYkh [2s]
+Production: https://comm-046-community-pet-care-lhhiqytjn-worldwidebros-projects.vercel.app [2s]
+https://comm-046-community-pet-care-lhhiqytjn-worldwidebros-projects.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 46 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+Building: added 344 packages in 34s
+Building: 141 packages are looking for funding
+Building: run `npm fund` for details
+Building: Detected Next.js version: 16.2.10
+Building: Running "npm run build"
+Building: > comm-046-community-pet-care-ai@0.1.0 build
+Building: > next build
+Building: Applying modifyConfig from Vercel
+Building: Attention: Next.js now collects completely anonymous telemetry regarding usage.
+Building: This information is used to shape Next.js' roadmap and prioritize features.
+Building: You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+Building: https://nextjs.org/telemetry
+Building: ▲ Next.js 16.2.10 (Turbopack)
+Building: ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+Building: Creating an optimized production build ...
+Building: ✓ Compiled successfully in 4.6s
+Building: Running TypeScript ...
+Building: We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+Building: The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+Building: - include was updated to add '.next/dev/types/**/*.ts'
+Building: Finished TypeScript in 2.9s ...
+Building: Collecting page data using 1 worker ...
+Building: Generating static pages using 1 worker (0/11) ...
+Building: Generating static pages using 1 worker (2/11)
+Building: Generating static pages using 1 worker (5/11)
+Building: Generating static pages using 1 worker (8/11)
+Building: ✓ Generating static pages using 1 worker (11/11) in 254ms
+Building: Finalizing page optimization ...
+Building: Running onBuildComplete from Vercel
+Building: Route (app)
+Building: ┌ ○ /
+Building: ├ ○ /_not-found
+Building: ├ ○ /about
+Building: ├ ○ /contact
+Building: ├ ○ /design-system
+Building: ├ ○ /get-involved
+Building: ├ ○ /impact
+Building: ├ ○ /privacy
+Building: ├ ○ /programs
+Building: └ ○ /terms
+Building: ƒ Proxy (Middleware)
+Building: ○  (Static)  prerendered as static content
+Building: Build Completed in /vercel/output [44s]
+Building: Deploying outputs...
+[2K[1A[2K[GProduction: https://comm-046-community-pet-care-lhhiqytjn-worldwidebros-projects.vercel.app [58s]
+Completing...
+Aliased: https://comm-046-community-pet-care-ai.vercel.app [58s]
+
+Common next commands:
+- `vercel inspect comm-046-community-pet-care-lhhiqytjn-worldwidebros-projects.vercel.app --logs`
+- `vercel redeploy comm-046-community-pet-care-lhhiqytjn-worldwidebros-projects.vercel.app`
+SUCCESS: comm-046-community-pet-care-ai -> https://comm-046-community-pet-care-ai.vercel.app
+=== comm-047-public-fitness-ai ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Comm-047PublicFitnessAi'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-047-public-fitness-ai (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-047-public-fitness-ai
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-047-public-fitness-ai
+Uploading [--------------------] (0.0B/34.2KB)
+Uploading [=====---------------] (8.8KB/34.2KB)
+Uploading [==========----------] (18.4KB/34.2KB)
+Uploading [===============-----] (26.5KB/34.2KB)
+Uploading [====================] (34.2KB/34.2KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-047-public-fitness-ai/4JZeFwcr9fSXVyTpkU9m9CKbqivu [3s]
+Production: https://comm-047-public-fitness-9rcek55oy-worldwidebros-projects.vercel.app [3s]
+https://comm-047-public-fitness-9rcek55oy-worldwidebros-projects.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 46 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+Building: added 344 packages in 31s
+Building: 141 packages are looking for funding
+Building: run `npm fund` for details
+Building: Detected Next.js version: 16.2.10
+Building: Running "npm run build"
+Building: > comm-047-public-fitness-ai@0.1.0 build
+Building: > next build
+Building: Applying modifyConfig from Vercel
+Building: Attention: Next.js now collects completely anonymous telemetry regarding usage.
+Building: This information is used to shape Next.js' roadmap and prioritize features.
+Building: You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+Building: https://nextjs.org/telemetry
+Building: ▲ Next.js 16.2.10 (Turbopack)
+Building: ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+Building: Creating an optimized production build ...
+Building: ✓ Compiled successfully in 5.3s
+Building: Running TypeScript ...
+Building: We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+Building: The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+Building: - include was updated to add '.next/dev/types/**/*.ts'
+Building: Finished TypeScript in 3.0s ...
+Building: Collecting page data using 1 worker ...
+Building: Generating static pages using 1 worker (0/11) ...
+Building: Generating static pages using 1 worker (2/11)
+Building: Generating static pages using 1 worker (5/11)
+Building: Generating static pages using 1 worker (8/11)
+Building: ✓ Generating static pages using 1 worker (11/11) in 248ms
+Building: Finalizing page optimization ...
+Building: Running onBuildComplete from Vercel
+Building: Route (app)
+Building: ┌ ○ /
+Building: ├ ○ /_not-found
+Building: ├ ○ /about
+Building: ├ ○ /contact
+Building: ├ ○ /design-system
+Building: ├ ○ /get-involved
+Building: ├ ○ /impact
+Building: ├ ○ /privacy
+Building: ├ ○ /programs
+Building: └ ○ /terms
+Building: ƒ Proxy (Middleware)
+Building: ○  (Static)  prerendered as static content
+Building: Build Completed in /vercel/output [42s]
+Building: Deploying outputs...
+[2K[1A[2K[GProduction: https://comm-047-public-fitness-9rcek55oy-worldwidebros-projects.vercel.app [56s]
+Completing...
+Aliased: https://comm-047-public-fitness-ai.vercel.app [1m]
+
+Common next commands:
+- `vercel inspect comm-047-public-fitness-9rcek55oy-worldwidebros-projects.vercel.app --logs`
+- `vercel redeploy comm-047-public-fitness-9rcek55oy-worldwidebros-projects.vercel.app`
+SUCCESS: comm-047-public-fitness-ai -> https://comm-047-public-fitness-ai.vercel.app
+=== comm-048-community-transportation-ai ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Comm-048CommunityTransportationAi'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-048-community-transportation-ai (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-048-community-transportation-ai
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-048-community-transportation-ai
+Uploading [--------------------] (0.0B/34.8KB)
+Uploading [=====---------------] (9.2KB/34.8KB)
+Uploading [==========----------] (17.9KB/34.8KB)
+Uploading [===============-----] (27.2KB/34.8KB)
+Uploading [====================] (34.8KB/34.8KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-048-community-transportation-ai/Ehhd3ZPRfzggPsk25kC1DjtwPcT4 [2s]
+Production: https://comm-048-community-transportation-g99bembe2.vercel.app [2s]
+https://comm-048-community-transportation-g99bembe2.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 46 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+Building: added 344 packages in 29s
+Building: 141 packages are looking for funding
+Building: run `npm fund` for details
+Building: Detected Next.js version: 16.2.10
+Building: Running "npm run build"
+Building: > comm-048-community-transportation-ai@0.1.0 build
+Building: > next build
+Building: Applying modifyConfig from Vercel
+Building: Attention: Next.js now collects completely anonymous telemetry regarding usage.
+Building: This information is used to shape Next.js' roadmap and prioritize features.
+Building: You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+Building: https://nextjs.org/telemetry
+Building: ▲ Next.js 16.2.10 (Turbopack)
+Building: ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+Building: Creating an optimized production build ...
+Building: ✓ Compiled successfully in 4.6s
+Building: Running TypeScript ...
+Building: We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+Building: The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+Building: - include was updated to add '.next/dev/types/**/*.ts'
+Building: Finished TypeScript in 3.0s ...
+Building: Collecting page data using 1 worker ...
+Building: Generating static pages using 1 worker (0/11) ...
+Building: Generating static pages using 1 worker (2/11)
+Building: Generating static pages using 1 worker (5/11)
+Building: Generating static pages using 1 worker (8/11)
+Building: ✓ Generating static pages using 1 worker (11/11) in 229ms
+Building: Finalizing page optimization ...
+Building: Running onBuildComplete from Vercel
+Building: Route (app)
+Building: ┌ ○ /
+Building: ├ ○ /_not-found
+Building: ├ ○ /about
+Building: ├ ○ /contact
+Building: ├ ○ /design-system
+Building: ├ ○ /get-involved
+Building: ├ ○ /impact
+Building: ├ ○ /privacy
+Building: ├ ○ /programs
+Building: └ ○ /terms
+Building: ƒ Proxy (Middleware)
+Building: ○  (Static)  prerendered as static content
+Building: Build Completed in /vercel/output [39s]
+Building: Deploying outputs...
+Building: Deployment completed
+Building: Creating build cache...
+[2K[1A[2K[GProduction: https://comm-048-community-transportation-g99bembe2.vercel.app [55s]
+Completing...
+Aliased: https://comm-048-community-transportation-a.vercel.app [55s]
+
+Common next commands:
+- `vercel inspect comm-048-community-transportation-g99bembe2.vercel.app --logs`
+- `vercel redeploy comm-048-community-transportation-g99bembe2.vercel.app`
+SUCCESS: comm-048-community-transportation-ai -> https://comm-048-community-transportation-a.vercel.app
+=== comm-049-public-event-ai ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Comm-049PublicEventAi'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-049-public-event-ai (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-049-public-event-ai
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-049-public-event-ai
+Uploading [--------------------] (0.0B/34KB)
+Uploading [=====---------------] (8.5KB/34KB)
+Uploading [===========---------] (19.4KB/34KB)
+Uploading [===============-----] (26.1KB/34KB)
+Uploading [====================] (34.0KB/34KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-049-public-event-ai/Cn7ubZQoofsttjCk58YmjFfdkPRu [5s]
+Production: https://comm-049-public-event-qzx2o32t1-worldwidebros-projects.vercel.app [5s]
+https://comm-049-public-event-qzx2o32t1-worldwidebros-projects.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 46 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+Building: added 344 packages in 39s
+Building: 141 packages are looking for funding
+Building: run `npm fund` for details
+Building: Detected Next.js version: 16.2.10
+Building: Running "npm run build"
+Building: > comm-049-public-event-ai@0.1.0 build
+Building: > next build
+Building: Applying modifyConfig from Vercel
+Building: Attention: Next.js now collects completely anonymous telemetry regarding usage.
+Building: This information is used to shape Next.js' roadmap and prioritize features.
+Building: You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+Building: https://nextjs.org/telemetry
+Building: ▲ Next.js 16.2.10 (Turbopack)
+Building: ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+Building: Creating an optimized production build ...
+Building: ✓ Compiled successfully in 5.1s
+Building: Running TypeScript ...
+Building: We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+Building: The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+Building: - include was updated to add '.next/dev/types/**/*.ts'
+Building: Finished TypeScript in 3.0s ...
+Building: Collecting page data using 1 worker ...
+Building: Generating static pages using 1 worker (0/11) ...
+Building: Generating static pages using 1 worker (2/11)
+Building: Generating static pages using 1 worker (5/11)
+Building: Generating static pages using 1 worker (8/11)
+Building: ✓ Generating static pages using 1 worker (11/11) in 254ms
+Building: Finalizing page optimization ...
+Building: Running onBuildComplete from Vercel
+Building: Route (app)
+Building: ┌ ○ /
+Building: ├ ○ /_not-found
+Building: ├ ○ /about
+Building: ├ ○ /contact
+Building: ├ ○ /design-system
+Building: ├ ○ /get-involved
+Building: ├ ○ /impact
+Building: ├ ○ /privacy
+Building: ├ ○ /programs
+Building: └ ○ /terms
+Building: ƒ Proxy (Middleware)
+Building: ○  (Static)  prerendered as static content
+Building: Build Completed in /vercel/output [50s]
+Building: Deploying outputs...
+Building: Deployment completed
+Building: Creating build cache...
+[2K[1A[2K[GProduction: https://comm-049-public-event-qzx2o32t1-worldwidebros-projects.vercel.app [1m]
+Completing...
+Aliased: https://comm-049-public-event-ai.vercel.app [1m]
+
+Common next commands:
+- `vercel inspect comm-049-public-event-qzx2o32t1-worldwidebros-projects.vercel.app --logs`
+- `vercel redeploy comm-049-public-event-qzx2o32t1-worldwidebros-projects.vercel.app`
+SUCCESS: comm-049-public-event-ai -> https://comm-049-public-event-ai.vercel.app
+=== comm-050-community-cultural-ai ===
+Cloning into '/Users/acebless/Documents/WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/Comm-050CommunityCulturalAi'...
+Vercel CLI 50.22.1
+Loading scopes…
+Searching for existing projects…
+> Auto-detected Project Settings for Next.js
+
+Linked to worldwidebros-projects/comm-050-community-cultural-ai (created .vercel and added it to .gitignore)
+> Connecting GitHub repository: https://github.com/Worldwidebro/comm-050-community-cultural-ai
+> Connected
+Vercel CLI 50.22.1
+Retrieving project…
+Deploying worldwidebros-projects/comm-050-community-cultural-ai
+Uploading [--------------------] (0.0B/34.5KB)
+Uploading [=====---------------] (9.6KB/34.5KB)
+Uploading [==========----------] (18.2KB/34.5KB)
+Uploading [================----] (28.9KB/34.5KB)
+Uploading [====================] (34.5KB/34.5KB)
+Inspect: https://vercel.com/worldwidebros-projects/comm-050-community-cultural-ai/CyxUzR8u5iEKX9a99E9rEUGk5Uwr [2s]
+Production: https://comm-050-community-cultural-oir2gsszh-worldwidebros-projects.vercel.app [2s]
+https://comm-050-community-cultural-oir2gsszh-worldwidebros-projects.vercel.appBuilding...
+Building...
+Building: Running build in Washington, D.C., USA (East) – iad1
+Building: Build machine configuration: 2 cores, 8 GB
+Building: Retrieving list of deployment files...
+Building: Previous build caches not available.
+Building: Downloading 46 deployment files...
+Building: Running "vercel build"
+Building: Vercel CLI 54.19.0
+Building: Installing dependencies...
+Building: added 344 packages in 33s
+Building: 141 packages are looking for funding
+Building: run `npm fund` for details
+Building: Detected Next.js version: 16.2.10
+Building: Running "npm run build"
+Building: > comm-050-community-cultural-ai@0.1.0 build
+Building: > next build
+Building: Applying modifyConfig from Vercel
+Building: Attention: Next.js now collects completely anonymous telemetry regarding usage.
+Building: This information is used to shape Next.js' roadmap and prioritize features.
+Building: You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+Building: https://nextjs.org/telemetry
+Building: ▲ Next.js 16.2.10 (Turbopack)
+Building: ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+Building: Creating an optimized production build ...
+Building: ✓ Compiled successfully in 4.7s
+Building: Running TypeScript ...
+Building: We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+Building: The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+Building: - include was updated to add '.next/dev/types/**/*.ts'
+Building: Finished TypeScript in 2.9s ...
+Building: Collecting page data using 1 worker ...
+Building: Generating static pages using 1 worker (0/11) ...
+Building: Generating static pages using 1 worker (2/11)
+Building: Generating static pages using 1 worker (5/11)
+Building: Generating static pages using 1 worker (8/11)
+Building: ✓ Generating static pages using 1 worker (11/11) in 254ms
+Building: Finalizing page optimization ...
+Building: Running onBuildComplete from Vercel
+Building: Route (app)
+Building: ┌ ○ /
+Building: ├ ○ /_not-found
+Building: ├ ○ /about
+Building: ├ ○ /contact
+Building: ├ ○ /design-system
+Building: ├ ○ /get-involved
+Building: ├ ○ /impact
+Building: ├ ○ /privacy
+Building: ├ ○ /programs
+Building: └ ○ /terms
+Building: ƒ Proxy (Middleware)
+Building: ○  (Static)  prerendered as static content
+Building: Build Completed in /vercel/output [44s]
+Building: Deploying outputs...
+[2K[1A[2K[GProduction: https://comm-050-community-cultural-oir2gsszh-worldwidebros-projects.vercel.app [56s]
+Completing...
+Aliased: https://comm-050-community-cultural-ai.vercel.app [56s]
+
+Common next commands:
+- `vercel inspect comm-050-community-cultural-oir2gsszh-worldwidebros-projects.vercel.app --logs`
+- `vercel redeploy comm-050-community-cultural-oir2gsszh-worldwidebros-projects.vercel.app`
+SUCCESS: comm-050-community-cultural-ai -> https://comm-050-community-cultural-ai.vercel.app
+=== BATCH COMPLETE ===

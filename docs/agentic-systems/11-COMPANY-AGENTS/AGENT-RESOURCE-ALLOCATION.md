@@ -1,0 +1,30 @@
+---
+id: agent-resource-allocation
+type: document
+name: AGENT RESOURCE ALLOCATION
+status: active
+owner: "[[Worldwidebro]]"
+created: 2026-08-04
+updated: 2026-08-04
+source: planning
+confidence: 0.8
+freshness: unverified
+tags:
+  - status/active
+  - knowledge/unverified
+---
+
+# AGENT RESOURCE ALLOCATION
+
+## Purpose
+This document provides the conceptual and technical details for **AGENT RESOURCE ALLOCATION** within the Agentic Systems Academy.
+
+## Core Concept
+*Drafting Phase*: The core parameters, definitions, and operational mechanisms for AGENT RESOURCE ALLOCATION are being compiled.
+
+## Technical Details
+- Under Construction: This topic will be elaborated during next curriculum updates.
+- Conforms to the `AI-BRAIN/ONTOLOGY.md` specification.
+
+## Relations
+- Part of the [[00-START-HERE/README.md]] curriculum.

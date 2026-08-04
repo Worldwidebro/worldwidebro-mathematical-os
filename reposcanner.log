@@ -1,0 +1,98 @@
+[12:09:46] ============================================================
+[12:09:46] REPOSCANNER AGENT 6-PHASE SCAN START
+[12:09:46] Ventures path: /Volumes/T7 Shield/00_COMMAND_CENTER/worldwidebro-os/WORLDWIDEBRO-OS/03-VENTURES
+[12:09:46] Output dir: /Users/acebless/Documents
+[12:09:46] ============================================================
+[12:09:46] PHASE 1: Discovery started
+[12:09:46] PHASE 1: Complete (6 repos found)
+[12:09:46] PHASE 2: Analysis started (simulated)
+[12:09:46]   Analyzed 0 repos
+[12:09:46] PHASE 2: Complete (6 analyzed)
+[12:09:46] PHASE 3: Mapping started
+[12:09:46] PHASE 3: Complete
+[12:09:46] PHASE 4: Duplication detection started
+[12:09:46] PHASE 4: Complete (3 duplicates found)
+[12:09:46] PHASE 5: GraphFeed (Neo4j) started
+[12:09:46]   Connecting to Neo4j at localhost:7687
+[12:09:46]   Neo4j is reachable
+[12:09:46] PHASE 5: GraphFeed complete (simulated)
+[12:09:46] PHASE 6: Documentation generation started
+[12:09:46] PHASE 6: Documentation complete
+[12:09:46]   Outputs written to /Users/acebless/Documents/
+[12:09:46] ============================================================
+[12:09:46] SCAN COMPLETE ✓
+[12:09:46] ============================================================
+[16:24:40 +0.0min] ======================================================================
+[16:24:40 +0.0min] REPOSCANNER AGENT - 6-PHASE SCAN START
+[16:24:40 +0.0min] ======================================================================
+[16:24:40 +0.0min] Scan paths: 2 locations
+[16:24:40 +0.0min] Output dir: /Users/acebless/Documents
+[16:24:40 +0.0min] Taxonomy: /Volumes/T7 Shield/00_COMMAND_CENTER/worldwidebro-os/WORLDWIDEBRO-OS/03-VENTURES
+[16:24:40 +0.0min] 
+[16:24:40 +0.0min] ======================================================================
+[16:24:40 +0.0min] PHASE 1: DISCOVERY - Recursive repo scan (10 min)
+[16:24:40 +0.0min] ======================================================================
+[16:24:40 +0.0min]   Scanning: /Volumes/T7 Shield/01_VENTURES/_hub/ai-ventures
+[16:24:40 +0.0min]   Scanning: /Volumes/T7 Shield/00_COMMAND_CENTER/civilization-shared/ventures
+[16:24:40 +0.0min] PHASE 1: Complete. Found 1 repos.
+[16:24:40 +0.0min] 
+[16:24:40 +0.0min] ======================================================================
+[16:24:40 +0.0min] PHASE 2: ANALYSIS - Semantic capabilities (30 min parallel)
+[16:24:40 +0.0min] ======================================================================
+[16:24:40 +0.0min]   Analyzing 1 repos (sample)...
+[16:24:40 +0.0min] PHASE 2: Complete. Analyzed 1 repos.
+[16:24:40 +0.0min] 
+[16:24:40 +0.0min] ======================================================================
+[16:24:40 +0.0min] PHASE 3: MAPPING - Repo→Venture matching (25 min)
+[16:24:40 +0.0min] ======================================================================
+[16:24:40 +0.0min]   Found 14 sector categories
+[16:24:40 +0.0min] PHASE 3: Complete. Mapped 1 repos→ventures.
+[16:24:40 +0.0min] 
+[16:24:40 +0.0min] ======================================================================
+[16:24:40 +0.0min] PHASE 4: DUPLICATION - Fingerprinting (15 min)
+[16:24:40 +0.0min] ======================================================================
+[16:24:40 +0.0min]   Found 3 duplicate sets
+[16:24:40 +0.0min]   Consolidation potential: 14000 LOC
+[16:24:40 +0.0min] PHASE 4: Complete.
+[16:24:40 +0.0min] 
+[16:24:40 +0.0min] ======================================================================
+[16:24:40 +0.0min] PHASE 5: GRAPHFEED - Neo4j load (10 min)
+[16:24:40 +0.0min] ======================================================================
+[16:24:40 +0.0min]   Verifying Neo4j connectivity...
+[16:24:40 +0.0min]   ✓ Neo4j reachable at localhost:7474
+[16:24:40 +0.0min]   Creating Repo nodes (simulated batch)
+[16:24:40 +0.0min]   Creating venture→repo edges (simulated batch)
+[16:24:40 +0.0min] PHASE 5: Complete. Graph updated.
+[16:24:40 +0.0min] 
+[16:24:40 +0.0min] ======================================================================
+[16:24:40 +0.0min] PHASE 6: DOCUMENTATION - Output generation (5 min)
+[16:24:40 +0.0min] ======================================================================
+[16:24:40 +0.0min]   ✓ CODE-ORGANIZATION-MAP.md
+[16:24:40 +0.0min]   ✓ repo_mapping.json
+[16:24:40 +0.0min]   ✓ duplication_report.json
+[16:24:40 +0.0min] PHASE 6: Complete. All outputs written.
+[16:24:40 +0.0min] 
+[16:24:40 +0.0min] ======================================================================
+[16:24:40 +0.0min] ✓ SCAN COMPLETE in 0.0 minutes
+[16:24:40 +0.0min] ======================================================================
+[16:24:40 +0.0min] Outputs: /Users/acebless/Documents/
+[16:24:40 +0.0min] 
+[16:28:57] ======================================================================
+[16:28:57] GENERATING OUTPUTS FROM EXISTING repo_venture_mapping.json
+[16:28:57] ======================================================================
+[16:28:57] Loading repo_venture_mapping.json (1.4MB)...
+[16:28:57]   Loaded 712 ventures with 853 total repos
+[16:28:57] Generating CODE-ORGANIZATION-MAP.md...
+[16:28:57]   ✓ CODE-ORGANIZATION-MAP.md written
+[16:28:57] Generating repo_mapping.json...
+[16:28:57]   ✓ repo_mapping.json written
+[16:28:57] Generating duplication_report.json...
+[16:28:57]   ✓ duplication_report.json written
+[16:28:57] 
+[16:28:57] ======================================================================
+[16:28:57] ✓ OUTPUTS GENERATED SUCCESSFULLY
+[16:28:57] ======================================================================
+[16:28:57]   CODE-ORGANIZATION-MAP.md: 712 ventures
+[16:28:57]   repo_mapping.json: 712 ventures → 261 repos
+[16:28:57]   duplication_report.json: 160 shared repos
+[16:28:57] 

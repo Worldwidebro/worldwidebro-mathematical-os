@@ -1,0 +1,93 @@
+{
+  "timestamp": "2026-08-04T14:34:11.128635",
+  "total_repositories": 237,
+  "potential_duplicates": 16,
+  "duplicate_groups": [
+    [
+      "github:lt-005-medical-courier-dispatch",
+      "local:lt-005-medical-courier-dispatch"
+    ],
+    [
+      "github:ops-staff-001-staffing",
+      "local:ops-staff-001-staffing"
+    ],
+    [
+      "github:con-001-ace-construction",
+      "local:con-001-ace-construction"
+    ],
+    [
+      "github:career-ops",
+      "local:career-ops"
+    ],
+    [
+      "github:re-001-worldwidebro-holdings",
+      "local:RE-001-Worldwidebro-Holdings"
+    ],
+    [
+      "github:ec-001-angels-in-daylight",
+      "local:ec-001-angels-in-daylight"
+    ],
+    [
+      "github:fin-033-ai-tax-preparation-service",
+      "local:fin-033-ai-tax-preparation-service"
+    ],
+    [
+      "github:fin-021-tax-deduction-finder",
+      "local:fin-021-tax-deduction-finder"
+    ],
+    [
+      "github:fin-009-crypto-tax-optimizer",
+      "local:fin-009-crypto-tax-optimizer"
+    ],
+    [
+      "github:fin-006-tax-prep-filing-services",
+      "local:fin-006-tax-prep-filing-services"
+    ],
+    [
+      "github:ec-112-cosmic-kitty",
+      "local:ec-112-cosmic-kitty"
+    ],
+    [
+      "github:email-design-os",
+      "local:email-design-os"
+    ],
+    [
+      "github:bw-eroticafox",
+      "local:bw-eroticafox"
+    ],
+    [
+      "github:bloom-community-hub",
+      "local:bloom-community-hub"
+    ],
+    [
+      "github:mc-006-video-production-company",
+      "local:mc-006-video-production-company"
+    ],
+    [
+      "github:worldwidebro-construction-os",
+      "local:worldwidebro-construction-os"
+    ]
+  ],
+  "stages": {
+    "1_identify": {
+      "action": "Identity resolution",
+      "status": "pending"
+    },
+    "2_map_capabilities": {
+      "action": "Capability mapping",
+      "status": "pending"
+    },
+    "3_graph": {
+      "action": "Load to Neo4j",
+      "status": "pending"
+    },
+    "4_consolidate": {
+      "action": "Consolidation decisions",
+      "status": "pending"
+    },
+    "5_cli": {
+      "action": "Build `wb` CLI",
+      "status": "pending"
+    }
+  }
+}

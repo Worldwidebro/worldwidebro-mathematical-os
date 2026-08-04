@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-08-04T16:00:50.260685",
+  "file": "/Users/acebless/Documents/.planning/VENTURE-READINESS-SCORECARD-V2.csv",
+  "rows": 712,
+  "columns": 16,
+  "issues": {
+    "duplicate_ids": 0,
+    "invalid_readiness": 0,
+    "invalid_stage": 93,
+    "missing_name": 0
+  },
+  "avg_readiness": 21.146207865168538,
+  "ventures_with_repo": 416,
+  "sectors": 18,
+  "status": "ISSUES"
+}
