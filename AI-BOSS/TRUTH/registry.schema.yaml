@@ -1,0 +1,131 @@
+---
+# WORLDWIDEBRO SYSTEM TRUTH REGISTRY SCHEMA v1.0
+# Purpose: Canonical machine-readable model of the operating system
+# Status: Foundation artifact for Phase 0 (System Validation)
+
+system:
+  canonical_name: string          # e.g., "Worldwidebro OS"
+  aliases: [string]               # e.g., ["AI-BOSS", "IZA", "VEX"]
+  description: string
+  status: enum[INITIALIZING, TESTING, OPERATING, DEGRADED, FAILED]
+  last_verified: timestamp
+
+hardware:
+  machines:
+    - name: string              # e.g., "macbook-air"
+      type: enum[LAPTOP, WORKSTATION, SERVER]
+      os: string
+      cpu_cores: integer
+      memory_gb: integer
+      role: enum[CONTROL, COMPUTE, STORAGE]
+      status: enum[ONLINE, OFFLINE]
+
+  mounts:
+    - name: string              # e.g., "Mac internal SSD"
+      type: enum[SSD, HDD, NETWORK, EXTERNAL]
+      capacity_gb: integer
+      used_gb: integer
+      free_gb: integer
+      mount_point: string
+      role: enum[OS, WORKING, ARCHIVE]
+      health: enum[HEALTHY, WARN, CRITICAL]
+
+storage:
+  total_available_gb: integer
+  total_used_gb: integer
+  total_free_gb: integer
+  breakdown:
+    - category: string          # e.g., "Docker", "node_modules"
+      size_gb: integer
+      validation_status: enum[VERIFIED, CLAIMED, UNKNOWN]
+
+repositories:
+  count_local: integer
+  count_duplicates: integer
+  entries:
+    - name: string              # e.g., "vex-api"
+      local_path: string
+      size_mb: integer
+      last_commit: timestamp
+      status: enum[CLEAN, DIRTY, AHEAD, BEHIND]
+
+services:
+  docker:
+    running_count: integer
+    containers:
+      - name: string           # e.g., "neo4j"
+        status: enum[RUNNING, STOPPED, FAILED]
+        health: enum[HEALTHY, UNHEALTHY, UNKNOWN]
+
+databases:
+  entries:
+    - name: string             # e.g., "neo4j"
+      type: enum[GRAPH, VECTOR, RELATIONAL]
+      location: string
+      status: enum[RUNNING, STOPPED, UNHEALTHY]
+      content:
+        node_count: integer
+        relation_count: integer
+        freshness: enum[CURRENT, STALE, UNKNOWN]
+        last_ingestion: timestamp
+        verified: boolean
+
+agents:
+  total_count: integer
+  healthy_count: integer
+  broken_count: integer
+  entries:
+    - name: string
+      status: enum[HEALTHY, BROKEN, STALE]
+      validation_status: enum[VERIFIED, CLAIMED, BROKEN]
+
+skills:
+  total_count: integer
+  entries:
+    - name: string
+      validation_status: enum[VERIFIED, CLAIMED, UNTESTED]
+
+mcp_servers:
+  total_count: integer
+  entries:
+    - name: string
+      status: enum[RUNNING, STOPPED, UNKNOWN]
+      last_verified: timestamp
+
+capabilities:
+  total_count: integer
+  entries:
+    - name: string
+      primary_implementation: string
+      fallback_implementations: [string]
+      tested: boolean
+
+knowledge:
+  neo4j:
+    node_count: integer
+    freshness: enum[CURRENT, STALE, EMPTY]
+  qdrant:
+    collection_count: integer
+    freshness: enum[CURRENT, STALE, UNKNOWN]
+
+control_loop:
+  implemented: boolean
+  stages:
+    - name: string             # e.g., "DISCOVER", "DECIDE", "EXECUTE", "VERIFY"
+      implemented: boolean
+      tested: boolean
+
+verification:
+  discovery_pass:
+    score: integer              # 0-100
+    last_run: timestamp
+  blockers:
+    - title: string
+      impact: enum[CRITICAL, HIGH, MEDIUM, LOW]
+      estimated_effort_hours: integer
+
+metadata:
+  schema_version: string        # "1.0"
+  registry_version: string
+  last_updated: timestamp
+  confidence: enum[HIGH, MEDIUM, LOW]
