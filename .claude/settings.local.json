@@ -20,5 +20,12 @@
       "Bash(python3 /tmp/debug_relationships.py)",
       "Bash(python3 /tmp/check_ids.py)"
     ]
-  }
+  },
+  "enabledMcpjsonServers": [
+    "filesystem",
+    "memory",
+    "puppeteer",
+    "browseros",
+    "openclaw"
+  ]
 }
