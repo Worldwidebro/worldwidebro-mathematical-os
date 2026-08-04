@@ -90,9 +90,7 @@
     },
     {
       "name": "ops-staff-001-staffing",
-      "status": "archived",
-      "archived_date": "2026-07-29",
-      "archive_path": "_archive/ops-staff-001-staffing",
+      "status": "active",
       "reason": "Unused scaffold - Phase 2 OS consolidation"
     },
     {
