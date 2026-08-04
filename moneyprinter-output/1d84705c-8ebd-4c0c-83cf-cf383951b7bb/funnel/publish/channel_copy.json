@@ -1,0 +1,32 @@
+{
+  "venture_id": "1d84705c-8ebd-4c0c-83cf-cf383951b7bb",
+  "venture_code": "CON-004",
+  "channels": {
+    "youtube_shorts": {
+      "tof": {
+        "title_template": "{{hook}} | Building Supply Chain",
+        "description_template": "{{script}}\n\nFollow for more.",
+        "hashtags": ["#shorts", "#construction", "#CON-004"]
+      },
+      "mof": {
+        "title_template": "How Building Supply Chain works in 3 steps",
+        "description_template": "{{script}}\n\nBook a free workflow review",
+        "hashtags": ["#construction", "#demo"]
+      },
+      "bof": {
+        "title_template": "Book a free workflow review | Building Supply Chain",
+        "description_template": "{{script}}\n\nBook below.",
+        "hashtags": ["#contractor", "#saas"]
+      }
+    },
+    "instagram_reels": {
+      "caption_max_chars": 2200,
+      "tof_hook_first_line": true,
+      "cta": "Link in bio"
+    },
+    "linkedin": {
+      "mof_preferred": true,
+      "tone": "professional, metric-led"
+    }
+  }
+}

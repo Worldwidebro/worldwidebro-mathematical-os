@@ -1,0 +1,15 @@
+{
+  "clips": [
+    {
+      "clip_index": 1,
+      "path": "/Users/acebless/Documents/moneyprinter-output/1d84705c-8ebd-4c0c-83cf-cf383951b7bb/work/clips/clip_01.mp4",
+      "hook": "Here's how Building Supply Chain fixes the problem \u2014 in 3 steps.",
+      "parent_video": "/Users/acebless/Documents/moneyprinter-output/1d84705c-8ebd-4c0c-83cf-cf383951b7bb/output.mp4",
+      "funnel_stage": "mof",
+      "platform": "youtube_shorts",
+      "source": "ffmpeg-segment",
+      "duration_sec": 30.0
+    }
+  ],
+  "queued": 1
+}

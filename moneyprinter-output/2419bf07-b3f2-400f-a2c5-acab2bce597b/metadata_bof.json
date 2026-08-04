@@ -1,0 +1,62 @@
+{
+  "schema_version": 2,
+  "venture_id": "2419bf07-b3f2-400f-a2c5-acab2bce597b",
+  "venture_code": "CON-002",
+  "title": "Permit Compliance Platform",
+  "topic": "Permit delays killing your timeline",
+  "hook": "Still on the fence? Here's what changes when you switch.",
+  "script_lines": [
+    "Still on the fence? Here's what changes when you switch.",
+    "Contractors using Permit Compliance Platform cut delays and protect margin.",
+    "Clear process. Audit-ready trail. No spreadsheet chaos.",
+    "Book a permit workflow review \u2014 link below."
+  ],
+  "script": "Still on the fence? Here's what changes when you switch. Contractors using Permit Compliance Platform cut delays and protect margin. Clear process. Audit-ready trail. No spreadsheet chaos. Book a permit workflow review \u2014 link below.",
+  "cta": "Book a permit workflow review \u2014 link below.",
+  "scenes": [
+    {
+      "index": 0,
+      "text": "Still on the fence? Here's what changes when you switch.",
+      "role": "hook",
+      "visual_keyword": "building permit"
+    },
+    {
+      "index": 1,
+      "text": "Contractors using Permit Compliance Platform cut delays and protect margin.",
+      "role": "body",
+      "visual_keyword": "inspection"
+    },
+    {
+      "index": 2,
+      "text": "Clear process. Audit-ready trail. No spreadsheet chaos.",
+      "role": "body",
+      "visual_keyword": "compliance"
+    },
+    {
+      "index": 3,
+      "text": "Book a permit workflow review \u2014 link below.",
+      "role": "cta",
+      "visual_keyword": "building permit"
+    }
+  ],
+  "funnel_stage": "bof",
+  "duration_target_sec": 17,
+  "music_type": "professional",
+  "subtitle_style": "burned_in",
+  "video_type": "conversion",
+  "target_platform": "youtube_shorts",
+  "quality": "1080p",
+  "publish": {
+    "youtube_title": "Permit delays killing your timeline | Permit Compliance Platform",
+    "youtube_description": "Permit delays killing your timeline\n\nStill on the fence? Here's what changes when you switch. Contractors using Permit Compliance Platform cut delays and protect margin. Clear process. Audit-ready trail. No spreadsheet chaos. Book a permit workflow review \u2014 link below.\n\n#con-002 #construction #contractor #buildbetter #shorts",
+    "hashtags": [
+      "#con-002",
+      "#construction",
+      "#contractor",
+      "#buildbetter",
+      "#shorts"
+    ],
+    "thumbnail_text": "Permit delays killing your timeline"
+  },
+  "created_at": "2026-06-05T19:19:19.048312"
+}

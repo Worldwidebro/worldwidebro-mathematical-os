@@ -1,0 +1,19 @@
+{
+  "name": "@knowledge-graph-os/neo4j-routing",
+  "version": "0.1.0",
+  "description": "GraphRouter for Neo4j agent matching & scoring",
+  "main": "dist/router.js",
+  "types": "dist/router.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "neo4j-driver": "^5.14.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}

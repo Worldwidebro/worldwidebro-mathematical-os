@@ -1,0 +1,8 @@
+{
+  "name": "was_database_schema_and_models",
+  "description": "Orchestrates technical commands for Database Schema & Models in venture Tampa Carwash",
+  "parameters": {
+    "type": "object",
+    "properties": {}
+  }
+}

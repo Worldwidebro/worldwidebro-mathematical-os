@@ -1,0 +1,62 @@
+{
+  "schema_version": 2,
+  "venture_id": "3639fa60-a2aa-4c02-85e6-bb1b8a2f3910",
+  "venture_code": "CON-006",
+  "title": "Workforce Management",
+  "topic": "Project Management Best Practices",
+  "hook": "Still on the fence? Here's what changes when you switch.",
+  "script_lines": [
+    "Still on the fence? Here's what changes when you switch.",
+    "Contractors using Workforce Management cut delays and protect margin.",
+    "Clear process. Audit-ready trail. No spreadsheet chaos.",
+    "Book a free walkthrough \u2014 link below."
+  ],
+  "script": "Still on the fence? Here's what changes when you switch. Contractors using Workforce Management cut delays and protect margin. Clear process. Audit-ready trail. No spreadsheet chaos. Book a free walkthrough \u2014 link below.",
+  "cta": "Book a free walkthrough \u2014 link below.",
+  "scenes": [
+    {
+      "index": 0,
+      "text": "Still on the fence? Here's what changes when you switch.",
+      "role": "hook",
+      "visual_keyword": "construction crew"
+    },
+    {
+      "index": 1,
+      "text": "Contractors using Workforce Management cut delays and protect margin.",
+      "role": "body",
+      "visual_keyword": "hard hat"
+    },
+    {
+      "index": 2,
+      "text": "Clear process. Audit-ready trail. No spreadsheet chaos.",
+      "role": "body",
+      "visual_keyword": "jobsite"
+    },
+    {
+      "index": 3,
+      "text": "Book a free walkthrough \u2014 link below.",
+      "role": "cta",
+      "visual_keyword": "construction crew"
+    }
+  ],
+  "funnel_stage": "bof",
+  "duration_target_sec": 16,
+  "music_type": "professional",
+  "subtitle_style": "burned_in",
+  "video_type": "conversion",
+  "target_platform": "youtube_shorts",
+  "quality": "1080p",
+  "publish": {
+    "youtube_title": "Project Management Best Practices | Workforce Management",
+    "youtube_description": "Project Management Best Practices\n\nStill on the fence? Here's what changes when you switch. Contractors using Workforce Management cut delays and protect margin. Clear process. Audit-ready trail. No spreadsheet chaos. Book a free walkthrough \u2014 link below.\n\n#con-006 #construction #contractor #buildbetter #shorts",
+    "hashtags": [
+      "#con-006",
+      "#construction",
+      "#contractor",
+      "#buildbetter",
+      "#shorts"
+    ],
+    "thumbnail_text": "Project Management Best Practices"
+  },
+  "created_at": "2026-06-05T19:19:20.455799"
+}

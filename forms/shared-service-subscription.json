@@ -1,0 +1,19 @@
+{
+  "name": "Shared Service Subscription",
+  "description": "Venture A pays Venture B for service",
+  "form_id": "subs-001",
+  "agent_can_fill": "Finance Agent",
+  "required_for": ["LT-005", "CON-001", "STA-001", "OPS-001", "EC-001", "EC-112", "RE-001", "LT-011"],
+  "fields": {
+    "subscriber_venture_id": {"type": "string", "label": "Subscriber Venture", "required": true},
+    "provider_venture_id": {"type": "string", "label": "Provider Venture", "required": true},
+    "service_name": {"type": "string", "label": "Service Name", "required": true},
+    "monthly_cost": {"type": "string", "label": "Monthly Cost ($)", "required": true, "pattern": "^\\d+(\\.\\d{2})?$"},
+    "start_date": {"type": "string", "label": "Start Date", "required": true, "format": "YYYY-MM-DD"},
+    "contract_term_months": {"type": "string", "label": "Contract Term (months)", "required": true, "pattern": "^\\d+$"},
+    "payment_method": {"type": "enum", "label": "Payment Method", "required": true, "values": ["ACH", "Credit Card", "Wire Transfer", "Revenue Share"]}
+  },
+  "neo4j": {"node": "Subscription", "relation": "SUBSCRIBES_TO"},
+  "version": "1.0",
+  "status": "P0"
+}

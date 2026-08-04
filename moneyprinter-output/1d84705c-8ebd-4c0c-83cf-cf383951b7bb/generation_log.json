@@ -1,0 +1,12 @@
+{
+  "status": "success",
+  "venture_id": "1d84705c-8ebd-4c0c-83cf-cf383951b7bb",
+  "venture_code": "CON-004",
+  "topic": "Why jobs stall when materials are late",
+  "tts_method": "silent-estimated",
+  "duration_sec": 22.0,
+  "scene_count": 5,
+  "output": "/Users/acebless/Documents/moneyprinter-output/1d84705c-8ebd-4c0c-83cf-cf383951b7bb/output.mp4",
+  "publish": "/Users/acebless/Documents/moneyprinter-output/1d84705c-8ebd-4c0c-83cf-cf383951b7bb/publish.json",
+  "captions": "/Users/acebless/Documents/moneyprinter-output/1d84705c-8ebd-4c0c-83cf-cf383951b7bb/work/captions.srt"
+}

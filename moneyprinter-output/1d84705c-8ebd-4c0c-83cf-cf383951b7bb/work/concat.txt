@@ -1,0 +1,11 @@
+file '/Users/acebless/Documents/moneyprinter-output/1d84705c-8ebd-4c0c-83cf-cf383951b7bb/work/scene_00.png'
+duration 3.750
+file '/Users/acebless/Documents/moneyprinter-output/1d84705c-8ebd-4c0c-83cf-cf383951b7bb/work/scene_01.png'
+duration 4.500
+file '/Users/acebless/Documents/moneyprinter-output/1d84705c-8ebd-4c0c-83cf-cf383951b7bb/work/scene_02.png'
+duration 5.583
+file '/Users/acebless/Documents/moneyprinter-output/1d84705c-8ebd-4c0c-83cf-cf383951b7bb/work/scene_03.png'
+duration 4.750
+file '/Users/acebless/Documents/moneyprinter-output/1d84705c-8ebd-4c0c-83cf-cf383951b7bb/work/scene_04.png'
+duration 3.417
+file '/Users/acebless/Documents/moneyprinter-output/1d84705c-8ebd-4c0c-83cf-cf383951b7bb/work/scene_04.png'

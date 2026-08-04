@@ -1,0 +1,8 @@
+{
+  "name": "tec_database_schema_and_models",
+  "description": "Orchestrates technical commands for Database Schema & Models in venture Cyber Shield",
+  "parameters": {
+    "type": "object",
+    "properties": {}
+  }
+}

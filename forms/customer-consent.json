@@ -1,0 +1,19 @@
+{
+  "name": "Customer Consent",
+  "description": "Customer opts in to SMS/Email/Data processing",
+  "form_id": "cons-001",
+  "agent_can_fill": "Sales Agent",
+  "required_for": ["LT-005", "CON-001", "STA-001", "OPS-001", "EC-001", "EC-112", "RE-001", "LT-011"],
+  "fields": {
+    "customer_email": {"type": "string", "label": "Email", "required": true, "format": "email"},
+    "customer_phone": {"type": "string", "label": "Phone Number", "required": false, "pattern": "^\\+?1?\\d{9,15}$"},
+    "consent_email": {"type": "boolean", "label": "Consent to Email Marketing", "required": true},
+    "consent_sms": {"type": "boolean", "label": "Consent to SMS Marketing", "required": true},
+    "consent_data": {"type": "boolean", "label": "Consent to Data Processing (GDPR)", "required": true},
+    "consent_date": {"type": "string", "label": "Consent Date", "required": true, "format": "YYYY-MM-DD"},
+    "consent_method": {"type": "enum", "label": "Consent Method", "required": true, "values": ["Web Form", "Phone Call", "In-Person", "API"]}
+  },
+  "neo4j": {"node": "CustomerConsent", "relation": "HAS_CONSENT"},
+  "version": "1.0",
+  "status": "P0"
+}

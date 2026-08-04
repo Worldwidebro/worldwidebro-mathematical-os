@@ -1,0 +1,5 @@
+{
+  "name": "module_3:_database_schema_&_models",
+  "description": "Orchestrates Module 3: Database Schema & Models commands",
+  "parameters": {"type": "object", "properties": {}}
+}

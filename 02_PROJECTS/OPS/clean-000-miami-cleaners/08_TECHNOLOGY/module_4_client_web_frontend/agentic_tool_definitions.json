@@ -1,0 +1,8 @@
+{
+  "name": "cle_client_web_frontend",
+  "description": "Orchestrates technical commands for Client Web Frontend in venture Miami Cleaners",
+  "parameters": {
+    "type": "object",
+    "properties": {}
+  }
+}

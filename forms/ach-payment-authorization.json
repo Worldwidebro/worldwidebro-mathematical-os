@@ -1,0 +1,20 @@
+{
+  "name": "ACH / Payment Authorization",
+  "description": "Customer authorizes recurring payment via ACH",
+  "form_id": "ach-001",
+  "agent_can_fill": "Finance Agent",
+  "required_for": ["LT-005", "CON-001", "STA-001", "OPS-001", "EC-001", "EC-112", "RE-001", "LT-011"],
+  "fields": {
+    "customer_name": {"type": "string", "label": "Customer Name", "required": true},
+    "customer_email": {"type": "string", "label": "Email", "required": true, "format": "email"},
+    "bank_account_name": {"type": "string", "label": "Account Holder Name", "required": true},
+    "routing_number": {"type": "string", "label": "Routing Number", "required": true, "pattern": "^\\d{9}$"},
+    "account_number_last4": {"type": "string", "label": "Account Number (last 4)", "required": true, "pattern": "^\\d{4}$"},
+    "account_type": {"type": "enum", "label": "Account Type", "required": true, "values": ["Checking", "Savings"]},
+    "monthly_amount": {"type": "string", "label": "Monthly Amount ($)", "required": true, "pattern": "^\\d+(\\.\\d{2})?$"},
+    "authorization_date": {"type": "string", "label": "Authorization Date", "required": true, "format": "YYYY-MM-DD"}
+  },
+  "neo4j": {"node": "PaymentAuthorization", "relation": "AUTHORIZES_PAYMENT"},
+  "version": "1.0",
+  "status": "P0"
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 2,
+  "venture_id": "3639fa60-a2aa-4c02-85e6-bb1b8a2f3910",
+  "venture_code": "CON-006",
+  "title": "Workforce Management",
+  "topic": "Project Management Best Practices",
+  "hook": "Here's how Workforce Management fixes the problem \u2014 in 3 steps.",
+  "script_lines": [
+    "Here's how Workforce Management fixes the problem \u2014 in 3 steps.",
+    "Scheduling trades, tracking certs, and filling gaps shouldn't be manual.",
+    "Workforce Management keeps workforce plans visible across every active job.",
+    "That's the workflow Workforce Management runs for active jobs.",
+    "Try workforce scheduling demo \u2014 link in bio."
+  ],
+  "script": "Here's how Workforce Management fixes the problem \u2014 in 3 steps. Scheduling trades, tracking certs, and filling gaps shouldn't be manual. Workforce Management keeps workforce plans visible across every active job. That's the workflow Workforce Management runs for active jobs. Try workforce scheduling demo \u2014 link in bio.",
+  "cta": "Try workforce scheduling demo \u2014 link in bio.",
+  "scenes": [
+    {
+      "index": 0,
+      "text": "Here's how Workforce Management fixes the problem \u2014 in 3 steps.",
+      "role": "hook",
+      "visual_keyword": "construction crew"
+    },
+    {
+      "index": 1,
+      "text": "Scheduling trades, tracking certs, and filling gaps shouldn't be manual.",
+      "role": "body",
+      "visual_keyword": "hard hat"
+    },
+    {
+      "index": 2,
+      "text": "Workforce Management keeps workforce plans visible across every active job.",
+      "role": "body",
+      "visual_keyword": "jobsite"
+    },
+    {
+      "index": 3,
+      "text": "That's the workflow Workforce Management runs for active jobs.",
+      "role": "body",
+      "visual_keyword": "construction crew"
+    },
+    {
+      "index": 4,
+      "text": "Try workforce scheduling demo \u2014 link in bio.",
+      "role": "cta",
+      "visual_keyword": "hard hat"
+    }
+  ],
+  "funnel_stage": "mof",
+  "duration_target_sec": 24,
+  "music_type": "professional",
+  "subtitle_style": "burned_in",
+  "video_type": "demo_walkthrough",
+  "target_platform": "youtube_shorts",
+  "quality": "1080p",
+  "publish": {
+    "youtube_title": "Project Management Best Practices | Workforce Management",
+    "youtube_description": "Project Management Best Practices\n\nHere's how Workforce Management fixes the problem \u2014 in 3 steps. Scheduling trades, tracking certs, and filling gaps shouldn't be manual. Workforce Management keeps workforce plans visible across every active job. That's the workflow Workforce Management runs for active jobs. Try workforce scheduling demo \u2014 link in bio.\n\n#con-006 #construction #contractor #buildbetter #shorts",
+    "hashtags": [
+      "#con-006",
+      "#construction",
+      "#contractor",
+      "#buildbetter",
+      "#shorts"
+    ],
+    "thumbnail_text": "Project Management Best Practices"
+  },
+  "created_at": "2026-06-05T19:19:20.712269"
+}

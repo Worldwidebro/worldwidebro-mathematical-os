@@ -1,0 +1,11 @@
+{
+  "venture_id": "3639fa60-a2aa-4c02-85e6-bb1b8a2f3910",
+  "venture_code": "CON-006",
+  "routing": {
+    "foundation": ["audience-agent", "brand-agent"],
+    "tof": ["tof-viral-agent", "brand-agent"],
+    "mof": ["mof-proof-agent", "brand-agent"],
+    "bof": ["bof-conversion-agent", "brand-agent"],
+    "publish": ["distribution-agent"]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@knowledge-graph-os/ingestion-pipeline",
+  "version": "0.1.0",
+  "description": "Supabase → Neo4j/Qdrant ingestion pipeline with error handling",
+  "main": "dist/ingest.js",
+  "types": "dist/ingest.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/ingest.js",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.38.0",
+    "neo4j-driver": "^5.14.0",
+    "qdrant-js": "^1.7.0",
+    "@anthropic-ai/sdk": "^0.95.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}

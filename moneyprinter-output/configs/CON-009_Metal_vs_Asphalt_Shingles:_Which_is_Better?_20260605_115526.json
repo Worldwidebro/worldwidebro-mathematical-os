@@ -1,0 +1,24 @@
+{
+  "task_id": "CON-009_Metal_vs_Asphalt_Shingles:_Which_is_Better?_20260605_115526",
+  "video_subject": "Metal vs Asphalt Shingles: Which is Better?",
+  "video_script": "Compare roofing materials: durability, cost, lifespan,\n                maintenance, energy efficiency, appearance. Help homeowners choose.",
+  "video_size": "16:9",
+  "duration": 50,
+  "language": "en",
+  "voice": "male_professional",
+  "bgm": "trending",
+  "bgm_volume": 0.45,
+  "subtitle": {
+    "font": "Microsoft YaHei",
+    "size": 40,
+    "color": "#FFFFFF",
+    "stroke_color": "#000000",
+    "stroke_width": 1.5,
+    "style": "modern"
+  },
+  "concurrent_num": 2,
+  "llm_provider": "aihubmix",
+  "video_source": "pexels",
+  "output_path": "/Users/acebless/Documents/moneyprinter-output/videos/CON-009",
+  "webhook_url": null
+}

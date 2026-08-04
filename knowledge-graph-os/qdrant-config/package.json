@@ -1,0 +1,18 @@
+{
+  "name": "@knowledge-graph-os/qdrant-config",
+  "version": "0.1.0",
+  "description": "Qdrant vector database configuration for embeddings",
+  "main": "dist/config.js",
+  "types": "dist/config.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "dependencies": {
+    "qdrant-js": "^1.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}

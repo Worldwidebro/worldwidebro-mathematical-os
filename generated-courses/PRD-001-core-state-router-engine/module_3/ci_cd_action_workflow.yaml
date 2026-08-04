@@ -1,0 +1,7 @@
+name: Deploy Module 3: Database Schema & Models
+on:
+  push:
+    branches: [main]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest

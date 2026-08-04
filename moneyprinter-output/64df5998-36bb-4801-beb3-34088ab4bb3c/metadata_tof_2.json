@@ -1,0 +1,55 @@
+{
+  "schema_version": 2,
+  "venture_id": "64df5998-36bb-4801-beb3-34088ab4bb3c",
+  "venture_code": "CON-008",
+  "title": "Site Inspection Tech",
+  "topic": "5 Home Renovation Mistakes",
+  "hook": "You're losing money if you ignore this on every job.",
+  "script_lines": [
+    "You're losing money if you ignore this on every job.",
+    "Document issues in the field before they become punch-list disasters.",
+    "Follow for more contractor ops tips."
+  ],
+  "script": "You're losing money if you ignore this on every job. Document issues in the field before they become punch-list disasters. Follow for more contractor ops tips.",
+  "cta": "Follow for more contractor ops tips.",
+  "scenes": [
+    {
+      "index": 0,
+      "text": "You're losing money if you ignore this on every job.",
+      "role": "hook",
+      "visual_keyword": "site inspection"
+    },
+    {
+      "index": 1,
+      "text": "Document issues in the field before they become punch-list disasters.",
+      "role": "body",
+      "visual_keyword": "checklist"
+    },
+    {
+      "index": 2,
+      "text": "Follow for more contractor ops tips.",
+      "role": "cta",
+      "visual_keyword": "construction quality"
+    }
+  ],
+  "funnel_stage": "tof",
+  "duration_target_sec": 15,
+  "music_type": "professional",
+  "subtitle_style": "burned_in",
+  "video_type": "viral_hook",
+  "target_platform": "youtube_shorts",
+  "quality": "1080p",
+  "publish": {
+    "youtube_title": "5 Home Renovation Mistakes | Site Inspection Tech",
+    "youtube_description": "5 Home Renovation Mistakes\n\nYou're losing money if you ignore this on every job. Document issues in the field before they become punch-list disasters. Follow for more contractor ops tips.\n\n#con-008 #construction #contractor #buildbetter #shorts",
+    "hashtags": [
+      "#con-008",
+      "#construction",
+      "#contractor",
+      "#buildbetter",
+      "#shorts"
+    ],
+    "thumbnail_text": "5 Home Renovation Mistakes"
+  },
+  "created_at": "2026-06-05T19:19:21.142020"
+}

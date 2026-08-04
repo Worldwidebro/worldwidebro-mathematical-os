@@ -1,0 +1,18 @@
+{
+  "name": "Capability Request",
+  "description": "Venture needs an external capability",
+  "form_id": "cap-req-001",
+  "agent_can_fill": "Operations Agent",
+  "required_for": ["LT-005", "CON-001", "STA-001", "OPS-001", "EC-001", "EC-112", "RE-001", "LT-011"],
+  "fields": {
+    "venture_id": {"type": "string", "label": "Venture ID", "required": true},
+    "capability_needed": {"type": "string", "label": "Capability Name", "required": true},
+    "description": {"type": "string", "label": "Why Needed", "required": true, "max_length": 500},
+    "priority": {"type": "enum", "label": "Priority", "required": true, "values": ["Critical", "High", "Medium", "Low"]},
+    "timeline": {"type": "string", "label": "Needed By (date)", "required": true, "format": "YYYY-MM-DD"},
+    "budget": {"type": "string", "label": "Budget ($)", "required": false}
+  },
+  "neo4j": {"node": "CapabilityRequest", "relation": "NEEDS_CAPABILITY"},
+  "version": "1.0",
+  "status": "P0"
+}

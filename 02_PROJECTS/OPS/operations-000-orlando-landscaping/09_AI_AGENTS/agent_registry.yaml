@@ -1,0 +1,36 @@
+venture: Orlando Landscaping
+id: OPE-001
+agents:
+- name: Ops CEO Agent
+  role: CEO
+  mission: Operate sector workflows dynamically.
+  authority:
+  - read_local_database
+  limits:
+  - cannot_alter_production
+  brain:
+    reasoning: qwen2.5:7b
+    coding: deepseek-coder:6.7b
+    embeddings: nomic-embed-text
+- name: Task Dispatcher Agent
+  role: Orchestrator
+  mission: Operate sector workflows dynamically.
+  authority:
+  - read_local_database
+  limits:
+  - cannot_alter_production
+  brain:
+    reasoning: qwen2.5:7b
+    coding: deepseek-coder:6.7b
+    embeddings: nomic-embed-text
+- name: Customer Support Agent
+  role: Support
+  mission: Operate sector workflows dynamically.
+  authority:
+  - read_local_database
+  limits:
+  - cannot_alter_production
+  brain:
+    reasoning: qwen2.5:7b
+    coding: deepseek-coder:6.7b
+    embeddings: nomic-embed-text

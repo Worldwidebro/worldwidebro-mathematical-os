@@ -1,0 +1,168 @@
+════════════════════════════════════════════════════════════════════════════
+WORLDWIDEBRO OS COMPLETE AUDIT
+Generated: Wed Jul 29 19:19:35 EDT 2026
+════════════════════════════════════════════════════════════════════════════
+
+═══ 1. INFRASTRUCTURE STATUS ═══
+Checking Docker services...
+
+Docker containers:
+
+Service health checks:
+PostgreSQL: ❌ DOWN
+Neo4j: ✅ ALIVE
+Redis: ❌ DOWN
+Qdrant: ✅ ALIVE
+Langfuse: ✅ ALIVE
+
+═══ 2. LIVE DATA STATUS ═══
+
+Ventures in Supabase:
+
+Ventures by sector:
+
+Ventures by stage:
+
+Knowledge Graph (Neo4j):
+Port 7474 not allowed for HTTP
+
+Vector Database (Qdrant):
+Port 6333 not allowed for HTTP
+
+═══ 3. CODE INVENTORY ═══
+
+Agent implementations:
+  Python: 18
+  TypeScript/JS: 162
+
+Skill implementations:
+  Python: 59
+  TypeScript/JS: 62
+
+Command implementations:
+  Python: 15
+  TypeScript/JS: 117
+
+Gemini code (business OS):
+  Files: 0
+
+Civilization code (infrastructure OS):
+  Files: 0
+
+Agent framework (.agents/skills):
+  Skill folders: 23
+
+═══ 4. CONFIGURATION & REGISTRY ═══
+
+Registered agents (Gemini/registry/agents.yaml):
+File not found
+
+Registered MCPs (MCP_REGISTRY.json):
+
+Tool capability map entries:
+
+Skill index entries:
+File not found
+
+═══ 5. STORAGE & DISK USAGE ═══
+
+Disk available:
+/dev/disk3s5   228Gi   187Gi   8.7Gi    96%    3.4M   91M    4%   /System/Volumes/Data
+
+Top folders by size:
+4.1G	OmniRoute/
+1.4G	_archive/
+957M	realestate-os/
+933M	con-001-ace-construction/
+433M	vex-engine/
+197M	vex-hero-site/
+145M	angels-in-daylight/
+137M	_career/
+ 79M	vex-api/
+ 21M	classbuild/
+ 20M	captable/
+ 14M	integrations-venv/
+9.8M	antigravity/
+4.1M	iza-os-intelligence/
+4.0M	moneyprinter-output/
+1.0M	bw-eroticafox/
+788K	VENTURES/
+480K	bloom-community-hub/
+404K	review-receipts/
+404K	backups/
+
+Large files (>100MB):
+./.gitnexus/parse-cache/59d2a1cd009559aba72fe63e65fce54fae99eeaa90d8855ba5d2a93ace6c515c.json
+./.gitnexus/csv/file.csv
+./.gitnexus/csv/section.csv
+./.gitnexus/lbug
+./con-001-ace-construction/node_modules/@next/swc-darwin-arm64/next-swc.darwin-arm64.node
+./_archive/worldwidebro-construction-os/node_modules/@next/swc-darwin-arm64/next-swc.darwin-arm64.node
+./_archive/worldwidebro-construction-os/apps/con-001-public/.next/cache/webpack/server-production/0.pack
+./realestate-os/node_modules/@next/swc-darwin-arm64/next-swc.darwin-arm64.node
+./OmniRoute/node_modules/@openai/codex-darwin-arm64/vendor/aarch64-apple-darwin/bin/codex
+./OmniRoute/node_modules/@anthropic-ai/claude-agent-sdk-darwin-arm64/claude
+./OmniRoute/node_modules/@next/swc-darwin-arm64/next-swc.darwin-arm64.node
+./OmniRoute/.git/objects/pack/pack-bac7f5b7959fe27a1e36c5969b7d8207d1c1a952.pack
+./vex-engine/node_modules/@next/swc-darwin-arm64/next-swc.darwin-arm64.node
+
+node_modules size:
+
+═══ 6. GIT STATUS ═══
+
+Current branch:
+2026-06-19-os-consolidation
+
+Recent commits:
+e754636f fix: unified dark theme across auth and onboarding pages + email route ESM fix
+558c6ab5 fix: Add --deploy flag handler to venture_loop.py for capital routing
+e572d1a9 feat(Phase C): Minimal context router implementation
+9f31cf43 fix: Jotform webhook field mapping
+a151eb8b feat: Complete Human OS implementation (Tasks 5-8)
+da48d3b2 docs(quick-260728-001): Context-aware task router implementation plan
+6e060b2c fix: store layer_scores as JSON to prevent Neo4j type errors
+1aa2bb91 docs: Update Monday launch card for Jotform webhook (no Zapier)
+e886a0eb feat: Jotform webhook + serverless email (replaces Zapier)
+2daba91b feat: Complete Zapier-Stripe execution plan with Monday launch card
+
+Uncommitted changes:
+  Modified files: 577
+
+All branches:
+  2026-05-22-figt
+* 2026-06-19-os-consolidation
+  main
++ worktree-agent-ac65ac3629807bab2
+  remotes/origin/2026-06-19-os-consolidation
+  remotes/worldwidebro/2026-05-22-figt
+  remotes/worldwidebro/2026-06-19-os-consolidation
+  remotes/worldwidebro/HEAD -> worldwidebro/main
+  remotes/worldwidebro/main
+
+Remotes:
+origin	https://github.com/Worldwidebro/worldwidebro-mathematical-os.git (fetch)
+origin	https://github.com/Worldwidebro/worldwidebro-mathematical-os.git (push)
+worldwidebro	https://github.com/Worldwidebro/Worldwidebro.git (fetch)
+worldwidebro	https://github.com/Worldwidebro/Worldwidebro.git (push)
+
+═══ 7. GITNEXUS INDEX STATUS ═══
+
+
+═══ 8. LOCALLY CLONED REPOS ═══
+
+Git repos in current directory:
+.git
+OmniRoute
+bloom-community-hub
+bw-eroticafox
+captable
+classbuild
+con-001-ace-construction
+iza-os-marketing-core
+mc-006-video-production-company
+vex-hero-site
+
+════════════════════════════════════════════════════════════════════════════
+AUDIT COMPLETE
+Report saved to: AUDIT-WORLDWIDEBRO-OS-20260729_191935.txt
+════════════════════════════════════════════════════════════════════════════

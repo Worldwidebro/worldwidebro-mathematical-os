@@ -1,0 +1,11 @@
+{
+  "name": "mathematical-os",
+  "version": "0.1.0",
+  "description": "Formula index & mathematical expression engine",
+  "tags": ["infrastructure", "phase-2", "formula-engine"],
+  "workspaces": [
+    "formula-index",
+    "symbol-resolver",
+    "expression-parser"
+  ]
+}

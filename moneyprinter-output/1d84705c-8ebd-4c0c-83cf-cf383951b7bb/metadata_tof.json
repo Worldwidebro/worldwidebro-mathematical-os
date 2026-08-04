@@ -1,0 +1,55 @@
+{
+  "schema_version": 2,
+  "venture_id": "1d84705c-8ebd-4c0c-83cf-cf383951b7bb",
+  "venture_code": "CON-004",
+  "title": "Building Supply Chain",
+  "topic": "Why jobs stall when materials are late",
+  "hook": "You're losing money if you ignore this on every job.",
+  "script_lines": [
+    "You're losing money if you ignore this on every job.",
+    "That's usually a supply chain problem \u2014 not your crew.",
+    "Follow for more contractor ops tips."
+  ],
+  "script": "You're losing money if you ignore this on every job. That's usually a supply chain problem \u2014 not your crew. Follow for more contractor ops tips.",
+  "cta": "Follow for more contractor ops tips.",
+  "scenes": [
+    {
+      "index": 0,
+      "text": "You're losing money if you ignore this on every job.",
+      "role": "hook",
+      "visual_keyword": "delivery truck"
+    },
+    {
+      "index": 1,
+      "text": "That's usually a supply chain problem \u2014 not your crew.",
+      "role": "body",
+      "visual_keyword": "warehouse"
+    },
+    {
+      "index": 2,
+      "text": "Follow for more contractor ops tips.",
+      "role": "cta",
+      "visual_keyword": "construction schedule"
+    }
+  ],
+  "funnel_stage": "tof",
+  "duration_target_sec": 15,
+  "music_type": "professional",
+  "subtitle_style": "burned_in",
+  "video_type": "viral_hook",
+  "target_platform": "youtube_shorts",
+  "quality": "1080p",
+  "publish": {
+    "youtube_title": "Why jobs stall when materials are late | Building Supply Chain",
+    "youtube_description": "Why jobs stall when materials are late\n\nYou're losing money if you ignore this on every job. That's usually a supply chain problem \u2014 not your crew. Follow for more contractor ops tips.\n\n#con-004 #construction #contractor #buildbetter #shorts",
+    "hashtags": [
+      "#con-004",
+      "#construction",
+      "#contractor",
+      "#buildbetter",
+      "#shorts"
+    ],
+    "thumbnail_text": "Why jobs stall when materials are late"
+  },
+  "created_at": "2026-06-05T19:19:19.725316"
+}

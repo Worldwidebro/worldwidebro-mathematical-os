@@ -1,0 +1,8 @@
+{
+  "name": "ope_client_web_frontend",
+  "description": "Orchestrates technical commands for Client Web Frontend in venture Orlando Landscaping",
+  "parameters": {
+    "type": "object",
+    "properties": {}
+  }
+}

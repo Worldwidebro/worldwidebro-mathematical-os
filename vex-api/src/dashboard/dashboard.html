@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Founder Dashboard - Human OS</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .dashboard-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Header */
+    header {
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      color: #666;
+      font-size: 16px;
+    }
+
+    /* Tier Badge */
+    .tier-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .tier-badge.autonomous {
+      background: #d4edda;
+      color: #155724;
+      border: 2px solid #28a745;
+    }
+
+    .tier-badge.monitored {
+      background: #fff3cd;
+      color: #856404;
+      border: 2px solid #ffc107;
+    }
+
+    .tier-badge.training {
+      background: #f8d7da;
+      color: #721c24;
+      border: 2px solid #dc3545;
+    }
+
+    .tier-badge-icon {
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+    }
+
+    /* Main Grid Layout */
+    .dashboard-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+
+    /* Metrics Gauges Section */
+    .metrics-section {
+      grid-column: 1 / -1;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .gauge {
+      background: white;
+      padding: 24px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .gauge-header {
+      font-size: 14px;
+      font-weight: 600;
+      color: #666;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .gauge-value {
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .gauge-value.green { color: #28a745; }
+    .gauge-value.yellow { color: #ffc107; }
+    .gauge-value.red { color: #dc3545; }
+
+    .gauge-bar {
+      width: 100%;
+      height: 8px;
+      background: #e9ecef;
+      border-radius: 4px;
+      overflow: hidden;
+      margin-bottom: 12px;
+    }
+
+    .gauge-bar-fill {
+      height: 100%;
+      border-radius: 4px;
+      transition: width 0.3s ease;
+    }
+
+    .gauge-bar-fill.green { background: #28a745; }
+    .gauge-bar-fill.yellow { background: #ffc107; }
+    .gauge-bar-fill.red { background: #dc3545; }
+
+    .gauge-label {
+      font-size: 12px;
+      color: #999;
+    }
+
+    /* Layer Progress Grid */
+    .layers-section {
+      grid-column: 1 / -1;
+    }
+
+    .section-title {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: #333;
+    }
+
+    .layers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 12px;
+    }
+
+    .layer-card {
+      background: white;
+      padding: 16px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .layer-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    }
+
+    .layer-code {
+      font-size: 12px;
+      font-weight: 700;
+      color: #666;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+
+    .layer-name {
+      font-size: 13px;
+      font-weight: 500;
+      color: #333;
+      margin-bottom: 12px;
+    }
+
+    .layer-bar {
+      width: 100%;
+      height: 6px;
+      background: #e9ecef;
+      border-radius: 3px;
+      overflow: hidden;
+      margin-bottom: 8px;
+    }
+
+    .layer-bar-fill {
+      height: 100%;
+      border-radius: 3px;
+    }
+
+    .layer-bar-fill.excellent { background: #28a745; }
+    .layer-bar-fill.good { background: #ffc107; }
+    .layer-bar-fill.atrisk { background: #dc3545; }
+
+    .layer-score {
+      font-size: 12px;
+      color: #666;
+      font-weight: 600;
+    }
+
+    /* Trend Timeline Section */
+    .trend-section {
+      grid-column: 1 / -1;
+      background: white;
+      padding: 24px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .trend-chart {
+      margin-top: 16px;
+      height: 200px;
+      position: relative;
+    }
+
+    .sparkline {
+      width: 100%;
+      height: 100%;
+    }
+
+    .trend-labels {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: 12px;
+      font-size: 12px;
+      color: #999;
+    }
+
+    .trend-point {
+      flex: 1;
+      text-align: center;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .dashboard-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .layers-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .dashboard-container {
+        padding: 16px;
+      }
+
+      header h1 {
+        font-size: 24px;
+      }
+
+      .gauge-value {
+        font-size: 32px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .layers-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .tier-badge {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+      }
+
+      .metrics-section {
+        grid-template-columns: 1fr;
+      }
+
+      .gauge-value {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Header -->
+    <header>
+      <h1>Founder Dashboard</h1>
+      <p>Human OS Governance Tier & Layer Progress</p>
+    </header>
+
+    <!-- Tier Badge -->
+    <div class="tier-badge monitored">
+      <div class="tier-badge-icon">⚙️</div>
+      <div>70-79% MONITORED</div>
+    </div>
+
+    <!-- Metrics Gauges -->
+    <section class="metrics-section">
+      <div class="gauge">
+        <div class="gauge-header">Execution Success Rate</div>
+        <div class="gauge-value yellow">85%</div>
+        <div class="gauge-bar">
+          <div class="gauge-bar-fill yellow" style="width: 85%"></div>
+        </div>
+        <div class="gauge-label">Target: 90%+ for Autonomous tier</div>
+      </div>
+
+      <div class="gauge">
+        <div class="gauge-header">Learning Velocity</div>
+        <div class="gauge-value yellow">52h</div>
+        <div class="gauge-bar">
+          <div class="gauge-bar-fill yellow" style="width: 52%"></div>
+        </div>
+        <div class="gauge-label">Target: ≤48h for Autonomous tier</div>
+      </div>
+    </section>
+
+    <!-- Layer Progress -->
+    <section class="layers-section">
+      <h2 class="section-title">Layer Progress (L1-L10)</h2>
+      <div class="layers-grid">
+        <!-- L1 -->
+        <article class="layer-card">
+          <div class="layer-code">L1</div>
+          <div class="layer-name">Ideation</div>
+          <div class="layer-bar">
+            <div class="layer-bar-fill excellent" style="width: 90%"></div>
+          </div>
+          <div class="layer-score">9/10</div>
+        </article>
+
+        <!-- L2 -->
+        <article class="layer-card">
+          <div class="layer-code">L2</div>
+          <div class="layer-name">Validation</div>
+          <div class="layer-bar">
+            <div class="layer-bar-fill excellent" style="width: 80%"></div>
+          </div>
+          <div class="layer-score">8/10</div>
+        </article>
+
+        <!-- L3 -->
+        <article class="layer-card">
+          <div class="layer-code">L3</div>
+          <div class="layer-name">MVP Building</div>
+          <div class="layer-bar">
+            <div class="layer-bar-fill good" style="width: 70%"></div>
+          </div>
+          <div class="layer-score">7/10</div>
+        </article>
+
+        <!-- L4 -->
+        <article class="layer-card">
+          <div class="layer-code">L4</div>
+          <div class="layer-name">Market Testing</div>
+          <div class="layer-bar">
+            <div class="layer-bar-fill good" style="width: 60%"></div>
+          </div>
+          <div class="layer-score">6/10</div>
+        </article>
+
+        <!-- L5 -->
+        <article class="layer-card">
+          <div class="layer-code">L5</div>
+          <div class="layer-name">Revenue Gen</div>
+          <div class="layer-bar">
+            <div class="layer-bar-fill good" style="width: 50%"></div>
+          </div>
+          <div class="layer-score">5/10</div>
+        </article>
+
+        <!-- L6 -->
+        <article class="layer-card">
+          <div class="layer-code">L6</div>
+          <div class="layer-name">Team Building</div>
+          <div class="layer-bar">
+            <div class="layer-bar-fill excellent" style="width: 80%"></div>
+          </div>
+          <div class="layer-score">8/10</div>
+        </article>
+
+        <!-- L7 -->
+        <article class="layer-card">
+          <div class="layer-code">L7</div>
+          <div class="layer-name">Systems Design</div>
+          <div class="layer-bar">
+            <div class="layer-bar-fill good" style="width: 70%"></div>
+          </div>
+          <div class="layer-score">7/10</div>
+        </article>
+
+        <!-- L8 -->
+        <article class="layer-card">
+          <div class="layer-code">L8</div>
+          <div class="layer-name">Scaling</div>
+          <div class="layer-bar">
+            <div class="layer-bar-fill atrisk" style="width: 40%"></div>
+          </div>
+          <div class="layer-score">4/10</div>
+        </article>
+
+        <!-- L9 -->
+        <article class="layer-card">
+          <div class="layer-code">L9</div>
+          <div class="layer-name">Strategic Partnerships</div>
+          <div class="layer-bar">
+            <div class="layer-bar-fill good" style="width: 60%"></div>
+          </div>
+          <div class="layer-score">6/10</div>
+        </article>
+
+        <!-- L10 -->
+        <article class="layer-card">
+          <div class="layer-code">L10</div>
+          <div class="layer-name">Market Leadership</div>
+          <div class="layer-bar">
+            <div class="layer-bar-fill atrisk" style="width: 30%"></div>
+          </div>
+          <div class="layer-score">3/10</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Trend Timeline -->
+    <section class="trend-section">
+      <h2 class="section-title">Execution Trend (Last 4 Assessments)</h2>
+      <div class="trend-chart">
+        <svg class="sparkline" viewBox="0 0 400 150" preserveAspectRatio="xMidYMid meet">
+          <!-- Grid lines (optional) -->
+          <line x1="0" y1="30" x2="400" y2="30" stroke="#e9ecef" stroke-width="1"/>
+          <line x1="0" y1="75" x2="400" y2="75" stroke="#e9ecef" stroke-width="1"/>
+          <line x1="0" y1="120" x2="400" y2="120" stroke="#e9ecef" stroke-width="1"/>
+
+          <!-- Trend line: 70% → 75% → 82% → 85% -->
+          <polyline
+            points="50,90 150,80 250,50 350,35"
+            stroke="#ffc107"
+            stroke-width="3"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+
+          <!-- Data points -->
+          <circle cx="50" cy="90" r="4" fill="#ffc107"/>
+          <circle cx="150" cy="80" r="4" fill="#ffc107"/>
+          <circle cx="250" cy="50" r="4" fill="#ffc107"/>
+          <circle cx="350" cy="35" r="4" fill="#ffc107"/>
+        </svg>
+      </div>
+      <div class="trend-labels">
+        <div class="trend-point">70%<br><small>3 mo ago</small></div>
+        <div class="trend-point">75%<br><small>2 mo ago</small></div>
+        <div class="trend-point">82%<br><small>1 mo ago</small></div>
+        <div class="trend-point">85%<br><small>Now</small></div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Sample API Response (in comments for reference) -->
+  <!--
+  GET /founders/user-123/human-os
+
+  {
+    "founder_id": "user-123",
+    "execution_success_rate": 85,
+    "learning_velocity": 52,
+    "governance_tier": "70-79% MONITORED",
+    "layer_scores": [
+      { "layer": "L1", "name": "Ideation", "score": 9 },
+      { "layer": "L2", "name": "Validation", "score": 8 },
+      { "layer": "L3", "name": "MVP Building", "score": 7 },
+      { "layer": "L4", "name": "Market Testing", "score": 6 },
+      { "layer": "L5", "name": "Revenue Generation", "score": 5 },
+      { "layer": "L6", "name": "Team Building", "score": 8 },
+      { "layer": "L7", "name": "Systems Design", "score": 7 },
+      { "layer": "L8", "name": "Scaling", "score": 4 },
+      { "layer": "L9", "name": "Strategic Partnerships", "score": 6 },
+      { "layer": "L10", "name": "Market Leadership", "score": 3 }
+    ],
+    "last_assessment": "2026-07-29"
+  }
+  -->
+</body>
+</html>

@@ -1,0 +1,7 @@
+name: Deploy Module 1: Core State Engine
+on:
+  push:
+    branches: [main]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest

@@ -1,0 +1,8 @@
+{
+  "day": "wednesday",
+  "venture_id": "1d84705c-8ebd-4c0c-83cf-cf383951b7bb",
+  "actions": [
+    "MOF demo script + queue"
+  ],
+  "backend": "sqlite:/Users/acebless/Documents/WORLDWIDEBRO-OS/11_GROWTH_FUNNEL/DATA/content_brain.db"
+}

@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Module 4: Client Web Frontend API
+  version: 1.0.0
+paths:
+  /api/execute:
+    post:
+      summary: Trigger module

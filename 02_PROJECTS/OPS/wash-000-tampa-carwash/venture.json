@@ -1,0 +1,15 @@
+{
+  "id": "WAS-001",
+  "name": "Tampa Carwash",
+  "sector": "wash",
+  "stage": "planned",
+  "revenue": 0.0,
+  "customers": 0,
+  "agents_active": 1,
+  "health_score": 100,
+  "next_actions": [
+    "run repo lint",
+    "create landing page waitlist",
+    "link to twenty CRM"
+  ]
+}

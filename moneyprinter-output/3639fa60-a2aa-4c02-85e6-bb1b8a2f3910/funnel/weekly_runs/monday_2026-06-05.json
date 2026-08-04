@@ -1,0 +1,8 @@
+{
+  "day": "monday",
+  "venture_id": "3639fa60-a2aa-4c02-85e6-bb1b8a2f3910",
+  "actions": [
+    "inserted 10 hooks, 3 video scripts"
+  ],
+  "backend": "sqlite:/Users/acebless/Documents/WORLDWIDEBRO-OS/11_GROWTH_FUNNEL/DATA/content_brain.db"
+}

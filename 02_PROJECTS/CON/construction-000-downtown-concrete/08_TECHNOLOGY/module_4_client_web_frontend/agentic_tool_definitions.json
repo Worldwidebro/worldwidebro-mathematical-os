@@ -1,0 +1,8 @@
+{
+  "name": "con_client_web_frontend",
+  "description": "Orchestrates technical commands for Client Web Frontend in venture Downtown Concrete",
+  "parameters": {
+    "type": "object",
+    "properties": {}
+  }
+}

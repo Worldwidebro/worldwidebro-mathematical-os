@@ -1,0 +1,8 @@
+{
+  "day": "saturday",
+  "venture_id": "2f0bd0aa-8800-4a7e-ae2d-8ce98c11e571",
+  "actions": [
+    "weekly report \u2192 /Users/acebless/Documents/moneyprinter-output/2f0bd0aa-8800-4a7e-ae2d-8ce98c11e571/funnel/reports/week_2026-06-01.json"
+  ],
+  "backend": "sqlite:/Users/acebless/Documents/WORLDWIDEBRO-OS/11_GROWTH_FUNNEL/DATA/content_brain.db"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Incident / Corrective Action Report",
+  "description": "Report bug, compliance gap, or customer issue",
+  "form_id": "inc-001",
+  "agent_can_fill": "Operations Agent",
+  "required_for": ["LT-005", "CON-001", "STA-001", "OPS-001", "EC-001", "EC-112", "RE-001", "LT-011"],
+  "fields": {
+    "venture_id": {"type": "string", "label": "Venture ID", "required": true},
+    "incident_type": {"type": "enum", "label": "Incident Type", "required": true, "values": ["Bug", "Compliance Gap", "Customer Complaint", "Safety Issue", "Data Breach"]},
+    "severity": {"type": "enum", "label": "Severity", "required": true, "values": ["Critical", "High", "Medium", "Low"]},
+    "title": {"type": "string", "label": "Title", "required": true, "max_length": 200},
+    "description": {"type": "string", "label": "Description", "required": true, "max_length": 2000},
+    "affected_customers": {"type": "string", "label": "Affected Customers", "required": false},
+    "discovered_date": {"type": "string", "label": "Discovered Date", "required": true, "format": "YYYY-MM-DD"},
+    "resolution_date": {"type": "string", "label": "Resolution Date", "required": false, "format": "YYYY-MM-DD"}
+  },
+  "neo4j": {"node": "Incident", "relation": "REPORTS_INCIDENT"},
+  "version": "1.0",
+  "status": "P0"
+}

@@ -1,0 +1,1 @@
+{"version":3,"file":"neo4j-client.d.ts","sourceRoot":"","sources":["../../src/knowledge-graph/neo4j-client.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,WAAW,EAAE,MAAM,cAAc,CAAC;AAE3C,wBAAsB,eAAe,CAAC,MAAM,EAAE,WAAW,GAAG,OAAO,CAAC,IAAI,CAAC,CAqBxE"}

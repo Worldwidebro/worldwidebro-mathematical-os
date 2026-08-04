@@ -1,0 +1,17 @@
+{
+  "week_start": "2026-06-01",
+  "generated_at": "2026-06-05T19:19:19.102558",
+  "best_hooks": [
+    "You're losing money if you ignore supply chain and schedule slip.",
+    "Everyone says they have a system. Most contractors still bleed on supply chain and schedule slip.",
+    "Contrarian take: your crew isn't the bottleneck \u2014 supply chain and schedule slip is.",
+    "80% of schedule slip traces back to supply chain and schedule slip.",
+    "Still fixing supply chain and schedule slip in spreadsheets? That's the hidden tax."
+  ],
+  "notes": "Connect platform analytics to gf_analytics_snapshots for live scores.",
+  "funnel_map": {
+    "tof": "hooks queued",
+    "mof": "demos queued",
+    "bof": "offers queued"
+  }
+}

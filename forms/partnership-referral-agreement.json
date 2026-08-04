@@ -1,0 +1,18 @@
+{
+  "name": "Partnership / Referral Agreement",
+  "description": "Two ventures formalize referral/partnership",
+  "form_id": "part-001",
+  "agent_can_fill": "Sales Agent",
+  "required_for": ["LT-005", "CON-001", "STA-001", "OPS-001", "EC-001", "EC-112", "RE-001", "LT-011"],
+  "fields": {
+    "venture_a_id": {"type": "string", "label": "Venture A", "required": true},
+    "venture_b_id": {"type": "string", "label": "Venture B", "required": true},
+    "partnership_type": {"type": "enum", "label": "Partnership Type", "required": true, "values": ["Referral", "Revenue Share", "Co-Marketing"]},
+    "referral_commission": {"type": "string", "label": "Commission (% or $)", "required": false},
+    "effective_date": {"type": "string", "label": "Effective Date", "required": true, "format": "YYYY-MM-DD"},
+    "term_months": {"type": "string", "label": "Term (months)", "required": true, "pattern": "^\\d+$"}
+  },
+  "neo4j": {"node": "Partnership", "relation": "REFERS_CLIENTS"},
+  "version": "1.0",
+  "status": "P0"
+}

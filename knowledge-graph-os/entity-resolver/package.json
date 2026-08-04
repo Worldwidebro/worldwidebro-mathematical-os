@@ -1,0 +1,18 @@
+{
+  "name": "@knowledge-graph-os/entity-resolver",
+  "version": "0.1.0",
+  "description": "Entity deduplication and conflict resolution for Neo4j",
+  "main": "dist/resolver.js",
+  "types": "dist/resolver.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "dependencies": {
+    "neo4j-driver": "^5.14.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}

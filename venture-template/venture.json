@@ -1,0 +1,22 @@
+{
+  "id": "VENTURE-XXX",
+  "_id_comment": "CUSTOMIZE: {SECTOR}-{NUMBER}, e.g. CON-001, FIN-042 (see root CLAUDE.md naming conventions)",
+
+  "name": "Unnamed Venture",
+  "_name_comment": "CUSTOMIZE: human-readable venture name",
+
+  "sector": "sector-name",
+  "_sector_comment": "CUSTOMIZE: LT | FIN | CON | RE (or expanded 31-sector taxonomy slug)",
+
+  "agent_id": "agent-unknown",
+  "_agent_id_comment": "CUSTOMIZE: id of the owning agent from agents.json / Neo4j Agent entity",
+
+  "skills": [],
+  "_skills_comment": "CUSTOMIZE: skill ids this venture uses, from skills.json / MCP_REGISTRY.json",
+
+  "created_date": "2026-07-29",
+  "_created_date_comment": "CUSTOMIZE: set to actual venture creation date (ISO 8601)",
+
+  "ontology_version": "2.1",
+  "_ontology_version_comment": "DO NOT EDIT casually — bump only when docs/ONTOLOGY.md symlink target's frontmatter version changes"
+}

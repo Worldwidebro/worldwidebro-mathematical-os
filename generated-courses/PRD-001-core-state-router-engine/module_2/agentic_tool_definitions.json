@@ -1,0 +1,5 @@
+{
+  "name": "module_2:_rest_api_gateway",
+  "description": "Orchestrates Module 2: REST API Gateway commands",
+  "parameters": {"type": "object", "properties": {}}
+}

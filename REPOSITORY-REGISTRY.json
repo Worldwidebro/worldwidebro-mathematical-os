@@ -1,0 +1,127 @@
+{
+  "version": "1.0",
+  "generated": "2026-07-29T16:32:27.722605",
+  "archival_date": "2026-07-29",
+  "total_archived": 17,
+  "repos": [
+    {
+      "name": "awesome-n8n-templates",
+      "status": "archived",
+      "archived_date": "2026-07-29",
+      "archive_path": "_archive/awesome-n8n-templates",
+      "reason": "Unused scaffold - Phase 2 OS consolidation"
+    },
+    {
+      "name": "ec-001-angels-in-daylight",
+      "status": "archived",
+      "archived_date": "2026-07-29",
+      "archive_path": "_archive/ec-001-angels-in-daylight",
+      "reason": "Unused scaffold - Phase 2 OS consolidation"
+    },
+    {
+      "name": "fin-006-tax-prep-filing-services",
+      "status": "archived",
+      "archived_date": "2026-07-29",
+      "archive_path": "_archive/fin-006-tax-prep-filing-services",
+      "reason": "Unused scaffold - Phase 2 OS consolidation"
+    },
+    {
+      "name": "fin-009-crypto-tax-optimizer",
+      "status": "archived",
+      "archived_date": "2026-07-29",
+      "archive_path": "_archive/fin-009-crypto-tax-optimizer",
+      "reason": "Unused scaffold - Phase 2 OS consolidation"
+    },
+    {
+      "name": "fin-021-tax-deduction-finder",
+      "status": "archived",
+      "archived_date": "2026-07-29",
+      "archive_path": "_archive/fin-021-tax-deduction-finder",
+      "reason": "Unused scaffold - Phase 2 OS consolidation"
+    },
+    {
+      "name": "fin-033-ai-tax-preparation-service",
+      "status": "archived",
+      "archived_date": "2026-07-29",
+      "archive_path": "_archive/fin-033-ai-tax-preparation-service",
+      "reason": "Unused scaffold - Phase 2 OS consolidation"
+    },
+    {
+      "name": "email-design-os",
+      "status": "archived",
+      "archived_date": "2026-07-29",
+      "archive_path": "_archive/email-design-os",
+      "reason": "Unused scaffold - Phase 2 OS consolidation"
+    },
+    {
+      "name": "Gemini",
+      "status": "archived",
+      "archived_date": "2026-07-29",
+      "archive_path": "_archive/Gemini",
+      "reason": "Unused scaffold - Phase 2 OS consolidation"
+    },
+    {
+      "name": "glue-layer-mvp",
+      "status": "archived",
+      "archived_date": "2026-07-29",
+      "archive_path": "_archive/glue-layer-mvp",
+      "reason": "Unused scaffold - Phase 2 OS consolidation"
+    },
+    {
+      "name": "lt-005-medical-courier-dispatch",
+      "status": "archived",
+      "archived_date": "2026-07-29",
+      "archive_path": "_archive/lt-005-medical-courier-dispatch",
+      "reason": "Unused scaffold - Phase 2 OS consolidation"
+    },
+    {
+      "name": "mcp-browserclaw",
+      "status": "archived",
+      "archived_date": "2026-07-29",
+      "archive_path": "_archive/mcp-browserclaw",
+      "reason": "Unused scaffold - Phase 2 OS consolidation"
+    },
+    {
+      "name": "omnigraph",
+      "status": "archived",
+      "archived_date": "2026-07-29",
+      "archive_path": "_archive/omnigraph",
+      "reason": "Unused scaffold - Phase 2 OS consolidation"
+    },
+    {
+      "name": "ops-staff-001-staffing",
+      "status": "archived",
+      "archived_date": "2026-07-29",
+      "archive_path": "_archive/ops-staff-001-staffing",
+      "reason": "Unused scaffold - Phase 2 OS consolidation"
+    },
+    {
+      "name": "re-001-property-holdings",
+      "status": "archived",
+      "archived_date": "2026-07-29",
+      "archive_path": "_archive/re-001-property-holdings",
+      "reason": "Unused scaffold - Phase 2 OS consolidation"
+    },
+    {
+      "name": "RE-001-Worldwidebro-Holdings",
+      "status": "archived",
+      "archived_date": "2026-07-29",
+      "archive_path": "_archive/RE-001-Worldwidebro-Holdings",
+      "reason": "Unused scaffold - Phase 2 OS consolidation"
+    },
+    {
+      "name": "ec-112-cosmic-kitty",
+      "status": "archived",
+      "archived_date": "2026-07-29",
+      "archive_path": "_archive/ec-112-cosmic-kitty",
+      "reason": "Unused scaffold - Phase 2 OS consolidation"
+    },
+    {
+      "name": "worldwidebro-construction-os",
+      "status": "archived",
+      "archived_date": "2026-07-29",
+      "archive_path": "_archive/worldwidebro-construction-os",
+      "reason": "Unused scaffold - Phase 2 OS consolidation"
+    }
+  ]
+}

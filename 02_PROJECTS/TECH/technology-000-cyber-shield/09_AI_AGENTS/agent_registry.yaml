@@ -1,0 +1,36 @@
+venture: Cyber Shield
+id: TEC-063
+agents:
+- name: Tech CEO Agent
+  role: CEO
+  mission: Operate sector workflows dynamically.
+  authority:
+  - read_local_database
+  limits:
+  - cannot_alter_production
+  brain:
+    reasoning: qwen2.5:7b
+    coding: deepseek-coder:6.7b
+    embeddings: nomic-embed-text
+- name: Infrastructure Agent
+  role: Architect
+  mission: Operate sector workflows dynamically.
+  authority:
+  - read_local_database
+  limits:
+  - cannot_alter_production
+  brain:
+    reasoning: qwen2.5:7b
+    coding: deepseek-coder:6.7b
+    embeddings: nomic-embed-text
+- name: Codebuilder Agent
+  role: Developer
+  mission: Operate sector workflows dynamically.
+  authority:
+  - read_local_database
+  limits:
+  - cannot_alter_production
+  brain:
+    reasoning: qwen2.5:7b
+    coding: deepseek-coder:6.7b
+    embeddings: nomic-embed-text

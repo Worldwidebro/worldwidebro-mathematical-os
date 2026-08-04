@@ -1,0 +1,13 @@
+{
+  "name": "knowledge-graph-os",
+  "version": "0.1.0",
+  "description": "Neo4j + Qdrant graph intelligence layer with routing & ingestion",
+  "tags": ["infrastructure", "phase-2", "graph-engineering"],
+  "workspaces": [
+    "neo4j-schema",
+    "neo4j-routing",
+    "qdrant-config",
+    "ingestion-pipeline",
+    "entity-resolver"
+  ]
+}

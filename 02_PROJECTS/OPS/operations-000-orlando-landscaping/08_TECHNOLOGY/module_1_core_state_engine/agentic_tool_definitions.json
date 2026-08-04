@@ -1,0 +1,8 @@
+{
+  "name": "ope_core_state_engine",
+  "description": "Orchestrates technical commands for Core State Engine in venture Orlando Landscaping",
+  "parameters": {
+    "type": "object",
+    "properties": {}
+  }
+}

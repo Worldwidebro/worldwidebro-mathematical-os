@@ -1,0 +1,55 @@
+{
+  "schema_version": 2,
+  "venture_id": "3639fa60-a2aa-4c02-85e6-bb1b8a2f3910",
+  "venture_code": "CON-006",
+  "title": "Workforce Management",
+  "topic": "Project Management Best Practices",
+  "hook": "You're losing money if you ignore this on every job.",
+  "script_lines": [
+    "You're losing money if you ignore this on every job.",
+    "Scheduling trades, tracking certs, and filling gaps shouldn't be manual.",
+    "Follow for more contractor ops tips."
+  ],
+  "script": "You're losing money if you ignore this on every job. Scheduling trades, tracking certs, and filling gaps shouldn't be manual. Follow for more contractor ops tips.",
+  "cta": "Follow for more contractor ops tips.",
+  "scenes": [
+    {
+      "index": 0,
+      "text": "You're losing money if you ignore this on every job.",
+      "role": "hook",
+      "visual_keyword": "construction crew"
+    },
+    {
+      "index": 1,
+      "text": "Scheduling trades, tracking certs, and filling gaps shouldn't be manual.",
+      "role": "body",
+      "visual_keyword": "hard hat"
+    },
+    {
+      "index": 2,
+      "text": "Follow for more contractor ops tips.",
+      "role": "cta",
+      "visual_keyword": "jobsite"
+    }
+  ],
+  "funnel_stage": "tof",
+  "duration_target_sec": 15,
+  "music_type": "professional",
+  "subtitle_style": "burned_in",
+  "video_type": "viral_hook",
+  "target_platform": "youtube_shorts",
+  "quality": "1080p",
+  "publish": {
+    "youtube_title": "Project Management Best Practices | Workforce Management",
+    "youtube_description": "Project Management Best Practices\n\nYou're losing money if you ignore this on every job. Scheduling trades, tracking certs, and filling gaps shouldn't be manual. Follow for more contractor ops tips.\n\n#con-006 #construction #contractor #buildbetter #shorts",
+    "hashtags": [
+      "#con-006",
+      "#construction",
+      "#contractor",
+      "#buildbetter",
+      "#shorts"
+    ],
+    "thumbnail_text": "Project Management Best Practices"
+  },
+  "created_at": "2026-06-05T19:19:20.453969"
+}

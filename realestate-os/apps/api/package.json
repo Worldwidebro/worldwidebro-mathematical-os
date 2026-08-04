@@ -1,0 +1,37 @@
+{
+  "name": "realestate-api",
+  "version": "1.0.0",
+  "description": "Real Estate OS API",
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src --ext .ts"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.38.1",
+    "axios": "^1.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "resend": "^6.18.1",
+    "stripe": "^13.6.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.20",
+    "@types/node": "^20.0.0",
+    "@types/uuid": "^9.0.2",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "@vitest/ui": "^1.0.0",
+    "eslint": "^8.54.0",
+    "tsx": "^4.1.0",
+    "typescript": "^5.3.0",
+    "vitest": "^1.0.0"
+  }
+}

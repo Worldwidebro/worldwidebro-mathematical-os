@@ -1,0 +1,303 @@
+{
+  "commonConfig": {
+    "tsconfig": {
+      "compilerOptions": {
+        "target": "ES2020",
+        "module": "ESNext",
+        "lib": ["ES2020"],
+        "moduleResolution": "node",
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "declaration": true
+      },
+      "include": ["src"],
+      "exclude": ["node_modules", "dist"]
+    }
+  },
+  "services": [
+    {
+      "id": 1,
+      "dir": "services/identity-service",
+      "packageName": "@realestate-os/identity-service",
+      "description": "Auth, User RBAC & JWT issuance",
+      "exportConst": "IDENTITY_SERVICE",
+      "title": "Identity Service"
+    },
+    {
+      "id": 2,
+      "dir": "services/organization-service",
+      "packageName": "@realestate-os/organization-service",
+      "description": "Multi-tenant organization contexts",
+      "exportConst": "ORGANIZATION_SERVICE",
+      "title": "Organization Service"
+    },
+    {
+      "id": 3,
+      "dir": "services/property-service",
+      "packageName": "@realestate-os/property-service",
+      "description": "Property & unit CRUD, asset tracking",
+      "exportConst": "PROPERTY_SERVICE",
+      "title": "Property Service"
+    },
+    {
+      "id": 4,
+      "dir": "services/listing-service",
+      "packageName": "@realestate-os/listing-service",
+      "description": "MLS integration & listing management",
+      "exportConst": "LISTING_SERVICE",
+      "title": "Listing Service"
+    },
+    {
+      "id": 5,
+      "dir": "services/crm-service",
+      "packageName": "@realestate-os/crm-service",
+      "description": "Investor & buyer CRM, lead pipeline",
+      "exportConst": "CRM_SERVICE",
+      "title": "CRM Service"
+    },
+    {
+      "id": 6,
+      "dir": "services/underwriting-service",
+      "packageName": "@realestate-os/underwriting-service",
+      "description": "Deal financial modeling, cap rates, cash flow",
+      "exportConst": "UNDERWRITING_SERVICE",
+      "title": "Underwriting Service"
+    },
+    {
+      "id": 7,
+      "dir": "services/valuation-service",
+      "packageName": "@realestate-os/valuation-service",
+      "description": "Automated Valuation Model (AVM) & comp analysis",
+      "exportConst": "VALUATION_SERVICE",
+      "title": "Valuation Service"
+    },
+    {
+      "id": 8,
+      "dir": "services/mortgage-service",
+      "packageName": "@realestate-os/mortgage-service",
+      "description": "Loan application & origination engine",
+      "exportConst": "MORTGAGE_SERVICE",
+      "title": "Mortgage Service"
+    },
+    {
+      "id": 9,
+      "dir": "services/closing-service",
+      "packageName": "@realestate-os/closing-service",
+      "description": "Escrow, title search, and deal closing",
+      "exportConst": "CLOSING_SERVICE",
+      "title": "Closing Service"
+    },
+    {
+      "id": 10,
+      "dir": "services/lease-service",
+      "packageName": "@realestate-os/lease-service",
+      "description": "E-signature & lease contract generation",
+      "exportConst": "LEASE_SERVICE",
+      "title": "Lease Service"
+    },
+    {
+      "id": 11,
+      "dir": "services/tenant-service",
+      "packageName": "@realestate-os/tenant-service",
+      "description": "Tenant portal, screening & communications",
+      "exportConst": "TENANT_SERVICE",
+      "title": "Tenant Service"
+    },
+    {
+      "id": 12,
+      "dir": "services/rent-collection-service",
+      "packageName": "@realestate-os/rent-collection-service",
+      "description": "Stripe/ACH payment ledger & auto-reminders",
+      "exportConst": "RENT_COLLECTION_SERVICE",
+      "title": "Rent Collection Service"
+    },
+    {
+      "id": 13,
+      "dir": "services/maintenance-service",
+      "packageName": "@realestate-os/maintenance-service",
+      "description": "Work orders, contractor triage & dispatch",
+      "exportConst": "MAINTENANCE_SERVICE",
+      "title": "Maintenance Service"
+    },
+    {
+      "id": 14,
+      "dir": "services/asset-management-service",
+      "packageName": "@realestate-os/asset-management-service",
+      "description": "NOI optimization, capex & portfolio analytics",
+      "exportConst": "ASSET_MANAGEMENT_SERVICE",
+      "title": "Asset Management Service"
+    },
+    {
+      "id": 15,
+      "dir": "services/syndication-service",
+      "packageName": "@realestate-os/syndication-service",
+      "description": "Investor portal, equity raising & distributions",
+      "exportConst": "SYNDICATION_SERVICE",
+      "title": "Syndication Service"
+    },
+    {
+      "id": 16,
+      "dir": "services/document-service",
+      "packageName": "@realestate-os/document-service",
+      "description": "Document storage, OCR parsing & file vault",
+      "exportConst": "DOCUMENT_SERVICE",
+      "title": "Document Service"
+    },
+    {
+      "id": 17,
+      "dir": "services/notification-service",
+      "packageName": "@realestate-os/notification-service",
+      "description": "SMS, email & push notification gateway",
+      "exportConst": "NOTIFICATION_SERVICE",
+      "title": "Notification Service"
+    },
+    {
+      "id": 18,
+      "dir": "services/analytics-service",
+      "packageName": "@realestate-os/analytics-service",
+      "description": "Business intelligence & executive metrics",
+      "exportConst": "ANALYTICS_SERVICE",
+      "title": "Analytics Service"
+    },
+    {
+      "id": 19,
+      "dir": "services/market-intelligence-service",
+      "packageName": "@realestate-os/market-intelligence-service",
+      "description": "Rent estimates & market macro trends",
+      "exportConst": "MARKET_INTELLIGENCE_SERVICE",
+      "title": "Market Intelligence Service"
+    },
+    {
+      "id": 20,
+      "dir": "services/inspection-service",
+      "packageName": "@realestate-os/inspection-service",
+      "description": "Property condition reports & audit parsing",
+      "exportConst": "INSPECTION_SERVICE",
+      "title": "Inspection Service"
+    },
+    {
+      "id": 21,
+      "dir": "services/disposition-service",
+      "packageName": "@realestate-os/disposition-service",
+      "description": "Asset liquidation & sales channel",
+      "exportConst": "DISPOSITION_SERVICE",
+      "title": "Disposition Service"
+    },
+    {
+      "id": 22,
+      "dir": "services/tax-service",
+      "packageName": "@realestate-os/tax-service",
+      "description": "Property tax appeals & assessment deductions",
+      "exportConst": "TAX_SERVICE",
+      "title": "Tax Service"
+    },
+    {
+      "id": 23,
+      "dir": "services/insurance-service",
+      "packageName": "@realestate-os/insurance-service",
+      "description": "Risk scoring, policy tracking & claims",
+      "exportConst": "INSURANCE_SERVICE",
+      "title": "Insurance Service"
+    },
+    {
+      "id": 24,
+      "dir": "services/utility-management-service",
+      "packageName": "@realestate-os/utility-management-service",
+      "description": "Metering & utility invoice parsing",
+      "exportConst": "UTILITY_MANAGEMENT_SERVICE",
+      "title": "Utility Management Service"
+    },
+    {
+      "id": 25,
+      "dir": "services/vendor-service",
+      "packageName": "@realestate-os/vendor-service",
+      "description": "Contractor network & compliance verification",
+      "exportConst": "VENDOR_SERVICE",
+      "title": "Vendor Service"
+    },
+    {
+      "id": 26,
+      "dir": "services/marketing-automation-service",
+      "packageName": "@realestate-os/marketing-automation-service",
+      "description": "Campaign management & property flyers",
+      "exportConst": "MARKETING_AUTOMATION_SERVICE",
+      "title": "Marketing Automation Service"
+    },
+    {
+      "id": 27,
+      "dir": "services/e-signature-service",
+      "packageName": "@realestate-os/e-signature-service",
+      "description": "Digital signature integration stub",
+      "exportConst": "E_SIGNATURE_SERVICE",
+      "title": "E-Signature Service"
+    },
+    {
+      "id": 28,
+      "dir": "services/audit-logging-service",
+      "packageName": "@realestate-os/audit-logging-service",
+      "description": "Activity audit trails & compliance log",
+      "exportConst": "AUDIT_LOGGING_SERVICE",
+      "title": "Audit Logging Service"
+    },
+    {
+      "id": 29,
+      "dir": "services/spatial-service",
+      "packageName": "@realestate-os/spatial-service",
+      "description": "GIS, mapping & zoning data analysis",
+      "exportConst": "SPATIAL_SERVICE",
+      "title": "Spatial Service"
+    },
+    {
+      "id": 30,
+      "dir": "services/construction-service",
+      "packageName": "@realestate-os/construction-service",
+      "description": "Rehab project management & budgeting",
+      "exportConst": "CONSTRUCTION_SERVICE",
+      "title": "Construction Service"
+    },
+    {
+      "id": 31,
+      "dir": "services/portfolio-optimization-service",
+      "packageName": "@realestate-os/portfolio-optimization-service",
+      "description": "Yield maximization & balance sheet rebalancing",
+      "exportConst": "PORTFOLIO_OPTIMIZATION_SERVICE",
+      "title": "Portfolio Optimization Service"
+    },
+    {
+      "id": 32,
+      "dir": "services/investor-relations-service",
+      "packageName": "@realestate-os/investor-relations-service",
+      "description": "K-1 distribution & waterfall calculations",
+      "exportConst": "INVESTOR_RELATIONS_SERVICE",
+      "title": "Investor Relations Service"
+    },
+    {
+      "id": 33,
+      "dir": "services/accounting-service",
+      "packageName": "@realestate-os/accounting-service",
+      "description": "Double-entry general ledger",
+      "exportConst": "ACCOUNTING_SERVICE",
+      "title": "Accounting Service"
+    },
+    {
+      "id": 34,
+      "dir": "services/ai-gateway-service",
+      "packageName": "@realestate-os/ai-gateway-service",
+      "description": "LLM execution proxy & agent state manager",
+      "exportConst": "AI_GATEWAY_SERVICE",
+      "title": "AI Gateway Service"
+    },
+    {
+      "id": 35,
+      "dir": "apps/api",
+      "packageName": "@realestate-os/api",
+      "description": "Central API Gateway Ingress Controller",
+      "exportConst": "API_GATEWAY",
+      "title": "API Gateway"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "con_rest_api_gateway",
+  "description": "Orchestrates technical commands for REST API Gateway in venture Downtown Concrete",
+  "parameters": {
+    "type": "object",
+    "properties": {}
+  }
+}

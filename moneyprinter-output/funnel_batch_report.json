@@ -1,0 +1,33 @@
+{
+  "started_at": "2026-06-05T19:19:18.646637",
+  "finished_at": "2026-06-05T19:19:21.709329",
+  "ventures": 5,
+  "results": [
+    {
+      "venture_id": "2419bf07-b3f2-400f-a2c5-acab2bce597b",
+      "code": "CON-002",
+      "status": "ok"
+    },
+    {
+      "venture_id": "2f0bd0aa-8800-4a7e-ae2d-8ce98c11e571",
+      "code": "CON-003",
+      "status": "ok"
+    },
+    {
+      "venture_id": "1d84705c-8ebd-4c0c-83cf-cf383951b7bb",
+      "code": "CON-004",
+      "status": "ok"
+    },
+    {
+      "venture_id": "3639fa60-a2aa-4c02-85e6-bb1b8a2f3910",
+      "code": "CON-006",
+      "status": "ok"
+    },
+    {
+      "venture_id": "64df5998-36bb-4801-beb3-34088ab4bb3c",
+      "code": "CON-008",
+      "status": "ok"
+    }
+  ],
+  "dry_run": false
+}

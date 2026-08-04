@@ -1,0 +1,26 @@
+{
+  "name": "agent-platform-os",
+  "version": "0.1.0",
+  "description": "Agent dispatch engine with registry, task queue, and real-time coordination",
+  "tags": ["infrastructure", "phase-2", "agent-dispatch"],
+  "workspaces": [
+    "agent-registry",
+    "dispatch-engine",
+    "task-queue",
+    "websocket-handlers"
+  ],
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "agent",
+    "dispatch",
+    "task-queue",
+    "registry",
+    "real-time",
+    "coordination"
+  ],
+  "author": "Worldwidebro Holdings",
+  "license": "UNLICENSED"
+}

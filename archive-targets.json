@@ -1,0 +1,143 @@
+{
+  "total": 17,
+  "generated": "2026-07-29",
+  "note": "Document header references 38 template repos but Section 1 lists only 17. Remaining 21 may be in disconnected infrastructure or external sources not listed in REPOS-TEMPLATE-AND-DISCONNECTED.md.",
+  "repos": [
+    {
+      "name": "awesome-n8n-templates",
+      "type": "template",
+      "status": "README only",
+      "reason": "Unused scaffold",
+      "path": "/Users/acebless/Documents/awesome-n8n-templates",
+      "action": "archive"
+    },
+    {
+      "name": "ec-001-angels-in-daylight",
+      "type": "template",
+      "status": "README only",
+      "reason": "Unused scaffold",
+      "path": "/Users/acebless/Documents/ec-001-angels-in-daylight",
+      "action": "archive"
+    },
+    {
+      "name": "fin-006-tax-prep-filing-services",
+      "type": "template",
+      "status": "README only",
+      "reason": "Unused scaffold",
+      "path": "/Users/acebless/Documents/fin-006-tax-prep-filing-services",
+      "action": "archive"
+    },
+    {
+      "name": "fin-009-crypto-tax-optimizer",
+      "type": "template",
+      "status": "README only",
+      "reason": "Unused scaffold",
+      "path": "/Users/acebless/Documents/fin-009-crypto-tax-optimizer",
+      "action": "archive"
+    },
+    {
+      "name": "fin-021-tax-deduction-finder",
+      "type": "template",
+      "status": "README only",
+      "reason": "Unused scaffold",
+      "path": "/Users/acebless/Documents/fin-021-tax-deduction-finder",
+      "action": "archive"
+    },
+    {
+      "name": "fin-033-ai-tax-preparation-service",
+      "type": "template",
+      "status": "README only",
+      "reason": "Unused scaffold",
+      "path": "/Users/acebless/Documents/fin-033-ai-tax-preparation-service",
+      "action": "archive"
+    },
+    {
+      "name": "email-design-os",
+      "type": "template",
+      "status": "README only",
+      "reason": "Unused scaffold",
+      "path": "/Users/acebless/Documents/email-design-os",
+      "action": "archive"
+    },
+    {
+      "name": "Gemini",
+      "type": "template",
+      "status": "README only",
+      "reason": "Unused scaffold",
+      "path": "/Users/acebless/Documents/Gemini",
+      "action": "archive"
+    },
+    {
+      "name": "glue-layer-mvp",
+      "type": "template",
+      "status": "README only",
+      "reason": "Unused scaffold",
+      "path": "/Users/acebless/Documents/glue-layer-mvp",
+      "action": "archive"
+    },
+    {
+      "name": "lt-005-medical-courier-dispatch",
+      "type": "template",
+      "status": "README only",
+      "reason": "Unused scaffold",
+      "path": "/Users/acebless/Documents/lt-005-medical-courier-dispatch",
+      "action": "archive"
+    },
+    {
+      "name": "mcp-browserclaw",
+      "type": "template",
+      "status": "README only",
+      "reason": "Unused scaffold",
+      "path": "/Users/acebless/Documents/mcp-browserclaw",
+      "action": "archive"
+    },
+    {
+      "name": "omnigraph",
+      "type": "template",
+      "status": "README only",
+      "reason": "Unused scaffold",
+      "path": "/Users/acebless/Documents/omnigraph",
+      "action": "archive"
+    },
+    {
+      "name": "ops-staff-001-staffing",
+      "type": "template",
+      "status": "README only",
+      "reason": "Unused scaffold",
+      "path": "/Users/acebless/Documents/ops-staff-001-staffing",
+      "action": "archive"
+    },
+    {
+      "name": "re-001-property-holdings",
+      "type": "template",
+      "status": "README only",
+      "reason": "Unused scaffold",
+      "path": "/Users/acebless/Documents/re-001-property-holdings",
+      "action": "archive"
+    },
+    {
+      "name": "RE-001-Worldwidebro-Holdings",
+      "type": "template",
+      "status": "README only",
+      "reason": "Unused scaffold",
+      "path": "/Users/acebless/Documents/RE-001-Worldwidebro-Holdings",
+      "action": "archive"
+    },
+    {
+      "name": "ec-112-cosmic-kitty",
+      "type": "template",
+      "status": "README only",
+      "reason": "Unused scaffold",
+      "path": "/Users/acebless/Documents/ec-112-cosmic-kitty",
+      "action": "archive"
+    },
+    {
+      "name": "worldwidebro-construction-os",
+      "type": "template",
+      "status": "package.json, no src/",
+      "reason": "Boilerplate only, no implementation",
+      "path": "/Users/acebless/Documents/worldwidebro-construction-os",
+      "action": "archive"
+    }
+  ]
+}

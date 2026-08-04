@@ -1,0 +1,5 @@
+{
+  "name": "module_1:_core_state_engine",
+  "description": "Orchestrates Module 1: Core State Engine commands",
+  "parameters": {"type": "object", "properties": {}}
+}

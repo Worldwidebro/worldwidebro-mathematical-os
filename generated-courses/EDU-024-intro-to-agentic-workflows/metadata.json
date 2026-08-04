@@ -1,0 +1,24 @@
+{
+  "id": "EDU-024-intro-to-agentic-workflows",
+  "subject": "Intro to Agentic Workflows",
+  "audience": "Software Engineers",
+  "chapters": 3,
+  "description": "",
+  "status": "completed",
+  "progress": 100,
+  "logs": [
+    "[Setup] Starting course builder pipeline...",
+    "[Setup] Configuring curriculum blueprints. Target audience: Software Engineers.",
+    "[Syllabus] Designing course arc based on learning science.",
+    "[Syllabus] Generated syllabus.md with 3 chapters.",
+    "[Research] Analyzing academic sources and cataloging citations.",
+    "[Build] Assembling course materials for each chapter.",
+    "[Build] Completed Chapter 1 artifacts (7/7 packages built).",
+    "[Build] Completed Chapter 2 artifacts (7/7 packages built).",
+    "[Build] Completed Chapter 3 artifacts (7/7 packages built).",
+    "[Export] Packaging course catalog ZIP and exporting SCORM packages.",
+    "[Export] Course generation completed successfully. Output ready for deployment."
+  ],
+  "path": "/Users/acebless/Documents/generated-courses/EDU-024-intro-to-agentic-workflows",
+  "zip": "/Users/acebless/Documents/generated-courses/EDU-024-intro-to-agentic-workflows/EDU-024-intro-to-agentic-workflows.zip"
+}

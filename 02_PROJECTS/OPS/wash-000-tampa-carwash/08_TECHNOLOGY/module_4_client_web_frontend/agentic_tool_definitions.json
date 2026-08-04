@@ -1,0 +1,8 @@
+{
+  "name": "was_client_web_frontend",
+  "description": "Orchestrates technical commands for Client Web Frontend in venture Tampa Carwash",
+  "parameters": {
+    "type": "object",
+    "properties": {}
+  }
+}

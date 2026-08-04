@@ -1,0 +1,8 @@
+{
+  "day": "friday",
+  "venture_id": "64df5998-36bb-4801-beb3-34088ab4bb3c",
+  "actions": [
+    "BOF offer + testimonial queue"
+  ],
+  "backend": "sqlite:/Users/acebless/Documents/WORLDWIDEBRO-OS/11_GROWTH_FUNNEL/DATA/content_brain.db"
+}

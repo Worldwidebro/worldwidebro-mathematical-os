@@ -1,0 +1,62 @@
+{
+  "schema_version": 2,
+  "venture_id": "2f0bd0aa-8800-4a7e-ae2d-8ce98c11e571",
+  "venture_code": "CON-003",
+  "title": "Contractor Network",
+  "topic": "Construction ops mistake costing you margin",
+  "hook": "Still on the fence? Here's what changes when you switch.",
+  "script_lines": [
+    "Still on the fence? Here's what changes when you switch.",
+    "Contractors using Contractor Network cut delays and protect margin.",
+    "Clear process. Audit-ready trail. No spreadsheet chaos.",
+    "Book a free walkthrough \u2014 link below."
+  ],
+  "script": "Still on the fence? Here's what changes when you switch. Contractors using Contractor Network cut delays and protect margin. Clear process. Audit-ready trail. No spreadsheet chaos. Book a free walkthrough \u2014 link below.",
+  "cta": "Book a free walkthrough \u2014 link below.",
+  "scenes": [
+    {
+      "index": 0,
+      "text": "Still on the fence? Here's what changes when you switch.",
+      "role": "hook",
+      "visual_keyword": "construction"
+    },
+    {
+      "index": 1,
+      "text": "Contractors using Contractor Network cut delays and protect margin.",
+      "role": "body",
+      "visual_keyword": "contractor"
+    },
+    {
+      "index": 2,
+      "text": "Clear process. Audit-ready trail. No spreadsheet chaos.",
+      "role": "body",
+      "visual_keyword": "jobsite"
+    },
+    {
+      "index": 3,
+      "text": "Book a free walkthrough \u2014 link below.",
+      "role": "cta",
+      "visual_keyword": "construction"
+    }
+  ],
+  "funnel_stage": "bof",
+  "duration_target_sec": 16,
+  "music_type": "professional",
+  "subtitle_style": "burned_in",
+  "video_type": "conversion",
+  "target_platform": "youtube_shorts",
+  "quality": "1080p",
+  "publish": {
+    "youtube_title": "Construction ops mistake costing you margin | Contractor Network",
+    "youtube_description": "Construction ops mistake costing you margin\n\nStill on the fence? Here's what changes when you switch. Contractors using Contractor Network cut delays and protect margin. Clear process. Audit-ready trail. No spreadsheet chaos. Book a free walkthrough \u2014 link below.\n\n#con-003 #construction #contractor #buildbetter #shorts",
+    "hashtags": [
+      "#con-003",
+      "#construction",
+      "#contractor",
+      "#buildbetter",
+      "#shorts"
+    ],
+    "thumbnail_text": "Construction ops mistake costing you mar"
+  },
+  "created_at": "2026-06-05T19:19:19.248429"
+}

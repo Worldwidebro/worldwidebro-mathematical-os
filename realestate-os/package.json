@@ -1,0 +1,21 @@
+{
+  "name": "realestate-os",
+  "version": "1.0.0",
+  "description": "Rental property management SaaS MVP",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "services/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w apps/web & npm run dev -w apps/api",
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm run test -w apps/web && npm run test -w apps/api",
+    "lint": "npm run lint -w apps/web && npm run lint -w apps/api"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0"
+  }
+}

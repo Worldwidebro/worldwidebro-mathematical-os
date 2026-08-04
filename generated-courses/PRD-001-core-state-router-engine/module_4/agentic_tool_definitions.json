@@ -1,0 +1,5 @@
+{
+  "name": "module_4:_client_web_frontend",
+  "description": "Orchestrates Module 4: Client Web Frontend commands",
+  "parameters": {"type": "object", "properties": {}}
+}

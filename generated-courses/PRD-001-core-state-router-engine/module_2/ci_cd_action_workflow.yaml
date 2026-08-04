@@ -1,0 +1,7 @@
+name: Deploy Module 2: REST API Gateway
+on:
+  push:
+    branches: [main]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest

@@ -1,0 +1,3 @@
+id,name,tools,decision_authority,owned_ventures
+agent-ace-ceo,Ace CEO Agent,"skill-strategic-planning,skill-financial-analysis",autonomous,CON-001
+agent-payments,Payments Agent,"skill-stripe-payment,skill-invoice-generation",monitored,

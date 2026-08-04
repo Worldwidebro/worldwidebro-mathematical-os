@@ -1,0 +1,8 @@
+{
+  "day": "sunday",
+  "venture_id": "2419bf07-b3f2-400f-a2c5-acab2bce597b",
+  "actions": [
+    "next week batch \u2192 /Users/acebless/Documents/moneyprinter-output/2419bf07-b3f2-400f-a2c5-acab2bce597b/funnel/next_week_ideas.json"
+  ],
+  "backend": "sqlite:/Users/acebless/Documents/WORLDWIDEBRO-OS/11_GROWTH_FUNNEL/DATA/content_brain.db"
+}

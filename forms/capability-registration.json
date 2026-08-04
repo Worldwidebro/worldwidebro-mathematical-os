@@ -1,0 +1,18 @@
+{
+  "name": "Capability Registration",
+  "description": "Venture declares what it offers to other ventures",
+  "form_id": "cap-reg-001",
+  "agent_can_fill": "Operations Agent",
+  "required_for": ["LT-005", "CON-001", "STA-001", "OPS-001", "EC-001", "EC-112", "RE-001", "LT-011"],
+  "fields": {
+    "venture_id": {"type": "string", "label": "Venture ID", "required": true, "pattern": "^[A-Z]{2,3}-\\d{3}$"},
+    "capability_name": {"type": "string", "label": "Capability Name", "required": true, "example": "lead-capture"},
+    "description": {"type": "string", "label": "Description", "required": true, "max_length": 500},
+    "category": {"type": "enum", "label": "Category", "required": true, "values": ["sales", "operations", "finance", "technical", "customer-service"]},
+    "maturity_level": {"type": "enum", "label": "Maturity", "required": true, "values": ["MVP", "Beta", "Production"]},
+    "pricing_model": {"type": "enum", "label": "Pricing", "required": false, "values": ["Free", "Per-Use", "Subscription"]}
+  },
+  "neo4j": {"node": "Capability", "relation": "PROVIDES_CAPABILITY"},
+  "version": "1.0",
+  "status": "P0"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Production Change / Deployment Approval",
+  "description": "Agent requests approval to deploy code or config",
+  "form_id": "deploy-001",
+  "agent_can_fill": "Operations Agent",
+  "required_for": ["LT-005", "CON-001", "STA-001", "OPS-001", "EC-001", "EC-112", "RE-001", "LT-011"],
+  "fields": {
+    "venture_id": {"type": "string", "label": "Venture ID", "required": true},
+    "agent_id": {"type": "string", "label": "Requesting Agent", "required": true},
+    "change_type": {"type": "enum", "label": "Change Type", "required": true, "values": ["Code Deploy", "Config Change", "Database Migration", "Capability Upgrade"]},
+    "description": {"type": "string", "label": "What's Changing", "required": true, "max_length": 1000},
+    "impact_level": {"type": "enum", "label": "Impact Level", "required": true, "values": ["Critical", "High", "Medium", "Low"]},
+    "rollback_plan": {"type": "string", "label": "Rollback Plan", "required": true, "max_length": 500},
+    "requested_date": {"type": "string", "label": "Requested Date", "required": true, "format": "YYYY-MM-DD"}
+  },
+  "neo4j": {"node": "Deployment", "relation": "REQUESTS_DEPLOYMENT"},
+  "version": "1.0",
+  "status": "P0"
+}

@@ -1,0 +1,4 @@
+{"run_id": "test_run_001", "status": "success", "cost": 45.5, "error": null, "duration_seconds": 120, "logged_at": "2026-07-28T23:24:21.655355"}
+{"run_id": "--feedback", "status": "{\"deployment_id\":\"99c4cbf2-dae1-4748-98e9-116134609ebb\",\"venture_id\":\"CON-001\",\"opco_name\":\"CON-OS\",\"amount_deployed\":100000,\"predicted_roi_pct\":354.8,\"actual_roi_pct\":12,\"accuracy_pct\":3.382187147688839,\"status\":\"success\",\"timestamp\":\"2026-07-30T18:29:48.777Z\"}", "cost": null, "error": null, "duration_seconds": 0, "logged_at": "2026-07-30T14:29:48.831688"}
+{"run_id": "99c4cbf2-dae1-4748-98e9-116134609ebb", "status": "success", "cost": null, "error": null, "duration_seconds": 0, "logged_at": "2026-07-30T14:33:09.718580"}
+{"run_id": "20260730T143614", "status": "success", "cost": null, "error": null, "duration_seconds": 0, "logged_at": "2026-07-30T14:36:20.542569"}
