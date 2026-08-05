@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DispatchOS Driver Console</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap">
+  <style>
+    :root {
+      --bg: #06090f;
+      --panel: #0c1420;
+      --border: #1b2a3d;
+      --tx-primary: #e8eef6;
+      --tx-secondary: #a9b8cc;
+      --accent-green: #3ddc97;
+      --accent-blue: #5aa7f0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--tx-primary);
+      font-family: 'Outfit', sans-serif;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .phone-container {
+      width: 100%;
+      max-width: 390px;
+      background-color: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 14px;
+    }
+
+    header h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 18px;
+    }
+
+    .status-dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: var(--accent-green);
+    }
+
+    /* Active Job Card */
+    .card {
+      background-color: rgba(90, 167, 240, 0.05);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .card h3 {
+      font-size: 15px;
+      color: var(--accent-blue);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .route-line {
+      position: relative;
+      padding-left: 20px;
+    }
+
+    .route-line::before {
+      content: '';
+      position: absolute;
+      left: 6px;
+      top: 6px;
+      bottom: 6px;
+      width: 2px;
+      background-color: var(--border);
+    }
+
+    .stop {
+      position: relative;
+      margin-bottom: 12px;
+    }
+
+    .stop::before {
+      content: '';
+      position: absolute;
+      left: -18px;
+      top: 4px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: var(--accent-blue);
+    }
+
+    .stop-dest::before {
+      background-color: var(--accent-green);
+    }
+
+    .stop p {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .stop span {
+      font-size: 12px;
+      color: var(--tx-secondary);
+    }
+
+    /* Buttons */
+    .btn-action {
+      background-color: var(--accent-blue);
+      color: var(--bg);
+      border: none;
+      padding: 14px;
+      border-radius: 12px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      width: 100%;
+      text-align: center;
+      transition: opacity 0.2s ease;
+    }
+
+    .btn-action:hover {
+      opacity: 0.9;
+    }
+
+    /* Earnings & Jobs List */
+    .section-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 14px;
+      color: var(--tx-secondary);
+      text-transform: uppercase;
+    }
+
+    .job-history-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="phone-container">
+    <header>
+      <h2>Driver App Portal</h2>
+      <div>
+        <span class="status-dot"></span>
+        <span style="font-size: 12px; color: var(--tx-secondary)">ON DUTY</span>
+      </div>
+    </header>
+
+    <!-- Earnings Summary -->
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <span style="font-size: 13px; color: var(--tx-secondary);">TODAY'S PAY</span>
+      <strong style="font-size: 20px; color: var(--accent-green)">$380.00</strong>
+    </div>
+
+    <!-- Main Navigation Card -->
+    <div class="card">
+      <h3>Active Load: #LOAD-10482</h3>
+      
+      <div class="route-line">
+        <div class="stop">
+          <p>Pickup Stop</p>
+          <span>Charlotte Origin Depot (10:30 AM)</span>
+        </div>
+        <div class="stop stop-dest" style="margin-bottom: 0;">
+          <p>Delivery Stop</p>
+          <span>Atlanta Consignee Dock (2:45 PM)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trigger Button -->
+    <button class="btn-action" onclick="alert('GPS position updates toggled. POD Camera Scanner activated.')">START NAVIGATION</button>
+
+    <!-- History List -->
+    <div>
+      <h4 class="section-title">Completed Runs</h4>
+      <div class="job-history-item">
+        <span>#LOAD-10481 (Delivered)</span>
+        <strong style="color: var(--accent-green)">+$120.00</strong>
+      </div>
+      <div class="job-history-item">
+        <span>#LOAD-10480 (Delivered)</span>
+        <strong style="color: var(--accent-green)">+$260.00</strong>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

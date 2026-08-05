@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DispatchOS — Dispatcher Control Console</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Outfit:wght@400;500;600&family=IBM+Plex+Mono&display=swap">
+  <style>
+    :root {
+      --bg: #06090f;
+      --panel: #0c1420;
+      --border: #1b2a3d;
+      --tx-primary: #e8eef6;
+      --tx-secondary: #a9b8cc;
+      --accent-blue: #5aa7f0;
+      --accent-green: #3ddc97;
+      --accent-red: #ff6b6b;
+      --accent-yellow: #f5b942;
+      --font-disp: 'Space Grotesk', sans-serif;
+      --font-body: 'Outfit', sans-serif;
+      --font-mono: 'IBM Plex Mono', monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--tx-primary);
+      font-family: var(--font-body);
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* Sidebar */
+    aside {
+      width: 240px;
+      background-color: var(--panel);
+      border-right: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      padding: 24px;
+    }
+
+    aside h1 {
+      font-family: var(--font-disp);
+      font-size: 20px;
+      color: var(--accent-blue);
+      margin-bottom: 32px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    aside nav {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      flex: 1;
+    }
+
+    aside nav a {
+      color: var(--tx-secondary);
+      text-decoration: none;
+      font-size: 15px;
+      padding: 10px 14px;
+      border-radius: 8px;
+      transition: all 0.2s ease;
+    }
+
+    aside nav a.active, aside nav a:hover {
+      background-color: var(--border);
+      color: var(--tx-primary);
+    }
+
+    /* Main Container */
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+    }
+
+    header {
+      padding: 24px 40px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h2 {
+      font-family: var(--font-disp);
+      font-size: 24px;
+    }
+
+    .btn-create {
+      background-color: var(--accent-blue);
+      color: var(--bg);
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-family: var(--font-disp);
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity 0.2s ease;
+    }
+
+    .btn-create:hover {
+      opacity: 0.9;
+    }
+
+    /* Content */
+    .content {
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .stat-card {
+      background-color: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+    }
+
+    .stat-card p {
+      color: var(--tx-secondary);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .stat-card h3 {
+      font-family: var(--font-disp);
+      font-size: 28px;
+      margin-top: 8px;
+    }
+
+    /* Layout Split */
+    .dashboard-split {
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+      gap: 30px;
+    }
+
+    .panel-box {
+      background-color: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .panel-box h4 {
+      font-family: var(--font-disp);
+      font-size: 18px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 12px;
+    }
+
+    /* Queue Table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+
+    th {
+      color: var(--tx-secondary);
+      font-size: 12px;
+      text-transform: uppercase;
+      padding: 12px 8px;
+    }
+
+    td {
+      padding: 16px 8px;
+      border-bottom: 1px solid var(--border);
+      font-size: 14px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-family: var(--font-mono);
+      font-weight: 500;
+    }
+
+    .badge-in_transit { background-color: rgba(90, 167, 240, 0.15); color: var(--accent-blue); }
+    .badge-delivered { background-color: rgba(61, 220, 151, 0.15); color: var(--accent-green); }
+    .badge-delayed { background-color: rgba(255, 107, 107, 0.15); color: var(--accent-red); }
+    .badge-draft { background-color: rgba(169, 184, 204, 0.15); color: var(--tx-secondary); }
+
+    /* Exceptions List */
+    .exception-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .exception-item {
+      background-color: rgba(255, 107, 107, 0.05);
+      border: 1px solid rgba(255, 107, 107, 0.2);
+      border-radius: 8px;
+      padding: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .exception-info h5 {
+      color: var(--accent-red);
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .exception-info p {
+      color: var(--tx-secondary);
+      font-size: 12px;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <aside>
+    <h1>⚙️ DispatchOS</h1>
+    <nav>
+      <a href="#" class="active">Overview</a>
+      <a href="#">Live Dispatch</a>
+      <a href="#">Load Board</a>
+      <a href="#">Drivers</a>
+      <a href="#">Fleet</a>
+      <a href="#">Finance</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main>
+    <header>
+      <h2>Operations Control Panel</h2>
+      <button class="btn-create" onclick="alert('Create Order action triggered.')">+ Create Order</button>
+    </header>
+
+    <div class="content">
+      <!-- Stats -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <p>Total Shipments</p>
+          <h3>248</h3>
+        </div>
+        <div class="stat-card">
+          <p>Active Routes</p>
+          <h3 style="color: var(--accent-blue)">192</h3>
+        </div>
+        <div class="stat-card">
+          <p>Critical Warnings</p>
+          <h3 style="color: var(--accent-red)">7</h3>
+        </div>
+        <div class="stat-card">
+          <p>Gross Profit margin</p>
+          <h3 style="color: var(--accent-green)">24.2%</h3>
+        </div>
+      </div>
+
+      <!-- Main Panel Split -->
+      <div class="dashboard-split">
+        <!-- Active Dispatch -->
+        <div class="panel-box">
+          <h4>Live Active Loads</h4>
+          <table>
+            <thead>
+              <tr>
+                <th>Load ID</th>
+                <th>Origin</th>
+                <th>Destination</th>
+                <th>Driver</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="font-family: var(--font-mono)">#LOAD-10482</td>
+                <td>Charlotte, NC</td>
+                <td>Atlanta, GA</td>
+                <td>John Smith</td>
+                <td><span class="badge badge-in_transit">IN TRANSIT</span></td>
+              </tr>
+              <tr>
+                <td style="font-family: var(--font-mono)">#LOAD-10483</td>
+                <td>Raleigh, NC</td>
+                <td>Miami, FL</td>
+                <td>Jane Doe</td>
+                <td><span class="badge badge-draft">DRAFT</span></td>
+              </tr>
+              <tr>
+                <td style="font-family: var(--font-mono)">#LOAD-10484</td>
+                <td>Columbia, SC</td>
+                <td>Dallas, TX</td>
+                <td>Mike Davis</td>
+                <td><span class="badge badge-delayed">DELAYED</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Warning Logs -->
+        <div class="panel-box">
+          <h4>Active Exception Feeds</h4>
+          <div class="exception-list">
+            <div class="exception-item">
+              <div class="exception-info">
+                <h5>⚠ Late Arrival Risk</h5>
+                <p>Load #10484 delayed by 45 mins due to construction on I-85.</p>
+              </div>
+            </div>
+            <div class="exception-item">
+              <div class="exception-info">
+                <h5>⚠ Driver Duty Limit</h5>
+                <p>Driver John Smith approaching daily drive time boundary.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
