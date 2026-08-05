@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DispatchOS — Client Portal</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Outfit:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Outfit:wght@400;500;600&family=IBM+Plex+Mono&display=swap">
   <style>
     :root {
       --bg: #06090f;
@@ -14,6 +14,9 @@
       --tx-secondary: #a9b8cc;
       --accent-blue: #5aa7f0;
       --accent-green: #3ddc97;
+      --font-disp: 'Space Grotesk', sans-serif;
+      --font-body: 'Outfit', sans-serif;
+      --font-mono: 'IBM Plex Mono', monospace;
     }
 
     * {
@@ -25,7 +28,7 @@
     body {
       background-color: var(--bg);
       color: var(--tx-primary);
-      font-family: 'Outfit', sans-serif;
+      font-family: var(--font-body);
       padding: 40px;
     }
 
@@ -46,7 +49,7 @@
     }
 
     header h1 {
-      font-family: 'Space Grotesk', sans-serif;
+      font-family: var(--font-disp);
       font-size: 24px;
     }
 
@@ -56,7 +59,7 @@
       border: none;
       padding: 12px 24px;
       border-radius: 8px;
-      font-family: 'Space Grotesk', sans-serif;
+      font-family: var(--font-disp);
       font-weight: 600;
       cursor: pointer;
     }
@@ -79,7 +82,7 @@
     }
 
     .panel h2 {
-      font-family: 'Space Grotesk', sans-serif;
+      font-family: var(--font-disp);
       font-size: 18px;
     }
 
@@ -95,13 +98,18 @@
     }
 
     .status-badge {
-      background-color: rgba(90, 167, 240, 0.15);
-      color: var(--accent-blue);
+      display: inline-block;
       padding: 4px 8px;
       border-radius: 4px;
-      font-size: 12px;
+      font-size: 11px;
+      font-family: var(--font-mono);
       font-weight: 600;
     }
+
+    .badge-in_transit, .badge-IN_TRANSIT { background-color: rgba(90, 167, 240, 0.15); color: var(--accent-blue); }
+    .badge-delivered, .badge-DELIVERED { background-color: rgba(61, 220, 151, 0.15); color: var(--accent-green); }
+    .badge-delayed, .badge-DELAYED { background-color: rgba(255, 107, 107, 0.15); color: var(--accent-red); }
+    .badge-draft, .badge-DRAFT { background-color: rgba(169, 184, 204, 0.15); color: var(--tx-secondary); }
 
     /* Invoices List */
     .invoice-item {
@@ -111,6 +119,86 @@
       padding: 12px 0;
       border-bottom: 1px solid var(--border);
     }
+
+    /* Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(4px);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .modal-content {
+      background-color: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      width: 440px;
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .modal-content h3 {
+      font-family: var(--font-disp);
+      font-size: 20px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 12px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .form-group label {
+      font-size: 13px;
+      color: var(--tx-secondary);
+    }
+
+    .form-group input {
+      background-color: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--tx-primary);
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-family: var(--font-body);
+    }
+
+    .modal-actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 12px;
+      margin-top: 10px;
+    }
+
+    .btn-cancel {
+      background-color: transparent;
+      border: 1px solid var(--border);
+      color: var(--tx-primary);
+      padding: 10px 18px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .btn-submit {
+      background-color: var(--accent-blue);
+      color: var(--bg);
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
@@ -118,34 +206,15 @@
   <div class="container">
     <header>
       <h1>Customer Portal</h1>
-      <button class="btn-action" onclick="alert('Order request form overlay active.')">Request Shipment</button>
+      <button class="btn-action" onclick="openRequestModal()">Request Shipment</button>
     </header>
 
     <div class="grid">
       <!-- Active Shipments -->
       <div class="panel">
         <h2>My Active Cargo Orders</h2>
-        
-        <div class="shipment-card">
-          <div>
-            <h3 style="font-size: 15px; margin-bottom: 4px;">Load #LOAD-10482</h3>
-            <p style="font-size: 13px; color: var(--tx-secondary);">Charlotte, NC ➔ Atlanta, GA</p>
-          </div>
-          <div>
-            <span class="status-badge">IN TRANSIT</span>
-            <p style="font-size: 12px; color: var(--tx-secondary); margin-top: 4px; text-align: right;">ETA: 2:45 PM</p>
-          </div>
-        </div>
-
-        <div class="shipment-card">
-          <div>
-            <h3 style="font-size: 15px; margin-bottom: 4px;">Load #LOAD-10481</h3>
-            <p style="font-size: 13px; color: var(--tx-secondary);">Raleigh, NC ➔ Orlando, FL</p>
-          </div>
-          <div>
-            <span class="status-badge" style="background-color: rgba(61, 220, 151, 0.15); color: var(--accent-green);">DELIVERED</span>
-            <p style="font-size: 12px; color: var(--tx-secondary); margin-top: 4px; text-align: right;">Completed</p>
-          </div>
+        <div id="shipmentsList" style="display: flex; flex-direction: column; gap: 16px;">
+          <!-- Dynamically loaded -->
         </div>
       </div>
 
@@ -172,5 +241,109 @@
     </div>
   </div>
 
+  <!-- Request Shipment Modal -->
+  <div class="modal" id="requestModal">
+    <div class="modal-content">
+      <h3>Request Shipment</h3>
+      <form id="requestForm" onsubmit="submitRequest(event)">
+        <div class="form-group">
+          <label for="refNum">Reference Number</label>
+          <input type="text" id="refNum" required placeholder="e.g. REF-CONF-98821">
+        </div>
+        <div class="form-group">
+          <label for="originAddr">Pickup Address</label>
+          <input type="text" id="originAddr" required placeholder="e.g. 100 Main St, Charlotte, NC">
+        </div>
+        <div class="form-group">
+          <label for="destAddr">Delivery Address</label>
+          <input type="text" id="destAddr" required placeholder="e.g. 200 Peach St, Atlanta, GA">
+        </div>
+        <div class="form-group">
+          <label for="weight">Weight (lbs)</label>
+          <input type="number" id="weight" required placeholder="e.g. 42000">
+        </div>
+        <div class="modal-actions">
+          <button type="button" class="btn-cancel" onclick="closeRequestModal()">Cancel</button>
+          <button type="submit" class="btn-submit">Book Shipment</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const API_URL = 'http://localhost:4005/api';
+
+    async function loadShipments() {
+      try {
+        const res = await fetch(`${API_URL}/loads`);
+        const data = await res.json();
+        
+        if (data.success) {
+          const list = document.getElementById('shipmentsList');
+          list.innerHTML = '';
+          
+          data.loads.forEach(load => {
+            const card = document.createElement('div');
+            card.className = 'shipment-card';
+            card.innerHTML = `
+              <div>
+                <h3 style="font-size: 15px; margin-bottom: 4px; font-family: var(--font-disp);">Load #${load.reference_number || load.id.slice(0, 8)}</h3>
+                <p style="font-size: 13px; color: var(--tx-secondary);">${load.origin.address || load.origin} ➔ ${load.destination.address || load.destination}</p>
+              </div>
+              <div style="text-align: right;">
+                <span class="status-badge badge-${load.status}">${load.status}</span>
+                <p style="font-size: 11px; color: var(--tx-secondary); margin-top: 4px;">ETA: 2:45 PM</p>
+              </div>
+            `;
+            list.appendChild(card);
+          });
+        }
+      } catch (err) {
+        console.error('Could not fetch active shipments:', err);
+      }
+    }
+
+    function openRequestModal() {
+      document.getElementById('requestModal').style.display = 'flex';
+    }
+
+    function closeRequestModal() {
+      document.getElementById('requestModal').style.display = 'none';
+    }
+
+    async function submitRequest(e) {
+      e.preventDefault();
+      
+      const payload = {
+        reference_number: document.getElementById('refNum').value,
+        origin: { address: document.getElementById('originAddr').value },
+        destination: { address: document.getElementById('destAddr').value },
+        weight_lbs: Number(document.getElementById('weight').value)
+      };
+
+      try {
+        const res = await fetch(`${API_URL}/orders`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        const data = await res.json();
+        
+        if (data.success) {
+          closeRequestModal();
+          document.getElementById('requestForm').reset();
+          loadShipments();
+        }
+      } catch (err) {
+        alert('Booking failed. Check console.');
+        console.error(err);
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      loadShipments();
+      setInterval(loadShipments, 5000);
+    });
+  </script>
 </body>
 </html>
