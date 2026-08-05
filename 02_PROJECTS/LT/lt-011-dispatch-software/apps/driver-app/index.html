@@ -14,6 +14,7 @@
       --tx-secondary: #a9b8cc;
       --accent-green: #3ddc97;
       --accent-blue: #5aa7f0;
+      --accent-red: #ff6b6b;
     }
 
     * {
@@ -149,7 +150,19 @@
       opacity: 0.9;
     }
 
-    /* Earnings & Jobs List */
+    /* Telemetry Display */
+    .telemetry-log {
+      font-size: 12px;
+      background-color: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px;
+      font-family: monospace;
+      color: var(--tx-secondary);
+      max-height: 80px;
+      overflow-y: auto;
+    }
+
     .section-title {
       font-family: 'Space Grotesk', sans-serif;
       font-size: 14px;
@@ -173,8 +186,8 @@
     <header>
       <h2>Driver App Portal</h2>
       <div>
-        <span class="status-dot"></span>
-        <span style="font-size: 12px; color: var(--tx-secondary)">ON DUTY</span>
+        <span class="status-dot" id="statusDot"></span>
+        <span id="statusText" style="font-size: 12px; color: var(--tx-secondary)">ON DUTY</span>
       </div>
     </header>
 
@@ -184,7 +197,7 @@
       <strong style="font-size: 20px; color: var(--accent-green)">$380.00</strong>
     </div>
 
-    <!-- Main Navigation Card -->
+    <!-- Active Job Card -->
     <div class="card">
       <h3>Active Load: #LOAD-10482</h3>
       
@@ -201,7 +214,12 @@
     </div>
 
     <!-- Trigger Button -->
-    <button class="btn-action" onclick="alert('GPS position updates toggled. POD Camera Scanner activated.')">START NAVIGATION</button>
+    <button class="btn-action" id="navBtn" onclick="toggleNavigation()">START NAVIGATION</button>
+
+    <!-- Telemetry Log -->
+    <div class="telemetry-log" id="telemetryLog">
+      GPS telemetry inactive. Click above to start route.
+    </div>
 
     <!-- History List -->
     <div>
@@ -217,5 +235,77 @@
     </div>
   </div>
 
+  <script>
+    const API_URL = 'http://localhost:4005/api';
+    let isTracking = false;
+    let trackInterval = null;
+
+    function toggleNavigation() {
+      const btn = document.getElementById('navBtn');
+      const log = document.getElementById('telemetryLog');
+      const dot = document.getElementById('statusDot');
+      const statusText = document.getElementById('statusText');
+
+      if (!isTracking) {
+        isTracking = true;
+        btn.innerText = 'STOP NAVIGATION';
+        btn.style.backgroundColor = 'var(--accent-red)';
+        btn.style.color = '#fff';
+        dot.style.backgroundColor = 'var(--accent-blue)';
+        statusText.innerText = 'EN ROUTE';
+        log.innerText = 'GPS connection established. Tracking started...';
+
+        startGpsReporting();
+      } else {
+        isTracking = false;
+        btn.innerText = 'START NAVIGATION';
+        btn.style.backgroundColor = 'var(--accent-blue)';
+        btn.style.color = 'var(--bg)';
+        dot.style.backgroundColor = 'var(--accent-green)';
+        statusText.innerText = 'ON DUTY';
+        log.innerText = 'Navigation stopped. Telemetry paused.';
+
+        clearInterval(trackInterval);
+      }
+    }
+
+    function startGpsReporting() {
+      // Mock latitude/longitude changes to simulate transit
+      let lat = 35.227085;
+      let lng = -80.843124;
+      const destLat = 33.748995;
+      const destLng = -84.387982;
+
+      trackInterval = setInterval(async () => {
+        // Step closer to destination
+        lat += (destLat - lat) * 0.05;
+        lng += (destLng - lng) * 0.05;
+
+        const payload = {
+          driver_id: 'driver-uuid-4412',
+          vehicle_id: 'vehicle-uuid-5521',
+          latitude: Number(lat.toFixed(6)),
+          longitude: Number(lng.toFixed(6)),
+          speed_mph: 62.5
+        };
+
+        try {
+          const res = await fetch(`${API_URL}/tracking/gps`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+          });
+          const data = await res.json();
+
+          if (data.success) {
+            const log = document.getElementById('telemetryLog');
+            log.innerHTML = `[${new Date().toLocaleTimeString()}] Telemetry sent:<br>Lat: ${payload.latitude}<br>Lng: ${payload.longitude}`;
+          }
+        } catch (err) {
+          console.error('Failed to log GPS telemetry:', err);
+        }
+      }, 5000); // Send coordinates every 5s
+    }
+  </script>
 </body>
 </html>

@@ -51,9 +51,6 @@
       font-size: 20px;
       color: var(--accent-blue);
       margin-bottom: 32px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
     }
 
     aside nav {
@@ -107,11 +104,6 @@
       font-family: var(--font-disp);
       font-weight: 600;
       cursor: pointer;
-      transition: opacity 0.2s ease;
-    }
-
-    .btn-create:hover {
-      opacity: 0.9;
     }
 
     /* Content */
@@ -139,8 +131,6 @@
     .stat-card p {
       color: var(--tx-secondary);
       font-size: 13px;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
     }
 
     .stat-card h3 {
@@ -161,9 +151,6 @@
       border: 1px solid var(--border);
       border-radius: 12px;
       padding: 24px;
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
     }
 
     .panel-box h4 {
@@ -171,6 +158,7 @@
       font-size: 18px;
       border-bottom: 1px solid var(--border);
       padding-bottom: 12px;
+      margin-bottom: 16px;
     }
 
     /* Queue Table */
@@ -202,12 +190,97 @@
       font-weight: 500;
     }
 
-    .badge-in_transit { background-color: rgba(90, 167, 240, 0.15); color: var(--accent-blue); }
-    .badge-delivered { background-color: rgba(61, 220, 151, 0.15); color: var(--accent-green); }
-    .badge-delayed { background-color: rgba(255, 107, 107, 0.15); color: var(--accent-red); }
-    .badge-draft { background-color: rgba(169, 184, 204, 0.15); color: var(--tx-secondary); }
+    .badge-in_transit, .badge-IN_TRANSIT { background-color: rgba(90, 167, 240, 0.15); color: var(--accent-blue); }
+    .badge-delivered, .badge-DELIVERED { background-color: rgba(61, 220, 151, 0.15); color: var(--accent-green); }
+    .badge-delayed, .badge-DELAYED { background-color: rgba(255, 107, 107, 0.15); color: var(--accent-red); }
+    .badge-draft, .badge-DRAFT { background-color: rgba(169, 184, 204, 0.15); color: var(--tx-secondary); }
 
-    /* Exceptions List */
+    /* Modal Styling */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(4px);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .modal-content {
+      background-color: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      width: 480px;
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .modal-content h3 {
+      font-family: var(--font-disp);
+      font-size: 20px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 12px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .form-group label {
+      font-size: 13px;
+      color: var(--tx-secondary);
+    }
+
+    .form-group input {
+      background-color: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--tx-primary);
+      padding: 10px 14px;
+      border-radius: 8px;
+      font-family: var(--font-body);
+      font-size: 14px;
+    }
+
+    .form-group input:focus {
+      outline: none;
+      border-color: var(--accent-blue);
+    }
+
+    .modal-actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 12px;
+      margin-top: 10px;
+    }
+
+    .btn-cancel {
+      background-color: transparent;
+      border: 1px solid var(--border);
+      color: var(--tx-primary);
+      padding: 10px 18px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .btn-submit {
+      background-color: var(--accent-blue);
+      color: var(--bg);
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    /* Exception Lists */
     .exception-list {
       display: flex;
       flex-direction: column;
@@ -219,21 +292,6 @@
       border: 1px solid rgba(255, 107, 107, 0.2);
       border-radius: 8px;
       padding: 14px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .exception-info h5 {
-      color: var(--accent-red);
-      font-size: 14px;
-      font-weight: 600;
-    }
-
-    .exception-info p {
-      color: var(--tx-secondary);
-      font-size: 12px;
-      margin-top: 4px;
     }
   </style>
 </head>
@@ -256,7 +314,7 @@
   <main>
     <header>
       <h2>Operations Control Panel</h2>
-      <button class="btn-create" onclick="alert('Create Order action triggered.')">+ Create Order</button>
+      <button class="btn-create" onclick="openOrderModal()">+ Create Order</button>
     </header>
 
     <div class="content">
@@ -264,7 +322,7 @@
       <div class="stats-grid">
         <div class="stat-card">
           <p>Total Shipments</p>
-          <h3>248</h3>
+          <h3 id="statTotal">248</h3>
         </div>
         <div class="stat-card">
           <p>Active Routes</p>
@@ -275,14 +333,13 @@
           <h3 style="color: var(--accent-red)">7</h3>
         </div>
         <div class="stat-card">
-          <p>Gross Profit margin</p>
+          <p>Gross Profit Margin</p>
           <h3 style="color: var(--accent-green)">24.2%</h3>
         </div>
       </div>
 
-      <!-- Main Panel Split -->
+      <!-- Tables Split -->
       <div class="dashboard-split">
-        <!-- Active Dispatch -->
         <div class="panel-box">
           <h4>Live Active Loads</h4>
           <table>
@@ -295,47 +352,22 @@
                 <th>Status</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td style="font-family: var(--font-mono)">#LOAD-10482</td>
-                <td>Charlotte, NC</td>
-                <td>Atlanta, GA</td>
-                <td>John Smith</td>
-                <td><span class="badge badge-in_transit">IN TRANSIT</span></td>
-              </tr>
-              <tr>
-                <td style="font-family: var(--font-mono)">#LOAD-10483</td>
-                <td>Raleigh, NC</td>
-                <td>Miami, FL</td>
-                <td>Jane Doe</td>
-                <td><span class="badge badge-draft">DRAFT</span></td>
-              </tr>
-              <tr>
-                <td style="font-family: var(--font-mono)">#LOAD-10484</td>
-                <td>Columbia, SC</td>
-                <td>Dallas, TX</td>
-                <td>Mike Davis</td>
-                <td><span class="badge badge-delayed">DELAYED</span></td>
-              </tr>
+            <tbody id="loadsTableBody">
+              <!-- Dynamically loaded -->
             </tbody>
           </table>
         </div>
 
-        <!-- Warning Logs -->
         <div class="panel-box">
           <h4>Active Exception Feeds</h4>
           <div class="exception-list">
             <div class="exception-item">
-              <div class="exception-info">
-                <h5>⚠ Late Arrival Risk</h5>
-                <p>Load #10484 delayed by 45 mins due to construction on I-85.</p>
-              </div>
+              <h5 style="color: var(--accent-red); font-size: 14px;">⚠ Late Arrival Risk</h5>
+              <p style="color: var(--tx-secondary); font-size: 12px; margin-top: 4px;">Load #LOAD-10484 delayed by 45 mins due to construction on I-85.</p>
             </div>
             <div class="exception-item">
-              <div class="exception-info">
-                <h5>⚠ Driver Duty Limit</h5>
-                <p>Driver John Smith approaching daily drive time boundary.</p>
-              </div>
+              <h5 style="color: var(--accent-red); font-size: 14px;">⚠ Driver Duty Limit</h5>
+              <p style="color: var(--tx-secondary); font-size: 12px; margin-top: 4px;">Driver John Smith approaching daily drive time boundary.</p>
             </div>
           </div>
         </div>
@@ -343,5 +375,109 @@
     </div>
   </main>
 
+  <!-- Create Order Modal -->
+  <div class="modal" id="orderModal">
+    <div class="modal-content">
+      <h3>Create Cargo Order</h3>
+      <form id="orderForm" onsubmit="submitOrder(event)">
+        <div class="form-group">
+          <label for="refNum">Reference Number</label>
+          <input type="text" id="refNum" required placeholder="e.g. REF-CONF-98821">
+        </div>
+        <div class="form-group">
+          <label for="originAddr">Origin Address</label>
+          <input type="text" id="originAddr" required placeholder="e.g. 100 Main St, Charlotte, NC">
+        </div>
+        <div class="form-group">
+          <label for="destAddr">Destination Address</label>
+          <input type="text" id="destAddr" required placeholder="e.g. 200 Peach St, Atlanta, GA">
+        </div>
+        <div class="form-group">
+          <label for="weight">Weight (lbs)</label>
+          <input type="number" id="weight" required placeholder="e.g. 42000">
+        </div>
+        <div class="modal-actions">
+          <button type="button" class="btn-cancel" onclick="closeOrderModal()">Cancel</button>
+          <button type="submit" class="btn-submit">Submit Order</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const API_URL = 'http://localhost:4005/api';
+
+    async function loadLoads() {
+      try {
+        const res = await fetch(`${API_URL}/loads`);
+        const data = await res.json();
+        
+        if (data.success) {
+          const tbody = document.getElementById('loadsTableBody');
+          tbody.innerHTML = '';
+          
+          data.loads.forEach(load => {
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+              <td style="font-family: var(--font-mono)">#${load.reference_number || load.id.slice(0, 8)}</td>
+              <td>${load.origin.address || load.origin}</td>
+              <td>${load.destination.address || load.destination}</td>
+              <td>${load.driver_name || 'Unassigned'}</td>
+              <td><span class="badge badge-${load.status}">${load.status}</span></td>
+            `;
+            tbody.appendChild(tr);
+          });
+          
+          // Update total aggregate stats dynamically
+          document.getElementById('statTotal').innerText = data.loads.length;
+        }
+      } catch (err) {
+        console.error('Could not fetch active loads from backend:', err);
+      }
+    }
+
+    function openOrderModal() {
+      document.getElementById('orderModal').style.display = 'flex';
+    }
+
+    function closeOrderModal() {
+      document.getElementById('orderModal').style.display = 'none';
+    }
+
+    async function submitOrder(e) {
+      e.preventDefault();
+      
+      const payload = {
+        reference_number: document.getElementById('refNum').value,
+        origin: { address: document.getElementById('originAddr').value },
+        destination: { address: document.getElementById('destAddr').value },
+        weight_lbs: Number(document.getElementById('weight').value)
+      };
+
+      try {
+        const res = await fetch(`${API_URL}/orders`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        const data = await res.json();
+        
+        if (data.success) {
+          closeOrderModal();
+          document.getElementById('orderForm').reset();
+          loadLoads();
+        }
+      } catch (err) {
+        alert('Order creation failed. Check console.');
+        console.error(err);
+      }
+    }
+
+    // Start polling active logs
+    document.addEventListener('DOMContentLoaded', () => {
+      loadLoads();
+      setInterval(loadLoads, 5000); // Poll every 5s
+    });
+  </script>
 </body>
 </html>
