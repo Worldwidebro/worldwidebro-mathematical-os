@@ -1,17 +1,39 @@
 # 📑 MASTER INDEX
 **Central Hub for All System Knowledge**  
-**Last Updated:** 2026-05-10  
-**Status:** Phase 0 - System Awareness Build
+**Last Updated:** 2026-08-06  
+**Status:** Phase 1 - Portfolio Operating System Execution
+
+---
+
+## 👤 Founder/CEO Identity
+- **Who I Am:** [[whoiam]] — Worldwidebro (Winners Circle WC LLC)
+- **Email:** winnerscirclewcllc@gmail.com
+- **Operating Across:** [[36-DOMAIN-OS]], [[AGENT-OS]], [[SCHEDULING-OS]], all 8 ventures
+- **Authority:** Unilateral on strategy/tech; Consulting on hiring/capital; Board on pivot
 
 ---
 
 ## 🎯 QUICK NAVIGATION
 
+### Portfolio Operating System (Hybrid Execution)
+
+**Phase 1: Revenue Ops (Week 1-4)**
+- **Portfolio Strategy** → [PORTFOLIO-CONTEXT.md](.planning/PORTFOLIO-CONTEXT.md) **(8 ventures, $2.27M potential, 5 blockers)**
+- **4-Week Roadmap** → [.planning/ROADMAP.md](.planning/ROADMAP.md) **(Phase 1-4 breakdown, venture dependencies)**
+- **Live State Tracker** → [.planning/STATE.md](.planning/STATE.md) **(Readiness %, revenue targets, blockers status)**
+- **Phase 1 Execution Plan** → [.planning/phases/01-launch-campaigns/01-01-PLAN.md](.planning/phases/01-launch-campaigns/01-01-PLAN.md) **(12 atomic tasks, Tracer-first)**
+- **Org Charts & Ownership** → [.planning/ORGCHART-VENTURES-PHASE-1.md](.planning/ORGCHART-VENTURES-PHASE-1.md) **(People + Agents + task ownership)**
+- **Skills Required** → [.planning/SKILLS-REQUIRED.md](.planning/SKILLS-REQUIRED.md) **(Phase 1-2 skill checklist + discovery framework)**
+
+**Phase 2: VEX Foundation (Week 5-12, blocked until Phase 1 >$50K revenue)**
+- **VEX OS Spec** → [.planning/PHASE-2-VEX-FOUNDATION-SPEC.md](.planning/PHASE-2-VEX-FOUNDATION-SPEC.md) **(Layers 0-4: Infrastructure → Orchestration, 8-week build)**
+
 ### I Need to Know (The 4 Graphs)
 - **What are we building?** → [VENTURE-OPERATIONS-FRAMEWORK.md](VENTURE-OPERATIONS-FRAMEWORK.md) **(Venture Graph: 712 ventures)**
 - **Who decides?** → [AGENTS.md](AGENTS.md) **(Agent Graph: 35 Intelligence Types + Dispatch)**
-- **What do we know?** → [SYSTEM-AWARENESS-AUDIT.md](SYSTEM-AWARENESS-AUDIT.md) **(Knowledge Graph: files, tools, costs)**
-- **What can we use?** → [REPOS-ORGANIZATION-MAP.md](REPOS-ORGANIZATION-MAP.md) **(Computer Graph: 1,592 repos + Tier 1-9 services)**
+- **What files exist and how do they connect?** → [SYSTEM-INTEGRATION-MAP.md](SYSTEM-INTEGRATION-MAP.md)
+- **What are our repository capabilities (owned + starred)?** → [REPOS-ORGANIZATION-MAP.md](REPOS-ORGANIZATION-MAP.md)
+- **What is the system intelligence stack?** → [INTELLIGENCE-STACK.md](INTELLIGENCE-STACK.md) **(Computer Graph: 1,592 repos + Tier 1-9 services)**
 - **How are we building it?** → [TASKS-TO-FIRST-REVENUE.md](TASKS-TO-FIRST-REVENUE.md) **(12-week sprint to $5K MRR)**
 - **What's our progress?** → [progress.md](progress.md)
 - **What are the blockers?** → [BLOCKER-STATUS-SESSION-2.md](BLOCKER-STATUS-SESSION-2.md)
@@ -36,6 +58,8 @@
 - **How do I enrich them?** → [run_osint_enrichment.py](run_osint_enrichment.py)
 
 ### I Need Organizational Reference
+- **Who am I? (Systems Architect & Venture Builder)** → [whoiam.md](whoiam.md)
+- **What are the organizational jobs and roles?** → [JOBS-AND-ROLES.md](JOBS-AND-ROLES.md)
 - **Who are we and what's our structure?** → [ORG-CHART-OPERATIONAL.md](ORG-CHART-OPERATIONAL.md)
 - **What do we need to complete?** → [COMPANY-BRAIN-COMPLETION-REPORT.md](COMPANY-BRAIN-COMPLETION-REPORT.md)
 - **How do I procure vendors?** → [VENDOR-PROCUREMENT-OS.md](VENDOR-PROCUREMENT-OS.md)
@@ -56,6 +80,8 @@ VENTURE-OPERATIONS-FRAMEWORK.md     [880 lines] Architecture + data models
 OPERATIONAL-ARCHITECTURE.md          [150 lines] 7-layer system design
 COMPANY-BRAIN-COMPLETION-REPORT.md   [200 lines] Intelligence layer definition
 ORG-CHART-OPERATIONAL.md             [100 lines] Organizational structure
+whoiam.md                           [270 lines] Systems Architect & Venture Builder profile
+JOBS-AND-ROLES.md                   [100 lines] Human leadership and AI Agent directory
 ```
 
 ### EXECUTION (How We Do It)
@@ -108,6 +134,7 @@ PHASE-1-CHECKLIST.md                Task completion checklist
 ```
 SYSTEM-INTEGRATION-MAP.md           File relationships & awareness gaps
 REPOS-ORGANIZATION-MAP.md           1,717 categorized repositories by phase/dept/caps
+INTELLIGENCE-STACK.md               AVS 15 core intelligence domains & compounding loop
 MASTER-INDEX.md                     This file - central navigation
 ```
 
