@@ -1,0 +1,89 @@
+version: '3.8'
+services:
+  asterisk:
+    image: asterisk:latest
+    ports:
+      - "5060:5060/udp"
+      - "5061:5061/udp"
+    volumes:
+      - ./voice/asterisk-config:/etc/asterisk
+      - ./voice/recordings:/var/spool/asterisk/recordings
+    environment:
+      - ASTERISK_UID=asterisk
+      - ASTERISK_GID=asterisk
+    healthcheck:
+      test: ["CMD", "asterisk", "-rx", "core show version"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  whisper:
+    image: openai/whisper:latest
+    ports:
+      - "9000:9000"
+    volumes:
+      - ./voice/whisper-model:/models
+    environment:
+      - MODEL_SIZE=base
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  coqui:
+    image: coqui/tts:latest
+    ports:
+      - "5002:5002"
+    volumes:
+      - ./voice/coqui-model:/root/.local/share/coqui
+    environment:
+      - TTS_HOME=/root/.local/share/coqui
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5002/"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  channel-gateway:
+    image: node:20-alpine
+    working_dir: /app
+    volumes:
+      - ./channel-gateway:/app
+    ports:
+      - "3000:3000"
+    environment:
+      - SUPABASE_URL=http://supabase:3000
+      - SUPABASE_ANON_KEY=${SUPABASE_ANON_KEY}
+      - WHATSAPP_WEBHOOK_TOKEN=${WHATSAPP_WEBHOOK_TOKEN}
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+      - ASTERISK_SIP=asterisk:5060
+    command: npm run dev
+    depends_on:
+      - asterisk
+      - supabase
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  supabase:
+    image: supabase/postgres:latest
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=ventures2026
+      - POSTGRES_DB=ventures
+    volumes:
+      - ./supabase/migrations:/docker-entrypoint-initdb.d
+      - ./supabase/data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+volumes:
+  supabase_data:
