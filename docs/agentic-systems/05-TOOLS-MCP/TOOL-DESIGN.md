@@ -1,20 +1,21 @@
 ---
-id: tool-design
-type: document
-name: TOOL DESIGN
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 1.0
-freshness: current
+name: docs/agentic-systems/05-TOOLS-MCP/TOOL-DESIGN
+desc: ...
 tags:
   - status/active
   - knowledge/current
+id: tool-design
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 1.0
+freshness: current
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# TOOL DESIGN
+# docs/agentic-systems/05-TOOLS-MCP/TOOL-DESIGN
 ## Purpose
 Provide best practices for design, schemas, and error boundaries of agent-facing tools.
 

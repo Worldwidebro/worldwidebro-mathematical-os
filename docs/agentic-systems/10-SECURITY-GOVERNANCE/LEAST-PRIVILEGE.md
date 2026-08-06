@@ -1,20 +1,21 @@
 ---
-id: least-privilege
-type: document
-name: LEAST PRIVILEGE
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 0.8
-freshness: unverified
+name: docs/agentic-systems/10-SECURITY-GOVERNANCE/LEAST-PRIVILEGE
+desc: ...
 tags:
   - status/active
   - knowledge/unverified
+id: least-privilege
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 0.8
+freshness: unverified
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# LEAST PRIVILEGE
+# docs/agentic-systems/10-SECURITY-GOVERNANCE/LEAST-PRIVILEGE
 
 ## Purpose
 This document provides the conceptual and technical details for **LEAST PRIVILEGE** within the Agentic Systems Academy.

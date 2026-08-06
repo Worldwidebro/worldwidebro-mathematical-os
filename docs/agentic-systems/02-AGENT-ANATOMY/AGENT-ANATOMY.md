@@ -1,23 +1,24 @@
 ---
+name: docs/agentic-systems/02-AGENT-ANATOMY/AGENT-ANATOMY
+desc: ...
+tags:
+  - status/active
+  - knowledge/current
 id: agent-anatomy
 type: document
-name: AGENT ANATOMY
 status: active
 owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
 source: planning
 confidence: 1.0
 freshness: current
 aliases:
   - "Agent Architecture"
   - "Cognitive Anatomy"
-tags:
-  - status/active
-  - knowledge/current
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# AGENT ANATOMY
+# docs/agentic-systems/02-AGENT-ANATOMY/AGENT-ANATOMY
 ## Purpose
 Map the cognitive and physical components of an agent to technical abstractions (Model, Memory, Tools, Policies).
 

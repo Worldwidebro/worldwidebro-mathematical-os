@@ -1,3 +1,13 @@
+---
+name: 02_PROJECTS/LT/lt-011-dispatch-software/docs/MARKETPLACES-AND-BIDDING
+title: DispatchOS Freight Marketplaces & Bidding Guide
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # DispatchOS Freight Marketplaces & Bidding Guide
 
 This guide outlines where to source freight loads (for bidding) and where to acquire owner-operators (for dispatching).

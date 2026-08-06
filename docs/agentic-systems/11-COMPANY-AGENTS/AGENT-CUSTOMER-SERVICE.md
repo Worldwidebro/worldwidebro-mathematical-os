@@ -1,20 +1,21 @@
 ---
-id: agent-customer-service
-type: document
-name: AGENT CUSTOMER SERVICE
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 0.8
-freshness: unverified
+name: docs/agentic-systems/11-COMPANY-AGENTS/AGENT-CUSTOMER-SERVICE
+desc: ...
 tags:
   - status/active
   - knowledge/unverified
+id: agent-customer-service
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 0.8
+freshness: unverified
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# AGENT CUSTOMER SERVICE
+# docs/agentic-systems/11-COMPANY-AGENTS/AGENT-CUSTOMER-SERVICE
 
 ## Purpose
 This document provides the conceptual and technical details for **AGENT CUSTOMER SERVICE** within the Agentic Systems Academy.

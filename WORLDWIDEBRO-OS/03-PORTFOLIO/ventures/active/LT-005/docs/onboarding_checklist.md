@@ -1,3 +1,13 @@
+---
+name: WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/LT-005/docs/onboarding_checklist
+title: 'Onboarding & Setup Checklist: Medical Courier Dispatch (LT-005)'
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Onboarding & Setup Checklist: Medical Courier Dispatch (LT-005)
 
 - [ ] **Phase 1: Legal & Structural**

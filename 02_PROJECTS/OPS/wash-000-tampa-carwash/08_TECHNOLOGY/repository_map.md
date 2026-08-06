@@ -1,3 +1,13 @@
+---
+name: 02_PROJECTS/OPS/wash-000-tampa-carwash/08_TECHNOLOGY/repository_map
+title: 'Technology Map: Tampa Carwash'
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Technology Map: Tampa Carwash
 Required Capabilities: api, database, authentication
 

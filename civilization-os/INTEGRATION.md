@@ -1,3 +1,13 @@
+---
+name: civilization-os/INTEGRATION
+title: Civilization OS — Repository Integration Map
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Civilization OS — Repository Integration Map
 
 ## Repository Tiers

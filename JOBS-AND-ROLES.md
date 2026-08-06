@@ -1,3 +1,13 @@
+---
+name: JOBS-AND-ROLES
+title: '👥 JOBS AND ROLES: HUMAN-AGENT SYSTEM DIRECTORY'
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # 👥 JOBS AND ROLES: HUMAN-AGENT SYSTEM DIRECTORY
 
 This document details the mapping of **Human Leadership Roles**, **AI Agent Roles**, and **System Intelligence Capabilities** across the AVS holding company.

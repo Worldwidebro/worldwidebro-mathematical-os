@@ -1,3 +1,13 @@
+---
+name: WORLDWIDEBRO-OS/REGISTRIES/REPOSITORY-INTELLIGENCE-INDEX
+title: Repository Intelligence System - Master Index
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Repository Intelligence System - Master Index
 
 **Central hub for turning 1,400+ repositories into strategic knowledge**

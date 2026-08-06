@@ -1,20 +1,21 @@
 ---
-id: ai-boss-resource-allocation
-type: document
-name: AI BOSS RESOURCE ALLOCATION
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: proprietary
-confidence: 1.0
-freshness: current
+name: docs/agentic-systems/ai-boss/AI-BOSS-RESOURCE-ALLOCATION
+desc: ...
 tags:
   - status/active
   - knowledge/current
+id: ai-boss-resource-allocation
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: proprietary
+confidence: 1.0
+freshness: current
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# AI BOSS RESOURCE ALLOCATION
+# docs/agentic-systems/ai-boss/AI-BOSS-RESOURCE-ALLOCATION
 ## Purpose
 Document the capital and computational resource allocation policies of the holdings network.
 

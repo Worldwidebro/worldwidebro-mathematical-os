@@ -1,3 +1,13 @@
+---
+name: 02_PROJECTS/LT/lt-011-dispatch-software/GAPS_AND_BLOCKERS
+title: Gaps & Blockers
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Gaps & Blockers
 
 ## Critical (Blocks Revenue)

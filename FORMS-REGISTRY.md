@@ -1,8 +1,12 @@
 ---
+name: FORMS-REGISTRY
 title: AI Boss OS — Master Form Registry
+desc: ...
 version: 1.0
 date: 2026-07-30
 applies: All 712 ventures + AI agent routing
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
 ---
 
 # AI Boss OS — Master Form Registry

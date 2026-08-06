@@ -1,20 +1,21 @@
 ---
-id: agent-telemetry
-type: document
-name: AGENT TELEMETRY
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 0.8
-freshness: unverified
+name: docs/agentic-systems/09-EVALUATION-OBSERVABILITY/AGENT-TELEMETRY
+desc: ...
 tags:
   - status/active
   - knowledge/unverified
+id: agent-telemetry
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 0.8
+freshness: unverified
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# AGENT TELEMETRY
+# docs/agentic-systems/09-EVALUATION-OBSERVABILITY/AGENT-TELEMETRY
 
 ## Purpose
 This document provides the conceptual and technical details for **AGENT TELEMETRY** within the Agentic Systems Academy.

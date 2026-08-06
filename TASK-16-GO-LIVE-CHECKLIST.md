@@ -1,3 +1,13 @@
+---
+name: TASK-16-GO-LIVE-CHECKLIST
+title: 'Task 16: Go-Live Checklist (Deploy to Vercel)'
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Task 16: Go-Live Checklist (Deploy to Vercel)
 **Date**: 2026-05-14  
 **Target Launch**: Week 2 (May 20-24)  

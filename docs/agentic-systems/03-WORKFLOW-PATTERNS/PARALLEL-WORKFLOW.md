@@ -1,20 +1,21 @@
 ---
-id: parallel-workflow
-type: document
-name: PARALLEL WORKFLOW
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 1.0
-freshness: current
+name: docs/agentic-systems/03-WORKFLOW-PATTERNS/PARALLEL-WORKFLOW
+desc: ...
 tags:
   - status/active
   - knowledge/current
+id: parallel-workflow
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 1.0
+freshness: current
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# PARALLEL WORKFLOW
+# docs/agentic-systems/03-WORKFLOW-PATTERNS/PARALLEL-WORKFLOW
 ## Purpose
 Detail parallel execution models (Fork-Join / Map-Reduce) in workflow design.
 

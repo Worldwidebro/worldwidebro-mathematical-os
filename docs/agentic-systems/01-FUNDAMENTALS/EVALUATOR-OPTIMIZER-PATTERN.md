@@ -1,20 +1,21 @@
 ---
-id: evaluator-optimizer-pattern
-type: document
-name: EVALUATOR OPTIMIZER PATTERN
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 0.8
-freshness: unverified
+name: docs/agentic-systems/01-FUNDAMENTALS/EVALUATOR-OPTIMIZER-PATTERN
+desc: ...
 tags:
   - status/active
   - knowledge/unverified
+id: evaluator-optimizer-pattern
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 0.8
+freshness: unverified
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# EVALUATOR OPTIMIZER PATTERN
+# docs/agentic-systems/01-FUNDAMENTALS/EVALUATOR-OPTIMIZER-PATTERN
 
 ## Purpose
 This document provides the conceptual and technical details for **EVALUATOR OPTIMIZER PATTERN** within the Agentic Systems Academy.

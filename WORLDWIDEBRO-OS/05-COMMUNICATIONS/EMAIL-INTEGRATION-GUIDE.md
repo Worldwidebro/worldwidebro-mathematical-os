@@ -1,3 +1,13 @@
+---
+name: WORLDWIDEBRO-OS/05-COMMUNICATIONS/EMAIL-INTEGRATION-GUIDE
+title: Email Revenue Loop Integration Guide
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Email Revenue Loop Integration Guide
 
 **Status:** Branded email template created, ready for Resend + Hermes integration  

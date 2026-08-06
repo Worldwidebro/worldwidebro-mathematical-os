@@ -1,3 +1,13 @@
+---
+name: WORLDWIDEBRO-OS/06-PARTNERS/ONBOARDING-PLAYBOOK
+title: Partner Onboarding Playbook
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Partner Onboarding Playbook
 
 ## Week 1: Activation

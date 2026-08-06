@@ -1,20 +1,21 @@
 ---
-id: agent-resource-allocation
-type: document
-name: AGENT RESOURCE ALLOCATION
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 0.8
-freshness: unverified
+name: docs/agentic-systems/11-COMPANY-AGENTS/AGENT-RESOURCE-ALLOCATION
+desc: ...
 tags:
   - status/active
   - knowledge/unverified
+id: agent-resource-allocation
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 0.8
+freshness: unverified
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# AGENT RESOURCE ALLOCATION
+# docs/agentic-systems/11-COMPANY-AGENTS/AGENT-RESOURCE-ALLOCATION
 
 ## Purpose
 This document provides the conceptual and technical details for **AGENT RESOURCE ALLOCATION** within the Agentic Systems Academy.

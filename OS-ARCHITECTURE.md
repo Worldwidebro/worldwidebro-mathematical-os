@@ -1,11 +1,15 @@
 ---
+name: OS-ARCHITECTURE
 title: Worldwidebro OS Architecture
+desc: ...
 version: 1.0
 date: 2026-07-31
 scope: All 712 ventures inherit from 50+ reusable OS platforms
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
 ---
 
-# Operating System (OS) Architecture
+# Worldwidebro OS Architecture
 
 **Philosophy**: Build 50+ reusable domain-specific platforms once, inherit everywhere. Each OS solves one problem (finance, sales, staffing, construction, etc.). Ventures compose OS platforms instead of building from scratch.
 

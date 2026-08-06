@@ -1,20 +1,21 @@
 ---
-id: vector-search
-type: document
-name: VECTOR SEARCH
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 0.8
-freshness: unverified
+name: docs/agentic-systems/04-MEMORY-KNOWLEDGE/VECTOR-SEARCH
+desc: ...
 tags:
   - status/active
   - knowledge/unverified
+id: vector-search
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 0.8
+freshness: unverified
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# VECTOR SEARCH
+# docs/agentic-systems/04-MEMORY-KNOWLEDGE/VECTOR-SEARCH
 
 ## Purpose
 This document provides the conceptual and technical details for **VECTOR SEARCH** within the Agentic Systems Academy.

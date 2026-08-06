@@ -1,3 +1,13 @@
+---
+name: WORLDWIDEBRO-OS/REGISTRIES/repo-classification-prompts-v2
+title: Repository Classification Framework (7 Layers + Vocabulary)
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Repository Classification Framework (7 Layers + Vocabulary)
 
 **System for classifying 1,400+ repositories into strategic intelligence layers**

@@ -1,3 +1,13 @@
+---
+name: agent-platform-os/README
+title: Agent Platform OS
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Agent Platform OS
 
 Agent dispatch engine for task routing, queue management, and real-time coordination (Phase 2).

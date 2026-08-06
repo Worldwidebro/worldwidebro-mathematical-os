@@ -1,20 +1,21 @@
 ---
-id: agent-sales
-type: document
-name: AGENT SALES
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 0.8
-freshness: unverified
+name: docs/agentic-systems/11-COMPANY-AGENTS/AGENT-SALES
+desc: ...
 tags:
   - status/active
   - knowledge/unverified
+id: agent-sales
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 0.8
+freshness: unverified
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# AGENT SALES
+# docs/agentic-systems/11-COMPANY-AGENTS/AGENT-SALES
 
 ## Purpose
 This document provides the conceptual and technical details for **AGENT SALES** within the Agentic Systems Academy.

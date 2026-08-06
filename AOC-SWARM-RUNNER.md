@@ -1,3 +1,13 @@
+---
+name: AOC-SWARM-RUNNER
+title: 'AOC SWARM RUNNER: Execution Layer Architecture'
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # AOC SWARM RUNNER: Execution Layer Architecture
 
 **Status:** Ready to build  

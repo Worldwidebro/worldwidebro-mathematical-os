@@ -1,3 +1,13 @@
+---
+name: HRMS-PAPERCLIP-WORKFLOWS
+title: HRMS — Paperclip Workflow Automation
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # HRMS — Paperclip Workflow Automation
 **Status**: Ready to configure  
 **Purpose**: Automate sales process, customer onboarding, and support workflows in Paperclip  

@@ -1,3 +1,13 @@
+---
+name: progress
+title: 'GO-TO-MARKET EXECUTION: Progress Log'
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # GO-TO-MARKET EXECUTION: Progress Log
 
 **Project Start:** 2026-05-08

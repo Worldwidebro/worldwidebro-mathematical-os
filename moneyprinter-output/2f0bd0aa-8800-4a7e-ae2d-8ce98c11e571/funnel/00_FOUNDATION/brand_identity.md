@@ -1,3 +1,13 @@
+---
+name: moneyprinter-output/2f0bd0aa-8800-4a7e-ae2d-8ce98c11e571/funnel/00_FOUNDATION/brand_identity
+title: Brand Identity — Contractor Network
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Brand Identity — Contractor Network
 
 ## Positioning

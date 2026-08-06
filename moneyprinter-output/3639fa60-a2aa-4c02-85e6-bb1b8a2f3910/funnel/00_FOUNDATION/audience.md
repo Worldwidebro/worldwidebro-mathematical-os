@@ -1,3 +1,13 @@
+---
+name: moneyprinter-output/3639fa60-a2aa-4c02-85e6-bb1b8a2f3910/funnel/00_FOUNDATION/audience
+title: Target Audience — CON-006 Workforce Management
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Target Audience — CON-006 Workforce Management
 
 ## Who they are

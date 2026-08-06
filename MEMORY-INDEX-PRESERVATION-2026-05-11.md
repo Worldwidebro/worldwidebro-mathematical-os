@@ -1,3 +1,13 @@
+---
+name: MEMORY-INDEX-PRESERVATION-2026-05-11
+title: Memory Index & Session Closure — 2026-05-11
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Memory Index & Session Closure — 2026-05-11
 
 **Purpose:** Preserve context so you can close this chat and reopen next session with full state recovered.

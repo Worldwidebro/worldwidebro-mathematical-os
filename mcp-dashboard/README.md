@@ -1,3 +1,13 @@
+---
+name: mcp-dashboard/README
+title: 🚀 MCP Dashboard — LOCAL TESTING (NO CONVEX, NO DEPLOYMENT)
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # 🚀 MCP Dashboard — LOCAL TESTING (NO CONVEX, NO DEPLOYMENT)
 
 A standalone React + Vite dashboard for testing MCP servers locally before production deployment.

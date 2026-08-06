@@ -1,3 +1,13 @@
+---
+name: 100-QUESTIONS-CAPITAL-ALLOCATION
+title: '100 QUESTIONS: CAPITAL ALLOCATION INTELLIGENCE'
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # 100 QUESTIONS: CAPITAL ALLOCATION INTELLIGENCE
 
 **Framework:** Systems-level capital allocation for 712 ventures + 1,592 repos  

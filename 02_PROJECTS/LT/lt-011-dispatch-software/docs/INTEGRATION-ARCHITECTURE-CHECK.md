@@ -1,3 +1,13 @@
+---
+name: 02_PROJECTS/LT/lt-011-dispatch-software/docs/INTEGRATION-ARCHITECTURE-CHECK
+title: OSS Integration Architecture Compatibility Check
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # OSS Integration Architecture Compatibility Check
 
 This document audits the compatibility of the `oss_integration_pipeline` workflow against the rest of the Worldwidebro OS files, folders, sectors, and operational systems.

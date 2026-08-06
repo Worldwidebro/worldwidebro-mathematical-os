@@ -1,3 +1,13 @@
+---
+name: mathematical-os/docs/PHASE-2
+title: 'Mathematical OS — Phase 2: Formula Engine'
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Mathematical OS — Phase 2: Formula Engine
 
 **Status:** Complete (Round 2 MVP)  

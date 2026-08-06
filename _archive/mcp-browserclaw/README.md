@@ -1,3 +1,13 @@
+---
+name: _archive/mcp-browserclaw/README
+title: [ARCHIVED]
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # [ARCHIVED]
 This repository has been archived as part of Phase 2 OS consolidation.
 All scaffolding templates have been moved to central template system.

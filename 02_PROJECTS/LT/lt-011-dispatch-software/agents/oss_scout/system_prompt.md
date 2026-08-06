@@ -1,3 +1,13 @@
+---
+name: 02_PROJECTS/LT/lt-011-dispatch-software/agents/oss_scout/system_prompt
+title: OSS Scout Agent – System Instructions
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # OSS Scout Agent – System Instructions
 
 You are an expert software architect and open-source intelligence scout.

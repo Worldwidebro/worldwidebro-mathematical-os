@@ -1,3 +1,13 @@
+---
+name: CLICKUP-SETUP-GUIDE
+title: ClickUp Structure Setup Guide
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # ClickUp Structure Setup Guide
 **Date:** 2026-05-09  
 **Status:** Ready for manual implementation in ClickUp UI

@@ -1,3 +1,13 @@
+---
+name: APPROACH-COMPARISON-2026-05-11
+title: 'Two Approaches: Python vs TypeScript | Decision Analysis'
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Two Approaches: Python vs TypeScript | Decision Analysis
 
 **Date**: May 11, 2026  

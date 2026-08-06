@@ -1,14 +1,17 @@
 ---
-id: agent-evaluation-for-long-horizon-work
-name: "Evaluating Agents on Long-Horizon Office Workflows"
-publisher: "AI Safety & Evaluation Consortium"
-year: 2026
+name: research/agentic-enterprise/16-AGENT-EVALUATION-FOR-LONG-HORIZON-WORK
+desc: ...
 tags:
   - evaluation
   - benchmarks
   - long-horizon
+id: agent-evaluation-for-long-horizon-work
+publisher: "AI Safety & Evaluation Consortium"
+year: 2026
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
 ---
 
-# Evaluating Agents on Long-Horizon Workflows (2026)
+# research/agentic-enterprise/16-AGENT-EVALUATION-FOR-LONG-HORIZON-WORK
 
 Details standard methodologies to test agent accuracy across email, document processing, and vector queries.

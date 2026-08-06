@@ -1,20 +1,21 @@
 ---
-id: ai-boss-agent-role-system
-type: document
-name: AI BOSS AGENT ROLE SYSTEM
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: proprietary
-confidence: 1.0
-freshness: current
+name: docs/agentic-systems/ai-boss/AI-BOSS-AGENT-ROLE-SYSTEM
+desc: ...
 tags:
   - status/active
   - knowledge/current
+id: ai-boss-agent-role-system
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: proprietary
+confidence: 1.0
+freshness: current
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# AI BOSS AGENT ROLE SYSTEM
+# docs/agentic-systems/ai-boss/AI-BOSS-AGENT-ROLE-SYSTEM
 ## Purpose
 Define the roles, scopes, and instructions governing different tiers of agents.
 

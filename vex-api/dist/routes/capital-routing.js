@@ -242,7 +242,7 @@ capitalRoutingRouter.post('/deploy', async (req, res) => {
                 deployment_ids,
                 timestamp: new Date().toISOString(),
             };
-            execSync(`python3 /Users/acebless/Documents/venture_loop.py --deploy '${JSON.stringify(loop_payload)}'`, { stdio: 'pipe' });
+            execSync(`/Users/acebless/Documents/.fractal-venv/bin/python /Users/acebless/Documents/venture_loop.py --deploy '${JSON.stringify(loop_payload)}'`, { stdio: 'pipe' });
             console.log(`[VENTURE-LOOP] Triggered for decision ${decision_id}`);
         }
         catch (loopError) {
@@ -350,6 +350,7 @@ capitalRoutingRouter.post('/feedback', async (req, res) => {
         try {
             const feedback_payload = {
                 deployment_id,
+                decision_id: deployment.decision_id,
                 venture_id: deployment.venture_id,
                 opco_name: deployment.opco_name,
                 amount_deployed: deployment.amount_deployed,
@@ -360,7 +361,7 @@ capitalRoutingRouter.post('/feedback', async (req, res) => {
                 error_msg,
                 timestamp: new Date().toISOString(),
             };
-            execSync(`python3 /Users/acebless/Documents/01_loop_feedback_collector.py --feedback '${JSON.stringify(feedback_payload)}'`, { stdio: 'pipe' });
+            execSync(`/Users/acebless/Documents/.fractal-venv/bin/python /Users/acebless/Documents/01_loop_feedback_collector.py --feedback '${JSON.stringify(feedback_payload)}'`, { stdio: 'pipe' });
             console.log(`[FEEDBACK] Recorded for ${deployment_id}: ${accuracy_pct.toFixed(1)}% accuracy`);
         }
         catch (feedbackError) {

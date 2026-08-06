@@ -1,20 +1,21 @@
 ---
-id: self-reflection
-type: document
-name: SELF REFLECTION
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 0.8
-freshness: unverified
+name: docs/agentic-systems/07-REASONING-DECISION/SELF-REFLECTION
+desc: ...
 tags:
   - status/active
   - knowledge/unverified
+id: self-reflection
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 0.8
+freshness: unverified
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# SELF REFLECTION
+# docs/agentic-systems/07-REASONING-DECISION/SELF-REFLECTION
 
 ## Purpose
 This document provides the conceptual and technical details for **SELF REFLECTION** within the Agentic Systems Academy.

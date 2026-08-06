@@ -1,20 +1,21 @@
 ---
-id: loop-workflow
-type: document
-name: LOOP WORKFLOW
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 1.0
-freshness: current
+name: docs/agentic-systems/03-WORKFLOW-PATTERNS/LOOP-WORKFLOW
+desc: ...
 tags:
   - status/active
   - knowledge/current
+id: loop-workflow
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 1.0
+freshness: current
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# LOOP WORKFLOW
+# docs/agentic-systems/03-WORKFLOW-PATTERNS/LOOP-WORKFLOW
 ## Purpose
 Detail cyclic workflow logic, allowing loops for validation, self-correction, and retry policies.
 

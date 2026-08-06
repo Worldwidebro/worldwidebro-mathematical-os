@@ -1,3 +1,13 @@
+---
+name: HRMS-SECTOR-CREWS
+title: HRMS Sector Crews & Team Organization
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # HRMS Sector Crews & Team Organization
 
 **Target**: May 13-20, 2026 (Parallel to blockers)  

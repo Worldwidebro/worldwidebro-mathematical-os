@@ -1,20 +1,21 @@
 ---
-id: case-study-pydantic-ai
-type: document
-name: CASE STUDY PYDANTIC AI
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 0.8
-freshness: unverified
+name: docs/agentic-systems/12-CASE-STUDIES/CASE-STUDY-PYDANTIC-AI
+desc: ...
 tags:
   - status/active
   - knowledge/unverified
+id: case-study-pydantic-ai
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 0.8
+freshness: unverified
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# CASE STUDY PYDANTIC AI
+# docs/agentic-systems/12-CASE-STUDIES/CASE-STUDY-PYDANTIC-AI
 
 ## Purpose
 This document provides the conceptual and technical details for **CASE STUDY PYDANTIC AI** within the Agentic Systems Academy.

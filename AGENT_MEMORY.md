@@ -1,8 +1,12 @@
 ---
+name: AGENT_MEMORY
 title: Agent Memory Architecture
+desc: ...
 version: 1.0
 date: 2026-07-30
 companion: [[AGENT-BRACKET-STANDARD.md]], [[AGENT_SPEC.md]]
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
 ---
 
 # Agent Memory Architecture

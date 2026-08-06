@@ -1,3 +1,13 @@
+---
+name: WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/CON-001/docs/VENTURE-COMPLIANCE-FORM
+title: 'Venture Compliance & Agent Governance Form: Ace Construction'
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Venture Compliance & Agent Governance Form: Ace Construction
 
 ## 1. Credentials & Secrets Compliance

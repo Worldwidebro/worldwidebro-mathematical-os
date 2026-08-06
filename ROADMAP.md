@@ -1,3 +1,13 @@
+---
+name: ROADMAP
+title: WorldwideBro Construction OS — 245-Page Implementation Roadmap
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # WorldwideBro Construction OS — 245-Page Implementation Roadmap
 
 **Status:** PHASE 1 IN PROGRESS (50% complete)  

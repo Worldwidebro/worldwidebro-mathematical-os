@@ -1,23 +1,24 @@
 ---
+name: docs/agentic-systems/09-EVALUATION-OBSERVABILITY/AGENT-EVALUATION
+desc: ...
+tags:
+  - status/active
+  - knowledge/current
 id: agent-evaluation
 type: document
-name: AGENT EVALUATION
 status: active
 owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
 source: planning
 confidence: 1.0
 freshness: current
 aliases:
   - "Agent Evals"
   - "Trajectory Scoring"
-tags:
-  - status/active
-  - knowledge/current
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# AGENT EVALUATION
+# docs/agentic-systems/09-EVALUATION-OBSERVABILITY/AGENT-EVALUATION
 ## Purpose
 Outline evaluation methodologies for agent performance, planning quality, and tool selection accuracy.
 

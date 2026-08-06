@@ -1,20 +1,21 @@
 ---
-id: graph-rag
-type: document
-name: GRAPH RAG
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 0.8
-freshness: unverified
+name: docs/agentic-systems/04-MEMORY-KNOWLEDGE/GRAPH-RAG
+desc: ...
 tags:
   - status/active
   - knowledge/unverified
+id: graph-rag
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 0.8
+freshness: unverified
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# GRAPH RAG
+# docs/agentic-systems/04-MEMORY-KNOWLEDGE/GRAPH-RAG
 
 ## Purpose
 This document provides the conceptual and technical details for **GRAPH RAG** within the Agentic Systems Academy.

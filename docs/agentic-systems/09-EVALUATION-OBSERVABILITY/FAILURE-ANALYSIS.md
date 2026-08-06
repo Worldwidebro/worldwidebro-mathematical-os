@@ -1,20 +1,21 @@
 ---
-id: failure-analysis
-type: document
-name: FAILURE ANALYSIS
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 0.8
-freshness: unverified
+name: docs/agentic-systems/09-EVALUATION-OBSERVABILITY/FAILURE-ANALYSIS
+desc: ...
 tags:
   - status/active
   - knowledge/unverified
+id: failure-analysis
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 0.8
+freshness: unverified
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# FAILURE ANALYSIS
+# docs/agentic-systems/09-EVALUATION-OBSERVABILITY/FAILURE-ANALYSIS
 
 ## Purpose
 This document provides the conceptual and technical details for **FAILURE ANALYSIS** within the Agentic Systems Academy.

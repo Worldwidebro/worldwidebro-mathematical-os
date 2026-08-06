@@ -1,23 +1,24 @@
 ---
+name: docs/agentic-systems/01-FUNDAMENTALS/AGENT-LOOP
+desc: ...
+tags:
+  - status/active
+  - knowledge/current
 id: agent-loop
 type: document
-name: AGENT LOOP
 status: active
 owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
 source: planning
 confidence: 1.0
 freshness: current
 aliases:
   - "Cognitive Loop"
   - "Sense-Plan-Act Loop"
-tags:
-  - status/active
-  - knowledge/current
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# AGENT LOOP
+# docs/agentic-systems/01-FUNDAMENTALS/AGENT-LOOP
 ## Purpose
 Outline the fundamental control loop governing agentic action: OBSERVE -> THINK -> PLAN -> ACT -> OBSERVE.
 

@@ -1,23 +1,24 @@
 ---
+name: docs/agentic-systems/04-MEMORY-KNOWLEDGE/MEMORY-ARCHITECTURE
+desc: ...
+tags:
+  - status/active
+  - knowledge/current
 id: memory-architecture
 type: document
-name: MEMORY ARCHITECTURE
 status: active
 owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
 source: planning
 confidence: 1.0
 freshness: current
 aliases:
   - "Episodic Memory"
   - "Semantic Graph"
-tags:
-  - status/active
-  - knowledge/current
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# MEMORY ARCHITECTURE
+# docs/agentic-systems/04-MEMORY-KNOWLEDGE/MEMORY-ARCHITECTURE
 ## Purpose
 Provide a comprehensive blueprint of agent memory systems, outlining storage, indexing, and compaction layers.
 

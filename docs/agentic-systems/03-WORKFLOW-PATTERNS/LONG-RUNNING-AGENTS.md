@@ -1,20 +1,21 @@
 ---
-id: long-running-agents
-type: document
-name: LONG RUNNING AGENTS
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 0.8
-freshness: unverified
+name: docs/agentic-systems/03-WORKFLOW-PATTERNS/LONG-RUNNING-AGENTS
+desc: ...
 tags:
   - status/active
   - knowledge/unverified
+id: long-running-agents
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 0.8
+freshness: unverified
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# LONG RUNNING AGENTS
+# docs/agentic-systems/03-WORKFLOW-PATTERNS/LONG-RUNNING-AGENTS
 
 ## Purpose
 This document provides the conceptual and technical details for **LONG RUNNING AGENTS** within the Agentic Systems Academy.

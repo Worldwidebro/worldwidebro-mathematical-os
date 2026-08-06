@@ -1,3 +1,13 @@
+---
+name: realestate-os/DESIGN-PROMPTS-ALIGNED
+title: RE-OS Design Prompts Reorganized
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # RE-OS Design Prompts Reorganized
 **100 design briefs → Aligned to 3 unified portals + shared foundation**
 

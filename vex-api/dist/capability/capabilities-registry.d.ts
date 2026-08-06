@@ -1,4 +1,4 @@
-import { Neo4jDriver } from 'neo4j-driver';
+import { Driver as Neo4jDriver } from 'neo4j-driver';
 /**
  * Phase 3 Capabilities Registry
  *
@@ -28,10 +28,7 @@ export declare class CapabilitiesRegistry {
      */
     getCapabilitiesByCategory(category: string): Capability[];
     /**
-     * Query Neo4j for dynamic capabilities (if extended later)
-     * For now, returns seed capabilities
-     *
-     * Phase 4: Load from graph on-demand
+     * Query Neo4j for dynamic capabilities loaded from the graph
      */
     getDynamicCapabilities(): Promise<Capability[]>;
     /**

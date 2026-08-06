@@ -1,20 +1,21 @@
 ---
-id: ai-boss-tool-registry
-type: document
-name: AI BOSS TOOL REGISTRY
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: proprietary
-confidence: 1.0
-freshness: current
+name: docs/agentic-systems/ai-boss/AI-BOSS-TOOL-REGISTRY
+desc: ...
 tags:
   - status/active
   - knowledge/current
+id: ai-boss-tool-registry
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: proprietary
+confidence: 1.0
+freshness: current
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# AI BOSS TOOL REGISTRY
+# docs/agentic-systems/ai-boss/AI-BOSS-TOOL-REGISTRY
 ## Purpose
 Catalog all core tools available to agents, mapping them to specific MCP servers or local scripts.
 

@@ -1,20 +1,21 @@
 ---
-id: case-study-microsoft-agent-framework
-type: document
-name: CASE STUDY MICROSOFT AGENT FRAMEWORK
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 0.8
-freshness: unverified
+name: docs/agentic-systems/12-CASE-STUDIES/CASE-STUDY-MICROSOFT-AGENT-FRAMEWORK
+desc: ...
 tags:
   - status/active
   - knowledge/unverified
+id: case-study-microsoft-agent-framework
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 0.8
+freshness: unverified
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# CASE STUDY MICROSOFT AGENT FRAMEWORK
+# docs/agentic-systems/12-CASE-STUDIES/CASE-STUDY-MICROSOFT-AGENT-FRAMEWORK
 
 ## Purpose
 This document provides the conceptual and technical details for **CASE STUDY MICROSOFT AGENT FRAMEWORK** within the Agentic Systems Academy.

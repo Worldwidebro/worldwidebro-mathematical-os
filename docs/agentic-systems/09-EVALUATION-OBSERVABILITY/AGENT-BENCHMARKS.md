@@ -1,20 +1,21 @@
 ---
-id: agent-benchmarks
-type: document
-name: AGENT BENCHMARKS
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 0.8
-freshness: unverified
+name: docs/agentic-systems/09-EVALUATION-OBSERVABILITY/AGENT-BENCHMARKS
+desc: ...
 tags:
   - status/active
   - knowledge/unverified
+id: agent-benchmarks
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 0.8
+freshness: unverified
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# AGENT BENCHMARKS
+# docs/agentic-systems/09-EVALUATION-OBSERVABILITY/AGENT-BENCHMARKS
 
 ## Purpose
 This document provides the conceptual and technical details for **AGENT BENCHMARKS** within the Agentic Systems Academy.

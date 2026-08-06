@@ -1,3 +1,13 @@
+---
+name: starred-repos-capabilities
+title: 🧠 STARRED REPOS CAPABILITIES MAP
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # 🧠 STARRED REPOS CAPABILITIES MAP
 **Status:** Phase 1 - Knowledge Graph Ingestion  
 **Date:** 2026-05-10  

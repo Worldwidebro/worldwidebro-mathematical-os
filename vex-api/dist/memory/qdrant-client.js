@@ -144,7 +144,7 @@ export class QdrantClient {
                     filter: {
                         must: [
                             {
-                                field: 'task_id',
+                                key: 'task_id',
                                 match: { value: taskId },
                             },
                         ],
@@ -165,7 +165,8 @@ export class QdrantClient {
      */
     async health() {
         try {
-            const res = await fetch(`${this.baseUrl}/health`);
+            // ponytail: Qdrant serves liveness at /healthz, not /health
+            const res = await fetch(`${this.baseUrl}/healthz`);
             return res.ok;
         }
         catch {

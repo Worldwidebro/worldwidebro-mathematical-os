@@ -1,20 +1,21 @@
 ---
-id: latency-observability
-type: document
-name: LATENCY OBSERVABILITY
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 0.8
-freshness: unverified
+name: docs/agentic-systems/09-EVALUATION-OBSERVABILITY/LATENCY-OBSERVABILITY
+desc: ...
 tags:
   - status/active
   - knowledge/unverified
+id: latency-observability
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 0.8
+freshness: unverified
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# LATENCY OBSERVABILITY
+# docs/agentic-systems/09-EVALUATION-OBSERVABILITY/LATENCY-OBSERVABILITY
 
 ## Purpose
 This document provides the conceptual and technical details for **LATENCY OBSERVABILITY** within the Agentic Systems Academy.

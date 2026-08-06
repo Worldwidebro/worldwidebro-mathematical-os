@@ -1,3 +1,13 @@
+---
+name: VENTURE-DEFINITIONS
+title: Worldwidebro Holdings — Venture Definitions & Repository
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Worldwidebro Holdings — Venture Definitions & Repository
 
 **Total Ventures**: 1,088 (892 seeded + 1 Onboarding template)  

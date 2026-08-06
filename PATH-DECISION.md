@@ -1,3 +1,13 @@
+---
+name: PATH-DECISION
+title: 'PATH DECISION: Manual Revenue vs Automated Execution'
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # PATH DECISION: Manual Revenue vs Automated Execution
 
 **Context:** You've built everything. 708 ventures ready. 554 agents defined. 4,977 tasks queued. Now the question: what do we execute?

@@ -1,3 +1,13 @@
+---
+name: HRMS-EXECUTION-START
+title: 'HRMS Execution Starter: Crews + Acquisition + Marketing'
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # HRMS Execution Starter: Crews + Acquisition + Marketing
 
 **Status**: Ready to execute (May 13, 2026)  

@@ -1,3 +1,13 @@
+---
+name: WORLDWIDEBRO/06_WORLD-MODEL/WORLD-DATA-MODEL
+title: WORLDWIDEBRO WORLD DATA MODEL
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # WORLDWIDEBRO WORLD DATA MODEL
 ## 24 domains, structured for decision → action → outcome → learning
 

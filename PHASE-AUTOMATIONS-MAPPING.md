@@ -1,3 +1,13 @@
+---
+name: PHASE-AUTOMATIONS-MAPPING
+title: PHASE-AUTOMATIONS-MAPPING
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # PHASE-AUTOMATIONS-MAPPING
 
 **Date:** 2026-08-05 | **Purpose:** Map 28 Business Lifecycle phases to agents, skills, slash commands, automation schedules

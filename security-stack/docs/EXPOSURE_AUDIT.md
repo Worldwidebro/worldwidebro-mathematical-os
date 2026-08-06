@@ -1,3 +1,13 @@
+---
+name: security-stack/docs/EXPOSURE_AUDIT
+title: Exposure audit & remediation
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Exposure audit & remediation
 
 ## Already addressed in-repo

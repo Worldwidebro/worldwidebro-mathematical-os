@@ -1,3 +1,13 @@
+---
+name: 02_PROJECTS/LT/lt-011-dispatch-software/graphify-out/GRAPH_REPORT
+title: Graph Report - lt-011-dispatch-software  (2026-08-05)
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Graph Report - lt-011-dispatch-software  (2026-08-05)
 
 ## Corpus Check

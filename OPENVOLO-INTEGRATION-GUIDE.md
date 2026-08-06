@@ -1,3 +1,13 @@
+---
+name: OPENVOLO-INTEGRATION-GUIDE
+title: OpenVolo Integration Architecture
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # OpenVolo Integration Architecture
 
 **Status:** Live at http://localhost:3000  

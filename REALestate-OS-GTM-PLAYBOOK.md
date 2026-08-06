@@ -1,3 +1,13 @@
+---
+name: REALestate-OS-GTM-PLAYBOOK
+title: Real Estate OS — Phase 1 GTM Playbook
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Real Estate OS — Phase 1 GTM Playbook
 **Status:** Ready for Week 1 execution  
 **Owner:** Sales + Founder  

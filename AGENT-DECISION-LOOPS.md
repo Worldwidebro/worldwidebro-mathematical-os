@@ -1,3 +1,13 @@
+---
+name: AGENT-DECISION-LOOPS
+title: Agent Decision Loops — Automated Responses to Signals
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Agent Decision Loops — Automated Responses to Signals
 
 **Purpose**: Define how automations respond to real-time signals from HRMS execution  

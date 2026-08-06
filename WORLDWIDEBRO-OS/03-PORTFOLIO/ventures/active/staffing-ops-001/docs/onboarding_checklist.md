@@ -1,3 +1,13 @@
+---
+name: WORLDWIDEBRO-OS/03-PORTFOLIO/ventures/active/staffing-ops-001/docs/onboarding_checklist
+title: 'Onboarding & Setup Checklist: Ops Staffing (staffing-ops-001)'
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Onboarding & Setup Checklist: Ops Staffing (staffing-ops-001)
 
 - [ ] **Phase 1: Legal & Structural**

@@ -85,15 +85,30 @@ export class CapabilitiesRegistry {
         return SEED_CAPABILITIES.filter(c => c.category === category.toLowerCase());
     }
     /**
-     * Query Neo4j for dynamic capabilities (if extended later)
-     * For now, returns seed capabilities
-     *
-     * Phase 4: Load from graph on-demand
+     * Query Neo4j for dynamic capabilities loaded from the graph
      */
     async getDynamicCapabilities() {
-        // TODO: Query Neo4j Capability nodes
-        // For Phase 3, just return seeds
-        return SEED_CAPABILITIES;
+        const session = this.driver.session();
+        try {
+            const result = await session.run(`MATCH (c:Capability)
+         RETURN c.name as name, c.description as description, c.keywords as keywords, c.category as category`);
+            if (result.records.length === 0) {
+                return SEED_CAPABILITIES;
+            }
+            return result.records.map(r => ({
+                name: r.get('name'),
+                description: r.get('description') || '',
+                keywords: r.get('keywords') || [],
+                category: r.get('category') || 'general'
+            }));
+        }
+        catch (err) {
+            console.error('⚠️ Failed to get dynamic capabilities from Neo4j:', err);
+            return SEED_CAPABILITIES;
+        }
+        finally {
+            await session.close();
+        }
     }
     /**
      * Search capabilities by keyword

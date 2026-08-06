@@ -1,20 +1,21 @@
 ---
-id: semantic-memory
-type: document
-name: SEMANTIC MEMORY
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 0.8
-freshness: unverified
+name: docs/agentic-systems/04-MEMORY-KNOWLEDGE/SEMANTIC-MEMORY
+desc: ...
 tags:
   - status/active
   - knowledge/unverified
+id: semantic-memory
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 0.8
+freshness: unverified
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# SEMANTIC MEMORY
+# docs/agentic-systems/04-MEMORY-KNOWLEDGE/SEMANTIC-MEMORY
 
 ## Purpose
 This document provides the conceptual and technical details for **SEMANTIC MEMORY** within the Agentic Systems Academy.

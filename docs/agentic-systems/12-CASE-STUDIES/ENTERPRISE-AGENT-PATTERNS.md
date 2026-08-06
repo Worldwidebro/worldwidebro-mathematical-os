@@ -1,20 +1,21 @@
 ---
-id: enterprise-agent-patterns
-type: document
-name: ENTERPRISE AGENT PATTERNS
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 0.8
-freshness: unverified
+name: docs/agentic-systems/12-CASE-STUDIES/ENTERPRISE-AGENT-PATTERNS
+desc: ...
 tags:
   - status/active
   - knowledge/unverified
+id: enterprise-agent-patterns
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 0.8
+freshness: unverified
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# ENTERPRISE AGENT PATTERNS
+# docs/agentic-systems/12-CASE-STUDIES/ENTERPRISE-AGENT-PATTERNS
 
 ## Purpose
 This document provides the conceptual and technical details for **ENTERPRISE AGENT PATTERNS** within the Agentic Systems Academy.

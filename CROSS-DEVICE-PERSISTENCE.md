@@ -1,3 +1,13 @@
+---
+name: CROSS-DEVICE-PERSISTENCE
+title: Cross-Device Persistence Architecture
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Cross-Device Persistence Architecture
 
 **Updated**: 2026-07-30  

@@ -1,23 +1,24 @@
 ---
+name: docs/agentic-systems/06-MULTI-AGENT/MULTI-AGENT-FUNDAMENTALS
+desc: ...
+tags:
+  - status/active
+  - knowledge/current
 id: multi-agent-fundamentals
 type: document
-name: MULTI AGENT FUNDAMENTALS
 status: active
 owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
 source: planning
 confidence: 1.0
 freshness: current
 aliases:
   - "Multi-Agent Systems"
   - "MAS"
-tags:
-  - status/active
-  - knowledge/current
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# MULTI AGENT FUNDAMENTALS
+# docs/agentic-systems/06-MULTI-AGENT/MULTI-AGENT-FUNDAMENTALS
 ## Purpose
 Introduce Multi-Agent Systems (MAS), explaining coordination, communication, and state distribution.
 

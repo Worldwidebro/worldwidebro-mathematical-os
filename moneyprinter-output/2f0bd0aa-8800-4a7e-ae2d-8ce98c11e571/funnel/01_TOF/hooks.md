@@ -1,3 +1,13 @@
+---
+name: moneyprinter-output/2f0bd0aa-8800-4a7e-ae2d-8ce98c11e571/funnel/01_TOF/hooks
+title: TOF Hooks — Contractor Network
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # TOF Hooks — Contractor Network
 
 Viral / attention layer. **5–20s.** Hook first, minimal explanation.

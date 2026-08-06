@@ -1,3 +1,13 @@
+---
+name: 02_PROJECTS/OPS/operations-000-orlando-landscaping/08_TECHNOLOGY/repository_map
+title: 'Technology Map: Orlando Landscaping'
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Technology Map: Orlando Landscaping
 Required Capabilities: automation, scheduling, dashboard, workspace, crm
 

@@ -1,3 +1,13 @@
+---
+name: AI-BRAIN/ONTOLOGY
+title: WORLDWIDEBRO SEMANTIC ONTOLOGY v1.0
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # WORLDWIDEBRO SEMANTIC ONTOLOGY v1.0
 
 **Purpose:** Canonical vocabulary for Obsidian, Neo4j, agents, and all systems.  

@@ -1,9 +1,12 @@
 ---
+name: KNOWLEDGE-GRAPH-DASHBOARD
 title: Knowledge Graph Dashboard
-description: Live view of Week 0 venture entities and relationships
+desc: ...
 tags: graph, knowledge, ventures, dashboard, dataview
-created: 2026-05-14
+description: Live view of Week 0 venture entities and relationships
 last-updated: 2026-05-14
+created: 2026-05-14
+updated: 2026-08-06T05:46:10Z
 ---
 
 # Knowledge Graph Dashboard

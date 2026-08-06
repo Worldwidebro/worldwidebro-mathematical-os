@@ -1,3 +1,13 @@
+---
+name: templates/venture/docs/VENTURE-COMPLIANCE-FORM
+title: 'Venture Compliance & Agent Governance Form: {{VENTURE_NAME}}'
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Venture Compliance & Agent Governance Form: {{VENTURE_NAME}}
 
 ## 1. Credentials & Secrets Compliance

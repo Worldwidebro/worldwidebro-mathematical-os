@@ -1,20 +1,21 @@
 ---
-id: agent-roles
-type: document
-name: AGENT ROLES
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 0.8
-freshness: unverified
+name: docs/agentic-systems/06-MULTI-AGENT/AGENT-ROLES
+desc: ...
 tags:
   - status/active
   - knowledge/unverified
+id: agent-roles
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 0.8
+freshness: unverified
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# AGENT ROLES
+# docs/agentic-systems/06-MULTI-AGENT/AGENT-ROLES
 
 ## Purpose
 This document provides the conceptual and technical details for **AGENT ROLES** within the Agentic Systems Academy.

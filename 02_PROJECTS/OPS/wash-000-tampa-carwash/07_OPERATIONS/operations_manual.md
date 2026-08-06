@@ -1,3 +1,13 @@
+---
+name: 02_PROJECTS/OPS/wash-000-tampa-carwash/07_OPERATIONS/operations_manual
+title: 'Venture Operations Manual: Tampa Carwash'
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Venture Operations Manual: Tampa Carwash
 
 **Sector:** wash

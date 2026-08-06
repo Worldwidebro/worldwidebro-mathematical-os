@@ -1,20 +1,21 @@
 ---
-id: workflow-design
-type: document
-name: WORKFLOW DESIGN
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 1.0
-freshness: current
+name: docs/agentic-systems/03-WORKFLOW-PATTERNS/WORKFLOW-DESIGN
+desc: ...
 tags:
   - status/active
   - knowledge/current
+id: workflow-design
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 1.0
+freshness: current
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# WORKFLOW DESIGN
+# docs/agentic-systems/03-WORKFLOW-PATTERNS/WORKFLOW-DESIGN
 ## Purpose
 Introduce modular workflow design, showing how to compose complex systems using structured graph primitives.
 

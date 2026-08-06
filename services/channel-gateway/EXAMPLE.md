@@ -1,3 +1,13 @@
+---
+name: services/channel-gateway/EXAMPLE
+title: 'Channel Gateway Example: LT-005 Medical Courier'
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Channel Gateway Example: LT-005 Medical Courier
 
 ## Flow

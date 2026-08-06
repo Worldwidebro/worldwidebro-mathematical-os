@@ -1,20 +1,21 @@
 ---
-id: agent-delegation
-type: document
-name: AGENT DELEGATION
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 1.0
-freshness: current
+name: docs/agentic-systems/06-MULTI-AGENT/AGENT-DELEGATION
+desc: ...
 tags:
   - status/active
   - knowledge/current
+id: agent-delegation
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 1.0
+freshness: current
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# AGENT DELEGATION
+# docs/agentic-systems/06-MULTI-AGENT/AGENT-DELEGATION
 ## Purpose
 Explain the Delegation pattern, showing how parent agents spawn and monitor child agents without losing control.
 

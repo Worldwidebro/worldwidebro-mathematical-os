@@ -1,3 +1,13 @@
+---
+name: 02_PROJECTS/LT/lt-011-dispatch-software/docs/PRODUCT
+title: LT-011 — DispatchOS
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # LT-011 — DispatchOS
 
 ## Product Requirements Document (PRD)

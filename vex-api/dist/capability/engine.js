@@ -8,8 +8,8 @@ export class CapabilityEngine {
      * Returns sorted list by descending score
      */
     async rankCapabilities(taskDescription) {
-        // Get all seed capabilities
-        const capabilities = this.registry.getSeedCapabilities();
+        // Get all seed capabilities -> change to dynamic capabilities from Neo4j
+        const capabilities = await this.registry.getDynamicCapabilities();
         // Score each capability via text match
         const textScores = new Map();
         for (const cap of capabilities) {

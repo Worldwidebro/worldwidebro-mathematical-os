@@ -1,3 +1,13 @@
+---
+name: TAGGING-STANDARD
+title: Tagging Standard for 712 Ventures
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Tagging Standard for 712 Ventures
 
 **Version**: 1.0  

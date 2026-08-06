@@ -1,3 +1,13 @@
+---
+name: WORLDWIDEBRO/README
+title: WORLDWIDEBRO Operating System
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # WORLDWIDEBRO Operating System
 
 **The canonical structure for a $100M+ holding company with 712+ ventures, unified by one world model.**

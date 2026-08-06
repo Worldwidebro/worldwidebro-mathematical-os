@@ -1,3 +1,13 @@
+---
+name: moneyprinter-output/64df5998-36bb-4801-beb3-34088ab4bb3c/funnel/01_TOF/hooks
+title: TOF Hooks — Site Inspection Tech
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # TOF Hooks — Site Inspection Tech
 
 Viral / attention layer. **5–20s.** Hook first, minimal explanation.

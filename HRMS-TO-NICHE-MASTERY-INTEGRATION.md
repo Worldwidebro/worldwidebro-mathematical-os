@@ -1,3 +1,13 @@
+---
+name: HRMS-TO-NICHE-MASTERY-INTEGRATION
+title: HRMS → Niche Mastery OS Integration Map
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # HRMS → Niche Mastery OS Integration Map
 
 **Purpose**: Show how HRMS execution (May 14-27) feeds signals into meta-learning system  

@@ -1,3 +1,13 @@
+---
+name: WORLDWIDEBRO-OS/REGISTRIES/REPOSITORY-INTELLIGENCE-LEVELS
+title: Repository Intelligence Levels (L1–L7)
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Repository Intelligence Levels (L1–L7)
 
 **Principle:** Owning 1,400 repos ≠ having 1,400 repos as intelligence.  

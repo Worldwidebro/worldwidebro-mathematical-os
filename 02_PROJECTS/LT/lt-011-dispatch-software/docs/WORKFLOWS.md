@@ -1,3 +1,13 @@
+---
+name: 02_PROJECTS/LT/lt-011-dispatch-software/docs/WORKFLOWS
+title: DispatchOS Agentic Workflows
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # DispatchOS Agentic Workflows
 
 This document specifies the step-by-step logic, inputs, triggers, and state progressions for the core operational loops.

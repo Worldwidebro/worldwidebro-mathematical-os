@@ -1,20 +1,21 @@
 ---
-id: ai-boss-capability-graph
-type: document
-name: AI BOSS CAPABILITY GRAPH
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: proprietary
-confidence: 1.0
-freshness: current
+name: docs/agentic-systems/ai-boss/AI-BOSS-CAPABILITY-GRAPH
+desc: ...
 tags:
   - status/active
   - knowledge/current
+id: ai-boss-capability-graph
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: proprietary
+confidence: 1.0
+freshness: current
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# AI BOSS CAPABILITY GRAPH
+# docs/agentic-systems/ai-boss/AI-BOSS-CAPABILITY-GRAPH
 ## Purpose
 Document the Neo4j Graph schema mapping Repositories, Capabilities, and Ventures.
 

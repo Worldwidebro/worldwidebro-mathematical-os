@@ -1,3 +1,13 @@
+---
+name: HRMS-BUSINESS-LOGIC
+title: HRMS SaaS — Business Logic & Execution Plan
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # HRMS SaaS — Business Logic & Execution Plan
 **Status**: Pre-launch planning  
 **Target Launch**: May 25, 2026 (2 weeks)  

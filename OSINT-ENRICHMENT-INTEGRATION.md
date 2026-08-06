@@ -1,3 +1,13 @@
+---
+name: OSINT-ENRICHMENT-INTEGRATION
+title: OSINT Enrichment Integration for OpenVolo
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # OSINT Enrichment Integration for OpenVolo
 
 **Purpose:** Integrate social media OSINT tools to enrich contact profiles with Instagram, Twitter, LinkedIn, and cross-platform identities  

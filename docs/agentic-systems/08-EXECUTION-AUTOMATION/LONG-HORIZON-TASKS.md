@@ -1,20 +1,21 @@
 ---
-id: long-horizon-tasks
-type: document
-name: LONG HORIZON TASKS
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 0.8
-freshness: unverified
+name: docs/agentic-systems/08-EXECUTION-AUTOMATION/LONG-HORIZON-TASKS
+desc: ...
 tags:
   - status/active
   - knowledge/unverified
+id: long-horizon-tasks
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 0.8
+freshness: unverified
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# LONG HORIZON TASKS
+# docs/agentic-systems/08-EXECUTION-AUTOMATION/LONG-HORIZON-TASKS
 
 ## Purpose
 This document provides the conceptual and technical details for **LONG HORIZON TASKS** within the Agentic Systems Academy.

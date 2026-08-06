@@ -1,20 +1,21 @@
 ---
-id: agent-marketing
-type: document
-name: AGENT MARKETING
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 0.8
-freshness: unverified
+name: docs/agentic-systems/11-COMPANY-AGENTS/AGENT-MARKETING
+desc: ...
 tags:
   - status/active
   - knowledge/unverified
+id: agent-marketing
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 0.8
+freshness: unverified
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# AGENT MARKETING
+# docs/agentic-systems/11-COMPANY-AGENTS/AGENT-MARKETING
 
 ## Purpose
 This document provides the conceptual and technical details for **AGENT MARKETING** within the Agentic Systems Academy.

@@ -1,3 +1,13 @@
+---
+name: realestate-os/API
+title: API Reference
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # API Reference
 
 Base URL: `http://localhost:3001/api` (dev) or `https://your-railway-url/api` (prod)

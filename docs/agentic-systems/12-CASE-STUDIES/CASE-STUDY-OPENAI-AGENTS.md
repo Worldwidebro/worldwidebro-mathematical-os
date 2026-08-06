@@ -1,20 +1,21 @@
 ---
-id: case-study-openai-agents
-type: document
-name: CASE STUDY OPENAI AGENTS
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 0.8
-freshness: unverified
+name: docs/agentic-systems/12-CASE-STUDIES/CASE-STUDY-OPENAI-AGENTS
+desc: ...
 tags:
   - status/active
   - knowledge/unverified
+id: case-study-openai-agents
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 0.8
+freshness: unverified
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# CASE STUDY OPENAI AGENTS
+# docs/agentic-systems/12-CASE-STUDIES/CASE-STUDY-OPENAI-AGENTS
 
 ## Purpose
 This document provides the conceptual and technical details for **CASE STUDY OPENAI AGENTS** within the Agentic Systems Academy.

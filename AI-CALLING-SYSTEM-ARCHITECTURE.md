@@ -1,3 +1,13 @@
+---
+name: AI-CALLING-SYSTEM-ARCHITECTURE
+title: 'AI Calling System: Complete Architecture'
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # AI Calling System: Complete Architecture
 
 **Status:** Building  

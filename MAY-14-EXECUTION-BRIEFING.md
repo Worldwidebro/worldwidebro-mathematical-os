@@ -1,3 +1,13 @@
+---
+name: MAY-14-EXECUTION-BRIEFING
+title: May 14 Execution Briefing — HRMS + Niche Mastery OS Launch
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # May 14 Execution Briefing — HRMS + Niche Mastery OS Launch
 
 **Date**: May 14, 2026  

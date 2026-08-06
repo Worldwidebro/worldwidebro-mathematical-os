@@ -1,3 +1,13 @@
+---
+name: 02_PROJECTS/LT/lt-011-dispatch-software/docs/DOMAIN-MODEL
+title: DispatchOS Domain Model Specifications
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # DispatchOS Domain Model Specifications
 
 This document defines the schemas, state machines, and relational structures of the primary entities in DispatchOS (LT-011).

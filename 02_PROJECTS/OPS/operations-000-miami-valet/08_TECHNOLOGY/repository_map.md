@@ -1,3 +1,13 @@
+---
+name: 02_PROJECTS/OPS/operations-000-miami-valet/08_TECHNOLOGY/repository_map
+title: 'Technology Map: Miami Valet'
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Technology Map: Miami Valet
 Required Capabilities: automation, scheduling, dashboard, workspace, crm
 

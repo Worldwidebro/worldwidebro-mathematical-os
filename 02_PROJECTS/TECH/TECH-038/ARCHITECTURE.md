@@ -1,3 +1,13 @@
+---
+name: 02_PROJECTS/TECH/TECH-038/ARCHITECTURE
+title: 'TECH-038: Unified Communications Platform'
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # TECH-038: Unified Communications Platform
 
 **Vision:** One platform, three customer interfaces (WhatsApp, Telegram, Voice), powers all 712 ventures.

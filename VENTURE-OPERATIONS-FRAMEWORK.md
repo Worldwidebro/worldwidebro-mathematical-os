@@ -1,3 +1,13 @@
+---
+name: VENTURE-OPERATIONS-FRAMEWORK
+title: Venture Operations Completeness Framework
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Venture Operations Completeness Framework
 
 **Purpose:** Map 687 ventures → required departments → staff/partnerships needed → fill gaps from network → execute

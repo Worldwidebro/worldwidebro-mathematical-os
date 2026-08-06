@@ -1,8 +1,11 @@
 ---
+name: KNOWLEDGE-GRAPH-VISUAL
 title: Knowledge Graph Visualization
-description: Interactive node-edge visualization of all entities and relationships
+desc: ...
 tags: graph, visualization, dataviewjs, interactive
+description: Interactive node-edge visualization of all entities and relationships
 created: 2026-05-15
+updated: 2026-08-06T05:46:10Z
 ---
 
 # Knowledge Graph Visualization

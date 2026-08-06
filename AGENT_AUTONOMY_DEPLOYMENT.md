@@ -1,3 +1,13 @@
+---
+name: AGENT_AUTONOMY_DEPLOYMENT
+title: Agent Autonomy Deployment Guide
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Agent Autonomy Deployment Guide
 **Status:** Ready to Deploy | **Impact:** Unblocks Tasks 9, 10, 14 → Go-Live Path
 **Date:** May 11, 2026

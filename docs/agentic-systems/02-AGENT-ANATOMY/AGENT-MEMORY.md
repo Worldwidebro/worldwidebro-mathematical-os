@@ -1,20 +1,21 @@
 ---
-id: agent-memory
-type: document
-name: AGENT MEMORY
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 1.0
-freshness: current
+name: docs/agentic-systems/02-AGENT-ANATOMY/AGENT-MEMORY
+desc: ...
 tags:
   - status/active
   - knowledge/current
+id: agent-memory
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 1.0
+freshness: current
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# AGENT MEMORY
+# docs/agentic-systems/02-AGENT-ANATOMY/AGENT-MEMORY
 ## Purpose
 Establish the technical division of memory (short-term, long-term, episodic, semantic) in autonomous agent architectures.
 

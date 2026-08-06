@@ -1,3 +1,13 @@
+---
+name: WORLDWIDEBRO-OS/06-PARTNERS/REVENUE-MODEL
+title: Partner Revenue Model & Reseller Program
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Partner Revenue Model & Reseller Program
 
 ## Commission Structure

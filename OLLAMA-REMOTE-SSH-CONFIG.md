@@ -1,3 +1,13 @@
+---
+name: OLLAMA-REMOTE-SSH-CONFIG
+title: Ollama Remote Operation via Mac Studio SSH
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Ollama Remote Operation via Mac Studio SSH
 
 **Goal**: Run Ollama on Mac Studio, access from Mac Air via SSH tunnel  

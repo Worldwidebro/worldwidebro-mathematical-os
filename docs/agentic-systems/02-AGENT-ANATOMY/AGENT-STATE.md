@@ -1,20 +1,21 @@
 ---
-id: agent-state
-type: document
-name: AGENT STATE
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 1.0
-freshness: current
+name: docs/agentic-systems/02-AGENT-ANATOMY/AGENT-STATE
+desc: ...
 tags:
   - status/active
   - knowledge/current
+id: agent-state
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 1.0
+freshness: current
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# AGENT STATE
+# docs/agentic-systems/02-AGENT-ANATOMY/AGENT-STATE
 ## Purpose
 Explain state management in agentic systems, detailing how agents store and update execution facts across multi-turn runs.
 

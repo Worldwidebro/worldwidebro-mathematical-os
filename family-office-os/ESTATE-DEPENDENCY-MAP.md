@@ -1,3 +1,13 @@
+---
+name: family-office-os/ESTATE-DEPENDENCY-MAP
+title: 'Worldwidebro Holding Estate: Subsidiary & Capabilities Dependency Map'
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Worldwidebro Holding Estate: Subsidiary & Capabilities Dependency Map
 
 This document defines the dependency architecture of the Worldwidebro Holding Estate. It maps our parent company, operating companies (OpCos), individual service ventures, and how they leverage our starred open-source repository toolsets.

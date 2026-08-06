@@ -1,3 +1,13 @@
+---
+name: moneyprinter-output/2419bf07-b3f2-400f-a2c5-acab2bce597b/funnel/publish/landing_page.spec
+title: Landing Page Spec — Permit Compliance Platform
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Landing Page Spec — Permit Compliance Platform
 
 Map BOF content to page sections. Implement in your stack (Next.js, Webflow, etc.).

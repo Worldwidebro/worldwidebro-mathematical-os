@@ -1,3 +1,13 @@
+---
+name: 02_PROJECTS/OPS/wash-000-tampa-carwash/08_TECHNOLOGY/prd_architecture
+title: 'Product Requirements Document (PRD): Tampa Carwash'
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Product Requirements Document (PRD): Tampa Carwash
 
 **Sector/Platform:** wash

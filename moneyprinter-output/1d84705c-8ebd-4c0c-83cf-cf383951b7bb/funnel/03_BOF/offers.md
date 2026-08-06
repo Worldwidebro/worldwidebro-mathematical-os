@@ -1,3 +1,13 @@
+---
+name: moneyprinter-output/1d84705c-8ebd-4c0c-83cf-cf383951b7bb/funnel/03_BOF/offers
+title: BOF Offer — Building Supply Chain
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # BOF Offer — Building Supply Chain
 
 ## Primary offer

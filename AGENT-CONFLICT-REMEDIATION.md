@@ -1,3 +1,13 @@
+---
+name: AGENT-CONFLICT-REMEDIATION
+title: Agent Conflict Remediation Plan
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Agent Conflict Remediation Plan
 **Date**: May 11, 2026  
 **Detected by**: Agent Conflict Detector  

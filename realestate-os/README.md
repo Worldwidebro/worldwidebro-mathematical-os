@@ -1,3 +1,13 @@
+---
+name: realestate-os/README
+title: Real Estate OS — MVP Phase 1
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Real Estate OS — MVP Phase 1
 
 Rental property management SaaS with property CRUD, lease management, rent collection (Stripe), tenant portal, maintenance requests, and basic reporting.

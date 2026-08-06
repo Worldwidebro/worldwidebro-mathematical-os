@@ -1,3 +1,13 @@
+---
+name: OPERATIONS-VISIBILITY-MAP
+title: Operations Visibility Map
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Operations Visibility Map
 
 **Question:** "Shouldn't I see all this from my phone or local server? What's continuously updated?"

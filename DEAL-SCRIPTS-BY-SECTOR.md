@@ -1,3 +1,13 @@
+---
+name: DEAL-SCRIPTS-BY-SECTOR
+title: Deal Scripts by Sector
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Deal Scripts by Sector
 
 **Purpose:** Exact messaging templates for Echo (E-Commerce), Swift (Technology), and Bella (Beauty & Wellness) agents  

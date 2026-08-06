@@ -1,20 +1,21 @@
 ---
-id: computer-use
-type: document
-name: COMPUTER USE
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 0.8
-freshness: unverified
+name: docs/agentic-systems/08-EXECUTION-AUTOMATION/COMPUTER-USE
+desc: ...
 tags:
   - status/active
   - knowledge/unverified
+id: computer-use
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 0.8
+freshness: unverified
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# COMPUTER USE
+# docs/agentic-systems/08-EXECUTION-AUTOMATION/COMPUTER-USE
 
 ## Purpose
 This document provides the conceptual and technical details for **COMPUTER USE** within the Agentic Systems Academy.

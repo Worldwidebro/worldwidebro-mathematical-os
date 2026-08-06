@@ -1,20 +1,21 @@
 ---
-id: mcp-architecture
-type: document
-name: MCP ARCHITECTURE
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 1.0
-freshness: current
+name: docs/agentic-systems/05-TOOLS-MCP/MCP-ARCHITECTURE
+desc: ...
 tags:
   - status/active
   - knowledge/current
+id: mcp-architecture
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 1.0
+freshness: current
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# MCP ARCHITECTURE
+# docs/agentic-systems/05-TOOLS-MCP/MCP-ARCHITECTURE
 ## Purpose
 Provide a deep architectural dive into MCP specifications, detailing connection layers, JSON-RPC schemas, and message routing.
 

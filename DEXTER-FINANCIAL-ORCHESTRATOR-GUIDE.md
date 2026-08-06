@@ -1,3 +1,13 @@
+---
+name: DEXTER-FINANCIAL-ORCHESTRATOR-GUIDE
+title: Dexter Financial Orchestrator — Project Guide
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Dexter Financial Orchestrator — Project Guide
 
 **Status:** Phase 0 (Framework Definition) | Ready to Execute  

@@ -1,7 +1,10 @@
 ---
+name: Index
 title: Knowledge Graph Index
+desc: ...
 type: index
 created: 2026-05-15T20:57:44.653881
+updated: 2026-08-06T05:46:10Z
 ---
 
 # Knowledge Graph Index

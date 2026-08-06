@@ -1,20 +1,21 @@
 ---
-id: eval-datasets
-type: document
-name: EVAL DATASETS
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 0.8
-freshness: unverified
+name: docs/agentic-systems/09-EVALUATION-OBSERVABILITY/EVAL-DATASETS
+desc: ...
 tags:
   - status/active
   - knowledge/unverified
+id: eval-datasets
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 0.8
+freshness: unverified
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# EVAL DATASETS
+# docs/agentic-systems/09-EVALUATION-OBSERVABILITY/EVAL-DATASETS
 
 ## Purpose
 This document provides the conceptual and technical details for **EVAL DATASETS** within the Agentic Systems Academy.

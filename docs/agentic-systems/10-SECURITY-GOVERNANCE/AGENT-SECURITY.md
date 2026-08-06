@@ -1,23 +1,24 @@
 ---
+name: docs/agentic-systems/10-SECURITY-GOVERNANCE/AGENT-SECURITY
+desc: ...
+tags:
+  - status/active
+  - knowledge/current
 id: agent-security
 type: document
-name: AGENT SECURITY
 status: active
 owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
 source: planning
 confidence: 1.0
 freshness: current
 aliases:
   - "Agent Guardrails"
   - "Least Privilege Sandbox"
-tags:
-  - status/active
-  - knowledge/current
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# AGENT SECURITY
+# docs/agentic-systems/10-SECURITY-GOVERNANCE/AGENT-SECURITY
 ## Purpose
 Establish security guidelines for autonomous agents, focusing on data protection, injection prevention, and boundary sandboxing.
 

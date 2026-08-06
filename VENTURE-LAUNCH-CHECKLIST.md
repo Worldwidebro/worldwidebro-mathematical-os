@@ -1,7 +1,11 @@
 ---
+name: VENTURE-LAUNCH-CHECKLIST
 title: Venture Launch Checklist
+desc: ...
 version: 1.0
 applies: Every venture launch
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
 ---
 
 # Venture Launch Checklist

@@ -1,3 +1,13 @@
+---
+name: 02_PROJECTS/LT/lt-011-dispatch-software/docs/AGENTS
+title: DispatchOS Core Agents
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # DispatchOS Core Agents
 
 This document defines the 12 primary software agents operating within DispatchOS (LT-011).

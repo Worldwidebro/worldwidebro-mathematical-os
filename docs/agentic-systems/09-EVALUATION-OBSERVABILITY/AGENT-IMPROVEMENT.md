@@ -1,20 +1,21 @@
 ---
-id: agent-improvement
-type: document
-name: AGENT IMPROVEMENT
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 0.8
-freshness: unverified
+name: docs/agentic-systems/09-EVALUATION-OBSERVABILITY/AGENT-IMPROVEMENT
+desc: ...
 tags:
   - status/active
   - knowledge/unverified
+id: agent-improvement
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 0.8
+freshness: unverified
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# AGENT IMPROVEMENT
+# docs/agentic-systems/09-EVALUATION-OBSERVABILITY/AGENT-IMPROVEMENT
 
 ## Purpose
 This document provides the conceptual and technical details for **AGENT IMPROVEMENT** within the Agentic Systems Academy.

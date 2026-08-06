@@ -1,3 +1,13 @@
+---
+name: 02_PROJECTS/LT/lt-011-dispatch-software/agents/oss_scout/output_schema
+title: Output schema for OSS Scout Agent
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Output schema for OSS Scout Agent
 
 ```json

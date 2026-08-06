@@ -1,3 +1,13 @@
+---
+name: security-stack/README
+title: Security stack (T01–T17 templates)
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Security stack (T01–T17 templates)
 
 **Task status:** see **[TASKS.md](TASKS.md)** for T01–T17 and exposure-audit checklist.

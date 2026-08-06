@@ -1,20 +1,21 @@
 ---
-id: tool-registry
-type: document
-name: TOOL REGISTRY
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 0.8
-freshness: unverified
+name: docs/agentic-systems/05-TOOLS-MCP/TOOL-REGISTRY
+desc: ...
 tags:
   - status/active
   - knowledge/unverified
+id: tool-registry
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 0.8
+freshness: unverified
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# TOOL REGISTRY
+# docs/agentic-systems/05-TOOLS-MCP/TOOL-REGISTRY
 
 ## Purpose
 This document provides the conceptual and technical details for **TOOL REGISTRY** within the Agentic Systems Academy.

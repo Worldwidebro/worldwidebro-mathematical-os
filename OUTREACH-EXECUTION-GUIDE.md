@@ -1,3 +1,13 @@
+---
+name: OUTREACH-EXECUTION-GUIDE
+title: 'Outreach Execution Guide: Top 3 Sectors'
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Outreach Execution Guide: Top 3 Sectors
 
 **Objective:** Generate 50 qualified leads, close 1-5 deals month 1  

@@ -1,3 +1,13 @@
+---
+name: 02_PROJECTS/LT/lt-011-dispatch-software/docs/LEADS-AND-CALLS
+title: DispatchOS Sales Leads & Outreach Guide
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # DispatchOS Sales Leads & Outreach Guide
 
 This document registers the target prospects, cold call scripts, and outbound call schedules to market and onboard companies onto DispatchOS (LT-011).

@@ -1,8 +1,12 @@
 ---
+name: AGENT_LIFECYCLE
 title: Agent Lifecycle Management
+desc: ...
 version: 1.0
 date: 2026-07-30
 companion: [[AGENT_SPEC.md]], [[AGENT_PERMISSIONS.md]], [[AGENT-BRACKET-STANDARD.md]]
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
 ---
 
 # Agent Lifecycle Management

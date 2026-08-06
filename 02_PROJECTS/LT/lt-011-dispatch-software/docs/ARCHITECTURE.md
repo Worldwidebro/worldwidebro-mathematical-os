@@ -1,3 +1,13 @@
+---
+name: 02_PROJECTS/LT/lt-011-dispatch-software/docs/ARCHITECTURE
+title: DispatchOS System Architecture
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # DispatchOS System Architecture
 
 This document defines the interface bounds, service layers, and capability mappings for DispatchOS (LT-011).

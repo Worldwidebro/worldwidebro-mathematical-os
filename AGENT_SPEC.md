@@ -1,13 +1,17 @@
 ---
+name: AGENT_SPEC
 title: Agent Specification Schema (AGENT_SPEC.md)
+desc: ...
 version: 1.0
 date: 2026-07-30
 owner: Hermes Agent
 applies: Every agent (Hermes, BuildAgent, SalesAgent, etc.)
 companion: [[AGENT-BRACKET-STANDARD.md]], [[AGENT_PROTOCOL.md]], [[AGENT_ONTOLOGY.md]]
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
 ---
 
-# Agent Specification Schema
+# Agent Specification Schema (AGENT_SPEC.md)
 
 **Purpose**: Define agents like APIs — formal contract that specifies identity, mission, capabilities, tools, permissions, memory, inputs, outputs, KPIs, escalation rules, cost limits, and autonomy level.
 

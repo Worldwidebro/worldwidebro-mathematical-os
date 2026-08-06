@@ -1,3 +1,13 @@
+---
+name: bw-001-lash-extension-studio/UP-NEXT-4-MONTH-ROADMAP
+title: '🚀 Up Next — 4-Month Roadmap: Own It & Run It'
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # 🚀 Up Next — 4-Month Roadmap: Own It & Run It
 
 **Operator:** Winners Circle WC LLC  

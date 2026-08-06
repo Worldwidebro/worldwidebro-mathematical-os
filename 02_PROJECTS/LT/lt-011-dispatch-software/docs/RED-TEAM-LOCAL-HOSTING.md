@@ -1,3 +1,13 @@
+---
+name: 02_PROJECTS/LT/lt-011-dispatch-software/docs/RED-TEAM-LOCAL-HOSTING
+title: 'Red Team Audit: Bypassing the Cloud for Local Mac Studio Hosting'
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Red Team Audit: Bypassing the Cloud for Local Mac Studio Hosting
 
 This document analyzes why our system is not yet 100% locally self-hosted, provides a containerization roadmap utilizing `diegosouzapw/OmniRoute`, and audits the role-based data isolation of our portals.

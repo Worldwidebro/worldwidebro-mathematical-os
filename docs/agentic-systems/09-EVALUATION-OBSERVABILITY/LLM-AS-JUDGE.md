@@ -1,20 +1,21 @@
 ---
-id: llm-as-judge
-type: document
-name: LLM AS JUDGE
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 0.8
-freshness: unverified
+name: docs/agentic-systems/09-EVALUATION-OBSERVABILITY/LLM-AS-JUDGE
+desc: ...
 tags:
   - status/active
   - knowledge/unverified
+id: llm-as-judge
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 0.8
+freshness: unverified
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# LLM AS JUDGE
+# docs/agentic-systems/09-EVALUATION-OBSERVABILITY/LLM-AS-JUDGE
 
 ## Purpose
 This document provides the conceptual and technical details for **LLM AS JUDGE** within the Agentic Systems Academy.

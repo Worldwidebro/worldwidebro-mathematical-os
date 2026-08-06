@@ -1,3 +1,13 @@
+---
+name: moneyprinter-output/1d84705c-8ebd-4c0c-83cf-cf383951b7bb/funnel/00_FOUNDATION/audience
+title: Target Audience — CON-004 Building Supply Chain
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Target Audience — CON-004 Building Supply Chain
 
 ## Who they are

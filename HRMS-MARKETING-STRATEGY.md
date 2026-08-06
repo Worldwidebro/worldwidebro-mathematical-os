@@ -1,3 +1,13 @@
+---
+name: HRMS-MARKETING-STRATEGY
+title: HRMS Marketing & Advertising Strategy
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # HRMS Marketing & Advertising Strategy
 
 **Goal**: Launch with focused messaging per sector, then scale through paid ads  

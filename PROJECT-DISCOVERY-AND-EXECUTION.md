@@ -1,3 +1,13 @@
+---
+name: PROJECT-DISCOVERY-AND-EXECUTION
+title: Project Discovery & Execution Framework
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Project Discovery & Execution Framework
 ## Integrating Mac Studio, Claude, Composio & Paperclip
 

@@ -1,11 +1,14 @@
 ---
-name: Antwuan Johns
+name: whoiam
+desc: ...
 handle: worldwidebro
 email: winnerscirclewcllc@gmail.com
 github: https://github.com/Worldwidebro
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
 ---
 
-# Who I Am
+# whoiam
 
 Systems architect and venture builder. I design operating systems at scale.
 

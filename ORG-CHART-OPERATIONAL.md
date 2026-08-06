@@ -1,3 +1,13 @@
+---
+name: ORG-CHART-OPERATIONAL
+title: 'COMPLETE ORG CHART: Worldwidebro Holdings Orchestration System'
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # COMPLETE ORG CHART: Worldwidebro Holdings Orchestration System
 
 **Created:** 2026-05-09  

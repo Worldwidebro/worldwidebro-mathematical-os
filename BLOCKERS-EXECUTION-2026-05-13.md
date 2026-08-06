@@ -1,3 +1,13 @@
+---
+name: BLOCKERS-EXECUTION-2026-05-13
+title: HRMS Pre-Launch Blockers — Execution Start
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # HRMS Pre-Launch Blockers — Execution Start
 
 **Date**: May 13, 2026  

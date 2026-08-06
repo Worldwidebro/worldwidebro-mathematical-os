@@ -1,3 +1,13 @@
+---
+name: 02_PROJECTS/LT/lt-011-dispatch-software/agents/oss_scout/eval_criteria
+title: Evaluation Criteria for OSS Scout Agent
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Evaluation Criteria for OSS Scout Agent
 
 Score from 0.0 to 1.0 based on:

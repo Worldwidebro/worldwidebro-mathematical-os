@@ -1,20 +1,21 @@
 ---
-id: ai-boss-agentic-architecture
-type: document
-name: AI BOSS AGENTIC ARCHITECTURE
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: proprietary
-confidence: 1.0
-freshness: current
+name: docs/agentic-systems/ai-boss/AI-BOSS-AGENTIC-ARCHITECTURE
+desc: ...
 tags:
   - status/active
   - knowledge/current
+id: ai-boss-agentic-architecture
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: proprietary
+confidence: 1.0
+freshness: current
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# AI BOSS AGENTIC ARCHITECTURE
+# docs/agentic-systems/ai-boss/AI-BOSS-AGENTIC-ARCHITECTURE
 ## Purpose
 Document the core agentic architecture of the **AI Boss Operating System** (OS-001) used by Worldwidebro Holdings.
 

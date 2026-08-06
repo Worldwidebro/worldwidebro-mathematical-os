@@ -1,20 +1,21 @@
 ---
-id: agent-instructions
-type: document
-name: AGENT INSTRUCTIONS
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 0.8
-freshness: unverified
+name: docs/agentic-systems/02-AGENT-ANATOMY/AGENT-INSTRUCTIONS
+desc: ...
 tags:
   - status/active
   - knowledge/unverified
+id: agent-instructions
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 0.8
+freshness: unverified
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# AGENT INSTRUCTIONS
+# docs/agentic-systems/02-AGENT-ANATOMY/AGENT-INSTRUCTIONS
 
 ## Purpose
 This document provides the conceptual and technical details for **AGENT INSTRUCTIONS** within the Agentic Systems Academy.

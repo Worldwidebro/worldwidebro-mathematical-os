@@ -1,3 +1,13 @@
+---
+name: GITHUB-SYNC-GUIDE
+title: GitHub Repos Sync — Setup & Usage
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # GitHub Repos Sync — Setup & Usage
 
 The Dexter Dashboard now sources repo metadata directly from GitHub instead of hardcoded Supabase entries.

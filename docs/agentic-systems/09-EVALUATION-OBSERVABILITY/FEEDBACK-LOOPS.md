@@ -1,20 +1,21 @@
 ---
-id: feedback-loops
-type: document
-name: FEEDBACK LOOPS
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 0.8
-freshness: unverified
+name: docs/agentic-systems/09-EVALUATION-OBSERVABILITY/FEEDBACK-LOOPS
+desc: ...
 tags:
   - status/active
   - knowledge/unverified
+id: feedback-loops
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 0.8
+freshness: unverified
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# FEEDBACK LOOPS
+# docs/agentic-systems/09-EVALUATION-OBSERVABILITY/FEEDBACK-LOOPS
 
 ## Purpose
 This document provides the conceptual and technical details for **FEEDBACK LOOPS** within the Agentic Systems Academy.

@@ -1,20 +1,21 @@
 ---
-id: a2a-fundamentals
-type: document
-name: A2A FUNDAMENTALS
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 1.0
-freshness: current
+name: docs/agentic-systems/06-MULTI-AGENT/A2A-FUNDAMENTALS
+desc: ...
 tags:
   - status/active
   - knowledge/current
+id: a2a-fundamentals
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 1.0
+freshness: current
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# A2A FUNDAMENTALS
+# docs/agentic-systems/06-MULTI-AGENT/A2A-FUNDAMENTALS
 ## Purpose
 Introduce Agent-to-Agent (A2A) communication protocols and contrast them with tool connectivity standards.
 

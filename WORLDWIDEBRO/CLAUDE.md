@@ -1,3 +1,13 @@
+---
+name: WORLDWIDEBRO/CLAUDE
+title: CLAUDE.md — Worldwidebro Operating Constitution
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # CLAUDE.md — Worldwidebro Operating Constitution
 
 **Version:** 1.0  

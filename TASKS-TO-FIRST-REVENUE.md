@@ -1,3 +1,13 @@
+---
+name: TASKS-TO-FIRST-REVENUE
+title: '🎯 TASKS: FIRST REVENUE MILESTONE'
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # 🎯 TASKS: FIRST REVENUE MILESTONE
 **Target:** $5K MRR by Week 12  
 **Horizon:** 12 weeks (2026-08-05 → 2026-10-28)  

@@ -1,23 +1,24 @@
 ---
+name: docs/agentic-systems/01-FUNDAMENTALS/WHAT-IS-AN-AGENT
+desc: ...
+tags:
+  - status/active
+  - knowledge/current
 id: what-is-an-agent
 type: document
-name: WHAT IS AN AGENT
 status: active
 owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
 source: planning
 confidence: 1.0
 freshness: current
 aliases:
   - "AI Agent"
   - "Autonomous Agent"
-tags:
-  - status/active
-  - knowledge/current
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# WHAT IS AN AGENT
+# docs/agentic-systems/01-FUNDAMENTALS/WHAT-IS-AN-AGENT
 ## Purpose
 Define the fundamental building block of autonomous software: the Agent. Establish how it differs from traditional programs by using independent action loops rather than static input-output paths.
 

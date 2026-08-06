@@ -1,20 +1,21 @@
 ---
-id: agentic-systems-map
-type: document
-name: AGENTIC SYSTEMS MAP
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 0.8
-freshness: unverified
+name: docs/agentic-systems/00-START-HERE/AGENTIC-SYSTEMS-MAP
+desc: ...
 tags:
   - status/active
   - knowledge/unverified
+id: agentic-systems-map
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 0.8
+freshness: unverified
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# AGENTIC SYSTEMS MAP
+# docs/agentic-systems/00-START-HERE/AGENTIC-SYSTEMS-MAP
 
 ## Purpose
 This document provides the conceptual and technical details for **AGENTIC SYSTEMS MAP** within the Agentic Systems Academy.

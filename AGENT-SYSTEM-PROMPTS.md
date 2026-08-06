@@ -1,3 +1,13 @@
+---
+name: AGENT-SYSTEM-PROMPTS
+title: Agent System Prompts — Week 0 Governance Hierarchy
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Agent System Prompts — Week 0 Governance Hierarchy
 **Date**: 2026-05-13  
 **Status**: Deployed to Paperclip (Week 0 Authority Framework)  

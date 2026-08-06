@@ -1,8 +1,12 @@
 ---
+name: AGENT_PROTOCOL
 title: Agent Communication Protocol
+desc: ...
 version: 1.0
 date: 2026-07-30
 companion: [[AGENT-BRACKET-STANDARD.md]], [[AGENT_SPEC.md]]
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
 ---
 
 # Agent Communication Protocol

@@ -1,3 +1,13 @@
+---
+name: CPA-REVIEW-BRIEFING
+title: CPA Review Briefing — HRMS Payroll SaaS
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # CPA Review Briefing — HRMS Payroll SaaS
 
 **Goal**: 2-hour consultation to validate tax withholding logic for MVP launch

@@ -1,3 +1,13 @@
+---
+name: HRMS-CUSTOMER-ACQUISITION
+title: HRMS — Customer Acquisition Strategy (OpenVolo Integration)
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # HRMS — Customer Acquisition Strategy (OpenVolo Integration)
 **Status**: Ready to execute  
 **Target Market**: Finance/HR directors at construction companies  

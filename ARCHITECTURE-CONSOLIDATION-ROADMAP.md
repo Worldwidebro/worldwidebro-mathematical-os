@@ -1,3 +1,13 @@
+---
+name: ARCHITECTURE-CONSOLIDATION-ROADMAP
+title: Architecture Consolidation Roadmap
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Architecture Consolidation Roadmap
 
 **Goal**: Build 25 shared architecture documents + TAGGING-STANDARD  

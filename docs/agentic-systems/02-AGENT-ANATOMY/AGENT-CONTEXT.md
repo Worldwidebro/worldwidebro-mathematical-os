@@ -1,20 +1,21 @@
 ---
-id: agent-context
-type: document
-name: AGENT CONTEXT
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 1.0
-freshness: current
+name: docs/agentic-systems/02-AGENT-ANATOMY/AGENT-CONTEXT
+desc: ...
 tags:
   - status/active
   - knowledge/current
+id: agent-context
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 1.0
+freshness: current
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# AGENT CONTEXT
+# docs/agentic-systems/02-AGENT-ANATOMY/AGENT-CONTEXT
 ## Purpose
 Define how short-term context is engineered, updated, and managed to prevent context window overflow while maximizing task relevance.
 

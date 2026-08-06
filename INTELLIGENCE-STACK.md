@@ -1,3 +1,13 @@
+---
+name: INTELLIGENCE-STACK
+title: 🧠 THE SYSTEM INTELLIGENCE STACK
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # 🧠 THE SYSTEM INTELLIGENCE STACK
 
 This document details the architecture of the **AVS Intelligence Stack**—representing intelligence not as a single LLM model, but as a stack of interconnected capabilities operating over unified graphs (Code, Venture, and Outcome graphs).

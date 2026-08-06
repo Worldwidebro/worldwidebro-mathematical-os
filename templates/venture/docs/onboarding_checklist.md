@@ -1,3 +1,13 @@
+---
+name: templates/venture/docs/onboarding_checklist
+title: 'Onboarding & Setup Checklist: {{VENTURE_NAME}} ({{VENTURE_ID}})'
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Onboarding & Setup Checklist: {{VENTURE_NAME}} ({{VENTURE_ID}})
 
 - [ ] **Phase 1: Legal & Structural**

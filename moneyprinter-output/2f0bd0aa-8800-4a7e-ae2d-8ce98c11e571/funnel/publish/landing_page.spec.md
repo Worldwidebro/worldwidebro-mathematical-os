@@ -1,3 +1,13 @@
+---
+name: moneyprinter-output/2f0bd0aa-8800-4a7e-ae2d-8ce98c11e571/funnel/publish/landing_page.spec
+title: Landing Page Spec — Contractor Network
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Landing Page Spec — Contractor Network
 
 Map BOF content to page sections. Implement in your stack (Next.js, Webflow, etc.).

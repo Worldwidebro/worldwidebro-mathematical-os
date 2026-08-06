@@ -1,3 +1,13 @@
+---
+name: family-office-os/OPCO-STRUCTURE
+title: OPCO Structure & Governance
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # OPCO Structure & Governance
 
 **Scope:** 38 OPCOs, economic layers, folder templates, governance models  

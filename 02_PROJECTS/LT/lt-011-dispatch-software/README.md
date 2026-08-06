@@ -1,3 +1,13 @@
+---
+name: 02_PROJECTS/LT/lt-011-dispatch-software/README
+title: 'LT-011: DispatchOS — Dispatch, Logistics & Freight Core'
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # LT-011: DispatchOS — Dispatch, Logistics & Freight Core
 
 DispatchOS is a reusable, multi-tenant capability layer built to power transportation and delivery ventures. It abstracts driver routing, fleet tracking, load tendering, and cargo billing into a single unified control plane.

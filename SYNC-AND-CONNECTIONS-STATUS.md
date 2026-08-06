@@ -1,3 +1,13 @@
+---
+name: SYNC-AND-CONNECTIONS-STATUS
+title: SYNC-AND-CONNECTIONS-STATUS
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # SYNC-AND-CONNECTIONS-STATUS
 
 **Date:** 2026-08-05 | **Purpose:** Show what needs updating, which systems are connected, which are not

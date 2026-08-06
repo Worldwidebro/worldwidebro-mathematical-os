@@ -1,15 +1,18 @@
 ---
+name: research/agentic-enterprise/10-IBM-POLICY-ADHERENCE
+desc: ...
+tags:
+  - policy-adherence
+  - compliance
 id: ibm-policy-adherence
-name: "Policy Adherence in Agentic Workflows"
 publisher: "IBM Research"
 year: 2026
 key_stats:
   - "Auditable policy compliance checks for autonomous execution"
-tags:
-  - policy-adherence
-  - compliance
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
 ---
 
-# Policy Adherence in Agentic Workflows (IBM Research 2026)
+# research/agentic-enterprise/10-IBM-POLICY-ADHERENCE
 
 Examines how to constrain agent outputs according to system security boundaries.

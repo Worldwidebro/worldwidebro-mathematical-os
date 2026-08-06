@@ -1,3 +1,13 @@
+---
+name: VENTURES-OS-HIERARCHY-MAPPING
+title: VENTURES-OS-HIERARCHY-MAPPING
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # VENTURES-OS-HIERARCHY-MAPPING
 
 **Date:** 2026-08-05 | **Purpose:** Map 8 ventures to 28-section OS hierarchy + phase-completion tracking

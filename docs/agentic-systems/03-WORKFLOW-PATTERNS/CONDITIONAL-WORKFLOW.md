@@ -1,20 +1,21 @@
 ---
-id: conditional-workflow
-type: document
-name: CONDITIONAL WORKFLOW
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 1.0
-freshness: current
+name: docs/agentic-systems/03-WORKFLOW-PATTERNS/CONDITIONAL-WORKFLOW
+desc: ...
 tags:
   - status/active
   - knowledge/current
+id: conditional-workflow
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 1.0
+freshness: current
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# CONDITIONAL WORKFLOW
+# docs/agentic-systems/03-WORKFLOW-PATTERNS/CONDITIONAL-WORKFLOW
 ## Purpose
 Detail routing and branching in graph workflows using conditional logic.
 

@@ -1,3 +1,13 @@
+---
+name: DEXTER-DATA-SOURCES-INTEGRATION
+title: Dexter Financial Orchestrator — Data Sources Integration Guide
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Dexter Financial Orchestrator — Data Sources Integration Guide
 
 **Purpose:** Wire all data sources (Supabase, Ollama, awesome-quant libraries, market data APIs) into Dexter  

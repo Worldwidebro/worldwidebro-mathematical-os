@@ -1,3 +1,13 @@
+---
+name: WEEK-1-EXECUTION-CHECKLIST
+title: HRMS Week 1 Execution Checklist
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # HRMS Week 1 Execution Checklist
 **Date:** May 14, 2026  
 **Critical Path:** 4 discovery calls (Mon-Thu) → Sales script finalized → Calendly configured → First cold email sent by Friday

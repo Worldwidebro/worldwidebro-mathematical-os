@@ -1,3 +1,13 @@
+---
+name: EXECUTE-INTELLIGENCE-LAYER
+title: 'Execute Intelligence Layer: Options A, B, C'
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Execute Intelligence Layer: Options A, B, C
 
 **Complete deployment guide for Repo Metadata Foundation, LlamaIndex Indexing, and Backstage Service Catalog**

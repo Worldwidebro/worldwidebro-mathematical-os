@@ -1,5 +1,7 @@
 ---
+name: VENTURE-ECOSYSTEM-VOCABULARY
 title: Venture Ecosystem Vocabulary with Wikilinks
+desc: ...
 version: 1.0
 date: 2026-07-30
 owner: Hermes Agent
@@ -9,9 +11,11 @@ related_docs:
   - ARCHITECTURE.md (System structure)
   - CAPABILITY_MAP.md (Capability catalog)
   - TAGGING-STANDARD.md (Consistent terminology)
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
 ---
 
-# Venture Ecosystem Vocabulary
+# Venture Ecosystem Vocabulary with Wikilinks
 
 **Purpose**: Define the 50+ relationship types that connect ventures into a unified ecosystem, enable Neo4j knowledge graph traversal, and map venture behavior to vex-api contracts.
 

@@ -1,20 +1,21 @@
 ---
-id: finance-agents
-type: document
-name: FINANCE AGENTS
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 0.8
-freshness: unverified
+name: docs/agentic-systems/12-CASE-STUDIES/FINANCE-AGENTS
+desc: ...
 tags:
   - status/active
   - knowledge/unverified
+id: finance-agents
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 0.8
+freshness: unverified
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# FINANCE AGENTS
+# docs/agentic-systems/12-CASE-STUDIES/FINANCE-AGENTS
 
 ## Purpose
 This document provides the conceptual and technical details for **FINANCE AGENTS** within the Agentic Systems Academy.

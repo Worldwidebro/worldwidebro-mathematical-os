@@ -1,3 +1,13 @@
+---
+name: vex/CLAUDE
+title: CLAUDE.md — VEX Core Library
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # CLAUDE.md — VEX Core Library
 
 **Scope:** Core data types, constants, and shared utilities for VEX ecosystem  

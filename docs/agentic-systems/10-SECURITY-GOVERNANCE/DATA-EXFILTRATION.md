@@ -1,20 +1,21 @@
 ---
-id: data-exfiltration
-type: document
-name: DATA EXFILTRATION
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 0.8
-freshness: unverified
+name: docs/agentic-systems/10-SECURITY-GOVERNANCE/DATA-EXFILTRATION
+desc: ...
 tags:
   - status/active
   - knowledge/unverified
+id: data-exfiltration
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 0.8
+freshness: unverified
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# DATA EXFILTRATION
+# docs/agentic-systems/10-SECURITY-GOVERNANCE/DATA-EXFILTRATION
 
 ## Purpose
 This document provides the conceptual and technical details for **DATA EXFILTRATION** within the Agentic Systems Academy.

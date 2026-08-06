@@ -1,20 +1,21 @@
 ---
-id: episodic-memory
-type: document
-name: EPISODIC MEMORY
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 0.8
-freshness: unverified
+name: docs/agentic-systems/04-MEMORY-KNOWLEDGE/EPISODIC-MEMORY
+desc: ...
 tags:
   - status/active
   - knowledge/unverified
+id: episodic-memory
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 0.8
+freshness: unverified
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# EPISODIC MEMORY
+# docs/agentic-systems/04-MEMORY-KNOWLEDGE/EPISODIC-MEMORY
 
 ## Purpose
 This document provides the conceptual and technical details for **EPISODIC MEMORY** within the Agentic Systems Academy.

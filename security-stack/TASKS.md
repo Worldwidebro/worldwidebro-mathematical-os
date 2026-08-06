@@ -1,3 +1,13 @@
+---
+name: security-stack/TASKS
+title: Security stack — task tracker
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Security stack — task tracker
 
 The numbered tasks (**T01–T17**) came from the chat backlog (defense-in-depth / OpenClaw hardening). This file is the **authoritative status** for what is in-repo vs still manual.

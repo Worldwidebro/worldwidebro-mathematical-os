@@ -1,12 +1,16 @@
 ---
+name: TOPOLOGY
 title: System Topology (v3.0)
+desc: ...
 date: 2026-07-30T11:13:00Z
 updated_by: Claude Code
 version: 3.0
 previous_versions: [2.2 (2026-07-25), 2.1 (2026-07-22), 2.0 (2026-07-20)]
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
 ---
 
-# Worldwidebro Holdings System Topology
+# System Topology (v3.0)
 
 **Updated:** 2026-07-30  
 **Status:** ✅ Mac Air (primary) + Mac Studio (services/Ollama) + T7 Shield (source of truth)  

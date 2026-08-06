@@ -1,23 +1,24 @@
 ---
+name: docs/agentic-systems/05-TOOLS-MCP/MCP-FUNDAMENTALS
+desc: ...
+tags:
+  - status/active
+  - knowledge/current
 id: mcp-fundamentals
 type: document
-name: MCP FUNDAMENTALS
 status: active
 owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
 source: planning
 confidence: 1.0
 freshness: current
 aliases:
   - "Model Context Protocol"
   - "MCP Standard"
-tags:
-  - status/active
-  - knowledge/current
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# MCP FUNDAMENTALS
+# docs/agentic-systems/05-TOOLS-MCP/MCP-FUNDAMENTALS
 ## Purpose
 Introduce the Model Context Protocol (MCP), explaining why standardizing the client-server-tool link is critical for agent scalability.
 

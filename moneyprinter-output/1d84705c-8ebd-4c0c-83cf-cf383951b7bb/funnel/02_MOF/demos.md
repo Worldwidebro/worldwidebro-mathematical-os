@@ -1,3 +1,13 @@
+---
+name: moneyprinter-output/1d84705c-8ebd-4c0c-83cf-cf383951b7bb/funnel/02_MOF/demos
+title: MOF Demos — Building Supply Chain
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # MOF Demos — Building Supply Chain
 
 **Goal:** "This might actually work for me."

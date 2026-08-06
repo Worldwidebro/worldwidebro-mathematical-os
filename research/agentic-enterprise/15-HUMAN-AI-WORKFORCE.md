@@ -1,13 +1,16 @@
 ---
-id: human-ai-workforce
-name: "The Hybrid Human-AI Workforce"
-publisher: "Future of Work Forum"
-year: 2026
+name: research/agentic-enterprise/15-HUMAN-AI-WORKFORCE
+desc: ...
 tags:
   - hybrid-workforce
   - human-in-the-loop
+id: human-ai-workforce
+publisher: "Future of Work Forum"
+year: 2026
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
 ---
 
-# The Hybrid Human-AI Workforce (2026)
+# research/agentic-enterprise/15-HUMAN-AI-WORKFORCE
 
 Investigates labor allocation and approval escalations in joint execution systems.

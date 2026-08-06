@@ -1,3 +1,13 @@
+---
+name: WORLDWIDEBRO/01_DIRECTIVES/30-DAY-EXECUTION-PLAN
+title: 30-DAY EXECUTION PLAN — TRUTH + CASH + PLATFORM
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # 30-DAY EXECUTION PLAN — TRUTH + CASH + PLATFORM
 
 **Effective:** 2026-08-04  

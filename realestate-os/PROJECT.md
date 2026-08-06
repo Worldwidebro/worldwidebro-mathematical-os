@@ -1,3 +1,13 @@
+---
+name: realestate-os/PROJECT
+title: RealEstateOS Project Specification & Architecture
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # RealEstateOS Project Specification & Architecture
 
 ## System Architecture Overview

@@ -1,3 +1,13 @@
+---
+name: HRMS-ACQUISITION-PIPELINE
+title: HRMS Customer Acquisition Pipeline
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # HRMS Customer Acquisition Pipeline
 
 **Target**: $3-5K MRR by May 27 (14 days after launch)  

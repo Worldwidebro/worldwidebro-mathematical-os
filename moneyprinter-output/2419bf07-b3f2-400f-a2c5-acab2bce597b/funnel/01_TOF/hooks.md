@@ -1,3 +1,13 @@
+---
+name: moneyprinter-output/2419bf07-b3f2-400f-a2c5-acab2bce597b/funnel/01_TOF/hooks
+title: TOF Hooks — Permit Compliance Platform
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # TOF Hooks — Permit Compliance Platform
 
 Viral / attention layer. **5–20s.** Hook first, minimal explanation.

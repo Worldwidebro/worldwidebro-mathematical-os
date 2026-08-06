@@ -1,3 +1,13 @@
+---
+name: generated-courses/EDU-024-intro-to-agentic-workflows/research_notes
+title: 'Research Catalog: Intro to Agentic Workflows'
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Research Catalog: Intro to Agentic Workflows
 
 ## Core Citations

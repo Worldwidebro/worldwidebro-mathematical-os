@@ -1,3 +1,13 @@
+---
+name: WORLDWIDEBRO-OS/REGISTRIES/repository-vocabulary
+title: Repository Classification Vocabulary
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Repository Classification Vocabulary
 
 **Unified semantic vocabulary for classifying 1,400+ repositories**

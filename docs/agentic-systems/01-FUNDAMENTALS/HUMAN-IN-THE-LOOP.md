@@ -1,20 +1,21 @@
 ---
-id: human-in-the-loop
-type: document
-name: HUMAN IN THE LOOP
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 0.8
-freshness: unverified
+name: docs/agentic-systems/01-FUNDAMENTALS/HUMAN-IN-THE-LOOP
+desc: ...
 tags:
   - status/active
   - knowledge/unverified
+id: human-in-the-loop
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 0.8
+freshness: unverified
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# HUMAN IN THE LOOP
+# docs/agentic-systems/01-FUNDAMENTALS/HUMAN-IN-THE-LOOP
 
 ## Purpose
 This document provides the conceptual and technical details for **HUMAN IN THE LOOP** within the Agentic Systems Academy.

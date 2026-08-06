@@ -1,3 +1,13 @@
+---
+name: SecondBrain/CLAUDE
+title: SecondBrain — Claude Code Session Context
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # SecondBrain — Claude Code Session Context
 
 > This directory is the Claude Code working directory. The actual Obsidian vault is elsewhere.

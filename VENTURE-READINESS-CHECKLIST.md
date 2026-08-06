@@ -1,3 +1,13 @@
+---
+name: VENTURE-READINESS-CHECKLIST
+title: Venture Readiness Checklist
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Venture Readiness Checklist
 
 **Purpose:** Form for humans (call center, ops, finance, engineering) showing exactly what to complete  

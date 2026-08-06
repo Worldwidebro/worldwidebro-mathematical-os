@@ -1,3 +1,13 @@
+---
+name: CLICKUP-PIPELINE-SETUP
+title: ClickUp Deal Pipeline Setup
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # ClickUp Deal Pipeline Setup
 
 **Workspace ID:** 9013677375  

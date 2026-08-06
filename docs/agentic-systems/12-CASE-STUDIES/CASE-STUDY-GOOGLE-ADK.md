@@ -1,20 +1,21 @@
 ---
-id: case-study-google-adk
-type: document
-name: CASE STUDY GOOGLE ADK
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 0.8
-freshness: unverified
+name: docs/agentic-systems/12-CASE-STUDIES/CASE-STUDY-GOOGLE-ADK
+desc: ...
 tags:
   - status/active
   - knowledge/unverified
+id: case-study-google-adk
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 0.8
+freshness: unverified
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# CASE STUDY GOOGLE ADK
+# docs/agentic-systems/12-CASE-STUDIES/CASE-STUDY-GOOGLE-ADK
 
 ## Purpose
 This document provides the conceptual and technical details for **CASE STUDY GOOGLE ADK** within the Agentic Systems Academy.

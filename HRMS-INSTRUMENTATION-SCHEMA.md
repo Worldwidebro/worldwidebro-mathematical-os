@@ -1,3 +1,13 @@
+---
+name: HRMS-INSTRUMENTATION-SCHEMA
+title: HRMS Instrumentation Schema — Signal Capture
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # HRMS Instrumentation Schema — Signal Capture
 
 **Purpose**: Define exactly what signals to log from HRMS execution (May 14-27)  

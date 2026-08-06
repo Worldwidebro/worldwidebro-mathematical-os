@@ -1,3 +1,13 @@
+---
+name: backstage-integration-setup
+title: 'Option B: Backstage Integration'
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Option B: Backstage Integration
 ## Service Catalog for Ventures & Repos
 

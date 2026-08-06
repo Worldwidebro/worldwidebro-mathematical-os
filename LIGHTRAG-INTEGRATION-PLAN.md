@@ -1,3 +1,13 @@
+---
+name: LIGHTRAG-INTEGRATION-PLAN
+title: LightRAG + RAG-Anything Integration Plan
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # LightRAG + RAG-Anything Integration Plan
 **Date**: 2026-05-14  
 **Objective**: Replace Ollama with LightRAG for entity extraction → Knowledge graph OS (Task 13)  

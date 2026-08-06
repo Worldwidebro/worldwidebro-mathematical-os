@@ -1,20 +1,21 @@
 ---
-id: agent-vs-llm-application
-type: document
-name: AGENT VS LLM APPLICATION
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 0.8
-freshness: unverified
+name: docs/agentic-systems/01-FUNDAMENTALS/AGENT-VS-LLM-APPLICATION
+desc: ...
 tags:
   - status/active
   - knowledge/unverified
+id: agent-vs-llm-application
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 0.8
+freshness: unverified
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# AGENT VS LLM APPLICATION
+# docs/agentic-systems/01-FUNDAMENTALS/AGENT-VS-LLM-APPLICATION
 
 ## Purpose
 This document provides the conceptual and technical details for **AGENT VS LLM APPLICATION** within the Agentic Systems Academy.

@@ -1,3 +1,13 @@
+---
+name: generated-courses/PRD-001-core-state-router-engine/prd_architecture
+title: 'Product Requirements Document (PRD) Architecture: Core State Router Engine'
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Product Requirements Document (PRD) Architecture: Core State Router Engine
 
 **Scope/Platform:** SaaS Engineering

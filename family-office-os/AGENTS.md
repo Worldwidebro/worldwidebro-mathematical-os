@@ -1,3 +1,13 @@
+---
+name: family-office-os/AGENTS
+title: OPCO Agent Instructions
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # OPCO Agent Instructions
 
 **Scope:** Agent decision-making for capital allocation, deployment approval, and governance  

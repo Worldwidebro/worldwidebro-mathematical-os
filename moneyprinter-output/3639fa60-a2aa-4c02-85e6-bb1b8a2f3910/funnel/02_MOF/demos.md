@@ -1,3 +1,13 @@
+---
+name: moneyprinter-output/3639fa60-a2aa-4c02-85e6-bb1b8a2f3910/funnel/02_MOF/demos
+title: MOF Demos — Workforce Management
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # MOF Demos — Workforce Management
 
 **Goal:** "This might actually work for me."

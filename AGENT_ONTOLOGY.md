@@ -1,8 +1,12 @@
 ---
+name: AGENT_ONTOLOGY
 title: Agent Ontology & Neo4j Schema
+desc: ...
 version: 1.0
 date: 2026-07-30
 companion: [[AGENT_SPEC.md]], [[ONTOLOGY.md]], [[VENTURE-ECOSYSTEM-VOCABULARY.md]]
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
 ---
 
 # Agent Ontology & Neo4j Schema

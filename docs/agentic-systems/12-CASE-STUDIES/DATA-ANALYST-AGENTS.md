@@ -1,20 +1,21 @@
 ---
-id: data-analyst-agents
-type: document
-name: DATA ANALYST AGENTS
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 0.8
-freshness: unverified
+name: docs/agentic-systems/12-CASE-STUDIES/DATA-ANALYST-AGENTS
+desc: ...
 tags:
   - status/active
   - knowledge/unverified
+id: data-analyst-agents
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 0.8
+freshness: unverified
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# DATA ANALYST AGENTS
+# docs/agentic-systems/12-CASE-STUDIES/DATA-ANALYST-AGENTS
 
 ## Purpose
 This document provides the conceptual and technical details for **DATA ANALYST AGENTS** within the Agentic Systems Academy.

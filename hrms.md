@@ -1,8 +1,11 @@
 ---
+name: hrms
 title: HRMS
+desc: ...
 entity_type: Venture
 venture_id: v_hrms
 created: 2026-05-15T20:57:44.652797
+updated: 2026-08-06T05:46:10Z
 ---
 
 # HRMS

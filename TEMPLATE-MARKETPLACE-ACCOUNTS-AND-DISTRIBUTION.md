@@ -1,3 +1,13 @@
+---
+name: TEMPLATE-MARKETPLACE-ACCOUNTS-AND-DISTRIBUTION
+title: 'Template Marketplace: Accounts, Emails & Distribution Sites'
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Template Marketplace: Accounts, Emails & Distribution Sites
 
 **Date:** 2026-08-05  

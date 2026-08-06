@@ -1,3 +1,13 @@
+---
+name: moneyprinter-output/64df5998-36bb-4801-beb3-34088ab4bb3c/funnel/04_RETENTION/upsell_loop
+title: Retention + Upsell — Site Inspection Tech
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Retention + Upsell — Site Inspection Tech
 
 ## Loop

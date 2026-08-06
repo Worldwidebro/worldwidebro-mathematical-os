@@ -1,8 +1,11 @@
 ---
+name: OBSIDIAN-GRAPH-SETUP
 title: Obsidian Knowledge Graph Setup
-description: Live Supabase ↔ Obsidian Dataview sync
+desc: ...
 tags: obsidian, dataview, knowledge-graph, setup
+description: Live Supabase ↔ Obsidian Dataview sync
 created: 2026-05-14
+updated: 2026-08-06T05:46:10Z
 ---
 
 # Obsidian Knowledge Graph Setup

@@ -1,20 +1,21 @@
 ---
-id: agent-incident-response
-type: document
-name: AGENT INCIDENT RESPONSE
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 0.8
-freshness: unverified
+name: docs/agentic-systems/10-SECURITY-GOVERNANCE/AGENT-INCIDENT-RESPONSE
+desc: ...
 tags:
   - status/active
   - knowledge/unverified
+id: agent-incident-response
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 0.8
+freshness: unverified
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# AGENT INCIDENT RESPONSE
+# docs/agentic-systems/10-SECURITY-GOVERNANCE/AGENT-INCIDENT-RESPONSE
 
 ## Purpose
 This document provides the conceptual and technical details for **AGENT INCIDENT RESPONSE** within the Agentic Systems Academy.

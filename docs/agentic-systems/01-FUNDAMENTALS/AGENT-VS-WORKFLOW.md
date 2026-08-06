@@ -1,20 +1,21 @@
 ---
-id: agent-vs-workflow
-type: document
-name: AGENT VS WORKFLOW
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 1.0
-freshness: current
+name: docs/agentic-systems/01-FUNDAMENTALS/AGENT-VS-WORKFLOW
+desc: ...
 tags:
   - status/active
   - knowledge/current
+id: agent-vs-workflow
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 1.0
+freshness: current
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# AGENT VS WORKFLOW
+# docs/agentic-systems/01-FUNDAMENTALS/AGENT-VS-WORKFLOW
 ## Purpose
 Differentiate between flexible agentic loops and structured agentic workflows. Help developers choose the correct architecture based on predictability requirements.
 

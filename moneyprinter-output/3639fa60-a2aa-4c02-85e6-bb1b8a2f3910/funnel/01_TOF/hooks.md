@@ -1,3 +1,13 @@
+---
+name: moneyprinter-output/3639fa60-a2aa-4c02-85e6-bb1b8a2f3910/funnel/01_TOF/hooks
+title: TOF Hooks — Workforce Management
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # TOF Hooks — Workforce Management
 
 Viral / attention layer. **5–20s.** Hook first, minimal explanation.

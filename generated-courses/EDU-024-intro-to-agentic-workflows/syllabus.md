@@ -1,3 +1,13 @@
+---
+name: generated-courses/EDU-024-intro-to-agentic-workflows/syllabus
+title: 'Course Syllabus: Intro to Agentic Workflows'
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Course Syllabus: Intro to Agentic Workflows
 
 **Audience:** Software Engineers

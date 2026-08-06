@@ -1,3 +1,13 @@
+---
+name: knowledge-graph-os/docs/PHASE-2
+title: Knowledge Graph OS — Phase 2 Architecture
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Knowledge Graph OS — Phase 2 Architecture
 
 **Tags:** infrastructure, phase-2, graph-engineering  

@@ -1,3 +1,13 @@
+---
+name: SYSTEM-LAUNCH-QUICKSTART
+title: HRMS + Niche Mastery OS — Launch Quickstart (May 14)
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # HRMS + Niche Mastery OS — Launch Quickstart (May 14)
 
 **You have 7 documents + 2 execution tracks. Here's what to do TODAY.**

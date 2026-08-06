@@ -1,3 +1,13 @@
+---
+name: WORLDWIDEBRO-OS/06-PARTNERS/SERVICENOW-INTEGRATION
+title: ServiceNow Integration Spec
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # ServiceNow Integration Spec
 
 ## Architecture

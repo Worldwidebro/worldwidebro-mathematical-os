@@ -1,3 +1,13 @@
+---
+name: PHASE-1-DEPLOYMENT-GUIDE
+title: 'Phase 1 Deployment Guide: Echo AI Agent (E-Commerce)'
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Phase 1 Deployment Guide: Echo AI Agent (E-Commerce)
 **Timeline:** May 10-11, 2026 (Monday-Tuesday)  
 **Goal:** Deploy first agent, test with 10 prospects, iterate

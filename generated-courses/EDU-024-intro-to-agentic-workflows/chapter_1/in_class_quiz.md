@@ -1,3 +1,13 @@
+---
+name: generated-courses/EDU-024-intro-to-agentic-workflows/chapter_1/in_class_quiz
+title: 'Quiz: Chapter 1: Foundations & Key Concepts'
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Quiz: Chapter 1: Foundations & Key Concepts
 
 1. What is the primary benefit of active recall over passive review?

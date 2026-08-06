@@ -1,3 +1,13 @@
+---
+name: WORLDWIDEBRO/01_DIRECTIVES/SESSION-SUMMARY-2026-08-04
+title: 'SESSION SUMMARY: WORLDWIDEBRO OPERATING SYSTEM'
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # SESSION SUMMARY: WORLDWIDEBRO OPERATING SYSTEM
 ## What we've built, what's clear, what's next
 

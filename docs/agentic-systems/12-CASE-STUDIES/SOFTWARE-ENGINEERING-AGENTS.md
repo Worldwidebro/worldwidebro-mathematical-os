@@ -1,20 +1,21 @@
 ---
-id: software-engineering-agents
-type: document
-name: SOFTWARE ENGINEERING AGENTS
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: planning
-confidence: 0.8
-freshness: unverified
+name: docs/agentic-systems/12-CASE-STUDIES/SOFTWARE-ENGINEERING-AGENTS
+desc: ...
 tags:
   - status/active
   - knowledge/unverified
+id: software-engineering-agents
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: planning
+confidence: 0.8
+freshness: unverified
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# SOFTWARE ENGINEERING AGENTS
+# docs/agentic-systems/12-CASE-STUDIES/SOFTWARE-ENGINEERING-AGENTS
 
 ## Purpose
 This document provides the conceptual and technical details for **SOFTWARE ENGINEERING AGENTS** within the Agentic Systems Academy.

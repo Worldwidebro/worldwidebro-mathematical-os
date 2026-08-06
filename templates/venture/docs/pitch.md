@@ -1,3 +1,13 @@
+---
+name: templates/venture/docs/pitch
+title: 'Venture Pitch Deck & Strategy: {{VENTURE_NAME}} ({{VENTURE_ID}})'
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Venture Pitch Deck & Strategy: {{VENTURE_NAME}} ({{VENTURE_ID}})
 
 ## 1. Executive Summary

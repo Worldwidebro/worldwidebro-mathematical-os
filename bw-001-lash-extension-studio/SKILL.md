@@ -1,5 +1,6 @@
 ---
-name: BW-001-Lash-Extension-Studio
+name: bw-001-lash-extension-studio/SKILL
+desc: ...
 type: venture
 layer: 2
 sector: beauty-wellness
@@ -13,9 +14,11 @@ canMonetize: true
 monetizationModel: service-based
 revenueStreams: ["service", "transaction", "subscription"]
 starredTools: [venture-factory-core]
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
 ---
 
-# Lash Extension Studio
+# bw-001-lash-extension-studio/SKILL
 
 **Venture ID:** BW-001-Lash-Extension-Studio
 **Sector:** beauty-wellness

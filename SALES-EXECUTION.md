@@ -1,3 +1,13 @@
+---
+name: SALES-EXECUTION
+title: HRMS Sales Execution Plan
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # HRMS Sales Execution Plan
 **Date**: May 13, 2026  
 **Target**: Close first customer by June 2, 2026 (3 weeks)  

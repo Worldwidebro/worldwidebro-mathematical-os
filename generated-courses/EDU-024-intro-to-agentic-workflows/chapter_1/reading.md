@@ -1,3 +1,13 @@
+---
+name: generated-courses/EDU-024-intro-to-agentic-workflows/chapter_1/reading
+title: 'Chapter 1: Foundations & Key Concepts'
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Chapter 1: Foundations & Key Concepts
 
 ## Core Concepts

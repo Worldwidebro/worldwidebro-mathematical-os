@@ -7,4 +7,6 @@ export function initNeo4j() {
 export function initSupabase() {
     return createClient(process.env.SUPABASE_URL || 'https://cyhzilqldouzgynacqpe.supabase.co', process.env.SUPABASE_ANON_KEY || '');
 }
+// Named export for neoDriver which is imported by matching.ts and other endpoints
+export const neoDriver = initNeo4j();
 //# sourceMappingURL=db.js.map

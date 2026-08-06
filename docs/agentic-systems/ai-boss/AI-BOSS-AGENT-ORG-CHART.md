@@ -1,20 +1,21 @@
 ---
-id: ai-boss-agent-org-chart
-type: document
-name: AI BOSS AGENT ORG CHART
-status: active
-owner: "[[Worldwidebro]]"
-created: 2026-08-04
-updated: 2026-08-04
-source: proprietary
-confidence: 1.0
-freshness: current
+name: docs/agentic-systems/ai-boss/AI-BOSS-AGENT-ORG-CHART
+desc: ...
 tags:
   - status/active
   - knowledge/current
+id: ai-boss-agent-org-chart
+type: document
+status: active
+owner: "[[Worldwidebro]]"
+source: proprietary
+confidence: 1.0
+freshness: current
+created: 2026-08-04
+updated: 2026-08-06T05:46:10Z
 ---
 
-# AI BOSS AGENT ORG CHART
+# docs/agentic-systems/ai-boss/AI-BOSS-AGENT-ORG-CHART
 ## Purpose
 Map the multi-agent organizational chart of Worldwidebro Holdings OpCos.
 

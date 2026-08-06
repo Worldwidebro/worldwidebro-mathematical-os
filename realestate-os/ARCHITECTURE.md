@@ -1,3 +1,13 @@
+---
+name: realestate-os/ARCHITECTURE
+title: RE-OS Unified Architecture
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # RE-OS Unified Architecture
 
 **Single Operating System for Entire Property Lifecycle: PM → Brokerage → Investing → Construction → Lending**

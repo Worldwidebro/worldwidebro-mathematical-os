@@ -1,14 +1,18 @@
 ---
+name: AGENT-BRACKET-STANDARD
 title: Agent Bracket Standard (Agent Command Protocol)
+desc: ...
 version: 1.0
 date: 2026-07-30
 owner: Hermes Agent
 applies: All agents in ecosystem (Hermes, BuildAgent, SalesAgent, etc.)
 companion: [[TAGGING-STANDARD.md]] (venture command protocol)
 related: [[AGENT_ONTOLOGY.md]], [[AGENT_PROTOCOL.md]], [[AGENT_SPEC.md]]
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
 ---
 
-# Agent Bracket Standard
+# Agent Bracket Standard (Agent Command Protocol)
 
 **Purpose**: Define standardized bracket vocabulary for agent commands, directives, and state management. Enables Hermes and sub-agents to parse commands consistently, maintain state, and coordinate work across 712 ventures.
 
