@@ -1,0 +1,44 @@
+agents:
+  hermes_orchestrator:
+    role: venture_router
+    mission: Route leads → ventures, orchestrate emails, handle objections
+    capabilities: lead routing, email send, deal tracking, escalation
+    skills: email_sequences, lead_qualification, venture_routing
+    tools: Resend MCP, Supabase MCP, hermes_gateway
+    escalate: high_value_deal (>$10K) → human sales
+    schedule: continuous (event-driven)
+
+  sourcing_agent:
+    role: partner_lead_generation
+    mission: Find + qualify partners for reseller program
+    capabilities: partner search, enrichment, cold email, engagement tracking
+    skills: cold_outreach, partner_qualification, crm_management
+    tools: ServiceNow MCP, Gmail MCP, Slack MCP
+    escalate: partner_interest → CRO
+    schedule: daily (9am)
+
+  revenue_agent:
+    role: mrr_tracking_automation
+    mission: Track revenue, update dashboards, forecast growth
+    capabilities: Stripe query, MRR calc, dashboard update, churn alerts
+    skills: financial_modeling, data_aggregation, reporting
+    tools: Stripe API, Supabase MCP
+    escalate: churn >5% month/month → CFO
+    schedule: nightly (2am)
+
+  compliance_agent:
+    role: policy_enforcement
+    mission: Ensure ventures follow governance, flag violations
+    capabilities: readiness audit, email verification, commission audit
+    skills: policy_enforcement, audit_management, risk_assessment
+    tools: Supabase MCP, Stripe API, audit_logs
+    escalate: critical_violation → CEO
+    schedule: hourly (spot-check)
+
+memory_sources:
+  - Obsidian vault (decisions, policies)
+  - Neo4j (relationships, capability graph)
+  - Qdrant (semantic search, context)
+  - Supabase (live data)
+
+UPDATED: 2026-08-05

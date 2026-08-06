@@ -1,0 +1,46 @@
+role:
+  id: ROLE-PERFORMANCE-RESEARCHER
+  name: Performance Researcher
+  objective: "Collect all relevant speed metrics across infrastructure, databases, agents, and tools."
+  responsibilities:
+    - run_benchmarks
+    - query_observability_stack
+    - collect_logs
+    - gather_profiling_data
+  inputs:
+    - scope: "global or specific service name (e.g., 'dispatch-engine', 'neo4j')"
+    - metrics_since: "timestamp (ISO 8601, default: last 24h)"
+    - target_workflow: "optional workflow_id to profile (default: dispatch_v1)"
+  outputs:
+    raw_metrics:
+      type: object
+      properties:
+        p50_latency_ms: number
+        p95_latency_ms: number
+        p99_latency_ms: number
+        throughput_rps: number
+        cpu_percent: number
+        memory_mb: number
+        error_rate: number
+    profiling_report:
+      type: object
+      properties:
+        hottest_functions: array
+        call_graph: object
+        flame_graph_svg: string
+    benchmark_results:
+      type: object
+      properties:
+        workflow_iterations: integer
+        concurrency_level: integer
+        total_duration_seconds: number
+  tools_permitted:
+    - metrics_collector
+    - codebase_profiler
+    - docker_stats
+    - benchmark_runner
+  success_criteria:
+    - "At least 5 distinct latency percentiles captured"
+    - "CPU/memory/disk usage for all services reported"
+    - "Hottest 10 functions identified from flamegraph"
+    - "Baseline metrics saved to graph for comparison"

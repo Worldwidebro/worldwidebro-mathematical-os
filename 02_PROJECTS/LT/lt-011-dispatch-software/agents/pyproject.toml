@@ -1,0 +1,16 @@
+[project]
+name = "dispatch-agents"
+version = "1.0.0"
+description = "Agentic operations engine for DispatchOS"
+dependencies = [
+    "pydantic>=2.0.0",
+    "neo4j>=5.0.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+    "pyright>=1.1.0",
+    "ruff>=0.1.0",
+]

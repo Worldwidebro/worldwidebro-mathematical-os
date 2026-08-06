@@ -7,12 +7,14 @@
 
 ## 🎯 QUICK NAVIGATION
 
-### I Need to Know
-- **What are we building?** → [VENTURE-OPERATIONS-FRAMEWORK.md](VENTURE-OPERATIONS-FRAMEWORK.md)
-- **How are we building it?** → [OPERATIONAL-ARCHITECTURE.md](OPERATIONAL-ARCHITECTURE.md)
+### I Need to Know (The 4 Graphs)
+- **What are we building?** → [VENTURE-OPERATIONS-FRAMEWORK.md](VENTURE-OPERATIONS-FRAMEWORK.md) **(Venture Graph: 712 ventures)**
+- **Who decides?** → [AGENTS.md](AGENTS.md) **(Agent Graph: 35 Intelligence Types + Dispatch)**
+- **What do we know?** → [SYSTEM-AWARENESS-AUDIT.md](SYSTEM-AWARENESS-AUDIT.md) **(Knowledge Graph: files, tools, costs)**
+- **What can we use?** → [REPOS-ORGANIZATION-MAP.md](REPOS-ORGANIZATION-MAP.md) **(Computer Graph: 1,592 repos + Tier 1-9 services)**
+- **How are we building it?** → [TASKS-TO-FIRST-REVENUE.md](TASKS-TO-FIRST-REVENUE.md) **(12-week sprint to $5K MRR)**
 - **What's our progress?** → [progress.md](progress.md)
 - **What are the blockers?** → [BLOCKER-STATUS-SESSION-2.md](BLOCKER-STATUS-SESSION-2.md)
-- **What files exist and how do they connect?** → [SYSTEM-INTEGRATION-MAP.md](SYSTEM-INTEGRATION-MAP.md)
 
 ### I Need to Execute
 - **How do I structure ClickUp?** → [CLICKUP-SETUP-GUIDE.md](CLICKUP-SETUP-GUIDE.md)
@@ -105,6 +107,7 @@ PHASE-1-CHECKLIST.md                Task completion checklist
 ### INTEGRATION MAP (This Session)
 ```
 SYSTEM-INTEGRATION-MAP.md           File relationships & awareness gaps
+REPOS-ORGANIZATION-MAP.md           1,717 categorized repositories by phase/dept/caps
 MASTER-INDEX.md                     This file - central navigation
 ```
 

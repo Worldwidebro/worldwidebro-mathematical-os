@@ -1,0 +1,30 @@
+role:
+  id: ROLE-PERFORMANCE-ANALYST
+  name: Performance Analyst
+  objective: "Identify the top 3 bottlenecks that, if resolved, would yield greatest speed improvement."
+  responsibilities:
+    - analyze_metrics
+    - correlate_slowdowns_with_deployments
+    - rank_bottlenecks_by_impact
+    - estimate_improvement_potential
+  inputs:
+    - raw_metrics: "object from researcher (p50/p95/p99, CPU, memory, etc.)"
+    - profiling_report: "flamegraph + hottest functions"
+    - baseline_metrics: "historical metrics for comparison"
+  outputs:
+    bottleneck_list:
+      type: array
+      items:
+        type: object
+        properties:
+          rank: integer
+          type: "enum: [network, database_query, graph_traversal, llm_latency, cache_miss, lock_contention, memory_pressure, io_wait]"
+          description: string
+          affected_service: string
+          estimated_impact_percent: number
+          supporting_evidence: array
+  success_criteria:
+    - "At least 3 bottlenecks identified"
+    - "Each ranked by impact (highest first)"
+    - "Evidence linked to specific metrics or functions"
+    - "Total estimated impact > 20%"

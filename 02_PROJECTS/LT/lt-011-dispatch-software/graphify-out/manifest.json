@@ -1,0 +1,122 @@
+{
+  "/Users/acebless/Documents/02_PROJECTS/LT/lt-011-dispatch-software/.vercel/project.json": {
+    "mtime": 1785911882.06149,
+    "ast_hash": "0700b813a2f504f83c27e92b0cc1ec6f",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/02_PROJECTS/LT/lt-011-dispatch-software/agents/dispatch_engine.py": {
+    "mtime": 1785938625.2339768,
+    "ast_hash": "3ed9b8f9d17974bdbb7b655f59c5d22e",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/02_PROJECTS/LT/lt-011-dispatch-software/agents/llm_gateway.py": {
+    "mtime": 1785938716.583162,
+    "ast_hash": "0a8188cb03b52babf2b38788d23a1220",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/02_PROJECTS/LT/lt-011-dispatch-software/agents/test_dispatch_engine.py": {
+    "mtime": 1785938545.9922748,
+    "ast_hash": "76cb7d919bc3c8170d3cc1531393cf94",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/02_PROJECTS/LT/lt-011-dispatch-software/agents/test_llm_gateway.py": {
+    "mtime": 1785938675.7222123,
+    "ast_hash": "6bc25ab014e4e9bfef91ce4a4e93caef",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/02_PROJECTS/LT/lt-011-dispatch-software/db/migrations/001_initial_dispatch_os.sql": {
+    "mtime": 1785911272.0544057,
+    "ast_hash": "976e9c0ddcb9de00a2d6b606b76ba599",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/02_PROJECTS/LT/lt-011-dispatch-software/services/api/package.json": {
+    "mtime": 1785911394.1249244,
+    "ast_hash": "b1daa136988377c5a87ff47855b52b60",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/02_PROJECTS/LT/lt-011-dispatch-software/services/api/src/db.ts": {
+    "mtime": 1785911916.3710992,
+    "ast_hash": "3c6e1c915bc7f255b8421341ab864eb3",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/02_PROJECTS/LT/lt-011-dispatch-software/services/api/src/server.ts": {
+    "mtime": 1785911662.2665784,
+    "ast_hash": "092d654de230765e73c347e1de509c10",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/02_PROJECTS/LT/lt-011-dispatch-software/services/api/tsconfig.json": {
+    "mtime": 1785911350.1721025,
+    "ast_hash": "8e68b2463c6e7e30596eef549fdd47fe",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/02_PROJECTS/LT/lt-011-dispatch-software/tests/integration/run_integration.js": {
+    "mtime": 1785911513.8137863,
+    "ast_hash": "90c69b032fdafcc11054e628542e8507",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/02_PROJECTS/LT/lt-011-dispatch-software/vercel.json": {
+    "mtime": 1785911856.1300383,
+    "ast_hash": "d12d2686420842f01d7201ba510227ab",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/02_PROJECTS/LT/lt-011-dispatch-software/.vercel/README.txt": {
+    "mtime": 1785911882.062066,
+    "ast_hash": "2b13c79d37d6ed82a3255b83b6815034",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/02_PROJECTS/LT/lt-011-dispatch-software/README.md": {
+    "mtime": 1785911131.9102578,
+    "ast_hash": "e1c44900a437cce283e3070e2badfec7",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/02_PROJECTS/LT/lt-011-dispatch-software/apps/customer-portal/index.html": {
+    "mtime": 1785912078.2387054,
+    "ast_hash": "8fce4721aa46323eb9eaa7eca68a54dd",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/02_PROJECTS/LT/lt-011-dispatch-software/apps/dispatch-web/index.html": {
+    "mtime": 1785912415.0472589,
+    "ast_hash": "6ff46e79defb9067f54fb543f6557507",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/02_PROJECTS/LT/lt-011-dispatch-software/apps/driver-app/index.html": {
+    "mtime": 1785912075.2791834,
+    "ast_hash": "768f5c18b85b6f37793cc8466407884b",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/02_PROJECTS/LT/lt-011-dispatch-software/docs/AGENTS.md": {
+    "mtime": 1785911180.742471,
+    "ast_hash": "f07bad8b5b464e1ec4aef32469959534",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/02_PROJECTS/LT/lt-011-dispatch-software/docs/ARCHITECTURE.md": {
+    "mtime": 1785911177.3890393,
+    "ast_hash": "be91fbbaea108f25e78c65dfb423f294",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/02_PROJECTS/LT/lt-011-dispatch-software/docs/DOMAIN-MODEL.md": {
+    "mtime": 1785911188.5400898,
+    "ast_hash": "8b0c762c19d26d2fde026f9c1f154bd9",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/02_PROJECTS/LT/lt-011-dispatch-software/docs/LEADS-AND-CALLS.md": {
+    "mtime": 1785911649.0356197,
+    "ast_hash": "d9013082ba2ea1e6d1100b625da3646f",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/02_PROJECTS/LT/lt-011-dispatch-software/docs/MARKETPLACES-AND-BIDDING.md": {
+    "mtime": 1785936646.9585214,
+    "ast_hash": "657482f3da6fa43a78fe4ee1fd89c02d",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/02_PROJECTS/LT/lt-011-dispatch-software/docs/PRODUCT.md": {
+    "mtime": 1785911595.225889,
+    "ast_hash": "b62c60538a604fe50c5c4b030bf0abd6",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/02_PROJECTS/LT/lt-011-dispatch-software/docs/WORKFLOWS.md": {
+    "mtime": 1785911184.0765765,
+    "ast_hash": "8bbb8fe2b76e67519d1b338b9b1f1cfb",
+    "semantic_hash": ""
+  }
+}

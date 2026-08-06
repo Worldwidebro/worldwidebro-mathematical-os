@@ -1,0 +1,19 @@
+{
+  "venture_id": "LT-005",
+  "name": "Medical Courier Dispatch",
+  "sector": "Logistics",
+  "parent_opco": "CON-OS",
+  "capabilities": [
+    "dispatching",
+    "route-optimization",
+    "delivery-tracking"
+  ],
+  "synergies": [
+    {
+      "other_id": "CON-001",
+      "type": "SHARES_RESOURCES"
+    }
+  ],
+  "created_at": "2026-08-05T02:12:53.072839",
+  "status": "active"
+}

@@ -1,0 +1,28 @@
+{
+  "benchmark": "npm run test",
+  "commit_strategy": "all",
+  "comparison_blocked": false,
+  "current_eval_epoch": 1,
+  "execution_backend": "worktree",
+  "frontier_strategy": {
+    "kind": "pareto_per_task",
+    "params": {
+      "k": 5,
+      "task_floor": 0.0
+    }
+  },
+  "gate": null,
+  "initialized_at": "2026-08-05T16:29:23+00:00",
+  "max_attempts": 3,
+  "metric": "max",
+  "per_exp_timeout": 120,
+  "project_name": "lt-011-dispatch-software",
+  "repo_root": "/Users/acebless/Documents/02_PROJECTS/LT/lt-011-dispatch-software",
+  "runtime_env": {
+    "dotenv": [],
+    "inherit_shell": true
+  },
+  "target": ".",
+  "workspace_dir": ".evo",
+  "worktrees_dir": "worktrees"
+}

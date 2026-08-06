@@ -1,0 +1,26 @@
+{
+  "name": "LT-011 Dispatch Principal",
+  "goals": [
+    {
+      "metric": "fill_rate",
+      "target": 0.9,
+      "current": 0.72,
+      "tolerance": 0.05,
+      "action_if_miss": "Run DISPATCH-PERF-OPTIMIZE workflow"
+    },
+    {
+      "metric": "gross_margin_pct",
+      "target": 0.32,
+      "current": 0.28,
+      "tolerance": 0.03,
+      "action_if_miss": "Escalate low-margin loads to Decision Agent"
+    },
+    {
+      "metric": "time_to_assignment_hours",
+      "target": 2.0,
+      "current": 1.8,
+      "tolerance": 0.1,
+      "action_if_miss": "Increase carrier matching pool"
+    }
+  ]
+}

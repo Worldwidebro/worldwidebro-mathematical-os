@@ -1,0 +1,20 @@
+{
+  "venture_id": "staffing-ops-001",
+  "name": "Ops Staffing",
+  "sector": "Staffing",
+  "parent_opco": "CON-OS",
+  "capabilities": [
+    "recruiting",
+    "background-checks",
+    "onboarding",
+    "payroll"
+  ],
+  "synergies": [
+    {
+      "other_id": "CON-001",
+      "type": "PARTNERS_WITH"
+    }
+  ],
+  "created_at": "2026-08-05T02:12:49.481502",
+  "status": "active"
+}

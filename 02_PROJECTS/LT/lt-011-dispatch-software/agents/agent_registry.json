@@ -1,0 +1,60 @@
+{
+  "agents": {
+    "order_agent": {
+      "name": "Order Intake Agent",
+      "prompt_path": "agents/order_agent/system_prompt.md",
+      "schema_path": "agents/order_agent/output_schema.md",
+      "default_model": "gemini-1.5-flash",
+      "fallback_model": "gemini-1.5-pro",
+      "description": "Validates, parses, and sanitizes incoming orders."
+    },
+    "matching_agent": {
+      "name": "Carrier Matching Agent",
+      "prompt_path": "agents/carrier_matcher/system_prompt.md",
+      "schema_path": "agents/carrier_matcher/output_schema.md",
+      "default_model": "gemini-1.5-pro",
+      "fallback_model": "gpt-4o",
+      "description": "Selects the optimal carrier and vehicle match for a load."
+    },
+    "rate_negotiator": {
+      "name": "Rate Negotiation Agent",
+      "prompt_path": "agents/rate_negotiator/system_prompt.md",
+      "schema_path": "agents/rate_negotiator/output_schema.md",
+      "default_model": "gemini-1.5-pro",
+      "fallback_model": "gpt-4o",
+      "description": "Calculates lane price targets to optimize gross margins."
+    },
+    "tracking_agent": {
+      "name": "GPS Telemetry Tracking Agent",
+      "prompt_path": "agents/tracking/system_prompt.md",
+      "schema_path": "agents/tracking/output_schema.md",
+      "default_model": "gemini-1.5-flash",
+      "fallback_model": "gemini-1.5-pro",
+      "description": "Monitors active geolocation streams and alerts on geofence deviations."
+    },
+    "exception_agent": {
+      "name": "Exception Mitigator Agent",
+      "prompt_path": "agents/exception/system_prompt.md",
+      "schema_path": "agents/exception/output_schema.md",
+      "default_model": "gemini-1.5-pro",
+      "fallback_model": "gpt-4o",
+      "description": "Resolves ETA delay exceptions and triggers driver escalations."
+    },
+    "billing_agent": {
+      "name": "Billing and Settlement Agent",
+      "prompt_path": "agents/billing/system_prompt.md",
+      "schema_path": "agents/billing/output_schema.md",
+      "default_model": "gemini-1.5-flash",
+      "fallback_model": "gemini-1.5-pro",
+      "description": "Verifies POD signatures using OCR and generates client invoices."
+    },
+    "oss_scout": {
+      "name": "OSS Scout Agent",
+      "prompt_path": "agents/oss_scout/system_prompt.md",
+      "schema_path": "agents/oss_scout/output_schema.md",
+      "default_model": "gemini-1.5-flash",
+      "fallback_model": "gemini-1.5-pro",
+      "description": "Indexes and vets candidate open-source modules for the knowledge graph."
+    }
+  }
+}

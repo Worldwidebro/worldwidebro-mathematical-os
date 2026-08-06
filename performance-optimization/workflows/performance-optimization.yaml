@@ -1,0 +1,115 @@
+workflow:
+  id: PERF-OPTIMIZE-V1
+  name: Performance Optimization Workflow
+  description: "Automatically discover bottlenecks, plan fixes, test in sandbox, verify improvement, and learn."
+  start: discovery
+
+  phases:
+    discovery:
+      agent_id: performance_researcher
+      agent_class: PerformanceResearcherAgent
+      inputs:
+        scope: "{{ params.scope | default('global') }}"
+        target_workflow: "{{ params.target_workflow | default('dispatch_v1') }}"
+      outputs:
+        - raw_metrics
+        - profiling_report
+        - benchmark_results
+      next: analysis
+      timeout_seconds: 1200  # 20 minutes for collection + benchmark
+
+    analysis:
+      agent_id: performance_analyst
+      agent_class: PerformanceAnalystAgent
+      inputs:
+        raw_metrics: "{{ discovery.raw_metrics }}"
+        profiling_report: "{{ discovery.profiling_report }}"
+        baseline_metrics: "{{ discovery.benchmark_results }}"
+      outputs:
+        - bottleneck_list
+      next: prioritize
+      timeout_seconds: 300
+
+    prioritize:
+      agent_id: optimization_planner
+      agent_class: OptimizationPlannerAgent
+      inputs:
+        bottleneck: "{{ analysis.bottleneck_list[0] }}"
+      outputs:
+        - change_proposal
+        - estimated_speedup
+        - risk_level
+      condition: "{{ analysis.bottleneck_list | length > 0 }}"
+      next: experiment
+      else_branch: end
+      timeout_seconds: 600
+
+    experiment:
+      agent_id: experiment_runner
+      agent_class: ExperimentRunnerAgent
+      inputs:
+        proposal: "{{ prioritize.change_proposal }}"
+        baseline_metrics: "{{ discovery.benchmark_results }}"
+      outputs:
+        - post_change_metrics
+        - improvement_percent
+      next: verify
+      timeout_seconds: 1200
+
+    verify:
+      agent_id: performance_verifier
+      agent_class: PerformanceVerifierAgent
+      inputs:
+        pre_metrics: "{{ discovery.benchmark_results }}"
+        post_metrics: "{{ experiment.post_change_metrics }}"
+        improvement_percent: "{{ experiment.improvement_percent }}"
+        proposal: "{{ prioritize.change_proposal }}"
+        risk_level: "{{ prioritize.risk_level }}"
+      outputs:
+        - verdict
+        - confidence
+        - recommendation
+      next: learning
+      timeout_seconds: 300
+
+    learning:
+      agent_id: performance_evaluator
+      agent_class: PerformanceEvaluatorAgent
+      inputs:
+        outcome: "{{ verify }}"
+        change: "{{ prioritize.change_proposal }}"
+        improvement: "{{ experiment.improvement_percent }}"
+      outputs:
+        - lessons_learned
+        - update_model
+      next: end
+      timeout_seconds: 600
+
+  ###
+  ### End Conditions
+  ###
+
+  end_conditions:
+    - name: "no_bottlenecks_found"
+      trigger: "{{ analysis.bottleneck_list | length == 0 }}"
+      message: "No significant bottlenecks identified. System performing well."
+
+    - name: "improvement_deployed"
+      trigger: "{{ verify.recommendation == 'deploy' }}"
+      message: "Performance improvement verified and deployed."
+
+    - name: "improvement_rolled_back"
+      trigger: "{{ verify.recommendation == 'rollback' }}"
+      message: "Improvement did not meet threshold. Rolled back."
+
+  ###
+  ### Schedule: Run daily at 2 AM UTC
+  ###
+
+  schedule:
+    frequency: "daily"
+    hour: 2
+    timezone: "UTC"
+    params:
+      scope: "global"
+      target_workflow: "dispatch_v1"

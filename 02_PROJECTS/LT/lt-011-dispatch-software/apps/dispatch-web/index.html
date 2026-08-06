@@ -67,6 +67,7 @@
       padding: 10px 14px;
       border-radius: 8px;
       transition: all 0.2s ease;
+      cursor: pointer;
     }
 
     aside nav a.active, aside nav a:hover {
@@ -106,12 +107,16 @@
       cursor: pointer;
     }
 
-    /* Content */
-    .content {
+    /* Content Views */
+    .view-section {
+      display: none;
       padding: 40px;
-      display: flex;
       flex-direction: column;
       gap: 32px;
+    }
+
+    .view-section.active {
+      display: flex;
     }
 
     /* Stats Grid */
@@ -293,6 +298,42 @@
       border-radius: 8px;
       padding: 14px;
     }
+
+    /* Map visualizer */
+    .map-box {
+      height: 350px;
+      background-color: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .map-line {
+      width: 80%;
+      height: 2px;
+      background: linear-gradient(90deg, var(--accent-blue) 0%, var(--accent-green) 100%);
+      position: relative;
+    }
+
+    .map-dot {
+      width: 12px;
+      height: 12px;
+      background-color: var(--accent-blue);
+      border-radius: 50%;
+      position: absolute;
+      top: -5px;
+      left: 0;
+      animation: driveSim 8s infinite linear;
+    }
+
+    @keyframes driveSim {
+      0% { left: 0%; background-color: var(--accent-blue); }
+      100% { left: 100%; background-color: var(--accent-green); }
+    }
   </style>
 </head>
 <body>
@@ -300,25 +341,25 @@
   <!-- Sidebar -->
   <aside>
     <h1>⚙️ DispatchOS</h1>
-    <nav>
-      <a href="#" class="active">Overview</a>
-      <a href="#">Live Dispatch</a>
-      <a href="#">Load Board</a>
-      <a href="#">Drivers</a>
-      <a href="#">Fleet</a>
-      <a href="#">Finance</a>
+    <nav id="sidebarNav">
+      <a onclick="switchTab('overview')" id="nav-overview" class="active">Overview</a>
+      <a onclick="switchTab('live-dispatch')" id="nav-live-dispatch">Live Dispatch</a>
+      <a onclick="switchTab('load-board')" id="nav-load-board">Load Board</a>
+      <a onclick="switchTab('drivers')" id="nav-drivers">Drivers</a>
+      <a onclick="switchTab('fleet')" id="nav-fleet">Fleet</a>
+      <a onclick="switchTab('finance')" id="nav-finance">Finance</a>
     </nav>
   </aside>
 
   <!-- Main Content -->
   <main>
     <header>
-      <h2>Operations Control Panel</h2>
+      <h2 id="headerTitle">Operations Control Panel</h2>
       <button class="btn-create" onclick="openOrderModal()">+ Create Order</button>
     </header>
 
-    <div class="content">
-      <!-- Stats -->
+    <!-- 1. Overview Section -->
+    <div class="view-section active" id="view-overview">
       <div class="stats-grid">
         <div class="stat-card">
           <p>Total Shipments</p>
@@ -338,7 +379,6 @@
         </div>
       </div>
 
-      <!-- Tables Split -->
       <div class="dashboard-split">
         <div class="panel-box">
           <h4>Live Active Loads</h4>
@@ -373,6 +413,142 @@
         </div>
       </div>
     </div>
+
+    <!-- 2. Live Dispatch Section -->
+    <div class="view-section" id="view-live-dispatch">
+      <div class="panel-box">
+        <h4>Live GPS Trackers & Geofences</h4>
+        <div class="map-box">
+          <div class="map-line">
+            <div class="map-dot"></div>
+          </div>
+          <span style="position: absolute; bottom: 20px; font-size: 13px; color: var(--tx-secondary);">Active route: Charlotte, NC ➔ Atlanta, GA</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Load Board Section -->
+    <div class="view-section" id="view-load-board">
+      <div class="panel-box">
+        <h4>Tender Queue & Market Matches</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Tender ID</th>
+              <th>Origin</th>
+              <th>Destination</th>
+              <th>Carrier Base Rate</th>
+              <th>Bids Recv</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#TNDR-8821</td>
+              <td>Charlotte, NC</td>
+              <td>Atlanta, GA</td>
+              <td>$1,250.00</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>#TNDR-8822</td>
+              <td>Raleigh, NC</td>
+              <td>Savannah, GA</td>
+              <td>$1,480.00</td>
+              <td>1</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 4. Drivers Section -->
+    <div class="view-section" id="view-drivers">
+      <div class="panel-box">
+        <h4>Driver Rosters</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Driver</th>
+              <th>License / Endorsement</th>
+              <th>Active Vehicle</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John Smith</td>
+              <td>CDL-A / HAZMAT</td>
+              <td>Volvo VNL #772</td>
+              <td><span class="badge badge-in_transit">ON DUTY</span></td>
+            </tr>
+            <tr>
+              <td>Jane Doe</td>
+              <td>CDL-A / Tanker</td>
+              <td>Freightliner #104</td>
+              <td><span class="badge badge-draft">OFF DUTY</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 5. Fleet Section -->
+    <div class="view-section" id="view-fleet">
+      <div class="panel-box">
+        <h4>Fleet Profiles & Maintenance Logs</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Truck ID</th>
+              <th>Make/Model</th>
+              <th>Last DOT Inspection</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Volvo VNL #772</td>
+              <td>Volvo VNL 860</td>
+              <td>2026-06-12</td>
+              <td><span class="badge badge-delivered">COMPLIANT</span></td>
+            </tr>
+            <tr>
+              <td>Freightliner #104</td>
+              <td>Cascadia 2024</td>
+              <td>2026-05-18</td>
+              <td><span class="badge badge-delivered">COMPLIANT</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 6. Finance Section -->
+    <div class="view-section" id="view-finance">
+      <div class="panel-box">
+        <h4>Settlements & Gross Margins</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Load ID</th>
+              <th>Client Pay</th>
+              <th>Carrier Pay</th>
+              <th>Gross Profit</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#LOAD-10482</td>
+              <td>$1,500.00</td>
+              <td>$1,285.00</td>
+              <td style="color: var(--accent-green)">+$215.00</td>
+              <td><span class="badge badge-delivered">SETTLED</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
   </main>
 
   <!-- Create Order Modal -->
@@ -405,7 +581,36 @@
   </div>
 
   <script>
-    const API_URL = 'http://localhost:4005/api';
+    const API_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
+      ? 'http://localhost:4005/api' 
+      : '/api';
+
+    // Switch View Tabs
+    function switchTab(tabName) {
+      // Deactivate all nav links
+      document.querySelectorAll('#sidebarNav a').forEach(a => a.classList.remove('active'));
+      // Deactivate all sections
+      document.querySelectorAll('.view-section').forEach(sec => sec.classList.remove('active'));
+
+      // Activate correct ones
+      const targetNav = document.getElementById(`nav-${tabName}`);
+      if (targetNav) targetNav.classList.add('active');
+
+      const targetSec = document.getElementById(`view-${tabName}`);
+      if (targetSec) targetSec.classList.add('active');
+
+      // Update Header title
+      const headerTitle = document.getElementById('headerTitle');
+      const titles = {
+        overview: 'Operations Control Panel',
+        'live-dispatch': 'Live Dispatch Tracking',
+        'load-board': 'Carrier Load Board',
+        drivers: 'Active Driver Directory',
+        fleet: 'Fleet Maintenance Compliance',
+        finance: 'Settlement & Finance Audit'
+      };
+      headerTitle.innerText = titles[tabName] || 'Operations Panel';
+    }
 
     async function loadLoads() {
       try {
@@ -428,7 +633,6 @@
             tbody.appendChild(tr);
           });
           
-          // Update total aggregate stats dynamically
           document.getElementById('statTotal').innerText = data.loads.length;
         }
       } catch (err) {
@@ -473,10 +677,9 @@
       }
     }
 
-    // Start polling active logs
     document.addEventListener('DOMContentLoaded', () => {
       loadLoads();
-      setInterval(loadLoads, 5000); // Poll every 5s
+      setInterval(loadLoads, 5000);
     });
   </script>
 </body>

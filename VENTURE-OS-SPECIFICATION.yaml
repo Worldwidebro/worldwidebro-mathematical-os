@@ -1,0 +1,716 @@
+# VENTURE OS SPECIFICATION v1.0
+# Canonical operating system for managing 28-phase venture lifecycle
+# Generated: 2026-08-05
+
+version: "1.0"
+last_updated: "2026-08-05"
+
+---
+# SECTION 1: 28 CANONICAL PHASES
+# Each phase is a state in the venture state machine
+
+phases:
+  PH-00:
+    id: PH-00
+    name: FOUNDATION
+    order: 0
+    dependencies: []
+
+  PH-01:
+    id: PH-01
+    name: DISCOVERY
+    order: 1
+    dependencies: [PH-00]
+
+  PH-02:
+    id: PH-02
+    name: RESEARCH
+    order: 2
+    dependencies: [PH-01]
+
+  PH-03:
+    id: PH-03
+    name: BUSINESS-MODEL
+    order: 3
+    dependencies: [PH-02]
+
+  PH-04:
+    id: PH-04
+    name: CAPITAL
+    order: 4
+    dependencies: [PH-03]
+
+  PH-05:
+    id: PH-05
+    name: FINANCIAL
+    order: 5
+    dependencies: [PH-04]
+
+  PH-06:
+    id: PH-06
+    name: LEGAL
+    order: 6
+    dependencies: [PH-05]
+
+  PH-07:
+    id: PH-07
+    name: ORGANIZATION
+    order: 7
+    dependencies: [PH-06]
+
+  PH-08:
+    id: PH-08
+    name: INFRASTRUCTURE
+    order: 8
+    dependencies: [PH-07]
+
+  PH-09:
+    id: PH-09
+    name: ENGINEERING
+    order: 9
+    dependencies: [PH-08]
+
+  PH-10:
+    id: PH-10
+    name: AGENTS
+    order: 10
+    dependencies: [PH-09]
+
+  PH-11:
+    id: PH-11
+    name: PRODUCT
+    order: 11
+    dependencies: [PH-09, PH-10]
+
+  PH-12:
+    id: PH-12
+    name: MARKETING
+    order: 12
+    dependencies: [PH-11]
+
+  PH-13:
+    id: PH-13
+    name: SALES
+    order: 13
+    dependencies: [PH-12, PH-11]
+    financial_event: "revenue_generation"
+
+  PH-14:
+    id: PH-14
+    name: OPERATIONS
+    order: 14
+    dependencies: [PH-13]
+
+  PH-15:
+    id: PH-15
+    name: SUPPORT
+    order: 15
+    dependencies: [PH-14]
+
+  PH-16:
+    id: PH-16
+    name: FINANCIAL-OPS
+    order: 16
+    dependencies: [PH-15]
+    financial_event: "cost_and_revenue_tracking"
+
+  PH-17:
+    id: PH-17
+    name: OBSERVABILITY
+    order: 17
+    dependencies: [PH-16]
+
+  PH-18:
+    id: PH-18
+    name: ANALYTICS
+    order: 18
+    dependencies: [PH-17]
+
+  PH-19:
+    id: PH-19
+    name: R&D
+    order: 19
+    dependencies: [PH-18]
+
+  PH-20:
+    id: PH-20
+    name: RED-TEAM
+    order: 20
+    dependencies: [PH-19]
+
+  PH-21:
+    id: PH-21
+    name: KNOWLEDGE
+    order: 21
+    dependencies: [PH-20]
+
+  PH-22:
+    id: PH-22
+    name: OPTIMIZATION
+    order: 22
+    dependencies: [PH-21]
+
+  PH-23:
+    id: PH-23
+    name: PORTFOLIO
+    order: 23
+    dependencies: [PH-22]
+
+  PH-24:
+    id: PH-24
+    name: PARTNERSHIPS
+    order: 24
+    dependencies: [PH-23]
+
+  PH-25:
+    id: PH-25
+    name: SCALE
+    order: 25
+    dependencies: [PH-24]
+
+  PH-26:
+    id: PH-26
+    name: INNOVATION
+    order: 26
+    dependencies: [PH-25]
+
+  PH-27:
+    id: PH-27
+    name: EVOLUTION
+    order: 27
+    dependencies: [PH-26]
+
+  PH-28:
+    id: PH-28
+    name: EXIT
+    order: 28
+    dependencies: [PH-27]
+
+---
+# SECTION 2: VENTURE TASK LISTS (Per-Venture Execution)
+
+venture_task_lists:
+
+  # ========== VENTURE 1: CON-001 ==========
+  CON-001:
+    venture_id: CON-001
+    venture_name: "Construction/Electrical - Marketplace"
+    sector: CONSTRUCTION
+    current_status: "READY_FOR_REVENUE"
+    current_phase_id: PH-13
+    readiness_pct: 95
+    timeline_to_revenue_days: 0  # TODAY
+
+    tasks:
+      - task_id: "CON-001-T001"
+        phase_id: PH-13
+        name: "Sales Activation - Email Capture & Lead Magnet"
+        description: "Add email form to website + create PDF lead magnet"
+        priority: CRITICAL
+        status: BLOCKED_READY
+        estimated_hours: 2
+        owner: USER
+        outputs:
+          - email_capture_form_deployed: false
+          - lead_magnet_created: false
+          - website_traffic_enabled: false
+        financial:
+          cost_estimate: 0
+          expected_revenue: 500
+          timeline_days: 1  # Revenue day 1
+        command: "/sales-activation CON-001 --setup"
+        depends_on: []
+
+      - task_id: "CON-001-T002"
+        phase_id: PH-13
+        name: "Sales - Network Announcement Email"
+        description: "Email network: 'Site live, first contractors get 50% off'"
+        priority: HIGH
+        status: BLOCKED_ON:CON-001-T001
+        estimated_hours: 1
+        owner: USER
+        financial:
+          cost_estimate: 0
+          expected_revenue: 1000
+          timeline_days: 3
+        command: "/sales-activation CON-001 --announce"
+        depends_on: [CON-001-T001]
+
+  # ========== VENTURE 2: OPS-001 ==========
+  OPS-001:
+    venture_id: OPS-001
+    venture_name: "Staffing & HR - Recruiting Platform"
+    sector: OPERATIONS
+    current_status: "BLOCKED_DATA_MIGRATION"
+    current_phase_id: PH-13
+    readiness_pct: 90
+    timeline_to_revenue_days: 1
+    critical_blocker: "74 prospects trapped in Notion (no backup)"
+
+    tasks:
+      - task_id: "OPS-001-T001"
+        phase_id: PH-13
+        name: "CRITICAL: Migrate 74 Prospects Notion→Supabase"
+        description: "Export prospects CSV from Notion + import to Supabase"
+        priority: CRITICAL-BLOCKER
+        status: BLOCKED_READY
+        estimated_hours: 4
+        owner: USER_OR_AGENT
+        risk_level: HIGH  # Data loss if not done today
+        outputs:
+          - prospects_table_created: false
+          - record_count: 74
+          - data_validated: false
+          - backup_created: false
+        financial:
+          cost_estimate: 100
+          expected_revenue: 5000
+          timeline_days: 1
+        command: "/venture-ops OPS-001 migrate --from notion --to supabase"
+        depends_on: []
+
+      - task_id: "OPS-001-T002"
+        phase_id: PH-13
+        name: "Sales - Email Sequence to 74 Prospects"
+        description: "Trigger automated email sequence (Day 1 → Day 5)"
+        priority: CRITICAL
+        status: BLOCKED_ON:OPS-001-T001
+        estimated_hours: 1
+        owner: AGENT
+        outputs:
+          - emails_queued: 0
+          - expected_opens_pct: 20
+        financial:
+          cost_estimate: 50
+          expected_revenue: 3000
+          timeline_days: 3
+        command: "/sales-automation OPS-001 --sequence-start"
+        depends_on: [OPS-001-T001]
+
+  # ========== VENTURE 3: LT-005 ==========
+  LT-005:
+    venture_id: LT-005
+    venture_name: "Medical Courier & Dispatch"
+    sector: LOGISTICS
+    current_status: "READY_NEEDS_SALES_REP"
+    current_phase_id: PH-13
+    readiness_pct: 85
+    timeline_to_revenue_days: 1-2
+
+    tasks:
+      - task_id: "LT-005-T001"
+        phase_id: PH-13
+        name: "Sales - Cold Call 20 Medical Facilities + HVAC"
+        description: "Sales rep: call 20 prospects, book demos"
+        priority: CRITICAL
+        status: BLOCKED_READY
+        estimated_hours: 5
+        owner: USER
+        outputs:
+          - calls_made: 0
+          - demos_scheduled: 0
+          - contracts_signed: 0
+        financial:
+          cost_estimate: 500
+          expected_revenue: 2000
+          timeline_days: 3
+        command: "/sales-activation LT-005 --cold-call --targets 20"
+        depends_on: []
+
+      - task_id: "LT-005-T002"
+        phase_id: PH-12
+        name: "Marketing - Warming Email Sequence"
+        description: "5-email warmup sequence (problem→solution→social proof)"
+        priority: HIGH
+        status: BLOCKED_ON:LT-005-T001
+        estimated_hours: 2
+        owner: AGENT
+        financial:
+          cost_estimate: 100
+          expected_revenue: 1000
+          timeline_days: 5
+        command: "/marketing LT-005 --warmup"
+        depends_on: [LT-005-T001]
+
+  # ========== VENTURE 4: EC-112 ==========
+  EC-112:
+    venture_id: EC-112
+    venture_name: "E-Commerce Operations"
+    sector: ECOMMERCE
+    current_status: "BLOCKED_DEPLOYMENT"
+    current_phase_id: PH-09
+    readiness_pct: 70
+    timeline_to_revenue_days: 2-3
+
+    tasks:
+      - task_id: "EC-112-T001"
+        phase_id: PH-09
+        name: "Engineering - Deploy to Vercel"
+        description: "git push → Vercel + connect Supabase"
+        priority: CRITICAL
+        status: BLOCKED_READY
+        estimated_hours: 1
+        owner: AGENT
+        outputs:
+          - site_live: false
+          - domain_connected: false
+        financial:
+          cost_estimate: 50
+          expected_revenue: 500
+          timeline_days: 0  # Same day
+        command: "/deploy EC-112 --vercel"
+        depends_on: []
+
+      - task_id: "EC-112-T002"
+        phase_id: PH-11
+        name: "Product - Landing Page + Stripe Subscriptions"
+        description: "Create landing page + wire Stripe payments"
+        priority: CRITICAL
+        status: BLOCKED_ON:EC-112-T001
+        estimated_hours: 3
+        owner: AGENT
+        outputs:
+          - landing_deployed: false
+          - stripe_configured: false
+          - trial_flow: false
+        financial:
+          cost_estimate: 150
+          expected_revenue: 1000
+          timeline_days: 1
+        command: "/deploy EC-112 --landing --stripe"
+        depends_on: [EC-112-T001]
+
+      - task_id: "EC-112-T003"
+        phase_id: PH-13
+        name: "Sales - Email Outreach 50 Shopify Store Owners"
+        description: "Cold email: 'Stop losing track of inventory'"
+        priority: HIGH
+        status: BLOCKED_ON:EC-112-T002
+        estimated_hours: 2
+        owner: AGENT
+        financial:
+          cost_estimate: 100
+          expected_revenue: 1500
+          timeline_days: 5
+        command: "/sales-activation EC-112 --email-outreach"
+        depends_on: [EC-112-T002]
+
+  # ========== VENTURE 5: LT-011 ==========
+  LT-011:
+    venture_id: LT-011
+    venture_name: "Dispatch SaaS - Multi-Driver Operations"
+    sector: LOGISTICS
+    current_status: "BLOCKED_INTEGRATION"
+    current_phase_id: PH-09
+    readiness_pct: 75
+    timeline_to_revenue_days: 2-3
+
+    tasks:
+      - task_id: "LT-011-T001"
+        phase_id: PH-09
+        name: "Engineering - Wire Stripe Subscriptions"
+        description: "Connect Stripe → trial auto-convert to paid on Day 14"
+        priority: CRITICAL
+        status: BLOCKED_READY
+        estimated_hours: 2
+        owner: AGENT
+        outputs:
+          - stripe_live: false
+          - subscription_plans: false
+        financial:
+          cost_estimate: 100
+          expected_revenue: 2000  # From trials converting Month 2
+          timeline_days: 14  # Trial period
+        command: "/deploy LT-011 --stripe --subscriptions"
+        depends_on: []
+
+      - task_id: "LT-011-T002"
+        phase_id: PH-11
+        name: "Product - Landing Page + Trial Signup Flow"
+        description: "Landing + auto-create trial accounts in Supabase"
+        priority: CRITICAL
+        status: BLOCKED_ON:LT-011-T001
+        estimated_hours: 2
+        owner: AGENT
+        outputs:
+          - landing_deployed: false
+          - trial_signup: false
+        financial:
+          cost_estimate: 100
+          expected_revenue: 500
+          timeline_days: 1
+        command: "/deploy LT-011 --landing --trial"
+        depends_on: [LT-011-T001]
+
+      - task_id: "LT-011-T003"
+        phase_id: PH-13
+        name: "Sales - Launch to Email List (Hot Leads)"
+        description: "Send to LT-005 customers + network (50 hot prospects)"
+        priority: CRITICAL
+        status: BLOCKED_ON:LT-011-T002
+        estimated_hours: 1
+        owner: AGENT
+        outputs:
+          - trials_expected: 2-3
+        financial:
+          cost_estimate: 0
+          expected_revenue: 2000  # From trials converting
+          timeline_days: 14
+        command: "/sales-activation LT-011 --launch"
+        depends_on: [LT-011-T002]
+
+  # ========== VENTURE 6: BW-001 ==========
+  BW-001:
+    venture_id: BW-001
+    venture_name: "Beauty & Hair - Booking & Client CRM"
+    sector: BEAUTY
+    current_status: "BLOCKED_REPO_MERGE"
+    current_phase_id: PH-09
+    readiness_pct: 60
+    timeline_to_revenue_days: 3-5
+
+    tasks:
+      - task_id: "BW-001-T001"
+        phase_id: PH-09
+        name: "Engineering - Merge 2 Repos into Monorepo"
+        description: "Merge bw-001-up-next-business → bw-001-up-next-code"
+        priority: CRITICAL
+        status: BLOCKED_READY
+        estimated_hours: 2
+        owner: AGENT
+        outputs:
+          - repos_merged: false
+          - single_repo: false
+        financial:
+          cost_estimate: 100
+          expected_revenue: 200  # Tech risk reduction enables next tasks
+          timeline_days: 0  # Unblocks
+        command: "/deploy BW-001 --merge-repos"
+        depends_on: []
+
+      - task_id: "BW-001-T002"
+        phase_id: PH-09
+        name: "Engineering - Finalize Database Schema"
+        description: "Run migrations + validate code ↔ DB consistency"
+        priority: CRITICAL
+        status: BLOCKED_ON:BW-001-T001
+        estimated_hours: 2
+        owner: AGENT
+        outputs:
+          - migrations_run: false
+          - schema_validated: false
+        financial:
+          cost_estimate: 100
+          expected_revenue: 200
+          timeline_days: 0  # Unblocks
+        command: "/deploy BW-001 --migrations"
+        depends_on: [BW-001-T001]
+
+      - task_id: "BW-001-T003"
+        phase_id: PH-09
+        name: "Engineering - Wire Email Automation"
+        description: "Booking confirmation, reminder, invoice emails via Resend"
+        priority: HIGH
+        status: BLOCKED_ON:BW-001-T002
+        estimated_hours: 1
+        owner: AGENT
+        outputs:
+          - resend_integrated: false
+          - templates_created: false
+        financial:
+          cost_estimate: 50
+          expected_revenue: 100
+          timeline_days: 0  # Improves UX
+        command: "/deploy BW-001 --email-automation"
+        depends_on: [BW-001-T002]
+
+      - task_id: "BW-001-T004"
+        phase_id: PH-11
+        name: "Product - Lead Magnet + Landing Page"
+        description: "Free Notion template 'Salon Starter Kit' + landing"
+        priority: HIGH
+        status: BLOCKED_ON:BW-001-T003
+        estimated_hours: 3
+        owner: AGENT
+        outputs:
+          - landing_deployed: false
+          - lead_magnet_created: false
+        financial:
+          cost_estimate: 150
+          expected_revenue: 500
+          timeline_days: 3
+        command: "/deploy BW-001 --lead-magnet"
+        depends_on: [BW-001-T003]
+
+      - task_id: "BW-001-T005"
+        phase_id: PH-13
+        name: "Sales - Launch Email Sequence"
+        description: "Announce to network + begin nurture sequence"
+        priority: HIGH
+        status: BLOCKED_ON:BW-001-T004
+        estimated_hours: 1
+        owner: AGENT
+        outputs:
+          - email_sent: false
+        financial:
+          cost_estimate: 50
+          expected_revenue: 800
+          timeline_days: 5
+        command: "/sales-activation BW-001 --launch"
+        depends_on: [BW-001-T004]
+
+  # ========== VENTURE 7: RE-001 ==========
+  RE-001:
+    venture_id: RE-001
+    venture_name: "Real Estate CRM - Agent Pipeline"
+    sector: REALESTATE
+    current_status: "BLOCKED_FRONTEND_DEV"
+    current_phase_id: PH-09
+    readiness_pct: 40
+    timeline_to_revenue_days: 5-7
+    priority_note: "LOWEST PRIORITY - Run in parallel with others, do not block 6 faster ventures"
+
+    tasks:
+      - task_id: "RE-001-T001"
+        phase_id: PH-09
+        name: "Engineering - Complete Frontend (80% missing)"
+        description: "Build UI: property list, pipeline, contacts, reports (16h total)"
+        priority: MEDIUM  # Lower priority than others
+        status: BLOCKED_READY
+        estimated_hours: 16
+        owner: AGENT
+        outputs:
+          - frontend_pct_complete: 20  # Currently
+          - frontend_pct_target: 100
+        blockers:
+          - "Property list view (2h)"
+          - "Pipeline stage view (2h)"
+          - "Contact management (2h)"
+          - "Reports + analytics (2h)"
+          - "Mobile responsive (2h)"
+          - "Bug fixes + polish (4-8h)"
+        financial:
+          cost_estimate: 800
+          expected_revenue: 500  # Lower market initially
+          timeline_days: 7
+        command: "/deploy RE-001 --frontend --parallel"
+        depends_on: []
+        scheduling: "PARALLEL - Do not block other ventures"
+
+      - task_id: "RE-001-T002"
+        phase_id: PH-11
+        name: "Product - Landing Page + Trial Signup"
+        description: "Create landing + wire trial account creation"
+        priority: MEDIUM
+        status: BLOCKED_ON:RE-001-T001
+        estimated_hours: 2
+        owner: AGENT
+        financial:
+          cost_estimate: 100
+          expected_revenue: 500
+          timeline_days: 8
+        command: "/deploy RE-001 --landing"
+        depends_on: [RE-001-T001]
+
+---
+# SECTION 3: PARALLEL EXECUTION SCHEDULE
+
+execution_schedule:
+
+  "2026-08-05 (DAY 1)":
+    name: "Foundation Day - OPS-001 + CON-001"
+    tasks_in_parallel:
+      - CON-001-T001  # Email capture (2h)
+      - OPS-001-T001  # Notion migration (4h)
+    expected_output: "Email capture live + 74 prospects migrated"
+    expected_revenue_range: "$500-1K within 24-48h"
+    critical_actions:
+      - "OPS-001 migration MUST happen today (data at risk)"
+      - "CON-001 setup is pure win (2h for $500+ MRR)"
+
+  "2026-08-06 (DAY 2)":
+    name: "Scale Day - 5 Ventures in Parallel"
+    tasks_in_parallel:
+      - CON-001-T002  # Network email (1h)
+      - OPS-001-T002  # Email sequence (1h)
+      - LT-005-T001   # Cold calls (5h)
+      - EC-112-T001   # Vercel deploy (1h)
+      - LT-011-T001   # Stripe wire (2h)
+    expected_output: "5 ventures firing simultaneously"
+    expected_revenue_range: "$1-3K from multiple channels"
+
+  "2026-08-07-08 (DAYS 3-4)":
+    name: "Integration Day"
+    tasks_in_parallel:
+      - EC-112-T002   # Landing + Stripe (3h)
+      - LT-011-T002   # Trial flow (2h)
+      - BW-001-T001   # Repo merge (2h)
+      - LT-005-T002   # Email sequence (2h)
+      - RE-001-T001   # Frontend dev (8h background)
+    expected_output: "All payment flows wired, BW-001 consolidated"
+    expected_revenue_range: "$2-5K cumulative"
+
+  "2026-08-09 (DAY 5)":
+    name: "Launch Day"
+    tasks_in_parallel:
+      - EC-112-T003   # Email outreach (2h)
+      - LT-011-T003   # Trial launch (1h)
+      - BW-001-T002   # DB schema (2h)
+    expected_output: "All 6 ventures have revenue pathway"
+    expected_revenue_range: "$3-7K cumulative"
+
+  "2026-08-10-14 (DAYS 6-10)":
+    name: "Maturation Week"
+    tasks_in_parallel:
+      - BW-001-T003   # Email automation (1h)
+      - BW-001-T004   # Lead magnet (3h)
+      - RE-001-T001   # Frontend dev (8h background)
+    expected_output: "BW-001 marketing active, RE-001 50% complete"
+    expected_revenue_range: "$6-15K cumulative"
+
+  "2026-09-01 (WEEK 4)":
+    name: "Full Scale"
+    completion_status:
+      - CON-001: "LIVE (2h setup)"
+      - OPS-001: "LIVE (5h migration + sequence)"
+      - LT-005: "LIVE (7h outreach + marketing)"
+      - EC-112: "LIVE (6h deploy + landing)"
+      - LT-011: "LIVE (5h integration + trial)"
+      - BW-001: "LIVE (8h consolidation)"
+      - RE-001: "LIVE (16h frontend complete)"
+    expected_revenue_range: "$15-50K/month run rate"
+    total_setup_time: "40-50 hours across 29 days"
+
+---
+# SECTION 4: FINANCIAL SUMMARY
+
+financial:
+
+  total_setup_investment:
+    engineering_cost: "$2,400"  # Agent compute hours
+    tools_cost: "$200"           # Supabase, email, etc.
+    total_cost: "$2,600"
+
+  portfolio_revenue_projections:
+    day_1: "$500-1K"
+    day_3: "$1-3K"
+    day_5: "$3-7K"
+    day_10: "$6-15K"
+    day_14: "$8-20K"
+    end_month_1: "$10-25K"
+    end_month_2: "$25-50K"
+    end_month_3: "$50-100K"
+
+  venture_roi_month1:
+    CON-001: "4900% ROI" # $5000 revenue, $100 cost
+    OPS-001: "500% ROI"
+    LT-005: "700% ROI"
+    EC-112: "400% ROI"
+    LT-011: "733% ROI"
+    BW-001: "400% ROI"
+    RE-001: "-69% ROI" # Breakeven month 4
+
+  portfolio_roi_month1: "300-575%"
+
+---
+# END OF SPECIFICATION

@@ -139,12 +139,15 @@ def sync_to_supabase(venture_id, name, sector, opco):
     }
     client.table("ventures").upsert(venture_row, on_conflict="venture_id").execute()
     
-    # Write initial credentials placeholder
-    credential_row = {
-        "agent_id": venture_id,
-        "status": "active"
-    }
-    client.table("agent_credentials").upsert(credential_row, on_conflict="agent_id").execute()
+    # Write initial credentials placeholder (optional, skip if table schema mismatches UUID)
+    try:
+        credential_row = {
+            "agent_id": venture_id,
+            "status": "active"
+        }
+        client.table("agent_credentials").upsert(credential_row, on_conflict="agent_id").execute()
+    except Exception as e:
+        print(f"⚠️ Note: Skipping agent_credentials placeholder table write ({e})")
     
     print(f"✓ Synced '{venture_id}' to Supabase operational registry.")
 

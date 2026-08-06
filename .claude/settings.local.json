@@ -26,6 +26,8 @@
     "memory",
     "puppeteer",
     "browseros",
-    "openclaw"
-  ]
+    "openclaw",
+    "graft"
+  ],
+  "enableAllProjectMcpServers": true
 }

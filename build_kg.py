@@ -6,7 +6,7 @@ from pathlib import Path
 from neo4j import GraphDatabase
 
 # Database config
-NEO4J_URI = "bolt://localhost:7687"
+NEO4J_URI = "bolt://100.87.214.70:7687"
 NEO4J_USER = "neo4j"
 NEO4J_PASSWORD = "ventures2026"
 
