@@ -1,3 +1,13 @@
+---
+name: MASTER-INDEX
+title: 📑 MASTER INDEX
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # 📑 MASTER INDEX
 **Central Hub for All System Knowledge**  
 **Last Updated:** 2026-08-06  
@@ -27,6 +37,7 @@
 
 **Phase 2: VEX Foundation (Week 5-12, blocked until Phase 1 >$50K revenue)**
 - **VEX OS Spec** → [.planning/PHASE-2-VEX-FOUNDATION-SPEC.md](.planning/PHASE-2-VEX-FOUNDATION-SPEC.md) **(Layers 0-4: Infrastructure → Orchestration, 8-week build)**
+- **Infrastructure Tasks** → [.planning/PHASE-2-INFRASTRUCTURE-TASKS.md](.planning/PHASE-2-INFRASTRUCTURE-TASKS.md) **(24 subtasks: Temporal, Apicurio, @cflow/core, steadykey, Prosody, human-in-the-loop, Clockwork, Agent Analytics)**
 
 ### I Need to Know (The 4 Graphs)
 - **What are we building?** → [VENTURE-OPERATIONS-FRAMEWORK.md](VENTURE-OPERATIONS-FRAMEWORK.md) **(Venture Graph: 712 ventures)**
@@ -135,6 +146,8 @@ PHASE-1-CHECKLIST.md                Task completion checklist
 SYSTEM-INTEGRATION-MAP.md           File relationships & awareness gaps
 REPOS-ORGANIZATION-MAP.md           1,717 categorized repositories by phase/dept/caps
 INTELLIGENCE-STACK.md               AVS 15 core intelligence domains & compounding loop
+GEMINI.md                           Gemini / Graft integration rules
+ANTIGRAVITY.md                      Antigravity / Graft integration rules
 MASTER-INDEX.md                     This file - central navigation
 ```
 

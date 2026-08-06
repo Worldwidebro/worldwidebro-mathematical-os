@@ -1,4 +1,18 @@
+---
+name: PORTFOLIO-CONTEXT
+title: Portfolio Context
+desc: ...
+tags: []
+sources: []
+created: 2026-08-06T05:46:10Z
+updated: 2026-08-06T05:46:10Z
+---
+
 # Portfolio Context
+
+**Founder/CEO:** [[whoiam]] — Worldwidebro (Winners Circle WC LLC)  
+**Portfolio Operating System:** 8 ventures, $3.81M annual revenue potential, 27.9% avg readiness → 80% target (Week 4)  
+**Execution Model:** Parallel revenue campaigns + blocker resolution, GSD framework
 
 > **Format**: Machine-greppable predicates. Each operational fact is a single-line predicate (`CLASS.subkey=value`). New learnings append as predicates; session prose belongs in the bottom log.
 
