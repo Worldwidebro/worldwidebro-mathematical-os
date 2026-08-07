@@ -342,6 +342,18 @@ Once you answer these 3 questions, I can:
 
 ---
 
+## 🗺️ SYSTEM TAXONOMY & AUDIT
+
+**[[WORLDWIDEBRO/SYSTEM-TAXONOMY]]** — Complete 8-layer × 50-capability × 12-domain architecture audit
+- **Current State:** 30% complete (15/50 capabilities deployed)
+- **Critical Gap:** Layer 6 (MCP ecosystem) = 0% — blocks all agent-to-service communication
+- **90 Incomplete Tasks:** Categorized by layer and domain, prioritized by criticality
+- **Execution Roadmap:** 4-week path to full autonomy
+
+**Key Finding:** Solid Layers 2-4 (OS/runtime/toolchain) but Layer 6 (MCP servers) is missing, blocking Layer 5 (agent orchestration) from accessing external systems.
+
+---
+
 ## 🤖 AUTONOMOUS AGENT LOOPS (Phase 2+)
 
 ### Entry Point: [[WORLDWIDEBRO/MASTER-INDEX]]
