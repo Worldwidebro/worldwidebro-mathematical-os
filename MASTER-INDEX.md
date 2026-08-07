@@ -39,9 +39,19 @@ updated: 2026-08-06T05:46:10Z
 - **VEX OS Spec** → [.planning/PHASE-2-VEX-FOUNDATION-SPEC.md](.planning/PHASE-2-VEX-FOUNDATION-SPEC.md) **(Layers 0-4: Infrastructure → Orchestration, 8-week build)**
 - **Infrastructure Tasks** → [.planning/PHASE-2-INFRASTRUCTURE-TASKS.md](.planning/PHASE-2-INFRASTRUCTURE-TASKS.md) **(24 subtasks: Temporal, Apicurio, @cflow/core, steadykey, Prosody, human-in-the-loop, Clockwork, Agent Analytics)**
 
-### I Need to Know (The 4 Graphs)
+### I Need to Know (The 8-Plane Graph)
+
+**Core Entity Relationships (Neo4j):**
+- [[WORLDWIDEBRO/16_DATA/ENTITY-RELATIONSHIPS]] — Core entity graph, all relationships
+- [[WORLDWIDEBRO/01_DIRECTIVES/STRATEGIC-DIRECTIVES]] — Policy, roadmap, constraints
+- [[WORLDWIDEBRO/02_EXECUTIVES/EXECUTIVE-ROLES]] — Authority structure, approval gates
+- [[WORLDWIDEBRO/07_SKILLS/SKILL-RELATIONSHIPS]] — Competencies, training, certification
+
+**System Understanding:**
 - **What are we building?** → [VENTURE-OPERATIONS-FRAMEWORK.md](VENTURE-OPERATIONS-FRAMEWORK.md) **(Venture Graph: 712 ventures)**
 - **Who decides?** → [AGENTS.md](AGENTS.md) **(Agent Graph: 35 Intelligence Types + Dispatch)**
+- **Who has authority?** → [[WORLDWIDEBRO/02_EXECUTIVES/EXECUTIVE-ROLES]] **(5-level hierarchy, approval chains)**
+- **What strategic directives apply?** → [[WORLDWIDEBRO/01_DIRECTIVES/STRATEGIC-DIRECTIVES]] **(Policy, roadmap, deadlines)**
 - **What files exist and how do they connect?** → [SYSTEM-INTEGRATION-MAP.md](SYSTEM-INTEGRATION-MAP.md)
 - **What are our repository capabilities (owned + starred)?** → [REPOS-ORGANIZATION-MAP.md](REPOS-ORGANIZATION-MAP.md)
 - **What is the system intelligence stack?** → [INTELLIGENCE-STACK.md](INTELLIGENCE-STACK.md) **(Computer Graph: 1,592 repos + Tier 1-9 services)**
@@ -329,4 +339,54 @@ Once you answer these 3 questions, I can:
 - Prepare for your contact enrichment calls
 
 **Sound good?**
+
+---
+
+## 🤖 AUTONOMOUS AGENT LOOPS (Phase 2+)
+
+### Entry Point: [[WORLDWIDEBRO/MASTER-INDEX]]
+All loops originate from the unified entity graph. Wikilinks connect every decision to its source.
+
+### Execution Stack
+| Component | Purpose | Location |
+|-----------|---------|----------|
+| **Graph DB** | Entity relationships | [[WORLDWIDEBRO/16_DATA/ENTITY-RELATIONSHIPS]] (Neo4j) |
+| **Schema** | Constraints & indexes | [[WORLDWIDEBRO/16_DATA/neo4j-constraints.cypher]] |
+| **Vector DB** | Semantic search | Qdrant (localhost:6333) |
+| **RAG** | Context retrieval | LightRAG (localhost:8001) |
+| **Workflow** | Trigger & execution | [[WORLDWIDEBRO/06_AGENTS/execution-router]] (Trigger.dev) |
+| **Authority** | Approval gates | [[WORLDWIDEBRO/02_EXECUTIVES/EXECUTIVE-ROLES]] |
+| **Directives** | Policy enforcement | [[WORLDWIDEBRO/01_DIRECTIVES/STRATEGIC-DIRECTIVES]] |
+| **Skills** | Resource allocation | [[WORLDWIDEBRO/07_SKILLS/SKILL-RELATIONSHIPS]] |
+
+### Loop 1: Venture Readiness Audit
+**Trigger:** Daily or on-demand  
+**Agent:** [[WORLDWIDEBRO/06_AGENTS/execution-router]]  
+**Steps:**
+1. Query: [[WORLDWIDEBRO/16_DATA/ENTITY-RELATIONSHIPS#venture]] + blockers
+2. Score readiness, identify blockers
+3. Update VENTURE.readiness_score
+4. Route: if critical blocker → escalate to [[WORLDWIDEBRO/02_EXECUTIVES/EXECUTIVE-ROLES#approval_gate]]
+
+### Loop 2: Directive Enforcement
+**Trigger:** DIRECTIVE.BLOCKS_UNTIL date approaching  
+**Agent:** Compliance agent  
+**Steps:**
+1. Check: are all [[WORLDWIDEBRO/01_DIRECTIVES/STRATEGIC-DIRECTIVES]].REQUIRES_CAPABILITY implemented?
+2. Escalate: missing capability → route to [[WORLDWIDEBRO/02_EXECUTIVES/EXECUTIVE-ROLES]]
+3. Report: status to leadership
+
+### Loop 3: Skill-to-Capability Matching
+**Trigger:** New CAPABILITY or team availability  
+**Agent:** Resource allocation agent  
+**Steps:**
+1. Match: [[WORLDWIDEBRO/07_SKILLS/SKILL-RELATIONSHIPS]] to CAPABILITY.REQUIRES_SKILL
+2. Verify: COMPETENCY_SCORE, expiration
+3. Route: proposal to [[WORLDWIDEBRO/02_EXECUTIVES/EXECUTIVE-ROLES]] for approval
+
+### Next Steps
+1. Load schema: `cat WORLDWIDEBRO/16_DATA/neo4j-constraints.cypher | neo4j-cli`
+2. Deploy agent: `/trigger-dev ventureReadinessAudit`
+3. Seed first decision: POST /events {venture_id: "CON-001"}
+4. Monitor loops: tail -f ~/.claude/projects/.../logs/agent-loop.log
 
