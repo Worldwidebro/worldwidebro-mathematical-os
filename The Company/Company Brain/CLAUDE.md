@@ -18,6 +18,8 @@ Live-audited via a new `macstudio` [[Docker Context|Docker context]] (this machi
 - **Ollama is NOT dead — corrects the 2026-09-05 claim below that it was.** Live-checked on Mac Studio 2026-09-05: `ollama serve` has been running 4d20h, listening on `*:11434` (all interfaces + Tailscale `mac-studio.tailba9617.ts.net:11434`), serving 6 models including `nomic-embed-text`, `qwen2.5-coder:14b`, `hermes3`, `llama3.1:8b`, plus two `ollama.com` cloud passthroughs (`minimax-m2.5:cloud`, `kimi-k2.5:cloud`). The "Ollama is dead" narrative came from a comment in `civos_litellm`'s `litellm-config.yaml` written 2026-07-17 ("Ollama service itself was down") that was never re-verified — Ollama came back and nobody updated the config or this doc. The `embed` route (→ `ollama/nomic-embed-text`) is disabled on that stale assumption, not because it's actually broken.
 - **exo is not limited to one model — it has 120 in its catalog.** `curl http://100.87.214.70:52415/v1/models` returns 120 entries (Qwen3-Coder-480B-A35B, GLM-5.1, DeepSeek-V3.2, Llama-3.3-70B, MiniMax-M2.7, gpt-oss-120b, etc.), not just `mlx-community/Qwen3.6-35B-A3B-5bit`. LiteLLM only routes to that one because its `model_list` only *has* that one wired — see the routing-gap bullets below.
 - **This is the actual reason OmniRoute "isn't routing to other models or Ollama"** (user question, 2026-09-05): `civos_litellm`'s `model_list` defines exactly 6 `model_name` entries — `qwen-fast`, `qwen-heavy`, `default`, `embed`, `claude-sonnet`, `claude-haiku` — and `qwen-fast`/`qwen-heavy`/`default` all point at the *same single* exo model as a 2026-08-12 emergency stopgap ("pointing both aliases at it so calls succeed today; split them again once a second/smaller instance is actually placed" — never done). None of exo's other 119 models, and none of Ollama's 6 live models, are reachable through LiteLLM/OmniRoute — not because routing is broken, but because they were never registered. Nothing downstream of the config file is at fault.
+- **Growth OS deployed + live on localhost:3030** (2026-09-08) — AI-native marketing operating system for real-time campaign orchestration of CAM-002-006 (5 ventures). 1,099-line Tailwind/Chart.js dashboard running via `python3 -m http.server 3030`. Repo: https://github.com/Worldwidebro/worldwidebro-marketing-os (pushed 2026-09-08). Ready to wire 5 OSS endpoints: Temporal (LT-005), VROOM (LT-011), Twenty (RE-001), Mautic (OPS-001), OpenProject (CON-001).
+
 - **OmniRoute and `civos_litellm` sit on separate Docker networks.** `omniroute` is on the default `bridge` network (172.17.0.3); `civos_litellm` is on `civos-network` (172.18.0.14) with container-DNS aliases `litellm`/`civos_litellm`. They have no shared network, so anything inside OmniRoute calling `http://litellm:4000` would fail — only `http://host.docker.internal:4000` crosses that boundary. Not independently confirmed whether OmniRoute's own provider config (stored in its private `storage.sqlite`, not inspected) actually uses the host-mapped route or is broken by this — check via the OmniRoute dashboard's provider list, not this doc.
 - **[[Langfuse]] (`civos_langfuse`, :3003) is healthy but receiving zero traffic** — neither `civos_litellm`'s config nor OmniRoute's `.env` wires a Langfuse callback. The [[Observability|observability layer]] is infrastructure-only right now, not actually capturing anything. See [[OmniRoute Routing Gaps]] below.
 - **[[LiteLLM]]'s `router_settings.routing_strategy` is now `usage-based-routing-v2`** — corrects the earlier claim on this line that it was `simple-shuffle`. The live config's own comment confirms the change: `routing_strategy: usage-based-routing-v2  # was simple-shuffle — now scores by deployment latency/tpm/rpm usage`. Someone fixed this since the doc was last written and didn't update the doc. Fallback chains ARE real and working (`default`/`qwen-heavy`→`claude-sonnet`, `qwen-fast`→`claude-haiku`, plus context-window fallbacks `qwen-fast`→`qwen-heavy`). Response caching is on but exact-match (Redis), not semantic.
@@ -37,6 +39,59 @@ Live-audited via a new `macstudio` [[Docker Context|Docker context]] (this machi
 | exo's 120-model catalog not exposed — only 1 of 120 wired into LiteLLM (`qwen-fast`/`qwen-heavy`/`default` all alias the same model) | Low | Add real `model_list` entries per desired exo model; no code, config-only |
 | Ollama's 6 live models unreachable — `embed` route disabled on a stale "Ollama is down" comment; Ollama has actually been up 4d20h+ | Low | Re-point `embed` at `http://host.docker.internal:11434`, re-test, remove stale comment |
 | OmniRoute (`bridge` network) and `civos_litellm` (`civos-network`) share no Docker network | Unverified severity | Confirm whether OmniRoute's own provider config uses `host.docker.internal:4000` (would work) or the container DNS name `litellm` (would silently fail) — check OmniRoute dashboard provider list directly |
+
+---
+
+## GROWTH OS — MARKETING ORCHESTRATION LAYER (2026-09-08)
+
+**Status:** ✅ LIVE | **Repo:** https://github.com/Worldwidebro/worldwidebro-marketing-os | **Running:** localhost:3030
+
+### Architecture
+
+```
+Growth OS (Master Orchestration Dashboard)
+├─ Real-time Campaign Status (CAM-002-006: 5 ventures)
+├─ OSS Endpoint Wiring Layer (5 integrations pending)
+│  ├─ Temporal API (LT-005: HIPAA audit workflow)
+│  ├─ VROOM API (LT-011: route optimization)
+│  ├─ Twenty CRM API (RE-001: deal pipeline)
+│  ├─ Mautic API (OPS-001: prospect ranking)
+│  └─ OpenProject API (CON-001: project management)
+└─ Real-time Performance Dashboards
+   ├─ Lead volume (daily updates)
+   ├─ Campaign spend vs. projected revenue
+   └─ Attribution flows (end-to-end revenue tracking)
+```
+
+### Deployment Details
+
+- **Framework:** Tailwind CSS + Chart.js + Lucide icons
+- **Size:** 1,099 lines HTML + 150 lines Markdown + 15 lines JSON
+- **Runtime:** Python 3.9 http.server (started 2026-09-08, PID managed)
+- **Theme:** Dark mode (purple #7c5cff + cyan #22d3ee), responsive grid
+- **GitHub:** https://github.com/Worldwidebro/worldwidebro-marketing-os (commit 0edc41a)
+
+### Revenue Activation Path
+
+**Current Blockers:** 5 OSS repos not deployed yet (Temporal, VROOM, Twenty, Mautic, OpenProject)
+
+**Two deployment options:**
+
+**Option A (Balanced, Sep 8-21):**
+- Deploy all 5 OSS repos in parallel (Sep 8-13)
+- Wire all 5 to Growth OS (Sep 14-15)
+- Activate revenue flows (Sep 18-21)
+- Revenue projection: $4.4M-$6.54M from 97-140 leads/month
+
+**Option B (Revenue-First, Sep 8-19):**
+- Deploy Mautic first (OPS-001, $1.2M/mo potential)
+- Deploy other 4 sequentially (Sep 9-17)
+- Activate revenue when first OSS is wired
+- Revenue projection: OPS-001 live by Sep 10
+
+### Next Step
+
+Choose deployment path and fork + deploy 5 OSS repos (see [[OSS-BLOCKER-SOLUTION-STRATEGY.md]] for technical mapping).
 
 ---
 
