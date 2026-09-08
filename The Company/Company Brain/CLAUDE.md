@@ -44,13 +44,20 @@ Live-audited via a new `macstudio` [[Docker Context|Docker context]] (this machi
 
 ## GROWTH OS — MARKETING ORCHESTRATION LAYER (2026-09-08)
 
-**Status:** ✅ LIVE | **Repo:** https://github.com/Worldwidebro/worldwidebro-marketing-os | **Running:** localhost:3030
+**Status:** ✅ LIVE (Real Data Wired) | **Repo:** https://github.com/Worldwidebro/worldwidebro-marketing-os | **Running:** localhost:3030
 
 ### Architecture
 
 ```
 Growth OS (Master Orchestration Dashboard)
-├─ Real-time Campaign Status (CAM-002-006: 5 ventures)
+├─ Real-time Campaign Status (CAM-002-006: 5 Tier-1 ventures)
+│  ├─ CON-001 (Ace Construction) — SEC-002 ← wiki link ✅
+│  ├─ OPS-001 (CareerOps Staffing) — SEC-014 ← wiki link ✅
+│  ├─ LT-005 (HealthRoute Courier) — SEC-017 ← wiki link ✅
+│  ├─ LT-011 (CarrierDispatch TMS) — SEC-017 ← wiki link ✅
+│  └─ RE-001 (WorldwideBro RE) — SEC-020 ← wiki link ✅
+├─ Full Portfolio Reference (789 ventures across 35 sectors)
+│  └─ Link: ventures-by-sector.yaml + SECTORS/*.md wiki links
 ├─ OSS Endpoint Wiring Layer (5 integrations pending)
 │  ├─ Temporal API (LT-005: HIPAA audit workflow)
 │  ├─ VROOM API (LT-011: route optimization)
@@ -59,7 +66,7 @@ Growth OS (Master Orchestration Dashboard)
 │  └─ OpenProject API (CON-001: project management)
 └─ Real-time Performance Dashboards
    ├─ Lead volume (daily updates)
-   ├─ Campaign spend vs. projected revenue
+   ├─ Campaign spend vs. projected revenue ($4.4M-$6.54M)
    └─ Attribution flows (end-to-end revenue tracking)
 ```
 
