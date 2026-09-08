@@ -1,0 +1,46 @@
+{
+  "registry_id": "REG-RISK-001",
+  "updated_at": "2026-09-05",
+  "risks": [
+    {
+      "risk_id": "RSK-001",
+      "title": "Mac Studio Single Point of Failure (SPOF)",
+      "category": "AVAILABILITY",
+      "likelihood": "LOW",
+      "impact": "CRITICAL",
+      "mitigation": "Maintain warm standby configurations on MacBook Air with T7 Shield"
+    },
+    {
+      "risk_id": "RSK-002",
+      "title": "Docker Compose Stack Clutter & Resource Duplication",
+      "category": "OPERATIONAL",
+      "likelihood": "CERTAIN",
+      "impact": "MEDIUM",
+      "mitigation": "Execute consolidation to canonical compose file; remove dead t7shield-neo4j-1"
+    },
+    {
+      "risk_id": "RSK-003",
+      "title": "Unified RAM Headroom Pressure (36GB Limit)",
+      "category": "CAPACITY",
+      "likelihood": "MEDIUM",
+      "impact": "HIGH",
+      "mitigation": "Run quantized 35B models (Qwen 3.6 5-bit consumes ~24GB); enforce swap thresholds"
+    },
+    {
+      "risk_id": "RSK-004",
+      "title": "Langfuse Telemetry Disconnected in LiteLLM",
+      "category": "OBSERVABILITY",
+      "likelihood": "CERTAIN",
+      "impact": "MEDIUM",
+      "mitigation": "Add success_callback: ['langfuse'] in civos_litellm config"
+    },
+    {
+      "risk_id": "RSK-005",
+      "title": "Solo Founder Bus Factor of 1",
+      "category": "GOVERNANCE",
+      "likelihood": "HIGH",
+      "impact": "CRITICAL",
+      "mitigation": "Automate self-documenting runbooks and machine-readable registries"
+    }
+  ]
+}

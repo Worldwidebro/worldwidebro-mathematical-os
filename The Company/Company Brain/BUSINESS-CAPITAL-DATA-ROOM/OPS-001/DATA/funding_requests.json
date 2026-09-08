@@ -1,0 +1,37 @@
+{
+  "total_ask": "$850,000 Total ($500K SBA 7(a) Term Loan + $350K Factoring Line)",
+  "loan_amount": "$500,000 SBA 7(a) 10-Yr + $350,000 Payroll Factoring Line",
+  "grant_ask": "$350,000 USDOL WIOA Demonstration Grant",
+  "uses": [
+    [
+      "Weekly Payroll Advance Facility",
+      "$350,000",
+      "Revolving float covering contractor wages prior to client collections"
+    ],
+    [
+      "Workforce Sourcing & Ontology AI",
+      "$175,000",
+      "12-layer skill extraction engine integrated with state workforce data"
+    ],
+    [
+      "Talent Operations Staffing Runway",
+      "$150,000",
+      "12-Month salary runway for Lead Workforce Coordinator and Recruiter"
+    ],
+    [
+      "Statutory Workers' Comp & Insurance",
+      "$85,000",
+      "Escrow deposit for high-limit staffing liability, EPLI, and workers' comp"
+    ],
+    [
+      "Compliance & Verification Gateway",
+      "$45,000",
+      "Automated I-9/W-4, E-Verify, and instant background check integrations"
+    ],
+    [
+      "SBA Loan Origination & Closing Fees",
+      "$45,000",
+      "Bank packaging, statutory guarantee fees, and legal closing costs"
+    ]
+  ]
+}

@@ -1,0 +1,16 @@
+products:
+  -
+    name: "Apex DSI Port & Rail Drayage Hauling"
+    pricing: "$450 / drayage container"
+    model: "Direct Transport"
+    margin: "35.0%"
+  -
+    name: "HaulMatrix Yard & Terminal Telemetry OS"
+    pricing: "$1,250 / mo per terminal"
+    model: "Enterprise SaaS"
+    margin: "85.0%"
+  -
+    name: "Dedicated Fleet Chassis Retainer"
+    pricing: "$85 / day per unit"
+    model: "Asset Leasing"
+    margin: "45.0%"

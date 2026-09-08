@@ -1,0 +1,23 @@
+{
+  "registry_id": "REG-RECOVERY-001",
+  "updated_at": "2026-09-05",
+  "rto_target": "< 60 minutes",
+  "rpo_target": "< 15 minutes",
+  "scenarios": [
+    {
+      "scenario": "Host hardware failure (Mac Studio crash)",
+      "procedure": "Promote MacBook Air to primary inference node, attach T7 Shield, re-launch lightweight docker stack",
+      "estimated_recovery_min": 45
+    },
+    {
+      "scenario": "Database corruption (Neo4j / Postgres)",
+      "procedure": "Restore latest snapshot from /Volumes/LaCie/backups/ via docker exec restore script",
+      "estimated_recovery_min": 15
+    },
+    {
+      "scenario": "Local network outage",
+      "procedure": "Tailscale automatically relays via DERP; if ISP down, hot-spot MacBook Air over cellular",
+      "estimated_recovery_min": 5
+    }
+  ]
+}

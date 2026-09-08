@@ -1,0 +1,79 @@
+{
+  "collapse-filter": true,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:00-CONSTITUTION OR path:20-DECISIONS OR path:21-POLICY OR path:31-LEGAL OR path:32-SECURITY OR path:33-COMPLIANCE OR path:34-RISK OR path:46-GOVERNANCE OR path:49-SYSTEM OR path:50-MASTER-CONTROL OR path:00_RESPECT OR path:DIRECTIVES OR path:EXECUTIVES OR file:ANTIGRAVITY OR file:AGENTS OR file:REALITY OR file:STARTHERE OR file:INDEX OR file:CLAUDE",
+      "color": {
+        "a": 1,
+        "rgb": 11032055
+      }
+    },
+    {
+      "query": "path:56-ENGINEERING OR path:57-CODE-INTELLIGENCE OR path:58-LOGISTICS OR path:59-MCP OR path:60-APIS OR path:62-TECHNOLOGY OR path:_INFRASTRUCTURE OR path:_MCP OR path:_CLI OR path:13-REPOSITORIES OR path:17-MODELS OR path:18-TOOLS OR path:48-AUTOMATION OR path:scripts",
+      "color": {
+        "a": 1,
+        "rgb": 959977
+      }
+    },
+    {
+      "query": "path:14-CAPABILITIES OR path:15-SKILLS OR path:30-HR OR path:52-PEOPLE OR path:53-TEAMS OR tag:#capability OR path:solutions",
+      "color": {
+        "a": 1,
+        "rgb": 1096065
+      }
+    },
+    {
+      "query": "path:16-AGENTS OR path:19-ORCHESTRATION OR path:22-EXECUTION OR path:55-LOOP-ENGINEERING OR path:AI-BRAIN OR path:AI-PROJECTS OR path:_PROMPTS OR path:fractal OR path:node",
+      "color": {
+        "a": 1,
+        "rgb": 16096779
+      }
+    },
+    {
+      "query": "path:01-IDENTITY OR path:02-SOURCES OR path:03-INGESTION OR path:04-DATA OR path:05-METADATA OR path:06-ENTITY-RESOLUTION OR path:11-INDEXING OR path:_REGISTRIES OR path:_PIPELINES",
+      "color": {
+        "a": 1,
+        "rgb": 16007006
+      }
+    },
+    {
+      "query": "path:07-ONTOLOGY OR path:08-KNOWLEDGE-GRAPH OR path:09-KNOWLEDGE OR path:10-MEMORY OR path:12-CONTEXT OR path:37-RESEARCH OR path:39-EXPERIMENTS OR path:40-METRICS OR path:41-OBSERVABILITY OR path:42-EVALUATION OR path:43-OUTCOMES OR path:44-LEARNING OR path:45-EVOLUTION OR path:61-KNOWLEDGE-SOURCES OR path:63-CHANGE-MANAGEMENT OR path:64-RELATIONSHIPS OR path:65-SYNERGIES OR path:66-OPPORTUNITIES-ALT OR path:67-EVOLUTION-ALT OR path:_EVAL OR path:_MEMORY OR path:_ONTOLOGY OR path:_RELATIONSHIPS OR path:receipts OR path:review-receipts OR path:graphify-out",
+      "color": {
+        "a": 1,
+        "rgb": 6514417
+      }
+    },
+    {
+      "query": "path:SECTORS OR path:COMMERCIAL OR path:CAMPAIGNS OR path:23-VENTURES OR path:24-FINANCE OR path:25-SALES OR path:26-MARKETING OR path:27-CUSTOMERS OR path:28-PRODUCT OR path:29-OPERATIONS OR path:35-ASSETS OR path:36-PARTNERS OR path:38-OPPORTUNITIES OR path:51-CONSTRUCTION OR path:54-FINANCIAL OR tag:#venture",
+      "color": {
+        "a": 1,
+        "rgb": 1357990
+      }
+    },
+    {
+      "query": "path:_TEMPLATES OR path:_DOCS OR path:47-DOCUMENTS OR path:_ARCHIVE OR path:graft OR tag:#template",
+      "color": {
+        "a": 1,
+        "rgb": 15381256
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": true,
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 10,
+  "linkStrength": 1,
+  "linkDistance": 250,
+  "scale": 0.9224771622999295,
+  "close": true
+}

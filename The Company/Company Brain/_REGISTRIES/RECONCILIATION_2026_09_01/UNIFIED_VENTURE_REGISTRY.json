@@ -1,0 +1,357 @@
+{
+  "ventures": 789,
+  "samples": {
+    "ventures": {
+      "FIN-001-GenixBank-Lite": {
+        "id": "FIN-001-GenixBank-Lite",
+        "name": "Genixbank Lite",
+        "status": "planned",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "FIN-002-Credit-Repair-Automation": {
+        "id": "FIN-002-Credit-Repair-Automation",
+        "name": "Credit Repair Automation",
+        "status": "planned",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "FIN-003-AI-Boss-Hub-Lite": {
+        "id": "FIN-003-AI-Boss-Hub-Lite",
+        "name": "Ai Boss Hub Lite",
+        "status": "planned",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "FIN-004-GenixBanks-AI-Treasurer": {
+        "id": "FIN-004-GenixBanks-AI-Treasurer",
+        "name": "Genixbanks Ai Treasurer",
+        "status": "planned",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "FIN-005-U-Haul-Rental-Affiliate": {
+        "id": "FIN-005-U-Haul-Rental-Affiliate",
+        "name": "U Haul Rental Affiliate",
+        "status": "planned",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "FIN-006-Tax-Prep-Filing-Services": {
+        "id": "FIN-006-Tax-Prep-Filing-Services",
+        "name": "Tax Prep Filing Services",
+        "status": "planned",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "FIN-007-Business-Credit-Building": {
+        "id": "FIN-007-Business-Credit-Building",
+        "name": "Business Credit Building",
+        "status": "planned",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "FIN-008-Business-Formation-Services": {
+        "id": "FIN-008-Business-Formation-Services",
+        "name": "Business Formation Services",
+        "status": "planned",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "FIN-009-Crypto-Tax-Optimizer": {
+        "id": "FIN-009-Crypto-Tax-Optimizer",
+        "name": "Crypto Tax Optimizer",
+        "status": "planned",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "FIN-010-AI-Powered-Garbage-Collection": {
+        "id": "FIN-010-AI-Powered-Garbage-Collection",
+        "name": "Ai Powered Garbage Collection",
+        "status": "planned",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "FIN-011-Automated-Bookkeeping": {
+        "id": "FIN-011-Automated-Bookkeeping",
+        "name": "Automated Bookkeeping",
+        "status": "planned",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "FIN-012-Invoice-Factoring-AI": {
+        "id": "FIN-012-Invoice-Factoring-AI",
+        "name": "Invoice Factoring Ai",
+        "status": "planned",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "FIN-013-Charity-Donation-AI": {
+        "id": "FIN-013-Charity-Donation-AI",
+        "name": "Charity Donation Ai",
+        "status": "planned",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "FIN-014-Expense-Tracker-AI": {
+        "id": "FIN-014-Expense-Tracker-AI",
+        "name": "Expense Tracker Ai",
+        "status": "planned",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "FIN-015-Financial-Wellness-Coach": {
+        "id": "FIN-015-Financial-Wellness-Coach",
+        "name": "Financial Wellness Coach",
+        "status": "planned",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "FIN-016-Trade-Finance-AI": {
+        "id": "FIN-016-Trade-Finance-AI",
+        "name": "Trade Finance Ai",
+        "status": "planned",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "FIN-017-Remittance-AI": {
+        "id": "FIN-017-Remittance-AI",
+        "name": "Remittance Ai",
+        "status": "planned",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "FIN-018-Wealth-Transfer-AI": {
+        "id": "FIN-018-Wealth-Transfer-AI",
+        "name": "Wealth Transfer Ai",
+        "status": "planned",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "FIN-019-Payment-Gateway-AI": {
+        "id": "FIN-019-Payment-Gateway-AI",
+        "name": "Payment Gateway Ai",
+        "status": "planned",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "FIN-020-Debt-Consolidation-AI": {
+        "id": "FIN-020-Debt-Consolidation-AI",
+        "name": "Debt Consolidation Ai",
+        "status": "planned",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "FIN-021-Tax-Deduction-Finder": {
+        "id": "FIN-021-Tax-Deduction-Finder",
+        "name": "Tax Deduction Finder",
+        "status": "planned",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "FIN-022-Budget-Forecasting-AI": {
+        "id": "FIN-022-Budget-Forecasting-AI",
+        "name": "Budget Forecasting Ai",
+        "status": "planned",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "FIN-023-Investment-Portfolio-AI": {
+        "id": "FIN-023-Investment-Portfolio-AI",
+        "name": "Investment Portfolio Ai",
+        "status": "planned",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "FIN-024-Crowdfunding-AI": {
+        "id": "FIN-024-Crowdfunding-AI",
+        "name": "Crowdfunding Ai",
+        "status": "planned",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "FIN-025-Escrow-Automation": {
+        "id": "FIN-025-Escrow-Automation",
+        "name": "Escrow Automation",
+        "status": "planned",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "FIN-026-Financial-Compliance-Scanner": {
+        "id": "FIN-026-Financial-Compliance-Scanner",
+        "name": "Financial Compliance Scanner",
+        "status": "planned",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "FIN-027-Patent-Writer-AI": {
+        "id": "FIN-027-Patent-Writer-AI",
+        "name": "Patent Writer Ai",
+        "status": "planned",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "FIN-028-Legal-Analyzer-AI": {
+        "id": "FIN-028-Legal-Analyzer-AI",
+        "name": "Legal Analyzer Ai",
+        "status": "planned",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "FIN-029-Compliance-Wallet-SaaS": {
+        "id": "FIN-029-Compliance-Wallet-SaaS",
+        "name": "Compliance Wallet Saas",
+        "status": "planned",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "FIN-030-Local-SEO-Ranker-AI": {
+        "id": "FIN-030-Local-SEO-Ranker-AI",
+        "name": "Local Seo Ranker Ai",
+        "status": "planned",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "FIN-031-Investor-Dashboard-Builder": {
+        "id": "FIN-031-Investor-Dashboard-Builder",
+        "name": "Investor Dashboard Builder",
+        "status": "planned",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "FIN-032-Legal-Toolkit-AI": {
+        "id": "FIN-032-Legal-Toolkit-AI",
+        "name": "Legal Toolkit Ai",
+        "status": "planned",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "FIN-033-AI-Tax-Preparation-Service": {
+        "id": "FIN-033-AI-Tax-Preparation-Service",
+        "name": "Ai Tax Preparation Service",
+        "status": "planned",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "FIN-034-Payroll-Automation": {
+        "id": "FIN-034-Payroll-Automation",
+        "name": "Payroll Automation",
+        "status": "planned",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "FIN-035-Insurance-Underwriting-AI": {
+        "id": "FIN-035-Insurance-Underwriting-AI",
+        "name": "Insurance Underwriting Ai",
+        "status": "planned",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "FIN-036-Arbitrage-Nexus-Platform": {
+        "id": "FIN-036-Arbitrage-Nexus-Platform",
+        "name": "Arbitrage Nexus Platform",
+        "status": "active",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "BW-001-Lash-Extension-Studio": {
+        "id": "BW-001-Lash-Extension-Studio",
+        "name": "Lash Extension Studio",
+        "status": "validation",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "BW-002-Mobile-Lash-Service": {
+        "id": "BW-002-Mobile-Lash-Service",
+        "name": "Mobile Lash Service",
+        "status": "development",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "BW-003-Luxury-Lash-Bar": {
+        "id": "BW-003-Luxury-Lash-Bar",
+        "name": "Luxury Lash Bar",
+        "status": "validation",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "BW-004-Lash-Training-Academy": {
+        "id": "BW-004-Lash-Training-Academy",
+        "name": "Lash Training Academy",
+        "status": "validation",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "BW-005-Lash-Supply-Company": {
+        "id": "BW-005-Lash-Supply-Company",
+        "name": "Lash Supply Company",
+        "status": "development",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "BW-006-Lash-Glue-Brand": {
+        "id": "BW-006-Lash-Glue-Brand",
+        "name": "Lash Glue Brand",
+        "status": "validation",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "BW-007-Lash-Kits-&-Tools": {
+        "id": "BW-007-Lash-Kits-&-Tools",
+        "name": "Lash Kits & Tools",
+        "status": "development",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "BW-008-Private-Label-Lashes": {
+        "id": "BW-008-Private-Label-Lashes",
+        "name": "Private Label Lashes",
+        "status": "planned",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "BW-009-Franchise-Lash-Salons": {
+        "id": "BW-009-Franchise-Lash-Salons",
+        "name": "Franchise Lash Salons",
+        "status": "planned",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "BW-010-Online-Lash-Education": {
+        "id": "BW-010-Online-Lash-Education",
+        "name": "Online Lash Education",
+        "status": "development",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "BW-011-Nail-Salon": {
+        "id": "BW-011-Nail-Salon",
+        "name": "Nail Salon",
+        "status": "validation",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "BW-012-Mobile-Nail-Tech": {
+        "id": "BW-012-Mobile-Nail-Tech",
+        "name": "Mobile Nail Tech",
+        "status": "development",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "BW-013-Luxury-Nail-Spa": {
+        "id": "BW-013-Luxury-Nail-Spa",
+        "name": "Luxury Nail Spa",
+        "status": "validation",
+        "repositories": [],
+        "repo_count": 0
+      },
+      "BW-014-Press-On-Nail-Brand": {
+        "id": "BW-014-Press-On-Nail-Brand",
+        "name": "Press On Nail Brand",
+        "status": "development",
+        "repositories": [],
+        "repo_count": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "1.0.0",
+  "results": [
+    {
+      "id": "RES-001",
+      "campaign_id": "CAM-001",
+      "reporting_period": "2026-09-05_TO_2026-10-15",
+      "metrics": {
+        "total_prospects_contacted": 0,
+        "positive_responses": 0,
+        "discovery_calls_completed": 0,
+        "sows_presented": 0,
+        "audits_closed": 0,
+        "total_revenue_usd": 0,
+        "total_cost_usd": 0,
+        "net_profit_usd": 0,
+        "realized_roas": 0.0,
+        "realized_cac_usd": 0.0
+      },
+      "status": "IN_PROGRESS",
+      "last_reconciled": "2026-09-05T11:00:00Z"
+    }
+  ]
+}

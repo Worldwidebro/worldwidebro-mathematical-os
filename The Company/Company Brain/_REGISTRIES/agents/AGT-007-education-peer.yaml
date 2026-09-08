@@ -1,0 +1,26 @@
+id: AGT-007
+name: Education Peer Agent
+description: "Engages students with interactive discussions and peer learning"
+fractal_agent: education-peer
+sector_tags:
+  - SEC-037
+control_planes:
+  - CP-031
+capabilities:
+  - CAP-207  # Discussion prompts
+  - CAP-208  # Q&A handling
+  - CAP-210  # Peer feedback
+autonomy_levels:
+  - L1
+  - L2
+  - L3
+cost_model:
+  per_step: 1.50
+  per_iteration: 30.00
+  per_run: 150.00
+manages_ventures:
+  - EDU-*
+tools:
+  - TOL-anthropic
+created_at: "2026-09-02"
+status: active

@@ -1,0 +1,27 @@
+# Repository ID Mapping
+# Maps Company Brain REP-000001 to GitHub metadata
+
+repositories:
+  - ref_id: "REP-000001"
+    name: "claude-home"
+    github:
+      owner: "worldwidebro"
+      repo: "claude-home"
+      node_id: "R_kgDO..."
+      url: "https://github.com/worldwidebro/claude-home"
+    capabilities:
+      - "CAP-000001"  # Authentication
+      - "CAP-000002"  # Core Infrastructure
+    status: "active"
+
+  - ref_id: "REP-000002"
+    name: "venture-hub"
+    github:
+      owner: "worldwidebro"
+      repo: "venture-hub"
+      node_id: "R_kgDO..."
+    capabilities:
+      - "CAP-000010"  # Venture Management
+    status: "active"
+
+status: "🟡 Template - populate with 1600 repos"

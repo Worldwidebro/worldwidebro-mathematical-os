@@ -1,0 +1,377 @@
+# Canonical NAICS 2022 Taxonomy Registry
+metadata:
+  authority: "Executive Office of the President / OMB / U.S. Census Bureau"
+  system: "North American Industry Classification System (NAICS)"
+  version: "2022"
+  total_records: 2125
+  sectors_count: 20
+  sha256: "217c9e0d4d74e7517bc288f5f308b73aa0de5ee787976a6dd222412be28ada22"
+sectors:
+  - code: "11"
+    title: "Agriculture, Forestry, Fishing and Hunting"
+    trilateral: true
+    subsectors:
+      - code: "111"
+        title: "Crop Production"
+        national_industries_count: 30
+      - code: "112"
+        title: "Animal Production and Aquaculture"
+        national_industries_count: 19
+      - code: "113"
+        title: "Forestry and Logging"
+        national_industries_count: 3
+      - code: "114"
+        title: "Fishing, Hunting and Trapping"
+        national_industries_count: 4
+      - code: "115"
+        title: "Support Activities for Agriculture and Forestry"
+        national_industries_count: 8
+  - code: "21"
+    title: "Mining, Quarrying, and Oil and Gas Extraction"
+    trilateral: true
+    subsectors:
+      - code: "211"
+        title: "Oil and Gas Extraction"
+        national_industries_count: 2
+      - code: "212"
+        title: "Mining (except Oil and Gas)"
+        national_industries_count: 14
+      - code: "213"
+        title: "Support Activities for Mining"
+        national_industries_count: 5
+  - code: "22"
+    title: "Utilities"
+    trilateral: true
+    subsectors:
+      - code: "221"
+        title: "Utilities"
+        national_industries_count: 14
+  - code: "23"
+    title: "Construction"
+    trilateral: true
+    subsectors:
+      - code: "236"
+        title: "Construction of Buildings"
+        national_industries_count: 6
+      - code: "237"
+        title: "Heavy and Civil Engineering Construction"
+        national_industries_count: 6
+      - code: "238"
+        title: "Specialty Trade Contractors"
+        national_industries_count: 19
+  - code: "31-33"
+    title: "Manufacturing"
+    trilateral: true
+    subsectors:
+      - code: "311"
+        title: "Food Manufacturing"
+        national_industries_count: 43
+      - code: "312"
+        title: "Beverage and Tobacco Product Manufacturing"
+        national_industries_count: 7
+      - code: "313"
+        title: "Textile Mills"
+        national_industries_count: 7
+      - code: "314"
+        title: "Textile Product Mills"
+        national_industries_count: 5
+      - code: "315"
+        title: "Apparel Manufacturing"
+        national_industries_count: 4
+      - code: "316"
+        title: "Leather and Allied Product Manufacturing"
+        national_industries_count: 3
+      - code: "321"
+        title: "Wood Product Manufacturing"
+        national_industries_count: 13
+      - code: "322"
+        title: "Paper Manufacturing"
+        national_industries_count: 10
+      - code: "323"
+        title: "Printing and Related Support Activities"
+        national_industries_count: 4
+      - code: "324"
+        title: "Petroleum and Coal Products Manufacturing"
+        national_industries_count: 5
+      - code: "325"
+        title: "Chemical Manufacturing"
+        national_industries_count: 30
+      - code: "326"
+        title: "Plastics and Rubber Products Manufacturing"
+        national_industries_count: 16
+      - code: "327"
+        title: "Nonmetallic Mineral Product Manufacturing"
+        national_industries_count: 18
+      - code: "331"
+        title: "Primary Metal Manufacturing"
+        national_industries_count: 18
+      - code: "332"
+        title: "Fabricated Metal Product Manufacturing"
+        national_industries_count: 36
+      - code: "333"
+        title: "Machinery Manufacturing"
+        national_industries_count: 35
+      - code: "334"
+        title: "Computer and Electronic Product Manufacturing"
+        national_industries_count: 23
+      - code: "335"
+        title: "Electrical Equipment, Appliance, and Component Manufacturing"
+        national_industries_count: 16
+      - code: "336"
+        title: "Transportation Equipment Manufacturing"
+        national_industries_count: 26
+      - code: "337"
+        title: "Furniture and Related Product Manufacturing"
+        national_industries_count: 11
+      - code: "339"
+        title: "Miscellaneous Manufacturing"
+        national_industries_count: 16
+  - code: "42"
+    title: "Wholesale Trade"
+    trilateral: true
+    subsectors:
+      - code: "423"
+        title: "Merchant Wholesalers, Durable Goods"
+        national_industries_count: 37
+      - code: "424"
+        title: "Merchant Wholesalers, Nondurable Goods"
+        national_industries_count: 31
+      - code: "425"
+        title: "Wholesale Trade Agents and Brokers"
+        national_industries_count: 1
+  - code: "44-45"
+    title: "Retail Trade"
+    trilateral: true
+    subsectors:
+      - code: "441"
+        title: "Motor Vehicle and Parts Dealers"
+        national_industries_count: 7
+      - code: "444"
+        title: "Building Material and Garden Equipment and Supplies Dealers"
+        national_industries_count: 6
+      - code: "445"
+        title: "Food and Beverage Retailers"
+        national_industries_count: 10
+      - code: "449"
+        title: "Furniture, Home Furnishings, Electronics, and Appliance Retailers"
+        national_industries_count: 5
+      - code: "455"
+        title: "General Merchandise Retailers"
+        national_industries_count: 3
+      - code: "456"
+        title: "Health and Personal Care Retailers"
+        national_industries_count: 5
+      - code: "457"
+        title: "Gasoline Stations and Fuel Dealers"
+        national_industries_count: 3
+      - code: "458"
+        title: "Clothing, Clothing Accessories, Shoe, and Jewelry Retailers"
+        national_industries_count: 4
+      - code: "459"
+        title: "Sporting Goods, Hobby, Musical Instrument, Book, and Miscellaneous Retailers"
+        national_industries_count: 14
+  - code: "48-49"
+    title: "Transportation and Warehousing"
+    trilateral: true
+    subsectors:
+      - code: "481"
+        title: "Air Transportation"
+        national_industries_count: 5
+      - code: "482"
+        title: "Rail Transportation"
+        national_industries_count: 2
+      - code: "483"
+        title: "Water Transportation"
+        national_industries_count: 6
+      - code: "484"
+        title: "Truck Transportation"
+        national_industries_count: 6
+      - code: "485"
+        title: "Transit and Ground Passenger Transportation"
+        national_industries_count: 11
+      - code: "486"
+        title: "Pipeline Transportation"
+        national_industries_count: 4
+      - code: "487"
+        title: "Scenic and Sightseeing Transportation"
+        national_industries_count: 3
+      - code: "488"
+        title: "Support Activities for Transportation"
+        national_industries_count: 13
+      - code: "491"
+        title: "Postal Service"
+        national_industries_count: 1
+      - code: "492"
+        title: "Couriers and Messengers"
+        national_industries_count: 2
+      - code: "493"
+        title: "Warehousing and Storage"
+        national_industries_count: 4
+  - code: "51"
+    title: "Information"
+    trilateral: true
+    subsectors:
+      - code: "512"
+        title: "Motion Picture and Sound Recording Industries"
+        national_industries_count: 10
+      - code: "513"
+        title: "Publishing Industries"
+        national_industries_count: 7
+      - code: "516"
+        title: "Broadcasting and Content Providers"
+        national_industries_count: 3
+      - code: "517"
+        title: "Telecommunications"
+        national_industries_count: 6
+      - code: "518"
+        title: "Computing Infrastructure Providers, Data Processing, Web Hosting, and Related Services"
+        national_industries_count: 1
+      - code: "519"
+        title: "Web Search Portals, Libraries, Archives, and Other Information Services"
+        national_industries_count: 2
+  - code: "52"
+    title: "Finance and Insurance"
+    trilateral: true
+    subsectors:
+      - code: "521"
+        title: "Monetary Authorities-Central Bank"
+        national_industries_count: 1
+      - code: "522"
+        title: "Credit Intermediation and Related Activities"
+        national_industries_count: 11
+      - code: "523"
+        title: "Securities, Commodity Contracts, and Other Financial Investments and Related Activities"
+        national_industries_count: 7
+      - code: "524"
+        title: "Insurance Carriers and Related Activities"
+        national_industries_count: 10
+      - code: "525"
+        title: "Funds, Trusts, and Other Financial Vehicles"
+        national_industries_count: 6
+  - code: "53"
+    title: "Real Estate and Rental and Leasing"
+    trilateral: true
+    subsectors:
+      - code: "531"
+        title: "Real Estate"
+        national_industries_count: 9
+      - code: "532"
+        title: "Rental and Leasing Services"
+        national_industries_count: 14
+      - code: "533"
+        title: "Lessors of Nonfinancial Intangible Assets (except Copyrighted Works)"
+        national_industries_count: 1
+  - code: "54"
+    title: "Professional, Scientific, and Technical Services"
+    trilateral: true
+    subsectors:
+      - code: "541"
+        title: "Professional, Scientific, and Technical Services"
+        national_industries_count: 49
+  - code: "55"
+    title: "Management of Companies and Enterprises"
+    trilateral: true
+    subsectors:
+      - code: "551"
+        title: "Management of Companies and Enterprises"
+        national_industries_count: 3
+  - code: "56"
+    title: "Administrative and Support and Waste Management and Remediation Services"
+    trilateral: true
+    subsectors:
+      - code: "561"
+        title: "Administrative and Support Services"
+        national_industries_count: 33
+      - code: "562"
+        title: "Waste Management and Remediation Services"
+        national_industries_count: 11
+  - code: "61"
+    title: "Educational Services"
+    trilateral: true
+    subsectors:
+      - code: "611"
+        title: "Educational Services"
+        national_industries_count: 17
+  - code: "62"
+    title: "Health Care and Social Assistance"
+    trilateral: true
+    subsectors:
+      - code: "621"
+        title: "Ambulatory Health Care Services"
+        national_industries_count: 21
+      - code: "622"
+        title: "Hospitals"
+        national_industries_count: 3
+      - code: "623"
+        title: "Nursing and Residential Care Facilities"
+        national_industries_count: 6
+      - code: "624"
+        title: "Social Assistance"
+        national_industries_count: 9
+  - code: "71"
+    title: "Arts, Entertainment, and Recreation"
+    trilateral: true
+    subsectors:
+      - code: "711"
+        title: "Performing Arts, Spectator Sports, and Related Industries"
+        national_industries_count: 11
+      - code: "712"
+        title: "Museums, Historical Sites, and Similar Institutions"
+        national_industries_count: 4
+      - code: "713"
+        title: "Amusement, Gambling, and Recreation Industries"
+        national_industries_count: 10
+  - code: "72"
+    title: "Accommodation and Food Services"
+    trilateral: true
+    subsectors:
+      - code: "721"
+        title: "Accommodation"
+        national_industries_count: 7
+      - code: "722"
+        title: "Food Services and Drinking Places"
+        national_industries_count: 8
+  - code: "81"
+    title: "Other Services (except Public Administration)"
+    trilateral: true
+    subsectors:
+      - code: "811"
+        title: "Repair and Maintenance"
+        national_industries_count: 14
+      - code: "812"
+        title: "Personal and Laundry Services"
+        national_industries_count: 16
+      - code: "813"
+        title: "Religious, Grantmaking, Civic, Professional, and Similar Organizations"
+        national_industries_count: 13
+      - code: "814"
+        title: "Private Households"
+        national_industries_count: 1
+  - code: "92"
+    title: "Public Administration"
+    trilateral: true
+    subsectors:
+      - code: "921"
+        title: "Executive, Legislative, and Other General Government Support"
+        national_industries_count: 6
+      - code: "922"
+        title: "Justice, Public Order, and Safety Activities"
+        national_industries_count: 7
+      - code: "923"
+        title: "Administration of Human Resource Programs"
+        national_industries_count: 4
+      - code: "924"
+        title: "Administration of Environmental Quality Programs"
+        national_industries_count: 2
+      - code: "925"
+        title: "Administration of Housing Programs, Urban Planning, and Community Development"
+        national_industries_count: 2
+      - code: "926"
+        title: "Administration of Economic Programs"
+        national_industries_count: 5
+      - code: "927"
+        title: "Space Research and Technology"
+        national_industries_count: 1
+      - code: "928"
+        title: "National Security and International Affairs"
+        national_industries_count: 2

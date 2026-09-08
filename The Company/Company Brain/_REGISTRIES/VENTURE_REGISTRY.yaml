@@ -1,0 +1,124 @@
+# Venture Registry
+# Authoritative source for all ventures in Company Brain ecosystem
+# Generated from: CB-RECON-2026-09-01 (Universal Portfolio Reconciliation)
+
+metadata:
+  version: "2.0"
+  created_at: "2026-09-01"
+  reconciliation_id: "CB-RECON-2026-09-01"
+  total_ventures: 789
+  id_prefix: "VENTURE-"
+  id_format: "SECTOR-NNN"
+  source: "Worldwidebro Venture Portal + GitHub repo names"
+
+id_format:
+  canonical_sectors: "SEC-001 through SEC-035 (35-sector taxonomy from SECTOR_INDEX.md)"
+  aliases:
+    FIN: "← alias for SEC-008 (Financial Services)"
+    CON: "← alias for SEC-002 (Construction & Infrastructure)"
+    RE: "← alias for SEC-020 (Real Estate & Property)"
+    LT: "← alias for SEC-017 (Logistics & Transportation)"
+  id_examples:
+    - "FIN-001 = SEC-008-001 (Genixbank Lite)"
+    - "CON-042 = SEC-002-042"
+    - "RE-005 = SEC-020-005"
+    - "LT-011 = SEC-017-011"
+  id_range: "000001 to 999999 (per sector)"
+  used_ids: 789
+  note: "Venture Portal uses short aliases (FIN, CON, RE, LT) for convenience; they canonically map to SEC-NNN codes"
+
+summary:
+  total: 789
+  with_github_repos: 89
+  with_vercel_deployment: 22
+  by_sector:
+    FIN: "~300 ventures"
+    CON: "~200 ventures"
+    RE: "~150 ventures"
+    LT: "~139 ventures"
+
+sectors:
+  - Financial:
+      ventures: "~300"
+      registry_key: "FIN-NNN"
+  - Construction:
+      ventures: "~200"
+      registry_key: "CON-NNN"
+  - Real Estate:
+      ventures: "~150"
+      registry_key: "RE-NNN"
+  - Logistics:
+      ventures: "~139"
+      registry_key: "LT-NNN"
+
+sources:
+  venture_portal: "Worldwidebro/worldwidebro-venture-portal"
+  venture_portal_repo_id: "OWN-PRIV-0004"
+  venture_portal_neo4j_id: "REP-001"
+  portal_data_file: "src/data/portfolio.public.json"
+  flywheel_architecture: "_INFRASTRUCTURE/VENTURE-PORTAL-FLYWHEEL.md"
+  github_repo_extraction: "GitHub repo names matching SECTOR-NNN pattern"
+  registry_files:
+    - "_REGISTRIES/RECONCILIATION_2026_09_01/UNIFIED_VENTURE_REGISTRY.json"
+    - "_REGISTRIES/RECONCILIATION_2026_09_01/VENTURE_REGISTRY_FROM_REPOS.json"
+
+relationships:
+  venture_to_repo: 605
+  distinct_ventures_with_repos: 585
+  venture_to_deployment: 71
+  distinct_ventures_with_deployments: 67
+  ventures_with_both_repo_and_deployment: 66
+  total_owned_github_repositories: 893
+  total_vercel_deployments: 95
+  venture_to_company: 789
+  correlation_matrix: "_REGISTRIES/CANONICAL/VENTURE_CORRELATION_MATRIX.json"
+
+status_distribution:
+  planned: "~26%"
+  validating: "~40%"
+  prototype: "~15%"
+  mvp: "~10%"
+  operating: "~9%"
+
+notes:
+  - "Venture Portal (portfolio.public.json) is the authoritative public portfolio surface of 789 ventures"
+  - "585 of 789 ventures have code-backed GitHub repositories (605 sector-prefixed repos total)"
+  - "67 ventures have live Vercel production deployments (71 sector-specific deployments total)"
+  - "66 ventures have both a code-backed GitHub repo AND a live Vercel deployment"
+  - "95 total Vercel deployments exist across WorldwideBro (86 mapped directly to GitHub repos)"
+  - "288 owned repositories provide foundational platform, SDK, bot, and infrastructure capabilities"
+  - "Full correlation lookup table is maintained in _REGISTRIES/CANONICAL/VENTURE_CORRELATION_MATRIX.json"
+
+governance_state:
+  active_ventures_count: 3
+  archived_cold_storage_count: 786
+  governing_decision: "DEC-PRUNE-003"
+  archive_reference: "_ARCHIVE/COLD_STORAGE/VENTURES_FREEZE_2026.yaml"
+
+active_ventures:
+  - id: VEN-001
+    name: "Local-First AI Infrastructure & Repo Intelligence Audit"
+    short_code: "AUDIT-001"
+    status: "OFFERING_IN_MARKET"
+    revenue_target: "$7,500/audit"
+    target_prospects: "Mid-sized engineering teams spending >$5k/mo on closed-source LLMs & cloud compute"
+    primary_capability: "Local LLM orchestration (OmniRoute/LiteLLM/exo), vector DB (Qdrant), knowledge graphs (Neo4j), repo intelligence"
+    commercial_owner: "CP-006"
+
+  - id: VEN-002
+    name: "AI Model Routing & Cost Optimization Stack"
+    short_code: "ROUTER-001"
+    status: "PILOT_VALIDATION"
+    revenue_target: "$3,000/mo SaaS/Retainer"
+    target_prospects: "Companies with high agentic/tool token consumption needing RTK/Caveman token compression & multi-provider fallback"
+    primary_capability: "OmniRoute gateway, Tailscale mesh, dynamic failover, token compression"
+    commercial_owner: "CP-007"
+
+  - id: VEN-003
+    name: "Sovereign Agent Control Plane & Knowledge Graph OS"
+    short_code: "GRAPH-001"
+    status: "PILOT_VALIDATION"
+    revenue_target: "$15,000 deployment fee + maintenance"
+    target_prospects: "Enterprises needing zero-leakage local RAG and multi-agent workflow governance"
+    primary_capability: "Neo4j semantic graph, graphify, Qdrant vectors, Antigravity/Claude Code agent swarm"
+    commercial_owner: "CP-027"

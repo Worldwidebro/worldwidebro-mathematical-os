@@ -1,0 +1,16 @@
+products:
+  -
+    name: "CarrierDispatch Algorithmic Freight Matching"
+    pricing: "0.60% toll on gross load"
+    model: "Transactional Fee"
+    margin: "88.0%"
+  -
+    name: "CarrierDispatch TMS Cloud Platform"
+    pricing: "$199 / truck / mo"
+    model: "SaaS Subscription"
+    margin: "82.0%"
+  -
+    name: "Embedded Non-Recourse Factoring Advance"
+    pricing: "1.85% fee on receivables"
+    model: "Financial Services"
+    margin: "65.0%"

@@ -1,0 +1,5683 @@
+{
+  "OWN-PRIV-0001": {
+    "repo_name": "bw-eroticafox",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0002": {
+    "repo_name": "lt-005-medical-courier-dispatch",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0003": {
+    "repo_name": "career-ops",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0004": {
+    "repo_name": "worldwidebro-venture-portal",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0005": {
+    "repo_name": "Vex",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0006": {
+    "repo_name": "fin-037-worldwidebro-trading-system",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0007": {
+    "repo_name": "lt-011-dispatch-software",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0008": {
+    "repo_name": "ops-staff-001-staffing",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0009": {
+    "repo_name": "con-001-ace-construction",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0010": {
+    "repo_name": "venture-hub",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0011": {
+    "repo_name": "media-empire-platform",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0012": {
+    "repo_name": "re-002-os-property-management",
+    "has_manifest": true,
+    "manifests": [
+      "package.json",
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0013": {
+    "repo_name": "re-001-worldwidebro-holdings",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0014": {
+    "repo_name": "ec-001-angels-in-daylight",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0015": {
+    "repo_name": "fin-033-ai-tax-preparation-service",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0016": {
+    "repo_name": "fin-021-tax-deduction-finder",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0017": {
+    "repo_name": "fin-009-crypto-tax-optimizer",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0018": {
+    "repo_name": "fin-006-tax-prep-filing-services",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0019": {
+    "repo_name": "worldwidebro-os-core",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0020": {
+    "repo_name": "wealth-optimization-platform",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0021": {
+    "repo_name": "OS-001-MATHEMATICAL-OS-REGISTRY",
+    "status": "no_access_or_empty"
+  },
+  "OWN-PRIV-0022": {
+    "repo_name": "Worldwidebro",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0023": {
+    "repo_name": "worldwidebro-os-infrastructure",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0024": {
+    "repo_name": "ec-112-cosmic-kitty",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0025": {
+    "repo_name": "divine-johns-portfolio",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0026": {
+    "repo_name": "worldwidebro-marketing-os",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0027": {
+    "repo_name": "ec-111-miss-toys",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0028": {
+    "repo_name": "fin-036-arbitrage-nexus-platform",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0029": {
+    "repo_name": "spec-018-ai-personal-shopper",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0030": {
+    "repo_name": "spec-017-smart-agriculture-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0031": {
+    "repo_name": "spec-019-smart-home-security",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0032": {
+    "repo_name": "spec-001-ai-auction-house",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0033": {
+    "repo_name": "spec-038-ai-comedy-writer",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0034": {
+    "repo_name": "callitwhatyouwant",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0035": {
+    "repo_name": "fin-023-investment-portfolio-ai",
+    "has_manifest": true,
+    "manifests": [
+      "pyproject.toml"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0036": {
+    "repo_name": "arbitrage-nexus",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0037": {
+    "repo_name": "tech-040-cybersecurity-shield",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0038": {
+    "repo_name": "bloom-community-hub",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0039": {
+    "repo_name": "mc-006-video-production-company",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0040": {
+    "repo_name": "freeclaudecode",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0041": {
+    "repo_name": "avatar-engine",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0042": {
+    "repo_name": "ec-072-ai-product-cataloger",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0043": {
+    "repo_name": "ec-050-ai-product-descriptions",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0044": {
+    "repo_name": "ec-030-ai-product-photographer",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0045": {
+    "repo_name": "ec-013-merch-licensing",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0046": {
+    "repo_name": "ec-012-fashion-designer-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0047": {
+    "repo_name": "ec-009-sustainable-fashion-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0048": {
+    "repo_name": "ec-003-shopify-autopilot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0049": {
+    "repo_name": "ec-002-new-world-apparel",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0050": {
+    "repo_name": "worldwidebro-construction-os",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0051": {
+    "repo_name": "edu-006-homeschooling-content-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0052": {
+    "repo_name": "worldwidebro-finance-os",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0053": {
+    "repo_name": "edu-013-automated-empire-book",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0054": {
+    "repo_name": "clip",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0055": {
+    "repo_name": "con-010-plumbing-services",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0056": {
+    "repo_name": "con-009-roofing-company",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0057": {
+    "repo_name": "Applyingforjobs",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0058": {
+    "repo_name": "deliv-713-roadrunner-cannabis",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0059": {
+    "repo_name": "fin-001-genixbank-lite",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0060": {
+    "repo_name": "worldwidebro-os-knowledge-graph",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0061": {
+    "repo_name": "worldwidebro-os-business-engine",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0062": {
+    "repo_name": "obsidian-vault",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0063": {
+    "repo_name": "comm-050-community-cultural-ai",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0064": {
+    "repo_name": "comm-049-public-event-ai",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0065": {
+    "repo_name": "comm-048-community-transportation-ai",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0066": {
+    "repo_name": "comm-047-public-fitness-ai",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0067": {
+    "repo_name": "comm-046-community-pet-care-ai",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0068": {
+    "repo_name": "comm-045-public-childcare-ai",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0069": {
+    "repo_name": "comm-044-community-volunteering-ai",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0070": {
+    "repo_name": "comm-043-local-food-network-ai",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0071": {
+    "repo_name": "comm-042-community-energy-ai",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0072": {
+    "repo_name": "comm-041-public-wi-fi-ai",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0073": {
+    "repo_name": "comm-040-community-recycling-ai",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0074": {
+    "repo_name": "comm-039-public-space-ai",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0075": {
+    "repo_name": "comm-038-community-policing-ai",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0076": {
+    "repo_name": "comm-037-neighborhood-development-ai",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0077": {
+    "repo_name": "comm-036-public-infrastructure-ai",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0078": {
+    "repo_name": "comm-035-community-arts-ai",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0079": {
+    "repo_name": "comm-034-senior-tech-support",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0080": {
+    "repo_name": "comm-033-youth-innovation-hub",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0081": {
+    "repo_name": "comm-032-public-health-ai",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0082": {
+    "repo_name": "comm-031-community-investment-ai",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0083": {
+    "repo_name": "comm-030-cultural-exchange-ai",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0084": {
+    "repo_name": "comm-029-community-wellness-ai",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0085": {
+    "repo_name": "comm-028-public-safety-ai",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0086": {
+    "repo_name": "comm-027-local-government-ai",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0087": {
+    "repo_name": "comm-026-public-education-ai",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0088": {
+    "repo_name": "comm-025-community-legal-aid",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0089": {
+    "repo_name": "comm-024-youth-sports-ai",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0090": {
+    "repo_name": "comm-023-elder-companion-ai",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0091": {
+    "repo_name": "comm-022-job-training-center",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0092": {
+    "repo_name": "comm-021-housing-assistance-ai",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0093": {
+    "repo_name": "comm-020-public-transportation-ai",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0094": {
+    "repo_name": "comm-019-community-garden-ai",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0095": {
+    "repo_name": "comm-018-neighborhood-watch-ai",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0096": {
+    "repo_name": "comm-017-local-business-directory",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0097": {
+    "repo_name": "comm-016-community-health-ai",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0098": {
+    "repo_name": "comm-015-youth-mentorship-program",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0099": {
+    "repo_name": "comm-014-veterans-support-ai",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0100": {
+    "repo_name": "comm-013-women-s-empowerment-network",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0101": {
+    "repo_name": "comm-012-black-art-museum-ai",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0102": {
+    "repo_name": "comm-011-indigenous-creator-hub",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0103": {
+    "repo_name": "comm-010-disaster-relief-ai",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0104": {
+    "repo_name": "comm-009-volunteer-hub-ai",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0105": {
+    "repo_name": "comm-008-community-fundraising-ai",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0106": {
+    "repo_name": "comm-007-youth-leadership-ai",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0107": {
+    "repo_name": "comm-006-community-technology-access-ai",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0108": {
+    "repo_name": "comm-005-ace-food-security-ai",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0109": {
+    "repo_name": "comm-004-community-outreach-nonprofit",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0110": {
+    "repo_name": "comm-003-ace-senior-care-connect",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0111": {
+    "repo_name": "comm-002-brotherhood-coaching-network",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0112": {
+    "repo_name": "comm-001-luminary-worldwide-events",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0113": {
+    "repo_name": "the-office",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0114": {
+    "repo_name": "bw-001-up-next-code",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0115": {
+    "repo_name": "iza-os-rag-system",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0116": {
+    "repo_name": "venture-factory-core",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0117": {
+    "repo_name": "bw-001-up-next-business",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0118": {
+    "repo_name": "iza-os-knowledge-graph",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0119": {
+    "repo_name": "ps-021-seo-agency",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0120": {
+    "repo_name": "ec-111-tve-fragrance",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0121": {
+    "repo_name": "ps-020-social-media-management",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0122": {
+    "repo_name": "iza-os-integrations",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0123": {
+    "repo_name": "iza-os-workflow-integration",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0124": {
+    "repo_name": "iza-os-ai-orchestration",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0125": {
+    "repo_name": "ace-community-impact-templates",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0126": {
+    "repo_name": "ace-ecommerce-templates",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0127": {
+    "repo_name": "acquisition-vehicle-automation",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0128": {
+    "repo_name": "ai-boss-holdings-v4",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0129": {
+    "repo_name": "ai-business-commander",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0130": {
+    "repo_name": "ai-venture-studio-template",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0131": {
+    "repo_name": "aibossoslandingpage",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0132": {
+    "repo_name": "autonomous-venture-studio",
+    "has_manifest": true,
+    "manifests": [
+      "package.json",
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0133": {
+    "repo_name": "avs-omni",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0134": {
+    "repo_name": "Avs-Omni-",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0135": {
+    "repo_name": "babystepsmatrix1",
+    "has_manifest": true,
+    "manifests": [
+      "package.json",
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0136": {
+    "repo_name": "billionaire-brain-assistant",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0137": {
+    "repo_name": "billionaire-consciousness-empire",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0138": {
+    "repo_name": "billionaire-workflow-automation",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0139": {
+    "repo_name": "business-template-marketplace",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0140": {
+    "repo_name": "civilization-website",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0141": {
+    "repo_name": "claude-workflow-demo",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0142": {
+    "repo_name": "con-002-residential-construction",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0143": {
+    "repo_name": "con-003-commercial-construction",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0144": {
+    "repo_name": "con-005-construction-equipment-rental",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0145": {
+    "repo_name": "con-004-industrial-construction",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0146": {
+    "repo_name": "con-006-construction-project-management",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0147": {
+    "repo_name": "con-007-green-building-services",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0148": {
+    "repo_name": "con-008-home-renovation-services",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0149": {
+    "repo_name": "con-011-electrical-services",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0150": {
+    "repo_name": "con-012-hvac-services",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0151": {
+    "repo_name": "con-013-painting-services",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0152": {
+    "repo_name": "con-014-flooring-services",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0153": {
+    "repo_name": "con-015-landscaping-services",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0154": {
+    "repo_name": "con-016-demolition-services",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0155": {
+    "repo_name": "con-017-concrete-services",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0156": {
+    "repo_name": "con-018-carpentry-services",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0157": {
+    "repo_name": "con-019-window-installation",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0158": {
+    "repo_name": "con-020-insulation-services",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0159": {
+    "repo_name": "consciousness-deployment-system",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0160": {
+    "repo_name": "consult-001-venture-consulting",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0161": {
+    "repo_name": "consulting-services-automation",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0162": {
+    "repo_name": "deployment-orchestrator",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0163": {
+    "repo_name": "design-system",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0164": {
+    "repo_name": "ec-003-hella-scars",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0165": {
+    "repo_name": "ec-004-godbody-luxuries",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0166": {
+    "repo_name": "ec-004-shoe-customizer",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0167": {
+    "repo_name": "ec-005-nwa-products",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0168": {
+    "repo_name": "ec-005-sunglasses-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0169": {
+    "repo_name": "ec-006-dropship-hub",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0170": {
+    "repo_name": "ec-007-personal-shopper-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0171": {
+    "repo_name": "ec-008-custom-sneaker-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0172": {
+    "repo_name": "ec-010-jewelry-designer-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0173": {
+    "repo_name": "ec-011-virtual-try-on-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0174": {
+    "repo_name": "ec-014-subscription-box-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0175": {
+    "repo_name": "ec-015-surf-gear-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0176": {
+    "repo_name": "ec-016-ski-gear-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0177": {
+    "repo_name": "ec-017-golf-gear-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0178": {
+    "repo_name": "ec-018-fishing-gear-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0179": {
+    "repo_name": "ec-019-yoga-gear-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0180": {
+    "repo_name": "ec-020-costume-shop-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0181": {
+    "repo_name": "ec-021-luggage-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0182": {
+    "repo_name": "ec-022-home-appliance-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0183": {
+    "repo_name": "ec-023-tool-shop-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0184": {
+    "repo_name": "ec-024-garden-supply-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0185": {
+    "repo_name": "ec-025-collectible-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0186": {
+    "repo_name": "ec-026-hobby-shop-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0187": {
+    "repo_name": "ec-027-kids-toy-line",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0188": {
+    "repo_name": "ec-028-nft-fashion-licensing",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0189": {
+    "repo_name": "ec-029-instant-brand-generator",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0190": {
+    "repo_name": "ec-031-automated-inventory-forecaster",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0191": {
+    "repo_name": "ec-032-dynamic-pricing-engine",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0192": {
+    "repo_name": "ec-033-ad-optimizer-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0193": {
+    "repo_name": "ec-034-recommendation-engine",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0194": {
+    "repo_name": "ec-035-review-aggregator-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0195": {
+    "repo_name": "ec-036-fulfillment-network-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0196": {
+    "repo_name": "ec-037-return-optimization-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0197": {
+    "repo_name": "ec-038-chatbot-customer-service",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0198": {
+    "repo_name": "ec-039-visual-search-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0199": {
+    "repo_name": "ec-041-seasonal-trend-predictor",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0200": {
+    "repo_name": "ec-040-abandoned-cart-recovery",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0201": {
+    "repo_name": "ec-042-influencer-matchmaker",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0202": {
+    "repo_name": "ec-043-ugc-content-aggregator",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0203": {
+    "repo_name": "ec-044-live-commerce-platform",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0204": {
+    "repo_name": "ec-045-ar-virtual-fitting-room",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0205": {
+    "repo_name": "ec-046-3d-product-viewer",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0206": {
+    "repo_name": "ec-047-carbon-footprint-tracker",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0207": {
+    "repo_name": "ec-048-wholesale-marketplace-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0208": {
+    "repo_name": "ec-049-rental-marketplace",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0209": {
+    "repo_name": "ec-051-ai-email-marketing",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0210": {
+    "repo_name": "ec-052-ai-product-bundler",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0211": {
+    "repo_name": "ec-053-ai-visual-merchandiser",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0212": {
+    "repo_name": "ec-054-ai-demand-forecasting",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0213": {
+    "repo_name": "ec-055-ai-warehouse-management",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0214": {
+    "repo_name": "ec-056-ai-supplier-matching",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0215": {
+    "repo_name": "ec-057-ai-quality-control",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0216": {
+    "repo_name": "ec-058-ai-packaging-designer",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0217": {
+    "repo_name": "ec-059-ai-logistics-planner",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0218": {
+    "repo_name": "ec-060-ai-customer-loyalty",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0219": {
+    "repo_name": "ec-061-ai-gift-finder",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0220": {
+    "repo_name": "ec-062-ai-trend-hunter",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0221": {
+    "repo_name": "ec-063-ai-market-research",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0222": {
+    "repo_name": "ec-064-ai-competitor-watcher",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0223": {
+    "repo_name": "ec-065-ai-product-development",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0224": {
+    "repo_name": "ec-066-ai-customer-journey",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0225": {
+    "repo_name": "ec-067-ai-payment-optimization",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0226": {
+    "repo_name": "ec-068-ai-returns-management",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0227": {
+    "repo_name": "ec-069-ai-shipping-labeler",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0228": {
+    "repo_name": "ec-070-ai-product-launch-coach",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0229": {
+    "repo_name": "ec-071-ai-vendor-negotiator",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0230": {
+    "repo_name": "ec-073-ai-order-prioritizer",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0231": {
+    "repo_name": "ec-074-ai-customer-segmentation",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0232": {
+    "repo_name": "ec-075-ai-pricing-analyst",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0233": {
+    "repo_name": "ec-076-ai-sales-forecasting",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0234": {
+    "repo_name": "ec-077-ai-inventory-reordering",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0235": {
+    "repo_name": "ec-078-ai-product-comparison",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0236": {
+    "repo_name": "ec-079-ai-customer-feedback",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0237": {
+    "repo_name": "ec-080-ai-product-updates",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0238": {
+    "repo_name": "ec-081-ai-cross-selling",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0239": {
+    "repo_name": "ec-082-ai-up-selling",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0240": {
+    "repo_name": "ec-083-ai-product-education",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0241": {
+    "repo_name": "ec-084-ai-purchase-timing",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0242": {
+    "repo_name": "ec-085-ai-customer-support",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0243": {
+    "repo_name": "ec-086-ai-order-tracking",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0244": {
+    "repo_name": "ec-087-ai-product-reviews",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0245": {
+    "repo_name": "ec-088-ai-customer-community",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0246": {
+    "repo_name": "ec-089-ai-product-customization",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0247": {
+    "repo_name": "ec-090-ai-gift-registry",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0248": {
+    "repo_name": "ec-091-ai-wedding-registry",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0249": {
+    "repo_name": "ec-092-ai-baby-registry",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0250": {
+    "repo_name": "ec-093-ai-holiday-planner",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0251": {
+    "repo_name": "ec-094-ai-personal-shopper",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0252": {
+    "repo_name": "ec-095-ai-color-match",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0253": {
+    "repo_name": "ec-096-ai-fabric-advisor",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0254": {
+    "repo_name": "ec-097-ai-fit-recommendation",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0255": {
+    "repo_name": "ec-098-ai-outfit-builder",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0256": {
+    "repo_name": "ec-099-ai-seasonal-forecast",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0257": {
+    "repo_name": "ec-100-ai-wardrobe-planner",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0258": {
+    "repo_name": "ec-101-ai-accessory-match",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0259": {
+    "repo_name": "ec-102-ai-shoe-match",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0260": {
+    "repo_name": "ec-103-ai-jewelry-match",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0261": {
+    "repo_name": "ec-104-ai-bag-match",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0262": {
+    "repo_name": "ec-105-ai-color-palette",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0263": {
+    "repo_name": "ec-106-ai-outfit-recycling",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0264": {
+    "repo_name": "ec-107-ai-style-evolution",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0265": {
+    "repo_name": "ec-108-ai-budget-stylist",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0266": {
+    "repo_name": "ec-109-ai-trend-archive",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0267": {
+    "repo_name": "ec-110-ai-vintage-advisor",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0268": {
+    "repo_name": "edu-001-youth-entrepreneurship-curriculum",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0269": {
+    "repo_name": "edu-002-ai-literacy-program",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0270": {
+    "repo_name": "edu-003-coding-mentor-certification",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0271": {
+    "repo_name": "edu-004-real-estate-licensing-prep",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0272": {
+    "repo_name": "edu-005-coding-bootcamp",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0273": {
+    "repo_name": "edu-007-ai-tutoring-platform",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0274": {
+    "repo_name": "edu-008-branding-templates-marketplace",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0275": {
+    "repo_name": "edu-009-voiceover-script-library",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0276": {
+    "repo_name": "edu-010-trade-skills-bootcamp",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0277": {
+    "repo_name": "edu-011-franchise-blueprint-system",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0278": {
+    "repo_name": "edu-012-low-income-housing-blueprint",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0279": {
+    "repo_name": "edu-014-bipoc-creator-incubator",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0280": {
+    "repo_name": "edu-015-ai-legal-doc-generator",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0281": {
+    "repo_name": "edu-016-virtual-black-art-museum",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0282": {
+    "repo_name": "edu-017-ai-coding-tutor",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0283": {
+    "repo_name": "edu-018-online-course-creator",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0284": {
+    "repo_name": "edu-019-executive-education-program",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0285": {
+    "repo_name": "edu-020-youth-stem-program",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0286": {
+    "repo_name": "edu-021-remote-work-certification",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0287": {
+    "repo_name": "edu-022-ai-research-assistant",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0288": {
+    "repo_name": "edu-023-personal-finance-coach",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0289": {
+    "repo_name": "edu-024-language-learning-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0290": {
+    "repo_name": "edu-025-test-preparation-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0291": {
+    "repo_name": "edu-026-corporate-training-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0292": {
+    "repo_name": "edu-027-medical-education-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0293": {
+    "repo_name": "edu-028-legal-education-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0294": {
+    "repo_name": "edu-029-music-education-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0295": {
+    "repo_name": "edu-030-art-education-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0296": {
+    "repo_name": "edu-031-physical-education-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0297": {
+    "repo_name": "edu-032-environmental-education-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0298": {
+    "repo_name": "edu-033-social-studies-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0299": {
+    "repo_name": "edu-034-math-education-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0300": {
+    "repo_name": "edu-035-science-education-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0301": {
+    "repo_name": "edu-036-reading-comprehension-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0302": {
+    "repo_name": "edu-037-writing-instruction-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0303": {
+    "repo_name": "edu-038-critical-thinking-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0304": {
+    "repo_name": "edu-039-emotional-intelligence-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0305": {
+    "repo_name": "edu-040-time-management-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0306": {
+    "repo_name": "education-platform-system",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0307": {
+    "repo_name": "em-001-space-habitat-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0308": {
+    "repo_name": "em-002-fusion-energy-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0309": {
+    "repo_name": "em-003-teleportation-research-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0310": {
+    "repo_name": "em-004-climate-solutions-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0311": {
+    "repo_name": "em-005-holographic-events-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0312": {
+    "repo_name": "em-006-neurofeedback-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0313": {
+    "repo_name": "em-007-autonomous-delivery-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0314": {
+    "repo_name": "em-008-gene-editing-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0315": {
+    "repo_name": "em-009-space-tourism-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0316": {
+    "repo_name": "em-010-wearables-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0317": {
+    "repo_name": "em-011-metaverse-hub-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0318": {
+    "repo_name": "em-012-energy-grid-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0319": {
+    "repo_name": "em-013-brain-computer-interface",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0320": {
+    "repo_name": "em-014-ocean-cleanup-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0321": {
+    "repo_name": "em-015-crypto-trading-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0322": {
+    "repo_name": "em-017-space-mining-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0323": {
+    "repo_name": "em-016-synthetic-media-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0324": {
+    "repo_name": "em-018-vr-therapy-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0325": {
+    "repo_name": "em-019-weather-prediction-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0326": {
+    "repo_name": "em-020-autonomous-farming-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0327": {
+    "repo_name": "em-021-traffic-optimizer-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0328": {
+    "repo_name": "em-022-smart-grid-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0329": {
+    "repo_name": "em-023-disaster-prediction-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0330": {
+    "repo_name": "em-025-personalized-medicine-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0331": {
+    "repo_name": "em-024-nanotech-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0332": {
+    "repo_name": "em-026-ai-diagnostic-lab",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0333": {
+    "repo_name": "em-027-sustainable-cities-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0334": {
+    "repo_name": "em-028-renewable-energy-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0335": {
+    "repo_name": "em-029-climate-modeling-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0336": {
+    "repo_name": "em-030-policy-advisor-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0337": {
+    "repo_name": "em-031-governance-hub-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0338": {
+    "repo_name": "em-032-global-challenges-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0339": {
+    "repo_name": "em-034-education-equity-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0340": {
+    "repo_name": "em-033-space-exploration-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0341": {
+    "repo_name": "em-035-health-equity-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0342": {
+    "repo_name": "em-036-economic-equity-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0343": {
+    "repo_name": "em-037-environmental-justice-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0344": {
+    "repo_name": "em-038-human-rights-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0345": {
+    "repo_name": "em-039-peacebuilding-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0346": {
+    "repo_name": "em-040-telemedicine-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0347": {
+    "repo_name": "em-041-ai-climate-adaptation",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0348": {
+    "repo_name": "em-042-space-agriculture-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0349": {
+    "repo_name": "em-043-quantum-communication-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0350": {
+    "repo_name": "em-044-robotics-surgery-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0351": {
+    "repo_name": "em-045-ai-disaster-response",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0352": {
+    "repo_name": "em-046-smart-city-governance",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0353": {
+    "repo_name": "em-047-ai-environmental-monitoring",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0354": {
+    "repo_name": "em-048-space-manufacturing-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0355": {
+    "repo_name": "em-049-ai-ocean-exploration",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0356": {
+    "repo_name": "em-050-ai-archaeology",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0357": {
+    "repo_name": "et-001-online-tutoring-platform",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0358": {
+    "repo_name": "enhanced-cursor-rules",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0359": {
+    "repo_name": "et-002-language-learning-app",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0360": {
+    "repo_name": "et-004-coding-bootcamp",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0361": {
+    "repo_name": "et-003-test-prep-service",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0362": {
+    "repo_name": "et-005-professional-certification",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0363": {
+    "repo_name": "et-006-corporate-training",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0364": {
+    "repo_name": "et-007-skills-assessment-platform",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0365": {
+    "repo_name": "et-008-career-coaching",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0366": {
+    "repo_name": "et-009-resume-writing-service",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0367": {
+    "repo_name": "et-010-interview-prep-platform",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0368": {
+    "repo_name": "et-011-mentorship-platform",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0369": {
+    "repo_name": "et-012-educational-content-library",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0370": {
+    "repo_name": "et-013-vr-training-simulations",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0371": {
+    "repo_name": "et-014-gamified-learning-app",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0372": {
+    "repo_name": "et-015-homeschool-curriculum",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0373": {
+    "repo_name": "fh-001-personal-chef-service",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0374": {
+    "repo_name": "fh-002-meal-prep-delivery",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0375": {
+    "repo_name": "fh-003-private-dinner-experiences",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0376": {
+    "repo_name": "fh-004-catering-company",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0377": {
+    "repo_name": "fh-005-corporate-lunch-service",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0378": {
+    "repo_name": "fh-006-healthy-meal-prep-for-gyms",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0379": {
+    "repo_name": "fh-007-elderly-meal-service",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0380": {
+    "repo_name": "fh-009-packaged-food-brand",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0381": {
+    "repo_name": "fh-008-athlete-nutrition-service",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0382": {
+    "repo_name": "fh-010-frozen-meals-company",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0383": {
+    "repo_name": "fh-011-sauce-or-seasoning-brand",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0384": {
+    "repo_name": "fh-012-protein-snacks-brand",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0385": {
+    "repo_name": "fh-013-meal-kit-company",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0386": {
+    "repo_name": "fh-014-cloud-kitchen",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0387": {
+    "repo_name": "fh-014-cloud-kitchen-",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0388": {
+    "repo_name": "fh-015-ai-nutrition-planner",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0389": {
+    "repo_name": "fh-016-recipe-app",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0390": {
+    "repo_name": "fh-017-cooking-content-brand",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0391": {
+    "repo_name": "fh-018-food-influencer-brand",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0392": {
+    "repo_name": "fh-019-cooking-course-platform",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0393": {
+    "repo_name": "fh-020-restaurant-pos-system",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0394": {
+    "repo_name": "fh-021-food-truck-business",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0395": {
+    "repo_name": "fh-022-specialty-coffee-shop",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0396": {
+    "repo_name": "fh-023-bakery---pastry-shop",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0397": {
+    "repo_name": "fh-024-juice-bar",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0398": {
+    "repo_name": "fh-025-ice-cream-shop",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0399": {
+    "repo_name": "fh-026-gourmet-food-market",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0400": {
+    "repo_name": "fh-027-food-delivery-platform",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0401": {
+    "repo_name": "fh-028-restaurant-management-saas",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0402": {
+    "repo_name": "fh-029-food-quality-testing-lab",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0403": {
+    "repo_name": "fh-030-organic-food-brand",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0404": {
+    "repo_name": "fh-031-vegan-food-company",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0405": {
+    "repo_name": "fh-032-keto-meal-service",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0406": {
+    "repo_name": "fh-033-food-photography-service",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0407": {
+    "repo_name": "fh-034-restaurant-consulting",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0408": {
+    "repo_name": "fh-035-food-safety-training",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0409": {
+    "repo_name": "fin-002-credit-repair-automation",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0410": {
+    "repo_name": "fin-003-ai-boss-hub-lite",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0411": {
+    "repo_name": "fin-004-genixbanks-ai-treasurer",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0412": {
+    "repo_name": "fin-005-u-haul-rental-affiliate",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0413": {
+    "repo_name": "fin-007-business-credit-building",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0414": {
+    "repo_name": "fin-008-business-formation-services",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0415": {
+    "repo_name": "fin-010-ai-powered-garbage-collection",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0416": {
+    "repo_name": "fin-011-automated-bookkeeping",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0417": {
+    "repo_name": "fin-012-invoice-factoring-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0418": {
+    "repo_name": "fin-013-charity-donation-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0419": {
+    "repo_name": "fin-014-expense-tracker-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0420": {
+    "repo_name": "fin-015-financial-wellness-coach",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0421": {
+    "repo_name": "fin-016-trade-finance-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0422": {
+    "repo_name": "fin-017-remittance-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0423": {
+    "repo_name": "fin-018-wealth-transfer-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0424": {
+    "repo_name": "fin-019-payment-gateway-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0425": {
+    "repo_name": "fin-020-debt-consolidation-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0426": {
+    "repo_name": "fin-022-budget-forecasting-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0427": {
+    "repo_name": "fin-024-crowdfunding-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0428": {
+    "repo_name": "fin-025-escrow-automation",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0429": {
+    "repo_name": "fin-026-financial-compliance-scanner",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0430": {
+    "repo_name": "fin-027-patent-writer-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0431": {
+    "repo_name": "fin-028-legal-analyzer-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0432": {
+    "repo_name": "fin-029-compliance-wallet-saas",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0433": {
+    "repo_name": "fin-030-local-seo-ranker-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0434": {
+    "repo_name": "fin-031-investor-dashboard-builder",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0435": {
+    "repo_name": "fin-032-legal-toolkit-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0436": {
+    "repo_name": "fin-033-legal-toolkit-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0437": {
+    "repo_name": "fin-034-payroll-automation",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0438": {
+    "repo_name": "fin-035-insurance-underwriting-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0439": {
+    "repo_name": "fs-001-gym",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0440": {
+    "repo_name": "fs-002-boutique-fitness-studio",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0441": {
+    "repo_name": "fs-003-personal-training-studio",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0442": {
+    "repo_name": "fs-004-women-only-gym",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0443": {
+    "repo_name": "fs-005-boxing-gym",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0444": {
+    "repo_name": "fs-006-crossfit-gym",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0445": {
+    "repo_name": "fs-007-luxury-fitness-club",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0446": {
+    "repo_name": "fs-008-online-coaching",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0447": {
+    "repo_name": "fs-009-personal-trainer-business",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0448": {
+    "repo_name": "fs-010-transformation-program",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0449": {
+    "repo_name": "fs-011-athlete-training-company",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0450": {
+    "repo_name": "fs-012-supplement-brand",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0451": {
+    "repo_name": "fs-013-fitness-apparel",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0452": {
+    "repo_name": "fs-014-workout-equipment-brand",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0453": {
+    "repo_name": "fs-015-recovery-products",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0454": {
+    "repo_name": "fs-016-fitness-app",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0455": {
+    "repo_name": "fs-017-ai-personal-trainer",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0456": {
+    "repo_name": "fs-018-gym-management-software",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0457": {
+    "repo_name": "fs-019-wearable-analytics-platform",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0458": {
+    "repo_name": "fs-020-yoga-studio",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0459": {
+    "repo_name": "fs-021-pilates-studio",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0460": {
+    "repo_name": "fs-022-dance-studio",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0461": {
+    "repo_name": "fs-023-martial-arts-dojo",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0462": {
+    "repo_name": "fs-024-sports-performance-center",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0463": {
+    "repo_name": "fs-025-corporate-wellness-program",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0464": {
+    "repo_name": "fund-001-civilization-credit-fund",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0465": {
+    "repo_name": "genixbank-financial-system",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0466": {
+    "repo_name": "genixbank-insight-compass",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0467": {
+    "repo_name": "global-operations-automation",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0468": {
+    "repo_name": "innovation-hub-platform",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0469": {
+    "repo_name": "ins-001-venture-insurance",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0470": {
+    "repo_name": "intellectual-property-management",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0471": {
+    "repo_name": "investment-fund-management",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0472": {
+    "repo_name": "iza-os-agents",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0473": {
+    "repo_name": "iza-os-ai-consciousness-platform",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0474": {
+    "repo_name": "iza-os-ai-core-platform",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0475": {
+    "repo_name": "iza-os-ai-nlp-platform",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0476": {
+    "repo_name": "iza-os-ai-optimization-platform",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0477": {
+    "repo_name": "iza-os-ai-prediction-platform",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0478": {
+    "repo_name": "iza-os-ai-vision-platform",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0479": {
+    "repo_name": "iza-os-analytics",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0480": {
+    "repo_name": "iza-os-api-gateway-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0481": {
+    "repo_name": "iza-os-automation",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0482": {
+    "repo_name": "iza-os-automation-integration",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0483": {
+    "repo_name": "iza-os-blockchain-core",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0484": {
+    "repo_name": "iza-os-business",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0485": {
+    "repo_name": "iza-os-cli",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0486": {
+    "repo_name": "iza-os-computer-vision",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0487": {
+    "repo_name": "iza-os-core",
+    "has_manifest": true,
+    "manifests": [
+      "package.json",
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0488": {
+    "repo_name": "iza-os-cryptocurrency-management",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0489": {
+    "repo_name": "iza-os-customer-core",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0490": {
+    "repo_name": "iza-os-cybersecurity-monitoring-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0491": {
+    "repo_name": "iza-os-data",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0492": {
+    "repo_name": "iza-os-data-integration-hub",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0493": {
+    "repo_name": "iza-os-defi-platform",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0494": {
+    "repo_name": "iza-os-deployment-automation-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0495": {
+    "repo_name": "iza-os-docs",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0496": {
+    "repo_name": "iza-os-embedding-service",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0497": {
+    "repo_name": "iza-os-enterprise",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0498": {
+    "repo_name": "iza-os-enterprise-integrations",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0499": {
+    "repo_name": "iza-os-funding",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0500": {
+    "repo_name": "iza-os-hr-core",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0501": {
+    "repo_name": "iza-os-inference-engine",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0502": {
+    "repo_name": "iza-os-infra",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0503": {
+    "repo_name": "iza-os-infrastructure",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0504": {
+    "repo_name": "iza-os-infrastructure-monitoring-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0505": {
+    "repo_name": "iza-os-intelligence-core",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0506": {
+    "repo_name": "iza-os-inventory-management-analytics-bot",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0507": {
+    "repo_name": "iza-os-inventory-management-automation-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0508": {
+    "repo_name": "iza-os-inventory-management-monitoring-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0509": {
+    "repo_name": "iza-os-inventory-management-optimization-bot",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0510": {
+    "repo_name": "iza-os-legal-core",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0511": {
+    "repo_name": "iza-os-legal-research-discovery-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0512": {
+    "repo_name": "iza-os-legal-research-processing-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0513": {
+    "repo_name": "iza-os-legal-research-synthesis-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0514": {
+    "repo_name": "iza-os-llm-adapter",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0515": {
+    "repo_name": "iza-os-market",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0516": {
+    "repo_name": "iza-os-marketing-automation-analytics-bot",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0517": {
+    "repo_name": "iza-os-mcp",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0518": {
+    "repo_name": "iza-os-ml",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0519": {
+    "repo_name": "iza-os-mobile",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0520": {
+    "repo_name": "iza-os-model-training",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0521": {
+    "repo_name": "iza-os-monitoring",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0522": {
+    "repo_name": "iza-os-monitoring-integration",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0523": {
+    "repo_name": "iza-os-nft-platform",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0524": {
+    "repo_name": "iza-os-nlp-pipeline",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0525": {
+    "repo_name": "iza-os-notification-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0526": {
+    "repo_name": "iza-os-operations-core",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0527": {
+    "repo_name": "iza-os-ops",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0528": {
+    "repo_name": "iza-os-orchestrator",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0529": {
+    "repo_name": "iza-os-platform-core",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0530": {
+    "repo_name": "iza-os-playgrounds",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0531": {
+    "repo_name": "iza-os-predictive-analytics-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0532": {
+    "repo_name": "iza-os-predictive-modeling",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0533": {
+    "repo_name": "iza-os-prompt-engineering",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0534": {
+    "repo_name": "iza-os-quality-assurance-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0535": {
+    "repo_name": "iza-os-recommendation-engine",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0536": {
+    "repo_name": "iza-os-revenue",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0537": {
+    "repo_name": "iza-os-sales-core",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0538": {
+    "repo_name": "iza-os-security",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0539": {
+    "repo_name": "iza-os-security-compliance-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0540": {
+    "repo_name": "iza-os-semantic-search",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0541": {
+    "repo_name": "iza-os-smart-contracts",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0542": {
+    "repo_name": "iza-os-specs",
+    "has_manifest": true,
+    "manifests": [
+      "package.json",
+      "pyproject.toml",
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0543": {
+    "repo_name": "iza-os-speech-processing",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0544": {
+    "repo_name": "iza-os-templates",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0545": {
+    "repo_name": "iza-os-third-party-apis",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0546": {
+    "repo_name": "iza-os-vector-database",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0547": {
+    "repo_name": "iza-os-web",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0548": {
+    "repo_name": "iza-os-web3-integration",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0549": {
+    "repo_name": "legal-001-ai-boss-holdings",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0550": {
+    "repo_name": "legal-contract-templates",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0551": {
+    "repo_name": "lt-001-truck-dispatch-company",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0552": {
+    "repo_name": "lt-002-freight-brokerage",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0553": {
+    "repo_name": "lt-003-logistics-dispatch-service",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0554": {
+    "repo_name": "lt-004-last-mile-delivery-dispatch",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0555": {
+    "repo_name": "lt-006-amazon",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0556": {
+    "repo_name": "lt-007-construction-dispatch",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0557": {
+    "repo_name": "lt-008-towing-dispatch",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0558": {
+    "repo_name": "lt-009-hvac-technician-dispatch",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0559": {
+    "repo_name": "lt-010-field-service-dispatch",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0560": {
+    "repo_name": "lt-012-fleet-tracking-platform",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0561": {
+    "repo_name": "lt-013-logistics-automation-system",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0562": {
+    "repo_name": "lt-014-ai-route-optimization",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0563": {
+    "repo_name": "lt-015-driver-management-platform",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0564": {
+    "repo_name": "lt-016-trucking-company",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0565": {
+    "repo_name": "lt-017-courier-service",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0566": {
+    "repo_name": "lt-018-local-delivery-company",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0567": {
+    "repo_name": "lt-019-moving-company",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0568": {
+    "repo_name": "lt-020-freight-company",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0569": {
+    "repo_name": "lt-021-warehouse-company",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0570": {
+    "repo_name": "lt-022-fulfillment-center",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0571": {
+    "repo_name": "lt-023-storage-business",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0572": {
+    "repo_name": "lt-024-distribution-company",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0573": {
+    "repo_name": "lt-025-logistics-marketplace",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0574": {
+    "repo_name": "lt-026-shipping-platform",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0575": {
+    "repo_name": "lt-027-fleet-management-saas",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0576": {
+    "repo_name": "lt-028-freight-ai-optimization",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0577": {
+    "repo_name": "lt-029-supply-chain-analytics",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0578": {
+    "repo_name": "lt-030-cold-chain-logistics",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0579": {
+    "repo_name": "mc-001-youtube-channel-network",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0580": {
+    "repo_name": "mc-002-podcast-network",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0581": {
+    "repo_name": "mc-003-blog-network",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0582": {
+    "repo_name": "mc-004-influencer-agency",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0583": {
+    "repo_name": "mc-005-content-creation-studio",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0584": {
+    "repo_name": "mc-007-animation-studio",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0585": {
+    "repo_name": "mc-008-music-production",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0586": {
+    "repo_name": "mc-009-stock-photography",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0587": {
+    "repo_name": "mc-010-stock-video",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0588": {
+    "repo_name": "mc-011-online-magazine",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0589": {
+    "repo_name": "mc-012-news-website",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0590": {
+    "repo_name": "mc-013-streaming-platform",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0591": {
+    "repo_name": "mc-014-gaming-channel",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0592": {
+    "repo_name": "mc-015-esports-team",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0593": {
+    "repo_name": "mc-016-virtual-events-platform",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0594": {
+    "repo_name": "mc-017-online-course-platform",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0595": {
+    "repo_name": "mc-018-membership-site",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0596": {
+    "repo_name": "mc-019-digital-download-store",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0597": {
+    "repo_name": "mc-020-nft-marketplace",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0598": {
+    "repo_name": "mcp-integration-hub",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0599": {
+    "repo_name": "mobile-access-manager",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0600": {
+    "repo_name": "nexus-ai-enterprise-platform",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0601": {
+    "repo_name": "op-001-venture-automation-agency",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0602": {
+    "repo_name": "op-002-template-marketplace",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0603": {
+    "repo_name": "op-003-agent-services-hub",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0604": {
+    "repo_name": "ops-001-fractional-cto-agency",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0605": {
+    "repo_name": "ops-002-supply-chain-optimizer",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0606": {
+    "repo_name": "ops-003-event-planning-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0607": {
+    "repo_name": "ops-004-inventory-management-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0608": {
+    "repo_name": "ops-005-project-management-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0609": {
+    "repo_name": "ops-006-document-automation-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0610": {
+    "repo_name": "ops-007-meeting-assistant-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0611": {
+    "repo_name": "ops-008-recruitment-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0612": {
+    "repo_name": "ops-009-onboarding-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0613": {
+    "repo_name": "ops-010-training-platform-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0614": {
+    "repo_name": "ops-011-performance-review-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0615": {
+    "repo_name": "ops-012-it-support-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0616": {
+    "repo_name": "ops-013-facilities-management-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0617": {
+    "repo_name": "ops-014-travel-booking-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0618": {
+    "repo_name": "ops-015-expense-management-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0619": {
+    "repo_name": "partnership-network-management",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0620": {
+    "repo_name": "ps-001-business-consulting",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0621": {
+    "repo_name": "ps-002-legal-services",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0622": {
+    "repo_name": "ps-003-accounting-services",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0623": {
+    "repo_name": "ps-004-hr-consulting",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0624": {
+    "repo_name": "ps-005-marketing-agency",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0625": {
+    "repo_name": "ps-006-web-design-agency",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0626": {
+    "repo_name": "ps-007-it-support-services",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0627": {
+    "repo_name": "ps-008-virtual-assistant-service",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0628": {
+    "repo_name": "ps-009-bookkeeping-service",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0629": {
+    "repo_name": "ps-010-tax-preparation-service",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0630": {
+    "repo_name": "ps-011-real-estate-agency",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0631": {
+    "repo_name": "ps-012-insurance-agency",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0632": {
+    "repo_name": "ps-016-photography-service",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0633": {
+    "repo_name": "ps-017-videography-service",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0634": {
+    "repo_name": "ps-018-translation-services",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0635": {
+    "repo_name": "ps-019-copywriting-service",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0636": {
+    "repo_name": "ps-022-ppc-management",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0637": {
+    "repo_name": "ps-023-pr-agency",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0638": {
+    "repo_name": "ps-024-recruiting-agency",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0639": {
+    "repo_name": "ps-025-business-brokerage",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0640": {
+    "repo_name": "quantum-brain-sync-website",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0641": {
+    "repo_name": "repo-template",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0642": {
+    "repo_name": "research-lab-automation",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0643": {
+    "repo_name": "research-processing-pipeline",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0644": {
+    "repo_name": "Resume",
+    "has_manifest": true,
+    "manifests": [
+      "go.mod"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0645": {
+    "repo_name": "revenue-multiplication-system",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0646": {
+    "repo_name": "shared-kernels",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0647": {
+    "repo_name": "sovereign-life",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0648": {
+    "repo_name": "tax-company-2026",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0649": {
+    "repo_name": "tech-001-quantum-algorithm-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0650": {
+    "repo_name": "tech-002-ai-compliance-scanner",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0651": {
+    "repo_name": "tech-003-cloud-management-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0652": {
+    "repo_name": "tech-004-robotics-training-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0653": {
+    "repo_name": "tech-005-customer-insights-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0654": {
+    "repo_name": "tech-006-voice-assistant-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0655": {
+    "repo_name": "tech-007-blockchain-verifier-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0656": {
+    "repo_name": "tech-009-content-studio-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0657": {
+    "repo_name": "tech-010-smart-home-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0658": {
+    "repo_name": "tech-011-supply-chain-optimizer",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0659": {
+    "repo_name": "tech-012-data-visualization-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0660": {
+    "repo_name": "tech-013-workflow-automation",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0661": {
+    "repo_name": "tech-014-sentiment-analyzer",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0662": {
+    "repo_name": "tech-015-image-recognition-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0663": {
+    "repo_name": "tech-016-video-editor-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0664": {
+    "repo_name": "tech-017-speech-to-text-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0665": {
+    "repo_name": "tech-018-text-to-speech-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0666": {
+    "repo_name": "tech-020-recommendation-engine",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0667": {
+    "repo_name": "tech-021-network-security-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0668": {
+    "repo_name": "tech-022-database-optimizer",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0669": {
+    "repo_name": "tech-023-ai-testing-platform",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0670": {
+    "repo_name": "tech-024-virtual-assistant-builder",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0671": {
+    "repo_name": "tech-025-machine-learning-builder",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0672": {
+    "repo_name": "tech-026-ai-ethics-auditor",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0673": {
+    "repo_name": "tech-027-predictive-analytics-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0674": {
+    "repo_name": "tech-028-ai-training-platform",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0675": {
+    "repo_name": "tech-029-digital-twin-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0676": {
+    "repo_name": "tech-030-ai-monitoring-system",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0677": {
+    "repo_name": "tech-031-edge-computing-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0678": {
+    "repo_name": "tech-032-ai-integration-hub",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0679": {
+    "repo_name": "tech-033-quantum-algorithm-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0680": {
+    "repo_name": "tech-034-ai-compliance-scanner",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0681": {
+    "repo_name": "tech-035-cloud-management-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0682": {
+    "repo_name": "tech-037-customer-insights-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0683": {
+    "repo_name": "tech-038-voice-assistant-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0684": {
+    "repo_name": "tech-039-blockchain-verifier-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0685": {
+    "repo_name": "tech-041-content-studio-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0686": {
+    "repo_name": "tech-042-smart-home-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0687": {
+    "repo_name": "tech-043-supply-chain-optimizer",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0688": {
+    "repo_name": "tech-044-data-visualization-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0689": {
+    "repo_name": "tech-045-workflow-automation",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0690": {
+    "repo_name": "tech-046-sentiment-analyzer",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0691": {
+    "repo_name": "tech-047-image-recognition-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0692": {
+    "repo_name": "tech-048-video-editor-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0693": {
+    "repo_name": "tech-049-speech-to-text-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0694": {
+    "repo_name": "tech-051-fraud-prevention-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0695": {
+    "repo_name": "tech-052-recommendation-engine",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0696": {
+    "repo_name": "tech-053-network-security-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0697": {
+    "repo_name": "tech-054-database-optimizer",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0698": {
+    "repo_name": "tech-055-ai-testing-platform",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0699": {
+    "repo_name": "tech-056-virtual-assistant-builder",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0700": {
+    "repo_name": "tech-057-machine-learning-builder",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0701": {
+    "repo_name": "tech-058-ai-ethics-auditor",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0702": {
+    "repo_name": "tech-059-predictive-analytics-ai",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0703": {
+    "repo_name": "tech-060-ai-training-platform",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0704": {
+    "repo_name": "tech-ventures-portfolio",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0705": {
+    "repo_name": "unified-dashboard-system",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0706": {
+    "repo_name": "venture-contract-engine",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0707": {
+    "repo_name": "venture-studio-core",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0708": {
+    "repo_name": "worldwidebro-holdings",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0709": {
+    "repo_name": "xyops-integration",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0710": {
+    "repo_name": "_master-governance",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0711": {
+    "repo_name": "clients",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0712": {
+    "repo_name": "data-management",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0713": {
+    "repo_name": "design-team",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0714": {
+    "repo_name": "maps",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0715": {
+    "repo_name": "venture-pipeline",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0716": {
+    "repo_name": "ventures",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0717": {
+    "repo_name": "capital-orchestrator",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0718": {
+    "repo_name": "bw-040-beauty-tools-brand",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0719": {
+    "repo_name": "bw-039-cosmetics-brand",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0720": {
+    "repo_name": "bw-038-photoshoot-makeup-team",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0721": {
+    "repo_name": "bw-037-mobile-makeup-artist",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0722": {
+    "repo_name": "bw-036-bridal-makeup-service",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0723": {
+    "repo_name": "bw-035-makeup-studio",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0724": {
+    "repo_name": "bw-034-salon-franchise-chain",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0725": {
+    "repo_name": "bw-033-ai-hairstyle-simulator",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0726": {
+    "repo_name": "bw-032-stylist-booking-platform",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0727": {
+    "repo_name": "bw-031-hair-marketplace",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0728": {
+    "repo_name": "bw-030-scalp-treatment-products",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0729": {
+    "repo_name": "bw-029-hair-extensions-brand",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0730": {
+    "repo_name": "bw-028-wig-brand",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0731": {
+    "repo_name": "bw-027-hair-care-line",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0732": {
+    "repo_name": "bw-026-hair-extension-salon",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0733": {
+    "repo_name": "bw-025-wig-installation-studio",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0734": {
+    "repo_name": "bw-024-hair-braiding-studio",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0735": {
+    "repo_name": "bw-023-mobile-hairstyling",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0736": {
+    "repo_name": "bw-022-barbershop",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0737": {
+    "repo_name": "bw-021-hair-salon",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0738": {
+    "repo_name": "bw-020-ai-nail-design-generator",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0739": {
+    "repo_name": "bw-019-salon-management-software",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0740": {
+    "repo_name": "bw-018-nail-booking-marketplace",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0741": {
+    "repo_name": "bw-017-nail-care-products",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0742": {
+    "repo_name": "bw-016-nail-polish-brand",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0743": {
+    "repo_name": "bw-015-nail-art-studio",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0744": {
+    "repo_name": "bw-014-press-on-nail-brand",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0745": {
+    "repo_name": "bw-013-luxury-nail-spa",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0746": {
+    "repo_name": "bw-012-mobile-nail-tech",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0747": {
+    "repo_name": "bw-011-nail-salon",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0748": {
+    "repo_name": "bw-010-online-lash-education",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0749": {
+    "repo_name": "bw-009-franchise-lash-salons",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0750": {
+    "repo_name": "bw-008-private-label-lashes",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0751": {
+    "repo_name": "bw-007-lash-kits---tools",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0752": {
+    "repo_name": "bw-006-lash-glue-brand",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0753": {
+    "repo_name": "bw-005-lash-supply-company",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0754": {
+    "repo_name": "bw-004-lash-training-academy",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0755": {
+    "repo_name": "bw-003-luxury-lash-bar",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0756": {
+    "repo_name": "bw-002-mobile-lash-service",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0757": {
+    "repo_name": "bw-001-lash-extension-studio",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PRIV-0758": {
+    "repo_name": "bw-001-contracts",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0759": {
+    "repo_name": "bw-001-up-next",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0760": {
+    "repo_name": "bw-001-up-next-web",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0761": {
+    "repo_name": "up-next-marketplace",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0762": {
+    "repo_name": "ai-001-ai-command-center",
+    "has_manifest": true,
+    "manifests": [
+      "package.json",
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0763": {
+    "repo_name": "ht-004-data-api",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0764": {
+    "repo_name": "ht-004-mobile-app",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0765": {
+    "repo_name": "ht-004-firmware",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0766": {
+    "repo_name": "et-003-content",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0767": {
+    "repo_name": "et-003-platform",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0768": {
+    "repo_name": "ai-002-api",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0769": {
+    "repo_name": "ai-002-ml-engine",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0770": {
+    "repo_name": "ai-002-web-app",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0771": {
+    "repo_name": "ft-001-docs",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0772": {
+    "repo_name": "ft-001-api-gateway",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0773": {
+    "repo_name": "ft-001-core-ledger",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0774": {
+    "repo_name": "iza-os-legal-research-optimization-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0775": {
+    "repo_name": "iza-os-legal-research-integration-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0776": {
+    "repo_name": "iza-os-legal-research-security-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0777": {
+    "repo_name": "iza-os-legal-research-compliance-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0778": {
+    "repo_name": "iza-os-legal-research-reporting-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0779": {
+    "repo_name": "iza-os-legal-research-alerting-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0780": {
+    "repo_name": "iza-os-legal-research-management-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0781": {
+    "repo_name": "iza-os-legal-research-orchestration-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0782": {
+    "repo_name": "iza-os-legal-research-intelligence-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0783": {
+    "repo_name": "iza-os-sales-automation-monitoring-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0784": {
+    "repo_name": "iza-os-sales-automation-automation-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0785": {
+    "repo_name": "iza-os-sales-automation-analytics-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0786": {
+    "repo_name": "iza-os-sales-automation-optimization-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0787": {
+    "repo_name": "iza-os-sales-automation-integration-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0788": {
+    "repo_name": "iza-os-sales-automation-security-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0789": {
+    "repo_name": "iza-os-sales-automation-compliance-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0790": {
+    "repo_name": "iza-os-sales-automation-reporting-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0791": {
+    "repo_name": "iza-os-sales-automation-alerting-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0792": {
+    "repo_name": "iza-os-sales-automation-management-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0793": {
+    "repo_name": "iza-os-sales-automation-orchestration-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0794": {
+    "repo_name": "iza-os-sales-automation-intelligence-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0795": {
+    "repo_name": "iza-os-sales-automation-processing-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0796": {
+    "repo_name": "iza-os-sales-automation-discovery-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0797": {
+    "repo_name": "iza-os-sales-automation-synthesis-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0798": {
+    "repo_name": "iza-os-marketing-automation-monitoring-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0799": {
+    "repo_name": "iza-os-marketing-automation-automation-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0800": {
+    "repo_name": "iza-os-marketing-automation-optimization-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0801": {
+    "repo_name": "iza-os-marketing-automation-integration-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0802": {
+    "repo_name": "iza-os-marketing-automation-security-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0803": {
+    "repo_name": "iza-os-marketing-automation-compliance-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0804": {
+    "repo_name": "iza-os-marketing-automation-reporting-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0805": {
+    "repo_name": "iza-os-marketing-automation-alerting-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0806": {
+    "repo_name": "iza-os-marketing-automation-management-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0807": {
+    "repo_name": "iza-os-marketing-automation-orchestration-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0808": {
+    "repo_name": "iza-os-marketing-automation-intelligence-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0809": {
+    "repo_name": "iza-os-marketing-automation-processing-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0810": {
+    "repo_name": "iza-os-marketing-automation-discovery-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0811": {
+    "repo_name": "iza-os-marketing-automation-synthesis-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0812": {
+    "repo_name": "iza-os-finance-advisor-monitoring-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0813": {
+    "repo_name": "iza-os-finance-advisor-automation-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0814": {
+    "repo_name": "iza-os-finance-advisor-integration-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0815": {
+    "repo_name": "iza-os-finance-advisor-security-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0816": {
+    "repo_name": "iza-os-finance-advisor-compliance-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0817": {
+    "repo_name": "iza-os-finance-advisor-reporting-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0818": {
+    "repo_name": "iza-os-finance-advisor-alerting-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0819": {
+    "repo_name": "iza-os-finance-advisor-management-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0820": {
+    "repo_name": "iza-os-finance-advisor-orchestration-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0821": {
+    "repo_name": "iza-os-finance-advisor-forecasting-bot",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0822": {
+    "repo_name": "iza-os-finance-advisor-optimization-bot",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0823": {
+    "repo_name": "iza-os-marketing-automation-campaign-bot",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0824": {
+    "repo_name": "iza-os-customer-service-chatbot-bot",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0825": {
+    "repo_name": "iza-os-inventory-management-security-bot",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0826": {
+    "repo_name": "iza-os-inventory-management-integration-bot",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0827": {
+    "repo_name": "iza-os-inventory-management-compliance-bot",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0828": {
+    "repo_name": "iza-os-inventory-management-reporting-bot",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0829": {
+    "repo_name": "iza-os-customer-service-automation-bot",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0830": {
+    "repo_name": "iza-os-customer-service-email-bot",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0831": {
+    "repo_name": "iza-os-customer-service-phone-bot",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0832": {
+    "repo_name": "iza-os-customer-service-social-bot",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0833": {
+    "repo_name": "iza-os-customer-service-knowledge-bot",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0834": {
+    "repo_name": "iza-os-customer-service-faq-bot",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0835": {
+    "repo_name": "iza-os-customer-service-ticket-bot",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0836": {
+    "repo_name": "iza-os-customer-service-escalation-bot",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0837": {
+    "repo_name": "iza-os-hr-training-bot",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0838": {
+    "repo_name": "iza-os-operations-automation-bot",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0839": {
+    "repo_name": "iza-os-operations-intelligence-bot",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0840": {
+    "repo_name": "iza-os-operations-analytics-bot",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0841": {
+    "repo_name": "iza-os-operations-integration-bot",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0842": {
+    "repo_name": "iza-os-operations-security-bot",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0843": {
+    "repo_name": "iza-os-operations-compliance-bot",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0844": {
+    "repo_name": "iza-os-operations-reporting-bot",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0845": {
+    "repo_name": "iza-os-operations-optimization-bot",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0846": {
+    "repo_name": "iza-os-operations-monitoring-bot",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0847": {
+    "repo_name": "iza-os-hr-analytics-bot",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0848": {
+    "repo_name": "iza-os-hr-compliance-bot",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0849": {
+    "repo_name": "iza-os-hr-benefits-bot",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0850": {
+    "repo_name": "iza-os-hr-payroll-bot",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0851": {
+    "repo_name": "iza-os-hr-performance-bot",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0852": {
+    "repo_name": "iza-os-hr-onboarding-bot",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0853": {
+    "repo_name": "iza-os-hr-recruitment-bot",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0854": {
+    "repo_name": "iza-os-project-management-analytics-bot",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0855": {
+    "repo_name": "iza-os-project-management-intelligence-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0856": {
+    "repo_name": "iza-os-project-management-management-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0857": {
+    "repo_name": "iza-os-project-management-alerting-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0858": {
+    "repo_name": "iza-os-project-management-reporting-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0859": {
+    "repo_name": "iza-os-project-management-compliance-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0860": {
+    "repo_name": "iza-os-project-management-security-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0861": {
+    "repo_name": "iza-os-project-management-integration-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0862": {
+    "repo_name": "iza-os-project-management-optimization-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0863": {
+    "repo_name": "iza-os-project-management-automation-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0864": {
+    "repo_name": "iza-os-project-management-monitoring-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0865": {
+    "repo_name": "iza-os-project-management-synthesis-bot",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0866": {
+    "repo_name": "iza-os-project-management-orchestration-bot",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0867": {
+    "repo_name": "iza-os-project-management-discovery-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0868": {
+    "repo_name": "iza-os-project-management-processing-bot",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0869": {
+    "repo_name": "iza-os-finance-advisor-intelligence-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0870": {
+    "repo_name": "iza-os-finance-advisor-processing-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0871": {
+    "repo_name": "iza-os-finance-advisor-discovery-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0872": {
+    "repo_name": "iza-os-finance-advisor-synthesis-bot",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PRIV-0873": {
+    "repo_name": "iza-os-finance-advisor-analytics-bot",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PUB-0873": {
+    "repo_name": "research-os",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PUB-0874": {
+    "repo_name": "worldwidebro-mathematical-os",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PUB-0875": {
+    "repo_name": "civilization-os",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": true
+  },
+  "OWN-PUB-0876": {
+    "repo_name": "family-office-os",
+    "has_manifest": true,
+    "manifests": [
+      "requirements.txt"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PUB-0877": {
+    "repo_name": "email-design-os",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PUB-0878": {
+    "repo_name": "iza-os-finance-core",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PUB-0879": {
+    "repo_name": "worldwidebro-education-os",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PUB-0880": {
+    "repo_name": "worldwidebro-staffing-os",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  },
+  "OWN-PUB-0881": {
+    "repo_name": "hermes-agent-command-center",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PUB-0882": {
+    "repo_name": "testchat",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PUB-0883": {
+    "repo_name": "agency-agents",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PUB-0884": {
+    "repo_name": "marketplace-core",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PUB-0885": {
+    "repo_name": "YES-LLC-CONTRACTOR-DELIVERY",
+    "has_manifest": false,
+    "manifests": [],
+    "paperwork_template_only": false
+  },
+  "OWN-PUB-0886": {
+    "repo_name": "pitch-kit",
+    "has_manifest": true,
+    "manifests": [
+      "package.json"
+    ],
+    "paperwork_template_only": false
+  }
+}

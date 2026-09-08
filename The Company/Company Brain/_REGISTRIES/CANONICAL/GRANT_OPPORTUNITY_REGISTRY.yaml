@@ -1,0 +1,280 @@
+# ==============================================================================
+# GRANT_OPPORTUNITY_REGISTRY.yaml — Canonical Non-Dilutive Funding Registry
+# ==============================================================================
+# Authority: Sovereign Operator & Executive Governance (CP-006 / CP-027)
+# Standard: 2 CFR Part 200 (Uniform Guidance) / SBIR-STTR Policy Directive
+# Status: ACTIVE_PIPELINE
+# Last Audit: 2026-09-07
+# ==============================================================================
+
+metadata:
+  version: "1.0.0"
+  registry_id: "REG-GRANT-001"
+  created_at: "2026-09-07"
+  governing_rules: "ANTIGRAVITY.md / AGENTS.md / SKILL:agency-grant-writer"
+  total_opportunities: 8
+  pipeline_potential_phase1: "$2,050,000"
+  pipeline_potential_total: "$8,500,000"
+
+summary_by_agency:
+  DOT_EPA: 1
+  NIH_HHS: 1
+  DOE_EDA: 2
+  HUD_FOUNDATION: 1
+  DOL_WIOA: 1
+  NSF: 1
+  DARPA_NIST: 1
+
+prerequisites:
+  sam_gov_status: "REQUIRED_PRE_SUBMISSION"
+  uei_status: "REQUIRED_PRE_SUBMISSION"
+  grants_gov_status: "ACTIVE"
+  indirect_rate_basis: "10% de minimis MTDC (Modified Total Direct Costs)"
+
+opportunities:
+  # ----------------------------------------------------------------------------
+  # 1. LT-011: CarrierDispatch / DispatchOS Core
+  # ----------------------------------------------------------------------------
+  - opportunity_id: "GRANT-LT-011-DOT-01"
+    venture_id: "LT-011"
+    venture_name: "Dispatch Software / Carrier TMS & DispatchOS Core"
+    primary_repo: "Worldwidebro/lt-011-dispatch-software"
+    commercial_url: "https://lt-011-dispatch-software.vercel.app"
+    commercial_status: "INCOME_READY"
+    funder:
+      agency: "U.S. Department of Transportation (USDOT) / Small Business Innovation Research"
+      partner_agency: "Environmental Protection Agency (EPA SmartWay)"
+      program: "DOT SBIR Phase I — Advanced Freight Operations & Emissions Mitigation"
+      solicitation_id: "DOT-SBIR-26-01"
+      cfda_assistance_listing: "20.933"
+    financials:
+      mechanism: "SBIR Phase I Grant / Contract"
+      target_ask: 175000
+      currency: "USD"
+      phase_2_potential: 1000000
+      cost_share_required: false
+      indirect_rate_applied: "10% MTDC"
+    timelines:
+      cycle: "Annual FY2026/2027"
+      pre_release_window: "2026-10-01"
+      submission_deadline: "2026-11-17"
+      award_notification: "2027-02-15"
+      project_duration_months: 6
+    technical_thesis: "Automated VRP routing and reactive exception recovery reducing deadhead empty-miles by 22% for 1-25 truck independent fleets."
+    dossier_path: "38-OPPORTUNITIES/GRANTS/LT-011_DOT_EPA_CarrierDispatch.md"
+    readiness_state: "DOSSIER_COMPLETE"
+
+  # ----------------------------------------------------------------------------
+  # 2. LT-005: HealthRoute Medical Courier Dispatch
+  # ----------------------------------------------------------------------------
+  - opportunity_id: "GRANT-LT-005-NIH-01"
+    venture_id: "LT-005"
+    venture_name: "HealthRoute Medical Courier Dispatch"
+    primary_repo: "Worldwidebro/lt-005-medical-courier-dispatch"
+    commercial_url: "https://healthroute-courier.vercel.app"
+    commercial_status: "INCOME_READY"
+    funder:
+      agency: "National Institutes of Health (NIH) / HHS"
+      institute: "National Institute on Minority Health and Health Disparities (NIMHD) / NCATS"
+      program: "PHS 2026-2 Omnibus SBIR (Clinical Trial Not Allowed)"
+      solicitation_id: "PA-27-100"
+      cfda_assistance_listing: "93.307"
+    financials:
+      mechanism: "SBIR Phase I Omnibus Grant"
+      target_ask: 300000
+      currency: "USD"
+      phase_2_potential: 2000000
+      cost_share_required: false
+      indirect_rate_applied: "10% MTDC"
+    timelines:
+      cycle: "Standard NIH Cycle III"
+      submission_deadline: "2027-01-05"
+      council_review: "2027-05-15"
+      earliest_start_date: "2027-07-01"
+      project_duration_months: 12
+    technical_thesis: "HIPAA-compliant, cold-chain monitored specimen transit network mitigating pre-analytical diagnostic specimen failure in rural and underserved clinics."
+    dossier_path: "38-OPPORTUNITIES/GRANTS/LT-005_NIH_HHS_HealthRoute.md"
+    readiness_state: "DOSSIER_COMPLETE"
+
+  # ----------------------------------------------------------------------------
+  # 3. OPS-001: CareerOps / Staffing Operations
+  # ----------------------------------------------------------------------------
+  - opportunity_id: "GRANT-OPS-001-DOL-01"
+    venture_id: "OPS-001"
+    venture_name: "Career Ops / Staffing Operations"
+    primary_repo: "Worldwidebro/ops-staff-001-staffing"
+    commercial_url: "https://ops-staff-001-staffing-worldwidebros-projects.vercel.app"
+    commercial_status: "VALIDATING"
+    funder:
+      agency: "U.S. Department of Labor (USDOL) / Employment and Training Administration (ETA)"
+      partner_agency: "Economic Development Administration (EDA)"
+      program: "Workforce Innovation and Opportunity Act (WIOA) Demonstration & STEM Talent Challenge"
+      solicitation_id: "ETA-WIOA-DEMO-26-03"
+      cfda_assistance_listing: "17.283"
+    financials:
+      mechanism: "Competitive Demonstration Grant"
+      target_ask: 350000
+      currency: "USD"
+      phase_2_potential: 1200000
+      cost_share_required: false
+      indirect_rate_applied: "10% MTDC"
+    timelines:
+      cycle: "Rolling / FY2026 Fall Cohort"
+      submission_deadline: "2026-11-30"
+      award_notification: "2027-03-01"
+      project_duration_months: 18
+    technical_thesis: "12-layer Labor Market Ontology and AI-driven skills extraction matching displaced and hourly workers to high-margin living-wage roles without credential bias."
+    dossier_path: "38-OPPORTUNITIES/GRANTS/OPS-001_DOL_WIOA_CareerOps.md"
+    readiness_state: "DOSSIER_COMPLETE"
+
+  # ----------------------------------------------------------------------------
+  # 4. CON-001: ACE Construction Workflow OS
+  # ----------------------------------------------------------------------------
+  - opportunity_id: "GRANT-CON-001-DOE-01"
+    venture_id: "CON-001"
+    venture_name: "ACE Construction Workflow OS"
+    primary_repo: "Worldwidebro/con-001-ace-construction"
+    commercial_url: "https://con-001-ace-construction.vercel.app"
+    commercial_status: "INCOME_READY"
+    funder:
+      agency: "U.S. Department of Energy (DOE) / Office of Energy Efficiency & Renewable Energy (EERE)"
+      sub_division: "Building Technologies Office (BTO)"
+      program: "DOE SBIR Topic 12a — Advanced Building Decarbonization & Retrofit Execution Software"
+      solicitation_id: "DE-FOA-0003120"
+      cfda_assistance_listing: "81.049"
+    financials:
+      mechanism: "SBIR Phase I Grant"
+      target_ask: 200000
+      currency: "USD"
+      phase_2_potential: 1100000
+      cost_share_required: false
+      indirect_rate_applied: "10% MTDC"
+    timelines:
+      cycle: "FY2027 Release 1"
+      letter_of_intent_due: "2026-11-03"
+      full_proposal_deadline: "2026-12-15"
+      award_notification: "2027-03-20"
+      project_duration_months: 9
+    technical_thesis: "Mobile-first daily field logs and punch-list verification ensuring building envelope airtightness, mechanical compliance, and verification for energy tax credits."
+    dossier_path: "38-OPPORTUNITIES/GRANTS/CON-001_DOE_EDA_ACE_Construction.md"
+    readiness_state: "DOSSIER_COMPLETE"
+
+  # ----------------------------------------------------------------------------
+  # 5. RE-001: WorldwideBro Holdings / Real Estate Deal Engine
+  # ----------------------------------------------------------------------------
+  - opportunity_id: "GRANT-RE-001-HUD-01"
+    venture_id: "RE-001"
+    venture_name: "WorldwideBro Holdings / Real Estate Deal Engine"
+    primary_repo: "Worldwidebro/re-001-worldwidebro-holdings"
+    commercial_url: "https://re-001-worldwidebro-holdings.vercel.app"
+    commercial_status: "INCOME_READY"
+    funder:
+      agency: "U.S. Department of Housing and Urban Development (HUD) / Enterprise Community Partners"
+      program: "Section 4 Capacity Building for Community Development and Affordable Housing"
+      solicitation_id: "FR-6700-N-07"
+      cfda_assistance_listing: "14.252"
+    financials:
+      mechanism: "Capacity Building / Technology Innovation Grant"
+      target_ask: 150000
+      currency: "USD"
+      phase_2_potential: 450000
+      cost_share_required: false
+      indirect_rate_applied: "10% MTDC"
+    timelines:
+      cycle: "FY2026-2027 Cycle"
+      submission_deadline: "2026-12-08"
+      award_notification: "2027-04-10"
+      project_duration_months: 12
+    technical_thesis: "Automated municipal tax lien, code violation, and title distress extraction engine enabling community land trusts to preserve single-family affordable housing."
+    dossier_path: "38-OPPORTUNITIES/GRANTS/RE-001_HUD_Enterprise_Affordable_Housing.md"
+    readiness_state: "DOSSIER_COMPLETE"
+
+  # ----------------------------------------------------------------------------
+  # 6. VEN-001: Local-First AI Infrastructure & Repo Intelligence Audit
+  # ----------------------------------------------------------------------------
+  - opportunity_id: "GRANT-VEN-001-NSF-01"
+    venture_id: "VEN-001"
+    venture_name: "Local-First AI Infrastructure & Repo Intelligence Audit"
+    primary_repo: "Worldwidebro/worldwidebro-mathematical-os"
+    commercial_status: "OFFERING_IN_MARKET"
+    funder:
+      agency: "National Science Foundation (NSF) / Directorate for Technology, Innovation and Partnerships (TIP)"
+      program: "NSF SBIR Phase I — Next-Generation Artificial Intelligence"
+      solicitation_id: "NSF 26-510"
+      cfda_assistance_listing: "47.084"
+    financials:
+      mechanism: "NSF SBIR Phase I Grant"
+      target_ask: 275000
+      currency: "USD"
+      phase_2_potential: 1000000
+      cost_share_required: false
+      indirect_rate_applied: "10% MTDC"
+    timelines:
+      cycle: "NSF 2026 Window 3"
+      project_pitch_due: "2026-09-25"
+      full_proposal_deadline: "2026-11-04"
+      award_notification: "2027-03-15"
+      project_duration_months: 12
+    technical_thesis: "Deterministic local AI orchestration verifying code reality against architectural claims without exposing proprietary IP or training data to public LLM endpoints."
+    dossier_path: "38-OPPORTUNITIES/GRANTS/VEN-001_NSF_SBIR_Local_AI.md"
+    readiness_state: "DOSSIER_COMPLETE"
+
+  # ----------------------------------------------------------------------------
+  # 7. VEN-002: AI Model Routing & Cost Optimization Stack (OmniRoute)
+  # ----------------------------------------------------------------------------
+  - opportunity_id: "GRANT-VEN-002-DOE-01"
+    venture_id: "VEN-002"
+    venture_name: "AI Model Routing & Cost Optimization Stack"
+    primary_repo: "Worldwidebro/omniroute-engine"
+    commercial_status: "PILOT_VALIDATION"
+    funder:
+      agency: "Department of Energy (DOE) / Advanced Scientific Computing Research (ASCR)"
+      program: "Energy-Efficient Computing & Sustainable AI Inference Acceleration"
+      solicitation_id: "DOE-ASCR-SBIR-26-02"
+      cfda_assistance_listing: "81.049"
+    financials:
+      mechanism: "SBIR Phase I Grant"
+      target_ask: 250000
+      currency: "USD"
+      phase_2_potential: 1150000
+      cost_share_required: false
+      indirect_rate_applied: "10% MTDC"
+    timelines:
+      cycle: "FY2027 Phase I Release 2"
+      letter_of_intent_due: "2026-12-01"
+      full_proposal_deadline: "2027-01-19"
+      award_notification: "2027-04-30"
+      project_duration_months: 9
+    technical_thesis: "Dynamic prompt compression (RTK/Caveman), MLX local offloading, and multi-tier model cascading slashing inference carbon footprint and kilowatt consumption by 45%."
+    dossier_path: "38-OPPORTUNITIES/GRANTS/VEN-002_DOE_OmniRoute_Energy_AI.md"
+    readiness_state: "DOSSIER_COMPLETE"
+
+  # ----------------------------------------------------------------------------
+  # 8. VEN-003: Sovereign Agent Control Plane & Knowledge Graph OS
+  # ----------------------------------------------------------------------------
+  - opportunity_id: "GRANT-VEN-003-DARPA-01"
+    venture_id: "VEN-003"
+    venture_name: "Sovereign Agent Control Plane & Knowledge Graph OS"
+    primary_repo: "Worldwidebro/worldwidebro-mathematical-os"
+    commercial_status: "PILOT_VALIDATION"
+    funder:
+      agency: "DARPA / Information Innovation Office (I2O) & NIST"
+      program: "Autonomous Agent Safety, Deterministic Verification & Critical Infrastructure Defense"
+      solicitation_id: "DARPA-BAA-26-04 / NIST-AI-GRANT-01"
+      cfda_assistance_listing: "12.910"
+    financials:
+      mechanism: "SBIR / BAA Cooperative Agreement"
+      target_ask: 350000
+      currency: "USD"
+      phase_2_potential: 1500000
+      cost_share_required: false
+      indirect_rate_applied: "10% MTDC"
+    timelines:
+      cycle: "Rolling Open BAA"
+      abstract_submission: "2026-10-15"
+      full_proposal_deadline: "2026-12-01"
+      award_notification: "2027-02-28"
+      project_duration_months: 12
+    technical_thesis: "Deterministic Neo4j ontology and runtime policy interceptors preventing hallucinated execution, unauthorized tool escalation, and prompt injection in multi-agent swarms."
+    dossier_path: "38-OPPORTUNITIES/GRANTS/VEN-003_DARPA_NIST_Sovereign_OS.md"
+    readiness_state: "DOSSIER_COMPLETE"

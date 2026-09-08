@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "company-brain": {
+      "command": "python3",
+      "args": [
+        "_MCP/fastmcp_server.py"
+      ],
+      "cwd": "/Users/acebless/Documents/The Company/Company Brain",
+      "env": {
+        "PYTHONUNBUFFERED": "1",
+        "COMPANY_BRAIN_PATH": "/Users/acebless/Documents/The Company/Company Brain"
+      },
+      "disabled": false,
+      "alwaysAllow": [
+        "infrastructure_status",
+        "test_e2e",
+        "omniroute_status",
+        "neo4j_status"
+      ]
+    }
+  }
+}

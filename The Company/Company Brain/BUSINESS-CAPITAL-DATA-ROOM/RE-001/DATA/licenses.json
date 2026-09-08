@@ -1,0 +1,17 @@
+{
+  "venture_id": "RE-001",
+  "registrations": [
+    {
+      "authority": "Delaware Division of Corporations",
+      "status": "GOOD_STANDING"
+    },
+    {
+      "authority": "North Carolina Department of the Secretary of State",
+      "status": "AUTHORIZED"
+    },
+    {
+      "authority": "Internal Revenue Service",
+      "status": "EIN_ISSUED"
+    }
+  ]
+}

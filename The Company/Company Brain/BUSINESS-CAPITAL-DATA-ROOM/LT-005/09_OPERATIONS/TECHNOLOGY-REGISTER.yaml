@@ -1,0 +1,3 @@
+platform: "https://healthroute-courier.vercel.app"
+git_repo: "Worldwidebro/lt-005-medical-courier-dispatch"
+version: "v1.4.2"

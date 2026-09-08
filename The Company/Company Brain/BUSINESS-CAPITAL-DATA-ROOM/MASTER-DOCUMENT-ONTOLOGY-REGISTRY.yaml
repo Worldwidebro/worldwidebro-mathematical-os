@@ -1,0 +1,1237 @@
+version: "1.0"
+name: "Master Document Ontology Registry"
+created_date: "2026-09-08"
+authority: "CP-027 (Infrastructure Control Plane) + CP-032 (Business Operations)"
+purpose: "Unified document taxonomy for 789 ventures across 35 sectors and 6 deal types"
+status: "Production"
+
+---
+
+document_ontology:
+  universal_core:
+    corporate_governance:
+      Certificate_of_Incorporation:
+        id: "DOC-CORP-001"
+        description: "Primary formation document establishing legal entity"
+        jurisdictions: [Federal, State]
+        deal_types: [all]
+        sector_relevance: [all]
+        required_fields: [business_name, state_of_formation, authorized_shares, principal_place_of_business]
+        template_available: true
+        critical_path: true
+        regulatory_bodies: []
+
+      Articles_of_Incorporation:
+        id: "DOC-CORP-002"
+        description: "Detailed governance rules and operating provisions"
+        jurisdictions: [State]
+        deal_types: [all]
+        sector_relevance: [all]
+        required_fields: [bylaws, board_structure, shareholder_rights, dividend_policy]
+        template_available: true
+        critical_path: true
+
+      Operating_Agreement:
+        id: "DOC-CORP-003"
+        description: "LLC governance and member rights (LLC-specific)"
+        jurisdictions: [State, Internal]
+        deal_types: [all]
+        sector_relevance: [all]
+        entity_types: [LLC]
+        required_fields: [member_rights, profit_distribution, management_structure, buy_sell_provisions]
+        template_available: true
+        critical_path: true
+
+      Bylaws:
+        id: "DOC-CORP-004"
+        description: "Internal operating procedures and governance rules"
+        jurisdictions: [Internal]
+        deal_types: [all]
+        sector_relevance: [all]
+        required_fields: [meeting_procedures, director_duties, officer_roles, amendment_process]
+        template_available: true
+        critical_path: true
+
+      Board_Minutes:
+        id: "DOC-CORP-005"
+        description: "Formal record of board meetings and decisions"
+        jurisdictions: [Internal]
+        deal_types: [all]
+        sector_relevance: [all]
+        required_fields: [date, attendees, agenda_items, resolutions, action_items]
+        template_available: true
+        critical_path: false
+
+      Shareholder_Agreement:
+        id: "DOC-CORP-006"
+        description: "Governance and rights agreement among shareholders"
+        jurisdictions: [State, Internal]
+        deal_types: [Financing, M&A, Partnership]
+        sector_relevance: [all]
+        required_fields: [parties, share_structure, voting_rights, transfer_restrictions, exit_provisions]
+        template_available: true
+        critical_path: true
+
+      Organizational_Resolutions:
+        id: "DOC-CORP-007"
+        description: "Formal board/shareholder authorizations for specific actions"
+        jurisdictions: [Internal]
+        deal_types: [all]
+        sector_relevance: [all]
+        required_fields: [resolution_date, action_authorized, authorizing_body, effective_date]
+        template_available: true
+        critical_path: false
+
+    legal_compliance:
+      Terms_of_Service:
+        id: "DOC-LEGAL-001"
+        description: "Customer-facing terms governing service use"
+        jurisdictions: [Federal, State, International]
+        deal_types: [all]
+        sector_relevance: [all]
+        required_fields: [limitation_of_liability, indemnification, termination, dispute_resolution]
+        template_available: true
+        critical_path: true
+
+      Privacy_Policy:
+        id: "DOC-LEGAL-002"
+        description: "Data collection, use, and protection disclosures"
+        jurisdictions: [Federal, State, International, Industry-specific]
+        deal_types: [all]
+        sector_relevance: [all]
+        compliance_frameworks: [GDPR, CCPA, HIPAA, COPPA]
+        required_fields: [data_collection, retention, third_party_sharing, user_rights, security]
+        template_available: true
+        critical_path: true
+
+      Acceptable_Use_Policy:
+        id: "DOC-LEGAL-003"
+        description: "Prohibited behaviors and acceptable uses of service"
+        jurisdictions: [Internal]
+        deal_types: [all]
+        sector_relevance: [all]
+        required_fields: [prohibited_content, enforcement, suspension_policy, reporting_mechanism]
+        template_available: true
+        critical_path: false
+
+      Compliance_Policies:
+        id: "DOC-LEGAL-004"
+        description: "Anti-corruption, sanctions, export control, AML"
+        jurisdictions: [Federal, State, International]
+        deal_types: [all]
+        sector_relevance: [all]
+        compliance_frameworks: [FCPA, OFAC, EAR, IEEPA, AML]
+        required_fields: [training_requirements, screening_procedures, reporting_protocols]
+        template_available: true
+        critical_path: true
+
+      Whistleblower_Policy:
+        id: "DOC-LEGAL-005"
+        description: "Internal reporting mechanisms for violations"
+        jurisdictions: [Federal, State, Industry-specific]
+        deal_types: [all]
+        sector_relevance: [Healthcare, Finance, Defense, Corporate]
+        required_fields: [reporting_channels, protections, investigation_procedures, confidentiality]
+        template_available: true
+        critical_path: true
+
+    finance:
+      Financial_Statements:
+        id: "DOC-FIN-001"
+        description: "Income statement, balance sheet, cash flow statement"
+        jurisdictions: [Federal]
+        deal_types: [all]
+        sector_relevance: [all]
+        required_fields: [assets, liabilities, equity, revenue, expenses, cash_flow]
+        template_available: false
+        critical_path: true
+        frequency: [Annual, Quarterly, Monthly]
+
+      Audit_Report:
+        id: "DOC-FIN-002"
+        description: "Independent auditor's assessment of financial accuracy"
+        jurisdictions: [Federal]
+        deal_types: [Financing, M&A, Acquisition]
+        sector_relevance: [all]
+        required_fields: [auditor_name, audit_scope, findings, management_letter, opinion]
+        template_available: false
+        critical_path: true
+
+      Tax_Return:
+        id: "DOC-FIN-003"
+        description: "IRS Form 1040/1120/1120-S/1065 filing"
+        jurisdictions: [Federal, State]
+        deal_types: [all]
+        sector_relevance: [all]
+        required_fields: [income, deductions, credits, estimated_tax, entity_type]
+        template_available: false
+        critical_path: true
+
+      Budget_and_Forecast:
+        id: "DOC-FIN-004"
+        description: "Projected revenue, expenses, and cash flow"
+        jurisdictions: [Internal]
+        deal_types: [all]
+        sector_relevance: [all]
+        required_fields: [revenue_assumptions, expense_categories, growth_rates, scenarios]
+        template_available: true
+        critical_path: false
+
+      Bank_Reconciliation:
+        id: "DOC-FIN-005"
+        description: "Verification of bank accounts and recorded transactions"
+        jurisdictions: [Internal]
+        deal_types: [all]
+        sector_relevance: [all]
+        required_fields: [bank_balance, book_balance, reconciling_items, sign_off]
+        template_available: true
+        critical_path: false
+
+    capital_structure:
+      Cap_Table:
+        id: "DOC-CAP-001"
+        description: "Capitalization table showing ownership structure"
+        jurisdictions: [Internal]
+        deal_types: [all]
+        sector_relevance: [all]
+        required_fields: [shareholder_name, share_count, share_class, percentage_ownership, acquisition_date]
+        template_available: false
+        critical_path: true
+
+      Stock_Ledger:
+        id: "DOC-CAP-002"
+        description: "Complete record of share issuances and transfers"
+        jurisdictions: [State, Internal]
+        deal_types: [all]
+        sector_relevance: [all]
+        required_fields: [issuance_date, share_count, recipient, price, certificate_number]
+        template_available: true
+        critical_path: true
+
+      Stock_Certificate:
+        id: "DOC-CAP-003"
+        description: "Evidence of share ownership"
+        jurisdictions: [State]
+        deal_types: [all]
+        sector_relevance: [all]
+        required_fields: [shareholder_name, share_count, share_class, certificate_number]
+        template_available: true
+        critical_path: true
+
+      Stockholders_Registry:
+        id: "DOC-CAP-004"
+        description: "Master list of current shareholders and holdings"
+        jurisdictions: [State, Internal]
+        deal_types: [all]
+        sector_relevance: [all]
+        required_fields: [shareholder_name, address, share_count, acquisition_date]
+        template_available: true
+        critical_path: true
+
+      Stock_Option_Plan:
+        id: "DOC-CAP-005"
+        description: "ESOP or RSU plan documentation"
+        jurisdictions: [Federal, State, Internal]
+        deal_types: [Financing, Employment, Acquisition]
+        sector_relevance: [all]
+        required_fields: [plan_provisions, vesting_schedule, exercise_price, strike_price]
+        template_available: true
+        critical_path: true
+
+      Option_Grant:
+        id: "DOC-CAP-006"
+        description: "Individual stock option grant agreement"
+        jurisdictions: [Federal, State, Internal]
+        deal_types: [Employment, Acquisition]
+        sector_relevance: [all]
+        required_fields: [grantee, grant_date, exercise_price, vesting_schedule, expiration_date]
+        template_available: true
+        critical_path: false
+
+    ma:
+      Letter_of_Intent:
+        id: "DOC-MA-001"
+        description: "Non-binding preliminary agreement on material terms"
+        jurisdictions: [State]
+        deal_types: [Acquisition, M&A]
+        sector_relevance: [all]
+        required_fields: [parties, purchase_price, structure, conditions, exclusivity, termination_date]
+        template_available: true
+        critical_path: true
+
+      Purchase_Agreement:
+        id: "DOC-MA-002"
+        description: "Binding agreement for asset or equity purchase"
+        jurisdictions: [State]
+        deal_types: [Acquisition, M&A]
+        sector_relevance: [all]
+        required_fields: [parties, purchase_price, closing_conditions, reps_and_warranties, indemnification]
+        template_available: true
+        critical_path: true
+
+      Asset_Purchase_Agreement:
+        id: "DOC-MA-003"
+        description: "Sale of specific assets (not entire company)"
+        jurisdictions: [State]
+        deal_types: [Acquisition, M&A, Licensing]
+        sector_relevance: [all]
+        required_fields: [asset_schedule, purchase_price, allocation, liabilities, assumed_vs_retained]
+        template_available: true
+        critical_path: true
+
+      Stock_Purchase_Agreement:
+        id: "DOC-MA-004"
+        description: "Sale of equity shares (entire company or block)"
+        jurisdictions: [State]
+        deal_types: [Acquisition, M&A]
+        sector_relevance: [all]
+        required_fields: [share_count, price_per_share, total_consideration, reps_and_warranties, closing_mechanics]
+        template_available: true
+        critical_path: true
+
+      Merger_Agreement:
+        id: "DOC-MA-005"
+        description: "Combination of two companies with statutory merger"
+        jurisdictions: [State]
+        deal_types: [Acquisition, M&A]
+        sector_relevance: [all]
+        required_fields: [merger_structure, surviving_entity, exchange_ratio, conditions, plan_of_merger]
+        template_available: true
+        critical_path: true
+
+    diligence:
+      Data_Room_Index:
+        id: "DOC-DD-001"
+        description: "Catalog of all due diligence documents"
+        jurisdictions: [Internal]
+        deal_types: [M&A, Acquisition, Financing]
+        sector_relevance: [all]
+        required_fields: [document_name, category, upload_date, requestor, access_logs]
+        template_available: true
+        critical_path: true
+
+      Representations_and_Warranties:
+        id: "DOC-DD-002"
+        description: "Seller's statements of fact regarding company"
+        jurisdictions: [State]
+        deal_types: [M&A, Acquisition, Financing]
+        sector_relevance: [all]
+        required_fields: [reps_category, representation_text, exception_schedule, knowledge_qualifiers]
+        template_available: true
+        critical_path: true
+
+      Disclosure_Schedule:
+        id: "DOC-DD-003"
+        description: "Exceptions to reps and warranties"
+        jurisdictions: [State]
+        deal_types: [M&A, Acquisition, Financing]
+        sector_relevance: [all]
+        required_fields: [rep_category, disclosure_item, detail, materiality_threshold]
+        template_available: true
+        critical_path: true
+
+      Environmental_Assessment:
+        id: "DOC-DD-004"
+        description: "Phase I/II environmental site assessment"
+        jurisdictions: [State, Local, Federal]
+        deal_types: [M&A, Acquisition, Real Estate]
+        sector_relevance: [Construction, Real Estate, Manufacturing, Energy]
+        required_fields: [site_location, assessment_scope, findings, remediation_needed]
+        template_available: false
+        critical_path: true
+
+    tax:
+      Tax_Compliance_Certificate:
+        id: "DOC-TAX-001"
+        description: "Proof that entity is current on tax payments"
+        jurisdictions: [Federal, State, Local]
+        deal_types: [M&A, Acquisition, Financing]
+        sector_relevance: [all]
+        required_fields: [issuing_jurisdiction, certificate_date, status, period_covered]
+        template_available: false
+        critical_path: true
+
+      Tax_Opinion_Letter:
+        id: "DOC-TAX-002"
+        description: "Tax counsel's opinion on deal structure and consequences"
+        jurisdictions: [Federal, State, International]
+        deal_types: [M&A, Acquisition, Financing, Reorganization]
+        sector_relevance: [all]
+        required_fields: [opinion_date, counsel_name, basis_for_opinion, conclusions]
+        template_available: false
+        critical_path: true
+
+      Transfer_Pricing_Study:
+        id: "DOC-TAX-003"
+        description: "Documentation of arm's-length transfer pricing"
+        jurisdictions: [Federal, International]
+        deal_types: [M&A, Financing, Partnership]
+        sector_relevance: [Finance, Technology, Multinational]
+        required_fields: [transaction_description, comparable_transactions, methodology, economic_analysis]
+        template_available: false
+        critical_path: true
+
+      Tax_Indemnity_Schedule:
+        id: "DOC-TAX-004"
+        description: "Allocation of tax liability between buyer and seller"
+        jurisdictions: [Federal, State]
+        deal_types: [M&A, Acquisition]
+        sector_relevance: [all]
+        required_fields: [indemnified_taxes, period_covered, caps, baskets, survival_period]
+        template_available: true
+        critical_path: true
+
+    insurance:
+      Insurance_Policy:
+        id: "DOC-INS-001"
+        description: "Coverage document for D&O, liability, cyber"
+        jurisdictions: [State]
+        deal_types: [all]
+        sector_relevance: [all]
+        insurance_types: [D&O, General_Liability, Professional_Liability, Cyber, Employment_Practices, Fiduciary]
+        required_fields: [insurer_name, policy_number, coverage_amount, exclusions, deductible]
+        template_available: false
+        critical_path: true
+
+      Certificate_of_Insurance:
+        id: "DOC-INS-002"
+        description: "Evidence of active insurance coverage"
+        jurisdictions: [State]
+        deal_types: [all]
+        sector_relevance: [all]
+        required_fields: [insured_party, coverage_type, policy_number, expiration_date, certificate_holder]
+        template_available: true
+        critical_path: true
+
+      Tail_Insurance_Policy:
+        id: "DOC-INS-003"
+        description: "Extended reporting period for claims-made D&O/liability"
+        jurisdictions: [State]
+        deal_types: [M&A, Acquisition]
+        sector_relevance: [all]
+        required_fields: [tail_period, coverage_limits, retroactive_date, premium]
+        template_available: false
+        critical_path: true
+
+    hr:
+      Employee_Handbook:
+        id: "DOC-HR-001"
+        description: "Policies covering compensation, benefits, conduct, termination"
+        jurisdictions: [Federal, State, Industry-specific]
+        deal_types: [all]
+        sector_relevance: [all]
+        required_fields: [at_will_status, benefits_summary, leave_policies, code_of_conduct, grievance_procedures]
+        template_available: true
+        critical_path: true
+
+      Employment_Agreement:
+        id: "DOC-HR-002"
+        description: "Individual offer letter and employment terms"
+        jurisdictions: [Federal, State]
+        deal_types: [Employment]
+        sector_relevance: [all]
+        required_fields: [employee_name, position, compensation, benefits, start_date, restrictive_covenants]
+        template_available: true
+        critical_path: true
+
+      Confidentiality_Agreement:
+        id: "DOC-HR-003"
+        description: "NDA for employees and contractors"
+        jurisdictions: [Federal, State]
+        deal_types: [Employment, Partnership, Financing]
+        sector_relevance: [all]
+        required_fields: [definition_of_confidential, restrictions, exceptions, survival_period, remedies]
+        template_available: true
+        critical_path: true
+
+      Invention_Assignment_Agreement:
+        id: "DOC-HR-004"
+        description: "Assignment of IP created by employees"
+        jurisdictions: [Federal, State]
+        deal_types: [Employment]
+        sector_relevance: [Technology, IP-intensive]
+        required_fields: [types_of_ip_covered, exceptions, pre_existing_ip_schedule, work_made_for_hire_clause]
+        template_available: true
+        critical_path: true
+
+      Equity_Agreements:
+        id: "DOC-HR-005"
+        description: "Vesting agreements, stock option grants, RSU agreements"
+        jurisdictions: [Federal, State, Internal]
+        deal_types: [Employment, Financing]
+        sector_relevance: [all]
+        required_fields: [vesting_schedule, cliff, acceleration_events, tax_treatment, exercise_terms]
+        template_available: true
+        critical_path: true
+
+      Contractor_Agreement:
+        id: "DOC-HR-006"
+        description: "Independent contractor agreement with scope and compensation"
+        jurisdictions: [Federal, State]
+        deal_types: [Partnership, Procurement]
+        sector_relevance: [all]
+        required_fields: [scope_of_work, compensation_terms, ip_ownership, termination, liability]
+        template_available: true
+        critical_path: true
+
+    sales:
+      Master_Service_Agreement:
+        id: "DOC-SALES-001"
+        description: "Standard contract governing ongoing service relationship"
+        jurisdictions: [Federal, State, International]
+        deal_types: [Partnership, Financing]
+        sector_relevance: [all]
+        required_fields: [services_description, payment_terms, term_and_termination, warranties, limitation_of_liability]
+        template_available: true
+        critical_path: true
+
+      Statement_of_Work:
+        id: "DOC-SALES-002"
+        description: "Specific project or engagement terms (amends MSA)"
+        jurisdictions: [Federal, State]
+        deal_types: [Partnership, Procurement]
+        sector_relevance: [all]
+        required_fields: [project_scope, deliverables, timeline, compensation, acceptance_criteria]
+        template_available: true
+        critical_path: true
+
+      Service_Level_Agreement:
+        id: "DOC-SALES-003"
+        description: "SLA with uptime, performance, and support commitments"
+        jurisdictions: [Internal]
+        deal_types: [Partnership, Financing]
+        sector_relevance: [Technology, SaaS]
+        required_fields: [availability_target, response_time, maintenance_windows, credits_remedies]
+        template_available: true
+        critical_path: false
+
+      Reseller_Agreement:
+        id: "DOC-SALES-004"
+        description: "Channel partner agreement for reselling product/service"
+        jurisdictions: [Federal, State, International]
+        deal_types: [Partnership]
+        sector_relevance: [all]
+        required_fields: [territory, product_scope, pricing, co_marketing, support_terms, termination]
+        template_available: true
+        critical_path: true
+
+    procurement:
+      Purchase_Order:
+        id: "DOC-PROC-001"
+        description: "Formal request for goods or services"
+        jurisdictions: [Internal]
+        deal_types: [Procurement]
+        sector_relevance: [all]
+        required_fields: [vendor_name, item_description, quantity, unit_price, delivery_date, po_number]
+        template_available: true
+        critical_path: false
+
+      Vendor_Contract:
+        id: "DOC-PROC-002"
+        description: "Binding agreement with supplier for goods/services"
+        jurisdictions: [State]
+        deal_types: [Procurement]
+        sector_relevance: [all]
+        required_fields: [vendor_name, products_services, pricing, payment_terms, delivery, warranties]
+        template_available: true
+        critical_path: true
+
+      Procurement_Policy:
+        id: "DOC-PROC-003"
+        description: "Internal procedures for vendor selection and purchasing"
+        jurisdictions: [Internal]
+        deal_types: [all]
+        sector_relevance: [all]
+        required_fields: [approval_authority, bidding_requirements, conflict_of_interest, documentation]
+        template_available: true
+        critical_path: false
+
+    vendor:
+      Vendor_Information_Form:
+        id: "DOC-VEND-001"
+        description: "Vendor profile with contact, banking, tax information"
+        jurisdictions: [Internal]
+        deal_types: [all]
+        sector_relevance: [all]
+        required_fields: [vendor_name, tax_id, banking_details, insurance_proof, references]
+        template_available: true
+        critical_path: true
+
+      W9_Form:
+        id: "DOC-VEND-002"
+        description: "US vendor tax withholding form"
+        jurisdictions: [Federal]
+        deal_types: [Procurement]
+        sector_relevance: [all]
+        required_fields: [legal_name, ssn_ein, address, exempt_payee_code]
+        template_available: false
+        critical_path: true
+
+    partnerships:
+      Partnership_Agreement:
+        id: "DOC-PART-001"
+        description: "Legal agreement establishing partnership governance"
+        jurisdictions: [State]
+        deal_types: [Partnership]
+        sector_relevance: [all]
+        required_fields: [partner_names, capital_contributions, profit_sharing, decision_making, withdrawal]
+        template_available: true
+        critical_path: true
+
+      Joint_Venture_Agreement:
+        id: "DOC-PART-002"
+        description: "Agreement between entities for specific project/purpose"
+        jurisdictions: [State]
+        deal_types: [Partnership, M&A]
+        sector_relevance: [all]
+        required_fields: [jv_purpose, entity_structure, capital_requirements, governance, exit_provisions]
+        template_available: true
+        critical_path: true
+
+      Co_Marketing_Agreement:
+        id: "DOC-PART-003"
+        description: "Agreement to jointly market product or service"
+        jurisdictions: [State]
+        deal_types: [Partnership]
+        sector_relevance: [all]
+        required_fields: [partners, campaign_scope, budget, lead_sharing, performance_metrics]
+        template_available: true
+        critical_path: false
+
+    ip:
+      Patent_Application:
+        id: "DOC-IP-001"
+        description: "USPTO application for patent protection"
+        jurisdictions: [Federal, International]
+        deal_types: [all]
+        sector_relevance: [Technology, Biotech, Manufacturing]
+        required_fields: [inventor_name, application_date, claims, drawings, specification]
+        template_available: false
+        critical_path: true
+        regulatory_bodies: [USPTO, WIPO]
+
+      Trademark_Application:
+        id: "DOC-IP-002"
+        description: "USPTO application for trademark registration"
+        jurisdictions: [Federal, State, International]
+        deal_types: [all]
+        sector_relevance: [all]
+        required_fields: [mark_description, goods_services, class, specimen, use_declaration]
+        template_available: false
+        critical_path: true
+        regulatory_bodies: [USPTO, WIPO]
+
+      Trade_Secret_Policy:
+        id: "DOC-IP-003"
+        description: "Procedures for protecting confidential information"
+        jurisdictions: [Federal, State]
+        deal_types: [all]
+        sector_relevance: [all]
+        required_fields: [definition_of_trade_secret, identification, access_controls, monitoring]
+        template_available: true
+        critical_path: true
+
+      IP_Ownership_Schedule:
+        id: "DOC-IP-004"
+        description: "Inventory of all IP with ownership status"
+        jurisdictions: [Internal]
+        deal_types: [M&A, Acquisition, Financing]
+        sector_relevance: [all]
+        required_fields: [ip_description, type, registration_status, registration_number, owner]
+        template_available: true
+        critical_path: true
+
+      License_Agreement:
+        id: "DOC-IP-005"
+        description: "Grant of rights to use licensed IP"
+        jurisdictions: [Federal, State, International]
+        deal_types: [Licensing, Partnership]
+        sector_relevance: [Technology, Creative]
+        required_fields: [licensor, licensee, licensed_ip, territory, term, royalty, exclusivity]
+        template_available: true
+        critical_path: true
+
+    technology:
+      Technology_Stack_Documentation:
+        id: "DOC-TECH-001"
+        description: "List of all software, tools, platforms, versions"
+        jurisdictions: [Internal]
+        deal_types: [M&A, Acquisition, Financing]
+        sector_relevance: [Technology, SaaS]
+        required_fields: [software_name, version, license_type, vendor, usage, criticality]
+        template_available: true
+        critical_path: false
+
+      Source_Code_Repository_Access:
+        id: "DOC-TECH-002"
+        description: "Proof of ownership/access to code repositories"
+        jurisdictions: [Internal]
+        deal_types: [M&A, Acquisition, Financing]
+        sector_relevance: [Technology, SaaS]
+        required_fields: [repository_url, access_credentials, owner, contributor_list]
+        template_available: true
+        critical_path: true
+
+      Software_License_Audit:
+        id: "DOC-TECH-003"
+        description: "Review of software licenses for compliance and restrictions"
+        jurisdictions: [Federal, International]
+        deal_types: [M&A, Acquisition]
+        sector_relevance: [Technology, SaaS]
+        required_fields: [software_name, license_type, restrictions, gpl_status, commercial_use]
+        template_available: false
+        critical_path: true
+
+      Infrastructure_Contracts:
+        id: "DOC-TECH-004"
+        description: "Contracts with hosting, cloud, infrastructure providers"
+        jurisdictions: [State, International]
+        deal_types: [all]
+        sector_relevance: [Technology, SaaS]
+        required_fields: [provider_name, services, term, sla, data_location, termination]
+        template_available: true
+        critical_path: true
+
+    data_privacy:
+      Data_Processing_Agreement:
+        id: "DOC-DATA-001"
+        description: "Contract governing data processor obligations"
+        jurisdictions: [Federal, State, International]
+        deal_types: [Partnership, Financing]
+        sector_relevance: [all]
+        compliance_frameworks: [GDPR, CCPA]
+        required_fields: [data_types, processing_purposes, security_measures, subprocessors, data_subject_rights]
+        template_available: true
+        critical_path: true
+
+      Data_Retention_Schedule:
+        id: "DOC-DATA-002"
+        description: "Policy on how long different data types are retained"
+        jurisdictions: [Federal, State, International]
+        deal_types: [all]
+        sector_relevance: [all]
+        compliance_frameworks: [GDPR, CCPA, HIPAA]
+        required_fields: [data_type, retention_period, legal_basis, deletion_procedure]
+        template_available: true
+        critical_path: true
+
+      Privacy_Impact_Assessment:
+        id: "DOC-DATA-003"
+        description: "Analysis of privacy risks from new processes or systems"
+        jurisdictions: [Federal, State, International]
+        deal_types: [all]
+        sector_relevance: [all]
+        compliance_frameworks: [GDPR]
+        required_fields: [process_description, data_types, risks_identified, mitigations, legal_basis]
+        template_available: true
+        critical_path: false
+
+      Data_Breach_Notification_Plan:
+        id: "DOC-DATA-004"
+        description: "Procedures for responding to data breaches"
+        jurisdictions: [Federal, State, International]
+        deal_types: [all]
+        sector_relevance: [all]
+        required_fields: [notification_timeline, responsible_parties, communication_template, regulator_notification]
+        template_available: true
+        critical_path: true
+
+    compliance:
+      Compliance_Audit_Report:
+        id: "DOC-COMP-001"
+        description: "Third-party assessment of regulatory compliance"
+        jurisdictions: [Federal, State, International, Industry-specific]
+        deal_types: [M&A, Acquisition, Financing]
+        sector_relevance: [Healthcare, Finance, Energy, Nonprofit]
+        required_fields: [audit_scope, standards_reviewed, findings, remediation, certification_date]
+        template_available: false
+        critical_path: true
+
+      Regulatory_Approval_Letters:
+        id: "DOC-COMP-002"
+        description: "Permits, licenses, and regulatory approvals"
+        jurisdictions: [Federal, State, Local, Industry-specific]
+        deal_types: [all]
+        sector_relevance: [Healthcare, Finance, Energy, Defense, Transportation]
+        required_fields: [issuing_authority, approval_type, issue_date, expiration_date, conditions]
+        template_available: false
+        critical_path: true
+
+      Litigation_and_Disputes_Schedule:
+        id: "DOC-COMP-003"
+        description: "Record of lawsuits, settlements, claims, and disputes"
+        jurisdictions: [Federal, State, International]
+        deal_types: [M&A, Acquisition, Financing]
+        sector_relevance: [all]
+        required_fields: [matter_description, parties, status, jurisdiction, damages_claimed, resolution]
+        template_available: true
+        critical_path: true
+
+    marketing:
+      Brand_Guidelines:
+        id: "DOC-MARK-001"
+        description: "Logo usage, color palette, typography, brand voice"
+        jurisdictions: [Internal]
+        deal_types: [all]
+        sector_relevance: [all]
+        required_fields: [logo_specifications, color_palette, typography, brand_voice, usage_restrictions]
+        template_available: true
+        critical_path: false
+
+      Website_Terms_of_Service:
+        id: "DOC-MARK-002"
+        description: "Terms governing website use"
+        jurisdictions: [Federal, State, International]
+        deal_types: [all]
+        sector_relevance: [all]
+        required_fields: [limitation_of_liability, user_conduct, intellectual_property, dispute_resolution]
+        template_available: true
+        critical_path: true
+
+    operations:
+      Operational_Policies_and_Procedures:
+        id: "DOC-OPS-001"
+        description: "Day-to-day operations manual"
+        jurisdictions: [Internal]
+        deal_types: [all]
+        sector_relevance: [all]
+        required_fields: [process_description, responsible_party, approval_authorities, documentation_requirements]
+        template_available: true
+        critical_path: false
+
+      Vendor_List:
+        id: "DOC-OPS-002"
+        description: "Master list of all suppliers and vendors"
+        jurisdictions: [Internal]
+        deal_types: [all]
+        sector_relevance: [all]
+        required_fields: [vendor_name, service_type, contact_person, payment_terms, renewal_date]
+        template_available: true
+        critical_path: false
+
+      Business_Insurance_Schedule:
+        id: "DOC-OPS-003"
+        description: "Summary of all policies, coverage, carriers"
+        jurisdictions: [Internal]
+        deal_types: [all]
+        sector_relevance: [all]
+        required_fields: [insurance_type, carrier, policy_number, coverage_limit, deductible, expiration]
+        template_available: true
+        critical_path: true
+
+      Business_Continuity_Plan:
+        id: "DOC-OPS-004"
+        description: "Plan for resuming operations after disruption"
+        jurisdictions: [Internal]
+        deal_types: [all]
+        sector_relevance: [all]
+        required_fields: [critical_functions, recovery_time_objective, recovery_point_objective, backup_procedures]
+        template_available: true
+        critical_path: true
+
+  sector_extensions:
+    healthcare:
+      HIPAA_Business_Associate_Agreement:
+        id: "DOC-HC-001"
+        jurisdiction_specific: [Federal, State]
+        sector_specific: SEC-003-Healthcare
+        compliance_frameworks: [HIPAA]
+        required_fields: [covered_entity, business_associate, protected_health_information, security_obligations]
+        template_available: true
+        critical_path: true
+
+      Clinical_Trial_Protocol:
+        id: "DOC-HC-002"
+        jurisdiction_specific: [Federal]
+        sector_specific: SEC-003-Healthcare
+        regulatory_bodies: [FDA, IRB]
+        required_fields: [study_objectives, methodology, patient_selection, endpoints, safety_monitoring]
+        template_available: false
+        critical_path: true
+
+      Medical_Device_Labeling:
+        id: "DOC-HC-003"
+        jurisdiction_specific: [Federal]
+        sector_specific: SEC-003-Healthcare
+        regulatory_bodies: [FDA]
+        required_fields: [device_name, intended_use, warnings, instructions, adverse_events]
+        template_available: false
+        critical_path: true
+
+    construction:
+      Building_Permit:
+        id: "DOC-CONST-001"
+        jurisdiction_specific: [Local]
+        sector_specific: SEC-002-Construction
+        required_fields: [project_address, scope_of_work, contractor, estimated_value, completion_date]
+        template_available: false
+        critical_path: true
+
+      Performance_Bond:
+        id: "DOC-CONST-002"
+        jurisdiction_specific: [State]
+        sector_specific: SEC-002-Construction
+        required_fields: [contractor_name, project, bond_amount, surety_company, terms]
+        template_available: false
+        critical_path: true
+
+      Mechanics_Lien_Waiver:
+        id: "DOC-CONST-003"
+        jurisdiction_specific: [State]
+        sector_specific: SEC-002-Construction
+        required_fields: [claimant_name, property, amount_released, waiver_type, signature]
+        template_available: true
+        critical_path: true
+
+      Construction_Contract:
+        id: "DOC-CONST-004"
+        jurisdiction_specific: [State]
+        sector_specific: SEC-002-Construction
+        required_fields: [contractor_name, scope, contract_price, timeline, payment_schedule, change_order_process]
+        template_available: true
+        critical_path: true
+
+    finance:
+      SEC_Filing:
+        id: "DOC-FIN-EX-001"
+        jurisdiction_specific: [Federal]
+        sector_specific: SEC-008-Finance
+        regulatory_bodies: [SEC]
+        required_fields: [filing_type, company_cik, fiscal_period, disclosure_items, signature]
+        template_available: false
+        critical_path: true
+
+      Financial_Advisor_Agreement:
+        id: "DOC-FIN-EX-002"
+        jurisdiction_specific: [Federal, State]
+        sector_specific: SEC-008-Finance
+        required_fields: [advisor_firm, services, term, compensation, exclusivity, termination]
+        template_available: true
+        critical_path: true
+
+    transportation:
+      DOT_Compliance_Documents:
+        id: "DOC-TRANS-001"
+        jurisdiction_specific: [Federal, State]
+        sector_specific: SEC-004-Transportation
+        regulatory_bodies: [DOT, FMCSA]
+        required_fields: [usdot_number, mc_number, authority_type, insurance_proof, safety_rating]
+        template_available: false
+        critical_path: true
+
+      Shipping_Contract:
+        id: "DOC-TRANS-002"
+        jurisdiction_specific: [State, International]
+        sector_specific: SEC-004-Transportation
+        required_fields: [shipper, carrier, origin, destination, cargo_type, rate, liability]
+        template_available: true
+        critical_path: true
+
+    energy:
+      Environmental_Permit:
+        id: "DOC-ENER-001"
+        jurisdiction_specific: [Federal, State, Local]
+        sector_specific: SEC-006-Energy
+        regulatory_bodies: [EPA]
+        required_fields: [permit_type, facility, emissions_limits, monitoring_requirements, expiration]
+        template_available: false
+        critical_path: true
+
+      Oil_and_Gas_Lease:
+        id: "DOC-ENER-002"
+        jurisdiction_specific: [State, Federal]
+        sector_specific: SEC-006-Energy
+        required_fields: [lessor, lessee, property_description, lease_term, royalty_rate, bonus]
+        template_available: false
+        critical_path: true
+
+    agriculture:
+      Organic_Certification:
+        id: "DOC-AGR-001"
+        jurisdiction_specific: [Federal]
+        sector_specific: SEC-007-Agriculture
+        regulatory_bodies: [USDA]
+        required_fields: [operation_name, inspector_name, organic_practices, certification_date, expiration]
+        template_available: false
+        critical_path: true
+
+      Agricultural_Loan_Agreement:
+        id: "DOC-AGR-002"
+        jurisdiction_specific: [Federal, State]
+        sector_specific: SEC-007-Agriculture
+        required_fields: [borrower, lender, loan_amount, interest_rate, term, collateral, prepayment]
+        template_available: true
+        critical_path: true
+
+    defense:
+      Security_Clearance_Application:
+        id: "DOC-DEF-001"
+        jurisdiction_specific: [Federal]
+        sector_specific: SEC-009-Defense
+        regulatory_bodies: [DOD, OPM]
+        required_fields: [applicant_name, position_sought, employment_history, residence_history]
+        template_available: false
+        critical_path: true
+
+      DFARS_Flow_Down_Clauses:
+        id: "DOC-DEF-002"
+        jurisdiction_specific: [Federal]
+        sector_specific: SEC-009-Defense
+        regulatory_bodies: [DoD]
+        required_fields: [contractor_name, contract_number, dfars_clauses, security_requirements]
+        template_available: true
+        critical_path: true
+
+    education:
+      Accreditation_Document:
+        id: "DOC-EDU-001"
+        jurisdiction_specific: [Federal, State]
+        sector_specific: SEC-010-Education
+        regulatory_bodies: [Accrediting Bodies]
+        required_fields: [institution_name, program_name, learning_outcomes, assessment_results]
+        template_available: false
+        critical_path: true
+
+      Student_Loan_Certification:
+        id: "DOC-EDU-002"
+        jurisdiction_specific: [Federal]
+        sector_specific: SEC-010-Education
+        regulatory_bodies: [US Dept of Education]
+        required_fields: [oid_number, program_code, cip_code, cost_of_attendance]
+        template_available: false
+        critical_path: true
+
+    real_estate:
+      Purchase_and_Sale_Agreement:
+        id: "DOC-RE-001"
+        jurisdiction_specific: [State, Local]
+        sector_specific: SEC-011-Real-Estate
+        required_fields: [buyer, seller, property_address, purchase_price, contingencies, closing_date]
+        template_available: true
+        critical_path: true
+
+      Title_Insurance_Policy:
+        id: "DOC-RE-002"
+        jurisdiction_specific: [State]
+        sector_specific: SEC-011-Real-Estate
+        required_fields: [insured_party, property, coverage_amount, exceptions, issuing_company]
+        template_available: false
+        critical_path: true
+
+      Mortgage_Note_and_Deed_of_Trust:
+        id: "DOC-RE-003"
+        jurisdiction_specific: [State]
+        sector_specific: SEC-011-Real-Estate
+        required_fields: [borrower, lender, loan_amount, interest_rate, term, property_address]
+        template_available: false
+        critical_path: true
+
+      Zoning_Compliance_Certificate:
+        id: "DOC-RE-004"
+        jurisdiction_specific: [Local]
+        sector_specific: SEC-011-Real-Estate
+        required_fields: [property_address, zoning_district, permitted_uses, setbacks, height_restrictions]
+        template_available: false
+        critical_path: true
+
+    saas:
+      SaaS_Subscription_Agreement:
+        id: "DOC-SAAS-001"
+        jurisdiction_specific: [Federal, State]
+        sector_specific: SEC-013-SaaS
+        required_fields: [saas_provider, customer, services, term, fees, sla, data_ownership]
+        template_available: true
+        critical_path: true
+
+      API_Terms_of_Service:
+        id: "DOC-SAAS-002"
+        jurisdiction_specific: [Federal, State]
+        sector_specific: SEC-013-SaaS
+        required_fields: [api_provider, api_name, rate_limits, authentication, data_rights, termination]
+        template_available: true
+        critical_path: true
+
+    ai:
+      AI_Training_Data_License:
+        id: "DOC-AI-001"
+        jurisdiction_specific: [Federal, State, International]
+        sector_specific: SEC-014-AI
+        required_fields: [licensor, licensee, data_description, permitted_uses, restrictions]
+        template_available: true
+        critical_path: true
+
+      Algorithmic_Impact_Assessment:
+        id: "DOC-AI-002"
+        jurisdiction_specific: [Federal, State]
+        sector_specific: SEC-014-AI
+        required_fields: [algorithm_description, affected_groups, discrimination_risk, mitigations]
+        template_available: true
+        critical_path: true
+
+    nonprofit:
+      IRS_Form_990:
+        id: "DOC-NP-001"
+        jurisdiction_specific: [Federal]
+        sector_specific: SEC-015-Nonprofit
+        regulatory_bodies: [IRS]
+        required_fields: [organization_name, ein, mission_statement, revenue_expenses, governance]
+        template_available: false
+        critical_path: true
+
+      Grant_Agreement:
+        id: "DOC-NP-002"
+        jurisdiction_specific: [State, Federal]
+        sector_specific: SEC-015-Nonprofit
+        required_fields: [grantor, grantee, grant_amount, project_description, reporting_requirements]
+        template_available: true
+        critical_path: true
+
+  deal_templates:
+    acquisition:
+      id: "DEAL-ACQ-001"
+      description: "Acquisition deal type documentation sequence"
+      sequence_steps: 8
+      timeline_weeks: 12
+      required_documents:
+        phase_1_preliminary:
+          - Letter_of_Intent
+          - Cap_Table
+          - Stock_Ledger
+        phase_2_due_diligence:
+          - Representations_and_Warranties
+          - Disclosure_Schedule
+          - Financial_Statements
+          - Tax_Return
+          - Audit_Report
+          - IP_Ownership_Schedule
+          - Technology_Stack_Documentation
+        phase_3_legal_review:
+          - Tax_Opinion_Letter
+          - Litigation_and_Disputes_Schedule
+          - Regulatory_Approval_Letters
+          - Data_Processing_Agreement
+        phase_4_closing:
+          - Purchase_Agreement
+          - Bring_Down_Certificate
+          - Organizational_Resolutions
+          - Stock_Certificate
+
+    financing:
+      id: "DEAL-FIN-001"
+      description: "Financing round deal type documentation sequence"
+      sequence_steps: 7
+      timeline_weeks: 10
+      required_documents:
+        phase_1_preparation:
+          - Business_Plan
+          - Financial_Statements
+          - Budget_and_Forecast
+        phase_2_due_diligence:
+          - Cap_Table
+          - Tax_Return
+          - Tax_Opinion_Letter
+          - IP_Ownership_Schedule
+        phase_3_legal:
+          - Articles_of_Incorporation
+          - Operating_Agreement
+          - Bylaws
+          - Investment_Agreement
+        phase_4_closing:
+          - Stock_Certificate
+          - Organizational_Resolutions
+
+    partnership:
+      id: "DEAL-PART-001"
+      description: "Partnership/JV deal type documentation sequence"
+      sequence_steps: 5
+      timeline_weeks: 8
+      required_documents:
+        phase_1_negotiation:
+          - Partnership_Agreement
+          - Financial_Statements
+        phase_2_legal_setup:
+          - Operating_Agreement
+          - Articles_of_Incorporation
+          - Confidentiality_Agreement
+        phase_3_execution:
+          - Organizational_Resolutions
+          - Insurance_Policy
+
+    employment:
+      id: "DEAL-EMP-001"
+      description: "Employment deal type documentation sequence"
+      sequence_steps: 6
+      timeline_weeks: 4
+      required_documents:
+        phase_1_offer:
+          - Offer_Letter
+        phase_2_legal_protection:
+          - Employment_Agreement
+          - Confidentiality_Agreement
+          - Invention_Assignment_Agreement
+        phase_3_verification:
+          - Background_Check_Authorization
+          - I9_Verification
+        phase_4_onboarding:
+          - Employee_Handbook
+          - Tax_Withholding_Information
+
+    real_estate:
+      id: "DEAL-RE-001"
+      description: "Real estate transaction documentation sequence"
+      sequence_steps: 6
+      timeline_weeks: 8
+      required_documents:
+        phase_1_offer:
+          - Purchase_and_Sale_Agreement
+        phase_2_due_diligence:
+          - Environmental_Assessment
+          - Survey
+          - Zoning_Compliance_Certificate
+        phase_3_title:
+          - Title_Commitment
+          - Title_Insurance_Policy
+        phase_4_financing:
+          - Loan_Agreement
+          - Mortgage_Note_and_Deed_of_Trust
+        phase_5_closing:
+          - Deed
+          - Homeowners_Insurance_Policy
+
+    licensing:
+      id: "DEAL-LIC-001"
+      description: "Licensing/IP deal type documentation sequence"
+      sequence_steps: 5
+      timeline_weeks: 6
+      required_documents:
+        phase_1_negotiation:
+          - License_Agreement
+          - IP_Ownership_Schedule
+        phase_2_financial:
+          - Royalty_Payment_Schedule
+        phase_3_standards:
+          - Quality_Control_Standards
+          - Trademark_Usage_Guidelines
+        phase_4_execution:
+          - Confidentiality_Agreement
+          - Insurance_Requirements
+
+metadata:
+  version: "1.0"
+  created_date: "2026-09-08"
+  last_updated: "2026-09-08"
+  authority_control_planes:
+    - CP-027-Infrastructure
+    - CP-032-Business-Operations
+  total_universal_documents: 65
+  total_sector_extensions: 20
+  total_deal_types: 6
+  jurisdictions_covered: 5
+  compliance_frameworks_referenced: 28
+  sectors_covered: 35
+  entities_supported: 789
+  document_counts:
+    critical_path: 42
+    non_critical: 23
+    templates_available: 54
+    templates_unavailable: 11

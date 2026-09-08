@@ -1,0 +1,240 @@
+# RESOURCE LINKING REGISTRY
+# Maps Repositories ↔ Ventures ↔ Capabilities ↔ Agents ↔ Tools
+
+version: "1.0"
+updated: "2026-09-02"
+
+repositories:
+  REP-001:
+    id: "REP-001"
+    name: "worldwidebro-venture-portal"
+    type: "core-platform"
+    url: "https://github.com/worldwidebro/venture-portal"
+    language: "typescript"
+    ventures:
+      - venture_id: "VEN-001"
+        purpose: "core dashboard"
+        status: "production"
+      - venture_id: "VEN-042"
+        purpose: "sector navigation"
+        status: "production"
+    capabilities:
+      - "CAP-001"  # Venture management
+      - "CAP-012"  # Dashboard UI
+      - "CAP-055"  # Real-time sync
+    agents:
+      - "AGT-001"  # venture-pm
+      - "AGT-002"  # financial
+    tools:
+      - "TOL-clickup"
+      - "TOL-supabase"
+      - "TOL-stripe"
+    stars: 342
+    owner: "worldwidebro"
+    shared_ventures: ["VEN-001", "VEN-002", "VEN-042"]
+
+  REP-002:
+    id: "REP-002"
+    name: "vex-hero-site"
+    type: "hero-site"
+    url: "https://github.com/worldwidebro/vex-hero"
+    language: "typescript"
+    ventures:
+      - venture_id: "VEN-*"  # All ventures
+        purpose: "unified dashboard"
+        status: "production"
+    capabilities:
+      - "CAP-050"  # Sector visualization
+      - "CAP-051"  # Venture cards
+    agents:
+      - "AGT-002"
+    tools:
+      - "TOL-vercel"
+      - "TOL-supabase"
+    stars: 1205
+    owner: "worldwidebro"
+
+  REP-003:
+    id: "REP-003"
+    name: "claude-home"
+    type: "vex-core"
+    url: "https://github.com/worldwidebro/claude-home"
+    language: "typescript"
+    ventures: ["core-infrastructure"]
+    capabilities:
+      - "CAP-100"  # Agent routing
+      - "CAP-101"  # Task discovery
+      - "CAP-150"  # Knowledge graph
+    agents:
+      - "AGT-001"
+      - "AGT-002"
+      - "AGT-003"
+      - "AGT-004"
+      - "AGT-005"
+    tools:
+      - "TOL-neo4j"
+      - "TOL-qdrant"
+      - "TOL-anthropic"
+    stars: 567
+    owner: "worldwidebro"
+
+ventures:
+  VEN-001:
+    id: "VEN-001"
+    name: "CON-001: Ace Construction"
+    sector: "SEC-011"
+    repositories:
+      - "REP-001"
+      - "REP-002"
+    capabilities:
+      - "CAP-001"
+      - "CAP-012"
+      - "CAP-050"
+    agents:
+      - "AGT-001"
+      - "AGT-002"
+    tools:
+      - "TOL-clickup"
+      - "TOL-stripe"
+    shared_with:
+      - "VEN-002"
+      - "VEN-042"
+    status: "operating"
+    revenue: 3500
+
+  VEN-042:
+    id: "VEN-042"
+    name: "FIN-042: Payment Portal"
+    sector: "SEC-003"
+    repositories:
+      - "REP-001"
+      - "REP-002"
+    capabilities:
+      - "CAP-001"
+      - "CAP-055"
+    agents:
+      - "AGT-002"
+      - "AGT-004"
+    tools:
+      - "TOL-stripe"
+      - "TOL-supabase"
+    status: "operating"
+    revenue: 8200
+
+capabilities:
+  CAP-001:
+    id: "CAP-001"
+    name: "Venture management"
+    repositories:
+      - "REP-001"
+      - "REP-002"
+    ventures:
+      - "VEN-001"
+      - "VEN-042"
+    agents:
+      - "AGT-001"
+      - "AGT-002"
+    tools:
+      - "TOL-clickup"
+      - "TOL-supabase"
+    shared: true
+
+  CAP-012:
+    id: "CAP-012"
+    name: "Dashboard UI"
+    repositories:
+      - "REP-001"
+      - "REP-002"
+    ventures:
+      - "VEN-001"
+    agents:
+      - "AGT-001"
+    tools: []
+
+tools:
+  TOL-clickup:
+    id: "TOL-clickup"
+    name: "ClickUp API"
+    type: "task-management"
+    agents:
+      - "AGT-001"
+      - "AGT-002"
+      - "AGT-006"
+    repositories:
+      - "REP-001"
+    capabilities:
+      - "CAP-001"
+      - "CAP-022"
+    shared: true
+
+  TOL-supabase:
+    id: "TOL-supabase"
+    name: "Supabase Client"
+    type: "database"
+    agents:
+      - "AGT-001"
+      - "AGT-002"
+      - "AGT-003"
+    repositories:
+      - "REP-001"
+      - "REP-002"
+      - "REP-003"
+    capabilities:
+      - "CAP-001"
+      - "CAP-055"
+    shared: true
+
+  TOL-stripe:
+    id: "TOL-stripe"
+    name: "Stripe API"
+    type: "payments"
+    agents:
+      - "AGT-002"
+    repositories:
+      - "REP-001"
+    capabilities:
+      - "CAP-025"
+    shared: true
+
+  TOL-neo4j:
+    id: "TOL-neo4j"
+    name: "Neo4j Graph Database"
+    type: "graph-database"
+    agents:
+      - "AGT-001"
+      - "AGT-003"
+      - "AGT-005"
+    repositories:
+      - "REP-003"
+    capabilities:
+      - "CAP-100"
+    shared: false
+
+  TOL-qdrant:
+    id: "TOL-qdrant"
+    name: "Qdrant Vector DB"
+    type: "vector-search"
+    agents:
+      - "AGT-003"
+      - "AGT-005"
+    repositories:
+      - "REP-003"
+    capabilities:
+      - "CAP-150"
+    shared: false
+
+  TOL-anthropic:
+    id: "TOL-anthropic"
+    name: "Anthropic Claude API"
+    type: "llm"
+    agents:
+      - "AGT-001"
+      - "AGT-002"
+      - "AGT-003"
+      - "AGT-004"
+      - "AGT-005"
+    repositories:
+      - "REP-003"
+    capabilities:
+      - "CAP-100"
+    shared: true

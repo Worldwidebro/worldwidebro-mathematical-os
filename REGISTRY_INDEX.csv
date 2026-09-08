@@ -1,0 +1,13 @@
+registry,path,type,purpose,status,notes
+"cbp_registry.yaml","/Company Brain/_REGISTRIES/cbp_registry.yaml","YAML","~500 control points mapped","✅","Master control point list"
+"ID_REGISTRY.yaml","/Company Brain/_REGISTRIES/ID_REGISTRY.yaml","YAML","All entity ID prefixes","✅","Prefix mappings (VEN/REP/CAP/etc)"
+"capabilities","Company Brain/_REGISTRIES/capabilities/","directory","CAP-000001 to CAP-000300","🟡","Partial - in progress"
+"agents","Company Brain/_REGISTRIES/agents/","directory","AGT-000001 to AGT-000026","🟡","Routing agents + specialists"
+"skills","Company Brain/_REGISTRIES/skills/","directory","Indexed from plugins","🟡","All available skills"
+"tools","Company Brain/_REGISTRIES/tools/","directory","All available tools","🟡","Tool/MCP registry"
+"Supabase ventures","Live database","transactional","679 ventures","✅","Source of truth for ventures"
+"ALL-100-SCALE-VENTURES.csv","Documents/.claude/worktrees/.../ALL-100-SCALE-VENTURES.csv","CSV","100 scale ventures","✅","Venture list"
+"VENTURE-READINESS-SCORECARD-V2.csv","Documents/.claude/worktrees/.../VENTURE-READINESS-SCORECARD-V2.csv","CSV","Ventures + readiness %","✅","Readiness tracking"
+"venture-completion-ledger.json","Documents/.claude/worktrees/.../venture-completion-ledger.json","JSON","Status tracking","✅","Completion status"
+"repo-used-by-ventures.json","Documents/.claude/worktrees/.../repo-used-by-ventures.json","JSON","Repo→venture mapping","✅","Repository usage"
+"VENTURE-FACTORY-MAP.csv","Documents/.claude/worktrees/.../VENTURE-FACTORY-MAP.csv","CSV","Venture creation tracking","✅","Creation timeline"

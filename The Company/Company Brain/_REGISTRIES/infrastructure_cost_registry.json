@@ -1,0 +1,31 @@
+{
+  "registry_id": "REG-COST-001",
+  "updated_at": "2026-09-05",
+  "currency": "USD",
+  "monthly_estimates": {
+    "hardware_amortized": {
+      "mac_studio_m4_max": 95.0,
+      "macbook_air": 55.0,
+      "storage_drives": 15.0,
+      "subtotal": 165.0
+    },
+    "power_and_facility": {
+      "electricity_consumption_kwh": 28.0,
+      "subtotal": 28.0
+    },
+    "cloud_and_saas": {
+      "vercel_pro": 20.0,
+      "github_team": 4.0,
+      "domain_renewals": 12.0,
+      "tailscale_community": 0.0,
+      "subtotal": 36.0
+    },
+    "ai_api_fallbacks": {
+      "claude_haiku_sonnet_usage": 45.0,
+      "openai_fallback_usage": 20.0,
+      "deepseek_usage": 15.0,
+      "subtotal": 80.0
+    },
+    "total_monthly_tco": 309.0
+  }
+}

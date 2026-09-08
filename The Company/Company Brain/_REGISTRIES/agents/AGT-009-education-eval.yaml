@@ -1,0 +1,26 @@
+id: AGT-009
+name: Education Evaluation Agent
+description: "Assesses learning outcomes and tracks student progress"
+fractal_agent: education-eval
+sector_tags:
+  - SEC-037
+control_planes:
+  - CP-031
+capabilities:
+  - CAP-208  # Assessment
+  - CAP-211  # Progress tracking
+  - CAP-212  # Performance reporting
+autonomy_levels:
+  - L2
+  - L3
+cost_model:
+  per_step: 2.00
+  per_iteration: 40.00
+  per_run: 200.00
+manages_ventures:
+  - EDU-*
+tools:
+  - TOL-anthropic
+  - TOL-supabase
+created_at: "2026-09-02"
+status: active

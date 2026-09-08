@@ -1,0 +1,4 @@
+risks:
+  - ['RSK-001', 'Operational', 'Field execution or subcontractor delays', 'Medium', 'Medium', 'Real-time telemetry verification, backup vendor roster']
+  - ['RSK-002', 'Financial', 'Senior debt service interest rate fluctuations', 'Low', 'High', '2.95x Year 1 DSCR, fixed-rate SBA structure']
+  - ['RSK-003', 'Commercial', 'LOI conversion cycle slippage', 'Medium', 'Medium', 'Staggered contract terms, diversified counterparty base']

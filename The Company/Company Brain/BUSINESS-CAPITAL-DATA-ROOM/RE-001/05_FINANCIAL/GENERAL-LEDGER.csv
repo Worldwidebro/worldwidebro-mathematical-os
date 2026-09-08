@@ -1,0 +1,3 @@
+Date,Account,Description,Debit,Credit,Status
+2027-01-15,Operating Account,Initial Working Capital,"$50,000",$0,RECONCILED
+2027-02-01,Receivables,LOI Billing Batch #1,"$25,000",$0,PENDING

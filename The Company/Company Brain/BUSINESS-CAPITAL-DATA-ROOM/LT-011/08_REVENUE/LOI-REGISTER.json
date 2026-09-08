@@ -1,0 +1,31 @@
+{
+  "venture_id": "LT-011",
+  "lois": [
+    {
+      "id": "LOI-LT011-001",
+      "counterparty": "Mid-Atlantic Freight Haulers Alliance",
+      "signatory": "Duane Jenkins, Operations Coordinator",
+      "date": "2026-08-10",
+      "expires": "2027-02-10",
+      "term": "6 Months",
+      "value": "$450,000",
+      "weighted": "$315,000",
+      "prob": "70%",
+      "type": "Fleet Network",
+      "scope": "Dispatch integration across 25 independent dry-van and flatbed owner-operators generating 30 weekly loads at $149/mo subscription + 0.60% toll."
+    },
+    {
+      "id": "LOI-LT011-002",
+      "counterparty": "Piedmont Freight Logistics Co-op",
+      "signatory": "Alicia Thorne, Dispatch Manager",
+      "date": "2026-08-28",
+      "expires": "2027-08-28",
+      "term": "12 Months",
+      "value": "$380,000",
+      "weighted": "$285,000",
+      "prob": "75%",
+      "type": "Co-op / Broker",
+      "scope": "CarrierDispatch TMS deployment across 20 refrigerated trucks with automated factoring reconciliation and route deadhead mitigation."
+    }
+  ]
+}

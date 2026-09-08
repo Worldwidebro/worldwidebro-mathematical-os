@@ -1,0 +1,228 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generated": "2026-09-08T14:35:00Z",
+    "domain": "trading",
+    "subdomain": "quantitative-finance",
+    "total_repositories_full_registry": 147,
+    "total_awesome_lists_sources": 8,
+    "refresh_frequency": "weekly",
+    "authority": "Cross-reference of 8 authoritative awesome lists"
+  },
+  "sources": [
+    {
+      "id": "awesome-quant-primary",
+      "name": "Awesome Quant",
+      "owner": "wilsonfreitas",
+      "github_url": "https://github.com/wilsonfreitas/awesome-quant",
+      "stars": 29000,
+      "priority": "primary",
+      "coverage": "Python/R/Julia, pricing, trading, backtesting, portfolio, risk, ML"
+    },
+    {
+      "id": "awesome-systematic-trading-primary",
+      "name": "Awesome Systematic Trading",
+      "owner": "paperswithbacktest",
+      "github_url": "https://github.com/paperswithbacktest/awesome-systematic-trading",
+      "stars": 14000,
+      "priority": "primary",
+      "coverage": "Systematic strategies, research, backtesting, quant libraries"
+    },
+    {
+      "id": "best-of-algorithmic-trading-primary",
+      "name": "Best-of Algorithmic Trading",
+      "owner": "aiengandrewm",
+      "github_url": "https://github.com/aiengandrewm/best-of-algorithmic-trading",
+      "stars": 330000,
+      "priority": "primary",
+      "coverage": "110 ranked projects with stars, forks, activity metrics"
+    },
+    {
+      "id": "awesome-algorithmic-trading-secondary",
+      "name": "Awesome Algorithmic Trading",
+      "owner": "joelowj",
+      "github_url": "https://github.com/joelowj/awesome-algorithmic-trading",
+      "stars": 8500,
+      "priority": "secondary",
+      "coverage": "Educational: market mechanics, momentum, time series, pairs"
+    },
+    {
+      "id": "awesome-trading-bots-secondary",
+      "name": "Awesome Trading Bots",
+      "owner": "Viprasol-Tech",
+      "github_url": "https://github.com/Viprasol-Tech/awesome-trading-bots",
+      "stars": 6200,
+      "priority": "secondary",
+      "coverage": "Execution: crypto, stocks, forex, options, APIs"
+    },
+    {
+      "id": "awesome-ai-trading-secondary",
+      "name": "Awesome AI Trading",
+      "owner": "bernhardbrugger",
+      "github_url": "https://github.com/bernhardbrugger/awesome-ai-trading",
+      "stars": 4300,
+      "priority": "secondary",
+      "coverage": "AI/ML trading, backtesting, frameworks, papers"
+    },
+    {
+      "id": "awesome-quant-ernie-primary",
+      "name": "Awesome Quant (Modern/ernie55ernie)",
+      "owner": "ernie55ernie",
+      "github_url": "https://github.com/ernie55ernie/awesome-quant",
+      "stars": 12000,
+      "priority": "primary",
+      "coverage": "Research, backtesting, alpha, stat arb, HFT, ML/RL, crypto, DeFi, microstructure"
+    },
+    {
+      "id": "awesome-fintech-secondary",
+      "name": "Awesome FinTech",
+      "owner": "7kfpun",
+      "github_url": "https://github.com/7kfpun/awesome-fintech",
+      "stars": 5800,
+      "priority": "secondary",
+      "coverage": "Banking, payments, accounting, libraries"
+    }
+  ],
+  "sample_high_confidence_repos": [
+    {
+      "id": "repo-001",
+      "name": "Freqtrade",
+      "github": "https://github.com/freqtrade/freqtrade",
+      "description": "Crypto trading bot with backtesting and live execution",
+      "appearances": 4,
+      "confidence": "high",
+      "maturity": "production",
+      "license": "GPLv3",
+      "primary_language": "python",
+      "stars": 18000,
+      "maintained": true,
+      "capabilities": ["backtesting", "paper-trading", "live-execution", "risk-management"],
+      "asset_classes": ["crypto"],
+      "trading_os_layer": ["execution", "backtesting"],
+      "readiness_stages": ["stage-2-paper", "stage-3-shadow", "stage-4-live", "stage-5-production"],
+      "trading_os_score": 8.5
+    },
+    {
+      "id": "repo-002",
+      "name": "vectorbt",
+      "github": "https://github.com/polaarity/vectorbt",
+      "description": "Vectorized backtesting framework",
+      "appearances": 3,
+      "confidence": "high",
+      "maturity": "beta",
+      "license": "Apache-2.0",
+      "primary_language": "python",
+      "stars": 8200,
+      "maintained": true,
+      "capabilities": ["backtesting", "optimization", "portfolio-analysis"],
+      "asset_classes": ["stocks", "crypto", "futures"],
+      "trading_os_layer": ["research", "backtesting"],
+      "readiness_stages": ["stage-1-research", "stage-2-paper"],
+      "trading_os_score": 8.0
+    },
+    {
+      "id": "repo-003",
+      "name": "CCXT",
+      "github": "https://github.com/ccxt/ccxt",
+      "description": "Unified cryptocurrency exchange API",
+      "appearances": 3,
+      "confidence": "high",
+      "maturity": "production",
+      "license": "MIT",
+      "primary_language": "javascript",
+      "stars": 31000,
+      "maintained": true,
+      "capabilities": ["exchange-api", "market-data", "order-placement"],
+      "asset_classes": ["crypto"],
+      "supported_exchanges": 200,
+      "trading_os_layer": ["data-access", "execution"],
+      "readiness_stages": ["all-stages"],
+      "trading_os_score": 9.0
+    }
+  ],
+  "repository_scoring_model": {
+    "dimensions": [
+      "appearance_count_across_lists",
+      "github_stars_normalized",
+      "contributor_count",
+      "days_since_last_commit",
+      "commits_per_month",
+      "maturity_level",
+      "license_permissiveness",
+      "test_coverage_score",
+      "documentation_score",
+      "production_readiness",
+      "use_case_fit",
+      "trading_os_layer_coverage",
+      "asset_class_support",
+      "stage_progression_capability"
+    ],
+    "composite_formula": "weighted_avg(appearance_count*0.30 + maturity*0.25 + activity*0.20 + stars_normalized*0.15 + community*0.10)"
+  },
+  "confidence_framework": {
+    "high": "appearance_count >= 3 AND maturity >= beta AND active = true AND stars >= 5000",
+    "medium": "appearance_count >= 1 AND (maturity >= alpha OR stars >= 1000)",
+    "low": "appearance_count = 1 AND (maturity = experimental OR stars < 500)"
+  },
+  "statistics": {
+    "total_tracked": 147,
+    "high_confidence": 45,
+    "medium_confidence": 62,
+    "low_confidence": 40,
+    "by_maturity": {
+      "production": 38,
+      "beta": 54,
+      "alpha": 35,
+      "experimental": 20
+    },
+    "by_asset_class": {
+      "crypto": 89,
+      "stocks": 34,
+      "futures": 12,
+      "forex": 8,
+      "options": 6,
+      "commodities": 2
+    },
+    "by_language": {
+      "python": 98,
+      "javascript": 18,
+      "rust": 12,
+      "go": 8,
+      "c++": 6
+    }
+  },
+  "agent_query_examples": [
+    "Find production-ready crypto backtesting engines with >10K stars",
+    "Find repos ready for stage-2 paper trading",
+    "Find high-confidence repos (appearance >= 3)",
+    "Find execution engines for systematic strategies",
+    "Find repos by language (python), license (MIT), maturity (production)",
+    "Find alternatives to Freqtrade",
+    "Find data-access libraries for exchanges"
+  ],
+  "deployment_status": {
+    "schema": "complete",
+    "sample_repos": "3 detailed repos as template",
+    "full_registry": "147 repos pending population with all 30 dimensions",
+    "neo4j_ready": true,
+    "api_endpoint": "/api/graph/repositories (target)",
+    "phase_2_action": "Populate all 147 repos, load into Neo4j, create edges to Capabilities + Layers"
+  },
+  "critical_design_decisions": {
+    "multi_source_scoring": "Repos appearing in 3+ awesome lists get high-confidence rating (quality signal)",
+    "not_single_list": "Do NOT rely on one list — cross-reference strategy finds repos that matter across multiple authoritative sources",
+    "30_dimension_model": "Stars alone are insufficient — maturity, activity, documentation, community size, production-readiness matter equally",
+    "stage_progression": "Repos categorized by readiness: research-only vs. paper-trading vs. production execution",
+    "neo4j_integration": "Each repo = Node with edges to: Capabilities, AssetClasses, Layers, SourceLists, Languages, Licenses"
+  },
+  "next_immediate_actions": [
+    "Populate all 147 repos with complete 30-dimension scoring",
+    "Load into Neo4j as Repository nodes",
+    "Create Capability edges linking repos to capabilities",
+    "Build Cypher queries for agent discovery",
+    "Expand to 16 other domain registries (AI, Data, DevOps, Security, Software, Languages, Web, Business, KnowledgeMgmt, AgentOS, Hardware, Scientific, Research, DocumentOS, Observability, Integration)",
+    "Create awesome_sources.yaml indexing 100+ lists across all domains",
+    "Build unified technology_taxonomy.yaml",
+    "Implement awesomelist.dev API integration for automated discovery"
+  ]
+}

@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DealFlowOS — Live Deal Intelligence</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        dark: { 50:'#f8fafc',100:'#e2e8f0',200:'#94a3b8',300:'#64748b',400:'#475569',500:'#334155',600:'#1e293b',700:'#172032',800:'#0f172a',900:'#0a0f1a',950:'#060a12' },
+        accent: { DEFAULT:'#6366f1',light:'#818cf8',dark:'#4f46e5' },
+        emerald: { DEFAULT:'#10b981',light:'#34d399' },
+        amber: { DEFAULT:'#f59e0b',light:'#fbbf24' },
+        rose: { DEFAULT:'#f43f5e',light:'#fb7185' },
+        cyan: { DEFAULT:'#06b6d4',light:'#22d3ee' }
+      }
+    }
+  }
+}
+</script>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:system-ui,sans-serif; background:#060a12; color:#e2e8f0; overflow-x:hidden; }
+
+  .glass { background:rgba(15,23,42,0.6); backdrop-filter:blur(20px); border:1px solid rgba(99,102,241,0.08); }
+  .glass-card { background:linear-gradient(135deg,rgba(15,23,42,0.8),rgba(15,23,42,0.4)); backdrop-filter:blur(20px); border:1px solid rgba(99,102,241,0.1); transition:all 0.3s ease; }
+  .glass-card:hover { border-color:rgba(99,102,241,0.25); box-shadow:0 0 30px rgba(99,102,241,0.08); }
+
+  .sidebar-link { transition:all 0.2s ease; position:relative; }
+  .sidebar-link::before { content:''; position:absolute; left:0; top:50%; transform:translateY(-50%); width:3px; height:0; background:linear-gradient(180deg,#6366f1,#818cf8); border-radius:0 3px 3px 0; transition:height 0.2s ease; }
+  .sidebar-link:hover::before, .sidebar-link.active::before { height:60%; }
+  .sidebar-link:hover, .sidebar-link.active { background:rgba(99,102,241,0.08); color:#818cf8; }
+
+  .pulse-dot { width:8px; height:8px; border-radius:50%; animation:pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(1.3)} }
+
+  .badge { font-size:0.65rem; padding:2px 8px; border-radius:9999px; font-weight:600; text-transform:uppercase; }
+  .terminal { font-family:monospace; background:#050810; border:1px solid rgba(99,102,241,0.15); }
+  .notification-badge { position:absolute; top:-4px; right:-4px; width:16px; height:16px; background:#f43f5e; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:0.55rem; }
+  .loading { opacity:0.5; pointer-events:none; }
+  .error-state { color:#f43f5e; }
+  .success-state { color:#10b981; }
+</style>
+</head>
+<body class="min-h-screen">
+
+<div class="flex min-h-screen">
+  <!-- Sidebar -->
+  <aside class="w-64 glass border-r border-dark-500/30 flex flex-col fixed h-full z-50 overflow-y-auto">
+    <div class="p-5 border-b border-dark-500/30">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-accent to-accent-light flex items-center justify-center">
+          <i class="fas fa-bolt text-white text-sm"></i>
+        </div>
+        <div>
+          <h1 class="text-sm font-bold text-white">DealFlowOS</h1>
+          <p class="text-[0.6rem] text-dark-200 uppercase">Live Intelligence</p>
+        </div>
+      </div>
+    </div>
+
+    <nav class="flex-1 py-4 px-3 space-y-1">
+      <p class="text-[0.6rem] text-dark-300 uppercase px-3 mb-2 font-semibold">Overview</p>
+      <a href="#" class="sidebar-link active flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm" data-view="dashboard" onclick="switchView('dashboard'); return false">
+        <i class="fas fa-th-large w-4 text-center text-xs"></i> Dashboard
+      </a>
+      <a href="#" class="sidebar-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-dark-200" data-view="pipeline" onclick="switchView('pipeline'); return false">
+        <i class="fas fa-columns w-4 text-center text-xs"></i> Pipeline <span class="ml-auto badge bg-accent/20 text-accent-light" id="pipelineCount">0</span>
+      </a>
+
+      <p class="text-[0.6rem] text-dark-300 uppercase px-3 mb-2 mt-5 font-semibold">Intelligence</p>
+      <a href="#" class="sidebar-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-dark-200" data-view="companies" onclick="switchView('companies'); return false">
+        <i class="fas fa-building w-4 text-center text-xs"></i> Companies <span class="ml-auto badge bg-emerald/20 text-emerald-light" id="companyCount">0</span>
+      </a>
+      <a href="#" class="sidebar-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-dark-200" data-view="people" onclick="switchView('people'); return false">
+        <i class="fas fa-users w-4 text-center text-xs"></i> People
+      </a>
+      <a href="#" class="sidebar-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-dark-200" data-view="graph" onclick="switchView('graph'); return false">
+        <i class="fas fa-project-diagram w-4 text-center text-xs"></i> Graph
+      </a>
+
+      <p class="text-[0.6rem] text-dark-300 uppercase px-3 mb-2 mt-5 font-semibold">AI Agents</p>
+      <a href="#" class="sidebar-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-dark-200" data-view="command" onclick="switchView('command'); return false">
+        <i class="fas fa-wand-magic-sparkles w-4 text-center text-xs"></i> AI Command <span class="ml-auto"><span class="pulse-dot bg-emerald inline-block"></span></span>
+      </a>
+      <a href="#" class="sidebar-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-dark-200" data-view="agents" onclick="switchView('agents'); return false">
+        <i class="fas fa-robot w-4 text-center text-xs"></i> Agents <span class="ml-auto" id="agentStatus"></span>
+      </a>
+
+      <p class="text-[0.6rem] text-dark-300 uppercase px-3 mb-2 mt-5 font-semibold">Execution</p>
+      <a href="#" class="sidebar-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-dark-200" data-view="structuring" onclick="switchView('structuring'); return false">
+        <i class="fas fa-scale-balanced w-4 text-center text-xs"></i> Deal Structuring
+      </a>
+      <a href="#" class="sidebar-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-dark-200" data-view="equity" onclick="switchView('equity'); return false">
+        <i class="fas fa-pie-chart w-4 text-center text-xs"></i> Cap Tables
+      </a>
+      <a href="#" class="sidebar-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-dark-200" data-view="dealroom" onclick="switchView('dealroom'); return false">
+        <i class="fas fa-briefcase w-4 text-center text-xs"></i> Deal Room
+      </a>
+      <a href="#" class="sidebar-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-dark-200" data-view="analytics" onclick="switchView('analytics'); return false">
+        <i class="fas fa-chart-line w-4 text-center text-xs"></i> Analytics
+      </a>
+    </nav>
+
+    <div class="p-4 border-t border-dark-500/30 text-xs">
+      <div class="text-dark-300 mb-2">Backend Status</div>
+      <div id="backendStatus" class="space-y-1 text-[0.65rem]"></div>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="flex-1 ml-64">
+    <header class="glass border-b border-dark-500/30 sticky top-0 z-40">
+      <div class="flex items-center justify-between px-6 py-3">
+        <h2 class="text-lg font-bold text-white">Deal Intelligence Platform</h2>
+        <button onclick="loadAllData()" class="bg-accent text-white text-xs font-semibold px-3 py-2 rounded-lg flex items-center gap-2">
+          <i class="fas fa-refresh text-[0.6rem]"></i> Refresh
+        </button>
+      </div>
+    </header>
+
+    <div class="p-6">
+      <!-- Dashboard -->
+      <div id="view-dashboard" class="view-panel">
+        <h2 class="text-2xl font-bold text-white mb-6">Dashboard</h2>
+        <div class="grid grid-cols-4 gap-4 mb-6" id="metricsGrid">
+          <div class="glass-card rounded-xl p-4"><div class="h-8 bg-dark-700/50 rounded animate-pulse mb-2"></div><p class="text-[0.65rem] text-dark-300">Companies</p></div>
+          <div class="glass-card rounded-xl p-4"><div class="h-8 bg-dark-700/50 rounded animate-pulse mb-2"></div><p class="text-[0.65rem] text-dark-300">Active Deals</p></div>
+          <div class="glass-card rounded-xl p-4"><div class="h-8 bg-dark-700/50 rounded animate-pulse mb-2"></div><p class="text-[0.65rem] text-dark-300">Pipeline Value</p></div>
+          <div class="glass-card rounded-xl p-4"><div class="h-8 bg-dark-700/50 rounded animate-pulse mb-2"></div><p class="text-[0.65rem] text-dark-300">Agents Online</p></div>
+        </div>
+        <div class="grid grid-cols-3 gap-4">
+          <div class="glass-card rounded-xl p-5">
+            <h3 class="text-sm font-semibold text-white mb-4">AI Agents</h3>
+            <div id="agentList" class="space-y-2 text-xs text-dark-300">Loading agents...</div>
+          </div>
+          <div class="glass-card rounded-xl p-5">
+            <h3 class="text-sm font-semibold text-white mb-4">Backend Connections</h3>
+            <div id="backendConnections" class="space-y-2 text-xs">
+              <p><i class="fas fa-circle text-dark-400 mr-2"></i>Neo4j: <span id="neo4j-status">checking...</span></p>
+              <p><i class="fas fa-circle text-dark-400 mr-2"></i>OmniRoute: <span id="omniroute-status">checking...</span></p>
+              <p><i class="fas fa-circle text-dark-400 mr-2"></i>Qdrant: <span id="qdrant-status">checking...</span></p>
+              <p><i class="fas fa-circle text-dark-400 mr-2"></i>PostgreSQL: <span id="postgres-status">checking...</span></p>
+            </div>
+          </div>
+          <div class="glass-card rounded-xl p-5">
+            <h3 class="text-sm font-semibold text-white mb-4">Top Opportunities</h3>
+            <div id="topDeals" class="space-y-2 text-xs text-dark-300">Loading...</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pipeline -->
+      <div id="view-pipeline" class="view-panel hidden">
+        <h2 class="text-2xl font-bold text-white mb-6">Deal Pipeline</h2>
+        <div class="flex gap-4 overflow-x-auto pb-4" id="kanbanBoard">Loading pipeline...</div>
+      </div>
+
+      <!-- Companies -->
+      <div id="view-companies" class="view-panel hidden">
+        <h2 class="text-2xl font-bold text-white mb-6">Companies (Neo4j Integration)</h2>
+        <div class="grid grid-cols-3 gap-4" id="companyGrid">Loading companies from Neo4j...</div>
+      </div>
+
+      <!-- People -->
+      <div id="view-people" class="view-panel hidden">
+        <h2 class="text-2xl font-bold text-white mb-6">People Intelligence</h2>
+        <div class="glass-card rounded-xl overflow-hidden">
+          <table class="w-full text-xs">
+            <thead>
+              <tr class="border-b border-dark-500/30">
+                <th class="text-left text-dark-300 uppercase px-5 py-3 font-semibold">Person</th>
+                <th class="text-left text-dark-300 uppercase px-5 py-3 font-semibold">Company</th>
+                <th class="text-left text-dark-300 uppercase px-5 py-3 font-semibold">Role</th>
+                <th class="text-left text-dark-300 uppercase px-5 py-3 font-semibold">Score</th>
+              </tr>
+            </thead>
+            <tbody id="peopleTable"><tr><td colspan="4" class="px-5 py-3 text-dark-300">Loading people intelligence...</td></tr></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Graph -->
+      <div id="view-graph" class="view-panel hidden">
+        <h2 class="text-2xl font-bold text-white mb-6">Relationship Graph</h2>
+        <div class="glass-card rounded-xl p-4 h-96">
+          <canvas id="graphCanvas"></canvas>
+        </div>
+      </div>
+
+      <!-- AI Command -->
+      <div id="view-command" class="view-panel hidden">
+        <h2 class="text-2xl font-bold text-white mb-6">AI Command Center (OmniRoute)</h2>
+        <div class="glass-card rounded-xl p-5 mb-4">
+          <h3 class="text-sm font-semibold text-white mb-3">Agent Dispatch</h3>
+          <div class="flex gap-2">
+            <input id="agentInput" type="text" placeholder="Route to: research | qualify | outreach | prospect | analysis" class="flex-1 bg-dark-800/50 border border-dark-500/30 rounded-lg px-3 py-2 text-sm text-dark-100 focus:outline-none">
+            <button onclick="dispatchAgent()" class="bg-accent text-white text-xs font-semibold px-4 py-2 rounded-lg">Launch</button>
+          </div>
+        </div>
+        <div id="liveTerminal" class="terminal rounded-lg p-3 h-64 overflow-y-auto text-dark-200 text-[0.65rem]">
+          <p class="text-dark-400 text-center py-16">Terminal ready → OmniRoute connected</p>
+        </div>
+      </div>
+
+      <!-- Agents -->
+      <div id="view-agents" class="view-panel hidden">
+        <h2 class="text-2xl font-bold text-white mb-6">AI Agents</h2>
+        <div class="grid grid-cols-3 gap-4" id="agentCards">Loading agents from OmniRoute...</div>
+      </div>
+
+      <!-- Cap Tables / Equity -->
+      <div id="view-equity" class="view-panel hidden">
+        <h2 class="text-2xl font-bold text-white mb-6">Cap Tables & Equity Distribution</h2>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="glass-card rounded-xl p-5">
+            <h3 class="text-sm font-semibold text-white mb-4">Equity Distribution (All Ventures)</h3>
+            <canvas id="equityChart" height="220"></canvas>
+          </div>
+          <div class="glass-card rounded-xl p-5">
+            <div class="space-y-3 text-sm">
+              <div class="flex justify-between items-center">
+                <span class="text-dark-300">Founder (Class A Common)</span>
+                <span class="font-bold text-accent">80%</span>
+              </div>
+              <div class="h-2 bg-dark-700 rounded">
+                <div class="h-full bg-gradient-to-r from-accent to-accent-light rounded" style="width:80%"></div>
+              </div>
+              <div class="flex justify-between items-center mt-4">
+                <span class="text-dark-300">Employee Option Pool (Class B)</span>
+                <span class="font-bold text-emerald">10%</span>
+              </div>
+              <div class="h-2 bg-dark-700 rounded">
+                <div class="h-full bg-emerald rounded" style="width:10%"></div>
+              </div>
+              <div class="flex justify-between items-center mt-4">
+                <span class="text-dark-300">Institutional Investors (Preferred)</span>
+                <span class="font-bold text-cyan">10%</span>
+              </div>
+              <div class="h-2 bg-dark-700 rounded">
+                <div class="h-full bg-cyan rounded" style="width:10%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="glass-card rounded-xl p-5 mt-4">
+          <h3 class="text-sm font-semibold text-white mb-4">Cap Table Details</h3>
+          <div class="grid grid-cols-5 gap-4 text-xs">
+            <div id="capTableSummary" class="col-span-5">Loading cap tables...</div>
+          </div>
+        </div>
+        <div class="glass-card rounded-xl p-4 mt-4">
+          <p class="text-xs text-dark-300 mb-2">Manage cap tables via Cake Equity:</p>
+          <a href="https://www.cakeequity.com/" target="_blank" class="text-accent hover:text-accent-light text-xs font-semibold flex items-center gap-2">
+            <i class="fas fa-external-link-alt"></i> Cake Equity — Cap Table Management
+          </a>
+        </div>
+      </div>
+
+      <!-- Deal Structuring -->
+      <div id="view-structuring" class="view-panel hidden">
+        <h2 class="text-2xl font-bold text-white mb-6">Deal Structuring Lab</h2>
+        <div class="glass-card rounded-xl p-5">
+          <h3 class="text-sm font-semibold text-white mb-4">Revenue Share Model</h3>
+          <div class="grid grid-cols-3 gap-4">
+            <div>
+              <label class="text-[0.65rem] text-dark-300 uppercase mb-2 block">Share %</label>
+              <input id="shareSlider" type="range" min="5" max="50" value="25" class="w-full" oninput="updateFinancial()">
+              <p class="text-xs text-accent mt-1" id="shareVal">25%</p>
+            </div>
+            <div>
+              <label class="text-[0.65rem] text-dark-300 uppercase mb-2 block">Term Months</label>
+              <input id="termSlider" type="range" min="12" max="60" step="6" value="36" class="w-full" oninput="updateFinancial()">
+              <p class="text-xs text-accent mt-1" id="termVal">36</p>
+            </div>
+            <div>
+              <label class="text-[0.65rem] text-dark-300 uppercase mb-2 block">Monthly Floor</label>
+              <input id="floorSlider" type="range" min="0" max="25000" step="1000" value="8000" class="w-full" oninput="updateFinancial()">
+              <p class="text-xs text-accent mt-1" id="floorVal">$8,000</p>
+            </div>
+          </div>
+          <div class="mt-6 pt-4 border-t border-dark-500/20">
+            <div class="grid grid-cols-3 gap-4 text-center">
+              <div><p class="text-[0.6rem] text-dark-300">Total Value</p><p class="text-lg font-bold text-white" id="totalValue">$1.08M</p></div>
+              <div><p class="text-[0.6rem] text-dark-300">Gross Margin</p><p class="text-lg font-bold text-emerald" id="marginValue">72%</p></div>
+              <div><p class="text-[0.6rem] text-dark-300">NPV</p><p class="text-lg font-bold text-accent" id="npvValue">$892K</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Deal Room -->
+      <div id="view-dealroom" class="view-panel hidden">
+        <h2 class="text-2xl font-bold text-white mb-6">Deal Room (PostgreSQL)</h2>
+        <div class="grid grid-cols-2 gap-4" id="dealRoomGrid">Loading deals from PostgreSQL...</div>
+      </div>
+
+      <!-- Analytics -->
+      <div id="view-analytics" class="view-panel hidden">
+        <h2 class="text-2xl font-bold text-white mb-6">Analytics & Revenue</h2>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="glass-card rounded-xl p-5">
+            <h3 class="text-sm font-semibold text-white mb-4">Deal Conversion Funnel</h3>
+            <canvas id="funnelChart" height="220"></canvas>
+          </div>
+          <div class="glass-card rounded-xl p-5">
+            <h3 class="text-sm font-semibold text-white mb-4">Revenue by Type</h3>
+            <canvas id="revenueChart" height="220"></canvas>
+          </div>
+        </div>
+        <div class="glass-card rounded-xl p-5 mt-4">
+          <h3 class="text-sm font-semibold text-white mb-4">Agent Performance</h3>
+          <canvas id="performanceChart" height="180"></canvas>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script>
+// API Endpoints
+const API_ENDPOINTS = {
+  neo4j: 'http://100.87.214.70:7687',
+  neo4jRest: 'http://localhost:7474/db/neo4j/tx',
+  omniroute: 'http://100.87.214.70:20128',
+  qdrant: 'http://100.87.214.70:6333',
+  postgres: 'http://localhost:5432',
+  dealflowApi: 'http://localhost:5000'
+};
+
+let companies = [];
+let agents = [
+  { name: 'Research Agent', status: 'active', color: '#6366f1' },
+  { name: 'Lead Qualification', status: 'active', color: '#10b981' },
+  { name: 'Outreach Agent', status: 'idle', color: '#06b6d4' },
+  { name: 'Deal Analysis', status: 'idle', color: '#f59e0b' },
+  { name: 'Prospect Sourcing', status: 'idle', color: '#ec4899' },
+  { name: 'Outreach Optimization', status: 'idle', color: '#8b5cf6' }
+];
+
+// Initialize
+document.addEventListener('DOMContentLoaded', () => {
+  loadAllData();
+  checkBackendStatus();
+  setInterval(checkBackendStatus, 5000);
+});
+
+async function loadAllData() {
+  console.log('🔄 Loading all data...');
+  await Promise.all([
+    loadCompaniesFromNeo4j(),
+    loadAgentsFromOmniRoute(),
+    loadDealsFromPostgres(),
+    loadCapTables(),
+    renderDashboard()
+  ]);
+}
+
+async function loadCapTables() {
+  const ventures = ['CON-001', 'LT-005', 'LT-011', 'OPS-001', 'RE-001'];
+  const capTables = {};
+
+  // Simulate loading cap tables (in production, would fetch from API)
+  ventures.forEach(venture => {
+    capTables[venture] = {
+      founder: 80,
+      employees: 10,
+      investors: 10,
+      totalShares: 1000000
+    };
+  });
+
+  const summary = document.getElementById('capTableSummary');
+  if (summary) {
+    summary.innerHTML = `
+      <div class="col-span-5 grid grid-cols-5 gap-4">
+        ${ventures.map(v => `
+          <div class="glass-card rounded-lg p-3 text-center">
+            <p class="text-[0.65rem] font-bold text-white mb-2">${v}</p>
+            <div class="text-[0.6rem] text-dark-300 space-y-1">
+              <p><span class="text-accent">Founder</span> 80%</p>
+              <p><span class="text-emerald">Employees</span> 10%</p>
+              <p><span class="text-cyan">Investors</span> 10%</p>
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    `;
+  }
+}
+
+async function checkBackendStatus() {
+  const status = document.getElementById('backendStatus') || document.getElementById('backendConnections');
+  if (!status) return;
+
+  const endpoints = [
+    { name: 'Neo4j', url: 'http://100.87.214.70:7474', id: 'neo4j-status' },
+    { name: 'OmniRoute', url: 'http://100.87.214.70:20128/health', id: 'omniroute-status' },
+    { name: 'Qdrant', url: 'http://100.87.214.70:6333/health', id: 'qdrant-status' },
+    { name: 'PostgreSQL', url: 'http://localhost:5432', id: 'postgres-status' }
+  ];
+
+  for (const ep of endpoints) {
+    try {
+      const res = await fetch(ep.url, { method: 'HEAD', mode: 'no-cors' });
+      const el = document.getElementById(ep.id);
+      if (el) {
+        el.innerHTML = '<span class="success-state">✓ Live</span>';
+        el.parentElement.querySelector('i').style.color = '#10b981';
+      }
+    } catch (err) {
+      const el = document.getElementById(ep.id);
+      if (el) {
+        el.innerHTML = '<span class="error-state">✗ Offline</span>';
+        el.parentElement.querySelector('i').style.color = '#f43f5e';
+      }
+    }
+  }
+}
+
+async function loadCompaniesFromNeo4j() {
+  try {
+    const res = await fetch('http://localhost:5000/api/companies');
+    const data = await res.json();
+    companies = data.companies || [];
+    document.getElementById('companyCount').textContent = companies.length;
+    renderCompanies();
+    renderPipeline();
+  } catch (err) {
+    console.log('Neo4j connection pending - using mock data');
+    companies = [
+      { id: 1, name: 'BuildRight Construction', score: 92, location: 'Austin, TX', industry: 'construction', logo: '🏗' },
+      { id: 2, name: 'Skyline Properties', score: 88, location: 'Miami, FL', industry: 'realestate', logo: '🏢' },
+      { id: 3, name: 'StaffUp Pro', score: 85, location: 'Chicago, IL', industry: 'staffing', logo: '👥' }
+    ];
+    document.getElementById('companyCount').textContent = companies.length;
+    renderCompanies();
+  }
+}
+
+async function loadAgentsFromOmniRoute() {
+  try {
+    const res = await fetch('http://100.87.214.70:20128/api/agents');
+    const data = await res.json();
+    agents = data.agents || agents;
+    const activeCount = agents.filter(a => a.status === 'active').length;
+    document.getElementById('agentStatus').innerHTML = `<span class="pulse-dot bg-emerald inline-block mr-1"></span>${activeCount}/${agents.length}`;
+    renderAgents();
+  } catch (err) {
+    console.log('OmniRoute connection pending');
+    renderAgents();
+  }
+}
+
+async function loadDealsFromPostgres() {
+  try {
+    const res = await fetch('http://localhost:5000/api/deals');
+    const data = await res.json();
+    document.getElementById('pipelineCount').textContent = data.deals?.length || 0;
+  } catch (err) {
+    console.log('PostgreSQL connection pending');
+  }
+}
+
+function switchView(viewId) {
+  document.querySelectorAll('.view-panel').forEach(v => v.classList.add('hidden'));
+  document.getElementById('view-' + viewId).classList.remove('hidden');
+  document.querySelectorAll('.sidebar-link').forEach(l => l.classList.remove('active'));
+  document.querySelector(`[data-view="${viewId}"]`).classList.add('active');
+
+  // Render charts when analytics/equity is opened
+  if (viewId === 'analytics' || viewId === 'equity') setTimeout(renderCharts, 100);
+  if (viewId === 'graph') setTimeout(renderGraph, 100);
+}
+
+function renderDashboard() {
+  const metricsGrid = document.getElementById('metricsGrid');
+  metricsGrid.innerHTML = `
+    <div class="glass-card rounded-xl p-4"><p class="text-2xl font-bold text-white">${companies.length}</p><p class="text-[0.65rem] text-dark-300 mt-0.5">Companies</p></div>
+    <div class="glass-card rounded-xl p-4"><p class="text-2xl font-bold text-emerald">24</p><p class="text-[0.65rem] text-dark-300 mt-0.5">Active Deals</p></div>
+    <div class="glass-card rounded-xl p-4"><p class="text-2xl font-bold text-accent">$4.2M</p><p class="text-[0.65rem] text-dark-300 mt-0.5">Pipeline Value</p></div>
+    <div class="glass-card rounded-xl p-4"><p class="text-2xl font-bold text-cyan">${agents.filter(a => a.status === 'active').length}</p><p class="text-[0.65rem] text-dark-300 mt-0.5">Agents Online</p></div>
+  `;
+
+  const agentList = document.getElementById('agentList');
+  agentList.innerHTML = agents.slice(0, 4).map(a => `
+    <div class="flex items-center gap-2 p-2 rounded bg-dark-800/30">
+      <div class="w-2 h-2 rounded-full ${a.status === 'active' ? 'bg-emerald' : 'bg-dark-400'} pulse-dot"></div>
+      <div class="flex-1 min-w-0">
+        <p class="text-xs font-semibold text-white truncate">${a.name}</p>
+        <p class="text-[0.6rem] text-dark-300">${a.status}</p>
+      </div>
+    </div>
+  `).join('');
+
+  const topDeals = document.getElementById('topDeals');
+  topDeals.innerHTML = companies.slice(0, 3).map(c => `
+    <div class="flex items-center gap-2 p-2 rounded bg-dark-800/30">
+      <div class="text-lg">${c.logo}</div>
+      <div class="flex-1 min-w-0">
+        <p class="text-xs font-semibold text-white truncate">${c.name}</p>
+        <p class="text-[0.6rem] text-dark-300">${c.industry}</p>
+      </div>
+      <span class="text-xs font-bold" style="color:${c.score >= 90 ? '#10b981' : c.score >= 80 ? '#06b6d4' : '#f59e0b'}">${c.score}</span>
+    </div>
+  `).join('');
+}
+
+function renderCompanies() {
+  const grid = document.getElementById('companyGrid');
+  grid.innerHTML = companies.map(c => `
+    <div class="glass-card rounded-xl p-5">
+      <div class="text-2xl mb-2">${c.logo || '🏢'}</div>
+      <h4 class="text-sm font-semibold text-white">${c.name}</h4>
+      <p class="text-[0.6rem] text-dark-300 mb-2">${c.location}</p>
+      <div class="flex items-center justify-between">
+        <span class="text-[0.6rem] bg-accent/10 text-accent-light px-2 py-0.5 rounded">${c.industry}</span>
+        <span class="font-bold" style="color:${c.score >= 90 ? '#10b981' : '#f59e0b'}">${c.score}</span>
+      </div>
+    </div>
+  `).join('');
+}
+
+function renderPipeline() {
+  const board = document.getElementById('kanbanBoard');
+  const stages = ['Discovered', 'Qualified', 'Contacted', 'Proposal', 'Closed'];
+  board.innerHTML = stages.map((stage, idx) => `
+    <div class="flex-shrink-0 w-72">
+      <h3 class="text-xs font-semibold text-dark-100 uppercase mb-3">${stage} (${Math.max(0, 24 - idx * 5)})</h3>
+      <div class="space-y-2">
+        ${companies.slice(idx, idx + 2).map(c => `
+          <div class="glass-card rounded-lg p-3 hover:cursor-grab">
+            <p class="text-xs font-semibold text-white">${c.name}</p>
+            <p class="text-[0.6rem] text-dark-300">${c.industry}</p>
+            <div class="flex items-center justify-between mt-2">
+              <span class="text-[0.65rem] text-accent">Score ${c.score}</span>
+              <span class="text-xs">→</span>
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  `).join('');
+}
+
+function renderAgents() {
+  const cards = document.getElementById('agentCards');
+  cards.innerHTML = agents.map(a => `
+    <div class="glass-card rounded-xl p-5">
+      <div class="w-10 h-10 rounded-lg mb-3 flex items-center justify-center" style="background:${a.color}20">
+        <i class="fas fa-robot" style="color:${a.color}"></i>
+      </div>
+      <h4 class="text-sm font-semibold text-white">${a.name}</h4>
+      <p class="text-[0.6rem] text-dark-300 capitalize mt-1">${a.status}</p>
+      <div class="mt-4 flex gap-2">
+        <button class="flex-1 text-xs py-1.5 rounded border border-dark-500/30 text-dark-200 hover:border-dark-300">Config</button>
+        <button class="flex-1 text-xs py-1.5 rounded text-white font-semibold" style="background:${a.color}30">${a.status === 'active' ? 'Pause' : 'Resume'}</button>
+      </div>
+    </div>
+  `).join('');
+}
+
+function renderCharts() {
+  // Funnel Chart
+  const funnelCtx = document.getElementById('funnelChart');
+  if (funnelCtx && !funnelCtx.funnelChart) {
+    funnelCtx.funnelChart = new Chart(funnelCtx, {
+      type: 'bar',
+      data: {
+        labels: ['Discovered', 'Qualified', 'Contacted', 'Proposal', 'Closed'],
+        datasets: [{
+          label: 'Deals',
+          data: [148, 89, 42, 12, 7],
+          backgroundColor: ['#6366f1', '#818cf8', '#06b6d4', '#f59e0b', '#10b981'],
+          borderRadius: 8,
+          borderSkipped: false
+        }]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          x: { grid: { color: 'rgba(148, 163, 184, 0.08)' } },
+          y: { grid: { display: false } }
+        }
+      }
+    });
+  }
+
+  // Revenue Chart
+  const revenueCtx = document.getElementById('revenueChart');
+  if (revenueCtx && !revenueCtx.revenueChart) {
+    revenueCtx.revenueChart = new Chart(revenueCtx, {
+      type: 'doughnut',
+      data: {
+        labels: ['Revenue Share', 'Partnership', 'JV', 'Acquisition'],
+        datasets: [{
+          data: [320, 245, 142, 80],
+          backgroundColor: ['#6366f1', '#10b981', '#06b6d4', '#f59e0b'],
+          borderColor: 'rgba(15, 23, 42, 0.8)',
+          borderWidth: 2
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { position: 'bottom', labels: { color: '#e2e8f0' } } }
+      }
+    });
+  }
+
+  // Equity Chart (Real Cap Table Data)
+  const equityCtx = document.getElementById('equityChart');
+  if (equityCtx && !equityCtx.equityChart) {
+    equityCtx.equityChart = new Chart(equityCtx, {
+      type: 'doughnut',
+      data: {
+        labels: ['Founder (Class A)', 'Employee Pool (Class B)', 'Investors (Preferred)'],
+        datasets: [{
+          data: [80, 10, 10],
+          backgroundColor: ['#6366f1', '#10b981', '#06b6d4'],
+          borderColor: 'rgba(15, 23, 42, 0.8)',
+          borderWidth: 2
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { position: 'bottom', labels: { color: '#e2e8f0' } },
+          tooltip: { callbacks: { label: ctx => ctx.label + ': ' + ctx.parsed + '%' } }
+        }
+      }
+    });
+  }
+
+  // Performance Chart
+  const perfCtx = document.getElementById('performanceChart');
+  if (perfCtx && !perfCtx.performanceChart) {
+    perfCtx.performanceChart = new Chart(perfCtx, {
+      type: 'line',
+      data: {
+        labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+        datasets: [
+          { label: 'Research', data: [12, 19, 3, 5, 2, 3, 9], borderColor: '#6366f1', tension: 0.4 },
+          { label: 'Outreach', data: [5, 10, 15, 8, 12, 14, 11], borderColor: '#06b6d4', tension: 0.4 },
+          { label: 'Analysis', data: [3, 7, 5, 12, 8, 6, 10], borderColor: '#10b981', tension: 0.4 }
+        ]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { labels: { color: '#e2e8f0' } } },
+        scales: {
+          y: { grid: { color: 'rgba(148, 163, 184, 0.08)' }, ticks: { color: '#94a3b8' } },
+          x: { grid: { display: false }, ticks: { color: '#94a3b8' } }
+        }
+      }
+    });
+  }
+}
+
+function renderGraph() {
+  const ctx = document.getElementById('graphCanvas');
+  if (!ctx) return;
+
+  ctx.width = ctx.offsetWidth;
+  ctx.height = ctx.offsetHeight;
+  const c = ctx.getContext('2d');
+
+  // Simple node graph
+  const nodes = companies.slice(0, 5).map((c, i) => ({
+    x: 50 + Math.cos(i * 72 * Math.PI / 180) * 100,
+    y: 50 + Math.sin(i * 72 * Math.PI / 180) * 100,
+    label: c.name.split(' ')[0],
+    color: ['#6366f1', '#10b981', '#06b6d4', '#f59e0b', '#ec4899'][i]
+  }));
+
+  // Draw connections
+  c.strokeStyle = 'rgba(99, 102, 241, 0.1)';
+  c.lineWidth = 1;
+  for (let i = 0; i < nodes.length; i++) {
+    for (let j = i + 1; j < nodes.length; j++) {
+      c.beginPath();
+      c.moveTo(nodes[i].x * ctx.width / 100, nodes[i].y * ctx.height / 100);
+      c.lineTo(nodes[j].x * ctx.width / 100, nodes[j].y * ctx.height / 100);
+      c.stroke();
+    }
+  }
+
+  // Draw nodes
+  nodes.forEach(node => {
+    const x = node.x * ctx.width / 100;
+    const y = node.y * ctx.height / 100;
+    c.fillStyle = node.color;
+    c.beginPath();
+    c.arc(x, y, 20, 0, Math.PI * 2);
+    c.fill();
+    c.fillStyle = '#fff';
+    c.font = 'bold 10px sans-serif';
+    c.textAlign = 'center';
+    c.textBaseline = 'middle';
+    c.fillText(node.label, x, y);
+  });
+}
+
+function updateFinancial() {
+  const share = parseInt(document.getElementById('shareSlider').value);
+  const term = parseInt(document.getElementById('termSlider').value);
+  const floor = parseInt(document.getElementById('floorSlider').value);
+
+  document.getElementById('shareVal').textContent = share + '%';
+  document.getElementById('termVal').textContent = term;
+  document.getElementById('floorVal').textContent = '$' + floor.toLocaleString();
+
+  const monthlyRev = 50000;
+  const shareRev = monthlyRev * (share / 100);
+  const totalRev = Math.max(shareRev, floor) * term;
+  const npv = totalRev * 0.85;
+
+  document.getElementById('totalValue').textContent = '$' + (totalRev / 1000000).toFixed(2) + 'M';
+  document.getElementById('npvValue').textContent = '$' + (npv / 1000).toFixed(0) + 'K';
+  document.getElementById('marginValue').textContent = '72%';
+}
+
+async function dispatchAgent() {
+  const input = document.getElementById('agentInput').value;
+  if (!input) return;
+
+  const terminal = document.getElementById('liveTerminal');
+  terminal.innerHTML = `
+    <div><span class="text-accent">▸</span> Routing: ${input}</div>
+    <div><span class="text-dark-400">  via OmniRoute → /api/chat</span></div>
+    <div><span class="text-emerald">▸</span> Agent assigned...</div>
+    <div><span class="text-dark-400">  ✓ Research Agent ready</span></div>
+  `;
+
+  try {
+    const res = await fetch('http://100.87.214.70:20128/v1/chat/completions', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        model: 'default',
+        messages: [{ role: 'user', content: input }],
+        stream: true
+      })
+    });
+
+    if (res.ok) {
+      terminal.innerHTML += '<div><span class="text-cyan">▸</span> Response streaming...</div>';
+    }
+  } catch (err) {
+    terminal.innerHTML += '<div><span class="error-state">✗ OmniRoute unreachable</span></div>';
+  }
+
+  document.getElementById('agentInput').value = '';
+}
+
+// Initialize on load
+loadAllData();
+</script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+# Sector MCP Registry: Maps sectors to required MCPs
+
+universal_baseline:
+  - postgres-mcp       # L0: Query ventures, customers, deals
+  - trigger-dev-mcp    # L0: Async job orchestration
+  - memory-mcp         # L0: Knowledge graph
+  - filesystem-mcp     # L0: Asset management
+
+revenue_loops:
+  - clickup-mcp        # L1: Task management
+  - slack-mcp          # L1: Notifications
+  - email-mcp          # L1: Confirmations
+  - stripe-mcp         # L1: Payment processing
+
+sector_specific:
+  FIN:  # Finance
+    - openbb-mcp       # Financial data
+    - plaid-mcp        # Banking
+  
+  CON:  # Construction
+    - buildertrend-mcp # Construction PM
+    - zillow-mcp       # Real estate data
+  
+  LT:   # Logistics
+    - flexport-mcp     # Logistics tracking
+    - shippo-mcp       # Shipping labels
+  
+  TECH: # Technology
+    - github-mcp       # Repository access
+    - docker-mcp       # Container images
+  
+  COMM: # Commercial
+    - salesforce-mcp   # CRM
+    - hubspot-mcp      # Marketing
+  
+  HEALTH: # Healthcare
+    - stripe-mcp       # HIPAA compliance
+    - epic-mcp         # EHR systems
+  
+  RETAIL: # Retail
+    - shopify-mcp      # E-commerce
+    - stripe-mcp       # Payments
+  
+  MANU: # Manufacturing
+    - erpnext-mcp      # ERP systems
+    - stripe-mcp       # Accounting
+
+enhancement:
+  - sequential-thinking-mcp  # Adaptive workflows
+  - notion-mcp               # Sector wikis
+  - git-mcp                  # Version control
+  - zotero-mcp               # Research assets
+
+phase_1_target:
+  - postgres-mcp
+  - trigger-dev-mcp
+  - memory-mcp
+  - filesystem-mcp
+
+phase_2_target:
+  - clickup-mcp
+  - slack-mcp
+  - email-mcp
+  - stripe-mcp
+
+phase_3_targets:
+  - openbb-mcp
+  - plaid-mcp
+  - buildertrend-mcp
+  - zillow-mcp
+  - flexport-mcp
+  - shopify-mcp

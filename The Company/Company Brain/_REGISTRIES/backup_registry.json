@@ -1,0 +1,39 @@
+{
+  "registry_id": "REG-BACKUP-001",
+  "updated_at": "2026-09-05",
+  "backup_rule": "3-2-1 Rule: 3 copies, 2 media types (NVMe + HDD), 1 remote/cold",
+  "jobs": [
+    {
+      "job_id": "BKP-NEO4J-DUMP",
+      "source": "civos_neo4j (/data)",
+      "target": "/Volumes/LaCie/backups/neo4j",
+      "schedule": "0 2 * * * (Daily 2am)",
+      "retention_days": 30,
+      "type": "neo4j-admin database dump"
+    },
+    {
+      "job_id": "BKP-POSTGRES-DUMP",
+      "source": "postgres (/var/lib/postgresql/data)",
+      "target": "/Volumes/LaCie/postgres/backups",
+      "schedule": "0 3 * * * (Daily 3am)",
+      "retention_days": 30,
+      "type": "pg_dumpall gzipped"
+    },
+    {
+      "job_id": "BKP-QDRANT-SNAPSHOT",
+      "source": "civos_qdrant (/storage)",
+      "target": "/Volumes/LaCie/qdrant/snapshots",
+      "schedule": "0 4 * * 0 (Weekly Sunday)",
+      "retention_days": 60,
+      "type": "Qdrant Snapshot API"
+    },
+    {
+      "job_id": "BKP-CROSS-DRIVE-MIRROR",
+      "source": "/Volumes/LaCie/backups",
+      "target": "/Volumes/T7 Shield/cold_archive",
+      "schedule": "0 5 * * 0 (Weekly Sunday)",
+      "retention_days": 90,
+      "type": "Rsync incremental copy"
+    }
+  ]
+}

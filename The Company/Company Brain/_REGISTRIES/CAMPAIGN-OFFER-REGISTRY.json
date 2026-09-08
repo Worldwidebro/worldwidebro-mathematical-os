@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "1.0.0",
+  "offers": [
+    {
+      "id": "OFF-001",
+      "code": "OFR-AUDIT-001",
+      "name": "Local-First AI Infrastructure & Repo Intelligence Audit",
+      "price_usd": 7500,
+      "currency": "USD",
+      "turnaround_hours": 48,
+      "terms": "50% upfront deposit ($3,750), 50% upon executive presentation handoff",
+      "guarantee": "3X ROI Guarantee ($22,500 annualized compute savings identified or 100% refund)",
+      "governing_venture": "VEN-001",
+      "linked_file": "COMMERCIAL/OFFERS/OFFER-001-LOCAL-AI-AUDIT.md",
+      "status": "LIVE"
+    }
+  ]
+}

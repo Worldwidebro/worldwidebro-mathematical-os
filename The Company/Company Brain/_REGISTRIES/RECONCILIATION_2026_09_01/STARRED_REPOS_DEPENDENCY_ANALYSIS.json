@@ -1,0 +1,580 @@
+{
+  "timestamp": "2026-09-01",
+  "total_starred": 903,
+  "total_unique_stars": 31313959,
+  "categories": {
+    "AI/ML & LLMs": {
+      "count": 130,
+      "total_stars": 3960301,
+      "top_repos": [
+        {
+          "name": "FreeDomain",
+          "stars": 197080,
+          "language": "Markdown"
+        },
+        {
+          "name": "claude-code",
+          "stars": 143703,
+          "language": "Python"
+        },
+        {
+          "name": "system-prompts-and-models-of-ai-tools",
+          "stars": 143283,
+          "language": null
+        },
+        {
+          "name": "awesome-llm-apps",
+          "stars": 135638,
+          "language": "Python"
+        },
+        {
+          "name": "ponytail",
+          "stars": 119973,
+          "language": "JavaScript"
+        },
+        {
+          "name": "tailwindcss",
+          "stars": 97420,
+          "language": "TypeScript"
+        },
+        {
+          "name": "claude-mem",
+          "stars": 92911,
+          "language": "JavaScript"
+        },
+        {
+          "name": "vllm",
+          "stars": 90706,
+          "language": "Python"
+        },
+        {
+          "name": "crawl4ai",
+          "stars": 80852,
+          "language": "Python"
+        },
+        {
+          "name": "gpt4all",
+          "stars": 77388,
+          "language": "C++"
+        }
+      ]
+    },
+    "API & WEB FRAMEWORKS": {
+      "count": 15,
+      "total_stars": 833372,
+      "top_repos": [
+        {
+          "name": "public-apis",
+          "stars": 474258,
+          "language": "Python"
+        },
+        {
+          "name": "awesome-mcp-servers",
+          "stars": 93713,
+          "language": null
+        },
+        {
+          "name": "code-server",
+          "stars": 79153,
+          "language": "TypeScript"
+        },
+        {
+          "name": "full-stack-fastapi-template",
+          "stars": 45287,
+          "language": "TypeScript"
+        },
+        {
+          "name": "server",
+          "stars": 36660,
+          "language": "PHP"
+        },
+        {
+          "name": "How-To-Secure-A-Linux-Server",
+          "stars": 31095,
+          "language": null
+        },
+        {
+          "name": "nats-server",
+          "stars": 20649,
+          "language": "Go"
+        },
+        {
+          "name": "rabbitmq-server",
+          "stars": 13830,
+          "language": "JavaScript"
+        },
+        {
+          "name": "fastapi_mcp",
+          "stars": 11995,
+          "language": "Python"
+        },
+        {
+          "name": "node-telegram-bot-api",
+          "stars": 9204,
+          "language": "TypeScript"
+        }
+      ]
+    },
+    "CLI TOOLS": {
+      "count": 19,
+      "total_stars": 608394,
+      "top_repos": [
+        {
+          "name": "the-art-of-command-line",
+          "stars": 162209,
+          "language": null
+        },
+        {
+          "name": "paperclip",
+          "stars": 79833,
+          "language": "TypeScript"
+        },
+        {
+          "name": "hackingtool",
+          "stars": 79261,
+          "language": "Python"
+        },
+        {
+          "name": "docling",
+          "stars": 65862,
+          "language": "Python"
+        },
+        {
+          "name": "CLI-Anything",
+          "stars": 48816,
+          "language": "Python"
+        },
+        {
+          "name": "ToolJet",
+          "stars": 40810,
+          "language": "JavaScript"
+        },
+        {
+          "name": "it-tools",
+          "stars": 40428,
+          "language": "Vue"
+        },
+        {
+          "name": "OfficeCLI",
+          "stars": 29678,
+          "language": "C#"
+        },
+        {
+          "name": "awesome-cli-apps",
+          "stars": 20302,
+          "language": "Shell"
+        },
+        {
+          "name": "mcp-toolbox",
+          "stars": 16293,
+          "language": "Go"
+        }
+      ]
+    },
+    "DATABASES & STORAGE": {
+      "count": 10,
+      "total_stars": 314120,
+      "top_repos": [
+        {
+          "name": "graphify",
+          "stars": 113461,
+          "language": "Python"
+        },
+        {
+          "name": "codegraph",
+          "stars": 69087,
+          "language": "C"
+        },
+        {
+          "name": "langgraph",
+          "stars": 40877,
+          "language": "Python"
+        },
+        {
+          "name": "code-review-graph",
+          "stars": 31073,
+          "language": "Python"
+        },
+        {
+          "name": "graphiti",
+          "stars": 30503,
+          "language": "Python"
+        },
+        {
+          "name": "neo4j",
+          "stars": 17177,
+          "language": "Java"
+        },
+        {
+          "name": "SQLBot",
+          "stars": 6721,
+          "language": "JavaScript"
+        },
+        {
+          "name": "postgres-mcp",
+          "stars": 3245,
+          "language": "Python"
+        },
+        {
+          "name": "omnigraph",
+          "stars": 1087,
+          "language": "Rust"
+        },
+        {
+          "name": "graphql.github.io",
+          "stars": 889,
+          "language": "TypeScript"
+        }
+      ]
+    },
+    "DOCUMENTATION": {
+      "count": 9,
+      "total_stars": 32575,
+      "top_repos": [
+        {
+          "name": "docs",
+          "stars": 16756,
+          "language": "Python"
+        },
+        {
+          "name": "mediawiki",
+          "stars": 5161,
+          "language": "PHP"
+        },
+        {
+          "name": "wikiextractor",
+          "stars": 4001,
+          "language": "Python"
+        },
+        {
+          "name": "Wikipedia",
+          "stars": 3005,
+          "language": "Python"
+        },
+        {
+          "name": "CodeWiki",
+          "stars": 1656,
+          "language": "Python"
+        },
+        {
+          "name": "wikipedia-data-science",
+          "stars": 697,
+          "language": "Jupyter Notebook"
+        },
+        {
+          "name": "wikipedia-mirror",
+          "stars": 551,
+          "language": "PLpgSQL"
+        },
+        {
+          "name": "Wikipedia-Dark",
+          "stars": 491,
+          "language": "CSS"
+        },
+        {
+          "name": "json-wikipedia",
+          "stars": 257,
+          "language": "Java"
+        }
+      ]
+    },
+    "FRAMEWORKS & LIBRARIES": {
+      "count": 7,
+      "total_stars": 122533,
+      "top_repos": [
+        {
+          "name": "qlib",
+          "stars": 48192,
+          "language": "Python"
+        },
+        {
+          "name": "colibri",
+          "stars": 26628,
+          "language": "C"
+        },
+        {
+          "name": "SuperClaude_Framework",
+          "stars": 23857,
+          "language": "Python"
+        },
+        {
+          "name": "agent-framework",
+          "stars": 13278,
+          "language": "Python"
+        },
+        {
+          "name": "vibesdk",
+          "stars": 5343,
+          "language": "TypeScript"
+        },
+        {
+          "name": "go-sdk",
+          "stars": 5049,
+          "language": "Go"
+        },
+        {
+          "name": "toolsdk-mcp-registry",
+          "stars": 186,
+          "language": "TypeScript"
+        }
+      ]
+    },
+    "FRONTEND & UI": {
+      "count": 224,
+      "total_stars": 6961752,
+      "top_repos": [
+        {
+          "name": "openclaw",
+          "stars": 388526,
+          "language": "TypeScript"
+        },
+        {
+          "name": "developer-roadmap",
+          "stars": 366091,
+          "language": "TypeScript"
+        },
+        {
+          "name": "ECC",
+          "stars": 245764,
+          "language": "JavaScript"
+        },
+        {
+          "name": "deepseek-harness",
+          "stars": 208104,
+          "language": "TypeScript"
+        },
+        {
+          "name": "opencode",
+          "stars": 203072,
+          "language": "TypeScript"
+        },
+        {
+          "name": "firecrawl",
+          "stars": 175310,
+          "language": "TypeScript"
+        },
+        {
+          "name": "tech-interview-handbook",
+          "stars": 142369,
+          "language": "TypeScript"
+        },
+        {
+          "name": "gstack",
+          "stars": 130983,
+          "language": "TypeScript"
+        },
+        {
+          "name": "excalidraw",
+          "stars": 130951,
+          "language": "TypeScript"
+        },
+        {
+          "name": "immich",
+          "stars": 113196,
+          "language": "TypeScript"
+        }
+      ]
+    },
+    "INFRASTRUCTURE & DEVOPS": {
+      "count": 7,
+      "total_stars": 143921,
+      "top_repos": [
+        {
+          "name": "lazydocker",
+          "stars": 52695,
+          "language": "Go"
+        },
+        {
+          "name": "terraform",
+          "stars": 49599,
+          "language": "Go"
+        },
+        {
+          "name": "ubicloud",
+          "stars": 12254,
+          "language": "Ruby"
+        },
+        {
+          "name": "aws-devops-zero-to-hero",
+          "stars": 11464,
+          "language": "Python"
+        },
+        {
+          "name": "terraform-provider-aws",
+          "stars": 11048,
+          "language": "Go"
+        },
+        {
+          "name": "opencloud",
+          "stars": 5872,
+          "language": "Go"
+        },
+        {
+          "name": "unlim-cloud",
+          "stars": 989,
+          "language": "HTML"
+        }
+      ]
+    },
+    "OBSERVABILITY & MONITORING": {
+      "count": 3,
+      "total_stars": 227812,
+      "top_repos": [
+        {
+          "name": "worldmonitor",
+          "stars": 85332,
+          "language": "TypeScript"
+        },
+        {
+          "name": "grafana",
+          "stars": 76548,
+          "language": "TypeScript"
+        },
+        {
+          "name": "prometheus",
+          "stars": 65932,
+          "language": "Go"
+        }
+      ]
+    },
+    "ORCHESTRATION & WORKFLOWS": {
+      "count": 28,
+      "total_stars": 1102515,
+      "top_repos": [
+        {
+          "name": "n8n",
+          "stars": 203065,
+          "language": "TypeScript"
+        },
+        {
+          "name": "dify",
+          "stars": 154126,
+          "language": "TypeScript"
+        },
+        {
+          "name": "MoneyPrinterTurbo",
+          "stars": 119438,
+          "language": "Python"
+        },
+        {
+          "name": "MinerU",
+          "stars": 78957,
+          "language": "Python"
+        },
+        {
+          "name": "ruflo",
+          "stars": 70145,
+          "language": "TypeScript"
+        },
+        {
+          "name": "n8n-workflows",
+          "stars": 56381,
+          "language": "Python"
+        },
+        {
+          "name": "archify",
+          "stars": 41909,
+          "language": "JavaScript"
+        },
+        {
+          "name": "openhuman",
+          "stars": 39299,
+          "language": "Rust"
+        },
+        {
+          "name": "sim",
+          "stars": 29509,
+          "language": "TypeScript"
+        },
+        {
+          "name": "kestra",
+          "stars": 27967,
+          "language": "Java"
+        }
+      ]
+    },
+    "OTHER": {
+      "count": 448,
+      "total_stars": 16957263,
+      "top_repos": [
+        {
+          "name": "build-your-own-x",
+          "stars": 544614,
+          "language": "Markdown"
+        },
+        {
+          "name": "awesome",
+          "stars": 502056,
+          "language": null
+        },
+        {
+          "name": "free-programming-books",
+          "stars": 395763,
+          "language": "Python"
+        },
+        {
+          "name": "system-design-primer",
+          "stars": 367491,
+          "language": "Python"
+        },
+        {
+          "name": "coding-interview-university",
+          "stars": 360195,
+          "language": null
+        },
+        {
+          "name": "awesome-selfhosted",
+          "stars": 316567,
+          "language": null
+        },
+        {
+          "name": "project-based-learning",
+          "stars": 281728,
+          "language": "Python"
+        },
+        {
+          "name": "superpowers",
+          "stars": 280446,
+          "language": "Shell"
+        },
+        {
+          "name": "skills",
+          "stars": 243965,
+          "language": "Shell"
+        },
+        {
+          "name": "the-book-of-secret-knowledge",
+          "stars": 241581,
+          "language": null
+        }
+      ]
+    },
+    "SECURITY & AUTH": {
+      "count": 2,
+      "total_stars": 46837,
+      "top_repos": [
+        {
+          "name": "Anthropic-Cybersecurity-Skills",
+          "stars": 31939,
+          "language": "Python"
+        },
+        {
+          "name": "oauth2-proxy",
+          "stars": 14898,
+          "language": "Go"
+        }
+      ]
+    },
+    "TESTING & QA": {
+      "count": 1,
+      "total_stars": 2564,
+      "top_repos": [
+        {
+          "name": "testdisk",
+          "stars": 2564,
+          "language": "C"
+        }
+      ]
+    }
+  }
+}

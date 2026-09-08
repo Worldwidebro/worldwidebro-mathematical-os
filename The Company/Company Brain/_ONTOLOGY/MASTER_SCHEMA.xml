@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Company Brain Master Ontology (XML Schema)
+  Version: 1.0 | Date: 2026-09-01
+
+  Three-layer architecture:
+  - XML (this file): Structure and schema
+  - Wiki (INDEX.md + bases): Human navigation
+  - Databases (PostgreSQL/Neo4j/Qdrant): Operational state
+
+  Validate against: ONTOLOGY.xsd
+  Navigate via: INDEX.md
+  See also: OBJECT_TYPES.yaml, RELATIONSHIPS.yaml
+-->
+
+<company-brain version="1.0">
+
+  <!-- WORLD / EXTERNAL ENVIRONMENT -->
+  <world>
+    <economy/>
+    <sectors>
+      <sector id="logistics"/>
+      <sector id="finance"/>
+      <sector id="construction"/>
+      <sector id="real-estate"/>
+    </sectors>
+    <markets/>
+  </world>
+
+  <!-- OWNERSHIP STRUCTURE -->
+  <ownership>
+    <family/>
+    <family-office/>
+    <holding-companies>
+      <holding-company id="worldwidebro-holdings"/>
+    </holding-companies>
+  </ownership>
+
+  <!-- PORTFOLIO -->
+  <portfolio>
+    <ventures>
+      <venture id="VEN-LT005" sector="logistics"/>
+      <venture id="VEN-CON042" sector="construction"/>
+      <venture id="VEN-FIN087" sector="finance"/>
+    </ventures>
+  </portfolio>
+
+  <!-- ORGANIZATION -->
+  <organization>
+    <business-units>
+      <business-unit id="operations">
+        <departments>
+          <department id="engineering">
+            <teams>
+              <team id="platform"/>
+              <team id="infrastructure"/>
+            </teams>
+          </department>
+        </departments>
+      </business-unit>
+    </business-units>
+  </organization>
+
+  <!-- PRODUCTS -->
+  <products>
+    <product id="vex-hero"/>
+    <product id="venture-portal"/>
+  </products>
+
+  <!-- CAPABILITIES -->
+  <capabilities>
+    <capability id="CAP-000001" name="Entity Resolution"/>
+    <capability id="CAP-000042" name="Lead Generation"/>
+  </capabilities>
+
+  <!-- PEOPLE & AGENTS -->
+  <workforce>
+    <agents>
+      <agent id="AGT-000001" name="Repository Auditor"/>
+      <agent id="AGT-000017" name="Code Reviewer"/>
+    </agents>
+  </workforce>
+
+  <!-- KNOWLEDGE -->
+  <knowledge>
+    <wiki/>
+    <sources/>
+    <memory/>
+  </knowledge>
+
+  <!-- DECISIONS -->
+  <decisions>
+    <decision id="DEC-000001"/>
+  </decisions>
+
+  <!-- OPERATIONS -->
+  <operations>
+    <workflows/>
+    <tasks/>
+    <projects/>
+  </operations>
+
+  <!-- TECHNOLOGY -->
+  <technology>
+    <repositories>
+      <repository id="REP-000001"/>
+    </repositories>
+    <infrastructure>
+      <postgres/>
+      <neo4j/>
+      <qdrant/>
+      <redis/>
+    </infrastructure>
+    <tools>
+      <tool id="TOL-000001" name="Graft"/>
+      <tool id="TOL-000002" name="Fractal"/>
+      <tool id="TOL-000003" name="herdr"/>
+    </tools>
+  </technology>
+
+  <!-- DATA LAYER -->
+  <data>
+    <postgres/>
+    <neo4j/>
+    <qdrant/>
+    <storage/>
+  </data>
+
+  <!-- EXECUTION -->
+  <execution>
+    <agent-runs/>
+    <logs/>
+    <metrics/>
+  </execution>
+
+  <!-- GOVERNANCE -->
+  <governance>
+    <security/>
+    <compliance/>
+    <audit/>
+  </governance>
+
+  <!-- REGISTRIES -->
+  <registries>
+    <venture-registry/>
+    <agent-registry/>
+    <capability-registry/>
+    <repository-registry/>
+    <dependency-registry/>
+  </registries>
+
+</company-brain>

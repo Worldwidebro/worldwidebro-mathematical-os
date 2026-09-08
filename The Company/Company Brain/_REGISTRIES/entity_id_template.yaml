@@ -1,0 +1,42 @@
+# Entity ID Template
+
+# Every entity in Company Brain gets three IDs:
+# 1. machine_id (ULID) - permanent, never changes
+# 2. ref_id (TYPE-000001) - human readable, stable reference
+# 3. slug - URL-safe name identifier
+
+entity_template:
+  machine_id: "01K4X7G2Y5H9J8ABC123XYZ456"  # ULID format
+  ref_id: "CAP-000247"                      # Human reference
+  type: "capability"                        # Entity type
+  slug: "entity-resolution"                 # URL slug
+  name: "Entity Resolution"                 # Display name
+  
+  # External mappings (never lose these)
+  external_ids:
+    github_repo: "worldwidebro/claude-home"
+    github_node_id: "R_kgDOBz..."
+    supabase_id: "xxxxxxxx-xxxx-xxxx"
+    neo4j_id: "12345"
+
+  created_at: "2026-09-01T00:00:00Z"
+  updated_at: "2026-09-01T00:00:00Z"
+  status: "active"
+
+  # Example entries
+  examples:
+    - ref_id: "CAP-000001"
+      name: "Authentication"
+      slug: "authentication"
+
+    - ref_id: "CAP-000002"
+      name: "Payment Processing"
+      slug: "payment-processing"
+
+    - ref_id: "REP-000001"
+      name: "Claude.Home"
+      slug: "claude-home"
+
+    - ref_id: "VEN-000001"
+      name: "Real Estate Venture"
+      slug: "re-venture-001"

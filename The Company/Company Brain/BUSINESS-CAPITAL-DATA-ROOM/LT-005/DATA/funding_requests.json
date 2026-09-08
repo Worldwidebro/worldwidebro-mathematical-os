@@ -1,0 +1,32 @@
+{
+  "total_ask": "$370,000 Total Facility ($250K CDFI Loan + $120K Vehicle Lease)",
+  "loan_amount": "$250,000 7-Year CDFI Term Loan (4.25%) + $120K Lease Line",
+  "grant_ask": "$300,000 NIH NIMHD SBIR Phase I",
+  "uses": [
+    [
+      "2 Ford Transit 250 Reefer Vans",
+      "$120,000",
+      "Commercial lease allocation for 2 dedicated temperature-controlled vans"
+    ],
+    [
+      "Fleet Down Payment & Upfitting",
+      "$70,000",
+      "Thermo King dual-zone reefer units, medical racking, NIST dataloggers"
+    ],
+    [
+      "Clinical Dispatch & Driver Payroll",
+      "$110,000",
+      "90-Day salary runway for lead dispatcher and 4 certified drivers"
+    ],
+    [
+      "HIPAA Security & Insurance Umbrella",
+      "$45,000",
+      "$5M Healthcare logistics liability insurance & cybersecurity audit"
+    ],
+    [
+      "CDFI Closing & Legal Fees",
+      "$25,000",
+      "Loan origination, legal counsel, regulatory healthcare filings"
+    ]
+  ]
+}

@@ -1,0 +1,49 @@
+# Repository Registry
+# Authoritative source for all repositories in Company Brain ecosystem
+# Generated from: CB-RECON-2026-09-01 (Universal Portfolio Reconciliation)
+
+metadata:
+  version: "2.0"
+  created_at: "2026-09-01"
+  reconciliation_id: "CB-RECON-2026-09-01"
+  total_repositories: 893
+  id_prefix: "CB-REPO-"
+  id_range: "CB-REPO-000001 to CB-REPO-000893"
+  source: "GitHub (Worldwidebro account)"
+
+id_mapping_scheme:
+  - id_format: "CB-REPO-NNNNNN"
+  - example: "CB-REPO-000001"
+  - registry_file: "/tmp/CANONICAL_REGISTRY_DRAFT.json"
+
+summary:
+  total: 893
+  active: 777
+  archived: 116
+  with_vercel_deployment: 22
+  linked_to_ventures: 91
+  orphaned: 802
+
+top_languages:
+  - Python: 171
+  - TypeScript: 91
+  - HTML: 39
+  - C: 31
+  - Shell: 8
+
+sources:
+  github_api: "https://api.github.com/Worldwidebro"
+  inventory_file: "_REGISTRIES/RECONCILIATION_2026_09_01/GITHUB_INVENTORY_MASTER.json"
+  canonical_file: "_REGISTRIES/RECONCILIATION_2026_09_01/CANONICAL_REGISTRY_DRAFT.json"
+
+relationships:
+  repo_to_venture: 91
+  repo_to_deployment: 22
+  repo_to_company: 893
+
+notes:
+  - "All 893 repos are owned by Worldwidebro GitHub account"
+  - "802 repos are orphaned (not assigned to ventures)"
+  - "22 repos have Vercel deployments (detected via homepage URL)"
+  - "91 repos are linked to 89 ventures"
+  - "High orphan rate suggests repos are: infrastructure/tools, libraries, experiments, or duplicates"

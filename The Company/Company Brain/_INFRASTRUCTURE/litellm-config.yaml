@@ -1,0 +1,85 @@
+# LiteLLM Configuration
+# Company Brain Model Routing
+# Updated: 2026-09-06
+
+model_list:
+  # Claude Models (via Anthropic API)
+  - model_name: "claude-sonnet"
+    litellm_params:
+      model: "claude-3-5-sonnet-20241022"
+      api_key: $ANTHROPIC_API_KEY
+
+  - model_name: "claude-haiku"
+    litellm_params:
+      model: "claude-3-5-haiku-20241022"
+      api_key: $ANTHROPIC_API_KEY
+
+  # Ollama Models (local inference)
+  - model_name: "qwen-coder"
+    litellm_params:
+      model: "ollama/qwen2.5-coder:14b"
+      api_base: "http://host.docker.internal:11434"
+
+  - model_name: "qwen-embed"
+    litellm_params:
+      model: "ollama/nomic-embed-text"
+      api_base: "http://host.docker.internal:11434"
+
+  - model_name: "qwen-32b"
+    litellm_params:
+      model: "ollama/qwen2.5:32b"
+      api_base: "http://host.docker.internal:11434"
+
+  - model_name: "hermes"
+    litellm_params:
+      model: "ollama/hermes3:latest"
+      api_base: "http://host.docker.internal:11434"
+
+  - model_name: "llama"
+    litellm_params:
+      model: "ollama/llama3.1:8b"
+      api_base: "http://host.docker.internal:11434"
+
+  # exo Models (via distributed inference)
+  - model_name: "qwen-fast"
+    litellm_params:
+      model: "exo/mlx-community/Qwen3.6-35B-A3B-5bit"
+      api_base: "http://100.87.214.70:52415/v1"
+
+  - model_name: "qwen-heavy"
+    litellm_params:
+      model: "exo/mlx-community/Qwen3.6-35B-A3B-5bit"
+      api_base: "http://100.87.214.70:52415/v1"
+
+  # Default fallback
+  - model_name: "default"
+    litellm_params:
+      model: "claude-haiku"
+      api_key: $ANTHROPIC_API_KEY
+
+router_settings:
+  routing_strategy: "usage-based-routing-v2"
+  enable_response_caching: true
+  cache_responses: true
+  redis_host: "host.docker.internal"
+  redis_port: 6379
+
+  # Fallback chains
+  fallback_logic:
+    - model_list: ["qwen-fast", "qwen-heavy", "default"]
+      routing_strategy: "usage-based-routing-v2"
+    - model_list: ["claude-sonnet", "claude-haiku"]
+      routing_strategy: "simple-shuffle"
+
+# Logging
+litellm_settings:
+  drop_params: true
+  set_verbose: false
+
+callbacks:
+  - "langfuse"
+
+# API Authentication
+general_settings:
+  master_key: "sk-litellm-master"
+  database_url: "sqlite:///litellm.db"

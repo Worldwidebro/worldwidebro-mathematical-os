@@ -1,0 +1,24 @@
+{
+  "name": "postgres-mcp",
+  "type": "mcp",
+  "command": "npx",
+  "args": ["-y", "@modelcontextprotocol/server-postgres"],
+  "env": {
+    "DATABASE_URL": "postgresql://localhost/postgres"
+  },
+  "description": "Direct PostgreSQL access for all sector databases",
+  "capabilities": {
+    "resources": true,
+    "tools": true,
+    "prompts": false
+  },
+  "tools": [
+    "query_database",
+    "read_table",
+    "write_record",
+    "list_tables",
+    "get_schema"
+  ],
+  "sectors": ["all"],
+  "priority": 1
+}

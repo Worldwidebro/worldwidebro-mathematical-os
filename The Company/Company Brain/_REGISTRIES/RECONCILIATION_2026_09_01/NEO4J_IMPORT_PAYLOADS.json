@@ -1,0 +1,1423 @@
+{
+  "ventures": [
+    {
+      "id": "FIN-001-GenixBank-Lite",
+      "name": "Genixbank Lite",
+      "sector": "Financial",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "FIN-002-Credit-Repair-Automation",
+      "name": "Credit Repair Automation",
+      "sector": "Financial",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "FIN-003-AI-Boss-Hub-Lite",
+      "name": "Ai Boss Hub Lite",
+      "sector": "Financial",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "FIN-004-GenixBanks-AI-Treasurer",
+      "name": "Genixbanks Ai Treasurer",
+      "sector": "Financial",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "FIN-005-U-Haul-Rental-Affiliate",
+      "name": "U Haul Rental Affiliate",
+      "sector": "Financial",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "FIN-006-Tax-Prep-Filing-Services",
+      "name": "Tax Prep Filing Services",
+      "sector": "Financial",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "FIN-007-Business-Credit-Building",
+      "name": "Business Credit Building",
+      "sector": "Financial",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "FIN-008-Business-Formation-Services",
+      "name": "Business Formation Services",
+      "sector": "Financial",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "FIN-009-Crypto-Tax-Optimizer",
+      "name": "Crypto Tax Optimizer",
+      "sector": "Financial",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "FIN-010-AI-Powered-Garbage-Collection",
+      "name": "Ai Powered Garbage Collection",
+      "sector": "Financial",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "FIN-011-Automated-Bookkeeping",
+      "name": "Automated Bookkeeping",
+      "sector": "Financial",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "FIN-012-Invoice-Factoring-AI",
+      "name": "Invoice Factoring Ai",
+      "sector": "Financial",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "FIN-013-Charity-Donation-AI",
+      "name": "Charity Donation Ai",
+      "sector": "Financial",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "FIN-014-Expense-Tracker-AI",
+      "name": "Expense Tracker Ai",
+      "sector": "Financial",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "FIN-015-Financial-Wellness-Coach",
+      "name": "Financial Wellness Coach",
+      "sector": "Financial",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "FIN-016-Trade-Finance-AI",
+      "name": "Trade Finance Ai",
+      "sector": "Financial",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "FIN-017-Remittance-AI",
+      "name": "Remittance Ai",
+      "sector": "Financial",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "FIN-018-Wealth-Transfer-AI",
+      "name": "Wealth Transfer Ai",
+      "sector": "Financial",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "FIN-019-Payment-Gateway-AI",
+      "name": "Payment Gateway Ai",
+      "sector": "Financial",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "FIN-020-Debt-Consolidation-AI",
+      "name": "Debt Consolidation Ai",
+      "sector": "Financial",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "FIN-021-Tax-Deduction-Finder",
+      "name": "Tax Deduction Finder",
+      "sector": "Financial",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "FIN-022-Budget-Forecasting-AI",
+      "name": "Budget Forecasting Ai",
+      "sector": "Financial",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "FIN-023-Investment-Portfolio-AI",
+      "name": "Investment Portfolio Ai",
+      "sector": "Financial",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "FIN-024-Crowdfunding-AI",
+      "name": "Crowdfunding Ai",
+      "sector": "Financial",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "FIN-025-Escrow-Automation",
+      "name": "Escrow Automation",
+      "sector": "Financial",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "FIN-026-Financial-Compliance-Scanner",
+      "name": "Financial Compliance Scanner",
+      "sector": "Financial",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "FIN-027-Patent-Writer-AI",
+      "name": "Patent Writer Ai",
+      "sector": "Financial",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "FIN-028-Legal-Analyzer-AI",
+      "name": "Legal Analyzer Ai",
+      "sector": "Financial",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "FIN-029-Compliance-Wallet-SaaS",
+      "name": "Compliance Wallet Saas",
+      "sector": "Financial",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "FIN-030-Local-SEO-Ranker-AI",
+      "name": "Local Seo Ranker Ai",
+      "sector": "Financial",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "FIN-031-Investor-Dashboard-Builder",
+      "name": "Investor Dashboard Builder",
+      "sector": "Financial",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "FIN-032-Legal-Toolkit-AI",
+      "name": "Legal Toolkit Ai",
+      "sector": "Financial",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "FIN-033-AI-Tax-Preparation-Service",
+      "name": "Ai Tax Preparation Service",
+      "sector": "Financial",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "FIN-034-Payroll-Automation",
+      "name": "Payroll Automation",
+      "sector": "Financial",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "FIN-035-Insurance-Underwriting-AI",
+      "name": "Insurance Underwriting Ai",
+      "sector": "Financial",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "FIN-036-Arbitrage-Nexus-Platform",
+      "name": "Arbitrage Nexus Platform",
+      "sector": "Financial",
+      "status": "active",
+      "repo_count": 0
+    },
+    {
+      "id": "BW-001-Lash-Extension-Studio",
+      "name": "Lash Extension Studio",
+      "sector": "Beauty Wellness",
+      "status": "validation",
+      "repo_count": 0
+    },
+    {
+      "id": "BW-002-Mobile-Lash-Service",
+      "name": "Mobile Lash Service",
+      "sector": "Beauty Wellness",
+      "status": "development",
+      "repo_count": 0
+    },
+    {
+      "id": "BW-003-Luxury-Lash-Bar",
+      "name": "Luxury Lash Bar",
+      "sector": "Beauty Wellness",
+      "status": "validation",
+      "repo_count": 0
+    },
+    {
+      "id": "BW-004-Lash-Training-Academy",
+      "name": "Lash Training Academy",
+      "sector": "Beauty Wellness",
+      "status": "validation",
+      "repo_count": 0
+    },
+    {
+      "id": "BW-005-Lash-Supply-Company",
+      "name": "Lash Supply Company",
+      "sector": "Beauty Wellness",
+      "status": "development",
+      "repo_count": 0
+    },
+    {
+      "id": "BW-006-Lash-Glue-Brand",
+      "name": "Lash Glue Brand",
+      "sector": "Beauty Wellness",
+      "status": "validation",
+      "repo_count": 0
+    },
+    {
+      "id": "BW-007-Lash-Kits-&-Tools",
+      "name": "Lash Kits & Tools",
+      "sector": "Beauty Wellness",
+      "status": "development",
+      "repo_count": 0
+    },
+    {
+      "id": "BW-008-Private-Label-Lashes",
+      "name": "Private Label Lashes",
+      "sector": "Beauty Wellness",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "BW-009-Franchise-Lash-Salons",
+      "name": "Franchise Lash Salons",
+      "sector": "Beauty Wellness",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "BW-010-Online-Lash-Education",
+      "name": "Online Lash Education",
+      "sector": "Beauty Wellness",
+      "status": "development",
+      "repo_count": 0
+    },
+    {
+      "id": "BW-011-Nail-Salon",
+      "name": "Nail Salon",
+      "sector": "Beauty Wellness",
+      "status": "validation",
+      "repo_count": 0
+    },
+    {
+      "id": "BW-012-Mobile-Nail-Tech",
+      "name": "Mobile Nail Tech",
+      "sector": "Beauty Wellness",
+      "status": "development",
+      "repo_count": 0
+    },
+    {
+      "id": "BW-013-Luxury-Nail-Spa",
+      "name": "Luxury Nail Spa",
+      "sector": "Beauty Wellness",
+      "status": "validation",
+      "repo_count": 0
+    },
+    {
+      "id": "BW-014-Press-On-Nail-Brand",
+      "name": "Press On Nail Brand",
+      "sector": "Beauty Wellness",
+      "status": "development",
+      "repo_count": 0
+    },
+    {
+      "id": "BW-015-Nail-Art-Studio",
+      "name": "Nail Art Studio",
+      "sector": "Beauty Wellness",
+      "status": "validation",
+      "repo_count": 0
+    },
+    {
+      "id": "BW-016-Nail-Polish-Brand",
+      "name": "Nail Polish Brand",
+      "sector": "Beauty Wellness",
+      "status": "development",
+      "repo_count": 0
+    },
+    {
+      "id": "BW-017-Nail-Care-Products",
+      "name": "Nail Care Products",
+      "sector": "Beauty Wellness",
+      "status": "development",
+      "repo_count": 0
+    },
+    {
+      "id": "BW-018-Nail-Booking-Marketplace",
+      "name": "Nail Booking Marketplace",
+      "sector": "Beauty Wellness",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "BW-019-Salon-Management-Software",
+      "name": "Salon Management Software",
+      "sector": "Beauty Wellness",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "BW-020-AI-Nail-Design-Generator",
+      "name": "Ai Nail Design Generator",
+      "sector": "Beauty Wellness",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "BW-021-Hair-Salon",
+      "name": "Hair Salon",
+      "sector": "Beauty Wellness",
+      "status": "validation",
+      "repo_count": 0
+    },
+    {
+      "id": "BW-022-Barbershop",
+      "name": "Barbershop",
+      "sector": "Beauty Wellness",
+      "status": "validation",
+      "repo_count": 0
+    },
+    {
+      "id": "BW-023-Mobile-Hairstyling",
+      "name": "Mobile Hairstyling",
+      "sector": "Beauty Wellness",
+      "status": "development",
+      "repo_count": 0
+    },
+    {
+      "id": "BW-024-Hair-Braiding-Studio",
+      "name": "Hair Braiding Studio",
+      "sector": "Beauty Wellness",
+      "status": "validation",
+      "repo_count": 0
+    },
+    {
+      "id": "BW-025-Wig-Installation-Studio",
+      "name": "Wig Installation Studio",
+      "sector": "Beauty Wellness",
+      "status": "validation",
+      "repo_count": 0
+    },
+    {
+      "id": "BW-026-Hair-Extension-Salon",
+      "name": "Hair Extension Salon",
+      "sector": "Beauty Wellness",
+      "status": "validation",
+      "repo_count": 0
+    },
+    {
+      "id": "BW-027-Hair-Care-Line",
+      "name": "Hair Care Line",
+      "sector": "Beauty Wellness",
+      "status": "development",
+      "repo_count": 0
+    },
+    {
+      "id": "BW-028-Wig-Brand",
+      "name": "Wig Brand",
+      "sector": "Beauty Wellness",
+      "status": "development",
+      "repo_count": 0
+    },
+    {
+      "id": "BW-029-Hair-Extensions-Brand",
+      "name": "Hair Extensions Brand",
+      "sector": "Beauty Wellness",
+      "status": "development",
+      "repo_count": 0
+    },
+    {
+      "id": "BW-030-Scalp-Treatment-Products",
+      "name": "Scalp Treatment Products",
+      "sector": "Beauty Wellness",
+      "status": "validation",
+      "repo_count": 0
+    },
+    {
+      "id": "BW-031-Hair-Marketplace",
+      "name": "Hair Marketplace",
+      "sector": "Beauty Wellness",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "BW-032-Stylist-Booking-Platform",
+      "name": "Stylist Booking Platform",
+      "sector": "Beauty Wellness",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "BW-033-AI-Hairstyle-Simulator",
+      "name": "Ai Hairstyle Simulator",
+      "sector": "Beauty Wellness",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "BW-034-Salon-Franchise-Chain",
+      "name": "Salon Franchise Chain",
+      "sector": "Beauty Wellness",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "BW-035-Makeup-Studio",
+      "name": "Makeup Studio",
+      "sector": "Beauty Wellness",
+      "status": "validation",
+      "repo_count": 0
+    },
+    {
+      "id": "BW-036-Bridal-Makeup-Service",
+      "name": "Bridal Makeup Service",
+      "sector": "Beauty Wellness",
+      "status": "development",
+      "repo_count": 0
+    },
+    {
+      "id": "BW-037-Mobile-Makeup-Artist",
+      "name": "Mobile Makeup Artist",
+      "sector": "Beauty Wellness",
+      "status": "development",
+      "repo_count": 0
+    },
+    {
+      "id": "BW-038-Photoshoot-Makeup-Team",
+      "name": "Photoshoot Makeup Team",
+      "sector": "Beauty Wellness",
+      "status": "validation",
+      "repo_count": 0
+    },
+    {
+      "id": "BW-039-Cosmetics-Brand",
+      "name": "Cosmetics Brand",
+      "sector": "Beauty Wellness",
+      "status": "development",
+      "repo_count": 0
+    },
+    {
+      "id": "BW-040-Beauty-Tools-Brand",
+      "name": "Beauty Tools Brand",
+      "sector": "Beauty Wellness",
+      "status": "development",
+      "repo_count": 0
+    },
+    {
+      "id": "FH-001-Personal-Chef-Service",
+      "name": "Personal Chef Service",
+      "sector": "Hospitality",
+      "status": "development",
+      "repo_count": 0
+    },
+    {
+      "id": "FH-002-Meal-Prep-Delivery",
+      "name": "Meal Prep Delivery",
+      "sector": "Hospitality",
+      "status": "development",
+      "repo_count": 0
+    },
+    {
+      "id": "FH-003-Private-Dinner-Experiences",
+      "name": "Private Dinner Experiences",
+      "sector": "Hospitality",
+      "status": "validation",
+      "repo_count": 0
+    },
+    {
+      "id": "FH-004-Catering-Company",
+      "name": "Catering Company",
+      "sector": "Hospitality",
+      "status": "validation",
+      "repo_count": 0
+    },
+    {
+      "id": "FH-005-Corporate-Lunch-Service",
+      "name": "Corporate Lunch Service",
+      "sector": "Hospitality",
+      "status": "development",
+      "repo_count": 0
+    },
+    {
+      "id": "FH-006-Healthy-Meal-Prep-for-Gyms",
+      "name": "Healthy Meal Prep For Gyms",
+      "sector": "Hospitality",
+      "status": "development",
+      "repo_count": 0
+    },
+    {
+      "id": "FH-007-Elderly-Meal-Service",
+      "name": "Elderly Meal Service",
+      "sector": "Hospitality",
+      "status": "validation",
+      "repo_count": 0
+    },
+    {
+      "id": "FH-008-Athlete-Nutrition-Service",
+      "name": "Athlete Nutrition Service",
+      "sector": "Hospitality",
+      "status": "development",
+      "repo_count": 0
+    },
+    {
+      "id": "FH-009-Packaged-Food-Brand",
+      "name": "Packaged Food Brand",
+      "sector": "Hospitality",
+      "status": "validation",
+      "repo_count": 0
+    },
+    {
+      "id": "FH-010-Frozen-Meals-Company",
+      "name": "Frozen Meals Company",
+      "sector": "Hospitality",
+      "status": "validation",
+      "repo_count": 0
+    },
+    {
+      "id": "FH-011-Sauce-or-Seasoning-Brand",
+      "name": "Sauce Or Seasoning Brand",
+      "sector": "Hospitality",
+      "status": "development",
+      "repo_count": 0
+    },
+    {
+      "id": "FH-012-Protein-Snacks-Brand",
+      "name": "Protein Snacks Brand",
+      "sector": "Hospitality",
+      "status": "development",
+      "repo_count": 0
+    },
+    {
+      "id": "FH-013-Meal-Kit-Company",
+      "name": "Meal Kit Company",
+      "sector": "Hospitality",
+      "status": "validation",
+      "repo_count": 0
+    },
+    {
+      "id": "FH-014-Cloud-Kitchen-",
+      "name": "Cloud Kitchen ",
+      "sector": "Hospitality",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "FH-015-AI-Nutrition-Planner",
+      "name": "Ai Nutrition Planner",
+      "sector": "Hospitality",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "FH-016-Recipe-App",
+      "name": "Recipe App",
+      "sector": "Hospitality",
+      "status": "development",
+      "repo_count": 0
+    },
+    {
+      "id": "FH-017-Cooking-Content-Brand",
+      "name": "Cooking Content Brand",
+      "sector": "Hospitality",
+      "status": "development",
+      "repo_count": 0
+    },
+    {
+      "id": "FH-018-Food-Influencer-Brand",
+      "name": "Food Influencer Brand",
+      "sector": "Hospitality",
+      "status": "development",
+      "repo_count": 0
+    },
+    {
+      "id": "FH-019-Cooking-Course-Platform",
+      "name": "Cooking Course Platform",
+      "sector": "Hospitality",
+      "status": "development",
+      "repo_count": 0
+    },
+    {
+      "id": "FH-020-Restaurant-POS-System",
+      "name": "Restaurant Pos System",
+      "sector": "Hospitality",
+      "status": "planned",
+      "repo_count": 0
+    },
+    {
+      "id": "FH-021-Food-Truck-Business",
+      "name": "Food Truck Business",
+      "sector": "Hospitality",
+      "status": "validation",
+      "repo_count": 0
+    },
+    {
+      "id": "FH-022-Specialty-Coffee-Shop",
+      "name": "Specialty Coffee Shop",
+      "sector": "Hospitality",
+      "status": "validation",
+      "repo_count": 0
+    },
+    {
+      "id": "FH-023-Bakery-&-Pastry-Shop",
+      "name": "Bakery & Pastry Shop",
+      "sector": "Hospitality",
+      "status": "validation",
+      "repo_count": 0
+    },
+    {
+      "id": "FH-024-Juice-Bar",
+      "name": "Juice Bar",
+      "sector": "Hospitality",
+      "status": "development",
+      "repo_count": 0
+    }
+  ],
+  "repositories": [
+    {
+      "id": "CB-REPO-000001",
+      "name": "re-001-worldwidebro-holdings",
+      "url": "https://github.com/Worldwidebro/re-001-worldwidebro-holdings",
+      "language": "TypeScript",
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000002",
+      "name": "career-ops",
+      "url": "https://github.com/Worldwidebro/career-ops",
+      "language": "JavaScript",
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000003",
+      "name": "callcenter",
+      "url": "https://github.com/Worldwidebro/callcenter",
+      "language": "HTML",
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000004",
+      "name": "lt-005-medical-courier-dispatch",
+      "url": "https://github.com/Worldwidebro/lt-005-medical-courier-dispatch",
+      "language": "HTML",
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000005",
+      "name": "Homebutton",
+      "url": "https://github.com/Worldwidebro/Homebutton",
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000006",
+      "name": "Con-001-Admin",
+      "url": "https://github.com/Worldwidebro/Con-001-Admin",
+      "language": "Go",
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000007",
+      "name": "ops-staff-001-staffing",
+      "url": "https://github.com/Worldwidebro/ops-staff-001-staffing",
+      "language": "HTML",
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000008",
+      "name": "worldwidebro-company-registry",
+      "url": "https://github.com/Worldwidebro/worldwidebro-company-registry",
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000009",
+      "name": "ec-112-cosmic-kitty",
+      "url": "https://github.com/Worldwidebro/ec-112-cosmic-kitty",
+      "language": "HTML",
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000010",
+      "name": "venture-hub",
+      "url": "https://github.com/Worldwidebro/venture-hub",
+      "language": "TypeScript",
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000011",
+      "name": "ec-commerceos",
+      "url": "https://github.com/Worldwidebro/ec-commerceos",
+      "language": "TypeScript",
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000012",
+      "name": "Ec-113kosmickitty",
+      "url": "https://github.com/Worldwidebro/Ec-113kosmickitty",
+      "language": "TypeScript",
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000013",
+      "name": "lt-011-dispatch-software",
+      "url": "https://github.com/Worldwidebro/lt-011-dispatch-software",
+      "language": "HTML",
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000014",
+      "name": "worldwidebro-venture-portal",
+      "url": "https://github.com/Worldwidebro/worldwidebro-venture-portal",
+      "language": "TypeScript",
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000015",
+      "name": "con-001-ace-construction",
+      "url": "https://github.com/Worldwidebro/con-001-ace-construction",
+      "language": "TypeScript",
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000016",
+      "name": "Vex",
+      "url": "https://github.com/Worldwidebro/Vex",
+      "language": "TypeScript",
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000017",
+      "name": "ventures",
+      "url": "https://github.com/Worldwidebro/ventures",
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000018",
+      "name": "research-os",
+      "url": "https://github.com/Worldwidebro/research-os",
+      "language": "Cypher",
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000019",
+      "name": "_master-governance",
+      "url": "https://github.com/Worldwidebro/_master-governance",
+      "language": null,
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000020",
+      "name": "bw-eroticafox",
+      "url": "https://github.com/Worldwidebro/bw-eroticafox",
+      "language": null,
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000021",
+      "name": "worldwidebro-mathematical-os",
+      "url": "https://github.com/Worldwidebro/worldwidebro-mathematical-os",
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000022",
+      "name": "fin-037-worldwidebro-trading-system",
+      "url": "https://github.com/Worldwidebro/fin-037-worldwidebro-trading-system",
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000023",
+      "name": "civilization-os",
+      "url": "https://github.com/Worldwidebro/civilization-os",
+      "language": "TypeScript",
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000024",
+      "name": "media-empire-platform",
+      "url": "https://github.com/Worldwidebro/media-empire-platform",
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000025",
+      "name": "re-002-os-property-management",
+      "url": "https://github.com/Worldwidebro/re-002-os-property-management",
+      "language": "TypeScript",
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000026",
+      "name": "ec-001-angels-in-daylight",
+      "url": "https://github.com/Worldwidebro/ec-001-angels-in-daylight",
+      "language": "HTML",
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000027",
+      "name": "fin-033-ai-tax-preparation-service",
+      "url": "https://github.com/Worldwidebro/fin-033-ai-tax-preparation-service",
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000028",
+      "name": "fin-021-tax-deduction-finder",
+      "url": "https://github.com/Worldwidebro/fin-021-tax-deduction-finder",
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000029",
+      "name": "fin-009-crypto-tax-optimizer",
+      "url": "https://github.com/Worldwidebro/fin-009-crypto-tax-optimizer",
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000030",
+      "name": "fin-006-tax-prep-filing-services",
+      "url": "https://github.com/Worldwidebro/fin-006-tax-prep-filing-services",
+      "language": "HTML",
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000031",
+      "name": "worldwidebro-os-core",
+      "url": "https://github.com/Worldwidebro/worldwidebro-os-core",
+      "language": "HTML",
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000032",
+      "name": "family-office-os",
+      "url": "https://github.com/Worldwidebro/family-office-os",
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000033",
+      "name": "wealth-optimization-platform",
+      "url": "https://github.com/Worldwidebro/wealth-optimization-platform",
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000034",
+      "name": "OS-001-MATHEMATICAL-OS-REGISTRY",
+      "url": "https://github.com/Worldwidebro/OS-001-MATHEMATICAL-OS-REGISTRY",
+      "language": null,
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000035",
+      "name": "Worldwidebro",
+      "url": "https://github.com/Worldwidebro/Worldwidebro",
+      "language": null,
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000036",
+      "name": "worldwidebro-os-infrastructure",
+      "url": "https://github.com/Worldwidebro/worldwidebro-os-infrastructure",
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000037",
+      "name": "email-design-os",
+      "url": "https://github.com/Worldwidebro/email-design-os",
+      "language": "HTML",
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000038",
+      "name": "iza-os-finance-core",
+      "url": "https://github.com/Worldwidebro/iza-os-finance-core",
+      "language": null,
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000039",
+      "name": "worldwidebro-education-os",
+      "url": "https://github.com/Worldwidebro/worldwidebro-education-os",
+      "language": null,
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000040",
+      "name": "worldwidebro-staffing-os",
+      "url": "https://github.com/Worldwidebro/worldwidebro-staffing-os",
+      "language": null,
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000041",
+      "name": "divine-johns-portfolio",
+      "url": "https://github.com/Worldwidebro/divine-johns-portfolio",
+      "language": "HTML",
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000042",
+      "name": "worldwidebro-marketing-os",
+      "url": "https://github.com/Worldwidebro/worldwidebro-marketing-os",
+      "language": "HTML",
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000043",
+      "name": "ec-111-miss-toys",
+      "url": "https://github.com/Worldwidebro/ec-111-miss-toys",
+      "language": "HTML",
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000044",
+      "name": "hermes-agent-command-center",
+      "url": "https://github.com/Worldwidebro/hermes-agent-command-center",
+      "language": "HTML",
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000045",
+      "name": "fin-036-arbitrage-nexus-platform",
+      "url": "https://github.com/Worldwidebro/fin-036-arbitrage-nexus-platform",
+      "language": "Shell",
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000046",
+      "name": "spec-018-ai-personal-shopper",
+      "url": "https://github.com/Worldwidebro/spec-018-ai-personal-shopper",
+      "language": null,
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000047",
+      "name": "spec-017-smart-agriculture-ai",
+      "url": "https://github.com/Worldwidebro/spec-017-smart-agriculture-ai",
+      "language": null,
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000048",
+      "name": "spec-019-smart-home-security",
+      "url": "https://github.com/Worldwidebro/spec-019-smart-home-security",
+      "language": null,
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000049",
+      "name": "spec-001-ai-auction-house",
+      "url": "https://github.com/Worldwidebro/spec-001-ai-auction-house",
+      "language": null,
+      "archived": false
+    },
+    {
+      "id": "CB-REPO-000050",
+      "name": "spec-038-ai-comedy-writer",
+      "url": "https://github.com/Worldwidebro/spec-038-ai-comedy-writer",
+      "language": null,
+      "archived": false
+    }
+  ],
+  "venture_repo_mappings": [
+    {
+      "venture_id": "RE-001",
+      "repo_id": "CB-REPO-000001"
+    },
+    {
+      "venture_id": "LT-005",
+      "repo_id": "CB-REPO-000004"
+    },
+    {
+      "venture_id": "CON-001",
+      "repo_id": "CB-REPO-000006"
+    },
+    {
+      "venture_id": "CON-001",
+      "repo_id": "CB-REPO-000015"
+    },
+    {
+      "venture_id": "LT-011",
+      "repo_id": "CB-REPO-000013"
+    },
+    {
+      "venture_id": "FIN-037",
+      "repo_id": "CB-REPO-000022"
+    },
+    {
+      "venture_id": "RE-002",
+      "repo_id": "CB-REPO-000025"
+    },
+    {
+      "venture_id": "FIN-033",
+      "repo_id": "CB-REPO-000027"
+    },
+    {
+      "venture_id": "FIN-033",
+      "repo_id": "CB-REPO-000458"
+    },
+    {
+      "venture_id": "FIN-021",
+      "repo_id": "CB-REPO-000028"
+    },
+    {
+      "venture_id": "FIN-009",
+      "repo_id": "CB-REPO-000029"
+    },
+    {
+      "venture_id": "FIN-006",
+      "repo_id": "CB-REPO-000030"
+    },
+    {
+      "venture_id": "FIN-036",
+      "repo_id": "CB-REPO-000045"
+    },
+    {
+      "venture_id": "FIN-023",
+      "repo_id": "CB-REPO-000053"
+    },
+    {
+      "venture_id": "CON-010",
+      "repo_id": "CB-REPO-000074"
+    },
+    {
+      "venture_id": "CON-009",
+      "repo_id": "CB-REPO-000075"
+    },
+    {
+      "venture_id": "FIN-001",
+      "repo_id": "CB-REPO-000079"
+    },
+    {
+      "venture_id": "CON-002",
+      "repo_id": "CB-REPO-000164"
+    },
+    {
+      "venture_id": "CON-003",
+      "repo_id": "CB-REPO-000165"
+    },
+    {
+      "venture_id": "CON-005",
+      "repo_id": "CB-REPO-000166"
+    },
+    {
+      "venture_id": "CON-004",
+      "repo_id": "CB-REPO-000167"
+    },
+    {
+      "venture_id": "CON-006",
+      "repo_id": "CB-REPO-000168"
+    },
+    {
+      "venture_id": "CON-007",
+      "repo_id": "CB-REPO-000169"
+    },
+    {
+      "venture_id": "CON-008",
+      "repo_id": "CB-REPO-000170"
+    },
+    {
+      "venture_id": "CON-011",
+      "repo_id": "CB-REPO-000171"
+    },
+    {
+      "venture_id": "CON-012",
+      "repo_id": "CB-REPO-000172"
+    },
+    {
+      "venture_id": "CON-013",
+      "repo_id": "CB-REPO-000173"
+    },
+    {
+      "venture_id": "CON-014",
+      "repo_id": "CB-REPO-000174"
+    },
+    {
+      "venture_id": "CON-015",
+      "repo_id": "CB-REPO-000175"
+    },
+    {
+      "venture_id": "CON-016",
+      "repo_id": "CB-REPO-000176"
+    },
+    {
+      "venture_id": "CON-017",
+      "repo_id": "CB-REPO-000177"
+    },
+    {
+      "venture_id": "CON-018",
+      "repo_id": "CB-REPO-000178"
+    },
+    {
+      "venture_id": "CON-019",
+      "repo_id": "CB-REPO-000179"
+    },
+    {
+      "venture_id": "CON-020",
+      "repo_id": "CB-REPO-000180"
+    },
+    {
+      "venture_id": "FIN-002",
+      "repo_id": "CB-REPO-000431"
+    },
+    {
+      "venture_id": "FIN-003",
+      "repo_id": "CB-REPO-000432"
+    },
+    {
+      "venture_id": "FIN-004",
+      "repo_id": "CB-REPO-000433"
+    },
+    {
+      "venture_id": "FIN-005",
+      "repo_id": "CB-REPO-000434"
+    },
+    {
+      "venture_id": "FIN-007",
+      "repo_id": "CB-REPO-000435"
+    },
+    {
+      "venture_id": "FIN-008",
+      "repo_id": "CB-REPO-000436"
+    },
+    {
+      "venture_id": "FIN-010",
+      "repo_id": "CB-REPO-000437"
+    },
+    {
+      "venture_id": "FIN-011",
+      "repo_id": "CB-REPO-000438"
+    },
+    {
+      "venture_id": "FIN-012",
+      "repo_id": "CB-REPO-000439"
+    },
+    {
+      "venture_id": "FIN-013",
+      "repo_id": "CB-REPO-000440"
+    },
+    {
+      "venture_id": "FIN-014",
+      "repo_id": "CB-REPO-000441"
+    },
+    {
+      "venture_id": "FIN-015",
+      "repo_id": "CB-REPO-000442"
+    },
+    {
+      "venture_id": "FIN-016",
+      "repo_id": "CB-REPO-000443"
+    },
+    {
+      "venture_id": "FIN-017",
+      "repo_id": "CB-REPO-000444"
+    },
+    {
+      "venture_id": "FIN-018",
+      "repo_id": "CB-REPO-000445"
+    },
+    {
+      "venture_id": "FIN-019",
+      "repo_id": "CB-REPO-000446"
+    },
+    {
+      "venture_id": "FIN-020",
+      "repo_id": "CB-REPO-000447"
+    },
+    {
+      "venture_id": "FIN-022",
+      "repo_id": "CB-REPO-000448"
+    },
+    {
+      "venture_id": "FIN-024",
+      "repo_id": "CB-REPO-000449"
+    },
+    {
+      "venture_id": "FIN-025",
+      "repo_id": "CB-REPO-000450"
+    },
+    {
+      "venture_id": "FIN-026",
+      "repo_id": "CB-REPO-000451"
+    },
+    {
+      "venture_id": "FIN-027",
+      "repo_id": "CB-REPO-000452"
+    },
+    {
+      "venture_id": "FIN-028",
+      "repo_id": "CB-REPO-000453"
+    },
+    {
+      "venture_id": "FIN-029",
+      "repo_id": "CB-REPO-000454"
+    },
+    {
+      "venture_id": "FIN-030",
+      "repo_id": "CB-REPO-000455"
+    },
+    {
+      "venture_id": "FIN-031",
+      "repo_id": "CB-REPO-000456"
+    },
+    {
+      "venture_id": "FIN-032",
+      "repo_id": "CB-REPO-000457"
+    },
+    {
+      "venture_id": "FIN-034",
+      "repo_id": "CB-REPO-000459"
+    },
+    {
+      "venture_id": "FIN-035",
+      "repo_id": "CB-REPO-000460"
+    },
+    {
+      "venture_id": "LT-001",
+      "repo_id": "CB-REPO-000573"
+    },
+    {
+      "venture_id": "LT-002",
+      "repo_id": "CB-REPO-000574"
+    },
+    {
+      "venture_id": "LT-003",
+      "repo_id": "CB-REPO-000575"
+    },
+    {
+      "venture_id": "LT-004",
+      "repo_id": "CB-REPO-000576"
+    },
+    {
+      "venture_id": "LT-006",
+      "repo_id": "CB-REPO-000577"
+    },
+    {
+      "venture_id": "LT-007",
+      "repo_id": "CB-REPO-000578"
+    },
+    {
+      "venture_id": "LT-008",
+      "repo_id": "CB-REPO-000579"
+    },
+    {
+      "venture_id": "LT-009",
+      "repo_id": "CB-REPO-000580"
+    },
+    {
+      "venture_id": "LT-010",
+      "repo_id": "CB-REPO-000581"
+    },
+    {
+      "venture_id": "LT-012",
+      "repo_id": "CB-REPO-000582"
+    },
+    {
+      "venture_id": "LT-013",
+      "repo_id": "CB-REPO-000583"
+    },
+    {
+      "venture_id": "LT-014",
+      "repo_id": "CB-REPO-000584"
+    },
+    {
+      "venture_id": "LT-015",
+      "repo_id": "CB-REPO-000585"
+    },
+    {
+      "venture_id": "LT-016",
+      "repo_id": "CB-REPO-000586"
+    },
+    {
+      "venture_id": "LT-017",
+      "repo_id": "CB-REPO-000587"
+    },
+    {
+      "venture_id": "LT-018",
+      "repo_id": "CB-REPO-000588"
+    },
+    {
+      "venture_id": "LT-019",
+      "repo_id": "CB-REPO-000589"
+    },
+    {
+      "venture_id": "LT-020",
+      "repo_id": "CB-REPO-000590"
+    },
+    {
+      "venture_id": "LT-021",
+      "repo_id": "CB-REPO-000591"
+    },
+    {
+      "venture_id": "LT-022",
+      "repo_id": "CB-REPO-000592"
+    },
+    {
+      "venture_id": "LT-023",
+      "repo_id": "CB-REPO-000593"
+    },
+    {
+      "venture_id": "LT-024",
+      "repo_id": "CB-REPO-000594"
+    },
+    {
+      "venture_id": "LT-025",
+      "repo_id": "CB-REPO-000595"
+    },
+    {
+      "venture_id": "LT-026",
+      "repo_id": "CB-REPO-000596"
+    },
+    {
+      "venture_id": "LT-027",
+      "repo_id": "CB-REPO-000597"
+    },
+    {
+      "venture_id": "LT-028",
+      "repo_id": "CB-REPO-000598"
+    },
+    {
+      "venture_id": "LT-029",
+      "repo_id": "CB-REPO-000599"
+    },
+    {
+      "venture_id": "LT-030",
+      "repo_id": "CB-REPO-000600"
+    }
+  ],
+  "deployments": []
+}

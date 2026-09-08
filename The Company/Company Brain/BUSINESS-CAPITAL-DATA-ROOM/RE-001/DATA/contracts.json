@@ -1,0 +1,20 @@
+{
+  "venture_id": "RE-001",
+  "standard_agreements": [
+    {
+      "name": "Master Services Agreement (MSA)",
+      "version": "2.1",
+      "status": "APPROVED"
+    },
+    {
+      "name": "Independent Contractor Agreement",
+      "version": "1.8",
+      "status": "APPROVED"
+    },
+    {
+      "name": "Commercial Non-Disclosure Agreement",
+      "version": "1.0",
+      "status": "APPROVED"
+    }
+  ]
+}

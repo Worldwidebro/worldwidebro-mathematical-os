@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "1.0.0",
+  "assets": [
+    {
+      "id": "AST-001",
+      "campaign_id": "CAM-001",
+      "name": "Audit Pitch Deck & 5-Minute Tear-down",
+      "type": "DOCUMENT",
+      "format": "PDF",
+      "uri": "COMMERCIAL/OFFERS/OFFER-001-LOCAL-AI-AUDIT.md",
+      "status": "APPROVED",
+      "verified": true
+    },
+    {
+      "id": "AST-002",
+      "campaign_id": "CAM-001",
+      "name": "Cold Outreach 3-Touch Sequencing Scripts",
+      "type": "COPY",
+      "format": "MARKDOWN",
+      "uri": "COMMERCIAL/OUTREACH/OUTREACH-001-TARGET-PROSPECTS.md",
+      "status": "APPROVED",
+      "verified": true
+    }
+  ]
+}

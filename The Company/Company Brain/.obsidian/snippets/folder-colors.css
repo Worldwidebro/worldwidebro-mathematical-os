@@ -1,0 +1,266 @@
+/* ========================================================================= */
+/* Company Brain Universal Semantic Folder & Graph Color Palette            */
+/* Generated: 2026-09-06 | 100% Coverage across all 96 Top-Level Subsystems  */
+/* ========================================================================= */
+
+/* 1. Sovereign Law & Governance (#a855f7) */
+.nav-folder[data-path="00-CONSTITUTION"] > .nav-folder-title,
+.nav-folder[data-path="20-DECISIONS"] > .nav-folder-title,
+.nav-folder[data-path="21-POLICY"] > .nav-folder-title,
+.nav-folder[data-path="31-LEGAL"] > .nav-folder-title,
+.nav-folder[data-path="32-SECURITY"] > .nav-folder-title,
+.nav-folder[data-path="33-COMPLIANCE"] > .nav-folder-title,
+.nav-folder[data-path="34-RISK"] > .nav-folder-title,
+.nav-folder[data-path="46-GOVERNANCE"] > .nav-folder-title,
+.nav-folder[data-path="49-SYSTEM"] > .nav-folder-title,
+.nav-folder[data-path="50-MASTER-CONTROL"] > .nav-folder-title,
+.nav-folder[data-path="00_RESPECT"] > .nav-folder-title,
+.nav-folder[data-path="DIRECTIVES"] > .nav-folder-title,
+.nav-folder[data-path="EXECUTIVES"] > .nav-folder-title,
+.nav-file[data-path="ANTIGRAVITY.md"] > .nav-file-title,
+.nav-file[data-path="AGENTS.md"] > .nav-file-title,
+.nav-file[data-path="REALITY.md"] > .nav-file-title,
+.nav-file[data-path="STARTHERE.md"] > .nav-file-title,
+.nav-file[data-path="INDEX.md"] > .nav-file-title,
+.nav-file[data-path="CLAUDE.md"] > .nav-file-title {
+  color: #a855f7 !important;
+  font-weight: 600;
+}
+
+.nav-folder[data-path="00-CONSTITUTION"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="20-DECISIONS"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="21-POLICY"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="31-LEGAL"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="32-SECURITY"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="33-COMPLIANCE"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="34-RISK"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="46-GOVERNANCE"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="49-SYSTEM"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="50-MASTER-CONTROL"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="00_RESPECT"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="DIRECTIVES"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="EXECUTIVES"] > .nav-folder-title .nav-folder-collapse-indicator svg {
+  stroke: #a855f7 !important;
+}
+
+/* 2. Engineering, Tech & Infrastructure (#0ea5e9) */
+.nav-folder[data-path="56-ENGINEERING"] > .nav-folder-title,
+.nav-folder[data-path="57-CODE-INTELLIGENCE"] > .nav-folder-title,
+.nav-folder[data-path="58-LOGISTICS"] > .nav-folder-title,
+.nav-folder[data-path="59-MCP"] > .nav-folder-title,
+.nav-folder[data-path="60-APIS"] > .nav-folder-title,
+.nav-folder[data-path="62-TECHNOLOGY"] > .nav-folder-title,
+.nav-folder[data-path="_INFRASTRUCTURE"] > .nav-folder-title,
+.nav-folder[data-path="_MCP"] > .nav-folder-title,
+.nav-folder[data-path="_CLI"] > .nav-folder-title,
+.nav-folder[data-path="13-REPOSITORIES"] > .nav-folder-title,
+.nav-folder[data-path="17-MODELS"] > .nav-folder-title,
+.nav-folder[data-path="18-TOOLS"] > .nav-folder-title,
+.nav-folder[data-path="48-AUTOMATION"] > .nav-folder-title,
+.nav-folder[data-path="scripts"] > .nav-folder-title {
+  color: #0ea5e9 !important;
+  font-weight: 600;
+}
+
+.nav-folder[data-path="56-ENGINEERING"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="57-CODE-INTELLIGENCE"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="58-LOGISTICS"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="59-MCP"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="60-APIS"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="62-TECHNOLOGY"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="_INFRASTRUCTURE"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="_MCP"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="_CLI"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="13-REPOSITORIES"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="17-MODELS"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="18-TOOLS"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="48-AUTOMATION"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="scripts"] > .nav-folder-title .nav-folder-collapse-indicator svg {
+  stroke: #0ea5e9 !important;
+}
+
+/* 3. Capabilities, Skills & People (#10b981) */
+.nav-folder[data-path="14-CAPABILITIES"] > .nav-folder-title,
+.nav-folder[data-path="15-SKILLS"] > .nav-folder-title,
+.nav-folder[data-path="30-HR"] > .nav-folder-title,
+.nav-folder[data-path="52-PEOPLE"] > .nav-folder-title,
+.nav-folder[data-path="53-TEAMS"] > .nav-folder-title {
+  color: #10b981 !important;
+  font-weight: 600;
+}
+
+.nav-folder[data-path="14-CAPABILITIES"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="15-SKILLS"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="30-HR"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="52-PEOPLE"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="53-TEAMS"] > .nav-folder-title .nav-folder-collapse-indicator svg {
+  stroke: #10b981 !important;
+}
+
+/* 4. Loops, Agents, Orchestration & Execution (#f59e0b) */
+.nav-folder[data-path="16-AGENTS"] > .nav-folder-title,
+.nav-folder[data-path="19-ORCHESTRATION"] > .nav-folder-title,
+.nav-folder[data-path="22-EXECUTION"] > .nav-folder-title,
+.nav-folder[data-path="55-LOOP-ENGINEERING"] > .nav-folder-title,
+.nav-folder[data-path="AI-BRAIN"] > .nav-folder-title,
+.nav-folder[data-path="AI-PROJECTS"] > .nav-folder-title,
+.nav-folder[data-path="_PROMPTS"] > .nav-folder-title,
+.nav-folder[data-path="fractal"] > .nav-folder-title,
+.nav-folder[data-path="node"] > .nav-folder-title {
+  color: #f59e0b !important;
+  font-weight: 600;
+}
+
+.nav-folder[data-path="16-AGENTS"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="19-ORCHESTRATION"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="22-EXECUTION"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="55-LOOP-ENGINEERING"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="AI-BRAIN"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="AI-PROJECTS"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="_PROMPTS"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="fractal"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="node"] > .nav-folder-title .nav-folder-collapse-indicator svg {
+  stroke: #f59e0b !important;
+}
+
+/* 5. Registries & Ingestion Pipelines (#f43f5e) */
+.nav-folder[data-path="01-IDENTITY"] > .nav-folder-title,
+.nav-folder[data-path="02-SOURCES"] > .nav-folder-title,
+.nav-folder[data-path="03-INGESTION"] > .nav-folder-title,
+.nav-folder[data-path="04-DATA"] > .nav-folder-title,
+.nav-folder[data-path="05-METADATA"] > .nav-folder-title,
+.nav-folder[data-path="06-ENTITY-RESOLUTION"] > .nav-folder-title,
+.nav-folder[data-path="11-INDEXING"] > .nav-folder-title,
+.nav-folder[data-path="_REGISTRIES"] > .nav-folder-title,
+.nav-folder[data-path="_PIPELINES"] > .nav-folder-title {
+  color: #f43f5e !important;
+  font-weight: 600;
+}
+
+.nav-folder[data-path="01-IDENTITY"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="02-SOURCES"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="03-INGESTION"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="04-DATA"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="05-METADATA"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="06-ENTITY-RESOLUTION"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="11-INDEXING"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="_REGISTRIES"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="_PIPELINES"] > .nav-folder-title .nav-folder-collapse-indicator svg {
+  stroke: #f43f5e !important;
+}
+
+/* 6. Knowledge, Memory, Research, Learning & Evaluation (#6366f1) */
+.nav-folder[data-path="07-ONTOLOGY"] > .nav-folder-title,
+.nav-folder[data-path="08-KNOWLEDGE-GRAPH"] > .nav-folder-title,
+.nav-folder[data-path="09-KNOWLEDGE"] > .nav-folder-title,
+.nav-folder[data-path="10-MEMORY"] > .nav-folder-title,
+.nav-folder[data-path="12-CONTEXT"] > .nav-folder-title,
+.nav-folder[data-path="37-RESEARCH"] > .nav-folder-title,
+.nav-folder[data-path="39-EXPERIMENTS"] > .nav-folder-title,
+.nav-folder[data-path="40-METRICS"] > .nav-folder-title,
+.nav-folder[data-path="41-OBSERVABILITY"] > .nav-folder-title,
+.nav-folder[data-path="42-EVALUATION"] > .nav-folder-title,
+.nav-folder[data-path="43-OUTCOMES"] > .nav-folder-title,
+.nav-folder[data-path="44-LEARNING"] > .nav-folder-title,
+.nav-folder[data-path="45-EVOLUTION"] > .nav-folder-title,
+.nav-folder[data-path="61-KNOWLEDGE-SOURCES"] > .nav-folder-title,
+.nav-folder[data-path="63-CHANGE-MANAGEMENT"] > .nav-folder-title,
+.nav-folder[data-path="64-RELATIONSHIPS"] > .nav-folder-title,
+.nav-folder[data-path="65-SYNERGIES"] > .nav-folder-title,
+.nav-folder[data-path="66-OPPORTUNITIES-ALT"] > .nav-folder-title,
+.nav-folder[data-path="67-EVOLUTION-ALT"] > .nav-folder-title,
+.nav-folder[data-path="_EVAL"] > .nav-folder-title,
+.nav-folder[data-path="_MEMORY"] > .nav-folder-title,
+.nav-folder[data-path="_ONTOLOGY"] > .nav-folder-title,
+.nav-folder[data-path="_RELATIONSHIPS"] > .nav-folder-title,
+.nav-folder[data-path="receipts"] > .nav-folder-title,
+.nav-folder[data-path="review-receipts"] > .nav-folder-title,
+.nav-folder[data-path="graphify-out"] > .nav-folder-title {
+  color: #6366f1 !important;
+  font-weight: 600;
+}
+
+.nav-folder[data-path="07-ONTOLOGY"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="08-KNOWLEDGE-GRAPH"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="09-KNOWLEDGE"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="10-MEMORY"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="12-CONTEXT"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="37-RESEARCH"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="39-EXPERIMENTS"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="40-METRICS"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="41-OBSERVABILITY"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="42-EVALUATION"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="43-OUTCOMES"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="44-LEARNING"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="45-EVOLUTION"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="61-KNOWLEDGE-SOURCES"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="63-CHANGE-MANAGEMENT"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="64-RELATIONSHIPS"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="65-SYNERGIES"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="66-OPPORTUNITIES-ALT"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="67-EVOLUTION-ALT"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="_EVAL"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="_MEMORY"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="_ONTOLOGY"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="_RELATIONSHIPS"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="receipts"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="review-receipts"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="graphify-out"] > .nav-folder-title .nav-folder-collapse-indicator svg {
+  stroke: #6366f1 !important;
+}
+
+/* 7. Sectors, Commercial, Ventures, Finance, Sales & Marketing (#14b8a6) */
+.nav-folder[data-path="SECTORS"] > .nav-folder-title,
+.nav-folder[data-path="COMMERCIAL"] > .nav-folder-title,
+.nav-folder[data-path="CAMPAIGNS"] > .nav-folder-title,
+.nav-folder[data-path="23-VENTURES"] > .nav-folder-title,
+.nav-folder[data-path="24-FINANCE"] > .nav-folder-title,
+.nav-folder[data-path="25-SALES"] > .nav-folder-title,
+.nav-folder[data-path="26-MARKETING"] > .nav-folder-title,
+.nav-folder[data-path="27-CUSTOMERS"] > .nav-folder-title,
+.nav-folder[data-path="28-PRODUCT"] > .nav-folder-title,
+.nav-folder[data-path="29-OPERATIONS"] > .nav-folder-title,
+.nav-folder[data-path="35-ASSETS"] > .nav-folder-title,
+.nav-folder[data-path="36-PARTNERS"] > .nav-folder-title,
+.nav-folder[data-path="38-OPPORTUNITIES"] > .nav-folder-title,
+.nav-folder[data-path="51-CONSTRUCTION"] > .nav-folder-title,
+.nav-folder[data-path="54-FINANCIAL"] > .nav-folder-title {
+  color: #14b8a6 !important;
+  font-weight: 600;
+}
+
+.nav-folder[data-path="SECTORS"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="COMMERCIAL"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="CAMPAIGNS"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="23-VENTURES"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="24-FINANCE"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="25-SALES"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="26-MARKETING"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="27-CUSTOMERS"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="28-PRODUCT"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="29-OPERATIONS"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="35-ASSETS"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="36-PARTNERS"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="38-OPPORTUNITIES"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="51-CONSTRUCTION"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="54-FINANCIAL"] > .nav-folder-title .nav-folder-collapse-indicator svg {
+  stroke: #14b8a6 !important;
+}
+
+/* 8. Templates, Blueprints, Documents & Archive (#eab308) */
+.nav-folder[data-path="_TEMPLATES"] > .nav-folder-title,
+.nav-folder[data-path="_DOCS"] > .nav-folder-title,
+.nav-folder[data-path="47-DOCUMENTS"] > .nav-folder-title,
+.nav-folder[data-path="_ARCHIVE"] > .nav-folder-title,
+.nav-folder[data-path="graft"] > .nav-folder-title {
+  color: #eab308 !important;
+  font-weight: 600;
+}
+
+.nav-folder[data-path="_TEMPLATES"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="_DOCS"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="47-DOCUMENTS"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="_ARCHIVE"] > .nav-folder-title .nav-folder-collapse-indicator svg,
+.nav-folder[data-path="graft"] > .nav-folder-title .nav-folder-collapse-indicator svg {
+  stroke: #eab308 !important;
+}

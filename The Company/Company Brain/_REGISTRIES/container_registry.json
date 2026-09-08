@@ -1,0 +1,85 @@
+{
+  "registry_id": "REG-CONTAINER-001",
+  "updated_at": "2026-09-05",
+  "docker_host": "mac-studio (via docker --context macstudio)",
+  "containers": [
+    {
+      "name": "civos_neo4j",
+      "image": "neo4j:5.x",
+      "status": "Up, Healthy",
+      "canonical": true,
+      "ports": [
+        "7474:7474",
+        "7687:7687"
+      ]
+    },
+    {
+      "name": "t7shield-neo4j-1",
+      "image": "neo4j:latest",
+      "status": "Restarting (CrashLoop)",
+      "canonical": false,
+      "note": "Dead weight; bad 4.x config param; flagged for deletion"
+    },
+    {
+      "name": "civos_qdrant",
+      "image": "qdrant/qdrant:latest",
+      "status": "Up, Healthy",
+      "canonical": true,
+      "ports": [
+        "6333:6333"
+      ]
+    },
+    {
+      "name": "civos_litellm",
+      "image": "ghcr.io/berriai/litellm:main-latest",
+      "status": "Up",
+      "canonical": true,
+      "ports": [
+        "4000:4000"
+      ]
+    },
+    {
+      "name": "civos_langfuse",
+      "image": "langfuse/langfuse:2",
+      "status": "Up",
+      "canonical": true,
+      "ports": [
+        "3003:3000"
+      ]
+    },
+    {
+      "name": "t7shield-grafana-1",
+      "image": "grafana/grafana:latest",
+      "status": "Up",
+      "canonical": true,
+      "ports": [
+        "3011:3000"
+      ]
+    },
+    {
+      "name": "civos_webui",
+      "image": "ghcr.io/open-webui/open-webui:main",
+      "status": "Up",
+      "canonical": true,
+      "ports": [
+        "3010:8080"
+      ]
+    },
+    {
+      "name": "postgres",
+      "image": "postgres:16",
+      "status": "Up",
+      "canonical": true,
+      "ports": [
+        "5432:5432"
+      ]
+    },
+    {
+      "name": "crm-postgres",
+      "image": "postgres:15",
+      "status": "Up",
+      "canonical": false,
+      "note": "Duplicate postgres instance"
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+# Cypher Query Patterns for Company Brain Knowledge Graph
+# Reference documentation for common graph traversal patterns
+
+patterns:
+
+  # Pattern 1: Entity search by property
+  entity_search:
+    description: "Search entities by name, description, or slug"
+    use_case: "KG-017 Hybrid Search: graph side"
+    parameters:
+      - query_text: "Search term"
+      - entity_types: "[Optional] Filter by type (VENTURE, REPOSITORY, etc.)"
+      - limit: "Max results (default 10)"
+    cypher: |
+      MATCH (n)
+      WHERE (
+        toLower(n.name) CONTAINS toLower($query_text)
+        OR toLower(n.description) CONTAINS toLower($query_text)
+        OR toLower(n.slug) CONTAINS toLower($query_text)
+      )
+      AND (n.entity_type IN $entity_types OR $entity_types IS NULL)
+      WITH n,
+        CASE
+          WHEN toLower(n.name) CONTAINS toLower($query_text) THEN 3.0
+          WHEN toLower(n.description) CONTAINS toLower($query_text) THEN 2.0
+          ELSE 1.0
+        END AS score
+      RETURN
+        n.id AS entity_id,
+        n.entity_type AS entity_type,
+        properties(n) AS properties,
+        score
+      ORDER BY score DESC
+      LIMIT $limit
+
+  # Pattern 2: N-hop neighborhood traversal
+  neighborhood_traversal:
+    description: "Fetch all entities within N hops of a focal entity"
+    use_case: "KG-028 Agent Context Assembly: subgraph builder"
+    parameters:
+      - focal_entity_id: "Starting entity ID"
+      - depth: "Max hop distance (1-3)"
+      - include_types: "[Optional] Include only these types"
+      - exclude_types: "[Optional] Exclude these types"
+    cypher: |
+      MATCH (focal)-[*1..$depth]-(neighbor)
+      WHERE focal.id = $focal_entity_id
+      AND (neighbor.entity_type IN $include_types OR $include_types IS NULL)
+      AND (neighbor.entity_type NOT IN $exclude_types OR $exclude_types IS NULL)
+      WITH DISTINCT neighbor,
+        length(shortestPath((focal)-[*]-(neighbor))) AS distance
+      RETURN
+        neighbor.id AS entity_id,
+        neighbor.entity_type AS entity_type,
+        properties(neighbor) AS properties,
+        distance,
+        1.0 / (1.0 + distance) AS confidence
+
+  # Pattern 3: Direct relationships
+  direct_relationships:
+    description: "Find all relationships from/to a focal entity"
+    use_case: "KG-028 Agent Context: risk/opportunity detection"
+    parameters:
+      - focal_entity_id: "Starting entity ID"
+      - relationship_types: "[Optional] Filter by relationship type"
+    cypher: |
+      MATCH (focal)-[r]-(neighbor)
+      WHERE focal.id = $focal_entity_id
+      AND (type(r) IN $relationship_types OR $relationship_types IS NULL)
+      RETURN
+        focal.id AS from_id,
+        neighbor.id AS to_id,
+        type(r) AS relationship_type,
+        properties(r) AS rel_properties,
+        neighbor.entity_type AS neighbor_type
+
+  # Pattern 4: Shortest paths
+  shortest_paths:
+    description: "Find shortest path between two entities"
+    use_case: "KG-048 Graph API: /api/graph/paths endpoint"
+    parameters:
+      - from_id: "Source entity ID"
+      - to_id: "Target entity ID"
+      - max_length: "Maximum path length (default 3)"
+    cypher: |
+      MATCH path = shortestPath((a)-[*..{max_length}]-(b))
+      WHERE a.id = $from_id AND b.id = $to_id
+      RETURN
+        [node IN nodes(path) | {id: node.id, type: node.entity_type}] AS node_path,
+        [rel IN relationships(path) | type(rel)] AS relationship_types,
+        length(path) AS path_length
+      LIMIT 1
+
+  # Pattern 5: Dependency chains
+  dependency_analysis:
+    description: "Find dependency chains that could be risks"
+    use_case: "KG-028 Risk Detection: high dependency count"
+    parameters:
+      - focal_entity_id: "Starting entity ID"
+    cypher: |
+      MATCH (focal)-[:DEPENDS_ON*1..3]->(dependency)
+      WHERE focal.id = $focal_entity_id
+      RETURN
+        focal.id AS from_id,
+        dependency.id AS to_id,
+        dependency.entity_type AS type,
+        count(*) AS path_count
+      ORDER BY path_count DESC
+
+  # Pattern 6: Shared resources/capabilities
+  capability_synergy:
+    description: "Find ventures/entities sharing capabilities"
+    use_case: "KG-028 Opportunity Detection: capability synergy"
+    parameters:
+      - entity_id: "Starting entity ID"
+      - depth: "Hop depth for shared capability search"
+    cypher: |
+      MATCH (entity)-[:HAS_CAPABILITY|:USES_CAPABILITY]-(cap)<-[:HAS_CAPABILITY|:USES_CAPABILITY]-(other)
+      WHERE entity.id = $entity_id
+      AND entity.id <> other.id
+      AND other.entity_type = 'VENTURE'
+      WITH other, count(DISTINCT cap) AS shared_capabilities
+      RETURN
+        other.id AS entity_id,
+        other.entity_type,
+        shared_capabilities,
+        properties(other) AS properties
+      ORDER BY shared_capabilities DESC
+
+  # Pattern 7: Multi-source aggregation
+  aggregate_context:
+    description: "Aggregate all context needed for an agent decision"
+    use_case: "KG-028 Full context assembly"
+    parameters:
+      - focal_entity_id: "Primary entity"
+      - depth: "Hop depth"
+    cypher: |
+      WITH $focal_entity_id AS focal_id, $depth AS max_depth
+      MATCH (focal) WHERE focal.id = focal_id
+
+      // Fetch focal entity
+      WITH focal, focal_id, max_depth,
+        properties(focal) AS focal_props
+
+      // Fetch relationships
+      MATCH (focal)-[r]-(neighbor)
+      WITH focal, focal_id, max_depth, focal_props,
+        collect({
+          from: focal.id,
+          to: neighbor.id,
+          type: type(r),
+          direction: CASE WHEN (focal)-[r]->(neighbor) THEN 'OUT' ELSE 'IN' END
+        }) AS relationships
+
+      // Fetch neighborhood
+      MATCH (focal)-[*1..max_depth]-(distant)
+      WITH focal, focal_props, relationships,
+        collect(DISTINCT {
+          id: distant.id,
+          type: distant.entity_type,
+          distance: length(shortestPath((focal)-[*]-(distant)))
+        }) AS entities
+
+      RETURN
+        {
+          focal_entity: {id: focal.id, type: focal.entity_type, properties: focal_props},
+          entities: entities,
+          relationships: relationships,
+          entity_count: size(entities),
+          relationship_count: size(relationships)
+        } AS context
+
+# Index recommendations
+recommendations:
+  - "CREATE INDEX ON :Node(id) for entity lookup performance"
+  - "CREATE INDEX ON :Node(entity_type) for type-based filtering"
+  - "CREATE INDEX ON :Node(name) for text search"
+  - "Consider full-text search index for description field"

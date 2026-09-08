@@ -1,0 +1,91 @@
+# Agent Profiles — defines context filters and preferences per agent type
+# Used by KG-028 (Agent Context Assembly) to tailor subgraph retrieval
+
+agents:
+
+  AGT-001:
+    name: "Repository Classifier Agent"
+    description: "Classifies external repositories for adoption/integration"
+    include_types:
+      - "VENTURE"
+      - "CAPABILITY"
+      - "REPOSITORY"
+      - "DEPENDENCY"
+    exclude_types: []
+    max_depth: 2
+    focus_areas:
+      - "code_quality"
+      - "architecture"
+      - "security"
+
+  AGT-002:
+    name: "Venture Discovery Agent"
+    description: "Discovers new venture opportunities from capability gaps"
+    include_types:
+      - "VENTURE"
+      - "CAPABILITY"
+      - "SECTOR"
+      - "MARKET"
+    exclude_types:
+      - "INTERNAL_TOOL"
+    max_depth: 3
+    focus_areas:
+      - "opportunity"
+      - "synergy"
+      - "unmet_need"
+
+  AGT-003:
+    name: "Risk Assessment Agent"
+    description: "Identifies risks in venture portfolios"
+    include_types:
+      - "VENTURE"
+      - "DEPENDENCY"
+      - "EXTERNAL_SERVICE"
+      - "TECHNOLOGY"
+    exclude_types: []
+    max_depth: 2
+    focus_areas:
+      - "single_point_of_failure"
+      - "dependency_chain"
+      - "technology_risk"
+
+  AGT-004:
+    name: "Revenue Analysis Agent"
+    description: "Analyzes revenue streams and financial health"
+    include_types:
+      - "VENTURE"
+      - "REVENUE_STREAM"
+      - "CUSTOMER"
+      - "MARKET"
+    exclude_types:
+      - "TECHNOLOGY"
+      - "INFRASTRUCTURE"
+    max_depth: 2
+    focus_areas:
+      - "revenue"
+      - "churn"
+      - "upsell"
+
+  AGT-005:
+    name: "Capability Router"
+    description: "Routes tasks to appropriate capabilities"
+    include_types:
+      - "CAPABILITY"
+      - "VENTURE"
+      - "TECHNOLOGY"
+    exclude_types: []
+    max_depth: 1
+    focus_areas:
+      - "matching"
+      - "availability"
+      - "cost"
+
+# Default profile for unknown agents
+default:
+  include_types:
+    - "VENTURE"
+    - "CAPABILITY"
+  exclude_types: []
+  max_depth: 2
+  focus_areas:
+    - "general"

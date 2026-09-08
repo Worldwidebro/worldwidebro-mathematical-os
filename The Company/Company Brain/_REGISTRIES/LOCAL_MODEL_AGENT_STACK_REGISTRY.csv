@@ -1,0 +1,68 @@
+Layer,Repo_Project,Primary_Function,Overlap_With,Decision,Priority,Rationale
+Layer 1: Model Routing & Gateways (Single Endpoint),diegosouzapw/OmniRoute,"Universal AI router, combo aliases, Caveman/RTK token compression, Tailscale mesh","LiteLLM, TensorZero",ADOPT,P0,"Primary local gateway (:20128). Native support for combos, auth, and token compression."
+Layer 1: Model Routing & Gateways (Single Endpoint),BerriAI/litellm,"OpenAI-compatible proxy, multi-provider fallback chains","OmniRoute, TensorZero",ADOPT,P0,"Containerized gateway (:4000) inside Mac Studio Docker. Connects Ollama, DeepSeek, and Anthropic fallback."
+Layer 1: Model Routing & Gateways (Single Endpoint),tensorzero/tensorzero,Model gateway with automated prompt optimization & evals,LiteLLM,EVALUATE,P1,Benchmark in staging for automated prompt optimization and routing evals.
+Layer 1: Model Routing & Gateways (Single Endpoint),Portkey-AI/gateway,Enterprise AI gateway,OmniRoute,REFERENCE,P2,Cloud-first. Use for fallback routing and retry architecture patterns only.
+Layer 1: Model Routing & Gateways (Single Endpoint),Bifrost,Fast LLM gateway,LiteLLM,DEFER,P2,Redundant while OmniRoute + LiteLLM fulfill 100% of routing needs.
+Layer 1: Model Routing & Gateways (Single Endpoint),9router,Early router fork,OmniRoute,REMOVE,P3,Upstream superseded and merged into OmniRoute.
+Layer 1: Model Routing & Gateways (Single Endpoint),llm-router,Lightweight semantic router,OmniRoute,REFERENCE,P2,Reference for cosine-similarity semantic routing algorithms.
+Layer 1: Model Routing & Gateways (Single Endpoint),CLIProxyAPI,CLI proxy bridge,OmniRoute,REJECT,P3,Obsolete; OmniRoute CLI targets handle all tool bridges natively.
+Layer 2: Token & Context Compression (Highest Priority),rtk-ai/rtk,CLI and tool-result token compression,Headroom,ADOPT,P0,Eliminates 60–90% of tool-call output tokens before they enter model context.
+Layer 2: Token & Context Compression (Highest Priority),Caveman,Extreme user & system prompt compression,LLMLingua,ADOPT,P0,Built into OmniRoute (`cavemanConfig`). Prunes conversational boilerplate.
+Layer 2: Token & Context Compression (Highest Priority),Headroom,Buffer compaction & context window management,RTK,EVALUATE,P1,Test for compaction of multi-turn conversational transcripts.
+Layer 2: Token & Context Compression (Highest Priority),microsoft/LLMLingua,Small-model token pruning based on perplexity,Caveman,EVALUATE,P1,Benchmark token savings vs. answer degradation on code generation tasks.
+Layer 2: Token & Context Compression (Highest Priority),microsoft/LLMLingua-2,Task-agnostic compressed representations,LLMLingua,EVALUATE,P1,Test fine-tuned BERT compression for RAG documents.
+Layer 2: Token & Context Compression (Highest Priority),LongLLMLingua,Key-information retrieval compression for long contexts,LlamaIndex,EVALUATE,P1,Relevant when querying 50k+ token financial or legal documents.
+Layer 2: Token & Context Compression (Highest Priority),openai/tiktoken,Exact BPE token measurement,TokenMonster,ADOPT,P0,Universal token counting standard across agents and billing ledgers.
+Layer 2: Token & Context Compression (Highest Priority),TokenMonster,High-speed vocabulary tokenizer,tiktoken,REFERENCE,P2,Reference implementation for custom vocabulary training.
+Layer 2: Token & Context Compression (Highest Priority),Selective Context,Lexical entropy pruning,LLMLingua,REFERENCE,P2,Algorithmic baseline for context pruning.
+Layer 2: Token & Context Compression (Highest Priority),Prompt Compression,Generic category / papers,—,REFERENCE,P2,Literature archive.
+Layer 3: Local Inference & Model Serving,ollama/ollama,Containerized/modular local GGUF serving,llama.cpp,ADOPT,P0,Production serving on T7 Shield storage (`/Volumes/T7 Shield/ollama-models`).
+Layer 3: Local Inference & Model Serving,ggerganov/llama.cpp,C++ inference engine with Apple Silicon Metal acceleration,Ollama,ADOPT,P0,Low-level backbone of Ollama; verified ~70 tok/sec on Qwen 14B.
+Layer 3: Local Inference & Model Serving,ml-explore/mlx` & `mlx-lm,Native Apple Silicon ML framework & LLM engine,"llama.cpp, vLLM",ADOPT,P0,Peak throughput runtime for Mac Studio M4 Max unified memory.
+Layer 3: Local Inference & Model Serving,vllm-project/vllm,Continuous batching & PagedAttention serving,SGLang,EVALUATE,P1,High-concurrency production serving benchmark.
+Layer 3: Local Inference & Model Serving,vllm-mlx,Port of vLLM PagedAttention to Apple Silicon MLX,mlx-lm,EVALUATE,P1,Test continuous batching on Mac Studio M4 Max.
+Layer 3: Local Inference & Model Serving,sgl-project/sglang,Fast serving with RadixAttention (KV cache sharing),vLLM,EVALUATE,P1,RadixAttention optimizes repetitive agent system prompts.
+Layer 3: Local Inference & Model Serving,mlx-serve,FastAPI wrapper for MLX models,mlx-lm,DEFER,P2,Redundant with `mlx-lm.server` and Exo.
+Layer 3: Local Inference & Model Serving,mudler/LocalAI,Drop-in OpenAI replacement,"Ollama, LiteLLM",REJECT,P3,Heavy monolithic footprint; redundant with Ollama + LiteLLM.
+Layer 3: Local Inference & Model Serving,lmstudio-ai / lms,Local model desktop manager & CLI,Ollama,REFERENCE,P2,Excellent UI for manual model discovery; CLI installed for reference.
+Layer 4: Multi-Machine & Distributed Inference,exo-explore/exo,P2P mesh cluster inference across Apple Silicon devices,"Ray, Petals",ADOPT,P0,Connects Mac Studio M4 Max (`100.87.214.70`) + MacBook Air (`100.121.17.63`) over Tailscale.
+Layer 4: Multi-Machine & Distributed Inference,llama.cpp RPC,Native distributed tensor sharding in llama.cpp,Exo,EVALUATE,P1,"Simple, lightweight distributed inference without Python overhead."
+Layer 4: Multi-Machine & Distributed Inference,PAIR,Personal AI Router P2P mesh,Exo,REFERENCE,P2,Study peer node discovery patterns.
+Layer 4: Multi-Machine & Distributed Inference,bigscience-workshop/petals,BitTorrent-style distributed model swarm,Exo,DEFER,P2,High latency over WAN; unsuitable for tight local mesh.
+Layer 4: Multi-Machine & Distributed Inference,ray-project/ray,Distributed Python cluster orchestration,Exo,DEFER,P2,Enterprise cluster overkill for a 2-machine local setup.
+Layer 4: Multi-Machine & Distributed Inference,microsoft/DeepSpeed,Distributed training/inference for CUDA GPUs,—,REJECT,P3,CUDA-exclusive. Incompatible with Apple Silicon Metal/MLX.
+Layer 4: Multi-Machine & Distributed Inference,NVIDIA/TensorRT-LLM,NVIDIA-specific compiler and serving runtime,—,REJECT,P3,Strictly NVIDIA hardware.
+Layer 4: Multi-Machine & Distributed Inference,Speculative Decoding,Small draft model + large target model execution,—,ADOPT,P1,Pair local Qwen 0.5B draft with Qwen 14B/32B for 2–3x token speedup.
+Layer 5: Retrieval & Knowledge Substrate,qdrant/qdrant,"Production vector database (Cosine, HNSW, payload filtering)","Chroma, FAISS",ADOPT,P0,Verified live (:6333) with 768-dim `nomic-embed-text` vectors.
+Layer 5: Retrieval & Knowledge Substrate,neo4j/neo4j,Enterprise property graph database (Cypher),—,ADOPT,P0,"Verified live (:7687) with 16,660 nodes and 722 ventures."
+Layer 5: Retrieval & Knowledge Substrate,redis/redis,"In-memory key-value cache, semantic cache, rate limiter",—,ADOPT,P0,Verified live (:6380) in Mac Studio Docker. Handles exact prompt deduplication.
+Layer 5: Retrieval & Knowledge Substrate,langchain-ai/langgraph,"Cyclic, stateful graph agent orchestrator",LangChain,ADOPT,P0,"Standard for multi-agent loops, state checkpointing, and human-in-the-loop."
+Layer 5: Retrieval & Knowledge Substrate,langchain-ai/langchain,Modular agent components & connectors,LlamaIndex,REFERENCE,P1,Harvest specific tool connectors without adopting the heavy core framework.
+Layer 5: Retrieval & Knowledge Substrate,run-llama/llama_index,"Document ingestion, chunking, and hierarchical indexing",LangChain,EVALUATE,P1,Test for parsing complex corporate PDFs and financial records.
+Layer 5: Retrieval & Knowledge Substrate,stanford-futuredata/ColBERT,Token-level late-interaction vector retrieval,Qdrant,EVALUATE,P1,Superior accuracy for precision code search; benchmark memory cost.
+Layer 5: Retrieval & Knowledge Substrate,FlashRank` / `bge-reranker,Ultra-light local neural reranker,—,ADOPT,P0,Condenses 50 vector candidates down to 5 high-precision tokens.
+Layer 5: Retrieval & Knowledge Substrate,facebookresearch/faiss,Raw vector indexing library,Qdrant,REJECT,P3,Low-level C++ library; Qdrant already provides superior persistence and filtering.
+Layer 5: Retrieval & Knowledge Substrate,chroma-core/chroma,Developer vector database,Qdrant,REJECT,P3,Redundant with Qdrant; Qdrant has higher production scale and Rust engine.
+"Layer 6: Agent Execution, Memory & Sandboxes",All-Hands-AI/OpenHands,Autonomous software development agent,SWE-agent,EVALUATE,P1,Evaluate for complex multi-file refactoring runs.
+"Layer 6: Agent Execution, Memory & Sandboxes",princeton-nlp/SWE-agent,Software engineering agent with ACI interface,OpenHands,REFERENCE,P2,Architectural benchmark for agent-computer interfaces.
+"Layer 6: Agent Execution, Memory & Sandboxes",e2b-dev/E2B,Secure cloud microVM sandbox for untrusted code execution,Daytona,EVALUATE,P1,Sandbox untrusted code execution when building external venture MVPs.
+"Layer 6: Agent Execution, Memory & Sandboxes",daytonaio/daytona,Self-hosted developer environment orchestrator,E2B,EVALUATE,P1,Self-hosted alternative to cloud microVMs on Mac Studio.
+"Layer 6: Agent Execution, Memory & Sandboxes",letta-ai/letta` (MemGPT),OS-style memory management (RAM vs. Disk context),Mem0,EVALUATE,P1,Architecture for infinite agent context paging.
+"Layer 6: Agent Execution, Memory & Sandboxes",mem0ai/mem0,"Personalized, episodic graph memory for agents",Letta,EVALUATE,P1,Benchmark against Neo4j user-memory graph.
+"Layer 7: Protocols, Tooling & Infrastructure Automation",PrefectHQ/fastmcp,High-performance Python MCP server with FastAPI,mcp-go,ADOPT,P0,Standard protocol for Company Brain tools (`_MCP/fastmcp_server.py`).
+"Layer 7: Protocols, Tooling & Infrastructure Automation",mcp-go,High-concurrency Go MCP server,FastMCP,REFERENCE,P2,Reference if high-throughput daemon services require Go rewriting.
+"Layer 7: Protocols, Tooling & Infrastructure Automation",n8n/n8n,Visual workflow automation & webhook router,Activepieces,ADOPT,P0,Verified live (:5678) in Mac Studio Docker. Handles event triggers.
+"Layer 7: Protocols, Tooling & Infrastructure Automation",activepieces/activepieces,Open-source TypeScript automation engine,n8n,REFERENCE,P2,Alternative visual connector ecosystem.
+"Layer 7: Protocols, Tooling & Infrastructure Automation",docker/compose,Multi-container service specification,Kubernetes,ADOPT,P0,Core deployment format (`T7/docker-compose.yml`).
+"Layer 7: Protocols, Tooling & Infrastructure Automation",k3s-io/k3s` / `kubernetes,Container cluster orchestrator,Docker Compose,DEFER,P2,Premature complexity for 2 physical nodes; Docker Compose is sufficient.
+"Layer 7: Protocols, Tooling & Infrastructure Automation",hashicorp/terraform,Infrastructure as Code,Docker Compose,REFERENCE,P2,Retain for cloud edge deployments (Vercel/AWS).
+"Layer 7: Protocols, Tooling & Infrastructure Automation",actions/runner` (GitHub Actions),Automated CI/CD and repository linting,—,ADOPT,P0,Production verification pipelines.
+"Layer 7: Protocols, Tooling & Infrastructure Automation",open-telemetry/opentelemetry,"Universal telemetry standard (traces, metrics, logs)",—,ADOPT,P0,OTel collector active (:4317/:4318) feeding Prometheus and Langfuse.
+"Layer 7: Protocols, Tooling & Infrastructure Automation",langfuse/langfuse,"LLM tracing, prompt versioning, and cost tracking",—,ADOPT,P0,"Verified live (:3003). Captures every prompt, token count, and latency trace."
+Layer 8: Business Applications (Sits ON TOP of Infrastructure),Worldwidebro/ops-staff-001-staffing,Workforce & healthcare staffing operating system,Application,ADOPT,P0,"Core revenue venture. Consumes inference, Qdrant, and Neo4j."
+Layer 8: Business Applications (Sits ON TOP of Infrastructure),Worldwidebro/lt-005-medical-dispatch,Medical courier and route optimization dispatch,Application,ADOPT,P0,Core revenue venture. Uses local Qwen 14B for carrier matching.
+Layer 8: Business Applications (Sits ON TOP of Infrastructure),career-ops-hq/career-ops,Candidate recruitment pipeline,Application,REFERENCE,P1,Harvest resume scoring and matching logic for `ops-staff-001`.
+Layer 8: Business Applications (Sits ON TOP of Infrastructure),MadsLorentzen/ai-job-search,Job search aggregator & matcher,Application,REFERENCE,P2,Harvest scraping patterns.
+Layer 8: Business Applications (Sits ON TOP of Infrastructure),KnockOutEZ/wigolo,Staffing platform workflows,Application,REFERENCE,P2,Workflow reference.
+Layer 8: Business Applications (Sits ON TOP of Infrastructure),block/buzz,Hive-mind agent communication protocol,Protocol,REFERENCE,P2,Multi-agent signaling patterns.

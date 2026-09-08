@@ -1,0 +1,52 @@
+{
+  "registry_id": "REG-STORAGE-001",
+  "updated_at": "2026-09-05",
+  "volumes": {
+    "VOL-STUDIO-INTERNAL": {
+      "host_id": "HOST-MAC-STUDIO-001",
+      "mount_point": "/",
+      "filesystem": "APFS",
+      "total_gb": 512,
+      "used_gb": 194,
+      "free_gb": 318,
+      "purpose": "System OS, Docker virtual disk daemon, local configs"
+    },
+    "VOL-STUDIO-LACIE": {
+      "host_id": "HOST-MAC-STUDIO-001",
+      "mount_point": "/Volumes/LaCie",
+      "filesystem": "APFS",
+      "total_gb": 4000,
+      "status": "CANONICAL_DATABASE_HOST",
+      "allocations": {
+        "neo4j": "/Volumes/LaCie/neo4j/data",
+        "qdrant": "/Volumes/LaCie/qdrant/storage",
+        "postgres": "/Volumes/LaCie/postgres/data",
+        "backups": "/Volumes/LaCie/postgres/backups",
+        "model_cache": "/Volumes/LaCie/huggingface"
+      }
+    },
+    "VOL-AIR-INTERNAL": {
+      "host_id": "HOST-MACBOOK-AIR-001",
+      "mount_point": "/",
+      "filesystem": "APFS",
+      "total_gb": 228,
+      "used_gb": 194,
+      "free_gb": 34,
+      "purpose": "System OS, developer workspaces, Company Brain repository root"
+    },
+    "VOL-AIR-T7SHIELD": {
+      "host_id": "HOST-MACBOOK-AIR-001",
+      "mount_point": "/Volumes/T7 Shield",
+      "filesystem": "APFS",
+      "total_gb": 1800,
+      "used_gb": 889,
+      "free_gb": 911,
+      "status": "SECONDARY_MODEL_STORE",
+      "allocations": {
+        "ollama_models": "/Volumes/T7 Shield/.ollama/models",
+        "airllm_shards": "/Volumes/T7 Shield/.airllm",
+        "huggingface": "/Volumes/T7 Shield/.huggingface"
+      }
+    }
+  }
+}

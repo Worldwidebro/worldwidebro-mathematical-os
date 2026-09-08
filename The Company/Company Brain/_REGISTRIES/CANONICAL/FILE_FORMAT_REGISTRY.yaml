@@ -1,0 +1,555 @@
+---
+id: FILE-FORMAT-REGISTRY-001
+title: Canonical File Format Registry
+scope: Company Brain (all agents, all systems)
+authority: CP-027 (Infrastructure Control Plane)
+updated: 2026-09-06
+status: ACTIVE
+---
+
+# FILE FORMAT REGISTRY — Canonical Format Decisions
+
+**Purpose:** Single source of truth for file format selection, conversion paths, engine preference, and cost/privacy trade-offs.
+
+**Authority:** [[STARTHERE|CP-027 Infrastructure Control Plane]]
+
+---
+
+## 1. CANONICAL FORMATS (PRIMARY)
+
+Each information class has ONE default format:
+
+```yaml
+DOCUMENTATION:
+  canonical: .md
+  final: .pdf
+  editable: .md
+  rationale: "Git-friendly, version-controllable, universal."
+  conversions:
+    - from: .docx
+      engine: pandoc
+      command: "pandoc input.docx -o output.md"
+      cost: free
+      privacy: local
+    - from: .html
+      engine: pandoc
+      command: "pandoc input.html -o output.md"
+      cost: free
+      privacy: local
+
+SPREADSHEET_DATA:
+  canonical: .xlsx
+  exchange: .csv
+  rationale: "Human-editable, versioned, discoverable."
+  conversions:
+    - from: .csv
+      engine: libreoffice
+      command: "libreoffice --headless --convert-to xlsx input.csv"
+      cost: free
+      privacy: local
+    - from: .json
+      engine: duckdb
+      command: "duckdb 'COPY (SELECT * FROM read_json(\"input.json\")) TO \"output.csv\" (FORMAT CSV);'"
+      cost: free
+      privacy: local
+
+STRUCTURED_DATA:
+  canonical: .json
+  alternatives:
+    large_datasets: .jsonl
+    analytics: .parquet
+    config: .yaml
+  rationale: "API-native, agent-friendly."
+  conversions:
+    - from: .yaml
+      engine: python
+      command: "python -c 'import yaml,json; json.dump(yaml.safe_load(open(\"input.yaml\")),open(\"output.json\",\"w\"))'"
+      cost: free
+      privacy: local
+    - from: .csv
+      engine: duckdb
+      command: "duckdb 'COPY (SELECT * FROM read_csv(\"input.csv\")) TO \"output.json\" (FORMAT JSON);'"
+      cost: free
+      privacy: local
+
+CONFIGURATION:
+  canonical: .yaml
+  alternatives:
+    secrets: bitwarden
+    env: .env
+  rationale: "Human-readable, diff-friendly."
+  conversions:
+    - from: .json
+      engine: python
+      command: "python -c 'import json,yaml; yaml.dump(json.load(open(\"input.json\")),open(\"output.yaml\",\"w\"))'"
+      cost: free
+      privacy: local
+
+DATABASE:
+  canonical: .sql
+  runtime: PostgreSQL
+  alternatives:
+    migrations: .sql
+    queries: .sql
+  rationale: "Portable, versioned, standard."
+  conversions:
+    - from: .xlsx
+      engine: duckdb
+      command: "duckdb 'INSERT INTO table SELECT * FROM read_excel(\"input.xlsx\");'"
+      cost: free
+      privacy: local
+
+LARGE_ANALYTICS:
+  canonical: .parquet
+  rationale: "Columnar, compressed, ML-friendly."
+  conversions:
+    - from: .csv
+      engine: duckdb
+      command: "duckdb 'COPY (SELECT * FROM read_csv(\"input.csv\")) TO \"output.parquet\";'"
+      cost: free
+      privacy: local
+    - from: .xlsx
+      engine: duckdb
+      command: "duckdb 'COPY (SELECT * FROM read_excel(\"input.xlsx\")) TO \"output.parquet\";'"
+      cost: free
+      privacy: local
+
+IMAGE:
+  canonical: .png
+  alternatives:
+    photo: .jpg
+    web: .webp
+    icon_logo: .svg
+    archive: .tiff
+  rationale: "Screenshots default PNG; photos JPEG; vectors SVG."
+  conversions:
+    - from: .jpg
+      engine: imagemagick
+      command: "convert input.jpg output.png"
+      cost: free
+      privacy: local
+    - from: .webp
+      engine: imagemagick
+      command: "convert input.webp output.png"
+      cost: free
+      privacy: local
+    - from: .svg
+      engine: imagemagick
+      command: "convert -background white input.svg output.png"
+      cost: free
+      privacy: local
+
+VIDEO:
+  canonical: .mp4
+  alternatives:
+    editing: .mov
+    streaming: .webm
+    archive: .mkv
+  rationale: "MP4 universally compatible; MOV for pro workflows."
+  conversions:
+    - from: .mov
+      engine: ffmpeg
+      command: "ffmpeg -i input.mov -c:v h264 -c:a aac output.mp4"
+      cost: free
+      privacy: local
+    - from: .mkv
+      engine: ffmpeg
+      command: "ffmpeg -i input.mkv -c:v h264 -c:a aac output.mp4"
+      cost: free
+      privacy: local
+    - from: .avi
+      engine: ffmpeg
+      command: "ffmpeg -i input.avi -c:v h264 -c:a aac output.mp4"
+      cost: free
+      privacy: local
+    - to_gif:
+      engine: ffmpeg
+      command: "ffmpeg -i input.mp4 -vf 'scale=480:-1' -r 10 output.gif"
+      cost: free
+      privacy: local
+
+AUDIO:
+  canonical: .wav
+  alternatives:
+    distribution: .mp3
+    lossless: .flac
+    voice: .opus
+  rationale: "WAV for master; MP3 for distribution; OPUS for streaming."
+  conversions:
+    - from: .mp3
+      engine: ffmpeg
+      command: "ffmpeg -i input.mp3 -c:a pcm_s16le output.wav"
+      cost: free
+      privacy: local
+    - from: .m4a
+      engine: ffmpeg
+      command: "ffmpeg -i input.m4a -c:a pcm_s16le output.wav"
+      cost: free
+      privacy: local
+    - from: .ogg
+      engine: ffmpeg
+      command: "ffmpeg -i input.ogg -c:a pcm_s16le output.wav"
+      cost: free
+      privacy: local
+
+DOCUMENT:
+  canonical: .md
+  final_print: .pdf
+  editable: .docx
+  web: .html
+  rationale: "Markdown primary; DOCX for collaboration; PDF for finalization."
+  conversions:
+    - from: .docx
+      to: .md
+      engine: pandoc
+      command: "pandoc input.docx -t markdown -o output.md"
+      cost: free
+      privacy: local
+    - from: .md
+      to: .pdf
+      engine: pandoc
+      command: "pandoc input.md -o output.pdf"
+      cost: free
+      privacy: local
+    - from: .md
+      to: .docx
+      engine: pandoc
+      command: "pandoc input.md -t docx -o output.docx"
+      cost: free
+      privacy: local
+    - from: .md
+      to: .html
+      engine: pandoc
+      command: "pandoc input.md -t html -o output.html"
+      cost: free
+      privacy: local
+    - from: .html
+      to: .pdf
+      engine: wkhtmltopdf
+      command: "wkhtmltopdf input.html output.pdf"
+      cost: free
+      privacy: local
+
+EBOOK:
+  canonical: .epub
+  alternatives:
+    kindle: .mobi
+    pdf_fallback: .pdf
+  rationale: "EPUB is reflowable standard; MOBI for Kindle."
+  conversions:
+    - from: .pdf
+      engine: calibre
+      command: "ebook-convert input.pdf output.epub"
+      cost: free
+      privacy: local
+    - from: .docx
+      engine: calibre
+      command: "ebook-convert input.docx output.epub"
+      cost: free
+      privacy: local
+    - from: .html
+      engine: calibre
+      command: "ebook-convert input.html output.epub"
+      cost: free
+      privacy: local
+
+ARCHIVE:
+  canonical: .zip
+  alternatives:
+    compression: .7z
+    unix: .tar.gz
+  rationale: "ZIP for cross-platform; TAR.GZ for unix; 7Z for max compression."
+  conversions:
+    - format_agnostic: "Both .zip and .tar.gz unzip identically; prefer .zip for user-facing archives."
+
+OCR_SCANNED:
+  source: .pdf (scanned)
+  canonical: .pdf (searchable)
+  extraction: .md or .json
+  rationale: "Extract text from scanned PDFs, make searchable, ingest to knowledge graph."
+  conversions:
+    - from: .pdf (scanned)
+      engine: ocrmypdf
+      command: "ocrmypdf input.pdf output.pdf"
+      cost: free
+      privacy: local
+    - from: .pdf (searchable)
+      to: .txt
+      engine: pdftotext
+      command: "pdftotext input.pdf output.txt"
+      cost: free
+      privacy: local
+    - from: .png/.jpg (image)
+      to: .txt
+      engine: tesseract
+      command: "tesseract input.png output"
+      cost: free
+      privacy: local
+    - from: .txt
+      to: .md
+      engine: manual_markup
+      command: "Add markdown headers, formatting, and context."
+      cost: manual
+      privacy: local
+
+CAD_3D:
+  canonical: .step
+  alternatives:
+    interchange: .fbx
+    print: .stl
+    archive: .blend
+  rationale: "STEP is industry standard; FBX for interchange; STL for 3D printing."
+  conversions:
+    - from: .obj
+      engine: freecad
+      command: "freecad --convert-fcstd input.obj output.step"
+      cost: free
+      privacy: local
+    - from: .dwg
+      engine: freecad
+      command: "freecad --convert-fcstd input.dwg output.step"
+      cost: free
+      privacy: local
+```
+
+---
+
+## 2. CONVERSION DECISION TREE
+
+```yaml
+CONVERSION_ALGORITHM:
+  input: "<file_format>"
+  desired_output: "<target_format>"
+
+  decision_tree:
+    - step_1_check_canonical: "Is input already canonical for its class?"
+      if_yes: "Stop. File is optimal."
+      if_no: "Proceed to step 2."
+
+    - step_2_find_path: "Look up conversion path in registry above."
+      if_found: "Proceed to step 3."
+      if_not_found: "Proceed to step 4 (fallback)."
+
+    - step_3_select_engine: "Choose engine by priority:"
+      priority:
+        - 1_local_free: "FFmpeg, ImageMagick, Pandoc, LibreOffice, DuckDB, Tesseract (free, local, private)"
+        - 2_local_paid: "Expensive licenses (rarely used for conversion)"
+        - 3_cloud_safe: "CloudConvert, Zamzar (for formats unavailable locally)"
+        - 4_cloud_risky: "Last resort (file uploaded, privacy risk)"
+
+    - step_4_fallback: "No known conversion path:"
+      option_a: "Check CloudConvert or Zamzar catalogs."
+      option_b: "If sensitive data, find local equivalent."
+      option_c: "If no solution, document blocker in [[KILL-LIST|KILL-LIST.md]]."
+```
+
+---
+
+## 3. ENGINE REFERENCE
+
+Each engine listed below with preferred command, cost, and privacy model:
+
+### LOCAL ENGINES (RECOMMENDED)
+
+| Engine | Formats | Install | Cost | Privacy | Speed |
+|--------|---------|---------|------|---------|-------|
+| **Pandoc** | `.md`, `.docx`, `.html`, `.latex`, `.epub`, `.rst` | `brew install pandoc` | FREE | LOCAL | Fast |
+| **LibreOffice** | `.xlsx`, `.docx`, `.pptx`, `.odt`, `.pdf` | `brew install libreoffice` | FREE | LOCAL | Medium |
+| **FFmpeg** | `.mp4`, `.mov`, `.webm`, `.mkv`, `.mp3`, `.wav`, `.aac` | `brew install ffmpeg` | FREE | LOCAL | Medium/Slow |
+| **ImageMagick** | `.png`, `.jpg`, `.webp`, `.gif`, `.svg`, `.tiff`, `.bmp` | `brew install imagemagick` | FREE | LOCAL | Fast |
+| **DuckDB** | `.csv`, `.xlsx`, `.json`, `.jsonl`, `.parquet` | `brew install duckdb` | FREE | LOCAL | Fast |
+| **Tesseract** | `.png`, `.jpg`, `.tiff`, `.pdf` (text extraction) | `brew install tesseract` | FREE | LOCAL | Slow |
+| **OCRmyPDF** | `.pdf` (scanned → searchable) | `pip install ocrmypdf` | FREE | LOCAL | Slow |
+| **Calibre** | `.epub`, `.mobi`, `.pdf`, `.docx` (ebooks) | `brew install calibre` | FREE | LOCAL | Medium |
+| **wkhtmltopdf** | `.html` → `.pdf` | `brew install --cask wkhtmltopdf` | FREE | LOCAL | Medium |
+| **FreeCAD** | `.step`, `.stp`, `.iges`, `.stl`, `.obj` (CAD) | `brew install freecad` | FREE | LOCAL | Slow |
+
+### CLOUD ENGINES (FALLBACK)
+
+| Service | Formats | Cost | Privacy | Use Case |
+|---------|---------|------|---------|----------|
+| **CloudConvert** | 200+ formats | $0.25/min (pay-as-you-go) | Cloud upload | Rare/complex formats |
+| **Zamzar** | 1,100+ formats | $0.29-1.00/file | Cloud upload | Obscure legacy formats |
+| **Convertio** | 300+ formats | Free tier available | Cloud upload | Lightweight conversions |
+| **Smallpdf** | PDF-focused | Free tier limited | Cloud upload | PDF workflows |
+| **iLovePDF** | PDF-focused | Free tier limited | Cloud upload | PDF workflows |
+
+---
+
+## 4. PRIVACY TIER SYSTEM
+
+**Decide based on data sensitivity:**
+
+```yaml
+TIER_1_ALWAYS_LOCAL:
+  - contracts
+  - financial_records
+  - customer_data
+  - source_code
+  - credentials
+  - pii
+  action: "Use local engines only. Never cloud upload."
+
+TIER_2_PREFER_LOCAL:
+  - business_documents
+  - internal_research
+  - drafts
+  - designs
+  action: "Use local if available. Cloud OK if time-critical."
+
+TIER_3_CLOUD_OK:
+  - public_content
+  - published_materials
+  - non-sensitive_images
+  - generic_media
+  action: "Cloud services acceptable."
+```
+
+---
+
+## 5. COST CALCULATION
+
+```yaml
+COST_PER_CONVERSION:
+  local_free: $0.00
+  local_expensive_license: $10-1000 (one-time or annual)
+  cloud_pay_per_use: $0.25-1.00 per file
+  cloud_subscription: $5-50/month
+
+RECOMMENDATION:
+  - "For <100 files/month: Use free local engines."
+  - "For 100-1000 files/month: Invest in automation (scripts)."
+  - "For >1000 files/month: Consider batch license or API."
+```
+
+---
+
+## 6. QUALITY ASSURANCE
+
+After conversion:
+
+```yaml
+QA_STEPS:
+  - "1. File size reasonable? (not 0 bytes, not 10x original)"
+  - "2. Content spot-check: Random page/section readable?"
+  - "3. Metadata preserved? (timestamps, author, version)"
+  - "4. Encoding correct? (UTF-8 for text, proper color space for images)"
+  - "5. For sensitive data: Ensure no leakage in headers/metadata."
+```
+
+---
+
+## 7. INTEGRATION WITH OMNIROUTE & MCP
+
+**File Conversion Service** (see [[FILE_CONVERSION_SERVICE|FILE_CONVERSION_SERVICE.md]]):
+
+```yaml
+MCP_TOOL: "file_convert"
+API_ENDPOINT: "http://localhost:20128/api/convert"
+AUTH: "OmniRoute API key (Bitwarden: SEC-FILE-CONVERT-001)"
+
+INPUT:
+  - input_path: "/path/to/file.docx"
+  - target_format: "md"
+  - privacy_tier: "TIER_1_ALWAYS_LOCAL"
+  - quality_required: "high"
+
+OUTPUT:
+  - output_path: "/path/to/file.md"
+  - engine_used: "pandoc"
+  - conversion_time: "0.234s"
+  - success: true
+
+AGENT_USAGE:
+  - "Claude Code agents call: `/file-convert input.docx target=md privacy=TIER_1`"
+  - "Decision tree runs automatically."
+  - "Engine selected by priority (local free → cloud safe → manual intervention)."
+  - "Result returned with quality attestation."
+```
+
+---
+
+## 8. WORKFLOW EXAMPLES
+
+### Example 1: Ingest PDF Contract → Knowledge Graph
+
+```
+contract.pdf (scanned)
+    ↓
+OCRmyPDF (local, free)
+    ↓
+contract_searchable.pdf
+    ↓
+pdftotext (local, free)
+    ↓
+contract.txt
+    ↓
+Manual markup → contract.md
+    ↓
+Ingest to Qdrant + Neo4j
+```
+
+**Privacy:** TIER_1 (never cloud)
+**Time:** ~5 minutes
+**Cost:** $0.00
+
+---
+
+### Example 2: Batch Convert 500 PNGs → WebP
+
+```
+*.png (500 files, directory)
+    ↓
+ImageMagick batch (local, free)
+    ↓
+for f in *.png; do convert "$f" "${f%.png}.webp"; done
+    ↓
+*.webp (500 files, ~60% size reduction)
+```
+
+**Privacy:** TIER_2 (no sensitive data)
+**Time:** ~10 minutes
+**Cost:** $0.00
+
+---
+
+### Example 3: Convert Excel Report → Markdown Docs
+
+```
+quarterly_report.xlsx
+    ↓
+LibreOffice headless (local, free)
+    ↓
+quarterly_report.csv
+    ↓
+DuckDB + Python script (local, free)
+    ↓
+quarterly_report.json
+    ↓
+Pandoc → quarterly_report.md
+    ↓
+Markdown ingested to Obsidian + Neo4j
+```
+
+**Privacy:** TIER_2
+**Time:** ~3 minutes
+**Cost:** $0.00
+
+---
+
+## 9. UPDATING THIS REGISTRY
+
+**When to add a new format:**
+
+1. A new `.extension` is requested
+2. No local engine solution exists
+3. Document in this registry under the appropriate class
+4. Test conversion locally first; only add cloud option if necessary
+5. Update [[STARTHERE|STARTHERE.md]] reference count
+6. Link from relevant venture/domain README
+
+**Authority:** CP-027 (Infrastructure) — changes require audit trail
+
+---
+
+**Status:** ✅ LIVE | **Last Updated:** 2026-09-06 | **Authority:** [[STARTHERE|CP-027]]

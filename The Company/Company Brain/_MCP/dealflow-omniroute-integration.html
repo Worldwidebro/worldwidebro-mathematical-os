@@ -1,0 +1,300 @@
+<!-- DealFlowOS + OmniRoute Integration Snippet
+     Place this in dealflow-os.html after the main content
+     Authority: Agent Control Plane (CP-006) -->
+
+<!-- Terminal & Agent Control Panel Container -->
+<div id="dealflow-agent-panel" class="glass-card" style="margin-top: 20px; padding: 0; border-radius: 8px; overflow: hidden;">
+  <!-- Terminal Container -->
+  <div id="terminal-container" style="
+    height: 400px;
+    background: rgba(5, 8, 16, 0.9);
+    border: 1px solid rgba(99, 102, 241, 0.15);
+    border-radius: 8px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  "></div>
+
+  <!-- Control Buttons -->
+  <div class="terminal-controls" style="
+    padding: 12px;
+    background: rgba(15, 23, 42, 0.8);
+    border-top: 1px solid rgba(99, 102, 241, 0.08);
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  ">
+    <!-- Quick-Launch Buttons -->
+    <button id="launch-research-btn" onclick="launchResearchAgent()" class="tab-btn" style="
+      padding: 6px 12px;
+      background: rgba(99, 102, 241, 0.1);
+      border: 1px solid rgba(99, 102, 241, 0.2);
+      color: #818cf8;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+      transition: all 0.2s ease;
+    ">
+      🔍 Research
+    </button>
+
+    <button id="launch-qualify-btn" onclick="launchQualificationAgent()" class="tab-btn" style="
+      padding: 6px 12px;
+      background: rgba(99, 102, 241, 0.1);
+      border: 1px solid rgba(99, 102, 241, 0.2);
+      color: #818cf8;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+      transition: all 0.2s ease;
+    ">
+      📊 Qualify
+    </button>
+
+    <button id="launch-outreach-btn" onclick="launchOutreachAgent()" class="tab-btn" style="
+      padding: 6px 12px;
+      background: rgba(99, 102, 241, 0.1);
+      border: 1px solid rgba(99, 102, 241, 0.2);
+      color: #818cf8;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+      transition: all 0.2s ease;
+    ">
+      ✉️ Outreach
+    </button>
+
+    <button id="status-btn" onclick="showAgentStatus()" class="tab-btn" style="
+      padding: 6px 12px;
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.2);
+      color: #34d399;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+      transition: all 0.2s ease;
+    ">
+      ⚙️ Status
+    </button>
+
+    <button id="clear-btn" onclick="dealflowTerminal && dealflowTerminal.clear()" class="tab-btn" style="
+      padding: 6px 12px;
+      background: rgba(99, 102, 241, 0.1);
+      border: 1px solid rgba(99, 102, 241, 0.2);
+      color: #818cf8;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+      transition: all 0.2s ease;
+      margin-left: auto;
+    ">
+      Clear
+    </button>
+  </div>
+</div>
+
+<!-- CSS for Terminal Styling -->
+<style>
+  .dealflow-terminal {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: rgba(5, 8, 16, 0.95);
+  }
+
+  .terminal-header {
+    padding: 10px 12px;
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.6));
+    border-bottom: 1px solid rgba(99, 102, 241, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .terminal-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #e2e8f0;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .pulse-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #34d399;
+    animation: pulse 1s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+
+  .terminal-content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+    font-size: 11px;
+    line-height: 1.4;
+  }
+
+  .terminal-line {
+    margin: 2px 0;
+    color: #cbd5e1;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+  }
+
+  .terminal-line.command {
+    color: #6366f1;
+    font-weight: 500;
+  }
+
+  .terminal-line.response {
+    color: #22d3ee;
+  }
+
+  .terminal-line.info {
+    color: #818cf8;
+  }
+
+  .terminal-line.success {
+    color: #34d399;
+  }
+
+  .terminal-line.error {
+    color: #fb7185;
+  }
+
+  .terminal-controls {
+    display: flex;
+    gap: 8px;
+    padding: 10px;
+    background: rgba(15, 23, 42, 0.8);
+    border-top: 1px solid rgba(99, 102, 241, 0.08);
+  }
+
+  .terminal-btn {
+    padding: 6px 10px;
+    background: rgba(99, 102, 241, 0.1);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    color: #818cf8;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 11px;
+    transition: all 0.2s ease;
+  }
+
+  .terminal-btn:hover {
+    background: rgba(99, 102, 241, 0.2);
+    border-color: rgba(99, 102, 241, 0.3);
+  }
+</style>
+
+<!-- Import OmniRoute Streaming Client -->
+<script src="_MCP/dealflow-omniroute-client.js"></script>
+
+<!-- Integration Script -->
+<script>
+  // Global references
+  let omnirouteClient = null;
+  let dealflowTerminal = null;
+  let dealflowDashboard = null;
+
+  // Initialize on page load
+  window.addEventListener('load', async () => {
+    // Create client
+    omnirouteClient = new OmniRouteStreamingClient('http://100.87.214.70:20128');
+
+    // Create terminal
+    dealflowTerminal = new DealFlowOSTerminal('terminal-container');
+    dealflowDashboard = new DealFlowOSAgentDashboard(omnirouteClient, dealflowTerminal);
+
+    // Show welcome message
+    dealflowTerminal.addLine('DealFlowOS Command Center initialized', 'info');
+    dealflowTerminal.addLine('OmniRoute agents ready for research → qualify → outreach flows', 'info');
+
+    // Check OmniRoute health
+    const health = await omnirouteClient.healthCheck();
+    if (health.status === 'online') {
+      dealflowTerminal.addLine(`✓ OmniRoute online at ${health.url}`, 'success');
+      await showAgentStatus();
+    } else {
+      dealflowTerminal.addLine(`✗ OmniRoute offline: ${health.error}`, 'error');
+    }
+  });
+
+  /**
+   * Launch research agent
+   */
+  async function launchResearchAgent() {
+    const query = prompt('Enter research query:', 'Top SaaS healthcare companies 2026');
+    if (!query) return;
+
+    const companyContext = {};
+    await dealflowDashboard.launchResearchAgent(query, companyContext);
+  }
+
+  /**
+   * Launch qualification agent
+   * (In real implementation, would pull from selected company data)
+   */
+  async function launchQualificationAgent() {
+    const companyJson = prompt('Enter company data (JSON):', '{"name": "Example Corp", "revenue": "10M", "employees": 50}');
+    if (!companyJson) return;
+
+    try {
+      const company = JSON.parse(companyJson);
+      await dealflowDashboard.launchQualificationAgent(company);
+    } catch (e) {
+      dealflowTerminal.addLine(`Error: Invalid JSON - ${e.message}`, 'error');
+    }
+  }
+
+  /**
+   * Launch outreach agent
+   * (In real implementation, would pull from qualified leads table)
+   */
+  async function launchOutreachAgent() {
+    const leadsJson = prompt('Enter qualified leads (JSON array):', '[{"name": "Jane Smith", "company": "TechCorp", "role": "VP Sales"}]');
+    if (!leadsJson) return;
+
+    try {
+      const leads = JSON.parse(leadsJson);
+      const campaign = {
+        value_prop: 'AI-powered deal flow intelligence',
+        timeline: 'Q4 2026'
+      };
+      await dealflowDashboard.launchOutreachAgent(leads, campaign);
+    } catch (e) {
+      dealflowTerminal.addLine(`Error: Invalid JSON - ${e.message}`, 'error');
+    }
+  }
+
+  /**
+   * Show agent status
+   */
+  async function showAgentStatus() {
+    dealflowTerminal.addLine('\n' + dealflowDashboard.getStatusDisplay(), 'info');
+  }
+
+  /**
+   * Hook AI Command Center "Launch" button (if exists)
+   * This connects the main dashboard button to agent invocation
+   */
+  const launchBtn = document.getElementById('launch-btn');
+  if (launchBtn) {
+    launchBtn.addEventListener('click', async () => {
+      const searchInput = document.getElementById('search-input');
+      const query = searchInput?.value || '';
+      if (query) {
+        await dealflowDashboard.launchResearchAgent(query);
+      }
+    });
+  }
+</script>

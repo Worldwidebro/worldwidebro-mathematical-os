@@ -1,0 +1,30 @@
+{
+  "registry_id": "REG-ENV-001",
+  "updated_at": "2026-09-05",
+  "environments": {
+    "development": {
+      "description": "Local engineering sandbox on MacBook Air",
+      "host": "aces-macbook-air-1",
+      "isolation": "Local workspace sandboxes, ephemeral mocks",
+      "auto_deploy": false
+    },
+    "testing": {
+      "description": "Automated regression and CI test environment",
+      "host": "Ephemeral Docker runners / GitHub Actions",
+      "isolation": "Disposable containers",
+      "auto_deploy": false
+    },
+    "staging": {
+      "description": "Pre-production validation mirror",
+      "host": "mac-studio (isolated docker bridge)",
+      "isolation": "Non-production database schemas",
+      "auto_deploy": false
+    },
+    "production": {
+      "description": "Live production control plane and customer endpoints",
+      "host": "mac-studio + Vercel Edge Network",
+      "isolation": "Encrypted Tailscale overlay + public TLS edge",
+      "auto_deploy": true
+    }
+  }
+}

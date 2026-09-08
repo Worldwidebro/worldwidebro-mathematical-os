@@ -1,0 +1,466 @@
+# Company Brain ID Registry
+
+# Global ID Standards
+# Format: TYPE-000001 (human-readable) + ULID (machine)
+
+prefixes:
+  ORG:
+    description: "Organization/Holding"
+    range: "ORG-000001 to ORG-000999"
+
+  VEN:
+    description: "Venture (~500)"
+    range: "VEN-000001 to VEN-999999"
+
+  REP:
+    description: "Repository (~1600)"
+    range: "REP-000001 to REP-999999"
+
+  CAP:
+    description: "Capability (~200-300)"
+    range: "CAP-000001 to CAP-999999"
+
+  SKL:
+    description: "Skill"
+    range: "SKL-000001 to SKL-999999"
+
+  AGT:
+    description: "Agent"
+    range: "AGT-000001 to AGT-999999"
+
+  MOD:
+    description: "Model"
+    range: "MOD-000001 to MOD-999999"
+
+  TOL:
+    description: "Tool/API"
+    range: "TOL-000001 to TOL-999999"
+
+  MCP:
+    description: "MCP Server"
+    range: "MCP-000001 to MCP-999999"
+
+  WFL:
+    description: "Workflow"
+    range: "WFL-000001 to WFL-999999"
+
+  DEC:
+    description: "Decision"
+    range: "DEC-000001 to DEC-999999"
+
+  CBP:
+    description: "Company Brain Point (500)"
+    range: "CBP-000001 to CBP-000500"
+
+  LOP:
+    description: "Loop (execution engine)"
+    range: "LOP-000001 to LOP-999999"
+
+  SW:
+    description: "Shadow Work Concept (Executive Governance)"
+    range: "SW-000001 to SW-999999"
+
+  PSY:
+    description: "Psychological Mechanism"
+    range: "PSY-000001 to PSY-999999"
+
+  CB:
+    description: "Cognitive Bias (Decision Theory)"
+    range: "CB-000001 to CB-999999"
+
+  OP:
+    description: "Operating Problem (Founder Execution Failure Mode)"
+    range: "OP-000001 to OP-999999"
+
+  BEH:
+    description: "Behavioral Symptom"
+    range: "BEH-000001 to BEH-999999"
+
+  BR:
+    description: "Business Risk"
+    range: "BR-000001 to BR-999999"
+
+  OPR:
+    description: "Operating Response / Countermeasure"
+    range: "OPR-000001 to OPR-999999"
+
+  WGT:
+    description: "Operational Weight (Energy/Attention/Capital Drain)"
+    range: "WGT-000001 to WGT-999999"
+
+  ANC:
+    description: "Operating Anchor (Stagnating Identity/Strategic Attachment)"
+    range: "ANC-000001 to ANC-999999"
+
+  FND:
+    description: "Operating Foundation (Non-Negotiable Preserved Anchor)"
+    range: "FND-000001 to FND-999999"
+
+  TRN:
+    description: "Transmutation Vector (Shadow-to-Sovereign Transformation)"
+    range: "TRN-000001 to TRN-999999"
+
+  DOC:
+    description: "Document / Human-Readable Control File (Billionaire .md OS)"
+    range: "DOC-000001 to DOC-999999"
+
+  ASM:
+    description: "Assumption Entity (Truth Ledger)"
+    range: "ASM-000001 to ASM-999999"
+
+  EVD:
+    description: "Evidence Record (Empirical Verification)"
+    range: "EVD-000001 to EVD-999999"
+
+  CLM:
+    description: "System Knowledge Claim"
+    range: "CLM-000001 to CLM-999999"
+
+  SRC:
+    description: "Source Record (Verification Provenance)"
+    range: "SRC-000001 to SRC-999999"
+
+  CAM:
+    description: "Campaign Entity (Commercial & Growth Engine)"
+    range: "CAM-000001 to CAM-999999"
+
+  CAMP:
+    description: "Campaign Program (Multi-Campaign Umbrella)"
+    range: "CAMP-000001 to CAMP-999999"
+
+  OBJ:
+    description: "Campaign Objective (Quantified Singular Goal)"
+    range: "OBJ-000001 to OBJ-999999"
+
+  AUD:
+    description: "Audience Entity (Total Addressable Market Cohort)"
+    range: "AUD-000001 to AUD-999999"
+
+  SEG:
+    description: "Audience Segment (Homogeneous Sub-Cohort)"
+    range: "SEG-000001 to SEG-999999"
+
+  PER:
+    description: "Persona Blueprint (Buyer & Technical Persona)"
+    range: "PER-000001 to PER-999999"
+
+  INS:
+    description: "Customer / Market Insight (Empirical Finding)"
+    range: "INS-000001 to INS-999999"
+
+  PROB:
+    description: "Customer Friction / Market Problem"
+    range: "PROB-000001 to PROB-999999"
+
+  OFF:
+    description: "Commercial Offer (Grand Slam Value Proposition)"
+    range: "OFF-000001 to OFF-999999"
+
+  MSG:
+    description: "Marketing Message / Copy Concept"
+    range: "MSG-000001 to MSG-999999"
+
+  POS:
+    description: "Category Positioning Statement"
+    range: "POS-000001 to POS-999999"
+
+  CTA:
+    description: "Call To Action Directive"
+    range: "CTA-000001 to CTA-999999"
+
+  CHN:
+    description: "Distribution / Media Channel"
+    range: "CHN-000001 to CHN-999999"
+
+  MED:
+    description: "Media Asset / Creative Specification"
+    range: "MED-000001 to MED-999999"
+
+  CRE:
+    description: "Creative Concept / Execution"
+    range: "CRE-000001 to CRE-999999"
+
+  AST:
+    description: "Marketing / Campaign Asset"
+    range: "AST-000001 to AST-999999"
+
+  CNT:
+    description: "Content Item / Editorial Asset"
+    range: "CNT-000001 to CNT-999999"
+
+  FUN:
+    description: "Funnel / Conversion Pipeline"
+    range: "FUN-000001 to FUN-999999"
+
+  PG:
+    description: "Landing Page / Destination URL"
+    range: "PG-000001 to PG-999999"
+
+  EXP:
+    description: "Campaign Experiment / Split Test"
+    range: "EXP-000001 to EXP-999999"
+
+  HYP:
+    description: "Falsifiable Campaign Hypothesis"
+    range: "HYP-000001 to HYP-999999"
+
+  TST:
+    description: "Marketing Test Execution"
+    range: "TST-000001 to TST-999999"
+
+  MET:
+    description: "Campaign Metric / Telemetry Variable"
+    range: "MET-000001 to MET-999999"
+
+  KPI:
+    description: "Key Performance Indicator"
+    range: "KPI-000001 to KPI-999999"
+
+  EVT:
+    description: "Conversion / Telemetry Event"
+    range: "EVT-000001 to EVT-999999"
+
+  UTM:
+    description: "Tracking Parameter Taxonomy"
+    range: "UTM-000001 to UTM-999999"
+
+  BUD:
+    description: "Campaign Budget Allocation"
+    range: "BUD-000001 to BUD-999999"
+
+  SPN:
+    description: "Campaign Spend Record"
+    range: "SPN-000001 to SPN-999999"
+
+  ATR:
+    description: "Attribution Model / Ledger Record"
+    range: "ATR-000001 to ATR-999999"
+
+  RSK:
+    description: "Campaign Risk Entity"
+    range: "RSK-000001 to RSK-999999"
+
+  DEP:
+    description: "Campaign Operational Dependency"
+    range: "DEP-000001 to DEP-999999"
+
+  APP:
+    description: "Campaign Approval Gate"
+    range: "APP-000001 to APP-999999"
+
+  OWN:
+    description: "Campaign Owner / Single Threaded Lead"
+    range: "OWN-000001 to OWN-999999"
+
+  LND:
+    description: "Captured Lead Record"
+    range: "LND-000001 to LND-999999"
+
+  OPP:
+    description: "Qualified Sales Opportunity"
+    range: "OPP-000001 to OPP-999999"
+
+  CUS:
+    description: "Acquired Customer Record"
+    range: "CUS-000001 to CUS-999999"
+
+  ORD:
+    description: "Commercial Transaction / Order"
+    range: "ORD-000001 to ORD-999999"
+
+  REV:
+    description: "Recognized Revenue Record"
+    range: "REV-000001 to REV-999999"
+
+  LRN:
+    description: "Organizational Learning / Post-Mortem Insight"
+    range: "LRN-000001 to LRN-999999"
+
+  CMP:
+    description: "Competitor Profile"
+    range: "CMP-000001 to CMP-999999"
+
+  BRD:
+    description: "Brand Identity"
+    range: "BRD-000001 to BRD-999999"
+
+  PRD:
+    description: "Product Offering"
+    range: "PRD-000001 to PRD-999999"
+
+  SITE:
+    description: "Web Property / Destination Site"
+    range: "SITE-000001 to SITE-999999"
+
+  URL:
+    description: "Digital Asset / Web Endpoint"
+    range: "URL-000001 to URL-999999"
+
+tools_registered:
+  TOL-000001:
+    name: graft
+    type: code_intelligence_engine
+    status: "registered"
+    source: "https://github.com/trailhq/Graft"
+    version: "0.16.0"
+    key_functions:
+      - codebase_graph_generation
+      - symbol_extraction
+      - dependency_analysis
+      - blast_radius_calculation
+      - code_context_caching
+    implementation_language: "TypeScript/Node.js"
+    node_version_required: "20+"
+    company_brain_base: "57-CODE-INTELLIGENCE"
+
+  TOL-000002:
+    name: fractal
+    type: agent_orchestration_runtime
+    status: "registered"
+    source: "https://github.com/plasma-ai/fractal"
+    version: "1.1.0"
+    license: "Apache-2.0"
+    first_stable_release: "2026-07-21"
+    key_functions:
+      - recursive_agent_decomposition
+      - hierarchical_agent_execution
+      - git_worktree_isolation
+      - multi_agent_parallelism
+      - execution_state_tracking
+      - cost_control
+      - iteration_control
+      - agent_signals
+      - run_tracking
+    storage_backend: "sqlite"
+    uses_tmux: true
+    supports_agents:
+      - claude_code
+      - codex
+      - grok
+      - opencode
+    company_brain_base: "55-LOOP-ENGINEERING, 22-EXECUTION"
+
+  TOL-000003:
+    name: herdr
+    type: agent_runtime
+    status: "registered"
+    source: "https://github.com/herdrdev/herdr"
+    key_functions:
+      - persistent_agent_sessions
+      - terminal_workspace_management
+      - session_reattachment
+      - agent_status_visibility
+      - agent_to_agent_interaction
+    supports_agents:
+      - claude_code
+      - codex
+      - cursor
+      - opencode
+      - grok
+    company_brain_base: "22-EXECUTION, 49-SYSTEM"
+
+  TOL-000004:
+    name: gbrain
+    type: knowledge_synthesis
+    status: "registered"
+    source: "https://github.com/garrytan/gbrain"
+    fabric: ["knowledge", "cognition"]
+    company_brain_base: "08-KNOWLEDGE-GRAPH, 10-MEMORY"
+
+  TOL-000005:
+    name: hivemind
+    type: agent_memory_fabric
+    status: "registered"
+    source: "https://github.com/activeloopai/hivemind"
+    fabric: ["learning", "memory"]
+    company_brain_base: "10-MEMORY, 44-LEARNING"
+
+  TOL-000006:
+    name: loopx
+    type: loop_control_plane
+    status: "registered"
+    source: "https://github.com/huangruiteng/loopx"
+    fabric: ["decision", "governance"]
+    company_brain_base: "20-DECISIONS, 21-POLICY"
+
+  TOL-000007:
+    name: task-master
+    type: work_planner
+    status: "registered"
+    source: "https://github.com/eyaltoledano/claude-task-master"
+    fabric: ["discovery", "planning"]
+    company_brain_base: "19-ORCHESTRATION, 28-PRODUCT"
+
+  TOL-000008:
+    name: swarmforge
+    type: agent_orchestration
+    status: "registered"
+    source: "https://github.com/unclebob/swarm-forge"
+    fabric: ["agent", "execution"]
+    company_brain_base: "16-AGENTS, 19-ORCHESTRATION"
+
+  TOL-000009:
+    name: gstack
+    type: engineering_operating_system
+    status: "registered"
+    source: "https://github.com/garrytan/gstack"
+    fabric: ["agent", "execution", "learning"]
+    company_brain_base: "46-GOVERNANCE, 48-AUTOMATION"
+
+  TOL-000010:
+    name: archify
+    type: architecture_intelligence
+    status: "registered"
+    source: "https://github.com/tt-a1i/archify"
+    fabric: ["tools", "knowledge"]
+    company_brain_base: "13-REPOSITORIES, 49-SYSTEM"
+
+  TOL-000011:
+    name: vibesec-skill
+    type: security_verification
+    status: "registered"
+    source: "https://github.com/BehiSecc/VibeSec-Skill"
+    fabric: ["security", "verification"]
+    company_brain_base: "32-SECURITY, 46-GOVERNANCE"
+
+  TOL-000012:
+    name: cli-anything
+    type: tool_accessibility_layer
+    status: "registered"
+    source: "https://github.com/HKUDS/CLI-Anything"
+    fabric: ["tools", "capabilities"]
+    company_brain_base: "14-CAPABILITIES, 18-TOOLS"
+
+  TOL-000013:
+    name: openwork
+    type: capability_control_plane
+    status: "registered"
+    source: "https://github.com/different-ai/openwork"
+    fabric: ["tools", "agent"]
+    company_brain_base: "14-CAPABILITIES, 16-AGENTS"
+
+  TOL-000014:
+    name: humanizer
+    type: communication_quality
+    status: "registered"
+    source: "https://github.com/blader/humanizer"
+    fabric: ["communication", "cognition"]
+    company_brain_base: "09-KNOWLEDGE, 27-CUSTOMERS"
+
+  TOL-000015:
+    name: i-have-adhd
+    type: attention_interface
+    status: "registered"
+    source: "https://github.com/ayghri/i-have-adhd"
+    fabric: ["cognition", "communication"]
+    company_brain_base: "12-CONTEXT, 19-ORCHESTRATION"
+
+  TOL-000016:
+    name: trigger.dev
+    type: durable_execution
+    status: "registered"
+    source: "https://github.com/triggerdotdev/trigger.dev"
+    fabric: ["execution", "governance"]
+    company_brain_base: "22-EXECUTION, 41-OBSERVABILITY"
+
+status: "✅ 16 tools registered (TOL-000001 to TOL-000016) | 3-core + 13 fabric extension tools locked"

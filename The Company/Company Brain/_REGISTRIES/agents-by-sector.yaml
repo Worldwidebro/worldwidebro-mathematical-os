@@ -1,0 +1,144 @@
+# ==============================================================================
+# AGENTS BY SECTOR (CANONICAL AGENT & SWARM MAPPING)
+# ==============================================================================
+# Authority: Agent Control Plane (CP-006) & Infrastructure Control Plane (CP-027)
+# Generated: 2026-09-06
+# ==============================================================================
+
+metadata:
+  version: "1.0.0"
+  total_sectors: 35
+  total_agent_archetypes: 20
+  last_updated: "2026-09-06"
+
+agents:
+  AGT-ARCH-001:
+    name: "System Architect"
+    handle: "@architect"
+    primary_sectors: [SEC-024, SEC-032]
+    control_planes: [CP-001, CP-024, CP-027]
+    prompt: "_PROMPTS/01_IDENTITY-AWARENESS.md"
+    skills: ["capability-mapping", "repository-intelligence"]
+
+  AGT-DEV-002:
+    name: "Autonomous Coding Assistant"
+    handle: "@antigravity"
+    primary_sectors: [SEC-024, SEC-032]
+    control_planes: [CP-024, CP-027]
+    prompt: "_PROMPTS/10_PRE-ACTION-AWARENESS.md"
+    skills: ["google-antigravity-sdk", "modern-web-guidance", "omniroute"]
+
+  AGT-SEC-003:
+    name: "Security & Secrets Auditor"
+    handle: "@security"
+    primary_sectors: [SEC-033, SEC-024]
+    control_planes: [CP-033, CP-027]
+    prompt: "_PROMPTS/07_PROVENANCE-VERIFICATION.md"
+    skills: ["security"]
+
+  AGT-QA-004:
+    name: "Verification & Test Engineer"
+    handle: "@qa"
+    primary_sectors: [SEC-024, SEC-002, SEC-017]
+    control_planes: [CP-024, CP-027]
+    prompt: "_PROMPTS/02_CURRENT-STATE-AWARENESS.md"
+    skills: ["testing"]
+
+  AGT-FIN-005:
+    name: "Quantitative Financial Analyst"
+    handle: "@financial-analyst"
+    primary_sectors: [SEC-008, SEC-030, SEC-037]
+    control_planes: [CP-020, CP-030]
+    prompt: "_PROMPTS/06_DECISION-MEMORY.md"
+
+  AGT-DEAL-006:
+    name: "B2B Deal Strategist"
+    handle: "@deal-strategist"
+    primary_sectors: [SEC-027, SEC-028, SEC-029]
+    control_planes: [CP-027, CP-025]
+    prompt: "_PROMPTS/04_CONNECTION-REASONING.md"
+
+  AGT-OUT-007:
+    name: "Outbound Lead Strategist"
+    handle: "@outbound-strategist"
+    primary_sectors: [SEC-019, SEC-025, SEC-014]
+    control_planes: [CP-019, CP-025]
+    prompt: "_PROMPTS/05_PATTERN-RECOGNITION.md"
+
+  AGT-DB-008:
+    name: "Database & Graph Optimizer"
+    handle: "@database-optimizer"
+    primary_sectors: [SEC-024, SEC-032]
+    control_planes: [CP-027]
+    skills: ["deployment", "observability"]
+
+  AGT-PAY-009:
+    name: "Payments & Billing Engineer"
+    handle: "@payments-engineer"
+    primary_sectors: [SEC-008, SEC-030]
+    control_planes: [CP-020, CP-030]
+
+  AGT-LOG-010:
+    name: "Logistics Dispatch Specialist"
+    handle: "@dispatch-agent"
+    primary_sectors: [SEC-017]
+    control_planes: [CP-017, CP-026]
+
+  AGT-CON-011:
+    name: "Field Operations & Punchlist Agent"
+    handle: "@construction-agent"
+    primary_sectors: [SEC-002]
+    control_planes: [CP-012, CP-026]
+
+  AGT-PORT-019:
+    name: "Portfolio Manager"
+    handle: "@portfolio-manager"
+    primary_sectors: [ALL_SECTORS]
+    control_planes: [CP-005, CP-001]
+    prompt: ".agents/agents/portfolio-manager.md"
+    skills: ["agency-portfolio-manager", "repository-intelligence"]
+
+  AGT-PROD-020:
+    name: "Product Manager"
+    handle: "@product-manager"
+    primary_sectors: [ALL_SECTORS]
+    control_planes: [CP-005, CP-012]
+    prompt: ".agents/agents/product-manager.md"
+    skills: ["agency-product-manager", "agency-sprint-prioritizer"]
+
+sector_allocation:
+  SEC-001: [AGT-OUT-007]
+  SEC-002: [AGT-CON-011, AGT-QA-004]
+  SEC-003: [AGT-DEV-002]
+  SEC-004: [AGT-OUT-007]
+  SEC-005: [AGT-DEV-002]
+  SEC-006: [AGT-ARCH-001]
+  SEC-007: [AGT-ARCH-001]
+  SEC-008: [AGT-FIN-005, AGT-PAY-009]
+  SEC-009: [AGT-OUT-007]
+  SEC-010: [AGT-OUT-007]
+  SEC-011: [AGT-DEV-002]
+  SEC-012: [AGT-ARCH-001, AGT-SEC-003]
+  SEC-013: [AGT-OUT-007]
+  SEC-014: [AGT-OUT-007]
+  SEC-015: [AGT-FIN-005]
+  SEC-016: [AGT-SEC-003]
+  SEC-017: [AGT-LOG-010, AGT-QA-004]
+  SEC-018: [AGT-ARCH-001]
+  SEC-019: [AGT-OUT-007]
+  SEC-020: [AGT-DEAL-006]
+  SEC-021: [AGT-OUT-007, AGT-PAY-009]
+  SEC-022: [AGT-ARCH-001, AGT-SEC-003]
+  SEC-023: [AGT-DEAL-006]
+  SEC-024: [AGT-ARCH-001, AGT-DEV-002, AGT-DB-008, AGT-QA-004]
+  SEC-025: [AGT-ARCH-001]
+  SEC-026: [AGT-ARCH-001]
+  SEC-027: [AGT-DEAL-006, AGT-FIN-005]
+  SEC-028: [AGT-DEAL-006, AGT-DEV-002]
+  SEC-029: [AGT-DEV-002, AGT-PAY-009]
+  SEC-030: [AGT-FIN-005, AGT-PAY-009]
+  SEC-031: [AGT-ARCH-001]
+  SEC-032: [AGT-DEV-002, AGT-ARCH-001, AGT-DB-008]
+  SEC-033: [AGT-SEC-003, AGT-ARCH-001]
+  SEC-034: [AGT-DEV-002, AGT-FIN-005]
+  SEC-035: []

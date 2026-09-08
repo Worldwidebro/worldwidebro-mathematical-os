@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "1.0.0",
+  "metrics": [
+    {
+      "id": "MET-REV-001",
+      "name": "Net Paid Cash Collected",
+      "category": "FINANCIAL",
+      "unit": "USD",
+      "target": 37500,
+      "actual": 0
+    },
+    {
+      "id": "MET-OPP-001",
+      "name": "Qualified Discovery Conversations",
+      "category": "PIPELINE",
+      "unit": "conversations",
+      "target": 15,
+      "actual": 0
+    },
+    {
+      "id": "MET-AUD-001",
+      "name": "Closed Audit Contracts",
+      "category": "CONVERSION",
+      "unit": "deals",
+      "target": 5,
+      "actual": 0
+    },
+    {
+      "id": "MET-CTR-001",
+      "name": "Email Positive Response Rate",
+      "category": "OUTREACH",
+      "unit": "percentage",
+      "target": 8.0,
+      "actual": 0.0
+    }
+  ]
+}

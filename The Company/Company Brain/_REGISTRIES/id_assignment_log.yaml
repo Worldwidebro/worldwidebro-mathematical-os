@@ -1,0 +1,34 @@
+# ID Assignment Log
+# Track what IDs have been assigned
+
+assignments:
+  # Organizations
+  - date: "2026-09-01"
+    type: "ORG"
+    ref_id: "ORG-000001"
+    name: "Worldwidebro Holdings"
+    assigned_by: "system"
+    status: "active"
+
+  # Repositories (need to assign all 1600)
+  - date: "2026-09-01"
+    type: "REP"
+    ref_id: "REP-000001"
+    name: "claude-home"
+    github_url: "https://github.com/worldwidebro/claude-home"
+    assigned_by: "system"
+    status: "pending_verification"
+
+  # Control Points
+  - date: "2026-09-01"
+    type: "CBP"
+    ref_id: "CBP-000001 to CBP-000500"
+    count: 500
+    status: "framework_ready"
+
+pending:
+  - "Assign VEN-000001 to VEN-999999 (500 ventures)"
+  - "Assign REP-000002 to REP-001600 (1600 repos)"
+  - "Assign CAP-000001 to CAP-000300 (300 capabilities)"
+  - "Verify all external IDs mapped"
+  - "Update Neo4j with ID schema"

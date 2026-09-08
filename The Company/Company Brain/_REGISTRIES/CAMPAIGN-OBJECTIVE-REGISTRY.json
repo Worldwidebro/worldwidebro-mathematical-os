@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "1.0.0",
+  "objectives": [
+    {
+      "id": "OBJ-001",
+      "campaign_id": "CAM-001",
+      "name": "Close 5 Paid Local-First AI Audits ($37.5k Net Cash)",
+      "primary": true,
+      "metric_id": "MET-REV-001",
+      "baseline_value": 0,
+      "target_value": 5,
+      "unit": "audits",
+      "revenue_target_usd": 37500,
+      "deadline": "2026-10-15",
+      "success_criteria": "5 signed SOWs with 50% upfront deposits collected in escrow.",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "OBJ-002",
+      "campaign_id": "CAM-001",
+      "name": "Establish Benchmark Data on 20 Codebases",
+      "primary": false,
+      "metric_id": "MET-DAT-001",
+      "baseline_value": 0,
+      "target_value": 20,
+      "unit": "repositories",
+      "revenue_target_usd": 0,
+      "deadline": "2026-10-30",
+      "success_criteria": "Anonymized token savings and AST benchmark curves saved in Knowledge Core.",
+      "status": "PLANNED"
+    }
+  ]
+}

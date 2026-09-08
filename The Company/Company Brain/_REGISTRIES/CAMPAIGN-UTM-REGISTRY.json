@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "1.0.0",
+  "taxonomies": [
+    {
+      "id": "UTM-001",
+      "campaign_id": "CAM-001",
+      "utm_source": [
+        "direct_outbound",
+        "linkedin",
+        "x_twitter",
+        "substack"
+      ],
+      "utm_medium": [
+        "email",
+        "inmail",
+        "social_post",
+        "newsletter"
+      ],
+      "utm_campaign": [
+        "local-ai-audit-q3-2026"
+      ],
+      "utm_term": [
+        "repo-intelligence",
+        "token-compression",
+        "local-mlx",
+        "private-ai"
+      ],
+      "utm_content": [
+        "tear_down_v1",
+        "roi_calculator",
+        "case_study_mlx"
+      ]
+    }
+  ]
+}

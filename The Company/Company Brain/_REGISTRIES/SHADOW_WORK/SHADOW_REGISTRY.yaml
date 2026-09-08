@@ -1,0 +1,718 @@
+# ==============================================================================
+# CANONICAL REGISTRY: Shadow Work Knowledge Graph (SW-KG)
+# Version: 1.0.0
+# Authority: Knowledge Control Plane (CP-013) & Ontology Architecture (CP-027)
+# Linked Data: Wikidata persistent QIDs + Wikipedia canonical articles + DBpedia
+# ==============================================================================
+
+version: "1.0.0"
+last_updated: "2026-09-05"
+description: "Machine-readable registry mapping founder shadow work, cognitive biases, operating problems, business risks, and governance countermeasures into an RDF-compatible property graph."
+
+# ==============================================================================
+# 1. SHADOW WORK ENTITIES (SW-*)
+# ==============================================================================
+shadow_concepts:
+  - id: "SW-EGO-001"
+    type: "shadow_concept"
+    name: "Ego"
+    slug: "ego"
+    domain: ["psychology", "leadership", "founder", "decision_making"]
+    tags:
+      domain: ["psychology", "leadership"]
+      layer: "internal"
+      severity: "critical"
+      timeframe: "daily"
+      intervention: "awareness"
+    definition: "A person's sense of self-importance, identity, status, or self-concept that can distort judgment, prevent disconfirmation, or induce defensive behavior."
+    wikidata:
+      qid: "Q484678"
+      uri: "https://www.wikidata.org/entity/Q484678"
+    wikipedia:
+      en: "https://en.wikipedia.org/wiki/Ego"
+    dbpedia:
+      uri: "http://dbpedia.org/resource/Ego"
+    related: ["SW-IDENTITY-001", "SW-NARCISSISM-001", "SW-VALIDATION-001", "SW-STATUS-001", "CB-012"]
+    causes: ["SW-VALIDATION-001", "SW-STATUS-001"]
+    behaviors: ["CB-001", "OP-015", "SW-CONFLICT-001"]
+    business_risks: ["BR-001", "BR-002", "BR-013"]
+    countermeasures: ["OPR-001", "OPR-004"]
+    questions:
+      - "Where am I defending my identity instead of evaluating evidence?"
+      - "What evidence would change my mind?"
+    metrics: ["contradictory_evidence_accepted", "decisions_reversed", "red_team_reviews"]
+    status: "active"
+    version: "1.0"
+
+  - id: "SW-COMP-001"
+    type: "shadow_concept"
+    name: "Complexity Addiction"
+    slug: "complexity-addiction"
+    domain: ["operations", "founder", "decision_making", "psychology"]
+    tags:
+      domain: ["operations", "founder"]
+      layer: "operational"
+      severity: "critical"
+      timeframe: "daily"
+      intervention: "governance"
+    definition: "The psychological compulsion to accumulate systems, repositories, architectures, and entities to simulate progress while avoiding direct market confrontation."
+    wikidata:
+      qid: "Q1360677"
+      uri: "https://www.wikidata.org/entity/Q1360677"
+    wikipedia:
+      en: "https://en.wikipedia.org/wiki/Illusion_of_control"
+    dbpedia:
+      uri: "http://dbpedia.org/resource/Illusion_of_control"
+    related: ["SW-AVOID-001", "OP-001", "OP-003", "OP-023", "CB-011"]
+    causes: ["SW-FEAR-001", "SW-FEAR-003", "SW-EGO-010"]
+    behaviors: ["OP-002", "OP-003", "OP-006", "OP-022"]
+    business_risks: ["BR-004", "BR-010", "BR-016", "BR-022"]
+    countermeasures: ["OPR-006", "OPR-018", "OPR-025"]
+    questions:
+      - "Am I building infrastructure because a customer demanded it, or because building feels safer than selling?"
+      - "If I had to cut 80% of my architecture today, what directly produces cash?"
+    metrics: ["revenue_to_repo_ratio", "active_containers_pruned", "unmonetized_projects_killed"]
+    status: "active"
+    version: "1.0"
+
+  - id: "SW-FEAR-001"
+    type: "shadow_concept"
+    name: "Fear of Failure"
+    slug: "fear-of-failure"
+    domain: ["psychology", "founder", "decision_making"]
+    tags:
+      domain: ["psychology", "founder"]
+      layer: "internal"
+      severity: "critical"
+      timeframe: "daily"
+      intervention: "awareness"
+    definition: "Anticipatory anxiety regarding commercial, intellectual, or reputational defeat leading to paralysis, over-preparation, or risk-elimination behavior."
+    wikidata:
+      qid: "Q1197479"
+      uri: "https://www.wikidata.org/entity/Q1197479"
+    wikipedia:
+      en: "https://en.wikipedia.org/wiki/Loss_aversion"
+    dbpedia:
+      uri: "http://dbpedia.org/resource/Loss_aversion"
+    related: ["SW-PERF-001", "CB-005", "OP-011"]
+    causes: ["SW-IDENTITY-001", "SW-STATUS-001"]
+    behaviors: ["OP-009", "OP-010", "OP-029"]
+    business_risks: ["BR-004", "BR-014", "BR-021"]
+    countermeasures: ["OPR-002", "OPR-017", "OPR-021"]
+    questions:
+      - "What decision am I postponing because I fear the outcome?"
+      - "What is the worst-case scenario if this fails, and is it reversible?"
+    metrics: ["experiments_launched", "uncomfortable_decisions_executed"]
+    status: "active"
+    version: "1.0"
+
+  - id: "SW-MONEY-001"
+    type: "shadow_concept"
+    name: "Scarcity Mindset & Revenue Avoidance"
+    slug: "scarcity-mindset"
+    domain: ["capital_allocation", "psychology", "founder"]
+    tags:
+      domain: ["capital_allocation", "psychology"]
+      layer: "financial"
+      severity: "high"
+      timeframe: "weekly"
+      intervention: "process"
+    definition: "A fixation on zero-cost resources, free tiers, and penny-pinching compute that subverts high-leverage commercial sales, investment, and bold capital allocation."
+    wikidata:
+      qid: "Q377858"
+      uri: "https://www.wikidata.org/entity/Q377858"
+    wikipedia:
+      en: "https://en.wikipedia.org/wiki/Prospect_theory"
+    dbpedia:
+      uri: "http://dbpedia.org/resource/Prospect_theory"
+    related: ["SW-SCARCITY-001", "OP-012", "OP-013", "BR-008"]
+    causes: ["SW-FEAR-005", "SW-FEAR-003"]
+    behaviors: ["OP-012", "OP-013", "OP-022"]
+    business_risks: ["BR-008", "BR-014", "BR-022"]
+    countermeasures: ["OPR-013", "OPR-014", "OPR-011"]
+    questions:
+      - "Am I spending $1,000 worth of my cognitive time to save $5 in API tokens?"
+      - "Why haven't I put a $10,000 offer in front of an enterprise buyer this week?"
+    metrics: ["outbound_commercial_pitches", "cash_collected", "gross_margin_percentage"]
+    status: "active"
+    version: "1.0"
+
+  - id: "SW-BOTTLENECK-001"
+    type: "shadow_concept"
+    name: "Founder Bottleneck & God-King Delusion"
+    slug: "founder-bottleneck"
+    domain: ["leadership", "governance", "operations"]
+    tags:
+      domain: ["leadership", "operations"]
+      layer: "organizational"
+      severity: "critical"
+      timeframe: "weekly"
+      intervention: "delegation"
+    definition: "The psychological refusal to delegate authority, context, and outcomes, forcing every technical and business decision through the founder's personal terminal."
+    wikidata:
+      qid: "Q1424911"
+      uri: "https://www.wikidata.org/entity/Q1424911"
+    wikipedia:
+      en: "https://en.wikipedia.org/wiki/Span_of_control"
+    dbpedia:
+      uri: "http://dbpedia.org/resource/Span_of_control"
+    related: ["SW-CONTROL-001", "SW-TRUST-001", "OP-014", "OP-015"]
+    causes: ["SW-EGO-009", "SW-FEAR-006", "SW-IDENTITY-001"]
+    behaviors: ["OP-014", "OP-015", "OP-026"]
+    business_risks: ["BR-003", "BR-007", "BR-010", "BR-023", "BR-024"]
+    countermeasures: ["OPR-007", "OPR-008", "OPR-023", "OPR-024"]
+    questions:
+      - "If I locked my laptop in a safe for 14 days, what specifically breaks?"
+      - "Am I keeping myself as the central router to feel indispensable?"
+    metrics: ["founder_unassisted_cycle_time", "bus_factor_rating", "autonomous_agent_decisions"]
+    status: "active"
+    version: "1.0"
+
+# ==============================================================================
+# 2. COGNITIVE BIASES (CB-*)
+# ==============================================================================
+cognitive_biases:
+  - id: "CB-001"
+    name: "Confirmation Bias"
+    slug: "confirmation-bias"
+    wikidata: { qid: "Q189283", uri: "https://www.wikidata.org/entity/Q189283" }
+    wikipedia: { en: "https://en.wikipedia.org/wiki/Confirmation_bias" }
+    definition: "The tendency to search for, interpret, favor, and recall information in a way that confirms or supports prior beliefs or architectural choices."
+
+  - id: "CB-002"
+    name: "Anchoring Effect"
+    slug: "anchoring-effect"
+    wikidata: { qid: "Q489110", uri: "https://www.wikidata.org/entity/Q489110" }
+    wikipedia: { en: "https://en.wikipedia.org/wiki/Anchoring_(cognitive_bias)" }
+    definition: "The tendency to rely too heavily on the first piece of information encountered when making decisions, even if obsolete."
+
+  - id: "CB-003"
+    name: "Availability Heuristic"
+    slug: "availability-heuristic"
+    wikidata: { qid: "Q790076", uri: "https://www.wikidata.org/entity/Q790076" }
+    wikipedia: { en: "https://en.wikipedia.org/wiki/Availability_heuristic" }
+    definition: "Overestimating the likelihood of events that are readily available in memory, such as recent technical outages or sensational failures."
+
+  - id: "CB-004"
+    name: "Status Quo Bias"
+    slug: "status-quo-bias"
+    wikidata: { qid: "Q1752495", uri: "https://www.wikidata.org/entity/Q1752495" }
+    wikipedia: { en: "https://en.wikipedia.org/wiki/Status_quo_bias" }
+    definition: "An emotional preference for the current state of affairs, resisting necessary migrations or venture closures."
+
+  - id: "CB-005"
+    name: "Loss Aversion"
+    slug: "loss-aversion"
+    wikidata: { qid: "Q1197479", uri: "https://www.wikidata.org/entity/Q1197479" }
+    wikipedia: { en: "https://en.wikipedia.org/wiki/Loss_aversion" }
+    definition: "The psychological reality that losses feel twice as impactful as equivalent gains, leading to extreme risk avoidance in sales."
+
+  - id: "CB-006"
+    name: "Overconfidence Effect"
+    slug: "overconfidence-effect"
+    wikidata: { qid: "Q1071295", uri: "https://www.wikidata.org/entity/Q1071295" }
+    wikipedia: { en: "https://en.wikipedia.org/wiki/Overconfidence_effect" }
+    definition: "A well-established bias in which a person's subjective confidence in their judgments is reliably greater than the objective accuracy."
+
+  - id: "CB-007"
+    name: "Optimism Bias"
+    slug: "optimism-bias"
+    wikidata: { qid: "Q1936384", uri: "https://www.wikidata.org/entity/Q1936384" }
+    wikipedia: { en: "https://en.wikipedia.org/wiki/Optimism_bias" }
+    definition: "Believing that one's own ventures or systems are far less likely to fail or face market rejection than standard base rates indicate."
+
+  - id: "CB-008"
+    name: "Planning Fallacy"
+    slug: "planning-fallacy"
+    wikidata: { qid: "Q1353982", uri: "https://www.wikidata.org/entity/Q1353982" }
+    wikipedia: { en: "https://en.wikipedia.org/wiki/Planning_fallacy" }
+    definition: "Systematically underestimating the time, costs, and risks of future actions while overestimating their benefits."
+
+  - id: "CB-009"
+    name: "Sunk Cost Fallacy"
+    slug: "sunk-cost-fallacy"
+    wikidata: { qid: "Q214430", uri: "https://www.wikidata.org/entity/Q214430" }
+    wikipedia: { en: "https://en.wikipedia.org/wiki/Sunk_cost" }
+    definition: "Continuing an endeavor once an investment in money, effort, or time has been made, rather than evaluating future payoff."
+
+  - id: "CB-010"
+    name: "Escalation of Commitment"
+    slug: "escalation-of-commitment"
+    wikidata: { qid: "Q1366914", uri: "https://www.wikidata.org/entity/Q1366914" }
+    wikipedia: { en: "https://en.wikipedia.org/wiki/Escalation_of_commitment" }
+    definition: "A human behavior pattern where an individual facing increasingly negative outcomes nevertheless continues the behavior instead of altering course."
+
+  - id: "CB-011"
+    name: "Illusion of Control"
+    slug: "illusion-of-control"
+    wikidata: { qid: "Q1360677", uri: "https://www.wikidata.org/entity/Q1360677" }
+    wikipedia: { en: "https://en.wikipedia.org/wiki/Illusion_of_control" }
+    definition: "The tendency to overestimate one's ability to control external market and economic events through internal engineering."
+
+  - id: "CB-012"
+    name: "Self-Serving Bias"
+    slug: "self-serving-bias"
+    wikidata: { qid: "Q1143892", uri: "https://www.wikidata.org/entity/Q1143892" }
+    wikipedia: { en: "https://en.wikipedia.org/wiki/Self-serving_bias" }
+    definition: "Attributing successes to personal ability and effort, while attributing failures to external factors, vendors, or market conditions."
+
+  - id: "CB-013"
+    name: "Survivorship Bias"
+    slug: "survivorship-bias"
+    wikidata: { qid: "Q1542848", uri: "https://www.wikidata.org/entity/Q1542848" }
+    wikipedia: { en: "https://en.wikipedia.org/wiki/Survivorship_bias" }
+    definition: "Concentrating on the people or things that passed some selection process while overlooking those that failed."
+
+  - id: "CB-014"
+    name: "Selection Bias"
+    slug: "selection-bias"
+    wikidata: { qid: "Q1056557", uri: "https://www.wikidata.org/entity/Q1056557" }
+    wikipedia: { en: "https://en.wikipedia.org/wiki/Selection_bias" }
+    definition: "The bias introduced by the selection of individuals, groups, or data for analysis in such a way that proper randomization is not achieved."
+
+  - id: "CB-015"
+    name: "Hindsight Bias"
+    slug: "hindsight-bias"
+    wikidata: { qid: "Q6897184", uri: "https://www.wikidata.org/entity/Q6897184" }
+    wikipedia: { en: "https://en.wikipedia.org/wiki/Hindsight_bias" }
+    definition: "The common tendency for people to perceive past events that have already occurred as having been more predictable than they were."
+
+  - id: "CB-016"
+    name: "Fundamental Attribution Error"
+    slug: "fundamental-attribution-error"
+    wikidata: { qid: "Q596541", uri: "https://www.wikidata.org/entity/Q596541" }
+    wikipedia: { en: "https://en.wikipedia.org/wiki/Fundamental_attribution_error" }
+    definition: "The tendency to explain someone's behavior based on internal qualities, while underestimating situational context."
+
+  - id: "CB-017"
+    name: "Groupthink"
+    slug: "groupthink"
+    wikidata: { qid: "Q216390", uri: "https://www.wikidata.org/entity/Q216390" }
+    wikipedia: { en: "https://en.wikipedia.org/wiki/Groupthink" }
+    definition: "A psychological phenomenon that occurs within a group in which the desire for harmony results in an irrational or dysfunctional decision."
+
+  - id: "CB-018"
+    name: "Recency Bias"
+    slug: "recency-bias"
+    wikidata: { qid: "Q11081393", uri: "https://www.wikidata.org/entity/Q11081393" }
+    wikipedia: { en: "https://en.wikipedia.org/wiki/Recency_bias" }
+    definition: "A cognitive bias that favors recent events over historic ones when evaluating systemic performance."
+
+  - id: "CB-019"
+    name: "Negativity Bias"
+    slug: "negativity-bias"
+    wikidata: { qid: "Q1974737", uri: "https://www.wikidata.org/entity/Q1974737" }
+    wikipedia: { en: "https://en.wikipedia.org/wiki/Negativity_bias" }
+    definition: "The notion that things of a more negative nature have a greater effect on one's psychological state than neutral or positive things."
+
+  - id: "CB-020"
+    name: "Mere-Exposure Effect"
+    slug: "mere-exposure-effect"
+    wikidata: { qid: "Q1414440", uri: "https://www.wikidata.org/entity/Q1414440" }
+    wikipedia: { en: "https://en.wikipedia.org/wiki/Mere-exposure_effect" }
+    definition: "A psychological phenomenon by which people tend to develop a preference for things merely because they are familiar with them."
+
+  - id: "CB-021"
+    name: "Endowment Effect"
+    slug: "endowment-effect"
+    wikidata: { qid: "Q1197479", uri: "https://www.wikidata.org/entity/Q1197479" }
+    wikipedia: { en: "https://en.wikipedia.org/wiki/Endowment_effect" }
+    definition: "Valuing an owned codebase, venture, or asset more highly merely because one owns it."
+
+  - id: "CB-022"
+    name: "Dunning-Kruger Effect"
+    slug: "dunning-kruger-effect"
+    wikidata: { qid: "Q1936384", uri: "https://www.wikidata.org/entity/Q1936384" }
+    wikipedia: { en: "https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect" }
+    definition: "A cognitive bias in which people with limited competence in a domain greatly overestimate their capability."
+
+  - id: "CB-023"
+    name: "Cognitive Dissonance"
+    slug: "cognitive-dissonance"
+    wikidata: { qid: "Q181977", uri: "https://www.wikidata.org/entity/Q181977" }
+    wikipedia: { en: "https://en.wikipedia.org/wiki/Cognitive_dissonance" }
+    definition: "The mental discomfort experienced by a person holding contradictory beliefs, ideas, or values simultaneously."
+
+  - id: "CB-024"
+    name: "Motivated Reasoning"
+    slug: "motivated-reasoning"
+    wikidata: { qid: "Q6897184", uri: "https://www.wikidata.org/entity/Q6897184" }
+    wikipedia: { en: "https://en.wikipedia.org/wiki/Motivated_reasoning" }
+    definition: "Using emotionally biased reasoning to produce justifications or make decisions that are most desired rather than objectively true."
+
+  - id: "CB-025"
+    name: "Outcome Bias"
+    slug: "outcome-bias"
+    wikidata: { qid: "Q7111956", uri: "https://www.wikidata.org/entity/Q7111956" }
+    wikipedia: { en: "https://en.wikipedia.org/wiki/Outcome_bias" }
+    definition: "An error made in evaluating the quality of a decision when its outcome is already known, ignoring decision quality."
+
+  - id: "CB-026"
+    name: "Base-Rate Neglect"
+    slug: "base-rate-neglect"
+    wikidata: { qid: "Q809831", uri: "https://www.wikidata.org/entity/Q809831" }
+    wikipedia: { en: "https://en.wikipedia.org/wiki/Base_rate_fallacy" }
+    definition: "Ignoring general statistical probabilities in favor of specific, evocative case information."
+
+  - id: "CB-027"
+    name: "Framing Effect"
+    slug: "framing-effect"
+    wikidata: { qid: "Q1450630", uri: "https://www.wikidata.org/entity/Q1450630" }
+    wikipedia: { en: "https://en.wikipedia.org/wiki/Framing_effect_(psychology)" }
+    definition: "Drawing different conclusions from the same information depending on how that information is presented."
+
+  - id: "CB-028"
+    name: "Gambler's Fallacy"
+    slug: "gamblers-fallacy"
+    wikidata: { qid: "Q869389", uri: "https://www.wikidata.org/entity/Q869389" }
+    wikipedia: { en: "https://en.wikipedia.org/wiki/Gambler%27s_fallacy" }
+    definition: "The incorrect belief that, if a particular event occurs more frequently than normal during the past, it is less likely to happen in the future."
+
+  - id: "CB-029"
+    name: "Hyperbolic Discounting"
+    slug: "hyperbolic-discounting"
+    wikidata: { qid: "Q1641032", uri: "https://www.wikidata.org/entity/Q1641032" }
+    wikipedia: { en: "https://en.wikipedia.org/wiki/Hyperbolic_discounting" }
+    definition: "Preferring smaller, immediate rewards (e.g. dopamine of coding a new tool) over larger, later rewards (e.g. building a sustainable business)."
+
+  - id: "CB-030"
+    name: "Decision Fatigue"
+    slug: "decision-fatigue"
+    wikidata: { qid: "Q1182285", uri: "https://www.wikidata.org/entity/Q1182285" }
+    wikipedia: { en: "https://en.wikipedia.org/wiki/Decision_fatigue" }
+    definition: "Deteriorating quality of decisions made by an individual after a long session of decision making."
+
+# ==============================================================================
+# 3. OPERATING PROBLEMS (OP-*)
+# ==============================================================================
+operating_problems:
+  - id: "OP-001"
+    name: "Complexity Addiction"
+    slug: "complexity-addiction"
+    description: "Confusing systems, repos, and agents with actual economic progress."
+  - id: "OP-002"
+    name: "Tool Accumulation"
+    slug: "tool-accumulation"
+    description: "Collecting developer tools, APIs, and frameworks without clear workflows."
+  - id: "OP-003"
+    name: "Repository Accumulation"
+    slug: "repository-accumulation"
+    description: "Accumulating hundreds of code repos with zero commercial velocity."
+  - id: "OP-004"
+    name: "Company Accumulation"
+    slug: "company-accumulation"
+    description: "Incorporating or tracking dozens of ventures without proving a single unit economic engine."
+  - id: "OP-005"
+    name: "Feature Accumulation"
+    slug: "feature-accumulation"
+    description: "Continuously adding features before validating core value proposition."
+  - id: "OP-006"
+    name: "Agent Accumulation"
+    slug: "agent-accumulation"
+    description: "Building fleets of autonomous agents to automate unverified, chaotic processes."
+  - id: "OP-007"
+    name: "Automation Addiction"
+    slug: "automation-addiction"
+    description: "Automating tasks that should have been eliminated or done manually first."
+  - id: "OP-008"
+    name: "Dashboard Addiction"
+    slug: "dashboard-addiction"
+    description: "Monitoring vanity metrics and health endpoints rather than customer transactions."
+  - id: "OP-009"
+    name: "Research Avoidance"
+    slug: "research-avoidance"
+    description: "Using research to delay making irreversible or uncomfortable strategic decisions."
+  - id: "OP-010"
+    name: "Planning Avoidance"
+    slug: "planning-avoidance"
+    description: "Substituting endless strategic planning documents for actual market execution."
+  - id: "OP-011"
+    name: "Execution Avoidance"
+    slug: "execution-avoidance"
+    description: "Hiding in internal development to avoid the vulnerability of customer contact."
+  - id: "OP-012"
+    name: "Sales Avoidance"
+    slug: "sales-avoidance"
+    description: "Refusing to ask for money or propose commercial contracts."
+  - id: "OP-013"
+    name: "Customer Avoidance"
+    slug: "customer-avoidance"
+    description: "Building in isolation without showing progress to real prospective buyers."
+  - id: "OP-014"
+    name: "Delegation Resistance"
+    slug: "delegation-resistance"
+    description: "Believing nobody can execute tasks to the founder's subjective standard."
+  - id: "OP-015"
+    name: "Founder Bottleneck"
+    slug: "founder-bottleneck"
+    description: "All decisions, approvals, and credentials requiring founder manual intervention."
+  - id: "OP-016"
+    name: "Failure to Prioritize"
+    slug: "failure-to-prioritize"
+    description: "Treating 50 different initiatives as simultaneous number-one priorities."
+  - id: "OP-017"
+    name: "Failure to Kill Projects"
+    slug: "failure-to-kill-projects"
+    description: "Protecting zombie projects because of past invested time or emotional pride."
+  - id: "OP-018"
+    name: "Shiny-Object Syndrome"
+    slug: "shiny-object-syndrome"
+    description: "Abandoning unglamorous execution to chase the latest AI paradigm or library."
+  - id: "OP-019"
+    name: "FOMO (Fear of Missing Out)"
+    slug: "fomo"
+    description: "Jumping into unrelated verticals to avoid missing speculative market hype."
+  - id: "OP-020"
+    name: "Strategic Drift"
+    slug: "strategic-drift"
+    description: "Constantly resetting business strategy every two weeks based on transient impulses."
+  - id: "OP-021"
+    name: "Premature Scaling"
+    slug: "premature-scaling"
+    description: "Building multi-node clusters and high-availability meshes before having 10 users."
+  - id: "OP-022"
+    name: "Premature Optimization"
+    slug: "premature-optimization"
+    description: "Spending engineering cycles shaving milliseconds off uncalled APIs."
+  - id: "OP-023"
+    name: "Overengineering"
+    slug: "overengineering"
+    description: "Designing enterprise-grade abstraction layers for simple disposable scripts."
+  - id: "OP-024"
+    name: "Under-Documentation"
+    slug: "under-documentation"
+    description: "Failing to document critical runtime dependencies so only the founder can run it."
+  - id: "OP-025"
+    name: "Lack of Accountability"
+    slug: "lack-of-accountability"
+    description: "Vague goal assignments where failure to achieve business outcomes has no consequence."
+  - id: "OP-026"
+    name: "Lack of Ownership"
+    slug: "lack-of-ownership"
+    description: "Failing to assign clear end-to-end outcome ownership to a single accountable person."
+  - id: "OP-027"
+    name: "Metrics Theater"
+    slug: "metrics-theater"
+    description: "Displaying impressive technical counters that have zero relationship to cash flow."
+  - id: "OP-028"
+    name: "Activity Addiction"
+    slug: "activity-addiction"
+    description: "Equating 14 hours of continuous typing and terminal thrashing with productive value."
+  - id: "OP-029"
+    name: "Perfectionism"
+    slug: "perfectionism"
+    description: "Refusing to ship working software until every cosmetic detail satisfies internal ego."
+  - id: "OP-030"
+    name: "Lack of Closure"
+    slug: "lack-of-closure"
+    description: "Leaving 40 partially completed branches and prototypes without ever finishing one."
+
+# ==============================================================================
+# 4. BUSINESS RISKS (BR-*)
+# ==============================================================================
+business_risks:
+  - id: "BR-001"
+    name: "Bad Capital Allocation"
+    severity: "CRITICAL"
+    description: "Investing limited treasury into non-producing assets and speculative tooling."
+  - id: "BR-002"
+    name: "Strategic Drift"
+    severity: "HIGH"
+    description: "Loss of core narrative and market positioning across scattered initiatives."
+  - id: "BR-003"
+    name: "Founder Bottleneck Paralysis"
+    severity: "CRITICAL"
+    description: "Enterprise completely grinds to a halt whenever founder is unavailable."
+  - id: "BR-004"
+    name: "Slow Execution Velocity"
+    severity: "HIGH"
+    description: "Competitors shipping working solutions while organization refactors architecture."
+  - id: "BR-005"
+    name: "Customer Churn"
+    severity: "HIGH"
+    description: "Existing users leaving due to neglected maintenance and absent roadmap delivery."
+  - id: "BR-006"
+    name: "Employee / Partner Turnover"
+    severity: "HIGH"
+    description: "High-caliber talent quitting due to erratic priorities and micro-management."
+  - id: "BR-007"
+    name: "Founder Burnout"
+    severity: "CRITICAL"
+    description: "Catastrophic health or cognitive collapse resulting from chronic overwork."
+  - id: "BR-008"
+    name: "Cash-Flow Insolvency"
+    severity: "CRITICAL"
+    description: "Running out of liquidity while maintaining complex infrastructure."
+  - id: "BR-009"
+    name: "Margin Compression"
+    severity: "MODERATE"
+    description: "Excessive infrastructure overhead eating away operating margins."
+  - id: "BR-010"
+    name: "Operational Fragility"
+    severity: "HIGH"
+    description: "Subtle breaking changes in complex pipelines causing cascading outages."
+  - id: "BR-011"
+    name: "Technical Debt Accumulation"
+    severity: "HIGH"
+    description: "Layers of half-abandoned frameworks making new feature delivery impossible."
+  - id: "BR-012"
+    name: "Organizational Debt"
+    severity: "HIGH"
+    description: "Unclear reporting structures, conflicting mandates, and unspoken grievances."
+  - id: "BR-013"
+    name: "Decision Debt"
+    severity: "HIGH"
+    description: "Postponed hard decisions compounding into existential organizational crises."
+  - id: "BR-014"
+    name: "Massive Opportunity Cost"
+    severity: "CRITICAL"
+    description: "Missing generational market openings while debugging internal plumbing."
+  - id: "BR-015"
+    name: "Loss of Market Focus"
+    severity: "HIGH"
+    description: "Trying to solve every customer problem and satisfying no single buyer."
+  - id: "BR-016"
+    name: "Excessive Structural Complexity"
+    severity: "HIGH"
+    description: "Maintenance overhead growing faster than enterprise revenue."
+  - id: "BR-017"
+    name: "Regulatory & Compliance Exposure"
+    severity: "MODERATE"
+    description: "Scattered data storage and shadow pipelines breaching security controls."
+  - id: "BR-018"
+    name: "Reputation Damage"
+    severity: "HIGH"
+    description: "Announcing grand visions that fail to deliver working commercial products."
+  - id: "BR-019"
+    name: "Poor Talent Hiring"
+    severity: "HIGH"
+    description: "Recruiting based on charisma or resume status rather than rigorous execution capability."
+  - id: "BR-020"
+    name: "Defective Delegation"
+    severity: "MODERATE"
+    description: "Dumping tasks without context, leading to failed deliverables and blame cycles."
+  - id: "BR-021"
+    name: "Innovation Stagnation"
+    severity: "HIGH"
+    description: "Fear of failure preventing real exploratory bets from being tested in market."
+  - id: "BR-022"
+    name: "Capital Destruction"
+    severity: "CRITICAL"
+    description: "Burning equity and debt financing without establishing a defensible economic moat."
+  - id: "BR-023"
+    name: "Extreme Founder Dependency"
+    severity: "CRITICAL"
+    description: "Enterprise possesses zero enterprise valuation because it cannot be sold or transferred."
+  - id: "BR-024"
+    name: "Lack of Scalability"
+    severity: "HIGH"
+    description: "Inability to absorb 10x customer volume without linear operational collapse."
+  - id: "BR-025"
+    name: "Complete Strategic Failure"
+    severity: "CRITICAL"
+    description: "Enterprise collapse resulting from compounding cognitive biases and market irrelevance."
+
+# ==============================================================================
+# 5. COUNTERMEASURES & OPERATING RESPONSES (OPR-*)
+# ==============================================================================
+operating_responses:
+  - id: "OPR-001"
+    name: "Mandatory Red-Team Review"
+    cadence: "Pre-Decision"
+    description: "Dedicated adversarial challenge of major strategic or architectural proposals."
+  - id: "OPR-002"
+    name: "Pre-Mortem Analysis"
+    cadence: "Pre-Execution"
+    description: "Assuming project has failed 12 months in the future; identifying root causes upfront."
+  - id: "OPR-003"
+    name: "Post-Mortem Reality Audit"
+    cadence: "Post-Incident"
+    description: "Blameless evaluation of failure root causes and corrective system adjustments."
+  - id: "OPR-004"
+    name: "Decision Journaling Protocol"
+    cadence: "Per-Major-Decision"
+    description: "Logging decision rationale, predicted outcome, confidence score, and review date."
+  - id: "OPR-005"
+    name: "Explicit Kill Criteria"
+    cadence: "Pre-Commitment"
+    description: "Defining specific quantitative triggers that automatically terminate an initiative."
+  - id: "OPR-006"
+    name: "Stop-Doing List"
+    cadence: "Weekly"
+    description: "Explicit enumeration of activities, repos, and tasks forbidden from receiving attention."
+  - id: "OPR-007"
+    name: "Delegation & Authority Matrix"
+    cadence: "Monthly"
+    description: "Explicit boundary mapping of who has unilateral sign-off authority per domain."
+  - id: "OPR-008"
+    name: "Single-Threaded Ownership Matrix"
+    cadence: "Quarterly"
+    description: "Every key result owned by exactly one individual; shared ownership strictly forbidden."
+  - id: "OPR-009"
+    name: "Weekly Cadence Review"
+    cadence: "Weekly (Friday 17:00)"
+    description: "Ruthless review of economic progress vs. activity theater over previous 7 days."
+  - id: "OPR-010"
+    name: "Monthly Strategic Realignment"
+    cadence: "Monthly"
+    description: "Evaluating macro evidence against core business models and capital allocations."
+  - id: "OPR-011"
+    name: "Capital Allocation Committee"
+    cadence: "Monthly"
+    description: "Formal audit of compute, payroll, and marketing spend against expected return."
+  - id: "OPR-012"
+    name: "Customer Feedback Interviews"
+    cadence: "Weekly (Min 3 Calls)"
+    description: "Direct, unfiltered dialogue with paying users and active prospects."
+  - id: "OPR-013"
+    name: "Sales Pipeline Velocity Review"
+    cadence: "Weekly"
+    description: "Tracking movement of qualified deals from initial contact to cash collected."
+  - id: "OPR-014"
+    name: "Unit Economics Audit"
+    cadence: "Monthly"
+    description: "Calculating contribution margin, CAC, and LTV per active venture."
+  - id: "OPR-015"
+    name: "Live Risk Register"
+    cadence: "Monthly"
+    description: "Documenting top 10 existential risks with explicit mitigation owners."
+  - id: "OPR-016"
+    name: "Assumption Register"
+    cadence: "Continuous"
+    description: "Tracking critical business hypotheses and their active falsification status."
+  - id: "OPR-017"
+    name: "Evidence-Based Decision Gate"
+    cadence: "Continuous"
+    description: "Rejecting any feature or investment lacking verifiable external proof of demand."
+  - id: "OPR-018"
+    name: "Theory of Constraints Analysis"
+    cadence: "Monthly"
+    description: "Locating the single master bottleneck in the company and focusing all resources there."
+  - id: "OPR-019"
+    name: "Brutal Priority Ranking (Top 3)"
+    cadence: "Daily / Weekly"
+    description: "Enforcing that only 3 outcomes matter; all other items strictly deprioritized."
+  - id: "OPR-020"
+    name: "Opportunity-Cost Calculation"
+    cadence: "Pre-Commitment"
+    description: "Mandating explicit statement of what is sacrificed before starting any new venture."
+  - id: "OPR-021"
+    name: "Scenario Stress Testing"
+    cadence: "Quarterly"
+    description: "Simulating loss of top customer, key engineer, or 50% revenue shock."
+  - id: "OPR-022"
+    name: "Cognitive Load Shedding"
+    cadence: "Weekly"
+    description: "Auditing active projects and force-shedding low-leverage commitments."
+  - id: "OPR-023"
+    name: "Succession & Bus-Factor Drill"
+    cadence: "Semi-Annual"
+    description: "Simulating founder absence for 30 days to identify hidden single points of failure."
+  - id: "OPR-024"
+    name: "Founder Dependency Audit"
+    cadence: "Monthly"
+    description: "Cataloging all tasks only the founder can do and systematically transferring them."
+  - id: "OPR-025"
+    name: "Complexity Pruning Audit"
+    cadence: "Monthly (End of Month)"
+    description: "Mandatory deletion of 20% of dead code, stale repos, and uncalled background services."

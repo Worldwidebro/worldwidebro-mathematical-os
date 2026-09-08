@@ -1,0 +1,316 @@
+---
+# Control Planes by Sector
+# Maps all 30 control planes to their primary sector responsibilities
+# Generated: 2026-09-02
+
+metadata:
+  version: "1.0"
+  created_at: "2026-09-02"
+  total_control_planes: 30
+  total_sectors: 35
+  model: "Each CP serves a function across multiple sectors; this mapping shows sector-primary responsibilities"
+
+control_planes:
+  CP-001:
+    name: "Enterprise"
+    description: "Portfolio-level strategy, holdings, organizational structure"
+    primary_sectors: [SEC-001, SEC-002, SEC-008, SEC-017, SEC-020, SEC-024, SEC-030]
+    layer: "00-CONSTITUTION"
+    responsibilities:
+      - Portfolio management
+      - Cross-sector alignment
+      - Holding company operations
+
+  CP-002:
+    name: "Venture"
+    description: "Individual venture strategy, execution, growth"
+    primary_sectors: [SEC-002, SEC-008, SEC-017, SEC-020, SEC-024]
+    layer: "01-IDENTITY"
+
+  CP-003:
+    name: "Portfolio"
+    description: "Cross-venture programs, resource allocation, prioritization"
+    primary_sectors: [SEC-001, SEC-011, SEC-021, SEC-024]
+
+  CP-004:
+    name: "Strategy"
+    description: "Strategic objectives, goals, OKRs, vision"
+    primary_sectors: [SEC-024, SEC-008, SEC-017, SEC-002, SEC-020]
+
+  CP-005:
+    name: "Decision"
+    description: "Decision-making, approvals, governance"
+    primary_sectors: [SEC-024, SEC-023, SEC-016]
+
+  CP-006:
+    name: "Agent"
+    description: "AI agent orchestration, task assignment, execution"
+    primary_sectors: [SEC-024, SEC-032, SEC-030]
+
+  CP-007:
+    name: "Model"
+    description: "LLM selection, fine-tuning, evaluation"
+    primary_sectors: [SEC-024, SEC-032]
+
+  CP-008:
+    name: "Tool"
+    description: "Tool integration, API lifecycle, vendor management"
+    primary_sectors: [SEC-024, SEC-032, SEC-033]
+
+  CP-009:
+    name: "Workflow"
+    description: "Process automation, SOP execution, workflow states"
+    primary_sectors: [SEC-002, SEC-017, SEC-026, SEC-029]
+
+  CP-010:
+    name: "Automation"
+    description: "Trigger-action rules, orchestration, event-driven"
+    primary_sectors: [SEC-024, SEC-029, SEC-017]
+
+  CP-011:
+    name: "Task"
+    description: "Work execution, assignment, tracking (ClickUp integration)"
+    primary_sectors: [SEC-002, SEC-017, SEC-024, SEC-014]
+
+  CP-012:
+    name: "Project"
+    description: "Projects, milestones, deliverables, timelines"
+    primary_sectors: [SEC-002, SEC-024, SEC-012, SEC-018]
+
+  CP-013:
+    name: "Knowledge"
+    description: "Documentation, SOPs, training, institutional learning"
+    primary_sectors: [SEC-005, SEC-024, SEC-014, SEC-002]
+
+  CP-014:
+    name: "Data"
+    description: "Metadata, data quality, master data management"
+    primary_sectors: [SEC-024, SEC-008, SEC-020]
+
+  CP-015:
+    name: "Graph"
+    description: "Neo4j relationships, entity resolution, knowledge graph"
+    primary_sectors: [SEC-024, SEC-008, SEC-017]
+
+  CP-016:
+    name: "Identity"
+    description: "Entity identity, people, organizations, roles"
+    primary_sectors: [SEC-024, SEC-014, SEC-023]
+
+  CP-017:
+    name: "Access"
+    description: "Permissions, role-based access, workspace security"
+    primary_sectors: [SEC-024, SEC-033, SEC-016]
+
+  CP-018:
+    name: "Security"
+    description: "API credentials, encryption, secure storage, compliance"
+    primary_sectors: [SEC-024, SEC-033, SEC-008, SEC-030]
+
+  CP-019:
+    name: "Compliance"
+    description: "Regulatory compliance, audit, evidence, risk"
+    primary_sectors: [SEC-008, SEC-015, SEC-033, SEC-012]
+
+  CP-020:
+    name: "Financial"
+    description: "Financials, budgeting, invoices, collections, close"
+    primary_sectors: [SEC-008, SEC-030, SEC-020, SEC-024]
+
+  CP-021:
+    name: "Funding"
+    description: "Investor pipelines, grants, due diligence, capital"
+    primary_sectors: [SEC-008, SEC-030, SEC-027]
+
+  CP-022:
+    name: "Customer"
+    description: "Customer onboarding, support, fulfillment, retention"
+    primary_sectors: [SEC-017, SEC-024, SEC-001, SEC-010]
+
+  CP-023:
+    name: "Sales"
+    description: "Lead follow-up, opportunities, proposals, deals"
+    primary_sectors: [SEC-008, SEC-017, SEC-002, SEC-020]
+
+  CP-024:
+    name: "Marketing"
+    description: "Campaigns, content, social, launches, analytics"
+    primary_sectors: [SEC-024, SEC-019, SEC-021, SEC-001]
+
+  CP-025:
+    name: "People"
+    description: "Hiring, onboarding, training, performance, scheduling"
+    primary_sectors: [SEC-014, SEC-024, SEC-002, SEC-025]
+
+  CP-026:
+    name: "Operations"
+    description: "SOPs, recurring work, service delivery, quality"
+    primary_sectors: [SEC-002, SEC-017, SEC-010, SEC-026]
+
+  CP-027:
+    name: "Infrastructure"
+    description: "Provisioning, deployment, migration, incident response"
+    primary_sectors: [SEC-024, SEC-032, SEC-033, SEC-002]
+
+  CP-028:
+    name: "Application"
+    description: "Development, releases, bugs, features, deployments"
+    primary_sectors: [SEC-024, SEC-028, SEC-032, SEC-012]
+
+  CP-029:
+    name: "Observability"
+    description: "Incidents, alerts, monitoring, reliability, SLOs"
+    primary_sectors: [SEC-024, SEC-032, SEC-033]
+
+  CP-030:
+    name: "Governance"
+    description: "Policies, approvals, controls, accountability"
+    primary_sectors: [SEC-024, SEC-033, SEC-008, SEC-016]
+
+sector_to_control_planes:
+  SEC-001:  # Beauty & Wellness
+    primary_cps: [CP-001, CP-003, CP-022, CP-024]
+    support_cps: [CP-011, CP-023, CP-026]
+
+  SEC-002:  # Construction & Infrastructure
+    primary_cps: [CP-009, CP-011, CP-012, CP-013, CP-023, CP-025, CP-026]
+    support_cps: [CP-001, CP-004, CP-027]
+
+  SEC-008:  # Financial Services
+    primary_cps: [CP-020, CP-021, CP-023, CP-030]
+    support_cps: [CP-001, CP-015, CP-018, CP-019]
+
+  SEC-014:  # Human Resources & Staffing
+    primary_cps: [CP-013, CP-016, CP-025]
+    support_cps: [CP-001, CP-011, CP-026]
+
+  SEC-017:  # Logistics & Transportation
+    primary_cps: [CP-009, CP-010, CP-011, CP-022, CP-023, CP-026]
+    support_cps: [CP-001, CP-015, CP-029]
+
+  SEC-020:  # Real Estate & Property
+    primary_cps: [CP-014, CP-020, CP-023]
+    support_cps: [CP-001, CP-003, CP-004]
+
+  SEC-024:  # Technology & Software
+    primary_cps: [CP-001, CP-004, CP-005, CP-006, CP-007, CP-008, CP-011, CP-012, CP-013, CP-014, CP-015, CP-016, CP-017, CP-018, CP-024, CP-027, CP-028, CP-029, CP-030]
+    support_cps: [CP-002, CP-003, CP-009, CP-010]
+
+  SEC-030:  # Fintech & Payments
+    primary_cps: [CP-006, CP-018, CP-020, CP-021]
+    support_cps: [CP-008, CP-015, CP-030]
+
+  SEC-032:  # Artificial Intelligence & ML
+    primary_cps: [CP-006, CP-007, CP-008, CP-027, CP-028, CP-029]
+    support_cps: [CP-024, CP-032]
+
+  # All other sectors delegate to multi-sector CPs
+  SEC-003:  # Consumer Electronics
+    primary_cps: [CP-027, CP-028]
+    support_cps: [CP-001, CP-012]
+
+  SEC-004:  # Content & Media
+    primary_cps: [CP-013, CP-024]
+    support_cps: [CP-022, CP-023]
+
+  SEC-005:  # Education & Training
+    primary_cps: [CP-013, CP-022]
+    support_cps: [CP-024, CP-025]
+
+  SEC-006:  # Energy & Utilities
+    primary_cps: [CP-020, CP-026]
+    support_cps: [CP-019]
+
+  SEC-007:  # Environmental Services
+    primary_cps: [CP-019, CP-031]
+    support_cps: [CP-020]
+
+  SEC-009:  # Food & Agriculture
+    primary_cps: [CP-026, CP-009]
+    support_cps: [CP-020, CP-023]
+
+  SEC-010:  # Food Service & Restaurants
+    primary_cps: [CP-022, CP-026]
+    support_cps: [CP-023, CP-024]
+
+  SEC-011:  # Gaming & Entertainment
+    primary_cps: [CP-003, CP-024, CP-028]
+    support_cps: [CP-011, CP-022]
+
+  SEC-012:  # Healthcare & Biotechnology
+    primary_cps: [CP-012, CP-019, CP-028]
+    support_cps: [CP-022, CP-027]
+
+  SEC-013:  # Hospitality & Travel
+    primary_cps: [CP-022, CP-026]
+    support_cps: [CP-023, CP-024]
+
+  SEC-015:  # Insurance
+    primary_cps: [CP-019, CP-020]
+    support_cps: [CP-030]
+
+  SEC-016:  # Legal & Compliance
+    primary_cps: [CP-005, CP-019, CP-030]
+    support_cps: [CP-016, CP-017]
+
+  SEC-018:  # Manufacturing & Engineering
+    primary_cps: [CP-012, CP-026]
+    support_cps: [CP-027, CP-028]
+
+  SEC-019:  # Marketing & Advertising
+    primary_cps: [CP-024]
+    support_cps: [CP-019, CP-023]
+
+  SEC-021:  # Retail & E-commerce
+    primary_cps: [CP-023, CP-024]
+    support_cps: [CP-014, CP-022]
+
+  SEC-022:  # Telecommunications
+    primary_cps: [CP-024, CP-033]
+    support_cps: [CP-027, CP-028]
+
+  SEC-023:  # Professional Services
+    primary_cps: [CP-005, CP-023, CP-025]
+    support_cps: [CP-016, CP-024]
+
+  SEC-025:  # Automotive & Mobility
+    primary_cps: [CP-026, CP-027]
+    support_cps: [CP-025, CP-028]
+
+  SEC-026:  # Utilities & Infrastructure
+    primary_cps: [CP-026, CP-027]
+    support_cps: [CP-019]
+
+  SEC-027:  # Venture Capital & Investment
+    primary_cps: [CP-020, CP-021]
+    support_cps: [CP-005, CP-023]
+
+  SEC-028:  # B2B Enterprise Software
+    primary_cps: [CP-028, CP-023]
+    support_cps: [CP-024, CP-013]
+
+  SEC-029:  # Marketplace & Platform
+    primary_cps: [CP-010, CP-023]
+    support_cps: [CP-014, CP-022]
+
+  SEC-031:  # Climate & Sustainability
+    primary_cps: [CP-007, CP-031]
+    support_cps: [CP-020, CP-024]
+
+  SEC-033:  # Cybersecurity & Privacy
+    primary_cps: [CP-017, CP-018, CP-030]
+    support_cps: [CP-008, CP-033]
+
+  SEC-034:  # Decentralized & Web3
+    primary_cps: [CP-006, CP-018, CP-028]
+    support_cps: [CP-015, CP-020, CP-030]
+
+  SEC-035:  # [RESERVED]
+    primary_cps: []
+    support_cps: []
+
+summary: |
+  - SEC-024 (Technology) uses 19 out of 30 control planes
+  - Core operational sectors (002, 008, 017, 020) use 6-7 CPs each
+  - Enterprise-level CPs (001, 004, 005) span all sectors
+  - Sector-specific CPs (009, 010, 013) support domain-specific operations

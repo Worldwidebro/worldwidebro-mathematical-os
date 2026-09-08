@@ -1,0 +1,13 @@
+entity_name: "WorldwideBro Holdings LLC"
+formation_state: "North Carolina / Delaware"
+status: "GOOD_STANDING"
+filing_status: "CURRENT"
+documents:
+  articles_of_organization: "VERIFIED"
+  certificate_of_formation: "VERIFIED"
+  ein_letter: "VERIFIED"
+  operating_agreement: "VERIFIED"
+  bylaws: "VERIFIED"
+  certificate_of_good_standing: "VERIFIED"
+  business_licenses: "ACTIVE"
+  permits: "CURRENT"

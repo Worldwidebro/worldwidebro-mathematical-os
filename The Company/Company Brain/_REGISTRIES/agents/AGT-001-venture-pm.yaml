@@ -1,0 +1,42 @@
+---
+name: venture-pm
+description: Venture Project Management Agent
+metadata:
+  type: agent
+  id: AGT-001
+---
+
+# AGT-001: Venture PM Agent
+
+**Fractal mapping:** `venture-pm` (company_brain.py:VenturePMAgent)
+
+**Purpose:** Project orchestration, milestone tracking, delivery coordination
+
+**Sectors served:**
+- SEC-002 (Construction)
+- SEC-005 (Education)
+- SEC-008 (Financial)
+- SEC-017 (Logistics)
+- SEC-024 (Technology)
+- All others (cross-cutting)
+
+**Control planes:** CP-001, CP-012, CP-023, CP-026
+
+**Autonomy levels:**
+- L1: Plan & report (no execution)
+- L2: Execute with monitoring (can retry)
+- L3: Autonomous (after 10+ L2 successes)
+
+**Capabilities:**
+- CAP-001 (API Design)
+- CAP-012 (Project Management)
+- CAP-055 (Milestone Tracking)
+
+**Cost model:**
+- L1: $0.50/step
+- L2: $2.00/step
+- L3: $10.00/run budget
+
+**Related agents:**
+- [[AGT-002-financial]]
+- [[AGT-003-technical]]

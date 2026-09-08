@@ -1,0 +1,244 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "1.0.0",
+  "types": [
+    {
+      "id": "TYP-001",
+      "code": "BRAND_AWARENESS",
+      "name": "Brand Awareness",
+      "funnel_stage": "TOP",
+      "description": "Establish category presence and authority."
+    },
+    {
+      "id": "TYP-002",
+      "code": "DEMAND_GENERATION",
+      "name": "Demand Generation",
+      "funnel_stage": "TOP_MID",
+      "description": "Generate market appetite for problem solution."
+    },
+    {
+      "id": "TYP-003",
+      "code": "LEAD_GENERATION",
+      "name": "Lead Generation",
+      "funnel_stage": "MID",
+      "description": "Capture qualified contact information."
+    },
+    {
+      "id": "TYP-004",
+      "code": "SALES",
+      "name": "Sales & Direct Conversion",
+      "funnel_stage": "BOTTOM",
+      "description": "Drive commercial transactions and bookings."
+    },
+    {
+      "id": "TYP-005",
+      "code": "PRODUCT_LAUNCH",
+      "name": "Product Launch",
+      "funnel_stage": "FULL",
+      "description": "Go-to-market commercial rollout of new product."
+    },
+    {
+      "id": "TYP-006",
+      "code": "SERVICE_LAUNCH",
+      "name": "Service Launch",
+      "funnel_stage": "FULL",
+      "description": "Rollout of consulting or managed service offer."
+    },
+    {
+      "id": "TYP-007",
+      "code": "MARKET_ENTRY",
+      "name": "Market Entry",
+      "funnel_stage": "TOP",
+      "description": "Entering a new sector or geographical jurisdiction."
+    },
+    {
+      "id": "TYP-008",
+      "code": "CUSTOMER_ACQUISITION",
+      "name": "Customer Acquisition",
+      "funnel_stage": "BOTTOM",
+      "description": "First-time customer purchase acquisition."
+    },
+    {
+      "id": "TYP-009",
+      "code": "CUSTOMER_RETENTION",
+      "name": "Customer Retention",
+      "funnel_stage": "POST",
+      "description": "Reduce churn and secure recurring usage."
+    },
+    {
+      "id": "TYP-010",
+      "code": "REACTIVATION",
+      "name": "Reactivation",
+      "funnel_stage": "MID_BOTTOM",
+      "description": "Re-engage churned or dormant prospects."
+    },
+    {
+      "id": "TYP-011",
+      "code": "UPSELL",
+      "name": "Upsell",
+      "funnel_stage": "POST",
+      "description": "Upgrade existing customer to higher tier."
+    },
+    {
+      "id": "TYP-012",
+      "code": "CROSS_SELL",
+      "name": "Cross-Sell",
+      "funnel_stage": "POST",
+      "description": "Introduce adjacent capabilities or services."
+    },
+    {
+      "id": "TYP-013",
+      "code": "EXPANSION",
+      "name": "Expansion",
+      "funnel_stage": "POST",
+      "description": "Account-level team or license expansion."
+    },
+    {
+      "id": "TYP-014",
+      "code": "REFERRAL",
+      "name": "Referral",
+      "funnel_stage": "POST",
+      "description": "Incentivized partner or customer referrals."
+    },
+    {
+      "id": "TYP-015",
+      "code": "PARTNER_CHANNEL",
+      "name": "Partner Channel",
+      "funnel_stage": "MID",
+      "description": "Co-marketing and channel reseller campaigns."
+    },
+    {
+      "id": "TYP-016",
+      "code": "EVENT",
+      "name": "Event",
+      "funnel_stage": "MID",
+      "description": "Physical conference or field promotion."
+    },
+    {
+      "id": "TYP-017",
+      "code": "WEBINAR",
+      "name": "Webinar",
+      "funnel_stage": "MID",
+      "description": "Virtual technical masterclass or demonstration."
+    },
+    {
+      "id": "TYP-018",
+      "code": "CONTENT",
+      "name": "Content Marketing",
+      "funnel_stage": "TOP_MID",
+      "description": "Editorial authority and technical whitepapers."
+    },
+    {
+      "id": "TYP-019",
+      "code": "SEO",
+      "name": "Search Engine Optimization",
+      "funnel_stage": "TOP",
+      "description": "Organic organic algorithmic search visibility."
+    },
+    {
+      "id": "TYP-020",
+      "code": "SEM",
+      "name": "Search Engine Marketing",
+      "funnel_stage": "MID_BOTTOM",
+      "description": "High-intent paid search keyword acquisition."
+    },
+    {
+      "id": "TYP-021",
+      "code": "SOCIAL",
+      "name": "Organic Social",
+      "funnel_stage": "TOP",
+      "description": "Community distribution on social platforms."
+    },
+    {
+      "id": "TYP-022",
+      "code": "EMAIL",
+      "name": "Email Marketing",
+      "funnel_stage": "MID_BOTTOM",
+      "description": "Direct newsletter and lifecycle messaging."
+    },
+    {
+      "id": "TYP-023",
+      "code": "PR",
+      "name": "Public Relations",
+      "funnel_stage": "TOP",
+      "description": "Earned media and press coverage."
+    },
+    {
+      "id": "TYP-024",
+      "code": "INFLUENCER",
+      "name": "Influencer & KOL",
+      "funnel_stage": "TOP_MID",
+      "description": "Third-party practitioner advocacy."
+    },
+    {
+      "id": "TYP-025",
+      "code": "AFFILIATE",
+      "name": "Affiliate",
+      "funnel_stage": "BOTTOM",
+      "description": "Performance-based commission distribution."
+    },
+    {
+      "id": "TYP-026",
+      "code": "DIRECT_MAIL",
+      "name": "Direct Mail",
+      "funnel_stage": "MID_BOTTOM",
+      "description": "Physical high-impact executive direct mail."
+    },
+    {
+      "id": "TYP-027",
+      "code": "LOCAL",
+      "name": "Local Marketing",
+      "funnel_stage": "TOP_MID",
+      "description": "Geotargeted localized promotion."
+    },
+    {
+      "id": "TYP-028",
+      "code": "ACCOUNT_BASED",
+      "name": "Account-Based Marketing (ABM)",
+      "funnel_stage": "FULL",
+      "description": "Precision 1:1 hyper-targeted enterprise outreach."
+    },
+    {
+      "id": "TYP-029",
+      "code": "FIELD",
+      "name": "Field Marketing",
+      "funnel_stage": "MID_BOTTOM",
+      "description": "On-site roadshows and client dinners."
+    },
+    {
+      "id": "TYP-030",
+      "code": "OUTBOUND",
+      "name": "Signal-Based Outbound",
+      "funnel_stage": "MID_BOTTOM",
+      "description": "Personalized direct executive outreach."
+    },
+    {
+      "id": "TYP-031",
+      "code": "INBOUND",
+      "name": "Inbound Marketing",
+      "funnel_stage": "TOP_MID",
+      "description": "Magnetized organic attraction engine."
+    },
+    {
+      "id": "TYP-032",
+      "code": "RECRUITING",
+      "name": "Talent Acquisition",
+      "funnel_stage": "SPECIAL",
+      "description": "Attracting top-tier engineering talent."
+    },
+    {
+      "id": "TYP-033",
+      "code": "FUNDRAISING",
+      "name": "Investor Relations & Fundraising",
+      "funnel_stage": "SPECIAL",
+      "description": "Capital formation and investor updates."
+    },
+    {
+      "id": "TYP-034",
+      "code": "COMMUNITY",
+      "name": "Community Building",
+      "funnel_stage": "FULL",
+      "description": "Developer open-source ecosystem cultivation."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "venture_id": "CON-001",
+  "digital_assets": [
+    {
+      "type": "GitHub Repository",
+      "identifier": "Worldwidebro/con-001-ace-construction",
+      "verified_commit": "67e7b82"
+    },
+    {
+      "type": "Production Web Surface",
+      "url": "https://ace-construction.vercel.app",
+      "status": "LIVE"
+    }
+  ],
+  "commercial_gateway": {
+    "provider": "Stripe",
+    "status": "WIRED_ACTIVE"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "total_ask": "$2,250,000 Total Facility ($750K CDFI Bridge + $1.5M 30-Yr DSCR Facility)",
+  "loan_amount": "$750,000 CDFI Bridge Revolver (4.0%) + $1,500,000 30-Yr DSCR (6.85%)",
+  "grant_ask": "$150,000 HUD Section 4 Capacity Building",
+  "uses": [
+    [
+      "5 Initial Property Acquisitions",
+      "$600,000",
+      "Direct parcel purchase costs at 25-35% discount to fair market value"
+    ],
+    [
+      "Turnkey Rehabilitation Execution",
+      "$200,000",
+      "Fixed-cost renovations delivered by affiliated trade contractor CON-001"
+    ],
+    [
+      "Title Insurance, Closing & Legal Fees",
+      "$45,000",
+      "Municipal title searches, deed recording, and CDFI closing escrow"
+    ],
+    [
+      "Property Reserve & Tax Escrow",
+      "$70,000",
+      "6-Month operating cushion covering insurance, taxes, and utility hookups"
+    ],
+    [
+      "Deal Engine Multi-County Ingestion",
+      "$35,000",
+      "Bulk deed registry data licenses and automated GIS parsing infrastructure"
+    ]
+  ]
+}

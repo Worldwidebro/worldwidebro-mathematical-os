@@ -1,0 +1,199 @@
+# ==============================================================================
+# Master Schema: Shadow Work Knowledge Graph Registry (SW-KG)
+# Version: 1.0.0
+# Authority: Knowledge Control Plane (CP-013) & Ontology Architecture (CP-027)
+# ==============================================================================
+
+$schema: "https://json-schema.org/draft/2020-12/schema"
+title: "ShadowWorkConcept"
+description: "Canonical schema for machine-readable shadow work, cognitive bias, and operator governance entities"
+type: "object"
+
+required:
+  - id
+  - type
+  - name
+  - slug
+  - domain
+  - tags
+  - definition
+  - wikidata
+  - wikipedia
+  - status
+  - version
+
+properties:
+  id:
+    type: "string"
+    pattern: "^(SW|PSY|CB|OP|BEH|BR|RISK|Q|OPR|MET|HAB|VAL|PRIN|DEC|SYS|WF|AGT)-[A-Z0-9]+-[0-9]{3}$"
+    description: "Permanent canonical internal identifier (primary key)"
+    examples: ["SW-EGO-001", "CB-CONF-001", "OP-COMP-001", "BR-DEC-001", "OPR-REDTEAM-001"]
+
+  type:
+    type: "string"
+    enum:
+      - "shadow_concept"
+      - "psychological_mechanism"
+      - "cognitive_bias"
+      - "operating_problem"
+      - "behavioral_symptom"
+      - "business_risk"
+      - "diagnostic_question"
+      - "operating_countermeasure"
+      - "operational_metric"
+      - "governance_workflow"
+      - "agent_guardrail"
+
+  name:
+    type: "string"
+    description: "Human-readable canonical label"
+    examples: ["Ego", "Confirmation Bias", "Complexity Addiction", "Red-Team Review"]
+
+  slug:
+    type: "string"
+    pattern: "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    description: "URL and URI-safe kebab-case slug"
+
+  domain:
+    type: "array"
+    items:
+      type: "string"
+      enum:
+        - "psychology"
+        - "cognition"
+        - "leadership"
+        - "founder"
+        - "decision_making"
+        - "operations"
+        - "capital_allocation"
+        - "governance"
+        - "philosophy"
+        - "relationships"
+        - "stress_performance"
+
+  tags:
+    type: "object"
+    required:
+      - domain
+      - layer
+      - severity
+      - timeframe
+      - intervention
+    properties:
+      domain:
+        type: "array"
+        items: { type: "string" }
+      layer:
+        type: "string"
+        enum: ["internal", "cognitive", "behavioral", "operational", "organizational", "financial"]
+      severity:
+        type: "string"
+        enum: ["low", "moderate", "high", "critical"]
+      timeframe:
+        type: "string"
+        enum: ["realtime", "daily", "weekly", "monthly", "quarterly", "annual"]
+      intervention:
+        type: "string"
+        enum: ["awareness", "habit", "process", "automation", "delegation", "governance", "measurement"]
+
+  definition:
+    type: "string"
+    description: "Rigorous, operationalized semantic definition"
+
+  wikidata:
+    type: "object"
+    required:
+      - qid
+      - uri
+    properties:
+      qid:
+        type: "string"
+        pattern: "^Q[0-9]+$"
+        description: "Permanent Wikidata item identifier"
+        examples: ["Q484678", "Q189283", "Q1360677"]
+      uri:
+        type: "string"
+        format: "uri"
+        description: "Globally unique Wikidata entity URI"
+        examples: ["https://www.wikidata.org/entity/Q484678"]
+
+  wikipedia:
+    type: "object"
+    required:
+      - en
+    properties:
+      en:
+        type: "string"
+        format: "uri"
+        description: "Canonical English Wikipedia article reference"
+        examples: ["https://en.wikipedia.org/wiki/Ego"]
+
+  dbpedia:
+    type: "object"
+    properties:
+      uri:
+        type: "string"
+        format: "uri"
+        description: "Canonical DBpedia resource URI for RDF linking"
+        examples: ["http://dbpedia.org/resource/Ego"]
+
+  related:
+    type: "array"
+    items: { type: "string" }
+    description: "Array of related concept IDs across any layer"
+
+  causes:
+    type: "array"
+    items: { type: "string" }
+    description: "Array of upstream causal entity IDs"
+
+  behaviors:
+    type: "array"
+    items: { type: "string" }
+    description: "Array of behavioral symptom IDs (BEH-*) or cognitive bias IDs (CB-*)"
+
+  business_risks:
+    type: "array"
+    items: { type: "string" }
+    description: "Array of business risk IDs (BR-*)"
+
+  countermeasures:
+    type: "array"
+    items: { type: "string" }
+    description: "Array of operational response / countermeasure IDs (OPR-*)"
+
+  questions:
+    type: "array"
+    items: { type: "string" }
+    description: "Array of diagnostic self-audit prompts"
+
+  metrics:
+    type: "array"
+    items: { type: "string" }
+    description: "Array of quantitative metric IDs (MET-*)"
+
+  status:
+    type: "string"
+    enum: ["draft", "active", "deprecated", "archived"]
+    default: "active"
+
+  version:
+    type: "string"
+    pattern: "^[0-9]+\\.[0-9]+(\\.[0-9]+)?$"
+    default: "1.0"
+
+# ==============================================================================
+# JSON-LD Context Mapping (Linked Data & RDF Interoperability)
+# ==============================================================================
+json_ld_context:
+  "@vocab": "https://companybrain.org/ontology/shadow-work#"
+  "id": "@id"
+  "type": "@type"
+  "name": "rdfs:label"
+  "definition": "skos:definition"
+  "wikidata": "owl:sameAs"
+  "wikipedia": "rdfs:seeAlso"
+  "related": "skos:related"
+  "causes": "prov:wasInfluencedBy"
+  "business_risks": "risk:hasRisk"
+  "countermeasures": "gov:hasMitigation"

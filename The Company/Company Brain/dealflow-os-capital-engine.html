@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DealFlowOS — Capital Engine</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:system-ui,sans-serif; background:#060a12; color:#e2e8f0; }
+  .glass { background:rgba(15,23,42,0.6); backdrop-filter:blur(20px); border:1px solid rgba(99,102,241,0.08); }
+  .glass-card { background:linear-gradient(135deg,rgba(15,23,42,0.8),rgba(15,23,42,0.4)); backdrop-filter:blur(20px); border:1px solid rgba(99,102,241,0.1); }
+  .stage-badge { display:inline-block; padding:4px 12px; border-radius:999px; font-size:0.7rem; font-weight:600; }
+  .chart-container { position:relative; height:300px; width:100%; }
+  .term-row { padding:12px; border-bottom:1px solid rgba(99,102,241,0.08); }
+</style>
+</head>
+<body class="min-h-screen">
+
+<div class="flex min-h-screen">
+  <!-- Sidebar -->
+  <aside class="w-72 glass border-r border-dark-500/30 flex flex-col fixed h-full z-50 overflow-y-auto">
+    <div class="p-5 border-b border-dark-500/30">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-indigo-500 to-indigo-600 flex items-center justify-center">
+          <i class="fas fa-handshake text-white text-sm"></i>
+        </div>
+        <div>
+          <h1 class="text-sm font-bold text-white">DealFlowOS</h1>
+          <p class="text-[0.6rem] text-dark-200 uppercase">Capital Engine</p>
+        </div>
+      </div>
+    </div>
+
+    <nav class="flex-1 py-4 px-3 space-y-1">
+      <p class="text-[0.6rem] text-dark-300 uppercase px-3 mb-2 font-semibold">Navigation</p>
+      <a href="#" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-dark-200 hover:bg-dark-800/30" onclick="switchTab('dashboard'); return false">
+        <i class="fas fa-chart-line w-4 text-center"></i> Dashboard
+      </a>
+      <a href="#" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-dark-200 hover:bg-dark-800/30" onclick="switchTab('deals'); return false">
+        <i class="fas fa-list w-4 text-center"></i> All Deals
+      </a>
+      <a href="#" class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-dark-200 hover:bg-dark-800/30" onclick="switchTab('deal-detail'); return false">
+        <i class="fas fa-file-contract w-4 text-center"></i> Deal Detail (22 Stages)
+      </a>
+    </nav>
+
+    <div class="p-4 border-t border-dark-500/30 text-xs">
+      <p class="text-dark-300 font-semibold mb-2">Deal Types</p>
+      <div class="space-y-1 text-[0.65rem]">
+        <p class="text-emerald">💰 Revenue</p>
+        <p class="text-cyan">💵 Capital</p>
+        <p class="text-amber">🤝 Strategic</p>
+        <p class="text-purple-400">M&A</p>
+        <p class="text-rose">🏠 Real Estate</p>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="flex-1 ml-72">
+    <header class="glass border-b border-dark-500/30 sticky top-0 z-40">
+      <div class="flex items-center justify-between px-6 py-3">
+        <h2 class="text-lg font-bold text-white">Capital Engine — Deal Lifecycle Management</h2>
+        <button onclick="createNewDeal()" class="bg-indigo-600 text-white text-xs font-semibold px-4 py-2 rounded-lg">+ New Deal</button>
+      </div>
+    </header>
+
+    <div class="p-6 space-y-6">
+
+      <!-- DASHBOARD TAB -->
+      <div id="tab-dashboard" class="tab-content">
+        <h3 class="text-2xl font-bold text-white mb-6">Deal Dashboard</h3>
+
+        <div class="grid grid-cols-4 gap-4 mb-6">
+          <div class="glass-card rounded-xl p-4"><p class="text-2xl font-bold text-white">47</p><p class="text-[0.65rem] text-dark-300">Total Deals</p></div>
+          <div class="glass-card rounded-xl p-4"><p class="text-2xl font-bold text-emerald">$12.4M</p><p class="text-[0.65rem] text-dark-300">Total Pipeline</p></div>
+          <div class="glass-card rounded-xl p-4"><p class="text-2xl font-bold text-cyan">$3.2M</p><p class="text-[0.65rem] text-dark-300">Won This Quarter</p></div>
+          <div class="glass-card rounded-xl p-4"><p class="text-2xl font-bold text-amber">68%</p><p class="text-[0.65rem] text-dark-300">Avg Win Rate</p></div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4">
+          <div class="glass-card rounded-xl p-5">
+            <h3 class="text-sm font-semibold text-white mb-4">Pipeline by Stage</h3>
+            <div class="chart-container">
+              <canvas id="stageChart"></canvas>
+            </div>
+          </div>
+          <div class="glass-card rounded-xl p-5">
+            <h3 class="text-sm font-semibold text-white mb-4">Pipeline by Type</h3>
+            <div class="chart-container">
+              <canvas id="typeChart"></canvas>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4 mt-4">
+          <div class="glass-card rounded-xl p-5">
+            <h3 class="text-sm font-semibold text-white mb-4">ROI by Deal Type</h3>
+            <div class="space-y-2 text-xs">
+              <div class="flex justify-between"><span class="text-dark-300">Customer Contracts</span><span class="font-bold text-emerald">+280% ROI</span></div>
+              <div class="flex justify-between"><span class="text-dark-300">Equity Investment</span><span class="font-bold text-cyan">+320% ROI</span></div>
+              <div class="flex justify-between"><span class="text-dark-300">Partnerships</span><span class="font-bold text-amber">+125% ROI</span></div>
+              <div class="flex justify-between"><span class="text-dark-300">Grants</span><span class="font-bold text-purple-400">+185% ROI</span></div>
+            </div>
+          </div>
+          <div class="glass-card rounded-xl p-5">
+            <h3 class="text-sm font-semibold text-white mb-4">Stage Conversion Rate</h3>
+            <div class="space-y-2 text-xs">
+              <div class="flex justify-between"><span class="text-dark-300">Opportunity → LOI</span><span class="font-bold">45%</span></div>
+              <div class="flex justify-between"><span class="text-dark-300">LOI → DD</span><span class="font-bold">78%</span></div>
+              <div class="flex justify-between"><span class="text-dark-300">DD → Execution</span><span class="font-bold">92%</span></div>
+              <div class="flex justify-between"><span class="text-dark-300">Execution → Closed</span><span class="font-bold">95%</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ALL DEALS TAB -->
+      <div id="tab-deals" class="tab-content hidden">
+        <h3 class="text-2xl font-bold text-white mb-6">All Deals</h3>
+        <div class="glass-card rounded-xl overflow-hidden">
+          <table class="w-full text-xs">
+            <thead>
+              <tr class="border-b border-dark-500/30 bg-dark-800/50">
+                <th class="text-left px-4 py-3 font-semibold">Deal ID</th>
+                <th class="text-left px-4 py-3 font-semibold">Type</th>
+                <th class="text-left px-4 py-3 font-semibold">Stage</th>
+                <th class="text-left px-4 py-3 font-semibold">Value</th>
+                <th class="text-left px-4 py-3 font-semibold">Probability</th>
+                <th class="text-left px-4 py-3 font-semibold">Expected Close</th>
+              </tr>
+            </thead>
+            <tbody id="dealsTable">
+              <tr class="border-b border-dark-500/30 hover:bg-dark-800/20">
+                <td class="px-4 py-3 font-semibold">DEAL-00427</td>
+                <td class="px-4 py-3"><span class="stage-badge bg-emerald/20 text-emerald">Revenue</span></td>
+                <td class="px-4 py-3">Negotiation</td>
+                <td class="px-4 py-3 font-bold">$480K</td>
+                <td class="px-4 py-3">72%</td>
+                <td class="px-4 py-3">Oct 14, 2026</td>
+              </tr>
+              <tr class="border-b border-dark-500/30 hover:bg-dark-800/20">
+                <td class="px-4 py-3 font-semibold">DEAL-00428</td>
+                <td class="px-4 py-3"><span class="stage-badge bg-cyan/20 text-cyan">Capital</span></td>
+                <td class="px-4 py-3">LOI Signed</td>
+                <td class="px-4 py-3 font-bold">$2.5M</td>
+                <td class="px-4 py-3">85%</td>
+                <td class="px-4 py-3">Nov 30, 2026</td>
+              </tr>
+              <tr class="border-b border-dark-500/30 hover:bg-dark-800/20">
+                <td class="px-4 py-3 font-semibold">DEAL-00429</td>
+                <td class="px-4 py-3"><span class="stage-badge bg-amber/20 text-amber">Strategic</span></td>
+                <td class="px-4 py-3">Due Diligence</td>
+                <td class="px-4 py-3 font-bold">$850K</td>
+                <td class="px-4 py-3">68%</td>
+                <td class="px-4 py-3">Dec 20, 2026</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- DEAL DETAIL TAB — 22 STAGES -->
+      <div id="tab-deal-detail" class="tab-content hidden">
+        <h3 class="text-2xl font-bold text-white mb-2">DEAL-00427: Acme Enterprise Contract</h3>
+        <p class="text-sm text-dark-300 mb-6">Revenue Deal | Customer Contract | $480,000 | 72% Probability</p>
+
+        <!-- Deal Tabs -->
+        <div class="flex gap-2 mb-4 overflow-x-auto pb-2">
+          <button onclick="switchDealStage(1)" class="stage-tab active px-3 py-1.5 rounded text-xs font-semibold">1. Identity</button>
+          <button onclick="switchDealStage(2)" class="stage-tab px-3 py-1.5 rounded text-xs font-semibold">2. Parties</button>
+          <button onclick="switchDealStage(3)" class="stage-tab px-3 py-1.5 rounded text-xs font-semibold">3. Opportunity</button>
+          <button onclick="switchDealStage(4)" class="stage-tab px-3 py-1.5 rounded text-xs font-semibold">4. Qualification</button>
+          <button onclick="switchDealStage(5)" class="stage-tab px-3 py-1.5 rounded text-xs font-semibold">5. Strategy</button>
+          <button onclick="switchDealStage(6)" class="stage-tab px-3 py-1.5 rounded text-xs font-semibold">6. Economics</button>
+          <button onclick="switchDealStage(7)" class="stage-tab px-3 py-1.5 rounded text-xs font-semibold">7. Structure</button>
+          <button onclick="switchDealStage(8)" class="stage-tab px-3 py-1.5 rounded text-xs font-semibold">8. Terms</button>
+          <button onclick="switchDealStage(9)" class="stage-tab px-3 py-1.5 rounded text-xs font-semibold">9. Negotiation</button>
+          <button onclick="switchDealStage(10)" class="stage-tab px-3 py-1.5 rounded text-xs font-semibold">10. DD</button>
+          <button onclick="switchDealStage(11)" class="stage-tab px-3 py-1.5 rounded text-xs font-semibold">11. Approvals</button>
+          <button onclick="switchDealStage(12)" class="stage-tab px-3 py-1.5 rounded text-xs font-semibold">12. Docs</button>
+          <button onclick="switchDealStage(13)" class="stage-tab px-3 py-1.5 rounded text-xs font-semibold">13. Execution</button>
+          <button onclick="switchDealStage(14)" class="stage-tab px-3 py-1.5 rounded text-xs font-semibold">14. Funding</button>
+          <button onclick="switchDealStage(15)" class="stage-tab px-3 py-1.5 rounded text-xs font-semibold">15. Closing</button>
+          <button onclick="switchDealStage(16)" class="stage-tab px-3 py-1.5 rounded text-xs font-semibold">16. Performance</button>
+          <button onclick="switchDealStage(17)" class="stage-tab px-3 py-1.5 rounded text-xs font-semibold">17. Amendments</button>
+          <button onclick="switchDealStage(18)" class="stage-tab px-3 py-1.5 rounded text-xs font-semibold">18. Renewal</button>
+          <button onclick="switchDealStage(19)" class="stage-tab px-3 py-1.5 rounded text-xs font-semibold">19. Exit</button>
+          <button onclick="switchDealStage(20)" class="stage-tab px-3 py-1.5 rounded text-xs font-semibold">20. Intelligence</button>
+        </div>
+
+        <!-- Stage 1: Identity -->
+        <div id="stage-1" class="stage-content">
+          <div class="glass-card rounded-xl p-5 space-y-4">
+            <h4 class="text-sm font-semibold text-white">01 Deal Identity</h4>
+            <div class="grid grid-cols-2 gap-4">
+              <div><label class="text-[0.65rem] text-dark-300 block mb-1">Deal ID</label><input type="text" value="DEAL-00427" class="w-full bg-dark-800/50 border border-dark-500/30 rounded px-3 py-2 text-xs text-white" readonly></div>
+              <div><label class="text-[0.65rem] text-dark-300 block mb-1">Deal Name</label><input type="text" value="Acme Enterprise Contract" class="w-full bg-dark-800/50 border border-dark-500/30 rounded px-3 py-2 text-xs text-white"></div>
+              <div><label class="text-[0.65rem] text-dark-300 block mb-1">Deal Type</label><select class="w-full bg-dark-800/50 border border-dark-500/30 rounded px-3 py-2 text-xs text-white"><option selected>Customer Sale</option><option>Service Agreement</option><option>Equity Investment</option><option>Loan</option></select></div>
+              <div><label class="text-[0.65rem] text-dark-300 block mb-1">Deal Owner</label><input type="text" value="Sarah Chen" class="w-full bg-dark-800/50 border border-dark-500/30 rounded px-3 py-2 text-xs text-white"></div>
+              <div><label class="text-[0.65rem] text-dark-300 block mb-1">Created Date</label><input type="date" value="2026-09-08" class="w-full bg-dark-800/50 border border-dark-500/30 rounded px-3 py-2 text-xs text-white"></div>
+              <div><label class="text-[0.65rem] text-dark-300 block mb-1">Expected Close</label><input type="date" value="2026-10-14" class="w-full bg-dark-800/50 border border-dark-500/30 rounded px-3 py-2 text-xs text-white"></div>
+              <div><label class="text-[0.65rem] text-dark-300 block mb-1">Current Stage</label><select class="w-full bg-dark-800/50 border border-dark-500/30 rounded px-3 py-2 text-xs text-white"><option>Opportunity</option><option>Qualified</option><option>Proposal</option><option selected>Negotiation</option><option>LOI</option><option>DD</option><option>Execution</option><option>Closed</option></select></div>
+              <div><label class="text-[0.65rem] text-dark-300 block mb-1">Probability</label><input type="number" value="72" min="0" max="100" class="w-full bg-dark-800/50 border border-dark-500/30 rounded px-3 py-2 text-xs text-white">%</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stage 2: Parties -->
+        <div id="stage-2" class="stage-content hidden">
+          <div class="glass-card rounded-xl p-5">
+            <h4 class="text-sm font-semibold text-white mb-4">02 Parties to the Deal</h4>
+            <div class="space-y-3">
+              <div class="term-row">
+                <p class="text-xs font-semibold text-white">Buyer</p>
+                <p class="text-[0.65rem] text-dark-300">Acme Corp | Entity ID: EIN-98-1234567 | Contact: John Smith (john@acme.com)</p>
+              </div>
+              <div class="term-row">
+                <p class="text-xs font-semibold text-white">Seller</p>
+                <p class="text-[0.65rem] text-dark-300">Our Company | Entity ID: EIN-56-7890123 | Contact: Sarah Chen (sarah@company.com)</p>
+              </div>
+              <div class="term-row">
+                <p class="text-xs font-semibold text-white">Attorney (Buyer)</p>
+                <p class="text-[0.65rem] text-dark-300">Baker & McKenzie | Contact: legal@bakermckenzie.com</p>
+              </div>
+              <div class="term-row">
+                <p class="text-xs font-semibold text-white">Attorney (Seller)</p>
+                <p class="text-[0.65rem] text-dark-300">Davis & Associates | Contact: legal@davislegal.com</p>
+              </div>
+              <div class="term-row">
+                <p class="text-xs font-semibold text-white">Broker</p>
+                <p class="text-[0.65rem] text-dark-300">None</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stage 3: Opportunity -->
+        <div id="stage-3" class="stage-content hidden">
+          <div class="glass-card rounded-xl p-5">
+            <h4 class="text-sm font-semibold text-white mb-4">03 Opportunity</h4>
+            <div class="space-y-3">
+              <div class="term-row">
+                <p class="text-xs font-semibold text-white">Source</p>
+                <p class="text-[0.65rem] text-dark-300">Inbound referral from TechCrunch</p>
+              </div>
+              <div class="term-row">
+                <p class="text-xs font-semibold text-white">Problem</p>
+                <p class="text-[0.65rem] text-dark-300">Acme needs enterprise SaaS solution for customer management</p>
+              </div>
+              <div class="term-row">
+                <p class="text-xs font-semibold text-white">Potential Value</p>
+                <p class="text-[0.65rem] text-dark-300">$480K first year, $1.2M over 3 years</p>
+              </div>
+              <div class="term-row">
+                <p class="text-xs font-semibold text-white">Strategic Importance</p>
+                <p class="text-[0.65rem] text-dark-300">High — Fortune 500 reference customer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stage 4: Qualification -->
+        <div id="stage-4" class="stage-content hidden">
+          <div class="glass-card rounded-xl p-5">
+            <h4 class="text-sm font-semibold text-white mb-4">04 Qualification Scoring</h4>
+            <div class="space-y-3 text-xs">
+              <div class="flex justify-between items-center p-2 bg-dark-800/30 rounded">
+                <span class="text-dark-300">Real Need?</span>
+                <span class="font-bold text-emerald">✓ Yes (10/10)</span>
+              </div>
+              <div class="flex justify-between items-center p-2 bg-dark-800/30 rounded">
+                <span class="text-dark-300">Budget Approved?</span>
+                <span class="font-bold text-emerald">✓ Yes (10/10)</span>
+              </div>
+              <div class="flex justify-between items-center p-2 bg-dark-800/30 rounded">
+                <span class="text-dark-300">Authority to Decide?</span>
+                <span class="font-bold text-emerald">✓ Yes (9/10)</span>
+              </div>
+              <div class="flex justify-between items-center p-2 bg-dark-800/30 rounded">
+                <span class="text-dark-300">Timeline?</span>
+                <span class="font-bold text-amber">6-8 weeks (8/10)</span>
+              </div>
+              <div class="flex justify-between items-center p-2 bg-dark-800/30 rounded">
+                <span class="text-dark-300">Strategic Fit?</span>
+                <span class="font-bold text-emerald">✓ Yes (10/10)</span>
+              </div>
+              <div class="flex justify-between items-center p-2 bg-dark-700/50 rounded font-semibold">
+                <span class="text-white">OVERALL SCORE</span>
+                <span class="text-cyan">47/50 (94%)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stage 6: Economics -->
+        <div id="stage-6" class="stage-content hidden">
+          <div class="glass-card rounded-xl p-5 space-y-4">
+            <h4 class="text-sm font-semibold text-white">06 Deal Economics</h4>
+            <div class="grid grid-cols-2 gap-4 text-xs">
+              <div class="p-3 bg-dark-800/30 rounded">
+                <p class="text-dark-300">Contract Value (Year 1)</p>
+                <p class="text-lg font-bold text-emerald">$480,000</p>
+              </div>
+              <div class="p-3 bg-dark-800/30 rounded">
+                <p class="text-dark-300">Annual Value (Recurring)</p>
+                <p class="text-lg font-bold text-cyan">$400,000</p>
+              </div>
+              <div class="p-3 bg-dark-800/30 rounded">
+                <p class="text-dark-300">Implementation</p>
+                <p class="text-lg font-bold text-amber">$80,000</p>
+              </div>
+              <div class="p-3 bg-dark-800/30 rounded">
+                <p class="text-dark-300">Gross Margin</p>
+                <p class="text-lg font-bold text-emerald">78%</p>
+              </div>
+              <div class="p-3 bg-dark-800/30 rounded">
+                <p class="text-dark-300">3-Year Value</p>
+                <p class="text-lg font-bold text-white">$1,280,000</p>
+              </div>
+              <div class="p-3 bg-dark-800/30 rounded">
+                <p class="text-dark-300">Expected ROI</p>
+                <p class="text-lg font-bold text-emerald">+320%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stage 8: Terms -->
+        <div id="stage-8" class="stage-content hidden">
+          <div class="glass-card rounded-xl p-5">
+            <h4 class="text-sm font-semibold text-white mb-4">08 Deal Terms Registry</h4>
+            <div class="space-y-2 text-xs">
+              <div class="term-row flex justify-between">
+                <span class="text-dark-300">Price per User</span>
+                <span class="font-bold">$2,400/year (10 users)</span>
+              </div>
+              <div class="term-row flex justify-between">
+                <span class="text-dark-300">Payment Terms</span>
+                <span class="font-bold">Net 30 (annual invoice)</span>
+              </div>
+              <div class="term-row flex justify-between">
+                <span class="text-dark-300">Contract Term</span>
+                <span class="font-bold">3 years</span>
+              </div>
+              <div class="term-row flex justify-between">
+                <span class="text-dark-300">Auto-Renewal</span>
+                <span class="font-bold">Yes, 1-year terms</span>
+              </div>
+              <div class="term-row flex justify-between">
+                <span class="text-dark-300">Termination</span>
+                <span class="font-bold">90-day notice</span>
+              </div>
+              <div class="term-row flex justify-between">
+                <span class="text-dark-300">Exclusivity</span>
+                <span class="font-bold">Non-exclusive</span>
+              </div>
+              <div class="term-row flex justify-between">
+                <span class="text-dark-300">SLA</span>
+                <span class="font-bold">99.5% uptime</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Default message for other stages -->
+        <div id="stage-default" class="stage-content">
+          <div class="glass-card rounded-xl p-5">
+            <p class="text-sm text-dark-300">This stage content is coming soon. The framework is designed to capture all 22 deal stages from Opportunity through Intelligence.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+</div>
+
+<script>
+function switchTab(tab) {
+  document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+  document.getElementById('tab-' + tab).classList.remove('hidden');
+
+  if (tab === 'dashboard') {
+    setTimeout(renderCharts, 100);
+  }
+}
+
+function switchDealStage(stage) {
+  document.querySelectorAll('.stage-content').forEach(el => el.classList.add('hidden'));
+  document.querySelectorAll('.stage-tab').forEach(el => el.classList.remove('active', 'bg-indigo-600/30', 'text-white'));
+
+  const stageEl = document.getElementById('stage-' + stage);
+  if (stageEl) {
+    stageEl.classList.remove('hidden');
+  } else {
+    document.getElementById('stage-default').classList.remove('hidden');
+  }
+
+  event.target.classList.add('active', 'bg-indigo-600/30', 'text-white');
+}
+
+function createNewDeal() {
+  alert('Open deal creation form');
+}
+
+function renderCharts() {
+  // Stage Chart
+  const stageCtx = document.getElementById('stageChart');
+  if (stageCtx && !stageCtx.stageChart) {
+    stageCtx.stageChart = new Chart(stageCtx, {
+      type: 'bar',
+      data: {
+        labels: ['Opportunity', 'Qualified', 'Proposal', 'Negotiation', 'LOI', 'DD', 'Execution', 'Closed'],
+        datasets: [{
+          label: 'Value',
+          data: [2400, 2210, 1222, 1190, 3201, 2100, 1800, 1500],
+          backgroundColor: ['#6366f1', '#818cf8', '#06b6d4', '#0891b2', '#f59e0b', '#fbbf24', '#10b981', '#34d399'],
+          borderRadius: 6,
+          borderSkipped: false
+        }]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        maintainAspectRatio: true,
+        plugins: { legend: { display: false } },
+        scales: {
+          x: { grid: { color: 'rgba(148, 163, 184, 0.08)' } },
+          y: { grid: { display: false } }
+        }
+      }
+    });
+  }
+
+  // Type Chart
+  const typeCtx = document.getElementById('typeChart');
+  if (typeCtx && !typeCtx.typeChart) {
+    typeCtx.typeChart = new Chart(typeCtx, {
+      type: 'doughnut',
+      data: {
+        labels: ['Revenue', 'Capital', 'Strategic', 'M&A', 'Real Estate'],
+        datasets: [{
+          data: [45, 30, 15, 7, 3],
+          backgroundColor: ['#10b981', '#06b6d4', '#f59e0b', '#8b5cf6', '#ec4899'],
+          borderColor: 'rgba(15, 23, 42, 0.8)',
+          borderWidth: 2
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: true,
+        plugins: { legend: { position: 'bottom', labels: { color: '#e2e8f0', font: { size: 11 } } } }
+      }
+    });
+  }
+}
+
+// Initialize on load
+document.addEventListener('DOMContentLoaded', () => {
+  renderCharts();
+});
+</script>
+</body>
+</html>

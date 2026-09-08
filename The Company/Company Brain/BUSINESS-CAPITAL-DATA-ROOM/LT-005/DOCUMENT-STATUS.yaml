@@ -1,0 +1,41 @@
+venture_id: "LT-005"
+last_audit: "2026-09-07 23:25:36"
+compliance_score: "94.6%"
+state_overview:
+  total_documents: 58
+  verified_count: 55
+  required_count: 55
+  optional_count: 3
+  missing_count: 0
+  expired_count: 0
+disclosure_boundaries:
+  BANK-SAFE:
+    - 01_IDENTITY
+    - 03_LEGAL
+    - 04_OWNERSHIP
+    - 05_FINANCIAL
+    - 08_REVENUE
+    - 11_ASSETS
+    - 16_LOANS
+    - 21_REPORTS
+  GRANT-SAFE:
+    - 01_IDENTITY
+    - 02_STRATEGY
+    - 05_FINANCIAL
+    - 07_PRODUCT
+    - 09_OPERATIONS
+    - 12_COMPLIANCE
+    - 15_GRANTS
+    - 21_REPORTS
+  INVESTOR-SAFE:
+    - 01_IDENTITY
+    - 02_STRATEGY
+    - 04_OWNERSHIP
+    - 05_FINANCIAL
+    - 06_MARKET
+    - 07_PRODUCT
+    - 17_INVESTORS
+    - 21_REPORTS
+  INTERNAL-ONLY:
+    - 18_CONTRACTS
+    - 22_SYSTEM

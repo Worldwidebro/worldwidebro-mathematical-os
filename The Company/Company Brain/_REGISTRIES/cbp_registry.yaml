@@ -1,0 +1,36 @@
+# Company Brain Points (CBP)
+# ~500 controllable operations across 20 layers
+
+control_points:
+  - ref_id: "CBP-000001"
+    name: "Identify Data Source"
+    layer: "02-SOURCES"
+    domain: "Source Discovery"
+    requires:
+      - capability: "CAP-000XXX"
+      - model: "MOD-000XXX"
+      - tool: "TOL-000XXX"
+    status: "🟡 framework ready, implementation pending"
+
+  - ref_id: "CBP-000002"
+    name: "Determine Source Authority"
+    layer: "02-SOURCES"
+    domain: "Source Validation"
+
+  - ref_id: "CBP-000247"
+    name: "Resolve Entity Identity"
+    layer: "06-ENTITY-RESOLUTION"
+    domain: "Entity Resolution"
+    requires:
+      - capability: "CAP-000247"
+      - agent: "AGT-000012"
+      - repository: "REP-000089"
+    status: "✅ implemented"
+
+  - ref_id: "CBP-000500"
+    name: "Update Organizational Learning"
+    layer: "44-LEARNING"
+    domain: "Continuous Improvement"
+
+total: "500 control points (CBP-000001 to CBP-000500)"
+status: "🟡 Framework created, definitions in progress"

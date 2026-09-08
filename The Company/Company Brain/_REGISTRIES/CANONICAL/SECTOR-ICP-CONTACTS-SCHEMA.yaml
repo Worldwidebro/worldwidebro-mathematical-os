@@ -1,0 +1,339 @@
+# Sector ICP Contact Registry Schema
+# Master template for organizing contacts/prospects by sector and ICP qualification
+
+metadata:
+  schema_version: "1.0"
+  created: 2026-09-08
+  authority: "CP-006 (Growth & Sales Strategy)"
+  purpose: "Centralized sector-level contact management for ICP outreach campaigns"
+
+# ============================================================
+# REGISTRY STRUCTURE
+# ============================================================
+
+# Per-sector contact files will follow this pattern:
+# _REGISTRIES/CANONICAL/SECTOR-CONTACTS/{SECTOR_CODE}.yaml
+
+# Example file: SECTOR-CONTACTS/SEC-014-staffing.yaml
+# Contains all prospects matching the ICP for staffing/HR sector
+
+# ============================================================
+# ICP QUALIFICATION CRITERIA (CAM-001)
+# ============================================================
+
+icp_definition:
+  name: "CAM-001 Standard ICP"
+  source: "CAMPAIGNS/ICP.md"
+  qualification_rules:
+    team_size:
+      min: 10
+      max: 60
+      description: "Software engineers in organization"
+
+    api_spend_monthly:
+      min: 5000
+      description: "LLM API spend (minimum urgency threshold)"
+
+    tool_adoption:
+      required_tools:
+        - "Claude Code"
+        - "Cursor"
+        - "Copilot"
+        - "LangGraph"
+      description: "Active use of >= 1 AI assistant tool"
+
+    funding_stage:
+      eligible_stages:
+        - "Seed"
+        - "Series A"
+        - "Series B"
+        - "Profitable Bootstrapped"
+      ineligible_stages:
+        - "Pre-seed"
+        - "Pre-revenue"
+
+    decision_speed:
+      approval_timeline_days: 7
+      description: "Can approve $7,500 SOW within 7 days"
+
+# ============================================================
+# CONTACT RECORD SCHEMA
+# ============================================================
+
+contact_schema:
+
+  # Contact Identity
+  contact_id:
+    type: "string"
+    format: "ULID"
+    description: "Unique contact identifier"
+    example: "01K4X7G2Y5H9J8ABC123XYZ456"
+
+  sector_code:
+    type: "string"
+    format: "SEC-NNN"
+    description: "Sector classification (SEC-001 to SEC-035)"
+
+  # Contact Information
+  name:
+    type: "string"
+    description: "Full name of contact"
+
+  email:
+    type: "string"
+    format: "email"
+    description: "Email address (validated)"
+
+  phone:
+    type: "string"
+    description: "Phone number (validated)"
+
+  linkedin_url:
+    type: "string"
+    format: "url"
+    description: "LinkedIn profile URL"
+
+  # Company Information
+  company_name:
+    type: "string"
+    description: "Company name"
+
+  company_domain:
+    type: "string"
+    format: "domain"
+    description: "Company domain (extracted from email if possible)"
+
+  company_size:
+    type: "integer"
+    description: "Total headcount"
+
+  eng_team_size:
+    type: "integer"
+    description: "Engineering team headcount"
+
+  naics_code:
+    type: "string"
+    format: "NAICS-2022"
+    description: "NAICS classification code"
+
+  crunchbase_id:
+    type: "string"
+    description: "Crunchbase company ID"
+
+  # Firmographic Data
+  annual_revenue:
+    type: "number"
+    currency: "USD"
+    description: "Annual revenue (if public)"
+
+  funding_status:
+    type: "string"
+    enum: ["Bootstrapped", "Seed", "Series A", "Series B", "Series C+", "IPO"]
+
+  funding_raised:
+    type: "number"
+    currency: "USD"
+    description: "Total funding raised (if available)"
+
+  # ICP Qualification
+  icp_score:
+    type: "number"
+    min: 0
+    max: 100
+    description: "ICP match percentage (0-100)"
+
+  icp_qualified:
+    type: "boolean"
+    description: "Meets all ICP criteria (score >= 70)"
+
+  qualification_details:
+    type: "object"
+    properties:
+      team_size_match: {type: "boolean"}
+      api_spend_match: {type: "boolean"}
+      tool_adoption_match: {type: "boolean"}
+      funding_stage_match: {type: "boolean"}
+      decision_speed_match: {type: "boolean"}
+
+  # Engagement Status
+  engagement_status:
+    type: "string"
+    enum:
+      - "uncontacted"
+      - "contacted"
+      - "responded"
+      - "qualified"
+      - "in_sales_process"
+      - "won"
+      - "lost"
+      - "unqualified"
+      - "opted_out"
+
+  engagement_notes:
+    type: "string"
+    description: "Free-form engagement notes"
+
+  last_contact_date:
+    type: "date"
+    description: "Date of last contact attempt"
+
+  # Campaign Tracking
+  campaigns:
+    type: "array"
+    description: "Campaigns this contact was part of"
+    items:
+      type: "object"
+      properties:
+        campaign_id: {type: "string"}
+        campaign_name: {type: "string"}
+        added_date: {type: "date"}
+        response: {type: "string"}
+
+  # Lead Scoring
+  lead_score:
+    type: "number"
+    min: 0
+    max: 100
+    description: "Lead score (0-100) for prioritization"
+
+  lead_priority:
+    type: "string"
+    enum: ["hot", "warm", "cold"]
+
+  # System Metadata
+  created_at:
+    type: "datetime"
+    description: "Record creation timestamp"
+
+  updated_at:
+    type: "datetime"
+    description: "Last update timestamp"
+
+  source:
+    type: "string"
+    enum:
+      - "linkedin_search"
+      - "crunchbase"
+      - "g2"
+      - "industry_directory"
+      - "referral"
+      - "inbound"
+      - "enrichment_service"
+    description: "How this contact was discovered"
+
+  data_quality:
+    type: "number"
+    min: 0
+    max: 100
+    description: "Data completeness score"
+
+# ============================================================
+# FILE ORGANIZATION
+# ============================================================
+
+file_structure: |
+  _REGISTRIES/CANONICAL/
+  ├── SECTOR-CONTACTS/
+  │   ├── SEC-001-beauty-wellness.yaml          (N contacts for sector 1)
+  │   ├── SEC-002-construction-infrastructure.yaml
+  │   ├── SEC-003-consumer-electronics.yaml
+  │   ├── ...
+  │   └── SEC-035-[final-sector].yaml
+  │
+  ├── SECTOR-ICP-MAPPING.yaml                   (Sector → ICP classification)
+  ├── ICP-CONTACT-INDEX.yaml                    (Global contact index)
+  └── SECTOR-ICP-CONTACTS-SCHEMA.yaml            (This file)
+
+# ============================================================
+# USAGE EXAMPLES
+# ============================================================
+
+example_contact: |
+  ---
+  contact_id: "01K4X7G2Y5H9J8ABC123XYZ456"
+  sector_code: "SEC-014"  # Human Resources & Staffing
+
+  # Contact Info
+  name: "Sarah Chen"
+  email: "sarah.chen@techstartup.io"
+  phone: "+1-555-0123"
+  linkedin_url: "https://linkedin.com/in/sarahchen"
+
+  # Company Info
+  company_name: "TechStartup Inc"
+  company_domain: "techstartup.io"
+  company_size: 125
+  eng_team_size: 42
+  naics_code: "541511"  # Software development
+  crunchbase_id: "company/tech-startup-inc"
+
+  # Firmographic
+  annual_revenue: 5000000
+  funding_status: "Series A"
+  funding_raised: 3500000
+
+  # ICP Qualification
+  icp_score: 87
+  icp_qualified: true
+  qualification_details:
+    team_size_match: true
+    api_spend_match: true
+    tool_adoption_match: true
+    funding_stage_match: true
+    decision_speed_match: true
+
+  # Engagement
+  engagement_status: "responded"
+  engagement_notes: "Replied to outreach 2026-09-05. Interested in discovery call."
+  last_contact_date: 2026-09-05
+
+  # Scoring
+  lead_score: 92
+  lead_priority: "hot"
+
+  # Campaigns
+  campaigns:
+    - campaign_id: "CAM-001"
+      campaign_name: "AI Developer Tools - Wave 1"
+      added_date: 2026-09-01
+      response: "positive"
+
+  # Metadata
+  created_at: 2026-09-01T14:23:45Z
+  updated_at: 2026-09-05T10:45:30Z
+  source: "linkedin_search"
+  data_quality: 95
+
+# ============================================================
+# LINKING TO CLICKUP
+# ============================================================
+
+clickup_integration: |
+  Each sector contact registry can be synced to ClickUp:
+
+  Workspace: Worldwidebro / Company Brain
+  Folder: Sales Ops
+  List: "Sector-{SEC-CODE} Prospects"
+
+  Fields:
+    - Contact Name (text)
+    - Company (text)
+    - Email (email)
+    - ICP Score (number)
+    - Lead Priority (select: hot/warm/cold)
+    - Engagement Status (select)
+    - Next Action (task)
+
+  Sync Direction: YAML → ClickUp (automated via webhook)
+  Sync Frequency: Daily
+
+# ============================================================
+# IMPLEMENTATION ROADMAP
+# ============================================================
+
+implementation:
+  phase_1_structure: "Create SECTOR-CONTACTS/ directory + YAML schema (2 hours)"
+  phase_2_discovery: "Populate contacts via LinkedIn + Crunchbase (ongoing)"
+  phase_3_enrichment: "Firmographic + ICP scoring (4 hours)"
+  phase_4_clickup_sync: "Wire ClickUp integration (2 hours)"
+  phase_5_campaigns: "Launch sector-based outreach (continuous)"

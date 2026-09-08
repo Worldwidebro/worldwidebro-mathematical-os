@@ -1,0 +1,45 @@
+{
+  "registry_id": "REG-DNS-001",
+  "updated_at": "2026-09-05",
+  "zones": [
+    {
+      "zone": "ts.net (MagicDNS)",
+      "type": "Private Overlay Split-DNS",
+      "managed_by": "Tailscale Inc.",
+      "records": [
+        {
+          "name": "mac-studio.ts.net",
+          "type": "A",
+          "target": "100.87.214.70"
+        },
+        {
+          "name": "aces-macbook-air-1.ts.net",
+          "type": "A",
+          "target": "100.121.17.63"
+        },
+        {
+          "name": "omniroute-6da9315f.ts.net",
+          "type": "A",
+          "target": "100.80.229.113"
+        }
+      ]
+    },
+    {
+      "zone": "worldwidebro.com",
+      "type": "Public DNS Zone",
+      "managed_by": "Cloudflare / Registrar",
+      "records": [
+        {
+          "name": "@",
+          "type": "CNAME",
+          "target": "cname.vercel-dns.com"
+        },
+        {
+          "name": "www",
+          "type": "CNAME",
+          "target": "cname.vercel-dns.com"
+        }
+      ]
+    }
+  ]
+}

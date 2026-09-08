@@ -1,0 +1,32 @@
+{
+  "total_ask": "$500,000 Debt Facility + $175,000 USDOT Grant",
+  "loan_amount": "$250,000 SBA Express + $250,000 Factoring Revolver",
+  "grant_ask": "$175,000 USDOT / EPA SmartWay SBIR",
+  "uses": [
+    [
+      "Freight Invoice Advance Float",
+      "$250,000",
+      "Revolving capital reserve funding instant same-day carrier pay"
+    ],
+    [
+      "Carrier Sourcing & Sales Development",
+      "$110,000",
+      "Acquisition reps targeting 300 regional independent motor carriers"
+    ],
+    [
+      "Dispatch Automation & Telematics Integration",
+      "$65,000",
+      "ELD telematics data ingestion and automated route optimizer"
+    ],
+    [
+      "SBA Loan Closing, Bonding & Reserve",
+      "$45,000",
+      "Closing costs, statutory SBA guarantee fees, and debt reserve"
+    ],
+    [
+      "DOT Compliance & Legal Filings",
+      "$30,000",
+      "FMCSA property broker bond renewal, state authority registrations"
+    ]
+  ]
+}

@@ -1,0 +1,126 @@
+# ==============================================================================
+# CAPITAL_FACILITIES_REGISTRY.yaml — Canonical Debt, Credit & Factoring Registry
+# ==============================================================================
+# Authority: Sovereign Operator & Executive Finance (CP-006 / CP-008)
+# Status: ACTIVE_CAPITAL_PIPELINE
+# Last Audit: 2026-09-07
+# ==============================================================================
+
+metadata:
+  version: "1.0.0"
+  registry_id: "REG-CAP-001"
+  created_at: "2026-09-07"
+  governing_rules: "ANTIGRAVITY.md / ECONOMIC-REALITY.md / REALITY.md"
+  total_facilities: 5
+  total_immediate_credit_lines: "$2,350,000"
+  bonding_capacity_available: "$9,000,000"
+
+facilities:
+  # ----------------------------------------------------------------------------
+  # 1. CON-001: ACE Construction & Contracting LLC
+  # ----------------------------------------------------------------------------
+  - facility_id: "CAP-CON-001-SBA-01"
+    venture_id: "CON-001"
+    venture_name: "ACE Construction Workflow OS"
+    legal_entity: "ACE Construction & Contracting LLC"
+    facility_types:
+      - type: "SBA 7(a) Working Capital Loan"
+        target_amount: 350000
+        term_years: 10
+        rate: "Prime + 2.50%"
+      - type: "SBA Surety Bond Guarantee (SBG)"
+        bonding_capacity: 9000000
+        coverage: "80%-90% Federal Guarantee on Public/Private Contracts"
+      - type: "Mobilization / Progress Draw Revolver"
+        target_amount: 150000
+        term_years: 1
+        rate: "Prime + 3.00%"
+    target_lenders: ["Live Oak Bank", "First Citizens Bank (SBA PLP)"]
+    dscr_projected: "2.90x (Year 1) -> 8.36x (Year 2)"
+    dossier_path: "38-OPPORTUNITIES/CAPITAL_STACK/CON-001_SBA_Surety_Bond_Draw_Line.md"
+    status: "UNDERWRITING_READY"
+
+  # ----------------------------------------------------------------------------
+  # 2. LT-011: WorldwideBro Fleet OS LLC (CarrierDispatch)
+  # ----------------------------------------------------------------------------
+  - facility_id: "CAP-LT-011-FAC-01"
+    venture_id: "LT-011"
+    venture_name: "Dispatch Software / Carrier TMS & DispatchOS Core"
+    legal_entity: "WorldwideBro Fleet OS LLC"
+    facility_types:
+      - type: "SBA Express Working Capital Loan"
+        target_amount: 500000
+        term_years: 10
+        rate: "Prime + 3.00%"
+      - type: "Embedded Non-Recourse Freight Factoring Revolver"
+        target_amount: 500000
+        advance_rate: "96.0%"
+        discount_fee: "2.50%"
+        carrierdispatch_fee_share: "0.60% of gross volume"
+    target_lenders: ["Apex Capital Corp", "Triumph Financial", "Huntington National Bank"]
+    dscr_projected: "1.98x (Year 1) -> 14.11x (Year 2)"
+    dossier_path: "38-OPPORTUNITIES/CAPITAL_STACK/LT-011_Freight_Factoring_SBA_Express.md"
+    status: "UNDERWRITING_READY"
+
+  # ----------------------------------------------------------------------------
+  # 3. LT-005: HealthRoute Logistics LLC
+  # ----------------------------------------------------------------------------
+  - facility_id: "CAP-LT-005-CDFI-01"
+    venture_id: "LT-005"
+    venture_name: "HealthRoute Medical Courier Dispatch"
+    legal_entity: "HealthRoute Logistics LLC"
+    facility_types:
+      - type: "Healthcare CDFI Low-Interest Term Loan"
+        target_amount: 250000
+        term_years: 7
+        rate: "4.25% Fixed"
+      - type: "Dual-Zone Reefer Commercial Van Lease Facility"
+        target_amount: 120000
+        term_months: 48
+        units: 2
+    target_lenders: ["Primary Care Development Corporation (PCDC)", "Capital Impact Partners", "Ally Commercial"]
+    dscr_projected: "1.74x (Year 1) -> 6.07x (Year 2)"
+    dossier_path: "38-OPPORTUNITIES/CAPITAL_STACK/LT-005_Healthcare_CDFI_Vehicle_Lease.md"
+    status: "UNDERWRITING_READY"
+
+  # ----------------------------------------------------------------------------
+  # 4. OPS-001: WorldwideBro Staffing Ops LLC (CareerOps)
+  # ----------------------------------------------------------------------------
+  - facility_id: "CAP-OPS-001-PAYROLL-01"
+    venture_id: "OPS-001"
+    venture_name: "Career Ops / Staffing Operations"
+    legal_entity: "WorldwideBro Staffing Ops LLC"
+    facility_types:
+      - type: "Staffing Payroll Funding & Timesheet Factoring Revolver"
+        target_amount: 500000
+        advance_rate: "92.0% - 95.0%"
+        discount_fee: "1.75% / 30 Days"
+      - type: "SBA Community Advantage Term Loan"
+        target_amount: 350000
+        term_years: 10
+        rate: "Prime + 2.75%"
+    target_lenders: ["Advance Partners", "eCapital Staffing", "Self-Help Credit Union"]
+    dscr_projected: "7.71x (Year 1) -> 32.51x (Year 2)"
+    dossier_path: "38-OPPORTUNITIES/CAPITAL_STACK/OPS-001_Staffing_Payroll_Funding_Facility.md"
+    status: "UNDERWRITING_READY"
+
+  # ----------------------------------------------------------------------------
+  # 5. RE-001: WorldwideBro Holdings LLC
+  # ----------------------------------------------------------------------------
+  - facility_id: "CAP-RE-001-DSCR-01"
+    venture_id: "RE-001"
+    venture_name: "WorldwideBro Holdings / Real Estate Deal Engine"
+    legal_entity: "WorldwideBro Holdings LLC"
+    facility_types:
+      - type: "CDFI Affordable Housing Acquisition Bridge Revolver"
+        target_amount: 750000
+        term_months: 24
+        rate: "4.00% Interest-Only"
+      - type: "Commercial 30-Year DSCR Rental Portfolio Facility"
+        target_amount: 1500000
+        term_years: 30
+        rate: "6.85% Fixed"
+    target_lenders: ["Enterprise Community Loan Fund", "LISC Housing Fund", "Kiavi"]
+    dscr_projected: "1.99x (Year 1) -> 2.13x (Year 2)"
+    dossier_path: "38-OPPORTUNITIES/CAPITAL_STACK/RE-001_CDFI_Acquisition_Debt_DSCR_Packet.md"
+    status: "UNDERWRITING_READY"

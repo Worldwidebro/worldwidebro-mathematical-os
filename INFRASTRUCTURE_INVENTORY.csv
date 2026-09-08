@@ -1,0 +1,11 @@
+name,type,path,status,purpose,last_commit,health,active,notes
+"knowledge-work-plugins","plugin-library","/Users/acebless/knowledge-work-plugins","✅ Active","Claude plugins (sales/data/marketing/etc)","6d223a7","verified","yes","1000+ commits"
+"Documents","venture-work","/Users/acebless/Documents","✅ Active","Venture packages + FIN-001 gateway","0f3dc0651","verified","yes","100+ commits"
+"agency-agents","agent-framework","/Users/acebless/.agency-agents","✅ Active","Agent orchestration + routing","3c95888","verified","yes","50+ commits"
+"hermes-agent","agent-system","/Users/acebless/.hermes/hermes-agent","✅ Active","Hermes routing/dispatch agent","165c889e5b","verified","yes","100+ commits"
+"fractal-ventures","venture-orchestrator","/Users/acebless/.fractal/ventures","🟡 Partial","Hierarchical agent loops","c724cf3","partial","yes","5 commits - needs work"
+"openclaw-workspace","integration","/Users/acebless/.openclaw/workspace","⚠️ Archived","OpenClaw integration workspace","unknown","unknown","no","Status unknown"
+"obsidian-vault","knowledge-base","/Users/acebless/.Trash/ObsidianWorldwidebroVault","⚠️ Archived","Venture metadata & skills registry","0d820ac48","archived","no","100+ commits - archived"
+"worldwidebro-venture-portal","web-app","/Users/acebless/.Trash/worldwidebro-venture-portal","⚠️ Archived","Venture portal + VEX decision engine","c623094","archived","no","50+ commits - archived"
+"Vex","web-app","/Users/acebless/.Trash/Vex","⚠️ Archived","VEX system (services)","6842494","archived","no","50+ commits - archived"
+"Company Brain","directory","/Users/acebless/The Company/Company Brain","✅ Active","Master ontology - 50 domains","N/A","verified","yes","20 layers × 50 domains × ~500 control points"

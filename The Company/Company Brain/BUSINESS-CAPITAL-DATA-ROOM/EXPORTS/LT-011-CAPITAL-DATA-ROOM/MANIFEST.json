@@ -1,0 +1,180 @@
+{
+  "venture_id": "LT-011",
+  "files": [
+    {
+      "path": "BUSINESS-CAPITAL-PROSPECTUS.md",
+      "bytes": 5766,
+      "sha256": "4f7ac7b202ba8895f61b6d7c637c9f91381f8d2d7e3fb0fd50e6309be093c4f9"
+    },
+    {
+      "path": "GENERATED-PDFS/LOAN-PACKAGE.pdf",
+      "bytes": 2599,
+      "sha256": "9a6706e5268d217108e4e4df6e050ac7e5931222a80663958af8ec89c855d210"
+    },
+    {
+      "path": "GENERATED-PDFS/GRANT-PACKAGE.pdf",
+      "bytes": 2626,
+      "sha256": "a403fae7e65d7f2b8c3cd3c9343685178d0097daa4dbd1089fdd72f5b7190b5d"
+    },
+    {
+      "path": "GENERATED-PDFS/INVESTOR-DECK.pdf",
+      "bytes": 2817,
+      "sha256": "c258782131641b1d7f3f3b78588de9b3be344502e88b5ad6c0c72cffa8d0a1e9"
+    },
+    {
+      "path": "GENERATED-PDFS/MARKET-ANALYSIS.pdf",
+      "bytes": 2702,
+      "sha256": "8722f651334c2a183dafaed6716b09cea629af42d374aa0d46f40bb784d09ae7"
+    },
+    {
+      "path": "GENERATED-PDFS/INVESTMENT-MEMORANDUM.pdf",
+      "bytes": 2543,
+      "sha256": "56a6f2553d31a0e8dc86967a1c7cf7e40db99fcb6bb73a23441c9f37cb5a5387"
+    },
+    {
+      "path": "GENERATED-PDFS/REVENUE-EVIDENCE.pdf",
+      "bytes": 2935,
+      "sha256": "f604f9034d012c971053a7cd2a3aed674668ef5d8704fb178c67df3ff80e5851"
+    },
+    {
+      "path": "GENERATED-PDFS/CAPITAL-STACK.pdf",
+      "bytes": 2711,
+      "sha256": "8dcf4f60d558da0e60f3d94a4a27f4fd2d0960a11fa2e2264cf4bbf530afe8be"
+    },
+    {
+      "path": "GENERATED-PDFS/MANAGEMENT-PROFILE.pdf",
+      "bytes": 2703,
+      "sha256": "7a8a9b462e2c23881939246dc3a3c3a4af4d6a086d0e67c7e723931932bdeabd"
+    },
+    {
+      "path": "GENERATED-PDFS/LOI-SUMMARY.pdf",
+      "bytes": 2804,
+      "sha256": "4b8d2bf143d59d93bd98393f5ef8dad36925d284666b7205d56f0e2429b3d1a3"
+    },
+    {
+      "path": "GENERATED-PDFS/FINANCIAL-PROJECTIONS.pdf",
+      "bytes": 2669,
+      "sha256": "24841840c4c87859a6a449fc8a96e54a81fdf418e0fc90a43964e38805911707"
+    },
+    {
+      "path": "GENERATED-PDFS/CAPITAL-READINESS-REPORT.pdf",
+      "bytes": 3177,
+      "sha256": "c1f5208768308e29464b74745fd7361241120e2c06dc13d5562dd39ff1262ae2"
+    },
+    {
+      "path": "GENERATED-PDFS/BUSINESS-PLAN.pdf",
+      "bytes": 2950,
+      "sha256": "38fd33c862f1799c3eb9d13b8bf292f2b9f2896e6c70a959d75eb846453af1d0"
+    },
+    {
+      "path": "GENERATED-PDFS/USE-OF-FUNDS.pdf",
+      "bytes": 2898,
+      "sha256": "e97cfe92ad3645dff177d90141d126f6b19f7509c79c56e2e4fbe9fe0f4553f6"
+    },
+    {
+      "path": "GENERATED-PDFS/EXECUTIVE-SUMMARY.pdf",
+      "bytes": 2920,
+      "sha256": "5fa438ce835a38c2c951a649678f0d6c30f7337d6d80b7e517c6b3e1e9b2bf45"
+    },
+    {
+      "path": "GENERATED-PDFS/FINANCIAL-SUMMARY.pdf",
+      "bytes": 3207,
+      "sha256": "73e5dd988b31a185bf248094ae6e944ab8c371e2209dad92cc28e7337c5ae7b2"
+    },
+    {
+      "path": "GENERATED-PDFS/RISK-SUMMARY.pdf",
+      "bytes": 2642,
+      "sha256": "3de410332b9b9ddb8c81a62b10af86b889384c96348778f51862f05511549885"
+    },
+    {
+      "path": "GENERATED-PDFS/FUNDING-REQUEST.pdf",
+      "bytes": 3208,
+      "sha256": "85cc4a84539353af54b09bb6229959ab43e05f7786442704848fd51b1f5a5c4e"
+    },
+    {
+      "path": "GENERATED-PDFS/COMPANY-PROFILE.pdf",
+      "bytes": 2938,
+      "sha256": "ec4d39b50a78fa67b98d691689e6c8a5d39f8c8f0dfc487499362c6ada821ddf"
+    },
+    {
+      "path": "GENERATED-PDFS/VENTURE-CAPITAL-PROSPECTUS.pdf",
+      "bytes": 6475,
+      "sha256": "105f30ec95d3e9b6de424ee26308a15eef465d2446a5a9309e96b0ac17054dbc"
+    },
+    {
+      "path": "05_FUNDING/FUNDING-REQUEST.md",
+      "bytes": 2197,
+      "sha256": "3b6bc3832dd96dd72e8f1b8f346f5b2a4b26ce7f8dbda44a3a4dd40893fbae16"
+    },
+    {
+      "path": "08_REVENUE/LOIS/LOI-LT011-001.pdf",
+      "bytes": 3509,
+      "sha256": "f0a0971cdd916c82a73390b8b7eb6e8b8e3a69f4c94f110913289efe5425cb7c"
+    },
+    {
+      "path": "08_REVENUE/LOIS/LOI-LT011-002.pdf",
+      "bytes": 3488,
+      "sha256": "30caba78246259b2b05bde5445d1299cbe659c2a641746225348a03bd934c8ca"
+    },
+    {
+      "path": "15_INVESTORS/INVESTOR-PACKAGE.md",
+      "bytes": 1811,
+      "sha256": "bd423c1f886a9c1da48a3b6c9e0b95a2bce6e51c8e1e255bbf5cbb8358dca3be"
+    },
+    {
+      "path": "99_INDEX/CAPITAL-READINESS-SCORECARD.md",
+      "bytes": 1749,
+      "sha256": "65825f1b82d2e7ebfb1602b200ea0f135c3dccebe23c49ca0c4b10b5643a2893"
+    },
+    {
+      "path": "13_GRANTS/GRANT-PACKAGE.md",
+      "bytes": 2038,
+      "sha256": "c8739a1825f6913b998c829365ca6c2e079249a6c05a98f4fd133f16fae6387f"
+    },
+    {
+      "path": "DATA/funding_requests.json",
+      "bytes": 940,
+      "sha256": "de3aea013e5e270b869227e111095b87aa28323bb074131e3e54656f933fc825"
+    },
+    {
+      "path": "DATA/company.yaml",
+      "bytes": 853,
+      "sha256": "5d898d3a09d9579ed57b6d3e94237379632a5f53ddeff94a230063d15bb9c224"
+    },
+    {
+      "path": "DATA/ownership.yaml",
+      "bytes": 399,
+      "sha256": "cf9986c23f3a83e1c17ed1864ba1c88afe89b74af9566400952e7d45e71c1039"
+    },
+    {
+      "path": "DATA/financials.json",
+      "bytes": 523,
+      "sha256": "3824df4942dc1e1f2738e8904c936c2a8208c70cd68713d9778c067df29f1aa8"
+    },
+    {
+      "path": "DATA/licenses.json",
+      "bytes": 359,
+      "sha256": "9ffab5dc3bd446c16bb9c51816ff0f4bd88f068b53f7150072779803315ac80b"
+    },
+    {
+      "path": "DATA/contracts.json",
+      "bytes": 403,
+      "sha256": "7fe0e5bbc998af6f2dd913c8aafa0138e1963482c66c429a4017eb19a2172a59"
+    },
+    {
+      "path": "DATA/assets.json",
+      "bytes": 420,
+      "sha256": "bf3c43e157654c5745282d89e4dc4dbf18df0b258c47dc8869f7f3cd0dc46f89"
+    },
+    {
+      "path": "DATA/lois.json",
+      "bytes": 1124,
+      "sha256": "00b39d36492d7b9c730838697870c0b4fd3019930379601743dd95c58f8298c2"
+    },
+    {
+      "path": "14_LOANS/LOAN-PACKAGE.md",
+      "bytes": 2096,
+      "sha256": "2ff60c8230eb6a3d702df6b3f79199101736134961d74a791c75afa6e378aa5e"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+---
+id: DOC-INFRA-DIAG-001
+aliases: ['INFRASTRUCTURE-DIAGRAMS']
+tags: ['diagrams', 'topology', 'mermaid']
+status: ACTIVE
+updated: 2026-09-06
+---
+
+[[STARTHERE]] | [[56-ENGINEERING/INFRASTRUCTURE/INFRASTRUCTURE|INFRASTRUCTURE]] | [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/INFRASTRUCTURE-COST|INFRASTRUCTURE-COST]] | [[24-FINANCE]] | [[46-GOVERNANCE]]
+
+# Architectural Diagrams & Visual Maps
+
+> **Authority:** CP-027  
+> **Status:** ACTIVE — Audited 2026-09-06
+
+## 1. Visual Topology Maps
+Houses Mermaid diagrams mapping Mac Studio hardware, Tailscale mesh CIDR, Docker container networking, and OmniRoute routing flows.
+
+## 2. Connected Documents
+- Network Topology: [[56-ENGINEERING/INFRASTRUCTURE/04_NETWORK/NETWORK-TOPOLOGY|NETWORK-TOPOLOGY.md]]
+- Core Topology: [[56-ENGINEERING/INFRASTRUCTURE/01_CORE/INFRASTRUCTURE-TOPOLOGY|INFRASTRUCTURE-TOPOLOGY.md]]
+- Documentation Standards: [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/INFRASTRUCTURE-DOCUMENTATION|INFRASTRUCTURE-DOCUMENTATION.md]]

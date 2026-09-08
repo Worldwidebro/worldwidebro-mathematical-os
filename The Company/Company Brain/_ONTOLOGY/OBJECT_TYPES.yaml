@@ -1,0 +1,784 @@
+# DEPRECATED: Reference OBJECTS_EXTENDED.yaml instead
+# Phase 0 (2026-09-01): Complete ontology at OBJECTS_EXTENDED.yaml (60+ types across 13 categories)
+# This file kept for legacy reference only
+
+categories:
+  organizational:
+    description: "Organizational structure and identity"
+    types:
+      ORG:
+        name: "Organization"
+        id_prefix: "ORG"
+        description: "Legal entity or holding company"
+        examples: ["Worldwidebro Holdings"]
+
+      VEN:
+        name: "Venture"
+        id_prefix: "VEN"
+        description: "Active venture (~500 total)"
+        examples: ["LT-005", "CON-042", "FIN-087"]
+
+      OPC:
+        name: "Operating Company"
+        id_prefix: "OPC"
+        description: "Operational subsidiary beneath venture"
+        examples: ["OpCo for LT-005"]
+
+      DIV:
+        name: "Division"
+        id_prefix: "DIV"
+        description: "Logical business division"
+        examples: ["Revenue Operations", "Intelligence Layer"]
+
+      TEA:
+        name: "Team"
+        id_prefix: "TEA"
+        description: "Functional team"
+        examples: ["Data Science", "Backend Engineers"]
+
+      ROL:
+        name: "Role"
+        id_prefix: "ROL"
+        description: "Job role or responsibility"
+        examples: ["CEO", "Data Engineer"]
+
+      PER:
+        name: "Person"
+        id_prefix: "PER"
+        description: "Individual (employee or stakeholder)"
+        examples: ["Garry Tan"]
+
+  work:
+    description: "Capability, skills, agents, and execution units"
+    types:
+      CAP:
+        name: "Capability"
+        id_prefix: "CAP"
+        description: "Repeatable, measurable business capability"
+        examples: ["Lead Generation", "Entity Resolution", "Query Optimization"]
+
+      SKL:
+        name: "Skill"
+        id_prefix: "SKL"
+        description: "Executable skill with instructions"
+        examples: ["Build a dashboard", "Run a security audit"]
+
+      AGT:
+        name: "Agent"
+        id_prefix: "AGT"
+        description: "Autonomous agent with specialized domain"
+        examples: ["research-agent", "code-reviewer"]
+
+      MOD:
+        name: "Model"
+        id_prefix: "MOD"
+        description: "AI model or statistical model"
+        examples: ["Claude 3.5 Sonnet", "Ollama mistral"]
+
+      TOL:
+        name: "Tool"
+        id_prefix: "TOL"
+        description: "Executable tool, API, or CLI"
+        examples: ["Sourcegraph", "Graphify", "bash grep"]
+
+      MCP:
+        name: "MCP Server"
+        id_prefix: "MCP"
+        description: "Model Context Protocol server"
+        examples: ["filesystem", "claude-in-chrome"]
+
+      WFL:
+        name: "Workflow"
+        id_prefix: "WFL"
+        description: "Orchestrated multi-step workflow"
+        examples: ["Deploy to production", "Security audit workflow"]
+
+      LOP:
+        name: "Loop"
+        id_prefix: "LOP"
+        description: "Autonomous execution loop (L1/L2/L3)"
+        examples: ["Weekly observation aggregation", "Real-time incident response"]
+
+      JOB:
+        name: "Job"
+        id_prefix: "JOB"
+        description: "Scheduled or triggered execution instance"
+        examples: ["Nightly indexing job", "Weekly report generation"]
+
+      TSK:
+        name: "Task"
+        id_prefix: "TSK"
+        description: "Single unit of work"
+        examples: ["Create dashboard", "Fix bug #123"]
+
+  intelligence:
+    description: "Data, analysis, insights, experiments"
+    types:
+      DST:
+        name: "Dataset"
+        id_prefix: "DST"
+        description: "Collection of data for analysis"
+        examples: ["Venture metrics dataset", "Customer behavior logs"]
+
+      ANL:
+        name: "Analysis"
+        id_prefix: "ANL"
+        description: "Analytical study or report"
+        examples: ["Market analysis for Q4"]
+
+      INS:
+        name: "Insight"
+        id_prefix: "INS"
+        description: "Discovery or conclusion from data"
+        examples: ["Sales cycle shortens in Q1"]
+
+      RPT:
+        name: "Report"
+        id_prefix: "RPT"
+        description: "Formatted output for stakeholders"
+        examples: ["Monthly board report", "Security audit report"]
+
+      DAS:
+        name: "Dashboard"
+        id_prefix: "DAS"
+        description: "Interactive visualization"
+        examples: ["Real-time sales dashboard", "Infrastructure health"]
+
+      QRY:
+        name: "Query"
+        id_prefix: "QRY"
+        description: "Saved query for data retrieval"
+        examples: ["High-risk ventures this quarter"]
+
+      EXP:
+        name: "Experiment"
+        id_prefix: "EXP"
+        description: "Controlled test of hypothesis"
+        examples: ["A/B test: new pricing model"]
+
+      HYP:
+        name: "Hypothesis"
+        id_prefix: "HYP"
+        description: "Testable claim or theory"
+        examples: ["Longer trial increases conversion"]
+
+      TST:
+        name: "Test"
+        id_prefix: "TST"
+        description: "Automated or manual test suite"
+        examples: ["Unit test suite", "E2E test"]
+
+      RES:
+        name: "Result"
+        id_prefix: "RES"
+        description: "Outcome of experiment or test"
+        examples: ["A/B test result: 12% uplift"]
+
+  execution:
+    description: "Decisions, outcomes, metrics, errors"
+    types:
+      DEC:
+        name: "Decision"
+        id_prefix: "DEC"
+        description: "Recorded decision with rationale"
+        examples: ["Consolidate TC sector", "Hire VP of Sales"]
+
+      APR:
+        name: "Approval"
+        id_prefix: "APR"
+        description: "Authorization gate"
+        examples: ["Budget approval", "Security sign-off"]
+
+      EXC:
+        name: "Execution"
+        id_prefix: "EXC"
+        description: "Recorded execution of a loop or workflow"
+        examples: ["L1 loop run on 2026-09-01"]
+
+      OUT:
+        name: "Outcome"
+        id_prefix: "OUT"
+        description: "Result of work or decision"
+        examples: ["Revenue increase of 15%"]
+
+      LES:
+        name: "Lesson"
+        id_prefix: "LES"
+        description: "Learning extracted from outcome"
+        examples: ["Early customer feedback is critical"]
+
+      MTR:
+        name: "Metric"
+        id_prefix: "MTR"
+        description: "Measurable KPI or attribute"
+        examples: ["Monthly recurring revenue", "Test coverage %"]
+
+      KPI:
+        name: "KPI"
+        id_prefix: "KPI"
+        description: "Key Performance Indicator"
+        examples: ["Gross margin target 60%"]
+
+      SLI:
+        name: "Service Level Indicator"
+        id_prefix: "SLI"
+        description: "Measurement of service performance"
+        examples: ["API P99 latency"]
+
+      SLO:
+        name: "Service Level Objective"
+        id_prefix: "SLO"
+        description: "Target for SLI"
+        examples: ["P99 latency < 100ms"]
+
+      ERR:
+        name: "Error"
+        id_prefix: "ERR"
+        description: "Recorded failure or incident"
+        examples: ["Database connection timeout"]
+
+      ALT:
+        name: "Alert"
+        id_prefix: "ALT"
+        description: "Notification of anomaly"
+        examples: ["High error rate triggered alert"]
+
+  knowledge:
+    description: "Documentation and procedures"
+    types:
+      DOC:
+        name: "Document"
+        id_prefix: "DOC"
+        description: "Formal document (corporate, legal, technical)"
+        examples: ["Shareholder agreement", "Architecture design doc"]
+
+      GDE:
+        name: "Guide"
+        id_prefix: "GDE"
+        description: "How-to documentation"
+        examples: ["Onboarding guide", "Security playbook"]
+
+      PRC:
+        name: "Procedure"
+        id_prefix: "PRC"
+        description: "Step-by-step operational procedure"
+        examples: ["Release procedure", "Incident response"]
+
+      POL:
+        name: "Policy"
+        id_prefix: "POL"
+        description: "Organizational rule or standard"
+        examples: ["Remote work policy", "Data retention policy"]
+
+      STD:
+        name: "Standard"
+        id_prefix: "STD"
+        description: "Technical or operational standard"
+        examples: ["Code style standard", "API naming standard"]
+
+      TPL:
+        name: "Template"
+        id_prefix: "TPL"
+        description: "Reusable template"
+        examples: ["PR template", "RFC template"]
+
+      EXL:
+        name: "Example"
+        id_prefix: "EXL"
+        description: "Worked example or code sample"
+        examples: ["Bash script example", "SQL query example"]
+
+      CST:
+        name: "Case Study"
+        id_prefix: "CST"
+        description: "Real-world application story"
+        examples: ["Venture turnaround case study"]
+
+      PAT:
+        name: "Patent"
+        id_prefix: "PAT"
+        description: "Intellectual property filing"
+        examples: ["Process patent for automation"]
+
+      ART:
+        name: "Article"
+        id_prefix: "ART"
+        description: "Research or educational article"
+        examples: ["Market analysis article", "Technical deep dive"]
+
+  data:
+    description: "Data structures and schemas"
+    types:
+      SCH:
+        name: "Schema"
+        id_prefix: "SCH"
+        description: "Database or data structure schema"
+        examples: ["ventures schema", "events schema"]
+
+      TBL:
+        name: "Table"
+        id_prefix: "TBL"
+        description: "Database table"
+        examples: ["public.ventures", "analytics.events"]
+
+      FLD:
+        name: "Field"
+        id_prefix: "FLD"
+        description: "Column or attribute"
+        examples: ["venture_id", "created_at"]
+
+      REC:
+        name: "Record"
+        id_prefix: "REC"
+        description: "Individual row or entry"
+        examples: ["Venture VEN-042 record"]
+
+      ENT:
+        name: "Entity"
+        id_prefix: "ENT"
+        description: "Data entity in knowledge graph"
+        examples: ["Person node", "Company node"]
+
+      REL:
+        name: "Relationship"
+        id_prefix: "REL"
+        description: "Data relationship or edge"
+        examples: ["OWNS edge", "DEPENDS_ON edge"]
+
+      TYP:
+        name: "Type"
+        id_prefix: "TYP"
+        description: "Data type definition"
+        examples: ["UUID type", "JSON type"]
+
+      ENM:
+        name: "Enum"
+        id_prefix: "ENM"
+        description: "Enumerated set of values"
+        examples: ["Status enum: ACTIVE, INACTIVE"]
+
+      CNS:
+        name: "Constraint"
+        id_prefix: "CNS"
+        description: "Database or data constraint"
+        examples: ["UNIQUE constraint", "FK constraint"]
+
+  business:
+    description: "Business entities and operations"
+    types:
+      CST:
+        name: "Customer"
+        id_prefix: "CST"
+        description: "Customer or client"
+        examples: ["Acme Corp"]
+
+      PDT:
+        name: "Product"
+        id_prefix: "PDT"
+        description: "Saleable product or service"
+        examples: ["VEX Hero", "Analytics Platform"]
+
+      FTR:
+        name: "Feature"
+        id_prefix: "FTR"
+        description: "Product feature"
+        examples: ["Real-time dashboards", "Automation"]
+
+      REL:
+        name: "Release"
+        id_prefix: "REL"
+        description: "Software release version"
+        examples: ["v1.2.3", "2026-Q4"]
+
+      CAM:
+        name: "Campaign"
+        id_prefix: "CAM"
+        description: "Marketing or sales campaign"
+        examples: ["Q4 awareness campaign"]
+
+      OFR:
+        name: "Offer"
+        id_prefix: "OFR"
+        description: "Pricing or promotional offer"
+        examples: ["50% off first month"]
+
+      DEL:
+        name: "Deal"
+        id_prefix: "DEL"
+        description: "Sales opportunity or closed deal"
+        examples: ["Acme Corp $500k ACV deal"]
+
+      CTR:
+        name: "Contract"
+        id_prefix: "CTR"
+        description: "Binding agreement"
+        examples: ["Services agreement", "NDA"]
+
+  governance:
+    description: "Authority, permissions, risks"
+    types:
+      AUT:
+        name: "Authority"
+        id_prefix: "AUT"
+        description: "Decision-making authority"
+        examples: ["CEO has budget approval"]
+
+      PRM:
+        name: "Permission"
+        id_prefix: "PRM"
+        description: "Access or action permission"
+        examples: ["Can delete ventures", "Can access prod"]
+
+      RIK:
+        name: "Risk"
+        id_prefix: "RIK"
+        description: "Identified risk"
+        examples: ["Key person dependency", "Market risk"]
+
+      THR:
+        name: "Threat"
+        id_prefix: "THR"
+        description: "Security threat"
+        examples: ["SQL injection vulnerability", "DDoS attack"]
+
+      MIT:
+        name: "Mitigation"
+        id_prefix: "MIT"
+        description: "Risk or threat mitigation"
+        examples: ["Input validation", "Rate limiting"]
+
+      CMP:
+        name: "Compliance"
+        id_prefix: "CMP"
+        description: "Regulatory compliance requirement"
+        examples: ["GDPR", "SOC 2 Type II"]
+
+      AUD:
+        name: "Audit"
+        id_prefix: "AUD"
+        description: "Audit or assessment"
+        examples: ["Security audit", "Financial audit"]
+
+      CTL:
+        name: "Control"
+        id_prefix: "CTL"
+        description: "Control measure"
+        examples: ["Access control", "Rate limiting"]
+
+  infrastructure:
+    description: "Systems, servers, networks, stores"
+    types:
+      SYS:
+        name: "System"
+        id_prefix: "SYS"
+        description: "Large-scale system"
+        examples: ["VEX", "Company Brain", "Claude.Home"]
+
+      SVC:
+        name: "Service"
+        id_prefix: "SVC"
+        description: "Microservice or backend service"
+        examples: ["venture-api", "auth-service"]
+
+      SRV:
+        name: "Server"
+        id_prefix: "SRV"
+        description: "Physical or virtual server"
+        examples: ["db-primary-01", "api-server-03"]
+
+      CNT:
+        name: "Container"
+        id_prefix: "CNT"
+        description: "Container image or running container"
+        examples: ["postgres:15", "api:v1.2.3"]
+
+      NET:
+        name: "Network"
+        id_prefix: "NET"
+        description: "Network segment or resource"
+        examples: ["VPC", "Kubernetes cluster"]
+
+      STR:
+        name: "Store"
+        id_prefix: "STR"
+        description: "Data store (DB, cache, file store)"
+        examples: ["PostgreSQL", "Redis", "MinIO"]
+
+      CCH:
+        name: "Cache"
+        id_prefix: "CCH"
+        description: "Caching layer"
+        examples: ["Redis cache", "HTTP cache"]
+
+      QUE:
+        name: "Queue"
+        id_prefix: "QUE"
+        description: "Message queue"
+        examples: ["Kafka topic", "RabbitMQ queue"]
+
+      GWY:
+        name: "Gateway"
+        id_prefix: "GWY"
+        description: "API gateway or proxy"
+        examples: ["OmniRoute", "API Gateway"]
+
+      EPN:
+        name: "Endpoint"
+        id_prefix: "EPN"
+        description: "Network endpoint"
+        examples: ["https://api.example.com/ventures"]
+
+  integration:
+    description: "APIs, connectors, protocols"
+    types:
+      API:
+        name: "API"
+        id_prefix: "API"
+        description: "Application Programming Interface"
+        examples: ["Ventures API", "Analytics API"]
+
+      WBH:
+        name: "Webhook"
+        id_prefix: "WBH"
+        description: "Event-driven webhook"
+        examples: ["Venture created webhook"]
+
+      PRO:
+        name: "Protocol"
+        id_prefix: "PRO"
+        description: "Communication protocol"
+        examples: ["HTTP", "WebSocket", "gRPC"]
+
+      FMT:
+        name: "Format"
+        id_prefix: "FMT"
+        description: "Data format"
+        examples: ["JSON", "YAML", "Protocol Buffers"]
+
+      ADP:
+        name: "Adapter"
+        id_prefix: "ADP"
+        description: "Integration adapter"
+        examples: ["Slack adapter", "Salesforce adapter"]
+
+      CON:
+        name: "Connector"
+        id_prefix: "CON"
+        description: "Data connector"
+        examples: ["Segment connector", "Amplitude connector"]
+
+      TRN:
+        name: "Transformer"
+        id_prefix: "TRN"
+        description: "Data transformation step"
+        examples: ["Normalize venture data", "Enrich with scores"]
+
+      RTR:
+        name: "Router"
+        id_prefix: "RTR"
+        description: "Routing logic"
+        examples: ["OmniRoute gateway", "Message router"]
+
+  operational:
+    description: "Processes, rules, events"
+    types:
+      PCS:
+        name: "Process"
+        id_prefix: "PCS"
+        description: "Business process"
+        examples: ["Venture onboarding", "Incident response"]
+
+      SPR:
+        name: "Subprocess"
+        id_prefix: "SPR"
+        description: "Subprocess within a process"
+        examples: ["KYC check", "Risk assessment"]
+
+      STG:
+        name: "Stage"
+        id_prefix: "STG"
+        description: "Stage in a process"
+        examples: ["Lead qualification", "Contract negotiation"]
+
+      GTE:
+        name: "Gate"
+        id_prefix: "GTE"
+        description: "Approval or decision gate"
+        examples: ["Security review gate", "Budget approval gate"]
+
+      RUL:
+        name: "Rule"
+        id_prefix: "RUL"
+        description: "Business rule"
+        examples: ["Ventures over $1M need board approval"]
+
+      TRG:
+        name: "Trigger"
+        id_prefix: "TRG"
+        description: "Event trigger"
+        examples: ["Venture created", "Error rate > 5%"]
+
+      SCD:
+        name: "Schedule"
+        id_prefix: "SCD"
+        description: "Scheduled job or cadence"
+        examples: ["Nightly reindex", "Weekly report"]
+
+      EVT:
+        name: "Event"
+        id_prefix: "EVT"
+        description: "Recorded event"
+        examples: ["venture_created event"]
+
+      HND:
+        name: "Handler"
+        id_prefix: "HND"
+        description: "Event handler or callback"
+        examples: ["On venture_created: send welcome email"]
+
+      MON:
+        name: "Monitor"
+        id_prefix: "MON"
+        description: "Monitoring rule or probe"
+        examples: ["API latency monitor", "Error rate alert"]
+
+  execution_runtime:
+    description: "Agent execution runtime and topology"
+    types:
+      ANO:
+        name: "Agent Node"
+        id_prefix: "ANO"
+        description: "Single agent in Fractal hierarchy"
+        examples: ["Root audit agent", "Sector A auditor"]
+
+      ATR:
+        name: "Agent Tree"
+        id_prefix: "ATR"
+        description: "Fractal recursive agent tree"
+        examples: ["Repository audit tree", "Venture analysis tree"]
+
+      ARN:
+        name: "Agent Run"
+        id_prefix: "ARN"
+        description: "Execution of an agent node"
+        examples: ["audit-repo-1 run"]
+
+      AIT:
+        name: "Agent Iteration"
+        id_prefix: "AIT"
+        description: "Single iteration within an agent run"
+        examples: ["iteration 1 of audit"]
+
+      AST:
+        name: "Agent Step"
+        id_prefix: "AST"
+        description: "Single step within an iteration"
+        examples: ["graft-scan step"]
+
+      ASG:
+        name: "Agent Signal"
+        id_prefix: "ASG"
+        description: "Signal between parent/child agents"
+        examples: ["spawned-child signal"]
+
+      WRT:
+        name: "Worktree"
+        id_prefix: "WRT"
+        description: "Git worktree for isolated agent work"
+        examples: ["audit-repo-1-wt"]
+
+      EBD:
+        name: "Execution Budget"
+        id_prefix: "EBD"
+        description: "Cost/resource/time budget for execution"
+        examples: ["$25 budget for audit"]
+
+      EXP:
+        name: "Execution Policy"
+        id_prefix: "EXP"
+        description: "Governance policy for autonomous execution"
+        examples: ["L2 bounded autonomous"]
+
+  code_intelligence:
+    description: "Code context, analysis, and relationships"
+    types:
+      CBD:
+        name: "Codebase"
+        id_prefix: "CBD"
+        description: "Git repository mapped to code graph"
+        examples: ["LT-005 dispatch system", "Payment processor"]
+
+      CGP:
+        name: "Code Graph"
+        id_prefix: "CGP"
+        description: "Graft-generated graph of codebase"
+        examples: ["auth-module graph", "API graph"]
+
+      CND:
+        name: "Code Node"
+        id_prefix: "CND"
+        description: "Symbol/function/class in code graph"
+        examples: ["authenticate() function", "PaymentService class"]
+
+      CED:
+        name: "Code Edge"
+        id_prefix: "CED"
+        description: "Relationship between code nodes (call, dependency)"
+        examples: ["authenticate() CALLS verify_token()"]
+
+      MOD:
+        name: "Module"
+        id_prefix: "MOD"
+        description: "Code module or namespace"
+        examples: ["auth module", "payment module"]
+
+      SYM:
+        name: "Symbol"
+        id_prefix: "SYM"
+        description: "Extractable symbol (function, class, export)"
+        examples: ["authenticate", "PaymentProcessor"]
+
+      DEP:
+        name: "Dependency"
+        id_prefix: "DEP"
+        description: "External or internal code dependency"
+        examples: ["bcrypt", "stripe-js"]
+
+      BLR:
+        name: "Blast Radius"
+        id_prefix: "BLR"
+        description: "Impact analysis of code change"
+        examples: ["Auth change affects 4 ventures"]
+
+  control:
+    description: "Company Brain control points"
+    types:
+      CBP:
+        name: "Company Brain Point"
+        id_prefix: "CBP"
+        range: "CBP-000001 to CBP-000500"
+        description: "Distinct information-processing operation mapped to domain, layer, capability"
+        examples: ["CBP-000001: Entity resolution", "CBP-000247: Venture scoring"]
+
+---
+# Validation Rules
+
+**All entities must have:**
+- `type` — one of the types above
+- `ref_id` — TYPE-000001 format matching the prefix
+- `name` — human-readable name
+- `domain` — which of the 50 domains it belongs to
+
+**Type constraints:**
+- Organizational types (ORG, VEN, OPC, DIV, TEA, ROL, PER): belong to domain 01-IDENTITY or 23-VENTURES
+- Work types (CAP, SKL, AGT, MOD, TOL, MCP, WFL, LOP, JOB, TSK): belong to 14-CAPABILITIES or 15-SKILLS
+- Execution types (DEC, APR, EXC, OUT, LES, MTR, KPI, SLI, SLO, ERR, ALT): belong to 20-DECISIONS or 43-OUTCOMES
+- Knowledge types (DOC, GDE, PRC, POL, STD, TPL, EXL, CST, PAT, ART): belong to 09-KNOWLEDGE or 47-DOCUMENTS
+- Data types (SCH, TBL, FLD, REC, ENT, REL, TYP, ENM, CNS): belong to 04-DATA or 08-KNOWLEDGE-GRAPH
+- Governance types (AUT, PRM, RIK, THR, MIT, CMP, AUD, CTL): belong to 21-POLICY or 32-SECURITY
+- Infrastructure types (SYS, SVC, SRV, CNT, NET, STR, CCH, QUE, GWY, EPN): belong to 49-SYSTEM
+- Integration types (API, WBH, PRO, FMT, ADP, CON, TRN, RTR): belong to 18-TOOLS
+- Operational types (PCS, SPR, STG, GTE, RUL, TRG, SCD, EVT, HND, MON): belong to 22-EXECUTION or 29-OPERATIONS
+- Control points (CBP): special — mapped to all 50 domains and 20 layers
+
+**Updated:** 2026-09-01

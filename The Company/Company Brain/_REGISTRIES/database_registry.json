@@ -1,0 +1,55 @@
+{
+  "registry_id": "REG-DATABASE-001",
+  "updated_at": "2026-09-05",
+  "databases": {
+    "DB-NEO4J": {
+      "name": "Company Brain Knowledge Graph",
+      "engine": "Neo4j Enterprise / Community 5.x",
+      "container": "civos_neo4j",
+      "ports": {
+        "bolt": 7687,
+        "http": 7474
+      },
+      "storage": "/Volumes/LaCie/neo4j/data",
+      "status": "LIVE_CANONICAL",
+      "heap_initial": "2G",
+      "heap_max": "4G",
+      "plugins": [
+        "apoc"
+      ]
+    },
+    "DB-QDRANT": {
+      "name": "Company Brain Vector Engine",
+      "engine": "Qdrant Vector Database",
+      "container": "civos_qdrant",
+      "ports": {
+        "rest": 6333
+      },
+      "storage": "/Volumes/LaCie/qdrant/storage",
+      "status": "LIVE_CANONICAL"
+    },
+    "DB-POSTGRES": {
+      "name": "Infrastructure Operational DB",
+      "engine": "PostgreSQL 16",
+      "container": "postgres",
+      "ports": {
+        "sql": 5432
+      },
+      "storage": "/Volumes/LaCie/postgres/data",
+      "status": "LIVE_CANONICAL"
+    },
+    "DB-REDIS": {
+      "name": "In-Memory State & Response Cache",
+      "engine": "Redis 7.x",
+      "port": 6379,
+      "status": "LIVE_CANONICAL"
+    },
+    "DB-MINIO": {
+      "name": "S3 Compatible Object Store",
+      "engine": "MinIO",
+      "port": 9000,
+      "status": "TARGET_DECLARED",
+      "target_storage": "/Volumes/LaCie/minio/data"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "venture_id": "RE-001",
+  "digital_assets": [
+    {
+      "type": "GitHub Repository",
+      "identifier": "Worldwidebro/re-001-worldwidebro-holdings",
+      "verified_commit": "a761e80"
+    },
+    {
+      "type": "Production Web Surface",
+      "url": "https://re-001-worldwidebro-holdings.vercel.app",
+      "status": "LIVE"
+    }
+  ],
+  "commercial_gateway": {
+    "provider": "Stripe",
+    "status": "WIRED_ACTIVE"
+  }
+}

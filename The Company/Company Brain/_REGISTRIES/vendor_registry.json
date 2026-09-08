@@ -1,0 +1,54 @@
+{
+  "registry_id": "REG-VENDOR-001",
+  "updated_at": "2026-09-05",
+  "vendors": [
+    {
+      "vendor": "Apple Inc.",
+      "category": "Hardware & OS",
+      "status": "APPROVED",
+      "lock_in_risk": "High (Apple Silicon MLX)"
+    },
+    {
+      "vendor": "LaCie / Seagate",
+      "category": "Primary Database Storage",
+      "status": "APPROVED",
+      "lock_in_risk": "Low"
+    },
+    {
+      "vendor": "Samsung",
+      "category": "Secondary Model Storage (T7)",
+      "status": "APPROVED",
+      "lock_in_risk": "Low"
+    },
+    {
+      "vendor": "Tailscale Inc.",
+      "category": "Zero-Trust Mesh Networking",
+      "status": "APPROVED",
+      "lock_in_risk": "Medium (Wireguard open standard fallback)"
+    },
+    {
+      "vendor": "Vercel Inc.",
+      "category": "Edge Web Hosting",
+      "status": "APPROVED",
+      "lock_in_risk": "Medium"
+    },
+    {
+      "vendor": "GitHub Inc. / Microsoft",
+      "category": "VCS & CI/CD",
+      "status": "APPROVED",
+      "lock_in_risk": "Medium"
+    },
+    {
+      "vendor": "Anthropic PBC",
+      "category": "Frontier Inference Fallback",
+      "status": "APPROVED",
+      "lock_in_risk": "Low (LiteLLM abstracted)"
+    },
+    {
+      "vendor": "OpenAI Inc.",
+      "category": "Frontier Inference Fallback",
+      "status": "APPROVED",
+      "lock_in_risk": "Low (LiteLLM abstracted)"
+    }
+  ]
+}

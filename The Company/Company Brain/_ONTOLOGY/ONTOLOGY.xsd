@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Company Brain Ontology XSD Schema -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Root element -->
+  <xs:element name="company-brain">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="world" type="WorldType" minOccurs="0"/>
+        <xs:element name="ownership" type="OwnershipType" minOccurs="0"/>
+        <xs:element name="portfolio" type="PortfolioType" minOccurs="0"/>
+        <xs:element name="organization" type="OrganizationType" minOccurs="0"/>
+        <xs:element name="products" type="ProductsType" minOccurs="0"/>
+        <xs:element name="capabilities" type="CapabilitiesType" minOccurs="0"/>
+        <xs:element name="workforce" type="WorkforceType" minOccurs="0"/>
+        <xs:element name="knowledge" type="KnowledgeType" minOccurs="0"/>
+        <xs:element name="decisions" type="DecisionsType" minOccurs="0"/>
+        <xs:element name="operations" type="OperationsType" minOccurs="0"/>
+        <xs:element name="technology" type="TechnologyType" minOccurs="0"/>
+        <xs:element name="data" type="DataType" minOccurs="0"/>
+        <xs:element name="execution" type="ExecutionType" minOccurs="0"/>
+        <xs:element name="governance" type="GovernanceType" minOccurs="0"/>
+        <xs:element name="registries" type="RegistriesType" minOccurs="0"/>
+      </xs:sequence>
+      <xs:attribute name="version" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Type definitions -->
+  <xs:complexType name="WorldType">
+    <xs:sequence>
+      <xs:element name="economy" type="xs:anyType" minOccurs="0"/>
+      <xs:element name="sectors" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="sector" maxOccurs="unbounded" minOccurs="0">
+              <xs:complexType>
+                <xs:attribute name="id" type="xs:string" use="required"/>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="markets" type="xs:anyType" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="OwnershipType">
+    <xs:sequence>
+      <xs:element name="family" type="xs:anyType" minOccurs="0"/>
+      <xs:element name="family-office" type="xs:anyType" minOccurs="0"/>
+      <xs:element name="holding-companies" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="holding-company" maxOccurs="unbounded" minOccurs="0">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ownership-percentage" type="xs:decimal" minOccurs="0"/>
+                  <xs:element name="subsidiaries" type="xs:anyType" minOccurs="0"/>
+                </xs:sequence>
+                <xs:attribute name="id" type="xs:string" use="required"/>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="PortfolioType">
+    <xs:sequence>
+      <xs:element name="ventures" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="venture" maxOccurs="unbounded" minOccurs="0">
+              <xs:complexType>
+                <xs:attribute name="id" type="xs:string" use="required"/>
+                <xs:attribute name="sector" type="xs:string"/>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="OrganizationType">
+    <xs:sequence>
+      <xs:element name="business-units" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="business-unit" maxOccurs="unbounded" minOccurs="0">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="departments" minOccurs="0">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="department" maxOccurs="unbounded" minOccurs="0">
+                          <xs:complexType>
+                            <xs:sequence>
+                              <xs:element name="teams" minOccurs="0">
+                                <xs:complexType>
+                                  <xs:sequence>
+                                    <xs:element name="team" maxOccurs="unbounded" minOccurs="0">
+                                      <xs:complexType>
+                                        <xs:attribute name="id" type="xs:string" use="required"/>
+                                      </xs:complexType>
+                                    </xs:element>
+                                  </xs:sequence>
+                                </xs:complexType>
+                              </xs:element>
+                            </xs:sequence>
+                            <xs:attribute name="id" type="xs:string" use="required"/>
+                          </xs:complexType>
+                        </xs:element>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+                </xs:sequence>
+                <xs:attribute name="id" type="xs:string" use="required"/>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ProductsType">
+    <xs:sequence>
+      <xs:element name="product" maxOccurs="unbounded" minOccurs="0">
+        <xs:complexType>
+          <xs:attribute name="id" type="xs:string" use="required"/>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="CapabilitiesType">
+    <xs:sequence>
+      <xs:element name="capability" maxOccurs="unbounded" minOccurs="0">
+        <xs:complexType>
+          <xs:attribute name="id" type="xs:string" use="required"/>
+          <xs:attribute name="name" type="xs:string"/>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="WorkforceType">
+    <xs:sequence>
+      <xs:element name="agents" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="agent" maxOccurs="unbounded" minOccurs="0">
+              <xs:complexType>
+                <xs:attribute name="id" type="xs:string" use="required"/>
+                <xs:attribute name="name" type="xs:string"/>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="KnowledgeType">
+    <xs:sequence>
+      <xs:element name="wiki" type="xs:anyType" minOccurs="0"/>
+      <xs:element name="sources" type="xs:anyType" minOccurs="0"/>
+      <xs:element name="memory" type="xs:anyType" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="DecisionsType">
+    <xs:sequence>
+      <xs:element name="decision" maxOccurs="unbounded" minOccurs="0">
+        <xs:complexType>
+          <xs:attribute name="id" type="xs:string" use="required"/>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="OperationsType">
+    <xs:sequence>
+      <xs:element name="workflows" type="xs:anyType" minOccurs="0"/>
+      <xs:element name="tasks" type="xs:anyType" minOccurs="0"/>
+      <xs:element name="projects" type="xs:anyType" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="TechnologyType">
+    <xs:sequence>
+      <xs:element name="repositories" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="repository" maxOccurs="unbounded" minOccurs="0">
+              <xs:complexType>
+                <xs:attribute name="id" type="xs:string" use="required"/>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="infrastructure" type="xs:anyType" minOccurs="0"/>
+      <xs:element name="tools" minOccurs="0">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="tool" maxOccurs="unbounded" minOccurs="0">
+              <xs:complexType>
+                <xs:attribute name="id" type="xs:string" use="required"/>
+                <xs:attribute name="name" type="xs:string"/>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="DataType">
+    <xs:sequence>
+      <xs:element name="postgres" type="xs:anyType" minOccurs="0"/>
+      <xs:element name="neo4j" type="xs:anyType" minOccurs="0"/>
+      <xs:element name="qdrant" type="xs:anyType" minOccurs="0"/>
+      <xs:element name="storage" type="xs:anyType" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ExecutionType">
+    <xs:sequence>
+      <xs:element name="agent-runs" type="xs:anyType" minOccurs="0"/>
+      <xs:element name="logs" type="xs:anyType" minOccurs="0"/>
+      <xs:element name="metrics" type="xs:anyType" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="GovernanceType">
+    <xs:sequence>
+      <xs:element name="security" type="xs:anyType" minOccurs="0"/>
+      <xs:element name="compliance" type="xs:anyType" minOccurs="0"/>
+      <xs:element name="audit" type="xs:anyType" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="RegistriesType">
+    <xs:sequence>
+      <xs:element name="venture-registry" type="xs:anyType" minOccurs="0"/>
+      <xs:element name="agent-registry" type="xs:anyType" minOccurs="0"/>
+      <xs:element name="capability-registry" type="xs:anyType" minOccurs="0"/>
+      <xs:element name="repository-registry" type="xs:anyType" minOccurs="0"/>
+      <xs:element name="dependency-registry" type="xs:anyType" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

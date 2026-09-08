@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(smithery *)",
+      "Bash(npm view *)",
+      "Bash(npm search *)",
+      "Bash(jq *)",
+      "Bash(git add *)"
+    ]
+  },
+  "$version": 3
+}

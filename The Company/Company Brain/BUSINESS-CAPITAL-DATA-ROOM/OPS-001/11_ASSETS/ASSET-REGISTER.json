@@ -1,0 +1,28 @@
+{
+  "assets": [
+    [
+      "AST-001",
+      "Operating Equipment & Fleet Vehicles",
+      "Tangible Equipment",
+      "$250,000",
+      "Senior Bank Lien",
+      "OPERATIONAL"
+    ],
+    [
+      "AST-002",
+      "Proprietary Software (CareerOps)",
+      "Intangible IP",
+      "$500,000",
+      "Free & Clear",
+      "ACTIVE"
+    ],
+    [
+      "AST-003",
+      "Cash Reserves & Operating Accounts",
+      "Liquid Capital",
+      "$125,000",
+      "None",
+      "RESTRICTED"
+    ]
+  ]
+}

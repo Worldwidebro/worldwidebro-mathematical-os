@@ -1,0 +1,19 @@
+{
+  "venture_id": "LT-005",
+  "digital_assets": [
+    {
+      "type": "GitHub Repository",
+      "identifier": "Worldwidebro/lt-005-medical-courier-dispatch",
+      "verified_commit": "bdb61fb"
+    },
+    {
+      "type": "Production Web Surface",
+      "url": "https://healthroute-courier.vercel.app",
+      "status": "LIVE"
+    }
+  ],
+  "commercial_gateway": {
+    "provider": "Stripe",
+    "status": "WIRED_ACTIVE"
+  }
+}

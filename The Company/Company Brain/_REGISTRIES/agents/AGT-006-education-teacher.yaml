@@ -1,0 +1,29 @@
+id: AGT-006
+name: Education Teacher Agent
+description: "Plans curricula and generates educational content for courses"
+fractal_agent: education-teacher
+sector_tags:
+  - SEC-037  # Education
+control_planes:
+  - CP-031   # Education Control Plane
+capabilities:
+  - CAP-200  # Curriculum planning
+  - CAP-201  # Slide generation
+  - CAP-206  # Diagram creation
+  - CAP-209  # Content structuring
+autonomy_levels:
+  - L1       # Report curriculum outline
+  - L2       # Generate all slides
+  - L3       # Publish to learning platform
+cost_model:
+  per_step: 2.50
+  per_iteration: 50.00
+  per_run: 250.00
+manages_ventures:
+  - EDU-*
+tools:
+  - TOL-anthropic
+  - TOL-openai
+  - TOL-supabase
+created_at: "2026-09-02"
+status: active

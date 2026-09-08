@@ -1,0 +1,16 @@
+products:
+  -
+    name: "Terminal Medical & Cleanroom Sanitation"
+    pricing: "$8,500 / mo per facility"
+    model: "Recurring Commercial Retainer"
+    margin: "38.0%"
+  -
+    name: "ClinicPulse IoT Pathogen Verification OS"
+    pricing: "$350 / mo per clinic"
+    model: "Software Subscription"
+    margin: "85.0%"
+  -
+    name: "Emergency Biohazard Containment Rapid Response"
+    pricing: "$4,200 / dispatch"
+    model: "On-Demand Service"
+    margin: "52.0%"

@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "1.0.0",
+  "events": [
+    {
+      "id": "EVT-001",
+      "name": "Outreach Email Sent",
+      "source": "Outbound Engine",
+      "level": "TOUCHPOINT"
+    },
+    {
+      "id": "EVT-002",
+      "name": "Positive Reply Received",
+      "source": "Inbox Monitor",
+      "level": "QUALIFICATION"
+    },
+    {
+      "id": "EVT-003",
+      "name": "Discovery Call Booked",
+      "source": "Cal.com / Scheduler",
+      "level": "OPPORTUNITY"
+    },
+    {
+      "id": "EVT-004",
+      "name": "Audit SOW Delivered",
+      "source": "Contract Vault",
+      "level": "PROPOSAL"
+    },
+    {
+      "id": "EVT-005",
+      "name": "Deposit Escrow Received",
+      "source": "Stripe / Mercury Escrow",
+      "level": "REVENUE"
+    }
+  ]
+}

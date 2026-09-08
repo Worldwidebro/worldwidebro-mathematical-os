@@ -1,0 +1,10 @@
+---
+name: financial
+description: Company Brain Routing Agent
+metadata:
+  type: agent
+  id: AGT-002
+---
+# AGT-002: financial Agent
+**Fractal mapping:** `financial` (company_brain.py)
+**Status:** Active, ready for integration

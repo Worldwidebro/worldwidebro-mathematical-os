@@ -1,0 +1,730 @@
+# DEPRECATED: Reference RELATIONSHIPS_EXTENDED.yaml instead
+# Phase 0 (2026-09-01): Complete ontology at RELATIONSHIPS_EXTENDED.yaml (250+ predicates across 12 categories)
+# This file kept for legacy reference only
+
+relationships:
+  USES:
+    name: "Uses"
+    description: "Agent/Skill/Service uses Tool/Capability/API"
+    direction: "directed"
+    source_types: ["AGT", "SKL", "SVC", "WFL"]
+    target_types: ["TOL", "CAP", "API", "MCP"]
+    properties:
+      - name: "context"
+        type: "string"
+        description: "How it's used"
+      - name: "required"
+        type: "boolean"
+        description: "Critical dependency"
+    examples:
+      - "code-reviewer AGT USES security-scan TOL"
+      - "Entity Resolution SKL USES Sourcegraph API"
+
+  DEPENDS_ON:
+    name: "Depends On"
+    description: "Service/Capability depends on another service/tool/data"
+    direction: "directed"
+    source_types: ["SVC", "CAP", "WFL", "LOP"]
+    target_types: ["SVC", "CAP", "DST", "STR"]
+    properties:
+      - name: "failure_impact"
+        type: "string"
+        enum: ["CRITICAL", "HIGH", "MEDIUM", "LOW"]
+      - name: "fallback"
+        type: "string"
+        description: "Fallback behavior if unavailable"
+    examples:
+      - "venture-api SVC DEPENDS_ON PostgreSQL STR"
+      - "Revenue Loop LOP DEPENDS_ON Sales Pipeline CAP"
+
+  IMPLEMENTS:
+    name: "Implements"
+    description: "Code/Repository implements Capability/Skill"
+    direction: "directed"
+    source_types: ["REP", "AGT", "SVC"]
+    target_types: ["CAP", "SKL"]
+    properties:
+      - name: "status"
+        type: "string"
+        enum: ["COMPLETE", "PARTIAL", "DRAFT"]
+      - name: "test_coverage"
+        type: "number"
+        description: "Percentage 0-100"
+    examples:
+      - "worldwidebro/gbrain REP IMPLEMENTS Entity Resolution CAP"
+      - "code-reviewer AGT IMPLEMENTS Code Quality Assurance SKL"
+
+  EXECUTES:
+    name: "Executes"
+    description: "Agent/Loop/Job executes Workflow/Skill/Loop"
+    direction: "directed"
+    source_types: ["AGT", "LOP", "JOB", "WFL"]
+    target_types: ["WFL", "SKL", "LOP"]
+    properties:
+      - name: "autonomy_level"
+        type: "integer"
+        enum: [1, 2, 3]
+        description: "L1 (report), L2 (assisted), L3 (autonomous)"
+      - name: "schedule"
+        type: "string"
+        description: "Cron, interval, or trigger"
+    examples:
+      - "L1 Loop LOP EXECUTES Venture Analysis WFL at 08:00 daily"
+      - "data-scientist AGT EXECUTES Market Research SKL on demand"
+
+  PRODUCES:
+    name: "Produces"
+    description: "Capability/Agent/Process produces Output/Dataset/Insight"
+    direction: "directed"
+    source_types: ["CAP", "AGT", "PCS", "WFL"]
+    target_types: ["OUT", "DST", "INS", "RPT"]
+    properties:
+      - name: "latency"
+        type: "string"
+        description: "Time to produce (e.g. 'P100 < 5min')"
+      - name: "format"
+        type: "string"
+        enum: ["JSON", "CSV", "PDF", "Dashboard", "Database", "API"]
+    examples:
+      - "Lead Generation CAP PRODUCES Qualified Leads DST daily"
+      - "Code Analysis AGT PRODUCES Security Report RPT per PR"
+
+  MEASURED_BY:
+    name: "Measured By"
+    description: "Capability/Outcome/Service measured by Metric/KPI/SLO"
+    direction: "directed"
+    source_types: ["CAP", "OUT", "SVC", "LOP"]
+    target_types: ["MTR", "KPI", "SLI", "SLO"]
+    properties:
+      - name: "criticality"
+        type: "string"
+        enum: ["CRITICAL", "HIGH", "MEDIUM", "LOW"]
+      - name: "target_value"
+        type: "string"
+        description: "Expected metric value"
+      - name: "frequency"
+        type: "string"
+        description: "How often measured (hourly, daily, weekly)"
+    examples:
+      - "Venture Success OUT MEASURED_BY Revenue KPI"
+      - "API Service SVC MEASURED_BY Response Time SLI hourly"
+
+  EVIDENCED_BY:
+    name: "Evidenced By"
+    description: "Decision/Claim evidenced by Data/Document/Analysis"
+    direction: "directed"
+    source_types: ["DEC", "INS", "OUT", "LES"]
+    target_types: ["DST", "DOC", "ANL", "RPT"]
+    properties:
+      - name: "confidence"
+        type: "number"
+        description: "Confidence 0-1"
+      - name: "verification_date"
+        type: "date"
+        description: "When evidence was last verified"
+      - name: "authority"
+        type: "string"
+        description: "Source authority/credibility"
+    examples:
+      - "Market Entry Decision DEC EVIDENCED_BY Market Analysis ANL (0.85 confidence)"
+      - "Performance Improvement OUT EVIDENCED_BY Load Test RPT (verified 2026-09-01)"
+
+  LEARNS_FROM:
+    name: "Learns From"
+    description: "Agent/Loop learns from Outcome/Lesson/Result"
+    direction: "directed"
+    source_types: ["AGT", "LOP", "MOD"]
+    target_types: ["OUT", "LES", "RES", "ERR"]
+    properties:
+      - name: "feedback_loop"
+        type: "string"
+        description: "How learning feeds back"
+      - name: "update_frequency"
+        type: "string"
+        description: "How often updated"
+    examples:
+      - "ML Model MOD LEARNS_FROM Test Results RES weekly"
+      - "Demand Forecast AGT LEARNS_FROM Sales Outcome OUT daily"
+
+  UPDATES:
+    name: "Updates"
+    description: "Execution/Process updates Data/Record/State"
+    direction: "directed"
+    source_types: ["EXC", "PCS", "AGT", "WFL"]
+    target_types: ["REC", "TBL", "ENT"]
+    properties:
+      - name: "transactional"
+        type: "boolean"
+        description: "ACID guarantee"
+      - name: "rollback_available"
+        type: "boolean"
+    examples:
+      - "Onboarding Process PCS UPDATES Venture Record REC"
+      - "Event Handler HND UPDATES Customer Entity ENT"
+
+  REQUIRES:
+    name: "Requires"
+    description: "Capability/Process requires Permission/Authority/Approval"
+    direction: "directed"
+    source_types: ["CAP", "PCS", "WFL"]
+    target_types: ["PRM", "AUT", "APR"]
+    properties:
+      - name: "level"
+        type: "string"
+        description: "Permission level required"
+      - name: "escalation_path"
+        type: "string"
+        description: "Who to escalate to"
+    examples:
+      - "Delete Venture CAP REQUIRES Admin Permission PRM"
+      - "Access Production SKL REQUIRES Security Approval APR from CTO"
+
+  AUTHORIZES:
+    name: "Authorizes"
+    description: "Authority/Role authorizes Action/Agent/Process"
+    direction: "directed"
+    source_types: ["AUT", "ROL", "PRM"]
+    target_types: ["AGT", "PCS", "CAP"]
+    properties:
+      - name: "scope"
+        type: "string"
+        description: "Scope of authorization"
+      - name: "expiration"
+        type: "date"
+        description: "Authorization expiration date"
+    examples:
+      - "CTO Role ROL AUTHORIZES Infrastructure Changes PCS"
+      - "Admin Permission PRM AUTHORIZES Venture Deletion CAP"
+
+  BELONGS_TO:
+    name: "Belongs To"
+    description: "Entity belongs to Organization/Team/Division"
+    direction: "directed"
+    source_types: ["AGT", "CAP", "DOC", "SKL"]
+    target_types: ["ORG", "TEA", "DIV", "VEN"]
+    properties:
+      - name: "primary"
+        type: "boolean"
+        description: "Primary ownership"
+    examples:
+      - "code-reviewer AGT BELONGS_TO Engineering TEA"
+      - "LT-005 Venture VEN BELONGS_TO Logistics ORG"
+
+  INSTANCES_OF:
+    name: "Instances Of"
+    description: "Entity is instance of Type/Template/Pattern"
+    direction: "directed"
+    source_types: ["CAP", "SKL", "SVC", "PCS"]
+    target_types: ["TYP", "TPL", "CST"]
+    properties:
+      - name: "variant"
+        type: "string"
+        description: "Variant or subtype"
+    examples:
+      - "venture-api SVC INSTANCES_OF REST API API"
+      - "Weekly Sync PCS INSTANCES_OF Governance Meeting TPL"
+
+  RELATED_TO:
+    name: "Related To"
+    description: "Weak semantic connection between entities"
+    direction: "undirected"
+    source_types: ["VEN", "CAP", "SKL", "DOC"]
+    target_types: ["VEN", "CAP", "SKL", "DOC"]
+    properties:
+      - name: "relationship_type"
+        type: "string"
+        description: "Nature of relationship"
+      - name: "strength"
+        type: "number"
+        description: "Strength 0-1"
+    examples:
+      - "Venture LT-005 RELATED_TO Customer Acme Corp"
+      - "Data Privacy Policy POL RELATED_TO GDPR Compliance CMP"
+
+  CONFLICTS_WITH:
+    name: "Conflicts With"
+    description: "Entity/Decision conflicts with another entity"
+    direction: "directed"
+    source_types: ["DEC", "POL", "RUL", "CAP"]
+    target_types: ["DEC", "POL", "RUL", "CAP"]
+    properties:
+      - name: "severity"
+        type: "string"
+        enum: ["CRITICAL", "HIGH", "MEDIUM", "LOW"]
+      - name: "resolution"
+        type: "string"
+        description: "How to resolve"
+    examples:
+      - "Speed-to-Market RUL CONFLICTS_WITH Quality Standard STD (HIGH severity)"
+      - "Cost Reduction Decision DEC CONFLICTS_WITH Hiring Plan DEC"
+
+  SUPERSEDES:
+    name: "Supersedes"
+    description: "New version/decision supersedes old version"
+    direction: "directed"
+    source_types: ["CAP", "SKL", "POL", "DOC"]
+    target_types: ["CAP", "SKL", "POL", "DOC"]
+    properties:
+      - name: "effective_date"
+        type: "date"
+        description: "When supersession takes effect"
+      - name: "migration_plan"
+        type: "string"
+        description: "How to migrate"
+    examples:
+      - "API v2 API SUPERSEDES API v1 (2026-10-01)"
+      - "New Security Policy POL SUPERSEDES Old Policy POL (2026-09-15)"
+
+  EXTENDS:
+    name: "Extends"
+    description: "Entity extends/enhances capability of another entity"
+    direction: "directed"
+    source_types: ["CAP", "SKL", "WFL"]
+    target_types: ["CAP", "SKL", "WFL"]
+    properties:
+      - name: "enhancement"
+        type: "string"
+        description: "What is enhanced"
+    examples:
+      - "Advanced Analytics CAP EXTENDS Basic Analytics CAP"
+      - "Security Hardening SKL EXTENDS Deployment SKL"
+
+  INTEGRATES_WITH:
+    name: "Integrates With"
+    description: "System/Service integrates with another system/service"
+    direction: "directed"
+    source_types: ["SYS", "SVC", "API"]
+    target_types: ["SYS", "SVC", "API"]
+    properties:
+      - name: "integration_type"
+        type: "string"
+        enum: ["SYNC", "ASYNC", "WEBHOOK", "POLLING", "STREAMING"]
+      - name: "latency"
+        type: "string"
+        description: "End-to-end latency"
+    examples:
+      - "VEX SYS INTEGRATES_WITH Salesforce SYS (SYNC, P95 < 2s)"
+      - "Analytics Service SVC INTEGRATES_WITH Data Lake via WEBHOOK"
+
+  MONITORS:
+    name: "Monitors"
+    description: "Monitor/Alert monitors Service/Capability/System health"
+    direction: "directed"
+    source_types: ["MON", "ALT"]
+    target_types: ["SVC", "CAP", "SYS"]
+    properties:
+      - name: "metric"
+        type: "string"
+        description: "What metric is monitored"
+      - name: "threshold"
+        type: "string"
+        description: "Alert threshold"
+      - name: "check_interval"
+        type: "string"
+        description: "How often checked"
+    examples:
+      - "Latency Monitor MON MONITORS API Service SVC (P99 > 100ms)"
+      - "Error Rate Alert ALT MONITORS Production System SYS (>5%)"
+
+  GOVERNS:
+    name: "Governs"
+    description: "Policy/Rule governs Process/Capability/Decision"
+    direction: "directed"
+    source_types: ["POL", "RUL", "STD", "CTL"]
+    target_types: ["PCS", "CAP", "DEC"]
+    properties:
+      - name: "enforcement"
+        type: "string"
+        enum: ["MANDATORY", "RECOMMENDED"]
+      - name: "exceptions"
+        type: "string"
+        description: "Allowed exceptions"
+    examples:
+      - "Data Privacy Policy POL GOVERNS Customer Data Handling PCS (MANDATORY)"
+      - "Code Review Standard STD GOVERNS Code Change Process PCS"
+
+  OWNS:
+    name: "Owns"
+    description: "Team/Person owns Capability/Service/Document"
+    direction: "directed"
+    source_types: ["TEA", "PER", "ROL"]
+    target_types: ["CAP", "SVC", "DOC"]
+    properties:
+      - name: "responsibility"
+        type: "string"
+        description: "Type of ownership"
+      - name: "escalation"
+        type: "string"
+        description: "Escalation point"
+    examples:
+      - "Backend Team TEA OWNS Venture API SVC"
+      - "Security Officer PER OWNS Security Policy DOC"
+
+  CONTAINS:
+    name: "Contains"
+    description: "Entity contains sub-entity/component"
+    direction: "directed"
+    source_types: ["VEN", "DIV", "SCH", "TEA"]
+    target_types: ["OPC", "SKL", "TBL", "PER"]
+    properties:
+      - name: "multiplicity"
+        type: "string"
+        enum: ["ONE", "MANY"]
+    examples:
+      - "Venture VEN CONTAINS Multiple OpCos OPC"
+      - "Database Schema SCH CONTAINS Multiple Tables TBL"
+
+  AFFECTS:
+    name: "Affects"
+    description: "Change/Decision affects another entity"
+    direction: "directed"
+    source_types: ["DEC", "RIK"]
+    target_types: ["OUT", "CAP", "SVC"]
+    properties:
+      - name: "impact_level"
+        type: "string"
+        enum: ["CRITICAL", "HIGH", "MEDIUM", "LOW"]
+      - name: "blast_radius"
+        type: "string"
+        description: "Scope of impact"
+    examples:
+      - "API Rate Limit Change AFFECTS Third-party Integrations (HIGH impact)"
+      - "Pricing Change AFFECTS Revenue Forecast OUT"
+
+  ENABLES:
+    name: "Enables"
+    description: "Capability/Technology enables new capability/outcome"
+    direction: "directed"
+    source_types: ["CAP", "TOL", "MOD"]
+    target_types: ["CAP", "OUT"]
+    properties:
+      - name: "prerequisite"
+        type: "boolean"
+        description: "Is it a prerequisite"
+    examples:
+      - "Real-time Database ENABLES Instant Analytics CAP"
+      - "ML Model MOD ENABLES Predictive Scoring OUT"
+
+  HAS_CODE_GRAPH:
+    name: "Has Code Graph"
+    description: "Repository has Graft-generated code graph"
+    direction: "directed"
+    source_types: ["REP", "CBD"]
+    target_types: ["CGP"]
+    properties:
+      - name: "generated_date"
+        type: "date"
+        description: "When graph was generated"
+      - name: "graft_version"
+        type: "string"
+        description: "Graft version that generated it"
+      - name: "node_count"
+        type: "integer"
+        description: "Number of code nodes"
+    examples:
+      - "LT-005 dispatch repo REP HAS_CODE_GRAPH dispatch-code-graph CGP"
+
+  CONTAINS_CODE_NODE:
+    name: "Contains Code Node"
+    description: "Code graph contains code node (symbol/function/class)"
+    direction: "directed"
+    source_types: ["CGP", "MOD"]
+    target_types: ["CND", "SYM"]
+    properties:
+      - name: "node_type"
+        type: "string"
+        enum: ["FUNCTION", "CLASS", "INTERFACE", "MODULE", "EXPORT", "TYPE"]
+      - name: "line_range"
+        type: "string"
+        description: "Line numbers in source (e.g. '123-456')"
+    examples:
+      - "auth-graph CGP CONTAINS_CODE_NODE authenticate() function CND"
+
+  CALLS:
+    name: "Calls"
+    description: "Code node calls another code node"
+    direction: "directed"
+    source_types: ["CND", "SYM"]
+    target_types: ["CND", "SYM"]
+    properties:
+      - name: "call_count"
+        type: "integer"
+        description: "Number of calls in codebase"
+      - name: "sync_or_async"
+        type: "string"
+        enum: ["SYNC", "ASYNC", "BOTH"]
+    examples:
+      - "authenticate() function CND CALLS verify_token() function CND"
+
+  DEPENDS_ON_CODE:
+    name: "Depends On (Code)"
+    description: "Code node/module depends on code node/module/dependency"
+    direction: "directed"
+    source_types: ["CND", "MOD", "CBD"]
+    target_types: ["CND", "MOD", "DEP"]
+    properties:
+      - name: "import_type"
+        type: "string"
+        enum: ["DIRECT", "INDIRECT", "CIRCULAR"]
+      - name: "criticality"
+        type: "string"
+        enum: ["CRITICAL", "HIGH", "MEDIUM", "LOW"]
+    examples:
+      - "auth module MOD DEPENDS_ON_CODE bcrypt DEP (CRITICAL)"
+
+  IMPLEMENTS_CODE:
+    name: "Implements (Code)"
+    description: "Code node/repository implements capability/feature"
+    direction: "directed"
+    source_types: ["CND", "MOD", "REP", "CBD"]
+    target_types: ["CAP", "FTR"]
+    properties:
+      - name: "coverage_percent"
+        type: "number"
+        description: "Percentage coverage 0-100"
+      - name: "status"
+        type: "string"
+        enum: ["COMPLETE", "PARTIAL", "DRAFT"]
+    examples:
+      - "auth module MOD IMPLEMENTS_CODE Authentication CAP (100%, COMPLETE)"
+
+  HAS_BLAST_RADIUS:
+    name: "Has Blast Radius"
+    description: "Code change has impact analysis / blast radius"
+    direction: "directed"
+    source_types: ["CND", "MOD", "DEC"]
+    target_types: ["BLR"]
+    properties:
+      - name: "calculated_date"
+        type: "date"
+        description: "When impact was analyzed"
+      - name: "risk_level"
+        type: "string"
+        enum: ["CRITICAL", "HIGH", "MEDIUM", "LOW"]
+    examples:
+      - "Auth service change DEC HAS_BLAST_RADIUS auth-blast-radius BLR (HIGH)"
+
+  AFFECTS_REPOSITORY:
+    name: "Affects Repository"
+    description: "Code change affects repository/venture/capability"
+    direction: "directed"
+    source_types: ["BLR", "CND", "MOD"]
+    target_types: ["REP", "VEN", "CAP"]
+    properties:
+      - name: "impact_count"
+        type: "integer"
+        description: "Number of entities affected"
+      - name: "impact_type"
+        type: "string"
+        enum: ["BREAKING", "FEATURE", "BUG_FIX", "PERFORMANCE", "SECURITY"]
+    examples:
+      - "Auth blast radius BLR AFFECTS_REPOSITORY payment-processing REP (3 modules)"
+
+  SPAWNS_AGENT:
+    name: "Spawns Agent"
+    description: "Parent agent spawns child agent in Fractal tree"
+    direction: "directed"
+    source_types: ["ANO", "AGT"]
+    target_types: ["ANO"]
+    properties:
+      - name: "spawn_reason"
+        type: "string"
+        description: "Why child was spawned"
+      - name: "parent_provides"
+        type: "string"
+        description: "What parent provides (context, budget, worktree, etc)"
+    examples:
+      - "Audit Root ANO SPAWNS_AGENT Sector A Auditor ANO"
+
+  PARENT_OF:
+    name: "Parent Of"
+    description: "Agent node is parent of child agent node"
+    direction: "directed"
+    source_types: ["ANO"]
+    target_types: ["ANO"]
+    properties:
+      - name: "depth"
+        type: "integer"
+        description: "Tree depth"
+      - name: "sibling_count"
+        type: "integer"
+        description: "Number of siblings"
+    examples:
+      - "Root Auditor ANO PARENT_OF Sector A Auditor ANO (depth 1)"
+
+  CHILD_OF:
+    name: "Child Of"
+    description: "Agent node is child of parent agent node"
+    direction: "directed"
+    source_types: ["ANO"]
+    target_types: ["ANO"]
+    properties:
+      - name: "subtask"
+        type: "string"
+        description: "Subtask assigned"
+    examples:
+      - "Sector A Auditor ANO CHILD_OF Root Auditor ANO"
+
+  PART_OF_TREE:
+    name: "Part Of Tree"
+    description: "Agent node is part of agent tree"
+    direction: "directed"
+    source_types: ["ANO"]
+    target_types: ["ATR"]
+    properties:
+      - name: "tree_role"
+        type: "string"
+        description: "Role in tree (root, branch, leaf)"
+    examples:
+      - "Sector A Auditor ANO PART_OF_TREE audit-tree ATR"
+
+  EXECUTES_RUN:
+    name: "Executes Run"
+    description: "Agent node executes agent run"
+    direction: "directed"
+    source_types: ["ANO"]
+    target_types: ["ARN"]
+    properties:
+      - name: "status"
+        type: "string"
+        enum: ["PENDING", "RUNNING", "COMPLETED", "FAILED", "CANCELLED"]
+      - name: "start_time"
+        type: "date"
+        description: "Run start time"
+    examples:
+      - "Sector A Auditor ANO EXECUTES_RUN sector-a-run-001 ARN"
+
+  HAS_ITERATION:
+    name: "Has Iteration"
+    description: "Agent run has iteration"
+    direction: "directed"
+    source_types: ["ARN"]
+    target_types: ["AIT"]
+    properties:
+      - name: "iteration_number"
+        type: "integer"
+        description: "Iteration number (1, 2, 3...)"
+      - name: "status"
+        type: "string"
+        enum: ["RUNNING", "COMPLETED", "FAILED"]
+    examples:
+      - "sector-a-run-001 ARN HAS_ITERATION iteration-1 AIT"
+
+  HAS_STEP:
+    name: "Has Step"
+    description: "Iteration has step"
+    direction: "directed"
+    source_types: ["AIT"]
+    target_types: ["AST"]
+    properties:
+      - name: "step_type"
+        type: "string"
+        description: "Type of step (think, act, verify, etc)"
+      - name: "duration_ms"
+        type: "integer"
+        description: "Step duration in milliseconds"
+    examples:
+      - "iteration-1 AIT HAS_STEP graft-scan AST"
+
+  SIGNALS:
+    name: "Signals"
+    description: "Agent sends signal to another agent"
+    direction: "directed"
+    source_types: ["ANO"]
+    target_types: ["ANO"]
+    properties:
+      - name: "signal_type"
+        type: "string"
+        enum: ["SPAWNED", "COMPLETED", "FAILED", "BLOCKED", "RESOURCE_REQUEST"]
+      - name: "payload"
+        type: "string"
+        description: "Signal payload/data"
+    examples:
+      - "Sector A Auditor ANO SIGNALS Root Auditor ANO (COMPLETED)"
+
+  USES_WORKTREE:
+    name: "Uses Worktree"
+    description: "Agent node uses git worktree for isolated work"
+    direction: "directed"
+    source_types: ["ANO", "ARN"]
+    target_types: ["WRT"]
+    properties:
+      - name: "worktree_path"
+        type: "string"
+        description: "Local path to worktree"
+      - name: "branch"
+        type: "string"
+        description: "Git branch in worktree"
+    examples:
+      - "Sector A Auditor ANO USES_WORKTREE sector-a-wt WRT"
+
+  HAS_BUDGET:
+    name: "Has Budget"
+    description: "Agent node has execution budget"
+    direction: "directed"
+    source_types: ["ANO", "ARN"]
+    target_types: ["EBD"]
+    properties:
+      - name: "budget_type"
+        type: "string"
+        enum: ["COST", "TIME", "ITERATIONS", "DEPTH", "CHILDREN"]
+      - name: "limit"
+        type: "string"
+        description: "Budget limit (e.g. '$25', '2h', '20 iterations')"
+      - name: "consumed"
+        type: "string"
+        description: "Amount consumed"
+    examples:
+      - "Sector A Auditor ANO HAS_BUDGET cost-budget EBD ($25, $8.50 consumed)"
+
+  GOVERNED_BY:
+    name: "Governed By"
+    description: "Agent node governed by execution policy"
+    direction: "directed"
+    source_types: ["ANO", "ARN"]
+    target_types: ["EXP"]
+    properties:
+      - name: "policy_level"
+        type: "string"
+        enum: ["L0", "L1", "L2", "L3"]
+        description: "Autonomy level"
+    examples:
+      - "Sector A Auditor ANO GOVERNED_BY L2-bounded-execution EXP"
+
+  REPORTS_TO:
+    name: "Reports To"
+    description: "Agent reports results/findings to parent/decision maker"
+    direction: "directed"
+    source_types: ["ANO", "ARN"]
+    target_types: ["ANO", "DEC"]
+    properties:
+      - name: "report_format"
+        type: "string"
+        description: "Format of report (JSON, markdown, etc)"
+      - name: "finding_count"
+        type: "integer"
+        description: "Number of findings"
+    examples:
+      - "Sector A Auditor ANO REPORTS_TO Root Auditor ANO"
+
+---
+# Relationship Constraints
+
+**Basic Rules:**
+- Every relationship must have source_types and target_types defined
+- Properties are optional but recommended for traceability
+- Directed relationships capture causality/dependency
+- Undirected relationships indicate mutual association
+
+**Usage:**
+- In Neo4j: relationship type becomes edge label, properties stored as attributes
+- In PostgreSQL: edges table with (source_id, target_id, type, properties_json)
+- In knowledge graph: rendered as [[wiki links]] with property annotations
+
+**Quality Standards:**
+- EVIDENCED_BY relationships require confidence scores (0-1) and authority attribution
+- DEPENDS_ON relationships should quantify failure_impact to prioritize reliability
+- MEASURED_BY relationships should track verification frequency to keep metrics current
+- Time-sensitive properties (expiration, effective_date) must be checked quarterly
+
+**Updated:** 2026-09-01

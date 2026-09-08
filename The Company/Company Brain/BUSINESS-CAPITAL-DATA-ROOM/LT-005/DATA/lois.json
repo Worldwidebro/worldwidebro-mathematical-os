@@ -1,0 +1,33 @@
+{
+  "total_count": 2,
+  "total_stated_value": 237600,
+  "total_weighted_value": 172080,
+  "items": [
+    {
+      "id": "LOI-LT005-001",
+      "counterparty": "Carolinas Rural Health Diagnostic Network",
+      "signatory": "Dr. Sarah Lin, Chief Medical Officer",
+      "date": "2026-08-18",
+      "expires": "2027-08-17",
+      "term": "12 Months",
+      "value": "$57,600",
+      "weighted": "$46,080",
+      "prob": "80%",
+      "type": "Clinical Customer",
+      "scope": "Scheduled daily specimen courier service ($1,200/mo retainer per site across 4 rural clinics in Robeson and Columbus counties)."
+    },
+    {
+      "id": "LOI-LT005-002",
+      "counterparty": "Piedmont Triad Pathology Partners",
+      "signatory": "Robert Chen, VP Logistics",
+      "date": "2026-08-25",
+      "expires": "2027-08-24",
+      "term": "12 Months",
+      "value": "$180,000",
+      "weighted": "$126,000",
+      "prob": "70%",
+      "type": "Laboratory Partner",
+      "scope": "Master courier service routing agreement for STAT urgent deliveries ($85/run) across Piedmont regional diagnostic centers."
+    }
+  ]
+}

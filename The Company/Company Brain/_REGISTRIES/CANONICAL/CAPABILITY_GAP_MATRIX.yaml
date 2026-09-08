@@ -1,0 +1,126 @@
+# ==============================================================================
+# COMPANY BRAIN — CAPABILITY GAP & SOURCING MATRIX
+# ==============================================================================
+# Authority: System Architecture & Infrastructure Control Plane (CP-027)
+# Cross-references:
+#   - 1,554 Owned Repositories (Internal Capability Inventory)
+#   - 904 External Capability Universe Repos (External Supply Chain)
+#   - 713 Active Ventures (Demand & Business Requirements)
+#   - OmniRoute Traffic Controller (Execution & Compute Routing)
+# ==============================================================================
+
+matrix_metadata:
+  generated_at: "2026-09-05"
+  status: "ACTIVE"
+  total_capabilities_tracked: 12
+  gap_coverage_status:
+    critical_gaps: 2
+    high_priority_gaps: 3
+    medium_priority_gaps: 4
+    healthy_capabilities: 3
+
+capabilities:
+  - id: "CAP-OBSERVABILITY"
+    name: "Full-Stack & LLM Observability"
+    domain: "Infrastructure / Telemetry"
+    owned_count: 1
+    owned_repos: ["OWN-PUB-0875"]
+    external_count: 8
+    external_candidates:
+      - repo: "openobserve/openobserve"
+        stars: 21606
+        fit: "High (Single binary, Rust, OpenTelemetry native, 140x lower cost)"
+    required_by_ventures: 713  # All ventures require telemetry
+    gap_level: "HIGH"
+    strategic_verdict: "INTEGRATE"
+    execution_plan: "Deploy OpenObserve on Mac Studio (LaCie storage) to capture all OmniRoute, agent execution, and token cost traces."
+
+  - id: "CAP-EDGE-INFERENCE"
+    name: "Edge & Mobile Function Calling"
+    domain: "Device Compute / Mobile"
+    owned_count: 0
+    owned_repos: []
+    external_count: 5
+    external_candidates:
+      - repo: "cactus-compute/needle"
+        stars: 9992
+        fit: "High (26M parameter, 14MB footprint, on-device mobile routing)"
+    required_by_ventures: 42   # Mobile operations, field dispatch, voice command
+    gap_level: "HIGH"
+    strategic_verdict: "ADOPT"
+    execution_plan: "Package Needle with CoreML on iPhone/iPad to classify voice/text commands instantly offline before dispatching via Tailscale."
+
+  - id: "CAP-LARGE-MODEL-INFERENCE"
+    name: "Memory-Constrained Large Model Offloading"
+    domain: "AI Compute / Local Edge"
+    owned_count: 2
+    owned_repos: ["DEV-MAC-STUDIO-001", "DEV-MACBOOK-AIR-001"]
+    external_count: 14
+    external_candidates:
+      - repo: "lyogavin/airllm"
+        stars: 33466
+        fit: "High (Layer-by-layer 70B+ inference on low VRAM via SSD streaming)"
+    required_by_ventures: 128  # Deep codebase research, offline batch analysis
+    gap_level: "MEDIUM"
+    strategic_verdict: "INTEGRATE"
+    execution_plan: "Connect AirLLM to Mac Studio LaCie / T7 storage for background batch audits of 1,554 repos without starving RAM."
+
+  - id: "CAP-TEMPORAL-KNOWLEDGE"
+    name: "Enterprise World Model & Bitemporal KG"
+    domain: "Knowledge / Organizational Memory"
+    owned_count: 1
+    owned_repos: ["DB-NEO4J-001"]
+    external_count: 4
+    external_candidates:
+      - repo: "deeplethe/utopia"
+        stars: 1240
+        fit: "Medium (v0.1 prototype, bitemporal ontology, agent execution gates)"
+    required_by_ventures: 713
+    gap_level: "MEDIUM"
+    strategic_verdict: "EXTRACT"
+    execution_plan: "Extract the bitemporal entity model and financial agent execution gates from Utopia into Company Brain's Neo4j schema."
+
+  - id: "CAP-ROUTING-TRAFFIC-CONTROL"
+    name: "AI Model & Tool Traffic Routing"
+    domain: "Agent OS / Gateway"
+    owned_count: 1
+    owned_repos: ["omniroute"]
+    external_count: 3
+    external_candidates:
+      - repo: "chiencbd/omniroute"
+        stars: 3800
+        fit: "Active Production Gateway (110 MCP tools, Tailscale mesh)"
+    required_by_ventures: 713
+    gap_level: "HEALTHY"
+    strategic_verdict: "ADOPT"
+    execution_plan: "Maintain OmniRoute daemon on Mac Studio + MacBook Air connected via Tailscale with active 'agy' and Ollama providers."
+
+  - id: "CAP-AUTONOMOUS-WORKFORCE"
+    name: "Multi-Agent Specialist Coordination"
+    domain: "Agent OS / Execution"
+    owned_count: 14
+    owned_repos: ["OWN-PUB-0884", "OWN-PUB-0875", "OWN-PRIV-0008"]
+    external_count: 31
+    external_candidates:
+      - repo: "garrytan/gstack"
+        stars: 130983
+        fit: "High (23 opinionated roles: CEO, PM, Eng, QA)"
+    required_by_ventures: 713
+    gap_level: "LOW"
+    strategic_verdict: "EXTRACT"
+    execution_plan: "Integrate specialized role workflows (CEO, Strategy, Finance, Ops) into Antigravity subagents and slash commands."
+
+  - id: "CAP-SECRETS-MANAGEMENT"
+    name: "Zero-Trust Secrets & Credential Injection"
+    domain: "Security / Identity"
+    owned_count: 1
+    owned_repos: ["bw-cli"]
+    external_count: 12
+    external_candidates:
+      - repo: "dani-garcia/vaultwarden"
+        stars: 65506
+        fit: "High (Lightweight Rust self-hosted Bitwarden server for Mac Studio)"
+    required_by_ventures: 713
+    gap_level: "HEALTHY"
+    strategic_verdict: "ADOPT"
+    execution_plan: "Use Bitwarden CLI (bw v2026.4.1) for ephemeral JIT credential injection into OmniRoute providers and agent workflows. Keep Vaultwarden as self-hosted local-first option on Mac Studio."

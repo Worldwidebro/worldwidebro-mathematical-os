@@ -1,0 +1,26 @@
+{
+  "registry_id": "REG-CERT-001",
+  "updated_at": "2026-09-05",
+  "certificates": [
+    {
+      "cert_id": "CERT-VERCEL-WILDCARD",
+      "domain": "*.vercel.app",
+      "issuer": "Let's Encrypt Authority",
+      "auto_renewal": true,
+      "status": "VALID"
+    },
+    {
+      "cert_id": "CERT-TAILSCALE-MACHINE",
+      "domain": "*.ts.net",
+      "issuer": "Tailscale Automated CA",
+      "auto_renewal": true,
+      "status": "VALID"
+    },
+    {
+      "cert_id": "CERT-INTERNAL-LOCAL",
+      "domain": "local.companybrain",
+      "issuer": "Internal Self-Signed Root CA",
+      "status": "PLANNED"
+    }
+  ]
+}

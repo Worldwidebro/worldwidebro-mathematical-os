@@ -1,0 +1,10 @@
+---
+name: operations
+description: Company Brain Routing Agent
+metadata:
+  type: agent
+  id: AGT-005
+---
+# AGT-005: operations Agent
+**Fractal mapping:** `operations` (company_brain.py)
+**Status:** Active, ready for integration

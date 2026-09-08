@@ -1,0 +1,39 @@
+# Capability ID Registry
+# Master list of organizational capabilities
+
+capabilities:
+  - ref_id: "CAP-000001"
+    name: "Authentication"
+    slug: "authentication"
+    description: "User auth, OAuth, session management"
+    implementations:
+      - "REP-000005"
+      - "REP-000012"
+    status: "active"
+
+  - ref_id: "CAP-000002"
+    name: "Payment Processing"
+    slug: "payment-processing"
+    description: "Stripe, PayPal, financial transactions"
+    implementations:
+      - "REP-000015"
+    status: "active"
+
+  - ref_id: "CAP-000003"
+    name: "Voice Generation"
+    slug: "voice-generation"
+    description: "Text-to-speech, voice synthesis"
+    implementations:
+      - "REP-000023"
+    status: "partial"
+
+  - ref_id: "CAP-000247"
+    name: "Entity Resolution"
+    slug: "entity-resolution"
+    description: "Deduplication, identity matching"
+    implementations:
+      - "REP-000089"
+      - "AGT-000012"
+    status: "active"
+
+count: "~200-300 capabilities (to be mapped)"

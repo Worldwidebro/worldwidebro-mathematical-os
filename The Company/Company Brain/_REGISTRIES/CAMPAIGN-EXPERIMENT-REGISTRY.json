@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "1.0.0",
+  "experiments": [
+    {
+      "id": "EXP-001",
+      "campaign_id": "CAM-001",
+      "name": "Subject Line Hook: Token Burn Dollar Quantification vs Security Compliance",
+      "hypothesis_id": "HYP-001",
+      "type": "A_B_TEST",
+      "channel_id": "CHN-OUT-001",
+      "variable": "Subject Line & Lead Hook",
+      "variant_a": "Quick question on your Claude / OpenAI API spend at {{Company}} (Cost Focus)",
+      "variant_b": "Zero-data-leakage coding agents on local Apple Silicon (Security Focus)",
+      "primary_metric": "REPLY_RATE",
+      "sample_size": 100,
+      "status": "READY"
+    }
+  ]
+}

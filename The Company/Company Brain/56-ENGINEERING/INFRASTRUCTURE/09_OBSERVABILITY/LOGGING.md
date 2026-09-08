@@ -1,0 +1,24 @@
+---
+id: DOC-09-OBS-004
+aliases: ['LOGGING']
+tags: ['observability', 'logging', 'infrastructure']
+status: ACTIVE
+updated: 2026-09-06
+---
+
+[[STARTHERE]] | [[56-ENGINEERING/56-ENGINEERING|56-ENGINEERING]] | [[56-ENGINEERING/INFRASTRUCTURE/INFRASTRUCTURE|INFRASTRUCTURE]] | [[56-ENGINEERING/INFRASTRUCTURE/09_OBSERVABILITY/OBSERVABILITY|OBSERVABILITY]] | [[_REGISTRIES/infrastructure_registry.json]]
+
+# Structured Logging Standards & Aggregation
+
+> **Authority:** CP-027 | **Status:** ACTIVE
+
+- JSON-formatted stdout/stderr container logs with correlation IDs for cross-service tracing.
+
+## Connected Documents & Registries
+- Domain Hub: [[56-ENGINEERING/INFRASTRUCTURE/09_OBSERVABILITY/OBSERVABILITY|OBSERVABILITY]]
+- Master Infrastructure: [[56-ENGINEERING/INFRASTRUCTURE/INFRASTRUCTURE|INFRASTRUCTURE]]
+- Core Registry: [[_REGISTRIES/infrastructure_registry.json]]
+- [[56-ENGINEERING/INFRASTRUCTURE/07_RUNTIME/RUNTIME|RUNTIME]]
+- [[56-ENGINEERING/INFRASTRUCTURE/04_NETWORK/PORTS|PORTS]]
+- [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/INFRASTRUCTURE-COST|INFRASTRUCTURE-COST]]
+- [[_REGISTRIES/infrastructure_registry.json|infrastructure_registry.json]]

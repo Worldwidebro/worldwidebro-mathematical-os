@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "1.0.0",
+  "risks": [
+    {
+      "id": "RSK-001",
+      "campaign_id": "CAM-001",
+      "name": "Enterprise Security Resistance to Repo Code Inspection",
+      "probability": "MEDIUM",
+      "impact": "HIGH",
+      "mitigation": "Provide zero-install local Docker script / Graft container that executes entirely on client premise and emits only anonymized topological metadata.",
+      "status": "MONITORED"
+    },
+    {
+      "id": "RSK-002",
+      "campaign_id": "CAM-001",
+      "name": "Prospect Skepticism on 3X ROI Guarantee",
+      "probability": "LOW",
+      "impact": "MEDIUM",
+      "mitigation": "Contractual escrow backing via Stripe/Mercury with automatic refund stipulation if benchmarks don't prove $22.5k savings.",
+      "status": "MITIGATED"
+    }
+  ]
+}

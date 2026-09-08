@@ -1,0 +1,236 @@
+# COGNITION_FLOW.yaml — 22-Stage Cognitive & Reality Pipeline
+# Version 1.0 | Created 2026-09-01 | Phase 0 Foundational File
+#
+# Master specification of how Company Brain transforms reality into decisions
+# and decisions back into reality through a 22-stage pipeline.
+
+---
+version: "1.0"
+description: "Company Brain Cognition & Reality Flow (22-Stage Pipeline)"
+author: "Company Brain Architecture"
+created: "2026-09-01"
+
+stages:
+  - order: 1
+    name: "WORLD"
+    description: "Things actually happening in the world"
+    object_types: [WORLD, EVENT, PHENOMENON, ACTOR, RESOURCE, CONSTRAINT]
+    primary_base: "02-WORLD"
+    function: "External reality independent of observation"
+    outputs_to: [OBSERVATION]
+
+  - order: 2
+    name: "OBSERVATION"
+    description: "Events and signals detected/captured from the world"
+    object_types: [OBSERVATION, MEASUREMENT, SIGNAL, SENSOR, EVENT_LOG]
+    primary_base: "02-WORLD"
+    function: "Transform world events into detectable signals"
+    status_lifecycle: [DETECTED, CAPTURED, TIMESTAMPED, CLASSIFIED]
+    outputs_to: [DATA]
+
+  - order: 3
+    name: "DATA"
+    description: "Raw, unprocessed data in structured or unstructured form"
+    object_types: [DATASET, RECORD, FIELD, TABLE, DOCUMENT, LOG_ENTRY]
+    primary_base: "11-DATA"
+    function: "Collect signals into databases and data lakes"
+    status_lifecycle: [INGESTED, VALIDATED, STORED, INDEXED]
+    outputs_to: [INFORMATION]
+
+  - order: 4
+    name: "INFORMATION"
+    description: "Cleaned, validated, classified, contextualized data"
+    object_types: [FACT, CLAIM, ATTRIBUTE, ENTITY, ENTITY_RECORD, CLASSIFICATION]
+    primary_base: "61-KNOWLEDGE-SOURCES"
+    function: "Clean and normalize data; create machine-readable facts"
+    status_lifecycle: [CLEANED, CLASSIFIED, CONTEXTUALIZED, VERIFIED]
+    outputs_to: [KNOWLEDGE]
+
+  - order: 5
+    name: "KNOWLEDGE"
+    description: "Facts organized into concepts, rules, relationships, and principles"
+    object_types: [CONCEPT, PRINCIPLE, RULE, MODEL, PATTERN, PROCEDURE]
+    primary_base: "21-GOVERNANCE"
+    function: "Interpret information; create models; establish relationships"
+    status_lifecycle: [POSTULATED, VALIDATED, DOCUMENTED, TRUSTED]
+    outputs_to: [MEMORY]
+
+  - order: 6
+    name: "MEMORY"
+    description: "Knowledge consolidated and stored for future retrieval and use"
+    object_types: [EPISODIC_MEMORY, SEMANTIC_MEMORY, PROCEDURAL_MEMORY, LESSON, ORGANIZATIONAL_LEARNING]
+    primary_base: "26-MEMORY"
+    function: "Store knowledge in episodic, semantic, procedural forms"
+    status_lifecycle: [STORED, INDEXED, RETRIEVABLE, ACTIVE]
+    outputs_to: [RETRIEVAL]
+
+  - order: 7
+    name: "RETRIEVAL"
+    description: "Mechanisms to find and access relevant knowledge and memory"
+    object_types: [SEARCH_INDEX, GRAPH_INDEX, VECTOR_INDEX, ENTITY_INDEX, CATALOG, METADATA]
+    primary_base: "05-REPOSITORIES"
+    function: "Index, catalog, organize; enable search/graph/vector/entity lookup"
+    status_lifecycle: [INDEXED, SEARCHABLE, QUERYABLE, OPTIMIZED]
+    outputs_to: [CONTEXT]
+
+  - order: 8
+    name: "CONTEXT"
+    description: "Relevant knowledge + current state + constraints assembled for task"
+    object_types: [CONTEXT, WORKING_MEMORY, TASK_CONTEXT, RETRIEVED_KNOWLEDGE, CURRENT_STATE]
+    primary_base: "12-CONTEXT"
+    function: "Retrieve relevant knowledge; combine with current state"
+    status_lifecycle: [ASSEMBLED, VALIDATED, READY_FOR_USE, EXPIRED]
+    outputs_to: [THINKING]
+
+  - order: 9
+    name: "THINKING"
+    description: "Inference, comparison, simulation, planning over assembled context"
+    object_types: [THINKING_PROCESS, INFERENCE, COMPARISON, SIMULATION, REASONING_CHAIN]
+    primary_base: "10-INTELLIGENCE"
+    function: "Apply attention; perform inference; compare options; simulate"
+    status_lifecycle: [ACTIVE, REASONING, CONVERGING, COMPLETE]
+    outputs_to: [THOUGHT]
+
+  - order: 10
+    name: "THOUGHT"
+    description: "Conclusion drawn from reasoning over context"
+    object_types: [THOUGHT, INSIGHT, UNDERSTANDING, INFERENCE, REASONED_POSITION]
+    primary_base: "10-INTELLIGENCE"
+    function: "Synthesize inference into definitive conclusion"
+    status_lifecycle: [FORMED, CONFIDENCE_ASSESSED, READY_FOR_ACTION]
+    outputs_to: [IDEA, DECISION]
+
+  - order: 11
+    name: "IDEA"
+    description: "Novel possibility or conception not yet committed to"
+    object_types: [IDEA, CONCEPT, PROPOSAL, ALTERNATIVE, POSSIBILITY]
+    primary_base: "27-DECISIONS"
+    function: "Conceive new possibility; imagine alternative"
+    status_lifecycle: [CONCEIVED, ARTICULATED, EVALUATED, ACCEPTED_or_REJECTED]
+    outputs_to: [VISION, HYPOTHESIS]
+
+  - order: 12
+    name: "VISION"
+    description: "Desired future state; what success looks like"
+    object_types: [VISION, VISION_STATE, SUCCESS_CRITERIA, TARGET_STATE, ASPIRATION]
+    primary_base: "03-ORGANIZATIONS"
+    function: "Define target; articulate desired outcome"
+    status_lifecycle: [ARTICULATED, VALIDATED, COMMITTED, PURSUED_or_ABANDONED]
+    outputs_to: [INTENTION]
+
+  - order: 13
+    name: "INTENTION"
+    description: "Binding commitment to pursue an idea, vision, or goal"
+    object_types: [INTENTION, COMMITMENT, DECISION_TO_ACT, OWNER, RESPONSIBLE_PARTY]
+    primary_base: "30-RELATIONSHIPS"
+    function: "Convert possibility into commitment; allocate responsibility"
+    status_lifecycle: [DOCUMENTED, COMMITTED, ACTIVE, ACHIEVED_or_ABANDONED]
+    outputs_to: [GOAL]
+
+  - order: 14
+    name: "GOAL"
+    description: "Specific, measurable target derived from intention"
+    object_types: [GOAL, OBJECTIVE, TARGET, MILESTONE, SUCCESS_METRIC]
+    primary_base: "24-METRICS"
+    function: "Define metrics; set targets; create accountability"
+    status_lifecycle: [DEFINED, APPROVED, ACTIVE, COMPLETE_or_ABANDONED]
+    outputs_to: [STRATEGY, HYPOTHESIS]
+
+  - order: 15
+    name: "STRATEGY"
+    description: "How to achieve the goal; strategic direction and tradeoffs"
+    object_types: [STRATEGY, STRATEGIC_APPROACH, INITIATIVE, TRADEOFF, KEY_DECISION]
+    primary_base: "08-BUSINESS"
+    function: "Define approach; choose strategic direction"
+    status_lifecycle: [PROPOSED, EVALUATED, APPROVED, ACTIVE_or_ABANDONED]
+    outputs_to: [PLAN]
+
+  - order: 16
+    name: "PLAN"
+    description: "Detailed breakdown of work required to achieve goal"
+    object_types: [PLAN, PROJECT, PHASE, TASK, DEPENDENCY, RESOURCE_ALLOCATION]
+    primary_base: "34-EXECUTION"
+    function: "Decompose strategy into work items; define tasks, timeline, dependencies"
+    status_lifecycle: [DRAFTED, REVIEWED, APPROVED, ACTIVE_or_PAUSED_or_CANCELLED]
+    outputs_to: [WORK]
+
+  - order: 17
+    name: "WORK"
+    description: "Specific tasks, projects, and work items ready for execution"
+    object_types: [WORK_ITEM, TASK, PROJECT, JOB, ASSIGNMENT, LOOP]
+    primary_base: "34-EXECUTION"
+    function: "Assign work; allocate resources; enable loop engineering"
+    status_lifecycle: [PLANNED, ASSIGNED, READY, IN_PROGRESS_or_BLOCKED_or_COMPLETE]
+    outputs_to: [EXECUTION]
+
+  - order: 18
+    name: "EXECUTION"
+    description: "Actual performance of work; agents/people taking action"
+    object_types: [EXECUTION, ACTION, OPERATION, AGENT_RUN, WORKFLOW_INSTANCE]
+    primary_base: "34-EXECUTION"
+    function: "Execute tasks; apply skills; use tools; create changes"
+    status_lifecycle: [STARTED, IN_PROGRESS, VERIFIED, COMPLETE_or_FAILED]
+    outputs_to: [RESULT]
+
+  - order: 19
+    name: "RESULT"
+    description: "Immediate, direct output of execution"
+    object_types: [RESULT, OUTPUT, ARTIFACT, DELIVERABLE, ANOMALY]
+    primary_base: "25-EVALUATION"
+    function: "Record what was produced; verify against expectations"
+    status_lifecycle: [PRODUCED, VERIFIED, QUALITY_ASSESSED, ACCEPTED_or_REJECTED]
+    outputs_to: [OUTCOME]
+
+  - order: 20
+    name: "OUTCOME"
+    description: "Evaluated impact of execution against goals and expectations"
+    object_types: [OUTCOME, IMPACT, SUCCESS_METRIC, FAILURE_ANALYSIS, VALUE_CREATED]
+    primary_base: "43-OUTCOMES"
+    function: "Measure impact; compare to goal; assess success"
+    status_lifecycle: [MEASURED, ASSESSED, SUCCESS_or_PARTIAL_SUCCESS_or_FAILURE, DOCUMENTED]
+    outputs_to: [LEARNING]
+
+  - order: 21
+    name: "LEARNING"
+    description: "Lessons extracted from outcome; updates to knowledge and memory"
+    object_types: [LESSON, PATTERN, INSIGHT, FAILURE_ANALYSIS, SUCCESS_FACTOR]
+    primary_base: "67-EVOLUTION-ALT"
+    function: "Extract lessons; identify patterns; update knowledge and memory"
+    status_lifecycle: [EXTRACTED, DOCUMENTED, VALIDATED, INTEGRATED]
+    outputs_to: [KNOWLEDGE, MEMORY, EVOLUTION]
+
+  - order: 22
+    name: "EVOLUTION"
+    description: "Changes to systems, capabilities, loops based on learning"
+    object_types: [CAPABILITY_IMPROVEMENT, NEW_CAPABILITY, PROCESS_OPTIMIZATION, LOOP_REFINEMENT, SYSTEM_UPDATE]
+    primary_base: "67-EVOLUTION-ALT"
+    function: "Implement improvements; create new capabilities; optimize loops"
+    status_lifecycle: [PLANNED, IMPLEMENTED, TESTED, DEPLOYED_or_ROLLED_BACK]
+    outputs_to: [WORLD]
+
+feedback_loops:
+  primary_cycle:
+    from: "EVOLUTION"
+    to: "WORLD (changed state)"
+    mechanism: "System updates manifest in reality"
+
+  learning_cycle:
+    from: "OUTCOME"
+    to: "KNOWLEDGE/MEMORY"
+    mechanism: "Lessons update organizational knowledge"
+
+  decision_cycle:
+    from: "OUTCOME"
+    to: "DECISION (next action)"
+    mechanism: "Evaluate and decide: continue/pivot/accelerate/stop"
+
+shortcuts:
+  - from: OUTCOME
+    to: DECISION
+    when: "Outcome clear, no research needed"
+  - from: THOUGHT
+    to: DECISION
+    when: "Thought actionable"
+  - from: IDEA
+    to: HYPOTHESIS
+    when: "Idea testable"

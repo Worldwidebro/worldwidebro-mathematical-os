@@ -1,0 +1,12 @@
+compliance_program:
+  jurisdiction: "Delaware / North Carolina"
+  industry_standards:
+    - OSHA 1926
+    - EPA Decarbonization Rules
+    - DOT Transport Safety
+    - 2 CFR 200 Uniform Guidance
+  insurance_policies:
+    general_liability: "$2,000,000 Occurrence / $4,000,000 Aggregate"
+    commercial_auto: "$1,000,000 Combined Single Limit"
+    workers_compensation: "Statutory Limits"
+    cyber_liability: "$1,000,000"

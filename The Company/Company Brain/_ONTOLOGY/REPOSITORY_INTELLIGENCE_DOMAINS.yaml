@@ -1,0 +1,139 @@
+# REPOSITORY_INTELLIGENCE_DOMAINS.yaml — 15 Analysis Domains, ~55 Tools, 20 Capabilities
+# Version 1.0 | Created 2026-09-01 | Phase 0 File
+
+---
+version: "1.0"
+description: "Repository Intelligence Stack: 15 domains, ~55 tools, 20 core capabilities"
+created: "2026-09-01"
+
+overview:
+  purpose: "Map code analysis tools to organizational capabilities"
+  scope: "Understand repositories, code, architecture, ownership"
+  evidence_base: "Datasette + sqlite-utils + github-to-sqlite + git-history"
+
+domains:
+
+  domain_01_discovery:
+    order: 1
+    name: "Repository Discovery"
+    description: "Find and catalog all repositories"
+    tools: ["Sourcegraph", "GitHub API", "Graphify", "RepoMix"]
+    capabilities: ["CAP-RI-001: Repository Catalog", "CAP-RI-002: Repository Metadata"]
+
+  domain_02_search:
+    order: 2
+    name: "Source Search"
+    description: "Search code, symbols, patterns"
+    tools: ["Sourcegraph", "Grep/ripgrep", "GitHub Code Search", "Universal Ctags"]
+    capabilities: ["CAP-RI-003: Symbol Search", "CAP-RI-004: Pattern Search"]
+
+  domain_03_parsing:
+    order: 3
+    name: "Parsing & AST"
+    description: "Extract syntax trees"
+    tools: ["Tree-sitter", "Babel", "ast", "ANTLR"]
+    capabilities: ["CAP-RI-005: AST Extraction", "CAP-RI-006: Code Structure Analysis"]
+
+  domain_04_indexing:
+    order: 4
+    name: "Symbol Indexing"
+    description: "Index all symbols"
+    tools: ["Universal Ctags", "Sourcetrail", "SCIP", "Understand Anything"]
+    capabilities: ["CAP-RI-007: Symbol Index", "CAP-RI-008: Symbol Cross-Reference"]
+
+  domain_05_semantics:
+    order: 5
+    name: "Semantic Understanding"
+    description: "Understand code meaning"
+    tools: ["LiteLLM", "Sourcegraph", "SocratiCode", "OpenAI Codex"]
+    capabilities: ["CAP-RI-009: Code Summarization", "CAP-RI-010: Intent Detection"]
+
+  domain_06_dependencies:
+    order: 6
+    name: "Dependency Analysis"
+    description: "Extract and analyze dependencies"
+    tools: ["dependency-cruiser", "Pipdeptree", "Maven", "Cargo tree", "go list"]
+    capabilities: ["CAP-RI-011: Dependency Graph", "CAP-RI-012: Dependency Health"]
+
+  domain_07_callgraph:
+    order: 7
+    name: "Call Graph Analysis"
+    description: "Trace function calls"
+    tools: ["Callgraph", "Madge", "Doxygen", "Understand Anything"]
+    capabilities: ["CAP-RI-013: Call Graph", "CAP-RI-014: Reachability Analysis"]
+
+  domain_08_dataflow:
+    order: 8
+    name: "Data-Flow Analysis"
+    description: "Track data through code"
+    tools: ["Joern", "Datalog", "Flowdroid"]
+    capabilities: ["CAP-RI-015: Data Flow Graph", "CAP-RI-016: Taint Analysis"]
+
+  domain_09_architecture:
+    order: 9
+    name: "Architecture Recovery"
+    description: "Extract logical architecture"
+    tools: ["Structurizr", "C4 Model", "Nx graph", "Cartography"]
+    capabilities: ["CAP-RI-017: Architecture Extraction", "CAP-RI-018: Architecture Violations"]
+
+  domain_10_graph:
+    order: 10
+    name: "Code Graph / Knowledge Graph"
+    description: "Build queryable code graph"
+    tools: ["Graphify", "Neo4j", "jQAssistant", "OmniGraph"]
+    capabilities: ["CAP-RI-019: Code Graph Creation", "CAP-RI-020: Graph Queries"]
+
+  domain_11_git:
+    order: 11
+    name: "Change / Git History"
+    description: "Analyze code changes"
+    tools: ["git-history", "GitHub API", "GitNexus", "CodeScene"]
+    capabilities: ["CAP-RI-021: Change History", "CAP-RI-022: Blame Analysis"]
+
+  domain_12_impact:
+    order: 12
+    name: "Impact / Blast Radius"
+    description: "Analyze change impact"
+    tools: ["GitNexus", "Dependency graphs", "CodeScene"]
+    capabilities: ["CAP-RI-023: Change Impact", "CAP-RI-024: Blast Radius"]
+
+  domain_13_quality:
+    order: 13
+    name: "Security & Quality"
+    description: "Vulnerabilities and code quality"
+    tools: ["CodeQL", "Semgrep", "SonarQube", "Trivy", "OWASP Dependency Check"]
+    capabilities: ["CAP-RI-025: Vulnerability Detection", "CAP-RI-026: Code Quality Metrics"]
+
+  domain_14_ai:
+    order: 14
+    name: "Context / AI Understanding"
+    description: "AI-powered code understanding"
+    tools: ["Claude API", "OpenAI Codex", "LiteLLM", "OmniRoute"]
+    capabilities: ["CAP-RI-027: Code Summarization (AI)", "CAP-RI-028: Documentation Generation"]
+
+  domain_15_organizational:
+    order: 15
+    name: "Organizational / Workspace Intelligence"
+    description: "Code ownership and team structure"
+    tools: ["GitHub Teams API", "Backstage", "ARIA", "CODEOWNERS"]
+    capabilities: ["CAP-RI-029: Code Ownership", "CAP-RI-030: Team Structure"]
+
+evidence_warehouse:
+  description: "Queryable database for repository intelligence"
+  stack:
+    - "Datasette (query interface)"
+    - "sqlite-utils (SQL utilities)"
+    - "github-to-sqlite (GitHub data)"
+    - "git-history (git commit data)"
+  update_frequency: "Daily"
+
+core_capabilities:
+  discovery: ["CAP-RI-001", "CAP-RI-002", "CAP-RI-029", "CAP-RI-030"]
+  analysis: ["CAP-RI-005", "CAP-RI-007", "CAP-RI-011", "CAP-RI-013", "CAP-RI-015"]
+  quality: ["CAP-RI-025", "CAP-RI-026", "CAP-RI-023"]
+  intelligence: ["CAP-RI-009", "CAP-RI-017", "CAP-RI-027"]
+
+# Status
+status: "COMPLETE"
+locked: true
+next_review: "2026-10-01"

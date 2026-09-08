@@ -1,0 +1,16 @@
+products:
+  -
+    name: "Commercial Tenant Fit-Out & Trade Contracting"
+    pricing: "$25,000 - $150,000 / job"
+    model: "Turnkey Subcontracting"
+    margin: "32.0%"
+  -
+    name: "ACE Field OS Software Platform"
+    pricing: "$499 / mo per crew"
+    model: "SaaS Subscription"
+    margin: "85.0%"
+  -
+    name: "Building Envelope & Energy Compliance Audits"
+    pricing: "$3,500 / site"
+    model: "Professional Services"
+    margin: "55.0%"

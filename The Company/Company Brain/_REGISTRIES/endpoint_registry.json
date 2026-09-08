@@ -1,0 +1,66 @@
+{
+  "registry_id": "REG-ENDPOINT-001",
+  "updated_at": "2026-09-05",
+  "endpoints": [
+    {
+      "name": "OmniRoute Gateway",
+      "url": "http://100.80.229.113:20128",
+      "network": "Tailscale",
+      "auth": "Bearer Token"
+    },
+    {
+      "name": "Exo MLX Inference",
+      "url": "http://100.87.214.70:52415/v1",
+      "network": "Tailscale / Local",
+      "auth": "OpenAI Compatible / None"
+    },
+    {
+      "name": "LiteLLM Router",
+      "url": "http://100.87.214.70:4000/v1",
+      "network": "Tailscale / Local",
+      "auth": "Bearer Token"
+    },
+    {
+      "name": "Neo4j Bolt",
+      "url": "bolt://100.87.214.70:7687",
+      "network": "Tailscale / Local",
+      "auth": "Basic Auth"
+    },
+    {
+      "name": "Neo4j HTTP",
+      "url": "http://100.87.214.70:7474",
+      "network": "Tailscale / Local",
+      "auth": "Basic Auth"
+    },
+    {
+      "name": "Qdrant REST",
+      "url": "http://100.87.214.70:6333",
+      "network": "Tailscale / Local",
+      "auth": "Optional API Key"
+    },
+    {
+      "name": "Grafana Dashboards",
+      "url": "http://100.87.214.70:3011",
+      "network": "Tailscale / Local",
+      "auth": "Admin User/Pass"
+    },
+    {
+      "name": "Open WebUI",
+      "url": "http://100.87.214.70:3010",
+      "network": "Tailscale / Local",
+      "auth": "Session Auth"
+    },
+    {
+      "name": "Langfuse Tracing",
+      "url": "http://100.87.214.70:3003",
+      "network": "Tailscale / Local",
+      "auth": "Project Public/Private Keys"
+    },
+    {
+      "name": "PostgreSQL",
+      "url": "postgresql://admin@100.87.214.70:5432/infrastructure",
+      "network": "Tailscale / Local",
+      "auth": "Postgres Auth"
+    }
+  ]
+}

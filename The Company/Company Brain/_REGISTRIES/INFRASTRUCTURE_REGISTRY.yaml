@@ -1,0 +1,318 @@
+---
+# IZA OS INFRASTRUCTURE REGISTRY
+# Master ontology for all infrastructure assets, services, models, and agents
+# Authority: Single source of truth for infrastructure control plane
+# Status: ACTIVE (2026-09-02)
+
+infrastructure:
+  registry_id: "INFRA-REGISTRY-001"
+  version: "1.0"
+  updated: "2026-09-02T10:22:00Z"
+  environment: "production"
+
+# ============================================================
+# CURRENT INFRASTRUCTURE STATE SNAPSHOT
+# ============================================================
+
+devices:
+  mac_studio:
+    id: "DEV-MAC-STUDIO-001"
+    name: "mac-studio"
+    status: "ACTIVE"
+    ip: "100.87.214.70"
+    device_type: "Apple Silicon Desktop"
+    processor: "M4 Max"
+    memory: "36GB Unified Memory"
+    storage_internal: "228GB (194GB used)"
+    storage_external: "/Volumes/LaCie - 4TB (primary database host)"
+    role: "Primary Inference Server + Database Host"
+    tailscale_status: "active; direct connection"
+    services:
+      - "ollama:11434"
+      - "neo4j:7687"
+      - "qdrant:6333"
+      - "postgres:5432"
+
+  macbook_air:
+    id: "DEV-MACBOOK-AIR-001"
+    name: "aces-macbook-air-1"
+    status: "ACTIVE"
+    ip: "100.121.17.63"
+    device_type: "Apple Silicon Laptop"
+    processor: "M-series"
+    memory: "16GB"
+    storage_internal: "228GB (194GB used)"
+    storage_external: "/Volumes/T7 Shield - 1.8TB (974GB free)"
+    role: "Secondary Inference Agent + Large Model Storage"
+    tailscale_status: "online"
+
+  omniroute:
+    id: "DEV-OMNIROUTE-001"
+    name: "omniroute-6da9315f"
+    status: "ACTIVE"
+    ip: "100.80.229.113"
+    port: "20128"
+    device_type: "Mac Studio Tailscale Node"
+    version: "3.8.50"
+    role: "Distributed AI Model Gateway, Traffic Controller, & MCP Hub"
+    purpose: "Routes LLM inference across local Ollama/MLX and cloud frontier providers with 110 MCP tools"
+    tailscale_status: "active; connected via Tailscale tunnel"
+
+# ============================================================
+# NETWORK TOPOLOGY
+# ============================================================
+
+network:
+  tailscale:
+    status: "ACTIVE"
+    version: "1.98.9"
+    mode: "Private mesh network"
+    devices_online:
+      - "mac-studio"
+      - "aces-macbook-air-1"
+      - "omniroute-6da9315f"
+    devices_offline:
+      - "divines-imac (last seen 173d ago)"
+      - "ipad-10th-gen-wificellular (last seen 48d ago)"
+
+# ============================================================
+# MODEL INVENTORY
+# ============================================================
+
+models:
+  qwen2_5_coder_14b:
+    id: "MDL-QWEN25-CODER-14B"
+    name: "qwen2.5-coder:14b"
+    size: "9.0GB"
+    location: "Mac Studio + MacBook Air ~/.ollama/models"
+    runtime: "ollama"
+    status: "RUNNING"
+    tier: "TIER-1 (Production)"
+    use_case: "Code generation and analysis"
+
+  nomic_embed:
+    id: "MDL-NOMIC-EMBED"
+    name: "nomic-embed-text:latest"
+    size: "274MB"
+    location: "Mac Studio + MacBook Air ~/.ollama/models"
+    runtime: "ollama"
+    status: "RUNNING"
+    tier: "TIER-1 (Production)"
+    use_case: "Text embeddings"
+
+  qwen2_5_32b:
+    id: "MDL-QWEN25-32B"
+    name: "qwen2.5:32b"
+    size: "19GB"
+    location: "NOT_YET_DEPLOYED"
+    target_location: "/Volumes/T7 Shield/.ollama/models"
+    runtime: "ollama"
+    status: "PENDING"
+    tier: "TIER-1 (Production)"
+    use_case: "General reasoning and analysis"
+
+  qwen2_5_72b:
+    id: "MDL-QWEN25-72B"
+    name: "qwen2.5:72b"
+    size: "43GB"
+    location: "NOT_YET_DEPLOYED"
+    target_location: "/Volumes/T7 Shield/.ollama/models"
+    runtime: "ollama"
+    status: "PENDING"
+    tier: "TIER-1 (Extended Capacity)"
+    use_case: "Complex reasoning, deep analysis"
+
+# ============================================================
+# RUNTIME TIERS
+# ============================================================
+
+runtimes:
+  tier_1_ollama:
+    id: "RUN-OLLAMA-001"
+    name: "Ollama"
+    status: "RUNNING"
+    version: "0.33.2"
+    endpoint: "http://100.87.214.70:11434"
+    capacity: "32B-72B models"
+    latency: "~50ms per token"
+    primary_device: "Mac Studio"
+    secondary_device: "MacBook Air"
+
+  tier_2_exo:
+    id: "RUN-EXO-001"
+    name: "Exo (Distributed Inference)"
+    status: "NOT_INSTALLED"
+    purpose: "Peer-to-peer inference across devices"
+    capacity: "70B-200B models"
+    latency: "~200ms per token"
+
+  tier_3_airllm:
+    id: "RUN-AIRLLM-001"
+    name: "AirLLM (Extreme Models)"
+    status: "NOT_INSTALLED"
+    purpose: "Batch processing for extremely large models"
+    storage: "/Volumes/T7 Shield/.airllm"
+    capacity: "300B+ models, MoE families"
+    latency: "~1-5s per token (batch workloads)"
+
+  gateway_litellm:
+    id: "RUN-LITELLM-001"
+    name: "LiteLLM (Model Gateway)"
+    status: "NOT_INSTALLED"
+    purpose: "Unified model routing and provider abstraction"
+    port: 8000
+
+# ============================================================
+# SECURITY & SECRETS PLANE
+# ============================================================
+
+security_and_secrets:
+  bitwarden:
+    id: "SEC-BITWARDEN-001"
+    name: "Bitwarden / bw CLI"
+    status: "INSTALLED"
+    version: "2026.4.1"
+    cli_path: "/opt/homebrew/bin/bw"
+    role: "Zero-Trust Canonical Secrets Vault & JIT Credential Injection"
+    purpose: "Provides ephemeral, encrypted secrets injection for OmniRoute, agents, databases, and venture operations"
+    vaultwarden_external_backup: "STAR-0951 (dani-garcia/vaultwarden, Rust, 65.5k stars on Mac Studio)"
+
+# ============================================================
+# DATABASES (PENDING DEPLOYMENT)
+# ============================================================
+
+databases:
+  neo4j:
+    id: "DB-NEO4J-001"
+    name: "Neo4j Graph Database"
+    status: "PENDING"
+    host: "mac-studio"
+    docker_image: "neo4j:latest"
+    port: "7687 (Bolt) | 7474 (HTTP)"
+    storage: "/Volumes/T7 Shield/neo4j"
+    purpose: "Infrastructure relationships and topology"
+
+  qdrant:
+    id: "DB-QDRANT-001"
+    name: "Qdrant Vector Database"
+    status: "PENDING"
+    host: "mac-studio"
+    docker_image: "qdrant/qdrant:latest"
+    port: 6333
+    storage: "/Volumes/T7 Shield/qdrant"
+    purpose: "Semantic memory and document retrieval"
+
+  postgres:
+    id: "DB-POSTGRES-001"
+    name: "PostgreSQL"
+    status: "PENDING"
+    host: "mac-studio"
+    docker_image: "postgres:16"
+    port: 5432
+    storage: "/Volumes/T7 Shield/postgres"
+    purpose: "Operational database (Supabase)"
+
+# ============================================================
+# STORAGE ARCHITECTURE
+# ============================================================
+
+storage:
+  mac_studio_internal:
+    device: "Mac Studio"
+    total_capacity: "228GB"
+    current_usage: "194GB"
+    free_space: "34GB"
+    allocation:
+      system: "System Files"
+      docker_daemon: "~/.docker"
+      working_files: "~/Documents/The Company"
+
+  mac_studio_external:
+    device: "LaCie 4TB Drive"
+    mount_point: "/Volumes/LaCie"
+    total_capacity: "4TB"
+    allocation:
+      neo4j: "/Volumes/LaCie/neo4j (graph database)"
+      qdrant: "/Volumes/LaCie/qdrant (vector store)"
+      postgres: "/Volumes/LaCie/postgres (operational db)"
+      backups: "/Volumes/LaCie/backups (database snapshots)"
+      model_cache: "/Volumes/LaCie/huggingface (model cache)"
+    status: "PRIMARY DATABASE STORAGE"
+
+  macbook_air_internal:
+    device: "MacBook Air"
+    total_capacity: "228GB"
+    current_usage: "194GB"
+    free_space: "34GB"
+    allocation:
+      system: "System Files"
+      ollama_cache: "~/.ollama/models (small models only)"
+      working_files: "~/Documents/The Company"
+
+  macbook_air_external:
+    device: "Samsung T7 Shield 1.8TB"
+    mount_point: "/Volumes/T7 Shield"
+    total_capacity: "1.8TB"
+    current_usage: "889GB"
+    free_space: "974GB"
+    allocation:
+      ollama_models: ".ollama/models (32B+ models for local inference)"
+      airllm_models: ".airllm (layer shards for batch processing)"
+      model_cache: ".huggingface (additional model storage)"
+    status: "SECONDARY MODEL STORAGE (MacBook Air)"
+
+# ============================================================
+# CRITICAL NEXT ACTIONS (PRIORITY ORDER)
+# ============================================================
+
+next_actions:
+  action_1:
+    priority: "CRITICAL"
+    task: "Deploy Docker services on Mac Studio"
+    file: "_INFRASTRUCTURE/docker-compose.yml"
+    estimated_time: "30 minutes"
+
+  action_2:
+    priority: "CRITICAL"
+    task: "Move qwen2.5:32b and qwen2.5:72b to T7 Shield (MacBook Air)"
+    commands:
+      - "export OLLAMA_MODELS='/Volumes/T7 Shield/.ollama/models'"
+      - "ollama pull qwen2.5:32b"
+      - "ollama pull qwen2.5:72b"
+    estimated_time: "2 hours"
+
+  action_3:
+    priority: "COMPLETED"
+    task: "Investigate omniroute-6da9315f purpose"
+    status: "VERIFIED_COMPLETED"
+    result: "OmniRoute v3.8.50 Tailscale node on Mac Studio (:20128). Wired to Antigravity via MCP & CLI."
+
+  action_4:
+    priority: "HIGH"
+    task: "Create docker-compose.yml for databases"
+    estimated_time: "45 minutes"
+
+# ============================================================
+# PHASE-BASED IMPLEMENTATION PLAN
+# ============================================================
+
+implementation_phases:
+  phase_1:
+    name: "Database Foundation"
+    timeline: "This Week"
+    goal: "Deploy Neo4j, Qdrant, PostgreSQL to Mac Studio"
+
+  phase_2:
+    name: "Model Runtime Setup"
+    timeline: "Next Week"
+    goal: "Deploy Ollama, Exo, AirLLM, LiteLLM"
+
+  phase_3:
+    name: "System Integration"
+    timeline: "Week 3"
+    goal: "Wire Claude Code → LiteLLM → Runtimes"
+
+  phase_4:
+    name: "Observability"
+    timeline: "Week 4"
+    goal: "Deploy Prometheus, Grafana, Langfuse"

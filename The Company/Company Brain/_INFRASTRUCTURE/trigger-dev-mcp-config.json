@@ -1,0 +1,25 @@
+{
+  "name": "trigger-dev-mcp",
+  "type": "mcp",
+  "command": "npx",
+  "args": ["-y", "@trigger.dev/mcp-server"],
+  "env": {
+    "TRIGGER_API_KEY": "${TRIGGER_API_KEY}",
+    "TRIGGER_API_URL": "https://api.trigger.dev"
+  },
+  "description": "Trigger.dev job orchestration for async workflows",
+  "capabilities": {
+    "resources": true,
+    "tools": true,
+    "prompts": false
+  },
+  "tools": [
+    "trigger_job",
+    "list_jobs",
+    "get_job_status",
+    "stream_job_logs",
+    "send_event"
+  ],
+  "sectors": ["all"],
+  "priority": 2
+}

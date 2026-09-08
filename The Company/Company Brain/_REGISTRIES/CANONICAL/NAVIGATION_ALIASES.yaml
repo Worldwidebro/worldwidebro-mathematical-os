@@ -1,0 +1,568 @@
+---
+id: NAVIGATION-ALIASES-001
+title: Company Brain Navigation & Aliases Registry
+scope: All wiki link alternatives for Company Brain documents
+authority: CP-027 (Infrastructure Control Plane)
+updated: 2026-09-06
+status: ACTIVE
+---
+
+# Navigation & Aliases Registry
+
+Master reference for all wiki link alternatives in Company Brain.
+
+---
+
+## ROOT LEVEL DOCUMENTS
+
+### STARTHERE.md
+**Primary:** [[STARTHERE]]
+**Aliases:**
+- [[START_HERE]]
+- [[START-HERE]]
+- [[starthere]]
+- [[start-here]]
+- [[Orientation]]
+- [[Master-Legend]]
+
+**Usage:** Master orientation legend. Read first.
+
+---
+
+### REALITY.md
+**Primary:** [[REALITY]]
+**Usage:** Live audited truth ledger. Executive reality check.
+
+---
+
+### EVIDENCE.md
+**Primary:** [[EVIDENCE]]
+**Usage:** Verified proof log. Evidence standards (Grade A–E).
+
+---
+
+### ANTIGRAVITY.md
+**Primary:** [[ANTIGRAVITY]]
+**Usage:** 45 core operating rules. Master contract.
+
+---
+
+### AGENTS.md
+**Primary:** [[AGENTS]]
+**Usage:** Universal agent operating guidelines.
+
+---
+
+### ARCHITECTURE.md
+**Primary:** [[ARCHITECTURE]]
+**Usage:** System architecture (9 fabrics, 22 stages).
+
+---
+
+### NORTH-STAR.md
+**Primary:** [[NORTH-STAR]]
+**Usage:** Long-term trajectory and mission.
+
+---
+
+### PRIORITIES.md
+**Primary:** [[PRIORITIES]]
+**Usage:** Immediate tactical priorities.
+
+---
+
+### ECONOMIC-REALITY.md
+**Primary:** [[ECONOMIC-REALITY]]
+**Usage:** Financial metrics, burn rate, margins.
+
+---
+
+### CLAIMS.md
+**Primary:** [[CLAIMS]]
+**Usage:** Unverified system claims requiring proof.
+
+---
+
+### ASSUMPTIONS.md
+**Primary:** [[ASSUMPTIONS]]
+**Usage:** Design assumptions awaiting validation.
+
+---
+
+### KILL-LIST.md
+**Primary:** [[KILL-LIST]]
+**Usage:** Formally killed or decommissioned entities.
+
+---
+
+### STOP-DOING.md
+**Primary:** [[STOP-DOING]]
+**Usage:** Prohibited behaviors and anti-patterns.
+
+---
+
+### SYSTEM-REALITY.md
+**Primary:** [[SYSTEM-REALITY]]
+**Usage:** Hardware, network, execution constraints.
+
+---
+
+### INDEX.md
+**Primary:** [[INDEX]]
+**Usage:** Complete navigational index of all files.
+
+---
+
+### INDEX-DOMAINS-COMPLETE.md
+**Primary:** [[INDEX-DOMAINS-COMPLETE]]
+**Usage:** All 50 domains with descriptions.
+
+---
+
+### SECTOR_INDEX.md
+**Primary:** [[SECTOR_INDEX]]
+**Aliases:**
+- [[Sector-Index]]
+- [[Sectors-Index]]
+- [[36-Sector-Index]]
+
+**Usage:** Business sector taxonomy index.
+
+---
+
+### NAVIGATION_GUIDE.md
+**Primary:** [[NAVIGATION_GUIDE]]
+**Usage:** How to navigate Company Brain.
+
+---
+
+### CLAUDE.md
+**Primary:** [[CLAUDE.md]]
+**Usage:** Live infrastructure status, Docker contexts, credentials locations.
+
+---
+
+### UPDATE.md
+**Primary:** [[UPDATE]]
+**Usage:** What changed in recent sessions.
+
+---
+
+## INFRASTRUCTURE FOLDERS
+
+### 00_RESPECT/RESPECT.md
+**Primary:** [[00_RESPECT/RESPECT|RESPECT]]
+**Aliases (in frontmatter):**
+- [[00_RESPECT]]
+- [[00_RESPECT/README]]
+- [[Respect OS]]
+- [[Respect Control Layer]]
+
+**Usage:** 20 core rules of respect and governance.
+
+---
+
+### _ONTOLOGY/README.md
+**Primary:** [[_ONTOLOGY/README|_ONTOLOGY]]
+**Aliases:**
+- [[_ONTOLOGY]]
+- [[Machine Ontology]]
+- [[Cognitive Schemas]]
+
+**Usage:** Machine-readable ontology schemas (YAML/XML).
+
+---
+
+### 07-ONTOLOGY/45-ONTOLOGIES-MASTER.md
+**Primary:** [[07-ONTOLOGY/45-ONTOLOGIES-MASTER|45-ONTOLOGIES-MASTER]]
+**Usage:** 45 foundational ontologies of Company Brain.
+
+---
+
+### 08-KNOWLEDGE-GRAPH/README.md
+**Primary:** [[08-KNOWLEDGE-GRAPH/README|Knowledge Graph]]
+**Aliases:**
+- [[08-KNOWLEDGE-GRAPH/README]]
+- [[Knowledge Graph Overview]]
+- [[Relationship Ontology Hub]]
+
+**Usage:** Neo4j graph architecture and Cypher patterns.
+
+---
+
+### 09-KNOWLEDGE/README.md
+**Primary:** [[09-KNOWLEDGE/09-KNOWLEDGE|09-KNOWLEDGE]]
+**Aliases:**
+- [[Knowledge Overview]]
+- [[Domain 09 Overview]]
+
+**Usage:** Grounded organizational knowledge.
+
+---
+
+### 06-ENTITY-RESOLUTION/README.md
+**Primary:** [[06-ENTITY-RESOLUTION|Entity Resolution]]
+**Usage:** Deduplication and identity management.
+
+---
+
+### _REGISTRIES/README.md
+**Primary:** [[_REGISTRIES|REGISTRIES]]
+**Aliases:**
+- [[Master Registries Portal]]
+- [[Canonical Registries Hub]]
+
+**Usage:** All canonical ground-truth registries.
+
+---
+
+### _REGISTRIES/CANONICAL/FILE_FORMAT_REGISTRY.yaml
+**Primary:** [[_REGISTRIES/CANONICAL/FILE_FORMAT_REGISTRY.yaml|FILE_FORMAT_REGISTRY]]
+**Usage:** Canonical file formats, conversion engines, privacy tiers.
+
+---
+
+### _MEMORY/MEMORY-OS.md
+**Primary:** [[_MEMORY/MEMORY-OS|MEMORY-OS]]
+**Usage:** Memory operating system (10-stage cognitive cycle).
+
+---
+
+### _MCP/FILE_CONVERSION_SERVICE.md
+**Primary:** [[_MCP/FILE_CONVERSION_SERVICE|FILE_CONVERSION_SERVICE]]
+**Usage:** File conversion MCP capability specification.
+
+---
+
+### _MCP/CONVERSION_DECISION_TREE.md
+**Primary:** [[_MCP/CONVERSION_DECISION_TREE|CONVERSION_DECISION_TREE]]
+**Usage:** Decision tree reference for format conversions.
+
+---
+
+## MAJOR DOMAINS
+
+### 00-CONSTITUTION/SECTOR-TAXONOMY-MASTER.md
+**Primary:** [[00-CONSTITUTION/SECTOR-TAXONOMY-MASTER|SECTOR-TAXONOMY-MASTER]]
+**Usage:** Master sector taxonomy (35 sectors, crosswalks).
+
+---
+
+### 23-VENTURES/
+**Primary:** [[23-VENTURES]]
+**Usage:** Venture master specifications (LT-005, LT-011, RE-001, etc.).
+
+---
+
+### 16-AGENTS/
+**Primary:** [[16-AGENTS]]
+**Usage:** Agent definitions and swarms.
+
+---
+
+### 17-MODELS/
+**Primary:** [[17-MODELS]]
+**Usage:** Model inventory and routing.
+
+---
+
+### 18-TOOLS/
+**Primary:** [[18-TOOLS]]
+**Usage:** Tool and capability catalog.
+
+---
+
+### 20-DECISIONS/
+**Primary:** [[20-DECISIONS]]
+**Usage:** Decision framework and rules.
+
+---
+
+### 12-CONTEXT/
+**Primary:** [[12-CONTEXT]]
+**Usage:** Context assembly and retrieval.
+
+---
+
+### 10-MEMORY/
+**Primary:** [[10-MEMORY]]
+**Usage:** Organizational memory systems.
+
+---
+
+## STRATEGIC DOCUMENTS
+
+### README.md
+**Primary:** [[README]]
+**Usage:** Company Brain overview (Phase 0 architecture).
+
+---
+
+### AI-BRAIN.md
+**Primary:** [[AI-BRAIN]]
+**Aliases:**
+- [[AI-BRAIN]]
+- [[AI Brain]]
+- [[Intelligence Core]]
+- [[Cognitive Engine]]
+
+**Usage:** AI infrastructure and intelligence layer.
+
+---
+
+### AI-PROJECTS.md
+**Primary:** [[AI-PROJECTS]]
+**Aliases:**
+- [[AI-PROJECTS]]
+- [[AI Projects]]
+- [[Autonomous Ventures]]
+- [[AI Portfolio]]
+
+**Usage:** AI project portfolio.
+
+---
+
+### DIRECTIVES.md
+**Primary:** [[DIRECTIVES]]
+**Aliases:**
+- [[DIRECTIVES]]
+- [[Directives Portal]]
+- [[System Directives]]
+- [[Modular Directives]]
+
+**Usage:** System-level directives and operating principles.
+
+---
+
+### EXECUTIVES.md
+**Primary:** [[EXECUTIVES]]
+**Aliases:**
+- [[EXECUTIVES]]
+- [[Executive Hub]]
+- [[Executive Governance Portal]]
+- [[C-Suite]]
+
+**Usage:** Executive governance and decision-making.
+
+---
+
+### oss-integration-candidates-2026-09-05.md
+**Primary:** [[oss-integration-candidates-2026-09-05|OSS Candidates]]
+**Usage:** Open-source tool integration candidates.
+
+---
+
+## HOW TO USE THIS REGISTRY
+
+### For Wiki Linking in Documents
+
+Use primary name with pipe notation:
+
+```markdown
+[[STARTHERE]]
+[[00_RESPECT/RESPECT|RESPECT]]
+[[FILE_FORMAT_REGISTRY]]
+[[23-VENTURES/LT-005|LT-005 (HealthRoute Medical Courier)]]
+```
+
+### For Cross-References
+
+Include in STARTHERE spine:
+
+```markdown
+[[STARTHERE]] | [[REALITY]] | [[EVIDENCE]] | [[AGENTS]] | [[ARCHITECTURE]]
+```
+
+### For Discovery
+
+If you know the topic but not the file:
+1. Check this registry
+2. Use the primary name or any alias
+3. All resolve to the same document
+
+---
+
+## PATTERN GUIDE
+
+### Domain Folders (0-50)
+
+- Primary: `[[NN-DOMAIN-NAME/README|DOMAIN_DISPLAY]]`
+- Pattern: `[[00-CONSTITUTION/README|CONSTITUTION]]`
+
+### Infrastructure Folders (_*)
+
+- Primary: `[[_FOLDER/README|FOLDER_DISPLAY]]`
+- Pattern: `[[_ONTOLOGY/README|_ONTOLOGY]]`
+
+### Root-Level .md Files
+
+- Primary: `[[FILENAME]]` (no extension)
+- Pattern: `[[STARTHERE]]`, `[[REALITY]]`, `[[EVIDENCE]]`
+
+### Nested Documents
+
+- Primary: `[[FOLDER/FILE|DISPLAY]]`
+- Pattern: `[[08-KNOWLEDGE-GRAPH/README|Knowledge Graph]]`
+
+---
+
+## PHASE 1 CAPABILITIES (KG-017, KG-028, KG-048)
+
+### KG-017: Hybrid Search
+**Primary:** [[_PIPELINES/retrieval/hybrid_query|Hybrid Search]]
+**Aliases:**
+- [[KG-017]]
+- [[Hybrid Search]]
+- [[Graph Vector Search]]
+
+**Usage:** Unified graph + vector search engine for agents
+
+---
+
+### KG-028: Agent Context Assembly
+**Primary:** [[12-CONTEXT/agent_context_builder|Agent Context]]
+**Aliases:**
+- [[KG-028]]
+- [[Context Assembly]]
+- [[Agent Context Builder]]
+
+**Usage:** Build task-specific subgraph contexts for agent execution
+
+---
+
+### KG-048: Graph API Endpoint
+**Primary:** [[60-APIS/graph_api|Graph API]]
+**Aliases:**
+- [[KG-048]]
+- [[Graph API Endpoint]]
+- [[FastAPI Graph]]
+
+**Usage:** Production FastAPI server exposing all graph queries
+
+---
+
+### Related Phase 1 Files
+**Primary:** [[PHASE_1_EXECUTION_PLAN|Phase 1 Execution Plan]]
+**MCP Tools:** [[_MCP/hybrid_query_tool|Hybrid Query Tool]], [[_MCP/context_assembly_tool|Context Assembly Tool]]
+**Assessment:** [[COMPANY_BRAIN_KG_ASSESSMENT|KG Assessment (30% complete)]]
+
+---
+
+---
+
+## _SYSTEMS DIRECTORY (2026-09-08)
+
+### INTEGRATED-SYSTEM-ARCHITECTURE.md
+**Primary:** [[INTEGRATED-SYSTEM-ARCHITECTURE]]
+**Aliases:**
+- [[6-LAYER-SYSTEM]]
+- [[SYSTEM-ARCHITECTURE]]
+- [[LAYER-1-INTELLIGENCE]]
+- [[TRADING-LAYER]]
+- [[PORTFOLIO-LAYER]]
+
+**Usage:** Complete 6-layer integration model (intelligence → ventures → capital → operations → trading → optimization)
+
+**Cross-references:**
+- Layer 1: [[KNOWLEDGE-GRAPH]], [[NEO4J]], [[QDRANT]]
+- Layer 2: [[VENTURES]], [[SUPABASE]]
+- Layer 3: [[CAPITAL-READINESS]], [[INCOME-PREDICTION]]
+- Layer 4: [[CLICKUP]], [[NOTION]], [[BUZZ]]
+- Layer 5: [[TRADING-INTEGRATION]], [[FIN-037]], [[FIN-023]]
+- Layer 6: [[PORTFOLIO-OPTIMIZATION]]
+
+---
+
+### TRADING-INTEGRATION-PLAN.md
+**Primary:** [[TRADING-INTEGRATION-PLAN]]
+**Aliases:**
+- [[TRADING-INTEGRATION]]
+- [[WEEK-1-OPENBB]]
+- [[WEEK-2-TRADINGAGENTS]]
+- [[WEEK-3-FIN-023]]
+- [[WEEK-4-FORECASTING]]
+- [[4-WEEK-ROADMAP]]
+
+**Usage:** Week-by-week implementation of trading layer (Sep 8-Oct 6, 2026)
+
+**Sector connections:**
+- [[SEC-013-CONSTRUCTION]] (Interest rate hedge)
+- [[SEC-020-REAL-ESTATE]] (Cap rate sensitivity)
+- [[SEC-031-FINANCE]] (Volatility trading)
+- [[SEC-006-LOGISTICS]] (Freight rate hedge)
+- All 35 sectors linked to macro signals
+
+---
+
+### INCOME-PREDICTION-MODEL.md
+**Primary:** [[INCOME-PREDICTION-MODEL]]
+**Aliases:**
+- [[INCOME-PREDICTION]]
+- [[REVENUE-FORECASTING]]
+- [[ML-FORECAST-MODEL]]
+- [[VENTURE-PROJECTIONS]]
+- [[FORECAST-ACCURACY]]
+- [[CONFIDENCE-INTERVALS]]
+
+**Usage:** ML forecasting of venture revenue (Year 1-3) with confidence intervals
+
+**Sector-specific patterns:**
+- [[SEC-013-GROWTH]] (Construction: ±15% CI → ±8%)
+- [[SEC-020-GROWTH]] (Real Estate: ±10% → ±5%)
+- [[SEC-031-GROWTH]] (Finance: volatility-driven)
+- [[SEC-006-GROWTH]] (Logistics: network effects)
+- [[SEC-004-GROWTH]] (SaaS: churn model, counter-cyclical)
+
+---
+
+### PORTFOLIO-OPTIMIZATION.md
+**Primary:** [[PORTFOLIO-OPTIMIZATION]]
+**Aliases:**
+- [[CAPITAL-ALLOCATION]]
+- [[PORTFOLIO-STRATEGY]]
+- [[ALLOCATION-MODEL-A]] (Growth)
+- [[ALLOCATION-MODEL-B]] (Stable)
+- [[ALLOCATION-MODEL-C]] (Defensive)
+- [[SECTOR-ALLOCATION]]
+- [[REBALANCING-STRATEGY]]
+
+**Usage:** Capital allocation strategy for $4.5M across 789 ventures in 35 sectors
+
+**Sector control planes:**
+- All 35 sectors linked: [[CP-001]] through [[CP-035]]
+- Correlation analysis: sector-pair co-movement
+- Stress test scenarios: recession, growth, stagflation
+
+---
+
+### README.md (_SYSTEMS/README.md)
+**Primary:** [[SYSTEMS-INDEX]]
+**Aliases:**
+- [[SYSTEMS-DIRECTORY]]
+- [[SYSTEMS-README]]
+- [[_SYSTEMS]]
+
+**Usage:** Navigation hub for _SYSTEMS/ directory
+
+---
+
+## REGISTRY MAINTENANCE
+
+**When to update:**
+
+1. New document added to Company Brain root
+2. New major domain created
+3. Alias changed in frontmatter
+4. Navigation path updated
+
+**Who can update:** CP-027 (Infrastructure Control Plane)
+
+**Process:**
+1. Update this file
+2. Run: `grep -r "^aliases:" . > /tmp/aliases-scan.txt`
+3. Verify STARTHERE.md links to this registry
+4. Commit with message: `docs: update navigation aliases (YYYY-MM-DD)`
+
+---
+
+**Status:** ✅ ACTIVE | **Authority:** CP-027 | **Last Updated:** 2026-09-08 (added _SYSTEMS directory)

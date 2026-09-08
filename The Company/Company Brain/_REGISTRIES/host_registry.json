@@ -1,0 +1,47 @@
+{
+  "registry_id": "REG-HOST-001",
+  "updated_at": "2026-09-05",
+  "hosts": {
+    "HOST-MAC-STUDIO-001": {
+      "hostname": "mac-studio",
+      "tailscale_name": "mac-studio.ts.net",
+      "tailscale_ip": "100.87.214.70",
+      "local_ip": "192.168.1.11",
+      "role": "PRIMARY_INFRASTRUCTURE_NODE",
+      "os": "macOS Sequoia 15.x",
+      "status": "LIVE_VERIFIED",
+      "docker_context": "macstudio (accessed over SSH/Tailscale)",
+      "critical_services": [
+        "civos_neo4j",
+        "civos_qdrant",
+        "exo",
+        "civos_litellm",
+        "omniroute"
+      ]
+    },
+    "HOST-MACBOOK-AIR-001": {
+      "hostname": "aces-macbook-air-1",
+      "tailscale_name": "aces-macbook-air-1.ts.net",
+      "tailscale_ip": "100.121.17.63",
+      "local_ip": "DHCP (Mobile)",
+      "role": "MOBILE_ENGINEERING_NODE",
+      "os": "macOS Sequoia 15.x",
+      "status": "LIVE_VERIFIED",
+      "docker_context": "none (remote context points to mac-studio)",
+      "critical_services": [
+        "Antigravity IDE",
+        "Git Local Working Copy",
+        "T7 Shield Storage"
+      ]
+    },
+    "HOST-OMNIROUTE-NODE": {
+      "hostname": "omniroute-6da9315f",
+      "tailscale_name": "omniroute-6da9315f.ts.net",
+      "tailscale_ip": "100.80.229.113",
+      "role": "INFERENCE_GATEWAY_NODE",
+      "port": 20128,
+      "status": "LIVE_VERIFIED",
+      "version": "3.8.50"
+    }
+  }
+}

@@ -1,0 +1,253 @@
+# Company Brain: Six-Layer Platform Architecture
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│                    COMPANY BRAIN PLATFORM                           │
+│                      (Integrated Operating System)                  │
+└─────────────────────────────────────────────────────────────────────┘
+
+                           AGENTS (Layer 0)
+                      ┌─────────────────────┐
+                      │  AGT-013: Classify  │
+                      │  AGT-014: Score     │
+                      │  AGT-015: Dispose   │
+                      │  AGT-017: Adopt     │
+                      │  AGT-018: Monitor   │
+                      │  AGT-019: Sync      │
+                      │  research-agent     │
+                      │  sales-agent        │
+                      └─────────────────────┘
+                              ▲
+                              │
+        ┌─────────────────────┼─────────────────────┐
+        ▼                     ▼                     ▼
+
+┌──────────────────┐  ┌──────────────────┐  ┌──────────────────┐
+│  KNOWLEDGE LAYER │  │  ACTION LAYERS   │  │  SYNC & SERVE    │
+├──────────────────┤  ├──────────────────┤  ├──────────────────┤
+│                  │  │                  │  │                  │
+│  Neo4j ─────────┼──┼─→ Entities      │  │  Buzz Relay      │
+│  ├─ Entities    │  │  ├─ Ventures   │  │  ├─ Rooms         │
+│  ├─ Relations   │  │  ├─ Customers  │  │  ├─ Events        │
+│  ├─ Evidence    │  │  ├─ Companies  │  │  ├─ Agents        │
+│  └─ 20K edges   │  │  └─ Deals      │  │  └─ Artifacts    │
+│                  │  │                  │  │                  │
+│  Qdrant ────────┼──┼─→ Semantics    │  │  GitHub           │
+│  ├─ Vectors    │  │                  │  │  ├─ Repos        │
+│  ├─ RAG        │  │  Intelligence ◄──┼──┼─→ Code          │
+│  └─ 17K vecs   │  │  ├─ Comp AI CRM │  │  ├─ Issues       │
+│                  │  │  │  ├─ Research│  │  └─ CI/CD        │
+│                  │  │  │  ├─ Evidence │  │                  │
+│                  │  │  │  └─ Enrich  │  │
+│                  │  │                  │
+└──────────────────┘  │  Business ◄────┼──┼─→
+                      │  ├─ Twenty CRM  │
+                      │  ├─ Companies  │
+                      │  ├─ Deals      │
+                      │  └─ Workflows  │
+                      │                  │
+                      │  Execution ◄───┼──┼─→
+                      │  ├─ ClickUp     │
+                      │  ├─ Tasks       │
+                      │  ├─ Projects    │
+                      │  └─ Dependencies│
+                      │                  │
+                      └──────────────────┘
+
+
+SYNCHRONIZATION FLOW:
+
+  Comp AI                  Neo4j                    Twenty
+  (Evidence)              (Graph)               (CRM Data)
+    │                       │                       │
+    ├─ research_person      │ webhook             │
+    ├─ enrich_company   ───→├─ update entity  ───→├─ company.industry += X
+    ├─ record_fact          │ webhook             │
+    └─ schedule_recheck     │                    │
+                            │                     │
+                            │                  Workflow
+                            │                     │
+                            │                  ClickUp
+                            │               (Execution)
+                            │                     │
+                            │              ┌──────┴──────┐
+                            │              ▼             ▼
+                            │         Task Created    Project Created
+                            │              │             │
+                            │              └──────┬──────┘
+                            │                     │
+                            │              Buzz Notification
+                            │                     │
+                            │              Agent Sees Work
+                            │                     │
+                            │              Executes (reads context)
+                            │                     │
+                            │              Result ↓
+                            │              ┌──────────────┐
+                            └──←───────────┤ Neo4j Updated│
+                            (closes loop)  └──────────────┘
+
+
+CONTROL PLANES:
+
+CP-013: Knowledge (Neo4j + Qdrant)
+├─ Entities, relationships, evidence
+├─ Semantic search + retrieval
+└─ Organizational ontology
+
+CP-031: Intelligence (Comp AI CRM)
+├─ Research agents
+├─ Evidence ledger
+└─ Entity enrichment
+
+CP-032: Business Operations (Twenty)
+├─ Companies, people, deals
+├─ Custom objects
+└─ Workflow automation
+
+CP-033: Execution (ClickUp)
+├─ Tasks, projects, goals
+├─ Accountability tracking
+└─ Work distribution
+
+CP-028: Collaboration (Buzz)
+├─ Human-agent rooms
+├─ Decision threads
+└─ Event relay
+
+CP-034: Engineering (GitHub)
+├─ Repositories
+├─ Code + CI/CD
+└─ Issues
+
+CP-006: Agents (Orchestration)
+├─ Routing + scheduling
+├─ Tool access control
+└─ Context assembly
+
+CP-007: Models (OmniRoute)
+├─ Model routing
+├─ Fallback strategies
+└─ Cost tracking
+
+
+REPOSITORY INTELLIGENCE → WORK GENERATION:
+
+904 Repos Analyzed
+      ↓
+Phase 4-6: Classify + Score + Dispose (via Buzz collaboration)
+      ↓
+Disposition Decided
+  ├─ TRIAL (sandbox test)
+  ├─ ADOPT (production)
+  ├─ FORK (internal version)
+  ├─ REFERENCE (learn patterns)
+  └─ MONITOR (watch for maturity)
+      ↓
+ClickUp Project Auto-Created
+  ├─ Sandbox test task
+  ├─ Benchmark task
+  ├─ Security review
+  ├─ Architecture assessment
+  └─ Final decision
+      ↓
+Team Assigned + Monitored
+      ↓
+Results Tracked in Neo4j
+      ↓
+Weekly Health Checks (AGT-018)
+
+
+EXAMPLE FLOW: Company Discovery
+
+Comp AI Agent runs nightly
+  │
+  ├─ Researches "Company X expanding into healthcare"
+  └─ Records evidence: timestamp, source, confidence level
+       │
+       ▼
+Neo4j Updated
+  │
+  ├─ Company X -[EXPANDED_INTO {evidence}]-> Healthcare
+  └─ Webhook fires
+       │
+       ▼
+Twenty Updated
+  │
+  ├─ Company.industries += "Healthcare"
+  ├─ Workflow triggered: "Healthcare entry = opportunity"
+  └─ Creates Deal: "Evaluate healthcare market fit for LT-005"
+       │
+       ▼
+ClickUp Project Auto-Created
+  │
+  ├─ Project: "Company X - Healthcare Opportunity"
+  ├─ Task 1: Market analysis (due Sep 13)
+  ├─ Task 2: Product fit evaluation (due Sep 15)
+  ├─ Task 3: Revenue projection (due Sep 17)
+  └─ Task 4: Decision & outreach (due Sep 20)
+       │
+       ▼
+Buzz Notification
+  │
+  ├─ #research-ventures: "Healthcare opportunity identified"
+  ├─ #company-x-deal: "New project created"
+  └─ @sales-team: "Action required by Sep 20"
+       │
+       ▼
+Agent/Human Executes
+  │
+  ├─ Reads ClickUp task
+  ├─ Reads Neo4j context (why this matters)
+  ├─ Reads Twenty deal details
+  ├─ Executes (research, analyze, decide)
+  └─ Updates ClickUp + Buzz
+       │
+       ▼
+Neo4j Updated (closes loop)
+  │
+  └─ LT-005 -[QUALIFIED_OPPORTUNITY]-> Company X
+
+
+DEPLOYMENT TIMELINE:
+
+Phase 1: Buzz Infrastructure (Sep 6-26)
+├─ Week 1: Deploy Buzz relay + channels
+├─ Week 2: Repository Intelligence Phase 4-6 + Buzz collaboration
+└─ Week 3: buzz-sync-agent + full 904-repo pipeline
+
+Phase 2: Intelligence Layer (Oct 1-31)
+├─ Week 1: Deploy Comp AI CRM
+├─ Week 2: Deploy Twenty + sync
+├─ Week 3: Full integration test
+└─ Week 4: Production operations
+
+Phase 3: Business Automation (Nov 1-30)
+├─ Workflow automation refinement
+├─ Dashboard development
+└─ Team training
+
+Phase 4: Full Platform (Dec 1-31)
+├─ All systems integrated
+├─ Adoption pipeline live
+├─ 904 repos in evaluation
+└─ Production launch
+
+
+KEY INSIGHT:
+
+This is not "CRM A", "CRM B", "Chat App".
+
+This is:
+  - A research system (Comp AI)
+  - A business record system (Twenty)
+  - A work accountability system (ClickUp)
+  - A collaboration fabric (Buzz)
+  - A knowledge graph (Neo4j + Qdrant)
+  - An engineering platform (GitHub)
+
+All synchronized. All feeding the same Neo4j.
+
+That creates a genuine agentic operating system.
+
+```

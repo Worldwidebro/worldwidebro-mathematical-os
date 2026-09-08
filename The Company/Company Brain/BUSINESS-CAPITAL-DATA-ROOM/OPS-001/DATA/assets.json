@@ -1,0 +1,19 @@
+{
+  "venture_id": "OPS-001",
+  "digital_assets": [
+    {
+      "type": "GitHub Repository",
+      "identifier": "Worldwidebro/ops-staff-001-staffing",
+      "verified_commit": "c4d32f1"
+    },
+    {
+      "type": "Production Web Surface",
+      "url": "https://ops-staff-001-staffing-worldwidebros-projects.vercel.app",
+      "status": "LIVE"
+    }
+  ],
+  "commercial_gateway": {
+    "provider": "Stripe",
+    "status": "WIRED_ACTIVE"
+  }
+}

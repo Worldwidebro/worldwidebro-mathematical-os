@@ -1,0 +1,138 @@
+# ==============================================================================
+# REVENUE_EVIDENCE_REGISTRY.yaml — Canonical Commitment Ladder & Evidence Standard
+# ==============================================================================
+# Authority: Sovereign Operator & Executive Finance (CP-006 / CP-008)
+# Standard: Reality-Grounded Revenue Recognition (REALITY.md & GAAP)
+# Status: ACTIVE_REGISTRY
+# Last Audit: 2026-09-07
+# ==============================================================================
+
+metadata:
+  version: "1.0.0"
+  registry_id: "REG-REV-001"
+  created_at: "2026-09-07"
+  governing_philosophy: "An LOI is evidence of demand; a signed contract is a commitment; an invoice is a receivable; only collected cash is revenue."
+
+commitment_ladder_definition:
+  levels:
+    - rank: 1
+      stage: "LEAD"
+      strength_score: "1/10"
+      accounting_classification: "SPECULATIVE_MARKET"
+      counts_as_revenue: false
+      bank_underwriteable: false
+      description: "Identified target company or individual matching Ideal Customer Profile (ICP)."
+
+    - rank: 2
+      stage: "PROSPECT"
+      strength_score: "2/10"
+      accounting_classification: "QUALIFIED_CONTACT"
+      counts_as_revenue: false
+      bank_underwriteable: false
+      description: "Direct outreach initiated; decision-maker verified and contact established."
+
+    - rank: 3
+      stage: "EXPRESSION_OF_INTEREST"
+      strength_score: "3/10"
+      accounting_classification: "PIPELINE_OPPORTUNITY"
+      counts_as_revenue: false
+      bank_underwriteable: false
+      description: "Inbound inquiry, demo attended, or verbal confirmation of problem-solution fit."
+
+    - rank: 4
+      stage: "PROPOSAL_SUBMITTED"
+      strength_score: "4/10"
+      accounting_classification: "FORMAL_TENDER"
+      counts_as_revenue: false
+      bank_underwriteable: false
+      description: "Custom commercial quote or RFP response delivered with formal scope of work."
+
+    - rank: 5
+      stage: "LETTER_OF_INTENT"
+      strength_score: "5/10"
+      accounting_classification: "WEIGHTED_COMMERCIAL_INTENT"
+      counts_as_revenue: false
+      bank_underwriteable: true
+      underwriting_weight: "50%-75% of face value depending on counterparty credit"
+      description: "Non-binding written letter specifying terms, anticipated volume, and intention to transact."
+
+    - rank: 6
+      stage: "PROPOSAL_ACCEPTED"
+      strength_score: "6/10"
+      accounting_classification: "VERBAL_AWARD"
+      counts_as_revenue: false
+      bank_underwriteable: true
+      underwriting_weight: "70%-80%"
+      description: "Written acceptance of proposal or award notification pending final legal contract."
+
+    - rank: 7
+      stage: "PURCHASE_ORDER"
+      strength_score: "7/10"
+      accounting_classification: "EXECUTED_AUTHORIZATION"
+      counts_as_revenue: false
+      bank_underwriteable: true
+      underwriting_weight: "85%-90% (Eligible for PO Financing)"
+      description: "Binding commercial purchase order with specific line items, delivery dates, and billing terms."
+
+    - rank: 8
+      stage: "EXECUTED_CONTRACT"
+      strength_score: "8/10"
+      accounting_classification: "LEGALLY_BINDING_BACKLOG"
+      counts_as_revenue: false
+      bank_underwriteable: true
+      underwriting_weight: "90%-95%"
+      description: "Bilateral signed Master Services Agreement (MSA), lease, or work order with legal enforceability."
+
+    - rank: 9
+      stage: "INVOICE_ISSUED"
+      strength_score: "9/10"
+      accounting_classification: "ACCOUNTS_RECEIVABLE"
+      counts_as_revenue: false
+      bank_underwriteable: true
+      underwriting_weight: "95%-97% (Eligible for A/R Factoring Advance within 24h)"
+      description: "Work completed, verified Proof of Delivery / AIA draw certified, and bill sent on Net-30/60 terms."
+
+    - rank: 10
+      stage: "PAYMENT_SETTLED"
+      strength_score: "10/10"
+      accounting_classification: "COLLECTED_REVENUE_CASH"
+      counts_as_revenue: true
+      bank_underwriteable: true
+      underwriting_weight: "100.0% (Verified Bank Deposit)"
+      description: "Cash collected, settled via Stripe / ACH / Wire into operating depository account."
+
+active_venture_evidence_summary:
+  CON-001:
+    verified_revenue_cash: "$0.00 (Pre-revenue / Validating per REALITY.md)"
+    active_invoicing_capability: "Stripe Active ($299 Consultation / $1,500 Mobilization Deposit)"
+    loi_pipeline_face_value: "$590,000"
+    loi_weighted_pipeline: "$425,000"
+    highest_evidence_rung: "Stage 5 (LOI Signed) & Stage 9 (Live Invoicing Surface)"
+
+  LT-011:
+    verified_revenue_cash: "$0.00 (Pre-revenue / Validating per REALITY.md)"
+    active_invoicing_capability: "Stripe Active ($49/mo Starter, $149/mo Pro, $250 Shipper Escrow)"
+    loi_pipeline_face_value: "$707,280"
+    loi_weighted_pipeline: "$475,824"
+    highest_evidence_rung: "Stage 5 (LOI Signed) & Stage 9 (Live Invoicing Surface)"
+
+  LT-005:
+    verified_revenue_cash: "$0.00 (Pre-revenue / Validating per REALITY.md)"
+    active_invoicing_capability: "Stripe Active ($45 Pickup, $85 STAT, $1,200/mo Clinic Retainer)"
+    loi_pipeline_face_value: "$237,600"
+    loi_weighted_pipeline: "$174,960"
+    highest_evidence_rung: "Stage 5 (LOI Signed) & Stage 9 (Live Invoicing Surface)"
+
+  OPS-001:
+    verified_revenue_cash: "$0.00 (Pre-revenue / Validating per REALITY.md)"
+    active_invoicing_capability: "Executed MSA & Rate Schedule Addendum (35-37% Gross Margin Standard)"
+    loi_pipeline_face_value: "$600,000"
+    loi_weighted_pipeline: "$456,000"
+    highest_evidence_rung: "Stage 5 (LOI Signed) & Stage 8 (Master Legal Contracts In Place)"
+
+  RE-001:
+    verified_revenue_cash: "$0.00 (Pre-revenue / Validating per REALITY.md)"
+    active_invoicing_capability: "Stripe Active ($250 Express Underwriting, $499/mo Deal Room)"
+    loi_pipeline_face_value: "$705,000"
+    loi_weighted_pipeline: "$467,250"
+    highest_evidence_rung: "Stage 5 (LOI Signed) & Stage 9 (Live Invoicing Surface)"

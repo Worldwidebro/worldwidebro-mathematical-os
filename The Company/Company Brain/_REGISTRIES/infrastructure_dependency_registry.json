@@ -1,0 +1,81 @@
+{
+  "registry_id": "REG-DEPENDENCY-001",
+  "updated_at": "2026-09-05",
+  "edges": [
+    {
+      "from": "HOST:mac-studio",
+      "relation": "RUNS",
+      "to": "SERVICE:exo"
+    },
+    {
+      "from": "HOST:mac-studio",
+      "relation": "RUNS",
+      "to": "SERVICE:civos_neo4j"
+    },
+    {
+      "from": "HOST:mac-studio",
+      "relation": "RUNS",
+      "to": "SERVICE:civos_qdrant"
+    },
+    {
+      "from": "HOST:mac-studio",
+      "relation": "RUNS",
+      "to": "SERVICE:civos_litellm"
+    },
+    {
+      "from": "HOST:mac-studio",
+      "relation": "RUNS",
+      "to": "SERVICE:omniroute"
+    },
+    {
+      "from": "HOST:mac-studio",
+      "relation": "HAS_STORAGE",
+      "to": "STORAGE:VOL-STUDIO-LACIE"
+    },
+    {
+      "from": "HOST:aces-macbook-air-1",
+      "relation": "HAS_STORAGE",
+      "to": "STORAGE:VOL-AIR-T7SHIELD"
+    },
+    {
+      "from": "SERVICE:civos_litellm",
+      "relation": "DEPENDS_ON",
+      "to": "SERVICE:exo"
+    },
+    {
+      "from": "SERVICE:civos_litellm",
+      "relation": "DEPENDS_ON",
+      "to": "SERVICE:redis"
+    },
+    {
+      "from": "SERVICE:omniroute",
+      "relation": "DEPENDS_ON",
+      "to": "SERVICE:civos_litellm"
+    },
+    {
+      "from": "SERVICE:civos_neo4j",
+      "relation": "PERSISTS_TO",
+      "to": "STORAGE:VOL-STUDIO-LACIE"
+    },
+    {
+      "from": "SERVICE:civos_qdrant",
+      "relation": "PERSISTS_TO",
+      "to": "STORAGE:VOL-STUDIO-LACIE"
+    },
+    {
+      "from": "SERVICE:fastmcp",
+      "relation": "CONNECTS_TO",
+      "to": "SERVICE:civos_neo4j"
+    },
+    {
+      "from": "APPLICATION:Vercel Sites",
+      "relation": "CONNECTS_TO",
+      "to": "SERVICE:fastmcp"
+    },
+    {
+      "from": "INFRASTRUCTURE:all",
+      "relation": "GOVERNED_BY",
+      "to": "POLICY:CP-027"
+    }
+  ]
+}

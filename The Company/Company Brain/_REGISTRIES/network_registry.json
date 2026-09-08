@@ -1,0 +1,45 @@
+{
+  "registry_id": "REG-NETWORK-001",
+  "updated_at": "2026-09-05",
+  "networks": {
+    "NET-TAILSCALE-MESH": {
+      "type": "Encrypted Overlay Mesh (WireGuard)",
+      "cidr": "100.64.0.0/10",
+      "status": "ACTIVE_ONLINE",
+      "dns": "MagicDNS (*.ts.net)",
+      "encryption": "ChaCha20-Poly1305 / WireGuard",
+      "acls": "Default Strict Mesh; node-to-node peer encrypted",
+      "connected_nodes": [
+        {
+          "name": "mac-studio",
+          "ip": "100.87.214.70"
+        },
+        {
+          "name": "aces-macbook-air-1",
+          "ip": "100.121.17.63"
+        },
+        {
+          "name": "omniroute-6da9315f",
+          "ip": "100.80.229.113"
+        }
+      ]
+    },
+    "NET-LOCAL-LAN": {
+      "type": "Physical WiFi/Ethernet LAN",
+      "subnet": "192.168.1.0/24",
+      "gateway": "192.168.1.1",
+      "mac_studio_static_ip": "192.168.1.11",
+      "security": "WPA3 / 802.11ax"
+    },
+    "NET-DOCKER-BRIDGE": {
+      "type": "Virtual Bridge Network",
+      "host": "mac-studio",
+      "bridges": [
+        "infrastructure",
+        "civos_default",
+        "bridge"
+      ],
+      "subnet": "172.18.0.0/16"
+    }
+  }
+}

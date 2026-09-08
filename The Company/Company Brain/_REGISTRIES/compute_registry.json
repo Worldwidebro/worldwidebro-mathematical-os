@@ -1,0 +1,74 @@
+{
+  "registry_id": "REG-COMPUTE-001",
+  "updated_at": "2026-09-05",
+  "compute_units": {
+    "CMP-STUDIO-M4MAX": {
+      "host_id": "HOST-MAC-STUDIO-001",
+      "processor": "Apple M4 Max",
+      "architecture": "arm64",
+      "cpu_cores": {
+        "total": 12,
+        "performance": 8,
+        "efficiency": 4
+      },
+      "gpu_cores": 32,
+      "neural_engine_cores": 16,
+      "memory_gb": 36,
+      "memory_type": "Unified Memory Architecture (UMA)",
+      "memory_bandwidth_gb_s": 410,
+      "hardware_acceleration": [
+        "Metal 3",
+        "Apple AMX",
+        "Apple Neural Engine"
+      ],
+      "primary_workloads": [
+        "LLM Inference (exo)",
+        "Neo4j Graph Engine",
+        "Qdrant Vector DB",
+        "PostgreSQL",
+        "OmniRoute Gateway"
+      ]
+    },
+    "CMP-AIR-MSERIES": {
+      "host_id": "HOST-MACBOOK-AIR-001",
+      "processor": "Apple M-Series",
+      "architecture": "arm64",
+      "cpu_cores": {
+        "total": 8,
+        "performance": 4,
+        "efficiency": 4
+      },
+      "gpu_cores": 8,
+      "neural_engine_cores": 16,
+      "memory_gb": 16,
+      "memory_type": "Unified Memory Architecture (UMA)",
+      "memory_bandwidth_gb_s": 100,
+      "hardware_acceleration": [
+        "Metal 3",
+        "Apple Neural Engine"
+      ],
+      "primary_workloads": [
+        "Mobile Engineering",
+        "Secondary Model Staging",
+        "Sandbox Testing"
+      ]
+    },
+    "CMP-VERCEL-EDGE": {
+      "host_id": "HOST-VERCEL-SERVERLESS",
+      "processor": "Virtual vCPU / Edge Worker",
+      "architecture": "x86_64 / arm64",
+      "runtimes": [
+        "Node.js 22.x",
+        "Node.js 24.x",
+        "Edge Runtime"
+      ],
+      "memory_limit_mb": 1024,
+      "max_duration_seconds": 15,
+      "primary_workloads": [
+        "Next.js Frontend SSR",
+        "API Edge Routes",
+        "Venture Interfaces"
+      ]
+    }
+  }
+}

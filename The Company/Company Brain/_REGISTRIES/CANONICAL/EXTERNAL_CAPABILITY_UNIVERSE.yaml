@@ -1,0 +1,258 @@
+# ==============================================================================
+# EXTERNAL CAPABILITY UNIVERSE (CANONICAL SUPPLY CHAIN)
+# ==============================================================================
+# Authority: System Architecture & Infrastructure Control Plane (CP-027)
+# Source: 904 Starred Repositories & Curated External Open Source Technologies
+# Semantic Web Grounding: Wikipedia URL & Wikidata QID on every canonical node
+# ==============================================================================
+
+metadata:
+  version: "1.1.0"
+  total_tracked_universe: 904
+  last_updated: "2026-09-05"
+  storage_target_lacie: "/Volumes/LaCie/mirrors/external_capability_universe"
+  storage_target_t7: "/Volumes/T7 Shield/working_capabilities"
+
+repositories:
+  EXT-OBS-001:
+    repo_id: "EXT-OBS-001"
+    github_url: "https://github.com/openobserve/openobserve"
+    owner: "openobserve"
+    name: "openobserve"
+    description: "Cloud-native observability platform built in Rust for logs, metrics, traces, RUM, and LLM observability. Single binary, 140x lower storage cost compared to Elasticsearch."
+    classification:
+      source: "starred"
+      status: "EVALUATED"
+      category: "OBSERVABILITY & TELEMETRY"
+      maturity: "PRODUCTION_READY"
+      production_readiness: "HIGH"
+    capabilities:
+      - "CAP-OBSERVABILITY"
+      - "CAP-LOGGING"
+      - "CAP-METRICS"
+      - "CAP-DISTRIBUTED-TRACING"
+      - "CAP-LLM-OBSERVABILITY"
+      - "CAP-ALERTING"
+      - "CAP-TELEMETRY-PIPELINES"
+    sub_capabilities:
+      - "OpenTelemetry receiver"
+      - "PromQL / SQL query engine"
+      - "OmniRoute & Agent OS trace ingestion"
+      - "Token usage & TTFT cost telemetry"
+    technologies:
+      languages: ["Rust", "TypeScript"]
+      frameworks: ["Actix-web", "Vue"]
+      databases: ["Object Storage (S3/Local/LaCie)", "DuckDB / Apache Arrow / DataFusion"]
+      infrastructure: ["Docker", "Kubernetes", "Single Binary"]
+    relationships:
+      complements_owned: ["OWN-PUB-0875", "OWN-PRIV-0008"]
+      duplicates_owned: []
+      replaces_owned: []
+      supports_ventures: ["V-OPS-ALL", "V-AI-AGENTS"]
+      fills_capability_gaps: ["GAP-LLM-OBSERVABILITY", "GAP-DISTRIBUTED-TRACING"]
+    decision:
+      verdict: "INTEGRATE"
+      confidence: 0.95
+      rationale: "Deploys as a lightweight single binary on Mac Studio. Captures all OmniRoute inference spans, agent execution cycles, and cost metrics with minimal overhead."
+    wiki:
+      obsidian: "[[14-MCP/OpenObserve]]"
+      wikipedia: "https://en.wikipedia.org/wiki/Observability_(software)"
+      wikidata:
+        qid: "Q7075199"
+        uri: "https://www.wikidata.org/entity/Q7075199"
+    health:
+      stars: 21606
+      forks: 940
+      license: "AGPL-3.0"
+
+  EXT-INF-002:
+    repo_id: "EXT-INF-002"
+    github_url: "https://github.com/lyogavin/airllm"
+    owner: "lyogavin"
+    name: "airllm"
+    description: "Layer-by-layer memory-efficient inference pipeline capable of running 70B+ and 405B models on consumer hardware and low-VRAM GPUs by dynamically streaming model shards."
+    classification:
+      source: "starred"
+      status: "EVALUATED"
+      category: "LOCAL INFERENCE COMPUTE"
+      maturity: "STABLE"
+      production_readiness: "HIGH"
+    capabilities:
+      - "CAP-LOCAL-LLM-INFERENCE"
+      - "CAP-MEMORY-EFFICIENT-INFERENCE"
+      - "CAP-LARGE-MODEL-INFERENCE"
+      - "CAP-MODEL-OFFLOADING"
+      - "CAP-LOW-MEMORY-INFERENCE"
+    sub_capabilities:
+      - "Layer-wise disk streaming"
+      - "Batch offline document embedding & synthesis"
+      - "70B parameter local reasoning"
+    technologies:
+      languages: ["Python"]
+      frameworks: ["PyTorch", "HuggingFace Transformers", "Accelerate"]
+      databases: []
+      infrastructure: ["Mac Studio M4 Max", "LaCie / T7 SSD Storage"]
+    relationships:
+      complements_owned: ["DEV-MAC-STUDIO-001"]
+      duplicates_owned: []
+      replaces_owned: []
+      supports_ventures: ["V-DEEP-RESEARCH", "V-REPO-INTELLIGENCE"]
+      fills_capability_gaps: ["GAP-LOCAL-70B-INFERENCE"]
+    decision:
+      verdict: "INTEGRATE"
+      confidence: 0.90
+      rationale: "Enables Mac Studio and MacBook Air to run batch reasoning and repository code reality audits using 70B models offloaded to the T7 Shield/LaCie without running out of unified RAM."
+    wiki:
+      obsidian: "[[16-MODELS/AirLLM]]"
+      wikipedia: "https://en.wikipedia.org/wiki/Out-of-core_algorithm"
+      wikidata:
+        qid: "Q7112702"
+        uri: "https://www.wikidata.org/entity/Q7112702"
+    health:
+      stars: 33466
+      forks: 2310
+      license: "Apache-2.0"
+
+  EXT-KNOW-003:
+    repo_id: "EXT-KNOW-003"
+    github_url: "https://github.com/deeplethe/utopia"
+    owner: "deeplethe"
+    name: "utopia"
+    description: "Open-source enterprise world model featuring bitemporal knowledge graphs, ontology-driven reasoning, agent execution gates, and offline deployment."
+    classification:
+      source: "starred"
+      status: "REFERENCED"
+      category: "ENTERPRISE KNOWLEDGE & GOVERNANCE"
+      maturity: "EARLY_STAGE"
+      production_readiness: "PROTOTYPE"
+    capabilities:
+      - "CAP-ENTERPRISE-KNOWLEDGE-MODELING"
+      - "CAP-KNOWLEDGE-GRAPH"
+      - "CAP-TEMPORAL-KNOWLEDGE"
+      - "CAP-BITEMPORAL-DATA"
+      - "CAP-ONTOLOGY"
+      - "CAP-AGENT-EXECUTION-GATES"
+      - "CAP-DECISION-ENGINE"
+    sub_capabilities:
+      - "Ontology-to-SQL mapping"
+      - "Temporal graph versioning"
+      - "Agent safety and financial execution gates"
+    technologies:
+      languages: ["Python", "TypeScript"]
+      frameworks: ["FastAPI", "Neo4j", "Pydantic"]
+      databases: ["Neo4j", "PostgreSQL"]
+      infrastructure: ["Local First / Air-gapped"]
+    relationships:
+      complements_owned: ["DB-NEO4J-001", "DB-QDRANT-001"]
+      duplicates_owned: []
+      replaces_owned: []
+      supports_ventures: ["COMPANY-BRAIN-CORE", "VENTURE-OS"]
+      fills_capability_gaps: ["GAP-TEMPORAL-KNOWLEDGE", "GAP-AGENT-EXECUTION-GATES"]
+    decision:
+      verdict: "EXTRACT"
+      confidence: 0.85
+      rationale: "Study v0.1 ontology and temporal graph schema to enhance Company Brain's Neo4j schema; extract the agent execution gate design pattern for financial threshold checks."
+    wiki:
+      obsidian: "[[09-KNOWLEDGE/Utopia-World-Model|09-KNOWLEDGE/Utopia-World-Model]]"
+      wikipedia: "https://en.wikipedia.org/wiki/Bitemporal_modeling"
+      wikidata:
+        qid: "Q4918872"
+        uri: "https://www.wikidata.org/entity/Q4918872"
+    health:
+      stars: 1240
+      forks: 85
+      license: "Apache-2.0"
+
+  EXT-EDGE-004:
+    repo_id: "EXT-EDGE-004"
+    github_url: "https://github.com/cactus-compute/needle"
+    owner: "cactus-compute"
+    name: "needle"
+    description: "Ultra-compact 26M parameter (14MB) foundation model optimized strictly for on-device function calling, tool selection, and intent classification on mobile, wearables, and IoT."
+    classification:
+      source: "starred"
+      status: "EVALUATED"
+      category: "EDGE & ON-DEVICE INFERENCE"
+      maturity: "STABLE"
+      production_readiness: "HIGH"
+    capabilities:
+      - "CAP-EDGE-INFERENCE"
+      - "CAP-TINY-LLM"
+      - "CAP-FUNCTION-CALLING"
+      - "CAP-ON-DEVICE-AI"
+      - "CAP-MOBILE-INFERENCE"
+    sub_capabilities:
+      - "Sub-10ms tool call routing"
+      - "Offline mobile agent command parser"
+      - "Direct deployment to Apple CoreML / iOS runtime"
+    technologies:
+      languages: ["Python", "C++", "Swift"]
+      frameworks: ["ONNX", "CoreML", "GGUF"]
+      databases: []
+      infrastructure: ["iPhone", "iPad", "Edge Hardware"]
+    relationships:
+      complements_owned: ["DEV-IPHONE", "DEV-IPAD"]
+      duplicates_owned: []
+      replaces_owned: []
+      supports_ventures: ["V-MOBILE-COMMAND", "V-FIELD-OPERATIONS"]
+      fills_capability_gaps: ["GAP-EDGE-FUNCTION-CALLING"]
+    decision:
+      verdict: "ADOPT"
+      confidence: 0.92
+      rationale: "Deploys directly on iPhone/iPad to classify voice/text commands instantly offline into structured OmniRoute JSON payloads before routing across Tailscale to Mac Studio."
+    wiki:
+      obsidian: "[[16-MODELS/Needle-Edge]]"
+      wikipedia: "https://en.wikipedia.org/wiki/Edge_computing"
+      wikidata:
+        qid: "Q1357608"
+        uri: "https://www.wikidata.org/entity/Q1357608"
+    health:
+      stars: 9992
+      forks: 412
+      license: "Apache-2.0"
+
+  EXT-SEC-005:
+    repo_id: "EXT-SEC-005"
+    github_url: "https://github.com/dani-garcia/vaultwarden"
+    owner: "dani-garcia"
+    name: "vaultwarden"
+    description: "Unofficial Bitwarden-compatible server written in Rust. Formerly bitwarden_rs. Provides complete local-first, zero-trust password and secrets storage for air-gapped or self-hosted topologies."
+    classification:
+      source: "starred"
+      status: "ADOPTED"
+      category: "SECURITY & SECRETS"
+      maturity: "PRODUCTION_READY"
+      production_readiness: "HIGH"
+    capabilities:
+      - "CAP-SECRETS-MANAGEMENT"
+      - "CAP-ZERO-TRUST-SECURITY"
+      - "CAP-IDENTITY-ACCESS-MANAGEMENT"
+    sub_capabilities:
+      - "Bitwarden API v2 compatibility"
+      - "Lightweight SQLite / PostgreSQL backend"
+      - "Encrypted JIT credential injection"
+    technologies:
+      languages: ["Rust"]
+      frameworks: ["Rocket"]
+      databases: ["SQLite", "PostgreSQL"]
+      infrastructure: ["Docker", "Mac Studio"]
+    relationships:
+      complements_owned: ["SEC-BITWARDEN-001"]
+      duplicates_owned: []
+      replaces_owned: []
+      supports_ventures: ["ALL-VENTURES"]
+      fills_capability_gaps: ["GAP-SELF-HOSTED-SECRETS"]
+    decision:
+      verdict: "ADOPT"
+      confidence: 0.98
+      rationale: "Allows Mac Studio to host an independent, offline Bitwarden server over Tailscale, avoiding dependency on third-party cloud infrastructure."
+    wiki:
+      obsidian: "[[15-TOOLS/Vaultwarden]]"
+      wikipedia: "https://en.wikipedia.org/wiki/Bitwarden"
+      wikidata:
+        qid: "Q118228227"
+        uri: "https://www.wikidata.org/entity/Q118228227"
+    health:
+      stars: 65506
+      forks: 4120
+      license: "AGPL-3.0"

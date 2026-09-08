@@ -1,0 +1,80 @@
+name: Daily Venture Environment Sync
+
+# Run daily at 8am UTC (3am EST)
+on:
+  schedule:
+    - cron: '0 8 * * *'
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  sync-venture-env:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Create sync script
+        run: |
+          mkdir -p scripts
+          cat > scripts/venture-env-sync.js << 'SCRIPT'
+          #!/usr/bin/env node
+
+          const fs = require('fs');
+          const path = require('path');
+
+          console.log('🔄 Venture Environment Sync Starting...');
+
+          // Update timestamp in VENTURES-REMOTE-ENV.md
+          const remoteEnvPath = path.join(process.cwd(), 'VENTURES-REMOTE-ENV.md');
+          if (fs.existsSync(remoteEnvPath)) {
+            let content = fs.readFileSync(remoteEnvPath, 'utf8');
+            const now = new Date();
+            const dateStr = now.toISOString().split('T')[0];
+            const timeStr = now.toISOString().split('T')[1].substring(0, 5);
+            const nextDay = new Date(now.getTime() + 86400000).toISOString().split('T')[0];
+
+            content = content.replace(
+              /\*\*Last Updated:\*\* .+?\n/,
+              `**Last Updated:** ${dateStr} @ ${timeStr} UTC\n`
+            );
+            content = content.replace(
+              /\*\*Next Update:\*\* .+?\n/,
+              `**Next Update:** ${nextDay} @ 08:00 UTC\n`
+            );
+
+            fs.writeFileSync(remoteEnvPath, content, 'utf8');
+            console.log(`✅ Updated VENTURES-REMOTE-ENV.md at ${dateStr} ${timeStr} UTC`);
+          } else {
+            console.log('⚠️  VENTURES-REMOTE-ENV.md not found');
+          }
+
+          console.log('✅ Sync complete!');
+          SCRIPT
+          chmod +x scripts/venture-env-sync.js
+
+      - name: Run venture sync
+        run: node scripts/venture-env-sync.js
+
+      - name: Configure git
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+      - name: Commit changes
+        run: |
+          if git diff --quiet; then
+            echo "No changes to commit"
+          else
+            git add VENTURES-REMOTE-ENV.md STAFFING-AGENCY-STATUS.md
+            git commit -m "chore: auto-update venture environment status [skip ci]" || true
+            git push
+          fi

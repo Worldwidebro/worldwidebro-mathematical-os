@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "1.0.0",
+  "audiences": [
+    {
+      "id": "AUD-001",
+      "name": "AI-Native & Scaling Software Engineering Teams",
+      "category": "B2B_ENTERPRISE",
+      "total_addressable_size": 12500,
+      "serviceable_size": 2800,
+      "segments": [
+        {
+          "segment_id": "SEG-001",
+          "name": "Fast-Scaling AI Agent Startups (Series A/B)",
+          "company_size_eng": "15-50",
+          "monthly_token_spend_usd": ">8000",
+          "tech_stack": [
+            "TypeScript",
+            "Python",
+            "Claude Code",
+            "Cursor",
+            "LangGraph"
+          ],
+          "persona_ids": [
+            "PER-001",
+            "PER-002"
+          ]
+        },
+        {
+          "segment_id": "SEG-002",
+          "name": "Regulated FinTech / HealthTech Engineering Orgs",
+          "company_size_eng": "20-80",
+          "regulatory_constraints": [
+            "SOC2",
+            "HIPAA",
+            "PCI-DSS"
+          ],
+          "persona_ids": [
+            "PER-003"
+          ]
+        }
+      ],
+      "personas": [
+        {
+          "persona_id": "PER-001",
+          "title": "VP of Engineering / Head of Platform",
+          "focus": "Compute budget predictability, agent reliability, zero hallucination",
+          "current_belief": "Our cloud LLM bill is unavoidable if we want cutting-edge agentic workflows.",
+          "desired_belief": "Local-first cascading and token compression can slash 60% of API bills with zero quality loss."
+        },
+        {
+          "persona_id": "PER-002",
+          "title": "CTO / Technical Founder",
+          "focus": "Gross margins, enterprise valuation, intellectual property protection",
+          "current_belief": "Open-weights local models are too dumb or too hard to run reliably on Mac/internal nodes.",
+          "desired_belief": "M-series Apple Silicon and modern reasoning models deliver private, instant code intelligence at near-zero marginal cost."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "total_count": 2,
+  "total_stated_value": 600000,
+  "total_weighted_value": 456000,
+  "items": [
+    {
+      "id": "LOI-OPS-001",
+      "counterparty": "Carolina Freight & Distribution Center Apex",
+      "signatory": "Jason Miller, Operations Director",
+      "date": "2026-08-12",
+      "expires": "2027-02-12",
+      "term": "6 Months",
+      "value": "$480,000",
+      "weighted": "$360,000",
+      "prob": "75%",
+      "type": "Enterprise Employer",
+      "scope": "Contingent staffing placement for 20 warehouse logistics associates and dispatch assistants ($36/hr bill rate, 36% margin)."
+    },
+    {
+      "id": "LOI-OPS-002",
+      "counterparty": "Regional Trade Works Vocational Academy",
+      "signatory": "Brenda Scott, Career Placement Director",
+      "date": "2026-08-30",
+      "expires": "2027-08-30",
+      "term": "12 Months",
+      "value": "$120,000",
+      "weighted": "$96,000",
+      "prob": "80%",
+      "type": "Talent Feeder Partner",
+      "scope": "Workforce talent feeder agreement supplying CareerOps with 60 pre-screened trade candidates for construction/electrical placement."
+    }
+  ]
+}

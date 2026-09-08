@@ -1,0 +1,46 @@
+{
+  "registry_id": "REG-DEPLOY-001",
+  "updated_at": "2026-09-05",
+  "summary": {
+    "total_sites": 95,
+    "hosting_platform": "Vercel",
+    "primary_node_version": "24.x"
+  },
+  "sample_deployments": [
+    {
+      "id": "DEP-001",
+      "name": "ops-staff-001-staffing",
+      "url": "https://ops-staff-001-staffing-worldwidebros-projects.vercel.app",
+      "venture": "OPS-001",
+      "status": "LIVE"
+    },
+    {
+      "id": "DEP-002",
+      "name": "lt-005-medical-courier-dispatch",
+      "url": "https://lt-005-medical-courier-dispatch.vercel.app",
+      "venture": "LT-005",
+      "status": "LIVE"
+    },
+    {
+      "id": "DEP-003",
+      "name": "re-001-worldwidebro-holdings",
+      "url": "https://re-001-worldwidebro-holdings.vercel.app",
+      "venture": "RE-001",
+      "status": "LIVE"
+    },
+    {
+      "id": "DEP-004",
+      "name": "constructionos-dashboard",
+      "url": "https://constructionos-dashboard.vercel.app",
+      "venture": "CON-001",
+      "status": "LIVE"
+    },
+    {
+      "id": "DEP-005",
+      "name": "callcenter",
+      "url": "https://callcenter-eosin.vercel.app",
+      "venture": "CC-001",
+      "status": "LIVE"
+    }
+  ]
+}

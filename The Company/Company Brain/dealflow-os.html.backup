@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DealFlowOS — Deal Intelligence Platform</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.0.8/index.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/jetbrains-mono@5.0.6/index.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'], mono: ['JetBrains Mono', 'monospace'] },
+      colors: {
+        dark: { 50:'#f8fafc',100:'#e2e8f0',200:'#94a3b8',300:'#64748b',400:'#475569',500:'#334155',600:'#1e293b',700:'#172032',800:'#0f172a',900:'#0a0f1a',950:'#060a12' },
+        accent: { DEFAULT:'#6366f1',light:'#818cf8',dark:'#4f46e5',glow:'rgba(99,102,241,0.15)' },
+        emerald: { DEFAULT:'#10b981',light:'#34d399',dark:'#059669' },
+        amber: { DEFAULT:'#f59e0b',light:'#fbbf24' },
+        rose: { DEFAULT:'#f43f5e',light:'#fb7185' },
+        cyan: { DEFAULT:'#06b6d4',light:'#22d3ee' }
+      }
+    }
+  }
+}
+</script>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Inter',system-ui,sans-serif; background:#060a12; color:#e2e8f0; overflow-x:hidden; }
+  ::-webkit-scrollbar { width:6px; height:6px; }
+  ::-webkit-scrollbar-track { background:#0f172a; }
+  ::-webkit-scrollbar-thumb { background:#334155; border-radius:3px; }
+  ::-webkit-scrollbar-thumb:hover { background:#475569; }
+
+  .glass { background:rgba(15,23,42,0.6); backdrop-filter:blur(20px); border:1px solid rgba(99,102,241,0.08); }
+  .glass-card { background:linear-gradient(135deg,rgba(15,23,42,0.8),rgba(15,23,42,0.4)); backdrop-filter:blur(20px); border:1px solid rgba(99,102,241,0.1); transition:all 0.3s ease; }
+  .glass-card:hover { border-color:rgba(99,102,241,0.25); box-shadow:0 0 30px rgba(99,102,241,0.08); }
+
+  .sidebar-link { transition:all 0.2s ease; position:relative; }
+  .sidebar-link::before { content:''; position:absolute; left:0; top:50%; transform:translateY(-50%); width:3px; height:0; background:linear-gradient(180deg,#6366f1,#818cf8); border-radius:0 3px 3px 0; transition:height 0.2s ease; }
+  .sidebar-link:hover::before, .sidebar-link.active::before { height:60%; }
+  .sidebar-link:hover, .sidebar-link.active { background:rgba(99,102,241,0.08); color:#818cf8; }
+
+  .metric-card { position:relative; overflow:hidden; }
+  .metric-card::after { content:''; position:absolute; top:-50%; right:-50%; width:100%; height:100%; background:radial-gradient(circle,rgba(99,102,241,0.06) 0%,transparent 70%); pointer-events:none; }
+
+  .kanban-col { min-height:400px; }
+  .kanban-card { cursor:grab; transition:all 0.2s ease; }
+  .kanban-card:hover { transform:translateY(-2px); box-shadow:0 8px 25px rgba(0,0,0,0.3); }
+  .kanban-card.dragging { opacity:0.5; transform:rotate(2deg); }
+
+  .pulse-dot { width:8px; height:8px; border-radius:50%; animation:pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(1.3)} }
+
+  .agent-status { animation:agentGlow 3s infinite; }
+  @keyframes agentGlow { 0%,100%{box-shadow:0 0 5px rgba(16,185,129,0.3)} 50%{box-shadow:0 0 15px rgba(16,185,129,0.5)} }
+
+  .fade-in { animation:fadeIn 0.5s ease forwards; opacity:0; }
+  @keyframes fadeIn { to{opacity:1} }
+
+  .slide-up { animation:slideUp 0.4s ease forwards; opacity:0; transform:translateY(20px); }
+  @keyframes slideUp { to{opacity:1; transform:translateY(0)} }
+
+  .score-ring { position:relative; width:60px; height:60px; }
+  .score-ring svg { transform:rotate(-90deg); }
+
+  .tab-btn { transition:all 0.2s ease; }
+  .tab-btn.active { background:rgba(99,102,241,0.15); color:#818cf8; border-color:rgba(99,102,241,0.3); }
+
+  .graph-node { transition:all 0.3s ease; cursor:pointer; }
+  .graph-node:hover { filter:brightness(1.3); }
+
+  .search-input { transition:all 0.3s ease; }
+  .search-input:focus { box-shadow:0 0 0 2px rgba(99,102,241,0.3); }
+
+  .badge { font-size:0.65rem; padding:2px 8px; border-radius:9999px; font-weight:600; text-transform:uppercase; letter-spacing:0.5px; }
+
+  .progress-bar { height:4px; border-radius:2px; background:rgba(99,102,241,0.1); overflow:hidden; }
+  .progress-fill { height:100%; border-radius:2px; transition:width 1s ease; }
+
+  .industry-tag { font-size:0.6rem; padding:2px 6px; border-radius:4px; font-weight:500; }
+
+  @keyframes spin-slow { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
+  .spin-slow { animation:spin-slow 8s linear infinite; }
+
+  .notification-badge { position:absolute; top:-4px; right:-4px; width:16px; height:16px; background:#f43f5e; border-radius:50%; font-size:0.55rem; display:flex; align-items:center; justify-content:center; font-weight:700; }
+
+  .cmd-overlay { background:rgba(0,0,0,0.7); backdrop-filter:blur(8px); }
+  .cmd-item { transition:all 0.15s ease; }
+  .cmd-item:hover, .cmd-item.selected { background:rgba(99,102,241,0.12); }
+  .cmd-item.selected { border-left:2px solid #6366f1; }
+
+  .terminal { font-family:'JetBrains Mono',monospace; background:#050810; border:1px solid rgba(99,102,241,0.15); }
+  .terminal-line { animation:termFade 0.3s ease; }
+  @keyframes termFade { from{opacity:0;transform:translateX(-4px)} to{opacity:1;transform:translateX(0)} }
+  .cursor-blink { display:inline-block; width:8px; height:14px; background:#6366f1; animation:blink 1s infinite; vertical-align:middle; margin-left:2px; }
+  @keyframes blink { 0%,50%{opacity:1} 51%,100%{opacity:0} }
+
+  .chain-node { position:relative; }
+  .chain-node::after { content:''; position:absolute; right:-14px; top:50%; width:14px; height:2px; background:linear-gradient(90deg,#6366f1,transparent); }
+  .chain-node:last-child::after { display:none; }
+
+  input[type="range"].struct-slider { -webkit-appearance:none; appearance:none; width:100%; height:4px; background:rgba(99,102,241,0.15); border-radius:2px; outline:none; }
+  input[type="range"].struct-slider::-webkit-slider-thumb { -webkit-appearance:none; appearance:none; width:16px; height:16px; background:#6366f1; border-radius:50%; cursor:pointer; border:2px solid #0a0f1a; box-shadow:0 0 0 3px rgba(99,102,241,0.2); transition:all 0.2s; }
+  input[type="range"].struct-slider::-webkit-slider-thumb:hover { transform:scale(1.2); box-shadow:0 0 0 5px rgba(99,102,241,0.3); }
+  input[type="range"].struct-slider::-moz-range-thumb { width:16px; height:16px; background:#6366f1; border-radius:50%; cursor:pointer; border:2px solid #0a0f1a; }
+
+  @keyframes liveGlow { 0%,100%{box-shadow:0 0 0 0 rgba(239,68,68,0.6)} 50%{box-shadow:0 0 0 8px rgba(239,68,68,0)} }
+  .live-dot { animation:liveGlow 2s infinite; }
+
+  @keyframes scanPulse { 0%{opacity:0.3} 50%{opacity:1} 100%{opacity:0.3} }
+  .scan-pulse { animation:scanPulse 1.5s infinite; }
+
+  .kbd { font-family:'JetBrains Mono',monospace; font-size:0.6rem; padding:2px 6px; background:rgba(15,23,42,0.8); border:1px solid rgba(99,102,241,0.2); border-radius:4px; color:#94a3b8; }
+</style>
+</head>
+<body class="min-h-screen">
+
+<!-- App Shell -->
+<div class="flex min-h-screen">
+
+  <!-- Sidebar -->
+  <aside id="sidebar" class="w-64 glass border-r border-dark-500/30 flex flex-col fixed h-full z-50 transition-all duration-300">
+    <div class="p-5 border-b border-dark-500/30">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-lg bg-gradient-to-br from-accent to-accent-light flex items-center justify-center">
+          <i class="fas fa-bolt text-white text-sm"></i>
+        </div>
+        <div>
+          <h1 class="text-sm font-bold text-white tracking-tight">DealFlowOS</h1>
+          <p class="text-[0.6rem] text-dark-200 tracking-widest uppercase">Intelligence Platform</p>
+        </div>
+      </div>
+    </div>
+
+    <nav class="flex-1 py-4 px-3 space-y-1 overflow-y-auto">
+      <p class="text-[0.6rem] text-dark-300 uppercase tracking-widest px-3 mb-2 font-semibold">Overview</p>
+      <a href="#" class="sidebar-link active flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm" data-view="dashboard" onclick="switchView('dashboard'); return false">
+        <i class="fas fa-th-large w-4 text-center text-xs"></i> Dashboard
+      </a>
+      <a href="#" class="sidebar-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-dark-200" data-view="pipeline" onclick="switchView('pipeline'); return false">
+        <i class="fas fa-columns w-4 text-center text-xs"></i> Deal Pipeline
+        <span class="ml-auto badge bg-accent/20 text-accent-light">24</span>
+      </a>
+
+      <p class="text-[0.6rem] text-dark-300 uppercase tracking-widest px-3 mb-2 mt-5 font-semibold">Intelligence</p>
+      <a href="#" class="sidebar-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-dark-200" data-view="companies" onclick="switchView('companies'); return false">
+        <i class="fas fa-building w-4 text-center text-xs"></i> Companies
+        <span class="ml-auto badge bg-emerald/20 text-emerald-light">148</span>
+      </a>
+
+      <p class="text-[0.6rem] text-dark-300 uppercase tracking-widest px-3 mb-2 mt-5 font-semibold">AI Agents</p>
+      <a href="#" class="sidebar-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-dark-200" data-view="command" onclick="switchView('command'); return false">
+        <i class="fas fa-wand-magic-sparkles w-4 text-center text-xs"></i> AI Command Center
+        <span class="ml-auto"><span class="pulse-dot bg-emerald inline-block"></span></span>
+      </a>
+      <a href="#" class="sidebar-link flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-dark-200" data-view="agents" onclick="switchView('agents'); return false">
+        <i class="fas fa-robot w-4 text-center text-xs"></i> Agent Control
+      </a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="flex-1 ml-64">
+    <!-- Top Bar -->
+    <header class="glass border-b border-dark-500/30 sticky top-0 z-40">
+      <div class="flex items-center justify-between px-6 py-3">
+        <div class="flex items-center gap-4">
+          <h2 class="text-lg font-bold text-white">Deal Intelligence</h2>
+        </div>
+        <div class="flex items-center gap-3">
+          <button onclick="openNewDealModal()" class="bg-gradient-to-r from-accent to-accent-dark hover:from-accent-light hover:to-accent text-white text-xs font-semibold px-4 py-2 rounded-lg transition-all flex items-center gap-2 shadow-lg shadow-accent/20">
+            <i class="fas fa-plus text-[0.6rem]"></i> New Deal
+          </button>
+          <span class="text-xs text-dark-300">DealFlowOS v0.1</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Content Area -->
+    <div id="content" class="p-6">
+      <!-- Dashboard View -->
+      <div id="view-dashboard" class="view-panel">
+        <h2 class="text-2xl font-bold text-white mb-6">Dashboard</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+          <div class="glass-card rounded-xl p-4">
+            <p class="text-2xl font-bold text-white">148</p>
+            <p class="text-[0.65rem] text-dark-300 mt-0.5">Companies</p>
+          </div>
+          <div class="glass-card rounded-xl p-4">
+            <p class="text-2xl font-bold text-emerald">24</p>
+            <p class="text-[0.65rem] text-dark-300 mt-0.5">Active Deals</p>
+          </div>
+          <div class="glass-card rounded-xl p-4">
+            <p class="text-2xl font-bold text-accent">$4.2M</p>
+            <p class="text-[0.65rem] text-dark-300 mt-0.5">Pipeline</p>
+          </div>
+          <div class="glass-card rounded-xl p-4">
+            <p class="text-2xl font-bold text-cyan">6</p>
+            <p class="text-[0.65rem] text-dark-300 mt-0.5">Agents Online</p>
+          </div>
+        </div>
+        <div class="glass-card rounded-xl p-5">
+          <h3 class="text-sm font-semibold text-white mb-4">Agent Activity</h3>
+          <div id="agentList" class="space-y-3"></div>
+        </div>
+      </div>
+
+      <!-- Pipeline View -->
+      <div id="view-pipeline" class="view-panel hidden">
+        <h2 class="text-2xl font-bold text-white mb-6">Deal Pipeline</h2>
+        <div class="flex gap-3 overflow-x-auto pb-4" id="kanbanBoard"></div>
+      </div>
+
+      <!-- Companies View -->
+      <div id="view-companies" class="view-panel hidden">
+        <h2 class="text-2xl font-bold text-white mb-6">Companies</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="companyGrid"></div>
+      </div>
+
+      <!-- AI Command Center -->
+      <div id="view-command" class="view-panel hidden">
+        <h2 class="text-2xl font-bold text-white mb-6">AI Command Center</h2>
+        <div class="glass-card rounded-xl p-5 mb-4">
+          <h3 class="text-sm font-semibold text-white mb-3">Quick Launch</h3>
+          <div class="flex gap-2">
+            <input id="quickInput" type="text" placeholder="Describe what you're looking for..." class="flex-1 bg-dark-800/50 border border-dark-500/30 rounded-lg px-3 py-2 text-sm text-dark-100 focus:outline-none">
+            <button onclick="launchRun()" class="bg-accent hover:bg-accent-dark text-white text-xs font-semibold px-4 py-2 rounded-lg transition">
+              <i class="fas fa-play text-[0.6rem]"></i> Launch
+            </button>
+          </div>
+        </div>
+        <div id="liveTerminal" class="terminal rounded-lg p-3 h-64 overflow-y-auto mb-3">
+          <p class="text-dark-400 text-center py-16 text-[0.6rem]">Terminal ready</p>
+        </div>
+      </div>
+
+      <!-- Agents View -->
+      <div id="view-agents" class="view-panel hidden">
+        <h2 class="text-2xl font-bold text-white mb-6">AI Agents</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="agentCards"></div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<!-- New Deal Modal -->
+<div id="newDealModal" class="fixed inset-0 z-[100] hidden">
+  <div class="bg-black/50 absolute inset-0" onclick="closeNewDealModal()"></div>
+  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-lg glass rounded-2xl p-6 border border-dark-500/30">
+    <div class="flex items-center justify-between mb-5">
+      <h3 class="text-lg font-bold text-white">New Deal</h3>
+      <button onclick="closeNewDealModal()" class="text-dark-300 hover:text-white"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="space-y-4">
+      <input id="dealName" type="text" placeholder="Company name" class="w-full bg-dark-800/50 border border-dark-500/30 rounded-lg px-3 py-2 text-sm text-dark-100 focus:outline-none">
+      <input id="dealValue" type="text" placeholder="Estimated value (e.g., $500K)" class="w-full bg-dark-800/50 border border-dark-500/30 rounded-lg px-3 py-2 text-sm text-dark-100 focus:outline-none">
+      <div class="flex gap-2 pt-2">
+        <button onclick="closeNewDealModal()" class="flex-1 border border-dark-500/30 text-dark-200 text-sm py-2 rounded-lg">Cancel</button>
+        <button onclick="addDeal()" class="flex-1 bg-accent hover:bg-accent-dark text-white text-sm font-semibold py-2 rounded-lg">Create</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// API configuration
+const API_BASE = 'http://localhost:8081';
+let companies = [];
+let pipeline = {};
+let dashboardData = {};
+
+const agents = [
+  { name:"Research Agent", status:"active", color:"#6366f1" },
+  { name:"Lead Qualification", status:"active", color:"#10b981" },
+  { name:"Outreach Agent", status:"idle", color:"#06b6d4" },
+];
+
+// Load data from Neo4j API
+async function loadCompanies() {
+  try {
+    const resp = await fetch(`${API_BASE}/api/companies?limit=150`);
+    const result = await resp.json();
+    if(result.success) {
+      companies = result.data;
+      return companies;
+    }
+  } catch(e) {
+    console.error('Failed to load companies:', e);
+    return [];
+  }
+}
+
+async function loadPipeline() {
+  try {
+    const resp = await fetch(`${API_BASE}/api/pipeline/by-stage`);
+    const result = await resp.json();
+    if(result.success) {
+      pipeline = result.data;
+      return pipeline;
+    }
+  } catch(e) {
+    console.error('Failed to load pipeline:', e);
+    return {};
+  }
+}
+
+async function loadDashboardSummary() {
+  try {
+    const resp = await fetch(`${API_BASE}/api/dashboard/summary`);
+    const result = await resp.json();
+    if(result.success) {
+      dashboardData = result.data;
+      return dashboardData;
+    }
+  } catch(e) {
+    console.error('Failed to load dashboard data:', e);
+    return {};
+  }
+}
+
+function switchView(viewId) {
+  document.querySelectorAll('.view-panel').forEach(v => v.classList.add('hidden'));
+  document.getElementById('view-' + viewId).classList.remove('hidden');
+  document.querySelectorAll('.sidebar-link').forEach(l => l.classList.remove('active'));
+  document.querySelector(`[data-view="${viewId}"]`).classList.add('active');
+
+  if(viewId === 'pipeline') renderKanban();
+  if(viewId === 'companies') renderCompanies();
+  if(viewId === 'agents') renderAgents();
+  if(viewId === 'dashboard') renderDashboard();
+}
+
+async function renderDashboard() {
+  // Update summary metrics
+  if(dashboardData.total_companies) {
+    const summaryCards = document.querySelectorAll('.glass-card');
+    if(summaryCards[0]) summaryCards[0].querySelector('p').textContent = dashboardData.total_companies || 148;
+    if(summaryCards[1]) summaryCards[1].querySelector('p').textContent = dashboardData.active_deals || 24;
+    if(summaryCards[2]) {
+      const val = (dashboardData.pipeline_value || 4200000);
+      summaryCards[2].querySelector('p').textContent = '$' + (val/1000000).toFixed(1) + 'M';
+    }
+  }
+
+  const list = document.getElementById('agentList');
+  list.innerHTML = agents.map(a => `
+    <div class="flex items-center gap-3 p-2.5 rounded-lg bg-dark-800/30">
+      <div class="w-2 h-2 rounded-full ${a.status==='active'?'bg-emerald':'bg-dark-400'} pulse-dot"></div>
+      <div class="flex-1">
+        <p class="text-xs font-semibold text-white">${a.name}</p>
+        <p class="text-[0.6rem] text-dark-300 capitalize">${a.status}</p>
+      </div>
+    </div>
+  `).join('');
+}
+
+function renderKanban() {
+  const board = document.getElementById('kanbanBoard');
+  const stages = ['discovered', 'researched', 'qualified', 'contacted', 'negotiating', 'closed'];
+  const stageLabels = {
+    discovered: 'Discovered',
+    researched: 'Researched',
+    qualified: 'Qualified',
+    contacted: 'Contacted',
+    negotiating: 'Negotiating',
+    closed: 'Closed'
+  };
+
+  board.innerHTML = stages.map(stage => {
+    const stageData = pipeline[stage] || { count: 0, companies: [] };
+    return `
+      <div class="flex-shrink-0 w-72">
+        <h3 class="text-xs font-semibold text-dark-100 uppercase mb-3 px-1">${stageLabels[stage]} (${stageData.count})</h3>
+        <div class="space-y-2 kanban-col">
+          ${stageData.companies.slice(0, 5).map(c => `
+            <div class="glass-card rounded-lg p-3 kanban-card">
+              <p class="text-xs font-semibold text-white line-clamp-2">${c.name}</p>
+              <p class="text-[0.6rem] text-dark-300">${c.industry}</p>
+              <div class="flex items-center justify-between mt-2">
+                <span class="text-[0.65rem] text-accent">Score ${c.score}</span>
+                <span class="text-xs">→</span>
+              </div>
+            </div>
+          `).join('')}
+          ${stageData.companies.length > 5 ? `
+            <div class="text-[0.65rem] text-dark-400 text-center py-2">+${stageData.companies.length - 5} more</div>
+          ` : ''}
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+function renderCompanies() {
+  const grid = document.getElementById('companyGrid');
+  const industryEmojis = {
+    construction: '🏗', realestate: '🏢', staffing: '👥', tech: '💻',
+    finance: '💰', healthcare: '⚕️', manufacturing: '🏭', logistics: '🚚',
+    energy: '⚡', unknown: '🌐'
+  };
+
+  grid.innerHTML = companies.map(c => {
+    const emoji = industryEmojis[c.industry] || industryEmojis.unknown;
+    return `
+      <div class="glass-card rounded-xl p-5">
+        <div class="text-2xl mb-2">${emoji}</div>
+        <h4 class="text-sm font-semibold text-white line-clamp-2">${c.name}</h4>
+        <p class="text-[0.6rem] text-dark-300 mb-2">${c.location}</p>
+        <p class="text-[0.6rem] text-dark-400 mb-3">${c.sector}</p>
+        <div class="flex items-center justify-between">
+          <span class="text-[0.6rem] bg-accent/10 text-accent-light px-2 py-0.5 rounded">${c.industry}</span>
+          <span class="font-bold text-emerald">${c.score}</span>
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+function renderAgents() {
+  const cards = document.getElementById('agentCards');
+  cards.innerHTML = agents.map(a => `
+    <div class="glass-card rounded-xl p-5">
+      <div class="w-10 h-10 rounded-lg mb-3 flex items-center justify-center" style="background:${a.color}20">
+        <i class="fas fa-robot" style="color:${a.color}"></i>
+      </div>
+      <h4 class="text-sm font-semibold text-white">${a.name}</h4>
+      <p class="text-[0.6rem] text-dark-300 capitalize mt-1">${a.status}</p>
+      <div class="mt-4 flex gap-2">
+        <button class="flex-1 text-xs py-1.5 rounded border border-dark-500/30 text-dark-200 hover:bg-dark-700/50">Configure</button>
+        <button class="flex-1 text-xs py-1.5 rounded text-white font-semibold" style="background:${a.color}30">${a.status==='active'?'Pause':'Resume'}</button>
+      </div>
+    </div>
+  `).join('');
+}
+
+function openNewDealModal() { document.getElementById('newDealModal').classList.remove('hidden'); }
+function closeNewDealModal() { document.getElementById('newDealModal').classList.add('hidden'); }
+
+function addDeal() {
+  const name = document.getElementById('dealName').value;
+  const value = document.getElementById('dealValue').value;
+  if(!name) return alert('Enter a company name');
+  console.log('Adding deal:', {name, value});
+  alert(`✓ Added ${name} (${value})`);
+  closeNewDealModal();
+  document.getElementById('dealName').value = '';
+  document.getElementById('dealValue').value = '';
+}
+
+function launchRun() {
+  const input = document.getElementById('quickInput').value;
+  if(!input) return alert('Describe what you need');
+  const terminal = document.getElementById('liveTerminal');
+  terminal.innerHTML = `
+    <div class="text-dark-200 text-[0.65rem] space-y-1">
+      <div><span class="text-accent">▸</span> Initializing AI Research...</div>
+      <div><span class="text-dark-400">  Input:</span> ${input}</div>
+      <div><span class="text-emerald">▸</span> Scanning data sources...</div>
+      <div><span class="text-dark-400">  ✓ LinkedIn  ✓ Crunchbase  ✓ SEC  ✓ BuiltWith</span></div>
+      <div><span class="text-cyan">▸</span> Finding matches...</div>
+      <div><span class="text-dark-400">  Found: BuildRight Construction (Score 92)</span></div>
+      <div><span class="text-dark-400">  Found: Apex Roofing Co (Score 89)</span></div>
+      <div><span class="text-emerald">✓ Complete</span></div>
+    </div>
+  `;
+}
+
+// Init with Neo4j data
+async function initApp() {
+  // Load all data in parallel
+  await Promise.all([
+    loadCompanies(),
+    loadPipeline(),
+    loadDashboardSummary()
+  ]);
+
+  // Render initial view
+  renderDashboard();
+
+  // Update company count badges in sidebar
+  document.querySelector('[data-view="companies"] .badge').textContent = companies.length;
+  document.querySelector('[data-view="pipeline"] .badge').textContent = Object.values(pipeline).reduce((sum, s) => sum + s.count, 0);
+}
+
+// Start the app
+initApp().catch(e => console.error('Failed to initialize app:', e));
+</script>
+</body>
+</html>

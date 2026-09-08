@@ -1,0 +1,199 @@
+# CAPABILITY_REGISTRY.yaml — Central Abstraction Layer
+# Version 1.0 | Created 2026-09-01 | Phase 0 File
+#
+# Purpose: Map WHAT to HOW to WHICH AGENTS
+# Pattern: CAPABILITY → IMPLEMENTED_BY → USED_BY → VERIFIED_BY → PRODUCES
+
+---
+version: "1.0"
+description: "Capability Registry: central abstraction layer mapping capabilities to implementations"
+created: "2026-09-01"
+
+pattern: "CAPABILITY → IMPLEMENTED_BY → USED_BY → VERIFIED_BY → PRODUCES"
+
+core_concepts:
+
+  capability:
+    definition: "Repeatable organizational ability to achieve outcome"
+    example: "CAP-000001: Lead Scoring (predict lead quality with 85%+ accuracy)"
+    scope: "What the organization can do, abstracted from how"
+    abstraction_level: "High (business capability, not technical detail)"
+    versioning: "Capabilities versioned as implementations improve"
+
+  implementation:
+    definition: "Concrete system, tool, algorithm, or process that enables capability"
+    examples:
+      - "Statistical scoring model (threshold-based)"
+      - "ML model (neural network, 0.92 accuracy)"
+      - "Hybrid approach (rules + model)"
+    scope: "How a capability is realized (technical)"
+    abstraction_level: "Medium (what system/tool/algorithm to use)"
+    multiple_per_capability: "Typical: 1-5 implementations per capability, choose best"
+
+  agent:
+    definition: "Autonomous system or person who uses/executes capability"
+    examples:
+      - "AGT-000001: Lead Scoring Agent (uses CAP-000001)"
+      - "AGT-000002: Sales Pipeline Agent (uses CAP-000001 + CAP-000002)"
+    responsibility: "Applies capability to specific work, manages invocation"
+    autonomy_level: "L1 (report-only), L2 (assisted), L3 (autonomous)"
+
+  verification:
+    definition: "Test, metric, or evaluation that proves capability works"
+    examples:
+      - "Accuracy: 0.92+ on holdout dataset"
+      - "False positive rate: <5%"
+      - "Response time: <100ms"
+    scope: "How to know capability is functioning correctly"
+    cadence: "Continuous or periodic"
+
+  learning:
+    definition: "Lessons extracted when capability succeeds or fails"
+    examples:
+      - "Accuracy degraded (investigate data drift)"
+      - "False positives increased (retrain model)"
+      - "New segment identified with different needs"
+    scope: "How organization improves capability over time"
+    feedback_loop: "Outcome → Learning → Capability Improvement"
+
+registry_structure:
+
+  example_capability:
+
+    - id: "CAP-000001"
+      name: "Lead Scoring"
+      description: "Predict quality of sales leads for prioritization"
+
+      implementations:
+        - impl_id: "IMPL-CAP000001-001"
+          type: "Statistical"
+          status: "DEPRECATED"
+          accuracy: 0.75
+          created: "2026-01-15"
+
+        - impl_id: "IMPL-CAP000001-002"
+          type: "ML Neural Network"
+          status: "ACTIVE"
+          accuracy: 0.92
+          latency_ms: 45
+          created: "2026-06-01"
+          tools: ["XGBoost", "scikit-learn"]
+
+      agents_using_capability:
+        - "AGT-000001 (L3 autonomous)"
+        - "AGT-000042 (L2 assisted)"
+
+      inputs:
+        - "lead_email (string)"
+        - "company_revenue (float, USD)"
+        - "engagement_score (float [0.0-1.0])"
+        - "website_visits (integer)"
+
+      outputs:
+        - "lead_score (float [0.0-1.0])"
+        - "confidence (float [0.0-1.0])"
+        - "reasons (array of strings)"
+
+      verification:
+        - metric: "Accuracy"
+          target: "≥0.85"
+          current: "0.92"
+          cadence: "Weekly"
+
+        - metric: "False Positive Rate"
+          target: "<10%"
+          current: "4%"
+
+        - metric: "Latency"
+          target: "<100ms"
+          current: "45ms"
+
+      learning:
+        - lesson_id: "LES-000087"
+          timestamp: "2026-08-20"
+          finding: "Accuracy dropped due to data drift"
+          action: "Retrain with drift detection"
+          status: "IMPLEMENTED"
+
+      sla:
+        - "Availability: 99.5%"
+        - "Response time: <100ms (p99)"
+        - "Accuracy: ≥0.85 (weekly)"
+
+      status: "ACTIVE (v3.2.1)"
+      owner: "ML Team / Sales"
+      next_review: "2026-09-15"
+
+abstraction_benefits:
+  decoupling: "Agents don't need to know implementation details"
+  substitution: "Can swap implementations without changing agents"
+  versioning: "Track which implementation each agent uses"
+  accountability: "Clear ownership (capability owner vs impl owner)"
+  optimization: "Can measure which impl is best for each agent"
+  governance: "Central place to verify all capabilities"
+
+implementation_selection_rules:
+
+  rule_1: "Organization maintains 1 ACTIVE implementation per capability"
+  rule_2: "Other implementations are DEPRECATED or PILOT"
+  rule_3: "Agents always use ACTIVE implementation"
+  rule_4: "Migration: pilot → active → deprecated (gradual)"
+  rule_5: "Fallback: keep STABLE DEPRECATED implementation ready"
+
+capability_maturity_stages:
+
+  conceptual: "Identified but not implemented"
+  prototype: "Proof-of-concept exists"
+  pilot: "Piloting with subset of agents"
+  active: "Production, SLA published, monitoring active"
+  optimizing: "Actively improving accuracy/performance"
+  trusted: "Met SLA for 90+ days, can increase autonomy"
+  commodity: "Mature, standard practice, minimal changes"
+
+agent_capability_binding:
+  definition: "Record which capabilities each agent uses"
+  purpose: "Answer: Which agent uses which capability? Which capability used by whom?"
+  example:
+    - agent_id: "AGT-000001"
+      capabilities_used:
+        - cap_id: "CAP-000001"
+          role: "primary (core)"
+          impl_version: "IMPL-CAP000001-002"
+          autonomy_level: "L3"
+
+capability_versioning:
+  when_to_version: "When implementation changes significantly"
+  versioning_scheme: "CAP-000001 (stable) → v2 (major change)"
+  rollout_strategy: "New impl → pilot → gradual rollout → full adoption"
+  rollback_plan: "Keep prior ACTIVE impl stable for 30 days minimum"
+
+# All Capabilities Index (Phase 0 skeleton)
+capabilities_by_area:
+
+  lead_generation:
+    - "CAP-000001: Lead Scoring"
+    - "CAP-000002: Lead Qualification"
+    - "CAP-000003: Lead Enrichment"
+
+  sales_operations:
+    - "CAP-000010: Opportunity Sizing"
+    - "CAP-000011: Deal Scoring"
+    - "CAP-000012: Forecast Accuracy"
+
+  marketing_automation:
+    - "CAP-000020: Campaign Segmentation"
+    - "CAP-000021: Email Personalization"
+    - "CAP-000022: Content Recommendation"
+
+  customer_intelligence:
+    - "CAP-000030: Customer Segmentation"
+    - "CAP-000031: Churn Prediction"
+    - "CAP-000032: LTV Calculation"
+
+  # ... additional capabilities defined as system matures
+
+# Status
+status: "COMPLETE"
+locked: true
+next_review: "2026-10-01"
+notes: "Skeleton in Phase 0. Full registry populated in Phase 1 with all capabilities, implementations, agents."

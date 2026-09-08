@@ -1,0 +1,146 @@
+# FABRICS.yaml — 18 Cross-Cutting Cognitive Systems
+# Version 1.0 | Created 2026-09-01 | Phase 0 File
+
+---
+version: "1.0"
+description: "18 Cognitive Fabrics (Cross-Cutting Systems)"
+created: "2026-09-01"
+
+fabrics:
+  - order: 1
+    name: "OBSERVATION"
+    description: "Continuous sensing and signal detection"
+    stages: [WORLD, OBSERVATION]
+    function: "Convert world events into detectable signals"
+    primary_bases: ["02-WORLD", "41-OBSERVABILITY"]
+
+  - order: 2
+    name: "DATA"
+    description: "Collection, storage, normalization"
+    stages: [OBSERVATION, DATA]
+    function: "Ingest and organize signals as data"
+    primary_bases: ["11-DATA"]
+
+  - order: 3
+    name: "INFORMATION"
+    description: "Transformation of raw data into contextual facts"
+    stages: [DATA, INFORMATION]
+    function: "Clean, deduplicate, classify data"
+    primary_bases: ["61-KNOWLEDGE-SOURCES"]
+
+  - order: 4
+    name: "LIBRARY / STEWARDSHIP"
+    description: "Cataloging, preservation, discovery"
+    stages: [INFORMATION, KNOWLEDGE]
+    function: "Organize and make information findable"
+    primary_bases: ["61-KNOWLEDGE-SOURCES", "11-INDEXING"]
+
+  - order: 5
+    name: "KNOWLEDGE"
+    description: "Creation and maintenance of structured understanding"
+    stages: [INFORMATION, KNOWLEDGE]
+    function: "Convert facts into knowledge (patterns, rules, principles)"
+    primary_bases: ["21-GOVERNANCE", "09-KNOWLEDGE"]
+
+  - order: 6
+    name: "MEMORY"
+    description: "Storage and consolidation for future use"
+    stages: [KNOWLEDGE, MEMORY]
+    function: "Preserve knowledge (episodic, semantic, procedural)"
+    primary_bases: ["26-MEMORY"]
+
+  - order: 7
+    name: "RETRIEVAL"
+    description: "Finding and accessing knowledge"
+    stages: [MEMORY, RETRIEVAL]
+    function: "Enable discovery (keyword, graph, vector, entity, temporal)"
+    primary_bases: ["05-REPOSITORIES", "11-INDEXING"]
+
+  - order: 8
+    name: "CONTEXT"
+    description: "Assembly of relevant information"
+    stages: [RETRIEVAL, CONTEXT]
+    function: "Assemble what we need to know for this task"
+    primary_bases: ["12-CONTEXT"]
+
+  - order: 9
+    name: "COGNITION"
+    description: "Reasoning, inference, comparison"
+    stages: [CONTEXT, THINKING]
+    function: "Reason over context (attention, inference, simulation, planning)"
+    primary_bases: ["10-INTELLIGENCE"]
+
+  - order: 10
+    name: "IDEATION"
+    description: "Generation and development of possibilities"
+    stages: [THOUGHT, IDEA, VISION, INTENTION]
+    function: "Conceive, refine, and commit to new possibilities"
+    primary_bases: ["27-DECISIONS"]
+
+  - order: 11
+    name: "RESEARCH"
+    description: "Systematic investigation and evidence collection"
+    stages: [IDEA, HYPOTHESIS]
+    function: "Investigate systematically (hypotheses, sources, evidence, synthesis)"
+    primary_bases: ["61-KNOWLEDGE-SOURCES"]
+
+  - order: 12
+    name: "SCIENCE / EXPERIMENT"
+    description: "Controlled testing and falsification"
+    stages: [HYPOTHESIS, GOAL]
+    function: "Test rigorously (design, measurement, replication, falsification)"
+    primary_bases: ["25-EVALUATION", "24-METRICS"]
+
+  - order: 13
+    name: "DECISION"
+    description: "Option evaluation and decision-making"
+    stages: [THOUGHT, GOAL]
+    function: "Make decisions (options, tradeoffs, risks, rationale)"
+    primary_bases: ["27-DECISIONS"]
+
+  - order: 14
+    name: "STRATEGY"
+    description: "Selection of approach and decomposition"
+    stages: [GOAL, STRATEGY, PLAN]
+    function: "Plan strategically (approach, initiatives, sequencing, resources)"
+    primary_bases: ["08-BUSINESS"]
+
+  - order: 15
+    name: "EXECUTION"
+    description: "Performance of work; agents/people taking action"
+    stages: [WORK, EXECUTION]
+    function: "Execute work (tasks, skills, tools, progress tracking)"
+    primary_bases: ["34-EXECUTION", "14-AGENTS"]
+
+  - order: 16
+    name: "VERIFICATION"
+    description: "Testing, measurement, quality assurance"
+    stages: [RESULT]
+    function: "Verify quality (tests, metrics, quality gates, anomalies)"
+    primary_bases: ["25-EVALUATION", "24-METRICS"]
+
+  - order: 17
+    name: "OUTCOME"
+    description: "Impact assessment and value quantification"
+    stages: [RESULT, OUTCOME]
+    function: "Assess outcomes (against goals, ROI, success/failure)"
+    primary_bases: ["43-OUTCOMES"]
+
+  - order: 18
+    name: "LEARNING"
+    description: "Lesson extraction and knowledge integration"
+    stages: [OUTCOME, LEARNING]
+    function: "Learn systematically (lessons, patterns, knowledge updates)"
+    primary_bases: ["67-EVOLUTION-ALT", "44-LEARNING"]
+
+core_flows:
+  perception: "OBSERVATION → DATA → INFORMATION → KNOWLEDGE → MEMORY → RETRIEVAL → CONTEXT → COGNITION"
+  manifestation: "THOUGHT → IDEA → VISION → INTENTION → GOAL → STRATEGY → PLAN → WORK → EXECUTION"
+  evaluation: "EXECUTION → RESULT → OUTCOME → LEARNING → KNOWLEDGE"
+  feedback: "LEARNING → EVOLUTION → WORLD (changed)"
+
+properties:
+  - "All 18 operate simultaneously"
+  - "Each touches multiple stages and bases"
+  - "Failure in one doesn't halt the system"
+  - "System gets smarter with each iteration"

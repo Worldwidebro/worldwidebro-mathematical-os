@@ -1,0 +1,43 @@
+{
+  "registry_id": "REG-DEVICE-001",
+  "updated_at": "2026-09-05",
+  "devices": [
+    {
+      "device_id": "DEV-MAC-STUDIO-001",
+      "device_type": "Desktop Computer",
+      "manufacturer": "Apple",
+      "model": "Mac Studio (2024 / M4 Max)",
+      "ownership": "WorldwideBro / Primary Engineering",
+      "status": "ACTIVE",
+      "location": "HQ Primary Node"
+    },
+    {
+      "device_id": "DEV-MACBOOK-AIR-001",
+      "device_type": "Laptop Computer",
+      "manufacturer": "Apple",
+      "model": "MacBook Air (Apple Silicon)",
+      "ownership": "WorldwideBro / Operator Workstation",
+      "status": "ACTIVE",
+      "location": "Mobile Operator Node"
+    },
+    {
+      "device_id": "DEV-DRIVE-LACIE-4TB",
+      "device_type": "External Storage Drive",
+      "manufacturer": "LaCie",
+      "capacity": "4TB",
+      "interface": "Thunderbolt 4 / USB-C",
+      "status": "ACTIVE_ATTACHED_STUDIO",
+      "mount_point": "/Volumes/LaCie"
+    },
+    {
+      "device_id": "DEV-DRIVE-T7-2TB",
+      "device_type": "External NVMe SSD",
+      "manufacturer": "Samsung",
+      "model": "T7 Shield",
+      "capacity": "1.8TB Usable",
+      "interface": "USB 3.2 Gen 2",
+      "status": "ACTIVE_ATTACHED_AIR",
+      "mount_point": "/Volumes/T7 Shield"
+    }
+  ]
+}

@@ -1,0 +1,304 @@
+# Company Brain Control Matrix
+# 50 Domains × 7 Planes × ~100 Control Points
+#
+# Legend:
+#   ✅ Implemented
+#   🟡 Planned / Partial
+#   🔴 Missing / Gap
+#
+# Updated: 2026-09-06
+# Related: [[50-MASTER-CONTROL/SEVEN_PLANES|SEVEN_PLANES]] | [[50-MASTER-CONTROL/HUNDRED_LAYERS|HUNDRED_LAYERS]] | [[50-MASTER-CONTROL/50-MASTER-CONTROL|50-MASTER-CONTROL]]
+
+matrix:
+  plane_1_company_brain:
+    name: "Company Brain — Organizational Intelligence"
+    domains:
+      "00-CONSTITUTION":
+        - control_point: "Define mission"
+          status: "✅"
+          tool: "Neo4j"
+          responsible: "CEO / Board"
+        - control_point: "Set principles"
+          status: "✅"
+          tool: "Neo4j"
+          responsible: "CEO / Board"
+      "01-IDENTITY":
+        - control_point: "Define organizational structure"
+          status: "✅"
+          tool: "Qdrant"
+          responsible: "COO"
+      "20-DECISIONS":
+        - control_point: "Record strategic decisions"
+          status: "✅"
+          tool: "Neo4j"
+          responsible: "CEO"
+      "21-POLICY":
+        - control_point: "Define governance policies"
+          status: "✅"
+          tool: "Neo4j"
+          responsible: "Legal / Compliance"
+      "23-VENTURES":
+        - control_point: "Portfolio oversight"
+          status: "✅"
+          tool: "Neo4j"
+          responsible: "Portfolio Manager"
+
+  plane_2_engineering_brain:
+    name: "Engineering Brain (AST-100) — Software Delivery Discipline"
+    domains:
+      "13-REPOSITORIES":
+        - control_point: "Define architecture standards"
+          status: "🟡"
+          tool: "Graft (TOL-000001)"
+          responsible: "CTO"
+        - control_point: "Repository health checks"
+          status: "🟡"
+          tool: "Graft (TOL-000001)"
+          responsible: "Engineering Manager"
+      "15-SKILLS":
+        - control_point: "Code quality standards"
+          status: "🔴"
+          tool: "—"
+          responsible: "Engineering Manager"
+      "18-TOOLS":
+        - control_point: "Tool integration requirements"
+          status: "🟡"
+          tool: "TOL-000001"
+          responsible: "Tech Lead"
+      "32-SECURITY":
+        - control_point: "Security scanning gates"
+          status: "🟡"
+          tool: "—"
+          responsible: "Security Officer"
+      "33-COMPLIANCE":
+        - control_point: "Compliance verification"
+          status: "🟡"
+          tool: "—"
+          responsible: "Compliance Officer"
+
+  plane_3_knowledge_fabric:
+    name: "Knowledge Fabric — Unified Organizational Knowledge"
+    domains:
+      "08-KNOWLEDGE-GRAPH":
+        - control_point: "Neo4j entity creation"
+          status: "✅"
+          tool: "Neo4j"
+          responsible: "Knowledge Engineer"
+        - control_point: "Relationship mapping"
+          status: "✅"
+          tool: "Neo4j"
+          responsible: "Knowledge Engineer"
+      "09-KNOWLEDGE":
+        - control_point: "Knowledge source ingestion"
+          status: "🟡"
+          tool: "Qdrant"
+          responsible: "Knowledge Manager"
+      "10-MEMORY":
+        - control_point: "Semantic memory (embeddings)"
+          status: "✅"
+          tool: "Qdrant"
+          responsible: "ML Engineer"
+      "11-INDEXING":
+        - control_point: "Full-text indexing"
+          status: "🟡"
+          tool: "—"
+          responsible: "Data Engineer"
+      "13-REPOSITORIES":
+        - control_point: "Code graph generation"
+          status: "✅"
+          tool: "Graft (TOL-000001)"
+          responsible: "Tech Lead"
+
+  plane_4_orchestration_fabric:
+    name: "Orchestration Fabric — Work Discovery & Agent Coordination"
+    domains:
+      "55-LOOP-ENGINEERING":
+        - control_point: "Work discovery loop"
+          status: "✅"
+          tool: "Loop Engine"
+          responsible: "Agent Architect"
+        - control_point: "Loop execution (L1/L2/L3)"
+          status: "✅"
+          tool: "Loop Engine"
+          responsible: "Agent Architect"
+      "14-CAPABILITIES":
+        - control_point: "Capability routing"
+          status: "✅"
+          tool: "Loop Engine"
+          responsible: "Capability Manager"
+      "15-SKILLS":
+        - control_point: "Skill composition"
+          status: "🟡"
+          tool: "Fractal (TOL-000002)"
+          responsible: "Skill Engineer"
+      "16-AGENTS":
+        - control_point: "Agent spawning"
+          status: "✅"
+          tool: "Fractal (TOL-000002)"
+          responsible: "Agent Architect"
+      "19-ORCHESTRATION":
+        - control_point: "Workflow orchestration"
+          status: "✅"
+          tool: "Loop Engine"
+          responsible: "Orchestration Engineer"
+
+  plane_5_execution_fabric:
+    name: "Execution Fabric — Persistent Agent Runtime"
+    domains:
+      "22-EXECUTION":
+        - control_point: "Agent session management"
+          status: "✅"
+          tool: "herdr (TOL-000003)"
+          responsible: "Runtime Engineer"
+        - control_point: "Terminal pane management"
+          status: "✅"
+          tool: "herdr (TOL-000003)"
+          responsible: "Runtime Engineer"
+        - control_point: "Git worktree isolation"
+          status: "✅"
+          tool: "herdr (TOL-000003)"
+          responsible: "Runtime Engineer"
+        - control_point: "Cost tracking"
+          status: "🟡"
+          tool: "Fractal (TOL-000002)"
+          responsible: "Finance Engineer"
+      "49-SYSTEM":
+        - control_point: "Process lifecycle"
+          status: "✅"
+          tool: "herdr (TOL-000003)"
+          responsible: "Infra Engineer"
+      "41-OBSERVABILITY":
+        - control_point: "Runtime state visibility"
+          status: "🟡"
+          tool: "—"
+          responsible: "Observability Engineer"
+
+  plane_6_verification_fabric:
+    name: "Verification Fabric — Quality Gates & Confidence"
+    domains:
+      "31-LEGAL":
+        - control_point: "Legal compliance gates"
+          status: "🟡"
+          tool: "—"
+          responsible: "Legal Officer"
+      "32-SECURITY":
+        - control_point: "Security scanning (SAST)"
+          status: "🟡"
+          tool: "—"
+          responsible: "Security Officer"
+        - control_point: "Security scanning (DAST)"
+          status: "🟡"
+          tool: "—"
+          responsible: "Security Officer"
+      "33-COMPLIANCE":
+        - control_point: "Compliance verification"
+          status: "🟡"
+          tool: "—"
+          responsible: "Compliance Officer"
+      "42-EVALUATION":
+        - control_point: "Code review gates"
+          status: "🟡"
+          tool: "—"
+          responsible: "Code Review Lead"
+        - control_point: "Test coverage validation"
+          status: "🟡"
+          tool: "—"
+          responsible: "QA Lead"
+
+  plane_7_operations_fabric:
+    name: "Operations Fabric — Deployment & Incident Response"
+    domains:
+      "41-OBSERVABILITY":
+        - control_point: "Log aggregation"
+          status: "🟡"
+          tool: "—"
+          responsible: "Observability Engineer"
+        - control_point: "Distributed tracing"
+          status: "🟡"
+          tool: "—"
+          responsible: "Observability Engineer"
+        - control_point: "Metrics collection"
+          status: "🟡"
+          tool: "—"
+          responsible: "Observability Engineer"
+      "43-OUTCOMES":
+        - control_point: "Outcome tracking"
+          status: "🟡"
+          tool: "Neo4j"
+          responsible: "Outcome Analyst"
+      "44-LEARNING":
+        - control_point: "Lesson extraction"
+          status: "🟡"
+          tool: "Qdrant"
+          responsible: "Learning Engineer"
+      "45-EVOLUTION":
+        - control_point: "Continuous improvement"
+          status: "🟡"
+          tool: "—"
+          responsible: "Evolution Engineer"
+
+tool_integration:
+  TOL-000001:
+    name: "Graft"
+    type: "Code Intelligence Engine"
+    version: "0.16.0+"
+    planes:
+      - plane_2
+      - plane_3
+    domains:
+      - "13-REPOSITORIES"
+      - "57-CODE-INTELLIGENCE"
+
+  TOL-000002:
+    name: "Fractal"
+    type: "Agent Orchestration Runtime"
+    version: "1.1.0+"
+    planes:
+      - plane_4
+      - plane_5
+    domains:
+      - "55-LOOP-ENGINEERING"
+      - "22-EXECUTION"
+
+  TOL-000003:
+    name: "herdr"
+    type: "Agent Runtime"
+    version: "0.7.5+"
+    planes:
+      - plane_5
+    domains:
+      - "22-EXECUTION"
+      - "49-SYSTEM"
+
+  Neo4j:
+    name: "Neo4j"
+    type: "Relationship Graph Database"
+    planes:
+      - plane_1
+      - plane_3
+      - plane_7
+    domains:
+      - "08-KNOWLEDGE-GRAPH"
+      - "20-DECISIONS"
+      - "21-POLICY"
+
+  Qdrant:
+    name: "Qdrant"
+    type: "Semantic Vector Database"
+    planes:
+      - plane_1
+      - plane_3
+      - plane_7
+    domains:
+      - "09-KNOWLEDGE"
+      - "10-MEMORY"
+      - "44-LEARNING"
+
+summary:
+  total_control_points: "~100-150"
+  total_domains: 50
+  total_planes: 7
+  implemented: "~35 (33%)"
+  planned_partial: "~55 (52%)"
+  missing: "~15 (14%)"
+  key_tools: ["Graft (TOL-000001)", "Fractal (TOL-000002)", "herdr (TOL-000003)"]

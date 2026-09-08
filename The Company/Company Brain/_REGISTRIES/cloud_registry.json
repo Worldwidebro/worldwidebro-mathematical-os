@@ -1,0 +1,38 @@
+{
+  "registry_id": "REG-CLOUD-001",
+  "updated_at": "2026-09-05",
+  "providers": {
+    "PRV-VERCEL": {
+      "name": "Vercel Inc.",
+      "type": "PaaS / Serverless Edge",
+      "account": "worldwidebro",
+      "active_deployments": 95,
+      "status": "PRODUCTION_ACTIVE"
+    },
+    "PRV-GITHUB": {
+      "name": "GitHub Inc.",
+      "type": "Code Registry & CI/CD",
+      "account": "worldwidebro",
+      "owned_repos": 887,
+      "starred_repos": 910,
+      "status": "PRODUCTION_ACTIVE"
+    },
+    "PRV-TAILSCALE": {
+      "name": "Tailscale Inc.",
+      "type": "Zero Trust Network Mesh",
+      "account": "worldwidebro",
+      "devices": 3,
+      "status": "PRODUCTION_ACTIVE"
+    },
+    "PRV-SUPABASE": {
+      "name": "Supabase Inc.",
+      "type": "Managed Postgres Prototype",
+      "status": "PROTOTYPE_EVALUATION"
+    },
+    "PRV-CLOUDFLARE": {
+      "name": "Cloudflare Inc.",
+      "type": "DNS & CDN",
+      "status": "ACTIVE_DNS"
+    }
+  }
+}

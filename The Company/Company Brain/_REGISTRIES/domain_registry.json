@@ -1,0 +1,19 @@
+{
+  "registry_id": "REG-DOMAINS-001",
+  "updated_at": "2026-09-05",
+  "domains": [
+    {
+      "domain": "worldwidebro.com",
+      "purpose": "Corporate Holdings & Canonical Portal",
+      "registrar": "Namecheap / Cloudflare",
+      "ssl": "Auto Let's Encrypt via Vercel",
+      "target_site": "re-001-worldwidebro-holdings"
+    },
+    {
+      "domain": "worldwidebros-projects.vercel.app",
+      "purpose": "Vercel Default Subdomain Root",
+      "site_count": 95,
+      "status": "ACTIVE"
+    }
+  ]
+}

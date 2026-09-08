@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "1.0.0",
+  "channels": [
+    {
+      "id": "CHN-OUT-001",
+      "type": "OUTBOUND",
+      "name": "Direct Executive Cold Email",
+      "status": "ACTIVE",
+      "weight": 0.5,
+      "priority": "P0"
+    },
+    {
+      "id": "CHN-LNK-001",
+      "type": "LINKEDIN",
+      "name": "LinkedIn Direct InMail & Founder DMs",
+      "status": "ACTIVE",
+      "weight": 0.3,
+      "priority": "P1"
+    },
+    {
+      "id": "CHN-CNT-001",
+      "type": "CONTENT",
+      "name": "Technical Tear-down Whitepapers & Substack",
+      "status": "ACTIVE",
+      "weight": 0.2,
+      "priority": "P2"
+    }
+  ]
+}

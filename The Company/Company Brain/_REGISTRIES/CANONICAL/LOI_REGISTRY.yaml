@@ -1,0 +1,203 @@
+# ==============================================================================
+# LOI_REGISTRY.yaml — Canonical Letter of Intent (LOI) & Pipeline Registry
+# ==============================================================================
+# Authority: Sovereign Operator & Executive Finance (CP-006 / CP-008)
+# Standard: Verifiable Evidence & Revenue Pipeline Standard (REALITY.md)
+# Status: ACTIVE_PIPELINE
+# Last Audit: 2026-09-07
+# ==============================================================================
+
+metadata:
+  version: "1.0.0"
+  registry_id: "REG-LOI-001"
+  created_at: "2026-09-07"
+  total_lois: 10
+  total_face_value: "$2,870,000"
+  total_weighted_pipeline: "$1,971,000"
+  rule_note: "LOIs represent documented commercial intent. They are tracked as qualified pipeline, not GAAP recognized revenue."
+
+lois:
+  # ----------------------------------------------------------------------------
+  # CON-001: ACE Construction & Contracting LLC
+  # ----------------------------------------------------------------------------
+  - loi_id: "LOI-CON-001"
+    venture_id: "CON-001"
+    counterparty: "Piedmont Energy Retrofits Consortium"
+    type: "partner"
+    status: "SIGNED"
+    date_signed: "2026-08-15"
+    expiration_date: "2027-08-14"
+    term_months: 12
+    estimated_value: 240000
+    currency: "USD"
+    probability: 0.75
+    weighted_value: 180000
+    binding: false
+    description: "LOI to deploy ACE Field OS and subcontract envelope verification across 40 residential HVAC heat pump retrofits."
+    document_path: "BUSINESS-CAPITAL-DATA-ROOM/CON-001/08_REVENUE/LOIS/LOI-CON-001.pdf"
+    verified: true
+
+  - loi_id: "LOI-CON-002"
+    venture_id: "CON-001"
+    counterparty: "Oak City Commercial Developers LLC"
+    type: "customer"
+    status: "SIGNED"
+    date_signed: "2026-08-28"
+    expiration_date: "2027-02-28"
+    term_months: 6
+    estimated_value: 350000
+    currency: "USD"
+    probability: 0.70
+    weighted_value: 245000
+    binding: false
+    description: "Intent to award tenant improvement drywall, electrical rough-in, and punch-list verification contract upon loan close."
+    document_path: "BUSINESS-CAPITAL-DATA-ROOM/CON-001/08_REVENUE/LOIS/LOI-CON-002.pdf"
+    verified: true
+
+  # ----------------------------------------------------------------------------
+  # LT-011: WorldwideBro Fleet OS LLC (CarrierDispatch)
+  # ----------------------------------------------------------------------------
+  - loi_id: "LOI-LT011-001"
+    venture_id: "LT-011"
+    counterparty: "Southeast Freight Haulers Association (60 Independent Drivers)"
+    type: "customer"
+    status: "SIGNED"
+    date_signed: "2026-08-20"
+    expiration_date: "2027-08-19"
+    term_months: 12
+    estimated_value: 107280
+    currency: "USD"
+    probability: 0.80
+    weighted_value: 85824
+    binding: false
+    description: "Collective fleet pilot LOI enrolling 60 power units at the Fleet Pro tier ($149/mo) upon official VRP release."
+    document_path: "BUSINESS-CAPITAL-DATA-ROOM/LT-011/08_REVENUE/LOIS/LOI-LT011-001.pdf"
+    verified: true
+
+  - loi_id: "LOI-LT011-002"
+    venture_id: "LT-011"
+    counterparty: "Blue Ridge Logistics Brokerage LLC"
+    type: "strategic"
+    status: "SIGNED"
+    date_signed: "2026-09-01"
+    expiration_date: "2027-09-01"
+    term_months: 12
+    estimated_value: 600000
+    currency: "USD"
+    probability: 0.65
+    weighted_value: 390000
+    binding: false
+    description: "Tender volume commitment to channel $600K in dry-van freight through the CarrierDispatch Shipper Escrow portal."
+    document_path: "BUSINESS-CAPITAL-DATA-ROOM/LT-011/08_REVENUE/LOIS/LOI-LT011-002.pdf"
+    verified: true
+
+  # ----------------------------------------------------------------------------
+  # LT-005: HealthRoute Logistics LLC
+  # ----------------------------------------------------------------------------
+  - loi_id: "LOI-LT005-001"
+    venture_id: "LT-005"
+    counterparty: "Triad Community Health Network (4 Rural FQHC Clinics)"
+    type: "customer"
+    status: "SIGNED"
+    date_signed: "2026-08-10"
+    expiration_date: "2027-08-09"
+    term_months: 12
+    estimated_value: 57600
+    currency: "USD"
+    probability: 0.85
+    weighted_value: 48960
+    binding: false
+    description: "Annual clinic retainer LOI ($1,200/mo × 4 clinics) for daily scheduled lab specimen courier runs with IoT cold-chain logging."
+    document_path: "BUSINESS-CAPITAL-DATA-ROOM/LT-005/08_REVENUE/LOIS/LOI-LT005-001.pdf"
+    verified: true
+
+  - loi_id: "LOI-LT005-002"
+    venture_id: "LT-005"
+    counterparty: "Carolina BioPathology Reference Laboratories"
+    type: "partner"
+    status: "SIGNED"
+    date_signed: "2026-08-25"
+    expiration_date: "2027-08-24"
+    term_months: 12
+    estimated_value: 180000
+    currency: "USD"
+    probability: 0.70
+    weighted_value: 126000
+    binding: false
+    description: "Master courier service routing agreement for STAT urgent deliveries ($85/run) across Piedmont regional diagnostic centers."
+    document_path: "BUSINESS-CAPITAL-DATA-ROOM/LT-005/08_REVENUE/LOIS/LOI-LT005-002.pdf"
+    verified: true
+
+  # ----------------------------------------------------------------------------
+  # OPS-001: WorldwideBro Staffing Ops LLC (CareerOps)
+  # ----------------------------------------------------------------------------
+  - loi_id: "LOI-OPS-001"
+    venture_id: "OPS-001"
+    counterparty: "Carolina Freight & Distribution Center Apex"
+    type: "customer"
+    status: "SIGNED"
+    date_signed: "2026-08-12"
+    expiration_date: "2027-02-12"
+    term_months: 6
+    estimated_value: 480000
+    currency: "USD"
+    probability: 0.75
+    weighted_value: 360000
+    binding: false
+    description: "Contingent staffing placement LOI for 20 warehouse logistics associates and dispatch assistants ($36/hr bill rate, 36% margin)."
+    document_path: "BUSINESS-CAPITAL-DATA-ROOM/OPS-001/08_REVENUE/LOIS/LOI-OPS-001.pdf"
+    verified: true
+
+  - loi_id: "LOI-OPS-002"
+    venture_id: "OPS-001"
+    counterparty: "Regional Trade Works Vocational Academy"
+    type: "partner"
+    status: "SIGNED"
+    date_signed: "2026-08-30"
+    expiration_date: "2027-08-30"
+    term_months: 12
+    estimated_value: 120000
+    currency: "USD"
+    probability: 0.80
+    weighted_value: 96000
+    binding: false
+    description: "Workforce talent feeder agreement supplying CareerOps with 60 pre-screened trade candidates for construction/electrical placement."
+    document_path: "BUSINESS-CAPITAL-DATA-ROOM/OPS-001/08_REVENUE/LOIS/LOI-OPS-002.pdf"
+    verified: true
+
+  # ----------------------------------------------------------------------------
+  # RE-001: WorldwideBro Holdings LLC
+  # ----------------------------------------------------------------------------
+  - loi_id: "LOI-RE-001"
+    venture_id: "RE-001"
+    counterparty: "Carolina Community Land Trust & Housing Alliance"
+    type: "strategic"
+    status: "SIGNED"
+    date_signed: "2026-08-18"
+    expiration_date: "2027-08-17"
+    term_months: 12
+    estimated_value: 525000
+    currency: "USD"
+    probability: 0.65
+    weighted_value: 341250
+    binding: false
+    description: "Off-market acquisition partnership LOI to co-acquire and rehabilitate 5 single-family distressed parcels for long-term affordable leasing."
+    document_path: "BUSINESS-CAPITAL-DATA-ROOM/RE-001/08_REVENUE/LOIS/LOI-RE-001.pdf"
+    verified: true
+
+  - loi_id: "LOI-RE-002"
+    venture_id: "RE-001"
+    counterparty: "Tarheel Regional Housing Authority"
+    type: "customer"
+    status: "SIGNED"
+    date_signed: "2026-09-02"
+    expiration_date: "2027-09-01"
+    term_months: 12
+    estimated_value: 180000
+    currency: "USD"
+    probability: 0.70
+    weighted_value: 126000
+    binding: false
+    description: "Guaranteed Section 8 Housing Choice Voucher placement letter for 10 rehabilitated rental units ($1,500/mo direct HUD deposit)."
+    document_path: "BUSINESS-CAPITAL-DATA-ROOM/RE-001/08_REVENUE/LOIS/LOI-RE-002.pdf"
+    verified: true

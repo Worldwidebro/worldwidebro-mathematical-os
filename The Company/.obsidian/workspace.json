@@ -1,0 +1,234 @@
+{
+  "main": {
+    "id": "e91905397ddc30c1",
+    "type": "split",
+    "children": [
+      {
+        "id": "c69f9ce2f2dae73f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "35ce28460681a260",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b8f4a4e915bc677a",
+    "type": "split",
+    "children": [
+      {
+        "id": "9bec047a7ca53e7d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bba6f8f1e0b02292",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "ea14586871f766a5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "a213c5e7a8dca701",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "5b731cf11a10fbf1",
+    "type": "split",
+    "children": [
+      {
+        "id": "657572f9ca7a967d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1df0fdfc192abd3a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "56aaf79e21b38d2c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "5ab1c46f63e7e50c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "24c14b78a1ab3181",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "e60e6b1f5a232261",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "35ce28460681a260",
+  "lastOpenFiles": [
+    "Company Brain/BUSINESS-CAPITAL-DATA-ROOM/DEPLOYMENT-MANIFEST.md",
+    "Company Brain/BUSINESS-CAPITAL-DATA-ROOM/BUSINESS-ARTIFACT-ONTOLOGY-README.md",
+    "Company Brain/BUSINESS-CAPITAL-DATA-ROOM/BUSINESS-ARTIFACT-ONTOLOGY-QUICKSTART.md",
+    "Company Brain/BUSINESS-CAPITAL-DATA-ROOM/BUSINESS-ARTIFACT-ONTOLOGY-INTEGRATION.md",
+    "Company Brain/BUSINESS-CAPITAL-DATA-ROOM/MASTER-DOCUMENT-ONTOLOGY-REGISTRY.yaml",
+    "Company Brain/repos/con-001-ace-construction/node_modules/ts-essentials/README.md",
+    "Company Brain/BUSINESS-CAPITAL-DATA-ROOM/LT-005/05_FINANCIAL/3-YEAR-PRO-FORMA.md",
+    "Company Brain/BUSINESS-CAPITAL-DATA-ROOM/00_ENTERPRISE_BLUEPRINT.md",
+    "Company Brain/repos/con-001-ace-construction/src/__tests__/construction-os-core.test.ts",
+    "Company Brain/repos/con-001-ace-construction/src/lib/services/insurance-compliance.ts",
+    "Company Brain/repos/con-001-ace-construction/src/lib/services/evm-costing.ts",
+    "Company Brain/repos/con-001-ace-construction/src/lib/services/aia-pay-app.ts",
+    "Company Brain/repos/con-001-ace-construction/src/lib/services",
+    "Company Brain/repos/con-001-ace-construction/src/types/construction-os.ts",
+    "Company Brain/repos/con-001-ace-construction/supabase/migrations/20260908000000_construction_os_foundation.sql",
+    "Company Brain/graphify-out/cache/ast/599d5fde550d40ed13bae33a96cd5831652bd5ad5679721fbf52d13e4fc0ce76.json",
+    "Company Brain/graphify-out/cache/ast/717d361f837076425fe8b5d0261d85b79b95dd869e857615a6a8142c3e8865f7.json",
+    "Company Brain/BUSINESS-CAPITAL-DATA-ROOM/RE-001/02_STRATEGY/DEAL-STRUCTURES-MATRIX.md",
+    "Company Brain/BUSINESS-CAPITAL-DATA-ROOM/RE-001/08_REVENUE/MONETIZATION-TAXONOMY.md",
+    "Company Brain/BUSINESS-CAPITAL-DATA-ROOM/RE-001/COMPILED-MASTER-PROSPECTUS.md",
+    "Company Brain/BUSINESS-CAPITAL-DATA-ROOM/OPS-001/COMPILED-MASTER-PROSPECTUS.md",
+    "Company Brain/BUSINESS-CAPITAL-DATA-ROOM/LT-005/COMPILED-MASTER-PROSPECTUS.md",
+    "Company Brain/BUSINESS-CAPITAL-DATA-ROOM/LT-011/COMPILED-MASTER-PROSPECTUS.md",
+    "Company Brain/BUSINESS-CAPITAL-DATA-ROOM/CON-001/COMPILED-MASTER-PROSPECTUS.md",
+    "Company Brain/graphify-out/2026-09-08/GRAPH_REPORT.md",
+    "02_PROJECTS/LT/LT-005/_index.md",
+    "Company Brain/repos/ops-staff-001-staffing/EMAIL-SETUP-DELIVERABLES.md",
+    "Company Brain/repos/ops-staff-001-staffing/RESEND-EMAIL-SETUP.md",
+    "Company Brain/OPS-001-STAFFING/post-placement-followup-sop.md",
+    "Company Brain/repos/ops-staff-001-staffing/week-1-cold-calls/START_HERE_TODAY.md",
+    "Company Brain/repos/ops-staff-001-staffing/TEST_SUBMISSIONS_READY.md",
+    "Company Brain/repos/ops-staff-001-staffing/SUPABASE_DEPLOYMENT_2026-09-07.md",
+    "Company Brain/repos/lt-011-dispatch-software/BILLING_TEST_RESULTS.md",
+    "Company Brain/repos/lt-011-dispatch-software/apps/dispatch-web/BUILD_SUMMARY.md",
+    "Company Brain/repos/lt-011-dispatch-software/apps/dispatch-web/JOBS_BUILD_REPORT.md",
+    "Company Brain/repos/lt-011-dispatch-software/FRONTEND_BUILD_SUMMARY.md",
+    "Company Brain/repos/lt-011-dispatch-software/services/api/node_modules/@supabase/phoenix/priv/static/phoenix.png",
+    "Company Brain/repos/lt-011-dispatch-software/services/api/node_modules/@supabase/phoenix/priv/static/phoenix-orange.png",
+    "Company Brain/repos/con-001-ace-construction/public/images/construction_hero.jpg",
+    "Company Brain/repos/lt-005-medical-courier-dispatch/node_modules/@supabase/phoenix/priv/static/phoenix.png",
+    "Company Brain/repos/lt-005-medical-courier-dispatch/node_modules/@supabase/phoenix/priv/static/phoenix-orange.png",
+    "Company Brain/repos/lt-005-medical-courier-dispatch/assets/courier_hub_hero.jpg",
+    "Company Brain/repos/re-001-worldwidebro-holdings/node_modules/leaflet/src/images/marker.svg",
+    "Company Brain/repos/re-001-worldwidebro-holdings/node_modules/leaflet/src/images/logo.svg",
+    "Company Brain/repos/re-001-worldwidebro-holdings/node_modules/leaflet/src/images/layers.svg",
+    "Company Brain/repos/re-001-worldwidebro-holdings/node_modules/leaflet/dist/images/marker-shadow.png"
+  ]
+}

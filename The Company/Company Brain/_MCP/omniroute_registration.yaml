@@ -1,0 +1,199 @@
+---
+id: omniroute-phase-1-registration
+title: OmniRoute Phase 1 Tool Registration
+scope: Register KG-017/028/048 MCP tools with OmniRoute
+authority: CP-027 (Infrastructure Control Plane)
+updated: 2026-09-06
+status: READY_FOR_DEPLOYMENT
+
+# MCP Tools to register with OmniRoute
+mcp_tools:
+  - tool_id: "kg-017-hybrid-search"
+    name: "Hybrid Search (Graph + Vector)"
+    description: "Execute unified search across Neo4j graph and Qdrant vectors"
+    category: "knowledge-graph"
+    capability: "KG-017"
+    module: "hybrid_query_tool"
+    function: "hybrid_search"
+    inputs:
+      query_text:
+        type: "string"
+        required: true
+        description: "Search query text"
+      search_type:
+        type: "string"
+        enum: ["graph", "vector", "hybrid"]
+        default: "hybrid"
+        description: "Type of search to execute"
+      limit:
+        type: "integer"
+        default: 10
+        minimum: 1
+        maximum: 100
+        description: "Maximum number of results"
+      confidence_threshold:
+        type: "number"
+        default: 0.5
+        minimum: 0.0
+        maximum: 1.0
+        description: "Minimum confidence score (0-1)"
+      entity_types:
+        type: "string"
+        description: "Comma-separated entity types to filter (VENTURE, REPOSITORY, etc.)"
+    outputs:
+      results:
+        type: "array"
+        description: "List of entities ranked by relevance"
+      count:
+        type: "integer"
+        description: "Number of results returned"
+      search_time_ms:
+        type: "number"
+        description: "Query execution time in milliseconds"
+      execution:
+        type: "string"
+        description: "Execution type (GRAPH, VECTOR, or HYBRID)"
+
+  - tool_id: "kg-028-agent-context"
+    name: "Agent Context Assembly"
+    description: "Build task-specific subgraph context for agent execution"
+    category: "knowledge-graph"
+    capability: "KG-028"
+    module: "context_assembly_tool"
+    function: "build_agent_context"
+    inputs:
+      agent_id:
+        type: "string"
+        required: true
+        description: "Agent ID (AGT-001, AGT-005, etc.)"
+      focal_entity_id:
+        type: "string"
+        required: true
+        description: "Primary entity ID (venture, repo, customer)"
+      depth:
+        type: "integer"
+        default: 2
+        minimum: 1
+        maximum: 3
+        description: "Relationship hop depth"
+      include_types:
+        type: "string"
+        description: "Comma-separated entity types to include"
+      exclude_types:
+        type: "string"
+        description: "Comma-separated entity types to exclude"
+    outputs:
+      agent_id:
+        type: "string"
+      focal_entity_id:
+        type: "string"
+      entities:
+        type: "array"
+        description: "Relevant entities with confidence scores"
+      relationships:
+        type: "array"
+        description: "Entity relationships"
+      risks:
+        type: "array"
+        description: "Detected risks (dependencies, bottlenecks)"
+      opportunities:
+        type: "array"
+        description: "Detected opportunities (partnerships, synergies)"
+
+# FastAPI Graph API endpoints (exposed via HTTP)
+api_endpoints:
+  - endpoint_id: "kg-048-graph-api"
+    name: "Graph API Endpoint (KG-048)"
+    base_url: "http://localhost:8000"
+    auth_type: "bearer_token"
+    auth_header_name: "Authorization"
+    endpoints:
+      - path: "/api/graph/query"
+        method: "POST"
+        description: "Execute hybrid search (KG-017)"
+        tool_id: "kg-017-hybrid-search"
+      - path: "/api/graph/context"
+        method: "POST"
+        description: "Build agent context (KG-028)"
+        tool_id: "kg-028-agent-context"
+      - path: "/api/graph/entity/{id}"
+        method: "GET"
+        description: "Fetch single entity by ID"
+      - path: "/api/graph/paths/{from}/{to}"
+        method: "GET"
+        description: "Find paths between entities"
+      - path: "/health"
+        method: "GET"
+        description: "Health check"
+
+# Agent routing rules
+agent_routing:
+  - agent_id: "AGT-001"
+    agent_name: "Venture PM"
+    tools:
+      - "kg-017-hybrid-search"
+      - "kg-028-agent-context"
+    primary_use_case: "Query ventures + context on dependencies"
+
+  - agent_id: "AGT-002"
+    agent_name: "Financial Analyst"
+    tools:
+      - "kg-017-hybrid-search"
+      - "kg-028-agent-context"
+    primary_use_case: "Query revenue + context on customers + deals"
+
+  - agent_id: "AGT-003"
+    agent_name: "Technical Lead"
+    tools:
+      - "kg-017-hybrid-search"
+      - "kg-028-agent-context"
+    primary_use_case: "Query tech stack + context on integrations"
+
+  - agent_id: "AGT-004"
+    agent_name: "Sales Lead"
+    tools:
+      - "kg-017-hybrid-search"
+      - "kg-028-agent-context"
+    primary_use_case: "Query customers + context on opportunities"
+
+  - agent_id: "AGT-005"
+    agent_name: "Operations Lead"
+    tools:
+      - "kg-017-hybrid-search"
+      - "kg-028-agent-context"
+    primary_use_case: "Query operational dependencies + risks"
+
+# Deployment instructions
+deployment:
+  docker_compose:
+    service: "graph-api"
+    file: "60-APIS/docker-compose.yml"
+    port: 8000
+    health_check_url: "http://localhost:8000/health"
+
+  omniroute_steps:
+    - "1. Ensure OmniRoute is running (http://localhost:20128)"
+    - "2. Copy hybrid_query_tool.py to OmniRoute MCP directory"
+    - "3. Copy context_assembly_tool.py to OmniRoute MCP directory"
+    - "4. Restart OmniRoute to pick up new MCP tools"
+    - "5. Verify tools via: curl http://localhost:20128/tools"
+    - "6. Deploy graph_api.py via: docker-compose -f 60-APIS/docker-compose.yml up -d"
+    - "7. Test API: curl http://localhost:8000/health"
+
+# Success criteria
+success_criteria:
+  - "✅ OmniRoute discovers KG-017 tool via MCP discovery"
+  - "✅ OmniRoute discovers KG-028 tool via MCP discovery"
+  - "✅ FastAPI server responds to /health"
+  - "✅ POST /api/graph/query returns results < 500ms"
+  - "✅ POST /api/graph/context returns subgraph + risks + opportunities"
+  - "✅ AgentTest: AGT-001 can call hybrid_search via OmniRoute"
+  - "✅ AgentTest: AGT-005 can call build_agent_context via OmniRoute"
+  - "✅ All 301+ agents routable (9 routing + 12 specialized + 280+ skills)"
+
+---
+
+**Status:** READY FOR DEPLOYMENT
+**Next Steps:** Execute deployment sequence (docker-compose up + OmniRoute registration)
+**Authority:** CP-027 (Infrastructure Control Plane)
+**Timeline:** Sep 16-19 (deployment + testing)

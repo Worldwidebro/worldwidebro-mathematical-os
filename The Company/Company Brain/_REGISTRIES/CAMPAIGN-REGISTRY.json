@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "1.0.0",
+  "last_updated": "2026-09-05T11:10:00Z",
+  "campaigns": [
+    {
+      "id": "CAM-001",
+      "name": "Local-First AI Infrastructure & Repo Intelligence Audit Launch",
+      "slug": "local-ai-audit-q3-2026",
+      "status": "LIVE",
+      "reality_status": "VERIFIED",
+      "campaign_type": [
+        "DEMAND_GENERATION",
+        "LEAD_GENERATION",
+        "DIRECT_OUTBOUND"
+      ],
+      "venture_id": "VEN-001",
+      "brand_id": "BRD-001",
+      "product_id": "PRD-001",
+      "offer_id": "OFF-001",
+      "offer_code": "OFR-AUDIT-001",
+      "owner_id": "PPL-001",
+      "team_id": "TEA-REV-001",
+      "objective_id": "OBJ-001",
+      "primary_kpi": "PAID_AUDITS_CLOSED",
+      "target": 5,
+      "deadline": "2026-10-15",
+      "budget_id": "BUD-001",
+      "planned_spend_usd": 2500,
+      "actual_spend_usd": 0,
+      "expected_revenue_usd": 37500,
+      "channels": [
+        "CHN-OUT-001",
+        "CHN-LNK-001",
+        "CHN-EML-001"
+      ],
+      "funnel_id": "FUN-001",
+      "landing_page_id": "PG-001",
+      "risk_ids": [
+        "RSK-001",
+        "RSK-002"
+      ],
+      "evidence_ids": [
+        "EVD-001",
+        "EVD-002"
+      ],
+      "external_entities": [
+        "EXT-WD-Q1761818",
+        "EXT-WD-Q37038",
+        "EXT-WD-Q39809",
+        "EXT-WD-Q1323528"
+      ],
+      "created_at": "2026-09-05T00:00:00Z",
+      "last_verified": "2026-09-05T11:00:00Z"
+    }
+  ]
+}

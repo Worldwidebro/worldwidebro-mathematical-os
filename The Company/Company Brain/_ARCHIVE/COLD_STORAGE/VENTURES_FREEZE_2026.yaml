@@ -1,0 +1,46 @@
+# VENTURES_FREEZE_2026.yaml — Cold Storage Archive
+
+metadata:
+  archive_id: "DOC-ARC-001"
+  governing_decision: "DEC-PRUNE-003"
+  frozen_at: "2026-09-05"
+  authority: "Sovereign Operator & Executive Governance (CP-006)"
+  total_frozen_ventures: 697
+  status: "FROZEN_IN_COLD_STORAGE"
+  thaw_condition: "Zero speculative ventures may be unfrozen until Active Venture VEN-001 (Audit Offer) generates > $10,000 in collected cash receipts."
+
+rationale: >
+  Tracking 700+ unmonetized, unbuilt 'planned' ventures across 35 sectors creates
+  architectural illusion and cognitive dilution. The company currently has $0.00 revenue
+  and 0 paying customers. Capital, attention, and engineering are consolidated into 3 active
+  commercial offers.
+
+frozen_inventories:
+  - source: "_REGISTRIES/ventures-by-sector.yaml"
+    description: "35-sector taxonomy venture mapping (789 planned items)"
+  - source: "_REGISTRIES/RECONCILIATION_2026_09_01/UNIFIED_VENTURE_REGISTRY.json"
+    description: "Reconciled venture index with 89 mapped repos"
+  - source: "_REGISTRIES/RECONCILIATION_2026_09_01/VENTURE_REGISTRY_FROM_REPOS.json"
+    description: "Repo-extracted venture candidate names"
+
+sector_breakdown_frozen:
+  SEC-008_FIN:
+    name: "Financial Services"
+    frozen_count: 300
+    status: "FROZEN"
+  SEC-002_CON:
+    name: "Construction & Infrastructure"
+    frozen_count: 200
+    status: "FROZEN"
+  SEC-020_RE:
+    name: "Real Estate & Property"
+    frozen_count: 150
+    status: "FROZEN"
+  SEC-017_LT:
+    name: "Logistics & Transportation"
+    frozen_count: 139
+    status: "FROZEN"
+  OTHER_SECTORS:
+    name: "Remaining 31 Sectors"
+    frozen_count: 0
+    status: "FROZEN"

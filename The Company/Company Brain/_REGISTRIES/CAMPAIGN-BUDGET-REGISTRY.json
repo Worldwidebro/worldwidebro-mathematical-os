@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "1.0.0",
+  "budgets": [
+    {
+      "id": "BUD-001",
+      "campaign_id": "CAM-001",
+      "total_budget_usd": 2500,
+      "allocations": {
+        "media_spend_usd": 500,
+        "data_enrichment_apollo_usd": 800,
+        "domain_infrastructure_warmup_usd": 400,
+        "creative_production_usd": 300,
+        "reserve_contingency_usd": 500
+      },
+      "pacing_strategy": "LINEAR_ACCELERATING",
+      "max_daily_spend_usd": 150,
+      "actual_spent_usd": 0,
+      "status": "APPROVED"
+    }
+  ]
+}

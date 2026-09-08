@@ -1,0 +1,87 @@
+version: '3.8'
+
+# IZA OS Database Infrastructure
+# Neo4j + Qdrant + PostgreSQL on Mac Studio via Docker
+# All data persisted to /Volumes/LaCie (4TB external drive)
+
+services:
+  # Neo4j: Infrastructure Relationship Graph
+  neo4j:
+    image: neo4j:latest
+    container_name: neo4j
+    restart: unless-stopped
+    ports:
+      - "7687:7687"      # Bolt protocol
+      - "7474:7474"      # Web browser access
+    environment:
+      NEO4J_AUTH: "neo4j/changeme"  # CHANGE THIS
+      NEO4J_PLUGINS: '["apoc"]'
+      NEO4J_dbms_memory_heap_initial__size: 2G
+      NEO4J_dbms_memory_heap_max__size: 4G
+    volumes:
+      - /Volumes/LaCie/neo4j/data:/data
+      - /Volumes/LaCie/neo4j/logs:/logs
+    networks:
+      - infrastructure
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:7474"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Qdrant: Vector Semantic Database
+  qdrant:
+    image: qdrant/qdrant:latest
+    container_name: qdrant
+    restart: unless-stopped
+    ports:
+      - "6333:6333"
+    environment:
+      QDRANT__DEBUG: "false"
+      QDRANT__LOG_LEVEL: "info"
+    volumes:
+      - /Volumes/LaCie/qdrant/storage:/qdrant/storage
+      - /Volumes/LaCie/qdrant/snapshots:/qdrant/snapshots
+    networks:
+      - infrastructure
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:6333/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # PostgreSQL: Operational Database
+  postgres:
+    image: postgres:16
+    container_name: postgres
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: infrastructure
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: changeme  # CHANGE THIS
+      POSTGRES_INITDB_ARGS: "--encoding=UTF8"
+      PGDATA: /var/lib/postgresql/data/pgdata
+    volumes:
+      - /Volumes/LaCie/postgres/data:/var/lib/postgresql/data
+      - /Volumes/LaCie/postgres/backups:/backups
+    networks:
+      - infrastructure
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U admin"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    command:
+      - "postgres"
+      - "-c"
+      - "max_connections=200"
+      - "-c"
+      - "shared_buffers=256MB"
+      - "-c"
+      - "effective_cache_size=1GB"
+
+networks:
+  infrastructure:
+    driver: bridge

@@ -1,0 +1,627 @@
+{
+  "RE-001": {
+    "id": "RE-001",
+    "repositories": [
+      "CB-REPO-000001"
+    ],
+    "repo_count": 1
+  },
+  "LT-005": {
+    "id": "LT-005",
+    "repositories": [
+      "CB-REPO-000004"
+    ],
+    "repo_count": 1
+  },
+  "CON-001": {
+    "id": "CON-001",
+    "repositories": [
+      "CB-REPO-000006",
+      "CB-REPO-000015"
+    ],
+    "repo_count": 2
+  },
+  "LT-011": {
+    "id": "LT-011",
+    "repositories": [
+      "CB-REPO-000013"
+    ],
+    "repo_count": 1
+  },
+  "FIN-037": {
+    "id": "FIN-037",
+    "repositories": [
+      "CB-REPO-000022"
+    ],
+    "repo_count": 1
+  },
+  "RE-002": {
+    "id": "RE-002",
+    "repositories": [
+      "CB-REPO-000025"
+    ],
+    "repo_count": 1
+  },
+  "FIN-033": {
+    "id": "FIN-033",
+    "repositories": [
+      "CB-REPO-000027",
+      "CB-REPO-000458"
+    ],
+    "repo_count": 2
+  },
+  "FIN-021": {
+    "id": "FIN-021",
+    "repositories": [
+      "CB-REPO-000028"
+    ],
+    "repo_count": 1
+  },
+  "FIN-009": {
+    "id": "FIN-009",
+    "repositories": [
+      "CB-REPO-000029"
+    ],
+    "repo_count": 1
+  },
+  "FIN-006": {
+    "id": "FIN-006",
+    "repositories": [
+      "CB-REPO-000030"
+    ],
+    "repo_count": 1
+  },
+  "FIN-036": {
+    "id": "FIN-036",
+    "repositories": [
+      "CB-REPO-000045"
+    ],
+    "repo_count": 1
+  },
+  "FIN-023": {
+    "id": "FIN-023",
+    "repositories": [
+      "CB-REPO-000053"
+    ],
+    "repo_count": 1
+  },
+  "CON-010": {
+    "id": "CON-010",
+    "repositories": [
+      "CB-REPO-000074"
+    ],
+    "repo_count": 1
+  },
+  "CON-009": {
+    "id": "CON-009",
+    "repositories": [
+      "CB-REPO-000075"
+    ],
+    "repo_count": 1
+  },
+  "FIN-001": {
+    "id": "FIN-001",
+    "repositories": [
+      "CB-REPO-000079"
+    ],
+    "repo_count": 1
+  },
+  "CON-002": {
+    "id": "CON-002",
+    "repositories": [
+      "CB-REPO-000164"
+    ],
+    "repo_count": 1
+  },
+  "CON-003": {
+    "id": "CON-003",
+    "repositories": [
+      "CB-REPO-000165"
+    ],
+    "repo_count": 1
+  },
+  "CON-005": {
+    "id": "CON-005",
+    "repositories": [
+      "CB-REPO-000166"
+    ],
+    "repo_count": 1
+  },
+  "CON-004": {
+    "id": "CON-004",
+    "repositories": [
+      "CB-REPO-000167"
+    ],
+    "repo_count": 1
+  },
+  "CON-006": {
+    "id": "CON-006",
+    "repositories": [
+      "CB-REPO-000168"
+    ],
+    "repo_count": 1
+  },
+  "CON-007": {
+    "id": "CON-007",
+    "repositories": [
+      "CB-REPO-000169"
+    ],
+    "repo_count": 1
+  },
+  "CON-008": {
+    "id": "CON-008",
+    "repositories": [
+      "CB-REPO-000170"
+    ],
+    "repo_count": 1
+  },
+  "CON-011": {
+    "id": "CON-011",
+    "repositories": [
+      "CB-REPO-000171"
+    ],
+    "repo_count": 1
+  },
+  "CON-012": {
+    "id": "CON-012",
+    "repositories": [
+      "CB-REPO-000172"
+    ],
+    "repo_count": 1
+  },
+  "CON-013": {
+    "id": "CON-013",
+    "repositories": [
+      "CB-REPO-000173"
+    ],
+    "repo_count": 1
+  },
+  "CON-014": {
+    "id": "CON-014",
+    "repositories": [
+      "CB-REPO-000174"
+    ],
+    "repo_count": 1
+  },
+  "CON-015": {
+    "id": "CON-015",
+    "repositories": [
+      "CB-REPO-000175"
+    ],
+    "repo_count": 1
+  },
+  "CON-016": {
+    "id": "CON-016",
+    "repositories": [
+      "CB-REPO-000176"
+    ],
+    "repo_count": 1
+  },
+  "CON-017": {
+    "id": "CON-017",
+    "repositories": [
+      "CB-REPO-000177"
+    ],
+    "repo_count": 1
+  },
+  "CON-018": {
+    "id": "CON-018",
+    "repositories": [
+      "CB-REPO-000178"
+    ],
+    "repo_count": 1
+  },
+  "CON-019": {
+    "id": "CON-019",
+    "repositories": [
+      "CB-REPO-000179"
+    ],
+    "repo_count": 1
+  },
+  "CON-020": {
+    "id": "CON-020",
+    "repositories": [
+      "CB-REPO-000180"
+    ],
+    "repo_count": 1
+  },
+  "FIN-002": {
+    "id": "FIN-002",
+    "repositories": [
+      "CB-REPO-000431"
+    ],
+    "repo_count": 1
+  },
+  "FIN-003": {
+    "id": "FIN-003",
+    "repositories": [
+      "CB-REPO-000432"
+    ],
+    "repo_count": 1
+  },
+  "FIN-004": {
+    "id": "FIN-004",
+    "repositories": [
+      "CB-REPO-000433"
+    ],
+    "repo_count": 1
+  },
+  "FIN-005": {
+    "id": "FIN-005",
+    "repositories": [
+      "CB-REPO-000434"
+    ],
+    "repo_count": 1
+  },
+  "FIN-007": {
+    "id": "FIN-007",
+    "repositories": [
+      "CB-REPO-000435"
+    ],
+    "repo_count": 1
+  },
+  "FIN-008": {
+    "id": "FIN-008",
+    "repositories": [
+      "CB-REPO-000436"
+    ],
+    "repo_count": 1
+  },
+  "FIN-010": {
+    "id": "FIN-010",
+    "repositories": [
+      "CB-REPO-000437"
+    ],
+    "repo_count": 1
+  },
+  "FIN-011": {
+    "id": "FIN-011",
+    "repositories": [
+      "CB-REPO-000438"
+    ],
+    "repo_count": 1
+  },
+  "FIN-012": {
+    "id": "FIN-012",
+    "repositories": [
+      "CB-REPO-000439"
+    ],
+    "repo_count": 1
+  },
+  "FIN-013": {
+    "id": "FIN-013",
+    "repositories": [
+      "CB-REPO-000440"
+    ],
+    "repo_count": 1
+  },
+  "FIN-014": {
+    "id": "FIN-014",
+    "repositories": [
+      "CB-REPO-000441"
+    ],
+    "repo_count": 1
+  },
+  "FIN-015": {
+    "id": "FIN-015",
+    "repositories": [
+      "CB-REPO-000442"
+    ],
+    "repo_count": 1
+  },
+  "FIN-016": {
+    "id": "FIN-016",
+    "repositories": [
+      "CB-REPO-000443"
+    ],
+    "repo_count": 1
+  },
+  "FIN-017": {
+    "id": "FIN-017",
+    "repositories": [
+      "CB-REPO-000444"
+    ],
+    "repo_count": 1
+  },
+  "FIN-018": {
+    "id": "FIN-018",
+    "repositories": [
+      "CB-REPO-000445"
+    ],
+    "repo_count": 1
+  },
+  "FIN-019": {
+    "id": "FIN-019",
+    "repositories": [
+      "CB-REPO-000446"
+    ],
+    "repo_count": 1
+  },
+  "FIN-020": {
+    "id": "FIN-020",
+    "repositories": [
+      "CB-REPO-000447"
+    ],
+    "repo_count": 1
+  },
+  "FIN-022": {
+    "id": "FIN-022",
+    "repositories": [
+      "CB-REPO-000448"
+    ],
+    "repo_count": 1
+  },
+  "FIN-024": {
+    "id": "FIN-024",
+    "repositories": [
+      "CB-REPO-000449"
+    ],
+    "repo_count": 1
+  },
+  "FIN-025": {
+    "id": "FIN-025",
+    "repositories": [
+      "CB-REPO-000450"
+    ],
+    "repo_count": 1
+  },
+  "FIN-026": {
+    "id": "FIN-026",
+    "repositories": [
+      "CB-REPO-000451"
+    ],
+    "repo_count": 1
+  },
+  "FIN-027": {
+    "id": "FIN-027",
+    "repositories": [
+      "CB-REPO-000452"
+    ],
+    "repo_count": 1
+  },
+  "FIN-028": {
+    "id": "FIN-028",
+    "repositories": [
+      "CB-REPO-000453"
+    ],
+    "repo_count": 1
+  },
+  "FIN-029": {
+    "id": "FIN-029",
+    "repositories": [
+      "CB-REPO-000454"
+    ],
+    "repo_count": 1
+  },
+  "FIN-030": {
+    "id": "FIN-030",
+    "repositories": [
+      "CB-REPO-000455"
+    ],
+    "repo_count": 1
+  },
+  "FIN-031": {
+    "id": "FIN-031",
+    "repositories": [
+      "CB-REPO-000456"
+    ],
+    "repo_count": 1
+  },
+  "FIN-032": {
+    "id": "FIN-032",
+    "repositories": [
+      "CB-REPO-000457"
+    ],
+    "repo_count": 1
+  },
+  "FIN-034": {
+    "id": "FIN-034",
+    "repositories": [
+      "CB-REPO-000459"
+    ],
+    "repo_count": 1
+  },
+  "FIN-035": {
+    "id": "FIN-035",
+    "repositories": [
+      "CB-REPO-000460"
+    ],
+    "repo_count": 1
+  },
+  "LT-001": {
+    "id": "LT-001",
+    "repositories": [
+      "CB-REPO-000573"
+    ],
+    "repo_count": 1
+  },
+  "LT-002": {
+    "id": "LT-002",
+    "repositories": [
+      "CB-REPO-000574"
+    ],
+    "repo_count": 1
+  },
+  "LT-003": {
+    "id": "LT-003",
+    "repositories": [
+      "CB-REPO-000575"
+    ],
+    "repo_count": 1
+  },
+  "LT-004": {
+    "id": "LT-004",
+    "repositories": [
+      "CB-REPO-000576"
+    ],
+    "repo_count": 1
+  },
+  "LT-006": {
+    "id": "LT-006",
+    "repositories": [
+      "CB-REPO-000577"
+    ],
+    "repo_count": 1
+  },
+  "LT-007": {
+    "id": "LT-007",
+    "repositories": [
+      "CB-REPO-000578"
+    ],
+    "repo_count": 1
+  },
+  "LT-008": {
+    "id": "LT-008",
+    "repositories": [
+      "CB-REPO-000579"
+    ],
+    "repo_count": 1
+  },
+  "LT-009": {
+    "id": "LT-009",
+    "repositories": [
+      "CB-REPO-000580"
+    ],
+    "repo_count": 1
+  },
+  "LT-010": {
+    "id": "LT-010",
+    "repositories": [
+      "CB-REPO-000581"
+    ],
+    "repo_count": 1
+  },
+  "LT-012": {
+    "id": "LT-012",
+    "repositories": [
+      "CB-REPO-000582"
+    ],
+    "repo_count": 1
+  },
+  "LT-013": {
+    "id": "LT-013",
+    "repositories": [
+      "CB-REPO-000583"
+    ],
+    "repo_count": 1
+  },
+  "LT-014": {
+    "id": "LT-014",
+    "repositories": [
+      "CB-REPO-000584"
+    ],
+    "repo_count": 1
+  },
+  "LT-015": {
+    "id": "LT-015",
+    "repositories": [
+      "CB-REPO-000585"
+    ],
+    "repo_count": 1
+  },
+  "LT-016": {
+    "id": "LT-016",
+    "repositories": [
+      "CB-REPO-000586"
+    ],
+    "repo_count": 1
+  },
+  "LT-017": {
+    "id": "LT-017",
+    "repositories": [
+      "CB-REPO-000587"
+    ],
+    "repo_count": 1
+  },
+  "LT-018": {
+    "id": "LT-018",
+    "repositories": [
+      "CB-REPO-000588"
+    ],
+    "repo_count": 1
+  },
+  "LT-019": {
+    "id": "LT-019",
+    "repositories": [
+      "CB-REPO-000589"
+    ],
+    "repo_count": 1
+  },
+  "LT-020": {
+    "id": "LT-020",
+    "repositories": [
+      "CB-REPO-000590"
+    ],
+    "repo_count": 1
+  },
+  "LT-021": {
+    "id": "LT-021",
+    "repositories": [
+      "CB-REPO-000591"
+    ],
+    "repo_count": 1
+  },
+  "LT-022": {
+    "id": "LT-022",
+    "repositories": [
+      "CB-REPO-000592"
+    ],
+    "repo_count": 1
+  },
+  "LT-023": {
+    "id": "LT-023",
+    "repositories": [
+      "CB-REPO-000593"
+    ],
+    "repo_count": 1
+  },
+  "LT-024": {
+    "id": "LT-024",
+    "repositories": [
+      "CB-REPO-000594"
+    ],
+    "repo_count": 1
+  },
+  "LT-025": {
+    "id": "LT-025",
+    "repositories": [
+      "CB-REPO-000595"
+    ],
+    "repo_count": 1
+  },
+  "LT-026": {
+    "id": "LT-026",
+    "repositories": [
+      "CB-REPO-000596"
+    ],
+    "repo_count": 1
+  },
+  "LT-027": {
+    "id": "LT-027",
+    "repositories": [
+      "CB-REPO-000597"
+    ],
+    "repo_count": 1
+  },
+  "LT-028": {
+    "id": "LT-028",
+    "repositories": [
+      "CB-REPO-000598"
+    ],
+    "repo_count": 1
+  },
+  "LT-029": {
+    "id": "LT-029",
+    "repositories": [
+      "CB-REPO-000599"
+    ],
+    "repo_count": 1
+  },
+  "LT-030": {
+    "id": "LT-030",
+    "repositories": [
+      "CB-REPO-000600"
+    ],
+    "repo_count": 1
+  }
+}

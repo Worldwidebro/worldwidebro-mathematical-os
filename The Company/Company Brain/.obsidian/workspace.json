@@ -1,0 +1,234 @@
+{
+  "main": {
+    "id": "9651db6a4315d999",
+    "type": "split",
+    "children": [
+      {
+        "id": "1cb30d1e3a915a46",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3f62d8e8e3b0dfdc",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          },
+          {
+            "id": "11d56fefe2e409b0",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "23456fee60c52c31",
+    "type": "split",
+    "children": [
+      {
+        "id": "6d883338c85e3058",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1d60bbf17a178bd2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byModifiedTime",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "3be8634cca05f7f5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "4dda98ab1ced4333",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f1dc678e10abc478",
+    "type": "split",
+    "children": [
+      {
+        "id": "91bcd9831b38af69",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5f8b390e0647f9e9",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "0e9bab97e0c7cac1",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "3d24f3017b5cce3e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "61e6055ada315c40",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "751f31bbe22a801b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "11d56fefe2e409b0",
+  "lastOpenFiles": [
+    "50-MASTER-CONTROL/INSTALLATION_PHASES.md",
+    "_REGISTRIES/RECONCILIATION_2026_09_01/CAPABILITY_DEPENDENCY_MAP.md",
+    "_REGISTRIES/RECONCILIATION_2026_09_01/STARRED_REPOS_DEPENDENCY_ANALYSIS.json",
+    "_REGISTRIES/RECONCILIATION_2026_09_01/DELIVERY_SUMMARY.md",
+    "_REGISTRIES/VENTURE_REGISTRY.yaml",
+    "_REGISTRIES/REPOSITORY_REGISTRY.yaml",
+    "_REGISTRIES/RECONCILIATION_2026_09_01/RECONCILIATION_MANIFEST.json",
+    "18-TOOLS/README.md",
+    "_REGISTRIES/RECONCILIATION_2026_09_01/NEO4J_IMPORT_PAYLOADS.json",
+    "_REGISTRIES/RECONCILIATION_2026_09_01/UNIFIED_VENTURE_REGISTRY.json",
+    "_REGISTRIES/RECONCILIATION_2026_09_01/VENTURE_REGISTRY_FROM_REPOS.json",
+    "_REGISTRIES/RECONCILIATION_2026_09_01/GITHUB_INVENTORY_MASTER.json",
+    "_REGISTRIES/RECONCILIATION_2026_09_01/COMPANY_BRAIN_NEO4J_IMPORT.cypher",
+    "_REGISTRIES/RECONCILIATION_2026_09_01/COMPANY_BRAIN_AUDIT_REPORT.md",
+    "_REGISTRIES/RECONCILIATION_2026_09_01/CANONICAL_REGISTRY_DRAFT.json",
+    "_INFRASTRUCTURE/omniroute/COMPLETION.md",
+    "_INFRASTRUCTURE/omniroute/SETUP.md",
+    "START_HERE.md",
+    "_ONTOLOGY/PHASE_0_INTEGRATION.md",
+    "_REGISTRIES/agents/README.md",
+    "50-MASTER-CONTROL/SESSION_COMPLETION_2026-09-01.md",
+    "50-MASTER-CONTROL/HUNDRED_LAYERS.md",
+    "50-MASTER-CONTROL/DEPLOYMENT_CHECKLIST.md",
+    "50-MASTER-CONTROL/WORKFLOW_TEST_RESULTS.md",
+    "50-MASTER-CONTROL/SEVEN_PLANES.md",
+    "50-MASTER-CONTROL/INTEGRATION_SUMMARY.md",
+    "55-LOOP-ENGINEERING/FRACTAL_INTEGRATION.md",
+    "22-EXECUTION/HERDR_INTEGRATION.md",
+    "57-CODE-INTELLIGENCE/GRAFT_INTEGRATION.md",
+    "50-MASTER-CONTROL/EXECUTION_STACK.md",
+    "52-PEOPLE/README.md",
+    "NAVIGATION_GUIDE.md",
+    "TODO_PARALLEL_TASKS.md",
+    "SECTOR_INDEX.md",
+    "_PIPELINES/execution/EXECUTION_TRACKING.md",
+    "_ONTOLOGY/STATUS_LIFECYCLE.md"
+  ]
+}

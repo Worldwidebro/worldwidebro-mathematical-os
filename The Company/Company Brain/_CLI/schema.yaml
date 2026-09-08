@@ -1,0 +1,93 @@
+---
+# Company Brain CLI Schema for CLI-Anything
+# Authority: Infrastructure Control Plane (CP-027)
+# Status: Production-ready
+
+name: cb
+version: "1.0.0"
+description: "Company Brain unified CLI — deploy, configure, and verify infrastructure"
+
+commands:
+  infrastructure:
+    description: "Deploy and manage infrastructure"
+    deploy:
+      description: "Deploy infrastructure phases"
+      params:
+        phase: {type: choice, options: ["all", "1", "2", "3", "4"], default: "all"}
+        verify: {type: boolean, default: true}
+      run: |
+        cd _INFRASTRUCTURE
+        docker-compose -f docker-compose.yml up -d
+        echo "✅ Infrastructure deployed"
+
+    status:
+      description: "Check infrastructure health"
+      run: |
+        echo "🔍 Infrastructure Status"
+        docker ps --format "table {{.Names}}\t{{.Status}}" | grep -E "omniroute|neo4j|qdrant|grafana"
+        curl -s http://100.87.214.70:20128/dashboard > /dev/null && echo "✅ OmniRoute: ACTIVE" || echo "❌ OmniRoute: DOWN"
+
+  omniroute:
+    description: "Configure OmniRoute AI gateway"
+    setup:
+      description: "Auto-configure OmniRoute"
+      run: |
+        echo "⚙️  Setting up OmniRoute..."
+        echo "📍 Dashboard: http://100.87.214.70:20128/dashboard"
+        echo "Login: admin@omniroute.local / _.Thewave12"
+        echo ""
+        echo "Setup steps:"
+        echo "1. Add Ollama provider (http://100.87.214.70:11434)"
+        echo "2. Add models: qwen2.5-coder:14b, qwen2.5:32b, nomic-embed-text"
+        echo "3. Test inference"
+
+    test:
+      description: "Test inference"
+      params:
+        model: {type: string, default: "qwen2.5-coder:14b"}
+        prompt: {type: string, default: "Hello"}
+      run: curl -s http://100.87.214.70:20128/api/models/$model/test -H "Content-Type: application/json" -d "{\"prompt\":\"$prompt\"}"
+
+  neo4j:
+    description: "Manage Neo4j ontology"
+    wire:
+      description: "Wire OmniRoute to Neo4j"
+      run: |
+        echo "🔗 Wiring ontology..."
+        cypher-shell -u neo4j -p changeme << 'CYPHER_EOF'
+        CREATE (or:OmniRoute {id:"INT-OMNIROUTE-001", name:"OmniRoute Gateway", url:"http://100.87.214.70:20128", status:"ACTIVE"})
+        CREATE (prov:Provider {id:"PROV-OLLAMA-001", name:"ollama-mac-studio", type:"ollama", baseUrl:"http://100.87.214.70:11434"})
+        CREATE (or)-[:ROUTES_TO]->(prov)
+        CYPHER_EOF
+        echo "✅ Ontology wired"
+
+  mcp:
+    description: "Setup Claude Code integration"
+    setup:
+      description: "Configure MCP"
+      run: |
+        echo "🔌 Setting up MCP..."
+        cat > ~/.claude/mcp.json << 'MCP_EOF'
+        {"mcpServers":{"omniroute":{"command":"node","args":["~/.claude/omniroute-mcp-server.js"],"env":{"OMNIROUTE_URL":"http://100.87.214.70:20128","OMNIROUTE_EMAIL":"admin@omniroute.local","OMNIROUTE_PASSWORD":"_.Thewave12"}}}}
+        MCP_EOF
+        echo "✅ MCP configured"
+
+  test:
+    description: "Run tests"
+    e2e:
+      description: "End-to-end test"
+      run: |
+        echo "🧪 Testing infrastructure..."
+        curl -s http://100.87.214.70:20128/dashboard > /dev/null && echo "✅ OmniRoute" || echo "❌ OmniRoute"
+        curl -s http://100.87.214.70:11434/api/tags > /dev/null && echo "✅ Ollama" || echo "❌ Ollama"
+        cypher-shell -u neo4j -p changeme "RETURN 1;" > /dev/null 2>&1 && echo "✅ Neo4j" || echo "❌ Neo4j"
+        echo "✅ E2E test complete"
+
+  docs:
+    description: "View documentation"
+    infrastructure:
+      description: "Show infrastructure docs"
+      run: |
+        echo "📚 Company Brain Infrastructure"
+        echo "Quick start: cb infrastructure deploy --phase all"
+        echo "Access: OmniRoute http://100.87.214.70:20128"

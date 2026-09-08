@@ -1,0 +1,15 @@
+venture_id: "OPS-001"
+legal_entity: "WorldwideBro Staffing Ops LLC"
+cap_table:
+  -
+    member: "WorldwideBro Holdings / Sovereign Entity"
+    units: 850000
+    percentage: "85.0%"
+    voting: true
+  -
+    member: "Key Executive & Founder Reserve"
+    units: 150000
+    percentage: "15.0%"
+    voting: true
+total_authorized_units: 1000000
+governing_agreement: "Operating Agreement dated January 15, 2026"

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.companybrain.airllm-bridge</string>
+  <key>WorkingDirectory</key>
+  <string>/Volumes/LaCie/company-brain-services/airllm-bridge</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Volumes/LaCie/company-brain-services/airllm-bridge/.venv/bin/python</string>
+    <string>server.py</string>
+  </array>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>AIRLLM_HOST</key><string>0.0.0.0</string>
+    <key>AIRLLM_PORT</key><string>8020</string>
+    <key>AIRLLM_MOCK</key><string>0</string>
+    <key>AIRLLM_SHARDS_PATH</key><string>/Volumes/LaCie/airllm-shards</string>
+  </dict>
+  <key>RunAtLoad</key><true/>
+  <key>KeepAlive</key><true/>
+  <key>StandardOutPath</key>
+  <string>/Volumes/LaCie/company-brain-services/airllm-bridge/logs/launchd.out.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Volumes/LaCie/company-brain-services/airllm-bridge/logs/launchd.err.log</string>
+</dict>
+</plist>

@@ -1,0 +1,572 @@
+[
+  {
+    "name": "ops-staff-001-staffing",
+    "url": "https://ops-staff-001-staffing-worldwidebros-projects.vercel.app",
+    "updated": "9h",
+    "node": "24.x"
+  },
+  {
+    "name": "lt-005-medical-courier-dispatch",
+    "url": "https://lt-005-medical-courier-dispatch.vercel.app",
+    "updated": "3d",
+    "node": "24.x"
+  },
+  {
+    "name": "lt-005-deploy-temp",
+    "url": "https://lt-005-deploy-temp.vercel.app",
+    "updated": "3d",
+    "node": "24.x"
+  },
+  {
+    "name": "healthroute-courier",
+    "url": "https://healthroute-courier.vercel.app",
+    "updated": "3d",
+    "node": "24.x"
+  },
+  {
+    "name": "re-001-worldwidebro-holdings",
+    "url": "https://re-001-worldwidebro-holdings.vercel.app",
+    "updated": "5d",
+    "node": "24.x"
+  },
+  {
+    "name": "callcenter",
+    "url": "https://callcenter-eosin.vercel.app",
+    "updated": "7d",
+    "node": "24.x"
+  },
+  {
+    "name": "constructionos-dashboard",
+    "url": "https://constructionos-dashboard.vercel.app",
+    "updated": "10d",
+    "node": "24.x"
+  },
+  {
+    "name": "venture-hub",
+    "url": "https://venture-hub-worldwidebros-projects.vercel.app",
+    "updated": "14d",
+    "node": "22.x"
+  },
+  {
+    "name": "ec-113-kosmic-kitty",
+    "url": "https://ec-113-kosmic-kitty-worldwidebros-projects.vercel.app",
+    "updated": "14d",
+    "node": "24.x"
+  },
+  {
+    "name": "ec-113-separate",
+    "url": "https://ec-113-separate-worldwidebros-projects.vercel.app",
+    "updated": "14d",
+    "node": "24.x"
+  },
+  {
+    "name": "storefront",
+    "url": "https://storefront-worldwidebros-projects.vercel.app",
+    "updated": "15d",
+    "node": "24.x"
+  },
+  {
+    "name": "ec-112-cosmic-kitty",
+    "url": "https://ec-112-cosmic-kitty-worldwidebros-projects.vercel.app",
+    "updated": "15d",
+    "node": "24.x"
+  },
+  {
+    "name": "lt-011-dispatch-software",
+    "url": "https://lt-011-dispatch-software.vercel.app",
+    "updated": "15d",
+    "node": "24.x"
+  },
+  {
+    "name": "vex-hero-site",
+    "url": "https://vex-hero-site-sigma.vercel.app",
+    "updated": "16d",
+    "node": "24.x"
+  },
+  {
+    "name": "con-001-ace-construction",
+    "url": "https://con-001-ace-construction.vercel.app",
+    "updated": "17d",
+    "node": "24.x"
+  },
+  {
+    "name": "con001-gsd",
+    "url": "https://con001-gsd-worldwidebros-projects.vercel.app",
+    "updated": "17d",
+    "node": "24.x"
+  },
+  {
+    "name": "ec-001-angels-in-daylight",
+    "url": "https://ec-001-angels-in-daylight.vercel.app",
+    "updated": "38d",
+    "node": "24.x"
+  },
+  {
+    "name": "fin-033-ai-tax-preparation-service",
+    "url": "https://fin-033-ai-tax-preparation-service.vercel.app",
+    "updated": "38d",
+    "node": "24.x"
+  },
+  {
+    "name": "fin-021-tax-deduction-finder",
+    "url": "https://fin-021-tax-deduction-finder.vercel.app",
+    "updated": "38d",
+    "node": "24.x"
+  },
+  {
+    "name": "fin-009-crypto-tax-optimizer",
+    "url": "https://fin-009-crypto-tax-optimizer.vercel.app",
+    "updated": "38d",
+    "node": "24.x"
+  },
+  {
+    "name": "fin-006-tax-prep-filing-services",
+    "url": "https://fin-006-tax-prep-filing-services.vercel.app",
+    "updated": "38d",
+    "node": "24.x"
+  },
+  {
+    "name": "hermes-command-center",
+    "url": "https://hermes-command-center-iota.vercel.app",
+    "updated": "44d",
+    "node": "24.x"
+  },
+  {
+    "name": "ec-111-miss-toys",
+    "url": "https://ec-111-miss-toys.vercel.app",
+    "updated": "46d",
+    "node": "24.x"
+  },
+  {
+    "name": "vapi-voice-os",
+    "url": "https://vapi-voice-os.vercel.app",
+    "updated": "52d",
+    "node": "24.x"
+  },
+  {
+    "name": "divine-johns-portfolio",
+    "url": "https://divine-johns-portfolio.vercel.app",
+    "updated": "52d",
+    "node": "24.x"
+  },
+  {
+    "name": "tech-062-iza-os",
+    "url": "https://tech-062-iza-os.vercel.app",
+    "updated": "53d",
+    "node": "24.x"
+  },
+  {
+    "name": "arbitrage-nexus",
+    "url": "https://arbitrage-nexus.vercel.app",
+    "updated": "56d",
+    "node": "24.x"
+  },
+  {
+    "name": "genixbank-hero-site",
+    "url": "https://genixbank-hero-site.vercel.app",
+    "updated": "58d",
+    "node": "24.x"
+  },
+  {
+    "name": "mc-006-video-production-company",
+    "url": "https://mc-006-video-production-company.vercel.app",
+    "updated": "59d",
+    "node": "24.x"
+  },
+  {
+    "name": "marketeam",
+    "url": "https://marketeam-beta.vercel.app",
+    "updated": "60d",
+    "node": "24.x"
+  },
+  {
+    "name": "edu-landing-kit-template",
+    "url": "https://edu-landing-kit-template.vercel.app",
+    "updated": "60d",
+    "node": "24.x"
+  },
+  {
+    "name": "bloom-community-hub",
+    "url": "https://bloom-community-hub.vercel.app",
+    "updated": "60d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-014-veterans-support-ai",
+    "url": "https://comm-014-veterans-support-ai-worldwidebros-projects.vercel.app",
+    "updated": "60d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-050-community-cultural-ai",
+    "url": "https://comm-050-community-cultural-ai.vercel.app",
+    "updated": "60d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-049-public-event-ai",
+    "url": "https://comm-049-public-event-ai.vercel.app",
+    "updated": "60d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-048-community-transportation-ai",
+    "url": "https://comm-048-community-transportation-a.vercel.app",
+    "updated": "60d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-047-public-fitness-ai",
+    "url": "https://comm-047-public-fitness-ai.vercel.app",
+    "updated": "60d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-046-community-pet-care-ai",
+    "url": "https://comm-046-community-pet-care-ai.vercel.app",
+    "updated": "60d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-045-public-childcare-ai",
+    "url": "https://comm-045-public-childcare-ai.vercel.app",
+    "updated": "60d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-044-community-volunteering-ai",
+    "url": "https://comm-044-community-volunteering-ai.vercel.app",
+    "updated": "60d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-043-local-food-network-ai",
+    "url": "https://comm-043-local-food-network-ai.vercel.app",
+    "updated": "60d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-042-community-energy-ai",
+    "url": "https://comm-042-community-energy-ai.vercel.app",
+    "updated": "60d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-041-public-wi-fi-ai",
+    "url": "https://comm-041-public-wi-fi-ai.vercel.app",
+    "updated": "60d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-040-community-recycling-ai",
+    "url": "https://comm-040-community-recycling-ai.vercel.app",
+    "updated": "60d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-039-public-space-ai",
+    "url": "https://comm-039-public-space-ai.vercel.app",
+    "updated": "60d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-038-community-policing-ai",
+    "url": "https://comm-038-community-policing-ai.vercel.app",
+    "updated": "60d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-037-neighborhood-development-ai",
+    "url": "https://comm-037-neighborhood-development-a.vercel.app",
+    "updated": "60d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-036-public-infrastructure-ai",
+    "url": "https://comm-036-public-infrastructure-ai.vercel.app",
+    "updated": "60d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-035-community-arts-ai",
+    "url": "https://comm-035-community-arts-ai.vercel.app",
+    "updated": "60d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-034-senior-tech-support",
+    "url": "https://comm-034-senior-tech-support.vercel.app",
+    "updated": "60d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-033-youth-innovation-hub",
+    "url": "https://comm-033-youth-innovation-hub.vercel.app",
+    "updated": "60d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-032-public-health-ai",
+    "url": "https://comm-032-public-health-ai.vercel.app",
+    "updated": "60d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-031-community-investment-ai",
+    "url": "https://comm-031-community-investment-ai.vercel.app",
+    "updated": "60d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-030-cultural-exchange-ai",
+    "url": "https://comm-030-cultural-exchange-ai.vercel.app",
+    "updated": "60d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-029-community-wellness-ai",
+    "url": "https://comm-029-community-wellness-ai.vercel.app",
+    "updated": "60d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-028-public-safety-ai",
+    "url": "https://comm-028-public-safety-ai.vercel.app",
+    "updated": "60d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-027-local-government-ai",
+    "url": "https://comm-027-local-government-ai.vercel.app",
+    "updated": "60d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-026-public-education-ai",
+    "url": "https://comm-026-public-education-ai.vercel.app",
+    "updated": "60d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-025-community-legal-aid",
+    "url": "https://comm-025-community-legal-aid.vercel.app",
+    "updated": "60d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-024-youth-sports-ai",
+    "url": "https://comm-024-youth-sports-ai.vercel.app",
+    "updated": "60d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-023-elder-companion-ai",
+    "url": "https://comm-023-elder-companion-ai.vercel.app",
+    "updated": "60d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-022-job-training-center",
+    "url": "https://comm-022-job-training-center.vercel.app",
+    "updated": "60d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-021-housing-assistance-ai",
+    "url": "https://comm-021-housing-assistance-ai.vercel.app",
+    "updated": "60d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-020-public-transportation-ai",
+    "url": "https://comm-020-public-transportation-ai.vercel.app",
+    "updated": "60d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-019-community-garden-ai",
+    "url": "https://comm-019-community-garden-ai.vercel.app",
+    "updated": "60d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-018-neighborhood-watch-ai",
+    "url": "https://comm-018-neighborhood-watch-ai.vercel.app",
+    "updated": "60d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-017-local-business-directory",
+    "url": "https://comm-017-local-business-directory.vercel.app",
+    "updated": "60d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-016-community-health-ai",
+    "url": "https://comm-016-community-health-ai-worldwidebros-projects.vercel.app",
+    "updated": "60d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-015-youth-mentorship-program",
+    "url": "https://comm-015-youth-mentorship-program.vercel.app",
+    "updated": "61d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-013-women-s-empowerment-network",
+    "url": "https://comm-013-women-s-empowerment-networ.vercel.app",
+    "updated": "61d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-012-black-art-museum-ai",
+    "url": "https://comm-012-black-art-museum-ai.vercel.app",
+    "updated": "61d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-011-indigenous-creator-hub",
+    "url": "https://comm-011-indigenous-creator-hub.vercel.app",
+    "updated": "61d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-010-disaster-relief-ai",
+    "url": "https://comm-010-disaster-relief-ai.vercel.app",
+    "updated": "61d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-009-volunteer-hub-ai",
+    "url": "https://comm-009-volunteer-hub-ai.vercel.app",
+    "updated": "61d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-008-community-fundraising-ai",
+    "url": "https://comm-008-community-fundraising-ai.vercel.app",
+    "updated": "61d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-007-youth-leadership-ai",
+    "url": "https://comm-007-youth-leadership-ai.vercel.app",
+    "updated": "61d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-006-community-technology-access-ai",
+    "url": "https://comm-006-community-technology-acces.vercel.app",
+    "updated": "61d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-005-ace-food-security-ai",
+    "url": "https://comm-005-ace-food-security-ai.vercel.app",
+    "updated": "61d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-004-community-outreach-nonprofit",
+    "url": "https://comm-004-community-outreach-nonprof.vercel.app",
+    "updated": "61d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-002-brotherhood-coaching-network",
+    "url": "https://comm-002-brotherhood-coaching-netwo.vercel.app",
+    "updated": "61d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-001-luminary-worldwide-events",
+    "url": "https://comm-001-luminary-worldwide-events.vercel.app",
+    "updated": "61d",
+    "node": "24.x"
+  },
+  {
+    "name": "comm-003-ace-senior-care-connect",
+    "url": "https://comm-003-ace-senior-care-connect.vercel.app",
+    "updated": "61d",
+    "node": "24.x"
+  },
+  {
+    "name": "quantum-brain-sync-website-gf1f",
+    "url": "https://quantum-brain-sync-website-gf1f.vercel.app",
+    "updated": "102d",
+    "node": "22.x"
+  },
+  {
+    "name": "quantum-brain-sync-website-n7a4",
+    "url": "https://quantum-brain-sync-website-n7a4.vercel.app",
+    "updated": "102d",
+    "node": "22.x"
+  },
+  {
+    "name": "genixbank-financial-system",
+    "url": "https://genixbank-financial-system.vercel.app",
+    "updated": "102d",
+    "node": "24.x"
+  },
+  {
+    "name": "quantum-brain-sync-website-zevz",
+    "url": "https://quantum-brain-sync-website-zevz.vercel.app",
+    "updated": "105d",
+    "node": "22.x"
+  },
+  {
+    "name": "simple-landing",
+    "url": "https://simple-landing-pi.vercel.app",
+    "updated": "106d",
+    "node": "24.x"
+  },
+  {
+    "name": "civilization-os",
+    "url": "https://civilization-os.vercel.app",
+    "updated": "108d",
+    "node": "24.x"
+  },
+  {
+    "name": "ps-012-website-build",
+    "url": "https://ps-012-website-build.vercel.app",
+    "updated": "108d",
+    "node": "24.x"
+  },
+  {
+    "name": "quantum-brain-sync-website",
+    "url": "https://quantum-brain-sync-website.vercel.app",
+    "updated": "109d",
+    "node": "22.x"
+  },
+  {
+    "name": "pitch-kit",
+    "url": "https://pitch-kit-zeta.vercel.app",
+    "updated": "110d",
+    "node": "24.x"
+  },
+  {
+    "name": "bw-001-up-next-web",
+    "url": "https://bw-001-up-next-web.vercel.app",
+    "updated": "113d",
+    "node": "24.x"
+  },
+  {
+    "name": "v0-integrations-page",
+    "url": "https://v0-integrations-page-gold.vercel.app",
+    "updated": "113d",
+    "node": "22.x"
+  },
+  {
+    "name": "00-dashboard",
+    "url": "https://00-dashboard.vercel.app",
+    "updated": "113d",
+    "node": "24.x"
+  },
+  {
+    "name": "iza-os-enterprise",
+    "url": "https://iza-os-enterprise.vercel.app",
+    "updated": "114d",
+    "node": "22.x"
+  }
+]

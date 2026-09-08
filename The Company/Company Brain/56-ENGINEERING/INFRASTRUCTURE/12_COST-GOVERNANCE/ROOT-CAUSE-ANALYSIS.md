@@ -1,0 +1,22 @@
+---
+id: DOC-RCA-001
+aliases: ['ROOT-CAUSE-ANALYSIS', 'RCA']
+tags: ['rca', 'post-mortem', 'learning']
+status: ACTIVE
+updated: 2026-09-06
+---
+
+[[STARTHERE]] | [[56-ENGINEERING/INFRASTRUCTURE/INFRASTRUCTURE|INFRASTRUCTURE]] | [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/INFRASTRUCTURE-COST|INFRASTRUCTURE-COST]] | [[24-FINANCE]] | [[46-GOVERNANCE]]
+
+# Root Cause Analysis (RCA) Framework
+
+> **Authority:** CP-027  
+> **Status:** ACTIVE — Audited 2026-09-06
+
+## 1. Blameless Post-Mortem Standard
+Every SEV-1 or SEV-2 incident triggers a structured 5-Whys root cause analysis document committed to repository history.
+
+## 2. Connected Documents
+- Incident Management: [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/INCIDENT-MANAGEMENT|INCIDENT-MANAGEMENT.md]]
+- Problem Management: [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/PROBLEM-MANAGEMENT|PROBLEM-MANAGEMENT.md]]
+- Changelog: [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/INFRASTRUCTURE-CHANGELOG|INFRASTRUCTURE-CHANGELOG.md]]

@@ -1,0 +1,189 @@
+# Identity Registry — Ventures by 36-Sector Industry Framework
+# Generated: 2026-09-01 | Total: 500 ventures | Framework: 36 operational industries
+# Authority: Phase 1 Identity Graph Population
+# Base: 01-IDENTITY (Authoritative entity registry)
+#
+# Alignment: Each of 36 Company Brain organizational bases maps to one industry sector
+# Structure: 36 Industries → NAICS Classification → Ventures → Repositories → Agents → Capabilities
+#
+# Note: Current venture data uses 18 raw sectors; Phase 1 maps them to 36-industry framework
+
+sector_mapping:
+  # Raw venture data sectors → 36-industry sectors
+  agriculture:
+    ventures: 0
+    raw_sectors: []
+
+  forestry:
+    ventures: 0
+    raw_sectors: []
+
+  fishing:
+    ventures: 0
+    raw_sectors: []
+
+  mining:
+    ventures: 0
+    raw_sectors: []
+
+  construction:
+    ventures: 0
+    raw_sectors: [construction]
+
+  real-estate:
+    ventures: 0
+    raw_sectors: [real-estate]
+
+  manufacturing:
+    ventures: 0
+    raw_sectors: []
+
+  industrial-services:
+    ventures: 0
+    raw_sectors: []
+
+  utilities-energy:
+    ventures: 0
+    raw_sectors: []
+
+  environment-waste:
+    ventures: 0
+    raw_sectors: []
+
+  software-saas:
+    ventures: 30
+    raw_sectors: [software-technology]
+    examples: [ST-001-SaaS-Platform, ST-016-AI]
+
+  ai-robotics:
+    ventures: 60
+    raw_sectors: [technology]
+    examples: [TECH-001-Quantum-Algorithm-AI, TECH-039-Blockchain-Verifier-AI]
+
+  cybersecurity:
+    ventures: 0
+    raw_sectors: []
+
+  telecom-connectivity:
+    ventures: 0
+    raw_sectors: []
+
+  data-cloud-infrastructure:
+    ventures: 0
+    raw_sectors: []
+
+  transportation-logistics:
+    ventures: 30
+    raw_sectors: [logistics-transport]
+    examples: [LT-001-Truck-Dispatch-Company, LT-016-Trucking-Company]
+
+  automotive-mobility:
+    ventures: 0
+    raw_sectors: []
+
+  warehousing-supply-chain:
+    ventures: 0
+    raw_sectors: []
+
+  wholesale-trade:
+    ventures: 0
+    raw_sectors: []
+
+  retail-ecommerce:
+    ventures: 110
+    raw_sectors: [e-commerce]
+    examples: [EC-001-Angels-in-Daylight, EC-044-Live-Commerce-Platform]
+
+  financial-services:
+    ventures: 36
+    raw_sectors: [financial]
+    examples: [FIN-001-GenixBank-Lite, FIN-036-Arbitrage-Nexus-Platform]
+
+  insurance:
+    ventures: 0
+    raw_sectors: []
+
+  legal-services:
+    ventures: 0
+    raw_sectors: [professional-services]
+
+  accounting-tax:
+    ventures: 0
+    raw_sectors: [professional-services]
+
+  business-professional-services:
+    ventures: 25
+    raw_sectors: [professional-services]
+    examples: [PS-001-Business-Consulting, PS-011-Real-Estate-Agency]
+
+  healthcare-medical:
+    ventures: 0
+    raw_sectors: []
+
+  biotech-lifesciences:
+    ventures: 0
+    raw_sectors: []
+
+  social-community-services:
+    ventures: 0
+    raw_sectors: []
+
+  hospitality-tourism:
+    ventures: 35
+    raw_sectors: [food-hospitality]
+    examples: [FH-001-Personal-Chef-Service, FH-021-Food-Truck-Business]
+
+  food-beverage:
+    ventures: 0
+    raw_sectors: []
+
+  entertainment-media-sports:
+    ventures: 45
+    raw_sectors: [media-content, fitness-sports]
+    examples: [MC-001-YouTube-Channel-Network, FS-001-Gym]
+
+  personal-consumer-services:
+    ventures: 65
+    raw_sectors: [beauty-wellness, operations]
+    examples: [BW-001-Lash-Extension-Studio, OPS-001-Fractional-CTO-Agency]
+
+  education-training:
+    ventures: 22
+    raw_sectors: [education, education-training]
+    examples: [ET-001-Online-Tutoring-Platform, EDU-001-Youth-Entrepreneurship-Curriculum]
+
+  government-public-sector:
+    ventures: 0
+    raw_sectors: []
+
+  nonprofits-associations:
+    ventures: 0
+    raw_sectors: []
+
+  research-innovation:
+    ventures: 0
+    raw_sectors: []
+
+summary:
+  total_ventures: 500
+  active_ventures_mapped: 458
+  unmapped_ventures: 42
+  by_stage:
+    planned: 290
+    validation: 120
+    mvp: 80
+    growth: 10
+  sector_coverage:
+    16_of_36: "Sectors with existing ventures"
+    20_of_36: "Sectors ready for new ventures (greenfield)"
+
+nextstep_phase2:
+  requirement: "Map each venture to primary/secondary NAICS codes"
+  mapping_fields:
+    - primary_naics_code
+    - secondary_naics_code
+    - sic_code
+    - psc_code (for government contracts)
+    - uei (unique entity identifier)
+    - cage_code
+  integration_point: "PHASE_2_INTEGRATION.md"

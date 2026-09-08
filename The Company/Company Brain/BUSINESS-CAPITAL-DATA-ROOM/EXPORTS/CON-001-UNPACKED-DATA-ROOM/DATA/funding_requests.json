@@ -1,0 +1,32 @@
+{
+  "total_ask": "$500,000 Debt + $200,000 DOE Grant",
+  "loan_amount": "$350,000 SBA 7(a) + $150,000 Working Capital Line",
+  "grant_ask": "$200,000 DOE SBIR Topic 12a",
+  "uses": [
+    [
+      "Field Diagnostic Equipment & Fleet",
+      "$110,000",
+      "2 Outfitted service vans, blower door kits, FLIR cameras"
+    ],
+    [
+      "Progress Draw Mobilization Escrow",
+      "$150,000",
+      "Material escrow deposits for bonded public contracts"
+    ],
+    [
+      "Working Capital & Payroll Reserve",
+      "$140,000",
+      "90-day payroll runway for 2 lead superintendents"
+    ],
+    [
+      "Software Platform Scaling",
+      "$60,000",
+      "Mobile app offline sync and camera AI integration"
+    ],
+    [
+      "Legal, SBA Fees & Closing Costs",
+      "$40,000",
+      "Statutory loan origination and surety brokerage fees"
+    ]
+  ]
+}

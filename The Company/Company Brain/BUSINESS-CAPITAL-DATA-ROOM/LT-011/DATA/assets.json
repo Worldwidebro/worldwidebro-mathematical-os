@@ -1,0 +1,19 @@
+{
+  "venture_id": "LT-011",
+  "digital_assets": [
+    {
+      "type": "GitHub Repository",
+      "identifier": "Worldwidebro/lt-011-dispatch-software",
+      "verified_commit": "3ec3011"
+    },
+    {
+      "type": "Production Web Surface",
+      "url": "https://lt-011-dispatch-software.vercel.app",
+      "status": "LIVE"
+    }
+  ],
+  "commercial_gateway": {
+    "provider": "Stripe",
+    "status": "WIRED_ACTIVE"
+  }
+}

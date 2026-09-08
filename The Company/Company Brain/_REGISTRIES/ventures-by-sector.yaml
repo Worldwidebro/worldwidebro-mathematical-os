@@ -1,0 +1,277 @@
+metadata:
+  version: '1.0'
+  created_at: '2026-09-02'
+  total_ventures: 789
+  total_sectors: 35
+  complete: false
+  note: Most ventures are 'planned' status. Sector aliases (FIN/CON/RE/LT) map to
+    canonical SEC-### codes.
+sector_aliases:
+  FIN: SEC-008
+  CON: SEC-002
+  RE: SEC-020
+  LT: SEC-017
+ventures:
+  SEC-008:
+    description: Banking, payments, fintech, insurance, investment management
+    opco: OpCo-008
+    venture_count: 300
+    aliases:
+    - FIN
+    ventures:
+      FIN-001:
+        name: Genixbank Lite
+        status: planned
+        repo_count: 0
+      FIN-002:
+        name: Credit Repair Automation
+        status: planned
+      FIN-003:
+        name: AI Boss Hub Lite
+        status: planned
+      FIN-037:
+        name: WorldwideBro Quantitative Trading System
+        status: OPERATING_VALIDATING
+  SEC-002:
+    description: General contracting, project management, materials, equipment
+    opco: OpCo-002
+    venture_count: 200
+    aliases:
+    - CON
+    ventures:
+      CON-001:
+        name: Ace Construction
+        status: operating
+        repo_count: 1
+        repository: con-001-ace-construction
+        deployment: Vercel (live)
+      CON-011:
+        name: Electrical Sector
+        status: validating
+        repo_count: 1
+        repository: con-011-electrical
+        deployment: Vercel
+  SEC-020:
+    description: Commercial real estate, residential, property management
+    opco: OpCo-020
+    venture_count: 150
+    aliases:
+    - RE
+    ventures:
+      RE-001:
+        name: Real Estate Platform
+        status: validating
+        repo_count: 1
+  SEC-017:
+    description: Freight, last-mile delivery, supply chain, fleet management
+    opco: OpCo-017
+    venture_count: 139
+    aliases:
+    - LT
+    ventures:
+      LT-005:
+        name: HealthRoute Medical Courier Dispatch
+        status: OPERATING_VALIDATING
+      LT-011:
+        name: CarrierDispatch TMS
+        status: OPERATING_VALIDATING
+  SEC-024:
+    description: SaaS, cloud platforms, enterprise software, infrastructure, AI/ML
+    opco: OpCo-024
+    venture_count: 85
+    ventures:
+      TECH-038:
+        name: Shared Voice OS
+        status: operating
+        repo_count: 1
+        repository: tech-038-shared-voice-os
+      TECH-040:
+        name: Securify
+        status: operating
+        repo_count: 1
+        repository: tech-040-securify
+      TECH-062:
+        name: IZA OS
+        status: operating
+        repo_count: 1
+        repository: tech-062-iza-os
+  SEC-001:
+    description: Cosmetics, skincare, personal care, fitness, wellness
+    opco: OpCo-001
+    venture_count: 12
+    ventures: {}
+  SEC-005:
+    description: K-12, higher education, corporate training, skill development
+    opco: OpCo-005
+    venture_count: 15
+    ventures:
+      ET-011:
+        name: Education Technology
+        status: operating
+  SEC-011:
+    description: Video games, esports, casinos, gaming platforms
+    opco: OpCo-011
+    venture_count: 18
+    ventures:
+      EC-111:
+        name: Miss Toys
+        status: operating
+        repo_count: 1
+        repository: ec-111-miss-toys
+        description: E-commerce marketplace for toys
+  SEC-014:
+    description: Recruiting, talent management, workforce solutions
+    opco: OpCo-014
+    venture_count: 8
+    ventures:
+      OPS-001:
+        name: Staffing Agency
+        status: operating
+        repo_count: 1
+        repository: ops-001-staffing
+  SEC-030:
+    description: Digital payments, cryptocurrency, blockchain, lending
+    opco: OpCo-030
+    venture_count: 22
+    ventures:
+      CRYPTO-001:
+        name: Arbitrage Nexus
+        status: operating
+  SEC-032:
+    description: LLMs, computer vision, AI infrastructure
+    opco: OpCo-032
+    venture_count: 12
+    ventures: {}
+  SEC-003:
+    description: Consumer Electronics & Hardware
+    opco: OpCo-003
+    venture_count: 2
+    ventures: {}
+  SEC-004:
+    description: Content & Media
+    opco: OpCo-004
+    venture_count: 5
+    ventures: {}
+  SEC-006:
+    description: Energy & Utilities
+    opco: OpCo-006
+    venture_count: 3
+    ventures: {}
+  SEC-007:
+    description: Environmental Services
+    opco: OpCo-007
+    venture_count: 2
+    ventures: {}
+  SEC-009:
+    description: Food & Agriculture
+    opco: OpCo-009
+    venture_count: 5
+    ventures: {}
+  SEC-010:
+    description: Food Service & Restaurants
+    opco: OpCo-010
+    venture_count: 8
+    ventures: {}
+  SEC-012:
+    description: Healthcare & Biotechnology
+    opco: OpCo-012
+    venture_count: 6
+    ventures: {}
+  SEC-013:
+    description: Hospitality & Travel
+    opco: OpCo-013
+    venture_count: 5
+    ventures: {}
+  SEC-015:
+    description: Insurance
+    opco: OpCo-015
+    venture_count: 3
+    ventures: {}
+  SEC-016:
+    description: Legal & Compliance
+    opco: OpCo-016
+    venture_count: 2
+    ventures: {}
+  SEC-018:
+    description: Manufacturing & Engineering
+    opco: OpCo-018
+    venture_count: 4
+    ventures: {}
+  SEC-019:
+    description: Marketing & Advertising
+    opco: OpCo-019
+    venture_count: 6
+    ventures: {}
+  SEC-021:
+    description: Retail & E-commerce
+    opco: OpCo-021
+    venture_count: 25
+    ventures:
+      COMM-001:
+        name: Commerce Ventures
+        status: operating
+      EC-001:
+        name: Angels in Daylight Apparel
+        status: OPERATING_VALIDATING
+  SEC-022:
+    description: Telecommunications & Connectivity
+    opco: OpCo-022
+    venture_count: 2
+    ventures: {}
+  SEC-023:
+    description: Professional Services
+    opco: OpCo-023
+    venture_count: 5
+    ventures: {}
+  SEC-025:
+    description: Automotive & Mobility
+    opco: OpCo-025
+    venture_count: 3
+    ventures: {}
+  SEC-026:
+    description: Utilities & Infrastructure
+    opco: OpCo-026
+    venture_count: 2
+    ventures: {}
+  SEC-027:
+    description: Venture Capital & Investment
+    opco: OpCo-027
+    venture_count: 2
+    ventures: {}
+  SEC-028:
+    description: B2B Enterprise Software
+    opco: OpCo-028
+    venture_count: 8
+    ventures: {}
+  SEC-029:
+    description: Marketplace & Platform
+    opco: OpCo-029
+    venture_count: 10
+    ventures: {}
+  SEC-031:
+    description: Climate & Sustainability
+    opco: OpCo-031
+    venture_count: 3
+    ventures: {}
+  SEC-033:
+    description: Cybersecurity & Privacy
+    opco: OpCo-033
+    venture_count: 4
+    ventures: {}
+  SEC-034:
+    description: Decentralized & Web3
+    opco: OpCo-034
+    venture_count: 8
+    ventures: {}
+  SEC-035:
+    description: '[RESERVED] Discovery slot'
+    opco: OpCo-035
+    venture_count: 0
+    ventures: {}
+summary_by_status:
+  operating: 22+ ventures
+  validating: ~80 ventures
+  prototype: ~118 ventures
+  planned: ~569 ventures
+next_step: VEX crosswalk validation - verify sector assignments against live portal
+  data

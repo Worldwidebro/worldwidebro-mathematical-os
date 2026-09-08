@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "Company Brain Memory Registry",
+  "version": "1.0.0",
+  "last_updated": "2026-09-05T11:15:00Z",
+  "authority": "CP-027",
+  "storage_backends": {
+    "graph_layer": {
+      "service": "Neo4j",
+      "uri": "bolt://100.87.214.70:7687",
+      "http_console": "http://100.87.214.70:7474",
+      "host": "Mac Studio M4 Max",
+      "purpose": "Associative Graph Memory & Causal Trees",
+      "status": "ACTIVE"
+    },
+    "vector_layer": {
+      "service": "Qdrant",
+      "uri": "http://100.87.214.70:6333",
+      "host": "Mac Studio M4 Max",
+      "purpose": "Dense Vector Embeddings & Semantic Search",
+      "status": "ACTIVE"
+    },
+    "telemetry_layer": {
+      "service": "OpenObserve",
+      "uri": "http://100.87.214.70:5080",
+      "host": "Mac Studio M4 Max",
+      "purpose": "Episodic Telemetry, Inference Spans, & Execution Logs",
+      "status": "CONFIGURED"
+    },
+    "inference_router": {
+      "service": "OmniRoute",
+      "uri": "http://localhost:20128",
+      "tunnel_uri": "http://100.80.229.113:20128",
+      "host": "MacBook Air / Mac Studio Mesh",
+      "purpose": "Model Combos, Quota Management, Memory Routing",
+      "status": "ACTIVE"
+    },
+    "secrets_vault": {
+      "service": "Bitwarden CLI",
+      "id": "SEC-BITWARDEN-001",
+      "path": "/opt/homebrew/bin/bw",
+      "purpose": "Zero-Knowledge Secrets & Key Resolution",
+      "status": "ACTIVE"
+    }
+  },
+  "collections": [
+    {
+      "id": "COL-ENTITIES",
+      "name": "Semantic Entities",
+      "backend": "Qdrant",
+      "vector_dimension": 1536,
+      "distance": "Cosine",
+      "description": "713 ventures, 893 owned repos, 904 external repos, ontology terms"
+    },
+    {
+      "id": "COL-EPISODES",
+      "name": "Episodic Sessions",
+      "backend": "Local JSONL / OpenObserve",
+      "description": "Conversation transcripts, task trajectories, post-mortems"
+    },
+    {
+      "id": "COL-PROCEDURES",
+      "name": "Procedural Skills & SOPs",
+      "backend": "Git Markdown",
+      "path": ".agents/skills/",
+      "description": "Validated procedural runbooks and capability harnesses"
+    }
+  ]
+}

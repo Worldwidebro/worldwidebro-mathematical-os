@@ -1,0 +1,67 @@
+# ==============================================================================
+# CANONICAL ONTOLOGY: TRUTH_STATUS
+# Version: 1.0.0
+# Authority: Knowledge Control Plane (CP-013) & Executive Governance (CP-006)
+# Standard: Epistemic Graph Verification Matrix
+# ==============================================================================
+
+version: "1.0.0"
+last_updated: "2026-09-05"
+description: "Discrete epistemic state definitions for all claims, assertions, and graph nodes in Company Brain."
+
+TRUTH_STATUS:
+  VERIFIED:
+    code: "VERIFIED"
+    description: "Directly evidenced and currently reproducible"
+    confidence_range: [0.90, 1.00]
+    action_required: "None; safe to depend upon until expiration"
+
+  PROBABLE:
+    code: "PROBABLE"
+    description: "Strong evidence, not independently verified"
+    confidence_range: [0.70, 0.89]
+    action_required: "Schedule independent verification before high-stakes commitment"
+
+  ASSUMED:
+    code: "ASSUMED"
+    description: "Working hypothesis"
+    confidence_range: [0.40, 0.69]
+    action_required: "Must be accompanied by explicit falsification experiment"
+
+  UNKNOWN:
+    code: "UNKNOWN"
+    description: "Insufficient evidence"
+    confidence_range: [0.00, 0.39]
+    action_required: "Conduct discovery spike or market inquiry"
+
+  DISPROVEN:
+    code: "DISPROVEN"
+    description: "Evidence contradicts the claim"
+    confidence_range: [0.00, 0.00]
+    action_required: "Immediate architectural or strategic refactoring; strip dependencies"
+
+  STALE:
+    code: "STALE"
+    description: "Was true, but verification expired"
+    confidence_range: [0.30, 0.50]
+    action_required: "Auto-recheck via CLI probe or manual audit"
+
+  CONFLICTED:
+    code: "CONFLICTED"
+    description: "Multiple credible sources disagree"
+    confidence_range: [0.20, 0.60]
+    action_required: "Escalate to root-cause synthesis or adversarial red-team review"
+
+graph_schema:
+  node_type: "Claim"
+  relationships:
+    - edge: "HAS_STATUS"
+      target: "TRUTH_STATUS"
+    - edge: "SUPPORTED_BY"
+      target: "Evidence"
+    - edge: "OBSERVED_AT"
+      target: "Timestamp"
+    - edge: "SOURCE"
+      target: "SourceRecord"
+    - edge: "EXPIRES_AT"
+      target: "Timestamp"

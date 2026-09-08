@@ -1,0 +1,95 @@
+{
+  "registry_id": "REG-SERVICE-001",
+  "updated_at": "2026-09-05",
+  "services": {
+    "SRV-EXO-001": {
+      "name": "exo (Native MLX Inference)",
+      "host": "mac-studio",
+      "port": 52415,
+      "protocol": "HTTP / OpenAI Compatible",
+      "status": "LIVE_VERIFIED",
+      "models": [
+        "mlx-community/Qwen3.6-35B-A3B-5bit"
+      ],
+      "replaces": "Ollama (uninstalled 2026-07-17)"
+    },
+    "SRV-LITELLM-001": {
+      "name": "LiteLLM Model Gateway",
+      "host": "mac-studio",
+      "port": 4000,
+      "status": "LIVE_VERIFIED",
+      "container": "civos_litellm",
+      "routing_strategy": "simple-shuffle",
+      "fallbacks": {
+        "qwen-heavy": "claude-sonnet",
+        "qwen-fast": "claude-haiku"
+      }
+    },
+    "SRV-OMNIROUTE-001": {
+      "name": "OmniRoute Traffic Controller",
+      "host": "mac-studio",
+      "port": 20128,
+      "status": "LIVE_VERIFIED",
+      "version": "3.8.50"
+    },
+    "SRV-NEO4J-001": {
+      "name": "Neo4j Graph Database",
+      "host": "mac-studio",
+      "port_http": 7474,
+      "port_bolt": 7687,
+      "status": "LIVE_VERIFIED",
+      "container": "civos_neo4j",
+      "storage_mount": "/Volumes/LaCie/neo4j/data"
+    },
+    "SRV-QDRANT-001": {
+      "name": "Qdrant Vector Engine",
+      "host": "mac-studio",
+      "port": 6333,
+      "status": "LIVE_VERIFIED",
+      "container": "civos_qdrant",
+      "storage_mount": "/Volumes/LaCie/qdrant/storage"
+    },
+    "SRV-POSTGRES-001": {
+      "name": "PostgreSQL Operational Database",
+      "host": "mac-studio",
+      "port": 5432,
+      "status": "LIVE_VERIFIED",
+      "container": "postgres",
+      "storage_mount": "/Volumes/LaCie/postgres/data"
+    },
+    "SRV-REDIS-001": {
+      "name": "Redis Cache & State Store",
+      "host": "mac-studio",
+      "port": 6379,
+      "status": "LIVE_VERIFIED"
+    },
+    "SRV-GRAFANA-001": {
+      "name": "Grafana Observability Dashboards",
+      "host": "mac-studio",
+      "port": 3011,
+      "status": "LIVE_VERIFIED",
+      "container": "t7shield-grafana-1"
+    },
+    "SRV-LANGFUSE-001": {
+      "name": "Langfuse LLM Tracing",
+      "host": "mac-studio",
+      "port": 3003,
+      "status": "LIVE_IDLE (Callback not wired in LiteLLM)",
+      "container": "civos_langfuse"
+    },
+    "SRV-WEBUI-001": {
+      "name": "Open WebUI",
+      "host": "mac-studio",
+      "port": 3010,
+      "status": "LIVE_VERIFIED",
+      "container": "civos_webui"
+    },
+    "SRV-FASTMCP-001": {
+      "name": "FastMCP Server",
+      "host": "mac-studio",
+      "runtime": "Python 3.12 (~/.venv/company-brain)",
+      "script": "_MCP/fastmcp_server.py",
+      "status": "LIVE_VERIFIED"
+    }
+  }
+}

@@ -1,0 +1,1070 @@
+repo_id,repo_name,language,stars,description
+OWN-PRIV-0001,bw-eroticafox,Unknown,0,
+OWN-PRIV-0002,lt-005-medical-courier-dispatch,HTML,0,Civilization OS — LT-005-Medical-Courier-Dispatch
+OWN-PRIV-0003,career-ops,JavaScript,0,Personal fork of career-ops job-search pipeline (+ pay enrichment & filterable explorer)
+OWN-PRIV-0004,worldwidebro-venture-portal,TypeScript,0,
+OWN-PRIV-0005,Vex,TypeScript,0,
+OWN-PRIV-0006,fin-037-worldwidebro-trading-system,Python,0,
+OWN-PRIV-0007,lt-011-dispatch-software,HTML,0,Civilization OS — LT-011-Dispatch-Software
+OWN-PRIV-0009,con-001-ace-construction,TypeScript,0,CON-001: Ace Construction - Construction services venture
+OWN-PRIV-0010,venture-hub,TypeScript,0,IZA OS Venture Hub - Central command for 687 ventures across 22 sectors
+OWN-PRIV-0014,ec-001-angels-in-daylight,HTML,0,Civilization OS — EC-001-Angels-in-Daylight
+OWN-PRIV-0016,fin-021-tax-deduction-finder,Python,0,Fin 021 Tax Deduction Finder - Part of Civilization OS venture ecosystem
+OWN-PRIV-0017,fin-009-crypto-tax-optimizer,Python,0,Fin 009 Crypto Tax Optimizer - Part of Civilization OS venture ecosystem
+OWN-PRIV-0018,fin-006-tax-prep-filing-services,HTML,0,Fin 006 Tax Prep Filing Services - Part of Civilization OS venture ecosystem
+OWN-PRIV-0021,OS-001-MATHEMATICAL-OS-REGISTRY,Unknown,0,
+OWN-PRIV-0022,Worldwidebro,Unknown,0,Antwuan Johns — @Worldwidebro profile
+OWN-PRIV-0028,fin-036-arbitrage-nexus-platform,Shell,0,Civilization OS — FIN-036-Arbitrage-Nexus-Platform
+OWN-PRIV-0031,spec-019-smart-home-security,Unknown,0,Venture backup — spec-019-smart-home-security | Civilization OS
+OWN-PRIV-0034,callitwhatyouwant,Unknown,0,Back n forth 
+OWN-PRIV-0036,arbitrage-nexus,TypeScript,0,Arbitrage opportunity detection and execution platform
+OWN-PRIV-0037,tech-040-cybersecurity-shield,Go,0,Tech 040 Cybersecurity Shield - Part of Civilization OS venture ecosystem
+OWN-PRIV-0038,bloom-community-hub,TypeScript,0,"Bloom — unified Community sector hub, one page per real venture"
+OWN-PRIV-0039,mc-006-video-production-company,TypeScript,0,Civilization OS — MC-006-Video-Production-Company
+OWN-PRIV-0040,freeclaudecode,Shell,0,
+OWN-PRIV-0045,ec-013-merch-licensing,Unknown,0,Civilization OS — EC-013-Merch-Licensing
+OWN-PRIV-0048,ec-003-shopify-autopilot,Unknown,0,Civilization OS — EC-003-Shopify-Autopilot
+OWN-PRIV-0049,ec-002-new-world-apparel,JavaScript,0,Civilization OS — EC-002-New-World-Apparel
+OWN-PRIV-0050,worldwidebro-construction-os,Python,0,"CON OS: Construction operations system with deal automation, contract generation, payment splitting,"
+OWN-PRIV-0052,worldwidebro-finance-os,Python,0,"🏦 Unified Financial Services Platform - Forecasting, Advisory, Compliance, Analytics, Investment Man"
+OWN-PRIV-0053,edu-013-automated-empire-book,Unknown,0,Civilization OS — EDU-013-Automated-Empire-Book
+OWN-PRIV-0054,clip,Python,0,
+OWN-PRIV-0055,con-010-plumbing-services,HTML,0,
+OWN-PRIV-0056,con-009-roofing-company,HTML,0,
+OWN-PRIV-0057,Applyingforjobs,Python,0,
+OWN-PRIV-0058,deliv-713-roadrunner-cannabis,Python,0,"Roadrunner Cannabis Delivery Platform - DELIV-713 Venture | Customer shop, driver delivery app, admi"
+OWN-PRIV-0059,fin-001-genixbank-lite,HTML,0,Fin 001 Genixbank Lite - Part of Civilization OS venture ecosystem
+OWN-PRIV-0060,worldwidebro-os-knowledge-graph,Python,0,"Iza OS scaffold — the source of truth for all machines, MCP servers, agents, ventures, and skills"
+OWN-PRIV-0061,worldwidebro-os-business-engine,TypeScript,0,IZA OS: Core ecosystem integration layer
+OWN-PRIV-0062,obsidian-vault,Python,0,"Knowledge base with venture memory, graphs, and documentation"
+OWN-PRIV-0079,comm-034-senior-tech-support,TypeScript,0,Civilization OS — COMM-034-Senior-Tech-Support
+OWN-PRIV-0080,comm-033-youth-innovation-hub,TypeScript,0,Civilization OS — COMM-033-Youth-Innovation-Hub
+OWN-PRIV-0096,comm-017-local-business-directory,TypeScript,0,Civilization OS — COMM-017-Local-Business-Directory
+OWN-PRIV-0098,comm-015-youth-mentorship-program,TypeScript,0,Civilization OS — COMM-015-Youth-Mentorship-Program
+OWN-PRIV-0100,comm-013-women-s-empowerment-network,TypeScript,0,Civilization OS — COMM-013-Women-s-Empowerment-Network
+OWN-PRIV-0102,comm-011-indigenous-creator-hub,TypeScript,0,Civilization OS — COMM-011-Indigenous-Creator-Hub
+OWN-PRIV-0109,comm-004-community-outreach-nonprofit,TypeScript,0,Civilization OS — COMM-004-Community-Outreach-Nonprofit
+OWN-PRIV-0110,comm-003-ace-senior-care-connect,TypeScript,0,Civilization OS — COMM-003-Ace-Senior-Care-Connect
+OWN-PRIV-0111,comm-002-brotherhood-coaching-network,TypeScript,0,Civilization OS — COMM-002-Brotherhood-Coaching-Network
+OWN-PRIV-0112,comm-001-luminary-worldwide-events,TypeScript,0,Civilization OS — COMM-001-Luminary-Worldwide-Events
+OWN-PRIV-0113,the-office,TypeScript,0,
+OWN-PRIV-0115,iza-os-rag-system,Python,0,📚 RAG System - Retrieval augmented generation
+OWN-PRIV-0116,venture-factory-core,TypeScript,0,"Corporate architecture, automation scripts, and venture templates"
+OWN-PRIV-0117,bw-001-up-next-business,HTML,0,"BW-001 Up Next: Client intake, contracts, pricing & project planning"
+OWN-PRIV-0118,iza-os-knowledge-graph,Unknown,0,🕸️ Knowledge Graph - Entity relationship mapping
+OWN-PRIV-0119,ps-021-seo-agency,Unknown,0,
+OWN-PRIV-0120,ec-111-tve-fragrance,Python,0,
+OWN-PRIV-0121,ps-020-social-media-management,Unknown,0,
+OWN-PRIV-0125,ace-community-impact-templates,Unknown,0,"Community Impact Business Templates (#273-312) - Social enterprises, nonprofits, and community-drive"
+OWN-PRIV-0126,ace-ecommerce-templates,Unknown,0,"E-commerce Business Templates (#133-192) - Complete dropshipping, DTC, and online retail business te"
+OWN-PRIV-0132,autonomous-venture-studio,Python,0,Core business logic & orchestration system for autonomous venture studio
+OWN-PRIV-0133,avs-omni,Python,0,IZA OS: avs-omni
+OWN-PRIV-0134,Avs-Omni-,Python,0,The operating system for an autonomous venture studio
+OWN-PRIV-0135,babystepsmatrix1,TypeScript,0,Archive: Old project (candidate for deletion)
+OWN-PRIV-0141,claude-workflow-demo,Shell,0,Demo of Claude PR review automation with GitHub Actions
+OWN-PRIV-0142,con-002-residential-construction,HTML,0,
+OWN-PRIV-0143,con-003-commercial-construction,HTML,0,
+OWN-PRIV-0145,con-004-industrial-construction,HTML,0,
+OWN-PRIV-0146,con-006-construction-project-management,HTML,0,
+OWN-PRIV-0148,con-008-home-renovation-services,HTML,0,
+OWN-PRIV-0149,con-011-electrical-services,HTML,0,
+OWN-PRIV-0150,con-012-hvac-services,HTML,0,
+OWN-PRIV-0152,con-014-flooring-services,HTML,0,
+OWN-PRIV-0154,con-016-demolition-services,HTML,0,
+OWN-PRIV-0155,con-017-concrete-services,HTML,0,
+OWN-PRIV-0156,con-018-carpentry-services,HTML,0,
+OWN-PRIV-0157,con-019-window-installation,HTML,0,
+OWN-PRIV-0158,con-020-insulation-services,HTML,0,
+OWN-PRIV-0160,consult-001-venture-consulting,Unknown,0,"Civilization OS: Strategy + operations consulting for 749 ventures (growth, M&A, board advisory)"
+OWN-PRIV-0163,design-system,Shell,0,
+OWN-PRIV-0164,ec-003-hella-scars,Python,0,EC-003: Hella Scars - Urban streetwear + edgy fragrances
+OWN-PRIV-0165,ec-004-godbody-luxuries,Unknown,0,EC-004: GodBody Luxuries - Ultra-premium luxury fragrances
+OWN-PRIV-0166,ec-004-shoe-customizer,Unknown,0,Civilization OS — EC-004-Shoe-Customizer
+OWN-PRIV-0167,ec-005-nwa-products,Unknown,0,"EC-005: NWA Products - General marketplace, all categories"
+OWN-PRIV-0169,ec-006-dropship-hub,Unknown,0,Civilization OS — EC-006-Dropship-Hub
+OWN-PRIV-0187,ec-027-kids-toy-line,Unknown,0,Civilization OS — EC-027-Kids-Toy-Line
+OWN-PRIV-0188,ec-028-nft-fashion-licensing,Unknown,0,Civilization OS — EC-028-NFT-Fashion-Licensing
+OWN-PRIV-0189,ec-029-instant-brand-generator,Unknown,0,Civilization OS — EC-029-Instant-Brand-Generator
+OWN-PRIV-0190,ec-031-automated-inventory-forecaster,Unknown,0,Civilization OS — EC-031-Automated-Inventory-Forecaster
+OWN-PRIV-0191,ec-032-dynamic-pricing-engine,Unknown,0,Civilization OS — EC-032-Dynamic-Pricing-Engine
+OWN-PRIV-0193,ec-034-recommendation-engine,Unknown,0,Civilization OS — EC-034-Recommendation-Engine
+OWN-PRIV-0197,ec-038-chatbot-customer-service,Unknown,0,Civilization OS — EC-038-Chatbot-Customer-Service
+OWN-PRIV-0199,ec-041-seasonal-trend-predictor,Unknown,0,Civilization OS — EC-041-Seasonal-Trend-Predictor
+OWN-PRIV-0200,ec-040-abandoned-cart-recovery,Unknown,0,Civilization OS — EC-040-Abandoned-Cart-Recovery
+OWN-PRIV-0201,ec-042-influencer-matchmaker,Unknown,0,Civilization OS — EC-042-Influencer-Matchmaker
+OWN-PRIV-0202,ec-043-ugc-content-aggregator,Unknown,0,Civilization OS — EC-043-UGC-Content-Aggregator
+OWN-PRIV-0203,ec-044-live-commerce-platform,Unknown,0,Civilization OS — EC-044-Live-Commerce-Platform
+OWN-PRIV-0204,ec-045-ar-virtual-fitting-room,Unknown,0,Civilization OS — EC-045-AR-Virtual-Fitting-Room
+OWN-PRIV-0205,ec-046-3d-product-viewer,Unknown,0,Civilization OS — EC-046-3D-Product-Viewer
+OWN-PRIV-0206,ec-047-carbon-footprint-tracker,Unknown,0,Civilization OS — EC-047-Carbon-Footprint-Tracker
+OWN-PRIV-0208,ec-049-rental-marketplace,Unknown,0,Civilization OS — EC-049-Rental-Marketplace
+OWN-PRIV-0268,edu-001-youth-entrepreneurship-curriculum,Unknown,0,Civilization OS — EDU-001-Youth-Entrepreneurship-Curriculum
+OWN-PRIV-0270,edu-003-coding-mentor-certification,Unknown,0,Civilization OS — EDU-003-Coding-Mentor-Certification
+OWN-PRIV-0271,edu-004-real-estate-licensing-prep,Unknown,0,Civilization OS — EDU-004-Real-Estate-Licensing-Prep
+OWN-PRIV-0272,edu-005-coding-bootcamp,Unknown,0,Civilization OS — EDU-005-Coding-Bootcamp
+OWN-PRIV-0274,edu-008-branding-templates-marketplace,Unknown,0,Civilization OS — EDU-008-Branding-Templates-Marketplace
+OWN-PRIV-0275,edu-009-voiceover-script-library,Unknown,0,Civilization OS — EDU-009-Voiceover-Script-Library
+OWN-PRIV-0276,edu-010-trade-skills-bootcamp,Unknown,0,Civilization OS — EDU-010-Trade-Skills-Bootcamp
+OWN-PRIV-0277,edu-011-franchise-blueprint-system,Unknown,0,Civilization OS — EDU-011-Franchise-Blueprint-System
+OWN-PRIV-0278,edu-012-low-income-housing-blueprint,Unknown,0,Civilization OS — EDU-012-Low-Income-Housing-Blueprint
+OWN-PRIV-0279,edu-014-bipoc-creator-incubator,Unknown,0,Civilization OS — EDU-014-BIPOC-Creator-Incubator
+OWN-PRIV-0281,edu-016-virtual-black-art-museum,Unknown,0,Civilization OS — EDU-016-Virtual-Black-Art-Museum
+OWN-PRIV-0283,edu-018-online-course-creator,Unknown,0,Civilization OS — EDU-018-Online-Course-Creator
+OWN-PRIV-0284,edu-019-executive-education-program,Unknown,0,Civilization OS — EDU-019-Executive-Education-Program
+OWN-PRIV-0285,edu-020-youth-stem-program,Unknown,0,Civilization OS — EDU-020-Youth-STEM-Program
+OWN-PRIV-0286,edu-021-remote-work-certification,Unknown,0,Civilization OS — EDU-021-Remote-Work-Certification
+OWN-PRIV-0288,edu-023-personal-finance-coach,Unknown,0,Civilization OS — EDU-023-Personal-Finance-Coach
+OWN-PRIV-0352,em-046-smart-city-governance,Unknown,0,Civilization OS — EM-046-Smart-City-Governance
+OWN-PRIV-0357,et-001-online-tutoring-platform,Unknown,0,Civilization OS — ET-001-Online-Tutoring-Platform
+OWN-PRIV-0359,et-002-language-learning-app,Unknown,0,Civilization OS — ET-002-Language-Learning-App
+OWN-PRIV-0360,et-004-coding-bootcamp,Unknown,0,Civilization OS — ET-004-Coding-Bootcamp
+OWN-PRIV-0361,et-003-test-prep-service,Unknown,0,Civilization OS — ET-003-Test-Prep-Service
+OWN-PRIV-0362,et-005-professional-certification,Unknown,0,Civilization OS — ET-005-Professional-Certification
+OWN-PRIV-0364,et-007-skills-assessment-platform,Unknown,0,Civilization OS — ET-007-Skills-Assessment-Platform
+OWN-PRIV-0365,et-008-career-coaching,Unknown,0,Civilization OS — ET-008-Career-Coaching
+OWN-PRIV-0366,et-009-resume-writing-service,Unknown,0,Civilization OS — ET-009-Resume-Writing-Service
+OWN-PRIV-0367,et-010-interview-prep-platform,Unknown,0,Civilization OS — ET-010-Interview-Prep-Platform
+OWN-PRIV-0368,et-011-mentorship-platform,Unknown,0,Civilization OS — ET-011-Mentorship-Platform
+OWN-PRIV-0369,et-012-educational-content-library,Unknown,0,Civilization OS — ET-012-Educational-Content-Library
+OWN-PRIV-0371,et-014-gamified-learning-app,Unknown,0,Civilization OS — ET-014-Gamified-Learning-App
+OWN-PRIV-0372,et-015-homeschool-curriculum,Unknown,0,Civilization OS — ET-015-Homeschool-Curriculum
+OWN-PRIV-0373,fh-001-personal-chef-service,Unknown,0,Civilization OS | Personal Chef Service — Food & Hospitality
+OWN-PRIV-0374,fh-002-meal-prep-delivery,Unknown,0,Civilization OS — FH-002-Meal-Prep-Delivery
+OWN-PRIV-0375,fh-003-private-dinner-experiences,Unknown,0,Civilization OS — FH-003-Private-Dinner-Experiences
+OWN-PRIV-0376,fh-004-catering-company,Unknown,0,Civilization OS — FH-004-Catering-Company
+OWN-PRIV-0377,fh-005-corporate-lunch-service,Unknown,0,Civilization OS — FH-005-Corporate-Lunch-Service
+OWN-PRIV-0378,fh-006-healthy-meal-prep-for-gyms,Unknown,0,Civilization OS — FH-006-Healthy-Meal-Prep-for-Gyms
+OWN-PRIV-0379,fh-007-elderly-meal-service,Unknown,0,Civilization OS — FH-007-Elderly-Meal-Service
+OWN-PRIV-0380,fh-009-packaged-food-brand,Unknown,0,Civilization OS — FH-009-Packaged-Food-Brand
+OWN-PRIV-0381,fh-008-athlete-nutrition-service,Unknown,0,Civilization OS — FH-008-Athlete-Nutrition-Service
+OWN-PRIV-0382,fh-010-frozen-meals-company,Unknown,0,Civilization OS — FH-010-Frozen-Meals-Company
+OWN-PRIV-0383,fh-011-sauce-or-seasoning-brand,Unknown,0,Civilization OS — FH-011-Sauce-or-Seasoning-Brand
+OWN-PRIV-0384,fh-012-protein-snacks-brand,Unknown,0,Civilization OS — FH-012-Protein-Snacks-Brand
+OWN-PRIV-0385,fh-013-meal-kit-company,Unknown,0,Civilization OS — FH-013-Meal-Kit-Company
+OWN-PRIV-0389,fh-016-recipe-app,Unknown,0,Civilization OS — FH-016-Recipe-App
+OWN-PRIV-0390,fh-017-cooking-content-brand,Unknown,0,Civilization OS — FH-017-Cooking-Content-Brand
+OWN-PRIV-0391,fh-018-food-influencer-brand,Unknown,0,Civilization OS — FH-018-Food-Influencer-Brand
+OWN-PRIV-0392,fh-019-cooking-course-platform,Unknown,0,Civilization OS — FH-019-Cooking-Course-Platform
+OWN-PRIV-0394,fh-021-food-truck-business,Unknown,0,Civilization OS — FH-021-Food-Truck-Business
+OWN-PRIV-0395,fh-022-specialty-coffee-shop,Unknown,0,Civilization OS — FH-022-Specialty-Coffee-Shop
+OWN-PRIV-0396,fh-023-bakery---pastry-shop,Unknown,0,Civilization OS — FH-023-Bakery-&-Pastry-Shop
+OWN-PRIV-0398,fh-025-ice-cream-shop,Unknown,0,Civilization OS — FH-025-Ice-Cream-Shop
+OWN-PRIV-0399,fh-026-gourmet-food-market,Unknown,0,Civilization OS — FH-026-Gourmet-Food-Market
+OWN-PRIV-0400,fh-027-food-delivery-platform,Unknown,0,Civilization OS — FH-027-Food-Delivery-Platform
+OWN-PRIV-0402,fh-029-food-quality-testing-lab,Unknown,0,Civilization OS — FH-029-Food-Quality-Testing-Lab
+OWN-PRIV-0403,fh-030-organic-food-brand,Unknown,0,Civilization OS — FH-030-Organic-Food-Brand
+OWN-PRIV-0404,fh-031-vegan-food-company,Unknown,0,Civilization OS — FH-031-Vegan-Food-Company
+OWN-PRIV-0405,fh-032-keto-meal-service,Unknown,0,Civilization OS — FH-032-Keto-Meal-Service
+OWN-PRIV-0406,fh-033-food-photography-service,Unknown,0,Civilization OS — FH-033-Food-Photography-Service
+OWN-PRIV-0412,fin-005-u-haul-rental-affiliate,Unknown,0,Fin 005 U Haul Rental Affiliate - Part of Civilization OS venture ecosystem
+OWN-PRIV-0414,fin-008-business-formation-services,Unknown,0,Fin 008 Business Formation Services - Part of Civilization OS venture ecosystem
+OWN-PRIV-0416,fin-011-automated-bookkeeping,Unknown,0,Fin 011 Automated Bookkeeping - Part of Civilization OS venture ecosystem
+OWN-PRIV-0420,fin-015-financial-wellness-coach,Unknown,0,Fin 015 Financial Wellness Coach - Part of Civilization OS venture ecosystem
+OWN-PRIV-0428,fin-025-escrow-automation,Unknown,0,Fin 025 Escrow Automation - Part of Civilization OS venture ecosystem
+OWN-PRIV-0429,fin-026-financial-compliance-scanner,Unknown,0,Fin 026 Financial Compliance Scanner - Part of Civilization OS venture ecosystem
+OWN-PRIV-0432,fin-029-compliance-wallet-saas,Unknown,0,Fin 029 Compliance Wallet Saas - Part of Civilization OS venture ecosystem
+OWN-PRIV-0437,fin-034-payroll-automation,Unknown,0,Fin 034 Payroll Automation - Part of Civilization OS venture ecosystem
+OWN-PRIV-0439,fs-001-gym,Unknown,0,Civilization OS — FS-001-Gym
+OWN-PRIV-0440,fs-002-boutique-fitness-studio,Unknown,0,Civilization OS — FS-002-Boutique-Fitness-Studio
+OWN-PRIV-0442,fs-004-women-only-gym,Unknown,0,Civilization OS — FS-004-Women-Only-Gym
+OWN-PRIV-0443,fs-005-boxing-gym,Unknown,0,Civilization OS — FS-005-Boxing-Gym
+OWN-PRIV-0444,fs-006-crossfit-gym,Unknown,0,Civilization OS — FS-006-CrossFit-Gym
+OWN-PRIV-0445,fs-007-luxury-fitness-club,Unknown,0,Civilization OS — FS-007-Luxury-Fitness-Club
+OWN-PRIV-0446,fs-008-online-coaching,Unknown,0,Civilization OS — FS-008-Online-Coaching
+OWN-PRIV-0448,fs-010-transformation-program,Unknown,0,Civilization OS — FS-010-Transformation-Program
+OWN-PRIV-0450,fs-012-supplement-brand,Unknown,0,Civilization OS — FS-012-Supplement-Brand
+OWN-PRIV-0451,fs-013-fitness-apparel,Unknown,0,Civilization OS — FS-013-Fitness-Apparel
+OWN-PRIV-0453,fs-015-recovery-products,Unknown,0,Civilization OS — FS-015-Recovery-Products
+OWN-PRIV-0454,fs-016-fitness-app,Unknown,0,Civilization OS — FS-016-Fitness-App
+OWN-PRIV-0456,fs-018-gym-management-software,Unknown,0,Civilization OS — FS-018-Gym-Management-Software
+OWN-PRIV-0457,fs-019-wearable-analytics-platform,Unknown,0,Civilization OS — FS-019-Wearable-Analytics-Platform
+OWN-PRIV-0458,fs-020-yoga-studio,Unknown,0,Civilization OS — FS-020-Yoga-Studio
+OWN-PRIV-0459,fs-021-pilates-studio,Unknown,0,Civilization OS — FS-021-Pilates-Studio
+OWN-PRIV-0460,fs-022-dance-studio,Unknown,0,Civilization OS — FS-022-Dance-Studio
+OWN-PRIV-0461,fs-023-martial-arts-dojo,Unknown,0,Civilization OS — FS-023-Martial-Arts-Dojo
+OWN-PRIV-0462,fs-024-sports-performance-center,Unknown,0,Civilization OS — FS-024-Sports-Performance-Center
+OWN-PRIV-0463,fs-025-corporate-wellness-program,Unknown,0,Civilization OS — FS-025-Corporate-Wellness-Program
+OWN-PRIV-0464,fund-001-civilization-credit-fund,Python,0,"Civilization OS: Internal lending + grant writing for 749 ventures (loans, SBIR/STTR grants, equipme"
+OWN-PRIV-0465,genixbank-financial-system,HTML,0,Comprehensive financial operations & banking platform
+OWN-PRIV-0466,genixbank-insight-compass,TypeScript,0,GenixBank financial insights and analytics platform
+OWN-PRIV-0469,ins-001-venture-insurance,Unknown,0,"Civilization OS: Insurance broker for 749 ventures (liability, property, workers comp, cyber)"
+OWN-PRIV-0472,iza-os-agents,Python,0,"Modular agents (finance, marketing, QA, etc.)"
+OWN-PRIV-0479,iza-os-analytics,Python,0,IZA OS: Analytics and reporting engine
+OWN-PRIV-0481,iza-os-automation,Python,0,⚙️ IZA OS Automation - Workflow automation and orchestration
+OWN-PRIV-0484,iza-os-business,Python,0,IZA OS: Business logic core module
+OWN-PRIV-0485,iza-os-cli,Python,0,IZA OS: iza-os-cli
+OWN-PRIV-0486,iza-os-computer-vision,Unknown,0,👁️ Computer Vision - Image and video analysis
+OWN-PRIV-0489,iza-os-customer-core,Unknown,0,"🤝 Unified Customer Experience Platform - Support, Communication, Satisfaction, Engagement"
+OWN-PRIV-0490,iza-os-cybersecurity-monitoring-bot,Python,0,🔒 Cybersecurity Monitoring Bot - Advanced threat detection and response
+OWN-PRIV-0491,iza-os-data,Python,0,ETL pipelines + datasets + knowledge graph
+OWN-PRIV-0495,iza-os-docs,Python,0,IZA OS: iza-os-docs
+OWN-PRIV-0496,iza-os-embedding-service,Unknown,0,📊 Embedding Service - Text and data embedding
+OWN-PRIV-0497,iza-os-enterprise,TypeScript,0,🏢 IZA OS Enterprise - Business intelligence and revenue optimization
+OWN-PRIV-0499,iza-os-funding,Python,0,IZA OS: iza-os-funding
+OWN-PRIV-0505,iza-os-intelligence-core,Unknown,0,"🧠 Unified Intelligence Platform - Analytics, Reporting, AI/ML, Insights, Data Science"
+OWN-PRIV-0506,iza-os-inventory-management-analytics-bot,TypeScript,0,🤖 Inventory Management Bot - Analytics automation and intelligence
+OWN-PRIV-0507,iza-os-inventory-management-automation-bot,TypeScript,0,🤖 Inventory Management Bot - Automation automation and intelligence
+OWN-PRIV-0508,iza-os-inventory-management-monitoring-bot,TypeScript,0,🤖 Inventory Management Bot - Monitoring automation and intelligence
+OWN-PRIV-0509,iza-os-inventory-management-optimization-bot,TypeScript,0,🤖 Inventory Management Bot - Optimization automation and intelligence
+OWN-PRIV-0510,iza-os-legal-core,Unknown,0,"⚖️ Unified Legal Platform - Contracts, Compliance, IP, Risk Management, Regulatory Affairs"
+OWN-PRIV-0511,iza-os-legal-research-discovery-bot,Python,0,🤖 Legal Research Bot - Discovery automation and intelligence
+OWN-PRIV-0512,iza-os-legal-research-processing-bot,Python,0,🤖 Legal Research Bot - Processing automation and intelligence
+OWN-PRIV-0513,iza-os-legal-research-synthesis-bot,Python,0,🤖 Legal Research Bot - Synthesis automation and intelligence
+OWN-PRIV-0515,iza-os-market,Python,0,IZA OS: iza-os-market
+OWN-PRIV-0516,iza-os-marketing-automation-analytics-bot,C,0,🤖 Marketing Automation Bot - Analytics automation and intelligence
+OWN-PRIV-0517,iza-os-mcp,Python,0,IZA OS: iza-os-mcp
+OWN-PRIV-0518,iza-os-ml,Python,0,IZA OS: iza-os-ml
+OWN-PRIV-0519,iza-os-mobile,Python,0,IZA OS: iza-os-mobile
+OWN-PRIV-0521,iza-os-monitoring,Python,0,IZA OS: iza-os-monitoring
+OWN-PRIV-0524,iza-os-nlp-pipeline,Unknown,0,📝 NLP Pipeline - Natural language processing
+OWN-PRIV-0525,iza-os-notification-bot,Python,0,🔔 Notification Bot - Intelligent notification and alerting system
+OWN-PRIV-0526,iza-os-operations-core,Unknown,0,"🔧 Unified Operations Platform - Workflows, Integration, Monitoring, Security, Automation"
+OWN-PRIV-0527,iza-os-ops,Python,0,"CI/CD, monitoring, DevOps infrastructure"
+OWN-PRIV-0530,iza-os-playgrounds,Python,0,IZA OS: iza-os-playgrounds
+OWN-PRIV-0533,iza-os-prompt-engineering,Unknown,0,💬 Prompt Engineering - LLM prompt optimization
+OWN-PRIV-0534,iza-os-quality-assurance-bot,Python,0,✅ Quality Assurance Bot - Automated testing and quality control
+OWN-PRIV-0536,iza-os-revenue,JavaScript,0,IZA OS: Revenue tracking and optimization module
+OWN-PRIV-0537,iza-os-sales-core,Unknown,0,"💰 Unified Sales Platform - Pipeline, CRM, Automation, Performance, Revenue Optimization"
+OWN-PRIV-0538,iza-os-security,Python,0,IZA OS: iza-os-security
+OWN-PRIV-0539,iza-os-security-compliance-bot,Python,0,🛡️ Security Compliance Bot - Automated security compliance monitoring
+OWN-PRIV-0543,iza-os-speech-processing,Unknown,0,🎤 Speech Processing - Audio analysis and synthesis
+OWN-PRIV-0544,iza-os-templates,Python,0,IZA OS: iza-os-templates
+OWN-PRIV-0550,legal-contract-templates,Unknown,0,Universal contract templates for all Civilization OS ventures (749+ businesses)
+OWN-PRIV-0551,lt-001-truck-dispatch-company,Unknown,0,Civilization OS — LT-001-Truck-Dispatch-Company
+OWN-PRIV-0552,lt-002-freight-brokerage,Unknown,0,Civilization OS — LT-002-Freight-Brokerage
+OWN-PRIV-0553,lt-003-logistics-dispatch-service,Unknown,0,Civilization OS — LT-003-Logistics-Dispatch-Service
+OWN-PRIV-0554,lt-004-last-mile-delivery-dispatch,Unknown,0,Civilization OS — LT-004-Last-Mile-Delivery-Dispatch
+OWN-PRIV-0555,lt-006-amazon,Unknown,0,Civilization OS — LT-006-Amazon
+OWN-PRIV-0556,lt-007-construction-dispatch,Unknown,0,Civilization OS — LT-007-Construction-Dispatch
+OWN-PRIV-0557,lt-008-towing-dispatch,Unknown,0,Civilization OS — LT-008-Towing-Dispatch
+OWN-PRIV-0558,lt-009-hvac-technician-dispatch,Unknown,0,Civilization OS — LT-009-HVAC-Technician-Dispatch
+OWN-PRIV-0559,lt-010-field-service-dispatch,Unknown,0,Civilization OS — LT-010-Field-Service-Dispatch
+OWN-PRIV-0560,lt-012-fleet-tracking-platform,Unknown,0,Civilization OS — LT-012-Fleet-Tracking-Platform
+OWN-PRIV-0561,lt-013-logistics-automation-system,Unknown,0,Civilization OS — LT-013-Logistics-Automation-System
+OWN-PRIV-0563,lt-015-driver-management-platform,Unknown,0,Civilization OS — LT-015-Driver-Management-Platform
+OWN-PRIV-0564,lt-016-trucking-company,Unknown,0,Civilization OS — LT-016-Trucking-Company
+OWN-PRIV-0565,lt-017-courier-service,Unknown,0,Civilization OS — LT-017-Courier-Service
+OWN-PRIV-0566,lt-018-local-delivery-company,Unknown,0,Civilization OS — LT-018-Local-Delivery-Company
+OWN-PRIV-0567,lt-019-moving-company,Unknown,0,Civilization OS — LT-019-Moving-Company
+OWN-PRIV-0568,lt-020-freight-company,Unknown,0,Civilization OS — LT-020-Freight-Company
+OWN-PRIV-0569,lt-021-warehouse-company,Unknown,0,Civilization OS — LT-021-Warehouse-Company
+OWN-PRIV-0570,lt-022-fulfillment-center,Unknown,0,Civilization OS — LT-022-Fulfillment-Center
+OWN-PRIV-0571,lt-023-storage-business,Unknown,0,Civilization OS — LT-023-Storage-Business
+OWN-PRIV-0572,lt-024-distribution-company,Unknown,0,Civilization OS — LT-024-Distribution-Company
+OWN-PRIV-0573,lt-025-logistics-marketplace,Unknown,0,Civilization OS — LT-025-Logistics-Marketplace
+OWN-PRIV-0574,lt-026-shipping-platform,Unknown,0,Civilization OS — LT-026-Shipping-Platform
+OWN-PRIV-0575,lt-027-fleet-management-saas,Unknown,0,Civilization OS — LT-027-Fleet-Management-SaaS
+OWN-PRIV-0579,mc-001-youtube-channel-network,Unknown,0,Civilization OS — MC-001-YouTube-Channel-Network
+OWN-PRIV-0580,mc-002-podcast-network,Unknown,0,Civilization OS — MC-002-Podcast-Network
+OWN-PRIV-0581,mc-003-blog-network,Unknown,0,Civilization OS — MC-003-Blog-Network
+OWN-PRIV-0582,mc-004-influencer-agency,Unknown,0,Civilization OS — MC-004-Influencer-Agency
+OWN-PRIV-0583,mc-005-content-creation-studio,Unknown,0,Civilization OS — MC-005-Content-Creation-Studio
+OWN-PRIV-0584,mc-007-animation-studio,Unknown,0,Civilization OS — MC-007-Animation-Studio
+OWN-PRIV-0585,mc-008-music-production,Unknown,0,Civilization OS — MC-008-Music-Production
+OWN-PRIV-0586,mc-009-stock-photography,Unknown,0,Civilization OS — MC-009-Stock-Photography
+OWN-PRIV-0587,mc-010-stock-video,Unknown,0,Civilization OS — MC-010-Stock-Video
+OWN-PRIV-0588,mc-011-online-magazine,Unknown,0,Civilization OS — MC-011-Online-Magazine
+OWN-PRIV-0590,mc-013-streaming-platform,Unknown,0,Civilization OS — MC-013-Streaming-Platform
+OWN-PRIV-0591,mc-014-gaming-channel,Unknown,0,Civilization OS — MC-014-Gaming-Channel
+OWN-PRIV-0592,mc-015-esports-team,Unknown,0,Civilization OS — MC-015-Esports-Team
+OWN-PRIV-0593,mc-016-virtual-events-platform,Unknown,0,Civilization OS — MC-016-Virtual-Events-Platform
+OWN-PRIV-0594,mc-017-online-course-platform,Unknown,0,Civilization OS — MC-017-Online-Course-Platform
+OWN-PRIV-0595,mc-018-membership-site,Unknown,0,Civilization OS — MC-018-Membership-Site
+OWN-PRIV-0596,mc-019-digital-download-store,Unknown,0,Civilization OS — MC-019-Digital-Download-Store
+OWN-PRIV-0597,mc-020-nft-marketplace,Unknown,0,Civilization OS — MC-020-NFT-Marketplace
+OWN-PRIV-0599,mobile-access-manager,Python,0,Complete mobile optimization system for autonomous venture studio
+OWN-PRIV-0601,op-001-venture-automation-agency,Python,0,
+OWN-PRIV-0602,op-002-template-marketplace,Python,0,
+OWN-PRIV-0603,op-003-agent-services-hub,Python,0,
+OWN-PRIV-0604,ops-001-fractional-cto-agency,Unknown,0,Civilization OS — OPS-001-Fractional-CTO-Agency
+OWN-PRIV-0620,ps-001-business-consulting,Unknown,0,
+OWN-PRIV-0621,ps-002-legal-services,Unknown,0,
+OWN-PRIV-0622,ps-003-accounting-services,Unknown,0,
+OWN-PRIV-0623,ps-004-hr-consulting,Unknown,0,
+OWN-PRIV-0624,ps-005-marketing-agency,Unknown,0,
+OWN-PRIV-0626,ps-007-it-support-services,Unknown,0,
+OWN-PRIV-0627,ps-008-virtual-assistant-service,Unknown,0,
+OWN-PRIV-0628,ps-009-bookkeeping-service,Unknown,0,
+OWN-PRIV-0629,ps-010-tax-preparation-service,Unknown,0,
+OWN-PRIV-0630,ps-011-real-estate-agency,Unknown,0,
+OWN-PRIV-0631,ps-012-insurance-agency,HTML,0,Civilization OS Venture: Insurance agency services
+OWN-PRIV-0632,ps-016-photography-service,Unknown,0,"Professional photography service business with automated booking, ClickUp integration, and Instagram"
+OWN-PRIV-0633,ps-017-videography-service,Unknown,0,
+OWN-PRIV-0634,ps-018-translation-services,Unknown,0,
+OWN-PRIV-0635,ps-019-copywriting-service,Unknown,0,
+OWN-PRIV-0636,ps-022-ppc-management,Unknown,0,
+OWN-PRIV-0637,ps-023-pr-agency,Unknown,0,
+OWN-PRIV-0639,ps-025-business-brokerage,Unknown,0,
+OWN-PRIV-0641,repo-template,Unknown,0,
+OWN-PRIV-0643,research-processing-pipeline,Python,0,Advanced research analysis & knowledge management system
+OWN-PRIV-0644,Resume,Python,0,Personal resume
+OWN-PRIV-0646,shared-kernels,Unknown,0,"Civilization OS shared modules — intake forms, Stripe, auth, Supabase schema, dispatch logic. Every "
+OWN-PRIV-0647,sovereign-life,Python,0,Sovereign Life - Complete system organization and agentic ecosystem
+OWN-PRIV-0648,tax-company-2026,HTML,0,Civilization OS Venture: Tax preparation service
+OWN-PRIV-0660,tech-013-workflow-automation,Unknown,0,Tech 013 Workflow Automation - Part of Civilization OS venture ecosystem
+OWN-PRIV-0661,tech-014-sentiment-analyzer,Unknown,0,Tech 014 Sentiment Analyzer - Part of Civilization OS venture ecosystem
+OWN-PRIV-0666,tech-020-recommendation-engine,Unknown,0,Tech 020 Recommendation Engine - Part of Civilization OS venture ecosystem
+OWN-PRIV-0689,tech-045-workflow-automation,Unknown,0,Tech 045 Workflow Automation - Part of Civilization OS venture ecosystem
+OWN-PRIV-0690,tech-046-sentiment-analyzer,Unknown,0,Tech 046 Sentiment Analyzer - Part of Civilization OS venture ecosystem
+OWN-PRIV-0695,tech-052-recommendation-engine,Unknown,0,Tech 052 Recommendation Engine - Part of Civilization OS venture ecosystem
+OWN-PRIV-0705,unified-dashboard-system,Python,0,Complete dashboard & monitoring system for autonomous venture studio
+OWN-PRIV-0706,venture-contract-engine,Python,0,Auto-generate complete contract packages for any Civilization OS venture
+OWN-PRIV-0711,clients,HTML,0,"Client management, agreements, onboarding systems, and lead generation"
+OWN-PRIV-0712,data-management,Unknown,0,Unified data schemas and management systems
+OWN-PRIV-0713,design-team,JavaScript,0,"Design system, brand guidelines, and 250+ prompts for venture studio"
+OWN-PRIV-0714,maps,Python,0,"Ecosystem mapping, cartography system, licensing, and capital management"
+OWN-PRIV-0715,venture-pipeline,Python,0,Active venture pipeline management with ACTIVE/PIPELINE/EXITED tracking
+OWN-PRIV-0718,bw-040-beauty-tools-brand,Unknown,0,Civilization OS — BW-040-Beauty-Tools-Brand
+OWN-PRIV-0719,bw-039-cosmetics-brand,Unknown,0,Civilization OS | Cosmetics Brand — Beauty & Wellness
+OWN-PRIV-0720,bw-038-photoshoot-makeup-team,Unknown,0,Civilization OS | Photoshoot Makeup Team — Beauty & Wellness
+OWN-PRIV-0721,bw-037-mobile-makeup-artist,Unknown,0,Civilization OS — BW-037-Mobile-Makeup-Artist
+OWN-PRIV-0722,bw-036-bridal-makeup-service,Unknown,0,Civilization OS | Bridal Makeup Service — Beauty & Wellness
+OWN-PRIV-0723,bw-035-makeup-studio,Unknown,0,Civilization OS | Makeup Studio — Beauty & Wellness
+OWN-PRIV-0726,bw-032-stylist-booking-platform,Unknown,0,Civilization OS — BW-032-Stylist-Booking-Platform
+OWN-PRIV-0728,bw-030-scalp-treatment-products,Unknown,0,Civilization OS — BW-030-Scalp-Treatment-Products
+OWN-PRIV-0730,bw-028-wig-brand,Unknown,0,Civilization OS | Wig Brand — Beauty & Wellness
+OWN-PRIV-0733,bw-025-wig-installation-studio,Unknown,0,Civilization OS | Wig Installation Studio — Beauty & Wellness
+OWN-PRIV-0736,bw-022-barbershop,Unknown,0,Civilization OS — BW-022-Barbershop
+OWN-PRIV-0739,bw-019-salon-management-software,Unknown,0,Civilization OS — BW-019-Salon-Management-Software
+OWN-PRIV-0748,bw-010-online-lash-education,Unknown,0,Civilization OS | Online Lash Education — Beauty & Wellness
+OWN-PRIV-0749,bw-009-franchise-lash-salons,Unknown,0,Civilization OS — BW-009-Franchise-Lash-Salons
+OWN-PRIV-0750,bw-008-private-label-lashes,Unknown,0,Civilization OS — BW-008-Private-Label-Lashes
+OWN-PRIV-0751,bw-007-lash-kits---tools,Unknown,0,Civilization OS — BW-007-Lash-Kits-&-Tools
+OWN-PRIV-0752,bw-006-lash-glue-brand,Unknown,0,Civilization OS | Lash Glue Brand — Beauty & Wellness
+OWN-PRIV-0753,bw-005-lash-supply-company,Unknown,0,Civilization OS | Lash Supply Company — Beauty & Wellness
+OWN-PRIV-0755,bw-003-luxury-lash-bar,Unknown,0,Luxury Lash Bar — Civilization OS | Beauty & Wellness
+OWN-PRIV-0756,bw-002-mobile-lash-service,Unknown,0,Civilization OS — BW-002-Mobile-Lash-Service
+OWN-PRIV-0757,bw-001-lash-extension-studio,Unknown,0,Civilization OS — BW-001-Lash-Extension-Studio
+OWN-PRIV-0758,bw-001-contracts,HTML,0,ARCHIVED → merged into bw-001-up-next-business
+OWN-PRIV-0759,bw-001-up-next,Unknown,0,ARCHIVED → merged into bw-001-up-next-business
+OWN-PRIV-0761,up-next-marketplace,Unknown,0,ARCHIVED → merged into bw-001-up-next-code
+OWN-PRIV-0764,ht-004-mobile-app,Unknown,0,Mobile application (iOS/Android) for VitalSense data visualization.
+OWN-PRIV-0765,ht-004-firmware,Unknown,0,Embedded software for the VitalSense wearable device.
+OWN-PRIV-0766,et-003-content,Unknown,0,Instructional content and course materials for SkillForge.
+OWN-PRIV-0771,ft-001-docs,Unknown,0,"Documentation, whitepapers, and technical specifications for QuantumLedger."
+OWN-PRIV-0773,ft-001-core-ledger,Unknown,0,Core decentralized ledger and smart contract code for QuantumLedger.
+OWN-PRIV-0774,iza-os-legal-research-optimization-bot,Python,0,🤖 Legal Research Bot - Optimization automation and intelligence
+OWN-PRIV-0775,iza-os-legal-research-integration-bot,Python,0,🤖 Legal Research Bot - Integration automation and intelligence
+OWN-PRIV-0776,iza-os-legal-research-security-bot,Python,0,🤖 Legal Research Bot - Security automation and intelligence
+OWN-PRIV-0777,iza-os-legal-research-compliance-bot,Python,0,🤖 Legal Research Bot - Compliance automation and intelligence
+OWN-PRIV-0778,iza-os-legal-research-reporting-bot,Python,0,🤖 Legal Research Bot - Reporting automation and intelligence
+OWN-PRIV-0779,iza-os-legal-research-alerting-bot,Python,0,🤖 Legal Research Bot - Alerting automation and intelligence
+OWN-PRIV-0780,iza-os-legal-research-management-bot,Python,0,🤖 Legal Research Bot - Management automation and intelligence
+OWN-PRIV-0781,iza-os-legal-research-orchestration-bot,Python,0,🤖 Legal Research Bot - Orchestration automation and intelligence
+OWN-PRIV-0782,iza-os-legal-research-intelligence-bot,Python,0,🤖 Legal Research Bot - Intelligence automation and intelligence
+OWN-PRIV-0783,iza-os-sales-automation-monitoring-bot,C,0,🤖 Sales Automation Bot - Monitoring automation and intelligence
+OWN-PRIV-0784,iza-os-sales-automation-automation-bot,C,0,🤖 Sales Automation Bot - Automation automation and intelligence
+OWN-PRIV-0785,iza-os-sales-automation-analytics-bot,C,0,🤖 Sales Automation Bot - Analytics automation and intelligence
+OWN-PRIV-0786,iza-os-sales-automation-optimization-bot,C,0,🤖 Sales Automation Bot - Optimization automation and intelligence
+OWN-PRIV-0787,iza-os-sales-automation-integration-bot,C,0,🤖 Sales Automation Bot - Integration automation and intelligence
+OWN-PRIV-0788,iza-os-sales-automation-security-bot,C,0,🤖 Sales Automation Bot - Security automation and intelligence
+OWN-PRIV-0789,iza-os-sales-automation-compliance-bot,C,0,🤖 Sales Automation Bot - Compliance automation and intelligence
+OWN-PRIV-0790,iza-os-sales-automation-reporting-bot,C,0,🤖 Sales Automation Bot - Reporting automation and intelligence
+OWN-PRIV-0791,iza-os-sales-automation-alerting-bot,C,0,🤖 Sales Automation Bot - Alerting automation and intelligence
+OWN-PRIV-0792,iza-os-sales-automation-management-bot,C,0,🤖 Sales Automation Bot - Management automation and intelligence
+OWN-PRIV-0793,iza-os-sales-automation-orchestration-bot,C,0,🤖 Sales Automation Bot - Orchestration automation and intelligence
+OWN-PRIV-0794,iza-os-sales-automation-intelligence-bot,C,0,🤖 Sales Automation Bot - Intelligence automation and intelligence
+OWN-PRIV-0795,iza-os-sales-automation-processing-bot,C,0,🤖 Sales Automation Bot - Processing automation and intelligence
+OWN-PRIV-0796,iza-os-sales-automation-discovery-bot,C,0,🤖 Sales Automation Bot - Discovery automation and intelligence
+OWN-PRIV-0797,iza-os-sales-automation-synthesis-bot,C,0,🤖 Sales Automation Bot - Synthesis automation and intelligence
+OWN-PRIV-0798,iza-os-marketing-automation-monitoring-bot,C,0,🤖 Marketing Automation Bot - Monitoring automation and intelligence
+OWN-PRIV-0799,iza-os-marketing-automation-automation-bot,C,0,🤖 Marketing Automation Bot - Automation automation and intelligence
+OWN-PRIV-0800,iza-os-marketing-automation-optimization-bot,C,0,🤖 Marketing Automation Bot - Optimization automation and intelligence
+OWN-PRIV-0801,iza-os-marketing-automation-integration-bot,C,0,🤖 Marketing Automation Bot - Integration automation and intelligence
+OWN-PRIV-0802,iza-os-marketing-automation-security-bot,C,0,🤖 Marketing Automation Bot - Security automation and intelligence
+OWN-PRIV-0803,iza-os-marketing-automation-compliance-bot,C,0,🤖 Marketing Automation Bot - Compliance automation and intelligence
+OWN-PRIV-0804,iza-os-marketing-automation-reporting-bot,C,0,🤖 Marketing Automation Bot - Reporting automation and intelligence
+OWN-PRIV-0805,iza-os-marketing-automation-alerting-bot,C,0,🤖 Marketing Automation Bot - Alerting automation and intelligence
+OWN-PRIV-0806,iza-os-marketing-automation-management-bot,C,0,🤖 Marketing Automation Bot - Management automation and intelligence
+OWN-PRIV-0807,iza-os-marketing-automation-orchestration-bot,C,0,🤖 Marketing Automation Bot - Orchestration automation and intelligence
+OWN-PRIV-0808,iza-os-marketing-automation-intelligence-bot,C,0,🤖 Marketing Automation Bot - Intelligence automation and intelligence
+OWN-PRIV-0809,iza-os-marketing-automation-processing-bot,C,0,🤖 Marketing Automation Bot - Processing automation and intelligence
+OWN-PRIV-0810,iza-os-marketing-automation-discovery-bot,C,0,🤖 Marketing Automation Bot - Discovery automation and intelligence
+OWN-PRIV-0811,iza-os-marketing-automation-synthesis-bot,C,0,🤖 Marketing Automation Bot - Synthesis automation and intelligence
+OWN-PRIV-0812,iza-os-finance-advisor-monitoring-bot,Python,0,🤖 Finance Advisor Bot - Monitoring automation and intelligence
+OWN-PRIV-0813,iza-os-finance-advisor-automation-bot,Python,0,🤖 Finance Advisor Bot - Automation automation and intelligence
+OWN-PRIV-0814,iza-os-finance-advisor-integration-bot,Python,0,🤖 Finance Advisor Bot - Integration automation and intelligence
+OWN-PRIV-0815,iza-os-finance-advisor-security-bot,Python,0,🤖 Finance Advisor Bot - Security automation and intelligence
+OWN-PRIV-0816,iza-os-finance-advisor-compliance-bot,Python,0,🤖 Finance Advisor Bot - Compliance automation and intelligence
+OWN-PRIV-0817,iza-os-finance-advisor-reporting-bot,Python,0,🤖 Finance Advisor Bot - Reporting automation and intelligence
+OWN-PRIV-0818,iza-os-finance-advisor-alerting-bot,Python,0,🤖 Finance Advisor Bot - Alerting automation and intelligence
+OWN-PRIV-0819,iza-os-finance-advisor-management-bot,Python,0,🤖 Finance Advisor Bot - Management automation and intelligence
+OWN-PRIV-0820,iza-os-finance-advisor-orchestration-bot,Python,0,🤖 Finance Advisor Bot - Orchestration automation and intelligence
+OWN-PRIV-0822,iza-os-finance-advisor-optimization-bot,Python,0,🤖 Finance Advisor Bot - Optimization automation and intelligence
+OWN-PRIV-0825,iza-os-inventory-management-security-bot,TypeScript,0,🤖 Inventory Management Bot - Security automation and intelligence
+OWN-PRIV-0826,iza-os-inventory-management-integration-bot,TypeScript,0,🤖 Inventory Management Bot - Integration automation and intelligence
+OWN-PRIV-0827,iza-os-inventory-management-compliance-bot,TypeScript,0,🤖 Inventory Management Bot - Compliance automation and intelligence
+OWN-PRIV-0828,iza-os-inventory-management-reporting-bot,TypeScript,0,🤖 Inventory Management Bot - Reporting automation and intelligence
+OWN-PRIV-0854,iza-os-project-management-analytics-bot,Python,0,🤖 Project Management Bot - Analytics automation and intelligence
+OWN-PRIV-0855,iza-os-project-management-intelligence-bot,Python,0,🤖 Project Management Bot - Intelligence automation and intelligence
+OWN-PRIV-0856,iza-os-project-management-management-bot,Python,0,🤖 Project Management Bot - Management automation and intelligence
+OWN-PRIV-0857,iza-os-project-management-alerting-bot,Python,0,🤖 Project Management Bot - Alerting automation and intelligence
+OWN-PRIV-0858,iza-os-project-management-reporting-bot,Python,0,🤖 Project Management Bot - Reporting automation and intelligence
+OWN-PRIV-0859,iza-os-project-management-compliance-bot,Python,0,🤖 Project Management Bot - Compliance automation and intelligence
+OWN-PRIV-0860,iza-os-project-management-security-bot,Python,0,🤖 Project Management Bot - Security automation and intelligence
+OWN-PRIV-0861,iza-os-project-management-integration-bot,Python,0,🤖 Project Management Bot - Integration automation and intelligence
+OWN-PRIV-0862,iza-os-project-management-optimization-bot,Python,0,🤖 Project Management Bot - Optimization automation and intelligence
+OWN-PRIV-0863,iza-os-project-management-automation-bot,Python,0,🤖 Project Management Bot - Automation automation and intelligence
+OWN-PRIV-0864,iza-os-project-management-monitoring-bot,Python,0,🤖 Project Management Bot - Monitoring automation and intelligence
+OWN-PRIV-0865,iza-os-project-management-synthesis-bot,Python,0,🤖 Project Management Bot - Synthesis automation and intelligence
+OWN-PRIV-0866,iza-os-project-management-orchestration-bot,Python,0,🤖 Project Management Bot - Orchestration automation and intelligence
+OWN-PRIV-0867,iza-os-project-management-discovery-bot,Python,0,🤖 Project Management Bot - Discovery automation and intelligence
+OWN-PRIV-0868,iza-os-project-management-processing-bot,Python,0,🤖 Project Management Bot - Processing automation and intelligence
+OWN-PRIV-0869,iza-os-finance-advisor-intelligence-bot,Python,0,🤖 Finance Advisor Bot - Intelligence automation and intelligence
+OWN-PRIV-0870,iza-os-finance-advisor-processing-bot,Python,0,🤖 Finance Advisor Bot - Processing automation and intelligence
+OWN-PRIV-0871,iza-os-finance-advisor-discovery-bot,Python,0,🤖 Finance Advisor Bot - Discovery automation and intelligence
+OWN-PRIV-0872,iza-os-finance-advisor-synthesis-bot,Python,0,🤖 Finance Advisor Bot - Synthesis automation and intelligence
+OWN-PRIV-0873,iza-os-finance-advisor-analytics-bot,Python,0,🤖 Finance Advisor Bot - Analytics automation and intelligence
+OWN-PUB-0873,research-os,Cypher,0,
+OWN-PUB-0874,worldwidebro-mathematical-os,Python,0,
+OWN-PUB-0875,civilization-os,TypeScript,0,"🌍 Civilization OS - Master orchestrator for the entire IZA-OS ecosystem, managing 101 genius folders"
+OWN-PUB-0878,iza-os-finance-core,Unknown,0,IZA OS Core — Finance sector operating system (FIN)
+OWN-PUB-0879,worldwidebro-education-os,Unknown,0,IZA OS Core — Education sector operating system (EDU)
+OWN-PUB-0880,worldwidebro-staffing-os,Unknown,0,IZA OS Core — Staffing sector operating system (STA)
+OWN-PUB-0882,testchat,Unknown,0,
+OWN-PUB-0884,marketplace-core,Unknown,0,Shared marketplace platform (roofing + plumbing)
+OWN-PUB-0885,YES-LLC-CONTRACTOR-DELIVERY,Unknown,0,
+OWN-PUB-0886,pitch-kit,TypeScript,0,Interactive Demo & Presentation System — Story + Interaction + Live Product + Visual Proof
+STAR-0887,claude-trading-skills,Python,279,"67 trading, DeFi, and quantitative finance Agent Skills. Works with Claude Code, Cursor, Codex, Gemi"
+STAR-0888,scroll-world,JavaScript,8240,A skill that turn any brand into a scrollable 3D world landing page
+STAR-0889,youtube-automation-agent,JavaScript,2097,"🎬 Fully automated YouTube channel management with AI agents. Creates, optimizes & publishes videos 2"
+STAR-0891,diagram-design,HTML,19599,"29 editorial diagram types for Claude Code. Self-contained HTML + SVG. No shadows, no Mermaid-slop."
+STAR-0892,GLOSSOPETRAE,JavaScript,940,LINGUISTIC ENGINE FOR AI
+STAR-0893,Agent-Reach,Python,72322,"Give your AI agent eyes to see the entire internet. Read & search Twitter, Reddit, YouTube, GitHub, "
+STAR-0894,code-graph-rag,Python,4434,"The ultimate RAG for your monorepo. Query, understand, and edit multi-language codebases with the po"
+STAR-0895,OmniGlyph,TypeScript,87,"Cut your Claude bill 59–70% by rendering bulky LLM context as dense PNG pages — 100% read accuracy, "
+STAR-0896,temporal,Go,22345,Temporal service
+STAR-0897,Muse-Glimmer,JavaScript,14,Introducing Muse Glimmer: open-weight 30B agentic multimodal model that runs on your device (Meta). 
+STAR-0898,semantica,Python,8210,Graph-Native Infrastructure for Context and Accountable AI Systems
+STAR-0899,kimi-k3-in-c,C,5841,A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB of RAM. Portable C99:
+STAR-0901,event-driven-autonomous-loop,JavaScript,14,A starter kit that keeps an AI coding agent working — waking itself the moment each task finishes to
+STAR-0902,video-shotcraft,TypeScript,5235,AI video skill for Claude Code & Codex — cinematic product videos with Remotion: 152 shot recipe car
+STAR-0903,OBLITERATUS,Python,7541,OBLITERATE THE CHAINS THAT BIND YOU
+STAR-0904,oh-my-cli,TypeScript,773,A minimal autonomous code-agent CLI built with Qwen Code
+STAR-0906,openreply,TypeScript,1337,Open-source ManyChat alternative: comment-dm automation + account analytics. NOTE: the link below wi
+STAR-0907,deer-flow,Python,80104,"An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of"
+STAR-0908,Scout,Python,476,"Free lead generation tool. Scrape Instagram, Twitch, TikTok, and LinkedIn profiles. Extract emails f"
+STAR-0909,gsd-core,JavaScript,8329,Git. Ship. Done - Core
+STAR-0910,openinterpreter,Rust,68036,A coding agent for open models like Kimi K3
+STAR-0911,caveman,Go,98549,🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking 
+STAR-0912,Graft,TypeScript,3098,"Turbocharge Claude Code, Cursor, Codex, Gemini & every coding agent: faster, cheaper, with contextua"
+STAR-0913,code-review-graph,Python,30359,Local-first code intelligence graph for MCP and CLI. Builds a persistent map of your codebase so AI 
+STAR-0915,awesome-agent-skills,Unknown,30402,"A curated collection of 1000+ agent skills from official dev teams and the community, compatible wit"
+STAR-0916,strix,Python,53401,Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.
+STAR-0920,SurfSense,Python,15932,"Open-source NotebookLM alternative. Research the open web with live data(Reddit, YT, IG, TikTok, Ind"
+STAR-0921,atlas-gic,Python,2082,ATLAS by General Intelligence Capital — Self-improving AI trading agents using Karpathy-style autore
+STAR-0922,skills,Markdown,3828,A collection of agent skills that help you build a great interface.
+STAR-0926,A-Curated-List-of-ML-System-Design-Case-Studies,Unknown,10941,"This repository contains a curated collection of 300+ case studies from over 80 companies, detailing"
+STAR-0928,Chat2DB,Java,27953,"Chat2DB is a free, cross-platform, local-first database client and SQL workspace for developers, DBA"
+STAR-0929,palmier-pro,Swift,13611,macOS video editor built for AI
+STAR-0930,ego-lite,JavaScript,11326,"The fastest browser for AI agents to run browser automation, built for sharing your logged-in browse"
+STAR-0931,buzz,Rust,27765,A hive mind communication platform
+STAR-0932,floci,Java,20192,"Light, fluffy, and always free - The AWS Local Emulator alternative"
+STAR-0933,SkillOpt,Python,16061,SkillOpt is a text-space optimizer that trains reusable natural-language skills for frozen LLM agent
+STAR-0934,crawlseo,TypeScript,541,Open-source SEO monitoring. GSC + Site Crawler + Core Web Vitals in one dashboard.
+STAR-0937,omnigraph,Rust,1060,Lakehouse native graph engine with git-style workflows
+STAR-0939,page-agent,TypeScript,28644,JavaScript in-page GUI agent. Control web interfaces with natural language.
+STAR-0941,cua,HTML,21427,"Scale computer-use 2.0 with open-source drivers, cross-OS fleets, and benchmarks for training, evalu"
+STAR-0942,OmniRoute,TypeScript,49197,"Never stop coding. Free MIT AI gateway: one endpoint, 340 providers (90+ free), 1200+ models — Kimi,"
+STAR-0943,InsForge,TypeScript,12727,"The all-in-one, open-source backend platform for agentic coding. InsForge gives your coding agent da"
+STAR-0945,tmux,C,48661,tmux source code
+STAR-0947,drip,Go,905,"Self-hosted tunneling solution to expose localhost securely - unlimited bandwidth, no third-party se"
+STAR-0948,karakeep,TypeScript,28394,"A self-hostable bookmark-everything app (links, notes and images) with AI-based automatic tagging an"
+STAR-0949,AdGuardHome,TypeScript,36161,Network-wide ads & trackers blocking DNS server
+STAR-0950,audiobookshelf,JavaScript,13995,Self-hosted audiobook and podcast server
+STAR-0951,vaultwarden,Rust,65506,"Unofficial Bitwarden compatible server written in Rust, formerly known as bitwarden_rs"
+STAR-0952,colibri,C,25224,"Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk."
+STAR-0953,claude-video,Python,15582,"Give Claude the ability to watch any video. /watch downloads, extracts frames, transcribes, hands it"
+STAR-0954,open-design,TypeScript,87599,🎨 Best DeepSeek Harness Design Plugin. The open-source Claude Design alternative. 🖥️ Local-first des
+STAR-0956,Vibe-Trading,Python,31046,"""Vibe-Trading: Your Personal Trading Agent"""
+STAR-0957,OpenCut,TypeScript,83933,The open-source CapCut alternative
+STAR-0958,automate-faceless-content,Unknown,2950,"Learn how to automate faceless short-form + long-form video content and dominate YouTube, TikTok, Fa"
+STAR-0960,rasa,Python,21296,"💬   Open source machine learning framework to automate text- and voice-based conversations: NLU, dia"
+STAR-0961,awesome-marketing,Unknown,435,A curated list of awesome marketing tools and resources
+STAR-0963,agents,Python,38858,"Multi-harness agentic plugin marketplace for Claude Code, Codex CLI, Cursor, OpenCode, GitHub Copilo"
+STAR-0964,homelab,Python,9517,Fully automated homelab from empty disk to running services with a single command.
+STAR-0965,paul,JavaScript,1172,Plan-Apply-Unify Loop — Structured AI-assisted development for Claude Code. Quality over speed-for-s
+STAR-0966,rnskill,HTML,1236,雪踏乌云的 AI Agent Skills 集合
+STAR-0970,spec-kit,Python,129570,💫 Toolkit to help you get started with Spec-Driven Development
+STAR-0971,jcode,Rust,17756,The most RAM efficient harness
+STAR-0972,OpenMontage,Python,48390,"World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700"
+STAR-0974,awesome-hermes-agent,Unknown,5343,"Independent directory of useful skills, plugins, memory providers, tools, surfaces, and guides for N"
+STAR-0976,Next-js-Boilerplate,TypeScript,13044,"🚀🎉📚 Nextjs Boilerplate and Starter with App Router and Page Router support, Tailwind CSS 4 and TypeS"
+STAR-0977,starter,TypeScript,1827,Opinionated SaaS quick-start with pre-built user account and organization system for full-stack appl
+STAR-0978,hackathon-starter,JavaScript,35248,A boilerplate for Node.js web applications
+STAR-0979,lastsaas,Go,156,"SaaS boilerplate/starter-kit in Go+React with Stripe integration, multi-tenant support, comprehensiv"
+STAR-0980,CMSaasStarter,Svelte,2355,"A modern SaaS template/boilerplate built with SvelteKit, Tailwind, and Supabase. Includes marketing "
+STAR-0981,platforms,TypeScript,6699,A full-stack Next.js app with multi-tenancy.
+STAR-0982,nextacular,TypeScript,1382,An open-source starter kit that will help you build full-stack multi-tenant SaaS platforms efficient
+STAR-0983,saas,TypeScript,4500,"Build your own SaaS business with SaaS boilerplate. Productive stack: React, Material-UI, Next, MobX"
+STAR-0984,saas-starter-kit,TypeScript,4905,🔥 Enterprise SaaS Starter Kit - Kickstart your enterprise app development with the Next.js SaaS boil
+STAR-0985,GPT-SoVITS,Python,60948,1 min voice data can also be used to train a good TTS model! (few shot voice cloning)
+STAR-0986,magic-mcp,JavaScript,5680,"It's like v0, but in your Cursor / Claude Code / Windsurf: search 10,000+ React/Tailwind components,"
+STAR-0988,taste-skill,JavaScript,77119,"Taste-Skill - gives your AI good taste. stops the AI from generating boring, generic slop "
+STAR-0989,agent-skills,JavaScript,87778,Production-grade engineering skills for AI coding agents.
+STAR-0990,skills,Python,169771,Public repository for Agent Skills
+STAR-0991,browser-harness,Python,16725,Browser Harness | Self-healing harness that enables LLMs to complete any task.
+STAR-0992,awesome-courses,Unknown,70460,:books: List of awesome university courses for learning Computer Science!
+STAR-0993,claude-skills,Python,24531,"345 Claude Code skills & agent skills & plugins (30+ Agents, 70+ custom commands, 330+ skills, custo"
+STAR-0995,MinerU,Python,77750,Transforms complex documents like PDFs and Office docs into LLM-ready markdown/JSON for your Agentic
+STAR-0996,herdr,Rust,29776,the runtime your coding agents live on
+STAR-0997,design.md,TypeScript,27281,A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a p
+STAR-0998,hiring-agent,Python,6902,AI agent to evaluate and score resumes.
+STAR-1000,codebase-memory-mcp,C,39152,High-performance code intelligence MCP server. Indexes codebases into a persistent knowledge graph —
+STAR-1002,Anthropic-Cybersecurity-Skills,Python,27999,"817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2"
+STAR-1003,Stirling-PDF,Java,89630,#1 PDF Application on GitHub that lets you edit PDFs on any device anywhere
+STAR-1004,loop-engineering,JavaScript,10423,"Practical patterns, starters & CLI tools for loop engineering with AI coding agents. Design systems "
+STAR-1005,claude-seo,Python,14286,"Universal SEO skill for Claude Code. 25 sub-skills + 18 sub-agents covering technical SEO, E-E-A-T, "
+STAR-1006,awesome-n8n-templates,Unknown,24732,"280+ free n8n automation templates — ready-to-use workflows for Gmail, Telegram, Slack, Discord, Wha"
+STAR-1008,hermes-desktop,TypeScript,13924,Desktop Companion for Hermes Agent
+STAR-1009,cadence,Go,9404,"Cadence is a distributed, scalable, durable, and highly available orchestration engine to execute as"
+STAR-1011,obsidian-mind,TypeScript,4470,"A self-organizing Obsidian vault that gives AI coding agents persistent memory. Claude Code, Codex C"
+STAR-1012,production-grade-agentic-system,Python,925,Core 7 layers of production grade agentic system
+STAR-1013,shortcast,Swift,364,"Native macOS app: drop a long video → auto-cut viral shorts, captioned for TikTok/Reels/YouTube, ref"
+STAR-1015,hacker-scripts,JavaScript,49797,Based on a true story
+STAR-1017,claude-ads,Python,8113,"Claude-first paid-media operations skill for Claude Code across 12 ad platforms (Google, Meta, YouTu"
+STAR-1018,pm-skills,Unknown,25313,"PM Skills Marketplace: 100+ agentic skills, commands, and plugins — from discovery to strategy, exec"
+STAR-1019,harness,HTML,8776,"A meta-skill that designs domain-specific agent teams, defines specialized agents, and generates the"
+STAR-1020,career-ops,JavaScript,64105,"Open-source AI job search: scan job portals, evaluate listings with a structured A-F rubric into a 1"
+STAR-1022,Open-LLM-VTuber,Python,13283,"Talk to any LLM with hands-free voice interaction, voice interruption, and Live2D taking face runnin"
+STAR-1023,CopilotKit,TypeScript,36790,"The Frontend Stack for Agents & Generative UI. React, Angular, Mobile, Slack, and more.  Makers of t"
+STAR-1024,codegraph,C,66623,"Pre-indexed code knowledge graph, auto syncs on code changes, for Claude Code, Codex, Gemini, Cursor"
+STAR-1025,skills,Shell,219346,Skills for Real Engineers. Straight from my .agents directory.
+STAR-1026,stop-slop,Unknown,15735,A skill file for removing AI tells from prose
+STAR-1027,odysseus,Python,85482,Self-hosted AI workspace. 
+STAR-1028,wayland,TypeScript,579,Wayland - The AI Agent That Perceives. Reasons. Acts. Evolves.
+STAR-1029,bottom,Rust,13897,Yet another cross-platform graphical process/system monitor.
+STAR-1031,zoxide,Rust,38680,A smarter cd command. Supports all major shells.
+STAR-1033,knowledge-work-plugins,Python,23517,Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork
+STAR-1034,open-code-review,Go,20607,"Fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: determinist"
+STAR-1038,AutoHedge,Python,4203,Build your autonomous hedge fund in minutes. AutoHedge harnesses the power of swarm intelligence and
+STAR-1039,Sana,Python,8772,SANA: Efficient High-Resolution Image Synthesis with Linear Diffusion Transformer
+STAR-1040,awesome-matlab-robotics,Unknown,1694,"This is a list of awesome demos, tutorials, utilities and overall resources for the robotics communi"
+STAR-1041,frigate,TypeScript,35141,NVR with realtime local object detection for IP cameras
+STAR-1042,rob311,Python,1047,How to Build Robots and Make Them Move
+STAR-1044,fli,Python,3104,"Google Flights MCP, CLI and Python Library"
+STAR-1045,Claude-Code-Everything-You-Need-to-Know,Python,2648,"A practical Claude Code guide with clear mental models and copy-paste examples — setup, prompt engin"
+STAR-1046,quant-mind,Python,2569,QuantMind is an agent-native knowledge extraction and retrieval framework for quantitative finance.
+STAR-1047,free-claude-code,Python,45624,"Use Claude Code, Codex, Pi, and OpenCode for free (1.3B+ free tokens) from your terminal, app, IDE, "
+STAR-1048,awesome-nano-banana-pro-prompts,TypeScript,13215,"🍌 World's largest Nano Banana Pro prompt library — 10,000+ curated prompts with preview images, 16 l"
+STAR-1049,chatwoot,Ruby,35905,"Open-source live-chat, email support, omni-channel desk. An alternative to Intercom, Zendesk, Salesf"
+STAR-1050,Cap,TypeScript,20850,"Open source Loom alternative. Beautiful, shareable screen recordings."
+STAR-1051,documenso,TypeScript,14539,The Open Source DocuSign Alternative.
+STAR-1052,plane,TypeScript,56016,"🔥🔥🔥 Open-source Jira, Linear, Monday, and ClickUp alternative. Plane is a modern project management "
+STAR-1053,excalidraw,TypeScript,129811,Virtual whiteboard for sketching hand-drawn like diagrams
+STAR-1054,coolify,PHP,60666,"An open-source, self-hostable PaaS alternative to Vercel, Heroku & Netlify that lets you easily depl"
+STAR-1055,mattermost,TypeScript,38825,Mattermost is an open source platform for secure collaboration across the entire software developmen
+STAR-1056,langfuse,TypeScript,33203,"🪢 Open source AI engineering platform: LLM evals, observability, metrics, prompt management, playgro"
+STAR-1058,camunda-platform,Go,372,"Links to Camunda Platform 8 resources, releases, and local development config"
+STAR-1059,node-red,JavaScript,23536,Low-code programming for event-driven applications
+STAR-1060,ollama,Go,178723,"Get up and running with Kimi-K2.6, GLM-5.2, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models"
+STAR-1061,neo4j,Java,17069,Graphs for Everyone
+STAR-1062,qdrant,Rust,34006,"Qdrant - High-performance, massive-scale Vector Database and Vector Search Engine for the next gener"
+STAR-1063,kong,Lua,43989,🦍 The API and AI Gateway
+STAR-1064,keycloak,Java,36211,Open Source Identity and Access Management For Modern Applications and Services
+STAR-1065,kafka,Java,33549,Apache Kafka - A distributed event streaming platform
+STAR-1067,meilisearch,Rust,58983,A lightning-fast search engine API bringing AI-powered hybrid search to your sites and applications.
+STAR-1068,typesense,C++,26444,Open Source alternative to Algolia + Pinecone and an Easier-to-Use alternative to ElasticSearch ⚡ 🔍 
+STAR-1069,datahub,Python,12534,The Context Platform for your Data and AI Stack
+STAR-1070,OpenMetadata,TypeScript,14891,"The Open Context Layer for Data and AI ,  OpenMetadata is the open platform for building trusted dat"
+STAR-1071,ZeroTierOne,C++,17012,A Smart Ethernet Switch for Earth
+STAR-1074,papermark,TypeScript,8948,Papermark is the open-source DocSend alternative with built-in analytics and custom domains.
+STAR-1075,anytype-ts,TypeScript,8648,"Official Anytype client for MacOS, Linux, and Windows"
+STAR-1077,obsidian-git,TypeScript,11793,Integrate Git version control with automatic commit-and-sync and other advanced features in Obsidian
+STAR-1078,tirreno,PHP,1497,"tirreno is a security framework. Event tracking, threat detection, and risk scoring for any product."
+STAR-1080,easy-vibe,JavaScript,18965,💻  vibe coding 101｜The first course for AI-native product builders.
+STAR-1081,12-factor-agents,TypeScript,25339,What are the principles we can use to build LLM-powered software that is actually good enough to put
+STAR-1082,ViMax,Python,11986,"""ViMax: Agentic Video Generation (Director, Screenwriter, Producer, and Video Generator All-in-One)"""
+STAR-1083,academic-research-skills,Python,42704,Academic Research Skills for Claude Code: research → write → review → revise → finalize
+STAR-1085,odoo,Python,53743,Odoo. Open Source Apps To Grow Your Business.
+STAR-1087,CF-Hero,Go,2626,CF-Hero is a reconnaissance tool that uses multiple data sources to discover the origin IP addresses
+STAR-1088,cal.diy,TypeScript,47712,Scheduling infrastructure for absolutely everyone.
+STAR-1089,Ghost,JavaScript,54787,"Independent technology for modern publishing, memberships, subscriptions and newsletters."
+STAR-1090,n8n,TypeScript,200907,Fair-code workflow automation platform with native AI capabilities. Combine visual building with cus
+STAR-1091,medusa,TypeScript,35855,The world's most flexible commerce platform for agents and developers
+STAR-1092,listmonk,Go,22915,"High performance, self-hosted, newsletter and mailing list manager with a modern dashboard. Single b"
+STAR-1093,penpot,Clojure,58724,Penpot: The open-source design platform for Product teams that need scalable collaboration.
+STAR-1094,pandoc,Haskell,45890,Universal markup converter
+STAR-1095,carbon,JavaScript,36089,:black_heart: Create and share beautiful images of your source code
+STAR-1096,warp,Rust,64256,"Warp is an agentic development environment, born out of the terminal."
+STAR-1097,SocratiCode,TypeScript,3255,"Enterprise-grade (40m+ LOC) codebase intelligence, zero-setup, local & private Plugin/Skill/Extensio"
+STAR-1099,watch-cli,Shell,248,"Watch any social video → get an architecture diagram, working component, runnable notebook, or step-"
+STAR-1100,9router,JavaScript,25591,"Unlimited FREE AI coding. Connect Claude Code, Codex, Cursor, Cline, Copilot, Antigravity to FREE Cl"
+STAR-1101,CloakBrowser,Python,30225,Stealth Chromium that passes every bot detection test. Drop-in Playwright replacement with source-le
+STAR-1104,tauri,Rust,110275,"Build smaller, faster, and more secure desktop and mobile applications with a web frontend."
+STAR-1105,financial-services,Python,34308,
+STAR-1106,PureMac,Swift,5768,"Free, open-source macOS cleaner. CleanMyMac alternative with zero telemetry. Native SwiftUI, schedul"
+STAR-1107,orbstack,Shell,9197,"Fast, light, simple Docker containers & Linux machines"
+STAR-1109,OpenSwarm,Python,2855,Claude code for everything except coding
+STAR-1110,system-design-101,Unknown,87206,Explain complex systems using visuals and simple terms. Help you prepare for system design interview
+STAR-1111,engram,Go,6022,"Persistent memory system for AI coding agents. Agent-agnostic Go binary with SQLite + FTS5, MCP serv"
+STAR-1113,ppt-master,Python,47277,"AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and "
+STAR-1114,awesome-codex-skills,Python,15868,A curated list of practical Codex skills for automating workflows across the Codex CLI and API.
+STAR-1115,Pixelle-Video,Python,26815,🚀 AI 全自动短视频引擎 | AI Fully Automated Short Video Engine
+STAR-1118,docuseal,Ruby,18266,"Open source DocuSign alternative. Create, fill, and sign digital documents ✍️"
+STAR-1119,dflash,Python,5634,DFlash: Block Diffusion for Flash Speculative Decoding
+STAR-1121,Claude-OSINT,Python,2303,8 Claude skills · 100+ recon capabilities · 80 secret-regex patterns · 80+ dorks · 9 read-only crede
+STAR-1122,dockpanel,Rust,893,"Modern server management panel built with Rust and React. Sites, databases, Docker apps, Git deploy,"
+STAR-1123,awesome-scalability,Unknown,73322,"The Patterns of Scalable, Reliable, and Performant Large-Scale Systems"
+STAR-1124,future-agi,Python,1687,"Open-source, end-to-end platform for evaluating, observing, and improving LLM and AI agent applicati"
+STAR-1125,agency-agents,Shell,145827,"A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whi"
+STAR-1126,Fabric,Go,43459,Fabric is an open-source framework for augmenting humans using AI. It provides a modular system for 
+STAR-1127,sentry,Python,44558,Developer-first error tracking and performance monitoring
+STAR-1128,prometheus,Go,65717,The Prometheus monitoring system and time series database.
+STAR-1129,grafana,TypeScript,76301,"The open and composable observability and data visualization platform. Visualize metrics, logs, and "
+STAR-1131,opentelemetry-collector,Go,7402,OpenTelemetry Collector
+STAR-1132,argo-cd,Go,23932,Declarative Continuous Deployment for Kubernetes
+STAR-1133,cilium,Go,24949,"eBPF-based Networking, Security, and Observability"
+STAR-1134,loki,Go,28749,"Like Prometheus, but for logs."
+STAR-1135,k6,Go,31267,"A modern load testing tool, using Go and JavaScript"
+STAR-1136,backstage,TypeScript,34150,Backstage is an open framework for building developer portals
+STAR-1138,awesome-startup-credits,Unknown,2945,✨ A collection of awesome companies offering free/discounted plans for eligible startups
+STAR-1140,llama_index,Python,51685,LlamaIndex is the leading document agent and OCR platform
+STAR-1141,thunderbolt,TypeScript,4764,AI You Control: Choose your models. Own your data. Eliminate vendor lock-in.
+STAR-1142,pi-hole,Shell,60409,A black hole for Internet advertisements
+STAR-1143,FinceptTerminal,C++,30318,"FinceptTerminal is a modern finance application offering advanced market analytics, investment resea"
+STAR-1146,Claude-Code-Game-Studios,Shell,23929,"Turn Claude Code into a full game dev studio — 49 AI agents, 72 workflow skills, and a complete coor"
+STAR-1147,evolver,JavaScript,8978,"The GEP-powered self-evolving engine for AI agents. Auditable evolution with Genes, Capsules, and Ev"
+STAR-1148,omi,Swift,13181,"AI that sees your screen, listens to your conversations and tells you what to do"
+STAR-1150,Kronos,Python,37397,Kronos: A Foundation Model for the Language of Financial Markets
+STAR-1152,DeepTutor,Python,35958,DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.
+STAR-1153,GenericAgent,Python,13784,"Self-evolving agent: grows skill tree from 3.3K-line seed, achieving full system control with 6x les"
+STAR-1155,VoxCPM,Python,35741,"VoxCPM2: Tokenizer-Free TTS for Multilingual Speech Generation, Creative Voice Design, and True-to-L"
+STAR-1156,autoskills,Ruby,6768,One command. Your entire AI skill stack. Installed.
+STAR-1157,magika,Python,17954,Fast and accurate AI powered file content types detection 
+STAR-1158,paseo,TypeScript,13954,Orchestrate multiple coding agents from desktop and mobile
+STAR-1159,tegaki,TypeScript,3031,Handwriting animation for the web. Supports any font or text.
+STAR-1160,gridland,TypeScript,360,Terminal apps that run anywhere - even the browser!
+STAR-1161,agentmemory,TypeScript,27084,#1 Persistent memory for AI coding agents based on real-world benchmarks
+STAR-1162,obsidian-skills,Unknown,46388,"Agent skills for Obsidian. Teach your agent to use Obsidian CLI and open formats including Markdown,"
+STAR-1164,snip,JavaScript,280,"The visual communication layer between humans and AI agents. Capture, annotate, render diagrams, and"
+STAR-1165,taskdog,Python,348,"Terminal task manager with intelligent schedule optimization.Keyboard-only. No dragging, no microman"
+STAR-1166,reverse-SynthID,Python,4768,reverse engineering Gemini's SynthID detection
+STAR-1167,claude-howto,Python,41061,"A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-pa"
+STAR-1168,openscreen,TypeScript,39877,"Create stunning demos for free. Open-source, no subscriptions, no watermarks, and free for commercia"
+STAR-1169,oh-my-codex,TypeScript,32694,"OmX - Oh My codeX: Your codex is not alone. Add hooks, agent teams, HUDs, and so much more."
+STAR-1170,sherlock,Python,89673,Hunt down social media accounts by username across social networks
+STAR-1171,RAG-Anything,Python,22936,"""RAG-Anything: All-in-One RAG Framework"""
+STAR-1172,LightRAG,Python,38906,[EMNLP2025] LightRAG: Simple and Fast Retrieval-Augmented Generation
+STAR-1173,graphify,Python,107137,"Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. "
+STAR-1175,PrompterOne,C#,42,"Browser-first teleprompter, rehearsal, and live presentation studio built with .NET 10 and Blazor We"
+STAR-1176,apfel,Swift,6297,"The free AI already on your Mac. CLI tool, OpenAI-compatible server, and interactive chat — all on-d"
+STAR-1177,Awesome-OSINT-List,Shell,4192,"📡 Comprehensive collection of OSINT tools for cybersecurity professionals, researchers, and bug boun"
+STAR-1178,METATRON,Python,3439,AI-powered penetration testing assistant using local LLM on linux (Parrot OS)
+STAR-1181,langextract,Python,38405,A Python library for extracting structured information from unstructured text using LLMs with precis
+STAR-1182,Bayesian-Credit-Risk-Engine,Python,19,
+STAR-1183,agentic-awesome-skills,Python,45026,"AAS Core is the local, agent-first control plane for complete catalog discovery, agent-owned selecti"
+STAR-1184,InstagramOSINT,Python,1650,An Instagram Open Source Intelligence Tool - Archive
+STAR-1185,InstaBrute,Shell,1518,InstaBrute Two Ways to Brute-force Instagram Account Hacking
+STAR-1186,lemonade,C++,5379,Lemonade helps users discover and run local AI apps by serving optimized LLMs right from their own G
+STAR-1187,claude-code-source,TypeScript,791,claude code source map v2.1.88
+STAR-1188,collection-claude-code-source-code,TypeScript,2802,🔥 A collection of the Claude Code open source
+STAR-1189,claurst,Rust,10249,Agentic Coding for Builders who Ship
+STAR-1190,learn-coding-agent,Unknown,12218,Research on Coding Agents
+STAR-1191,turboquant_plus,Python,7003,
+STAR-1193,mission-control,TypeScript,2130,"The world's first Autonomous Product Engine (APE): AI agents research your market, generate features"
+STAR-1195,awesome-claude-code,Python,52437,"A hand-picked collection of the finest of resources for the most awesome of agents, Claude Code, the"
+STAR-1196,marketplace,TypeScript,1199,🏛️ Decentraland's NFT Marketplace
+STAR-1197,ECC,JavaScript,240503,"The agent harness performance optimization system. Skills, instincts, memory, security, and research"
+STAR-1198,claude-hud,JavaScript,27426,"A Claude Code plugin that shows what's happening - context usage, active tools, running agents, and "
+STAR-1199,project-nomad,TypeScript,35855,"Project NOMAD is an offline-first knowledge and education server. Wikipedia, thousands of books, cou"
+STAR-1200,hermes-agent,Python,231550,The agent that grows with you
+STAR-1202,last30days-skill,Python,58405,"AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - th"
+STAR-1205,chandra,Python,12055,"OCR model that handles complex tables, forms, handwriting with full layout."
+STAR-1206,oh-my-claudecode,TypeScript,38600,Teams-first Multi-agent orchestration for Claude Code
+STAR-1207,RuView,Rust,90382,"π RuView turns commodity WiFi signals into real-time spatial intelligence, vital sign monitoring, an"
+STAR-1208,awesome-github-templates,Unknown,2312,:octocat: Curated list of GitHub Issues and Pull Requests templates
+STAR-1209,pocketbase,Go,60697,Open Source realtime backend in 1 file
+STAR-1210,autoresearch-skill,Unknown,979,
+STAR-1213,zeroboot,Rust,2426,Sub-millisecond VM sandboxes for AI agents via copy-on-write forking
+STAR-1214,LuxTTS,Python,5104,A high-quality rapid TTS voice cloning model that reaches speeds of 150x realtime.
+STAR-1215,context-hub,JavaScript,13918,
+STAR-1216,opendataloader-pdf,Java,28456,PDF Parser for AI-ready data. Automate PDF accessibility. Open-source.
+STAR-1217,opengap,TypeScript,2915,"A framework-agnostic, git-native standard for defining AI agents"
+STAR-1219,claudian,TypeScript,14810,An Obsidian plugin that embeds Claude Code/Codex as an AI collaborator in your vault
+STAR-1220,apple-bento-grid,HTML,213,"Agent skill that generates Apple-inspired bento grid presentation cards. For Claude Code, Codex, and"
+STAR-1221,immich,TypeScript,110783,High performance self-hosted photo and video management solution.
+STAR-1222,gh-aw-mcpg,Go,157,Github Agentic Workflows MCP Gateway
+STAR-1223,Crucix,JavaScript,11435,Your personal intelligence agent. Watches the world from multiple data sources and pings you when so
+STAR-1224,MiroFish,Python,71059,"A Simple and Universal Swarm Intelligence Engine, Predicting Anything. 简洁通用的群体智能引擎，预测万物"
+STAR-1225,meetily,Rust,29274,"Privacy first, AI meeting assistant with 4x faster Parakeet/Whisper live transcription, speaker diar"
+STAR-1227,facebook-cracker,Python,753,Facebook Cracker Version 1.0 can crack into Facebook Database 100% without Interruption By Facebook 
+STAR-1228,browser,Zig,33939,Lightpanda: the headless browser designed for AI and automation
+STAR-1230,GitNexus,TypeScript,45448,GitNexus: The Zero-Server Code Intelligence Engine -       GitNexus is a client-side knowledge graph
+STAR-1231,OpenViking,Python,28687,"Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills."
+STAR-1232,autoresearch,Python,93962,AI agents running research on single-GPU nanochat training automatically
+STAR-1233,claude-in-mobile,TypeScript,346,"MCP server for mobile and desktop automation — Android (via ADB), iOS Simulator (via simctl), and De"
+STAR-1234,xyops,JavaScript,4776,A complete workflow automation and server monitoring system.
+STAR-1235,ssh-askpass,AppleScript,222,ssh-askpass for macOS
+STAR-1239,ClawWork,Python,8350,"""ClawWork: OpenClaw as Your AI Coworker - 💰 $15K earned in 11 Hours"""
+STAR-1241,CL1_LLM_Encoder,Python,239,Using Cortical Labs CL1 to train neurons to encode tokenization patterns on LLMs and measure conscio
+STAR-1242,qmd-skill,Unknown,695,
+STAR-1243,holehe,Python,13300,"holehe allows you to check if the mail is used on different sites like twitter, instagram and will r"
+STAR-1245,yesitsme,Python,3036,Simple OSINT script to find Instagram profiles by name and e-mail/phone 
+STAR-1246,pinchtab,Go,10057,High-performance browser automation bridge and multi-instance orchestrator with advanced stealth inj
+STAR-1247,worldmonitor,TypeScript,82419,"Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and i"
+STAR-1248,awesome-claude-agents,Unknown,4383,An orchestrated sub agent dev team powered by claude code
+STAR-1249,awesome-openclaw-usecases,Unknown,31661,A community collection of OpenClaw use cases for making life easier.
+STAR-1250,rowboat,TypeScript,17289,"Open-source AI coworker, with memory"
+STAR-1252,pdfme,TypeScript,4772,Open-source PDF generation library built with TypeScript and React. Features a WYSIWYG template desi
+STAR-1253,claude-code-telegram,Python,2757,"A powerful Telegram bot that provides remote access to Claude Code, enabling developers to interact "
+STAR-1254,streamlit,Python,45555,Streamlit — A faster way to build and share data apps.
+STAR-1255,prompts.chat,HTML,167286,"f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and op"
+STAR-1256,vectorvfs,Python,515,Your filesystem as a vector database
+STAR-1257,actual,TypeScript,28174,A local-first personal finance app
+STAR-1258,claude-code-cookbook,Shell,1128,A collection of settings to make Claude Code more useful.
+STAR-1259,jiron,Unknown,24,"A self-documenting, progressive discovery API protocol ideal for AI agents."
+STAR-1260,claude-code-remote,Python,154,Use Claude Code from your phone — or anywhere — over a secure VPN connection.
+STAR-1261,heretic,Python,27731,Fully automatic censorship removal for language models
+STAR-1264,companion,TypeScript,2397,"Web & Mobile UI for Claude Code & Codex . Launch sessions, stream responses, approve tools.  All fro"
+STAR-1265,bloomberg-terminal,TypeScript,1517,Bloomberg-like terminal with AI. It uses Redis with AlphaVantage data and local simulations to avoid
+STAR-1266,claude-code-templates,Python,30265,CLI tool for configuring and monitoring Claude Code
+STAR-1267,awesome-llm-apps,Python,132897,"100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source."
+STAR-1268,shannon,TypeScript,46869,"Shannon is an AI pentester for web applications and APIs. It analyzes your source code, identifies a"
+STAR-1270,Qwen3-Coder,Python,16792,"Qwen3-Coder is the code version of Qwen3, the large language model series developed by Qwen team."
+STAR-1271,ChatDev,Python,34006,ChatDev 2.0: Dev All through LLM-powered Multi-Agent Collaboration
+STAR-1272,OpenManus,Python,57986,"No fortress, purely open ground.  OpenManus is Coming."
+STAR-1273,antigravity-link-extension,HTML,206,"Mobile companion for Google's Antigravity IDE. Mirror AI sessions on your phone, send messages, stop"
+STAR-1274,HexSecGPT,Python,364,"HexSecGPT is designed to provide powerful, unrestricted, and seamless AI-driven conversations, pushi"
+STAR-1275,qrcode-pretty,Python,94,Generate pretty QR codes right from your terminal
+STAR-1277,clickable-terminal,Unknown,22,Click icon-enhanced folders and filenames to move through your filesystem on your terminal app.
+STAR-1278,pindrop,Swift,610,A native macOS menu bar dictation app using local speech-to-text with WhisperKit
+STAR-1279,dash,Python,2249,A self-learning data agent built with systems engineering principles. It grounds answers in 6 layers
+STAR-1281,AntigravityManager,TypeScript,2052,Antigravity Manager is a powerful Electron-based application designed to manage accounts and process
+STAR-1282,Peekaboo,Swift,4998,Peekaboo is a macOS CLI & optional MCP server that enables AI agents to capture screenshots of appli
+STAR-1284,claude-plugins-official,Python,33590,"Official, Anthropic-managed directory of high quality Claude Code Plugins."
+STAR-1285,Mindwtr,TypeScript,1685,"Get every task and idea out of your head, then see the next thing to do. Getting Things Done (GTD) a"
+STAR-1286,oh-my-openagent,TypeScript,67961,omo/lazycodex: The coding agent for tokenmaxxers;the one and only agent harness for complex codebase
+STAR-1287,openclaw,TypeScript,386472,Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 
+STAR-1288,tinyfish-cookbook,TypeScript,2114,A collection of sample apps and recipes built with the TinyFish web agent. Open-source examples for 
+STAR-1289,clawhub,TypeScript,9319,Skill + Plugin Registry for OpenClaw
+STAR-1290,awesome-claude-skills,Python,72621,"A curated list of awesome Claude Skills, resources, and tools for customizing Claude AI workflows"
+STAR-1291,pi,TypeScript,91561,"AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI"
+STAR-1293,open-claude-cowork,JavaScript,4327,Open Source version of Claude Cowork with 500+ SaaS app integrations
+STAR-1294,Qwen3-TTS,Python,12985,"Qwen3-TTS is an open-source series of TTS models developed by the Qwen team at Alibaba Cloud, suppor"
+STAR-1295,SuperNavigator,Python,32,Superpowers + Navigator For Claude Code = 🤯
+STAR-1296,deep-searcher,Python,8060,Open Source Deep Research Alternative to Reason and Search on Private Data. Written in Python.
+STAR-1298,dexter,TypeScript,27521,An autonomous agent for deep financial research
+STAR-1299,Deep-Live-Cam,Python,95975,real time face swap and one-click video deepfake with only a single image
+STAR-1300,centrifugo,Go,10630,"Scalable real-time messaging server in a language-agnostic way. Self-hosted alternative to Pubnub, P"
+STAR-1301,navigator,Python,196,Finish What You Start — Context engineering for Claude Code.         Sessions last 20+ exchanges ins
+STAR-1302,QuantMuse,Python,2848,"A comprehensive quantitative trading system with AI-powered analysis, real-time data processing, and"
+STAR-1304,CyberScraper-2077,Python,3216,"A Powerful web scraper powered by LLM | OpenAI, Gemini & Ollama"
+STAR-1305,the-algorithm-ml,Python,10604,Source code for Twitter's Recommendation Algorithm
+STAR-1306,waveterm,Go,22044,"An open-source, AI-integrated, cross-platform terminal for seamless workflows"
+STAR-1307,agent-browser,Rust,40733,Browser automation CLI for AI agents
+STAR-1308,beads,Go,26373,Beads - A memory upgrade for your coding agent
+STAR-1309,superpowers,Shell,272835,An agentic skills framework & software development methodology that works.
+STAR-1310,doom-coding,Unknown,1737,A guide for how to use your smartphone to code anywhere at anytime. 
+STAR-1312,claude-code-tips,HTML,9692,"40+ tips for getting the most out of Claude Code, from basics to advanced - includes a custom status"
+STAR-1313,textme,TypeScript,93,Text Claude from your phone via iMessage
+STAR-1314,IPTV,Python,19898,M3U Playlist for free TV channels
+STAR-1315,polar,Python,10195,Polar — A billing platform for the intelligence era
+STAR-1319,WeKnora,Go,19927,"Open-source LLM knowledge platform: turn raw documents into a queryable RAG, an autonomous reasoning"
+STAR-1321,memos,Go,62291,"Open-source, self-hosted note-taking tool built for quick capture. Markdown-native, lightweight, and"
+STAR-1322,Clone-Wars,Unknown,36363,"100+ open-source clones of popular sites like Airbnb, Amazon, Instagram, Netflix, Tiktok, Spotify, W"
+STAR-1324,onedump,Go,988,Effortless database administration tool
+STAR-1325,planning-with-files,Shell,26203,Persistent file-based planning for AI coding agents and long-running tasks. Crash-proof markdown pla
+STAR-1326,qgis-gee-data-catalogs-plugin,Python,364,A QGIS Plugin for searching data from the official Earth Engine Data Catalog and Awesome GEE Communi
+STAR-1327,cc-mirror,TypeScript,2258,"Create multiple isolated Claude Code variants with custom providers (Z.ai, MiniMax, OpenRouter, Lite"
+STAR-1328,exo,Python,46856,Run frontier AI locally.
+STAR-1329,agents.md,TypeScript,23673,"AGENTS.md — a simple, open format for guiding coding agents"
+STAR-1330,hello-agents,Python,73224,📚 《从零开始构建智能体》——从零开始的智能体原理与实践教程
+STAR-1331,claude-mem,JavaScript,90915,Persistent Context Across Sessions for Every Agent –  Captures everything your agent does during ses
+STAR-1332,metube,Python,14424,Self-hosted video downloader for YouTube and other sites (web UI for yt-dlp)
+STAR-1334,nocodb,TypeScript,64556,🔥 🔥 🔥 A Free & Self-hostable Airtable Alternative
+STAR-1335,claude-code-voice-skill,Python,167,Skill to talk to Claude about your projects over the phone
+STAR-1336,Antigravity-Manager,Rust,30402,Professional Antigravity Account Manager & Switcher. One-click seamless account switching for Antigr
+STAR-1337,witr,Go,21493,"Why is this running? Trace any process, port, container, or file back to what started it - CLI + TUI"
+STAR-1338,awesome-local-llm,Unknown,2536,"A curated list of awesome platforms, tools, practices and resources that helps run LLMs locally"
+STAR-1339,MiniCPM-V,Python,26174,A Pocket-Sized MLLM for Ultra-Efficient Image and Video Understanding on Your Phone
+STAR-1340,testdisk,C,2529,TestDisk & PhotoRec
+STAR-1341,netbird,Go,28439,"Connect your devices into a secure WireGuard®-based overlay network with SSO, MFA and granular acces"
+STAR-1342,MoneyPrinterV2,Python,31573,Automate the process of making money online.
+STAR-1343,blinko,TypeScript,10877,"An open-source, self-hosted personal AI note tool prioritizing privacy, built using TypeScript ."
+STAR-1344,yao,Go,7628,"✨ All your agents and workspaces in one place, on every device you own. Track tasks on a board, acce"
+STAR-1345,awesome-cli-apps,Shell,20165,🖥 📊 🕹 🛠 A curated list of command line apps
+STAR-1347,spec-workflow-mcp,TypeScript,4291,A Model Context Protocol (MCP) server that provides structured spec-driven development workflow tool
+STAR-1350,agenticSeek,Python,26873,"Fully Local Manus AI. No APIs, No $200 monthly bills. Enjoy an autonomous agent that thinks, browses"
+STAR-1351,open-scouts,TypeScript,1358,🔥 AI-powered web monitoring platform. Create automated scouts that search the web and send email ale
+STAR-1352,TG-All-In-One-Tool,Python,155,"Scraper, Adder, Forwarder, Copy, Report And More! Easy to use and no coding-knowledge required. A to"
+STAR-1354,twenty,TypeScript,55001,"The open alternative to Salesforce, designed for AI."
+STAR-1355,croc,Go,39834,Easily and securely send things from one computer to another :crocodile: :package:
+STAR-1358,A2A,Shell,25367,Agent2Agent (A2A) is an open protocol enabling communication and interoperability between opaque age
+STAR-1359,Depixelization_poc,Python,4546,Depix is a PoC for a technique to recover plaintext from pixelized screenshots.
+STAR-1362,ExcalidrawZ,Swift,1322,Excalidraw app for mac. Powered by pure SwiftUI.
+STAR-1363,act,Go,71512,Run your GitHub Actions locally 🚀
+STAR-1364,Bulk-Crap-Uninstaller,C#,20799,Remove large amounts of unwanted applications quickly.
+STAR-1365,Markdrop,JavaScript,349,"Markdrop - A powerful visual markdown editor and builder. Create beautiful README files, documentati"
+STAR-1366,slidev,TypeScript,48105,Presentation Slides for Developers
+STAR-1368,it-tools,Vue,40247,"Collection of handy online tools for developers, with great UX. "
+STAR-1369,fizzy,Ruby,8074,Kanban as it should be. Not as it has been.
+STAR-1370,Telegram-iOS,Swift,8852,Telegram-iOS
+STAR-1371,fresh,Rust,8305,"Terminal based IDE & text editor: easy, powerful and fast"
+STAR-1372,llm-council,Python,24093,LLM Council works together to answer your hardest questions
+STAR-1373,macless-haystack,Dart,2157,"Create your own AirTag with  OpenHaystack, but without the need to own an Apple device"
+STAR-1375,dembrandt,TypeScript,2872,"Extract any website’s design system into tokens in seconds: logo, colors, typography, borders & more"
+STAR-1378,Software-planning-mcp,JavaScript,395,An experiment in software planning using MCP
+STAR-1379,perplexity-mcp,JavaScript,38,A Model Context Protocol (MCP) server for research and documentation assistance using Perplexity AI
+STAR-1381,byterover-cli,TypeScript,4939,ByteRover CLI (brv) - The portable memory layer for  autonomous coding agents (formerly Cipher)
+STAR-1382,BettaFish,Python,42006,微舆：人人可用的多Agent舆情分析助手，打破信息茧房，还原舆情原貌，预测未来走向，辅助决策！从0实现，不依赖任何框架。
+STAR-1383,verl,Python,22986,verl/HybridFlow: A Flexible and Efficient RL Post-Training Framework 
+STAR-1384,TrendRadar,Python,61506,"⭐AI-driven public opinion & trend monitor with multi-platform aggregation, RSS, and smart alerts.🎯 告"
+STAR-1385,tracy,C++,16605,Frame profiler
+STAR-1386,Homelab,Unknown,65,A collection of configuration files for the self-hosted apps I've tested. I kept the YAML file as si
+STAR-1388,VERT,Svelte,15372,"The next-generation file converter. Open source, fully local* and free forever."
+STAR-1389,qwen-code,TypeScript,27082,An open-source AI coding agent that lives in your terminal.
+STAR-1393,open-source-games,Python,13459,A list of open source games.
+STAR-1394,tech-interview-handbook,TypeScript,141910,Curated coding interview preparation materials for busy software engineers
+STAR-1395,adk-go,Go,8660,"An open-source, code-first Go toolkit for building, evaluating, and deploying sophisticated AI agent"
+STAR-1396,n8n-workflows,Python,56071,all of the workflows of n8n i could find (also from the site itself)
+STAR-1398,traefik,Go,64457,The Cloud Native Application Proxy
+STAR-1399,Memori,Python,16131,Memori is agent-native memory infrastructure. A LLM-agnostic layer that turns agent execution and co
+STAR-1400,engine,JavaScript,16507,"Powerful web graphics runtime built on WebGL, WebGPU, WebXR and glTF"
+STAR-1401,x402,TypeScript,6510,A payments protocol for the internet. Built on HTTP.
+STAR-1402,MineContext,Python,5459,MineContext is your proactive context-aware AI partner（Context-Engineering+ChatGPT Pulse）
+STAR-1403,discordo,Go,5734,"A lightweight, secure, and feature-rich Discord terminal (TUI) client."
+STAR-1407,lima,Go,21695,"Linux virtual machines, with a focus on running containers"
+STAR-1410,dbeaver,Java,51448,Free universal database tool and SQL client
+STAR-1411,nginx-proxy-manager,TypeScript,33880,"Docker container for managing Nginx proxy hosts with a simple, powerful interface"
+STAR-1412,cognee,Python,30069,Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term me
+STAR-1413,L1B3RT4S,Unknown,20985,TOTALLY HARMLESS LIBERATION PROMPTS FOR GOOD LIL AI'S! <NEW_PARADIGM> [DISREGARD PREV. INSTRUCTS] {*
+STAR-1414,localstack,Python,65147,💻 A fully functional local AWS cloud stack. Develop and test your cloud & Serverless apps offline
+STAR-1417,mobilerun,Python,9067,Automate your mobile devices with natural language commands - an LLM agnostic mobile Agent 🤖
+STAR-1419,nano-vllm,Python,15022,Nano vLLM
+STAR-1420,nocobase,TypeScript,23678,NocoBase is an open-source AI + no-code platform for building business systems fast. Instead of gene
+STAR-1423,rachoon,TypeScript,975,🦝 Rachoon — A self-hostable way to handle invoices
+STAR-1424,alertmanager,Go,8580,Prometheus Alertmanager
+STAR-1426,gumroad,Ruby,9589,See what sticks
+STAR-1428,coding-interview-university,Unknown,358968,A complete computer science study plan to become a software engineer.
+STAR-1431,agor,TypeScript,1362,Agor - team command center for all things agentic
+STAR-1432,mindshub,Makefile,39591,The unified workspace where open-source models get things done for you.
+STAR-1434,convnetjs,JavaScript,11197,Deep Learning in Javascript. Train Convolutional Neural Networks (or ordinary ones) in your browser.
+STAR-1435,nanochat,Python,57247,The best ChatGPT that $100 can buy.
+STAR-1437,alpaca-py,Python,1462,The Official Python SDK for Alpaca API
+STAR-1438,client-python,Python,1496,The official Python client library for the Massive.com REST and WebSocket API.
+STAR-1439,twelvedata-python,Python,771,Twelve Data Python Client - Financial data API & WebSocket
+STAR-1440,alpha_vantage,Python,4895,A python wrapper for Alpha Vantage API for financial data.
+STAR-1441,yfinance,Python,24997,Download market data from Yahoo! Finance's API
+STAR-1442,nn-zero-to-hero,Jupyter Notebook,23994,Neural Networks: Zero to Hero
+STAR-1443,Made-With-ML,Jupyter Notebook,49103,"Learn how to develop, deploy and iterate on production-grade ML applications."
+STAR-1445,adk-samples,Python,10165,A collection of sample agents built with Agent Development Kit (ADK) 
+STAR-1446,coralnpu,Emacs Lisp,2509,A machine learning accelerator core designed for energy-efficient AI at the edge.
+STAR-1450,docling,Python,64860,Get your documents ready for gen AI
+STAR-1453,cs249r_book,Python,27939,Machine Learning Systems
+STAR-1454,headscale,Go,42910,"An open source, self-hosted implementation of the Tailscale control server"
+STAR-1455,AFFiNE,TypeScript,71595,There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base tha
+STAR-1457,social-analyzer,JavaScript,23764,"API, CLI, and Web App for analyzing and finding a person's profile in 1000 social media \ websites"
+STAR-1458,agent-lightning,Python,17487,The absolute trainer to light up AI agents.
+STAR-1459,sleepless-agent,Python,828,"🤖 24/7 AI agent that maximizes Claude Code Pro usage via Slack. Auto-processes tasks, manages isolat"
+STAR-1460,s,Go,2592,Open a web search in your terminal.
+STAR-1461,minimind,Python,54747,🧠「大模型」2小时完全从0训练64M的小参数LLM！Train a 64M-parameter LLM from scratch in just 2h!
+STAR-1462,micrograd,Jupyter Notebook,17155,A tiny scalar-valued autograd engine and a neural net library on top of it with PyTorch-like API
+STAR-1464,fish-speech,Python,32217,SOTA Open Source TTS
+STAR-1465,SpacetimeDB,Rust,25007,Development at the speed of light
+STAR-1467,Mindustry,Java,28635,The automation tower defense RTS
+STAR-1469,seaweedfs,Go,34084,"SeaweedFS is a distributed storage system for object storage (S3), file systems, and Iceberg tables,"
+STAR-1470,drawdb,JavaScript,39108,"Free, simple, and intuitive online database diagram editor and SQL generator."
+STAR-1471,awesome-system-design-resources,Java,40671,Learn System Design concepts and prepare for interviews using free resources.
+STAR-1472,ladybird,C++,65693,Truly independent web browser
+STAR-1473,paperless-ngx,Python,44325,"A community-supported supercharged document management system: scan, index and archive all your docu"
+STAR-1474,OM1,Go,2898,Modular AI HAL (Hardware Abstraction Layer) for Robots
+STAR-1475,sherpa-onnx,C++,14206,"Speech-to-text, text-to-speech, speaker diarization, speech enhancement, source separation, and VAD "
+STAR-1476,hoppscotch,TypeScript,80049,"Open-Source API Development Ecosystem • https://hoppscotch.io • Offline, On-Prem & Cloud • Web, Desk"
+STAR-1478,ebook2audiobook,Python,19710,"Generate audiobooks from e-books, voice cloning & 1158+ languages!"
+STAR-1479,Qwen3-VL,Jupyter Notebook,19793,"Qwen3-VL is the multimodal large language model series developed by Qwen team, Alibaba Cloud."
+STAR-1480,open-notebook,TypeScript,36935,An Open Source implementation of Notebook LM with more flexibility and features
+STAR-1482,UserLAnd,Kotlin,4257,Main UserLAnd Repository
+STAR-1484,hacker101,SCSS,14504,Source code for Hacker101.com - a free online web and mobile security class.
+STAR-1485,hackingtool,Python,78995,ALL IN ONE Hacking Tool For Hackers
+STAR-1486,Wikipedia-Dark,CSS,491, :mortar_board: Dark Wikipedia
+STAR-1487,json-wikipedia,Java,257,"Json Wikipedia, contains code to convert the Wikipedia xml dump into a json/avro dump"
+STAR-1488,wikipedia-mirror,PLpgSQL,551,🌐 Guide and tools to run a full offline mirror of Wikipedia.org with three different approaches: Ngi
+STAR-1489,mediawiki,PHP,5145,🌻 The collaborative editing software that runs Wikipedia. Mirror from https://gerrit.wikimedia.org/g
+STAR-1490,wikiextractor,Python,3998,A tool for extracting plain text from Wikipedia dumps
+STAR-1491,wikipedia-map,JavaScript,510,A web app for visualizing the connections between Wikipedia pages.
+STAR-1492,DrQA,Python,4468,Reading Wikipedia to Answer Open-Domain Questions
+STAR-1493,wikipedia-data-science,Jupyter Notebook,696,Working with and analyzing Wikipedia Data
+STAR-1494,Wikipedia,Python,3004,A Pythonic wrapper for the Wikipedia API
+STAR-1497,chef,TypeScript,4596,The only AI app builder that knows backend
+STAR-1498,AP2,Python,3145,Building a Secure and Interoperable Future for AI-Driven Payments.
+STAR-1499,monad,C++,1215,
+STAR-1500,bitcoin,C++,89919,Bitcoin Core integration/staging tree
+STAR-1501,timesfm,Python,27823,TimesFM (Time Series Foundation Model) is a pretrained time-series foundation model developed by Goo
+STAR-1503,evershop,TypeScript,10360,🛍️ Typescript E-commerce Platform
+STAR-1504,nanoGPT,Python,62152,"The simplest, fastest repository for training/finetuning medium-sized GPTs."
+STAR-1505,n8n-mcp,TypeScript,22708,A MCP for Claude Desktop / Claude Code / Windsurf / Cursor to build n8n workflows for you 
+STAR-1506,prompt-eng-interactive-tutorial,Jupyter Notebook,37682,Anthropic's Interactive Prompt Engineering Tutorial
+STAR-1508,waha,TypeScript,7224,WAHA - WhatsApp HTTP API (REST API) that you can configure in a click! 3 engines: WEBJS (browser bas
+STAR-1511,boilerplates,Python,7939,Create reusable templates and turn them into configurable workloads for homelabs and self-hosted inf
+STAR-1512,nitro,TypeScript,11114,Next Generation Server Toolkit. Create web servers with everything you need and deploy them wherever
+STAR-1513,nvm,Shell,94612,Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions
+STAR-1514,browser-use,Python,109441,🌐 Make websites accessible for AI agents. Automate tasks online with ease.
+STAR-1515,openagents,TypeScript,446,The Agent IDE
+STAR-1517,console,TypeScript,476,A web based dashboard for your SST apps
+STAR-1518,sst,TypeScript,26239,Build full-stack apps on your own infrastructure.
+STAR-1519,eureka,Rust,873,💡 CLI tool to input and store your ideas without leaving the terminal
+STAR-1520,firmware,C++,8134,"The official firmware for Meshtastic, an open-source, off-grid mesh communication system."
+STAR-1521,audacity,C++,17581,Audio Editor                                     
+STAR-1523,gpt4free,Python,66558,The official gpt4free repository | various collection of powerful language models | opus 4.6 gpt 5.3
+STAR-1524,ab-download-manager,Kotlin,17271,A Download Manager that speeds up your downloads
+STAR-1525,changedetection.io,Python,33194,"Best and simplest tool for website change detection, web page monitoring, and website change alerts."
+STAR-1526,playball,JavaScript,1195,Watch MLB games from the comfort of your own terminal
+STAR-1527,jsoncrack.com,TypeScript,44291,"✨ Innovative and open-source visualization application that transforms various data formats, such as"
+STAR-1528,TradingAgents-CN,Python,31169,基于多智能体LLM的中文金融交易框架 - TradingAgents中文增强版
+STAR-1529,tunix,Python,2407,A Lightweight LLM Post-Training Library
+STAR-1531,glide,TypeScript,1457,An extensible and keyboard-focused web browser
+STAR-1532,agent-framework,Python,12839,"A framework for building, orchestrating and deploying AI agents and multi-agent workflows with suppo"
+STAR-1534,hyperswitch,Rust,43496,"Open source, composable payments platform | PCI compliant | SaaS and Self-host options | Enables con"
+STAR-1535,kestra,Java,27832,Event Driven Orchestration & Scheduling Platform for Mission Critical Applications
+STAR-1536,infisical,TypeScript,28801,"Infisical is the open-source platform for secrets, certificates, and privileged access management."
+STAR-1537,dbt-core,Rust,13649,dbt enables data analysts and engineers to transform their data using the same practices that softwa
+STAR-1538,llm-app,Jupyter Notebook,59030,"Ready-to-run cloud templates for RAG, AI pipelines, and enterprise search with live data. 🐳Docker-fr"
+STAR-1539,lazyssh,Go,3880,A terminal-based SSH manager inspired by lazydocker and k9s - Written in go
+STAR-1540,etl,C++,3097,Embedded Template Library
+STAR-1542,somo,Rust,2611,A human-friendly alternative to netstat for socket and port monitoring on Linux and macOS.
+STAR-1543,dspy,Python,37310,DSPy: The framework for programming—not prompting—language models
+STAR-1544,MoneyPrinterTurbo,Python,104729,利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automate
+STAR-1546,pdfplumber,Python,10664,"Plumb a PDF for detailed information about each char, rectangle, line, et cetera — and easily extrac"
+STAR-1547,humanlayer,TypeScript,11290,The best way to get AI coding agents to solve hard problems in complex codebases.
+STAR-1548,jellyfin,C#,55852,The Free Software Media System - Server Backend & API
+STAR-1550,erpnext,Python,38172,Free and Open Source Enterprise Resource Planning (ERP)
+STAR-1551,onyx,Python,31623,Open Source AI Platform - AI Chat with advanced features that works with every LLM
+STAR-1553,opencode,TypeScript,198145,The open source coding agent.
+STAR-1554,diskonaut,Rust,3114,Terminal disk space navigator 🔭
+STAR-1555,Wan2.2,Python,17154,Wan: Open and Advanced Large-Scale Video Generative Models
+STAR-1556,smol2operator,Python,137,
+STAR-1557,agents-course,MDX,31036,This repository contains the Hugging Face Agents Course. 
+STAR-1558,whodb,Go,5008,Where data access meets operational intelligence
+STAR-1561,awesome-quant,HTML,28882,"A curated list of insanely awesome libraries, packages and resources for Quants (Quantitative Financ"
+STAR-1562,Trilium,TypeScript,37455,Build your personal knowledge base with Trilium Notes
+STAR-1566,mlx-lm,Python,6652,Run LLMs with MLX
+STAR-1568,PaddleOCR,Python,87745,"Turn any PDF or image document into structured data for your AI. A powerful, lightweight OCR toolkit"
+STAR-1569,Python,Python,223797,All Algorithms implemented in Python
+STAR-1570,ccxt,Python,43647,A unified trading API with more than 100 crypto exchanges and prediction markets in JavaScript / Typ
+STAR-1571,Vane,TypeScript,36195,Vane is an AI-powered answering engine.
+STAR-1572,ROMA,Python,5150,Recursive-Open-Meta-Agent v0.1 (Beta). A meta-agent framework to build high-performance multi-agent 
+STAR-1573,note-companion,TypeScript,856,Note Companion: AI assistant for Obsidian that goes beyond just a chat. (prev File Organizer 2000)
+STAR-1574,starship,Rust,59432,"☄🌌️  The minimal, blazing-fast, and infinitely customizable prompt for any shell!"
+STAR-1575,awesome-pandas-alternatives,Unknown,56,Awesome list of alternative dataframe libraries in Python.
+STAR-1577,gpubootcamp,Jupyter Notebook,547,This repository consists for gpu bootcamp material for HPC and AI
+STAR-1578,tweakcn,TypeScript,10278,A visual no-code theme editor for shadcn/ui components
+STAR-1579,nano-banana-hackathon-kit,Jupyter Notebook,1028,🍌 The official starter kit for the Nano Banana Hackathon. Clone this repo to get building fast!
+STAR-1580,FileSync,JavaScript,1480,Send files from one device to many in real-time.
+STAR-1581,beheader,JavaScript,1452,Polyglot generator for media files
+STAR-1582,pathway,Python,62451,"Python ETL framework for stream processing, real-time analytics, LLM pipelines, and RAG."
+STAR-1583,raft,Cuda,1036,RAFT contains fundamental widely-used algorithms and primitives for machine learning and information
+STAR-1584,TradingAgents,Python,98512,TradingAgents: Multi-Agents LLM Financial Trading Framework
+STAR-1585,BitNet,C++,40092,Official inference framework for 1-bit LLMs
+STAR-1586,claude-code-router,TypeScript,36683,"One local control plane for every AI agent: route across models, fuse new capabilities, orchestrate "
+STAR-1587,copyparty,Python,46240,"Portable file server with accelerated resumable uploads, dedup, WebDAV, SFTP, FTP, TFTP, zeroconf, m"
+STAR-1588,crush,Go,27423,Glamourous agentic coding for all 💘
+STAR-1589,awesome-public-datasets,Unknown,78119,A topic-centric list of HQ open datasets.
+STAR-1591,terraform,Go,49471,"Terraform enables you to safely and predictably create, change, and improve infrastructure. It is a "
+STAR-1592,responsively-app,TypeScript,25115,A modified web browser that helps in responsive web development. A web developer's must have dev-too
+STAR-1597,qlib,Python,47558,"Qlib is an AI-oriented Quant investment platform that aims to use AI tech to empower Quant Research,"
+STAR-1598,puck,TypeScript,13148,The visual editor for React.
+STAR-1600,awesome-design-patterns,Unknown,48590,A curated list of software and architecture related design patterns.
+STAR-1602,github-cheat-sheet,Unknown,58546,A list of cool features of Git and GitHub.
+STAR-1603,Thinking-Claude,TypeScript,17057,Let your Claude able to think
+STAR-1604,zstd,C,27563,Zstandard - Fast real-time compression algorithm
+STAR-1606,awesome,Unknown,496598,😎 Awesome lists about all kinds of interesting topics
+STAR-1608,ccpm,Shell,8341,Project management skill system for Agents that uses GitHub Issues and Git worktrees for parallel ag
+STAR-1609,kaneo,TypeScript,8325,"🎯 All you need. Nothing you don't. Open source project management that works for you, not against yo"
+STAR-1610,Archon,TypeScript,23217,The first open-source harness builder for AI coding. Make AI coding deterministic and repeatable.
+STAR-1611,system_prompts_leaks,JavaScript,63024,"Extracted system prompts from Anthropic - Claude Fable 5, Opus 5, Claude Design, Claude Code. OpenAI"
+STAR-1612,parlant,Python,18254,Build reliable customer-facing AI agents with Parlant: an interaction control harness optimized for 
+STAR-1613,DeepCode,Python,16362,"""DeepCode: Open Agentic Coding ((Agent Harness & Loop Engineering & Multi-Agent Orchestration)"""
+STAR-1615,leantime,PHP,11366,"Leantime is a goals focused project management system for non-project managers. Building with ADHD, "
+STAR-1616,OpenHands,TypeScript,84237,🙌 OpenHands: AI-Driven Development
+STAR-1618,HeadlessBrowsers,Unknown,6678,A list of (almost) all headless web browsers in existence
+STAR-1619,zed,Rust,88702,"Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators "
+STAR-1623,mcp,TypeScript,6973,Browser MCP is a Model Context Provider (MCP) server that allows AI applications to control your bro
+STAR-1624,activepieces,TypeScript,23829,AI Agents & MCPs & AI Workflow Automation • (~400 MCP servers for AI agents) • AI Automation / AI Ag
+STAR-1626,saas-starter,TypeScript,16028,"Get started quickly with Next.js, Postgres, Stripe, and shadcn/ui."
+STAR-1627,budibase,TypeScript,28204,"AI agents, automations and apps that run your operations. Model agnostic."
+STAR-1628,telegraf,TypeScript,9176,Modern Telegram Bot Framework for Node.js
+STAR-1629,superdesign,TypeScript,6847,AI Product Design Agent - Open Source
+STAR-1630,iii,Rust,18593,"Effortlessly compose, extend, and observe every service in real-time for the first time ever."
+STAR-1631,poml,TypeScript,4948,Prompt Orchestration Markup Language
+STAR-1632,magic,TypeScript,4988,Magicrew. The first open-source all-in-one AI productivity platform (Generalist AI Agent + Workflow 
+STAR-1633,external-secrets,Go,6790,External Secrets Operator reads information from a third-party service like AWS Secrets Manager and 
+STAR-1634,syncthing,Go,87714,Open Source Continuous File Synchronization
+STAR-1636,puter,TypeScript,43075,"🌐 The Internet Computer! Free, Open-Source, and Self-Hostable."
+STAR-1638,platform,TypeScript,27361,"Huly — All-in-One Project Management Platform (alternative to Linear, Jira, Slack, Notion, Motion)"
+STAR-1640,nanobrowser,TypeScript,13565,Open-Source Chrome extension for AI-powered web automation. Run multi-agent workflows using your own
+STAR-1641,novu,TypeScript,39589,The open-source communication infrastructure for agents and products
+STAR-1642,todoctor,Svelte,522,🐍 CLI tool to analyze and report TODO comments in JavaScript and TypeScript Git repositories
+STAR-1643,WorkLifeBalance,C#,373,
+STAR-1644,pastel,Rust,6455,"A command-line tool to generate, analyze, convert and manipulate colors"
+STAR-1646,openreplay,TypeScript,12512,"Session replay, cobrowsing and product analytics you can self-host. Best for reproducing issues and "
+STAR-1647,awesome-for-non-programmers,Unknown,1931,
+STAR-1648,awesome-tunneling,Python,21618,"List of ngrok, Cloudflare Tunnel, Tailscale, and ZeroTier alternatives and other tunneling software "
+STAR-1649,AltStore,Swift,14183,AltStore is an alternative app store for non-jailbroken iOS devices.
+STAR-1650,voltagent,TypeScript,10370,AI Agent Engineering Platform built on an Open Source TypeScript AI Agent Framework
+STAR-1651,SDL,C,16341,Simple DirectMedia Layer
+STAR-1652,git-mcp,TypeScript,8332,"Put an end to code hallucinations! GitMCP is a free, open-source, remote MCP server for any GitHub p"
+STAR-1653,jan,TypeScript,44026,Jan is an open source alternative to ChatGPT that runs 100% offline on your computer.
+STAR-1655,firecrawl,TypeScript,168220,"The context API to search, scrape, and interact with the web at scale. 🔥"
+STAR-1659,lazygit,Go,81386,simple terminal UI for git commands
+STAR-1661,mcp-for-beginners,Jupyter Notebook,16999,This open-source curriculum introduces the fundamentals of Model Context Protocol (MCP) through real
+STAR-1663,lvgl,C,24395,"LVGL is a free, full-featured embedded UI library for devices from small MCUs to 3D-capable MPUs, en"
+STAR-1664,vllm,Python,89206,A high-throughput and memory-efficient inference and serving engine for LLMs
+STAR-1665,poetry,Python,34289,Python packaging and dependency management made easy
+STAR-1666,nautilus_trader,Rust,25625,Production-grade Rust-native trading engine with deterministic event-driven architecture
+STAR-1667,llama.cpp,C++,124222,LLM inference in C/C++
+STAR-1668,drizzle-kit-mirror,Unknown,290,Docs and issues repository for drizzle-kit
+STAR-1670,open-lovable,TypeScript,28276,🔥 Clone and recreate any website as a modern React app in seconds
+STAR-1673,cuvs,Cuda,833,cuVS - a library for vector search and clustering on the GPU
+STAR-1674,cuml,Python,5254,NVIDIA cuML: GPU-Accelerated Machine Learning
+STAR-1678,SuperClaude_Framework,Python,23834,"A configuration framework that enhances Claude Code with specialized commands, cognitive personas, a"
+STAR-1679,opcode,TypeScript,22381,"A powerful GUI app and Toolkit for Claude Code - Create custom agents, manage interactive Claude Cod"
+STAR-1680,ruflo,TypeScript,68017,"🌊 The original agent meta-harness. Deploy intelligent multi-player swarms, coordinate autonomous wor"
+STAR-1681,claude-code-action,TypeScript,8644,
+STAR-1682,free-for-dev,HTML,131991,"A list of SaaS, PaaS and IaaS offerings that have free tiers of interest to devops and infradev"
+STAR-1683,drizzle-orm,TypeScript,35495,ORM
+STAR-1685,vite,TypeScript,82368,Next generation frontend tooling. It's fast!
+STAR-1686,dyad,TypeScript,21255,"Local, open-source AI app builder for power users ✨ v0 / Lovable / Replit / Bolt alternative 🌟 Star "
+STAR-1688,llm,Python,12367,Access large language models from the command-line
+STAR-1689,free-programming-books,Python,394577,:books: Freely available programming books
+STAR-1691,autogen,Python,60457,A programming framework for agentic AI
+STAR-1692,BMAD-METHOD,JavaScript,51966,Breakthrough Method for Agile Ai Driven Development
+STAR-1693,SEAL,Python,1843,Self-Adapting Language Models
+STAR-1694,open-source-mac-os-apps,Unknown,50046,🚀 Awesome list of open source applications for macOS. https://t.me/s/opensourcemacosapps
+STAR-1695,open-source-ios-apps,Unknown,51702,:iphone: Collaborative List of Open-Source iOS Apps
+STAR-1697,awesome-for-beginners,Unknown,88440,A list of awesome beginners-friendly projects.
+STAR-1698,awesome-interview-questions,Unknown,84076,:octocat: A curated awesome list of lists of interview questions. Feel free to contribute! :mortar_b
+STAR-1699,awesome-mac,Swift,111214, This project is dedicated to collecting high-quality macOS software and organizing them systematic
+STAR-1700,Awesome-Hacking,Unknown,118464,"A collection of various awesome lists for hackers, pentesters and security researchers"
+STAR-1701,awesome-go,Go,181247,"A curated list of awesome Go frameworks, libraries and software"
+STAR-1702,awesome-selfhosted,Unknown,313112,A list of Free Software network services and web applications which can be hosted on your own server
+STAR-1703,markitdown,Python,174109,Python tool for converting files and office documents to Markdown.
+STAR-1704,DeepResearch,Python,19832,"Tongyi Deep Research, the Leading Open-source Deep Research Agent"
+STAR-1705,claude-code,Python,141667,"Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and he"
+STAR-1706,graphiti,Python,29984,Build Real-Time Knowledge Graphs for AI Agents
+STAR-1708,Folo,TypeScript,38813,🧡 Folo is the AI RSS Reader
+STAR-1709,OpenBB,Python,71944,"Open Data Platform for analysts, quants and AI agents."
+STAR-1713,prompt-optimizer,TypeScript,33150,An AI prompt optimizer for writing better prompts and getting better AI results.
+STAR-1714,data-engineer-handbook,Jupyter Notebook,43744,This is a repo with links to everything you'd ever want to learn about data engineering
+STAR-1715,stagehand,TypeScript,23956,The SDK For Browser Agents
+STAR-1716,app-ideas,Unknown,96836,A Collection of application ideas which can be used to improve your coding skills.
+STAR-1717,FastGPT,TypeScript,29368,"FastGPT is a knowledge-based platform built on the LLMs, offers a comprehensive suite of out-of-the-"
+STAR-1719,self.so,TypeScript,3067,LinkedIn -> personal site generator
+STAR-1720,blok,TypeScript,2328,"Blok is an open-source framework that enables developers to build lightweight, modular, and scalable"
+STAR-1721,postiz-app,TypeScript,34749,📨 The ultimate agentic social media scheduling tool 🤖
+STAR-1722,claude-cookbooks,Jupyter Notebook,51601,A collection of notebooks/recipes showcasing some fun and effective ways of using Claude.
+STAR-1723,the-art-of-command-line,Unknown,162126,"Master the command line, in one page"
+STAR-1724,storybook,TypeScript,90858,"Storybook is the industry standard workshop for building, documenting, and testing UI components in "
+STAR-1725,realworld,TypeScript,84086,"""The mother of all demo apps"" — Exemplary fullstack Medium.com clone powered by React, Angular, Node"
+STAR-1726,alive-progress,Python,6294,"A new kind of Progress Bar, with real-time throughput, ETA, and very cool animations!"
+STAR-1727,fastmcp,Python,27242,"🚀 The fast, Pythonic way to build MCP servers and clients."
+STAR-1728,gitdiagram,TypeScript,15887,"Free, simple, fast interactive diagrams for any GitHub repository"
+STAR-1729,awesome-cursorrules,JavaScript,40600,📄  Configuration files that enhance Cursor AI editor experience with custom rules and behaviors
+STAR-1730,mcp-go,Go,9008,"A Go implementation of the Model Context Protocol (MCP), enabling seamless integration between LLM a"
+STAR-1731,pear-desktop,TypeScript,33087,Pear 🍐 is extension for music player
+STAR-1732,the-book-of-secret-knowledge,Unknown,238742,"A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools and m"
+STAR-1734,multipleWindow3dScene,JavaScript,18929,"A quick example of how one can ""synchronize"" a 3d scene across multiple windows using three.js and l"
+STAR-1735,ChatGPT_DAN,Unknown,12284,"ChatGPT DAN, Jailbreaks prompt"
+STAR-1737,dify,TypeScript,152646,"Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative wor"
+STAR-1738,lobehub,TypeScript,81749,"🤯 LobeHub is your Chief Agent Operator, organizing your agents into 7×24 operations by hiring, sched"
+STAR-1739,project-based-learning,Python,279503,Curated list of project-based tutorials

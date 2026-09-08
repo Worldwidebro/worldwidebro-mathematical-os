@@ -1,0 +1,876 @@
+metadata:
+  total_sites: 95
+  source: Vercel CLI worldwidebro
+  generated_at: '2026-09-05'
+  rule: DOMAIN != URL != SITE != VENTURE
+sites:
+  SITE-0001:
+    site_name: ops-staff-001-staffing
+    primary_url: https://ops-staff-001-staffing-worldwidebros-projects.vercel.app
+    venture_id: OPS-001
+    repo_id: OWN-PRIV-0008
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 9h
+    reality_classification: VALIDATING
+  SITE-0002:
+    site_name: lt-005-medical-courier-dispatch
+    primary_url: https://lt-005-medical-courier-dispatch.vercel.app
+    venture_id: LT-005
+    repo_id: OWN-PRIV-0002
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 3d
+    reality_classification: VALIDATING
+  SITE-0003:
+    site_name: lt-005-deploy-temp
+    primary_url: https://lt-005-deploy-temp.vercel.app
+    venture_id: LT-005
+    repo_id: EXTERNAL_OR_UNTRACKED
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 3d
+    reality_classification: VALIDATING
+  SITE-0004:
+    site_name: healthroute-courier
+    primary_url: https://healthroute-courier.vercel.app
+    venture_id: LT-005
+    repo_id: OWN-PRIV-0002
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 3d
+    reality_classification: INCOME_READY
+    notes: "Production deployment of LT-005 with active Stripe checkout ($45 Standard, $85 STAT, $1,200/mo Retainer)"
+  SITE-0005:
+    site_name: re-001-worldwidebro-holdings
+    primary_url: https://re-001-worldwidebro-holdings.vercel.app
+    venture_id: RE-001
+    repo_id: OWN-PRIV-0013
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 5d
+    reality_classification: INCOME_READY
+    notes: "Production deployment of RE-001 with active Stripe checkout ($250 Express Underwriting, $499/mo Deal Room)"
+  SITE-0006:
+    site_name: callcenter
+    primary_url: https://callcenter-eosin.vercel.app
+    venture_id: UNASSIGNED
+    repo_id: EXTERNAL_OR_UNTRACKED
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 7d
+    reality_classification: SPECULATIVE
+  SITE-0007:
+    site_name: constructionos-dashboard
+    primary_url: https://constructionos-dashboard.vercel.app
+    venture_id: UNASSIGNED
+    repo_id: EXTERNAL_OR_UNTRACKED
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 10d
+    reality_classification: SPECULATIVE
+  SITE-0008:
+    site_name: venture-hub
+    primary_url: https://venture-hub-worldwidebros-projects.vercel.app
+    venture_id: UNASSIGNED
+    repo_id: OWN-PRIV-0010
+    hosting: Vercel
+    node_version: 22.x
+    last_updated: 14d
+    reality_classification: SPECULATIVE
+  SITE-0009:
+    site_name: ec-113-kosmic-kitty
+    primary_url: https://ec-113-kosmic-kitty-worldwidebros-projects.vercel.app
+    venture_id: EC-113
+    repo_id: EXTERNAL_OR_UNTRACKED
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 14d
+    reality_classification: SPECULATIVE
+  SITE-0010:
+    site_name: ec-113-separate
+    primary_url: https://ec-113-separate-worldwidebros-projects.vercel.app
+    venture_id: EC-113
+    repo_id: EXTERNAL_OR_UNTRACKED
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 14d
+    reality_classification: SPECULATIVE
+  SITE-0011:
+    site_name: storefront
+    primary_url: https://storefront-worldwidebros-projects.vercel.app
+    venture_id: UNASSIGNED
+    repo_id: EXTERNAL_OR_UNTRACKED
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 15d
+    reality_classification: SPECULATIVE
+  SITE-0012:
+    site_name: ec-112-cosmic-kitty
+    primary_url: https://ec-112-cosmic-kitty-worldwidebros-projects.vercel.app
+    venture_id: EC-112
+    repo_id: OWN-PRIV-0024
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 15d
+    reality_classification: SPECULATIVE
+  SITE-0013:
+    site_name: lt-011-dispatch-software
+    primary_url: https://lt-011-dispatch-software.vercel.app
+    venture_id: LT-011
+    repo_id: OWN-PRIV-0007
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: "2026-09-07"
+    reality_classification: INCOME_READY
+    notes: "Production deployment of LT-011 (DispatchOS). 12 core engines, 13-stage lifecycle state machine, sub-second GPS telematics, active multi-tier Stripe checkout ($49/mo Starter, $149/mo Fleet Pro, $250 Shipper Escrow deposit)."
+  SITE-0014:
+    site_name: vex-hero-site
+    primary_url: https://vex-hero-site-sigma.vercel.app
+    venture_id: UNASSIGNED
+    repo_id: EXTERNAL_OR_UNTRACKED
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 16d
+    reality_classification: SPECULATIVE
+    notes: "Legacy prototype site; decoupled from official portal SITE-0096"
+  SITE-0015:
+    site_name: con-001-ace-construction
+    primary_url: https://con-001-ace-construction.vercel.app
+    venture_id: CON-001
+    repo_id: OWN-PRIV-0009
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 17d
+    reality_classification: INCOME_READY
+    notes: "Production deployment of CON-001 with active Stripe checkout ($299 Site Walk, $1,500 Mobilization Deposit)"
+  SITE-0016:
+    site_name: con001-gsd
+    primary_url: https://con001-gsd-worldwidebros-projects.vercel.app
+    venture_id: UNASSIGNED
+    repo_id: EXTERNAL_OR_UNTRACKED
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 17d
+    reality_classification: SPECULATIVE
+  SITE-0017:
+    site_name: ec-001-angels-in-daylight
+    primary_url: https://ec-001-angels-in-daylight.vercel.app
+    venture_id: EC-001
+    repo_id: OWN-PRIV-0014
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 38d
+    reality_classification: VALIDATING
+  SITE-0018:
+    site_name: fin-033-ai-tax-preparation-service
+    primary_url: https://fin-033-ai-tax-preparation-service.vercel.app
+    venture_id: FIN-033
+    repo_id: OWN-PRIV-0015
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 38d
+    reality_classification: SPECULATIVE
+  SITE-0019:
+    site_name: fin-021-tax-deduction-finder
+    primary_url: https://fin-021-tax-deduction-finder.vercel.app
+    venture_id: FIN-021
+    repo_id: OWN-PRIV-0016
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 38d
+    reality_classification: SPECULATIVE
+  SITE-0020:
+    site_name: fin-009-crypto-tax-optimizer
+    primary_url: https://fin-009-crypto-tax-optimizer.vercel.app
+    venture_id: FIN-009
+    repo_id: OWN-PRIV-0017
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 38d
+    reality_classification: SPECULATIVE
+  SITE-0021:
+    site_name: fin-006-tax-prep-filing-services
+    primary_url: https://fin-006-tax-prep-filing-services.vercel.app
+    venture_id: FIN-006
+    repo_id: OWN-PRIV-0018
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 38d
+    reality_classification: SPECULATIVE
+  SITE-0022:
+    site_name: hermes-command-center
+    primary_url: https://hermes-command-center-iota.vercel.app
+    venture_id: UNASSIGNED
+    repo_id: EXTERNAL_OR_UNTRACKED
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 44d
+    reality_classification: SPECULATIVE
+  SITE-0023:
+    site_name: ec-111-miss-toys
+    primary_url: https://ec-111-miss-toys.vercel.app
+    venture_id: EC-111
+    repo_id: OWN-PRIV-0027
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 46d
+    reality_classification: SPECULATIVE
+  SITE-0024:
+    site_name: vapi-voice-os
+    primary_url: https://vapi-voice-os.vercel.app
+    venture_id: UNASSIGNED
+    repo_id: EXTERNAL_OR_UNTRACKED
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 52d
+    reality_classification: SPECULATIVE
+  SITE-0025:
+    site_name: divine-johns-portfolio
+    primary_url: https://divine-johns-portfolio.vercel.app
+    venture_id: UNASSIGNED
+    repo_id: OWN-PRIV-0025
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 52d
+    reality_classification: SPECULATIVE
+  SITE-0026:
+    site_name: tech-062-iza-os
+    primary_url: https://tech-062-iza-os.vercel.app
+    venture_id: UNASSIGNED
+    repo_id: EXTERNAL_OR_UNTRACKED
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 53d
+    reality_classification: SPECULATIVE
+  SITE-0027:
+    site_name: arbitrage-nexus
+    primary_url: https://arbitrage-nexus.vercel.app
+    venture_id: UNASSIGNED
+    repo_id: OWN-PRIV-0036
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 56d
+    reality_classification: SPECULATIVE
+  SITE-0028:
+    site_name: genixbank-hero-site
+    primary_url: https://genixbank-hero-site.vercel.app
+    venture_id: UNASSIGNED
+    repo_id: EXTERNAL_OR_UNTRACKED
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 58d
+    reality_classification: SPECULATIVE
+  SITE-0029:
+    site_name: mc-006-video-production-company
+    primary_url: https://mc-006-video-production-company.vercel.app
+    venture_id: MC-006
+    repo_id: OWN-PRIV-0039
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 59d
+    reality_classification: SPECULATIVE
+  SITE-0030:
+    site_name: marketeam
+    primary_url: https://marketeam-beta.vercel.app
+    venture_id: UNASSIGNED
+    repo_id: EXTERNAL_OR_UNTRACKED
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 60d
+    reality_classification: SPECULATIVE
+  SITE-0031:
+    site_name: edu-landing-kit-template
+    primary_url: https://edu-landing-kit-template.vercel.app
+    venture_id: UNASSIGNED
+    repo_id: EXTERNAL_OR_UNTRACKED
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 60d
+    reality_classification: SPECULATIVE
+  SITE-0032:
+    site_name: bloom-community-hub
+    primary_url: https://bloom-community-hub.vercel.app
+    venture_id: UNASSIGNED
+    repo_id: OWN-PRIV-0038
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 60d
+    reality_classification: SPECULATIVE
+  SITE-0033:
+    site_name: comm-014-veterans-support-ai
+    primary_url: https://comm-014-veterans-support-ai-worldwidebros-projects.vercel.app
+    venture_id: COMM-014
+    repo_id: OWN-PRIV-0099
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 60d
+    reality_classification: SPECULATIVE
+  SITE-0034:
+    site_name: comm-050-community-cultural-ai
+    primary_url: https://comm-050-community-cultural-ai.vercel.app
+    venture_id: COMM-050
+    repo_id: OWN-PRIV-0063
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 60d
+    reality_classification: SPECULATIVE
+  SITE-0035:
+    site_name: comm-049-public-event-ai
+    primary_url: https://comm-049-public-event-ai.vercel.app
+    venture_id: COMM-049
+    repo_id: OWN-PRIV-0064
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 60d
+    reality_classification: SPECULATIVE
+  SITE-0036:
+    site_name: comm-048-community-transportation-ai
+    primary_url: https://comm-048-community-transportation-a.vercel.app
+    venture_id: COMM-048
+    repo_id: OWN-PRIV-0065
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 60d
+    reality_classification: SPECULATIVE
+  SITE-0037:
+    site_name: comm-047-public-fitness-ai
+    primary_url: https://comm-047-public-fitness-ai.vercel.app
+    venture_id: COMM-047
+    repo_id: OWN-PRIV-0066
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 60d
+    reality_classification: SPECULATIVE
+  SITE-0038:
+    site_name: comm-046-community-pet-care-ai
+    primary_url: https://comm-046-community-pet-care-ai.vercel.app
+    venture_id: COMM-046
+    repo_id: OWN-PRIV-0067
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 60d
+    reality_classification: SPECULATIVE
+  SITE-0039:
+    site_name: comm-045-public-childcare-ai
+    primary_url: https://comm-045-public-childcare-ai.vercel.app
+    venture_id: COMM-045
+    repo_id: OWN-PRIV-0068
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 60d
+    reality_classification: SPECULATIVE
+  SITE-0040:
+    site_name: comm-044-community-volunteering-ai
+    primary_url: https://comm-044-community-volunteering-ai.vercel.app
+    venture_id: COMM-044
+    repo_id: OWN-PRIV-0069
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 60d
+    reality_classification: SPECULATIVE
+  SITE-0041:
+    site_name: comm-043-local-food-network-ai
+    primary_url: https://comm-043-local-food-network-ai.vercel.app
+    venture_id: COMM-043
+    repo_id: OWN-PRIV-0070
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 60d
+    reality_classification: SPECULATIVE
+  SITE-0042:
+    site_name: comm-042-community-energy-ai
+    primary_url: https://comm-042-community-energy-ai.vercel.app
+    venture_id: COMM-042
+    repo_id: OWN-PRIV-0071
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 60d
+    reality_classification: SPECULATIVE
+  SITE-0043:
+    site_name: comm-041-public-wi-fi-ai
+    primary_url: https://comm-041-public-wi-fi-ai.vercel.app
+    venture_id: COMM-041
+    repo_id: OWN-PRIV-0072
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 60d
+    reality_classification: SPECULATIVE
+  SITE-0044:
+    site_name: comm-040-community-recycling-ai
+    primary_url: https://comm-040-community-recycling-ai.vercel.app
+    venture_id: COMM-040
+    repo_id: OWN-PRIV-0073
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 60d
+    reality_classification: SPECULATIVE
+  SITE-0045:
+    site_name: comm-039-public-space-ai
+    primary_url: https://comm-039-public-space-ai.vercel.app
+    venture_id: COMM-039
+    repo_id: OWN-PRIV-0074
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 60d
+    reality_classification: SPECULATIVE
+  SITE-0046:
+    site_name: comm-038-community-policing-ai
+    primary_url: https://comm-038-community-policing-ai.vercel.app
+    venture_id: COMM-038
+    repo_id: OWN-PRIV-0075
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 60d
+    reality_classification: SPECULATIVE
+  SITE-0047:
+    site_name: comm-037-neighborhood-development-ai
+    primary_url: https://comm-037-neighborhood-development-a.vercel.app
+    venture_id: COMM-037
+    repo_id: OWN-PRIV-0076
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 60d
+    reality_classification: SPECULATIVE
+  SITE-0048:
+    site_name: comm-036-public-infrastructure-ai
+    primary_url: https://comm-036-public-infrastructure-ai.vercel.app
+    venture_id: COMM-036
+    repo_id: OWN-PRIV-0077
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 60d
+    reality_classification: SPECULATIVE
+  SITE-0049:
+    site_name: comm-035-community-arts-ai
+    primary_url: https://comm-035-community-arts-ai.vercel.app
+    venture_id: COMM-035
+    repo_id: OWN-PRIV-0078
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 60d
+    reality_classification: SPECULATIVE
+  SITE-0050:
+    site_name: comm-034-senior-tech-support
+    primary_url: https://comm-034-senior-tech-support.vercel.app
+    venture_id: COMM-034
+    repo_id: OWN-PRIV-0079
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 60d
+    reality_classification: SPECULATIVE
+  SITE-0051:
+    site_name: comm-033-youth-innovation-hub
+    primary_url: https://comm-033-youth-innovation-hub.vercel.app
+    venture_id: COMM-033
+    repo_id: OWN-PRIV-0080
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 60d
+    reality_classification: SPECULATIVE
+  SITE-0052:
+    site_name: comm-032-public-health-ai
+    primary_url: https://comm-032-public-health-ai.vercel.app
+    venture_id: COMM-032
+    repo_id: OWN-PRIV-0081
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 60d
+    reality_classification: SPECULATIVE
+  SITE-0053:
+    site_name: comm-031-community-investment-ai
+    primary_url: https://comm-031-community-investment-ai.vercel.app
+    venture_id: COMM-031
+    repo_id: OWN-PRIV-0082
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 60d
+    reality_classification: SPECULATIVE
+  SITE-0054:
+    site_name: comm-030-cultural-exchange-ai
+    primary_url: https://comm-030-cultural-exchange-ai.vercel.app
+    venture_id: COMM-030
+    repo_id: OWN-PRIV-0083
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 60d
+    reality_classification: SPECULATIVE
+  SITE-0055:
+    site_name: comm-029-community-wellness-ai
+    primary_url: https://comm-029-community-wellness-ai.vercel.app
+    venture_id: COMM-029
+    repo_id: OWN-PRIV-0084
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 60d
+    reality_classification: SPECULATIVE
+  SITE-0056:
+    site_name: comm-028-public-safety-ai
+    primary_url: https://comm-028-public-safety-ai.vercel.app
+    venture_id: COMM-028
+    repo_id: OWN-PRIV-0085
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 60d
+    reality_classification: SPECULATIVE
+  SITE-0057:
+    site_name: comm-027-local-government-ai
+    primary_url: https://comm-027-local-government-ai.vercel.app
+    venture_id: COMM-027
+    repo_id: OWN-PRIV-0086
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 60d
+    reality_classification: SPECULATIVE
+  SITE-0058:
+    site_name: comm-026-public-education-ai
+    primary_url: https://comm-026-public-education-ai.vercel.app
+    venture_id: COMM-026
+    repo_id: OWN-PRIV-0087
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 60d
+    reality_classification: SPECULATIVE
+  SITE-0059:
+    site_name: comm-025-community-legal-aid
+    primary_url: https://comm-025-community-legal-aid.vercel.app
+    venture_id: COMM-025
+    repo_id: OWN-PRIV-0088
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 60d
+    reality_classification: SPECULATIVE
+  SITE-0060:
+    site_name: comm-024-youth-sports-ai
+    primary_url: https://comm-024-youth-sports-ai.vercel.app
+    venture_id: COMM-024
+    repo_id: OWN-PRIV-0089
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 60d
+    reality_classification: SPECULATIVE
+  SITE-0061:
+    site_name: comm-023-elder-companion-ai
+    primary_url: https://comm-023-elder-companion-ai.vercel.app
+    venture_id: COMM-023
+    repo_id: OWN-PRIV-0090
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 60d
+    reality_classification: SPECULATIVE
+  SITE-0062:
+    site_name: comm-022-job-training-center
+    primary_url: https://comm-022-job-training-center.vercel.app
+    venture_id: COMM-022
+    repo_id: OWN-PRIV-0091
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 60d
+    reality_classification: SPECULATIVE
+  SITE-0063:
+    site_name: comm-021-housing-assistance-ai
+    primary_url: https://comm-021-housing-assistance-ai.vercel.app
+    venture_id: COMM-021
+    repo_id: OWN-PRIV-0092
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 60d
+    reality_classification: SPECULATIVE
+  SITE-0064:
+    site_name: comm-020-public-transportation-ai
+    primary_url: https://comm-020-public-transportation-ai.vercel.app
+    venture_id: COMM-020
+    repo_id: OWN-PRIV-0093
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 60d
+    reality_classification: SPECULATIVE
+  SITE-0065:
+    site_name: comm-019-community-garden-ai
+    primary_url: https://comm-019-community-garden-ai.vercel.app
+    venture_id: COMM-019
+    repo_id: OWN-PRIV-0094
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 60d
+    reality_classification: SPECULATIVE
+  SITE-0066:
+    site_name: comm-018-neighborhood-watch-ai
+    primary_url: https://comm-018-neighborhood-watch-ai.vercel.app
+    venture_id: COMM-018
+    repo_id: OWN-PRIV-0095
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 60d
+    reality_classification: SPECULATIVE
+  SITE-0067:
+    site_name: comm-017-local-business-directory
+    primary_url: https://comm-017-local-business-directory.vercel.app
+    venture_id: COMM-017
+    repo_id: OWN-PRIV-0096
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 60d
+    reality_classification: SPECULATIVE
+  SITE-0068:
+    site_name: comm-016-community-health-ai
+    primary_url: https://comm-016-community-health-ai-worldwidebros-projects.vercel.app
+    venture_id: COMM-016
+    repo_id: OWN-PRIV-0097
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 60d
+    reality_classification: SPECULATIVE
+  SITE-0069:
+    site_name: comm-015-youth-mentorship-program
+    primary_url: https://comm-015-youth-mentorship-program.vercel.app
+    venture_id: COMM-015
+    repo_id: OWN-PRIV-0098
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 61d
+    reality_classification: SPECULATIVE
+  SITE-0070:
+    site_name: comm-013-women-s-empowerment-network
+    primary_url: https://comm-013-women-s-empowerment-networ.vercel.app
+    venture_id: COMM-013
+    repo_id: OWN-PRIV-0100
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 61d
+    reality_classification: SPECULATIVE
+  SITE-0071:
+    site_name: comm-012-black-art-museum-ai
+    primary_url: https://comm-012-black-art-museum-ai.vercel.app
+    venture_id: COMM-012
+    repo_id: OWN-PRIV-0101
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 61d
+    reality_classification: SPECULATIVE
+  SITE-0072:
+    site_name: comm-011-indigenous-creator-hub
+    primary_url: https://comm-011-indigenous-creator-hub.vercel.app
+    venture_id: COMM-011
+    repo_id: OWN-PRIV-0102
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 61d
+    reality_classification: SPECULATIVE
+  SITE-0073:
+    site_name: comm-010-disaster-relief-ai
+    primary_url: https://comm-010-disaster-relief-ai.vercel.app
+    venture_id: COMM-010
+    repo_id: OWN-PRIV-0103
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 61d
+    reality_classification: SPECULATIVE
+  SITE-0074:
+    site_name: comm-009-volunteer-hub-ai
+    primary_url: https://comm-009-volunteer-hub-ai.vercel.app
+    venture_id: COMM-009
+    repo_id: OWN-PRIV-0104
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 61d
+    reality_classification: SPECULATIVE
+  SITE-0075:
+    site_name: comm-008-community-fundraising-ai
+    primary_url: https://comm-008-community-fundraising-ai.vercel.app
+    venture_id: COMM-008
+    repo_id: OWN-PRIV-0105
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 61d
+    reality_classification: SPECULATIVE
+  SITE-0076:
+    site_name: comm-007-youth-leadership-ai
+    primary_url: https://comm-007-youth-leadership-ai.vercel.app
+    venture_id: COMM-007
+    repo_id: OWN-PRIV-0106
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 61d
+    reality_classification: SPECULATIVE
+  SITE-0077:
+    site_name: comm-006-community-technology-access-ai
+    primary_url: https://comm-006-community-technology-acces.vercel.app
+    venture_id: COMM-006
+    repo_id: OWN-PRIV-0107
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 61d
+    reality_classification: SPECULATIVE
+  SITE-0078:
+    site_name: comm-005-ace-food-security-ai
+    primary_url: https://comm-005-ace-food-security-ai.vercel.app
+    venture_id: COMM-005
+    repo_id: OWN-PRIV-0108
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 61d
+    reality_classification: SPECULATIVE
+  SITE-0079:
+    site_name: comm-004-community-outreach-nonprofit
+    primary_url: https://comm-004-community-outreach-nonprof.vercel.app
+    venture_id: COMM-004
+    repo_id: OWN-PRIV-0109
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 61d
+    reality_classification: SPECULATIVE
+  SITE-0080:
+    site_name: comm-002-brotherhood-coaching-network
+    primary_url: https://comm-002-brotherhood-coaching-netwo.vercel.app
+    venture_id: COMM-002
+    repo_id: OWN-PRIV-0111
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 61d
+    reality_classification: SPECULATIVE
+  SITE-0081:
+    site_name: comm-001-luminary-worldwide-events
+    primary_url: https://comm-001-luminary-worldwide-events.vercel.app
+    venture_id: COMM-001
+    repo_id: OWN-PRIV-0112
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 61d
+    reality_classification: SPECULATIVE
+  SITE-0082:
+    site_name: comm-003-ace-senior-care-connect
+    primary_url: https://comm-003-ace-senior-care-connect.vercel.app
+    venture_id: COMM-003
+    repo_id: OWN-PRIV-0110
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 61d
+    reality_classification: SPECULATIVE
+  SITE-0083:
+    site_name: quantum-brain-sync-website-gf1f
+    primary_url: https://quantum-brain-sync-website-gf1f.vercel.app
+    venture_id: UNASSIGNED
+    repo_id: EXTERNAL_OR_UNTRACKED
+    hosting: Vercel
+    node_version: 22.x
+    last_updated: 102d
+    reality_classification: SPECULATIVE
+  SITE-0084:
+    site_name: quantum-brain-sync-website-n7a4
+    primary_url: https://quantum-brain-sync-website-n7a4.vercel.app
+    venture_id: UNASSIGNED
+    repo_id: EXTERNAL_OR_UNTRACKED
+    hosting: Vercel
+    node_version: 22.x
+    last_updated: 102d
+    reality_classification: SPECULATIVE
+  SITE-0085:
+    site_name: genixbank-financial-system
+    primary_url: https://genixbank-financial-system.vercel.app
+    venture_id: UNASSIGNED
+    repo_id: OWN-PRIV-0465
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 102d
+    reality_classification: SPECULATIVE
+  SITE-0086:
+    site_name: quantum-brain-sync-website-zevz
+    primary_url: https://quantum-brain-sync-website-zevz.vercel.app
+    venture_id: UNASSIGNED
+    repo_id: EXTERNAL_OR_UNTRACKED
+    hosting: Vercel
+    node_version: 22.x
+    last_updated: 105d
+    reality_classification: SPECULATIVE
+  SITE-0087:
+    site_name: simple-landing
+    primary_url: https://simple-landing-pi.vercel.app
+    venture_id: UNASSIGNED
+    repo_id: EXTERNAL_OR_UNTRACKED
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 106d
+    reality_classification: SPECULATIVE
+  SITE-0088:
+    site_name: civilization-os
+    primary_url: https://civilization-os.vercel.app
+    venture_id: UNASSIGNED
+    repo_id: OWN-PUB-0875
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 108d
+    reality_classification: SPECULATIVE
+  SITE-0089:
+    site_name: ps-012-website-build
+    primary_url: https://ps-012-website-build.vercel.app
+    venture_id: UNASSIGNED
+    repo_id: EXTERNAL_OR_UNTRACKED
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 108d
+    reality_classification: SPECULATIVE
+  SITE-0090:
+    site_name: quantum-brain-sync-website
+    primary_url: https://quantum-brain-sync-website.vercel.app
+    venture_id: UNASSIGNED
+    repo_id: OWN-PRIV-0640
+    hosting: Vercel
+    node_version: 22.x
+    last_updated: 109d
+    reality_classification: SPECULATIVE
+  SITE-0091:
+    site_name: pitch-kit
+    primary_url: https://pitch-kit-zeta.vercel.app
+    venture_id: UNASSIGNED
+    repo_id: OWN-PUB-0886
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 110d
+    reality_classification: SPECULATIVE
+  SITE-0092:
+    site_name: bw-001-up-next-web
+    primary_url: https://bw-001-up-next-web.vercel.app
+    venture_id: BW-001
+    repo_id: OWN-PRIV-0760
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 113d
+    reality_classification: SPECULATIVE
+  SITE-0093:
+    site_name: v0-integrations-page
+    primary_url: https://v0-integrations-page-gold.vercel.app
+    venture_id: UNASSIGNED
+    repo_id: EXTERNAL_OR_UNTRACKED
+    hosting: Vercel
+    node_version: 22.x
+    last_updated: 113d
+    reality_classification: SPECULATIVE
+  SITE-0094:
+    site_name: 00-dashboard
+    primary_url: https://00-dashboard.vercel.app
+    venture_id: UNASSIGNED
+    repo_id: EXTERNAL_OR_UNTRACKED
+    hosting: Vercel
+    node_version: 24.x
+    last_updated: 113d
+    reality_classification: SPECULATIVE
+  SITE-0095:
+    site_name: iza-os-enterprise
+    primary_url: https://iza-os-enterprise.vercel.app
+    venture_id: UNASSIGNED
+    repo_id: OWN-PRIV-0497
+    hosting: Vercel
+    node_version: 22.x
+    last_updated: 114d
+    reality_classification: SPECULATIVE
+  SITE-0096:
+    site_name: worldwidebro-venture-portal
+    primary_url: https://worldwidebro-venture-portal.vercel.app
+    venture_id: VEN-001-CORE
+    repo_id: OWN-PRIV-0004
+    hosting: Vercel
+    node_version: 22.x
+    last_updated: 0d
+    reality_classification: OPERATING
+    notes: "Decoupled from vex-hero-site-sigma.vercel.app (SITE-0014); official public venture portal surface"

@@ -1,0 +1,16 @@
+products:
+  -
+    name: "Modular Workforce & ADU Housing Units"
+    pricing: "$125,000 / unit"
+    model: "Turnkey Manufacturing & Assembly"
+    margin: "36.0%"
+  -
+    name: "YardMatrix Site Assessment & Permitting OS"
+    pricing: "$2,500 / project site"
+    model: "SaaS Platform"
+    margin: "80.0%"
+  -
+    name: "Off-Grid Solar & Battery Microgrid System"
+    pricing: "$18,500 / install"
+    model: "Hardware & Integration"
+    margin: "42.0%"

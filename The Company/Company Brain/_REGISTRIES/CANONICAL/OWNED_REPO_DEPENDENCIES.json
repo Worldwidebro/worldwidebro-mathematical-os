@@ -1,0 +1,5485 @@
+{
+  "OWN-PRIV-0002": {
+    "repo_name": "lt-005-medical-courier-dispatch",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [],
+    "dev_dependencies": [],
+    "dep_count": 0
+  },
+  "OWN-PRIV-0003": {
+    "repo_name": "career-ops",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "@google/generative-ai",
+      "dotenv",
+      "js-yaml",
+      "playwright"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 4
+  },
+  "OWN-PRIV-0004": {
+    "repo_name": "worldwidebro-venture-portal",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "@vitejs/plugin-react",
+      "autoprefixer",
+      "lucide-react",
+      "motion",
+      "postcss",
+      "react",
+      "react-dom",
+      "react-router-dom",
+      "tailwindcss",
+      "typescript",
+      "vite"
+    ],
+    "dev_dependencies": [
+      "@types/react",
+      "@types/react-dom"
+    ],
+    "dep_count": 11
+  },
+  "OWN-PRIV-0006": {
+    "repo_name": "fin-037-worldwidebro-trading-system",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "alpaca-py",
+      "anthropic",
+      "backtrader",
+      "click",
+      "docker",
+      "langfuse",
+      "numpy",
+      "openbb-core",
+      "pandas",
+      "polygon-py",
+      "prometheus-client",
+      "psycopg2-binary",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "pytest-cov",
+      "python-dotenv",
+      "pyyaml",
+      "qdrant-client",
+      "redis",
+      "rich",
+      "scikit-learn",
+      "sqlalchemy",
+      "supabase",
+      "ta-lib",
+      "vectorbt-pro",
+      "yfinance"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 27
+  },
+  "OWN-PRIV-0008": {
+    "repo_name": "ops-staff-001-staffing",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "fastapi",
+      "httpx",
+      "pydantic",
+      "python-dotenv",
+      "supabase",
+      "uvicorn"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 6
+  },
+  "OWN-PRIV-0009": {
+    "repo_name": "con-001-ace-construction",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "@stripe/react-stripe-js",
+      "@stripe/stripe-js",
+      "@supabase/ssr",
+      "@supabase/supabase-js",
+      "@tailwindcss/postcss",
+      "axios",
+      "clsx",
+      "framer-motion",
+      "lucide-react",
+      "next",
+      "react",
+      "react-dom",
+      "stripe",
+      "tailwind-merge"
+    ],
+    "dev_dependencies": [
+      "@tailwindcss/forms",
+      "@tailwindcss/typography",
+      "@testing-library/jest-dom",
+      "@testing-library/react",
+      "@types/jest",
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "jest",
+      "jest-mock-extended",
+      "lightningcss",
+      "postcss",
+      "tailwindcss",
+      "ts-jest",
+      "ts-node",
+      "typescript"
+    ],
+    "dep_count": 14
+  },
+  "OWN-PRIV-0010": {
+    "repo_name": "venture-hub",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "@anthropic-ai/sdk",
+      "@modelcontextprotocol/sdk",
+      "@pinecone-database/pinecone",
+      "@supabase/ssr",
+      "@supabase/supabase-js",
+      "@temporalio/client",
+      "@temporalio/worker",
+      "@upstash/redis",
+      "axios",
+      "composio",
+      "convex",
+      "express",
+      "lucide-react",
+      "next",
+      "posthog-js",
+      "react",
+      "react-dom",
+      "recharts",
+      "resend",
+      "stripe"
+    ],
+    "dev_dependencies": [
+      "@playwright/test",
+      "@tailwindcss/postcss",
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "dotenv",
+      "eslint",
+      "eslint-config-next",
+      "prettier",
+      "tailwindcss",
+      "typescript"
+    ],
+    "dep_count": 20
+  },
+  "OWN-PRIV-0011": {
+    "repo_name": "media-empire-platform",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0012": {
+    "repo_name": "re-002-os-property-management",
+    "manifest_files": {
+      "package.json": true,
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "typescript"
+    ],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0013": {
+    "repo_name": "re-001-worldwidebro-holdings",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "@types/leaflet",
+      "@vitejs/plugin-react",
+      "autoprefixer",
+      "leaflet",
+      "lucide-react",
+      "motion",
+      "postcss",
+      "react",
+      "react-dom",
+      "react-router-dom",
+      "tailwindcss",
+      "typescript",
+      "vite"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom"
+    ],
+    "dep_count": 13
+  },
+  "OWN-PRIV-0020": {
+    "repo_name": "wealth-optimization-platform",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0024": {
+    "repo_name": "ec-112-cosmic-kitty",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "@studio-freight/lenis",
+      "csv-parse",
+      "gsap",
+      "next",
+      "react"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "autoprefixer",
+      "postcss",
+      "tailwindcss",
+      "typescript"
+    ],
+    "dep_count": 5
+  },
+  "OWN-PRIV-0026": {
+    "repo_name": "worldwidebro-marketing-os",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [],
+    "dev_dependencies": [],
+    "dep_count": 0
+  },
+  "OWN-PRIV-0035": {
+    "repo_name": "fin-023-investment-portfolio-ai",
+    "manifest_files": {
+      "pyproject.toml": true
+    },
+    "dependencies": [],
+    "dev_dependencies": [],
+    "dep_count": 0
+  },
+  "OWN-PRIV-0036": {
+    "repo_name": "arbitrage-nexus",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "@hookform/resolvers",
+      "@octokit/rest",
+      "@radix-ui/react-accordion",
+      "@radix-ui/react-alert-dialog",
+      "@radix-ui/react-aspect-ratio",
+      "@radix-ui/react-avatar",
+      "@radix-ui/react-checkbox",
+      "@radix-ui/react-collapsible",
+      "@radix-ui/react-context-menu",
+      "@radix-ui/react-dialog",
+      "@radix-ui/react-dropdown-menu",
+      "@radix-ui/react-hover-card",
+      "@radix-ui/react-label",
+      "@radix-ui/react-menubar",
+      "@radix-ui/react-navigation-menu",
+      "@radix-ui/react-popover",
+      "@radix-ui/react-progress",
+      "@radix-ui/react-radio-group",
+      "@radix-ui/react-scroll-area",
+      "@radix-ui/react-select",
+      "@radix-ui/react-separator",
+      "@radix-ui/react-slider",
+      "@radix-ui/react-slot",
+      "@radix-ui/react-switch",
+      "@radix-ui/react-tabs",
+      "@radix-ui/react-toast",
+      "@radix-ui/react-toggle",
+      "@radix-ui/react-toggle-group",
+      "@radix-ui/react-tooltip",
+      "@supabase/supabase-js",
+      "@tanstack/react-query",
+      "class-variance-authority",
+      "clsx",
+      "cmdk",
+      "date-fns",
+      "embla-carousel-react",
+      "input-otp",
+      "lucide-react",
+      "next-themes",
+      "react",
+      "react-day-picker",
+      "react-dom",
+      "react-hook-form",
+      "react-resizable-panels",
+      "react-router-dom",
+      "recharts",
+      "sonner",
+      "tailwind-merge",
+      "tailwindcss-animate",
+      "vaul",
+      "zod"
+    ],
+    "dev_dependencies": [
+      "@eslint/js",
+      "@tailwindcss/typography",
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "@vitejs/plugin-react-swc",
+      "autoprefixer",
+      "eslint",
+      "eslint-plugin-react-hooks",
+      "eslint-plugin-react-refresh",
+      "globals",
+      "postcss",
+      "tailwindcss",
+      "typescript",
+      "typescript-eslint",
+      "vite"
+    ],
+    "dep_count": 51
+  },
+  "OWN-PRIV-0038": {
+    "repo_name": "bloom-community-hub",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "lucide-react",
+      "react",
+      "react-dom",
+      "react-router-dom"
+    ],
+    "dev_dependencies": [
+      "@tailwindcss/vite",
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "@vitejs/plugin-react",
+      "autoprefixer",
+      "oxlint",
+      "postcss",
+      "tailwindcss",
+      "typescript",
+      "vite"
+    ],
+    "dep_count": 4
+  },
+  "OWN-PRIV-0039": {
+    "repo_name": "mc-006-video-production-company",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "lucide-react",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/react",
+      "@types/react-dom",
+      "@vitejs/plugin-react",
+      "autoprefixer",
+      "postcss",
+      "tailwindcss",
+      "typescript",
+      "vite"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0041": {
+    "repo_name": "avatar-engine",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "fastapi",
+      "pydantic",
+      "redis",
+      "requests",
+      "uvicorn[standard]"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 5
+  },
+  "OWN-PRIV-0050": {
+    "repo_name": "worldwidebro-construction-os",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "flask",
+      "flask-cors",
+      "gunicorn",
+      "python-dotenv",
+      "requests",
+      "supabase"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 6
+  },
+  "OWN-PRIV-0054": {
+    "repo_name": "clip",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "@anthropic-ai/sdk",
+      "@composio/core",
+      "@supabase/supabase-js",
+      "axios",
+      "body-parser",
+      "dotenv",
+      "express"
+    ],
+    "dev_dependencies": [
+      "nodemon"
+    ],
+    "dep_count": 7
+  },
+  "OWN-PRIV-0057": {
+    "repo_name": "Applyingforjobs",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "@anthropic-ai/sdk",
+      "@composio/core",
+      "@supabase/supabase-js",
+      "axios",
+      "body-parser",
+      "dotenv",
+      "express"
+    ],
+    "dev_dependencies": [
+      "nodemon"
+    ],
+    "dep_count": 7
+  },
+  "OWN-PRIV-0058": {
+    "repo_name": "deliv-713-roadrunner-cannabis",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "@anthropic-ai/sdk",
+      "@composio/core",
+      "@supabase/supabase-js",
+      "axios",
+      "body-parser",
+      "dotenv",
+      "express"
+    ],
+    "dev_dependencies": [
+      "nodemon"
+    ],
+    "dep_count": 7
+  },
+  "OWN-PRIV-0061": {
+    "repo_name": "worldwidebro-os-business-engine",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "@anthropic-ai/sdk",
+      "@radix-ui/react-alert-dialog",
+      "@radix-ui/react-avatar",
+      "@radix-ui/react-checkbox",
+      "@radix-ui/react-dialog",
+      "@radix-ui/react-dropdown-menu",
+      "@radix-ui/react-hover-card",
+      "@radix-ui/react-label",
+      "@radix-ui/react-menubar",
+      "@radix-ui/react-navigation-menu",
+      "@radix-ui/react-popover",
+      "@radix-ui/react-progress",
+      "@radix-ui/react-radio-group",
+      "@radix-ui/react-scroll-area",
+      "@radix-ui/react-select",
+      "@radix-ui/react-separator",
+      "@radix-ui/react-slider",
+      "@radix-ui/react-slot",
+      "@radix-ui/react-switch",
+      "@radix-ui/react-tabs",
+      "@radix-ui/react-toast",
+      "@radix-ui/react-tooltip",
+      "axios",
+      "class-variance-authority",
+      "clsx",
+      "date-fns",
+      "lucide-react",
+      "react",
+      "react-dom",
+      "react-query",
+      "react-router-dom",
+      "recharts",
+      "tailwind-merge",
+      "tailwindcss-animate",
+      "zustand"
+    ],
+    "dev_dependencies": [
+      "@storybook/addon-essentials",
+      "@storybook/addon-interactions",
+      "@storybook/addon-links",
+      "@storybook/blocks",
+      "@storybook/react",
+      "@storybook/react-vite",
+      "@storybook/testing-library",
+      "@types/react",
+      "@types/react-dom",
+      "@typescript-eslint/eslint-plugin",
+      "@typescript-eslint/parser",
+      "@vitejs/plugin-react",
+      "autoprefixer",
+      "eslint",
+      "eslint-plugin-react-hooks",
+      "eslint-plugin-react-refresh",
+      "postcss",
+      "tailwindcss",
+      "typescript",
+      "vite",
+      "vitest"
+    ],
+    "dep_count": 35
+  },
+  "OWN-PRIV-0063": {
+    "repo_name": "comm-050-community-cultural-ai",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0064": {
+    "repo_name": "comm-049-public-event-ai",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0065": {
+    "repo_name": "comm-048-community-transportation-ai",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0066": {
+    "repo_name": "comm-047-public-fitness-ai",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0067": {
+    "repo_name": "comm-046-community-pet-care-ai",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0068": {
+    "repo_name": "comm-045-public-childcare-ai",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0069": {
+    "repo_name": "comm-044-community-volunteering-ai",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0070": {
+    "repo_name": "comm-043-local-food-network-ai",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0071": {
+    "repo_name": "comm-042-community-energy-ai",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0072": {
+    "repo_name": "comm-041-public-wi-fi-ai",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0073": {
+    "repo_name": "comm-040-community-recycling-ai",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0074": {
+    "repo_name": "comm-039-public-space-ai",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0075": {
+    "repo_name": "comm-038-community-policing-ai",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0076": {
+    "repo_name": "comm-037-neighborhood-development-ai",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0077": {
+    "repo_name": "comm-036-public-infrastructure-ai",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0078": {
+    "repo_name": "comm-035-community-arts-ai",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0079": {
+    "repo_name": "comm-034-senior-tech-support",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0080": {
+    "repo_name": "comm-033-youth-innovation-hub",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0081": {
+    "repo_name": "comm-032-public-health-ai",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0082": {
+    "repo_name": "comm-031-community-investment-ai",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0083": {
+    "repo_name": "comm-030-cultural-exchange-ai",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0084": {
+    "repo_name": "comm-029-community-wellness-ai",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0085": {
+    "repo_name": "comm-028-public-safety-ai",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0086": {
+    "repo_name": "comm-027-local-government-ai",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0087": {
+    "repo_name": "comm-026-public-education-ai",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0088": {
+    "repo_name": "comm-025-community-legal-aid",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0089": {
+    "repo_name": "comm-024-youth-sports-ai",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0090": {
+    "repo_name": "comm-023-elder-companion-ai",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0091": {
+    "repo_name": "comm-022-job-training-center",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0092": {
+    "repo_name": "comm-021-housing-assistance-ai",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0093": {
+    "repo_name": "comm-020-public-transportation-ai",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0094": {
+    "repo_name": "comm-019-community-garden-ai",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0095": {
+    "repo_name": "comm-018-neighborhood-watch-ai",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0096": {
+    "repo_name": "comm-017-local-business-directory",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0097": {
+    "repo_name": "comm-016-community-health-ai",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0098": {
+    "repo_name": "comm-015-youth-mentorship-program",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0099": {
+    "repo_name": "comm-014-veterans-support-ai",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0100": {
+    "repo_name": "comm-013-women-s-empowerment-network",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0101": {
+    "repo_name": "comm-012-black-art-museum-ai",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0102": {
+    "repo_name": "comm-011-indigenous-creator-hub",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0103": {
+    "repo_name": "comm-010-disaster-relief-ai",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0104": {
+    "repo_name": "comm-009-volunteer-hub-ai",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0105": {
+    "repo_name": "comm-008-community-fundraising-ai",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0106": {
+    "repo_name": "comm-007-youth-leadership-ai",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0107": {
+    "repo_name": "comm-006-community-technology-access-ai",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0108": {
+    "repo_name": "comm-005-ace-food-security-ai",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0109": {
+    "repo_name": "comm-004-community-outreach-nonprofit",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0110": {
+    "repo_name": "comm-003-ace-senior-care-connect",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0111": {
+    "repo_name": "comm-002-brotherhood-coaching-network",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0112": {
+    "repo_name": "comm-001-luminary-worldwide-events",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "dev_dependencies": [
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "typescript"
+    ],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0113": {
+    "repo_name": "the-office",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "@clerk/clerk-react",
+      "@clerk/nextjs",
+      "@paddle/paddle-js",
+      "@pinecone-database/pinecone",
+      "@react-email/components",
+      "@react-email/render",
+      "@sentry/nextjs",
+      "@supabase/ssr",
+      "@supabase/supabase-js",
+      "@types/d3",
+      "@types/leaflet",
+      "@upstash/ratelimit",
+      "@upstash/redis",
+      "convex",
+      "d3",
+      "framer-motion",
+      "leaflet",
+      "next",
+      "open-agreements",
+      "posthog-js",
+      "posthog-node",
+      "react",
+      "react-dom",
+      "react-leaflet",
+      "react-markdown",
+      "remark-gfm",
+      "resend",
+      "swr"
+    ],
+    "dev_dependencies": [
+      "@convex-dev/eslint-plugin",
+      "@tailwindcss/postcss",
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "eslint",
+      "eslint-config-next",
+      "npm-run-all2",
+      "prettier",
+      "tailwindcss",
+      "typescript",
+      "vitest"
+    ],
+    "dep_count": 28
+  },
+  "OWN-PRIV-0115": {
+    "repo_name": "iza-os-rag-system",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "fastapi",
+      "httpx",
+      "lightrag-hku",
+      "pydantic",
+      "python-dotenv",
+      "raganything[all]",
+      "uvicorn[standard]"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 7
+  },
+  "OWN-PRIV-0123": {
+    "repo_name": "iza-os-workflow-integration",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0127": {
+    "repo_name": "acquisition-vehicle-automation",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0129": {
+    "repo_name": "ai-business-commander",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "@hookform/resolvers",
+      "@radix-ui/react-accordion",
+      "@radix-ui/react-alert-dialog",
+      "@radix-ui/react-aspect-ratio",
+      "@radix-ui/react-avatar",
+      "@radix-ui/react-checkbox",
+      "@radix-ui/react-collapsible",
+      "@radix-ui/react-context-menu",
+      "@radix-ui/react-dialog",
+      "@radix-ui/react-dropdown-menu",
+      "@radix-ui/react-hover-card",
+      "@radix-ui/react-label",
+      "@radix-ui/react-menubar",
+      "@radix-ui/react-navigation-menu",
+      "@radix-ui/react-popover",
+      "@radix-ui/react-progress",
+      "@radix-ui/react-radio-group",
+      "@radix-ui/react-scroll-area",
+      "@radix-ui/react-select",
+      "@radix-ui/react-separator",
+      "@radix-ui/react-slider",
+      "@radix-ui/react-slot",
+      "@radix-ui/react-switch",
+      "@radix-ui/react-tabs",
+      "@radix-ui/react-toast",
+      "@radix-ui/react-toggle",
+      "@radix-ui/react-toggle-group",
+      "@radix-ui/react-tooltip",
+      "@supabase/supabase-js",
+      "@tanstack/react-query",
+      "class-variance-authority",
+      "clsx",
+      "cmdk",
+      "date-fns",
+      "embla-carousel-react",
+      "framer-motion",
+      "input-otp",
+      "lucide-react",
+      "next-themes",
+      "react",
+      "react-day-picker",
+      "react-dom",
+      "react-hook-form",
+      "react-resizable-panels",
+      "react-router-dom",
+      "recharts",
+      "sonner",
+      "tailwind-merge",
+      "tailwindcss-animate",
+      "vaul",
+      "zod"
+    ],
+    "dev_dependencies": [
+      "@eslint/js",
+      "@tailwindcss/typography",
+      "@testing-library/jest-dom",
+      "@testing-library/react",
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "@vitejs/plugin-react-swc",
+      "autoprefixer",
+      "eslint",
+      "eslint-plugin-react-hooks",
+      "eslint-plugin-react-refresh",
+      "globals",
+      "jsdom",
+      "lovable-tagger",
+      "postcss",
+      "tailwindcss",
+      "typescript",
+      "typescript-eslint",
+      "vite",
+      "vitest"
+    ],
+    "dep_count": 51
+  },
+  "OWN-PRIV-0131": {
+    "repo_name": "aibossoslandingpage",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "@supabase/supabase-js",
+      "axios",
+      "lucide-react",
+      "react",
+      "react-dom",
+      "react-query",
+      "react-router-dom",
+      "stripe"
+    ],
+    "dev_dependencies": [
+      "@eslint/js",
+      "@types/react",
+      "@types/react-dom",
+      "@vitejs/plugin-react",
+      "autoprefixer",
+      "eslint",
+      "eslint-plugin-react-hooks",
+      "eslint-plugin-react-refresh",
+      "globals",
+      "postcss",
+      "tailwindcss",
+      "typescript",
+      "typescript-eslint",
+      "vite"
+    ],
+    "dep_count": 8
+  },
+  "OWN-PRIV-0132": {
+    "repo_name": "autonomous-venture-studio",
+    "manifest_files": {
+      "package.json": true,
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "convex",
+      "dotenv"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 2
+  },
+  "OWN-PRIV-0135": {
+    "repo_name": "babystepsmatrix1",
+    "manifest_files": {
+      "package.json": true,
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "@amplitude/analytics-node",
+      "@anthropic-ai/sdk",
+      "@emotion/react",
+      "@emotion/styled",
+      "@huggingface/inference",
+      "@logtail/node",
+      "@mui/icons-material",
+      "@mui/material",
+      "@mui/x-data-grid",
+      "@nivo/bar",
+      "@nivo/core",
+      "@nivo/line",
+      "@nivo/pie",
+      "@opentelemetry/api",
+      "@opentelemetry/exporter-prometheus",
+      "@opentelemetry/resources",
+      "@opentelemetry/semantic-conventions",
+      "@paypal/checkout-server-sdk",
+      "@sendgrid/mail",
+      "@sentry/node",
+      "@supabase/supabase-js",
+      "@vercel/node",
+      "aiohttp",
+      "anthropic",
+      "asyncio",
+      "autoprefixer",
+      "axios",
+      "backblaze-b2",
+      "bcrypt",
+      "cors",
+      "crewai",
+      "cryptography",
+      "discord.js",
+      "dotenv",
+      "duckduckgo-search",
+      "email-validator",
+      "express",
+      "express-rate-limit",
+      "express-validator",
+      "fastapi",
+      "firebase",
+      "firebase-admin",
+      "flask",
+      "flask-cors",
+      "form-data",
+      "google-auth",
+      "google-generativeai",
+      "helmet",
+      "ioredis",
+      "js-yaml",
+      "jsdom",
+      "jsonwebtoken",
+      "langchain",
+      "langchain-community",
+      "n8n",
+      "numpy",
+      "openai",
+      "pandas",
+      "passlib[bcrypt]",
+      "pg",
+      "plotly",
+      "postcss",
+      "prometheus-client",
+      "psycopg2-binary",
+      "pydantic",
+      "pyjwt",
+      "python-dotenv",
+      "python-jose",
+      "python-jose[cryptography]",
+      "python-multipart",
+      "react",
+      "react-dom",
+      "react-query",
+      "react-router-dom",
+      "recharts",
+      "redis",
+      "requests",
+      "sentry-sdk",
+      "socket.io-client",
+      "stripe",
+      "supabase",
+      "tailwindcss",
+      "tenacity",
+      "twilio",
+      "uuid",
+      "uvicorn",
+      "winston",
+      "zod"
+    ],
+    "dev_dependencies": [
+      "@types/bcrypt",
+      "@types/cors",
+      "@types/express",
+      "@types/helmet",
+      "@types/jest",
+      "@types/js-yaml",
+      "@types/jsdom",
+      "@types/node",
+      "@types/uuid",
+      "@typescript-eslint/eslint-plugin",
+      "@typescript-eslint/parser",
+      "eslint",
+      "eslint-config-prettier",
+      "husky",
+      "jest",
+      "lint-staged",
+      "prettier",
+      "ts-jest",
+      "ts-node",
+      "typescript"
+    ],
+    "dep_count": 88
+  },
+  "OWN-PRIV-0136": {
+    "repo_name": "billionaire-brain-assistant",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0137": {
+    "repo_name": "billionaire-consciousness-empire",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0138": {
+    "repo_name": "billionaire-workflow-automation",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0139": {
+    "repo_name": "business-template-marketplace",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "@hookform/resolvers",
+      "@prisma/client",
+      "@stripe/react-stripe-js",
+      "@stripe/stripe-js",
+      "archiver",
+      "aws-sdk",
+      "axios",
+      "date-fns",
+      "framer-motion",
+      "lucide-react",
+      "next",
+      "next-auth",
+      "nodemailer",
+      "prisma",
+      "react",
+      "react-dom",
+      "react-hook-form",
+      "react-query",
+      "recharts",
+      "stripe",
+      "tailwindcss",
+      "zod",
+      "zustand"
+    ],
+    "dev_dependencies": [
+      "@testing-library/jest-dom",
+      "@testing-library/react",
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "autoprefixer",
+      "eslint",
+      "eslint-config-next",
+      "jest",
+      "postcss",
+      "typescript"
+    ],
+    "dep_count": 23
+  },
+  "OWN-PRIV-0159": {
+    "repo_name": "consciousness-deployment-system",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0161": {
+    "repo_name": "consulting-services-automation",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0163": {
+    "repo_name": "design-system",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "tailwindcss"
+    ],
+    "dev_dependencies": [
+      "@storybook/addon-actions",
+      "@storybook/addon-essentials",
+      "@storybook/addon-links",
+      "@storybook/react",
+      "@testing-library/jest-dom",
+      "@testing-library/react",
+      "@types/react",
+      "@types/react-dom",
+      "@typescript-eslint/eslint-plugin",
+      "@typescript-eslint/parser",
+      "eslint",
+      "husky",
+      "react",
+      "react-dom",
+      "tsdx",
+      "tslib",
+      "typescript"
+    ],
+    "dep_count": 1
+  },
+  "OWN-PRIV-0306": {
+    "repo_name": "education-platform-system",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0465": {
+    "repo_name": "genixbank-financial-system",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [],
+    "dev_dependencies": [],
+    "dep_count": 0
+  },
+  "OWN-PRIV-0466": {
+    "repo_name": "genixbank-insight-compass",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "@hookform/resolvers",
+      "@radix-ui/react-accordion",
+      "@radix-ui/react-alert-dialog",
+      "@radix-ui/react-aspect-ratio",
+      "@radix-ui/react-avatar",
+      "@radix-ui/react-checkbox",
+      "@radix-ui/react-collapsible",
+      "@radix-ui/react-context-menu",
+      "@radix-ui/react-dialog",
+      "@radix-ui/react-dropdown-menu",
+      "@radix-ui/react-hover-card",
+      "@radix-ui/react-label",
+      "@radix-ui/react-menubar",
+      "@radix-ui/react-navigation-menu",
+      "@radix-ui/react-popover",
+      "@radix-ui/react-progress",
+      "@radix-ui/react-radio-group",
+      "@radix-ui/react-scroll-area",
+      "@radix-ui/react-select",
+      "@radix-ui/react-separator",
+      "@radix-ui/react-slider",
+      "@radix-ui/react-slot",
+      "@radix-ui/react-switch",
+      "@radix-ui/react-tabs",
+      "@radix-ui/react-toast",
+      "@radix-ui/react-toggle",
+      "@radix-ui/react-toggle-group",
+      "@radix-ui/react-tooltip",
+      "@tanstack/react-query",
+      "class-variance-authority",
+      "clsx",
+      "cmdk",
+      "date-fns",
+      "embla-carousel-react",
+      "input-otp",
+      "lucide-react",
+      "next-themes",
+      "react",
+      "react-day-picker",
+      "react-dom",
+      "react-hook-form",
+      "react-resizable-panels",
+      "react-router-dom",
+      "recharts",
+      "sonner",
+      "tailwind-merge",
+      "tailwindcss-animate",
+      "vaul",
+      "zod"
+    ],
+    "dev_dependencies": [
+      "@eslint/js",
+      "@tailwindcss/typography",
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "@vitejs/plugin-react-swc",
+      "autoprefixer",
+      "eslint",
+      "eslint-plugin-react-hooks",
+      "eslint-plugin-react-refresh",
+      "globals",
+      "lovable-tagger",
+      "postcss",
+      "tailwindcss",
+      "typescript",
+      "typescript-eslint",
+      "vite"
+    ],
+    "dep_count": 49
+  },
+  "OWN-PRIV-0467": {
+    "repo_name": "global-operations-automation",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0468": {
+    "repo_name": "innovation-hub-platform",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0470": {
+    "repo_name": "intellectual-property-management",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0471": {
+    "repo_name": "investment-fund-management",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0473": {
+    "repo_name": "iza-os-ai-consciousness-platform",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0474": {
+    "repo_name": "iza-os-ai-core-platform",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0475": {
+    "repo_name": "iza-os-ai-nlp-platform",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0476": {
+    "repo_name": "iza-os-ai-optimization-platform",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0477": {
+    "repo_name": "iza-os-ai-prediction-platform",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0478": {
+    "repo_name": "iza-os-ai-vision-platform",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0482": {
+    "repo_name": "iza-os-automation-integration",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0483": {
+    "repo_name": "iza-os-blockchain-core",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0487": {
+    "repo_name": "iza-os-core",
+    "manifest_files": {
+      "package.json": true,
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "@fastify/cors",
+      "@fastify/helmet",
+      "@fastify/rate-limit",
+      "@fastify/swagger",
+      "aiohttp",
+      "alembic",
+      "alpha-vantage",
+      "apache-airflow",
+      "asyncio",
+      "asyncpg",
+      "autogen-agentchat",
+      "axios",
+      "bandit",
+      "base64",
+      "bcrypt",
+      "beautifulsoup4",
+      "black",
+      "boto3",
+      "bull",
+      "ccxt",
+      "celery[redis]",
+      "cerberus",
+      "cheerio",
+      "chromadb",
+      "click",
+      "collections",
+      "commander",
+      "concurrent.futures",
+      "copy",
+      "cors",
+      "crewai",
+      "cryptography",
+      "dataclasses",
+      "docker",
+      "dotenv",
+      "dramatiq",
+      "emails",
+      "express",
+      "factory-boy",
+      "fastapi[all]",
+      "fastify",
+      "flake8",
+      "flask-cors",
+      "functools",
+      "google-cloud-storage",
+      "gunicorn",
+      "hashlib",
+      "helmet",
+      "httpx",
+      "ioredis",
+      "ipython",
+      "isort",
+      "itertools",
+      "joi",
+      "json",
+      "jsonwebtoken",
+      "jupyter",
+      "kubernetes",
+      "langchain",
+      "langchain-community",
+      "langchain-experimental",
+      "langchain-openai",
+      "loguru",
+      "marshmallow",
+      "mem0ai",
+      "mkdocs",
+      "mkdocs-material",
+      "mkdocs-mermaid2-plugin",
+      "mongoose",
+      "mypy",
+      "nltk",
+      "node-cron",
+      "nodemailer",
+      "notebook",
+      "numpy",
+      "openai",
+      "operator",
+      "pandas",
+      "passlib[bcrypt]",
+      "pathlib",
+      "pg",
+      "pickle",
+      "pillow",
+      "pinecone-client",
+      "pino",
+      "pip",
+      "playwright",
+      "praw",
+      "pre-commit",
+      "prefect",
+      "prisma",
+      "prometheus-client",
+      "psutil",
+      "psycopg2-binary",
+      "puppeteer",
+      "py-spy",
+      "pydantic",
+      "pydantic-settings",
+      "pygithub",
+      "pyjwt",
+      "pytest",
+      "pytest-asyncio",
+      "pytest-cov",
+      "pytest-mock",
+      "python-dateutil",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "python-magic",
+      "python-multipart",
+      "python-socketio",
+      "pytz",
+      "pyyaml",
+      "qrcode[pil]",
+      "react",
+      "react-dom",
+      "redis",
+      "requests",
+      "rq",
+      "scikit-learn",
+      "scrapy",
+      "selenium",
+      "sendgrid",
+      "sentence-transformers",
+      "sentry-sdk[fastapi]",
+      "setuptools",
+      "socket.io",
+      "spacy",
+      "sqlalchemy",
+      "sqlite3",
+      "starlette",
+      "stripe",
+      "textblob",
+      "toml",
+      "torch",
+      "transformers",
+      "tweepy",
+      "twilio",
+      "typing",
+      "uuid",
+      "uvicorn[standard]",
+      "websockets",
+      "wheel",
+      "winston",
+      "ws",
+      "yfinance"
+    ],
+    "dev_dependencies": [
+      "@babel/core",
+      "@babel/preset-env",
+      "@babel/preset-react",
+      "@babel/preset-typescript",
+      "@commitlint/cli",
+      "@commitlint/config-conventional",
+      "@playwright/test",
+      "@types/bcrypt",
+      "@types/cors",
+      "@types/express",
+      "@types/jest",
+      "@types/jsonwebtoken",
+      "@types/node",
+      "@types/pg",
+      "@types/react",
+      "@types/react-dom",
+      "@types/uuid",
+      "@types/ws",
+      "@typescript-eslint/eslint-plugin",
+      "@typescript-eslint/parser",
+      "babel-loader",
+      "css-loader",
+      "eslint",
+      "eslint-config-prettier",
+      "eslint-plugin-react",
+      "eslint-plugin-react-hooks",
+      "html-webpack-plugin",
+      "husky",
+      "jest",
+      "lint-staged",
+      "mini-css-extract-plugin",
+      "nodemon",
+      "prettier",
+      "standard-version",
+      "style-loader",
+      "supertest",
+      "ts-jest",
+      "ts-loader",
+      "ts-node",
+      "typescript",
+      "webpack",
+      "webpack-cli",
+      "webpack-dev-server"
+    ],
+    "dep_count": 145
+  },
+  "OWN-PRIV-0488": {
+    "repo_name": "iza-os-cryptocurrency-management",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0492": {
+    "repo_name": "iza-os-data-integration-hub",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0493": {
+    "repo_name": "iza-os-defi-platform",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0498": {
+    "repo_name": "iza-os-enterprise-integrations",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0506": {
+    "repo_name": "iza-os-inventory-management-analytics-bot",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "arch",
+      "asyncpg",
+      "barcode-scanner",
+      "black",
+      "celery",
+      "docker",
+      "fastapi",
+      "flake8",
+      "gunicorn",
+      "httpx",
+      "inventory-tracker",
+      "isort",
+      "kombu",
+      "logistics-tracker",
+      "matplotlib",
+      "mypy",
+      "netsuite-sdk",
+      "numpy",
+      "oracle-cx",
+      "pandas",
+      "passlib[bcrypt]",
+      "plotly",
+      "prometheus-client",
+      "prophet",
+      "pydantic",
+      "pydantic-settings",
+      "pymongo",
+      "pytest",
+      "pytest-asyncio",
+      "pytest-cov",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "python-multipart",
+      "pyyaml",
+      "redis",
+      "rfid-reader",
+      "sap-connector",
+      "scikit-learn",
+      "scipy",
+      "seaborn",
+      "sentry-sdk[fastapi]",
+      "shipping-api",
+      "sqlalchemy",
+      "statsmodels",
+      "streamlit",
+      "structlog",
+      "supplier-api",
+      "tensorflow",
+      "toml",
+      "torch",
+      "uvicorn[standard]",
+      "websockets",
+      "wms-api",
+      "xgboost"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 54
+  },
+  "OWN-PRIV-0509": {
+    "repo_name": "iza-os-inventory-management-optimization-bot",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "barcode-scanner",
+      "black",
+      "celery",
+      "cvxpy",
+      "deap",
+      "docker",
+      "fastapi",
+      "flake8",
+      "gunicorn",
+      "httpx",
+      "inventory-tracker",
+      "isort",
+      "kombu",
+      "logistics-tracker",
+      "matplotlib",
+      "mypy",
+      "netsuite-sdk",
+      "numpy",
+      "oracle-cx",
+      "ortools",
+      "pandas",
+      "passlib[bcrypt]",
+      "plotly",
+      "prometheus-client",
+      "prophet",
+      "pulp",
+      "pydantic",
+      "pydantic-settings",
+      "pyeasyga",
+      "pymongo",
+      "pytest",
+      "pytest-asyncio",
+      "pytest-cov",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "python-multipart",
+      "pyyaml",
+      "redis",
+      "rfid-reader",
+      "sap-connector",
+      "scikit-learn",
+      "scipy",
+      "scipy-optimize",
+      "seaborn",
+      "sentry-sdk[fastapi]",
+      "shipping-api",
+      "sqlalchemy",
+      "statsmodels",
+      "streamlit",
+      "structlog",
+      "supplier-api",
+      "tensorflow",
+      "toml",
+      "torch",
+      "uvicorn[standard]",
+      "websockets",
+      "wms-api",
+      "xgboost"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 59
+  },
+  "OWN-PRIV-0516": {
+    "repo_name": "iza-os-marketing-automation-analytics-bot",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "amplitude-analytics",
+      "asyncpg",
+      "black",
+      "celery",
+      "docker",
+      "facebook-business",
+      "fastapi",
+      "flake8",
+      "google-ads",
+      "google-analytics-data",
+      "gunicorn",
+      "httpx",
+      "hubspot-api-client",
+      "instagram-basic-display",
+      "isort",
+      "kombu",
+      "linkedin-api",
+      "mailchimp-marketing",
+      "matplotlib",
+      "mixpanel",
+      "mypy",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "plotly",
+      "prometheus-client",
+      "prophet",
+      "pydantic",
+      "pydantic-settings",
+      "pymongo",
+      "pytest",
+      "pytest-asyncio",
+      "pytest-cov",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "python-multipart",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "scipy",
+      "seaborn",
+      "sendgrid",
+      "sentry-sdk[fastapi]",
+      "smtplib2",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "toml",
+      "torch",
+      "tweepy",
+      "twilio",
+      "uvicorn[standard]",
+      "websockets",
+      "xgboost"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 54
+  },
+  "OWN-PRIV-0522": {
+    "repo_name": "iza-os-monitoring-integration",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0523": {
+    "repo_name": "iza-os-nft-platform",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0541": {
+    "repo_name": "iza-os-smart-contracts",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0542": {
+    "repo_name": "iza-os-specs",
+    "manifest_files": {
+      "package.json": true,
+      "pyproject.toml": true,
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "@directus/sdk",
+      "aiofiles",
+      "anthropic",
+      "black",
+      "fastapi",
+      "flake8",
+      "httpx",
+      "ioredis",
+      "mypy",
+      "neo4j",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-multipart",
+      "pyttsx3",
+      "pyyaml",
+      "qdrant-client",
+      "redis",
+      "speechrecognition",
+      "structlog",
+      "typescript",
+      "uvicorn[standard]"
+    ],
+    "dev_dependencies": [
+      "@types/ioredis",
+      "@types/node"
+    ],
+    "dep_count": 24
+  },
+  "OWN-PRIV-0545": {
+    "repo_name": "iza-os-third-party-apis",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0548": {
+    "repo_name": "iza-os-web3-integration",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0603": {
+    "repo_name": "op-003-agent-services-hub",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "fastapi",
+      "stripe",
+      "uvicorn"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0619": {
+    "repo_name": "partnership-network-management",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0640": {
+    "repo_name": "quantum-brain-sync-website",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [],
+    "dev_dependencies": [],
+    "dep_count": 0
+  },
+  "OWN-PRIV-0642": {
+    "repo_name": "research-lab-automation",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0643": {
+    "repo_name": "research-processing-pipeline",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [],
+    "dev_dependencies": [],
+    "dep_count": 0
+  },
+  "OWN-PRIV-0644": {
+    "repo_name": "Resume",
+    "manifest_files": {
+      "go.mod": true
+    },
+    "dependencies": [],
+    "dev_dependencies": [],
+    "dep_count": 0
+  },
+  "OWN-PRIV-0645": {
+    "repo_name": "revenue-multiplication-system",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0648": {
+    "repo_name": "tax-company-2026",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "pandas",
+      "plotly",
+      "python-dotenv",
+      "streamlit",
+      "stripe"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 5
+  },
+  "OWN-PRIV-0704": {
+    "repo_name": "tech-ventures-portfolio",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0705": {
+    "repo_name": "unified-dashboard-system",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "express"
+    ],
+    "dev_dependencies": [
+      "nodemon"
+    ],
+    "dep_count": 1
+  },
+  "OWN-PRIV-0706": {
+    "repo_name": "venture-contract-engine",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "click",
+      "jinja2",
+      "pyyaml"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 3
+  },
+  "OWN-PRIV-0707": {
+    "repo_name": "venture-studio-core",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0708": {
+    "repo_name": "worldwidebro-holdings",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0717": {
+    "repo_name": "capital-orchestrator",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "@hookform/resolvers",
+      "@radix-ui/react-accordion",
+      "@radix-ui/react-alert-dialog",
+      "@radix-ui/react-aspect-ratio",
+      "@radix-ui/react-avatar",
+      "@radix-ui/react-checkbox",
+      "@radix-ui/react-collapsible",
+      "@radix-ui/react-context-menu",
+      "@radix-ui/react-dialog",
+      "@radix-ui/react-dropdown-menu",
+      "@radix-ui/react-hover-card",
+      "@radix-ui/react-label",
+      "@radix-ui/react-menubar",
+      "@radix-ui/react-navigation-menu",
+      "@radix-ui/react-popover",
+      "@radix-ui/react-progress",
+      "@radix-ui/react-radio-group",
+      "@radix-ui/react-scroll-area",
+      "@radix-ui/react-select",
+      "@radix-ui/react-separator",
+      "@radix-ui/react-slider",
+      "@radix-ui/react-slot",
+      "@radix-ui/react-switch",
+      "@radix-ui/react-tabs",
+      "@radix-ui/react-toast",
+      "@radix-ui/react-toggle",
+      "@radix-ui/react-toggle-group",
+      "@radix-ui/react-tooltip",
+      "@supabase/supabase-js",
+      "@tanstack/react-query",
+      "class-variance-authority",
+      "clsx",
+      "cmdk",
+      "date-fns",
+      "embla-carousel-react",
+      "input-otp",
+      "lucide-react",
+      "next-themes",
+      "react",
+      "react-day-picker",
+      "react-dom",
+      "react-hook-form",
+      "react-resizable-panels",
+      "react-router-dom",
+      "recharts",
+      "sonner",
+      "tailwind-merge",
+      "tailwindcss-animate",
+      "vaul",
+      "zod"
+    ],
+    "dev_dependencies": [
+      "@eslint/js",
+      "@tailwindcss/typography",
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "@vitejs/plugin-react-swc",
+      "autoprefixer",
+      "eslint",
+      "eslint-plugin-react-hooks",
+      "eslint-plugin-react-refresh",
+      "globals",
+      "lovable-tagger",
+      "postcss",
+      "tailwindcss",
+      "typescript",
+      "typescript-eslint",
+      "vite"
+    ],
+    "dep_count": 50
+  },
+  "OWN-PRIV-0760": {
+    "repo_name": "bw-001-up-next-web",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "@supabase/ssr",
+      "@supabase/supabase-js",
+      "@tailwindcss/postcss",
+      "clsx",
+      "lucide-react",
+      "next",
+      "react",
+      "react-dom",
+      "tailwind-merge"
+    ],
+    "dev_dependencies": [
+      "@tailwindcss/forms",
+      "@tailwindcss/typography",
+      "@types/react",
+      "@types/react-dom",
+      "autoprefixer",
+      "eslint",
+      "eslint-config-next",
+      "postcss",
+      "tailwindcss",
+      "typescript"
+    ],
+    "dep_count": 9
+  },
+  "OWN-PRIV-0762": {
+    "repo_name": "ai-001-ai-command-center",
+    "manifest_files": {
+      "package.json": true,
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "cors",
+      "express",
+      "fastapi",
+      "pydantic",
+      "python-multipart",
+      "uvicorn"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 6
+  },
+  "OWN-PRIV-0821": {
+    "repo_name": "iza-os-finance-advisor-forecasting-bot",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 23
+  },
+  "OWN-PRIV-0822": {
+    "repo_name": "iza-os-finance-advisor-optimization-bot",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 23
+  },
+  "OWN-PRIV-0823": {
+    "repo_name": "iza-os-marketing-automation-campaign-bot",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 23
+  },
+  "OWN-PRIV-0824": {
+    "repo_name": "iza-os-customer-service-chatbot-bot",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 23
+  },
+  "OWN-PRIV-0825": {
+    "repo_name": "iza-os-inventory-management-security-bot",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 23
+  },
+  "OWN-PRIV-0826": {
+    "repo_name": "iza-os-inventory-management-integration-bot",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 23
+  },
+  "OWN-PRIV-0827": {
+    "repo_name": "iza-os-inventory-management-compliance-bot",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 23
+  },
+  "OWN-PRIV-0828": {
+    "repo_name": "iza-os-inventory-management-reporting-bot",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 23
+  },
+  "OWN-PRIV-0829": {
+    "repo_name": "iza-os-customer-service-automation-bot",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0830": {
+    "repo_name": "iza-os-customer-service-email-bot",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0831": {
+    "repo_name": "iza-os-customer-service-phone-bot",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0832": {
+    "repo_name": "iza-os-customer-service-social-bot",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0833": {
+    "repo_name": "iza-os-customer-service-knowledge-bot",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0834": {
+    "repo_name": "iza-os-customer-service-faq-bot",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0835": {
+    "repo_name": "iza-os-customer-service-ticket-bot",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0836": {
+    "repo_name": "iza-os-customer-service-escalation-bot",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0837": {
+    "repo_name": "iza-os-hr-training-bot",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0838": {
+    "repo_name": "iza-os-operations-automation-bot",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0839": {
+    "repo_name": "iza-os-operations-intelligence-bot",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0840": {
+    "repo_name": "iza-os-operations-analytics-bot",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0841": {
+    "repo_name": "iza-os-operations-integration-bot",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0842": {
+    "repo_name": "iza-os-operations-security-bot",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0843": {
+    "repo_name": "iza-os-operations-compliance-bot",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0844": {
+    "repo_name": "iza-os-operations-reporting-bot",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0845": {
+    "repo_name": "iza-os-operations-optimization-bot",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0846": {
+    "repo_name": "iza-os-operations-monitoring-bot",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0847": {
+    "repo_name": "iza-os-hr-analytics-bot",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0848": {
+    "repo_name": "iza-os-hr-compliance-bot",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0849": {
+    "repo_name": "iza-os-hr-benefits-bot",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0850": {
+    "repo_name": "iza-os-hr-payroll-bot",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0851": {
+    "repo_name": "iza-os-hr-performance-bot",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0852": {
+    "repo_name": "iza-os-hr-onboarding-bot",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0853": {
+    "repo_name": "iza-os-hr-recruitment-bot",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PRIV-0854": {
+    "repo_name": "iza-os-project-management-analytics-bot",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asana",
+      "asyncpg",
+      "black",
+      "celery",
+      "docker",
+      "fastapi",
+      "flake8",
+      "graphql-core",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "jira",
+      "kombu",
+      "matplotlib",
+      "monday",
+      "mypy",
+      "neo4j",
+      "networkx",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "plotly",
+      "prometheus-client",
+      "prophet",
+      "py2neo",
+      "pydantic",
+      "pydantic-settings",
+      "pymongo",
+      "pytest",
+      "pytest-asyncio",
+      "pytest-cov",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "python-multipart",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "scipy",
+      "seaborn",
+      "sentence-transformers",
+      "sentry-sdk[fastapi]",
+      "sqlalchemy",
+      "statsmodels",
+      "streamlit",
+      "structlog",
+      "tensorflow",
+      "toml",
+      "torch",
+      "transformers",
+      "trello",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 52
+  },
+  "OWN-PRIV-0865": {
+    "repo_name": "iza-os-project-management-synthesis-bot",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 23
+  },
+  "OWN-PRIV-0866": {
+    "repo_name": "iza-os-project-management-orchestration-bot",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 23
+  },
+  "OWN-PRIV-0868": {
+    "repo_name": "iza-os-project-management-processing-bot",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "aiohttp",
+      "apache-airflow",
+      "apache-beam",
+      "apache-kafka",
+      "asana",
+      "asyncpg",
+      "black",
+      "celery",
+      "docker",
+      "elasticsearch",
+      "fastapi",
+      "flake8",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "jira",
+      "jsonschema",
+      "kombu",
+      "luigi",
+      "marshmallow",
+      "monday",
+      "mypy",
+      "notion-client",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prefect",
+      "prometheus-client",
+      "pydantic",
+      "pydantic-settings",
+      "pymongo",
+      "pytest",
+      "pytest-asyncio",
+      "pytest-cov",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "python-multipart",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "scipy",
+      "sentry-sdk[fastapi]",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "toml",
+      "torch",
+      "transformers",
+      "trello",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 51
+  },
+  "OWN-PRIV-0873": {
+    "repo_name": "iza-os-finance-advisor-analytics-bot",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "alpha-vantage",
+      "arch",
+      "asyncpg",
+      "black",
+      "celery",
+      "docker",
+      "fastapi",
+      "flake8",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "kombu",
+      "matplotlib",
+      "mypy",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "plotly",
+      "prometheus-client",
+      "prophet",
+      "pydantic",
+      "pydantic-settings",
+      "pymongo",
+      "pytest",
+      "pytest-asyncio",
+      "pytest-cov",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "python-multipart",
+      "pyyaml",
+      "quandl",
+      "redis",
+      "scikit-learn",
+      "scipy",
+      "seaborn",
+      "sentry-sdk[fastapi]",
+      "sqlalchemy",
+      "statsmodels",
+      "streamlit",
+      "structlog",
+      "tensorflow",
+      "toml",
+      "torch",
+      "uvicorn[standard]",
+      "websockets",
+      "xgboost",
+      "yfinance"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 47
+  },
+  "OWN-PUB-0874": {
+    "repo_name": "worldwidebro-mathematical-os",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "@anthropic-ai/sdk",
+      "@composio/core",
+      "@supabase/supabase-js",
+      "axios",
+      "body-parser",
+      "dotenv",
+      "express"
+    ],
+    "dev_dependencies": [
+      "nodemon"
+    ],
+    "dep_count": 7
+  },
+  "OWN-PUB-0876": {
+    "repo_name": "family-office-os",
+    "manifest_files": {
+      "requirements.txt": true
+    },
+    "dependencies": [
+      "asyncpg",
+      "black",
+      "docker",
+      "fastapi",
+      "gunicorn",
+      "httpx",
+      "isort",
+      "numpy",
+      "pandas",
+      "passlib[bcrypt]",
+      "prometheus-client",
+      "pydantic",
+      "pytest",
+      "pytest-asyncio",
+      "python-dotenv",
+      "python-jose[cryptography]",
+      "pyyaml",
+      "redis",
+      "scikit-learn",
+      "sqlalchemy",
+      "structlog",
+      "tensorflow",
+      "torch",
+      "uvicorn[standard]",
+      "websockets"
+    ],
+    "dev_dependencies": [],
+    "dep_count": 25
+  },
+  "OWN-PUB-0878": {
+    "repo_name": "iza-os-finance-core",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [],
+    "dev_dependencies": [],
+    "dep_count": 0
+  },
+  "OWN-PUB-0879": {
+    "repo_name": "worldwidebro-education-os",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [],
+    "dev_dependencies": [],
+    "dep_count": 0
+  },
+  "OWN-PUB-0880": {
+    "repo_name": "worldwidebro-staffing-os",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [],
+    "dev_dependencies": [],
+    "dep_count": 0
+  },
+  "OWN-PUB-0886": {
+    "repo_name": "pitch-kit",
+    "manifest_files": {
+      "package.json": true
+    },
+    "dependencies": [
+      "clsx",
+      "framer-motion",
+      "gsap",
+      "lucide-react",
+      "next",
+      "react",
+      "react-dom",
+      "tailwind-merge"
+    ],
+    "dev_dependencies": [
+      "@slidev/cli",
+      "@slidev/theme-default",
+      "@types/node",
+      "@types/react",
+      "@types/react-dom",
+      "autoprefixer",
+      "eslint",
+      "eslint-config-next",
+      "postcss",
+      "tailwindcss",
+      "tsx",
+      "typescript"
+    ],
+    "dep_count": 8
+  }
+}

@@ -1,0 +1,268 @@
+# OBJECTS_EXTENDED.yaml — 60+ Object Types Across 13 Categories
+# Version 1.0 | Created 2026-09-01 | Phase 0 File
+
+---
+version: "1.0"
+description: "Extended object ontology: 60+ entity types + cognitive realization objects"
+created: "2026-09-01"
+
+categories:
+
+  organizational:
+    order: 1
+    description: "Organizational structure entities"
+    types:
+      - ORG: "Organization | Top-level company/holding entity"
+      - VEN: "Venture | Business unit/operating company"
+      - OPC: "OpCo | Operating company within sector"
+      - DIV: "Division | Division within organization"
+      - TEA: "Team | Cross-functional team"
+      - ROL: "Role | Defined position/responsibility"
+      - PER: "Person | Individual human"
+
+  work_execution:
+    order: 2
+    description: "Work units and execution entities"
+    types:
+      - CAP: "Capability | Repeatable organizational capability"
+      - SKL: "Skill | Specific skill/procedure"
+      - AGT: "Agent | Autonomous agent/AI system"
+      - MOD: "Model | AI/ML model"
+      - TOL: "Tool | Software tool/library"
+      - MCP: "MCP | Model Context Protocol server"
+      - WFL: "Workflow | Multi-step business process"
+      - LOP: "Loop | Continuous autonomous loop (L1/L2/L3)"
+      - JOB: "Job | Scheduled/recurring work"
+      - TSK: "Task | Discrete work unit"
+
+  intelligence:
+    order: 3
+    description: "Analytics, research, and insights"
+    types:
+      - DST: "Dataset | Structured data collection"
+      - ANL: "Analysis | Analysis result/output"
+      - INS: "Insight | Actionable insight"
+      - RPT: "Report | Formatted report"
+      - DAS: "Dashboard | Visual dashboard"
+      - QRY: "Query | Saved query/search"
+      - EXP: "Experiment | Controlled experiment"
+      - HYP: "Hypothesis | Testable hypothesis"
+      - TST: "Test | Test/verification"
+      - RES: "Research | Research document/output"
+
+  execution_outcomes:
+    order: 4
+    description: "Decisions, executions, and results"
+    types:
+      - DEC: "Decision | Recorded decision point"
+      - APR: "Approval | Approval/authorization"
+      - EXC: "Execution | Agent/system execution run"
+      - OUT: "Outcome | Measured result/outcome"
+      - LES: "Lesson | Extracted lesson/learning"
+      - MTR: "Metric | Performance metric"
+      - KPI: "KPI | Key performance indicator"
+      - SLI: "SLI | Service level indicator"
+      - SLO: "SLO | Service level objective"
+      - ERR: "Error | System error/anomaly"
+      - ALT: "Alert | Alert/notification"
+
+  knowledge_docs:
+    order: 5
+    description: "Documentation and knowledge assets"
+    types:
+      - DOC: "Document | General document"
+      - GDE: "Guide | Procedural guide"
+      - PRC: "Procedure | Procedure/runbook"
+      - POL: "Policy | Policy/rule"
+      - STD: "Standard | Standard/specification"
+      - TPL: "Template | Reusable template"
+      - EXL: "Example | Code/usage example"
+      - CST: "Codespec | Code specification"
+      - PAT: "Pattern | Design pattern"
+      - ART: "Article | Knowledge article"
+
+  data_layer:
+    order: 6
+    description: "Database and data modeling"
+    types:
+      - SCH: "Schema | Database schema"
+      - TBL: "Table | Database table"
+      - FLD: "Field | Database field"
+      - REC: "Record | Database record"
+      - ENT: "Entity | Entity in data model"
+      - REL: "Relationship | Relationship in data model"
+      - TYP: "Type | Data type definition"
+      - ENM: "Enum | Enumeration type"
+      - CNS: "Constraint | Database constraint"
+
+  business_economics:
+    order: 7
+    description: "Business, products, and customers"
+    types:
+      - CST: "Customer | Customer/prospect"
+      - PDT: "Product | Product/service"
+      - FTR: "Feature | Product feature"
+      - REL: "Release | Software release"
+      - CAM: "Campaign | Marketing campaign"
+      - OFR: "Offer | Business offer/deal"
+      - DEL: "Deliverable | Project deliverable"
+      - CTR: "Contract | Business contract"
+
+  governance_security:
+    order: 8
+    description: "Governance, security, compliance"
+    types:
+      - AUT: "Authority | Authorization/authority"
+      - PRM: "Permission | Permission/access"
+      - RIK: "Risk | Risk assessment"
+      - THR: "Threat | Security threat"
+      - MIT: "Mitigation | Risk/threat mitigation"
+      - CMP: "Compliance | Compliance requirement"
+      - AUD: "Audit | Audit/review"
+      - CTL: "Control | Control mechanism"
+
+  infrastructure:
+    order: 9
+    description: "Systems, services, and infrastructure"
+    types:
+      - SYS: "System | Software system"
+      - SVC: "Service | Microservice"
+      - SRV: "Server | Server/host"
+      - CNT: "Container | Container/process"
+      - NET: "Network | Network/connectivity"
+      - STR: "Storage | Storage system"
+      - CCH: "Cache | Cache/buffer"
+      - QUE: "Queue | Message queue"
+      - GWY: "Gateway | API gateway"
+      - EPN: "Endpoint | Service endpoint"
+
+  integration_apis:
+    order: 10
+    description: "APIs and integrations"
+    types:
+      - API: "API | API endpoint"
+      - WBH: "Webhook | Webhook endpoint"
+      - PRO: "Protocol | Communication protocol"
+      - FMT: "Format | Data format"
+      - ADP: "Adapter | System adapter"
+      - CON: "Connector | Data connector"
+      - TRN: "Transport | Transport mechanism"
+      - RTR: "Router | Message router"
+
+  operations_automation:
+    order: 11
+    description: "Operations and automation"
+    types:
+      - PCS: "Process | Business process"
+      - SPR: "Sprint | Development sprint"
+      - STG: "Stage | Pipeline stage"
+      - GTE: "Gate | Quality gate"
+      - RUL: "Rule | Business rule"
+      - TRG: "Trigger | Event trigger"
+      - SCD: "Schedule | Scheduled job"
+      - EVT: "Event | System event"
+      - HND: "Handler | Event handler"
+      - MON: "Monitor | Monitoring system"
+
+  control_management:
+    order: 12
+    description: "Control points and governance"
+    types:
+      - CBP: "ControlPoint | ~500-point control system"
+
+  cognitive_realization:
+    order: 13
+    description: "Cognitive and realization entities (NEW)"
+    note: "NEW in Phase 0: cognitive flow materialization objects"
+    types:
+      - THT: "Thought | Reasoning/inference result"
+      - IDE: "Idea | Novel conception/proposal"
+      - VIS: "Vision | Desired future state"
+      - INT: "Intention | Binding commitment to pursue"
+      - HYP: "Hypothesis | Testable claim/assumption"
+      - COM: "Commitment | Explicit commitment (redundant to INT, for clarity)"
+      - VST: "VisionState | Detailed target state specification"
+      - MNF: "Manifestation | Realized/actualized outcome"
+      - ADP: "Adaptation | System adaptation/evolution response"
+
+object_type_standards:
+  id_format: "{PREFIX}-{SEQUENCE}"
+  id_examples:
+    - "VEN-000001"
+    - "ORG-000042"
+    - "CAP-000247"
+    - "THT-000015"
+
+  prefix_rules:
+    - "Each prefix is globally unique (no ambiguity)"
+    - "All caps, 3 chars max"
+    - "Alphanumeric only"
+
+  metadata_required:
+    - machine_id: "ULID (permanent, globally unique, sortable)"
+    - ref_id: "Human-readable ID (TYPE-000001)"
+    - slug: "URL-safe name (kebab-case)"
+    - created: "ISO 8601 timestamp (UTC)"
+    - updated: "ISO 8601 timestamp of last change"
+    - status: "8-state lifecycle (see below)"
+
+object_lifecycle_states:
+  documented: "Concept defined in documentation, not implemented"
+  registered: "Registered in system with unique ID"
+  configured: "Set up and tested, not yet production"
+  available: "Ready for deployment"
+  connected: "Deployed and receiving traffic/in use"
+  tested: "Stable for 2+ weeks with good data"
+  active: "SLA/SLO published and monitored"
+  trusted: "Met SLA for 90+ consecutive days"
+
+object_type_groupings:
+  by_fabric:
+    reality_fabric:
+      - "ORG, VEN, OPC, PER, TEA, ROL"
+      - "CST, PDT, OFR"
+    information_fabric:
+      - "DST, DAS, RPT, QRY, DOC, GDE, ART"
+    knowledge_fabric:
+      - "INS, POL, STD, PRC, PAT"
+    cognition_fabric:
+      - "THT, IDE, HYP, RES, ANL"
+    discovery_fabric:
+      - "EXP, TST, RES, INS, IDEA"
+    decision_fabric:
+      - "DEC, APR, INT, COM"
+    agent_fabric:
+      - "AGT, MOD, TOL, MCP, SKL, CAP, WFL"
+    execution_fabric:
+      - "JOB, TSK, LOP, EXC, LES, OUT, ERR"
+    learning_fabric:
+      - "LES, OUT, MTR, KPI, INFORMS_NEXT_CYCLE"
+
+key_properties_by_type:
+  organizational:
+    - [ORG, "name, structure, mission, governance"]
+    - [VEN, "sector, revenue, stage, status"]
+    - [TEA, "members, lead, charter, okcr"]
+  work_execution:
+    - [CAP, "implementations, agents, status, sla"]
+    - [AGT, "autonomy_level, skills, tools, status"]
+  cognitive_realization:
+    - [THT, "confidence, reasoning_chain, timestamp"]
+    - [IDE, "novelty_score, feasibility, priority"]
+    - [VIS, "success_criteria, timeline, owner"]
+    - [INT, "commitment_level, deadline, responsible"]
+    - [MNF, "actual_outcome, variance_from_plan"]
+
+# Discovery Order for New System
+discovery_sequence:
+  phase_1: "Identify all organizational entities (ORG, VEN, OPC, DIV, TEA, PER)"
+  phase_2: "Map all capabilities and work units (CAP, SKL, AGT, MOD, TOL, WFL, LOP)"
+  phase_3: "Catalog all data and intelligence (DST, ANL, INS, RPT, RES)"
+  phase_4: "Record all decisions and outcomes (DEC, OUT, LES, MTR)"
+  phase_5: "Document governance and control (AUT, PRM, RIK, CTL, CBP)"
+  phase_6: "Trace cognitive realization (THT, IDE, VIS, INT, MNF)"
+
+# Status
+status: "COMPLETE"
+locked: true
+next_review: "2026-10-01"
