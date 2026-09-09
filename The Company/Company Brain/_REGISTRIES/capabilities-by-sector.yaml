@@ -1,73 +1,76 @@
----
-# Capabilities by Sector
-# Maps all ~300 capabilities to sectors that use them
-# Generated: 2026-09-02
-
 metadata:
-  version: "1.0"
-  created_at: "2026-09-02"
+  version: '1.0'
+  created_at: '2026-09-02'
   total_capabilities: 300
   mapped_capabilities: 50
-  note: "Full mapping requires venture linkage data"
-
+  note: Full mapping requires venture linkage data
+  neo4j_node: true
+  neo4j_synced: '2026-09-09'
+  neo4j_relationships:
+  - type: USED_BY
+    target: Venture
+  - type: PROVIDED_BY
+    target: ExternalRepository
 capabilities:
-
   SEC-002:
     capability_count: 1
     capabilities:
-      - id: "CAP-012"
-        name: "Database"
-
+    - id: CAP-012
+      name: Database
   SEC-008:
     capability_count: 1
     capabilities:
-      - id: "CAP-020"
-        name: "Cloud Infrastructure"
-
+    - id: CAP-020
+      name: Cloud Infrastructure
   SEC-017:
     capability_count: 1
     capabilities:
-      - id: "CAP-017"
-        name: "Natural Language Processing"
-
+    - id: CAP-017
+      name: Natural Language Processing
   SEC-024:
     capability_count: 8
     capabilities:
-      - id: "CAP-001"
-        name: "API Design"
-      - id: "CAP-002"
-        name: "Authentication"
-      - id: "CAP-003"
-        name: "Authorization"
-      - id: "CAP-004"
-        name: "Data Modeling"
-      - id: "CAP-005"
-        name: "Caching"
-      - id: "CAP-006"
-        name: "Search"
-      - id: "CAP-007"
-        name: "Message Queues"
-      - id: "CAP-008"
-        name: "CI/CD"
-
+    - id: CAP-001
+      name: API Design
+    - id: CAP-002
+      name: Authentication
+    - id: CAP-003
+      name: Authorization
+    - id: CAP-004
+      name: Data Modeling
+    - id: CAP-005
+      name: Caching
+    - id: CAP-006
+      name: Search
+    - id: CAP-007
+      name: Message Queues
+    - id: CAP-008
+      name: CI/CD
   UNMAPPED:
     capability_count: 9
     capabilities:
-      - id: "CAP-009"
-        name: "Container Orchestration"
-      - id: "CAP-010"
-        name: "Microservices"
-      - id: "CAP-011"
-        name: "Observability"
-      - id: "CAP-013"
-        name: "Performance Tuning"
-      - id: "CAP-014"
-        name: "Security Audit"
-      - id: "CAP-015"
-        name: "Compliance"
-      - id: "CAP-016"
-        name: "Machine Learning"
-      - id: "CAP-018"
-        name: "Computer Vision"
-      - id: "CAP-019"
-        name: "Blockchain"
+    - id: CAP-009
+      name: Container Orchestration
+    - id: CAP-010
+      name: Microservices
+    - id: CAP-011
+      name: Observability
+    - id: CAP-013
+      name: Performance Tuning
+    - id: CAP-014
+      name: Security Audit
+    - id: CAP-015
+      name: Compliance
+    - id: CAP-016
+      name: Machine Learning
+    - id: CAP-018
+      name: Computer Vision
+    - id: CAP-019
+      name: Blockchain
+  neo4j_node: true
+  neo4j_synced: '2026-09-09'
+  neo4j_relationships:
+  - type: USED_BY
+    target: Venture
+  - type: PROVIDED_BY
+    target: ExternalRepository
