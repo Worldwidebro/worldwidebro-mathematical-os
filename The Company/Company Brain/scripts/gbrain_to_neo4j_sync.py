@@ -402,12 +402,13 @@ class GbrainNeo4jSync:
 
 def main():
     """Run full sync"""
+    import asyncio
 
     sync = GbrainNeo4jSync()
 
     try:
         print("Starting gbrain → Neo4j sync...")
-        stats = sync.sync_all_ventures()
+        stats = asyncio.run(sync.sync_all_ventures())
 
         print("\n=== Sync Results ===")
         print(f"Ventures synced: {stats['ventures_synced']}")

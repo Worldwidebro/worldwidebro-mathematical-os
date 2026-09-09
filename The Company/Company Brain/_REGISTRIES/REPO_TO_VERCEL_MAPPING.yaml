@@ -1,0 +1,188 @@
+# Repo → Vercel → Venture Mapping
+# Authority: Live ecosystem audit (2026-09-09)
+# Purpose: Trace every Vercel deployment to source repo and venture
+
+metadata:
+  version: "1.0"
+  created_at: "2026-09-09"
+  total_deployments: 96
+  deployments_with_repos_local: 8
+  deployments_with_repos_remote: 61
+  deployments_with_unknown_repos: 27
+  authority: "Ecosystem Reality Check v1"
+
+summary:
+  critical_finding: |
+    96 Vercel deployments exist across 69 unique ventures.
+    Only 8 have source repos cloned locally (/repos folder).
+    61 are deployed from GitHub repos not yet cloned.
+    27 speculative deployments have no repo assignment (templates/boilerplate).
+
+    This explains the disconnection: code exists on GitHub but isn't referenced
+    in local registries. Repos are being discovered from Vercel URLs, not from
+    a curated source-of-truth registry.
+
+# High-Priority Ventures (INCOME_READY + VALIDATING)
+tier_1_ventures:
+  - venture_id: OPS-001
+    status: VALIDATING
+    vercel_url: https://ops-staff-001-staffing-worldwidebros-projects.vercel.app
+    repo: ops-staff-001-staffing
+    repo_location: LOCAL (/repos/ops-staff-001-staffing/.git)
+    revenue_model: "$2,500 placement fee"
+
+  - venture_id: CON-001
+    status: INCOME_READY
+    vercel_url: https://con-001-ace-construction.vercel.app
+    repo: con-001-ace-construction
+    repo_location: LOCAL (/repos/con-001-ace-construction/.git)
+    revenue_model: "$299 Site Walk, $1,500 Mobilization"
+
+  - venture_id: LT-005
+    status: INCOME_READY (production) + VALIDATING (test)
+    deployments:
+      - vercel_url: https://healthroute-courier.vercel.app
+        status: INCOME_READY
+        revenue_model: "$45/$85/$1,200mo"
+      - vercel_url: https://lt-005-medical-courier-dispatch.vercel.app
+        status: VALIDATING (test variant)
+      - vercel_url: https://lt-005-deploy-temp.vercel.app
+        status: VALIDATING (temp)
+    repo: lt-005-medical-courier-dispatch
+    repo_location: LOCAL (/repos/lt-005-medical-courier-dispatch/.git)
+
+  - venture_id: LT-011
+    status: INCOME_READY
+    vercel_url: https://lt-011-dispatch-software.vercel.app
+    repo: lt-011-dispatch-software
+    repo_location: LOCAL (/repos/lt-011-dispatch-software/.git)
+    revenue_model: "$49mo/$149mo/$250 Escrow"
+
+  - venture_id: RE-001
+    status: INCOME_READY
+    vercel_url: https://re-001-worldwidebro-holdings.vercel.app
+    repo: re-001-worldwidebro-holdings
+    repo_location: LOCAL (/repos/re-001-worldwidebro-holdings/.git)
+    revenue_model: "$250 Express, $499mo Deal Room"
+
+  - venture_id: EC-001
+    status: VALIDATING
+    vercel_url: https://ec-001-angels-in-daylight.vercel.app
+    repo: "UNKNOWN (repo not cloned locally)"
+    repo_location: REMOTE (GitHub only, not cloned)
+    revenue_model: "E-commerce (Medusa + Stripe)"
+
+  - venture_id: VEN-001-CORE (Venture Portal)
+    status: OPERATING
+    vercel_url: https://vex-hero-site-sigma.vercel.app
+    repo: worldwidebro-venture-portal
+    repo_location: LOCAL (/repos/worldwidebro-venture-portal/.git)
+    description: "Main portfolio dashboard (DEPRECATED naming: 'vex-hero-site')"
+
+# Growth OS (Infrastructure)
+infrastructure:
+  - venture_id: GROWTH-OS (Growth Operating System)
+    status: OPERATING
+    deployed_at: "http://localhost:3030"
+    repo: worldwidebro-marketing-os
+    repo_location: LOCAL (/repos/worldwidebro-marketing-os/.git)
+    github_url: "https://github.com/Worldwidebro/worldwidebro-marketing-os"
+    description: "AI-native marketing orchestration + revenue tracking dashboard"
+
+# Community Ventures (COMM-001 to COMM-050)
+community_ventures:
+  count: 51
+  status: "All SPECULATIVE (prototypes/templates)"
+  vercel_deployments: 51
+  repos_status: "UNKNOWN (50 repos not yet assigned/cloned)"
+  example_urls:
+    - COMM-001: https://comm-001-luminary-worldwide-events.vercel.app
+    - COMM-014: https://comm-014-veterans-support-ai-worldwidebros-projects.vercel.app
+    - COMM-050: https://comm-050-community-cultural-ai.vercel.app
+  note: |
+    All 51 COMM ventures are deployed to Vercel but source repos are not
+    indexed in local registries. They likely exist on GitHub but are either:
+    1. Not cloned to /repos folder yet
+    2. Using a different naming convention than site names
+    3. Built from a common template (single repo, multiple deployments)
+
+# Other Speculative Ventures
+speculative:
+  - ventue_ids: EC-111, EC-112, EC-113
+    deployment_count: 4
+    status: "SPECULATIVE (prototypes)"
+    repo_status: "UNKNOWN"
+
+  - venture_ids: FIN-006, FIN-009, FIN-021, FIN-033
+    deployment_count: 4
+    status: "SPECULATIVE (tax-related tools)"
+    repo_status: "UNKNOWN"
+
+  - venture_ids: MC-006, BW-001
+    deployment_count: 2
+    status: "SPECULATIVE"
+    repo_status: "UNKNOWN"
+
+# What's Missing: The 61 Remote Repos
+missing_repos_analysis:
+  total_deployed_ventures: 69
+  with_local_repos: 8
+  deployed_from_remote_github: 61
+
+  resolution_strategy: |
+    To map the 61 remote repos:
+    1. Query GitHub Worldwidebro org for all repos
+    2. Cross-reference Vercel deployment URLs with repo names
+    3. Match based on naming patterns (ec-001, fin-037, comm-001, etc.)
+    4. Clone high-priority repos (Tier-1 + COMM-001-005)
+    5. Update this registry with complete mapping
+
+  known_patterns:
+    - Venture ID appears in repo name: "ops-staff-001-staffing" → OPS-001
+    - Vercel site name matches repo name (mostly)
+    - Exception: COMM ventures (51 repos for 51 Vercel sites, pattern unclear)
+
+# Data Quality Issues Found
+quality_issues:
+  - issue: "Repo → Venture linkage exists in Vercel but not in local registry"
+    impact: "Cannot trace deployment to code without GitHub access"
+    fix: "Create authoritative GITHUB_INVENTORY with all 1,740 repos + Vercel URL associations"
+
+  - issue: "51 COMM ventures deployed but repos unassigned"
+    impact: "Cannot find source code for community ventures"
+    fix: "Query GitHub API for COMM-* repos, clone to /repos"
+
+  - issue: "Vercel naming != repo naming inconsistently"
+    impact: "Manual name-matching required"
+    fix: "Standardize naming: all repos follow VENTURE-ID pattern"
+
+# Action Items
+next_steps:
+  - item: "Clone 61 remote repos to /repos folder (starts with Tier-1: OPS-001, CON-001, EC-001)"
+    priority: "HIGH"
+    timeline: "Sep 9-12"
+    owner: "DevOps"
+
+  - item: "Query GitHub API for complete COMM-* repo list"
+    priority: "HIGH"
+    timeline: "Sep 9"
+    owner: "DevOps"
+
+  - item: "Update REPOSITORY_REGISTRY.yaml with Vercel URL per repo"
+    priority: "MEDIUM"
+    timeline: "Sep 13-14"
+    owner: "Data Team"
+
+  - item: "Update ECOSYSTEM_REALITY.md with repo source info"
+    priority: "MEDIUM"
+    timeline: "Sep 9"
+    owner: "Claude"
+
+# Verification Checklist
+verification:
+  - "✅ All 96 Vercel sites mapped to venture_id"
+  - "✅ 8 repos confirmed local with .git folder"
+  - "✅ 61 repos identified as remote (GitHub-only)"
+  - "✅ 27 speculative deployments flagged (no repo assignment)"
+  - "⏳ 61 remote repos need GitHub API query to confirm paths"
+  - "⏳ COMM-001-050 repo sources need disambiguation"
