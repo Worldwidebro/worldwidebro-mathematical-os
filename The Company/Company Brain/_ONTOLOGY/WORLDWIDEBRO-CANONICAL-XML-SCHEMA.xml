@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+WORLDWIDEBRO HOLDINGS — CANONICAL XML KNOWLEDGE MODEL
+======================================================
+
+Purpose: Machine-readable schema defining all concepts, registries, relationships, and reasoning
+Authority: Master ontology for Company Brain
+Version: 1.0
+Status: Active
+
+This XML schema defines:
+- KNOWLEDGE MODEL: Domains, ontology, vocabulary, thinking levels
+- REGISTRIES: Authoritative records for every entity type
+- INDEXES: Find mechanisms for key asset types
+- WIKI: Human-readable page structure
+- RELATIONSHIPS: How entities connect (15+ relationship types)
+- ENTERPRISE MODEL: 16-layer architecture
+- COMPANY BRAIN: Capabilities and outputs
+
+The 789 ventures are ONE population in this larger graph.
+-->
+
+<!DOCTYPE WORLDWIDEBRO_HOLDINGS [
+  <!ELEMENT WORLDWIDEBRO_HOLDINGS (KNOWLEDGE_MODEL, REGISTRIES, INDEXES, WIKI, RELATIONSHIPS, ENTERPRISE_MODEL, COMPANY_BRAIN)>
+  <!ELEMENT KNOWLEDGE_MODEL (ONTOLOGY, VOCABULARY, THINKING_MODEL)>
+  <!ELEMENT ONTOLOGY (DOMAIN*)>
+  <!ELEMENT DOMAIN EMPTY>
+  <!ELEMENT VOCABULARY (TERM*)>
+  <!ELEMENT TERM EMPTY>
+  <!ELEMENT THINKING_MODEL (LEVEL*)>
+  <!ELEMENT LEVEL EMPTY>
+  <!ELEMENT REGISTRIES (REGISTRY*)>
+  <!ELEMENT REGISTRY EMPTY>
+  <!ELEMENT INDEXES (INDEX*)>
+  <!ELEMENT INDEX EMPTY>
+  <!ELEMENT WIKI (SECTION*)>
+  <!ELEMENT SECTION EMPTY>
+  <!ELEMENT RELATIONSHIPS (RELATION*)>
+  <!ELEMENT RELATION EMPTY>
+  <!ELEMENT ENTERPRISE_MODEL (LAYER*)>
+  <!ELEMENT LAYER EMPTY>
+  <!ELEMENT COMPANY_BRAIN (INPUTS, REASONING, OUTPUTS)>
+  <!ELEMENT INPUTS (INPUT*)>
+  <!ELEMENT INPUT EMPTY>
+  <!ELEMENT REASONING (CAPABILITY*)>
+  <!ELEMENT CAPABILITY EMPTY>
+  <!ELEMENT OUTPUTS (OUTPUT*)>
+  <!ELEMENT OUTPUT EMPTY>
+]>
+
+<WORLDWIDEBRO_HOLDINGS
+    id="WBH-001"
+    name="Worldwidebro Holdings"
+    description="Private family enterprise operating system"
+    version="1.0"
+    status="active">
+
+    <!-- ========================================================= -->
+    <!-- 01. KNOWLEDGE MODEL                                      -->
+    <!-- ========================================================= -->
+
+    <KNOWLEDGE_MODEL id="KM-001" wiki="[[Knowledge Model]]">
+
+        <ONTOLOGY id="ONT-001" wiki="[[Ontology]]">
+
+            <DOMAIN id="DOM-001" name="Ownership & Family"
+                    wiki="[[Ontology/Ownership]]"/>
+
+            <DOMAIN id="DOM-002" name="Governance & Control"
+                    wiki="[[Ontology/Governance]]"/>
+
+            <DOMAIN id="DOM-003" name="Enterprise Structure"
+                    wiki="[[Ontology/Enterprise]]"/>
+
+            <DOMAIN id="DOM-004" name="Capital & Treasury"
+                    wiki="[[Ontology/Capital]]"/>
+
+            <DOMAIN id="DOM-005" name="Investment & Allocation"
+                    wiki="[[Ontology/Investment]]"/>
+
+            <DOMAIN id="DOM-006" name="Transactions & Deals"
+                    wiki="[[Ontology/Deals]]"/>
+
+            <DOMAIN id="DOM-007" name="Markets & Sectors"
+                    wiki="[[Ontology/Markets]]"/>
+
+            <DOMAIN id="DOM-008" name="Assets & Holdings"
+                    wiki="[[Ontology/Assets]]"/>
+
+            <DOMAIN id="DOM-009" name="Operations & Ventures"
+                    wiki="[[Ontology/Operations]]"/>
+
+            <DOMAIN id="DOM-010" name="Customers & Revenue"
+                    wiki="[[Ontology/Revenue]]"/>
+
+            <DOMAIN id="DOM-011" name="Risk & Compliance"
+                    wiki="[[Ontology/Risk]]"/>
+
+            <DOMAIN id="DOM-012" name="Strategy & Competition"
+                    wiki="[[Ontology/Strategy]]"/>
+
+            <DOMAIN id="DOM-013" name="Decision Science"
+                    wiki="[[Ontology/Decisions]]"/>
+
+            <DOMAIN id="DOM-014" name="Causality & Systems"
+                    wiki="[[Ontology/Causality]]"/>
+
+            <DOMAIN id="DOM-015" name="Compounding & Growth"
+                    wiki="[[Ontology/Compounding]]"/>
+
+        </ONTOLOGY>
+
+        <VOCABULARY id="VOC-001" wiki="[[Vocabulary]]">
+
+            <TERM id="T-001" name="Family"
+                  definition="Principal owner and decision maker"
+                  wiki="[[Vocabulary/Family]]"/>
+
+            <TERM id="T-002" name="Principal"
+                  definition="Individual or group with ultimate authority"
+                  wiki="[[Vocabulary/Principal]]"/>
+
+            <TERM id="T-003" name="Family Office"
+                  definition="Governance and control layer managing wealth"
+                  wiki="[[Vocabulary/Family Office]]"/>
+
+            <TERM id="T-004" name="Trust"
+                  definition="Legal structure holding assets for beneficiary"
+                  wiki="[[Vocabulary/Trust]]"/>
+
+            <TERM id="T-005" name="HoldCo"
+                  definition="Holding company owning operating companies and assets"
+                  wiki="[[Vocabulary/HoldCo]]"/>
+
+            <TERM id="T-006" name="OpCo"
+                  definition="Operating company running a business line"
+                  wiki="[[Vocabulary/OpCo]]"/>
+
+            <TERM id="T-007" name="Venture"
+                  definition="Specific business, product, or investment position"
+                  wiki="[[Vocabulary/Venture]]"/>
+
+            <TERM id="T-008" name="Asset"
+                  definition="Economic resource owned and generating income"
+                  wiki="[[Vocabulary/Asset]]"/>
+
+            <TERM id="T-009" name="Capital"
+                  definition="Financial resources for deployment"
+                  wiki="[[Vocabulary/Capital]]"/>
+
+            <TERM id="T-010" name="Treasury"
+                  definition="Central cash management and allocation function"
+                  wiki="[[Vocabulary/Treasury]]"/>
+
+            <TERM id="T-011" name="Investment"
+                  definition="Capital deployed expecting economic return"
+                  wiki="[[Vocabulary/Investment]]"/>
+
+            <TERM id="T-012" name="Deal"
+                  definition="Transaction: acquisition, sale, financing, partnership"
+                  wiki="[[Vocabulary/Deal]]"/>
+
+            <TERM id="T-013" name="Portfolio"
+                  definition="Collection of investments and operating positions"
+                  wiki="[[Vocabulary/Portfolio]]"/>
+
+            <TERM id="T-014" name="Sector"
+                  definition="Industry/market category"
+                  wiki="[[Vocabulary/Sector]]"/>
+
+            <TERM id="T-015" name="Market"
+                  definition="Economic environment with customers and competitors"
+                  wiki="[[Vocabulary/Market]]"/>
+
+            <TERM id="T-016" name="Revenue"
+                  definition="Income from operations"
+                  wiki="[[Vocabulary/Revenue]]"/>
+
+            <TERM id="T-017" name="Cash Flow"
+                  definition="Actual cash in and out of enterprise"
+                  wiki="[[Vocabulary/Cash Flow]]"/>
+
+            <TERM id="T-018" name="Strategy"
+                  definition="Chosen approach for competitive advantage"
+                  wiki="[[Vocabulary/Strategy]]"/>
+
+            <TERM id="T-019" name="Decision"
+                  definition="Authorized choice among alternatives"
+                  wiki="[[Vocabulary/Decision]]"/>
+
+            <TERM id="T-020" name="Risk"
+                  definition="Potential adverse deviation from expected outcome"
+                  wiki="[[Vocabulary/Risk]]"/>
+
+            <TERM id="T-021" name="Moat"
+                  definition="Structural advantage resisting competition"
+                  wiki="[[Vocabulary/Moat]]"/>
+
+            <TERM id="T-022" name="Optionality"
+                  definition="Ability to create future choices without committing capital today"
+                  wiki="[[Vocabulary/Optionality]]"/>
+
+            <TERM id="T-023" name="Compounding"
+                  definition="Growth where accumulated gains increase future capacity"
+                  wiki="[[Vocabulary/Compounding]]"/>
+
+            <TERM id="T-024" name="ROIC"
+                  definition="Return on Invested Capital"
+                  wiki="[[Vocabulary/ROIC]]"/>
+
+            <TERM id="T-025" name="Margin"
+                  definition="Profit as percentage of revenue"
+                  wiki="[[Vocabulary/Margin]]"/>
+
+        </VOCABULARY>
+
+        <THINKING_MODEL id="TM-001" wiki="[[Thinking Model]]">
+
+            <LEVEL id="THINK-01" name="Words"
+                   question="What does this mean?"
+                   wiki="[[Thinking/01 Words]]"/>
+
+            <LEVEL id="THINK-02" name="Concepts"
+                   question="What underlying idea?"
+                   wiki="[[Thinking/02 Concepts]]"/>
+
+            <LEVEL id="THINK-03" name="Categories"
+                   question="What type is this?"
+                   wiki="[[Thinking/03 Categories]]"/>
+
+            <LEVEL id="THINK-04" name="Entities"
+                   question="What specifically exists?"
+                   wiki="[[Thinking/04 Entities]]"/>
+
+            <LEVEL id="THINK-05" name="Relationships"
+                   question="How are things connected?"
+                   wiki="[[Thinking/05 Relationships]]"/>
+
+            <LEVEL id="THINK-06" name="Systems"
+                   question="How do components interact?"
+                   wiki="[[Thinking/06 Systems]]"/>
+
+            <LEVEL id="THINK-07" name="Economics"
+                   question="How is value created and cash flows?"
+                   wiki="[[Thinking/07 Economics]]"/>
+
+            <LEVEL id="THINK-08" name="Strategy"
+                   question="How do we win?"
+                   wiki="[[Thinking/08 Strategy]]"/>
+
+            <LEVEL id="THINK-09" name="Decisions"
+                   question="What should we do?"
+                   wiki="[[Thinking/09 Decisions]]"/>
+
+            <LEVEL id="THINK-10" name="Capital Allocation"
+                   question="Where should the next dollar go?"
+                   wiki="[[Thinking/10 Capital Allocation]]"/>
+
+            <LEVEL id="THINK-11" name="Second Order"
+                   question="What happens because this happened?"
+                   wiki="[[Thinking/11 Second Order]]"/>
+
+            <LEVEL id="THINK-12" name="Compounding"
+                   question="What becomes stronger because we own/built this?"
+                   wiki="[[Thinking/12 Compounding]]"/>
+
+        </THINKING_MODEL>
+
+    </KNOWLEDGE_MODEL>
+
+
+    <!-- ========================================================= -->
+    <!-- 02. REGISTRIES — Authoritative records                   -->
+    <!-- ========================================================= -->
+
+    <REGISTRIES id="REG-ROOT" wiki="[[Registries]]">
+
+        <!-- Governance Registry -->
+        <REGISTRY id="REG-001" type="Family"
+                  wiki="[[Registry/Family]]"
+                  description="Principal, family members, decision makers"/>
+
+        <REGISTRY id="REG-002" type="Trust"
+                  wiki="[[Registry/Trusts]]"
+                  description="Legal trust structures holding assets"/>
+
+        <REGISTRY id="REG-003" type="Estate"
+                  wiki="[[Registry/Estate]]"
+                  description="Estate planning, succession, generational wealth"/>
+
+        <REGISTRY id="REG-004" type="LegalEntity"
+                  wiki="[[Registry/Entities]]"
+                  description="LLCs, C-Corps, partnerships, structures"/>
+
+        <!-- Enterprise Registry -->
+        <REGISTRY id="REG-005" type="HoldCo"
+                  wiki="[[Registry/HoldCos]]"
+                  description="Master and subsidiary holding companies"/>
+
+        <REGISTRY id="REG-006" type="OpCo"
+                  wiki="[[Registry/OpCos]]"
+                  description="Operating companies (7 active + growth)"/>
+
+        <REGISTRY id="REG-007" type="AssetHoldCo"
+                  wiki="[[Registry/AssetHoldCos]]"
+                  description="Real estate, IP, equipment, securities holdcos"/>
+
+        <!-- Venture Registry -->
+        <REGISTRY id="REG-008" type="Venture"
+                  wiki="[[Registry/Ventures]]"
+                  description="789 ventures across all OpCos"/>
+
+        <REGISTRY id="REG-009" type="Asset"
+                  wiki="[[Registry/Assets]]"
+                  description="Property, equipment, IP, inventory held by asset holdcos"/>
+
+        <!-- Capital Registry -->
+        <REGISTRY id="REG-010" type="Capital"
+                  wiki="[[Registry/Capital]]"
+                  description="Available capital, deployed, reserved, sources"/>
+
+        <REGISTRY id="REG-011" type="Fund"
+                  wiki="[[Registry/Funds]]"
+                  description="PE fund, VC fund, Credit fund, Asset management fund"/>
+
+        <REGISTRY id="REG-012" type="Investment"
+                  wiki="[[Registry/Investments]]"
+                  description="Individual capital deployments"/>
+
+        <!-- Deal Registry -->
+        <REGISTRY id="REG-013" type="Deal"
+                  wiki="[[Registry/Deals]]"
+                  description="M&A, financing, investments, partnerships"/>
+
+        <REGISTRY id="REG-014" type="Opportunity"
+                  wiki="[[Registry/Opportunities]]"
+                  description="Identified targets, pipeline, options"/>
+
+        <!-- Market Registry -->
+        <REGISTRY id="REG-015" type="Sector"
+                  wiki="[[Registry/Sectors]]"
+                  description="40 sector/market definitions (SEC-001 to SEC-040)"/>
+
+        <REGISTRY id="REG-016" type="Market"
+                  wiki="[[Registry/Markets]]"
+                  description="Specific markets within sectors"/>
+
+        <!-- Operational Registry -->
+        <REGISTRY id="REG-017" type="Product"
+                  wiki="[[Registry/Products]]"
+                  description="Products/services from ventures"/>
+
+        <REGISTRY id="REG-018" type="Customer"
+                  wiki="[[Registry/Customers]]"
+                  description="End customers, OpCo internal customers"/>
+
+        <REGISTRY id="REG-019" type="Partner"
+                  wiki="[[Registry/Partners]]"
+                  description="Business partners, suppliers, collaborators"/>
+
+        <!-- Financial Registry -->
+        <REGISTRY id="REG-020" type="Revenue"
+                  wiki="[[Registry/Revenue]]"
+                  description="Revenue streams by venture/OpCo"/>
+
+        <REGISTRY id="REG-021" type="Margin"
+                  wiki="[[Registry/Margins]]"
+                  description="Profitability metrics"/>
+
+        <REGISTRY id="REG-022" type="CashFlow"
+                  wiki="[[Registry/CashFlow]]"
+                  description="Cash in/out by venture/OpCo"/>
+
+        <!-- Support Registry -->
+        <REGISTRY id="REG-023" type="Person"
+                  wiki="[[Registry/People]]"
+                  description="Employees, executives, advisors, board members"/>
+
+        <REGISTRY id="REG-024" type="Contract"
+                  wiki="[[Registry/Contracts]]"
+                  description="Agreements, SLAs, terms, conditions"/>
+
+        <REGISTRY id="REG-025" type="Repository"
+                  wiki="[[Registry/Repositories]]"
+                  description="Code repos, knowledge bases, documentation"/>
+
+        <REGISTRY id="REG-026" type="Decision"
+                  wiki="[[Registry/Decisions]]"
+                  description="Capital allocation, strategic decisions, approvals"/>
+
+        <REGISTRY id="REG-027" type="Metric"
+                  wiki="[[Registry/Metrics]]"
+                  description="KPIs, performance measures, targets"/>
+
+    </REGISTRIES>
+
+
+    <!-- ========================================================= -->
+    <!-- 03. INDEXES — Find mechanisms                            -->
+    <!-- ========================================================= -->
+
+    <INDEXES id="IDX-ROOT" wiki="[[Indexes]]">
+
+        <INDEX id="IDX-001" name="Master Entity Index"
+               wiki="[[Index/Master]]"
+               source="REG-004"/>
+
+        <INDEX id="IDX-002" name="HoldCo Index"
+               wiki="[[Index/HoldCos]]"
+               source="REG-005"/>
+
+        <INDEX id="IDX-003" name="OpCo Index"
+               wiki="[[Index/OpCos]]"
+               source="REG-006"/>
+
+        <INDEX id="IDX-004" name="Venture Index"
+               wiki="[[Index/Ventures]]"
+               source="REG-008"/>
+
+        <INDEX id="IDX-005" name="Asset Index"
+               wiki="[[Index/Assets]]"
+               source="REG-009"/>
+
+        <INDEX id="IDX-006" name="Sector Index"
+               wiki="[[Index/Sectors]]"
+               source="REG-015"/>
+
+        <INDEX id="IDX-007" name="Market Index"
+               wiki="[[Index/Markets]]"
+               source="REG-016"/>
+
+        <INDEX id="IDX-008" name="Capital Index"
+               wiki="[[Index/Capital]]"
+               source="REG-010"/>
+
+        <INDEX id="IDX-009" name="Deal Index"
+               wiki="[[Index/Deals]]"
+               source="REG-013"/>
+
+        <INDEX id="IDX-010" name="Fund Index"
+               wiki="[[Index/Funds]]"
+               source="REG-011"/>
+
+        <INDEX id="IDX-011" name="Revenue Index"
+               wiki="[[Index/Revenue]]"
+               source="REG-020"/>
+
+        <INDEX id="IDX-012" name="Portfolio Index"
+               wiki="[[Index/Portfolio]]"
+               description="Complete portfolio view across all OpCos, ventures, assets"/>
+
+        <INDEX id="IDX-013" name="Relationship Index"
+               wiki="[[Index/Relationships]]"
+               description="Who invests in whom, who services whom, dependencies"/>
+
+        <INDEX id="IDX-014" name="Decision Index"
+               wiki="[[Index/Decisions]]"
+               source="REG-026"
+               description="Capital allocation history and pending decisions"/>
+
+    </INDEXES>
+
+
+    <!-- ========================================================= -->
+    <!-- 04. RELATIONSHIP ONTOLOGY — 20+ relationship types       -->
+    <!-- ========================================================= -->
+
+    <RELATIONSHIPS id="REL-ROOT" wiki="[[Relationships]]">
+
+        <RELATION id="REL-001" type="OWNS"
+                  inverse="OWNED_BY"
+                  wiki="[[Relationships/Owns]]"
+                  example="Family OWNS [[HoldCo]]"/>
+
+        <RELATION id="REL-002" type="CONTROLS"
+                  inverse="CONTROLLED_BY"
+                  wiki="[[Relationships/Controls]]"
+                  example="[[HoldCo]] CONTROLS [[OpCo-002]]"/>
+
+        <RELATION id="REL-003" type="GOVERNS"
+                  inverse="GOVERNED_BY"
+                  wiki="[[Relationships/Governs]]"
+                  example="[[Board]] GOVERNS [[HoldCo]]"/>
+
+        <RELATION id="REL-004" type="OPERATES"
+                  inverse="OPERATED_BY"
+                  wiki="[[Relationships/Operates]]"
+                  example="[[OpCo-002]] OPERATES [[CON-001]]"/>
+
+        <RELATION id="REL-005" type="INVESTS_IN"
+                  inverse="INVESTED_IN_BY"
+                  wiki="[[Relationships/Invests In]]"
+                  example="[[Treasury]] INVESTS_IN [[LT-005]]"/>
+
+        <RELATION id="REL-006" type="LENDS_TO"
+                  inverse="BORROWED_FROM"
+                  wiki="[[Relationships/Lends To]]"
+                  example="[[Credit Co]] LENDS_TO [[OpCo-002]]"/>
+
+        <RELATION id="REL-007" type="ALLOCATES_TO"
+                  inverse="FUNDED_BY"
+                  wiki="[[Relationships/Allocates To]]"
+                  example="[[Treasury]] ALLOCATES_TO [[PE Fund]]"/>
+
+        <RELATION id="REL-008" type="EMPLOYS"
+                  inverse="EMPLOYED_BY"
+                  wiki="[[Relationships/Employs]]"
+                  example="[[OpCo-002]] EMPLOYS [[People]]"/>
+
+        <RELATION id="REL-009" type="SERVES"
+                  inverse="SERVICED_BY"
+                  wiki="[[Relationships/Serves]]"
+                  example="[[OpCo-SS]] SERVES [[OpCo-014]]"/>
+
+        <RELATION id="REL-010" type="PARTNERS_WITH"
+                  inverse="PARTNERS_WITH"
+                  wiki="[[Relationships/Partners With]]"
+                  example="[[CON-001]] PARTNERS_WITH [[LT-011]]"/>
+
+        <RELATION id="REL-011" type="SUPPLIES"
+                  inverse="SUPPLIED_BY"
+                  wiki="[[Relationships/Supplies]]"
+                  example="[[OPS-001]] SUPPLIES [[CON-001]]"/>
+
+        <RELATION id="REL-012" type="USES"
+                  inverse="USED_BY"
+                  wiki="[[Relationships/Uses]]"
+                  example="[[OpCo-017]] USES [[NexusDispatch]]"/>
+
+        <RELATION id="REL-013" type="POWERED_BY"
+                  inverse="POWERS"
+                  wiki="[[Relationships/Powered By]]"
+                  example="[[Ventures]] POWERED_BY [[Company Brain]]"/>
+
+        <RELATION id="REL-014" type="DEPENDS_ON"
+                  inverse="DEPENDENCY_OF"
+                  wiki="[[Relationships/Depends On]]"
+                  example="[[OpCo-002]] DEPENDS_ON [[OpCo-SS]]"/>
+
+        <RELATION id="REL-015" type="GENERATES"
+                  inverse="GENERATED_BY"
+                  wiki="[[Relationships/Generates]]"
+                  example="[[Ventures]] GENERATE [[Revenue]]"/>
+
+        <RELATION id="REL-016" type="REPORTS_TO"
+                  inverse="RECEIVES_REPORTS_FROM"
+                  wiki="[[Relationships/Reports To]]"
+                  example="[[OpCo CEO]] REPORTS_TO [[Board]]"/>
+
+        <RELATION id="REL-017" type="LEASES_TO"
+                  inverse="LEASED_FROM"
+                  wiki="[[Relationships/Leases To]]"
+                  example="[[Real Estate HoldCo]] LEASES_TO [[OpCos]]"/>
+
+        <RELATION id="REL-018" type="COMPETES_WITH"
+                  inverse="COMPETES_WITH"
+                  wiki="[[Relationships/Competes With]]"
+                  example="[[Venture]] COMPETES_WITH [[Market Competitors]]"/>
+
+        <RELATION id="REL-019" type="REINVESTS_IN"
+                  inverse="REINVESTED_BY"
+                  wiki="[[Relationships/Reinvests In]]"
+                  example="[[Treasury]] REINVESTS_IN [[OpCos]]"/>
+
+        <RELATION id="REL-020" type="ACQUIRES"
+                  inverse="ACQUIRED_BY"
+                  wiki="[[Relationships/Acquires]]"
+                  example="[[PE Fund]] ACQUIRES [[External Companies]]"/>
+
+    </RELATIONSHIPS>
+
+
+    <!-- ========================================================= -->
+    <!-- 05. 16-LAYER ENTERPRISE ARCHITECTURE                     -->
+    <!-- ========================================================= -->
+
+    <ENTERPRISE_MODEL id="ENT-001" wiki="[[Enterprise Model]]">
+
+        <LAYER id="LAYER-01" sequence="1" name="Family / Principal"
+               wiki="[[Layer/01 Family]]"
+               description="Owner, decision maker, wealth philosophy"/>
+
+        <LAYER id="LAYER-02" sequence="2" name="Trusts & Estate"
+               wiki="[[Layer/02 Trusts]]"
+               description="Legal structures for generational wealth"/>
+
+        <LAYER id="LAYER-03" sequence="3" name="Family Office"
+               wiki="[[Layer/03 Family Office]]"
+               description="Governance, control, investment management"/>
+
+        <LAYER id="LAYER-04" sequence="4" name="Treasury Function"
+               wiki="[[Layer/04 Treasury]]"
+               description="Central cash management and allocation"/>
+
+        <LAYER id="LAYER-05" sequence="5" name="Investment Office"
+               wiki="[[Layer/05 Investment Office]]"
+               description="PE fund, VC fund, credit fund, asset management"/>
+
+        <LAYER id="LAYER-06" sequence="6" name="Master HoldCo"
+               wiki="[[Layer/06 Master HoldCo]]"
+               description="Worldwidebro Holdings parent company"/>
+
+        <LAYER id="LAYER-07" sequence="7" name="Operating Companies"
+               wiki="[[Layer/07 OpCos]]"
+               description="7 active OpCos + shared services OpCo"/>
+
+        <LAYER id="LAYER-08" sequence="8" name="Asset HoldCos"
+               wiki="[[Layer/08 Asset HoldCos]]"
+               description="Real estate, IP, equipment, securities ownership"/>
+
+        <LAYER id="LAYER-09" sequence="9" name="Ventures"
+               wiki="[[Layer/09 Ventures]]"
+               description="789 operating businesses and platforms"/>
+
+        <LAYER id="LAYER-10" sequence="10" name="Products & Services"
+               wiki="[[Layer/10 Products]]"
+               description="What ventures sell to customers"/>
+
+        <LAYER id="LAYER-11" sequence="11" name="Customers & Markets"
+               wiki="[[Layer/11 Customers]]"
+               description="End customers and market served"/>
+
+        <LAYER id="LAYER-12" sequence="12" name="Revenue & Cash"
+               wiki="[[Layer/12 Revenue]]"
+               description="Income generation from operations"/>
+
+        <LAYER id="LAYER-13" sequence="13" name="OpCo P&Ls"
+               wiki="[[Layer/13 OpCo P&Ls]]"
+               description="Consolidated profit/loss by operating company"/>
+
+        <LAYER id="LAYER-14" sequence="14" name="Treasury Inflows"
+               wiki="[[Layer/14 Treasury Inflows]]"
+               description="Cash flowing back to treasury from OpCos"/>
+
+        <LAYER id="LAYER-15" sequence="15" name="Capital Allocation"
+               wiki="[[Layer/15 Capital Allocation]]"
+               description="Decisions on where treasury capital goes"/>
+
+        <LAYER id="LAYER-16" sequence="16" name="Reinvestment Loop"
+               wiki="[[Layer/16 Reinvestment]]"
+               description="Deployed capital comes back as Layer 1-15 repeat"/>
+
+    </ENTERPRISE_MODEL>
+
+
+    <!-- ========================================================= -->
+    <!-- 06. COMPANY BRAIN — Intelligence Layer                   -->
+    <!-- ========================================================= -->
+
+    <COMPANY_BRAIN id="CB-001" name="Company Brain"
+                   wiki="[[Company Brain]]">
+
+        <DESCRIPTION>
+            AI-native intelligence system that reasons about the enterprise,
+            discovers opportunities, analyzes risks, and suggests capital allocation.
+            Feeds on: registries, wiki, relationships, financial data.
+            Produces: insights, opportunities, decisions, recommendations.
+        </DESCRIPTION>
+
+        <INPUTS>
+
+            <INPUT type="Registries"
+                   source="[[Registries]]"
+                   data="Entity records across 27 types"/>
+
+            <INPUT type="Indexes"
+                   source="[[Indexes]]"
+                   data="Search and discovery mechanisms"/>
+
+            <INPUT type="Wiki"
+                   source="[[Worldwidebro Wiki]]"
+                   data="Human-readable documentation and knowledge"/>
+
+            <INPUT type="KnowledgeGraph"
+                   source="Neo4j"
+                   data="20,000+ relationships and causality"/>
+
+            <INPUT type="VectorEmbeddings"
+                   source="Qdrant"
+                   data="17,000+ concept embeddings"/>
+
+            <INPUT type="FinancialData"
+                   source="[[Registries/Revenue]] [[Registries/CashFlow]]"
+                   data="OpCo P&Ls, venture performance"/>
+
+            <INPUT type="OperationalData"
+                   source="[[Registries/Metrics]]"
+                   data="KPIs, performance indicators"/>
+
+            <INPUT type="MarketData"
+                   source="[[Registries/Markets]]"
+                   data="Market sizes, trends, competition"/>
+
+        </INPUTS>
+
+        <REASONING>
+
+            <CAPABILITY id="CAP-001" name="Entity Classification"
+                        wiki="[[AI/Classification]]"
+                        description="Classify ventures by sector, OpCo, market, revenue status"/>
+
+            <CAPABILITY id="CAP-002" name="Relationship Traversal"
+                        wiki="[[AI/Graph Reasoning]]"
+                        description="Navigate enterprise graph: who owns what, who serves whom"/>
+
+            <CAPABILITY id="CAP-003" name="Financial Analysis"
+                        wiki="[[AI/Financial Analysis]]"
+                        description="Analyze revenue, margins, cash flow, ROIC by OpCo/venture"/>
+
+            <CAPABILITY id="CAP-004" name="Opportunity Discovery"
+                        wiki="[[AI/Opportunity Discovery]]"
+                        description="Find gaps, white space, consolidation, acquisition targets"/>
+
+            <CAPABILITY id="CAP-005" name="Risk Analysis"
+                        wiki="[[AI/Risk Analysis]]"
+                        description="Identify concentration risk, competitive threats, dependencies"/>
+
+            <CAPABILITY id="CAP-006" name="Scenario Modeling"
+                        wiki="[[AI/Scenario Modeling]]"
+                        description="Model outcomes of capital allocation decisions"/>
+
+            <CAPABILITY id="CAP-007" name="Causal Analysis"
+                        wiki="[[AI/Causal Analysis]]"
+                        description="Understand second-order effects and compounding dynamics"/>
+
+            <CAPABILITY id="CAP-008" name="Valuation"
+                        wiki="[[AI/Valuation]]"
+                        description="Value ventures, OpCos, acquisition targets using multiple methods"/>
+
+            <CAPABILITY id="CAP-009" name="Capital Allocation"
+                        wiki="[[AI/Capital Allocation]]"
+                        description="Recommend optimal capital deployment across portfolio"/>
+
+            <CAPABILITY id="CAP-010" name="Deal Analysis"
+                        wiki="[[AI/Deal Analysis]]"
+                        description="Evaluate M&A targets, terms, synergies, integration risks"/>
+
+        </REASONING>
+
+        <OUTPUTS>
+
+            <OUTPUT type="Insight"
+                    wiki="[[Outputs/Insight]]"
+                    description="What we learned about the enterprise or market"/>
+
+            <OUTPUT type="Opportunity"
+                    wiki="[[Outputs/Opportunity]]"
+                    description="Identified opportunity for build, buy, or invest"/>
+
+            <OUTPUT type="Risk"
+                    wiki="[[Outputs/Risk]]"
+                    description="Identified risk requiring mitigation"/>
+
+            <OUTPUT type="Decision"
+                    wiki="[[Outputs/Decision]]"
+                    description="Recommendation on capital allocation or strategic choice"/>
+
+            <OUTPUT type="Forecast"
+                    wiki="[[Outputs/Forecast]]"
+                    description="Predicted OpCo/venture performance or portfolio outcome"/>
+
+            <OUTPUT type="Action"
+                    wiki="[[Outputs/Action]]"
+                    description="Specific action to take: acquisition, investment, pivot, etc."/>
+
+        </OUTPUTS>
+
+    </COMPANY_BRAIN>
+
+
+</WORLDWIDEBRO_HOLDINGS>
