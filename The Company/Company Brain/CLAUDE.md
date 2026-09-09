@@ -84,6 +84,119 @@
 
 ---
 
+## 🗂️ DIGITAL LIBRARIAN ARCHITECTURE (Sep 9, 2026)
+
+**Pattern:** SOURCE → CATALOG → KNOWLEDGE GRAPH → EVIDENCE → AGENT DECISION
+
+### Five-Layer Navigation & Research OS
+
+```
+LAYER 1: DISCOVERY         (Awesome Lists, GitHub Topics, Community)
+         ↓
+LAYER 2: CATALOGING        (VuFind pattern + your registries)
+         ↓
+LAYER 3: RESEARCH          (Funes: AI Librarian for cited synthesis)
+         ↓
+LAYER 4: KNOWLEDGE GRAPH   (Neo4j relationships + Qdrant embeddings)
+         ↓
+LAYER 5: AGENT EXECUTION   (Agents read graph → make decisions)
+```
+
+### Verified Navigation & Registries (Sep 9)
+
+**What exists NOW:**
+- ✅ **568 wiki links** (NAVIGATION_ALIASES.yaml)
+- ✅ **22 canonical registries** (CAPABILITY, REPOSITORY, SITES, EXTERNAL_CAPABILITY_UNIVERSE, etc.)
+- ✅ **61 domain READMEs** (00-CONSTITUTION to 50-MASTER-CONTROL)
+- ✅ **4 taxonomy files** (SECTOR-TAXONOMY-MASTER, CAMPAIGN-TAXONOMY, OPS-001/taxonomy)
+- ✅ **9 connected root documents** (STARTHERE, REALITY, EVIDENCE, ANTIGRAVITY, etc.)
+
+**Status:** Navigation layer is CONNECTED (not scattered). Registries form unified fabric.
+
+### OSS Librarian Projects → Company Brain Integration
+
+| OSS Project | Function | Company Brain Layer | Status |
+|---|---|---|---|
+| **Funes** | AI Librarian: ingest sources → build knowledge base → produce cited outputs | Layer 3 (Research) | 🔵 CANDIDATE |
+| **Librarian** | Catalog + hybrid retrieval + passage-level evidence/provenance | Layer 2 (Cataloging) | 🔵 CANDIDATE |
+| **Marginalia** | Local-first research agent, source-grounded answers, relation mining | Layer 3 (Research) | 🔵 CANDIDATE |
+| **JARVIS RD** | Research discovery, citations, papers, Zotero, knowledge graph | Layer 3 (Research) | 🔵 CANDIDATE |
+| **OPAL** | AI librarian: conversations/docs/links → interconnected knowledge | Layer 3 (Research) | 🔵 CANDIDATE |
+| **VuFind** | Library catalog/discovery/search infrastructure | Layer 2 (Cataloging) | 🔵 CANDIDATE |
+| **Your Neo4j** | Knowledge graph (relationships, capabilities, ventures) | Layer 4 (Graph) | ✅ LIVE |
+| **Your Qdrant** | Vector database (semantic retrieval) | Layer 4 (Graph) | ✅ LIVE |
+| **Your Registries** | Cataloging (REPOSITORY, CAPABILITY, SITES, VENTURES) | Layer 2 (Cataloging) | ✅ LIVE |
+| **Your Agents** | Autonomous decision-making from graph context | Layer 5 (Execution) | 🔴 NOT IMPLEMENTED |
+
+### Source-Grounded Research Protocol (Sep 9)
+
+**Critical Foundation:** [[SOURCE-GROUNDED-RESEARCH-PROTOCOL|_REGISTRIES/SOURCE-GROUNDED-RESEARCH-PROTOCOL.md]]
+
+Phase 3 research automation MUST operate under absolute zero-invention rule:
+- Never invent repos, companies, APIs, products, or capabilities
+- Every claim must trace to real, inspected source
+- Unverified claims must be gaps, not inferences
+- Four evidence states: DISCOVERED → VERIFIED → TESTED → PROVEN
+
+**Example protocol loop:**
+
+```
+Question: "Does n8n have Stripe integration?"
+   ↓
+Search: Official docs (https://n8n.io/docs)
+   ↓
+Fetch: https://n8n.io/integrations/stripe
+   ↓
+Evidence: "Integration documented with 6 configurable parameters"
+   ↓
+Verdict: VERIFIED (Tier 1 primary source)
+   ↓
+Store: Evidence object → Evidence Registry + Neo4j provenance
+```
+
+This replaces guess-based research with auditable discovery.
+
+### Recommended Integration Path
+
+**Don't build librarian from scratch.** Compose:
+
+```text
+DISCOVERY (Awesome Lists, GitHub Topics)
+   ↓
+LIBRARIAN (Funes or Marginalia for AI-driven synthesis)
+   ↓ [enforces SOURCE-GROUNDED-RESEARCH-PROTOCOL]
+CATALOG (Your registries + Librarian output)
+   ↓
+KNOWLEDGE GRAPH (Neo4j + Qdrant with provenance edges)
+   ↓
+RESEARCH WORKFLOW (JARVIS RD pattern)
+   ↓
+AGENT EXECUTION (AGT-013/14/15/17/18/19/20 query verified graph)
+```
+
+**First audits:** 
+- Funes (AI librarian, source synthesis)
+- Librarian (passage-level evidence, provenance)
+- Marginalia (local-first, source-grounded)
+- JARVIS RD (research workflow, citations)
+
+**Phase 3 Research Agents (Oct 1+):**
+- AGT-017 (Research Executor): Discovers candidates, applies protocol
+- AGT-018 (Evidence Scorer): Verifies sources per Tier 1-3 hierarchy
+- AGT-019 (Test Executor): Moves VERIFIED → TESTED
+- AGT-020 (Decision Engine): Decides only on evidenced claims
+
+All agents use [[SOURCE-GROUNDED-RESEARCH-PROTOCOL|protocol]] + populate [[Evidence Registry|_REGISTRIES/EVIDENCE_REGISTRY.yaml]] + update Neo4j provenance relationships.
+
+### What This Enables
+
+1. **Evidence-Grounded Decisions** (not hallucination): Agents cite source → Neo4j relationship → Qdrant evidence
+2. **Taxonomy Navigation** (not scattered docs): 568 wiki links + 22 registries + 61 READMEs form unified navigation
+3. **Research Automation** (not manual): Librarian agents ingest sources, catalog, extract relationships
+4. **Gap Detection** (not speculation): Missing evidence is flagged, not invented
+
+---
+
 ## VERIFIED STATE — 2026-09-05 (Technical Details)
 
 Live-audited via a new `macstudio` [[Docker Context|Docker context]] (this machine has no local daemon — no colima, no OrbStack — `docker --context macstudio` reaches Mac Studio's daemon over SSH/Tailscale; set as the default context in `~/.zshrc`, `docker` PATH fixed in Mac Studio's `~/.zshenv` for non-interactive SSH).
