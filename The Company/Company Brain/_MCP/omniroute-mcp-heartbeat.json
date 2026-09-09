@@ -1,0 +1,30 @@
+{
+  "service": "omniroute-mcp",
+  "version": "3.8.50",
+  "status": "healthy",
+  "timestamp": "2026-09-09T00:00:00Z",
+  "mcp_endpoint": "http://localhost:20128/mcp",
+  "capabilities": [
+    "model_discovery",
+    "agent_routing",
+    "cost_optimization",
+    "fallback_handling",
+    "telemetry_integration",
+    "capability_matching",
+    "weighted_scoring"
+  ],
+  "endpoints": {
+    "health": "http://100.87.214.70:20128/api/health",
+    "agents": "http://100.87.214.70:20128/api/agents",
+    "models": "http://100.87.214.70:20128/api/models",
+    "dispatch": "http://100.87.214.70:20128/api/dispatch"
+  },
+  "config": {
+    "auth_method": "bearer_token",
+    "timeout_ms": 5000,
+    "retry_attempts": 3,
+    "heartbeat_interval_seconds": 60
+  },
+  "last_heartbeat": "2026-09-09T00:00:00Z",
+  "integration_status": "wired_to_vex_commandcenter"
+}
