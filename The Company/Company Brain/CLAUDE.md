@@ -8,6 +8,28 @@
 
 ---
 
+## 🎯 NAMING CONSOLIDATION — CANONICAL SOURCE OF TRUTH (Sep 9, 2026)
+
+**ONE SYSTEM, ONE NAME: VEX**
+
+| What We Call It | What It Actually Is | GitHub Repo | Deployed To | Primary Pages |
+|---|---|---|---|---|
+| **VEX** | Unified Venture Portal (investor/stakeholder dashboard) | https://github.com/Worldwidebro/Worldwidebro-Vex | https://vex-hero-site-sigma.vercel.app | `/portfolio`, `/ventures`, `/cap-table`, `/metrics` |
+| ~~Venture Portal~~ | DEPRECATED — use VEX instead | (removed from primary naming) | (DEPRECATED) | (removed) |
+| ~~Hermes Command Center~~ | REMOVED — old naming scheme, don't use | (removed) | (removed) | (removed) |
+| ~~vex-hero-site~~ | Internal build name — use VEX publicly | (superseded by Worldwidebro-Vex) | ✅ Still live but rename Vercel site to `vex-venture-portal` | (rename `/holdings` → `/portfolio`) |
+
+**Changes made (Sep 9):**
+- Renamed `/holdings` page → `/portfolio` (clearer investor language)
+- Removed all "Hermes" references from UI + docs
+- GitHub canonical: Worldwidebro-Vex (not worldwidebro-venture-portal)
+- Docs: Refer to "VEX" or "VEX Venture Portal" only
+- Vercel: Rename site from `vex-hero-site-sigma` to `vex-venture-portal` (cleaner URLs)
+
+**If naming is unclear anywhere in docs/code/UI, this table is the authoritative source.**
+
+---
+
 ## VERIFIED STATE — 2026-09-08 (Complete System Verification)
 
 **VERIFIED AGAINST:**
