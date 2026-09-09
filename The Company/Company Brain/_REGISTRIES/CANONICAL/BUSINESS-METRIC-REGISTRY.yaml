@@ -1,0 +1,804 @@
+metadata:
+  version: '1.0'
+  created_at: '2026-09-09'
+  authority: "CP-023 (Finance), CP-020 (Capital), CP-021 (Revenue)"
+  total_seed_metrics: 100
+  design_framework: "CFA Institute (Liquidity, Activity, Leverage, Profitability, Valuation) + 12 Research Libraries"
+  venture_integration: "789 ventures, 5 have data, 784 need profiles"
+  neo4j_enabled: true
+  status: "Phase 1B build (Sep 10-19)"
+  next_phase: "Load 500+ metrics, wire to all 789 ventures"
+  note: "This registry defines WHAT metrics exist, their formulas, owners, and sectors. Venture-specific VALUES live in Supabase + Neo4j."
+
+metric_template:
+  metric_id: "MTR-000001"
+  name: "Monthly Recurring Revenue"
+  category: "Revenue"
+  definition: "Predictable revenue from recurring subscription contracts"
+  formula: "SUM(active_subscriptions × monthly_price)"
+  unit: "USD"
+  frequency: "monthly"
+  business_models:
+    - "SaaS"
+    - "Subscription"
+    - "Membership"
+  sectors:
+    - "TECH"
+    - "FINTECH"
+    - "MEDIA"
+  financial_statement: "revenue_line_item"
+  cfa_category: "Profitability"
+  control_plane_owner: "CP-021 (Revenue)"
+  benchmark: "{sector}_{stage}_median_mrr"
+  healthy_threshold: "> $50K MRR"
+  data_source: "Supabase venture_financials"
+  neo4j_relationship: "VENTURE -[:HAS_METRIC]-> METRIC -[:VALUE]-> number"
+  related_metrics:
+    - "ARR"
+    - "ARPU"
+    - "Churn Rate"
+    - "NRR"
+  decision_use: "Is revenue predictable? Can we forecast cash flow?"
+  evidence_required: "Subscription contracts + payment history"
+  parent_hierarchy: "REVENUE"
+  children_hierarchy:
+    - "ARPU"
+    - "Customer_Count"
+    - "Churn"
+
+metrics:
+  # ============ REVENUE METRICS (10) ============
+  MTR-001:
+    name: "Monthly Recurring Revenue (MRR)"
+    definition: "Predictable revenue from recurring contracts"
+    formula: "SUM(active_subscriptions × monthly_price)"
+    unit: "USD"
+    frequency: "monthly"
+    categories: ["Revenue", "Profitability"]
+    control_plane: "CP-021"
+    healthy_threshold: "> $50K MRR"
+
+  MTR-002:
+    name: "Annual Recurring Revenue (ARR)"
+    definition: "MRR × 12 (or sum of annual contracts)"
+    formula: "MRR × 12"
+    unit: "USD"
+    frequency: "monthly"
+    categories: ["Revenue", "Valuation"]
+    control_plane: "CP-021"
+
+  MTR-003:
+    name: "Average Revenue Per User (ARPU)"
+    definition: "Total revenue divided by active users/customers"
+    formula: "MRR / active_customers"
+    unit: "USD/user/month"
+    frequency: "monthly"
+    categories: ["Revenue", "Unit Economics"]
+    control_plane: "CP-021"
+
+  MTR-004:
+    name: "Total Revenue"
+    definition: "Sum of all revenue streams (recurring + transactional + other)"
+    formula: "MRR + Transactional + Services + Other"
+    unit: "USD"
+    frequency: "monthly"
+    categories: ["Revenue"]
+    control_plane: "CP-021"
+
+  MTR-005:
+    name: "Revenue Growth Rate"
+    definition: "Month-over-month or year-over-year revenue growth percentage"
+    formula: "(Current_Revenue - Prior_Revenue) / Prior_Revenue × 100"
+    unit: "%"
+    frequency: "monthly"
+    categories: ["Growth", "Revenue"]
+    control_plane: "CP-021"
+
+  MTR-006:
+    name: "Customer Acquisition Rate"
+    definition: "New customers acquired per month"
+    formula: "New_Customers_This_Month"
+    unit: "count"
+    frequency: "monthly"
+    categories: ["Growth", "Sales"]
+    control_plane: "CP-025 (Sales)"
+
+  MTR-007:
+    name: "Customer Churn Rate"
+    definition: "Percentage of customers lost per month"
+    formula: "(Churned_Customers / Starting_Customers) × 100"
+    unit: "%"
+    frequency: "monthly"
+    categories: ["Retention", "Revenue"]
+    control_plane: "CP-021"
+
+  MTR-008:
+    name: "Net Revenue Retention (NRR)"
+    definition: "Revenue from existing customers including expansion and churn"
+    formula: "(Starting_ARR + Expansion - Churn) / Starting_ARR × 100"
+    unit: "%"
+    frequency: "quarterly"
+    categories: ["Growth", "Retention"]
+    control_plane: "CP-021"
+
+  MTR-009:
+    name: "Customer Lifetime Value (LTV)"
+    definition: "Total profit expected from a customer over their lifetime"
+    formula: "(ARPU - COGS) × (1 / Churn_Rate) × Gross_Margin"
+    unit: "USD"
+    frequency: "quarterly"
+    categories: ["Unit Economics", "Valuation"]
+    control_plane: "CP-020"
+
+  MTR-010:
+    name: "Customer Acquisition Cost (CAC)"
+    definition: "Total sales & marketing spend divided by new customers"
+    formula: "Sales_Marketing_Spend / New_Customers"
+    unit: "USD/customer"
+    frequency: "monthly"
+    categories: ["Unit Economics", "Sales"]
+    control_plane: "CP-024 (Marketing)"
+
+  # ============ PROFITABILITY METRICS (10) ============
+  MTR-011:
+    name: "Gross Profit"
+    definition: "Revenue minus cost of goods sold"
+    formula: "Revenue - COGS"
+    unit: "USD"
+    frequency: "monthly"
+    categories: ["Profitability"]
+    control_plane: "CP-023"
+
+  MTR-012:
+    name: "Gross Margin"
+    definition: "Gross profit as percentage of revenue"
+    formula: "(Revenue - COGS) / Revenue × 100"
+    unit: "%"
+    frequency: "monthly"
+    categories: ["Profitability", "Efficiency"]
+    control_plane: "CP-023"
+    healthy_threshold: "> 60% (SaaS), > 50% (Services)"
+
+  MTR-013:
+    name: "Operating Profit (EBIT)"
+    definition: "Gross profit minus operating expenses"
+    formula: "Gross_Profit - Operating_Expenses"
+    unit: "USD"
+    frequency: "monthly"
+    categories: ["Profitability"]
+    control_plane: "CP-023"
+
+  MTR-014:
+    name: "Operating Margin"
+    definition: "Operating profit as percentage of revenue"
+    formula: "EBIT / Revenue × 100"
+    unit: "%"
+    frequency: "monthly"
+    categories: ["Profitability", "Efficiency"]
+    control_plane: "CP-023"
+    healthy_threshold: "> 20% (profitable)"
+
+  MTR-015:
+    name: "EBITDA (Earnings Before Interest, Tax, Depreciation, Amortization)"
+    definition: "Operating profit plus depreciation and amortization"
+    formula: "EBIT + Depreciation + Amortization + Interest"
+    unit: "USD"
+    frequency: "monthly"
+    categories: ["Profitability"]
+    control_plane: "CP-023"
+
+  MTR-016:
+    name: "EBITDA Margin"
+    definition: "EBITDA as percentage of revenue"
+    formula: "EBITDA / Revenue × 100"
+    unit: "%"
+    frequency: "monthly"
+    categories: ["Profitability"]
+    control_plane: "CP-023"
+
+  MTR-017:
+    name: "Net Income"
+    definition: "Revenue minus all expenses (including taxes)"
+    formula: "Revenue - COGS - OpEx - Interest - Taxes"
+    unit: "USD"
+    frequency: "monthly"
+    categories: ["Profitability"]
+    control_plane: "CP-023"
+
+  MTR-018:
+    name: "Net Margin"
+    definition: "Net income as percentage of revenue"
+    formula: "Net_Income / Revenue × 100"
+    unit: "%"
+    frequency: "monthly"
+    categories: ["Profitability"]
+    control_plane: "CP-023"
+
+  MTR-019:
+    name: "Operating Expense Ratio"
+    definition: "Operating expenses as percentage of revenue"
+    formula: "Operating_Expenses / Revenue × 100"
+    unit: "%"
+    frequency: "monthly"
+    categories: ["Efficiency", "Operations"]
+    control_plane: "CP-022 (Operations)"
+
+  MTR-020:
+    name: "Burn Rate (Monthly)"
+    definition: "Monthly cash outflow when not profitable"
+    formula: "Monthly_Expenses - Monthly_Revenue (if negative)"
+    unit: "USD/month"
+    frequency: "monthly"
+    categories: ["Cash Flow", "Operations"]
+    control_plane: "CP-020 (Capital)"
+
+  # ============ LIQUIDITY METRICS (10) ============
+  MTR-021:
+    name: "Cash on Hand"
+    definition: "Total liquid cash available"
+    formula: "Bank_Balance + Investment_Account"
+    unit: "USD"
+    frequency: "daily"
+    categories: ["Liquidity", "Cash Flow"]
+    control_plane: "CP-020"
+
+  MTR-022:
+    name: "Runway (Months)"
+    definition: "How many months until cash runs out at current burn"
+    formula: "Cash_on_Hand / Monthly_Burn_Rate"
+    unit: "months"
+    frequency: "monthly"
+    categories: ["Liquidity", "Cash Flow"]
+    control_plane: "CP-020"
+
+  MTR-023:
+    name: "Current Ratio"
+    definition: "Current assets divided by current liabilities"
+    formula: "Current_Assets / Current_Liabilities"
+    unit: "ratio"
+    frequency: "quarterly"
+    categories: ["Liquidity", "Solvency"]
+    control_plane: "CP-023"
+    healthy_threshold: "> 1.5 (SaaS), > 1.0 (minimum)"
+
+  MTR-024:
+    name: "Quick Ratio"
+    definition: "Liquid assets divided by current liabilities (excludes inventory)"
+    formula: "(Current_Assets - Inventory) / Current_Liabilities"
+    unit: "ratio"
+    frequency: "quarterly"
+    categories: ["Liquidity"]
+    control_plane: "CP-023"
+
+  MTR-025:
+    name: "Cash Conversion Cycle (Days)"
+    definition: "Days from paying suppliers to collecting from customers"
+    formula: "Days_Inventory + Days_Sales_Outstanding - Days_Payable_Outstanding"
+    unit: "days"
+    frequency: "quarterly"
+    categories: ["Efficiency", "Cash Flow"]
+    control_plane: "CP-021"
+
+  MTR-026:
+    name: "Working Capital"
+    definition: "Current assets minus current liabilities"
+    formula: "Current_Assets - Current_Liabilities"
+    unit: "USD"
+    frequency: "quarterly"
+    categories: ["Liquidity", "Operations"]
+    control_plane: "CP-023"
+
+  MTR-027:
+    name: "Days Sales Outstanding (DSO)"
+    definition: "Average days to collect payment from customers"
+    formula: "(Accounts_Receivable / Revenue) × Days_in_Period"
+    unit: "days"
+    frequency: "quarterly"
+    categories: ["Efficiency", "Cash Flow"]
+    control_plane: "CP-021"
+
+  MTR-028:
+    name: "Days Payable Outstanding (DPO)"
+    definition: "Average days to pay suppliers"
+    formula: "(Accounts_Payable / COGS) × Days_in_Period"
+    unit: "days"
+    frequency: "quarterly"
+    categories: ["Efficiency", "Operations"]
+    control_plane: "CP-023"
+
+  MTR-029:
+    name: "Free Cash Flow (FCF)"
+    definition: "Operating cash flow minus capital expenditures"
+    formula: "Operating_Cash_Flow - CapEx"
+    unit: "USD"
+    frequency: "monthly"
+    categories: ["Cash Flow", "Capital"]
+    control_plane: "CP-020"
+
+  MTR-030:
+    name: "FCF Margin"
+    definition: "Free cash flow as percentage of revenue"
+    formula: "FCF / Revenue × 100"
+    unit: "%"
+    frequency: "monthly"
+    categories: ["Profitability", "Cash Flow"]
+    control_plane: "CP-020"
+
+  # ============ LEVERAGE / SOLVENCY METRICS (10) ============
+  MTR-031:
+    name: "Debt-to-Equity Ratio"
+    definition: "Total debt divided by total equity"
+    formula: "Total_Debt / Total_Equity"
+    unit: "ratio"
+    frequency: "quarterly"
+    categories: ["Leverage", "Solvency"]
+    control_plane: "CP-020"
+
+  MTR-032:
+    name: "Debt-to-Assets Ratio"
+    definition: "Total debt divided by total assets"
+    formula: "Total_Debt / Total_Assets"
+    unit: "ratio"
+    frequency: "quarterly"
+    categories: ["Leverage"]
+    control_plane: "CP-020"
+
+  MTR-033:
+    name: "Interest Coverage Ratio"
+    definition: "EBIT divided by interest expense"
+    formula: "EBIT / Interest_Expense"
+    unit: "ratio"
+    frequency: "quarterly"
+    categories: ["Solvency", "Profitability"]
+    control_plane: "CP-020"
+    healthy_threshold: "> 2.5x (safe)"
+
+  MTR-034:
+    name: "Loan-to-Value (LTV)"
+    definition: "Loan amount divided by asset value"
+    formula: "Loan_Amount / Asset_Value"
+    unit: "%"
+    frequency: "quarterly"
+    categories: ["Leverage", "Solvency"]
+    control_plane: "CP-020"
+
+  MTR-035:
+    name: "Debt Service Coverage Ratio (DSCR)"
+    definition: "Ability to service debt from cash flow"
+    formula: "Net_Operating_Income / Total_Debt_Service"
+    unit: "ratio"
+    frequency: "quarterly"
+    categories: ["Solvency", "Cash Flow"]
+    control_plane: "CP-020"
+    healthy_threshold: "> 1.25x (can service debt)"
+
+  MTR-036:
+    name: "Net Debt"
+    definition: "Total debt minus cash on hand"
+    formula: "Total_Debt - Cash_on_Hand"
+    unit: "USD"
+    frequency: "quarterly"
+    categories: ["Leverage"]
+    control_plane: "CP-020"
+
+  MTR-037:
+    name: "Capital Expenditure (CapEx)"
+    definition: "Spending on fixed assets (equipment, property, etc.)"
+    formula: "Sum of all fixed asset purchases"
+    unit: "USD"
+    frequency: "quarterly"
+    categories: ["Capital", "Operations"]
+    control_plane: "CP-020"
+
+  MTR-038:
+    name: "CapEx as % of Revenue"
+    definition: "Capital spending relative to total revenue"
+    formula: "CapEx / Revenue × 100"
+    unit: "%"
+    frequency: "quarterly"
+    categories: ["Capital"]
+    control_plane: "CP-020"
+
+  MTR-039:
+    name: "Equity Ratio"
+    definition: "Shareholders' equity as percentage of total assets"
+    formula: "Total_Equity / Total_Assets × 100"
+    unit: "%"
+    frequency: "quarterly"
+    categories: ["Leverage"]
+    control_plane: "CP-020"
+
+  MTR-040:
+    name: "Financial Leverage"
+    definition: "Total assets divided by shareholders' equity"
+    formula: "Total_Assets / Total_Equity"
+    unit: "ratio"
+    frequency: "quarterly"
+    categories: ["Leverage", "Solvency"]
+    control_plane: "CP-020"
+
+  # ============ UNIT ECONOMICS (10) ============
+  MTR-041:
+    name: "CAC Payback Period (Months)"
+    definition: "How many months to recoup customer acquisition cost"
+    formula: "CAC / (ARPU × Gross_Margin)"
+    unit: "months"
+    frequency: "quarterly"
+    categories: ["Unit Economics", "Sales"]
+    control_plane: "CP-025"
+    healthy_threshold: "< 12 months"
+
+  MTR-042:
+    name: "LTV:CAC Ratio"
+    definition: "Customer lifetime value relative to acquisition cost"
+    formula: "LTV / CAC"
+    unit: "ratio"
+    frequency: "quarterly"
+    categories: ["Unit Economics"]
+    control_plane: "CP-021"
+    healthy_threshold: "> 3:1 (healthy), > 5:1 (excellent)"
+
+  MTR-043:
+    name: "Cost of Goods Sold (COGS)"
+    definition: "Direct cost to produce goods/services sold"
+    formula: "Sum of direct production costs"
+    unit: "USD"
+    frequency: "monthly"
+    categories: ["Operations", "Profitability"]
+    control_plane: "CP-022"
+
+  MTR-044:
+    name: "COGS as % of Revenue"
+    definition: "Direct costs relative to revenue"
+    formula: "COGS / Revenue × 100"
+    unit: "%"
+    frequency: "monthly"
+    categories: ["Efficiency"]
+    control_plane: "CP-022"
+
+  MTR-045:
+    name: "Contribution Margin"
+    definition: "Revenue minus variable costs"
+    formula: "Revenue - Variable_Costs"
+    unit: "USD"
+    frequency: "monthly"
+    categories: ["Unit Economics", "Profitability"]
+    control_plane: "CP-023"
+
+  MTR-046:
+    name: "Contribution Margin %"
+    definition: "Contribution margin as percentage of revenue"
+    formula: "Contribution_Margin / Revenue × 100"
+    unit: "%"
+    frequency: "monthly"
+    categories: ["Unit Economics"]
+    control_plane: "CP-023"
+
+  MTR-047:
+    name: "Magic Number (SaaS)"
+    definition: "Quarter-over-quarter revenue growth rate relative to operating spend"
+    formula: "(Current_QTR_Revenue - Prior_QTR_Revenue) / Prior_QTR_OpEx"
+    unit: "ratio"
+    frequency: "quarterly"
+    categories: ["Unit Economics", "Growth"]
+    control_plane: "CP-021"
+    healthy_threshold: "> 0.75 (efficient growth)"
+
+  MTR-048:
+    name: "Rule of 40 (Growth + Margin)"
+    definition: "Growth rate (%) + Profit margin (%) should exceed 40 for healthy SaaS"
+    formula: "Revenue_Growth_Rate + Profit_Margin"
+    unit: "%"
+    frequency: "quarterly"
+    categories: ["Unit Economics", "Growth"]
+    control_plane: "CP-023"
+    healthy_threshold: "> 40 (indicates health)"
+
+  MTR-049:
+    name: "Payback Period (Months)"
+    definition: "How long to break even on an investment"
+    formula: "Initial_Investment / Monthly_Profit"
+    unit: "months"
+    frequency: "quarterly"
+    categories: ["Unit Economics"]
+    control_plane: "CP-020"
+
+  MTR-050:
+    name: "Return on Invested Capital (ROIC)"
+    definition: "NOPAT divided by invested capital"
+    formula: "NOPAT / (Equity + Debt)"
+    unit: "%"
+    frequency: "quarterly"
+    categories: ["Unit Economics", "Capital"]
+    control_plane: "CP-020"
+
+  # ============ GROWTH METRICS (10) ============
+  MTR-051:
+    name: "Month-over-Month Growth (MoM)"
+    definition: "Growth rate from one month to the next"
+    formula: "(Current_Month - Prior_Month) / Prior_Month × 100"
+    unit: "%"
+    frequency: "monthly"
+    categories: ["Growth"]
+    control_plane: "CP-021"
+
+  MTR-052:
+    name: "Year-over-Year Growth (YoY)"
+    definition: "Growth rate from same month last year"
+    formula: "(Current_Month - Prior_Year_Month) / Prior_Year_Month × 100"
+    unit: "%"
+    frequency: "monthly"
+    categories: ["Growth"]
+    control_plane: "CP-021"
+
+  MTR-053:
+    name: "Compound Annual Growth Rate (CAGR)"
+    definition: "Average annual growth rate over multiple years"
+    formula: "(Ending_Value / Beginning_Value) ^ (1 / Years) - 1"
+    unit: "%"
+    frequency: "annual"
+    categories: ["Growth"]
+    control_plane: "CP-021"
+
+  MTR-054:
+    name: "Customer Growth Rate"
+    definition: "Month-over-month percentage growth in customer base"
+    formula: "(Current_Customers - Prior_Customers) / Prior_Customers × 100"
+    unit: "%"
+    frequency: "monthly"
+    categories: ["Growth"]
+    control_plane: "CP-025"
+
+  MTR-055:
+    name: "Market Penetration Rate"
+    definition: "Percentage of addressable market captured"
+    formula: "(Customers / Total_Addressable_Market) × 100"
+    unit: "%"
+    frequency: "quarterly"
+    categories: ["Growth", "Market"]
+    control_plane: "CP-004 (Strategy)"
+
+  MTR-056:
+    name: "Product Adoption Rate"
+    definition: "Percentage of customers using a new feature"
+    formula: "(Active_Feature_Users / Total_Customers) × 100"
+    unit: "%"
+    frequency: "monthly"
+    categories: ["Growth", "Product"]
+    control_plane: "CP-025"
+
+  MTR-057:
+    name: "Expansion Revenue"
+    definition: "Additional revenue from existing customers (upsell/cross-sell)"
+    formula: "Revenue_from_Existing_Customers - Prior_Revenue"
+    unit: "USD"
+    frequency: "monthly"
+    categories: ["Growth", "Revenue"]
+    control_plane: "CP-021"
+
+  MTR-058:
+    name: "Customer Retention Rate"
+    definition: "Percentage of customers retained period-over-period"
+    formula: "((Ending_Customers - New_Customers) / Beginning_Customers) × 100"
+    unit: "%"
+    frequency: "monthly"
+    categories: ["Retention", "Growth"]
+    control_plane: "CP-021"
+
+  MTR-059:
+    name: "Viral Coefficient"
+    definition: "Number of new customers each existing customer brings"
+    formula: "Referrals_per_Customer"
+    unit: "count"
+    frequency: "quarterly"
+    categories: ["Growth"]
+    control_plane: "CP-024"
+
+  MTR-060:
+    name: "Doubling Time"
+    definition: "Time required to double revenue or customers"
+    formula: "LN(2) / LN(1 + Growth_Rate)"
+    unit: "months"
+    frequency: "quarterly"
+    categories: ["Growth"]
+    control_plane: "CP-021"
+
+  # ============ VALUATION METRICS (10) ============
+  MTR-061:
+    name: "Revenue Multiple"
+    definition: "Enterprise value divided by annual revenue"
+    formula: "Enterprise_Value / Annual_Revenue"
+    unit: "x"
+    frequency: "quarterly"
+    categories: ["Valuation"]
+    control_plane: "CP-020"
+    sector_dependent: true
+
+  MTR-062:
+    name: "EBITDA Multiple"
+    definition: "Enterprise value divided by EBITDA"
+    formula: "Enterprise_Value / EBITDA"
+    unit: "x"
+    frequency: "quarterly"
+    categories: ["Valuation"]
+    control_plane: "CP-020"
+    sector_dependent: true
+
+  MTR-063:
+    name: "Price-to-Earnings (P/E) Ratio"
+    definition: "Market cap divided by net income"
+    formula: "Market_Cap / Net_Income"
+    unit: "x"
+    frequency: "quarterly"
+    categories: ["Valuation"]
+    control_plane: "CP-020"
+
+  MTR-064:
+    name: "Price-to-Sales (P/S) Ratio"
+    definition: "Market cap divided by annual revenue"
+    formula: "Market_Cap / Revenue"
+    unit: "x"
+    frequency: "quarterly"
+    categories: ["Valuation"]
+    control_plane: "CP-020"
+
+  MTR-065:
+    name: "Enterprise Value"
+    definition: "Market cap plus net debt"
+    formula: "Market_Cap + Total_Debt - Cash"
+    unit: "USD"
+    frequency: "quarterly"
+    categories: ["Valuation", "Capital"]
+    control_plane: "CP-020"
+
+  MTR-066:
+    name: "Price-to-Book (P/B) Ratio"
+    definition: "Market cap divided by shareholders' equity"
+    formula: "Market_Cap / Total_Equity"
+    unit: "x"
+    frequency: "quarterly"
+    categories: ["Valuation"]
+    control_plane: "CP-020"
+
+  MTR-067:
+    name: "Discounted Cash Flow (DCF) Valuation"
+    definition: "Present value of future cash flows"
+    formula: "SUM(Future_Cash_Flows / (1 + Discount_Rate) ^ Year)"
+    unit: "USD"
+    frequency: "annual"
+    categories: ["Valuation"]
+    control_plane: "CP-020"
+
+  MTR-068:
+    name: "Book Value"
+    definition: "Shareholders' equity; assets minus liabilities"
+    formula: "Total_Assets - Total_Liabilities"
+    unit: "USD"
+    frequency: "quarterly"
+    categories: ["Valuation"]
+    control_plane: "CP-020"
+
+  MTR-069:
+    name: "Tangible Book Value"
+    definition: "Book value minus intangible assets"
+    formula: "Total_Assets - Intangible_Assets - Total_Liabilities"
+    unit: "USD"
+    frequency: "quarterly"
+    categories: ["Valuation"]
+    control_plane: "CP-020"
+
+  MTR-070:
+    name: "Goodwill"
+    definition: "Premium paid for acquisition above book value"
+    formula: "Purchase_Price - Book_Value"
+    unit: "USD"
+    frequency: "annual"
+    categories: ["Valuation", "M&A"]
+    control_plane: "CP-009 (Deal Office)"
+
+  # ============ OPERATIONAL METRICS (10) ============
+  MTR-071:
+    name: "Revenue per Employee"
+    definition: "Annual revenue divided by headcount"
+    formula: "Annual_Revenue / Employee_Count"
+    unit: "USD/employee"
+    frequency: "quarterly"
+    categories: ["Operations", "Efficiency"]
+    control_plane: "CP-022"
+
+  MTR-072:
+    name: "Profit per Employee"
+    definition: "Annual profit divided by headcount"
+    formula: "Annual_Profit / Employee_Count"
+    unit: "USD/employee"
+    frequency: "quarterly"
+    categories: ["Operations", "Profitability"]
+    control_plane: "CP-022"
+
+  MTR-073:
+    name: "Employee Productivity"
+    definition: "Output (revenue or units) per employee"
+    formula: "Total_Output / Employee_Count"
+    unit: "varies"
+    frequency: "quarterly"
+    categories: ["Operations"]
+    control_plane: "CP-022"
+
+  MTR-074:
+    name: "Asset Turnover Ratio"
+    definition: "Revenue divided by total assets"
+    formula: "Revenue / Total_Assets"
+    unit: "x"
+    frequency: "quarterly"
+    categories: ["Efficiency"]
+    control_plane: "CP-022"
+
+  MTR-075:
+    name: "Inventory Turnover"
+    definition: "COGS divided by average inventory"
+    formula: "COGS / Average_Inventory"
+    unit: "x"
+    frequency: "quarterly"
+    categories: ["Efficiency"]
+    control_plane: "CP-022"
+
+  MTR-076:
+    name: "Fixed Cost Ratio"
+    definition: "Fixed costs as percentage of revenue"
+    formula: "Fixed_Costs / Revenue × 100"
+    unit: "%"
+    frequency: "quarterly"
+    categories: ["Operations"]
+    control_plane: "CP-022"
+
+  MTR-077:
+    name: "Variable Cost Ratio"
+    definition: "Variable costs as percentage of revenue"
+    formula: "Variable_Costs / Revenue × 100"
+    unit: "%"
+    frequency: "quarterly"
+    categories: ["Operations"]
+    control_plane: "CP-022"
+
+  MTR-078:
+    name: "Breakeven Point"
+    definition: "Sales volume needed to equal total costs"
+    formula: "Fixed_Costs / (Price - Variable_Cost_per_Unit)"
+    unit: "units"
+    frequency: "quarterly"
+    categories: ["Operations"]
+    control_plane: "CP-022"
+
+  MTR-079:
+    name: "Operating Leverage"
+    definition: "How much profit increases when revenue increases 1%"
+    formula: "% Change_in_Operating_Income / % Change_in_Revenue"
+    unit: "%"
+    frequency: "quarterly"
+    categories: ["Operations", "Profitability"]
+    control_plane: "CP-022"
+
+  MTR-080:
+    name: "Capacity Utilization"
+    definition: "Actual output as percentage of potential output"
+    formula: "(Actual_Output / Potential_Output) × 100"
+    unit: "%"
+    frequency: "monthly"
+    categories: ["Operations", "Efficiency"]
+    control_plane: "CP-022"
+
+control_plane_ownership:
+  CP-020: ["Metrics related to capital, fundraising, valuation, deals"]
+  CP-021: ["Metrics related to revenue, sales, customers, retention"]
+  CP-022: ["Metrics related to operations, efficiency, capacity, assets"]
+  CP-023: ["Metrics related to finance, profitability, margins, budgeting"]
+  CP-024: ["Metrics related to marketing, campaigns, acquisition"]
+  CP-025: ["Metrics related to sales pipeline, deal flow, rep productivity"]
+
+next_phase:
+  phase_1b: "Sep 10-19: Extend to 500+ metrics, load sector benchmarks"
+  phase_2: "Sep 20-30: Wire all 789 ventures to metric values (Supabase + Neo4j)"
+  phase_3: "Oct 1+: Build metric dashboards, trend analysis, anomaly detection"
+  phase_4: "Oct 1+: Business Manual sections link to their control plane + metrics"
+
+status: "Phase 1A complete (100 seed metrics). Ready for Phase 1B."
