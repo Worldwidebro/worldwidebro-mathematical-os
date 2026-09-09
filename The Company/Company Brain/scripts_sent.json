@@ -1,0 +1,50 @@
+{
+  "timestamp": "2026-09-09T11:08:55.897669",
+  "mode": "simulate",
+  "recipient": "winnerscirclewcllc@gmail.com",
+  "total_scripts": 5,
+  "scripts_sent": 0,
+  "scripts_failed": 0,
+  "details": [
+    {
+      "venture_id": "CON-001",
+      "email_to": "winnerscirclewcllc@gmail.com",
+      "subject": "[CON-001] ACE Construction \u2014 Sales Script Ready",
+      "timestamp": "2026-09-09T11:08:55.897014",
+      "mcp_tool": "mcp__claude_ai_Gmail__send_message",
+      "status": "simulated (run with --execute to actually send)"
+    },
+    {
+      "venture_id": "LT-005",
+      "email_to": "winnerscirclewcllc@gmail.com",
+      "subject": "[LT-005] HealthRoute Medical Courier \u2014 Sales Script Ready",
+      "timestamp": "2026-09-09T11:08:55.897191",
+      "mcp_tool": "mcp__claude_ai_Gmail__send_message",
+      "status": "simulated (run with --execute to actually send)"
+    },
+    {
+      "venture_id": "LT-011",
+      "email_to": "winnerscirclewcllc@gmail.com",
+      "subject": "[LT-011] CarrierDispatch TMS \u2014 Sales Script Ready",
+      "timestamp": "2026-09-09T11:08:55.897373",
+      "mcp_tool": "mcp__claude_ai_Gmail__send_message",
+      "status": "simulated (run with --execute to actually send)"
+    },
+    {
+      "venture_id": "OPS-001",
+      "email_to": "winnerscirclewcllc@gmail.com",
+      "subject": "[OPS-001] CareerOps Staffing \u2014 Sales Script Ready",
+      "timestamp": "2026-09-09T11:08:55.897518",
+      "mcp_tool": "mcp__claude_ai_Gmail__send_message",
+      "status": "simulated (run with --execute to actually send)"
+    },
+    {
+      "venture_id": "RE-001",
+      "email_to": "winnerscirclewcllc@gmail.com",
+      "subject": "[RE-001] WorldwideBro Real Estate \u2014 Sales Script Ready",
+      "timestamp": "2026-09-09T11:08:55.897666",
+      "mcp_tool": "mcp__claude_ai_Gmail__send_message",
+      "status": "simulated (run with --execute to actually send)"
+    }
+  ]
+}
