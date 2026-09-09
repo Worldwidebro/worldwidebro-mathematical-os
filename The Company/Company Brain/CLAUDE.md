@@ -113,10 +113,11 @@ ssh macstudio                               # Connect to Mac Studio
 - `_REFERENCE/OPERATIONAL-STATE-2026-09.md` — What's working vs. NOT wired
 
 **Capital & Holding Company Architecture:**
+- `INSTITUTIONAL-VENTURE-ARCHITECTURE.md` — **MASTER MAP: All 789 ventures mapped to family office structure + repos + OSS deps + inter-venture trading**
+- `WORLDWIDEBRO-HOLDINGS-MASTER-OPERATING-MANUAL.md` — 789-venture holding company framework (portfolio strategy, governance, capital allocation, exits)
 - `BUSINESS-CAPITAL-DATA-ROOM/00_ENTERPRISE_BLUEPRINT.md` — Family office structure (Family Trust → Asset/IP/Admin LLCs → Operating C-Corp)
 - `CAPITAL-READINESS-ENGINE.md` — 5-venture capital readiness matrix + $4.5M capital sources
 - `BUSINESS-CAPITAL-DATA-ROOM/FINANCIAL-ECOSYSTEM-MAPPING.md` — 12-layer financial OS (banking, credit, debt, investment, payments, insurance, government, infrastructure, marketplaces)
-- `WORLDWIDEBRO-HOLDINGS-MASTER-OPERATING-MANUAL.md` — **789-venture holding company framework** (portfolio strategy, governance, capital allocation, exits)
 
 **Master Orientation (Root Docs):**
 - [[STARTHERE]] — Phase 0 locked, Phase 1 execution
