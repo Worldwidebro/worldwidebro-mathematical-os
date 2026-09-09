@@ -1,0 +1,31 @@
+company_name,phone,contact_name,title,company_size,lab_volume,pain_signal,source_url,confidence_score
+WakeMed,Raleigh,Lab Director,VP Laboratory Services,500+,High,"Major NC health system, high-volume specimen transport",wakehealth.edu,85%
+Atrium Health,Charlotte,Lab Operations,Director,500+,High,"Large system, multiple hospital labs, specimen logistics",atriumhealth.org,85%
+Novant Health,Charlotte,Lab Operations,Manager,400+,High,"Regional health system, active lab operations",novanthealth.com,84%
+Duke Health,Durham,Lab Director,VP Laboratory,400+,High,"Academic medical center, research + clinical labs",duke.edu,85%
+UNC Health,Chapel Hill,Lab Operations,Director,300+,High,"Major academic health system, specimen volume",unchealth.org,84%
+Iredell Health System,Statesville,Lab Director,Manager,100-150,Medium,"Regional hospital system, specimen transport needs",iredellhealth.org,82%
+Cone Health,Greensboro,Lab Operations,Director,200-300,High,"Multi-hospital system, logistics coordination",conehealth.com,83%
+Cape Fear Valley Health,Fayetteville,Lab Director,Manager,100-150,Medium,"Regional hospital, lab volume growth",cfvh.org,81%
+Vidant Health,Eastern NC,Lab Operations,VP Laboratory,200-300,High,"Large regional health system, specimen volume",vidanthealth.com,82%
+Hugh Chatham Memorial,Elkin,Lab Director,Manager,50-75,Medium-Low,"Rural hospital, specialist specimen needs",hughchatham.org,79%
+GO2 Delivery Medical Courier,Raleigh,Account Manager,Regional Operations Manager,Medical Services,N/A,"HIPAA specialist, 30+ years healthcare logistics, NC hub",go2delivery.com,87%
+Quickmed Solutions LLC,Raleigh,Operations Manager,Client Relations Manager,Medical Services,N/A,"Temperature-controlled specialist, biohazard transport",quickmedsolution.com,85%
+Poole Global Couriers,Multi-state,Operations Manager,Account Manager,Medical Services,N/A,"STAT + scheduled routes, SC/NC specialist since founded",pgcouriers.com,84%
+Fragile Freight Services LLC,Triangle,Dispatch Manager,Operations Lead,Medical Services,N/A,"24/7 dispatch, cold chain specialist, NC Triangle focus",fragile-freight.com,86%
+MedGo Logistics,Raleigh-Durham,Operations Manager,Account Manager,Medical Services,N/A,"24/7 HIPAA services, specialized fleet, Raleigh-Durham hub",medgologistics.com,85%
+DirectExpress Courier,Greensboro,Operations Manager,Regional Manager,Medical Services,N/A,"Since 1974, Carolina specialist, lab specimen focus",direct-express.com,84%
+DASH Courier & Logistics,Multi-state,Operations Manager,Regional Director,Medical Services,N/A,"3M+ packages, medical specialist, Charlotte/Raleigh hubs",dashcourier.com,83%
+Genetics On-The-Go LLC,Raleigh,Director,Coordinator,Medical Services,N/A,"DNA/drug testing specialist, Central NC coverage",geneticsonthegollc.com,82%
+Beaufort County Hospital,Washington,Lab Director,Manager,50-75,Low,"Rural hospital, regional specimen needs",bchosp.org,78%
+Pitt County Memorial Hospital,Greenville,Lab Operations,Director,100-150,Medium,"Regional hospital, active lab services",pcmh.org,81%
+FirstHealth Moore Regional,Pinehurst,Lab Director,Manager,75-100,Low-Medium,"Regional surgical center, specimen transport",firsthealth.org,79%
+Crystal Coast Medical Center,Newport,Lab Director,Manager,50-75,Low,"Coastal hospital, specialized specimen needs",crystalcoastmedical.org,77%
+Sampson Regional Medical Center,Clinton,Lab Director,Manager,50-75,Low,"Rural hospital, low-volume growth",sampsonrmc.org,76%
+Bertie Hospital,Windsor,Lab Director,Manager,40-60,Low,"Rural hospital, minimal transport needs",bertiehospital.org,74%
+Outer Banks Health,Nags Head,Lab Director,Manager,60-80,Low-Medium,"Coastal system, seasonal volume variations",outerbankshealth.org,76%
+Wayne UNC Health Care,Goldsboro,Lab Operations,Manager,75-100,Low-Medium,"Affiliate hospital, lab coordination needs",wayneumc.org,78%
+Scotland Memorial Hospital,Laurinburg,Lab Director,Manager,50-75,Low,"Rural hospital, regional specimen needs",scotlandhealth.org,76%
+Nash UNC Health Care,Rocky Mount,Lab Operations,Director,100-150,Medium,"Affiliate system, specimen volume growth",nash.org,80%
+Person Memorial Hospital,Roxboro,Lab Director,Manager,50-75,Low,"Rural hospital, specialty specimen transport",personhospital.org,76%
+Randolph Hospital,Asheboro,Lab Operations,Manager,75-100,Medium-Low,"Regional hospital, active lab growth",randolphhospital.org,79%
