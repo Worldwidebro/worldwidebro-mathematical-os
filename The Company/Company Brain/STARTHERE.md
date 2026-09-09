@@ -48,6 +48,12 @@ Before writing code, declaring features, or making changes, read in exact sequen
 12. [[CLAUDE|CLAUDE.md]] — Live-audited infrastructure, models, and container runtime state.
 13. [[UPDATE|UPDATE.md]] — What changed in the recent working sessions.
 
+### Capital & Holding Company Architecture (NEW)
+- [[WORLDWIDEBRO-HOLDINGS-MASTER-OPERATING-MANUAL]] — Master 789-venture holding company framework (structure, governance, capital allocation, exits)
+- [[00_ENTERPRISE_BLUEPRINT|BUSINESS-CAPITAL-DATA-ROOM/00_ENTERPRISE_BLUEPRINT.md]] — Family office architecture (Family Trust → Asset/IP/Admin LLCs → Operating C-Corp)
+- [[CAPITAL-READINESS-ENGINE]] — 5-venture capital readiness engine (pilot for 789-venture model)
+- [[FINANCIAL-ECOSYSTEM-MAPPING|BUSINESS-CAPITAL-DATA-ROOM/FINANCIAL-ECOSYSTEM-MAPPING.md]] — 12-layer financial OS for ventures
+
 ### Supporting Truth & Discipline Ledgers
 - [[KILL-LIST|KILL-LIST.md]] — Formally killed or decommissioned entities.
 - [[STOP-DOING|STOP-DOING.md]] — Prohibited behaviors and anti-patterns.
