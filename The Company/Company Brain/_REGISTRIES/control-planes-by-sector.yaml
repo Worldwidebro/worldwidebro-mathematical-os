@@ -1,7 +1,8 @@
 metadata:
-  version: '1.0'
+  version: '1.1'
   created_at: '2026-09-02'
-  total_control_planes: 30
+  updated: '2026-09-09'
+  total_control_planes: 33
   total_sectors: 35
   model: Each CP serves a function across multiple sectors; this mapping shows sector-primary
     responsibilities
@@ -254,6 +255,47 @@ control_planes:
     - SEC-033
     - SEC-008
     - SEC-016
+  CP-031:
+    name: Sustainability
+    description: Environmental governance, impact measurement, carbon tracking, ESG compliance
+    primary_sectors:
+    - SEC-031
+    - SEC-020
+    - SEC-024
+    layer: 30-IMPACT
+    responsibilities:
+    - Environmental impact tracking
+    - Sustainability reporting
+    - ESG compliance
+    - Carbon accounting
+  CP-032:
+    name: AI Governance
+    description: LLM operations, model governance, algorithm auditing, responsible AI
+    primary_sectors:
+    - SEC-032
+    - SEC-024
+    - SEC-007
+    - SEC-028
+    layer: 32-MODELS
+    responsibilities:
+    - LLM model management
+    - Algorithm auditing
+    - Responsible AI oversight
+    - Model evaluation and governance
+  CP-033:
+    name: Privacy & Compliance
+    description: Data privacy, threat modeling, incident response, regulatory compliance
+    primary_sectors:
+    - SEC-033
+    - SEC-024
+    - SEC-030
+    - SEC-008
+    layer: 17-SECURITY
+    responsibilities:
+    - Privacy operations
+    - Threat detection and response
+    - Regulatory compliance
+    - Data protection
   neo4j_node: true
   neo4j_synced: '2026-09-09'
   neo4j_relationships:
