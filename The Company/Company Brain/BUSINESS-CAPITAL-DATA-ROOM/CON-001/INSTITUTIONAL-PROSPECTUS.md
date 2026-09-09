@@ -79,9 +79,31 @@ ACE Construction operates a dual-revenue model combining hands-on commercial gen
 - **Serviceable Addressable Market (SAM):** $85 billion in commercial tenant improvement and residential energy retrofit work across the Southeast
 - **Serviceable Obtainable Market (SOM):** $25 million in addressable regional specialty contracting work (NC/VA, 3-year horizon)
 
+### Live Product & Strategic Position
+
+**Vercel Deployment:** https://con-001-ace-construction.vercel.app  
+**GitHub Repository:** https://github.com/Worldwidebro/con-001-ace-construction  
+
+**Strategic Goal:** Turn construction opportunities into profitable completed projects. CON-001 services all ventures (RE-001 renovations, LT-005/LT-011 facilities, OPS-001 offices) while operating as an independent revenue engine.
+
+**Portfolio Architecture:**
+```
+VEX (Portal) → WORLDWIDEBRO HOLDINGS
+            ↓
+      VENTURE PORTFOLIO
+            ↓
+   CON-001 (Construction Services)
+      ↓
+  Services:
+   • RE-001 (property renovation)
+   • LT-005 (facility maintenance)
+   • LT-011 (dispatch hub build-out)
+   • OPS-001 (office buildout)
+```
+
 ### Traction Today
 
-- **Live production portal:** www.ace-construction.vercel.app (verified code at commit 67e7b82)
+- **Live production portal:** https://con-001-ace-construction.vercel.app (verified code at commit 67e7b82)
 - **Documented LOI pipeline:** $590,000 across two executed commercial letters of intent
 - **Bank-underwriteable pipeline:** $425,000
 - **Capital structure:** Live Stripe billing integration for upfront consultations ($299) and project mobilization ($1,500)

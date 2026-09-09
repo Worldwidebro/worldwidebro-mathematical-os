@@ -1,0 +1,112 @@
+# Temporal Server Configuration for LT-005
+# HIPAA-compliant audit workflow engine
+
+global:
+  membership:
+    maxJoinDuration: 30s
+    broadcastAddress: temporal
+  pprof:
+    port: 6060
+  metricsPort: 8000
+  metricsBindAddress: "0.0.0.0"
+
+persistence:
+  defaultStore: postgres-default
+  visibilityStore: postgres-visibility
+  stores:
+    postgres-default:
+      sql:
+        user: temporal
+        password: temporal_changeme
+        host: temporal-postgres
+        port: 5432
+        database: temporal
+        maxConnections: 20
+        maxIdleConnections: 20
+        maxConnectionLifetime: 0s
+        taskScanPartitions: 4
+        historyMaxConns: 20
+        executionMaxConns: 20
+        maxQueueDepth: 1000
+    postgres-visibility:
+      sql:
+        user: temporal
+        password: temporal_changeme
+        host: temporal-postgres
+        port: 5432
+        database: temporal
+        maxConnections: 20
+        maxIdleConnections: 20
+        maxConnectionLifetime: 0s
+        visibilityMaxConns: 20
+
+server:
+  grpcPort: 7233
+  membershipPort: 6933
+  bindOnLocalHost: false
+
+services:
+  frontend:
+    rpc:
+      grpcPort: 7233
+      membershipPort: 6933
+      bindOnLocalHost: false
+  history:
+    rpc:
+      grpcPort: 6934
+      membershipPort: 6934
+      bindOnLocalHost: false
+  matching:
+    rpc:
+      grpcPort: 6935
+      membershipPort: 6935
+      bindOnLocalHost: false
+  worker:
+    rpc:
+      grpcPort: 6939
+      membershipPort: 6939
+      bindOnLocalHost: false
+
+clusterMetadata:
+  enableGlobalNamespace: false
+  failoverVersionIncrement: 10
+  masterClusterName: active
+  currentClusterName: active
+  clusterInformation:
+    active:
+      enabled: true
+      initialFailoverVersion: 0
+      rpcAddress: temporal:6933
+
+dcRedirectionPolicy:
+  policy: "noop"
+
+archival:
+  history:
+    state: "enabled"
+    enableRead: true
+    provider:
+      filestore:
+        fileMode: "0666"
+        dirMode: "0755"
+  visibility:
+    state: "enabled"
+    enableRead: true
+    provider:
+      filestore:
+        fileMode: "0666"
+        dirMode: "0755"
+
+namespaceDefaults:
+  archival:
+    history:
+      state: "enabled"
+    visibility:
+      state: "enabled"
+
+publicClient:
+  hostPort: "temporal:7233"
+
+dynamicConfigClient:
+  filepath: "/etc/temporal/config/dynamicconfig/docker.yaml"
+  pollInterval: "10s"

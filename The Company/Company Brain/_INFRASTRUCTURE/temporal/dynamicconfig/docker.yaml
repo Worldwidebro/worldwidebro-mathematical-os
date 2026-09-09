@@ -1,0 +1,48 @@
+# Dynamic configuration for Temporal Server
+
+constants:
+  TASK_QUEUE_LIMIT: 1000
+
+frontend:
+  DefaultWorkflowRetryPolicy:
+    - value:
+        initialInterval: 1s
+        backoffCoefficient: 2.0
+        maxInterval: 100s
+        maxElapsedTime: 0s
+        nonRetryableErrors: []
+
+history:
+  # History service tuning
+  EventsReapplyType:
+    - value: 1
+  MinimumRetentionDays:
+    - value: 1
+  MaximumRetentionDays:
+    - value: 365
+
+matching:
+  # Matching service tuning
+  LongPollExpirationInterval:
+    - value: 60s
+
+worker:
+  WorkerDeterministicConstructionFailureBackoffDuration:
+    - value: 5s
+
+limits:
+  # Rate limiting
+  MaxWorkflowRunLength:
+    - value: 2592000  # 30 days in seconds
+  MaxIDLength:
+    - value: 1000
+  MaxRetention:
+    - value: 31536000  # 1 year in seconds
+  MaxWorkflowBreadth:
+    - value: 100000
+  MaxWorkflowChildExecutionDepth:
+    - value: 100
+
+visibility:
+  MaxSize:
+    - value: 1000

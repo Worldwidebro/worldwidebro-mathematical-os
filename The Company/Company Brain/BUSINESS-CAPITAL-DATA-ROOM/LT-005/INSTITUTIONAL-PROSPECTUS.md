@@ -70,9 +70,29 @@ HealthRoute operates a HIPAA-compliant medical courier and dispatch platform spe
 
 **Result:** Reduce specimen failure rate from 30–40% to <5%, unlock FQHC/rural clinic revenue, achieve CLIA and CAP compliance certification.
 
+### Live Product & Strategic Position
+
+**Vercel Deployment:** https://healthroute-courier.vercel.app  
+**GitHub Repository:** https://github.com/Worldwidebro/lt-005-medical-courier-dispatch  
+
+**Strategic Goal:** Turn healthcare delivery demand into profitable completed deliveries. HealthRoute is the specialized healthcare logistics layer for Worldwidebro's transportation infrastructure (LT-011).
+
+**Portfolio Architecture:**
+```
+VEX (Portal) → WORLDWIDEBRO HOLDINGS
+            ↓
+      VENTURE PORTFOLIO
+            ↓
+    LT-011 (Dispatch Infrastructure)
+            ↓
+   LT-005 (Healthcare Specialized)
+    Specimen Transport & Compliance
+```
+
 ### Traction Today
 
 - **Live dispatch operations:** Serving 8 FQHCs and 3 independent labs in NC
+- **Production portal:** www.healthroute-courier.vercel.app (live)
 - **Fleet:** 4 temperature-controlled vehicles, GPS tracking, real-time condition monitoring
 - **Monthly routes:** 220+ pickups/deliveries per month
 - **Specimen success rate:** 94% (vs. industry average 65%)

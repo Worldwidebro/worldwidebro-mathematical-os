@@ -72,9 +72,31 @@ CareerSync operates a dual-revenue staffing model combining hands-on placement s
 
 **Result:** We get paid for placements AND for keeping people employed (retention-aligned incentive structure).
 
+### Live Product & Strategic Position
+
+**Vercel Deployment:** https://ops-staff-001-staffing.vercel.app  
+**GitHub Repository:** https://github.com/Worldwidebro/ops-staff-001-staffing  
+
+**Strategic Goal:** Match employers with workers and monetize the work lifecycle. OPS-001 supplies workforce to all other ventures (RE-001, CON-001, LT-005, LT-011) and operates as an independent revenue engine.
+
+**Portfolio Architecture:**
+```
+VEX (Portal) → WORLDWIDEBRO HOLDINGS
+            ↓
+      VENTURE PORTFOLIO
+            ↓
+   OPS-001 (Workforce Supply)
+      ↓
+  Services:
+   • RE-001 (property management staff)
+   • CON-001 (construction crews)
+   • LT-005 (courier drivers)
+   • LT-011 (dispatchers)
+```
+
 ### Traction Today
 
-- **Live placement portal:** www.careersync-staffing.vercel.app
+- **Live placement portal:** https://ops-staff-001-staffing.vercel.app  
 - **Candidate pipeline:** 1,200+ active candidates in database
 - **Employer relationships:** 45 active employer clients (target hiring: 150–200 placements/year)
 - **Placement track record:** 340 placements in the past 18 months, 78% 90-day retention rate

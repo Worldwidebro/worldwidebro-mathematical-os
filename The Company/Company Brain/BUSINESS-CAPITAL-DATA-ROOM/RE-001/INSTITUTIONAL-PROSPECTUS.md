@@ -65,9 +65,31 @@ WorldwideBro Real Estate Partners operates a hybrid nonprofit + commercial real 
 
 **Result:** Create stable housing, guaranteed government rental income, deliver dividend to nonprofit partners and investor stakeholders.
 
+### Live Product & Strategic Position
+
+**Vercel Deployment:** https://re-001-worldwidebro-holdings.vercel.app  
+**GitHub Repository:** https://github.com/Worldwidebro/re-001-worldwidebro-holdings  
+
+**Strategic Goal:** Control the real-estate opportunity → deal → asset lifecycle. RE-001 operates independently while leveraging CON-001 for renovation and OPS-001 for property management workforce.
+
+**Portfolio Architecture:**
+```
+VEX (Portal) → WORLDWIDEBRO HOLDINGS
+            ↓
+      VENTURE PORTFOLIO
+            ↓
+   RE-001 (Real Estate Operations)
+      ↓
+  Acquisition → Renovation → Lease → Manage → Exit
+     |              |              |
+  Property    CON-001      OPS-001
+  Strategy   (GC Services) (Workforce)
+```
+
 ### Traction Today
 
 - **Live property management:** 6 Section 8 properties acquired and operating
+- **Production portal:** https://re-001-worldwidebro-holdings.vercel.app  
 - **Monthly rental income:** $22K guaranteed Section 8 payments
 - **Tenant success:** 100% occupancy, zero evictions, 98% on-time rent payment
 - **Capital deployed:** $450K in acquisition + renovation (proving concept)

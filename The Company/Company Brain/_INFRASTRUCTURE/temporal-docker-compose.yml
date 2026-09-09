@@ -1,0 +1,84 @@
+version: '3.8'
+
+# Temporal Workflow Engine for LT-005 (HealthRoute Medical Courier)
+# HIPAA-compliant workflow orchestration with audit event sourcing
+# Runs alongside Neo4j, Qdrant, PostgreSQL on the infrastructure network
+
+services:
+  # PostgreSQL for Temporal persistence (separate instance)
+  temporal-postgres:
+    image: postgres:16
+    container_name: temporal-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_PASSWORD: temporal_changeme
+      POSTGRES_USER: temporal
+      POSTGRES_DB: temporal
+      PGDATA: /var/lib/postgresql/data/pgdata
+    ports:
+      - "5433:5432"
+    volumes:
+      - /Volumes/LaCie/temporal/postgres:/var/lib/postgresql/data
+    networks:
+      - infrastructure
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U temporal"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Temporal Server: Core workflow engine
+  temporal:
+    image: temporalio/server:latest
+    container_name: temporal-server
+    restart: unless-stopped
+    depends_on:
+      temporal-postgres:
+        condition: service_healthy
+    environment:
+      DB: postgres12
+      DB_PORT: 5432
+      POSTGRES_USER: temporal
+      POSTGRES_PWD: temporal_changeme
+      POSTGRES_SEEDS: temporal-postgres
+      TEMPORAL_ENVIRONMENT: production
+      LOG_LEVEL: info
+    ports:
+      - "7233:7233"      # gRPC frontend (workflow/activity clients)
+      - "6933:6933"      # gRPC internal
+      - "6934:6934"      # gRPC internal
+      - "6935:6935"      # gRPC internal
+      - "6939:6939"      # Admin API
+    volumes:
+      - ./temporal/config:/etc/temporal/config
+    networks:
+      - infrastructure
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:6939/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Temporal Web UI: Dashboard for workflow monitoring
+  temporal-ui:
+    image: temporalio/ui:latest
+    container_name: temporal-ui
+    restart: unless-stopped
+    depends_on:
+      - temporal
+    environment:
+      TEMPORAL_ADDRESS: temporal:7233
+      TEMPORAL_TLS_ENABLED: "false"
+    ports:
+      - "8080:8080"
+    networks:
+      - infrastructure
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/api/namespaces"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+networks:
+  infrastructure:
+    driver: bridge

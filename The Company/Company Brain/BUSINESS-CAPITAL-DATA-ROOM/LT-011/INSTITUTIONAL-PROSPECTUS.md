@@ -75,9 +75,28 @@ CarrierDispatch operates a hybrid logistics platform combining real-time dispatc
 
 **Result:** Small carriers reduce deadhead miles by 20–30%, eliminate cash flow crisis, gain access to 60%+ more load opportunities.
 
+### Live Product & Strategic Position
+
+**Vercel Deployment:** https://lt-011-dispatch-software.vercel.app  
+**GitHub Repository:** https://github.com/Worldwidebro/lt-011-dispatch-software  
+
+**Strategic Goal:** Become the transportation/dispatch infrastructure. LT-011 is the foundational infrastructure layer that powers LT-005 (healthcare), RE-001 (real estate), OPS-001 (workforce), and CON-001 (construction).
+
+**Portfolio Architecture:**
+```
+VEX (Portal) → WORLDWIDEBRO HOLDINGS
+            ↓
+      VENTURE PORTFOLIO
+            ↓
+   LT-011 (INFRASTRUCTURE CORE)
+   ↙    ↓    ↓    ↘
+LT-005 RE-001 OPS-001 CON-001
+  HC     RE   Staff   Constr.
+```
+
 ### Traction Today
 
-- **Live platform:** www.carrierdispatch-tms.vercel.app
+- **Live platform:** https://lt-011-dispatch-software.vercel.app  
 - **Carrier network:** 340 small carriers (<10 trucks each) live on platform
 - **Monthly load volume:** 8,500+ loads matched and factored
 - **Average carrier improvement:** 18% reduction in empty miles, 25-day payment cycle vs. 45-day average
