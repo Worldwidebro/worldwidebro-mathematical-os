@@ -5,7 +5,7 @@ aliases: ["START_HERE", "START-HERE", "starthere", "start-here", "Orientation", 
 tags: [orientation, master-index, company-brain, governance, start-here]
 status: ACTIVE
 authority: "CP-001 / CP-027"
-updated: 2026-09-05
+updated: 2026-09-09
 ---
 
 [[STARTHERE]] | [[REALITY]] | [[00_RESPECT/RESPECT|RESPECT]] | [[_MEMORY/MEMORY-OS|MEMORY-OS]] | [[_PROMPTS/10_PRE-ACTION-AWARENESS|AWARENESS]] | [[SECTOR_INDEX]] | [[00-CONSTITUTION/SECTOR-TAXONOMY-MASTER|SECTORS]] | [[INDEX]]
@@ -14,7 +14,7 @@ updated: 2026-09-05
 
 > **Canonical Document ID:** `DOC-START-001`  
 > **Authority:** Sovereign Operator & Executive Governance (CP-001 / CP-027)  
-> **Status:** LIVE ORIENTATION LEGEND — Updated 2026-09-06  
+> **Status:** LIVE ORIENTATION LEGEND — Updated 2026-09-09 | **Sep 9 Audit:** [[master-private-firm-ontology|Master Ontology]] + Sector Wiring Gaps + Finance Registry Gaps mapped  
 > **Master Operating Contract:** [[ANTIGRAVITY|ANTIGRAVITY.md]]  
 > **Universal Agent Operating Contract:** [[AGENTS|AGENTS.md]]  
 > **Respect Control Layer:** [[00_RESPECT/RESPECT|RESPECT.md]]  
@@ -48,11 +48,15 @@ Before writing code, declaring features, or making changes, read in exact sequen
 12. [[CLAUDE|CLAUDE.md]] — Live-audited infrastructure, models, and container runtime state.
 13. [[UPDATE|UPDATE.md]] — What changed in the recent working sessions.
 
+### Master Private Firm Ontology (Sep 9, 2026 — THE BLUEPRINT)
+- [[master-private-firm-ontology|Master Private Firm Ontology.md]] — **THE FOUNDATION:** 34-layer architecture showing how Principal → Family → Private Firm → Holdings → Ventures → Markets → Customers → Revenue feeds back to Capital. Shows that all systems (sectors, ventures, metrics, agents, Neo4j, Obsidian) are views of one graph, not separate databases. **Next phase:** Build PRIVATE-FIRM-ONTOLOGY.xml so all systems speak one vocabulary.
+
 ### Capital & Holding Company Architecture (NEW)
 - [[WORLDWIDEBRO-HOLDINGS-MASTER-OPERATING-MANUAL]] — Master 789-venture holding company framework (structure, governance, capital allocation, exits)
 - [[00_ENTERPRISE_BLUEPRINT|BUSINESS-CAPITAL-DATA-ROOM/00_ENTERPRISE_BLUEPRINT.md]] — Family office architecture (Family Trust → Asset/IP/Admin LLCs → Operating C-Corp)
-- [[CAPITAL-READINESS-ENGINE]] — 5-venture capital readiness engine (pilot for 789-venture model)
+- [[CAPITAL-READINESS-ENGINE]] — 5-venture capital readiness engine (pilot for 789-venture model); only 5 of 789 ventures have financial profiles
 - [[FINANCIAL-ECOSYSTEM-MAPPING|BUSINESS-CAPITAL-DATA-ROOM/FINANCIAL-ECOSYSTEM-MAPPING.md]] — 12-layer financial OS for ventures
+- **Business Metric Registry** (Sep 9 planned) — CFA-framework + 12 research libraries + 500 seed metrics + 789-venture financial profiles + Neo4j integration
 
 ### Supporting Truth & Discipline Ledgers
 - [[KILL-LIST|KILL-LIST.md]] — Formally killed or decommissioned entities.
@@ -78,13 +82,34 @@ Do not infer system state from:
 
 **Runtime evidence outranks documentation.**
 
-### Key Audited Facts (2026-09-06)
+### Known Gaps (Sep 9 Audit)
+
+> [!WARNING]
+> **6 Phantom Sector Registries:** All referenced in sector files, but missing from disk:
+> - `ventures-by-sector.yaml` (referenced in every SEC-001 through SEC-035)
+> - `repositories-by-sector.yaml`
+> - `capabilities-by-sector.yaml`
+> - `agents-by-sector.yaml`
+> - `control-planes-by-sector.yaml`
+> - `external-capabilities-by-sector.yaml`
+>
+> **Finance Data Gap:** Only 5 ventures (OPS-001, LT-005, LT-011, CON-001, RE-001) have financial readiness profiles in CAPITAL-READINESS-ENGINE.md; 784 remaining ventures have ZERO financial wiring (income distance, readiness %, monthly revenue, unit economics).
+>
+> **Neo4j Wiring:** SECTOR nodes exist conceptually, but edges missing (can't query "all ventures in SEC-024").
+>
+> **Business Metric Registry:** CFA framework + 12 research libraries defined; 500+ metrics identified but not wired to ventures. Control planes (CP-020 Capital, CP-023 Finance, CP-021 Revenue) own metric domains but no venture-level data.
+
+**Fix roadmap:** Sep 10-19 builds 6 registries + 789-venture financial profiles + Business Metric Registry schema.
+
+### Key Audited Facts (2026-09-09)
 - **Nodes Online:** Mac Studio M4 Max (`100.87.214.70`) + MacBook Air (`100.121.17.63`) via Tailscale mesh.
 - **Inference Services:** Native `exo` MLX serving `mlx-community/Qwen3.6-35B-A3B-5bit` on port `:52415`. Local Ollama (`http://localhost:11434`) running on MacBook Air serving `qwen2.5-coder:14b`, `llama3.1:8b`, and `hermes3:latest`.
 - **Traffic Controller & MCP:** OmniRoute daemon running locally on port `:20128` (`http://localhost:20128`) and Mac Studio mesh node (`http://100.87.214.70:20128`), bridged to Antigravity IDE via FastMCP adapter (`/Users/acebless/.omniroute/bin/antigravity-mcp.mjs`) exposing 110 tools.
 - **Security Engine:** Bitwarden CLI (`bw` v2026.4.1, `SEC-BITWARDEN-001`) managing zero-knowledge secrets.
-- **Databases:** Healthy `civos_neo4j` on ports `:7474`/`:7687` (20,363 edges synced); `civos_qdrant` on `:6333`; PostgreSQL on `:5432`.
+- **Databases:** Healthy `civos_neo4j` on ports `:7474`/`:7687` (20,363 edges synced); `civos_qdrant` on `:6333`; PostgreSQL on `:5432`. **Neo4j gap:** SECTOR nodes exist but no edges from ventures.
 - **Observability:** OpenObserve telemetry platform on port `:5080`.
+- **Sector Taxonomy:** 35 sectors (SEC-001 to SEC-035) LIVE with proper wikilinks and navigation; 6 sector-scoped registries referenced but missing from disk.
+- **Control Planes:** CP-001 to CP-030 all mapped to sectors, Neo4j synced (2026-09-09). CP-023 (Finance), CP-020 (Capital), CP-021 (Revenue) own financial metrics but venture-level data missing.
 - **Known Issues:** Container `t7shield-neo4j-1` is crash-looping. Mac Studio has 4 overlapping Docker Compose projects (`civos_*`, `t7shield-*`, `spinup-*`, `buzz-*`).
 - **Commercial State:** 0 paying customers, $0 revenue, 0 active commercial offers in market.
 - **Code Reality:** 177 owned repos have verifiable code manifests; 618 are venture paperwork templates; 893 owned repos and 904 external capability universe repos cataloged.
@@ -383,6 +408,9 @@ Agent Enablement via 3 Knowledge Graph Capabilities:
 - **Need data orientation?** → [[START-HERE-DATA|START-HERE-DATA.md]]
 - **Need governance orientation?** → [[START-HERE-GOVERNANCE|START-HERE-GOVERNANCE.md]]
 - **Need research orientation?** → [[START-HERE-RESEARCH|START-HERE-RESEARCH.md]]
+- **Need master ontology blueprint?** → [[master-private-firm-ontology|Master Private Firm Ontology.md]] (Sep 9: 34-layer architecture showing how all systems connect)
+- **Need sector wiring gaps?** → [[sector-taxonomy-wiki-links-phantom-registries|Sector Taxonomy Wiki Links × Reality Map]] (Sep 9: 6 phantom registries identified)
+- **Need control plane × finance wiring?** → [[control-planes-venture-finance-wiring|Control Planes × Venture Finance Wiring]] (Sep 9: CP-001 to CP-030 LIVE, but 784 ventures unfinanced)
 - **Need templates & blueprints?** → [[_TEMPLATES/README|Templates & Blueprints Gallery]]
 - **Need operational infrastructure?** → [[_INFRASTRUCTURE/README|Operational Infrastructure & Configuration Hub]]
 - **Need system evaluation & benchmarks?** → [[_EVAL/README|Operational Evaluation Harness & Benchmarking Gateway]]
