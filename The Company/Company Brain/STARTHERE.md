@@ -185,7 +185,91 @@ Company Brain classifies all operations, ventures, and capabilities across **35 
 
 ---
 
-## 10. CANONICAL REGISTRIES & INVENTORIES
+## 10. VEX RELATIONSHIP OS (Powered by Neo4j)
+
+**VEX** is the relationship intelligence layer that powers venture portfolio visibility and stakeholder connectivity across Company Brain.
+
+See [[CLAUDE.md#-naming-consolidation--canonical-source-of-truth-sep-9-2026|CLAUDE.md naming consolidation]] for canonical naming authority.
+
+### Data Flow: Company Brain → Intelligence → Relationships
+
+```
+Company Brain (104 folders, institutional knowledge)
+  ├─ Wiki Links (cross-references)
+  ├─ Sector Taxonomy (35 sectors, 789 ventures)
+  └─ gbrain Indexing (273+ venture documents)
+          ↓
+    Neo4j Knowledge Graph (20,363 edges)
+  ├─ 789 Venture nodes
+  ├─ 1,200+ Person nodes
+  ├─ 300+ Investor nodes
+  ├─ 300+ Capability nodes
+  └─ ALL RELATIONSHIPS
+          ↓
+     VEX Portfolio (/portfolio)
+  ├─ Venture relationships (people, investors, partners)
+  ├─ Capability tracking (what each venture uses)
+  ├─ Revenue dashboard (Stripe → real-time updates)
+  └─ Investor intelligence (who-knows-whom, warm intros)
+```
+
+### Core Entities VEX Tracks
+
+- **Ventures** (789 mapped): Name, sector, stage, revenue, team, investors, capabilities
+- **People** (1,200+): Founders, executives, investors, advisors, partners, customers
+- **Investors** (300+): Angels, VCs, family offices, LPs, banks, lenders, grant officers
+- **Partners** (100+): Strategic, channel, distribution, technology, referral partners
+- **Capabilities** (300+): Technical skills, platforms, tools, integrations, infrastructure
+- **Capital** (tracked): Investments, commitments, equity, debt, grants, revenue
+- **Deals** (all): Investments, acquisitions, partnerships, contracts, major wins
+
+### Key Relationships VEX Powers
+
+```cypher
+(person)-[:FOUNDED]->(venture)          # Founder relationships
+(person)-[:ADVISES]->(venture)          # Advisor assignments
+(investor)-[:INVESTED_IN]->(venture)    # Capital deployed
+(venture)-[:USES]->(capability)         # Tech stack
+(venture)-[:OPERATES_IN]->(sector)      # Sector assignment
+(person)-[:INTRODUCED_BY]->(person)     # Intro chain
+(person)-[:KNOWS]->(investor)           # Network connections
+(deal)-[:CONNECTS]->(investor)          # Deal relationships
+```
+
+### How Updates Flow
+
+1. Update Company Brain wiki link or sector taxonomy
+2. gbrain re-indexes the document
+3. Sync script detects change & pushes to Neo4j
+4. VEX API queries Neo4j and refreshes UI
+5. Dashboard shows live relationships (no manual entry needed)
+
+### Example VEX Queries
+
+```cypher
+# Show all relationships for a venture
+MATCH (v:Venture {id: 'OPS-001'})-[r]-(n)
+RETURN n, TYPE(r), properties(r)
+
+# Find investors who know founders of target venture
+MATCH (i:Investor)-[:KNOWS]-(p:Person)-[:FOUNDED]->(v:Venture {id: 'LT-005'})
+RETURN DISTINCT i, p, v
+
+# Show dormant relationships (90+ days)
+MATCH (p:Person)-[r:INTERACTED_WITH]->(v:Venture)
+WHERE r.last_interaction < date.today() - duration('P90D')
+RETURN p, v, r.last_interaction
+
+# Most connected people in venture ecosystem
+MATCH (p:Person)-[r]->(v:Venture)
+RETURN p, COUNT(r) as connection_count ORDER BY connection_count DESC
+```
+
+**Authority:** [[CLAUDE.md|CLAUDE.md]] Naming Consolidation (Sep 9, 2026) | **Status:** Phase 1 Implementation (Sep 9-22)
+
+---
+
+## 11. CANONICAL REGISTRIES & INVENTORIES
 
 All verified ground-truth registries are located under [[_REGISTRIES/]]:
 - [[_REGISTRIES/CANONICAL/NAVIGATION_ALIASES.yaml|NAVIGATION_ALIASES.yaml]] — Wiki link reference. **All document aliases in one place.**
@@ -209,7 +293,7 @@ All verified ground-truth registries are located under [[_REGISTRIES/]]:
 
 ---
 
-## 11. COGNITIVE & ETHICAL CONTROL LAYERS
+## 12. COGNITIVE & ETHICAL CONTROL LAYERS
 
 - **Respect Control Layer:** [[00_RESPECT/RESPECT|RESPECT.md]] & [[00_RESPECT/RESPECT-OS|RESPECT-OS.md]] (20 Core Rules, Boundaries, Agency, Truth).
 - **Memory Operating System:** [[_MEMORY/MEMORY-OS|MEMORY-OS.md]], [[_MEMORY/MEMORY-MODEL|MEMORY-MODEL.md]], and [[_MEMORY/MEMORY-ARCHITECTURE|MEMORY-ARCHITECTURE.md]].
@@ -218,7 +302,7 @@ All verified ground-truth registries are located under [[_REGISTRIES/]]:
 
 ---
 
-## 11. BEFORE CHANGING ANYTHING
+## 13. BEFORE CHANGING ANYTHING
 
 1. **Read [[STARTHERE|STARTHERE.md]], [[REALITY|REALITY.md]], and [[AGENTS|AGENTS.md]].**
 2. **Read relevant subsystem documentation.**
@@ -232,7 +316,7 @@ All verified ground-truth registries are located under [[_REGISTRIES/]]:
 
 ---
 
-## 12. CHANGE LOOP
+## 14. CHANGE LOOP
 
 ```text
 DISCOVER ──> UNDERSTAND ──> VERIFY ──> PLAN ──> CHANGE ──> TEST ──> DEPLOY ──> OBSERVE ──> VERIFY ──> DOCUMENT ──> UPDATE
@@ -240,7 +324,7 @@ DISCOVER ──> UNDERSTAND ──> VERIFY ──> PLAN ──> CHANGE ──> T
 
 ---
 
-## 13. TRUTH MODEL
+## 15. TRUTH MODEL
 
 Every entity and claim in Company Brain holds one of seven truth states:
 - `VERIFIED` — Confirmed by live execution or concrete physical/financial proof.
@@ -255,7 +339,7 @@ Every entity and claim in Company Brain holds one of seven truth states:
 
 ---
 
-## 14. PHASE 1 EXECUTION (Sep 6-19, 2026)
+## 16. PHASE 1 EXECUTION (Sep 6-19, 2026)
 
 Agent Enablement via 3 Knowledge Graph Capabilities:
 
@@ -269,7 +353,7 @@ Agent Enablement via 3 Knowledge Graph Capabilities:
 
 ---
 
-## 15. WHERE TO GO NEXT
+## 17. WHERE TO GO NEXT
 
 - **Need a document?** → [[_REGISTRIES/CANONICAL/NAVIGATION_ALIASES.yaml|NAVIGATION_ALIASES.yaml]] (all wiki links + aliases)
 - **Need file format guidance?** → [[_REGISTRIES/CANONICAL/FILE_FORMAT_REGISTRY.yaml|FILE_FORMAT_REGISTRY.yaml]] (canonical formats, conversion engines, privacy tiers)
