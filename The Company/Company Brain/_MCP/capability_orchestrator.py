@@ -321,7 +321,8 @@ class CapabilityOrchestrator:
 
             # Store output
             if result.get('status') == 'success' and result.get('output'):
-                stage_outputs[cap_id] = result['output']
+                # Flatten capability output into stage outputs
+                stage_outputs.update(result['output'])
                 stage_cost += result.get('cost_usd', 0.0)
                 stage_tokens += result.get('tokens_used', 0)
 
