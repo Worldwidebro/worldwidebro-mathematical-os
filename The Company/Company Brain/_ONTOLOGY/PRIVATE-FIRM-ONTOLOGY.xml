@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ontology>
+  <metadata>
+    <name>Master Private Firm Ontology</name>
+    <version>1.0</version>
+    <created>2026-09-09</created>
+    <authority>Company Brain (CP-001, CP-015, CP-016, CP-020)</authority>
+    <scope>Unified vocabulary across Neo4j, Obsidian, Registries, Agent-OS, Business Manual</scope>
+    <description>Complete interconnected knowledge graph for 789-venture holding company</description>
+  </metadata>
+
+  <object_classes count="12">
+    <class id="OBJ-001" name="PEOPLE" neo4j="PERSON"/>
+    <class id="OBJ-002" name="ORGANIZATIONS" neo4j="ORGANIZATION"/>
+    <class id="OBJ-003" name="CAPITAL" neo4j="CAPITAL"/>
+    <class id="OBJ-004" name="ASSETS" neo4j="ASSET"/>
+    <class id="OBJ-005" name="VENTURES" neo4j="VENTURE"/>
+    <class id="OBJ-006" name="MARKETS" neo4j="MARKET"/>
+    <class id="OBJ-007" name="CUSTOMERS" neo4j="CUSTOMER"/>
+    <class id="OBJ-008" name="PRODUCTS" neo4j="PRODUCT"/>
+    <class id="OBJ-009" name="DEALS" neo4j="DEAL"/>
+    <class id="OBJ-010" name="KNOWLEDGE" neo4j="KNOWLEDGE"/>
+    <class id="OBJ-011" name="ACTIONS" neo4j="ACTION"/>
+    <class id="OBJ-012" name="PROOF" neo4j="PROOF"/>
+  </object_classes>
+
+  <relationships count="12">
+    <rel id="REL-001" name="OWNS" neo4j=":OWNS"/>
+    <rel id="REL-002" name="CONTROLS" neo4j=":CONTROLS"/>
+    <rel id="REL-003" name="OPERATES" neo4j=":OPERATES"/>
+    <rel id="REL-004" name="INVESTS-IN" neo4j=":INVESTS_IN"/>
+    <rel id="REL-005" name="ACQUIRES" neo4j=":ACQUIRES"/>
+    <rel id="REL-006" name="PARTNERS-WITH" neo4j=":PARTNERS_WITH"/>
+    <rel id="REL-007" name="SERVES" neo4j=":SERVES"/>
+    <rel id="REL-008" name="SELLS-TO" neo4j=":SELLS_TO"/>
+    <rel id="REL-009" name="GENERATES" neo4j=":GENERATES"/>
+    <rel id="REL-010" name="ALLOCATES" neo4j=":ALLOCATES"/>
+    <rel id="REL-011" name="DEPENDS-ON" neo4j=":DEPENDS_ON"/>
+    <rel id="REL-012" name="PROVES" neo4j=":PROVES"/>
+  </relationships>
+
+  <control_planes version="1.1" total="33">
+    <cp id="CP-001" name="Enterprise" domain="portfolio"/>
+    <cp id="CP-020" name="Capital" domain="funding"/>
+    <cp id="CP-021" name="Revenue" domain="sales"/>
+    <cp id="CP-023" name="Finance" domain="accounting"/>
+    <cp id="CP-031" name="Sustainability" domain="esg"/>
+    <cp id="CP-032" name="AI Governance" domain="models"/>
+    <cp id="CP-033" name="Privacy" domain="security"/>
+  </control_planes>
+
+  <systems>
+    <system name="Neo4j">
+      <node_types>SECTOR, VENTURE, CONTROLPLANE, METRIC, VALUE, PERSON, ORGANIZATION, CAPITAL</node_types>
+      <relationships>BELONGS_TO, MANAGES, OWNS, HAS_METRIC, HAS_VALUE, OF_METRIC, FUNDS</relationships>
+    </system>
+
+    <system name="Obsidian">
+      <doc_types>SECTOR-*.md, VENTURE-*.md, CONTROL-PLANE-*.md, METRIC-*.md, BUSINESS-MANUAL-*.md</doc_types>
+      <index>[[SECTOR_INDEX]], [[VENTURE_INDEX]], [[CONTROL_PLANES_BY_SECTOR]], [[BUSINESS_METRIC_REGISTRY]]</index>
+    </system>
+
+    <system name="Registries">
+      <files>ventures-by-sector.yaml, control-planes-by-sector.yaml, BUSINESS-METRIC-REGISTRY.yaml, REPOSITORY_REGISTRY.yaml</files>
+      <key_field>venture_id, sector_id, control_plane, metric_id</key_field>
+    </system>
+
+    <system name="Agent-OS">
+      <entities>Agents, Tools, Workflows, Memory, Identity</entities>
+      <context>Neo4j queries, Registry lookups, Business Manual, Supabase, ClickUp</context>
+    </system>
+
+    <system name="Business Manual">
+      <sections>50 sections covering entity, ownership, governance, strategy, business model, market, customer, product, pricing, sales, marketing, revenue, operations, supply chain, people, technology, data, AI, accounting, financial statements, cash flow, capital, credit, fintech, investment, valuation, deals, M&A, tax, legal, risk, compliance, security, insurance, real estate, treasury, portfolio, capital allocation, performance, benchmarking, forecasting, scenario analysis, stress testing, exit, succession, philanthropy, family office, knowledge, proof</sections>
+    </system>
+  </systems>
+
+  <master_loop closure="closed">
+    <node name="PEOPLE" next="ORGANIZATIONS"/>
+    <node name="ORGANIZATIONS" next="OWNERSHIP"/>
+    <node name="CAPITAL" next="VENTURES"/>
+    <node name="VENTURES" next="MARKETS"/>
+    <node name="MARKETS" next="CUSTOMERS"/>
+    <node name="CUSTOMERS" next="REVENUE"/>
+    <node name="REVENUE" next="CAPITAL"/>
+  </master_loop>
+
+  <sync_markers>
+    <marker system="Neo4j" entity="VENTURE" sync="realtime"/>
+    <marker system="Obsidian" entity="docs" sync="hourly"/>
+    <marker system="Registries" entity="YAML" sync="daily"/>
+    <marker system="Supabase" entity="ventures" sync="realtime"/>
+    <marker system="ClickUp" entity="tasks" sync="hourly"/>
+  </sync_markers>
+
+  <status>
+    <layers_implemented>34 (Principal → Family → Firm → Holdings → Ventures → Markets → Customers → Revenue → Capital → closed loop)</layers_implemented>
+    <object_classes_defined>12</object_classes_defined>
+    <relationships_defined>12</relationships_defined>
+    <control_planes_active>33 (CP-001 to CP-033)</control_planes_active>
+    <neo4j_nodes>1102 VENTURE + 35 SECTOR + 33 CONTROLPLANE + 80 METRIC + 30 VALUE</neo4j_nodes>
+    <neo4j_edges>1102 BELONGS_TO + 111 MANAGES + 74 OWNS + 88160 HAS_METRIC + 45 HAS_VALUE</neo4j_edges>
+    <ventures_complete>1102 (18 explicit + 1084 synthetic, all mapped to sector)</ventures_complete>
+    <metrics_complete>80 (Tier-1 CFA framework metrics, Tier-2 pending)</metrics_complete>
+    <business_manual_sections>50 (canonical sections for all ventures)</business_manual_sections>
+    <research_libraries>12 (Business Metrics, Finance, Valuation, PE, VC, Banking, Lending, Payments, Insurance, Family Office, etc.)</research_libraries>
+  </status>
+
+</ontology>
