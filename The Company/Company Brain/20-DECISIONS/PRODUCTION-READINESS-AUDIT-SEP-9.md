@@ -1,11 +1,11 @@
 # PRODUCTION READINESS AUDIT — Sep 9, 2026
 
-## VERCEL DEPLOYMENTS & URLs
+## VERCEL DEPLOYMENTS & URLs (Verified Sep 10, 2026)
 
 | Venture | Vercel URL | HTTP Status | Type | Status |
 |---------|---|---|---|---|
 | **OPS-001** | https://ops-staff-001-staffing.vercel.app/ | ✅ 200 | Next.js | ✅ Live |
-| **CON-001** | https://con-001-construction.vercel.app/ | ✅ 200 | Next.js | ✅ Live |
+| **CON-001** | https://con-001-ace-construction.vercel.app/ | ✅ 200 | Next.js | ✅ Live |
 | **LT-005** | https://healthroute-courier.vercel.app/ | ✅ 200 | Node.js | ✅ Live |
 | **LT-011** | https://lt-011-dispatch-software.vercel.app/ | ✅ 200 | Vercel | ✅ Live |
 | **RE-001** | https://re-001-worldwidebro-holdings.vercel.app/ | ✅ 200 | Next.js | ✅ Live |
