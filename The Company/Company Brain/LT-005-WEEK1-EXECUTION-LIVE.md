@@ -9,32 +9,33 @@
 
 ### 🎯 ACTION #1: DRIVER RECRUITMENT (TODAY - Sep 10)
 **Timeline:** 2-3 hours  
-**Owner:** Revenue operations lead or ops coordinator  
+**Owner:** You (direct recruitment)  
 **Blocker Status:** CRITICAL PATH (no drivers = no deliveries)  
 
-#### What to Do:
+#### What to Do (Independent Recruitment):
 ```
-Contact: OPS-STAFF-001 recruiting system
-Request: 3 drivers needed by Sep 12 (Thu morning)
-Requirements:
-  - Valid driver's license (verified)
-  - Vehicle preferred (own car or company vehicle)
-  - Clean driving record
-  - Flexible availability (part-time OK)
-  - HIPAA training willing (2 hours)
+Channels:
+1. Facebook Job Groups (NC local communities)
+2. Craigslist Gigs (Raleigh/Charlotte/Durham)
+3. LinkedIn Driver Search (message active drivers)
+4. Word of Mouth (text everyone you know)
 
 Recruitment Flow:
-1. Send request to OPS-STAFF-001 ops contact
-2. They post opportunity to their network
-3. Candidates apply within 24 hours
-4. Screen candidates (phone call, 15 min each)
-5. Offer positions to top 3
-6. Schedule onboarding for Sep 12 (morning)
+1. Post to 2-3 channels with job description
+2. Collect applications (target: 5+ by 2 PM)
+3. Phone screen candidates (15 min each)
+   - Valid license? (confirm)
+   - Clean record? (ask)
+   - Available Sep 12? (must be YES)
+   - Willing to do HIPAA training? (confirm)
+4. Offer positions to top 3
+5. Get phone numbers + confirm for Sep 12 morning
 
-Talking Points for OPS-STAFF-001:
-"We're launching medical courier service. Need 3 flexible drivers
-for same-day medical specimen delivery (short routes, higher pay).
-If they do well, can scale to full-time. Can you help us recruit?"
+Job Description:
+"Medical Courier Drivers — Flexible Hours
+Same-day medical specimen delivery. $25-30/delivery.
+Requirements: Valid license, clean record, vehicle preferred.
+Available starting Sep 12. Interested? Reply with phone number."
 ```
 
 #### Success Criteria:

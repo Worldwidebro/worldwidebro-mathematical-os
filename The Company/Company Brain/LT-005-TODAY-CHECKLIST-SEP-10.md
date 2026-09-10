@@ -4,7 +4,7 @@
 ---
 
 ## ⏰ TIMELINE: 3-4 hours of work
-- **Now - 12 PM:** Recruit drivers (urgent)
+- **Now - 12 PM:** Recruit drivers (direct recruitment)
 - **12 PM - 1 PM:** Prepare prospect list + phone numbers
 - **1 PM - 2 PM:** Read + practice script
 - **2 PM - 4 PM:** Verify Stripe + Supabase setup
@@ -12,45 +12,83 @@
 
 ---
 
-## 🚨 HIGHEST PRIORITY: RECRUIT DRIVERS
+## 🚨 HIGHEST PRIORITY: RECRUIT DRIVERS (INDEPENDENT)
 
-**TASK:** Contact OPS-STAFF-001 ops coordinator + post recruiting request
+**TASK:** Post driver recruitment job + start recruiting directly
 
-**What to send:**
+**Direct Recruitment Channels (Choose 2-3):**
+
+### Option A: Facebook Groups + Local Community
 ```
-Subject: URGENT: Recruit 3 Medical Delivery Drivers by Sep 12
+Post to:
+- NC Local Job Groups (Search "North Carolina jobs" on Facebook)
+- Raleigh/Charlotte/Durham community groups
+- Gig work groups
 
-Hi [OPS-STAFF-001 ops contact],
+Message:
+"🚗 Medical Courier Drivers Needed — Flexible Hours
 
-We're launching HealthRoute Medical Courier and need 3 drivers ASAP.
+We're launching a medical courier service and need 3 drivers ASAP.
+
+What you'll do:
+- Same-day medical specimen delivery (short routes, high pay)
+- Temperature-controlled transport
+- Proof of delivery documentation
+- Work flexible hours (part-time OK)
 
 Requirements:
-- Valid driver's license (verified)
-- Vehicle preferred or willing to use company vehicle
-- Clean driving record
-- Available Sep 12-15 (trial period) + potential ongoing work
-- HIPAA training willing (2 hours)
-- Can start deliveries Thursday morning (Sep 12)
+✅ Valid driver's license
+✅ Clean driving record  
+✅ Vehicle preferred (or willing to use company vehicle)
+✅ Available starting Sep 12
+✅ Willing to do 2-hour HIPAA training
 
-Compensation: $25-30/delivery (based on performance)
-Opportunity: If trial succeeds, this scales to full-time equivalent
+Compensation: $25-30 per delivery
+Opportunity: If trial succeeds, scales to full-time
 
-Can you post this to your network and send me candidates by COB tomorrow?
-
-Thanks,
-[Your Name]
-[Your Phone]
+Interested? Reply with your phone number.
+Contact: [YOUR PHONE] or [YOUR EMAIL]"
 ```
 
-**Success Criteria:**
-- [ ] Message sent to OPS-STAFF-001 by 12 PM
-- [ ] Target: 3+ drivers confirmed by EOD tomorrow (Sep 10)
-- [ ] All have valid licenses + available Sep 12 morning
+### Option B: Craigslist Gigs
+```
+Go to: craigslist.org → Raleigh/Charlotte/Durham → Gigs
+Post identical message above
+```
 
-**RISK MITIGATION:** If no response from OPS-STAFF-001 by 2 PM today:
-- Post to: Facebook local job groups + LinkedIn + Craigslist
-- Message: "Medical delivery drivers needed — flexible hours, $25-30/delivery"
-- Alternative: Can recruit manually by Friday morning (adds 1 day delay)
+### Option C: LinkedIn Outreach
+```
+Search: "Delivery drivers" OR "Courier drivers" in NC
+Send: Personalized message with job offer
+Message: "Hi [Name], we're hiring medical courier drivers starting Sep 12.
+Flexible hours, $25-30/delivery. Interested?"
+```
+
+### Option D: Word of Mouth (Fastest)
+```
+Text/call everyone you know:
+- "Know any reliable drivers? We're hiring medical couriers for Sep 12.
+  $25-30/delivery, flexible. Can you recommend someone?"
+  
+Ask them to share with their network.
+```
+
+**Target:** Get applications by 2 PM today, interview by 3-4 PM, confirm 3 drivers by EOD
+
+**Success Criteria:**
+- [ ] Posts made to 2-3 channels (Facebook, Craigslist, LinkedIn)
+- [ ] 5+ applications received by 2 PM
+- [ ] Phone interviews completed (15 min each)
+- [ ] 3+ drivers confirmed + phone numbers collected
+- [ ] All have valid licenses (ask them to confirm)
+- [ ] All available Sep 12 morning (confirm in writing)
+
+**Vetting Questions (During Phone Interview):**
+1. "How long have you been driving?" → (At least 5 years clean record)
+2. "Do you have a reliable vehicle?" → (Yes = good, "can use one" = OK)
+3. "Any traffic violations in last 2 years?" → (Should be NO)
+4. "Can you start Thursday morning?" → (Must be YES)
+5. "Are you comfortable with HIPAA training?" → (Should be YES/willing)
 
 ---
 
@@ -230,10 +268,11 @@ The rest flows.
 
 ## BACKUP PLANS (If Something Goes Wrong Today)
 
-**If drivers can't be recruited by tomorrow:**
-- Start with manual deliveries yourself + one hired driver
-- Recruit 2-3 more drivers during the week
-- Still execute sales calls (most important)
+**If drivers can't be recruited by 2 PM:**
+- Continue recruiting through evening (expand to more Facebook groups, Craigslist, LinkedIn)
+- Call local temp agencies (day labor firms often have drivers)
+- Do manual deliveries yourself if needed (can start with 2 drivers instead of 3)
+- Worst case: Start delivery operations on Sep 12-13 (staggered timeline)
 
 **If you can't reach prospects tomorrow:**
 - Leave voicemail: "Hi [Name], this is [You] from HealthRoute. I'll call back tomorrow at [TIME]. If you want to reach me: [YOUR PHONE]"
@@ -255,7 +294,8 @@ The rest flows.
 
 ## FINAL CHECKLIST (By 5 PM Today)
 
-- [ ] Drivers recruitment request sent
+- [ ] Driver recruitment posts made (2-3 channels)
+- [ ] 3+ drivers recruited + confirmed available
 - [ ] Top 10 prospects written down + phone numbers recorded
 - [ ] Cold call script read + opener practiced 5 times
 - [ ] Stripe + Supabase verified working
@@ -296,5 +336,5 @@ The rest flows.
 
 **Go time: Sep 11, 8:00 AM 🚀**
 
-You've got this. Make the calls. Report back Friday with revenue.
+You've got this. Recruit drivers independently. Make the calls. Report back Friday with revenue.
 
