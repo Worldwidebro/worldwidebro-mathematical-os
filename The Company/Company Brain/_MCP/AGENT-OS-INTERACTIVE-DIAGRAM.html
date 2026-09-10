@@ -1,0 +1,499 @@
+<title>AGENT-OS Interactive Architecture Diagram</title>
+<style>
+:root {
+  --bg: #0f172a;
+  --text: #f1f5f9;
+  --border: #334155;
+  --layer-bg: #1e293b;
+  --layer-color: #a855f7;
+  --layer-text: #e9d5ff;
+  --agent-color: #06b6d4;
+  --venture-color: #10b981;
+  --data-color: #f59e0b;
+  --flow-color: #ec4899;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f8f9fa;
+    --text: #1a1a1a;
+    --border: #d1d5db;
+    --layer-bg: #ffffff;
+    --layer-color: #9333ea;
+    --layer-text: #581c87;
+    --agent-color: #0891b2;
+    --venture-color: #059669;
+    --data-color: #d97706;
+    --flow-color: #db2777;
+  }
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--bg); color: var(--text); font-family: "SF Mono", Monaco, monospace; font-size: 13px; line-height: 1.4; padding: 20px; }
+.container { max-width: 100vw; overflow-x: auto; }
+svg { background: var(--bg); }
+.header { margin-bottom: 20px; }
+.header h1 { font-size: 24px; margin-bottom: 4px; }
+.header p { color: #888; font-size: 12px; }
+.controls { display: flex; gap: 12px; margin-bottom: 20px; flex-wrap: wrap; }
+button { background: var(--layer-color); color: white; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 12px; }
+button:hover { opacity: 0.9; }
+.tabs { display: flex; gap: 8px; margin-bottom: 20px; border-bottom: 1px solid var(--border); }
+.tab { padding: 8px 16px; cursor: pointer; border-bottom: 2px solid transparent; font-size: 12px; }
+.tab.active { border-bottom-color: var(--layer-color); color: var(--layer-color); }
+.diagram { display: none; }
+.diagram.active { display: block; }
+.flow-list { background: var(--layer-bg); padding: 16px; border-radius: 8px; }
+.flow-item { margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid var(--border); }
+.flow-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.flow-title { color: var(--flow-color); font-weight: bold; margin-bottom: 8px; }
+.flow-step { margin: 4px 0; margin-left: 12px; display: flex; gap: 8px; }
+.step-arrow { color: var(--flow-color); width: 20px; }
+.authority-table { width: 100%; border-collapse: collapse; background: var(--layer-bg); }
+.authority-table th, .authority-table td { padding: 8px; text-align: left; border-bottom: 1px solid var(--border); }
+.authority-table th { background: var(--layer-color); color: white; }
+.authority-table tr:hover { background: rgba(255,255,255,0.05); }
+.legend { display: flex; gap: 20px; flex-wrap: wrap; margin: 20px 0; font-size: 12px; }
+.legend-item { display: flex; align-items: center; gap: 8px; }
+.legend-box { width: 16px; height: 16px; border-radius: 3px; }
+</style>
+
+<div class="container">
+  <div class="header">
+    <h1>🧠 AGENT-OS Interactive Architecture</h1>
+    <p>13-layer multi-agent operating system for 789 ventures, dynamic team assembly, Neo4j knowledge graph</p>
+  </div>
+
+  <div class="controls">
+    <button onclick="downloadDiagram()">📥 Download SVG</button>
+    <button onclick="copyJSON()">📋 Copy Archify JSON</button>
+    <button onclick="togglePresentation()">🎯 Presentation Mode</button>
+  </div>
+
+  <div class="legend">
+    <div class="legend-item">
+      <div class="legend-box" style="background: var(--layer-color);"></div>
+      <span>13 Layers (Governance → Specialists)</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-box" style="background: var(--agent-color);"></div>
+      <span>16 Core Agents + 230 Specialists</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-box" style="background: var(--venture-color);"></div>
+      <span>789 Ventures (3 pilot shown)</span>
+    </div>
+    <div class="legend-item">
+      <div class="legend-box" style="background: var(--data-color);"></div>
+      <span>Data Systems (Neo4j, Qdrant, Supabase)</span>
+    </div>
+  </div>
+
+  <div class="tabs">
+    <div class="tab active" onclick="switchTab('blueprint')">📐 Blueprint</div>
+    <div class="tab" onclick="switchTab('flows')">🔄 Data Flows</div>
+    <div class="tab" onclick="switchTab('authority')">👑 Authority Model</div>
+    <div class="tab" onclick="switchTab('timeline')">📅 Phase 1 Timeline</div>
+  </div>
+
+  <!-- BLUEPRINT VIEW -->
+  <div id="blueprint" class="diagram active">
+    <svg width="1200" height="2000" viewBox="0 0 1200 2000">
+      <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+          <polygon points="0 0, 10 3, 0 6" fill="var(--flow-color)" />
+        </marker>
+      </defs>
+
+      <!-- LAYERS (vertical stack on left) -->
+      <g id="layers">
+        <!-- L1: Governance -->
+        <rect x="20" y="50" width="200" height="100" fill="var(--layer-bg)" stroke="var(--layer-color)" stroke-width="2" rx="4"/>
+        <text x="120" y="85" text-anchor="middle" fill="var(--layer-color)" font-weight="bold">L1: Governance</text>
+        <text x="120" y="105" text-anchor="middle" fill="var(--text)" font-size="11">Decision authority</text>
+        <text x="120" y="120" text-anchor="middle" fill="var(--text)" font-size="11">Risk gates, audit trail</text>
+
+        <!-- L2-L11 (compact) -->
+        <g id="layers-2-11">
+          <rect x="20" y="160" width="200" height="80" fill="var(--layer-bg)" stroke="var(--layer-color)" stroke-width="1" rx="3"/>
+          <text x="120" y="185" text-anchor="middle" fill="var(--layer-color)" font-weight="bold">L2-L11: Infrastructure</text>
+          <text x="120" y="205" text-anchor="middle" fill="var(--text)" font-size="10">Registry, Identity, Orchestrator, Memory,</text>
+          <text x="120" y="220" text-anchor="middle" fill="var(--text)" font-size="10">Knowledge Graph, Tools, Workflow, Evaluation,</text>
+        </g>
+
+        <!-- L12: Domain Agents -->
+        <rect x="20" y="250" width="200" height="100" fill="var(--layer-bg)" stroke="var(--agent-color)" stroke-width="2" rx="4"/>
+        <text x="120" y="285" text-anchor="middle" fill="var(--agent-color)" font-weight="bold">L12: Core Agents (16)</text>
+        <text x="120" y="305" text-anchor="middle" fill="var(--text)" font-size="10">Revenue, Finance, Ops, Research,</text>
+        <text x="120" y="320" text-anchor="middle" fill="var(--text)" font-size="10">Sales, Product, Tech, HR</text>
+
+        <!-- L13: Specialists -->
+        <rect x="20" y="360" width="200" height="100" fill="var(--layer-bg)" stroke="var(--agent-color)" stroke-width="2" rx="4"/>
+        <text x="120" y="395" text-anchor="middle" fill="var(--agent-color)" font-weight="bold">L13: Specialists (230+)</text>
+        <text x="120" y="415" text-anchor="middle" fill="var(--text)" font-size="10">Sales, Tech, Ops, Finance,</text>
+        <text x="120" y="430" text-anchor="middle" fill="var(--text)" font-size="10">Marketing, HR, Industry-specific</text>
+      </g>
+
+      <!-- DATA SYSTEMS (right side, stacked vertically) -->
+      <g id="data-systems">
+        <!-- Neo4j -->
+        <rect x="900" y="100" width="250" height="120" fill="var(--layer-bg)" stroke="var(--data-color)" stroke-width="2" rx="4"/>
+        <text x="1025" y="130" text-anchor="middle" fill="var(--data-color)" font-weight="bold">Neo4j Knowledge Graph</text>
+        <text x="1025" y="150" text-anchor="middle" fill="var(--text)" font-size="11">20,363 edges</text>
+        <text x="1025" y="170" text-anchor="middle" fill="var(--text)" font-size="10">Agents, Capabilities, Ventures,</text>
+        <text x="1025" y="185" text-anchor="middle" fill="var(--text)" font-size="10">Control Planes, Executions</text>
+        <text x="1025" y="205" text-anchor="middle" fill="var(--text)" font-size="10">📍 bolt://100.87.214.70:7687</text>
+
+        <!-- Qdrant -->
+        <rect x="900" y="240" width="250" height="120" fill="var(--layer-bg)" stroke="var(--data-color)" stroke-width="2" rx="4"/>
+        <text x="1025" y="270" text-anchor="middle" fill="var(--data-color)" font-weight="bold">Qdrant Vector Memory</text>
+        <text x="1025" y="290" text-anchor="middle" fill="var(--text)" font-size="11">17,236 vectors</text>
+        <text x="1025" y="310" text-anchor="middle" fill="var(--text)" font-size="10">Past decisions, execution traces,</text>
+        <text x="1025" y="325" text-anchor="middle" fill="var(--text)" font-size="10">success patterns, contexts</text>
+        <text x="1025" y="345" text-anchor="middle" fill="var(--text)" font-size="10">📍 http://100.87.214.70:6333</text>
+
+        <!-- Supabase -->
+        <rect x="900" y="380" width="250" height="120" fill="var(--layer-bg)" stroke="var(--data-color)" stroke-width="2" rx="4"/>
+        <text x="1025" y="410" text-anchor="middle" fill="var(--data-color)" font-weight="bold">Supabase (Transactional)</text>
+        <text x="1025" y="430" text-anchor="middle" fill="var(--text)" font-size="11">Live venture state</text>
+        <text x="1025" y="450" text-anchor="middle" fill="var(--text)" font-size="10">ventures, deals, leads, customers,</text>
+        <text x="1025" y="465" text-anchor="middle" fill="var(--text)" font-size="10">payments, job_orders</text>
+      </g>
+
+      <!-- AGENT ROUTING (center) -->
+      <g id="routing">
+        <text x="400" y="40" fill="var(--layer-color)" font-weight="bold" font-size="14">🎯 Agent Composition & Routing</text>
+
+        <!-- Agent Composition Box -->
+        <rect x="280" y="70" width="300" height="180" fill="var(--layer-bg)" stroke="var(--agent-color)" stroke-width="2" rx="4"/>
+        <text x="430" y="100" text-anchor="middle" fill="var(--agent-color)" font-weight="bold">Agent Composition Model</text>
+        <text x="290" y="125" fill="var(--text)" font-size="10">role: "Revenue Research Agent"</text>
+        <text x="290" y="145" fill="var(--text)" font-size="10">context: venture_id, sector, memory, graph</text>
+        <text x="290" y="165" fill="var(--text)" font-size="10">tools: [search, email, log_call, record_deal]</text>
+        <text x="290" y="185" fill="var(--text)" font-size="10">authority:</text>
+        <text x="310" y="205" fill="var(--text)" font-size="10">can_decide: [prospect_priority, content]</text>
+        <text x="310" y="220" fill="var(--text)" font-size="10">escalates_to: [CFO: $50K+, CEO: strategy]</text>
+
+        <!-- Query Flow -->
+        <line x1="430" y1="260" x2="430" y2="300" stroke="var(--flow-color)" stroke-width="2"/>
+        <text x="435" y="285" fill="var(--flow-color)" font-size="11">Venture needs capability</text>
+
+        <rect x="280" y="310" width="300" height="100" fill="var(--layer-bg)" stroke="var(--flow-color)" stroke-width="2" rx="4"/>
+        <text x="430" y="335" text-anchor="middle" fill="var(--flow-color)" font-weight="bold">Neo4j Query</text>
+        <text x="290" y="360" fill="var(--text)" font-size="10">MATCH (a:AGENT) -[:PROVIDES]</text>
+        <text x="290" y="378" fill="var(--text)" font-size="10">-> (c:CAPABILITY) RETURN a</text>
+
+        <!-- Results -->
+        <line x1="430" y1="420" x2="430" y2="460" stroke="var(--flow-color)" stroke-width="2"/>
+        <text x="435" y="445" fill="var(--flow-color)" font-size="11">Assemble context</text>
+
+        <rect x="280" y="470" width="300" height="120" fill="var(--layer-bg)" stroke="var(--agent-color)" stroke-width="2" rx="4"/>
+        <text x="430" y="500" text-anchor="middle" fill="var(--agent-color)" font-weight="bold">Load from Qdrant & Neo4j</text>
+        <text x="290" y="525" fill="var(--text)" font-size="10">✓ Top 10 similar past executions</text>
+        <text x="290" y="545" fill="var(--text)" font-size="10">✓ Success rates & patterns</text>
+        <text x="290" y="565" fill="var(--text)" font-size="10">✓ Execution traces & outcomes</text>
+      </g>
+
+      <!-- VENTURES (bottom left) -->
+      <g id="ventures">
+        <text x="130" y="650" text-anchor="middle" fill="var(--venture-color)" font-weight="bold" font-size="14">🏢 Pilot Ventures</text>
+
+        <!-- OPS-001 -->
+        <rect x="20" y="670" width="200" height="120" fill="var(--layer-bg)" stroke="var(--venture-color)" stroke-width="2" rx="4"/>
+        <text x="120" y="700" text-anchor="middle" fill="var(--venture-color)" font-weight="bold">OPS-001 (Staffing)</text>
+        <text x="120" y="720" text-anchor="middle" fill="var(--text)" font-size="11">Stage: Growth</text>
+        <text x="120" y="740" text-anchor="middle" fill="var(--text)" font-size="10">Revenue: $2.5K (1 placement)</text>
+        <text x="120" y="760" text-anchor="middle" fill="var(--text)" font-size="10">Team: Revenue + Cold-Caller + Closer</text>
+
+        <!-- CON-001 -->
+        <rect x="240" y="670" width="200" height="120" fill="var(--layer-bg)" stroke="var(--venture-color)" stroke-width="2" rx="4"/>
+        <text x="340" y="700" text-anchor="middle" fill="var(--venture-color)" font-weight="bold">CON-001 (Construction)</text>
+        <text x="340" y="720" text-anchor="middle" fill="var(--text)" font-size="11">Stage: Growth</text>
+        <text x="340" y="740" text-anchor="middle" fill="var(--text)" font-size="10">Revenue: $0 (cold calls queued)</text>
+        <text x="340" y="760" text-anchor="middle" fill="var(--text)" font-size="10">Team: Revenue + Cold-Caller + Closer</text>
+
+        <!-- LT-005 -->
+        <rect x="460" y="670" width="200" height="120" fill="var(--layer-bg)" stroke="var(--venture-color)" stroke-width="2" rx="4"/>
+        <text x="560" y="700" text-anchor="middle" fill="var(--venture-color)" font-weight="bold">LT-005 (Medical Courier)</text>
+        <text x="560" y="720" text-anchor="middle" fill="var(--text)" font-size="11">Stage: Growth</text>
+        <text x="560" y="740" text-anchor="middle" fill="var(--text)" font-size="10">Revenue: $0 (candidate delivery)</text>
+        <text x="560" y="760" text-anchor="middle" fill="var(--text)" font-size="10">Team: Tech + Operations + Research</text>
+      </g>
+
+      <!-- CONNECTIONS (arrows) -->
+      <g id="connections" stroke="var(--flow-color)" stroke-width="1.5" fill="none" opacity="0.6">
+        <!-- L4 Orchestrator → Neo4j -->
+        <line x1="220" y1="300" x2="900" y2="160"/>
+        <text x="550" y="225" fill="var(--flow-color)" font-size="10">queries agents</text>
+
+        <!-- L4 Orchestrator → Qdrant -->
+        <line x1="220" y1="310" x2="900" y2="300"/>
+        <text x="550" y="310" fill="var(--flow-color)" font-size="10">loads context</text>
+
+        <!-- L12 Core → L13 Specialists -->
+        <line x1="120" y1="350" x2="120" y2="360"/>
+        <text x="140" y="360" fill="var(--flow-color)" font-size="10">assembles from</text>
+
+        <!-- Ventures → Agents -->
+        <line x1="120" y1="670" x2="120" y2="360"/>
+        <text x="130" y="500" fill="var(--flow-color)" font-size="10">assigned to</text>
+      </g>
+
+      <!-- KEY INSIGHT -->
+      <g id="insight">
+        <rect x="280" y="800" width="620" height="140" fill="rgba(168, 85, 247, 0.1)" stroke="var(--layer-color)" stroke-width="2" rx="4"/>
+        <text x="590" y="830" text-anchor="middle" fill="var(--layer-color)" font-weight="bold" font-size="13">✨ Key Insight: Dynamic Team Assembly</text>
+        <text x="290" y="860" fill="var(--text)" font-size="11">❌ NOT: 78,900 permanent agents (789 ventures × 100 agents each)</text>
+        <text x="290" y="880" fill="var(--text)" font-size="11">✅ YES: 246 dynamic agents (16 core + 230 specialists) assembled per venture need + context</text>
+        <text x="290" y="905" fill="var(--text)" font-size="11">🧠 Each execution → Neo4j EXECUTION node + Qdrant vector → Next agent learns → System improves</text>
+      </g>
+    </svg>
+  </div>
+
+  <!-- FLOWS VIEW -->
+  <div id="flows" class="diagram" style="display: none;">
+    <div class="flow-list">
+      <div class="flow-item">
+        <div class="flow-title">💰 Revenue Flow: Cold Call → Payment</div>
+        <div class="flow-step">
+          <div class="step-arrow">↓</div>
+          <div><strong>Day 1: Opportunity</strong><br/>Staffing company: "We need 2 electricians at $30-35/hr"<br/>OPS-001 logs job order to Supabase</div>
+        </div>
+        <div class="flow-step">
+          <div class="step-arrow">↓</div>
+          <div><strong>Day 2: Candidate Delivery</strong><br/>Orchestrator queries Neo4j → "Find candidate research agents"<br/>Search candidates (TECH-040, LT-005 agents) → Send 5 candidates</div>
+        </div>
+        <div class="flow-step">
+          <div class="step-arrow">↓</div>
+          <div><strong>Days 3-5: Hiring</strong><br/>Staffing company interviews and selects 1 for $30/hr</div>
+        </div>
+        <div class="flow-step">
+          <div class="step-arrow">↓</div>
+          <div><strong>Day 14: Payment</strong><br/>Candidate works 2 weeks → Staffing company pays $2,500 placement fee → Stripe → Worldwidebro account</div>
+        </div>
+        <div class="flow-step">
+          <div class="step-arrow">↓</div>
+          <div><strong>Record Outcome</strong><br/>Revenue Agent creates Neo4j EXECUTION node: {success, revenue: $2500, duration: 14days}<br/>Add vector to Qdrant: "cold_call_with_placement_success"<br/>Next agent has 2 successful vectors in memory</div>
+        </div>
+      </div>
+
+      <div class="flow-item">
+        <div class="flow-title">🎯 Dynamic Team Assembly Flow</div>
+        <div class="flow-step">
+          <div class="step-arrow">↓</div>
+          <div><strong>Trigger</strong><br/>Venture: "We need to close deals" (OPS-001)</div>
+        </div>
+        <div class="flow-step">
+          <div class="step-arrow">↓</div>
+          <div><strong>Query Neo4j</strong><br/>MATCH (oc:CONTROL_PLANE {venture: "OPS-001"}) -[:GOVERNS]-> (a:AGENT) RETURN a</div>
+        </div>
+        <div class="flow-step">
+          <div class="step-arrow">↓</div>
+          <div><strong>Result</strong><br/>Revenue Agent, Sales Specialist (cold-caller), Closer (objection handler)</div>
+        </div>
+        <div class="flow-step">
+          <div class="step-arrow">↓</div>
+          <div><strong>Load Context</strong><br/>From Qdrant: Top 10 similar cold calls + outcomes<br/>From Neo4j: Success rate (1/10 = 10%), patterns, execution traces</div>
+        </div>
+        <div class="flow-step">
+          <div class="step-arrow">↓</div>
+          <div><strong>Create Composition</strong><br/>{role: "Revenue", context: {past_calls, success_rate, patterns}, tools: [...], authority: {...}}</div>
+        </div>
+        <div class="flow-step">
+          <div class="step-arrow">↓</div>
+          <div><strong>Execute in Parallel</strong><br/>Revenue Agent validates fit<br/>Cold-Caller makes pitch<br/>Closer handles objections</div>
+        </div>
+        <div class="flow-step">
+          <div class="step-arrow">↓</div>
+          <div><strong>Learn</strong><br/>Record result → Next cold call has better context → Success rate improves</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- AUTHORITY VIEW -->
+  <div id="authority" class="diagram" style="display: none;">
+    <table class="authority-table">
+      <thead>
+        <tr>
+          <th>Decision Type</th>
+          <th>Agent Can Decide?</th>
+          <th>Escalates To</th>
+          <th>Reason</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Prospect priority (cold calls)</td>
+          <td>✅ YES (Revenue Agent)</td>
+          <td>—</td>
+          <td>Operational detail, no financial impact</td>
+        </tr>
+        <tr>
+          <td>Email content</td>
+          <td>✅ YES (Sales Agent)</td>
+          <td>—</td>
+          <td>Marketing decision, brand aligned</td>
+        </tr>
+        <tr>
+          <td>Pricing discount &lt; $500</td>
+          <td>✅ YES (Revenue Agent)</td>
+          <td>—</td>
+          <td>Small discount, revenue impact acceptable</td>
+        </tr>
+        <tr>
+          <td>Pricing discount > $5K</td>
+          <td>❌ NO</td>
+          <td>CFO Approval</td>
+          <td>Material financial impact, must verify budget</td>
+        </tr>
+        <tr>
+          <td>Hiring decision</td>
+          <td>❌ NO</td>
+          <td>CEO + HR Agent</td>
+          <td>Strategic headcount, culture fit decision</td>
+        </tr>
+        <tr>
+          <td>New product line</td>
+          <td>❌ NO</td>
+          <td>CEO + Board</td>
+          <td>Strategic venture decision, capital allocation</td>
+        </tr>
+        <tr>
+          <td>Venture capital raise</td>
+          <td>❌ NO</td>
+          <td>CEO + CFO + Board</td>
+          <td>Dilution, cap table, strategic ownership</td>
+        </tr>
+        <tr>
+          <td>Partnership agreement</td>
+          <td>❌ NO</td>
+          <td>CEO + Legal</td>
+          <td>Long-term commitment, legal obligations</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- TIMELINE VIEW -->
+  <div id="timeline" class="diagram" style="display: none;">
+    <div class="flow-list">
+      <div class="flow-item">
+        <div class="flow-title">📅 Phase 1: Sep 12-19 (Agent OS Go-Live)</div>
+
+        <div style="margin-bottom: 16px; padding: 12px; background: var(--layer-bg); border-left: 3px solid var(--data-color); border-radius: 4px;">
+          <strong style="color: var(--data-color);">Sep 12 (Friday) - Kernel + Registries (8 hrs)</strong>
+          <div style="margin-top: 8px; font-size: 12px;">
+            ✅ Copy orchestrator.py + wire Neo4j + wire Qdrant<br/>
+            ✅ Document all 16 core agents in AGENT_REGISTRY.yaml<br/>
+            ✅ Create CAPABILITY_INDEX.yaml (route capabilities to agents)<br/>
+            ✅ Wire orchestrator to FastMCP server<br/>
+            <strong>Deliverable:</strong> Orchestrator runs, can spawn agents, logs to Neo4j
+          </div>
+        </div>
+
+        <div style="margin-bottom: 16px; padding: 12px; background: var(--layer-bg); border-left: 3px solid var(--data-color); border-radius: 4px;">
+          <strong style="color: var(--data-color);">Sep 13 (Saturday) - Index 16 Core Agents (8 hrs)</strong>
+          <div style="margin-top: 8px; font-size: 12px;">
+            ✅ Map all 16 agents in AGENT_REGISTRY.yaml<br/>
+            ✅ Assign capabilities to each<br/>
+            <strong>Deliverable:</strong> All 16 agents indexed + queryable
+          </div>
+        </div>
+
+        <div style="margin-bottom: 16px; padding: 12px; background: var(--layer-bg); border-left: 3px solid var(--data-color); border-radius: 4px;">
+          <strong style="color: var(--data-color);">Sep 14 (Sunday) - Agency Agent Import (8 hrs)</strong>
+          <div style="margin-top: 8px; font-size: 12px;">
+            ✅ Import 230+ Agency Agents as Layer 13<br/>
+            ✅ Create role templates (cold-caller, closer, researcher, etc.)<br/>
+            <strong>Deliverable:</strong> 230+ specialists live, assigned to ventures
+          </div>
+        </div>
+
+        <div style="margin-bottom: 16px; padding: 12px; background: var(--layer-bg); border-left: 3px solid var(--data-color); border-radius: 4px;">
+          <strong style="color: var(--data-color);">Sep 15 (Monday) - Evaluation Framework (6 hrs)</strong>
+          <div style="margin-top: 8px; font-size: 12px;">
+            ✅ Build evaluation_manager.py<br/>
+            ✅ Run 50 test cases per agent<br/>
+            <strong>Deliverable:</strong> All agents promoted to "verified"
+          </div>
+        </div>
+
+        <div style="padding: 12px; background: var(--layer-bg); border-left: 3px solid var(--flow-color); border-radius: 4px;">
+          <strong style="color: var(--flow-color);">Sep 16-19 (Tue-Fri) - Live Deployment + Learning Loop</strong>
+          <div style="margin-top: 8px; font-size: 12px;">
+            ✅ Deploy 3 pilot ventures (OPS-001, CON-001, LT-005)<br/>
+            ✅ Agents execute cold calls, record outcomes to Neo4j + Qdrant<br/>
+            ✅ Verify execution_registry.jsonl fills with real data<br/>
+            <strong>Deliverable:</strong> AGENT-OS producing revenue ($2.5K+ from placements)
+          </div>
+        </div>
+      </div>
+
+      <div class="flow-item">
+        <div class="flow-title">🎯 Sep 12 Deep Dive: Wire Orchestrator</div>
+        <div style="font-size: 12px; background: var(--layer-bg); padding: 12px; border-radius: 4px;">
+          <strong>orchestrator_kernel.py structure:</strong><br/>
+          <code style="display: block; margin-top: 8px; font-family: monospace; font-size: 11px;">
+class AgentOrchestrator:<br/>
+&nbsp;&nbsp;def __init__(self, neo4j_uri, qdrant_url, registry_path):<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;self.neo4j = GraphDatabase.driver(neo4j_uri)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;self.qdrant = qdrant_client.QdrantClient(qdrant_url)<br/>
+&nbsp;&nbsp;<br/>
+&nbsp;&nbsp;def run(self, objective):<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;tasks = self.plan(objective)  # Break into tasks<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;agents = self.select_agents(tasks)  # Query Neo4j<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;results = await self.execute_parallel(agents, tasks)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;evaluation = self.evaluate(results)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;self.record_execution(Neo4j)  # Store outcome<br/>
+          </code>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function switchTab(tab) {
+  document.querySelectorAll('.diagram').forEach(d => d.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.getElementById(tab).classList.add('active');
+  event.target.classList.add('active');
+}
+
+function downloadDiagram() {
+  const svg = document.querySelector('svg');
+  const svgData = new XMLSerializer().serializeToString(svg);
+  const canvas = document.createElement('canvas');
+  const ctx = canvas.getContext('2d');
+  const img = new Image();
+  img.onload = () => {
+    canvas.width = img.width;
+    canvas.height = img.height;
+    ctx.drawImage(img, 0, 0);
+    const link = document.createElement('a');
+    link.href = canvas.toDataURL('image/png');
+    link.download = 'agent-os-architecture.png';
+    link.click();
+  };
+  img.src = 'data:image/svg+xml;base64,' + btoa(svgData);
+}
+
+function copyJSON() {
+  const json = JSON.stringify({
+    diagram: {
+      type: 'architecture',
+      title: 'AGENT-OS 13-Layer Architecture',
+      layers: 13,
+      agents: { core: 16, specialists: 230, total: 246 },
+      ventures: 789,
+      edges_neo4j: 20363,
+      vectors_qdrant: 17236
+    }
+  }, null, 2);
+  navigator.clipboard.writeText(json);
+  alert('Archify JSON copied to clipboard');
+}
+
+function togglePresentation() {
+  document.body.style.fontSize = document.body.style.fontSize === '16px' ? '13px' : '16px';
+}
+</script>

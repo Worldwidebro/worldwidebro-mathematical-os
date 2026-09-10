@@ -1,0 +1,106 @@
+{
+  "diagram": {
+    "type": "architecture",
+    "title": "AGENT-OS 13-Layer Complete Architecture",
+    "description": "Multi-agent operating system for 789 ventures with dynamic team assembly, Neo4j knowledge graph, and Qdrant memory",
+    "nodes": [
+      {"id": "layer_1_gov", "type": "layer", "label": "L1: Governance", "sublabel": "Decision authority, risk gates, audit trail", "y": 0},
+      {"id": "layer_2_reg", "type": "layer", "label": "L2: Registry", "sublabel": "Entity, capability, venture, authority registries", "y": 1},
+      {"id": "layer_3_id", "type": "layer", "label": "L3: Identity & Auth", "sublabel": "Agent identity, capability signing, tool access", "y": 2},
+      {"id": "layer_4_orch", "type": "layer", "label": "L4: Orchestrator Kernel", "sublabel": "Plan, select agents, execute async, evaluate, record", "y": 3, "emphasis": true},
+      {"id": "layer_5_mem", "type": "layer", "label": "L5: Memory Subsystem", "sublabel": "Qdrant (17K vectors) + Neo4j (20K edges) + execution registry", "y": 4},
+      {"id": "layer_6_kg", "type": "layer", "label": "L6: Knowledge Graph", "sublabel": "Neo4j entity resolution, capability coverage, execution history", "y": 5, "emphasis": true},
+      {"id": "layer_7_tools", "type": "layer", "label": "L7: Tools & Integrations", "sublabel": "OmniRoute (110 tools), Supabase, Stripe, external APIs", "y": 6},
+      {"id": "layer_8_wf", "type": "layer", "label": "L8: Workflow Engine", "sublabel": "State machine, parallel execution, branching, human gates", "y": 7},
+      {"id": "layer_9_eval", "type": "layer", "label": "L9: Evaluation", "sublabel": "Discovered → Verified → Tested → Production", "y": 8},
+      {"id": "layer_10_obs", "type": "layer", "label": "L10: Observability", "sublabel": "Execution logs, performance metrics, alerts, dashboards", "y": 9},
+      {"id": "layer_11_appr", "type": "layer", "label": "L11: Approval & Governance", "sublabel": "Pre-execution checks, escalation rules, compliance", "y": 10},
+      {"id": "layer_12_core", "type": "layer", "label": "L12: Domain Agents (16 Core)", "sublabel": "Revenue, Finance, Ops, Research, Sales, Product, Tech, HR", "y": 11},
+      {"id": "layer_13_spec", "type": "layer", "label": "L13: Specialist Library", "sublabel": "230+ Agency Agents: sales, tech, ops, finance, marketing, HR, industry-specific", "y": 12, "emphasis": true},
+
+      {"id": "agent_revenue", "type": "agent", "label": "Revenue Agent", "y": 11, "x": -2},
+      {"id": "agent_finance", "type": "agent", "label": "Finance Agent", "y": 11, "x": -1},
+      {"id": "agent_ops", "type": "agent", "label": "Ops Agent", "y": 11, "x": 0},
+      {"id": "agent_research", "type": "agent", "label": "Research Agent", "y": 11, "x": 1},
+      {"id": "agent_sales", "type": "agent", "label": "Sales Agent", "y": 11, "x": 2},
+
+      {"id": "spec_cold_caller", "type": "specialist", "label": "Cold-Call Specialist", "y": 12, "x": -2},
+      {"id": "spec_closer", "type": "specialist", "label": "Closer Specialist", "y": 12, "x": -1},
+      {"id": "spec_researcher", "type": "specialist", "label": "Research Specialist", "y": 12, "x": 0},
+      {"id": "spec_tech", "type": "specialist", "label": "Tech Specialist", "y": 12, "x": 1},
+      {"id": "spec_finance", "type": "specialist", "label": "Finance Specialist", "y": 12, "x": 2},
+
+      {"id": "neo4j", "type": "data", "label": "Neo4j (20,363 edges)", "y": 5, "x": 4, "emphasis": true},
+      {"id": "qdrant", "type": "data", "label": "Qdrant (17,236 vectors)", "y": 4, "x": 4, "emphasis": true},
+      {"id": "supabase", "type": "data", "label": "Supabase (ventures, deals, leads)", "y": 6, "x": 4},
+
+      {"id": "venture_ops001", "type": "venture", "label": "OPS-001 (Staffing)", "y": 12, "x": -4},
+      {"id": "venture_con001", "type": "venture", "label": "CON-001 (Construction)", "y": 12, "x": -5},
+      {"id": "venture_lt005", "type": "venture", "label": "LT-005 (Medical Courier)", "y": 12, "x": -3}
+    ],
+    "relationships": [
+      {"from": "layer_4_orch", "to": "layer_6_kg", "label": "queries for agents", "type": "control"},
+      {"from": "layer_4_orch", "to": "layer_5_mem", "label": "loads context", "type": "data"},
+      {"from": "layer_4_orch", "to": "layer_7_tools", "label": "invokes", "type": "execution"},
+
+      {"from": "layer_12_core", "to": "layer_13_spec", "label": "assembles teams from", "type": "composition"},
+      {"from": "layer_12_core", "to": "layer_8_wf", "label": "executed via", "type": "control"},
+
+      {"from": "layer_6_kg", "to": "neo4j", "label": "backed by", "type": "storage"},
+      {"from": "layer_5_mem", "to": "qdrant", "label": "backed by", "type": "storage"},
+      {"from": "layer_7_tools", "to": "supabase", "label": "reads/writes", "type": "data"},
+
+      {"from": "agent_revenue", "to": "layer_4_orch", "label": "reports to", "type": "control"},
+      {"from": "agent_sales", "to": "spec_cold_caller", "label": "uses", "type": "composition"},
+      {"from": "agent_sales", "to": "spec_closer", "label": "uses", "type": "composition"},
+
+      {"from": "venture_ops001", "to": "agent_revenue", "label": "assigned to", "type": "assignment"},
+      {"from": "venture_ops001", "to": "spec_cold_caller", "label": "needs", "type": "assignment"},
+      {"from": "venture_con001", "to": "agent_revenue", "label": "assigned to", "type": "assignment"},
+
+      {"from": "layer_11_appr", "to": "layer_1_gov", "label": "enforces", "type": "governance"},
+      {"from": "layer_8_wf", "to": "layer_10_obs", "label": "logs to", "type": "observability"},
+
+      {"from": "layer_9_eval", "to": "neo4j", "label": "records results", "type": "data"}
+    ],
+    "flows": [
+      {
+        "name": "Cold Call → Payment (Revenue Loop)",
+        "steps": [
+          {"label": "Day 1: Opportunity", "node": "venture_ops001"},
+          {"label": "Orchestrator assembles team", "node": "layer_4_orch"},
+          {"label": "Query: Find cold-calling agents", "node": "neo4j"},
+          {"label": "Load past calls + success rates", "node": "qdrant"},
+          {"label": "Revenue + Cold-Caller + Closer execute", "node": "layer_13_spec"},
+          {"label": "Day 14: Payment recorded", "node": "supabase"},
+          {"label": "Neo4j EXECUTION node created", "node": "neo4j"},
+          {"label": "Next agent learns (vector + graph updated)", "node": "qdrant"}
+        ]
+      },
+      {
+        "name": "Dynamic Team Assembly",
+        "steps": [
+          {"label": "Venture needs capability X", "node": "venture_ops001"},
+          {"label": "Orchestrator queries: agents with capability X", "node": "layer_4_orch"},
+          {"label": "Neo4j returns matching agents", "node": "neo4j"},
+          {"label": "Assemble context from Qdrant", "node": "qdrant"},
+          {"label": "Create agent composition (role + context + tools + authority)", "node": "layer_12_core"},
+          {"label": "Execute with parallel workflow", "node": "layer_8_wf"},
+          {"label": "Record execution + outcome", "node": "neo4j"}
+        ]
+      }
+    ],
+    "authority": {
+      "agent_can_decide": ["prospect priority", "email content", "pricing < $500"],
+      "escalates_to_cfo": ["deals > $50K", "capital allocation"],
+      "escalates_to_ceo": ["hiring", "new products", "strategy changes", "venture capital raise"]
+    },
+    "phase_1_timeline": {
+      "sep_12": "Wire orchestrator.py to Neo4j + Qdrant, create AGENT_REGISTRY.yaml",
+      "sep_13": "Index all 16 core agents",
+      "sep_14": "Import 230+ Agency Agents as Layer 13",
+      "sep_15": "Run evaluation framework (50 test cases per agent)",
+      "sep_16_19": "Live deployment, execute cold calls, record outcomes, verify learning loop"
+    }
+  }
+}

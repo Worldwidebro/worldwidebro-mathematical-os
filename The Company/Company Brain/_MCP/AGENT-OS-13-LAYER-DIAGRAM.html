@@ -1,0 +1,779 @@
+<title>AGENT-OS 13-Layer Complete Architecture</title>
+<style>
+  :root {
+    --bg: #f8f9fa;
+    --text: #1a1a1a;
+    --border: #d1d5db;
+    --layer-bg: #ffffff;
+    --layer-border: #9333ea;
+    --agent-bg: #f3e8ff;
+    --agent-text: #581c87;
+    --venture-bg: #dbeafe;
+    --venture-text: #0c4a6e;
+    --data-bg: #f0fdf4;
+    --data-text: #15803d;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f172a;
+      --text: #f1f5f9;
+      --border: #475569;
+      --layer-bg: #1e293b;
+      --layer-border: #a855f7;
+      --agent-bg: #3f0f5c;
+      --agent-text: #e9d5ff;
+      --venture-bg: #0c2a4a;
+      --venture-text: #bfdbfe;
+      --data-bg: #0f2818;
+      --data-text: #bbf7d0;
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.5; padding: 40px 20px; }
+  .container { max-width: 1400px; margin: 0 auto; }
+  h1 { font-size: 28px; margin-bottom: 8px; }
+  .subtitle { color: #666; font-size: 14px; margin-bottom: 40px; }
+  .architecture { display: grid; gap: 24px; }
+  .layer-group { border: 1px solid var(--border); border-radius: 8px; padding: 20px; background: var(--layer-bg); }
+  .layer-title { font-size: 18px; font-weight: 600; color: var(--layer-border); margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+  .layer-number { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; background: var(--layer-border); color: white; border-radius: 50%; font-size: 12px; font-weight: bold; }
+  .layer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+  .card { border: 1px solid var(--border); border-radius: 6px; padding: 12px; background: var(--agent-bg); color: var(--agent-text); font-size: 13px; }
+  .card.venture { background: var(--venture-bg); color: var(--venture-text); }
+  .card.data { background: var(--data-bg); color: var(--data-text); }
+  .card strong { display: block; margin-bottom: 4px; }
+  .flow-diagram { margin: 40px 0; padding: 20px; background: var(--layer-bg); border: 1px solid var(--border); border-radius: 8px; }
+  .flow-step { display: flex; align-items: center; gap: 12px; margin: 8px 0; font-size: 13px; }
+  .flow-arrow { color: var(--layer-border); font-weight: bold; }
+  .relationship { background: var(--agent-bg); padding: 12px; border-radius: 6px; margin: 8px 0; font-size: 13px; border-left: 3px solid var(--layer-border); }
+  .relationship strong { color: var(--layer-border); }
+  .model-box { background: var(--data-bg); padding: 16px; border-radius: 6px; margin: 12px 0; font-size: 13px; border: 1px solid var(--data-text); }
+  .model-box code { background: rgba(0,0,0,0.1); padding: 2px 6px; border-radius: 3px; font-family: monospace; }
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  @media (max-width: 768px) {
+    .grid-2 { grid-template-columns: 1fr; }
+  }
+</style>
+
+<div class="container">
+  <h1>🧠 AGENT-OS: 13-Layer Complete Architecture</h1>
+  <p class="subtitle">Billionaire-scale multi-agent operating system for 789 ventures, dynamic team assembly, Neo4j knowledge graph integration</p>
+
+  <!-- FOUNDATION LAYERS -->
+  <div class="architecture">
+
+    <!-- LAYER 1: GOVERNANCE -->
+    <div class="layer-group">
+      <div class="layer-title"><span class="layer-number">1</span>Governance Layer</div>
+      <p style="font-size: 13px; margin-bottom: 12px; color: #666;">Policies, approval gates, authority boundaries</p>
+      <div class="layer-content">
+        <div class="card">
+          <strong>Decision Authority Model</strong>
+          Agent can: Decide agents can: Escalate ↑ (CFO for $100K+, CEO for strategy)
+        </div>
+        <div class="card">
+          <strong>Risk Gates</strong>
+          Financial limits, compliance flags, venture stage gates
+        </div>
+        <div class="card">
+          <strong>Audit Trail</strong>
+          Every agent action logged to Neo4j EXECUTION nodes with timestamp + decision rationale
+        </div>
+        <div class="card">
+          <strong>Approval Workflow</strong>
+          L1=Report, L2=Assisted, L3=Autonomous (after verification)
+        </div>
+      </div>
+    </div>
+
+    <!-- LAYER 2: REGISTRY -->
+    <div class="layer-group">
+      <div class="layer-title"><span class="layer-number">2</span>Registry Layer</div>
+      <p style="font-size: 13px; margin-bottom: 12px; color: #666;">Single source of truth for all entities</p>
+      <div class="layer-content">
+        <div class="card data">
+          <strong>ENTITY_REGISTRY</strong>
+          Ventures (789), Agents (16+230), Users, Customers, Partners
+        </div>
+        <div class="card data">
+          <strong>CAPABILITY_REGISTRY</strong>
+          300+ capabilities mapped to agents + tools
+        </div>
+        <div class="card data">
+          <strong>VENTURE_REGISTRY</strong>
+          Status, stage, revenue, team, control plane
+        </div>
+        <div class="card data">
+          <strong>AUTHORITY_REGISTRY</strong>
+          Who can decide what + escalation rules
+        </div>
+      </div>
+    </div>
+
+    <!-- LAYER 3: IDENTITY & AUTHENTICATION -->
+    <div class="layer-group">
+      <div class="layer-title"><span class="layer-number">3</span>Identity & Authentication</div>
+      <p style="font-size: 13px; margin-bottom: 12px; color: #666;">Agent identity, credentials, trust verification</p>
+      <div class="layer-content">
+        <div class="card">
+          <strong>Agent Identity</strong>
+          Machine ID (ULID), Ref ID (AGT-000047), Slug (revenue-research-agent)
+        </div>
+        <div class="card">
+          <strong>Capability Signing</strong>
+          Agent proves it can execute capability X (signed by orchestrator)
+        </div>
+        <div class="card">
+          <strong>Tool Access Control</strong>
+          MCP tool → ACL → Agent role verification before call
+        </div>
+        <div class="card">
+          <strong>Session Management</strong>
+          Agent session token, TTL, rate limits, per-venture isolation
+        </div>
+      </div>
+    </div>
+
+    <!-- LAYER 4: ORCHESTRATOR (KERNEL) -->
+    <div class="layer-group">
+      <div class="layer-title"><span class="layer-number">4</span>Orchestrator (Control Plane Kernel)</div>
+      <p style="font-size: 13px; margin-bottom: 12px; color: #666;"><strong>CORE:</strong> Routes agents to opportunities, executes async, learns from outcomes</p>
+      <div class="model-box">
+        <strong>orchestrator.py (Battle-Tested)</strong><br/>
+        <code>class AgentOrchestrator:</code><br/>
+        ├─ <code>plan(objective)</code> → breakdown into tasks<br/>
+        ├─ <code>select_agents(capability)</code> → query Neo4j<br/>
+        ├─ <code>execute_parallel(tasks)</code> → async job queue<br/>
+        ├─ <code>evaluate(results)</code> → success/fail metrics<br/>
+        └─ <code>record_execution(Neo4j)</code> → learning loop
+      </div>
+      <div class="layer-content">
+        <div class="card">
+          <strong>Plan Engine</strong>
+          Objective → Tasks (Neo4j RESPONSIBILITY nodes)
+        </div>
+        <div class="card">
+          <strong>Agent Selection</strong>
+          Capability query → Top N agents by expertise + availability
+        </div>
+        <div class="card">
+          <strong>Execution Manager</strong>
+          Async job queue, parallel execution, timeout handling, retry logic
+        </div>
+        <div class="card">
+          <strong>Evaluation Framework</strong>
+          Discovered → Verified → Tested → Production
+        </div>
+      </div>
+    </div>
+
+    <!-- LAYER 5: MEMORY SUBSYSTEM -->
+    <div class="layer-group">
+      <div class="layer-title"><span class="layer-number">5</span>Memory Subsystem</div>
+      <p style="font-size: 13px; margin-bottom: 12px; color: #666;">Short-term (execution context) + Long-term (learning)</p>
+      <div class="layer-content">
+        <div class="card data">
+          <strong>Qdrant (Vector Memory)</strong>
+          17,236 vectors: past decisions, execution traces, outcomes
+        </div>
+        <div class="card data">
+          <strong>Neo4j (Graph Memory)</strong>
+          Relationships: agents ↔ capabilities, ventures ↔ teams, outcomes ↔ decisions
+        </div>
+        <div class="card data">
+          <strong>Execution Registry</strong>
+          execution_registry.jsonl: every agent action + metrics
+        </div>
+        <div class="card">
+          <strong>Context Assembly</strong>
+          Subgraph builder for agent: past decisions + similar cases + success rates
+        </div>
+      </div>
+    </div>
+
+    <!-- LAYER 6: KNOWLEDGE GRAPH -->
+    <div class="layer-group">
+      <div class="layer-title"><span class="layer-number">6</span>Knowledge Graph (Neo4j)</div>
+      <p style="font-size: 13px; margin-bottom: 12px; color: #666;">Entity relationships, capability maps, decision trees</p>
+      <div class="model-box">
+        <strong>Neo4j Schema (20,363 edges)</strong><br/>
+        Nodes: AGENT, CAPABILITY, VENTURE, CONTROL_PLANE, RESPONSIBILITY, EXECUTION<br/>
+        Relationships:<br/>
+        AGENT -[:PROVIDES]-> CAPABILITY<br/>
+        AGENT -[:ASSIGNED_TO]-> VENTURE<br/>
+        VENTURE -[:REPORTS_TO]-> CONTROL_PLANE<br/>
+        CONTROL_PLANE -[:GOVERNS]-> VENTURE<br/>
+        EXECUTION -[:RECORDED_BY]-> AGENT
+      </div>
+      <div class="layer-content">
+        <div class="card data">
+          <strong>Entity Resolution</strong>
+          One venture = one node (no duplication across projects)
+        </div>
+        <div class="card data">
+          <strong>Capability Coverage</strong>
+          Query: "Find all agents who can close deals in real estate"
+        </div>
+        <div class="card data">
+          <strong>Execution History</strong>
+          Audit trail: who did what, when, with what result
+        </div>
+        <div class="card data">
+          <strong>Decision Tree</strong>
+          Venture → Team assembly rules → Agent routing → Success metrics
+        </div>
+      </div>
+    </div>
+
+    <!-- LAYER 7: TOOLS & INTEGRATIONS -->
+    <div class="layer-group">
+      <div class="layer-title"><span class="layer-number">7</span>Tools & Integrations (MCP)</div>
+      <p style="font-size: 13px; margin-bottom: 12px; color: #666;">Model Context Protocol tools agents invoke</p>
+      <div class="layer-content">
+        <div class="card">
+          <strong>OmniRoute (110 Tools)</strong>
+          Sales, finance, ops, research, outreach, analysis
+        </div>
+        <div class="card">
+          <strong>Supabase Tools</strong>
+          ventures table read/write, deals table, leads table
+        </div>
+        <div class="card">
+          <strong>Stripe Tools</strong>
+          Payment processing, invoice generation, revenue recording
+        </div>
+        <div class="card">
+          <strong>External APIs</strong>
+          Slack, email, Zapier, database queries, search
+        </div>
+        <div class="card">
+          <strong>Custom Tools</strong>
+          Venture-specific capabilities (e.g., "place candidate with staffing company")
+        </div>
+      </div>
+    </div>
+
+    <!-- LAYER 8: WORKFLOW ENGINE -->
+    <div class="layer-group">
+      <div class="layer-title"><span class="layer-number">8</span>Workflow Engine</div>
+      <p style="font-size: 13px; margin-bottom: 12px; color: #666;">Multi-step agent coordination, branching, error recovery</p>
+      <div class="layer-content">
+        <div class="card">
+          <strong>Workflow Definition</strong>
+          State machine: trigger → tasks → decision points → execution
+        </div>
+        <div class="card">
+          <strong>Parallel Execution</strong>
+          Multiple agents work simultaneously on independent tasks
+        </div>
+        <div class="card">
+          <strong>Conditional Branching</strong>
+          IF success THEN [task2], ELSE [escalate/retry]
+        </div>
+        <div class="card">
+          <strong>Human-in-Loop Gates</strong>
+          Critical decisions require human approval (L1 → L2/L3)
+        </div>
+      </div>
+    </div>
+
+    <!-- LAYER 9: EVALUATION FRAMEWORK -->
+    <div class="layer-group">
+      <div class="layer-title"><span class="layer-number">9</span>Evaluation Framework</div>
+      <p style="font-size: 13px; margin-bottom: 12px; color: #666;">Measure quality, correctness, safety before promotion</p>
+      <div class="layer-content">
+        <div class="card">
+          <strong>Discovered</strong>
+          New agent identified, baseline evals run
+        </div>
+        <div class="card">
+          <strong>Verified</strong>
+          Logic correct, test evals pass, no security issues
+        </div>
+        <div class="card">
+          <strong>Tested</strong>
+          50+ test cases run, success rate measured
+        </div>
+        <div class="card">
+          <strong>Production</strong>
+          Promoted to L2/L3 autonomous execution
+        </div>
+      </div>
+    </div>
+
+    <!-- LAYER 10: OBSERVABILITY & MONITORING -->
+    <div class="layer-group">
+      <div class="layer-title"><span class="layer-number">10</span>Observability & Monitoring</div>
+      <p style="font-size: 13px; margin-bottom: 12px; color: #666;">Real-time visibility into agent behavior</p>
+      <div class="layer-content">
+        <div class="card data">
+          <strong>Execution Logs</strong>
+          What agent did, tools called, results, errors
+        </div>
+        <div class="card data">
+          <strong>Performance Metrics</strong>
+          Latency, success rate, cost per execution
+        </div>
+        <div class="card data">
+          <strong>Alerts</strong>
+          Anomalies, escalations, failures triggered
+        </div>
+        <div class="card data">
+          <strong>Dashboards</strong>
+          Agent health, venture progress, revenue pipeline
+        </div>
+      </div>
+    </div>
+
+    <!-- LAYER 11: APPROVAL & GOVERNANCE ENFORCEMENT -->
+    <div class="layer-group">
+      <div class="layer-title"><span class="layer-number">11</span>Approval & Governance Enforcement</div>
+      <p style="font-size: 13px; margin-bottom: 12px; color: #666;">Enforce authority model, financial limits, compliance</p>
+      <div class="layer-content">
+        <div class="card">
+          <strong>Pre-Execution Checks</strong>
+          Does this agent have authority? Is this within budget? Risk OK?
+        </div>
+        <div class="card">
+          <strong>Escalation Rules</strong>
+          $100K deal → CFO approval, Strategy change → CEO approval
+        </div>
+        <div class="card">
+          <strong>Compliance Verification</strong>
+          Tax, legal, regulatory before action
+        </div>
+        <div class="card">
+          <strong>Audit Recording</strong>
+          All approvals logged to Neo4j for compliance
+        </div>
+      </div>
+    </div>
+
+    <!-- LAYER 12: DOMAIN-SPECIFIC AGENTS -->
+    <div class="layer-group">
+      <div class="layer-title"><span class="layer-number">12</span>Domain-Specific Agents (16 Core)</div>
+      <p style="font-size: 13px; margin-bottom: 12px; color: #666;">Agents specialized by business domain</p>
+      <div class="layer-content">
+        <div class="card agent">
+          <strong>Revenue Agent</strong>
+          Drives cold calls, deal closure, payment collection
+        </div>
+        <div class="card agent">
+          <strong>Finance Agent</strong>
+          Runway calc, cash forecasting, budget tracking
+        </div>
+        <div class="card agent">
+          <strong>Operations Agent</strong>
+          Task scheduling, delivery tracking, team coordination
+        </div>
+        <div class="card agent">
+          <strong>Research Agent</strong>
+          Market analysis, competitor tracking, opportunity discovery
+        </div>
+        <div class="card agent">
+          <strong>Sales Agent</strong>
+          Prospect outreach, objection handling, deal strategy
+        </div>
+        <div class="card agent">
+          <strong>Product Agent</strong>
+          Feature prioritization, roadmap planning, user feedback
+        </div>
+        <div class="card agent">
+          <strong>Tech Agent</strong>
+          Infrastructure health, deployment coordination, bug triage
+        </div>
+        <div class="card agent">
+          <strong>HR Agent</strong>
+          Hiring, onboarding, performance tracking, payroll
+        </div>
+      </div>
+    </div>
+
+    <!-- LAYER 13: SPECIALIST LIBRARY (AGENCY AGENTS) -->
+    <div class="layer-group">
+      <div class="layer-title"><span class="layer-number">13</span>Specialist Library (230+ Agency Agents)</div>
+      <p style="font-size: 13px; margin-bottom: 12px; color: #666;">Reusable specialist personas (sales, tech, ops, etc.)</p>
+      <div class="layer-content">
+        <div class="card agent">
+          <strong>Sales Specialists</strong>
+          Cold-call expert, objection handler, closer, pipeline manager
+        </div>
+        <div class="card agent">
+          <strong>Technical Specialists</strong>
+          DevOps, security auditor, performance optimizer, API designer
+        </div>
+        <div class="card agent">
+          <strong>Ops Specialists</strong>
+          Process optimizer, supply chain, quality auditor, cost reducer
+        </div>
+        <div class="card agent">
+          <strong>Finance Specialists</strong>
+          Bookkeeper, tax strategist, fundraising expert, M&A advisor
+        </div>
+        <div class="card agent">
+          <strong>Marketing Specialists</strong>
+          Content creator, growth hacker, brand strategist, demand gen
+        </div>
+        <div class="card agent">
+          <strong>HR Specialists</strong>
+          Recruiter, onboarding coach, compensation analyst, culture builder
+        </div>
+        <div class="card agent">
+          <strong>Industry Specialists</strong>
+          Real estate, construction, healthcare, fintech, energy, etc.
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- AGENT COMPOSITION MODEL -->
+  <div class="layer-group" style="margin-top: 40px;">
+    <h2 style="font-size: 20px; margin-bottom: 16px;">📋 Agent Composition Model</h2>
+    <div class="model-box">
+      <strong>Each Agent = Role + Context + Tools + Authority</strong><br/><br/>
+      <code>
+        agent = {<br/>
+        &nbsp;&nbsp;"role": "Revenue Research Agent",<br/>
+        &nbsp;&nbsp;"context": {<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;"venture_id": "OPS-001",<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;"sector": "SEC-008-Staffing",<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;"memory": [past_decisions, success_rates, execution_traces],<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;"graph": neo4j_subgraph<br/>
+        &nbsp;&nbsp;},<br/>
+        &nbsp;&nbsp;"tools": ["search_prospects", "send_email", "log_call", "record_deal"],<br/>
+        &nbsp;&nbsp;"authority": {<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;"can_decide": ["prospect_prioritization", "email_content"],<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;"escalates_to_cfo": ["deals_over_50k"],<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;"escalates_to_ceo": ["strategy_changes"]<br/>
+        &nbsp;&nbsp;}<br/>
+        }
+      </code>
+    </div>
+    <p style="margin-top: 12px; font-size: 13px; color: #666;"><strong>NOT:</strong> 78,900 permanent agents (789 ventures × 100 agents each)</p>
+    <p style="font-size: 13px; color: #666;"><strong>YES:</strong> 246 agents (16 core + 230 specialists) dynamically assembled per venture need + context</p>
+  </div>
+
+  <!-- DYNAMIC TEAM ASSEMBLY -->
+  <div class="layer-group" style="margin-top: 40px;">
+    <h2 style="font-size: 20px; margin-bottom: 16px;">🎯 Dynamic Team Assembly Example</h2>
+    <p style="font-size: 13px; margin-bottom: 16px; color: #666;">Trigger: New cold-call deal in OPS-001 (staffing) → What team forms?</p>
+    <div class="flow-diagram">
+      <div class="flow-step">
+        <strong>Query Neo4j:</strong><br/>
+        MATCH (oc:CONTROL_PLANE {venture: "OPS-001"}) -[:GOVERNS]-> (a:AGENT) RETURN a.name, a.capability<br/>
+      </div>
+      <div class="flow-step">
+        <span class="flow-arrow">↓</span>
+      </div>
+      <div class="flow-step">
+        <strong>Result:</strong> Revenue Agent, Sales Specialist (cold-caller), Closer (objection handler)
+      </div>
+      <div class="flow-step">
+        <span class="flow-arrow">↓</span>
+      </div>
+      <div class="flow-step">
+        <strong>Assemble Context:</strong><br/>
+        - Past 10 similar deals + outcomes (from Qdrant)<br/>
+        - Prospect profile (from Supabase)<br/>
+        - Success rate (from Neo4j EXECUTION nodes)<br/>
+      </div>
+      <div class="flow-step">
+        <span class="flow-arrow">↓</span>
+      </div>
+      <div class="flow-step">
+        <strong>Execute in Parallel:</strong><br/>
+        - Revenue Agent: Validate opportunity fit<br/>
+        - Cold-caller: Make pitch<br/>
+        - Closer: Handle objections<br/>
+      </div>
+      <div class="flow-step">
+        <span class="flow-arrow">↓</span>
+      </div>
+      <div class="flow-step">
+        <strong>Record Result:</strong> Neo4j EXECUTION node → Qdrant vector → execution_registry.jsonl
+      </div>
+      <div class="flow-step">
+        <span class="flow-arrow">↓</span>
+      </div>
+      <div class="flow-step">
+        <strong>Learn:</strong> Next cold call has better context (higher success rate)
+      </div>
+    </div>
+  </div>
+
+  <!-- REVENUE FLOW EXAMPLE -->
+  <div class="layer-group" style="margin-top: 40px;">
+    <h2 style="font-size: 20px; margin-bottom: 16px;">💰 Complete Revenue Flow (Cold Call → Payment)</h2>
+    <div class="flow-diagram">
+      <strong>Day 1: Cold Call</strong>
+      <div class="flow-step">
+        → Staffing company: "We place electricians in 24 hours"<br/>
+        → Response: "Yes, we need 2 Journeymen, $30-35/hr, ASAP"<br/>
+        → OPS-001 logs job order to Supabase
+      </div>
+      <div class="flow-step">
+        <span class="flow-arrow">↓</span>
+      </div>
+      <strong>Day 2: Candidate Delivery</strong>
+      <div class="flow-step">
+        → OPS-001 queries Supabase for candidates<br/>
+        → LT-005 medical courier + TECH-040 searches candidates<br/>
+        → Sends 5 candidates to staffing company
+      </div>
+      <div class="flow-step">
+        <span class="flow-arrow">↓</span>
+      </div>
+      <strong>Days 3-5: Hiring</strong>
+      <div class="flow-step">
+        → Staffing company interviews<br/>
+        → Selects 1 for $30/hr role
+      </div>
+      <div class="flow-step">
+        <span class="flow-arrow">↓</span>
+      </div>
+      <strong>Day 14: Payment</strong>
+      <div class="flow-step">
+        → Candidate works 2 weeks<br/>
+        → Staffing company pays $2,500 placement fee → Stripe → Worldwidebro account<br/>
+        → Revenue Agent records to deals table + Neo4j EXECUTION node
+      </div>
+      <div class="flow-step">
+        <span class="flow-arrow">↓</span>
+      </div>
+      <strong>Outcome Recorded:</strong>
+      <div class="flow-step">
+        Neo4j: EXECUTION -[:RESULT]-> {success, revenue: $2500, duration: 14days}<br/>
+        Qdrant: Similar cases vector updated<br/>
+        Next cold call: Agent has 2 successful placement vectors in memory
+      </div>
+    </div>
+  </div>
+
+  <!-- VENTURE DECISION TREE -->
+  <div class="layer-group" style="margin-top: 40px;">
+    <h2 style="font-size: 20px; margin-bottom: 16px;">🌳 Venture Decision Tree (How Agents Route to Work)</h2>
+    <div class="flow-diagram">
+      <div style="background: var(--venture-bg); padding: 12px; border-radius: 6px; margin-bottom: 12px;">
+        <strong>Venture: OPS-001 (Staffing)</strong><br/>
+        Stage: Growth | Revenue: $2.5K (1 placement) | Team: 3 agents
+      </div>
+
+      <div style="margin-left: 20px; border-left: 3px solid var(--layer-border); padding-left: 12px;">
+        <div style="margin-bottom: 12px;">
+          <strong>Decision 1: What drives revenue?</strong><br/>
+          → Cold calls → Job orders → Candidate delivery → Payment
+        </div>
+
+        <div style="margin-bottom: 12px;">
+          <strong>Decision 2: What's bottleneck?</strong><br/>
+          → Cold calls (only 2 made) → Assign Revenue Agent (call more)
+        </div>
+
+        <div style="margin-bottom: 12px;">
+          <strong>Decision 3: Who executes?</strong><br/>
+          → Revenue Agent (core) + Cold-caller specialist (Layer 13) + Closer specialist<br/>
+          → Context: 10 past calls, 1 success, success rate 10% → optimize objection handling
+        </div>
+
+        <div style="margin-bottom: 12px;">
+          <strong>Decision 4: What tools needed?</strong><br/>
+          → Supabase (prospect list), Stripe (payment recording), Slack (notifications)
+        </div>
+
+        <div style="margin-bottom: 12px;">
+          <strong>Decision 5: What authority?</strong><br/>
+          → Revenue Agent: Can decide prospect priority, email content<br/>
+          → Can't decide: Pricing, partnerships, hiring → Escalate to CEO/CFO
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- KNOWLEDGE GRAPH INTEGRATION -->
+  <div class="grid-2" style="margin-top: 40px;">
+    <div class="layer-group">
+      <h2 style="font-size: 16px; margin-bottom: 12px;">Neo4j Integration</h2>
+      <div class="relationship">
+        <strong>Query Pattern:</strong> Find agents for cold-calling<br/>
+        MATCH (a:AGENT) -[:PROVIDES]-> (c:CAPABILITY {name: "cold-calling"}) RETURN a
+      </div>
+      <div class="relationship">
+        <strong>Query Pattern:</strong> Audit agent decisions<br/>
+        MATCH (e:EXECUTION) -[:RECORDED_BY]-> (a:AGENT) WHERE e.timestamp > date RETURN e.result, a.name
+      </div>
+      <div class="relationship">
+        <strong>Query Pattern:</strong> Venture team assignment<br/>
+        MATCH (v:VENTURE {id: "OPS-001"}) -[:CONTROLLED_BY]-> (cp:CONTROL_PLANE) -[:ASSIGNS]-> (a:AGENT)
+      </div>
+      <div class="relationship">
+        <strong>Learning Loop:</strong> Execution → Success/Fail → Context Updated → Next Agent Smarter
+      </div>
+    </div>
+
+    <div class="layer-group">
+      <h2 style="font-size: 16px; margin-bottom: 12px;">Qdrant Integration</h2>
+      <div class="relationship">
+        <strong>Vector Type:</strong> Execution outcomes<br/>
+        "cold_call_with_electrician_placement_success" → embedding → semantic search
+      </div>
+      <div class="relationship">
+        <strong>Similarity Query:</strong> "Find past cold calls similar to this prospect"<br/>
+        → Returns 10 past calls with context + success rates
+      </div>
+      <div class="relationship">
+        <strong>Context Assembly:</strong> For new agent, subgraph pulls:<br/>
+        - Top 5 similar executions (by vector similarity)<br/>
+        - Their outcomes + metrics<br/>
+        - Success patterns
+      </div>
+      <div class="relationship">
+        <strong>Learning:</strong> Each execution adds vector → repository grows → future agents smarter
+      </div>
+    </div>
+  </div>
+
+  <!-- AUTHORITY MODEL MATRIX -->
+  <div class="layer-group" style="margin-top: 40px;">
+    <h2 style="font-size: 20px; margin-bottom: 16px;">👑 Authority Model (What Agents Can Decide)</h2>
+    <table style="width: 100%; border-collapse: collapse; font-size: 13px;">
+      <tr style="background: var(--layer-border); color: white;">
+        <th style="padding: 12px; text-align: left; border: 1px solid var(--border);">Decision Type</th>
+        <th style="padding: 12px; text-align: left; border: 1px solid var(--border);">Agent Can Decide?</th>
+        <th style="padding: 12px; text-align: left; border: 1px solid var(--border);">Escalates To</th>
+      </tr>
+      <tr style="background: var(--agent-bg);">
+        <td style="padding: 12px; border: 1px solid var(--border);">Prospect priority (cold calls)</td>
+        <td style="padding: 12px; border: 1px solid var(--border);">✅ YES (Revenue Agent)</td>
+        <td style="padding: 12px; border: 1px solid var(--border);">N/A</td>
+      </tr>
+      <tr style="background: var(--data-bg);">
+        <td style="padding: 12px; border: 1px solid var(--border);">Email content</td>
+        <td style="padding: 12px; border: 1px solid var(--border);">✅ YES (Sales Agent)</td>
+        <td style="padding: 12px; border: 1px solid var(--border);">N/A</td>
+      </tr>
+      <tr style="background: var(--agent-bg);">
+        <td style="padding: 12px; border: 1px solid var(--border);">Pricing discount < $500</td>
+        <td style="padding: 12px; border: 1px solid var(--border);">✅ YES (Revenue Agent)</td>
+        <td style="padding: 12px; border: 1px solid var(--border);">N/A</td>
+      </tr>
+      <tr style="background: var(--data-bg);">
+        <td style="padding: 12px; border: 1px solid var(--border);">Pricing discount > $5K</td>
+        <td style="padding: 12px; border: 1px solid var(--border);">❌ NO</td>
+        <td style="padding: 12px; border: 1px solid var(--border);">CFO</td>
+      </tr>
+      <tr style="background: var(--agent-bg);">
+        <td style="padding: 12px; border: 1px solid var(--border);">Hiring decision</td>
+        <td style="padding: 12px; border: 1px solid var(--border);">❌ NO</td>
+        <td style="padding: 12px; border: 1px solid var(--border);">CEO + HR Agent</td>
+      </tr>
+      <tr style="background: var(--data-bg);">
+        <td style="padding: 12px; border: 1px solid var(--border);">New product line</td>
+        <td style="padding: 12px; border: 1px solid var(--border);">❌ NO</td>
+        <td style="padding: 12px; border: 1px solid var(--border);">CEO + Board</td>
+      </tr>
+      <tr style="background: var(--agent-bg);">
+        <td style="padding: 12px; border: 1px solid var(--border);">Venture capital raise</td>
+        <td style="padding: 12px; border: 1px solid var(--border);">❌ NO</td>
+        <td style="padding: 12px; border: 1px solid var(--border);">CEO + CFO + Board</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- INFRASTRUCTURE WIRING -->
+  <div class="layer-group" style="margin-top: 40px;">
+    <h2 style="font-size: 20px; margin-bottom: 16px;">🔌 Infrastructure Wiring (What's Live)</h2>
+    <div class="grid-2">
+      <div>
+        <div class="card data">
+          <strong>Supabase (Live)</strong><br/>
+          ventures, deals, leads, customers, payments tables<br/>
+          ✅ VEX dashboard queries live
+        </div>
+        <div class="card data">
+          <strong>Neo4j (Live)</strong><br/>
+          20,363 edges, all relationships indexed<br/>
+          ✅ Cypher queries working
+        </div>
+        <div class="card data">
+          <strong>Qdrant (Live)</strong><br/>
+          17,236 vectors indexed<br/>
+          ✅ Semantic search working
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <strong>OmniRoute (Live)</strong><br/>
+          110 tools integrated<br/>
+          ✅ MCP server running
+        </div>
+        <div class="card">
+          <strong>Orchestrator (Partial)</strong><br/>
+          orchestrator.py exists (battle-tested pattern)<br/>
+          ⏳ Wire to Neo4j + Qdrant (Sep 12)
+        </div>
+        <div class="card">
+          <strong>Agency Agents (Ready)</strong><br/>
+          230+ specialist personas defined<br/>
+          ✅ Can import as Layer 13 anytime
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PHASE 1 ROADMAP -->
+  <div class="layer-group" style="margin-top: 40px;">
+    <h2 style="font-size: 20px; margin-bottom: 16px;">📅 Phase 1 Roadmap (Sep 12-19, 2026)</h2>
+    <div class="flow-diagram">
+      <div style="margin-bottom: 16px;">
+        <strong>Sep 12 (Friday) - Kernel + Registries (8 hrs)</strong><br/>
+        ✅ Copy orchestrator.py + wire Neo4j + wire Qdrant<br/>
+        ✅ Document all 16 core agents in AGENT_REGISTRY.yaml<br/>
+        ✅ Create CAPABILITY_INDEX.yaml (route capabilities to agents)<br/>
+        ✅ Wire orchestrator to FastMCP server<br/>
+        <strong>Deliverable:</strong> Orchestrator runs, can spawn agents, logs to Neo4j
+      </div>
+
+      <div style="margin-bottom: 16px;">
+        <strong>Sep 13 (Saturday) - Index 16 Core Agents (8 hrs)</strong><br/>
+        ✅ Map all 16 agents in AGENT_REGISTRY.yaml<br/>
+        ✅ Assign capabilities to each<br/>
+        <strong>Deliverable:</strong> All 16 agents indexed + queryable
+      </div>
+
+      <div style="margin-bottom: 16px;">
+        <strong>Sep 14 (Sunday) - Agency Agent Import (8 hrs)</strong><br/>
+        ✅ Import 230+ Agency Agents as Layer 13<br/>
+        ✅ Create role templates (cold-caller, closer, researcher, etc.)<br/>
+        <strong>Deliverable:</strong> 230+ specialists live, assigned to ventures
+      </div>
+
+      <div style="margin-bottom: 16px;">
+        <strong>Sep 15 (Monday) - Evaluation Framework (6 hrs)</strong><br/>
+        ✅ Build evaluation_manager.py<br/>
+        ✅ Run 50 test cases per agent<br/>
+        <strong>Deliverable:</strong> All agents promoted to "verified"
+      </div>
+
+      <div style="margin-bottom: 16px;">
+        <strong>Sep 16-19 (Tue-Fri) - Live Deployment + Learning Loop</strong><br/>
+        ✅ Deploy 3 pilot ventures (OPS-001, CON-001, LT-005)<br/>
+        ✅ Agents execute cold calls, record outcomes to Neo4j + Qdrant<br/>
+        ✅ Verify execution_registry.jsonl fills with real data<br/>
+        <strong>Deliverable:</strong> AGENT-OS producing revenue ($2.5K+ from placements)
+      </div>
+    </div>
+  </div>
+
+  <!-- KEY INSIGHT -->
+  <div class="layer-group" style="margin-top: 40px; background: var(--venture-bg); border-color: var(--venture-text);">
+    <h2 style="font-size: 18px; color: var(--venture-text); margin-bottom: 12px;">✨ Key Architecture Insight</h2>
+    <p style="font-size: 14px; color: var(--venture-text); line-height: 1.6;">
+      <strong>Problem:</strong> 789 ventures can't each have 100 permanent agents = 78,900 agents (impossible to manage, coordinate, cost)<br/><br/>
+      <strong>Solution:</strong> 246 dynamic agents (16 core + 230 specialists) + Neo4j orchestrator + Qdrant memory<br/><br/>
+      <strong>How it works:</strong> Venture needs revenue → Orchestrator queries Neo4j → "What agents know cold-calling?" → Assembles team (Revenue Agent + Cold-Caller Specialist + Closer) with context (past calls + success rate) → Executes in parallel → Records outcome → Next venture learns from it<br/><br/>
+      <strong>Result:</strong> Each agent gets smarter with every venture execution. Agents scale across all 789 ventures with learning compounding.
+    </p>
+  </div>
+
+</div>
