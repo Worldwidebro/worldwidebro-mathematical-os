@@ -1,39 +1,40 @@
 # CLAUDE.md — Company Brain (Session Guidance)
 
-**Scope:** Active session instructions only (reference docs moved to `_REFERENCE/`)  
-**Updated:** 2026-09-09  
-**Authority:** Infrastructure CP-027 + Execution CP-033 + Revenue CP-021
+**Scope:** Active session instructions only; reference docs in `_REFERENCE/` and master plan in global CLAUDE.md  
+**Updated:** 2026-09-10  
+**Authority:** Infrastructure CP-027 + Execution CP-033 + Revenue CP-021  
+**Current Phase:** Week 1 Revenue Execution (Sep 10–15)
 
 ---
 
-## PHASE 1 STATUS — Sep 8-30
+## STATUS SNAPSHOT — Sep 10, 2026
 
-✅ **Infrastructure:** Neo4j (20,363 edges), Qdrant (17,236 vectors), OmniRoute, Ollama all LIVE  
-⚠️ **Orchestration:** 94 URLs working independently, webhook automations NOT wired  
-🔴 **Revenue:** $0, zero automation, cold calls not made
+✅ **Phase 1 LOCKED** — Agent Enablement complete, audit system operational  
+✅ **Infrastructure LIVE** — Neo4j (20,363 edges), Qdrant (17,236 vectors), OmniRoute, Ollama  
+✅ **6 Tier-0 Ventures Verified** — All deployed and HTTP 200:
+- OPS-001, LT-005, CALLCENTER (Revenue-Ready)
+- CON-001, RE-001 (Demo-Ready, 1–2 days)
+- LT-011 (Skeleton, assess needed)
 
-**CRITICAL:** Fix blocking issues (fix #1-3 below) before Sep 11 to hit $2.5K revenue target.
+🚀 **Week 1 Target:** $7.5K–$20K (execution window open)
 
 ---
 
-## THREE IMMEDIATE FIXES (Do These First)
+## WEEK 1 EXECUTION FOCUS (Sep 10–15)
 
-### Fix #1: Make Cold Calls (Sep 9-10)
-- OPS-001: Call 10 HIGH-priority staffing prospects (script ready)
-- CON-001: Call 50 NC construction companies (script ready)
-- LT-005: B2B outreach to medical facilities
-- **This is the only thing blocking first revenue.** Everything else is wired.
+**Master plan:** [[WEEK1-EXECUTION-PLAN|20-DECISIONS/WEEK1-EXECUTION-PLAN.md]]
 
-### Fix #2: Deploy CON-001 to Vercel (5 min)
-```bash
-cd SECTORS/SEC-002-Construction/ventures/CON-001
-vercel deploy  # Fix CLI auth if blocked
-```
+### Three Revenue-Ready Ventures (Make Calls Now)
+1. **OPS-001** → Staffing placement cold calls (script ready)
+2. **LT-005** → Medical facility B2B outreach (env vars configured)
+3. **CALLCENTER** → Twilio integration (Stripe wired)
 
-### Fix #3: Wire LT-005 Keys (5 min)
-Add to Vercel env vars:
-- `SUPABASE_URL`, `SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY`
-- `STRIPE_PUBLIC_KEY`, `STRIPE_SECRET_KEY`
+### Next Actions (Decision Gates)
+- **CON-001:** 6h API build (marketing flow ready, assess first)
+- **RE-001:** 25h deal engine (pitch deck ready, assess first)
+- **LT-011:** 1h assessment → build/buy/defer decision
+
+**See also:** [[VENTURE-AUDIT-FRAMEWORK|20-DECISIONS/VENTURE-AUDIT-FRAMEWORK.md]] (12-layer methodology)
 
 ---
 
@@ -138,4 +139,4 @@ ssh macstudio                               # Connect to Mac Studio
 
 ---
 
-**Generated:** 2026-09-09 | **Version:** 4.0 (Trimmed to ~4KB, reference docs separated)
+**Updated:** 2026-09-10 | **Version:** 4.1 (Phase 1 locked, 6 Tier-0 ventures live, Week 1 execution active)
