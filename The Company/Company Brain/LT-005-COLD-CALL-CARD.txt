@@ -1,0 +1,194 @@
+================================================================================
+LT-005 HEALTHCARE MEDICAL COURIER — COLD CALL CARD
+Sep 11-14 Campaign (30 Prospects, Top 10 Priority)
+================================================================================
+
+SCRIPT OPENER (15 sec):
+"Hi [Name], this is [You] with HealthRoute Medical Courier. 
+I'm calling because we help medical labs move specimens fast and safely—
+HIPAA-compliant, real-time tracking, temperature-controlled transport.
+Do you have 2 minutes?"
+
+KEY DISCOVERY QUESTIONS:
+1. "How many specimens do you process daily?"
+2. "What's your geographic service area?"
+3. "Who do you currently use for courier services?"
+4. "How often do you experience delays in specimen delivery?"
+5. "Have you had any HIPAA compliance audits recently?"
+
+================================================================================
+TIER-0 PROSPECTS (Call These First — 85%+ Confidence)
+================================================================================
+
+PROSPECT #1: WAKEOMED — Raleigh
+  Title: VP Laboratory Services
+  Volume: 500+ specimens/day (VERY HIGH VOLUME)
+  Pain Signal: Major NC health system, high-volume specimen transport
+  Call Strategy: Lead with speed + compliance risk (HIPAA audits on large system)
+  Expected Pain: Delays affecting patient care, compliance burden
+
+PROSPECT #2: ATRIUM HEALTH — Charlotte
+  Title: Director, Lab Operations
+  Volume: 500+ specimens/day (VERY HIGH VOLUME)
+  Pain Signal: Large system, multiple hospital labs, specimen logistics complexity
+  Call Strategy: Frame as "consolidated courier partner" (replace 5+ vendors)
+  Expected Pain: Vendor fragmentation, inconsistent quality
+
+PROSPECT #3: NOVANT HEALTH — Charlotte
+  Title: Manager, Lab Operations
+  Volume: 400+ specimens/day (HIGH VOLUME)
+  Pain Signal: Regional health system, active lab operations
+  Call Strategy: Temperature control + compliance (biologics handling)
+  Expected Pain: Specimen rejections due to temp/handling issues
+
+PROSPECT #4: DUKE HEALTH — Durham
+  Title: VP Laboratory Services
+  Volume: 400+ specimens/day (HIGH VOLUME)
+  Pain Signal: Academic medical center, research + clinical labs (complexity)
+  Call Strategy: Lead with research lab compliance requirements
+  Expected Pain: Research protocol adherence, complex chain of custody
+
+PROSPECT #5: UNC HEALTH — Chapel Hill
+  Title: Director, Lab Operations
+  Volume: 300+ specimens/day (HIGH VOLUME)
+  Pain Signal: Major academic health system, specimen volume
+  Call Strategy: Partner with academic reputation, HIPAA compliance
+  Expected Pain: Multiple departments, inconsistent pickup standards
+
+PROSPECT #6: CONE HEALTH — Greensboro
+  Title: Director, Lab Operations
+  Volume: 200-300 specimens/day (MEDIUM-HIGH VOLUME)
+  Pain Signal: Multi-hospital system, logistics coordination
+  Call Strategy: Cost + consolidation (multiple hospitals, one courier)
+  Expected Pain: Managing couriers across multiple campuses
+
+PROSPECT #7: VIDANT HEALTH — Eastern NC
+  Title: VP Laboratory Services
+  Volume: 200-300 specimens/day (MEDIUM-HIGH VOLUME)
+  Pain Signal: Large regional health system, specimen volume
+  Call Strategy: Regional player to regional solution (not national carrier)
+  Expected Pain: National carriers don't understand local priorities
+
+PROSPECT #8: IREDELL HEALTH SYSTEM — Statesville
+  Title: Lab Director / Manager
+  Volume: 100-150 specimens/day (MEDIUM VOLUME)
+  Pain Signal: Regional hospital system, specimen transport needs
+  Call Strategy: Cost-effective for smaller system (fractional service)
+  Expected Pain: Overpaying for courier with low utilization
+
+PROSPECT #9: CAPE FEAR VALLEY HEALTH — Fayetteville
+  Title: Lab Director / Manager
+  Volume: 100-150 specimens/day (MEDIUM VOLUME)
+  Pain Signal: Regional hospital, lab volume growth
+  Call Strategy: Partner for growth (we scale with them)
+  Expected Pain: Scaling delivery service as lab grows
+
+PROSPECT #10: PITT COUNTY MEMORIAL HOSPITAL — Greenville
+  Title: Director, Lab Operations
+  Volume: 100-150 specimens/day (MEDIUM VOLUME)
+  Pain Signal: Regional hospital, active lab services
+  Call Strategy: HIPAA compliance risk mitigation
+  Expected Pain: New director, wants to implement "best practices"
+
+================================================================================
+OBJECTION HANDLING
+================================================================================
+
+OBJECTION: "We use UPS / generic courier"
+RESPONSE: "Many labs do. The issue: generic couriers don't understand specimen
+handling. They delay, they don't maintain temp control, can't prioritize STAT orders.
+How often do you have delayed results with your current courier?"
+
+OBJECTION: "HIPAA compliance is too much hassle"
+RESPONSE: "That's exactly why we exist. We handle all HIPAA documentation,
+security training, audit trails—you just use the app. Our carriers are HIPAA-
+certified and insured. You're more protected with us than DIY."
+
+OBJECTION: "Cost is a concern"
+RESPONSE: "I get it. But think about it this way: one lost patient due to delayed
+results costs you $5K in referral value. One HIPAA violation can cost $100K+.
+Our service is insurance against that. What's your typical specimen volume?"
+
+OBJECTION: "We don't have that many specimens"
+RESPONSE: "Even small labs benefit—we handle fractional service. You only pay for
+what you use. Plus, you can scale up as you grow. Let me send a quote based on
+your actual volume."
+
+OBJECTION: "Let me check with the lab director"
+RESPONSE: "Perfect. Can you tell me your typical volume and who the director is?
+I'll send a one-page overview to both of you. That way when you talk, you'll both
+have the same info."
+
+================================================================================
+TRIAL OFFER (When prospect says "yes, interested")
+================================================================================
+
+"Let me make this easy: 5 free trial deliveries. You absorb zero risk.
+We'll do 5 pickups + deliveries this week, prove the quality, then you decide.
+If you like it, we can set up recurring service ($1K-5K/month depending on volume).
+Can we do the trial starting Thursday?"
+
+TRIAL BENEFITS (FOR YOU):
+- Reduces perceived risk for prospect
+- Proof of concept (shows it actually works)
+- Builds buy-in before contract
+- Converts 50%+ of pilots to recurring contracts
+
+================================================================================
+SUCCESS METRICS (Daily)
+================================================================================
+
+CALLS MADE: Target 10+ per day
+CONNECT RATE: 80%+ (8 of 10 calls answered)
+INTERESTED: 20%+ (1-2 of 10 show interest)
+TRIAL AGREEMENTS: Target 1 by Sep 13
+
+If first day yields 0 interested: Make 5 MORE calls (not "I'll try again tomorrow")
+
+================================================================================
+NEXT STEPS AFTER EACH CALL
+================================================================================
+
+1. If INTERESTED:
+   → Send customized quote within 2 hours
+   → Subject: "Per our call: HealthRoute pricing for [Facility Name]"
+   → Include: Service tiers ($1K/$2K/$5K/month), HIPAA checklist, references
+   → Follow up: Call back Tuesday to discuss
+
+2. If OBJECTION (but didn't hang up):
+   → Send 1-page overview
+   → Include: Compliance checklist, case study, testimonial
+   → Follow up: Call back Thursday
+
+3. If VOICEMAIL:
+   → Leave message: "Hi [Name], this is [You] from HealthRoute Medical Courier.
+     I'll call back tomorrow. If you want to reach me: [YOUR PHONE]"
+   → Call back tomorrow at different time
+
+4. If DECLINED:
+   → Note reason in spreadsheet
+   → Don't push
+   → Add to "follow up in 6 months" list
+
+================================================================================
+REVENUE MATH
+================================================================================
+
+Trial: 5 deliveries × $110 = $550
+Conversion: Trial customer agrees to 10 deliveries/week = $1,100/week MRR
+Add 2-3 more customers: $3,300-$5,500/week total
+
+Week 1 target: $1,700-$7,500 (trial + 1-3 new contracts)
+
+================================================================================
+YOUR MANTRA (Keep This Mindset)
+================================================================================
+
+"I'm not selling a courier service.
+I'm solving their compliance risk + helping them serve patients faster.
+Most labs have had at least one HIPAA scare.
+I'm the solution to that scare.
+Lead with that. The rest flows."
+
+================================================================================
+END
