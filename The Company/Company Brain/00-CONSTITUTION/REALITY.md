@@ -34,8 +34,9 @@
 | **CALLCENTER** | 🟢 READY | 200 | ✅ Dashboard | Add Twilio creds | Deploy backend |
 | **CON-001** | 🟢 READY | 200 | ✅ Frontend live | No backend APIs yet | Make calls (demo only) |
 | **RE-001** | 🟢 READY | 200 | ✅ Dashboard | No deal engine | Demo ventures |
+| **LT-011** | 🟡 PARTIAL | 200 | ⚠️ Skeleton | No source code | Infrastructure candidate |
 
-**Status:** 5/5 live ✅ | All 5 accessible | 3 production-ready | 2 need feature build
+**Status:** 6/6 live ✅ | All 6 accessible | 3 production-ready | 3 skeleton/partial
 
 **Week 1 Revenue Target:** $7.5K–$20K (from OPS-001 + LT-005 + CALLCENTER)
 
