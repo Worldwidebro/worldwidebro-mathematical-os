@@ -1,0 +1,129 @@
+# Capability Registry for ingestion into Supabase
+# 5 capabilities from Unit 4
+
+capabilities:
+  - id: "CAP-001"
+    ref_id: "CAP-001"
+    slug: "anthropic-account-research"
+    name: "Account Research (Prospect Intelligence)"
+    description: "Research a company or person and extract actionable sales intelligence"
+    category: "sales"
+    vertical: "general"
+    maturity: "production"
+    source: "anthropic"
+    source_url: "https://github.com/anthropics/knowledge-work-plugins/tree/main/sales/skills/account-research"
+    repo_status: "active"
+    stars: 500
+    healthroute_fit: 95
+    healthroute_use_case: "Research medical labs before outreach: WakeMed, Atrium Health, Duke Health; identify lab directors, specimen volumes, compliance posture"
+    healthroute_gap: "Specimen volume buried in facility profiles; no HIPAA research auto-trigger"
+    owner: "Anthropic"
+    approval_status: "approved"
+    access_control: "public"
+    tags:
+      - sales
+      - research
+      - prospecting
+      - b2b
+      - anthropic
+
+  - id: "CAP-003"
+    ref_id: "CAP-003"
+    slug: "anthropic-call-summary"
+    name: "Call Summary & Action Items"
+    description: "Extract action items, draft follow-up, and log call to CRM"
+    category: "sales"
+    vertical: "general"
+    maturity: "production"
+    source: "anthropic"
+    source_url: "https://github.com/anthropics/knowledge-work-plugins/tree/main/sales/skills"
+    repo_status: "active"
+    stars: 500
+    healthroute_fit: 90
+    healthroute_use_case: "Post-call: Extract prospect interest, specimen volume, HIPAA concerns, next steps; auto-generate follow-up email"
+    healthroute_gap: "No medical-specific result fields (HIPAA concern level, specimen volume commitment, trial vs. proposal)"
+    owner: "Anthropic"
+    approval_status: "approved"
+    access_control: "public"
+    tags:
+      - sales
+      - call-logging
+      - follow-up
+      - crm-integration
+      - anthropic
+
+  - id: "CAP-101"
+    ref_id: "CAP-101"
+    slug: "agentic-workflow-patterns"
+    name: "Agentic Workflow Patterns"
+    description: "Comprehensive collection of agentic patterns: orchestrator-workers, prompt chaining, routing"
+    category: "infrastructure"
+    vertical: "general"
+    maturity: "production"
+    source: "awesome-claude-code"
+    source_url: "https://github.com/ThibautMelen/agentic-workflow-patterns"
+    repo_status: "active"
+    stars: 200
+    healthroute_fit: 90
+    healthroute_use_case: "Orchestrator-workers pattern directly maps to HealthRoute capability composition (researcher → prep agent → caller → summary agent)"
+    healthroute_gap: "None; pattern-based reference material"
+    owner: "ThibautMelen (awesome-claude-code)"
+    approval_status: "approved"
+    access_control: "public"
+    tags:
+      - architecture
+      - agentic-patterns
+      - workflow-design
+      - open-source
+
+  - id: "CAP-401"
+    ref_id: "CAP-401"
+    slug: "librarian-mcp"
+    name: "Librarian MCP — Knowledge Base Backend"
+    description: "MCP server for Obsidian vault storage with semantic search and graph analytics"
+    category: "knowledge"
+    vertical: "general"
+    maturity: "production"
+    source: "awesome-claude-code"
+    source_url: "https://github.com/ngmeyer/librarian-mcp"
+    repo_status: "active"
+    stars: 200
+    healthroute_fit: 85
+    healthroute_use_case: "Store HealthRoute-specific playbooks (objection handling, trial pitch, compliance proof); agents query at runtime"
+    healthroute_gap: "Requires Obsidian setup; no auto-sync with call-summary results"
+    owner: "ngmeyer (awesome-claude-code)"
+    approval_status: "approved"
+    access_control: "internal"
+    tags:
+      - knowledge
+      - memory
+      - search
+      - obsidian
+      - mcp
+      - open-source
+
+  - id: "CAP-201"
+    ref_id: "CAP-201"
+    slug: "healthroute-hipaa-compliance"
+    name: "HealthRoute HIPAA Compliance & Audit Logging"
+    description: "Custom MCP wrapper: HIPAA-compliant audit logging, BAA tracking, compliance evidence capture"
+    category: "compliance"
+    vertical: "medical"
+    maturity: "beta"
+    source: "internal"
+    source_url: "n/a"
+    repo_status: "active"
+    stars: 0
+    healthroute_fit: 100
+    healthroute_use_case: "Every call to medical lab must log: prospect name, data accessed, HIPAA concern level; auto-generate BAA if audit coming"
+    healthroute_gap: "Phase 1A — needs integration with call-summary and outreach tools"
+    owner: "HealthRoute Operations"
+    approval_status: "pending"
+    access_control: "internal"
+    tags:
+      - compliance
+      - hipaa
+      - audit-logging
+      - medical
+      - custom
+      - phase-1a

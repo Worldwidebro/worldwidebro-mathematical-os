@@ -1,0 +1,18 @@
+-- Capability Registry INSERT statements
+-- Generated: 2026-09-10T15:51:17.937095
+-- 5 capabilities for HealthRoute
+
+BEGIN;
+
+INSERT INTO capabilities (id, ref_id, slug, name, description, category, source, healthroute_fit, healthroute_use_case, healthroute_gap, owner, approval_status, access_control, version, created_at, updated_at) VALUES ('CAP-001', 'CAP-001', 'anthropic-account-research', 'Account Research (Prospect Intelligence)', 'Research a company or person and extract actionable sales intelligence', 'sales', 'anthropic', 95, 'Research medical labs before outreach: WakeMed, Atrium Health, Duke Health; identify lab directors, specimen volumes, compliance posture', 'Specimen volume buried in facility profiles; no HIPAA research auto-trigger', 'Anthropic', 'approved', 'public', '1.0', NOW(), NOW());
+
+INSERT INTO capabilities (id, ref_id, slug, name, description, category, source, healthroute_fit, healthroute_use_case, healthroute_gap, owner, approval_status, access_control, version, created_at, updated_at) VALUES ('CAP-003', 'CAP-003', 'anthropic-call-summary', 'Call Summary & Action Items', 'Extract action items, draft follow-up, and log call to CRM', 'sales', 'anthropic', 90, 'Post-call: Extract prospect interest, specimen volume, HIPAA concerns, next steps; auto-generate follow-up email', 'No medical-specific result fields (HIPAA concern level, specimen volume commitment, trial vs. proposal)', 'Anthropic', 'approved', 'public', '1.0', NOW(), NOW());
+
+INSERT INTO capabilities (id, ref_id, slug, name, description, category, source, healthroute_fit, healthroute_use_case, healthroute_gap, owner, approval_status, access_control, version, created_at, updated_at) VALUES ('CAP-101', 'CAP-101', 'agentic-workflow-patterns', 'Agentic Workflow Patterns', 'Comprehensive collection of agentic patterns: orchestrator-workers, prompt chaining, routing', 'infrastructure', 'awesome-claude-code', 90, 'Orchestrator-workers pattern directly maps to HealthRoute capability composition (researcher → prep agent → caller → summary agent)', 'None; pattern-based reference material', 'ThibautMelen (awesome-claude-code)', 'approved', 'public', '1.0', NOW(), NOW());
+
+INSERT INTO capabilities (id, ref_id, slug, name, description, category, source, healthroute_fit, healthroute_use_case, healthroute_gap, owner, approval_status, access_control, version, created_at, updated_at) VALUES ('CAP-401', 'CAP-401', 'librarian-mcp', 'Librarian MCP — Knowledge Base Backend', 'MCP server for Obsidian vault storage with semantic search and graph analytics', 'knowledge', 'awesome-claude-code', 85, 'Store HealthRoute-specific playbooks (objection handling, trial pitch, compliance proof); agents query at runtime', 'Requires Obsidian setup; no auto-sync with call-summary results', 'ngmeyer (awesome-claude-code)', 'approved', 'internal', '1.0', NOW(), NOW());
+
+INSERT INTO capabilities (id, ref_id, slug, name, description, category, source, healthroute_fit, healthroute_use_case, healthroute_gap, owner, approval_status, access_control, version, created_at, updated_at) VALUES ('CAP-201', 'CAP-201', 'healthroute-hipaa-compliance', 'HealthRoute HIPAA Compliance & Audit Logging', 'Custom MCP wrapper: HIPAA-compliant audit logging, BAA tracking, compliance evidence capture', 'compliance', 'internal', 100, 'Every call to medical lab must log: prospect name, data accessed, HIPAA concern level; auto-generate BAA if audit coming', 'Phase 1A — needs integration with call-summary and outreach tools', 'HealthRoute Operations', 'pending', 'internal', '1.0', NOW(), NOW());
+
+COMMIT;
+-- Inserted 5 capabilities
