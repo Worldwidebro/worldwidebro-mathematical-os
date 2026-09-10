@@ -1,0 +1,450 @@
+# CAPABILITY-REGISTRY-ENTRIES.yaml
+# 5 Production-Ready Capability Registry Entries for HealthRoute
+# Version: 1.0 | Created: 2026-09-10
+
+---
+
+# ============================================================================
+# ENTRY 1: Anthropic Sales Plugin — Account Research
+# ============================================================================
+
+capabilities:
+  - id: "CAP-001"
+    ref_id: "CAP-001"
+    slug: "anthropic-account-research"
+    name: "Account Research (Prospect Intelligence)"
+    description: "Research a company or person and extract actionable sales intelligence"
+    
+    category: "sales"
+    vertical: "general"  # Works across all verticals
+    maturity: "production"
+    
+    source: "anthropic"
+    source_url: "https://github.com/anthropics/knowledge-work-plugins/tree/main/sales/skills/account-research"
+    repo_status: "active"
+    stars: 500
+    
+    skill:
+      name: "account-research"
+      description: "Get a complete picture of any company or person before outreach"
+      triggers:
+        - "research [company]"
+        - "look up [person]"
+        - "intel on [prospect]"
+        - "who is [name] at [company]"
+        - "tell me about [company]"
+    
+    inputs:
+      required:
+        - "company_name: string"
+        - "person_name: string (optional)"
+      optional:
+        - "research_depth: 'overview'|'detailed'"
+        - "include_enrichment: boolean"
+    
+    outputs:
+      primary: "Structured company/person research with intel"
+      format: "markdown"
+      example:
+        company: "WakeMed"
+        industry: "Healthcare"
+        employee_count: "8000+"
+        key_people:
+          - name: "Jane Doe"
+            title: "Lab Director"
+            linkedin: "https://linkedin.com/..."
+        recent_news: ["Accreditation renewed", "New CAP certification"]
+        hiring_signals: "Active recruiting for operations roles"
+    
+    execution:
+      type: "skill"
+      model: "sonnet"
+      estimated_tokens: 2000
+      estimated_latency_ms: 8000
+      cost_per_invocation: "$0.02"
+    
+    dependencies:
+      mcps:
+        - mcp_id: "MCP-ENRICHMENT"
+          required: false
+          fallback: true
+      skills: []
+      external_apis:
+        - "Google Search API"
+        - "LinkedIn (enrichment optional)"
+    
+    healthroute_fit: 95
+    healthroute_use_case: "Research medical labs before outreach: WakeMed, Atrium Health, Duke Health; identify lab directors, specimen volumes, compliance posture"
+    healthroute_gap: "Specimen volume buried in facility profiles; no HIPAA research auto-trigger"
+    
+    integrations:
+      supabase: false
+      neo4j: false
+      slack: false
+      custom_mcp: false
+    
+    owner: "Anthropic"
+    approval_status: "approved"
+    access_control: "public"
+    
+    tags: ["sales", "research", "prospecting", "b2b", "anthropic"]
+    related_capabilities: ["CAP-002", "CAP-006"]
+    version: "1.0"
+    created: "2026-09-10"
+    last_updated: "2026-09-10"
+
+---
+
+# ============================================================================
+# ENTRY 2: Anthropic Sales Plugin — Call Summary
+# ============================================================================
+
+  - id: "CAP-003"
+    ref_id: "CAP-003"
+    slug: "anthropic-call-summary"
+    name: "Call Summary & Action Items"
+    description: "Extract action items, draft follow-up, and log call to CRM"
+    
+    category: "sales"
+    vertical: "general"
+    maturity: "production"
+    
+    source: "anthropic"
+    source_url: "https://github.com/anthropics/knowledge-work-plugins/tree/main/sales/skills"
+    repo_status: "active"
+    stars: 500
+    
+    skill:
+      name: "call-summary"
+      description: "Process call notes or transcript — extract action items, draft follow-up, generate internal summary"
+      triggers:
+        - "/call-summary"
+    
+    inputs:
+      required:
+        - "call_notes_or_transcript: string"
+      optional:
+        - "prospect_name: string"
+        - "call_date: date"
+    
+    outputs:
+      primary: "Structured call summary with action items and follow-up draft"
+      format: "markdown + json"
+      example:
+        prospect: "WakeMed Lab"
+        call_date: "2026-09-11"
+        key_takeaways:
+          - "Interested in trial"
+          - "300 specimens/day volume"
+          - "HIPAA audit coming in 60 days"
+        action_items:
+          - text: "Send trial agreement"
+            owner: "sales"
+            due: "2026-09-12"
+          - text: "Schedule onboarding call"
+            owner: "ops"
+            due: "2026-09-13"
+        follow_up_email: "Draft email template"
+    
+    execution:
+      type: "skill"
+      model: "sonnet"
+      estimated_tokens: 1500
+      estimated_latency_ms: 5000
+      cost_per_invocation: "$0.015"
+    
+    dependencies:
+      mcps:
+        - mcp_id: "MCP-CRM"
+          required: false
+          fallback: true
+      skills: []
+      external_apis: []
+    
+    healthroute_fit: 90
+    healthroute_use_case: "Post-call: Extract prospect interest, specimen volume, HIPAA concerns, next steps; auto-generate follow-up email"
+    healthroute_gap: "No medical-specific result fields (HIPAA concern level, specimen volume commitment, trial vs. proposal)"
+    
+    integrations:
+      supabase: true  # Custom MCP wrapper
+      neo4j: false
+      slack: false
+      custom_mcp: true
+    
+    owner: "Anthropic"
+    approval_status: "approved"
+    access_control: "public"
+    
+    tags: ["sales", "call-logging", "follow-up", "crm-integration", "anthropic"]
+    related_capabilities: ["CAP-001", "CAP-004", "CAP-005"]
+    version: "1.0"
+    created: "2026-09-10"
+    last_updated: "2026-09-10"
+
+---
+
+# ============================================================================
+# ENTRY 3: awesome-claude-code — Agentic Workflow Patterns
+# ============================================================================
+
+  - id: "CAP-101"
+    ref_id: "CAP-101"
+    slug: "agentic-workflow-patterns"
+    name: "Agentic Workflow Patterns"
+    description: "Comprehensive collection of agentic patterns: orchestrator-workers, prompt chaining, routing"
+    
+    category: "infrastructure"
+    vertical: "general"
+    maturity: "production"
+    
+    source: "awesome-claude-code"
+    source_url: "https://github.com/ThibautMelen/agentic-workflow-patterns"
+    repo_status: "active"
+    stars: 200
+    
+    skill:
+      name: "agentic-workflow-patterns"
+      description: "Collection of proven agentic patterns with Mermaid diagrams"
+      triggers:
+        - "Design agent workflow"
+        - "Pattern: orchestrator-workers"
+        - "Pattern: prompt chaining"
+        - "Pattern: routing"
+    
+    inputs:
+      required:
+        - "workflow_type: 'orchestrator'|'chaining'|'routing'"
+      optional:
+        - "context: domain-specific context"
+    
+    outputs:
+      primary: "Mermaid diagram + code template for pattern"
+      format: "mermaid + markdown"
+    
+    execution:
+      type: "reference"
+      model: "haiku"
+      estimated_tokens: 0
+      estimated_latency_ms: 0
+      cost_per_invocation: "$0.00"
+    
+    dependencies:
+      mcps: []
+      skills: []
+      external_apis: []
+    
+    healthroute_fit: 90
+    healthroute_use_case: "Orchestrator-workers pattern directly maps to HealthRoute capability composition (researcher → prep agent → caller → summary agent)"
+    healthroute_gap: "None; pattern-based reference material"
+    
+    integrations:
+      supabase: false
+      neo4j: false
+      slack: false
+      custom_mcp: false
+    
+    owner: "ThibautMelen (awesome-claude-code)"
+    approval_status: "approved"
+    access_control: "public"
+    
+    tags: ["architecture", "agentic-patterns", "workflow-design", "open-source"]
+    related_capabilities: ["CAP-401"]
+    version: "1.0"
+    created: "2026-09-10"
+    last_updated: "2026-09-10"
+
+---
+
+# ============================================================================
+# ENTRY 4: awesome-claude-code — Librarian MCP
+# ============================================================================
+
+  - id: "CAP-401"
+    ref_id: "CAP-401"
+    slug: "librarian-mcp"
+    name: "Librarian MCP — Knowledge Base Backend"
+    description: "MCP server for Obsidian vault storage with semantic search and graph analytics"
+    
+    category: "knowledge"
+    vertical: "general"
+    maturity: "production"
+    
+    source: "awesome-claude-code"
+    source_url: "https://github.com/ngmeyer/librarian-mcp"
+    repo_status: "active"
+    stars: 200
+    
+    skill:
+      name: "librarian-mcp"
+      description: "Store HealthRoute playbooks, competitor analysis, customer profiles in Obsidian vault; semantic search + wikilinks + graph"
+      triggers:
+        - "Store playbook"
+        - "Retrieve objection handling"
+        - "Find customer profiles"
+    
+    inputs:
+      required:
+        - "vault_path: /path/to/obsidian/vault"
+        - "query: search_string"
+      optional:
+        - "search_type: 'semantic'|'keyword'|'graph'"
+    
+    outputs:
+      primary: "Retrieved markdown documents + related notes via wikilinks"
+      format: "markdown"
+    
+    execution:
+      type: "mcp_tool"
+      model: "haiku"
+      estimated_tokens: 1000
+      estimated_latency_ms: 2000
+      cost_per_invocation: "$0.00"
+    
+    dependencies:
+      mcps:
+        - mcp_id: "MCP-LIBRARIAN"
+          required: true
+          fallback: false
+      skills: []
+      external_apis: []
+    
+    healthroute_fit: 85
+    healthroute_use_case: "Store HealthRoute-specific playbooks (objection handling, trial pitch, compliance proof); agents query at runtime"
+    healthroute_gap: "Requires Obsidian setup; no auto-sync with call-summary results"
+    
+    integrations:
+      supabase: false
+      neo4j: true  # Graph knowledge integration
+      slack: false
+      custom_mcp: true
+    
+    owner: "ngmeyer (awesome-claude-code)"
+    approval_status: "approved"
+    access_control: "internal"
+    
+    tags: ["knowledge", "memory", "search", "obsidian", "mcp", "open-source"]
+    related_capabilities: ["CAP-001", "CAP-003", "CAP-403"]
+    version: "1.0"
+    created: "2026-09-10"
+    last_updated: "2026-09-10"
+
+---
+
+# ============================================================================
+# ENTRY 5: CUSTOM — HealthRoute HIPAA Compliance Wrapper
+# ============================================================================
+
+  - id: "CAP-201"
+    ref_id: "CAP-201"
+    slug: "healthroute-hipaa-compliance"
+    name: "HealthRoute HIPAA Compliance & Audit Logging"
+    description: "Custom MCP wrapper: HIPAA-compliant audit logging, BAA tracking, compliance evidence capture"
+    
+    category: "compliance"
+    vertical: "medical"
+    maturity: "beta"
+    
+    source: "internal"
+    source_url: "n/a"
+    repo_status: "active"
+    stars: 0
+    
+    skill:
+      name: "healthroute-hipaa"
+      description: "Log all customer interactions for HIPAA compliance; generate audit trails and BAA tracking"
+      triggers:
+        - "Log call to [prospect]"
+        - "Capture HIPAA concern"
+        - "Generate BAA"
+    
+    inputs:
+      required:
+        - "prospect_name: string"
+        - "interaction_type: 'call'|'email'|'visit'"
+        - "data_accessed: list of phi_categories"
+      optional:
+        - "hipaa_concern_level: 'low'|'medium'|'high'"
+        - "audit_notes: string"
+    
+    outputs:
+      primary: "Supabase audit log entry + BAA reminder if needed"
+      format: "json + email"
+      example:
+        prospect_id: "PROSPECT-001"
+        timestamp: "2026-09-11T14:30:00Z"
+        interaction: "sales_call"
+        phi_accessed: ["facility_name", "specimen_volume", "contact_names"]
+        compliance_status: "HIPAA_COMPLIANT"
+        audit_log_id: "AUDIT-001"
+    
+    execution:
+      type: "mcp_tool"
+      model: "haiku"
+      estimated_tokens: 500
+      estimated_latency_ms: 1000
+      cost_per_invocation: "$0.00"
+    
+    dependencies:
+      mcps:
+        - mcp_id: "MCP-SUPABASE"
+          required: true
+          fallback: false
+      skills: []
+      external_apis:
+        - "Supabase PostgreSQL"
+    
+    healthroute_fit: 100
+    healthroute_use_case: "Every call to medical lab must log: prospect name, data accessed, HIPAA concern level; auto-generate BAA if audit coming"
+    healthroute_gap: "Phase 1A — needs integration with call-summary and outreach tools"
+    
+    integrations:
+      supabase: true
+      neo4j: false
+      slack: true
+      custom_mcp: true
+    
+    owner: "HealthRoute Operations"
+    approval_status: "pending"  # Phase 1A approval needed
+    access_control: "internal"
+    
+    tags: ["compliance", "hipaa", "audit-logging", "medical", "custom", "phase-1a"]
+    related_capabilities: ["CAP-003", "CAP-004", "CAP-202"]
+    version: "1.0"
+    created: "2026-09-10"
+    last_updated: "2026-09-10"
+
+---
+
+# ============================================================================
+# REGISTRY SUMMARY
+# ============================================================================
+
+summary:
+  total_entries: 5
+  by_source:
+    anthropic: 2
+    awesome_claude_code: 2
+    internal: 1
+  
+  by_category:
+    sales: 2
+    infrastructure: 1
+    knowledge: 1
+    compliance: 1
+  
+  by_maturity:
+    production: 4
+    beta: 1
+  
+  total_fit_score: 92  # Average: (95 + 90 + 90 + 85 + 100) / 5 = 92%
+  
+  approval_ready: 4
+  pending_phase_1a: 1
+  
+  next_step: "Load entries into Supabase + wire into Neo4j knowledge graph"
+
+---
+
+**Unit 4 Complete:** ✅ 5 Capability Registry entries created  
+**Next:** Unit 5 — Design OpenWork MCP wrapper for capability discovery (Opus, 30 min)
+

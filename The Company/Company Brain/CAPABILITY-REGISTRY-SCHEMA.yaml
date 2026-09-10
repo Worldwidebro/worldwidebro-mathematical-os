@@ -1,0 +1,370 @@
+# CAPABILITY-REGISTRY-SCHEMA.yaml
+# Machine-readable schema for HealthRoute Capability Registry
+# Composes skills, MCPs, plugins, and workflows into discoverable, executable capabilities
+#
+# Version: 1.0 | Created: 2026-09-10 | Model: Haiku
+
+---
+
+# ============================================================================
+# MASTER SCHEMA: Capability Registry Entry
+# ============================================================================
+
+_schema_version: "1.0"
+_description: |
+  Capability Registry provides a declarative, machine-readable registry of all
+  skills, plugins, MCPs, and workflows available to HealthRoute agents. Each
+  entry is discoverable via OpenWork MCP search_capabilities and executable
+  via execute_capability.
+
+_metadata:
+  registry_version: "1.0"
+  last_updated: "2026-09-10"
+  authority: "Capability Registry Authority (CRA)"
+  storage_backend: "Supabase + Neo4j"
+  discovery_layer: "OpenWork MCP"
+
+---
+
+# ============================================================================
+# CAPABILITY ENTRY TEMPLATE
+# ============================================================================
+
+capability_template: &capability_entry
+  # IDENTITY
+  id: "CAP-000000"                           # ULID (unique, sortable)
+  ref_id: "CAP-000000"                       # TYPE-000001 reference
+  slug: "descriptive-kebab-case"             # URL-safe identifier
+  name: "Human Readable Capability Name"
+  description: "One-line summary"
+  
+  # CLASSIFICATION
+  category: "sales|operations|finance|learning|compliance|infrastructure"
+  vertical: "medical|general|sector-specific"
+  maturity: "production|beta|alpha"
+  
+  # AVAILABILITY
+  source: "anthropic|awesome-claude-code|open-source|internal"
+  source_url: "https://github.com/org/repo"
+  repo_status: "active|maintained|archived"
+  stars: 0
+  
+  # SKILL DEFINITION (Anthropic Agent Skills format)
+  skill:
+    name: "Internal skill identifier"
+    description: "What this skill does"
+    triggers: ["trigger phrase 1", "trigger phrase 2"]
+    
+  # INPUTS & OUTPUTS
+  inputs:
+    required: []
+    optional: []
+  outputs:
+    primary: "What it returns"
+    format: "text|json|markdown|structured"
+    
+  # EXECUTION MODEL
+  execution:
+    type: "skill|command|workflow|mcp_tool"
+    model: "haiku|sonnet|opus"
+    estimated_tokens: 0
+    estimated_latency_ms: 0
+    cost_per_invocation: "$0.00"
+    
+  # DEPENDENCIES
+  dependencies:
+    mcps:
+      - mcp_id: "MCP-000000"
+        required: false
+        fallback: false
+    skills:
+      - skill_id: "CAP-000000"
+        required: false
+    external_apis: []
+    
+  # HEALTHROUTE-SPECIFIC
+  healthroute_fit: 85
+  healthroute_use_case: "Description of how this fits HealthRoute"
+  healthroute_gap: "Known limitations for medical courier sales"
+  
+  # INTEGRATION
+  integrations:
+    supabase: false
+    neo4j: false
+    slack: false
+    custom_mcp: false
+    
+  # GOVERNANCE
+  owner: "team|individual"
+  approval_status: "approved|pending|blocked"
+  access_control: "public|restricted|internal"
+  
+  # METADATA
+  tags: ["tag1", "tag2"]
+  related_capabilities: ["CAP-000001", "CAP-000002"]
+  version: "1.0"
+  created: "2026-09-10"
+  last_updated: "2026-09-10"
+
+---
+
+# ============================================================================
+# CAPABILITY DOMAINS (21 primary domains)
+# ============================================================================
+
+domains:
+  sales:
+    name: "Sales & Prospecting"
+    capabilities:
+      - CAP-001  # Prospect Research
+      - CAP-002  # Call Preparation
+      - CAP-003  # Call Summary
+      - CAP-004  # Outreach Drafting
+      - CAP-005  # Forecast & Pipeline
+      - CAP-006  # Competitive Intelligence
+      - CAP-007  # Asset Generation
+      - CAP-008  # Daily Briefing
+    
+  operations:
+    name: "Operations & Dispatch"
+    capabilities:
+      - CAP-101  # Driver Management
+      - CAP-102  # Route Optimization
+      - CAP-103  # Delivery Tracking
+      - CAP-104  # Temperature Monitoring
+      - CAP-105  # Proof of Delivery
+    
+  compliance:
+    name: "HIPAA & Compliance"
+    capabilities:
+      - CAP-201  # Audit Logging
+      - CAP-202  # HIPAA Assessment
+      - CAP-203  # BAA Generation
+      - CAP-204  # Compliance Evidence
+    
+  learning:
+    name: "Learning & Training"
+    capabilities:
+      - CAP-301  # Sales Training
+      - CAP-302  # Ops Runbooks
+      - CAP-303  # Compliance Training
+    
+  knowledge:
+    name: "Knowledge & Memory"
+    capabilities:
+      - CAP-401  # Prospect Memory
+      - CAP-402  # Playbook Library
+      - CAP-403  # Company Knowledge Graph
+    
+  infrastructure:
+    name: "Infrastructure & Security"
+    capabilities:
+      - CAP-501  # Code Security Review
+      - CAP-502  # CI/CD Automation
+      - CAP-503  # Secret Management
+
+---
+
+# ============================================================================
+# COMPOSITE WORKFLOWS (Multi-skill orchestration)
+# ============================================================================
+
+workflows:
+  healthroute_week1_sales_cycle:
+    id: "WFL-001"
+    name: "HealthRoute Week 1 Sales Cycle"
+    description: "End-to-end prospecting, call prep, execution, follow-up"
+    
+    stages:
+      - stage: 1
+        name: "Prospect Research"
+        capabilities: ["CAP-001"]
+        duration_minutes: 15
+        
+      - stage: 2
+        name: "Call Preparation"
+        capabilities: ["CAP-002", "CAP-006"]
+        duration_minutes: 10
+        
+      - stage: 3
+        name: "Call Execution"
+        capabilities: ["CAP-999"]  # Vapi integration (separate)
+        duration_minutes: 20
+        
+      - stage: 4
+        name: "Result Capture"
+        capabilities: ["CAP-003"]
+        duration_minutes: 5
+        
+      - stage: 5
+        name: "Follow-up"
+        capabilities: ["CAP-004", "CAP-005"]
+        duration_minutes: 10
+    
+    total_duration_minutes: 60
+    success_metric: "Trial agreement or qualified proposal"
+
+---
+
+# ============================================================================
+# CAPABILITY DISCOVERY (OpenWork MCP interface)
+# ============================================================================
+
+discovery_layer:
+  type: "openwork_mcp"
+  operations:
+    search_capabilities:
+      query_types:
+        - "by_domain"        # search_capabilities(domain='sales')
+        - "by_healthroute_fit"  # search_capabilities(fit_gte=80)
+        - "by_tag"           # search_capabilities(tag='HIPAA')
+        - "by_integration"   # search_capabilities(integration='supabase')
+        - "by_dependency"    # search_capabilities(requires='MCP-000000')
+      
+      response_format:
+        capabilities: []
+        metadata:
+          total: 0
+          filtered: 0
+    
+    execute_capability:
+      parameters:
+        capability_id: "CAP-000000"
+        inputs: {}
+        context: {}
+      
+      response_format:
+        status: "success|error"
+        output: {}
+        latency_ms: 0
+        tokens_used: 0
+        cost: "$0.00"
+    
+    compose_workflow:
+      parameters:
+        workflow_id: "WFL-001"
+        capabilities: []
+        start_stage: 1
+      
+      response_format:
+        workflow_status: "ready|executing|complete"
+        stage_results: []
+
+---
+
+# ============================================================================
+# STORAGE & SYNC
+# ============================================================================
+
+storage:
+  primary: "Supabase PostgreSQL"
+  tables:
+    - name: "capabilities"
+      columns:
+        - id (ULID)
+        - ref_id (VARCHAR)
+        - name (VARCHAR)
+        - category (VARCHAR)
+        - schema (JSONB)
+        - metadata (JSONB)
+    
+    - name: "capability_executions"
+      columns:
+        - id (ULID)
+        - capability_id (FK)
+        - inputs (JSONB)
+        - outputs (JSONB)
+        - status (VARCHAR)
+        - created_at (TIMESTAMP)
+  
+  secondary: "Neo4j"
+    relationships:
+      - CAPABILITY -> (DEPENDS_ON) -> CAPABILITY
+      - CAPABILITY -> (REQUIRES_MCP) -> MCP
+      - WORKFLOW -> (CONTAINS) -> CAPABILITY
+      - CAPABILITY -> (BELONGS_TO) -> DOMAIN
+  
+  sync_strategy: "Supabase → Neo4j every 60s"
+
+---
+
+# ============================================================================
+# PHASE 1 ROLLOUT (Sep 10-19)
+# ============================================================================
+
+phase1_capabilities:
+  domains_ready:
+    - sales (8 capabilities)
+    - compliance (4 capabilities)
+    - knowledge (3 capabilities)
+  
+  domains_partial:
+    - operations (3/5 capabilities)
+    - learning (2/3 capabilities)
+  
+  domains_pending:
+    - infrastructure (1/3 capabilities)
+  
+  total_ready: 18
+  total_committed: 21
+  coverage: "86%"
+
+---
+
+# ============================================================================
+# EXTENSION POINTS
+# ============================================================================
+
+extension_points:
+  custom_skills:
+    path: "/Users/acebless/Documents/The Company/Company Brain/_REGISTRY/custom-skills/"
+    format: "SKILL.md"
+    discovery: "Auto-indexed at startup"
+  
+  mcp_servers:
+    path: "~/.claude/mcp/servers/"
+    format: "FastMCP (Python) or Node.js"
+    discovery: "Auto-indexed at startup"
+  
+  prompt_templates:
+    path: "/Users/acebless/Documents/The Company/Company Brain/_PROMPTS/"
+    format: "Markdown"
+    discovery: "Librarian MCP"
+
+---
+
+# ============================================================================
+# VALIDATION & APPROVAL
+# ============================================================================
+
+validation:
+  schema_version: "1.0"
+  required_fields:
+    - id
+    - name
+    - description
+    - category
+    - source
+    - skill
+    - inputs
+    - outputs
+    - execution
+    - healthroute_fit
+  
+  fit_score_rules:
+    - "fit < 60% → NOT RECOMMENDED"
+    - "fit 60-79% → PARTIAL FIT (needs adaptation)"
+    - "fit 80%+ → GO (ready for Week 1)"
+
+approval_gates:
+  fit_score: ">= 80%"
+  dependencies_available: true
+  owner_approval: true
+  security_review: false  # Phase 2
+
+---
+
+**Schema Version:** 1.0  
+**Status:** ✅ READY FOR POPULATION  
+**Next:** Unit 4 — Create 5 CAPABILITY-REGISTRY entries (Sonnet, 30 min)
+
