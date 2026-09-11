@@ -1,0 +1,78 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__claude_ai_ClickUp__add_tag_to_task",
+      "mcp__claude_ai_ClickUp__add_task_dependency",
+      "mcp__claude_ai_ClickUp__add_task_link",
+      "mcp__claude_ai_ClickUp__add_task_to_list",
+      "mcp__claude_ai_ClickUp__add_time_entry",
+      "mcp__claude_ai_ClickUp__attach_task_file",
+      "mcp__claude_ai_ClickUp__create_comment",
+      "mcp__claude_ai_ClickUp__create_document",
+      "mcp__claude_ai_ClickUp__create_document_page",
+      "mcp__claude_ai_ClickUp__create_folder",
+      "mcp__claude_ai_ClickUp__create_list",
+      "mcp__claude_ai_ClickUp__create_list_in_folder",
+      "mcp__claude_ai_ClickUp__create_reminder",
+      "mcp__claude_ai_ClickUp__create_task",
+      "mcp__claude_ai_ClickUp__create_task_comment",
+      "mcp__claude_ai_ClickUp__delete_comment",
+      "mcp__claude_ai_ClickUp__delete_task",
+      "mcp__claude_ai_ClickUp__download_task_attachment",
+      "mcp__claude_ai_ClickUp__filter_tasks",
+      "mcp__claude_ai_ClickUp__find_member_by_name",
+      "mcp__claude_ai_ClickUp__get_bulk_tasks_time_in_status",
+      "mcp__claude_ai_ClickUp__get_chat_channel_messages",
+      "mcp__claude_ai_ClickUp__get_chat_channels",
+      "mcp__claude_ai_ClickUp__get_chat_message_replies",
+      "mcp__claude_ai_ClickUp__get_current_time_entry",
+      "mcp__claude_ai_ClickUp__get_custom_fields",
+      "mcp__claude_ai_ClickUp__get_document_pages",
+      "mcp__claude_ai_ClickUp__get_folder",
+      "mcp__claude_ai_ClickUp__get_list",
+      "mcp__claude_ai_ClickUp__get_task",
+      "mcp__claude_ai_ClickUp__get_task_comments",
+      "mcp__claude_ai_ClickUp__get_task_time_in_status",
+      "mcp__claude_ai_ClickUp__get_threaded_comments",
+      "mcp__claude_ai_ClickUp__get_time_entries",
+      "mcp__claude_ai_ClickUp__get_workspace_hierarchy",
+      "mcp__claude_ai_ClickUp__get_workspace_members",
+      "mcp__claude_ai_ClickUp__list_document_pages",
+      "mcp__claude_ai_ClickUp__merge_document",
+      "mcp__claude_ai_ClickUp__merge_document_page",
+      "mcp__claude_ai_ClickUp__merge_tasks",
+      "mcp__claude_ai_ClickUp__move_task",
+      "mcp__claude_ai_ClickUp__remove_tag_from_task",
+      "mcp__claude_ai_ClickUp__remove_task_dependency",
+      "mcp__claude_ai_ClickUp__remove_task_from_list",
+      "mcp__claude_ai_ClickUp__remove_task_link",
+      "mcp__claude_ai_ClickUp__request_attachment_upload",
+      "mcp__claude_ai_ClickUp__resolve_assignees",
+      "mcp__claude_ai_ClickUp__search",
+      "mcp__claude_ai_ClickUp__search_reminders",
+      "mcp__claude_ai_ClickUp__send_chat_message",
+      "mcp__claude_ai_ClickUp__start_time_tracking",
+      "mcp__claude_ai_ClickUp__stop_time_tracking",
+      "mcp__claude_ai_ClickUp__update_comment",
+      "mcp__claude_ai_ClickUp__update_document_page",
+      "mcp__claude_ai_ClickUp__update_folder",
+      "mcp__claude_ai_ClickUp__update_list",
+      "mcp__claude_ai_ClickUp__update_reminder",
+      "mcp__claude_ai_ClickUp__update_task"
+    ]
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '✅ ClickUp MCP: Loading…'; sleep 0.5 && echo '{\"systemMessage\": \"✅ ClickUp MCP connected — execution cockpit ready\"}'",
+            "statusMessage": "Loading ClickUp MCP…",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

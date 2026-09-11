@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  litellm:
+    image: ghcr.io/berriai/litellm:main
+    container_name: litellm-router
+    ports:
+      - "4001:4000"
+    environment:
+      - LITELLM_LOG=DEBUG
+      - LITELLM_MASTER_KEY=sk-omniroute-master-key
+    command: >
+      litellm
+      --model ollama/neural-chat
+      --model ollama/mistral
+      --base_model ollama
+      --api_base http://host.docker.internal:11434
+      --port 4000
+    networks:
+      - omniroute-net
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:4000/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  omniroute:
+    image: diegosouzapw/omniroute:latest
+    container_name: omniroute-gateway
+    ports:
+      - "8000:3000"
+    environment:
+      - LITELLM_API_BASE=http://litellm:4000
+      - OMNIROUTE_ENV=production
+      - TAILSCALE_ENABLED=true
+      - PORT=3000
+    depends_on:
+      litellm:
+        condition: service_healthy
+    networks:
+      - omniroute-net
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+networks:
+  omniroute-net:
+    driver: bridge

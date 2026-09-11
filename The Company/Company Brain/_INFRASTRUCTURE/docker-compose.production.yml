@@ -1,0 +1,51 @@
+version: '3.8'
+
+services:
+  litellm:
+    image: ghcr.io/berriai/litellm:main
+    container_name: litellm-router
+    ports:
+      - "4001:4000"
+    environment:
+      - LITELLM_LOG=INFO
+      - LITELLM_MASTER_KEY=sk-omniroute-2024
+    command: >
+      litellm
+      --model ollama/qwen3-coder:30b
+      --model ollama/qwen2.5-coder:14b
+      --model ollama/nomic-embed-text:latest
+      --base_model ollama
+      --api_base http://host.docker.internal:11434
+      --port 4000
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:4000/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+    networks:
+      - omniroute-net
+
+  omniroute:
+    image: diegosouzapw/omniroute:latest
+    container_name: omniroute-gateway
+    ports:
+      - "20128:3000"
+    environment:
+      - LITELLM_API_BASE=http://litellm:4000
+      - OMNIROUTE_ENV=production
+      - OMNIROUTE_PORT=3000
+      - GITHUB_TOKEN=${GITHUB_TOKEN}
+    depends_on:
+      litellm:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+    networks:
+      - omniroute-net
+
+networks:
+  omniroute-net:
+    driver: bridge

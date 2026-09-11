@@ -49,3 +49,13 @@ fractal
 /tmp/
 /temp/
 *.tmp
+
+# ============ OPENCLAW SECURITY ============
+.env.openclaw
+.env.*.local
+.env.*.secret
+secrets/
+*.key
+*.pem
+vault.json
+credentials.json

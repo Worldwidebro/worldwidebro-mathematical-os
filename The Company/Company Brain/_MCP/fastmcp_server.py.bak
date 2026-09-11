@@ -87,7 +87,7 @@ def omniroute_status() -> dict:
     """Check OmniRoute AI gateway status"""
     try:
         result = subprocess.run(
-            ["curl", "-s", "http://localhost:8000/health"],
+            ["curl", "-s", "http://100.87.214.70:20128/health"],
             capture_output=True,
             text=True,
             timeout=5
@@ -95,7 +95,7 @@ def omniroute_status() -> dict:
         return {
             "status": "online" if result.returncode == 0 else "offline",
             "response": result.stdout,
-            "url": "http://localhost:8000"
+            "url": "http://100.87.214.70:20128"
         }
     except Exception as e:
         return {"status": "offline", "error": str(e)}
@@ -348,7 +348,7 @@ def omniroute_route_model(task_type: str, complexity: int = 5) -> dict:
         Recommended model and routing details
     """
     try:
-        omniroute_url = os.environ.get("OMNIROUTE_URL", "http://localhost:8000")
+        omniroute_url = os.environ.get("OMNIROUTE_URL", "http://100.87.214.70:20128")
 
         import subprocess
         result = subprocess.run(

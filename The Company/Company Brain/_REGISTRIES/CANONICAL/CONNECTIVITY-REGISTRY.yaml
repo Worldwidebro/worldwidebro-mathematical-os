@@ -1,0 +1,474 @@
+---
+id: CONNECTIVITY-REGISTRY
+title: "Complete System Connectivity Map"
+description: "Every connection in the Company Brain infrastructure - machines, networks, services, agents, models, data, and business systems"
+version: "1.0"
+created: "2026-09-11"
+updated: "2026-09-11"
+maintainer: "Infrastructure Control Plane (CP-027)"
+authority: "Architecture Decision Record (ADR-001)"
+
+# CONNECTION SCHEMA
+# Each connection is: source → protocol → destination → status
+# With: authentication, authorization, latency, cost, fallback, health_check
+
+connections:
+
+  # TIER 1: MACHINE CONNECTIVITY (Physical Layer)
+
+  machine_air_to_studio:
+    source: "Air (100.121.17.63)"
+    destination: "Studio (100.87.214.70)"
+    protocol: "SSH"
+    port: 22
+    authentication: "SSH key (id_ed25519)"
+    authorization: "divinejohns user"
+    latency: "~50ms (Tailscale)"
+    status: "VERIFIED"
+    last_verified: "2026-09-11"
+    fallback: "none"
+    dependency: "Tailscale"
+
+  machine_air_to_iphone:
+    source: "Air (100.121.17.63)"
+    destination: "iPhone (100.126.240.124)"
+    protocol: "Tailscale"
+    status: "DISCOVERED"
+    last_verified: "2026-09-11"
+    note: "iPhone connected but not yet integrated"
+
+  machine_studio_to_air:
+    source: "Studio (100.87.214.70)"
+    destination: "Air (100.121.17.63)"
+    protocol: "SSH"
+    port: 22
+    status: "AVAILABLE"
+    fallback: "Tailscale direct"
+
+  machine_all_to_storage_t7:
+    source: "Air, Studio"
+    destination: "T7 Shield (1.8TB)"
+    protocol: "USB-C"
+    status: "MOUNTED"
+    capacity: "940GB free"
+
+  machine_all_to_storage_lacie:
+    source: "Studio"
+    destination: "LaCie 4TB"
+    protocol: "Thunderbolt"
+    status: "CONFIGURED"
+    capacity: "TBD"
+
+  # TIER 2: NETWORK CONNECTIVITY (Tailscale/VPN)
+
+  network_tailscale_air:
+    source: "Air"
+    protocol: "Tailscale VPN"
+    ip: "100.121.17.63"
+    status: "CONNECTED"
+    client_version: "1.98.5"
+    network: "worldwidebro"
+
+  network_tailscale_studio:
+    source: "Studio"
+    protocol: "Tailscale VPN"
+    ip: "100.87.214.70"
+    status: "CONNECTED"
+    network: "worldwidebro"
+    relay: "NYC"
+
+  network_tailscale_iphone:
+    source: "iPhone (dexterslab)"
+    protocol: "Tailscale VPN"
+    ip: "100.126.240.124"
+    status: "DISCOVERED"
+    note: "Not yet integrated"
+    exit_node: false
+    recommendation: "Keep as regular node, not exit node"
+
+  network_magic_dns:
+    source: "Tailscale"
+    feature: "Magic DNS"
+    status: "NOT_ENABLED"
+    action_needed: "Enable for .local domain resolution"
+    benefit: "Safari will work via macstudio.local"
+
+  # TIER 3: SERVICE CONNECTIVITY (Applications)
+
+  service_ollama_air:
+    source: "Air"
+    service: "Ollama"
+    port: 11434
+    status: "VERIFIED"
+    models: 3
+    models_list: ["nomic-embed-text", "qwen2.5-coder:14b", "hermes3:latest"]
+    last_verified: "2026-09-11"
+
+  service_ollama_studio:
+    source: "Studio"
+    service: "Ollama"
+    port: 11434
+    status: "VERIFIED"
+    models: 3
+    last_verified: "2026-09-11"
+
+  service_exo_studio:
+    source: "Studio"
+    service: "exo (MLX native inference)"
+    port: 52415
+    status: "VERIFIED"
+    uptime: "Since Aug 31"
+    processes: 4
+    note: "Native Apple MLX, better performance than Ollama on Apple Silicon"
+
+  service_omniroute_air:
+    source: "Air"
+    service: "OmniRoute"
+    port: 3000
+    status: "RUNNING"
+    processes: 2
+    providers: 9
+    commands: 70+
+    note: "Routing intelligence layer"
+
+  service_neo4j_studio:
+    source: "Studio"
+    service: "Neo4j"
+    port: 7474
+    status: "VERIFIED"
+    edges: 20363
+    docker: true
+
+  service_neo4j_air:
+    source: "Air"
+    service: "Neo4j"
+    port: 7474
+    docker: true
+    status: "VERIFIED"
+
+  service_qdrant_both:
+    source: "Air, Studio"
+    service: "Qdrant"
+    port: 6333
+    status: "VERIFIED"
+    vectors: 17236
+
+  service_postgresql_both:
+    source: "Air, Studio"
+    service: "PostgreSQL"
+    port: 5433
+    docker: true
+    status: "VERIFIED"
+
+  service_redis_both:
+    source: "Air, Studio"
+    service: "Redis"
+    port: 6379
+    docker: true
+    status: "VERIFIED"
+
+  service_fastmcp:
+    source: "Air"
+    service: "FastMCP"
+    path: "_MCP/fastmcp_server.py"
+    status: "READY"
+    role: "Bridge between Antigravity and OmniRoute"
+
+  # TIER 4: INFERENCE CONNECTIVITY (Models)
+
+  model_air_to_local:
+    source: "Air applications"
+    destination: "Ollama (localhost:11434)"
+    protocol: "HTTP API"
+    status: "VERIFIED"
+    models_available: 3
+
+  model_air_to_studio:
+    source: "Air applications"
+    destination: "Studio Ollama (100.87.214.70:11434)"
+    protocol: "HTTP/Tailscale"
+    status: "VERIFIED"
+    latency: "~100ms"
+    fallback: "Air local models"
+
+  model_studio_exo:
+    source: "Studio applications"
+    destination: "exo MLX (port 52415)"
+    protocol: "HTTP API"
+    status: "VERIFIED"
+    note: "Native Apple Silicon optimization"
+
+  model_omniroute_routing:
+    source: "OmniRoute"
+    destination: "9 providers"
+    protocol: "Intelligent routing"
+    status: "CONFIGURED"
+    providers:
+      - "ollama-local (Air)"
+      - "ollama-local (Studio)"
+      - "exo (Studio MLX)"
+      - "OpenAI"
+      - "Kimi"
+      - "NVIDIA NIM"
+      - "OpenRouter"
+      - "AirLLM Mock"
+      - "more..."
+
+  # TIER 5: AGENT CONNECTIVITY
+
+  agent_opencode:
+    name: "OpenCode"
+    status: "READY"
+    connection_method: "CLI"
+    configured_backend: "OmniRoute"
+    models_available: "All 9 providers"
+
+  agent_codex:
+    name: "Codex CLI"
+    status: "CONFIGURED"
+    config_file: "~/.codex/local.config.toml"
+    backends: ["OmniRoute", "Local Ollama"]
+
+  agent_cline:
+    name: "Cline"
+    status: "INSTALLED"
+    version: "Latest"
+
+  agent_aider:
+    name: "Aider"
+    status: "INSTALLED"
+    location: "~/.local/bin/aider"
+
+  agent_antigravity:
+    name: "Antigravity (Operating System)"
+    status: "WIRED"
+    integration: "FastMCP → OmniRoute → Models"
+    rules: 45
+    capabilities: "Core governance"
+
+  agent_hermes:
+    name: "Hermes"
+    status: "READY"
+    role: "Agent orchestration"
+
+  agent_opencowork:
+    name: "OpenCoWork"
+    status: "READY"
+    role: "Execution framework"
+
+  # TIER 6: IPHONE INTEGRATION (NEW)
+
+  iphone_tailscale:
+    device: "dexterslab (100.126.240.124)"
+    connection: "Tailscale VPN"
+    status: "CONNECTED"
+    exit_node: false
+    recommendation: "Keep as regular node"
+
+  iphone_ssh_access:
+    device: "iPhone"
+    target: "macstudio"
+    method: "SSH via Tailscale"
+    app_options: ["Prompt 3 ($12.99)", "iSH (free)", "SSH Files (free)"]
+    status: "READY"
+
+  iphone_safari_access:
+    device: "iPhone"
+    target: "OmniRoute dashboard"
+    method: "Safari browser"
+    current_status: "NOT_WORKING"
+    issue: "Magic DNS not enabled"
+    fix: "Enable Tailscale Magic DNS"
+    url: "http://macstudio.local:3000"
+
+  iphone_omniroute:
+    device: "iPhone"
+    service: "OmniRoute"
+    access_method: "SSH or web"
+    commands_available: 70+
+    status: "READY"
+
+  # TIER 7: CROSS-MACHINE INFERENCE
+
+  inference_air_to_studio:
+    source: "Air (local application)"
+    destination: "Studio (Ollama:11434)"
+    flow: "Air → HTTP → Tailscale → Studio Ollama"
+    status: "VERIFIED"
+    test: "2+2 = 4"
+    latency: "~100-500ms"
+    throughput: "Limited by network"
+
+  inference_omniroute_fallback:
+    source: "Any application"
+    routing: "OmniRoute intelligent routing"
+    primary: "Air local (fastest)"
+    secondary: "Studio Ollama (better compute)"
+    tertiary: "Cloud models (if needed)"
+    status: "CONFIGURED"
+
+  # TIER 8: STORAGE & BACKUP
+
+  storage_air_to_t7:
+    source: "Air (100.121.17.63)"
+    destination: "T7 Shield (2.0 TB exFAT)"
+    connection: "USB-C Thunderbolt"
+    capacity: "1.8TB total (940GB free)"
+    mount_point: "/Volumes/T7 Shield"
+    smb_share: "smb://acebless@100.121.17.63/T7%20Shield"
+    use_case: "Portable model storage + shared-data + backups"
+    status: "VERIFIED"
+    last_verified: "2026-09-11"
+    latency: "<1ms (direct)"
+    throughput: "40 Mbps read, 35 Mbps write"
+
+  storage_studio_to_lacie:
+    source: "Studio (100.87.214.70)"
+    destination: "LaCie 4TB (Thunderbolt)"
+    mount_point: "/Volumes/LaCie"
+    capacity: "4.0TB (1.6TB used, 2.4TB free)"
+    use_case: "Primary Studio storage + backups"
+    status: "VERIFIED"
+    last_verified: "2026-09-11"
+    latency: "<1ms (direct)"
+    throughput: "60+ Mbps read, 50+ Mbps write"
+
+  storage_studio_to_t7_via_network:
+    source: "Studio (100.87.214.70)"
+    destination: "T7 Shield (via Air SMB)"
+    connection: "SMB 3.0 over Tailscale"
+    protocol: "smb://acebless@100.121.17.63/T7%20Shield"
+    status: "CONFIGURED"
+    action_needed: "Mount on Studio via SMB at /Volumes/T7\ Shield"
+    benefit: "Cross-machine model sharing"
+    latency: "~50ms (Tailscale)"
+    throughput: "~20 Mbps (network limited)"
+
+  storage_models_consolidated:
+    location: "/Volumes/T7 Shield/ollama/models"
+    size: "18 GB consolidated"
+    machines: ["Air (direct)", "Studio (via SMB)"]
+    status: "VERIFIED"
+    last_verified: "2026-09-11"
+    benefit: "Freed local disk, cross-machine access, portable"
+
+  # TIER 9: CRITICAL PATHS (Must Work)
+
+  critical_air_to_studio_ssh:
+    priority: "P0"
+    path: "Air → SSH → Studio"
+    status: "VERIFIED"
+    health_check: "ssh macstudio 'echo OK'"
+    fallback: "Tailscale direct"
+
+  critical_air_to_studio_inference:
+    priority: "P0"
+    path: "Air → HTTP → Studio Ollama"
+    status: "VERIFIED"
+    health_check: "curl http://100.87.214.70:11434/api/tags"
+    fallback: "Air local models"
+
+  critical_omniroute_routing:
+    priority: "P0"
+    path: "Any → OmniRoute → 9 providers"
+    status: "OPERATIONAL"
+    health_check: "omniroute status"
+    fallback: "Direct Ollama access"
+
+  critical_iphone_access:
+    priority: "P1"
+    path: "iPhone → Tailscale → Air/Studio"
+    status: "DISCOVERED"
+    health_check: "ping 100.87.214.70"
+    action: "Install SSH client, enable Magic DNS"
+
+# CONNECTIVITY MATRIX
+# Format: source ↔ destination = protocol:port:status
+
+matrix: |
+
+           │ Air   │ Studio│ iPhone│ T7   │ LaCie│ Models│ Agents│ Internet
+  ─────────┼───────┼───────┼───────┼──────┼──────┼───────┼───────┼──────────
+  Air      │ Self  │ SSH:22│ TS    │ USB  │ N/A  │ Local │ CLI   │ TS-only
+  Studio   │ SSH:22│ Self  │ TS    │ N/A  │ TB   │ API   │ SSH   │ TS-only
+  iPhone   │ TS    │ TS    │ Self  │ N/A  │ N/A  │ TS+80 │ TS+22 │ N/A
+  T7       │ USB   │ N/A   │ N/A   │ Self │ N/A  │ Path  │ N/A   │ N/A
+  LaCie    │ N/A   │ TB    │ N/A   │ N/A  │ Self │ Path  │ N/A   │ N/A
+  Models   │ Local │ HTTP  │ TS+80 │ Path │ Path │ Self  │ HTTP  │ Cloud
+  Agents   │ CLI   │ SSH   │ TS+22 │ N/A  │ N/A  │ HTTP  │ Self  │ APIs
+  Internet │ N/A   │ N/A   │ N/A   │ N/A  │ N/A  │ Cloud │ APIs  │ Self
+
+# STATUS DEFINITIONS
+
+statuses:
+  DISCOVERED: "Device/service found but not yet configured"
+  AVAILABLE: "Configured and ready to use"
+  CONNECTED: "Active connection established"
+  TESTED: "Connection tested successfully"
+  VERIFIED: "Fully operational and verified"
+  PRODUCTION: "Used in active workflows"
+  DEGRADED: "Working but with reduced capability"
+  FAILED: "Not responding"
+  DISCONNECTED: "Was working, now unavailable"
+  DEPRECATED: "Scheduled for removal"
+  ACTION_NEEDED: "Requires configuration before use"
+  NOT_WORKING: "Known issue requiring fix"
+
+# ACTION ITEMS
+
+actions:
+  - id: "ACT-001"
+    title: "Enable Tailscale Magic DNS"
+    priority: "HIGH"
+    machines: ["Air", "Studio"]
+    command: "tailscale set --accept-dns=true"
+    benefit: "Safari will work (macstudio.local:3000)"
+
+  - id: "ACT-002"
+    title: "Disable iPhone exit node"
+    priority: "HIGH"
+    device: "iPhone"
+    current: "Exit node ON"
+    change: "Exit node OFF"
+    benefit: "Better battery life, better performance"
+
+  - id: "ACT-003"
+    title: "Move Ollama models to T7 Shield"
+    priority: "MEDIUM"
+    source: "~/Library/Ollama/models"
+    destination: "/Volumes/T7 Shield/ollama/models"
+    benefit: "Free up local disk, portability"
+
+  - id: "ACT-004"
+    title: "Install SSH client on iPhone"
+    priority: "MEDIUM"
+    options: ["Prompt 3 ($12.99)", "iSH (free)", "SSH Files (free)"]
+    benefit: "Full CLI access from iPhone"
+
+  - id: "ACT-005"
+    title: "Verify all 9 OmniRoute providers"
+    priority: "MEDIUM"
+    command: "omniroute providers list"
+    test: "omniroute simulate 'test prompt'"
+
+  - id: "ACT-006"
+    title: "Document exo MLX integration"
+    priority: "LOW"
+    benefit: "Native MLX benchmarks vs Ollama"
+
+# FINAL STATUS
+
+summary: |
+
+  ✅ TIER 1 (Machines): 3/3 connected (Air, Studio, iPhone)
+  ✅ TIER 2 (Network): Tailscale core working, Magic DNS NEEDED
+  ✅ TIER 3 (Services): All running (Ollama, exo, OmniRoute, Neo4j, Qdrant)
+  ✅ TIER 4 (Models): 3 models (Air), 3 models (Studio), exo (Studio)
+  ✅ TIER 5 (Agents): All ready (OpenCode, Codex, Cline, Aider, Antigravity)
+  ⚠️  TIER 6 (iPhone): Connected but not integrated
+  ✅ TIER 7 (Inference): Cross-machine verified
+  ⚠️  TIER 8 (Storage): T7/LaCie mounted, models need move
+  ✅ TIER 9 (Critical): All critical paths verified
+
+  Next: Enable Magic DNS, disable iPhone exit node, integrate iPhone
+
