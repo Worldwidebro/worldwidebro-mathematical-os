@@ -1,0 +1,89 @@
+# Render Blueprint: n8n Self-Hosted Workflow Automation
+# Deploy n8n on Render with PostgreSQL database
+# Usage: render deploy --name n8n-blueprint (from this directory)
+
+services:
+  - type: web
+    name: n8n
+    env: docker
+    dockerfilePath: ./Dockerfile.n8n
+    dockerContext: ./
+    region: oregon  # Change to your preferred region
+    plan: standard
+    scaling:
+      minInstances: 1
+      maxInstances: 3
+      targetMemoryPercent: 70
+      targetCPUPercent: 70
+    envVars:
+      - key: N8N_HOST
+        value: ${RENDER_EXTERNAL_URL}
+      - key: N8N_PORT
+        value: "5678"
+      - key: N8N_PROTOCOL
+        value: https
+      - key: WEBHOOK_TUNNEL_URL
+        value: ${RENDER_EXTERNAL_URL}/
+      - key: GENERIC_TIMEZONE
+        value: America/New_York
+      - key: DB_TYPE
+        value: postgresdb
+      - key: DB_POSTGRESDB_HOST
+        fromDatabase:
+          name: n8n-db
+          property: host
+      - key: DB_POSTGRESDB_PORT
+        fromDatabase:
+          name: n8n-db
+          property: port
+      - key: DB_POSTGRESDB_DATABASE
+        value: n8n
+      - key: DB_POSTGRESDB_USER
+        fromDatabase:
+          name: n8n-db
+          property: user
+      - key: DB_POSTGRESDB_PASSWORD
+        fromDatabase:
+          name: n8n-db
+          property: password
+      - key: N8N_EDITOR_BASE_URL
+        value: ${RENDER_EXTERNAL_URL}/
+      - key: EXECUTION_MODE
+        value: queue
+      - key: QUEUE_BULL_REDIS_HOST
+        value: redis-n8n  # Redis service name (add if using Redis queue)
+      - key: QUEUE_BULL_REDIS_PORT
+        value: "6379"
+
+    # Health check to ensure n8n is running
+    healthCheck:
+      path: /healthz
+      initialDelaySeconds: 30
+      intervalSeconds: 10
+      timeoutSeconds: 5
+      failureThreshold: 3
+
+    # Auto-deploy on git push (if using GitHub)
+    autoDeploy: true
+
+databases:
+  - name: n8n-db
+    databaseName: n8n
+    user: n8n_user
+    plan: standard
+    region: oregon
+    ipAllowList: []  # Allow all IPs (restrict as needed)
+
+# Optional: Redis service for job queue (recommended for production)
+# services:
+#   - type: redis
+#     name: redis-n8n
+#     plan: starter
+#     region: oregon
+#     maxmemoryPolicy: allkeys-lru
+
+# Optional: PostgreSQL migrations
+postDeploy: |
+  #!/bin/bash
+  # Run n8n migrations on deployment
+  npm run typeorm migration:run -- -c postgres
