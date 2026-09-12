@@ -861,8 +861,10 @@ sector_capabilities:
       - "SEC-028 (Fleet Scheduling)"
       - "SEC-032 (Optimization AI)"
     empowered_ventures:
+      - "LT-011 (CarrierDispatch TMS / DispatchOS Core)"
       - "LT-005 (Logistics Operations)"
       - "V-FLEET-002"
+
     key_external_repositories:
       - name: "BigBodyCobain/Shadowbroker"
         stars: 11024

@@ -143,8 +143,16 @@ To ground this in the Company Brain operating system, this architecture maps per
 
 ## 6. Graph & Wiki Connections
 This blueprint connects directly to the following operating entities in the knowledge graph:
-- [[CON-001/BUSINESS-CAPITAL-PROSPECTUS.md|CON-001 - Construction & Public Works]]
-- [[LT-011/BUSINESS-CAPITAL-PROSPECTUS.md|LT-011 - Logistics & Fleet Dispatch]]
-- [[LT-005/BUSINESS-CAPITAL-PROSPECTUS.md|LT-005 - Healthcare Cold Chain Transit]]
-- [[OPS-001/BUSINESS-CAPITAL-PROSPECTUS.md|OPS-001 - Specialized Staffing Operations]]
-- [[RE-001/BUSINESS-CAPITAL-PROSPECTUS.md|RE-001 - Real Estate Asset Holding]]
+- [[23-VENTURES/CON-001|CON-001 Venture Spec]] & [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/COMPILED-MASTER-PROSPECTUS|CON-001 Master Prospectus]] (Construction & Public Works)
+- [[23-VENTURES/LT-011|LT-011 Venture Spec]] & [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/COMPILED-MASTER-PROSPECTUS|LT-011 Master Prospectus]] (Logistics & Fleet Dispatch)
+- [[23-VENTURES/LT-005|LT-005 Venture Spec]] & [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/COMPILED-MASTER-PROSPECTUS|LT-005 Master Prospectus]] (Healthcare Cold Chain Transit)
+- [[23-VENTURES/OPS-001|OPS-001 Venture Spec]] & [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/COMPILED-MASTER-PROSPECTUS|OPS-001 Master Prospectus]] (Specialized Staffing Operations)
+- [[23-VENTURES/RE-001|RE-001 Venture Spec]] & [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/COMPILED-MASTER-PROSPECTUS|RE-001 Master Prospectus]] (Real Estate Asset Holding)
+
+### Canonical Operating Infrastructure & Gateways
+- [[_REGISTRIES/CANONICAL/DISPATCH_OS_CANONICAL_CONTRACT|DISPATCH_OS_CANONICAL_CONTRACT.md]] — Universal Dispatch Operating System
+- [[58-LOGISTICS/58-LOGISTICS|58-LOGISTICS Master Domain Gateway]] — Supply Chain, Transport & Hardware Operations
+- [[CAPITAL-READINESS-ENGINE|CAPITAL-READINESS-ENGINE.md]] — Underwriting Scoring & Capital Roadmap
+- [[BUSINESS-CAPITAL-DATA-ROOM/5-VENTURE-INTEGRATED-SUMMARY|5-Venture Integrated Legal + Financial Summary]] — Multi-Venture Taxonomy
+- [[38-OPPORTUNITIES/CAPITAL_STACK/README|Capital Stack Master Index]] — Sovereign Credit Facilities
+

@@ -1,4 +1,7 @@
+[[STARTHERE]] | [[20-DECISIONS/SALES-PIPELINE-MASTER-INDEX|Sales Pipeline Index]] | [[23-VENTURES/LT-011|LT-011 Venture Spec]] | [[_REGISTRIES/CANONICAL/DISPATCH_OS_CANONICAL_CONTRACT|DispatchOS Contract]] | [[58-LOGISTICS/58-LOGISTICS|58-LOGISTICS]]
+
 # LT-011 Sales Pipeline — CarrierDispatch TMS
+
 
 **Venture:** LT-011 (CarrierDispatch) — Transportation Management System (SaaS)  
 **Product:** Route optimization + fleet TMS ($500-2K per month per fleet)  
@@ -269,4 +272,21 @@ Quick question: How many trucks in your fleet, and are you happy with your curre
 
 **Carolina Logistics Path:** Research + positioning today → demo Sep 10-12 → 5-day trial Sep 16-21 → contract Sep 25
 
+---
+
+## CONNECTED SYSTEMS & WIKI LINKS
+
+- **Canonical Operating Contract:** [[_REGISTRIES/CANONICAL/DISPATCH_OS_CANONICAL_CONTRACT|DISPATCH_OS_CANONICAL_CONTRACT.md]]
+- **Master Domain Gateway:** [[58-LOGISTICS/58-LOGISTICS|58-LOGISTICS Master Domain Gateway]]
+- **Venture Specification:** [[23-VENTURES/LT-011|LT-011 CarrierDispatch TMS]]
+- **Sales Coach & Script:** [[scripts/LT-011-SALES-COACH|LT-011 Sales Coach]]
+- **Social Media & Outreach:** [[VENTURE-SOCIAL-EXECUTION-LT-011|LT-011 Social Media Execution]]
+- **Capital Stack Dossier:** [[38-OPPORTUNITIES/CAPITAL_STACK/LT-011_Freight_Factoring_SBA_Express|LT-011 Capital Stack Dossier]]
+- **Data Room Master Prospectus:** [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/COMPILED-MASTER-PROSPECTUS|LT-011 Master Prospectus]]
+- **Data Room Operational Reality:** [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/OPERATIONAL-REALITY|LT-011 Operational Reality]]
+- **Live Platform Deployment:** https://lt-011-dispatch-software.vercel.app
+
+---
+
 Co-Authored-By: Claude Haiku 4.5 <noreply@anthropic.com>
+

@@ -1,8 +1,10 @@
+[[STARTHERE]] | [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/OPERATIONAL-REALITY|LT-011 Operational Reality]] | [[23-VENTURES/LT-011|LT-011 Venture Spec]] | [[_REGISTRIES/CANONICAL/DISPATCH_OS_CANONICAL_CONTRACT|DispatchOS Contract]] | [[38-OPPORTUNITIES/CAPITAL_STACK/LT-011_Freight_Factoring_SBA_Express|LT-011 Capital Stack]] | [[58-LOGISTICS/58-LOGISTICS|58-LOGISTICS]]
+
 # 🏛️ COMPILED MASTER PROSPECTUS: LT-011
 
-⚠️ **IMPORTANT:** This prospectus represents forward-looking projections. For current operational status, revenue, and blockers, see **[[OPERATIONAL-REALITY]]**.
+⚠️ **IMPORTANT:** This prospectus represents forward-looking projections. For current operational status, revenue, and blockers, see **[[BUSINESS-CAPITAL-DATA-ROOM/LT-011/OPERATIONAL-REALITY|OPERATIONAL-REALITY.md]]**.
 
-**Framework:** [[STARTHERE]] → [[SECTOR-TAXONOMY-MASTER]] → [[SEC-017-logistics-transportation|SEC-017 Logistics]] | **Capital Strategy:** [[CAPITAL-READINESS-ENGINE]]
+**Framework:** [[STARTHERE]] → [[00-CONSTITUTION/SECTOR-TAXONOMY-MASTER|SECTOR-TAXONOMY-MASTER]] → [[SECTORS/SEC-017-logistics-transportation|SEC-017 Logistics]] | **Capital Strategy:** [[CAPITAL-READINESS-ENGINE]] | **Canonical Contract:** [[_REGISTRIES/CANONICAL/DISPATCH_OS_CANONICAL_CONTRACT|DISPATCH_OS_CANONICAL_CONTRACT.md]]
 
 
 > **Note:** This document automatically compiles the contents of the 22-Domain Venture OS into a single presentation-ready master file.
@@ -959,6 +961,21 @@ status: "BANK_READY / GRANT_READY / INVESTOR_READY"
 | **9. Investor Readiness** | **92%** | Verified | Institutional investor memorandum, SAFE term sheet ($5M cap), 17.4x LTV/CAC. |
 | **COMPOSITE SCORE** | **95.1%** | **PASSED** | **Fully Packaged for Lender & Investor Submission** |
 
-
 ---
+
+## Connected Ecosystem & Wiki Links
+
+- **Canonical Operating Contract:** [[_REGISTRIES/CANONICAL/DISPATCH_OS_CANONICAL_CONTRACT|DISPATCH_OS_CANONICAL_CONTRACT.md]]
+- **Master Domain Gateway:** [[58-LOGISTICS/58-LOGISTICS|58-LOGISTICS Master Domain Gateway]]
+- **Venture Specification:** [[23-VENTURES/LT-011|LT-011 CarrierDispatch TMS]]
+- **Operational Reality:** [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/OPERATIONAL-REALITY|LT-011 Operational Reality]]
+- **Capital Stack Facility:** [[38-OPPORTUNITIES/CAPITAL_STACK/LT-011_Freight_Factoring_SBA_Express|LT-011 Freight Factoring & SBA Express Dossier]]
+- **Commercial Sales Pipeline:** [[20-DECISIONS/LT-011-SALES-PIPELINE|LT-011 Sales Pipeline]]
+- **Sales Coaching Script:** [[scripts/LT-011-SALES-COACH|LT-011 Sales Coach]]
+- **Social Marketing Plan:** [[VENTURE-SOCIAL-EXECUTION-LT-011|LT-011 Social Media Execution]]
+- **Grant Opportunity Pack:** [[38-OPPORTUNITIES/GRANTS/LT-011_DOT_EPA_CarrierDispatch|USDOT / EPA SBIR Phase I Action Pack ($175K)]]
+- **Multi-Venture Summary:** [[BUSINESS-CAPITAL-DATA-ROOM/5-VENTURE-INTEGRATED-SUMMARY|5-Venture Integrated Legal + Financial Summary]]
+- **Enterprise Blueprint:** [[BUSINESS-CAPITAL-DATA-ROOM/00_ENTERPRISE_BLUEPRINT|Enterprise Blueprint]]
+- **Live Deployment:** https://lt-011-dispatch-software.vercel.app
+
 

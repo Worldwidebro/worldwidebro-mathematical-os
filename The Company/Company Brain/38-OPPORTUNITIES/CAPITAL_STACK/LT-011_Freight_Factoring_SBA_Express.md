@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[38-OPPORTUNITIES/CAPITAL_STACK/README|Capital Stack Index]] | [[CAPITAL-READINESS-ENGINE]] | [[23-VENTURES/LT-011|LT-011 Venture Spec]] | [[_REGISTRIES/CANONICAL/DISPATCH_OS_CANONICAL_CONTRACT|DispatchOS Contract]]
+
 # 💼 Capital Readiness Dossier: LT-011 — CarrierDispatch / DispatchOS Core
 
 ```yaml
@@ -91,3 +93,21 @@ DEBT SERVICE COVERAGE RATIO (DSCR)          1.98x          14.11x          45.09
 - [x] **Commercial Tier Verification:** $49/mo Starter, $149/mo Pro, $250 Shipper Escrow deposit verified live at `https://lt-011-dispatch-software.vercel.app`.
 - [x] **SBA Form 1919 & 413:** Documented for WorldwideBro Fleet OS LLC entity.
 - [x] **Factoring Partner Master Services Agreement (MSA):** Ready for electronic API handshake with TriumphPay / Apex Capital.
+
+---
+
+## 5. Connected Systems & Wiki Links
+
+- **Canonical Operating Contract:** [[_REGISTRIES/CANONICAL/DISPATCH_OS_CANONICAL_CONTRACT|DISPATCH_OS_CANONICAL_CONTRACT.md]]
+- **Master Domain Gateway:** [[58-LOGISTICS/58-LOGISTICS|58-LOGISTICS Master Domain Gateway]]
+- **Venture Specification:** [[23-VENTURES/LT-011|LT-011 CarrierDispatch TMS]]
+- **Data Room Master Prospectus:** [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/COMPILED-MASTER-PROSPECTUS|LT-011 Master Prospectus]]
+- **Data Room Operational Reality:** [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/OPERATIONAL-REALITY|LT-011 Operational Reality]]
+- **Commercial Sales Pipeline:** [[20-DECISIONS/LT-011-SALES-PIPELINE|LT-011 Sales Pipeline]]
+- **Sales Coach & Script:** [[scripts/LT-011-SALES-COACH|LT-011 Sales Coach]]
+- **Social Media & Outreach:** [[VENTURE-SOCIAL-EXECUTION-LT-011|LT-011 Social Media Execution]]
+- **Grant Action Pack:** [[38-OPPORTUNITIES/GRANTS/LT-011_DOT_EPA_CarrierDispatch|USDOT / EPA SBIR Phase I Action Pack ($175K)]]
+- **Capital Readiness Engine:** [[CAPITAL-READINESS-ENGINE|CAPITAL-READINESS-ENGINE.md]]
+- **Integrated Legal + Financial Summary:** [[BUSINESS-CAPITAL-DATA-ROOM/5-VENTURE-INTEGRATED-SUMMARY|5-Venture Integrated Legal + Financial Summary]]
+- **Sovereign Capital Stack Index:** [[38-OPPORTUNITIES/CAPITAL_STACK/README|38-OPPORTUNITIES/CAPITAL_STACK/README.md]]
+- **Canonical Facilities Registry:** [[_REGISTRIES/CANONICAL/CAPITAL_FACILITIES_REGISTRY.yaml]]

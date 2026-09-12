@@ -466,12 +466,54 @@ The DispatchOS core engine adapts seamlessly across the entire WorldwideBro vent
 ---
 
 ## 7. Connected Ecosystem Registries & Wiki Links
+
+### Core Architectural Gateways & Contracts
 - [[STARTHERE]] — Master Orientation Hub
-- [[58-LOGISTICS/README|58-LOGISTICS]] — Hardware & Supply Chain Domain
-- [[23-VENTURES/LT-011|LT-011 CarrierDispatch TMS]] — Motor Carrier & Freight Focus
-- [[23-VENTURES/LT-005|LT-005 HealthRoute Medical]] — Medical Courier & Specimen Logistics
-- [[23-VENTURES/CON-001|CON-001 Ace Construction]] — Crew & Heavy Equipment Mobilization
-- [[23-VENTURES/RE-001|RE-001 WorldwideBro Holdings]] — Real Estate & Field Inspection
-- [[_REGISTRIES/CANONICAL/CAPABILITY_REGISTRY.yaml]] — Canonical System Capabilities
-- [[_REGISTRIES/CANONICAL/SITES_REGISTRY.yaml]] — Deployed Digital Footprint
 - [[ANTIGRAVITY]] — Universal Agent Master Contract
+- [[58-LOGISTICS/58-LOGISTICS|58-LOGISTICS Master Domain Gateway]] — Supply Chain, Transport & Hardware Logistics Hub
+- [[58-LOGISTICS/README|58-LOGISTICS Domain Overview]] — Hardware Routing & Telemetry Operations
+- [[SECTORS/SEC-017-logistics-transportation|SEC-017 Logistics & Transportation]] — Sector Taxonomy & OpCo Alignment
+- [[_REGISTRIES/CANONICAL/CAPABILITY_REGISTRY.yaml]] — Canonical System Capabilities (`CAP-DISP-001` - `CAP-DISP-044`)
+- [[_REGISTRIES/CANONICAL/SITES_REGISTRY.yaml]] — Deployed Digital Footprint (`SITE-0013`)
+- [[_REGISTRIES/CANONICAL/REPOSITORY_REGISTRY.yaml]] — Canonical Repositories (`OWN-PRIV-0007`)
+- [[_REGISTRIES/external-capabilities-by-sector.yaml]] — External Supply Chain & Tracking Stack (Shadowbroker, Traccar, n8n)
+
+### Venture Specifications (Mobile Work & Field Ops)
+- [[23-VENTURES/LT-011|LT-011 CarrierDispatch TMS]] — Motor Carrier, Freight & DispatchOS Platform Core
+- [[23-VENTURES/LT-005|LT-005 HealthRoute Medical]] — Medical Courier & Specimen Logistics
+- [[23-VENTURES/CON-001|CON-001 Ace Construction]] — Crew & Heavy Equipment Field Mobilization
+- [[23-VENTURES/RE-001|RE-001 WorldwideBro Holdings]] — Real Estate & Field Inspection Management
+- [[23-VENTURES/OPS-001|OPS-001 WorldwideBro Staffing Ops]] — On-Demand Workforce & Crew Staffing
+
+### Capital Stack, Credit Facilities & Grants
+- [[38-OPPORTUNITIES/CAPITAL_STACK/LT-011_Freight_Factoring_SBA_Express|LT-011 Capital Stack Dossier]] — $500K SBA Express + $1M Embedded Factoring Facility
+- [[38-OPPORTUNITIES/CAPITAL_STACK/LT-005_Healthcare_CDFI_Vehicle_Lease|LT-005 Capital Stack Dossier]] — $250K Healthcare CDFI Loan + Reefer Van Fleet Lease
+- [[38-OPPORTUNITIES/CAPITAL_STACK/CON-001_SBA_Surety_Bond_Draw_Line|CON-001 Capital Stack Dossier]] — $350K SBA 7(a) + $9M Surety Bonding Cap
+- [[38-OPPORTUNITIES/CAPITAL_STACK/OPS-001_Staffing_Payroll_Funding_Facility|OPS-001 Capital Stack Dossier]] — $500K Staffing Payroll Factoring + SBA Community Advantage
+- [[38-OPPORTUNITIES/CAPITAL_STACK/RE-001_CDFI_Acquisition_Debt_DSCR_Packet|RE-001 Capital Stack Dossier]] — $750K CDFI Acquisition Bridge + 30-Yr DSCR Rental Loan
+- [[38-OPPORTUNITIES/CAPITAL_STACK/README|Capital Stack Master Index]] — Sovereign Capital Architecture & Credit Facility Matrix
+- [[CAPITAL-READINESS-ENGINE|Capital Readiness Engine]] — Portfolio Underwriting Scoring & Capital Roadmap
+- [[38-OPPORTUNITIES/GRANTS/LT-011_DOT_EPA_CarrierDispatch|LT-011 USDOT/EPA SBIR Phase I Action Pack]] — $175K Non-Dilutive R&D Grant
+- [[_REGISTRIES/CANONICAL/CAPITAL_FACILITIES_REGISTRY.yaml]] — Canonical Underwriting Facilities
+- [[_REGISTRIES/CANONICAL/GRANT_OPPORTUNITY_REGISTRY.yaml]] — Canonical Grant Registry
+
+### Commercial Sales Pipelines & Field Scripts
+- [[20-DECISIONS/LT-011-SALES-PIPELINE|LT-011 CarrierDispatch Sales Pipeline]] — Fleet Outreach & Carolina Logistics Fast-Track
+- [[scripts/LT-011-SALES-COACH|LT-011 Sales Coach]] — Cold Call Opener, Objection Handling & Demo Script
+- [[VENTURE-SOCIAL-EXECUTION-LT-011|LT-011 Social & Marketing Execution]] — LinkedIn Thought Leadership & Outreach Calendar
+- [[20-DECISIONS/LT-005-SALES-PIPELINE|LT-005 HealthRoute Sales Pipeline]] — Medical Courier B2B Outreach Pipeline
+- [[scripts/LT-005-SALES-COACH|LT-005 Sales Coach]] — Healthcare Logistics Cold Outreach Script
+- [[20-DECISIONS/CON-001-SALES-PIPELINE|CON-001 Sales Pipeline]] — Commercial Construction Intake & Subcontractor Pipeline
+- [[20-DECISIONS/SALES-PIPELINE-MASTER-INDEX|Sales Pipeline Master Index]] — Consolidated Commercial Revenue Matrix
+
+### Venture Data Rooms & Institutional Prospectuses
+- [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/COMPILED-MASTER-PROSPECTUS|LT-011 Master Prospectus]] — 22-Domain Institutional Data Room (CarrierDispatch)
+- [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/OPERATIONAL-REALITY|LT-011 Operational Reality]] — Live Ground Truth Traction & Deployment Verification
+- [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/COMPILED-MASTER-PROSPECTUS|LT-005 Master Prospectus]] — HealthRoute Logistics Institutional Data Room
+- [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/COMPILED-MASTER-PROSPECTUS|CON-001 Master Prospectus]] — Ace Construction & Contracting Institutional Data Room
+- [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/COMPILED-MASTER-PROSPECTUS|RE-001 Master Prospectus]] — WorldwideBro Holdings Institutional Data Room
+- [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/COMPILED-MASTER-PROSPECTUS|OPS-001 Master Prospectus]] — WorldwideBro Staffing Ops Institutional Data Room
+- [[BUSINESS-CAPITAL-DATA-ROOM/5-VENTURE-INTEGRATED-SUMMARY|5-Venture Integrated Legal + Financial Summary]] — Multi-Venture Corporate Taxonomy
+- [[BUSINESS-CAPITAL-DATA-ROOM/00_ENTERPRISE_BLUEPRINT|Enterprise Blueprint]] — Family Office & Holding Company Master Structure
+- [[LT-005-OSS-INTEGRATION-ROADMAP|LT-005 OSS Integration Roadmap]] — Medical Specimen Logistics Architecture & Telematics
+

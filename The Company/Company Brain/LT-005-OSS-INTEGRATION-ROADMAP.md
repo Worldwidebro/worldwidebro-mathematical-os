@@ -1,7 +1,10 @@
+[[STARTHERE]] | [[23-VENTURES/LT-005|LT-005 Venture Spec]] | [[_REGISTRIES/CANONICAL/DISPATCH_OS_CANONICAL_CONTRACT|DispatchOS Contract]] | [[58-LOGISTICS/58-LOGISTICS|58-LOGISTICS Gateway]] | [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/COMPILED-MASTER-PROSPECTUS|LT-005 Prospectus]]
+
 # LT-005: OPEN SOURCE INTEGRATION ROADMAP
 **Gap Mapping & OSS Solutions**
 
 ---
+
 
 ## WEEK 1 MINIMUM VIABLE (Sep 10-15)
 What we MUST have for first revenue:
@@ -277,4 +280,21 @@ git clone https://github.com/odoo/delivery.git
 ---
 
 **Note:** All OSS repos are active, well-maintained projects with production-ready code. They're not "academic" or "abandoned" — they power real logistics companies + healthcare systems.
+
+---
+
+## CONNECTED ECOSYSTEM & WIKI LINKS
+
+- **Canonical Operating Contract:** [[_REGISTRIES/CANONICAL/DISPATCH_OS_CANONICAL_CONTRACT|DISPATCH_OS_CANONICAL_CONTRACT.md]] (Core modules `CAP-DISP-006` Mobile App, `CAP-DISP-007` Proof of Delivery, `CAP-DISP-043` Medical Courier Vertical Overlay)
+- **Master Domain Gateway:** [[58-LOGISTICS/58-LOGISTICS|58-LOGISTICS Master Domain Gateway]]
+- **Venture Specification:** [[23-VENTURES/LT-005|LT-005 HealthRoute Medical]]
+- **Sibling Dispatch Platform:** [[23-VENTURES/LT-011|LT-011 CarrierDispatch TMS]]
+- **Data Room Master Prospectus:** [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/COMPILED-MASTER-PROSPECTUS|LT-005 Master Prospectus]]
+- **Capital Stack Facility:** [[38-OPPORTUNITIES/CAPITAL_STACK/LT-005_Healthcare_CDFI_Vehicle_Lease|LT-005 CDFI Loan & Vehicle Lease]]
+- **Commercial Sales Pipeline:** [[20-DECISIONS/LT-005-SALES-PIPELINE|LT-005 Sales Pipeline]]
+- **Sales Coach Script:** [[scripts/LT-005-SALES-COACH|LT-005 Sales Coach]]
+- **Social Marketing Plan:** [[VENTURE-SOCIAL-EXECUTION-LT-005|LT-005 Social Media Execution]]
+- **Grant Opportunity Pack:** [[38-OPPORTUNITIES/GRANTS/LT-005_NIH_HHS_HealthRoute|NIH / HHS SBIR Phase I Action Pack ($250K)]]
+- **5-Venture Summary:** [[BUSINESS-CAPITAL-DATA-ROOM/5-VENTURE-INTEGRATED-SUMMARY|5-Venture Integrated Summary]]
+
 

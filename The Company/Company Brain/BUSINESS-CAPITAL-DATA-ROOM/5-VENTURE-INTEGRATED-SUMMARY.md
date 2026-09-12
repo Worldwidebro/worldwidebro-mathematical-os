@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[BUSINESS-CAPITAL-DATA-ROOM/00_ENTERPRISE_BLUEPRINT|Enterprise Blueprint]] | [[CAPITAL-READINESS-ENGINE]] | [[_REGISTRIES/CANONICAL/DISPATCH_OS_CANONICAL_CONTRACT|DispatchOS Contract]] | [[58-LOGISTICS/58-LOGISTICS|58-LOGISTICS Gateway]]
+
 # 5 Ventures: Integrated Legal + Financial Ecosystem Summary
 
 **How Each Venture Maps to Business Artifact Ontology + Financial Ecosystem**
@@ -11,15 +13,18 @@ Authority: CP-032 (Business Operations) + CP-020 (Financial Control Plane)
 
 | Venture | Type | Stage | Capital Need | Deal Type | Timeline | Docs (Legal) | Docs (Financial) |
 |---------|------|-------|--------------|-----------|----------|---|---|
-| **CON-001** | Construction Services + SaaS | Operating | $590K | SBA Loan + Grant | 45 days | 48 | 30+ |
-| **OPS-001** | Staffing/HRMS SaaS | Pre-revenue | $3.5M | Series A VC | 90 days | 52 | 25+ |
-| **LT-005** | Medical Logistics | Operating | $8M | Credit Facility | 60 days | 55 | 35+ |
-| **LT-011** | Fleet Management SaaS | Early Revenue | Variable | Strategic Inv. | 60-120 days | 48 | 20+ |
-| **RE-001** | Real Estate Development | Pre-construction | $12.5M | Construction Loan | 75 days | 60 | 40+ |
+| **[[23-VENTURES/CON-001|CON-001]]** | Construction Services + SaaS | Operating | $590K | SBA Loan + Grant | 45 days | 48 | 30+ |
+| **[[23-VENTURES/OPS-001|OPS-001]]** | Staffing/HRMS SaaS | Pre-revenue | $3.5M | Series A VC | 90 days | 52 | 25+ |
+| **[[23-VENTURES/LT-005|LT-005]]** | Medical Logistics | Operating | $8M | Credit Facility | 60 days | 55 | 35+ |
+| **[[23-VENTURES/LT-011|LT-011]]** | Fleet Management SaaS | Early Revenue | Variable | Strategic Inv. | 60-120 days | 48 | 20+ |
+| **[[23-VENTURES/RE-001|RE-001]]** | Real Estate Development | Pre-construction | $12.5M | Construction Loan | 75 days | 60 | 40+ |
 
 ---
 
 ## CON-001: Ace Construction & Contracting
+
+**Venture Links:** [[23-VENTURES/CON-001|CON-001 Spec]] | [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/COMPILED-MASTER-PROSPECTUS|Data Room Prospectus]] | [[38-OPPORTUNITIES/CAPITAL_STACK/CON-001_SBA_Surety_Bond_Draw_Line|Capital Stack]] | [[20-DECISIONS/CON-001-SALES-PIPELINE|Sales Pipeline]]
+
 
 ### 🔍 Overview
 - **Revenue stage:** Operating ($590K LOI pipeline)
@@ -155,6 +160,8 @@ Next Milestone: Term sheet signature (target Sep 13)
 ---
 
 ## OPS-001: Staffing/HRMS Venture
+
+**Venture Links:** [[23-VENTURES/OPS-001|OPS-001 Spec]] | [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/COMPILED-MASTER-PROSPECTUS|Data Room Prospectus]] | [[38-OPPORTUNITIES/CAPITAL_STACK/OPS-001_Staffing_Payroll_Funding_Facility|Capital Stack]] | [[20-DECISIONS/OPS-001-SALES-PIPELINE|Sales Pipeline]] | [[scripts/OPS-001-SALES-COACH|Sales Coach Script]]
 
 ### 🔍 Overview
 - **Revenue stage:** Pre-revenue (validating demand)
@@ -295,6 +302,8 @@ Next Milestone: Term sheet signature (target Sep 20)
 ---
 
 ## LT-005: Medical Courier / Logistics
+
+**Venture Links:** [[23-VENTURES/LT-005|LT-005 Spec]] | [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/COMPILED-MASTER-PROSPECTUS|Data Room Prospectus]] | [[38-OPPORTUNITIES/CAPITAL_STACK/LT-005_Healthcare_CDFI_Vehicle_Lease|Capital Stack]] | [[20-DECISIONS/LT-005-SALES-PIPELINE|Sales Pipeline]] | [[scripts/LT-005-SALES-COACH|Sales Coach Script]] | [[LT-005-OSS-INTEGRATION-ROADMAP|OSS Roadmap]] | [[_REGISTRIES/CANONICAL/DISPATCH_OS_CANONICAL_CONTRACT|DispatchOS Contract]] | [[58-LOGISTICS/58-LOGISTICS|58-LOGISTICS Gateway]]
 
 ### 🔍 Overview
 - **Revenue stage:** Operating (profitable)
@@ -455,6 +464,8 @@ Next Milestone: Environmental Phase I complete + approval (target Sep 25)
 
 ## LT-011: Fleet Management SaaS
 
+**Venture Links:** [[23-VENTURES/LT-011|LT-011 Spec]] | [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/COMPILED-MASTER-PROSPECTUS|Data Room Prospectus]] | [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/OPERATIONAL-REALITY|Operational Reality]] | [[38-OPPORTUNITIES/CAPITAL_STACK/LT-011_Freight_Factoring_SBA_Express|Capital Stack]] | [[20-DECISIONS/LT-011-SALES-PIPELINE|Sales Pipeline]] | [[scripts/LT-011-SALES-COACH|Sales Coach Script]] | [[_REGISTRIES/CANONICAL/DISPATCH_OS_CANONICAL_CONTRACT|DispatchOS Contract]] | [[58-LOGISTICS/58-LOGISTICS|58-LOGISTICS Gateway]]
+
 ### 🔍 Overview
 - **Revenue stage:** Early revenue ($150K MRR)
 - **Capital structure:** Variable (strategic investment or Series A)
@@ -610,6 +621,8 @@ Next Milestone: SOC 2 Type II report completion (target Oct 31)
 ---
 
 ## RE-001: Real Estate Development
+
+**Venture Links:** [[23-VENTURES/RE-001|RE-001 Spec]] | [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/COMPILED-MASTER-PROSPECTUS|Data Room Prospectus]] | [[38-OPPORTUNITIES/CAPITAL_STACK/RE-001_CDFI_Acquisition_Debt_DSCR_Packet|Capital Stack]] | [[20-DECISIONS/RE-001-SALES-PIPELINE|Sales Pipeline]] | [[scripts/RE-001-SALES-COACH|Sales Coach Script]]
 
 ### 🔍 Overview
 - **Revenue stage:** Pre-revenue (development stage)
