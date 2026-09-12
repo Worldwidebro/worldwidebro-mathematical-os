@@ -1,0 +1,173 @@
+# Make.com Scenarios Registry — Canonical Ground Truth
+# Location: _REGISTRIES/CANONICAL/SCENARIOS_REGISTRY.yaml
+# Updated: 2026-09-12
+# Authority: CP-027 (Infrastructure) + CP-033 (Execution)
+
+description: |
+  Master registry of all Make.com automation scenarios deployed across the Company Brain.
+  Each scenario maps to one or more ventures and tracks:
+  - Deployment status
+  - Module composition
+  - Scheduling (trigger, interval, cron)
+  - Revenue drivers
+  - Dependencies (apps, connections, Supabase tables)
+
+metadata:
+  version: 1.0
+  last_updated: 2026-09-12T17:46:03Z
+  organization_id: 3051755
+  organization_name: "My Organization"
+  team_id: 510485
+  team_name: "Winners Circle"
+  author: Divine
+  contact: winnerscirclewcllc@gmail.com
+
+scenarios:
+  - ref_id: "SCN-000001"
+    make_id: 6252367
+    name: "LT-005 Medical Facility Outreach — Charlotte, NC"
+    venture_id: "LT-005"
+    sector: "SEC-015-Logistics-and-Transportation"
+    status: "active"
+    created_at: 2026-09-12T17:46:03.704Z
+    created_by: "Divine (3247259)"
+
+    purpose: |
+      Automated B2B outreach to 25 medical facilities in Charlotte, NC.
+      Queries not_contacted facilities every 6 hours, sends personalized emails,
+      logs outreach attempts, and tracks revenue opportunities.
+
+    scheduling:
+      type: "indefinitely"
+      interval_seconds: 21600
+      interval_readable: "every 6 hours"
+      next_execution: "pending"
+
+    modules:
+      - id: 1
+        name: "watchEvents"
+        app: "supabase"
+        purpose: "Trigger on facility record create/update"
+      - id: 2
+        name: "searchRows"
+        app: "supabase"
+        purpose: "Query not_contacted Charlotte facilities (limit 25)"
+      - id: 3
+        name: "searchRows"
+        app: "supabase"
+        purpose: "Fetch additional facility details"
+      - id: 4
+        name: "sendMail"
+        app: "sendgrid"
+        purpose: "Send personalized outreach email to decision_maker_email"
+      - id: 5
+        name: "upsertARecord"
+        app: "supabase"
+        purpose: "Update facility status to 'contacted' + log timestamp"
+      - id: 6
+        name: "createARow"
+        app: "supabase"
+        purpose: "Log outreach attempt to lt005_outreach_log"
+      - id: 7
+        name: "createARow"
+        app: "supabase"
+        purpose: "Secondary log entry for audit trail"
+      - id: 8
+        name: "makeAnApiCall"
+        app: "supabase"
+        purpose: "API call for advanced logging"
+
+    dependencies:
+      apps: ["supabase", "sendgrid"]
+      supabase_tables:
+        - "lt005_charlotte_facilities"
+        - "lt005_outreach_log"
+        - "lt005_bookings"
+      connections:
+        - "Supabase (aipehhzlsmfxxzwceppd)"
+        - "SendGrid (configured in Make)"
+        - "Gmail (fallback, not yet wired)"
+        - "Vapi (Twilio calling, planned)"
+
+    revenue_model:
+      revenue_per_booking: "$85–$150"
+      expected_bookings_per_week: "3–5"
+      weekly_revenue_target: "$255–$750"
+      monthly_revenue_target: "$1,020–$3,000"
+      metrics_table: "lt005_bookings"
+
+    test_status:
+      last_test: "2026-09-12T17:46:03.704Z"
+      test_result: "activated_ready"
+      first_execution: "pending (first trigger in 6h or manual start)"
+
+    known_issues: []
+
+    next_steps:
+      - Monitor first execution (Sep 12, ~23:46 UTC)
+      - Verify email delivery (SendGrid logs)
+      - Track response rate (manual follow-up)
+      - Scale to OPS-001 (staffing) and CON-001 (construction) models
+      - Wire Vapi for cold calling (Week 2)
+
+---
+
+# Scenario Index (Quick Reference)
+
+index:
+  by_venture:
+    LT-005:
+      - SCN-000001 (active)
+    OPS-001: []
+    CON-001: []
+    RE-001: []
+    CALLCENTER: []
+
+  by_status:
+    active:
+      - SCN-000001
+    inactive: []
+    testing: []
+
+  by_schedule:
+    indefinitely:
+      - SCN-000001 (21600s / 6 hours)
+    once: []
+    daily: []
+    weekly: []
+
+---
+
+# Deployment Checklist (Add Scenarios Here)
+
+## To Deploy New Scenario:
+1. Create in Make.com UI (or via MCP scenarios_create)
+2. Note the Make scenario ID
+3. Add entry to this registry with:
+   - ref_id: SCN-{6-digit counter}
+   - make_id: {Make scenario ID}
+   - venture_id: {venture code}
+   - All metadata fields (purpose, modules, dependencies, revenue model)
+4. Commit to git with venture ID in message
+5. Update MAKE-MCP-PROCEDURES.md with scenario ID
+6. Test first execution and log results
+
+## Status Codes:
+- active: Running on schedule, no issues
+- inactive: Disabled (manual or error)
+- testing: Pilot run, monitoring for issues
+- pending_auth: Waiting for app credentials
+- error: Last execution failed
+
+---
+
+# Integration with Company Brain
+
+This registry is consumed by:
+1. **WEEK1-EXECUTION-PLAN.md** — tracks revenue scenarios
+2. **VENTURE-AUDIT-FRAMEWORK.md** — Layer 6 automation audit
+3. **VEX Hero Dashboard** — displays scenario status
+4. **Neo4j** (Phase 1) — Scenario nodes linked to ventures
+5. **Company Brain API** — `/api/scenarios` endpoint (Phase 2)
+
+See [[MAKE-MCP-PROCEDURES|20-DECISIONS/MAKE-MCP-PROCEDURES.md]] for operational details.
