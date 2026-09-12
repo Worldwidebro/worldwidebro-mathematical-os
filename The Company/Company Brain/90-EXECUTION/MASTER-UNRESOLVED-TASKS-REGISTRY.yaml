@@ -1,0 +1,481 @@
+---
+id: MASTER-UNRESOLVED-TASKS-REGISTRY
+version: "1.0"
+updated: 2026-09-12
+authority: CP-027 (Infrastructure) + CP-033 (Execution) + CP-021 (Revenue)
+status: LIVE
+description: |
+  Single source of truth for all unresolved work across Company Brain.
+  Syncs from: tasks.md, WEEK1-UNCOMPLETED-TASKS, REPO_STATUS_AND_BLOCKERS, ACTIVE-LOOPS
+  Consumed by: VEX, Neo4j, Agent task queue, Leadership dashboard
+
+---
+
+# WEEK 1 EXECUTION STATUS (Sep 10–15, 2026)
+
+## TIER 0: REVENUE-READY (DO NOW)
+
+### OPS-001 — Staffing Placements
+task_id: TASK-OPS001-001
+venture: OPS-001
+status: BLOCKED
+blocker_type: ACTION_REQUIRED
+effort_hours: 1.5
+revenue_potential: 7500-20000
+deadline: 2026-09-15
+tasks:
+  - name: "Commit 8 pending files"
+    status: READY
+    effort: 0.5h
+    blocking: true
+    owner: ASSIGN
+  - name: "Make 5 cold calls (script ready)"
+    status: READY
+    effort: 1h
+    blocking: true
+    owner: ASSIGN
+    reference: "repos/ops-staff-001-staffing/PITCH.md"
+dependencies: []
+next_review: 2026-09-12T18:00:00Z
+
+---
+
+### LT-005 — Medical Logistics
+task_id: TASK-LT005-001
+venture: LT-005
+status: BLOCKED
+blocker_type: DECISION_GATE
+effort_hours: 4-5
+revenue_potential: 1700-7500
+deadline: 2026-09-15
+decision_gate:
+  question: "Pages wiring: Which scope?"
+  options:
+    - "All 57 endpoints"
+    - "Existing only (20)"
+    - "Critical only (15)"
+  decision_required_by: 2026-09-12T12:00:00Z
+  reference: "repos/lt-005-medical-courier-dispatch/WIRING-QUICK-START.md"
+tasks:
+  - name: "Deploy Phase 2 Supabase schema"
+    status: READY
+    effort: 0.1h
+    owner: ASSIGN
+  - name: "Wire 116 pages + 57 endpoints (awaiting decision)"
+    status: BLOCKED_BY_DECISION
+    effort: 3-5h
+    owner: ASSIGN
+  - name: "Make 5 facility calls (script ready)"
+    status: READY
+    effort: 1h
+    owner: ASSIGN
+dependencies:
+  - TASK-LT005-DECISION-01
+next_review: 2026-09-12T12:00:00Z
+
+---
+
+### CALLCENTER — Twilio Integration
+task_id: TASK-CALLCENTER-001
+venture: CALLCENTER
+status: BLOCKED
+blocker_type: CREDENTIALS_NEEDED
+effort_hours: 1.5
+revenue_potential: 1000-10000
+deadline: 2026-09-15
+tasks:
+  - name: "Provide Twilio credentials"
+    status: BLOCKED
+    effort: 0h
+    owner: USER
+    blocking: true
+  - name: "Deploy backend service"
+    status: READY
+    effort: 0.75h
+    owner: ASSIGN
+  - name: "Run 2 live test calls"
+    status: READY
+    effort: 0.75h
+    owner: ASSIGN
+dependencies:
+  - CREDENTIALS_TWILIO
+next_review: 2026-09-12T18:00:00Z
+
+---
+
+## TIER 1: DEMO-READY (1-2 Days, Assess First)
+
+### CON-001 — Construction API
+task_id: TASK-CON001-001
+venture: CON-001
+status: DEMO_READY
+blocker_type: ASSESSMENT_NEEDED
+effort_hours: 6
+revenue_potential: 1000-3000
+timeline: Week 2+
+decision_gate:
+  question: "API ready to build?"
+  options:
+    - "SHIP (API complete)"
+    - "BUILD (needs 6h work)"
+    - "DEFER (to Week 2)"
+  decision_required_by: 2026-09-12T18:00:00Z
+tasks:
+  - name: "Assess API completeness (15 min)"
+    status: READY
+    effort: 0.25h
+    owner: ASSIGN
+    reference: "repos/con-001-ace-construction/api/"
+  - name: "Implement project estimation API (if needed)"
+    status: BLOCKED_BY_DECISION
+    effort: 2h
+    owner: ASSIGN
+  - name: "Implement quote generation API (if needed)"
+    status: BLOCKED_BY_DECISION
+    effort: 1.5h
+    owner: ASSIGN
+  - name: "Implement Stripe webhook (if needed)"
+    status: BLOCKED_BY_DECISION
+    effort: 1.5h
+    owner: ASSIGN
+  - name: "E2E test (if needed)"
+    status: BLOCKED_BY_DECISION
+    effort: 1h
+    owner: ASSIGN
+dependencies:
+  - TASK-CON001-ASSESSMENT
+next_review: 2026-09-12T18:00:00Z
+
+---
+
+### RE-001 — Real Estate Deal Engine
+task_id: TASK-RE001-001
+venture: RE-001
+status: DEMO_READY
+blocker_type: ASSESSMENT_NEEDED
+effort_hours: 25
+revenue_potential: TBD
+timeline: Week 2+
+decision_gate:
+  question: "Deal engine priority?"
+  options:
+    - "BUILD (25h, Week 2-3)"
+    - "DEFER (to Week 4)"
+    - "PARTNER (use external tool)"
+  decision_required_by: 2026-09-13T18:00:00Z
+tasks:
+  - name: "Assess deal sourcing needs (30 min)"
+    status: READY
+    effort: 0.5h
+    owner: ASSIGN
+    reference: "repos/re-001-worldwidebro-holdings/_REGISTRIES/"
+  - name: "Build deal sourcing agent (if build decision)"
+    status: BLOCKED_BY_DECISION
+    effort: 6h
+    owner: ASSIGN
+  - name: "Build underwriting workflow (if build decision)"
+    status: BLOCKED_BY_DECISION
+    effort: 8h
+    owner: ASSIGN
+  - name: "Build portfolio portal (if build decision)"
+    status: BLOCKED_BY_DECISION
+    effort: 7h
+    owner: ASSIGN
+  - name: "Wire Neo4j integration (if build decision)"
+    status: BLOCKED_BY_DECISION
+    effort: 3.5h
+    owner: ASSIGN
+dependencies:
+  - TASK-RE001-ASSESSMENT
+next_review: 2026-09-13T18:00:00Z
+
+---
+
+### LT-011 — Fleet Optimization
+task_id: TASK-LT011-001
+venture: LT-011
+status: SKELETON
+blocker_type: ASSESSMENT_NEEDED
+effort_hours: 1
+revenue_potential: 0-5000
+timeline: Week 2+
+decision_gate:
+  question: "How to proceed?"
+  options:
+    - "BUILD (Ollama + routing)"
+    - "BUY (integrate OSRM/Vroom)"
+    - "DEFER (to Oct)"
+  decision_required_by: 2026-09-11T18:00:00Z
+tasks:
+  - name: "Review architecture & capability status (1h)"
+    status: READY
+    effort: 1h
+    owner: ASSIGN
+    reference: "repos/lt-011-dispatch-software/CLAUDE.md"
+dependencies: []
+next_review: 2026-09-11T18:00:00Z
+
+---
+
+# INFRASTRUCTURE TASKS (Not Week 1 Critical, But Blocking Phase 2)
+
+## Neo4j ← Supabase Sync
+
+task_id: TASK-INFRA-NEOSYNC-001
+system: Infrastructure
+status: PENDING
+blocker_type: ARCHITECTURE_DECISION
+effort_hours: 3-4
+priority: HIGH
+deadline: 2026-09-20
+description: |
+  Load 789 ventures into Neo4j as Venture nodes.
+  Create relationships: Sector → OPCO → Control Plane → Agent
+  Blocks: Portfolio Orchestrator, VEX intelligence, portfolio-wide execution
+tasks:
+  - name: "Create Venture nodes (789 total)"
+    status: PENDING
+    effort: 1h
+    owner: ASSIGN
+  - name: "Create relationships to Sectors/OPCOs/CPs"
+    status: PENDING
+    effort: 1h
+    owner: ASSIGN
+  - name: "Load venture-specific config (pitch, channels, terms)"
+    status: PENDING
+    effort: 1h
+    owner: ASSIGN
+  - name: "Test agent can query config"
+    status: PENDING
+    effort: 1h
+    owner: ASSIGN
+dependencies:
+  - DECISION_PORTAL_STRATEGY
+blocks:
+  - TASK-PORTFOLIO-ORCHESTRATOR-001
+next_review: 2026-09-16
+
+---
+
+## VEX ↔ Neo4j Integration
+
+task_id: TASK-INFRA-VEX-NEO4J-001
+system: Infrastructure
+status: PENDING
+blocker_type: ARCHITECTURE_DECISION
+effort_hours: 2-3
+priority: HIGH
+deadline: 2026-09-22
+description: |
+  Wire VEX dashboard to query Neo4j for portfolio intelligence.
+  Add: "Which ventures at risk?", "Top 10 focus ventures?", "Agent readiness?"
+  Currently: VEX queries Supabase only.
+tasks:
+  - name: "Add Neo4j query endpoints to VEX"
+    status: PENDING
+    effort: 1h
+    owner: ASSIGN
+  - name: "Build risk scoring dashboard"
+    status: PENDING
+    effort: 1h
+    owner: ASSIGN
+  - name: "Wire portfolio intelligence queries"
+    status: PENDING
+    effort: 1h
+    owner: ASSIGN
+dependencies:
+  - TASK-INFRA-NEOSYNC-001
+next_review: 2026-09-20
+
+---
+
+## Portfolio Audit (789 Ventures)
+
+task_id: TASK-INFRA-PORTFOLIO-AUDIT-001
+system: Infrastructure
+status: PENDING
+blocker_type: DATA_QUERY
+effort_hours: 3-4
+priority: HIGH
+deadline: 2026-09-25
+description: |
+  Determine which of 789 ventures are REAL vs. TEMPLATE.
+  Determine which have REVENUE vs. $0.
+  Determine which to ACCELERATE vs. PAUSE vs. KILL.
+  Blocks: Portfolio strategy, capital allocation decisions.
+tasks:
+  - name: "Query Supabase: revenue status for all 789"
+    status: PENDING
+    effort: 1h
+    owner: ASSIGN
+  - name: "Query Neo4j: connectivity + agent readiness"
+    status: PENDING
+    effort: 1h
+    owner: ASSIGN
+  - name: "Score and categorize"
+    status: PENDING
+    effort: 1h
+    owner: ASSIGN
+  - name: "Generate portfolio strategy report"
+    status: PENDING
+    effort: 1h
+    owner: ASSIGN
+dependencies:
+  - TASK-INFRA-NEOSYNC-001
+  - TASK-INFRA-VEX-NEO4J-001
+blocks:
+  - TASK-PORTFOLIO-ORCHESTRATOR-001
+next_review: 2026-09-22
+
+---
+
+## Agent Framework Distribution Decision
+
+task_id: TASK-FRAMEWORK-DISTRIBUTION-001
+system: Agent Framework
+status: DECISION_PENDING
+blocker_type: ARCHITECTURE_DECISION
+effort_hours: 15
+priority: CRITICAL
+deadline: 2026-09-16
+description: |
+  User must choose distribution approach for generic agents (Appointment Setter, Closer, Follow-up).
+  Options: A) Extract OPS-001 → @worldwidebro/sales-agents
+           B) Add to existing gbrain package
+           C) Create new @worldwidebro/agents package
+  Unblocks: Phases 1-4 of agent framework extraction and deployment.
+decision_gate:
+  question: "Which distribution approach?"
+  options:
+    - label: "A) Extract + publish new npm package"
+      value: OPTION_A
+      pros: ["Clean", "Single purpose", "Reusable"]
+      cons: ["New dependency", "Separate maintenance"]
+    - label: "B) Add to existing gbrain (already published)"
+      value: OPTION_B
+      pros: ["Existing distribution", "Known package"]
+      cons: ["Scope creep", "Mixing concerns"]
+    - label: "C) Create brand new @worldwidebro/agents"
+      value: OPTION_C
+      pros: ["Clearest", "Room to grow"]
+      cons: ["Yet another package", "Maintenance overhead"]
+  decision_required_by: 2026-09-12T17:00:00Z
+tasks:
+  - name: "Evaluate 3 options (analysis)"
+    status: READY
+    effort: 1h
+    owner: USER
+  - name: "Make decision (choose A, B, or C)"
+    status: BLOCKED
+    effort: 0h
+    owner: USER
+    blocking: true
+  - name: "Extract generic skills (Phase 1)"
+    status: BLOCKED_BY_DECISION
+    effort: 2h
+    owner: ASSIGN
+    reference: "Phases 1-4 roadmap"
+  - name: "Wire to Neo4j (Phase 2)"
+    status: BLOCKED_BY_DECISION
+    effort: 3h
+    owner: ASSIGN
+  - name: "Build agents (Phase 3)"
+    status: BLOCKED_BY_DECISION
+    effort: 6h
+    owner: ASSIGN
+  - name: "Build portfolio loop (Phase 4)"
+    status: BLOCKED_BY_DECISION
+    effort: 4h
+    owner: ASSIGN
+dependencies: []
+blocks:
+  - TASK-INFRA-NEOSYNC-001
+  - TASK-PORTFOLIO-ORCHESTRATOR-001
+next_review: 2026-09-12T17:00:00Z
+
+---
+
+# OPTIONAL / NICE-TO-HAVE
+
+## Dexter Financial Research Integration
+
+task_id: TASK-OPT-DEXTER-001
+system: Agent Capability
+status: PENDING
+blocker_type: ROI_DECISION
+effort_hours: 3-4
+priority: LOW
+deadline: null
+description: |
+  Integrate Dexter (virattt/dexter) for financial research capability.
+  Adds: Autonomous financial analysis for FIN-* ventures.
+  Blocked: Awaiting user ROI decision.
+tasks:
+  - name: "Clone virattt/dexter + assess"
+    status: PENDING
+    effort: 1h
+    owner: ASSIGN
+  - name: "Install Bun runtime"
+    status: PENDING
+    effort: 0.5h
+    owner: ASSIGN
+  - name: "Test one financial query"
+    status: PENDING
+    effort: 1h
+    owner: ASSIGN
+  - name: "Decide: integrate or skip?"
+    status: PENDING
+    effort: 0h
+    owner: USER
+dependencies: []
+next_review: null
+
+---
+
+## OmniRoute ARM Architecture Fix
+
+task_id: TASK-OPT-OMNIROUTE-ARM-001
+system: Infrastructure
+status: BLOCKED
+blocker_type: ARCHITECTURE_INCOMPATIBILITY
+effort_hours: 2-4
+priority: LOW
+deadline: null
+description: |
+  Fix: LiteLLM image doesn't support ARM (Apple Silicon).
+  Impact: GitHub automation only (not revenue-critical).
+  Blocked: Need ARM-compatible image or alternative approach.
+tasks:
+  - name: "Find ARM-compatible LiteLLM"
+    status: PENDING
+    effort: 1h
+    owner: ASSIGN
+  - name: "Or: use alternative approach"
+    status: PENDING
+    effort: 2-3h
+    owner: ASSIGN
+dependencies: []
+next_review: null
+
+---
+
+# SUMMARY STATISTICS
+
+summary:
+  total_tasks: 24
+  blocking_week1: 6
+  decision_gates_pending: 4
+  total_effort_hours: 73
+  week1_effort_hours: 13-14
+  revenue_potential_week1: "$9.2K-$37.5K"
+  critical_blockers: 4
+  deadline_all_tasks: 2026-09-25
+
+critical_path:
+  - TASK-FRAMEWORK-DISTRIBUTION-001 (unblocks 15h)
+  - TASK-LT005-DECISION-01 (unblocks 4-5h)
+  - TASK-CON001-ASSESSMENT (unblocks 6h)
+  - TASK-RE001-ASSESSMENT (unblocks 25h)
+  - TASK-LT011-ASSESSMENT (unblocks 1h + decision)
+
+next_review: 2026-09-12T18:00:00Z

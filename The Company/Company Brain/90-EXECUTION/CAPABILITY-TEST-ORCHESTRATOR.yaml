@@ -1,0 +1,394 @@
+---
+id: CAPABILITY-TEST-ORCHESTRATOR
+version: "2.0"
+created: 2026-09-12
+updated: 2026-09-12
+authority: CP-027 (Infrastructure) + CP-033 (Execution)
+status: EXECUTABLE
+description: |
+  Master test orchestrator for the entire repo → capability → funnel → workflow system.
+  References existing registries (no duplication).
+  Executes tests that prove: "What can we actually do?"
+
+---
+
+## REGISTRY SOURCES (Single Source of Truth)
+
+sources:
+
+  # Core registries — authoritative
+  repositories:
+    file: "_REGISTRIES/CANONICAL/REPOSITORY_REGISTRY.yaml"
+    lines: 25903
+    records: ~1740
+    purpose: "Every accessible repository"
+    last_verified: 2026-09-05
+
+  capabilities:
+    file: "_REGISTRIES/CANONICAL/CAPABILITY_REGISTRY.yaml"
+    lines: 769
+    records: ~300
+    purpose: "Every known capability across repos"
+    last_verified: 2026-09-10
+
+  capability_gap_matrix:
+    file: "_REGISTRIES/CANONICAL/CAPABILITY_GAP_MATRIX.yaml"
+    purpose: "Owned vs. external capabilities"
+    last_verified: 2026-09-09
+
+  # Venture-specific
+  ventures:
+    file: "_REGISTRIES/CANONICAL/VENTURE_REGISTRY.yaml"
+    records: 789
+    purpose: "All 789 ventures, status, sector"
+
+  # Workflow & funnel
+  workflows:
+    file: "repos/*/config/workflows.yaml"
+    records: "~50 detected"
+    purpose: "Workflow definitions per venture"
+
+  # Navigation
+  index:
+    file: "INDEX.md"
+    lines: 208
+    purpose: "Master navigation index"
+
+  capabilities_index:
+    file: "14-CAPABILITIES/CAPABILITIES_INDEX.md"
+    lines: 346
+    purpose: "Capability index by sector/domain"
+
+---
+
+## TEST SUITE (25 Test Domains)
+
+### 1. REPOSITORY DISCOVERY TESTS
+
+test_id: TEST-REPO-DISCOVERY
+registry: sources.repositories
+executable: true
+tests:
+  - name: "Can enumerate all repositories"
+    command: "grep -c 'id:' _REGISTRIES/CANONICAL/REPOSITORY_REGISTRY.yaml"
+    expected: "~1740"
+    status: PENDING
+
+  - name: "No duplicate repository IDs"
+    command: "yq '.repositories[].id' _REGISTRIES/CANONICAL/REPOSITORY_REGISTRY.yaml | sort | uniq -d | wc -l"
+    expected: "0"
+    status: PENDING
+
+  - name: "All repositories have URLs"
+    command: "yq '.repositories[] | select(.url == null) | .id' _REGISTRIES/CANONICAL/REPOSITORY_REGISTRY.yaml | wc -l"
+    expected: "0"
+    status: PENDING
+
+  - name: "Archive status recorded"
+    command: "yq '.repositories[] | select(.archived != null) | .id' _REGISTRIES/CANONICAL/REPOSITORY_REGISTRY.yaml | wc -l"
+    expected: ">0"
+    status: PENDING
+
+---
+
+### 2. REPOSITORY INGESTION TESTS
+
+test_id: TEST-REPO-INGESTION
+registry: sources.repositories
+executable: true
+tests:
+  - name: "README extracted for each repo"
+    command: "find . -name 'README.md' | grep -E 'repos/' | wc -l"
+    expected: ">1700"
+    status: PENDING
+
+  - name: "package.json detected"
+    command: "find . -name 'package.json' | grep -E 'repos/' | wc -l"
+    expected: ">500"
+    status: PENDING
+
+  - name: "Docker config detected"
+    command: "find . -name 'docker-compose.yaml' -o -name 'Dockerfile' | grep -E 'repos/' | wc -l"
+    expected: ">200"
+    status: PENDING
+
+  - name: "API routes detected"
+    command: "find . -path '*/routes/*' -o -path '*/api/*' | grep -E 'repos/' | wc -l"
+    expected: ">500"
+    status: PENDING
+
+---
+
+### 3. CAPABILITY EXTRACTION TESTS
+
+test_id: TEST-CAPABILITY-EXTRACTION
+registry: sources.capabilities
+executable: true
+tests:
+  - name: "Every capability has name"
+    command: "yq '.capabilities[] | select(.name == null) | .id' _REGISTRIES/CANONICAL/CAPABILITY_REGISTRY.yaml | wc -l"
+    expected: "0"
+    status: PENDING
+
+  - name: "Every capability has maturity level"
+    command: "yq '.capabilities[] | select(.maturity == null) | .id' _REGISTRIES/CANONICAL/CAPABILITY_REGISTRY.yaml | wc -l"
+    expected: "0"
+    status: PENDING
+
+  - name: "Every capability has evidence"
+    command: "yq '.capabilities[] | select(.evidence == null) | .id' _REGISTRIES/CANONICAL/CAPABILITY_REGISTRY.yaml | wc -l"
+    expected: "0"
+    status: PENDING
+
+  - name: "Every capability links to repository"
+    command: "yq '.capabilities[] | select(.repository == null) | .id' _REGISTRIES/CANONICAL/CAPABILITY_REGISTRY.yaml | wc -l"
+    expected: "0"
+    status: PENDING
+
+---
+
+### 4. CAPABILITY MATURITY TESTS
+
+test_id: TEST-CAPABILITY-MATURITY
+registry: sources.capabilities
+executable: true
+tests:
+  - name: "Count Level 7 capabilities (business/revenue proven)"
+    command: "yq '.capabilities[] | select(.maturity == 7) | .id' _REGISTRIES/CANONICAL/CAPABILITY_REGISTRY.yaml | wc -l"
+    expected: ">5"
+    status: PENDING
+
+  - name: "Count Level 6 capabilities (production proven)"
+    command: "yq '.capabilities[] | select(.maturity == 6) | .id' _REGISTRIES/CANONICAL/CAPABILITY_REGISTRY.yaml | wc -l"
+    expected: ">20"
+    status: PENDING
+
+  - name: "Count Level 0 capabilities (no evidence)"
+    command: "yq '.capabilities[] | select(.maturity == 0) | .id' _REGISTRIES/CANONICAL/CAPABILITY_REGISTRY.yaml | wc -l"
+    expected: "<50"
+    status: PENDING
+
+---
+
+### 5. REPO ↔ CAPABILITY MAPPING TESTS
+
+test_id: TEST-REPO-CAPABILITY-MAPPING
+registry: sources.capabilities
+executable: true
+tests:
+  - name: "Every repo in capabilities index exists in repository registry"
+    command: |
+      yq '.capabilities[] | .repository' _REGISTRIES/CANONICAL/CAPABILITY_REGISTRY.yaml | sort -u > /tmp/cap_repos.txt
+      yq '.repositories[].id' _REGISTRIES/CANONICAL/REPOSITORY_REGISTRY.yaml | sort -u > /tmp/all_repos.txt
+      comm -23 /tmp/cap_repos.txt /tmp/all_repos.txt | wc -l
+    expected: "0"
+    status: PENDING
+
+  - name: "Repo → Capability mapping is bidirectional"
+    command: "yq '.repositories[] | select(.capabilities == null) | .id' _REGISTRIES/CANONICAL/REPOSITORY_REGISTRY.yaml | wc -l"
+    expected: "<100"
+    status: PENDING
+
+---
+
+### 6. WORKFLOW EXTRACTION TESTS
+
+test_id: TEST-WORKFLOW-EXTRACTION
+registry: sources.workflows
+executable: true
+tests:
+  - name: "Workflow files exist"
+    command: "find . -path 'repos/*/config/workflows.yaml' | wc -l"
+    expected: ">5"
+    status: PENDING
+
+  - name: "Every workflow has trigger"
+    command: |
+      for f in $(find . -path 'repos/*/config/workflows.yaml'); do
+        yq '.workflows[] | select(.trigger == null)' "$f"
+      done | wc -l
+    expected: "0"
+    status: PENDING
+
+  - name: "Every workflow has actions"
+    command: |
+      for f in $(find . -path 'repos/*/config/workflows.yaml'); do
+        yq '.workflows[] | select(.actions == null)' "$f"
+      done | wc -l
+    expected: "0"
+    status: PENDING
+
+---
+
+### 7. VENTURE INSTANTIATION TESTS
+
+test_id: TEST-VENTURE-INSTANTIATION
+registry: sources.ventures
+executable: true
+tests:
+  - name: "All 789 ventures have sector"
+    command: "yq '.ventures[] | select(.sector == null) | .id' _REGISTRIES/CANONICAL/VENTURE_REGISTRY.yaml | wc -l"
+    expected: "0"
+    status: PENDING
+
+  - name: "All 789 ventures have status"
+    command: "yq '.ventures[] | select(.status == null) | .id' _REGISTRIES/CANONICAL/VENTURE_REGISTRY.yaml | wc -l"
+    expected: "0"
+    status: PENDING
+
+  - name: "Ventures mapped to repositories"
+    command: "yq '.ventures[] | select(.repository == null) | .id' _REGISTRIES/CANONICAL/VENTURE_REGISTRY.yaml | wc -l"
+    expected: "<200"
+    status: PENDING
+
+  - name: "Ventures mapped to capabilities"
+    command: "yq '.ventures[] | select(.capabilities == null) | .id' _REGISTRIES/CANONICAL/VENTURE_REGISTRY.yaml | wc -l"
+    expected: "<300"
+    status: PENDING
+
+---
+
+### 8. FUNNEL COMPLETENESS TESTS
+
+test_id: TEST-FUNNEL-COMPLETENESS
+registry: sources.capabilities
+executable: true
+description: "Can we execute full funnels for key ventures?"
+tests:
+  - name: "OPS-001 has Lead Gen capability"
+    command: |
+      yq '.capabilities[] | select(.venture == "OPS-001" and .name == "*Lead*") | .id' \
+        _REGISTRIES/CANONICAL/CAPABILITY_REGISTRY.yaml | wc -l
+    expected: ">0"
+    status: PENDING
+
+  - name: "OPS-001 has Qualification capability"
+    command: |
+      yq '.capabilities[] | select(.venture == "OPS-001" and .name == "*Qualif*") | .id' \
+        _REGISTRIES/CANONICAL/CAPABILITY_REGISTRY.yaml | wc -l
+    expected: ">0"
+    status: PENDING
+
+  - name: "LT-005 has Order Management capability"
+    command: |
+      yq '.capabilities[] | select(.venture == "LT-005" and .name == "*Order*") | .id' \
+        _REGISTRIES/CANONICAL/CAPABILITY_REGISTRY.yaml | wc -l
+    expected: ">0"
+    status: PENDING
+
+  - name: "RE-001 has Deal Management capability"
+    command: |
+      yq '.capabilities[] | select(.venture == "RE-001" and .name == "*Deal*") | .id' \
+        _REGISTRIES/CANONICAL/CAPABILITY_REGISTRY.yaml | wc -l
+    expected: ">0"
+    status: PENDING
+
+---
+
+### 9. EVIDENCE VALIDATION TESTS
+
+test_id: TEST-EVIDENCE-VALIDATION
+registry: sources.capabilities
+executable: true
+tests:
+  - name: "Every Level 6+ capability has production proof"
+    command: |
+      yq '.capabilities[] | select(.maturity >= 6 and .evidence.type != "production") | .id' \
+        _REGISTRIES/CANONICAL/CAPABILITY_REGISTRY.yaml | wc -l
+    expected: "0"
+    status: PENDING
+
+  - name: "Every Level 4+ capability has test evidence"
+    command: |
+      yq '.capabilities[] | select(.maturity >= 4 and .evidence.tests == null) | .id' \
+        _REGISTRIES/CANONICAL/CAPABILITY_REGISTRY.yaml | wc -l
+    expected: "<20"
+    status: PENDING
+
+---
+
+### 10. MASTER DISCOVERY TEST
+
+test_id: TEST-MASTER-DISCOVERY
+registry: "all"
+executable: true
+description: "Can the system answer: given a business objective, what can we do?"
+test:
+  objective: "Find everything we already have that can help acquire and onboard a medical-courier customer"
+  expected_to_discover:
+    - repositories: ["lt-005-medical-courier-dispatch", "ops-staff-001-staffing", "vex-*"]
+    - capabilities: ["Order Management", "Lead Generation", "CRM", "Email", "SMS"]
+    - funnels: ["ACQUIRE", "QUALIFY", "CONTACT", "CONVERT", "DELIVER", "BILL"]
+    - workflows: ["order-processing", "driver-assignment", "delivery-tracking"]
+    - tools: ["Stripe", "Twilio", "Google Maps", "Supabase"]
+    - agents: ["sales-agent", "dispatch-agent", "customer-service-agent"]
+  status: PENDING
+
+---
+
+## EXECUTION PLAN
+
+execution_order:
+  1: "TEST-REPO-DISCOVERY"
+  2: "TEST-REPO-INGESTION"
+  3: "TEST-CAPABILITY-EXTRACTION"
+  4: "TEST-CAPABILITY-MATURITY"
+  5: "TEST-REPO-CAPABILITY-MAPPING"
+  6: "TEST-WORKFLOW-EXTRACTION"
+  7: "TEST-VENTURE-INSTANTIATION"
+  8: "TEST-FUNNEL-COMPLETENESS"
+  9: "TEST-EVIDENCE-VALIDATION"
+  10: "TEST-MASTER-DISCOVERY"
+
+pass_criteria:
+  - All repository tests pass (no duplicates, no nulls)
+  - All capability tests pass (linked, evidenced, maturity assigned)
+  - Repo ↔ Capability mapping is complete (no orphans)
+  - Master discovery test passes (system can find what it needs)
+
+---
+
+## CURRENT STATUS (Sep 12, 2026)
+
+registries_checked: true
+registries_comprehensive: true
+test_suite_designed: true
+tests_executable: true
+execution_status: READY
+
+blocking_issues: null
+
+next_step: "Execute test suite and generate CAPABILITY_TEST_REPORT.yaml"
+
+---
+
+## HOW TO EXECUTE
+
+```bash
+# Run all tests
+./scripts/run-capability-tests.sh
+
+# Run one test suite
+./scripts/run-capability-tests.sh TEST-REPO-DISCOVERY
+
+# Generate report
+./scripts/generate-capability-report.yaml > CAPABILITY_TEST_REPORT.yaml
+
+# Publish to VEX
+curl -X POST http://vex-api/registries/tests \
+  -d @CAPABILITY_TEST_REPORT.yaml
+```
+
+---
+
+**References (don't duplicate):**
+- `_REGISTRIES/CANONICAL/CAPABILITY_REGISTRY.yaml` — Source of truth
+- `_REGISTRIES/CANONICAL/REPOSITORY_REGISTRY.yaml` — Source of truth
+- `_REGISTRIES/CANONICAL/VENTURE_REGISTRY.yaml` — Ventures
+- `MASTER-UNRESOLVED-TASKS-REGISTRY.yaml` — Tasks + blockers
+- `tasks.md` — Week 1 execution
+- `INDEX.md` — Navigation
+
+**Created:** 2026-09-12
+**Authority:** CP-027 (Infrastructure)
+**Purpose:** Prove we know what we can do
