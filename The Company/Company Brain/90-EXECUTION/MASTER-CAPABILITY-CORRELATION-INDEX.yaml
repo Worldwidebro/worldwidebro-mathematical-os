@@ -1,0 +1,183 @@
+---
+id: MASTER-CAPABILITY-CORRELATION-INDEX
+version: "1.0"
+created: 2026-09-12
+authority: CP-027 (Infrastructure)
+status: READY_FOR_DATA
+description: |
+  Single view showing: Capability ↔ Repo ↔ Venture ↔ VEX ↔ Maturity ↔ Evidence ↔ Skill
+
+  SCHEMA:
+  capability_id → [owned_repos] → [ventures_using] → [vex_visible] → [maturity] → [evidence_type] → [agents_enabling]
+
+  This answers: "What can we do, who owns it, where's it used, can anyone see it, how proven is it?"
+
+---
+
+## CAPABILITY CORRELATION TEMPLATE
+
+# Example: "Lead Management" capability
+#
+# capability_id: CAP-001
+# name: "Lead Management"
+#
+# owned_repos:
+#   - id: ops-staff-001-staffing
+#     type: OWNED
+#     github_stars: 12
+#     evidence: "Code exists, production-proven"
+#   - id: lt-005-medical-courier-dispatch
+#     type: OWNED
+#     github_stars: 8
+#     evidence: "Code exists, partial implementation"
+#
+# external_starred_repos:
+#   - name: "HubSpot/hubspot-api-python"
+#     stars: 5200
+#     value: "Reference implementation"
+#   - name: "Odoo/odoo"
+#     stars: 30000
+#     value: "Full CRM, could integrate"
+#
+# ventures_using:
+#   - venture_id: OPS-001
+#     maturity_needed: 7 (business-proven)
+#     current_maturity: 6 (production-proven)
+#     gap: 1 level (needs revenue tracking)
+#   - venture_id: LT-005
+#     maturity_needed: 5 (deployed)
+#     current_maturity: 3 (functional)
+#     gap: 2 levels (needs hospital integration)
+#   - venture_id: RE-001
+#     maturity_needed: 6 (production)
+#     current_maturity: 0 (planned)
+#     gap: 6 levels (not started)
+#
+# vex_visibility:
+#   current_visibility: NONE (VEX doesn't know this capability exists)
+#   why_blind: "VEX only queries Supabase ventures, not Neo4j capabilities"
+#   visibility_needed: HIGH (ventures need to know what they have available)
+#   fix: "Wire VEX to Neo4j CAPABILITY nodes"
+#
+# skills_enabling:
+#   - skill_id: SKILL-LEAD-SCORING
+#     agent: sales-agent
+#     status: READY
+#   - skill_id: SKILL-LEAD-ENRICHMENT
+#     agent: research-agent
+#     status: READY
+#   - skill_id: SKILL-LEAD-OUTREACH
+#     agent: outreach-agent
+#     status: PARTIAL
+#     gap: "Needs Twilio SMS integration"
+#
+# evidence:
+#   maturity_level: 6
+#   type: PRODUCTION_PROVEN
+#   proof:
+#     - "OPS-001 has 50+ placements (real revenue)"
+#     - "Code in repos/ops-staff-001-staffing/leads/"
+#     - "Tests exist and pass"
+#     - "Used by 2 ventures in production"
+#
+# correlation_gaps:
+#   - "RE-001 needs this but doesn't know we have it"
+#   - "CON-001 could use this but capability not evaluated"
+#   - "Skill gap: SMS outreach only 50% implemented"
+#
+# next_action: "Wire VEX to show this capability to ventures that need it"
+
+---
+
+## CONSOLIDATION PLAN
+
+This file will aggregate data from:
+
+sources:
+  - _REGISTRIES/CANONICAL/CAPABILITY_REGISTRY.yaml
+  - _REGISTRIES/CANONICAL/REPOSITORY_REGISTRY.yaml
+  - _REGISTRIES/CANONICAL/VENTURE_REGISTRY.yaml
+  - _REGISTRIES/agents-by-sector.yaml
+  - _REGISTRIES/skills/index.yaml
+  - repos/*/config/agents.yaml
+  - repos/*/config/skills.yaml
+
+  # GitHub stars (if tracked)
+  - EXTERNAL_CAPABILITY_UNIVERSE.yaml (starred repos)
+
+output:
+  - Correlation matrix: Capability ↔ Repo ↔ Venture
+  - VEX visibility report: What can VEX see?
+  - Skill enablement map: Which agents enable which capabilities?
+  - Gap analysis: What's missing for each venture?
+  - Wiki-link brackets: How are these connected?
+
+---
+
+## WIKI-LINK BRACKETS (Missing)
+
+These should exist but don't:
+
+missing:
+  - "[[CAPABILITY-REPO-CORRELATION]]" — Maps every capability to repos that build it
+  - "[[REPO-VENTURE-CORRELATION]]" — Maps every repo to ventures using it
+  - "[[VENTURE-CAPABILITY-NEEDS]]" — Maps every venture to capabilities it needs
+  - "[[VEX-CAPABILITY-VISIBILITY]]" — Shows what VEX can see vs. what exists
+  - "[[SKILL-CAPABILITY-ENABLEMENT]]" — Maps skills that enable capabilities
+  - "[[STARRED-VS-OWNED]]" — GitHub stars (external options) vs. owned implementations
+  - "[[MATURITY-CORRELATION]]" — Venture needs vs. capability maturity
+  - "[[EVIDENCE-PROOF-MAP]]" — Capability claims vs. actual proof
+
+action: Create these as wiki-link stubs in `_REGISTRIES/CANONICAL/`
+
+---
+
+## CURRENT STATE QUERY
+
+Today's snapshot (Sep 12, 2026):
+
+capability_count: ~300
+repository_count: ~1740
+venture_count: 789
+
+correlations_visible: PARTIAL
+  - Some capabilities link to repos
+  - Some repos link to ventures
+  - VEX sees none of it (queries Supabase only, not Neo4j)
+
+skills_mapped_to_capabilities: ~40%
+  - Partially documented in agent YAML files
+  - Not consolidated
+
+maturity_tracked: YES
+  - In CAPABILITY_REGISTRY
+  - But not correlated to venture needs
+
+vex_visibility: ZERO
+  - VEX doesn't query capabilities
+  - VEX doesn't know venture ↔ capability mapping
+  - VEX blind to what's available
+
+starred_repos_tracked: NO
+  - We know external tools exist
+  - Not tracked against owned capabilities
+  - Can't show: "We built this, or should we use THAT instead?"
+
+---
+
+## NEXT IMMEDIATE ACTIONS
+
+1. **Extract data** from existing registries (CAPABILITY, REPOSITORY, VENTURE, AGENT, SKILL)
+2. **Build correlation matrix** showing: Cap ↔ Repo ↔ Venture ↔ VEX ↔ Maturity
+3. **Identify gaps**: Where ventures don't know they have capabilities available
+4. **Wire VEX**: Query Neo4j for CAPABILITY nodes, not just Supabase
+5. **Create wiki-link stubs**: [[CAPABILITY-REPO-CORRELATION]], etc.
+6. **Publish to Neo4j**: So agents can discover "what can we do?"
+
+---
+
+**Purpose:** Before building more, see what you ALREADY have and how everything connects.
+
+**Authority:** CP-027 (Infrastructure)
+
+**Status:** Ready for execution
