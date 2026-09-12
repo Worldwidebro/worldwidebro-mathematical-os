@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[50-MASTER-CONTROL|Master Roadmap]] | [[INDEX]]
+
 # Next 100+ Tasks — Company Brain Master Roadmap
 
 **Authority:** CP-027 (Infrastructure) + CP-006 (Agents) + CP-028 (Collaboration)  

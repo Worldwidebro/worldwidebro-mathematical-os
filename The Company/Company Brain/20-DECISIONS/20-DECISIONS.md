@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[20-DECISIONS/README|Decisions Index]] | [[REALITY]]
+
 ---
 id: "20-DECISIONS"
 ontology_id: "OPS-027"

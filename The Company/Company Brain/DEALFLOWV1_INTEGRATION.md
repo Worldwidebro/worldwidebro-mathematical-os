@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[14-CAPABILITIES|Dealflow V1]] | [[INDEX]]
+
 # DealFlowV1 ↔ Agent OS Integration
 
 **Repo:** https://github.com/Worldwidebro/DealFlowV1  

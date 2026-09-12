@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[INDEX]] | [[20-DECISIONS/README|Decisions Index]] | [[CAPITAL-READINESS-ENGINE]]
+
 # SALES PIPELINE MASTER INDEX — All 5 Tier-1 Ventures
 
 **Date Created:** Sep 9, 2026  
@@ -272,3 +274,15 @@ Nov 1+:    +$5K-10K/month recurring
 **Commit:** Sep 9, 2026 — 5 complete sales pipelines + master index
 
 Co-Authored-By: Claude Haiku 4.5 <noreply@anthropic.com>
+
+---
+
+## CONNECTED VENTURE PIPELINES & SCRIPTS
+
+- [[20-DECISIONS/CON-001-SALES-PIPELINE|CON-001 Sales Pipeline]] & [[scripts/CON-001-SALES-COACH|CON-001 Sales Coach]]
+- [[20-DECISIONS/LT-005-SALES-PIPELINE|LT-005 Sales Pipeline]] & [[scripts/LT-005-SALES-COACH|LT-005 Sales Coach]]
+- [[20-DECISIONS/LT-011-SALES-PIPELINE|LT-011 Sales Pipeline]] & [[scripts/LT-011-SALES-COACH|LT-011 Sales Coach]]
+- [[20-DECISIONS/OPS-001-SALES-PIPELINE|OPS-001 Sales Pipeline]] & [[scripts/OPS-001-SALES-COACH|OPS-001 Sales Coach]]
+- [[20-DECISIONS/RE-001-SALES-PIPELINE|RE-001 Sales Pipeline]] & [[scripts/RE-001-SALES-COACH|RE-001 Sales Coach]]
+- [[38-OPPORTUNITIES/CAPITAL_STACK/README|Sovereign Capital Stack Index]]
+- [[BUSINESS-CAPITAL-DATA-ROOM/5-VENTURE-INTEGRATED-SUMMARY|5-Venture Integrated Summary]]

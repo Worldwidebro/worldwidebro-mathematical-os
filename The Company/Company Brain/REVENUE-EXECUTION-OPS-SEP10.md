@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[08-REVENUE|Revenue Operations]] | [[INDEX]]
+
 # REVENUE EXECUTION OPERATIONS — Week 1 (Sep 10-15, 2026)
 
 **Status:** All 6 Tier-0 ventures deployed and ready  

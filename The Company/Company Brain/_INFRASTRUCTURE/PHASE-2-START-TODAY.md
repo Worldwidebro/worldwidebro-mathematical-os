@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[_INFRASTRUCTURE/README|Infrastructure Hub]] | [[CLAUDE]]
+
 # PHASE 2: START TODAY (Sep 9)
 
 **Goal:** Make first $2,500 revenue by Sep 14  

@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[09-OPERATIONS|ClickUp Reality]] | [[INDEX]]
+
 # ClickUp Workspace Reality — What Actually Exists
 **Date**: 2026-09-08  
 **Status**: EXISTING STRUCTURE FOUND (expand it for 35 sectors)

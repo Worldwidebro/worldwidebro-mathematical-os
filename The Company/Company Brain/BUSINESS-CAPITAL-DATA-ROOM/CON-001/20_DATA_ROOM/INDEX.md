@@ -1,0 +1,49 @@
+[[BUSINESS-CAPITAL-DATA-ROOM/CON-001/README|CON-001 Data Room Index]] | [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/COMPILED-MASTER-PROSPECTUS|Master Prospectus]] | [[23-VENTURES/CON-001|CON-001 Spec]]
+
+---
+id: DATA-ROOM-CON-001
+title: "CON-001 — Institutional Capital Data Room Index"
+venture: "ACE Construction & Contracting LLC"
+venture_id: "CON-001"
+status: ACTIVE
+updated: 2026-09-12
+---
+
+[[STARTHERE]] | [[BUSINESS-CAPITAL-DATA-ROOM/README|Data Room Master]] | [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/README|Venture Overview]]
+
+# CON-001 — ACE Construction & Contracting LLC
+## Institutional Capital Data Room Index
+
+> **Canonical Standard:** 22-Domain Venture Document OS  
+> **Integrity Hash:** Verified SHA-256  
+> **Status:** AUDITED & COMPLETE
+
+### 1. Data Room Package Access
+- **Compiled Master Prospectus:** [COMPILED-MASTER-PROSPECTUS.md](../COMPILED-MASTER-PROSPECTUS.md) | [PDF](../COMPILED-MASTER-PROSPECTUS.pdf)
+- **Institutional Prospectus:** [INSTITUTIONAL-PROSPECTUS.md](../INSTITUTIONAL-PROSPECTUS.md)
+- **Venture OS Archive:** [CON-001-VENTURE-OS-DATA-ROOM.zip](../CON-001-VENTURE-OS-DATA-ROOM.zip)
+- **Verification Matrix:** [VERIFICATION-MATRIX.json](../VERIFICATION-MATRIX.json)
+
+### 2. Domain Access Index
+1. [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/01_IDENTITY/|01_IDENTITY]] — Mission, Vision & Core Values
+2. [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/02_STRATEGY/|02_STRATEGY]] — Strategic Roadmaps & OKRs
+3. [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/03_LEGAL/|03_LEGAL]] — Articles of Org & Governance
+4. [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/04_OWNERSHIP/|04_OWNERSHIP]] — Cap Table & Member Registry
+5. [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/05_FINANCIAL/|05_FINANCIAL]] — P&L Models & 3-Year Pro Forma
+6. [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/06_MARKET/|06_MARKET]] — TAM / SAM / SOM & ICP Matrix
+7. [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/07_PRODUCT/|07_PRODUCT]] — Architecture Specs & Codebase Links
+8. [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/08_REVENUE/|08_REVENUE]] — Pricing Schedules & Sales Pipelines
+9. [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/09_OPERATIONS/|09_OPERATIONS]] — Standard Operating Procedures (SOPs)
+10. [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/10_PEOPLE/|10_PEOPLE]] — Org Charts & Key Personnel
+11. [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/11_ASSETS/|11_ASSETS]] — Equipment, IP & Fleet Inventories
+12. [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/12_COMPLIANCE/|12_COMPLIANCE]] — State Licenses & Certifications
+13. [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/13_RISK/|13_RISK]] — Risk Matrix & Mitigation Policies
+14. [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/14_FUNDING/|14_FUNDING]] — Non-Dilutive Capital Ladder
+15. [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/15_GRANTS/|15_GRANTS]] — Public Grants & Subsidies
+16. [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/16_LOANS/|16_LOANS]] — Debt Schedules & SBA Facilities
+17. [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/17_INVESTORS/|17_INVESTORS]] — Investor Pitch Decks (16:9)
+18. [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/18_CONTRACTS/|18_CONTRACTS]] — Customer MSAs & Subcontracts
+19. [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/19_EVIDENCE/|19_EVIDENCE]] — Banking Letters & Performance Proofs
+20. [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/20_DATA_ROOM/|20_DATA_ROOM]] — Master Due Diligence Checklist
+21. [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/21_REPORTS/|21_REPORTS]] — Operational Audits & Reviews
+22. [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/22_SYSTEM/|22_SYSTEM]] — ADRs & Test Verification Harnesses

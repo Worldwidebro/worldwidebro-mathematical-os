@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[08-REVENUE|Revenue & Marketing Campaigns]] | [[INDEX]]
+
 # 5-VENTURE CAMPAIGN EXECUTION PLAN
 **Timeline:** Sep 8-30 | **Status:** Active  
 **Ventures:** CON-001, OPS-001, LT-011, LT-005, RE-001

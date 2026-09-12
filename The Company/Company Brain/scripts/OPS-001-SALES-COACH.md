@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[20-DECISIONS/OPS-001-SALES-PIPELINE|Sales Pipeline]] | [[23-VENTURES/OPS-001|Venture Spec]]
+
 # OPS-001 CareerOps Staffing — Sales Coach
 
 **Product**: Place vetted warehouse workers (permanent, 12+ months)  

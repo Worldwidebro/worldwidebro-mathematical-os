@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[16-AGENTS|OpenClaw Security]] | [[INDEX]]
+
 # OpenClaw Security & Integration Guide
 
 **Created:** 2026-09-09  

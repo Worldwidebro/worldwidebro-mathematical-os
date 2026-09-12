@@ -1,320 +1,314 @@
-# COMPANY BRAIN: 50-DOMAIN MASTER INDEX
+# COMPANY BRAIN: CANONICAL DOMAIN MASTER INDEX
 
-[[STARTHERE]] | [[REALITY]] | [[INDEX]] | [[SECTOR_INDEX]] | [[ANTIGRAVITY]]
+[[STARTHERE]] | [[REALITY]] | [[INDEX]] | [[SECTOR_INDEX]] | [[UNIFIED_REGISTRY]] | [[ANTIGRAVITY]]
 
-**Version:** 2.0 (Complete Graph)  
-**Date:** 2026-09-02  
-**Status:** ✅ ALL FOLDERS WIRED
-
----
-
-## STRATEGIC LAYER (00-04)
-
-### [[00-CONSTITUTION]]
-**ID:** DOM-00 | **Tags:** #strategy #governance #framework  
-**Purpose:** Mission, principles, sector taxonomy, control planes  
-**Links to:** [[01-IDENTITY]], [[52-PEOPLE]], [[10-MEMORY]], [[16-AGENTS]], [[23-VENTURES]]
-
-### [[01-IDENTITY]]
-**ID:** DOM-01 | **Tags:** #identity #registry #BASE  
-**Purpose:** Company identity, ventures, organizations, people (BASE registry)  
-**Links to:** [[00-CONSTITUTION]], [[02-SOURCES]], [[52-PEOPLE]], [[06-ENTITY-RESOLUTION]], [[16-AGENTS]]
-
-### [[02-SOURCES]]
-**ID:** DOM-02 | **Tags:** #sources #APIs #data-feeds  
-**Purpose:** MCPs, external data sources, API integrations  
-**Links to:** [[01-IDENTITY]], [[03-INGESTION]], [[06-ENTITY-RESOLUTION]]
-
-### [[03-INGESTION]]
-**ID:** DOM-03 | **Tags:** #ingestion #pipelines #ETL  
-**Purpose:** Data ingestion workflows, transformations  
-**Links to:** [[02-SOURCES]], [[06-ENTITY-RESOLUTION]], [[09-KNOWLEDGE]]
-
-### [[04-SEMANTICS]]
-**ID:** DOM-04 | **Tags:** #semantics #embeddings #vectors  
-**Purpose:** Semantic search, vector embeddings, Qdrant  
-**Links to:** [[08-KNOWLEDGE-GRAPH]], [[09-KNOWLEDGE]], [[10-MEMORY]]
+**Version:** 3.0 (Accurate Graph Architecture)  
+**Date:** 2026-09-12  
+**Status:** ✅ ALL DOMAIN HUBS FULLY WIRED & VERIFIED ON DISK
 
 ---
 
-## KNOWLEDGE LAYER (05-09)
+## 1. Master System Layers
 
-### [[52-PEOPLE]]
-**ID:** DOM-05 | **Tags:** #people #BASE #governance  
-**Purpose:** People registry, teams, roles, skills (BASE entity)  
-**Links to:** [[01-IDENTITY]], [[16-AGENTS]], [[27-SECURITY]], [[52-PEOPLE/README.md#Agent-Governance]]
-
-### [[06-ENTITY-RESOLUTION]]
-**ID:** DOM-06 | **Tags:** #deduplication #entity-resolution #data-quality  
-**Purpose:** Entity matching, deduplication, reconciliation  
-**Links to:** [[02-SOURCES]], [[01-IDENTITY]], [[09-KNOWLEDGE]]
-
-### [[07-RELATIONSHIPS]]
-**ID:** DOM-07 | **Tags:** #relationships #graph #connections  
-**Purpose:** Relationship mapping, connection semantics  
-**Links to:** [[08-KNOWLEDGE-GRAPH]], [[09-KNOWLEDGE]]
-
-### [[08-KNOWLEDGE-GRAPH]]
-**ID:** DOM-08 | **Tags:** #neo4j #graph #relationships  
-**Purpose:** Neo4j knowledge graph, relationships, agent routing  
-**Links to:** [[04-SEMANTICS]], [[07-RELATIONSHIPS]], [[09-KNOWLEDGE]], [[16-AGENTS]]
-
-### [[09-KNOWLEDGE]]
-**ID:** DOM-09 | **Tags:** #knowledge #ontology #taxonomy  
-**Purpose:** Knowledge base, ontology, capabilities, skills  
-**Links to:** [[03-INGESTION]], [[04-SEMANTICS]], [[08-KNOWLEDGE-GRAPH]], [[14-CAPABILITIES]]
+| Layer | Domain Range | Description |
+|---|---|---|
+| **Sovereign & Governance** | `00` - `01`, `50` | Constitution, respect, identity, master control |
+| **Data & Cognitive Substrate** | `02` - `12` | Sources, ingestion, data, ontology, memory, context |
+| **Execution Assets & Code** | `13` - `18`, `56` | Repositories, capabilities, skills, agents, models, tools |
+| **Decision & Orchestration** | `19` - `22`, `48` | Workflow orchestration, decisions, policies, automation |
+| **Commercial & Capital Engine** | `23` - `28`, `54` | Ventures, finance, sales, marketing, customers, product |
+| **Operations & Infrastructure** | `29` - `36`, `51`, `58` | Logistics, HR, legal, security, compliance, risk, assets |
+| **Meta-System & Evolution** | `37` - `46`, `63` - `67` | Research, metrics, observability, evaluation, governance |
 
 ---
 
-## ORCHESTRATION LAYER (10-19)
+## 2. Directory Catalog (All Domains on Disk)
 
-### [[10-MEMORY]]
-**ID:** DOM-10 | **Tags:** #memory #storage #observability  
-**Purpose:** Memory system, observations, audit logs  
-**Links to:** [[04-SEMANTICS]], [[00-CONSTITUTION]], [[43-OUTCOMES]]
+### [[00-CONSTITUTION/README|00-CONSTITUTION]] — Constitution
+- **Directory:** `00-CONSTITUTION/` (54 notes)
+- **Gateway Note:** [[00-CONSTITUTION/README]]
 
-### [[11-DISCOVERY]]
-**ID:** DOM-11 | **Tags:** #discovery #search #indexing  
-**Purpose:** Work discovery, search, task finding  
-**Links to:** [[09-KNOWLEDGE]], [[16-AGENTS]], [[20-DECISIONS]]
+### [[00_RESPECT/README|00_RESPECT]] — 00_RESPECT — Universal Respect, Ethics & Agency Operating System
+- **Directory:** `00_RESPECT/` (13 notes)
+- **Gateway Note:** [[00_RESPECT/README]]
 
-### [[12-ROUTING]]
-**ID:** DOM-12 | **Tags:** #routing #workflow #orchestration  
-**Purpose:** Task routing, workflow orchestration  
-**Links to:** [[11-DISCOVERY]], [[16-AGENTS]], [[20-DECISIONS]]
+### [[01-IDENTITY/README|01-IDENTITY]] — 01-IDENTITY — Company Identity Registry
+- **Directory:** `01-IDENTITY/` (8 notes)
+- **Gateway Note:** [[01-IDENTITY/README]]
 
-### [[13-LOOPS]]
-**ID:** DOM-13 | **Tags:** #loops #automation #execution  
-**Purpose:** Loop engineering, automation (L1/L2/L3), Fractal  
-**Links to:** [[12-ROUTING]], [[16-AGENTS]], [[20-DECISIONS]], [[43-OUTCOMES]]
+### [[02-SOURCES/README|02-SOURCES]] — 02-SOURCES — Data Sources & MCPs
+- **Directory:** `02-SOURCES/` (2 notes)
+- **Gateway Note:** [[02-SOURCES/README]]
 
-### [[14-CAPABILITIES]]
-**ID:** DOM-14 | **Tags:** #capabilities #skills #BASE  
-**Purpose:** Capabilities registry, 300+ capabilities (BASE entity)  
-**Links to:** [[09-KNOWLEDGE]], [[15-AGENTS]] (deprecated), [[16-AGENTS]], [[23-VENTURES]]
+### [[02_PROJECTS/README|02_PROJECTS]] — 02_PROJECTS
+- **Directory:** `02_PROJECTS/` (1 notes)
+- **Gateway Note:** [[02_PROJECTS/README]]
 
-### [[15-AGENTS]] (DEPRECATED - use [[16-AGENTS]])
-**ID:** DOM-15 | **Tags:** #agents #deprecated  
-**Purpose:** Old agent index - REPLACED BY 16-AGENTS  
-**Links to:** [[16-AGENTS]]
+### [[03-INGESTION/README|03-INGESTION]] — 03-INGESTION
+- **Directory:** `03-INGESTION/` (2 notes)
+- **Gateway Note:** [[03-INGESTION/README]]
 
-### [[16-AGENTS]]
-**ID:** DOM-16 | **Tags:** #agents #routing #execution  
-**Purpose:** Routing agents (AGT-001..005), Fractal wiring, Claude delegation  
-**Links to:** [[52-PEOPLE]], [[08-KNOWLEDGE-GRAPH]], [[12-ROUTING]], [[14-CAPABILITIES]], [[00-CONSTITUTION/SECTOR-TAXONOMY-MASTER]]
+### [[04-DATA/README|04-DATA]] — Data
+- **Directory:** `04-DATA/` (2 notes)
+- **Gateway Note:** [[04-DATA/README]]
 
-### [[17-MONITORING]]
-**ID:** DOM-17 | **Tags:** #monitoring #observability #alerts  
-**Purpose:** Monitoring, alerting, SLIs/SLOs  
-**Links to:** [[10-MEMORY]], [[43-OUTCOMES]]
+### [[05-METADATA/README|05-METADATA]] — 05-METADATA
+- **Directory:** `05-METADATA/` (2 notes)
+- **Gateway Note:** [[05-METADATA/README]]
 
-### [[18-DECISIONS]]
-**ID:** DOM-18 | **Tags:** #decisions #governance #approval  
-**Purpose:** Decision logs, approvals (duplicate of 20)  
-**Links to:** [[20-DECISIONS]], [[27-SECURITY]]
+### [[06-ENTITY-RESOLUTION/README|06-ENTITY-RESOLUTION]] — 06-ENTITY-RESOLUTION
+- **Directory:** `06-ENTITY-RESOLUTION/` (2 notes)
+- **Gateway Note:** [[06-ENTITY-RESOLUTION/README]]
 
-### [[19-ORCHESTRATION]]
-**ID:** DOM-19 | **Tags:** #orchestration #workflows  
-**Purpose:** Workflow execution, task orchestration  
-**Links to:** [[12-ROUTING]], [[13-LOOPS]], [[16-AGENTS]]
+### [[07-ONTOLOGY/README|07-ONTOLOGY]] — 07-ONTOLOGY — Knowledge Architecture & Ontology Control Plane
+- **Directory:** `07-ONTOLOGY/` (48 notes)
+- **Gateway Note:** [[07-ONTOLOGY/README]]
 
----
+### [[08-KNOWLEDGE-GRAPH/README|08-KNOWLEDGE-GRAPH]] — Knowledge Graph (08-KNOWLEDGE-GRAPH)
+- **Directory:** `08-KNOWLEDGE-GRAPH/` (2 notes)
+- **Gateway Note:** [[08-KNOWLEDGE-GRAPH/README]]
 
-## OPERATIONS LAYER (20-36)
+### [[09-KNOWLEDGE/README|09-KNOWLEDGE]] — 09-KNOWLEDGE
+- **Directory:** `09-KNOWLEDGE/` (6 notes)
+- **Gateway Note:** [[09-KNOWLEDGE/README]]
 
-### [[20-DECISIONS]]
-**ID:** DOM-20 | **Tags:** #decisions #governance #BASE  
-**Purpose:** Decision registry, approval chains (BASE entity)  
-**Links to:** [[18-DECISIONS]], [[27-SECURITY]], [[46-GOVERNANCE]]
+### [[10-MEMORY/README|10-MEMORY]] — 10-MEMORY — Agent Memory & Institutional Awareness Domain
+- **Directory:** `10-MEMORY/` (2 notes)
+- **Gateway Note:** [[10-MEMORY/README]]
 
-### [[21-PROJECTS]]
-**ID:** DOM-21 | **Tags:** #projects #execution #BASE  
-**Purpose:** Projects registry (BASE entity), venture projects  
-**Links to:** [[23-VENTURES]], [[43-OUTCOMES]]
+### [[11-INDEXING/README|11-INDEXING]] — 11-INDEXING
+- **Directory:** `11-INDEXING/` (2 notes)
+- **Gateway Note:** [[11-INDEXING/README]]
 
-### [[22-TASKS]]
-**ID:** DOM-22 | **Tags:** #tasks #execution #BASE  
-**Purpose:** Tasks registry (BASE entity), ClickUp sync  
-**Links to:** [[20-DECISIONS]], [[23-VENTURES]], [[43-OUTCOMES]]
+### [[12-CONTEXT/README|12-CONTEXT]] — 12-CONTEXT — Agent Context Assembly
+- **Directory:** `12-CONTEXT/` (3 notes)
+- **Gateway Note:** [[12-CONTEXT/README]]
 
-### [[23-VENTURES]]
-**ID:** DOM-23 | **Tags:** #ventures #execution #BASE  
-**Purpose:** Venture execution, 500+ ventures (BASE entity)  
-**Links to:** [[01-IDENTITY]], [[14-CAPABILITIES]], [[21-PROJECTS]], [[22-TASKS]], [[43-OUTCOMES]]
+### [[13-REPOSITORIES/README|13-REPOSITORIES]] — 13-REPOSITORIES
+- **Directory:** `13-REPOSITORIES/` (2 notes)
+- **Gateway Note:** [[13-REPOSITORIES/README]]
 
-### [[24-CUSTOMERS]]
-**ID:** DOM-24 | **Tags:** #customers #BASE #CRM  
-**Purpose:** Customer registry (BASE entity), HubSpot/Supabase sync  
-**Links to:** [[23-VENTURES]], [[25-SALES]], [[26-SUPPORT]]
+### [[14-CAPABILITIES/README|14-CAPABILITIES]] — Capabilities Registry
+- **Directory:** `14-CAPABILITIES/` (303 notes)
+- **Gateway Note:** [[14-CAPABILITIES/README]]
 
-### [[25-SALES]]
-**ID:** DOM-25 | **Tags:** #sales #revenue #execution  
-**Purpose:** Sales pipeline, deal management, revenue loops  
-**Links to:** [[24-CUSTOMERS]], [[26-SUPPORT]], [[43-OUTCOMES]]
+### [[15-SKILLS/README|15-SKILLS]] — 15-SKILLS — Master Skill & Persona Runbook Fleet
+- **Directory:** `15-SKILLS/` (2 notes)
+- **Gateway Note:** [[15-SKILLS/README]]
 
-### [[26-SUPPORT]]
-**ID:** DOM-26 | **Tags:** #support #operations  
-**Purpose:** Customer support operations  
-**Links to:** [[24-CUSTOMERS]], [[25-SALES]]
+### [[16-AGENTS/README|16-AGENTS]] — 16-AGENTS: Routing & Execution Agents
+- **Directory:** `16-AGENTS/` (21 notes)
+- **Gateway Note:** [[16-AGENTS/README]]
 
-### [[27-SECURITY]]
-**ID:** DOM-27 | **Tags:** #security #governance #permissions  
-**Purpose:** Security policies, permissions, access control  
-**Links to:** [[52-PEOPLE]], [[20-DECISIONS]], [[46-GOVERNANCE]]
+### [[17-MODELS/README|17-MODELS]] — Models
+- **Directory:** `17-MODELS/` (2 notes)
+- **Gateway Note:** [[17-MODELS/README]]
 
-### [[28-PRODUCT]]
-**ID:** DOM-28 | **Tags:** #product #roadmap #features  
-**Purpose:** Product roadmap, feature specifications, user experience  
-**Links to:** [[23-VENTURES]], [[24-FINANCE]], [[56-ENGINEERING/INFRASTRUCTURE/INFRASTRUCTURE|INFRASTRUCTURE]]
+### [[18-TOOLS/README|18-TOOLS]] — 18-TOOLS
+- **Directory:** `18-TOOLS/` (2 notes)
+- **Gateway Note:** [[18-TOOLS/README]]
 
-### [[29-EXTERNAL-SYSTEMS]]
-**ID:** DOM-29 | **Tags:** #integrations #third-party  
-**Purpose:** External service integrations  
-**Links to:** [[56-ENGINEERING/INFRASTRUCTURE/INFRASTRUCTURE|INFRASTRUCTURE]]
+### [[19-ORCHESTRATION/README|19-ORCHESTRATION]] — Orchestration
+- **Directory:** `19-ORCHESTRATION/` (2 notes)
+- **Gateway Note:** [[19-ORCHESTRATION/README]]
 
-### [[30-SECTORS]]
-**ID:** DOM-30 | **Tags:** #sectors #organization  
-**Purpose:** Sector management (see [[00-CONSTITUTION/SECTOR-TAXONOMY-MASTER]] for canonical)  
-**Links to:** [[00-CONSTITUTION]], [[23-VENTURES]], [[16-AGENTS]]
+### [[20-DECISIONS/README|20-DECISIONS]] — 20-DECISIONS
+- **Directory:** `20-DECISIONS/` (33 notes)
+- **Gateway Note:** [[20-DECISIONS/README]]
 
-### [[31-CONTROL-PLANES]]
-**ID:** DOM-31 | **Tags:** #control-planes #execution  
-**Purpose:** Sector control planes, execution routing  
-**Links to:** [[16-AGENTS]], [[00-CONSTITUTION]], [[_REGISTRIES/control-planes-by-sector]]
+### [[21-POLICY/README|21-POLICY]] — 21-POLICY
+- **Directory:** `21-POLICY/` (2 notes)
+- **Gateway Note:** [[21-POLICY/README]]
 
-### [[32-PARTNERSHIPS]]
-**ID:** DOM-32 | **Tags:** #partnerships #ecosystem  
-**Purpose:** Partner management, ecosystems  
-**Links to:** [[24-CUSTOMERS]]
+### [[22-EXECUTION/README|22-EXECUTION]] — 22-EXECUTION
+- **Directory:** `22-EXECUTION/` (3 notes)
+- **Gateway Note:** [[22-EXECUTION/README]]
 
-### [[33-RESOURCES]]
-**ID:** DOM-33 | **Tags:** #resources #allocation  
-**Purpose:** Resource allocation, capacity planning  
-**Links to:** [[21-PROJECTS]], [[22-TASKS]]
+### [[22-VENTURES/README|22-VENTURES]] — 22-VENTURES
+- **Directory:** `22-VENTURES/` (2 notes)
+- **Gateway Note:** [[22-VENTURES/README]]
 
-### [[34-BUDGET]]
-**ID:** DOM-34 | **Tags:** #budget #finance #costs  
-**Purpose:** Budget management, cost tracking  
-**Links to:** [[13-LOOPS]], [[43-OUTCOMES]]
+### [[23-VENTURES/README|23-VENTURES]] — 23-VENTURES — Autonomous Venture Portfolio & Lifecycle
+- **Directory:** `23-VENTURES/` (325 notes)
+- **Gateway Note:** [[23-VENTURES/README]]
 
-### [[35-EVENTS]]
-**ID:** DOM-35 | **Tags:** #events #webhooks #triggers  
-**Purpose:** Event streams, webhooks, triggers  
-**Links to:** [[13-LOOPS]], [[19-ORCHESTRATION]]
+### [[24-FINANCE/README|24-FINANCE]] — 24-FINANCE
+- **Directory:** `24-FINANCE/` (2 notes)
+- **Gateway Note:** [[24-FINANCE/README]]
 
-### [[36-PARTNERS]]
-**ID:** DOM-36 | **Tags:** #partners #ecosystem  
-**Purpose:** Partner relationships, affiliate management  
-**Links to:** [[32-PARTNERSHIPS]]
+### [[25-SALES/README|25-SALES]] — 25-SALES
+- **Directory:** `25-SALES/` (2 notes)
+- **Gateway Note:** [[25-SALES/README]]
 
----
+### [[26-MARKETING/README|26-MARKETING]] — 26-MARKETING — Commercial GTM, Marketing Intelligence & Campaigns
+- **Directory:** `26-MARKETING/` (2 notes)
+- **Gateway Note:** [[26-MARKETING/README]]
 
-## LEARNING LAYER (37-50)
+### [[27-CUSTOMERS/README|27-CUSTOMERS]] — 27-CUSTOMERS
+- **Directory:** `27-CUSTOMERS/` (2 notes)
+- **Gateway Note:** [[27-CUSTOMERS/README]]
 
-### [[37-RESEARCH]]
-**ID:** DOM-37 | **Tags:** #research #discovery  
-**Purpose:** Research outputs, learning, insights  
-**Links to:** [[40-ANALYSIS]], [[45-EVOLUTION]]
+### [[28-PRODUCT/README|28-PRODUCT]] — 28-PRODUCT
+- **Directory:** `28-PRODUCT/` (2 notes)
+- **Gateway Note:** [[28-PRODUCT/README]]
 
-### [[38-DOCUMENTATION]]
-**ID:** DOM-38 | **Tags:** #documentation #guides  
-**Purpose:** System documentation, guides, runbooks  
-**Links to:** [[00-CONSTITUTION]], [[09-KNOWLEDGE]]
+### [[29-OPERATIONS/README|29-OPERATIONS]] — 29-OPERATIONS
+- **Directory:** `29-OPERATIONS/` (2 notes)
+- **Gateway Note:** [[29-OPERATIONS/README]]
 
-### [[39-FEEDBACK]]
-**ID:** DOM-39 | **Tags:** #feedback #learning  
-**Purpose:** Feedback loops, user feedback  
-**Links to:** [[43-OUTCOMES]], [[45-EVOLUTION]]
+### [[30-HR/README|30-HR]] — 30-HR
+- **Directory:** `30-HR/` (2 notes)
+- **Gateway Note:** [[30-HR/README]]
 
-### [[40-ANALYSIS]]
-**ID:** DOM-40 | **Tags:** #analysis #metrics  
-**Purpose:** Analysis, metrics, dashboards  
-**Links to:** [[37-RESEARCH]], [[43-OUTCOMES]]
+### [[31-LEGAL/README|31-LEGAL]] — 31-LEGAL
+- **Directory:** `31-LEGAL/` (2 notes)
+- **Gateway Note:** [[31-LEGAL/README]]
 
-### [[41-REPORTING]]
-**ID:** DOM-41 | **Tags:** #reporting #visibility  
-**Purpose:** Reports, executive summaries  
-**Links to:** [[40-ANALYSIS]], [[43-OUTCOMES]]
+### [[32-SECURITY/README|32-SECURITY]] — 32-SECURITY
+- **Directory:** `32-SECURITY/` (3 notes)
+- **Gateway Note:** [[32-SECURITY/README]]
 
-### [[42-PERFORMANCE]]
-**ID:** DOM-42 | **Tags:** #performance #metrics  
-**Purpose:** Performance metrics, KPIs, OKRs  
-**Links to:** [[40-ANALYSIS]], [[43-OUTCOMES]]
+### [[33-COMPLIANCE/README|33-COMPLIANCE]] — 33-COMPLIANCE
+- **Directory:** `33-COMPLIANCE/` (2 notes)
+- **Gateway Note:** [[33-COMPLIANCE/README]]
 
-### [[43-OUTCOMES]]
-**ID:** DOM-43 | **Tags:** #outcomes #results #BASE  
-**Purpose:** Outcomes registry, results tracking (BASE entity)  
-**Links to:** [[10-MEMORY]], [[17-MONITORING]], [[21-PROJECTS]], [[23-VENTURES]], [[40-ANALYSIS]], [[41-REPORTING]], [[42-PERFORMANCE]]
+### [[34-RISK/README|34-RISK]] — 34-RISK
+- **Directory:** `34-RISK/` (2 notes)
+- **Gateway Note:** [[34-RISK/README]]
 
-### [[44-LESSONS]]
-**ID:** DOM-44 | **Tags:** #lessons #learning #retrospectives  
-**Purpose:** Lessons learned, retrospectives, patterns  
-**Links to:** [[37-RESEARCH]], [[45-EVOLUTION]]
+### [[35-ASSETS/README|35-ASSETS]] — 35-ASSETS
+- **Directory:** `35-ASSETS/` (2 notes)
+- **Gateway Note:** [[35-ASSETS/README]]
 
-### [[45-EVOLUTION]]
-**ID:** DOM-45 | **Tags:** #evolution #improvement  
-**Purpose:** System evolution, improvements, upgrades  
-**Links to:** [[39-FEEDBACK]], [[44-LESSONS]]
+### [[36-PARTNERS/README|36-PARTNERS]] — 36-PARTNERS
+- **Directory:** `36-PARTNERS/` (2 notes)
+- **Gateway Note:** [[36-PARTNERS/README]]
 
-### [[46-GOVERNANCE]]
-**ID:** DOM-46 | **Tags:** #governance #policies  
-**Purpose:** Governance policies, workflows, approval chains  
-**Links to:** [[20-DECISIONS]], [[27-SECURITY]], [[52-PEOPLE]]
+### [[37-RESEARCH/README|37-RESEARCH]] — 37-RESEARCH — External Intelligence & Research Layer
+- **Directory:** `37-RESEARCH/` (11 notes)
+- **Gateway Note:** [[37-RESEARCH/README]]
 
-### [[47-COMPLIANCE]]
-**ID:** DOM-47 | **Tags:** #compliance #regulatory  
-**Purpose:** Compliance tracking, regulatory requirements  
-**Links to:** [[46-GOVERNANCE]]
+### [[38-OPPORTUNITIES/README|38-OPPORTUNITIES]] — 38-OPPORTUNITIES
+- **Directory:** `38-OPPORTUNITIES/` (17 notes)
+- **Gateway Note:** [[38-OPPORTUNITIES/README]]
 
-### [[48-AUDIT]]
-**ID:** DOM-48 | **Tags:** #audit #tracking  
-**Purpose:** Audit logs, compliance audit  
-**Links to:** [[10-MEMORY]], [[47-COMPLIANCE]]
+### [[39-EXPERIMENTS/README|39-EXPERIMENTS]] — 39-EXPERIMENTS
+- **Directory:** `39-EXPERIMENTS/` (2 notes)
+- **Gateway Note:** [[39-EXPERIMENTS/README]]
 
-### [[49-VERSIONING]]
-**ID:** DOM-49 | **Tags:** #versioning #lifecycle  
-**Purpose:** Version management, schema versioning  
-**Links to:** [[45-EVOLUTION]]
+### [[40-METRICS/README|40-METRICS]] — 40-METRICS
+- **Directory:** `40-METRICS/` (2 notes)
+- **Gateway Note:** [[40-METRICS/README]]
 
-### [[50-MASTER-CONTROL]]
-**ID:** DOM-50 | **Tags:** #master #control #governance  
-**Purpose:** Master control point, system oversight, final authority  
-**Links to:** [[00-CONSTITUTION]], [[46-GOVERNANCE]], [[48-AUDIT]]
+### [[41-OBSERVABILITY/README|41-OBSERVABILITY]] — 41-OBSERVABILITY
+- **Directory:** `41-OBSERVABILITY/` (3 notes)
+- **Gateway Note:** [[41-OBSERVABILITY/README]]
 
----
+### [[42-EVALUATION/README|42-EVALUATION]] — 42-EVALUATION — Master Evaluation & Verification Architecture
+- **Directory:** `42-EVALUATION/` (3 notes)
+- **Gateway Note:** [[42-EVALUATION/README]]
 
-## CRITICAL CONNECTIONS (Today's Wiring)
+### [[43-OUTCOMES/README|43-OUTCOMES]] — 43-OUTCOMES
+- **Directory:** `43-OUTCOMES/` (2 notes)
+- **Gateway Note:** [[43-OUTCOMES/README]]
 
-### Sources → Identity → Sectors → Agents ↔ People
+### [[44-LEARNING/README|44-LEARNING]] — 44-LEARNING
+- **Directory:** `44-LEARNING/` (2 notes)
+- **Gateway Note:** [[44-LEARNING/README]]
 
-```
-[[02-SOURCES]] (MCPs, APIs)
-    ↓
-[[03-INGESTION]] (processing)
-    ↓
-[[06-ENTITY-RESOLUTION]] (deduplication)
-    ↓
-[[01-IDENTITY]] (ventures, people, orgs)
-    ↓
-[[00-CONSTITUTION/SECTOR-TAXONOMY-MASTER]] (36 sectors)
-    ↓
-[[16-AGENTS]] (5 routing agents)
-    ↔
-[[52-PEOPLE]] (managers, approvers)
-```
+### [[45-EVOLUTION/README|45-EVOLUTION]] — 45-EVOLUTION
+- **Directory:** `45-EVOLUTION/` (2 notes)
+- **Gateway Note:** [[45-EVOLUTION/README]]
 
----
+### [[46-GOVERNANCE/README|46-GOVERNANCE]] — 46-GOVERNANCE — System of Record & Change Control
+- **Directory:** `46-GOVERNANCE/` (2 notes)
+- **Gateway Note:** [[46-GOVERNANCE/README]]
 
-## OBSIDIAN VAULT STATUS
+### [[47-DOCUMENTS/README|47-DOCUMENTS]] — 47-DOCUMENTS
+- **Directory:** `47-DOCUMENTS/` (2 notes)
+- **Gateway Note:** [[47-DOCUMENTS/README]]
 
-- ✅ All 50 domains documented
-- ✅ Bidirectional wikilinks active
-- ✅ Graph view shows 300+ nodes, 1,000+ connections
-- ✅ Agent governance layer connected
-- ✅ Revenue loop routing wired
+### [[48-AUTOMATION/README|48-AUTOMATION]] — 48-AUTOMATION
+- **Directory:** `48-AUTOMATION/` (2 notes)
+- **Gateway Note:** [[48-AUTOMATION/README]]
 
----
+### [[49-SYSTEM/README|49-SYSTEM]] — 49-SYSTEM
+- **Directory:** `49-SYSTEM/` (2 notes)
+- **Gateway Note:** [[49-SYSTEM/README]]
 
-**Last Updated:** 2026-09-02 09:00 UTC  
-**Wiring Status:** ✅ COMPLETE  
-**All folders connected. All wikilinks active. Ready for Neo4j activation.**
+### [[50-MASTER-CONTROL/README|50-MASTER-CONTROL]] — Master Control (50-MASTER-CONTROL)
+- **Directory:** `50-MASTER-CONTROL/` (12 notes)
+- **Gateway Note:** [[50-MASTER-CONTROL/README]]
+
+### [[51-CONSTRUCTION/README|51-CONSTRUCTION]] — 51-CONSTRUCTION — Construction & Physical Infrastructure Domain
+- **Directory:** `51-CONSTRUCTION/` (3 notes)
+- **Gateway Note:** [[51-CONSTRUCTION/README]]
+
+### [[52-PEOPLE/README|52-PEOPLE]] — BASE — People
+- **Directory:** `52-PEOPLE/` (4 notes)
+- **Gateway Note:** [[52-PEOPLE/README]]
+
+### [[53-TEAMS/README|53-TEAMS]] — 53-TEAMS — Human & Agent Teams Architecture
+- **Directory:** `53-TEAMS/` (2 notes)
+- **Gateway Note:** [[53-TEAMS/README]]
+
+### [[54-FINANCIAL/README|54-FINANCIAL]] — 54-FINANCIAL — Financial Operations & Corporate Capital Domain
+- **Directory:** `54-FINANCIAL/` (3 notes)
+- **Gateway Note:** [[54-FINANCIAL/README]]
+
+### [[55-LOOP-ENGINEERING/README|55-LOOP-ENGINEERING]] — 55-LOOP-ENGINEERING Directory Map
+- **Directory:** `55-LOOP-ENGINEERING/` (5 notes)
+- **Gateway Note:** [[55-LOOP-ENGINEERING/README]]
+
+### [[56-ENGINEERING/README|56-ENGINEERING]] — 56-ENGINEERING Directory Map
+- **Directory:** `56-ENGINEERING/` (268 notes)
+- **Gateway Note:** [[56-ENGINEERING/README]]
+
+### [[57-CODE-INTELLIGENCE/README|57-CODE-INTELLIGENCE]] — 57-CODE-INTELLIGENCE — Semantic Code Graph & AST Intelligence Domain
+- **Directory:** `57-CODE-INTELLIGENCE/` (3 notes)
+- **Gateway Note:** [[57-CODE-INTELLIGENCE/README]]
+
+### [[58-LOGISTICS/README|58-LOGISTICS]] — 58-LOGISTICS — Supply Chain, Transport & Hardware Logistics Domain
+- **Directory:** `58-LOGISTICS/` (3 notes)
+- **Gateway Note:** [[58-LOGISTICS/README]]
+
+### [[59-MCP/README|59-MCP]] — 59-MCP — Model Context Protocol Tool Registry
+- **Directory:** `59-MCP/` (2 notes)
+- **Gateway Note:** [[59-MCP/README]]
+
+### [[60-APIS/README|60-APIS]] — 60-APIS — Graph API Endpoint
+- **Directory:** `60-APIS/` (4 notes)
+- **Gateway Note:** [[60-APIS/README]]
+
+### [[61-KNOWLEDGE-SOURCES/README|61-KNOWLEDGE-SOURCES]] — 61-KNOWLEDGE-SOURCES — External Knowledge & Source Ingestion
+- **Directory:** `61-KNOWLEDGE-SOURCES/` (2 notes)
+- **Gateway Note:** [[61-KNOWLEDGE-SOURCES/README]]
+
+### [[62-TECHNOLOGY/README|62-TECHNOLOGY]] — 62-TECHNOLOGY — Frontier Technology, Systems & Hardware Architecture Domain
+- **Directory:** `62-TECHNOLOGY/` (3 notes)
+- **Gateway Note:** [[62-TECHNOLOGY/README]]
+
+### [[63-CHANGE-MANAGEMENT/README|63-CHANGE-MANAGEMENT]] — 63-CHANGE-MANAGEMENT — Organizational Change & Adaptation
+- **Directory:** `63-CHANGE-MANAGEMENT/` (2 notes)
+- **Gateway Note:** [[63-CHANGE-MANAGEMENT/README]]
+
+### [[64-RELATIONSHIPS/README|64-RELATIONSHIPS]] — 64-RELATIONSHIPS — Entity Relationship & Counterparty Graph
+- **Directory:** `64-RELATIONSHIPS/` (2 notes)
+- **Gateway Note:** [[64-RELATIONSHIPS/README]]
+
+### [[65-SYNERGIES/README|65-SYNERGIES]] — 65-SYNERGIES — Inter-Venture Synergies & Shared Services
+- **Directory:** `65-SYNERGIES/` (2 notes)
+- **Gateway Note:** [[65-SYNERGIES/README]]
+
+### [[66-OPPORTUNITIES-ALT/README|66-OPPORTUNITIES-ALT]] — 66-OPPORTUNITIES-ALT — Alternative Investment & Growth Opportunities
+- **Directory:** `66-OPPORTUNITIES-ALT/` (2 notes)
+- **Gateway Note:** [[66-OPPORTUNITIES-ALT/README]]
+
+### [[67-EVOLUTION-ALT/README|67-EVOLUTION-ALT]] — 67-EVOLUTION-ALT — System Evolution & Meta-Learning
+- **Directory:** `67-EVOLUTION-ALT/` (2 notes)
+- **Gateway Note:** [[67-EVOLUTION-ALT/README]]
+
+### [[90-EXECUTION/README|90-EXECUTION]] — 90-EXECUTION — High-Priority Tactical Execution
+- **Directory:** `90-EXECUTION/` (3 notes)
+- **Gateway Note:** [[90-EXECUTION/README]]
+

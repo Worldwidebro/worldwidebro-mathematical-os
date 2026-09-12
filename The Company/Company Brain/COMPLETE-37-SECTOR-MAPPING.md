@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[00-CONSTITUTION/SECTOR-TAXONOMY-MASTER|Sector Taxonomy]] | [[INDEX]]
+
 # Complete 37-Sector Mapping: 789 Ventures Properly Distributed
 
 **Status:** ✅ Complete with All Groupings Broken Down  

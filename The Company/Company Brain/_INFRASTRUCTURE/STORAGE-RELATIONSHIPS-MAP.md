@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[_INFRASTRUCTURE/README|Infrastructure Hub]] | [[CLAUDE]]
+
 # Storage Relationships & Cross-Machine Access Map
 
 **Status:** 2026-09-11 Implementation  

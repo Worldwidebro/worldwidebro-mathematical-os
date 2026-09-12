@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[_INFRASTRUCTURE/README|Infrastructure Hub]] | [[CLAUDE]]
+
 ---
 id: INFRA-IMPLEMENTATION-STATUS
 title: "Infrastructure Implementation Status & Service Reality"

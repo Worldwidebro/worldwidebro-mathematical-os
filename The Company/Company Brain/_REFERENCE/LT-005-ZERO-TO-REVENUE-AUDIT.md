@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[_REFERENCE/README|Reference Index]] | [[REALITY]]
+
 # LT-005: ZERO-TO-REVENUE VENTURE AUDIT
 **Venture:** HealthRoute Medical Courier  
 **Audit Date:** 2026-09-10  

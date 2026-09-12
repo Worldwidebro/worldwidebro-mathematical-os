@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[20-DECISIONS/README|Decisions Index]] | [[REALITY]]
+
 # CommandCenter Real Data Wiring — COMPLETE ✅
 
 **Feature:** Replace hardcoded mock arrays with live Supabase queries  

@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[08-REVENUE|Sales Loops]] | [[INDEX]]
+
 # Sales Division Loop — Building Outbound Motions (Sep 10)
 
 **Authority:** Sales Division (sales-outbound-strategist + sales-deal-strategist)  

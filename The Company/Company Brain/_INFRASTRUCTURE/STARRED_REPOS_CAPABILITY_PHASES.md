@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[_INFRASTRUCTURE/README|Infrastructure Hub]] | [[CLAUDE]]
+
 ---
 id: INFRA-STARRED_REPOS_CAPABILITY_PHASES
 title: "Starred Repositories Capability Rollout Phases"

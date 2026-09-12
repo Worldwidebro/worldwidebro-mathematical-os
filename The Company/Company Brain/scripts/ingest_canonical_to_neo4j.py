@@ -26,7 +26,9 @@ SITES_FILE = WORKSPACE / "_REGISTRIES/CANONICAL/SITES_REGISTRY.yaml"
 CAPS_FILE = WORKSPACE / "_REGISTRIES/CANONICAL/CAPABILITY_REGISTRY.yaml"
 
 NEO4J_URI = "bolt://100.87.214.70:7687"
-NEO4J_AUTH = ("neo4j", "ventures2026")
+import os
+pwd = os.environ.get("NEO4J_PASSWORD", "changeme")
+NEO4J_AUTH = ("neo4j", pwd)
 
 def main():
     print("Connecting to Neo4j...")

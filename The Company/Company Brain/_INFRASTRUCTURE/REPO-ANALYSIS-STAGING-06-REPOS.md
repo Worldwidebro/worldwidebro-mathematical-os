@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[_INFRASTRUCTURE/README|Infrastructure Hub]] | [[CLAUDE]]
+
 ---
 id: INFRA-REPO-ANALYSIS-001
 title: "Repository Analysis — 6 Strategic Repositories Staged on [[_INFRASTRUCTURE/DEVICE-STORAGE-TOPOLOGY|T7 Shield]]"

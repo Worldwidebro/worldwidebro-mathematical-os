@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[20-DECISIONS/README|Decisions Index]] | [[REALITY]]
+
 # PATH 1 ORCHESTRATION EXECUTION LOG — Sep 9, 2026
 
 **Execution Time:** 3:10 PM - 3:20 PM EDT  

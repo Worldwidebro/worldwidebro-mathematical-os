@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[AGENTS.md]] | [[ANTIGRAVITY.md]]
+
 # Workflow: Repository Audit (`/repository-audit`)
 
 **Objective:** Audit owned or external repositories to extract manifests, verify code reality, and update canonical registries.

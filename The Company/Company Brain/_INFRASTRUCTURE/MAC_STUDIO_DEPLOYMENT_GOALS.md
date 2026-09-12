@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[_INFRASTRUCTURE/README|Infrastructure Hub]] | [[CLAUDE]]
+
 # Mac Studio Deployment Goals & Execution Plan
 
 **To: Mac Studio (100.87.214.70 via Tailscale)**  

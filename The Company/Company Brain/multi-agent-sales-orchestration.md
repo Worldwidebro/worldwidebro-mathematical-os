@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[19-ORCHESTRATION|Sales Multi-Agent Loop]] | [[INDEX]]
+
 # MULTI-AGENT SALES ORCHESTRATION (Sep 9-14)
 **Five-Venture Parallel Revenue Activation via Agent Teams**
 

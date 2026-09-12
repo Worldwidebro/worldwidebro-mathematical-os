@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[AGENTS.md]] | [[ANTIGRAVITY.md]]
+
 # Workflow: Deploy (`/deploy`)
 
 **Objective:** Safely deploy services, databases, or configuration updates to Mac Studio or cloud endpoints.

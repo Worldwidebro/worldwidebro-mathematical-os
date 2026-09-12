@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[01-IDENTITY|Identity Career Graph]] | [[INDEX]]
+
 # WHO I AM: Career Graph & Intelligent Resume
 
 **Status:** Building (2026-09-11)  

@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+# scripts/compact_context
+# Wrapper around Headroom CLI for context optimization and token savings.
+
+export PATH="$HOME/.local/bin:$PATH"
+
+if ! command -v headroom >/dev/null 2>&1; then
+  echo "Error: headroom is not found in PATH" >&2
+  exit 1
+fi
+
+case "$1" in
+  doctor)
+    exec headroom doctor
+    ;;
+  savings)
+    exec headroom savings
+    ;;
+  audit)
+    shift
+    exec headroom audit-reads "$@"
+    ;;
+  mcp)
+    exec headroom mcp
+    ;;
+  *)
+    echo "Usage: ./scripts/compact_context [doctor|savings|audit|mcp]"
+    echo "Runs Headroom context optimization and token compaction layer."
+    exit 0
+    ;;
+esac

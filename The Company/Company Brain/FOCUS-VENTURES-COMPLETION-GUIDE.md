@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[BUSINESS-CAPITAL-DATA-ROOM/README|Focus Ventures]] | [[INDEX]]
+
 # 5-VENTURE SITE COMPLETION GUIDE
 **Created**: 2026-09-08  
 **Target**: All 5 sites production-ready and fully functional  

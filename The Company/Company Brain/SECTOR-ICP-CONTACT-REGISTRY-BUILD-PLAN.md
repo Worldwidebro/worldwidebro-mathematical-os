@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[00-CONSTITUTION/SECTOR-TAXONOMY-MASTER|ICP Registry]] | [[INDEX]]
+
 # Sector ICP Contact Registry — Build Plan
 **Start Date**: 2026-09-08  
 **Target Completion**: 2026-09-19 (2 weeks)  

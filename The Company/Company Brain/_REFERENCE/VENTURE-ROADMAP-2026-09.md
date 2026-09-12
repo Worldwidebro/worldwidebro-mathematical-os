@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[_REFERENCE/README|Reference Index]] | [[REALITY]]
+
 # Venture Roadmap — 2026-09-09
 
 ## 7 Tier-1 Ventures Operating ($0 revenue, 0 customers)

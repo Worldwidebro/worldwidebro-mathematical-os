@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[16-AGENTS|Agency Agents]] | [[INDEX]]
+
 # 🤖 Agency Agents Integration with Company Brain
 
 **Authority:** Layer 1 (Interactive) + Layer 2 (Autonomous) + Layer 3 (Scheduled)  

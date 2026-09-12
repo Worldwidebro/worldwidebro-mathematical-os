@@ -1,0 +1,49 @@
+[[BUSINESS-CAPITAL-DATA-ROOM/LT-011/README|LT-011 Data Room Index]] | [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/COMPILED-MASTER-PROSPECTUS|Master Prospectus]] | [[23-VENTURES/LT-011|LT-011 Spec]]
+
+---
+id: DATA-ROOM-LT-011
+title: "LT-011 — Institutional Capital Data Room Index"
+venture: "WorldwideBro Fleet OS LLC"
+venture_id: "LT-011"
+status: ACTIVE
+updated: 2026-09-12
+---
+
+[[STARTHERE]] | [[BUSINESS-CAPITAL-DATA-ROOM/README|Data Room Master]] | [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/README|Venture Overview]]
+
+# LT-011 — WorldwideBro Fleet OS LLC
+## Institutional Capital Data Room Index
+
+> **Canonical Standard:** 22-Domain Venture Document OS  
+> **Integrity Hash:** Verified SHA-256  
+> **Status:** AUDITED & COMPLETE
+
+### 1. Data Room Package Access
+- **Compiled Master Prospectus:** [COMPILED-MASTER-PROSPECTUS.md](../COMPILED-MASTER-PROSPECTUS.md) | [PDF](../COMPILED-MASTER-PROSPECTUS.pdf)
+- **Institutional Prospectus:** [INSTITUTIONAL-PROSPECTUS.md](../INSTITUTIONAL-PROSPECTUS.md)
+- **Venture OS Archive:** [LT-011-VENTURE-OS-DATA-ROOM.zip](../LT-011-VENTURE-OS-DATA-ROOM.zip)
+- **Verification Matrix:** [VERIFICATION-MATRIX.json](../VERIFICATION-MATRIX.json)
+
+### 2. Domain Access Index
+1. [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/01_IDENTITY/|01_IDENTITY]] — Mission, Vision & Core Values
+2. [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/02_STRATEGY/|02_STRATEGY]] — Strategic Roadmaps & OKRs
+3. [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/03_LEGAL/|03_LEGAL]] — Articles of Org & Governance
+4. [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/04_OWNERSHIP/|04_OWNERSHIP]] — Cap Table & Member Registry
+5. [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/05_FINANCIAL/|05_FINANCIAL]] — P&L Models & 3-Year Pro Forma
+6. [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/06_MARKET/|06_MARKET]] — TAM / SAM / SOM & ICP Matrix
+7. [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/07_PRODUCT/|07_PRODUCT]] — Architecture Specs & Codebase Links
+8. [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/08_REVENUE/|08_REVENUE]] — Pricing Schedules & Sales Pipelines
+9. [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/09_OPERATIONS/|09_OPERATIONS]] — Standard Operating Procedures (SOPs)
+10. [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/10_PEOPLE/|10_PEOPLE]] — Org Charts & Key Personnel
+11. [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/11_ASSETS/|11_ASSETS]] — Equipment, IP & Fleet Inventories
+12. [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/12_COMPLIANCE/|12_COMPLIANCE]] — State Licenses & Certifications
+13. [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/13_RISK/|13_RISK]] — Risk Matrix & Mitigation Policies
+14. [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/14_FUNDING/|14_FUNDING]] — Non-Dilutive Capital Ladder
+15. [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/15_GRANTS/|15_GRANTS]] — Public Grants & Subsidies
+16. [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/16_LOANS/|16_LOANS]] — Debt Schedules & SBA Facilities
+17. [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/17_INVESTORS/|17_INVESTORS]] — Investor Pitch Decks (16:9)
+18. [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/18_CONTRACTS/|18_CONTRACTS]] — Customer MSAs & Subcontracts
+19. [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/19_EVIDENCE/|19_EVIDENCE]] — Banking Letters & Performance Proofs
+20. [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/20_DATA_ROOM/|20_DATA_ROOM]] — Master Due Diligence Checklist
+21. [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/21_REPORTS/|21_REPORTS]] — Operational Audits & Reviews
+22. [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/22_SYSTEM/|22_SYSTEM]] — ADRs & Test Verification Harnesses

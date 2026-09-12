@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[20-DECISIONS/README|Decisions Index]] | [[REALITY]]
+
 # Deployment Status — Sep 9, 2026
 
 **FIX #2 & #3 EXECUTION RESULTS**

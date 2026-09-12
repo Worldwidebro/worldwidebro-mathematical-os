@@ -82,7 +82,16 @@ Do not blindly implement requests. First determine:
 > - Prefer **canonical systems** over parallel sources of truth.
 > - Prefer **small verified changes** over large unverified changes.
 
+> [!CRITICAL]
+> **MANDATORY STARRED REPOSITORY SEARCH FOR GAPS & CAPABILITIES:**
+> Whenever any architectural gap, missing capability, workflow requirement, or technical hurdle arises across WorldwideBro / Company Brain:
+> 1. Agents MUST ALWAYS query the **904 Starred Repositories & External Capability Universe** (`_REGISTRIES/EXTERNAL_CAPABILITY_UNIVERSE_INVENTORY.md`, `_REGISTRIES/CANONICAL/UNTAGGED_REPOS.csv`, `_REGISTRIES/CANONICAL/CAPABILITY_REGISTRY.yaml`, `_REGISTRIES/RECONCILIATION_2026_09_01/GITHUB_INVENTORY_MASTER.json`) BEFORE authoring custom solutions.
+> 2. Search for battle-tested tools and engines (e.g., GitNexus, SocratiCode, Repomix, Madge, Graphify, Drizzle, Fastify, Supabase, LiteLLM, OmniRoute).
+> 3. If a starred repository covers $\ge 70\%$ of the gap, integrate, wrap, or adopt it rather than writing bespoke parallel logic.
+> 4. Internal reuse precedence: Owned Codebase Repos (`repos/`) $\to$ 904 Starred Repos $\to$ Canonical Capability Solutions $\to$ Approved External Packages $\to$ Custom Implementation only when no match exists.
+
 ---
+
 
 ## 3. SYSTEM HIERARCHY
 Treat the ecosystem as these layers:
@@ -468,13 +477,13 @@ Every major capability must link directly to a venture or business outcome:
 
 ---
 
-## 34. REUSE FIRST
-Before authoring new code, search:
-1. Existing application code in Company Brain.
-2. The 177 code-backed owned repositories.
-3. Registered capabilities in `_REGISTRIES/CANONICAL/CAPABILITY_REGISTRY.yaml`.
-4. Existing shared components and services.
-5. Starred external repositories for proven libraries.
+## 34. REUSE FIRST — MANDATORY STARRED REPO GAP RESOLUTION
+Before authoring new code, building workflows, or architecting solutions, systematically execute the **5-Step Reuse Verification**:
+1. **Existing Application Code:** Search Company Brain and active code repositories (`repos/callcenter`, `repos/con-001-...`, `repos/lt-005-...`, `repos/lt-011-...`, `repos/ops-staff-001-...`, `repos/re-001-...`).
+2. **Starred Repository Universe (904 Repositories):** Query `_REGISTRIES/EXTERNAL_CAPABILITY_UNIVERSE_INVENTORY.md` and `_REGISTRIES/CANONICAL/UNTAGGED_REPOS.csv` for production-grade open-source tools, AST analyzers, MCP servers, and frameworks before writing custom logic.
+3. **Canonical Capability Matrix:** Match against the 300 canonical capabilities in `14-CAPABILITIES/CAPABILITY_SOLUTION_MATRIX.json` and `_REGISTRIES/CANONICAL/CAPABILITY_REGISTRY.yaml`.
+4. **Owned Codebase Repositories:** Verify against the 177 code-backed owned repositories in `_REGISTRIES/CANONICAL/REPOSITORY_REGISTRY.yaml`.
+5. **Approved External Packages:** Leverage standard npm/pip packages only after confirming no starred repo or internal asset covers the requirement.
 
 ---
 

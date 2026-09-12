@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[08-REVENUE|Growth OS]] | [[INDEX]]
+
 # Growth OS → Marketing Site Deployment
 
 **Current state:**

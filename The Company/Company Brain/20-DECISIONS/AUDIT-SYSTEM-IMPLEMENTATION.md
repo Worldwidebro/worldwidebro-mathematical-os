@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[20-DECISIONS/README|Decisions Index]] | [[REALITY]]
+
 # Audit System Implementation — How to Use Across 789 Ventures
 
 **Purpose:** Apply [[VENTURE-AUDIT-FRAMEWORK|VENTURE-AUDIT-FRAMEWORK.md]] and [[REALITY|00-CONSTITUTION/REALITY.md]] to drive operations, investment decisions, and engineering prioritization

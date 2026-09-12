@@ -185,7 +185,9 @@ updated: 2026-09-06
 
 | Repo / Project | Primary Function | Overlap With | Decision | Priority | Rationale |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **`All-Hands-AI/OpenHands`** | Autonomous software development agent | SWE-agent | **`EVALUATE`** | **P1** | Evaluate for complex multi-file refactoring runs. |
+| **`garrytan/gstack`** | 23-tool opinionated agent engineering roles & publication engine | — | **`ADOPT`** | **P0** | [[_TOOLS/GSTACK|GStack]]: Operational in `_TOOLS/gstack` with `scripts/make-pdf` publication compiler. |
+| **`NousResearch/hermes-agent`** | Autonomous agent operating system & multi-channel gateway | OpenClaw | **`ADOPT`** | **P0** | [[16-AGENTS/HERMES-AGENT|Hermes Agent]]: Verified live v0.21.0, launchd daemon PID 974, Nous Portal + Ollama fallback. |
+| **`All-Hands-AI/OpenHands`** | Autonomous software development agent | SWE-agent | **`ADOPT`** | **P0** | [[16-AGENTS/OPENHANDS|OpenHands]]: Verified live CLI v1.16.0 (`uv tool`). Docker sandbox & `openhands serve` on port :3000. |
 | **`princeton-nlp/SWE-agent`** | Software engineering agent with ACI interface | OpenHands | **`REFERENCE`** | **P2** | Architectural benchmark for agent-computer interfaces. |
 | **`e2b-dev/E2B`** | Secure cloud microVM sandbox for untrusted code execution | Daytona | **`EVALUATE`** | **P1** | Sandbox untrusted code execution when building external venture MVPs. |
 | **`daytonaio/daytona`** | Self-hosted developer environment orchestrator | E2B | **`EVALUATE`** | **P1** | Self-hosted alternative to cloud microVMs on Mac Studio. |
@@ -221,6 +223,21 @@ updated: 2026-09-06
 | **`MadsLorentzen/ai-job-search`** | Job search aggregator & matcher | Application | **`REFERENCE`** | **P2** | Harvest scraping patterns. |
 | **`KnockOutEZ/wigolo`** | Staffing platform workflows | Application | **`REFERENCE`** | **P2** | Workflow reference. |
 | **`block/buzz`** | Hive-mind agent communication protocol | Protocol | **`REFERENCE`** | **P2** | Multi-agent signaling patterns. |
+
+---
+
+### Model Family Evaluation: GLM (Z.ai / Zhipu AI)
+
+> **Architectural Boundary:** GLM through Z.ai API ≠ Local GLM.
+> Cloud API endpoints consume external quotas and violate "zero cloud token" mode. Open-weight GLM must be evaluated against local Apple Silicon unified memory constraints.
+
+| Model / Service | Execution Mode | Role | Weights / Architecture | Hardware Fit (36GB Mac Studio) | Decision | Priority | Rationale |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **`GLM-5.3`** | Cloud API | Flagship complex coding, engineering, long-running agent work | Proprietary (Z.ai BigModel / ZCode) | N/A (Cloud API, 0 RAM) | **`ADOPT_FALLBACK`** | **P1** | Frontier cloud fallback for deep engineering when zero-cloud constraint is relaxed. Consumes cloud quota. |
+| **`GLM-5.3-Flash (Open)`** | Open Weights | Fast agent work + multimodal | 320B total / 18B active (MoE, MIT license) | ❌ DOES NOT FIT (~180GB Q4 RAM needed) | **`EVALUATE`** | **P2** | Evaluated strictly for distributed Exo mesh (5+ nodes) or AirLLM disk-layer sequential offload. SGLang/vLLM/TokenSpeed runtimes. |
+| **`GLM-5.3-Flash (Cloud)`**| Cloud API | Rapid multimodal agent execution | Hosted Z.ai API | N/A (Cloud API, 0 RAM) | **`EVALUATE`** | **P2** | Fast/cheap cloud agent fallback for screenshots, UI audits, and multimodal analysis. |
+| **`CodeGeeX4-ALL-9B`** | Local Weights | Local code generation, completion, and tool use | 9B dense (GLM-4 backbone, Apache 2.0) | ✅ FITS FULLY (5.5GB Q4, 32k ctx) | **`ADOPT_CANDIDATE`** | **P1** | Verified Apple Silicon fit. Runs alongside Qdrant/Neo4j at ~45 tok/sec. Alternative to Qwen2.5-Coder-14B. |
+| **`GLM-4-9B-Chat`** | Local Weights | General reasoning, structured dialogue, long context | 9B dense (Open Weights, 128k context) | ✅ FITS FULLY (5.5GB Q4, 32k ctx) | **`EVALUATE`** | **P2** | Benchmark against Hermes 3 and Qwen2.5 on Mac Studio and MacBook Air. |
 
 ---
 

@@ -1,0 +1,36 @@
+#!/usr/bin/env python3
+"""
+needle_route — Fast intent and function routing classifier for mobile/edge nodes.
+Acts as Tier-0 edge dispatch filter before routing upstream to OmniRoute.
+"""
+
+import sys
+
+LOCAL_FUNCTIONS = {
+    "status": ["status", "health", "uptime", "running"],
+    "dispatch": ["dispatch", "deliver", "courier", "driver", "load"],
+    "capital": ["capital", "investor", "loan", "grant", "prospectus"],
+    "code": ["code", "refactor", "test", "build", "bug"]
+}
+
+def classify(prompt):
+    p_low = prompt.lower()
+    for fn, triggers in LOCAL_FUNCTIONS.items():
+        if any(t in p_low for t in triggers):
+            return fn
+    return "upstream_omniroute"
+
+def main():
+    if len(sys.argv) < 2:
+        print("Usage: needle_route \"<command or query>\"")
+        sys.exit(1)
+
+    prompt = sys.argv[1]
+    intent = classify(prompt)
+    if intent == "upstream_omniroute":
+        print(f"[Needle Tier-0 Edge]: Complex query detected -> Routing to OmniRoute (:20128)")
+    else:
+        print(f"[Needle Tier-0 Edge]: Intent resolved locally -> '{intent}' (0ms cloud latency)")
+
+if __name__ == "__main__":
+    main()

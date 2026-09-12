@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[50-MASTER-CONTROL|Phase 1 Quickstart]] | [[INDEX]]
+
 # PHASE 1 QUICKSTART GUIDE
 **Knowledge Graph Agent Enablement — 3 Capabilities Ready**
 

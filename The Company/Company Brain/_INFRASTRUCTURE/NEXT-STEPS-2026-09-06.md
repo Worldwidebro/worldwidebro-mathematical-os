@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[_INFRASTRUCTURE/README|Infrastructure Hub]] | [[CLAUDE]]
+
 # Next Steps: Company Brain Implementation Roadmap
 
 **Date:** 2026-09-06  

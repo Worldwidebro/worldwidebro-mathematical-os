@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[00-CONSTITUTION|Venture Architecture]] | [[INDEX]]
+
 # 🏛️ Institutional Venture Architecture — 789 Ventures Mapped to Family Office Structure
 
 **Authority:** [[WORLDWIDEBRO-HOLDINGS-MASTER-OPERATING-MANUAL]] | Worldwidebro Family Trust  

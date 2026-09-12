@@ -1,0 +1,215 @@
+id: TOKEN-USAGE-REGISTRY
+title: Canonical Token Usage & Accounting Registry
+version: '1.0'
+authority: Architecture Decision Record (ADR-001) / CP-027
+updated: '2026-09-12T14:27:44.792207+00:00'
+ledger_source: receipts/token_ledger.jsonl
+summary:
+  status: active
+  total_transactions: 7
+  tokens:
+    total_input: 783
+    total_output: 126
+    total_cached: 0
+    total_tokens: 909
+    local_tokens: 909
+    cloud_tokens: 0
+    local_ratio_pct: 100.0
+    tokens_saved_by_compression: 175
+  financial:
+    total_cost_usd: 0.0
+    total_savings_usd: 0.0042
+  ledger_path: /Users/acebless/Documents/The Company/Company Brain/receipts/token_ledger.jsonl
+records:
+- timestamp: '2026-09-08T04:44:52.979810+00:00'
+  task_id: BENCH-PHASE2-001
+  request_type: tool_output
+  model: qwen2.5-coder:14b
+  provider: ollama-local
+  is_local: true
+  tokens:
+    input: 200
+    output: 10
+    cached: 0
+    context: 0
+    total: 210
+    compressed_original: 211
+    compressed_final: 200
+    tokens_saved: 11
+    compression_ratio_pct: 5.21
+  financial:
+    cost_usd: 0.0
+    savings_vs_cloud_usd: 0.00075
+  metadata:
+    scenario: Git Diff & Code Modification
+    mode: rtk
+    latency_ms: 0.171
+- timestamp: '2026-09-08T04:44:52.980320+00:00'
+  task_id: BENCH-PHASE2-002
+  request_type: json_data
+  model: qwen2.5-coder:14b
+  provider: ollama-local
+  is_local: true
+  tokens:
+    input: 83
+    output: 10
+    cached: 0
+    context: 0
+    total: 93
+    compressed_original: 170
+    compressed_final: 83
+    tokens_saved: 87
+    compression_ratio_pct: 51.18
+  financial:
+    cost_usd: 0.0
+    savings_vs_cloud_usd: 0.000399
+  metadata:
+    scenario: Nested JSON API Payload
+    mode: rtk
+    latency_ms: 0.053
+- timestamp: '2026-09-08T04:44:52.980707+00:00'
+  task_id: BENCH-PHASE2-003
+  request_type: prompt
+  model: qwen2.5-coder:14b
+  provider: ollama-local
+  is_local: true
+  tokens:
+    input: 60
+    output: 10
+    cached: 0
+    context: 0
+    total: 70
+    compressed_original: 104
+    compressed_final: 60
+    tokens_saved: 44
+    compression_ratio_pct: 42.31
+  financial:
+    cost_usd: 0.0
+    savings_vs_cloud_usd: 0.00033
+  metadata:
+    scenario: Conversational Agent Instruction
+    mode: caveman
+    latency_ms: 0.221
+- timestamp: '2026-09-08T04:44:52.980820+00:00'
+  task_id: BENCH-PHASE2-004
+  request_type: tool_output
+  model: qwen2.5-coder:14b
+  provider: ollama-local
+  is_local: true
+  tokens:
+    input: 83
+    output: 10
+    cached: 0
+    context: 0
+    total: 93
+    compressed_original: 116
+    compressed_final: 83
+    tokens_saved: 33
+    compression_ratio_pct: 28.45
+  financial:
+    cost_usd: 0.0
+    savings_vs_cloud_usd: 0.000399
+  metadata:
+    scenario: Repetitive Build & Test Logs
+    mode: rtk
+    latency_ms: 0.019
+- usage_id: USG-20260912142744-637052
+  timestamp: '2026-09-12T14:27:44.778889+00:00'
+  machine: Mac-703.lan
+  agent: TokenAuditor
+  application: Company Brain
+  model: qwen2.5-coder:14b
+  provider: ollama-local
+  endpoint: http://127.0.0.1:11434
+  request_id: REQ-637052
+  task_id: AUDIT-TEST-001
+  request_type: provider_audit
+  venture_id: CORP-BRAIN
+  workflow_id: INFRA-EVAL
+  local_or_cloud: LOCAL
+  is_local: true
+  tokens:
+    input: 195
+    output: 25
+    cached: 0
+    context: 0
+    total: 220
+    compressed_original: 0
+    compressed_final: 0
+    tokens_saved: 0
+    compression_ratio_pct: 0.0
+  financial:
+    cost_usd: 0.0
+    savings_vs_cloud_usd: 0.00096
+  latency_ms: 0.0
+  fallback: none
+  status: PASS
+  evidence: 'Validated 7 providers. Ollama local models: []'
+  metadata: {}
+- usage_id: USG-20260912142744-783712
+  timestamp: '2026-09-12T14:27:44.780126+00:00'
+  machine: Mac-703.lan
+  agent: OpenCode
+  application: Company Brain
+  model: nomic-embed-text
+  provider: ollama-local
+  endpoint: http://127.0.0.1:11434
+  request_id: REQ-783712
+  task_id: AUDIT-TEST-003-ZERO-CLOUD
+  request_type: local_coding_inference
+  venture_id: CORP-BRAIN
+  workflow_id: INFRA-EVAL
+  local_or_cloud: LOCAL
+  is_local: true
+  tokens:
+    input: 12
+    output: 16
+    cached: 0
+    context: 0
+    total: 28
+    compressed_original: 0
+    compressed_final: 0
+    tokens_saved: 0
+    compression_ratio_pct: 0.0
+  financial:
+    cost_usd: 0.0
+    savings_vs_cloud_usd: 0.000276
+  latency_ms: 0.0
+  fallback: none
+  status: PASS
+  evidence: 'Inference executed locally via Ollama. Cloud tokens: 0, Cloud cost: $0.00'
+  metadata:
+    zero-cloud: true
+- usage_id: USG-20260912142744-192120
+  timestamp: '2026-09-12T14:27:44.780274+00:00'
+  machine: Mac-703.lan
+  agent: OpenCode
+  application: ops-staff-001
+  model: qwen2.5-coder:14b
+  provider: ollama-local
+  endpoint: http://127.0.0.1:11434
+  request_id: REQ-192120
+  task_id: AUDIT-TEST-006
+  request_type: agent_accounting_verification
+  venture_id: OPS-001
+  workflow_id: WF-STAFFING-DISPATCH
+  local_or_cloud: LOCAL
+  is_local: true
+  tokens:
+    input: 150
+    output: 45
+    cached: 0
+    context: 0
+    total: 195
+    compressed_original: 0
+    compressed_final: 0
+    tokens_saved: 0
+    compression_ratio_pct: 0.0
+  financial:
+    cost_usd: 0.0
+    savings_vs_cloud_usd: 0.001125
+  latency_ms: 0.0
+  fallback: none
+  status: PASS
+  evidence: Complete 10-field agent attribution logged
+  metadata: {}

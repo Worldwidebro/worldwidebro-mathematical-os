@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[20-DECISIONS/SALES-PIPELINE-MASTER-INDEX|Sales Pipeline Index]] | [[23-VENTURES/OPS-001|OPS-001 Spec]] | [[scripts/OPS-001-SALES-COACH|Sales Coach]]
+
 # OPS-001 Sales Pipeline — CareerOps Staffing
 
 **Venture:** OPS-001 (CareerOps) — High-Velocity Staffing Placements  
@@ -191,3 +193,14 @@ When should I follow up?"
 **Critical Path:** Calls today → connections → profiles sent tomorrow → interviews Thu-Fri → closes by Sep 14
 
 Co-Authored-By: Claude Haiku 4.5 <noreply@anthropic.com>
+
+---
+
+## CONNECTED SYSTEMS & WIKI LINKS
+
+- **Pipeline Master Index:** [[20-DECISIONS/SALES-PIPELINE-MASTER-INDEX|SALES-PIPELINE-MASTER-INDEX.md]]
+- **Venture Specification:** [[23-VENTURES/OPS-001|OPS-001 Venture Spec]]
+- **Sales Coach & Script:** [[scripts/OPS-001-SALES-COACH|OPS-001 Sales Coach]]
+- **Social Media & Outreach:** [[VENTURE-SOCIAL-EXECUTION-OPS-001|OPS-001 Social Media Execution]]
+- **Capital Stack Dossier:** [[38-OPPORTUNITIES/CAPITAL_STACK/OPS-001_Staffing_Payroll_Funding_Facility|OPS-001 Capital Stack Dossier]]
+- **Data Room Master Prospectus:** [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/COMPILED-MASTER-PROSPECTUS|OPS-001 Master Prospectus]]

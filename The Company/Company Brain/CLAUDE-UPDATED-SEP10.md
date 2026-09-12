@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[CLAUDE|Claude Updates]] | [[INDEX]]
+
 # CLAUDE.md — Worldwidebro Holdings (Complete Integration)
 
 **Scope:** Master blueprint for all sessions, all projects, all systems.  

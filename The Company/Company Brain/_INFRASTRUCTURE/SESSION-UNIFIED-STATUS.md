@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[_INFRASTRUCTURE/README|Infrastructure Hub]] | [[CLAUDE]]
+
 ---
 id: INFRA-SESSION-UNIFIED-STATUS
 title: "Unified Infrastructure Session Status & Milestone Tracking"

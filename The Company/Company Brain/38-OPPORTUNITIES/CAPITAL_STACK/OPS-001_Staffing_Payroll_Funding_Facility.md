@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[38-OPPORTUNITIES/CAPITAL_STACK/README|Capital Stack Index]] | [[CAPITAL-READINESS-ENGINE]] | [[23-VENTURES/OPS-001|OPS-001 Spec]] | [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/COMPILED-MASTER-PROSPECTUS|Data Room Prospectus]]
+
 # 💼 Capital Readiness Dossier: OPS-001 — CareerOps Staffing & Workforce AI
 
 ```yaml
@@ -86,3 +88,15 @@ DEBT SERVICE COVERAGE RATIO (DSCR)          7.71x          32.51x         104.30
 - [x] **Ontology & Technology Validation:** 12-Layer Labor Market Ontology (`_ONTOLOGY/LABOR_MARKET_ONTOLOGY.md`) and Next.js candidate portal.
 - [x] **Live Verified Repositories:** Codebase verified at `Worldwidebro/ops-staff-001-staffing` and `Worldwidebro/career-ops`.
 - [x] **SBA Community Advantage Application:** Prepared for submission to mission lenders under SSBCI loan guarantee provisions.
+
+---
+
+## 5. Connected Systems & Wiki Links
+
+- **Capital Stack Master Index:** [[38-OPPORTUNITIES/CAPITAL_STACK/README|38-OPPORTUNITIES/CAPITAL_STACK/README.md]]
+- **Venture Specification:** [[23-VENTURES/OPS-001|OPS-001 Venture Spec]]
+- **Data Room Master Prospectus:** [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/COMPILED-MASTER-PROSPECTUS|OPS-001 Master Prospectus]]
+- **Commercial Sales Pipeline:** [[20-DECISIONS/OPS-001-SALES-PIPELINE|OPS-001 Sales Pipeline]]
+- **Capital Readiness Engine:** [[CAPITAL-READINESS-ENGINE|CAPITAL-READINESS-ENGINE.md]]
+- **Multi-Venture Summary:** [[BUSINESS-CAPITAL-DATA-ROOM/5-VENTURE-INTEGRATED-SUMMARY|5-Venture Integrated Summary]]
+- **Canonical Facilities Registry:** [[_REGISTRIES/CANONICAL/CAPITAL_FACILITIES_REGISTRY.yaml]]

@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[_INFRASTRUCTURE/README|Infrastructure Hub]] | [[CLAUDE]]
+
 ---
 id: INFRA-T7-SHIELD-001
 title: "T7 Shield Staging: 7 Strategic Repositories Integration"

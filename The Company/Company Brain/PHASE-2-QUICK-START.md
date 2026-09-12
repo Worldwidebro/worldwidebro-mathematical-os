@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[50-MASTER-CONTROL|Phase 2 Quickstart]] | [[INDEX]]
+
 # PHASE 2 QUICK START INDEX
 **Sep 9-14: Get First Revenue + Wire Everything Together**
 

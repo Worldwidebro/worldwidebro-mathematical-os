@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[20-DECISIONS/README|Decisions Index]] | [[REALITY]]
+
 # VENTURE AUDIT FRAMEWORK — Business Systems Methodology
 
 **Authority:** CP-033 (Execution) + Reality-driven verification  

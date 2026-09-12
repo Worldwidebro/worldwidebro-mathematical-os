@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[_INFRASTRUCTURE/README|Infrastructure Hub]] | [[CLAUDE]]
+
 # Company Brain Architecture — Multi-Layer Platform Design
 
 [[CLAUDE.md]] | [[STARTHERE]] | [[REALITY]]

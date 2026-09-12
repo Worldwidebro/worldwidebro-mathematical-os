@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[50-MASTER-CONTROL|Venture Execution]] | [[INDEX]]
+
 # 5-VENTURE EXECUTION MASTER CHECKLIST
 **Timeline:** Sep 8-30 | **Status:** Execution Phase Active
 

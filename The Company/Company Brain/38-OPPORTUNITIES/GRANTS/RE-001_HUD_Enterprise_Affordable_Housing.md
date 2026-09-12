@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[38-OPPORTUNITIES/GRANTS/README|Grants Index]] | [[_REGISTRIES/CANONICAL/GRANT_OPPORTUNITY_REGISTRY.yaml|Grant Registry]] | [[CAPITAL-READINESS-ENGINE]]
+
 # 🏛️ Grant Action Pack: RE-001 — WorldwideBro Holdings / Affordable Housing Preservation Engine
 
 ```yaml

@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[_INFRASTRUCTURE/README|Infrastructure Hub]] | [[CLAUDE]]
+
 ---
 id: INFRA-EXEC-SUM-20260906
 title: "Execution Summary — Company Brain Phase 1 Initiation"

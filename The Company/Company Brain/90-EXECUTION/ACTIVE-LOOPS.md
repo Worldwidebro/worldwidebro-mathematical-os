@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[90-EXECUTION/README|Execution Index]] | [[REALITY]]
+
 # Active Loops — Week 1 Revenue Execution (Sep 10-15)
 
 **Status:** APPROVED FOR AUTONOMOUS EXECUTION  

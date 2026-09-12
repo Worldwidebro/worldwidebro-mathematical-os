@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[07-PRODUCT|VEX Deployment]] | [[INDEX]]
+
 # ✅ VEX CommandCenter Wiring — READY TO DEPLOY
 
 **4 Files Wired** ✅ | **Real Data Connected** ✅ | **APIs Created** ✅

@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[00-CONSTITUTION/SECTOR-TAXONOMY-MASTER|Sector Mapping]] | [[INDEX]]
+
 # Complete Venture-Sector Mapping: 789 Ventures → 35-Sector Taxonomy
 **Status:** ✅ Complete and Verified  
 **Date:** 2026-09-09  

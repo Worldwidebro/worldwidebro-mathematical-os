@@ -1,0 +1,146 @@
+metadata:
+  last_run: '2026-09-12T13:33:17.919783+00:00'
+  passed: 7
+  failed: 6
+  blocked: 0
+  not_tested: 487
+  storage_target: T7-Shield
+tests:
+  TEST-001:
+    domain: 01_Hardware
+    component: Mac Studio
+    test: Mac Studio boots successfully
+    machine: Studio
+    precondition: Power connected
+    command: uptime
+    expected_result: System uptime > 0
+    actual_result: Execution completed
+    status: PASS
+    evidence: '9:31  up 22 hrs, 1 user, load averages: 3.39 3.17 2.69'
+    timestamp: '2026-09-12T13:31:16.361848+00:00'
+    remediation: null
+  TEST-012:
+    domain: 01_Hardware
+    component: T7 Shield
+    test: T7 Shield mount exists
+    machine: Any
+    precondition: Drive plugged in
+    command: df -h | grep 'T7'
+    expected_result: Mount point exists in /Volumes
+    actual_result: Execution completed
+    status: PASS
+    evidence: /dev/disk4s1     1.8Ti   941Gi   921Gi    51%       1     0  100%   /Volumes/T7
+      Shield
+    timestamp: '2026-09-12T13:31:16.381153+00:00'
+    remediation: Verify USB-C connection and mounting permissions
+  TEST-015:
+    domain: 01_Hardware
+    component: T7 Shield
+    test: T7 read test passes
+    machine: Any
+    precondition: TEST-012 PASS
+    command: dd if=/Volumes/T7/test_read of=/dev/null bs=1m count=100
+    expected_result: Read speed > 500MB/s
+    actual_result: Execution failed
+    status: FAIL
+    evidence: 'dd: /Volumes/T7/test_read: No such file or directory'
+    timestamp: '2026-09-12T13:31:16.387450+00:00'
+    remediation: null
+  TEST-016:
+    domain: 01_Hardware
+    component: T7 Shield
+    test: T7 write test passes
+    machine: Any
+    precondition: TEST-012 PASS
+    command: dd if=/dev/zero of=/Volumes/T7/test_write bs=1m count=100
+    expected_result: Write speed > 500MB/s
+    actual_result: Execution failed
+    status: FAIL
+    evidence: 'dd: /Volumes/T7/test_write: No such file or directory'
+    timestamp: '2026-09-12T13:31:16.391188+00:00'
+    remediation: null
+  TEST-129:
+    domain: 06_Ollama
+    component: API
+    test: Ollama API responds
+    machine: Studio
+    precondition: Ollama daemon running
+    command: curl -s http://localhost:11434/
+    expected_result: Ollama is running
+    actual_result: Execution completed
+    status: PASS
+    evidence: Ollama is running
+    timestamp: '2026-09-12T13:31:16.419639+00:00'
+    remediation: Restart Ollama daemon
+  TEST-051:
+    domain: 03_Network
+    component: Tailscale
+    test: Tailscale installed and running
+    machine: Studio
+    precondition: Tailscale daemon active
+    command: tailscale status
+    expected_result: Tailscale IP listed
+    actual_result: Execution completed
+    status: PASS
+    evidence: "100.121.17.63    aces-macbook-air-1          Worldwidebro@  macOS \
+      \ -                                                       \n100.126.240.124\
+      \  dexterslab                  Worldwidebro@  iOS    -                     \
+      \                                  \n100.126.240.61   divines-imac         \
+      \       Worldwidebro@  macOS  offline, last seen 183d ago                  \
+      \           \n100.110.180.123  ipad-10th-gen-wificellular  Worldwidebro@  iOS\
+      \    offline, last seen 59d ago                              \n100."
+    timestamp: '2026-09-12T13:32:13.438180+00:00'
+    remediation: Install or start Tailscale
+  TEST-062:
+    domain: 09_OmniRoute
+    component: Router
+    test: OmniRoute port 20128 reachable
+    machine: Studio
+    precondition: OmniRoute running
+    command: nc -vz localhost 20128 || curl -s http://localhost:20128
+    expected_result: Connection succeeded
+    actual_result: Execution completed
+    status: PASS
+    evidence: ''
+    timestamp: '2026-09-12T13:32:13.459480+00:00'
+    remediation: Start OmniRoute service
+  TEST-351:
+    domain: 15_Neo4j
+    component: Graph Database
+    test: Neo4j HTTP and Bolt ports open
+    machine: Studio
+    precondition: Docker container running
+    command: nc -vz 100.87.214.70 7687 && nc -vz 100.87.214.70 7474
+    expected_result: Ports open
+    actual_result: Execution completed
+    status: PASS
+    evidence: ''
+    timestamp: '2026-09-12T13:33:17.537250+00:00'
+    remediation: Start Neo4j Docker container
+  TEST-376:
+    domain: 16_Qdrant
+    component: Vector Database
+    test: Qdrant HTTP port 6333 open
+    machine: Studio
+    precondition: Docker container running
+    command: nc -vz 100.87.214.70 6333
+    expected_result: Port 6333 open
+    actual_result: Execution completed
+    status: PASS
+    evidence: ''
+    timestamp: '2026-09-12T13:33:17.560714+00:00'
+    remediation: Start Qdrant Docker container
+  TEST-103:
+    domain: 05_GitHub
+    component: Authentication
+    test: GitHub SSH authentication works
+    machine: Studio
+    precondition: SSH key added to GitHub
+    command: ssh -T -o StrictHostKeyChecking=no git@github.com 2>&1 | grep 'successfully
+      authenticated'
+    expected_result: Successfully authenticated message
+    actual_result: Execution failed
+    status: FAIL
+    evidence: ''
+    timestamp: '2026-09-12T13:33:17.919742+00:00'
+    remediation: Add SSH key to ssh-agent and GitHub

@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[13_ENGINEERING/INFRASTRUCTURE/07_RUNTIME/RUNTIME|OpenWork MCP]] | [[INDEX]]
+
 # OPENWORK-MCP-WRAPPER-DESIGN.md
 **Unit 5: OpenWork MCP Wrapper for HealthRoute Capability Discovery & Execution**
 

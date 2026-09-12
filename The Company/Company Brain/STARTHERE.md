@@ -415,3 +415,11 @@ Agent Enablement via 3 Knowledge Graph Capabilities:
 - **Need operational infrastructure?** → [[_INFRASTRUCTURE/README|Operational Infrastructure & Configuration Hub]]
 - **Need system evaluation & benchmarks?** → [[_EVAL/README|Operational Evaluation Harness & Benchmarking Gateway]]
 - **Need to know what changed?** → [[UPDATE|UPDATE.md]]
+
+---
+
+## The 500 Connectivity Tests
+The **Company Brain** validates its entire structure (Idea → People → Departments → Roles → Artifacts → Tools → Agents → Workflows → Decisions → Product → Customer → Revenue → Feedback) through an executable 500-point testing matrix. This ensures the company architecture operates as one connected graph rather than siloed inventories.
+
+- **[Connectivity Audit Report](file://_TESTS/CONNECTIVITY/CONNECTIVITY_AUDIT.md)**: Human-readable view of all 500 enterprise connectivity tests and their current status.
+- **[Connectivity Test Registry](file://_REGISTRIES/CONNECTIVITY/CONNECTIVITY-TESTS.json)**: Machine-readable JSON testing matrix for automated validation of the enterprise conveyor belt.

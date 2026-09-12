@@ -1,3 +1,14 @@
+---
+id: DOC-WIKI-UPDATES-001
+title: Wiki Link Updates — Agent OS Business Responsibility Framework
+aliases: ["WIKI_LINK_UPDATES_REQUIRED", "Wiki Link Updates", "WIKI-LINK-UPDATES-REQUIRED"]
+tags: [wiki, updates, roadmap, agents, business-responsibility]
+status: ACTIVE
+updated: 2026-09-12
+---
+
+[[STARTHERE]] | [[AGENTS]] | [[START-HERE-AGENTS]] | [[14-CAPABILITIES]] | [[INDEX]]
+
 # Wiki Link Updates — Agent OS Business Responsibility Framework
 
 **Authority:** CP-006 (Agents) + CP-027 (Infrastructure)  

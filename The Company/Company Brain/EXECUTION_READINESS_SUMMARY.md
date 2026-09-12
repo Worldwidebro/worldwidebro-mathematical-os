@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[50-MASTER-CONTROL|Readiness Summary]] | [[INDEX]]
+
 # EXECUTION READINESS SUMMARY — Sep 12-19 PATH B
 
 **Date:** Sep 9, 2026 EOD  

@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[00-CONSTITUTION|Question Framework]] | [[INDEX]]
+
 # 300-Question Venture Intelligence Framework — Completion Report
 
 **Date:** September 8, 2026  

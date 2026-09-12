@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[20-DECISIONS/RE-001-SALES-PIPELINE|Sales Pipeline]] | [[23-VENTURES/RE-001|Venture Spec]]
+
 # RE-001 WorldwideBro Real Estate — Sales Coach
 
 **Product**: Real estate investment syndication (sourcing + investor placement)  

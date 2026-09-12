@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[_REFERENCE/README|Reference Index]] | [[REALITY]]
+
 ---
 id: DOC-RENDER-N8N-001
 title: Render + n8n Self-Hosted Setup Guide

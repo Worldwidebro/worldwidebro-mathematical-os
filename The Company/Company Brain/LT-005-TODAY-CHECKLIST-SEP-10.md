@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[BUSINESS-CAPITAL-DATA-ROOM/LT-005|LT-005 Execution]] | [[INDEX]]
+
 # LT-005: TODAY CHECKLIST (Sep 10, 2026)
 **What You Need to Do RIGHT NOW to Execute Tomorrow**
 

@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[50-MASTER-CONTROL|Task Register]] | [[INDEX]]
+
 # Week 1 Execution — Tasks (Sep 10–15, 2026)
 
 **Master Plan:** [[WEEK1-EXECUTION-PLAN|20-DECISIONS/WEEK1-EXECUTION-PLAN.md]]  

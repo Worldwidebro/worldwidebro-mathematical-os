@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[_INFRASTRUCTURE/README|Infrastructure Hub]] | [[CLAUDE]]
+
 ---
 id: INFRA-PARALLEL-STATUS-001
 title: "Parallel Execution Status — 2026-09-06"

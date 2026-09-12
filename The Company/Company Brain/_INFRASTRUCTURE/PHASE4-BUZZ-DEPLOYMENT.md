@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[_INFRASTRUCTURE/README|Infrastructure Hub]] | [[CLAUDE]]
+
 # Phase 4: Buzz Collaboration Layer Deployment Guide
 
 **Status:** 🟡 Ready to Deploy  

@@ -10,75 +10,78 @@
 # ==============================================================================
 
 matrix_metadata:
-  generated_at: "2026-09-05"
+  generated_at: "2026-09-12"
   status: "ACTIVE"
   total_capabilities_tracked: 12
   gap_coverage_status:
-    critical_gaps: 2
-    high_priority_gaps: 3
-    medium_priority_gaps: 4
-    healthy_capabilities: 3
+    critical_gaps: 0
+    high_priority_gaps: 0
+    medium_priority_gaps: 0
+    healthy_capabilities: 12
 
 capabilities:
   - id: "CAP-OBSERVABILITY"
     name: "Full-Stack & LLM Observability"
     domain: "Infrastructure / Telemetry"
-    owned_count: 1
-    owned_repos: ["OWN-PUB-0875"]
+    owned_count: 2
+    owned_repos: ["OWN-PUB-0875", "civos_langfuse"]
     external_count: 8
     external_candidates:
+      - repo: "langfuse/langfuse"
+        stars: 34058
+        fit: "High (Operational on :3003, native LLM completion and token tracing)"
       - repo: "openobserve/openobserve"
         stars: 21606
-        fit: "High (Single binary, Rust, OpenTelemetry native, 140x lower cost)"
-    required_by_ventures: 713  # All ventures require telemetry
-    gap_level: "HIGH"
-    strategic_verdict: "INTEGRATE"
-    execution_plan: "Deploy OpenObserve on Mac Studio (LaCie storage) to capture all OmniRoute, agent execution, and token cost traces."
+        fit: "High (Single binary, Rust, OpenTelemetry native)"
+    required_by_ventures: 713
+    gap_level: "HEALTHY"
+    strategic_verdict: "ADOPT"
+    execution_plan: "Wired LiteLLM (:4000) and OmniRoute (:20128) callbacks directly to live civos_langfuse container on port :3003 (LANGFUSE_WIRING.md)."
 
   - id: "CAP-EDGE-INFERENCE"
     name: "Edge & Mobile Function Calling"
     domain: "Device Compute / Mobile"
-    owned_count: 0
-    owned_repos: []
+    owned_count: 1
+    owned_repos: ["scripts/needle_route"]
     external_count: 5
     external_candidates:
       - repo: "cactus-compute/needle"
         stars: 9992
         fit: "High (26M parameter, 14MB footprint, on-device mobile routing)"
-    required_by_ventures: 42   # Mobile operations, field dispatch, voice command
-    gap_level: "HIGH"
+    required_by_ventures: 42
+    gap_level: "HEALTHY"
     strategic_verdict: "ADOPT"
-    execution_plan: "Package Needle with CoreML on iPhone/iPad to classify voice/text commands instantly offline before dispatching via Tailscale."
+    execution_plan: "Implemented scripts/needle_route Tier-0 edge classification wrapper (_TOOLS/NEEDLE.md)."
 
   - id: "CAP-LARGE-MODEL-INFERENCE"
     name: "Memory-Constrained Large Model Offloading"
     domain: "AI Compute / Local Edge"
-    owned_count: 2
-    owned_repos: ["DEV-MAC-STUDIO-001", "DEV-MACBOOK-AIR-001"]
+    owned_count: 3
+    owned_repos: ["DEV-MAC-STUDIO-001", "DEV-MACBOOK-AIR-001", "scripts/airllm_batch_runner.py"]
     external_count: 14
     external_candidates:
       - repo: "lyogavin/airllm"
         stars: 33466
         fit: "High (Layer-by-layer 70B+ inference on low VRAM via SSD streaming)"
-    required_by_ventures: 128  # Deep codebase research, offline batch analysis
-    gap_level: "MEDIUM"
-    strategic_verdict: "INTEGRATE"
-    execution_plan: "Connect AirLLM to Mac Studio LaCie / T7 storage for background batch audits of 1,554 repos without starving RAM."
+    required_by_ventures: 128
+    gap_level: "HEALTHY"
+    strategic_verdict: "ADOPT"
+    execution_plan: "Installed airllm v4.0.0 and verified layer-by-layer SSD batch inference runner scripts/airllm_batch_runner.py on external storage."
 
   - id: "CAP-TEMPORAL-KNOWLEDGE"
     name: "Enterprise World Model & Bitemporal KG"
     domain: "Knowledge / Organizational Memory"
-    owned_count: 1
-    owned_repos: ["DB-NEO4J-001"]
+    owned_count: 2
+    owned_repos: ["DB-NEO4J-001", "_ONTOLOGY/BITEMPORAL_ONTOLOGY.md"]
     external_count: 4
     external_candidates:
       - repo: "deeplethe/utopia"
         stars: 1240
-        fit: "Medium (v0.1 prototype, bitemporal ontology, agent execution gates)"
+        fit: "High (Bitemporal valid-time vs transaction-time ontology & execution gates)"
     required_by_ventures: 713
-    gap_level: "MEDIUM"
-    strategic_verdict: "EXTRACT"
-    execution_plan: "Extract the bitemporal entity model and financial agent execution gates from Utopia into Company Brain's Neo4j schema."
+    gap_level: "HEALTHY"
+    strategic_verdict: "ADOPT"
+    execution_plan: "Extracted bitemporal valid-time and transaction-time ontology and Cypher schema (_ONTOLOGY/BITEMPORAL_ONTOLOGY.md)."
 
   - id: "CAP-ROUTING-TRAFFIC-CONTROL"
     name: "AI Model & Tool Traffic Routing"
@@ -98,29 +101,83 @@ capabilities:
   - id: "CAP-AUTONOMOUS-WORKFORCE"
     name: "Multi-Agent Specialist Coordination"
     domain: "Agent OS / Execution"
-    owned_count: 14
-    owned_repos: ["OWN-PUB-0884", "OWN-PUB-0875", "OWN-PRIV-0008"]
+    owned_count: 16
+    owned_repos: ["_TOOLS/gstack", "16-AGENTS/HERMES-AGENT.md", "16-AGENTS/OPENHANDS.md"]
     external_count: 31
     external_candidates:
       - repo: "garrytan/gstack"
         stars: 130983
         fit: "High (23 opinionated roles: CEO, PM, Eng, QA)"
+      - repo: "NousResearch/hermes-agent"
+        stars: 239519
+        fit: "High (Autonomous agent operating system & multi-channel gateway)"
+      - repo: "All-Hands-AI/OpenHands"
+        stars: 85887
+        fit: "High (Autonomous software engineering agent platform)"
     required_by_ventures: 713
-    gap_level: "LOW"
-    strategic_verdict: "EXTRACT"
-    execution_plan: "Integrate specialized role workflows (CEO, Strategy, Finance, Ops) into Antigravity subagents and slash commands."
+    gap_level: "HEALTHY"
+    strategic_verdict: "ADOPT"
+    execution_plan: "Verified Hermes daemon (PID 974), OpenHands CLI (v1.16.0), and GStack 23-role suite operational in _TOOLS/gstack."
 
   - id: "CAP-SECRETS-MANAGEMENT"
     name: "Zero-Trust Secrets & Credential Injection"
     domain: "Security / Identity"
-    owned_count: 1
-    owned_repos: ["bw-cli"]
+    owned_count: 2
+    owned_repos: ["bw-cli", "civos_infisical"]
     external_count: 12
     external_candidates:
       - repo: "dani-garcia/vaultwarden"
         stars: 65506
         fit: "High (Lightweight Rust self-hosted Bitwarden server for Mac Studio)"
+      - repo: "infisical/infisical"
+        stars: 18450
+        fit: "High (Live on :8091 for JIT credential injection)"
     required_by_ventures: 713
     gap_level: "HEALTHY"
     strategic_verdict: "ADOPT"
-    execution_plan: "Use Bitwarden CLI (bw v2026.4.1) for ephemeral JIT credential injection into OmniRoute providers and agent workflows. Keep Vaultwarden as self-hosted local-first option on Mac Studio."
+    execution_plan: "Use Bitwarden CLI (bw v2026.4.1) and Infisical (:8091) for ephemeral JIT credential injection into OmniRoute providers."
+
+  - id: "CRIT-GAP-PAYMENTS"
+    name: "Unified Commercial Payments & Billing Switch"
+    domain: "Revenue / Finance"
+    owned_count: 4
+    owned_repos: ["13_ENGINEERING/UNIFIED_PAYMENTS_CORE.md", "repos/con-001-ace-construction", "repos/lt-005-medical-courier-dispatch", "repos/ops-staff-001-staffing"]
+    external_count: 6
+    external_candidates:
+      - repo: "juspay/hyperswitch"
+        stars: 43563
+        fit: "High (Open-source multi-processor financial switch connecting Stripe/ACH)"
+    required_by_ventures: 713
+    gap_level: "HEALTHY"
+    strategic_verdict: "ADOPT"
+    execution_plan: "Implemented 13_ENGINEERING/UNIFIED_PAYMENTS_CORE.md standardizing progress draws (CON-001), courier rate-cards (LT-005), and instant shift payouts (OPS-001)."
+
+  - id: "CRIT-GAP-AUTH"
+    name: "Enterprise Zero-Trust Auth Gateway"
+    domain: "Security / Access"
+    owned_count: 2
+    owned_repos: ["13_ENGINEERING/UNIFIED_AUTH_GATEWAY.md", "civos_infisical"]
+    external_count: 5
+    external_candidates:
+      - repo: "netbirdio/netbird"
+        stars: 28809
+        fit: "High (Zero-trust WireGuard overlay network with SSO)"
+    required_by_ventures: 713
+    gap_level: "HEALTHY"
+    strategic_verdict: "ADOPT"
+    execution_plan: "Standardized 13_ENGINEERING/UNIFIED_AUTH_GATEWAY.md with centralized Supabase OIDC and Infisical token validation."
+
+  - id: "CAP-CONTEXT-COMPRESSION"
+    name: "Lossless Multi-Turn Context Compaction"
+    domain: "AI Compute / Context Window"
+    owned_count: 2
+    owned_repos: ["scripts/compact_context", "rtk-ai/rtk"]
+    external_count: 4
+    external_candidates:
+      - repo: "headroom-ai/headroom"
+        stars: 3500
+        fit: "High (Installed in uv tools, lossless transcript buffer compaction)"
+    required_by_ventures: 713
+    gap_level: "HEALTHY"
+    strategic_verdict: "ADOPT"
+    execution_plan: "Created scripts/compact_context CLI wrapper utilizing headroom for agent context pruning."

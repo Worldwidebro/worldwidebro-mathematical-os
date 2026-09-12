@@ -21,6 +21,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 RECEIPTS_DIR = BASE_DIR / "receipts"
 LEDGER_FILE = RECEIPTS_DIR / "token_ledger.jsonl"
 
+# Set local offline tiktoken cache directory
+ENCODINGS_DIR = BASE_DIR / "_ENGINE" / "encodings"
+if ENCODINGS_DIR.exists():
+    os.environ["TIKTOKEN_CACHE_DIR"] = str(ENCODINGS_DIR)
+
 # Try importing tiktoken, provide robust fallback if unavailable
 try:
     import tiktoken
@@ -51,7 +56,10 @@ class TokenLedger:
                 try:
                     self._encoders[encoding_name] = tiktoken.encoding_for_model(encoding_name)
                 except Exception:
-                    self._encoders[encoding_name] = tiktoken.get_encoding("cl100k_base")
+                    try:
+                        self._encoders[encoding_name] = tiktoken.get_encoding("cl100k_base")
+                    except Exception:
+                        return None
         return self._encoders.get(encoding_name)
 
     def count_tokens(self, text: str, encoding_name: str = "cl100k_base") -> int:
@@ -76,12 +84,41 @@ class TokenLedger:
         context_tokens: int = 0,
         original_tokens: int = 0,
         compressed_tokens: int = 0,
+        agent: str = "Antigravity",
+        application: str = "Company Brain",
+        endpoint: str = "http://127.0.0.1:11434",
+        machine: Optional[str] = None,
+        venture_id: Optional[str] = None,
+        workflow_id: Optional[str] = None,
+        fallback: Optional[str] = None,
+        latency_ms: float = 0.0,
+        evidence: str = "",
         metadata: Optional[Dict[str, Any]] = None,
     ) -> Dict[str, Any]:
         """Record an atomic token usage transaction in the ledger."""
         now = datetime.now(timezone.utc).isoformat()
-        is_local = provider.lower() in ("ollama", "ollama-local", "mlx", "exo", "local")
+        clean_provider = (provider or "UNKNOWN").strip()
+        clean_endpoint = (endpoint or "UNKNOWN").strip()
         
+        # Determine local vs cloud
+        is_local = clean_provider.lower() in ("ollama", "ollama-local", "mlx", "exo", "local", "airllm")
+        local_or_cloud = "LOCAL" if is_local else "CLOUD"
+        
+        # Enforce the strict connectivity rule:
+        # "Anything showing UNKNOWN PROVIDER, UNKNOWN ENDPOINT, or UNKNOWN TOKEN USAGE
+        # should automatically become a connectivity/observability failure"
+        if clean_provider.upper() == "UNKNOWN" or clean_endpoint.upper() == "UNKNOWN":
+            status = "FAILURE_UNKNOWN_INTERCEPTED"
+        elif not is_local and "zero-cloud" in str(metadata or {}).lower():
+            status = "FAILURE_CLOUD_LEAKAGE"
+        else:
+            status = "PASS"
+
+        # Unique usage transaction ID
+        tx_hash = abs(hash(f"{now}:{task_id}:{model}:{clean_provider}")) % 1000000
+        usage_id = f"USG-{datetime.now(timezone.utc).strftime('%Y%m%d%H%M%S')}-{tx_hash:06d}"
+        req_id = f"REQ-{tx_hash:06d}"
+
         # Calculate tokens saved by compression
         tokens_saved = max(0, original_tokens - compressed_tokens) if original_tokens > 0 else 0
         compression_ratio = (
@@ -105,11 +142,20 @@ class TokenLedger:
             savings_vs_cloud = 0.0
 
         receipt = {
+            "usage_id": usage_id,
             "timestamp": now,
+            "machine": machine or os.uname().nodename,
+            "agent": agent,
+            "application": application,
+            "model": model,
+            "provider": clean_provider,
+            "endpoint": clean_endpoint,
+            "request_id": req_id,
             "task_id": task_id,
             "request_type": request_type,
-            "model": model,
-            "provider": provider,
+            "venture_id": venture_id or "CORP-BRAIN",
+            "workflow_id": workflow_id or "INFRA-EVAL",
+            "local_or_cloud": local_or_cloud,
             "is_local": is_local,
             "tokens": {
                 "input": input_tokens,
@@ -126,6 +172,10 @@ class TokenLedger:
                 "cost_usd": round(cost_usd, 6),
                 "savings_vs_cloud_usd": round(savings_vs_cloud, 6),
             },
+            "latency_ms": round(latency_ms, 2),
+            "fallback": fallback or "none",
+            "status": status,
+            "evidence": evidence or "Verified via TokenLedger BPE counting",
             "metadata": metadata or {},
         }
 
@@ -216,6 +266,40 @@ class TokenLedger:
             "ledger_path": str(self.ledger_file),
         }
 
+    def export_canonical_registry(self, target_file: Optional[Path] = None) -> Path:
+        """Export ledger transactions as canonical TOKEN-USAGE-REGISTRY.yaml."""
+        import yaml
+        target = target_file or (BASE_DIR / "_REGISTRIES" / "CANONICAL" / "TOKEN-USAGE-REGISTRY.yaml")
+        target.parent.mkdir(parents=True, exist_ok=True)
+
+        records = []
+        if self.ledger_file.exists():
+            with open(self.ledger_file, "r", encoding="utf-8") as f:
+                for line in f:
+                    line = line.strip()
+                    if line:
+                        try:
+                            records.append(json.loads(line))
+                        except Exception:
+                            continue
+
+        summary = self.get_summary()
+        registry_data = {
+            "id": "TOKEN-USAGE-REGISTRY",
+            "title": "Canonical Token Usage & Accounting Registry",
+            "version": "1.0",
+            "authority": "Architecture Decision Record (ADR-001) / CP-027",
+            "updated": datetime.now(timezone.utc).isoformat(),
+            "ledger_source": str(self.ledger_file.relative_to(BASE_DIR) if self.ledger_file.is_relative_to(BASE_DIR) else self.ledger_file),
+            "summary": summary,
+            "records": records[-100:]  # Keep latest 100 in canonical YAML snapshot
+        }
+
+        with open(target, "w", encoding="utf-8") as f:
+            yaml.dump(registry_data, f, sort_keys=False, default_flow_style=False)
+
+        return target
+
 
 # Global singleton instance
 ledger = TokenLedger()
@@ -223,6 +307,9 @@ ledger = TokenLedger()
 if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] == "summary":
         print(json.dumps(ledger.get_summary(), indent=2))
+    elif len(sys.argv) > 1 and sys.argv[1] == "export-yaml":
+        p = ledger.export_canonical_registry()
+        print(f"✅ Exported canonical registry to {p}")
     elif len(sys.argv) > 2 and sys.argv[1] == "count":
         text = " ".join(sys.argv[2:])
         tokens = ledger.count_tokens(text)
@@ -231,4 +318,5 @@ if __name__ == "__main__":
         print("Company Brain Token Ledger")
         print("Usage:")
         print("  python3 _ENGINE/token_ledger.py summary")
+        print("  python3 _ENGINE/token_ledger.py export-yaml")
         print("  python3 _ENGINE/token_ledger.py count <text>")

@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[_INFRASTRUCTURE/README|Infrastructure Hub]] | [[CLAUDE]]
+
 # Deployment & Observability Integration Guide
 
 **Status:** All code committed locally. Infrastructure deployment requires user action.  

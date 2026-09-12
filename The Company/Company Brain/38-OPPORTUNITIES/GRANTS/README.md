@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[INDEX]] | [[CAPITAL-READINESS-ENGINE]] | [[_REGISTRIES/CANONICAL/GRANT_OPPORTUNITY_REGISTRY.yaml|Grant Registry]] | [[38-OPPORTUNITIES/CAPITAL_STACK/README|Capital Stack Index]]
+
 # 🏛️ Sovereign Grant & Non-Dilutive Capital Architecture
 
 > *"A grant proposal isn't a form to fill out — it's an argument to win. The funder has a problem they want to solve. Your job is to convince them that your organization, your approach, and your team are the best possible solution to that problem."*  
@@ -15,14 +17,14 @@ All grant initiatives are linked to real, verified, code-bearing repositories an
 
 | Priority / Venture | Venture Name | Target Funder & Agency | Solicitation / Program | Phase I Target | Status | Dossier Link |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **LT-011** | CarrierDispatch / DispatchOS | **USDOT / EPA SmartWay** | DOT SBIR Phase I (`DOT-SBIR-26-01`) | **\$175,000** | 🟢 Ready | [LT-011 Dossier](file:///Users/acebless/Documents/The%20Company/Company%20Brain/38-OPPORTUNITIES/GRANTS/LT-011_DOT_EPA_CarrierDispatch.md) |
-| **LT-005** | HealthRoute Medical Courier | **NIH / HHS (NIMHD / NCATS)** | Omnibus SBIR (`PA-27-100`) | **\$300,000** | 🟢 Ready | [LT-005 Dossier](file:///Users/acebless/Documents/The%20Company/Company%20Brain/38-OPPORTUNITIES/GRANTS/LT-005_NIH_HHS_HealthRoute.md) |
-| **OPS-001** | CareerOps Staffing Operations | **USDOL (ETA) / EDA** | WIOA Demonstration (`ETA-WIOA-26-03`) | **\$350,000** | 🟢 Ready | [OPS-001 Dossier](file:///Users/acebless/Documents/The%20Company/Company%20Brain/38-OPPORTUNITIES/GRANTS/OPS-001_DOL_WIOA_CareerOps.md) |
-| **CON-001** | ACE Construction Workflow OS | **DOE (EERE) / EDA** | DOE SBIR Topic 12a (`DE-FOA-0003120`) | **\$200,000** | 🟢 Ready | [CON-001 Dossier](file:///Users/acebless/Documents/The%20Company/Company%20Brain/38-OPPORTUNITIES/GRANTS/CON-001_DOE_EDA_ACE_Construction.md) |
-| **RE-001** | Holdings Distressed Deal Engine | **HUD / Enterprise Partners** | Section 4 Capacity (`FR-6700-N-07`) | **\$150,000** | 🟢 Ready | [RE-001 Dossier](file:///Users/acebless/Documents/The%20Company/Company%20Brain/38-OPPORTUNITIES/GRANTS/RE-001_HUD_Enterprise_Affordable_Housing.md) |
-| **VEN-001** | Local AI Infrastructure & Audit | **NSF (TIP)** | Next-Gen AI SBIR (`NSF 26-510`) | **\$275,000** | 🟢 Ready | [VEN-001 Dossier](file:///Users/acebless/Documents/The%20Company/Company%20Brain/38-OPPORTUNITIES/GRANTS/VEN-001_NSF_SBIR_Local_AI.md) |
-| **VEN-002** | OmniRoute AI Model Routing | **DOE (ASCR)** | Sustainable AI Computing (`DOE-ASCR-26-02`) | **\$250,000** | 🟢 Ready | [VEN-002 Dossier](file:///Users/acebless/Documents/The%20Company/Company%20Brain/38-OPPORTUNITIES/GRANTS/VEN-002_DOE_OmniRoute_Energy_AI.md) |
-| **VEN-003** | Sovereign Agent Control Plane | **DARPA (I2O) / NIST** | AI Safety & Defense (`DARPA-BAA-26-04`) | **\$350,000** | 🟢 Ready | [VEN-003 Dossier](file:///Users/acebless/Documents/The%20Company/Company%20Brain/38-OPPORTUNITIES/GRANTS/VEN-003_DARPA_NIST_Sovereign_OS.md) |
+| **LT-011** | CarrierDispatch / DispatchOS | **USDOT / EPA SmartWay** | DOT SBIR Phase I (`DOT-SBIR-26-01`) | **\$175,000** | 🟢 Ready | [[LT-011_DOT_EPA_CarrierDispatch.md|LT-011 Dossier]] |
+| **LT-005** | HealthRoute Medical Courier | **NIH / HHS (NIMHD / NCATS)** | Omnibus SBIR (`PA-27-100`) | **\$300,000** | 🟢 Ready | [[LT-005_NIH_HHS_HealthRoute.md|LT-005 Dossier]] |
+| **OPS-001** | CareerOps Staffing Operations | **USDOL (ETA) / EDA** | WIOA Demonstration (`ETA-WIOA-26-03`) | **\$350,000** | 🟢 Ready | [[OPS-001_DOL_WIOA_CareerOps.md|OPS-001 Dossier]] |
+| **CON-001** | ACE Construction Workflow OS | **DOE (EERE) / EDA** | DOE SBIR Topic 12a (`DE-FOA-0003120`) | **\$200,000** | 🟢 Ready | [[CON-001_DOE_EDA_ACE_Construction.md|CON-001 Dossier]] |
+| **RE-001** | Holdings Distressed Deal Engine | **HUD / Enterprise Partners** | Section 4 Capacity (`FR-6700-N-07`) | **\$150,000** | 🟢 Ready | [[RE-001_HUD_Enterprise_Affordable_Housing.md|RE-001 Dossier]] |
+| **VEN-001** | Local AI Infrastructure & Audit | **NSF (TIP)** | Next-Gen AI SBIR (`NSF 26-510`) | **\$275,000** | 🟢 Ready | [[VEN-001_NSF_SBIR_Local_AI.md|VEN-001 Dossier]] |
+| **VEN-002** | OmniRoute AI Model Routing | **DOE (ASCR)** | Sustainable AI Computing (`DOE-ASCR-26-02`) | **\$250,000** | 🟢 Ready | [[VEN-002_DOE_OmniRoute_Energy_AI.md|VEN-002 Dossier]] |
+| **VEN-003** | Sovereign Agent Control Plane | **DARPA (I2O) / NIST** | AI Safety & Defense (`DARPA-BAA-26-04`) | **\$350,000** | 🟢 Ready | [[VEN-003_DARPA_NIST_Sovereign_OS.md|VEN-003 Dossier]] |
 | **TOTALS** | **8 Pipeline Targets** | **Federal & Philanthropic** | **Non-Dilutive Capital Pipeline** | **\$2,050,000 (Phase I)** | — | **\$8.5M Lifetime Phase II** |
 
 ---
@@ -41,7 +43,7 @@ All grant dossiers strictly adhere to the 10 Critical Rules of the Grant Writer 
 ---
 
 ## 3. Connected Registries
-- **Canonical Registry:** [`_REGISTRIES/CANONICAL/GRANT_OPPORTUNITY_REGISTRY.yaml`](file:///Users/acebless/Documents/The%20Company/Company%20Brain/_REGISTRIES/CANONICAL/GRANT_OPPORTUNITY_REGISTRY.yaml)
-- **Venture Specifications:** [`23-VENTURES/`](file:///Users/acebless/Documents/The%20Company/Company%20Brain/23-VENTURES/)
-- **DispatchOS Contract:** [`_REGISTRIES/CANONICAL/DISPATCH_OS_CANONICAL_CONTRACT.md`](file:///Users/acebless/Documents/The%20Company/Company%20Brain/_REGISTRIES/CANONICAL/DISPATCH_OS_CANONICAL_CONTRACT.md)
+- **Canonical Registry:** [[_REGISTRIES/CANONICAL/GRANT_OPPORTUNITY_REGISTRY.yaml]]
+- **Venture Specifications:** [[23-VENTURES/README|23-VENTURES]]
+- **DispatchOS Contract:** [[_REGISTRIES/CANONICAL/DISPATCH_OS_CANONICAL_CONTRACT|DISPATCH_OS_CANONICAL_CONTRACT.md]]
 - **Labor Market Ontology:** [`_ONTOLOGY/LABOR_MARKET_ONTOLOGY.md`](file:///Users/acebless/Documents/The%20Company/Company%20Brain/_ONTOLOGY/LABOR_MARKET_ONTOLOGY.md)

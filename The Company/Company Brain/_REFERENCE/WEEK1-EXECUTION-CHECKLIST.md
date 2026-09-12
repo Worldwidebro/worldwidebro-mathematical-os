@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[_REFERENCE/README|Reference Index]] | [[REALITY]]
+
 # Week 1 Revenue Execution Checklist (Sep 10-15)
 
 ## Quick Status

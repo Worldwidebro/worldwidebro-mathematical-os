@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[BUSINESS-CAPITAL-DATA-ROOM/LT-005|LT-005 Execution]] | [[INDEX]]
+
 # LT-005: WEEK 1 EXECUTION PLAN (Sep 10-15, 2026)
 **Status:** 🚀 READY TO EXECUTE  
 **Authority:** CP-021 (Revenue), Revenue Division  

@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[_INFRASTRUCTURE/README|Infrastructure Hub]] | [[CLAUDE]]
+
 # Knowledge Graph Harness Architecture
 ## Self-Organizing File System via AI + Neo4j + Obsidian + T7 Shield
 

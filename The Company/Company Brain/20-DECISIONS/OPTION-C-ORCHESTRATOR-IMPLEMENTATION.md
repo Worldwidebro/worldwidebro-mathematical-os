@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[20-DECISIONS/README|Decisions Index]] | [[REALITY]]
+
 # OPTION C: Full MCP Orchestrator — Implementation (Sep 10)
 
 **Status:** Ready to execute Sep 10 morning (50 min setup + 5 min execution)  

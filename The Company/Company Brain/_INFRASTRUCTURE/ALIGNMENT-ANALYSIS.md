@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[_INFRASTRUCTURE/README|Infrastructure Hub]] | [[CLAUDE]]
+
 ---
 id: INFRA-ALIGNMENT-ANALYSIS
 title: "Alignment Analysis: Agency Personas, Homebutton, and Registries"

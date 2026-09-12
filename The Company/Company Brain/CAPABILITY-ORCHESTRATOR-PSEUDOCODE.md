@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[14-CAPABILITIES|Capability Orchestration]] | [[INDEX]]
+
 # CAPABILITY-ORCHESTRATOR-PSEUDOCODE.md
 **Unit 6: Multi-Capability Workflow Orchestrator (Phase 1A Implementation)**
 

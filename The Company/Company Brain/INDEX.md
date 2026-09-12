@@ -1,6 +1,6 @@
 # Company Brain — Master Index
 
-[[STARTHERE]] | [[REALITY]] | [[00_RESPECT/RESPECT|RESPECT]] | [[_MEMORY/MEMORY-OS|MEMORY-OS]] | [[SECTOR_INDEX]] | [[00-CONSTITUTION]] | [[INDEX-DOMAINS-COMPLETE]]
+[[STARTHERE]] | [[REALITY]] | [[00_RESPECT/RESPECT|RESPECT]] | [[_MEMORY/MEMORY-OS|MEMORY-OS]] | [[SECTOR_INDEX]] | [[UNIFIED_REGISTRY]] | [[BUSINESS-CAPITAL-DATA-ROOM/README|DATA-ROOMS]] | [[INDEX-DOMAINS-COMPLETE]]
 
 **A complete organizational intelligence system** — 22-stage cognitive pipeline, 9 fabric layers, 36 entity bases, ~500 control points.
 
@@ -25,7 +25,7 @@ Core ontology, 22-stage cognitive flow, 9 organizational fabrics, and 36 entity 
 ### Core Subsystem Portals
 - **System Directives:** [[DIRECTIVES/README|DIRECTIVES]] — Constitutional, modular agent rules, and tactical directives.
 - **Executive Governance:** [[EXECUTIVES/README|EXECUTIVES]] — Executive truth ledgers, board governance, and sovereign control.
-- **Artificial Intelligence Core:** [[AI-BRAIN/README|AI-BRAIN]] — [[OmniRoute|OMNIROUTE-STATUS]] (289+ models), local MLX models ([[OMNIROUTE-MODELS-ROUTING]]), [[Neo4j]] graph ([[KNOWLEDGE-GRAPH-OMNIROUTE-INTEGRATION]]), and agent fleet.
+- **Artificial Intelligence Core:** [[AI-BRAIN/README|AI-BRAIN]] — [[_INFRASTRUCTURE/OMNIROUTE-MODELS-ROUTING|OMNIROUTE-STATUS]] (289+ models), local MLX models ([[OMNIROUTE-MODELS-ROUTING]]), [[Neo4j]] graph ([[KNOWLEDGE-GRAPH-OMNIROUTE-INTEGRATION]]), and agent fleet.
 - **AI Ventures & Projects:** [[AI-PROJECTS/README|AI-PROJECTS]] — 722 ventures, 7 core OpCos, and 177 code repositories.
 - **Respect Control Layer:** [[00_RESPECT/RESPECT|RESPECT]] — 20 core rules of respect, ethical boundaries, agency, and accountability.
 - **Memory Operating System:** [[_MEMORY/MEMORY-OS|MEMORY-OS]] — 4-tier memory, 10-signal retrieval, and operational prompt stack.
@@ -128,7 +128,7 @@ Canonical registry: 789 ventures, 893 repos, 22 deployments. Neo4j graph ready.
 - [[17-MODELS]] — Registry, performance, costs
 - [[18-TOOLS]] — Registry, MCP, APIs (16 tools registered: TOL-000001 to TOL-000016)
 - [[19-ORCHESTRATION]] — Router, planner, scheduler
-- [[20-LOOPS]] — Continuous work discovery, Loop Engineering
+- [[55-LOOP-ENGINEERING/README|55-LOOP-ENGINEERING]] — Continuous work discovery, Loop Engineering
 - [[22-EXECUTION]] — Jobs, tasks, transactions, agent runs
 
 ---
@@ -206,3 +206,54 @@ Canonical registry: 789 ventures, 893 repos, 22 deployments. Neo4j graph ready.
 - Search (`Cmd+Shift+F`) across all domains
 
 **Last Updated:** 2026-09-01
+
+---
+
+## Autonomous Agent Systems & Engineering Tooling
+
+- [[16-AGENTS/HERMES-AGENT|Hermes Agent OS]] — Nous Research autonomous multi-channel agent gateway (Telegram, Slack, WhatsApp, launchd PID 974).
+- [[16-AGENTS/OPENHANDS|OpenHands SWE Platform]] — Autonomous software development agent (CLI v1.16.0, Docker sandbox isolation, web GUI :3000).
+- [[_TOOLS/GBRAIN|GBrain Memory Graph]] — Garry Tan's persistent agent memory system (PGLite embedded database, `scripts/gbrain`).
+- [[_TOOLS/GSTACK|GStack 23-Role Stack]] — Garry Tan's opinionated team roles (/office-hours, /review, /ship, /qa) and `scripts/make-pdf` publication compiler.
+- [[AGENCY_AGENTS_INTEGRATION]] — 320 specialized domain agents cataloged from agency-agents.
+
+---
+
+## Operational Blueprints & Execution Checkpoints
+
+### Infrastructure & Runtime State
+- [[ACTUAL_SYSTEM_STATE_VERIFICATION]] — Empirical verification of live ports, models, and network state.
+- [[AUDIT_EXISTING_INFRASTRUCTURE]] — Physical, virtual, and cloud infrastructure inventory audit.
+- [[TIER-0-DEPLOYMENT-COMPLETE]] — Core local cluster and container runtime activation.
+- [[TIER-2-DEPLOYMENT-COMPLETE]] — Distributed agent telemetry and monitoring stack.
+- [[SUPABASE-ARCHITECTURE]] — Multi-tenant database schemas and PostgreSQL row-level security.
+- [[WIRING-INTEGRATION-SEP-9]] — Live cross-plane integration map between LiteLLM, OmniRoute, and Neo4j.
+
+### Venture Execution & Revenue Ops
+- [[BUSINESS-CAPITAL-DATA-ROOM/README|Venture Data Rooms]] — 22-domain institutional records for primary operating ventures.
+- [[VENTURE-EXECUTION-MASTER-CHECKLIST]] — Master multi-venture launch and compliance checklist.
+- [[DAY-IN-THE-LIFE-REVENUE-OPERATIONS]] — Step-by-step daily revenue operational procedures.
+- [[REVENUE-EXECUTION-OPS-SEP10]] — Target pipeline and outbound sales execution protocols.
+- [[VENTURE-SOCIAL-EXECUTION-CON-001]] — ACE Construction digital footprint & marketing campaign.
+- [[VENTURE-SOCIAL-EXECUTION-LT-005]] — HealthRoute Logistics medical courier dispatch execution.
+- [[VENTURE-SOCIAL-EXECUTION-LT-011]] — WorldwideBro Fleet OS dispatch growth loop.
+- [[VENTURE-SOCIAL-EXECUTION-OPS-001]] — Staffing Ops talent acquisition and client placement.
+- [[VENTURE-SOCIAL-EXECUTION-RE-001]] — Holdings & real estate asset management strategy.
+
+### Multi-Agent Orchestration & Loops
+- [[agent-orchestration-plan]] — Multi-agent coordination protocols and delegation loops.
+- [[multi-agent-sales-orchestration]] — Automated lead discovery, qualification, and outreach swarm.
+- [[CALLCENTER-OS-EXECUTION-LOCKED]] — Inbound/outbound telephony agent runtime.
+- [[OPENCLAW-IMPLEMENTATION-ROADMAP]] — OpenClaw agent runtime integration and security boundaries.
+- [[WIKI_LINK_UPDATES_REQUIRED]] — Agent OS 33-business responsibility architecture and domain routing.
+
+---
+
+## Sourced Starred Capabilities & Gap Resolutions
+
+- [[13_ENGINEERING/UNIFIED_PAYMENTS_CORE|Unified Payments Core]] — Multi-processor financial switch (`juspay/hyperswitch`, 43k ★) & Stripe integration across CON-001, LT-005, and OPS-001.
+- [[13_ENGINEERING/UNIFIED_AUTH_GATEWAY|Unified Auth Gateway]] — Zero-trust WireGuard overlay (`netbirdio/netbird`, 28k ★) & Infisical JIT token injection.
+- [[13_ENGINEERING/INFRASTRUCTURE/08_OBSERVABILITY/LANGFUSE_WIRING|Langfuse Tracing Wiring]] — Full LLM completion and token observability (`langfuse/langfuse`, 34k ★) active on port :3003.
+- [[_TOOLS/AIRLLM|AirLLM SSD Engine]] — Layer-by-layer 70B+ model streaming from external NVMe storage (`lyogavin/airllm`, 33k ★).
+- [[_TOOLS/NEEDLE|Needle Tier-0 Router]] — 14MB ultra-compact edge intent classifier (`cactus-compute/needle`, 10k ★).
+- [[_ONTOLOGY/BITEMPORAL_ONTOLOGY|Bitemporal Knowledge Graph]] — Valid-time vs. transaction-time audit ontology (`deeplethe/utopia`, 1.2k ★).

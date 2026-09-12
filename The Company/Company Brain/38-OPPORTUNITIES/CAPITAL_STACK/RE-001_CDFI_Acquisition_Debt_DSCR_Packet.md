@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[38-OPPORTUNITIES/CAPITAL_STACK/README|Capital Stack Index]] | [[CAPITAL-READINESS-ENGINE]] | [[23-VENTURES/RE-001|RE-001 Spec]] | [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/COMPILED-MASTER-PROSPECTUS|Data Room Prospectus]]
+
 # 💼 Capital Readiness Dossier: RE-001 — WorldwideBro Holdings / Real Estate Deal Engine
 
 ```yaml
@@ -88,3 +90,15 @@ PORTFOLIO NET EQUITY (Assets - Debt)     $950,000      $3,100,000      $7,800,00
 - [x] **Database & Schema Architecture:** Complete 40-table PostgreSQL schema in `DATABASE_SCHEMA.sql` tracking properties, leases, debt schedules, and maintenance.
 - [x] **CDFI Affordability Compliance Plan:** 60% workforce AMI tenant rent cap covenants drafted.
 - [x] **Contractor Synergy Verification:** Construction and rehabilitation scopes executed directly by `CON-001` (ACE Construction & Contracting LLC).
+
+---
+
+## 5. Connected Systems & Wiki Links
+
+- **Capital Stack Master Index:** [[38-OPPORTUNITIES/CAPITAL_STACK/README|38-OPPORTUNITIES/CAPITAL_STACK/README.md]]
+- **Venture Specification:** [[23-VENTURES/RE-001|RE-001 Venture Spec]]
+- **Data Room Master Prospectus:** [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/COMPILED-MASTER-PROSPECTUS|RE-001 Master Prospectus]]
+- **Commercial Sales Pipeline:** [[20-DECISIONS/RE-001-SALES-PIPELINE|RE-001 Sales Pipeline]]
+- **Capital Readiness Engine:** [[CAPITAL-READINESS-ENGINE|CAPITAL-READINESS-ENGINE.md]]
+- **Multi-Venture Summary:** [[BUSINESS-CAPITAL-DATA-ROOM/5-VENTURE-INTEGRATED-SUMMARY|5-Venture Integrated Summary]]
+- **Canonical Facilities Registry:** [[_REGISTRIES/CANONICAL/CAPITAL_FACILITIES_REGISTRY.yaml]]

@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[_INFRASTRUCTURE/README|Infrastructure Hub]] | [[CLAUDE]]
+
 ---
 id: INFRA-MCP-EDU
 title: "Model Context Protocol (MCP) Servers for Education Integration"

@@ -66,3 +66,7 @@ Layer 8: Business Applications (Sits ON TOP of Infrastructure),career-ops-hq/car
 Layer 8: Business Applications (Sits ON TOP of Infrastructure),MadsLorentzen/ai-job-search,Job search aggregator & matcher,Application,REFERENCE,P2,Harvest scraping patterns.
 Layer 8: Business Applications (Sits ON TOP of Infrastructure),KnockOutEZ/wigolo,Staffing platform workflows,Application,REFERENCE,P2,Workflow reference.
 Layer 8: Business Applications (Sits ON TOP of Infrastructure),block/buzz,Hive-mind agent communication protocol,Protocol,REFERENCE,P2,Multi-agent signaling patterns.
+Model Family: GLM (Z.ai / Zhipu),GLM-5.3,Flagship complex coding & long-horizon agents (Cloud API),BigModel API,ADOPT_FALLBACK,P1,"Frontier cloud fallback for deep engineering when zero-cloud constraint is relaxed. Consumes cloud quota."
+Model Family: GLM (Z.ai / Zhipu),GLM-5.3-Flash (Open),Open-weight fast multimodal agent MoE (320B/18B active),SGLang/vLLM/TokenSpeed,EVALUATE,P2,"DOES NOT FIT 36GB Mac Studio RAM (~180GB Q4). Requires Exo cluster or AirLLM sequential offload."
+Model Family: GLM (Z.ai / Zhipu),CodeGeeX4-ALL-9B,Local code generation & completion (9B dense Apache 2.0),Ollama/MLX,ADOPT_CANDIDATE,P1,"FITS FULLY in 36GB Mac Studio and 16GB MacBook Air (5.5GB Q4). Runs at ~45 tok/sec alongside Qdrant/Neo4j."
+Model Family: GLM (Z.ai / Zhipu),GLM-4-9B-Chat,General reasoning & structured agent dialogue (9B dense),Ollama/MLX,EVALUATE,P2,"FITS FULLY in 36GB Mac Studio and 16GB MacBook Air (5.5GB Q4). Benchmark against Hermes 3 and Qwen2.5."

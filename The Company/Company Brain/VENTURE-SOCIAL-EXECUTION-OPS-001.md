@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001|OPS-001 Staffing Ops]] | [[INDEX]]
+
 # OPS-001: Social Media & Email Execution Plan
 
 **Venture:** Staffing Services (OPS-001) | **Launch:** Sep 18 | **Owner:** [ASSIGN]

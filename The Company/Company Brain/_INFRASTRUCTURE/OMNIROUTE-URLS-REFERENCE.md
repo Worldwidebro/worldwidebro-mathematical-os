@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[_INFRASTRUCTURE/README|Infrastructure Hub]] | [[CLAUDE]]
+
 # OmniRoute URLs & Endpoints Reference
 
 ## 🌐 MAIN DASHBOARD & ACCESS

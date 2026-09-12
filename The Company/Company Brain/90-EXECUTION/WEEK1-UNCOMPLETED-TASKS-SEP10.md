@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[90-EXECUTION/README|Execution Index]] | [[REALITY]]
+
 # Week 1 Uncompleted Tasks — Sep 10 Status Report
 
 **Date:** 2026-09-10  

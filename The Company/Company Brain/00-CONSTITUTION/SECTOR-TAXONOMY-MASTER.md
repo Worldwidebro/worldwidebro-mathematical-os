@@ -2,7 +2,7 @@
 id: DOC-SEC-MASTER-001
 title: 36-Sector Taxonomy Master Index
 description: "Company-wide sector classification organizing ventures, capabilities, resources. Master reference for VEX crosswalk and sector-scoped operations."
-aliases: ["SECTOR-TAXONOMY", "Sector-Taxonomy", "36-Sector-Taxonomy", "Sector-Taxonomy-Master"]
+aliases: ["Sector Taxonomy", "SECTOR-TAXONOMY", "Sector-Taxonomy", "36-Sector-Taxonomy", "Sector-Taxonomy-Master"]
 tags: [sector, taxonomy, governance, master-index]
 status: active
 updated: 2026-09-05

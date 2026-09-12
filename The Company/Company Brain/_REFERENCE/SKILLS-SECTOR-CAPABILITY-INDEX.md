@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[_REFERENCE/README|Reference Index]] | [[REALITY]]
+
 ---
 id: DOC-SKILLS-INDEX-001
 title: Skills Index — Sector, Capability & Venture Connections

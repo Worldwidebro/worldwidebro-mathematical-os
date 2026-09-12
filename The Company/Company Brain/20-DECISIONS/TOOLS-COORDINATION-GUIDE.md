@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[20-DECISIONS/README|Decisions Index]] | [[REALITY]]
+
 # Tools Coordination Guide — How Each Chat Works Together
 
 **Purpose:** Map the workflow for using graft, Playwright, Firecrawl, context7, and Bash to execute audits and build the 789-venture system

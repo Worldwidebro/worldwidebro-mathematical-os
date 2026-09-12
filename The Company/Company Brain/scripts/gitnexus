@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+WORKSPACE_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
+
+# Ensure sandboxed workspace home for GitNexus database & registry
+export HOME="$WORKSPACE_DIR/.gitnexus_env"
+mkdir -p "$WORKSPACE_DIR/.gitnexus_env"
+
+exec gitnexus "$@"

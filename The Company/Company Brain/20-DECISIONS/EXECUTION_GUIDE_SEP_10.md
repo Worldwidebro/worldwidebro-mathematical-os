@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[20-DECISIONS/README|Decisions Index]] | [[REALITY]]
+
 # EXECUTION GUIDE — Sep 10 Morning (50 minutes)
 
 **Timeline:** 7:00 AM - 11:00 AM  

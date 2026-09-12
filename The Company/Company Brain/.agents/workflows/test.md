@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[AGENTS.md]] | [[ANTIGRAVITY.md]]
+
 # Workflow: Test (`/test`)
 
 **Objective:** Run comprehensive testing across static analysis, unit, integration, and E2E suites.

@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[13_ENGINEERING/INFRASTRUCTURE/INFRASTRUCTURE|OSS Strategy]] | [[INDEX]]
+
 # OSS Blocker Solution Strategy
 ## Remove 5 Blockers Using Open Source | Deploy in 30 Days
 

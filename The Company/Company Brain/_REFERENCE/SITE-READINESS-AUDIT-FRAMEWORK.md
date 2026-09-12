@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[_REFERENCE/README|Reference Index]] | [[REALITY]]
+
 # Site Readiness Audit Framework
 
 **Comprehensive audit for all 6 Tier-0 ventures (Week 1 revenue validation)**

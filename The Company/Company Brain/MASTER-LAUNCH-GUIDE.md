@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[50-MASTER-CONTROL|Master Launch Guide]] | [[INDEX]]
+
 # MASTER LAUNCH GUIDE: From Security to Revenue in 3 Weeks
 
 **Created:** 2026-09-09  

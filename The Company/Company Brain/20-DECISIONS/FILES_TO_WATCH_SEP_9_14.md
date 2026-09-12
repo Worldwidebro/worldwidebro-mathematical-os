@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[20-DECISIONS/README|Decisions Index]] | [[REALITY]]
+
 # FILES TO WATCH & UPDATE — Sep 9-14 Revenue Campaign
 
 **Purpose:** Track which files to monitor and update as the revenue campaign progresses Sep 11-14

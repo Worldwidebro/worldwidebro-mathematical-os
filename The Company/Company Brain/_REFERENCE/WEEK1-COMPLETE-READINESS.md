@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[_REFERENCE/README|Reference Index]] | [[REALITY]]
+
 # Week 1 Revenue: Complete Readiness Audit
 
 **Sep 10, 2026 — Everything needed for $1.7K-$7.5K target**

@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[_REFERENCE/README|Reference Index]] | [[REALITY]]
+
 # LT-005 Documents Readiness Audit
 
 **Comprehensive check: Do we have everything needed for Week 1 revenue?**

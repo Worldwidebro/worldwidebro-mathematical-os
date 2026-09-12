@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[_INFRASTRUCTURE/README|Infrastructure Hub]] | [[CLAUDE]]
+
 ---
 id: INFRA-DEPLOYMENT_PHASES
 title: "Infrastructure Deployment Phases Specification"

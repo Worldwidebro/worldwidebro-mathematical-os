@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[AGENTS.md]] | [[ANTIGRAVITY.md]]
+
 # Workflow: Implement (`/implement`)
 
 **Objective:** Execute an approved technical plan with disciplined, atomic, test-driven changes.

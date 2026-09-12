@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[13_ENGINEERING/INFRASTRUCTURE/INFRASTRUCTURE|Infrastructure Audit]] | [[INDEX]]
+
 # 🔍 Infrastructure Audit — What Exists vs. What's Missing
 **Generated:** 2026-09-09  
 **Authority:** Code search + file inventory + running services verification

@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[20-DECISIONS/README|Decisions Index]] | [[REALITY]]
+
 # THREE CRITICAL FIXES — Sep 9, 2026
 
 **Goal:** Hit $2,500 revenue target by Sep 14  

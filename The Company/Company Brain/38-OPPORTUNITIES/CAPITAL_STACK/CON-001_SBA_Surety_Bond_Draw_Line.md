@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[38-OPPORTUNITIES/CAPITAL_STACK/README|Capital Stack Index]] | [[CAPITAL-READINESS-ENGINE]] | [[23-VENTURES/CON-001|CON-001 Spec]] | [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/COMPILED-MASTER-PROSPECTUS|Data Room Prospectus]]
+
 # 💼 Capital Readiness Dossier: CON-001 — ACE Construction & Contracting LLC
 
 ```yaml
@@ -87,3 +89,15 @@ DEBT SERVICE COVERAGE RATIO (DSCR)        2.90x           8.36x          14.98x
 - [x] **Key Contracts & Pipeline:** Commercial consultation fee structure ($299), mobilization agreements ($1,500), and master sub-agreements.
 - [x] **Proof of Insurance:** Commercial General Liability ($2,000,000 aggregate), Workers' Comp ($1,000,000), and Builders Risk umbrella.
 - [x] **Surety Broker Pre-Qualification:** Submission ready for International Fidelity Insurance Co / Travelers for SBA SBG allocation.
+
+---
+
+## 5. Connected Systems & Wiki Links
+
+- **Capital Stack Master Index:** [[38-OPPORTUNITIES/CAPITAL_STACK/README|38-OPPORTUNITIES/CAPITAL_STACK/README.md]]
+- **Venture Specification:** [[23-VENTURES/CON-001|CON-001 Venture Spec]]
+- **Data Room Master Prospectus:** [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/COMPILED-MASTER-PROSPECTUS|CON-001 Master Prospectus]]
+- **Commercial Sales Pipeline:** [[20-DECISIONS/CON-001-SALES-PIPELINE|CON-001 Sales Pipeline]]
+- **Capital Readiness Engine:** [[CAPITAL-READINESS-ENGINE|CAPITAL-READINESS-ENGINE.md]]
+- **Multi-Venture Summary:** [[BUSINESS-CAPITAL-DATA-ROOM/5-VENTURE-INTEGRATED-SUMMARY|5-Venture Integrated Summary]]
+- **Canonical Facilities Registry:** [[_REGISTRIES/CANONICAL/CAPITAL_FACILITIES_REGISTRY.yaml]]

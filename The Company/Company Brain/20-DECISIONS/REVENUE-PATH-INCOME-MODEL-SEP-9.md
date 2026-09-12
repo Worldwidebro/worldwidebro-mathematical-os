@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[20-DECISIONS/README|Decisions Index]] | [[REALITY]]
+
 # Revenue Path — How These 3 Fixes Generate Income (Sep 9-14)
 
 **Direct Revenue:** $2,500–$10,000 by Sep 14  

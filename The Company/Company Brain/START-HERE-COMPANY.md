@@ -20,3 +20,6 @@ Covers corporate identity, 700+ venture catalog, holdings structure, capital all
 1. Always verify runtime facts before making assumptions.
 2. Maintain strict alignment with CP control planes.
 3. Follow the change loop: `DISCOVER -> UNDERSTAND -> VERIFY -> PLAN -> CHANGE -> TEST -> DEPLOY -> OBSERVE -> VERIFY -> DOCUMENT -> UPDATE`.
+
+## System Validation
+- **Connectivity Testing**: The operational integrity of the company is continuously validated via the 500-point Connectivity Matrix. See [[_TESTS/CONNECTIVITY/CONNECTIVITY_AUDIT|CONNECTIVITY_AUDIT.md]] for the health report and [`_REGISTRIES/CONNECTIVITY/CONNECTIVITY-TESTS.json`](file:///Users/acebless/Documents/The%20Company/Company%20Brain/_REGISTRIES/CONNECTIVITY/CONNECTIVITY-TESTS.json) for the registry.

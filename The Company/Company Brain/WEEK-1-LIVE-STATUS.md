@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[50-MASTER-CONTROL|Sprint Reviews]] | [[INDEX]]
+
 # WEEK 1 LIVE STATUS — Sep 10–15, 2026
 
 **Last Updated:** 2026-09-10 13:55 UTC  

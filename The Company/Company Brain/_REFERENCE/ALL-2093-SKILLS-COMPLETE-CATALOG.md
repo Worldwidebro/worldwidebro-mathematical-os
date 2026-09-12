@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[_REFERENCE/README|Reference Index]] | [[REALITY]]
+
 # Complete Catalog of 2,093 Claude Code Skills
 
 **Comprehensive master reference for every available skill**  

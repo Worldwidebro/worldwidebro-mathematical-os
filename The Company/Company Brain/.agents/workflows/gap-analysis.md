@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[AGENTS.md]] | [[ANTIGRAVITY.md]]
+
 # Workflow: Capability Gap Analysis (`/gap-analysis`)
 
 **Objective:** Compare venture requirements and business capabilities against verified internal repository implementations and identify gaps to be filled by external/starred repositories.

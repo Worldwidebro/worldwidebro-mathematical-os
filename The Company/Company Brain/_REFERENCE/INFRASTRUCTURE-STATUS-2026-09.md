@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[_REFERENCE/README|Reference Index]] | [[REALITY]]
+
 # Infrastructure Status — 2026-09-09
 
 **VERIFIED AGAINST:** Live `docker --context macstudio ps` + Tailscale network audit

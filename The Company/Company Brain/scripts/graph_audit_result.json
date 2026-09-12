@@ -1,0 +1,1171 @@
+{
+  "total_files": 4789,
+  "total_edges": 12982,
+  "orphan_count": 2994,
+  "dead_end_count": 2947,
+  "isolated_count": 2767,
+  "top_missing_targets": [
+    [
+      "_REGISTRIES/CANONICAL/CAPABILITY_REGISTRY.yaml",
+      319
+    ],
+    [
+      ":space:",
+      158
+    ],
+    [
+      "_REGISTRIES/infrastructure_registry.json",
+      138
+    ],
+    [
+      "_REGISTRIES/control-planes-by-sector.yaml",
+      105
+    ],
+    [
+      "_REGISTRIES/infrastructure_risk_registry.json",
+      102
+    ],
+    [
+      "_REGISTRIES/infrastructure_dependency_registry.json",
+      82
+    ],
+    [
+      "_REGISTRIES/ventures-by-sector.yaml",
+      77
+    ],
+    [
+      "_REGISTRIES/network_registry.json",
+      75
+    ],
+    [
+      "_REGISTRIES/database_registry.json",
+      59
+    ],
+    [
+      "_REGISTRIES/capabilities-by-sector.yaml",
+      44
+    ],
+    [
+      "_REGISTRIES/compute_registry.json",
+      44
+    ],
+    [
+      "_REGISTRIES/storage_registry.json",
+      41
+    ],
+    [
+      "_REGISTRIES/external-capabilities-by-sector.yaml",
+      34
+    ],
+    [
+      "ventures-by-sector.yaml",
+      20
+    ],
+    [
+      "_REGISTRIES/CANONICAL/EXTERNAL_CAPABILITY_UNIVERSE.yaml",
+      19
+    ],
+    [
+      "_REGISTRIES/agents-by-sector.yaml",
+      19
+    ],
+    [
+      "_REGISTRIES/repositories-by-sector.yaml",
+      16
+    ],
+    [
+      "VEX",
+      15
+    ],
+    [
+      "vex-hero-site/_index",
+      14
+    ],
+    [
+      "_ONTOLOGY/COGNITION_FLOW.yaml",
+      14
+    ],
+    [
+      "_REGISTRIES/CANONICAL/REPOSITORY_REGISTRY.yaml",
+      13
+    ],
+    [
+      "_REGISTRIES/CANONICAL/SITES_REGISTRY.yaml",
+      12
+    ],
+    [
+      "features/loop/steps",
+      12
+    ],
+    [
+      "wikilinks",
+      12
+    ],
+    [
+      "companies/ridge-platform",
+      12
+    ],
+    [
+      "features/_index",
+      11
+    ],
+    [
+      "vex-hero-site/src/_index",
+      10
+    ],
+    [
+      "features/files/_index",
+      10
+    ],
+    [
+      "../../../.gemini/antigravity/brain/967faccb-83a2-4a79-bb59-5a54ffb7969e/family_enterprise_blueprint.md",
+      10
+    ],
+    [
+      "Sector Taxonomy",
+      10
+    ]
+  ],
+  "clusters": {
+    "Brain/_TOOLS": {
+      "files": 1329,
+      "in_links": 2,
+      "out_links": 1,
+      "broken_links": 288
+    },
+    "Brain/repos": {
+      "files": 731,
+      "in_links": 144,
+      "out_links": 193,
+      "broken_links": 1588
+    },
+    "Brain/.agents": {
+      "files": 315,
+      "in_links": 323,
+      "out_links": 870,
+      "broken_links": 18
+    },
+    "Brain/BUSINESS-CAPITAL-DATA-ROOM": {
+      "files": 311,
+      "in_links": 90,
+      "out_links": 114,
+      "broken_links": 32
+    },
+    "Brain/14-CAPABILITIES": {
+      "files": 303,
+      "in_links": 2253,
+      "out_links": 3956,
+      "broken_links": 315
+    },
+    "Brain/CAMPAIGNS": {
+      "files": 291,
+      "in_links": 1071,
+      "out_links": 1117,
+      "broken_links": 34
+    },
+    "Brain/.claude": {
+      "files": 273,
+      "in_links": 0,
+      "out_links": 0,
+      "broken_links": 17
+    },
+    "Brain/56-ENGINEERING": {
+      "files": 268,
+      "in_links": 1798,
+      "out_links": 2181,
+      "broken_links": 543
+    },
+    "Brain Root": {
+      "files": 115,
+      "in_links": 2069,
+      "out_links": 686,
+      "broken_links": 202
+    },
+    "Brain/fractal": {
+      "files": 99,
+      "in_links": 179,
+      "out_links": 192,
+      "broken_links": 373
+    },
+    "Brain/_MCP": {
+      "files": 82,
+      "in_links": 14,
+      "out_links": 15,
+      "broken_links": 8
+    },
+    "Brain/23-VENTURES": {
+      "files": 54,
+      "in_links": 482,
+      "out_links": 63,
+      "broken_links": 188
+    },
+    "Brain/07-ONTOLOGY": {
+      "files": 48,
+      "in_links": 260,
+      "out_links": 347,
+      "broken_links": 116
+    },
+    "Brain/00-CONSTITUTION": {
+      "files": 47,
+      "in_links": 283,
+      "out_links": 194,
+      "broken_links": 165
+    },
+    "Brain/_INFRASTRUCTURE": {
+      "files": 44,
+      "in_links": 99,
+      "out_links": 245,
+      "broken_links": 23
+    },
+    "Brain/SECTORS": {
+      "files": 36,
+      "in_links": 485,
+      "out_links": 328,
+      "broken_links": 174
+    },
+    "Brain/_EVAL": {
+      "files": 34,
+      "in_links": 12,
+      "out_links": 31,
+      "broken_links": 9
+    },
+    "Brain/20-DECISIONS": {
+      "files": 33,
+      "in_links": 26,
+      "out_links": 25,
+      "broken_links": 28
+    },
+    "Brain/_REGISTRIES": {
+      "files": 27,
+      "in_links": 111,
+      "out_links": 180,
+      "broken_links": 38
+    },
+    "Brain/16-AGENTS": {
+      "files": 21,
+      "in_links": 738,
+      "out_links": 112,
+      "broken_links": 60
+    },
+    "Brain/38-OPPORTUNITIES": {
+      "files": 17,
+      "in_links": 15,
+      "out_links": 10,
+      "broken_links": 0
+    },
+    "Brain/_MEMORY": {
+      "files": 16,
+      "in_links": 116,
+      "out_links": 99,
+      "broken_links": 2
+    },
+    "Brain/_REFERENCE": {
+      "files": 15,
+      "in_links": 7,
+      "out_links": 38,
+      "broken_links": 29
+    },
+    "Brain/_PIPELINES": {
+      "files": 14,
+      "in_links": 65,
+      "out_links": 110,
+      "broken_links": 13
+    },
+    "Brain/00_RESPECT": {
+      "files": 13,
+      "in_links": 62,
+      "out_links": 73,
+      "broken_links": 0
+    },
+    "Brain/50-MASTER-CONTROL": {
+      "files": 12,
+      "in_links": 195,
+      "out_links": 151,
+      "broken_links": 13
+    },
+    "Brain/_PROMPTS": {
+      "files": 11,
+      "in_links": 44,
+      "out_links": 54,
+      "broken_links": 0
+    },
+    "Brain/37-RESEARCH": {
+      "files": 11,
+      "in_links": 44,
+      "out_links": 83,
+      "broken_links": 3
+    },
+    "Brain/.planning": {
+      "files": 10,
+      "in_links": 0,
+      "out_links": 43,
+      "broken_links": 2058
+    },
+    "Brain/node": {
+      "files": 9,
+      "in_links": 35,
+      "out_links": 63,
+      "broken_links": 4
+    },
+    "Brain/_TEMPLATES": {
+      "files": 8,
+      "in_links": 35,
+      "out_links": 48,
+      "broken_links": 27
+    },
+    "Brain/09-KNOWLEDGE": {
+      "files": 6,
+      "in_links": 63,
+      "out_links": 76,
+      "broken_links": 12
+    },
+    "Brain/_SYSTEMS": {
+      "files": 6,
+      "in_links": 16,
+      "out_links": 34,
+      "broken_links": 83
+    },
+    "Brain/01-IDENTITY": {
+      "files": 6,
+      "in_links": 19,
+      "out_links": 27,
+      "broken_links": 41
+    },
+    "Brain/scripts": {
+      "files": 6,
+      "in_links": 1,
+      "out_links": 15,
+      "broken_links": 0
+    },
+    "Brain/_ONTOLOGY": {
+      "files": 5,
+      "in_links": 19,
+      "out_links": 29,
+      "broken_links": 12
+    },
+    "Brain/_DOCS": {
+      "files": 5,
+      "in_links": 34,
+      "out_links": 32,
+      "broken_links": 61
+    },
+    "Brain/_IMPLEMENTATION": {
+      "files": 5,
+      "in_links": 0,
+      "out_links": 0,
+      "broken_links": 0
+    },
+    "Brain/55-LOOP-ENGINEERING": {
+      "files": 4,
+      "in_links": 53,
+      "out_links": 45,
+      "broken_links": 0
+    },
+    "Brain/52-PEOPLE": {
+      "files": 4,
+      "in_links": 19,
+      "out_links": 30,
+      "broken_links": 22
+    },
+    "Brain/42-EVALUATION": {
+      "files": 3,
+      "in_links": 34,
+      "out_links": 37,
+      "broken_links": 4
+    },
+    "Brain/32-SECURITY": {
+      "files": 3,
+      "in_links": 21,
+      "out_links": 11,
+      "broken_links": 0
+    },
+    "Brain/58-LOGISTICS": {
+      "files": 3,
+      "in_links": 6,
+      "out_links": 20,
+      "broken_links": 0
+    },
+    "Brain/57-CODE-INTELLIGENCE": {
+      "files": 3,
+      "in_links": 20,
+      "out_links": 19,
+      "broken_links": 1
+    },
+    "Brain/62-TECHNOLOGY": {
+      "files": 3,
+      "in_links": 4,
+      "out_links": 18,
+      "broken_links": 1
+    },
+    "Brain/41-OBSERVABILITY": {
+      "files": 3,
+      "in_links": 11,
+      "out_links": 11,
+      "broken_links": 0
+    },
+    "Brain/22-EXECUTION": {
+      "files": 3,
+      "in_links": 25,
+      "out_links": 14,
+      "broken_links": 0
+    },
+    "Brain/51-CONSTRUCTION": {
+      "files": 3,
+      "in_links": 4,
+      "out_links": 17,
+      "broken_links": 0
+    },
+    "Brain/COMMERCIAL": {
+      "files": 3,
+      "in_links": 38,
+      "out_links": 22,
+      "broken_links": 0
+    },
+    "Brain/OPS-001-STAFFING": {
+      "files": 3,
+      "in_links": 0,
+      "out_links": 0,
+      "broken_links": 0
+    },
+    "Brain/60-APIS": {
+      "files": 3,
+      "in_links": 4,
+      "out_links": 14,
+      "broken_links": 11
+    },
+    "Brain/_CLI": {
+      "files": 3,
+      "in_links": 5,
+      "out_links": 7,
+      "broken_links": 6
+    },
+    "Brain/54-FINANCIAL": {
+      "files": 3,
+      "in_links": 4,
+      "out_links": 19,
+      "broken_links": 0
+    },
+    "Brain/_ARCHIVE": {
+      "files": 3,
+      "in_links": 0,
+      "out_links": 6,
+      "broken_links": 0
+    },
+    "Company Root": {
+      "files": 2,
+      "in_links": 5,
+      "out_links": 0,
+      "broken_links": 0
+    },
+    "Brain/48-AUTOMATION": {
+      "files": 2,
+      "in_links": 7,
+      "out_links": 10,
+      "broken_links": 0
+    },
+    "Brain/27-CUSTOMERS": {
+      "files": 2,
+      "in_links": 6,
+      "out_links": 10,
+      "broken_links": 0
+    },
+    "Brain/90-EXECUTION": {
+      "files": 2,
+      "in_links": 0,
+      "out_links": 0,
+      "broken_links": 0
+    },
+    "Brain/31-LEGAL": {
+      "files": 2,
+      "in_links": 8,
+      "out_links": 10,
+      "broken_links": 0
+    },
+    "Brain/47-DOCUMENTS": {
+      "files": 2,
+      "in_links": 3,
+      "out_links": 10,
+      "broken_links": 0
+    },
+    "Brain/13-REPOSITORIES": {
+      "files": 2,
+      "in_links": 54,
+      "out_links": 10,
+      "broken_links": 0
+    },
+    "Brain/36-PARTNERS": {
+      "files": 2,
+      "in_links": 6,
+      "out_links": 10,
+      "broken_links": 0
+    },
+    "Brain/12-CONTEXT": {
+      "files": 2,
+      "in_links": 7,
+      "out_links": 11,
+      "broken_links": 7
+    },
+    "Brain/29-OPERATIONS": {
+      "files": 2,
+      "in_links": 8,
+      "out_links": 10,
+      "broken_links": 0
+    },
+    "Brain/19-ORCHESTRATION": {
+      "files": 2,
+      "in_links": 20,
+      "out_links": 6,
+      "broken_links": 1
+    },
+    "Brain/06-ENTITY-RESOLUTION": {
+      "files": 2,
+      "in_links": 10,
+      "out_links": 10,
+      "broken_links": 0
+    },
+    "Brain/18-TOOLS": {
+      "files": 2,
+      "in_links": 11,
+      "out_links": 13,
+      "broken_links": 0
+    },
+    "Brain/17-MODELS": {
+      "files": 2,
+      "in_links": 16,
+      "out_links": 6,
+      "broken_links": 1
+    },
+    "Brain/49-SYSTEM": {
+      "files": 2,
+      "in_links": 3,
+      "out_links": 10,
+      "broken_links": 0
+    },
+    "Brain/44-LEARNING": {
+      "files": 2,
+      "in_links": 12,
+      "out_links": 10,
+      "broken_links": 0
+    },
+    "Brain/05-METADATA": {
+      "files": 2,
+      "in_links": 3,
+      "out_links": 10,
+      "broken_links": 0
+    },
+    "Brain/25-SALES": {
+      "files": 2,
+      "in_links": 7,
+      "out_links": 13,
+      "broken_links": 0
+    },
+    "Brain/_RELATIONSHIPS": {
+      "files": 2,
+      "in_links": 5,
+      "out_links": 16,
+      "broken_links": 1
+    },
+    "Brain/46-GOVERNANCE": {
+      "files": 2,
+      "in_links": 81,
+      "out_links": 28,
+      "broken_links": 1
+    },
+    "Brain/33-COMPLIANCE": {
+      "files": 2,
+      "in_links": 7,
+      "out_links": 10,
+      "broken_links": 0
+    },
+    "Brain/35-ASSETS": {
+      "files": 2,
+      "in_links": 7,
+      "out_links": 10,
+      "broken_links": 0
+    },
+    "Brain/34-RISK": {
+      "files": 2,
+      "in_links": 8,
+      "out_links": 10,
+      "broken_links": 0
+    },
+    "Brain/24-FINANCE": {
+      "files": 2,
+      "in_links": 76,
+      "out_links": 10,
+      "broken_links": 0
+    },
+    "Brain/39-EXPERIMENTS": {
+      "files": 2,
+      "in_links": 4,
+      "out_links": 10,
+      "broken_links": 0
+    },
+    "Brain/08-KNOWLEDGE-GRAPH": {
+      "files": 2,
+      "in_links": 30,
+      "out_links": 25,
+      "broken_links": 0
+    },
+    "Brain/10-MEMORY": {
+      "files": 2,
+      "in_links": 24,
+      "out_links": 42,
+      "broken_links": 1
+    },
+    "Brain/11-INDEXING": {
+      "files": 2,
+      "in_links": 8,
+      "out_links": 10,
+      "broken_links": 0
+    },
+    "Brain/04-DATA": {
+      "files": 2,
+      "in_links": 8,
+      "out_links": 6,
+      "broken_links": 1
+    },
+    "Brain/40-METRICS": {
+      "files": 2,
+      "in_links": 7,
+      "out_links": 10,
+      "broken_links": 0
+    },
+    "Brain/30-HR": {
+      "files": 2,
+      "in_links": 3,
+      "out_links": 10,
+      "broken_links": 0
+    },
+    "Brain/26-MARKETING": {
+      "files": 2,
+      "in_links": 7,
+      "out_links": 26,
+      "broken_links": 0
+    },
+    "Brain/45-EVOLUTION": {
+      "files": 2,
+      "in_links": 8,
+      "out_links": 10,
+      "broken_links": 0
+    },
+    "Brain/43-OUTCOMES": {
+      "files": 2,
+      "in_links": 9,
+      "out_links": 10,
+      "broken_links": 0
+    },
+    "Brain/02-SOURCES": {
+      "files": 2,
+      "in_links": 10,
+      "out_links": 12,
+      "broken_links": 0
+    },
+    "Brain/21-POLICY": {
+      "files": 2,
+      "in_links": 7,
+      "out_links": 10,
+      "broken_links": 0
+    },
+    "Brain/03-INGESTION": {
+      "files": 2,
+      "in_links": 9,
+      "out_links": 10,
+      "broken_links": 0
+    },
+    "Brain/15-SKILLS": {
+      "files": 2,
+      "in_links": 298,
+      "out_links": 298,
+      "broken_links": 0
+    },
+    "Brain/28-PRODUCT": {
+      "files": 2,
+      "in_links": 7,
+      "out_links": 10,
+      "broken_links": 0
+    },
+    "Brain/DIRECTIVES": {
+      "files": 1,
+      "in_links": 1,
+      "out_links": 19,
+      "broken_links": 0
+    },
+    "Brain/calls": {
+      "files": 1,
+      "in_links": 0,
+      "out_links": 0,
+      "broken_links": 0
+    },
+    "Brain/receipts": {
+      "files": 1,
+      "in_links": 0,
+      "out_links": 6,
+      "broken_links": 0
+    },
+    "Brain/53-TEAMS": {
+      "files": 1,
+      "in_links": 1,
+      "out_links": 5,
+      "broken_links": 1
+    },
+    "Brain/AI-BRAIN": {
+      "files": 1,
+      "in_links": 301,
+      "out_links": 15,
+      "broken_links": 1
+    },
+    "Brain/02_PROJECTS": {
+      "files": 1,
+      "in_links": 38,
+      "out_links": 0,
+      "broken_links": 0
+    },
+    "Brain/64-RELATIONSHIPS": {
+      "files": 1,
+      "in_links": 1,
+      "out_links": 5,
+      "broken_links": 1
+    },
+    "Brain/66-OPPORTUNITIES-ALT": {
+      "files": 1,
+      "in_links": 1,
+      "out_links": 5,
+      "broken_links": 1
+    },
+    "Brain/AI-PROJECTS": {
+      "files": 1,
+      "in_links": 301,
+      "out_links": 6,
+      "broken_links": 1
+    },
+    "Brain/review-receipts": {
+      "files": 1,
+      "in_links": 0,
+      "out_links": 6,
+      "broken_links": 0
+    },
+    "Brain/61-KNOWLEDGE-SOURCES": {
+      "files": 1,
+      "in_links": 1,
+      "out_links": 5,
+      "broken_links": 1
+    },
+    "Brain/HARNESS-ENGINEERING": {
+      "files": 1,
+      "in_links": 0,
+      "out_links": 1,
+      "broken_links": 2
+    },
+    "Brain/22-VENTURES": {
+      "files": 1,
+      "in_links": 0,
+      "out_links": 0,
+      "broken_links": 0
+    },
+    "Brain/EXECUTIVES": {
+      "files": 1,
+      "in_links": 1,
+      "out_links": 16,
+      "broken_links": 0
+    },
+    "Brain/65-SYNERGIES": {
+      "files": 1,
+      "in_links": 1,
+      "out_links": 5,
+      "broken_links": 1
+    },
+    "Brain/63-CHANGE-MANAGEMENT": {
+      "files": 1,
+      "in_links": 1,
+      "out_links": 5,
+      "broken_links": 1
+    },
+    "Brain/59-MCP": {
+      "files": 1,
+      "in_links": 1,
+      "out_links": 5,
+      "broken_links": 1
+    },
+    "Brain/67-EVOLUTION-ALT": {
+      "files": 1,
+      "in_links": 1,
+      "out_links": 5,
+      "broken_links": 1
+    },
+    "Company/omi": {
+      "files": 1,
+      "in_links": 1,
+      "out_links": 1,
+      "broken_links": 0
+    },
+    "Company/magika": {
+      "files": 1,
+      "in_links": 1,
+      "out_links": 1,
+      "broken_links": 0
+    },
+    "Company/otel-collector-config.yaml": {
+      "files": 1,
+      "in_links": 1,
+      "out_links": 1,
+      "broken_links": 0
+    },
+    "Company/_INFRASTRUCTURE": {
+      "files": 1,
+      "in_links": 0,
+      "out_links": 0,
+      "broken_links": 0
+    },
+    "Company/litellm_config.yaml": {
+      "files": 1,
+      "in_links": 1,
+      "out_links": 1,
+      "broken_links": 0
+    },
+    "Company/prometheus.yml": {
+      "files": 1,
+      "in_links": 1,
+      "out_links": 1,
+      "broken_links": 0
+    },
+    "Company/backups": {
+      "files": 1,
+      "in_links": 1,
+      "out_links": 1,
+      "broken_links": 2
+    }
+  },
+  "top_broken_files": [
+    {
+      "file": "Company Brain/.planning/graphs/GRAPH_REPORT.md",
+      "broken_count": 2043,
+      "examples": [
+        "_COMMUNITY_Community 0",
+        "_COMMUNITY_Community 1",
+        "_COMMUNITY_Community 2",
+        "_COMMUNITY_Community 3",
+        "_COMMUNITY_Community 4"
+      ]
+    },
+    {
+      "file": "Company Brain/repos/lt-005-medical-courier-dispatch/graphify-out/GRAPH_REPORT.md",
+      "broken_count": 494,
+      "examples": [
+        "_COMMUNITY_Community 0",
+        "_COMMUNITY_Community 1",
+        "_COMMUNITY_Community 2",
+        "_COMMUNITY_Community 3",
+        "_COMMUNITY_Community 4"
+      ]
+    },
+    {
+      "file": "Company Brain/repos/lt-005-medical-courier-dispatch/.planning/graphs/GRAPH_REPORT.md",
+      "broken_count": 308,
+      "examples": [
+        "_COMMUNITY_Community 0",
+        "_COMMUNITY_Community 1",
+        "_COMMUNITY_Community 2",
+        "_COMMUNITY_Community 3",
+        "_COMMUNITY_Community 4"
+      ]
+    },
+    {
+      "file": "Company Brain/repos/ops-staff-001-staffing/graphify-out/GRAPH_REPORT.md",
+      "broken_count": 297,
+      "examples": [
+        "_COMMUNITY_Community 0",
+        "_COMMUNITY_Community 1",
+        "_COMMUNITY_Community 2",
+        "_COMMUNITY_Community 3",
+        "_COMMUNITY_Community 4"
+      ]
+    },
+    {
+      "file": "Company Brain/repos/ops-staff-001-staffing/.planning/graphs/GRAPH_REPORT.md",
+      "broken_count": 128,
+      "examples": [
+        "_COMMUNITY_Community 0",
+        "_COMMUNITY_Community 1",
+        "_COMMUNITY_Community 2",
+        "_COMMUNITY_Community 3",
+        "_COMMUNITY_Community 4"
+      ]
+    },
+    {
+      "file": "Company Brain/INSTITUTIONAL-VENTURE-ARCHITECTURE.md",
+      "broken_count": 66,
+      "examples": [
+        "SECTOR-TAXONOMY-MASTER\\",
+        "control-planes-by-sector.yaml\\",
+        "ventures-by-sector.yaml\\",
+        "INSTITUTIONAL-FAMILY-OFFICE-FUNCTIONS",
+        "5-VENTURE-INTEGRATED-SUMMARY\\"
+      ]
+    },
+    {
+      "file": "Company Brain/INDEX-DOMAINS-COMPLETE.md",
+      "broken_count": 64,
+      "examples": [
+        "04-SEMANTICS",
+        "07-RELATIONSHIPS",
+        "04-SEMANTICS",
+        "07-RELATIONSHIPS",
+        "04-SEMANTICS"
+      ]
+    },
+    {
+      "file": "Company Brain/00-CONSTITUTION/SECTOR-CAPABILITY-CONNECTIONS.md",
+      "broken_count": 59,
+      "examples": [
+        "_REGISTRIES/control-planes-by-sector.yaml",
+        "_REGISTRIES/control-planes-by-sector.yaml",
+        "_REGISTRIES/control-planes-by-sector.yaml",
+        "23-VENTURES/CON-011",
+        "23-VENTURES/CON-011"
+      ]
+    },
+    {
+      "file": "Company Brain/_DOCS/WIKI-PAGES-50-MASTER-LIST.md",
+      "broken_count": 58,
+      "examples": [
+        "Worldwidebro Wiki",
+        "Family",
+        "Family Office",
+        "Trust & Estate",
+        "Capital"
+      ]
+    },
+    {
+      "file": "Company Brain/_SYSTEMS/WIKI-LINKS-VERIFICATION.md",
+      "broken_count": 57,
+      "examples": [
+        "SYSTEMS-INDEX",
+        "ventures-by-sector.yaml",
+        "INCOME-PREDICTION",
+        "CP-013-Construction",
+        "CP-020-Real-Estate"
+      ]
+    },
+    {
+      "file": "Company Brain/01-IDENTITY/MASTER-ROLE-REGISTRY.md",
+      "broken_count": 38,
+      "examples": [
+        "CAP-001\\",
+        "CAP-004\\",
+        "CAP-001\\",
+        "CAP-024\\",
+        "CAP-001\\"
+      ]
+    },
+    {
+      "file": "Company Brain/00-CONSTITUTION/CAPABILITY-INDEX.md",
+      "broken_count": 34,
+      "examples": [
+        "_REGISTRIES/capabilities-by-sector.yaml",
+        "_ONTOLOGY/CAPABILITY_REGISTRY.yaml",
+        "23-VENTURES/FIN-001",
+        "23-VENTURES/TECH-040",
+        "_EVAL/api-design-tests.yaml"
+      ]
+    },
+    {
+      "file": "Company Brain/repos/worldwidebro-venture-portal/src/pages/_index.md",
+      "broken_count": 29,
+      "examples": [
+        "vex-hero-site/src/_index",
+        "vex-hero-site/src/pages/Academy.tsx",
+        "vex-hero-site/src/pages/Advisory.tsx",
+        "vex-hero-site/src/pages/Agents.tsx",
+        "vex-hero-site/src/pages/Capital.tsx"
+      ]
+    },
+    {
+      "file": "Company Brain/23-VENTURES/Worldwidebro-Vex/src/pages/_index.md",
+      "broken_count": 29,
+      "examples": [
+        "vex-hero-site/src/_index",
+        "vex-hero-site/src/pages/Academy.tsx",
+        "vex-hero-site/src/pages/Advisory.tsx",
+        "vex-hero-site/src/pages/Agents.tsx",
+        "vex-hero-site/src/pages/Capital.tsx"
+      ]
+    },
+    {
+      "file": "Company Brain/repos/lt-005-medical-courier-dispatch/dispatcher/_index.md",
+      "broken_count": 27,
+      "examples": [
+        "02_PROJECTS/LT/LT-005/dispatcher/alerts.html",
+        "02_PROJECTS/LT/LT-005/dispatcher/analytics.html",
+        "02_PROJECTS/LT/LT-005/dispatcher/assign_driver.html",
+        "02_PROJECTS/LT/LT-005/dispatcher/bulk_dispatch.html",
+        "02_PROJECTS/LT/LT-005/dispatcher/calendar.html"
+      ]
+    },
+    {
+      "file": "Company Brain/_REFERENCE/SKILLS-SECTOR-CAPABILITY-INDEX.md",
+      "broken_count": 24,
+      "examples": [
+        "00-CONSTITUTION/opcos",
+        "VEX",
+        "_REGISTRIES/control-planes-by-sector.yaml",
+        "VEX",
+        "SEC-033"
+      ]
+    },
+    {
+      "file": "Company Brain/repos/lt-005-medical-courier-dispatch/DOCUMENTATION-INDEX.md",
+      "broken_count": 23,
+      "examples": [
+        "00_IDENTITY/",
+        "02_SERVICES/",
+        "03_CUSTOMERS/",
+        "04_COMPLIANCE/",
+        "05_OPERATIONS/"
+      ]
+    },
+    {
+      "file": "Company Brain/repos/worldwidebro-venture-portal/_index.md",
+      "broken_count": 22,
+      "examples": [
+        "vex-hero-site/AGENTS",
+        "vex-hero-site/CLAUDE",
+        "vex-hero-site/DATA_PRIVACY",
+        "vex-hero-site/README",
+        "vex-hero-site/app/_index"
+      ]
+    },
+    {
+      "file": "Company Brain/repos/lt-005-medical-courier-dispatch/driver-app/_index.md",
+      "broken_count": 22,
+      "examples": [
+        "02_PROJECTS/LT/LT-005/driver-app/accept_job.html",
+        "02_PROJECTS/LT/LT-005/driver-app/assigned_jobs.html",
+        "02_PROJECTS/LT/LT-005/driver-app/barcode_scan.html",
+        "02_PROJECTS/LT/LT-005/driver-app/break_timer.html",
+        "02_PROJECTS/LT/LT-005/driver-app/checklist.html"
+      ]
+    },
+    {
+      "file": "Company Brain/20-DECISIONS/WIKI-LINK-GAPS-ANALYSIS.md",
+      "broken_count": 22,
+      "examples": [
+        "SEC-014-Staffing",
+        "CP-023-Sales",
+        "CP-026-Operations",
+        "CP-020-Finance",
+        "CP-025-People"
+      ]
+    },
+    {
+      "file": "Company Brain/23-VENTURES/Worldwidebro-Vex/_index.md",
+      "broken_count": 22,
+      "examples": [
+        "vex-hero-site/AGENTS",
+        "vex-hero-site/CLAUDE",
+        "vex-hero-site/DATA_PRIVACY",
+        "vex-hero-site/README",
+        "vex-hero-site/app/_index"
+      ]
+    },
+    {
+      "file": "Company Brain/52-PEOPLE/README.md",
+      "broken_count": 22,
+      "examples": [
+        "Founder",
+        "Owner",
+        "Employee",
+        "Contractor",
+        "Advisor"
+      ]
+    },
+    {
+      "file": "Company Brain/_REGISTRIES/README.md",
+      "broken_count": 21,
+      "examples": [
+        "_REGISTRIES/INFRASTRUCTURE_REGISTRY.yaml",
+        "_REGISTRIES/infrastructure_registry.json",
+        "_REGISTRIES/infrastructure_dependency_registry.json",
+        "_REGISTRIES/infrastructure_cost_registry.json",
+        "_REGISTRIES/infrastructure_risk_registry.json"
+      ]
+    },
+    {
+      "file": "Company Brain/fractal/wiki/features/_index.md",
+      "broken_count": 20,
+      "examples": [
+        "features/agents/_index",
+        "features/chat/_index",
+        "features/cost/_index",
+        "features/files/_index",
+        "features/lifecycle/_index"
+      ]
+    },
+    {
+      "file": "Company Brain/repos/lt-005-medical-courier-dispatch/customer-portal/_index.md",
+      "broken_count": 19,
+      "examples": [
+        "02_PROJECTS/LT/LT-005/customer-portal/addresses.html",
+        "02_PROJECTS/LT/LT-005/customer-portal/api_keys.html",
+        "02_PROJECTS/LT/LT-005/customer-portal/audit_logs.html",
+        "02_PROJECTS/LT/LT-005/customer-portal/billing.html",
+        "02_PROJECTS/LT/LT-005/customer-portal/contacts.html"
+      ]
+    },
+    {
+      "file": "Company Brain/_TOOLS/gbrain/CHANGELOG.md",
+      "broken_count": 19,
+      "examples": [
+        "wiki/entities/AI 3.0",
+        "wikilink",
+        "struktura",
+        "struktura",
+        "struktura"
+      ]
+    },
+    {
+      "file": "Company Brain/23-VENTURES/README.md",
+      "broken_count": 16,
+      "examples": [
+        "_REGISTRIES/VENTURE_REGISTRY.yaml",
+        "_REGISTRIES/agents-by-sector.yaml",
+        "23-VENTURES/RE-001\\",
+        "SECTORS/SEC-020-real-estate-property\\",
+        "23-VENTURES/LT-005\\"
+      ]
+    },
+    {
+      "file": "Company Brain/fractal/wiki/features/radio/_index.md",
+      "broken_count": 14,
+      "examples": [
+        "features/_index",
+        "features/radio/channels",
+        "features/radio/reactions_and_replies",
+        "features/radio/read_receipts",
+        "features/radio/routing"
+      ]
+    },
+    {
+      "file": "Company Brain/_SYSTEMS/PORTFOLIO-OPTIMIZATION.md",
+      "broken_count": 13,
+      "examples": [
+        "CP-013",
+        "CP-020",
+        "CP-031",
+        "CP-006",
+        "CP-013"
+      ]
+    },
+    {
+      "file": "Company Brain/07-ONTOLOGY/45-ONTOLOGIES-MASTER.md",
+      "broken_count": 13,
+      "examples": [
+        "_ONTOLOGY/45_ONTOLOGIES_REGISTRY.yaml",
+        "24-TECHNOLOGY",
+        "24-TECHNOLOGY/24-TECHNOLOGY.md",
+        "06-TEAMS",
+        "06-TEAMS/06-TEAMS.md"
+      ]
+    }
+  ]
+}

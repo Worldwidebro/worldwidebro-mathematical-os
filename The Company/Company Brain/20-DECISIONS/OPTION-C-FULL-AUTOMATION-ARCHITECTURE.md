@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[20-DECISIONS/README|Decisions Index]] | [[REALITY]]
+
 # OPTION C: Full Automation via MCP Agents
 
 **Status:** Ready to build  

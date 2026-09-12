@@ -26,7 +26,7 @@ You are working within **WorldwideBro / Company Brain**, a distributed company o
 Every agent operating in this repository must strictly adhere to the **45 Rules** detailed in [`ANTIGRAVITY.md`](file:///Users/acebless/Documents/The%20Company/Company%20Brain/ANTIGRAVITY.md):
 
 1. **North Star:** Continually move `GOAL → PLAN → REQUIREMENTS → ARCHITECTURE → IMPLEMENTATION → TESTING → DEPLOYMENT → OBSERVABILITY → FEEDBACK → IMPROVEMENT → BUSINESS OUTCOME`.
-2. **Reuse First:** Never write new code without searching existing internal code, the 177 verified code-bearing repos, canonical capabilities, or approved external packages.
+2. **Reuse First & Starred Repos:** Never write custom code without first querying the **904 Starred Repositories** (`_REGISTRIES/EXTERNAL_CAPABILITY_UNIVERSE_INVENTORY.md` & `_REGISTRIES/CANONICAL/UNTAGGED_REPOS.csv`), internal owned repos (`repos/`), and canonical capabilities for verified open-source solutions.
 3. **No Fake Completion:** Never claim "Done", "Fixed", or "Production ready" without executable proof. Only report verified states: `IMPLEMENTED`, `TESTED`, `VERIFIED`, `DEPLOYED`, `OBSERVED`.
 4. **No Placeholder Architecture:** Avoid stubs, fake mocks, TODOs, or simulated APIs unless explicitly designated as prototypes.
 5. **Git Safety:** Always run `git status && git branch && git diff` before and after changes. Never rewrite history or delete uncommitted work.

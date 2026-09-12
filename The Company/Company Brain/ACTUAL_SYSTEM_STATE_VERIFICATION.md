@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[13_ENGINEERING/INFRASTRUCTURE/INFRASTRUCTURE|Infrastructure State]] | [[INDEX]]
+
 # ACTUAL SYSTEM STATE VERIFICATION — Sep 9, 2026
 
 **Real Question:** Is the "Agent OS" already built as part of VEX (the portfolio system)?

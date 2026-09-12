@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[09-OPERATIONS|Call Center OS]] | [[INDEX]]
+
 # Call Center OS — Execution Locked (Sep 9, 2026)
 
 **Authority:** Infrastructure Control Plane (CP-027) + Execution Control Plane (CP-033)  

@@ -392,4 +392,6 @@ If the system can't answer that, it has failed.
 
 This document is the identity and operating charter for all systems in the Company Brain.
 
-Read this before reading anything else.
+**Read [[SOUL|SOUL.md]] first. Then read this. Then read [[PURPOSE|PURPOSE.md]] and [[FAMILY|FAMILY.md]].**
+
+See [[IDENTITY-STACK|IDENTITY-STACK.md]] for the complete nine-layer identity hierarchy.

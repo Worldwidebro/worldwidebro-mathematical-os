@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[_REFERENCE/README|Reference Index]] | [[REALITY]]
+
 # Gstack Slash Commands Reference Guide
 
 Quick navigation: **PLANNING** | **REVIEW** | **SHIPPING** | **BROWSER/QA** | **DEBUGGING** | **CONFIG** | **DOCS**

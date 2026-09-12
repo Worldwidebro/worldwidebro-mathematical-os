@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[50-MASTER-CONTROL|Phase 2 Summary]] | [[INDEX]]
+
 # PHASE 2: EXECUTIVE SUMMARY
 **Sales + Orchestration + Research Automation**
 

@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[_REFERENCE/README|Reference Index]] | [[REALITY]]
+
 # LT-005 EXECUTION SUMMARY — Sep 10, 2026
 **Status:** 🚀 READY TO EXECUTE  
 **Revenue Target:** $1,700-$7,500 (Week 1)  

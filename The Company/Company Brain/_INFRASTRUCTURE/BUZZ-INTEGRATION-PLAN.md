@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[_INFRASTRUCTURE/README|Infrastructure Hub]] | [[CLAUDE]]
+
 # Buzz Integration Plan — Company Brain Collaboration Layer
 
 [[STARTHERE]] | [[CLAUDE.md]] | [[REPOSITORY-INTELLIGENCE-SYSTEM.md]]

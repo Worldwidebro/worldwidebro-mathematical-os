@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[00-CONSTITUTION/SECTOR-TAXONOMY-MASTER|Venture Audit]] | [[INDEX]]
+
 # SECTOR-VENTURE AUDIT: 789 Ventures × 35 Company Brain Sectors
 **Status:** ✅ Complete | **Source:** VEX portfolio.public.json (canonical)  
 **Generated:** 2026-09-09 | **Coverage:** 11/35 sectors (31.4% coverage)

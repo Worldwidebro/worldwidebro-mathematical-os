@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[20-DECISIONS/SALES-PIPELINE-MASTER-INDEX|Sales Pipeline Index]] | [[23-VENTURES/RE-001|RE-001 Spec]] | [[scripts/RE-001-SALES-COACH|Sales Coach]]
+
 # RE-001 Sales Pipeline — WorldwideBro Holdings Real Estate Syndication
 
 **Venture:** RE-001 (WorldwideBro Holdings) — Real Estate Syndication & Investment  
@@ -304,3 +306,14 @@ Once first deal closes, focus on **repeat investors**:
 **Scaling:** Leverage repeat investor base for deals 2-5 (faster closes, higher capital deployment)
 
 Co-Authored-By: Claude Haiku 4.5 <noreply@anthropic.com>
+
+---
+
+## CONNECTED SYSTEMS & WIKI LINKS
+
+- **Pipeline Master Index:** [[20-DECISIONS/SALES-PIPELINE-MASTER-INDEX|SALES-PIPELINE-MASTER-INDEX.md]]
+- **Venture Specification:** [[23-VENTURES/RE-001|RE-001 Venture Spec]]
+- **Sales Coach & Script:** [[scripts/RE-001-SALES-COACH|RE-001 Sales Coach]]
+- **Social Media & Outreach:** [[VENTURE-SOCIAL-EXECUTION-RE-001|RE-001 Social Media Execution]]
+- **Capital Stack Dossier:** [[38-OPPORTUNITIES/CAPITAL_STACK/RE-001_CDFI_Acquisition_Debt_DSCR_Packet|RE-001 Capital Stack Dossier]]
+- **Data Room Master Prospectus:** [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/COMPILED-MASTER-PROSPECTUS|RE-001 Master Prospectus]]

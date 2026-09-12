@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[08-REVENUE|Revenue Operations]] | [[INDEX]]
+
 # DAY IN THE LIFE: Revenue Generation Across All 5 Ventures
 
 **Timeline:** Tuesday, September 10, 2026 (Day 3 of pilot)  

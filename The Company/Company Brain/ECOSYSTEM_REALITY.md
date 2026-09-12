@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[REALITY|Ecosystem Reality]] | [[INDEX]]
+
 # 🌍 Ecosystem Reality Check — The Actual Working System
 
 **Last Updated:** 2026-09-09

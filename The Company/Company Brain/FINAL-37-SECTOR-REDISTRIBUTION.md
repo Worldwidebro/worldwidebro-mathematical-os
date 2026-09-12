@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[00-CONSTITUTION/SECTOR-TAXONOMY-MASTER|Sector Distribution]] | [[INDEX]]
+
 # FINAL 37-Sector Redistribution: All 789 Ventures Properly Classified
 
 **Status:** ✅ Complete Deep Breakdown  

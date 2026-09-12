@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[_INFRASTRUCTURE/README|Infrastructure Hub]] | [[CLAUDE]]
+
 # OmniRoute Credential Setup Guide
 
 ## ✅ Dashboard Access (READY NOW)

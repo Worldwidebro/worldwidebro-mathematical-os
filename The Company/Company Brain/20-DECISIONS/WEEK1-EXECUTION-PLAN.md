@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[20-DECISIONS/README|Decisions Index]] | [[REALITY]]
+
 # Week 1 Execution Plan — Agentic Engineering Framework
 
 **Period:** Sep 10–15, 2026  

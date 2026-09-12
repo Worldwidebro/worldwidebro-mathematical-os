@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[38-OPPORTUNITIES/GRANTS/README|Grants Index]] | [[_REGISTRIES/CANONICAL/GRANT_OPPORTUNITY_REGISTRY.yaml|Grant Registry]] | [[CAPITAL-READINESS-ENGINE]]
+
 # 🏛️ Grant Action Pack: OPS-001 — CareerOps Staffing & Workforce AI
 
 ```yaml

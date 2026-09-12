@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[50-MASTER-CONTROL|Path B Plan]] | [[INDEX]]
+
 # PATH B: AGENT OS CONTROL PLANE — EXECUTABLE IMPLEMENTATION
 **Master plan for Sep 12-19: Turn orchestrator code into live agent OS**
 

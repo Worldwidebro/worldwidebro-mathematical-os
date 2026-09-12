@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[20-DECISIONS/README|Decisions Index]] | [[REALITY]]
+
 # VENTURE INCOME READINESS AUDIT — Sep 9, 2026
 
 **Portfolio Overview:**

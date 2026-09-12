@@ -212,6 +212,8 @@ connections:
       - "NVIDIA NIM"
       - "OpenRouter"
       - "AirLLM Mock"
+      - "Z.ai GLM (Cloud API - Evaluation)"
+      - "GLM Open-Weights (Evaluation / Local MoE)"
       - "more..."
 
   # TIER 5: AGENT CONNECTIVITY

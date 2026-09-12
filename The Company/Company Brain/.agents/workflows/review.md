@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[AGENTS.md]] | [[ANTIGRAVITY.md]]
+
 # Workflow: Review (`/review`)
 
 **Objective:** Conduct structured architectural, security, and quality code reviews before merging or deploying.

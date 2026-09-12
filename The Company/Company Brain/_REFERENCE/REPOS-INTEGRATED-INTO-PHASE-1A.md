@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[_REFERENCE/README|Reference Index]] | [[REALITY]]
+
 # Repos Integrated Into Phase 1A Implementation
 
 **How awesome-claude-code + Anthropic plugins + OpenWork MCP were wired into Week 1 revenue**

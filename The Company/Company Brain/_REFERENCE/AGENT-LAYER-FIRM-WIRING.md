@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[_REFERENCE/README|Reference Index]] | [[REALITY]]
+
 ---
 id: DOC-AGENT-FIRM-001
 title: Agent Layer ↔ Firm Architecture Wiring

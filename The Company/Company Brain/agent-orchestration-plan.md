@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[19-ORCHESTRATION|Agent Orchestration]] | [[INDEX]]
+
 # MULTI-AGENT SALES ORCHESTRATION PLAN
 **Status:** PHASE 1 + 2 ACTIVE (Sep 10)  
 **Timeline:** Sep 9-14 (5 days to revenue)  

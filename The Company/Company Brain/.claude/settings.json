@@ -68,11 +68,12 @@
           {
             "type": "command",
             "command": "echo '✅ ClickUp MCP: Loading…'; sleep 0.5 && echo '{\"systemMessage\": \"✅ ClickUp MCP connected — execution cockpit ready\"}'",
-            "statusMessage": "Loading ClickUp MCP…",
-            "timeout": 10
+            "timeout": 10,
+            "statusMessage": "Loading ClickUp MCP…"
           }
         ]
       }
     ]
-  }
+  },
+  "enabledPlugins": {}
 }

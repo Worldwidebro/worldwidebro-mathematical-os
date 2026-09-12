@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[00-CONSTITUTION|Corporate Blueprint]] | [[INDEX]]
+
 # BILLION-DOLLAR BLUEPRINT: Complete Top-Down Strategy
 
 **Date:** 2026-09-09 | **Authority:** Master Private Firm Ontology + 34-layer architecture

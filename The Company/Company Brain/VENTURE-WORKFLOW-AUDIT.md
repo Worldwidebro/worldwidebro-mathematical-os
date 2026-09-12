@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[09-OPERATIONS|Venture Workflows]] | [[INDEX]]
+
 # VENTURE WORKFLOW AUDIT: Complete Execution Model
 
 **Created:** 2026-09-09  

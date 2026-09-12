@@ -1,8 +1,19 @@
+---
+id: REG-UNIFIED-001
+title: Worldwidebro Unified Registry
+aliases: ["UNIFIED_REGISTRY", "Unified Registry", "UNIFIED-REGISTRY"]
+tags: [registry, unified, ventures, repos, portfolio]
+status: ACTIVE
+updated: 2026-09-12
+---
+
+[[STARTHERE]] | [[REALITY]] | [[SECTOR_INDEX]] | [[BUSINESS-CAPITAL-DATA-ROOM/README|DATA-ROOMS]] | [[INDEX]]
+
 # Worldwidebro Unified Registry
 
-**Last Updated:** 2026-09-02
+**Last Updated:** 2026-09-12  
+**Authority:** Single Source of Truth for Ventures + Repos + Ecosystem  
 
-**Authority:** Single Source of Truth for Ventures + Repos + Ecosystem
 
 ## 📊 Portfolio Summary
 

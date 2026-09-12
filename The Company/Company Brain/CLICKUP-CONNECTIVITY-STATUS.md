@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[09-OPERATIONS|ClickUp Integrations]] | [[INDEX]]
+
 # ClickUp Connectivity Status Report
 **Date**: 2026-09-08  
 **Scope**: 5 Focus Ventures + Sector Contact Registry  

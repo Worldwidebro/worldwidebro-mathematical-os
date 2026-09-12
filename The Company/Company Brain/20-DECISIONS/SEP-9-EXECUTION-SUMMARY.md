@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[20-DECISIONS/README|Decisions Index]] | [[REALITY]]
+
 # Sep 9 Execution Summary — Three Fixes Completed
 
 **What Changed:** 2 of 3 critical blockers removed | Cold calls + cold-call script ready | Revenue path 85% clear

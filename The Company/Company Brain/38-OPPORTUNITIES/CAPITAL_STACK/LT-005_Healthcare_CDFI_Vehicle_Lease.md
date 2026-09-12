@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[38-OPPORTUNITIES/CAPITAL_STACK/README|Capital Stack Index]] | [[CAPITAL-READINESS-ENGINE]] | [[23-VENTURES/LT-005|LT-005 Spec]] | [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/COMPILED-MASTER-PROSPECTUS|Data Room Prospectus]]
+
 # 💼 Capital Readiness Dossier: LT-005 — HealthRoute Medical Courier Dispatch
 
 ```yaml
@@ -92,3 +94,15 @@ DEBT SERVICE COVERAGE RATIO (DSCR)          1.74x           6.07x          18.17
 - [x] **HIPAA Compliance Structure:** Business Associate Agreement (BAA) templates executed; AES-256 encrypted chain-of-custody logs.
 - [x] **OSHA Standard 1910.1030 Compliance:** Bloodborne pathogen spill response protocols and biohazard transport container specifications.
 - [x] **Commercial Insurance Umbrella:** \$1,000,000 Auto Liability + \$5,000,000 Healthcare Logistics Umbrella coverage quotes ready for binding upon loan close.
+
+---
+
+## 5. Connected Systems & Wiki Links
+
+- **Capital Stack Master Index:** [[38-OPPORTUNITIES/CAPITAL_STACK/README|38-OPPORTUNITIES/CAPITAL_STACK/README.md]]
+- **Venture Specification:** [[23-VENTURES/LT-005|LT-005 Venture Spec]]
+- **Data Room Master Prospectus:** [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/COMPILED-MASTER-PROSPECTUS|LT-005 Master Prospectus]]
+- **Commercial Sales Pipeline:** [[20-DECISIONS/LT-005-SALES-PIPELINE|LT-005 Sales Pipeline]]
+- **Capital Readiness Engine:** [[CAPITAL-READINESS-ENGINE|CAPITAL-READINESS-ENGINE.md]]
+- **Multi-Venture Summary:** [[BUSINESS-CAPITAL-DATA-ROOM/5-VENTURE-INTEGRATED-SUMMARY|5-Venture Integrated Summary]]
+- **Canonical Facilities Registry:** [[_REGISTRIES/CANONICAL/CAPITAL_FACILITIES_REGISTRY.yaml]]

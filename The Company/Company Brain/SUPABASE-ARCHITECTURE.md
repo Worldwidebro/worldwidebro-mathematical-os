@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[13_ENGINEERING/INFRASTRUCTURE/06_DATA/DATA|Supabase Architecture]] | [[INDEX]]
+
 # Supabase Architecture — Venture Data Projects
 
 **Last Updated:** 2026-09-09  

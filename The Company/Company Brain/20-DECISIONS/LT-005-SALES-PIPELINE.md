@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[20-DECISIONS/SALES-PIPELINE-MASTER-INDEX|Sales Pipeline Index]] | [[23-VENTURES/LT-005|LT-005 Spec]] | [[scripts/LT-005-SALES-COACH|Sales Coach]]
+
 # LT-005 Sales Pipeline — HealthRoute Medical Courier
 
 **Venture:** LT-005 (HealthRoute) — HIPAA-Compliant Medical Specimen Logistics  
@@ -260,3 +262,14 @@ HealthRoute Pilot Program — 30 Days
 **First revenue:** 30-45 days from today (early October)
 
 Co-Authored-By: Claude Haiku 4.5 <noreply@anthropic.com>
+
+---
+
+## CONNECTED SYSTEMS & WIKI LINKS
+
+- **Pipeline Master Index:** [[20-DECISIONS/SALES-PIPELINE-MASTER-INDEX|SALES-PIPELINE-MASTER-INDEX.md]]
+- **Venture Specification:** [[23-VENTURES/LT-005|LT-005 Venture Spec]]
+- **Sales Coach & Script:** [[scripts/LT-005-SALES-COACH|LT-005 Sales Coach]]
+- **Social Media & Outreach:** [[VENTURE-SOCIAL-EXECUTION-LT-005|LT-005 Social Media Execution]]
+- **Capital Stack Dossier:** [[38-OPPORTUNITIES/CAPITAL_STACK/LT-005_Healthcare_CDFI_Vehicle_Lease|LT-005 Capital Stack Dossier]]
+- **Data Room Master Prospectus:** [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/COMPILED-MASTER-PROSPECTUS|LT-005 Master Prospectus]]

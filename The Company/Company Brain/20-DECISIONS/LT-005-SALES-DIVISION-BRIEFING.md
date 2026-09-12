@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[20-DECISIONS/README|Decisions Index]] | [[REALITY]]
+
 # LT-005 SALES DIVISION TEAM BRIEFING
 ## HealthRoute Medical Courier — Sep 11 Cold Call Campaign
 

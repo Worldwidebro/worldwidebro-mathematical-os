@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[20-DECISIONS/README|Decisions Index]] | [[REALITY]]
+
 # Wiki Link Gaps Analysis — Venture ↔ ClickUp ↔ Sector ↔ Control Plane
 
 **Analysis Date:** Sep 9, 2026  

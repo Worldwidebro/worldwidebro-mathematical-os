@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[20-DECISIONS/README|Decisions Index]] | [[REALITY]]
+
 # PATH 1 QUICK START — MCP Orchestration (Sep 10 Morning)
 
 **What:** Automate 166 cold-call tasks + 5 sales scripts + 8 calendar reminders in 50 minutes  

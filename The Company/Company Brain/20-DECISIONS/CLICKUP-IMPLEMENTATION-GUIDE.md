@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[20-DECISIONS/README|Decisions Index]] | [[REALITY]]
+
 # ClickUp Implementation Guide — CSV → Tasks (Sep 9-10)
 
 **Status:** Correlation map identified ✅ | Script ready ✅ | **Ready to deploy** ⏳

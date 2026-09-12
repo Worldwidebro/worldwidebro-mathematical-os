@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[20-DECISIONS/SALES-PIPELINE-MASTER-INDEX|Sales Pipeline Index]] | [[23-VENTURES/CON-001|CON-001 Spec]] | [[scripts/CON-001-SALES-COACH|Sales Coach]]
+
 # CON-001 Sales Pipeline — ACE Construction Field OS
 
 **Venture:** CON-001 (ACE Construction) — Field Operations & Consultation  
@@ -203,3 +205,14 @@ Target: 30% of consultations → implementation project ($1K avg) = additional $
 **Critical Path:** Calls today → 8 connections → 1-2 interested → consultation scheduled → payment by Sep 12
 
 Co-Authored-By: Claude Haiku 4.5 <noreply@anthropic.com>
+
+---
+
+## CONNECTED SYSTEMS & WIKI LINKS
+
+- **Pipeline Master Index:** [[20-DECISIONS/SALES-PIPELINE-MASTER-INDEX|SALES-PIPELINE-MASTER-INDEX.md]]
+- **Venture Specification:** [[23-VENTURES/CON-001|CON-001 Venture Spec]]
+- **Sales Coach & Script:** [[scripts/CON-001-SALES-COACH|CON-001 Sales Coach]]
+- **Social Media & Outreach:** [[VENTURE-SOCIAL-EXECUTION-CON-001|CON-001 Social Media Execution]]
+- **Capital Stack Dossier:** [[38-OPPORTUNITIES/CAPITAL_STACK/CON-001_SBA_Surety_Bond_Draw_Line|CON-001 Capital Stack Dossier]]
+- **Data Room Master Prospectus:** [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/COMPILED-MASTER-PROSPECTUS|CON-001 Master Prospectus]]

@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[13_ENGINEERING/INFRASTRUCTURE/INFRASTRUCTURE|System Wiring]] | [[INDEX]]
+
 # 🔗 SYSTEM WIRING INTEGRATION — Complete Sep 9, 2026
 
 **Status:** 3 Critical Wires VERIFIED ✅ | Ready to Deploy | Revenue in 24-48 hours

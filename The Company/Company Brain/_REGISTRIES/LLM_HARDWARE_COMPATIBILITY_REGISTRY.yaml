@@ -130,6 +130,66 @@ model_profiles:
     vision: false
     license: "Apache 2.0"
 
+  glm_5_3_cloud:
+    id: "MDL-GLM53-CLOUD"
+    name: "glm-5.3"
+    family: "GLM (Z.ai / Zhipu)"
+    role: "Complex coding, engineering, long-running agent work"
+    execution_mode: "cloud_api"
+    provider: "z-ai"
+    parameters: "Proprietary Flagship"
+    context_length: "128k"
+    capabilities:
+      - complex_coding
+      - software_engineering
+      - long_horizon_agents
+    vision: false
+    tools: true
+    license: "Proprietary (Z.ai BigModel)"
+    classification: "CLOUD"
+
+  glm_5_3_flash_open:
+    id: "MDL-GLM53-FLASH-OPEN"
+    name: "glm-5.3-flash:open-weights"
+    family: "GLM (Z.ai / Zhipu)"
+    role: "Faster/cheaper agent work + multimodal"
+    execution_mode: "open_weights"
+    parameters: "320B total / 18B active (MoE)"
+    supported_runtimes:
+      - sglang
+      - vllm
+      - tokenspeed
+    context_length: "128k"
+    model_size_unquantized: "640GB"
+    model_size_gguf_q4: "180GB"
+    capabilities:
+      - fast_coding
+      - multimodal
+      - agent_workflows
+    vision: true
+    tools: true
+    license: "MIT"
+    classification: "POTENTIALLY_LOCAL (High VRAM Requirement)"
+
+  codegeex4_9b:
+    id: "MDL-CODEGEEX4-9B"
+    name: "codegeex4-all-9b"
+    family: "GLM (Z.ai / Zhipu)"
+    role: "Local code generation, completion, and tool use"
+    execution_mode: "local_weights"
+    parameters: "9B"
+    context_length: "128k"
+    model_size_gguf_q4: "5.5GB"
+    capabilities:
+      - code_generation
+      - code_completion
+      - repository_context
+      - tool_use
+    vision: false
+    tools: true
+    license: "Apache 2.0"
+    classification: "LOCAL_READY"
+
 # ============================================================
 # COMPATIBILITY MATRIX
 # ============================================================
@@ -191,6 +251,43 @@ compatibility_matrix:
     loads: false
     compatibility_score: 0.10
     notes: "DOES NOT FIT. Use Exo to offload to Mac Studio."
+
+  mac_studio_m4_x_glm_5_3_flash_open:
+    hardware_id: "HW-MAC-STUDIO-M4-001"
+    model_id: "MDL-GLM53-FLASH-OPEN"
+    runtime: "sglang / vllm / airllm"
+    quantization: "q4_k_m"
+    vram_required: "180GB"
+    loads: false
+    fits_with_context: false
+    compatibility_score: 0.10
+    notes: "DOES NOT FIT native 36GB Mac Studio memory. 320B total parameters exceed unified RAM. Evaluated strictly for distributed Exo mesh (5+ nodes) or AirLLM disk-layer sequential offload."
+
+  mac_studio_m4_x_codegeex4_9b:
+    hardware_id: "HW-MAC-STUDIO-M4-001"
+    model_id: "MDL-CODEGEEX4-9B"
+    runtime: "ollama / mlx-lm"
+    quantization: "q4_k_m"
+    vram_required: "5.5GB"
+    loads: true
+    fits_with_context: true
+    practical_context_length: "32k"
+    max_concurrent_requests: 3
+    compatibility_score: 0.95
+    notes: "EXCELLENT FIT on 36GB Mac Studio. Dense 9B model runs at ~45 tok/sec with high coding proficiency and leaves ample headroom for Neo4j/Qdrant."
+
+  macbook_air_m_x_codegeex4_9b:
+    hardware_id: "HW-MACBOOK-AIR-M-001"
+    model_id: "MDL-CODEGEEX4-9B"
+    runtime: "ollama"
+    quantization: "q4_k_m"
+    vram_required: "5.5GB"
+    loads: true
+    fits_with_context: true
+    practical_context_length: "16k"
+    max_concurrent_requests: 1
+    compatibility_score: 0.88
+    notes: "Fits in 16GB MacBook Air unified memory. Leaves 8GB+ for OS and development workflows."
 
 # ============================================================
 # BENCHMARK RESULTS

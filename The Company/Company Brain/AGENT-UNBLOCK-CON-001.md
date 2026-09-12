@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[BUSINESS-CAPITAL-DATA-ROOM/CON-001|CON-001 Operations]] | [[INDEX]]
+
 # CON-001 Google Ads — Unblock & Proceed
 
 **Status:** Proceed with Ads setup using placeholder data

@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[_INFRASTRUCTURE/README|Infrastructure Hub]] | [[CLAUDE]]
+
 # Phase 4: Buzz Collaboration Layer — Completion Report
 
 **Session Date:** 2026-09-08  

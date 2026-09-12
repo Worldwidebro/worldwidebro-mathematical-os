@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[20-DECISIONS/README|Decisions Index]] | [[REALITY]]
+
 # REFERENCE CARD — Sep 11-14 Revenue Campaign
 
 **Keep this handy during the campaign.** Pin it or bookmark it.
