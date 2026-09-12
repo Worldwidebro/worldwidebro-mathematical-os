@@ -183,6 +183,9 @@
   },
   "active": "b2031065ed1409e0",
   "lastOpenFiles": [
+    "Company Brain/20-DECISIONS/MAKE-MCP-PROCEDURES.md",
+    "Company Brain/20-DECISIONS/INTEGRATION-STATUS-FULL-AUDIT.md",
+    "Company Brain/20-DECISIONS/MAKE-MCP-BLOCKERS-AUDIT.md",
     "Company Brain/supabase/migrations/20260912171624_lt005_setup.sql",
     "Company Brain/supabase/migrations",
     "Company Brain/supabase",
@@ -198,7 +201,6 @@
     "Company Brain/repos/career-ops/web/src/app/api/tracker/delete/route.ts",
     "Company Brain/repos/career-ops/web/src/app/api/explore/ai/known",
     "Company Brain/repos/career-ops/web/src/app/api/report/shape/route.ts",
-    "Company Brain/repos/career-ops/web/src/app/api/runs/save/route.ts",
     "Company Brain/repos/career-ops/web/src/lib/report/FORMAT.md",
     "Company Brain/repos/career-ops/web/src/assets/fonts/README.md",
     "Company Brain/repos/career-ops/web/src/app/icon.svg",
@@ -224,8 +226,6 @@
     "Company Brain/repos/career-ops/test-fixtures/upgrade/state-v1.16/data/follow-ups.md",
     "Company Brain/repos/career-ops/test-fixtures/upgrade/state-v1.16/data/applications.md",
     "Company Brain/repos/career-ops/test-fixtures/upgrade/state-v1.18/cv.md",
-    "Company Brain/repos/career-ops/test-fixtures/upgrade/state-v1.16/cv.md",
-    "Company Brain/repos/career-ops/templates/blacklist.example.md",
     "Company Brain/repos/career-ops/docs/press/producthunt.svg",
     "Company Brain/repos/career-ops/docs/press/business-insider.svg",
     "Company Brain/repos/career-ops/docs/press/wired.svg"
