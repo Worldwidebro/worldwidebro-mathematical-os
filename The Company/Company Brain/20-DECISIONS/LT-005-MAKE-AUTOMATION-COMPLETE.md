@@ -1,4 +1,9 @@
 # LT-005 Charlotte, NC — Medical Facility Courier Automation
+
+**STATUS: ✅ DEPLOYED** (Make Scenario #6252367)  
+**Deployed:** 2026-09-12T17:46:03.704Z  
+**Schedule:** Every 6 hours (21,600 seconds)  
+**First Execution:** 2026-09-12T23:46:00Z  
 **Revenue Target:** $85-150 per delivery × 3-5 bookings/week = **$1,275-$3,750/week**
 
 ---

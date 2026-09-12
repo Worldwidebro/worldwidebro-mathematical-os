@@ -11,7 +11,7 @@
 | **GitHub** | ✅ LIVE | None | — | Connected, commits working |
 | **Obsidian** | ⚠️ PARTIAL | Multiple vaults, unclear primary | MEDIUM | Consolidate vault + sync setup |
 | **Vapi** | ✅ LIVE | None verified | — | Credentials found, wiring needed |
-| **Make.com** | 🔴 BLOCKED | Admin permission scopes | **HIGH** | Fix MCP auth (blocker B1-B6) |
+| **Make.com** | ✅ LIVE | None (auth fixed Sep 12) | — | LT-005 scenario #6252367 deployed + activated |
 | **Neo4j** | ✅ RUNNING | None | — | bolt://100.87.214.70:7687 (need test) |
 | **Qdrant** | ✅ RUNNING | None | — | http://100.87.214.70:6333 (need test) |
 

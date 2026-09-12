@@ -13,7 +13,7 @@
 | Venture | Completion Criteria | Success Proof |
 |---------|---|---|
 | **OPS-001** | 8 files committed + cold calls made | Git commit + 10 call logs |
-| **LT-005** | Env vars deployed + calls made | Vercel dashboard + call logs |
+| **LT-005** | ✅ Make scenario deployed + executing | Scenario #6252367 ACTIVATED (Sep 12, 17:46 UTC) |
 | **CALLCENTER** | Twilio creds + backend live + inbound calls | Call recording + dashboard |
 | **CON-001** | Marketing demo complete + calls made | Screenshots + call logs |
 | **RE-001** | Holdings model demo + pitch ready | Screenshots + pitch deck |
