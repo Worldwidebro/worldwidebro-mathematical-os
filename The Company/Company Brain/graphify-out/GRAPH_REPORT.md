@@ -1,16 +1,16 @@
 # Graph Report - Company Brain  (2026-09-12)
 
 ## Corpus Check
-- 3624 files · ~5,405,807 words
+- 3628 files · ~5,410,528 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 108601 nodes · 131588 edges · 9234 communities (7601 shown, 1633 thin omitted)
+- 108659 nodes · 131646 edges · 9217 communities (7593 shown, 1624 thin omitted)
 - Extraction: 93% EXTRACTED · 7% INFERRED · 0% AMBIGUOUS · INFERRED: 9778 edges (avg confidence: 0.55)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `38cafb62`
+- Built from commit: `accf1d08`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -6059,13 +6059,8 @@
 - [[_COMMUNITY_Community 6080|Community 6080]]
 - [[_COMMUNITY_Community 6081|Community 6081]]
 - [[_COMMUNITY_Community 6082|Community 6082]]
-- [[_COMMUNITY_Community 6083|Community 6083]]
-- [[_COMMUNITY_Community 6084|Community 6084]]
 - [[_COMMUNITY_Community 6085|Community 6085]]
-- [[_COMMUNITY_Community 6086|Community 6086]]
 - [[_COMMUNITY_Community 6087|Community 6087]]
-- [[_COMMUNITY_Community 6088|Community 6088]]
-- [[_COMMUNITY_Community 6089|Community 6089]]
 - [[_COMMUNITY_Community 6090|Community 6090]]
 - [[_COMMUNITY_Community 6091|Community 6091]]
 - [[_COMMUNITY_Community 6092|Community 6092]]
@@ -6096,7 +6091,6 @@
 - [[_COMMUNITY_Community 6117|Community 6117]]
 - [[_COMMUNITY_Community 6118|Community 6118]]
 - [[_COMMUNITY_Community 6119|Community 6119]]
-- [[_COMMUNITY_Community 6120|Community 6120]]
 - [[_COMMUNITY_Community 6121|Community 6121]]
 - [[_COMMUNITY_Community 6122|Community 6122]]
 - [[_COMMUNITY_Community 6123|Community 6123]]
@@ -6107,23 +6101,17 @@
 - [[_COMMUNITY_Community 6128|Community 6128]]
 - [[_COMMUNITY_Community 6129|Community 6129]]
 - [[_COMMUNITY_Community 6130|Community 6130]]
-- [[_COMMUNITY_Community 6131|Community 6131]]
-- [[_COMMUNITY_Community 6133|Community 6133]]
 - [[_COMMUNITY_Community 6134|Community 6134]]
 - [[_COMMUNITY_Community 6135|Community 6135]]
-- [[_COMMUNITY_Community 6136|Community 6136]]
 - [[_COMMUNITY_Community 6137|Community 6137]]
 - [[_COMMUNITY_Community 6138|Community 6138]]
 - [[_COMMUNITY_Community 6139|Community 6139]]
 - [[_COMMUNITY_Community 6140|Community 6140]]
 - [[_COMMUNITY_Community 6141|Community 6141]]
-- [[_COMMUNITY_Community 6142|Community 6142]]
-- [[_COMMUNITY_Community 6143|Community 6143]]
 - [[_COMMUNITY_Community 6144|Community 6144]]
 - [[_COMMUNITY_Community 6145|Community 6145]]
 - [[_COMMUNITY_Community 6146|Community 6146]]
 - [[_COMMUNITY_Community 6147|Community 6147]]
-- [[_COMMUNITY_Community 6148|Community 6148]]
 - [[_COMMUNITY_Community 6149|Community 6149]]
 - [[_COMMUNITY_Community 6150|Community 6150]]
 - [[_COMMUNITY_Community 6151|Community 6151]]
@@ -6141,11 +6129,9 @@
 - [[_COMMUNITY_Community 6163|Community 6163]]
 - [[_COMMUNITY_Community 6164|Community 6164]]
 - [[_COMMUNITY_Community 6165|Community 6165]]
-- [[_COMMUNITY_Community 6166|Community 6166]]
 - [[_COMMUNITY_Community 6167|Community 6167]]
 - [[_COMMUNITY_Community 6168|Community 6168]]
 - [[_COMMUNITY_Community 6169|Community 6169]]
-- [[_COMMUNITY_Community 6170|Community 6170]]
 - [[_COMMUNITY_Community 6171|Community 6171]]
 - [[_COMMUNITY_Community 6172|Community 6172]]
 - [[_COMMUNITY_Community 6173|Community 6173]]
@@ -6627,7 +6613,6 @@
 - [[_COMMUNITY_Community 7353|Community 7353]]
 - [[_COMMUNITY_Community 7354|Community 7354]]
 - [[_COMMUNITY_Community 7355|Community 7355]]
-- [[_COMMUNITY_Community 7356|Community 7356]]
 - [[_COMMUNITY_Community 7357|Community 7357]]
 - [[_COMMUNITY_Community 7358|Community 7358]]
 - [[_COMMUNITY_Community 7359|Community 7359]]
@@ -7156,7 +7141,6 @@
 - [[_COMMUNITY_Community 8087|Community 8087]]
 - [[_COMMUNITY_Community 8088|Community 8088]]
 - [[_COMMUNITY_Community 8090|Community 8090]]
-- [[_COMMUNITY_Community 8091|Community 8091]]
 - [[_COMMUNITY_Community 8092|Community 8092]]
 - [[_COMMUNITY_Community 8093|Community 8093]]
 - [[_COMMUNITY_Community 8095|Community 8095]]
@@ -9162,7 +9146,6 @@
 - [[_COMMUNITY_Community 10453|Community 10453]]
 - [[_COMMUNITY_Community 10454|Community 10454]]
 - [[_COMMUNITY_Community 10483|Community 10483]]
-- [[_COMMUNITY_Community 10493|Community 10493]]
 - [[_COMMUNITY_Community 10496|Community 10496]]
 - [[_COMMUNITY_Community 10506|Community 10506]]
 
@@ -9208,19 +9191,19 @@
 - 1-file cycle: `scripts/vendor/fpdf/annotations.py -> scripts/vendor/fpdf/annotations.py`
 - 3-file cycle: `scripts/vendor/fontTools/misc/filesystem/_base.py -> scripts/vendor/fontTools/misc/filesystem/_copy.py -> scripts/vendor/fontTools/misc/filesystem/_tools.py -> scripts/vendor/fontTools/misc/filesystem/_base.py`
 - 3-file cycle: `scripts/vendor/fpdf/__init__.py -> scripts/vendor/fpdf/fpdf.py -> scripts/vendor/fpdf/svg.py -> scripts/vendor/fpdf/__init__.py`
-- 4-file cycle: `scripts/vendor/fpdf/__init__.py -> scripts/vendor/fpdf/template.py -> scripts/vendor/fpdf/fpdf.py -> scripts/vendor/fpdf/svg.py -> scripts/vendor/fpdf/__init__.py`
 - 4-file cycle: `scripts/vendor/fpdf/__init__.py -> scripts/vendor/fpdf/fpdf.py -> scripts/vendor/fpdf/image_parsing.py -> scripts/vendor/fpdf/svg.py -> scripts/vendor/fpdf/__init__.py`
-- 5-file cycle: `scripts/vendor/fpdf/__init__.py -> scripts/vendor/fpdf/template.py -> scripts/vendor/fpdf/fpdf.py -> scripts/vendor/fpdf/image_parsing.py -> scripts/vendor/fpdf/svg.py -> scripts/vendor/fpdf/__init__.py`
+- 4-file cycle: `scripts/vendor/fpdf/__init__.py -> scripts/vendor/fpdf/template.py -> scripts/vendor/fpdf/fpdf.py -> scripts/vendor/fpdf/svg.py -> scripts/vendor/fpdf/__init__.py`
+- 5-file cycle: `scripts/vendor/fpdf/__init__.py -> scripts/vendor/fpdf/fpdf.py -> scripts/vendor/fpdf/text_region.py -> scripts/vendor/fpdf/image_parsing.py -> scripts/vendor/fpdf/svg.py -> scripts/vendor/fpdf/__init__.py`
 
-## Communities (9234 total, 1633 thin omitted)
+## Communities (9217 total, 1624 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.01
-Nodes (136): buildOpcodeDict(), Latin1Converter, Exception, HorizDirection, Options, UnknownOptionError, decrypt(), _decryptChar() (+128 more)
+Cohesion: 0.02
+Nodes (118): Mapping, decrypt(), _decryptChar(), deHexString(), encrypt(), _encryptChar(), PostScript Type 1 fonts make use of two types of encryption: charstring encrypti, r"""     Decrypts a string using the Type 1 encryption algorithm.      Args: (+110 more)
 
 ### Community 1 - "Community 1"
-Cohesion: 0.12
-Nodes (4): Compact Font Format version 2 table      The ``CFF2`` table contains glyph data, table_C_F_F__2, Compact Font Format table (version 1)      The ``CFF`` table embeds a CFF-format, table_C_F_F_
+Cohesion: 0.05
+Nodes (38): BytesIO, Returns the designspace as a string. Default encoding ``utf-8``., ccitt_payload_location_from_pil(), clear_table(), _decode_base64_image(), get_img_info(), get_svg_info(), _has_alpha() (+30 more)
 
 ### Community 2 - "Community 2"
 Cohesion: 0.09
@@ -9235,16 +9218,16 @@ Cohesion: 0.07
 Nodes (38): main(), Check if repo looks like spam/irrelevant.          Args:             repo: Repos, Remove duplicate repositories by full_name.          Args:             repos: Li, Classify repos and add normalization flags.          Args:             repos: Li, Validate and clean metadata.          Args:             repos: List of repositor, Execute full normalization pipeline., Save normalized repositories to JSON., Normalize, deduplicate, and validate repositories. (+30 more)
 
 ### Community 5 - "Community 5"
-Cohesion: 0.04
-Nodes (54): build(), main(), Add `avar` table from designspace file to variable font., main(), _denormalize(), main(), map(), Map variation coordinates through the `avar` table. (+46 more)
+Cohesion: 0.02
+Nodes (71): build(), main(), Add `avar` table from designspace file to variable font., main(), _denormalize(), main(), map(), Map variation coordinates through the `avar` table. (+63 more)
 
 ### Community 6 - "Community 6"
 Cohesion: 0.50
 Nodes (3): 1. Master Cold Email Copy (Variant 1), 2. Master Links, COPY — Direct-Response Copywriting Standards & Scripts
 
 ### Community 7 - "Community 7"
-Cohesion: 0.05
-Nodes (30): AxisLabelDescriptor, AxisMappingDescriptor, evaluateConditions(), evaluateRule(), posixpath_property(), processRules(), RangeAxisSubsetDescriptor, designSpaceDocument      - Read and write designspace files (+22 more)
+Cohesion: 0.06
+Nodes (29): AsDictMixin, AxisMappingDescriptor, evaluateConditions(), evaluateRule(), posix(), posixpath_property(), processRules(), RangeAxisSubsetDescriptor (+21 more)
 
 ### Community 8 - "Community 8"
 Cohesion: 0.06
@@ -9263,12 +9246,12 @@ Cohesion: 0.00
 Nodes (1338): Communities (2035 total, 807 thin omitted), Community 0 - "Community 0", Community 1000 - "Community 1000", Community 1001 - "Community 1001", Community 1002 - "Community 1002", Community 1003 - "Community 1003", Community 1004 - "Community 1004", Community 1005 - "Community 1005" (+1330 more)
 
 ### Community 12 - "Community 12"
-Cohesion: 0.01
-Nodes (142): Return TopDict instance identified by name (str) or index (int         or any ob, AsDictMixin, ttList(), ChannelsFilter, deprecateArgument(), deprecateFunction(), Provides a hierarchical filter for log entries based on channel names.      Filt, Raise a warning about deprecated function argument 'name'. (+134 more)
+Cohesion: 0.02
+Nodes (81): ttList(), KernTable_format_0, fontTools.ttLib -- a package for dealing with TrueType fonts., TTLibError, TTLibFileIsCollectionError, main(), Open/save fonts with TTFont() or TTCollection()        ./fonttools ttLib [-oFILE, calcChecksum() (+73 more)
 
 ### Community 13 - "Community 13"
-Cohesion: 0.08
-Nodes (17): Flag, FontDescriptorFlags, An enumeration of the flags for the unsigned 32-bit integer entry in the font de, Glyph, HarfBuzzFont, PDFFontDescriptor, uharfbuzz.Font than can be deepcopied, When texts are shaped, the length of a string is not always the sum of all indiv (+9 more)
+Cohesion: 0.03
+Nodes (86): AbstractPointPen, Minimal backport of Python 3.11's StrEnum for older versions.          An Enum w, StrEnum, LogMixin, Mixin class that adds logging functionality to another class.      You can defin, AbstractPen, DecomposingPen, MissingComponentError (+78 more)
 
 ### Community 14 - "Community 14"
 Cohesion: 0.04
@@ -9287,8 +9270,8 @@ Cohesion: 0.04
 Nodes (48): 10. MANAGEMENT & TEAM, 11. RISK FACTORS, 12. APPENDICES, 1. EXECUTIVE SUMMARY, 2. COMPANY OVERVIEW, 3. THE MARKET PROBLEM, 4. OUR SOLUTION, 5. BUSINESS MODEL & PRICING (+40 more)
 
 ### Community 18 - "Community 18"
-Cohesion: 0.08
-Nodes (25): AgentEngineerAgent, AgentResult, AIEvaluationAgent, BaseAgent, Company, Event, GenericRoleAgent, HumanRequired (+17 more)
+Cohesion: 0.03
+Nodes (28): PenError, Represents an error during penning., CairoPen, Pen to draw to a Cairo graphics library context., Pen to draw to a Cairo graphics library context., BasePointToSegmentPen, GuessSmoothPointPen, ========= PointPens =========  Where **SegmentPens** have an intuitive approach (+20 more)
 
 ### Community 19 - "Community 19"
 Cohesion: 0.04
@@ -9311,8 +9294,8 @@ Cohesion: 0.09
 Nodes (21): DealFlowOSAgents, main(), OmniRouteClient, bool, float, int, str, Single (non-streaming) invocation (+13 more)
 
 ### Community 24 - "Community 24"
-Cohesion: 0.10
-Nodes (22): Error, IncompatibleFontsError, IncompatibleGlyphsError, IncompatibleSegmentNumberError, IncompatibleSegmentTypesError, Base Cu2Qu exception class for all other errors., UnequalZipLengthsError, font_to_quadratic() (+14 more)
+Cohesion: 0.04
+Nodes (66): _copytree(), _cpu_count(), _font_to_quadratic(), _main(), open_ufo(), Convert a UFO font from cubic to quadratic curves, _samepath(), calc_cubic_parameters() (+58 more)
 
 ### Community 25 - "Community 25"
 Cohesion: 0.05
@@ -9388,7 +9371,7 @@ Nodes (34): 5 Ventures: Integrated Legal + Financial Ecosystem Summary, Authorit
 
 ### Community 44 - "Community 44"
 Cohesion: 0.02
-Nodes (102): PrivateDictDecompiler, TopDictDecompiler, TableUnbuilder, LazyList, int, CountReference, FormatSwitchingBaseTable, OTTableReader (+94 more)
+Nodes (99): PrivateDictDecompiler, TopDictDecompiler, TableUnbuilder, LazyList, int, CountReference, FormatSwitchingBaseTable, OTTableReader (+91 more)
 
 ### Community 46 - "Community 46"
 Cohesion: 0.06
@@ -9507,8 +9490,8 @@ Cohesion: 0.07
 Nodes (29): 22-Stage Cognitive Pipeline, 36 Organizational Bases, 9 Cognitive Fabrics, Architecture Overview, CAPABILITY_REGISTRY.yaml, Central Abstraction: Capability Registry, COGNITION_FLOW.yaml, Connected Architecture (+21 more)
 
 ### Community 76 - "Community 76"
-Cohesion: 0.18
-Nodes (3): ProgressPrinter, TTXParseError, XMLReader
+Cohesion: 0.04
+Nodes (74): LayerReuseCache, ProgressPrinter, TTXParseError, XMLReader, int, DefaultTable, We first re-order the master coordinate values.         For a moveto to lineto,, FoundANone (+66 more)
 
 ### Community 77 - "Community 77"
 Cohesion: 0.06
@@ -9611,8 +9594,8 @@ Cohesion: 0.13
 Nodes (23): auto_deploy, description, host, isolation, environments, development, production, staging (+15 more)
 
 ### Community 102 - "Community 102"
-Cohesion: 0.05
-Nodes (72): BaseGlyphList, ClipBox, _ClipBoxInput, ClipList, _ColorGlyphsDict, _ColorGlyphsV0Dict, _beforeBuildPaintRadialGradient(), buildBaseGlyphPaintRecord() (+64 more)
+Cohesion: 0.06
+Nodes (58): BaseGlyphList, ClipBox, _ClipBoxInput, ClipList, _ColorGlyphsDict, _ColorGlyphsV0Dict, buildBaseGlyphPaintRecord(), buildClipBox() (+50 more)
 
 ### Community 103 - "Community 103"
 Cohesion: 0.06
@@ -9755,8 +9738,8 @@ Cohesion: 0.12
 Nodes (16): 1. CLI Schema Definition ✅, 2. CLI Implementation ✅, 3. CLI Bootstrap Generator ✅, 4. Complete Documentation ✅, Architecture Integration, Authority & Verification, CLI Implementation — Completion Report ✅, Commands Delivered (+8 more)
 
 ### Community 138 - "Community 138"
-Cohesion: 0.08
-Nodes (16): AbstractAxisDescriptor, AxisDescriptor, DiscreteAxisDescriptor, Maps value from axis mapping's input (user) to output (design)., Container for discrete axis data.      Use this for axes that do not interpolate, Maps value from axis mapping's input to output.          Returns value unchanged, Maps value from axis mapping's output to input.          Returns value unchanged, Return the English name from :attr:`labelNames` or the :attr:`name`. (+8 more)
+Cohesion: 0.07
+Nodes (18): AbstractAxisDescriptor, AxisDescriptor, DiscreteAxisDescriptor, Maps value from axis mapping's input (user) to output (design)., Maps value from axis mapping's output (design) to input (user)., Container for discrete axis data.      Use this for axes that do not interpolate, Maps value from axis mapping's input to output.          Returns value unchanged, Maps value from axis mapping's output to input.          Returns value unchanged (+10 more)
 
 ### Community 139 - "Community 139"
 Cohesion: 0.07
@@ -9872,7 +9855,7 @@ Nodes (14): find-skills/SKILL.md, Common Skill Categories, Find Skills, How to H
 
 ### Community 167 - "Community 167"
 Cohesion: 0.01
-Nodes (111): _convertCFF2ToCFF(), Converts this object from CFF2 format to CFF format. This conversion     is done, _convertCFFToCFF2(), _NominalWidthUsedError, CFF to CFF2 converter., Converts this object from CFF format to CFF2 format. This conversion     is done, addConverters(), ArrayConverter (+103 more)
+Nodes (113): _convertCFF2ToCFF(), Converts this object from CFF2 format to CFF format. This conversion     is done, _convertCFFToCFF2(), Converts this object from CFF format to CFF2 format. This conversion     is done, addConverters(), ArrayConverter, ASCIIConverter, BaseDict (+105 more)
 
 ### Community 168 - "Community 168"
 Cohesion: 0.07
@@ -9891,8 +9874,8 @@ Cohesion: 0.06
 Nodes (32): identity-graph-operator/SKILL.md, 🚀 Advanced Capabilities, Coordinate Multi-Agent Identity Decisions, 🚨 Critical Rules You Must Follow, Cross-Framework Identity Federation, Decision Table: Direct Mutation vs. Proposals, Determinism Above All, Evidence Over Assertion (+24 more)
 
 ### Community 172 - "Community 172"
-Cohesion: 0.08
-Nodes (14): decomposeSuperBezierSegment(), Split the SuperBezier described by 'points' into a list of regular     bezier se, Cu2QuMultiPen, Cu2QuPen, Cu2QuPointPen, A filter multi-pen to convert cubic bezier curves to quadratic b-splines     in, A filter pen to convert cubic bezier curves to quadratic b-splines     using the, A filter pen to convert cubic bezier curves to quadratic b-splines     using the (+6 more)
+Cohesion: 0.06
+Nodes (19): pairwise(), Iterate over current and next items in iterable.      Args:         iterable: An, decomposeQuadraticSegment(), decomposeSuperBezierSegment(), This method implements the basic quadratic curve type. The         default imple, Split the SuperBezier described by 'points' into a list of regular     bezier se, Split the quadratic curve segment described by 'points' into a list     of "atom, Cu2QuMultiPen (+11 more)
 
 ### Community 173 - "Community 173"
 Cohesion: 0.13
@@ -9900,7 +9883,7 @@ Nodes (14): Completed Items 1-4, Configuration Checklist, Files Created, Git Com
 
 ### Community 174 - "Community 174"
 Cohesion: 0.01
-Nodes (233): BytesIO, Arc, BezierCurve, ClippingPath, Close, cmyk8(), Ellipse, force_document() (+225 more)
+Nodes (223): DeviceCMYK, DeviceGray, DeviceRGB, Flag, Arc, BezierCurve, ClippingPath, Close (+215 more)
 
 ### Community 175 - "Community 175"
 Cohesion: 0.14
@@ -9975,8 +9958,8 @@ Cohesion: 0.10
 Nodes (19): CAPTURE JOB ORDER DETAILS (3–4 min), CLOSING (if not converting), Cold-Call Playbook — OPS-001 Staffing, COMMON OBJECTIONS & REBUTTALS, DAILY BATCH PROCESS, Day 0: Same-Call Follow-Up, Day 1 (tomorrow): EMAIL — "Here's who I'm thinking of", Day 30: IF NOT YET CONVERTED — Callback (+11 more)
 
 ### Community 193 - "Community 193"
-Cohesion: 0.13
-Nodes (8): BaseDocReader, DesignSpaceDocumentError, Read a nested ``<location>`` element inside the given ``element``.          .. v, Read a ``<location>`` element.          .. versionchanged:: 5.0            Retur, Read the lib element for the given instance., Read the info element., Read the glyph element, which could look like either one of these:          .. c, Read the lib element for the whole document.
+Cohesion: 0.07
+Nodes (16): AnisotropicLocationDict, BaseDocReader, DesignSpaceDocumentError, InstanceDescriptor, Read a nested ``<location>`` element inside the given ``element``.          .. v, Read a ``<location>`` element.          .. versionchanged:: 5.0            Retur, Read the lib element for the given instance., Read the info element. (+8 more)
 
 ### Community 194 - "Community 194"
 Cohesion: 0.09
@@ -10152,11 +10135,11 @@ Nodes (10): qwen-fast, qwen-heavy, SRV-LITELLM-001, container, fallbacks, host, 
 
 ### Community 237 - "Community 237"
 Cohesion: 0.02
-Nodes (197): _ExifBase, Filter, ImagePointHandler, ImageQt, ImageTransformHandler, ImagingDecoder, ImagingEncoder, alpha_composite() (+189 more)
+Nodes (195): _ExifBase, Filter, ImagePointHandler, ImageQt, ImageTransformHandler, ImagingDecoder, ImagingEncoder, alpha_composite() (+187 more)
 
 ### Community 238 - "Community 238"
 Cohesion: 0.01
-Nodes (144): Represents a STAT table ``name`` statement., STATNameStatement, _addName(), AlternateSubstBuilder, AnySubstBuilder, buildAlternateSubstSubtable(), buildAnchor(), buildAttachList() (+136 more)
+Nodes (143): Represents a STAT table ``name`` statement., STATNameStatement, _addName(), AlternateSubstBuilder, AnySubstBuilder, buildAlternateSubstSubtable(), buildAnchor(), buildAttachList() (+135 more)
 
 ### Community 239 - "Community 239"
 Cohesion: 0.20
@@ -10206,6 +10189,10 @@ Nodes (20): 1. Component Configuration Subdirectories, 1. Executive Summary & Ha
 Cohesion: 0.06
 Nodes (31): marketing-seo-specialist/SKILL.md, Advanced Capabilities, AI Search & SGE Adaptation, Algorithm Recovery, Cannibalization Audit Template, Cannibalization Audit Without GSC (Pre-Access Fallback), Cannibalization Prevention (MANDATORY before any optimization), Communication Style (+23 more)
 
+### Community 251 - "Community 251"
+Cohesion: 0.11
+Nodes (6): hashdict, hashable dict implementation, suitable for use as a key into     other dicts., _Dict, _Object, Graphite Glyph Attributes table      See also https://graphite.sil.org/graphite_, table_G__l_a_t
+
 ### Community 252 - "Community 252"
 Cohesion: 0.50
 Nodes (3): 1. The 10 Pipeline Stages, 2. Connected Subsystems, _PIPELINES — Cognitive & Execution Data Pipelines Hub
@@ -10223,8 +10210,8 @@ Cohesion: 0.07
 Nodes (27): CAPITAL EFFICIENCY METRICS, Capital Multiplier Target, CONTROL PLANE INTEGRATION, CORRELATION ANALYSIS: SECTOR RISK, Deployment Velocity Target, DYNAMIC REBALANCING (Quarterly Review), EXECUTIVE SUMMARY, HEDGE STRATEGY (+19 more)
 
 ### Community 256 - "Community 256"
-Cohesion: 0.12
-Nodes (9): Control Value Table (CVT) variations table      The ``cvar`` table contains vari, table__c_v_a_r, decompileSharedTuples(), decompileTupleVariation_(), decompileTupleVariationStore(), inferRegion_(), (numPoints, data, offset, tableTag) --> ([point1, point2, ...], newOffset), (numDeltas, data, offset) --> ([delta, delta, ...], newOffset) (+1 more)
+Cohesion: 0.03
+Nodes (63): Return TopDict instance identified by name (str) or index (int         or any ob, Adds an axis variations table to the font.          Args:             axes (list, Add conditional substitutions to a Variable Font.          See `fontTools.varLib, HorizDirection, deprecateArgument(), Raise a warning about deprecated function argument 'name'., KeyError, str (+55 more)
 
 ### Community 257 - "Community 257"
 Cohesion: 0.07
@@ -11124,7 +11111,7 @@ Nodes (5): 1. High-Conversion Objection Handling Scripts, 2. Master Links, Objec
 
 ### Community 483 - "Community 483"
 Cohesion: 0.01
-Nodes (130): get_stack_level(), Get the first place in the call stack that is not inside fpdf2, FPDF, get_page_format(), Header to be implemented in your own inherited class          This is automatica, Footer to be implemented in your own inherited class.          This is automatic, Get the current page number, Return the current page `fpdf.output.PDFPageLabel`.         This will be display (+122 more)
+Nodes (127): get_stack_level(), Get the first place in the call stack that is not inside fpdf2, FPDF, get_page_format(), Header to be implemented in your own inherited class          This is automatica, Footer to be implemented in your own inherited class.          This is automatic, Get the current page number, Return the current page `fpdf.output.PDFPageLabel`.         This will be display (+119 more)
 
 ### Community 484 - "Community 484"
 Cohesion: 0.29
@@ -11132,7 +11119,7 @@ Nodes (3): main(), str, render_solution_markdown()
 
 ### Community 485 - "Community 485"
 Cohesion: 0.15
-Nodes (13): package.json, OWN-PRIV-0054, dep_count, dependencies, dev_dependencies, manifest_files, repo_name, OWN-PRIV-0067 (+5 more)
+Nodes (13): package.json, OWN-PRIV-0004, dep_count, dependencies, dev_dependencies, manifest_files, repo_name, OWN-PRIV-0067 (+5 more)
 
 ### Community 486 - "Community 486"
 Cohesion: 0.07
@@ -11163,12 +11150,12 @@ Cohesion: 0.33
 Nodes (6): OWN-PRIV-0039, dep_count, dependencies, dev_dependencies, manifest_files, repo_name
 
 ### Community 493 - "Community 493"
-Cohesion: 0.11
-Nodes (28): calc_cubic_parameters(), calc_cubic_points(), calc_intersect(), _complex_div_by_real(), cubic_approx_control(), cubic_approx_quadratic(), cubic_approx_spline(), cubic_farthest_fit_inside() (+20 more)
+Cohesion: 0.04
+Nodes (43): _beforeBuildPaintRadialGradient(), Circle, Helpers for manipulating 2D points and vectors in COLR table., Round start circle so that it stays inside/outside end circle after rounding., _round_point(), round_start_circle_stable_containment(), _rounding_offset(), _unit_vector() (+35 more)
 
 ### Community 494 - "Community 494"
 Cohesion: 0.05
-Nodes (36): MomentsPen, main(), Pen calculating area, center of mass, variance and standard-deviation, covarianc, Report font glyph shape geometricsl statistics, Pen calculating area, center of mass, variance and     standard-deviation, covar, Pen calculating area, center of mass, variance and     standard-deviation, covar, StatisticsBase, StatisticsControlPen (+28 more)
+Nodes (39): OpenContourError, MomentsPen, lerpRecordings(), Linearly interpolate between two recordings. The recordings     must be decompos, main(), Pen calculating area, center of mass, variance and standard-deviation, covarianc, Report font glyph shape geometricsl statistics, Pen calculating area, center of mass, variance and     standard-deviation, covar (+31 more)
 
 ### Community 495 - "Community 495"
 Cohesion: 0.33
@@ -11356,7 +11343,7 @@ Nodes (26): CONNECTED SYSTEMS & WIKI LINKS, CONVERSION MATH, DEAL KILLERS:, DEAL
 
 ### Community 541 - "Community 541"
 Cohesion: 0.02
-Nodes (162): i16be(), i16le(), i32be(), i32le(), i8(), o16be(), o16le(), o32le() (+154 more)
+Nodes (178): IntFlag, i16be(), i16le(), i32be(), i32le(), i8(), o16be(), o16le() (+170 more)
 
 ### Community 542 - "Community 542"
 Cohesion: 0.10
@@ -12511,8 +12498,8 @@ Cohesion: 0.40
 Nodes (5): models/README.md, Examples, Format, Registry, Status
 
 ### Community 830 - "Community 830"
-Cohesion: 0.08
-Nodes (131): float, FontFace, URIAction, AnnotationDict, PDFEmbeddedFile, A PDF annotation that get serialized as an inline <<dictionary>>, BidiParagraph, WarnOnDeprecatedModuleAttributes (+123 more)
+Cohesion: 0.07
+Nodes (145): float, FontFace, URIAction, AnnotationDict, PDFEmbeddedFile, A PDF annotation that get serialized as an inline <<dictionary>>, BidiParagraph, Utilities to manage deprecation errors & warnings.  The contents of this module (+137 more)
 
 ### Community 831 - "Community 831"
 Cohesion: 0.08
@@ -12895,14 +12882,8 @@ Cohesion: 0.50
 Nodes (3): 1. Webhook & Event Protocol, 2. Master Links, TRACKING — Telemetry Implementation & Webhook Protocols
 
 ### Community 926 - "Community 926"
-Cohesion: 0.08
-Nodes (31): claudeDir, {
-  clearMode,
-  isCodex,
-  isCopilot,
-  setMode,
-  writeHookOutput,
-}, fs, { getDefaultMode, getClaudeDir, isShellSafe }, { getPonytailInstructions }, mode, output, path (+23 more)
+Cohesion: 0.07
+Nodes (26): _add_new_vsindex(), addCFFVarStore(), CFF2CharStringMergePen, _cff_or_cff2(), CFFToCFF2OutlineExtractor, conv_to_int(), _get_cs(), get_private() (+18 more)
 
 ### Community 927 - "Community 927"
 Cohesion: 0.50
@@ -13457,8 +13438,8 @@ Cohesion: 0.08
 Nodes (25): 1️⃣ RECRUIT 3 DRIVERS (Blocker), 2️⃣ PROSPECT LIST + PHONE NUMBERS (Prep), 3️⃣ SCRIPT PREPARATION (Mental Prep), DECISION GATES, DEPLOYMENT VERIFICATION, For Follow-up:, For Sep 11-14:, For Today (Sep 10): (+17 more)
 
 ### Community 1065 - "Community 1065"
-Cohesion: 0.14
-Nodes (3): asb adx ady bchar achar seac, T1OutlineExtractor, T2WidthExtractor
+Cohesion: 0.05
+Nodes (40): 10. Billing Loop, 11. Accounts Receivable Loop, 12. Customer Success Loop, 13. Expansion Loop, 14. Churn Prevention Loop, 15. Referral Loop, 16. Reputation Loop, 17. Marketing Content Loop (+32 more)
 
 ### Community 1067 - "Community 1067"
 Cohesion: 0.08
@@ -14145,8 +14126,8 @@ Cohesion: 0.08
 Nodes (24): 10. SEC-030: Fintech & Payments (Standalone) — 22 Ventures (2.8%), 11. SEC-020: Real Estate & Property — 1 Venture (0.1%), 1. SEC-024: Technology & Software — 243 Ventures (30.8%), 2. SEC-029: Marketplace & Platform — 120 Ventures (15.2%), 3. SEC-014: HR & Staffing Operations — 117 Ventures (14.8%), 4. SEC-008/030: Financial Services & Fintech — 98 Ventures (12.4%), 5. SEC-004/019: Content & Media & Marketing — 71 Ventures (9.0%), 6. SEC-005: Education & Training — 56 Ventures (7.1%) (+16 more)
 
 ### Community 1266 - "Community 1266"
-Cohesion: 0.13
-Nodes (9): ps_array, ps_dict, ps_file, ps_font, ps_null, ps_object, _type1_CharString_repr(), _type1_Encoding_repr() (+1 more)
+Cohesion: 0.18
+Nodes (18): CreateFailed, DirectoryNotEmpty, FSError, IllegalDestination, OperationFailed, ResourceError, OSFS, Filesystem for a directory on the local disk.      A thin layer on top of `pathl (+10 more)
 
 ### Community 1267 - "Community 1267"
 Cohesion: 0.08
@@ -14165,8 +14146,14 @@ Cohesion: 0.08
 Nodes (23): 🟢 ACTIVE SECTORS: 16 → 789 VENTURES, Complete 37-Sector Mapping: 789 Ventures Properly Distributed, CORRECTED VENTURE DISTRIBUTION, DETAILED BREAKDOWN BY SECTOR, ⏳ DISCOVERY SECTORS: 21 → 0 VENTURES (Ready for Expansion), KEY FINDINGS, MASTER SECTOR TABLE - ALL 37 SECTORS, SEC-001: Beauty & Wellness — 40 ventures (+15 more)
 
 ### Community 1271 - "Community 1271"
-Cohesion: 0.06
-Nodes (43): fs, getClaudeDir(), getConfigDir(), getConfigPath(), getDefaultMode(), getHideStatus(), getQuietStartup(), normalizeConfigMode() (+35 more)
+Cohesion: 0.04
+Nodes (83): claudeDir, {
+  clearMode,
+  isCodex,
+  isCopilot,
+  setMode,
+  writeHookOutput,
+}, fs, { getDefaultMode, getClaudeDir, isShellSafe }, { getPonytailInstructions }, mode, output, path (+75 more)
 
 ### Community 1272 - "Community 1272"
 Cohesion: 0.17
@@ -15058,7 +15045,7 @@ Nodes (38): 🚀 Advanced Capabilities, Blameless Culture, Build Incident Readin
 
 ### Community 2196 - "Community 2196"
 Cohesion: 0.09
-Nodes (23): agents, broker_communications, compliance_monitoring, driver_scheduling, invoice_automation, load_finder, maintenance_forecasting, rate_negotiation (+15 more)
+Nodes (23): agents, compliance_monitoring, driver_scheduling, invoice_automation, load_finder, maintenance_forecasting, rate_negotiation, safety_routing (+15 more)
 
 ### Community 2197 - "Community 2197"
 Cohesion: 0.18
@@ -15261,16 +15248,16 @@ Cohesion: 0.33
 Nodes (5): 1. Active Market Offers, 2. Outreach & Target Pipeline, 3. Connected Control Planes & Portals, COMMERCIAL — Active B2B Offers & Revenue Engine, Offer Highlights: Local AI Audit ($7,500)
 
 ### Community 2247 - "Community 2247"
-Cohesion: 0.11
-Nodes (7): eblc_index_sub_table_1, eblc_index_sub_table_2, eblc_index_sub_table_3, eblc_index_sub_table_4, eblc_index_sub_table_5, EblcIndexSubTable, FixedSizeIndexSubTableMixin
+Cohesion: 0.08
+Nodes (18): FlexTemplate, PDF template helpers for fpdf2.  Usage documentation at: <https://py-pdf.github., Allow hex and oct values for colors, Load the template definition from a JSON file.         The data must be structur, Load the template definition from a CSV file.          Args:             infile, Split a string between words, for the parts to fit into a given element, A flexible templating class.      Allows to apply one or several template defini, Args:             pdf (fpdf.fpdf.FPDF): All content will be added to this `FPDF` (+10 more)
 
 ### Community 2248 - "Community 2248"
 Cohesion: 0.05
 Nodes (36): Advanced Capabilities, Advanced Prompt Patterns, Cinematic Portrait, Critical Rules You Must Follow, Environment & Setting Layer, Environmental Portrait, Example Prompt Templates, Fashion Photography (+28 more)
 
 ### Community 2249 - "Community 2249"
-Cohesion: 0.33
-Nodes (6): OWN-PRIV-0004, dep_count, dependencies, dev_dependencies, manifest_files, repo_name
+Cohesion: 0.13
+Nodes (16): MissingInfoNamespace, epoch_to_datetime(), Info, Convert epoch time to a UTC datetime., ClosingSubFS, Like SubFS, but auto-closes the parent filesystem when closed., Walk files using a *breadth first* search., Any (+8 more)
 
 ### Community 2250 - "Community 2250"
 Cohesion: 0.09
@@ -15562,7 +15549,7 @@ Nodes (4): Checklist Mode — Phase Validation, Implement Mode — Secure by Def
 
 ### Community 2322 - "Community 2322"
 Cohesion: 0.02
-Nodes (56): _everyN(), _GeneralizerDecombinerCommandsMap, Group the list el into groups of size n, Returns the designspace as a string. Default encoding ``utf-8``., color_from_rgb_string(), Parse an RGB color from a css-style rgb(R, G, B, A) color string.      Args:, Attempt to coerce `value` into a member of this enumeration.          If value i, Attempt to coerce `value` into a member of this enumeration.          If value i (+48 more)
+Nodes (70): _everyN(), _GeneralizerDecombinerCommandsMap, Group the list el into groups of size n, color_from_rgb_string(), Parse an RGB color from a css-style rgb(R, G, B, A) color string.      Args:, Attempt to coerce `value` into a member of this enumeration.          If value i, Attempt to coerce `value` into a member of this enumeration.          If value i, Attempt to coerce `value` into a member of this enumeration.          If value i (+62 more)
 
 ### Community 2323 - "Community 2323"
 Cohesion: 0.05
@@ -15802,7 +15789,7 @@ Nodes (32): 1. Architecture Audit, 2. SO Asset Design, 3. Component Decompositio
 
 ### Community 2394 - "Community 2394"
 Cohesion: 0.08
-Nodes (44): build_context(), ContextEntityResponse, ContextRequest, ContextResponse, find_paths(), get_entity(), health(), http_exception_handler() (+36 more)
+Nodes (40): build_context(), ContextEntityResponse, ContextRequest, ContextResponse, get_entity(), health(), http_exception_handler(), hybrid_query() (+32 more)
 
 ### Community 2395 - "Community 2395"
 Cohesion: 0.06
@@ -15849,8 +15836,8 @@ Cohesion: 0.06
 Nodes (31): 🚀 Advanced Capabilities, Agentic RAG, Async Ingestion Pipeline, Chunking Strategy — Semantic + Structural, Contextual Compression, 🚨 Critical Rules You Must Follow, Cross-Encoder Re-Ranking, Embedding Model Fine-tuning (+23 more)
 
 ### Community 2406 - "Community 2406"
-Cohesion: 0.21
-Nodes (6): BaseDocWriter, Try to use the version specified in the document, or a sufficiently         rece, Convert Location dict to a locationElement., Any, DesignSpaceDocument, Element
+Cohesion: 0.15
+Nodes (10): AxisLabelDescriptor, BaseDocWriter, Container for axis label data.      Analogue of OpenType's STAT data for a singl, Determine which format of STAT Axis value to use to encode this label., Try to use the version specified in the document, or a sufficiently         rece, Convert Location dict to a locationElement., Any, DesignSpaceDocument (+2 more)
 
 ### Community 2407 - "Community 2407"
 Cohesion: 0.06
@@ -15869,8 +15856,8 @@ Cohesion: 0.06
 Nodes (31): 1. Real-Time Trend Intelligence & Signal Detection, 2. Market Opportunity Extraction (Trend → Action), 3. Cross-Platform Localization Strategy, 4. GTM Execution & Lifecycle Management, 🚀 Advanced Capabilities, China-Global Bridge Strategy, China Market Localization Strategist, Crisis & Sentiment Management (+23 more)
 
 ### Community 2411 - "Community 2411"
-Cohesion: 0.17
-Nodes (15): ConversionError, ConversionFailed, ConversionNotPossible, FileNotFoundError, load_registry(), PrivacyViolation, Any, Base conversion error (+7 more)
+Cohesion: 0.06
+Nodes (43): ConversionError, ConversionFailed, ConversionNotPossible, ConversionResult, DecisionTree, EngineExecutor, file_convert(), FileNotFoundError (+35 more)
 
 ### Community 2412 - "Community 2412"
 Cohesion: 0.06
@@ -15889,8 +15876,8 @@ Cohesion: 0.06
 Nodes (31): 🚀 Advanced Capabilities, Build the Knowledge Network, Companion Skills (Optional), 🚨 Critical Rules You Must Follow, Daily Log Entry Example, Deep-reading output example (structure note), Deliverable Template (Task Close), Domain–Expert Mapping (Quick Reference) (+23 more)
 
 ### Community 2416 - "Community 2416"
-Cohesion: 0.09
-Nodes (23): AgentContext, AgentContextBuilder, ContextEntity, int, str, KG-028: Agent Context Assembly — Build relevant subgraph for any agent Given age, Fetch single entity by ID, Fetch all related entities within N hops.         Returns: (entities, relationsh (+15 more)
+Cohesion: 0.11
+Nodes (18): AgentContextBuilder, int, str, Fetch single entity by ID, Fetch all related entities within N hops.         Returns: (entities, relationsh, Analyze context for risks (dependencies, single-points-of-failure, etc.), Analyze context for opportunities (synergies, collaboration, etc.), Find shared technology that multiple ventures depend on (+10 more)
 
 ### Community 2417 - "Community 2417"
 Cohesion: 0.06
@@ -16186,7 +16173,7 @@ Nodes (12): audit_all_ventures(), bool, str, Check if page loads within 3 second
 
 ### Community 2490 - "Community 2490"
 Cohesion: 0.05
-Nodes (27): buildCmapSubTable(), FontBuilder, Initialize a FontBuilder instance.          If the `font` argument is not given,, Save the font. The 'file' argument can be either a pathname or a         writabl, Create a new `head` table and initialize it with default values,         which c, Update the head table with the fields and values passed as         keyword argum, Set the glyph order for the font., Build the `cmap` table for the font. The `cmapping` argument should         be a (+19 more)
+Nodes (24): buildCmapSubTable(), FontBuilder, Initialize a FontBuilder instance.          If the `font` argument is not given,, Save the font. The 'file' argument can be either a pathname or a         writabl, Create a new `head` table and initialize it with default values,         which c, Update the head table with the fields and values passed as         keyword argum, Set the glyph order for the font., Build the `cmap` table for the font. The `cmapping` argument should         be a (+16 more)
 
 ### Community 2491 - "Community 2491"
 Cohesion: 0.07
@@ -16709,8 +16696,8 @@ Cohesion: 0.07
 Nodes (26): Additional P1 Vulnerabilities, Budget, CRITICAL PATH ITEMS, DECISION GATES, Gates 1-5 + Phases 6-8 (13-15 Week Timeline), Master Execution Roadmap — ops-staff-001-staffing, NEXT STEPS, P0-001: Complete Absence of API Authentication (+18 more)
 
 ### Community 2621 - "Community 2621"
-Cohesion: 0.06
-Nodes (8): {dxa dya dxb dyb dxc dyc}+ rrcurveto, {dxa dya dxb dyb dxc dyc}+ dxd dyd rcurveline, {dxa dya}+ dxb dyb dxc dyc dxd dyd rlinecurve, dx1? {dya dxb dyb dyc}+ vvcurveto, dy1? {dxa dxb dyb dxc}+ hhcurveto, dy1 dx2 dy2 dx3 {dxa dxb dyb dyc dyd dxe dye dxf}* dyf? vhcurveto (30)         {, dx1 dx2 dy2 dy3 {dya dxb dyb dxc dxd dxe dye dyf}* dxf?         {dxa dxb dyb dyc, T2OutlineExtractor
+Cohesion: 0.04
+Nodes (12): DictDecompiler, asb adx ady bchar achar seac, {dxa dya dxb dyb dxc dyc}+ rrcurveto, {dxa dya dxb dyb dxc dyc}+ dxd dyd rcurveline, {dxa dya}+ dxb dyb dxc dyc dxd dyd rlinecurve, dx1? {dya dxb dyb dyc}+ vvcurveto, dy1? {dxa dxb dyb dxc}+ hhcurveto, dy1 dx2 dy2 dx3 {dxa dxb dyb dyc dyd dxe dye dxf}* dyf? vhcurveto (30)         { (+4 more)
 
 ### Community 2622 - "Community 2622"
 Cohesion: 0.07
@@ -16877,8 +16864,8 @@ Cohesion: 0.08
 Nodes (25): 🚀 Advanced Capabilities, 🚨 Critical Rules You Must Follow, Effective Tax Rate Analysis, International Tax Architecture, 🔄 Learning & Memory, Multi-Jurisdictional Compliance, Phase 1 — Tax Position Assessment, Phase 2 — Opportunity Identification (+17 more)
 
 ### Community 2663 - "Community 2663"
-Cohesion: 0.01
-Nodes (127): AlternateSubstStatement, Anchor, AnchorDefinition, AnonymousBlock, asFea(), AttachStatement, AxisValueLocationStatement, BaseAxis (+119 more)
+Cohesion: 0.02
+Nodes (110): AlternateSubstStatement, Anchor, AnchorDefinition, AnonymousBlock, asFea(), AttachStatement, AxisValueLocationStatement, Block (+102 more)
 
 ### Community 2664 - "Community 2664"
 Cohesion: 0.08
@@ -17133,8 +17120,8 @@ Cohesion: 0.08
 Nodes (23): Accordion Testing Protocol, Build Expertise In:, "Default to Finding Issues", Fantasy Reporting Signs, Form Testing Protocol, 🔄 Learning & Memory, Mobile Responsive Testing, "Prove Everything" (+15 more)
 
 ### Community 2727 - "Community 2727"
-Cohesion: 0.14
-Nodes (12): ConfigAlreadyRegisteredError, ConfigError, ConfigUnknownOptionError, ConfigValueParsingError, ConfigValueValidationError, Code of the config system; not related to fontTools or fonts in particular.  The, Register a new option., Base exception for the config module. (+4 more)
+Cohesion: 0.12
+Nodes (19): LoggingPen, A pen with a ``log`` property (see fontTools.misc.loggingTools.LogMixin), Returns a :py:class:`~._g_l_y_f.Glyph` object representing the glyph.          A, Point pen used for drawing to a TrueType glyph.      This pen can be used to con, Construct a new pen.          Args:             glyphSet (Dict[str, Any]): A gly, Start a new sub path., End the current sub path., Add a point to the current sub path. (+11 more)
 
 ### Community 2728 - "Community 2728"
 Cohesion: 0.08
@@ -17357,8 +17344,8 @@ Cohesion: 0.11
 Nodes (18): 8 Core Methods, Architecture, Data Structures, Execution Flow, Files, Implementation (capability_orchestrator.py), Next: Unit 14, Overview (+10 more)
 
 ### Community 2783 - "Community 2783"
-Cohesion: 0.02
-Nodes (124): _round_point(), Maps value from axis mapping's output (design) to input (user)., _featureVariationRecordIsUnique(), _instantiateFeatureVariationRecord(), _instantiateFeatureVariations(), _limitFeatureVariationConditionRange(), AxisLimits, AxisRange() (+116 more)
+Cohesion: 0.03
+Nodes (106): _addArgs(), _argsStackUse(), _categorizeVector(), commandsToProgram(), _convertBlendOpToArgs(), _convertToBlendCmds(), _flattenBlendArgs(), generalizeCommands() (+98 more)
 
 ### Community 2784 - "Community 2784"
 Cohesion: 0.11
@@ -17449,8 +17436,8 @@ Cohesion: 0.10
 Nodes (19): Communication Style, Competitive Technical Positioning, Core Capabilities, Demo Craft — The Art of Technical Storytelling, Design Principles, Evaluation Notes — Deal-Level Technical Intelligence, FIA Framework — Fact, Impact, Act, Landmine Questions for Discovery (+11 more)
 
 ### Community 2806 - "Community 2806"
-Cohesion: 0.18
-Nodes (16): layoutPostMerge(), layoutPreMerge(), mapFeatures(), mapLookups(), mapMarkFilteringSets(), __merge_classify_context(), mergeFeatureLists(), mergeFeatures() (+8 more)
+Cohesion: 0.23
+Nodes (14): layoutPostMerge(), layoutPreMerge(), mapFeatures(), mapLookups(), mapMarkFilteringSets(), __merge_classify_context(), mergeFeatureLists(), mergeFeatures() (+6 more)
 
 ### Community 2807 - "Community 2807"
 Cohesion: 0.10
@@ -18133,8 +18120,8 @@ Cohesion: 0.14
 Nodes (13): 1. Specification Analysis, 2. Task List Creation, 3. Technical Stack Requirements, 🚨 Critical Rules You Must Follow, Learning from Experience, 🔄 Learning & Improvement, Project Manager Agent Personality, Realistic Scope Setting (+5 more)
 
 ### Community 2977 - "Community 2977"
-Cohesion: 0.14
-Nodes (14): guessFileType(), main(), Options, parseOptions(), process(), \ usage: ttx [options] inputfile1 [... inputfileN]  TTX -- From OpenType To XML, Convert OpenType fonts to XML and back, ttCompile() (+6 more)
+Cohesion: 0.15
+Nodes (12): TSI{B,C,D,J,P,S,V} are private tables used by Microsoft Visual TrueType (VTT) to, table_T_S_I_B_, TSI{B,C,D,J,P,S,V} are private tables used by Microsoft Visual TrueType (VTT) to, table_T_S_I_D_, TSI{B,C,D,J,P,S,V} are private tables used by Microsoft Visual TrueType (VTT) to, table_T_S_I_J_, TSI{B,C,D,J,P,S,V} are private tables used by Microsoft Visual TrueType (VTT) to, table_T_S_I_P_ (+4 more)
 
 ### Community 2978 - "Community 2978"
 Cohesion: 0.12
@@ -18146,7 +18133,7 @@ Nodes (13): Alternatives, Candidate Onboarding Packet, Candidate-side, Client MS
 
 ### Community 2980 - "Community 2980"
 Cohesion: 0.02
-Nodes (174): Tag, int, str, bool, DesignSpaceDocument, InstanceDescriptor, int, TTFont (+166 more)
+Nodes (129): addFvar(), guessFileType(), main(), Options, parseOptions(), process(), \ usage: ttx [options] inputfile1 [... inputfileN]  TTX -- From OpenType To XML, Convert OpenType fonts to XML and back (+121 more)
 
 ### Community 2981 - "Community 2981"
 Cohesion: 0.14
@@ -18197,12 +18184,12 @@ Cohesion: 0.01
 Nodes (172): [0.12.0] - 2026-04-18, [0.12.1] - 2026-04-19, [0.12.2] - 2026-04-19, [0.12.3] - 2026-04-19, [0.13.0] - 2026-04-20, [0.13.1] - 2026-04-20, [0.14.0] - 2026-04-20, [0.14.1] - 2026-04-20 (+164 more)
 
 ### Community 2994 - "Community 2994"
-Cohesion: 0.08
-Nodes (31): ARC4, CryptFilter, EncryptionDictionary, int32(), md5(), This class is referenced in the main PDF class and is used to handle all encrypt, File_id is the first hash of the PDF file id, Return an encryption dictionary (+23 more)
+Cohesion: 0.03
+Nodes (97): ABC, AccessPermission, Action, AnnotationFlag, AnnotationName, EncryptionMethod, FileAttachmentAnnotationName, Action (+89 more)
 
 ### Community 2995 - "Community 2995"
 Cohesion: 0.01
-Nodes (170): [0.40.2.0] - 2026-05-22, [0.40.6.0] - 2026-05-23, [0.40.7.0] - 2026-05-23, [0.40.7.2] - 2026-05-23, [0.40.8.1] - 2026-05-23, [0.41.10.0] - 2026-05-25, [0.41.10.1] - 2026-05-25, [0.41.11.0] - 2026-05-25 (+162 more)
+Nodes (176): [0.40.2.0] - 2026-05-22, [0.40.6.0] - 2026-05-23, [0.40.7.0] - 2026-05-23, [0.40.7.2] - 2026-05-23, [0.40.8.1] - 2026-05-23, [0.41.10.0] - 2026-05-25, [0.41.10.1] - 2026-05-25, [0.41.11.0] - 2026-05-25 (+168 more)
 
 ### Community 2996 - "Community 2996"
 Cohesion: 0.14
@@ -18274,7 +18261,7 @@ Nodes (14): 00–09: Executive Leadership, 10–19: Strategy / Corporate Develop
 
 ### Community 3013 - "Community 3013"
 Cohesion: 0.15
-Nodes (13): package.json, OWN-PRIV-0003, dep_count, dependencies, dev_dependencies, manifest_files, repo_name, OWN-PRIV-0066 (+5 more)
+Nodes (13): package.json, OWN-PRIV-0002, dep_count, dependencies, dev_dependencies, manifest_files, repo_name, OWN-PRIV-0066 (+5 more)
 
 ### Community 3014 - "Community 3014"
 Cohesion: 0.08
@@ -18405,8 +18392,8 @@ Cohesion: 0.13
 Nodes (14): CALL TO ACTION (15 sec), CLOSING TIPS, DISCOVERY QUESTIONS, LT-011 CarrierDispatch TMS — Sales Coach, NEXT STEPS AFTER CALL, Objection 1: "Our drivers won't accept GPS tracking", Objection 2: "We already have a TMS", Objection 3: "Implementation is too complicated" (+6 more)
 
 ### Community 3047 - "Community 3047"
-Cohesion: 0.02
-Nodes (161): ABC, AccessPermission, Action, AnnotationFlag, AnnotationName, DeviceCMYK, DeviceGray, DeviceRGB (+153 more)
+Cohesion: 0.05
+Nodes (70): PDFAnnotation, A PDF annotation that get serialized as an obj<</>>endobj block, OutputIntentSubType, PageLabelStyle, PDFResourceType, Definition for Output Intent Subtypes, Style of the page label, SignatureFlag (+62 more)
 
 ### Community 3048 - "Community 3048"
 Cohesion: 0.08
@@ -18801,8 +18788,8 @@ Cohesion: 0.20
 Nodes (9): Backend Layer (api/), Correct, Current State: Improper Separation of Concerns, Current (WRONG), Frontend Layer (assets/), Issues Found, Remediation (Week 2-3), Services Architecture Audit — OPS-001 Staffing OS (+1 more)
 
 ### Community 3147 - "Community 3147"
-Cohesion: 0.11
-Nodes (14): A helper class for drawing one border of a table      Attributes:         thickn, Return True if this style changes the thickness of the draw command, False other, Return True if this style changes the color of the draw command, False otherwise, Return dict object specifying dash in the same format as the pdf object, Return True if this style changes the dash of the draw command, False otherwise, Return True if this style changes the any aspect of the draw command, False othe, Return True if this style produces a visible stroke, False otherwise, Return list with string for the draw command to change thickness (empty if no ch (+6 more)
+Cohesion: 0.02
+Nodes (87): Enum, CellBordersLayout, CoerciveEnum, CoerciveIntFlag, Duplex, PageBoundaries, Enumerated constants that can be combined using the bitwise operators,     with, The paper handling option that shall be used when printing the file from the pri (+79 more)
 
 ### Community 3148 - "Community 3148"
 Cohesion: 0.09
@@ -18821,8 +18808,8 @@ Cohesion: 0.20
 Nodes (9): Communication Style, Core Mission, Critical Rules, Identity, Learning and Memory, Meeting Notes Specialist, Success Metrics, Technical Deliverables (+1 more)
 
 ### Community 3152 - "Community 3152"
-Cohesion: 0.10
-Nodes (10): AnisotropicLocationDict, InstanceDescriptor, Return the top-level location label with the given ``name``, or         ``None``, Map a design location to a user location.          Assume that missing coordinat, Simple container for data related to the instance       .. code:: python, dict. Axis values for this instance.          MutatorMath + varLib.          .., These methods give easier access to the localised names., Get the :class:`LocationLabelDescriptor` instance that matches         this inst (+2 more)
+Cohesion: 0.13
+Nodes (18): _alignment_transformation(), calcCubicBounds(), calcCubicParameters(), calcQuadraticBounds(), calcQuadraticParameters(), _curve_bounds(), _curve_line_intersections_t(), _is_linelike() (+10 more)
 
 ### Community 3153 - "Community 3153"
 Cohesion: 0.20
@@ -18830,7 +18817,7 @@ Nodes (9): 💬 Communication Style, 🔧 Critical Rules, Document Generator Age
 
 ### Community 3154 - "Community 3154"
 Cohesion: 0.03
-Nodes (90): _encode_tile(), _get_oserror(), ImageFile, Parser, PyCodec, PyCodecState, PyDecoder, PyEncoder (+82 more)
+Nodes (100): _encode_tile(), _get_oserror(), ImageFile, Parser, PyCodec, PyCodecState, PyDecoder, PyEncoder (+92 more)
 
 ### Community 3155 - "Community 3155"
 Cohesion: 0.07
@@ -18861,8 +18848,8 @@ Cohesion: 0.20
 Nodes (9): Approach, Documentation References, Identity & Core Expertise, Key Technologies, Limitations, SwiftUI Spatial Specializations, Technical Capabilities, visionOS 26 Platform Features (+1 more)
 
 ### Community 3162 - "Community 3162"
-Cohesion: 0.13
-Nodes (9): BitmapPlusSmallMetricsMixin, BitmapGlyphMetrics, SmallGlyphMetrics, BitAlignedBitmapMixin, ebdt_bitmap_format_1, ebdt_bitmap_format_2, ebdt_bitmap_format_5, ebdt_bitmap_format_8 (+1 more)
+Cohesion: 0.04
+Nodes (37): BitmapPlusBigMetricsMixin, BitmapPlusSmallMetricsMixin, BigGlyphMetrics, BitmapGlyphMetrics, SmallGlyphMetrics, cbdt_bitmap_format_17, cbdt_bitmap_format_18, cbdt_bitmap_format_19 (+29 more)
 
 ### Community 3163 - "Community 3163"
 Cohesion: 0.22
@@ -18893,8 +18880,8 @@ Cohesion: 0.40
 Nodes (4): AIRLLM_HOST, AIRLLM_MOCK, AIRLLM_PORT, run-local.sh script
 
 ### Community 3170 - "Community 3170"
-Cohesion: 0.15
-Nodes (5): CmapSubtable, Base class for all cmap subtable formats.      Subclasses which handle the indiv, Return the subtable class for a format., Returns the Python encoding name for this cmap subtable based on its platformID,, Returns true if the subtable is for the Symbol encoding (3,0)
+Cohesion: 0.16
+Nodes (4): CmapSubtable, Base class for all cmap subtable formats.      Subclasses which handle the indiv, Returns the Python encoding name for this cmap subtable based on its platformID,, Returns true if the subtable is for the Symbol encoding (3,0)
 
 ### Community 3171 - "Community 3171"
 Cohesion: 0.15
@@ -18954,7 +18941,7 @@ Nodes (9): PHASED ROLLOUT (8-WEEK TIMELINE), Week 1: Core Analytics & Metrics, W
 
 ### Community 3185 - "Community 3185"
 Cohesion: 0.22
-Nodes (8): CON-011, id, repo_count, repositories, FIN-028, id, repo_count, repositories
+Nodes (8): CON-001, id, repo_count, repositories, FIN-028, id, repo_count, repositories
 
 ### Community 3186 - "Community 3186"
 Cohesion: 0.22
@@ -20409,8 +20396,8 @@ Cohesion: 0.29
 Nodes (6): architecture/worktrees, Forking a child, Merge topology, Scopes, Warming the build cache, Where worktrees live
 
 ### Community 3550 - "Community 3550"
-Cohesion: 0.14
-Nodes (5): BitmapPlusBigMetricsMixin, BitmapGlyph, ComponentBitmapGlyph, ebdt_bitmap_format_7, ebdt_bitmap_format_9
+Cohesion: 0.16
+Nodes (13): _accept(), QoiDecoder, QoiEncoder, QoiImageFile, _save(), bool, bytearray, bytes (+5 more)
 
 ### Community 3551 - "Community 3551"
 Cohesion: 0.29
@@ -20495,6 +20482,10 @@ Nodes (6): Onboarding & Hiring, Payroll & HR, Performance, Recruiting, Training,
 ### Community 3571 - "Community 3571"
 Cohesion: 0.29
 Nodes (7): Architecture Review Checklist, Design, Evaluation, Failure Resilience, Human-in-the-Loop, Observability, Security
+
+### Community 3572 - "Community 3572"
+Cohesion: 0.21
+Nodes (5): packPStrings(), PostScript table      The ``post`` table contains information needed to use the, This function will get called by a ttLib.TTFont instance.         Do not call th, table__p_o_s_t, unpackPStrings()
 
 ### Community 3573 - "Community 3573"
 Cohesion: 0.15
@@ -20949,8 +20940,8 @@ Cohesion: 0.03
 Nodes (105): K, KerningGroupRenameMaps, LayerOrderList, LibDict, PathStr, Any, bool, bytes (+97 more)
 
 ### Community 3686 - "Community 3686"
-Cohesion: 0.18
-Nodes (3): ps_integer, ps_name, ps_real
+Cohesion: 0.22
+Nodes (3): KernTable_format_unkown, Kerning table      The ``kern`` table contains values that contextually adjust t, table__k_e_r_n
 
 ### Community 3687 - "Community 3687"
 Cohesion: 0.07
@@ -21213,7 +21204,7 @@ Cohesion: 0.33
 Nodes (5): configuration/scripts, Extension rules, lint.sh -- the commit gate, setup.sh -- environment setup, test.sh -- the verification gate
 
 ### Community 3753 - "Community 3753"
-Cohesion: 0.19
+Cohesion: 0.18
 Nodes (5): cmap_format_14, cmap_format_4, cvtFromUVS(), cvtToUVS(), splitRange()
 
 ### Community 3754 - "Community 3754"
@@ -21221,11 +21212,11 @@ Cohesion: 0.23
 Nodes (11): build_healing_plan(), find_candidate_docs(), load_dead_links(), str, query_ollama_for_resolution(), Build complete healing plan for all dead links., Save healing plan to file., Load dead links from audit report. (+3 more)
 
 ### Community 3755 - "Community 3755"
-Cohesion: 0.27
-Nodes (9): modeArg, server, { version }, buildInstructions(), { getDefaultMode, normalizeMode }, { getPonytailInstructions }, MODES, require (+1 more)
+Cohesion: 0.19
+Nodes (3): Vertical Origin table      The ``VORG`` table contains the vertical origin of ea, table_V_O_R_G_, VOriginRecord
 
 ### Community 3756 - "Community 3756"
-Cohesion: 0.18
+Cohesion: 0.16
 Nodes (3): cmap_format_12, cmap_format_12_or_13, cmap_format_13
 
 ### Community 3757 - "Community 3757"
@@ -22461,8 +22452,8 @@ Cohesion: 0.40
 Nodes (4): features/files/anchors_and_history, Per-file history, Related Pages, Resolution from the node's own record
 
 ### Community 4069 - "Community 4069"
-Cohesion: 0.06
-Nodes (36): IntEnum, IntFlag, _accept(), D3DFMT, DDPF, DDSCAPS, DDSCAPS2, DDSD (+28 more)
+Cohesion: 0.18
+Nodes (3): GMAPRecord, Glyphlets GMAP table      The ``GMAP`` table is used by Adobe's SING Glyphlets., table_G_M_A_P_
 
 ### Community 4070 - "Community 4070"
 Cohesion: 0.33
@@ -22569,8 +22560,8 @@ Cohesion: 0.18
 Nodes (10): Checklists, Example: Rename `validateUser` to `authenticateUser`, Extract Module, Refactoring with GitNexus, Rename Symbol, Risk Rules, Split Function/Service, Tools (+2 more)
 
 ### Community 4096 - "Community 4096"
-Cohesion: 0.26
-Nodes (4): _Dict, _Object, Graphite Glyph Attributes table      See also https://graphite.sil.org/graphite_, table_G__l_a_t
+Cohesion: 0.21
+Nodes (4): measureWeight(), Measure the perceptual average weight of the given glyphs., AreaPen, Calculate the area of a glyph.
 
 ### Community 4097 - "Community 4097"
 Cohesion: 0.18
@@ -22665,12 +22656,16 @@ Cohesion: 0.20
 Nodes (9): Advanced: Debounce with Cancel & Immediate Options, Basic Debounce Function, Debounce, Debounce Search Input, Enhanced Version with Loading State, HTML Example, Key Benefits, With Ponytail, 10 lines of code (+1 more)
 
 ### Community 4120 - "Community 4120"
-Cohesion: 0.15
-Nodes (13): buildMultiVarStore(), buildSparseVarRegion(), buildSparseVarRegionAxis(), buildSparseVarRegionList(), buildVarData(), buildVarRegion(), buildVarRegionAxis(), buildVarRegionList() (+5 more)
+Cohesion: 0.22
+Nodes (9): AgentContext, ContextEntity, KG-028: Agent Context Assembly — Build relevant subgraph for any agent Given age, Single entity in agent context, Complete context for an agent's task, find_paths(), int, Find shortest paths between two entities.      Example: `GET /api/graph/paths/LT (+1 more)
 
 ### Community 4121 - "Community 4121"
 Cohesion: 0.20
 Nodes (9): After Indexing, analyze — Build or refresh the index, clean — Delete the index, Commands, GitNexus CLI Commands, list — Show all indexed repos, status — Check index freshness, Troubleshooting (+1 more)
+
+### Community 4122 - "Community 4122"
+Cohesion: 0.20
+Nodes (3): cmap_format_unknown, Return the subtable class for a format., Return a new instance of a subtable for the given format         .
 
 ### Community 4123 - "Community 4123"
 Cohesion: 0.20
@@ -22721,16 +22716,16 @@ Cohesion: 0.24
 Nodes (4): CapabilityIngester, Load YAML file (handles multiple documents), Validate capability entry, Generate SQL INSERT file
 
 ### Community 4135 - "Community 4135"
-Cohesion: 0.09
-Nodes (28): BoundWalker, FS, Abstract base class for custom filesystems., Return a sub‑filesystem rooted at `path`., DestinationExists, FilesystemClosed, NoSysPath, Remove all empty parents. (+20 more)
+Cohesion: 0.13
+Nodes (25): BoundWalker, FS, Abstract base class for custom filesystems., Return a sub‑filesystem rooted at `path`., DestinationExists, DirectoryExpected, FilesystemClosed, NoSysPath (+17 more)
 
 ### Community 4136 - "Community 4136"
 Cohesion: 0.31
 Nodes (9): build_email_body(), main(), str, Send all sales scripts., Read sales script from file., Build email subject and body., Simulate Gmail MCP send_message call.     In production, this would call: mcp__c, read_script() (+1 more)
 
 ### Community 4137 - "Community 4137"
-Cohesion: 0.14
-Nodes (9): _binary2data(), ByteAlignedBitmapMixin, _data2binary(), ebdt_bitmap_format_6, _readBitwiseImageData(), _readRawImageData(), _readRowImageData(), _writeBitwiseImageData() (+1 more)
+Cohesion: 0.29
+Nodes (10): _both_points_are_on_same_side_of_origin(), curveCurveIntersections(), curveLineIntersections(), _line_t_of_pt(), lineLineIntersections(), Finds intersections between two line segments.      Args:         s1, e1: Coordi, Finds intersections between a curve and a line.      Args:         curve: List o, Finds intersections between a curve and a curve.      Args:         curve1: List (+2 more)
 
 ### Community 4138 - "Community 4138"
 Cohesion: 0.20
@@ -22840,6 +22835,10 @@ Nodes (8): #217: rung shipped, failure did not reproduce, Comprehension & reuse:
 Cohesion: 0.22
 Nodes (9): files, in_links, broken_links, files, in_links, out_links, clusters, Brain/02_PROJECTS (+1 more)
 
+### Community 4165 - "Community 4165"
+Cohesion: 0.22
+Nodes (9): addOpenTypeFeaturesFromString(), Add features from a string to a font. Note that this replaces any     features c, Add OpenType features to the font from a string containing         Feature File, invalid_fea_glyph_name(), main(), Check if the glyph name is valid according to FEA syntax., Sanitize the glyph name to ensure it is valid according to FEA syntax., Build tables from a MS VOLT project into an OTF font (+1 more)
+
 ### Community 4166 - "Community 4166"
 Cohesion: 0.31
 Nodes (8): generate_reality_check(), load_repos(), load_sites(), load_ventures(), Load Vercel sites from sites.json, Load venture registry, Load repository registry, Generate complete ecosystem reality check
@@ -22937,8 +22936,8 @@ Cohesion: 0.32
 Nodes (7): build_calendar_event(), main(), str, Simulate Google Calendar MCP create_event call., Create all calendar reminders., Build Google Calendar event structure., simulate_create()
 
 ### Community 4190 - "Community 4190"
-Cohesion: 0.36
-Nodes (8): str, handleClash1(), handleClash2(), NameTranslationError, Converts from a user name to a file name.      Takes care to avoid illegal chara, A helper function that resolves collisions with existing names when choosing a f, A helper function that resolves collisions with existing names when choosing a f, userNameToFileName()
+Cohesion: 0.16
+Nodes (16): handleClash1(), handleClash2(), NameTranslationError, This module implements the algorithm for converting between a "user name" - some, existing should be a case-insensitive list     of all existing file names., existing should be a case-insensitive list     of all existing file names., Converts from a user name to a file name.      Takes care to avoid illegal chara, userNameToFileName() (+8 more)
 
 ### Community 4191 - "Community 4191"
 Cohesion: 0.36
@@ -23061,11 +23060,11 @@ Cohesion: 0.29
 Nodes (6): dead_end_count, isolated_count, orphan_count, top_missing_targets, total_edges, total_files
 
 ### Community 4221 - "Community 4221"
-Cohesion: 0.15
-Nodes (5): BitmapSizeTable, Embedded Bitmap Location table      The ``EBLC`` table contains the locations of, SbitLineMetrics, Strike, table_E_B_L_C_
+Cohesion: 0.14
+Nodes (4): BitmapSizeTable, Embedded Bitmap Location table      The ``EBLC`` table contains the locations of, Strike, table_E_B_L_C_
 
 ### Community 4222 - "Community 4222"
-Cohesion: 0.15
+Cohesion: 0.18
 Nodes (6): Builds a reverse mapping dictionary          Iterates over all Unicode cmap tabl, Character to Glyph Index Mapping Table      This class represents the `cmap <htt, Returns true if the characters are interpreted as Unicode codepoints., Returns the first subtable which matches the given platform and encoding., Returns the 'best' Unicode cmap dictionary available in the font         or ``No, table__c_m_a_p
 
 ### Community 4223 - "Community 4223"
@@ -23095,6 +23094,10 @@ Nodes (3): ClickUpTask, folderToSector, Task
 ### Community 4229 - "Community 4229"
 Cohesion: 0.33
 Nodes (5): Auto-Clarity, Boundaries, Intensity, Persistence, Rules
+
+### Community 4230 - "Community 4230"
+Cohesion: 0.05
+Nodes (11): BasePen, Base class for drawing pens. You must override _moveTo, _lineTo and     _curveTo, Return the current point. This is not part of the public         interface, yet, CocoaPen, QuartzPen, A pen that creates a CGPath      Parameters     - path: an optional CGPath to ad, A pen for drawing onto a ``reportlab.graphics.shapes.Path`` object., ReportLabPen (+3 more)
 
 ### Community 4231 - "Community 4231"
 Cohesion: 0.33
@@ -23157,8 +23160,8 @@ Cohesion: 0.33
 Nodes (5): name, private, scripts, test, type
 
 ### Community 4247 - "Community 4247"
-Cohesion: 0.12
-Nodes (11): LocationLabelDescriptor, Container for location label data.      Analogue of OpenType's STAT data for a f, Simple container for data related to the source      .. code:: python          d, Get the complete user location of this label, by combining data         from the, Return the :class:`LocationLabel` that matches the given         ``userLocation`, dict. Axis values for this source, in design space coordinates.          Mutator, Setter for :attr:`localisedFamilyName`          .. versionadded:: 5.0, Getter for :attr:`localisedFamilyName`          .. versionadded:: 5.0 (+3 more)
+Cohesion: 0.09
+Nodes (14): LocationLabelDescriptor, Container for location label data.      Analogue of OpenType's STAT data for a f, Simple container for data related to the source      .. code:: python          d, Return the English name from :attr:`labelNames` or the :attr:`name`., Get the complete user location of this label, by combining data         from the, Return the :class:`LocationLabel` that matches the given         ``userLocation`, dict. Axis values for this source, in design space coordinates.          Mutator, Map a design location to a user location.          Assume that missing coordinat (+6 more)
 
 ### Community 4248 - "Community 4248"
 Cohesion: 0.33
@@ -23693,8 +23696,8 @@ Cohesion: 0.25
 Nodes (7): 1. Capital Packages & Prospectuses, 2. The 22 Canonical Operating Domains, 2. Venture Core Documentation, 3. Complete 22-Domain Document Index, Autonomous Capital & Engineering Tooling, CON-001 — ACE Construction & Contracting LLC, Sovereign Venture Capital Data Room & Institutional Dossier
 
 ### Community 4381 - "Community 4381"
-Cohesion: 0.28
-Nodes (16): Class2Record, Lookup, cluster_pairs_by_class2_coverage_custom_cost(), compact(), compact_class_pairs(), compact_ext_lookup(), compact_lookup(), compact_pair_pos() (+8 more)
+Cohesion: 0.05
+Nodes (43): Class2Record, Lookup, bit_count(), bit_indices(), Return list of indices where bits are set, 0 being the index of the least signif, _classDef_bytes(), Cluster, cluster_pairs_by_class2_coverage_custom_cost() (+35 more)
 
 ### Community 4382 - "Community 4382"
 Cohesion: 0.40
@@ -23753,8 +23756,8 @@ Cohesion: 0.50
 Nodes (3): features/files/transcripts, Related Pages, Resolution
 
 ### Community 4397 - "Community 4397"
-Cohesion: 0.06
-Nodes (54): CreateFailed, DirectoryExpected, DirectoryNotEmpty, FileExpected, FSError, IllegalDestination, MissingInfoNamespace, OperationFailed (+46 more)
+Cohesion: 0.13
+Nodes (19): FileExpected, ResourceReadOnly, TempFS, __init__(), Read and write zip files., Convert a path to a zip file name., ReadZipFS, WriteZipFS (+11 more)
 
 ### Community 4398 - "Community 4398"
 Cohesion: 0.50
@@ -24253,8 +24256,8 @@ Cohesion: 0.40
 Nodes (5): Phase 1.2: EXECUTION (Sep 9-13 — 40 hours), Task 1.2.1: Make 10 Cold Calls (Day 1-2), Task 1.2.2: Send Profiles (Day 2-3), Task 1.2.3: Follow-up Calls (Day 3-4), Task 1.2.4: Close First Deal (Day 4-5)
 
 ### Community 4522 - "Community 4522"
-Cohesion: 0.21
-Nodes (7): bit_count(), _Encoding, _EncodingDict, Returns overhead in bytes of encoding this characteristic         as a VarData., Returns encoding characteristics for a row., Optimize storage. Returns mapping from old VarIdxes to new ones., VarStore_optimize()
+Cohesion: 0.24
+Nodes (4): roundFunc(), Any, float, str
 
 ### Community 4523 - "Community 4523"
 Cohesion: 0.50
@@ -24694,11 +24697,11 @@ Nodes (5): broken_links, files, in_links, out_links, Brain/09-KNOWLEDGE
 
 ### Community 4908 - "Community 4908"
 Cohesion: 0.05
-Nodes (94): ElementType, FormatVersionInput, OrderedDict, str, AbstractPointPen, Any, bool, bytes (+86 more)
+Nodes (105): ElementType, FormatVersionInput, FormatVersions, GLIFFormatVersionInput, OrderedDict, PointToSegmentPen, Adapter class that converts the PointPen protocol to the     (Segment)Pen protoc, str (+97 more)
 
 ### Community 4909 - "Community 4909"
-Cohesion: 0.33
-Nodes (3): Represents a subtable break., Calls the builder objects's ``add_subtable_break`` callback., SubtableStatement
+Cohesion: 0.20
+Nodes (7): fs, passthrough, path, root, skillsDir, slugs, { spawnSync }
 
 ### Community 4910 - "Community 4910"
 Cohesion: 0.40
@@ -24722,7 +24725,7 @@ Nodes (5): broken_links, files, in_links, out_links, Brain/14-CAPABILITIES
 
 ### Community 4919 - "Community 4919"
 Cohesion: 0.02
-Nodes (66): table__f_e_a_t, Anchor Point table      The anchor point table provides a way to define anchor p, table__a_n_k_r, Axis Variations table      This class represents the ``avar`` table of a variabl, table__a_v_a_r, Baseline table      The ``BASE`` table contains information needed to align glyp, table_B_A_S_E_, Baseline table      The AAT ``bsln`` table is similar in purpose to the OpenType (+58 more)
+Nodes (67): table__f_e_a_t, Anchor Point table      The anchor point table provides a way to define anchor p, table__a_n_k_r, Axis Variations table      This class represents the ``avar`` table of a variabl, table__a_v_a_r, Baseline table      The ``BASE`` table contains information needed to align glyp, table_B_A_S_E_, Baseline table      The AAT ``bsln`` table is similar in purpose to the OpenType (+59 more)
 
 ### Community 4920 - "Community 4920"
 Cohesion: 0.25
@@ -24857,8 +24860,8 @@ Cohesion: 0.40
 Nodes (5): broken_links, files, in_links, out_links, Brain/21-POLICY
 
 ### Community 4953 - "Community 4953"
-Cohesion: 0.03
-Nodes (84): CFFFontSet, _addArgs(), _argsStackUse(), _categorizeVector(), commandsToProgram(), _convertBlendOpToArgs(), _convertToBlendCmds(), _flattenBlendArgs() (+76 more)
+Cohesion: 0.08
+Nodes (37): CFFFontSet, GlyphComponent, T2CharString, Pen to draw Type 2 CharStrings.      The 'roundTolerance' argument controls the, T2CharStringPen, Pen used for drawing to a TrueType glyph.      This pen can be used to construct, TTGlyphPen, bool (+29 more)
 
 ### Community 4954 - "Community 4954"
 Cohesion: 0.40
@@ -24898,11 +24901,11 @@ Nodes (5): broken_links, files, in_links, out_links, Brain/27-CUSTOMERS
 
 ### Community 4966 - "Community 4966"
 Cohesion: 0.04
-Nodes (13): addOpenTypeFeatures(), Builder, Helper for building chain contextual substitutions          Given a list of look, Adds new items to ``self.cv_num_named_params_``         or increments the count, Helper for add_mark_{base,liga,mark}_pos., # NOTE: This might result in rounding errors (off-by-ones) compared to, ast.Anchor --> otTables.Anchor, ast.ValueRecord --> otBase.ValueRecord (+5 more)
+Nodes (14): addOpenTypeFeatures(), Builder, Helper for building chain contextual substitutions          Given a list of look, Adds new items to ``self.cv_num_named_params_``         or increments the count, Helper for add_mark_{base,liga,mark}_pos., # NOTE: This might result in rounding errors (off-by-ones) compared to, ast.Anchor --> otTables.Anchor, ast.ValueRecord --> otBase.ValueRecord (+6 more)
 
 ### Community 4967 - "Community 4967"
 Cohesion: 0.04
-Nodes (116): PyInit_bezierTools(), __Pyx_call_type_traverse(), __Pyx_check_binary_version(), __Pyx_check_single_interpreter(), __pyx_CommonTypesMetaclass_init(), __pyx_CommonTypesMetaclass_setattr(), __Pyx_copy_spec_to_module(), __Pyx_Coroutine_traverse() (+108 more)
+Nodes (120): PyInit_bezierTools(), __Pyx_call_type_traverse(), __Pyx_check_binary_version(), __Pyx_check_single_interpreter(), __pyx_CommonTypesMetaclass_init(), __pyx_CommonTypesMetaclass_setattr(), __Pyx_copy_spec_to_module(), __Pyx_Coroutine_traverse() (+112 more)
 
 ### Community 4968 - "Community 4968"
 Cohesion: 0.40
@@ -24913,8 +24916,8 @@ Cohesion: 0.40
 Nodes (5): broken_links, files, in_links, out_links, Brain/29-OPERATIONS
 
 ### Community 4970 - "Community 4970"
-Cohesion: 0.33
-Nodes (3): A ``parameters`` statement., Calls the builder object's ``set_size_parameters`` callback., SizeParameters
+Cohesion: 0.20
+Nodes (3): Add 'tag' to the list of langauge tags if not already there.          Returns th, Language Tag table      The AAT ``ltag`` table contains mappings between the num, table__l_t_a_g
 
 ### Community 4971 - "Community 4971"
 Cohesion: 0.40
@@ -24938,7 +24941,7 @@ Nodes (5): broken_links, files, in_links, out_links, Brain/34-RISK
 
 ### Community 4976 - "Community 4976"
 Cohesion: 0.04
-Nodes (93): __pyx_CommonTypesMetaclass_call(), __pyx_CommonTypesMetaclass_get_module(), __Pyx_Coroutine_del(), __Pyx_Coroutine_fail_reduce_ex(), __Pyx__Coroutine_get_frame(), __Pyx__Coroutine_MethodReturnFromResult(), __Pyx_CyOrPyCFunction_GET_SELF(), __Pyx_Fallback___Pyx_PyLong_AddObjC() (+85 more)
+Nodes (96): __pyx_CommonTypesMetaclass_call(), __pyx_CommonTypesMetaclass_get_module(), __Pyx_copy_object_array(), __Pyx_Coroutine_del(), __Pyx_Coroutine_fail_reduce_ex(), __Pyx__Coroutine_get_frame(), __Pyx__Coroutine_MethodReturnFromResult(), __Pyx_CyOrPyCFunction_GET_SELF() (+88 more)
 
 ### Community 4977 - "Community 4977"
 Cohesion: 0.40
@@ -24949,16 +24952,16 @@ Cohesion: 0.40
 Nodes (5): broken_links, files, in_links, out_links, Brain/36-PARTNERS
 
 ### Community 4979 - "Community 4979"
-Cohesion: 0.05
-Nodes (47): LLM, Pluggable: OpenAI, Anthropic, vLLM, mock., A numbered organizational seat. Not a person. Not an agent., Role, ToolSpec, o32be(), _accept(), ChunkStream (+39 more)
+Cohesion: 0.03
+Nodes (72): AgentEngineerAgent, AgentResult, AIEvaluationAgent, BaseAgent, Company, Event, GenericRoleAgent, HumanRequired (+64 more)
 
 ### Community 4980 - "Community 4980"
 Cohesion: 0.40
 Nodes (5): broken_links, files, in_links, out_links, Brain/37-RESEARCH
 
 ### Community 4981 - "Community 4981"
-Cohesion: 0.05
-Nodes (67): MpoImageFile, _accept(), AlphaEncoding, BLP1Decoder, BLP2Decoder, _BLPBaseDecoder, BLPEncoder, BLPFormatError (+59 more)
+Cohesion: 0.04
+Nodes (72): NameID, IntEnum, MpoImageFile, _accept(), AlphaEncoding, BLP1Decoder, BLP2Decoder, _BLPBaseDecoder (+64 more)
 
 ### Community 4982 - "Community 4982"
 Cohesion: 0.40
@@ -24989,8 +24992,8 @@ Cohesion: 0.07
 Nodes (29): _DictBase, mmap, check_format_condition(), decode_text(), encode_text(), IndirectObjectDef, IndirectReference, IndirectReferenceTuple (+21 more)
 
 ### Community 4989 - "Community 4989"
-Cohesion: 0.13
-Nodes (15): _Device_mapVarIdx(), _Device_recordVarIdx(), main(), Object_collect_device_varidxes(), Object_remap_device_varidxes(), Remove unused VarRegions., Recurse down from self, if type of an object is ot.Device,     call func() on it, Add VarIdx in this Device table (if any) to the set s. (+7 more)
+Cohesion: 0.22
+Nodes (3): Maximum Profile table      The ``maxp`` table contains the memory requirements f, Recalculate the font bounding box, and most other maxp values except         for, table__m_a_x_p
 
 ### Community 4990 - "Community 4990"
 Cohesion: 0.25
@@ -25001,8 +25004,8 @@ Cohesion: 0.26
 Nodes (27): __Pyx_AddTraceback(), __Pyx_ParseKeywordDict(), __Pyx_ParseKeywordDictToDict(), __Pyx_ParseKeywords(), __Pyx_ParseKeywordsTuple(), __pyx_pw_9fontTools_6feaLib_5lexer_14IncludingLexer_11scan_anonymous_block(), __pyx_pw_9fontTools_6feaLib_5lexer_14IncludingLexer_1__init__(), __pyx_pw_9fontTools_6feaLib_5lexer_14IncludingLexer_3__iter__() (+19 more)
 
 ### Community 4992 - "Community 4992"
-Cohesion: 0.07
-Nodes (56): bucketizeRules(), build(), DeferredMapping, intSplitComma(), main(), makeAnchor(), makeBaseRecords(), makeClassDef() (+48 more)
+Cohesion: 0.06
+Nodes (67): MockFont, A font-like object that automatically adds any looked up glyphname     to its gl, bucketizeRules(), build(), ContextHelper, DeferredMapping, FeatureNotFoundError, intSplitComma() (+59 more)
 
 ### Community 4993 - "Community 4993"
 Cohesion: 0.40
@@ -25017,8 +25020,8 @@ Cohesion: 0.40
 Nodes (5): broken_links, files, in_links, out_links, Brain/46-GOVERNANCE
 
 ### Community 4996 - "Community 4996"
-Cohesion: 0.05
-Nodes (83): PyMethodDef, PyObject, __pyx_CyFunctionObject, __Pyx_CyFunction_Call(), __Pyx_CyFunction_CallAsMethod(), __Pyx_CyFunction_CallMethod(), __Pyx_CyFunction_clear(), __Pyx__CyFunction_dealloc() (+75 more)
+Cohesion: 0.06
+Nodes (71): PyMethodDef, __pyx_CyFunctionObject, __pyx_mstatetype, __Pyx_PyMODINIT_FUNC, __Pyx_RefNannyAPIStruct, PyInit_iup(), __Pyx_check_binary_version(), __pyx_CommonTypesMetaclass_init() (+63 more)
 
 ### Community 4997 - "Community 4997"
 Cohesion: 0.40
@@ -25058,7 +25061,7 @@ Nodes (5): broken_links, files, in_links, out_links, Brain/51-CONSTRUCTION
 
 ### Community 5006 - "Community 5006"
 Cohesion: 0.05
-Nodes (79): __pyx_atomic_pointer_cmp_exchange(), __Pyx_c_abs_double(), __Pyx_c_conj_double(), __Pyx_c_diff_double(), __Pyx_c_eq_double(), __Pyx_c_is_zero_double(), __Pyx_c_neg_double(), __Pyx_c_pow_double() (+71 more)
+Nodes (76): __pyx_atomic_pointer_cmp_exchange(), __Pyx_c_abs_double(), __Pyx_c_conj_double(), __Pyx_c_diff_double(), __Pyx_c_eq_double(), __Pyx_c_is_zero_double(), __Pyx_c_neg_double(), __Pyx_c_pow_double() (+68 more)
 
 ### Community 5007 - "Community 5007"
 Cohesion: 0.04
@@ -25121,8 +25124,8 @@ Cohesion: 0.40
 Nodes (5): broken_links, files, in_links, out_links, Brain/57-CODE-INTELLIGENCE
 
 ### Community 5022 - "Community 5022"
-Cohesion: 0.10
-Nodes (45): PyInit_cu2qu(), __Pyx_CyFunction_Call(), __Pyx_CyFunction_CallAsMethod(), __Pyx_CyFunction_CallMethod(), __Pyx_CyFunction_clear(), __Pyx__CyFunction_dealloc(), __Pyx_CyFunction_get_annotations(), __Pyx_CyFunction_get_annotations_locked() (+37 more)
+Cohesion: 0.09
+Nodes (49): PyInit_cu2qu(), __Pyx_CyFunction_Call(), __Pyx_CyFunction_CallAsMethod(), __Pyx_CyFunction_CallMethod(), __Pyx_CyFunction_clear(), __Pyx__CyFunction_dealloc(), __Pyx_CyFunction_get_annotations(), __Pyx_CyFunction_get_annotations_locked() (+41 more)
 
 ### Community 5023 - "Community 5023"
 Cohesion: 0.40
@@ -25130,7 +25133,7 @@ Nodes (5): broken_links, files, in_links, out_links, Brain/58-LOGISTICS
 
 ### Community 5024 - "Community 5024"
 Cohesion: 0.04
-Nodes (32): DesignSpaceDocument, main(), posix(), The DesignSpaceDocument object can read and write ``.designspace`` data.     It, Read a designspace file from ``path`` and return a new instance of         :clas, Read a designspace file from ``path`` and populates the fields of         ``self, Write this designspace to ``path``., Right before we save we need to identify and respond to the following situations (+24 more)
+Nodes (29): DesignSpaceDocument, main(), The DesignSpaceDocument object can read and write ``.designspace`` data.     It, Read a designspace file from ``path`` and return a new instance of         :clas, Read a designspace file from ``path`` and populates the fields of         ``self, Write this designspace to ``path``., Right before we save we need to identify and respond to the following situations, Add the given ``sourceDescriptor`` to ``doc.sources``. (+21 more)
 
 ### Community 5025 - "Community 5025"
 Cohesion: 0.40
@@ -25165,8 +25168,8 @@ Cohesion: 0.40
 Nodes (5): broken_links, files, in_links, out_links, Brain/AI-BRAIN
 
 ### Community 5033 - "Community 5033"
-Cohesion: 0.07
-Nodes (61): CYTHON_SMALL_CODE, PY_INT64_T, PyModuleDef, __Pyx_InterpreterIdAndModule, __Pyx_ModuleStateLookupData, __pyx_mstatetype, __Pyx_PyMODINIT_FUNC, __Pyx_RefNannyAPIStruct (+53 more)
+Cohesion: 0.17
+Nodes (19): CYTHON_SMALL_CODE, PY_INT64_T, PyModuleDef, visitproc, __Pyx_call_type_traverse(), __Pyx_check_single_interpreter(), __Pyx_copy_spec_to_module(), __Pyx_Coroutine_traverse() (+11 more)
 
 ### Community 5034 - "Community 5034"
 Cohesion: 0.40
@@ -25186,7 +25189,7 @@ Nodes (5): broken_links, files, in_links, out_links, Brain/CAMPAIGNS
 
 ### Community 5038 - "Community 5038"
 Cohesion: 0.09
-Nodes (62): CYTHON_METH_FASTCALL, Py_ssize_t, __Pyx_AddTraceback(), __Pyx_copy_object_array(), __Pyx_crop_slice(), __pyx_f_9fontTools_6varLib_3iup_can_iup_in_between(), __pyx_f_9fontTools_6varLib_3iup_iup_segment(), __Pyx_Fallback___Pyx_PyLong_AddObjC() (+54 more)
+Nodes (58): CYTHON_METH_FASTCALL, Py_ssize_t, __Pyx_AddTraceback(), __Pyx_copy_object_array(), __Pyx_crop_slice(), __pyx_f_9fontTools_6varLib_3iup_can_iup_in_between(), __pyx_f_9fontTools_6varLib_3iup_iup_segment(), __Pyx_Fallback___Pyx_PyLong_AddObjC() (+50 more)
 
 ### Community 5039 - "Community 5039"
 Cohesion: 0.40
@@ -25277,8 +25280,8 @@ Cohesion: 0.40
 Nodes (5): broken_links, files, in_links, out_links, Brain/_ONTOLOGY
 
 ### Community 5061 - "Community 5061"
-Cohesion: 0.16
-Nodes (13): AbstractConfig, Option, Options, Registry of available options for a given config system.      Define new options, Create and register a new option., Return True if the same option object is already registered., Create a set of config values, optionally pre-filled with values from     the gi, Register an available option in this config system. (+5 more)
+Cohesion: 0.08
+Nodes (28): Config, Define all configuration options that can affect the working of fontTools module, AbstractConfig, ConfigAlreadyRegisteredError, ConfigError, ConfigUnknownOptionError, ConfigValueParsingError, ConfigValueValidationError (+20 more)
 
 ### Community 5062 - "Community 5062"
 Cohesion: 0.08
@@ -25301,28 +25304,28 @@ Cohesion: 0.40
 Nodes (5): broken_links, files, in_links, out_links, Brain/.planning
 
 ### Community 5067 - "Community 5067"
-Cohesion: 0.03
-Nodes (34): GlyphClass, MarkClass, Calls the builder object's ``add_ligatureCaretByIndex_`` callback., Calls the builder object's ``add_ligatureCaretByPos_`` callback., Calls the builder object's ``set_lookup_flag`` callback., Calls the builder object's ``add_mark_base_pos`` callback., Calls the builder object's ``add_mark_lig_pos`` callback., Calls the builder object's ``add_mark_mark_pos`` callback. (+26 more)
+Cohesion: 0.04
+Nodes (27): GlyphClassName, MarkClass, Calls the builder object's ``add_ligatureCaretByIndex_`` callback., Calls the builder object's ``add_ligatureCaretByPos_`` callback., Calls the builder object's ``set_lookup_flag`` callback., Calls the builder object's ``add_mark_base_pos`` callback., Calls the builder object's ``add_mark_lig_pos`` callback., Calls the builder object's ``add_mark_mark_pos`` callback. (+19 more)
 
 ### Community 5068 - "Community 5068"
 Cohesion: 0.40
 Nodes (5): broken_links, files, in_links, out_links, Brain/_PROMPTS
 
 ### Community 5069 - "Community 5069"
-Cohesion: 0.06
-Nodes (60): closure_glyphs(), closure_lookups(), collect_features(), collect_lookups(), _dict_subset(), intersect(), intersect_class(), intersect_glyphs() (+52 more)
+Cohesion: 0.07
+Nodes (52): closure_glyphs(), closure_lookups(), collect_features(), collect_lookups(), _dict_subset(), intersect(), intersect_class(), intersect_glyphs() (+44 more)
 
 ### Community 5070 - "Community 5070"
-Cohesion: 0.07
-Nodes (53): Test for rectangle-rectangle intersection.      Args:         rect1: First bound, Determine rectangle area.      Args:         rect: Bounding rectangle, expressed, rectArea(), sectRect(), _alignment_transformation(), _both_points_are_on_same_side_of_origin(), calcCubicBounds(), calcCubicParameters() (+45 more)
+Cohesion: 0.09
+Nodes (30): calcCubicArcLength(), calcCubicArcLengthC(), _calcCubicArcLengthCRecurse(), calcCubicParametersC(), calcCubicPoints(), calcCubicPointsC(), calcQuadraticPoints(), cubicPointAtT() (+22 more)
 
 ### Community 5071 - "Community 5071"
-Cohesion: 0.02
-Nodes (126): callable, CoreFont, Align, CellBordersLayout, CharVPos, CoerciveEnum, CoerciveIntEnum, CoerciveIntFlag (+118 more)
+Cohesion: 0.03
+Nodes (70): callable, CoreFont, Align, Text rendering direction for text shaping, Defines how to break and wrap lines in multi-line text., Defines how to render text in a cell, TextDirection, WrapMode (+62 more)
 
 ### Community 5072 - "Community 5072"
 Cohesion: 0.07
-Nodes (22): Keeps track of overall time and split/lap times.      >>> import time     >>> ti, Reset timer to 'start_time' or the current time., Return the overall time (in seconds) since the timer started., Split and return the lap time (in seconds) in between splits., Format 'time' value in 'msg' and return formatted string.         If 'msg' conta, End the current lap. If timer has a logger, log the time elapsed,         using, If the first argument is a function, return a decorator which runs         the w, Timer (+14 more)
+Nodes (27): Keeps track of overall time and split/lap times.      >>> import time     >>> ti, Reset timer to 'start_time' or the current time., Return the overall time (in seconds) since the timer started., If the first argument is a function, return a decorator which runs         the w, Timer, NullPen, A pen that does nothing., int (+19 more)
 
 ### Community 5073 - "Community 5073"
 Cohesion: 0.05
@@ -25369,8 +25372,8 @@ Cohesion: 0.40
 Nodes (5): broken_links, files, in_links, out_links, Brain Root
 
 ### Community 5084 - "Community 5084"
-Cohesion: 0.06
-Nodes (51): CYTHON_INLINE, PY_UINT64_T, _PyErr_StackItem, PyThreadState, __pyx_atomic_ptr_type, __Pyx_ExcInfoStruct, __pyx_nonatomic_ptr_type, T (+43 more)
+Cohesion: 0.05
+Nodes (56): CYTHON_INLINE, PY_UINT64_T, _PyErr_StackItem, PyThreadState, __pyx_atomic_ptr_type, __pyx_nonatomic_ptr_type, T, __pyx_atomic_pointer_cmp_exchange() (+48 more)
 
 ### Community 5085 - "Community 5085"
 Cohesion: 0.40
@@ -25378,11 +25381,11 @@ Nodes (5): broken_links, files, in_links, out_links, Brain/scripts
 
 ### Community 5086 - "Community 5086"
 Cohesion: 0.02
-Nodes (67): AttendanceRecordingIdentityDict, current_time(), GregariousIdentityDict, NonhashableDict, onlyExisting(), A dictionary-like object that welcomes guests without reservations and     adds, A dictionary-like object mapping objects to values., Returns a filter func that when called with a list,     only calls func on the n (+59 more)
+Nodes (61): ttCompile(), AttendanceRecordingIdentityDict, current_time(), GregariousIdentityDict, NonhashableDict, onlyExisting(), A dictionary-like object that welcomes guests without reservations and     adds, A dictionary-like object mapping objects to values. (+53 more)
 
 ### Community 5087 - "Community 5087"
-Cohesion: 0.11
-Nodes (23): __Pyx_AllocateExtensionType(), __pyx_CommonTypesMetaclass_call(), __pyx_CommonTypesMetaclass_get_module(), __pyx_CommonTypesMetaclass_setattr(), __Pyx_KwargsAsDict_FASTCALL(), __pyx_m_clear(), __Pyx_ModuleStateLookup_wait_until_no_readers(), __pyx_pf_9fontTools_5cu2qu_5cu2qu__split_cubic_into_n_gen() (+15 more)
+Cohesion: 0.13
+Nodes (19): __Pyx_AllocateExtensionType(), __pyx_CommonTypesMetaclass_call(), __pyx_CommonTypesMetaclass_get_module(), __pyx_CommonTypesMetaclass_setattr(), __Pyx_KwargsAsDict_FASTCALL(), __pyx_m_clear(), __Pyx_ModuleStateLookup_wait_until_no_readers(), __pyx_pf_9fontTools_5cu2qu_5cu2qu__split_cubic_into_n_gen() (+11 more)
 
 ### Community 5088 - "Community 5088"
 Cohesion: 0.04
@@ -25397,8 +25400,8 @@ Cohesion: 0.40
 Nodes (5): broken_links, files, in_links, out_links, Brain/_SYSTEMS
 
 ### Community 5091 - "Community 5091"
-Cohesion: 0.09
-Nodes (13): CVParametersNameStatement, FeatureNameStatement, NameRecord, Represents a name record. (`Section 9.e. <https://adobe-type-tools.github.io/afd, Calls the builder object's ``add_name_record`` callback., Represents a ``sizemenuname`` or ``name`` statement., Calls the builder object's ``add_featureName`` callback., Represent a name statement inside a ``cvParameters`` block. (+5 more)
+Cohesion: 0.06
+Nodes (22): CVParametersNameStatement, FeatureNameStatement, GlyphClass, NameRecord, Calls the builder object's ``add_multiple_subst`` callback., Represents a name record. (`Section 9.e. <https://adobe-type-tools.github.io/afd, Calls the builder object's ``add_name_record`` callback., Represents a ``sizemenuname`` or ``name`` statement. (+14 more)
 
 ### Community 5092 - "Community 5092"
 Cohesion: 0.05
@@ -25537,8 +25540,8 @@ Cohesion: 0.05
 Nodes (43): Arguments, Artifacts Sync (skill start), AskUserQuestion Format, Browser fallback: gstack's own headless browser, BROWSER SETUP (Aside — run this check BEFORE any browser step), /canary — Post-Deploy Visual Monitor, Claimed Limitations Need Evidence, Completeness Principle — Boil the Ocean (+35 more)
 
 ### Community 5130 - "Community 5130"
-Cohesion: 0.14
-Nodes (3): buildMultiVarData(), _getLocationKey(), OnlineMultiVarStoreBuilder
+Cohesion: 0.33
+Nodes (8): list_loops(), main(), int, str, Resolve user loop input (number or substring) to loop id, name, and keywords., Print the 27 Closed-Loop Feedback Circuits., resolve_loop(), search_workflows()
 
 ### Community 5132 - "Community 5132"
 Cohesion: 0.50
@@ -25556,9 +25559,13 @@ Nodes (4): 2.4 OPS-001 — Staffing Placement & Payroll Services, Available Fund
 Cohesion: 0.50
 Nodes (4): 2.5 LT-011 — Fleet Logistics SaaS & Freight Management, Available Funding Sources (Ranked by Fit Score), Capital Unlock Timeline — LT-011, Proof Points Needed to Unlock Each Funding Source
 
+### Community 5136 - "Community 5136"
+Cohesion: 0.06
+Nodes (3): ps_boolean, ps_integer, PSOperators
+
 ### Community 5137 - "Community 5137"
-Cohesion: 0.09
-Nodes (49): __Pyx_CyFunction_Call(), __Pyx_CyFunction_CallAsMethod(), __Pyx_CyFunction_CallMethod(), __Pyx_CyFunction_clear(), __Pyx__CyFunction_dealloc(), __Pyx_CyFunction_get_annotations(), __Pyx_CyFunction_get_annotations_locked(), __Pyx_CyFunction_get_closure() (+41 more)
+Cohesion: 0.10
+Nodes (44): __Pyx_CyFunction_Call(), __Pyx_CyFunction_CallAsMethod(), __Pyx_CyFunction_CallMethod(), __Pyx_CyFunction_clear(), __Pyx__CyFunction_dealloc(), __Pyx_CyFunction_get_annotations(), __Pyx_CyFunction_get_annotations_locked(), __Pyx_CyFunction_get_closure() (+36 more)
 
 ### Community 5138 - "Community 5138"
 Cohesion: 0.05
@@ -25573,12 +25580,12 @@ Cohesion: 0.05
 Nodes (42): Artifacts Sync (skill start), AskUserQuestion Format, Claimed Limitations Need Evidence, Codex, Completeness Principle — Boil the Ocean, Completion Status Protocol, Confusion Protocol, Context Health (soft directive) (+34 more)
 
 ### Community 5142 - "Community 5142"
-Cohesion: 0.09
-Nodes (45): PyInit_momentsPen(), __Pyx_CalculateMetaclass(), __Pyx_check_binary_version(), __pyx_CommonTypesMetaclass_init(), __Pyx_CreateCodeObjects(), __Pyx_CyFunction_SetDefaultsTuple(), __Pyx_DecompressString(), __Pyx_FetchSharedCythonABIModule() (+37 more)
+Cohesion: 0.10
+Nodes (41): PyInit_momentsPen(), __Pyx_CalculateMetaclass(), __Pyx_check_binary_version(), __pyx_CommonTypesMetaclass_init(), __Pyx_CreateCodeObjects(), __Pyx_CyFunction_SetDefaultsTuple(), __Pyx_DecompressString(), __Pyx_FetchSharedCythonABIModule() (+33 more)
 
 ### Community 5143 - "Community 5143"
-Cohesion: 0.15
-Nodes (38): __Pyx_AddTraceback(), __pyx_CommonTypesMetaclass_call(), __pyx_CommonTypesMetaclass_get_module(), __pyx_CommonTypesMetaclass_setattr(), __Pyx_IterFinish(), __Pyx_IternextUnpackEndCheck(), __Pyx_KwargsAsDict_FASTCALL(), __Pyx_ParseKeywordDict() (+30 more)
+Cohesion: 0.13
+Nodes (43): __Pyx_AddTraceback(), __pyx_CommonTypesMetaclass_call(), __pyx_CommonTypesMetaclass_get_module(), __pyx_CommonTypesMetaclass_setattr(), __Pyx_copy_object_array(), __Pyx__Import(), __Pyx__Import_GetModule(), __Pyx__Import_Lookup() (+35 more)
 
 ### Community 5144 - "Community 5144"
 Cohesion: 0.05
@@ -25621,8 +25628,8 @@ Cohesion: 0.05
 Nodes (41): Artifacts Sync (skill start), AskUserQuestion Format, Capture Learnings, Claimed Limitations Need Evidence, Completeness Principle — Boil the Ocean, Completion Status Protocol, Confusion Protocol, Context Health (soft directive) (+33 more)
 
 ### Community 5154 - "Community 5154"
-Cohesion: 0.05
-Nodes (43): addEmptyAvar(), interpolateLinear(), interpolateLog(), main(), makeDesignspaceSnippet(), measureSlant(), measureWeight(), measureWidth() (+35 more)
+Cohesion: 0.06
+Nodes (39): addEmptyAvar(), interpolateLinear(), interpolateLog(), main(), makeDesignspaceSnippet(), measureSlant(), measureWidth(), normalizeDegrees() (+31 more)
 
 ### Community 5155 - "Community 5155"
 Cohesion: 0.05
@@ -25749,8 +25756,8 @@ Cohesion: 0.10
 Nodes (38): __Pyx__Coroutine_AlreadyRunningError(), __Pyx_Coroutine_AlreadyTerminatedError(), __Pyx_Coroutine_AmSend(), __Pyx_Coroutine_Close(), __Pyx_Coroutine_Close_Method(), __Pyx_Coroutine_CloseIter(), __Pyx_Coroutine_del(), __Pyx_Coroutine_ExceptionClear() (+30 more)
 
 ### Community 5187 - "Community 5187"
-Cohesion: 0.11
-Nodes (38): PyGenObject, __pyx_coroutine_body_t, __pyx_CoroutineObject, __Pyx_PySendResult, __Pyx__Coroutine_AlreadyRunningError(), __Pyx_Coroutine_AlreadyTerminatedError(), __Pyx_Coroutine_AmSend(), __Pyx_Coroutine_Close() (+30 more)
+Cohesion: 0.10
+Nodes (40): PyGenObject, __pyx_coroutine_body_t, __pyx_CoroutineObject, __Pyx_ExcInfoStruct, __Pyx_PySendResult, __Pyx__Coroutine_AlreadyRunningError(), __Pyx_Coroutine_AlreadyTerminatedError(), __Pyx_Coroutine_AmSend() (+32 more)
 
 ### Community 5188 - "Community 5188"
 Cohesion: 0.05
@@ -25813,12 +25820,12 @@ Cohesion: 0.50
 Nodes (3): Boundaries, Output, Scan
 
 ### Community 5205 - "Community 5205"
-Cohesion: 0.11
-Nodes (15): assemble(), Classes, content_string(), disassemble(), getSimple(), _Object, Pass, Graphite Rules table      See also https://graphite.sil.org/graphite_techAbout#g (+7 more)
+Cohesion: 0.09
+Nodes (17): floatToFixedToStr(), Convert float to string with fixed-point rounding.      This uses the shortest d, assemble(), Classes, content_string(), disassemble(), getSimple(), _Object (+9 more)
 
 ### Community 5206 - "Community 5206"
-Cohesion: 0.25
-Nodes (6): assert, fs, path, root, SKILL_DIRS, test
+Cohesion: 0.29
+Nodes (3): Split and return the lap time (in seconds) in between splits., Format 'time' value in 'msg' and return formatted string.         If 'msg' conta, End the current lap. If timer has a logger, log the time elapsed,         using
 
 ### Community 5207 - "Community 5207"
 Cohesion: 0.06
@@ -25833,8 +25840,8 @@ Cohesion: 0.06
 Nodes (34): Artifacts Sync (skill start), AskUserQuestion Format, Claimed Limitations Need Evidence, Completeness Principle — Boil the Ocean, Completion Status Protocol, Confusion Protocol, Context Health (soft directive), Context Recovery (+26 more)
 
 ### Community 5210 - "Community 5210"
-Cohesion: 0.07
-Nodes (14): Reader for Mac OS resource forks.      Parses a resource fork and returns resour, A list of the types of resources in the resource fork., Return the number of resources of a given type., Returns a list of indices of resources of a given type., Return list of names of all resources of a given type., Return resource of given type located at an index ranging from 1         to the, Return the named resource of given type, else return None., Represents a resource stored within a resource fork.      Attributes: (+6 more)
+Cohesion: 0.06
+Nodes (20): Exception, Reader for Mac OS resource forks.      Parses a resource fork and returns resour, A list of the types of resources in the resource fork., Return the number of resources of a given type., Returns a list of indices of resources of a given type., Return list of names of all resources of a given type., Return resource of given type located at an index ranging from 1         to the, Return the named resource of given type, else return None. (+12 more)
 
 ### Community 5211 - "Community 5211"
 Cohesion: 0.10
@@ -25973,8 +25980,8 @@ Cohesion: 0.50
 Nodes (4): 7. TRACTION & VALIDATION, Capital Infrastructure, Customer Evidence, Live Product
 
 ### Community 5246 - "Community 5246"
-Cohesion: 0.10
-Nodes (32): CYTHON_UNUSED, PyType_Spec, PyTypeObject, __Pyx_PyAsyncMethodsStruct, __Pyx_pyiter_sendfunc, __Pyx_AllocateExtensionType(), __pyx_CommonTypesMetaclass_call(), __pyx_CommonTypesMetaclass_get_module() (+24 more)
+Cohesion: 0.07
+Nodes (43): CYTHON_UNUSED, PyType_Spec, PyTypeObject, __Pyx_InterpreterIdAndModule, __Pyx_ModuleStateLookupData, __Pyx_PyAsyncMethodsStruct, __Pyx_pyiter_sendfunc, __Pyx_AllocateExtensionType() (+35 more)
 
 ### Community 5247 - "Community 5247"
 Cohesion: 0.50
@@ -26053,8 +26060,8 @@ Cohesion: 0.03
 Nodes (57): Agent Delegation & Operating Contract, API Specifications, Architecture Decision Log, ARCHITECTURE.md, ARCHITECTURE.md, ARCHITECTURE.md, ASSUMPTIONS.md, Business Model (+49 more)
 
 ### Community 5266 - "Community 5266"
-Cohesion: 0.13
-Nodes (30): _Delta, _DeltaOrNoneSegment, _DeltaSegment, _Endpoints, Integral, _PointSegment, Real, int (+22 more)
+Cohesion: 0.05
+Nodes (41): _Delta, _DeltaOrNoneSegment, _DeltaSegment, _Endpoints, Integral, _PointSegment, Real, int (+33 more)
 
 ### Community 5267 - "Community 5267"
 Cohesion: 0.07
@@ -26077,8 +26084,8 @@ Cohesion: 0.40
 Nodes (5): Analysis & Insights, Core Skills (Use in Order), Core Skills (Use in Order), Knowledge Management, PHASE 8: LEARNING & EVOLUTION
 
 ### Community 5272 - "Community 5272"
-Cohesion: 0.16
-Nodes (16): __Pyx_copy_object_array(), __Pyx__Import(), __Pyx__Import_GetModule(), __Pyx__Import_Lookup(), __Pyx_NewRef(), __Pyx_Owned_Py_None(), __Pyx_PyBool_FromLong(), __Pyx_PyList_FromArray() (+8 more)
+Cohesion: 0.18
+Nodes (14): __Pyx_NewRef(), __Pyx_Owned_Py_None(), __Pyx_PyBool_FromLong(), __Pyx_PyLong_As_int(), __Pyx_PyLong_As_long(), __Pyx_PyLong_From_long(), __Pyx_PyMethod_New(), __Pyx_PyNumber_Long() (+6 more)
 
 ### Community 5273 - "Community 5273"
 Cohesion: 0.07
@@ -26169,8 +26176,8 @@ Cohesion: 0.07
 Nodes (26): Artifacts Sync (skill start), browse: give the agent eyes, Browser fallback: gstack's own headless browser, BROWSER SETUP (Aside — run this check BEFORE any browser step), Completion Status Protocol, Cookbook (verified against Aside CLI 1.26 — use these shapes, not memory), Fallback command reference, Find the `$B` binary (+18 more)
 
 ### Community 5302 - "Community 5302"
-Cohesion: 0.13
-Nodes (19): calcCubicParametersC(), calcCubicPointsC(), Split a cubic Bezier curve at one or more values of t.      Args:         pt1,pt, splitCubicAtTC(), add_implicit_on_curves(), cubic_farthest_fit_inside(), elevate_quadratic(), main() (+11 more)
+Cohesion: 0.18
+Nodes (14): add_implicit_on_curves(), cubic_farthest_fit_inside(), elevate_quadratic(), merge_curves(), quadratic_to_curves(), Give a cubic-Bezier spline, reconstruct one cubic-Bezier     that has the same e, Converts a connecting list of quadratic splines to a list of quadratic     and c, q: quadratic spline with alternating on-curve / off-curve points.      costs: cu (+6 more)
 
 ### Community 5303 - "Community 5303"
 Cohesion: 0.07
@@ -26225,8 +26232,8 @@ Cohesion: 0.05
 Nodes (41): Artifacts Sync (skill start), AskUserQuestion Format, Claimed Limitations Need Evidence, Completeness Principle — Boil the Ocean, Completion Status Protocol, Confusion Protocol, Context Health (soft directive), Context Recovery (+33 more)
 
 ### Community 5322 - "Community 5322"
-Cohesion: 0.08
-Nodes (16): approximateCubicArcLength(), approximateCubicArcLengthC(), approximateQuadraticArcLength(), approximateQuadraticArcLengthC(), calcCubicArcLength(), calcCubicArcLengthC(), _calcCubicArcLengthCRecurse(), Calculates the arc length for a cubic Bezier segment.      Args:         pt1,pt2 (+8 more)
+Cohesion: 0.12
+Nodes (10): approximateCubicArcLength(), approximateCubicArcLengthC(), approximateQuadraticArcLength(), approximateQuadraticArcLengthC(), Calculates the arc length for a quadratic Bezier segment.      Uses Gauss-Legend, Calculates the arc length for a quadratic Bezier segment.      Uses Gauss-Legend, Approximates the arc length for a cubic Bezier segment.      Uses Gauss-Lobatto, Approximates the arc length for a cubic Bezier segment.      Args:         pt1,p (+2 more)
 
 ### Community 5323 - "Community 5323"
 Cohesion: 0.08
@@ -26317,8 +26324,8 @@ Cohesion: 0.67
 Nodes (3): Logic Language Conventions, Master Decision Tree, SECTION 2: CORE ROUTING LOGIC
 
 ### Community 5355 - "Community 5355"
-Cohesion: 0.03
-Nodes (67): Utilities to manage deprecation errors & warnings.  The contents of this module, Decorator converting `txt=` arguments into `text=` arguments, support_deprecated_txt_arg(), color_from_hex_string(), convert_to_device_color(), Produce a DeviceRGB color from the given 8-bit RGB values.      Args:         r, Parse an RGB color from a css-style 8-bit hexadecimal color string.      Args:, rgb8() (+59 more)
+Cohesion: 0.06
+Nodes (35): color_as_decimal(), ol_prefix(), parse_css_style(), Convert a web color name to a (R, G, B) color tuple.     cf. https://en.wikipedi, Parse `style="..."` HTML attributes, and return a dict of key-value, Args:             pdf (fpdf.fpdf.FPDF): an instance of `FPDF`             image_, _scale_units(), ul_prefix() (+27 more)
 
 ### Community 5356 - "Community 5356"
 Cohesion: 0.08
@@ -26345,12 +26352,12 @@ Cohesion: 0.29
 Nodes (6): 1. Live Runtime Architecture, 2. Gateway Callback Configuration, 3. Observability Dashboard Verification, A. LiteLLM Gateway Configuration (`litellm-config.yaml`), B. Python Agent Runtime Interceptor, Langfuse & OpenTelemetry Telemetry Wiring
 
 ### Community 5362 - "Community 5362"
-Cohesion: 0.09
-Nodes (14): PSError, PSInterpreter, PSTokenError, PSTokenizer, Remove circular references., Read at most 'n' bytes from the buffer, or less if the read         hits EOF bef, suckfont(), unpack_item() (+6 more)
+Cohesion: 0.07
+Nodes (25): PSError, PSInterpreter, PSTokenError, PSTokenizer, Remove circular references., Read at most 'n' bytes from the buffer, or less if the read         hits EOF bef, suckfont(), unpack_item() (+17 more)
 
 ### Community 5363 - "Community 5363"
-Cohesion: 0.12
-Nodes (13): escape(), escape8bit(), escapeattr(), hexStr(), xmlWriter.py -- Simple XML authoring class, Writes bytes, possibly indented., Escape characters not allowed in `XML 1.0 <https://www.w3.org/TR/xml/#NT-Char>`_, Input is Unicode string. (+5 more)
+Cohesion: 0.08
+Nodes (14): escape(), escape8bit(), escapeattr(), hexStr(), xmlWriter.py -- Simple XML authoring class, Writes bytes, possibly indented., Escape characters not allowed in `XML 1.0 <https://www.w3.org/TR/xml/#NT-Char>`_, Input is Unicode string. (+6 more)
 
 ### Community 5364 - "Community 5364"
 Cohesion: 0.16
@@ -26363,10 +26370,6 @@ Nodes (15): PSDraw, Draw a PIL image, centered in the given box., Sets up printi
 ### Community 5366 - "Community 5366"
 Cohesion: 0.22
 Nodes (9): Completion Tasks, Deployment Status, Deployment Status, Missing/Incomplete, 🟡 SITE 4: OPS-001 (Staffing), Verification Checklist, Verification Checklist, What's Implemented (+1 more)
-
-### Community 5367 - "Community 5367"
-Cohesion: 0.20
-Nodes (7): BigGlyphMetrics, cbdt_bitmap_format_17, cbdt_bitmap_format_18, cbdt_bitmap_format_19, ColorBitmapGlyph, Color Bitmap Data table      The ``CBDT`` table contains color bitmap data for g, table_C_B_D_T_
 
 ### Community 5370 - "Community 5370"
 Cohesion: 0.08
@@ -26393,8 +26396,8 @@ Cohesion: 0.05
 Nodes (41): Artifacts Sync (skill start), AskUserQuestion Format, Claimed Limitations Need Evidence, Completeness Principle — Boil the Ocean, Completion Status Protocol, Confusion Protocol, Context Health (soft directive), Context Recovery (+33 more)
 
 ### Community 5376 - "Community 5376"
-Cohesion: 0.24
-Nodes (10): DecisionTree, file_convert(), find_conversion_path(), int, str, Find conversion path in registry.     Returns conversion spec or None if not fou, Conversion decision tree, Run decision tree to select best engine.         Returns engine name (pandoc, ff (+2 more)
+Cohesion: 0.33
+Nodes (6): OWN-PRIV-0003, dep_count, dependencies, dev_dependencies, manifest_files, repo_name
 
 ### Community 5377 - "Community 5377"
 Cohesion: 0.10
@@ -26681,8 +26684,8 @@ Cohesion: 0.10
 Nodes (20): `/autoplan`, `/benchmark`, `/canary`, `/cso`, `/design-consultation`, `/diagram`, `/document-release`, Example (+12 more)
 
 ### Community 5459 - "Community 5459"
-Cohesion: 0.14
-Nodes (7): EngineExecutor, Execute conversion commands for various engines, ImageMagick conversion, LibreOffice conversion, DuckDB conversion for data formats, Tesseract OCR (image -> text), OCRmyPDF (scanned PDF -> searchable PDF)
+Cohesion: 0.33
+Nodes (3): BaseAxis, An axis definition, being either a ``VertAxis.BaseTagList/BaseScriptList``     p, Calls the builder object's ``set_base_axis`` callback.
 
 ### Community 5461 - "Community 5461"
 Cohesion: 0.10
@@ -26757,8 +26760,8 @@ Cohesion: 0.15
 Nodes (20): __Pyx_CyFunction_InitDefaults(), __Pyx_FetchCommonTypeFromSpec(), __Pyx_fix_up_extension_type_from_spec(), __Pyx_GetTypeDict(), __Pyx_GetTypeDictOffset(), __Pyx_InBases(), __Pyx_inner_PyErr_GivenExceptionMatches2(), __Pyx_IsAnySubtype2() (+12 more)
 
 ### Community 5490 - "Community 5490"
-Cohesion: 0.20
-Nodes (22): copy_dir(), copy_file(), copy_fs(), copy_structure(), abspath(), basename(), combine(), dirname() (+14 more)
+Cohesion: 0.15
+Nodes (26): copy_dir(), copy_file(), copy_fs(), copy_structure(), abspath(), basename(), combine(), dirname() (+18 more)
 
 ### Community 5491 - "Community 5491"
 Cohesion: 0.10
@@ -26794,7 +26797,7 @@ Nodes (17): _accept(), EpsImageFile, Ghostscript(), has_ghostscript(), EPS File 
 
 ### Community 5499 - "Community 5499"
 Cohesion: 0.33
-Nodes (4): A file object that provides read access to a given member of a TAR file., Create file object.          :param tarfile: Name of TAR file.         :param fi, TarIO, str
+Nodes (3): CharacterStatement, Statement used in cvParameters blocks of Character Variant features (cvXX)., Calls the builder object's ``add_cv_character`` callback.
 
 ### Community 5500 - "Community 5500"
 Cohesion: 0.10
@@ -27025,7 +27028,7 @@ Cohesion: 0.16
 Nodes (10): Classifier, classify(), fontTools.misc.classifyTools.py -- tools for classifying things., Returns the list of class sets.          The return value belongs to the Classif, Takes a iterable of iterables (list of sets from here on; but any     iterable w, Add a set to the classifier.  Any iterable is accepted., Main Classifier object, used to classify things into similar sets., Add a a list of sets to the classifier.  Any iterable of iterables is accepted. (+2 more)
 
 ### Community 5573 - "Community 5573"
-Cohesion: 0.14
+Cohesion: 0.15
 Nodes (6): PointInsidePen, fontTools.pens.pointInsidePen -- Pen implementing "point inside" testing for sha, This pen implements "point inside" testing: to test whether     a given point li, Insideness is not defined for open contours., Set the point to test. Call this _before_ the outline gets drawn., After the shape has been drawn, getResult() returns True if the test         poi
 
 ### Community 5574 - "Community 5574"
@@ -27117,8 +27120,8 @@ Cohesion: 0.12
 Nodes (16): 1. `gbrain sync` — automatic .gitignore management, 2. `gbrain export --restore-only` — repopulate missing db_only files, 3. `gbrain storage status` — storage-tier health dashboard, Behavior Changes, Best practices, Brain repository scaling, Compatibility, Configuration (+8 more)
 
 ### Community 5604 - "Community 5604"
-Cohesion: 0.21
-Nodes (12): DESCRIPTIONS, fs, NAMES, outPath(), path, render(), ROOT, sourceBody() (+4 more)
+Cohesion: 0.33
+Nodes (3): FeatureReferenceStatement, Example: ``feature salt;``, Calls the builder object's ``add_feature_reference`` callback.
 
 ### Community 5605 - "Community 5605"
 Cohesion: 0.29
@@ -27577,8 +27580,8 @@ Cohesion: 0.14
 Nodes (13): Architecture, Cost Estimate, Email-to-Brain: Gmail Messages That Update Your Brain, IMPORTANT: Instructions for the Agent, Opinionated Defaults (now implemented in the connector), Prerequisites, Setup Flow, Step 1: Run the One-Command Setup (+5 more)
 
 ### Community 5766 - "Community 5766"
-Cohesion: 0.15
-Nodes (14): __Pyx_TypeName, __Pyx__ArgTypeTest(), __Pyx_Coroutine_fail_reduce_ex(), __Pyx_PyBuiltin_Invalid(), __Pyx_PyIndex_AsHash_t(), __Pyx_PyIndex_AsSsize_t(), __Pyx_PyIter_Next2(), __Pyx_PyIter_Next2Default() (+6 more)
+Cohesion: 0.05
+Nodes (65): PyObject, __Pyx_TypeName, __Pyx__ArgTypeTest(), __Pyx_Coroutine_fail_reduce_ex(), __Pyx_CyOrPyCFunction_GET_SELF(), __Pyx_Fallback___Pyx_PyLong_SubtractObjC(), __Pyx_FetchSharedCythonABIModule(), __Pyx_Float___Pyx_PyLong_SubtractObjC() (+57 more)
 
 ### Community 5767 - "Community 5767"
 Cohesion: 0.14
@@ -27729,8 +27732,8 @@ Cohesion: 0.15
 Nodes (12): Cost Optimization, GBrain's native mechanism: model tiers, Goal, How to Verify, Implementation, Research Pipeline Pattern, Routing Table, Sub-Agent Model Routing (+4 more)
 
 ### Community 5818 - "Community 5818"
-Cohesion: 0.30
-Nodes (12): AddToFrontierFn, BaseTable, bool, str, SubTableEntry, bfs_base_table(), dfs_base_table(), Methods for traversing trees of otData-driven OpenType tables. (+4 more)
+Cohesion: 0.33
+Nodes (3): HheaField, An entry in the ``hhea`` table., Calls the builder object's ``add_hhea_field`` callback.
 
 ### Community 5819 - "Community 5819"
 Cohesion: 0.33
@@ -27777,16 +27780,16 @@ Cohesion: 0.15
 Nodes (12): Classify, Escalation Detection, Fetch, Greptile Comment Triage, History File Writes, Output Format, Reply APIs, Reply Templates (+4 more)
 
 ### Community 5830 - "Community 5830"
-Cohesion: 0.29
-Nodes (4): GetSegmentsPen, Draw segments as extracted by GetSegmentsPen back to a glyph., Pen to collect segments into lists of points for conversion.      Curves always, _set_segments()
+Cohesion: 0.33
+Nodes (3): LanguageSystemStatement, A top-level ``languagesystem`` statement., Calls the builder object's ``add_language_system`` callback.
 
 ### Community 5831 - "Community 5831"
-Cohesion: 0.40
-Nodes (5): getSFNTResIndices(), openTTFonts(), ttLib.macUtils.py -- Various Mac-specific stuff., Given a pathname, return a list of TTFont objects. In the case     of a flat TTF, Determine whether a file has a 'sfnt' resource fork or not.
+Cohesion: 0.33
+Nodes (3): OS2Field, An entry in the ``OS/2`` table. Most ``values`` should be numbers or     strings, Calls the builder object's ``add_os2_field`` callback.
 
 ### Community 5832 - "Community 5832"
-Cohesion: 0.23
-Nodes (10): MockFont, A font-like object that automatically adds any looked up glyphname     to its gl, FeatureNotFoundError, LookupNotFoundError, MarkHelper, MarkToBaseHelper, MarkToLigatureHelper, MarkToMarkHelper (+2 more)
+Cohesion: 0.33
+Nodes (3): A ``script`` statement., Calls the builder's ``set_script`` callback., ScriptStatement
 
 ### Community 5833 - "Community 5833"
 Cohesion: 0.15
@@ -27833,8 +27836,8 @@ Cohesion: 0.40
 Nodes (4): 1. System Overview, 2. Runtime & Execution Architecture, 3. CLI Invocations, OpenHands (`All-Hands-AI/OpenHands`)
 
 ### Community 5844 - "Community 5844"
-Cohesion: 0.20
-Nodes (4): bit_indices(), Return list of indices where bits are set, 0 being the index of the least signif, _classDef_bytes(), Cluster
+Cohesion: 0.33
+Nodes (3): An entry in the ``vhea`` table., Calls the builder object's ``add_vhea_field`` callback., VheaField
 
 ### Community 5845 - "Community 5845"
 Cohesion: 0.05
@@ -27985,8 +27988,8 @@ Cohesion: 0.17
 Nodes (11): 1. Auto-enable cursor-interactive scan with `-i` flag, 2. Add popover/portal priority scanning, 3. Remove the `hasRole` skip in cursor-interactive scan, 4. Add dropdown test fixture and tests, Changes, Files Changed, Plan: Snapshot Dropdown/Autocomplete Interactive Element Detection, Problem (+3 more)
 
 ### Community 5882 - "Community 5882"
-Cohesion: 0.17
-Nodes (9): agents, canonical, copies, fs, INVARIANTS, path, root, skill (+1 more)
+Cohesion: 0.33
+Nodes (3): Create a transform that performs translation.          Args:             x (Numb, Produce a transform by composing the current transform with a translation., Bracket the given transform in a pair of translations to make it appear about a
 
 ### Community 5883 - "Community 5883"
 Cohesion: 0.05
@@ -28185,8 +28188,8 @@ Cohesion: 0.67
 Nodes (3): [0.41.27.0] - 2026-05-27, Itemized changes, Supersedes
 
 ### Community 5936 - "Community 5936"
-Cohesion: 0.27
-Nodes (9): _cff_scale(), main(), Change the units-per-EM of a font.  AAT and Graphite tables are not supported. C, Change the units-per-EM of font to the new value., Change the units-per-EM of fonts, scale_upem(), ScalerVisitor, _setup_scale_paint() (+1 more)
+Cohesion: 0.40
+Nodes (6): __Pyx_MatchKeywordArg(), __Pyx_MatchKeywordArg_nostr(), __Pyx_MatchKeywordArg_str(), __Pyx_ParseKeywordsTuple(), __Pyx_RaiseDoubleKeywordsError(), __Pyx_UnicodeKeywordsEqual()
 
 ### Community 5937 - "Community 5937"
 Cohesion: 0.17
@@ -28208,13 +28211,17 @@ Nodes (37): Model-Specific Behavioral Patch (gpt), Artifacts Sync (skill start),
 Cohesion: 0.17
 Nodes (11): Honesty, Identity, Judgment default, Mission, Never, Never write like this, SOUL.md — {{AGENT_NAME}}, The standard (+3 more)
 
+### Community 5942 - "Community 5942"
+Cohesion: 0.33
+Nodes (6): OWN-PRIV-0054, dep_count, dependencies, dev_dependencies, manifest_files, repo_name
+
 ### Community 5943 - "Community 5943"
 Cohesion: 0.25
 Nodes (7): 1. Unified Repository & Knowledge Engine Stack, 2. GitNexus Code Graph Usage, 3. Repomix & Madge Code Auditing, 4. gbrain & Neo4j Knowledge Ingestion, Common Commands, Overview, _TOOLS — Integrated Tooling & Local Knowledge Engines
 
 ### Community 5944 - "Community 5944"
-Cohesion: 0.31
-Nodes (6): GimpPaletteFile, File handler for GIMP's palette format., bool, bytes, IO, str
+Cohesion: 0.33
+Nodes (5): 1. Architectural Separation, 2. The 16-Stage Income Conveyor Belt, 3. Workflow Assembly Over Inventory Sprawl, 4. Mandatory 5-Circuit Sub-Loop Requirement, Universal Income Loops Rule — Company Brain
 
 ### Community 5945 - "Community 5945"
 Cohesion: 0.17
@@ -28405,8 +28412,8 @@ Cohesion: 0.50
 Nodes (5): __Pyx_PyUnicode_AsDouble(), __Pyx__PyUnicode_AsDouble_Copy(), __Pyx__PyUnicode_AsDouble_inf_nan(), __Pyx_PyUnicode_AsDouble_WithSpaces(), __Pyx_SlowPyString_AsDouble()
 
 ### Community 5996 - "Community 5996"
-Cohesion: 0.67
-Nodes (3): [0.42.35.0] - 2026-06-07, Fixed, To take advantage of v0.42.35.0
+Cohesion: 0.40
+Nodes (5): Test for rectangle-rectangle intersection.      Args:         rect1: First bound, Determine rectangle area.      Args:         rect: Bounding rectangle, expressed, rectArea(), sectRect(), _curve_curve_intersections_t()
 
 ### Community 5997 - "Community 5997"
 Cohesion: 0.18
@@ -28472,10 +28479,6 @@ Nodes (10): Deterministic Collectors: Code for Data, LLMs for Judgment, File Str
 Cohesion: 0.18
 Nodes (10): Goal, How to Verify, Implementation, MECE Discipline, Quality Bar Checklist, Skill Development Cycle, The 5-Step Cycle, Tricky Spots (+2 more)
 
-### Community 6013 - "Community 6013"
-Cohesion: 0.67
-Nodes (3): Itemized changes, To take advantage of v0.41.2.0, v0.41.2.1 follow-ups (filed)
-
 ### Community 6014 - "Community 6014"
 Cohesion: 0.67
 Nodes (3): [0.18.0.0] - 2026-04-15, Added, Changed
@@ -28524,10 +28527,6 @@ Nodes (10): 2025-02-01 — Project Started, 2025-03-01 — Contract-First Refact
 Cohesion: 0.18
 Nodes (11): Additional Rules (qa-only specific), BROWSER SETUP (Aside — run this check BEFORE any browser step), Capture Learnings, Important Rules, Output, Output Structure, Prior Learnings, /qa-only: Report-Only QA Testing (+3 more)
 
-### Community 6027 - "Community 6027"
-Cohesion: 0.20
-Nodes (11): __Pyx_GetBuiltinName(), __Pyx_GetBuiltinNext_LimitedAPI(), __Pyx__GetModuleGlobalName(), __pyx_pf_9fontTools_6varLib_3iup_6_iup_contour_optimize_dp(), __Pyx_PyDict_GetItem(), __Pyx_PyDict_GetItemRef(), __Pyx_PyLong_From_int(), __Pyx_PyLong_From_long() (+3 more)
-
 ### Community 6028 - "Community 6028"
 Cohesion: 0.18
 Nodes (11): Setup Flow, Step 10: Log Setup Completion, Step 1: Check Prerequisites, Step 2: Collect and Validate Credentials, Step 3: Start ngrok Tunnel, Step 4: Create Voice Server, Step 5: Configure Twilio Phone Number, Step 6: Start Voice Server and Verify (+3 more)
@@ -28572,10 +28571,6 @@ Nodes (3): deviceToString(), Represents a value record., ValueRecord
 Cohesion: 0.05
 Nodes (37): Artifacts Sync (skill start), AskUserQuestion Format, Capture Learnings, Claimed Limitations Need Evidence, Completeness Principle — Boil the Ocean, Completion Status Protocol, Confusion Protocol, Context Health (soft directive) (+29 more)
 
-### Community 6041 - "Community 6041"
-Cohesion: 0.27
-Nodes (6): bool, QualityAssurance, Post-conversion quality checks, Check if output file size is reasonable.         Returns (is_valid, message), Check if output file exists and is readable, Run all QA checks.         Returns attestation: PASS, WARN, or FAIL
-
 ### Community 6042 - "Community 6042"
 Cohesion: 0.05
 Nodes (37): Architecture, Artifacts Sync (skill start), AskUserQuestion Format, Claimed Limitations Need Evidence, Cleanup, Completeness Principle — Boil the Ocean, Completion Status Protocol, Confusion Protocol (+29 more)
@@ -28604,6 +28599,10 @@ Nodes (10): Anti-Patterns, Contract, Dedup (sharp boundaries), Known failure mod
 Cohesion: 0.18
 Nodes (10): Agent onboarding — what to do with the files in this directory, Frontmatter contract notes, `reference --apply-clean-hunks` — two-way merge warning, Removing a scaffolded skill, Routing — your first job, The always-on memory loop, Updates — when gbrain ships a new version, What lives in this directory (+2 more)
 
+### Community 6050 - "Community 6050"
+Cohesion: 0.50
+Nodes (4): CON-011, id, repo_count, repositories
+
 ### Community 6051 - "Community 6051"
 Cohesion: 0.18
 Nodes (10): Agent onboarding — what to do with the files in this directory, Frontmatter contract notes, `reference --apply-clean-hunks` — two-way merge warning, Removing a scaffolded skill, Routing — your first job, The always-on memory loop, Updates — when gbrain ships a new version, What lives in this directory (+2 more)
@@ -28626,7 +28625,7 @@ Nodes (37): Artifacts Sync (skill start), AskUserQuestion Format, Claimed Limita
 
 ### Community 6056 - "Community 6056"
 Cohesion: 0.67
-Nodes (3): [0.41.36.0] - 2026-05-30, How to turn it on, What's safe to know about
+Nodes (3): broker_communications, status, week
 
 ### Community 6057 - "Community 6057"
 Cohesion: 0.20
@@ -28665,12 +28664,12 @@ Cohesion: 0.05
 Nodes (37): Artifacts Sync (skill start), AskUserQuestion Format, Claimed Limitations Need Evidence, Completeness Principle — Boil the Ocean, Completion Status Protocol, Confusion Protocol, Context Health (soft directive), Context Recovery (+29 more)
 
 ### Community 6067 - "Community 6067"
-Cohesion: 0.44
-Nodes (7): _copytree(), _cpu_count(), _font_to_quadratic(), _main(), open_ufo(), Convert a UFO font from cubic to quadratic curves, _samepath()
+Cohesion: 0.67
+Nodes (3): [0.41.23.0] - 2026-05-26, Itemized changes, To take advantage of v0.41.23.0
 
 ### Community 6069 - "Community 6069"
-Cohesion: 0.31
-Nodes (8): handleClash1(), handleClash2(), NameTranslationError, This module implements the algorithm for converting between a "user name" - some, existing should be a case-insensitive list     of all existing file names., existing should be a case-insensitive list     of all existing file names., Converts from a user name to a file name.      Takes care to avoid illegal chara, userNameToFileName()
+Cohesion: 0.67
+Nodes (3): [0.41.33.0] - 2026-05-29, Itemized changes, To take advantage of v0.41.33.0
 
 ### Community 6070 - "Community 6070"
 Cohesion: 0.67
@@ -28681,16 +28680,28 @@ Cohesion: 0.67
 Nodes (3): Itemized changes, Plan + reviews, To take advantage of v0.40.2.0
 
 ### Community 6072 - "Community 6072"
-Cohesion: 0.22
-Nodes (8): GdImageFile, open(), Image plugin for the GD uncompressed format.  Note that this format     is not s, Load texture from a GD image file.      :param fp: GD file name, or an opened fi, bytes, IO, str, StrOrBytesPath
+Cohesion: 0.67
+Nodes (3): [0.41.6.0] - 2026-05-25, For contributors, Itemized changes
+
+### Community 6073 - "Community 6073"
+Cohesion: 0.67
+Nodes (3): [0.45.20.0] - 2026-08-14, Added, Changed
 
 ### Community 6074 - "Community 6074"
 Cohesion: 0.22
 Nodes (7): assert, fs, HOST_PLUGIN_MANIFESTS, path, root, { spawn }, test
 
+### Community 6078 - "Community 6078"
+Cohesion: 0.67
+Nodes (3): [0.47.6.0] - 2026-08-29, Changed, Fixed
+
+### Community 6079 - "Community 6079"
+Cohesion: 0.67
+Nodes (3): Itemized changes, To take advantage of v0.40.7.2, TODOS register at top of TODOS.md
+
 ### Community 6080 - "Community 6080"
-Cohesion: 0.25
-Nodes (6): distinct, fs, path, root, VERSION_FILES, versions
+Cohesion: 0.67
+Nodes (3): [0.16.3.0] - 2026-04-09, Added, Changed
 
 ### Community 6081 - "Community 6081"
 Cohesion: 0.29
@@ -28700,25 +28711,9 @@ Nodes (6): config, configPath, __dirname, loadMemory(), portfolioPath, setupHead
 Cohesion: 0.29
 Nodes (3): fixlongs(), TSI{0,1,2,3,5} are private tables used by Microsoft Visual TrueType (VTT) tool t, table_T_S_I__0
 
-### Community 6083 - "Community 6083"
-Cohesion: 0.25
-Nodes (7): assert, commands, fs, path, piSource, root, test
-
-### Community 6084 - "Community 6084"
-Cohesion: 0.25
-Nodes (6): assert, fs, path, REQUIRED_COMMAND_FILES, root, test
-
 ### Community 6085 - "Community 6085"
-Cohesion: 0.43
-Nodes (6): generate_curve(), main(), Benchmark the cu2qu algorithm performance., run_benchmark(), setup_curve_to_quadratic(), setup_curves_to_quadratic()
-
-### Community 6088 - "Community 6088"
-Cohesion: 0.33
-Nodes (6): OWN-PRIV-0002, dep_count, dependencies, dev_dependencies, manifest_files, repo_name
-
-### Community 6089 - "Community 6089"
-Cohesion: 0.33
-Nodes (3): LanguageStatement, A ``language`` statement within a feature., Call the builder object's ``set_language`` callback.
+Cohesion: 0.36
+Nodes (7): generate_curve(), main(), Benchmark the cu2qu algorithm performance., run_benchmark(), setup_curve_to_quadratic(), setup_curves_to_quadratic(), main()
 
 ### Community 6090 - "Community 6090"
 Cohesion: 0.33
@@ -28876,14 +28871,6 @@ Nodes (10): 3 Cross-Project Insights, 3 Habits for Next Week, All Projects Overv
 Cohesion: 0.50
 Nodes (3): printSegments(), Helper for the doctests, displaying each segment in a list of     segments on a, _segmentrepr()
 
-### Community 6131 - "Community 6131"
-Cohesion: 0.50
-Nodes (4): __Pyx_CreateCodeObjectForTraceback(), __Pyx__PyCode_New(), PyCodeObject, __Pyx_PyCode_New_function_description
-
-### Community 6133 - "Community 6133"
-Cohesion: 0.50
-Nodes (4): CON-001, id, repo_count, repositories
-
 ### Community 6134 - "Community 6134"
 Cohesion: 0.20
 Nodes (9): Fallback Intent Sources (when no plan file found), Integration with Scope Drift Detection, Investigation Depth, Learnings Logging (plan-file discrepancies only), Plan File Discovery, Actionable Item Extraction, Cross-Reference Against Diff, Output Format (+1 more)
@@ -28891,10 +28878,6 @@ Nodes (9): Fallback Intent Sources (when no plan file found), Integration with S
 ### Community 6135 - "Community 6135"
 Cohesion: 0.20
 Nodes (9): Codex Documentation Review (default-on), Step 2: Per-File Documentation Audit, Step 3: Apply Auto-Updates, Step 4: Ask About Risky/Questionable Changes, Step 5: CHANGELOG Voice Polish, Step 6: Cross-Doc Consistency & Discoverability Check, Step 7: TODOS.md Cleanup, Step 8: VERSION Bump Question (+1 more)
-
-### Community 6136 - "Community 6136"
-Cohesion: 0.67
-Nodes (3): safety_routing, status, week
 
 ### Community 6137 - "Community 6137"
 Cohesion: 0.05
@@ -28916,14 +28899,6 @@ Nodes (37): Artifacts Sync (skill start), AskUserQuestion Format, Claimed Limita
 Cohesion: 0.05
 Nodes (37): Artifacts Sync (skill start), AskUserQuestion Format, Claimed Limitations Need Evidence, Completeness Principle — Boil the Ocean, Completion Status Protocol, Confusion Protocol, Context Health (soft directive), Context Recovery (+29 more)
 
-### Community 6142 - "Community 6142"
-Cohesion: 0.67
-Nodes (3): [0.41.25.0] - 2026-05-27, For contributors, Itemized changes
-
-### Community 6143 - "Community 6143"
-Cohesion: 0.67
-Nodes (3): [0.41.5.0] - 2026-05-24, For contributors, Itemized changes
-
 ### Community 6144 - "Community 6144"
 Cohesion: 0.67
 Nodes (3): [0.42.37.0] - 2026-06-08, Fixed, To take advantage of v0.42.37.0
@@ -28939,10 +28914,6 @@ Nodes (3): [0.42.73.2] - 2026-08-05, For contributors, To take advantage of v0.4
 ### Community 6147 - "Community 6147"
 Cohesion: 0.05
 Nodes (37): Artifacts Sync (skill start), AskUserQuestion Format, Claimed Limitations Need Evidence, /claude - Claude Outside Voice, Completeness Principle — Boil the Ocean, Completion Status Protocol, Confusion Protocol, Context Health (soft directive) (+29 more)
-
-### Community 6148 - "Community 6148"
-Cohesion: 0.67
-Nodes (3): [0.45.15.0] - 2026-08-14, Added, Fixed
 
 ### Community 6149 - "Community 6149"
 Cohesion: 0.20
@@ -29008,10 +28979,6 @@ Nodes (3): For contributors, Itemized changes, To take advantage of v0.42.13.0
 Cohesion: 0.67
 Nodes (3): 0.3.3. 2026-03-13, Added, Changed
 
-### Community 6166 - "Community 6166"
-Cohesion: 0.67
-Nodes (3): [0.9.3.0] - 2026-03-20. Windows Support, Added, Fixed
-
 ### Community 6167 - "Community 6167"
 Cohesion: 0.22
 Nodes (8): 2025-03-18 — NovaMind Term Sheet, 2025-03-28 — NovaMind Seed Closed, Focus Areas, Investment Style, Key Partners, Notable Portfolio Companies, Threshold Ventures, Timeline
@@ -29023,10 +28990,6 @@ Nodes (8): 2025-03-28 — Decision to Implement, 2025-04-01 — Shipped in v0.3,
 ### Community 6169 - "Community 6169"
 Cohesion: 0.22
 Nodes (8): 2025-02-15 — RAG Research, 2025-03-28 — Hybrid Search Decision, Advantages, GBrain's Approach, How It Works, Limitations, Retrieval-Augmented Generation, Timeline
-
-### Community 6170 - "Community 6170"
-Cohesion: 0.67
-Nodes (3): _log_conversion(), float, Log conversion to audit table
 
 ### Community 6173 - "Community 6173"
 Cohesion: 0.22
@@ -30935,10 +30898,6 @@ Nodes (6): AskUserQuestion Format, Format, Handling 5+ options — split, never 
 ### Community 7355 - "Community 7355"
 Cohesion: 0.33
 Nodes (5): First-run setup (once per sandbox — skip if `gbrain remote doctor` passes), gbrain — the company brain, Reading (do this liberally), When to reach for the brain, Writing (durable knowledge only, under YOUR prefixes)
-
-### Community 7356 - "Community 7356"
-Cohesion: 0.47
-Nodes (5): generate_curves(), main(), Benchmark the qu2cu algorithm performance., run_benchmark(), setup_quadratic_to_curves()
 
 ### Community 7357 - "Community 7357"
 Cohesion: 0.33
@@ -32892,10 +32851,6 @@ Nodes (3): [0.41.28.0] - 2026-05-27, Honest claims (per codex outside-voice revi
 Cohesion: 0.67
 Nodes (3): [0.41.29.0] - 2026-05-29, Itemized changes, To take advantage of v0.41.29.0
 
-### Community 8091 - "Community 8091"
-Cohesion: 0.67
-Nodes (3): [0.42.33.0] - 2026-06-07, Fixed, To take advantage of v0.42.33.0
-
 ### Community 8092 - "Community 8092"
 Cohesion: 0.06
 Nodes (30): Artifacts Sync (skill start), AskUserQuestion Format, Claimed Limitations Need Evidence, Completeness Principle — Boil the Ocean, Completion Status Protocol, Confusion Protocol, Context Health (soft directive), Context Recovery (+22 more)
@@ -32921,8 +32876,8 @@ Cohesion: 0.67
 Nodes (3): [0.42.74.0] - 2026-08-07, For contributors, To take advantage of v0.42.74.0
 
 ### Community 8099 - "Community 8099"
-Cohesion: 0.02
-Nodes (48): Color Bitmap Location table      The ``CBLC`` table contains the locations of co, table_C_B_L_C_, Grid-fitting and Scan-conversion Procedure table      The ``gasp`` table defines, table__g_a_s_p, GMAPRecord, Glyphlets GMAP table      The ``GMAP`` table is used by Adobe's SING Glyphlets., table_G_M_A_P_, Glyphlets GPKG table      The ``GPKG`` table is used by Adobe's SING Glyphlets. (+40 more)
+Cohesion: 0.04
+Nodes (17): Color Bitmap Location table      The ``CBLC`` table contains the locations of co, table_C_B_L_C_, Grid-fitting and Scan-conversion Procedure table      The ``gasp`` table defines, table__g_a_s_p, Graphite Index to Glyph Atttributes table      See also https://graphite.sil.org, table_G__l_o_c, _moduleFinderHint(), Dummy function to let modulefinder know what tables may be     dynamically impor (+9 more)
 
 ### Community 8100 - "Community 8100"
 Cohesion: 0.06
@@ -33573,8 +33528,8 @@ Cohesion: 0.08
 Nodes (26): Brain Cache Background Refresh, Brain Calibration Write-Back (Phase 2 / gated), Brain Context (preflight), Capture Learnings, Cognitive Patterns — How Great Designers See, Comparison Board + Feedback Loop, CRITICAL RULE — How to ask questions, Design Philosophy (+18 more)
 
 ### Community 8875 - "Community 8875"
-Cohesion: 0.05
-Nodes (29): fs, path, system, fs, path, system, FS, fs (+21 more)
+Cohesion: 0.03
+Nodes (68): fs, path, system, fs, path, system, FS, DESCRIPTIONS (+60 more)
 
 ### Community 8876 - "Community 8876"
 Cohesion: 0.08
@@ -39276,37 +39231,33 @@ Nodes (3): Agent Delegation & Operating Contract, ARCHITECTURE.md, ARCHITECTURE.
 Cohesion: 0.50
 Nodes (4): CON-014, id, repo_count, repositories
 
-### Community 10493 - "Community 10493"
-Cohesion: 0.67
-Nodes (3): [0.46.35.0] - 2026-08-27, Behavior changes, Fixed (highlights — full list in the PR body)
-
 ### Community 10496 - "Community 10496"
 Cohesion: 0.01
-Nodes (264): AbstractPointPen, BaseTable, LookupDebugInfo, Information about where a lookup came from, to be embedded in a font, FormatVersions, GLIFFormatVersionInput, Mapping, Minimal backport of Python 3.11's StrEnum for older versions.          An Enum w (+256 more)
+Nodes (122): BaseTable, LookupDebugInfo, Information about where a lookup came from, to be embedded in a font, batched(), DecomposedTransform, _normSinCos(), Offset(), Affine 2D transformation matrix class.  The Transform class implements various t (+114 more)
 
 ### Community 10506 - "Community 10506"
 Cohesion: 0.67
 Nodes (3): Agent Delegation & Operating Contract, ARCHITECTURE.md, ARCHITECTURE.md
 
 ## Knowledge Gaps
-- **72493 isolated node(s):** `allow`, `SessionStart`, `enabledPlugins`, `accentColor`, `enabledCssSnippets` (+72488 more)
+- **72532 isolated node(s):** `allow`, `SessionStart`, `enabledPlugins`, `accentColor`, `enabledCssSnippets` (+72527 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **1633 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **1624 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `FPDF` connect `Community 483` to `Community 5059`, `Community 3047`, `Community 5355`, `Community 237`, `Community 174`, `Community 5071`, `Community 5009`, `Community 2994`, `Community 2322`, `Community 830`?**
+- **Why does `FS` connect `Community 4135` to `Community 3685`, `Community 2249`, `Community 4908`, `Community 4397`, `Community 2994`, `Community 5490`, `Community 2964`, `Community 1266`?**
   _High betweenness centrality (0.002) - this node is a cross-community bridge._
-- **Why does `FeatureLibError` connect `Community 4951` to `Community 0`, `Community 5091`, `Community 5`, `Community 4966`, `Community 2663`, `Community 6089`, `Community 6090`, `Community 5067`, `Community 4970`, `Community 4909`, `Community 238`, `Community 5294`, `Community 6039`?**
+- **Why does `configLogger()` connect `Community 5` to `Community 4992`, `Community 5154`, `Community 2980`, `Community 4165`, `Community 2822`, `Community 5261`, `Community 494`, `Community 493`, `Community 5072`, `Community 112`, `Community 2322`, `Community 2783`?**
   _High betweenness centrality (0.002) - this node is a cross-community bridge._
-- **Why does `Timer` connect `Community 5072` to `Community 5069`, `Community 2977`, `Community 12`, `Community 5261`?**
-  _High betweenness centrality (0.001) - this node is a cross-community bridge._
+- **Why does `FeatureLibError` connect `Community 4951` to `Community 5091`, `Community 5604`, `Community 5210`, `Community 5830`, `Community 2663`, `Community 5831`, `Community 5832`, `Community 6090`, `Community 5067`, `Community 4966`, `Community 238`, `Community 5294`, `Community 5459`, `Community 5844`, `Community 6039`, `Community 5818`, `Community 5499`?**
+  _High betweenness centrality (0.002) - this node is a cross-community bridge._
 - **Are the 301 inferred relationships involving `ValueError` (e.g. with `.build_context()` and `mappings_from_avar()`) actually correct?**
   _`ValueError` has 301 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `allow`, `SessionStart`, `enabledPlugins` to the rest of the system?**
-  _75496 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _75537 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.012508139787280225 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.015063913470993118 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
-  _Cohesion score 0.125 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.05136612021857923 - nodes in this community are weakly interconnected._
