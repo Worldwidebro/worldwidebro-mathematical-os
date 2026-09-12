@@ -113,10 +113,11 @@ case "$1" in
       wire-ontology)
         echo "🔗 Wiring OmniRoute Ontology to Neo4j"
         echo ""
-        curl -s -u neo4j:ventures2026 -H "Content-Type: application/json" -d '{
+        NEO4J_PASS="${NEO4J_PASSWORD:-changeme}"
+        curl -s -u "neo4j:${NEO4J_PASS}" -H "Content-Type: application/json" -d '{
           "statements": [
-            {"statement": "MERGE (or:OmniRoute {id:\"INT-OMNIROUTE-001\"}) SET or.name=\"OmniRoute Gateway\", or.url=\"http://100.87.214.70:20128\", or.status=\"ACTIVE\""},
-            {"statement": "MERGE (prov:Provider {id:\"PROV-OLLAMA-001\"}) SET prov.name=\"ollama-local\", prov.type=\"ollama\", prov.baseUrl=\"http://100.87.214.70:11434\""},
+            {"statement": "MERGE (or:OmniRoute {id:\"INT-OMNIROUTE-001\"}) SET or.name=\"OmniRoute Gateway\", or.port=20128, or.status=\"online\""},
+            {"statement": "MERGE (prov:Provider {id:\"PROV-OLLAMA-001\"}) SET prov.name=\"Ollama Local\", prov.port=11434, prov.type=\"local\""},
             {"statement": "MERGE (mod1:Model {id:\"MDL-QWEN25-CODER-14B\"}) SET mod1.name=\"qwen2.5-coder:14b\", mod1.size=\"9GB\""},
             {"statement": "MERGE (mod2:Model {id:\"MDL-NOMIC-EMBED-TEXT\"}) SET mod2.name=\"nomic-embed-text:latest\", mod2.size=\"274MB\""},
             {"statement": "MATCH (or:OmniRoute {id:\"INT-OMNIROUTE-001\"}), (prov:Provider {id:\"PROV-OLLAMA-001\"}) MERGE (or)-[:ROUTES_TO]->(prov)"},
@@ -127,11 +128,12 @@ case "$1" in
         ;;
       status)
         echo "📊 Neo4j Graph Status"
-        TOTAL=$(curl -s -u neo4j:ventures2026 -H "Content-Type: application/json" -d '{"statements":[{"statement":"MATCH (n) RETURN count(n) AS c"}]}' http://100.87.214.70:7474/db/neo4j/tx/commit | jq -r '.results[0].data[0].row[0]' 2>/dev/null)
+        NEO4J_PASS="${NEO4J_PASSWORD:-changeme}"
+        TOTAL=$(curl -s -u "neo4j:${NEO4J_PASS}" -H "Content-Type: application/json" -d '{"statements":[{"statement":"MATCH (n) RETURN count(n) AS c"}]}' http://100.87.214.70:7474/db/neo4j/tx/commit | jq -r '.results[0].data[0].row[0]' 2>/dev/null)
         if [ -n "$TOTAL" ] && [ "$TOTAL" != "null" ]; then
           echo "  ✅ Neo4j: LIVE (:7474 / :7687)"
           echo "  📈 Total Nodes: $TOTAL"
-          VENTURES=$(curl -s -u neo4j:ventures2026 -H "Content-Type: application/json" -d '{"statements":[{"statement":"MATCH (v:Venture) RETURN count(v) AS c"}]}' http://100.87.214.70:7474/db/neo4j/tx/commit | jq -r '.results[0].data[0].row[0]' 2>/dev/null)
+          VENTURES=$(curl -s -u "neo4j:${NEO4J_PASS}" -H "Content-Type: application/json" -d '{"statements":[{"statement":"MATCH (v:Venture) RETURN count(v) AS c"}]}' http://100.87.214.70:7474/db/neo4j/tx/commit | jq -r '.results[0].data[0].row[0]' 2>/dev/null)
           echo "  🏢 Ventures: $VENTURES"
         else
           echo "  ❌ Neo4j not responding"
@@ -151,7 +153,8 @@ case "$1" in
         echo "Testing all components..."
         curl -s -m 2 http://100.87.214.70:20128/dashboard > /dev/null && echo "  ✅ OmniRoute (:20128)" || echo "  ❌ OmniRoute"
         (curl -s -m 2 http://localhost:11434/api/tags > /dev/null || curl -s -m 2 http://100.87.214.70:11434/api/tags > /dev/null) && echo "  ✅ Ollama Local Inference (:11434)" || echo "  ❌ Ollama"
-        curl -s -m 2 -u neo4j:ventures2026 -H "Content-Type: application/json" -d '{"statements":[{"statement":"RETURN 1"}]}' http://100.87.214.70:7474/db/neo4j/tx/commit > /dev/null && echo "  ✅ Neo4j Graph DB (:7474)" || echo "  ❌ Neo4j"
+        NEO4J_PASS="${NEO4J_PASSWORD:-changeme}"
+        curl -s -m 2 -u "neo4j:${NEO4J_PASS}" -H "Content-Type: application/json" -d '{"statements":[{"statement":"RETURN 1"}]}' http://100.87.214.70:7474/db/neo4j/tx/commit > /dev/null && echo "  ✅ Neo4j Graph DB (:7474)" || echo "  ❌ Neo4j"
         curl -s -m 2 http://100.87.214.70:6333/healthz > /dev/null && echo "  ✅ Qdrant Vector DB (:6333)" || echo "  ❌ Qdrant"
         curl -s -m 2 http://100.87.214.70:4000/health/liveliness > /dev/null && echo "  ✅ LiteLLM Proxy (:4000)" || echo "  ❌ LiteLLM"
         echo ""

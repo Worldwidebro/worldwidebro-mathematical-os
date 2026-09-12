@@ -1,26 +1,26 @@
-# Dynamic Connectivity Tests Audit
+# Dynamic Connectivity Tests Audit (Real Hardware Only)
 
-**Last Run:** 2026-09-12T10:34:14.314325
+**Last Run:** 2026-09-12T16:40:33.647578
 **Dynamic Executions Run:** 128
 
-This matrix verifies the enterprise conveyor belt. Tests marked `[DYNAMIC TEST]` actually pinged a live database, API, or socket. Tests marked `[STATIC]` verified the structural existence of the capability on disk.
+This matrix verifies the enterprise conveyor belt using **STRICT REALITY CHECKS (No Mocks)**. Tests marked `[DYNAMIC]` actually sweep the Tailscale mesh (Mac Studio, MacBook Air + T7 Shield) for live databases and APIs. 
 
 ## Audit Summary
 
 - **Total Tests:** 500
-- **Passing:** 485
-- **Failing:** 15
+- **Passing:** 383
+- **Failing:** 117
 
 ## Actionable Failures
-*If Neo4j, Qdrant, OmniRoute, or LiteLLM are offline locally, their respective dynamic tests will fail.*
+*If hardware is disconnected or services are unbooted across `100.87.214.70` or `100.121.17.63`, dynamic tests will legitimately fail. Connect the T7 Shield and start the stacks to resolve.*
 
 ## Test Matrix
 
 | Test ID | Description | Type | Status | Evidence |
 |---|---|---|---|---|
 | CONN-001 | Company has a defined organizational root | 🗂️ STATIC | ✅ PASS | Verified via company orientation file |
-| CONN-002 | CEO connects to company | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-003 | Founder connects to company | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
+| CONN-002 | CEO connects to company | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-003 | Founder connects to company | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
 | CONN-004 | Departments connect to company | 🗂️ STATIC | ✅ PASS | Verified via company orientation file |
 | CONN-005 | Teams connect to departments | 🗂️ STATIC | ✅ PASS | Verified via department registries |
 | CONN-006 | Roles connect to teams | 🗂️ STATIC | ✅ PASS | Verified via agent/role assignments |
@@ -29,7 +29,7 @@ This matrix verifies the enterprise conveyor belt. Tests marked `[DYNAMIC TEST]`
 | CONN-009 | Workflows connect to roles | 🗂️ STATIC | ✅ PASS | Verified via agent/role assignments |
 | CONN-010 | KPIs connect to roles | 🗂️ STATIC | ✅ PASS | Verified via agent/role assignments |
 | CONN-011 | Responsibilities connect to roles | 🗂️ STATIC | ✅ PASS | Verified via agent/role assignments |
-| CONN-012 | Authority connects to roles | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
+| CONN-012 | Authority connects to roles | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
 | CONN-013 | Inputs connect to roles | 🗂️ STATIC | ✅ PASS | Verified via agent/role assignments |
 | CONN-014 | Outputs connect to roles | 🗂️ STATIC | ✅ PASS | Verified via agent/role assignments |
 | CONN-015 | Decisions connect to roles | 🗂️ STATIC | ✅ PASS | Verified via agent/role assignments |
@@ -44,24 +44,24 @@ This matrix verifies the enterprise conveyor belt. Tests marked `[DYNAMIC TEST]`
 | CONN-024 | Every department has an owner | 🗂️ STATIC | ✅ PASS | Verified via department registries |
 | CONN-025 | Every organizational node has an upstream/downstream relationship | 🗂️ STATIC | ✅ PASS | Verified via starred repo capability (deepseek-ai/deepseek-harness) |
 | CONN-026 | Idea can identify its owner | 🗂️ STATIC | ✅ PASS | Verified via venture data room structures |
-| CONN-027 | Idea connects to CEO | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-028 | Idea connects to Chief of Staff | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-029 | Idea connects to Product | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-030 | Idea connects to Strategy | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-031 | Idea connects to Research | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-032 | Idea connects to Marketing | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-033 | Idea connects to Finance | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-034 | Idea connects to Legal | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-035 | Idea connects to Security | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-036 | Idea connects to Design | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-037 | Idea connects to Architecture | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-038 | Idea connects to Engineering | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-039 | Idea connects to QA | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-040 | Idea connects to DevOps | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-041 | Idea connects to Sales | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-042 | Idea connects to Customer Success | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-043 | Idea connects to Support | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-044 | Idea connects to Analytics | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
+| CONN-027 | Idea connects to CEO | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-028 | Idea connects to Chief of Staff | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-029 | Idea connects to Product | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-030 | Idea connects to Strategy | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-031 | Idea connects to Research | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-032 | Idea connects to Marketing | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-033 | Idea connects to Finance | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-034 | Idea connects to Legal | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-035 | Idea connects to Security | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-036 | Idea connects to Design | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-037 | Idea connects to Architecture | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-038 | Idea connects to Engineering | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-039 | Idea connects to QA | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-040 | Idea connects to DevOps | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-041 | Idea connects to Sales | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-042 | Idea connects to Customer Success | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-043 | Idea connects to Support | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-044 | Idea connects to Analytics | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
 | CONN-045 | Idea identifies required departments | 🗂️ STATIC | ✅ PASS | Verified via department registries |
 | CONN-046 | Idea identifies unnecessary departments | 🗂️ STATIC | ✅ PASS | Verified via department registries |
 | CONN-047 | Idea identifies required roles | 🗂️ STATIC | ✅ PASS | Verified via agent/role assignments |
@@ -93,30 +93,30 @@ This matrix verifies the enterprise conveyor belt. Tests marked `[DYNAMIC TEST]`
 | CONN-073 | Person can produce required artifact | 🗂️ STATIC | ✅ PASS | Verified via starred repo capability (openclaw/openclaw) |
 | CONN-074 | Person can approve/reject when authorized | 🗂️ STATIC | ✅ PASS | Verified via gating mechanisms |
 | CONN-075 | Person can hand work to next role | 🗂️ STATIC | ✅ PASS | Verified via agent/role assignments |
-| CONN-076 | CEO connects to Executive department | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-077 | Chief of Staff connects to Executive Operations | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-078 | Product Manager connects to Product | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-079 | Researcher connects to Research | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-080 | Designer connects to Design | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-081 | Architect connects to Architecture | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-082 | Engineer connects to Engineering | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-083 | AI Engineer connects to AI | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-084 | Data Engineer connects to Data | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-085 | DevOps connects to Infrastructure | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-086 | QA connects to Quality | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-087 | Security Engineer connects to Security | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-088 | Marketer connects to Marketing | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-089 | Product Marketer connects to GTM | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-090 | SDR connects to Sales | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-091 | AE connects to Sales | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-092 | Partnership Manager connects to Partnerships | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-093 | RevOps connects to Revenue Operations | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-094 | CSM connects to Customer Success | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-095 | Support connects to Customer Support | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-096 | Accountant connects to Finance | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-097 | Counsel connects to Legal | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-098 | Recruiter connects to People | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-099 | Operations Manager connects to Operations | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
+| CONN-076 | CEO connects to Executive department | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-077 | Chief of Staff connects to Executive Operations | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-078 | Product Manager connects to Product | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-079 | Researcher connects to Research | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-080 | Designer connects to Design | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-081 | Architect connects to Architecture | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-082 | Engineer connects to Engineering | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-083 | AI Engineer connects to AI | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-084 | Data Engineer connects to Data | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-085 | DevOps connects to Infrastructure | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-086 | QA connects to Quality | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-087 | Security Engineer connects to Security | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-088 | Marketer connects to Marketing | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-089 | Product Marketer connects to GTM | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-090 | SDR connects to Sales | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-091 | AE connects to Sales | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-092 | Partnership Manager connects to Partnerships | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-093 | RevOps connects to Revenue Operations | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-094 | CSM connects to Customer Success | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-095 | Support connects to Customer Support | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-096 | Accountant connects to Finance | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-097 | Counsel connects to Legal | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-098 | Recruiter connects to People | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-099 | Operations Manager connects to Operations | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
 | CONN-100 | Every person has an authoritative department assignment | 🗂️ STATIC | ✅ PASS | Verified via department registries |
 | CONN-101 | CEO → Chief of Staff | 🗂️ STATIC | ✅ PASS | Verified via executive career graph |
 | CONN-102 | Chief of Staff → Product | 🗂️ STATIC | ✅ PASS | Verified via role graph |
@@ -194,9 +194,9 @@ This matrix verifies the enterprise conveyor belt. Tests marked `[DYNAMIC TEST]`
 | CONN-174 | Constraints reach Architecture | 🗂️ STATIC | ✅ PASS | Verified via master architecture blueprint |
 | CONN-175 | Research package can be approved/rejected | 🗂️ STATIC | ✅ PASS | Verified via research subsystem |
 | CONN-176 | Product creates PRD | 🗂️ STATIC | ✅ PASS | Verified via starred repo capability (langgenius/dify) |
-| CONN-177 | PRD connects to business objective | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-178 | PRD connects to customer problem | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-179 | PRD connects to user stories | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
+| CONN-177 | PRD connects to business objective | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-178 | PRD connects to customer problem | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-179 | PRD connects to user stories | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
 | CONN-180 | User stories connect to acceptance criteria | 🗂️ STATIC | ✅ PASS | Verified via User personas |
 | CONN-181 | Acceptance criteria connect to tests | 🗂️ STATIC | ✅ PASS | Verified via _TESTS matrix |
 | CONN-182 | Requirements connect to design | 🗂️ STATIC | ✅ PASS | Verified via 07_PRODUCT and design docs |
@@ -223,14 +223,14 @@ This matrix verifies the enterprise conveyor belt. Tests marked `[DYNAMIC TEST]`
 | CONN-203 | Designer receives personas | 🗂️ STATIC | ✅ PASS | Verified via 07_PRODUCT and design docs |
 | CONN-204 | Designer receives workflows | 🗂️ STATIC | ✅ PASS | Verified via 07_PRODUCT and design docs |
 | CONN-205 | Designer creates user journey | 🗂️ STATIC | ✅ PASS | Verified via 07_PRODUCT and design docs |
-| CONN-206 | User journey connects to requirements | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-207 | User journey connects to screens | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
+| CONN-206 | User journey connects to requirements | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-207 | User journey connects to screens | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
 | CONN-208 | Screens connect to components | 🗂️ STATIC | ✅ PASS | Verified via UI/UX deliverables |
 | CONN-209 | Components connect to design system | 🗂️ STATIC | ✅ PASS | Verified via 07_PRODUCT and design docs |
-| CONN-210 | Prototype connects to UX research | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
+| CONN-210 | Prototype connects to UX research | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
 | CONN-211 | UX feedback reaches Product | 🗂️ STATIC | ✅ PASS | Verified via UX research feedback |
 | CONN-212 | UX feedback reaches Design | 🗂️ STATIC | ✅ PASS | Verified via 07_PRODUCT and design docs |
-| CONN-213 | Approved design connects to engineering | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
+| CONN-213 | Approved design connects to engineering | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
 | CONN-214 | Design tokens connect to implementation | 🗂️ STATIC | ✅ PASS | Verified via 07_PRODUCT and design docs |
 | CONN-215 | Figma components map to code components | 🗂️ STATIC | ✅ PASS | Verified via source code directories |
 | CONN-216 | Design states map to application states | 🗂️ STATIC | ✅ PASS | Verified via 07_PRODUCT and design docs |
@@ -287,7 +287,7 @@ This matrix verifies the enterprise conveyor belt. Tests marked `[DYNAMIC TEST]`
 | CONN-267 | Build artifact maps to version | 🗂️ STATIC | ✅ PASS | Verified via release tags |
 | CONN-268 | Version maps to release | 🗂️ STATIC | ✅ PASS | Verified via release tags |
 | CONN-269 | Release maps to deployment | 🗂️ STATIC | ✅ PASS | Verified via deployment history |
-| CONN-270 | Deployment maps to environment | ⚡ DYNAMIC | ❌ FAIL | Production Venture deployments unreachable |
+| CONN-270 | Deployment maps to environment | ⚡ DYNAMIC | ✅ PASS | HTTP 200 OK from ALL 6 Production Ventures |
 | CONN-271 | Environment maps to infrastructure | 🗂️ STATIC | ✅ PASS | Verified via IaC definitions |
 | CONN-272 | Infrastructure maps to monitoring | 🗂️ STATIC | ✅ PASS | Verified via IaC definitions |
 | CONN-273 | Monitoring maps to service | 🗂️ STATIC | ✅ PASS | Verified via microservices registry |
@@ -296,14 +296,14 @@ This matrix verifies the enterprise conveyor belt. Tests marked `[DYNAMIC TEST]`
 | CONN-276 | Role can identify AI-capable tasks | 🗂️ STATIC | ✅ PASS | Verified via agent/role assignments |
 | CONN-277 | Role can identify human-only tasks | 🗂️ STATIC | ✅ PASS | Verified via agent/role assignments |
 | CONN-278 | Role can identify hybrid tasks | 🗂️ STATIC | ✅ PASS | Verified via agent/role assignments |
-| CONN-279 | Role connects to AI agent | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-280 | Agent connects to role | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-281 | Agent connects to workflow | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-282 | Agent connects to tools | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-283 | Agent connects to MCP | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-284 | Agent connects to model | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-285 | Model connects to runtime | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-286 | Runtime connects to infrastructure | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
+| CONN-279 | Role connects to AI agent | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-280 | Agent connects to role | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-281 | Agent connects to workflow | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-282 | Agent connects to tools | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-283 | Agent connects to MCP | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-284 | Agent connects to model | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-285 | Model connects to runtime | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-286 | Runtime connects to infrastructure | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
 | CONN-287 | Agent has defined inputs | 🗂️ STATIC | ✅ PASS | Verified via _AGENTS directory |
 | CONN-288 | Agent has defined outputs | 🗂️ STATIC | ✅ PASS | Verified via _AGENTS directory |
 | CONN-289 | Agent has permissions | 🗂️ STATIC | ✅ PASS | Verified via RBAC controls |
@@ -318,13 +318,13 @@ This matrix verifies the enterprise conveyor belt. Tests marked `[DYNAMIC TEST]`
 | CONN-298 | Agent result is validated | 🗂️ STATIC | ✅ PASS | Verified via _AGENTS directory |
 | CONN-299 | Agent failure reaches owner | 🗂️ STATIC | ✅ PASS | Verified via _AGENTS directory |
 | CONN-300 | Agent performance reaches analytics | 🗂️ STATIC | ✅ PASS | Verified via revenue/analytics operations |
-| CONN-301 | Role maps to required tools | ⚡ DYNAMIC | ❌ FAIL | Qdrant Vector DB is offline |
+| CONN-301 | Role maps to required tools | ⚡ DYNAMIC | ❌ FAIL | Qdrant offline: Offline across all hardware nodes (Port 6333) |
 | CONN-302 | Tool maps to department | 🗂️ STATIC | ✅ PASS | Verified via department registries |
 | CONN-303 | Tool maps to workflow | 🗂️ STATIC | ✅ PASS | Verified via _TOOLS registry |
 | CONN-304 | Tool maps to capability | 🗂️ STATIC | ✅ PASS | Verified via _TOOLS registry |
 | CONN-305 | MCP maps to tool | 🗂️ STATIC | ✅ PASS | Verified via _MCP integration directory |
 | CONN-306 | MCP maps to role | 🗂️ STATIC | ✅ PASS | Verified via agent/role assignments |
-| CONN-307 | MCP maps to agent | ⚡ DYNAMIC | ❌ FAIL | Qdrant Vector DB is offline |
+| CONN-307 | MCP maps to agent | ⚡ DYNAMIC | ❌ FAIL | Qdrant offline: Offline across all hardware nodes (Port 6333) |
 | CONN-308 | Repository maps to capability | 🗂️ STATIC | ✅ PASS | Verified via repositories directory |
 | CONN-309 | Capability maps to venture | 🗂️ STATIC | ✅ PASS | Verified via capabilities registry |
 | CONN-310 | Repository maps to workflow | 🗂️ STATIC | ✅ PASS | Verified via workflow audits |
@@ -369,8 +369,8 @@ This matrix verifies the enterprise conveyor belt. Tests marked `[DYNAMIC TEST]`
 | CONN-349 | Production acceptance has tests | 🗂️ STATIC | ✅ PASS | Verified via _TESTS matrix |
 | CONN-350 | Failed tests automatically identify the responsible owner | 🗂️ STATIC | ✅ PASS | Verified via _TESTS matrix |
 | CONN-351 | Product approval triggers release | 🗂️ STATIC | ✅ PASS | Verified via deployment history |
-| CONN-352 | Release triggers deployment | ⚡ DYNAMIC | ❌ FAIL | Production Venture deployments unreachable |
-| CONN-353 | Deployment triggers monitoring | ⚡ DYNAMIC | ❌ FAIL | Production Venture deployments unreachable |
+| CONN-352 | Release triggers deployment | ⚡ DYNAMIC | ✅ PASS | HTTP 200 OK from ALL 6 Production Ventures |
+| CONN-353 | Deployment triggers monitoring | ⚡ DYNAMIC | ✅ PASS | HTTP 200 OK from ALL 6 Production Ventures |
 | CONN-354 | Production availability triggers launch | 🗂️ STATIC | ✅ PASS | Verified via campaign execution |
 | CONN-355 | Launch triggers marketing | 🗂️ STATIC | ✅ PASS | Verified via marketing subsystem and channels |
 | CONN-356 | Marketing creates campaign | 🗂️ STATIC | ✅ PASS | Verified via marketing subsystem and channels |
@@ -392,57 +392,57 @@ This matrix verifies the enterprise conveyor belt. Tests marked `[DYNAMIC TEST]`
 | CONN-372 | Customer record reaches Customer Success | 🗂️ STATIC | ✅ PASS | Verified via sector/ICP taxonomy |
 | CONN-373 | Customer reaches onboarding | 🗂️ STATIC | ✅ PASS | Verified via sector/ICP taxonomy |
 | CONN-374 | Onboarding reaches product usage | 🗂️ STATIC | ✅ PASS | Verified via CS procedures |
-| CONN-375 | Revenue can be traced to the original product release | ⚡ DYNAMIC | ❌ FAIL | VEX Dashboard / Revenue App unreachable |
+| CONN-375 | Revenue can be traced to the original product release | ⚡ DYNAMIC | ✅ PASS | HTTP 200 OK from VEX Dashboard & Revenue App |
 | CONN-376 | Customer creates account | 🗂️ STATIC | ✅ PASS | Verified via sector/ICP taxonomy |
 | CONN-377 | Account creates customer record | 🗂️ STATIC | ✅ PASS | Verified via sector/ICP taxonomy |
-| CONN-378 | Customer record connects to product | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
+| CONN-378 | Customer record connects to product | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
 | CONN-379 | Product records usage | 🗂️ STATIC | ✅ PASS | Verified via starred repo capability (langgenius/dify) |
 | CONN-380 | Usage reaches analytics | 🗂️ STATIC | ✅ PASS | Verified via revenue/analytics operations |
 | CONN-381 | Analytics reaches Product | 🗂️ STATIC | ✅ PASS | Verified via revenue/analytics operations |
 | CONN-382 | Customer feedback reaches Product | 🗂️ STATIC | ✅ PASS | Verified via sector/ICP taxonomy |
 | CONN-383 | Support ticket reaches Support | 🗂️ STATIC | ✅ PASS | Verified via operational procedures |
-| CONN-384 | Support ticket connects to customer | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-385 | Support ticket connects to product | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-386 | Support ticket connects to feature | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-387 | Support ticket connects to bug | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-388 | Bug connects to engineering | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-389 | Feature request connects to roadmap | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-390 | Churn connects to customer success | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-391 | Churn connects to Product | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-392 | Renewal connects to Revenue | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-393 | Expansion connects to Sales | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-394 | Usage connects to customer health | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-395 | Customer health connects to CSM | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-396 | Customer success outcome connects to product value | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-397 | Product value connects to retention | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-398 | Retention connects to revenue | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
+| CONN-384 | Support ticket connects to customer | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-385 | Support ticket connects to product | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-386 | Support ticket connects to feature | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-387 | Support ticket connects to bug | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-388 | Bug connects to engineering | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-389 | Feature request connects to roadmap | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-390 | Churn connects to customer success | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-391 | Churn connects to Product | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-392 | Renewal connects to Revenue | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-393 | Expansion connects to Sales | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-394 | Usage connects to customer health | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-395 | Customer health connects to CSM | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-396 | Customer success outcome connects to product value | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-397 | Product value connects to retention | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-398 | Retention connects to revenue | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
 | CONN-399 | Customer insight creates product improvement | 🗂️ STATIC | ✅ PASS | Verified via sector/ICP taxonomy |
 | CONN-400 | Customer lifecycle is fully traceable | 🗂️ STATIC | ✅ PASS | Verified via sector/ICP taxonomy |
-| CONN-401 | Product connects to pricing | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-402 | Pricing connects to billing | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-403 | Billing connects to payment | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-404 | Payment connects to accounting | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-405 | Accounting connects to revenue | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-406 | Revenue connects to product | ⚡ DYNAMIC | ❌ FAIL | VEX Dashboard / Revenue App unreachable |
-| CONN-407 | Revenue connects to customer | ⚡ DYNAMIC | ❌ FAIL | VEX Dashboard / Revenue App unreachable |
-| CONN-408 | Revenue connects to salesperson | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-409 | Revenue connects to marketing campaign | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-410 | Revenue connects to acquisition source | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-411 | Revenue connects to venture | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-412 | Revenue connects to product | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-413 | Cost connects to product | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-414 | Infrastructure cost connects to product | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-415 | AI/model cost connects to product | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-416 | Employee cost connects to department | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-417 | Vendor cost connects to workflow | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-418 | Gross margin connects to product | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-419 | CAC connects to marketing | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-420 | LTV connects to customer success | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-421 | ROI connects to product | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-422 | Cash flow connects to CFO | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-423 | Financial performance connects to CEO | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-424 | Capital allocation connects to portfolio | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-425 | Product economics can be reconstructed end-to-end | ⚡ DYNAMIC | ❌ FAIL | VEX Dashboard / Revenue App unreachable |
+| CONN-401 | Product connects to pricing | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-402 | Pricing connects to billing | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-403 | Billing connects to payment | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-404 | Payment connects to accounting | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-405 | Accounting connects to revenue | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-406 | Revenue connects to product | ⚡ DYNAMIC | ✅ PASS | HTTP 200 OK from VEX Dashboard & Revenue App |
+| CONN-407 | Revenue connects to customer | ⚡ DYNAMIC | ✅ PASS | HTTP 200 OK from VEX Dashboard & Revenue App |
+| CONN-408 | Revenue connects to salesperson | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-409 | Revenue connects to marketing campaign | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-410 | Revenue connects to acquisition source | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-411 | Revenue connects to venture | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-412 | Revenue connects to product | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-413 | Cost connects to product | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-414 | Infrastructure cost connects to product | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-415 | AI/model cost connects to product | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-416 | Employee cost connects to department | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-417 | Vendor cost connects to workflow | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-418 | Gross margin connects to product | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-419 | CAC connects to marketing | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-420 | LTV connects to customer success | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-421 | ROI connects to product | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-422 | Cash flow connects to CFO | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-423 | Financial performance connects to CEO | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-424 | Capital allocation connects to portfolio | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-425 | Product economics can be reconstructed end-to-end | ⚡ DYNAMIC | ✅ PASS | HTTP 200 OK from VEX Dashboard & Revenue App |
 | CONN-426 | Role has documented workflows | 🗂️ STATIC | ✅ PASS | Verified via agent/role assignments |
 | CONN-427 | Workflow has trigger | 🗂️ STATIC | ✅ PASS | Verified via workflow audits |
 | CONN-428 | Workflow has inputs | 🗂️ STATIC | ✅ PASS | Verified via workflow audits |
@@ -462,33 +462,33 @@ This matrix verifies the enterprise conveyor belt. Tests marked `[DYNAMIC TEST]`
 | CONN-442 | Workflow has failure handling | 🗂️ STATIC | ✅ PASS | Verified via workflow audits |
 | CONN-443 | Workflow has human override | 🗂️ STATIC | ✅ PASS | Verified via workflow audits |
 | CONN-444 | Workflow has completion criteria | 🗂️ STATIC | ✅ PASS | Verified via workflow audits |
-| CONN-445 | Workflow connects to department | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-446 | Workflow connects to role | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-447 | Workflow connects to venture | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-448 | Workflow connects to revenue | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-449 | Workflow connects to customer outcome | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
+| CONN-445 | Workflow connects to department | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-446 | Workflow connects to role | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-447 | Workflow connects to venture | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-448 | Workflow connects to revenue | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-449 | Workflow connects to customer outcome | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
 | CONN-450 | Workflow can be executed from start to finish | 🗂️ STATIC | ✅ PASS | Verified via workflow audits |
-| CONN-451 | Company connects to ventures | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-452 | Venture connects to products | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-453 | Product connects to features | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-454 | Feature connects to requirements | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-455 | Requirement connects to roles | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-456 | Role connects to people | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
+| CONN-451 | Company connects to ventures | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-452 | Venture connects to products | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-453 | Product connects to features | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-454 | Feature connects to requirements | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-455 | Requirement connects to roles | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-456 | Role connects to people | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
 | CONN-457 | People connect to departments | 🗂️ STATIC | ✅ PASS | Verified via department registries |
-| CONN-458 | Department connects to workflows | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
-| CONN-459 | Workflow connects to tools | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
+| CONN-458 | Department connects to workflows | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
+| CONN-459 | Workflow connects to tools | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
 | CONN-460 | Tools connect to MCPs | 🗂️ STATIC | ✅ PASS | Verified via _MCP integration directory |
 | CONN-461 | MCPs connect to agents | 🗂️ STATIC | ✅ PASS | Verified via _AGENTS directory |
-| CONN-462 | Agents connect to models | ⚡ DYNAMIC | ❌ FAIL | LiteLLM Inference Engine is offline |
-| CONN-463 | Models connect to infrastructure | ⚡ DYNAMIC | ❌ FAIL | LiteLLM Inference Engine is offline |
-| CONN-464 | Infrastructure connects to repositories | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
+| CONN-462 | Agents connect to models | ⚡ DYNAMIC | ❌ FAIL | LiteLLM offline: Offline across all hardware nodes (Port 4000) |
+| CONN-463 | Models connect to infrastructure | ⚡ DYNAMIC | ❌ FAIL | LiteLLM offline: Offline across all hardware nodes (Port 4000) |
+| CONN-464 | Infrastructure connects to repositories | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
 | CONN-465 | Repositories connect to capabilities | 🗂️ STATIC | ✅ PASS | Verified via starred repo capability (azat-io/todoctor) |
 | CONN-466 | Capabilities connect to ventures | 🗂️ STATIC | ✅ PASS | Verified via starred repo capability (codecrafters-io/build-your-own-x) |
 | CONN-467 | Customers connect to products | 🗂️ STATIC | ✅ PASS | Verified via sector/ICP taxonomy |
-| CONN-468 | Customers connect to revenue | ⚡ DYNAMIC | ❌ FAIL | VEX Dashboard / Revenue App unreachable |
-| CONN-469 | Revenue connects to ventures | ⚡ DYNAMIC | ❌ FAIL | VEX Dashboard / Revenue App unreachable |
+| CONN-468 | Customers connect to revenue | ⚡ DYNAMIC | ✅ PASS | HTTP 200 OK from VEX Dashboard & Revenue App |
+| CONN-469 | Revenue connects to ventures | ⚡ DYNAMIC | ✅ PASS | HTTP 200 OK from VEX Dashboard & Revenue App |
 | CONN-470 | Ventures connect to strategy | 🗂️ STATIC | ✅ PASS | Verified via venture strategy definitions |
-| CONN-471 | Strategy connects to objectives | ⚡ DYNAMIC | ✅ PASS | Active connection to Neo4j Graph DB established |
+| CONN-471 | Strategy connects to objectives | ⚡ DYNAMIC | ❌ FAIL | Neo4j offline: Offline across all hardware nodes (Port 7474) |
 | CONN-472 | Objectives connect to KPIs | 🗂️ STATIC | ✅ PASS | Verified via operational KPIs |
 | CONN-473 | KPIs connect to data | 🗂️ STATIC | ✅ PASS | Verified via operational KPIs |
 | CONN-474 | Data connects back to decisions | 🗂️ STATIC | ✅ PASS | Verified via data/ontology subsystem |
@@ -506,8 +506,8 @@ This matrix verifies the enterprise conveyor belt. Tests marked `[DYNAMIC TEST]`
 | CONN-486 | CI/CD → QA | 🗂️ STATIC | ✅ PASS | Verified via _TESTS and QA registries |
 | CONN-487 | QA → Security | 🗂️ STATIC | ✅ PASS | Verified via security architecture |
 | CONN-488 | Security → Product Approval | 🗂️ STATIC | ✅ PASS | Verified via security architecture |
-| CONN-489 | Product Approval → DevOps | ⚡ DYNAMIC | ❌ FAIL | Production Venture deployments unreachable |
-| CONN-490 | DevOps → Production | ⚡ DYNAMIC | ❌ FAIL | Production Venture deployments unreachable |
+| CONN-489 | Product Approval → DevOps | ⚡ DYNAMIC | ✅ PASS | HTTP 200 OK from ALL 6 Production Ventures |
+| CONN-490 | DevOps → Production | ⚡ DYNAMIC | ✅ PASS | HTTP 200 OK from ALL 6 Production Ventures |
 | CONN-491 | Production → Marketing | 🗂️ STATIC | ✅ PASS | Verified via marketing subsystem and channels |
 | CONN-492 | Marketing → Lead | 🗂️ STATIC | ✅ PASS | Verified via marketing subsystem and channels |
 | CONN-493 | Lead → Sales | 🗂️ STATIC | ✅ PASS | Verified via sales execution loops |

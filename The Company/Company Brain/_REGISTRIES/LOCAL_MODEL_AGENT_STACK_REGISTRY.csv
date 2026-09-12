@@ -53,6 +53,7 @@ Layer 5: Retrieval & Knowledge Substrate,chroma-core/chroma,Developer vector dat
 "Layer 7: Protocols, Tooling & Infrastructure Automation",PrefectHQ/fastmcp,High-performance Python MCP server with FastAPI,mcp-go,ADOPT,P0,Standard protocol for Company Brain tools (`_MCP/fastmcp_server.py`).
 "Layer 7: Protocols, Tooling & Infrastructure Automation",mcp-go,High-concurrency Go MCP server,FastMCP,REFERENCE,P2,Reference if high-throughput daemon services require Go rewriting.
 "Layer 7: Protocols, Tooling & Infrastructure Automation",n8n/n8n,Visual workflow automation & webhook router,Activepieces,ADOPT,P0,Verified live (:5678) in Mac Studio Docker. Handles event triggers.
+"Layer 7: Protocols, Tooling & Infrastructure Automation",Zie619/n8n-workflows,Master catalog of 2060+ curated production n8n workflows with SQLite FTS5 search,—,ADOPT,P0,Cloned to /Volumes/LaCie/n8n-workflows. Instant templates for 22 venture domains.
 "Layer 7: Protocols, Tooling & Infrastructure Automation",activepieces/activepieces,Open-source TypeScript automation engine,n8n,REFERENCE,P2,Alternative visual connector ecosystem.
 "Layer 7: Protocols, Tooling & Infrastructure Automation",docker/compose,Multi-container service specification,Kubernetes,ADOPT,P0,Core deployment format (`T7/docker-compose.yml`).
 "Layer 7: Protocols, Tooling & Infrastructure Automation",k3s-io/k3s` / `kubernetes,Container cluster orchestrator,Docker Compose,DEFER,P2,Premature complexity for 2 physical nodes; Docker Compose is sufficient.

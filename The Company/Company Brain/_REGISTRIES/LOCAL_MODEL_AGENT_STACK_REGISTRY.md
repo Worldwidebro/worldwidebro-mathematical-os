@@ -203,6 +203,7 @@ updated: 2026-09-06
 | **`PrefectHQ/fastmcp`** | High-performance Python MCP server with FastAPI | mcp-go | **`ADOPT`** | **P0** | Standard protocol for Company Brain tools (`_MCP/fastmcp_server.py`). |
 | **`mcp-go`** | High-concurrency Go MCP server | FastMCP | **`REFERENCE`** | **P2** | Reference if high-throughput daemon services require Go rewriting. |
 | **`n8n/n8n`** | Visual workflow automation & webhook router | Activepieces | **`ADOPT`** | **P0** | Verified live (:5678) in Mac Studio Docker. Handles event triggers. |
+| **`Zie619/n8n-workflows`** | Master catalog of 2,060+ curated production n8n workflows with SQLite FTS5 search | — | **`ADOPT`** | **P0** | Cloned to `/Volumes/LaCie/n8n-workflows`. Provides instant automation templates for 22 venture domains & local AI stack. |
 | **`activepieces/activepieces`** | Open-source TypeScript automation engine | n8n | **`REFERENCE`** | **P2** | Alternative visual connector ecosystem. |
 | **`docker/compose`** | Multi-container service specification | Kubernetes | **`ADOPT`** | **P0** | Core deployment format (`T7/docker-compose.yml`). |
 | **`k3s-io/k3s` / `kubernetes`** | Container cluster orchestrator | Docker Compose | **`DEFER`** | **P2** | Premature complexity for 2 physical nodes; Docker Compose is sufficient. |
@@ -243,7 +244,7 @@ updated: 2026-09-06
 
 ## 4. Summary of Decisions
 
-* **ADOPT (22)**: The core operating system — OmniRoute, LiteLLM, RTK, Caveman, tiktoken, Ollama, llama.cpp, MLX/MLX-LM, Exo, Speculative Decoding, Qdrant, Neo4j, Redis, LangGraph, FlashRank, FastMCP, n8n, Docker Compose, GitHub Actions, OpenTelemetry, Langfuse, and core ventures (`ops-staff-001`, `lt-005`).
+* **ADOPT (23)**: The core operating system — OmniRoute, LiteLLM, RTK, Caveman, tiktoken, Ollama, llama.cpp, MLX/MLX-LM, Exo, Speculative Decoding, Qdrant, Neo4j, Redis, LangGraph, FlashRank, FastMCP, n8n, Zie619/n8n-workflows, Docker Compose, GitHub Actions, OpenTelemetry, Langfuse, and core ventures (`ops-staff-001`, `lt-005`).
 * **EVALUATE (15)**: Staging benchmarks — TensorZero, Headroom, LLMLingua-1/2, LongLLMLingua, vLLM/vLLM-mlx, SGLang, llama.cpp RPC, LlamaIndex, ColBERT, OpenHands, E2B, Daytona, Letta, Mem0.
 * **REFERENCE (19)**: Architecture & code harvesting — Portkey, llm-router, TokenMonster, Selective Context, LM Studio, PAIR, LangChain, SWE-agent, mcp-go, Activepieces, Terraform, career-ops, buzz, etc.
 * **DEFER (7)**: Valid but premature — Bifrost, Petals, Ray, mlx-serve, K3s/Kubernetes, Make.
