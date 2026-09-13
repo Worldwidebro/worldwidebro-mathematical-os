@@ -13,5 +13,6 @@ The RESPECT Control Layer is a family of policies that dictate the behavioral, e
 - [RESPECT-OWNERSHIP](RESPECT-OWNERSHIP.md): Respect for canonical registries, no silent overwrites, and proper attribution.
 - [RESPECT-AUTONOMY](RESPECT-AUTONOMY.md): Clear boundaries between agent-driven tasks and user-required approvals.
 - [RESPECT-CONTEXT](RESPECT-CONTEXT.md): Efficient use of context windows, avoiding dumping, and utilizing retrieval.
+- [REVENUE-GATE](REVENUE_GATE.md): Zero meta-work moratorium, 48-hour distance-to-cash, freeze on ventures 4-789.
 
-[[STARTHERE]] | [[ANTIGRAVITY]] | [[CLAUDE]]
+[[STARTHERE]] | [[REALITY]] | [[ANTIGRAVITY]] | [[CLAUDE]] | [[AGENTS]] | [[income-loops]] | [[REVENUE_GATE]]

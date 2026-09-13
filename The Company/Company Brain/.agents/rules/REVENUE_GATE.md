@@ -1,8 +1,11 @@
+[[STARTHERE]] | [[REALITY]] | [[ANTIGRAVITY]] | [[CLAUDE]] | [[AGENTS]] | [[00_RESPECT/RESPECT|RESPECT]] | [[INDEX]]
+
 # REVENUE_GATE — Anti-Sprawl & Business Execution Constraint
 
 > **Scope:** Universal Agent Operational Constraint  
 > **Authority:** System Architecture & Infrastructure Control Plane (CP-027) + Revenue CP-021  
 > **Precedence:** Absolute. Supercedes all meta-work, indexing, and architectural scaffolding requests.  
+> **Complements:** [[income-loops]] | [[ANTIGRAVITY]] | [[AGENTS]] | [[CLAUDE]]  
 > **Harness Lineage:** Grounded in principles from `emcie-co/parlant` (Policy Control), `coleam00/Archon` (Deterministic Gates), and `huangruiteng/loopx` (Durable State).
 
 ---
@@ -57,3 +60,7 @@ $$\text{DistanceToCash} \le 48\text{ hours}$$
 
 - **YES:** The action produces an outbound lead list, configures a payment gateway, sets up an active phone script, or closes a customer deal. $\rightarrow$ **EXECUTE.**
 - **NO:** The action creates internal documentation, theoretical models, unused endpoints, or semantic graphs. $\rightarrow$ **REJECT IMMEDIATELY.**
+
+---
+
+[[STARTHERE]] | [[REALITY]] | [[ANTIGRAVITY]] | [[CLAUDE]] | [[AGENTS]] | [[income-loops]] | [[00_RESPECT/RESPECT|RESPECT]] | [[INDEX]]
