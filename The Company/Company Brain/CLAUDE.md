@@ -102,6 +102,7 @@ ssh macstudio                               # Connect to Mac Studio
 3. Modify production without approval gate
 4. Duplicate existing infrastructure/capability
 5. Create ventures outside Git + Supabase PR flow
+6. Engage in infinite meta-work (creating new registries, schemas, ontologies, or re-indexing) instead of executing the 3 Tier-0 revenue ventures ([`REVENUE_GATE.md`](.agents/rules/REVENUE_GATE.md))
 
 ---
 

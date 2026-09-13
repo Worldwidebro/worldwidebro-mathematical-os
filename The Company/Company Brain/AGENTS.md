@@ -33,6 +33,7 @@ Every agent operating in this repository must strictly adhere to the **45 Rules*
 6. **Data Integrity:** Never silently overwrite canonical registries in `_REGISTRIES/`. Prefer append, versioned, or merge updates.
 7. **Security:** Zero-trust approach. Never commit secrets or expose credentials in code, Markdown, or logs.
 8. **Token Efficiency:** Leverage Canonical Knowledge + Retrieval + Targeted Context instead of dumping massive repositories into context.
+9. **Revenue Gate & Anti-Meta-Work Constraint ([`REVENUE_GATE.md`](file:///Users/acebless/Documents/The%20Company/Company%20Brain/.agents/rules/REVENUE_GATE.md)):** Hard moratorium on creating new registries, ontologies, or theoretical scaffolds. Freeze ventures 4–789; execute exclusively on the 3 Revenue-Ready Tier-0 ventures (OPS-001, LT-005, CALLCENTER) with verified distance-to-cash <= 48 hours.
 
 ---
 
