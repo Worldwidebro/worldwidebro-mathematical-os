@@ -193,6 +193,10 @@ sector_repositories:
     opco: "OpCo-019"
     repo_count: 22
     key_repositories:
+      - repo: "worldwidebro-marketing-os"
+        status: "CODE_VERIFIED"
+        deployment: "https://worldwidebro-marketing-os.vercel.app"
+        language: "HTML"
       - repo: "programmatic-ad-engine"
         status: "PAPERWORK"
 

@@ -469,6 +469,7 @@ repositories:
     verified_capabilities: []
     dependency_count: 0
     reality_status: CODE_BACKED
+    deployment_url: https://worldwidebro-marketing-os.vercel.app
   OWN-PRIV-0027:
     repo_id: OWN-PRIV-0027
     repo_name: ec-111-miss-toys

@@ -1,5 +1,11 @@
 [
   {
+    "name": "worldwidebro-marketing-os",
+    "url": "https://worldwidebro-marketing-os.vercel.app",
+    "updated": "just now",
+    "node": "24.x"
+  },
+  {
     "name": "ops-staff-001-staffing",
     "url": "https://ops-staff-001-staffing-worldwidebros-projects.vercel.app",
     "updated": "9h",
