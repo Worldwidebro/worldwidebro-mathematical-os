@@ -183,20 +183,80 @@ Every CTA in every email maps strictly to a live, functional, and verified route
 
 ---
 
-### Section G: Visual Asset System (3-Second Comprehension Layer)
+### Section G: Clean Hero Visual Asset System (3-Second Comprehension Layer)
 
 In high-stakes B2B healthcare sales, clinical decision makers (Lab Directors, Practice Administrators, Pathologists) spend an average of 2.7 to 3.4 seconds scanning incoming vendor communications.
 
-#### 1. Core Visual Architecture
-1. **Hero Courier Visual:**
-   - Asset: `healthroute_hero_courier_1789281432853.jpg` (2.4 MB photorealistic visual asset).
-   - Depiction: Professional uniformed medical logistics courier carrying a validated temperature-controlled Pelican specimen carrier, entering a state-of-the-art diagnostic pathology laboratory.
-   - Purpose: Instantly conveys clinical credibility, physical chain-of-custody, and rigorous cold-chain discipline.
-2. **Cold-Chain Telemetry Indicator:**
-   - Digital temperature badge: `2°C – 8°C Monitored | Calibrated IoT Logger`.
-   - Purpose: Distinguishes HealthRoute from generic ride-share or consumer parcel delivery companies.
-3. **No Embedded Button Text Rule:**
-   - All CTA buttons are rendered in semantic, accessible HTML/CSS (`<table>` / `<button>` markup) with high-contrast `#10b981` (Emerald Green) or `#0066cc` (Clinical Blue) backgrounds. No graphic rasterization of text.
+The visual communicates the operational service, while the **semantic HTML text and CTA button do the selling**.
+
+#### 1. Master Structural Rule: Don't Put the CTA Inside the Image
+Never rasterize headlines, copy, or CTA buttons into the image file. The hero photo remains pure, uncluttered operational photography with natural lighting.
+
+```text
+┌──────────────────────────────────────┐
+│                                      │
+│  HEALTHROUTE COURIER                 │
+│                                      │
+│  Reliable medical                   │
+│  courier delivery.                  │
+│                                      │
+│  [ CLEAN HERO PHOTO ]               │
+│                                      │
+│  STAT • Scheduled • Recurring       │
+│                                      │
+│  Medical deliveries when            │
+│  your facility needs them.          │
+│                                      │
+│       [ REQUEST A QUOTE ]           │
+│                                      │
+└──────────────────────────────────────┘
+```
+
+#### 2. The 3-Part Answering Formula
+Every email must answer three distinct questions in sequential hierarchy:
+1. **The Image answers:** *"What is this?"* (Clean operational photo showing real courier/vehicle/specimen case)
+2. **The Headline answers:** *"Why should I care?"* (Positioned directly above the photo in bold, restrained typography)
+3. **The CTA Button answers:** *"What do I do next?"* (Real standardized HTML/CSS button underneath the body copy)
+
+#### 3. Visual Design System & Ratio Rules
+- **70% Real Operational Photography:** Authentic medical facilities, transport cases, clean vehicles, uniformed drivers.
+- **20% Clean Diagrams / System Vectors:** Coverage maps, temperature tolerance charts, route schedules.
+- **10% Branded Graphics:** Restrained logo, typography, and contrast buttons.
+- **Strict Anti-Patterns:** No giant text over photos, no gradients everywhere, no 5+ buttons, no cheesy handshake photos, no fake dashboards, and zero spam tropes (e.g. `FASTEST COURIER IN CHARLOTTE!!!`).
+
+#### 4. The 6 Curated Operational Photography Categories
+All production emails map to one of 6 curated operational image categories:
+1. **Primary Hero — Courier at Healthcare Facility:**
+   - *Use for:* Stage 1 (Introduction), Stage 5 (Offer).
+   - *Headline Above:* "Reliable medical delivery, when your facility needs it."
+   - *Asset:* `assets/email/01-hero-courier.jpg` (169 KB).
+   - *CTA Button:* "See How HealthRoute Works" / "Request a Quote".
+2. **Medical Specimen Pickup:**
+   - *Use for:* Stage 3 (Proof), Stage 4 (Qualification).
+   - *Headline Above:* "Your specimens need dependable transportation."
+   - *Asset:* `assets/email/02-specimen-pickup.jpg` (36 KB).
+   - *CTA Button:* "View Our Service Area" / "Tell Us What You Ship".
+3. **STAT Delivery:**
+   - *Use for:* Stage 6 (Conversion), Stage 8 (Activation).
+   - *Headline Above:* "When the delivery can't wait."
+   - *Asset:* `assets/email/03-stat-delivery.jpg` (145 KB).
+   - *CTA Button:* "Schedule Your First Pickup" / "Book a Pickup".
+4. **Recurring Route:**
+   - *Use for:* Stage 9 (Retention), Stage 10 (Expansion).
+   - *Headline Above:* "Turn your recurring deliveries into a reliable route."
+   - *Asset:* `assets/email/04-recurring-route.jpg` (262 KB).
+   - *CTA Button:* "Schedule Recurring Routes" / "Add Another Location".
+5. **Pharmacy / Medication Logistics:**
+   - *Use for:* Stage 7 (Onboarding).
+   - *Headline Above:* "Reliable transportation for pharmacy & facility deliveries."
+   - *Asset:* `assets/email/05-pharmacy-logistics.jpg` (71 KB).
+   - *CTA Button:* "Complete Your Account Setup".
+6. **Clinic / Physician Practice:**
+   - *Use for:* Stage 2 (Problem), Stage 11 (Win-Back).
+   - *Headline Above:* "Less time coordinating deliveries. More time running your practice."
+   - *Asset:* `assets/email/06-clinic-practice.jpg` (101 KB).
+   - *CTA Button:* "See Our Delivery Options" / "Restart Your Delivery Schedule".
+
 
 ---
 
