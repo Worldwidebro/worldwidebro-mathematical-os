@@ -3,8 +3,9 @@
 ## Overview
 - **Venture**: [[23-VENTURES/LT-005|HealthRoute Logistics LLC]]
 - **Sector**: [[SECTORS/SEC-017-logistics-transportation|Logistics & Transportation]]
-- **Repo**: [`Worldwidebro/lt-005-medical-courier-dispatch`](https://github.com/Worldwidebro/lt-005-medical-courier-dispatch) (Commit `0561580`)
+- **Repo**: [`Worldwidebro/lt-005-medical-courier-dispatch`](https://github.com/Worldwidebro/lt-005-medical-courier-dispatch) (Commit `bcef08d`)
 - **Portal**: https://healthroute-courier.vercel.app
+
 
 ## State Machine Architecture & Email Engines
 - **Blueprint**: [[docs/EMAIL-REVENUE-FUNNEL-STATE-MACHINE|Email Revenue Funnel State Machine]] (Sections A–W)
