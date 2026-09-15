@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[23-VENTURES/RE-001|RE-001 Spec]] | [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/COMPILED-MASTER-PROSPECTUS|RE-001 Prospectus]] | [[BUSINESS-CAPITAL-DATA-ROOM/5-VENTURE-INTEGRATED-SUMMARY|5-Venture Summary]]
+
 # MUTUAL CONFIDENTIALITY, PROPRIETARY RIGHTS, AND NON-CIRCUMVENTION AGREEMENT
 ### (Platform Demonstration, Evaluation & Investor Due Diligence)
 
@@ -152,3 +154,13 @@ Telephone Number: ______________________________________________________________
 Date Executed: ________________________, 202___
 ══════════════════════════════════════════════════════════════════════════════════
 ```
+
+---
+
+## Connected Systems & Wiki Links
+- **Venture Specification:** [[23-VENTURES/RE-001|23-VENTURES/RE-001.md]]
+- **Data Room Master Prospectus:** [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/COMPILED-MASTER-PROSPECTUS|RE-001 Master Prospectus]]
+- **5-Venture Integrated Summary:** [[BUSINESS-CAPITAL-DATA-ROOM/5-VENTURE-INTEGRATED-SUMMARY|5-Venture Integrated Summary]]
+- **Sales Pipeline:** [[20-DECISIONS/RE-001-SALES-PIPELINE|RE-001 Sales Pipeline]]
+- **Truth Ledger:** [[REALITY|REALITY.md]]
+- **Start Here:** [[STARTHERE|STARTHERE.md]]

@@ -59,3 +59,40 @@ secrets/
 *.pem
 vault.json
 credentials.json
+
+# ============================================================================
+# SENSITIVE FILES — Added 2026-09-14 after credential audit
+# ============================================================================
+# Never commit credentials or secrets to git
+
+# Environment files (contain API keys, passwords, tokens)
+.env
+.env.local
+.env.*.local
+.env.*.example.local
+.env.production.local
+
+# Infrastructure config
+_INFRASTRUCTURE/**/.env
+_INFRASTRUCTURE/**/.env.local
+_INFRASTRUCTURE/**/*.key
+_INFRASTRUCTURE/**/*.pem
+_INFRASTRUCTURE/certs/private/*
+
+# Venture-specific secrets
+23-VENTURES/*/.env.local
+22-VENTURES/*/.env
+
+# Build artifacts with secrets
+dist/
+build/
+*.tgz
+*.tar.gz
+
+# IDE secrets
+.idea/workspace.xml
+.vscode/settings.local.json
+
+# OS temp files
+.DS_Store
+Thumbs.db

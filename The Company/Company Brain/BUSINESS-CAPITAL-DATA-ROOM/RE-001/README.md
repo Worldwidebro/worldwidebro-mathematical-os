@@ -1,116 +1,77 @@
 ---
-id: DATA-ROOM-RE-001
-title: "RE-001 — WorldwideBro Holdings Real Estate LLC (Venture Data Room)"
-aliases: ["RE-001", "RE-001/README", "WorldwideBro Holdings Real Estate LLC Data Room"]
-tags: [data-room, venture, re-001, capital, institutional]
-status: ACTIVE
-authority: "CP-001 / CP-027"
-updated: 2026-09-12
+id: VEN-RE-001
+title: RE-001 — Commercial Real Estate Brokerage Platform
+parent_entity: Worldwidebro Group
+sector: SEC-020 (Real Estate & Property)
+legal_role: OpCo (Operating Company)
+status: VALIDATING
+revenue_model: Transactional (commission-based)
+annual_target: $1.2M
+created: 2026-09-15
+deployment: https://re-001-worldwidebro-holdings.vercel.app
 ---
 
-[[BUSINESS-CAPITAL-DATA-ROOM/README|DATA-ROOM-MASTER]] | [[STARTHERE]] | [[REALITY]] | [[SECTORS/SEC-020-real-estate-property|SECTOR]] | [[repos/re-001-worldwidebro-holdings/README|CODEBASE]] | [[INDEX]]
+# RE-001: Commercial Real Estate Brokerage Platform
 
-# RE-001 — WorldwideBro Holdings Real Estate LLC
-### Sovereign Venture Capital Data Room & Institutional Dossier
+**What It Does:** Commercial real estate brokerage specializing in office, industrial, and retail property sales/leasing. Connects institutional buyers, corporate tenants, and property developers through proprietary deal flow and market analysis.
 
-> **Industry Classification:** [[SECTORS/SEC-020-real-estate-property|SEC-020-real-estate-property]]  
-> **Software Repository:** [[repos/re-001-worldwidebro-holdings/README|repos/re-001-worldwidebro-holdings]]  
-> **Venture Overview:** [[23-VENTURES/RE-001|RE-001.md]]  
-> **Mission:** Real Estate Deal Engine & Asset Holding Infrastructure
+## Business Model
 
----
+| Metric | Value |
+|--------|-------|
+| **Revenue Type** | Transactional (commission) |
+| **Commission Rate** | 4–8% of transaction value (varies by deal type) |
+| **Deal Types** | Office (40%), Industrial (35%), Retail (25%) |
+| **Avg Deal Size** | $2M–$50M ($15M median) |
+| **Annual Target** | $1.2M (8 deals @ 4% avg, $15M median size) |
+| **Profitability** | 60–70% margin (mostly agent overhead) |
 
-## 1. Capital Packages & Prospectuses
-- **Master Capital Prospectus:** [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/BUSINESS-CAPITAL-PROSPECTUS|BUSINESS-CAPITAL-PROSPECTUS.md]]
-- **Institutional Prospectus:** [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/INSTITUTIONAL-PROSPECTUS|INSTITUTIONAL-PROSPECTUS.md]]
-- **Compiled Master Prospectus:** [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/COMPILED-MASTER-PROSPECTUS|COMPILED-MASTER-PROSPECTUS.md]]
-- **Operational Reality Audit:** [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/OPERATIONAL-REALITY|OPERATIONAL-REALITY.md]]
-- **Capital Readiness Scorecard:** [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/99_INDEX/CAPITAL-READINESS-SCORECARD|CAPITAL-READINESS-SCORECARD.md]]
+## Revenue Loop
 
----
+**Week 1 Reality:**
+- Pitch pipeline: 3 active deals (~$30M total)
+- Expected commission if 2 close: $240K–$480K
+- Conservative estimate: 1 deal closes in Q1 = $360K
 
-## 2. Venture Core Documentation
+**Cumulative Model:**
+- Q3 2026: $240K (1 deal)
+- Q4 2026: $480K (2 deals + referrals)
+- Q1 2027: $600K (2–3 deals, repeat clients)
+- **Annual Run Rate:** $1.2M+
 
-| Domain | Document Title | Description | Link |
-|---|---|---|---|
-| **01_IDENTITY** | Executive Summary | Company profile, problem/solution, metrics | [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/01_IDENTITY/EXECUTIVE-SUMMARY\|EXECUTIVE-SUMMARY.md]] |
-| **01_IDENTITY** | Company Profile | Legal entity, operational history, footprint | [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/01_IDENTITY/COMPANY-PROFILE\|COMPANY-PROFILE.md]] |
-| **01_IDENTITY** | Mission, Vision & Values | Core corporate principles and operating ethos | [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/01_IDENTITY/MISSION-VISION-VALUES\|MISSION-VISION-VALUES.md]] |
-| **02_STRATEGY** | Strategy & Target Customer | GTM strategy, ICP, competitive advantage | [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/02_STRATEGY/TARGET-CUSTOMER\|TARGET-CUSTOMER.md]] |
-| **02_STRATEGY** | Business Model | Revenue mechanics, unit economics, scaling | [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/02_STRATEGY/BUSINESS-MODEL\|BUSINESS-MODEL.md]] |
-| **05_FUNDING** | Funding Request | Capital requirements, allocation, ROI model | [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/05_FUNDING/FUNDING-REQUEST\|FUNDING-REQUEST.md]] |
-| **06_MARKET** | TAM / SAM / SOM | Market sizing, growth drivers, demographics | [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/06_MARKET/TAM-SAM-SOM\|TAM-SAM-SOM.md]] |
-| **07_PRODUCT** | Tech Stack & Architecture | Architecture specifications and integrations | [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/07_PRODUCT/TECH-STACK\|TECH-STACK.md]] |
-| **07_PRODUCT** | Security Architecture | SOC 2, encryption, access controls | [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/07_PRODUCT/SECURITY-ARCHITECTURE\|SECURITY-ARCHITECTURE.md]] |
-| **13_GRANTS** | Grant Package | Non-dilutive public funding applications | [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/13_GRANTS/GRANT-PACKAGE\|GRANT-PACKAGE.md]] |
-| **14_LOANS** | Loan Package | Debt schedule, DSCR models, SBA submission | [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/14_LOANS/LOAN-PACKAGE\|LOAN-PACKAGE.md]] |
-| **15_INVESTORS** | Investor Package | Private equity / mezzanine underwriting terms | [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/15_INVESTORS/INVESTOR-PACKAGE\|INVESTOR-PACKAGE.md]] |
-| **22_SYSTEM** | Risk Management | Risk matrix, mitigation protocols, insurance | [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/22_SYSTEM/RISKS\|RISKS.md]] |
-| **22_SYSTEM** | System Decisions | Architecture Decision Records (ADRs) | [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/22_SYSTEM/DECISIONS\|DECISIONS.md]] |
+## Current Status (Sep 15, 2026)
 
----
+✅ Broker licensing obtained (state + national)  
+✅ Deal pitch deck ready (82 slides, capital requirements)  
+✅ Website live (vercel: re-001-worldwidebro-holdings.vercel.app)  
+🟡 Active deal pipeline (3 deals @ $30M total value)  
+🟡 Partnership with 2 anchor institutional clients pending  
+❌ Deal engine (automated deal matching) - needs build (25h)
 
-## Autonomous Capital & Engineering Tooling
-- **Publication Engine:** [[_TOOLS/GSTACK|GStack (`scripts/make-pdf`)]] compiles this dossier into vector PDF capital packages.
-- **Diligence Search:** [[_TOOLS/GBRAIN|GBrain]] indexes this venture's 22 domains for hybrid semantic retrieval.
-- **Codebase Execution:** [[16-AGENTS/OPENHANDS|OpenHands]] executes and verifies working software in [[repos/re-001-worldwidebro-holdings/README|repos/re-001-worldwidebro-holdings]].
-- **Communications:** [[16-AGENTS/HERMES-AGENT|Hermes Agent]] manages partner and outbound outreach.
+## How It Serves Other Ventures
 
----
+- **FIN-037 (Trading):** Market data feeds (commercial real estate pricing)
+- **RE-ASSET-01:** Property acquisition opportunities
+- **CON-001:** General contracting bid pipeline
 
-## 3. Complete 22-Domain Document Index
+## Venture Relationships
 
-- **01_IDENTITY**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/01_IDENTITY/COMPANY-FACT-SHEET|COMPANY-FACT-SHEET]]
-- **01_IDENTITY**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/01_IDENTITY/COMPANY-PROFILE|COMPANY-PROFILE]]
-- **01_IDENTITY**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/01_IDENTITY/EXECUTIVE-SUMMARY|EXECUTIVE-SUMMARY]]
-- **01_IDENTITY**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/01_IDENTITY/MISSION-VISION-VALUES|MISSION-VISION-VALUES]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/02_STRATEGY/BUSINESS-MODEL|BUSINESS-MODEL]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/02_STRATEGY/COMPETITIVE-ADVANTAGE|COMPETITIVE-ADVANTAGE]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/02_STRATEGY/CUSTOMER-PROBLEM|CUSTOMER-PROBLEM]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/02_STRATEGY/DEAL-STRUCTURES-MATRIX|DEAL-STRUCTURES-MATRIX]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/02_STRATEGY/DEMAND-EVIDENCE|DEMAND-EVIDENCE]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/02_STRATEGY/GROWTH-STRATEGY|GROWTH-STRATEGY]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/02_STRATEGY/MILESTONES|MILESTONES]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/02_STRATEGY/PROBLEM-STATEMENT|PROBLEM-STATEMENT]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/02_STRATEGY/ROADMAP|ROADMAP]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/02_STRATEGY/STRATEGY|STRATEGY]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/02_STRATEGY/TARGET-CUSTOMER|TARGET-CUSTOMER]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/02_STRATEGY/VALUE-PROPOSITION|VALUE-PROPOSITION]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/02_STRATEGY/VISION|VISION]]
-- **05_FUNDING**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/05_FUNDING/FUNDING-REQUEST|FUNDING-REQUEST]]
-- **06_MARKET**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/06_MARKET/MARKET-ANALYSIS|MARKET-ANALYSIS]]
-- **06_MARKET**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/06_MARKET/TAM-SAM-SOM|TAM-SAM-SOM]]
-- **07_PRODUCT**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/07_PRODUCT/API-DOCUMENTATION|API-DOCUMENTATION]]
-- **07_PRODUCT**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/07_PRODUCT/ARCHITECTURE|ARCHITECTURE]]
-- **07_PRODUCT**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/07_PRODUCT/SECURITY-ARCHITECTURE|SECURITY-ARCHITECTURE]]
-- **07_PRODUCT**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/07_PRODUCT/SYSTEM-DESIGN|SYSTEM-DESIGN]]
-- **07_PRODUCT**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/07_PRODUCT/TECH-STACK|TECH-STACK]]
-- **08_REVENUE**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/08_REVENUE/MONETIZATION-TAXONOMY|MONETIZATION-TAXONOMY]]
-- **09_OPERATIONS**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/09_OPERATIONS/SOP/SOP-001|SOP-001]]
-- **09_OPERATIONS**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/09_OPERATIONS/SOP/SOP-002|SOP-002]]
-- **09_OPERATIONS**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/09_OPERATIONS/SOP/SOP-003|SOP-003]]
-- **13_GRANTS**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/13_GRANTS/GRANT-PACKAGE|GRANT-PACKAGE]]
-- **14_LOANS**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/14_LOANS/LOAN-PACKAGE|LOAN-PACKAGE]]
-- **15_INVESTORS**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/15_INVESTORS/INVESTOR-PACKAGE|INVESTOR-PACKAGE]]
-- **20_DATA_ROOM**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/20_DATA_ROOM/INDEX|INDEX]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/22_SYSTEM/AGENTS|AGENTS]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/22_SYSTEM/ARCHITECTURE|ARCHITECTURE]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/22_SYSTEM/ASSUMPTIONS|ASSUMPTIONS]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/22_SYSTEM/CHANGELOG|CHANGELOG]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/22_SYSTEM/CLAUDE|CLAUDE]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/22_SYSTEM/DECISIONS|DECISIONS]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/22_SYSTEM/DECISIONS/ADR-001|ADR-001]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/22_SYSTEM/DECISIONS/ADR-002|ADR-002]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/22_SYSTEM/DECISIONS/ADR-003|ADR-003]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/22_SYSTEM/GLOSSARY|GLOSSARY]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/22_SYSTEM/GOVERNANCE|GOVERNANCE]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/22_SYSTEM/QA/TEST-PLAN|TEST-PLAN]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/22_SYSTEM/README|README]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/22_SYSTEM/RELEASES/RELEASE-NOTES/RELEASE-V1.0|RELEASE-V1.0]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/22_SYSTEM/REVIEWS/CEO-REVIEW/CEO-REVIEW-Q1|CEO-REVIEW-Q1]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/22_SYSTEM/REVIEWS/ENGINEERING-REVIEW/ARCHITECTURE-REVIEW|ARCHITECTURE-REVIEW]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/22_SYSTEM/REVIEWS/SECURITY-REVIEW/THREAT-MODEL|THREAT-MODEL]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/22_SYSTEM/RISKS|RISKS]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/22_SYSTEM/ROADMAP|ROADMAP]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/22_SYSTEM/TODO|TODO]]
-- **99_INDEX**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/99_INDEX/CAPITAL-READINESS-SCORECARD|CAPITAL-READINESS-SCORECARD]]
+```
+Worldwidebro Group
+  ↓ Real Estate & Property Group
+    ├─ RE-001 (This - revenue via commissions)
+    ├─ RE-ASSET-01 (Owns 12 commercial properties)
+    ├─ RE-ASSET-02 (Owns 40 residential units)
+    └─ RE-MGMT (Property management)
+```
+
+## Key Metrics
+
+- **Deal Pipeline:** 3 active ($30M total)
+- **Win Rate Target:** 30% (1/3 closing in Q3)
+- **Avg Commission:** 5.5% ($825K per deal)
+- **Sales Cycle:** 60–90 days
+
+**Master Entity:** Worldwidebro Group  
+**Sector:** SEC-020 (Real Estate & Property)  
+**Next Review:** 2026-10-01
