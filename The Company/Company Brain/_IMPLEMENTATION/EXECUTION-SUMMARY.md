@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[_IMPLEMENTATION/SECRETS-CHECKLIST|Secrets Checklist]]
+
 # EXECUTION SUMMARY: OpenClaw Secure Setup Complete
 
 **Date:** 2026-09-09  

@@ -1,0 +1,244 @@
+{
+  "name": "HealthRoute Loop 01: Medical Courier Outreach & Dispatch (WF-LT005-ACQUIRE)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 6
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        200,
+        200
+      ],
+      "name": "Schedule: Every 6 Hours"
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "wf-lt005-acquire",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        200,
+        400
+      ],
+      "name": "Webhook Trigger"
+    },
+    {
+      "parameters": {
+        "jsCode": "// HealthRoute Charlotte Facilities Queue\nconst items = $input.all();\nconst incoming = items[0]?.json?.body || items[0]?.json;\n\nif (incoming && incoming.name && incoming.contact_email) {\n  return [{\n    json: {\n      id: incoming.id || 'manual-' + Date.now(),\n      name: incoming.name,\n      facility_type: incoming.facility_type || 'hospital',\n      address: incoming.address || 'Charlotte, NC',\n      contact_email: incoming.contact_email,\n      contact_phone: incoming.contact_phone || '704-555-0100',\n      decision_maker_name: incoming.decision_maker_name || 'Medical Director',\n      decision_maker_title: incoming.decision_maker_title || 'Director of Clinical Logistics',\n      specialty: incoming.specialty || 'STAT specimen transport',\n      source: 'webhook_inbound'\n    }\n  }];\n}\n\nconst facilities = [\n  {\n    id: 'fac-clt-001',\n    name: 'Atrium Health Carolinas Medical Center',\n    facility_type: 'hospital',\n    address: '1000 Blythe Blvd, Charlotte, NC 28203',\n    contact_email: 'operations@atriumhealth.org',\n    contact_phone: '704-355-2000',\n    decision_maker_name: 'Dr. Marcus Vance',\n    decision_maker_title: 'Director of Clinical Operations',\n    specialty: 'STAT pathology and blood specimen transit'\n  },\n  {\n    id: 'fac-clt-002',\n    name: 'Novant Health Presbyterian Medical Center',\n    facility_type: 'hospital',\n    address: '200 Hawthorne Ln, Charlotte, NC 28204',\n    contact_email: 'logistics@novanthealth.org',\n    contact_phone: '704-384-4000',\n    decision_maker_name: 'Sarah Jenkins',\n    decision_maker_title: 'Logistics and Materials Manager',\n    specialty: 'Urgent lab sample transport between satellite clinics'\n  },\n  {\n    id: 'fac-clt-003',\n    name: 'Charlotte Surgery Center',\n    facility_type: 'surgery_center',\n    address: '1740 S Sterling St, Charlotte, NC 28203',\n    contact_email: 'admin@surgicalpartnersclt.com',\n    contact_phone: '704-567-8900',\n    decision_maker_name: 'Michael Chang',\n    decision_maker_title: 'Surgical Center Administrator',\n    specialty: 'Surgical tissue biopsies and refrigerated specimen courier'\n  },\n  {\n    id: 'fac-clt-004',\n    name: 'Tryon Medical Partners - Uptown Clinic',\n    facility_type: 'clinic',\n    address: '101 S Tryon St, Charlotte, NC 28202',\n    contact_email: 'intake@tryonmedclt.com',\n    contact_phone: '704-522-1234',\n    decision_maker_name: 'Brenda Holloway',\n    decision_maker_title: 'Practice Operations Manager',\n    specialty: 'Daily scheduled lab specimen runs to testing centers'\n  },\n  {\n    id: 'fac-clt-005',\n    name: 'Eastside Urgent Care & Diagnostic Center',\n    facility_type: 'urgent_care',\n    address: '3500 Wade Ave, Charlotte, NC 28205',\n    contact_email: 'dispatch@medcathclt.org',\n    contact_phone: '704-335-5000',\n    decision_maker_name: 'David Ross',\n    decision_maker_title: 'Clinical Lab Coordinator',\n    specialty: 'STAT rapid culture pickups and temperature-monitored courier'\n  }\n];\n\nreturn facilities.map(f => ({ json: { ...f, source: 'charlotte_facility_queue' } }));"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        450,
+        300
+      ],
+      "name": "Charlotte Facilities Queue"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://host.docker.internal:11434/api/generate",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ model: 'qwen2.5-coder:14b', prompt: 'You are Divine Johns, CEO of HealthRoute Logistics (Charlotte, NC). Write a professional, personalized B2B cold email to ' + $json.decision_maker_name + ', ' + $json.decision_maker_title + ' at ' + $json.name + ' (' + $json.facility_type + ', ' + $json.address + '). Pitch our same-day HIPAA-compliant medical courier service for ' + $json.specialty + '. Highlights: 45-minute STAT dispatch in Charlotte, temperature-controlled chain of custody, flat rate $85 per STAT run. Include phone (704-555-0199) and email (divine@healthroutelogistics.com). Output format:\\nSubject: <subject>\\n\\n<body>', stream: false }) }}",
+        "options": {
+          "timeout": 120000
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        700,
+        300
+      ],
+      "name": "Generate Pitch (Ollama Qwen 14B)"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Parse Ollama response and merge with facility record\nconst items = $input.all();\nconst results = [];\n\nfor (let i = 0; i < items.length; i++) {\n  const item = items[i].json;\n  const facility = $('Charlotte Facilities Queue').item.json;\n  const rawResponse = item.response || '';\n  \n  let subject = 'Same-Day Specimen Courier Service for ' + facility.name;\n  let body = rawResponse;\n  \n  const subjectMatch = rawResponse.match(/Subject:\\s*(.+)/i);\n  if (subjectMatch) {\n    subject = subjectMatch[1].trim();\n    body = rawResponse.replace(/Subject:\\s*.+\\n+/i, '').trim();\n  }\n  \n  results.push({\n    json: {\n      facility_id: facility.id,\n      facility_name: facility.name,\n      facility_type: facility.facility_type,\n      address: facility.address,\n      recipient_name: facility.decision_maker_name,\n      recipient_title: facility.decision_maker_title,\n      recipient_email: facility.contact_email,\n      recipient_phone: facility.contact_phone,\n      subject: subject,\n      email_body: body,\n      expected_revenue: 85.0,\n      campaign: 'WF-LT005-ACQUIRE',\n      dispatched_at: new Date().toISOString(),\n      model_used: 'qwen2.5-coder:14b',\n      inference_cost_usd: 0.0\n    }\n  });\n}\n\nreturn results;"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        950,
+        300
+      ],
+      "name": "Parse & Structure Outreach"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://host.docker.internal:7474/db/neo4j/tx/commit",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Basic bmVvNGo6Y2hhbmdlbWU="
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ statements: [{ statement: 'MERGE (f:Facility {name: $name}) ON CREATE SET f.id = $id, f.type = $facility_type, f.email = $email, f.city = \"Charlotte\", f.state = \"NC\" MERGE (o:OutreachAttempt {campaign: $campaign, timestamp: $dispatched_at}) SET o.subject = $subject, o.status = \"dispatched\", o.expected_revenue = $expected_revenue, o.model = $model MERGE (f)-[:RECEIVED_OUTREACH]->(o) WITH f, o MATCH (v:Venture {id: \"LT-005\"}) MERGE (v)-[:LOGGED_OUTREACH]->(o) RETURN o.status', parameters: { name: $json.facility_name, id: $json.facility_id, facility_type: $json.facility_type, email: $json.recipient_email, campaign: $json.campaign, dispatched_at: $json.dispatched_at, subject: $json.subject, expected_revenue: $json.expected_revenue, model: $json.model_used } }] }) }}",
+        "options": {
+          "timeout": 15000
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1200,
+        300
+      ],
+      "name": "Log to Neo4j Company Brain"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "status_field",
+              "name": "status",
+              "value": "OUTREACH_READY",
+              "type": "string"
+            },
+            {
+              "id": "facility_field",
+              "name": "facility",
+              "value": "={{ $('Parse & Structure Outreach').item.json.facility_name }}",
+              "type": "string"
+            },
+            {
+              "id": "email_field",
+              "name": "to",
+              "value": "={{ $('Parse & Structure Outreach').item.json.recipient_email }}",
+              "type": "string"
+            },
+            {
+              "id": "subject_field",
+              "name": "subject",
+              "value": "={{ $('Parse & Structure Outreach').item.json.subject }}",
+              "type": "string"
+            },
+            {
+              "id": "body_field",
+              "name": "email_body",
+              "value": "={{ $('Parse & Structure Outreach').item.json.email_body }}",
+              "type": "string"
+            },
+            {
+              "id": "rev_field",
+              "name": "expected_revenue_usd",
+              "value": 85.0,
+              "type": "number"
+            },
+            {
+              "id": "cost_field",
+              "name": "inference_cost_usd",
+              "value": 0.0,
+              "type": "number"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1450,
+        300
+      ],
+      "name": "Ready for Dispatch & Delivery"
+    }
+  ],
+  "connections": {
+    "Schedule: Every 6 Hours": {
+      "main": [
+        [
+          {
+            "node": "Charlotte Facilities Queue",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Webhook Trigger": {
+      "main": [
+        [
+          {
+            "node": "Charlotte Facilities Queue",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Charlotte Facilities Queue": {
+      "main": [
+        [
+          {
+            "node": "Generate Pitch (Ollama Qwen 14B)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generate Pitch (Ollama Qwen 14B)": {
+      "main": [
+        [
+          {
+            "node": "Parse & Structure Outreach",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse & Structure Outreach": {
+      "main": [
+        [
+          {
+            "node": "Log to Neo4j Company Brain",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Log to Neo4j Company Brain": {
+      "main": [
+        [
+          {
+            "node": "Ready for Dispatch & Delivery",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "availableInMCP": true
+  }
+}

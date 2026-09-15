@@ -1,0 +1,416 @@
+---
+# MASTER VENTURE CLASSIFICATION TAXONOMY
+# Maps 789 ventures to private-firm architecture layers
+# Authority: ENTERPRISE_BLUEPRINT.md + Private Firm Conglomerate Model
+
+metadata:
+  version: "1.0"
+  created: "2026-09-15"
+  scope: "All 789 ventures"
+  alignment: "4-layer family office architecture"
+
+# ==============================================================================
+# LAYER 1: LEGAL ROLES
+# ==============================================================================
+# What legal function does this venture serve in the architecture?
+
+legal_roles:
+
+  OpCo:
+    name: "Operating Company"
+    description: "Actually sells goods/services to customers. Takes on commercial risk."
+    characteristics:
+      - Revenue-generating
+      - Customer-facing
+      - High operational risk
+      - Contracts with external parties
+    expected_percentage: "75-80%"
+    examples: ["OPS-001 (Staffing)", "LT-005 (Medical Courier)", "RE-001 (Real Estate)"]
+
+  AssetCo:
+    name: "Asset Company"
+    description: "Owns valuable tangible assets (real estate, equipment, vehicles)"
+    characteristics:
+      - Lease/rent assets to OpCos
+      - Low operational risk
+      - Income via lease payments
+      - Appreciation strategy
+    expected_percentage: "5-10%"
+    examples: ["Property LLC", "Equipment Fleet LLC"]
+
+  IPCo:
+    name: "Intellectual Property Company"
+    description: "Owns and licenses patents, trademarks, software, proprietary methods"
+    characteristics:
+      - License fees/royalties to OpCos
+      - High strategic value
+      - Low operational risk
+      - Scalable income model
+    expected_percentage: "2-5%"
+    examples: ["DispatchOS trademark holder", "Patent licensing entities"]
+
+  TechCo:
+    name: "Technology/Platform Company"
+    description: "Builds shared infrastructure used by multiple OpCos"
+    characteristics:
+      - Shared platform (Company Brain, DispatchOS)
+      - Internal or B2B SaaS model
+      - Enables other ventures
+    expected_percentage: "3-8%"
+    examples: ["Company Brain", "DispatchOS"]
+
+  ManagementCo:
+    name: "Management/Services Company"
+    description: "Provides centralized services (finance, HR, legal, operations) to OpCos"
+    characteristics:
+      - Cost center or service hub
+      - Arm's-length fees to OpCos
+      - Operational efficiency
+    expected_percentage: "2-4%"
+    examples: ["Finance & Treasury", "HR Center of Excellence"]
+
+  InvestmentCo:
+    name: "Investment/Capital Company"
+    description: "Deploys capital into acquisitions, funds, and financial instruments"
+    characteristics:
+      - Non-operational
+      - Return-focused
+      - Portfolio management
+    expected_percentage: "2-5%"
+    examples: ["Worldwidebro Ventures Fund", "Investment Committee vehicle"]
+
+  SPV:
+    name: "Special Purpose Vehicle"
+    description: "Created for a specific transaction, project, or asset"
+    characteristics:
+      - One project/deal per SPV
+      - Limited lifespan
+      - Risk isolation
+    expected_percentage: "1-3%"
+    examples: ["Real estate SPVs", "Acquisition vehicles"]
+
+  JV:
+    name: "Joint Venture"
+    description: "Shared ownership with external partners"
+    characteristics:
+      - Multiple owners
+      - Shared governance
+      - Partner capital contribution
+    expected_percentage: "0.5-2%"
+    examples: ["Co-owned development projects"]
+
+  HoldCo:
+    name: "Holding Company"
+    description: "Owns and controls subsidiaries; no operations"
+    characteristics:
+      - Ownership layer
+      - Dividend collection
+      - Strategic control
+    expected_percentage: "1-3%"
+    examples: ["Worldwidebro Group", "Sector HoldCos"]
+
+  InternalPlatform:
+    name: "Internal Platform/System"
+    description: "Not a standalone company; part of Company Brain or another entity"
+    characteristics:
+      - No separate legal entity
+      - Feature/module/service
+      - Subsumed into parent
+    expected_percentage: "1-5%"
+    examples: ["Internal automation tools", "Add-on services"]
+
+# ==============================================================================
+# LAYER 2: PARENT ENTITIES
+# ==============================================================================
+# Who owns this venture?
+
+parent_entities:
+
+  Worldwidebro_Holding:
+    name: "Worldwidebro Group (Master)"
+    description: "Top-level holding company. Owns most OpCos and sector HoldCos."
+    structure: "100% Family Trust"
+    hierarchy_level: 5
+    typical_children: ["OpCos", "Sector HoldCos", "InvestmentCo"]
+
+  Sector_HoldCo:
+    name: "Sector Holding Company"
+    description: "Groups ventures by sector. Owns OpCos within that sector."
+    structure: "100% Worldwidebro Group"
+    hierarchy_level: 6
+    examples: ["Technology Group HoldCo", "Healthcare Group HoldCo"]
+    typical_children: ["OpCos in sector"]
+
+  Asset_Platform:
+    name: "Asset Platform"
+    description: "Central vehicle for all real estate, equipment, IP assets"
+    structure: "100% Worldwidebro Group or Family Trust"
+    hierarchy_level: 5
+    typical_children: ["PropertyCos", "IPCos", "AssetCos"]
+
+  Investment_Platform:
+    name: "Investment Platform"
+    description: "Manages capital deployment, funds, and financial assets"
+    structure: "100% Worldwidebro Group"
+    hierarchy_level: 5
+    typical_children: ["Funds", "SPVs", "JVs"]
+
+  Family_Office:
+    name: "Family Office (VEX)"
+    description: "Governance and capital allocation layer"
+    structure: "Owned by Family Trust"
+    hierarchy_level: 4
+    typical_children: ["All business entities"]
+
+  External_Partner:
+    name: "External Partner/Third Party"
+    description: "Joint venture with non-Worldwidebro owner"
+    structure: "Shared ownership"
+    hierarchy_level: 7
+    typical_children: ["Co-owned ventures"]
+
+# ==============================================================================
+# LAYER 3: OPERATING GROUPS (Sector Groups)
+# ==============================================================================
+# Which functional area/sector manages this?
+
+sector_groups:
+
+  Technology_Group:
+    name: "Technology & Software"
+    ventures_count_target: 60
+    contains_roles: ["TechCo", "OpCo", "IPCo"]
+    strategic_role: "Shared infrastructure + product innovation"
+    key_ventures: ["Company Brain", "DispatchOS", "SaaS platforms"]
+
+  Financial_Services_Group:
+    name: "Financial Services"
+    ventures_count_target: 30
+    contains_roles: ["OpCo", "InvestmentCo", "ManagementCo"]
+    strategic_role: "Capital + fintech products"
+    key_ventures: ["Banking platforms", "Accounting tools", "Tax services"]
+
+  Healthcare_Group:
+    name: "Healthcare & Medical"
+    ventures_count_target: 25
+    contains_roles: ["OpCo", "AssetCo"]
+    strategic_role: "Medical logistics + healthcare services"
+    key_ventures: ["LT-005 (Medical Courier)", "Healthcare platforms"]
+
+  Operations_Group:
+    name: "Operations & Professional Services"
+    ventures_count_target: 40
+    contains_roles: ["OpCo", "ManagementCo"]
+    strategic_role: "Staffing + consulting + services"
+    key_ventures: ["OPS-001 (Staffing)", "Consulting agencies", "Call center"]
+
+  Logistics_Group:
+    name: "Logistics & Transportation"
+    ventures_count_target: 20
+    contains_roles: ["OpCo", "AssetCo", "TechCo"]
+    strategic_role: "Dispatch + fleet + delivery"
+    key_ventures: ["LT-011 (DispatchOS)", "Courier services", "Freight"]
+
+  Commerce_Group:
+    name: "E-Commerce & Marketplace"
+    ventures_count_target: 50
+    contains_roles: ["OpCo", "Platform", "InvestmentCo"]
+    strategic_role: "Marketplace + seller tools + live commerce"
+    key_ventures: ["Live commerce", "Dropship hub", "Recommendation engine"]
+
+  Media_Group:
+    name: "Media & Content"
+    ventures_count_target: 35
+    contains_roles: ["OpCo", "IPCo", "Platform"]
+    strategic_role: "Content creation + distribution + creator tools"
+    key_ventures: ["YouTube networks", "Podcast networks", "Streaming"]
+
+  Education_Group:
+    name: "Education & Learning"
+    ventures_count_target: 30
+    contains_roles: ["OpCo", "Platform", "IPCo"]
+    strategic_role: "Online education + skill development"
+    key_ventures: ["Tutoring platform", "Coding bootcamp", "Skills assessment"]
+
+  Real_Estate_Group:
+    name: "Real Estate & Property"
+    ventures_count_target: 20
+    contains_roles: ["AssetCo", "OpCo", "SPV"]
+    strategic_role: "Asset ownership + property operations"
+    key_ventures: ["RE-001 (Real Estate)", "Development projects"]
+
+  Construction_Group:
+    name: "Construction & Infrastructure"
+    ventures_count_target: 15
+    contains_roles: ["OpCo", "AssetCo"]
+    strategic_role: "Construction services + infrastructure"
+    key_ventures: ["CON-001 (Construction)"]
+
+  Beauty_Wellness_Group:
+    name: "Beauty & Wellness"
+    ventures_count_target: 30
+    contains_roles: ["OpCo", "IPCo"]
+    strategic_role: "Beauty services + wellness products + brands"
+    key_ventures: ["Lash studios", "Salons", "Cosmetics brands"]
+
+  Hospitality_Group:
+    name: "Hospitality & Food Services"
+    ventures_count_target: 25
+    contains_roles: ["OpCo", "AssetCo"]
+    strategic_role: "Food service + hospitality operations"
+    key_ventures: ["Restaurants", "Meal prep", "Cloud kitchens"]
+
+# ==============================================================================
+# LAYER 4: STRATEGIC ROLES
+# ==============================================================================
+# What is this venture's strategic purpose in the portfolio?
+
+strategic_roles:
+
+  Revenue_Engine:
+    name: "Revenue Engine"
+    description: "Generates income for the portfolio"
+    characteristics:
+      - Customer-facing
+      - Revenue-generating
+      - P&L responsibility
+    typical_legal_roles: ["OpCo"]
+
+  Shared_Infrastructure:
+    name: "Shared Infrastructure"
+    description: "Enables multiple other ventures"
+    characteristics:
+      - Force multiplier
+      - Cost center or platform
+      - Internal dependency
+    typical_legal_roles: ["TechCo", "ManagementCo"]
+
+  Asset_Holder:
+    name: "Asset Holder"
+    description: "Owns and appreciates valuable assets"
+    characteristics:
+      - Non-operational
+      - Lease/license income
+      - Risk isolation
+    typical_legal_roles: ["AssetCo", "PropertyCo", "IPCo"]
+
+  Capital_Deployer:
+    name: "Capital Deployer"
+    description: "Invests and returns capital"
+    characteristics:
+      - Non-operational
+      - Return-focused
+      - Portfolio management
+    typical_legal_roles: ["InvestmentCo", "Fund"]
+
+  Strategic_Acquisition:
+    name: "Strategic Acquisition"
+    description: "Bought company with synergies to other ventures"
+    characteristics:
+      - Integration opportunity
+      - Synergy potential
+      - Roll-up candidate
+    typical_legal_roles: ["OpCo", "SPV"]
+
+  IP_Incubator:
+    name: "IP Incubator"
+    description: "Develops intellectual property for licensing"
+    characteristics:
+      - R&D focused
+      - Patent/trademark creation
+      - Scalable output
+    typical_legal_roles: ["IPCo", "TechCo"]
+
+# ==============================================================================
+# LAYER 5: REGULATORY CLASSES
+# ==============================================================================
+# What regulatory regime applies?
+
+regulatory_classes:
+
+  Unregulated:
+    description: "No specific regulatory burden"
+    examples: ["Software SaaS", "Staffing", "Consulting"]
+
+  Finance:
+    description: "Banking, lending, payment processing"
+    requires: ["Licensing", "Capital requirements", "Compliance officer"]
+    examples: ["Banks", "Payment platforms", "Lending platforms"]
+
+  Securities:
+    description: "Investment funds, securities offerings"
+    requires: ["SEC registration", "Fund documentation", "Accredited investor rules"]
+    examples: ["Investment funds", "Private equity vehicles"]
+
+  Healthcare:
+    description: "Medical services, HIPAA compliance"
+    requires: ["Medical licenses", "HIPAA compliance", "Insurance"]
+    examples: ["Medical couriers", "Healthcare platforms"]
+
+  Transportation:
+    description: "Commercial transportation, logistics"
+    requires: ["DOT compliance", "Insurance", "Driver licensing"]
+    examples: ["Trucking", "Courier services", "Logistics"]
+
+  Education:
+    description: "Higher education, training programs"
+    requires: ["Accreditation (if applicable)", "Student records compliance"]
+    examples: ["Bootcamps", "Online education"]
+
+  Real_Estate:
+    description: "Real estate development, property management"
+    requires: ["Land use permits", "Building codes", "Property tax"]
+    examples: ["Property companies", "Development"]
+
+# ==============================================================================
+# CLASSIFICATION RULES
+# ==============================================================================
+# Heuristics for auto-classifying ventures
+
+classification_heuristics:
+
+  - IF sector == "Technology"
+    AND stage in ["planned", "mvp"]
+    THEN legal_role likely "TechCo" or "OpCo"
+
+  - IF "real estate" in name OR sector == "Real Estate"
+    THEN legal_role likely "AssetCo" or "PropertyCo"
+
+  - IF "Group" in name OR "HoldCo" in name
+    THEN legal_role = "HoldCo"
+
+  - IF stage == "planned" AND legal_role not determined
+    THEN legal_role default "OpCo" (most ventures are ops)
+
+  - IF stage == "operating" OR "growth"
+    THEN high confidence in legal_role
+
+  - IF venture generates customer revenue
+    THEN legal_role = "OpCo"
+
+  - IF venture enables other ventures
+    THEN legal_role = "TechCo" or "ManagementCo"
+
+# ==============================================================================
+# PARENT ASSIGNMENT RULES
+# ==============================================================================
+
+parent_assignment:
+
+  - IF legal_role == "OpCo"
+    THEN parent = Sector_HoldCo (within its sector group)
+
+  - IF legal_role == "AssetCo" OR "PropertyCo" OR "IPCo"
+    THEN parent = Asset_Platform
+
+  - IF legal_role == "InvestmentCo" OR "Fund" OR "SPV" OR "JV"
+    THEN parent = Investment_Platform
+
+  - IF legal_role == "ManagementCo"
+    THEN parent = Worldwidebro_Holdings
+
+  - IF legal_role == "TechCo"
+    THEN parent = Technology_Group_HoldCo OR Worldwidebro_Holdings
+
+  - IF legal_role == "HoldCo"
+    THEN parent = Worldwidebro_Holdings

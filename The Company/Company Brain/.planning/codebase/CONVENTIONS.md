@@ -121,7 +121,7 @@ All system entities use a unified ID taxonomy from `_REGISTRIES/ID_REGISTRY.yaml
 
 | Prefix | Scope | Range | Example |
 |--------|-------|-------|---------|
-| **ORG** | Organization/Holding | ORG-000001 to ORG-000999 | ORG-000001 (Worldwidebro Holdings) |
+| **ORG** | Organization/Holding | ORG-000001 to ORG-000999 | ORG-000001 (Worldwidebro Group) |
 | **VEN** | Venture | VEN-000001 to VEN-999999 | VEN-000047 (specific venture) |
 | **REP** | Repository | REP-000001 to REP-999999 | REP-000142 (GitHub repo) |
 | **CAP** | Capability | CAP-000001 to CAP-999999 | CAP-001 (API Design) |

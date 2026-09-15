@@ -57,7 +57,7 @@ Each concept page should include:
 ## PART 2: ENTERPRISE STRUCTURE (8 pages)
 
 16. **[[Enterprise Model]]** — 16-layer architecture overview
-17. **[[Worldwidebro Holdings]]** — Master holding company
+17. **[[Worldwidebro Group]]** — Master holding company
 18. **[[OpCo Structure]]** — How operating companies are organized
 19. **[[Asset HoldCos]]** — Asset ownership layer
 20. **[[Investment Vehicles]]** — Capital deployment mechanisms

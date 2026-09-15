@@ -1,114 +1,80 @@
 ---
-id: DATA-ROOM-CON-001
-title: "CON-001 — ACE Construction & Contracting LLC (Venture Data Room)"
-aliases: ["CON-001", "CON-001/README", "ACE Construction & Contracting LLC Data Room"]
-tags: [data-room, venture, con-001, capital, institutional]
-status: ACTIVE
-authority: "CP-001 / CP-027"
-updated: 2026-09-12
+id: VEN-CON-001
+title: CON-001 — Ace Construction General Contracting
+parent_entity: Worldwidebro Group
+sector: SEC-002 (Construction & Infrastructure)
+legal_role: OpCo (Operating Company)
+status: VALIDATING
+revenue_model: Transactional (labor + materials markup)
+annual_target: $800K
+created: 2026-09-15
+deployment: https://con-001-ace-construction.vercel.app
 ---
 
-[[BUSINESS-CAPITAL-DATA-ROOM/README|DATA-ROOM-MASTER]] | [[STARTHERE]] | [[REALITY]] | [[SECTORS/SEC-002-construction-infrastructure|SECTOR]] | [[repos/con-001-ace-construction/README|CODEBASE]] | [[INDEX]]
+# CON-001: Ace Construction
 
-# CON-001 — ACE Construction & Contracting LLC
-### Sovereign Venture Capital Data Room & Institutional Dossier
+**What It Does:** General contracting for commercial and light industrial projects. Provides labor, project management, and subcontractor coordination. Revenue from project bids (20–35% markup on labor + materials).
 
-> **Industry Classification:** [[SECTORS/SEC-002-construction-infrastructure|SEC-002-construction-infrastructure]]  
-> **Software Repository:** [[repos/con-001-ace-construction/README|repos/con-001-ace-construction]]  
-> **Venture Overview:** [[23-VENTURES/CON-001|CON-001.md]]  
-> **Mission:** Field OS & Decarbonized Infrastructure Contracting
+## Business Model
 
----
+| Metric | Value |
+|--------|-------|
+| **Revenue Type** | Transactional (project bids) |
+| **Pricing Model** | Labor + materials + overhead markup (20–35%) |
+| **Project Types** | Office build-outs, warehouse fit-outs, industrial renovations |
+| **Avg Project Size** | $50K–$500K |
+| **Annual Target** | $800K (4–6 projects @ 25% avg markup) |
+| **Profitability** | 25–35% margin after labor, materials, insurance |
 
-## 1. Capital Packages & Prospectuses
-- **Master Capital Prospectus:** [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/BUSINESS-CAPITAL-PROSPECTUS|BUSINESS-CAPITAL-PROSPECTUS.md]]
-- **Institutional Prospectus:** [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/INSTITUTIONAL-PROSPECTUS|INSTITUTIONAL-PROSPECTUS.md]]
-- **Compiled Master Prospectus:** [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/COMPILED-MASTER-PROSPECTUS|COMPILED-MASTER-PROSPECTUS.md]]
-- **Operational Reality Audit:** [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/OPERATIONAL-REALITY|OPERATIONAL-REALITY.md]]
-- **Capital Readiness Scorecard:** [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/99_INDEX/CAPITAL-READINESS-SCORECARD|CAPITAL-READINESS-SCORECARD.md]]
+## Revenue Loop
 
----
+**Q3 2026:**
+- Marketing flow ready (digital + direct outreach)
+- Target: 6 bids, 1–2 wins
 
-## 2. Venture Core Documentation
+**Q4 2026:**
+- Project execution starts
+- 2–3 concurrent projects
+- Expected revenue: $150K–$250K
 
-| Domain | Document Title | Description | Link |
-|---|---|---|---|
-| **01_IDENTITY** | Executive Summary | Company profile, problem/solution, metrics | [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/01_IDENTITY/EXECUTIVE-SUMMARY\|EXECUTIVE-SUMMARY.md]] |
-| **01_IDENTITY** | Company Profile | Legal entity, operational history, footprint | [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/01_IDENTITY/COMPANY-PROFILE\|COMPANY-PROFILE.md]] |
-| **01_IDENTITY** | Mission, Vision & Values | Core corporate principles and operating ethos | [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/01_IDENTITY/MISSION-VISION-VALUES\|MISSION-VISION-VALUES.md]] |
-| **02_STRATEGY** | Strategy & Target Customer | GTM strategy, ICP, competitive advantage | [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/02_STRATEGY/TARGET-CUSTOMER\|TARGET-CUSTOMER.md]] |
-| **02_STRATEGY** | Business Model | Revenue mechanics, unit economics, scaling | [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/02_STRATEGY/BUSINESS-MODEL\|BUSINESS-MODEL.md]] |
-| **05_FUNDING** | Funding Request | Capital requirements, allocation, ROI model | [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/05_FUNDING/FUNDING-REQUEST\|FUNDING-REQUEST.md]] |
-| **06_MARKET** | TAM / SAM / SOM | Market sizing, growth drivers, demographics | [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/06_MARKET/TAM-SAM-SOM\|TAM-SAM-SOM.md]] |
-| **07_PRODUCT** | Tech Stack & Architecture | Architecture specifications and integrations | [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/07_PRODUCT/TECH-STACK\|TECH-STACK.md]] |
-| **07_PRODUCT** | Security Architecture | SOC 2, encryption, access controls | [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/07_PRODUCT/SECURITY-ARCHITECTURE\|SECURITY-ARCHITECTURE.md]] |
-| **13_GRANTS** | Grant Package | Non-dilutive public funding applications | [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/13_GRANTS/GRANT-PACKAGE\|GRANT-PACKAGE.md]] |
-| **14_LOANS** | Loan Package | Debt schedule, DSCR models, SBA submission | [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/14_LOANS/LOAN-PACKAGE\|LOAN-PACKAGE.md]] |
-| **15_INVESTORS** | Investor Package | Private equity / mezzanine underwriting terms | [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/15_INVESTORS/INVESTOR-PACKAGE\|INVESTOR-PACKAGE.md]] |
-| **22_SYSTEM** | Risk Management | Risk matrix, mitigation protocols, insurance | [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/22_SYSTEM/RISKS\|RISKS.md]] |
-| **22_SYSTEM** | System Decisions | Architecture Decision Records (ADRs) | [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/22_SYSTEM/DECISIONS\|DECISIONS.md]] |
+**Full Year 2027:**
+- 6–8 projects in pipeline
+- Target revenue: $800K+
 
----
+## Current Status (Sep 15, 2026)
 
-## Autonomous Capital & Engineering Tooling
-- **Publication Engine:** [[_TOOLS/GSTACK|GStack (`scripts/make-pdf`)]] compiles this dossier into vector PDF capital packages.
-- **Diligence Search:** [[_TOOLS/GBRAIN|GBrain]] indexes this venture's 22 domains for hybrid semantic retrieval.
-- **Codebase Execution:** [[16-AGENTS/OPENHANDS|OpenHands]] executes and verifies working software in [[repos/con-001-ace-construction/README|repos/con-001-ace-construction]].
-- **Communications:** [[16-AGENTS/HERMES-AGENT|Hermes Agent]] manages partner and outbound outreach.
+✅ Website live (vercel: con-001-ace-construction.vercel.app)  
+✅ Licensing & bonding obtained (general contractor license)  
+✅ Insurance in place ($2M general liability)  
+✅ Bid templates + pricing models ready  
+🟡 Marketing campaign starting (target: 20+ bid opportunities/month)  
+❌ Project management system - needs build (6h, basic CMS integration)
 
----
+## How It Serves Other Ventures
 
-## 3. Complete 22-Domain Document Index
+- **RE-001:** Provides construction bids for development projects
+- **OPS-001:** Sources laborers via staffing
+- **CON-ASSET-01:** Uses equipment fleet (cranes, scaffolding)
 
-- **01_IDENTITY**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/01_IDENTITY/COMPANY-FACT-SHEET|COMPANY-FACT-SHEET]]
-- **01_IDENTITY**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/01_IDENTITY/COMPANY-PROFILE|COMPANY-PROFILE]]
-- **01_IDENTITY**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/01_IDENTITY/EXECUTIVE-SUMMARY|EXECUTIVE-SUMMARY]]
-- **01_IDENTITY**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/01_IDENTITY/MISSION-VISION-VALUES|MISSION-VISION-VALUES]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/02_STRATEGY/BUSINESS-MODEL|BUSINESS-MODEL]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/02_STRATEGY/COMPETITIVE-ADVANTAGE|COMPETITIVE-ADVANTAGE]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/02_STRATEGY/CUSTOMER-PROBLEM|CUSTOMER-PROBLEM]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/02_STRATEGY/DEMAND-EVIDENCE|DEMAND-EVIDENCE]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/02_STRATEGY/GROWTH-STRATEGY|GROWTH-STRATEGY]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/02_STRATEGY/MILESTONES|MILESTONES]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/02_STRATEGY/PROBLEM-STATEMENT|PROBLEM-STATEMENT]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/02_STRATEGY/ROADMAP|ROADMAP]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/02_STRATEGY/STRATEGY|STRATEGY]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/02_STRATEGY/TARGET-CUSTOMER|TARGET-CUSTOMER]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/02_STRATEGY/VALUE-PROPOSITION|VALUE-PROPOSITION]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/02_STRATEGY/VISION|VISION]]
-- **05_FUNDING**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/05_FUNDING/FUNDING-REQUEST|FUNDING-REQUEST]]
-- **06_MARKET**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/06_MARKET/MARKET-ANALYSIS|MARKET-ANALYSIS]]
-- **06_MARKET**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/06_MARKET/TAM-SAM-SOM|TAM-SAM-SOM]]
-- **07_PRODUCT**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/07_PRODUCT/API-DOCUMENTATION|API-DOCUMENTATION]]
-- **07_PRODUCT**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/07_PRODUCT/ARCHITECTURE|ARCHITECTURE]]
-- **07_PRODUCT**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/07_PRODUCT/SECURITY-ARCHITECTURE|SECURITY-ARCHITECTURE]]
-- **07_PRODUCT**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/07_PRODUCT/SYSTEM-DESIGN|SYSTEM-DESIGN]]
-- **07_PRODUCT**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/07_PRODUCT/TECH-STACK|TECH-STACK]]
-- **09_OPERATIONS**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/09_OPERATIONS/SOP/SOP-001|SOP-001]]
-- **09_OPERATIONS**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/09_OPERATIONS/SOP/SOP-002|SOP-002]]
-- **09_OPERATIONS**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/09_OPERATIONS/SOP/SOP-003|SOP-003]]
-- **13_GRANTS**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/13_GRANTS/GRANT-PACKAGE|GRANT-PACKAGE]]
-- **14_LOANS**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/14_LOANS/LOAN-PACKAGE|LOAN-PACKAGE]]
-- **15_INVESTORS**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/15_INVESTORS/INVESTOR-PACKAGE|INVESTOR-PACKAGE]]
-- **20_DATA_ROOM**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/20_DATA_ROOM/INDEX|INDEX]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/22_SYSTEM/AGENTS|AGENTS]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/22_SYSTEM/ARCHITECTURE|ARCHITECTURE]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/22_SYSTEM/ASSUMPTIONS|ASSUMPTIONS]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/22_SYSTEM/CHANGELOG|CHANGELOG]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/22_SYSTEM/CLAUDE|CLAUDE]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/22_SYSTEM/DECISIONS|DECISIONS]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/22_SYSTEM/DECISIONS/ADR-001|ADR-001]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/22_SYSTEM/DECISIONS/ADR-002|ADR-002]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/22_SYSTEM/DECISIONS/ADR-003|ADR-003]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/22_SYSTEM/GLOSSARY|GLOSSARY]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/22_SYSTEM/GOVERNANCE|GOVERNANCE]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/22_SYSTEM/QA/TEST-PLAN|TEST-PLAN]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/22_SYSTEM/README|README]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/22_SYSTEM/RELEASES/RELEASE-NOTES/RELEASE-V1.0|RELEASE-V1.0]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/22_SYSTEM/REVIEWS/CEO-REVIEW/CEO-REVIEW-Q1|CEO-REVIEW-Q1]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/22_SYSTEM/REVIEWS/ENGINEERING-REVIEW/ARCHITECTURE-REVIEW|ARCHITECTURE-REVIEW]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/22_SYSTEM/REVIEWS/SECURITY-REVIEW/THREAT-MODEL|THREAT-MODEL]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/22_SYSTEM/RISKS|RISKS]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/22_SYSTEM/ROADMAP|ROADMAP]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/22_SYSTEM/TODO|TODO]]
-- **99_INDEX**: [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/99_INDEX/CAPITAL-READINESS-SCORECARD|CAPITAL-READINESS-SCORECARD]]
+## Venture Relationships
+
+```
+Worldwidebro Group
+  ↓ Construction & Infrastructure Group
+    ├─ CON-001 (This - general contracting)
+    ├─ RE-001 (Primary customer, provides development projects)
+    ├─ OPS-001 (Labor sourcing for crews)
+    ├─ CON-ASSET-01 (Equipment rental)
+    └─ CON-MGMT (Compliance, permits, insurance)
+```
+
+## Key Metrics
+
+- **Bid Pipeline:** 3–5 opportunities in development
+- **Win Rate Target:** 20–30% (1–2 wins per 5 bids)
+- **Avg Project Margin:** 25–30%
+- **Project Completion Rate:** 100% on-time/on-budget target
+
+**Master Entity:** Worldwidebro Group  
+**Sector:** SEC-002 (Construction & Infrastructure)  
+**Next Review:** 2026-10-01 (first bid results)

@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[20-DECISIONS/README|Decisions Index]] | [[CLAUDE]]
+
 # Make.com MCP Integration — Procedures & Reference
 
 **Last Updated:** Sep 12, 2026  
@@ -171,3 +173,12 @@ mcp__claude_ai_Make__users_me()
 - Verify Role: https://us2.make.com/organization/3051755/settings/members
 
 **Last auth:** Sep 12, 2026, 12:49 PM EST
+
+---
+
+## Connected Systems & Wiki Links
+- **Decisions Index:** [[20-DECISIONS/README|20-DECISIONS/README.md]]
+- **Master Reality Ledger:** [[REALITY|REALITY.md]]
+- **Infrastructure State:** [[CLAUDE|CLAUDE.md]]
+- **Operational Master Contract:** [[ANTIGRAVITY|ANTIGRAVITY.md]]
+- **Start Here:** [[STARTHERE|STARTHERE.md]]

@@ -4,7 +4,7 @@
 
 **Created:** 2026-09-09  
 **Status:** Ready to implement  
-**Scope:** Worldwidebro Holdings + 5-venture pilot  
+**Scope:** Worldwidebro Group + 5-venture pilot  
 
 ---
 
@@ -88,7 +88,7 @@ class OpenClawClient:
         body = {
             "template_id": template_id,
             "parties": [
-                {"name": "Worldwidebro Holdings", "email": "legal@worldwidebro.co"},
+                {"name": "Worldwidebro Group", "email": "legal@worldwidebro.co"},
                 {"name": "Customer", "email": customer_email}
             ],
             "metadata": {

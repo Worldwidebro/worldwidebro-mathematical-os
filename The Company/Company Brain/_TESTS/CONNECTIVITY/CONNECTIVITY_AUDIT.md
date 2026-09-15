@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[CLAUDE]] | [[00-CONSTITUTION/VERIFICATION-GATE-PROTOCOL|Verification Gate]]
+
 # The 500 Connectivity Tests Audit
 
 **Last Run:** 2026-09-12T10:13:38.825073
@@ -517,3 +519,10 @@ This matrix verifies that the entire company conveyor belt is actually connected
 | CONN-498 | Analytics → Product Improvement | Analytics | Product Improvement | ✅ PASS | Validated against Company Brain/Starred Repos |
 | CONN-499 | Product Improvement → New Requirements | Product Improvement | New Requirements | ✅ PASS | Validated against Company Brain/Starred Repos |
 | CONN-500 | New Requirements → Entire conveyor belt repeats | New Requirements | Entire conveyor belt repeats | ✅ PASS | Validated against Company Brain/Starred Repos |
+
+---
+
+## Connected Systems & Wiki Links
+- **Verification Gate Protocol:** [[00-CONSTITUTION/VERIFICATION-GATE-PROTOCOL|VERIFICATION-GATE-PROTOCOL.md]]
+- **Master Truth Ledger:** [[REALITY|REALITY.md]]
+- **Start Here:** [[STARTHERE|STARTHERE.md]]

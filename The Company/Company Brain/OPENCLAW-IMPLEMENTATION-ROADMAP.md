@@ -152,7 +152,7 @@ class OpenClawClient:
             "template_id": template_id,
             "parties": [
                 {
-                    "name": "Worldwidebro Holdings",
+                    "name": "Worldwidebro Group",
                     "email": "legal@worldwidebro.co",
                     "role": "issuer"
                 },

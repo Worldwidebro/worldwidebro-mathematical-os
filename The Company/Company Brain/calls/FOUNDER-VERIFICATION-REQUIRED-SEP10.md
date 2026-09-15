@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[20-DECISIONS/CON-001-SALES-PIPELINE|CON-001 Pipeline]] | [[20-DECISIONS/LT-005-SALES-PIPELINE|LT-005 Pipeline]] | [[20-DECISIONS/OPS-001-SALES-PIPELINE|OPS-001 Pipeline]]
+
 # Phase 3 Call Lists — FOUNDER VERIFICATION REQUIRED (Sep 10 Morning)
 
 **Status:** ✅ 170 prospects researched and compiled (Sep 9, 11 PM)  
@@ -166,3 +168,10 @@ This is NORMAL. Many businesses don't publish hiring manager direct lines. You'l
 
 **This approach honors the ONE RULE: No claim without verification. You verify by phone. Then we activate.**
 
+---
+
+## Connected Systems & Wiki Links
+- **Venture Specs:** [[23-VENTURES/CON-001|CON-001]], [[23-VENTURES/LT-005|LT-005]], [[23-VENTURES/LT-011|LT-011]], [[23-VENTURES/OPS-001|OPS-001]], [[23-VENTURES/RE-001|RE-001]]
+- **Sales Pipelines:** [[20-DECISIONS/CON-001-SALES-PIPELINE|CON-001 Pipeline]], [[20-DECISIONS/LT-005-SALES-PIPELINE|LT-005 Pipeline]], [[20-DECISIONS/OPS-001-SALES-PIPELINE|OPS-001 Pipeline]], [[20-DECISIONS/RE-001-SALES-PIPELINE|RE-001 Pipeline]]
+- **Master Reality Ledger:** [[REALITY|REALITY.md]]
+- **Start Here:** [[STARTHERE|STARTHERE.md]]

@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[CLAUDE]] | [[00-CONSTITUTION/VERIFICATION-GATE-PROTOCOL|Verification Gate]]
+
 # Strict Reality Connectivity Audit
 
 **Last Run:** 2026-09-12T16:41:35.707754
@@ -517,3 +519,10 @@ If a connection cannot be proven via a live API, active Database, or physical ne
 | CONN-498 | Analytics → Product Improvement | ❌ FAIL | [UNWIRED] No physical integration test wired yet |
 | CONN-499 | Product Improvement → New Requirements | ❌ FAIL | [UNWIRED] No physical integration test wired yet |
 | CONN-500 | New Requirements → Entire conveyor belt repeats | ❌ FAIL | [UNWIRED] No physical integration test wired yet |
+
+---
+
+## Connected Systems & Wiki Links
+- **Verification Gate Protocol:** [[00-CONSTITUTION/VERIFICATION-GATE-PROTOCOL|VERIFICATION-GATE-PROTOCOL.md]]
+- **Master Truth Ledger:** [[REALITY|REALITY.md]]
+- **Start Here:** [[STARTHERE|STARTHERE.md]]

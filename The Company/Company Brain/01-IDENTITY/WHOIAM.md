@@ -12,7 +12,7 @@ updated: 2026-09-12
 **I am Antwuan Johns.**
 
 I founded and own:
-- **Worldwidebro Holdings** — Holding company for 789 ventures
+- **Worldwidebro Group** — Holding company for 789 ventures
 - **Winners Circle WC LLC** — Legal entity
 - **Company Brain** — The operating system for all of it
 

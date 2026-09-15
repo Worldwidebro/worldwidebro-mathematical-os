@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[_SYSTEMS/INTEGRATED-SYSTEM-ARCHITECTURE|Integrated Architecture]]
+
 # Phase 2: Repository Intelligence — Ingestion & Normalization
 
 ## Overview

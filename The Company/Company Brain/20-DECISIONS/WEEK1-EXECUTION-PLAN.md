@@ -112,7 +112,7 @@ Test flow:
 - Done condition: 5-slide deck created + tested in browser
 
 Deck structure:
-1. What is Worldwidebro Holdings?
+1. What is Worldwidebro Group?
 2. How we acquire ventures (CON-001 example)
 3. How we generate returns (revenue + appreciation)
 4. Current portfolio (6 ventures)

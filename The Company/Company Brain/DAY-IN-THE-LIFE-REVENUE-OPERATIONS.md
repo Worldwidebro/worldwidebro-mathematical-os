@@ -587,9 +587,9 @@ DECISION GATE:
      ✅ No compliance flags
    
 3. TRANSFER
-   Wire $50K from Worldwidebro Holdings account to OPS-001 venture bank account
+   Wire $50K from Worldwidebro Group account to OPS-001 venture bank account
    
-   Worldwidebro Holdings (Stripe Connect):
+   Worldwidebro Group (Stripe Connect):
      Starting balance: $500,000
      Transfer out: -$50,000
      Ending balance: $450,000

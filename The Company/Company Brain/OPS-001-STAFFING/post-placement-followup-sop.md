@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[23-VENTURES/OPS-001|OPS-001 Spec]] | [[20-DECISIONS/OPS-001-SALES-PIPELINE|OPS-001 Pipeline]] | [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/COMPILED-MASTER-PROSPECTUS|OPS-001 Prospectus]]
+
 # Post-Placement Follow-Up SOP — OPS-001 Staffing
 
 **Purpose:** Ensure placements succeed + measure satisfaction + identify upsell opportunities  
@@ -299,3 +301,11 @@ Task Name: "[Company] — [Candidate Name] — [Role]"
 - Ask: "Still happy with [Candidate]? When do you hire again?"
 - Pitch: retainer model or volume discount for 5+ placements/year
 
+---
+
+## Connected Systems & Wiki Links
+- **Staffing Ops Spec:** [[23-VENTURES/OPS-001|23-VENTURES/OPS-001.md]]
+- **Commercial Sales Pipeline:** [[20-DECISIONS/OPS-001-SALES-PIPELINE|20-DECISIONS/OPS-001-SALES-PIPELINE.md]]
+- **Data Room Prospectus:** [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/COMPILED-MASTER-PROSPECTUS|OPS-001 Master Prospectus]]
+- **Sales Coach CLI:** [[scripts/OPS-001-SALES-COACH]]
+- **Start Here:** [[STARTHERE|STARTHERE.md]]

@@ -22810,7 +22810,7 @@ Nodes (9): beta_program, onboarding_weeks, status, success_criteria, target_flee
 
 ### Community 4148 - "Community 4148"
 Cohesion: 0.20
-Nodes (9): 16-LAYER ENTERPRISE ARCHITECTURE, Connected Systems & Wiki Links, CRITICAL BLOCKERS (What Needs to Happen), CURRENT STATE BY LAYER, NEXT STEPS (Priority Order), THE REVENUE CYCLE (What Should Happen), WHAT'S BUILT vs. WHAT'S MISSING, Worldwidebro Holdings — Complete Private Enterprise Architecture (+1 more)
+Nodes (9): 16-LAYER ENTERPRISE ARCHITECTURE, Connected Systems & Wiki Links, CRITICAL BLOCKERS (What Needs to Happen), CURRENT STATE BY LAYER, NEXT STEPS (Priority Order), THE REVENUE CYCLE (What Should Happen), WHAT'S BUILT vs. WHAT'S MISSING, Worldwidebro Group — Complete Private Enterprise Architecture (+1 more)
 
 ### Community 4149 - "Community 4149"
 Cohesion: 0.22
@@ -27162,7 +27162,7 @@ Nodes (16): 1. `gbrain sync` — automatic .gitignore management, 2. `gbrain exp
 
 ### Community 5605 - "Community 5605"
 Cohesion: 0.29
-Nodes (7): Deployment Status, Deployment Status, ✅ SITE 3: RE-001 (Worldwidebro Holdings), Verification Checklist, Verification Checklist, What's Implemented, What's Implemented
+Nodes (7): Deployment Status, Deployment Status, ✅ SITE 3: RE-001 (Worldwidebro Group), Verification Checklist, Verification Checklist, What's Implemented, What's Implemented
 
 ### Community 5606 - "Community 5606"
 Cohesion: 0.12

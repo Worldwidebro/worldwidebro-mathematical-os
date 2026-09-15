@@ -6,7 +6,7 @@ assignments:
   - date: "2026-09-01"
     type: "ORG"
     ref_id: "ORG-000001"
-    name: "Worldwidebro Holdings"
+    name: "Worldwidebro Group"
     assigned_by: "system"
     status: "active"
 

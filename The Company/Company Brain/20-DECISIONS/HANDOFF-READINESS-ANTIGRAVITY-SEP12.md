@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[20-DECISIONS/README|Decisions Index]] | [[CLAUDE]]
+
 # Handoff Readiness Audit — ANTIGRAVITY Compliance (Sep 12, 2026)
 
 **Authority:** ANTIGRAVITY.md (45-rule Master Contract) + CP-027 (Infrastructure) + CP-033 (Execution)  
@@ -387,3 +389,12 @@ CONSTRAINTS:
 **Date:** 2026-09-12T18:00:00Z  
 **Authority:** CP-027 (Infrastructure), ANTIGRAVITY.md (Master Contract)  
 **Next Review:** 2026-09-13 (after first LT-005 execution)
+
+---
+
+## Connected Systems & Wiki Links
+- **Decisions Index:** [[20-DECISIONS/README|20-DECISIONS/README.md]]
+- **Master Reality Ledger:** [[REALITY|REALITY.md]]
+- **Infrastructure State:** [[CLAUDE|CLAUDE.md]]
+- **Operational Master Contract:** [[ANTIGRAVITY|ANTIGRAVITY.md]]
+- **Start Here:** [[STARTHERE|STARTHERE.md]]

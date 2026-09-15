@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[20-DECISIONS/README|Decisions Index]] | [[CLAUDE]]
+
 # Full Integration Audit — Sep 12, 2026
 **All Systems Status Check: Make, Supabase, GitHub, Obsidian, Vapi, Neo4j, Qdrant**
 
@@ -261,3 +263,12 @@ cat ~/.fractal/ventures/wiki/.obsidian/graph.json | jq '.nodes | length'
 4. **Full Test Suite:** Want me to build integration tests to prevent future issues?
 
 **Recommendation:** Fix Make + Vapi today (45 min), launch LT-005 by end of day.
+
+---
+
+## Connected Systems & Wiki Links
+- **Decisions Index:** [[20-DECISIONS/README|20-DECISIONS/README.md]]
+- **Master Reality Ledger:** [[REALITY|REALITY.md]]
+- **Infrastructure State:** [[CLAUDE|CLAUDE.md]]
+- **Operational Master Contract:** [[ANTIGRAVITY|ANTIGRAVITY.md]]
+- **Start Here:** [[STARTHERE|STARTHERE.md]]

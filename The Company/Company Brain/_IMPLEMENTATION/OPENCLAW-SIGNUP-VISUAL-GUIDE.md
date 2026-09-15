@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[_IMPLEMENTATION/EXECUTION-SUMMARY|Execution Summary]]
+
 # OpenClaw SaaS Signup - Visual Step-by-Step Guide
 
 **Timeline:** 10 minutes  
@@ -29,7 +31,7 @@
 ```
 Email:        winnerscirclewcllc@gmail.com
 Password:     [Create a strong password, 12+ chars, mix upper/lower/numbers]
-Organization: Worldwidebro Holdings
+Organization: Worldwidebro Group
 Full Name:    [Your name]
 ```
 

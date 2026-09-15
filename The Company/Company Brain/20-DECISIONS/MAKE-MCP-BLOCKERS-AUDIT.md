@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[20-DECISIONS/README|Decisions Index]] | [[CLAUDE]]
+
 # Make MCP Blockers Audit — Sep 12, 2026
 
 **Status:** 🔴 **BLOCKED** — Admin permission issue preventing scenario creation  
@@ -189,3 +191,12 @@ Build LT-005 scenario manually in Make UI (BrowserOS Neo):
 1. **Are you an Owner/Admin** in your Make workspace?
 2. **Do you want me to fix this now**, or handle LT-005 via manual UI?
 3. **Should I create a Make MCP test suite** to prevent future auth issues?
+
+---
+
+## Connected Systems & Wiki Links
+- **Decisions Index:** [[20-DECISIONS/README|20-DECISIONS/README.md]]
+- **Master Reality Ledger:** [[REALITY|REALITY.md]]
+- **Infrastructure State:** [[CLAUDE|CLAUDE.md]]
+- **Operational Master Contract:** [[ANTIGRAVITY|ANTIGRAVITY.md]]
+- **Start Here:** [[STARTHERE|STARTHERE.md]]

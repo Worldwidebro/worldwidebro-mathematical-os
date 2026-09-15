@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[_PIPELINES/ingestion/README|Ingestion Pipeline]]
+
 # Phase 2 Completion Report
 ## Repository Intelligence — Ingestion & Normalization
 

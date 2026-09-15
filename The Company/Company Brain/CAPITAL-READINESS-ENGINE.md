@@ -16,7 +16,7 @@
 
 ## CONTEXT: 5-VENTURE PILOT WITHIN 789-VENTURE HOLDING COMPANY
 
-These 5 ventures (CON-001, LT-005, LT-011, OPS-001, RE-001) are the **Tier-1 execution pilot** for [[WORLDWIDEBRO-HOLDINGS-MASTER-OPERATING-MANUAL|Worldwidebro Holdings]].
+These 5 ventures (CON-001, LT-005, LT-011, OPS-001, RE-001) are the **Tier-1 execution pilot** for [[WORLDWIDEBRO-HOLDINGS-MASTER-OPERATING-MANUAL|Worldwidebro Group]].
 
 **Model Progression:**
 - **Now (Sep 2026):** Execute 5-venture pilot, prove 4-layer capital cascade

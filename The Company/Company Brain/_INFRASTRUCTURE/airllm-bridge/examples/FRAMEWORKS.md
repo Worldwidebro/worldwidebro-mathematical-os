@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[_INFRASTRUCTURE/airllm-bridge/README|AirLLM Bridge]]
+
 # Framework → OmniRoute wiring cheat sheet
 #
 # Always set:

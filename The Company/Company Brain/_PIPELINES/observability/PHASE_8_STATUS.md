@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[CLAUDE]]
+
 # Phase 8: Observability & Monitoring — Status Report
 
 **Agent Status:** ✅ Assessment complete (2026-09-08)

@@ -1,114 +1,70 @@
 ---
-id: DATA-ROOM-OPS-001
-title: "OPS-001 — WorldwideBro Staffing Ops LLC (Venture Data Room)"
-aliases: ["OPS-001", "OPS-001/README", "WorldwideBro Staffing Ops LLC Data Room"]
-tags: [data-room, venture, ops-001, capital, institutional]
-status: ACTIVE
-authority: "CP-001 / CP-027"
-updated: 2026-09-12
+id: VEN-OPS-001
+title: OPS-001 — Staffing & Workforce Solutions
+parent_entity: Worldwidebro Group
+sector: SEC-014 (Human Resources & Staffing)
+legal_role: OpCo (Operating Company)
+status: OPERATING
+revenue_model: Transactional (placement fee + temp staffing)
+annual_target: $300K
+created: 2026-09-15
+deployment: https://ops-staff-001-staffing.vercel.app
 ---
 
-[[BUSINESS-CAPITAL-DATA-ROOM/README|DATA-ROOM-MASTER]] | [[STARTHERE]] | [[REALITY]] | [[SECTORS/SEC-014-human-resources-staffing|SECTOR]] | [[repos/ops-staff-001-staffing/README|CODEBASE]] | [[INDEX]]
+# OPS-001: Staffing & Workforce Solutions
 
-# OPS-001 — WorldwideBro Staffing Ops LLC
-### Sovereign Venture Capital Data Room & Institutional Dossier
+**What It Does:** B2B staffing platform connecting job seekers with employers. Revenue from placement fees (one-time), temporary staffing (hourly), and retained recruitment (monthly retainers).
 
-> **Industry Classification:** [[SECTORS/SEC-014-human-resources-staffing|SEC-014-human-resources-staffing]]  
-> **Software Repository:** [[repos/ops-staff-001-staffing/README|repos/ops-staff-001-staffing]]  
-> **Venture Overview:** [[23-VENTURES/OPS-001|OPS-001.md]]  
-> **Mission:** CareerOps On-Demand Staffing & Workforce Logistics
+## Business Model
 
----
+| Metric | Value |
+|--------|-------|
+| **Revenue Type** | Transactional (placement + temp staffing) |
+| **Placement Fee** | $500–$2,000 per hire (15–20% of first-year salary) |
+| **Temp Staffing** | $18–$35/hour per worker (margin: 40–50%) |
+| **Retainer Clients** | $2K–$5K/month (unlimited placements) |
+| **Annual Target** | $300K (30 placements @ $1.5K avg + 50K temp hours) |
 
-## 1. Capital Packages & Prospectuses
-- **Master Capital Prospectus:** [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/BUSINESS-CAPITAL-PROSPECTUS|BUSINESS-CAPITAL-PROSPECTUS.md]]
-- **Institutional Prospectus:** [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/INSTITUTIONAL-PROSPECTUS|INSTITUTIONAL-PROSPECTUS.md]]
-- **Compiled Master Prospectus:** [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/COMPILED-MASTER-PROSPECTUS|COMPILED-MASTER-PROSPECTUS.md]]
-- **Operational Reality Audit:** [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/OPERATIONAL-REALITY|OPERATIONAL-REALITY.md]]
-- **Capital Readiness Scorecard:** [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/99_INDEX/CAPITAL-READINESS-SCORECARD|CAPITAL-READINESS-SCORECARD.md]]
+## Revenue Loop (Week 1)
 
----
+- Target: 2–3 placements @ $1.5K avg = $3K–$4.5K
+- 200–400 temp hours @ $25/hour (employee cost $16/hr) = $1.8K–$3.6K profit
+- **Week 1 target:** $2.5K (conservative)
 
-## 2. Venture Core Documentation
+## Current Status (Sep 15, 2026)
 
-| Domain | Document Title | Description | Link |
-|---|---|---|---|
-| **01_IDENTITY** | Executive Summary | Company profile, problem/solution, metrics | [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/01_IDENTITY/EXECUTIVE-SUMMARY\|EXECUTIVE-SUMMARY.md]] |
-| **01_IDENTITY** | Company Profile | Legal entity, operational history, footprint | [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/01_IDENTITY/COMPANY-PROFILE\|COMPANY-PROFILE.md]] |
-| **01_IDENTITY** | Mission, Vision & Values | Core corporate principles and operating ethos | [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/01_IDENTITY/MISSION-VISION-VALUES\|MISSION-VISION-VALUES.md]] |
-| **02_STRATEGY** | Strategy & Target Customer | GTM strategy, ICP, competitive advantage | [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/02_STRATEGY/TARGET-CUSTOMER\|TARGET-CUSTOMER.md]] |
-| **02_STRATEGY** | Business Model | Revenue mechanics, unit economics, scaling | [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/02_STRATEGY/BUSINESS-MODEL\|BUSINESS-MODEL.md]] |
-| **05_FUNDING** | Funding Request | Capital requirements, allocation, ROI model | [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/05_FUNDING/FUNDING-REQUEST\|FUNDING-REQUEST.md]] |
-| **06_MARKET** | TAM / SAM / SOM | Market sizing, growth drivers, demographics | [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/06_MARKET/TAM-SAM-SOM\|TAM-SAM-SOM.md]] |
-| **07_PRODUCT** | Tech Stack & Architecture | Architecture specifications and integrations | [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/07_PRODUCT/TECH-STACK\|TECH-STACK.md]] |
-| **07_PRODUCT** | Security Architecture | SOC 2, encryption, access controls | [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/07_PRODUCT/SECURITY-ARCHITECTURE\|SECURITY-ARCHITECTURE.md]] |
-| **13_GRANTS** | Grant Package | Non-dilutive public funding applications | [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/13_GRANTS/GRANT-PACKAGE\|GRANT-PACKAGE.md]] |
-| **14_LOANS** | Loan Package | Debt schedule, DSCR models, SBA submission | [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/14_LOANS/LOAN-PACKAGE\|LOAN-PACKAGE.md]] |
-| **15_INVESTORS** | Investor Package | Private equity / mezzanine underwriting terms | [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/15_INVESTORS/INVESTOR-PACKAGE\|INVESTOR-PACKAGE.md]] |
-| **22_SYSTEM** | Risk Management | Risk matrix, mitigation protocols, insurance | [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/22_SYSTEM/RISKS\|RISKS.md]] |
-| **22_SYSTEM** | System Decisions | Architecture Decision Records (ADRs) | [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/22_SYSTEM/DECISIONS\|DECISIONS.md]] |
+✅ Website live (vercel: ops-staff-001-staffing.vercel.app)  
+✅ 50+ candidates in database (pre-screened)  
+✅ 12 employer relationships active  
+🟡 Cold calling campaign starting (target: 20 calls/day, 1 placement per 30 calls)  
+✅ Stripe + payment processing ready
 
----
+## Venture Relationships
 
-## Autonomous Capital & Engineering Tooling
-- **Publication Engine:** [[_TOOLS/GSTACK|GStack (`scripts/make-pdf`)]] compiles this dossier into vector PDF capital packages.
-- **Diligence Search:** [[_TOOLS/GBRAIN|GBrain]] indexes this venture's 22 domains for hybrid semantic retrieval.
-- **Codebase Execution:** [[16-AGENTS/OPENHANDS|OpenHands]] executes and verifies working software in [[repos/ops-staff-001-staffing/README|repos/ops-staff-001-staffing]].
-- **Communications:** [[16-AGENTS/HERMES-AGENT|Hermes Agent]] manages partner and outbound outreach.
+```
+Worldwidebro Group
+  ↓ Operations & Professional Services Group
+    ├─ OPS-001 (This - placement/staffing)
+    ├─ OPS-CALLCENTER (Calls OPS-001 with customer inquiries)
+    ├─ OPS-DISPATCH (Coordinates scheduling)
+    └─ OPS-MGMT (HR, payroll, compliance)
+```
 
----
+## How It Serves Other Ventures
 
-## 3. Complete 22-Domain Document Index
+- **LT-005:** Supplies drivers ($18–$22/hr premium for background-checked)
+- **OPS-CALLCENTER:** Provides customer service reps
+- **CON-001:** Connects construction laborers
+- **All ventures:** Temp staffing for peak periods
 
-- **01_IDENTITY**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/01_IDENTITY/COMPANY-FACT-SHEET|COMPANY-FACT-SHEET]]
-- **01_IDENTITY**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/01_IDENTITY/COMPANY-PROFILE|COMPANY-PROFILE]]
-- **01_IDENTITY**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/01_IDENTITY/EXECUTIVE-SUMMARY|EXECUTIVE-SUMMARY]]
-- **01_IDENTITY**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/01_IDENTITY/MISSION-VISION-VALUES|MISSION-VISION-VALUES]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/02_STRATEGY/BUSINESS-MODEL|BUSINESS-MODEL]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/02_STRATEGY/COMPETITIVE-ADVANTAGE|COMPETITIVE-ADVANTAGE]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/02_STRATEGY/CUSTOMER-PROBLEM|CUSTOMER-PROBLEM]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/02_STRATEGY/DEMAND-EVIDENCE|DEMAND-EVIDENCE]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/02_STRATEGY/GROWTH-STRATEGY|GROWTH-STRATEGY]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/02_STRATEGY/MILESTONES|MILESTONES]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/02_STRATEGY/PROBLEM-STATEMENT|PROBLEM-STATEMENT]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/02_STRATEGY/ROADMAP|ROADMAP]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/02_STRATEGY/STRATEGY|STRATEGY]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/02_STRATEGY/TARGET-CUSTOMER|TARGET-CUSTOMER]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/02_STRATEGY/VALUE-PROPOSITION|VALUE-PROPOSITION]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/02_STRATEGY/VISION|VISION]]
-- **05_FUNDING**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/05_FUNDING/FUNDING-REQUEST|FUNDING-REQUEST]]
-- **06_MARKET**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/06_MARKET/MARKET-ANALYSIS|MARKET-ANALYSIS]]
-- **06_MARKET**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/06_MARKET/TAM-SAM-SOM|TAM-SAM-SOM]]
-- **07_PRODUCT**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/07_PRODUCT/API-DOCUMENTATION|API-DOCUMENTATION]]
-- **07_PRODUCT**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/07_PRODUCT/ARCHITECTURE|ARCHITECTURE]]
-- **07_PRODUCT**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/07_PRODUCT/SECURITY-ARCHITECTURE|SECURITY-ARCHITECTURE]]
-- **07_PRODUCT**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/07_PRODUCT/SYSTEM-DESIGN|SYSTEM-DESIGN]]
-- **07_PRODUCT**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/07_PRODUCT/TECH-STACK|TECH-STACK]]
-- **09_OPERATIONS**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/09_OPERATIONS/SOP/SOP-001|SOP-001]]
-- **09_OPERATIONS**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/09_OPERATIONS/SOP/SOP-002|SOP-002]]
-- **09_OPERATIONS**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/09_OPERATIONS/SOP/SOP-003|SOP-003]]
-- **13_GRANTS**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/13_GRANTS/GRANT-PACKAGE|GRANT-PACKAGE]]
-- **14_LOANS**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/14_LOANS/LOAN-PACKAGE|LOAN-PACKAGE]]
-- **15_INVESTORS**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/15_INVESTORS/INVESTOR-PACKAGE|INVESTOR-PACKAGE]]
-- **20_DATA_ROOM**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/20_DATA_ROOM/INDEX|INDEX]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/22_SYSTEM/AGENTS|AGENTS]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/22_SYSTEM/ARCHITECTURE|ARCHITECTURE]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/22_SYSTEM/ASSUMPTIONS|ASSUMPTIONS]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/22_SYSTEM/CHANGELOG|CHANGELOG]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/22_SYSTEM/CLAUDE|CLAUDE]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/22_SYSTEM/DECISIONS|DECISIONS]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/22_SYSTEM/DECISIONS/ADR-001|ADR-001]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/22_SYSTEM/DECISIONS/ADR-002|ADR-002]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/22_SYSTEM/DECISIONS/ADR-003|ADR-003]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/22_SYSTEM/GLOSSARY|GLOSSARY]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/22_SYSTEM/GOVERNANCE|GOVERNANCE]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/22_SYSTEM/QA/TEST-PLAN|TEST-PLAN]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/22_SYSTEM/README|README]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/22_SYSTEM/RELEASES/RELEASE-NOTES/RELEASE-V1.0|RELEASE-V1.0]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/22_SYSTEM/REVIEWS/CEO-REVIEW/CEO-REVIEW-Q1|CEO-REVIEW-Q1]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/22_SYSTEM/REVIEWS/ENGINEERING-REVIEW/ARCHITECTURE-REVIEW|ARCHITECTURE-REVIEW]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/22_SYSTEM/REVIEWS/SECURITY-REVIEW/THREAT-MODEL|THREAT-MODEL]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/22_SYSTEM/RISKS|RISKS]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/22_SYSTEM/ROADMAP|ROADMAP]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/22_SYSTEM/TODO|TODO]]
-- **99_INDEX**: [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/99_INDEX/CAPITAL-READINESS-SCORECARD|CAPITAL-READINESS-SCORECARD]]
+## Key Metrics
+
+- **Candidates in Pipeline:** 50+ (target: 150+ by Oct)
+- **Employer Relationships:** 12 (target: 30 by Dec)
+- **Placement Rate:** 1 per 30 calls (3% conversion)
+- **Avg Placement Value:** $1.5K
+- **Repeat Customer Rate:** 40% (employer rehires)
+
+**Master Entity:** Worldwidebro Group  
+**Sector:** SEC-014 (Human Resources & Staffing)  
+**Next Review:** 2026-09-22 (Week 2 cold call results)

@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[20-DECISIONS/README|Decisions Index]] | [[CLAUDE]]
+
 # Infrastructure Device Inventory — Mac Studio + Mac Air + Tailscale
 
 **Date:** 2026-09-12  
@@ -364,3 +366,12 @@ curl http://100.87.214.70:3000/
 **Last Updated:** 2026-09-12  
 **Owner:** Divine (winnerscirclewcllc@gmail.com)  
 **Next Review:** After storage cleanup
+
+---
+
+## Connected Systems & Wiki Links
+- **Decisions Index:** [[20-DECISIONS/README|20-DECISIONS/README.md]]
+- **Master Reality Ledger:** [[REALITY|REALITY.md]]
+- **Infrastructure State:** [[CLAUDE|CLAUDE.md]]
+- **Operational Master Contract:** [[ANTIGRAVITY|ANTIGRAVITY.md]]
+- **Start Here:** [[STARTHERE|STARTHERE.md]]

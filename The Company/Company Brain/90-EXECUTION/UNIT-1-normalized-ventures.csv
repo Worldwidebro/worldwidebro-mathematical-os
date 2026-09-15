@@ -1,0 +1,790 @@
+ID,Name,Original_Sector,Canonical_Sector,Original_Stage,Canonical_Stage,GitHub_URL
+null,Genixbank Lite,Financial,Financial Services,planned,planned,https://github.com/Worldwidebro/fin-001-genixbank-lite
+null,Credit Repair Automation,Financial,Financial Services,planned,planned,https://github.com/Worldwidebro/fin-002-credit-repair-automation
+null,Ai Boss Hub Lite,Financial,Financial Services,planned,planned,https://github.com/Worldwidebro/fin-003-ai-boss-hub-lite
+null,Genixbanks Ai Treasurer,Financial,Financial Services,planned,planned,https://github.com/Worldwidebro/fin-004-genixbanks-ai-treasurer
+null,U Haul Rental Affiliate,Financial,Financial Services,planned,planned,https://github.com/Worldwidebro/fin-005-u-haul-rental-affiliate
+null,Tax Prep Filing Services,Financial,Financial Services,planned,planned,https://github.com/Worldwidebro/fin-006-tax-prep-filing-services
+null,Business Credit Building,Financial,Financial Services,planned,planned,https://github.com/Worldwidebro/fin-007-business-credit-building
+null,Business Formation Services,Financial,Financial Services,planned,planned,https://github.com/Worldwidebro/fin-008-business-formation-services
+null,Crypto Tax Optimizer,Financial,Financial Services,planned,planned,https://github.com/Worldwidebro/fin-009-crypto-tax-optimizer
+null,Ai Powered Garbage Collection,Financial,Financial Services,planned,planned,https://github.com/Worldwidebro/fin-010-ai-powered-garbage-collection
+null,Automated Bookkeeping,Financial,Financial Services,planned,planned,https://github.com/Worldwidebro/fin-011-automated-bookkeeping
+null,Invoice Factoring Ai,Financial,Financial Services,planned,planned,https://github.com/Worldwidebro/fin-012-invoice-factoring-ai
+null,Charity Donation Ai,Financial,Financial Services,planned,planned,https://github.com/Worldwidebro/fin-013-charity-donation-ai
+null,Expense Tracker Ai,Financial,Financial Services,planned,planned,https://github.com/Worldwidebro/fin-014-expense-tracker-ai
+null,Financial Wellness Coach,Financial,Financial Services,planned,planned,https://github.com/Worldwidebro/fin-015-financial-wellness-coach
+null,Trade Finance Ai,Financial,Financial Services,planned,planned,https://github.com/Worldwidebro/fin-016-trade-finance-ai
+null,Remittance Ai,Financial,Financial Services,planned,planned,https://github.com/Worldwidebro/fin-017-remittance-ai
+null,Wealth Transfer Ai,Financial,Financial Services,planned,planned,https://github.com/Worldwidebro/fin-018-wealth-transfer-ai
+null,Payment Gateway Ai,Financial,Financial Services,planned,planned,https://github.com/Worldwidebro/fin-019-payment-gateway-ai
+null,Debt Consolidation Ai,Financial,Financial Services,planned,planned,https://github.com/Worldwidebro/fin-020-debt-consolidation-ai
+null,Tax Deduction Finder,Financial,Financial Services,planned,planned,https://github.com/Worldwidebro/fin-021-tax-deduction-finder
+null,Budget Forecasting Ai,Financial,Financial Services,planned,planned,https://github.com/Worldwidebro/fin-022-budget-forecasting-ai
+null,Investment Portfolio Ai,Financial,Financial Services,planned,planned,https://github.com/Worldwidebro/fin-023-investment-portfolio-ai
+null,Crowdfunding Ai,Financial,Financial Services,planned,planned,https://github.com/Worldwidebro/fin-024-crowdfunding-ai
+null,Escrow Automation,Financial,Financial Services,planned,planned,https://github.com/Worldwidebro/fin-025-escrow-automation
+null,Financial Compliance Scanner,Financial,Financial Services,planned,planned,https://github.com/Worldwidebro/fin-026-financial-compliance-scanner
+null,Patent Writer Ai,Financial,Financial Services,planned,planned,https://github.com/Worldwidebro/fin-027-patent-writer-ai
+null,Legal Analyzer Ai,Financial,Financial Services,planned,planned,https://github.com/Worldwidebro/fin-028-legal-analyzer-ai
+null,Compliance Wallet Saas,Financial,Financial Services,planned,planned,https://github.com/Worldwidebro/fin-029-compliance-wallet-saas
+null,Local Seo Ranker Ai,Financial,Financial Services,planned,planned,https://github.com/Worldwidebro/fin-030-local-seo-ranker-ai
+null,Investor Dashboard Builder,Financial,Financial Services,planned,planned,https://github.com/Worldwidebro/fin-031-investor-dashboard-builder
+null,Legal Toolkit Ai,Financial,Financial Services,planned,planned,https://github.com/Worldwidebro/fin-032-legal-toolkit-ai
+null,Ai Tax Preparation Service,Financial,Financial Services,planned,planned,https://github.com/Worldwidebro/fin-033-ai-tax-preparation-service
+null,Payroll Automation,Financial,Financial Services,planned,planned,https://github.com/Worldwidebro/fin-034-payroll-automation
+null,Insurance Underwriting Ai,Financial,Financial Services,planned,planned,https://github.com/Worldwidebro/fin-035-insurance-underwriting-ai
+null,Arbitrage Nexus Platform,Financial,Financial Services,growth,growth,https://github.com/Worldwidebro/fin-036-arbitrage-nexus-platform
+null,Lash Extension Studio,Beauty Wellness,Beauty & Wellness,validation,validation,https://github.com/Worldwidebro/bw-001-lash-extension-studio
+null,Mobile Lash Service,Beauty Wellness,Beauty & Wellness,mvp,mvp,https://github.com/Worldwidebro/bw-002-mobile-lash-service
+null,Luxury Lash Bar,Beauty Wellness,Beauty & Wellness,validation,validation,https://github.com/Worldwidebro/bw-003-luxury-lash-bar
+null,Lash Training Academy,Beauty Wellness,Beauty & Wellness,validation,validation,https://github.com/Worldwidebro/bw-004-lash-training-academy
+null,Lash Supply Company,Beauty Wellness,Beauty & Wellness,mvp,mvp,https://github.com/Worldwidebro/bw-005-lash-supply-company
+null,Lash Glue Brand,Beauty Wellness,Beauty & Wellness,validation,validation,https://github.com/Worldwidebro/bw-006-lash-glue-brand
+null,Lash Kits & Tools,Beauty Wellness,Beauty & Wellness,mvp,mvp,https://github.com/zquestz/s
+null,Private Label Lashes,Beauty Wellness,Beauty & Wellness,planned,planned,https://github.com/Worldwidebro/bw-008-private-label-lashes
+null,Franchise Lash Salons,Beauty Wellness,Beauty & Wellness,planned,planned,https://github.com/Worldwidebro/bw-009-franchise-lash-salons
+null,Online Lash Education,Beauty Wellness,Beauty & Wellness,mvp,mvp,https://github.com/Worldwidebro/bw-010-online-lash-education
+null,Nail Salon,Beauty Wellness,Beauty & Wellness,validation,validation,https://github.com/Worldwidebro/bw-011-nail-salon
+null,Mobile Nail Tech,Beauty Wellness,Beauty & Wellness,mvp,mvp,https://github.com/Worldwidebro/bw-012-mobile-nail-tech
+null,Luxury Nail Spa,Beauty Wellness,Beauty & Wellness,validation,validation,https://github.com/Worldwidebro/bw-013-luxury-nail-spa
+null,Press On Nail Brand,Beauty Wellness,Beauty & Wellness,mvp,mvp,https://github.com/Worldwidebro/bw-014-press-on-nail-brand
+null,Nail Art Studio,Beauty Wellness,Beauty & Wellness,validation,validation,https://github.com/Worldwidebro/bw-015-nail-art-studio
+null,Nail Polish Brand,Beauty Wellness,Beauty & Wellness,mvp,mvp,https://github.com/Worldwidebro/bw-016-nail-polish-brand
+null,Nail Care Products,Beauty Wellness,Beauty & Wellness,mvp,mvp,https://github.com/Worldwidebro/bw-017-nail-care-products
+null,Nail Booking Marketplace,Beauty Wellness,Beauty & Wellness,planned,planned,https://github.com/Worldwidebro/bw-018-nail-booking-marketplace
+null,Salon Management Software,Beauty Wellness,Beauty & Wellness,planned,planned,https://github.com/Worldwidebro/bw-019-salon-management-software
+null,Ai Nail Design Generator,Beauty Wellness,Beauty & Wellness,planned,planned,https://github.com/Worldwidebro/bw-020-ai-nail-design-generator
+null,Hair Salon,Beauty Wellness,Beauty & Wellness,validation,validation,https://github.com/Worldwidebro/bw-021-hair-salon
+null,Barbershop,Beauty Wellness,Beauty & Wellness,validation,validation,https://github.com/Worldwidebro/bw-022-barbershop
+null,Mobile Hairstyling,Beauty Wellness,Beauty & Wellness,mvp,mvp,https://github.com/Worldwidebro/bw-023-mobile-hairstyling
+null,Hair Braiding Studio,Beauty Wellness,Beauty & Wellness,validation,validation,https://github.com/Worldwidebro/bw-024-hair-braiding-studio
+null,Wig Installation Studio,Beauty Wellness,Beauty & Wellness,validation,validation,https://github.com/Worldwidebro/bw-025-wig-installation-studio
+null,Hair Extension Salon,Beauty Wellness,Beauty & Wellness,validation,validation,https://github.com/Worldwidebro/bw-026-hair-extension-salon
+null,Hair Care Line,Beauty Wellness,Beauty & Wellness,mvp,mvp,https://github.com/Worldwidebro/bw-027-hair-care-line
+null,Wig Brand,Beauty Wellness,Beauty & Wellness,mvp,mvp,https://github.com/Worldwidebro/bw-028-wig-brand
+null,Hair Extensions Brand,Beauty Wellness,Beauty & Wellness,mvp,mvp,https://github.com/Worldwidebro/bw-029-hair-extensions-brand
+null,Scalp Treatment Products,Beauty Wellness,Beauty & Wellness,validation,validation,https://github.com/Worldwidebro/bw-030-scalp-treatment-products
+null,Hair Marketplace,Beauty Wellness,Beauty & Wellness,planned,planned,https://github.com/Worldwidebro/bw-031-hair-marketplace
+null,Stylist Booking Platform,Beauty Wellness,Beauty & Wellness,planned,planned,https://github.com/Worldwidebro/bw-032-stylist-booking-platform
+null,Ai Hairstyle Simulator,Beauty Wellness,Beauty & Wellness,planned,planned,https://github.com/Worldwidebro/bw-033-ai-hairstyle-simulator
+null,Salon Franchise Chain,Beauty Wellness,Beauty & Wellness,planned,planned,https://github.com/Worldwidebro/bw-034-salon-franchise-chain
+null,Makeup Studio,Beauty Wellness,Beauty & Wellness,validation,validation,https://github.com/Worldwidebro/bw-035-makeup-studio
+null,Bridal Makeup Service,Beauty Wellness,Beauty & Wellness,mvp,mvp,https://github.com/Worldwidebro/bw-036-bridal-makeup-service
+null,Mobile Makeup Artist,Beauty Wellness,Beauty & Wellness,mvp,mvp,https://github.com/Worldwidebro/bw-037-mobile-makeup-artist
+null,Photoshoot Makeup Team,Beauty Wellness,Beauty & Wellness,validation,validation,https://github.com/Worldwidebro/bw-038-photoshoot-makeup-team
+null,Cosmetics Brand,Beauty Wellness,Beauty & Wellness,mvp,mvp,https://github.com/Worldwidebro/bw-039-cosmetics-brand
+null,Beauty Tools Brand,Beauty Wellness,Beauty & Wellness,mvp,mvp,https://github.com/Worldwidebro/bw-040-beauty-tools-brand
+null,Personal Chef Service,Hospitality,Hospitality & Food,mvp,mvp,https://github.com/Worldwidebro/fh-001-personal-chef-service
+null,Meal Prep Delivery,Hospitality,Hospitality & Food,mvp,mvp,https://github.com/Worldwidebro/fh-002-meal-prep-delivery
+null,Private Dinner Experiences,Hospitality,Hospitality & Food,validation,validation,https://github.com/Worldwidebro/fh-003-private-dinner-experiences
+null,Catering Company,Hospitality,Hospitality & Food,validation,validation,https://github.com/Worldwidebro/fh-004-catering-company
+null,Corporate Lunch Service,Hospitality,Hospitality & Food,mvp,mvp,https://github.com/Worldwidebro/fh-005-corporate-lunch-service
+null,Healthy Meal Prep For Gyms,Hospitality,Hospitality & Food,mvp,mvp,https://github.com/Worldwidebro/fh-006-healthy-meal-prep-for-gyms
+null,Elderly Meal Service,Hospitality,Hospitality & Food,validation,validation,https://github.com/Worldwidebro/fh-007-elderly-meal-service
+null,Athlete Nutrition Service,Hospitality,Hospitality & Food,mvp,mvp,https://github.com/Worldwidebro/fh-008-athlete-nutrition-service
+null,Packaged Food Brand,Hospitality,Hospitality & Food,validation,validation,https://github.com/Worldwidebro/fh-009-packaged-food-brand
+null,Frozen Meals Company,Hospitality,Hospitality & Food,validation,validation,https://github.com/Worldwidebro/fh-010-frozen-meals-company
+null,Sauce Or Seasoning Brand,Hospitality,Hospitality & Food,mvp,mvp,https://github.com/Worldwidebro/fh-011-sauce-or-seasoning-brand
+null,Protein Snacks Brand,Hospitality,Hospitality & Food,mvp,mvp,https://github.com/Worldwidebro/fh-012-protein-snacks-brand
+null,Meal Kit Company,Hospitality,Hospitality & Food,validation,validation,https://github.com/Worldwidebro/fh-013-meal-kit-company
+null,Cloud Kitchen ,Hospitality,Hospitality & Food,planned,planned,https://github.com/Worldwidebro/fh-014-cloud-kitchen-
+null,Ai Nutrition Planner,Hospitality,Hospitality & Food,planned,planned,https://github.com/Worldwidebro/fh-015-ai-nutrition-planner
+null,Recipe App,Hospitality,Hospitality & Food,mvp,mvp,https://github.com/Worldwidebro/fh-016-recipe-app
+null,Cooking Content Brand,Hospitality,Hospitality & Food,mvp,mvp,https://github.com/Worldwidebro/fh-017-cooking-content-brand
+null,Food Influencer Brand,Hospitality,Hospitality & Food,mvp,mvp,https://github.com/Worldwidebro/fh-018-food-influencer-brand
+null,Cooking Course Platform,Hospitality,Hospitality & Food,mvp,mvp,https://github.com/Worldwidebro/fh-019-cooking-course-platform
+null,Restaurant Pos System,Hospitality,Hospitality & Food,planned,planned,https://github.com/Worldwidebro/fh-020-restaurant-pos-system
+null,Food Truck Business,Hospitality,Hospitality & Food,validation,validation,https://github.com/Worldwidebro/fh-021-food-truck-business
+null,Specialty Coffee Shop,Hospitality,Hospitality & Food,validation,validation,https://github.com/Worldwidebro/fh-022-specialty-coffee-shop
+null,Bakery & Pastry Shop,Hospitality,Hospitality & Food,validation,validation,https://github.com/zquestz/s
+null,Juice Bar,Hospitality,Hospitality & Food,mvp,mvp,https://github.com/Worldwidebro/fh-024-juice-bar
+null,Ice Cream Shop,Hospitality,Hospitality & Food,validation,validation,https://github.com/Worldwidebro/fh-025-ice-cream-shop
+null,Gourmet Food Market,Hospitality,Hospitality & Food,validation,validation,https://github.com/Worldwidebro/fh-026-gourmet-food-market
+null,Food Delivery Platform,Hospitality,Hospitality & Food,planned,planned,https://github.com/Worldwidebro/fh-027-food-delivery-platform
+null,Restaurant Management Saas,Hospitality,Hospitality & Food,planned,planned,https://github.com/Worldwidebro/fh-028-restaurant-management-saas
+null,Food Quality Testing Lab,Hospitality,Hospitality & Food,planned,planned,https://github.com/Worldwidebro/fh-029-food-quality-testing-lab
+null,Organic Food Brand,Hospitality,Hospitality & Food,mvp,mvp,https://github.com/Worldwidebro/fh-030-organic-food-brand
+null,Vegan Food Company,Hospitality,Hospitality & Food,mvp,mvp,https://github.com/Worldwidebro/fh-031-vegan-food-company
+null,Keto Meal Service,Hospitality,Hospitality & Food,mvp,mvp,https://github.com/Worldwidebro/fh-032-keto-meal-service
+null,Food Photography Service,Hospitality,Hospitality & Food,mvp,mvp,https://github.com/Worldwidebro/fh-033-food-photography-service
+null,Restaurant Consulting,Hospitality,Hospitality & Food,mvp,mvp,https://github.com/Worldwidebro/fh-034-restaurant-consulting
+null,Food Safety Training,Hospitality,Hospitality & Food,validation,validation,https://github.com/Worldwidebro/fh-035-food-safety-training
+null,Gym,Staffing,Workforce & Staffing,validation,validation,https://github.com/Worldwidebro/fh-006-healthy-meal-prep-for-gyms
+null,Boutique Fitness Studio,Staffing,Workforce & Staffing,validation,validation,https://github.com/Worldwidebro/fs-002-boutique-fitness-studio
+null,Personal Training Studio,Staffing,Workforce & Staffing,mvp,mvp,https://github.com/Worldwidebro/fs-003-personal-training-studio
+null,Women Only Gym,Staffing,Workforce & Staffing,validation,validation,https://github.com/Worldwidebro/fs-004-women-only-gym
+null,Boxing Gym,Staffing,Workforce & Staffing,validation,validation,https://github.com/Worldwidebro/fs-005-boxing-gym
+null,Crossfit Gym,Staffing,Workforce & Staffing,validation,validation,https://github.com/Worldwidebro/fs-006-crossfit-gym
+null,Luxury Fitness Club,Staffing,Workforce & Staffing,planned,planned,https://github.com/Worldwidebro/fs-007-luxury-fitness-club
+null,Online Coaching,Staffing,Workforce & Staffing,mvp,mvp,https://github.com/Worldwidebro/fs-008-online-coaching
+null,Personal Trainer Business,Staffing,Workforce & Staffing,mvp,mvp,https://github.com/Worldwidebro/fs-009-personal-trainer-business
+null,Transformation Program,Staffing,Workforce & Staffing,mvp,mvp,https://github.com/Worldwidebro/fs-010-transformation-program
+null,Athlete Training Company,Staffing,Workforce & Staffing,validation,validation,https://github.com/Worldwidebro/fs-011-athlete-training-company
+null,Supplement Brand,Staffing,Workforce & Staffing,mvp,mvp,https://github.com/Worldwidebro/fs-012-supplement-brand
+null,Fitness Apparel,Staffing,Workforce & Staffing,mvp,mvp,https://github.com/Worldwidebro/fs-013-fitness-apparel
+null,Workout Equipment Brand,Staffing,Workforce & Staffing,validation,validation,https://github.com/Worldwidebro/fs-014-workout-equipment-brand
+null,Recovery Products,Staffing,Workforce & Staffing,mvp,mvp,https://github.com/Worldwidebro/fs-015-recovery-products
+null,Fitness App,Staffing,Workforce & Staffing,mvp,mvp,https://github.com/Worldwidebro/fs-013-fitness-apparel
+null,Ai Personal Trainer,Staffing,Workforce & Staffing,planned,planned,https://github.com/Worldwidebro/fs-017-ai-personal-trainer
+null,Gym Management Software,Staffing,Workforce & Staffing,planned,planned,https://github.com/Worldwidebro/fs-018-gym-management-software
+null,Wearable Analytics Platform,Staffing,Workforce & Staffing,planned,planned,https://github.com/Worldwidebro/fs-019-wearable-analytics-platform
+null,Yoga Studio,Staffing,Workforce & Staffing,validation,validation,https://github.com/Worldwidebro/fs-020-yoga-studio
+null,Pilates Studio,Staffing,Workforce & Staffing,validation,validation,https://github.com/Worldwidebro/fs-021-pilates-studio
+null,Dance Studio,Staffing,Workforce & Staffing,validation,validation,https://github.com/Worldwidebro/fs-022-dance-studio
+null,Martial Arts Dojo,Staffing,Workforce & Staffing,validation,validation,https://github.com/Worldwidebro/fs-023-martial-arts-dojo
+null,Sports Performance Center,Staffing,Workforce & Staffing,planned,planned,https://github.com/Worldwidebro/fs-024-sports-performance-center
+null,Corporate Wellness Program,Staffing,Workforce & Staffing,mvp,mvp,https://github.com/Worldwidebro/fs-025-corporate-wellness-program
+null,Truck Dispatch Company,Transportation,Logistics & Transportation,validation,validation,https://github.com/Worldwidebro/lt-001-truck-dispatch-company
+null,Freight Brokerage,Transportation,Logistics & Transportation,validation,validation,https://github.com/Worldwidebro/lt-002-freight-brokerage
+null,Logistics Dispatch Service,Transportation,Logistics & Transportation,mvp,mvp,https://github.com/Worldwidebro/lt-003-logistics-dispatch-service
+null,Last Mile Delivery Dispatch,Transportation,Logistics & Transportation,mvp,mvp,https://github.com/Worldwidebro/lt-004-last-mile-delivery-dispatch
+null,Medical Courier Dispatch,Transportation,Logistics & Transportation,validation,validation,https://github.com/Worldwidebro/lt-005-medical-courier-dispatch
+null,Amazon,Transportation,Logistics & Transportation,planned,planned,https://github.com/Worldwidebro/lt-006-amazon
+null,Construction Dispatch,Transportation,Logistics & Transportation,validation,validation,https://github.com/Worldwidebro/lt-007-construction-dispatch
+null,Towing Dispatch,Transportation,Logistics & Transportation,mvp,mvp,https://github.com/Worldwidebro/lt-008-towing-dispatch
+null,Hvac Technician Dispatch,Transportation,Logistics & Transportation,mvp,mvp,https://github.com/Worldwidebro/lt-009-hvac-technician-dispatch
+null,Field Service Dispatch,Transportation,Logistics & Transportation,mvp,mvp,https://github.com/Worldwidebro/lt-010-field-service-dispatch
+null,Dispatch Software,Transportation,Logistics & Transportation,planned,planned,https://github.com/Worldwidebro/lt-011-dispatch-software
+null,Fleet Tracking Platform,Transportation,Logistics & Transportation,planned,planned,https://github.com/Worldwidebro/lt-012-fleet-tracking-platform
+null,Logistics Automation System,Transportation,Logistics & Transportation,planned,planned,https://github.com/Worldwidebro/lt-013-logistics-automation-system
+null,Ai Route Optimization,Transportation,Logistics & Transportation,planned,planned,https://github.com/Worldwidebro/lt-014-ai-route-optimization
+null,Driver Management Platform,Transportation,Logistics & Transportation,planned,planned,https://github.com/Worldwidebro/lt-015-driver-management-platform
+null,Trucking Company,Transportation,Logistics & Transportation,validation,validation,https://github.com/Worldwidebro/lt-016-trucking-company
+null,Courier Service,Transportation,Logistics & Transportation,mvp,mvp,https://github.com/Worldwidebro/lt-017-courier-service
+null,Local Delivery Company,Transportation,Logistics & Transportation,mvp,mvp,https://github.com/Worldwidebro/lt-018-local-delivery-company
+null,Moving Company,Transportation,Logistics & Transportation,validation,validation,https://github.com/Worldwidebro/lt-019-moving-company
+null,Freight Company,Transportation,Logistics & Transportation,validation,validation,https://github.com/Worldwidebro/lt-020-freight-company
+null,Warehouse Company,Transportation,Logistics & Transportation,planned,planned,https://github.com/Worldwidebro/lt-021-warehouse-company
+null,Fulfillment Center,Transportation,Logistics & Transportation,mvp,mvp,https://github.com/Worldwidebro/lt-022-fulfillment-center
+null,Storage Business,Transportation,Logistics & Transportation,validation,validation,https://github.com/Worldwidebro/lt-023-storage-business
+null,Distribution Company,Transportation,Logistics & Transportation,validation,validation,https://github.com/Worldwidebro/lt-024-distribution-company
+null,Logistics Marketplace,Transportation,Logistics & Transportation,planned,planned,https://github.com/Worldwidebro/lt-025-logistics-marketplace
+null,Shipping Platform,Transportation,Logistics & Transportation,planned,planned,https://github.com/Worldwidebro/lt-026-shipping-platform
+null,Fleet Management Saas,Transportation,Logistics & Transportation,planned,planned,https://github.com/Worldwidebro/lt-027-fleet-management-saas
+null,Freight Ai Optimization,Transportation,Logistics & Transportation,planned,planned,https://github.com/Worldwidebro/lt-028-freight-ai-optimization
+null,Supply Chain Analytics,Transportation,Logistics & Transportation,planned,planned,https://github.com/Worldwidebro/lt-029-supply-chain-analytics
+null,Cold Chain Logistics,Transportation,Logistics & Transportation,validation,validation,https://github.com/Worldwidebro/lt-030-cold-chain-logistics
+null,Business Consulting,Operations,Professional Services,mvp,mvp,https://github.com/Worldwidebro/ps-001-business-consulting
+null,Legal Services,Operations,Professional Services,validation,validation,https://github.com/Worldwidebro/ps-002-legal-services
+null,Accounting Services,Operations,Professional Services,mvp,mvp,https://github.com/Worldwidebro/ps-003-accounting-services
+null,Hr Consulting,Operations,Professional Services,validation,validation,https://github.com/Worldwidebro/ps-004-hr-consulting
+null,Marketing Agency,Operations,Professional Services,mvp,mvp,https://github.com/Worldwidebro/ps-005-marketing-agency
+null,Web Design Agency,Operations,Professional Services,mvp,mvp,https://github.com/Worldwidebro/ps-006-web-design-agency
+null,It Support Services,Operations,Professional Services,mvp,mvp,https://github.com/Worldwidebro/ps-007-it-support-services
+null,Virtual Assistant Service,Operations,Professional Services,mvp,mvp,https://github.com/Worldwidebro/ps-008-virtual-assistant-service
+null,Bookkeeping Service,Operations,Professional Services,mvp,mvp,https://github.com/Worldwidebro/ps-009-bookkeeping-service
+null,Tax Preparation Service,Operations,Professional Services,mvp,mvp,https://github.com/Worldwidebro/fin-033-ai-tax-preparation-service
+null,Real Estate Agency,Operations,Professional Services,validation,validation,https://github.com/Worldwidebro/ps-011-real-estate-agency
+null,Insurance Agency,Operations,Professional Services,validation,validation,https://github.com/Worldwidebro/ps-012-insurance-agency
+null,Financial Planning,Operations,Professional Services,mvp,mvp,
+null,Event Planning,Operations,Professional Services,validation,validation,https://github.com/Worldwidebro/ops-003-event-planning-ai
+null,Interior Design,Operations,Professional Services,validation,validation,https://github.com/zquestz/s
+null,Photography Service,Operations,Professional Services,mvp,mvp,https://github.com/Worldwidebro/fh-033-food-photography-service
+null,Videography Service,Operations,Professional Services,mvp,mvp,https://github.com/Worldwidebro/ps-017-videography-service
+null,Translation Services,Operations,Professional Services,validation,validation,https://github.com/Worldwidebro/ps-018-translation-services
+null,Copywriting Service,Operations,Professional Services,mvp,mvp,https://github.com/Worldwidebro/ps-019-copywriting-service
+null,Social Media Management,Operations,Professional Services,mvp,mvp,https://github.com/Worldwidebro/ps-020-social-media-management
+null,Seo Agency,Operations,Professional Services,mvp,mvp,https://github.com/Worldwidebro/ps-021-seo-agency
+null,Ppc Management,Operations,Professional Services,mvp,mvp,https://github.com/Worldwidebro/ps-022-ppc-management
+null,Pr Agency,Operations,Professional Services,validation,validation,https://github.com/Worldwidebro/ps-023-pr-agency
+null,Recruiting Agency,Operations,Professional Services,validation,validation,https://github.com/Worldwidebro/ps-024-recruiting-agency
+null,Business Brokerage,Operations,Professional Services,planned,planned,https://github.com/Worldwidebro/ps-025-business-brokerage
+null,Youtube Channel Network,Media,Media & Content,mvp,mvp,https://github.com/Worldwidebro/mc-001-youtube-channel-network
+null,Podcast Network,Media,Media & Content,mvp,mvp,https://github.com/Worldwidebro/mc-002-podcast-network
+null,Blog Network,Media,Media & Content,mvp,mvp,https://github.com/Worldwidebro/mc-003-blog-network
+null,Influencer Agency,Media,Media & Content,validation,validation,https://github.com/Worldwidebro/mc-004-influencer-agency
+null,Content Creation Studio,Media,Media & Content,mvp,mvp,https://github.com/Worldwidebro/mc-005-content-creation-studio
+null,Video Production Company,Media,Media & Content,validation,validation,https://github.com/Worldwidebro/mc-006-video-production-company
+null,Animation Studio,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/mc-007-animation-studio
+null,Music Production,Media,Media & Content,validation,validation,https://github.com/Worldwidebro/mc-008-music-production
+null,Stock Photography,Media,Media & Content,mvp,mvp,https://github.com/Worldwidebro/mc-009-stock-photography
+null,Stock Video,Media,Media & Content,mvp,mvp,https://github.com/Worldwidebro/mc-010-stock-video
+null,Online Magazine,Media,Media & Content,mvp,mvp,https://github.com/Worldwidebro/mc-011-online-magazine
+null,News Website,Media,Media & Content,validation,validation,https://github.com/Worldwidebro/mc-012-news-website
+null,Streaming Platform,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/mc-013-streaming-platform
+null,Gaming Channel,Media,Media & Content,mvp,mvp,https://github.com/Worldwidebro/mc-014-gaming-channel
+null,Esports Team,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/mc-015-esports-team
+null,Virtual Events Platform,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/mc-016-virtual-events-platform
+null,Online Course Platform,Media,Media & Content,mvp,mvp,https://github.com/Worldwidebro/mc-017-online-course-platform
+null,Membership Site,Media,Media & Content,mvp,mvp,https://github.com/Worldwidebro/mc-018-membership-site
+null,Digital Download Store,Media,Media & Content,mvp,mvp,https://github.com/Worldwidebro/mc-019-digital-download-store
+null,Nft Marketplace,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/mc-020-nft-marketplace
+null,Online Tutoring Platform,Education,Education & Learning,mvp,mvp,https://github.com/Worldwidebro/et-001-online-tutoring-platform
+null,Language Learning App,Education,Education & Learning,mvp,mvp,https://github.com/Worldwidebro/et-002-language-learning-app
+null,Test Prep Service,Education,Education & Learning,validation,validation,https://github.com/Worldwidebro/et-003-test-prep-service
+null,Coding Bootcamp,Education,Education & Learning,validation,validation,https://github.com/Worldwidebro/edu-005-coding-bootcamp
+null,Professional Certification,Education,Education & Learning,validation,validation,https://github.com/Worldwidebro/et-005-professional-certification
+null,Corporate Training,Education,Education & Learning,validation,validation,https://github.com/Worldwidebro/edu-026-corporate-training-ai
+null,Skills Assessment Platform,Education,Education & Learning,planned,planned,https://github.com/Worldwidebro/et-007-skills-assessment-platform
+null,Career Coaching,Education,Education & Learning,mvp,mvp,https://github.com/Worldwidebro/et-008-career-coaching
+null,Resume Writing Service,Education,Education & Learning,mvp,mvp,https://github.com/Worldwidebro/et-009-resume-writing-service
+null,Interview Prep Platform,Education,Education & Learning,mvp,mvp,https://github.com/Worldwidebro/et-010-interview-prep-platform
+null,Mentorship Platform,Education,Education & Learning,planned,planned,https://github.com/Worldwidebro/et-011-mentorship-platform
+null,Educational Content Library,Education,Education & Learning,mvp,mvp,https://github.com/Worldwidebro/et-012-educational-content-library
+null,Vr Training Simulations,Education,Education & Learning,planned,planned,https://github.com/Worldwidebro/et-013-vr-training-simulations
+null,Gamified Learning App,Education,Education & Learning,planned,planned,https://github.com/Worldwidebro/et-014-gamified-learning-app
+null,Homeschool Curriculum,Education,Education & Learning,validation,validation,https://github.com/Worldwidebro/et-015-homeschool-curriculum
+null,Saas Platform,Technology,Technology & Software,mvp,mvp,https://github.com/async-labs/saas
+null,Mobile App Development,Technology,Technology & Software,mvp,mvp,
+null,Web Development Agency,Technology,Technology & Software,mvp,mvp,
+null,Custom Software Development,Technology,Technology & Software,validation,validation,https://github.com/zquestz/s
+null,Api Development,Technology,Technology & Software,mvp,mvp,https://github.com/earendil-works/pi
+null,Cloud Infrastructure,Technology,Technology & Software,planned,planned,https://github.com/zquestz/s
+null,Devops Consulting,Technology,Technology & Software,validation,validation,https://github.com/zquestz/s
+null,Cybersecurity Service,Technology,Technology & Software,validation,validation,https://github.com/zquestz/s
+null,Data Analytics Platform,Technology,Technology & Software,planned,planned,https://github.com/zquestz/s
+null,Business Intelligence Tool,Technology,Technology & Software,planned,planned,https://github.com/zquestz/s
+null,Crm Platform,Technology,Technology & Software,planned,planned,https://github.com/trycompai/crm
+null,Project Management Tool,Technology,Technology & Software,planned,planned,
+null,Communication Platform,Technology,Technology & Software,planned,planned,https://github.com/hcengineering/platform
+null,Collaboration Software,Technology,Technology & Software,planned,planned,https://github.com/zquestz/s
+null,Automation Platform,Technology,Technology & Software,planned,planned,https://github.com/hcengineering/platform
+null,Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/fin-033-ai-tax-preparation-service
+null,Chatbot Builder,Technology,Technology & Software,mvp,mvp,
+null,E Commerce Platform,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/ec-044-live-commerce-platform
+null,Payment Processing,Technology,Technology & Software,validation,validation,https://github.com/zquestz/s
+null,Blockchain Platform,Technology,Technology & Software,planned,planned,https://github.com/hcengineering/platform
+null,Iot Platform,Technology,Technology & Software,planned,planned,https://github.com/hcengineering/platform
+null,Ar,Technology,Technology & Software,planned,planned,https://github.com/santifer/career-ops
+null,Game Development,Technology,Technology & Software,validation,validation,
+null,Marketing Automation,Technology,Technology & Software,mvp,mvp,https://github.com/Worldwidebro/iza-os-marketing-automation-analytics-bot
+null,Sales Automation,Technology,Technology & Software,mvp,mvp,https://github.com/Worldwidebro/iza-os-sales-automation-monitoring-bot
+null,Hr Tech Platform,Technology,Technology & Software,planned,planned,https://github.com/hcengineering/platform
+null,Legal Tech Platform,Technology,Technology & Software,planned,planned,https://github.com/hcengineering/platform
+null,Health Tech Platform,Technology,Technology & Software,planned,planned,https://github.com/hcengineering/platform
+null,Edtech Platform,Technology,Technology & Software,planned,planned,https://github.com/hcengineering/platform
+null,Proptech Platform,Technology,Technology & Software,planned,planned,https://github.com/hcengineering/platform
+null,Angels In Daylight,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-001-angels-in-daylight
+null,New World Apparel,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-002-new-world-apparel
+null,Shopify Autopilot,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-003-shopify-autopilot
+null,Shoe Customizer,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-004-shoe-customizer
+null,Sunglasses Ai,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-005-sunglasses-ai
+null,Dropship Hub,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-006-dropship-hub
+null,Personal Shopper Ai,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-007-personal-shopper-ai
+null,Custom Sneaker Ai,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-008-custom-sneaker-ai
+null,Sustainable Fashion Ai,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-009-sustainable-fashion-ai
+null,Jewelry Designer Ai,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-010-jewelry-designer-ai
+null,Virtual Try On Ai,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-011-virtual-try-on-ai
+null,Fashion Designer Ai,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-012-fashion-designer-ai
+null,Merch Licensing,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-013-merch-licensing
+null,Subscription Box Ai,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-014-subscription-box-ai
+null,Surf Gear Ai,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-015-surf-gear-ai
+null,Ski Gear Ai,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-016-ski-gear-ai
+null,Golf Gear Ai,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-017-golf-gear-ai
+null,Fishing Gear Ai,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-018-fishing-gear-ai
+null,Yoga Gear Ai,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-019-yoga-gear-ai
+null,Costume Shop Ai,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-020-costume-shop-ai
+null,Luggage Ai,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-021-luggage-ai
+null,Home Appliance Ai,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-022-home-appliance-ai
+null,Tool Shop Ai,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-023-tool-shop-ai
+null,Garden Supply Ai,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-024-garden-supply-ai
+null,Collectible Ai,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-025-collectible-ai
+null,Hobby Shop Ai,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-026-hobby-shop-ai
+null,Kids Toy Line,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-027-kids-toy-line
+null,Nft Fashion Licensing,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-028-nft-fashion-licensing
+null,Instant Brand Generator,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-029-instant-brand-generator
+null,Ai Product Photographer,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-030-ai-product-photographer
+null,Automated Inventory Forecaster,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-031-automated-inventory-forecaster
+null,Dynamic Pricing Engine,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-032-dynamic-pricing-engine
+null,Ad Optimizer Ai,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-033-ad-optimizer-ai
+null,Recommendation Engine,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-034-recommendation-engine
+null,Review Aggregator Ai,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-035-review-aggregator-ai
+null,Fulfillment Network Ai,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-036-fulfillment-network-ai
+null,Return Optimization Ai,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-037-return-optimization-ai
+null,Chatbot Customer Service,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-038-chatbot-customer-service
+null,Visual Search Ai,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-039-visual-search-ai
+null,Abandoned Cart Recovery,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-040-abandoned-cart-recovery
+null,Seasonal Trend Predictor,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-041-seasonal-trend-predictor
+null,Influencer Matchmaker,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-042-influencer-matchmaker
+null,Ugc Content Aggregator,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-043-ugc-content-aggregator
+null,Live Commerce Platform,Marketplace,E-Commerce & Marketplace,growth,growth,https://github.com/Worldwidebro/ec-044-live-commerce-platform
+null,Ar Virtual Fitting Room,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-045-ar-virtual-fitting-room
+null,3D Product Viewer,Marketplace,E-Commerce & Marketplace,growth,growth,https://github.com/Worldwidebro/ec-046-3d-product-viewer
+null,Carbon Footprint Tracker,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-047-carbon-footprint-tracker
+null,Wholesale Marketplace Ai,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-048-wholesale-marketplace-ai
+null,Rental Marketplace,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-049-rental-marketplace
+null,Ai Product Descriptions,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-050-ai-product-descriptions
+null,Ai Email Marketing,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-051-ai-email-marketing
+null,Ai Product Bundler,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-052-ai-product-bundler
+null,Ai Visual Merchandiser,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-053-ai-visual-merchandiser
+null,Ai Demand Forecasting,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-054-ai-demand-forecasting
+null,Ai Warehouse Management,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-055-ai-warehouse-management
+null,Ai Supplier Matching,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-056-ai-supplier-matching
+null,Ai Quality Control,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-057-ai-quality-control
+null,Ai Packaging Designer,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-058-ai-packaging-designer
+null,Ai Logistics Planner,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-059-ai-logistics-planner
+null,Ai Customer Loyalty,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-060-ai-customer-loyalty
+null,Ai Gift Finder,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-061-ai-gift-finder
+null,Ai Trend Hunter,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-062-ai-trend-hunter
+null,Ai Market Research,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-063-ai-market-research
+null,Ai Competitor Watcher,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-064-ai-competitor-watcher
+null,Ai Product Development,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-065-ai-product-development
+null,Ai Customer Journey,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-066-ai-customer-journey
+null,Ai Payment Optimization,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-067-ai-payment-optimization
+null,Ai Returns Management,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-068-ai-returns-management
+null,Ai Shipping Labeler,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-069-ai-shipping-labeler
+null,Ai Product Launch Coach,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-070-ai-product-launch-coach
+null,Ai Vendor Negotiator,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-071-ai-vendor-negotiator
+null,Ai Product Cataloger,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-072-ai-product-cataloger
+null,Ai Order Prioritizer,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-073-ai-order-prioritizer
+null,Ai Customer Segmentation,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-074-ai-customer-segmentation
+null,Ai Pricing Analyst,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-075-ai-pricing-analyst
+null,Ai Sales Forecasting,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-076-ai-sales-forecasting
+null,Ai Inventory Reordering,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-077-ai-inventory-reordering
+null,Ai Product Comparison,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-078-ai-product-comparison
+null,Ai Customer Feedback,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-079-ai-customer-feedback
+null,Ai Product Updates,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-080-ai-product-updates
+null,Ai Cross Selling,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-081-ai-cross-selling
+null,Ai Up Selling,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-082-ai-up-selling
+null,Ai Product Education,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-083-ai-product-education
+null,Ai Purchase Timing,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-084-ai-purchase-timing
+null,Ai Customer Support,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-085-ai-customer-support
+null,Ai Order Tracking,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-086-ai-order-tracking
+null,Ai Product Reviews,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-087-ai-product-reviews
+null,Ai Customer Community,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-088-ai-customer-community
+null,Ai Product Customization,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-089-ai-product-customization
+null,Ai Gift Registry,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-090-ai-gift-registry
+null,Ai Wedding Registry,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-091-ai-wedding-registry
+null,Ai Baby Registry,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-092-ai-baby-registry
+null,Ai Holiday Planner,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-093-ai-holiday-planner
+null,Ai Personal Shopper,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/spec-018-ai-personal-shopper
+null,Ai Color Match,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-095-ai-color-match
+null,Ai Fabric Advisor,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-096-ai-fabric-advisor
+null,Ai Fit Recommendation,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-097-ai-fit-recommendation
+null,Ai Outfit Builder,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-098-ai-outfit-builder
+null,Ai Seasonal Forecast,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-099-ai-seasonal-forecast
+null,Ai Wardrobe Planner,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-100-ai-wardrobe-planner
+null,Ai Accessory Match,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-101-ai-accessory-match
+null,Ai Shoe Match,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-102-ai-shoe-match
+null,Ai Jewelry Match,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-103-ai-jewelry-match
+null,Ai Bag Match,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-104-ai-bag-match
+null,Ai Color Palette,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-105-ai-color-palette
+null,Ai Outfit Recycling,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-106-ai-outfit-recycling
+null,Ai Style Evolution,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-107-ai-style-evolution
+null,Ai Budget Stylist,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-108-ai-budget-stylist
+null,Ai Trend Archive,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-109-ai-trend-archive
+null,Ai Vintage Advisor,Marketplace,E-Commerce & Marketplace,planned,planned,https://github.com/Worldwidebro/ec-110-ai-vintage-advisor
+null,Quantum Algorithm Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-001-quantum-algorithm-ai
+null,Ai Compliance Scanner,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-002-ai-compliance-scanner
+null,Cloud Management Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-003-cloud-management-ai
+null,Robotics Training Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-004-robotics-training-ai
+null,Customer Insights Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-005-customer-insights-ai
+null,Voice Assistant Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-006-voice-assistant-ai
+null,Blockchain Verifier Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-007-blockchain-verifier-ai
+null,Cybersecurity Shield,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-040-cybersecurity-shield
+null,Content Studio Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-009-content-studio-ai
+null,Smart Home Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-010-smart-home-ai
+null,Supply Chain Optimizer,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/ops-002-supply-chain-optimizer
+null,Data Visualization Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-012-data-visualization-ai
+null,Workflow Automation,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/billionaire-workflow-automation
+null,Sentiment Analyzer,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-014-sentiment-analyzer
+null,Image Recognition Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-015-image-recognition-ai
+null,Video Editor Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-016-video-editor-ai
+null,Speech To Text Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-017-speech-to-text-ai
+null,Text To Speech Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-018-text-to-speech-ai
+null,Fraud Prevention Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-051-fraud-prevention-ai
+null,Recommendation Engine,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/ec-034-recommendation-engine
+null,Network Security Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-021-network-security-ai
+null,Database Optimizer,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-022-database-optimizer
+null,Ai Testing Platform,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-023-ai-testing-platform
+null,Virtual Assistant Builder,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-024-virtual-assistant-builder
+null,Machine Learning Builder,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-025-machine-learning-builder
+null,Ai Ethics Auditor,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-026-ai-ethics-auditor
+null,Predictive Analytics Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-027-predictive-analytics-ai
+null,Ai Training Platform,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-028-ai-training-platform
+null,Digital Twin Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-029-digital-twin-ai
+null,Ai Monitoring System,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-030-ai-monitoring-system
+null,Edge Computing Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-031-edge-computing-ai
+null,Ai Integration Hub,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-032-ai-integration-hub
+null,Quantum Algorithm Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-001-quantum-algorithm-ai
+null,Ai Compliance Scanner,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-002-ai-compliance-scanner
+null,Cloud Management Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-003-cloud-management-ai
+null,Robotics Training Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-004-robotics-training-ai
+null,Customer Insights Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-005-customer-insights-ai
+null,Voice Assistant Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-006-voice-assistant-ai
+null,Blockchain Verifier Ai,Technology,Technology & Software,validation,validation,https://github.com/Worldwidebro/tech-007-blockchain-verifier-ai
+null,Cybersecurity Shield,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-040-cybersecurity-shield
+null,Content Studio Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-009-content-studio-ai
+null,Smart Home Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-010-smart-home-ai
+null,Supply Chain Optimizer,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/ops-002-supply-chain-optimizer
+null,Data Visualization Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-012-data-visualization-ai
+null,Workflow Automation,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/billionaire-workflow-automation
+null,Sentiment Analyzer,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-014-sentiment-analyzer
+null,Image Recognition Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-015-image-recognition-ai
+null,Video Editor Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-016-video-editor-ai
+null,Speech To Text Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-017-speech-to-text-ai
+null,Text To Speech Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-018-text-to-speech-ai
+null,Fraud Prevention Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-051-fraud-prevention-ai
+null,Recommendation Engine,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/ec-034-recommendation-engine
+null,Network Security Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-021-network-security-ai
+null,Database Optimizer,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-022-database-optimizer
+null,Ai Testing Platform,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-023-ai-testing-platform
+null,Virtual Assistant Builder,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-024-virtual-assistant-builder
+null,Machine Learning Builder,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-025-machine-learning-builder
+null,Ai Ethics Auditor,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-026-ai-ethics-auditor
+null,Predictive Analytics Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-027-predictive-analytics-ai
+null,Ai Training Platform,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/tech-028-ai-training-platform
+null,Fractional Cto Agency,Operations,Professional Services,planned,planned,https://github.com/Worldwidebro/ops-001-fractional-cto-agency
+null,Supply Chain Optimizer,Operations,Professional Services,planned,planned,https://github.com/Worldwidebro/ops-002-supply-chain-optimizer
+null,Event Planning Ai,Operations,Professional Services,planned,planned,https://github.com/Worldwidebro/ops-003-event-planning-ai
+null,Inventory Management Ai,Operations,Professional Services,planned,planned,https://github.com/Worldwidebro/ops-004-inventory-management-ai
+null,Project Management Ai,Operations,Professional Services,planned,planned,https://github.com/Worldwidebro/ops-005-project-management-ai
+null,Document Automation Ai,Operations,Professional Services,planned,planned,https://github.com/Worldwidebro/ops-006-document-automation-ai
+null,Meeting Assistant Ai,Operations,Professional Services,planned,planned,https://github.com/Worldwidebro/ops-007-meeting-assistant-ai
+null,Recruitment Ai,Operations,Professional Services,planned,planned,https://github.com/Worldwidebro/ops-008-recruitment-ai
+null,Onboarding Ai,Operations,Professional Services,planned,planned,https://github.com/Worldwidebro/ops-009-onboarding-ai
+null,Training Platform Ai,Operations,Professional Services,planned,planned,https://github.com/Worldwidebro/ops-010-training-platform-ai
+null,Performance Review Ai,Operations,Professional Services,planned,planned,https://github.com/Worldwidebro/ops-011-performance-review-ai
+null,It Support Ai,Operations,Professional Services,planned,planned,https://github.com/Worldwidebro/ops-012-it-support-ai
+null,Facilities Management Ai,Operations,Professional Services,planned,planned,https://github.com/Worldwidebro/ops-013-facilities-management-ai
+null,Travel Booking Ai,Operations,Professional Services,planned,planned,https://github.com/Worldwidebro/ops-014-travel-booking-ai
+null,Expense Management Ai,Operations,Professional Services,planned,planned,https://github.com/Worldwidebro/ops-015-expense-management-ai
+null,Contract Management Ai,Operations,Professional Services,planned,planned,https://github.com/nektos/act
+null,Compliance Monitoring Ai,Operations,Professional Services,planned,planned,
+null,Quality Control Ai,Operations,Professional Services,planned,planned,
+null,Asset Management Ai,Operations,Professional Services,planned,planned,https://github.com/zquestz/s
+null,Time Tracking Ai,Operations,Professional Services,planned,planned,
+null,Document Security Ai,Operations,Professional Services,planned,planned,https://github.com/zquestz/s
+null,Knowledge Management Ai,Operations,Professional Services,planned,planned,https://github.com/camel-ai/owl
+null,Meeting Transcription Ai,Operations,Professional Services,planned,planned,https://github.com/zquestz/s
+null,Task Automation Ai,Operations,Professional Services,planned,planned,https://github.com/zquestz/s
+null,Resource Allocation Ai,Operations,Professional Services,planned,planned,https://github.com/zquestz/s
+null,Budget Planning Ai,Operations,Professional Services,planned,planned,
+null,Cost Optimization Ai,Operations,Professional Services,planned,planned,https://github.com/zquestz/s
+null,Procurement Ai,Operations,Professional Services,planned,planned,
+null,Vendor Management Ai,Operations,Professional Services,planned,planned,
+null,Contract Negotiation Ai,Operations,Professional Services,planned,planned,https://github.com/nektos/act
+null,Legal Document Ai,Operations,Professional Services,planned,planned,
+null,Compliance Reporting Ai,Operations,Professional Services,planned,planned,
+null,Training Content Ai,Operations,Professional Services,planned,planned,
+null,Employee Engagement Ai,Operations,Professional Services,planned,planned,
+null,Succession Planning Ai,Operations,Professional Services,planned,planned,https://github.com/zquestz/s
+null,Workspace Design Ai,Operations,Professional Services,planned,planned,https://github.com/zquestz/s
+null,Energy Efficiency Ai,Operations,Professional Services,planned,planned,
+null,Security Monitoring Ai,Operations,Professional Services,planned,planned,https://github.com/zquestz/s
+null,Health Safety Ai,Operations,Professional Services,planned,planned,https://github.com/zquestz/s
+null,Disaster Recovery Ai,Operations,Professional Services,planned,planned,https://github.com/zquestz/s
+null,It Asset Management,Operations,Professional Services,planned,planned,https://github.com/zquestz/s
+null,Cloud Cost Management,Operations,Professional Services,planned,planned,https://github.com/zquestz/s
+null,Data Governance Ai,Operations,Professional Services,planned,planned,
+null,Network Monitoring Ai,Operations,Professional Services,planned,planned,
+null,Software Licensing Ai,Operations,Professional Services,planned,planned,https://github.com/zquestz/s
+null,It Procurement Ai,Operations,Professional Services,planned,planned,
+null,System Integration Ai,Operations,Professional Services,planned,planned,https://github.com/zquestz/s
+null,Data Backup Ai,Operations,Professional Services,planned,planned,
+null,Business Continuity Ai,Operations,Professional Services,planned,planned,https://github.com/zquestz/s
+null,Compliance Audit Ai,Operations,Professional Services,planned,planned,
+null,Document Collaboration Ai,Operations,Professional Services,planned,planned,
+null,Video Conferencing Ai,Operations,Professional Services,planned,planned,
+null,Email Management Ai,Operations,Professional Services,planned,planned,
+null,Calendar Optimization Ai,Operations,Professional Services,planned,planned,
+null,Project Budget Ai,Operations,Professional Services,planned,planned,
+null,Resource Forecasting Ai,Operations,Professional Services,planned,planned,https://github.com/zquestz/s
+null,Task Prioritization Ai,Operations,Professional Services,planned,planned,https://github.com/zquestz/s
+null,Time Management Ai,Operations,Professional Services,planned,planned,https://github.com/Worldwidebro/edu-040-time-management-ai
+null,Meeting Minutes Ai,Operations,Professional Services,planned,planned,https://github.com/zquestz/s
+null,Document Translation Ai,Operations,Professional Services,planned,planned,https://github.com/zquestz/s
+null,Form Automation Ai,Operations,Professional Services,planned,planned,
+null,Report Generation Ai,Operations,Professional Services,planned,planned,
+null,Dashboard Creation Ai,Operations,Professional Services,planned,planned,https://github.com/agno-agi/dash
+null,Analytics Platform Ai,Operations,Professional Services,planned,planned,https://github.com/zquestz/s
+null,Data Cleaning Ai,Operations,Professional Services,planned,planned,
+null,Workflow Management Ai,Operations,Professional Services,planned,planned,
+null,Youth Entrepreneurship Curriculum,Education,Education & Learning,planned,planned,https://github.com/Worldwidebro/edu-001-youth-entrepreneurship-curriculum
+null,Ai Literacy Program,Education,Education & Learning,planned,planned,https://github.com/Worldwidebro/edu-002-ai-literacy-program
+null,Coding Mentor Certification,Education,Education & Learning,planned,planned,https://github.com/Worldwidebro/edu-003-coding-mentor-certification
+null,Real Estate Licensing Prep,Education,Education & Learning,planned,planned,https://github.com/Worldwidebro/edu-004-real-estate-licensing-prep
+null,Coding Bootcamp,Education,Education & Learning,planned,planned,https://github.com/Worldwidebro/edu-005-coding-bootcamp
+null,Homeschooling Content Ai,Education,Education & Learning,planned,planned,https://github.com/Worldwidebro/edu-006-homeschooling-content-ai
+null,Ai Tutoring Platform,Education,Education & Learning,planned,planned,https://github.com/Worldwidebro/edu-007-ai-tutoring-platform
+null,Branding Templates Marketplace,Education,Education & Learning,planned,planned,https://github.com/Worldwidebro/edu-008-branding-templates-marketplace
+null,Voiceover Script Library,Education,Education & Learning,planned,planned,https://github.com/Worldwidebro/edu-009-voiceover-script-library
+null,Trade Skills Bootcamp,Education,Education & Learning,planned,planned,https://github.com/Worldwidebro/edu-010-trade-skills-bootcamp
+null,Franchise Blueprint System,Education,Education & Learning,planned,planned,https://github.com/Worldwidebro/edu-011-franchise-blueprint-system
+null,Low Income Housing Blueprint,Education,Education & Learning,planned,planned,https://github.com/Worldwidebro/edu-012-low-income-housing-blueprint
+null,Automated Empire Book,Education,Education & Learning,planned,planned,https://github.com/Worldwidebro/edu-013-automated-empire-book
+null,Bipoc Creator Incubator,Education,Education & Learning,planned,planned,https://github.com/Worldwidebro/edu-014-bipoc-creator-incubator
+null,Ai Legal Doc Generator,Education,Education & Learning,planned,planned,https://github.com/Worldwidebro/edu-015-ai-legal-doc-generator
+null,Virtual Black Art Museum,Education,Education & Learning,planned,planned,https://github.com/Worldwidebro/edu-016-virtual-black-art-museum
+null,Ai Coding Tutor,Education,Education & Learning,growth,growth,https://github.com/Worldwidebro/edu-017-ai-coding-tutor
+null,Online Course Creator,Education,Education & Learning,planned,planned,https://github.com/Worldwidebro/edu-018-online-course-creator
+null,Executive Education Program,Education,Education & Learning,planned,planned,https://github.com/Worldwidebro/edu-019-executive-education-program
+null,Youth Stem Program,Education,Education & Learning,planned,planned,https://github.com/Worldwidebro/edu-020-youth-stem-program
+null,Remote Work Certification,Education,Education & Learning,planned,planned,https://github.com/Worldwidebro/edu-021-remote-work-certification
+null,Ai Research Assistant,Education,Education & Learning,planned,planned,https://github.com/Worldwidebro/edu-022-ai-research-assistant
+null,Personal Finance Coach,Education,Education & Learning,planned,planned,https://github.com/Worldwidebro/edu-023-personal-finance-coach
+null,Language Learning Ai,Education,Education & Learning,planned,planned,https://github.com/Worldwidebro/edu-024-language-learning-ai
+null,Test Preparation Ai,Education,Education & Learning,planned,planned,https://github.com/Worldwidebro/edu-025-test-preparation-ai
+null,Corporate Training Ai,Education,Education & Learning,planned,planned,https://github.com/Worldwidebro/edu-026-corporate-training-ai
+null,Medical Education Ai,Education,Education & Learning,planned,planned,https://github.com/Worldwidebro/edu-027-medical-education-ai
+null,Legal Education Ai,Education,Education & Learning,planned,planned,https://github.com/Worldwidebro/edu-028-legal-education-ai
+null,Music Education Ai,Education,Education & Learning,planned,planned,https://github.com/Worldwidebro/edu-029-music-education-ai
+null,Art Education Ai,Education,Education & Learning,planned,planned,https://github.com/Worldwidebro/edu-030-art-education-ai
+null,Physical Education Ai,Education,Education & Learning,planned,planned,https://github.com/Worldwidebro/edu-031-physical-education-ai
+null,Environmental Education Ai,Education,Education & Learning,planned,planned,https://github.com/Worldwidebro/edu-032-environmental-education-ai
+null,Social Studies Ai,Education,Education & Learning,planned,planned,https://github.com/Worldwidebro/edu-033-social-studies-ai
+null,Math Education Ai,Education,Education & Learning,planned,planned,https://github.com/Worldwidebro/edu-034-math-education-ai
+null,Science Education Ai,Education,Education & Learning,planned,planned,https://github.com/Worldwidebro/edu-035-science-education-ai
+null,Reading Comprehension Ai,Education,Education & Learning,planned,planned,https://github.com/Worldwidebro/edu-036-reading-comprehension-ai
+null,Writing Instruction Ai,Education,Education & Learning,planned,planned,https://github.com/Worldwidebro/edu-037-writing-instruction-ai
+null,Critical Thinking Ai,Education,Education & Learning,planned,planned,https://github.com/Worldwidebro/edu-038-critical-thinking-ai
+null,Emotional Intelligence Ai,Education,Education & Learning,planned,planned,https://github.com/Worldwidebro/edu-039-emotional-intelligence-ai
+null,Time Management Ai,Education,Education & Learning,planned,planned,https://github.com/Worldwidebro/edu-040-time-management-ai
+null,Luminary Worldwide Events,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-001-luminary-worldwide-events
+null,Brotherhood Coaching Network,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-002-brotherhood-coaching-network
+null,Ace Senior Care Connect,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-003-ace-senior-care-connect
+null,Community Outreach Nonprofit,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-004-community-outreach-nonprofit
+null,Ace Food Security Ai,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-005-ace-food-security-ai
+null,Community Technology Access Ai,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-006-community-technology-access-ai
+null,Youth Leadership Ai,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-007-youth-leadership-ai
+null,Community Fundraising Ai,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-008-community-fundraising-ai
+null,Volunteer Hub Ai,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-009-volunteer-hub-ai
+null,Disaster Relief Ai,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-010-disaster-relief-ai
+null,Indigenous Creator Hub,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-011-indigenous-creator-hub
+null,Black Art Museum Ai,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-012-black-art-museum-ai
+null,Women S Empowerment Network,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-013-women-s-empowerment-network
+null,Veterans Support Ai,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-014-veterans-support-ai
+null,Youth Mentorship Program,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-015-youth-mentorship-program
+null,Community Health Ai,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-016-community-health-ai
+null,Local Business Directory,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-017-local-business-directory
+null,Neighborhood Watch Ai,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-018-neighborhood-watch-ai
+null,Community Garden Ai,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-019-community-garden-ai
+null,Public Transportation Ai,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-020-public-transportation-ai
+null,Housing Assistance Ai,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-021-housing-assistance-ai
+null,Job Training Center,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-022-job-training-center
+null,Elder Companion Ai,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-023-elder-companion-ai
+null,Youth Sports Ai,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-024-youth-sports-ai
+null,Community Legal Aid,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-025-community-legal-aid
+null,Public Education Ai,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-026-public-education-ai
+null,Local Government Ai,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-027-local-government-ai
+null,Public Safety Ai,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-028-public-safety-ai
+null,Community Wellness Ai,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-029-community-wellness-ai
+null,Cultural Exchange Ai,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-030-cultural-exchange-ai
+null,Community Investment Ai,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-031-community-investment-ai
+null,Public Health Ai,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-032-public-health-ai
+null,Youth Innovation Hub,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-033-youth-innovation-hub
+null,Senior Tech Support,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-034-senior-tech-support
+null,Community Arts Ai,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-035-community-arts-ai
+null,Public Infrastructure Ai,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-036-public-infrastructure-ai
+null,Neighborhood Development Ai,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-037-neighborhood-development-ai
+null,Community Policing Ai,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-038-community-policing-ai
+null,Public Space Ai,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-039-public-space-ai
+null,Community Recycling Ai,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-040-community-recycling-ai
+null,Public Wi Fi Ai,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-041-public-wi-fi-ai
+null,Community Energy Ai,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-042-community-energy-ai
+null,Local Food Network Ai,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-043-local-food-network-ai
+null,Community Volunteering Ai,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-044-community-volunteering-ai
+null,Public Childcare Ai,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-045-public-childcare-ai
+null,Community Pet Care Ai,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-046-community-pet-care-ai
+null,Public Fitness Ai,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-047-public-fitness-ai
+null,Community Transportation Ai,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-048-community-transportation-ai
+null,Public Event Ai,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-049-public-event-ai
+null,Community Cultural Ai,Media,Media & Content,planned,planned,https://github.com/Worldwidebro/comm-050-community-cultural-ai
+null,Space Habitat Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-001-space-habitat-ai
+null,Fusion Energy Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-002-fusion-energy-ai
+null,Teleportation Research Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-003-teleportation-research-ai
+null,Climate Solutions Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-004-climate-solutions-ai
+null,Holographic Events Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-005-holographic-events-ai
+null,Neurofeedback Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-006-neurofeedback-ai
+null,Autonomous Delivery Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-007-autonomous-delivery-ai
+null,Gene Editing Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-008-gene-editing-ai
+null,Space Tourism Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-009-space-tourism-ai
+null,Wearables Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-010-wearables-ai
+null,Metaverse Hub Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-011-metaverse-hub-ai
+null,Energy Grid Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-012-energy-grid-ai
+null,Brain Computer Interface,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-013-brain-computer-interface
+null,Ocean Cleanup Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-014-ocean-cleanup-ai
+null,Crypto Trading Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-015-crypto-trading-ai
+null,Synthetic Media Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-016-synthetic-media-ai
+null,Space Mining Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-017-space-mining-ai
+null,Vr Therapy Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-018-vr-therapy-ai
+null,Weather Prediction Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-019-weather-prediction-ai
+null,Autonomous Farming Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-020-autonomous-farming-ai
+null,Traffic Optimizer Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-021-traffic-optimizer-ai
+null,Smart Grid Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-022-smart-grid-ai
+null,Disaster Prediction Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-023-disaster-prediction-ai
+null,Nanotech Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-024-nanotech-ai
+null,Personalized Medicine Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-025-personalized-medicine-ai
+null,Ai Diagnostic Lab,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-026-ai-diagnostic-lab
+null,Sustainable Cities Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-027-sustainable-cities-ai
+null,Renewable Energy Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-028-renewable-energy-ai
+null,Climate Modeling Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-029-climate-modeling-ai
+null,Policy Advisor Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-030-policy-advisor-ai
+null,Governance Hub Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-031-governance-hub-ai
+null,Global Challenges Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-032-global-challenges-ai
+null,Space Exploration Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-033-space-exploration-ai
+null,Education Equity Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-034-education-equity-ai
+null,Health Equity Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-035-health-equity-ai
+null,Economic Equity Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-036-economic-equity-ai
+null,Environmental Justice Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-037-environmental-justice-ai
+null,Human Rights Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-038-human-rights-ai
+null,Peacebuilding Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-039-peacebuilding-ai
+null,Telemedicine Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-040-telemedicine-ai
+null,Ai Climate Adaptation,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-041-ai-climate-adaptation
+null,Space Agriculture Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-042-space-agriculture-ai
+null,Quantum Communication Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-043-quantum-communication-ai
+null,Robotics Surgery Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-044-robotics-surgery-ai
+null,Ai Disaster Response,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-045-ai-disaster-response
+null,Smart City Governance,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-046-smart-city-governance
+null,Ai Environmental Monitoring,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-047-ai-environmental-monitoring
+null,Space Manufacturing Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-048-space-manufacturing-ai
+null,Ai Ocean Exploration,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-049-ai-ocean-exploration
+null,Ai Archaeology,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/em-050-ai-archaeology
+null,Ai Auction House,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/spec-001-ai-auction-house
+null,Smart Marina Management,Technology,Technology & Software,planned,planned,https://github.com/zquestz/s
+null,Ai Surf Report,Technology,Technology & Software,planned,planned,https://github.com/zquestz/s
+null,Private Chef Ai,Technology,Technology & Software,planned,planned,https://github.com/get-convex/chef
+null,Virtual Concierge Ai,Technology,Technology & Software,planned,planned,
+null,Smart Parking Ai,Technology,Technology & Software,planned,planned,https://github.com/zquestz/s
+null,Ai Interior Design,Technology,Technology & Software,planned,planned,https://github.com/zquestz/s
+null,Personal Stylist Ai,Technology,Technology & Software,planned,planned,https://github.com/zquestz/s
+null,Smart Locker System,Technology,Technology & Software,planned,planned,https://github.com/zquestz/s
+null,Ai Fitness Coach,Technology,Technology & Software,planned,planned,https://github.com/zquestz/s
+null,Smart Golf Caddie,Technology,Technology & Software,planned,planned,https://github.com/zquestz/s
+null,Ai Nutritionist,Technology,Technology & Software,planned,planned,https://github.com/zquestz/s
+null,Smart Hotel Butler,Technology,Technology & Software,planned,planned,https://github.com/zquestz/s
+null,Ai Language Tutor,Technology,Technology & Software,planned,planned,
+null,Smart Transportation Ai,Technology,Technology & Software,planned,planned,https://github.com/zquestz/s
+null,Ai Travel Planner,Technology,Technology & Software,planned,planned,
+null,Smart Agriculture Ai,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/spec-017-smart-agriculture-ai
+null,Ai Personal Shopper,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/spec-018-ai-personal-shopper
+null,Smart Home Security,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/spec-019-smart-home-security
+null,Ai Music Producer,Technology,Technology & Software,planned,planned,https://github.com/zquestz/s
+null,Smart Restaurant Ai,Technology,Technology & Software,planned,planned,https://github.com/zquestz/s
+null,Ai Movie Critic,Technology,Technology & Software,planned,planned,
+null,Smart Museum Guide,Technology,Technology & Software,planned,planned,https://github.com/zquestz/s
+null,Ai Sports Analyst,Technology,Technology & Software,planned,planned,https://github.com/zquestz/s
+null,Smart Library Ai,Technology,Technology & Software,planned,planned,https://github.com/zquestz/s
+null,Ai Art Curator,Technology,Technology & Software,planned,planned,
+null,Smart Fitness Ai,Technology,Technology & Software,planned,planned,https://github.com/zquestz/s
+null,Ai Poetry Generator,Technology,Technology & Software,planned,planned,https://github.com/python-poetry/poetry
+null,Smart Dating Ai,Technology,Technology & Software,planned,planned,https://github.com/zquestz/s
+null,Ai Journalism Tool,Technology,Technology & Software,planned,planned,https://github.com/zquestz/s
+null,Smart Legal Ai,Technology,Technology & Software,planned,planned,https://github.com/zquestz/s
+null,Ai Game Designer,Technology,Technology & Software,growth,growth,https://github.com/zquestz/s
+null,Smart Real Estate Ai,Technology,Technology & Software,planned,planned,https://github.com/zquestz/s
+null,Ai Cooking Assistant,Technology,Technology & Software,planned,planned,https://github.com/zquestz/s
+null,Smart Health Ai,Technology,Technology & Software,planned,planned,https://github.com/zquestz/s
+null,Ai Photography Tool,Technology,Technology & Software,planned,planned,
+null,Smart Writing Ai,Technology,Technology & Software,planned,planned,https://github.com/zquestz/s
+null,Ai Comedy Writer,Technology,Technology & Software,planned,planned,https://github.com/Worldwidebro/spec-038-ai-comedy-writer
+null,Smart Meditation Ai,Technology,Technology & Software,planned,planned,https://github.com/zquestz/s
+null,Ai Debate Coach,Technology,Technology & Software,planned,planned,
+null,Smart Parenting Ai,Technology,Technology & Software,planned,planned,https://github.com/zquestz/s
+null,Ai Financial Advisor,Technology,Technology & Software,planned,planned,https://github.com/zquestz/s
+null,Smart Automotive Ai,Technology,Technology & Software,planned,planned,https://github.com/zquestz/s
+null,Ai Aviation Planner,Technology,Technology & Software,planned,planned,
+null,Smart Maritime Ai,Technology,Technology & Software,planned,planned,https://github.com/zquestz/s
+null,Ai Weather Forecast,Technology,Technology & Software,planned,planned,https://github.com/zquestz/s
+null,Smart Energy Ai,Technology,Technology & Software,planned,planned,https://github.com/zquestz/s
+null,Ai Sports Coach,Technology,Technology & Software,planned,planned,https://github.com/zquestz/s
+null,Smart Education Ai,Technology,Technology & Software,planned,planned,https://github.com/zquestz/s
+null,Ai Language Translator,Technology,Technology & Software,planned,planned,https://github.com/zquestz/s
+null,Dist,Financial,Financial Services,planned,planned,https://github.com/Worldwidebro/lt-024-distribution-company
+null,Node_Modules,Financial,Financial Services,planned,planned,https://github.com/zquestz/s
+null,Public,Financial,Financial Services,planned,planned,https://github.com/Worldwidebro/comm-049-public-event-ai
+null,Src,Financial,Financial Services,planned,planned,https://github.com/zquestz/s
+null,Supabase,Financial,Financial Services,planned,planned,https://github.com/zquestz/s
+null,Unknown,Technology,Technology & Software,unknown,unknown,
+null,GenixBank Lite,Financial,Financial Services,Ideation,Ideation,https://github.com/Worldwidebro/fin-001-genixbank-lite
+null,Credit Repair Automation,Financial,Financial Services,Ideation,Ideation,https://github.com/Worldwidebro/fin-002-credit-repair-automation
+null,AI Boss Hub Lite,Financial,Financial Services,Ideation,Ideation,https://github.com/Worldwidebro/fin-003-ai-boss-hub-lite
+null,GenixBanks AI Treasurer,Financial,Financial Services,Ideation,Ideation,https://github.com/Worldwidebro/fin-004-genixbanks-ai-treasurer
+null,U-Haul Rental Affiliate,Financial,Financial Services,MVP,mvp,https://github.com/Worldwidebro/fin-005-u-haul-rental-affiliate
+null,Tax Prep & Filing Services,Financial,Financial Services,Ideation,Ideation,https://github.com/zquestz/s
+null,Business Credit Building,Financial,Financial Services,Ideation,Ideation,https://github.com/Worldwidebro/fin-007-business-credit-building
+null,Business Formation Services,Financial,Financial Services,MVP,mvp,https://github.com/Worldwidebro/fin-008-business-formation-services
+null,Crypto Tax Optimizer,Financial,Financial Services,Ideation,Ideation,https://github.com/Worldwidebro/fin-009-crypto-tax-optimizer
+null,AI-Powered Garbage Collection,Financial,Financial Services,Ideation,Ideation,https://github.com/Worldwidebro/fin-010-ai-powered-garbage-collection
+null,Automated Bookkeeping,Financial,Financial Services,Ideation,Ideation,https://github.com/Worldwidebro/fin-011-automated-bookkeeping
+null,Invoice Factoring AI,Financial,Financial Services,Ideation,Ideation,https://github.com/Worldwidebro/fin-012-invoice-factoring-ai
+null,Charity Donation AI,Financial,Financial Services,Ideation,Ideation,https://github.com/Worldwidebro/fin-013-charity-donation-ai
+null,Expense Tracker AI,Financial,Financial Services,Ideation,Ideation,https://github.com/Worldwidebro/fin-014-expense-tracker-ai
+null,Financial Wellness Coach,Financial,Financial Services,MVP,mvp,https://github.com/Worldwidebro/fin-015-financial-wellness-coach
+null,Trade Finance AI,Financial,Financial Services,Ideation,Ideation,https://github.com/Worldwidebro/fin-016-trade-finance-ai
+null,Remittance AI,Financial,Financial Services,Ideation,Ideation,https://github.com/Worldwidebro/fin-017-remittance-ai
+null,Wealth Transfer AI,Financial,Financial Services,Ideation,Ideation,https://github.com/Worldwidebro/fin-018-wealth-transfer-ai
+null,Payment Gateway AI,Financial,Financial Services,Ideation,Ideation,https://github.com/Worldwidebro/fin-019-payment-gateway-ai
+null,Debt Consolidation AI,Financial,Financial Services,Ideation,Ideation,https://github.com/Worldwidebro/fin-020-debt-consolidation-ai
+null,Tax Deduction Finder,Financial,Financial Services,Ideation,Ideation,https://github.com/Worldwidebro/fin-021-tax-deduction-finder
+null,Budget Forecasting AI,Financial,Financial Services,Ideation,Ideation,https://github.com/Worldwidebro/fin-022-budget-forecasting-ai
+null,Investment Portfolio AI,Financial,Financial Services,Ideation,Ideation,https://github.com/Worldwidebro/fin-023-investment-portfolio-ai
+null,Crowdfunding AI,Financial,Financial Services,Ideation,Ideation,https://github.com/Worldwidebro/fin-024-crowdfunding-ai
+null,Escrow Automation,Financial,Financial Services,Ideation,Ideation,https://github.com/Worldwidebro/fin-025-escrow-automation
+null,Financial Compliance Scanner,Financial,Financial Services,Ideation,Ideation,https://github.com/Worldwidebro/fin-026-financial-compliance-scanner
+null,Patent Writer AI,Financial,Financial Services,Ideation,Ideation,https://github.com/Worldwidebro/fin-027-patent-writer-ai
+null,Legal Analyzer AI,Financial,Financial Services,Ideation,Ideation,https://github.com/Worldwidebro/fin-028-legal-analyzer-ai
+null,Compliance Wallet SaaS,Financial,Financial Services,Ideation,Ideation,https://github.com/Worldwidebro/fin-029-compliance-wallet-saas
+null,Local SEO Ranker AI,Financial,Financial Services,Ideation,Ideation,https://github.com/Worldwidebro/fin-030-local-seo-ranker-ai
+null,Investor Dashboard Builder,Financial,Financial Services,Ideation,Ideation,https://github.com/Worldwidebro/fin-031-investor-dashboard-builder
+null,Legal Toolkit AI,Financial,Financial Services,Ideation,Ideation,https://github.com/Worldwidebro/fin-032-legal-toolkit-ai
+null,AI Tax Preparation Service,Financial,Financial Services,Ideation,Ideation,https://github.com/Worldwidebro/fin-033-ai-tax-preparation-service
+null,Payroll Automation,Financial,Financial Services,Ideation,Ideation,https://github.com/Worldwidebro/fin-034-payroll-automation
+null,Insurance Underwriting AI,Financial,Financial Services,Ideation,Ideation,https://github.com/Worldwidebro/fin-035-insurance-underwriting-ai
+null,Angels in Daylight,Marketplace,E-Commerce & Marketplace,MVP,mvp,https://github.com/Worldwidebro/ec-001-angels-in-daylight
+null,New World Apparel,Marketplace,E-Commerce & Marketplace,MVP,mvp,https://github.com/Worldwidebro/ec-002-new-world-apparel
+null,Shopify Autopilot,Marketplace,E-Commerce & Marketplace,MVP,mvp,https://github.com/Worldwidebro/ec-003-shopify-autopilot
+null,Shoe Customizer,Marketplace,E-Commerce & Marketplace,Ideation,Ideation,https://github.com/Worldwidebro/ec-004-shoe-customizer
+null,Sunglasses AI,Marketplace,E-Commerce & Marketplace,Ideation,Ideation,https://github.com/Worldwidebro/ec-005-sunglasses-ai
+null,Dropship Hub,Marketplace,E-Commerce & Marketplace,MVP,mvp,https://github.com/Worldwidebro/ec-006-dropship-hub
+null,Personal Shopper AI,Marketplace,E-Commerce & Marketplace,Ideation,Ideation,https://github.com/Worldwidebro/ec-007-personal-shopper-ai
+null,Custom Sneaker AI,Marketplace,E-Commerce & Marketplace,Ideation,Ideation,https://github.com/Worldwidebro/ec-008-custom-sneaker-ai
+null,Sustainable Fashion AI,Marketplace,E-Commerce & Marketplace,Ideation,Ideation,https://github.com/Worldwidebro/ec-009-sustainable-fashion-ai
+null,Jewelry Designer AI,Marketplace,E-Commerce & Marketplace,Ideation,Ideation,https://github.com/Worldwidebro/ec-010-jewelry-designer-ai
+null,Shopify Autopilot,Technology,Technology & Software,MVP,mvp,https://github.com/Worldwidebro/ec-003-shopify-autopilot
+null,Online Course Platform,Education,Education & Learning,Ideation,Ideation,https://github.com/Worldwidebro/mc-017-online-course-platform
+null,Local Community Hub,Media,Media & Content,Ideation,Ideation,
+null,Process Automation Suite,Operations,Professional Services,Ideation,Ideation,https://github.com/zquestz/s
+null,Blockchain Commerce Platform,Technology,Technology & Software,Ideation,Ideation,https://github.com/hcengineering/platform
+null,GenixBank Lite,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/fin-001-genixbank-lite
+null,Credit Repair Automation,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/fin-002-credit-repair-automation
+null,AI Boss Hub Lite,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/fin-003-ai-boss-hub-lite
+null,GenixBanks AI Treasurer,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/fin-004-genixbanks-ai-treasurer
+null,U-Haul Rental Affiliate,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/fin-005-u-haul-rental-affiliate
+null,Tax Prep & Filing Services,Technology,Technology & Software,unknown,unknown,https://github.com/zquestz/s
+null,Business Credit Building,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/fin-007-business-credit-building
+null,Business Formation Services,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/fin-008-business-formation-services
+null,Crypto Tax Optimizer,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/fin-009-crypto-tax-optimizer
+null,AI-Powered Garbage Collection,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/fin-010-ai-powered-garbage-collection
+null,Automated Bookkeeping,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/fin-011-automated-bookkeeping
+null,Invoice Factoring AI,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/fin-012-invoice-factoring-ai
+null,Charity Donation AI,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/fin-013-charity-donation-ai
+null,Expense Tracker AI,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/fin-014-expense-tracker-ai
+null,Financial Wellness Coach,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/fin-015-financial-wellness-coach
+null,Trade Finance AI,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/fin-016-trade-finance-ai
+null,Remittance AI,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/fin-017-remittance-ai
+null,Wealth Transfer AI,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/fin-018-wealth-transfer-ai
+null,Payment Gateway AI,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/fin-019-payment-gateway-ai
+null,Debt Consolidation AI,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/fin-020-debt-consolidation-ai
+null,Tax Deduction Finder,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/fin-021-tax-deduction-finder
+null,Budget Forecasting AI,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/fin-022-budget-forecasting-ai
+null,Investment Portfolio AI,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/fin-023-investment-portfolio-ai
+null,Crowdfunding AI,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/fin-024-crowdfunding-ai
+null,Escrow Automation,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/fin-025-escrow-automation
+null,Financial Compliance Scanner,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/fin-026-financial-compliance-scanner
+null,Patent Writer AI,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/fin-027-patent-writer-ai
+null,Legal Analyzer AI,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/fin-028-legal-analyzer-ai
+null,Compliance Wallet SaaS,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/fin-029-compliance-wallet-saas
+null,Local SEO Ranker AI,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/fin-030-local-seo-ranker-ai
+null,Investor Dashboard Builder,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/fin-031-investor-dashboard-builder
+null,Legal Toolkit AI,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/fin-032-legal-toolkit-ai
+null,AI Tax Preparation Service,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/fin-033-ai-tax-preparation-service
+null,Payroll Automation,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/fin-034-payroll-automation
+null,Insurance Underwriting AI,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/fin-035-insurance-underwriting-ai
+null,Angels in Daylight,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/ec-001-angels-in-daylight
+null,New World Apparel,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/ec-002-new-world-apparel
+null,Shopify Autopilot,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/ec-003-shopify-autopilot
+null,Shoe Customizer,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/ec-004-shoe-customizer
+null,Sunglasses AI,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/ec-005-sunglasses-ai
+null,Dropship Hub,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/ec-006-dropship-hub
+null,Personal Shopper AI,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/ec-007-personal-shopper-ai
+null,Custom Sneaker AI,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/ec-008-custom-sneaker-ai
+null,Sustainable Fashion AI,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/ec-009-sustainable-fashion-ai
+null,Jewelry Designer AI,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/ec-010-jewelry-designer-ai
+null,Shopify Autopilot,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/ec-003-shopify-autopilot
+null,Online Course Platform,Technology,Technology & Software,unknown,unknown,https://github.com/Worldwidebro/mc-017-online-course-platform
+null,Local Community Hub,Technology,Technology & Software,unknown,unknown,
+null,Process Automation Suite,Technology,Technology & Software,unknown,unknown,https://github.com/zquestz/s
+null,Blockchain Commerce Platform,Technology,Technology & Software,unknown,unknown,https://github.com/hcengineering/platform
+null,Property Holdings,Real Estate,Real Estate,planned,planned,https://github.com/zquestz/s

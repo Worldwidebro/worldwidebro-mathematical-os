@@ -1,4 +1,6 @@
-# Worldwidebro Holdings — Complete Private Enterprise Architecture
+[[STARTHERE]] | [[REALITY]] | [[ANTIGRAVITY]] | [[_SYSTEMS/INTEGRATED-SYSTEM-ARCHITECTURE|Integrated Architecture]]
+
+# Worldwidebro Group — Complete Private Enterprise Architecture
 
 **Model:** Family Office + Holding Company + Investment Platform + Operating Company Network + Shared Services  
 **Reference:** Walton Enterprises + Cascade Investment + Pontegadea (hybrid model)  
@@ -209,3 +211,11 @@ YOU / PRINCIPAL
 ---
 
 **Generated:** 2026-09-09 | **Version:** 2.0
+
+---
+
+## Connected Systems & Wiki Links
+- **Integrated System Architecture:** [[_SYSTEMS/INTEGRATED-SYSTEM-ARCHITECTURE|INTEGRATED-SYSTEM-ARCHITECTURE.md]]
+- **Master Operating Contract:** [[ANTIGRAVITY|ANTIGRAVITY.md]]
+- **Master Truth Ledger:** [[REALITY|REALITY.md]]
+- **Start Here:** [[STARTHERE|STARTHERE.md]]

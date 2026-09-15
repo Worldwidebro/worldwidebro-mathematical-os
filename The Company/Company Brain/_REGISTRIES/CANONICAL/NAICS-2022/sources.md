@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[_REGISTRIES/CANONICAL/NAICS-2022/README|NAICS Index]]
+
 # Data Sources & Provenance: 2022 NAICS
 
 ## 1. Primary Source Provenance

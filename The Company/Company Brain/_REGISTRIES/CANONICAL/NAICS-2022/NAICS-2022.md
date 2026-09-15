@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[_REGISTRIES/CANONICAL/NAICS-2022/README|NAICS Index]]
+
 # Official 2022 NAICS Structure & Labor Market Taxonomy
 
 > **Standard:** North American Industry Classification System (United States, 2022)

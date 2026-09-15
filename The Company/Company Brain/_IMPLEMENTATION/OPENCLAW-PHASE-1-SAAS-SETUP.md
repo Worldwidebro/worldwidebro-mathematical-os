@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[_IMPLEMENTATION/EXECUTION-SUMMARY|Execution Summary]]
+
 # OPENCLAW PHASE 1: SaaS Setup (10 minutes)
 
 **Status:** Execute immediately  
@@ -13,12 +15,12 @@
 2. **Click "Sign Up"**
    - Email: winnerscirclewcllc@gmail.com
    - Password: [create strong password]
-   - Organization: Worldwidebro Holdings
+   - Organization: Worldwidebro Group
 
 3. **Verify Email** (check inbox)
 
 4. **Complete Setup:**
-   - Organization name: Worldwidebro Holdings
+   - Organization name: Worldwidebro Group
    - Your name: [Your name]
    - Use case: Contract management for ventures
 

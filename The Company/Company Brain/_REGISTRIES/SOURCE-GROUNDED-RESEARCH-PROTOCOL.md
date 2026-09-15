@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[ANTIGRAVITY]]
+
 # SOURCE-GROUNDED RESEARCH PROTOCOL
 **Authoritative Foundation for Phase 3 Research Automation**
 

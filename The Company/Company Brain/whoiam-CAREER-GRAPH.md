@@ -56,7 +56,7 @@ employment:
     revenue_impact: ""
 
 # Example structure:
-  - company: "Worldwidebro Holdings"
+  - company: "Worldwidebro Group"
     title: "Infrastructure Architect"
     years: "2024-present"
     key_achievements:

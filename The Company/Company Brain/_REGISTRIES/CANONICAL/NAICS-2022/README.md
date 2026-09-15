@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[00-CONSTITUTION/SECTOR-TAXONOMY-MASTER|Sector Taxonomy]]
+
 # 2022 NAICS Official Taxonomy Package — OPS-001
 
 This directory contains the canonical, fully normalized 2022 North American Industry Classification System (NAICS) taxonomy extracted directly from the official U.S. Census Bureau structure file.

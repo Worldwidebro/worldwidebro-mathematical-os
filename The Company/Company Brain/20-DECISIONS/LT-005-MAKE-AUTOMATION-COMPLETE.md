@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[20-DECISIONS/README|Decisions Index]] | [[CLAUDE]]
+
 # LT-005 Charlotte, NC — Medical Facility Courier Automation
 
 **STATUS: ✅ DEPLOYED** (Make Scenario #6252367)  
@@ -317,3 +319,12 @@ When a facility books:
 ---
 
 **You can have this live and generating revenue TODAY. Let's do it.** 🚀
+
+---
+
+## Connected Systems & Wiki Links
+- **Decisions Index:** [[20-DECISIONS/README|20-DECISIONS/README.md]]
+- **Master Reality Ledger:** [[REALITY|REALITY.md]]
+- **Infrastructure State:** [[CLAUDE|CLAUDE.md]]
+- **Operational Master Contract:** [[ANTIGRAVITY|ANTIGRAVITY.md]]
+- **Start Here:** [[STARTHERE|STARTHERE.md]]

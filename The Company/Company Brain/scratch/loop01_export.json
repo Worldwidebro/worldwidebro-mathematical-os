@@ -1,0 +1,89 @@
+{
+  "name": "HealthRoute Loop 01-02: Lead Acquisition & Decision-Maker Enrichment",
+  "description": "HealthRoute Loop 01-02: Ingests inbound CLIA laboratory inquiries, normalizes contact profiles, and registers leads in Company Brain.",
+  "active": false,
+  "isArchived": false,
+  "nodes": [
+    {
+      "id": "3ecb5859-34e2-4cca-a4e8-703e69687681",
+      "name": "Lead Intake Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        240,
+        300
+      ],
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "healthroute-lead-acquisition"
+      },
+      "webhookId": "c644b077-13c9-4b58-8e6f-1c51ceb2ab8b"
+    },
+    {
+      "id": "219a0eb4-ca2d-425f-a063-bcbee765f3d1",
+      "name": "Persist Lead to Database",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        540,
+        300
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "http://localhost:3000/api/leads"
+      }
+    },
+    {
+      "id": "90606e83-6fff-47d2-b748-08cccb3f92ad",
+      "name": "Trigger Qualification Scorer",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        840,
+        300
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "http://localhost:3000/api/qualification/score"
+      }
+    }
+  ],
+  "connections": {
+    "Lead Intake Webhook": {
+      "main": [
+        [
+          {
+            "node": "Persist Lead to Database",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Persist Lead to Database": {
+      "main": [
+        [
+          {
+            "node": "Trigger Qualification Scorer",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "availableInMCP": true
+  },
+  "staticData": null,
+  "meta": {
+    "aiBuilderAssisted": true
+  },
+  "pinData": null,
+  "activeVersionId": null,
+  "versionCounter": 1,
+  "triggerCount": 0,
+  "tags": [],
+  "activeVersion": null
+}

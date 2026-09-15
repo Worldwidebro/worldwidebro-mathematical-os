@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[CLAUDE]] | [[ANTIGRAVITY]] | [[00-CONSTITUTION/README|Constitution Index]]
+
 # Verification Gate Protocol — Anti-Hallucination Mandate
 
 **Authority:** CLAUDE.md Rule #1 + REALITY.md live truth ledger  
@@ -71,3 +73,12 @@ curl -X POST https://app.vercel.app/api/endpoint -d '{}' | jq .
 **Next step:** Actually verify each one. Production endpoints must return HTTP 200 before any revenue execution.
 
 Co-Authored-By: Claude Haiku 4.5 <noreply@anthropic.com>
+
+---
+
+## Connected Systems & Wiki Links
+- **Master Operational Contract:** [[ANTIGRAVITY|ANTIGRAVITY.md]]
+- **Live Truth Ledger:** [[REALITY|REALITY.md]]
+- **Infrastructure Runtime:** [[CLAUDE|CLAUDE.md]]
+- **Start Here:** [[STARTHERE|STARTHERE.md]]
+- **Constitution Index:** [[00-CONSTITUTION/README|00-CONSTITUTION/README.md]]

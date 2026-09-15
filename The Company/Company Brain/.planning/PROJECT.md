@@ -2,7 +2,7 @@
 
 ## What This Is
 
-Company Brain is an Obsidian markdown vault + light infrastructure (Python FastMCP server, bash CLI, Docker-based Neo4j/Qdrant/Postgres/LiteLLM/Langfuse stack on a remote Mac Studio) that acts as Worldwidebro Holdings' organizational knowledge base and control plane. This GSD project doesn't build new product — it tracks closing the gap between what the vault *claims* (a complete 20-layer/50-domain/500-control-point cognitive architecture) and what's *actually true*, across both the documentation/structure layer and the live infrastructure it describes.
+Company Brain is an Obsidian markdown vault + light infrastructure (Python FastMCP server, bash CLI, Docker-based Neo4j/Qdrant/Postgres/LiteLLM/Langfuse stack on a remote Mac Studio) that acts as Worldwidebro Group' organizational knowledge base and control plane. This GSD project doesn't build new product — it tracks closing the gap between what the vault *claims* (a complete 20-layer/50-domain/500-control-point cognitive architecture) and what's *actually true*, across both the documentation/structure layer and the live infrastructure it describes.
 
 ## Core Value
 

@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[BUSINESS-CAPITAL-DATA-ROOM/5-VENTURE-INTEGRATED-SUMMARY|5-Venture Summary]]
+
 # 📄 The 5-Question Funding Request: WorldwideBro Fleet OS LLC
 
 ```yaml

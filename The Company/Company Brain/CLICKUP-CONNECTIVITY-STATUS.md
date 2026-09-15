@@ -72,7 +72,7 @@
   3. Add to Vercel env vars
   4. Create sync script
 
-### RE-001: Worldwidebro Holdings
+### RE-001: Worldwidebro Group
 - **Status**: ❌ NO CLICKUP INTEGRATION
 - **Code References**: 0 ClickUp mentions
 - **Workspace**: (None configured)

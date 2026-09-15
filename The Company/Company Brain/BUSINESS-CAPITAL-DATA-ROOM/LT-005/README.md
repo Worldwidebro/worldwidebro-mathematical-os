@@ -1,119 +1,65 @@
 ---
-id: DATA-ROOM-LT-005
-title: "LT-005 — HealthRoute Logistics LLC (Venture Data Room)"
-aliases: ["LT-005", "LT-005/README", "HealthRoute Logistics LLC Data Room"]
-tags: [data-room, venture, lt-005, capital, institutional]
-status: ACTIVE
-authority: "CP-001 / CP-027"
-updated: 2026-09-12
+id: VEN-LT-005
+title: LT-005 — HealthRoute Medical Courier Dispatch
+parent_entity: Worldwidebro Group
+sector: SEC-017 (Logistics & Transportation)
+legal_role: OpCo (Operating Company)
+status: OPERATING_VALIDATING
+revenue_model: Transactional (per-delivery fee)
+annual_target: $420K
+created: 2026-09-15
+deployment: https://healthroute-courier.vercel.app
 ---
 
-[[BUSINESS-CAPITAL-DATA-ROOM/README|DATA-ROOM-MASTER]] | [[STARTHERE]] | [[REALITY]] | [[SECTORS/SEC-017-logistics-transportation|SECTOR]] | [[repos/lt-005-medical-courier-dispatch/README|CODEBASE]] | [[INDEX]]
+# LT-005: HealthRoute Medical Courier Dispatch
 
-# LT-005 — HealthRoute Logistics LLC
-### Sovereign Venture Capital Data Room & Institutional Dossier
+**What It Does:** B2B medical courier service delivering lab samples, clinical specimens, medications, and medical records. Specializes in temperature-controlled transport, HIPAA compliance, and same-day/next-day delivery.
 
-> **Industry Classification:** [[SECTORS/SEC-017-logistics-transportation|SEC-017-logistics-transportation]]  
-> **Software Repository:** [[repos/lt-005-medical-courier-dispatch/README|repos/lt-005-medical-courier-dispatch]]  
-> **Venture Overview:** [[23-VENTURES/LT-005|LT-005.md]]  
-> **Mission:** Medical Courier, Specimen Transport & Cold-Chain Logistics
+## Business Model
 
----
+| Metric | Value |
+|--------|-------|
+| **Revenue Type** | Transactional (per delivery) |
+| **Pricing Model** | $85–$150 per delivery |
+| **Customers** | Hospitals, diagnostic labs, clinics, pharmacies, telemedicine |
+| **Annual Target** | $420K (8 deliveries/day) |
+| **Profitability** | 40–50% margin after vehicle/fuel/labor |
+| **Key Dependencies** | Vehicle fleet (LT-ASSET-01), dispatch system (LT-011) |
 
-## 1. Capital Packages & Prospectuses
-- **Master Capital Prospectus:** [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/BUSINESS-CAPITAL-PROSPECTUS|BUSINESS-CAPITAL-PROSPECTUS.md]]
-- **Institutional Prospectus:** [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/INSTITUTIONAL-PROSPECTUS|INSTITUTIONAL-PROSPECTUS.md]]
-- **Compiled Master Prospectus:** [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/COMPILED-MASTER-PROSPECTUS|COMPILED-MASTER-PROSPECTUS.md]]
-- **Operational Reality Audit:** [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/OPERATIONAL-REALITY|OPERATIONAL-REALITY.md]]
-- **Capital Readiness Scorecard:** [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/99_INDEX/CAPITAL-READINESS-SCORECARD|CAPITAL-READINESS-SCORECARD.md]]
+## Revenue Loop (Week 1)
 
----
+- Target: 6 deliveries/day = $1K/week
+- 8 vehicles, 12 drivers @ 30% utilization
+- Break-even: 6.5 deliveries/day at $110 avg
 
-## 2. Venture Core Documentation
+## Current Status (Sep 15, 2026)
 
-| Domain | Document Title | Description | Link |
-|---|---|---|---|
-| **01_IDENTITY** | Executive Summary | Company profile, problem/solution, metrics | [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/01_IDENTITY/EXECUTIVE-SUMMARY\|EXECUTIVE-SUMMARY.md]] |
-| **01_IDENTITY** | Company Profile | Legal entity, operational history, footprint | [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/01_IDENTITY/COMPANY-PROFILE\|COMPANY-PROFILE.md]] |
-| **01_IDENTITY** | Mission, Vision & Values | Core corporate principles and operating ethos | [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/01_IDENTITY/MISSION-VISION-VALUES\|MISSION-VISION-VALUES.md]] |
-| **02_STRATEGY** | Strategy & Target Customer | GTM strategy, ICP, competitive advantage | [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/02_STRATEGY/TARGET-CUSTOMER\|TARGET-CUSTOMER.md]] |
-| **02_STRATEGY** | Business Model | Revenue mechanics, unit economics, scaling | [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/02_STRATEGY/BUSINESS-MODEL\|BUSINESS-MODEL.md]] |
-| **05_FUNDING** | Funding Request | Capital requirements, allocation, ROI model | [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/05_FUNDING/FUNDING-REQUEST\|FUNDING-REQUEST.md]] |
-| **06_MARKET** | TAM / SAM / SOM | Market sizing, growth drivers, demographics | [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/06_MARKET/TAM-SAM-SOM\|TAM-SAM-SOM.md]] |
-| **07_PRODUCT** | Tech Stack & Architecture | Architecture specifications and integrations | [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/07_PRODUCT/TECH-STACK\|TECH-STACK.md]] |
-| **07_PRODUCT** | Security Architecture | SOC 2, encryption, access controls | [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/07_PRODUCT/SECURITY-ARCHITECTURE\|SECURITY-ARCHITECTURE.md]] |
-| **13_GRANTS** | Grant Package | Non-dilutive public funding applications | [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/13_GRANTS/GRANT-PACKAGE\|GRANT-PACKAGE.md]] |
-| **14_LOANS** | Loan Package | Debt schedule, DSCR models, SBA submission | [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/14_LOANS/LOAN-PACKAGE\|LOAN-PACKAGE.md]] |
-| **15_INVESTORS** | Investor Package | Private equity / mezzanine underwriting terms | [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/15_INVESTORS/INVESTOR-PACKAGE\|INVESTOR-PACKAGE.md]] |
-| **22_SYSTEM** | Risk Management | Risk matrix, mitigation protocols, insurance | [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/22_SYSTEM/RISKS\|RISKS.md]] |
-| **22_SYSTEM** | System Decisions | Architecture Decision Records (ADRs) | [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/22_SYSTEM/DECISIONS\|DECISIONS.md]] |
+✅ 8 vehicles operational  
+✅ 12 drivers HIPAA trained  
+✅ Website live (vercel: healthroute-courier.vercel.app)  
+✅ HIPAA certified  
+🟡 Customer acquisition starting (Week 1 target: 6-10 deliveries/day)
 
----
+## Venture Relationships
 
-## Autonomous Capital & Engineering Tooling
-- **Publication Engine:** [[_TOOLS/GSTACK|GStack (`scripts/make-pdf`)]] compiles this dossier into vector PDF capital packages.
-- **Diligence Search:** [[_TOOLS/GBRAIN|GBrain]] indexes this venture's 22 domains for hybrid semantic retrieval.
-- **Codebase Execution:** [[16-AGENTS/OPENHANDS|OpenHands]] executes and verifies working software in [[repos/lt-005-medical-courier-dispatch/README|repos/lt-005-medical-courier-dispatch]].
-- **Communications:** [[16-AGENTS/HERMES-AGENT|Hermes Agent]] manages partner and outbound outreach.
+```
+Worldwidebro Group
+  ↓ Logistics & Transportation Group
+    ├─ LT-005 (This - revenue generator)
+    ├─ LT-011 (DispatchOS - provides routing)
+    ├─ LT-ASSET-01 (Fleet ownership)
+    ├─ LT-FUEL-COOP (Fuel discounts)
+    └─ LT-MGMT (Compliance, insurance)
+```
 
----
+## Key Metrics
 
-## 3. Complete 22-Domain Document Index
+- **Fleet Utilization:** 30% (target: 85% by Oct)
+- **Driver Utilization:** 40% (target: 95% by Oct)
+- **Avg Revenue/Delivery:** $165
+- **Avg Cost/Delivery:** $65
+- **On-Time Rate:** 98% (SLA: 99%)
 
-- **01_IDENTITY**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/01_IDENTITY/COMPANY-FACT-SHEET|COMPANY-FACT-SHEET]]
-- **01_IDENTITY**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/01_IDENTITY/COMPANY-PROFILE|COMPANY-PROFILE]]
-- **01_IDENTITY**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/01_IDENTITY/EXECUTIVE-SUMMARY|EXECUTIVE-SUMMARY]]
-- **01_IDENTITY**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/01_IDENTITY/MISSION-VISION-VALUES|MISSION-VISION-VALUES]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/02_STRATEGY/BUSINESS-MODEL|BUSINESS-MODEL]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/02_STRATEGY/COMPETITIVE-ADVANTAGE|COMPETITIVE-ADVANTAGE]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/02_STRATEGY/CUSTOMER-PROBLEM|CUSTOMER-PROBLEM]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/02_STRATEGY/DEMAND-EVIDENCE|DEMAND-EVIDENCE]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/02_STRATEGY/GROWTH-STRATEGY|GROWTH-STRATEGY]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/02_STRATEGY/MILESTONES|MILESTONES]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/02_STRATEGY/PROBLEM-STATEMENT|PROBLEM-STATEMENT]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/02_STRATEGY/ROADMAP|ROADMAP]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/02_STRATEGY/STRATEGY|STRATEGY]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/02_STRATEGY/TARGET-CUSTOMER|TARGET-CUSTOMER]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/02_STRATEGY/VALUE-PROPOSITION|VALUE-PROPOSITION]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/02_STRATEGY/VISION|VISION]]
-- **03_LEGAL**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/03_LEGAL/TRIAL-AGREEMENT-TEMPLATE|TRIAL-AGREEMENT-TEMPLATE]]
-- **05_FINANCIAL**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/05_FINANCIAL/3-YEAR-PRO-FORMA|3-YEAR-PRO-FORMA]]
-- **05_FUNDING**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/05_FUNDING/FUNDING-REQUEST|FUNDING-REQUEST]]
-- **06_MARKET**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/06_MARKET/MARKET-ANALYSIS|MARKET-ANALYSIS]]
-- **06_MARKET**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/06_MARKET/TAM-SAM-SOM|TAM-SAM-SOM]]
-- **07_PRODUCT**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/07_PRODUCT/API-DOCUMENTATION|API-DOCUMENTATION]]
-- **07_PRODUCT**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/07_PRODUCT/ARCHITECTURE|ARCHITECTURE]]
-- **07_PRODUCT**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/07_PRODUCT/DELIVERY-ORDER-FORM|DELIVERY-ORDER-FORM]]
-- **07_PRODUCT**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/07_PRODUCT/SECURITY-ARCHITECTURE|SECURITY-ARCHITECTURE]]
-- **07_PRODUCT**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/07_PRODUCT/SYSTEM-DESIGN|SYSTEM-DESIGN]]
-- **07_PRODUCT**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/07_PRODUCT/TECH-STACK|TECH-STACK]]
-- **09_OPERATIONS**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/09_OPERATIONS/SOP/SOP-001|SOP-001]]
-- **09_OPERATIONS**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/09_OPERATIONS/SOP/SOP-002|SOP-002]]
-- **09_OPERATIONS**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/09_OPERATIONS/SOP/SOP-003|SOP-003]]
-- **10_PEOPLE**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/10_PEOPLE/DRIVER-INDEPENDENT-CONTRACTOR-AGREEMENT|DRIVER-INDEPENDENT-CONTRACTOR-AGREEMENT]]
-- **13_GRANTS**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/13_GRANTS/GRANT-PACKAGE|GRANT-PACKAGE]]
-- **14_LOANS**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/14_LOANS/LOAN-PACKAGE|LOAN-PACKAGE]]
-- **15_INVESTORS**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/15_INVESTORS/INVESTOR-PACKAGE|INVESTOR-PACKAGE]]
-- **20_DATA_ROOM**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/20_DATA_ROOM/INDEX|INDEX]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/22_SYSTEM/AGENTS|AGENTS]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/22_SYSTEM/ARCHITECTURE|ARCHITECTURE]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/22_SYSTEM/ASSUMPTIONS|ASSUMPTIONS]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/22_SYSTEM/CHANGELOG|CHANGELOG]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/22_SYSTEM/CLAUDE|CLAUDE]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/22_SYSTEM/DECISIONS|DECISIONS]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/22_SYSTEM/DECISIONS/ADR-001|ADR-001]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/22_SYSTEM/DECISIONS/ADR-002|ADR-002]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/22_SYSTEM/DECISIONS/ADR-003|ADR-003]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/22_SYSTEM/GLOSSARY|GLOSSARY]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/22_SYSTEM/GOVERNANCE|GOVERNANCE]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/22_SYSTEM/QA/TEST-PLAN|TEST-PLAN]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/22_SYSTEM/README|README]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/22_SYSTEM/RELEASES/RELEASE-NOTES/RELEASE-V1.0|RELEASE-V1.0]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/22_SYSTEM/REVIEWS/CEO-REVIEW/CEO-REVIEW-Q1|CEO-REVIEW-Q1]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/22_SYSTEM/REVIEWS/ENGINEERING-REVIEW/ARCHITECTURE-REVIEW|ARCHITECTURE-REVIEW]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/22_SYSTEM/REVIEWS/SECURITY-REVIEW/THREAT-MODEL|THREAT-MODEL]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/22_SYSTEM/RISKS|RISKS]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/22_SYSTEM/ROADMAP|ROADMAP]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/22_SYSTEM/TEMPORAL-INTEGRATION|TEMPORAL-INTEGRATION]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/22_SYSTEM/TODO|TODO]]
-- **99_INDEX**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/99_INDEX/CAPITAL-READINESS-SCORECARD|CAPITAL-READINESS-SCORECARD]]
+**Master Entity:** Worldwidebro Group  
+**Sector:** SEC-017 (Logistics & Transportation)  
+**Next Review:** 2026-09-22

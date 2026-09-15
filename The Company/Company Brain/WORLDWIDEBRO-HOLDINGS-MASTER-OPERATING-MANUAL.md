@@ -1,6 +1,6 @@
-# 🏛️ Worldwidebro Holdings — Master Operating Manual
+# 🏛️ Worldwidebro Group — Master Operating Manual
 
-**Authority:** Worldwidebro Holdings (Master Entity) + Worldwidebro Family Trust  
+**Authority:** Worldwidebro Group (Master Entity) + Worldwidebro Family Trust  
 **Scope:** 789 ventures across 35 sectors + consolidated holding company governance  
 **Updated:** 2026-09-09  
 **Version:** 1.0 (Initial Framework)
@@ -514,6 +514,6 @@ Less: Preferred stock liquidation     ($0 if all common)
 
 ---
 
-**Authority:** Worldwidebro Holdings Master Trustee + Board of Directors  
+**Authority:** Worldwidebro Group Master Trustee + Board of Directors  
 **Version:** 1.0 (2026-09-09)  
 **Next Review:** 2026-12-31 (post-Phase 1 execution)

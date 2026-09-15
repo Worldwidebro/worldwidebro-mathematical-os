@@ -418,5 +418,5 @@ This document is a **template**. Each of the 789 ventures should have:
 
 ---
 
-**Authority:** Worldwidebro Holdings + Family Trust  
+**Authority:** Worldwidebro Group + Family Trust  
 **Next Review:** 2026-12-31 (post-Phase 1 execution)

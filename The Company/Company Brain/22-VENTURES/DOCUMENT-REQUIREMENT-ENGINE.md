@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[CAPITAL-READINESS-ENGINE]] | [[BUSINESS-CAPITAL-DATA-ROOM/5-VENTURE-INTEGRATED-SUMMARY|5-Venture Summary]]
+
 # DOCUMENT-REQUIREMENT-ENGINE.md
 
 **Purpose:** Automated logic engine that generates required document sets based on venture context (type, sector, deal, stage, jurisdiction).
@@ -1868,3 +1870,11 @@ END FUNCTION
 **Document Status:** Ready for implementation  
 **Maintained by:** Venture Operations (CP-033)  
 **Last Updated:** 2026-09-06
+
+---
+
+## Connected Systems & Wiki Links
+- **Capital Readiness Engine:** [[CAPITAL-READINESS-ENGINE|CAPITAL-READINESS-ENGINE.md]]
+- **Universal 22-Domain Engine:** [[scripts/venture_os_engine.py]]
+- **Business Capital Data Room:** [[BUSINESS-CAPITAL-DATA-ROOM/5-VENTURE-INTEGRATED-SUMMARY|5-Venture Integrated Summary]]
+- **Master Truth Ledger:** [[REALITY|REALITY.md]]

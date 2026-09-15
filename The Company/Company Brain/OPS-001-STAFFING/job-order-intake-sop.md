@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[23-VENTURES/OPS-001|OPS-001 Spec]] | [[20-DECISIONS/OPS-001-SALES-PIPELINE|OPS-001 Pipeline]] | [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/COMPILED-MASTER-PROSPECTUS|OPS-001 Prospectus]]
+
 # Job Order Intake SOP — OPS-001 Staffing
 
 **Purpose:** Document a new job opening and trigger the matching algorithm  
@@ -221,3 +223,11 @@ OPS-001 → Job Orders
 **MCP Microservice Endpoint:**  
 `OmniRoute /api/matching_algorithm` (auto-called on form submit)
 
+---
+
+## Connected Systems & Wiki Links
+- **Staffing Ops Spec:** [[23-VENTURES/OPS-001|23-VENTURES/OPS-001.md]]
+- **Commercial Sales Pipeline:** [[20-DECISIONS/OPS-001-SALES-PIPELINE|20-DECISIONS/OPS-001-SALES-PIPELINE.md]]
+- **Data Room Prospectus:** [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/COMPILED-MASTER-PROSPECTUS|OPS-001 Master Prospectus]]
+- **Sales Coach CLI:** [[scripts/OPS-001-SALES-COACH]]
+- **Start Here:** [[STARTHERE|STARTHERE.md]]

@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[23-VENTURES/RE-001|RE-001 Spec]] | [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/COMPILED-MASTER-PROSPECTUS|RE-001 Prospectus]] | [[BUSINESS-CAPITAL-DATA-ROOM/5-VENTURE-INTEGRATED-SUMMARY|5-Venture Summary]]
+
 # Deal Status Dashboard Schema
 
 **Scope:** Unified tracking system for venture deal lifecycle, document completion, and capital/partnership milestones across Company Brain operating ventures.
@@ -1114,3 +1116,13 @@ Weekly (Monday 9 AM):
 **Last Revised:** 2026-09-08  
 **Next Review:** 2026-09-15 (When first deal advances to next stage)  
 **Authority:** CP-026 (Financial) + CP-033 (Execution)
+
+---
+
+## Connected Systems & Wiki Links
+- **Venture Specification:** [[23-VENTURES/RE-001|23-VENTURES/RE-001.md]]
+- **Data Room Master Prospectus:** [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/COMPILED-MASTER-PROSPECTUS|RE-001 Master Prospectus]]
+- **5-Venture Integrated Summary:** [[BUSINESS-CAPITAL-DATA-ROOM/5-VENTURE-INTEGRATED-SUMMARY|5-Venture Integrated Summary]]
+- **Sales Pipeline:** [[20-DECISIONS/RE-001-SALES-PIPELINE|RE-001 Sales Pipeline]]
+- **Truth Ledger:** [[REALITY|REALITY.md]]
+- **Start Here:** [[STARTHERE|STARTHERE.md]]

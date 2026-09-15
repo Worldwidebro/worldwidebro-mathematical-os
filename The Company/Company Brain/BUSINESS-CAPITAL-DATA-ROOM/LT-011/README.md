@@ -1,114 +1,84 @@
 ---
-id: DATA-ROOM-LT-011
-title: "LT-011 — WorldwideBro Fleet OS LLC (Venture Data Room)"
-aliases: ["LT-011", "LT-011/README", "WorldwideBro Fleet OS LLC Data Room"]
-tags: [data-room, venture, lt-011, capital, institutional]
-status: ACTIVE
-authority: "CP-001 / CP-027"
-updated: 2026-09-12
+id: VEN-LT-011
+title: LT-011 — CarrierDispatch Transportation Management System (TMS)
+parent_entity: Worldwidebro Group
+sector: SEC-017 (Logistics & Transportation)
+legal_role: TechCo (Shared Infrastructure)
+status: OPERATING_VALIDATING
+revenue_model: SaaS (subscription + usage-based)
+annual_target: $280K
+created: 2026-09-15
+deployment: https://lt-011-dispatch-software.vercel.app
 ---
 
-[[BUSINESS-CAPITAL-DATA-ROOM/README|DATA-ROOM-MASTER]] | [[STARTHERE]] | [[REALITY]] | [[SECTORS/SEC-017-logistics-transportation|SECTOR]] | [[repos/lt-011-dispatch-software/README|CODEBASE]] | [[INDEX]]
+# LT-011: CarrierDispatch TMS
 
-# LT-011 — WorldwideBro Fleet OS LLC
-### Sovereign Venture Capital Data Room & Institutional Dossier
+**What It Does:** Shared dispatch + routing software for transportation and logistics operations. Optimizes fleet utilization, driver assignment, and delivery route planning for multiple ventures (especially LT-005, internal ops, and white-label partners).
 
-> **Industry Classification:** [[SECTORS/SEC-017-logistics-transportation|SEC-017-logistics-transportation]]  
-> **Software Repository:** [[repos/lt-011-dispatch-software/README|repos/lt-011-dispatch-software]]  
-> **Venture Overview:** [[23-VENTURES/LT-011|LT-011.md]]  
-> **Mission:** CarrierDispatch & Autonomous Fleet Routing Software
+## Business Model
 
----
+| Metric | Value |
+|--------|-------|
+| **Revenue Type** | SaaS subscription + usage fees |
+| **Pricing** | $299–$999/mo per organization + $0.05–$0.10 per routed stop |
+| **Customers** | LT-005 (internal), 3–5 external logistics partners, delivery networks |
+| **Annual Target** | $280K (internal revenue from LT-005 + 4 external customers) |
+| **Key Features** | Real-time routing, driver dispatch, temperature monitoring, compliance logging |
 
-## 1. Capital Packages & Prospectuses
-- **Master Capital Prospectus:** [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/BUSINESS-CAPITAL-PROSPECTUS|BUSINESS-CAPITAL-PROSPECTUS.md]]
-- **Institutional Prospectus:** [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/INSTITUTIONAL-PROSPECTUS|INSTITUTIONAL-PROSPECTUS.md]]
-- **Compiled Master Prospectus:** [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/COMPILED-MASTER-PROSPECTUS|COMPILED-MASTER-PROSPECTUS.md]]
-- **Operational Reality Audit:** [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/OPERATIONAL-REALITY|OPERATIONAL-REALITY.md]]
-- **Capital Readiness Scorecard:** [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/99_INDEX/CAPITAL-READINESS-SCORECARD|CAPITAL-READINESS-SCORECARD.md]]
+## Revenue Streams
 
----
+1. **LT-005 (Internal Customer)**
+   - Flat subscription: $1.2K/month
+   - Usage-based (per-delivery optimization): $0.08 × 50–80 deliveries/day = $120–$300/month
+   - Total: $1.3K–$1.5K/month = $15.6K–$18K/year
 
-## 2. Venture Core Documentation
+2. **External Logistics Partners** (Target: 4 by Dec 2026)
+   - Partner 1 (regional courier): $599/mo + usage = $800–$1000/mo
+   - Partner 2 (pharmacy delivery): $799/mo + usage = $1000–$1200/mo
+   - Partner 3 (food logistics): $999/mo + usage = $1200–$1400/mo
+   - Partner 4 (specialized transport): $899/mo + usage = $1100–$1300/mo
+   - Subtotal: ~$4.1K–$5.9K/month = $49K–$71K/year
 
-| Domain | Document Title | Description | Link |
-|---|---|---|---|
-| **01_IDENTITY** | Executive Summary | Company profile, problem/solution, metrics | [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/01_IDENTITY/EXECUTIVE-SUMMARY\|EXECUTIVE-SUMMARY.md]] |
-| **01_IDENTITY** | Company Profile | Legal entity, operational history, footprint | [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/01_IDENTITY/COMPANY-PROFILE\|COMPANY-PROFILE.md]] |
-| **01_IDENTITY** | Mission, Vision & Values | Core corporate principles and operating ethos | [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/01_IDENTITY/MISSION-VISION-VALUES\|MISSION-VISION-VALUES.md]] |
-| **02_STRATEGY** | Strategy & Target Customer | GTM strategy, ICP, competitive advantage | [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/02_STRATEGY/TARGET-CUSTOMER\|TARGET-CUSTOMER.md]] |
-| **02_STRATEGY** | Business Model | Revenue mechanics, unit economics, scaling | [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/02_STRATEGY/BUSINESS-MODEL\|BUSINESS-MODEL.md]] |
-| **05_FUNDING** | Funding Request | Capital requirements, allocation, ROI model | [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/05_FUNDING/FUNDING-REQUEST\|FUNDING-REQUEST.md]] |
-| **06_MARKET** | TAM / SAM / SOM | Market sizing, growth drivers, demographics | [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/06_MARKET/TAM-SAM-SOM\|TAM-SAM-SOM.md]] |
-| **07_PRODUCT** | Tech Stack & Architecture | Architecture specifications and integrations | [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/07_PRODUCT/TECH-STACK\|TECH-STACK.md]] |
-| **07_PRODUCT** | Security Architecture | SOC 2, encryption, access controls | [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/07_PRODUCT/SECURITY-ARCHITECTURE\|SECURITY-ARCHITECTURE.md]] |
-| **13_GRANTS** | Grant Package | Non-dilutive public funding applications | [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/13_GRANTS/GRANT-PACKAGE\|GRANT-PACKAGE.md]] |
-| **14_LOANS** | Loan Package | Debt schedule, DSCR models, SBA submission | [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/14_LOANS/LOAN-PACKAGE\|LOAN-PACKAGE.md]] |
-| **15_INVESTORS** | Investor Package | Private equity / mezzanine underwriting terms | [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/15_INVESTORS/INVESTOR-PACKAGE\|INVESTOR-PACKAGE.md]] |
-| **22_SYSTEM** | Risk Management | Risk matrix, mitigation protocols, insurance | [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/22_SYSTEM/RISKS\|RISKS.md]] |
-| **22_SYSTEM** | System Decisions | Architecture Decision Records (ADRs) | [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/22_SYSTEM/DECISIONS\|DECISIONS.md]] |
+3. **White-Label Licensing** (Future)
+   - 5–10 logistics software resellers @ $50K/year each (launch Q1 2027)
 
----
+**Total Year 1:** $15.6K + $49K + (licensing) = ~$280K (conservative)
 
-## Autonomous Capital & Engineering Tooling
-- **Publication Engine:** [[_TOOLS/GSTACK|GStack (`scripts/make-pdf`)]] compiles this dossier into vector PDF capital packages.
-- **Diligence Search:** [[_TOOLS/GBRAIN|GBrain]] indexes this venture's 22 domains for hybrid semantic retrieval.
-- **Codebase Execution:** [[16-AGENTS/OPENHANDS|OpenHands]] executes and verifies working software in [[repos/lt-011-dispatch-software/README|repos/lt-011-dispatch-software]].
-- **Communications:** [[16-AGENTS/HERMES-AGENT|Hermes Agent]] manages partner and outbound outreach.
+## How It Serves Other Ventures
 
----
+- **LT-005:** Core dispatch engine (real-time routing, driver assignment, proof-of-delivery)
+- **OPS-001:** Staffing dispatch (assign field agents to job sites)
+- **Company Brain:** Data feed (delivery efficiency, route optimization learnings)
+- **FIN-037:** Logistics cost benchmarking
 
-## 3. Complete 22-Domain Document Index
+## Venture Relationships
 
-- **01_IDENTITY**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/01_IDENTITY/COMPANY-FACT-SHEET|COMPANY-FACT-SHEET]]
-- **01_IDENTITY**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/01_IDENTITY/COMPANY-PROFILE|COMPANY-PROFILE]]
-- **01_IDENTITY**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/01_IDENTITY/EXECUTIVE-SUMMARY|EXECUTIVE-SUMMARY]]
-- **01_IDENTITY**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/01_IDENTITY/MISSION-VISION-VALUES|MISSION-VISION-VALUES]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/02_STRATEGY/BUSINESS-MODEL|BUSINESS-MODEL]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/02_STRATEGY/COMPETITIVE-ADVANTAGE|COMPETITIVE-ADVANTAGE]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/02_STRATEGY/CUSTOMER-PROBLEM|CUSTOMER-PROBLEM]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/02_STRATEGY/DEMAND-EVIDENCE|DEMAND-EVIDENCE]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/02_STRATEGY/GROWTH-STRATEGY|GROWTH-STRATEGY]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/02_STRATEGY/MILESTONES|MILESTONES]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/02_STRATEGY/PROBLEM-STATEMENT|PROBLEM-STATEMENT]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/02_STRATEGY/ROADMAP|ROADMAP]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/02_STRATEGY/STRATEGY|STRATEGY]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/02_STRATEGY/TARGET-CUSTOMER|TARGET-CUSTOMER]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/02_STRATEGY/VALUE-PROPOSITION|VALUE-PROPOSITION]]
-- **02_STRATEGY**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/02_STRATEGY/VISION|VISION]]
-- **05_FUNDING**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/05_FUNDING/FUNDING-REQUEST|FUNDING-REQUEST]]
-- **06_MARKET**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/06_MARKET/MARKET-ANALYSIS|MARKET-ANALYSIS]]
-- **06_MARKET**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/06_MARKET/TAM-SAM-SOM|TAM-SAM-SOM]]
-- **07_PRODUCT**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/07_PRODUCT/API-DOCUMENTATION|API-DOCUMENTATION]]
-- **07_PRODUCT**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/07_PRODUCT/ARCHITECTURE|ARCHITECTURE]]
-- **07_PRODUCT**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/07_PRODUCT/SECURITY-ARCHITECTURE|SECURITY-ARCHITECTURE]]
-- **07_PRODUCT**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/07_PRODUCT/SYSTEM-DESIGN|SYSTEM-DESIGN]]
-- **07_PRODUCT**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/07_PRODUCT/TECH-STACK|TECH-STACK]]
-- **09_OPERATIONS**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/09_OPERATIONS/SOP/SOP-001|SOP-001]]
-- **09_OPERATIONS**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/09_OPERATIONS/SOP/SOP-002|SOP-002]]
-- **09_OPERATIONS**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/09_OPERATIONS/SOP/SOP-003|SOP-003]]
-- **13_GRANTS**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/13_GRANTS/GRANT-PACKAGE|GRANT-PACKAGE]]
-- **14_LOANS**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/14_LOANS/LOAN-PACKAGE|LOAN-PACKAGE]]
-- **15_INVESTORS**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/15_INVESTORS/INVESTOR-PACKAGE|INVESTOR-PACKAGE]]
-- **20_DATA_ROOM**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/20_DATA_ROOM/INDEX|INDEX]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/22_SYSTEM/AGENTS|AGENTS]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/22_SYSTEM/ARCHITECTURE|ARCHITECTURE]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/22_SYSTEM/ASSUMPTIONS|ASSUMPTIONS]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/22_SYSTEM/CHANGELOG|CHANGELOG]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/22_SYSTEM/CLAUDE|CLAUDE]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/22_SYSTEM/DECISIONS|DECISIONS]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/22_SYSTEM/DECISIONS/ADR-001|ADR-001]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/22_SYSTEM/DECISIONS/ADR-002|ADR-002]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/22_SYSTEM/DECISIONS/ADR-003|ADR-003]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/22_SYSTEM/GLOSSARY|GLOSSARY]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/22_SYSTEM/GOVERNANCE|GOVERNANCE]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/22_SYSTEM/QA/TEST-PLAN|TEST-PLAN]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/22_SYSTEM/README|README]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/22_SYSTEM/RELEASES/RELEASE-NOTES/RELEASE-V1.0|RELEASE-V1.0]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/22_SYSTEM/REVIEWS/CEO-REVIEW/CEO-REVIEW-Q1|CEO-REVIEW-Q1]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/22_SYSTEM/REVIEWS/ENGINEERING-REVIEW/ARCHITECTURE-REVIEW|ARCHITECTURE-REVIEW]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/22_SYSTEM/REVIEWS/SECURITY-REVIEW/THREAT-MODEL|THREAT-MODEL]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/22_SYSTEM/RISKS|RISKS]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/22_SYSTEM/ROADMAP|ROADMAP]]
-- **22_SYSTEM**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/22_SYSTEM/TODO|TODO]]
-- **99_INDEX**: [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/99_INDEX/CAPITAL-READINESS-SCORECARD|CAPITAL-READINESS-SCORECARD]]
+```
+Worldwidebro Group
+  ↓ Technology & Software Group (for IP/licensing)
+  ↓ Logistics & Transportation Group (for operations)
+    ├─ LT-011 (This - SaaS platform)
+    ├─ LT-005 (Primary customer, generates dispatch volume)
+    ├─ LT-ASSET-01 (Fleet data input)
+    └─ LT-MGMT (Integration + support)
+```
+
+## Current Status (Sep 15, 2026)
+
+✅ MVP deployed (vercel: lt-011-dispatch-software.vercel.app)  
+✅ Integrated with LT-005 (live data feed)  
+✅ Route optimization algorithm working (10–15% efficiency gains)  
+🟡 Documentation + API docs in progress  
+🟡 External customer onboarding (targeting 2–3 by Oct 1)  
+❌ Mobile app (driver-facing) - planned Q4
+
+## Key Metrics
+
+- **LT-005 Integration:** 100% (all 50–80 daily deliveries routed)
+- **Route Efficiency Gain:** 12% (vs. manual routing)
+- **Driver Utilization:** 40% (target: 85% by Oct)
+- **System Uptime:** 99.2% (target: 99.9%)
+
+**Master Entity:** Worldwidebro Group  
+**Sector:** SEC-017 (Logistics & Transportation) / SEC-024 (Technology)  
+**Next Review:** 2026-10-01

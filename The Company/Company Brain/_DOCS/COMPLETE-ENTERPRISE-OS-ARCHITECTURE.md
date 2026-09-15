@@ -1,5 +1,7 @@
+[[STARTHERE]] | [[REALITY]] | [[ANTIGRAVITY]] | [[_SYSTEMS/INTEGRATED-SYSTEM-ARCHITECTURE|Integrated Architecture]]
+
 # Complete Enterprise Operating System Architecture
-## Worldwidebro Holdings + Family Office + Company Brain
+## Worldwidebro Group + Family Office + Company Brain
 
 **Status:** Architecture Design (not implementation)  
 **Purpose:** Define the complete system needed to discover→build/buy→finance→operate→harvest→reinvest at scale  
@@ -284,3 +286,11 @@ That's the north star.
 ---
 
 **Next:** Map the existing 789 into this architecture, identify what's already there vs. what needs to be built.
+
+---
+
+## Connected Systems & Wiki Links
+- **Integrated System Architecture:** [[_SYSTEMS/INTEGRATED-SYSTEM-ARCHITECTURE|INTEGRATED-SYSTEM-ARCHITECTURE.md]]
+- **Master Operating Contract:** [[ANTIGRAVITY|ANTIGRAVITY.md]]
+- **Master Truth Ledger:** [[REALITY|REALITY.md]]
+- **Start Here:** [[STARTHERE|STARTHERE.md]]

@@ -10,7 +10,7 @@ categories:
         name: "Organization"
         id_prefix: "ORG"
         description: "Legal entity or holding company"
-        examples: ["Worldwidebro Holdings"]
+        examples: ["Worldwidebro Group"]
 
       VEN:
         name: "Venture"

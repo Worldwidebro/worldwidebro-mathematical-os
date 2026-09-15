@@ -64,7 +64,7 @@ Company Brain is an enterprise-scale distributed cognitive operating system coor
 **Critical Distinction:** VEX is the **relationship intelligence layer**. Ventures generate revenue through **their own independent business models**, not through VEX.
 
 ```text
-HOLDING COMPANY (Worldwidebro Holdings)
+HOLDING COMPANY (Worldwidebro Group)
 │
 ├─ Capital Allocation (VEX → Neo4j → Capital OS)
 │  └─ Decides which ventures to fund, scale, or shut down

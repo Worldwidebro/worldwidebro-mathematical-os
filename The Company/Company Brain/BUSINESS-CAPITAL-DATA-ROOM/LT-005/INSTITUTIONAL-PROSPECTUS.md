@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[23-VENTURES/LT-005|LT-005 Spec]] | [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/COMPILED-MASTER-PROSPECTUS|LT-005 Prospectus]] | [[BUSINESS-CAPITAL-DATA-ROOM/5-VENTURE-INTEGRATED-SUMMARY|5-Venture Summary]]
+
 # CONFIDENTIAL & PROPRIETARY
 
 ---
@@ -426,3 +428,13 @@ If we can't consolidate routes efficiently, per-route cost exceeds revenue.
 **END OF PROSPECTUS**
 
 *Confidential & Proprietary. Date: September 8, 2026 | Version: 1.0 (Institutional)*
+
+---
+
+## Connected Systems & Wiki Links
+- **Venture Specification:** [[23-VENTURES/LT-005|23-VENTURES/LT-005.md]]
+- **Data Room Master Prospectus:** [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/COMPILED-MASTER-PROSPECTUS|LT-005 Master Prospectus]]
+- **5-Venture Integrated Summary:** [[BUSINESS-CAPITAL-DATA-ROOM/5-VENTURE-INTEGRATED-SUMMARY|5-Venture Integrated Summary]]
+- **Sales Pipeline:** [[20-DECISIONS/LT-005-SALES-PIPELINE|LT-005 Sales Pipeline]]
+- **Truth Ledger:** [[REALITY|REALITY.md]]
+- **Start Here:** [[STARTHERE|STARTHERE.md]]

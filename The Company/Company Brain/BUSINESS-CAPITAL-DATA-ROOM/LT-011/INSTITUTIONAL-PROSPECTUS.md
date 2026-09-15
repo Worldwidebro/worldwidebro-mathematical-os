@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[23-VENTURES/LT-011|LT-011 Spec]] | [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/COMPILED-MASTER-PROSPECTUS|LT-011 Prospectus]] | [[BUSINESS-CAPITAL-DATA-ROOM/5-VENTURE-INTEGRATED-SUMMARY|5-Venture Summary]]
+
 # CONFIDENTIAL & PROPRIETARY
 
 ---
@@ -459,3 +461,13 @@ If interest rates spike, factoring funding cost rises from 0.5% to 2%+, compress
 **END OF PROSPECTUS**
 
 *Confidential & Proprietary. Date: September 8, 2026 | Version: 1.0 (Institutional)*
+
+---
+
+## Connected Systems & Wiki Links
+- **Venture Specification:** [[23-VENTURES/LT-011|23-VENTURES/LT-011.md]]
+- **Data Room Master Prospectus:** [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/COMPILED-MASTER-PROSPECTUS|LT-011 Master Prospectus]]
+- **5-Venture Integrated Summary:** [[BUSINESS-CAPITAL-DATA-ROOM/5-VENTURE-INTEGRATED-SUMMARY|5-Venture Integrated Summary]]
+- **Sales Pipeline:** [[20-DECISIONS/LT-011-SALES-PIPELINE|LT-011 Sales Pipeline]]
+- **Truth Ledger:** [[REALITY|REALITY.md]]
+- **Start Here:** [[STARTHERE|STARTHERE.md]]

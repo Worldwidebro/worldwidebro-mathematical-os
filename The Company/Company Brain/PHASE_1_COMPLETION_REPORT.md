@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[CLAUDE]] | [[ANTIGRAVITY]]
+
 # PHASE 1: KNOWLEDGE GRAPH AGENT ENABLEMENT
 **Completion Report — 2026-09-08**
 
@@ -365,3 +367,11 @@ Ready for deployment and integration with downstream agents (Phase 2).
 **Delivered by:** Claude Haiku 4.5 (2026-09-08)  
 **Authority:** CP-013 (Knowledge Control Plane)  
 **Locked:** Phase 0 architecture complete → Phase 1 execution ready
+
+---
+
+## Connected Systems & Wiki Links
+- **Master Operating Contract:** [[ANTIGRAVITY|ANTIGRAVITY.md]]
+- **Master Truth Ledger:** [[REALITY|REALITY.md]]
+- **Infrastructure Runtime:** [[CLAUDE|CLAUDE.md]]
+- **Start Here:** [[STARTHERE|STARTHERE.md]]

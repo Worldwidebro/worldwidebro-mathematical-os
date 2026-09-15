@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[23-VENTURES/LT-005|LT-005 Spec]] | [[20-DECISIONS/LT-005-SALES-PIPELINE|LT-005 Pipeline]] | [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/COMPILED-MASTER-PROSPECTUS|LT-005 Prospectus]]
+
 # HealthRoute Courier (`LT-005`): Enterprise Email Revenue Funnel State Machine
 ## Architectural Specification & Operational Runbook (Sections A through W)
 
@@ -676,3 +678,12 @@ Every component across the HealthRoute Email Revenue Funnel is strictly categori
 
 ---
 *Signed and Approved for Implementation by System Architecture & Infrastructure Control Plane (CP-027).*
+
+---
+
+## Connected Systems & Wiki Links
+- **HealthRoute Venture Spec:** [[23-VENTURES/LT-005|23-VENTURES/LT-005.md]]
+- **Sales Pipeline:** [[20-DECISIONS/LT-005-SALES-PIPELINE|20-DECISIONS/LT-005-SALES-PIPELINE.md]]
+- **Data Room Prospectus:** [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/COMPILED-MASTER-PROSPECTUS|LT-005 Master Prospectus]]
+- **Sales Coach CLI:** [[scripts/LT-005-SALES-COACH]]
+- **Master Start Here:** [[STARTHERE|STARTHERE.md]]

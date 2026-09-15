@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[ANTIGRAVITY]] | [[_SYSTEMS/INTEGRATED-SYSTEM-ARCHITECTURE|Integrated Architecture]]
+
 ---
 id: ARCH-LOOP-001
 aliases: ['COMPANY_INCOME_LOOPS_ARCHITECTURE', 'THE_MONEY_LOOP_STACK', '27_FEEDBACK_LOOPS']
@@ -422,3 +424,11 @@ python3 _ENGINE/search_n8n_workflows.py "dispatch delivery proof"
 
 ---
 *Verified against Company Brain Architectural Standards (CP-002, CP-027, Rule 1-3).*
+
+---
+
+## Connected Systems & Wiki Links
+- **Integrated System Architecture:** [[_SYSTEMS/INTEGRATED-SYSTEM-ARCHITECTURE|INTEGRATED-SYSTEM-ARCHITECTURE.md]]
+- **Master Operating Contract:** [[ANTIGRAVITY|ANTIGRAVITY.md]]
+- **Revenue Gate Protocol:** [[.agents/rules/REVENUE_GATE|REVENUE_GATE.md]]
+- **Master Start Here:** [[STARTHERE|STARTHERE.md]]

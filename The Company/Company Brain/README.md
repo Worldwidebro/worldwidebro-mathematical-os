@@ -158,5 +158,5 @@ INFORMATION  →  WORK  →  MONEY  →  DECISIONS  →  OUTCOMES  →  LEARNING
 
 ---
 
-**Built for Worldwidebro Holdings**  
+**Built for Worldwidebro Group**  
 **The 500-Point Company Brain**

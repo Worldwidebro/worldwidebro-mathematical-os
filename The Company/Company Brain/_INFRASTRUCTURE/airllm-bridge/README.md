@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[CLAUDE]]
+
 ---
 title: AirLLM OpenAI Bridge — OmniRoute Continuous Coding
 description: Scaffold OpenAI-compatible AirLLM bridge on Studio/T7/LaCie for OmniRoute fallbacks and framework clients

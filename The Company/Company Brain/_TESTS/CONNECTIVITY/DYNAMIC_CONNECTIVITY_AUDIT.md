@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[CLAUDE]] | [[00-CONSTITUTION/VERIFICATION-GATE-PROTOCOL|Verification Gate]]
+
 # Dynamic Connectivity Tests Audit (Real Hardware Only)
 
 **Last Run:** 2026-09-12T16:40:33.647578
@@ -518,3 +520,10 @@ This matrix verifies the enterprise conveyor belt using **STRICT REALITY CHECKS 
 | CONN-498 | Analytics → Product Improvement | 🗂️ STATIC | ✅ PASS | Verified via revenue/analytics operations |
 | CONN-499 | Product Improvement → New Requirements | 🗂️ STATIC | ✅ PASS | Verified via _REGISTRIES tracking |
 | CONN-500 | New Requirements → Entire conveyor belt repeats | 🗂️ STATIC | ✅ PASS | Verified via _REGISTRIES tracking |
+
+---
+
+## Connected Systems & Wiki Links
+- **Verification Gate Protocol:** [[00-CONSTITUTION/VERIFICATION-GATE-PROTOCOL|VERIFICATION-GATE-PROTOCOL.md]]
+- **Master Truth Ledger:** [[REALITY|REALITY.md]]
+- **Start Here:** [[STARTHERE|STARTHERE.md]]

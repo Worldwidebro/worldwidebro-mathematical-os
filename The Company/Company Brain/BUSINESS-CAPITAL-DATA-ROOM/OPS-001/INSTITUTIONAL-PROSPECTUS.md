@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[REALITY]] | [[23-VENTURES/OPS-001|OPS-001 Spec]] | [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/COMPILED-MASTER-PROSPECTUS|OPS-001 Prospectus]] | [[BUSINESS-CAPITAL-DATA-ROOM/5-VENTURE-INTEGRATED-SUMMARY|5-Venture Summary]]
+
 # CONFIDENTIAL & PROPRIETARY
 
 ---
@@ -455,3 +457,13 @@ If placement volume misses >40%, debt service becomes unsustainable.
 **END OF PROSPECTUS**
 
 *Confidential & Proprietary. Date: September 8, 2026 | Version: 1.0 (Institutional)*
+
+---
+
+## Connected Systems & Wiki Links
+- **Venture Specification:** [[23-VENTURES/OPS-001|23-VENTURES/OPS-001.md]]
+- **Data Room Master Prospectus:** [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/COMPILED-MASTER-PROSPECTUS|OPS-001 Master Prospectus]]
+- **5-Venture Integrated Summary:** [[BUSINESS-CAPITAL-DATA-ROOM/5-VENTURE-INTEGRATED-SUMMARY|5-Venture Integrated Summary]]
+- **Sales Pipeline:** [[20-DECISIONS/OPS-001-SALES-PIPELINE|OPS-001 Sales Pipeline]]
+- **Truth Ledger:** [[REALITY|REALITY.md]]
+- **Start Here:** [[STARTHERE|STARTHERE.md]]
