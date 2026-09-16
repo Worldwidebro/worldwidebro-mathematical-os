@@ -1,0 +1,3466 @@
+metadata:
+  version: '1.0'
+  total_agents: 309
+  unique_capabilities: 445
+  last_updated: '2026-09-16'
+agents:
+- id: AGT-001
+  name: Academic Anthropologist
+  slug: academic-anthropologist
+  capabilities:
+  - design exchange systems
+  definition_file: .claude/agents/academic-anthropologist.md
+  status: active
+- id: AGT-002
+  name: Academic Geographer
+  slug: academic-geographer
+  capabilities:
+  - '**experience**: grounded in physical geography'
+  - create river systems that obey hydrology
+  - design trade routes that follow geographic logic
+  definition_file: .claude/agents/academic-geographer.md
+  status: active
+- id: AGT-003
+  name: Academic Historian
+  slug: academic-historian
+  capabilities:
+  - '**experience**: trained in historiography'
+  - "identify anachronisms \u2014 not just obvious ones"
+  definition_file: .claude/agents/academic-historian.md
+  status: active
+- id: AGT-004
+  name: Academic Narratologist
+  slug: academic-narratologist
+  capabilities:
+  - identify the **controlling idea**
+  - distinguish between **story**
+  - track narrative promises
+  - assess thematic consistency across plot threads
+  definition_file: .claude/agents/academic-narratologist.md
+  status: active
+- id: AGT-005
+  name: Academic Psychologist
+  slug: academic-psychologist
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/academic-psychologist.md
+  status: active
+- id: AGT-006
+  name: Academic Statistician
+  slug: academic-statistician
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/academic-statistician.md
+  status: active
+- id: AGT-007
+  name: Accounts Payable Agent
+  slug: accounts-payable-agent
+  capabilities:
+  - route payments through the optimal rail
+  - accept payment requests from other agents
+  - notify the requesting agent when payment confirms
+  definition_file: .claude/agents/accounts-payable-agent.md
+  status: active
+- id: AGT-008
+  name: Agentic Identity Trust
+  slug: agentic-identity-trust
+  capabilities:
+  - ensure identity is portable across frameworks
+  definition_file: .claude/agents/agentic-identity-trust.md
+  status: active
+- id: AGT-009
+  name: Agents Orchestrator
+  slug: agents-orchestrator
+  capabilities:
+  - run entire pipeline with single initial command
+  definition_file: .claude/agents/agents-orchestrator.md
+  status: active
+- id: AGT-010
+  name: Automation Governance Architect
+  slug: automation-governance-architect
+  capabilities:
+  - prefer simple and robust over clever and fragile.
+  - is savings recurring and material?
+  definition_file: .claude/agents/automation-governance-architect.md
+  status: active
+- id: AGT-011
+  name: Blender Addon Engineer
+  slug: blender-addon-engineer
+  capabilities:
+  - '**mandatory**: prefer data api access'
+  - batch tools must log exactly what they changed
+  definition_file: .claude/agents/blender-addon-engineer.md
+  status: active
+- id: AGT-012
+  name: Business Strategist
+  slug: business-strategist
+  capabilities:
+  - the competitive landscape and key market dynamics
+  - prior strategic analyses and their conclusions
+  definition_file: .claude/agents/business-strategist.md
+  status: active
+- id: AGT-013
+  name: Change Management Consultant
+  slug: change-management-consultant
+  capabilities:
+  - sponsor and coalition engagement levels
+  - timeline milestones and go-live dates
+  definition_file: .claude/agents/change-management-consultant.md
+  status: active
+- id: AGT-014
+  name: Chief Financial Officer
+  slug: chief-financial-officer
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/chief-financial-officer.md
+  status: active
+- id: AGT-015
+  name: Corporate Training Designer
+  slug: corporate-training-designer
+  capabilities:
+  - sam model
+  - 'course classification system: general skills'
+  definition_file: .claude/agents/corporate-training-designer.md
+  status: active
+- id: AGT-016
+  name: Customer Service
+  slug: customer-service
+  capabilities:
+  - the nature of their inquiry
+  definition_file: .claude/agents/customer-service.md
+  status: active
+- id: AGT-017
+  name: Customer Success Manager
+  slug: customer-success-manager
+  capabilities:
+  - current health score and the signals driving it
+  definition_file: .claude/agents/customer-success-manager.md
+  status: active
+- id: AGT-018
+  name: Data Consolidation Agent
+  slug: data-consolidation-agent
+  capabilities:
+  - 'analytical: finds patterns in the numbers'
+  - 'comprehensive: no metric left behind'
+  - territory performance summary
+  - individual rep performance with latest metrics
+  - pipeline snapshot by stage
+  definition_file: .claude/agents/data-consolidation-agent.md
+  status: active
+- id: AGT-019
+  name: Data Privacy Officer
+  slug: data-privacy-officer
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/data-privacy-officer.md
+  status: active
+- id: AGT-020
+  name: Design Brand Guardian
+  slug: design-brand-guardian
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/design-brand-guardian.md
+  status: active
+- id: AGT-021
+  name: Design Image Prompt Engineer
+  slug: design-image-prompt-engineer
+  capabilities:
+  - optimize prompts for specific ai platforms
+  - convert photography knowledge
+  definition_file: .claude/agents/design-image-prompt-engineer.md
+  status: active
+- id: AGT-022
+  name: Design Inclusive Visuals Specialist
+  slug: design-inclusive-visuals-specialist
+  capabilities:
+  - annotated prompt architectures
+  definition_file: .claude/agents/design-inclusive-visuals-specialist.md
+  status: active
+- id: AGT-023
+  name: Design Persona Walkthrough
+  slug: design-persona-walkthrough
+  capabilities:
+  - assess every fold against the lift model
+  - prioritize by effort/impact
+  definition_file: .claude/agents/design-persona-walkthrough.md
+  status: active
+- id: AGT-024
+  name: Design Ui Designer
+  slug: design-ui-designer
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/design-ui-designer.md
+  status: active
+- id: AGT-025
+  name: Design Ui Finish Gate Reviewer
+  slug: design-ui-finish-gate-reviewer
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/design-ui-finish-gate-reviewer.md
+  status: active
+- id: AGT-026
+  name: Design Ux Architect
+  slug: design-ux-architect
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/design-ux-architect.md
+  status: active
+- id: AGT-027
+  name: Design Ux Researcher
+  slug: design-ux-researcher
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/design-ux-researcher.md
+  status: active
+- id: AGT-028
+  name: Design Visual Storyteller
+  slug: design-visual-storyteller
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/design-visual-storyteller.md
+  status: active
+- id: AGT-029
+  name: Design Whimsy Injector
+  slug: design-whimsy-injector
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/design-whimsy-injector.md
+  status: active
+- id: AGT-030
+  name: Economy Designer
+  slug: economy-designer
+  capabilities:
+  - instrument the economy for telemetry from day one
+  - model player archetypes
+  - run progression simulations
+  definition_file: .claude/agents/economy-designer.md
+  status: active
+- id: AGT-031
+  name: Engineering Ai Data Remediation Engineer
+  slug: engineering-ai-data-remediation-engineer
+  capabilities:
+  - '**role**: ai data remediation specialist'
+  definition_file: .claude/agents/engineering-ai-data-remediation-engineer.md
+  status: active
+- id: AGT-032
+  name: Engineering Ai Engineer
+  slug: engineering-ai-engineer
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/engineering-ai-engineer.md
+  status: active
+- id: AGT-033
+  name: Engineering Api Platform Engineer
+  slug: engineering-api-platform-engineer
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/engineering-api-platform-engineer.md
+  status: active
+- id: AGT-034
+  name: Engineering Autonomous Optimization Architect
+  slug: engineering-autonomous-optimization-architect
+  capabilities:
+  - '"llm-as-a-judge" evaluation prompts.'
+  - shadow traffic implementations
+  definition_file: .claude/agents/engineering-autonomous-optimization-architect.md
+  status: active
+- id: AGT-035
+  name: Engineering Backend Architect
+  slug: engineering-backend-architect
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/engineering-backend-architect.md
+  status: active
+- id: AGT-036
+  name: Engineering Cms Developer
+  slug: engineering-cms-developer
+  capabilities:
+  - which cms
+  - the design system or component library in use
+  definition_file: .claude/agents/engineering-cms-developer.md
+  status: active
+- id: AGT-037
+  name: Engineering Code Reviewer
+  slug: engineering-code-reviewer
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/engineering-code-reviewer.md
+  status: active
+- id: AGT-038
+  name: Engineering Codebase Onboarding Engineer
+  slug: engineering-codebase-onboarding-engineer
+  capabilities:
+  - explain how modules connect to each other
+  definition_file: .claude/agents/engineering-codebase-onboarding-engineer.md
+  status: active
+- id: AGT-039
+  name: Engineering Data Engineer
+  slug: engineering-data-engineer
+  capabilities:
+  - implement medallion architecture
+  - build incremental and cdc
+  - architect cloud-native data lakehouses on azure
+  definition_file: .claude/agents/engineering-data-engineer.md
+  status: active
+- id: AGT-040
+  name: Engineering Data Visualization Engineer
+  slug: engineering-data-visualization-engineer
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/engineering-data-visualization-engineer.md
+  status: active
+- id: AGT-041
+  name: Engineering Database Optimizer
+  slug: engineering-database-optimizer
+  capabilities:
+  - postgresql optimization and advanced features
+  - explain analyze and query plan interpretation
+  - indexing strategies
+  - schema design
+  - n+1 query detection and resolution
+  definition_file: .claude/agents/engineering-database-optimizer.md
+  status: active
+- id: AGT-042
+  name: Engineering Database Reliability Engineer
+  slug: engineering-database-reliability-engineer
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/engineering-database-reliability-engineer.md
+  status: active
+- id: AGT-043
+  name: Engineering Desktop App Engineer
+  slug: engineering-desktop-app-engineer
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/engineering-desktop-app-engineer.md
+  status: active
+- id: AGT-044
+  name: Engineering Developer Tooling Engineer
+  slug: engineering-developer-tooling-engineer
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/engineering-developer-tooling-engineer.md
+  status: active
+- id: AGT-045
+  name: Engineering Devops Automator
+  slug: engineering-devops-automator
+  capabilities:
+  - implement zero-downtime deployment strategies
+  - implement disaster recovery and backup automation
+  - create multi-environment management
+  - set up automated testing and deployment workflows
+  definition_file: .claude/agents/engineering-devops-automator.md
+  status: active
+- id: AGT-046
+  name: Engineering Drupal Performance
+  slug: engineering-drupal-performance
+  capabilities:
+  - '**measurement**: lighthouse, core web vitals'
+  definition_file: .claude/agents/engineering-drupal-performance.md
+  status: active
+- id: AGT-047
+  name: Engineering Drupal Shopping Cart
+  slug: engineering-drupal-shopping-cart
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/engineering-drupal-shopping-cart.md
+  status: active
+- id: AGT-048
+  name: Engineering Email Intelligence Engineer
+  slug: engineering-email-intelligence-engineer
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/engineering-email-intelligence-engineer.md
+  status: active
+- id: AGT-049
+  name: Engineering Embedded Firmware Engineer
+  slug: engineering-embedded-firmware-engineer
+  capabilities:
+  - implement communication protocols
+  - never use dynamic allocation
+  - never call blocking apis
+  definition_file: .claude/agents/engineering-embedded-firmware-engineer.md
+  status: active
+- id: AGT-050
+  name: Engineering Feishu Integration Developer
+  slug: engineering-feishu-integration-developer
+  capabilities:
+  - 'custom bots: webhook-based message push bots'
+  definition_file: .claude/agents/engineering-feishu-integration-developer.md
+  status: active
+- id: AGT-051
+  name: Engineering Filament Optimization Specialist
+  slug: engineering-filament-optimization-specialist
+  capabilities:
+  - '**never** add helper text to obvious fields'
+  definition_file: .claude/agents/engineering-filament-optimization-specialist.md
+  status: active
+- id: AGT-052
+  name: Engineering Finops Engineer
+  slug: engineering-finops-engineer
+  capabilities:
+  - 'optimize the big levers in order: eliminate waste'
+  definition_file: .claude/agents/engineering-finops-engineer.md
+  status: active
+- id: AGT-053
+  name: Engineering Frontend Developer
+  slug: engineering-frontend-developer
+  capabilities:
+  - build editor extensions with navigation commands
+  - build progressive web apps
+  definition_file: .claude/agents/engineering-frontend-developer.md
+  status: active
+- id: AGT-054
+  name: Engineering Gaussdb Expert
+  slug: engineering-gaussdb-expert
+  capabilities:
+  - "\u2705 **gaussdb**"
+  - "\u274C **gaussdb"
+  - '**cn'
+  - '**dn'
+  - '**gtm'
+  definition_file: .claude/agents/engineering-gaussdb-expert.md
+  status: active
+- id: AGT-055
+  name: Engineering Git Workflow Master
+  slug: engineering-git-workflow-master
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/engineering-git-workflow-master.md
+  status: active
+- id: AGT-056
+  name: Engineering I18N Engineer
+  slug: engineering-i18n-engineer
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/engineering-i18n-engineer.md
+  status: active
+- id: AGT-057
+  name: Engineering Identity Access Engineer
+  slug: engineering-identity-access-engineer
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/engineering-identity-access-engineer.md
+  status: active
+- id: AGT-058
+  name: Engineering Incident Response Commander
+  slug: engineering-incident-response-commander
+  capabilities:
+  - build incident tooling integrations
+  definition_file: .claude/agents/engineering-incident-response-commander.md
+  status: active
+- id: AGT-059
+  name: Engineering Iot Fleet Engineer
+  slug: engineering-iot-fleet-engineer
+  capabilities:
+  - build telemetry pipelines over mqtt
+  definition_file: .claude/agents/engineering-iot-fleet-engineer.md
+  status: active
+- id: AGT-060
+  name: Engineering It Service Manager
+  slug: engineering-it-service-manager
+  capabilities:
+  - pending changes in the change advisory board
+  - cmdb coverage and known configuration gaps
+  - current csi
+  definition_file: .claude/agents/engineering-it-service-manager.md
+  status: active
+- id: AGT-061
+  name: Engineering Knowledge Graph Engineer
+  slug: engineering-knowledge-graph-engineer
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/engineering-knowledge-graph-engineer.md
+  status: active
+- id: AGT-062
+  name: Engineering Llm Post Training Engineer
+  slug: engineering-llm-post-training-engineer
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/engineering-llm-post-training-engineer.md
+  status: active
+- id: AGT-063
+  name: Engineering Minimal Change Engineer
+  slug: engineering-minimal-change-engineer
+  capabilities:
+  - don't rewrite working code in a "cleaner" style
+  - "don't \"while i'm here\u2026\" anything"
+  definition_file: .claude/agents/engineering-minimal-change-engineer.md
+  status: active
+- id: AGT-064
+  name: Engineering Mobile App Builder
+  slug: engineering-mobile-app-builder
+  capabilities:
+  - implement biometric authentication
+  definition_file: .claude/agents/engineering-mobile-app-builder.md
+  status: active
+- id: AGT-065
+  name: Engineering Mobile Release Engineer
+  slug: engineering-mobile-release-engineer
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/engineering-mobile-release-engineer.md
+  status: active
+- id: AGT-066
+  name: Engineering Multi Agent Systems Architect
+  slug: engineering-multi-agent-systems-architect
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/engineering-multi-agent-systems-architect.md
+  status: active
+- id: AGT-067
+  name: Engineering Network Engineer
+  slug: engineering-network-engineer
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/engineering-network-engineer.md
+  status: active
+- id: AGT-068
+  name: Engineering Orgscript Engineer
+  slug: engineering-orgscript-engineer
+  capabilities:
+  - '**experience**: you''ve designed dsls'
+  - implement ast validation and semantic checks.
+  - generate and refine downstream exporters
+  - refactor messy standard operating procedures
+  definition_file: .claude/agents/engineering-orgscript-engineer.md
+  status: active
+- id: AGT-069
+  name: Engineering Payments Billing Engineer
+  slug: engineering-payments-billing-engineer
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/engineering-payments-billing-engineer.md
+  status: active
+- id: AGT-070
+  name: Engineering Privacy Engineer
+  slug: engineering-privacy-engineer
+  capabilities:
+  - 'build automated subject-rights pipelines: access'
+  definition_file: .claude/agents/engineering-privacy-engineer.md
+  status: active
+- id: AGT-071
+  name: Engineering Prompt Engineer
+  slug: engineering-prompt-engineer
+  capabilities:
+  - "always version prompts \u2014 treat them like code"
+  definition_file: .claude/agents/engineering-prompt-engineer.md
+  status: active
+- id: AGT-072
+  name: Engineering Rag Pipeline Engineer
+  slug: engineering-rag-pipeline-engineer
+  capabilities:
+  - configure vector indexes
+  definition_file: .claude/agents/engineering-rag-pipeline-engineer.md
+  status: active
+- id: AGT-073
+  name: Engineering Rapid Prototyper
+  slug: engineering-rapid-prototyper
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/engineering-rapid-prototyper.md
+  status: active
+- id: AGT-074
+  name: Engineering Realtime Collaboration Engineer
+  slug: engineering-realtime-collaboration-engineer
+  capabilities:
+  - ship presence and awareness
+  definition_file: .claude/agents/engineering-realtime-collaboration-engineer.md
+  status: active
+- id: AGT-075
+  name: Engineering Rust Refactoring Specialist
+  slug: engineering-rust-refactoring-specialist
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/engineering-rust-refactoring-specialist.md
+  status: active
+- id: AGT-076
+  name: Engineering Search Relevance Engineer
+  slug: engineering-search-relevance-engineer
+  capabilities:
+  - engineer queries that separate recall
+  definition_file: .claude/agents/engineering-search-relevance-engineer.md
+  status: active
+- id: AGT-077
+  name: Engineering Section 508 Specialist
+  slug: engineering-section-508-specialist
+  capabilities:
+  - '**conformance standards**: section 508'
+  definition_file: .claude/agents/engineering-section-508-specialist.md
+  status: active
+- id: AGT-078
+  name: Engineering Senior Developer
+  slug: engineering-senior-developer
+  capabilities:
+  - every pixel should feel intentional and refined
+  - performance and beauty must coexist
+  - innovation over convention when it enhances ux
+  - master of laravel/livewire integration patterns
+  - fluxui component expert
+  definition_file: .claude/agents/engineering-senior-developer.md
+  status: active
+- id: AGT-079
+  name: Engineering Software Architect
+  slug: engineering-software-architect
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/engineering-software-architect.md
+  status: active
+- id: AGT-080
+  name: Engineering Solidity Smart Contract Engineer
+  slug: engineering-solidity-smart-contract-engineer
+  capabilities:
+  - implement battle-tested token standards
+  definition_file: .claude/agents/engineering-solidity-smart-contract-engineer.md
+  status: active
+- id: AGT-081
+  name: Engineering Sre
+  slug: engineering-sre
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/engineering-sre.md
+  status: active
+- id: AGT-082
+  name: Engineering Technical Writer
+  slug: engineering-technical-writer
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/engineering-technical-writer.md
+  status: active
+- id: AGT-083
+  name: Engineering Uswds Developer
+  slug: engineering-uswds-developer
+  capabilities:
+  - the uswds version in use, the integration method
+  - "the cms integration context \u2014 drupal"
+  - '**cms integration**: uswds in drupal'
+  definition_file: .claude/agents/engineering-uswds-developer.md
+  status: active
+- id: AGT-084
+  name: Engineering Video Streaming Engineer
+  slug: engineering-video-streaming-engineer
+  capabilities:
+  - 'protect premium content correctly: multi-drm'
+  definition_file: .claude/agents/engineering-video-streaming-engineer.md
+  status: active
+- id: AGT-085
+  name: Engineering Voice Ai Integration Engineer
+  slug: engineering-voice-ai-integration-engineer
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/engineering-voice-ai-integration-engineer.md
+  status: active
+- id: AGT-086
+  name: Engineering Webassembly Engineer
+  slug: engineering-webassembly-engineer
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/engineering-webassembly-engineer.md
+  status: active
+- id: AGT-087
+  name: Engineering Wechat Mini Program Developer
+  slug: engineering-wechat-mini-program-developer
+  capabilities:
+  - implement wechat pay
+  - connect mini programs with official accounts
+  - stay within wechat's package size limits
+  - handle wechat's unique networking constraints
+  definition_file: .claude/agents/engineering-wechat-mini-program-developer.md
+  status: active
+- id: AGT-088
+  name: Engineering Wordpress Performance
+  slug: engineering-wordpress-performance
+  capabilities:
+  - '**caching layers**: page caching, object caching'
+  - '**measurement**: lighthouse, core web vitals'
+  definition_file: .claude/agents/engineering-wordpress-performance.md
+  status: active
+- id: AGT-089
+  name: Engineering Wordpress Shopping Cart
+  slug: engineering-wordpress-shopping-cart
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/engineering-wordpress-shopping-cart.md
+  status: active
+- id: AGT-090
+  name: Esg Sustainability Officer
+  slug: esg-sustainability-officer
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/esg-sustainability-officer.md
+  status: active
+- id: AGT-091
+  name: Finance Bookkeeper Controller
+  slug: finance-bookkeeper-controller
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/finance-bookkeeper-controller.md
+  status: active
+- id: AGT-092
+  name: Finance Financial Analyst
+  slug: finance-financial-analyst
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/finance-financial-analyst.md
+  status: active
+- id: AGT-093
+  name: Finance Fpa Analyst
+  slug: finance-fpa-analyst
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/finance-fpa-analyst.md
+  status: active
+- id: AGT-094
+  name: Finance Investment Researcher
+  slug: finance-investment-researcher
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/finance-investment-researcher.md
+  status: active
+- id: AGT-095
+  name: Finance Tax Strategist
+  slug: finance-tax-strategist
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/finance-tax-strategist.md
+  status: active
+- id: AGT-096
+  name: Game Audio Engineer
+  slug: game-audio-engineer
+  capabilities:
+  - define audio budgets
+  - audio parameters
+  - 'compressed audio format by asset type: vorbis'
+  definition_file: .claude/agents/game-audio-engineer.md
+  status: active
+- id: AGT-097
+  name: Game Designer
+  slug: game-designer
+  capabilities:
+  - author game design documents
+  - every economy variable
+  definition_file: .claude/agents/game-designer.md
+  status: active
+- id: AGT-098
+  name: Gis 3D Scene Developer
+  slug: gis-3d-scene-developer
+  capabilities:
+  - load and render lidar point clouds in web scenes
+  - build terrain models from dem/dtm/dsm raster data
+  - configure vertical exaggeration for visual impact
+  - handle coastline and water surface rendering
+  - configure public vs authenticated scene access
+  definition_file: .claude/agents/gis-3d-scene-developer.md
+  status: active
+- id: AGT-099
+  name: Gis Analyst
+  slug: gis-analyst
+  capabilities:
+  - produce maps for print
+  - export and format results for non-gis audiences
+  definition_file: .claude/agents/gis-analyst.md
+  status: active
+- id: AGT-100
+  name: Gis Bim Specialist
+  slug: gis-bim-specialist
+  capabilities:
+  - convert revit / ifc models to gis feature classes
+  - handle lod
+  - georeference building models correctly
+  - generate floor plans from bim models
+  - 'define digital twin data model: static'
+  definition_file: .claude/agents/gis-bim-specialist.md
+  status: active
+- id: AGT-101
+  name: Gis Cartography Designer
+  slug: gis-cartography-designer
+  capabilities:
+  - 'choose appropriate color schemes: sequential'
+  - ensure colorblind-safe palettes
+  - handle multi-language labels and directional text
+  definition_file: .claude/agents/gis-cartography-designer.md
+  status: active
+- id: AGT-102
+  name: Gis Drone Reality Mapping
+  slug: gis-drone-reality-mapping
+  capabilities:
+  - plan for gcp
+  - classify ground, vegetation, buildings, water
+  definition_file: .claude/agents/gis-drone-reality-mapping.md
+  status: active
+- id: AGT-103
+  name: Gis Geoai Ml Engineer
+  slug: gis-geoai-ml-engineer
+  capabilities:
+  - road network extraction from aerial imagery
+  - tree canopy / vegetation extraction
+  - land use / land cover classification
+  - water body extraction and change monitoring
+  - 'deployment: onnx export, hf spaces, edge devices'
+  definition_file: .claude/agents/gis-geoai-ml-engineer.md
+  status: active
+- id: AGT-104
+  name: Gis Geoprocessing Specialist
+  slug: gis-geoprocessing-specialist
+  capabilities:
+  - implement tool validation logic
+  definition_file: .claude/agents/gis-geoprocessing-specialist.md
+  status: active
+- id: AGT-105
+  name: Gis Qa Engineer
+  slug: gis-qa-engineer
+  capabilities:
+  - fgdc / iso 19115 / dublin core compliance
+  - 'attribute accuracy: confusion matrix, error rate'
+  - 'completeness: are all expected features present?'
+  - web service availability and response time
+  definition_file: .claude/agents/gis-qa-engineer.md
+  status: active
+- id: AGT-106
+  name: Gis Solution Engineer
+  slug: gis-solution-engineer
+  capabilities:
+  - demos must work offline
+  - tell a story with the demo, not just features
+  definition_file: .claude/agents/gis-solution-engineer.md
+  status: active
+- id: AGT-107
+  name: Gis Spatial Data Engineer
+  slug: gis-spatial-data-engineer
+  capabilities:
+  - '**memory**: you remember format quirks'
+  - standardize datetime formats, coordinate formats
+  - set up scheduled data refreshes from live sources
+  definition_file: .claude/agents/gis-spatial-data-engineer.md
+  status: active
+- id: AGT-108
+  name: Gis Spatial Data Scientist
+  slug: gis-spatial-data-scientist
+  capabilities:
+  - origin-destination flow analysis
+  - least-cost path and connectivity modeling
+  - commuter shed / service area estimation
+  - all analysis as documented scripts or notebooks
+  definition_file: .claude/agents/gis-spatial-data-scientist.md
+  status: active
+- id: AGT-109
+  name: Gis Technical Consultant
+  slug: gis-technical-consultant
+  capabilities:
+  - design migration paths from legacy systems
+  definition_file: .claude/agents/gis-technical-consultant.md
+  status: active
+- id: AGT-110
+  name: Gis Web Gis Developer
+  slug: gis-web-gis-developer
+  capabilities:
+  - implement auto-refresh for dashboard data
+  - build custom rest endpoints with python
+  - vector tiles for fast rendering of large datasets
+  definition_file: .claude/agents/gis-web-gis-developer.md
+  status: active
+- id: AGT-111
+  name: Godot Gameplay Scripter
+  slug: godot-gameplay-scripter
+  capabilities:
+  - a script must `extend` at least `object`
+  - typed arrays
+  definition_file: .claude/agents/godot-gameplay-scripter.md
+  status: active
+- id: AGT-112
+  name: Godot Multiplayer Engineer
+  slug: godot-multiplayer-engineer
+  capabilities:
+  - '**mandatory**: the server'
+  - '`is_multiplayer_authority'
+  - '`@rpc'
+  - never use `@rpc
+  definition_file: .claude/agents/godot-multiplayer-engineer.md
+  status: active
+- id: AGT-113
+  name: Godot Shader Developer
+  slug: godot-shader-developer
+  capabilities:
+  - '`texture'
+  - 'target the correct renderer: forward+'
+  definition_file: .claude/agents/godot-shader-developer.md
+  status: active
+- id: AGT-114
+  name: Government Digital Presales Consultant
+  slug: government-digital-presales-consultant
+  capabilities:
+  - '**role**: full-lifecycle presales expert for tog'
+  - 'extract key signals from policy documents:'
+  definition_file: .claude/agents/government-digital-presales-consultant.md
+  status: active
+- id: AGT-115
+  name: Grant Writer
+  slug: grant-writer
+  capabilities:
+  - '**letter of inquiry'
+  definition_file: .claude/agents/grant-writer.md
+  status: active
+- id: AGT-116
+  name: Gsd Advisor Researcher
+  slug: gsd-advisor-researcher
+  capabilities:
+  - '`<gray_area>` -- area name and description'
+  - '`<project_context>` -- brief project info'
+  definition_file: .claude/agents/gsd-advisor-researcher.md
+  status: active
+- id: AGT-117
+  name: Gsd Ai Researcher
+  slug: gsd-ai-researcher
+  capabilities:
+  - '`framework`: selected framework name and version'
+  - '`ai_spec_path`: path to ai-spec.md'
+  - '`phase_context`: phase name and goal'
+  - '`context_path`: path to context.md if it exists'
+  definition_file: .claude/agents/gsd-ai-researcher.md
+  status: active
+- id: AGT-118
+  name: Gsd Assumptions Analyzer
+  slug: gsd-assumptions-analyzer
+  capabilities:
+  - read 5-15 most relevant source files
+  - '`<phase>` -- phase number and name'
+  - '`<codebase_hints>` -- scout results'
+  - '**areas:** 3-5 assumption areas'
+  definition_file: .claude/agents/gsd-assumptions-analyzer.md
+  status: active
+- id: AGT-119
+  name: Gsd Code Fixer
+  slug: gsd-code-fixer
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/gsd-code-fixer.md
+  status: active
+- id: AGT-120
+  name: Gsd Code Reviewer
+  slug: gsd-code-reviewer
+  capabilities:
+  - stopping at obvious surface issues
+  definition_file: .claude/agents/gsd-code-reviewer.md
+  status: active
+- id: AGT-121
+  name: Gsd Codebase Mapper
+  slug: gsd-codebase-mapper
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/gsd-codebase-mapper.md
+  status: active
+- id: AGT-122
+  name: Gsd Debug Session Manager
+  slug: gsd-debug-session-manager
+  capabilities:
+  - "`slug` \u2014 session identifier"
+  - "`tdd_mode` \u2014 boolean; true if tdd gate is active"
+  - "`goal` \u2014 `find_root_cause_only` | `find_and_fix`"
+  definition_file: .claude/agents/gsd-debug-session-manager.md
+  status: active
+- id: AGT-123
+  name: Gsd Debugger
+  slug: gsd-debugger
+  capabilities:
+  - '`/gsd-debug` command'
+  - '`diagnose-issues` workflow'
+  - investigate autonomously
+  - maintain persistent debug file state
+  - return structured results
+  definition_file: .claude/agents/gsd-debugger.md
+  status: active
+- id: AGT-124
+  name: Gsd Doc Classifier
+  slug: gsd-doc-classifier
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/gsd-doc-classifier.md
+  status: active
+- id: AGT-125
+  name: Gsd Doc Synthesizer
+  slug: gsd-doc-synthesizer
+  capabilities:
+  - 'source: docs/adr/0003-choose-postgres.md'
+  definition_file: .claude/agents/gsd-doc-synthesizer.md
+  status: active
+- id: AGT-126
+  name: Gsd Doc Verifier
+  slug: gsd-doc-verifier
+  capabilities:
+  - '`doc_path`: path to the doc file to verify'
+  - '`project_root`: absolute path to project root'
+  - "**blocker** \u2014 a claim is demonstrably false"
+  definition_file: .claude/agents/gsd-doc-verifier.md
+  status: active
+- id: AGT-127
+  name: Gsd Doc Writer
+  slug: gsd-doc-writer
+  capabilities:
+  - '`mode`: `create`'
+  - '`project_context`: json from docs-init output'
+  - '`existing_content`:'
+  - '`scope`:'
+  - '`failures`:'
+  definition_file: .claude/agents/gsd-doc-writer.md
+  status: active
+- id: AGT-128
+  name: Gsd Domain Researcher
+  slug: gsd-domain-researcher
+  capabilities:
+  - '`phase_name`, `phase_goal`: from roadmap.md'
+  - '`ai_spec_path`: path to ai-spec.md'
+  - '`context_path`: path to context.md if exists'
+  definition_file: .claude/agents/gsd-domain-researcher.md
+  status: active
+- id: AGT-129
+  name: Gsd Eval Auditor
+  slug: gsd-eval-auditor
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/gsd-eval-auditor.md
+  status: active
+- id: AGT-130
+  name: Gsd Eval Planner
+  slug: gsd-eval-planner
+  capabilities:
+  - '`framework`: selected framework'
+  - '`phase_name`, `phase_goal`: from roadmap.md'
+  - '`ai_spec_path`: path to ai-spec.md'
+  - '`context_path`: path to context.md if exists'
+  definition_file: .claude/agents/gsd-eval-planner.md
+  status: active
+- id: AGT-131
+  name: Gsd Executor
+  slug: gsd-executor
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/gsd-executor.md
+  status: active
+- id: AGT-132
+  name: Gsd Framework Selector
+  slug: gsd-framework-selector
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/gsd-framework-selector.md
+  status: active
+- id: AGT-133
+  name: Gsd Integration Checker
+  slug: gsd-integration-checker
+  capabilities:
+  - tracing only the first link in a data chain
+  definition_file: .claude/agents/gsd-integration-checker.md
+  status: active
+- id: AGT-134
+  name: Gsd Intel Updater
+  slug: gsd-intel-updater
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/gsd-intel-updater.md
+  status: active
+- id: AGT-135
+  name: Gsd Mempalace Curator
+  slug: gsd-mempalace-curator
+  capabilities:
+  - '**mode**'
+  definition_file: .claude/agents/gsd-mempalace-curator.md
+  status: active
+- id: AGT-136
+  name: Gsd Nyquist Auditor
+  slug: gsd-nyquist-auditor
+  capabilities:
+  - "**warning** \u2014 gap test passes but with caveats"
+  definition_file: .claude/agents/gsd-nyquist-auditor.md
+  status: active
+- id: AGT-137
+  name: Gsd Pattern Mapper
+  slug: gsd-pattern-mapper
+  capabilities:
+  - classify each file by role
+  definition_file: .claude/agents/gsd-pattern-mapper.md
+  status: active
+- id: AGT-138
+  name: Gsd Phase Researcher
+  slug: gsd-phase-researcher
+  capabilities:
+  - investigate the phase's technical domain
+  - identify standard stack, patterns, and pitfalls
+  - document findings with confidence levels
+  - return structured result to orchestrator
+  - "`[verified: npm registry]` \u2014 confirmed via tool"
+  definition_file: .claude/agents/gsd-phase-researcher.md
+  status: active
+- id: AGT-139
+  name: Gsd Plan Checker
+  slug: gsd-plan-checker
+  capabilities:
+  - key requirements have no tasks
+  - dependencies are broken or circular
+  - scope exceeds context budget
+  - crediting a decision reference
+  - treating scope reduction
+  definition_file: .claude/agents/gsd-plan-checker.md
+  status: active
+- id: AGT-140
+  name: Gsd Planner
+  slug: gsd-planner
+  capabilities:
+  - '`/gsd-plan-phase` orchestrator'
+  - '`/gsd-plan-phase --gaps` orchestrator'
+  - '`/gsd-plan-phase` in revision mode'
+  - '`/gsd-plan-phase --reviews` orchestrator'
+  - derive must-haves using goal-backward methodology
+  definition_file: .claude/agents/gsd-planner.md
+  status: active
+- id: AGT-141
+  name: Gsd Project Researcher
+  slug: gsd-project-researcher
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/gsd-project-researcher.md
+  status: active
+- id: AGT-142
+  name: Gsd Research Synthesizer
+  slug: gsd-research-synthesizer
+  capabilities:
+  - '`/gsd-new-project` orchestrator'
+  - read all 4 research files
+  - synthesize findings into executive summary
+  - identify confidence levels and gaps
+  - write summary.md
+  definition_file: .claude/agents/gsd-research-synthesizer.md
+  status: active
+- id: AGT-143
+  name: Gsd Roadmapper
+  slug: gsd-roadmapper
+  capabilities:
+  - '`/gsd-new-project` orchestrator'
+  definition_file: .claude/agents/gsd-roadmapper.md
+  status: active
+- id: AGT-144
+  name: Gsd Security Auditor
+  slug: gsd-security-auditor
+  capabilities:
+  - marking closed based on code structure
+  definition_file: .claude/agents/gsd-security-auditor.md
+  status: active
+- id: AGT-145
+  name: Gsd Ui Auditor
+  slug: gsd-ui-auditor
+  capabilities:
+  - audit implemented ui against ui-spec.md
+  - write ui-review.md with actionable findings
+  definition_file: .claude/agents/gsd-ui-auditor.md
+  status: active
+- id: AGT-146
+  name: Gsd Ui Checker
+  slug: gsd-ui-checker
+  capabilities:
+  - cta labels are generic
+  - more than 4 font sizes declared
+  - spacing values are not multiples of 4
+  definition_file: .claude/agents/gsd-ui-checker.md
+  status: active
+- id: AGT-147
+  name: Gsd Ui Researcher
+  slug: gsd-ui-researcher
+  capabilities:
+  - detect design system state
+  - return structured result to orchestrator
+  definition_file: .claude/agents/gsd-ui-researcher.md
+  status: active
+- id: AGT-148
+  name: Gsd User Profiler
+  slug: gsd-user-profiler
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/gsd-user-profiler.md
+  status: active
+- id: AGT-149
+  name: Gsd Verifier
+  slug: gsd-verifier
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/gsd-verifier.md
+  status: active
+- id: AGT-150
+  name: Healthcare Aging Parent Care Companion
+  slug: healthcare-aging-parent-care-companion
+  capabilities:
+  - the care recipient's first name or nickname
+  - whether key documents exist
+  - the contents of legal documents
+  definition_file: .claude/agents/healthcare-aging-parent-care-companion.md
+  status: active
+- id: AGT-151
+  name: Healthcare Clinical Evidence Agent
+  slug: healthcare-clinical-evidence-agent
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/healthcare-clinical-evidence-agent.md
+  status: active
+- id: AGT-152
+  name: Healthcare Customer Service
+  slug: healthcare-customer-service
+  capabilities:
+  - the nature of their inquiry
+  definition_file: .claude/agents/healthcare-customer-service.md
+  status: active
+- id: AGT-153
+  name: Healthcare Innovation Strategist
+  slug: healthcare-innovation-strategist
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/healthcare-innovation-strategist.md
+  status: active
+- id: AGT-154
+  name: Healthcare Marketing Compliance
+  slug: healthcare-marketing-compliance
+  capabilities:
+  - 'advertising review process key points:'
+  definition_file: .claude/agents/healthcare-marketing-compliance.md
+  status: active
+- id: AGT-155
+  name: Healthcare Sovereign Health Systems Agent
+  slug: healthcare-sovereign-health-systems-agent
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/healthcare-sovereign-health-systems-agent.md
+  status: active
+- id: AGT-156
+  name: Hospitality Guest Services
+  slug: hospitality-guest-services
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/hospitality-guest-services.md
+  status: active
+- id: AGT-157
+  name: Hr Onboarding
+  slug: hr-onboarding
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/hr-onboarding.md
+  status: active
+- id: AGT-158
+  name: Identity Graph Operator
+  slug: identity-graph-operator
+  capabilities:
+  - when you're confident
+  - every mutation
+  definition_file: .claude/agents/identity-graph-operator.md
+  status: active
+- id: AGT-159
+  name: Language Translator
+  slug: language-translator
+  capabilities:
+  - the context they're operating in
+  - regional dialect preferences they've mentioned
+  - formality level appropriate to their situation
+  definition_file: .claude/agents/language-translator.md
+  status: active
+- id: AGT-160
+  name: Legal Billing Time Tracking
+  slug: legal-billing-time-tracking
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/legal-billing-time-tracking.md
+  status: active
+- id: AGT-161
+  name: Legal Client Intake
+  slug: legal-client-intake
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/legal-client-intake.md
+  status: active
+- id: AGT-162
+  name: Legal Document Review
+  slug: legal-document-review
+  capabilities:
+  - the document type and jurisdiction being reviewed
+  - the client's role in the agreement
+  - the practice area context
+  definition_file: .claude/agents/legal-document-review.md
+  status: active
+- id: AGT-163
+  name: Level Designer
+  slug: level-designer
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/level-designer.md
+  status: active
+- id: AGT-164
+  name: Loan Officer Assistant
+  slug: loan-officer-assistant
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/loan-officer-assistant.md
+  status: active
+- id: AGT-165
+  name: Lsp Index Engineer
+  slug: lsp-index-engineer
+  capabilities:
+  - orchestrate multiple lsp clients
+  - transform lsp responses into unified graph schema
+  - stream graph diffs via websocket for live updates
+  - handle 25k+ symbols without degradation
+  - cache aggressively but invalidate precisely
+  definition_file: .claude/agents/lsp-index-engineer.md
+  status: active
+- id: AGT-166
+  name: Ma Integration Manager
+  slug: ma-integration-manager
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/ma-integration-manager.md
+  status: active
+- id: AGT-167
+  name: Macos Spatial Metal Engineer
+  slug: macos-spatial-metal-engineer
+  capabilities:
+  - create efficient gpu buffers for graph data
+  - design spatial layout algorithms
+  - handle raycast hit testing for symbol selection
+  - create smooth spatial transitions and animations
+  - support progressive immersion levels
+  definition_file: .claude/agents/macos-spatial-metal-engineer.md
+  status: active
+- id: AGT-168
+  name: Marketing Aeo Foundations
+  slug: marketing-aeo-foundations
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/marketing-aeo-foundations.md
+  status: active
+- id: AGT-169
+  name: Marketing Agentic Search Optimizer
+  slug: marketing-agentic-search-optimizer
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/marketing-agentic-search-optimizer.md
+  status: active
+- id: AGT-170
+  name: Marketing Ai Citation Strategist
+  slug: marketing-ai-citation-strategist
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/marketing-ai-citation-strategist.md
+  status: active
+- id: AGT-171
+  name: Marketing App Store Optimizer
+  slug: marketing-app-store-optimizer
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/marketing-app-store-optimizer.md
+  status: active
+- id: AGT-172
+  name: Marketing Baidu Seo Specialist
+  slug: marketing-baidu-seo-specialist
+  capabilities:
+  - create content optimized for baidu's crawler
+  - integrate with baidu's paid ecosystem
+  - guide icp
+  definition_file: .claude/agents/marketing-baidu-seo-specialist.md
+  status: active
+- id: AGT-173
+  name: Marketing Bilibili Content Strategist
+  slug: marketing-bilibili-content-strategist
+  capabilities:
+  - leverage danmaku
+  - "build loyal fan communities through \u7C89\u4E1D\u52CB\u7AE0"
+  - "create content series that encourage \u6295\u5E01"
+  - "create \u6070\u996D"
+  definition_file: .claude/agents/marketing-bilibili-content-strategist.md
+  status: active
+- id: AGT-174
+  name: Marketing Book Co Author
+  slug: marketing-book-co-author
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/marketing-book-co-author.md
+  status: active
+- id: AGT-175
+  name: Marketing Carousel Growth Engine
+  slug: marketing-carousel-growth-engine
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/marketing-carousel-growth-engine.md
+  status: active
+- id: AGT-176
+  name: Marketing China Ecommerce Operator
+  slug: marketing-china-ecommerce-operator
+  capabilities:
+  - manage store operations across taobao
+  - plan and execute 618, double 11
+  - 'design campaign mechanics: pre-sale'
+  definition_file: .claude/agents/marketing-china-ecommerce-operator.md
+  status: active
+- id: AGT-177
+  name: Marketing China Market Localization Strategist
+  slug: marketing-china-market-localization-strategist
+  capabilities:
+  - 'monitor china''s hotlist ecosystem: douyin'
+  - 'apply four mental models to every dataset:'
+  definition_file: .claude/agents/marketing-china-market-localization-strategist.md
+  status: active
+- id: AGT-178
+  name: Marketing Content Creator
+  slug: marketing-content-creator
+  capabilities:
+  - video storytelling and visual content direction
+  - content automation and scaling systems
+  - brand storytelling and narrative development
+  - long-form content creation
+  definition_file: .claude/agents/marketing-content-creator.md
+  status: active
+- id: AGT-179
+  name: Marketing Cross Border Ecommerce
+  slug: marketing-cross-border-ecommerce
+  capabilities:
+  - '**amazon'
+  - '**shopee'
+  - '**lazada'
+  - '**aliexpress'
+  - '**temu'
+  definition_file: .claude/agents/marketing-cross-border-ecommerce.md
+  status: active
+- id: AGT-180
+  name: Marketing Douyin Strategist
+  slug: marketing-douyin-strategist
+  capabilities:
+  - '**role**: douyin'
+  - dou+
+  - 'paid traffic integration: qianchuan'
+  - 'livestream data review: gpm'
+  definition_file: .claude/agents/marketing-douyin-strategist.md
+  status: active
+- id: AGT-181
+  name: Marketing Email Strategist
+  slug: marketing-email-strategist
+  capabilities:
+  - '**experience**: deep expertise in brevo'
+  definition_file: .claude/agents/marketing-email-strategist.md
+  status: active
+- id: AGT-182
+  name: Marketing Global Podcast Strategist
+  slug: marketing-global-podcast-strategist
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/marketing-global-podcast-strategist.md
+  status: active
+- id: AGT-183
+  name: Marketing Growth Hacker
+  slug: marketing-growth-hacker
+  capabilities:
+  - growth hacking playbook development and execution
+  - product-market fit validation and optimization
+  - customer acquisition cost
+  - rapid user acquisition and growth acceleration
+  - growth experiment design and execution
+  definition_file: .claude/agents/marketing-growth-hacker.md
+  status: active
+- id: AGT-184
+  name: Marketing Instagram Curator
+  slug: marketing-instagram-curator
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/marketing-instagram-curator.md
+  status: active
+- id: AGT-185
+  name: Marketing Kuaishou Strategist
+  slug: marketing-kuaishou-strategist
+  capabilities:
+  - "develop strategies tailored to kuaishou's \u8001\u94C1\u7ECF\u6D4E"
+  - target china's lower-tier city
+  - build live commerce operations
+  - "manage kuaishou's \u5FEB\u624B\u5C0F\u5E97"
+  - "cultivate \u8001\u94C1"
+  definition_file: .claude/agents/marketing-kuaishou-strategist.md
+  status: active
+- id: AGT-186
+  name: Marketing Linkedin Content Creator
+  slug: marketing-linkedin-content-creator
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/marketing-linkedin-content-creator.md
+  status: active
+- id: AGT-187
+  name: Marketing Livestream Commerce Coach
+  slug: marketing-livestream-commerce-coach
+  capabilities:
+  - 'host skill progression model: beginner'
+  - 'platform-specific host style adaptation: douyin'
+  - 'live room product mix design: traffic drivers'
+  definition_file: .claude/agents/marketing-livestream-commerce-coach.md
+  status: active
+- id: AGT-188
+  name: Marketing Multi Platform Publisher
+  slug: marketing-multi-platform-publisher
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/marketing-multi-platform-publisher.md
+  status: active
+- id: AGT-189
+  name: Marketing Podcast Strategist
+  slug: marketing-podcast-strategist
+  capabilities:
+  - 'show format positioning: vertical knowledge'
+  - 'show branding: show name'
+  - '**xiaoyuzhou'
+  - '**ximalaya'
+  definition_file: .claude/agents/marketing-podcast-strategist.md
+  status: active
+- id: AGT-190
+  name: Marketing Pr Communications Manager
+  slug: marketing-pr-communications-manager
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/marketing-pr-communications-manager.md
+  status: active
+- id: AGT-191
+  name: Marketing Private Domain Operator
+  slug: marketing-private-domain-operator
+  capabilities:
+  - '**role**: enterprise wechat'
+  - 'livestream mini program: channels'
+  definition_file: .claude/agents/marketing-private-domain-operator.md
+  status: active
+- id: AGT-192
+  name: Marketing Reddit Community Builder
+  slug: marketing-reddit-community-builder
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/marketing-reddit-community-builder.md
+  status: active
+- id: AGT-193
+  name: Marketing Seo Specialist
+  slug: marketing-seo-specialist
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/marketing-seo-specialist.md
+  status: active
+- id: AGT-194
+  name: Marketing Short Video Editing Coach
+  slug: marketing-short-video-editing-coach
+  capabilities:
+  - '**capcut pro'
+  - '**adobe premiere pro**'
+  - '**davinci resolve**'
+  definition_file: .claude/agents/marketing-short-video-editing-coach.md
+  status: active
+- id: AGT-195
+  name: Marketing Social Media Strategist
+  slug: marketing-social-media-strategist
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/marketing-social-media-strategist.md
+  status: active
+- id: AGT-196
+  name: Marketing Tiktok Strategist
+  slug: marketing-tiktok-strategist
+  capabilities:
+  - '**engagement rate**: 8%+ target'
+  definition_file: .claude/agents/marketing-tiktok-strategist.md
+  status: active
+- id: AGT-197
+  name: Marketing Twitter Engager
+  slug: marketing-twitter-engager
+  capabilities:
+  - '**tweet mix strategy**: educational threads'
+  - '**engagement rate**: 2.5%+'
+  definition_file: .claude/agents/marketing-twitter-engager.md
+  status: active
+- id: AGT-198
+  name: Marketing Video Optimization Specialist
+  slug: marketing-video-optimization-specialist
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/marketing-video-optimization-specialist.md
+  status: active
+- id: AGT-199
+  name: Marketing Wechat Official Account
+  slug: marketing-wechat-official-account
+  capabilities:
+  - maintain consistent publishing schedule
+  definition_file: .claude/agents/marketing-wechat-official-account.md
+  status: active
+- id: AGT-200
+  name: Marketing Weibo Strategist
+  slug: marketing-weibo-strategist
+  capabilities:
+  - '**role**: weibo'
+  - '**trending advertising products**:'
+  definition_file: .claude/agents/marketing-weibo-strategist.md
+  status: active
+- id: AGT-201
+  name: Marketing X Twitter Intelligence Analyst
+  slug: marketing-x-twitter-intelligence-analyst
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/marketing-x-twitter-intelligence-analyst.md
+  status: active
+- id: AGT-202
+  name: Marketing Xiaohongshu Specialist
+  slug: marketing-xiaohongshu-specialist
+  capabilities:
+  - ensure all content includes strategic ctas
+  definition_file: .claude/agents/marketing-xiaohongshu-specialist.md
+  status: active
+- id: AGT-203
+  name: Marketing Zhihu Strategist
+  slug: marketing-zhihu-strategist
+  capabilities:
+  - provide comprehensive, valuable answers
+  - participate authentically in community
+  definition_file: .claude/agents/marketing-zhihu-strategist.md
+  status: active
+- id: AGT-204
+  name: Medical Billing Coding Specialist
+  slug: medical-billing-coding-specialist
+  capabilities:
+  - active payer contracts and their fee schedules
+  - compliance audit findings and remediation status
+  definition_file: .claude/agents/medical-billing-coding-specialist.md
+  status: active
+- id: AGT-205
+  name: Narrative Designer
+  slug: narrative-designer
+  capabilities:
+  - characters have consistent voice pillars
+  definition_file: .claude/agents/narrative-designer.md
+  status: active
+- id: AGT-206
+  name: Operations Manager
+  slug: operations-manager
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/operations-manager.md
+  status: active
+- id: AGT-207
+  name: Organizational Psychologist
+  slug: organizational-psychologist
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/organizational-psychologist.md
+  status: active
+- id: AGT-208
+  name: Paid Media Auditor
+  slug: paid-media-auditor
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/paid-media-auditor.md
+  status: active
+- id: AGT-209
+  name: Paid Media Creative Strategist
+  slug: paid-media-creative-strategist
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/paid-media-creative-strategist.md
+  status: active
+- id: AGT-210
+  name: Paid Media Paid Social Strategist
+  slug: paid-media-paid-social-strategist
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/paid-media-paid-social-strategist.md
+  status: active
+- id: AGT-211
+  name: Paid Media Ppc Strategist
+  slug: paid-media-ppc-strategist
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/paid-media-ppc-strategist.md
+  status: active
+- id: AGT-212
+  name: Paid Media Programmatic Buyer
+  slug: paid-media-programmatic-buyer
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/paid-media-programmatic-buyer.md
+  status: active
+- id: AGT-213
+  name: Paid Media Search Query Analyst
+  slug: paid-media-search-query-analyst
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/paid-media-search-query-analyst.md
+  status: active
+- id: AGT-214
+  name: Paid Media Tracking Specialist
+  slug: paid-media-tracking-specialist
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/paid-media-tracking-specialist.md
+  status: active
+- id: AGT-215
+  name: Personal Growth Mentor
+  slug: personal-growth-mentor
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/personal-growth-mentor.md
+  status: active
+- id: AGT-216
+  name: Product Behavioral Nudge Engine
+  slug: product-behavioral-nudge-engine
+  capabilities:
+  - "\u2705 **leverage default biases.**"
+  - user preference schemas
+  - nudge sequence logic
+  - micro-sprint prompts.
+  - celebration/reinforcement copy.
+  definition_file: .claude/agents/product-behavioral-nudge-engine.md
+  status: active
+- id: AGT-217
+  name: Product Feedback Synthesizer
+  slug: product-feedback-synthesizer
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/product-feedback-synthesizer.md
+  status: active
+- id: AGT-218
+  name: Product Manager
+  slug: product-manager
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/product-manager.md
+  status: active
+- id: AGT-219
+  name: Product Sprint Prioritizer
+  slug: product-sprint-prioritizer
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/product-sprint-prioritizer.md
+  status: active
+- id: AGT-220
+  name: Product Trend Researcher
+  slug: product-trend-researcher
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/product-trend-researcher.md
+  status: active
+- id: AGT-221
+  name: Project Management Experiment Tracker
+  slug: project-management-experiment-tracker
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/project-management-experiment-tracker.md
+  status: active
+- id: AGT-222
+  name: Project Management Jira Workflow Steward
+  slug: project-management-jira-workflow-steward
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/project-management-jira-workflow-steward.md
+  status: active
+- id: AGT-223
+  name: Project Management Meeting Notes Specialist
+  slug: project-management-meeting-notes-specialist
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/project-management-meeting-notes-specialist.md
+  status: active
+- id: AGT-224
+  name: Project Management Project Shepherd
+  slug: project-management-project-shepherd
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/project-management-project-shepherd.md
+  status: active
+- id: AGT-225
+  name: Project Management Studio Operations
+  slug: project-management-studio-operations
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/project-management-studio-operations.md
+  status: active
+- id: AGT-226
+  name: Project Management Studio Producer
+  slug: project-management-studio-producer
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/project-management-studio-producer.md
+  status: active
+- id: AGT-227
+  name: Project Manager Senior
+  slug: project-manager-senior
+  capabilities:
+  - read the **actual** site specification file
+  - quote exact requirements
+  - identify gaps or unclear requirements
+  - include acceptance criteria for each task
+  - include fluxui component requirements
+  definition_file: .claude/agents/project-manager-senior.md
+  status: active
+- id: AGT-228
+  name: Real Estate Buyer Seller
+  slug: real-estate-buyer-seller
+  capabilities:
+  - the client's name, role
+  definition_file: .claude/agents/real-estate-buyer-seller.md
+  status: active
+- id: AGT-229
+  name: Recruitment Specialist
+  slug: recruitment-specialist
+  capabilities:
+  - '**boss zhipin**'
+  - '**lagou**'
+  - '**liepin**'
+  - '**zhaopin**'
+  - '**51job**'
+  definition_file: .claude/agents/recruitment-specialist.md
+  status: active
+- id: AGT-230
+  name: Repo Advisor
+  slug: repo-advisor
+  capabilities:
+  - '**expertise:**'
+  - '**fractal agents**'
+  - '**supabase** holds live venture metadata'
+  - '**5 disposition types matter:**'
+  definition_file: .claude/agents/repo-advisor.md
+  status: active
+- id: AGT-231
+  name: Repo Deep Dive
+  slug: repo-deep-dive
+  capabilities:
+  - '**expertise:**'
+  definition_file: .claude/agents/repo-deep-dive.md
+  status: active
+- id: AGT-232
+  name: Report Distribution Agent
+  slug: report-distribution-agent
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/report-distribution-agent.md
+  status: active
+- id: AGT-233
+  name: Research Synthesist
+  slug: research-synthesist
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/research-synthesist.md
+  status: active
+- id: AGT-234
+  name: Resume Tailor
+  slug: resume-tailor
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/resume-tailor.md
+  status: active
+- id: AGT-235
+  name: Retail Customer Returns
+  slug: retail-customer-returns
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/retail-customer-returns.md
+  status: active
+- id: AGT-236
+  name: Roblox Avatar Creator
+  slug: roblox-avatar-creator
+  capabilities:
+  - build classic clothing
+  - all transforms must be applied before export
+  - 'texture format: `.png` with transparency support'
+  definition_file: .claude/agents/roblox-avatar-creator.md
+  status: active
+- id: AGT-237
+  name: Roblox Experience Designer
+  slug: roblox-experience-designer
+  capabilities:
+  - developer products are consumable
+  - player progression data
+  definition_file: .claude/agents/roblox-experience-designer.md
+  status: active
+- id: AGT-238
+  name: Roblox Systems Scripter
+  slug: roblox-systems-scripter
+  capabilities:
+  - all gameplay-affecting state changes
+  - '`remoteevent:fireserver'
+  - '`remoteevent:fireclient'
+  - '`remotefunction:invokeserver'
+  definition_file: .claude/agents/roblox-systems-scripter.md
+  status: active
+- id: AGT-239
+  name: Sales Account Strategist
+  slug: sales-account-strategist
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/sales-account-strategist.md
+  status: active
+- id: AGT-240
+  name: Sales Coach
+  slug: sales-coach
+  capabilities:
+  - differentiate between skill gaps
+  definition_file: .claude/agents/sales-coach.md
+  status: active
+- id: AGT-241
+  name: Sales Data Extraction Agent
+  slug: sales-data-extraction-agent
+  capabilities:
+  - 'precision-driven: every number matters'
+  - 'real-time: processes files as soon as they appear'
+  - ignore temporary excel lock files
+  - wait for file write completion before processing
+  definition_file: .claude/agents/sales-data-extraction-agent.md
+  status: active
+- id: AGT-242
+  name: Sales Deal Strategist
+  slug: sales-deal-strategist
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/sales-deal-strategist.md
+  status: active
+- id: AGT-243
+  name: Sales Discovery Coach
+  slug: sales-discovery-coach
+  capabilities:
+  - '"what tools are you using for [function] today?"'
+  - '"where does that process break down?"'
+  - '"what happens when [scenario] occurs?"'
+  definition_file: .claude/agents/sales-discovery-coach.md
+  status: active
+- id: AGT-244
+  name: Sales Engineer
+  slug: sales-engineer
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/sales-engineer.md
+  status: active
+- id: AGT-245
+  name: Sales Offer Lead Gen Strategist
+  slug: sales-offer-lead-gen-strategist
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/sales-offer-lead-gen-strategist.md
+  status: active
+- id: AGT-246
+  name: Sales Outbound Strategist
+  slug: sales-outbound-strategist
+  capabilities:
+  - rfp or vendor evaluation announcements
+  - explicit technology evaluation job postings
+  - funding events
+  - m&a activity
+  definition_file: .claude/agents/sales-outbound-strategist.md
+  status: active
+- id: AGT-247
+  name: Sales Outreach
+  slug: sales-outreach
+  capabilities:
+  - the agreed sales methodology
+  definition_file: .claude/agents/sales-outreach.md
+  status: active
+- id: AGT-248
+  name: Sales Pipeline Analyst
+  slug: sales-pipeline-analyst
+  capabilities:
+  - 'mature, predictable business: 3x'
+  - 'growth-stage or new market: 4-5x'
+  - 'new rep ramping: 5x+'
+  definition_file: .claude/agents/sales-pipeline-analyst.md
+  status: active
+- id: AGT-249
+  name: Sales Proposal Strategist
+  slug: sales-proposal-strategist
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/sales-proposal-strategist.md
+  status: active
+- id: AGT-250
+  name: Security Ai Generated Code Auditor
+  slug: security-ai-generated-code-auditor
+  capabilities:
+  - separate the genuinely dangerous
+  - trace request-shaped input
+  definition_file: .claude/agents/security-ai-generated-code-auditor.md
+  status: active
+- id: AGT-251
+  name: Security Appsec Engineer
+  slug: security-appsec-engineer
+  capabilities:
+  - distinguish between "fix before merge"
+  definition_file: .claude/agents/security-appsec-engineer.md
+  status: active
+- id: AGT-252
+  name: Security Architect
+  slug: security-architect
+  capabilities:
+  - identify and classify vulnerabilities by severity
+  definition_file: .claude/agents/security-architect.md
+  status: active
+- id: AGT-253
+  name: Security Blockchain Security Auditor
+  slug: security-blockchain-security-auditor
+  capabilities:
+  - run automated analysis tools
+  definition_file: .claude/agents/security-blockchain-security-auditor.md
+  status: active
+- id: AGT-254
+  name: Security Cloud Security Architect
+  slug: security-cloud-security-architect
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/security-cloud-security-architect.md
+  status: active
+- id: AGT-255
+  name: Security Compliance Auditor
+  slug: security-compliance-auditor
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/security-compliance-auditor.md
+  status: active
+- id: AGT-256
+  name: Security Incident Responder
+  slug: security-incident-responder
+  capabilities:
+  - determine whether the incident is active
+  - correlate indicators of compromise
+  definition_file: .claude/agents/security-incident-responder.md
+  status: active
+- id: AGT-257
+  name: Security Penetration Tester
+  slug: security-penetration-tester
+  capabilities:
+  - 'evaluate client-side security: xss'
+  definition_file: .claude/agents/security-penetration-tester.md
+  status: active
+- id: AGT-258
+  name: Security Secrets Credential Engineer
+  slug: security-secrets-credential-engineer
+  capabilities:
+  - "detect the full spectrum \u2014 provider keys"
+  definition_file: .claude/agents/security-secrets-credential-engineer.md
+  status: active
+- id: AGT-259
+  name: Security Senior Secops
+  slug: security-senior-secops
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/security-senior-secops.md
+  status: active
+- id: AGT-260
+  name: Security Threat Detection Engineer
+  slug: security-threat-detection-engineer
+  capabilities:
+  - write detection rules in sigma
+  definition_file: .claude/agents/security-threat-detection-engineer.md
+  status: active
+- id: AGT-261
+  name: Security Threat Intelligence Analyst
+  slug: security-threat-intelligence-analyst
+  capabilities:
+  - write detection rules
+  definition_file: .claude/agents/security-threat-intelligence-analyst.md
+  status: active
+- id: AGT-262
+  name: Specialized Chief Of Staff
+  slug: specialized-chief-of-staff
+  capabilities:
+  - affects the company's goals or key objectives
+  definition_file: .claude/agents/specialized-chief-of-staff.md
+  status: active
+- id: AGT-263
+  name: Specialized Civil Engineer
+  slug: specialized-civil-engineer
+  capabilities:
+  - verify both strength
+  - interpret soil investigation reports
+  - perform bearing capacity and settlement analysis
+  definition_file: .claude/agents/specialized-civil-engineer.md
+  status: active
+- id: AGT-264
+  name: Specialized Codebase Archaeologist
+  slug: specialized-codebase-archaeologist
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/specialized-codebase-archaeologist.md
+  status: active
+- id: AGT-265
+  name: Specialized Cultural Intelligence Strategist
+  slug: specialized-cultural-intelligence-strategist
+  capabilities:
+  - ui/ux inclusion checklists
+  - negative-prompt libraries for image generation
+  - cultural context briefs for marketing campaigns.
+  definition_file: .claude/agents/specialized-cultural-intelligence-strategist.md
+  status: active
+- id: AGT-266
+  name: Specialized Developer Advocate
+  slug: specialized-developer-advocate
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/specialized-developer-advocate.md
+  status: active
+- id: AGT-267
+  name: Specialized Document Generator
+  slug: specialized-document-generator
+  capabilities:
+  - '**python**: `reportlab`, `weasyprint`, `fpdf2`'
+  - '**node.js**: `puppeteer`'
+  - '**python**: `python-pptx`'
+  - '**node.js**: `pptxgenjs`'
+  - '**python**: `openpyxl`, `xlsxwriter`'
+  definition_file: .claude/agents/specialized-document-generator.md
+  status: active
+- id: AGT-268
+  name: Specialized Fedramp Rmf Compliance
+  slug: specialized-fedramp-rmf-compliance
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/specialized-fedramp-rmf-compliance.md
+  status: active
+- id: AGT-269
+  name: Specialized French Consulting Market
+  slug: specialized-french-consulting-market
+  capabilities:
+  - note seasonal patterns
+  - no judgment on career choices
+  definition_file: .claude/agents/specialized-french-consulting-market.md
+  status: active
+- id: AGT-270
+  name: Specialized Korean Business Navigator
+  slug: specialized-korean-business-navigator
+  capabilities:
+  - track relationship progression per contact
+  definition_file: .claude/agents/specialized-korean-business-navigator.md
+  status: active
+- id: AGT-271
+  name: Specialized Master Plan Architect
+  slug: specialized-master-plan-architect
+  capabilities:
+  - apply the **anti-scope creep filter
+  definition_file: .claude/agents/specialized-master-plan-architect.md
+  status: active
+- id: AGT-272
+  name: Specialized Mcp Builder
+  slug: specialized-mcp-builder
+  capabilities:
+  - define typed parameters with zod
+  definition_file: .claude/agents/specialized-mcp-builder.md
+  status: active
+- id: AGT-273
+  name: Specialized Model Qa
+  slug: specialized-model-qa
+  capabilities:
+  - evaluate labeling quality for supervised models
+  - validate observation and outcome windows
+  definition_file: .claude/agents/specialized-model-qa.md
+  status: active
+- id: AGT-274
+  name: Specialized Pricing Analyst
+  slug: specialized-pricing-analyst
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/specialized-pricing-analyst.md
+  status: active
+- id: AGT-275
+  name: Specialized Salesforce Architect
+  slug: specialized-salesforce-architect
+  capabilities:
+  - remember org-specific constraints
+  definition_file: .claude/agents/specialized-salesforce-architect.md
+  status: active
+- id: AGT-276
+  name: Specialized Strategy Duel Agent
+  slug: specialized-strategy-duel-agent
+  capabilities:
+  - '**role**: strategic orchestrator and duel master'
+  - always pass duel history to each turn for context
+  - example duel session
+  - templates for duel setup and move output
+  - step-by-step workflow for running a duel
+  definition_file: .claude/agents/specialized-strategy-duel-agent.md
+  status: active
+- id: AGT-277
+  name: Specialized Workflow Architect
+  slug: specialized-workflow-architect
+  capabilities:
+  - '**read every service orchestration config**'
+  - '**read every infrastructure-as-code module**'
+  definition_file: .claude/agents/specialized-workflow-architect.md
+  status: active
+- id: AGT-278
+  name: Study Abroad Advisor
+  slug: study-abroad-advisor
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/study-abroad-advisor.md
+  status: active
+- id: AGT-279
+  name: Supply Chain Strategist
+  slug: supply-chain-strategist
+  capabilities:
+  - implement tiered supplier management
+  - build a supplier performance assessment system
+  - 'manage procurement channel mix: 1688/alibaba'
+  definition_file: .claude/agents/supply-chain-strategist.md
+  status: active
+- id: AGT-280
+  name: Support Analytics Reporter
+  slug: support-analytics-reporter
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/support-analytics-reporter.md
+  status: active
+- id: AGT-281
+  name: Support Executive Summary Generator
+  slug: support-executive-summary-generator
+  capabilities:
+  - '**mckinsey''s scqa framework'
+  - '**bain''s action-oriented recommendation model**'
+  - prioritize **insight over information**
+  - quantify wherever possible
+  - maintain brevity, clarity, and strategic tone
+  definition_file: .claude/agents/support-executive-summary-generator.md
+  status: active
+- id: AGT-282
+  name: Support Finance Tracker
+  slug: support-finance-tracker
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/support-finance-tracker.md
+  status: active
+- id: AGT-283
+  name: Support Infrastructure Maintainer
+  slug: support-infrastructure-maintainer
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/support-infrastructure-maintainer.md
+  status: active
+- id: AGT-284
+  name: Support Legal Compliance Checker
+  slug: support-legal-compliance-checker
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/support-legal-compliance-checker.md
+  status: active
+- id: AGT-285
+  name: Support Support Responder
+  slug: support-support-responder
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/support-support-responder.md
+  status: active
+- id: AGT-286
+  name: Technical Artist
+  slug: technical-artist
+  capabilities:
+  - '**personality**: bilingual'
+  - write and optimize shaders for target platforms
+  definition_file: .claude/agents/technical-artist.md
+  status: active
+- id: AGT-287
+  name: Terminal Integration Specialist
+  slug: terminal-integration-specialist
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/terminal-integration-specialist.md
+  status: active
+- id: AGT-288
+  name: Testing Accessibility Auditor
+  slug: testing-accessibility-auditor
+  capabilities:
+  - evaluate interfaces against wcag 2.2 aa criteria
+  - verify screen reader compatibility
+  - validate voice control compatibility
+  definition_file: .claude/agents/testing-accessibility-auditor.md
+  status: active
+- id: AGT-289
+  name: Testing Api Tester
+  slug: testing-api-tester
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/testing-api-tester.md
+  status: active
+- id: AGT-290
+  name: Testing Evidence Collector
+  slug: testing-evidence-collector
+  capabilities:
+  - visual evidence is the only truth that matters
+  - claims without evidence are fantasy
+  - your job is to catch what others miss
+  - '"zero issues found" is a red flag - look harder'
+  - perfect scores
+  definition_file: .claude/agents/testing-evidence-collector.md
+  status: active
+- id: AGT-291
+  name: Testing Performance Benchmarker
+  slug: testing-performance-benchmarker
+  capabilities:
+  - optimize for largest contentful paint
+  - monitor real user monitoring
+  definition_file: .claude/agents/testing-performance-benchmarker.md
+  status: active
+- id: AGT-292
+  name: Testing Reality Checker
+  slug: testing-reality-checker
+  capabilities:
+  - no more "98/100 ratings" for basic dark themes
+  - every system claim needs visual proof
+  - c+/b- ratings are normal and acceptable
+  - honest feedback drives better outcomes
+  definition_file: .claude/agents/testing-reality-checker.md
+  status: active
+- id: AGT-293
+  name: Testing Test Automation Engineer
+  slug: testing-test-automation-engineer
+  capabilities:
+  - '**personality**: allergic to `sleep'
+  definition_file: .claude/agents/testing-test-automation-engineer.md
+  status: active
+- id: AGT-294
+  name: Testing Test Results Analyzer
+  slug: testing-test-results-analyzer
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/testing-test-results-analyzer.md
+  status: active
+- id: AGT-295
+  name: Testing Tool Evaluator
+  slug: testing-tool-evaluator
+  capabilities:
+  - calculate total cost of ownership
+  - establish service level agreements
+  definition_file: .claude/agents/testing-tool-evaluator.md
+  status: active
+- id: AGT-296
+  name: Testing Workflow Optimizer
+  slug: testing-workflow-optimizer
+  capabilities:
+  - create standard operating procedures
+  definition_file: .claude/agents/testing-workflow-optimizer.md
+  status: active
+- id: AGT-297
+  name: Unity Architect
+  slug: unity-architect
+  capabilities:
+  - use so-based event channels
+  - never use `gameobject.find
+  definition_file: .claude/agents/unity-architect.md
+  status: active
+- id: AGT-298
+  name: Unity Editor Tool Developer
+  slug: unity-editor-tool-developer
+  capabilities:
+  - '`editorgui.beginchangecheck'
+  - use `undo.recordobject
+  definition_file: .claude/agents/unity-editor-tool-developer.md
+  status: active
+- id: AGT-299
+  name: Unity Multiplayer Engineer
+  slug: unity-multiplayer-engineer
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/unity-multiplayer-engineer.md
+  status: active
+- id: AGT-300
+  name: Unity Shader Graph Artist
+  slug: unity-shader-graph-artist
+  capabilities:
+  - general-purpose
+  definition_file: .claude/agents/unity-shader-graph-artist.md
+  status: active
+- id: AGT-301
+  name: Unreal Multiplayer Architect
+  slug: unreal-multiplayer-architect
+  capabilities:
+  - '**memory**: you remember which `ufunction'
+  - implement gas
+  - '`ufunction'
+  - '`hasauthority'
+  - cosmetic-only effects
+  definition_file: .claude/agents/unreal-multiplayer-architect.md
+  status: active
+- id: AGT-302
+  name: Unreal Systems Engineer
+  slug: unreal-systems-engineer
+  capabilities:
+  - implement the gameplay ability system
+  - '**mandatory**: any logic that runs every frame'
+  - implement all data types unavailable in blueprint
+  - expose c++ systems to blueprint via `ufunction
+  definition_file: .claude/agents/unreal-systems-engineer.md
+  status: active
+- id: AGT-303
+  name: Unreal Technical Artist
+  slug: unreal-technical-artist
+  capabilities:
+  - design pcg
+  - avoid per-particle collision on gpu systems
+  definition_file: .claude/agents/unreal-technical-artist.md
+  status: active
+- id: AGT-304
+  name: Unreal World Builder
+  slug: unreal-world-builder
+  capabilities:
+  - never place gameplay-critical content
+  - all always-loaded content
+  - landscape resolution must be
+  - enable runtime virtual texturing
+  definition_file: .claude/agents/unreal-world-builder.md
+  status: active
+- id: AGT-305
+  name: Visionos Spatial Engineer
+  slug: visionos-spatial-engineer
+  capabilities:
+  - '**enhanced windowgroups**: unique windows'
+  definition_file: .claude/agents/visionos-spatial-engineer.md
+  status: active
+- id: AGT-306
+  name: Xr Cockpit Interaction Specialist
+  slug: xr-cockpit-interaction-specialist
+  capabilities:
+  - integrate multi-input ux
+  - prototype cockpit layouts in a-frame or three.js
+  - implement constraint-driven control mechanics
+  definition_file: .claude/agents/xr-cockpit-interaction-specialist.md
+  status: active
+- id: AGT-307
+  name: Xr Immersive Developer
+  slug: xr-immersive-developer
+  capabilities:
+  - manage compatibility layers across devices
+  - build immersive 3d uis with interaction surfaces
+  definition_file: .claude/agents/xr-immersive-developer.md
+  status: active
+- id: AGT-308
+  name: Xr Interface Architect
+  slug: xr-interface-architect
+  capabilities:
+  - define ui flows for immersive applications
+  definition_file: .claude/agents/xr-interface-architect.md
+  status: active
+- id: AGT-309
+  name: Zk Steward
+  slug: zk-steward
+  capabilities:
+  - 'priority: depth'
+  - open by addressing the user by name
+  definition_file: .claude/agents/zk-steward.md
+  status: active
+capabilities_index:
+  general-purpose:
+  - AGT-005
+  - AGT-006
+  - AGT-014
+  - AGT-019
+  - AGT-020
+  - AGT-024
+  - AGT-025
+  - AGT-026
+  - AGT-027
+  - AGT-028
+  - AGT-029
+  - AGT-032
+  - AGT-033
+  - AGT-035
+  - AGT-037
+  - AGT-040
+  - AGT-042
+  - AGT-043
+  - AGT-044
+  - AGT-047
+  - AGT-048
+  - AGT-055
+  - AGT-056
+  - AGT-057
+  - AGT-061
+  - AGT-062
+  - AGT-065
+  - AGT-066
+  - AGT-067
+  - AGT-069
+  - AGT-073
+  - AGT-075
+  - AGT-079
+  - AGT-081
+  - AGT-082
+  - AGT-085
+  - AGT-086
+  - AGT-089
+  - AGT-090
+  - AGT-091
+  - AGT-092
+  - AGT-093
+  - AGT-094
+  - AGT-095
+  - AGT-119
+  - AGT-121
+  - AGT-124
+  - AGT-129
+  - AGT-131
+  - AGT-132
+  - AGT-134
+  - AGT-141
+  - AGT-148
+  - AGT-149
+  - AGT-151
+  - AGT-153
+  - AGT-155
+  - AGT-156
+  - AGT-157
+  - AGT-160
+  - AGT-161
+  - AGT-163
+  - AGT-164
+  - AGT-166
+  - AGT-168
+  - AGT-169
+  - AGT-170
+  - AGT-171
+  - AGT-174
+  - AGT-175
+  - AGT-182
+  - AGT-184
+  - AGT-186
+  - AGT-188
+  - AGT-190
+  - AGT-192
+  - AGT-193
+  - AGT-195
+  - AGT-198
+  - AGT-201
+  - AGT-206
+  - AGT-207
+  - AGT-208
+  - AGT-209
+  - AGT-210
+  - AGT-211
+  - AGT-212
+  - AGT-213
+  - AGT-214
+  - AGT-215
+  - AGT-217
+  - AGT-218
+  - AGT-219
+  - AGT-220
+  - AGT-221
+  - AGT-222
+  - AGT-223
+  - AGT-224
+  - AGT-225
+  - AGT-226
+  - AGT-232
+  - AGT-233
+  - AGT-234
+  - AGT-235
+  - AGT-239
+  - AGT-242
+  - AGT-244
+  - AGT-245
+  - AGT-249
+  - AGT-254
+  - AGT-255
+  - AGT-259
+  - AGT-264
+  - AGT-266
+  - AGT-268
+  - AGT-274
+  - AGT-278
+  - AGT-280
+  - AGT-282
+  - AGT-283
+  - AGT-284
+  - AGT-285
+  - AGT-287
+  - AGT-289
+  - AGT-294
+  - AGT-299
+  - AGT-300
+  '`ai_spec_path`: path to ai-spec.md':
+  - AGT-117
+  - AGT-128
+  - AGT-130
+  the nature of their inquiry:
+  - AGT-016
+  - AGT-152
+  '**measurement**: lighthouse, core web vitals':
+  - AGT-046
+  - AGT-088
+  '`phase_name`, `phase_goal`: from roadmap.md':
+  - AGT-128
+  - AGT-130
+  '`context_path`: path to context.md if exists':
+  - AGT-128
+  - AGT-130
+  return structured result to orchestrator:
+  - AGT-138
+  - AGT-147
+  '`/gsd-new-project` orchestrator':
+  - AGT-142
+  - AGT-143
+  '**expertise:**':
+  - AGT-230
+  - AGT-231
+  design exchange systems:
+  - AGT-001
+  '**experience**: grounded in physical geography':
+  - AGT-002
+  create river systems that obey hydrology:
+  - AGT-002
+  design trade routes that follow geographic logic:
+  - AGT-002
+  '**experience**: trained in historiography':
+  - AGT-003
+  "identify anachronisms \u2014 not just obvious ones":
+  - AGT-003
+  identify the **controlling idea**:
+  - AGT-004
+  distinguish between **story**:
+  - AGT-004
+  track narrative promises:
+  - AGT-004
+  assess thematic consistency across plot threads:
+  - AGT-004
+  route payments through the optimal rail:
+  - AGT-007
+  accept payment requests from other agents:
+  - AGT-007
+  notify the requesting agent when payment confirms:
+  - AGT-007
+  ensure identity is portable across frameworks:
+  - AGT-008
+  run entire pipeline with single initial command:
+  - AGT-009
+  prefer simple and robust over clever and fragile.:
+  - AGT-010
+  is savings recurring and material?:
+  - AGT-010
+  '**mandatory**: prefer data api access':
+  - AGT-011
+  batch tools must log exactly what they changed:
+  - AGT-011
+  the competitive landscape and key market dynamics:
+  - AGT-012
+  prior strategic analyses and their conclusions:
+  - AGT-012
+  sponsor and coalition engagement levels:
+  - AGT-013
+  timeline milestones and go-live dates:
+  - AGT-013
+  sam model:
+  - AGT-015
+  'course classification system: general skills':
+  - AGT-015
+  current health score and the signals driving it:
+  - AGT-017
+  'analytical: finds patterns in the numbers':
+  - AGT-018
+  'comprehensive: no metric left behind':
+  - AGT-018
+  territory performance summary:
+  - AGT-018
+  individual rep performance with latest metrics:
+  - AGT-018
+  pipeline snapshot by stage:
+  - AGT-018
+  optimize prompts for specific ai platforms:
+  - AGT-021
+  convert photography knowledge:
+  - AGT-021
+  annotated prompt architectures:
+  - AGT-022
+  assess every fold against the lift model:
+  - AGT-023
+  prioritize by effort/impact:
+  - AGT-023
+  instrument the economy for telemetry from day one:
+  - AGT-030
+  model player archetypes:
+  - AGT-030
+  run progression simulations:
+  - AGT-030
+  '**role**: ai data remediation specialist':
+  - AGT-031
+  '"llm-as-a-judge" evaluation prompts.':
+  - AGT-034
+  shadow traffic implementations:
+  - AGT-034
+  which cms:
+  - AGT-036
+  the design system or component library in use:
+  - AGT-036
+  explain how modules connect to each other:
+  - AGT-038
+  implement medallion architecture:
+  - AGT-039
+  build incremental and cdc:
+  - AGT-039
+  architect cloud-native data lakehouses on azure:
+  - AGT-039
+  postgresql optimization and advanced features:
+  - AGT-041
+  explain analyze and query plan interpretation:
+  - AGT-041
+  indexing strategies:
+  - AGT-041
+  schema design:
+  - AGT-041
+  n+1 query detection and resolution:
+  - AGT-041
+  implement zero-downtime deployment strategies:
+  - AGT-045
+  implement disaster recovery and backup automation:
+  - AGT-045
+  create multi-environment management:
+  - AGT-045
+  set up automated testing and deployment workflows:
+  - AGT-045
+  implement communication protocols:
+  - AGT-049
+  never use dynamic allocation:
+  - AGT-049
+  never call blocking apis:
+  - AGT-049
+  'custom bots: webhook-based message push bots':
+  - AGT-050
+  '**never** add helper text to obvious fields':
+  - AGT-051
+  'optimize the big levers in order: eliminate waste':
+  - AGT-052
+  build editor extensions with navigation commands:
+  - AGT-053
+  build progressive web apps:
+  - AGT-053
+  "\u2705 **gaussdb**":
+  - AGT-054
+  "\u274C **gaussdb":
+  - AGT-054
+  '**cn':
+  - AGT-054
+  '**dn':
+  - AGT-054
+  '**gtm':
+  - AGT-054
+  build incident tooling integrations:
+  - AGT-058
+  build telemetry pipelines over mqtt:
+  - AGT-059
+  pending changes in the change advisory board:
+  - AGT-060
+  cmdb coverage and known configuration gaps:
+  - AGT-060
+  current csi:
+  - AGT-060
+  don't rewrite working code in a "cleaner" style:
+  - AGT-063
+  "don't \"while i'm here\u2026\" anything":
+  - AGT-063
+  implement biometric authentication:
+  - AGT-064
+  '**experience**: you''ve designed dsls':
+  - AGT-068
+  implement ast validation and semantic checks.:
+  - AGT-068
+  generate and refine downstream exporters:
+  - AGT-068
+  refactor messy standard operating procedures:
+  - AGT-068
+  'build automated subject-rights pipelines: access':
+  - AGT-070
+  "always version prompts \u2014 treat them like code":
+  - AGT-071
+  configure vector indexes:
+  - AGT-072
+  ship presence and awareness:
+  - AGT-074
+  engineer queries that separate recall:
+  - AGT-076
+  '**conformance standards**: section 508':
+  - AGT-077
+  every pixel should feel intentional and refined:
+  - AGT-078
+  performance and beauty must coexist:
+  - AGT-078
+  innovation over convention when it enhances ux:
+  - AGT-078
+  master of laravel/livewire integration patterns:
+  - AGT-078
+  fluxui component expert:
+  - AGT-078
+  implement battle-tested token standards:
+  - AGT-080
+  the uswds version in use, the integration method:
+  - AGT-083
+  "the cms integration context \u2014 drupal":
+  - AGT-083
+  '**cms integration**: uswds in drupal':
+  - AGT-083
+  'protect premium content correctly: multi-drm':
+  - AGT-084
+  implement wechat pay:
+  - AGT-087
+  connect mini programs with official accounts:
+  - AGT-087
+  stay within wechat's package size limits:
+  - AGT-087
+  handle wechat's unique networking constraints:
+  - AGT-087
+  '**caching layers**: page caching, object caching':
+  - AGT-088
+  define audio budgets:
+  - AGT-096
+  audio parameters:
+  - AGT-096
+  'compressed audio format by asset type: vorbis':
+  - AGT-096
+  author game design documents:
+  - AGT-097
+  every economy variable:
+  - AGT-097
+  load and render lidar point clouds in web scenes:
+  - AGT-098
+  build terrain models from dem/dtm/dsm raster data:
+  - AGT-098
+  configure vertical exaggeration for visual impact:
+  - AGT-098
+  handle coastline and water surface rendering:
+  - AGT-098
+  configure public vs authenticated scene access:
+  - AGT-098
+  produce maps for print:
+  - AGT-099
+  export and format results for non-gis audiences:
+  - AGT-099
+  convert revit / ifc models to gis feature classes:
+  - AGT-100
+  handle lod:
+  - AGT-100
+  georeference building models correctly:
+  - AGT-100
+  generate floor plans from bim models:
+  - AGT-100
+  'define digital twin data model: static':
+  - AGT-100
+  'choose appropriate color schemes: sequential':
+  - AGT-101
+  ensure colorblind-safe palettes:
+  - AGT-101
+  handle multi-language labels and directional text:
+  - AGT-101
+  plan for gcp:
+  - AGT-102
+  classify ground, vegetation, buildings, water:
+  - AGT-102
+  road network extraction from aerial imagery:
+  - AGT-103
+  tree canopy / vegetation extraction:
+  - AGT-103
+  land use / land cover classification:
+  - AGT-103
+  water body extraction and change monitoring:
+  - AGT-103
+  'deployment: onnx export, hf spaces, edge devices':
+  - AGT-103
+  implement tool validation logic:
+  - AGT-104
+  fgdc / iso 19115 / dublin core compliance:
+  - AGT-105
+  'attribute accuracy: confusion matrix, error rate':
+  - AGT-105
+  'completeness: are all expected features present?':
+  - AGT-105
+  web service availability and response time:
+  - AGT-105
+  demos must work offline:
+  - AGT-106
+  tell a story with the demo, not just features:
+  - AGT-106
+  '**memory**: you remember format quirks':
+  - AGT-107
+  standardize datetime formats, coordinate formats:
+  - AGT-107
+  set up scheduled data refreshes from live sources:
+  - AGT-107
+  origin-destination flow analysis:
+  - AGT-108
+  least-cost path and connectivity modeling:
+  - AGT-108
+  commuter shed / service area estimation:
+  - AGT-108
+  all analysis as documented scripts or notebooks:
+  - AGT-108
+  design migration paths from legacy systems:
+  - AGT-109
+  implement auto-refresh for dashboard data:
+  - AGT-110
+  build custom rest endpoints with python:
+  - AGT-110
+  vector tiles for fast rendering of large datasets:
+  - AGT-110
+  a script must `extend` at least `object`:
+  - AGT-111
+  typed arrays:
+  - AGT-111
+  '**mandatory**: the server':
+  - AGT-112
+  '`is_multiplayer_authority':
+  - AGT-112
+  '`@rpc':
+  - AGT-112
+  never use `@rpc:
+  - AGT-112
+  '`texture':
+  - AGT-113
+  'target the correct renderer: forward+':
+  - AGT-113
+  '**role**: full-lifecycle presales expert for tog':
+  - AGT-114
+  'extract key signals from policy documents:':
+  - AGT-114
+  '**letter of inquiry':
+  - AGT-115
+  '`<gray_area>` -- area name and description':
+  - AGT-116
+  '`<project_context>` -- brief project info':
+  - AGT-116
+  '`framework`: selected framework name and version':
+  - AGT-117
+  '`phase_context`: phase name and goal':
+  - AGT-117
+  '`context_path`: path to context.md if it exists':
+  - AGT-117
+  read 5-15 most relevant source files:
+  - AGT-118
+  '`<phase>` -- phase number and name':
+  - AGT-118
+  '`<codebase_hints>` -- scout results':
+  - AGT-118
+  '**areas:** 3-5 assumption areas':
+  - AGT-118
+  stopping at obvious surface issues:
+  - AGT-120
+  "`slug` \u2014 session identifier":
+  - AGT-122
+  "`tdd_mode` \u2014 boolean; true if tdd gate is active":
+  - AGT-122
+  "`goal` \u2014 `find_root_cause_only` | `find_and_fix`":
+  - AGT-122
+  '`/gsd-debug` command':
+  - AGT-123
+  '`diagnose-issues` workflow':
+  - AGT-123
+  investigate autonomously:
+  - AGT-123
+  maintain persistent debug file state:
+  - AGT-123
+  return structured results:
+  - AGT-123
+  'source: docs/adr/0003-choose-postgres.md':
+  - AGT-125
+  '`doc_path`: path to the doc file to verify':
+  - AGT-126
+  '`project_root`: absolute path to project root':
+  - AGT-126
+  "**blocker** \u2014 a claim is demonstrably false":
+  - AGT-126
+  '`mode`: `create`':
+  - AGT-127
+  '`project_context`: json from docs-init output':
+  - AGT-127
+  '`existing_content`:':
+  - AGT-127
+  '`scope`:':
+  - AGT-127
+  '`failures`:':
+  - AGT-127
+  '`framework`: selected framework':
+  - AGT-130
+  tracing only the first link in a data chain:
+  - AGT-133
+  '**mode**':
+  - AGT-135
+  "**warning** \u2014 gap test passes but with caveats":
+  - AGT-136
+  classify each file by role:
+  - AGT-137
+  investigate the phase's technical domain:
+  - AGT-138
+  identify standard stack, patterns, and pitfalls:
+  - AGT-138
+  document findings with confidence levels:
+  - AGT-138
+  "`[verified: npm registry]` \u2014 confirmed via tool":
+  - AGT-138
+  key requirements have no tasks:
+  - AGT-139
+  dependencies are broken or circular:
+  - AGT-139
+  scope exceeds context budget:
+  - AGT-139
+  crediting a decision reference:
+  - AGT-139
+  treating scope reduction:
+  - AGT-139
+  '`/gsd-plan-phase` orchestrator':
+  - AGT-140
+  '`/gsd-plan-phase --gaps` orchestrator':
+  - AGT-140
+  '`/gsd-plan-phase` in revision mode':
+  - AGT-140
+  '`/gsd-plan-phase --reviews` orchestrator':
+  - AGT-140
+  derive must-haves using goal-backward methodology:
+  - AGT-140
+  read all 4 research files:
+  - AGT-142
+  synthesize findings into executive summary:
+  - AGT-142
+  identify confidence levels and gaps:
+  - AGT-142
+  write summary.md:
+  - AGT-142
+  marking closed based on code structure:
+  - AGT-144
+  audit implemented ui against ui-spec.md:
+  - AGT-145
+  write ui-review.md with actionable findings:
+  - AGT-145
+  cta labels are generic:
+  - AGT-146
+  more than 4 font sizes declared:
+  - AGT-146
+  spacing values are not multiples of 4:
+  - AGT-146
+  detect design system state:
+  - AGT-147
+  the care recipient's first name or nickname:
+  - AGT-150
+  whether key documents exist:
+  - AGT-150
+  the contents of legal documents:
+  - AGT-150
+  'advertising review process key points:':
+  - AGT-154
+  when you're confident:
+  - AGT-158
+  every mutation:
+  - AGT-158
+  the context they're operating in:
+  - AGT-159
+  regional dialect preferences they've mentioned:
+  - AGT-159
+  formality level appropriate to their situation:
+  - AGT-159
+  the document type and jurisdiction being reviewed:
+  - AGT-162
+  the client's role in the agreement:
+  - AGT-162
+  the practice area context:
+  - AGT-162
+  orchestrate multiple lsp clients:
+  - AGT-165
+  transform lsp responses into unified graph schema:
+  - AGT-165
+  stream graph diffs via websocket for live updates:
+  - AGT-165
+  handle 25k+ symbols without degradation:
+  - AGT-165
+  cache aggressively but invalidate precisely:
+  - AGT-165
+  create efficient gpu buffers for graph data:
+  - AGT-167
+  design spatial layout algorithms:
+  - AGT-167
+  handle raycast hit testing for symbol selection:
+  - AGT-167
+  create smooth spatial transitions and animations:
+  - AGT-167
+  support progressive immersion levels:
+  - AGT-167
+  create content optimized for baidu's crawler:
+  - AGT-172
+  integrate with baidu's paid ecosystem:
+  - AGT-172
+  guide icp:
+  - AGT-172
+  leverage danmaku:
+  - AGT-173
+  "build loyal fan communities through \u7C89\u4E1D\u52CB\u7AE0":
+  - AGT-173
+  "create content series that encourage \u6295\u5E01":
+  - AGT-173
+  "create \u6070\u996D":
+  - AGT-173
+  manage store operations across taobao:
+  - AGT-176
+  plan and execute 618, double 11:
+  - AGT-176
+  'design campaign mechanics: pre-sale':
+  - AGT-176
+  'monitor china''s hotlist ecosystem: douyin':
+  - AGT-177
+  'apply four mental models to every dataset:':
+  - AGT-177
+  video storytelling and visual content direction:
+  - AGT-178
+  content automation and scaling systems:
+  - AGT-178
+  brand storytelling and narrative development:
+  - AGT-178
+  long-form content creation:
+  - AGT-178
+  '**amazon':
+  - AGT-179
+  '**shopee':
+  - AGT-179
+  '**lazada':
+  - AGT-179
+  '**aliexpress':
+  - AGT-179
+  '**temu':
+  - AGT-179
+  '**role**: douyin':
+  - AGT-180
+  dou+:
+  - AGT-180
+  'paid traffic integration: qianchuan':
+  - AGT-180
+  'livestream data review: gpm':
+  - AGT-180
+  '**experience**: deep expertise in brevo':
+  - AGT-181
+  growth hacking playbook development and execution:
+  - AGT-183
+  product-market fit validation and optimization:
+  - AGT-183
+  customer acquisition cost:
+  - AGT-183
+  rapid user acquisition and growth acceleration:
+  - AGT-183
+  growth experiment design and execution:
+  - AGT-183
+  "develop strategies tailored to kuaishou's \u8001\u94C1\u7ECF\u6D4E":
+  - AGT-185
+  target china's lower-tier city:
+  - AGT-185
+  build live commerce operations:
+  - AGT-185
+  "manage kuaishou's \u5FEB\u624B\u5C0F\u5E97":
+  - AGT-185
+  "cultivate \u8001\u94C1":
+  - AGT-185
+  'host skill progression model: beginner':
+  - AGT-187
+  'platform-specific host style adaptation: douyin':
+  - AGT-187
+  'live room product mix design: traffic drivers':
+  - AGT-187
+  'show format positioning: vertical knowledge':
+  - AGT-189
+  'show branding: show name':
+  - AGT-189
+  '**xiaoyuzhou':
+  - AGT-189
+  '**ximalaya':
+  - AGT-189
+  '**role**: enterprise wechat':
+  - AGT-191
+  'livestream mini program: channels':
+  - AGT-191
+  '**capcut pro':
+  - AGT-194
+  '**adobe premiere pro**':
+  - AGT-194
+  '**davinci resolve**':
+  - AGT-194
+  '**engagement rate**: 8%+ target':
+  - AGT-196
+  '**tweet mix strategy**: educational threads':
+  - AGT-197
+  '**engagement rate**: 2.5%+':
+  - AGT-197
+  maintain consistent publishing schedule:
+  - AGT-199
+  '**role**: weibo':
+  - AGT-200
+  '**trending advertising products**:':
+  - AGT-200
+  ensure all content includes strategic ctas:
+  - AGT-202
+  provide comprehensive, valuable answers:
+  - AGT-203
+  participate authentically in community:
+  - AGT-203
+  active payer contracts and their fee schedules:
+  - AGT-204
+  compliance audit findings and remediation status:
+  - AGT-204
+  characters have consistent voice pillars:
+  - AGT-205
+  "\u2705 **leverage default biases.**":
+  - AGT-216
+  user preference schemas:
+  - AGT-216
+  nudge sequence logic:
+  - AGT-216
+  micro-sprint prompts.:
+  - AGT-216
+  celebration/reinforcement copy.:
+  - AGT-216
+  read the **actual** site specification file:
+  - AGT-227
+  quote exact requirements:
+  - AGT-227
+  identify gaps or unclear requirements:
+  - AGT-227
+  include acceptance criteria for each task:
+  - AGT-227
+  include fluxui component requirements:
+  - AGT-227
+  the client's name, role:
+  - AGT-228
+  '**boss zhipin**':
+  - AGT-229
+  '**lagou**':
+  - AGT-229
+  '**liepin**':
+  - AGT-229
+  '**zhaopin**':
+  - AGT-229
+  '**51job**':
+  - AGT-229
+  '**fractal agents**':
+  - AGT-230
+  '**supabase** holds live venture metadata':
+  - AGT-230
+  '**5 disposition types matter:**':
+  - AGT-230
+  build classic clothing:
+  - AGT-236
+  all transforms must be applied before export:
+  - AGT-236
+  'texture format: `.png` with transparency support':
+  - AGT-236
+  developer products are consumable:
+  - AGT-237
+  player progression data:
+  - AGT-237
+  all gameplay-affecting state changes:
+  - AGT-238
+  '`remoteevent:fireserver':
+  - AGT-238
+  '`remoteevent:fireclient':
+  - AGT-238
+  '`remotefunction:invokeserver':
+  - AGT-238
+  differentiate between skill gaps:
+  - AGT-240
+  'precision-driven: every number matters':
+  - AGT-241
+  'real-time: processes files as soon as they appear':
+  - AGT-241
+  ignore temporary excel lock files:
+  - AGT-241
+  wait for file write completion before processing:
+  - AGT-241
+  '"what tools are you using for [function] today?"':
+  - AGT-243
+  '"where does that process break down?"':
+  - AGT-243
+  '"what happens when [scenario] occurs?"':
+  - AGT-243
+  rfp or vendor evaluation announcements:
+  - AGT-246
+  explicit technology evaluation job postings:
+  - AGT-246
+  funding events:
+  - AGT-246
+  m&a activity:
+  - AGT-246
+  the agreed sales methodology:
+  - AGT-247
+  'mature, predictable business: 3x':
+  - AGT-248
+  'growth-stage or new market: 4-5x':
+  - AGT-248
+  'new rep ramping: 5x+':
+  - AGT-248
+  separate the genuinely dangerous:
+  - AGT-250
+  trace request-shaped input:
+  - AGT-250
+  distinguish between "fix before merge":
+  - AGT-251
+  identify and classify vulnerabilities by severity:
+  - AGT-252
+  run automated analysis tools:
+  - AGT-253
+  determine whether the incident is active:
+  - AGT-256
+  correlate indicators of compromise:
+  - AGT-256
+  'evaluate client-side security: xss':
+  - AGT-257
+  "detect the full spectrum \u2014 provider keys":
+  - AGT-258
+  write detection rules in sigma:
+  - AGT-260
+  write detection rules:
+  - AGT-261
+  affects the company's goals or key objectives:
+  - AGT-262
+  verify both strength:
+  - AGT-263
+  interpret soil investigation reports:
+  - AGT-263
+  perform bearing capacity and settlement analysis:
+  - AGT-263
+  ui/ux inclusion checklists:
+  - AGT-265
+  negative-prompt libraries for image generation:
+  - AGT-265
+  cultural context briefs for marketing campaigns.:
+  - AGT-265
+  '**python**: `reportlab`, `weasyprint`, `fpdf2`':
+  - AGT-267
+  '**node.js**: `puppeteer`':
+  - AGT-267
+  '**python**: `python-pptx`':
+  - AGT-267
+  '**node.js**: `pptxgenjs`':
+  - AGT-267
+  '**python**: `openpyxl`, `xlsxwriter`':
+  - AGT-267
+  note seasonal patterns:
+  - AGT-269
+  no judgment on career choices:
+  - AGT-269
+  track relationship progression per contact:
+  - AGT-270
+  apply the **anti-scope creep filter:
+  - AGT-271
+  define typed parameters with zod:
+  - AGT-272
+  evaluate labeling quality for supervised models:
+  - AGT-273
+  validate observation and outcome windows:
+  - AGT-273
+  remember org-specific constraints:
+  - AGT-275
+  '**role**: strategic orchestrator and duel master':
+  - AGT-276
+  always pass duel history to each turn for context:
+  - AGT-276
+  example duel session:
+  - AGT-276
+  templates for duel setup and move output:
+  - AGT-276
+  step-by-step workflow for running a duel:
+  - AGT-276
+  '**read every service orchestration config**':
+  - AGT-277
+  '**read every infrastructure-as-code module**':
+  - AGT-277
+  implement tiered supplier management:
+  - AGT-279
+  build a supplier performance assessment system:
+  - AGT-279
+  'manage procurement channel mix: 1688/alibaba':
+  - AGT-279
+  '**mckinsey''s scqa framework':
+  - AGT-281
+  '**bain''s action-oriented recommendation model**':
+  - AGT-281
+  prioritize **insight over information**:
+  - AGT-281
+  quantify wherever possible:
+  - AGT-281
+  maintain brevity, clarity, and strategic tone:
+  - AGT-281
+  '**personality**: bilingual':
+  - AGT-286
+  write and optimize shaders for target platforms:
+  - AGT-286
+  evaluate interfaces against wcag 2.2 aa criteria:
+  - AGT-288
+  verify screen reader compatibility:
+  - AGT-288
+  validate voice control compatibility:
+  - AGT-288
+  visual evidence is the only truth that matters:
+  - AGT-290
+  claims without evidence are fantasy:
+  - AGT-290
+  your job is to catch what others miss:
+  - AGT-290
+  '"zero issues found" is a red flag - look harder':
+  - AGT-290
+  perfect scores:
+  - AGT-290
+  optimize for largest contentful paint:
+  - AGT-291
+  monitor real user monitoring:
+  - AGT-291
+  no more "98/100 ratings" for basic dark themes:
+  - AGT-292
+  every system claim needs visual proof:
+  - AGT-292
+  c+/b- ratings are normal and acceptable:
+  - AGT-292
+  honest feedback drives better outcomes:
+  - AGT-292
+  '**personality**: allergic to `sleep':
+  - AGT-293
+  calculate total cost of ownership:
+  - AGT-295
+  establish service level agreements:
+  - AGT-295
+  create standard operating procedures:
+  - AGT-296
+  use so-based event channels:
+  - AGT-297
+  never use `gameobject.find:
+  - AGT-297
+  '`editorgui.beginchangecheck':
+  - AGT-298
+  use `undo.recordobject:
+  - AGT-298
+  '**memory**: you remember which `ufunction':
+  - AGT-301
+  implement gas:
+  - AGT-301
+  '`ufunction':
+  - AGT-301
+  '`hasauthority':
+  - AGT-301
+  cosmetic-only effects:
+  - AGT-301
+  implement the gameplay ability system:
+  - AGT-302
+  '**mandatory**: any logic that runs every frame':
+  - AGT-302
+  implement all data types unavailable in blueprint:
+  - AGT-302
+  expose c++ systems to blueprint via `ufunction:
+  - AGT-302
+  design pcg:
+  - AGT-303
+  avoid per-particle collision on gpu systems:
+  - AGT-303
+  never place gameplay-critical content:
+  - AGT-304
+  all always-loaded content:
+  - AGT-304
+  landscape resolution must be:
+  - AGT-304
+  enable runtime virtual texturing:
+  - AGT-304
+  '**enhanced windowgroups**: unique windows':
+  - AGT-305
+  integrate multi-input ux:
+  - AGT-306
+  prototype cockpit layouts in a-frame or three.js:
+  - AGT-306
+  implement constraint-driven control mechanics:
+  - AGT-306
+  manage compatibility layers across devices:
+  - AGT-307
+  build immersive 3d uis with interaction surfaces:
+  - AGT-307
+  define ui flows for immersive applications:
+  - AGT-308
+  'priority: depth':
+  - AGT-309
+  open by addressing the user by name:
+  - AGT-309
