@@ -1,0 +1,437 @@
+# RESEARCH-SOURCE-REGISTRY.yaml
+# Master registry of research sources for Company Brain
+# Updated: 2026-09-17
+# Authority: CP-065 (Knowledge Logic)
+
+---
+
+research_sources:
+
+  # ============================================================
+  # PRIMARY ACADEMIC SOURCES
+  # ============================================================
+
+  arxiv:
+    id: "source-arxiv"
+    name: "arXiv"
+    url: "https://arxiv.org"
+    api: "https://arxiv.org/api/query"
+    type: "preprint-server"
+    coverage:
+      - Computer Science
+      - Mathematics
+      - Physics
+      - Quantitative Biology
+      - Quantitative Finance
+      - Statistics
+    update_frequency: "daily"
+    embargo_period: 0
+    full_text_access: "abstract + pdf"
+    capabilities:
+      - search
+      - filter_by_category
+      - browse_recent
+    company_brain_role: "Early-stage research discovery, preprints"
+    integration_priority: "high"
+    established: 1991
+    papers_in_system: ~2300000
+
+  semantic-scholar:
+    id: "source-semantic-scholar"
+    name: "Semantic Scholar"
+    url: "https://www.semanticscholar.org"
+    api: "https://api.semanticscholar.org/graph/v1"
+    type: "academic-graph"
+    coverage:
+      - Computer Science
+      - Biomedicine
+      - All academic fields
+    update_frequency: "continuous"
+    embargo_period: 0
+    full_text_access: "metadata + embeddings + citations"
+    capabilities:
+      - search
+      - citation_context
+      - influential_citations
+      - embeddings
+      - recommendations
+    company_brain_role: "Citation context, embeddings, research relationships"
+    integration_priority: "high"
+    established: 2018
+    papers_in_system: ~200000000
+
+  openalex:
+    id: "source-openalex"
+    name: "OpenAlex"
+    url: "https://openalex.org"
+    api: "https://api.openalex.org"
+    type: "scholarly-knowledge-graph"
+    coverage:
+      - All academic fields
+      - Works
+      - Authors
+      - Institutions
+      - Topics
+      - Sources
+    update_frequency: "continuous"
+    embargo_period: 0
+    full_text_access: "metadata + relationships"
+    capabilities:
+      - search
+      - filter_and_sort
+      - bulk_export
+      - topic_classification
+      - institution_mapping
+    company_brain_role: "Complete scholarly graph, topic classification, institution mapping"
+    integration_priority: "high"
+    established: 2021
+    papers_in_system: ~250000000
+
+  papers-with-code:
+    id: "source-papers-with-code"
+    name: "Papers With Code"
+    url: "https://paperswithcode.com"
+    api: "https://www.paperswithcode.com/api"
+    type: "paper-code-dataset-benchmark"
+    coverage:
+      - Machine Learning
+      - Computer Vision
+      - NLP
+      - AI/ML
+    update_frequency: "weekly"
+    embargo_period: 0
+    full_text_access: "paper links + code + datasets + benchmarks"
+    capabilities:
+      - search_papers
+      - search_methods
+      - search_benchmarks
+      - leaderboard_data
+    company_brain_role: "Paper-to-implementation mapping, benchmarks, code links"
+    integration_priority: "very-high"
+    established: 2018
+    papers_in_system: ~60000
+    unique_value: "Only source connecting papers → code → datasets → benchmarks"
+
+  connected-papers:
+    id: "source-connected-papers"
+    name: "Connected Papers"
+    url: "https://www.connectedpapers.com"
+    api: "none (visual interface)"
+    type: "paper-similarity-graph"
+    coverage:
+      - All academic fields (via Semantic Scholar)
+    update_frequency: "dynamic"
+    embargo_period: 0
+    full_text_access: "similarity graph + prior/derivative work"
+    capabilities:
+      - similarity_search
+      - prior_work_visualization
+      - derivative_work_tracking
+    company_brain_role: "Research lineage, similar papers, research evolution"
+    integration_priority: "medium"
+    established: 2019
+    unique_value: "Similarity relationships (not just citations)"
+
+  # ============================================================
+  # SPECIALIZED ACADEMIC SOURCES
+  # ============================================================
+
+  pubmed:
+    id: "source-pubmed"
+    name: "PubMed"
+    url: "https://pubmed.ncbi.nlm.nih.gov"
+    api: "https://www.ncbi.nlm.nih.gov/research/bionlp/API"
+    type: "biomedical-literature"
+    coverage:
+      - Biomedical
+      - Life Sciences
+      - Medicine
+    update_frequency: "daily"
+    embargo_period: 0
+    full_text_access: "abstract + metadata"
+    company_brain_role: "Biomedical research (healthcare ventures)"
+    integration_priority: "medium"
+    established: 1996
+
+  ieee:
+    id: "source-ieee"
+    name: "IEEE Xplore"
+    url: "https://ieeexplore.ieee.org"
+    api: "https://developer.ieee.org"
+    type: "engineering-research"
+    coverage:
+      - Electrical Engineering
+      - Computer Science
+      - Engineering
+    update_frequency: "continuous"
+    embargo_period: "varies by conference"
+    full_text_access: "abstract + some full text"
+    company_brain_role: "Hardware, systems, engineering research"
+    integration_priority: "medium"
+    established: 1991
+
+  acm-digital-library:
+    id: "source-acm"
+    name: "ACM Digital Library"
+    url: "https://dl.acm.org"
+    api: "https://dl.acm.org/api"
+    type: "computing-research"
+    coverage:
+      - Computer Science
+      - Computing
+    update_frequency: "continuous"
+    embargo_period: "12 months"
+    full_text_access: "abstract + limited full text"
+    company_brain_role: "Computer science and systems research"
+    integration_priority: "medium"
+    established: 1997
+
+  acl-anthology:
+    id: "source-acl"
+    name: "ACL Anthology"
+    url: "https://aclanthology.org"
+    api: "none (open access)"
+    type: "nlp-conference-proceedings"
+    coverage:
+      - Natural Language Processing
+      - Computational Linguistics
+    update_frequency: "per-conference"
+    embargo_period: 0
+    full_text_access: "full text"
+    company_brain_role: "NLP and language research (free, open access)"
+    integration_priority: "high"
+    established: 2020
+
+  hugging-face-papers:
+    id: "source-huggingface-papers"
+    name: "Hugging Face Papers"
+    url: "https://huggingface.co/papers"
+    api: "none (curated collection)"
+    type: "curated-research-with-code"
+    coverage:
+      - Machine Learning
+      - NLP
+      - Vision
+    update_frequency: "daily"
+    embargo_period: 0
+    full_text_access: "paper links + model cards"
+    company_brain_role: "Actively maintained research + pre-trained models"
+    integration_priority: "high"
+    established: 2022
+    unique_value: "Papers with ready-to-use model implementations"
+
+  # ============================================================
+  # OPEN REPOSITORIES (CODE, NOT PAPERS)
+  # ============================================================
+
+  github:
+    id: "source-github"
+    name: "GitHub"
+    url: "https://github.com"
+    api: "https://api.github.com"
+    type: "open-source-code"
+    coverage:
+      - All software domains
+    update_frequency: "continuous"
+    embargo_period: 0
+    full_text_access: "source code + readme + issues"
+    capabilities:
+      - search
+      - trending
+      - language_filter
+      - star_count
+    company_brain_role: "Implementation discovery, open-source baselines"
+    integration_priority: "very-high"
+    established: 2008
+    unique_value: "Actual code, not just papers"
+
+  hugging-face-models:
+    id: "source-huggingface-models"
+    name: "Hugging Face Model Hub"
+    url: "https://huggingface.co/models"
+    api: "https://huggingface.co/api"
+    type: "pre-trained-models"
+    coverage:
+      - Machine Learning
+      - Vision
+      - NLP
+      - Audio
+    update_frequency: "continuous"
+    embargo_period: 0
+    full_text_access: "model card + weights + inference code"
+    company_brain_role: "Production-ready models, inference examples"
+    integration_priority: "very-high"
+    established: 2019
+    unique_value: "Executable models (not just code or papers)"
+
+  # ============================================================
+  # BENCHMARKS & EVALUATION
+  # ============================================================
+
+  super-glue:
+    id: "source-superglue"
+    name: "SuperGLUE"
+    url: "https://super.gluebenchmark.com"
+    type: "nlp-benchmark"
+    company_brain_role: "NLP model evaluation standard"
+    integration_priority: "medium"
+
+  mmlu:
+    id: "source-mmlu"
+    name: "MMLU (Massive Multitask Language Understanding)"
+    url: "https://github.com/hendrycks/test"
+    type: "reasoning-benchmark"
+    company_brain_role: "LLM reasoning evaluation"
+    integration_priority: "medium"
+
+  openllm-leaderboard:
+    id: "source-openllm"
+    name: "Open LLM Leaderboard"
+    url: "https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard"
+    type: "llm-benchmark"
+    company_brain_role: "LLM performance tracking"
+    integration_priority: "medium"
+
+  # ============================================================
+  # INDUSTRY & TECHNICAL REPORTS
+  # ============================================================
+
+  arxiv-cs-ai:
+    id: "source-arxiv-cs-ai"
+    name: "arXiv CS.AI (Artificial Intelligence)"
+    url: "https://arxiv.org/list/cs.AI/recent"
+    type: "preprint-category"
+    company_brain_role: "AI research discovery"
+    integration_priority: "high"
+    subcategory: "cs.AI"
+
+  openai-research:
+    id: "source-openai"
+    name: "OpenAI Research Blog"
+    url: "https://openai.com/research"
+    type: "industry-blog"
+    company_brain_role: "State-of-the-art LLM research"
+    integration_priority: "medium"
+
+  anthropic-research:
+    id: "source-anthropic"
+    name: "Anthropic Research"
+    url: "https://www.anthropic.com/research"
+    type: "industry-blog"
+    company_brain_role: "Safety, interpretability, LLM research"
+    integration_priority: "high"
+
+  deepmind-research:
+    id: "source-deepmind"
+    name: "DeepMind Research"
+    url: "https://www.deepmind.com/research"
+    type: "industry-blog"
+    company_brain_role: "Reinforcement learning, multimodal research"
+    integration_priority: "medium"
+
+  meta-research:
+    id: "source-meta"
+    name: "Meta AI Research"
+    url: "https://www.facebook.com/research/ai"
+    type: "industry-blog"
+    company_brain_role: "Computer vision, language models"
+    integration_priority: "medium"
+
+  # ============================================================
+  # PATENTS & STANDARDS
+  # ============================================================
+
+  google-patents:
+    id: "source-google-patents"
+    name: "Google Patents"
+    url: "https://patents.google.com"
+    api: "https://patents.google.com/json"
+    type: "patent-database"
+    company_brain_role: "Patented techniques, prior art search"
+    integration_priority: "low"
+
+  # ============================================================
+  # CONFIGURATION
+  # ============================================================
+
+  ingestion_config:
+    default_sources:
+      - arxiv
+      - semantic-scholar
+      - openalex
+      - papers-with-code
+      - hugging-face-papers
+      - hugging-face-models
+
+    high_priority_sources:
+      - papers-with-code  # Code connection critical
+      - hugging-face-models  # Runnable implementations
+      - acl-anthology  # NLP research (free)
+
+    update_schedule:
+      daily:
+        - arxiv
+        - semantic-scholar
+        - openalex
+        - hugging-face-papers
+        - hugging-face-models
+      weekly:
+        - papers-with-code
+        - github-trending
+      manual:
+        - connected-papers  # Requires specific paper query
+
+    research_agent_tasks:
+      - monitor_arxiv: "Watch for new papers in AI/ML categories"
+      - sync_papers_with_code: "Map papers to implementations"
+      - fetch_embeddings: "Get Semantic Scholar embeddings for similarity search"
+      - build_topic_index: "Classify papers by research topic"
+      - track_benchmarks: "Monitor leaderboard changes"
+      - identify_adoption_opportunities: "Connect research to ventures"
+
+---
+
+## Integration Strategy
+
+### Phase 1: Core Academic Sources (Sep 2026)
+- arXiv: Daily ingestion of new papers
+- Semantic Scholar: Citation context + embeddings
+- OpenAlex: Scholarly graph + topic classification
+
+### Phase 2: Code & Implementation (Oct 2026)
+- Papers With Code: Paper-to-code mapping
+- Hugging Face: Pre-trained models + model cards
+- GitHub: Open-source baseline implementations
+
+### Phase 3: Specialized Sources (Nov 2026)
+- ACL Anthology: NLP research (free)
+- Connected Papers: Research lineage + similarity
+- Industry blogs: State-of-the-art summaries
+
+### Phase 4: Evaluation & Adoption (Dec 2026)
+- Benchmark tracking (MMLU, SuperGLUE, OpenLLM)
+- Replication experiments on Company Brain infrastructure
+- Adoption decisions (watch/pilot/adopted/rejected)
+
+## Research Agent Workflow
+
+```
+DISCOVER (New Paper)
+    ↓
+EXTRACT (Claims, Methods, Models, Code)
+    ↓
+VERIFY (Check against Company Brain)
+    ↓
+LINK (Map to capabilities, repos, opportunities)
+    ↓
+EXPERIMENT (Test in sandbox environment)
+    ↓
+EVALUATE (Measure against metrics)
+    ↓
+DECIDE (Adopt, pilot, watch, or reject)
+    ↓
+UPDATE (Add to Company Brain graph)
+    ↓
+APPLY (Integrate into workflows/ventures)
+```
+

@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<research-intelligence
+    id="research-intelligence-layer"
+    version="1.0"
+    xmlns="https://worldwidebro.com/company-brain#research"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+  <!-- ========================================================= -->
+  <!-- RESEARCH ENTITY TYPES                                    -->
+  <!-- ========================================================= -->
+
+  <entity-types>
+
+    <!-- Core Research Entities -->
+    <entity-type id="research-paper">
+      <label>Research Paper</label>
+      <description>Academic or technical paper published on arXiv, journal, conference, or preprint server.</description>
+    </entity-type>
+
+    <entity-type id="research-author">
+      <label>Research Author</label>
+      <description>Researcher/author of papers in the scholarly knowledge base.</description>
+    </entity-type>
+
+    <entity-type id="research-institution">
+      <label>Research Institution</label>
+      <description>University, lab, company, or organization publishing research.</description>
+    </entity-type>
+
+    <entity-type id="research-topic">
+      <label>Research Topic</label>
+      <description>Area of research (e.g., "Large Language Models", "Retrieval-Augmented Generation").</description>
+    </entity-type>
+
+    <!-- Research Contributions -->
+    <entity-type id="research-method">
+      <label>Research Method</label>
+      <description>Technique, algorithm, or approach proposed or validated in research.</description>
+    </entity-type>
+
+    <entity-type id="research-model">
+      <label>Research Model</label>
+      <description>Machine learning model, architecture, or framework described in research.</description>
+    </entity-type>
+
+    <entity-type id="research-dataset">
+      <label>Research Dataset</label>
+      <description>Dataset used for training, evaluation, or benchmarking in research.</description>
+    </entity-type>
+
+    <entity-type id="research-benchmark">
+      <label>Research Benchmark</label>
+      <description>Standardized evaluation metric, leaderboard, or test suite for research.</description>
+    </entity-type>
+
+    <!-- Research Knowledge -->
+    <entity-type id="research-claim">
+      <label>Research Claim</label>
+      <description>Assertion or finding made by a paper (requires evidence).</description>
+    </entity-type>
+
+    <entity-type id="research-evidence">
+      <label>Research Evidence</label>
+      <description>Empirical data, experiment, or proof supporting or refuting a claim.</description>
+    </entity-type>
+
+    <entity-type id="research-experiment">
+      <label>Research Experiment</label>
+      <description>Controlled test designed to validate or refute a hypothesis.</description>
+    </entity-type>
+
+    <entity-type id="research-result">
+      <label>Research Result</label>
+      <description>Outcome of an experiment or analysis.</description>
+    </entity-type>
+
+    <entity-type id="research-hypothesis">
+      <label>Research Hypothesis</label>
+      <description>Testable prediction made in research.</description>
+    </entity-type>
+
+    <!-- Research Output & Application -->
+    <entity-type id="research-opportunity">
+      <label>Research Opportunity</label>
+      <description>Business or capability opportunity identified from research findings.</description>
+    </entity-type>
+
+    <entity-type id="research-adoption">
+      <label>Research Adoption Decision</label>
+      <description>Decision to adopt, pilot, reject, or watch a research finding or technique.</description>
+    </entity-type>
+
+  </entity-types>
+
+  <!-- ========================================================= -->
+  <!-- RESEARCH RELATIONSHIP TYPES                              -->
+  <!-- ========================================================= -->
+
+  <relationship-types>
+
+    <!-- Paper → Content -->
+    <relationship id="proposes">
+      <label>proposes</label>
+      <domain>research-paper</domain>
+      <range>research-method</range>
+      <description>Paper introduces a new method or technique.</description>
+    </relationship>
+
+    <relationship id="introduces">
+      <label>introduces</label>
+      <domain>research-paper</domain>
+      <range>research-model</range>
+      <description>Paper presents a new model or architecture.</description>
+    </relationship>
+
+    <relationship id="uses-dataset">
+      <label>uses-dataset</label>
+      <domain>research-paper</domain>
+      <range>research-dataset</range>
+      <description>Paper uses a dataset for evaluation or training.</description>
+    </entity-type>
+
+    <relationship id="evaluated-on">
+      <label>evaluated-on</label>
+      <domain>research-paper</domain>
+      <range>research-benchmark</range>
+      <description>Paper reports results on a benchmark.</description>
+    </relationship>
+
+    <!-- Paper → Code -->
+    <relationship id="implemented-by-repository">
+      <label>implemented-by-repository</label>
+      <domain>research-paper</domain>
+      <range>repository</range>
+      <description>Paper has official or community code implementation.</description>
+    </relationship>
+
+    <!-- Paper → Citation Graph -->
+    <relationship id="cites">
+      <label>cites</label>
+      <domain>research-paper</domain>
+      <range>research-paper</range>
+      <description>This paper cites another paper.</description>
+    </relationship>
+
+    <relationship id="cited-by">
+      <label>cited-by</label>
+      <domain>research-paper</domain>
+      <range>research-paper</range>
+      <description>This paper is cited by another paper.</description>
+    </relationship>
+
+    <relationship id="similar-to">
+      <label>similar-to</label>
+      <domain>research-paper</domain>
+      <range>research-paper</range>
+      <description>Paper is semantically similar to another (from Connected Papers).</description>
+    </relationship>
+
+    <relationship id="extends">
+      <label>extends</label>
+      <domain>research-paper</domain>
+      <range>research-method</range>
+      <description>Paper extends or improves on prior work.</description>
+    </relationship>
+
+    <relationship id="replicates">
+      <label>replicates</label>
+      <domain>research-paper</domain>
+      <range>research-paper</range>
+      <description>Paper independently replicates or validates prior findings.</description>
+    </relationship>
+
+    <relationship id="contradicts">
+      <label>contradicts</label>
+      <domain>research-paper</domain>
+      <range>research-claim</range>
+      <description>Paper refutes or contradicts a prior claim.</description>
+    </relationship>
+
+    <relationship id="supports">
+      <label>supports</label>
+      <domain>research-paper</domain>
+      <range>research-claim</range>
+      <description>Paper provides evidence supporting a claim.</description>
+    </relationship>
+
+    <!-- Claim → Evidence Hierarchy -->
+    <relationship id="supported-by-evidence">
+      <label>supported-by-evidence</label>
+      <domain>research-claim</domain>
+      <range>research-evidence</range>
+      <description>Claim is supported by specific evidence.</description>
+    </relationship>
+
+    <relationship id="validated-by-experiment">
+      <label>validated-by-experiment</label>
+      <domain>research-claim</domain>
+      <range>research-experiment</range>
+      <description>Claim is validated through controlled experiment.</description>
+    </relationship>
+
+    <relationship id="produced-result">
+      <label>produced-result</label>
+      <domain>research-experiment</domain>
+      <range>research-result</range>
+      <description>Experiment produced a specific result.</description>
+    </relationship>
+
+    <relationship id="replicated-by">
+      <label>replicated-by</label>
+      <domain>research-result</domain>
+      <range>research-result</range>
+      <description>Result has been independently replicated.</description>
+    </relationship>
+
+    <!-- Research → Capability -->
+    <relationship id="enables-capability">
+      <label>enables-capability</label>
+      <domain>research-method</domain>
+      <range>capability</range>
+      <description>Research finding enables a new company capability.</description>
+    </relationship>
+
+    <!-- Research → Company Brain Integration -->
+    <relationship id="creates-opportunity">
+      <label>creates-opportunity</label>
+      <domain>research-paper</domain>
+      <range>research-opportunity</range>
+      <description>Research finding creates a business or capability opportunity.</description>
+    </relationship>
+
+    <relationship id="applicable-to-venture">
+      <label>applicable-to-venture</label>
+      <domain>research-method</domain>
+      <range>venture</range>
+      <description>Research method is applicable to a specific venture.</description>
+    </relationship>
+
+    <relationship id="adoption-status">
+      <label>adoption-status</label>
+      <domain>research-paper</domain>
+      <range>research-adoption</range>
+      <description>Company decision on whether to adopt this research.</description>
+    </relationship>
+
+    <!-- Authorship & Sourcing -->
+    <relationship id="authored-by">
+      <label>authored-by</label>
+      <domain>research-paper</domain>
+      <range>research-author</range>
+      <description>Paper is authored by a researcher.</description>
+    </relationship>
+
+    <relationship id="from-institution">
+      <label>from-institution</label>
+      <domain>research-author</domain>
+      <range>research-institution</range>
+      <description>Researcher is affiliated with an institution.</description>
+    </relationship>
+
+    <relationship id="publishes-to">
+      <label>publishes-to</label>
+      <domain>research-paper</domain>
+      <range>research-source</range>
+      <description>Paper is published on a research source (arXiv, conference, journal).</description>
+    </relationship>
+
+    <!-- Topic Classification -->
+    <relationship id="addresses-topic">
+      <label>addresses-topic</label>
+      <domain>research-paper</domain>
+      <range>research-topic</range>
+      <description>Paper addresses a specific research topic.</description>
+    </relationship>
+
+    <relationship id="topic-contains-method">
+      <label>topic-contains-method</label>
+      <domain>research-topic</domain>
+      <range>research-method</range>
+      <description>Topic encompasses specific methods.</description>
+    </relationship>
+
+  </relationship-types>
+
+  <!-- ========================================================= -->
+  <!-- RESEARCH ENTITY HIERARCHY                                -->
+  <!-- ========================================================= -->
+
+  <hierarchy>
+    <level name="OBSERVATION">
+      <description>Raw data or empirical observation.</description>
+    </level>
+
+    <level name="SOURCE">
+      <description>Paper, report, or publication source (arXiv, journal, etc.).</description>
+    </level>
+
+    <level name="PAPER">
+      <description>Published research describing methods, models, claims.</description>
+    </level>
+
+    <level name="CLAIM">
+      <description>Assertion or finding (requires evidence to validate).</description>
+    </level>
+
+    <level name="EVIDENCE">
+      <description>Empirical data supporting or refuting a claim.</description>
+    </level>
+
+    <level name="EXPERIMENT">
+      <description>Controlled test designed to generate evidence.</description>
+    </level>
+
+    <level name="REPLICATION">
+      <description>Independent verification of findings.</description>
+    </level>
+
+    <level name="VALIDATED_RESULT">
+      <description>Finding verified through replication and internal testing.</description>
+    </level>
+
+    <level name="CAPABILITY">
+      <description>Validated capability adopted by Company Brain.</description>
+    </level>
+
+    <level name="AGENT_WORKFLOW">
+      <description>Capability integrated into agent workflows.</description>
+    </level>
+
+    <level name="VENTURE_APPLICATION">
+      <description>Capability generating revenue in a venture.</description>
+    </level>
+
+    <level name="BUSINESS_OUTCOME">
+      <description>Measurable financial or operational impact.</description>
+    </level>
+  </hierarchy>
+
+  <!-- ========================================================= -->
+  <!-- RESEARCH ADOPTION STATES                                 -->
+  <!-- ========================================================= -->
+
+  <adoption-states>
+    <state id="watch">
+      <label>Watch</label>
+      <description>Monitoring — interesting but not yet validated or applicable.</description>
+    </state>
+
+    <state id="experiment">
+      <label>Experiment</label>
+      <description>Testing — actively running experiments to evaluate applicability.</description>
+    </state>
+
+    <state id="pilot">
+      <label>Pilot</label>
+      <description>Piloting — limited deployment in one venture or workflow.</description>
+    </state>
+
+    <state id="adopted">
+      <label>Adopted</label>
+      <description>Adopted — integrated into standard capabilities and workflows.</description>
+    </state>
+
+    <state id="rejected">
+      <label>Rejected</label>
+      <description>Rejected — evaluated but determined not applicable or effective.</description>
+    </state>
+
+    <state id="superseded">
+      <label>Superseded</label>
+      <description>Superseded — replaced by newer or better approach.</description>
+    </state>
+  </adoption-states>
+
+</research-intelligence>
