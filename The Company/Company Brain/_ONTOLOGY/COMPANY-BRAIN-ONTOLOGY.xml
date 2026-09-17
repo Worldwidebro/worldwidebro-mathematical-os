@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<company-brain
+    id="company-brain-worldwidebro"
+    version="1.0"
+    xmlns="https://worldwidebro.com/company-brain#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+
+  <!-- =========================================================== -->
+  <!-- ENTITY TYPES (72 LOGIC LAYERS)                             -->
+  <!-- =========================================================== -->
+
+  <entity-types>
+    <entity-type id="logic-layer">
+      <label>Logic Layer</label>
+      <description>One of 72 operational logic layers governing Company Brain behavior.</description>
+    </entity-type>
+
+    <entity-type id="logic-domain">
+      <label>Logic Domain</label>
+      <description>One of 12 master domains organizing logic layers.</description>
+    </entity-type>
+
+    <entity-type id="control-plane">
+      <label>Control Plane</label>
+      <description>Decision authority and oversight point for specific logics (CP-001 to CP-072).</description>
+    </entity-type>
+
+    <entity-type id="agent">
+      <label>Agent</label>
+      <description>Autonomous or interactive entity that executes decisions, workflows, or capabilities.</description>
+    </entity-type>
+
+    <entity-type id="capability">
+      <label>Capability</label>
+      <description>Specific ability, skill, or capacity the organization can execute.</description>
+    </entity-type>
+
+    <entity-type id="workflow">
+      <label>Workflow</label>
+      <description>Sequence of steps and decision points executed by agents.</description>
+    </entity-type>
+
+    <entity-type id="venture">
+      <label>Venture</label>
+      <description>Business operated or owned by the organization.</description>
+    </entity-type>
+
+    <entity-type id="repository">
+      <label>Repository</label>
+      <description>Code repository implementing capabilities or powering ventures.</description>
+    </entity-type>
+
+    <entity-type id="tool">
+      <label>Tool</label>
+      <description>Software tool, service, or API used by agents or workflows.</description>
+    </entity-type>
+
+    <entity-type id="policy">
+      <label>Policy</label>
+      <description>Rule governing behavior, permissions, or constraints.</description>
+    </entity-type>
+
+    <entity-type id="decision">
+      <label>Decision</label>
+      <description>Choice point or determination made by an agent or control plane.</description>
+    </entity-type>
+
+    <entity-type id="event">
+      <label>Event</label>
+      <description>Occurrence that triggers logic execution or state changes.</description>
+    </entity-type>
+
+    <entity-type id="state">
+      <label>State</label>
+      <description>Current condition or status of an entity.</description>
+    </entity-type>
+
+    <entity-type id="metric">
+      <label>Metric</label>
+      <description>Measured value used to evaluate logic execution quality.</description>
+    </entity-type>
+
+    <entity-type id="model">
+      <label>Model</label>
+      <description>AI model (Claude, GPT, Ollama, etc.) used for reasoning or generation.</description>
+    </entity-type>
+
+    <entity-type id="prompt">
+      <label>Prompt</label>
+      <description>Instructions given to a model to guide behavior.</description>
+    </entity-type>
+
+    <entity-type id="knowledge">
+      <label>Knowledge</label>
+      <description>Information, facts, or understanding retrieved or maintained by the system.</description>
+    </entity-type>
+
+    <entity-type id="evaluation">
+      <label>Evaluation</label>
+      <description>Assessment of logic execution, agent performance, or system health.</description>
+    </entity-type>
+  </entity-types>
+
+  <!-- =========================================================== -->
+  <!-- RELATIONSHIP TYPES (TYPED EDGES)                           -->
+  <!-- =========================================================== -->
+
+  <relationship-types>
+
+    <!-- LOGIC LAYER RELATIONSHIPS -->
+    <relationship id="belongs-to-domain">
+      <label>belongs-to-domain</label>
+      <domain>logic-layer</domain>
+      <range>logic-domain</range>
+      <description>A logic layer is part of a master domain.</description>
+    </relationship>
+
+    <relationship id="governed-by-control-plane">
+      <label>governed-by-control-plane</label>
+      <domain>logic-layer</domain>
+      <range>control-plane</range>
+      <description>A logic layer is overseen by a specific control plane.</description>
+    </relationship>
+
+    <relationship id="executes-logic">
+      <label>executes-logic</label>
+      <domain>agent</domain>
+      <range>logic-layer</range>
+      <description>An agent implements or executes a specific logic.</description>
+    </relationship>
+
+    <!-- AGENT RELATIONSHIPS -->
+    <relationship id="governed-by-agent">
+      <label>governed-by-agent</label>
+      <domain>logic-layer</domain>
+      <range>agent</range>
+      <description>A logic layer is executed by a responsible agent.</description>
+    </relationship>
+
+    <relationship id="capable-of">
+      <label>capable-of</label>
+      <domain>agent</domain>
+      <range>capability</range>
+      <description>An agent can execute a specific capability.</description>
+    </relationship>
+
+    <relationship id="executes-workflow">
+      <label>executes-workflow</label>
+      <domain>agent</domain>
+      <range>workflow</range>
+      <description>An agent runs or orchestrates a workflow.</description>
+    </relationship>
+
+    <relationship id="uses-tool">
+      <label>uses-tool</label>
+      <domain>agent</domain>
+      <range>tool</range>
+      <description>An agent uses a tool to execute actions.</description>
+    </relationship>
+
+    <relationship id="uses-model">
+      <label>uses-model</label>
+      <domain>agent</domain>
+      <range>model</range>
+      <description>An agent uses an AI model for reasoning or generation.</description>
+    </relationship>
+
+    <relationship id="uses-prompt">
+      <label>uses-prompt</label>
+      <domain>agent</domain>
+      <range>prompt</range>
+      <description>An agent follows specific prompting instructions.</description>
+    </relationship>
+
+    <relationship id="reads-knowledge">
+      <label>reads-knowledge</label>
+      <domain>agent</domain>
+      <range>knowledge</range>
+      <description>An agent retrieves or reads knowledge to inform decisions.</description>
+    </relationship>
+
+    <relationship id="writes-knowledge">
+      <label>writes-knowledge</label>
+      <domain>agent</domain>
+      <range>knowledge</range>
+      <description>An agent creates or updates knowledge.</description>
+    </relationship>
+
+    <relationship id="delegates-to-agent">
+      <label>delegates-to-agent</label>
+      <domain>agent</domain>
+      <range>agent</range>
+      <description>An agent delegates work to another agent.</description>
+    </relationship>
+
+    <relationship id="escalates-to-agent">
+      <label>escalates-to-agent</label>
+      <domain>agent</domain>
+      <range>agent</range>
+      <description>An agent escalates decisions to a higher-level agent.</description>
+    </relationship>
+
+    <relationship id="collaborates-with-agent">
+      <label>collaborates-with-agent</label>
+      <domain>agent</domain>
+      <range>agent</range>
+      <description>Agents work together on shared goals.</description>
+    </relationship>
+
+    <!-- WORKFLOW RELATIONSHIPS -->
+    <relationship id="triggered-by-event">
+      <label>triggered-by-event</label>
+      <domain>workflow</domain>
+      <range>event</range>
+      <description>A workflow starts when an event occurs.</description>
+    </relationship>
+
+    <relationship id="has-step">
+      <label>has-step</label>
+      <domain>workflow</domain>
+      <range>workflow</range>
+      <description>A workflow contains sequential steps or sub-workflows.</description>
+    </relationship>
+
+    <relationship id="produces-output">
+      <label>produces-output</label>
+      <domain>workflow</domain>
+      <range>knowledge</range>
+      <description>A workflow generates results or knowledge.</description>
+    </relationship>
+
+    <!-- CAPABILITY RELATIONSHIPS -->
+    <relationship id="implemented-by-repository">
+      <label>implemented-by-repository</label>
+      <domain>capability</domain>
+      <range>repository</range>
+      <description>A capability is implemented in code within a repository.</description>
+    </relationship>
+
+    <relationship id="requires-capability">
+      <label>requires-capability</label>
+      <domain>capability</domain>
+      <range>capability</range>
+      <description>One capability depends on another.</description>
+    </relationship>
+
+    <relationship id="enables-venture">
+      <label>enables-venture</label>
+      <domain>capability</domain>
+      <range>venture</range>
+      <description>A capability is needed for a venture to operate.</description>
+    </relationship>
+
+    <!-- REPOSITORY RELATIONSHIPS -->
+    <relationship id="powers-venture">
+      <label>powers-venture</label>
+      <domain>repository</domain>
+      <range>venture</range>
+      <description>Code in a repository powers or enables a venture.</description>
+    </relationship>
+
+    <relationship id="depends-on-repository">
+      <label>depends-on-repository</label>
+      <domain>repository</domain>
+      <range>repository</range>
+      <description>One repository depends on another (dependency).</description>
+    </relationship>
+
+    <relationship id="tested-by-evaluation">
+      <label>tested-by-evaluation</label>
+      <domain>repository</domain>
+      <range>evaluation</range>
+      <description>A repository is tested and validated by an evaluation.</description>
+    </relationship>
+
+    <!-- POLICY & GOVERNANCE RELATIONSHIPS -->
+    <relationship id="constrained-by-policy">
+      <label>constrained-by-policy</label>
+      <domain>logic-layer</domain>
+      <range>policy</range>
+      <description>A logic layer is constrained or governed by a policy.</description>
+    </relationship>
+
+    <relationship id="requires-approval">
+      <label>requires-approval</label>
+      <domain>logic-layer</domain>
+      <range>control-plane</range>
+      <description>A logic layer decision requires oversight/approval from a control plane.</description>
+    </relationship>
+
+    <relationship id="applies-to-venture">
+      <label>applies-to-venture</label>
+      <domain>policy</domain>
+      <range>venture</range>
+      <description>A policy applies to operations of a venture.</description>
+    </relationship>
+
+    <!-- STATE & EVENT RELATIONSHIPS -->
+    <relationship id="has-state">
+      <label>has-state</label>
+      <domain>entity</domain>
+      <range>state</range>
+      <description>An entity currently has a specific state.</description>
+    </relationship>
+
+    <relationship id="triggered-by">
+      <label>triggered-by</label>
+      <domain>logic-layer</domain>
+      <range>event</range>
+      <description>A logic layer is triggered or activated by an event.</description>
+    </relationship>
+
+    <relationship id="produces-event">
+      <label>produces-event</label>
+      <domain>agent</domain>
+      <range>event</range>
+      <description>Agent execution produces an observable event.</description>
+    </relationship>
+
+    <!-- EVALUATION & METRICS RELATIONSHIPS -->
+    <relationship id="evaluated-by">
+      <label>evaluated-by</label>
+      <domain>logic-layer</domain>
+      <range>evaluation</range>
+      <description>A logic layer is assessed by an evaluation.</description>
+    </relationship>
+
+    <relationship id="measures">
+      <label>measures</label>
+      <domain>metric</domain>
+      <range>logic-layer</range>
+      <description>A metric quantifies execution of a logic layer.</description>
+    </relationship>
+
+    <relationship id="validated-by">
+      <label>validated-by</label>
+      <domain>agent</domain>
+      <range>evaluation</range>
+      <description>An agent's decisions are validated by evaluation.</description>
+    </relationship>
+
+    <!-- KNOWLEDGE & DOCUMENTATION RELATIONSHIPS -->
+    <relationship id="documents">
+      <label>documents</label>
+      <domain>knowledge</domain>
+      <range>logic-layer</range>
+      <description>Knowledge documents or explains a logic layer.</description>
+    </relationship>
+
+    <relationship id="references">
+      <label>references</label>
+      <domain>knowledge</domain>
+      <range>entity</range>
+      <description>Knowledge references or cites an entity.</description>
+    </relationship>
+
+    <relationship id="derived-from">
+      <label>derived-from</label>
+      <domain>knowledge</domain>
+      <range>evaluation</range>
+      <description>Knowledge is derived from evaluation results.</description>
+    </relationship>
+
+    <relationship id="supports-decision">
+      <label>supports-decision</label>
+      <domain>knowledge</domain>
+      <range>decision</range>
+      <description>Knowledge supports a decision made by an agent.</description>
+    </relationship>
+
+    <!-- DECISION RELATIONSHIPS -->
+    <relationship id="made-by-agent">
+      <label>made-by-agent</label>
+      <domain>decision</domain>
+      <range>agent</range>
+      <description>A decision is made by a specific agent.</description>
+    </relationship>
+
+    <relationship id="based-on-logic">
+      <label>based-on-logic</label>
+      <domain>decision</domain>
+      <range>logic-layer</range>
+      <description>A decision is made based on a logic layer's rules.</description>
+    </relationship>
+
+    <relationship id="results-in-action">
+      <label>results-in-action</label>
+      <domain>decision</domain>
+      <range>workflow</range>
+      <description>A decision results in a workflow execution.</description>
+    </relationship>
+
+  </relationship-types>
+
+  <!-- =========================================================== -->
+  <!-- 12 MASTER DOMAINS                                          -->
+  <!-- =========================================================== -->
+
+  <domains>
+    <domain id="domain-purpose" type="logic-domain" wiki="[[00-CONSTITUTION/OBJECTIVES.md]]">
+      <name>PURPOSE</name>
+      <description>Identity, objectives, strategy (Logics 1-3)</description>
+    </domain>
+
+    <domain id="domain-business" type="logic-domain" wiki="[[30-REVENUE/README.md]]">
+      <name>BUSINESS</name>
+      <description>Revenue, customers, products, sales, marketing (Logics 4-11)</description>
+    </domain>
+
+    <domain id="domain-operations" type="logic-domain" wiki="[[12-WORKFLOWS/README.md]]">
+      <name>OPERATIONS</name>
+      <description>Processes, workflows, scheduling, dispatch (Logics 12-14, 25-30)</description>
+    </domain>
+
+    <domain id="domain-decision-policy" type="logic-domain" wiki="[[20-DECISIONS/README.md]]">
+      <name>DECISION & POLICY</name>
+      <description>Decisions, policies, permissions, approvals, risk, compliance (Logics 15-20)</description>
+    </domain>
+
+    <domain id="domain-financial" type="logic-domain" wiki="[[37-FINANCE/README.md]]">
+      <name>FINANCIAL</name>
+      <description>Financial flows, accounting, capital, resources (Logics 21-24)</description>
+    </domain>
+
+    <domain id="domain-intelligence" type="logic-domain" wiki="[[16-AGENTS/README.md]]">
+      <name>INTELLIGENCE</name>
+      <description>Agents, models, prompts, context, memory, retrieval, tools, orchestration (Logics 31-40)</description>
+    </domain>
+
+    <domain id="domain-state-event" type="logic-domain" wiki="[[_PIPELINES/README.md]]">
+      <name>STATE & EVENT</name>
+      <description>Events, state, temporal logic, dependencies, graph (Logics 41-45)</description>
+    </domain>
+
+    <domain id="domain-data-validation" type="logic-domain" wiki="[[_PIPELINES/README.md]]">
+      <name>DATA & VALIDATION</name>
+      <description>Data logic, validation, verification, evaluation, quality (Logics 46-50)</description>
+    </domain>
+
+    <domain id="domain-exception-recovery" type="logic-domain" wiki="[[13-WORKFLOWS/README.md]]">
+      <name>EXCEPTION & RECOVERY</name>
+      <description>Exception handling, recovery, fallback, escalation (Logics 51-54)</description>
+    </domain>
+
+    <domain id="domain-security-obs" type="logic-domain" wiki="[[_INFRASTRUCTURE/README.md]]">
+      <name>SECURITY & OBSERVABILITY</name>
+      <description>Security, privacy, observability, audit (Logics 55-58)</description>
+    </domain>
+
+    <domain id="domain-deployment-infra" type="logic-domain" wiki="[[_INFRASTRUCTURE/README.md]]">
+      <name>DEPLOYMENT & INFRASTRUCTURE</name>
+      <description>Deployment, infrastructure, compute, cost (Logics 59-62)</description>
+    </domain>
+
+    <domain id="domain-learning-adapt" type="logic-domain" wiki="[[_EVAL/README.md]]">
+      <name>LEARNING & ADAPTATION</name>
+      <description>Learning, adaptation, knowledge management (Logics 63-65)</description>
+    </domain>
+
+    <domain id="domain-ontology-gov" type="logic-domain" wiki="[[00-CONSTITUTION/GOVERNANCE-FRAMEWORK.md]]">
+      <name>ONTOLOGY & GOVERNANCE</name>
+      <description>Ontology, governance, lifecycle (Logics 66-68)</description>
+    </domain>
+
+    <domain id="domain-portfolio-invest" type="logic-domain" wiki="[[01-IDENTITY/PORTFOLIO-STRATEGY.md]]">
+      <name>PORTFOLIO & INVESTMENT</name>
+      <description>Portfolio, investment, innovation, exit (Logics 69-72)</description>
+    </domain>
+  </domains>
+
+  <!-- =========================================================== -->
+  <!-- 72 LOGIC LAYERS (SAMPLE - FIRST 10)                        -->
+  <!-- =========================================================== -->
+
+  <entities>
+
+    <!-- PURPOSE DOMAIN -->
+    <logic-layer id="logic-001" type="logic-layer" wiki="[[01-IDENTITY/README.md]]">
+      <name>Identity Logic</name>
+      <layer-number>1</layer-number>
+      <question>Who/what are we?</question>
+      <relations>
+        <belongs-to-domain rdf:resource="#domain-purpose"/>
+        <governed-by-control-plane rdf:resource="#cp-001"/>
+      </relations>
+    </logic-layer>
+
+    <logic-layer id="logic-002" type="logic-layer" wiki="[[00-CONSTITUTION/OBJECTIVES.md]]">
+      <name>Objective Logic</name>
+      <layer-number>2</layer-number>
+      <question>What are we trying to accomplish?</question>
+      <relations>
+        <belongs-to-domain rdf:resource="#domain-purpose"/>
+        <governed-by-control-plane rdf:resource="#cp-002"/>
+      </relations>
+    </logic-layer>
+
+    <logic-layer id="logic-003" type="logic-layer" wiki="[[20-DECISIONS/STRATEGY-FRAMEWORK.md]]">
+      <name>Strategy Logic</name>
+      <layer-number>3</layer-number>
+      <question>What approach should we use?</question>
+      <relations>
+        <belongs-to-domain rdf:resource="#domain-purpose"/>
+        <governed-by-control-plane rdf:resource="#cp-003"/>
+      </relations>
+    </logic-layer>
+
+    <!-- BUSINESS DOMAIN -->
+    <logic-layer id="logic-004" type="logic-layer" wiki="[[_REGISTRIES/CANONICAL/BUSINESS_RULES.yaml]]">
+      <name>Business Logic</name>
+      <layer-number>4</layer-number>
+      <question>What business rules govern decisions?</question>
+      <relations>
+        <belongs-to-domain rdf:resource="#domain-business"/>
+        <governed-by-control-plane rdf:resource="#cp-004"/>
+      </relations>
+    </logic-layer>
+
+    <logic-layer id="logic-005" type="logic-layer" wiki="[[20-DECISIONS/ECONOMIC-MODEL.md]]">
+      <name>Economic Logic</name>
+      <layer-number>5</layer-number>
+      <question>Does the action make financial sense?</question>
+      <relations>
+        <belongs-to-domain rdf:resource="#domain-business"/>
+        <governed-by-control-plane rdf:resource="#cp-005"/>
+      </relations>
+    </logic-layer>
+
+    <logic-layer id="logic-006" type="logic-layer" wiki="[[30-REVENUE/REVENUE-LOOPS.md]]">
+      <name>Revenue Logic</name>
+      <layer-number>6</layer-number>
+      <question>How do we turn activity into revenue?</question>
+      <relations>
+        <belongs-to-domain rdf:resource="#domain-business"/>
+        <governed-by-control-plane rdf:resource="#cp-006"/>
+      </relations>
+    </logic-layer>
+
+    <logic-layer id="logic-007" type="logic-layer" wiki="[[30-REVENUE/PRICING-STRATEGY.md]]">
+      <name>Pricing Logic</name>
+      <layer-number>7</layer-number>
+      <question>How should we value offerings?</question>
+      <relations>
+        <belongs-to-domain rdf:resource="#domain-business"/>
+        <governed-by-control-plane rdf:resource="#cp-007"/>
+      </relations>
+    </logic-layer>
+
+    <logic-layer id="logic-008" type="logic-layer" wiki="[[31-CUSTOMER/CUSTOMER-ONTOLOGY.md]]">
+      <name>Customer Logic</name>
+      <layer-number>8</layer-number>
+      <question>Who do we serve and how?</question>
+      <relations>
+        <belongs-to-domain rdf:resource="#domain-business"/>
+        <governed-by-control-plane rdf:resource="#cp-008"/>
+      </relations>
+    </logic-layer>
+
+    <logic-layer id="logic-009" type="logic-layer" wiki="[[32-SALES/SALES-PROCESS.md]]">
+      <name>Sales Logic</name>
+      <layer-number>9</layer-number>
+      <question>How do prospects become customers?</question>
+      <relations>
+        <belongs-to-domain rdf:resource="#domain-business"/>
+        <governed-by-control-plane rdf:resource="#cp-009"/>
+      </relations>
+    </logic-layer>
+
+    <logic-layer id="logic-010" type="logic-layer" wiki="[[33-MARKETING/MARKETING-STRATEGY.md]]">
+      <name>Marketing Logic</name>
+      <layer-number>10</layer-number>
+      <question>How do we generate demand?</question>
+      <relations>
+        <belongs-to-domain rdf:resource="#domain-business"/>
+        <governed-by-control-plane rdf:resource="#cp-010"/>
+      </relations>
+    </logic-layer>
+
+    <!-- ========================================================== -->
+    <!-- CONTROL PLANES (CP-001 to CP-072)                         -->
+    <!-- ========================================================== -->
+
+    <control-plane id="cp-001" type="control-plane">
+      <name>CP-001: Identity Control Plane</name>
+      <description>Strategic decision authority over organizational identity and definition.</description>
+      <governs>
+        <governs rdf:resource="#logic-001"/>
+      </governs>
+    </control-plane>
+
+    <control-plane id="cp-002" type="control-plane">
+      <name>CP-002: Objectives Control Plane</name>
+      <description>Sets and oversees organizational objectives and goal hierarchy.</description>
+      <governs>
+        <governs rdf:resource="#logic-002"/>
+      </governs>
+    </control-plane>
+
+    <control-plane id="cp-003" type="control-plane">
+      <name>CP-003: Strategy Control Plane</name>
+      <description>Approves and monitors strategic decisions and plans.</description>
+      <governs>
+        <governs rdf:resource="#logic-003"/>
+      </governs>
+    </control-plane>
+
+    <control-plane id="cp-004" type="control-plane">
+      <name>CP-004: Business Rules Control Plane</name>
+      <description>Maintains and enforces core business rule definitions.</description>
+      <governs>
+        <governs rdf:resource="#logic-004"/>
+      </governs>
+    </control-plane>
+
+    <!-- (CP-005 through CP-072 follow same pattern - abbreviated here) -->
+
+  </entities>
+
+  <!-- =========================================================== -->
+  <!-- AGENT DEFINITIONS (WHO EXECUTES WHAT LOGIC)                -->
+  <!-- =========================================================== -->
+
+  <agents>
+
+    <agent id="agent-strategic-identity" type="agent" wiki="[[16-AGENTS/STRATEGIC-IDENTITY-AGENT.md]]">
+      <name>Strategic Identity Agent</name>
+      <description>Maintains organizational identity and definition. Executes Logic-001.</description>
+      <relations>
+        <executes-logic rdf:resource="#logic-001"/>
+        <governed-by-control-plane rdf:resource="#cp-001"/>
+        <uses-model rdf:resource="#model-claude-opus"/>
+        <uses-prompt rdf:resource="#prompt-identity-definition"/>
+      </relations>
+    </agent>
+
+    <agent id="agent-goal-setting" type="agent" wiki="[[16-AGENTS/GOAL-SETTING-AGENT.md]]">
+      <name>Goal-Setting Agent</name>
+      <description>Sets organizational objectives and ensures alignment. Executes Logic-002.</description>
+      <relations>
+        <executes-logic rdf:resource="#logic-002"/>
+        <governed-by-control-plane rdf:resource="#cp-002"/>
+        <uses-model rdf:resource="#model-claude-sonnet"/>
+      </relations>
+    </agent>
+
+    <agent id="agent-strategy" type="agent" wiki="[[16-AGENTS/STRATEGY-AGENT.md]]">
+      <name>Strategy Agent</name>
+      <description>Develops and evaluates strategic approaches. Executes Logic-003.</description>
+      <relations>
+        <executes-logic rdf:resource="#logic-003"/>
+        <governed-by-control-plane rdf:resource="#cp-003"/>
+        <uses-model rdf:resource="#model-claude-opus"/>
+        <reads-knowledge rdf:resource="#knowledge-market-data"/>
+        <reads-knowledge rdf:resource="#knowledge-competitive-landscape"/>
+      </relations>
+    </agent>
+
+    <agent id="agent-business-rules" type="agent" wiki="[[16-AGENTS/BUSINESS-RULES-ENGINE.md]]">
+      <name>Business Rules Engine</name>
+      <description>Evaluates decisions against core business rules. Executes Logic-004.</description>
+      <relations>
+        <executes-logic rdf:resource="#logic-004"/>
+        <governed-by-control-plane rdf:resource="#cp-004"/>
+        <uses-tool rdf:resource="#tool-rules-engine"/>
+      </relations>
+    </agent>
+
+    <!-- (Additional agents follow same pattern) -->
+
+  </agents>
+
+  <!-- =========================================================== -->
+  <!-- MODELS & PROMPTS                                            -->
+  <!-- =========================================================== -->
+
+  <models>
+    <model id="model-claude-opus" type="model">
+      <name>Claude Opus 5</name>
+      <description>Flagship reasoning model for complex strategic decisions.</description>
+    </model>
+
+    <model id="model-claude-sonnet" type="model">
+      <name>Claude Sonnet 5</name>
+      <description>Balanced model for tactical execution and analysis.</description>
+    </model>
+
+    <model id="model-claude-haiku" type="model">
+      <name>Claude Haiku 4.5</name>
+      <description>Fast, lightweight model for routine operations.</description>
+    </model>
+
+    <model id="model-ollama-local" type="model">
+      <name>Ollama Local (Qwen, Llama, Hermes)</name>
+      <description>Local models for air-gapped or cost-sensitive operations.</description>
+    </model>
+  </models>
+
+  <prompts>
+    <prompt id="prompt-identity-definition" type="prompt">
+      <name>Identity Definition Prompt</name>
+      <description>Guides Strategic Identity Agent in defining organizational identity.</description>
+    </prompt>
+  </prompts>
+
+  <!-- =========================================================== -->
+  <!-- PROVENANCE METADATA                                         -->
+  <!-- =========================================================== -->
+
+  <provenance>
+    <source id="source-logic-layers-registry" type="source">
+      <name>Logic Layers Registry</name>
+      <location>[[_REGISTRIES/CANONICAL/LOGIC_LAYERS_REGISTRY.yaml]]</location>
+      <last-updated>2026-09-17T19:30:00Z</last-updated>
+      <authority>CP-001 (Strategic), CP-032 (Execution)</authority>
+    </source>
+
+    <source id="source-agent-directives" type="source">
+      <name>Agent Directives</name>
+      <location>[[16-AGENTS/AGENT-DIRECTIVES.yaml]]</location>
+      <last-updated>2026-09-17T19:30:00Z</last-updated>
+      <authority>CP-031 (Agent Logic)</authority>
+    </source>
+
+    <import-record id="import-001" type="import">
+      <timestamp>2026-09-17T19:30:00Z</timestamp>
+      <source rdf:resource="#source-logic-layers-registry"/>
+      <agent>Logic Ingestion Pipeline</agent>
+      <record-count>72</record-count>
+      <status>complete</status>
+      <confidence>0.99</confidence>
+    </import-record>
+  </provenance>
+
+</company-brain>
