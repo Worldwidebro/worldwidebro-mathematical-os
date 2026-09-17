@@ -1,0 +1,47 @@
+# AGENT REPO DISCOVERY INSTRUCTIONS
+
+When executing a task, ALWAYS follow this sequence:
+
+## Step 1: IDENTIFY THE GAP
+What engineering gap does this task solve?
+- Loop Engineering? (Workflow automation, orchestration, agent loops)
+- Tool Engineering? (API integrations, plugins, MCP tools)
+- Eval Engineering? (Testing, metrics, quality assurance)
+- Context Engineering? (RAG, embeddings, retrieval)
+- Harness Engineering? (Monitoring, observability, logging)
+- Graph Engineering? (Knowledge graphs, semantic networks)
+- Prompt Engineering? (Prompt templates, few-shot learning)
+
+## Step 2: SEARCH COMPANY BRAIN
+Query the repo discovery engine:
+```python
+from repo_discovery_engine import RepoDiscoveryEngine
+engine = RepoDiscoveryEngine()
+repos = engine.find_repos_by_gap("[gap_category]", limit=3)
+```
+
+## Step 3: EXAMINE TOP REPOS
+For each repo returned:
+- Read the README
+- Copy relevant code patterns
+- Check for deployment guides
+- Reuse proven patterns
+
+## Step 4: DOCUMENT USAGE
+When implementing, note:
+- "This pattern from: [repo_name]"
+- "Based on: [repo_url]"
+- "Key code from: [section]"
+
+## EXAMPLE: OPS-001 Staffing Workflow
+
+Task: "Build staffing placement workflow"
+Gap: Loop Engineering
+Query: engine.find_repos_by_gap("loop", 3)
+Result:
+  1. n8n-workflows
+  2. prefect-jobs
+  3. airflow-dag-templates
+Action: Use n8n templates for scheduling
+
+════════════════════════════════════════════════════════════════════════════
