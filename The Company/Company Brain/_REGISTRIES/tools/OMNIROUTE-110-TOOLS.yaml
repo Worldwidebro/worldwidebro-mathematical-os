@@ -1,0 +1,211 @@
+---
+id: OMNIROUTE-MCP-TOOLS-110
+title: "OmniRoute MCP Tools (110 Total)"
+description: "Complete registry of Model Context Protocol tools available via OmniRoute"
+updated: 2026-09-17
+status: ACTIVE
+total_tools: 110
+
+# Tools organized by capability layer (from 22-stage pipeline)
+
+tools:
+  # Layer 2-3: OBSERVATION & DATA INGESTION (12 tools)
+  - id: kg-017-hybrid-search
+    name: "Hybrid Search (Graph + Vector)"
+    layer: retrieval
+    risk_level: read
+    cost: $0
+    availability: ollama
+    
+  - id: web-fetch
+    name: "Web Fetch & Parse"
+    layer: observation
+    risk_level: read
+    cost: $0
+    availability: claude-claude-in-chrome
+    
+  - id: file-read
+    name: "File System Read"
+    layer: observation
+    risk_level: read
+    cost: $0
+    availability: local
+    
+  # Layer 4-6: INFORMATION & KNOWLEDGE (18 tools)
+  - id: neo4j-query
+    name: "Neo4j Graph Query"
+    layer: knowledge
+    risk_level: read
+    cost: $0
+    availability: local
+    
+  - id: qdrant-search
+    name: "Qdrant Vector Search"
+    layer: knowledge
+    risk_level: read
+    cost: $0
+    availability: local
+    
+  - id: postgres-query
+    name: "PostgreSQL Query"
+    layer: knowledge
+    risk_level: read
+    cost: $0
+    availability: local
+    
+  # Layer 7: CONTEXT ASSEMBLY (8 tools)
+  - id: context-builder
+    name: "Context Assembly"
+    layer: context
+    risk_level: read
+    cost: $0
+    availability: mcp
+    
+  - id: prompt-template
+    name: "Prompt Template Rendering"
+    layer: context
+    risk_level: read
+    cost: $0
+    availability: mcp
+    
+  # Layer 10: RETRIEVAL & RANKING (6 tools)
+  - id: bm25-rank
+    name: "BM25 Ranking"
+    layer: retrieval
+    risk_level: read
+    cost: $0
+    availability: local
+    
+  - id: semantic-rank
+    name: "Semantic Ranking"
+    layer: retrieval
+    risk_level: read
+    cost: $0
+    availability: local
+    
+  # Layer 11: EXECUTION & ACTIONS (28 tools)
+  - id: email-send
+    name: "Send Email"
+    layer: execution
+    risk_level: write
+    cost: $0
+    availability: sendgrid
+    
+  - id: crm-create-lead
+    name: "Create CRM Lead"
+    layer: execution
+    risk_level: write
+    cost: $0
+    availability: supabase
+    
+  - id: slack-send-message
+    name: "Send Slack Message"
+    layer: execution
+    risk_level: write
+    cost: $0
+    availability: slack
+    
+  - id: calendar-create-event
+    name: "Create Calendar Event"
+    layer: execution
+    risk_level: write
+    cost: $0
+    availability: google-calendar
+    
+  - id: task-create
+    name: "Create Task"
+    layer: execution
+    risk_level: write
+    cost: $0
+    availability: clickup
+    
+  - id: invoice-generate
+    name: "Generate Invoice"
+    layer: execution
+    risk_level: write
+    cost: $0
+    availability: stripe
+    
+  - id: sms-send
+    name: "Send SMS"
+    layer: execution
+    risk_level: write
+    cost: $0
+    availability: twilio
+    
+  - id: webhook-trigger
+    name: "Trigger Webhook"
+    layer: execution
+    risk_level: write
+    cost: $0
+    availability: n8n
+    
+  # Layer 12-13: VERIFICATION & EVALUATION (16 tools)
+  - id: deepeval-correctness
+    name: "DeepEval Correctness"
+    layer: evaluation
+    risk_level: read
+    cost: $0
+    availability: langsmith
+    
+  - id: deepeval-faithfulness
+    name: "DeepEval Faithfulness"
+    layer: evaluation
+    risk_level: read
+    cost: $0
+    availability: langsmith
+    
+  - id: metric-compare
+    name: "Metric Comparison"
+    layer: evaluation
+    risk_level: read
+    cost: $0
+    availability: local
+    
+  # Layer 14-17: HARNESS & OBSERVABILITY (12 tools)
+  - id: langsmith-trace
+    name: "LangSmith Trace"
+    layer: observability
+    risk_level: read
+    cost: $0
+    availability: langsmith
+    
+  - id: audit-log-write
+    name: "Write Audit Log"
+    layer: observability
+    risk_level: write
+    cost: $0
+    availability: postgres
+    
+  - id: metric-record
+    name: "Record Metric"
+    layer: observability
+    risk_level: write
+    cost: $0
+    availability: prometheus
+    
+  # Layer 19-22: LEARNING & EVOLUTION (10 tools)
+  - id: agent-metrics-update
+    name: "Update Agent Metrics"
+    layer: learning
+    risk_level: write
+    cost: $0
+    availability: postgres
+    
+  - id: workflow-optimize
+    name: "Optimize Workflow"
+    layer: learning
+    risk_level: write
+    cost: $0
+    availability: n8n
+
+# Total: 110 tools (sample coverage shown above)
+# Full list: see omniroute_registration.yaml
+
+summary:
+  read_only_tools: 62
+  write_tools: 35
+  high_risk_tools: 13
+  local_cost_tools: 107
+  cloud_cost_tools: 3
+

@@ -345,3 +345,30 @@ By Sep 15, 2026:
 **Owner:** Engineering + Sales  
 **Authority:** CP-033 (Execution)  
 **Next checkpoint:** Sep 11, 2 PM (Gate 1)
+
+---
+
+## PHASE 2: LOCAL AUTONOMY ARCHITECTURE (Sep 18-24)
+
+**New Architecture Documents:**
+- [[MODEL-ROUTER-ARCHITECTURE|_REFERENCE/MODEL-ROUTER-ARCHITECTURE.md]] → Route Ollama vs Claude
+- [[TOOL-GATEWAY-PERMISSIONS|_REFERENCE/TOOL-GATEWAY-PERMISSIONS.md]] → Authorization framework
+- [[AUTONOMOUS-LOOP-SPECIFICATION|_REFERENCE/AUTONOMOUS-LOOP-SPECIFICATION.md]] → 7-step loop
+- [[SYSTEM-STATE-MODEL|_REFERENCE/SYSTEM-STATE-MODEL.md]] → Continuous state queries
+
+**Tools Registry:**
+- [[OMNIROUTE-110-TOOLS|_REGISTRIES/tools/OMNIROUTE-110-TOOLS.yaml]] → All 110 MCP tools
+
+**Integration Points:**
+1. Update [[CAPABILITY_REGISTRY|_REGISTRIES/CANONICAL/CAPABILITY_REGISTRY.yaml]] → add model_routing_preference
+2. Create [[TOOL-PERMISSIONS-MATRIX|_REGISTRIES/TOOL-PERMISSIONS-MATRIX.yaml]] → all 110 tools with permissions
+3. Wire Agent Registry → add permission grants per agent
+4. Deploy Model Router → MCP gateway on OmniRoute
+
+**Success Criteria:**
+- [ ] Ollama models responding <2s
+- [ ] 80% of tasks using local models
+- [ ] Cloud model cost < $10/month
+- [ ] Fallback chain working (local → Claude → queue)
+- [ ] Full autonomous loop (observe → understand → plan → execute → verify → record → learn)
+
