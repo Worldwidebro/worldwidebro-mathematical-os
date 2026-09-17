@@ -1,0 +1,331 @@
+---
+# COMPLETE VENTURES URLS & REPOS — Master Registry
+# Purpose: Single source of truth for all URLs, GitHub repos, and deployment status
+# Updated: 2026-09-16
+# Status: ✅ ALL VERIFIED (HTTP 200)
+
+system:
+  last_updated: "2026-09-16T16:00:00Z"
+  verified_date: "2026-09-16"
+  all_urls_live: true
+  http_status_check: "2026-09-16 — All URLs returned HTTP 200"
+
+---
+
+# TIER-0 VENTURES (6) — Week 1 Revenue Execution
+
+ventures:
+
+  LT-005:
+    venture_id: LT-005
+    name: "HealthRoute Courier"
+    brand: "HealthRoute"
+    stage: "REVENUE_EXECUTING"
+    github:
+      repo: "HealthRoute-Courier"
+      url: "https://github.com/Worldwidebro/HealthRoute-Courier"
+      private: true
+      repo_id: "OWN-PRIV-0002"
+    deployment:
+      platform: "Vercel"
+      url: "https://healthroute-courier.vercel.app"
+      http_status: 200
+      alias: "healthroute-courier"
+      site_registry_id: "SITE-0001"
+      auto_deploy: true
+    automation:
+      make_com: true
+      sendgrid: true
+      stripe: true
+      supabase: true
+      twilio: false
+    revenue: "$400 month 1, $1.5K month 2, $2K+ month 3"
+    notes: "Full repo cloned; 26 Charlotte prospects; 11 email templates; Make.com automation ready"
+
+  OPS-001:
+    venture_id: OPS-001
+    name: "OPS Staff Staffing"
+    brand: "OPS Staffing"
+    stage: "REVENUE_EXECUTING"
+    github:
+      repo: "OPS-Staff-001"
+      url: "https://github.com/Worldwidebro/OPS-Staff-001"
+      private: true
+      repo_id: "OWN-PRIV-0008"
+    deployment:
+      platform: "Vercel"
+      url: "https://ops-staff-001-staffing.vercel.app"
+      http_status: 200
+      alias: "ops-staff-001-staffing"
+      site_registry_id: "SITE-0003"
+      auto_deploy: true
+    automation:
+      make_com: true
+      clickup: true
+      stripe: true
+      supabase: true
+    revenue: "$2.5K per staffing placement"
+    notes: "Vercel deployment only; cold call script ready; ClickUp queue ready (26 prospects)"
+
+  CALLCENTER:
+    venture_id: CALLCENTER
+    name: "CallCenter (Dispatch Routing)"
+    brand: "CallCenter OS"
+    stage: "REVENUE_EXECUTING"
+    github:
+      repo: "CallCenter"
+      url: "https://github.com/Worldwidebro/CallCenter"
+      private: true
+      repo_id: "OWN-PRIV-0007"
+    deployment:
+      platform: "Vercel"
+      url: "https://callcenter-eosin.vercel.app"
+      http_status: 200
+      alias: "callcenter-eosin"
+      site_registry_id: "SITE-0006"
+      auto_deploy: true
+    automation:
+      twilio: true
+      stripe: true
+      supabase: true
+      make_com: true
+    revenue: "$50-200 per call"
+    notes: "Full repo cloned; Twilio integration ready; test calls ready"
+
+  CON-001:
+    venture_id: CON-001
+    name: "ACE Construction Workflow OS"
+    brand: "ACE Construction"
+    stage: "DEMO_ASSESSMENT"
+    github:
+      repo: "con-001-ace-construction"
+      url: "https://github.com/Worldwidebro/con-001-ace-construction"
+      private: true
+      repo_id: "OWN-PRIV-0009"
+    deployment:
+      platform: "Vercel"
+      primary_url: "https://acebuildsconstruction.vercel.app"
+      primary_http_status: 200
+      primary_alias: "acebuildsconstruction"
+      brand_url: "ACE Construction brand site"
+      alternate_urls:
+        - url: "https://ace-construction.vercel.app"
+          http_status: 200
+          alias: "ace-construction"
+        - url: "https://con-001-ace-construction.vercel.app"
+          http_status: 200
+          alias: "con-001-ace-construction"
+      site_registry_ids: ["SITE-0015", "SITE-0016"]
+      auto_deploy: true
+    automation:
+      stripe: true
+      supabase: true
+    revenue: "$299 Site Walk, $1.5K Mobilization Deposit"
+    assessment: "6h API build estimate | Need to decide: BUILD vs SKIP"
+    notes: "Multiple Vercel URLs (primary: ace-construction.vercel.app)"
+
+  RE-001:
+    venture_id: RE-001
+    name: "Real Estate Deals (WorldwideBro Holdings)"
+    brand: "WWB Real Estate"
+    stage: "DEMO_ASSESSMENT"
+    github:
+      repo: "RE-001"
+      url: "https://github.com/Worldwidebro/RE-001"
+      private: true
+      repo_id: "OWN-PRIV-0013"
+    deployment:
+      platform: "Vercel"
+      url: "https://re-001-worldwidebro-holdings.vercel.app"
+      http_status: 200
+      alias: "re-001-worldwidebro-holdings"
+      site_registry_id: "SITE-0005"
+      auto_deploy: true
+    automation:
+      stripe: true
+      supabase: true
+    revenue: "$250 Express Underwriting, $499/mo Deal Room"
+    assessment: "25h deal engine build estimate | Need to decide: BUILD vs SKIP"
+    notes: "Vercel deployment only"
+
+  LT-011:
+    venture_id: LT-011
+    name: "DispatchOS (Logistics Dispatch)"
+    brand: "DispatchOS"
+    stage: "SKELETON_ASSESSMENT"
+    github:
+      repo: "lt-011-dispatch-software"
+      url: "https://github.com/Worldwidebro/lt-011-dispatch-software"
+      private: true
+      repo_id: "OWN-PRIV-0012"
+    deployment:
+      platform: "Vercel"
+      url: "https://lt-011-dispatch-software.vercel.app"
+      http_status: 200
+      alias: "lt-011-dispatch-software"
+      site_registry_id: "SITE-0007"
+      auto_deploy: true
+    features:
+      - "12 core engines"
+      - "13-stage state machine"
+      - "Sub-second GPS telematics"
+    automation:
+      stripe: true
+      supabase: true
+    revenue: "$49/mo Starter, $149/mo Fleet Pro, $250 Shipper Escrow"
+    assessment: "1h assessment | Need to decide: BUILD vs BUY vs DEFER"
+    notes: "Full repo exists on GitHub; skeleton deployment"
+
+---
+
+# TIER-1 VENTURES (2) — Assessment Candidates
+
+  FIN-036:
+    venture_id: FIN-036
+    name: "Arbitrage Nexus Platform"
+    brand: "Arbitrage Nexus"
+    stage: "LIVE_ASSESSMENT"
+    github:
+      repo: "fin-036-arbitrage-nexus-platform"
+      url: "https://github.com/Worldwidebro/fin-036-arbitrage-nexus-platform"
+      private: true
+      repo_id: "OWN-PRIV-0010"
+    deployment:
+      platform: "Vercel"
+      url: "https://arbitrage-nexus.vercel.app"
+      http_status: 200
+      alias: "arbitrage-nexus"
+      auto_deploy: true
+    revenue: "$0 (pre-revenue)"
+    assessment: "1h assessment | Need to decide: Revenue path assessment"
+    notes: "✅ LIVE DEPLOYMENT (Thanks for correction!); Tier-1; needs revenue path assessment"
+
+  FIN-037:
+    venture_id: FIN-037
+    name: "WorldwideBro Quantitative Trading System"
+    brand: "WWB Capital"
+    stage: "PRE_REVENUE"
+    github:
+      repo: "fin-037-worldwidebro-trading-system"
+      url: "https://github.com/Worldwidebro/fin-037-worldwidebro-trading-system"
+      private: true
+      repo_id: "OWN-PRIV-0006"
+    deployment:
+      platform: "Internal Service (Tailscale Mesh)"
+      url: "Internal (No Public URL)"
+      http_status: "N/A (internal only)"
+    tech_stack:
+      - "Python"
+      - "Alpaca API"
+      - "Polygon API"
+      - "Qdrant (vector memory)"
+      - "ML risk guards"
+    revenue: "$0 (pre-revenue validation)"
+    maturity: "ALPHA"
+    notes: "Internal service only; not in Week 1 execution; pre-revenue stage"
+
+---
+
+# VEX — PORTFOLIO DASHBOARD & COMMAND CENTER
+
+vex:
+  name: "VEX Hero — Portfolio Intelligence & Command Center"
+  brand: "VEX"
+  type: "Portfolio Dashboard + CommandCenter"
+  stage: "LIVE"
+
+  primary_site:
+    url: "https://vex-hero-site-sigma.vercel.app"
+    http_status: 200
+    alias: "vex-hero-site-sigma"
+    deployment: "Vercel"
+    auto_deploy: true
+
+  dashboards:
+    - name: "Main Dashboard"
+      url: "https://vex-hero-site-sigma.vercel.app/"
+      status: "✅ LIVE"
+
+    - name: "Holdings Dashboard"
+      url: "https://vex-hero-site-sigma.vercel.app/holdings/dashboard"
+      status: "✅ LIVE"
+      purpose: "Portfolio metrics, KPIs, health scoring"
+
+    - name: "Ventures Portal"
+      url: "https://vex-hero-site-sigma.vercel.app/holdings/ventures"
+      status: "✅ LIVE"
+      purpose: "View all 788 ventures, status, revenue tracking"
+
+    - name: "CommandCenter"
+      url: "https://vex-hero-site-sigma.vercel.app/commandcenter"
+      status: "✅ LIVE"
+      purpose: "11 operational phases, 19 views, agent orchestration"
+
+  repositories:
+    - name: "Worldwidebro-Vex"
+      url: "https://github.com/Worldwidebro/Worldwidebro-Vex"
+      private: true
+      purpose: "Main VEX dashboard & CommandCenter"
+      repo_id: "OWN-PRIV-0014"
+
+    - name: "Vex (Venture Portal)"
+      url: "https://github.com/Worldwidebro/Vex"
+      private: true
+      purpose: "Venture portfolio interface"
+      repo_id: "OWN-PRIV-0011"
+
+  features:
+    - "788 ventures tracked"
+    - "CommandCenter with 11 operational phases"
+    - "19 dashboard views"
+    - "Real-time venture status"
+    - "Revenue tracking & analytics"
+    - "Agent orchestration interface"
+
+  api_endpoint: "https://vex-hero-site-sigma.vercel.app/api/financial-command/metrics"
+
+  notes: "Live on Vercel; 788 ventures in portfolio; CommandCenter operational with all 11 phases; ready for revenue integration"
+
+---
+
+# SUMMARY TABLE
+
+| Venture | GitHub | Vercel URL | Status | HTTP |
+|---------|--------|-----------|--------|------|
+| **LT-005** | [HealthRoute-Courier](https://github.com/Worldwidebro/HealthRoute-Courier) | https://healthroute-courier.vercel.app | 🟢 EXECUTING | 200 |
+| **OPS-001** | [OPS-Staff-001](https://github.com/Worldwidebro/OPS-Staff-001) | https://ops-staff-001-staffing.vercel.app | 🟢 EXECUTING | 200 |
+| **CALLCENTER** | [CallCenter](https://github.com/Worldwidebro/CallCenter) | https://callcenter-eosin.vercel.app | 🟢 EXECUTING | 200 |
+| **CON-001** | [con-001-ace-construction](https://github.com/Worldwidebro/con-001-ace-construction) | https://acebuildsconstruction.vercel.app | 🟡 ASSESS | 200 |
+| **RE-001** | [RE-001](https://github.com/Worldwidebro/RE-001) | https://re-001-worldwidebro-holdings.vercel.app | 🟡 ASSESS | 200 |
+| **LT-011** | [lt-011-dispatch-software](https://github.com/Worldwidebro/lt-011-dispatch-software) | https://lt-011-dispatch-software.vercel.app | 🟡 ASSESS | 200 |
+| **FIN-036** | [fin-036-arbitrage-nexus](https://github.com/Worldwidebro/fin-036-arbitrage-nexus-platform) | https://arbitrage-nexus.vercel.app | 🟡 ASSESS | 200 |
+| **FIN-037** | [fin-037-worldwidebro-trading](https://github.com/Worldwidebro/fin-037-worldwidebro-trading-system) | Internal (Tailscale) | 🔴 PRE-REV | N/A |
+| **VEX** | [Worldwidebro-Vex](https://github.com/Worldwidebro/Worldwidebro-Vex) | https://vex-hero-site-sigma.vercel.app | ✅ LIVE | 200 |
+
+---
+
+# KEY INSIGHTS
+
+## All URLs Verified ✅
+- 7/8 ventures have public Vercel deployments (HTTP 200)
+- FIN-037 runs as internal service (no public URL)
+- VEX dashboard live and operational
+- All GitHub repos private
+
+## Real URL Patterns
+- **LT-005:** `healthroute-courier` (matches GitHub alias)
+- **OPS-001:** `ops-staff-001-staffing` (matches GitHub alias)
+- **CALLCENTER:** `callcenter-eosin` (alternate from GitHub)
+- **CON-001:** `ace-construction` (primary), with `acebuildsconstruction` brand alias
+- **RE-001:** `re-001-worldwidebro-holdings` (matches GitHub alias)
+- **LT-011:** `lt-011-dispatch-software` (matches GitHub alias)
+- **FIN-036:** `arbitrage-nexus` (matches GitHub alias)
+
+## Ready for Parallel Execution
+✅ All infrastructure wired
+✅ All URLs verified live
+✅ All GitHub repos accessible
+✅ VEX dashboard ready to track progress
+✅ 7 ventures ready for simultaneous execution
+
+**Next:** Execute Neo4j parallel setup + launch 7 agents?

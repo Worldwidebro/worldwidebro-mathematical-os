@@ -1,0 +1,185 @@
+---
+# VENTURE ALIASES & URLS — Master Registry
+# Purpose: Single source of truth for all venture URLs, GitHub repos, and aliases
+# Updated: 2026-09-16
+# Authority: NAVIGATION_ALIASES + SITES_REGISTRY + venture .md specs
+
+ventures:
+
+  # TIER-0 REVENUE-READY
+
+  LT-005:
+    venture_id: "LT-005"
+    name: "HealthRoute Courier"
+    brand_name: "HealthRoute"
+    legal_name: "HealthRoute Courier Dispatch LLC"
+    github_repo: "https://github.com/Worldwidebro/HealthRoute-Courier"
+    github_alias: "HealthRoute-Courier"
+    vercel_url: "https://healthroute-courier.vercel.app"
+    vercel_alias: "healthroute-courier"
+    site_registry_id: "SITE-0001"
+    revenue_stage: "EXECUTING"
+    status: "LIVE"
+    notes: "Full repo cloned locally; Make.com automation ready; 26 Charlotte prospects; 11 email templates live"
+
+  OPS-001:
+    venture_id: "OPS-001"
+    name: "OPS Staff Staffing"
+    brand_name: "OPS Staffing"
+    legal_name: "OPS Staff Solutions LLC"
+    github_repo: "https://github.com/Worldwidebro/OPS-Staff-001"
+    github_alias: "OPS-Staff-001"
+    vercel_url: "https://ops-staff-001-staffing.vercel.app"
+    vercel_alias: "ops-staff-001-staffing"
+    site_registry_id: "SITE-0003"
+    revenue_stage: "EXECUTING"
+    status: "LIVE"
+    notes: "No local repo yet; deployment only; cold call script ready; ClickUp queue ready (26 prospects)"
+
+  CALLCENTER:
+    venture_id: "CALLCENTER"
+    name: "CallCenter (Dispatch routing)"
+    brand_name: "CallCenter OS"
+    legal_name: "CallCenter Dispatch LLC"
+    github_repo: "https://github.com/Worldwidebro/CallCenter"
+    github_alias: "CallCenter"
+    vercel_url: "https://callcenter-eosin.vercel.app"
+    vercel_alias: "callcenter-eosin"
+    site_registry_id: "SITE-0006"
+    revenue_stage: "EXECUTING"
+    status: "LIVE"
+    notes: "Full repo cloned locally; Twilio integration ready; test calls ready"
+
+  # TIER-0 DEMO-READY (Assessment 1h each)
+
+  CON-001:
+    venture_id: "CON-001"
+    name: "ACE Construction Workflow OS"
+    brand_name: "ACE Construction"
+    legal_name: "ACE Construction & Contracting LLC"
+    github_repo: "https://github.com/Worldwidebro/con-001-ace-construction"
+    github_alias: "con-001-ace-construction"
+    vercel_urls:
+      - "https://ace-construction.vercel.app"  # Primary (WHOIAM.md)
+      - "https://con-001-ace-construction.vercel.app"  # Alternate
+      - "https://acebuildsconstruction.vercel.app"  # Brand alias (WHOIAM.md)
+    vercel_aliases: ["ace-construction", "con-001-ace-construction", "acebuildsconstruction"]
+    site_registry_ids: ["SITE-0015", "SITE-0016"]  # Multiple deployments
+    revenue_stage: "DEMO_READY"
+    status: "NEEDS_ASSESSMENT"
+    notes: "No local repo yet; multiple Vercel URLs; Stripe checkout wired ($299 Site Walk, $1.5K Mobilization); 6h API build estimate"
+
+  RE-001:
+    venture_id: "RE-001"
+    name: "Real Estate Deals (WorldwideBro Holdings)"
+    brand_name: "WWB Real Estate"
+    legal_name: "WorldwideBro Holdings LLC"
+    github_repo: "https://github.com/Worldwidebro/RE-001"
+    github_alias: "RE-001"
+    vercel_url: "https://re-001-worldwidebro-holdings.vercel.app"
+    vercel_alias: "re-001-worldwidebro-holdings"
+    site_registry_id: "SITE-0005"
+    revenue_stage: "DEMO_READY"
+    status: "NEEDS_ASSESSMENT"
+    notes: "No local repo yet; Stripe checkout wired ($250 Express, $499/mo Deal Room); 25h deal engine build estimate"
+
+  LT-011:
+    venture_id: "LT-011"
+    name: "DispatchOS (Logistics Dispatch)"
+    brand_name: "DispatchOS"
+    legal_name: "DispatchOS Transportation LLC"
+    github_repo: "https://github.com/Worldwidebro/lt-011-dispatch-software"
+    github_alias: "lt-011-dispatch-software"
+    vercel_url: "https://lt-011-dispatch-software.vercel.app"
+    vercel_alias: "lt-011-dispatch-software"
+    site_registry_id: "SITE-0006"
+    revenue_stage: "SKELETON"
+    status: "NEEDS_ASSESSMENT"
+    notes: "Full repo exists on GitHub; 12 core engines; 13-stage state machine; Stripe multi-tier ($49/mo Starter, $149/mo Fleet Pro, $250 Shipper Escrow); 1h assessment for BUILD/BUY/DEFER"
+
+  # TIER-1 (Not in Week 1 execution)
+
+  FIN-037:
+    venture_id: "FIN-037"
+    name: "WorldwideBro Quantitative Trading System"
+    brand_name: "WWB Capital"
+    legal_name: "WorldwideBro Capital Technologies LLC"
+    github_repo: "https://github.com/Worldwidebro/fin-037-worldwidebro-trading-system"
+    github_alias: "fin-037-worldwidebro-trading-system"
+    vercel_url: null  # NO PUBLIC DEPLOYMENT
+    vercel_alias: null
+    internal_service: "Tailscale Mesh (Internal Service)"
+    revenue_stage: "PRE_REVENUE"
+    status: "VALIDATING"
+    maturity: "ALPHA"
+    notes: "Python + Alpaca + Polygon + Qdrant; internal service only; $0 revenue; pre-revenue validation stage; NOT part of Week 1 execution"
+
+  FIN-036:
+    venture_id: "FIN-036"
+    name: "Arbitrage Nexus Platform"
+    brand_name: "Arbitrage Nexus"
+    legal_name: "Arbitrage Nexus Trading LLC"
+    github_repo: "https://github.com/Worldwidebro/fin-036-arbitrage-nexus-platform"
+    github_alias: "fin-036-arbitrage-nexus-platform"
+    vercel_url: null  # NO PUBLIC DEPLOYMENT YET
+    revenue_stage: "PRE_REVENUE"
+    status: "VALIDATING"
+    notes: "Tier-1; no deployment yet; pre-revenue"
+
+---
+
+# WIKI LINK ALIASES
+
+## Tier-0 (Week 1 Revenue Execution)
+- [[LT-005|LT-005 HealthRoute Courier]] → healthroute-courier.vercel.app
+- [[OPS-001|OPS-001 Staffing]] → ops-staff-001-staffing.vercel.app
+- [[CALLCENTER|CALLCENTER]] → callcenter-eosin.vercel.app
+- [[CON-001|CON-001 ACE Construction]] → ace-construction.vercel.app
+- [[RE-001|RE-001 Real Estate]] → re-001-worldwidebro-holdings.vercel.app
+- [[LT-011|LT-011 DispatchOS]] → lt-011-dispatch-software.vercel.app
+
+## Tier-1 (Future/Backlog)
+- [[FIN-037|FIN-037 Quantitative Trading]] → Internal service (Tailscale)
+- [[FIN-036|FIN-036 Arbitrage Nexus]] → (not deployed yet)
+
+---
+
+# KEY INSIGHTS
+
+## Real URL Aliases vs Generic Names
+- **CON-001 primary:** `ace-construction.vercel.app` (not con-001-ace-construction)
+- **CON-001 brand:** `acebuildsconstruction.vercel.app` (marketing alias from WHOIAM.md)
+- **All others:** Match GitHub repo name (standard pattern)
+
+## Deployments Status
+| Venture | Repo | Vercel | Status |
+|---------|------|--------|--------|
+| LT-005 | ✅ | ✅ | EXECUTING |
+| OPS-001 | ✅ | ✅ | EXECUTING |
+| CALLCENTER | ✅ | ✅ | EXECUTING |
+| CON-001 | ✅ | ✅ | ASSESSMENT |
+| RE-001 | ✅ | ✅ | ASSESSMENT |
+| LT-011 | ✅ | ✅ | ASSESSMENT |
+| FIN-037 | ✅ | ❌ | PRE-REVENUE |
+| FIN-036 | ✅ | ❌ | PRE-REVENUE |
+
+## FIN-037 in Week 1 Execution?
+**NO.** Reasons:
+1. No Vercel deployment (internal service only)
+2. $0 revenue (pre-revenue stage)
+3. ALPHA maturity (validation mode)
+4. Focus required on 6 Tier-0 ventures first
+5. Can add to parallel execution once deployed/revenue-ready
+
+  FIN-036_UPDATED:
+    venture_id: "FIN-036"
+    name: "Arbitrage Nexus Platform"
+    brand_name: "Arbitrage Nexus"
+    legal_name: "Arbitrage Nexus Trading LLC"
+    github_repo: "https://github.com/Worldwidebro/fin-036-arbitrage-nexus-platform"
+    github_alias: "fin-036-arbitrage-nexus-platform"
+    vercel_url: "https://arbitrage-nexus.vercel.app"
+    vercel_alias: "arbitrage-nexus"
+    revenue_stage: "READY_FOR_ASSESSMENT"
+    status: "LIVE"
+    notes: "✅ VERCEL DEPLOYMENT LIVE! (Thanks for correction); Tier-1; needs assessment for revenue readiness"
