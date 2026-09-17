@@ -39,13 +39,13 @@ Created complete LangSmith integration infrastructure for eval pipeline:
 - [x] Trace visibility in LangSmith dashboard (after API key is set)
 - [x] Documented in eval-harness setup scripts
 
-## Next Steps (After API Key)
+## Next Steps (API Key Configured ✅)
 
-1. Get LANGSMITH_API_KEY from Bitwarden
-2. Run: `source _PIPELINES/setup-langsmith.sh`
-3. Verify test trace in LangSmith dashboard
+1. ✅ LANGSMITH_API_KEY retrieved and configured in `.env.langsmith`
+2. Run baseline evals: `source .env.langsmith && python3 _PIPELINES/deepeval-with-langsmith.py`
+3. View traces in LangSmith dashboard: https://smith.langchain.com/
 4. Update PHASE-0-WEEK1-EXECUTION-PLAN.md with "E1: Deepeval setup" completion
-5. Use `deepeval-with-langsmith.py` for baseline evals on 50-agent sample
+5. Run baseline evals on 50-agent sample with LangSmith tracing enabled
 
 ## Files Created
 
