@@ -53,6 +53,7 @@
 
 ## QUICK REFERENCE
 
+**Logic Architecture:** [[_DOCS/LOGIC-ARCHITECTURE-FRAMEWORK.md]] (72 logic layers, 12 domains, 72 control points, autonomous loop patterns) — [[_REGISTRIES/CANONICAL/LOGIC_LAYERS_REGISTRY.yaml|Master Registry]]  
 **Infrastructure Status:** [[INFRASTRUCTURE-STATUS-2026-09|_REFERENCE/INFRASTRUCTURE-STATUS-2026-09.md]]  
 **Venture Roadmap:** [[VENTURE-ROADMAP-2026-09|_REFERENCE/VENTURE-ROADMAP-2026-09.md]]  
 **Digital Librarian:** [[DIGITAL-LIBRARIAN-ARCHITECTURE|_REFERENCE/DIGITAL-LIBRARIAN-ARCHITECTURE.md]]

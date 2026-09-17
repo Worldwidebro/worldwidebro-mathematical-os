@@ -1,0 +1,921 @@
+# LOGIC_LAYERS_REGISTRY.yaml
+# Company Brain: 72 Logic Layers → Wiki Links & Control Planes
+# Master mapping of all operational logic to domains, control planes, and agents
+# Updated: 2026-09-17
+# Authority: CP-001 (Strategic), CP-032 (Execution)
+
+---
+
+# PURPOSE DOMAIN (Logics 1-3)
+purpose_domain:
+  identity_logic:
+    id: "LOGIC-001"
+    name: "Identity Logic"
+    question: "Who/what are we?"
+    domain: "01-IDENTITY"
+    wiki_link: "[[01-IDENTITY/README.md]]"
+    registry: "IDENTITY_REGISTRY.yaml"
+    control_plane: "CP-001"
+    agent: "Strategic Identity Agent"
+    layer: 1
+
+  objective_logic:
+    id: "LOGIC-002"
+    name: "Objective Logic"
+    question: "What are we trying to accomplish?"
+    domain: "00-CONSTITUTION"
+    wiki_link: "[[00-CONSTITUTION/OBJECTIVES.md]]"
+    registry: "OBJECTIVES_REGISTRY.yaml"
+    control_plane: "CP-002"
+    agent: "Goal-Setting Agent"
+    layer: 2
+
+  strategy_logic:
+    id: "LOGIC-003"
+    name: "Strategy Logic"
+    question: "What approach should we use?"
+    domain: "20-DECISIONS"
+    wiki_link: "[[20-DECISIONS/STRATEGY-FRAMEWORK.md]]"
+    registry: "STRATEGY_REGISTRY.yaml"
+    control_plane: "CP-003"
+    agent: "Strategy Agent"
+    layer: 3
+
+---
+
+# BUSINESS LOGIC DOMAIN (Logics 4-11)
+business_domain:
+  business_logic:
+    id: "LOGIC-004"
+    name: "Business Logic"
+    question: "What business rules govern decisions?"
+    domain: "_REGISTRIES"
+    wiki_link: "[[_REGISTRIES/CANONICAL/BUSINESS_RULES.yaml]]"
+    registry: "BUSINESS_RULES.yaml"
+    control_plane: "CP-004"
+    agent: "Business Rules Engine"
+    layer: 4
+
+  economic_logic:
+    id: "LOGIC-005"
+    name: "Economic Logic"
+    question: "Does the action make financial sense?"
+    domain: "20-DECISIONS"
+    wiki_link: "[[20-DECISIONS/ECONOMIC-MODEL.md]]"
+    registry: "ECONOMIC_MODEL_REGISTRY.yaml"
+    control_plane: "CP-005"
+    agent: "Economic Analyst Agent"
+    layer: 5
+
+  revenue_logic:
+    id: "LOGIC-006"
+    name: "Revenue Logic"
+    question: "How do we turn activity into revenue?"
+    domain: "30-REVENUE"
+    wiki_link: "[[30-REVENUE/REVENUE-LOOPS.md]]"
+    registry: "REVENUE_LOOPS_REGISTRY.yaml"
+    control_plane: "CP-006"
+    agent: "Revenue Loop Agent"
+    layer: 6
+
+  pricing_logic:
+    id: "LOGIC-007"
+    name: "Pricing Logic"
+    question: "How should we value offerings?"
+    domain: "30-REVENUE"
+    wiki_link: "[[30-REVENUE/PRICING-STRATEGY.md]]"
+    registry: "PRICING_REGISTRY.yaml"
+    control_plane: "CP-007"
+    agent: "Pricing Engine"
+    layer: 7
+
+  customer_logic:
+    id: "LOGIC-008"
+    name: "Customer Logic"
+    question: "Who do we serve and how?"
+    domain: "31-CUSTOMER"
+    wiki_link: "[[31-CUSTOMER/CUSTOMER-ONTOLOGY.md]]"
+    registry: "CUSTOMER_REGISTRY.yaml"
+    control_plane: "CP-008"
+    agent: "Customer Discovery Agent"
+    layer: 8
+
+  sales_logic:
+    id: "LOGIC-009"
+    name: "Sales Logic"
+    question: "How do prospects become customers?"
+    domain: "32-SALES"
+    wiki_link: "[[32-SALES/SALES-PROCESS.md]]"
+    registry: "SALES_PIPELINE_REGISTRY.yaml"
+    control_plane: "CP-009"
+    agent: "Sales Pipeline Agent"
+    layer: 9
+
+  marketing_logic:
+    id: "LOGIC-010"
+    name: "Marketing Logic"
+    question: "How do we generate demand?"
+    domain: "33-MARKETING"
+    wiki_link: "[[33-MARKETING/MARKETING-STRATEGY.md]]"
+    registry: "MARKETING_CAMPAIGNS_REGISTRY.yaml"
+    control_plane: "CP-010"
+    agent: "Marketing Orchestrator"
+    layer: 10
+
+  product_logic:
+    id: "LOGIC-011"
+    name: "Product Logic"
+    question: "What should we offer/build?"
+    domain: "34-PRODUCT"
+    wiki_link: "[[34-PRODUCT/PRODUCT-DEFINITION.md]]"
+    registry: "PRODUCT_REGISTRY.yaml"
+    control_plane: "CP-011"
+    agent: "Product Manager Agent"
+    layer: 11
+
+---
+
+# OPERATIONS DOMAIN (Logics 12-14, 25-30)
+operations_domain:
+  operating_logic:
+    id: "LOGIC-012"
+    name: "Operating Logic"
+    question: "How does the business execute?"
+    domain: "_REGISTRIES"
+    wiki_link: "[[_REGISTRIES/CANONICAL/OPERATING_PROCEDURES.yaml]]"
+    registry: "OPERATING_PROCEDURES.yaml"
+    control_plane: "CP-012"
+    agent: "Operations Control Agent"
+    layer: 12
+
+  workflow_logic:
+    id: "LOGIC-013"
+    name: "Workflow Logic"
+    question: "What sequence of steps occurs?"
+    domain: "13-WORKFLOWS"
+    wiki_link: "[[13-WORKFLOWS/WORKFLOW-DEFINITIONS.yaml]]"
+    registry: "WORKFLOW_REGISTRY.yaml"
+    control_plane: "CP-013"
+    agent: "Workflow Orchestrator"
+    layer: 13
+
+  process_logic:
+    id: "LOGIC-014"
+    name: "Process Logic"
+    question: "How does a recurring process work?"
+    domain: "14-PROCESSES"
+    wiki_link: "[[14-PROCESSES/PROCESS-LIBRARY.md]]"
+    registry: "PROCESS_LIBRARY.yaml"
+    control_plane: "CP-014"
+    agent: "Process Library Agent"
+    layer: 14
+
+  scheduling_logic:
+    id: "LOGIC-025"
+    name: "Scheduling Logic"
+    question: "When should something happen?"
+    domain: "15-TIMING"
+    wiki_link: "[[15-TIMING/SCHEDULE-ENGINE.md]]"
+    registry: "SCHEDULE_REGISTRY.yaml"
+    control_plane: "CP-025"
+    agent: "Scheduling Agent"
+    layer: 25
+
+  routing_logic_ops:
+    id: "LOGIC-026"
+    name: "Routing Logic (Operations)"
+    question: "Which path/resource should be used?"
+    domain: "16-AGENTS"
+    wiki_link: "[[16-AGENTS/ROUTING-ENGINE.md]]"
+    registry: "ROUTING_REGISTRY.yaml"
+    control_plane: "CP-026"
+    agent: "Router Agent"
+    layer: 26
+
+  dispatch_logic:
+    id: "LOGIC-027"
+    name: "Dispatch Logic"
+    question: "Who/what should perform the work?"
+    domain: "17-DISPATCH"
+    wiki_link: "[[17-DISPATCH/DISPATCH-RULES.yaml]]"
+    registry: "DISPATCH_RULES.yaml"
+    control_plane: "CP-027"
+    agent: "Dispatcher Agent"
+    layer: 27
+
+  inventory_logic:
+    id: "LOGIC-028"
+    name: "Inventory Logic"
+    question: "What exists, where, and when is replenishment needed?"
+    domain: "18-INVENTORY"
+    wiki_link: "[[18-INVENTORY/INVENTORY-STATE.md]]"
+    registry: "INVENTORY_REGISTRY.yaml"
+    control_plane: "CP-028"
+    agent: "Inventory Manager"
+    layer: 28
+
+  supply_chain_logic:
+    id: "LOGIC-029"
+    name: "Supply-Chain Logic"
+    question: "How do resources move through the system?"
+    domain: "19-ORCHESTRATION"
+    wiki_link: "[[19-ORCHESTRATION/SUPPLY-CHAIN.md]]"
+    registry: "SUPPLY_CHAIN_REGISTRY.yaml"
+    control_plane: "CP-029"
+    agent: "Supply Chain Coordinator"
+    layer: 29
+
+  human_hr_logic:
+    id: "LOGIC-030"
+    name: "Human/HR Logic"
+    question: "How are people managed through their lifecycle?"
+    domain: "35-TEAM"
+    wiki_link: "[[35-TEAM/HR-LIFECYCLE.md]]"
+    registry: "HR_LIFECYCLE_REGISTRY.yaml"
+    control_plane: "CP-030"
+    agent: "HR Agent"
+    layer: 30
+
+---
+
+# DECISION & POLICY DOMAIN (Logics 15-20)
+decision_policy_domain:
+  decision_logic:
+    id: "LOGIC-015"
+    name: "Decision Logic"
+    question: "How do we choose between alternatives?"
+    domain: "20-DECISIONS"
+    wiki_link: "[[20-DECISIONS/DECISION-FRAMEWORK.md]]"
+    registry: "DECISION_FRAMEWORK.yaml"
+    control_plane: "CP-015"
+    agent: "Decision Engine"
+    layer: 15
+
+  policy_logic:
+    id: "LOGIC-016"
+    name: "Policy Logic"
+    question: "What is allowed or prohibited?"
+    domain: "00-CONSTITUTION"
+    wiki_link: "[[00-CONSTITUTION/POLICIES.md]]"
+    registry: "POLICIES.yaml"
+    control_plane: "CP-016"
+    agent: "Policy Enforcer"
+    layer: 16
+
+  permission_logic:
+    id: "LOGIC-017"
+    name: "Permission Logic"
+    question: "Who/what can perform an action?"
+    domain: "_MCP"
+    wiki_link: "[[_MCP/PERMISSIONS.yaml]]"
+    registry: "PERMISSIONS.yaml"
+    control_plane: "CP-017"
+    agent: "Permission Manager"
+    layer: 17
+
+  approval_logic:
+    id: "LOGIC-018"
+    name: "Approval Logic"
+    question: "Which actions require oversight?"
+    domain: "13-WORKFLOWS"
+    wiki_link: "[[13-WORKFLOWS/APPROVAL-GATES.yaml]]"
+    registry: "APPROVAL_GATES.yaml"
+    control_plane: "CP-018"
+    agent: "Approval Workflow"
+    layer: 18
+
+  risk_logic:
+    id: "LOGIC-019"
+    name: "Risk Logic"
+    question: "What could go wrong and how much matters?"
+    domain: "20-DECISIONS"
+    wiki_link: "[[20-DECISIONS/RISK-MATRIX.md]]"
+    registry: "RISK_MATRIX.yaml"
+    control_plane: "CP-019"
+    agent: "Risk Assessor"
+    layer: 19
+
+  compliance_logic:
+    id: "LOGIC-020"
+    name: "Compliance Logic"
+    question: "What rules/regulations must be satisfied?"
+    domain: "36-LEGAL"
+    wiki_link: "[[36-LEGAL/COMPLIANCE-RULES.md]]"
+    registry: "COMPLIANCE_RULES.yaml"
+    control_plane: "CP-020"
+    agent: "Compliance Checker"
+    layer: 20
+
+---
+
+# FINANCIAL DOMAIN (Logics 21-24)
+financial_domain:
+  financial_logic:
+    id: "LOGIC-021"
+    name: "Financial Logic"
+    question: "How does money move and get accounted for?"
+    domain: "37-FINANCE"
+    wiki_link: "[[37-FINANCE/FINANCIAL-FLOWS.md]]"
+    registry: "FINANCIAL_FLOWS.yaml"
+    control_plane: "CP-021"
+    agent: "Finance Agent"
+    layer: 21
+
+  accounting_logic:
+    id: "LOGIC-022"
+    name: "Accounting Logic"
+    question: "How are transactions recorded/reconciled?"
+    domain: "37-FINANCE"
+    wiki_link: "[[37-FINANCE/ACCOUNTING-RULES.yaml]]"
+    registry: "ACCOUNTING_RULES.yaml"
+    control_plane: "CP-022"
+    agent: "Accounting Engine"
+    layer: 22
+
+  capital_logic:
+    id: "LOGIC-023"
+    name: "Capital Logic"
+    question: "Where should capital be allocated?"
+    domain: "38-CAPITAL"
+    wiki_link: "[[38-CAPITAL/ALLOCATION-STRATEGY.md]]"
+    registry: "CAPITAL_ALLOCATION.yaml"
+    control_plane: "CP-023"
+    agent: "Capital Allocator"
+    layer: 23
+
+  resource_logic:
+    id: "LOGIC-024"
+    name: "Resource Logic"
+    question: "How should scarce resources be allocated?"
+    domain: "24-RESOURCES"
+    wiki_link: "[[24-RESOURCES/RESOURCE-ALLOCATION.md]]"
+    registry: "RESOURCE_ALLOCATION.yaml"
+    control_plane: "CP-024"
+    agent: "Resource Manager"
+    layer: 24
+
+---
+
+# INTELLIGENCE DOMAIN (Logics 31-40)
+intelligence_domain:
+  agent_logic:
+    id: "LOGIC-031"
+    name: "Agent Logic"
+    question: "What should an autonomous agent do?"
+    domain: "16-AGENTS"
+    wiki_link: "[[16-AGENTS/AGENT-DIRECTIVES.yaml]]"
+    registry: "AGENT_DIRECTIVES.yaml"
+    control_plane: "CP-031"
+    agent: "Agent Supervisor"
+    layer: 31
+
+  prompt_logic:
+    id: "LOGIC-032"
+    name: "Prompt Logic"
+    question: "How should a model be instructed?"
+    domain: "_PROMPTS"
+    wiki_link: "[[_PROMPTS/PROMPT-LIBRARY.md]]"
+    registry: "PROMPT_LIBRARY.yaml"
+    control_plane: "CP-032"
+    agent: "Prompt Engineer"
+    layer: 32
+
+  context_logic:
+    id: "LOGIC-033"
+    name: "Context Logic"
+    question: "What information should reach the model?"
+    domain: "_PIPELINES"
+    wiki_link: "[[_PIPELINES/CONTEXT-ASSEMBLY.md]]"
+    registry: "CONTEXT_ASSEMBLY.yaml"
+    control_plane: "CP-033"
+    agent: "Context Builder"
+    layer: 33
+
+  memory_logic:
+    id: "LOGIC-034"
+    name: "Memory Logic"
+    question: "What should the system remember?"
+    domain: "_MEMORY"
+    wiki_link: "[[_MEMORY/MEMORY-POLICY.yaml]]"
+    registry: "MEMORY_POLICY.yaml"
+    control_plane: "CP-034"
+    agent: "Memory Manager"
+    layer: 34
+
+  retrieval_logic:
+    id: "LOGIC-035"
+    name: "Retrieval Logic"
+    question: "What information should be retrieved?"
+    domain: "_PIPELINES"
+    wiki_link: "[[_PIPELINES/RETRIEVAL-ENGINE.md]]"
+    registry: "RETRIEVAL_ENGINE.yaml"
+    control_plane: "CP-035"
+    agent: "Retriever Agent"
+    layer: 35
+
+  tool_logic:
+    id: "LOGIC-036"
+    name: "Tool Logic"
+    question: "Which tool should perform an action?"
+    domain: "_MCP"
+    wiki_link: "[[_MCP/TOOL-REGISTRY.yaml]]"
+    registry: "TOOL_REGISTRY.yaml"
+    control_plane: "CP-036"
+    agent: "Tool Dispatcher"
+    layer: 36
+
+  model_logic:
+    id: "LOGIC-037"
+    name: "Model Logic"
+    question: "Which model should handle a task?"
+    domain: "_REGISTRIES"
+    wiki_link: "[[_REGISTRIES/CANONICAL/MODEL_REGISTRY.yaml]]"
+    registry: "MODEL_REGISTRY.yaml"
+    control_plane: "CP-037"
+    agent: "Model Router"
+    layer: 37
+
+  routing_logic_ai:
+    id: "LOGIC-038"
+    name: "Routing Logic (AI)"
+    question: "Where should a request/task go?"
+    domain: "16-AGENTS"
+    wiki_link: "[[16-AGENTS/ROUTING-ENGINE.md]]"
+    registry: "ROUTING_ENGINE.yaml"
+    control_plane: "CP-038"
+    agent: "AI Router"
+    layer: 38
+
+  orchestration_logic:
+    id: "LOGIC-039"
+    name: "Orchestration Logic"
+    question: "Which agents/services should coordinate?"
+    domain: "19-ORCHESTRATION"
+    wiki_link: "[[19-ORCHESTRATION/ORCHESTRATION-RULES.yaml]]"
+    registry: "ORCHESTRATION_RULES.yaml"
+    control_plane: "CP-039"
+    agent: "Orchestrator"
+    layer: 39
+
+  loop_logic:
+    id: "LOGIC-040"
+    name: "Loop Logic"
+    question: "How does the system repeatedly observe and act?"
+    domain: "_PIPELINES"
+    wiki_link: "[[_PIPELINES/LOOP-PATTERNS.md]]"
+    registry: "LOOP_PATTERNS.yaml"
+    control_plane: "CP-040"
+    agent: "Loop Controller"
+    layer: 40
+
+---
+
+# STATE & EVENT DOMAIN (Logics 41-45)
+state_event_domain:
+  event_logic:
+    id: "LOGIC-041"
+    name: "Event Logic"
+    question: "What should happen when an event occurs?"
+    domain: "_PIPELINES"
+    wiki_link: "[[_PIPELINES/EVENT-HANDLERS.yaml]]"
+    registry: "EVENT_HANDLERS.yaml"
+    control_plane: "CP-041"
+    agent: "Event Bus"
+    layer: 41
+
+  state_logic:
+    id: "LOGIC-042"
+    name: "State Logic"
+    question: "What is true about the system right now?"
+    domain: "_MEMORY"
+    wiki_link: "[[_MEMORY/STATE-MACHINE.yaml]]"
+    registry: "STATE_MACHINE.yaml"
+    control_plane: "CP-042"
+    agent: "State Manager"
+    layer: 42
+
+  temporal_logic:
+    id: "LOGIC-043"
+    name: "Temporal Logic"
+    question: "What changes depending on time/order?"
+    domain: "_REGISTRIES"
+    wiki_link: "[[_REGISTRIES/CANONICAL/TEMPORAL-RULES.yaml]]"
+    registry: "TEMPORAL_RULES.yaml"
+    control_plane: "CP-043"
+    agent: "Time Engine"
+    layer: 43
+
+  dependency_logic:
+    id: "LOGIC-044"
+    name: "Dependency Logic"
+    question: "What depends on what?"
+    domain: "_ONTOLOGY"
+    wiki_link: "[[_ONTOLOGY/DEPENDENCY-GRAPH.xml]]"
+    registry: "DEPENDENCY_GRAPH.xml"
+    control_plane: "CP-044"
+    agent: "Dependency Resolver"
+    layer: 44
+
+  graph_logic:
+    id: "LOGIC-045"
+    name: "Graph Logic"
+    question: "How are entities and relationships connected?"
+    domain: "_ONTOLOGY"
+    wiki_link: "[[_ONTOLOGY/KNOWLEDGE-GRAPH-SCHEMA.xml]]"
+    registry: "KNOWLEDGE_GRAPH.xml"
+    control_plane: "CP-045"
+    agent: "Graph Engine (Neo4j)"
+    layer: 45
+
+---
+
+# DATA & VALIDATION DOMAIN (Logics 46-50)
+data_validation_domain:
+  data_logic:
+    id: "LOGIC-046"
+    name: "Data Logic"
+    question: "How is information structured and transformed?"
+    domain: "_ONTOLOGY"
+    wiki_link: "[[_ONTOLOGY/DATA-SCHEMA.xml]]"
+    registry: "DATA_SCHEMA.xml"
+    control_plane: "CP-046"
+    agent: "Data Orchestrator"
+    layer: 46
+
+  validation_logic:
+    id: "LOGIC-047"
+    name: "Validation Logic"
+    question: "Is the input/result valid?"
+    domain: "_PIPELINES"
+    wiki_link: "[[_PIPELINES/VALIDATION-RULES.yaml]]"
+    registry: "VALIDATION_RULES.yaml"
+    control_plane: "CP-047"
+    agent: "Validator"
+    layer: 47
+
+  verification_logic:
+    id: "LOGIC-048"
+    name: "Verification Logic"
+    question: "Did the action actually work?"
+    domain: "20-DECISIONS"
+    wiki_link: "[[20-DECISIONS/VERIFICATION-FRAMEWORK.md]]"
+    registry: "VERIFICATION_FRAMEWORK.yaml"
+    control_plane: "CP-048"
+    agent: "Verifier Agent"
+    layer: 48
+
+  evaluation_logic:
+    id: "LOGIC-049"
+    name: "Evaluation Logic"
+    question: "How good was the result?"
+    domain: "_EVAL"
+    wiki_link: "[[_EVAL/EVALUATION-RUBRICS.yaml]]"
+    registry: "EVALUATION_RUBRICS.yaml"
+    control_plane: "CP-049"
+    agent: "Evaluator"
+    layer: 49
+
+  quality_logic:
+    id: "LOGIC-050"
+    name: "Quality Logic"
+    question: "Does the result meet standards?"
+    domain: "_REGISTRIES"
+    wiki_link: "[[_REGISTRIES/CANONICAL/QUALITY-STANDARDS.yaml]]"
+    registry: "QUALITY_STANDARDS.yaml"
+    control_plane: "CP-050"
+    agent: "QA Agent"
+    layer: 50
+
+---
+
+# EXCEPTION & RECOVERY DOMAIN (Logics 51-54)
+exception_recovery_domain:
+  exception_logic:
+    id: "LOGIC-051"
+    name: "Exception Logic"
+    question: "What happens when the normal path fails?"
+    domain: "13-WORKFLOWS"
+    wiki_link: "[[13-WORKFLOWS/EXCEPTION-HANDLING.yaml]]"
+    registry: "EXCEPTION_HANDLING.yaml"
+    control_plane: "CP-051"
+    agent: "Exception Handler"
+    layer: 51
+
+  recovery_logic:
+    id: "LOGIC-052"
+    name: "Recovery Logic"
+    question: "How does the system recover?"
+    domain: "20-DECISIONS"
+    wiki_link: "[[20-DECISIONS/RECOVERY-PROCEDURES.md]]"
+    registry: "RECOVERY_PROCEDURES.yaml"
+    control_plane: "CP-052"
+    agent: "Recovery Agent"
+    layer: 52
+
+  fallback_logic:
+    id: "LOGIC-053"
+    name: "Fallback Logic"
+    question: "What happens when dependencies aren't available?"
+    domain: "_MCP"
+    wiki_link: "[[_MCP/FALLBACK-ROUTES.yaml]]"
+    registry: "FALLBACK_ROUTES.yaml"
+    control_plane: "CP-053"
+    agent: "Fallback Router"
+    layer: 53
+
+  escalation_logic:
+    id: "LOGIC-054"
+    name: "Escalation Logic"
+    question: "When should a human or higher-level agent intervene?"
+    domain: "13-WORKFLOWS"
+    wiki_link: "[[13-WORKFLOWS/ESCALATION-RULES.yaml]]"
+    registry: "ESCALATION_RULES.yaml"
+    control_plane: "CP-054"
+    agent: "Escalation Manager"
+    layer: 54
+
+---
+
+# SECURITY & OBSERVABILITY DOMAIN (Logics 55-58)
+security_observability_domain:
+  security_logic:
+    id: "LOGIC-055"
+    name: "Security Logic"
+    question: "How is the system protected?"
+    domain: "_INFRASTRUCTURE"
+    wiki_link: "[[_INFRASTRUCTURE/SECURITY-POLICY.yaml]]"
+    registry: "SECURITY_POLICY.yaml"
+    control_plane: "CP-055"
+    agent: "Security Agent"
+    layer: 55
+
+  privacy_logic:
+    id: "LOGIC-056"
+    name: "Privacy Logic"
+    question: "What information can be accessed/shared?"
+    domain: "00-CONSTITUTION"
+    wiki_link: "[[00-CONSTITUTION/PRIVACY-POLICY.md]]"
+    registry: "PRIVACY_POLICY.yaml"
+    control_plane: "CP-056"
+    agent: "Privacy Officer"
+    layer: 56
+
+  observability_logic:
+    id: "LOGIC-057"
+    name: "Observability Logic"
+    question: "What should be monitored/logged?"
+    domain: "_INFRASTRUCTURE"
+    wiki_link: "[[_INFRASTRUCTURE/OBSERVABILITY-CONFIG.yaml]]"
+    registry: "OBSERVABILITY_CONFIG.yaml"
+    control_plane: "CP-057"
+    agent: "Observability Stack"
+    layer: 57
+
+  audit_logic:
+    id: "LOGIC-058"
+    name: "Audit Logic"
+    question: "How do we prove what happened?"
+    domain: "20-DECISIONS"
+    wiki_link: "[[20-DECISIONS/AUDIT-FRAMEWORK.md]]"
+    registry: "AUDIT_FRAMEWORK.yaml"
+    control_plane: "CP-058"
+    agent: "Audit Agent"
+    layer: 58
+
+---
+
+# DEPLOYMENT & INFRASTRUCTURE DOMAIN (Logics 59-62)
+deployment_infrastructure_domain:
+  deployment_logic:
+    id: "LOGIC-059"
+    name: "Deployment Logic"
+    question: "How does software move into production?"
+    domain: "_INFRASTRUCTURE"
+    wiki_link: "[[_INFRASTRUCTURE/DEPLOYMENT-STRATEGY.md]]"
+    registry: "DEPLOYMENT_STRATEGY.yaml"
+    control_plane: "CP-059"
+    agent: "Deployment Agent"
+    layer: 59
+
+  infrastructure_logic:
+    id: "LOGIC-060"
+    name: "Infrastructure Logic"
+    question: "How does the underlying computing environment operate?"
+    domain: "_INFRASTRUCTURE"
+    wiki_link: "[[_INFRASTRUCTURE/INFRASTRUCTURE-CONFIG.yaml]]"
+    registry: "INFRASTRUCTURE_CONFIG.yaml"
+    control_plane: "CP-060"
+    agent: "Infrastructure Controller"
+    layer: 60
+
+  compute_logic:
+    id: "LOGIC-061"
+    name: "Resource/Compute Logic"
+    question: "Where should computation happen?"
+    domain: "_INFRASTRUCTURE"
+    wiki_link: "[[_INFRASTRUCTURE/COMPUTE-ALLOCATION.yaml]]"
+    registry: "COMPUTE_ALLOCATION.yaml"
+    control_plane: "CP-061"
+    agent: "Compute Manager"
+    layer: 61
+
+  cost_logic:
+    id: "LOGIC-062"
+    name: "Cost Logic"
+    question: "What should an operation consume?"
+    domain: "37-FINANCE"
+    wiki_link: "[[37-FINANCE/COST-ACCOUNTING.md]]"
+    registry: "COST_ACCOUNTING.yaml"
+    control_plane: "CP-062"
+    agent: "Cost Analyst"
+    layer: 62
+
+---
+
+# LEARNING & ADAPTATION DOMAIN (Logics 63-65)
+learning_adaptation_domain:
+  learning_logic:
+    id: "LOGIC-063"
+    name: "Learning Logic"
+    question: "How does the system improve from results?"
+    domain: "_EVAL"
+    wiki_link: "[[_EVAL/LEARNING-SYSTEM.md]]"
+    registry: "LEARNING_SYSTEM.yaml"
+    control_plane: "CP-063"
+    agent: "Learning Agent"
+    layer: 63
+
+  adaptation_logic:
+    id: "LOGIC-064"
+    name: "Adaptation Logic"
+    question: "When should behavior change?"
+    domain: "20-DECISIONS"
+    wiki_link: "[[20-DECISIONS/ADAPTATION-RULES.yaml]]"
+    registry: "ADAPTATION_RULES.yaml"
+    control_plane: "CP-064"
+    agent: "Adaptation Engine"
+    layer: 64
+
+  knowledge_logic:
+    id: "LOGIC-065"
+    name: "Knowledge Logic"
+    question: "What does the organization know?"
+    domain: "_MEMORY"
+    wiki_link: "[[_MEMORY/KNOWLEDGE-MANAGEMENT.md]]"
+    registry: "KNOWLEDGE_MANAGEMENT.yaml"
+    control_plane: "CP-065"
+    agent: "Knowledge Manager"
+    layer: 65
+
+---
+
+# ONTOLOGY & GOVERNANCE DOMAIN (Logics 66-68)
+ontology_governance_domain:
+  ontology_logic:
+    id: "LOGIC-066"
+    name: "Ontology Logic"
+    question: "What entities/concepts exist and what do they mean?"
+    domain: "_ONTOLOGY"
+    wiki_link: "[[_ONTOLOGY/MASTER-ONTOLOGY.xml]]"
+    registry: "MASTER_ONTOLOGY.xml"
+    control_plane: "CP-066"
+    agent: "Ontology Controller"
+    layer: 66
+
+  governance_logic:
+    id: "LOGIC-067"
+    name: "Governance Logic"
+    question: "Who controls what decisions?"
+    domain: "00-CONSTITUTION"
+    wiki_link: "[[00-CONSTITUTION/GOVERNANCE-FRAMEWORK.md]]"
+    registry: "GOVERNANCE_FRAMEWORK.yaml"
+    control_plane: "CP-067"
+    agent: "Governance Agent"
+    layer: 67
+
+  lifecycle_logic:
+    id: "LOGIC-068"
+    name: "Lifecycle Logic"
+    question: "What happens from creation → operation → retirement?"
+    domain: "_REGISTRIES"
+    wiki_link: "[[_REGISTRIES/CANONICAL/LIFECYCLE-STAGES.yaml]]"
+    registry: "LIFECYCLE_STAGES.yaml"
+    control_plane: "CP-068"
+    agent: "Lifecycle Manager"
+    layer: 68
+
+---
+
+# PORTFOLIO & INVESTMENT DOMAIN (Logics 69-72)
+portfolio_investment_domain:
+  portfolio_logic:
+    id: "LOGIC-069"
+    name: "Portfolio Logic"
+    question: "How are multiple ventures managed together?"
+    domain: "01-IDENTITY"
+    wiki_link: "[[01-IDENTITY/PORTFOLIO-STRATEGY.md]]"
+    registry: "PORTFOLIO_STRATEGY.yaml"
+    control_plane: "CP-069"
+    agent: "Portfolio Manager"
+    layer: 69
+
+  investment_logic:
+    id: "LOGIC-070"
+    name: "Investment Logic"
+    question: "Which opportunities receive resources?"
+    domain: "38-CAPITAL"
+    wiki_link: "[[38-CAPITAL/INVESTMENT-CRITERIA.md]]"
+    registry: "INVESTMENT_CRITERIA.yaml"
+    control_plane: "CP-070"
+    agent: "Investment Analyst"
+    layer: 70
+
+  innovation_logic:
+    id: "LOGIC-071"
+    name: "Innovation Logic"
+    question: "How are new opportunities generated/tested?"
+    domain: "39-INNOVATION"
+    wiki_link: "[[39-INNOVATION/INNOVATION-PIPELINE.md]]"
+    registry: "INNOVATION_PIPELINE.yaml"
+    control_plane: "CP-071"
+    agent: "Innovation Lab"
+    layer: 71
+
+  exit_logic:
+    id: "LOGIC-072"
+    name: "Exit/Harvest Logic"
+    question: "When should an asset be moved or retired?"
+    domain: "40-EXITS"
+    wiki_link: "[[40-EXITS/EXIT-STRATEGY.md]]"
+    registry: "EXIT_STRATEGY.yaml"
+    control_plane: "CP-072"
+    agent: "Exit Manager"
+    layer: 72
+
+---
+
+# MASTER DISCOVERY PATH
+discovery:
+  by_question: "Search the logic layer table above"
+  by_domain: "[[SECTOR_INDEX]] → find sector → find control plane"
+  by_registry: "[[_REGISTRIES/CANONICAL/NAVIGATION_ALIASES.yaml]] → search topic"
+  by_control_plane: "[[_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml]] → CP-XXX"
+  by_agent: "[[16-AGENTS/README.md]] → find agent → links to logics it governs"
+
+# LOGIC HIERARCHY (from PURPOSE to PORTFOLIO)
+hierarchy:
+  - name: "PURPOSE"
+    logics: [1, 2, 3]
+    control_planes: ["CP-001", "CP-002", "CP-003"]
+
+  - name: "BUSINESS"
+    logics: [4, 5, 6, 7, 8, 9, 10, 11]
+    control_planes: ["CP-004", "CP-005", "CP-006", "CP-007", "CP-008", "CP-009", "CP-010", "CP-011"]
+
+  - name: "OPERATIONS"
+    logics: [12, 13, 14, 25, 26, 27, 28, 29, 30]
+    control_planes: ["CP-012", "CP-013", "CP-014", "CP-025", "CP-026", "CP-027", "CP-028", "CP-029", "CP-030"]
+
+  - name: "DECISION & POLICY"
+    logics: [15, 16, 17, 18, 19, 20]
+    control_planes: ["CP-015", "CP-016", "CP-017", "CP-018", "CP-019", "CP-020"]
+
+  - name: "FINANCIAL"
+    logics: [21, 22, 23, 24]
+    control_planes: ["CP-021", "CP-022", "CP-023", "CP-024"]
+
+  - name: "INTELLIGENCE"
+    logics: [31, 32, 33, 34, 35, 36, 37, 38, 39, 40]
+    control_planes: ["CP-031", "CP-032", "CP-033", "CP-034", "CP-035", "CP-036", "CP-037", "CP-038", "CP-039", "CP-040"]
+
+  - name: "STATE & EVENT"
+    logics: [41, 42, 43, 44, 45]
+    control_planes: ["CP-041", "CP-042", "CP-043", "CP-044", "CP-045"]
+
+  - name: "DATA & VALIDATION"
+    logics: [46, 47, 48, 49, 50]
+    control_planes: ["CP-046", "CP-047", "CP-048", "CP-049", "CP-050"]
+
+  - name: "EXCEPTION & RECOVERY"
+    logics: [51, 52, 53, 54]
+    control_planes: ["CP-051", "CP-052", "CP-053", "CP-054"]
+
+  - name: "SECURITY & OBSERVABILITY"
+    logics: [55, 56, 57, 58]
+    control_planes: ["CP-055", "CP-056", "CP-057", "CP-058"]
+
+  - name: "DEPLOYMENT & INFRASTRUCTURE"
+    logics: [59, 60, 61, 62]
+    control_planes: ["CP-059", "CP-060", "CP-061", "CP-062"]
+
+  - name: "LEARNING & ADAPTATION"
+    logics: [63, 64, 65]
+    control_planes: ["CP-063", "CP-064", "CP-065"]
+
+  - name: "ONTOLOGY & GOVERNANCE"
+    logics: [66, 67, 68]
+    control_planes: ["CP-066", "CP-067", "CP-068"]
+
+  - name: "PORTFOLIO & INVESTMENT"
+    logics: [69, 70, 71, 72]
+    control_planes: ["CP-069", "CP-070", "CP-071", "CP-072"]

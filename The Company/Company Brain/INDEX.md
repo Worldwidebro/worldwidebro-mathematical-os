@@ -23,6 +23,7 @@ Core ontology, 22-stage cognitive flow, 9 organizational fabrics, and 36 entity 
 ## Quick Navigation
 
 ### Core Subsystem Portals
+- **Logic Architecture:** [[_DOCS/LOGIC-ARCHITECTURE-FRAMEWORK|LOGIC-ARCHITECTURE]] — 72 logic layers across 12 domains, 72 control points, autonomous loop patterns. [[_REGISTRIES/CANONICAL/LOGIC_LAYERS_REGISTRY.yaml|Master Registry]]
 - **System Directives:** [[DIRECTIVES/README|DIRECTIVES]] — Constitutional, modular agent rules, and tactical directives.
 - **Executive Governance:** [[EXECUTIVES/README|EXECUTIVES]] — Executive truth ledgers, board governance, and sovereign control.
 - **Artificial Intelligence Core:** [[AI-BRAIN/README|AI-BRAIN]] — [[_INFRASTRUCTURE/OMNIROUTE-MODELS-ROUTING|OMNIROUTE-STATUS]] (289+ models), local MLX models ([[OMNIROUTE-MODELS-ROUTING]]), [[Neo4j]] graph ([[KNOWLEDGE-GRAPH-OMNIROUTE-INTEGRATION]]), and agent fleet.
