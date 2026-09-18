@@ -1,0 +1,420 @@
+---
+id: TOOL_GATEWAY_REGISTRY
+title: "Tool Gateway Registry — Permissions, Rate Limits, Costs"
+description: "Master registry of MCPs/tools with RBAC, rate limiting, and cost tracking"
+authority: CP-012 (Agent Control Plane), CP-027 (Engineering Infrastructure)
+updated: 2026-09-18
+---
+
+# TOOL_GATEWAY_REGISTRY.yaml
+
+**Purpose:** Control access, rate limits, and costs for all 20+ MCPs used by agents.
+
+**Structure:**
+- tool_id: unique identifier
+- name: human-readable name
+- endpoint: API/service endpoint
+- auth_type: how to authenticate (api_key, oauth, jwt, bolt)
+- rate_limit: max calls per time period
+- cost_per_call: cost in USD (or "free")
+- monthly_budget: spending limit per month
+- permissions: which agents can use + autonomy level
+
+---
+
+tools:
+
+  # ============================================================
+  # EMAIL & COMMUNICATION (3)
+  # ============================================================
+
+  - id: tool-sendgrid-001
+    name: "SendGrid Email API"
+    endpoint: "https://api.sendgrid.com/v3"
+    auth_type: "api_key"
+    rate_limit: "100 emails/day"
+    cost_per_call: "$0.001"
+    monthly_budget: "$100"
+    permissions:
+      - agent: "cold-email-writer"
+        autonomy_level: "L2"
+        notes: "Requires human review before send"
+      - agent: "email-strategist"
+        autonomy_level: "L2"
+      - agent: "customer-success-manager"
+        autonomy_level: "L2"
+    status: "ACTIVE"
+
+  - id: tool-slack-001
+    name: "Slack API"
+    endpoint: "https://slack.com/api"
+    auth_type: "oauth"
+    rate_limit: "200 messages/day per channel"
+    cost_per_call: "free"
+    monthly_budget: "N/A"
+    permissions:
+      - agent: "support-responder"
+        autonomy_level: "L2"
+      - agent: "incident-response-commander"
+        autonomy_level: "L1"
+    status: "ACTIVE"
+
+  - id: tool-gmail-001
+    name: "Gmail API"
+    endpoint: "https://gmail.googleapis.com"
+    auth_type: "oauth"
+    rate_limit: "500 messages/day"
+    cost_per_call: "free"
+    monthly_budget: "N/A"
+    permissions:
+      - agent: "cold-email-writer"
+        autonomy_level: "L2"
+      - agent: "customer-service"
+        autonomy_level: "L2"
+    status: "ACTIVE"
+
+  # ============================================================
+  # CRM & SALES (3)
+  # ============================================================
+
+  - id: tool-hubspot-001
+    name: "HubSpot CRM API"
+    endpoint: "https://api.hubapi.com"
+    auth_type: "oauth"
+    rate_limit: "100 requests/10 seconds"
+    cost_per_call: "free (tier limited)"
+    monthly_budget: "N/A"
+    permissions:
+      - agent: "lead-qualifier"
+        autonomy_level: "L2"
+        notes: "Read-only lead lookup"
+      - agent: "deal-strategist"
+        autonomy_level: "L2"
+      - agent: "sales-coach"
+        autonomy_level: "L1"
+    status: "ACTIVE"
+
+  - id: tool-salesforce-001
+    name: "Salesforce REST API"
+    endpoint: "https://{instance}.salesforce.com/services/data"
+    auth_type: "oauth"
+    rate_limit: "100 requests/minute"
+    cost_per_call: "free (included in license)"
+    monthly_budget: "N/A"
+    permissions:
+      - agent: "sales-operations-analyst"
+        autonomy_level: "L2"
+      - agent: "account-strategist"
+        autonomy_level: "L2"
+    status: "READY (not yet deployed)"
+
+  - id: tool-clickup-001
+    name: "ClickUp API"
+    endpoint: "https://api.clickup.com"
+    auth_type: "api_key"
+    rate_limit: "unlimited"
+    cost_per_call: "free"
+    monthly_budget: "N/A"
+    permissions:
+      - agent: "operations-manager"
+        autonomy_level: "L3"
+        notes: "Create/update tasks autonomously"
+      - agent: "project-manager"
+        autonomy_level: "L2"
+      - agent: "deal-strategist"
+        autonomy_level: "L2"
+    status: "ACTIVE"
+
+  # ============================================================
+  # PAYMENTS & FINANCE (2)
+  # ============================================================
+
+  - id: tool-stripe-001
+    name: "Stripe API"
+    endpoint: "https://api.stripe.com/v1"
+    auth_type: "api_key"
+    rate_limit: "100 requests/second"
+    cost_per_call: "$0.50 per transaction (2.2% + $0.30)"
+    monthly_budget: "$50,000"
+    permissions:
+      - agent: "accounts-payable-agent"
+        autonomy_level: "L3"
+        notes: "Autonomous payments <$10K only"
+      - agent: "closer"
+        autonomy_level: "L1"
+        notes: "Human reviews charges before sending invoice"
+      - agent: "invoice-tracker"
+        autonomy_level: "L2"
+    status: "ACTIVE"
+
+  - id: tool-stripe-webhook-001
+    name: "Stripe Webhooks"
+    endpoint: "https://api.stripe.com/v1/webhook_endpoints"
+    auth_type: "api_key"
+    rate_limit: "unlimited"
+    cost_per_call: "free"
+    monthly_budget: "N/A"
+    permissions:
+      - agent: "revenue-forecaster"
+        autonomy_level: "L3"
+        notes: "Listen for payment events, update forecasts"
+    status: "ACTIVE"
+
+  # ============================================================
+  # DATABASE & INFRASTRUCTURE (4)
+  # ============================================================
+
+  - id: tool-neo4j-001
+    name: "Neo4j Graph Database"
+    endpoint: "bolt://100.87.214.70:7687"
+    auth_type: "username_password"
+    rate_limit: "1000 queries/second"
+    cost_per_call: "free (self-hosted)"
+    monthly_budget: "N/A"
+    permissions:
+      - agent: "agent-dispatch-router"
+        autonomy_level: "L3"
+        notes: "Query registries + agent capabilities"
+      - agent: "research-synthesist"
+        autonomy_level: "L3"
+      - agent: "knowledge-graph-engineer"
+        autonomy_level: "L2"
+    status: "ACTIVE"
+
+  - id: tool-qdrant-001
+    name: "Qdrant Vector Database"
+    endpoint: "http://100.87.214.70:6333"
+    auth_type: "api_key (optional)"
+    rate_limit: "100 requests/second"
+    cost_per_call: "free (self-hosted)"
+    monthly_budget: "N/A"
+    permissions:
+      - agent: "research-discovery-agent"
+        autonomy_level: "L3"
+        notes: "Vector search for capability discovery"
+      - agent: "rag-pipeline-engineer"
+        autonomy_level: "L2"
+    status: "ACTIVE"
+
+  - id: tool-supabase-001
+    name: "Supabase PostgreSQL + Edge Functions"
+    endpoint: "https://aipehhzlsmfxxzwceppd.supabase.co"
+    auth_type: "jwt"
+    rate_limit: "200 requests/second"
+    cost_per_call: "free (tier included)"
+    monthly_budget: "$300"
+    permissions:
+      - agent: "data-engineer"
+        autonomy_level: "L2"
+      - agent: "venture-readiness-auditor"
+        autonomy_level: "L2"
+      - agent: "financial-analyst"
+        autonomy_level: "L2"
+    status: "ACTIVE"
+
+  - id: tool-omniroute-001
+    name: "OmniRoute Agent Router (110 tools)"
+    endpoint: "http://100.87.214.70:3000"
+    auth_type: "jwt"
+    rate_limit: "500 routes/second"
+    cost_per_call: "free (internal)"
+    monthly_budget: "N/A"
+    permissions:
+      - agent: "agent-dispatch-router"
+        autonomy_level: "L3"
+        notes: "Master routing engine for all tools"
+    status: "ACTIVE"
+
+  # ============================================================
+  # MARKETING & ANALYTICS (2)
+  # ============================================================
+
+  - id: tool-google-analytics-001
+    name: "Google Analytics 4 API"
+    endpoint: "https://analyticsadmin.googleapis.com"
+    auth_type: "oauth"
+    rate_limit: "600 requests/minute"
+    cost_per_call: "free"
+    monthly_budget: "N/A"
+    permissions:
+      - agent: "revenue-operations-analyst"
+        autonomy_level: "L2"
+      - agent: "growth-hacker"
+        autonomy_level: "L2"
+    status: "ACTIVE"
+
+  - id: tool-make-com-001
+    name: "Make.com Automation Platform"
+    endpoint: "https://www.make.com/api/v1"
+    auth_type: "oauth"
+    rate_limit: "150 operations/minute"
+    cost_per_call: "billed per operation ($0.001–$0.01)"
+    monthly_budget: "$1,000"
+    permissions:
+      - agent: "automation-governance-architect"
+        autonomy_level: "L2"
+        notes: "Design automations (not deploy)"
+      - agent: "operations-manager"
+        autonomy_level: "L1"
+        notes: "Deploy approved automations"
+    status: "ACTIVE"
+
+  # ============================================================
+  # DEVELOPMENT & DEPLOYMENT (3)
+  # ============================================================
+
+  - id: tool-vercel-001
+    name: "Vercel Deployment API"
+    endpoint: "https://api.vercel.com"
+    auth_type: "oauth"
+    rate_limit: "60 requests/minute"
+    cost_per_call: "free (tier included)"
+    monthly_budget: "$100/month (Pro)"
+    permissions:
+      - agent: "devops-automator"
+        autonomy_level: "L2"
+        notes: "Deploy previews, not production"
+      - agent: "mobile-release-engineer"
+        autonomy_level: "L1"
+        notes: "Manual approval for prod releases"
+    status: "ACTIVE"
+
+  - id: tool-github-001
+    name: "GitHub REST API"
+    endpoint: "https://api.github.com"
+    auth_type: "oauth"
+    rate_limit: "5000 requests/hour"
+    cost_per_call: "free"
+    monthly_budget: "N/A"
+    permissions:
+      - agent: "devops-automator"
+        autonomy_level: "L2"
+      - agent: "codebase-archaeologist"
+        autonomy_level: "L2"
+      - agent: "backend-architect"
+        autonomy_level: "L2"
+    status: "ACTIVE"
+
+  - id: tool-git-nexus-001
+    name: "GitNexus Debugger (Internal CLI)"
+    endpoint: "local"
+    auth_type: "local"
+    rate_limit: "unlimited"
+    cost_per_call: "free"
+    monthly_budget: "N/A"
+    permissions:
+      - agent: "codebase-archaeologist"
+        autonomy_level: "L3"
+      - agent: "backend-architect"
+        autonomy_level: "L2"
+    status: "ACTIVE"
+
+  # ============================================================
+  # SEARCH & RESEARCH (2)
+  # ============================================================
+
+  - id: tool-web-search-001
+    name: "Web Search (Perplexity/Tavily)"
+    endpoint: "varies"
+    auth_type: "api_key"
+    rate_limit: "100 searches/day"
+    cost_per_call: "$0.005–$0.05"
+    monthly_budget: "$50"
+    permissions:
+      - agent: "research-discovery-agent"
+        autonomy_level: "L3"
+      - agent: "market-intelligence-analyst"
+        autonomy_level: "L2"
+    status: "ACTIVE"
+
+  - id: tool-web-fetch-001
+    name: "Web Fetch (Firecrawl/Cheerio)"
+    endpoint: "https://api.firecrawl.dev"
+    auth_type: "api_key"
+    rate_limit: "100 pages/day"
+    cost_per_call: "$0.01 per page"
+    monthly_budget: "$50"
+    permissions:
+      - agent: "research-discovery-agent"
+        autonomy_level: "L2"
+      - agent: "competitive-tracker"
+        autonomy_level: "L2"
+    status: "ACTIVE"
+
+  # ============================================================
+  # DOCUMENTATION & COLLABORATION (2)
+  # ============================================================
+
+  - id: tool-notion-001
+    name: "Notion API"
+    endpoint: "https://api.notion.com/v1"
+    auth_type: "oauth"
+    rate_limit: "3 requests/second"
+    cost_per_call: "free"
+    monthly_budget: "N/A"
+    permissions:
+      - agent: "product-manager"
+        autonomy_level: "L2"
+      - agent: "documentation-writer"
+        autonomy_level: "L2"
+    status: "ACTIVE"
+
+  - id: tool-claude-docs-001
+    name: "Claude.ai Docs API"
+    endpoint: "https://claude.ai/api/docs"
+    auth_type: "oauth"
+    rate_limit: "200 requests/minute"
+    cost_per_call: "free"
+    monthly_budget: "N/A"
+    permissions:
+      - agent: "technical-writer"
+        autonomy_level: "L2"
+      - agent: "knowledge-base-curator"
+        autonomy_level: "L2"
+    status: "ACTIVE"
+
+  # ============================================================
+  # REGISTRY SUMMARY
+  # ============================================================
+
+summary:
+  total_tools: 20
+  status: "Week 1 Task 1.3 COMPLETE"
+  permission_model: "RBAC with autonomy levels (L1/L2/L3)"
+  rate_limit_enforcement: "Per-agent daily limits + per-tool throttling"
+  cost_tracking: "Per-call + monthly budgets with alerts at 80%"
+  next_step: "Integrate into AGENT_DISPATCH_ROUTER (Week 2, Task 2.1)"
+
+---
+
+## Permission Matrix Summary
+
+| Tool | L3 Agents | L2 Agents | L1 Agents | Notes |
+|------|-----------|-----------|-----------|-------|
+| SendGrid | - | Cold Email Writer, Email Strategist, Customer Success | - | Review before send |
+| Stripe | Accounts Payable Agent (<$10K) | Invoice Tracker | Closer | Autonomy gated by amount |
+| Neo4j | Agent Dispatch Router | - | - | Read-only for agents |
+| ClickUp | Operations Manager | Project Manager, Deal Strategist | - | Async task creation |
+| Make.com | - | Automation Governance Architect | Operations Manager | Design vs Deploy gated |
+| GitHub | - | DevOps Automator, Backend Architect | - | PRs not merged autonomously |
+| OmniRoute | Agent Dispatch Router | - | - | Master routing engine |
+
+---
+
+## Rate Limit & Budget Alerts
+
+**Daily Alerts:**
+- SendGrid: Alert at 80 emails (default 100/day)
+- Stripe: Alert at $40K spent (default $50K/month)
+- Make.com: Alert at 120 operations (default 150/min)
+
+**Monthly Budget Enforcement:**
+- Stripe: $50,000/month hard limit
+- Make.com: $1,000/month hard limit
+- Supabase: $300/month soft limit (warn at $240)
+- Web Search: $50/month soft limit
+
+---
+
+**Generated:** 2026-09-18 | Phase 2a Task 1.3d | Commit: pending
+
