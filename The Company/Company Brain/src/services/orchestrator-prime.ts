@@ -11,6 +11,7 @@
  */
 
 import { createClient } from "@supabase/supabase-js";
+import Anthropic from "@anthropic-ai/sdk";
 import YAML from "yaml";
 import fs from "fs";
 import path from "path";
@@ -81,12 +82,30 @@ export class OrchestratorPrime {
   private supabase;
   private agents: Agent[] = [];
   private agentsLoaded = false;
+  private claudeClient: Anthropic | null = null;
 
   constructor(
     supabaseUrl: string = process.env.SUPABASE_URL || "https://aipehhzlsmfxxzwceppd.supabase.co",
     supabaseKey: string = process.env.SUPABASE_ANON_KEY || ""
   ) {
     this.supabase = createClient(supabaseUrl, supabaseKey);
+  }
+
+  // ============================================================
+  // UTILITY: CLAUDE CLIENT CACHING
+  // ============================================================
+
+  /**
+   * Get or create Claude Haiku client (cached)
+   * Reuses the same instance to avoid creating new clients per call
+   */
+  private getClaudeClient(): Anthropic {
+    if (!this.claudeClient) {
+      this.claudeClient = new Anthropic({
+        apiKey: process.env.ANTHROPIC_API_KEY || "",
+      });
+    }
+    return this.claudeClient;
   }
 
   // ============================================================
@@ -161,17 +180,14 @@ export class OrchestratorPrime {
   }
 
   // ============================================================
-  // PHASE 2: TASK CLASSIFICATION (Placeholder)
+  // PHASE 2: TASK CLASSIFICATION (CLAUDE HAIKU)
   // ============================================================
 
   /**
-   * Classify task to extract intent and required capabilities
-   * TODO: Wire to Claude Haiku for intelligent classification
+   * Default classification fallback (keyword matching)
+   * Used when Claude API fails or returns invalid data
    */
-  private async classifyTask(task: Task): Promise<TaskClassification> {
-    // TODO: Call Claude API to classify task
-    // For now, return a basic classification based on keywords
-
+  private getDefaultClassification(task: Task): TaskClassification {
     const description = task.description.toLowerCase();
     let intent = "general";
     let capabilities: string[] = [];
@@ -193,6 +209,12 @@ export class OrchestratorPrime {
     } else if (description.includes("book") || description.includes("demo")) {
       intent = "booking";
       capabilities = ["schedule-meetings", "send-confirmations"];
+    } else if (description.includes("analysis") || description.includes("data")) {
+      intent = "analysis";
+      capabilities = ["data-processing", "reporting"];
+    } else if (description.includes("admin") || description.includes("setup")) {
+      intent = "admin";
+      capabilities = ["configuration", "automation"];
     }
 
     return {
@@ -201,6 +223,93 @@ export class OrchestratorPrime {
       required_capabilities: capabilities,
       autonomy_suggested: "L2",
     };
+  }
+
+  /**
+   * Classify task using Claude Haiku to extract intent and required capabilities
+   * Falls back to keyword matching if API fails
+   */
+  async classifyTask(task: Task): Promise<TaskClassification> {
+    try {
+      const client = this.getClaudeClient();
+
+      // Concise prompt that instructs Claude to classify the task
+      const systemPrompt = `You are a task classification specialist. Analyze the task description and respond with ONLY valid JSON (no markdown, no explanation).
+
+Extract:
+- intent: primary action type (outreach, sales, support, analysis, admin, planning, other)
+- logic_layers: relevant LOGIC_LAYERS_REGISTRY references (e.g., ["LL-009", "LL-010"])
+- required_capabilities: specific capabilities needed (e.g., ["write-emails", "personalize"])
+- autonomy_suggested: suggested autonomy level (L1=report-only, L2=assisted, L3=unattended)`;
+
+      const userPrompt = `Task: "${task.description}"
+Venture: ${task.venture}${task.urgency ? `\nUrgency: ${task.urgency}` : ""}${task.budget ? `\nBudget: $${task.budget}` : ""}
+
+Respond ONLY with JSON object (no other text).`;
+
+      const response = await client.messages.create({
+        model: "claude-haiku-4-5-20251001",
+        max_tokens: 256,
+        system: systemPrompt,
+        messages: [
+          {
+            role: "user",
+            content: userPrompt,
+          },
+        ],
+      });
+
+      // Extract text content from response
+      const textContent = response.content.find((c) => c.type === "text");
+      if (!textContent || textContent.type !== "text") {
+        console.warn(
+          "⚠️  No text in Claude response, falling back to keyword matching"
+        );
+        return this.getDefaultClassification(task);
+      }
+
+      // Extract JSON from response (handle wrapped markdown)
+      const jsonMatch = textContent.text.match(/\{[\s\S]*\}/);
+      if (!jsonMatch) {
+        console.warn(
+          "⚠️  Could not extract JSON from Claude response, falling back to keyword matching"
+        );
+        return this.getDefaultClassification(task);
+      }
+
+      // Parse and validate JSON
+      const classification = JSON.parse(jsonMatch[0]) as TaskClassification;
+
+      // Validate structure
+      if (
+        !classification.intent ||
+        !Array.isArray(classification.logic_layers) ||
+        !Array.isArray(classification.required_capabilities) ||
+        !classification.autonomy_suggested
+      ) {
+        console.warn(
+          "⚠️  Invalid classification structure from Claude, falling back to keyword matching"
+        );
+        return this.getDefaultClassification(task);
+      }
+
+      // Ensure autonomy_suggested is a valid value
+      if (!["L1", "L2", "L3"].includes(classification.autonomy_suggested)) {
+        classification.autonomy_suggested = "L2";
+      }
+
+      console.log(
+        `✅ Task classified: intent="${classification.intent}", autonomy="${classification.autonomy_suggested}"`
+      );
+      return classification;
+    } catch (error) {
+      console.error(
+        "❌ Failed to classify task with Claude:",
+        error instanceof Error ? error.message : String(error)
+      );
+      // Gracefully fall back to keyword matching on any error
+      return this.getDefaultClassification(task);
+    }
   }
 
   // ============================================================
