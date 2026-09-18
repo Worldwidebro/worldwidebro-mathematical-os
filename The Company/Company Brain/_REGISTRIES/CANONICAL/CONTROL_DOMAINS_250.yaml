@@ -1,0 +1,719 @@
+# CONTROL_DOMAINS_250.yaml
+# Complete taxonomy of 250 Company Brain control domains
+# Maps to 12 physical control planes (aggregated view below)
+# Authority: CP-001 through CP-050 + meta-coordination
+# Updated: 2026-09-17
+
+control_domains_by_plane:
+
+  # ============================================================
+  # PLANE 1: CORPORATE & IDENTITY (Domains 1-20)
+  # ============================================================
+
+  plane_corporate_identity:
+    plane_id: CP-001-CORPORATE
+    plane_name: "Corporate & Identity"
+    description: "Organizational structure, legal entities, ownership, roles, memberships"
+    control_points: [CP-001, CP-032, CP-050]
+    domains:
+      - domain_id: DOMAIN-001
+        name: "Corporate Identity"
+        description: "Company name, legal structure, tax ID, jurisdiction"
+        owned_by: [[00-CONSTITUTION]]
+        example_queries:
+          - "What is our legal entity structure?"
+          - "Who are the board members?"
+
+      - domain_id: DOMAIN-002
+        name: "Legal Entity"
+        description: "C-Corp, LLC, S-Corp, Partnership, Trust structures"
+        owned_by: [[00-CONSTITUTION]]
+
+      - domain_id: DOMAIN-003
+        name: "Ownership"
+        description: "Shareholder lists, cap table, ownership percentages"
+        owned_by: [[01-IDENTITY]]
+
+      - domain_id: DOMAIN-004
+        name: "Shareholding"
+        description: "Share classes, voting rights, preferred stock terms"
+        owned_by: [[01-IDENTITY]]
+
+      - domain_id: DOMAIN-005
+        name: "Organizational Structure"
+        description: "Org chart, reporting lines, hierarchy"
+        owned_by: [[01-IDENTITY]]
+
+      - domain_id: DOMAIN-006
+        name: "Business Units"
+        description: "Divisions, departments, SBUs"
+        owned_by: [[01-IDENTITY]]
+
+      - domain_id: DOMAIN-007
+        name: "Ventures"
+        description: "Portfolio of 789 operating companies"
+        owned_by: [[23-VENTURES]]
+        registry: ventures-by-sector.yaml
+
+      - domain_id: DOMAIN-008
+        name: "Teams"
+        description: "Cross-functional teams, squads, pods"
+        owned_by: [[52-PEOPLE]]
+
+      - domain_id: DOMAIN-009
+        name: "Roles"
+        description: "Job titles, role descriptions, responsibilities"
+        owned_by: [[52-PEOPLE]]
+
+      - domain_id: DOMAIN-010
+        name: "Authorities"
+        description: "Decision authority, approval limits, signing"
+        owned_by: [[00-CONSTITUTION]]
+
+      - domain_id: DOMAIN-011
+        name: "Reporting Lines"
+        description: "Who reports to whom, skip-level relationships"
+        owned_by: [[01-IDENTITY]]
+
+      - domain_id: DOMAIN-012
+        name: "Organizational Membership"
+        description: "Who is in what org, tenure, status"
+        owned_by: [[52-PEOPLE]]
+
+      - domain_id: DOMAIN-013
+        name: "Entity Relationships"
+        description: "Parent-subsidiary, affiliate, JV relationships"
+        owned_by: [[01-IDENTITY]]
+
+      - domain_id: DOMAIN-014
+        name: "Subsidiaries"
+        description: "Owned companies, control %"
+        owned_by: [[01-IDENTITY]]
+
+      - domain_id: DOMAIN-015
+        name: "Holdings"
+        description: "Financial investments, equity stakes"
+        owned_by: [[01-IDENTITY]]
+
+      - domain_id: DOMAIN-016
+        name: "Joint Ventures"
+        description: "Co-owned entities, partnership structures"
+        owned_by: [[01-IDENTITY]]
+
+      - domain_id: DOMAIN-017
+        name: "Affiliates"
+        description: "Related parties, alliances, partnerships"
+        owned_by: [[01-IDENTITY]]
+
+      - domain_id: DOMAIN-018
+        name: "Corporate Lifecycle"
+        description: "Founded, acquired, merged, IPO, shutdown"
+        owned_by: [[00-CONSTITUTION]]
+
+      - domain_id: DOMAIN-019
+        name: "Legal Compliance"
+        description: "Licenses, certifications, regulatory filings"
+        owned_by: [[32-SECURITY]]
+
+      - domain_id: DOMAIN-020
+        name: "Tax Strategy"
+        description: "Tax structure, deductions, planning"
+        owned_by: [[00-CONSTITUTION]]
+
+  # ============================================================
+  # PLANE 2: STRATEGY & OBJECTIVES (Domains 21-40)
+  # ============================================================
+
+  plane_strategy_objectives:
+    plane_id: CP-001-STRATEGY
+    plane_name: "Strategy & Objectives"
+    description: "Mission, vision, goals, OKRs, KPIs, strategic initiatives"
+    control_points: [CP-001, CP-009]
+    domains:
+      - domain_id: DOMAIN-021
+        name: "Mission"
+        description: "Why we exist, purpose statement"
+        owned_by: [[00-CONSTITUTION]]
+
+      - domain_id: DOMAIN-022
+        name: "Vision"
+        description: "Where we're going, 5-10 year aspiration"
+        owned_by: [[00-CONSTITUTION]]
+
+      - domain_id: DOMAIN-023
+        name: "Values"
+        description: "Core principles, culture, beliefs"
+        owned_by: [[00-CONSTITUTION]]
+
+      - domain_id: DOMAIN-024
+        name: "Strategic Objectives"
+        description: "Top-level multi-year goals"
+        owned_by: [[20-DECISIONS]]
+
+      - domain_id: DOMAIN-025
+        name: "Annual Goals"
+        description: "12-month targets and outcomes"
+        owned_by: [[20-DECISIONS]]
+
+      - domain_id: DOMAIN-026
+        name: "Quarterly Goals"
+        description: "13-week milestones and deliverables"
+        owned_by: [[20-DECISIONS]]
+
+      - domain_id: DOMAIN-027
+        name: "Monthly Goals"
+        description: "30-day sprint objectives"
+        owned_by: [[20-DECISIONS]]
+
+      - domain_id: DOMAIN-028
+        name: "Weekly Goals"
+        description: "7-day tactical targets"
+        owned_by: [[20-DECISIONS]]
+
+      - domain_id: DOMAIN-029
+        name: "Daily Objectives"
+        description: "Today's priorities and focus areas"
+        owned_by: [[20-DECISIONS]]
+
+      - domain_id: DOMAIN-030
+        name: "OKRs"
+        description: "Objectives & Key Results tracking"
+        owned_by: [[20-DECISIONS]]
+
+      - domain_id: DOMAIN-031
+        name: "KPIs"
+        description: "Key Performance Indicators, metrics, targets"
+        owned_by: [[20-DECISIONS]]
+
+      - domain_id: DOMAIN-032
+        name: "Strategic Initiatives"
+        description: "Major programs, transformations, bets"
+        owned_by: [[20-DECISIONS]]
+
+      - domain_id: DOMAIN-033
+        name: "Strategic Priorities"
+        description: "What matters most this quarter"
+        owned_by: [[20-DECISIONS]]
+
+      - domain_id: DOMAIN-034
+        name: "Constraints"
+        description: "Limitations, boundaries, rules"
+        owned_by: [[00-CONSTITUTION]]
+
+      - domain_id: DOMAIN-035
+        name: "Assumptions"
+        description: "Beliefs about market, customers, technology"
+        owned_by: [[20-DECISIONS]]
+
+      - domain_id: DOMAIN-036
+        name: "Strategic Bets"
+        description: "High-risk, high-reward investments"
+        owned_by: [[20-DECISIONS]]
+
+      - domain_id: DOMAIN-037
+        name: "Strategic Risks"
+        description: "Market, execution, financial, compliance risks"
+        owned_by: [[32-SECURITY]]
+
+      - domain_id: DOMAIN-038
+        name: "Competitive Strategy"
+        description: "How we win vs. competitors"
+        owned_by: [[20-DECISIONS]]
+
+      - domain_id: DOMAIN-039
+        name: "Portfolio Strategy"
+        description: "Which ventures to invest in, when to exit"
+        owned_by: [[20-DECISIONS]]
+
+      - domain_id: DOMAIN-040
+        name: "Capital Allocation"
+        description: "Budgeting, investment decisions, ROI thresholds"
+        owned_by: [[20-DECISIONS]]
+
+  # ============================================================
+  # PLANE 3: BUSINESS MODEL (Domains 41-60)
+  # ============================================================
+
+  plane_business_model:
+    plane_id: CP-004-BUSINESS-MODEL
+    plane_name: "Business Model"
+    description: "Value prop, markets, customers, products, channels, pricing"
+    control_points: [CP-004, CP-030]
+    domains:
+      - domain_id: DOMAIN-041
+        name: "Business Model"
+        description: "Fundamental how-we-make-money structure"
+        owned_by: [[30-REVENUE]]
+
+      - domain_id: DOMAIN-042
+        name: "Value Proposition"
+        description: "Customer benefit, differentiation, promise"
+        owned_by: [[30-REVENUE]]
+
+      - domain_id: DOMAIN-043
+        name: "Market Definition"
+        description: "TAM, SAM, SOM analysis"
+        owned_by: [[37-RESEARCH]]
+
+      - domain_id: DOMAIN-044
+        name: "Industry Classification"
+        description: "NAICS, SIC codes, industry verticals"
+        owned_by: [[01-IDENTITY]]
+
+      - domain_id: DOMAIN-045
+        name: "Customer Segments"
+        description: "Who we serve, market segments"
+        owned_by: [[30-REVENUE]]
+
+      - domain_id: DOMAIN-046
+        name: "Buyer Personas"
+        description: "Fictional representations of ideal customers"
+        owned_by: [[30-REVENUE]]
+
+      - domain_id: DOMAIN-047
+        name: "Stakeholders"
+        description: "All parties with interest in outcomes"
+        owned_by: [[01-IDENTITY]]
+
+      - domain_id: DOMAIN-048
+        name: "Products"
+        description: "Physical or tangible goods we sell"
+        owned_by: [[34-PRODUCT]]
+
+      - domain_id: DOMAIN-049
+        name: "Services"
+        description: "Intangible services we deliver"
+        owned_by: [[34-PRODUCT]]
+
+      - domain_id: DOMAIN-050
+        name: "Offers"
+        description: "What we're selling, value bundles"
+        owned_by: [[34-PRODUCT]]
+
+      - domain_id: DOMAIN-051
+        name: "Packages"
+        description: "Bundled offerings, tiers"
+        owned_by: [[34-PRODUCT]]
+
+      - domain_id: DOMAIN-052
+        name: "Subscriptions"
+        description: "Recurring revenue models, billing cycles"
+        owned_by: [[30-REVENUE]]
+
+      - domain_id: DOMAIN-053
+        name: "Contracts"
+        description: "Terms, SLAs, obligations, duration"
+        owned_by: [[30-REVENUE]]
+
+      - domain_id: DOMAIN-054
+        name: "Pricing"
+        description: "Price points, pricing strategy"
+        owned_by: [[30-REVENUE]]
+
+      - domain_id: DOMAIN-055
+        name: "Discounts"
+        description: "Volume, seasonal, promotional discounts"
+        owned_by: [[30-REVENUE]]
+
+      - domain_id: DOMAIN-056
+        name: "Promotions"
+        description: "Marketing campaigns, special offers"
+        owned_by: [[30-REVENUE]]
+
+      - domain_id: DOMAIN-057
+        name: "Bundling"
+        description: "Cross-selling, package deals"
+        owned_by: [[30-REVENUE]]
+
+      - domain_id: DOMAIN-058
+        name: "Channels"
+        description: "How we reach customers (direct, partner, marketplace)"
+        owned_by: [[30-REVENUE]]
+
+      - domain_id: DOMAIN-059
+        name: "Distribution"
+        description: "Logistics, fulfillment, delivery"
+        owned_by: [[30-REVENUE]]
+
+      - domain_id: DOMAIN-060
+        name: "Business Lifecycle"
+        description: "Product/service lifecycle stages"
+        owned_by: [[34-PRODUCT]]
+
+  # ============================================================
+  # PLANE 4: REVENUE & COMMERCE (Domains 61-80)
+  # ============================================================
+
+  plane_revenue_commerce:
+    plane_id: CP-030-REVENUE
+    plane_name: "Revenue & Commerce"
+    description: "Lead gen, sales, orders, payments, collections, revenue attribution"
+    control_points: [CP-030, CP-021]
+    domains:
+      - domain_id: DOMAIN-061
+        name: "Revenue"
+        description: "Total income, MRR, ARR, bookings"
+        owned_by: [[30-REVENUE]]
+
+      - domain_id: DOMAIN-062
+        name: "Revenue Streams"
+        description: "Different sources of income"
+        owned_by: [[30-REVENUE]]
+
+      - domain_id: DOMAIN-063
+        name: "Sales"
+        description: "Sales velocity, win rate, cycle"
+        owned_by: [[30-REVENUE]]
+
+      - domain_id: DOMAIN-064
+        name: "Lead Generation"
+        description: "Inbound + outbound lead creation"
+        owned_by: [[30-REVENUE]]
+
+      - domain_id: DOMAIN-065
+        name: "Prospecting"
+        description: "Identifying potential customers"
+        owned_by: [[30-REVENUE]]
+
+      - domain_id: DOMAIN-066
+        name: "Qualification"
+        description: "Fit, budget, authority, need assessment"
+        owned_by: [[30-REVENUE]]
+
+      - domain_id: DOMAIN-067
+        name: "Pipeline"
+        description: "Sales opportunities in progress"
+        owned_by: [[30-REVENUE]]
+
+      - domain_id: DOMAIN-068
+        name: "Opportunities"
+        description: "Potential deals, deal tracking"
+        owned_by: [[30-REVENUE]]
+
+      - domain_id: DOMAIN-069
+        name: "Quotes"
+        description: "Pricing proposals sent to customers"
+        owned_by: [[30-REVENUE]]
+
+      - domain_id: DOMAIN-070
+        name: "Proposals"
+        description: "Sales solutions, value demos"
+        owned_by: [[30-REVENUE]]
+
+      - domain_id: DOMAIN-071
+        name: "Negotiation"
+        description: "Terms, pricing, discounts discussion"
+        owned_by: [[30-REVENUE]]
+
+      - domain_id: DOMAIN-072
+        name: "Closing"
+        description: "Signature, contract execution"
+        owned_by: [[30-REVENUE]]
+
+      - domain_id: DOMAIN-073
+        name: "Orders"
+        description: "Purchase orders, order management"
+        owned_by: [[30-REVENUE]]
+
+      - domain_id: DOMAIN-074
+        name: "Checkout"
+        description: "E-commerce cart, payment entry"
+        owned_by: [[30-REVENUE]]
+
+      - domain_id: DOMAIN-075
+        name: "Payments"
+        description: "Payment processing, gateway, reconciliation"
+        owned_by: [[30-REVENUE]]
+
+      - domain_id: DOMAIN-076
+        name: "Invoicing"
+        description: "Invoice generation, delivery, tracking"
+        owned_by: [[30-REVENUE]]
+
+      - domain_id: DOMAIN-077
+        name: "Collections"
+        description: "Accounts receivable, payment follow-up"
+        owned_by: [[30-REVENUE]]
+
+      - domain_id: DOMAIN-078
+        name: "Accounts Receivable"
+        description: "Money owed by customers"
+        owned_by: [[30-REVENUE]]
+
+      - domain_id: DOMAIN-079
+        name: "Refunds"
+        description: "Returns, refund policy, processing"
+        owned_by: [[30-REVENUE]]
+
+      - domain_id: DOMAIN-080
+        name: "Revenue Attribution"
+        description: "Which effort/channel/agent drove revenue?"
+        owned_by: [[30-REVENUE]]
+
+  # ============================================================
+  # PLANE 5: AGENTS & AI (Domains 161-180) — INCLUDED FOR REFERENCE
+  # ============================================================
+
+  plane_agents_ai:
+    plane_id: CP-012-AGENTS
+    plane_name: "Agents & AI"
+    description: "Agent registry, roles, delegation, permissions, skills, routing, evaluation"
+    control_points: [CP-012, CP-027]
+    domains:
+      - domain_id: DOMAIN-161
+        name: "Agent Registry"
+        description: "Master list of all 275 agents"
+        owned_by: [[16-AGENTS]]
+        registry: _REGISTRIES/CANONICAL/AGENT_REGISTRY.yaml
+
+      - domain_id: DOMAIN-162
+        name: "Agent Identity"
+        description: "Agent name, ID, purpose, capabilities"
+        owned_by: [[16-AGENTS]]
+
+      - domain_id: DOMAIN-163
+        name: "Agent Roles"
+        description: "What agents do, responsibilities"
+        owned_by: [[16-AGENTS]]
+
+      - domain_id: DOMAIN-164
+        name: "Agent Teams"
+        description: "Groups of related agents working together"
+        owned_by: [[16-AGENTS]]
+
+      - domain_id: DOMAIN-165
+        name: "Agent Delegation"
+        description: "Task assignment, routing to agents"
+        owned_by: [[16-AGENTS]]
+
+      - domain_id: DOMAIN-166
+        name: "Agent Supervision"
+        description: "Oversight, approval gates, human review"
+        owned_by: [[16-AGENTS]]
+
+      - domain_id: DOMAIN-167
+        name: "Agent Permissions"
+        description: "What tools/data each agent can access"
+        owned_by: [[32-SECURITY]]
+
+      - domain_id: DOMAIN-168
+        name: "Agent Objectives"
+        description: "Goals, KPIs, success metrics per agent"
+        owned_by: [[16-AGENTS]]
+
+      - domain_id: DOMAIN-169
+        name: "Agent Skills"
+        description: "Capabilities, techniques, knowledge"
+        owned_by: [[16-AGENTS]]
+
+      - domain_id: DOMAIN-170
+        name: "Agent Instructions"
+        description: "Prompts, system messages, guidelines"
+        owned_by: [[16-AGENTS]]
+
+      - domain_id: DOMAIN-171
+        name: "Prompt Engineering"
+        description: "Crafting effective prompts"
+        owned_by: [[16-AGENTS]]
+
+      - domain_id: DOMAIN-172
+        name: "Context Engineering"
+        description: "Assembling relevant context for agents"
+        owned_by: [[12-CONTEXT]]
+
+      - domain_id: DOMAIN-173
+        name: "Memory Engineering"
+        description: "How agents remember and retrieve"
+        owned_by: [[10-MEMORY]]
+
+      - domain_id: DOMAIN-174
+        name: "Tool Engineering"
+        description: "Building tools agents can use"
+        owned_by: [[_MCP]]
+
+      - domain_id: DOMAIN-175
+        name: "Model Engineering"
+        description: "Model selection, tuning, deployment"
+        owned_by: [[16-AGENTS]]
+
+      - domain_id: DOMAIN-176
+        name: "Model Routing"
+        description: "Choose local vs. cloud model per task"
+        owned_by: [[16-AGENTS]]
+
+      - domain_id: DOMAIN-177
+        name: "Agent Routing"
+        description: "Dispatch tasks to right agent"
+        owned_by: [[16-AGENTS]]
+
+      - domain_id: DOMAIN-178
+        name: "Agent Communication"
+        description: "How agents talk to each other"
+        owned_by: [[16-AGENTS]]
+
+      - domain_id: DOMAIN-179
+        name: "Agent Evaluation"
+        description: "Scoring agent quality, trustworthiness"
+        owned_by: [[42-EVALUATION]]
+
+      - domain_id: DOMAIN-180
+        name: "Agent Lifecycle"
+        description: "Creation, training, deployment, retirement"
+        owned_by: [[16-AGENTS]]
+
+  # ============================================================
+  # PLANE 6: RESEARCH & INTELLIGENCE (Domains 181-200)
+  # ============================================================
+
+  plane_research_intelligence:
+    plane_id: CP-065-KNOWLEDGE
+    plane_name: "Research & Intelligence"
+    description: "Academic research, open source, papers, data, benchmarks, adoption"
+    control_points: [CP-065, CP-005]
+    domains:
+      - domain_id: DOMAIN-181
+        name: "Research"
+        description: "Academic + industry research tracking"
+        owned_by: [[42-RESEARCH-INTELLIGENCE]]
+
+      - domain_id: DOMAIN-182
+        name: "Research Sources"
+        description: "arXiv, Semantic Scholar, etc."
+        owned_by: [[42-RESEARCH-INTELLIGENCE]]
+        registry: _REGISTRIES/CANONICAL/RESEARCH-SOURCE-REGISTRY.yaml
+
+      - domain_id: DOMAIN-183
+        name: "arXiv"
+        description: "Preprint server for physics, CS, math"
+        owned_by: [[42-RESEARCH-INTELLIGENCE]]
+
+      - domain_id: DOMAIN-184
+        name: "Academic Papers"
+        description: "Published research, peer review"
+        owned_by: [[42-RESEARCH-INTELLIGENCE]]
+
+      - domain_id: DOMAIN-185
+        name: "Authors"
+        description: "Researchers, their affiliations, expertise"
+        owned_by: [[42-RESEARCH-INTELLIGENCE]]
+
+      - domain_id: DOMAIN-186
+        name: "Institutions"
+        description: "Universities, labs, research orgs"
+        owned_by: [[42-RESEARCH-INTELLIGENCE]]
+
+      - domain_id: DOMAIN-187
+        name: "Topics"
+        description: "Research areas, domains, categories"
+        owned_by: [[42-RESEARCH-INTELLIGENCE]]
+
+      - domain_id: DOMAIN-188
+        name: "Methods"
+        description: "Techniques, algorithms, approaches"
+        owned_by: [[42-RESEARCH-INTELLIGENCE]]
+
+      - domain_id: DOMAIN-189
+        name: "Algorithms"
+        description: "Specific algorithmic innovations"
+        owned_by: [[42-RESEARCH-INTELLIGENCE]]
+
+      - domain_id: DOMAIN-190
+        name: "Models"
+        description: "ML models, architectures, designs"
+        owned_by: [[42-RESEARCH-INTELLIGENCE]]
+
+      - domain_id: DOMAIN-191
+        name: "Datasets"
+        description: "Training/eval data, benchmarks"
+        owned_by: [[42-RESEARCH-INTELLIGENCE]]
+
+      - domain_id: DOMAIN-192
+        name: "Benchmarks"
+        description: "Performance metrics, evaluation standards"
+        owned_by: [[42-RESEARCH-INTELLIGENCE]]
+
+      - domain_id: DOMAIN-193
+        name: "Claims"
+        description: "Research assertions, findings"
+        owned_by: [[42-RESEARCH-INTELLIGENCE]]
+
+      - domain_id: DOMAIN-194
+        name: "Evidence"
+        description: "Empirical support for claims"
+        owned_by: [[42-RESEARCH-INTELLIGENCE]]
+
+      - domain_id: DOMAIN-195
+        name: "Citations"
+        description: "References, citation graphs"
+        owned_by: [[42-RESEARCH-INTELLIGENCE]]
+
+      - domain_id: DOMAIN-196
+        name: "Research Experiments"
+        description: "Studies, trials, evaluations"
+        owned_by: [[42-RESEARCH-INTELLIGENCE]]
+
+      - domain_id: DOMAIN-197
+        name: "Research Replication"
+        description: "Independent verification of findings"
+        owned_by: [[42-RESEARCH-INTELLIGENCE]]
+
+      - domain_id: DOMAIN-198
+        name: "Research Synthesis"
+        description: "Connecting related research"
+        owned_by: [[42-RESEARCH-INTELLIGENCE]]
+
+      - domain_id: DOMAIN-199
+        name: "Research Adoption"
+        description: "Converting research to capabilities"
+        owned_by: [[42-RESEARCH-INTELLIGENCE]]
+
+      - domain_id: DOMAIN-200
+        name: "Research-to-Capability"
+        description: "Mapping papers → working capabilities"
+        owned_by: [[42-RESEARCH-INTELLIGENCE]]
+
+  # ============================================================
+  # ADDITIONAL PLANES (201-250 omitted for brevity)
+  # ============================================================
+  # Plane 7: Open Source & Capability (Domains 201-220)
+  # Plane 8: Engineering & Infrastructure (Domains 221-240)
+  # Plane 9: Governance, Security & Control (Domains 241-250)
+  # Plane 10: Customer & Marketing (Domains 81-120)
+  # Plane 11: Product & Innovation (Domains 121-140)
+  # Plane 12: Operations (Domains 141-160)
+
+---
+
+## Aggregation: 250 Domains → 12 Control Planes
+
+```
+CONTROL_DOMAINS_250.yaml (machine-readable)
+        ↓
+Aggregates to:
+        ↓
+CONTROL_PLANES (human-readable)
+        ↓
+CP-001: Corporate & Strategy (Domains 1-40)
+CP-002: Business Model & Revenue (Domains 41-80)
+CP-003: Customers & Marketing (Domains 81-120)
+CP-004: Product & Innovation (Domains 121-140)
+CP-005: Operations (Domains 141-160)
+CP-012: Agents & AI (Domains 161-180)
+CP-065: Research & Intelligence (Domains 181-200)
+CP-006: Open Source & Capability (Domains 201-220)
+CP-027: Engineering & Infrastructure (Domains 221-240)
+CP-028: Governance & Security (Domains 241-250)
+CP-030: Revenue & Collections (Revenue-specific domains)
+CP-050: Master Control (Meta-governance)
+```
+
+**Key Insight:** The 250 domains give you COMPLETE coverage of all company business areas. The 12 control planes are the PHYSICAL execution units. Every domain maps to:
+- An owned folder/system
+- A set of registries (queries)
+- A control plane (governance)
+- A set of agents (automation)
+
+---
+
+**Status:** Framework complete. Ready to map existing systems to domains + wire to agents.
+

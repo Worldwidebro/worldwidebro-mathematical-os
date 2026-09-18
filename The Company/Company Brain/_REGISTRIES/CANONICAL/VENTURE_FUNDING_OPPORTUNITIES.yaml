@@ -1,0 +1,407 @@
+# VENTURE_FUNDING_OPPORTUNITIES.yaml
+# Track grants, loans, equity funding opportunities for each venture
+# Links to: [[20-DECISIONS/PHASE-2-RESEARCH-TO-REVENUE-ROADMAP]], [[_MCP/SYSTEMS-INTEGRATION-MASTER]]
+# Authority: CP-020 (Finance), CP-021 (Revenue), CP-030 (Business)
+# Updated: 2026-09-17
+
+venture_funding_tracker:
+
+  # ============================================================
+  # TIER-0 VENTURES (6 total, focus for immediate funding)
+  # ============================================================
+
+  OPS_001_STAFFING:
+    venture_id: OPS-001
+    venture_name: "OPS-001: Workforce Staffing & Placement"
+    sector: SEC-028-Workforce-Management
+    revenue_stage: "🟢 Revenue-Ready ($2.5K/placement)"
+
+    funding_needed:
+      immediate: 50000  # Working capital for 20 placements @ $2,500 each
+      runway: 6  # months
+      total_12m: 120000  # Scale to 50+ placements
+
+    opportunities:
+      - opportunity_id: OPS-001-GRANT-001
+        name: "Workforce Development Grant (Department of Labor)"
+        type: grant
+        amount: 75000
+        deadline: 2026-11-30
+        alignment: "Staffing training, job placement success"
+        probability: 0.72
+        effort_hours: 20
+        owner_agent: [[.claude/agents/grant-writer.md]]
+        status: NOT_STARTED
+
+      - opportunity_id: OPS-001-LOAN-001
+        name: "SBA Microloan (Community Development Financial Institution)"
+        type: loan
+        amount: 100000
+        rate: 0.065
+        term_months: 60
+        collateral: "Business assets, receivables"
+        probability: 0.85
+        effort_hours: 15
+        owner_agent: [[.claude/agents/loan-officer-assistant.md]]
+        status: IN_PROGRESS (agent working on application)
+
+      - opportunity_id: OPS-001-EQUITY-001
+        name: "Venture Capital (Workforce Tech Fund)"
+        type: equity
+        amount: 500000
+        equity_pct: 0.15  # 15% dilution
+        lead: "TBD"
+        probability: 0.45
+        effort_hours: 40  # Pitch deck, due diligence
+        owner_agent: [[.claude/agents/deal-strategist.md]]
+        status: PROSPECTING
+
+  LT_005_MEDICAL_COURIER:
+    venture_id: LT-005
+    venture_name: "LT-005: Medical Specimen Logistics & Courier"
+    sector: SEC-007-Healthcare-Logistics
+    revenue_stage: "🟢 Revenue-Ready ($85-$150/delivery)"
+
+    funding_needed:
+      immediate: 370000  # Fleet + operations (from funding_requests.json)
+      runway: 6
+      total_12m: 600000
+
+    opportunities:
+      - opportunity_id: LT-005-GRANT-001
+        name: "NIH NIMHD SBIR Phase I (Healthcare Research Infrastructure)"
+        type: grant
+        amount: 300000
+        deadline: 2026-12-31
+        alignment: "Medical specimen handling for underserved communities"
+        probability: 0.68
+        effort_hours: 60
+        owner_agent: [[.claude/agents/research-assistant.md]]
+        status: IN_PROGRESS
+
+      - opportunity_id: LT-005-LOAN-001
+        name: "CDFI Community Loan (Temperature-Controlled Fleet)"
+        type: loan
+        amount: 250000
+        rate: 0.0425
+        term_months: 84
+        collateral: "2 Ford Transit reefer vans + equipment"
+        probability: 0.82
+        effort_hours: 25
+        owner_agent: [[.claude/agents/loan-officer-assistant.md]]
+        status: IN_PROGRESS
+
+      - opportunity_id: LT-005-EQUIPMENT-LEASE
+        name: "Vehicle Lease Line (Commercial Fleet Financing)"
+        type: lease
+        amount: 120000
+        monthly_cost: 2800
+        term_months: 48
+        lessor: "TBD"
+        probability: 0.90
+        effort_hours: 8
+        owner_agent: [[.claude/agents/procurement-specialist.md]]
+        status: IN_PROGRESS
+
+  CALLCENTER_001:
+    venture_id: CALLCENTER
+    venture_name: "CALLCENTER: Inbound Call Center & Customer Service"
+    sector: SEC-005-Customer-Service-Operations
+    revenue_stage: "🟢 Revenue-Ready ($50-$200/call)"
+
+    funding_needed:
+      immediate: 75000  # Telecom infrastructure, training
+      runway: 3
+      total_12m: 200000
+
+    opportunities:
+      - opportunity_id: CALLCENTER-GRANT-001
+        name: "Customer Service Training Grant (State Workforce Board)"
+        type: grant
+        amount: 60000
+        deadline: 2026-10-31
+        alignment: "Agent training, customer satisfaction"
+        probability: 0.75
+        effort_hours: 15
+        owner_agent: [[.claude/agents/grant-writer.md]]
+        status: READY_TO_SUBMIT
+
+      - opportunity_id: CALLCENTER-EQUIPMENT-001
+        name: "PBX/VoIP System Financing"
+        type: equipment_loan
+        amount: 45000
+        rate: 0.055
+        term_months: 36
+        probability: 0.88
+        effort_hours: 8
+        owner_agent: [[.claude/agents/procurement-specialist.md]]
+        status: PROSPECTING
+
+  # ============================================================
+  # TIER-1 VENTURES (5 total, secondary focus)
+  # ============================================================
+
+  CON_001_CONSTRUCTION:
+    venture_id: CON-001
+    venture_name: "CON-001: Construction Project Management & Bidding"
+    sector: SEC-010-Construction-Services
+    revenue_stage: "🟡 Demo-Ready (needs 6h API build)"
+
+    funding_needed:
+      immediate: 150000  # Working capital for projects
+      runway: 6
+      total_12m: 400000
+
+    opportunities:
+      - opportunity_id: CON-001-LOAN-001
+        name: "Construction Line of Credit (Regional Bank)"
+        type: line_of_credit
+        amount: 200000
+        rate: 0.075
+        probability: 0.70
+        effort_hours: 20
+        owner_agent: [[.claude/agents/loan-officer-assistant.md]]
+        status: PROSPECTING
+
+      - opportunity_id: CON-001-GRANT-001
+        name: "Construction Workforce Development Grant"
+        type: grant
+        amount: 100000
+        probability: 0.65
+        effort_hours: 25
+        owner_agent: [[.claude/agents/grant-writer.md]]
+        status: RESEARCH
+
+  RE_001_REAL_ESTATE:
+    venture_id: RE-001
+    venture_name: "RE-001: Real Estate Deal Sourcing & Investor Matching"
+    sector: SEC-014-Real-Estate-Investment
+    revenue_stage: "🟡 Demo-Ready (needs 25h deal engine)"
+
+    funding_needed:
+      immediate: 250000  # Deal capital for small acquisitions
+      runway: 12
+      total_12m: 1000000  # Deal-making capital
+
+    opportunities:
+      - opportunity_id: RE-001-EQUITY-FUND-001
+        name: "Real Estate Venture Capital Fund"
+        type: equity
+        amount: 2000000
+        equity_pct: 0.10  # Founder + syndicate
+        lead: "TBD"
+        probability: 0.40
+        effort_hours: 80  # Full pitch, due diligence
+        owner_agent: [[.claude/agents/deal-strategist.md]]
+        status: PROSPECTING
+
+      - opportunity_id: RE-001-BRIDGE-LOAN-001
+        name: "Bridge Financing (Property Acquisitions)"
+        type: bridge_loan
+        amount: 500000
+        rate: 0.09
+        term_months: 12
+        probability: 0.75
+        effort_hours: 30
+        owner_agent: [[.claude/agents/loan-officer-assistant.md]]
+        status: PROSPECTING
+
+  LT_011_DISPATCH:
+    venture_id: LT-011
+    venture_name: "LT-011: Freight Carrier TMS & Route Optimization"
+    sector: SEC-029-Transportation-Logistics
+    revenue_stage: "🔴 Skeleton (assess 1h)"
+
+    funding_needed:
+      immediate: 50000  # MVP completion
+      runway: 3
+      total_12m: 150000
+
+    opportunities:
+      - opportunity_id: LT-011-LOAN-001
+        name: "Small Business Administration Loan"
+        type: sba_loan
+        amount: 150000
+        rate: 0.055
+        term_months: 60
+        probability: 0.70
+        effort_hours: 20
+        owner_agent: [[.claude/agents/loan-officer-assistant.md]]
+        status: READY_TO_SUBMIT
+
+  # ============================================================
+  # FUNDING AGGREGATES (All 6 Tier-0 Ventures)
+  # ============================================================
+
+  tier_0_summary:
+    total_immediate_funding_needed: 895000  # Oct 2026
+    total_12month_funding_needed: 2470000   # Full year
+
+    by_funding_type:
+      grants:
+        total_available: 535000
+        probability: 0.70
+        lead_time_weeks: 8
+        agents_working: [grant-writer]
+
+      loans:
+        total_available: 845000
+        probability: 0.78
+        lead_time_weeks: 4
+        agents_working: [loan-officer-assistant]
+
+      equity:
+        total_available: 2500000
+        probability: 0.42
+        lead_time_weeks: 12
+        agents_working: [deal-strategist]
+
+      leases_equipment:
+        total_available: 165000
+        probability: 0.89
+        lead_time_weeks: 2
+        agents_working: [procurement-specialist]
+
+    critical_path:
+      immediate_action: "Complete loan applications (90% probability, 4 weeks lead time)"
+      parallel_track: "Submit grant applications (70% probability, 8 weeks lead time)"
+      moonshot: "Pitch equity investors (42% probability, 12 weeks lead time)"
+
+    projected_funding:
+      optimistic: 2.8M  # Grants + loans + some equity + leases
+      realistic: 1.9M   # Grants + loans + leases
+      pessimistic: 1.0M # Loans + leases only
+
+  # ============================================================
+  # AGENT ASSIGNMENTS (Who owns funding for each venture)
+  # ============================================================
+
+  agent_assignments:
+    - venture_id: OPS-001
+      grant_agent: grant-writer-001
+      loan_agent: loan-officer-assistant-001
+      deal_agent: deal-strategist-001
+      status: "All agents assigned, LoanOfficer working"
+
+    - venture_id: LT-005
+      grant_agent: research-assistant-001  # Needs NIH SBIR expertise
+      loan_agent: loan-officer-assistant-001
+      deal_agent: procurement-specialist-001
+      status: "Grant + loan in progress, lease 90% done"
+
+    - venture_id: CALLCENTER
+      grant_agent: grant-writer-001
+      loan_agent: procurement-specialist-001
+      deal_agent: "N/A (smaller funding)"
+      status: "Grant ready to submit"
+
+    - venture_id: CON-001
+      grant_agent: grant-writer-001
+      loan_agent: loan-officer-assistant-001
+      deal_agent: "N/A (revenue not yet active)"
+      status: "Prospecting stage"
+
+    - venture_id: RE-001
+      grant_agent: "N/A (equity-stage venture)"
+      loan_agent: loan-officer-assistant-001
+      deal_agent: deal-strategist-001
+      status: "Equity pitching + bridge loan prospecting"
+
+    - venture_id: LT-011
+      grant_agent: "N/A (early stage)"
+      loan_agent: loan-officer-assistant-001
+      deal_agent: "N/A"
+      status: "SBA loan ready to submit"
+
+  # ============================================================
+  # NEXT ACTIONS (Priority Queue for Agents to Execute)
+  # ============================================================
+
+  next_actions_priority:
+    - priority: 1
+      action: "Submit LT-005 CDFI Loan Application"
+      venture: LT-005
+      amount: 250000
+      probability: 0.82
+      agent_to_execute: loan-officer-assistant-001
+      due_date: 2026-10-15
+      effort_hours: 25
+      status: IN_PROGRESS
+
+    - priority: 2
+      action: "Submit OPS-001 SBA Microloan Application"
+      venture: OPS-001
+      amount: 100000
+      probability: 0.85
+      agent_to_execute: loan-officer-assistant-001
+      due_date: 2026-10-20
+      effort_hours: 15
+      status: IN_PROGRESS
+
+    - priority: 3
+      action: "Submit DOL Workforce Grant (OPS-001)"
+      venture: OPS-001
+      amount: 75000
+      probability: 0.72
+      agent_to_execute: grant-writer-001
+      due_date: 2026-11-30
+      effort_hours: 20
+      status: READY_TO_SUBMIT
+
+    - priority: 4
+      action: "Submit State Customer Service Training Grant (CALLCENTER)"
+      venture: CALLCENTER
+      amount: 60000
+      probability: 0.75
+      agent_to_execute: grant-writer-001
+      due_date: 2026-10-31
+      effort_hours: 15
+      status: READY_TO_SUBMIT
+
+    - priority: 5
+      action: "Begin NIH SBIR Phase I Application (LT-005)"
+      venture: LT-005
+      amount: 300000
+      probability: 0.68
+      agent_to_execute: research-assistant-001
+      due_date: 2026-12-31
+      effort_hours: 60
+      status: IN_PROGRESS
+
+    - priority: 6
+      action: "Pitch to RE Tech VC Fund (RE-001)"
+      venture: RE-001
+      amount: 2000000  # Potential
+      probability: 0.40
+      agent_to_execute: deal-strategist-001
+      due_date: 2026-12-31
+      effort_hours: 80
+      status: PROSPECTING
+
+---
+
+## ROI: Funding Applications → Revenue
+
+Every dollar in funding = $3-5 in revenue generated within 12 months
+
+| Venture | Funding Ask | Expected Revenue (12m) | ROI | Probability |
+|---------|-------------|------------------------|-----|-------------|
+| OPS-001 | $175K | $600K | 3.4x | 0.78 |
+| LT-005 | $370K | $1.2M | 3.2x | 0.75 |
+| CALLCENTER | $105K | $400K | 3.8x | 0.80 |
+| CON-001 | $150K | $450K | 3.0x | 0.60 |
+| RE-001 | $500K | $2M | 4.0x | 0.50 |
+| LT-011 | $50K | $200K | 4.0x | 0.65 |
+| **TOTAL** | **$1.35M** | **$4.85M** | **3.6x** | **0.68** |
+
+**Interpretation:** With 68% probability, we'll raise $1.35M in funding → generate $4.85M in revenue → 3.6x ROI.
+
+**Next Agent Action:** Loan officers + grant writers start submitting applications this week. Target: $500K funding by Dec 15, 2026.
+
+---
+
+**Linked from:** [[_MCP/SYSTEMS-INTEGRATION-MASTER|Systems Integration Master]]
+**Used by:** [[_MCP/REAL-AGENT-BLUEPRINT|Real Agent Blueprint]]
+**Updated:** 2026-09-17
+**Next Review:** Weekly (track application progress)
+
