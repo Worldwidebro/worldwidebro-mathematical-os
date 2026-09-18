@@ -1,0 +1,47 @@
+version: '3.8'
+
+services:
+  openobserve:
+    image: openobserve/openobserve:latest
+    container_name: openobserve
+    restart: unless-stopped
+    ports:
+      - "5080:5080"    # Web UI
+      - "5081:5081"    # gRPC
+    environment:
+      - ZO_ROOT_USER_EMAIL=admin@company-brain.local
+      - ZO_ROOT_USER_PASSWORD=changeme123!
+      - ZO_DATA_DIR=/data
+      - ZO_DATA_DISK_CACHE_DISABLED=false
+      - ZO_QUERY_PARTITION_STRATEGY=time
+      - ZO_COMPACT_ENABLED=true
+      - OTEL_EXPORTER_OTLP_ENDPOINT=http://localhost:4317
+    volumes:
+      - openobserve_data:/data
+    networks:
+      - observability_network
+
+  otel-collector:
+    image: otel/opentelemetry-collector-contrib:latest
+    container_name: otel-collector
+    restart: unless-stopped
+    command: ["--config=/etc/otel-collector-config.yaml"]
+    ports:
+      - "4317:4317"    # OTLP gRPC
+      - "4318:4318"    # OTLP HTTP
+      - "9411:9411"    # Zipkin
+      - "14250:14250"  # Jaeger gRPC
+    volumes:
+      - ./otel-collector-config.yaml:/etc/otel-collector-config.yaml
+    depends_on:
+      - openobserve
+    networks:
+      - observability_network
+
+volumes:
+  openobserve_data:
+    driver: local
+
+networks:
+  observability_network:
+    driver: bridge

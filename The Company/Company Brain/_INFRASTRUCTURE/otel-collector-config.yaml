@@ -1,0 +1,71 @@
+receivers:
+  otlp:
+    protocols:
+      grpc:
+        endpoint: 0.0.0.0:4317
+      http:
+        endpoint: 0.0.0.0:4318
+
+  zipkin:
+    endpoint: 0.0.0.0:9411
+
+  jaeger:
+    protocols:
+      grpc:
+        endpoint: 0.0.0.0:14250
+
+processors:
+  batch:
+    send_batch_size: 100
+    timeout: 10s
+
+  attributes:
+    actions:
+      - key: service.name
+        value: company-brain
+        action: upsert
+      - key: environment
+        value: production
+        action: upsert
+      - key: company_brain.component
+        pattern: ^(.+?)\.(.+)$
+        action: extract
+
+  resource_detection:
+    detectors: [env, system]
+    timeout: 2s
+
+  memory_limiter:
+    check_interval: 1s
+    limit_mib: 512
+    spike_limit_mib: 128
+
+exporters:
+  otlp:
+    client:
+      endpoint: openobserve:5081
+      tls:
+        insecure: true
+
+  logging:
+    loglevel: debug
+
+  prometheus:
+    endpoint: "0.0.0.0:8888"
+
+service:
+  pipelines:
+    traces:
+      receivers: [otlp, zipkin, jaeger]
+      processors: [memory_limiter, batch, attributes, resource_detection]
+      exporters: [otlp, logging]
+
+    metrics:
+      receivers: [otlp]
+      processors: [memory_limiter, batch]
+      exporters: [prometheus, logging]
+
+    logs:
+      receivers: [otlp]
+      processors: [memory_limiter, batch]
+      exporters: [otlp, logging]
