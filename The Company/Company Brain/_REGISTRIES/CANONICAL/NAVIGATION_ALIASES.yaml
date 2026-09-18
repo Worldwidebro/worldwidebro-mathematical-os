@@ -148,6 +148,79 @@ Master reference for all wiki link alternatives in Company Brain.
 
 ---
 
+## FOUNDATION ARCHITECTURE DOCUMENTS
+
+### _REFERENCE/ARCHITECTURE/INDEX.md
+**Primary:** [[_REFERENCE/ARCHITECTURE/INDEX|ARCHITECTURE-INDEX]]
+**Aliases:**
+- [[Architecture-Index]]
+- [[Foundation-Architecture]]
+- [[Master-Orchestrator-Index]]
+
+**Usage:** Navigation hub for 5 foundation architecture documents. Start here for system architecture overview.
+
+---
+
+### _REFERENCE/ARCHITECTURE/01-COMPANY-BRAIN.md
+**Primary:** [[_REFERENCE/ARCHITECTURE/01-COMPANY-BRAIN|01-COMPANY-BRAIN]]
+**Aliases:**
+- [[COMPANY-BRAIN]]
+- [[Company-Brain-Architecture]]
+- [[Intelligence-Layer]]
+- [[Neo4j-Qdrant-Architecture]]
+
+**Usage:** Organizational intelligence layer (Neo4j, Qdrant, Registries, Memory). Answers "What does the organization know?"
+
+---
+
+### _REFERENCE/ARCHITECTURE/02-MASTER-ORCHESTRATOR.md
+**Primary:** [[_REFERENCE/ARCHITECTURE/02-MASTER-ORCHESTRATOR|02-MASTER-ORCHESTRATOR]]
+**Aliases:**
+- [[MASTER-ORCHESTRATOR]]
+- [[Orchestrator-Loop]]
+- [[Decision-Loop]]
+- [[13-Stage-Pipeline]]
+
+**Usage:** 13-stage continuous decision loop (Observe→Learn→UpdateBrain). Answers "How does the organization make decisions?"
+
+---
+
+### _REFERENCE/ARCHITECTURE/03-AGENT-SYSTEM.md
+**Primary:** [[_REFERENCE/ARCHITECTURE/03-AGENT-SYSTEM|03-AGENT-SYSTEM]]
+**Aliases:**
+- [[AGENT-SYSTEM]]
+- [[Agent-Architecture]]
+- [[Workers-Layer]]
+- [[Autonomy-Levels]]
+
+**Usage:** Agent anatomy (identity, capabilities, performance, autonomy, capacity). Answers "Who does the work?"
+
+---
+
+### _REFERENCE/ARCHITECTURE/04-CAPABILITY-SYSTEM.md
+**Primary:** [[_REFERENCE/ARCHITECTURE/04-CAPABILITY-SYSTEM|04-CAPABILITY-SYSTEM]]
+**Aliases:**
+- [[CAPABILITY-SYSTEM]]
+- [[Capability-Inventory]]
+- [[Gap-Analysis]]
+- [[Acquisition-Strategies]]
+
+**Usage:** Capability registry and gap analysis (inventory of what's possible). Answers "Can we do this?"
+
+---
+
+### _REFERENCE/ARCHITECTURE/05-EXECUTION-LOOP.md
+**Primary:** [[_REFERENCE/ARCHITECTURE/05-EXECUTION-LOOP|05-EXECUTION-LOOP]]
+**Aliases:**
+- [[EXECUTION-LOOP]]
+- [[Execution-Pipeline]]
+- [[14-Stage-Cycle]]
+- [[Work-Completion-Verification]]
+
+**Usage:** 14-stage cycle from objective to outcome with decision gates. Answers "How do we turn decisions into results?"
+
+---
+
 ## INFRASTRUCTURE FOLDERS
 
 ### 00_RESPECT/RESPECT.md

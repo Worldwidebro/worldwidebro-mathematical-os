@@ -66,6 +66,70 @@ Before writing code, declaring features, or making changes, read in exact sequen
 
 ---
 
+## 2.5. FOUNDATION ARCHITECTURE (THE MASTER ORCHESTRATOR SYSTEM)
+
+**Read these five documents to understand how the company operates as an intelligent system.**
+
+The Master Orchestrator is the organizational operating system that turns Company Brain (intelligence) into distributed work via Agents (workers), matching against Capabilities (inventory), and learning from Results (feedback).
+
+**Quick Navigation:** [[_REFERENCE/ARCHITECTURE/INDEX|Architecture Index]] — Navigation hub for all foundation documents.
+
+### The Five Foundation Documents
+
+1. **[[_REFERENCE/ARCHITECTURE/01-COMPANY-BRAIN|01 — The Company Brain]]** (11K)  
+   The organizational intelligence layer: Neo4j (relationships), Qdrant (semantics), Supabase (transactions), Registries (inventory), Evidence System (proof/confidence), and Memory System (learning).  
+   **Answers:** "What does the organization know?" | **Read if:** You're building agents, querying context, or understanding what information is available.
+
+2. **[[_REFERENCE/ARCHITECTURE/02-MASTER-ORCHESTRATOR|02 — The Master Orchestrator]]** (18K)  
+   The 13-stage continuous loop: Observe → Understand → Discover → Plan → Decompose → Match → Delegate → Execute → Monitor → Evaluate → Verify → Learn → UpdateBrain.  
+   **Answers:** "How does the organization make decisions and coordinate work?" | **Read if:** You're building orchestration logic, designing delegation flows, or managing task routing.
+
+3. **[[_REFERENCE/ARCHITECTURE/03-AGENT-SYSTEM|03 — The Agent System]]** (11K)  
+   Workers characterized by: identity, capabilities (skills/tools/repos), performance (stats/ROI), autonomy level (L1/L2/L3), and capacity (bandwidth).  
+   **Answers:** "Who does the work and how are they measured?" | **Read if:** You're designing agents, setting autonomy levels, or scoring agent fit for tasks.
+
+4. **[[_REFERENCE/ARCHITECTURE/04-CAPABILITY-SYSTEM|04 — The Capability System]]** (11K)  
+   Inventory of what's possible: Capability Registry, Agent Registry, Skill Registry, Tool Registry, Workflow Registry, Repository Registry, and Capability Matrix (coverage analysis).  
+   **Answers:** "Can we do this? Who has this capability? What will it cost?" | **Read if:** You're doing gap analysis, planning capability acquisition, or mapping available skills.
+
+5. **[[_REFERENCE/ARCHITECTURE/05-EXECUTION-LOOP|05 — The Execution Loop]]** (25K)  
+   Complete 14-stage cycle from objective to outcome with decision points at each stage, failure handling, and continuous monitoring.  
+   **Answers:** "How do we turn decisions into executed results?" | **Read if:** You're implementing execution pipelines, designing failure recovery, or verifying work completion.
+
+### How They Connect
+
+```
+Business Objective
+    ↓
+Company Brain (01) reads organizational state
+    ↓
+Master Orchestrator (02) makes decision & plans work
+    ↓
+Agent System (03) matches workers to tasks
+    ↓
+Capability System (04) ensures capability exists
+    ↓
+Execution Loop (05) drives work from start to finish
+    ↓
+Result reported back to Company Brain (feedback loop)
+```
+
+### Reading Paths by Role
+
+- **System Architects:** 01 → 02 → 05 (understand overall flow and loop closure)
+- **Agent Builders:** 03 → 04 → 05 (understand capability matching and execution)
+- **Operations:** 02 → 05 → 01 (understand decision flow and learning feedback)
+- **Strategy:** 04 → 02 → 01 (understand capability-driven planning)
+
+### Related Documents
+
+- **[[_REFERENCE/ORCHESTRATOR-MASTER-SPECIFICATION|Orchestrator Master Specification]]** — Implementation details (API specs, database schema, endpoints, revenue attribution)
+- **[[_REFERENCE/RUNBOOKS/README|Incident Runbooks]]** — Troubleshooting guides for common failure scenarios
+- **[[_REGISTRIES/CANONICAL/AGENT_REGISTRY|Agent Registry]]** — 318 agents with capabilities, performance, autonomy levels
+- **[[_REGISTRIES/CANONICAL/CAPABILITY_REGISTRY|Capability Registry]]** — 300+ capabilities mapped to agents and sectors
+
+---
+
 ## 3. CURRENT REALITY
 
 > [!IMPORTANT]
