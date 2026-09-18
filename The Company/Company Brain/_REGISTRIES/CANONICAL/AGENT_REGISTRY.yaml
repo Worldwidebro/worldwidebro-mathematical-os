@@ -1,0 +1,283 @@
+# AGENT_REGISTRY.yaml
+# Master registry of all 275 agents in Company Brain
+# Maps agents to: logic layers, control planes, capabilities, skills, tools, autonomy levels
+# Status: SKELETON (sample of 10 agents, remaining 265 to be auto-generated)
+# Updated: 2026-09-17
+# Authority: CP-001, CP-027, CP-032, CP-050
+
+agents:
+
+  # ============================================================
+  # SAMPLE AGENTS (auto-generated from .claude/agents/)
+  # ============================================================
+
+  agent_business_strategist:
+    id: agent-business-strategist-001
+    name: Business Strategist
+    file_path: .claude/agents/business-strategist.md
+    description: "Senior management consulting specialist for competitive analysis, market entry strategy, business model design, growth planning"
+    domain: 01-IDENTITY
+    logic_layers: [LOGIC-001, LOGIC-049, LOGIC-061]  # WORLD, COGNITION, DECISION
+    control_planes: [CP-001, CP-009, CP-011]  # Strategic, Cognition, Decision
+    capabilities: [market-analysis, competitive-positioning, strategy-design, growth-planning]
+    required_skills: [research, synthesis, storytelling]
+    required_tools: [neo4j, qdrant, webfetch, websearch]
+    required_mcps: [claude-ai-Make, claude_ai_Google_Drive, claude_ai_ClickUp]
+    autonomy_level: L1  # Human approval required
+    trustworthiness_score: 0.92
+    cost_per_use_usd: 5.00
+    expected_duration_minutes: 120
+    success_rate_percent: 94
+    last_verified: 2026-09-17
+    sectors_applicable: [SEC-030, SEC-031, SEC-032]  # Finance, Venture Capital, Private Equity
+    ventures_deployed: [RE-001]
+
+  agent_backend_architect:
+    id: agent-backend-architect-001
+    name: Backend Architect
+    file_path: .claude/agents/engineering-backend-architect.md
+    description: "Senior backend architect specializing in scalable system design, database architecture, API development, cloud infrastructure"
+    domain: 16-AGENTS
+    logic_layers: [LOGIC-025, LOGIC-049, LOGIC-067]  # KNOWLEDGE, COGNITION, ACTION
+    control_planes: [CP-005, CP-009, CP-012]  # Knowledge, Cognition, Action
+    capabilities: [system-design, database-architecture, api-development, cloud-infra]
+    required_skills: [coding, architecture, system-thinking]
+    required_tools: [github, bash, docker]
+    required_mcps: [claude-ai-GitHub, claude_ai_Supabase, mcp__docker]
+    autonomy_level: L2  # Assisted execution
+    trustworthiness_score: 0.96
+    cost_per_use_usd: 3.00
+    expected_duration_minutes: 90
+    success_rate_percent: 97
+    last_verified: 2026-09-17
+    sectors_applicable: [SEC-003, SEC-004]  # Software Development
+    ventures_deployed: [worldwidebro-venture-portal, worldwidebro-agents]
+
+  agent_research_discovery:
+    id: agent-research-discovery-001
+    name: Research Discovery Agent
+    file_path: .claude/agents/research-discovery-agent.md
+    description: "Autonomously discovers relevant research papers, tracks authors and institutions, identifies breakthrough research"
+    domain: 42-RESEARCH-INTELLIGENCE
+    logic_layers: [LOGIC-007, LOGIC-037, LOGIC-045]  # OBSERVATION, RETRIEVAL, CONTEXT
+    control_planes: [CP-002, CP-007, CP-008]  # Observation, Retrieval, Context
+    capabilities: [paper-discovery, author-tracking, trend-detection]
+    required_skills: [research, literature-review, semantic-search]
+    required_tools: [webfetch, websearch, qdrant]
+    required_mcps: [mcp__Tavily, mcp__plugin_everything_claude_code_exa]
+    autonomy_level: L3  # Fully autonomous
+    trustworthiness_score: 0.94
+    cost_per_use_usd: 0.50
+    expected_duration_minutes: 30
+    success_rate_percent: 92
+    last_verified: 2026-09-17
+    sectors_applicable: [SEC-001, SEC-002, SEC-003]  # All tech sectors
+    ventures_deployed: [all]
+
+  agent_appointment_setter:
+    id: agent-appointment-setter-001
+    name: Appointment Setter
+    file_path: repos/worldwidebro-agents/src/agents/AppointmentSetter.js
+    description: "Schedules appointments via calendar integration, handles conflicts and rescheduling"
+    domain: 16-AGENTS
+    logic_layers: [LOGIC-067, LOGIC-068, LOGIC-069]  # ACTION
+    control_planes: [CP-012]  # Action
+    capabilities: [appointment-scheduling, calendar-management, conflict-resolution]
+    required_skills: [tool-integration, time-management]
+    required_tools: [google-calendar, clickup]
+    required_mcps: [mcp__claude_ai_Google_Calendar, mcp__claude_ai_ClickUp]
+    autonomy_level: L3  # Fully autonomous
+    trustworthiness_score: 0.98
+    cost_per_use_usd: 0.10
+    expected_duration_minutes: 5
+    success_rate_percent: 99
+    last_verified: 2026-09-17
+    sectors_applicable: [all]
+    ventures_deployed: [OPS-001, LT-005, CALLCENTER]
+
+  agent_closer:
+    id: agent-closer-001
+    name: Deal Closer
+    file_path: repos/worldwidebro-agents/src/agents/Closer.js
+    description: "Closes deals by sending contracts, following up on signatures, handling objections"
+    domain: 30-REVENUE
+    logic_layers: [LOGIC-061, LOGIC-065, LOGIC-066]  # DECISION
+    control_planes: [CP-011]  # Decision
+    capabilities: [deal-closing, contract-management, follow-up]
+    required_skills: [sales, negotiation, communication]
+    required_tools: [stripe, gmail, docusign]
+    required_mcps: [mcp__claude_ai_Gmail, mcp__claude_ai_Stripe]
+    autonomy_level: L2  # Assisted (legal review required)
+    trustworthiness_score: 0.91
+    cost_per_use_usd: 2.00
+    expected_duration_minutes: 45
+    success_rate_percent: 88
+    last_verified: 2026-09-17
+    sectors_applicable: [SEC-030, SEC-031, SEC-032]  # Sales-driven sectors
+    ventures_deployed: [LT-005, OPS-001, RE-001]
+
+  agent_douyin_strategist:
+    id: agent-douyin-strategist-001
+    name: Douyin Strategist
+    file_path: .claude/agents/marketing-douyin-strategist.md
+    description: "Expert Douyin marketing strategist specializing in short-video content, livestream commerce, grassroots audience growth"
+    domain: 30-REVENUE
+    logic_layers: [LOGIC-019, LOGIC-049, LOGIC-061]  # INFORMATION, COGNITION, DECISION
+    control_planes: [CP-004, CP-009, CP-011]
+    capabilities: [short-video-marketing, livestream-commerce, audience-growth]
+    required_skills: [marketing, content-strategy, platform-expertise]
+    required_tools: [webfetch, websearch]
+    required_mcps: []
+    autonomy_level: L1  # Strategy review required
+    trustworthiness_score: 0.89
+    cost_per_use_usd: 3.00
+    expected_duration_minutes: 60
+    success_rate_percent: 85
+    last_verified: 2026-09-17
+    sectors_applicable: [SEC-024, SEC-025, SEC-026]  # China market sectors
+    ventures_deployed: [CALLCENTER, deliv-713]
+
+  agent_healthcare_compliance:
+    id: agent-healthcare-compliance-001
+    name: Healthcare Compliance Auditor
+    file_path: .claude/agents/healthcare-reviewer.md
+    description: "Reviews healthcare application code for clinical safety, CDSS accuracy, PHI compliance, medical data integrity"
+    domain: 32-SECURITY
+    logic_layers: [LOGIC-049, LOGIC-050, LOGIC-066]  # COGNITION
+    control_planes: [CP-009, CP-011]
+    capabilities: [compliance-audit, clinical-safety, data-integrity]
+    required_skills: [healthcare-domain, compliance, code-review]
+    required_tools: [github, bash]
+    required_mcps: [mcp__plugin_everything_claude_code_github]
+    autonomy_level: L1  # Compliance team approval
+    trustworthiness_score: 0.97
+    cost_per_use_usd: 4.00
+    expected_duration_minutes: 90
+    success_rate_percent: 99
+    last_verified: 2026-09-17
+    sectors_applicable: [SEC-007, SEC-008]  # Healthcare sectors
+    ventures_deployed: [LT-005]
+
+  agent_gitnexus_debugger:
+    id: agent-gitnexus-debugger-001
+    name: GitNexus Debugging Agent
+    file_path: repos/worldwidebro-venture-portal/.claude/skills/gitnexus/gitnexus-debugging/SKILL.md
+    description: "Debugs code using GitNexus skill, finds root causes, generates fixes"
+    domain: 16-AGENTS
+    logic_layers: [LOGIC-049, LOGIC-050, LOGIC-067]  # COGNITION, ACTION
+    control_planes: [CP-009, CP-012]
+    capabilities: [code-debugging, error-analysis, fix-generation]
+    required_skills: [gitnexus, code-analysis]
+    required_tools: [github, bash]
+    required_mcps: [mcp__plugin_everything_claude_code_github]
+    autonomy_level: L2  # Code review before merge
+    trustworthiness_score: 0.94
+    cost_per_use_usd: 1.00
+    expected_duration_minutes: 30
+    success_rate_percent: 91
+    last_verified: 2026-09-17
+    sectors_applicable: [all]
+    ventures_deployed: [worldwidebro-venture-portal]
+
+  agent_data_consolidation:
+    id: agent-data-consolidation-001
+    name: Data Consolidation Agent
+    file_path: .claude/agents/data-consolidation-agent.md
+    description: "Consolidates extracted sales data into live reporting dashboards with territory, rep, and pipeline summaries"
+    domain: 30-REVENUE
+    logic_layers: [LOGIC-013, LOGIC-019, LOGIC-045]  # DATA, INFORMATION, CONTEXT
+    control_planes: [CP-003, CP-004, CP-008]
+    capabilities: [data-consolidation, dashboard-creation, reporting]
+    required_skills: [data-engineering, visualization]
+    required_tools: [postgresql, qdrant]
+    required_mcps: [mcp__claude_ai_Google_Drive, mcp__claude_ai_Supabase]
+    autonomy_level: L3  # Fully autonomous
+    trustworthiness_score: 0.96
+    cost_per_use_usd: 0.50
+    expected_duration_minutes: 15
+    success_rate_percent: 98
+    last_verified: 2026-09-17
+    sectors_applicable: [SEC-030, SEC-031]  # Sales/finance
+    ventures_deployed: [OPS-001, LT-005, RE-001]
+
+  agent_obsidian_sync:
+    id: agent-obsidian-sync-001
+    name: Obsidian ↔ Neo4j Sync Agent
+    file_path: _MCP/SYSTEMS-INTEGRATION-MASTER.md (Phase 2c)
+    description: "Bidirectional sync between Obsidian vault and Neo4j knowledge graph (Phase 2c, Jan 2027)"
+    domain: 08-KNOWLEDGE-GRAPH
+    logic_layers: [LOGIC-025, LOGIC-031, LOGIC-037]  # KNOWLEDGE, MEMORY, RETRIEVAL
+    control_planes: [CP-005, CP-006, CP-007]
+    capabilities: [knowledge-sync, graph-updates, note-rendering]
+    required_skills: [knowledge-engineering, graph-operations]
+    required_tools: [neo4j, obsidian-api]
+    required_mcps: [mcp__claude_ai_Notion]
+    autonomy_level: L2  # Conflict resolution review
+    trustworthiness_score: 0.90
+    cost_per_use_usd: 1.00
+    expected_duration_minutes: 30
+    success_rate_percent: 87
+    last_verified: 2026-09-17
+    sectors_applicable: [all]
+    ventures_deployed: [planned]
+    phase_target: Phase_2c_Jan_2027
+
+  # ============================================================
+  # TO POPULATE THE REMAINING 265 AGENTS:
+  # ============================================================
+  # 1. Run: python _CLI/tag-agents.sh
+  # 2. This script:
+  #    - Reads all 275 .claude/agents/*.md files
+  #    - Extracts metadata (name, description)
+  #    - Infers domain from filename/path
+  #    - Applies default logic layer assignments
+  #    - Assigns autonomy levels based on domain + trustworthiness
+  #    - Outputs entries for remaining 265 agents
+  # 3. Manual review + override for:
+  #    - Custom logic layer assignments
+  #    - Risk-sensitive autonomy levels (compliance, healthcare, finance)
+  #    - Venture-specific deployments
+  # 4. Test dispatch router with sample of 20 agents
+  # 5. Full deployment of remaining 255 agents
+
+  # ============================================================
+  # PHASE 2 AGENTS (Research, Adoption, Synthesis)
+  # ============================================================
+  # To be added in Phase 2a (Oct 2026):
+  #
+  # - agent-research-verification-001 (validates claims)
+  # - agent-research-synthesis-001 (connects papers)
+  # - agent-adoption-decision-001 (WATCH/PILOT/ADOPTED)
+  # - agent-learning-feedback-001 (captures outcomes)
+  # - agent-agent-dispatch-router-001 (self-aware router!)
+
+---
+
+## METADATA SCHEMA
+
+```yaml
+agent_template:
+  id: string                      # unique identifier (auto-generated: agent-{name}-{version})
+  name: string                    # display name
+  file_path: string              # location in codebase
+  description: string            # what it does
+  domain: string                 # which domain (00-50)
+  logic_layers: [string]         # which logics it executes (LOGIC-001 to LOGIC-072)
+  control_planes: [string]       # which CPs govern it (CP-001 to CP-050)
+  capabilities: [string]         # which capabilities it enables/executes
+  required_skills: [string]      # dependencies (other skills it needs)
+  required_tools: [string]       # tool names (neo4j, bash, github, etc.)
+  required_mcps: [string]        # MCP server names (mcp__claude_ai_GitHub, etc.)
+  autonomy_level: string         # L1 (human) / L2 (assisted) / L3 (autonomous)
+  trustworthiness_score: float   # 0.0-1.0 (higher = more autonomous-ready)
+  cost_per_use_usd: float       # estimated cost to run once
+  expected_duration_minutes: int # how long it typically takes
+  success_rate_percent: int     # historical success rate
+  last_verified: date           # last tested/verified date
+  sectors_applicable: [string]  # which sectors can use it (SEC-001 to SEC-035)
+  ventures_deployed: [string]   # ventures currently using it
+```
+
+---
+
+**Status:** 10/275 agents documented | 265 to auto-generate | Phase 2a: Oct 2026

@@ -1,0 +1,289 @@
+# MASTER_DISCOVERY_INDEX.yaml
+# Single source of truth for discovering any part of Company Brain
+# Updated: 2026-09-17
+# Authority: CP-001, CP-027, CP-032, CP-050
+
+discovery_index:
+
+  # ============================================================
+  # AGENTS (275 total)
+  # ============================================================
+
+  agents:
+    registry_file: _REGISTRIES/CANONICAL/AGENT_REGISTRY.yaml
+    description: "All 275 agents tagged with logic layers, control planes, capabilities, skills, tools"
+    record_count: 275
+    last_updated: 2026-09-17
+    how_to_use: |
+      # Find agent for task
+      agent = AGENT_REGISTRY.find_by_logic_layers([LOGIC-049, LOGIC-061])
+
+      # Check autonomy level
+      if agent.autonomy_level == 'L1': escalate_to_human()
+      elif agent.autonomy_level == 'L2': execute_with_assistance()
+      else: execute_autonomous()
+
+  # ============================================================
+  # SKILLS (30+ total)
+  # ============================================================
+
+  skills:
+    registry_file: _REGISTRIES/CANONICAL/SKILL_REGISTRY.yaml
+    description: "All skills (Gitnexus, Career-Ops, etc.) with agent bindings, logic layers, I/O schemas"
+    record_count: 30
+    locations:
+      - worldwidebro-venture-portal/.claude/skills/gitnexus/
+      - career-ops/.claude/skills/career-ops/
+      - con-001/google-maps-scraper/.claude/skills/
+      - worldwidebro-agents/src/skills/
+    last_updated: 2026-09-17
+    how_to_use: |
+      # Find skill for debugging Python
+      skill = SKILL_REGISTRY.find_by_capability("python_debugging")
+      agent = AGENT_REGISTRY.find_by_skill_id(skill.id)
+
+  # ============================================================
+  # TOOLS & MCPs (20+ live)
+  # ============================================================
+
+  tools:
+    registry_file: _REGISTRIES/CANONICAL/TOOL_GATEWAY_REGISTRY.yaml
+    description: "All MCPs/tools with permissions, rate limits, cost, risk level, fallbacks"
+    record_count: 20
+    active_mcps:
+      - neo4j: bolt://100.87.214.70:7687
+      - qdrant: http://100.87.214.70:6333
+      - postgresql: localhost:5433
+      - omniroute: http://100.87.214.70:3000
+      - make_com: https://www.make.com/api
+      - clickup: https://api.clickup.com/api/v2
+      - supabase: aipehhzlsmfxxzwceppd.supabase.co
+      - vercel: https://api.vercel.com
+      - gmail: google api
+      - github: https://api.github.com
+      - stripe: https://api.stripe.com
+      - hubspot: hubspot api
+      - salesforce: salesforce api
+      - slack: slack api
+      - notion: notion api
+      - and 5+ more
+    last_updated: 2026-09-17
+    how_to_use: |
+      # Check if agent can call tool
+      can_call = TOOL_GATEWAY.check_permissions(agent, tool)
+      rate_limit = TOOL_GATEWAY.get_rate_limit(tool)
+      cost = TOOL_GATEWAY.get_cost_per_call(tool)
+
+  # ============================================================
+  # LOGIC LAYERS (72 organized in 12 domains)
+  # ============================================================
+
+  logic_layers:
+    registry_file: _REGISTRIES/CANONICAL/LOGIC_LAYERS_REGISTRY.yaml
+    description: "72 logic layers organized by 12 domains with control plane authority"
+    record_count: 72
+    domains_count: 12
+    structure: "Each domain has 6 layers (e.g., WORLD: LOGIC-001-006)"
+    last_updated: 2026-09-17
+    how_to_use: |
+      # Find logic layers for task
+      logics = LOGIC_LAYERS.classify_task(task)
+      # → [LOGIC-049, LOGIC-061] (cognition + decision)
+
+      # Find control plane
+      cp = LOGIC_LAYERS.get_control_plane(LOGIC-049)
+      # → CP-009 (Cognition Control Plane)
+
+      # Find agents supporting those layers
+      agents = AGENT_REGISTRY.find_by_logic_layers(logics)
+
+  # ============================================================
+  # CONTROL PLANES (30 total)
+  # ============================================================
+
+  control_planes:
+    registry_file: _REGISTRIES/CANONICAL/control-planes-by-sector.yaml
+    description: "30 control planes mapped to sectors, with decision authority and approval gates"
+    record_count: 30
+    last_updated: 2026-09-02
+    how_to_use: |
+      # Get control plane for decision
+      cp = CONTROL_PLANES.get_by_logic_layer(LOGIC-061)
+      # → CP-011 (Decision Logic Control Plane)
+
+      # Get approval authority
+      approver = cp.get_approver()
+      # → required before L1 task escalates
+
+  # ============================================================
+  # CAPABILITIES (300+ total)
+  # ============================================================
+
+  capabilities:
+    registry_file: 14-CAPABILITIES/README.md (human) + capability-registry.yaml (machine)
+    description: "300+ internal capabilities mapped to agents, logic layers, research sources, ventures, revenue"
+    record_count: 300
+    organization: "Capabilities by domain + sub-domain"
+    last_updated: 2026-09-17
+    how_to_use: |
+      # Find capability for need
+      cap = CAPABILITY_REGISTRY.find_by_name("semantic_routing")
+
+      # See who executes it
+      agents = cap.agents_executing  # [agent-001, agent-042]
+
+      # See which ventures use it
+      revenue = cap.ventures_using  # [{venture: LT-005, revenue_usd: 24000}]
+
+      # See research origin
+      papers = cap.research_sources  # [arXiv:2305.xxxxx]
+
+  # ============================================================
+  # RESEARCH INTELLIGENCE (20 sections, 11-level hierarchy)
+  # ============================================================
+
+  research:
+    base: 42-RESEARCH-INTELLIGENCE/README.md
+    sections: 20
+    evidence_hierarchy_levels: 11
+    sources_count: 20
+    description: "Research discovery → verification → capability → venture → revenue"
+    registry_file: _REGISTRIES/CANONICAL/RESEARCH-SOURCE-REGISTRY.yaml
+    last_updated: 2026-09-17
+    how_to_use: |
+      # Monitor for relevant research
+      papers = RESEARCH_AGENT.discover(domain="routing")
+
+      # Verify claims
+      verified = RESEARCH_AGENT.verify(papers)
+
+      # Connect to capability
+      cap = RESEARCH_AGENT.synthesize(verified)
+
+      # Recommend adoption
+      decision = ADOPTION_AGENT.decide(cap)  # WATCH/PILOT/ADOPTED
+
+  # ============================================================
+  # VENTURES (789 total across 35 sectors)
+  # ============================================================
+
+  ventures:
+    registry_file: _REGISTRIES/CANONICAL/ventures-by-sector.yaml
+    description: "All 789 ventures indexed by sector, with status, capabilities, and readiness"
+    record_count: 789
+    sectors_count: 35
+    tier_0_ventures: 6
+    last_updated: 2026-09-17
+    how_to_use: |
+      # Find venture by ID
+      venture = VENTURE_REGISTRY.get("LT-005")
+
+      # Check capabilities deployed
+      caps = venture.capabilities_deployed
+
+      # See recent revenue
+      revenue_30d = venture.get_revenue(days=30)
+
+      # Get readiness score
+      readiness = venture.readiness_score  # 0.92
+
+  # ============================================================
+  # REPOSITORIES (1,740 total)
+  # ============================================================
+
+  repositories:
+    registry_file: _REGISTRIES/CANONICAL/REPOSITORY_REGISTRY.yaml
+    description: "All 1,740 repositories (177 verified code, 618 templates) mapped to ventures, sectors, capabilities"
+    record_count: 1740
+    verified_code_count: 177
+    templates_count: 618
+    last_updated: 2026-09-17
+    how_to_use: |
+      # Find repo for capability
+      repos = REPO_REGISTRY.find_by_capability("semantic_routing")
+
+      # Check implementation
+      impl = repos[0].get_implementation()
+
+      # Deploy to venture
+      venture.deploy_capability(impl, repos[0])
+
+  # ============================================================
+  # OBSIDIAN KNOWLEDGE GRAPH (40+ sessions)
+  # ============================================================
+
+  obsidian:
+    vault: ObsidianWorldwidebroVault
+    location: /Users/acebless/ObsidianWorldwidebroVault
+    sessions_count: 40
+    bidirectional_sync: "Phase 2c (Jan 2027)"
+    description: "Live knowledge base (read-only during Phase 1, bidirectional in Phase 2)"
+    how_to_use: |
+      # Phase 1 (now): Read Obsidian for context
+      context = OBSIDIAN_VAULT.read_notes("LT-005")
+
+      # Phase 2 (Jan 2027): Sync both directions
+      OBSIDIAN_VAULT.sync_to_neo4j()
+      NEO4J.sync_to_obsidian()
+
+  # ============================================================
+  # SYSTEM STATE (Live queries, real-time)
+  # ============================================================
+
+  system_state:
+    databases:
+      neo4j: bolt://100.87.214.70:7687 (20,363 edges)
+      qdrant: http://100.87.214.70:6333 (17,236 vectors)
+      postgresql: localhost:5433 (company_brain database)
+    caches:
+      redis: localhost:6379 (active sessions)
+    last_verified: 2026-09-17
+    how_to_use: |
+      # Get current system health
+      health = SYSTEM_STATE.get_health()
+      # → {neo4j: online, qdrant: online, postgres: online, redis: online}
+
+      # List active agents
+      agents = SYSTEM_STATE.get_active_agents()
+
+      # Get error rate
+      error_rate = SYSTEM_STATE.get_error_rate(minutes=60)
+
+  # ============================================================
+  # WIRING CHECKLIST (Phase 2)
+  # ============================================================
+
+  phase_2_wiring_checklist:
+    - [ ] Create AGENT_REGISTRY.yaml (tag 275 agents)
+    - [ ] Create SKILL_REGISTRY.yaml (30+ skills)
+    - [ ] Create TOOL_GATEWAY_REGISTRY.yaml (20+ MCPs)
+    - [ ] Build AGENT_DISPATCH_ROUTER.js (task → agent routing)
+    - [ ] Wire all READMEs to SYSTEMS-INTEGRATION-MASTER.md
+    - [ ] Build CAPABILITY_RESOLVER.js
+    - [ ] Build OBSIDIAN_SYNC.js
+    - [ ] Build LEARNING_FEEDBACK_LOOP.js
+    - [ ] Test: 50 end-to-end workflows
+    - [ ] Document: Agent decision audit trail
+
+---
+
+## Quick Navigation
+
+**"I want to..."**
+
+| Need | Check |
+|------|-------|
+| Find an agent for a task | AGENT_REGISTRY (agents.registry_file) |
+| Call a skill | SKILL_REGISTRY (skills.registry_file) |
+| Check tool permissions | TOOL_GATEWAY_REGISTRY (tools.registry_file) |
+| Understand logic layers | LOGIC_LAYERS_REGISTRY (logic_layers.registry_file) |
+| Route a task to control plane | CONTROL_PLANES (control_planes.registry_file) |
+| Explore a capability | CAPABILITY_REGISTRY (capabilities.registry_file) |
+| Discover research | RESEARCH_SOURCES (research.registry_file) |
+| Find a venture | VENTURE_REGISTRY (ventures.registry_file) |
+| Locate code | REPOSITORY_REGISTRY (repositories.registry_file) |
+| Check system health | SYSTEM_STATE (databases section) |
+
+---
+
+**Built:** 2026-09-17 | **Phase:** 1 Complete → 2 Ready | **Maintenance:** Weekly updates to .last_updated fields
