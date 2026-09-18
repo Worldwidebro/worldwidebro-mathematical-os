@@ -1,0 +1,149 @@
+version: 2.0
+metadata:
+  created: 2026-09-18T12:45:00Z
+  organization: Company Brain
+  total_agents: 50
+  agent_types: 7
+  orchestration_mode: hierarchical
+
+agent_groups:
+  # Group 1: Venture Operations (Dispatch)
+  group_venture_operations:
+    name: "Venture Operations Dispatch"
+    agents:
+      - id: "agent-lt-005-dispatcher"
+        name: "LT-005 Medical Courier Dispatcher"
+        role: "workflow_coordinator"
+        capabilities:
+          - "scheduling"
+          - "routing"
+          - "customer_communication"
+          - "delivery_tracking"
+        permissions:
+          - "read:supabase.deliveries"
+          - "write:supabase.deliveries"
+          - "call:make.com.scenarios"
+        max_parallel_tasks: 5
+        supervision_level: "L2" # Assisted autonomy
+        human_approval_threshold: 500 # $ amount
+        status: "active"
+        last_deployed: "2026-09-15T08:30:00Z"
+
+      - id: "agent-ops-001-staffing"
+        name: "OPS-001 Staffing Placement"
+        role: "business_development"
+        capabilities:
+          - "cold_calling"
+          - "lead_qualification"
+          - "outreach_sequencing"
+          - "crm_management"
+        permissions:
+          - "call:twilio"
+          - "write:supabase.crm"
+          - "send:email"
+        max_parallel_tasks: 3
+        supervision_level: "L1" # Report-only, human confirms calls
+        human_approval_threshold: 100 # touches revenue
+        status: "active"
+        last_deployed: "2026-09-10T14:20:00Z"
+
+  # Group 2: Portfolio Intelligence
+  group_portfolio_intelligence:
+    name: "Portfolio Intelligence & Analytics"
+    agents:
+      - id: "agent-portfolio-analyzer"
+        name: "Portfolio Readiness Analyzer"
+        role: "analyst"
+        capabilities:
+          - "data_analysis"
+          - "financial_modeling"
+          - "risk_assessment"
+          - "opportunity_scoring"
+        permissions:
+          - "read:supabase.ventures"
+          - "read:neo4j.graph"
+          - "read:openobserve.metrics"
+        max_parallel_tasks: 10
+        supervision_level: "L3" # Fully autonomous
+        human_approval_threshold: 0 # No approvals needed
+        status: "active"
+        last_deployed: "2026-09-12T10:00:00Z"
+
+  # Group 3: Knowledge & Research
+  group_knowledge_research:
+    name: "Knowledge Research & Synthesis"
+    agents:
+      - id: "agent-harness-researcher"
+        name: "Harness Engineering Researcher"
+        role: "researcher"
+        capabilities:
+          - "github_search"
+          - "paper_analysis"
+          - "pattern_extraction"
+          - "knowledge_synthesis"
+        permissions:
+          - "read:github.awesome_repos"
+          - "write:neo4j.patterns"
+          - "call:openai.gpt4" # for analysis
+        max_parallel_tasks: 8
+        supervision_level: "L2"
+        human_approval_threshold: 0
+        status: "active"
+        last_deployed: "2026-09-18T12:00:00Z"
+
+# Orchestration Rules
+orchestration_rules:
+  - rule_id: "rule_venture_revenue_priority"
+    name: "Venture Revenue Tasks Get Priority"
+    condition: "task.type == 'revenue_generation'"
+    action: "assign_to_best_fit_agent"
+    priority: "critical"
+
+  - rule_id: "rule_parallel_independent_tasks"
+    name: "Run Independent Tasks in Parallel"
+    condition: "task.dependencies.length == 0"
+    action: "execute_parallel"
+    priority: "high"
+
+  - rule_id: "rule_human_approval_high_value"
+    name: "Escalate High-Value Decisions to Human"
+    condition: "task.estimated_impact_usd > agent.human_approval_threshold"
+    action: "escalate_to_human"
+    priority: "critical"
+
+  - rule_id: "rule_verify_completion"
+    name: "Verify Task Completion Before Marking Done"
+    condition: "agent.supervision_level >= 'L1'"
+    action: "run_verification_eval"
+    priority: "high"
+
+# Observability / Attribution Chain
+attribution_chain:
+  - "agent_id"
+  - "task_id"
+  - "workflow_id"
+  - "venture_id"
+  - "decision_id (Neo4j)"
+  - "revenue_impact_usd"
+  - "timestamp"
+
+# Success Criteria (measured via OpenObserve)
+success_metrics:
+  - metric: "task_completion_rate"
+    target: "> 95%"
+    window: "daily"
+
+  - metric: "human_escalation_rate"
+    target: "< 5%"
+    window: "daily"
+
+  - metric: "average_task_latency"
+    target: "< 30 seconds"
+    window: "hourly"
+
+  - metric: "revenue_per_task"
+    target: "> $50"
+    window: "daily"
+
+# Phase 2 Ready (Sep 18)
+# Phase 3 (Oct 2026): Deploy 20+ additional agents, expand to 789 ventures
