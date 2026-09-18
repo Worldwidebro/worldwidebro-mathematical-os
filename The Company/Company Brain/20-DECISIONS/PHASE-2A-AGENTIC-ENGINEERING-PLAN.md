@@ -250,6 +250,52 @@ phase: Phase 2a (Oct 2026)
 
 ---
 
+#### Task 1.5: Pattern Integration — awesome-agentic-patterns (2 hours)
+
+**1.5a: Clone & catalog (30 min)**
+- [ ] Clone https://github.com/evals-ai/awesome-agentic-patterns (68K stars)
+- [ ] Catalog all pattern files (tool-use, reflection, multi-step, error-recovery, graceful-degradation, etc.)
+- [ ] Done: Repository analyzed, 5+ core patterns identified
+- **Model:** Haiku (data collection)
+- **Risk:** Repository structure unclear, patterns not well-organized
+- **Verify:** List all patterns found in README + /patterns/ directory
+
+**1.5b: Extract core patterns (45 min)**
+- [ ] Extract 5 most applicable patterns for agent dispatch + implementation:
+  1. **Tool-use pattern** — how agents query registries + call tools safely
+  2. **Reflection pattern** — how agents verify their own outputs (confidence scoring)
+  3. **Multi-step pattern** — how to chain agent calls (workflow DAG)
+  4. **Error-recovery pattern** — how agents handle failures gracefully (fallback logic)
+  5. **Graceful-degradation pattern** — how agents degrade when capabilities unavailable
+- [ ] For each: document pattern name + description + code example from awesome-agentic-patterns
+- [ ] Done: 5 patterns extracted with working code examples
+- **Model:** Sonnet (pattern analysis)
+- **Risk:** Patterns don't apply to our agent architecture, requires translation
+- **Verify:** Each pattern has a concrete agent use-case (e.g., Tool-use for Dispatch Router)
+
+**1.5c: Create Agent Implementation Template (30 min)**
+- [ ] Document "AGENT_IMPLEMENTATION_PATTERNS.md" showing:
+  - Pattern 1 (Tool-use) → Used in AGENT_DISPATCH_ROUTER.js (Week 2, Task 2.1a)
+  - Pattern 2 (Reflection) → Used in agent confidence scoring (Task 1.2c)
+  - Pattern 3 (Multi-step) → Used in workflow DAG (Task 3.2b)
+  - Pattern 4 (Error-recovery) → Used in failure handling (Week 4, Task 4.1b)
+  - Pattern 5 (Graceful-degradation) → Used in fallback logic (Task 3.2c)
+- [ ] Done: Template document with patterns + agent examples
+- **Model:** Haiku (documentation)
+- **Risk:** Patterns unclear, template doesn't match downstream usage
+- **Verify:** Each pattern referenced in Week 2-4 tasks where it's applied
+
+**1.5d: Reference in discovery guide (15 min)**
+- [ ] Update [[AGENTS_DISCOVERY_INVOCATION_GUIDE]] with "Pattern Reference" section
+- [ ] Link: [[awesome-agentic-patterns|https://github.com/evals-ai/awesome-agentic-patterns]]
+- [ ] Show: "Agents are built using 5 core patterns from awesome-agentic-patterns. See AGENT_IMPLEMENTATION_PATTERNS.md"
+- [ ] Done: Wiki link + reference integrated
+- **Model:** Haiku (wiki linking)
+- **Risk:** Link broken, reference unclear
+- **Verify:** Wiki link resolves, AGENT_IMPLEMENTATION_PATTERNS.md exists
+
+---
+
 ### WEEK 2: DISPATCH ROUTER BUILD (20 hours)
 
 #### Task 2.1: Design Dispatch Router Class (4 hours)
@@ -655,8 +701,8 @@ phase: Phase 2a (Oct 2026)
 
 | Week | Haiku | Sonnet | Opus | Reasoning |
 |------|-------|--------|------|-----------|
-| 1 (Registries) | 70% | 25% | 5% | Mostly data collection, some metadata extraction |
-| 2 (Router) | 30% | 60% | 10% | Implementation-heavy, architecture decisions |
+| 1 (Registries + Patterns) | 68% | 27% | 5% | Data collection + pattern extraction (more Sonnet for pattern analysis) |
+| 2 (Router) | 30% | 60% | 10% | Implementation-heavy, uses awesome-agentic-patterns, architecture decisions |
 | 3 (Capability) | 40% | 50% | 10% | Complex routing logic, but mostly engineering |
 | 4 (Testing) | 50% | 50% | 0% | Testing + docs, no new architecture |
 
@@ -664,15 +710,16 @@ phase: Phase 2a (Oct 2026)
 
 ## COST TRACKING
 
-### Budget Allocation (100 hours, $7,700)
+### Budget Allocation (102 hours, $7,800)
 
 | Week | Hours | Model Split | Est. Cost | Notes |
 |------|-------|-------------|-----------|-------|
-| 1 | 17 | H:70% S:25% O:5% | $1,400 | Registries (routine work) |
-| 2 | 20 | H:30% S:60% O:10% | $2,100 | Router implementation (new code) |
+| 1 | 19 | H:70% S:25% O:5% | $1,500 | Registries + awesome-agentic-patterns (routine work) |
+| 2 | 20 | H:30% S:60% O:10% | $2,100 | Router implementation (new code, uses patterns) |
 | 3 | 18 | H:40% S:50% O:10% | $1,850 | Capability routing (complex) |
 | 4 | 12 | H:50% S:50% O:0% | $1,050 | Testing + docs (high volume, low complexity) |
-| **Total** | **100** | **H:47% S:46% O:7%** | **$7,700** | **On budget** |
+| 5 (Reserve) | 33 | - | $1,300 | Contingency (31% buffer for overruns) |
+| **Total** | **102** | **H:47% S:47% O:7%** | **$7,800** | **$100 over, within tolerance** |
 
 ### Token Budget (Estimate)
 
