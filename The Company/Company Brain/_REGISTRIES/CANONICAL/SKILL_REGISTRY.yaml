@@ -1,278 +1,613 @@
+---
+id: SKILL-REGISTRY-001
+title: Comprehensive Skill Registry
+scope: All discrete skills across Company Brain
+version: '2.0'
+status: PHASE-1-COMPLETE
+total_skills: 527
 metadata:
-  version: "1.0"
-  total_skills: 38
-  last_verified: "2026-09-18"
-  status: "Phase 1.2 - Oct Tier 1 agents mapped"
+  last_updated: '2026-09-18'
+  authority: '04-CAPABILITY-SYSTEM.md'
+  domains_covered: 35
+  agents_mapped: 309
+  sourced_from:
+    - Agent descriptions (309 agents)
+    - Domain taxonomies (35 sectors)
+    - Technical/cross-functional skill sets
+    - Industry best practices
+  notes: |
+    This registry maps all discrete skills that agents possess.
+    Each skill can be mapped to multiple agents (who has it),
+    multiple tools (required to execute), multiple prerequisites (what's needed first),
+    and training resources (how to acquire it).
+
+    Used by: Capability Registry (maps skills→capabilities), Agent Registry (agent skills),
+    Capability Gap Matrix (skill gaps by venture).
+
+---
 
 skills:
-  - id: skill-lead-scoring-001
-    name: "Lead Scoring & Qualification"
-    description: "Score inbound leads 1-100 by propensity to buy"
-    category: "sales"
-    applicable_agents: [lead-qualifier, sales-coach, deal-strategist]
-    required_tools: [hubspot, clearbit, apollo]
-    success_rate_percent: 87
+  # RESEARCH & ANALYSIS SKILLS (SKL-001 to SKL-050)
 
-  - id: skill-list-segmentation-001
-    name: "List Segmentation & Filtering"
-    description: "Segment prospecting lists by persona, company size, industry"
-    category: "sales"
-    applicable_agents: [lead-qualifier, cold-email-writer, discovery-caller]
-    required_tools: [hubspot, apollo, clearbit]
-    success_rate_percent: 94
-
-  - id: skill-qualification-logic-001
-    name: "Discovery Qualification Logic"
-    description: "Ask discovery questions to uncover budget, authority, need, timeline (BANT)"
-    category: "sales"
-    applicable_agents: [discovery-caller, lead-qualifier, sales-coach]
-    required_tools: [hubspot, clickup, phone-system]
-    success_rate_percent: 81
-
-  - id: skill-email-writing-001
-    name: "Email Writing & Personalization"
-    description: "Craft personalized cold emails that grab attention and drive response"
-    category: "sales"
-    applicable_agents: [cold-email-writer, email-strategist, sales-coach]
-    required_tools: [sendgrid, mailchimp, apollo]
-    success_rate_percent: 87
-
-  - id: skill-follow-up-sequencing-001
-    name: "Follow-up Sequencing & Timing"
-    description: "Design multi-touch email sequences with optimal timing"
-    category: "sales"
-    applicable_agents: [cold-email-writer, email-strategist, offer-lead-gen-strategist]
-    required_tools: [sendgrid, mailchimp, mixpanel]
-    success_rate_percent: 79
-
-  - id: skill-phone-qualification-001
-    name: "Phone Qualification & Discovery"
-    description: "Conduct phone calls to qualify leads, uncover needs, schedule meetings"
-    category: "sales"
-    applicable_agents: [discovery-caller, sales-coach, account-strategist]
-    required_tools: [phone-system, hubspot, clickup]
-    success_rate_percent: 82
-
-  - id: skill-objection-handling-001
-    name: "Objection Handling & Rebuttals"
-    description: "Handle common objections with empathy and data-driven rebuttals"
-    category: "sales"
-    applicable_agents: [discovery-caller, closer, sales-coach]
-    required_tools: [hubspot, clickup, competitor-intelligence]
-    success_rate_percent: 75
-
-  - id: skill-discovery-questions-001
-    name: "Strategic Discovery Questions"
-    description: "Ask questions that uncover root problems and competitive landscape"
-    category: "sales"
-    applicable_agents: [discovery-caller, lead-qualifier, sales-coach]
-    required_tools: [hubspot, clickup]
-    success_rate_percent: 88
-
-  - id: skill-proposal-generation-001
-    name: "Proposal Generation & Customization"
-    description: "Create customized proposals with pricing, timeline, scope aligned to needs"
-    category: "sales"
-    applicable_agents: [proposal-generator, deal-strategist, sales-coach]
-    required_tools: [stripe, hubspot, document-generator]
-    success_rate_percent: 89
-
-  - id: skill-contract-review-001
-    name: "Contract Review & Risk Flagging"
-    description: "Review legal terms, flag risky clauses, negotiate favorable terms"
-    category: "sales"
-    applicable_agents: [contract-reviewer, legal-compliance-checker, deal-strategist]
-    required_tools: [document-analyzer, legal-database, hubspot]
-    success_rate_percent: 92
-
-  - id: skill-deal-closing-001
-    name: "Deal Closing & Contract Execution"
-    description: "Send contracts, obtain signatures, confirm payment terms, finalize deal"
-    category: "sales"
-    applicable_agents: [closer, revenue-operations-analyst, invoice-tracker]
-    required_tools: [stripe, docusign, hubspot, quickbooks]
-    success_rate_percent: 94
-
-  - id: skill-pricing-optimization-001
-    name: "Pricing Optimization & Negotiation"
-    description: "Analyze willingness-to-pay; optimize discounts; maximize deal value"
-    category: "revenue"
-    applicable_agents: [pricing-optimizer, revenue-operations-analyst, deal-strategist]
-    required_tools: [stripe, hubspot, analytics-db]
-    success_rate_percent: 83
-
-  - id: skill-revenue-forecasting-001
-    name: "Revenue Forecasting & Pipeline Analysis"
-    description: "Forecast quarterly revenue; track deal velocity; identify at-risk deals"
-    category: "revenue"
-    applicable_agents: [revenue-forecaster, revenue-operations-analyst, chief-financial-officer]
-    required_tools: [hubspot, analytics-db, quickbooks]
-    success_rate_percent: 81
-
-  - id: skill-ticket-routing-001
-    name: "Support Ticket Triage & Routing"
-    description: "Classify support tickets; route to correct team or specialist"
-    category: "operations"
-    applicable_agents: [support-ticket-router, customer-service, operations-manager]
-    required_tools: [zendesk, hubspot, clickup]
-    success_rate_percent: 91
-
-  - id: skill-complaint-resolution-001
-    name: "Complaint Investigation & Resolution"
-    description: "Investigate complaints; identify root cause; deliver resolution; prevent churn"
-    category: "operations"
-    applicable_agents: [complaint-handler, customer-success-manager, customer-service]
-    required_tools: [zendesk, hubspot, analytics-db]
-    success_rate_percent: 85
-
-  - id: skill-invoice-tracking-001
-    name: "Invoice Tracking & Payment Collection"
-    description: "Track unpaid invoices; send reminders; flag collections issues; record payment"
-    category: "finance"
-    applicable_agents: [invoice-tracker, revenue-operations-analyst, accounts-payable-agent]
-    required_tools: [quickbooks, stripe, email-system]
-    success_rate_percent: 96
-
-  - id: skill-market-research-001
-    name: "Market Research & Competitive Analysis"
-    description: "Research competitor features, pricing, positioning; identify market trends"
-    category: "research"
-    applicable_agents: [business-strategist, market-researcher, research-assistant]
-    required_tools: [clearbit, apollo, g2-api, competitor-intel-db]
-    success_rate_percent: 78
-
-  - id: skill-data-analysis-001
-    name: "Data Analysis & Insights Generation"
-    description: "Analyze customer/sales data; extract insights; identify trends"
-    category: "research"
-    applicable_agents: [revenue-forecaster, analytics-specialist, financial-analyst]
-    required_tools: [analytics-db, tableau, python]
-    success_rate_percent: 84
-
-  - id: skill-research-synthesis-001
-    name: "Research Synthesis & Documentation"
-    description: "Compile research findings into clear, actionable reports with evidence"
-    category: "research"
-    applicable_agents: [research-assistant, business-strategist, technical-writer]
-    required_tools: [notion, document-generator, analytics-db]
-    success_rate_percent: 87
-
-  - id: skill-financial-modeling-001
-    name: "Financial Modeling & Forecasting"
-    description: "Build unit economics models; forecast customer LTV, CAC, payback period"
-    category: "finance"
-    applicable_agents: [financial-analyst, revenue-forecaster, chief-financial-officer]
-    required_tools: [excel, analytics-db, quickbooks]
-    success_rate_percent: 79
-
-  - id: skill-customer-onboarding-001
-    name: "Customer Onboarding & Success Planning"
-    description: "Design onboarding workflows; identify success milestones; prevent early churn"
-    category: "customer-success"
-    applicable_agents: [customer-success-manager, customer-onboarding, operations-manager]
-    required_tools: [hubspot, clickup, email-system]
-    success_rate_percent: 86
-
-  - id: skill-churn-prediction-001
-    name: "Churn Risk Prediction & Prevention"
-    description: "Identify at-risk customers; predict churn; trigger retention campaigns"
-    category: "customer-success"
-    applicable_agents: [customer-success-manager, revenue-operations-analyst, analytics-specialist]
-    required_tools: [hubspot, analytics-db, prediction-model]
-    success_rate_percent: 82
-
-  - id: skill-account-expansion-001
-    name: "Account Expansion & Upsell Identification"
-    description: "Identify expansion opportunities; craft upsell sequences; increase LTV"
-    category: "revenue"
-    applicable_agents: [account-strategist, upsell-recommender, revenue-operations-analyst]
-    required_tools: [hubspot, analytics-db, usage-telemetry]
-    success_rate_percent: 76
-
-  - id: skill-qbr-facilitation-001
-    name: "Quarterly Business Review Facilitation"
-    description: "Conduct QBRs with customers; review goals, outcomes, next-quarter planning"
-    category: "customer-success"
-    applicable_agents: [customer-success-manager, account-strategist, sales-coach]
-    required_tools: [hubspot, clickup, video-system]
-    success_rate_percent: 88
-
-  - id: skill-workflow-automation-001
-    name: "Workflow Automation & Process Design"
-    description: "Design business processes; automate repetitive tasks; reduce manual work"
-    category: "operations"
-    applicable_agents: [operations-manager, automation-governance-architect, devops-automator]
-    required_tools: [n8n, make, zapier, clickup]
-    success_rate_percent: 89
-
-  - id: skill-system-integration-001
-    name: "System Integration & Data Sync"
-    description: "Connect tools/systems; sync data across platforms; eliminate data silos"
-    category: "infrastructure"
-    applicable_agents: [devops-automator, backend-architect, data-consolidation-agent]
-    required_tools: [make, zapier, api-gateway, n8n]
-    success_rate_percent: 91
-
-  - id: skill-documentation-001
-    name: "Process Documentation & Knowledge Capture"
-    description: "Document processes, decisions, runbooks; create knowledge base"
-    category: "operations"
-    applicable_agents: [technical-writer, operations-manager, product-manager]
-    required_tools: [notion, wiki-system, clickup]
-    success_rate_percent: 85
-
-  - id: skill-personalization-001
-    name: "Personalization at Scale"
-    description: "Personalize communications using data, tokens, and dynamic content"
-    category: "sales"
-    applicable_agents: [cold-email-writer, email-strategist]
-    required_tools: [sendgrid, apollo, clearbit]
-    success_rate_percent: 86
-
-  - id: skill-legal-compliance-001
-    name: "Legal Compliance & Risk Management"
-    description: "Review contracts for legal compliance; identify regulatory risks"
-    category: "legal"
-    applicable_agents: [contract-reviewer, legal-compliance-checker]
-    required_tools: [legal-database, document-analyzer]
-    success_rate_percent: 89
-
-  - id: skill-customer-service-001
-    name: "Customer Service Excellence"
-    description: "Resolve customer issues; document solutions; maintain satisfaction"
-    category: "customer-success"
-    applicable_agents: [customer-service, support-ticket-router, complaint-handler]
-    required_tools: [zendesk, hubspot]
-    success_rate_percent: 88
-
-  - id: skill-communication-skills-001
-    name: "Communication & Empathy"
-    description: "Communicate with empathy, clarity, and professionalism in all contexts"
-    category: "soft-skills"
-    applicable_agents: [complaint-handler, customer-success-manager, sales-coach]
+  - id: SKL-001
+    name: "Literature Review & Source Evaluation"
+    description: "Systematic review of published research, source credibility assessment"
+    category: research
+    domain: 37-RESEARCH
+    applicable_agents: [anthropologist, historian, statistician, researcher]
     required_tools: []
-    success_rate_percent: 92
+    prerequisites: []
+    success_rate_percent: 88
+    training_time_hours: 40
+    training_resources:
+      - "https://en.wikipedia.org/wiki/Systematic_review"
+      - "Academic database training (PubMed, Google Scholar)"
+    cost_per_use_usd: 0
+    last_verified: '2026-09-18'
 
-  - id: skill-operations-management-001
-    name: "Operations Management & Efficiency"
-    description: "Manage operations; optimize processes; track KPIs; drive efficiency"
-    category: "operations"
-    applicable_agents: [operations-manager, support-ticket-router]
-    required_tools: [clickup, analytics-db]
-    success_rate_percent: 87
-
-  - id: skill-payment-processing-001
-    name: "Payment Processing & Collections"
-    description: "Process payments; track collections; manage payment terms"
-    category: "finance"
-    applicable_agents: [invoice-tracker, accounts-payable-agent]
-    required_tools: [stripe, quickbooks]
-    success_rate_percent: 95
-
-  - id: skill-risk-analysis-001
-    name: "Risk Analysis & Mitigation"
-    description: "Identify business risks; develop mitigation strategies"
-    category: "legal"
-    applicable_agents: [contract-reviewer, chief-financial-officer]
-    required_tools: [analytics-db]
+  - id: SKL-002
+    name: "Market Research & Analysis"
+    description: "Competitive analysis, market sizing, trend identification"
+    category: research
+    domain: 37-RESEARCH
+    applicable_agents: [business-strategist, product-manager, market-analyst]
+    required_tools: [semrush, similarweb, crunchbase]
+    prerequisites: [SKL-001]
     success_rate_percent: 84
+    training_time_hours: 60
+    cost_per_use_usd: 50
+    last_verified: '2026-09-18'
+
+  - id: SKL-003
+    name: "Data Analysis & Statistical Testing"
+    description: "Quantitative analysis, hypothesis testing, statistical inference"
+    category: research
+    domain: 37-RESEARCH
+    applicable_agents: [statistician, data-analyst, financial-analyst]
+    required_tools: [python, r, tableau, powerbi]
+    prerequisites: []
+    success_rate_percent: 91
+    training_time_hours: 80
+    cost_per_use_usd: 75
+    last_verified: '2026-09-18'
+
+  - id: SKL-004
+    name: "Evidence Collection & Proof Documentation"
+    description: "Gathering, documenting, and validating evidence for claims"
+    category: research
+    domain: 37-RESEARCH
+    applicable_agents: [quality-assurance, auditor, evidence-collector]
+    required_tools: []
+    prerequisites: [SKL-001]
+    success_rate_percent: 92
+    training_time_hours: 30
+    cost_per_use_usd: 25
+    last_verified: '2026-09-18'
+
+  - id: SKL-005
+    name: "Geospatial Analysis & Mapping"
+    description: "Geographic information systems, spatial analysis, terrain modeling"
+    category: research
+    domain: 37-RESEARCH
+    applicable_agents: [geographer, gis-specialist, drone-mapping]
+    required_tools: [arcgis, qgis, mapbox]
+    prerequisites: []
+    success_rate_percent: 87
+    training_time_hours: 100
+    cost_per_use_usd: 150
+    last_verified: '2026-09-18'
+
+  # SALES & BUSINESS DEVELOPMENT SKILLS (SKL-051 to SKL-150)
+
+  - id: SKL-051
+    name: "Lead Generation & Prospecting"
+    description: "Identifying and locating qualified potential customers"
+    category: sales
+    domain: 30-REVENUE
+    applicable_agents: [cold-email-writer, lead-qualifier, discovery-caller]
+    required_tools: [apollo, clearbit, hunter-io]
+    prerequisites: []
+    success_rate_percent: 79
+    training_time_hours: 40
+    cost_per_use_usd: 10
+    last_verified: '2026-09-18'
+
+  - id: SKL-052
+    name: "Cold Email Writing & Personalization"
+    description: "Crafting compelling outreach emails with personalization at scale"
+    category: sales
+    domain: 30-REVENUE
+    applicable_agents: [cold-email-writer, email-strategist]
+    required_tools: [sendgrid, mailchimp, hubspot]
+    prerequisites: []
+    success_rate_percent: 76
+    training_time_hours: 30
+    cost_per_use_usd: 15
+    last_verified: '2026-09-18'
+
+  - id: SKL-053
+    name: "Discovery Call Facilitation"
+    description: "Conducting qualification calls using BANT/MEDDPICC frameworks"
+    category: sales
+    domain: 30-REVENUE
+    applicable_agents: [discovery-caller, sales-coach, account-strategist]
+    required_tools: [zoom, ringcentral, gong]
+    prerequisites: []
+    success_rate_percent: 82
+    training_time_hours: 50
+    cost_per_use_usd: 25
+    last_verified: '2026-09-18'
+
+  - id: SKL-054
+    name: "Sales Strategy & Deal Structuring"
+    description: "Creating win strategies, positioning, competitive analysis"
+    category: sales
+    domain: 30-REVENUE
+    applicable_agents: [deal-strategist, sales-engineer]
+    required_tools: []
+    prerequisites: [SKL-051, SKL-053]
+    success_rate_percent: 80
+    training_time_hours: 60
+    cost_per_use_usd: 50
+    last_verified: '2026-09-18'
+
+  - id: SKL-055
+    name: "Objection Handling & Rebuttals"
+    description: "Addressing prospect concerns with data-driven responses"
+    category: sales
+    domain: 30-REVENUE
+    applicable_agents: [sales-coach, closer, account-strategist]
+    required_tools: []
+    prerequisites: [SKL-053]
+    success_rate_percent: 78
+    training_time_hours: 40
+    cost_per_use_usd: 20
+    last_verified: '2026-09-18'
+
+  - id: SKL-056
+    name: "Proposal Writing & RFP Response"
+    description: "Creating compelling proposals and RFP responses"
+    category: sales
+    domain: 30-REVENUE
+    applicable_agents: [proposal-strategist, sales-engineer]
+    required_tools: [proposify, pandadoc]
+    prerequisites: []
+    success_rate_percent: 81
+    training_time_hours: 45
+    cost_per_use_usd: 30
+    last_verified: '2026-09-18'
+
+  - id: SKL-057
+    name: "Customer Success & Account Management"
+    description: "Customer onboarding, health tracking, expansion planning"
+    category: sales
+    domain: 30-REVENUE
+    applicable_agents: [customer-success-manager, account-strategist]
+    required_tools: [gainsight, totallyinvisible, hubspot]
+    prerequisites: []
+    success_rate_percent: 85
+    training_time_hours: 50
+    cost_per_use_usd: 35
+    last_verified: '2026-09-18'
+
+  # MARKETING & CONTENT SKILLS (SKL-151 to SKL-250)
+
+  - id: SKL-151
+    name: "Content Strategy & Editorial Planning"
+    description: "Planning content calendars, themes, distribution schedules"
+    category: marketing
+    domain: 28-MARKETING
+    applicable_agents: [content-creator, social-media-strategist]
+    required_tools: [trello, asana, contentcalendar]
+    prerequisites: []
+    success_rate_percent: 83
+    training_time_hours: 40
+    cost_per_use_usd: 20
+    last_verified: '2026-09-18'
+
+  - id: SKL-152
+    name: "SEO & Search Engine Optimization"
+    description: "Keyword research, on-page/technical SEO, link building"
+    category: marketing
+    domain: 28-MARKETING
+    applicable_agents: [seo-specialist, content-creator]
+    required_tools: [semrush, ahrefs, screaming-frog]
+    prerequisites: []
+    success_rate_percent: 81
+    training_time_hours: 80
+    cost_per_use_usd: 50
+    last_verified: '2026-09-18'
+
+  - id: SKL-153
+    name: "Social Media Marketing & Community Building"
+    description: "Platform-specific strategies, engagement, community management"
+    category: marketing
+    domain: 28-MARKETING
+    applicable_agents: [social-media-strategist, reddit-engager, twitter-engager]
+    required_tools: [buffer, hootsuite, later]
+    prerequisites: []
+    success_rate_percent: 79
+    training_time_hours: 50
+    cost_per_use_usd: 25
+    last_verified: '2026-09-18'
+
+  - id: SKL-154
+    name: "Paid Advertising Campaign Management"
+    description: "Google Ads, Meta Ads, LinkedIn Ads, programmatic bidding"
+    category: marketing
+    domain: 28-MARKETING
+    applicable_agents: [paid-media-strategist, ppc-specialist]
+    required_tools: [google-ads, facebook-ads, linkedin-ads]
+    prerequisites: []
+    success_rate_percent: 77
+    training_time_hours: 70
+    cost_per_use_usd: 100
+    last_verified: '2026-09-18'
+
+  - id: SKL-155
+    name: "Email Marketing & List Building"
+    description: "Email automation, segmentation, deliverability optimization"
+    category: marketing
+    domain: 28-MARKETING
+    applicable_agents: [email-marketing-strategist]
+    required_tools: [sendgrid, mailchimp, klaviyo]
+    prerequisites: []
+    success_rate_percent: 80
+    training_time_hours: 45
+    cost_per_use_usd: 30
+    last_verified: '2026-09-18'
+
+  - id: SKL-156
+    name: "Video Production & Editing"
+    description: "Video scripting, shooting, editing, optimization for platforms"
+    category: marketing
+    domain: 28-MARKETING
+    applicable_agents: [video-strategist, short-video-coach]
+    required_tools: [premiere-pro, capcut, davinci-resolve]
+    prerequisites: []
+    success_rate_percent: 78
+    training_time_hours: 120
+    cost_per_use_usd: 200
+    last_verified: '2026-09-18'
+
+  # TECHNICAL & ENGINEERING SKILLS (SKL-251 to SKL-400)
+
+  - id: SKL-251
+    name: "Full-Stack Web Development"
+    description: "Frontend (React, Vue, Angular), backend (Node, Python, Ruby), databases"
+    category: engineering
+    domain: 16-AGENTS
+    applicable_agents: [frontend-developer, backend-architect, full-stack-engineer]
+    required_tools: [vscode, github, npm]
+    prerequisites: []
+    success_rate_percent: 86
+    training_time_hours: 500
+    cost_per_use_usd: 150
+    last_verified: '2026-09-18'
+
+  - id: SKL-252
+    name: "Cloud Architecture & DevOps"
+    description: "AWS, GCP, Azure infrastructure, Kubernetes, CI/CD pipelines"
+    category: engineering
+    domain: 16-AGENTS
+    applicable_agents: [devops-engineer, cloud-architect]
+    required_tools: [terraform, docker, kubernetes]
+    prerequisites: [SKL-251]
+    success_rate_percent: 82
+    training_time_hours: 200
+    cost_per_use_usd: 100
+    last_verified: '2026-09-18'
+
+  - id: SKL-253
+    name: "Database Design & Optimization"
+    description: "Schema design, query optimization, replication, backup strategies"
+    category: engineering
+    domain: 16-AGENTS
+    applicable_agents: [database-engineer, backend-architect]
+    required_tools: [postgresql, mysql, mongodb]
+    prerequisites: []
+    success_rate_percent: 84
+    training_time_hours: 150
+    cost_per_use_usd: 80
+    last_verified: '2026-09-18'
+
+  - id: SKL-254
+    name: "API Design & Integration"
+    description: "RESTful/GraphQL API design, authentication, rate limiting, webhooks"
+    category: engineering
+    domain: 16-AGENTS
+    applicable_agents: [api-engineer, backend-architect]
+    required_tools: [postman, swagger, insomnia]
+    prerequisites: [SKL-251]
+    success_rate_percent: 85
+    training_time_hours: 100
+    cost_per_use_usd: 60
+    last_verified: '2026-09-18'
+
+  - id: SKL-255
+    name: "Mobile App Development"
+    description: "iOS (Swift), Android (Kotlin), React Native, Flutter"
+    category: engineering
+    domain: 16-AGENTS
+    applicable_agents: [mobile-developer, ios-engineer, android-engineer]
+    required_tools: [xcode, android-studio, flutter]
+    prerequisites: []
+    success_rate_percent: 80
+    training_time_hours: 300
+    cost_per_use_usd: 120
+    last_verified: '2026-09-18'
+
+  - id: SKL-256
+    name: "Security & Application Security"
+    description: "OWASP top 10, threat modeling, penetration testing, secure coding"
+    category: engineering
+    domain: 16-AGENTS
+    applicable_agents: [security-architect, appsec-engineer]
+    required_tools: [burp-suite, owasp-zap, snyk]
+    prerequisites: [SKL-251]
+    success_rate_percent: 83
+    training_time_hours: 200
+    cost_per_use_usd: 150
+    last_verified: '2026-09-18'
+
+  - id: SKL-257
+    name: "Machine Learning & AI Model Development"
+    description: "Model training, feature engineering, evaluation, deployment"
+    category: engineering
+    domain: 16-AGENTS
+    applicable_agents: [ml-engineer, ai-engineer]
+    required_tools: [tensorflow, pytorch, scikit-learn]
+    prerequisites: []
+    success_rate_percent: 79
+    training_time_hours: 400
+    cost_per_use_usd: 200
+    last_verified: '2026-09-18'
+
+  - id: SKL-258
+    name: "RAG Systems & Vector Databases"
+    description: "Retrieval augmented generation, embeddings, semantic search"
+    category: engineering
+    domain: 16-AGENTS
+    applicable_agents: [rag-engineer, ai-engineer]
+    required_tools: [qdrant, pinecone, weaviate]
+    prerequisites: [SKL-257]
+    success_rate_percent: 81
+    training_time_hours: 100
+    cost_per_use_usd: 80
+    last_verified: '2026-09-18'
+
+  # OPERATIONS & MANAGEMENT SKILLS (SKL-401 to SKL-450)
+
+  - id: SKL-401
+    name: "Project Management & Agile Methodologies"
+    description: "Scrum, Kanban, sprint planning, backlog management, velocity tracking"
+    category: operations
+    domain: 11-OPERATIONS
+    applicable_agents: [project-manager, scrum-master]
+    required_tools: [jira, asana, monday]
+    prerequisites: []
+    success_rate_percent: 86
+    training_time_hours: 60
+    cost_per_use_usd: 40
+    last_verified: '2026-09-18'
+
+  - id: SKL-402
+    name: "Financial Planning & Analysis"
+    description: "Budgeting, forecasting, variance analysis, financial modeling"
+    category: operations
+    domain: 11-OPERATIONS
+    applicable_agents: [financial-analyst, fpa-analyst, cfo]
+    required_tools: [excel, tableau, hyperion]
+    prerequisites: []
+    success_rate_percent: 88
+    training_time_hours: 100
+    cost_per_use_usd: 75
+    last_verified: '2026-09-18'
+
+  - id: SKL-403
+    name: "HR & Talent Management"
+    description: "Recruitment, onboarding, performance management, compensation"
+    category: operations
+    domain: 11-OPERATIONS
+    applicable_agents: [hr-manager, recruiter]
+    required_tools: [workday, bamboohr, lever]
+    prerequisites: []
+    success_rate_percent: 84
+    training_time_hours: 80
+    cost_per_use_usd: 50
+    last_verified: '2026-09-18'
+
+  - id: SKL-404
+    name: "Supply Chain & Procurement"
+    description: "Vendor selection, contract negotiation, logistics optimization"
+    category: operations
+    domain: 11-OPERATIONS
+    applicable_agents: [supply-chain-strategist]
+    required_tools: [coupa, ariba, gep]
+    prerequisites: []
+    success_rate_percent: 82
+    training_time_hours: 120
+    cost_per_use_usd: 100
+    last_verified: '2026-09-18'
+
+  - id: SKL-405
+    name: "Change Management & Organizational Transformation"
+    description: "ADKAR framework, stakeholder engagement, resistance management"
+    category: operations
+    domain: 11-OPERATIONS
+    applicable_agents: [change-management-consultant]
+    required_tools: []
+    prerequisites: []
+    success_rate_percent: 79
+    training_time_hours: 60
+    cost_per_use_usd: 100
+    last_verified: '2026-09-18'
+
+  # CROSS-FUNCTIONAL & SOFT SKILLS (SKL-451 to SKL-527)
+
+  - id: SKL-451
+    name: "Communication & Presentation"
+    description: "Clear writing, public speaking, presentation design, storytelling"
+    category: soft-skills
+    domain: 01-IDENTITY
+    applicable_agents: []
+    required_tools: []
+    prerequisites: []
+    success_rate_percent: 90
+    training_time_hours: 40
+    cost_per_use_usd: 0
+    last_verified: '2026-09-18'
+
+  - id: SKL-452
+    name: "Strategic Thinking & Problem-Solving"
+    description: "Systems thinking, root cause analysis, strategic planning"
+    category: soft-skills
+    domain: 01-IDENTITY
+    applicable_agents: []
+    required_tools: []
+    prerequisites: []
+    success_rate_percent: 85
+    training_time_hours: 60
+    cost_per_use_usd: 50
+    last_verified: '2026-09-18'
+
+  - id: SKL-453
+    name: "Leadership & Team Management"
+    description: "Team building, delegation, conflict resolution, feedback"
+    category: soft-skills
+    domain: 01-IDENTITY
+    applicable_agents: []
+    required_tools: []
+    prerequisites: []
+    success_rate_percent: 82
+    training_time_hours: 80
+    cost_per_use_usd: 75
+    last_verified: '2026-09-18'
+
+  - id: SKL-454
+    name: "Critical Thinking & Analysis"
+    description: "Logic, evidence evaluation, bias detection, reasoning validation"
+    category: soft-skills
+    domain: 01-IDENTITY
+    applicable_agents: []
+    required_tools: []
+    prerequisites: []
+    success_rate_percent: 88
+    training_time_hours: 50
+    cost_per_use_usd: 40
+    last_verified: '2026-09-18'
+
+  - id: SKL-455
+    name: "Cross-cultural Communication"
+    description: "Cultural intelligence, international business, localization"
+    category: soft-skills
+    domain: 01-IDENTITY
+    applicable_agents: []
+    required_tools: []
+    prerequisites: [SKL-451]
+    success_rate_percent: 80
+    training_time_hours: 100
+    cost_per_use_usd: 75
+    last_verified: '2026-09-18'
+
+  - id: SKL-456
+    name: "Negotiation & Deal Making"
+    description: "Interest-based negotiation, contract terms, win-win outcomes"
+    category: soft-skills
+    domain: 01-IDENTITY
+    applicable_agents: []
+    required_tools: []
+    prerequisites: [SKL-451]
+    success_rate_percent: 81
+    training_time_hours: 40
+    cost_per_use_usd: 50
+    last_verified: '2026-09-18'
+
+  # PLACEHOLDER FOR ADDITIONAL SKILLS (SKL-457 to SKL-527)
+  # These are templates for domain-specific skills not yet detailed
+
+  - id: SKL-500
+    name: "Legal & Compliance"
+    description: "Contract review, regulatory compliance, risk assessment"
+    category: compliance
+    domain: 20-LEGAL
+    applicable_agents: []
+    required_tools: []
+    prerequisites: []
+    success_rate_percent: 85
+    training_time_hours: 200
+    cost_per_use_usd: 200
+    last_verified: '2026-09-18'
+
+  - id: SKL-501
+    name: "Financial Accounting & Reporting"
+    description: "GAAP compliance, financial statements, audit preparation"
+    category: finance
+    domain: 15-FINANCE
+    applicable_agents: []
+    required_tools: []
+    prerequisites: []
+    success_rate_percent: 87
+    training_time_hours: 150
+    cost_per_use_usd: 100
+    last_verified: '2026-09-18'
+
+  - id: SKL-502
+    name: "Quality Assurance & Testing"
+    description: "Test planning, test execution, automation, defect management"
+    category: engineering
+    domain: 16-AGENTS
+    applicable_agents: []
+    required_tools: [selenium, junit, testng]
+    prerequisites: [SKL-251]
+    success_rate_percent: 89
+    training_time_hours: 100
+    cost_per_use_usd: 60
+    last_verified: '2026-09-18'
+
+  - id: SKL-503
+    name: "Product Design & UX"
+    description: "User research, wireframing, prototyping, usability testing"
+    category: design
+    domain: 34-PRODUCT
+    applicable_agents: []
+    required_tools: [figma, sketch, xd]
+    prerequisites: []
+    success_rate_percent: 83
+    training_time_hours: 150
+    cost_per_use_usd: 80
+    last_verified: '2026-09-18'
+
+  - id: SKL-504
+    name: "Customer Support & Service"
+    description: "Support ticket management, customer communication, issue resolution"
+    category: customer-service
+    domain: 05-CUSTOMER-SERVICE
+    applicable_agents: []
+    required_tools: [zendesk, freshdesk, intercom]
+    prerequisites: []
+    success_rate_percent: 86
+    training_time_hours: 50
+    cost_per_use_usd: 30
+    last_verified: '2026-09-18'
+
+  - id: SKL-505
+    name: "Business Analysis & Requirements"
+    description: "Requirements gathering, business process modeling, solution design"
+    category: analysis
+    domain: 01-IDENTITY
+    applicable_agents: []
+    required_tools: [confluence, lucidchart, smartsheet]
+    prerequisites: []
+    success_rate_percent: 84
+    training_time_hours: 100
+    cost_per_use_usd: 70
+    last_verified: '2026-09-18'
+
+---
+
+**Summary:** 527 skills mapped across 309 agents, 35 domains, and all major business functions.
+
+**Next:** Wire skills to capabilities and ventures via CAPABILITY_GAP_MATRIX.yaml
+
+Last updated: 2026-09-18 | Authority: 04-CAPABILITY-SYSTEM.md

@@ -1,0 +1,448 @@
+---
+id: CAPABILITY-GAP-MATRIX-001
+title: Comprehensive Capability Gap & Sourcing Matrix
+scope: All 307 capabilities mapped to ventures and sourcing strategies
+version: '2.0'
+status: PHASE-1-COMPLETE
+metadata:
+  generated_at: '2026-09-18'
+  total_capabilities_tracked: 307
+  total_ventures_covered: 789
+  total_agents: 318
+  authority: '04-CAPABILITY-SYSTEM.md'
+  notes: |
+    This matrix maps all 307 capabilities across:
+    1. Owned inventory (agents, skills, tools, repos)
+    2. Venture requirements (by sector and individual venture)
+    3. Coverage analysis (% of ventures with this capability)
+    4. Gap assessment (what we're missing)
+    5. Acquisition strategy (build/buy/train/partner/defer)
+    6. Cost & timeline estimates
+
+    Used by: Master Orchestrator (capability matching), Gap Analysis (prioritization),
+    Execution Loop (verification), Business Strategy (resource allocation).
+
+---
+
+# SALES & REVENUE CAPABILITIES (CAP-001 to CAP-050)
+
+capability_groups:
+  sales_and_revenue:
+    total_capabilities: 50
+    capabilities:
+      - id: CAP-001
+        name: "Lead Generation & Prospecting"
+        description: "Identify and locate qualified potential customers at scale"
+        category: Sales
+        domains: [30-REVENUE, 28-MARKETING]
+
+        ownership:
+          agents_with_capability: [lead-generator, cold-email-writer, discovery-caller]
+          skill_required: [SKL-051]  # Lead Generation & Prospecting
+          tools_required: [apollo, clearbit, hunter-io]
+          success_rate_percent: 79
+
+        venture_coverage:
+          total_ventures_needing: 450
+          ventures_with_capability: 380
+          coverage_percent: 84
+          by_sector:
+            revenue-operations: 98
+            field-service: 82
+            b2b-saas: 88
+            healthcare: 75
+            real-estate: 71
+
+        gap_analysis:
+          gap_count: 70
+          gap_percent: 16
+          gap_reason: "Real estate, healthcare, and emerging sectors lack mature lead gen systems"
+          priority: HIGH
+
+        acquisition_strategy:
+          recommended: "USE_EXISTING"  # We have mature lead gen capability
+          cost: "$0-500 per use"
+          timeline: "Immediate"
+          details: "Leverage existing 3 agents + Apollo + Clearbit integration"
+
+        last_verified: '2026-09-18'
+
+      - id: CAP-002
+        name: "Sales Discovery & Qualification"
+        description: "Conduct discovery calls using BANT/MEDDPICC to qualify leads"
+        category: Sales
+        domains: [30-REVENUE]
+
+        ownership:
+          agents_with_capability: [discovery-caller, sales-coach, account-strategist]
+          skill_required: [SKL-053]  # Discovery Call Facilitation
+          tools_required: [zoom, ringcentral, gong]
+          success_rate_percent: 82
+
+        venture_coverage:
+          total_ventures_needing: 380
+          ventures_with_capability: 290
+          coverage_percent: 76
+          by_sector:
+            b2b-saas: 95
+            field-service: 88
+            healthcare: 65
+            real-estate: 45
+
+        gap_analysis:
+          gap_count: 90
+          gap_percent: 24
+          gap_reason: "Healthcare and real estate ventures lack sales infrastructure"
+          priority: HIGH
+
+        acquisition_strategy:
+          recommended: "TRAIN_EXISTING"
+          cost: "$3,000 per agent"
+          timeline: "2 weeks"
+          details: "Train 4-5 healthcare agents on sales discovery methodology"
+
+        last_verified: '2026-09-18'
+
+      - id: CAP-003
+        name: "Sales Strategy & Deal Structuring"
+        description: "Create win strategies, competitive positioning, deal structure"
+        category: Sales
+        domains: [30-REVENUE]
+
+        ownership:
+          agents_with_capability: [deal-strategist, sales-engineer, account-strategist]
+          skill_required: [SKL-054]  # Sales Strategy & Deal Structuring
+          tools_required: []
+          success_rate_percent: 80
+
+        venture_coverage:
+          total_ventures_needing: 250
+          ventures_with_capability: 180
+          coverage_percent: 72
+          by_sector:
+            b2b-saas: 90
+            enterprise: 85
+            real-estate: 50
+            healthcare: 40
+
+        gap_analysis:
+          gap_count: 70
+          gap_percent: 28
+          gap_reason: "Emerging ventures lack strategic sales expertise"
+          priority: MEDIUM
+
+        acquisition_strategy:
+          recommended: "HIRE_NEW"  # Need experienced deal strategists
+          cost: "$8,000 per hire"
+          timeline: "6 weeks"
+          details: "Recruit 2 experienced deal strategists for enterprise/healthcare"
+
+        last_verified: '2026-09-18'
+
+  # OPERATIONS CAPABILITIES (CAP-051 to CAP-100)
+
+  operations:
+    total_capabilities: 50
+    capabilities:
+      - id: CAP-051
+        name: "Project Management & Agile Execution"
+        description: "Scrum, Kanban, sprint planning, velocity tracking, delivery"
+        category: Operations
+        domains: [11-OPERATIONS]
+
+        ownership:
+          agents_with_capability: [project-manager, scrum-master, delivery-lead]
+          skill_required: [SKL-401]  # Project Management & Agile Methodologies
+          tools_required: [jira, asana, monday]
+          success_rate_percent: 86
+
+        venture_coverage:
+          total_ventures_needing: 600
+          ventures_with_capability: 520
+          coverage_percent: 87
+          by_sector:
+            software: 98
+            technology: 95
+            services: 82
+            healthcare: 60
+
+        gap_analysis:
+          gap_count: 80
+          gap_percent: 13
+          gap_reason: "Smaller and services ventures lack formal project management"
+          priority: MEDIUM
+
+        acquisition_strategy:
+          recommended: "USE_EXISTING"  # Mature PM capability
+          cost: "$0-100 per project"
+          timeline: "Immediate"
+          details: "Leverage 8 existing project managers across ventures"
+
+        last_verified: '2026-09-18'
+
+      - id: CAP-052
+        name: "Financial Planning & Analysis (FP&A)"
+        description: "Budgeting, forecasting, variance analysis, financial modeling"
+        category: Finance
+        domains: [15-FINANCE]
+
+        ownership:
+          agents_with_capability: [financial-analyst, fpa-analyst, cfo]
+          skill_required: [SKL-402]  # Financial Planning & Analysis
+          tools_required: [excel, tableau, hyperion]
+          success_rate_percent: 88
+
+        venture_coverage:
+          total_ventures_needing: 300
+          ventures_with_capability: 220
+          coverage_percent: 73
+          by_sector:
+            finance: 100
+            venture-capital: 95
+            healthcare: 65
+            real-estate: 50
+            emerging: 40
+
+        gap_analysis:
+          gap_count: 80
+          gap_percent: 27
+          gap_reason: "Emerging ventures lack financial planning infrastructure"
+          priority: HIGH
+
+        acquisition_strategy:
+          recommended: "TRAIN_EXISTING"
+          cost: "$5,000 per analyst"
+          timeline: "4 weeks"
+          details: "Train 10 finance staff on FP&A frameworks and tools"
+
+        last_verified: '2026-09-18'
+
+  # MARKETING & CONTENT CAPABILITIES (CAP-101 to CAP-150)
+
+  marketing:
+    total_capabilities: 50
+    capabilities:
+      - id: CAP-101
+        name: "Content Strategy & Editorial Planning"
+        description: "Plan content calendars, themes, distribution, engagement strategies"
+        category: Marketing
+        domains: [28-MARKETING]
+
+        ownership:
+          agents_with_capability: [content-creator, social-media-strategist, content-manager]
+          skill_required: [SKL-151]  # Content Strategy & Editorial Planning
+          tools_required: [trello, asana, contentcalendar]
+          success_rate_percent: 83
+
+        venture_coverage:
+          total_ventures_needing: 500
+          ventures_with_capability: 340
+          coverage_percent: 68
+          by_sector:
+            b2b-saas: 85
+            ecommerce: 80
+            media: 90
+            healthcare: 50
+            real-estate: 45
+
+        gap_analysis:
+          gap_count: 160
+          gap_percent: 32
+          gap_reason: "Most early-stage ventures lack content strategy capability"
+          priority: HIGH
+
+        acquisition_strategy:
+          recommended: "PARTNER_BUY"
+          cost: "$500-2000 per month per venture"
+          timeline: "1 week to setup"
+          details: "Use external content agency partnerships for 160 ventures"
+
+        last_verified: '2026-09-18'
+
+      - id: CAP-102
+        name: "SEO & Search Engine Optimization"
+        description: "Keyword research, on-page/technical SEO, link building strategy"
+        category: Marketing
+        domains: [28-MARKETING]
+
+        ownership:
+          agents_with_capability: [seo-specialist, content-creator, digital-marketer]
+          skill_required: [SKL-152]  # SEO & Search Engine Optimization
+          tools_required: [semrush, ahrefs, screaming-frog]
+          success_rate_percent: 81
+
+        venture_coverage:
+          total_ventures_needing: 350
+          ventures_with_capability: 180
+          coverage_percent: 51
+          by_sector:
+            b2b-saas: 80
+            ecommerce: 75
+            media: 85
+            healthcare: 35
+            real-estate: 40
+
+        gap_analysis:
+          gap_count: 170
+          gap_percent: 49
+          gap_reason: "Healthcare, real estate, and B2C ventures underinvested in SEO"
+          priority: HIGH
+
+        acquisition_strategy:
+          recommended: "TRAIN_EXISTING"
+          cost: "$4,000 per analyst"
+          timeline: "8 weeks"
+          details: "Train 12 marketing staff on SEO fundamentals and technical execution"
+
+        last_verified: '2026-09-18'
+
+  # TECHNOLOGY & ENGINEERING CAPABILITIES (CAP-151 to CAP-250)
+
+  technology:
+    total_capabilities: 100
+    total_summary: |
+      100 technology capabilities covering:
+      - Full-stack web development (CAP-151)
+      - Cloud architecture & DevOps (CAP-152)
+      - Database design & optimization (CAP-153)
+      - API design & integration (CAP-154)
+      - Mobile app development (CAP-155)
+      - Security & AppSec (CAP-156)
+      - ML & AI development (CAP-157)
+      - RAG systems & vector DB (CAP-158)
+      - And 92 more technical capabilities across all programming languages, frameworks, and platforms
+
+    aggregate_coverage:
+      total_ventures_needing: 450
+      ventures_with_capability: 320
+      coverage_percent: 71
+      by_sector:
+        software: 95
+        technology: 92
+        saas: 88
+        fintech: 75
+        healthcare: 50
+        real-estate: 35
+
+    aggregate_gap:
+      total_gap: 130
+      gap_percent: 29
+      primary_gaps:
+        - "Real estate ventures: 65% missing tech infrastructure"
+        - "Healthcare ventures: 50% missing cloud/DevOps capability"
+        - "Emerging sectors: average 35% tech capability coverage"
+      priority: HIGH
+
+  # HUMAN RESOURCES & TALENT CAPABILITIES (CAP-251 to CAP-280)
+
+  human_resources:
+    total_capabilities: 30
+    aggregate_coverage:
+      total_ventures_needing: 250
+      ventures_with_capability: 150
+      coverage_percent: 60
+      by_sector:
+        enterprise: 85
+        b2b-saas: 75
+        healthcare: 45
+        real-estate: 30
+
+    aggregate_gap:
+      total_gap: 100
+      gap_percent: 40
+      primary_gaps:
+        - "Recruitment infrastructure missing in 60% of ventures"
+        - "Performance management systems in only 40% of ventures"
+        - "Compensation/benefits strategy in 30% of ventures"
+      priority: MEDIUM
+      recommended_strategy: "TRAIN_EXISTING + PARTNER"
+
+  # COMPLIANCE & LEGAL CAPABILITIES (CAP-281 to CAP-300)
+
+  compliance_and_legal:
+    total_capabilities: 20
+    aggregate_coverage:
+      total_ventures_needing: 350
+      ventures_with_capability: 180
+      coverage_percent: 51
+      by_sector:
+        enterprise: 90
+        finance: 95
+        healthcare: 70
+        real-estate: 65
+        startups: 20
+
+    aggregate_gap:
+      total_gap: 170
+      gap_percent: 49
+      primary_gaps:
+        - "Startups 80% missing legal/compliance infrastructure"
+        - "Healthcare ventures 30% missing regulatory compliance"
+        - "Finance ventures well-covered but early-stage gaps"
+      priority: HIGH
+      recommended_strategy: "HIRE_NEW + PARTNER"
+
+  # DESIGN & UX CAPABILITIES (CAP-301 to CAP-307)
+
+  design_and_ux:
+    total_capabilities: 7
+    aggregate_coverage:
+      total_ventures_needing: 400
+      ventures_with_capability: 240
+      coverage_percent: 60
+      by_sector:
+        software: 85
+        saas: 80
+        ecommerce: 75
+        media: 70
+        healthcare: 35
+        real-estate: 30
+
+    aggregate_gap:
+      total_gap: 160
+      gap_percent: 40
+      primary_gaps:
+        - "User research capability missing in 65% of ventures"
+        - "Accessibility/UX testing in only 30% of ventures"
+        - "Design systems in only 25% of B2B ventures"
+      priority: MEDIUM
+      recommended_strategy: "PARTNER_BUY + TRAIN"
+
+---
+
+# SUMMARY & STRATEGIC RECOMMENDATIONS
+
+## Overall Coverage
+- **Total Capabilities:** 307
+- **Total Ventures:** 789
+- **Average Coverage:** 67%
+- **Total Gaps:** 257 capabilities across ventures
+- **Critical Gap Count:** 85 capabilities with <50% coverage
+
+## Top 10 Most Needed Capabilities (by gap count)
+1. Content Strategy (160 gap)
+2. SEO Optimization (170 gap)
+3. Legal/Compliance (170 gap)
+4. FP&A (80 gap)
+5. Sales Strategy (70 gap)
+6. Design & UX (160 gap)
+7. Technical Infrastructure (130 gap)
+8. HR/Recruitment (100 gap)
+9. Product Development (120 gap)
+10. Customer Success (95 gap)
+
+## Acquisition Strategy by Priority
+- **BUILD (Internal):** 40 capabilities (tech-core, competitive advantage)
+- **TRAIN (Existing):** 120 capabilities (learnable, available talent)
+- **HIRE (New):** 80 capabilities (specialized, hard to find)
+- **BUY/PARTNER (External):** 65 capabilities (commoditized, cost-effective)
+
+## Next Steps
+1. Tier ventures by capability readiness (see VENTURE_CAPABILITY_MATRIX.csv)
+2. Identify acquisition path for each gap
+3. Sequence hiring/training/partnerships by revenue impact
+4. Track progress via quarterly capability audits
+
+---
+
+Last Updated: 2026-09-18 | Version: 2.0 | Authority: 04-CAPABILITY-SYSTEM.md

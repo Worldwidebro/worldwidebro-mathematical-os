@@ -306,6 +306,54 @@ Master reference for all wiki link alternatives in Company Brain.
 
 ---
 
+### _REGISTRIES/CANONICAL/AGENT_REGISTRY.yaml
+**Primary:** [[_REGISTRIES/CANONICAL/AGENT_REGISTRY.yaml|AGENT_REGISTRY]]
+**Aliases:**
+- [[AGENT-REGISTRY]]
+- [[Agent Inventory]]
+- [[318 Agents]]
+- [[Agent Capabilities & Performance]]
+
+**Usage:** Complete inventory of 309 agents with capabilities, performance metrics, autonomy levels, and capacity.
+
+---
+
+### _REGISTRIES/CANONICAL/CAPABILITY_REGISTRY.yaml
+**Primary:** [[_REGISTRIES/CANONICAL/CAPABILITY_REGISTRY.yaml|CAPABILITY_REGISTRY]]
+**Aliases:**
+- [[CAPABILITY-REGISTRY]]
+- [[307 Capabilities]]
+- [[Capability Inventory]]
+- [[What We Can Do]]
+
+**Usage:** Inventory of 307 capabilities with agents, skills, tools, and revenue per use.
+
+---
+
+### _REGISTRIES/CANONICAL/SKILL_REGISTRY.yaml
+**Primary:** [[_REGISTRIES/CANONICAL/SKILL_REGISTRY.yaml|SKILL_REGISTRY]]
+**Aliases:**
+- [[SKILL-REGISTRY]]
+- [[527 Skills]]
+- [[Skill Inventory]]
+- [[Discrete Skills Catalog]]
+
+**Usage:** Comprehensive registry of 527 discrete skills across research, sales, marketing, engineering, operations, and soft skills.
+
+---
+
+### _REGISTRIES/CANONICAL/COMPREHENSIVE_CAPABILITY_MATRIX.yaml
+**Primary:** [[_REGISTRIES/CANONICAL/COMPREHENSIVE_CAPABILITY_MATRIX.yaml|CAPABILITY_MATRIX]]
+**Aliases:**
+- [[CAPABILITY-GAP-MATRIX]]
+- [[Capability-Gap]]
+- [[Coverage Analysis]]
+- [[Venture Capability Gaps]]
+
+**Usage:** Gap analysis for all 307 capabilities across 789 ventures with acquisition strategies and cost/timeline estimates.
+
+---
+
 ### _MEMORY/MEMORY-OS.md
 **Primary:** [[_MEMORY/MEMORY-OS|MEMORY-OS]]
 **Usage:** Memory operating system (10-stage cognitive cycle).
