@@ -5,9 +5,15 @@ phase: Phase 2 (Local Autonomy)
 updated: 2026-09-17
 ---
 
+[[STARTHERE]] | [[REALITY]] | [[20-DECISIONS/PHASE-2-RESEARCH-TO-REVENUE-ROADMAP]]
+
 # Tool Gateway & Permissions Framework
 
-**Goal:** Every agent action goes through permission check before execution.
+**Authority:** [[_REGISTRIES/CANONICAL/LOGIC_LAYERS_REGISTRY.yaml|LOGIC-055 through LOGIC-060]] (Thought/Decision layer)  
+**Part of:** [[20-DECISIONS/PHASE-2-RESEARCH-TO-REVENUE-ROADMAP|Phase 2 Research-to-Revenue Engine]] → Research Agent System (Jan 2027)  
+**Related:** [[_DOCS/LOGIC-ARCHITECTURE-FRAMEWORK.md|Logic Architecture Framework]] (L2/L3 autonomous execution patterns)
+
+**Goal:** Every agent action goes through permission check before execution, enforcing [[RESPECT|20 governance rules]] and [[ANTIGRAVITY|45 operating principles]].
 
 ## Tool Categories
 

@@ -5,9 +5,14 @@ phase: Phase 2 (Local Autonomy)
 updated: 2026-09-17
 ---
 
+[[STARTHERE]] | [[REALITY]] | [[20-DECISIONS/PHASE-2-RESEARCH-TO-REVENUE-ROADMAP]]
+
 # System State Model
 
-**Goal:** "What is true right now?" queryable in <100ms.
+**Authority:** [[_REGISTRIES/CANONICAL/LOGIC_LAYERS_REGISTRY.yaml|LOGIC-007 through LOGIC-012]] (Observation layer)  
+**Part of:** [[20-DECISIONS/PHASE-2-RESEARCH-TO-REVENUE-ROADMAP|Phase 2 Research-to-Revenue Engine]] → Graph Infrastructure (Dec 2026)
+
+**Goal:** "What is true right now?" queryable in <100ms via [[_PIPELINES/GRAPH-INGESTION-PIPELINE.md|graph ingestion]] and [[CLAUDE.md#Infrastructure Status|live infrastructure queries]].
 
 ## Core State Queries
 

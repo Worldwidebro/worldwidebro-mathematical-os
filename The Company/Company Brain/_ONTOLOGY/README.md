@@ -24,13 +24,18 @@ While [[07-ONTOLOGY/README|07-ONTOLOGY]] provides the human-readable architectur
 
 ---
 
-## 2. Core Machine Schemas & Specifications (16 Files)
+## 2. Core Machine Schemas & Specifications
 
+### Master Ontologies (RDF/XML Format)
 | File | Type | Purpose & Scope |
 |---|:---:|---|
-| **`COGNITION_FLOW.yaml`** | YAML | 22-stage cognitive pipeline (WORLD $
-ightarrow$ EVOLUTION $
-ightarrow$ WORLD) |
+| **`COMPANY-BRAIN-ONTOLOGY.xml`** | RDF/XML | Master ontology with 35+ entity types, 30+ relationship types, 12 domains, control planes, provenance metadata |
+| **`RESEARCH-INTELLIGENCE-LAYER.xml`** | RDF/XML | Research entity types (papers, authors, claims, evidence, experiments), 20+ relationship types, 11-level evidence hierarchy, adoption states |
+
+### YAML Schemas (Phase 0)
+| File | Type | Purpose & Scope |
+|---|:---:|---|
+| **`COGNITION_FLOW.yaml`** | YAML | 22-stage cognitive pipeline (WORLD → EVOLUTION → WORLD) |
 | **`FABRICS.yaml`** | YAML | 9 cognitive fabrics (REALITY, INFO, KNOWLEDGE, COGNITION, DISCOVERY, DECISION, AGENT, EXECUTION, LEARNING) |
 | **`OBJECT_TYPES.yaml`** | YAML | 60+ core object types across 12 organizational categories |
 | **`OBJECTS_EXTENDED.yaml`** | YAML | Extended property schemas for specialized domain entities |
@@ -46,6 +51,20 @@ ightarrow$ WORLD) |
 | **`MASTER_SCHEMA.xml`** | XML | Complete XML enterprise schema definition |
 | **`ONTOLOGY.xsd`** | XSD | W3C XML Schema Definition validating ontology structure |
 | **`LABOR_MARKET_ONTOLOGY.md`** | Markdown | 12-layer labor market & workforce capability ontology (OPS-001) |
+
+---
+
+## 2b. Typed Wikilinks & RDF/XML Integration
+
+**Human Authoring Layer:** [[_DOCS/TYPED-WIKILINKS-GUIDE.md]]
+- Markdown with typed relationships: `relationship::[[Target]]`
+- 15 relationship families (ORGANIZATION, BUSINESS, AGENTS, CAPABILITIES, SOFTWARE, WORKFLOWS, BUSINESS LOGIC, DECISIONS, KNOWLEDGE, STATE/EVENT, EVALUATION, DEPENDENCY, TEMPORAL, GOVERNANCE, LEARNING)
+- Frontmatter structure (id, type, name, layer-number, control-plane, domain)
+
+**Machine Interchange Layer:** RDF/XML
+- COMPANY-BRAIN-ONTOLOGY.xml and RESEARCH-INTELLIGENCE-LAYER.xml define entity/relationship types
+- [[_PIPELINES/GRAPH-INGESTION-PIPELINE.md|Graph Ingestion Pipeline]] converts Markdown → XML → Neo4j
+- Preserves provenance, confidence, and relationship semantics
 
 ---
 

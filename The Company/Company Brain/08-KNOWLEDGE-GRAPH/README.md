@@ -24,12 +24,21 @@ updated: 2026-09-06
 
 ## 2. Core Graph Infrastructure & Documents
 
+### Graph Technology Stack
 | Component | Document | Scope & Specification |
 |:---|:---|:---|
 | **Relational Store** | [[09-KNOWLEDGE/Neo4j|Neo4j Graph Database]] | `civos_neo4j` Docker container (:7687 Bolt, :7474 HTTP) |
 | **Bitemporal Schema** | [[09-KNOWLEDGE/Utopia-World-Model|Utopia World Model]] | Valid time (`valid_from`/`to`) vs. Transaction time (`tx_from`/`to`) |
 | **Unified Search** | [[09-KNOWLEDGE/Query-Engine|Unified Query Engine]] | Multi-modal federated queries joining graph paths with vectors |
 | **Import Automation** | `_REGISTRIES/RECONCILIATION_2026_09_01/COMPANY_BRAIN_NEO4J_IMPORT.cypher` | Automated ingestion script loading 789 ventures & 893 repos |
+
+### Typed Wikilinks & RDF/XML Ontology
+| Component | Document | Scope & Specification |
+|:---|:---|:---|
+| **Human Authoring Layer** | [[_DOCS/TYPED-WIKILINKS-GUIDE.md]] | Markdown with relationship::[[Target]] syntax, 15 relationship families, frontmatter structure |
+| **Machine Ontology** | [[_ONTOLOGY/COMPANY-BRAIN-ONTOLOGY.xml]] | RDF/XML master ontology with entity/relationship type definitions, control planes, domains |
+| **Graph Ingestion Pipeline** | [[_PIPELINES/GRAPH-INGESTION-PIPELINE.md]] | 10-stage pipeline: Markdown → normalize → extract entities/relationships → validate → XML/RDF → Neo4j |
+| **Query Patterns** | [[_PIPELINES/GRAPH-INGESTION-PIPELINE.md#Query Patterns]] | Direct lookup, relationship traversal, dependency chains, semantic search via Qdrant |
 
 ---
 

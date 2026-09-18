@@ -5,9 +5,15 @@ phase: Phase 2 (Local Autonomy)
 updated: 2026-09-17
 ---
 
+[[STARTHERE]] | [[REALITY]] | [[20-DECISIONS/PHASE-2-RESEARCH-TO-REVENUE-ROADMAP]]
+
 # Autonomous Loop Specification
 
-**Goal:** Define the exact steps every autonomous agent loop executes.
+**Authority:** [[_REGISTRIES/CANONICAL/LOGIC_LAYERS_REGISTRY.yaml|LOGIC-049 through LOGIC-072]] (Cognition, Thought, Decision, Action layers)  
+**Part of:** [[20-DECISIONS/PHASE-2-RESEARCH-TO-REVENUE-ROADMAP|Phase 2 Research-to-Revenue Engine]] → Complete autonomous loop (Mar 2027)  
+**Reference:** [[_DOCS/LOGIC-ARCHITECTURE-FRAMEWORK.md#Autonomous Loop Pattern|Logic Architecture: Autonomous Loop Pattern]]
+
+**Goal:** Define the exact steps every autonomous agent loop executes, following [[_DOCS/LOGIC-ARCHITECTURE-FRAMEWORK.md|72-logic-layers]] framework with [[RESPECT|governance]] and [[ANTIGRAVITY|operating principles]].
 
 ## Loop Anatomy (7 Steps)
 
