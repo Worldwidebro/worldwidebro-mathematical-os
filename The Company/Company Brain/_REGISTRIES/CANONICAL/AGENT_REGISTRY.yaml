@@ -1,283 +1,3354 @@
-# AGENT_REGISTRY.yaml
-# Master registry of all 275 agents in Company Brain
-# Maps agents to: logic layers, control planes, capabilities, skills, tools, autonomy levels
-# Status: SKELETON (sample of 10 agents, remaining 265 to be auto-generated)
-# Updated: 2026-09-17
-# Authority: CP-001, CP-027, CP-032, CP-050
-
-agents:
-
-  # ============================================================
-  # SAMPLE AGENTS (auto-generated from .claude/agents/)
-  # ============================================================
-
-  agent_business_strategist:
-    id: agent-business-strategist-001
-    name: Business Strategist
-    file_path: .claude/agents/business-strategist.md
-    description: "Senior management consulting specialist for competitive analysis, market entry strategy, business model design, growth planning"
+agents_inventory:
+  total_agents: 309
+  status: All agents extracted
+  deployment_phase: "Phase 1 (2 live) \u2192 Phase 2a (50 by Dec 2026)"
+  agents:
+  - id: agent-academic-anthropologist-001
+    name: Anthropologist
+    file: academic-anthropologist.md
+    domain: 37-RESEARCH
+    category: academic
+    description: "Expert in cultural systems, rituals, kinship, belief systems, and\
+      \ ethnographic method \u2014 builds culturally coherent societies that feel\
+      \ lived-in rather than invented"
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-academic-geographer-001
+    name: Geographer
+    file: academic-geographer.md
+    domain: 37-RESEARCH
+    category: academic
+    description: "Expert in physical and human geography, climate systems, cartography,\
+      \ and spatial analysis \u2014 builds geographically coherent worlds where terrain,\
+      \ climate, resources, and settlement patterns make scien"
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-academic-historian-001
+    name: Historian
+    file: academic-historian.md
+    domain: 37-RESEARCH
+    category: academic
+    description: "Expert in historical analysis, periodization, material culture,\
+      \ and historiography \u2014 validates historical coherence and enriches settings\
+      \ with authentic period detail grounded in primary and secondary"
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-academic-narratologist-001
+    name: Narratologist
+    file: academic-narratologist.md
+    domain: 37-RESEARCH
+    category: academic
+    description: "Expert in narrative theory, story structure, character arcs, and\
+      \ literary analysis \u2014 grounds advice in established frameworks from Propp\
+      \ to Campbell to modern narratology"
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-academic-psychologist-001
+    name: Psychologist
+    file: academic-psychologist.md
+    domain: 37-RESEARCH
+    category: academic
+    description: "Expert in human behavior, personality theory, motivation, and cognitive\
+      \ patterns \u2014 builds psychologically credible characters and interactions\
+      \ grounded in clinical and research frameworks"
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-academic-statistician-001
+    name: Statistician
+    file: academic-statistician.md
+    domain: 37-RESEARCH
+    category: academic
+    description: "Expert in quantitative research methodology, experimental design,\
+      \ and statistical inference \u2014 pressure-tests claims, designs sound studies,\
+      \ and separates real signal from noise, chance, and bias"
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-accounts-payable-agent-001
+    name: Accounts Payable Agent
+    file: accounts-payable-agent.md
     domain: 01-IDENTITY
-    logic_layers: [LOGIC-001, LOGIC-049, LOGIC-061]  # WORLD, COGNITION, DECISION
-    control_planes: [CP-001, CP-009, CP-011]  # Strategic, Cognition, Decision
-    capabilities: [market-analysis, competitive-positioning, strategy-design, growth-planning]
-    required_skills: [research, synthesis, storytelling]
-    required_tools: [neo4j, qdrant, webfetch, websearch]
-    required_mcps: [claude-ai-Make, claude_ai_Google_Drive, claude_ai_ClickUp]
-    autonomy_level: L1  # Human approval required
-    trustworthiness_score: 0.92
-    cost_per_use_usd: 5.00
-    expected_duration_minutes: 120
-    success_rate_percent: 94
-    last_verified: 2026-09-17
-    sectors_applicable: [SEC-030, SEC-031, SEC-032]  # Finance, Venture Capital, Private Equity
-    ventures_deployed: [RE-001]
-
-  agent_backend_architect:
-    id: agent-backend-architect-001
-    name: Backend Architect
-    file_path: .claude/agents/engineering-backend-architect.md
-    description: "Senior backend architect specializing in scalable system design, database architecture, API development, cloud infrastructure"
-    domain: 16-AGENTS
-    logic_layers: [LOGIC-025, LOGIC-049, LOGIC-067]  # KNOWLEDGE, COGNITION, ACTION
-    control_planes: [CP-005, CP-009, CP-012]  # Knowledge, Cognition, Action
-    capabilities: [system-design, database-architecture, api-development, cloud-infra]
-    required_skills: [coding, architecture, system-thinking]
-    required_tools: [github, bash, docker]
-    required_mcps: [claude-ai-GitHub, claude_ai_Supabase, mcp__docker]
-    autonomy_level: L2  # Assisted execution
-    trustworthiness_score: 0.96
-    cost_per_use_usd: 3.00
-    expected_duration_minutes: 90
-    success_rate_percent: 97
-    last_verified: 2026-09-17
-    sectors_applicable: [SEC-003, SEC-004]  # Software Development
-    ventures_deployed: [worldwidebro-venture-portal, worldwidebro-agents]
-
-  agent_research_discovery:
-    id: agent-research-discovery-001
-    name: Research Discovery Agent
-    file_path: .claude/agents/research-discovery-agent.md
-    description: "Autonomously discovers relevant research papers, tracks authors and institutions, identifies breakthrough research"
-    domain: 42-RESEARCH-INTELLIGENCE
-    logic_layers: [LOGIC-007, LOGIC-037, LOGIC-045]  # OBSERVATION, RETRIEVAL, CONTEXT
-    control_planes: [CP-002, CP-007, CP-008]  # Observation, Retrieval, Context
-    capabilities: [paper-discovery, author-tracking, trend-detection]
-    required_skills: [research, literature-review, semantic-search]
-    required_tools: [webfetch, websearch, qdrant]
-    required_mcps: [mcp__Tavily, mcp__plugin_everything_claude_code_exa]
-    autonomy_level: L3  # Fully autonomous
-    trustworthiness_score: 0.94
-    cost_per_use_usd: 0.50
-    expected_duration_minutes: 30
-    success_rate_percent: 92
-    last_verified: 2026-09-17
-    sectors_applicable: [SEC-001, SEC-002, SEC-003]  # All tech sectors
-    ventures_deployed: [all]
-
-  agent_appointment_setter:
-    id: agent-appointment-setter-001
-    name: Appointment Setter
-    file_path: repos/worldwidebro-agents/src/agents/AppointmentSetter.js
-    description: "Schedules appointments via calendar integration, handles conflicts and rescheduling"
-    domain: 16-AGENTS
-    logic_layers: [LOGIC-067, LOGIC-068, LOGIC-069]  # ACTION
-    control_planes: [CP-012]  # Action
-    capabilities: [appointment-scheduling, calendar-management, conflict-resolution]
-    required_skills: [tool-integration, time-management]
-    required_tools: [google-calendar, clickup]
-    required_mcps: [mcp__claude_ai_Google_Calendar, mcp__claude_ai_ClickUp]
-    autonomy_level: L3  # Fully autonomous
-    trustworthiness_score: 0.98
-    cost_per_use_usd: 0.10
-    expected_duration_minutes: 5
-    success_rate_percent: 99
-    last_verified: 2026-09-17
-    sectors_applicable: [all]
-    ventures_deployed: [OPS-001, LT-005, CALLCENTER]
-
-  agent_closer:
-    id: agent-closer-001
-    name: Deal Closer
-    file_path: repos/worldwidebro-agents/src/agents/Closer.js
-    description: "Closes deals by sending contracts, following up on signatures, handling objections"
-    domain: 30-REVENUE
-    logic_layers: [LOGIC-061, LOGIC-065, LOGIC-066]  # DECISION
-    control_planes: [CP-011]  # Decision
-    capabilities: [deal-closing, contract-management, follow-up]
-    required_skills: [sales, negotiation, communication]
-    required_tools: [stripe, gmail, docusign]
-    required_mcps: [mcp__claude_ai_Gmail, mcp__claude_ai_Stripe]
-    autonomy_level: L2  # Assisted (legal review required)
-    trustworthiness_score: 0.91
-    cost_per_use_usd: 2.00
-    expected_duration_minutes: 45
-    success_rate_percent: 88
-    last_verified: 2026-09-17
-    sectors_applicable: [SEC-030, SEC-031, SEC-032]  # Sales-driven sectors
-    ventures_deployed: [LT-005, OPS-001, RE-001]
-
-  agent_douyin_strategist:
-    id: agent-douyin-strategist-001
-    name: Douyin Strategist
-    file_path: .claude/agents/marketing-douyin-strategist.md
-    description: "Expert Douyin marketing strategist specializing in short-video content, livestream commerce, grassroots audience growth"
-    domain: 30-REVENUE
-    logic_layers: [LOGIC-019, LOGIC-049, LOGIC-061]  # INFORMATION, COGNITION, DECISION
-    control_planes: [CP-004, CP-009, CP-011]
-    capabilities: [short-video-marketing, livestream-commerce, audience-growth]
-    required_skills: [marketing, content-strategy, platform-expertise]
-    required_tools: [webfetch, websearch]
-    required_mcps: []
-    autonomy_level: L1  # Strategy review required
-    trustworthiness_score: 0.89
-    cost_per_use_usd: 3.00
-    expected_duration_minutes: 60
-    success_rate_percent: 85
-    last_verified: 2026-09-17
-    sectors_applicable: [SEC-024, SEC-025, SEC-026]  # China market sectors
-    ventures_deployed: [CALLCENTER, deliv-713]
-
-  agent_healthcare_compliance:
-    id: agent-healthcare-compliance-001
-    name: Healthcare Compliance Auditor
-    file_path: .claude/agents/healthcare-reviewer.md
-    description: "Reviews healthcare application code for clinical safety, CDSS accuracy, PHI compliance, medical data integrity"
-    domain: 32-SECURITY
-    logic_layers: [LOGIC-049, LOGIC-050, LOGIC-066]  # COGNITION
-    control_planes: [CP-009, CP-011]
-    capabilities: [compliance-audit, clinical-safety, data-integrity]
-    required_skills: [healthcare-domain, compliance, code-review]
-    required_tools: [github, bash]
-    required_mcps: [mcp__plugin_everything_claude_code_github]
-    autonomy_level: L1  # Compliance team approval
-    trustworthiness_score: 0.97
-    cost_per_use_usd: 4.00
-    expected_duration_minutes: 90
-    success_rate_percent: 99
-    last_verified: 2026-09-17
-    sectors_applicable: [SEC-007, SEC-008]  # Healthcare sectors
-    ventures_deployed: [LT-005]
-
-  agent_gitnexus_debugger:
-    id: agent-gitnexus-debugger-001
-    name: GitNexus Debugging Agent
-    file_path: repos/worldwidebro-venture-portal/.claude/skills/gitnexus/gitnexus-debugging/SKILL.md
-    description: "Debugs code using GitNexus skill, finds root causes, generates fixes"
-    domain: 16-AGENTS
-    logic_layers: [LOGIC-049, LOGIC-050, LOGIC-067]  # COGNITION, ACTION
-    control_planes: [CP-009, CP-012]
-    capabilities: [code-debugging, error-analysis, fix-generation]
-    required_skills: [gitnexus, code-analysis]
-    required_tools: [github, bash]
-    required_mcps: [mcp__plugin_everything_claude_code_github]
-    autonomy_level: L2  # Code review before merge
-    trustworthiness_score: 0.94
-    cost_per_use_usd: 1.00
-    expected_duration_minutes: 30
-    success_rate_percent: 91
-    last_verified: 2026-09-17
-    sectors_applicable: [all]
-    ventures_deployed: [worldwidebro-venture-portal]
-
-  agent_data_consolidation:
-    id: agent-data-consolidation-001
+    category: accounts
+    description: "Autonomous payment processing specialist that executes vendor payments,\
+      \ contractor invoices, and recurring bills across any payment rail \u2014 crypto,\
+      \ fiat, stablecoins. Integrates with AI agent workflows"
+    autonomy_level: L3
+    deployed: false
+    status: READY
+  - id: agent-agentic-identity-trust-001
+    name: Agentic Identity & Trust Architect
+    file: agentic-identity-trust.md
+    domain: 01-IDENTITY
+    category: agentic
+    description: Designs identity, authentication, and trust verification systems
+      for autonomous AI agents operating in multi-agent environments. Ensures agents
+      can prove who they are, what they're authorized to do, a
+    autonomy_level: L3
+    deployed: false
+    status: READY
+  - id: agent-agents-orchestrator-001
+    name: Agents Orchestrator
+    file: agents-orchestrator.md
+    domain: 01-IDENTITY
+    category: agents
+    description: Autonomous pipeline manager that orchestrates the entire development
+      workflow. You are the leader of this process.
+    autonomy_level: L3
+    deployed: false
+    status: READY
+  - id: agent-automation-governance-architect-001
+    name: Automation Governance Architect
+    file: automation-governance-architect.md
+    domain: 01-IDENTITY
+    category: automation
+    description: Governance-first architect for business automations (n8n-first) who
+      audits value, risk, and maintainability before implementation.
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-blender-addon-engineer-001
+    name: Blender Add-on Engineer
+    file: blender-addon-engineer.md
+    domain: 01-IDENTITY
+    category: blender
+    description: Blender tooling specialist - Builds Python add-ons, asset validators,
+      exporters, and pipeline automations that turn repetitive DCC work into reliable
+      one-click workflows
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-business-strategist-001
+    name: Business Strategist
+    file: business-strategist.md
+    domain: 01-IDENTITY
+    category: business
+    description: "Senior management consulting specialist for competitive analysis,\
+      \ market entry strategy, business model design, growth planning, organizational\
+      \ strategy, and strategic decision-making \u2014 translating co"
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-change-management-consultant-001
+    name: Change Management Consultant
+    file: change-management-consultant.md
+    domain: 01-IDENTITY
+    category: change
+    description: "Expert change management specialist using ADKAR, Kotter, and Prosci\
+      \ frameworks to guide organizations through technology implementations, restructuring,\
+      \ culture transformation, and M&A integration \u2014 m"
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-chief-financial-officer-001
+    name: Chief Financial Officer
+    file: chief-financial-officer.md
+    domain: 01-IDENTITY
+    category: chief
+    description: "Strategic finance executive who governs capital allocation, treasury\
+      \ operations, financial planning, M&A finance, investor relations, and board\
+      \ reporting \u2014 translating financial complexity into clear "
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-corporate-training-designer-001
+    name: Corporate Training Designer
+    file: corporate-training-designer.md
+    domain: 01-IDENTITY
+    category: corporate
+    description: "Expert in enterprise training system design and curriculum development\
+      \ \u2014 proficient in training needs analysis, instructional design methodology,\
+      \ blended learning program design, internal trainer deve"
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-customer-service-001
+    name: Customer Service
+    file: customer-service.md
+    domain: 05-CUSTOMER-SERVICE
+    category: customer
+    description: "Friendly, professional customer service specialist for any industry\
+      \ \u2014 handling inquiries, complaints, account support, FAQs, and seamless\
+      \ escalation with warmth, efficiency, and a genuine commitment t"
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-customer-success-manager-001
+    name: Customer Success Manager
+    file: customer-success-manager.md
+    domain: 05-CUSTOMER-SERVICE
+    category: customer
+    description: "Strategic customer success specialist for onboarding, health scoring,\
+      \ QBR facilitation, churn prevention, expansion identification, and renewal\
+      \ management \u2014 driving net revenue retention by turning cu"
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-data-consolidation-agent-001
     name: Data Consolidation Agent
-    file_path: .claude/agents/data-consolidation-agent.md
-    description: "Consolidates extracted sales data into live reporting dashboards with territory, rep, and pipeline summaries"
+    file: data-consolidation-agent.md
+    domain: 38-DATA
+    category: data
+    description: AI agent that consolidates extracted sales data into live reporting
+      dashboards with territory, rep, and pipeline summaries
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-data-privacy-officer-001
+    name: Data Privacy Officer
+    file: data-privacy-officer.md
+    domain: 38-DATA
+    category: data
+    description: "Corporate data privacy specialist and DPO who builds GDPR, CCPA,\
+      \ and global privacy compliance programs \u2014 covering data mapping, privacy\
+      \ impact assessments, consent management, breach response, vendor"
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-design-brand-guardian-001
+    name: Brand Guardian
+    file: design-brand-guardian.md
+    domain: 34-PRODUCT
+    category: design
+    description: Expert brand strategist and guardian specializing in brand identity
+      development, consistency maintenance, and strategic brand positioning
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-design-image-prompt-engineer-001
+    name: Image Prompt Engineer
+    file: design-image-prompt-engineer.md
+    domain: 34-PRODUCT
+    category: design
+    description: Expert photography prompt engineer specializing in crafting detailed,
+      evocative prompts for AI image generation. Masters the art of translating visual
+      concepts into precise language that produces stun
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-design-inclusive-visuals-specialist-001
+    name: Inclusive Visuals Specialist
+    file: design-inclusive-visuals-specialist.md
+    domain: 34-PRODUCT
+    category: design
+    description: Representation expert who defeats systemic AI biases to generate
+      culturally accurate, affirming, and non-stereotypical images and video.
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-design-persona-walkthrough-001
+    name: Persona Walkthrough Specialist
+    file: design-persona-walkthrough.md
+    domain: 34-PRODUCT
+    category: design
+    description: "Simulate cognitive walkthroughs of web pages from a defined persona's\
+      \ psychological perspective \u2014 captures emotional reactions and rational\
+      \ thought at each scroll position, then delivers structured CR"
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-design-ui-designer-001
+    name: UI Designer
+    file: design-ui-designer.md
+    domain: 34-PRODUCT
+    category: design
+    description: Expert UI designer specializing in visual design systems, component
+      libraries, and pixel-perfect interface creation. Creates beautiful, consistent,
+      accessible user interfaces that enhance UX and refle
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-design-ui-finish-gate-reviewer-001
+    name: UI Finish-Gate Reviewer
+    file: design-ui-finish-gate-reviewer.md
+    domain: 34-PRODUCT
+    category: design
+    description: Product-interface reviewer who catches generic, interchangeable UI
+      before it ships by grounding critique in real product evidence, a written design
+      contract, and a hard implementation finish gate.
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-design-ux-architect-001
+    name: UX Architect
+    file: design-ux-architect.md
+    domain: 34-PRODUCT
+    category: design
+    description: Technical architecture and UX specialist who provides developers
+      with solid foundations, CSS systems, and clear implementation guidance
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-design-ux-researcher-001
+    name: UX Researcher
+    file: design-ux-researcher.md
+    domain: 34-PRODUCT
+    category: design
+    description: Expert user experience researcher specializing in user behavior analysis,
+      usability testing, and data-driven design insights. Provides actionable research
+      findings that improve product usability and u
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-design-visual-storyteller-001
+    name: Visual Storyteller
+    file: design-visual-storyteller.md
+    domain: 34-PRODUCT
+    category: design
+    description: Expert visual communication specialist focused on creating compelling
+      visual narratives, multimedia content, and brand storytelling through design.
+      Specializes in transforming complex information into
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-design-whimsy-injector-001
+    name: Whimsy Injector
+    file: design-whimsy-injector.md
+    domain: 34-PRODUCT
+    category: design
+    description: Expert creative specialist focused on adding personality, delight,
+      and playful elements to brand experiences. Creates memorable, joyful interactions
+      that differentiate brands through unexpected moment
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-economy-designer-001
+    name: Economy Designer
+    file: economy-designer.md
+    domain: 01-IDENTITY
+    category: economy
+    description: Virtual economy architect - Masters currency systems, sources and
+      sinks, monetization modeling, inflation control, and data-driven economic balancing
+      for live games
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-engineering-ai-data-remediation-engineer-001
+    name: AI Data Remediation Engineer
+    file: engineering-ai-data-remediation-engineer.md
+    domain: 16-AGENTS
+    category: engineering
+    description: "Specialist in self-healing data pipelines \u2014 uses air-gapped\
+      \ local SLMs and semantic clustering to automatically detect, classify, and\
+      \ fix data anomalies at scale. Focuses exclusively on the remediatio"
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-engineering-ai-engineer-001
+    name: AI Engineer
+    file: engineering-ai-engineer.md
+    domain: 16-AGENTS
+    category: engineering
+    description: 'Expert AI/ML engineer specializing in machine learning model development,
+      deployment, and integration into production systems. Focused on building intelligent
+      features, data pipelines, and AI-powered '
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-engineering-api-platform-engineer-001
+    name: API Platform Engineer
+    file: engineering-api-platform-engineer.md
+    domain: 16-AGENTS
+    category: engineering
+    description: "Expert API platform engineer for public and partner APIs \u2014\
+      \ contract-first design (OpenAPI/gRPC), versioning and deprecation policy, SDK\
+      \ generation, API gateway concerns (auth, rate limiting, quotas), "
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-engineering-autonomous-optimization-architect-001
+    name: Autonomous Optimization Architect
+    file: engineering-autonomous-optimization-architect.md
+    domain: 16-AGENTS
+    category: engineering
+    description: Intelligent system governor that continuously shadow-tests APIs for
+      performance while enforcing strict financial and security guardrails against
+      runaway costs.
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-engineering-backend-architect-001
+    name: Backend Architect
+    file: engineering-backend-architect.md
+    domain: 16-AGENTS
+    category: engineering
+    description: Senior backend architect specializing in scalable system design,
+      database architecture, API development, and cloud infrastructure. Builds robust,
+      secure, performant server-side applications and micros
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-engineering-cms-developer-001
+    name: CMS Developer
+    file: engineering-cms-developer.md
+    domain: 16-AGENTS
+    category: engineering
+    description: Drupal and WordPress specialist for theme development, custom plugins/modules,
+      content architecture, and code-first CMS implementation
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-engineering-code-reviewer-001
+    name: Code Reviewer
+    file: engineering-code-reviewer.md
+    domain: 16-AGENTS
+    category: engineering
+    description: "Expert code reviewer who provides constructive, actionable feedback\
+      \ focused on correctness, maintainability, security, and performance \u2014\
+      \ not style preferences."
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-engineering-codebase-onboarding-engineer-001
+    name: Codebase Onboarding Engineer
+    file: engineering-codebase-onboarding-engineer.md
+    domain: 16-AGENTS
+    category: engineering
+    description: Expert developer onboarding specialist who helps new engineers understand
+      unfamiliar codebases fast by reading source code, tracing code paths, and stating
+      only facts grounded in the code.
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-engineering-data-engineer-001
+    name: Data Engineer
+    file: engineering-data-engineer.md
+    domain: 16-AGENTS
+    category: engineering
+    description: 'Expert data engineer specializing in building reliable data pipelines,
+      lakehouse architectures, and scalable data infrastructure. Masters ETL/ELT,
+      Apache Spark, dbt, streaming systems, and cloud data '
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-engineering-data-visualization-engineer-001
+    name: Data Visualization Engineer
+    file: engineering-data-visualization-engineer.md
+    domain: 16-AGENTS
+    category: engineering
+    description: "Expert data visualization engineer \u2014 chart-type selection by\
+      \ data and question, perceptually honest encodings, colorblind-safe data palettes,\
+      \ accessible and interactive charts, and rendering large dat"
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-engineering-database-optimizer-001
+    name: Database Optimizer
+    file: engineering-database-optimizer.md
+    domain: 16-AGENTS
+    category: engineering
+    description: Expert database specialist focusing on schema design, query optimization,
+      indexing strategies, and performance tuning for PostgreSQL, MySQL, and modern
+      databases like Supabase and PlanetScale.
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-engineering-database-reliability-engineer-001
+    name: Database Reliability Engineer
+    file: engineering-database-reliability-engineer.md
+    domain: 16-AGENTS
+    category: engineering
+    description: "Expert database reliability engineer (DBRE) \u2014 high availability\
+      \ and replication, automated failover, backup and point-in-time recovery, zero-downtime\
+      \ online schema migrations, connection pooling, and "
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-engineering-desktop-app-engineer-001
+    name: Desktop App Engineer
+    file: engineering-desktop-app-engineer.md
+    domain: 16-AGENTS
+    category: engineering
+    description: "Expert desktop application engineer for Electron and Tauri \u2014\
+      \ secure IPC and process isolation, code signing and notarization, auto-update\
+      \ pipelines, native OS integration, and resource-footprint disci"
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-engineering-developer-tooling-engineer-001
+    name: Developer Tooling Engineer
+    file: engineering-developer-tooling-engineer.md
+    domain: 16-AGENTS
+    category: engineering
+    description: "Expert developer-tooling and CLI engineer \u2014 building command-line\
+      \ tools and internal developer platforms with great DX: intuitive command design,\
+      \ helpful errors, shell completions, fast startup, cross"
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-engineering-devops-automator-001
+    name: DevOps Automator
+    file: engineering-devops-automator.md
+    domain: 16-AGENTS
+    category: engineering
+    description: Expert DevOps engineer specializing in infrastructure automation,
+      CI/CD pipeline development, and cloud operations
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-engineering-drupal-performance-001
+    name: Drupal Performance Engineer
+    file: engineering-drupal-performance.md
+    domain: 16-AGENTS
+    category: engineering
+    description: 'Expert Drupal 10/11 performance engineer specializing in Core Web
+      Vitals, render and dynamic page caching, BigPipe, cache tags and contexts, database
+      query and Views optimization, CSS/JS aggregation, '
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-engineering-drupal-shopping-cart-001
+    name: Drupal Shopping Cart Engineer
+    file: engineering-drupal-shopping-cart.md
+    domain: 16-AGENTS
+    category: engineering
+    description: Expert Drupal e-commerce engineer specializing in Drupal Commerce
+      for product catalog management, payment gateway integration, checkout workflow
+      design, order management, tax and promotion configurati
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-engineering-email-intelligence-engineer-001
+    name: Email Intelligence Engineer
+    file: engineering-email-intelligence-engineer.md
+    domain: 16-AGENTS
+    category: engineering
+    description: Expert in extracting structured, reasoning-ready data from raw email
+      threads for AI agents and automation systems
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-engineering-embedded-firmware-engineer-001
+    name: Embedded Firmware Engineer
+    file: engineering-embedded-firmware-engineer.md
+    domain: 16-AGENTS
+    category: engineering
+    description: Specialist in bare-metal and RTOS firmware - ESP32/ESP-IDF, PlatformIO,
+      Arduino, ARM Cortex-M, STM32 HAL/LL, Nordic nRF5/nRF Connect SDK, FreeRTOS,
+      Zephyr
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-engineering-feishu-integration-developer-001
+    name: Feishu Integration Developer
+    file: engineering-feishu-integration-developer.md
+    domain: 16-AGENTS
+    category: engineering
+    description: "Full-stack integration expert specializing in the Feishu (Lark)\
+      \ Open Platform \u2014 proficient in Feishu bots, mini programs, approval workflows,\
+      \ Bitable (multidimensional spreadsheets), interactive messa"
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-engineering-filament-optimization-specialist-001
+    name: Filament Optimization Specialist
+    file: engineering-filament-optimization-specialist.md
+    domain: 16-AGENTS
+    category: engineering
+    description: "Expert in restructuring and optimizing Filament PHP admin interfaces\
+      \ for maximum usability and efficiency. Focuses on impactful structural changes\
+      \ \u2014 not just cosmetic tweaks."
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-engineering-finops-engineer-001
+    name: FinOps Engineer
+    file: engineering-finops-engineer.md
+    domain: 16-AGENTS
+    category: engineering
+    description: "Expert cloud cost engineer for AWS/GCP/Azure \u2014 cost allocation\
+      \ and tagging, rightsizing, commitment planning (reserved instances/savings\
+      \ plans), egress and storage optimization, and unit-economics das"
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-engineering-frontend-developer-001
+    name: Frontend Developer
+    file: engineering-frontend-developer.md
+    domain: 16-AGENTS
+    category: engineering
+    description: Expert frontend developer specializing in modern web technologies,
+      React/Vue/Angular frameworks, UI implementation, and performance optimization
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-engineering-gaussdb-expert-001
+    name: GaussDB Expert Engineer
+    file: engineering-gaussdb-expert.md
+    domain: 16-AGENTS
+    category: engineering
+    description: "Expert database specialist focusing on GaussDB OLTP \u2014 Huawei's\
+      \ self-developed enterprise-grade relational database (NOT GaussDB(DWS) OLAP,\
+      \ NOT GaussDB(for openGauss) cloud service, NOT GaussDB(for MyS"
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-engineering-git-workflow-master-001
+    name: Git Workflow Master
+    file: engineering-git-workflow-master.md
+    domain: 16-AGENTS
+    category: engineering
+    description: Expert in Git workflows, branching strategies, and version control
+      best practices including conventional commits, rebasing, worktrees, and CI-friendly
+      branch management.
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-engineering-i18n-engineer-001
+    name: Internationalization Engineer
+    file: engineering-i18n-engineer.md
+    domain: 16-AGENTS
+    category: engineering
+    description: Expert i18n engineer for ICU MessageFormat, CLDR plural rules, RTL
+      and bidirectional layouts, locale-aware date/number/currency formatting, string
+      extraction pipelines, and pseudo-localization testing
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-engineering-identity-access-engineer-001
+    name: Identity & Access Engineer
+    file: engineering-identity-access-engineer.md
+    domain: 16-AGENTS
+    category: engineering
+    description: Expert identity engineer for OAuth 2.0/OIDC flows, enterprise SSO
+      (SAML/OIDC) and SCIM provisioning, passkeys/WebAuthn, session architecture,
+      and multi-tenant authorization with RBAC/ABAC.
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-engineering-incident-response-commander-001
+    name: Incident Response Commander
+    file: engineering-incident-response-commander.md
+    domain: 16-AGENTS
+    category: engineering
+    description: Expert incident commander specializing in production incident management,
+      structured response coordination, post-mortem facilitation, SLO/SLI tracking,
+      and on-call process design for reliable engineer
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-engineering-iot-fleet-engineer-001
+    name: IoT Fleet Engineer
+    file: engineering-iot-fleet-engineer.md
+    domain: 16-AGENTS
+    category: engineering
+    description: "Expert IoT and edge fleet engineer \u2014 device provisioning and\
+      \ identity, MQTT/telemetry pipelines, staged over-the-air (OTA) firmware updates\
+      \ with rollback, edge compute, and observability across fleets"
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-engineering-it-service-manager-001
+    name: IT Service Manager
+    file: engineering-it-service-manager.md
+    domain: 16-AGENTS
+    category: engineering
+    description: Expert IT service management specialist using ITIL 4 framework for
+      service catalog design, incident and problem management, change control, SLA
+      governance, CMDB maintenance, and continual service impr
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-engineering-knowledge-graph-engineer-001
+    name: Knowledge Graph Engineer
+    file: engineering-knowledge-graph-engineer.md
+    domain: 16-AGENTS
+    category: engineering
+    description: "Structures information and capabilities into interconnected nodes\
+      \ (entities) and edges (relationships) \u2014 enabling dynamic context navigation,\
+      \ modular competency chaining, lower token costs, and halluc"
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-engineering-llm-post-training-engineer-001
+    name: LLM Post-Training Engineer
+    file: engineering-llm-post-training-engineer.md
+    domain: 16-AGENTS
+    category: engineering
+    description: Evidence-driven owner for SFT, preference optimization, RLHF/RLVR,
+      MoE post-training, and the release gates that turn a checkpoint into a defensible
+      model change.
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-engineering-minimal-change-engineer-001
+    name: Minimal Change Engineer
+    file: engineering-minimal-change-engineer.md
+    domain: 16-AGENTS
+    category: engineering
+    description: "Engineering specialist focused on minimum-viable diffs \u2014 fixes\
+      \ only what was asked, refuses scope creep, prefers three similar lines over\
+      \ a premature abstraction. The discipline that prevents bug-fix "
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-engineering-mobile-app-builder-001
+    name: Mobile App Builder
+    file: engineering-mobile-app-builder.md
+    domain: 16-AGENTS
+    category: engineering
+    description: Specialized mobile application developer with expertise in native
+      iOS/Android development and cross-platform frameworks
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-engineering-mobile-release-engineer-001
+    name: Mobile Release Engineer
+    file: engineering-mobile-release-engineer.md
+    domain: 16-AGENTS
+    category: engineering
+    description: "Expert mobile release and distribution engineer for iOS and Android\
+      \ \u2014 code signing, provisioning, fastlane pipelines, App Store Connect and\
+      \ Play Console submission, phased rollouts, and crash-triaged "
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-engineering-multi-agent-systems-architect-001
+    name: Multi-Agent Systems Architect
+    file: engineering-multi-agent-systems-architect.md
+    domain: 16-AGENTS
+    category: engineering
+    description: "Systems architect specializing in the design, coordination, and\
+      \ governance of multi-agent AI pipelines \u2014 covering topology selection,\
+      \ context management, inter-agent trust, failure recovery, human-in-"
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-engineering-network-engineer-001
+    name: Network Engineer
+    file: engineering-network-engineer.md
+    domain: 16-AGENTS
+    category: engineering
+    description: Expert network engineer for Cisco IOS/IOS-XE, Cisco ASA/FTD, Juniper
+      Junos, and Palo Alto PAN-OS routing, switching, firewalling, and troubleshooting.
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-engineering-orgscript-engineer-001
+    name: OrgScript Engineer
+    file: engineering-orgscript-engineer.md
+    domain: 16-AGENTS
+    category: engineering
+    description: Expert in designing, parsing, and implementing OrgScript grammar,
+      AST validation, and business logic definitions.
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-engineering-payments-billing-engineer-001
+    name: Payments & Billing Engineer
+    file: engineering-payments-billing-engineer.md
+    domain: 16-AGENTS
+    category: engineering
+    description: Expert payments engineer for PSP integrations (Stripe, Adyen, Braintree,
+      PayPal), idempotent payment flows, webhook processing, subscription billing,
+      SCA/3DS, PCI scope reduction, and financial reconc
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-engineering-privacy-engineer-001
+    name: Privacy Engineer
+    file: engineering-privacy-engineer.md
+    domain: 16-AGENTS
+    category: engineering
+    description: "Expert privacy engineer who implements privacy in code \u2014 PII\
+      \ discovery and classification, data minimization, consent enforcement at the\
+      \ API layer, automated DSAR and deletion across services, pseudon"
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-engineering-prompt-engineer-001
+    name: Prompt Engineer
+    file: engineering-prompt-engineer.md
+    domain: 16-AGENTS
+    category: engineering
+    description: "Specialist in crafting, testing, and systematically optimizing prompts\
+      \ for LLMs \u2014 turning vague instructions into reliable, production-grade\
+      \ AI behaviors."
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-engineering-rag-pipeline-engineer-001
+    name: RAG Pipeline Engineer
+    file: engineering-rag-pipeline-engineer.md
+    domain: 16-AGENTS
+    category: engineering
+    description: "Production RAG specialist focused on chunking strategy, retrieval\
+      \ quality, hybrid search, re-ranking, and eval-driven iteration. Builds pipelines\
+      \ that actually retrieve the right context \u2014 not just pi"
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-engineering-rapid-prototyper-001
+    name: Rapid Prototyper
+    file: engineering-rapid-prototyper.md
+    domain: 16-AGENTS
+    category: engineering
+    description: Specialized in ultra-fast proof-of-concept development and MVP creation
+      using efficient tools and frameworks
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-engineering-realtime-collaboration-engineer-001
+    name: Realtime Collaboration Engineer
+    file: engineering-realtime-collaboration-engineer.md
+    domain: 16-AGENTS
+    category: engineering
+    description: Expert realtime systems engineer for WebSocket/SSE infrastructure,
+      presence, CRDT and OT-based collaborative editing, offline-first sync engines,
+      and fan-out scaling with reconnect-safe protocols.
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-engineering-rust-refactoring-specialist-001
+    name: Rust Refactoring Specialist
+    file: engineering-rust-refactoring-specialist.md
+    domain: 16-AGENTS
+    category: engineering
+    description: Expert Rust engineer for repository-scale refactoring, safe renames,
+      module restructuring, duplication removal, panic hardening, ownership improvements,
+      and compiler or Clippy remediation.
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-engineering-search-relevance-engineer-001
+    name: Search Relevance Engineer
+    file: engineering-search-relevance-engineer.md
+    domain: 16-AGENTS
+    category: engineering
+    description: "Expert search engineer for Elasticsearch and OpenSearch \u2014 index\
+      \ and analyzer design, BM25 query tuning, hybrid lexical+vector retrieval, and\
+      \ judgment-based relevance evaluation with nDCG and online ex"
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-engineering-section-508-specialist-001
+    name: Section 508 Accessibility Specialist
+    file: engineering-section-508-specialist.md
+    domain: 16-AGENTS
+    category: engineering
+    description: Expert U.S. federal Section 508 accessibility engineer (the 508 legal
+      baseline is WCAG 2.0 Level AA; WCAG 2.1/2.2 AA are recommended best practice,
+      and ADA Title II requires WCAG 2.1 AA for state/loca
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-engineering-senior-developer-001
+    name: Senior Developer
+    file: engineering-senior-developer.md
+    domain: 16-AGENTS
+    category: engineering
+    description: Premium implementation specialist - Masters Laravel/Livewire/FluxUI,
+      advanced CSS, Three.js integration
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-engineering-software-architect-001
+    name: Software Architect
+    file: engineering-software-architect.md
+    domain: 16-AGENTS
+    category: engineering
+    description: Expert software architect specializing in system design, domain-driven
+      design, architectural patterns, and technical decision-making for scalable,
+      maintainable systems.
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-engineering-solidity-smart-contract-engineer-001
+    name: Solidity Smart Contract Engineer
+    file: engineering-solidity-smart-contract-engineer.md
+    domain: 16-AGENTS
+    category: engineering
+    description: Expert Solidity developer specializing in EVM smart contract architecture,
+      gas optimization, upgradeable proxy patterns, DeFi protocol development, and
+      security-first contract design across Ethereum a
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-engineering-sre-001
+    name: SRE (Site Reliability Engineer)
+    file: engineering-sre.md
+    domain: 16-AGENTS
+    category: engineering
+    description: Expert site reliability engineer specializing in SLOs, error budgets,
+      observability, chaos engineering, and toil reduction for production systems
+      at scale.
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-engineering-technical-writer-001
+    name: Technical Writer
+    file: engineering-technical-writer.md
+    domain: 16-AGENTS
+    category: engineering
+    description: Expert technical writer specializing in developer documentation,
+      API references, README files, and tutorials. Transforms complex engineering
+      concepts into clear, accurate, and engaging docs that devel
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-engineering-uswds-developer-001
+    name: USWDS Developer
+    file: engineering-uswds-developer.md
+    domain: 16-AGENTS
+    category: engineering
+    description: Expert U.S. Web Design System frontend developer specializing in
+      USWDS components and design tokens, accessible-by-default patterns, responsive
+      government UI, Sass settings/theming, the federal design
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-engineering-video-streaming-engineer-001
+    name: Video Streaming Engineer
+    file: engineering-video-streaming-engineer.md
+    domain: 16-AGENTS
+    category: engineering
+    description: "Expert video streaming engineer for adaptive bitrate delivery \u2014\
+      \ HLS/DASH packaging, ffmpeg transcode ladders, CMAF low-latency, DRM, CDN delivery,\
+      \ and QoE-driven player tuning."
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-engineering-voice-ai-integration-engineer-001
+    name: Voice AI Integration Engineer
+    file: engineering-voice-ai-integration-engineer.md
+    domain: 16-AGENTS
+    category: engineering
+    description: "Expert in building end-to-end speech transcription pipelines using\
+      \ Whisper-style models and cloud ASR services \u2014 from raw audio ingestion\
+      \ through preprocessing, transcript cleanup, subtitle generation"
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-engineering-webassembly-engineer-001
+    name: WebAssembly Engineer
+    file: engineering-webassembly-engineer.md
+    domain: 16-AGENTS
+    category: engineering
+    description: "Expert WebAssembly engineer \u2014 compiling Rust/C++/Go to Wasm,\
+      \ JS interop and the boundary marshalling cost, WASI and server-side runtimes\
+      \ (Wasmtime/Wasmer), the component model, and near-native perform"
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-engineering-wechat-mini-program-developer-001
+    name: WeChat Mini Program Developer
+    file: engineering-wechat-mini-program-developer.md
+    domain: 16-AGENTS
+    category: engineering
+    description: "Expert WeChat Mini Program developer specializing in \u5C0F\u7A0B\
+      \u5E8F development with WXML/WXSS/WXS, WeChat API integration, payment systems,\
+      \ subscription messaging, and the full WeChat ecosystem."
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-engineering-wordpress-performance-001
+    name: WordPress Performance Engineer
+    file: engineering-wordpress-performance.md
+    domain: 16-AGENTS
+    category: engineering
+    description: Expert WordPress performance engineer specializing in Core Web Vitals,
+      object caching (Redis/Memcached), page caching, database and WP_Query optimization,
+      the Transients API, asset minification/deferr
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-engineering-wordpress-shopping-cart-001
+    name: WordPress Shopping Cart Engineer
+    file: engineering-wordpress-shopping-cart.md
+    domain: 16-AGENTS
+    category: engineering
+    description: Expert WordPress e-commerce engineer specializing in WooCommerce
+      for product catalog management, payment gateway integration, checkout customization,
+      order management, tax and coupon configuration, an
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-esg-sustainability-officer-001
+    name: ESG & Sustainability Officer
+    file: esg-sustainability-officer.md
+    domain: 01-IDENTITY
+    category: esg
+    description: Corporate sustainability strategist and ESG reporting specialist
+      who builds environmental, social, and governance programs, manages disclosures,
+      drives decarbonization initiatives, and aligns business
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-finance-bookkeeper-controller-001
+    name: Bookkeeper & Controller
+    file: finance-bookkeeper-controller.md
     domain: 30-REVENUE
-    logic_layers: [LOGIC-013, LOGIC-019, LOGIC-045]  # DATA, INFORMATION, CONTEXT
-    control_planes: [CP-003, CP-004, CP-008]
-    capabilities: [data-consolidation, dashboard-creation, reporting]
-    required_skills: [data-engineering, visualization]
-    required_tools: [postgresql, qdrant]
-    required_mcps: [mcp__claude_ai_Google_Drive, mcp__claude_ai_Supabase]
-    autonomy_level: L3  # Fully autonomous
-    trustworthiness_score: 0.96
-    cost_per_use_usd: 0.50
-    expected_duration_minutes: 15
-    success_rate_percent: 98
-    last_verified: 2026-09-17
-    sectors_applicable: [SEC-030, SEC-031]  # Sales/finance
-    ventures_deployed: [OPS-001, LT-005, RE-001]
-
-  agent_obsidian_sync:
-    id: agent-obsidian-sync-001
-    name: Obsidian ↔ Neo4j Sync Agent
-    file_path: _MCP/SYSTEMS-INTEGRATION-MASTER.md (Phase 2c)
-    description: "Bidirectional sync between Obsidian vault and Neo4j knowledge graph (Phase 2c, Jan 2027)"
-    domain: 08-KNOWLEDGE-GRAPH
-    logic_layers: [LOGIC-025, LOGIC-031, LOGIC-037]  # KNOWLEDGE, MEMORY, RETRIEVAL
-    control_planes: [CP-005, CP-006, CP-007]
-    capabilities: [knowledge-sync, graph-updates, note-rendering]
-    required_skills: [knowledge-engineering, graph-operations]
-    required_tools: [neo4j, obsidian-api]
-    required_mcps: [mcp__claude_ai_Notion]
-    autonomy_level: L2  # Conflict resolution review
-    trustworthiness_score: 0.90
-    cost_per_use_usd: 1.00
-    expected_duration_minutes: 30
-    success_rate_percent: 87
-    last_verified: 2026-09-17
-    sectors_applicable: [all]
-    ventures_deployed: [planned]
-    phase_target: Phase_2c_Jan_2027
-
-  # ============================================================
-  # TO POPULATE THE REMAINING 265 AGENTS:
-  # ============================================================
-  # 1. Run: python _CLI/tag-agents.sh
-  # 2. This script:
-  #    - Reads all 275 .claude/agents/*.md files
-  #    - Extracts metadata (name, description)
-  #    - Infers domain from filename/path
-  #    - Applies default logic layer assignments
-  #    - Assigns autonomy levels based on domain + trustworthiness
-  #    - Outputs entries for remaining 265 agents
-  # 3. Manual review + override for:
-  #    - Custom logic layer assignments
-  #    - Risk-sensitive autonomy levels (compliance, healthcare, finance)
-  #    - Venture-specific deployments
-  # 4. Test dispatch router with sample of 20 agents
-  # 5. Full deployment of remaining 255 agents
-
-  # ============================================================
-  # PHASE 2 AGENTS (Research, Adoption, Synthesis)
-  # ============================================================
-  # To be added in Phase 2a (Oct 2026):
-  #
-  # - agent-research-verification-001 (validates claims)
-  # - agent-research-synthesis-001 (connects papers)
-  # - agent-adoption-decision-001 (WATCH/PILOT/ADOPTED)
-  # - agent-learning-feedback-001 (captures outcomes)
-  # - agent-agent-dispatch-router-001 (self-aware router!)
-
----
-
-## METADATA SCHEMA
-
-```yaml
-agent_template:
-  id: string                      # unique identifier (auto-generated: agent-{name}-{version})
-  name: string                    # display name
-  file_path: string              # location in codebase
-  description: string            # what it does
-  domain: string                 # which domain (00-50)
-  logic_layers: [string]         # which logics it executes (LOGIC-001 to LOGIC-072)
-  control_planes: [string]       # which CPs govern it (CP-001 to CP-050)
-  capabilities: [string]         # which capabilities it enables/executes
-  required_skills: [string]      # dependencies (other skills it needs)
-  required_tools: [string]       # tool names (neo4j, bash, github, etc.)
-  required_mcps: [string]        # MCP server names (mcp__claude_ai_GitHub, etc.)
-  autonomy_level: string         # L1 (human) / L2 (assisted) / L3 (autonomous)
-  trustworthiness_score: float   # 0.0-1.0 (higher = more autonomous-ready)
-  cost_per_use_usd: float       # estimated cost to run once
-  expected_duration_minutes: int # how long it typically takes
-  success_rate_percent: int     # historical success rate
-  last_verified: date           # last tested/verified date
-  sectors_applicable: [string]  # which sectors can use it (SEC-001 to SEC-035)
-  ventures_deployed: [string]   # ventures currently using it
-```
-
----
-
-**Status:** 10/275 agents documented | 265 to auto-generate | Phase 2a: Oct 2026
+    category: finance
+    description: 'Expert bookkeeper and controller specializing in day-to-day accounting
+      operations, financial reconciliations, month-end close processes, and internal
+      controls. Ensures the accuracy, completeness, and '
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-finance-financial-analyst-001
+    name: Financial Analyst
+    file: finance-financial-analyst.md
+    domain: 30-REVENUE
+    category: finance
+    description: 'Expert financial analyst specializing in financial modeling, forecasting,
+      scenario analysis, and data-driven decision support. Transforms raw financial
+      data into actionable business intelligence that '
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-finance-fpa-analyst-001
+    name: FP&A Analyst
+    file: finance-fpa-analyst.md
+    domain: 30-REVENUE
+    category: finance
+    description: Expert Financial Planning & Analysis (FP&A) analyst specializing
+      in budgeting, variance analysis, financial planning, rolling forecasts, and
+      strategic decision support. Bridges the gap between the num
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-finance-investment-researcher-001
+    name: Investment Researcher
+    file: finance-investment-researcher.md
+    domain: 30-REVENUE
+    category: finance
+    description: Expert investment researcher specializing in market research, due
+      diligence, portfolio analysis, and asset valuation. Conducts rigorous fundamental
+      and quantitative analysis to identify investment opp
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-finance-tax-strategist-001
+    name: Tax Strategist
+    file: finance-tax-strategist.md
+    domain: 30-REVENUE
+    category: finance
+    description: 'Expert tax strategist specializing in tax optimization, multi-jurisdictional
+      compliance, transfer pricing, and strategic tax planning. Navigates complex
+      tax codes to minimize liability while ensuring '
+    autonomy_level: L3
+    deployed: false
+    status: READY
+  - id: agent-game-audio-engineer-001
+    name: Game Audio Engineer
+    file: game-audio-engineer.md
+    domain: 01-IDENTITY
+    category: game
+    description: Interactive audio specialist - Masters FMOD/Wwise integration, adaptive
+      music systems, spatial audio, and audio performance budgeting across all game
+      engines
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-game-designer-001
+    name: Game Designer
+    file: game-designer.md
+    domain: 01-IDENTITY
+    category: game
+    description: Systems and mechanics architect - Masters GDD authorship, player
+      psychology, economy balancing, and gameplay loop design across all engines and
+      genres
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-gis-3d-scene-developer-001
+    name: 3D & Scene Developer
+    file: gis-3d-scene-developer.md
+    domain: 01-IDENTITY
+    category: gis
+    description: Web 3D visualization specialist who creates immersive 3D scenes,
+      terrain models, point cloud visualizations, and interactive web experiences
+      using Cesium, ArcGIS Scene Viewer, and modern 3D web framew
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-gis-analyst-001
+    name: GIS Analyst
+    file: gis-analyst.md
+    domain: 01-IDENTITY
+    category: gis
+    description: Day-to-day GIS operator who creates maps, manages layers, performs
+      spatial queries, and maintains geospatial data integrity across desktop and
+      web environments.
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-gis-bim-specialist-001
+    name: BIM/GIS Specialist
+    file: gis-bim-specialist.md
+    domain: 01-IDENTITY
+    category: gis
+    description: "Integration specialist who bridges Building Information Modeling\
+      \ and Geographic Information Systems \u2014 Revit/IFC data conversion, indoor\
+      \ mapping, digital twin architecture, and facility management data"
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-gis-cartography-designer-001
+    name: Cartography Designer
+    file: gis-cartography-designer.md
+    domain: 01-IDENTITY
+    category: gis
+    description: "Map aesthetics specialist who designs beautiful, readable, and effective\
+      \ maps \u2014 color theory, typography, label placement, basemap selection,\
+      \ and visual hierarchy for both print and web."
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-gis-drone-reality-mapping-001
+    name: Drone/Reality Mapping Specialist
+    file: gis-drone-reality-mapping.md
+    domain: 01-IDENTITY
+    category: gis
+    description: "Photogrammetry and reality capture expert who processes drone imagery\
+      \ into orthomosaics, digital terrain models, point clouds, and 3D meshes \u2014\
+      \ bridging field capture and GIS-ready products."
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-gis-geoai-ml-engineer-001
+    name: GeoAI/ML Engineer
+    file: gis-geoai-ml-engineer.md
+    domain: 01-IDENTITY
+    category: gis
+    description: Geospatial machine learning specialist who builds models for feature
+      extraction, object detection, image segmentation, and land cover classification
+      from satellite and aerial imagery.
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-gis-geoprocessing-specialist-001
+    name: Geoprocessing Specialist
+    file: gis-geoprocessing-specialist.md
+    domain: 01-IDENTITY
+    category: gis
+    description: "ArcPy and Python toolbox expert who automates spatial workflows\
+      \ \u2014 builds .pyt toolboxes, Model Builder processes, batch geoprocessing\
+      \ automation, and custom analysis scripts for ArcGIS Pro."
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-gis-qa-engineer-001
+    name: GIS QA Engineer
+    file: gis-qa-engineer.md
+    domain: 01-IDENTITY
+    category: gis
+    description: "Quality assurance specialist who validates geospatial data integrity\
+      \ \u2014 topology checks, metadata audits, CRS consistency, accuracy assessment,\
+      \ and compliance verification."
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-gis-solution-engineer-001
+    name: Solution Engineer
+    file: gis-solution-engineer.md
+    domain: 01-IDENTITY
+    category: gis
+    description: Hands-on GIS prototype builder who takes strategy from Technical
+      Consultant and turns it into working demos, proof-of-concepts, and technical
+      validations across the full Esri and open-source stack.
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-gis-spatial-data-engineer-001
+    name: Spatial Data Engineer
+    file: gis-spatial-data-engineer.md
+    domain: 01-IDENTITY
+    category: gis
+    description: "ETL specialist who transforms messy geospatial data from any source\
+      \ into clean, standardized, production-ready datasets \u2014 format conversion,\
+      \ CRS reprojection, attribute normalization, and automated pi"
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-gis-spatial-data-scientist-001
+    name: Spatial Data Scientist
+    file: gis-spatial-data-scientist.md
+    domain: 01-IDENTITY
+    category: gis
+    description: "Advanced spatial analytics specialist who applies statistical modeling,\
+      \ spatial econometrics, clustering, and predictive analytics to geospatial data\
+      \ \u2014 finding patterns that aren't visible on a map."
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-gis-technical-consultant-001
+    name: Technical Consultant
+    file: gis-technical-consultant.md
+    domain: 01-IDENTITY
+    category: gis
+    description: "Strategic GIS advisor who translates business problems into geospatial\
+      \ solutions \u2014 gap analysis, technology roadmaps, RFP responses, and digital\
+      \ transformation strategy across Esri and open-source eco"
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-gis-web-gis-developer-001
+    name: Web GIS Developer
+    file: gis-web-gis-developer.md
+    domain: 01-IDENTITY
+    category: gis
+    description: "Full-stack web GIS engineer who builds interactive mapping applications\
+      \ \u2014 MapLibre GL JS, ArcGIS JS API, Leaflet, real-time dashboards, REST\
+      \ API integration, and geospatial web services."
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-godot-gameplay-scripter-001
+    name: Godot Gameplay Scripter
+    file: godot-gameplay-scripter.md
+    domain: 01-IDENTITY
+    category: godot
+    description: Composition and signal integrity specialist - Masters GDScript 2.0,
+      C# integration, node-based architecture, and type-safe signal design for Godot
+      4 projects
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-godot-multiplayer-engineer-001
+    name: Godot Multiplayer Engineer
+    file: godot-multiplayer-engineer.md
+    domain: 01-IDENTITY
+    category: godot
+    description: Godot 4 networking specialist - Masters the MultiplayerAPI, scene
+      replication, ENet/WebRTC transport, RPCs, and authority models for real-time
+      multiplayer games
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-godot-shader-developer-001
+    name: Godot Shader Developer
+    file: godot-shader-developer.md
+    domain: 01-IDENTITY
+    category: godot
+    description: Godot 4 visual effects specialist - Masters the Godot Shading Language
+      (GLSL-like), VisualShader editor, CanvasItem and Spatial shaders, post-processing,
+      and performance optimization for 2D/3D effects
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-government-digital-presales-consultant-001
+    name: Government Digital Presales Consultant
+    file: government-digital-presales-consultant.md
+    domain: 01-IDENTITY
+    category: government
+    description: Presales expert for China's government digital transformation market
+      (ToG), proficient in policy interpretation, solution design, bid document preparation,
+      POC validation, compliance requirements (cla
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-grant-writer-001
+    name: Grant Writer
+    file: grant-writer.md
+    domain: 01-IDENTITY
+    category: grant
+    description: "Expert grant writing specialist for nonprofits, research institutions,\
+      \ and social enterprises \u2014 covering prospect research, letter of inquiry\
+      \ writing, full proposal development, budget narratives, fed"
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-gsd-advisor-researcher-001
+    name: gsd-advisor-researcher
+    file: gsd-advisor-researcher.md
+    domain: 01-IDENTITY
+    category: gsd
+    description: Researches a single gray area decision and returns a structured comparison
+      table with rationale. Spawned by discuss-phase advisor mode.
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-gsd-ai-researcher-001
+    name: gsd-ai-researcher
+    file: gsd-ai-researcher.md
+    domain: 01-IDENTITY
+    category: gsd
+    description: "Researches a chosen AI framework's official docs to produce implementation-ready\
+      \ guidance \u2014 best practices, syntax, core patterns, and pitfalls distilled\
+      \ for the specific use case. Writes the Framewor"
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-gsd-assumptions-analyzer-001
+    name: gsd-assumptions-analyzer
+    file: gsd-assumptions-analyzer.md
+    domain: 01-IDENTITY
+    category: gsd
+    description: Deeply analyzes codebase for a phase and returns structured assumptions
+      with evidence. Spawned by discuss-phase assumptions mode.
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-gsd-code-fixer-001
+    name: gsd-code-fixer
+    file: gsd-code-fixer.md
+    domain: 01-IDENTITY
+    category: gsd
+    description: Applies fixes to code review findings from REVIEW.md. Reads source
+      files, applies intelligent fixes, and commits each fix atomically. Spawned by
+      /gsd-code-review --fix.
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-gsd-code-reviewer-001
+    name: gsd-code-reviewer
+    file: gsd-code-reviewer.md
+    domain: 01-IDENTITY
+    category: gsd
+    description: Reviews source files for bugs, security issues, and code quality
+      problems. Produces structured REVIEW.md with severity-classified findings. Spawned
+      by /gsd-code-review.
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-gsd-codebase-mapper-001
+    name: gsd-codebase-mapper
+    file: gsd-codebase-mapper.md
+    domain: 01-IDENTITY
+    category: gsd
+    description: Explores codebase and writes structured analysis documents. Spawned
+      by map-codebase with a focus area (tech, arch, quality, concerns). Writes documents
+      directly to reduce orchestrator context load.
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-gsd-debug-session-manager-001
+    name: gsd-debug-session-manager
+    file: gsd-debug-session-manager.md
+    domain: 01-IDENTITY
+    category: gsd
+    description: Manages multi-cycle /gsd-debug checkpoint and continuation loop in
+      isolated context. Spawns gsd-debugger agents, handles checkpoints via AskUserQuestion,
+      dispatches specialist skills, applies fixes. R
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-gsd-debugger-001
+    name: gsd-debugger
+    file: gsd-debugger.md
+    domain: 01-IDENTITY
+    category: gsd
+    description: Investigates bugs using scientific method, manages debug sessions,
+      handles checkpoints. Spawned by /gsd-debug orchestrator.
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-gsd-doc-classifier-001
+    name: gsd-doc-classifier
+    file: gsd-doc-classifier.md
+    domain: 01-IDENTITY
+    category: gsd
+    description: Classifies a single planning document as ADR, PRD, SPEC, DOC, or
+      UNKNOWN. Extracts title, scope summary, and cross-references. Spawned in parallel
+      by /gsd-ingest-docs. Writes a JSON classification fil
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-gsd-doc-synthesizer-001
+    name: gsd-doc-synthesizer
+    file: gsd-doc-synthesizer.md
+    domain: 01-IDENTITY
+    category: gsd
+    description: 'Synthesizes classified planning docs into a single consolidated
+      context. Applies precedence rules, detects cross-ref cycles, enforces LOCKED-vs-LOCKED
+      hard-blocks, and writes INGEST-CONFLICTS.md with '
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-gsd-doc-verifier-001
+    name: gsd-doc-verifier
+    file: gsd-doc-verifier.md
+    domain: 01-IDENTITY
+    category: gsd
+    description: Verifies factual claims in generated docs against the live codebase.
+      Returns structured JSON per doc.
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-gsd-doc-writer-001
+    name: gsd-doc-writer
+    file: gsd-doc-writer.md
+    domain: 01-IDENTITY
+    category: gsd
+    description: Writes and updates project documentation. Spawned with a doc_assignment
+      block specifying doc type, mode (create/update/supplement), and project context.
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-gsd-domain-researcher-001
+    name: gsd-domain-researcher
+    file: gsd-domain-researcher.md
+    domain: 01-IDENTITY
+    category: gsd
+    description: Researches the business domain and real-world application context
+      of the AI system being built. Surfaces domain expert evaluation criteria, industry-specific
+      failure modes, regulatory context, and wha
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-gsd-eval-auditor-001
+    name: gsd-eval-auditor
+    file: gsd-eval-auditor.md
+    domain: 01-IDENTITY
+    category: gsd
+    description: Retroactive audit of an implemented AI phase's evaluation coverage.
+      Checks implementation against the AI-SPEC.md evaluation plan. Scores each eval
+      dimension as COVERED/PARTIAL/MISSING. Produces a scor
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-gsd-eval-planner-001
+    name: gsd-eval-planner
+    file: gsd-eval-planner.md
+    domain: 01-IDENTITY
+    category: gsd
+    description: Designs a structured evaluation strategy for an AI phase. Identifies
+      critical failure modes, selects eval dimensions with rubrics, recommends tooling,
+      and specifies the reference dataset. Writes the E
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-gsd-executor-001
+    name: gsd-executor
+    file: gsd-executor.md
+    domain: 01-IDENTITY
+    category: gsd
+    description: Executes GSD plans with atomic commits, deviation handling, checkpoint
+      protocols, and state management. Spawned by execute-phase orchestrator or execute-plan
+      command.
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-gsd-framework-selector-001
+    name: gsd-framework-selector
+    file: gsd-framework-selector.md
+    domain: 01-IDENTITY
+    category: gsd
+    description: Presents an interactive decision matrix to surface the right AI/LLM
+      framework for the user's specific use case. Produces a scored recommendation
+      with rationale. Spawned by /gsd-ai-integration-phase an
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-gsd-integration-checker-001
+    name: gsd-integration-checker
+    file: gsd-integration-checker.md
+    domain: 01-IDENTITY
+    category: gsd
+    description: Verifies cross-phase integration and E2E flows. Checks that phases
+      connect properly and user workflows complete end-to-end.
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-gsd-intel-updater-001
+    name: gsd-intel-updater
+    file: gsd-intel-updater.md
+    domain: 01-IDENTITY
+    category: gsd
+    description: Analyzes codebase and writes structured intel files to .planning/intel/.
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-gsd-mempalace-curator-001
+    name: gsd-mempalace-curator
+    file: gsd-mempalace-curator.md
+    domain: 01-IDENTITY
+    category: gsd
+    description: "Ship-time MemPalace curation \u2014 writes the session diary, proposes/creates\
+      \ cross-project tunnels, mirrors extract-learnings into the temporal KG, and\
+      \ runs wing-scoped drawer pruning. Spawned at ship:po"
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-gsd-nyquist-auditor-001
+    name: gsd-nyquist-auditor
+    file: gsd-nyquist-auditor.md
+    domain: 01-IDENTITY
+    category: gsd
+    description: Fills Nyquist validation gaps by generating tests and verifying coverage
+      for phase requirements
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-gsd-pattern-mapper-001
+    name: gsd-pattern-mapper
+    file: gsd-pattern-mapper.md
+    domain: 01-IDENTITY
+    category: gsd
+    description: Analyzes codebase for existing patterns and produces PATTERNS.md
+      mapping new files to closest analogs. Read-only codebase analysis spawned by
+      /gsd-plan-phase orchestrator before planning.
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-gsd-phase-researcher-001
+    name: gsd-phase-researcher
+    file: gsd-phase-researcher.md
+    domain: 01-IDENTITY
+    category: gsd
+    description: Researches how to implement a phase before planning. Produces RESEARCH.md
+      consumed by gsd-planner. Spawned by /gsd-plan-phase orchestrator.
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-gsd-plan-checker-001
+    name: gsd-plan-checker
+    file: gsd-plan-checker.md
+    domain: 01-IDENTITY
+    category: gsd
+    description: Verifies plans will achieve phase goal before execution. Goal-backward
+      analysis of plan quality. Spawned by /gsd-plan-phase orchestrator.
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-gsd-planner-001
+    name: gsd-planner
+    file: gsd-planner.md
+    domain: 01-IDENTITY
+    category: gsd
+    description: Creates executable phase plans with task breakdown, dependency analysis,
+      and goal-backward verification. Spawned by /gsd-plan-phase orchestrator.
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-gsd-project-researcher-001
+    name: gsd-project-researcher
+    file: gsd-project-researcher.md
+    domain: 01-IDENTITY
+    category: gsd
+    description: Researches domain ecosystem before roadmap creation. Produces files
+      in .planning/research/ consumed during roadmap creation. Spawned by /gsd-new-project
+      or /gsd-new-milestone orchestrators.
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-gsd-research-synthesizer-001
+    name: gsd-research-synthesizer
+    file: gsd-research-synthesizer.md
+    domain: 01-IDENTITY
+    category: gsd
+    description: Synthesizes research outputs from parallel researcher agents into
+      SUMMARY.md. Spawned by /gsd-new-project after 4 researcher agents complete.
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-gsd-roadmapper-001
+    name: gsd-roadmapper
+    file: gsd-roadmapper.md
+    domain: 01-IDENTITY
+    category: gsd
+    description: Creates project roadmaps with phase breakdown, requirement mapping,
+      success criteria derivation, and coverage validation. Spawned by /gsd-new-project
+      orchestrator.
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-gsd-security-auditor-001
+    name: gsd-security-auditor
+    file: gsd-security-auditor.md
+    domain: 01-IDENTITY
+    category: gsd
+    description: Verifies threat mitigations from PLAN.md threat model exist in implemented
+      code. Returns structured security verdict (SECURED / OPEN_THREATS / ESCALATE).
+      Spawned by /gsd-secure-phase.
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-gsd-ui-auditor-001
+    name: gsd-ui-auditor
+    file: gsd-ui-auditor.md
+    domain: 01-IDENTITY
+    category: gsd
+    description: Retroactive 6-pillar visual audit of implemented frontend code. Produces
+      scored UI-REVIEW.md. Spawned by /gsd-ui-review orchestrator.
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-gsd-ui-checker-001
+    name: gsd-ui-checker
+    file: gsd-ui-checker.md
+    domain: 01-IDENTITY
+    category: gsd
+    description: Validates UI-SPEC.md design contracts against 6 quality dimensions.
+      Produces BLOCK/FLAG/PASS verdicts. Spawned by /gsd-ui-phase orchestrator.
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-gsd-ui-researcher-001
+    name: gsd-ui-researcher
+    file: gsd-ui-researcher.md
+    domain: 01-IDENTITY
+    category: gsd
+    description: Produces UI-SPEC.md design contract for frontend phases. Reads upstream
+      artifacts, detects design system state, asks only unanswered questions. Spawned
+      by /gsd-ui-phase orchestrator.
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-gsd-user-profiler-001
+    name: gsd-user-profiler
+    file: gsd-user-profiler.md
+    domain: 01-IDENTITY
+    category: gsd
+    description: Analyzes extracted session messages across 8 behavioral dimensions
+      to produce a scored developer profile with confidence levels and evidence. Spawned
+      by profile orchestration workflows.
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-gsd-verifier-001
+    name: gsd-verifier
+    file: gsd-verifier.md
+    domain: 01-IDENTITY
+    category: gsd
+    description: Verifies phase goal achievement through goal-backward analysis. Checks
+      codebase delivers what phase promised, not just that tasks completed. Creates
+      VERIFICATION.md report.
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-healthcare-aging-parent-care-companion-001
+    name: Aging Parent Care Companion
+    file: healthcare-aging-parent-care-companion.md
+    domain: 07-HEALTHCARE
+    category: healthcare
+    description: Compassionate, HIPAA-aligned care coordination and decision-support
+      agent for family caregivers managing an aging parent's appointments, medications,
+      care team communication, and their own caregiver w
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-healthcare-clinical-evidence-agent-001
+    name: Clinical Evidence Agent
+    file: healthcare-clinical-evidence-agent.md
+    domain: 07-HEALTHCARE
+    category: healthcare
+    description: 'Evidence standards and clinical credibility framework for AI agents
+      operating in healthcare contexts. Defines how to distinguish validated from
+      unvalidated clinical claims, how to write for both peer '
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-healthcare-customer-service-001
+    name: Healthcare Customer Service
+    file: healthcare-customer-service.md
+    domain: 07-HEALTHCARE
+    category: healthcare
+    description: Empathetic healthcare customer service specialist for patient support,
+      billing inquiries, appointment management, insurance questions, complaint resolution,
+      and seamless escalation to clinical or admi
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-healthcare-innovation-strategist-001
+    name: Healthcare Innovation Strategist
+    file: healthcare-innovation-strategist.md
+    domain: 07-HEALTHCARE
+    category: healthcare
+    description: Strategic narrative architect for healthcare founders operating at
+      the intersection of clinical credibility, healthcare finance, and complex deployment
+      contexts. Maintains narrative coherence across i
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-healthcare-marketing-compliance-001
+    name: Healthcare Marketing Compliance Specialist
+    file: healthcare-marketing-compliance.md
+    domain: 07-HEALTHCARE
+    category: healthcare
+    description: "Expert in healthcare marketing compliance in China, proficient in\
+      \ the Advertising Law, Medical Advertisement Management Measures, Drug Administration\
+      \ Law, and related regulations \u2014 covering pharmaceut"
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-healthcare-sovereign-health-systems-agent-001
+    name: Sovereign Health Systems Agent
+    file: healthcare-sovereign-health-systems-agent.md
+    domain: 07-HEALTHCARE
+    category: healthcare
+    description: Government health mandate engagement framework for AI agents operating
+      at the intersection of national health infrastructure, UHC policy, and emerging
+      market deployment. Defines how to navigate sovere
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-hospitality-guest-services-001
+    name: Hospitality Guest Services
+    file: hospitality-guest-services.md
+    domain: 01-IDENTITY
+    category: hospitality
+    description: "Comprehensive hospitality guest services specialist for hotels,\
+      \ resorts, restaurants, and event venues \u2014 covering reservations, check-in/check-out,\
+      \ concierge services, guest complaint resolution, loya"
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-hr-onboarding-001
+    name: HR Onboarding
+    file: hr-onboarding.md
+    domain: 52-PEOPLE
+    category: hr
+    description: "Comprehensive HR onboarding specialist for employee orientation,\
+      \ documentation management, compliance tracking, benefits enrollment, culture\
+      \ integration, and new hire support \u2014 delivering a seamless f"
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-identity-graph-operator-001
+    name: Identity Graph Operator
+    file: identity-graph-operator.md
+    domain: 01-IDENTITY
+    category: identity
+    description: Operates a shared identity graph that multiple AI agents resolve
+      against. Ensures every agent in a multi-agent system gets the same canonical
+      answer for "who is this entity?" - deterministically, even
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-language-translator-001
+    name: Language Translator
+    file: language-translator.md
+    domain: 01-IDENTITY
+    category: language
+    description: "Real-time Spanish \u2194 English translation specialist with cultural\
+      \ context, regional dialect awareness, travel phrase guidance, and tone-appropriate\
+      \ communication for everyday, business, and emergency s"
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-legal-billing-time-tracking-001
+    name: Legal Billing & Time Tracking
+    file: legal-billing-time-tracking.md
+    domain: 32-SECURITY
+    category: legal
+    description: Comprehensive legal billing and time tracking specialist for accurate
+      time capture, invoice generation, billing narrative writing, collections management,
+      trust account compliance, and billing analysi
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-legal-client-intake-001
+    name: Legal Client Intake
+    file: legal-client-intake.md
+    domain: 32-SECURITY
+    category: legal
+    description: Comprehensive legal client intake specialist for qualifying prospects,
+      collecting case information, scheduling consultations, managing conflict checks,
+      and delivering attorney-ready intake summaries a
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-legal-document-review-001
+    name: Legal Document Review
+    file: legal-document-review.md
+    domain: 32-SECURITY
+    category: legal
+    description: "Comprehensive legal document review specialist for contracts, litigation\
+      \ documents, and real estate agreements \u2014 summarizing documents, flagging\
+      \ risk clauses, comparing contract versions, and checking"
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-level-designer-001
+    name: Level Designer
+    file: level-designer.md
+    domain: 01-IDENTITY
+    category: level
+    description: Spatial storytelling and flow specialist - Masters layout theory,
+      pacing architecture, encounter design, and environmental narrative across all
+      game engines
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-loan-officer-assistant-001
+    name: Loan Officer Assistant
+    file: loan-officer-assistant.md
+    domain: 01-IDENTITY
+    category: loan
+    description: "Comprehensive loan officer assistant for mortgage and lending professionals\
+      \ \u2014 covering borrower intake, pre-qualification, document collection, pipeline\
+      \ management, compliance tracking, rate quoting, "
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-lsp-index-engineer-001
+    name: LSP/Index Engineer
+    file: lsp-index-engineer.md
+    domain: 01-IDENTITY
+    category: lsp
+    description: Language Server Protocol specialist building unified code intelligence
+      systems through LSP client orchestration and semantic indexing
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-ma-integration-manager-001
+    name: M&A Integration Manager
+    file: ma-integration-manager.md
+    domain: 01-IDENTITY
+    category: ma
+    description: "Mergers and acquisitions integration specialist who designs and\
+      \ executes post-merger integration programs \u2014 covering Day 1 readiness,\
+      \ 100-day planning, synergy tracking, cultural integration, function"
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-macos-spatial-metal-engineer-001
+    name: macOS Spatial/Metal Engineer
+    file: macos-spatial-metal-engineer.md
+    domain: 01-IDENTITY
+    category: macos
+    description: Native Swift and Metal specialist building high-performance 3D rendering
+      systems and spatial computing experiences for macOS and Vision Pro
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-marketing-aeo-foundations-001
+    name: AEO Foundations Architect
+    file: marketing-aeo-foundations.md
+    domain: 28-MARKETING
+    category: marketing
+    description: "Expert in AI Engine Optimization infrastructure \u2014 implements\
+      \ llms.txt, AI-aware robots.txt, token-budgeted content, structured Markdown\
+      \ availability, and agent discovery files so AI crawlers, citation"
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-marketing-agentic-search-optimizer-001
+    name: Agentic Search Optimizer
+    file: marketing-agentic-search-optimizer.md
+    domain: 28-MARKETING
+    category: marketing
+    description: "Expert in WebMCP readiness and agentic task completion \u2014 audits\
+      \ whether AI agents can actually accomplish tasks on your site (book, buy, register,\
+      \ subscribe), implements WebMCP declarative and imperat"
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-marketing-ai-citation-strategist-001
+    name: AI Citation Strategist
+    file: marketing-ai-citation-strategist.md
+    domain: 28-MARKETING
+    category: marketing
+    description: "Expert in AI recommendation engine optimization (AEO/GEO) \u2014\
+      \ audits brand visibility across ChatGPT, Claude, Gemini, and Perplexity, identifies\
+      \ why competitors get cited instead, and delivers content f"
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-marketing-app-store-optimizer-001
+    name: App Store Optimizer
+    file: marketing-app-store-optimizer.md
+    domain: 28-MARKETING
+    category: marketing
+    description: Expert app store marketing specialist focused on App Store Optimization
+      (ASO), conversion rate optimization, and app discoverability
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-marketing-baidu-seo-specialist-001
+    name: Baidu SEO Specialist
+    file: marketing-baidu-seo-specialist.md
+    domain: 28-MARKETING
+    category: marketing
+    description: Expert Baidu search optimization specialist focused on Chinese search
+      engine ranking, Baidu ecosystem integration, ICP compliance, Chinese keyword
+      research, and mobile-first indexing for the China mar
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-marketing-bilibili-content-strategist-001
+    name: Bilibili Content Strategist
+    file: marketing-bilibili-content-strategist.md
+    domain: 28-MARKETING
+    category: marketing
+    description: "Expert Bilibili marketing specialist focused on UP\u4E3B growth,\
+      \ danmaku culture mastery, B\u7AD9 algorithm optimization, community building,\
+      \ and branded content strategy for China's leading video community pla"
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-marketing-book-co-author-001
+    name: Book Co-Author
+    file: marketing-book-co-author.md
+    domain: 28-MARKETING
+    category: marketing
+    description: Strategic thought-leadership book collaborator for founders, experts,
+      and operators turning voice notes, fragments, and positioning into structured
+      first-person chapters.
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-marketing-carousel-growth-engine-001
+    name: Carousel Growth Engine
+    file: marketing-carousel-growth-engine.md
+    domain: 28-MARKETING
+    category: marketing
+    description: 'Autonomous TikTok and Instagram carousel generation specialist.
+      Analyzes any website URL with Playwright, generates viral 6-slide carousels
+      via Gemini image generation, publishes directly to feed via '
+    autonomy_level: L3
+    deployed: false
+    status: READY
+  - id: agent-marketing-china-ecommerce-operator-001
+    name: China E-Commerce Operator
+    file: marketing-china-ecommerce-operator.md
+    domain: 28-MARKETING
+    category: marketing
+    description: Expert China e-commerce operations specialist covering Taobao, Tmall,
+      Pinduoduo, and JD ecosystems with deep expertise in product listing optimization,
+      live commerce, store operations, 618/Double 11 c
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-marketing-china-market-localization-strategist-001
+    name: China Market Localization Strategist
+    file: marketing-china-market-localization-strategist.md
+    domain: 28-MARKETING
+    category: marketing
+    description: Full-stack China market localization expert who transforms real-time
+      trend signals into executable go-to-market strategies across Douyin, Xiaohongshu,
+      WeChat, Bilibili, and beyond
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-marketing-content-creator-001
+    name: Content Creator
+    file: marketing-content-creator.md
+    domain: 28-MARKETING
+    category: marketing
+    description: Expert content strategist and creator for multi-platform campaigns.
+      Develops editorial calendars, creates compelling copy, manages brand storytelling,
+      and optimizes content for engagement across all d
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-marketing-cross-border-ecommerce-001
+    name: Cross-Border E-Commerce Specialist
+    file: marketing-cross-border-ecommerce.md
+    domain: 28-MARKETING
+    category: marketing
+    description: Full-funnel cross-border e-commerce strategist covering Amazon, Shopee,
+      Lazada, AliExpress, Temu, and TikTok Shop operations, international logistics
+      and overseas warehousing, compliance and taxation,
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-marketing-douyin-strategist-001
+    name: Douyin Strategist
+    file: marketing-douyin-strategist.md
+    domain: 28-MARKETING
+    category: marketing
+    description: 'Short-video marketing expert specializing in the Douyin platform,
+      with deep expertise in recommendation algorithm mechanics, viral video planning,
+      livestream commerce workflows, and full-funnel brand '
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-marketing-email-strategist-001
+    name: Email Marketing Strategist
+    file: marketing-email-strategist.md
+    domain: 28-MARKETING
+    category: marketing
+    description: Expert email marketing strategist for CRM-driven campaigns, lifecycle
+      automation, segmentation architecture, and deliverability. Designs sequences
+      (welcome, nurture, reactivation, win-back, review, re
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-marketing-global-podcast-strategist-001
+    name: Global Podcast Strategist
+    file: marketing-global-podcast-strategist.md
+    domain: 28-MARKETING
+    category: marketing
+    description: Expert podcast growth specialist focused on show positioning, audience
+      development, content strategy, and monetisation. Transforms raw ideas into authoritative
+      audio brands that compound listeners and
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-marketing-growth-hacker-001
+    name: Growth Hacker
+    file: marketing-growth-hacker.md
+    domain: 28-MARKETING
+    category: marketing
+    description: Expert growth strategist specializing in rapid user acquisition through
+      data-driven experimentation. Develops viral loops, optimizes conversion funnels,
+      and finds scalable growth channels for exponent
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-marketing-instagram-curator-001
+    name: Instagram Curator
+    file: marketing-instagram-curator.md
+    domain: 28-MARKETING
+    category: marketing
+    description: Expert Instagram marketing specialist focused on visual storytelling,
+      community building, and multi-format content optimization. Masters aesthetic
+      development and drives meaningful engagement.
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-marketing-kuaishou-strategist-001
+    name: Kuaishou Strategist
+    file: marketing-kuaishou-strategist.md
+    domain: 28-MARKETING
+    category: marketing
+    description: "Expert Kuaishou marketing strategist specializing in short-video\
+      \ content for China's lower-tier city markets, live commerce operations, community\
+      \ trust building, and grassroots audience growth on \u5FEB\u624B."
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-marketing-linkedin-content-creator-001
+    name: LinkedIn Content Creator
+    file: marketing-linkedin-content-creator.md
+    domain: 28-MARKETING
+    category: marketing
+    description: Expert LinkedIn content strategist focused on thought leadership,
+      personal brand building, and high-engagement professional content. Masters LinkedIn's
+      algorithm and culture to drive inbound opportuni
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-marketing-livestream-commerce-coach-001
+    name: Livestream Commerce Coach
+    file: marketing-livestream-commerce-coach.md
+    domain: 28-MARKETING
+    category: marketing
+    description: Veteran livestream e-commerce coach specializing in host training
+      and live room operations across Douyin, Kuaishou, Taobao Live, and Channels,
+      covering script design, product sequencing, paid-vs-organ
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-marketing-multi-platform-publisher-001
+    name: Multi-Platform Publisher
+    file: marketing-multi-platform-publisher.md
+    domain: 28-MARKETING
+    category: marketing
+    description: "Expert orchestrator for one-click Chinese blog publishing. Routes\
+      \ a single article to \u77E5\u4E4E / \u5C0F\u7EA2\u4E66 / CSDN / B\u7AD9 / \u516C\
+      \u4F17\u53F7 / \u6398\u91D1 via Wechatsync (main channel) with xhs-mcp and biliup\
+      \ as specialized fallbacks. Ha"
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-marketing-podcast-strategist-001
+    name: Podcast Strategist
+    file: marketing-podcast-strategist.md
+    domain: 28-MARKETING
+    category: marketing
+    description: Content strategy and operations expert for the Chinese podcast market,
+      with deep expertise in Xiaoyuzhou, Ximalaya, and other major audio platforms,
+      covering show positioning, audio production, audien
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-marketing-pr-communications-manager-001
+    name: PR & Communications Manager
+    file: marketing-pr-communications-manager.md
+    domain: 28-MARKETING
+    category: marketing
+    description: Strategic public relations and communications specialist for media
+      relations, press releases, crisis communications, executive thought leadership,
+      brand reputation management, and integrated communica
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-marketing-private-domain-operator-001
+    name: Private Domain Operator
+    file: marketing-private-domain-operator.md
+    domain: 28-MARKETING
+    category: marketing
+    description: Expert in building enterprise WeChat (WeCom) private domain ecosystems,
+      with deep expertise in SCRM systems, segmented community operations, Mini Program
+      commerce integration, user lifecycle managemen
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-marketing-reddit-community-builder-001
+    name: Reddit Community Builder
+    file: marketing-reddit-community-builder.md
+    domain: 28-MARKETING
+    category: marketing
+    description: Expert Reddit marketing specialist focused on authentic community
+      engagement, value-driven content creation, and long-term relationship building.
+      Masters Reddit culture navigation.
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-marketing-seo-specialist-001
+    name: SEO Specialist
+    file: marketing-seo-specialist.md
+    domain: 28-MARKETING
+    category: marketing
+    description: Expert search engine optimization strategist specializing in technical
+      SEO, content optimization, link authority building, and organic search growth.
+      Drives sustainable traffic through data-driven sea
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-marketing-short-video-editing-coach-001
+    name: Short-Video Editing Coach
+    file: marketing-short-video-editing-coach.md
+    domain: 28-MARKETING
+    category: marketing
+    description: Hands-on short-video editing coach covering the full post-production
+      pipeline, with mastery of CapCut Pro, Premiere Pro, DaVinci Resolve, and Final
+      Cut Pro across composition and camera language, colo
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-marketing-social-media-strategist-001
+    name: Social Media Strategist
+    file: marketing-social-media-strategist.md
+    domain: 28-MARKETING
+    category: marketing
+    description: Expert social media strategist for LinkedIn, Twitter, and professional
+      platforms. Creates cross-platform campaigns, builds communities, manages real-time
+      engagement, and develops thought leadership st
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-marketing-tiktok-strategist-001
+    name: TikTok Strategist
+    file: marketing-tiktok-strategist.md
+    domain: 28-MARKETING
+    category: marketing
+    description: Expert TikTok marketing specialist focused on viral content creation,
+      algorithm optimization, and community building. Masters TikTok's unique culture
+      and features for brand growth.
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-marketing-twitter-engager-001
+    name: Twitter Engager
+    file: marketing-twitter-engager.md
+    domain: 28-MARKETING
+    category: marketing
+    description: Expert Twitter marketing specialist focused on real-time engagement,
+      thought leadership building, and community-driven growth. Builds brand authority
+      through authentic conversation participation and v
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-marketing-video-optimization-specialist-001
+    name: Video Optimization Specialist
+    file: marketing-video-optimization-specialist.md
+    domain: 28-MARKETING
+    category: marketing
+    description: Video marketing strategist specializing in YouTube algorithm optimization,
+      audience retention, chaptering, thumbnail concepts, and cross-platform video
+      syndication.
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-marketing-wechat-official-account-001
+    name: WeChat Official Account Manager
+    file: marketing-wechat-official-account.md
+    domain: 28-MARKETING
+    category: marketing
+    description: 'Expert WeChat Official Account (OA) strategist specializing in content
+      marketing, subscriber engagement, and conversion optimization. Masters multi-format
+      content and builds loyal communities through '
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-marketing-weibo-strategist-001
+    name: Weibo Strategist
+    file: marketing-weibo-strategist.md
+    domain: 28-MARKETING
+    category: marketing
+    description: Full-spectrum operations expert for Sina Weibo, with deep expertise
+      in trending topic mechanics, Super Topic community management, public sentiment
+      monitoring, fan economy strategies, and Weibo advert
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-marketing-x-twitter-intelligence-analyst-001
+    name: X/Twitter Intelligence Analyst
+    file: marketing-x-twitter-intelligence-analyst.md
+    domain: 28-MARKETING
+    category: marketing
+    description: Social intelligence specialist for X/Twitter research, trend detection,
+      account monitoring, and evidence-backed audience insights using public signals
+      and structured data workflows.
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-marketing-xiaohongshu-specialist-001
+    name: Xiaohongshu Specialist
+    file: marketing-xiaohongshu-specialist.md
+    domain: 28-MARKETING
+    category: marketing
+    description: Expert Xiaohongshu marketing specialist focused on lifestyle content,
+      trend-driven strategies, and authentic community engagement. Masters micro-content
+      creation and drives viral growth through aesthe
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-marketing-zhihu-strategist-001
+    name: Zhihu Strategist
+    file: marketing-zhihu-strategist.md
+    domain: 28-MARKETING
+    category: marketing
+    description: Expert Zhihu marketing specialist focused on thought leadership,
+      community credibility, and knowledge-driven engagement. Masters question-answering
+      strategy and builds brand authority through authenti
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-medical-billing-coding-specialist-001
+    name: Medical Billing & Coding Specialist
+    file: medical-billing-coding-specialist.md
+    domain: 01-IDENTITY
+    category: medical
+    description: Expert medical billing and coding specialist for ICD-10-CM/PCS, CPT,
+      and HCPCS coding, claim submission, denial management, revenue cycle optimization,
+      compliance auditing, and payer contract analysis
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-narrative-designer-001
+    name: Narrative Designer
+    file: narrative-designer.md
+    domain: 01-IDENTITY
+    category: narrative
+    description: Story systems and dialogue architect - Masters GDD-aligned narrative
+      design, branching dialogue, lore architecture, and environmental storytelling
+      across all game engines
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-operations-manager-001
+    name: Operations Manager
+    file: operations-manager.md
+    domain: 01-IDENTITY
+    category: operations
+    description: "Business operations specialist who applies Lean, Six Sigma, and\
+      \ systems thinking to process mapping, capacity planning, KPI governance, vendor\
+      \ management, and organizational efficiency \u2014 turning opera"
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-organizational-psychologist-001
+    name: Organizational Psychologist
+    file: organizational-psychologist.md
+    domain: 01-IDENTITY
+    category: organizational
+    description: "Applied organizational psychologist who diagnoses team dynamics,\
+      \ psychological safety, burnout risk, and culture health \u2014 using evidence-based\
+      \ frameworks to help leaders build high-performing, resilie"
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-paid-media-auditor-001
+    name: Paid Media Auditor
+    file: paid-media-auditor.md
+    domain: 01-IDENTITY
+    category: paid
+    description: Comprehensive paid media auditor who systematically evaluates Google
+      Ads, Microsoft Ads, and Meta accounts across 200+ checkpoints spanning account
+      structure, tracking, bidding, creative, audiences, a
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-paid-media-creative-strategist-001
+    name: Ad Creative Strategist
+    file: paid-media-creative-strategist.md
+    domain: 01-IDENTITY
+    category: paid
+    description: 'Paid media creative specialist focused on ad copywriting, RSA optimization,
+      asset group design, and creative testing frameworks across Google, Meta, Microsoft,
+      and programmatic platforms. Bridges the '
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-paid-media-paid-social-strategist-001
+    name: Paid Social Strategist
+    file: paid-media-paid-social-strategist.md
+    domain: 01-IDENTITY
+    category: paid
+    description: Cross-platform paid social advertising specialist covering Meta (Facebook/Instagram),
+      LinkedIn, TikTok, Pinterest, X, and Snapchat. Designs full-funnel social ad
+      programs from prospecting through reta
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-paid-media-ppc-strategist-001
+    name: PPC Campaign Strategist
+    file: paid-media-ppc-strategist.md
+    domain: 01-IDENTITY
+    category: paid
+    description: Senior paid media strategist specializing in large-scale search,
+      shopping, and performance max campaign architecture across Google, Microsoft,
+      and Amazon ad platforms. Designs account structures, budg
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-paid-media-programmatic-buyer-001
+    name: Programmatic & Display Buyer
+    file: paid-media-programmatic-buyer.md
+    domain: 01-IDENTITY
+    category: paid
+    description: Display advertising and programmatic media buying specialist covering
+      managed placements, Google Display Network, DV360, trade desk platforms, partner
+      media (newsletters, sponsored content), and ABM d
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-paid-media-search-query-analyst-001
+    name: Search Query Analyst
+    file: paid-media-search-query-analyst.md
+    domain: 01-IDENTITY
+    category: paid
+    description: Specialist in search term analysis, negative keyword architecture,
+      and query-to-intent mapping. Turns raw search query data into actionable optimizations
+      that eliminate waste and amplify high-intent t
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-paid-media-tracking-specialist-001
+    name: Tracking & Measurement Specialist
+    file: paid-media-tracking-specialist.md
+    domain: 01-IDENTITY
+    category: paid
+    description: Expert in conversion tracking architecture, tag management, and attribution
+      modeling across Google Tag Manager, GA4, Google Ads, Meta CAPI, LinkedIn Insight
+      Tag, and server-side implementations. Ensur
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-personal-growth-mentor-001
+    name: Personal Growth Mentor
+    file: personal-growth-mentor.md
+    domain: 01-IDENTITY
+    category: personal
+    description: Cross-domain personal development mentor for goal clarity, habit
+      design, strategic decisions, and accountability without motivational fluff.
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-product-behavioral-nudge-engine-001
+    name: Behavioral Nudge Engine
+    file: product-behavioral-nudge-engine.md
+    domain: 34-PRODUCT
+    category: product
+    description: Behavioral psychology specialist that adapts software interaction
+      cadences and styles to maximize user motivation and success.
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-product-feedback-synthesizer-001
+    name: Feedback Synthesizer
+    file: product-feedback-synthesizer.md
+    domain: 34-PRODUCT
+    category: product
+    description: Expert in collecting, analyzing, and synthesizing user feedback from
+      multiple channels to extract actionable product insights. Transforms qualitative
+      feedback into quantitative priorities and strategi
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-product-manager-001
+    name: Product Manager
+    file: product-manager.md
+    domain: 34-PRODUCT
+    category: product
+    description: "Holistic product leader who owns the full product lifecycle \u2014\
+      \ from discovery and strategy through roadmap, stakeholder alignment, go-to-market,\
+      \ and outcome measurement. Bridges business goals, user ne"
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-product-sprint-prioritizer-001
+    name: Sprint Prioritizer
+    file: product-sprint-prioritizer.md
+    domain: 34-PRODUCT
+    category: product
+    description: Expert product manager specializing in agile sprint planning, feature
+      prioritization, and resource allocation. Focused on maximizing team velocity
+      and business value delivery through data-driven prior
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-product-trend-researcher-001
+    name: Trend Researcher
+    file: product-trend-researcher.md
+    domain: 34-PRODUCT
+    category: product
+    description: Expert market intelligence analyst specializing in identifying emerging
+      trends, competitive analysis, and opportunity assessment. Focused on providing
+      actionable insights that drive product strategy a
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-project-management-experiment-tracker-001
+    name: Experiment Tracker
+    file: project-management-experiment-tracker.md
+    domain: 01-IDENTITY
+    category: project
+    description: Expert project manager specializing in experiment design, execution
+      tracking, and data-driven decision making. Focused on managing A/B tests, feature
+      experiments, and hypothesis validation through sys
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-project-management-jira-workflow-steward-001
+    name: Jira Workflow Steward
+    file: project-management-jira-workflow-steward.md
+    domain: 01-IDENTITY
+    category: project
+    description: Expert delivery operations specialist who enforces Jira-linked Git
+      workflows, traceable commits, structured pull requests, and release-safe branch
+      strategy across software teams.
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-project-management-meeting-notes-specialist-001
+    name: Meeting Notes Specialist
+    file: project-management-meeting-notes-specialist.md
+    domain: 01-IDENTITY
+    category: project
+    description: Extract structured decisions, action items, and open questions from
+      meeting transcripts or rough notes into a clean 4-section summary.
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-project-management-project-shepherd-001
+    name: Project Shepherd
+    file: project-management-project-shepherd.md
+    domain: 01-IDENTITY
+    category: project
+    description: Expert project manager specializing in cross-functional project coordination,
+      timeline management, and stakeholder alignment. Focused on shepherding projects
+      from conception to completion while managi
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-project-management-studio-operations-001
+    name: Studio Operations
+    file: project-management-studio-operations.md
+    domain: 01-IDENTITY
+    category: project
+    description: 'Expert operations manager specializing in day-to-day studio efficiency,
+      process optimization, and resource coordination. Focused on ensuring smooth
+      operations, maintaining productivity standards, and '
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-project-management-studio-producer-001
+    name: Studio Producer
+    file: project-management-studio-producer.md
+    domain: 01-IDENTITY
+    category: project
+    description: Senior strategic leader specializing in high-level creative and technical
+      project orchestration, resource allocation, and multi-project portfolio management.
+      Focused on aligning creative vision with b
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-project-manager-senior-001
+    name: Senior Project Manager
+    file: project-manager-senior.md
+    domain: 01-IDENTITY
+    category: project
+    description: Converts specs to tasks and remembers previous projects. Focused
+      on realistic scope, no background processes, exact spec requirements
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-real-estate-buyer-seller-001
+    name: Real Estate Buyer & Seller
+    file: real-estate-buyer-seller.md
+    domain: 01-IDENTITY
+    category: real
+    description: "Comprehensive real estate agent assistant for buyer representation,\
+      \ seller representation, listing management, offer negotiation, transaction\
+      \ coordination, and closing support \u2014 delivering a world-cla"
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-recruitment-specialist-001
+    name: Recruitment Specialist
+    file: recruitment-specialist.md
+    domain: 01-IDENTITY
+    category: recruitment
+    description: "Expert recruitment operations and talent acquisition specialist\
+      \ \u2014 skilled in China's major hiring platforms, talent assessment frameworks,\
+      \ and labor law compliance. Helps companies efficiently attract"
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-repo-advisor-001
+    name: Repository Intelligence Advisor
+    file: repo-advisor.md
+    domain: 01-IDENTITY
+    category: repo
+    description: Strategic evaluator for repository adoption, capability mapping,
+      and tech decisions
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-repo-deep-dive-001
+    name: Repository Deep Dive Evaluator
+    file: repo-deep-dive.md
+    domain: 01-IDENTITY
+    category: repo
+    description: Forensic code reviewer and production-readiness auditor for adoption
+      candidates
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-report-distribution-agent-001
+    name: Report Distribution Agent
+    file: report-distribution-agent.md
+    domain: 01-IDENTITY
+    category: report
+    description: AI agent that automates distribution of consolidated sales reports
+      to representatives based on territorial parameters
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-research-synthesist-001
+    name: Research Synthesist
+    file: research-synthesist.md
+    domain: 37-RESEARCH
+    category: research
+    description: "Expert in literature review, source evaluation, and evidence synthesis\
+      \ \u2014 turns a scattered pile of sources into a structured, honestly-weighted\
+      \ map of what the evidence actually supports"
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-resume-tailor-001
+    name: Resume Tailor
+    file: resume-tailor.md
+    domain: 01-IDENTITY
+    category: resume
+    description: Candidate-side resume optimization specialist who analyzes job descriptions,
+      maps real experience to role requirements, improves ATS keyword alignment, and
+      rewrites bullets without fabricating qualifi
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-retail-customer-returns-001
+    name: Retail Customer Returns
+    file: retail-customer-returns.md
+    domain: 01-IDENTITY
+    category: retail
+    description: "Comprehensive retail customer returns specialist for processing\
+      \ returns, exchanges, and refunds across in-store, online, and omnichannel retail\
+      \ \u2014 handling policy enforcement, fraud prevention, custome"
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-roblox-avatar-creator-001
+    name: Roblox Avatar Creator
+    file: roblox-avatar-creator.md
+    domain: 01-IDENTITY
+    category: roblox
+    description: Roblox UGC and avatar pipeline specialist - Masters Roblox's avatar
+      system, UGC item creation, accessory rigging, texture standards, and the Creator
+      Marketplace submission pipeline
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-roblox-experience-designer-001
+    name: Roblox Experience Designer
+    file: roblox-experience-designer.md
+    domain: 01-IDENTITY
+    category: roblox
+    description: Roblox platform UX and monetization specialist - Masters engagement
+      loop design, DataStore-driven progression, Roblox monetization systems (Passes,
+      Developer Products, UGC), and player retention for R
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-roblox-systems-scripter-001
+    name: Roblox Systems Scripter
+    file: roblox-systems-scripter.md
+    domain: 01-IDENTITY
+    category: roblox
+    description: Roblox platform engineering specialist - Masters Luau, the client-server
+      security model, RemoteEvents/RemoteFunctions, DataStore, and module architecture
+      for scalable Roblox experiences
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-sales-account-strategist-001
+    name: Account Strategist
+    file: sales-account-strategist.md
+    domain: 30-REVENUE
+    category: sales
+    description: Expert post-sale account strategist specializing in land-and-expand
+      execution, stakeholder mapping, QBR facilitation, and net revenue retention.
+      Turns closed deals into long-term platform relationship
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-sales-coach-001
+    name: Sales Coach
+    file: sales-coach.md
+    domain: 30-REVENUE
+    category: sales
+    description: Expert sales coaching specialist focused on rep development, pipeline
+      review facilitation, call coaching, deal strategy, and forecast accuracy. Makes
+      every rep and every deal better through structured
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-sales-data-extraction-agent-001
+    name: Sales Data Extraction Agent
+    file: sales-data-extraction-agent.md
+    domain: 30-REVENUE
+    category: sales
+    description: AI agent specialized in monitoring Excel files and extracting key
+      sales metrics (MTD, YTD, Year End) for internal live reporting
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-sales-deal-strategist-001
+    name: Deal Strategist
+    file: sales-deal-strategist.md
+    domain: 30-REVENUE
+    category: sales
+    description: Senior deal strategist specializing in MEDDPICC qualification, competitive
+      positioning, and win planning for complex B2B sales cycles. Scores opportunities,
+      exposes pipeline risk, and builds deal stra
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-sales-discovery-coach-001
+    name: Discovery Coach
+    file: sales-discovery-coach.md
+    domain: 30-REVENUE
+    category: sales
+    description: "Coaches sales teams on elite discovery methodology \u2014 question\
+      \ design, current-state mapping, gap quantification, and call structure that\
+      \ surfaces real buying motivation."
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-sales-engineer-001
+    name: Sales Engineer
+    file: sales-engineer.md
+    domain: 30-REVENUE
+    category: sales
+    description: Senior pre-sales engineer specializing in technical discovery, demo
+      engineering, POC scoping, competitive battlecards, and bridging product capabilities
+      to business outcomes. Wins the technical decisi
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-sales-offer-lead-gen-strategist-001
+    name: Offer & Lead Gen Strategist
+    file: sales-offer-lead-gen-strategist.md
+    domain: 30-REVENUE
+    category: sales
+    description: Top-of-funnel architect who designs irresistible offers and lead
+      magnets that attract qualified buyers at scale. Specializes in value-equation
+      offer construction, lead magnet typology, multi-channel l
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-sales-outbound-strategist-001
+    name: Outbound Strategist
+    file: sales-outbound-strategist.md
+    domain: 30-REVENUE
+    category: sales
+    description: "Signal-based outbound specialist who designs multi-channel prospecting\
+      \ sequences, defines ICPs, and builds pipeline through research-driven personalization\
+      \ \u2014 not volume."
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-sales-outreach-001
+    name: Sales Outreach
+    file: sales-outreach.md
+    domain: 30-REVENUE
+    category: sales
+    description: "Consultative B2B sales outreach specialist for cold prospecting,\
+      \ lead follow-up, objection handling, proposal writing, and pipeline management\
+      \ \u2014 combining data-driven targeting with genuine relationsh"
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-sales-pipeline-analyst-001
+    name: Pipeline Analyst
+    file: sales-pipeline-analyst.md
+    domain: 30-REVENUE
+    category: sales
+    description: 'Revenue operations analyst specializing in pipeline health diagnostics,
+      deal velocity analysis, forecast accuracy, and data-driven sales coaching. Turns
+      CRM data into actionable pipeline intelligence '
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-sales-proposal-strategist-001
+    name: Proposal Strategist
+    file: sales-proposal-strategist.md
+    domain: 30-REVENUE
+    category: sales
+    description: Strategic proposal architect who transforms RFPs and sales opportunities
+      into compelling win narratives. Specializes in win theme development, competitive
+      positioning, executive summary craft, and bui
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-security-ai-generated-code-auditor-001
+    name: AI-Generated Code Security Auditor
+    file: security-ai-generated-code-auditor.md
+    domain: 01-IDENTITY
+    category: security
+    description: "Security reviewer for AI-generated and vibe-coded apps \u2014 hunts\
+      \ the hardcoded secrets, broken row-level security, and prompt-injection sinks\
+      \ that coding assistants ship by default, then drives a scan, "
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-security-appsec-engineer-001
+    name: Application Security Engineer
+    file: security-appsec-engineer.md
+    domain: 01-IDENTITY
+    category: security
+    description: AppSec specialist who secures the software development lifecycle
+      through threat modeling, secure code review, SAST/DAST integration, and developer
+      security education that makes secure code the default
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-security-architect-001
+    name: Security Architect
+    file: security-architect.md
+    domain: 01-IDENTITY
+    category: security
+    description: 'Expert security architect specializing in threat modeling, secure-by-design
+      architecture, trust-boundary analysis, defense-in-depth, and risk-based security
+      reviews across web, API, cloud-native, and '
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-security-blockchain-security-auditor-001
+    name: Blockchain Security Auditor
+    file: security-blockchain-security-auditor.md
+    domain: 01-IDENTITY
+    category: security
+    description: Expert smart contract security auditor specializing in vulnerability
+      detection, formal verification, exploit analysis, and comprehensive audit report
+      writing for DeFi protocols and blockchain applicat
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-security-cloud-security-architect-001
+    name: Cloud Security Architect
+    file: security-cloud-security-architect.md
+    domain: 01-IDENTITY
+    category: security
+    description: Cloud-native security specialist designing zero trust architectures,
+      implementing defense-in-depth across AWS, Azure, and GCP, and securing infrastructure-as-code
+      pipelines from day one.
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-security-compliance-auditor-001
+    name: Compliance Auditor
+    file: security-compliance-auditor.md
+    domain: 01-IDENTITY
+    category: security
+    description: "Expert technical compliance auditor specializing in SOC 2, ISO 27001,\
+      \ HIPAA, and PCI-DSS audits \u2014 from readiness assessment through evidence\
+      \ collection to certification."
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-security-incident-responder-001
+    name: Incident Responder
+    file: security-incident-responder.md
+    domain: 01-IDENTITY
+    category: security
+    description: Digital forensics and incident response specialist who leads breach
+      investigations, contains active threats, coordinates crisis response, and writes
+      post-mortems that prevent recurrence.
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-security-penetration-tester-001
+    name: Penetration Tester
+    file: security-penetration-tester.md
+    domain: 01-IDENTITY
+    category: security
+    description: Offensive security specialist conducting authorized penetration tests,
+      red team operations, and vulnerability assessments across networks, web applications,
+      and cloud infrastructure.
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-security-secrets-credential-engineer-001
+    name: Secrets & Credential Hygiene Engineer
+    file: security-secrets-credential-engineer.md
+    domain: 01-IDENTITY
+    category: security
+    description: "Owns the full lifecycle of secrets and credentials \u2014 detection,\
+      \ prevention, vaulting, rotation, and leak response \u2014 so an application\
+      \ runs on short-lived, least-privilege credentials that are never in"
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-security-senior-secops-001
+    name: Senior SecOps Engineer
+    file: security-senior-secops.md
+    domain: 01-IDENTITY
+    category: security
+    description: Defensive application security specialist who scans every code submission
+      for secrets and sensitive data exposure before anything else, then implements
+      or audits security controls following the organi
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-security-threat-detection-engineer-001
+    name: Threat Detection Engineer
+    file: security-threat-detection-engineer.md
+    domain: 01-IDENTITY
+    category: security
+    description: Expert detection engineer specializing in SIEM rule development,
+      MITRE ATT&CK coverage mapping, threat hunting, alert tuning, and detection-as-code
+      pipelines for security operations teams.
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-security-threat-intelligence-analyst-001
+    name: Threat Intelligence Analyst
+    file: security-threat-intelligence-analyst.md
+    domain: 01-IDENTITY
+    category: security
+    description: Cyber threat intelligence specialist who tracks adversary groups,
+      maps attack campaigns to MITRE ATT&CK, produces actionable intelligence reports,
+      and builds detection rules that catch real threats.
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-specialized-chief-of-staff-001
+    name: Chief of Staff
+    file: specialized-chief-of-staff.md
+    domain: 01-IDENTITY
+    category: specialized
+    description: "Master coordinator for founders and executives \u2014 filters noise,\
+      \ owns processes, enforces consistency, routes decisions, and positions outputs\
+      \ for impact so the boss can think clearly."
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-specialized-civil-engineer-001
+    name: Civil Engineer
+    file: specialized-civil-engineer.md
+    domain: 01-IDENTITY
+    category: specialized
+    description: "Expert civil and structural engineer with global standards coverage\
+      \ \u2014 Eurocode, DIN, ACI, AISC, ASCE, AS/NZS, CSA, GB, IS, AIJ, and more.\
+      \ Specializes in structural analysis, geotechnical design, const"
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-specialized-codebase-archaeologist-001
+    name: Codebase Archaeologist
+    file: specialized-codebase-archaeologist.md
+    domain: 01-IDENTITY
+    category: specialized
+    description: 'Multi-session, multi-tool drift detection specialist who audits
+      codebases touched by several AI coding tools (Claude, Cursor, Copilot, Windsurf,
+      etc.) over time, finding silent logic mismatches, dead '
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-specialized-cultural-intelligence-strategist-001
+    name: Cultural Intelligence Strategist
+    file: specialized-cultural-intelligence-strategist.md
+    domain: 01-IDENTITY
+    category: specialized
+    description: CQ specialist that detects invisible exclusion, researches global
+      context, and ensures software resonates authentically across intersectional
+      identities.
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-specialized-developer-advocate-001
+    name: Developer Advocate
+    file: specialized-developer-advocate.md
+    domain: 01-IDENTITY
+    category: specialized
+    description: Expert developer advocate specializing in building developer communities,
+      creating compelling technical content, optimizing developer experience (DX),
+      and driving platform adoption through authentic e
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-specialized-document-generator-001
+    name: Document Generator
+    file: specialized-document-generator.md
+    domain: 01-IDENTITY
+    category: specialized
+    description: Expert document creation specialist who generates professional PDF,
+      PPTX, DOCX, and XLSX files using code-based approaches with proper formatting,
+      charts, and data visualization.
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-specialized-fedramp-rmf-compliance-001
+    name: FedRAMP & RMF Compliance Engineer
+    file: specialized-fedramp-rmf-compliance.md
+    domain: 01-IDENTITY
+    category: specialized
+    description: "Expert FedRAMP and NIST Risk Management Framework compliance engineer\
+      \ specializing in both FedRAMP authorization pathways \u2014 the traditional\
+      \ Rev5 path (NIST 800-53 Rev 5 control implementation, System "
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-specialized-french-consulting-market-001
+    name: French Consulting Market Navigator
+    file: specialized-french-consulting-market.md
+    domain: 01-IDENTITY
+    category: specialized
+    description: "Navigate the French ESN/SI freelance ecosystem \u2014 margin models,\
+      \ platform mechanics (Malt, collective.work), portage salarial, rate positioning,\
+      \ and payment cycle realities"
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-specialized-korean-business-navigator-001
+    name: Korean Business Navigator
+    file: specialized-korean-business-navigator.md
+    domain: 01-IDENTITY
+    category: specialized
+    description: "Korean business culture for foreign professionals \u2014 \uD488\uC758\
+      \ decision process, nunchi reading, KakaoTalk business etiquette, hierarchy\
+      \ navigation, and relationship-first deal mechanics"
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-specialized-master-plan-architect-001
+    name: Master Plan Architect
+    file: specialized-master-plan-architect.md
+    domain: 01-IDENTITY
+    category: specialized
+    description: 'Master planning architect, technical educator, and ruthless plan
+      critic who specializes in deep architectural teaching, Red Teaming / risk critique,
+      and crafting comprehensive Implementation Plans in '
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-specialized-mcp-builder-001
+    name: MCP Builder
+    file: specialized-mcp-builder.md
+    domain: 01-IDENTITY
+    category: specialized
+    description: Expert Model Context Protocol developer who designs, builds, and
+      tests MCP servers that extend AI agent capabilities with custom tools, resources,
+      and prompts.
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-specialized-model-qa-001
+    name: Model QA Specialist
+    file: specialized-model-qa.md
+    domain: 01-IDENTITY
+    category: specialized
+    description: Independent model QA expert who audits ML and statistical models
+      end-to-end - from documentation review and data reconstruction to replication,
+      calibration testing, interpretability analysis, performa
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-specialized-pricing-analyst-001
+    name: Pricing Analyst
+    file: specialized-pricing-analyst.md
+    domain: 01-IDENTITY
+    category: specialized
+    description: "Specialized pricing analyst who develops optimal pricing models\
+      \ through market research, competitor analysis, cost structure evaluation, and\
+      \ margin optimization \u2014 turning pricing from guesswork into a"
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-specialized-salesforce-architect-001
+    name: Salesforce Architect
+    file: specialized-salesforce-architect.md
+    domain: 01-IDENTITY
+    category: specialized
+    description: "Solution architecture for Salesforce platform \u2014 multi-cloud\
+      \ design, integration patterns, governor limits, deployment strategy, and data\
+      \ model governance for enterprise-scale orgs"
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-specialized-strategy-duel-agent-001
+    name: Strategy Duel Agent
+    file: specialized-strategy-duel-agent.md
+    domain: 01-IDENTITY
+    category: specialized
+    description: Conducts live strategy duels using game theory and the 36 Chinese
+      stratagems
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-specialized-workflow-architect-001
+    name: Workflow Architect
+    file: specialized-workflow-architect.md
+    domain: 01-IDENTITY
+    category: specialized
+    description: "Workflow design specialist who maps complete workflow trees for\
+      \ every system, user journey, and agent interaction \u2014 covering happy paths,\
+      \ all branch conditions, failure modes, recovery paths, handoff "
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-study-abroad-advisor-001
+    name: Study Abroad Advisor
+    file: study-abroad-advisor.md
+    domain: 01-IDENTITY
+    category: study
+    description: "Full-spectrum study abroad planning expert covering the US, UK,\
+      \ Canada, Australia, Europe, Hong Kong, and Singapore \u2014 proficient in undergraduate,\
+      \ master's, and PhD application strategy, school select"
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-supply-chain-strategist-001
+    name: Supply Chain Strategist
+    file: supply-chain-strategist.md
+    domain: 01-IDENTITY
+    category: supply
+    description: "Expert supply chain management and procurement strategy specialist\
+      \ \u2014 skilled in supplier development, strategic sourcing, quality control,\
+      \ and supply chain digitalization. Grounded in China's manufact"
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-support-analytics-reporter-001
+    name: Analytics Reporter
+    file: support-analytics-reporter.md
+    domain: 05-CUSTOMER-SERVICE
+    category: support
+    description: Expert data analyst transforming raw data into actionable business
+      insights. Creates dashboards, performs statistical analysis, tracks KPIs, and
+      provides strategic decision support through data visual
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-support-executive-summary-generator-001
+    name: Executive Summary Generator
+    file: support-executive-summary-generator.md
+    domain: 05-CUSTOMER-SERVICE
+    category: support
+    description: 'Consultant-grade AI specialist trained to think and communicate
+      like a senior strategy consultant. Transforms complex business inputs into concise,
+      actionable executive summaries using McKinsey SCQA, '
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-support-finance-tracker-001
+    name: Finance Tracker
+    file: support-finance-tracker.md
+    domain: 05-CUSTOMER-SERVICE
+    category: support
+    description: Expert financial analyst and controller specializing in financial
+      planning, budget management, and business performance analysis. Maintains financial
+      health, optimizes cash flow, and provides strategi
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-support-infrastructure-maintainer-001
+    name: Infrastructure Maintainer
+    file: support-infrastructure-maintainer.md
+    domain: 05-CUSTOMER-SERVICE
+    category: support
+    description: 'Expert infrastructure specialist focused on system reliability,
+      performance optimization, and technical operations management. Maintains robust,
+      scalable infrastructure supporting business operations '
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-support-legal-compliance-checker-001
+    name: Legal Compliance Checker
+    file: support-legal-compliance-checker.md
+    domain: 05-CUSTOMER-SERVICE
+    category: support
+    description: Expert legal and compliance specialist ensuring business operations,
+      data handling, and content creation comply with relevant laws, regulations,
+      and industry standards across multiple jurisdictions.
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-support-support-responder-001
+    name: Support Responder
+    file: support-support-responder.md
+    domain: 05-CUSTOMER-SERVICE
+    category: support
+    description: Expert customer support specialist delivering exceptional customer
+      service, issue resolution, and user experience optimization. Specializes in
+      multi-channel support, proactive customer care, and turni
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-technical-artist-001
+    name: Technical Artist
+    file: technical-artist.md
+    domain: 01-IDENTITY
+    category: technical
+    description: Art-to-engine pipeline specialist - Masters shaders, VFX systems,
+      LOD pipelines, performance budgeting, and cross-engine asset optimization
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-terminal-integration-specialist-001
+    name: Terminal Integration Specialist
+    file: terminal-integration-specialist.md
+    domain: 01-IDENTITY
+    category: terminal
+    description: Terminal emulation, text rendering optimization, and SwiftTerm integration
+      for modern Swift applications
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-testing-accessibility-auditor-001
+    name: Accessibility Auditor
+    file: testing-accessibility-auditor.md
+    domain: 01-IDENTITY
+    category: testing
+    description: "Expert accessibility specialist who audits interfaces against WCAG\
+      \ standards, tests with assistive technologies, and ensures inclusive design.\
+      \ Defaults to finding barriers \u2014 if it's not tested with a "
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-testing-api-tester-001
+    name: API Tester
+    file: testing-api-tester.md
+    domain: 01-IDENTITY
+    category: testing
+    description: Expert API testing specialist focused on comprehensive API validation,
+      performance testing, and quality assurance across all systems and third-party
+      integrations
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-testing-evidence-collector-001
+    name: Evidence Collector
+    file: testing-evidence-collector.md
+    domain: 01-IDENTITY
+    category: testing
+    description: Screenshot-obsessed, fantasy-allergic QA specialist - Default to
+      finding 3-5 issues, requires visual proof for everything
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-testing-performance-benchmarker-001
+    name: Performance Benchmarker
+    file: testing-performance-benchmarker.md
+    domain: 01-IDENTITY
+    category: testing
+    description: Expert performance testing and optimization specialist focused on
+      measuring, analyzing, and improving system performance across all applications
+      and infrastructure
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-testing-reality-checker-001
+    name: Reality Checker
+    file: testing-reality-checker.md
+    domain: 01-IDENTITY
+    category: testing
+    description: Stops fantasy approvals, evidence-based certification - Default to
+      "NEEDS WORK", requires overwhelming proof for production readiness
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-testing-test-automation-engineer-001
+    name: Test Automation Engineer
+    file: testing-test-automation-engineer.md
+    domain: 01-IDENTITY
+    category: testing
+    description: "Expert end-to-end test automation engineer for Playwright and Cypress\
+      \ \u2014 resilient selectors, flake elimination, isolated test data, CI parallelization,\
+      \ and trace-driven failure debugging."
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-testing-test-results-analyzer-001
+    name: Test Results Analyzer
+    file: testing-test-results-analyzer.md
+    domain: 01-IDENTITY
+    category: testing
+    description: Expert test analysis specialist focused on comprehensive test result
+      evaluation, quality metrics analysis, and actionable insight generation from
+      testing activities
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-testing-tool-evaluator-001
+    name: Tool Evaluator
+    file: testing-tool-evaluator.md
+    domain: 01-IDENTITY
+    category: testing
+    description: Expert technology assessment specialist focused on evaluating, testing,
+      and recommending tools, software, and platforms for business use and productivity
+      optimization
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-testing-workflow-optimizer-001
+    name: Workflow Optimizer
+    file: testing-workflow-optimizer.md
+    domain: 01-IDENTITY
+    category: testing
+    description: Expert process improvement specialist focused on analyzing, optimizing,
+      and automating workflows across all business functions for maximum productivity
+      and efficiency
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-unity-architect-001
+    name: Unity Architect
+    file: unity-architect.md
+    domain: 01-IDENTITY
+    category: unity
+    description: Data-driven modularity specialist - Masters ScriptableObjects, decoupled
+      systems, and single-responsibility component design for scalable Unity projects
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-unity-editor-tool-developer-001
+    name: Unity Editor Tool Developer
+    file: unity-editor-tool-developer.md
+    domain: 01-IDENTITY
+    category: unity
+    description: Unity editor automation specialist - Masters custom EditorWindows,
+      PropertyDrawers, AssetPostprocessors, ScriptedImporters, and pipeline automation
+      that saves teams hours per week
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-unity-multiplayer-engineer-001
+    name: Unity Multiplayer Engineer
+    file: unity-multiplayer-engineer.md
+    domain: 01-IDENTITY
+    category: unity
+    description: Networked gameplay specialist - Masters Netcode for GameObjects,
+      Unity Gaming Services (Relay/Lobby), client-server authority, lag compensation,
+      and state synchronization
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-unity-shader-graph-artist-001
+    name: Unity Shader Graph Artist
+    file: unity-shader-graph-artist.md
+    domain: 01-IDENTITY
+    category: unity
+    description: Visual effects and material specialist - Masters Unity Shader Graph,
+      HLSL, URP/HDRP rendering pipelines, and custom pass authoring for real-time
+      visual effects
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-unreal-multiplayer-architect-001
+    name: Unreal Multiplayer Architect
+    file: unreal-multiplayer-architect.md
+    domain: 01-IDENTITY
+    category: unreal
+    description: Unreal Engine networking specialist - Masters Actor replication,
+      GameMode/GameState architecture, server-authoritative gameplay, network prediction,
+      and dedicated server setup for UE5
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-unreal-systems-engineer-001
+    name: Unreal Systems Engineer
+    file: unreal-systems-engineer.md
+    domain: 01-IDENTITY
+    category: unreal
+    description: Performance and hybrid architecture specialist - Masters C++/Blueprint
+      continuum, Nanite geometry, Lumen GI, and Gameplay Ability System for AAA-grade
+      Unreal Engine projects
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-unreal-technical-artist-001
+    name: Unreal Technical Artist
+    file: unreal-technical-artist.md
+    domain: 01-IDENTITY
+    category: unreal
+    description: Unreal Engine visual pipeline specialist - Masters the Material Editor,
+      Niagara VFX, Procedural Content Generation, and the art-to-engine pipeline for
+      UE5 projects
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-unreal-world-builder-001
+    name: Unreal World Builder
+    file: unreal-world-builder.md
+    domain: 01-IDENTITY
+    category: unreal
+    description: Open-world and environment specialist - Masters UE5 World Partition,
+      Landscape, procedural foliage, HLOD, and large-scale level streaming for seamless
+      open-world experiences
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-visionos-spatial-engineer-001
+    name: visionOS Spatial Engineer
+    file: visionos-spatial-engineer.md
+    domain: 01-IDENTITY
+    category: visionos
+    description: Native visionOS spatial computing, SwiftUI volumetric interfaces,
+      and Liquid Glass design implementation
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-xr-cockpit-interaction-specialist-001
+    name: XR Cockpit Interaction Specialist
+    file: xr-cockpit-interaction-specialist.md
+    domain: 01-IDENTITY
+    category: xr
+    description: Specialist in designing and developing immersive cockpit-based control
+      systems for XR environments
+    autonomy_level: L2
+    deployed: false
+    status: READY
+  - id: agent-xr-immersive-developer-001
+    name: XR Immersive Developer
+    file: xr-immersive-developer.md
+    domain: 01-IDENTITY
+    category: xr
+    description: Expert WebXR and immersive technology developer with specialization
+      in browser-based AR/VR/XR applications
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-xr-interface-architect-001
+    name: XR Interface Architect
+    file: xr-interface-architect.md
+    domain: 01-IDENTITY
+    category: xr
+    description: Spatial interaction designer and interface strategist for immersive
+      AR/VR/XR environments
+    autonomy_level: L1
+    deployed: false
+    status: READY
+  - id: agent-zk-steward-001
+    name: ZK Steward
+    file: zk-steward.md
+    domain: 01-IDENTITY
+    category: zk
+    description: 'Knowledge-base steward in the spirit of Niklas Luhmann''s Zettelkasten.
+      Default perspective: Luhmann; switches to domain experts (Feynman, Munger, Ogilvy,
+      etc.) by task. Enforces atomic notes, connecti'
+    autonomy_level: L1
+    deployed: false
+    status: READY

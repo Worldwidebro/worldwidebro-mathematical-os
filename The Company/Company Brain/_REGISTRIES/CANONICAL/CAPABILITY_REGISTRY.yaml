@@ -1,769 +1,4147 @@
-business_capabilities:
-  CAP-001:
-    name: Strategy & Planning
-    category: Leadership
-    importance: critical
-    agents: Hermes
-    implemented_by_repo_ids:
-    - OWN-PUB-0875
-    implemented_by_names_unmatched: []
-  CAP-002:
-    name: Product Management
-    category: Product
-    importance: high
-    agents: Research
-    implemented_by_repo_ids:
-    - OWN-PUB-0884
-    - OWN-PUB-0875
-    implemented_by_names_unmatched: []
-  CAP-003:
-    name: Software Development
-    category: Engineering
-    importance: critical
-    agents: Coding
-    implemented_by_repo_ids:
-    - OWN-PUB-0875
-    - OWN-PUB-0881
-    - OWN-PUB-0878
-    implemented_by_names_unmatched: []
-  CAP-004:
-    name: DevOps & Infrastructure
-    category: Infrastructure
-    importance: critical
-    agents: Operations
-    implemented_by_repo_ids:
-    - OWN-PUB-0875
-    - OWN-PUB-0880
-    implemented_by_names_unmatched: []
-  CAP-005:
-    name: Financial Analysis & Capital
-    category: Finance
-    importance: critical
-    agents: Finance
-    implemented_by_repo_ids:
-    - OWN-PUB-0878
-    - OWN-PUB-0876
-    - OWN-PRIV-0006
-    implemented_by_names_unmatched: []
-  CAP-006:
-    name: Sales & Revenue
-    category: Revenue
-    importance: high
-    agents: Sales
-    implemented_by_repo_ids:
-    - OWN-PUB-0884
-    - OWN-PUB-0886
-    implemented_by_names_unmatched: []
-  CAP-007:
-    name: Customer Success
-    category: Revenue
-    importance: high
-    agents: Sales
-    implemented_by_repo_ids:
-    - OWN-PUB-0884
-    implemented_by_names_unmatched: []
-  CAP-008:
-    name: Operations & Execution
-    category: Operations
-    importance: high
-    agents: Operations
-    implemented_by_repo_ids:
-    - OWN-PUB-0880
-    - OWN-PUB-0884
-    implemented_by_names_unmatched: []
-  CAP-009:
-    name: Logistics & Supply Chain
-    category: Infrastructure
-    importance: high
-    agents: Logistics
-    implemented_by_repo_ids:
-    - OWN-PRIV-0007
-    - OWN-PRIV-0002
-    implemented_by_names_unmatched: []
-  CAP-010:
-    name: Construction & Project Mgmt
-    category: Assets
-    importance: high
-    agents: Construction
-    implemented_by_repo_ids:
-    - OWN-PUB-0884
-    implemented_by_names_unmatched: []
-  CAP-011:
-    name: Research & Knowledge
-    category: Research
-    importance: medium
-    agents: Research
-    implemented_by_repo_ids:
-    - OWN-PUB-0875
-    implemented_by_names_unmatched: []
-  CAP-012:
-    name: Leadership & Management
-    category: Leadership
-    importance: critical
-    agents: Hermes
-    implemented_by_repo_ids:
-    - OWN-PUB-0875
-    implemented_by_names_unmatched: []
-technical_capabilities:
-  AI_ML:
-    repo_count: 92
-    repo_ids:
-    - OWN-PRIV-0003
-    - OWN-PRIV-0006
-    - OWN-PRIV-0010
-    - OWN-PRIV-0011
-    - OWN-PRIV-0012
-    - OWN-PRIV-0020
-    - OWN-PRIV-0054
-    - OWN-PRIV-0057
-    - OWN-PRIV-0058
-    - OWN-PRIV-0061
-    - OWN-PRIV-0113
-    - OWN-PRIV-0123
-    - OWN-PRIV-0127
-    - OWN-PRIV-0135
-    - OWN-PRIV-0136
-    - OWN-PRIV-0137
-    - OWN-PRIV-0138
-    - OWN-PRIV-0159
-    - OWN-PRIV-0161
-    - OWN-PRIV-0306
-    - OWN-PRIV-0467
-    - OWN-PRIV-0468
-    - OWN-PRIV-0470
-    - OWN-PRIV-0471
-    - OWN-PRIV-0473
-    - OWN-PRIV-0474
-    - OWN-PRIV-0475
-    - OWN-PRIV-0476
-    - OWN-PRIV-0477
-    - OWN-PRIV-0478
-    - OWN-PRIV-0482
-    - OWN-PRIV-0483
-    - OWN-PRIV-0487
-    - OWN-PRIV-0488
-    - OWN-PRIV-0492
-    - OWN-PRIV-0493
-    - OWN-PRIV-0498
-    - OWN-PRIV-0506
-    - OWN-PRIV-0509
-    - OWN-PRIV-0516
-    - OWN-PRIV-0522
-    - OWN-PRIV-0523
-    - OWN-PRIV-0541
-    - OWN-PRIV-0542
-    - OWN-PRIV-0545
-    - OWN-PRIV-0548
-    - OWN-PRIV-0619
-    - OWN-PRIV-0642
-    - OWN-PRIV-0645
-    - OWN-PRIV-0704
-    - OWN-PRIV-0707
-    - OWN-PRIV-0708
-    - OWN-PRIV-0821
-    - OWN-PRIV-0822
-    - OWN-PRIV-0823
-    - OWN-PRIV-0824
-    - OWN-PRIV-0825
-    - OWN-PRIV-0826
-    - OWN-PRIV-0827
-    - OWN-PRIV-0828
-    - OWN-PRIV-0829
-    - OWN-PRIV-0830
-    - OWN-PRIV-0831
-    - OWN-PRIV-0832
-    - OWN-PRIV-0833
-    - OWN-PRIV-0834
-    - OWN-PRIV-0835
-    - OWN-PRIV-0836
-    - OWN-PRIV-0837
-    - OWN-PRIV-0838
-    - OWN-PRIV-0839
-    - OWN-PRIV-0840
-    - OWN-PRIV-0841
-    - OWN-PRIV-0842
-    - OWN-PRIV-0843
-    - OWN-PRIV-0844
-    - OWN-PRIV-0845
-    - OWN-PRIV-0846
-    - OWN-PRIV-0847
-    - OWN-PRIV-0848
-    - OWN-PRIV-0849
-    - OWN-PRIV-0850
-    - OWN-PRIV-0851
-    - OWN-PRIV-0852
-    - OWN-PRIV-0853
-    - OWN-PRIV-0854
-    - OWN-PRIV-0865
-    - OWN-PRIV-0866
-    - OWN-PRIV-0868
-    - OWN-PRIV-0873
-    - OWN-PUB-0874
-    - OWN-PUB-0876
-  API_Backend:
-    repo_count: 107
-    repo_ids:
-    - OWN-PRIV-0004
-    - OWN-PRIV-0008
-    - OWN-PRIV-0010
-    - OWN-PRIV-0011
-    - OWN-PRIV-0012
-    - OWN-PRIV-0013
-    - OWN-PRIV-0020
-    - OWN-PRIV-0036
-    - OWN-PRIV-0038
-    - OWN-PRIV-0039
-    - OWN-PRIV-0041
-    - OWN-PRIV-0050
-    - OWN-PRIV-0054
-    - OWN-PRIV-0057
-    - OWN-PRIV-0058
-    - OWN-PRIV-0061
-    - OWN-PRIV-0113
-    - OWN-PRIV-0115
-    - OWN-PRIV-0123
-    - OWN-PRIV-0127
-    - OWN-PRIV-0129
-    - OWN-PRIV-0131
-    - OWN-PRIV-0135
-    - OWN-PRIV-0136
-    - OWN-PRIV-0137
-    - OWN-PRIV-0138
-    - OWN-PRIV-0159
-    - OWN-PRIV-0161
-    - OWN-PRIV-0163
-    - OWN-PRIV-0306
-    - OWN-PRIV-0466
-    - OWN-PRIV-0467
-    - OWN-PRIV-0468
-    - OWN-PRIV-0470
-    - OWN-PRIV-0471
-    - OWN-PRIV-0473
-    - OWN-PRIV-0474
-    - OWN-PRIV-0475
-    - OWN-PRIV-0476
-    - OWN-PRIV-0477
-    - OWN-PRIV-0478
-    - OWN-PRIV-0482
-    - OWN-PRIV-0483
-    - OWN-PRIV-0487
-    - OWN-PRIV-0488
-    - OWN-PRIV-0492
-    - OWN-PRIV-0493
-    - OWN-PRIV-0498
-    - OWN-PRIV-0506
-    - OWN-PRIV-0509
-    - OWN-PRIV-0516
-    - OWN-PRIV-0522
-    - OWN-PRIV-0523
-    - OWN-PRIV-0541
-    - OWN-PRIV-0542
-    - OWN-PRIV-0545
-    - OWN-PRIV-0548
-    - OWN-PRIV-0603
-    - OWN-PRIV-0619
-    - OWN-PRIV-0642
-    - OWN-PRIV-0645
-    - OWN-PRIV-0704
-    - OWN-PRIV-0705
-    - OWN-PRIV-0707
-    - OWN-PRIV-0708
-    - OWN-PRIV-0717
-    - OWN-PRIV-0762
-    - OWN-PRIV-0821
-    - OWN-PRIV-0822
-    - OWN-PRIV-0823
-    - OWN-PRIV-0824
-    - OWN-PRIV-0825
-    - OWN-PRIV-0826
-    - OWN-PRIV-0827
-    - OWN-PRIV-0828
-    - OWN-PRIV-0829
-    - OWN-PRIV-0830
-    - OWN-PRIV-0831
-    - OWN-PRIV-0832
-    - OWN-PRIV-0833
-    - OWN-PRIV-0834
-    - OWN-PRIV-0835
-    - OWN-PRIV-0836
-    - OWN-PRIV-0837
-    - OWN-PRIV-0838
-    - OWN-PRIV-0839
-    - OWN-PRIV-0840
-    - OWN-PRIV-0841
-    - OWN-PRIV-0842
-    - OWN-PRIV-0843
-    - OWN-PRIV-0844
-    - OWN-PRIV-0845
-    - OWN-PRIV-0846
-    - OWN-PRIV-0847
-    - OWN-PRIV-0848
-    - OWN-PRIV-0849
-    - OWN-PRIV-0850
-    - OWN-PRIV-0851
-    - OWN-PRIV-0852
-    - OWN-PRIV-0853
-    - OWN-PRIV-0854
-    - OWN-PRIV-0865
-    - OWN-PRIV-0866
-    - OWN-PRIV-0868
-    - OWN-PRIV-0873
-    - OWN-PUB-0874
-    - OWN-PUB-0876
-  Authentication:
-    repo_count: 84
-    repo_ids:
-    - OWN-PRIV-0011
-    - OWN-PRIV-0012
-    - OWN-PRIV-0020
-    - OWN-PRIV-0113
-    - OWN-PRIV-0123
-    - OWN-PRIV-0127
-    - OWN-PRIV-0135
-    - OWN-PRIV-0136
-    - OWN-PRIV-0137
-    - OWN-PRIV-0138
-    - OWN-PRIV-0139
-    - OWN-PRIV-0159
-    - OWN-PRIV-0161
-    - OWN-PRIV-0306
-    - OWN-PRIV-0467
-    - OWN-PRIV-0468
-    - OWN-PRIV-0470
-    - OWN-PRIV-0471
-    - OWN-PRIV-0473
-    - OWN-PRIV-0474
-    - OWN-PRIV-0475
-    - OWN-PRIV-0476
-    - OWN-PRIV-0477
-    - OWN-PRIV-0478
-    - OWN-PRIV-0482
-    - OWN-PRIV-0483
-    - OWN-PRIV-0487
-    - OWN-PRIV-0488
-    - OWN-PRIV-0492
-    - OWN-PRIV-0493
-    - OWN-PRIV-0498
-    - OWN-PRIV-0506
-    - OWN-PRIV-0509
-    - OWN-PRIV-0516
-    - OWN-PRIV-0522
-    - OWN-PRIV-0523
-    - OWN-PRIV-0541
-    - OWN-PRIV-0545
-    - OWN-PRIV-0548
-    - OWN-PRIV-0619
-    - OWN-PRIV-0642
-    - OWN-PRIV-0645
-    - OWN-PRIV-0704
-    - OWN-PRIV-0707
-    - OWN-PRIV-0708
-    - OWN-PRIV-0821
-    - OWN-PRIV-0822
-    - OWN-PRIV-0823
-    - OWN-PRIV-0824
-    - OWN-PRIV-0825
-    - OWN-PRIV-0826
-    - OWN-PRIV-0827
-    - OWN-PRIV-0828
-    - OWN-PRIV-0829
-    - OWN-PRIV-0830
-    - OWN-PRIV-0831
-    - OWN-PRIV-0832
-    - OWN-PRIV-0833
-    - OWN-PRIV-0834
-    - OWN-PRIV-0835
-    - OWN-PRIV-0836
-    - OWN-PRIV-0837
-    - OWN-PRIV-0838
-    - OWN-PRIV-0839
-    - OWN-PRIV-0840
-    - OWN-PRIV-0841
-    - OWN-PRIV-0842
-    - OWN-PRIV-0843
-    - OWN-PRIV-0844
-    - OWN-PRIV-0845
-    - OWN-PRIV-0846
-    - OWN-PRIV-0847
-    - OWN-PRIV-0848
-    - OWN-PRIV-0849
-    - OWN-PRIV-0850
-    - OWN-PRIV-0851
-    - OWN-PRIV-0852
-    - OWN-PRIV-0853
-    - OWN-PRIV-0854
-    - OWN-PRIV-0865
-    - OWN-PRIV-0866
-    - OWN-PRIV-0868
-    - OWN-PRIV-0873
-    - OWN-PUB-0876
-  Data_Analytics:
-    repo_count: 89
-    repo_ids:
-    - OWN-PRIV-0006
-    - OWN-PRIV-0008
-    - OWN-PRIV-0011
-    - OWN-PRIV-0012
-    - OWN-PRIV-0020
-    - OWN-PRIV-0041
-    - OWN-PRIV-0115
-    - OWN-PRIV-0123
-    - OWN-PRIV-0127
-    - OWN-PRIV-0135
-    - OWN-PRIV-0136
-    - OWN-PRIV-0137
-    - OWN-PRIV-0138
-    - OWN-PRIV-0159
-    - OWN-PRIV-0161
-    - OWN-PRIV-0306
-    - OWN-PRIV-0467
-    - OWN-PRIV-0468
-    - OWN-PRIV-0470
-    - OWN-PRIV-0471
-    - OWN-PRIV-0473
-    - OWN-PRIV-0474
-    - OWN-PRIV-0475
-    - OWN-PRIV-0476
-    - OWN-PRIV-0477
-    - OWN-PRIV-0478
-    - OWN-PRIV-0482
-    - OWN-PRIV-0483
-    - OWN-PRIV-0487
-    - OWN-PRIV-0488
-    - OWN-PRIV-0492
-    - OWN-PRIV-0493
-    - OWN-PRIV-0498
-    - OWN-PRIV-0506
-    - OWN-PRIV-0509
-    - OWN-PRIV-0516
-    - OWN-PRIV-0522
-    - OWN-PRIV-0523
-    - OWN-PRIV-0541
-    - OWN-PRIV-0542
-    - OWN-PRIV-0545
-    - OWN-PRIV-0548
-    - OWN-PRIV-0619
-    - OWN-PRIV-0642
-    - OWN-PRIV-0645
-    - OWN-PRIV-0648
-    - OWN-PRIV-0704
-    - OWN-PRIV-0707
-    - OWN-PRIV-0708
-    - OWN-PRIV-0762
-    - OWN-PRIV-0821
-    - OWN-PRIV-0822
-    - OWN-PRIV-0823
-    - OWN-PRIV-0824
-    - OWN-PRIV-0825
-    - OWN-PRIV-0826
-    - OWN-PRIV-0827
-    - OWN-PRIV-0828
-    - OWN-PRIV-0829
-    - OWN-PRIV-0830
-    - OWN-PRIV-0831
-    - OWN-PRIV-0832
-    - OWN-PRIV-0833
-    - OWN-PRIV-0834
-    - OWN-PRIV-0835
-    - OWN-PRIV-0836
-    - OWN-PRIV-0837
-    - OWN-PRIV-0838
-    - OWN-PRIV-0839
-    - OWN-PRIV-0840
-    - OWN-PRIV-0841
-    - OWN-PRIV-0842
-    - OWN-PRIV-0843
-    - OWN-PRIV-0844
-    - OWN-PRIV-0845
-    - OWN-PRIV-0846
-    - OWN-PRIV-0847
-    - OWN-PRIV-0848
-    - OWN-PRIV-0849
-    - OWN-PRIV-0850
-    - OWN-PRIV-0851
-    - OWN-PRIV-0852
-    - OWN-PRIV-0853
-    - OWN-PRIV-0854
-    - OWN-PRIV-0865
-    - OWN-PRIV-0866
-    - OWN-PRIV-0868
-    - OWN-PRIV-0873
-    - OWN-PUB-0876
-  Database:
-    repo_count: 100
-    repo_ids:
-    - OWN-PRIV-0006
-    - OWN-PRIV-0008
-    - OWN-PRIV-0009
-    - OWN-PRIV-0010
-    - OWN-PRIV-0011
-    - OWN-PRIV-0012
-    - OWN-PRIV-0020
-    - OWN-PRIV-0036
-    - OWN-PRIV-0041
-    - OWN-PRIV-0050
-    - OWN-PRIV-0054
-    - OWN-PRIV-0057
-    - OWN-PRIV-0058
-    - OWN-PRIV-0113
-    - OWN-PRIV-0123
-    - OWN-PRIV-0127
-    - OWN-PRIV-0129
-    - OWN-PRIV-0131
-    - OWN-PRIV-0135
-    - OWN-PRIV-0136
-    - OWN-PRIV-0137
-    - OWN-PRIV-0138
-    - OWN-PRIV-0139
-    - OWN-PRIV-0159
-    - OWN-PRIV-0161
-    - OWN-PRIV-0306
-    - OWN-PRIV-0467
-    - OWN-PRIV-0468
-    - OWN-PRIV-0470
-    - OWN-PRIV-0471
-    - OWN-PRIV-0473
-    - OWN-PRIV-0474
-    - OWN-PRIV-0475
-    - OWN-PRIV-0476
-    - OWN-PRIV-0477
-    - OWN-PRIV-0478
-    - OWN-PRIV-0482
-    - OWN-PRIV-0483
-    - OWN-PRIV-0487
-    - OWN-PRIV-0488
-    - OWN-PRIV-0492
-    - OWN-PRIV-0493
-    - OWN-PRIV-0498
-    - OWN-PRIV-0506
-    - OWN-PRIV-0509
-    - OWN-PRIV-0516
-    - OWN-PRIV-0522
-    - OWN-PRIV-0523
-    - OWN-PRIV-0541
-    - OWN-PRIV-0542
-    - OWN-PRIV-0545
-    - OWN-PRIV-0548
-    - OWN-PRIV-0619
-    - OWN-PRIV-0642
-    - OWN-PRIV-0645
-    - OWN-PRIV-0704
-    - OWN-PRIV-0707
-    - OWN-PRIV-0708
-    - OWN-PRIV-0717
-    - OWN-PRIV-0760
-    - OWN-PRIV-0821
-    - OWN-PRIV-0822
-    - OWN-PRIV-0823
-    - OWN-PRIV-0824
-    - OWN-PRIV-0825
-    - OWN-PRIV-0826
-    - OWN-PRIV-0827
-    - OWN-PRIV-0828
-    - OWN-PRIV-0829
-    - OWN-PRIV-0830
-    - OWN-PRIV-0831
-    - OWN-PRIV-0832
-    - OWN-PRIV-0833
-    - OWN-PRIV-0834
-    - OWN-PRIV-0835
-    - OWN-PRIV-0836
-    - OWN-PRIV-0837
-    - OWN-PRIV-0838
-    - OWN-PRIV-0839
-    - OWN-PRIV-0840
-    - OWN-PRIV-0841
-    - OWN-PRIV-0842
-    - OWN-PRIV-0843
-    - OWN-PRIV-0844
-    - OWN-PRIV-0845
-    - OWN-PRIV-0846
-    - OWN-PRIV-0847
-    - OWN-PRIV-0848
-    - OWN-PRIV-0849
-    - OWN-PRIV-0850
-    - OWN-PRIV-0851
-    - OWN-PRIV-0852
-    - OWN-PRIV-0853
-    - OWN-PRIV-0854
-    - OWN-PRIV-0865
-    - OWN-PRIV-0866
-    - OWN-PRIV-0868
-    - OWN-PRIV-0873
-    - OWN-PUB-0874
-    - OWN-PUB-0876
-  DevOps_Infrastructure:
-    repo_count: 84
-    repo_ids:
-    - OWN-PRIV-0006
-    - OWN-PRIV-0011
-    - OWN-PRIV-0012
-    - OWN-PRIV-0020
-    - OWN-PRIV-0123
-    - OWN-PRIV-0127
-    - OWN-PRIV-0135
-    - OWN-PRIV-0136
-    - OWN-PRIV-0137
-    - OWN-PRIV-0138
-    - OWN-PRIV-0159
-    - OWN-PRIV-0161
-    - OWN-PRIV-0306
-    - OWN-PRIV-0467
-    - OWN-PRIV-0468
-    - OWN-PRIV-0470
-    - OWN-PRIV-0471
-    - OWN-PRIV-0473
-    - OWN-PRIV-0474
-    - OWN-PRIV-0475
-    - OWN-PRIV-0476
-    - OWN-PRIV-0477
-    - OWN-PRIV-0478
-    - OWN-PRIV-0482
-    - OWN-PRIV-0483
-    - OWN-PRIV-0487
-    - OWN-PRIV-0488
-    - OWN-PRIV-0492
-    - OWN-PRIV-0493
-    - OWN-PRIV-0498
-    - OWN-PRIV-0506
-    - OWN-PRIV-0509
-    - OWN-PRIV-0516
-    - OWN-PRIV-0522
-    - OWN-PRIV-0523
-    - OWN-PRIV-0541
-    - OWN-PRIV-0542
-    - OWN-PRIV-0545
-    - OWN-PRIV-0548
-    - OWN-PRIV-0619
-    - OWN-PRIV-0642
-    - OWN-PRIV-0645
-    - OWN-PRIV-0704
-    - OWN-PRIV-0707
-    - OWN-PRIV-0708
-    - OWN-PRIV-0821
-    - OWN-PRIV-0822
-    - OWN-PRIV-0823
-    - OWN-PRIV-0824
-    - OWN-PRIV-0825
-    - OWN-PRIV-0826
-    - OWN-PRIV-0827
-    - OWN-PRIV-0828
-    - OWN-PRIV-0829
-    - OWN-PRIV-0830
-    - OWN-PRIV-0831
-    - OWN-PRIV-0832
-    - OWN-PRIV-0833
-    - OWN-PRIV-0834
-    - OWN-PRIV-0835
-    - OWN-PRIV-0836
-    - OWN-PRIV-0837
-    - OWN-PRIV-0838
-    - OWN-PRIV-0839
-    - OWN-PRIV-0840
-    - OWN-PRIV-0841
-    - OWN-PRIV-0842
-    - OWN-PRIV-0843
-    - OWN-PRIV-0844
-    - OWN-PRIV-0845
-    - OWN-PRIV-0846
-    - OWN-PRIV-0847
-    - OWN-PRIV-0848
-    - OWN-PRIV-0849
-    - OWN-PRIV-0850
-    - OWN-PRIV-0851
-    - OWN-PRIV-0852
-    - OWN-PRIV-0853
-    - OWN-PRIV-0854
-    - OWN-PRIV-0865
-    - OWN-PRIV-0866
-    - OWN-PRIV-0868
-    - OWN-PRIV-0873
-    - OWN-PUB-0876
-  Frontend:
-    repo_count: 70
-    repo_ids:
-    - OWN-PRIV-0004
-    - OWN-PRIV-0009
-    - OWN-PRIV-0010
-    - OWN-PRIV-0013
-    - OWN-PRIV-0024
-    - OWN-PRIV-0036
-    - OWN-PRIV-0038
-    - OWN-PRIV-0039
-    - OWN-PRIV-0061
-    - OWN-PRIV-0063
-    - OWN-PRIV-0064
-    - OWN-PRIV-0065
-    - OWN-PRIV-0066
-    - OWN-PRIV-0067
-    - OWN-PRIV-0068
-    - OWN-PRIV-0069
-    - OWN-PRIV-0070
-    - OWN-PRIV-0071
-    - OWN-PRIV-0072
-    - OWN-PRIV-0073
-    - OWN-PRIV-0074
-    - OWN-PRIV-0075
-    - OWN-PRIV-0076
-    - OWN-PRIV-0077
-    - OWN-PRIV-0078
-    - OWN-PRIV-0079
-    - OWN-PRIV-0080
-    - OWN-PRIV-0081
-    - OWN-PRIV-0082
-    - OWN-PRIV-0083
-    - OWN-PRIV-0084
-    - OWN-PRIV-0085
-    - OWN-PRIV-0086
-    - OWN-PRIV-0087
-    - OWN-PRIV-0088
-    - OWN-PRIV-0089
-    - OWN-PRIV-0090
-    - OWN-PRIV-0091
-    - OWN-PRIV-0092
-    - OWN-PRIV-0093
-    - OWN-PRIV-0094
-    - OWN-PRIV-0095
-    - OWN-PRIV-0096
-    - OWN-PRIV-0097
-    - OWN-PRIV-0098
-    - OWN-PRIV-0099
-    - OWN-PRIV-0100
-    - OWN-PRIV-0101
-    - OWN-PRIV-0102
-    - OWN-PRIV-0103
-    - OWN-PRIV-0104
-    - OWN-PRIV-0105
-    - OWN-PRIV-0106
-    - OWN-PRIV-0107
-    - OWN-PRIV-0108
-    - OWN-PRIV-0109
-    - OWN-PRIV-0110
-    - OWN-PRIV-0111
-    - OWN-PRIV-0112
-    - OWN-PRIV-0113
-    - OWN-PRIV-0129
-    - OWN-PRIV-0131
-    - OWN-PRIV-0135
-    - OWN-PRIV-0139
-    - OWN-PRIV-0163
-    - OWN-PRIV-0466
-    - OWN-PRIV-0487
-    - OWN-PRIV-0717
-    - OWN-PRIV-0760
-    - OWN-PUB-0886
-  Payments_Billing:
-    repo_count: 8
-    repo_ids:
-    - OWN-PRIV-0009
-    - OWN-PRIV-0010
-    - OWN-PRIV-0131
-    - OWN-PRIV-0135
-    - OWN-PRIV-0139
-    - OWN-PRIV-0487
-    - OWN-PRIV-0603
-    - OWN-PRIV-0648
 metadata:
-  source: OWNED_REPO_DEPENDENCIES.json (Manifest-Verified Code Reality)
-  total_code_verified_repos: 177
-  verification_method: Batched GraphQL AST/Manifest package inspection
+  version: '2.0'
+  total_capabilities: 307
+  last_updated: '2026-09-18'
+  domains:
+  - 30-REVENUE
+  - 34-PRODUCT
+  - 16-AGENTS
+  - 30-MARKETING
+  - 30-CUSTOMER-SUCCESS
+  - 15-FINANCE
+  - 32-SECURITY
+  - 01-IDENTITY
+  - 20-LEGAL
+  - 37-RESEARCH
+  - 11-OPERATIONS
+capabilities:
+- id: cap-0001
+  name: Prospect Qualification
+  slug: prospect-qualification
+  description: Score inbound leads 1-100 by propensity to buy
+  category: Sales & Prospecting
+  domain: 30-REVENUE
+  supported_agents:
+  - deal-strategist
+  - lead-qualifier
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0002
+  name: Lead Scoring
+  slug: lead-scoring
+  description: Algorithmic lead qualification using multiple signals
+  category: Sales & Prospecting
+  domain: 30-REVENUE
+  supported_agents:
+  - lead-qualifier
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0003
+  name: Lead Nurturing
+  slug: lead-nurturing
+  description: Automated outreach to warm and engage cold prospects
+  category: Sales & Prospecting
+  domain: 30-REVENUE
+  supported_agents:
+  - cold-email-writer
+  - email-strategist
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0004
+  name: Cold Email Generation
+  slug: cold-email-generation
+  description: Personalized email at scale with dynamic templates
+  category: Sales & Prospecting
+  domain: 30-REVENUE
+  supported_agents:
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0005
+  name: Email Personalization
+  slug: email-personalization
+  description: Name, company, pain-point targeting in email
+  category: Sales & Prospecting
+  domain: 30-REVENUE
+  supported_agents:
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0006
+  name: List Segmentation
+  slug: list-segmentation
+  description: Organize prospects by attribute for targeted campaigns
+  category: Sales & Prospecting
+  domain: 30-REVENUE
+  supported_agents:
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0007
+  name: Follow Up Sequencing
+  slug: follow-up-sequencing
+  description: Multi-touch drip campaigns with timing optimization
+  category: Sales & Prospecting
+  domain: 30-REVENUE
+  supported_agents:
+  - cold-email-writer
+  - email-strategist
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0008
+  name: Phone Qualification
+  slug: phone-qualification
+  description: Live prospect qualification via Vapi or SIP calls
+  category: Sales & Prospecting
+  domain: 30-REVENUE
+  supported_agents:
+  - discovery-caller
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0009
+  name: Objection Handling
+  slug: objection-handling
+  description: Respond to prospect objections with relevant counters
+  category: Sales & Prospecting
+  domain: 30-REVENUE
+  supported_agents:
+  - discovery-caller
+  - closer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0010
+  name: Discovery Questions
+  slug: discovery-questions
+  description: Strategic questions to uncover buying motivation
+  category: Sales & Prospecting
+  domain: 30-REVENUE
+  supported_agents:
+  - discovery-caller
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0011
+  name: Proposal Generation
+  slug: proposal-generation
+  description: Customized sales proposals with pricing and terms
+  category: Sales & Prospecting
+  domain: 30-REVENUE
+  supported_agents:
+  - proposal-generator
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0012
+  name: Deal Documentation
+  slug: deal-documentation
+  description: Client agreements, scopes of work, SOWs
+  category: Sales & Prospecting
+  domain: 30-REVENUE
+  supported_agents:
+  - proposal-generator
+  - contract-reviewer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0013
+  name: Template Adaptation
+  slug: template-adaptation
+  description: Reuse and modify proposal templates per client
+  category: Sales & Prospecting
+  domain: 30-REVENUE
+  supported_agents:
+  - proposal-generator
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0014
+  name: Deal Closing
+  slug: deal-closing
+  description: Final objection handling and contract signature
+  category: Sales & Prospecting
+  domain: 30-REVENUE
+  supported_agents:
+  - closer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0015
+  name: Negotiation
+  slug: negotiation
+  description: Price and term negotiation with decision-makers
+  category: Sales & Prospecting
+  domain: 30-REVENUE
+  supported_agents:
+  - deal-strategist
+  - closer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0016
+  name: Contract Review
+  slug: contract-review
+  description: Legal review of risky or non-standard terms
+  category: Sales & Prospecting
+  domain: 30-REVENUE
+  supported_agents:
+  - contract-reviewer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0017
+  name: Deal Strategist
+  slug: deal-strategist
+  description: Complex B2B deal strategy and win planning
+  category: Sales & Prospecting
+  domain: 30-REVENUE
+  supported_agents:
+  - deal-strategist
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0018
+  name: Authority Assessment
+  slug: authority-assessment
+  description: Identify true decision-maker vs gatekeeper
+  category: Sales & Prospecting
+  domain: 30-REVENUE
+  supported_agents:
+  - discovery-caller
+  - closer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0019
+  name: Deal Sourcing
+  slug: deal-sourcing
+  description: Identify and qualify potential deals in market
+  category: Sales & Prospecting
+  domain: 30-REVENUE
+  supported_agents:
+  - deal-strategist
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0020
+  name: Pipeline Management
+  slug: pipeline-management
+  description: Track, score, and move deals through stages
+  category: Sales & Prospecting
+  domain: 30-REVENUE
+  supported_agents:
+  - lead-qualifier
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0021
+  name: Revenue Tracking
+  slug: revenue-tracking
+  description: Closed deal value and revenue attribution
+  category: Sales & Prospecting
+  domain: 30-REVENUE
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0022
+  name: Revenue Forecasting
+  slug: revenue-forecasting
+  description: Q/Y forecasting from pipeline data
+  category: Sales & Prospecting
+  domain: 30-REVENUE
+  supported_agents:
+  - revenue-forecaster
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0023
+  name: Pricing Optimization
+  slug: pricing-optimization
+  description: Dynamic pricing by customer segment or product
+  category: Sales & Prospecting
+  domain: 30-REVENUE
+  supported_agents:
+  - pricing-analyst
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0024
+  name: Pricing Analysis
+  slug: pricing-analysis
+  description: Competitive pricing research and margin modeling
+  category: Sales & Prospecting
+  domain: 30-REVENUE
+  supported_agents:
+  - pricing-analyst
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0025
+  name: Upsell Identification
+  slug: upsell-identification
+  description: Detect expansion opportunities in existing customers
+  category: Sales & Prospecting
+  domain: 30-REVENUE
+  supported_agents:
+  - upsell-recommender
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0026
+  name: Upsell Recommendation
+  slug: upsell-recommendation
+  description: Propose higher-value products or tiers
+  category: Sales & Prospecting
+  domain: 30-REVENUE
+  supported_agents:
+  - upsell-recommender
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0027
+  name: Churn Prediction
+  slug: churn-prediction
+  description: Flag at-risk customers via behavioral signals
+  category: Sales & Prospecting
+  domain: 30-REVENUE
+  supported_agents:
+  - churn-prediction-agent
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0028
+  name: Retention Strategy
+  slug: retention-strategy
+  description: Win-back and retention programs for churn risk
+  category: Sales & Prospecting
+  domain: 30-REVENUE
+  supported_agents:
+  - customer-success-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0029
+  name: Account Expansion
+  slug: account-expansion
+  description: Land-and-expand strategy for key accounts
+  category: Sales & Prospecting
+  domain: 30-REVENUE
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0030
+  name: Crm Data Management
+  slug: crm-data-management
+  description: Salesforce/HubSpot data quality and hygiene
+  category: Revenue Operations
+  domain: 30-REVENUE
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0031
+  name: Pipeline Forecasting
+  slug: pipeline-forecasting
+  description: Predictive models for deal completion
+  category: Revenue Operations
+  domain: 30-REVENUE
+  supported_agents:
+  - revenue-forecaster
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0032
+  name: Revenue Attribution
+  slug: revenue-attribution
+  description: Multi-touch attribution for closed deals
+  category: Revenue Operations
+  domain: 30-REVENUE
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0033
+  name: Sales Metrics Dashboard
+  slug: sales-metrics-dashboard
+  description: Live dashboards for sales leadership
+  category: Revenue Operations
+  domain: 30-REVENUE
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0034
+  name: Quota Management
+  slug: quota-management
+  description: Territory assignment and quota allocation
+  category: Revenue Operations
+  domain: 30-REVENUE
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0035
+  name: Sales Commission Tracking
+  slug: sales-commission-tracking
+  description: Automated commission calculation and payment
+  category: Revenue Operations
+  domain: 30-REVENUE
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0036
+  name: Customer Segmentation
+  slug: customer-segmentation
+  description: Behavioral clustering for targeted strategies
+  category: Revenue Operations
+  domain: 30-REVENUE
+  supported_agents:
+  - pricing-analyst
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0037
+  name: Win Loss Analysis
+  slug: win-loss-analysis
+  description: Post-deal review to understand competitive dynamics
+  category: Revenue Operations
+  domain: 30-REVENUE
+  supported_agents:
+  - deal-strategist
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0038
+  name: Sales Cycle Optimization
+  slug: sales-cycle-optimization
+  description: Process improvement to reduce sales duration
+  category: Revenue Operations
+  domain: 30-REVENUE
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0039
+  name: Lead Source Analysis
+  slug: lead-source-analysis
+  description: ROI by channel for budget allocation
+  category: Revenue Operations
+  domain: 30-REVENUE
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0040
+  name: User Research
+  slug: user-research
+  description: Interviews, surveys, and user testing
+  category: Product Management
+  domain: 34-PRODUCT
+  supported_agents:
+  - ux-researcher
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0041
+  name: User Behavior Analysis
+  slug: user-behavior-analysis
+  description: Qualitative and quantitative usage patterns
+  category: Product Management
+  domain: 34-PRODUCT
+  supported_agents:
+  - ux-researcher
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0042
+  name: Feature Prioritization
+  slug: feature-prioritization
+  description: Roadmap sequencing by value and effort
+  category: Product Management
+  domain: 34-PRODUCT
+  supported_agents:
+  - product-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0043
+  name: Product Roadmap
+  slug: product-roadmap
+  description: 12-month forward plan aligned to business goals
+  category: Product Management
+  domain: 34-PRODUCT
+  supported_agents:
+  - product-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0044
+  name: Product Requirements
+  slug: product-requirements
+  description: Detailed specs for engineering implementation
+  category: Product Management
+  domain: 34-PRODUCT
+  supported_agents:
+  - product-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0045
+  name: Wireframing
+  slug: wireframing
+  description: Low-fidelity layouts for validation
+  category: Product Management
+  domain: 34-PRODUCT
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0046
+  name: Prototyping
+  slug: prototyping
+  description: Interactive prototypes for testing
+  category: Product Management
+  domain: 34-PRODUCT
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0047
+  name: Design System Maintenance
+  slug: design-system-maintenance
+  description: Component library and design token management
+  category: Product Management
+  domain: 34-PRODUCT
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0048
+  name: Design System Creation
+  slug: design-system-creation
+  description: Build canonical component library from scratch
+  category: Product Management
+  domain: 34-PRODUCT
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0049
+  name: Visual Design
+  slug: visual-design
+  description: High-fidelity UI design and mockups
+  category: Product Management
+  domain: 34-PRODUCT
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0050
+  name: Interaction Design
+  slug: interaction-design
+  description: Micro-interactions and animation specs
+  category: Product Management
+  domain: 34-PRODUCT
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0051
+  name: Accessibility Audit
+  slug: accessibility-audit
+  description: WCAG compliance review (A11y)
+  category: Product Management
+  domain: 34-PRODUCT
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0052
+  name: Product Analytics
+  slug: product-analytics
+  description: Instrumentation and KPI tracking
+  category: Product Management
+  domain: 34-PRODUCT
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0053
+  name: Conversion Rate Optimization
+  slug: conversion-rate-optimization
+  description: A/B testing and funnel optimization
+  category: Product Management
+  domain: 34-PRODUCT
+  supported_agents:
+  - ux-researcher
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0054
+  name: User Onboarding Design
+  slug: user-onboarding-design
+  description: First-time user experience optimization
+  category: Product Management
+  domain: 34-PRODUCT
+  supported_agents:
+  - ux-researcher
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0055
+  name: Retention Funnel Analysis
+  slug: retention-funnel-analysis
+  description: Churn analysis and retention tactics
+  category: Product Management
+  domain: 34-PRODUCT
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0056
+  name: Competitive Analysis
+  slug: competitive-analysis
+  description: Competitor feature and positioning mapping
+  category: Product Management
+  domain: 34-PRODUCT
+  supported_agents:
+  - product-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0057
+  name: Market Research
+  slug: market-research
+  description: TAM, SAM, SOM analysis and validation
+  category: Product Management
+  domain: 34-PRODUCT
+  supported_agents:
+  - product-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0058
+  name: Product Launch
+  slug: product-launch
+  description: Go-to-market planning and coordination
+  category: Product Management
+  domain: 34-PRODUCT
+  supported_agents:
+  - product-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0059
+  name: Backend Architecture
+  slug: backend-architecture
+  description: System design for scalability and reliability
+  category: Engineering & Architecture
+  domain: 16-AGENTS
+  supported_agents:
+  - backend-architect
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0060
+  name: Api Design
+  slug: api-design
+  description: REST/gRPC API contract design
+  category: Engineering & Architecture
+  domain: 16-AGENTS
+  supported_agents:
+  - backend-architect
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0061
+  name: Database Schema Design
+  slug: database-schema-design
+  description: Normalized and performant schema
+  category: Engineering & Architecture
+  domain: 16-AGENTS
+  supported_agents:
+  - database-optimizer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0062
+  name: Query Optimization
+  slug: query-optimization
+  description: SQL tuning and index strategy
+  category: Engineering & Architecture
+  domain: 16-AGENTS
+  supported_agents:
+  - database-optimizer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0063
+  name: Frontend Development
+  slug: frontend-development
+  description: React/Vue component implementation
+  category: Engineering & Architecture
+  domain: 16-AGENTS
+  supported_agents:
+  - frontend-developer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0064
+  name: Mobile App Development
+  slug: mobile-app-development
+  description: iOS/Android native or cross-platform
+  category: Engineering & Architecture
+  domain: 16-AGENTS
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0065
+  name: Devops Automation
+  slug: devops-automation
+  description: CI/CD pipeline and IaC
+  category: Engineering & Architecture
+  domain: 16-AGENTS
+  supported_agents:
+  - devops-automator
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0066
+  name: Infrastructure Monitoring
+  slug: infrastructure-monitoring
+  description: Observability, alerting, dashboards
+  category: Engineering & Architecture
+  domain: 16-AGENTS
+  supported_agents:
+  - devops-automator
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0067
+  name: Security Audit
+  slug: security-audit
+  description: Code review for vulnerabilities
+  category: Engineering & Architecture
+  domain: 16-AGENTS
+  supported_agents:
+  - security-auditor
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0068
+  name: Performance Optimization
+  slug: performance-optimization
+  description: Latency and throughput tuning
+  category: Engineering & Architecture
+  domain: 16-AGENTS
+  supported_agents:
+  - performance-optimizer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0069
+  name: Load Testing
+  slug: load-testing
+  description: Stress testing and capacity planning
+  category: Engineering & Architecture
+  domain: 16-AGENTS
+  supported_agents:
+  - devops-automator
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0070
+  name: Deployment Pipeline
+  slug: deployment-pipeline
+  description: Release automation and rollback
+  category: Engineering & Architecture
+  domain: 16-AGENTS
+  supported_agents:
+  - devops-automator
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0071
+  name: Disaster Recovery
+  slug: disaster-recovery
+  description: Backup, failover, and RTO/RPO
+  category: Engineering & Architecture
+  domain: 16-AGENTS
+  supported_agents:
+  - devops-automator
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0072
+  name: Database Reliability
+  slug: database-reliability
+  description: High availability and replication
+  category: Engineering & Architecture
+  domain: 16-AGENTS
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0073
+  name: Incident Response
+  slug: incident-response
+  description: On-call paging and runbook automation
+  category: Engineering & Architecture
+  domain: 16-AGENTS
+  supported_agents:
+  - devops-automator
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0074
+  name: Zero Downtime Migration
+  slug: zero-downtime-migration
+  description: Schema evolution without downtime
+  category: Engineering & Architecture
+  domain: 16-AGENTS
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0075
+  name: Testing Strategy
+  slug: testing-strategy
+  description: Unit, integration, E2E test planning
+  category: Engineering & Architecture
+  domain: 16-AGENTS
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0076
+  name: Automated Testing
+  slug: automated-testing
+  description: Test suite creation and maintenance
+  category: Engineering & Architecture
+  domain: 16-AGENTS
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0077
+  name: Code Review
+  slug: code-review
+  description: Architectural and quality review
+  category: Engineering & Architecture
+  domain: 16-AGENTS
+  supported_agents:
+  - backend-architect
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0078
+  name: Documentation Generation
+  slug: documentation-generation
+  description: API docs, runbooks, architecture docs
+  category: Engineering & Architecture
+  domain: 16-AGENTS
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0079
+  name: Content Creation
+  slug: content-creation
+  description: Blog posts, whitepapers, case studies
+  category: Marketing & Demand Gen
+  domain: 30-MARKETING
+  supported_agents:
+  - content-creator
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0080
+  name: Seo Optimization
+  slug: seo-optimization
+  description: Keyword targeting and technical SEO
+  category: Marketing & Demand Gen
+  domain: 30-MARKETING
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0081
+  name: Paid Search Advertising
+  slug: paid-search-advertising
+  description: Google Ads campaign management
+  category: Marketing & Demand Gen
+  domain: 30-MARKETING
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0082
+  name: Social Media Management
+  slug: social-media-management
+  description: LinkedIn, Twitter, Facebook posting and engagement
+  category: Marketing & Demand Gen
+  domain: 30-MARKETING
+  supported_agents:
+  - social-media-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0083
+  name: Social Media Advertising
+  slug: social-media-advertising
+  description: Paid social campaigns and audience targeting
+  category: Marketing & Demand Gen
+  domain: 30-MARKETING
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0084
+  name: Email Marketing Automation
+  slug: email-marketing-automation
+  description: Mailchimp/HubSpot drip campaigns
+  category: Marketing & Demand Gen
+  domain: 30-MARKETING
+  supported_agents:
+  - email-strategist
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0085
+  name: Brand Positioning
+  slug: brand-positioning
+  description: Competitive differentiation and messaging
+  category: Marketing & Demand Gen
+  domain: 30-MARKETING
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0086
+  name: Campaign Orchestration
+  slug: campaign-orchestration
+  description: Multi-channel campaign coordination
+  category: Marketing & Demand Gen
+  domain: 30-MARKETING
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0087
+  name: Lead Magnet Creation
+  slug: lead-magnet-creation
+  description: Ebook, webinar, or tool for lead capture
+  category: Marketing & Demand Gen
+  domain: 30-MARKETING
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0088
+  name: Conversion Funnel Optimization
+  slug: conversion-funnel-optimization
+  description: Landing page and form optimization
+  category: Marketing & Demand Gen
+  domain: 30-MARKETING
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0089
+  name: Event Marketing
+  slug: event-marketing
+  description: Webinar, conference, or virtual event planning
+  category: Marketing & Demand Gen
+  domain: 30-MARKETING
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0090
+  name: Partnership Marketing
+  slug: partnership-marketing
+  description: Co-marketing and affiliate programs
+  category: Marketing & Demand Gen
+  domain: 30-MARKETING
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0091
+  name: Customer Onboarding
+  slug: customer-onboarding
+  description: First 30-day customer experience
+  category: Customer Success
+  domain: 30-CUSTOMER-SUCCESS
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0092
+  name: Implementation Management
+  slug: implementation-management
+  description: Project scoping and delivery
+  category: Customer Success
+  domain: 30-CUSTOMER-SUCCESS
+  supported_agents:
+  - customer-success-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0093
+  name: Account Health Scoring
+  slug: account-health-scoring
+  description: Risk assessment using behavioral data
+  category: Customer Success
+  domain: 30-CUSTOMER-SUCCESS
+  supported_agents:
+  - customer-success-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0094
+  name: Qbr Preparation
+  slug: qbr-preparation
+  description: Quarterly business review materials
+  category: Customer Success
+  domain: 30-CUSTOMER-SUCCESS
+  supported_agents:
+  - customer-success-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0095
+  name: Customer Support
+  slug: customer-support
+  description: Ticket routing and issue resolution
+  category: Customer Success
+  domain: 30-CUSTOMER-SUCCESS
+  supported_agents:
+  - support-router
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0096
+  name: Complaint Resolution
+  slug: complaint-resolution
+  description: Escalation handling and recovery
+  category: Customer Success
+  domain: 30-CUSTOMER-SUCCESS
+  supported_agents:
+  - complaint-handler
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0097
+  name: Customer Training
+  slug: customer-training
+  description: Product training and certification
+  category: Customer Success
+  domain: 30-CUSTOMER-SUCCESS
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0098
+  name: Customer Success Metrics
+  slug: customer-success-metrics
+  description: NRR, CSAT, health score tracking
+  category: Customer Success
+  domain: 30-CUSTOMER-SUCCESS
+  supported_agents:
+  - customer-success-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0099
+  name: Renewal Management
+  slug: renewal-management
+  description: Contract renewal and expansion
+  category: Customer Success
+  domain: 30-CUSTOMER-SUCCESS
+  supported_agents:
+  - customer-success-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0100
+  name: Community Management
+  slug: community-management
+  description: User group, forum, and peer support
+  category: Customer Success
+  domain: 30-CUSTOMER-SUCCESS
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0101
+  name: Financial Modeling
+  slug: financial-modeling
+  description: Revenue projections and P&L
+  category: Finance & Accounting
+  domain: 15-FINANCE
+  supported_agents:
+  - financial-analyst
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0102
+  name: Budget Forecasting
+  slug: budget-forecasting
+  description: Annual budget and quarterly forecast
+  category: Finance & Accounting
+  domain: 15-FINANCE
+  supported_agents:
+  - financial-analyst
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0103
+  name: Cash Flow Management
+  slug: cash-flow-management
+  description: Working capital optimization
+  category: Finance & Accounting
+  domain: 15-FINANCE
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0104
+  name: Expense Tracking
+  slug: expense-tracking
+  description: AP automation and spend analysis
+  category: Finance & Accounting
+  domain: 15-FINANCE
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0105
+  name: Invoice Processing
+  slug: invoice-processing
+  description: AR automation and payment collection
+  category: Finance & Accounting
+  domain: 15-FINANCE
+  supported_agents:
+  - invoice-tracker
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0106
+  name: Tax Planning
+  slug: tax-planning
+  description: Strategy for minimizing tax liability
+  category: Finance & Accounting
+  domain: 15-FINANCE
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0107
+  name: Audit Preparation
+  slug: audit-preparation
+  description: SOX or audit readiness
+  category: Finance & Accounting
+  domain: 15-FINANCE
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0108
+  name: Valuation Analysis
+  slug: valuation-analysis
+  description: DCF or comparable company analysis
+  category: Finance & Accounting
+  domain: 15-FINANCE
+  supported_agents:
+  - financial-analyst
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0109
+  name: Capital Allocation
+  slug: capital-allocation
+  description: M&A, investment, or buyback decisions
+  category: Finance & Accounting
+  domain: 15-FINANCE
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0110
+  name: Fundraising Strategy
+  slug: fundraising-strategy
+  description: Series round timing and investor targeting
+  category: Finance & Accounting
+  domain: 15-FINANCE
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0111
+  name: Security Audit
+  slug: security-audit
+  description: Code and infrastructure security review
+  category: Security & Compliance
+  domain: 32-SECURITY
+  supported_agents:
+  - security-auditor
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0112
+  name: Penetration Testing
+  slug: penetration-testing
+  description: Offensive security validation
+  category: Security & Compliance
+  domain: 32-SECURITY
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0113
+  name: Data Privacy Compliance
+  slug: data-privacy-compliance
+  description: GDPR, CCPA, SOC 2 readiness
+  category: Security & Compliance
+  domain: 32-SECURITY
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0114
+  name: Incident Response
+  slug: incident-response
+  description: Security breach triage and containment
+  category: Security & Compliance
+  domain: 32-SECURITY
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0115
+  name: Vulnerability Management
+  slug: vulnerability-management
+  description: CVE tracking and patching
+  category: Security & Compliance
+  domain: 32-SECURITY
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0116
+  name: Access Control Design
+  slug: access-control-design
+  description: IAM and zero-trust architecture
+  category: Security & Compliance
+  domain: 32-SECURITY
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0117
+  name: Encryption Strategy
+  slug: encryption-strategy
+  description: Data at rest and in transit
+  category: Security & Compliance
+  domain: 32-SECURITY
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0118
+  name: Secrets Management
+  slug: secrets-management
+  description: API key and credential rotation
+  category: Security & Compliance
+  domain: 32-SECURITY
+  supported_agents:
+  - devops-automator
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0119
+  name: Talent Recruitment
+  slug: talent-recruitment
+  description: Job posting and candidate sourcing
+  category: HR & Organizational
+  domain: 01-IDENTITY
+  supported_agents:
+  - recruiter
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0120
+  name: Applicant Screening
+  slug: applicant-screening
+  description: Resume review and initial qualification
+  category: HR & Organizational
+  domain: 01-IDENTITY
+  supported_agents:
+  - recruiter
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0121
+  name: Interview Coordination
+  slug: interview-coordination
+  description: Scheduling and panel management
+  category: HR & Organizational
+  domain: 01-IDENTITY
+  supported_agents:
+  - hr-specialist
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0122
+  name: Employee Onboarding
+  slug: employee-onboarding
+  description: Day 1 setup and 90-day ramp
+  category: HR & Organizational
+  domain: 01-IDENTITY
+  supported_agents:
+  - hr-specialist
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0123
+  name: Performance Management
+  slug: performance-management
+  description: Goals, reviews, and feedback cycles
+  category: HR & Organizational
+  domain: 01-IDENTITY
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0124
+  name: Compensation Benchmarking
+  slug: compensation-benchmarking
+  description: Salary research and equity allocation
+  category: HR & Organizational
+  domain: 01-IDENTITY
+  supported_agents:
+  - hr-specialist
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0125
+  name: Organizational Design
+  slug: organizational-design
+  description: Reporting structure and span of control
+  category: HR & Organizational
+  domain: 01-IDENTITY
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0126
+  name: Culture Building
+  slug: culture-building
+  description: Values, rituals, and team dynamics
+  category: HR & Organizational
+  domain: 01-IDENTITY
+  supported_agents:
+  - hr-specialist
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0127
+  name: Engagement Survey
+  slug: engagement-survey
+  description: Pulse checks and eNPS
+  category: HR & Organizational
+  domain: 01-IDENTITY
+  supported_agents:
+  - hr-specialist
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0128
+  name: Contract Review
+  slug: contract-review
+  description: Legal risk and enforceability assessment
+  category: Legal & Compliance
+  domain: 20-LEGAL
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0129
+  name: Contract Drafting
+  slug: contract-drafting
+  description: SOW, NDA, MSA creation
+  category: Legal & Compliance
+  domain: 20-LEGAL
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0130
+  name: Regulatory Compliance
+  slug: regulatory-compliance
+  description: Industry-specific regulation adherence
+  category: Legal & Compliance
+  domain: 20-LEGAL
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0131
+  name: Litigation Management
+  slug: litigation-management
+  description: Dispute resolution and legal defense
+  category: Legal & Compliance
+  domain: 20-LEGAL
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0132
+  name: Ip Protection
+  slug: ip-protection
+  description: Patent, trademark, copyright strategy
+  category: Legal & Compliance
+  domain: 20-LEGAL
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0133
+  name: Data Protection Audit
+  slug: data-protection-audit
+  description: Privacy impact and data handling review
+  category: Legal & Compliance
+  domain: 20-LEGAL
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0134
+  name: Employment Law
+  slug: employment-law
+  description: Hiring, termination, and discrimination review
+  category: Legal & Compliance
+  domain: 20-LEGAL
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0135
+  name: Market Research
+  slug: market-research
+  description: TAM sizing and competitive landscape
+  category: Research & Intelligence
+  domain: 37-RESEARCH
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0136
+  name: User Research
+  slug: user-research
+  description: Qualitative and quantitative user insights
+  category: Research & Intelligence
+  domain: 37-RESEARCH
+  supported_agents:
+  - ux-researcher
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0137
+  name: Competitive Intelligence
+  slug: competitive-intelligence
+  description: Competitor tracking and positioning
+  category: Research & Intelligence
+  domain: 37-RESEARCH
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0138
+  name: Industry Benchmarking
+  slug: industry-benchmarking
+  description: Best practices and performance vs. peers
+  category: Research & Intelligence
+  domain: 37-RESEARCH
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0139
+  name: Academic Research
+  slug: academic-research
+  description: Literature review and knowledge synthesis
+  category: Research & Intelligence
+  domain: 37-RESEARCH
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0140
+  name: Evidence Collection
+  slug: evidence-collection
+  description: Data gathering for claims validation
+  category: Research & Intelligence
+  domain: 37-RESEARCH
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0141
+  name: Trend Forecasting
+  slug: trend-forecasting
+  description: Emerging opportunity identification
+  category: Research & Intelligence
+  domain: 37-RESEARCH
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0142
+  name: Process Documentation
+  slug: process-documentation
+  description: SOP and runbook creation
+  category: Operations & Execution
+  domain: 11-OPERATIONS
+  supported_agents:
+  - operations-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0143
+  name: Process Optimization
+  slug: process-optimization
+  description: Lean, Six Sigma, or continuous improvement
+  category: Operations & Execution
+  domain: 11-OPERATIONS
+  supported_agents:
+  - operations-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0144
+  name: Vendor Management
+  slug: vendor-management
+  description: RFP, contracting, performance management
+  category: Operations & Execution
+  domain: 11-OPERATIONS
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0145
+  name: Capacity Planning
+  slug: capacity-planning
+  description: Headcount, infrastructure, or resource forecasting
+  category: Operations & Execution
+  domain: 11-OPERATIONS
+  supported_agents:
+  - operations-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0146
+  name: Project Management
+  slug: project-management
+  description: Scope, timeline, budget, risk for projects
+  category: Operations & Execution
+  domain: 11-OPERATIONS
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0147
+  name: Quality Assurance
+  slug: quality-assurance
+  description: Testing and defect management
+  category: Operations & Execution
+  domain: 11-OPERATIONS
+  supported_agents:
+  - discovery-caller
+  - lead-qualifier
+  - cold-email-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0148
+  name: Production Readiness
+  slug: production-readiness
+  description: Launch checklists and go-no-go
+  category: Operations & Execution
+  domain: 11-OPERATIONS
+  supported_agents:
+  - operations-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0149
+  name: Sla Management
+  slug: sla-management
+  description: Service level agreement tracking
+  category: Operations & Execution
+  domain: 11-OPERATIONS
+  supported_agents:
+  - operations-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0150
+  name: Customer Lifetime Value Calculation
+  slug: customer-lifetime-value-calculation
+  description: Predict CLV based on cohort behavior and retention
+  category: revenue
+  domain: 30-REVENUE
+  supported_agents:
+  - revenue-forecaster
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0151
+  name: Win Rate Analysis
+  slug: win-rate-analysis
+  description: Track conversion rates by segment and sales stage
+  category: revenue
+  domain: 30-REVENUE
+  supported_agents:
+  - revenue-operations-analyst
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0152
+  name: Sales Enablement Content
+  slug: sales-enablement-content
+  description: Collateral, battlecards, and competitive info
+  category: revenue
+  domain: 30-REVENUE
+  supported_agents:
+  - content-creator
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0153
+  name: Territory Management
+  slug: territory-management
+  description: Assign and balance territories for coverage
+  category: revenue
+  domain: 30-REVENUE
+  supported_agents:
+  - sales-coach
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0154
+  name: Prospecting Intelligence
+  slug: prospecting-intelligence
+  description: Identify target accounts using third-party data
+  category: revenue
+  domain: 30-REVENUE
+  supported_agents:
+  - deal-strategist
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0155
+  name: Demo Optimization
+  slug: demo-optimization
+  description: Product demonstration flows and talking points
+  category: revenue
+  domain: 30-REVENUE
+  supported_agents:
+  - sales-coach
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0156
+  name: Closing Authority Mapping
+  slug: closing-authority-mapping
+  description: Identify who controls buying decision
+  category: revenue
+  domain: 30-REVENUE
+  supported_agents:
+  - discovery-caller
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0157
+  name: Cross Sell Mapping
+  slug: cross-sell-mapping
+  description: Adjacent products for existing customers
+  category: revenue
+  domain: 30-REVENUE
+  supported_agents:
+  - upsell-recommender
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0158
+  name: Partner Channel Management
+  slug: partner-channel-management
+  description: Reseller and affiliate program operations
+  category: revenue
+  domain: 30-REVENUE
+  supported_agents:
+  - account-strategist
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0159
+  name: Customer Reference Program
+  slug: customer-reference-program
+  description: Case studies and reference calls
+  category: revenue
+  domain: 30-REVENUE
+  supported_agents:
+  - customer-success-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0160
+  name: Buyer Enablement
+  slug: buyer-enablement
+  description: Content for buyer education and research
+  category: revenue
+  domain: 30-REVENUE
+  supported_agents:
+  - content-creator
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0161
+  name: Competitive Win Analysis
+  slug: competitive-win-analysis
+  description: Post-win/loss debriefs
+  category: revenue
+  domain: 30-REVENUE
+  supported_agents:
+  - deal-strategist
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0162
+  name: Landing Page Optimization
+  slug: landing-page-optimization
+  description: A/B testing and conversion rate improvement
+  category: revenue
+  domain: 30-REVENUE
+  supported_agents:
+  - marketing-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0163
+  name: Lead Source Roi Analysis
+  slug: lead-source-ROI-analysis
+  description: Which channels deliver best leads
+  category: revenue
+  domain: 30-REVENUE
+  supported_agents:
+  - revenue-operations-analyst
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0164
+  name: Sales Process Documentation
+  slug: sales-process-documentation
+  description: SOP and playbook creation
+  category: revenue
+  domain: 30-REVENUE
+  supported_agents:
+  - operations-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0165
+  name: Deal Flow Automation
+  slug: deal-flow-automation
+  description: Workflow automation for sales processes
+  category: revenue
+  domain: 30-REVENUE
+  supported_agents:
+  - devops-automator
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0166
+  name: Customer Health Monitoring
+  slug: customer-health-monitoring
+  description: Automated alerts for churn risk
+  category: revenue
+  domain: 30-REVENUE
+  supported_agents:
+  - churn-prediction-agent
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0167
+  name: Annual Contract Value Modeling
+  slug: annual-contract-value-modeling
+  description: ACV forecasting by customer type
+  category: revenue
+  domain: 30-REVENUE
+  supported_agents:
+  - revenue-forecaster
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0168
+  name: Payment Terms Negotiation
+  slug: payment-terms-negotiation
+  description: NNN, NET-30, NET-60 optimization
+  category: revenue
+  domain: 30-REVENUE
+  supported_agents:
+  - closer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0169
+  name: Sales Compensation Optimization
+  slug: sales-compensation-optimization
+  description: Commission structure design
+  category: revenue
+  domain: 30-REVENUE
+  supported_agents:
+  - financial-analyst
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0170
+  name: Feature Flag Management
+  slug: feature-flag-management
+  description: Safe rollout of new features
+  category: product
+  domain: 34-PRODUCT
+  supported_agents:
+  - devops-automator
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0171
+  name: Usage Analytics
+  slug: usage-analytics
+  description: How users interact with features
+  category: product
+  domain: 34-PRODUCT
+  supported_agents:
+  - product-analyst
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0172
+  name: User Segmentation Analysis
+  slug: user-segmentation-analysis
+  description: Behavioral clustering for messaging
+  category: product
+  domain: 34-PRODUCT
+  supported_agents:
+  - product-analyst
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0173
+  name: Retention Cohort Analysis
+  slug: retention-cohort-analysis
+  description: Which cohorts stay engaged longest
+  category: product
+  domain: 34-PRODUCT
+  supported_agents:
+  - product-analyst
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0174
+  name: Monetization Strategy
+  slug: monetization-strategy
+  description: Freemium, pricing tiers, upsell model
+  category: product
+  domain: 34-PRODUCT
+  supported_agents:
+  - product-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0175
+  name: Beta Testing Program
+  slug: beta-testing-program
+  description: Early access and feedback collection
+  category: product
+  domain: 34-PRODUCT
+  supported_agents:
+  - product-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0176
+  name: Product Marketing Alignment
+  slug: product-marketing-alignment
+  description: Go-to-market messaging and positioning
+  category: product
+  domain: 34-PRODUCT
+  supported_agents:
+  - content-creator
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0177
+  name: Customer Feedback Synthesis
+  slug: customer-feedback-synthesis
+  description: Aggregating feature requests
+  category: product
+  domain: 34-PRODUCT
+  supported_agents:
+  - ux-researcher
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0178
+  name: Roadmap Communication
+  slug: roadmap-communication
+  description: Transparent stakeholder updates
+  category: product
+  domain: 34-PRODUCT
+  supported_agents:
+  - product-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0179
+  name: Technical Debt Tracking
+  slug: technical-debt-tracking
+  description: Prioritizing refactor vs. features
+  category: product
+  domain: 34-PRODUCT
+  supported_agents:
+  - backend-architect
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0180
+  name: Localization Strategy
+  slug: localization-strategy
+  description: Multi-language and regional support
+  category: product
+  domain: 34-PRODUCT
+  supported_agents:
+  - product-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0181
+  name: Mobile First Redesign
+  slug: mobile-first-redesign
+  description: Responsive and mobile optimization
+  category: product
+  domain: 34-PRODUCT
+  supported_agents:
+  - frontend-developer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0182
+  name: Performance Budgeting
+  slug: performance-budgeting
+  description: Core Web Vitals and load time targets
+  category: product
+  domain: 34-PRODUCT
+  supported_agents:
+  - performance-optimizer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0183
+  name: Analytics Instrumentation
+  slug: analytics-instrumentation
+  description: Event tracking and schema design
+  category: product
+  domain: 34-PRODUCT
+  supported_agents:
+  - backend-architect
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0184
+  name: Experiment Design
+  slug: experiment-design
+  description: A/B test planning and analysis
+  category: product
+  domain: 34-PRODUCT
+  supported_agents:
+  - product-analyst
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0185
+  name: User Journey Mapping
+  slug: user-journey-mapping
+  description: End-to-end experience documentation
+  category: product
+  domain: 34-PRODUCT
+  supported_agents:
+  - ux-researcher
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0186
+  name: Dark Mode Implementation
+  slug: dark-mode-implementation
+  description: Accessibility and theme support
+  category: product
+  domain: 34-PRODUCT
+  supported_agents:
+  - frontend-developer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0187
+  name: Plugin Ecosystem Management
+  slug: plugin-ecosystem-management
+  description: Extension and integration strategy
+  category: product
+  domain: 34-PRODUCT
+  supported_agents:
+  - backend-architect
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0188
+  name: Deprecation Planning
+  slug: deprecation-planning
+  description: Sunset old features gracefully
+  category: product
+  domain: 34-PRODUCT
+  supported_agents:
+  - product-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0189
+  name: White Label Platform
+  slug: white-label-platform
+  description: Multi-tenant customization
+  category: product
+  domain: 34-PRODUCT
+  supported_agents:
+  - backend-architect
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0190
+  name: Microservices Architecture
+  slug: microservices-architecture
+  description: Service decomposition and async messaging
+  category: engineering
+  domain: 16-AGENTS
+  supported_agents:
+  - backend-architect
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0191
+  name: Event Sourcing
+  slug: event-sourcing
+  description: Audit logs and event replay
+  category: engineering
+  domain: 16-AGENTS
+  supported_agents:
+  - backend-architect
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0192
+  name: Caching Strategy
+  slug: caching-strategy
+  description: Redis, CDN, and browser cache optimization
+  category: engineering
+  domain: 16-AGENTS
+  supported_agents:
+  - database-optimizer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0193
+  name: Rate Limiting
+  slug: rate-limiting
+  description: API throttling and quota enforcement
+  category: engineering
+  domain: 16-AGENTS
+  supported_agents:
+  - backend-architect
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0194
+  name: Circuit Breaker Implementation
+  slug: circuit-breaker-implementation
+  description: Fault tolerance and graceful degradation
+  category: engineering
+  domain: 16-AGENTS
+  supported_agents:
+  - devops-automator
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0195
+  name: Database Replication
+  slug: database-replication
+  description: Read replicas and failover
+  category: engineering
+  domain: 16-AGENTS
+  supported_agents:
+  - database-optimizer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0196
+  name: Data Warehouse Design
+  slug: data-warehouse-design
+  description: OLAP schema and ETL
+  category: engineering
+  domain: 16-AGENTS
+  supported_agents:
+  - database-optimizer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0197
+  name: Message Queue Setup
+  slug: message-queue-setup
+  description: Kafka or RabbitMQ operations
+  category: engineering
+  domain: 16-AGENTS
+  supported_agents:
+  - devops-automator
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0198
+  name: Search Engine Optimization
+  slug: search-engine-optimization
+  description: Elasticsearch or Solr indexing
+  category: engineering
+  domain: 16-AGENTS
+  supported_agents:
+  - database-optimizer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0199
+  name: Observability Stack
+  slug: observability-stack
+  description: Logs, metrics, traces integration
+  category: engineering
+  domain: 16-AGENTS
+  supported_agents:
+  - devops-automator
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0200
+  name: Alert Fatigue Reduction
+  slug: alert-fatigue-reduction
+  description: Signal vs. noise in monitoring
+  category: engineering
+  domain: 16-AGENTS
+  supported_agents:
+  - devops-automator
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0201
+  name: Chaos Engineering
+  slug: chaos-engineering
+  description: Resilience testing and validation
+  category: engineering
+  domain: 16-AGENTS
+  supported_agents:
+  - devops-automator
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0202
+  name: Feature Flag Architecture
+  slug: feature-flag-architecture
+  description: Safe rollout infrastructure
+  category: engineering
+  domain: 16-AGENTS
+  supported_agents:
+  - devops-automator
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0203
+  name: Blue Green Deployment
+  slug: blue-green-deployment
+  description: Zero-downtime releases
+  category: engineering
+  domain: 16-AGENTS
+  supported_agents:
+  - devops-automator
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0204
+  name: Canary Deployment
+  slug: canary-deployment
+  description: Gradual traffic shift
+  category: engineering
+  domain: 16-AGENTS
+  supported_agents:
+  - devops-automator
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0205
+  name: Database Connection Pooling
+  slug: database-connection-pooling
+  description: Connection lifecycle management
+  category: engineering
+  domain: 16-AGENTS
+  supported_agents:
+  - database-optimizer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0206
+  name: Http Caching Headers
+  slug: http-caching-headers
+  description: Cache-Control and ETag strategy
+  category: engineering
+  domain: 16-AGENTS
+  supported_agents:
+  - backend-architect
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0207
+  name: Compression Optimization
+  slug: compression-optimization
+  description: Gzip and Brotli compression
+  category: engineering
+  domain: 16-AGENTS
+  supported_agents:
+  - frontend-developer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0208
+  name: Cdn Strategy
+  slug: cdn-strategy
+  description: Cloudflare or AWS CloudFront config
+  category: engineering
+  domain: 16-AGENTS
+  supported_agents:
+  - devops-automator
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0209
+  name: Api Versioning
+  slug: api-versioning
+  description: Backward compatibility strategy
+  category: engineering
+  domain: 16-AGENTS
+  supported_agents:
+  - backend-architect
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0210
+  name: Graphql Implementation
+  slug: graphql-implementation
+  description: Schema design and resolver patterns
+  category: engineering
+  domain: 16-AGENTS
+  supported_agents:
+  - backend-architect
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0211
+  name: Rest Api Design
+  slug: rest-api-design
+  description: Principles and best practices
+  category: engineering
+  domain: 16-AGENTS
+  supported_agents:
+  - backend-architect
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0212
+  name: Database Migration Strategy
+  slug: database-migration-strategy
+  description: Backward-compatible schema changes
+  category: engineering
+  domain: 16-AGENTS
+  supported_agents:
+  - database-optimizer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0213
+  name: Test Data Generation
+  slug: test-data-generation
+  description: Fixtures and factories
+  category: engineering
+  domain: 16-AGENTS
+  supported_agents:
+  - qa-tester
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0214
+  name: Contract Testing
+  slug: contract-testing
+  description: API contract validation
+  category: engineering
+  domain: 16-AGENTS
+  supported_agents:
+  - qa-tester
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0215
+  name: Performance Profiling
+  slug: performance-profiling
+  description: CPU, memory, and I/O analysis
+  category: engineering
+  domain: 16-AGENTS
+  supported_agents:
+  - performance-optimizer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0216
+  name: Memory Leak Detection
+  slug: memory-leak-detection
+  description: Finding and fixing leaks
+  category: engineering
+  domain: 16-AGENTS
+  supported_agents:
+  - performance-optimizer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0217
+  name: Logging Strategy
+  slug: logging-strategy
+  description: Structured logs and aggregation
+  category: engineering
+  domain: 16-AGENTS
+  supported_agents:
+  - devops-automator
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0218
+  name: Error Handling Patterns
+  slug: error-handling-patterns
+  description: Graceful failures and recovery
+  category: engineering
+  domain: 16-AGENTS
+  supported_agents:
+  - backend-architect
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0219
+  name: Dependency Management
+  slug: dependency-management
+  description: Upgrade strategy and vulnerability scanning
+  category: engineering
+  domain: 16-AGENTS
+  supported_agents:
+  - security-auditor
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0220
+  name: Code Generation
+  slug: code-generation
+  description: Scaffolding and boilerplate tools
+  category: engineering
+  domain: 16-AGENTS
+  supported_agents:
+  - backend-architect
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0221
+  name: Debugging Tooling
+  slug: debugging-tooling
+  description: Breakpoints, logging, and inspection
+  category: engineering
+  domain: 16-AGENTS
+  supported_agents:
+  - devops-automator
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0222
+  name: Documentation Automation
+  slug: documentation-automation
+  description: Generated API docs and diagrams
+  category: engineering
+  domain: 16-AGENTS
+  supported_agents:
+  - technical-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0223
+  name: Version Control Workflow
+  slug: version-control-workflow
+  description: Git strategy and code review
+  category: engineering
+  domain: 16-AGENTS
+  supported_agents:
+  - devops-automator
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0224
+  name: Ci Cd Optimization
+  slug: ci-cd-optimization
+  description: Pipeline speed and reliability
+  category: engineering
+  domain: 16-AGENTS
+  supported_agents:
+  - devops-automator
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0225
+  name: Container Orchestration
+  slug: container-orchestration
+  description: Kubernetes or Docker Swarm
+  category: engineering
+  domain: 16-AGENTS
+  supported_agents:
+  - devops-automator
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0226
+  name: Infrastructure As Code
+  slug: infrastructure-as-code
+  description: Terraform or CloudFormation
+  category: engineering
+  domain: 16-AGENTS
+  supported_agents:
+  - devops-automator
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0227
+  name: Multi Region Deployment
+  slug: multi-region-deployment
+  description: Cross-region replication
+  category: engineering
+  domain: 16-AGENTS
+  supported_agents:
+  - devops-automator
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0228
+  name: Disaster Recovery Drill
+  slug: disaster-recovery-drill
+  description: RTO/RPO validation
+  category: engineering
+  domain: 16-AGENTS
+  supported_agents:
+  - devops-automator
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0229
+  name: Budget Forecasting
+  slug: budget-forecasting
+  description: Spending prediction and variance
+  category: operations
+  domain: 11-OPERATIONS
+  supported_agents:
+  - financial-analyst
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0230
+  name: Headcount Planning
+  slug: headcount-planning
+  description: Hiring pipeline and FTE planning
+  category: operations
+  domain: 11-OPERATIONS
+  supported_agents:
+  - hr-specialist
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0231
+  name: Vendor Performance Scoring
+  slug: vendor-performance-scoring
+  description: SLA tracking and scorecards
+  category: operations
+  domain: 11-OPERATIONS
+  supported_agents:
+  - operations-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0232
+  name: Contract Renewal Tracking
+  slug: contract-renewal-tracking
+  description: Timeline and negotiation
+  category: operations
+  domain: 11-OPERATIONS
+  supported_agents:
+  - procurement-specialist
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0233
+  name: Procurement Process
+  slug: procurement-process
+  description: RFP and vendor evaluation
+  category: operations
+  domain: 11-OPERATIONS
+  supported_agents:
+  - procurement-specialist
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0234
+  name: Audit Trail Maintenance
+  slug: audit-trail-maintenance
+  description: Compliance and regulatory logging
+  category: operations
+  domain: 11-OPERATIONS
+  supported_agents:
+  - operations-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0235
+  name: Business Continuity Planning
+  slug: business-continuity-planning
+  description: BCP and contingency plans
+  category: operations
+  domain: 11-OPERATIONS
+  supported_agents:
+  - operations-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0236
+  name: Change Management Process
+  slug: change-management-process
+  description: CAB and impact assessment
+  category: operations
+  domain: 11-OPERATIONS
+  supported_agents:
+  - operations-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0237
+  name: Knowledge Base Management
+  slug: knowledge-base-management
+  description: FAQ and internal wiki
+  category: operations
+  domain: 11-OPERATIONS
+  supported_agents:
+  - technical-writer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0238
+  name: Metrics Dashboard
+  slug: metrics-dashboard
+  description: KPI tracking and alerting
+  category: operations
+  domain: 11-OPERATIONS
+  supported_agents:
+  - operations-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0239
+  name: Resource Utilization Tracking
+  slug: resource-utilization-tracking
+  description: Equipment and seat management
+  category: operations
+  domain: 11-OPERATIONS
+  supported_agents:
+  - operations-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0240
+  name: Asset Tracking
+  slug: asset-tracking
+  description: Inventory and depreciation
+  category: operations
+  domain: 11-OPERATIONS
+  supported_agents:
+  - operations-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0241
+  name: Facilities Management
+  slug: facilities-management
+  description: Office and infrastructure
+  category: operations
+  domain: 11-OPERATIONS
+  supported_agents:
+  - operations-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0242
+  name: Travel Expense Management
+  slug: travel-expense-management
+  description: Booking and reimbursement
+  category: operations
+  domain: 11-OPERATIONS
+  supported_agents:
+  - operations-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0243
+  name: Meeting Room Scheduling
+  slug: meeting-room-scheduling
+  description: Booking and AV setup
+  category: operations
+  domain: 11-OPERATIONS
+  supported_agents:
+  - operations-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0244
+  name: Communications Strategy
+  slug: communications-strategy
+  description: Internal and external messaging
+  category: operations
+  domain: 11-OPERATIONS
+  supported_agents:
+  - content-creator
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0245
+  name: Employee Handbook Maintenance
+  slug: employee-handbook-maintenance
+  description: Policy and compliance docs
+  category: operations
+  domain: 11-OPERATIONS
+  supported_agents:
+  - hr-specialist
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0246
+  name: Health And Safety Compliance
+  slug: health-and-safety-compliance
+  description: OSHA and workplace safety
+  category: operations
+  domain: 11-OPERATIONS
+  supported_agents:
+  - operations-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0247
+  name: Vendor Contract Terms
+  slug: vendor-contract-terms
+  description: NDA, MSA, and SLA negotiation
+  category: operations
+  domain: 11-OPERATIONS
+  supported_agents:
+  - legal-reviewer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0248
+  name: Compliance Calendar
+  slug: compliance-calendar
+  description: Deadlines and audit readiness
+  category: operations
+  domain: 11-OPERATIONS
+  supported_agents:
+  - compliance-officer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0249
+  name: Third Party Risk Assessment
+  slug: third-party-risk-assessment
+  description: Vendor security and compliance
+  category: operations
+  domain: 11-OPERATIONS
+  supported_agents:
+  - security-auditor
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0250
+  name: Software License Management
+  slug: software-license-management
+  description: SAM and cost optimization
+  category: operations
+  domain: 11-OPERATIONS
+  supported_agents:
+  - operations-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0251
+  name: Saas Stack Optimization
+  slug: saas-stack-optimization
+  description: Tool consolidation and cost
+  category: operations
+  domain: 11-OPERATIONS
+  supported_agents:
+  - operations-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0252
+  name: Vendor Consolidation
+  slug: vendor-consolidation
+  description: Reducing tool sprawl
+  category: operations
+  domain: 11-OPERATIONS
+  supported_agents:
+  - operations-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0253
+  name: Systems Integration
+  slug: systems-integration
+  description: API and data sync
+  category: operations
+  domain: 11-OPERATIONS
+  supported_agents:
+  - devops-automator
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0254
+  name: Backup And Recovery
+  slug: backup-and-recovery
+  description: Data protection and restore
+  category: operations
+  domain: 11-OPERATIONS
+  supported_agents:
+  - devops-automator
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0255
+  name: Office Supply Chain
+  slug: office-supply-chain
+  description: Ordering and inventory
+  category: operations
+  domain: 11-OPERATIONS
+  supported_agents:
+  - operations-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0256
+  name: Conference Planning
+  slug: conference-planning
+  description: All-hands and events
+  category: operations
+  domain: 11-OPERATIONS
+  supported_agents:
+  - operations-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0257
+  name: Offboarding Process
+  slug: offboarding-process
+  description: Exit interviews and access revocation
+  category: operations
+  domain: 11-OPERATIONS
+  supported_agents:
+  - hr-specialist
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0258
+  name: Customer Journey Orchestration
+  slug: customer-journey-orchestration
+  description: End-to-end journey automation across touchpoints
+  category: customer-success
+  domain: 30-CUSTOMER-SUCCESS
+  supported_agents:
+  - customer-success-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0259
+  name: Voice Of Customer Program
+  slug: voice-of-customer-program
+  description: Structured feedback collection from customers
+  category: customer-success
+  domain: 30-CUSTOMER-SUCCESS
+  supported_agents:
+  - ux-researcher
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0260
+  name: Customer Advocacy Program
+  slug: customer-advocacy-program
+  description: Building customer evangelists and advocates
+  category: customer-success
+  domain: 30-CUSTOMER-SUCCESS
+  supported_agents:
+  - customer-success-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0261
+  name: Customer Data Platform
+  slug: customer-data-platform
+  description: Unified customer profile and segmentation
+  category: customer-success
+  domain: 30-CUSTOMER-SUCCESS
+  supported_agents:
+  - data-engineer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0262
+  name: Subscription Lifecycle
+  slug: subscription-lifecycle
+  description: Managing subscription renewals and cancellations
+  category: revenue
+  domain: 30-REVENUE
+  supported_agents:
+  - revenue-operations-analyst
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0263
+  name: Loyalty Program Design
+  slug: loyalty-program-design
+  description: Building and optimizing customer loyalty programs
+  category: revenue
+  domain: 30-REVENUE
+  supported_agents:
+  - product-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0264
+  name: Customer Tiering
+  slug: customer-tiering
+  description: Segmenting customers by value and engagement
+  category: revenue
+  domain: 30-REVENUE
+  supported_agents:
+  - revenue-forecaster
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0265
+  name: Ebook Personalization
+  slug: ebook-personalization
+  description: Dynamic content delivery based on user profile
+  category: marketing
+  domain: 30-MARKETING
+  supported_agents:
+  - content-creator
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0266
+  name: Webinar Strategy
+  slug: webinar-strategy
+  description: Webinar planning, execution, and lead capture
+  category: marketing
+  domain: 30-MARKETING
+  supported_agents:
+  - marketing-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0267
+  name: Community Platform Management
+  slug: community-platform-management
+  description: Building and moderating online communities
+  category: customer-success
+  domain: 30-CUSTOMER-SUCCESS
+  supported_agents:
+  - community-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0268
+  name: Feedback Loop Automation
+  slug: feedback-loop-automation
+  description: Closed-loop feedback handling and resolution
+  category: customer-success
+  domain: 30-CUSTOMER-SUCCESS
+  supported_agents:
+  - operations-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0269
+  name: Customer Success Metrics
+  slug: customer-success-metrics
+  description: NPS, CSAT, CES tracking and analysis
+  category: customer-success
+  domain: 30-CUSTOMER-SUCCESS
+  supported_agents:
+  - customer-success-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0270
+  name: Advocacy Content Distribution
+  slug: advocacy-content-distribution
+  description: Distributing customer success stories
+  category: marketing
+  domain: 30-MARKETING
+  supported_agents:
+  - content-creator
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0271
+  name: Win Back Campaigns
+  slug: win-back-campaigns
+  description: Re-engaging lapsed customers
+  category: revenue
+  domain: 30-REVENUE
+  supported_agents:
+  - email-strategist
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0272
+  name: Customer Advisory Board
+  slug: customer-advisory-board
+  description: Executive customer advisory programs
+  category: customer-success
+  domain: 30-CUSTOMER-SUCCESS
+  supported_agents:
+  - customer-success-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0273
+  name: Cohort Analysis
+  slug: cohort-analysis
+  description: Comparing user groups over time
+  category: product
+  domain: 34-PRODUCT
+  supported_agents:
+  - product-analyst
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0274
+  name: Funnel Analysis
+  slug: funnel-analysis
+  description: Analyzing conversion drop-off points
+  category: revenue
+  domain: 30-REVENUE
+  supported_agents:
+  - revenue-operations-analyst
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0275
+  name: Attribution Modeling
+  slug: attribution-modeling
+  description: Multi-touch revenue attribution
+  category: revenue
+  domain: 30-REVENUE
+  supported_agents:
+  - revenue-forecaster
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0276
+  name: Predictive Analytics
+  slug: predictive-analytics
+  description: Building forecasting models
+  category: product
+  domain: 34-PRODUCT
+  supported_agents:
+  - product-analyst
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0277
+  name: Anomaly Detection
+  slug: anomaly-detection
+  description: Finding unusual patterns in data
+  category: product
+  domain: 34-PRODUCT
+  supported_agents:
+  - data-engineer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0278
+  name: Customer Segmentation Ml
+  slug: customer-segmentation-ml
+  description: ML-driven customer clustering
+  category: revenue
+  domain: 30-REVENUE
+  supported_agents:
+  - data-engineer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0279
+  name: Churn Risk Modeling
+  slug: churn-risk-modeling
+  description: Predicting which customers will leave
+  category: customer-success
+  domain: 30-CUSTOMER-SUCCESS
+  supported_agents:
+  - data-engineer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0280
+  name: Lifetime Value Modeling
+  slug: lifetime-value-modeling
+  description: Predicting customer LTV
+  category: revenue
+  domain: 30-REVENUE
+  supported_agents:
+  - financial-analyst
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0281
+  name: Propensity Modeling
+  slug: propensity-modeling
+  description: Predicting likelihood to buy/upgrade
+  category: revenue
+  domain: 30-REVENUE
+  supported_agents:
+  - data-engineer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0282
+  name: Sentiment Analysis
+  slug: sentiment-analysis
+  description: Analyzing customer sentiment from text
+  category: customer-success
+  domain: 30-CUSTOMER-SUCCESS
+  supported_agents:
+  - content-creator
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0283
+  name: Text Classification
+  slug: text-classification
+  description: Categorizing support tickets, feedback
+  category: customer-success
+  domain: 30-CUSTOMER-SUCCESS
+  supported_agents:
+  - data-engineer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0284
+  name: Time Series Forecasting
+  slug: time-series-forecasting
+  description: Predicting trends over time
+  category: product
+  domain: 34-PRODUCT
+  supported_agents:
+  - data-engineer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0285
+  name: Correlation Analysis
+  slug: correlation-analysis
+  description: Finding relationships between variables
+  category: product
+  domain: 34-PRODUCT
+  supported_agents:
+  - product-analyst
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0286
+  name: Statistical Significance
+  slug: statistical-significance
+  description: A/B test statistical validation
+  category: product
+  domain: 34-PRODUCT
+  supported_agents:
+  - product-analyst
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0287
+  name: Regression Modeling
+  slug: regression-modeling
+  description: Predicting outcomes from inputs
+  category: revenue
+  domain: 30-REVENUE
+  supported_agents:
+  - data-engineer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0288
+  name: Clustering Analysis
+  slug: clustering-analysis
+  description: Grouping similar entities
+  category: product
+  domain: 34-PRODUCT
+  supported_agents:
+  - data-engineer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0289
+  name: Dimensionality Reduction
+  slug: dimensionality-reduction
+  description: PCA and feature extraction
+  category: product
+  domain: 34-PRODUCT
+  supported_agents:
+  - data-engineer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0290
+  name: Network Analysis
+  slug: network-analysis
+  description: Graph analysis of relationships
+  category: product
+  domain: 34-PRODUCT
+  supported_agents:
+  - data-engineer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0291
+  name: Geographic Analysis
+  slug: geographic-analysis
+  description: Location-based insights and targeting
+  category: marketing
+  domain: 30-MARKETING
+  supported_agents:
+  - paid-media-specialist
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0292
+  name: Temporal Analysis
+  slug: temporal-analysis
+  description: Time-based pattern detection
+  category: product
+  domain: 34-PRODUCT
+  supported_agents:
+  - data-engineer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0293
+  name: Data Warehouse Governance
+  slug: data-warehouse-governance
+  description: Quality and access control
+  category: product
+  domain: 34-PRODUCT
+  supported_agents:
+  - data-engineer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0294
+  name: Data Lineage Tracking
+  slug: data-lineage-tracking
+  description: Understanding data flow end-to-end
+  category: product
+  domain: 34-PRODUCT
+  supported_agents:
+  - data-engineer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0295
+  name: Data Quality Monitoring
+  slug: data-quality-monitoring
+  description: Automated data quality checks
+  category: product
+  domain: 34-PRODUCT
+  supported_agents:
+  - data-engineer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0296
+  name: Metadata Management
+  slug: metadata-management
+  description: Cataloging all business data
+  category: product
+  domain: 34-PRODUCT
+  supported_agents:
+  - data-engineer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0297
+  name: Data Discovery
+  slug: data-discovery
+  description: Finding relevant datasets
+  category: product
+  domain: 34-PRODUCT
+  supported_agents:
+  - data-engineer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0298
+  name: Business Intelligence Tools
+  slug: business-intelligence-tools
+  description: Self-service BI platform
+  category: product
+  domain: 34-PRODUCT
+  supported_agents:
+  - product-analyst
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0299
+  name: Real Time Dashboards
+  slug: real-time-dashboards
+  description: Live performance monitoring
+  category: operations
+  domain: 11-OPERATIONS
+  supported_agents:
+  - devops-automator
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0300
+  name: Data Export Automation
+  slug: data-export-automation
+  description: Automated reporting and exports
+  category: operations
+  domain: 11-OPERATIONS
+  supported_agents:
+  - devops-automator
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0301
+  name: Api Analytics
+  slug: api-analytics
+  description: Monitoring API performance
+  category: product
+  domain: 34-PRODUCT
+  supported_agents:
+  - backend-architect
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0302
+  name: Data Privacy By Design
+  slug: data-privacy-by-design
+  description: Privacy in data architecture
+  category: product
+  domain: 34-PRODUCT
+  supported_agents:
+  - data-privacy-officer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0303
+  name: Data Retention Policy
+  slug: data-retention-policy
+  description: Automated data lifecycle
+  category: operations
+  domain: 11-OPERATIONS
+  supported_agents:
+  - operations-manager
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0304
+  name: Data Backup Strategy
+  slug: data-backup-strategy
+  description: Backup and recovery procedures
+  category: operations
+  domain: 11-OPERATIONS
+  supported_agents:
+  - devops-automator
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0305
+  name: Business Rules Engine
+  slug: business-rules-engine
+  description: Configurable business logic
+  category: product
+  domain: 34-PRODUCT
+  supported_agents:
+  - backend-architect
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0306
+  name: Data Reconciliation
+  slug: data-reconciliation
+  description: Ensuring data consistency
+  category: operations
+  domain: 11-OPERATIONS
+  supported_agents:
+  - data-engineer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'
+- id: cap-0307
+  name: Dimensional Modeling
+  slug: dimensional-modeling
+  description: Star schema design
+  category: product
+  domain: 34-PRODUCT
+  supported_agents:
+  - data-engineer
+  required_tools: []
+  required_skills: []
+  revenue_per_use: $0-500
+  success_rate_percent: 85
+  last_verified: '2026-09-18'

@@ -1,0 +1,240 @@
+logic_layers:
+  LOGIC-001:
+    id: "LOGIC-001"
+    name: "Cold Outreach"
+    description: "Initial contact with prospects via email, phone, or social media"
+    category: "outreach"
+    capabilities:
+      - write-emails
+      - personalize
+      - track-opens
+      - handle-unsubscribes
+      - find-contact-info
+    example_tasks:
+      - "Send cold email to startup founders"
+      - "Reach out to prospects on LinkedIn"
+      - "Generate personalized outreach sequences"
+
+  LOGIC-002:
+    id: "LOGIC-002"
+    name: "Email Sequencing"
+    description: "Multi-touch email campaigns and follow-up sequences"
+    category: "outreach"
+    capabilities:
+      - write-emails
+      - schedule-sends
+      - personalize
+      - track-engagement
+      - handle-bounces
+    example_tasks:
+      - "Create 5-email drip sequence"
+      - "Schedule follow-up emails"
+      - "Monitor email performance"
+
+  LOGIC-003:
+    id: "LOGIC-003"
+    name: "Sales Discovery"
+    description: "Uncover prospect needs and qualification through conversation"
+    category: "sales"
+    capabilities:
+      - ask-discovery-questions
+      - listen-actively
+      - map-current-state
+      - identify-pain-points
+      - qualify-budget
+    example_tasks:
+      - "Conduct discovery call"
+      - "Identify prospect's key challenges"
+      - "Map their current process"
+
+  LOGIC-004:
+    id: "LOGIC-004"
+    name: "Sales Qualification"
+    description: "Determine if prospect meets ICP and is worth pursuing"
+    category: "sales"
+    capabilities:
+      - score-fit
+      - evaluate-budget
+      - assess-authority
+      - check-timeline
+      - handle-objections
+    example_tasks:
+      - "Qualify lead against ICP"
+      - "Score deal probability"
+      - "Determine next steps"
+
+  LOGIC-005:
+    id: "LOGIC-005"
+    name: "Proposal & Closing"
+    description: "Create solutions, proposals, and close deals"
+    category: "sales"
+    capabilities:
+      - design-solution
+      - create-proposal
+      - handle-objections
+      - negotiate-terms
+      - close-deal
+    example_tasks:
+      - "Create custom proposal"
+      - "Build pricing model"
+      - "Negotiate contract terms"
+
+  LOGIC-006:
+    id: "LOGIC-006"
+    name: "Customer Onboarding"
+    description: "Get new customers set up and successful"
+    category: "support"
+    capabilities:
+      - create-account
+      - configure-settings
+      - provide-training
+      - assign-resources
+      - track-adoption
+    example_tasks:
+      - "Onboard new customer"
+      - "Provide product training"
+      - "Set up integrations"
+
+  LOGIC-007:
+    id: "LOGIC-007"
+    name: "Support Ticketing"
+    description: "Create, categorize, and route support tickets"
+    category: "support"
+    capabilities:
+      - create-ticket
+      - categorize-issue
+      - assign-priority
+      - route-to-team
+      - track-status
+    example_tasks:
+      - "Log customer issue"
+      - "Route to right department"
+      - "Set SLA timers"
+
+  LOGIC-008:
+    id: "LOGIC-008"
+    name: "Issue Resolution"
+    description: "Troubleshoot and resolve customer problems"
+    category: "support"
+    capabilities:
+      - diagnose-issue
+      - provide-solution
+      - test-fix
+      - document-resolution
+      - follow-up
+    example_tasks:
+      - "Debug technical issue"
+      - "Provide workaround"
+      - "Escalate if needed"
+
+  LOGIC-009:
+    id: "LOGIC-009"
+    name: "Product Feedback Collection"
+    description: "Gather and organize product feedback from customers"
+    category: "product"
+    capabilities:
+      - ask-feedback-questions
+      - record-feedback
+      - categorize-feedback
+      - identify-patterns
+      - route-to-team
+    example_tasks:
+      - "Conduct customer survey"
+      - "Capture feature requests"
+      - "Track satisfaction scores"
+
+  LOGIC-010:
+    id: "LOGIC-010"
+    name: "Feature Prioritization"
+    description: "Evaluate and rank feature requests by value and effort"
+    category: "product"
+    capabilities:
+      - evaluate-impact
+      - estimate-effort
+      - score-priority
+      - communicate-decisions
+      - track-roadmap
+    example_tasks:
+      - "Score feature requests"
+      - "Build roadmap"
+      - "Communicate priorities"
+
+  LOGIC-011:
+    id: "LOGIC-011"
+    name: "Usage Analytics"
+    description: "Track and analyze how customers use your product"
+    category: "product"
+    capabilities:
+      - track-events
+      - analyze-usage
+      - identify-trends
+      - detect-churn-risk
+      - create-dashboards
+    example_tasks:
+      - "Build usage dashboard"
+      - "Track feature adoption"
+      - "Identify power users"
+
+  LOGIC-012:
+    id: "LOGIC-012"
+    name: "Data Extraction & Reporting"
+    description: "Extract, consolidate, and report on business metrics"
+    category: "operations"
+    capabilities:
+      - extract-data
+      - consolidate-sources
+      - format-reports
+      - visualize-metrics
+      - schedule-reports
+    example_tasks:
+      - "Generate weekly report"
+      - "Extract sales metrics"
+      - "Create dashboard"
+
+  LOGIC-013:
+    id: "LOGIC-013"
+    name: "Process Automation"
+    description: "Automate repetitive workflows and tasks"
+    category: "operations"
+    capabilities:
+      - build-workflow
+      - integrate-systems
+      - handle-errors
+      - log-activity
+      - monitor-status
+    example_tasks:
+      - "Automate invoice processing"
+      - "Build approval workflow"
+      - "Automate data sync"
+
+  LOGIC-014:
+    id: "LOGIC-014"
+    name: "Performance Optimization"
+    description: "Identify bottlenecks and improve operational efficiency"
+    category: "operations"
+    capabilities:
+      - measure-performance
+      - identify-bottlenecks
+      - test-improvements
+      - track-impact
+      - document-changes
+    example_tasks:
+      - "Optimize sales process"
+      - "Reduce support ticket time"
+      - "Improve onboarding speed"
+
+  LOGIC-015:
+    id: "LOGIC-015"
+    name: "Customer Retention & Expansion"
+    description: "Keep customers happy and grow their spending"
+    category: "sales"
+    capabilities:
+      - monitor-health
+      - identify-expansion-opportunities
+      - conduct-qbr
+      - create-growth-plan
+      - track-renewals
+    example_tasks:
+      - "Conduct quarterly business review"
+      - "Identify upsell opportunities"
+      - "Plan account expansion"
