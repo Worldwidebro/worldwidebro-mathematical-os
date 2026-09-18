@@ -354,6 +354,45 @@ Master reference for all wiki link alternatives in Company Brain.
 
 ---
 
+## ORCHESTRATOR IMPLEMENTATION DOCUMENTS
+
+### _REFERENCE/ORCHESTRATOR-MASTER-SPECIFICATION.md
+**Primary:** [[_REFERENCE/ORCHESTRATOR-MASTER-SPECIFICATION|ORCHESTRATOR-MASTER-SPECIFICATION]]
+**Aliases:**
+- [[Orchestrator-Spec]]
+- [[Orchestrator Prime Spec]]
+- [[Master Specification]]
+- [[AGT-001 Specification]]
+
+**Usage:** Complete implementation specification for Orchestrator Prime including business requirements, system architecture, database schema, API reference, operational runbook, monitoring strategy, and roadmap.
+
+---
+
+### _REFERENCE/ORCHESTRATOR-API-REFERENCE.md
+**Primary:** [[_REFERENCE/ORCHESTRATOR-API-REFERENCE|ORCHESTRATOR-API-REFERENCE]]
+**Aliases:**
+- [[Orchestrator-API]]
+- [[Orchestrator API Reference]]
+- [[Task Classification API]]
+- [[Agent Discovery API]]
+- [[Execution API]]
+
+**Usage:** Complete API documentation for all Orchestrator endpoints: classify-task, find-best-agents, execute-task, agent-stats, task-status. Includes request/response formats, error handling, rate limits, and testing examples.
+
+---
+
+### _REFERENCE/ORCHESTRATOR-STATE-MACHINE.md
+**Primary:** [[_REFERENCE/ORCHESTRATOR-STATE-MACHINE|ORCHESTRATOR-STATE-MACHINE]]
+**Aliases:**
+- [[Orchestrator-State-Machine]]
+- [[Decision Trees]]
+- [[Stage Decision Points]]
+- [[Execution Decision Tree]]
+
+**Usage:** Complete state machine documenting all 13 stages of the Orchestrator loop with decision points, input/output states, and failure paths. Shows exactly what happens at each stage and how decisions route execution.
+
+---
+
 ### _MEMORY/MEMORY-OS.md
 **Primary:** [[_MEMORY/MEMORY-OS|MEMORY-OS]]
 **Usage:** Memory operating system (10-stage cognitive cycle).
