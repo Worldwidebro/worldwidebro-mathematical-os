@@ -1,0 +1,474 @@
+# VEX Dashboard — Tab Specifications (Quick Reference)
+
+# Format: One spec per tab, covering: purpose, data source, key metrics, UI pattern, API endpoint
+
+---
+agents:
+  title: AI Agent Operations
+  tier: Agents
+  purpose: View agent workload organized by operational module
+  data_source: OmniRoute + Neo4j
+  api_endpoint: /api/agents-modules
+  key_metrics:
+    - Total Agents (count)
+    - Tasks Running (count)
+    - Success Rate (%)
+    - Avg Capacity (%)
+  ui_pattern: Module cards with expandable agent lists
+  status: ✅ LIVE (Sep 18)
+
+dashboard:
+  title: Portfolio Overview
+  tier: Overview
+  purpose: High-level KPIs for 789 ventures
+  data_source: Supabase + Neo4j
+  api_endpoint: /api/dashboard/metrics
+  key_metrics:
+    - Revenue (monthly)
+    - Ventures (active count)
+    - Growth Rate (%)
+    - Avg Health Score (%)
+  ui_pattern: 4 KPI cards + drill-down list
+  status: ✅ LIVE (Sep 18)
+
+organization:
+  title: Sector Organization
+  tier: Structure
+  purpose: Map 35 sectors + opcos
+  data_source: Neo4j
+  api_endpoint: /api/sectors/taxonomy
+  key_metrics:
+    - Total Sectors (35)
+    - Ventures per Sector
+    - Revenue Share
+  ui_pattern: Hierarchical tree or table
+  status: ✅ LIVE (Sep 18)
+
+orgchart:
+  title: Leadership Pyramid
+  tier: Structure
+  purpose: Headcount pyramid (exec → IC)
+  data_source: Supabase
+  api_endpoint: /api/org/hierarchy
+  key_metrics:
+    - Executive (4)
+    - VPs (36)
+    - Managers (68)
+    - ICs (78)
+  ui_pattern: Pyramid + sector table
+  status: ✅ LIVE (Sep 18)
+
+financial:
+  title: Dual Revenue Funnels
+  tier: Executive
+  purpose: Pre-revenue + post-revenue pipeline
+  data_source: Supabase ventures
+  api_endpoint: /api/ventures/financial
+  key_metrics:
+    - MRR by stage
+    - Conversion rates
+    - Runway months
+  ui_pattern: Two side-by-side funnels
+  status: ✅ LIVE (Sep 18)
+
+sales:
+  title: Sales Pipeline
+  tier: Executive
+  purpose: Deal tracking + closing metrics
+  data_source: ClickUp
+  api_endpoint: /api/deals/pipeline
+  key_metrics:
+    - Deal count by stage
+    - Pipeline value
+    - Close rate
+  ui_pattern: Kanban board or funnel
+  status: ✅ LIVE (Sep 18)
+
+oecoscope:
+  title: Operating Companies
+  tier: Executive
+  purpose: Health breakdown by sector (36)
+  data_source: Neo4j
+  api_endpoint: /api/sectors/opcosinfo
+  key_metrics:
+    - Sector health (%)
+    - Ventures per sector
+    - Revenue per sector
+  ui_pattern: Grid of sector cards
+  status: ✅ LIVE (Sep 18)
+
+revenueattribution:
+  title: Revenue Attribution
+  tier: Intelligence
+  purpose: Where $ comes from (venture + agent + module)
+  data_source: Neo4j edges
+  api_endpoint: /api/revenue/attribution
+  key_metrics:
+    - Revenue by venture
+    - Revenue by module
+    - Top contributors
+  ui_pattern: Treemap or bar chart
+  status: ⚠️ PARTIAL (needs real edges)
+
+tasks:
+  title: Task Queue
+  tier: Operations
+  purpose: All active tasks (status, priority, owner)
+  data_source: ClickUp + Neo4j
+  api_endpoint: /api/tasks
+  key_metrics:
+    - Running (count)
+    - Blocked (count)
+    - Avg completion time
+  ui_pattern: Filterable table with status badges
+  status: ⚠️ PARTIAL (needs ClickUp webhook)
+
+workflows:
+  title: Automation Workflows
+  tier: Operations
+  purpose: Make.com scenarios status + execution count
+  data_source: Make.com + Neo4j
+  api_endpoint: /api/workflows
+  key_metrics:
+    - Workflows active
+    - Executions/month
+    - Success rate
+  ui_pattern: Module cards with metrics
+  status: ✅ LIVE (Sep 18)
+
+dependencies:
+  title: Venture Dependencies
+  tier: Operations
+  purpose: DAG of venture relationships
+  data_source: Neo4j
+  api_endpoint: /api/graph/dependencies
+  key_metrics:
+    - Nodes (ventures)
+    - Edges (dependencies)
+    - Critical paths
+  ui_pattern: SVG DAG visualization
+  status: ✅ WIRED (Sep 18)
+
+bottlenecks:
+  title: Constraint Analysis
+  tier: Operations
+  purpose: Identify operational constraints
+  data_source: Neo4j
+  api_endpoint: /api/graph/bottlenecks
+  key_metrics:
+    - Active bottlenecks
+    - Severity score
+    - Time to resolution
+  ui_pattern: List + impact matrix
+  status: ❌ MOCK
+
+decisions:
+  title: Decision Workflow
+  tier: Operations
+  purpose: Track strategic decisions + approvals
+  data_source: Neo4j
+  api_endpoint: /api/decisions
+  key_metrics:
+    - Pending (count)
+    - Approved (count)
+    - Avg time-to-decision
+  ui_pattern: Queue with approval modal
+  status: ❌ MOCK
+
+approvals:
+  title: Approval Queue
+  tier: Operations
+  purpose: SLA-tracked approval management
+  data_source: ClickUp workflows
+  api_endpoint: /api/approvals
+  key_metrics:
+    - Pending (count)
+    - SLA breaches
+    - Avg wait time
+  ui_pattern: Prioritized queue + action buttons
+  status: ❌ MOCK
+
+audit:
+  title: Compliance Audit Trail
+  tier: Operations
+  purpose: All actions logged (who/what/when)
+  data_source: Neo4j audit edges
+  api_endpoint: /api/audit/trail
+  key_metrics:
+    - Events logged (count)
+    - Categories
+    - Date range filter
+  ui_pattern: Searchable table with timestamp
+  status: ❌ MOCK
+
+communications:
+  title: Email & Slack Archive
+  tier: Operations
+  purpose: Message history + search
+  data_source: Gmail/Slack APIs
+  api_endpoint: /api/comms/archive
+  key_metrics:
+    - Messages (count)
+    - Active channels
+    - Avg response time
+  ui_pattern: Thread list + detail view
+  status: ❌ MOCK
+
+analytics:
+  title: Business Intelligence
+  tier: Intelligence
+  purpose: KPI trends + cohort analysis
+  data_source: Data warehouse
+  api_endpoint: /api/analytics/kpis
+  key_metrics:
+    - Revenue trend
+    - Churn rate
+    - CAC / LTV
+  ui_pattern: Line charts + drill-down
+  status: ❌ MOCK
+
+capacitytracking:
+  title: Headcount Utilization
+  tier: Intelligence
+  purpose: Capacity vs. allocation (36 sectors)
+  data_source: Supabase
+  api_endpoint: /api/capacity/sectors
+  key_metrics:
+    - Headcount by sector
+    - Utilization rate
+    - Capacity status
+  ui_pattern: Bar chart + table
+  status: ❌ MOCK
+
+memory:
+  title: Knowledge Base
+  tier: Intelligence
+  purpose: Searchable organizational memory
+  data_source: Qdrant vectors
+  api_endpoint: /api/memory/search
+  key_metrics:
+    - Memories indexed
+    - Search quality score
+  ui_pattern: Search box + results list
+  status: ❌ MOCK
+
+knowledgegraph:
+  title: Graph Explorer
+  tier: Intelligence
+  purpose: Browse Neo4j interactively
+  data_source: Neo4j APOC
+  api_endpoint: /api/graph/browser
+  key_metrics:
+    - Nodes explored
+    - Shortest path queries
+  ui_pattern: Node/edge browser + Cypher console
+  status: ❌ PARTIAL
+
+graphoverview:
+  title: Network Constellation
+  tier: Intelligence
+  purpose: High-level network topology
+  data_source: Neo4j
+  api_endpoint: /api/graph/topology
+  key_metrics:
+    - Nodes (5 sectors)
+    - Connections
+    - Network density
+  ui_pattern: SVG network with hover details
+  status: ✅ WIRED (Sep 18)
+
+gapsolutions:
+  title: Capability Gap Analysis
+  tier: Intelligence
+  purpose: Identify missing capabilities
+  data_source: Neo4j
+  api_endpoint: /api/gaps/analysis
+  key_metrics:
+    - Gaps identified
+    - Priority score
+    - Solution status
+  ui_pattern: Gap matrix + solution cards
+  status: ❌ MOCK
+
+alerts:
+  title: System Health Alerts
+  tier: Intelligence
+  purpose: Real-time health notifications
+  data_source: Monitoring system
+  api_endpoint: /api/alerts/active
+  key_metrics:
+    - Critical alerts (count)
+    - Warning count
+    - Avg resolution time
+  ui_pattern: Alert list with dismissal
+  status: ❌ MOCK
+
+activitystream:
+  title: Real-Time Work Feed
+  tier: Intelligence
+  purpose: What agents are doing (live)
+  data_source: WebSocket stream
+  api_endpoint: /ws/activity
+  key_metrics:
+    - Events/minute
+    - Agent activity
+  ui_pattern: Scrolling feed with timestamps
+  status: ❌ MOCK
+
+ceococktail:
+  title: Executive Dashboard
+  tier: Executive
+  purpose: C-suite KPI summary
+  data_source: Aggregated
+  api_endpoint: /api/executive/kpis
+  key_metrics:
+    - Revenue (monthly)
+    - Growth (%)
+    - Key alerts
+  ui_pattern: Simplified KPI summary
+  status: ❌ MOCK
+
+missioncontrol:
+  title: Operations Center
+  tier: Overview
+  purpose: Multi-venture operations dashboard
+  data_source: Aggregated
+  api_endpoint: /api/mission/status
+  key_metrics:
+    - Active ventures
+    - Operational health
+  ui_pattern: Overview + drill-down
+  status: ❌ DRAFT
+
+systemmap:
+  title: Infrastructure Diagram
+  tier: Overview
+  purpose: Architecture + service health
+  data_source: Infrastructure API
+  api_endpoint: /api/system/topology
+  key_metrics:
+    - Services up
+    - Latency per service
+  ui_pattern: Interactive architecture diagram
+  status: ❌ DEMO
+
+ventures:
+  title: Venture Explorer
+  tier: Structure
+  purpose: Card view of all ventures
+  data_source: Supabase
+  api_endpoint: /api/ventures/list
+  key_metrics:
+    - Total ventures (789)
+    - Status distribution
+  ui_pattern: Filterable card grid + detail modal
+  status: ✅ WIRED (Sep 18)
+
+github:
+  title: Repository Dashboard
+  tier: Structure
+  purpose: Repo status + CI/CD metrics
+  data_source: GitHub API
+  api_endpoint: /api/repos/status
+  key_metrics:
+    - Total repos (177)
+    - Build success rate
+    - Commit activity
+  ui_pattern: Table + detail view
+  status: ❌ MOCK
+
+settings:
+  title: User Preferences
+  tier: Structure
+  purpose: Account + dashboard settings
+  data_source: Supabase
+  api_endpoint: /api/user/settings
+  key_metrics: null
+  ui_pattern: Form fields + save
+  status: ❌ MOCK
+
+orchestrator:
+  title: Workflow Orchestration
+  tier: Agents
+  purpose: Visualize workflow execution (Make.com)
+  data_source: Make.com
+  api_endpoint: /api/orchestrator/workflows
+  key_metrics:
+    - Workflows active
+    - Execution success rate
+  ui_pattern: Workflow DAG visualization
+  status: ⚠️ DEMO
+
+automationcommand:
+  title: Automation Command Palette
+  tier: Commands
+  purpose: Make.com scenario executor
+  data_source: Make.com API
+  api_endpoint: /api/automation/scenarios
+  ui_pattern: Command palette (cmd+k)
+  status: ❌ MOCK
+
+infrastructurecommand:
+  title: Infrastructure Commands
+  tier: Commands
+  purpose: Infra automation (Docker, K8s)
+  data_source: Infrastructure API
+  api_endpoint: /api/infra/commands
+  ui_pattern: Command palette + execution log
+  status: ❌ MOCK
+
+securitycommand:
+  title: Security Incident Response
+  tier: Commands
+  purpose: Security automation commands
+  data_source: Security system
+  api_endpoint: /api/security/incidents
+  ui_pattern: Incident dashboard + actions
+  status: ❌ MOCK
+
+repositorycommand:
+  title: Repository Commands
+  tier: Commands
+  purpose: Git automation (clone, deploy)
+  data_source: GitHub API
+  api_endpoint: /api/repos/commands
+  ui_pattern: Command palette
+  status: ❌ MOCK
+
+starredreoimpact:
+  title: Starred Repos Impact Analysis
+  tier: Experimental
+  purpose: Analyze starred repos (research)
+  data_source: GitHub API
+  api_endpoint: /api/research/starred-repos
+  ui_pattern: Analysis dashboard
+  status: ❌ RESEARCH
+
+harnesengineering:
+  title: Agent Harness Framework
+  tier: Experimental
+  purpose: Documentation for agent harness
+  data_source: Internal docs
+  ui_pattern: Static documentation
+  status: ❌ RESEARCH
+
+---
+
+## LEGEND
+
+| Status | Meaning |
+|--------|---------|
+| ✅ LIVE | Deployed to production + live data |
+| ⚠️ WIRED | Wired to API, live data flowing |
+| ⚠️ PARTIAL | Some data wired, incomplete |
+| ⚠️ DEMO | Demo UI, mock data |
+| ❌ MOCK | Hardcoded demo data |
+| ❌ DRAFT | Incomplete, needs design |
+| ❌ RESEARCH | Research only, not for users |
+
+## BUILD PRIORITY
+
+**Week 1 (Sep 19-24)**: 5 core revenue tabs
+**Week 2-3 (Sep 25-30)**: 8 operations tabs
+**Week 4 (Oct 1-15)**: 12 intelligence + agent tabs
+**Week 5+ (Oct 16-31)**: Remaining 16 tabs + experimental
