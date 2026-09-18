@@ -1,0 +1,278 @@
+metadata:
+  version: "1.0"
+  total_skills: 38
+  last_verified: "2026-09-18"
+  status: "Phase 1.2 - Oct Tier 1 agents mapped"
+
+skills:
+  - id: skill-lead-scoring-001
+    name: "Lead Scoring & Qualification"
+    description: "Score inbound leads 1-100 by propensity to buy"
+    category: "sales"
+    applicable_agents: [lead-qualifier, sales-coach, deal-strategist]
+    required_tools: [hubspot, clearbit, apollo]
+    success_rate_percent: 87
+
+  - id: skill-list-segmentation-001
+    name: "List Segmentation & Filtering"
+    description: "Segment prospecting lists by persona, company size, industry"
+    category: "sales"
+    applicable_agents: [lead-qualifier, cold-email-writer, discovery-caller]
+    required_tools: [hubspot, apollo, clearbit]
+    success_rate_percent: 94
+
+  - id: skill-qualification-logic-001
+    name: "Discovery Qualification Logic"
+    description: "Ask discovery questions to uncover budget, authority, need, timeline (BANT)"
+    category: "sales"
+    applicable_agents: [discovery-caller, lead-qualifier, sales-coach]
+    required_tools: [hubspot, clickup, phone-system]
+    success_rate_percent: 81
+
+  - id: skill-email-writing-001
+    name: "Email Writing & Personalization"
+    description: "Craft personalized cold emails that grab attention and drive response"
+    category: "sales"
+    applicable_agents: [cold-email-writer, email-strategist, sales-coach]
+    required_tools: [sendgrid, mailchimp, apollo]
+    success_rate_percent: 87
+
+  - id: skill-follow-up-sequencing-001
+    name: "Follow-up Sequencing & Timing"
+    description: "Design multi-touch email sequences with optimal timing"
+    category: "sales"
+    applicable_agents: [cold-email-writer, email-strategist, offer-lead-gen-strategist]
+    required_tools: [sendgrid, mailchimp, mixpanel]
+    success_rate_percent: 79
+
+  - id: skill-phone-qualification-001
+    name: "Phone Qualification & Discovery"
+    description: "Conduct phone calls to qualify leads, uncover needs, schedule meetings"
+    category: "sales"
+    applicable_agents: [discovery-caller, sales-coach, account-strategist]
+    required_tools: [phone-system, hubspot, clickup]
+    success_rate_percent: 82
+
+  - id: skill-objection-handling-001
+    name: "Objection Handling & Rebuttals"
+    description: "Handle common objections with empathy and data-driven rebuttals"
+    category: "sales"
+    applicable_agents: [discovery-caller, closer, sales-coach]
+    required_tools: [hubspot, clickup, competitor-intelligence]
+    success_rate_percent: 75
+
+  - id: skill-discovery-questions-001
+    name: "Strategic Discovery Questions"
+    description: "Ask questions that uncover root problems and competitive landscape"
+    category: "sales"
+    applicable_agents: [discovery-caller, lead-qualifier, sales-coach]
+    required_tools: [hubspot, clickup]
+    success_rate_percent: 88
+
+  - id: skill-proposal-generation-001
+    name: "Proposal Generation & Customization"
+    description: "Create customized proposals with pricing, timeline, scope aligned to needs"
+    category: "sales"
+    applicable_agents: [proposal-generator, deal-strategist, sales-coach]
+    required_tools: [stripe, hubspot, document-generator]
+    success_rate_percent: 89
+
+  - id: skill-contract-review-001
+    name: "Contract Review & Risk Flagging"
+    description: "Review legal terms, flag risky clauses, negotiate favorable terms"
+    category: "sales"
+    applicable_agents: [contract-reviewer, legal-compliance-checker, deal-strategist]
+    required_tools: [document-analyzer, legal-database, hubspot]
+    success_rate_percent: 92
+
+  - id: skill-deal-closing-001
+    name: "Deal Closing & Contract Execution"
+    description: "Send contracts, obtain signatures, confirm payment terms, finalize deal"
+    category: "sales"
+    applicable_agents: [closer, revenue-operations-analyst, invoice-tracker]
+    required_tools: [stripe, docusign, hubspot, quickbooks]
+    success_rate_percent: 94
+
+  - id: skill-pricing-optimization-001
+    name: "Pricing Optimization & Negotiation"
+    description: "Analyze willingness-to-pay; optimize discounts; maximize deal value"
+    category: "revenue"
+    applicable_agents: [pricing-optimizer, revenue-operations-analyst, deal-strategist]
+    required_tools: [stripe, hubspot, analytics-db]
+    success_rate_percent: 83
+
+  - id: skill-revenue-forecasting-001
+    name: "Revenue Forecasting & Pipeline Analysis"
+    description: "Forecast quarterly revenue; track deal velocity; identify at-risk deals"
+    category: "revenue"
+    applicable_agents: [revenue-forecaster, revenue-operations-analyst, chief-financial-officer]
+    required_tools: [hubspot, analytics-db, quickbooks]
+    success_rate_percent: 81
+
+  - id: skill-ticket-routing-001
+    name: "Support Ticket Triage & Routing"
+    description: "Classify support tickets; route to correct team or specialist"
+    category: "operations"
+    applicable_agents: [support-ticket-router, customer-service, operations-manager]
+    required_tools: [zendesk, hubspot, clickup]
+    success_rate_percent: 91
+
+  - id: skill-complaint-resolution-001
+    name: "Complaint Investigation & Resolution"
+    description: "Investigate complaints; identify root cause; deliver resolution; prevent churn"
+    category: "operations"
+    applicable_agents: [complaint-handler, customer-success-manager, customer-service]
+    required_tools: [zendesk, hubspot, analytics-db]
+    success_rate_percent: 85
+
+  - id: skill-invoice-tracking-001
+    name: "Invoice Tracking & Payment Collection"
+    description: "Track unpaid invoices; send reminders; flag collections issues; record payment"
+    category: "finance"
+    applicable_agents: [invoice-tracker, revenue-operations-analyst, accounts-payable-agent]
+    required_tools: [quickbooks, stripe, email-system]
+    success_rate_percent: 96
+
+  - id: skill-market-research-001
+    name: "Market Research & Competitive Analysis"
+    description: "Research competitor features, pricing, positioning; identify market trends"
+    category: "research"
+    applicable_agents: [business-strategist, market-researcher, research-assistant]
+    required_tools: [clearbit, apollo, g2-api, competitor-intel-db]
+    success_rate_percent: 78
+
+  - id: skill-data-analysis-001
+    name: "Data Analysis & Insights Generation"
+    description: "Analyze customer/sales data; extract insights; identify trends"
+    category: "research"
+    applicable_agents: [revenue-forecaster, analytics-specialist, financial-analyst]
+    required_tools: [analytics-db, tableau, python]
+    success_rate_percent: 84
+
+  - id: skill-research-synthesis-001
+    name: "Research Synthesis & Documentation"
+    description: "Compile research findings into clear, actionable reports with evidence"
+    category: "research"
+    applicable_agents: [research-assistant, business-strategist, technical-writer]
+    required_tools: [notion, document-generator, analytics-db]
+    success_rate_percent: 87
+
+  - id: skill-financial-modeling-001
+    name: "Financial Modeling & Forecasting"
+    description: "Build unit economics models; forecast customer LTV, CAC, payback period"
+    category: "finance"
+    applicable_agents: [financial-analyst, revenue-forecaster, chief-financial-officer]
+    required_tools: [excel, analytics-db, quickbooks]
+    success_rate_percent: 79
+
+  - id: skill-customer-onboarding-001
+    name: "Customer Onboarding & Success Planning"
+    description: "Design onboarding workflows; identify success milestones; prevent early churn"
+    category: "customer-success"
+    applicable_agents: [customer-success-manager, customer-onboarding, operations-manager]
+    required_tools: [hubspot, clickup, email-system]
+    success_rate_percent: 86
+
+  - id: skill-churn-prediction-001
+    name: "Churn Risk Prediction & Prevention"
+    description: "Identify at-risk customers; predict churn; trigger retention campaigns"
+    category: "customer-success"
+    applicable_agents: [customer-success-manager, revenue-operations-analyst, analytics-specialist]
+    required_tools: [hubspot, analytics-db, prediction-model]
+    success_rate_percent: 82
+
+  - id: skill-account-expansion-001
+    name: "Account Expansion & Upsell Identification"
+    description: "Identify expansion opportunities; craft upsell sequences; increase LTV"
+    category: "revenue"
+    applicable_agents: [account-strategist, upsell-recommender, revenue-operations-analyst]
+    required_tools: [hubspot, analytics-db, usage-telemetry]
+    success_rate_percent: 76
+
+  - id: skill-qbr-facilitation-001
+    name: "Quarterly Business Review Facilitation"
+    description: "Conduct QBRs with customers; review goals, outcomes, next-quarter planning"
+    category: "customer-success"
+    applicable_agents: [customer-success-manager, account-strategist, sales-coach]
+    required_tools: [hubspot, clickup, video-system]
+    success_rate_percent: 88
+
+  - id: skill-workflow-automation-001
+    name: "Workflow Automation & Process Design"
+    description: "Design business processes; automate repetitive tasks; reduce manual work"
+    category: "operations"
+    applicable_agents: [operations-manager, automation-governance-architect, devops-automator]
+    required_tools: [n8n, make, zapier, clickup]
+    success_rate_percent: 89
+
+  - id: skill-system-integration-001
+    name: "System Integration & Data Sync"
+    description: "Connect tools/systems; sync data across platforms; eliminate data silos"
+    category: "infrastructure"
+    applicable_agents: [devops-automator, backend-architect, data-consolidation-agent]
+    required_tools: [make, zapier, api-gateway, n8n]
+    success_rate_percent: 91
+
+  - id: skill-documentation-001
+    name: "Process Documentation & Knowledge Capture"
+    description: "Document processes, decisions, runbooks; create knowledge base"
+    category: "operations"
+    applicable_agents: [technical-writer, operations-manager, product-manager]
+    required_tools: [notion, wiki-system, clickup]
+    success_rate_percent: 85
+
+  - id: skill-personalization-001
+    name: "Personalization at Scale"
+    description: "Personalize communications using data, tokens, and dynamic content"
+    category: "sales"
+    applicable_agents: [cold-email-writer, email-strategist]
+    required_tools: [sendgrid, apollo, clearbit]
+    success_rate_percent: 86
+
+  - id: skill-legal-compliance-001
+    name: "Legal Compliance & Risk Management"
+    description: "Review contracts for legal compliance; identify regulatory risks"
+    category: "legal"
+    applicable_agents: [contract-reviewer, legal-compliance-checker]
+    required_tools: [legal-database, document-analyzer]
+    success_rate_percent: 89
+
+  - id: skill-customer-service-001
+    name: "Customer Service Excellence"
+    description: "Resolve customer issues; document solutions; maintain satisfaction"
+    category: "customer-success"
+    applicable_agents: [customer-service, support-ticket-router, complaint-handler]
+    required_tools: [zendesk, hubspot]
+    success_rate_percent: 88
+
+  - id: skill-communication-skills-001
+    name: "Communication & Empathy"
+    description: "Communicate with empathy, clarity, and professionalism in all contexts"
+    category: "soft-skills"
+    applicable_agents: [complaint-handler, customer-success-manager, sales-coach]
+    required_tools: []
+    success_rate_percent: 92
+
+  - id: skill-operations-management-001
+    name: "Operations Management & Efficiency"
+    description: "Manage operations; optimize processes; track KPIs; drive efficiency"
+    category: "operations"
+    applicable_agents: [operations-manager, support-ticket-router]
+    required_tools: [clickup, analytics-db]
+    success_rate_percent: 87
+
+  - id: skill-payment-processing-001
+    name: "Payment Processing & Collections"
+    description: "Process payments; track collections; manage payment terms"
+    category: "finance"
+    applicable_agents: [invoice-tracker, accounts-payable-agent]
+    required_tools: [stripe, quickbooks]
+    success_rate_percent: 95
+
+  - id: skill-risk-analysis-001
+    name: "Risk Analysis & Mitigation"
+    description: "Identify business risks; develop mitigation strategies"
+    category: "legal"
+    applicable_agents: [contract-reviewer, chief-financial-officer]
+    required_tools: [analytics-db]
+    success_rate_percent: 84
