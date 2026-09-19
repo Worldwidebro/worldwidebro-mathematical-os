@@ -1,0 +1,43 @@
+{
+  "mcpServers": {
+    "company-brain": {
+      "command": "/opt/homebrew/bin/uv",
+      "args": [
+        "run",
+        "--with",
+        "fastmcp",
+        "--with",
+        "pyyaml",
+        "python3",
+        "/Users/acebless/Documents/The Company/Company Brain/_MCP/fastmcp_server.py"
+      ],
+      "env": {
+        "PATH": "/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+      }
+    },
+    "omniroute": {
+      "command": "/opt/homebrew/bin/node",
+      "args": [
+        "/Users/acebless/.omniroute/bin/antigravity-mcp.mjs"
+      ],
+      "env": {
+        "PATH": "/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin",
+        "OMNIROUTE_BASE_URL": "http://100.87.214.70:20128",
+        "OMNIROUTE_API_KEY": "sk-30c31902dc868c0d-9d94e1-e953ae37"
+      }
+    },
+    "n8n-mcp": {
+      "command": "/usr/bin/python3",
+      "args": [
+        "/Users/acebless/Documents/The Company/Company Brain/_MCP/n8n_mcp_bridge.py"
+      ],
+      "env": {
+        "N8N_MCP_URL": "http://100.87.214.70:5678/mcp-server/http",
+        "N8N_MCP_TOKEN": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyZWU5OThiMi1iMjFkLTQyZGEtYmZlOC0xMWY2M2FlZDhmZDYiLCJpc3MiOiJuOG4iLCJhdWQiOiJtY3Atc2VydmVyLWFwaSIsImp0aSI6Ijg0OWU5OTQ3LWFlMTgtNDYwNi04YTUxLThhMTYyZDFkOTBlMyIsImlhdCI6MTc4OTI0NzQ5OH0.yBNN0lnccH0fAKEQjxL8J3fU1eg6fmKCjTwictbESt0"
+      }
+    },
+    "browseros-neo": {
+      "serverUrl": "http://127.0.0.1:9012/mcp"
+    }
+  }
+}
