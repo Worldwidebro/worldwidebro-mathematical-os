@@ -1,5 +1,8 @@
 # 60-APIS — Graph API Endpoint
 
+> **Authority:** [[00-CONSTITUTION/control-planes/CP-028|CP-028: Application]]  
+> **Governing Framework:** [[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]] | [[50-MASTER-CONTROL/50-MASTER-CONTROL|50-MASTER-CONTROL]]
+
 [[STARTHERE]] | [[08-KNOWLEDGE-GRAPH]] | [[_PIPELINES/retrieval]] | [[12-CONTEXT]] | [[16-AGENTS]]
 
 **Layer:** 60/50  

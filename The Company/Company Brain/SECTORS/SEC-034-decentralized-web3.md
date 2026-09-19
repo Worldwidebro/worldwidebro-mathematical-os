@@ -21,7 +21,10 @@ last_verified: "2026-09-05"
 - [[09-KNOWLEDGE/Utopia-World-Model|Utopia (EXT-DEC-004)]] — Decentralized peer-to-peer execution network & autonomous computing mesh (see also [[_REGISTRIES/CANONICAL/EXTERNAL_CAPABILITY_UNIVERSE.yaml]])
 - **blockchain-etl/ethereum-etl** (5K★) — Python scripts for ETL processing on blockchain data
 
-## Canonical Registries
+## Canonical Registries & Control Planes
+- Governing Control Planes: [[00-CONSTITUTION/control-planes/CP-008|CP-008 Tool]], [[00-CONSTITUTION/control-planes/CP-028|CP-028 Application]], [[00-CONSTITUTION/control-planes/CP-050|CP-050 Master Control]]
+- Control Planes Directory: [[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]]
+
 - Ventures in Sector: [[_REGISTRIES/ventures-by-sector.yaml|ventures-by-sector.yaml]]
 - Owned Repositories: [[_REGISTRIES/repositories-by-sector.yaml|repositories-by-sector.yaml]]
 - External Capabilities: [[_REGISTRIES/external-capabilities-by-sector.yaml|external-capabilities-by-sector.yaml]]

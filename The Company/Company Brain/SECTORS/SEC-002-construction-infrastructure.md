@@ -29,7 +29,10 @@ last_verified: "2026-09-05"
 - Foundation Spatial & 3D Engines: [[_REGISTRIES/external-capabilities-by-sector.yaml#SEC-020|SEC-020 (Spatial Intelligence / RuView)]] & [[_REGISTRIES/external-capabilities-by-sector.yaml#SEC-024|SEC-024 (Excalidraw & UI Toolkits)]]
 - Workflow Automation: [[_REGISTRIES/external-capabilities-by-sector.yaml#SEC-028|SEC-028 (n8n Project Workflows)]]
 
-## Canonical Registries
+## Canonical Registries & Control Planes
+- Governing Control Planes: [[00-CONSTITUTION/control-planes/CP-001|CP-001 Enterprise]], [[00-CONSTITUTION/control-planes/CP-002|CP-002 Venture]], [[00-CONSTITUTION/control-planes/CP-004|CP-004 Strategy]], [[00-CONSTITUTION/control-planes/CP-009|CP-009 Workflow]], [[00-CONSTITUTION/control-planes/CP-011|CP-011 Task]], [[00-CONSTITUTION/control-planes/CP-012|CP-012 Project]], [[00-CONSTITUTION/control-planes/CP-013|CP-013 Knowledge]], [[00-CONSTITUTION/control-planes/CP-023|CP-023 Sales]], [[00-CONSTITUTION/control-planes/CP-025|CP-025 People]], [[00-CONSTITUTION/control-planes/CP-026|CP-026 Operations]], [[00-CONSTITUTION/control-planes/CP-027|CP-027 Infrastructure]]
+- Control Planes Directory: [[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]]
+
 - Ventures in Sector: [[_REGISTRIES/ventures-by-sector.yaml|ventures-by-sector.yaml]] (CON-001 through CON-200)
 - Owned Repositories: [[_REGISTRIES/repositories-by-sector.yaml|repositories-by-sector.yaml]] (42 owned repos; `con-001`, `con-011`, `con-042` code-verified)
 - External Capabilities: [[_REGISTRIES/external-capabilities-by-sector.yaml|external-capabilities-by-sector.yaml]]

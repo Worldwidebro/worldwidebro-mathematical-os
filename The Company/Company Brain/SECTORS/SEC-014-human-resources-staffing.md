@@ -21,7 +21,10 @@ last_verified: "2026-09-05"
   - 📄 **Prospectus:** [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/COMPILED-MASTER-PROSPECTUS|Capital Prospectus]]
   - 📊 **Capital Strategy:** [[CAPITAL-READINESS-ENGINE]]
 
-## Canonical Registries
+## Canonical Registries & Control Planes
+- Governing Control Planes: [[00-CONSTITUTION/control-planes/CP-011|CP-011 Task]], [[00-CONSTITUTION/control-planes/CP-013|CP-013 Knowledge]], [[00-CONSTITUTION/control-planes/CP-016|CP-016 Identity]], [[00-CONSTITUTION/control-planes/CP-025|CP-025 People]]
+- Control Planes Directory: [[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]]
+
 - Ventures in Sector: [[_REGISTRIES/ventures-by-sector.yaml|ventures-by-sector.yaml]]
 - Control Planes: [[_REGISTRIES/control-planes-by-sector.yaml|control-planes-by-sector.yaml]]
 - Capabilities: [[_REGISTRIES/capabilities-by-sector.yaml|capabilities-by-sector.yaml]]

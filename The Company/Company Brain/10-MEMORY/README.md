@@ -1,5 +1,8 @@
 # 10-MEMORY — Agent Memory & Institutional Awareness Domain
 
+> **Authority:** [[00-CONSTITUTION/control-planes/CP-013|CP-013: Knowledge]]  
+> **Governing Framework:** [[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]] | [[50-MASTER-CONTROL/50-MASTER-CONTROL|50-MASTER-CONTROL]]
+
 [[STARTHERE]] | [[10-MEMORY/10-MEMORY|Gateway]] | [[_MEMORY/MEMORY-OS|MEMORY-OS]] | [[_PROMPTS/10_PRE-ACTION-AWARENESS|AWARENESS-PROTOCOL]] | [[INDEX]]
 
 Working, episodic, semantic, procedural, and relational graph memory systems coordinating across Company Brain.
@@ -51,3 +54,11 @@ The operational prompt stack resides in [[_PROMPTS/10_PRE-ACTION-AWARENESS|`_PRO
 
 🟢 Active & Integrated  
 Last updated: 2026-09-05
+
+
+## Control Points (1)
+| Control Point | Status | Tool | Responsible Role | Plane |
+|:---|:---:|:---|:---|:---|
+| **Semantic memory (embeddings)** | ✅ | `Qdrant` | ML Engineer | Knowledge Fabric — Unified Organizational Knowledge |
+
+*Governed by [[00-CONSTITUTION/control-planes/CP-013|CP-013: Knowledge]] under [[50-MASTER-CONTROL/CONTROL_MATRIX|Control Matrix]].*

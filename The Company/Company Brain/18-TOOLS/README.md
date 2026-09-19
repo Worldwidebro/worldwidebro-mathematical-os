@@ -1,5 +1,8 @@
 # 18-TOOLS
 
+> **Authority:** [[00-CONSTITUTION/control-planes/CP-008|CP-008: Tool]]  
+> **Governing Framework:** [[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]] | [[50-MASTER-CONTROL/50-MASTER-CONTROL|50-MASTER-CONTROL]]
+
 Registry, MCP servers, APIs, automation, integrations
 
 ## Overview

@@ -1,5 +1,8 @@
 # Capabilities Registry
 
+> **Authority:** [[00-CONSTITUTION/control-planes/CP-004|CP-004: Strategy]]  
+> **Governing Framework:** [[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]] | [[50-MASTER-CONTROL/50-MASTER-CONTROL|50-MASTER-CONTROL]]
+
 **~300 capabilities** indexed by sector and solution type.
 
 ---
@@ -73,3 +76,11 @@ All capabilities live in `/solutions/CAP-###.md`
 - Solution Matrix: [[14-CAPABILITIES/CAPABILITY_SOLUTION_MATRIX.json|CAPABILITY_SOLUTION_MATRIX.json]]
 - Starred Repos Phases: [[_INFRASTRUCTURE/STARRED_REPOS_CAPABILITY_PHASES|STARRED_REPOS_CAPABILITY_PHASES.md]]
 - Capability Template: [[_TEMPLATES/Capability|Capability Template]]
+
+
+## Control Points (1)
+| Control Point | Status | Tool | Responsible Role | Plane |
+|:---|:---:|:---|:---|:---|
+| **Capability routing** | ✅ | `Loop Engine` | Capability Manager | Orchestration Fabric — Work Discovery & Agent Coordination |
+
+*Governed by [[00-CONSTITUTION/control-planes/CP-004|CP-004: Strategy]] under [[50-MASTER-CONTROL/CONTROL_MATRIX|Control Matrix]].*

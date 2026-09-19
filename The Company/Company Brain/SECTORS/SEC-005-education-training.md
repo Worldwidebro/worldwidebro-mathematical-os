@@ -24,7 +24,10 @@ last_verified: "2026-09-05"
 - **nilbuild/developer-roadmap** (366K★) — Interactive developer career and skill roadmaps
 - **jwasham/coding-interview-university** (360K★) — Comprehensive computer science curriculum
 
-## Canonical Registries
+## Canonical Registries & Control Planes
+- Governing Control Planes: [[00-CONSTITUTION/control-planes/CP-013|CP-013 Knowledge]]
+- Control Planes Directory: [[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]]
+
 - Ventures in Sector: [[_REGISTRIES/ventures-by-sector.yaml|ventures-by-sector.yaml]]
 - Owned Repositories: [[_REGISTRIES/repositories-by-sector.yaml|repositories-by-sector.yaml]]
 - External Capabilities: [[_REGISTRIES/external-capabilities-by-sector.yaml|external-capabilities-by-sector.yaml]]

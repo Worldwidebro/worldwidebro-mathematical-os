@@ -1,3 +1,5 @@
+[[_TOOLS/README|Tools]] | [[INDEX]]
+
 ---
 id: TOOL-NEEDLE-001
 title: Needle — 14MB Edge & Mobile Function Routing Model

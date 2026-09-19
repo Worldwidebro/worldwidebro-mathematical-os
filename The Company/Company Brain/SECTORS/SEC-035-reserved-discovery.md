@@ -16,7 +16,10 @@ last_verified: "2026-09-05"
 **Taxonomy Master:** [[00-CONSTITUTION/SECTOR-TAXONOMY-MASTER|SECTOR-TAXONOMY-MASTER.md]]  
 **Sector Index:** [[SECTOR_INDEX|SECTOR_INDEX.md]]
 
-## Canonical Registries
+## Canonical Registries & Control Planes
+- Governing Control Planes: [[00-CONSTITUTION/control-planes/CP-013|CP-013 Knowledge]], [[00-CONSTITUTION/control-planes/CP-032|CP-032 AI Governance]], [[00-CONSTITUTION/control-planes/CP-050|CP-050 Master Control]]
+- Control Planes Directory: [[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]]
+
 - Ventures in Sector: [[_REGISTRIES/ventures-by-sector.yaml|ventures-by-sector.yaml]]
 - Control Planes: [[_REGISTRIES/control-planes-by-sector.yaml|control-planes-by-sector.yaml]]
 - Capabilities: [[_REGISTRIES/capabilities-by-sector.yaml|capabilities-by-sector.yaml]]

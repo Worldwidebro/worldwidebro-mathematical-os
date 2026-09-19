@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[INDEX]] | [[AGENTS]]
+
 # Harness Engineering Consulting
 
 **Venture ID:** HE-001  

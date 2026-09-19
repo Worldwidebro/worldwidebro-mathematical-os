@@ -1,5 +1,8 @@
 # 40-METRICS
 
+> **Authority:** [[00-CONSTITUTION/control-planes/CP-029|CP-029: Observability]]  
+> **Governing Framework:** [[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]] | [[50-MASTER-CONTROL/50-MASTER-CONTROL|50-MASTER-CONTROL]]
+
 Company, ventures, finance, sales, operations, agents, OKRs
 
 ## Overview

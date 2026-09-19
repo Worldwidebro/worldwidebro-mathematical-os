@@ -17,3 +17,8 @@ updated: 2026-09-12
 
 ## Overview
 Preserved historical artifacts, audit snapshots, superseded registries, and past system states.
+
+
+## Historical Audit Receipts
+- [[AUDIT-INDEX-README-SKILLS-SEPTEMBER-19|Audit: Index, README & Skills (Sep 19, 2026)]]
+- [[ORGANIZATION-CLEANUP-COMPLETE-SEP19|Organization Cleanup Complete (Sep 19, 2026)]]

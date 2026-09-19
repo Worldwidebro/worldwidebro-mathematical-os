@@ -1,5 +1,8 @@
 # 38-OPPORTUNITIES
 
+> **Authority:** [[00-CONSTITUTION/control-planes/CP-021|CP-021: Funding]]  
+> **Governing Framework:** [[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]] | [[50-MASTER-CONTROL/50-MASTER-CONTROL|50-MASTER-CONTROL]]
+
 Discovered, scored, qualified, rejected, active, funded
 
 ## Overview

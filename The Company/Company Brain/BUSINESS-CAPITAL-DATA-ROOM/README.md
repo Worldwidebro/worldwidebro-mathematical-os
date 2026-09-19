@@ -26,6 +26,7 @@ Each primary operating company connects its institutional 22-domain Data Room wi
 | **`LT-011`** | WorldwideBro Fleet OS LLC | [[SECTORS/SEC-017-logistics-transportation\|SEC-017]] | [[repos/lt-011-dispatch-software/README\|repos/lt-011-dispatch-software]] | [[BUSINESS-CAPITAL-DATA-ROOM/LT-011/01_IDENTITY/01_IDENTITY\|LT-011 Dossier]] | [[23-VENTURES/LT-011\|LT-011.md]] |
 | **`OPS-001`** | WorldwideBro Staffing Ops LLC | [[SECTORS/SEC-014-human-resources-staffing\|SEC-014]] | [[repos/ops-staff-001-staffing/README\|repos/ops-staff-001-staffing]] | [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/01_IDENTITY/01_IDENTITY\|OPS-001 Dossier]] | [[23-VENTURES/OPS-001\|OPS-001.md]] |
 | **`RE-001`** | WorldwideBro Holdings Real Estate LLC | [[SECTORS/SEC-020-real-estate-property\|SEC-020]] | [[repos/re-001-worldwidebro-holdings/README\|repos/re-001-worldwidebro-holdings]] | [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/01_IDENTITY/01_IDENTITY\|RE-001 Dossier]] | [[23-VENTURES/RE-001\|RE-001.md]] |
+| **`FIN-037`** | WorldwideBro Quantitative Trading System | [[SECTORS/SEC-008-financial-services\|SEC-008]] | [[TRADING-OS/README\|TRADING-OS]] | [[BUSINESS-CAPITAL-DATA-ROOM/FIN-037/README\|FIN-037 Dossier]] | [[23-VENTURES/FIN-037\|FIN-037.md]] |
 
 ---
 

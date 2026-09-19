@@ -1,5 +1,8 @@
 # 12-CONTEXT — Agent Context Assembly
 
+> **Authority:** [[00-CONSTITUTION/control-planes/CP-013|CP-013: Knowledge]]  
+> **Governing Framework:** [[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]] | [[50-MASTER-CONTROL/50-MASTER-CONTROL|50-MASTER-CONTROL]]
+
 [[STARTHERE]] | [[08-KNOWLEDGE-GRAPH]] | [[_PIPELINES/retrieval]] | [[16-AGENTS]] | [[60-APIS]]
 
 **Layer:** 12/50  

@@ -11,7 +11,7 @@ updated: 2026-09-12
 
 # 61-KNOWLEDGE-SOURCES — External Knowledge & Source Ingestion
 
-> **Authority:** CP-001 / CP-027  
+> **Authority:** [[00-CONSTITUTION/control-planes/CP-014|CP-014: Data]]  
 > **Status:** ACTIVE
 
 ## Overview

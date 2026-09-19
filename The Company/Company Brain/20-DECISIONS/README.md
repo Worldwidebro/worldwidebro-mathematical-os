@@ -11,7 +11,7 @@ updated: 2026-09-19
 
 # 20-DECISIONS — Operational Decisions, Commercial Pipelines & Audits
 
-> **Authority:** System Architecture & Commercial Operations ([[50-MASTER-CONTROL/50-MASTER-CONTROL|CP-001 / CP-032]])  
+> **Authority:** [[00-CONSTITUTION/control-planes/CP-005|CP-005: Decision]]  
 > **Master Operating Contract:** [[ANTIGRAVITY.md]]  
 > **Status:** 🟢 ACTIVE — Canonical Decision & Audit Registry (100% Interconnected)
 
@@ -89,6 +89,9 @@ updated: 2026-09-19
 
 ## Integration Guides & Tool Gateways
 
+- [[20-DECISIONS/WHATSAPP-INTEGRATION-PLAN|WHATSAPP-INTEGRATION-PLAN]]
+- [[20-DECISIONS/WHATSAPP-SETUP-GUIDE|WHATSAPP-SETUP-GUIDE]]
+- [[20-DECISIONS/WHATSAPP-CREDENTIALS-CHECKLIST|WHATSAPP-CREDENTIALS-CHECKLIST]]
 - [[20-DECISIONS/20-DECISIONS|20-DECISIONS]]
 - [[20-DECISIONS/COMMANDCENTER-REAL-DATA-WIRING-COMPLETE|COMMANDCENTER-REAL-DATA-WIRING-COMPLETE]]
 - [[20-DECISIONS/FILES_TO_WATCH_SEP_9_14|FILES_TO_WATCH_SEP_9_14]]
@@ -106,3 +109,11 @@ updated: 2026-09-19
 - [[20-DECISIONS/WIKI-LINK-GAPS-ANALYSIS|WIKI-LINK-GAPS-ANALYSIS]]
 
 ---
+
+
+## Control Points (1)
+| Control Point | Status | Tool | Responsible Role | Plane |
+|:---|:---:|:---|:---|:---|
+| **Record strategic decisions** | ✅ | `Neo4j` | CEO | Company Brain — Organizational Intelligence |
+
+*Governed by [[00-CONSTITUTION/control-planes/CP-005|CP-005: Decision]] under [[50-MASTER-CONTROL/CONTROL_MATRIX|Control Matrix]].*

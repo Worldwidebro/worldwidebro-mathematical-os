@@ -23,8 +23,11 @@ Core ontology, 22-stage cognitive flow, 9 organizational fabrics, and 36 entity 
 ## Quick Navigation
 
 ### Core Subsystem Portals
+- **Capability Fabric:** [[CAPABILITY-FABRIC-ARCHITECTURE|CAPABILITY-FABRIC-ARCHITECTURE.md]] — Multi-paradigm capability fabric, VEX operating matrix, and AST ground truth.
+- **Three-Layer Alignment:** [[THREE-LAYER-ALIGNMENT|THREE-LAYER-ALIGNMENT.md]] — Global CLAUDE.md → Project CLAUDE.md → ANTIGRAVITY.md integration.
 - **Logic Architecture:** [[_DOCS/LOGIC-ARCHITECTURE-FRAMEWORK|LOGIC-ARCHITECTURE]] — 72 logic layers across 12 domains, 72 control points, autonomous loop patterns. [[_REGISTRIES/CANONICAL/LOGIC_LAYERS_REGISTRY.yaml|Master Registry]]
 - **System Directives:** [[DIRECTIVES/README|DIRECTIVES]] — Constitutional, modular agent rules, and tactical directives.
+- **Income Loops Architecture:** [[55-LOOP-ENGINEERING/COMPANY_INCOME_LOOPS_ARCHITECTURE|INCOME-LOOPS]] & [[55-LOOP-ENGINEERING/MASTER-FUNNEL-MAP|FUNNEL-MAP]] — Autonomous revenue generation loops and customer acquisition pipelines.
 - **Executive Governance:** [[EXECUTIVES/README|EXECUTIVES]] — Executive truth ledgers, board governance, and sovereign control.
 - **Artificial Intelligence Core:** [[AI-BRAIN/README|AI-BRAIN]] — [[OMNIROUTE-MODELS-ROUTING|OMNIROUTE-STATUS]] (289+ models), local MLX models ([[OMNIROUTE-MODELS-ROUTING]]), [[08-KNOWLEDGE-GRAPH/README|Neo4j Knowledge Graph]] ([[KNOWLEDGE-GRAPH-OMNIROUTE-INTEGRATION]]), and agent fleet.
 - **AI Ventures & Projects:** [[AI-PROJECTS/README|AI-PROJECTS]] — 722 ventures, 7 core OpCos, and 177 code repositories.
@@ -50,7 +53,12 @@ Core ontology, 22-stage cognitive flow, 9 organizational fabrics, and 36 entity 
 - **Staffing Operations Portal:** [[OPS-001-STAFFING/README|OPS-001-STAFFING]] — Staffing venture dispatch, requisition intake, and onboarding.
 - **Venture Master Directories:** [[VENTURES/README|VENTURES]] & [[23-VENTURES/README|23-VENTURES]] — Portfolio directories for all 789 commercial ventures.
 - **System Historical Archive:** [[_ARCHIVE/README|_ARCHIVE]] — Reconciled historical logs, legacy data, and audit snapshots.
+- **Fully Connected Manifest:** [[FULLY_CONNECTED_MANIFEST|FULLY_CONNECTED_MANIFEST.md]] — Graph convergence, 100% interconnected knowledge base manifest.
 - **System Planning & Architecture Maps:** [[.planning/README|.planning]] — Project gap closure charters, requirements ledgers, and codebase architecture maps.
+- **Trading OS & Capital Allocation:** [[TRADING-OS/README|TRADING-OS]] — Quantitative algorithmic models, trading spreads, and FIN-037 execution.
+- **Workflow & Agent Orchestration:** [[_ORCHESTRATION/README|_ORCHESTRATION]] & [[19-ORCHESTRATION/README|19-ORCHESTRATION]] — Central agent dispatch, workflow routing, and multi-agent coordination.
+- **Technical Documentation & Architecture:** [[_DOCS/README|_DOCS]] & [[_DOCS/architecture|architecture.md]] — Master system architecture specifications and developer guides.
+- **Control Planes & Governance Authority:** [[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]] — 34 operational control planes (CP-001 to CP-050) spanning 50 Domains, 35 Sectors, and 7 Planes.
 
 
 

@@ -1,5 +1,8 @@
 # 31-LEGAL
 
+> **Authority:** [[00-CONSTITUTION/control-planes/CP-016|CP-016: Identity]]  
+> **Governing Framework:** [[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]] | [[50-MASTER-CONTROL/50-MASTER-CONTROL|50-MASTER-CONTROL]]
+
 Entities, contracts, IP, compliance, licenses, litigation
 
 ## Overview

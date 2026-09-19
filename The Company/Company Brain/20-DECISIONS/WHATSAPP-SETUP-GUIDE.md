@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[INDEX]] | [[AGENTS]]
+
 ---
 title: WhatsApp Business Platform Setup Guide — Step-by-Step
 authority: CP-027 (Infrastructure)

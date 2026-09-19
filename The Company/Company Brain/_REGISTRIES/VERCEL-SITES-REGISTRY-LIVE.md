@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[INDEX]] | [[AGENTS]]
+
 # Vercel Sites Registry — Sep 9, 2026 (LIVE VERIFIED)
 
 **All Worldwidebro-deployed sites on Vercel**

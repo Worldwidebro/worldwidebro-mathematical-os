@@ -1,3 +1,5 @@
+[[08-KNOWLEDGE-GRAPH/README|08-KNOWLEDGE-GRAPH]] | [[14-CAPABILITIES/README|14-CAPABILITIES]] | [[_MCP/README|_MCP]] | [[INDEX]]
+
 # Neo4j Capability Registry Graph
 
 **Unit 9: Knowledge Graph Wiring for Capability Registry**

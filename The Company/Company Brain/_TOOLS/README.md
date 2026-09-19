@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[INDEX]] | [[18-TOOLS/README|18-TOOLS]] | [[15-SKILLS/README|15-SKILLS]]
+
 ---
 id: PORTAL-TOOLS-001
 title: "_TOOLS — Integrated Tooling & Local Knowledge Engines"
@@ -12,7 +14,7 @@ updated: 2026-09-12
 
 # _TOOLS — Integrated Tooling & Local Knowledge Engines
 
-> **Authority:** CP-001 / CP-027  
+> **Authority:** [[00-CONSTITUTION/control-planes/CP-008|CP-008: Tools]] & [[00-CONSTITUTION/control-planes/CP-027|CP-027: Infrastructure]]  
 > **Status:** ACTIVE
 
 ## Overview

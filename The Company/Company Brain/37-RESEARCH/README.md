@@ -11,6 +11,9 @@ updated: 2026-09-06
 
 # 37-RESEARCH — External Intelligence & Research Layer
 
+> **Authority:** [[00-CONSTITUTION/control-planes/CP-013|CP-013: Knowledge]]  
+> **Governing Framework:** [[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]] | [[50-MASTER-CONTROL/50-MASTER-CONTROL|50-MASTER-CONTROL]]
+
 Market, competitors, technology, industry, academic, patents, and benchmark ground truth.
 
 ## Master Research Architecture

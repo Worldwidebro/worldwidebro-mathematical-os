@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[INDEX]] | [[AGENTS]]
+
 ---
 id: DISPATCH_ROUTER_TEST_RESULTS
 title: "Dispatch Router Test Results — Task 2.3 Complete"

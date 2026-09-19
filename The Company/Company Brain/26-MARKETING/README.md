@@ -1,5 +1,8 @@
 # 26-MARKETING — Commercial GTM, Marketing Intelligence & Campaigns
 
+> **Authority:** [[00-CONSTITUTION/control-planes/CP-024|CP-024: Marketing]]  
+> **Governing Framework:** [[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]] | [[50-MASTER-CONTROL/50-MASTER-CONTROL|50-MASTER-CONTROL]]
+
 [[STARTHERE]] | [[REALITY]] | [[INDEX]] | [[CAMPAIGNS/CAMPAIGN-OS|CAMPAIGN-OS]] | [[CAMPAIGNS/README|CAMPAIGNS Portal]]
 
 > **Canonical Document ID:** `DOC-DOM-MKT-001`  

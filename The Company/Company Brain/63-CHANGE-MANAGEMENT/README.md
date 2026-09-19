@@ -11,7 +11,7 @@ updated: 2026-09-12
 
 # 63-CHANGE-MANAGEMENT — Organizational Change & Adaptation
 
-> **Authority:** CP-001 / CP-027  
+> **Authority:** [[00-CONSTITUTION/control-planes/CP-004|CP-004: Strategy]]  
 > **Status:** ACTIVE
 
 ## Overview

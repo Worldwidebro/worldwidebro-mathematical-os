@@ -2,11 +2,14 @@
 
 # 15-SKILLS — Master Skill & Persona Runbook Fleet
 
+> **Authority:** [[00-CONSTITUTION/control-planes/CP-006|CP-006: Agent]]  
+> **Governing Framework:** [[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]] | [[50-MASTER-CONTROL/50-MASTER-CONTROL|50-MASTER-CONTROL]]
+
 > **Canonical Domain ID:** `DOM-015`  
 > **Ontology Node:** [[15-SKILLS]]  
 > **Linked Control Plane:** Agent Control Plane (CP-006) & Infrastructure Control Plane (CP-027)  
 > **Upstream Upstream Repository:** [`msitarzewski/agency-agents`](https://github.com/msitarzewski/agency-agents) (STAR-1125 / OWN-PUB-0883)  
-> **Total Registered Skills:** 285 modular procedural runbooks
+> **Total Registered Skills:** 287 modular procedural runbooks
 
 ---
 
@@ -17,7 +20,7 @@ Each skill is stored in `.agents/skills/<skill-name>/SKILL.md` with structured Y
 
 ### Relationship to Agents
 - **Agents (`.agents/agents/` / `16-AGENTS`):** Persistent autonomous actors with tool bindings, system prompts, and memory identities (e.g. [[16-AGENTS/README|16-AGENTS]]).
-- **Skills (`.agents/skills/` / `15-SKILLS`):** On-demand domain capabilities and expert operational playbooks loaded dynamically during execution.
+- **Skills (`.agents/skills/` / `15-SKILLS`):** On-demand domain capabilities and expert operational playbooks loaded dynamically during execution (Gateway: [[.agents/skills/README|Local Skills Directory]]).
 
 ---
 
@@ -305,6 +308,15 @@ Each skill is stored in `.agents/skills/<skill-name>/SKILL.md` with structured Y
 
 ---
 
+## Obsidian Knowledge OS Skills (Steph Ango / kepano) (2)
+
+| Persona / Skill | Canonical Wiki Link | Description |
+| :--- | :--- | :--- |
+| `obsidian-cli` | [[.agents/skills/obsidian-cli/SKILL|Obsidian CLI Skill]] | Official Kepano CLI interface for vault manipulation, search, plugin debugging, and note operations |
+| `obsidian-markdown` | [[.agents/skills/obsidian-markdown/SKILL|Obsidian Markdown Skill]] | Official Kepano Obsidian Flavored Markdown standards: wikilinks, embeds, callouts, frontmatter, and properties |
+
+---
+
 ## Paid Media & Ad Optimization (7)
 
 | Persona / Skill | Canonical Wiki Link | Description |
@@ -438,3 +450,12 @@ Each skill is stored in `.agents/skills/<skill-name>/SKILL.md` with structured Y
 | `agency-workflow-optimizer` | [[.agents/skills/testing-workflow-optimizer/SKILL|Workflow Optimizer Agent Personality]] | Expert process improvement specialist focused on analyzing, optimizing, and automating workflows across all business ... |
 
 ---
+
+
+## Control Points (2)
+| Control Point | Status | Tool | Responsible Role | Plane |
+|:---|:---:|:---|:---|:---|
+| **Code quality standards** | 🔴 | `—` | Engineering Manager | Engineering Brain (AST-100) — Software Delivery Discipline |
+| **Skill composition** | 🟡 | `Fractal (TOL-000002)` | Skill Engineer | Orchestration Fabric — Work Discovery & Agent Coordination |
+
+*Governed by [[00-CONSTITUTION/control-planes/CP-006|CP-006: Agent]] under [[50-MASTER-CONTROL/CONTROL_MATRIX|Control Matrix]].*

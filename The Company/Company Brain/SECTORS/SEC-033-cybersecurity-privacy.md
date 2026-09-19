@@ -31,7 +31,10 @@ last_verified: "2026-09-05"
 - **trimstray/the-book-of-secret-knowledge** (241K★) — Inspiring lists, manuals, cheatsheets, and pentest tools
 - **Hack-with-Github/Awesome-Hacking** (119K★) — Curated penetration testing, vulnerability assessment, and red teaming
 
-## Canonical Registries
+## Canonical Registries & Control Planes
+- Governing Control Planes: [[00-CONSTITUTION/control-planes/CP-008|CP-008 Tool]], [[00-CONSTITUTION/control-planes/CP-017|CP-017 Access]], [[00-CONSTITUTION/control-planes/CP-018|CP-018 Security]], [[00-CONSTITUTION/control-planes/CP-019|CP-019 Compliance]], [[00-CONSTITUTION/control-planes/CP-027|CP-027 Infrastructure]], [[00-CONSTITUTION/control-planes/CP-029|CP-029 Observability]], [[00-CONSTITUTION/control-planes/CP-030|CP-030 Governance]], [[00-CONSTITUTION/control-planes/CP-033|CP-033 Privacy & Compliance]]
+- Control Planes Directory: [[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]]
+
 - Ventures in Sector: [[_REGISTRIES/ventures-by-sector.yaml|ventures-by-sector.yaml]]
 - Control Planes: [[_REGISTRIES/control-planes-by-sector.yaml|control-planes-by-sector.yaml]] (CP-033 Security & Privacy)
 - Capabilities: [[_REGISTRIES/capabilities-by-sector.yaml|capabilities-by-sector.yaml]]

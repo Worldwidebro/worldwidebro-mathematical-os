@@ -24,7 +24,10 @@ last_verified: "2026-09-05"
 - **juspay/hyperswitch** (15K★) — Open-source financial switch & multi-processor payment orchestrator
 - **Stripe & Payment Integrations** — Canonical connectors for subscription billing and webhooks
 
-## Canonical Registries
+## Canonical Registries & Control Planes
+- Governing Control Planes: [[00-CONSTITUTION/control-planes/CP-001|CP-001 Enterprise]], [[00-CONSTITUTION/control-planes/CP-006|CP-006 Agent]], [[00-CONSTITUTION/control-planes/CP-018|CP-018 Security]], [[00-CONSTITUTION/control-planes/CP-020|CP-020 Financial]], [[00-CONSTITUTION/control-planes/CP-021|CP-021 Funding]], [[00-CONSTITUTION/control-planes/CP-033|CP-033 Privacy & Compliance]]
+- Control Planes Directory: [[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]]
+
 - Ventures in Sector: [[_REGISTRIES/ventures-by-sector.yaml|ventures-by-sector.yaml]]
 - Owned Repositories: [[_REGISTRIES/repositories-by-sector.yaml|repositories-by-sector.yaml]]
 - External Capabilities: [[_REGISTRIES/external-capabilities-by-sector.yaml|external-capabilities-by-sector.yaml]]

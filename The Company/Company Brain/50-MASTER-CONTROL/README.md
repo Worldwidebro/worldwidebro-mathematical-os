@@ -11,7 +11,7 @@ updated: 2026-09-06
 
 # Master Control (50-MASTER-CONTROL)
 
-> **Authority:** Master Control Plane (CP-050) & Infrastructure Architecture  
+> **Authority:** [[00-CONSTITUTION/control-planes/CP-050|CP-050: Master Control]]  
 > **Status:** ACTIVE — Reconciled & Fully Linked (2026-09-06)  
 > **Mission:** Top-level executive coordination, plane/layer governance, and operational readiness for Company Brain.
 

@@ -40,7 +40,10 @@ last_verified: "2026-09-05"
 - **ollama/ollama** (179K★) & **vllm-project/vllm** (90K★) — High-throughput local model serving
 - **DietrichGebert/ponytail** (119K★) & **browser-use/browser-use** (111K★) — Autonomous browser & minimal-change execution
 
-## Canonical Registries
+## Canonical Registries & Control Planes
+- Governing Control Planes: [[00-CONSTITUTION/control-planes/CP-006|CP-006 Agent]], [[00-CONSTITUTION/control-planes/CP-007|CP-007 Model]], [[00-CONSTITUTION/control-planes/CP-008|CP-008 Tool]], [[00-CONSTITUTION/control-planes/CP-027|CP-027 Infrastructure]], [[00-CONSTITUTION/control-planes/CP-028|CP-028 Application]], [[00-CONSTITUTION/control-planes/CP-029|CP-029 Observability]], [[00-CONSTITUTION/control-planes/CP-032|CP-032 AI Governance]]
+- Control Planes Directory: [[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]]
+
 - Ventures in Sector: [[_REGISTRIES/ventures-by-sector.yaml|ventures-by-sector.yaml]]
 - Control Planes: [[_REGISTRIES/control-planes-by-sector.yaml|control-planes-by-sector.yaml]] (CP-006 Agent, CP-007 Model, CP-032 AI)
 - Capabilities: [[_REGISTRIES/capabilities-by-sector.yaml|capabilities-by-sector.yaml]]

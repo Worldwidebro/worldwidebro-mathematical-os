@@ -1,0 +1,80 @@
+# Fivetran CDC Connectors Configuration
+# Source: Supabase → Destination: S3 (for dbt ingestion)
+
+connectors:
+  supabase_to_s3:
+    source_type: supabase
+    destination_type: s3
+
+    # Source Configuration
+    source:
+      api_url: "${SUPABASE_API_URL}"
+      api_key: "${SUPABASE_API_KEY}"
+      database: company_brain
+
+      # Tables to replicate
+      tables:
+        - ventures
+        - venture_metrics
+        - capabilities
+        - solutions
+        - relationships
+        - agents
+
+      # Incremental sync settings
+      sync_strategy: incremental
+      watermark_column: updated_at
+      replication_frequency: daily
+      run_time: "00:30"  # 12:30 AM UTC
+
+    # Destination Configuration
+    destination:
+      bucket: worldwidebro-datalake
+      prefix: raw/supabase/
+      format: parquet
+      compression: snappy
+      partition_columns:
+        - year
+        - month
+        - day
+
+      # Transformation (optional)
+      transformations:
+        enabled: true
+        # Fivetran transformation SQL (optional, use dbt instead)
+        script: |
+          SELECT
+            *,
+            DATE_TRUNC('day', updated_at) as sync_day
+          FROM {{ source_table }}
+
+    # Advanced settings
+    settings:
+      error_handling: continue_on_error
+      logging_level: debug
+      retry_max_attempts: 3
+      retry_backoff_seconds: 60
+      state_backend: s3
+      state_location: s3://worldwidebro-datalake/fivetran_state/
+
+  # Additional connector for operational logs
+  operational_logs_to_s3:
+    source_type: rest_api
+    destination_type: s3
+
+    source:
+      base_url: "${OPS_API_URL}"
+      authentication: bearer_token
+      token: "${OPS_API_TOKEN}"
+
+      endpoints:
+        - /api/v1/ventures/changes
+        - /api/v1/deals/pipeline
+
+      sync_strategy: incremental
+      replication_frequency: hourly
+
+    destination:
+      bucket: worldwidebro-datalake
+      prefix: raw/operational_logs/
+      format: json_lines

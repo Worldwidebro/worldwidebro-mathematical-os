@@ -24,7 +24,10 @@ last_verified: "2026-09-05"
 - **ripienaar/free-for-dev** (136K★) — SaaS, PaaS, and IaaS offerings with free tiers for infradev
 - **caddyserver/caddy** (75K★) — Fast HTTP/1-2-3 web server with automatic HTTPS
 
-## Canonical Registries
+## Canonical Registries & Control Planes
+- Governing Control Planes: [[00-CONSTITUTION/control-planes/CP-009|CP-009 Workflow]], [[00-CONSTITUTION/control-planes/CP-026|CP-026 Operations]]
+- Control Planes Directory: [[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]]
+
 - Ventures in Sector: [[_REGISTRIES/ventures-by-sector.yaml|ventures-by-sector.yaml]]
 - Owned Repositories: [[_REGISTRIES/repositories-by-sector.yaml|repositories-by-sector.yaml]]
 - External Capabilities: [[_REGISTRIES/external-capabilities-by-sector.yaml|external-capabilities-by-sector.yaml]]

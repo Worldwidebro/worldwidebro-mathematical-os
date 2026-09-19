@@ -44,7 +44,10 @@ last_verified: "2026-09-05"
 - **BigBodyCobain/Shadowbroker** (11K★) — OSINT global theater intelligence, flight & private jet tracking, and satellite feeds
 - Foundation GIS & Workflow Engines: [[_REGISTRIES/external-capabilities-by-sector.yaml#SEC-020|SEC-020 (GIS)]] & [[_REGISTRIES/external-capabilities-by-sector.yaml#SEC-028|SEC-028 (n8n Dispatch)]]
 
-## Canonical Registries
+## Canonical Registries & Control Planes
+- Governing Control Planes: [[00-CONSTITUTION/control-planes/CP-001|CP-001 Enterprise]], [[00-CONSTITUTION/control-planes/CP-002|CP-002 Venture]], [[00-CONSTITUTION/control-planes/CP-004|CP-004 Strategy]], [[00-CONSTITUTION/control-planes/CP-009|CP-009 Workflow]], [[00-CONSTITUTION/control-planes/CP-010|CP-010 Automation]], [[00-CONSTITUTION/control-planes/CP-011|CP-011 Task]], [[00-CONSTITUTION/control-planes/CP-015|CP-015 Graph]], [[00-CONSTITUTION/control-planes/CP-022|CP-022 Customer]], [[00-CONSTITUTION/control-planes/CP-023|CP-023 Sales]], [[00-CONSTITUTION/control-planes/CP-026|CP-026 Operations]]
+- Control Planes Directory: [[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]]
+
 - Operating Contract: [[_REGISTRIES/CANONICAL/DISPATCH_OS_CANONICAL_CONTRACT|DISPATCH_OS_CANONICAL_CONTRACT.md]]
 - Ventures in Sector: [[_REGISTRIES/ventures-by-sector.yaml|ventures-by-sector.yaml]] (LT-005, LT-011)
 - Owned Repositories: [[_REGISTRIES/repositories-by-sector.yaml|repositories-by-sector.yaml]]

@@ -39,6 +39,7 @@ See [[.agents/workflows/README|Workflows Index]]:
 - [[.agents/workflows/test|Test Workflow]]
 
 ### Core Skills (`.agents/skills/`)
+See [[.agents/skills/README|Skills Directory Gateway]] & [[.agents/skills/engineering-knowledge-graph-engineer/SKILL|Knowledge Graph Engineer Agent]]:
 - [[obsidian-cli|Obsidian CLI Skill]] — Official Kepano CLI interface for vault manipulation
 - [[obsidian-markdown|Obsidian Markdown Skill]] — Wikilinks, callouts, and frontmatter standards
 - See full skill matrix in [[15-SKILLS]] and [[_REGISTRIES/skills/README|Skills Registry]]

@@ -1,5 +1,8 @@
 # 01-IDENTITY — Company Identity Registry
 
+> **Authority:** [[00-CONSTITUTION/control-planes/CP-002|CP-002: Venture]]  
+> **Governing Framework:** [[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]] | [[50-MASTER-CONTROL/50-MASTER-CONTROL|50-MASTER-CONTROL]]
+
 **Authority**: Authoritative registry of organizational entities (ventures, people, organizations, roles).
 
 **Data source:** [[02-SOURCES]] (MCPs, APIs)  
@@ -84,3 +87,11 @@ Phase 2: NAICS classification per venture
 ---
 
 Last updated: 2026-09-02 | Owner: Hermes | Status: Phase 1 Complete ✅
+
+
+## Control Points (1)
+| Control Point | Status | Tool | Responsible Role | Plane |
+|:---|:---:|:---|:---|:---|
+| **Define organizational structure** | ✅ | `Qdrant` | COO | Company Brain — Organizational Intelligence |
+
+*Governed by [[00-CONSTITUTION/control-planes/CP-002|CP-002: Venture]] under [[50-MASTER-CONTROL/CONTROL_MATRIX|Control Matrix]].*

@@ -24,7 +24,10 @@ last_verified: "2026-09-05"
 - **3b1b/manim** (92K★) — Mathematical and educational video animation engine
 - **immich-app/immich** (113K★) — High-performance self-hosted photo & video asset management
 
-## Canonical Registries
+## Canonical Registries & Control Planes
+- Governing Control Planes: [[00-CONSTITUTION/control-planes/CP-003|CP-003 Portfolio]], [[00-CONSTITUTION/control-planes/CP-024|CP-024 Marketing]], [[00-CONSTITUTION/control-planes/CP-050|CP-050 Master Control]]
+- Control Planes Directory: [[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]]
+
 - Ventures in Sector: [[_REGISTRIES/ventures-by-sector.yaml|ventures-by-sector.yaml]]
 - Owned Repositories: [[_REGISTRIES/repositories-by-sector.yaml|repositories-by-sector.yaml]]
 - External Capabilities: [[_REGISTRIES/external-capabilities-by-sector.yaml|external-capabilities-by-sector.yaml]]

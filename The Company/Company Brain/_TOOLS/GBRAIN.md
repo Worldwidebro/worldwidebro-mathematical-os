@@ -1,3 +1,5 @@
+[[_TOOLS/README|Tools]] | [[08-KNOWLEDGE-GRAPH/README|08-KNOWLEDGE-GRAPH]] | [[INDEX]]
+
 ---
 id: TOOL-GBRAIN-001
 title: GBrain — Persistent Agent Memory & Knowledge Graph
@@ -33,3 +35,17 @@ GBrain is Garry Tan's persistent, markdown-first AI agent memory system. It prov
 ./scripts/gbrain think "<question>"      # Multi-hop cited knowledge synthesis
 ./scripts/gbrain health                  # Health and sync status
 ```
+
+
+## 4. Canonical Documentation, Conventions & Tutorials
+- **Brain-First Lookup Protocol:** [[_TOOLS/gbrain/docs/guides/brain-first-lookup|brain-first-lookup.md]] — Mandatory pre-search protocol before calling external APIs.
+- **Brain-First Lookup Convention:** [[_TOOLS/gbrain/skills/conventions/brain-first|brain-first.md]] — Sub-agent lookup order, token matching, and scoring rules.
+- **Brain-Agent Execution Loop:** [[_TOOLS/gbrain/docs/guides/brain-agent-loop|brain-agent-loop.md]] — Recursive cycle of retrieval, execution, and ambient writeback.
+- **Brains & Sources Architecture:** [[_TOOLS/gbrain/docs/architecture/brains-and-sources|brains-and-sources.md]] — Multi-source mental model, scoped sources, and team sharing.
+- **Tutorial: Company Brain Setup:** [[_TOOLS/gbrain/docs/tutorials/company-brain|company-brain.md]] — Garry Tan's recipe for shared institutional memory across 10-50 operators.
+- **Brain-Routing Convention:** [[_TOOLS/gbrain/skills/conventions/brain-routing|brain-routing.md]] — Routing rules across personal, venture, and company brains.
+- **GBrain Skillpack Anatomy:** [[_TOOLS/gbrain/docs/GBRAIN_SKILLPACK|GBRAIN_SKILLPACK.md]] — Built-in cognitive skills catalog.
+- **GBrain Engine Architecture:** [[_TOOLS/gbrain/README|README.md]] — Full engine specification and CLI guide.
+
+---
+[[INDEX]] | [[08-KNOWLEDGE-GRAPH/README|08-KNOWLEDGE-GRAPH]] | [[10-MEMORY/README|10-MEMORY]] | [[_TOOLS/README|Tools Gateway]]

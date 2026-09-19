@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[INDEX]] | [[AGENTS]]
+
 ---
 title: WhatsApp Integration Plan — Company Brain Mobile Control Layer
 authority: CP-027 (Infrastructure), CP-033 (Execution), CP-021 (Revenue)

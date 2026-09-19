@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[INDEX]] | [[AGENTS]]
+
 # WEEK 1 REPO BLUEPRINTS
 ## Proven patterns for OPS-001, LT-005, CALLCENTER
 

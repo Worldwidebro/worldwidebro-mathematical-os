@@ -11,7 +11,7 @@ updated: 2026-09-12
 
 # 59-MCP — Model Context Protocol Tool Registry
 
-> **Authority:** CP-001 / CP-027  
+> **Authority:** [[00-CONSTITUTION/control-planes/CP-008|CP-008: Tool]]  
 > **Status:** ACTIVE
 
 ## Overview

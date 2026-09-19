@@ -1,0 +1,39 @@
+name: ventures_daily_validation
+config_version: 1.0
+
+datasource:
+  name: postgres_primary
+
+suite_names:
+  - ventures_expectations
+
+batches:
+  - table_name: analytics_dev.stg_supabase_ventures
+    column_index_name: venture_id
+    expectation_suite_name: ventures_expectations
+
+validation_operator_name: default
+
+action_list:
+  - name: log_validation_result
+    action:
+      class_name: LogValidationResultAction
+      target_store_name: validations_S3_store
+
+  - name: update_data_docs
+    action:
+      class_name: UpdateDataDocsAction
+
+  - name: email_on_failure
+    action:
+      class_name: EmailAction
+      notify_on: failure
+      notify_with:
+        - summary
+        - failed_expectations
+      smtp_address: "${GX_SMTP_ADDRESS}"
+      smtp_port: 587
+      sender_login: "${GX_SMTP_USER}"
+      sender_password: "${GX_SMTP_PASSWORD}"
+      recipient_emails:
+        - data-alerts@worldwidebro.com

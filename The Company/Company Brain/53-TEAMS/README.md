@@ -11,7 +11,7 @@ updated: 2026-09-12
 
 # 53-TEAMS — Human & Agent Teams Architecture
 
-> **Authority:** CP-001 / CP-027  
+> **Authority:** [[00-CONSTITUTION/control-planes/CP-025|CP-025: People]]  
 > **Status:** ACTIVE
 
 ## Overview

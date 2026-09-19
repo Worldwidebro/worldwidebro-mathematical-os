@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[INDEX]] | [[AGENTS]]
+
 # Three-Layer Alignment Map
 
 **Date:** 2026-09-19  

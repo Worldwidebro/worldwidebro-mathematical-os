@@ -3,7 +3,7 @@
 # 23-VENTURES — Autonomous Venture Portfolio & Lifecycle
 
 > **Canonical Domain ID:** `DOM-023`  
-> **Authority:** Venture Control Plane (CP-005)  
+> **Authority:** [[00-CONSTITUTION/control-planes/CP-002|CP-002: Venture]]  
 > **Authoritative Public Portal:** [`Worldwidebro/worldwidebro-venture-portal`](https://github.com/Worldwidebro/worldwidebro-venture-portal) (`OWN-PRIV-0004` / `REP-001`)  
 > **Flywheel Blueprint:** [[_INFRASTRUCTURE/VENTURE-PORTAL-FLYWHEEL|Autonomous Venturing Flywheel Architecture]]  
 > **Master Registry:** [[_REGISTRIES/VENTURE_REGISTRY.yaml]]
@@ -46,3 +46,11 @@ The following Tier-1 ventures have production-verified deployments and active mo
 - **MVP:** ~10%
 - **Operating / Income-Ready:** ~5%
 
+
+
+## Control Points (1)
+| Control Point | Status | Tool | Responsible Role | Plane |
+|:---|:---:|:---|:---|:---|
+| **Portfolio oversight** | ✅ | `Neo4j` | Portfolio Manager | Company Brain — Organizational Intelligence |
+
+*Governed by [[00-CONSTITUTION/control-planes/CP-002|CP-002: Venture]] under [[50-MASTER-CONTROL/CONTROL_MATRIX|Control Matrix]].*

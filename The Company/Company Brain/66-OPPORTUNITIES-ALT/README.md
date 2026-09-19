@@ -11,7 +11,7 @@ updated: 2026-09-12
 
 # 66-OPPORTUNITIES-ALT — Alternative Investment & Growth Opportunities
 
-> **Authority:** CP-001 / CP-027  
+> **Authority:** [[00-CONSTITUTION/control-planes/CP-021|CP-021: Funding]]  
 > **Status:** ACTIVE
 
 ## Overview

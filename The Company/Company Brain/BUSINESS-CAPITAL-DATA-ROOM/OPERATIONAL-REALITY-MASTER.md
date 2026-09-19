@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[INDEX]] | [[REALITY]] | [[23-VENTURES/README|23-VENTURES]] | [[00-CONSTITUTION/control-planes/CP-002|CP-002]]
+
 # 📊 OPERATIONAL REALITY MASTER — 5 Ventures Summary
 **Date:** 2026-09-08 | **Authority:** [[REALITY.md]] | [[ECONOMIC-REALITY.md]]
 

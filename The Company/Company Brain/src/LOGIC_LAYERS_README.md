@@ -1,3 +1,5 @@
+[[14-CAPABILITIES/README|14-CAPABILITIES]] | [[16-AGENTS/README|16-AGENTS]] | [[55-LOOP-ENGINEERING/README|55-LOOP-ENGINEERING]] | [[INDEX]]
+
 # Logic Layers Registry
 
 The Logic Layers Registry maps venture tasks to operational workflows and required capabilities.

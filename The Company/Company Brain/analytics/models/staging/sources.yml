@@ -1,0 +1,57 @@
+version: 2
+
+sources:
+  - name: supabase
+    description: Production Supabase database with venture data
+    tables:
+      - name: ventures
+        description: Master venture records
+        columns:
+          - name: id
+            description: Venture primary key
+            tests:
+              - unique
+              - not_null
+          - name: name
+            description: Venture name
+            tests:
+              - not_null
+          - name: sector
+            description: Business sector
+            tests:
+              - not_null
+          - name: status
+            description: Current venture status
+          - name: created_at
+            description: Record creation timestamp
+            tests:
+              - not_null
+
+      - name: venture_metrics
+        description: Financial and operational metrics per venture
+        columns:
+          - name: id
+            description: Metric primary key
+            tests:
+              - unique
+              - not_null
+          - name: venture_id
+            description: Foreign key to ventures
+            tests:
+              - not_null
+              - relationships:
+                  to: source('supabase', 'ventures')
+                  field: id
+          - name: readiness_pct
+            description: Venture readiness percentage (0-1)
+            tests:
+              - dbt_expectations.expect_column_values_to_be_between:
+                  min_value: 0
+                  max_value: 1
+          - name: monthly_revenue
+            description: Monthly revenue in USD
+            tests:
+              - dbt_expectations.expect_column_values_to_be_of_type:
+                  column_type: numeric
+          - name: cash_balance
+            description: Current cash balance in USD

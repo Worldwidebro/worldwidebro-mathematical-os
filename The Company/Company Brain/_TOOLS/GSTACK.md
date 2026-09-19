@@ -1,3 +1,5 @@
+[[_TOOLS/README|Tools]] | [[56-ENGINEERING/README|56-ENGINEERING]] | [[INDEX]]
+
 ---
 id: TOOL-GSTACK-001
 title: GStack — Garry Tan's 23-Role AI Engineering Stack

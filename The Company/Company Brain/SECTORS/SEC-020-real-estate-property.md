@@ -29,7 +29,10 @@ last_verified: "2026-09-05"
 - **ruvnet/RuView** (92K★) — Commodity WiFi signal spatial intelligence, vital sign monitoring & camera-free presence detection
 - **opengeos/qgis-gee-data-catalogs-plugin** — Google Earth Engine data catalogs & spatial analysis
 
-## Canonical Registries
+## Canonical Registries & Control Planes
+- Governing Control Planes: [[00-CONSTITUTION/control-planes/CP-001|CP-001 Enterprise]], [[00-CONSTITUTION/control-planes/CP-002|CP-002 Venture]], [[00-CONSTITUTION/control-planes/CP-004|CP-004 Strategy]], [[00-CONSTITUTION/control-planes/CP-014|CP-014 Data]], [[00-CONSTITUTION/control-planes/CP-020|CP-020 Financial]], [[00-CONSTITUTION/control-planes/CP-023|CP-023 Sales]], [[00-CONSTITUTION/control-planes/CP-031|CP-031 Sustainability]]
+- Control Planes Directory: [[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]]
+
 - Ventures in Sector: [[_REGISTRIES/ventures-by-sector.yaml|ventures-by-sector.yaml]] (RE-001 through RE-150)
 - Owned Repositories: [[_REGISTRIES/repositories-by-sector.yaml|repositories-by-sector.yaml]]
 - External Capabilities: [[_REGISTRIES/external-capabilities-by-sector.yaml|external-capabilities-by-sector.yaml]]

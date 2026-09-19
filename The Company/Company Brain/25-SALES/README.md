@@ -1,5 +1,8 @@
 # 25-SALES
 
+> **Authority:** [[00-CONSTITUTION/control-planes/CP-023|CP-023: Sales]]  
+> **Governing Framework:** [[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]] | [[50-MASTER-CONTROL/50-MASTER-CONTROL|50-MASTER-CONTROL]]
+
 Leads, prospects, accounts, opportunities, pipeline, forecasting
 
 ## Overview

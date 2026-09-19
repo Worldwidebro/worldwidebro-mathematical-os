@@ -1,0 +1,42 @@
+config_version: 3.0
+
+datasources:
+  postgres_primary:
+    type: sql
+    connection_string: "${DBT_POSTGRES_CONNECTION}"
+    introspection:
+      type: column
+      include_schema_metadata: true
+
+stores:
+  expectations_S3_store:
+    type: ExpectationsStore
+    store_backend:
+      class_name: TupleS3StoreBackend
+      bucket: worldwidebro-analytics
+      prefix: great_expectations/expectations
+
+  validations_S3_store:
+    type: ValidationsStore
+    store_backend:
+      class_name: TupleS3StoreBackend
+      bucket: worldwidebro-analytics
+      prefix: great_expectations/validations
+
+  checkpoints_S3_store:
+    type: CheckpointStore
+    store_backend:
+      class_name: TupleS3StoreBackend
+      bucket: worldwidebro-analytics
+      prefix: great_expectations/checkpoints
+
+validation_operators:
+  default:
+    class_name: ActionListValidationOperator
+    action_list:
+      - name: store
+        action:
+          class_name: StoreValidationResultAction
+          target_store_name: validations_S3_store
+
+plugins_directory: plugins

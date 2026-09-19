@@ -251,7 +251,8 @@ Infrastructure Control Plane (CP-027)
 - [[_MCP/SESSION-SUMMARY-2026-09-17|Session Summary (2026-09-17)]] — Architecture decision checkpoint.
 - [[_MCP/SYSTEMS-INTEGRATION-MASTER|Systems Integration Master]] — Ecosystem-wide integration topology.
 
-### Capability Units 10–17 Specifications
+### Capability Units 9–17 Specifications
+- [[_MCP/neo4j/README|Unit 9: Neo4j Capability Registry Graph Wiring]] — Cypher graph model, entity resolution, and relationship generator.
 - [[_MCP/UNIT-10-SEARCH-CAPABILITIES-SPEC|Unit 10: Search Capabilities]] — Dynamic registry query protocol.
 - [[_MCP/UNIT-11-EXECUTE-CAPABILITY-SPEC|Unit 11: Execute Capability]] — Execution engine and parameter passing.
 - [[_MCP/UNIT-12-ANTHROPIC-PLUGIN-WIRING-SPEC|Unit 12: Anthropic Plugin Wiring]] — Claude tool use mapping.

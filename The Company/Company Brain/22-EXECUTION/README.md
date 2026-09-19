@@ -1,5 +1,8 @@
 # 22-EXECUTION
 
+> **Authority:** [[00-CONSTITUTION/control-planes/CP-009|CP-009: Workflow]]  
+> **Governing Framework:** [[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]] | [[50-MASTER-CONTROL/50-MASTER-CONTROL|50-MASTER-CONTROL]]
+
 Jobs, tasks, actions, transactions, changes, approvals
 
 ## Overview

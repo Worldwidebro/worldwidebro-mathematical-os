@@ -11,7 +11,7 @@ updated: 2026-09-12
 
 # 90-EXECUTION — High-Priority Tactical Execution
 
-> **Authority:** CP-001 / CP-027  
+> **Authority:** [[00-CONSTITUTION/control-planes/CP-011|CP-011: Task]]  
 > **Status:** 🟢 ACTIVE — Active Execution Workstreams
 
 ## Active Tactical Workstreams

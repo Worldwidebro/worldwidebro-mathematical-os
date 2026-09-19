@@ -31,7 +31,10 @@ last_verified: "2026-09-05"
 - **juanfont/headscale** (30K★) — Open-source, self-hosted implementation of the Tailscale control server
 - **meshtastic/firmware** (8K★) — Off-grid, decentralized LoRa mesh communication firmware
 
-## Canonical Registries
+## Canonical Registries & Control Planes
+- Governing Control Planes: [[00-CONSTITUTION/control-planes/CP-027|CP-027 Infrastructure]], [[00-CONSTITUTION/control-planes/CP-050|CP-050 Master Control]]
+- Control Planes Directory: [[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]]
+
 - Ventures in Sector: [[_REGISTRIES/ventures-by-sector.yaml|ventures-by-sector.yaml]]
 - Control Planes: [[_REGISTRIES/control-planes-by-sector.yaml|control-planes-by-sector.yaml]] (CP-022 Telecom, CP-027 Infrastructure)
 - Capabilities: [[_REGISTRIES/capabilities-by-sector.yaml|capabilities-by-sector.yaml]]

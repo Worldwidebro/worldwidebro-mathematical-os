@@ -11,7 +11,7 @@ updated: 2026-09-06
 
 # Knowledge Graph (08-KNOWLEDGE-GRAPH)
 
-> **Authority:** Graph Architecture (CP-008) & Infrastructure (CP-027)  
+> **Authority:** [[00-CONSTITUTION/control-planes/CP-008|CP-008: Tool]]  
 > **Host Node:** Mac Studio M4 Max (`100.87.214.70:7687`)  
 > **Status:** ACTIVE — Standardized & Reconciled (2026-09-06)
 
@@ -30,6 +30,8 @@ updated: 2026-09-06
 | **Relational Store** | [[09-KNOWLEDGE/Neo4j|Neo4j Graph Database]] | `civos_neo4j` Docker container (:7687 Bolt, :7474 HTTP) |
 | **Bitemporal Schema** | [[09-KNOWLEDGE/Utopia-World-Model|Utopia World Model]] | Valid time (`valid_from`/`to`) vs. Transaction time (`tx_from`/`to`) |
 | **Unified Search** | [[09-KNOWLEDGE/Query-Engine|Unified Query Engine]] | Multi-modal federated queries joining graph paths with vectors |
+| **Graph Engineering Agent** | [[.agents/skills/engineering-knowledge-graph-engineer/SKILL|Knowledge Graph Engineer]] | Dynamic context navigation, append-only MERGE provenance, contradiction detection, and graph health |
+| **Capability Graph Wiring** | [[_MCP/neo4j/README|Neo4j Capability Graph]] | Cypher scripts to wire the Capability Registry into Neo4j as a knowledge graph |
 | **Import Automation** | `_REGISTRIES/RECONCILIATION_2026_09_01/COMPANY_BRAIN_NEO4J_IMPORT.cypher` | Automated ingestion script loading 789 ventures & 893 repos |
 
 ### Typed Wikilinks & RDF/XML Ontology
@@ -62,3 +64,12 @@ updated: 2026-09-06
 - Control Points: [[_REGISTRIES/control-points.md]]
 - Graph Import Pipeline: [[_PIPELINES/indexing/README]]
 - Graph Status: 🟢 Operational on Mac Studio (`bolt://100.87.214.70:7687`)
+
+
+## Control Points (2)
+| Control Point | Status | Tool | Responsible Role | Plane |
+|:---|:---:|:---|:---|:---|
+| **Neo4j entity creation** | ✅ | `Neo4j` | Knowledge Engineer | Knowledge Fabric — Unified Organizational Knowledge |
+| **Relationship mapping** | ✅ | `Neo4j` | Knowledge Engineer | Knowledge Fabric — Unified Organizational Knowledge |
+
+*Governed by [[00-CONSTITUTION/control-planes/CP-008|CP-008: Tool]] under [[50-MASTER-CONTROL/CONTROL_MATRIX|Control Matrix]].*

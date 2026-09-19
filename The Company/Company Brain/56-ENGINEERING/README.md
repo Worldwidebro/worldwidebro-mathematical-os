@@ -10,7 +10,7 @@ updated: 2026-09-06
 
 # 56-ENGINEERING Directory Map
 
-> **Authority:** CP-027  
+> **Authority:** [[00-CONSTITUTION/control-planes/CP-027|CP-027: Infrastructure]]  
 > **Status:** LIVE / AUDITED — Updated 2026-09-06
 
 This directory contains the engineering control plane and infrastructure architecture for Company Brain.

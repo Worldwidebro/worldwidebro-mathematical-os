@@ -17,6 +17,10 @@ updated: 2026-09-06
 
 ## 1. Sub-Registry Directories
 
+- [[_REGISTRIES/REGISTRY-ARCHITECTURE|REGISTRY-ARCHITECTURE.md]] — Master Data & Indexing Blueprint for Company Brain.
+- [[_REGISTRIES/SOURCE-GROUNDED-RESEARCH-PROTOCOL|SOURCE-GROUNDED-RESEARCH-PROTOCOL.md]] — Ground truth verification protocol.
+- [[_REGISTRIES/VERCEL-SITES-REGISTRY-LIVE|VERCEL-SITES-REGISTRY-LIVE.md]] — Live deployed sites registry.
+
 | Subdirectory | Focus / Scope | Subdirectory Gateway |
 |---|---|---|
 | `CANONICAL/` | Canonical repositories, capabilities, and system inventories | [[_REGISTRIES/CANONICAL/README|CANONICAL Registries]] |
@@ -27,6 +31,9 @@ updated: 2026-09-06
 | `coverage/` | Test suites, AST verification reports, and test coverage matrices | [[_REGISTRIES/coverage/README|Coverage Registry]] |
 | `SHADOW_WORK/` | Background shadow tasks, deferred audits, and staging queues | [[_REGISTRIES/SHADOW_WORK/README|Shadow Work Registry]] |
 | `control-points/` | The 38 architectural control points and decision boundaries | [[_REGISTRIES/control-points|Control Points]] |
+| `capabilities/` | Canonical capability catalog, solution matrix, and gap mappings | [[_REGISTRIES/capabilities/README|Capabilities Registry]] |
+| `models/` | AI model catalog, routing matrices, and inference endpoints | [[_REGISTRIES/models/README|Models Registry]] |
+| `skills/` | Procedural runbooks, agent personas, and execution skills | [[_REGISTRIES/skills/README|Skills Registry]] |
 | `agents/` | Metadata profiles for autonomous routing and execution agents | [[16-AGENTS/README|Agents Directory]] |
 | `RECONCILIATION_2026_09_01/` | Universal portfolio reconciliation audits and import scripts | [[_REGISTRIES/RECONCILIATION_2026_09_01/COMPANY_BRAIN_AUDIT_REPORT|Audit Report]] |
 

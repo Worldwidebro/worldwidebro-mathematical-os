@@ -1,4 +1,9 @@
+[[STARTHERE]] | [[INDEX]] | [[00-CONSTITUTION/control-planes/CP-028|CP-028: Repositories]] | [[00-CONSTITUTION/control-planes/CP-027|CP-027: Infrastructure]] | [[50-MASTER-CONTROL/50-MASTER-CONTROL|Master Control]]
+
 # 13-REPOSITORIES
+
+> **Authority:** [[00-CONSTITUTION/control-planes/CP-028|CP-028: Application]]  
+> **Governing Framework:** [[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]] | [[50-MASTER-CONTROL/50-MASTER-CONTROL|50-MASTER-CONTROL]]
 
 Repository intelligence, code ownership, quality, and deployment tracking
 
@@ -84,8 +89,27 @@ VEX Dashboard → GitHub Repos Tab displays this data live:
 - Filter by verified/owned/starred
 - Direct GitHub links
 
-**Access:** http://localhost:5173/holdings/github
+## Core Code-Backed Venture Repositories
+
+| Repository Path | Venture ID | Venture Name | Primary Stack | Codebase Hub |
+|:---|:---:|---|---|:---:|
+| `repos/ops-staff-001-staffing` | `OPS-001` | WorldwideBro Staffing Ops | Fastify / Next.js / TypeScript | [[repos/ops-staff-001-staffing/README|Codebase Hub]] |
+| `repos/lt-005-medical-courier-dispatch` | `LT-005` | HealthRoute Logistics | Express / TypeScript / React | [[repos/lt-005-medical-courier-dispatch/README|Codebase Hub]] |
+| `repos/callcenter` | `CALLCENTER` | CallCenter Voice Intelligence | Python / LiveKit / Twilio / Flask | [[repos/callcenter/README|Codebase Hub]] |
+| `repos/con-001-ace-construction` | `CON-001` | ACE Construction & Contracting | Next.js / Supabase / TypeScript | [[repos/con-001-ace-construction/README|Codebase Hub]] |
+| `repos/lt-011-dispatch-software` | `LT-011` | Fleet OS Dispatch Platform | React / Node.js / TypeScript | [[repos/lt-011-dispatch-software/README|Codebase Hub]] |
+| `repos/re-001-worldwidebro-holdings` | `RE-001` | WorldwideBro Holdings PropTech | Next.js / Tailwind / Vercel | [[repos/re-001-worldwidebro-holdings/README|Codebase Hub]] |
 
 ---
 
-**Updated:** 2026-09-16 | **Authority:** Infrastructure CP-027 | **Links:** [[13-REPOSITORIES.md]] | [[INDEX]] | [[START-HERE-REPOSITORIES]]
+**Updated:** 2026-09-19 | **Authority:** [[00-CONSTITUTION/control-planes/CP-028|CP-028: Repositories]] | **Links:** [[13-REPOSITORIES.md]] | [[INDEX]] | [[START-HERE-REPOSITORIES]]
+
+
+## Control Points (3)
+| Control Point | Status | Tool | Responsible Role | Plane |
+|:---|:---:|:---|:---|:---|
+| **Define architecture standards** | 🟡 | `Graft (TOL-000001)` | CTO | Engineering Brain (AST-100) — Software Delivery Discipline |
+| **Repository health checks** | 🟡 | `Graft (TOL-000001)` | Engineering Manager | Engineering Brain (AST-100) — Software Delivery Discipline |
+| **Code graph generation** | ✅ | `Graft (TOL-000001)` | Tech Lead | Knowledge Fabric — Unified Organizational Knowledge |
+
+*Governed by [[00-CONSTITUTION/control-planes/CP-028|CP-028: Application]] under [[50-MASTER-CONTROL/CONTROL_MATRIX|Control Matrix]].*

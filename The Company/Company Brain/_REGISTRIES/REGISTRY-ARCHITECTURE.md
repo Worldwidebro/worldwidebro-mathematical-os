@@ -705,13 +705,13 @@ capability_registry:
   entry:
     id: CAP-042
     links:
-      - wiki: "[[workflow-orchestration]]"
-      - sector: "[[SEC-001]] to [[SEC-035]]"
+      - wiki: "[[19-ORCHESTRATION/README|Workflow Orchestration]]"
+      - sector: "[[SECTORS/SEC-001-beauty-wellness|SEC-001]] to [[SECTORS/SEC-035-reserved-discovery|SEC-035]]"
       - venture: "[[OPS-001]], [[LT-005]], [[CON-001]]"
-      - repository: "[[Worldwidebro/worldwidebro-vex]]"
-      - agent: "[[AGT-017]] (research), [[AGT-019]] (orchestration)"
-      - decision: "[[DEC-000127]]"
-      - awesome_list: "[[awesome-workflow]], [[awesome-automation]]"
+      - repository: "[[23-VENTURES/Worldwidebro-Vex/README|Worldwidebro-Vex]]"
+      - agent: "[[16-AGENTS/README|AGT-017]] (research), [[16-AGENTS/README|AGT-019]] (orchestration)"
+      - decision: "[[20-DECISIONS/README|DEC-000127]]"
+      - awesome_list: "[[14-CAPABILITIES/README|awesome-workflow]], [[48-AUTOMATION/README|awesome-automation]]"
 ```
 
 Every registry entry is **machine-readable** (YAML/JSON) + **human-navigable** (Obsidian wiki links).

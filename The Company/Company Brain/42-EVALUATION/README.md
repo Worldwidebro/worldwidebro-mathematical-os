@@ -11,7 +11,7 @@ updated: 2026-09-06
 
 # 42-EVALUATION — Master Evaluation & Verification Architecture
 
-> **Authority:** Performance & Quality Control Plane ([[CP-028]])  
+> **Authority:** [[00-CONSTITUTION/control-planes/CP-032|CP-032: AI Governance]]  
 > **Master Operating Contract:** [[ANTIGRAVITY.md]] (Rule 3: Strictly zero fake completion)  
 > **Operational Filesystem Harness:** [[_EVAL/README|_EVAL/README.md]]  
 > **Target Gateway:** [[42-EVALUATION/42-EVALUATION|42-EVALUATION.md]]  
@@ -86,3 +86,12 @@ Evaluates external software packages, SaaS vendors, and internal libraries:
 - **Governance & Master Control:**
   - Master Control: [[50-MASTER-CONTROL/50-MASTER-CONTROL]] & [[50-MASTER-CONTROL/CONTROL_MATRIX]]
   - Operating Contract: [[ANTIGRAVITY.md]]
+
+
+## Control Points (2)
+| Control Point | Status | Tool | Responsible Role | Plane |
+|:---|:---:|:---|:---|:---|
+| **Code review gates** | 🟡 | `—` | Code Review Lead | Verification Fabric — Quality Gates & Confidence |
+| **Test coverage validation** | 🟡 | `—` | QA Lead | Verification Fabric — Quality Gates & Confidence |
+
+*Governed by [[00-CONSTITUTION/control-planes/CP-032|CP-032: AI Governance]] under [[50-MASTER-CONTROL/CONTROL_MATRIX|Control Matrix]].*

@@ -7,7 +7,7 @@ status: ACTIVE
 updated: 2026-09-06
 ---
 
-[[STARTHERE]] | [[INDEX]] | [[SECTORS/SEC-002-construction-infrastructure|SEC-002 Construction]] | [[50-MASTER-CONTROL/50-MASTER-CONTROL|Master Control]] | [[REALITY]]
+[[STARTHERE]] | [[INDEX]] | [[SECTORS/SEC-002-construction-infrastructure|SEC-002 Construction]] | [[50-MASTER-CONTROL/50-MASTER-CONTROL|Master Control]] | [[REALITY]] | [[00-CONSTITUTION/control-planes/CP-002|CP-002]]
 
 # 51-CONSTRUCTION — Construction & Physical Infrastructure Domain
 

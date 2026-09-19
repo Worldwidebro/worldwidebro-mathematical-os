@@ -1,5 +1,8 @@
 # Research Intelligence Base
 
+> **Authority:** [[00-CONSTITUTION/control-planes/CP-013|CP-013: Knowledge]]  
+> **Governing Framework:** [[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]] | [[50-MASTER-CONTROL/50-MASTER-CONTROL|50-MASTER-CONTROL]]
+
 **Domain:** 42-RESEARCH-INTELLIGENCE  
 **Purpose:** Transform global research into Company Brain capabilities, experiments, and revenue opportunities  
 **Authority:** CP-065 (Knowledge Logic)  

@@ -1,5 +1,8 @@
 # 27-CUSTOMERS
 
+> **Authority:** [[00-CONSTITUTION/control-planes/CP-022|CP-022: Customer]]  
+> **Governing Framework:** [[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]] | [[50-MASTER-CONTROL/50-MASTER-CONTROL|50-MASTER-CONTROL]]
+
 Profiles, interactions, support, feedback, behavior, retention
 
 ## Overview

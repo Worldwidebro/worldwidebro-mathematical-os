@@ -11,7 +11,7 @@ updated: 2026-09-12
 
 # 64-RELATIONSHIPS — Entity Relationship & Counterparty Graph
 
-> **Authority:** CP-001 / CP-027  
+> **Authority:** [[00-CONSTITUTION/control-planes/CP-015|CP-015: Graph]]  
 > **Status:** ACTIVE
 
 ## Overview

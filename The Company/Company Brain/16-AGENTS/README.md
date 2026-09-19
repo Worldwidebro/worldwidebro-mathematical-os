@@ -1,5 +1,8 @@
 # 16-AGENTS: Routing & Execution Agents
 
+> **Authority:** [[00-CONSTITUTION/control-planes/CP-006|CP-006: Agent]]  
+> **Governing Framework:** [[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]] | [[50-MASTER-CONTROL/50-MASTER-CONTROL|50-MASTER-CONTROL]]
+
 **Layer:** 16/50  
 **Status:** 🟢 ACTIVE  
 **Updated:** 2026-09-02
@@ -29,13 +32,13 @@ ClickUp Task → Webhook → Fractal Routing Agent → Neo4j → Control Plane
 
 ## 5 Core Routing Agents
 
-| Agent | Purpose | Fractal | Managed By | Approvers |
-|-------|---------|---------|------------|-----------|
-| [[AGT-001-venture-pm]] | Project mgmt | venture-pm | TBD | TBD |
-| [[AGT-002-financial]] | Revenue | financial | TBD | TBD |
-| [[AGT-003-technical]] | Infrastructure | technical | TBD | TBD |
-| [[AGT-004-sales]] | Lead qualification | sales | TBD | TBD |
-| [[AGT-005-operations]] | Workflow automation | operations | TBD | TBD |
+| Agent ID & Spec | Purpose | Fractal | Test Suite / Logic |
+|---|---|---|---|
+| [[16-AGENTS/AGT-001|AGT-001]] / [[AGT-001-venture-pm]] | Project mgmt | venture-pm | [[src/services/__tests__/README|Orchestrator Prime Test Suite]] |
+| [[16-AGENTS/AGT-002|AGT-002]] / [[AGT-002-financial]] | Revenue | financial | [[src/LOGIC_LAYERS_README|Logic Layers (Sales/Outreach)]] |
+| [[16-AGENTS/AGT-003|AGT-003]] / [[AGT-003-technical]] | Infrastructure | technical | [[_INFRASTRUCTURE/omniroute/README|OmniRoute Gateway]] |
+| [[16-AGENTS/AGT-004|AGT-004]] / [[AGT-004-sales]] | Lead qualification | sales | [[src/LOGIC_LAYERS_README|Logic Layers (Sales)]] |
+| [[16-AGENTS/AGT-005|AGT-005]] / [[AGT-005-operations]] | Workflow automation | operations | [[src/LOGIC_LAYERS_SETUP|Logic Layers Automation]] |
 
 ---
 
@@ -137,3 +140,11 @@ For on-demand behavioral personas and procedural operational runbooks imported f
 - [[16-AGENTS/EDU-CLASSROOM|EDU-CLASSROOM]]
 - [[16-AGENTS/HERMES-AGENT|HERMES-AGENT]]
 - [[16-AGENTS/OPENHANDS|OPENHANDS]]
+
+
+## Control Points (1)
+| Control Point | Status | Tool | Responsible Role | Plane |
+|:---|:---:|:---|:---|:---|
+| **Agent spawning** | ✅ | `Fractal (TOL-000002)` | Agent Architect | Orchestration Fabric — Work Discovery & Agent Coordination |
+
+*Governed by [[00-CONSTITUTION/control-planes/CP-006|CP-006: Agent]] under [[50-MASTER-CONTROL/CONTROL_MATRIX|Control Matrix]].*

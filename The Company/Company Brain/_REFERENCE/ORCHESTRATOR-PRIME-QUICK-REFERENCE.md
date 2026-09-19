@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[INDEX]] | [[AGENTS]]
+
 # Quick Reference: classifyTask() Method
 
 ## Setup (2 minutes)

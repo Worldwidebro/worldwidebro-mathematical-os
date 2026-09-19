@@ -19,7 +19,10 @@ last_verified: "2026-09-05"
 ## Active Core Operating Ventures
 - [[23-VENTURES/EC-001|EC-001 — Angels in Daylight Apparel]] (Tier-1 Focus)
 
-## Canonical Registries
+## Canonical Registries & Control Planes
+- Governing Control Planes: [[00-CONSTITUTION/control-planes/CP-003|CP-003 Portfolio]], [[00-CONSTITUTION/control-planes/CP-024|CP-024 Marketing]]
+- Control Planes Directory: [[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]]
+
 - Ventures in Sector: [[_REGISTRIES/ventures-by-sector.yaml|ventures-by-sector.yaml]]
 - Control Planes: [[_REGISTRIES/control-planes-by-sector.yaml|control-planes-by-sector.yaml]]
 - Capabilities: [[_REGISTRIES/capabilities-by-sector.yaml|capabilities-by-sector.yaml]]

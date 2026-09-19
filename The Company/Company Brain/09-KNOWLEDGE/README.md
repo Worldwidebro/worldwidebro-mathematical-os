@@ -11,6 +11,9 @@ updated: 2026-09-06
 
 # 09-KNOWLEDGE
 
+> **Authority:** [[00-CONSTITUTION/control-planes/CP-013|CP-013: Knowledge]]  
+> **Governing Framework:** [[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]] | [[50-MASTER-CONTROL/50-MASTER-CONTROL|50-MASTER-CONTROL]]
+
 Policies, procedures, playbooks, research, IP, and world models
 
 ## 1. Overview
@@ -67,3 +70,11 @@ Policies, procedures, playbooks, research, IP, and world models
 - System Index: [[INDEX]]
 - Architecture Overview: [[_DOCS/architecture]]
 - Master Control Gateway: [[50-MASTER-CONTROL/50-MASTER-CONTROL]]
+
+
+## Control Points (1)
+| Control Point | Status | Tool | Responsible Role | Plane |
+|:---|:---:|:---|:---|:---|
+| **Knowledge source ingestion** | 🟡 | `Qdrant` | Knowledge Manager | Knowledge Fabric — Unified Organizational Knowledge |
+
+*Governed by [[00-CONSTITUTION/control-planes/CP-013|CP-013: Knowledge]] under [[50-MASTER-CONTROL/CONTROL_MATRIX|Control Matrix]].*

@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[INDEX]] | [[AGENTS]]
+
 # Deal Lifecycle Template Library
 
 **Purpose:** Canonical document sequences for three deal types. Use as reference for your venture's specific transaction.  

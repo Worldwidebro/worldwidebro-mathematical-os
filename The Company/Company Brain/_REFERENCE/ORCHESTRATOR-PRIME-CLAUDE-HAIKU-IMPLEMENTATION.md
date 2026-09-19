@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[INDEX]] | [[AGENTS]]
+
 # Orchestrator Prime: Claude Haiku Task Classification Implementation
 
 ## Overview

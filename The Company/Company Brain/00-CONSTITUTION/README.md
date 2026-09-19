@@ -11,7 +11,7 @@ updated: 2026-09-17
 
 # 00-CONSTITUTION — Governance, Principles & Control Plane Authority
 
-> **Authority:** CP-001 (Strategic Control) | CP-032 (Operating Manual) | CP-050 (Master Control)  
+> **Authority:** [[00-CONSTITUTION/control-planes/CP-001|CP-001 (Strategic Control)]] | [[00-CONSTITUTION/control-planes/CP-032|CP-032 (Operating Manual)]] | [[00-CONSTITUTION/control-planes/CP-050|CP-050 (Master Control)]] | [[00-CONSTITUTION/CONTROL_PLANES_MASTER|All 34 Control Planes]]  
 > **Master Logic Framework:** [[_REGISTRIES/CANONICAL/LOGIC_LAYERS_REGISTRY.yaml]]  
 > **Status:** 🟢 ACTIVE — Phase 1 locked, Phase 2 in planning (Sep 17, 2026)
 
@@ -24,7 +24,7 @@ updated: 2026-09-17
 1. **Mission & Principles** — Why Company Brain exists, what we stand for
 2. **72 Logic Layers** — Organized across 12 domains, 500 control points
 3. **Governance Rules** — RESPECT (20 rules), ANTIGRAVITY (45 rules)
-4. **Control Plane Authority** — Decision-making hierarchy and approval gates
+4. **Control Plane Authority** — Decision-making hierarchy and approval gates ([[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]])
 5. **Operating Manual** — Worldwidebro Holdings business framework
 
 ---
@@ -38,6 +38,7 @@ updated: 2026-09-17
 - **RESPECT** — 20 governance rules and respect framework
 
 ### Logic Architecture & Control Planes
+- **Control Planes Master Registry**: [[00-CONSTITUTION/CONTROL_PLANES_MASTER|CONTROL_PLANES_MASTER.md]] — Canonical directory of all 34 Control Planes (CP-001 to CP-050) mapped across the 50 Domains, 35 Sectors, and 7 Planes
 - **Logic Architecture Framework**: [[_DOCS/LOGIC-ARCHITECTURE-FRAMEWORK.md]] — 72 logic layers, 12 domains, autonomous loop patterns
 - **Logic Layers Registry**: [[_REGISTRIES/CANONICAL/LOGIC_LAYERS_REGISTRY.yaml]] — Master queryable registry mapping all 72 logics to domains, control planes, agents, and capabilities
 

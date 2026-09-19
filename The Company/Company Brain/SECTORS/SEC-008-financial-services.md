@@ -25,7 +25,10 @@ last_verified: "2026-09-05"
 - **Fincept-Corporation/FinceptTerminal** (8K★) — Institutional-grade financial analysis & intelligence terminal
 - **Finnhub-Stock-API/finnhub-python** (2K★) — Institutional financial market data streaming
 
-## Canonical Registries
+## Canonical Registries & Control Planes
+- Governing Control Planes: [[00-CONSTITUTION/control-planes/CP-001|CP-001 Enterprise]], [[00-CONSTITUTION/control-planes/CP-002|CP-002 Venture]], [[00-CONSTITUTION/control-planes/CP-004|CP-004 Strategy]], [[00-CONSTITUTION/control-planes/CP-014|CP-014 Data]], [[00-CONSTITUTION/control-planes/CP-015|CP-015 Graph]], [[00-CONSTITUTION/control-planes/CP-018|CP-018 Security]], [[00-CONSTITUTION/control-planes/CP-019|CP-019 Compliance]], [[00-CONSTITUTION/control-planes/CP-020|CP-020 Financial]], [[00-CONSTITUTION/control-planes/CP-021|CP-021 Funding]], [[00-CONSTITUTION/control-planes/CP-023|CP-023 Sales]], [[00-CONSTITUTION/control-planes/CP-030|CP-030 Governance]], [[00-CONSTITUTION/control-planes/CP-033|CP-033 Privacy & Compliance]]
+- Control Planes Directory: [[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]]
+
 - Ventures in Sector: [[_REGISTRIES/ventures-by-sector.yaml|ventures-by-sector.yaml]] (FIN-001 through FIN-300)
 - Owned Repositories: [[_REGISTRIES/repositories-by-sector.yaml|repositories-by-sector.yaml]] (145 owned repos; `fin-001`, `fin-002`, `fin-003` code-verified)
 - External Capabilities: [[_REGISTRIES/external-capabilities-by-sector.yaml|external-capabilities-by-sector.yaml]] (16 supply chain tools)

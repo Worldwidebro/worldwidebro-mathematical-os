@@ -11,7 +11,7 @@ updated: 2026-09-06
 
 # 58-LOGISTICS — Supply Chain, Transport & Hardware Logistics Domain
 
-> **Authority:** Logistics & Supply Chain Control Plane ([[50-MASTER-CONTROL/50-MASTER-CONTROL|CP-017]])  
+> **Authority:** [[00-CONSTITUTION/control-planes/CP-026|CP-026: Operations]]  
 > **Master Gateway:** [[58-LOGISTICS/58-LOGISTICS|58-LOGISTICS.md]]  
 > **Sector Alignment:** [[SECTORS/SEC-017-logistics-transportation|SEC-017 (Logistics & Transportation)]]  
 > **Status:** 🟢 ACTIVE — Logistics Hub (2026-09-06)

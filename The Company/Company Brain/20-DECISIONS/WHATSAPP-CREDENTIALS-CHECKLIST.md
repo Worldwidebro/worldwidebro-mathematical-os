@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[INDEX]] | [[AGENTS]]
+
 ---
 title: WhatsApp Credentials Checklist — Print & Reference
 status: ACTIVE

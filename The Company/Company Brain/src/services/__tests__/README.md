@@ -1,3 +1,5 @@
+[[16-AGENTS/AGT-001|Orchestrator Prime AGT-001]] | [[_TESTS/README|_TESTS Hub]] | [[INDEX]]
+
 # Orchestrator Prime (AGT-001) Test Suite
 
 Comprehensive test suite for the task classification system in Orchestrator Prime.

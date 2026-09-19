@@ -1,5 +1,8 @@
 # 07-ONTOLOGY — Knowledge Architecture & Ontology Control Plane
 
+> **Authority:** [[00-CONSTITUTION/control-planes/CP-015|CP-015: Graph]]  
+> **Governing Framework:** [[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]] | [[50-MASTER-CONTROL/50-MASTER-CONTROL|50-MASTER-CONTROL]]
+
 > **Domain:** `07-ONTOLOGY`  
 > **Master Stack:** [[07-ONTOLOGY/45-ONTOLOGIES-MASTER|45 Core Ontologies Master Architecture]]  
 > **Canonical Registry:** [[_ONTOLOGY/45_ONTOLOGIES_REGISTRY.yaml]]  

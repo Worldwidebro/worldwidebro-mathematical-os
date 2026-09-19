@@ -1,6 +1,6 @@
 # 46-GOVERNANCE — System of Record & Change Control
 
-> **Authority:** Governance & System Architecture Control Plane ([[CP-027]])  
+> **Authority:** [[00-CONSTITUTION/control-planes/CP-001|CP-001: Enterprise]]  
 > **Master Operating Contract:** [[ANTIGRAVITY.md]] | [[REALITY.md]]  
 > **Target Domain:** [[46-GOVERNANCE/46-GOVERNANCE|46-GOVERNANCE]]  
 > **Status:** 🟢 ACTIVE — Operational Governance Hub (2026-09-06)

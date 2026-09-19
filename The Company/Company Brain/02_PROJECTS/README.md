@@ -17,3 +17,12 @@ updated: 2026-09-12
 
 ## Overview
 Operational tracking for cross-venture projects, technical initiatives, and milestones.
+
+---
+
+## Active Projects
+- [[02_PROJECTS/LT/LT-005/_index|LT-005 HealthRoute Medical Courier Dispatch Project Workspace]] — Funnel state machine, email engines, and dispatch automation.
+
+---
+[[INDEX]] | [[STARTHERE]] | [[23-VENTURES/README|Ventures]]
+

@@ -1,5 +1,8 @@
 # 41-OBSERVABILITY
 
+> **Authority:** [[00-CONSTITUTION/control-planes/CP-029|CP-029: Observability]]  
+> **Governing Framework:** [[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]] | [[50-MASTER-CONTROL/50-MASTER-CONTROL|50-MASTER-CONTROL]]
+
 Logs, traces, metrics, events, costs, latency, errors, uptime
 
 ## Overview

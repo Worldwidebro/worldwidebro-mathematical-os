@@ -1,5 +1,8 @@
 # 29-OPERATIONS
 
+> **Authority:** [[00-CONSTITUTION/control-planes/CP-026|CP-026: Operations]]  
+> **Governing Framework:** [[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]] | [[50-MASTER-CONTROL/50-MASTER-CONTROL|50-MASTER-CONTROL]]
+
 Processes, SOPs, workflows, scheduling, procurement, logistics
 
 ## Overview

@@ -25,7 +25,10 @@ last_verified: "2026-09-05"
 - **langgenius/dify** (154K★) — Production-grade LLM app and multi-agent orchestration platform
 - **cadence-workflow/cadence** (9K★) — Distributed durable orchestration engine for stateful workflows
 
-## Canonical Registries
+## Canonical Registries & Control Planes
+- Governing Control Planes: [[00-CONSTITUTION/control-planes/CP-028|CP-028 Application]], [[00-CONSTITUTION/control-planes/CP-032|CP-032 AI Governance]]
+- Control Planes Directory: [[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]]
+
 - Ventures in Sector: [[_REGISTRIES/ventures-by-sector.yaml|ventures-by-sector.yaml]]
 - Owned Repositories: [[_REGISTRIES/repositories-by-sector.yaml|repositories-by-sector.yaml]]
 - External Capabilities: [[_REGISTRIES/external-capabilities-by-sector.yaml|external-capabilities-by-sector.yaml]]

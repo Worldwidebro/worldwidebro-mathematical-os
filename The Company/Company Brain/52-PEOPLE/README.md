@@ -1,5 +1,8 @@
 # BASE — People
 
+> **Authority:** [[00-CONSTITUTION/control-planes/CP-025|CP-025: People]]  
+> **Governing Framework:** [[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]] | [[50-MASTER-CONTROL/50-MASTER-CONTROL|50-MASTER-CONTROL]]
+
 **Authoritative registry of individuals** in the Company Brain ecosystem.
 
 **Connects to:** [[16-AGENTS]] (who manages/approves each agent)

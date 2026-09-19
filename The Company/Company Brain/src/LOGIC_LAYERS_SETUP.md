@@ -1,3 +1,5 @@
+[[src/LOGIC_LAYERS_README|Logic Layers Overview]] | [[14-CAPABILITIES/README|14-CAPABILITIES]] | [[INDEX]]
+
 # Logic Layers Registry — Setup & Integration Guide
 
 ## Quick Start

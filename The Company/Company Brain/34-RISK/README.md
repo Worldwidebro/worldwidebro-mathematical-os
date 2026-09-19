@@ -1,5 +1,8 @@
 # 34-RISK
 
+> **Authority:** [[00-CONSTITUTION/control-planes/CP-005|CP-005: Decision]]  
+> **Governing Framework:** [[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]] | [[50-MASTER-CONTROL/50-MASTER-CONTROL|50-MASTER-CONTROL]]
+
 Enterprise, financial, operational, technology, legal, market risk
 
 ## Overview

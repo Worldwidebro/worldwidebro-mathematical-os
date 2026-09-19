@@ -7,7 +7,7 @@ status: ACTIVE
 updated: 2026-09-06
 ---
 
-[[STARTHERE]] | [[INDEX]] | [[56-ENGINEERING/README|56-ENGINEERING]] | [[17-MODELS/17-MODELS|17-MODELS]] | [[CLAUDE]]
+[[STARTHERE]] | [[INDEX]] | [[56-ENGINEERING/README|56-ENGINEERING]] | [[17-MODELS/17-MODELS|17-MODELS]] | [[CLAUDE]] | [[00-CONSTITUTION/control-planes/CP-027|CP-027]]
 
 # 62-TECHNOLOGY — Frontier Technology, Systems & Hardware Architecture Domain
 

@@ -26,6 +26,7 @@ updated: 2026-09-06
 
 | Document | Purpose & Scope | Key Artifacts / Subsystems |
 |:---|:---|:---|
+| **[[00-CONSTITUTION/CONTROL_PLANES_MASTER|CONTROL_PLANES_MASTER.md]]** | Master directory of all 34 Control Planes across 50 Domains, 35 Sectors, and 7 Planes | CP-001 to CP-050, `_REGISTRIES/control-planes-by-sector.yaml` |
 | **[[50-MASTER-CONTROL/README|Domain README]]** | Upstream/downstream domain inputs, outputs, and control points | CP-050, [[_REGISTRIES/control-points.md|Control Points]] |
 | **[[50-MASTER-CONTROL/SEVEN_PLANES|SEVEN_PLANES.md]]** | The 7 vertical operational planes spanning from Constitution to Evolution | 50 Domains × 7 Planes matrix |
 | **[[50-MASTER-CONTROL/HUNDRED_LAYERS|HUNDRED_LAYERS.md]]** | 100-layer hierarchical control structure across all plane intersections | Layer hierarchy & verification |

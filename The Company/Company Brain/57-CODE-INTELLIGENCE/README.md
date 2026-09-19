@@ -11,7 +11,7 @@ updated: 2026-09-06
 
 # 57-CODE-INTELLIGENCE — Semantic Code Graph & AST Intelligence Domain
 
-> **Authority:** Code Intelligence & Quality Control Plane ([[50-MASTER-CONTROL/50-MASTER-CONTROL|CP-027]])  
+> **Authority:** [[00-CONSTITUTION/control-planes/CP-028|CP-028: Application]]  
 > **Primary Integration:** [[57-CODE-INTELLIGENCE/GRAFT_INTEGRATION|GRAFT_INTEGRATION.md]]  
 > **Master Gateway:** [[57-CODE-INTELLIGENCE/57-CODE-INTELLIGENCE|57-CODE-INTELLIGENCE.md]]  
 > **Status:** 🟢 ACTIVE — Semantic AST Hub (2026-09-06)

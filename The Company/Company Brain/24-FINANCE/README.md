@@ -1,5 +1,8 @@
 # 24-FINANCE
 
+> **Authority:** [[00-CONSTITUTION/control-planes/CP-020|CP-020: Financial]]  
+> **Governing Framework:** [[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]] | [[50-MASTER-CONTROL/50-MASTER-CONTROL|50-MASTER-CONTROL]]
+
 Accounting, revenue, expenses, budgets, forecasting, investments
 
 ## Overview

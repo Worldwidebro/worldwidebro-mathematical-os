@@ -1,5 +1,8 @@
 # 32-SECURITY
 
+> **Authority:** [[00-CONSTITUTION/control-planes/CP-017|CP-017: Access]]  
+> **Governing Framework:** [[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]] | [[50-MASTER-CONTROL/50-MASTER-CONTROL|50-MASTER-CONTROL]]
+
 Identity, access, secrets, vulnerabilities, threats, incidents
 
 ## Overview
