@@ -1,0 +1,129 @@
+{
+  "collection_name": "solutions",
+  "description": "Vector embeddings for semantic solution discovery",
+  "created": "2026-09-19",
+  "config": {
+    "vector_size": 384,
+    "distance": "cosine",
+    "storage": "mmap",
+    "hnsw": {
+      "m": 16,
+      "ef_construct": 200,
+      "ef_search": 200
+    }
+  },
+  "vectors": [
+    {
+      "id": "SOL-001",
+      "vector_metadata": {
+        "solution_id": "SOL-001",
+        "solution_name": "Cold Call Automation",
+        "solution_description": "Script and phone dialing automation for cold calling prospects",
+        "problem_solved": "Cold Call Dialing",
+        "domain": "sales",
+        "repo": "LT-005",
+        "code_path": "repos/lt-005-healthroute-courier/src/api/cold-calls.ts",
+        "language": "TypeScript",
+        "confidence": 0.95,
+        "usage_count": 1,
+        "tags": ["sales", "outreach", "automation", "medical"]
+      },
+      "embedding_text": "Automate cold calling to prospects with script dialing. Handles medical facility outreach for LT-005 venture. Uses TypeScript. Provides call tracking, follow-up scheduling, and outcome logging."
+    },
+    {
+      "id": "SOL-002",
+      "vector_metadata": {
+        "solution_id": "SOL-002",
+        "solution_name": "Venture Readiness Scoring",
+        "solution_description": "Calculate venture readiness percentage based on 12 factors",
+        "problem_solved": "Venture Readiness Assessment",
+        "domain": "metrics",
+        "repo": "CON-001",
+        "code_path": "repos/con-001-ace-construction/src/app/api/webhooks/jotform/route.ts",
+        "language": "TypeScript",
+        "confidence": 0.90,
+        "usage_count": 1,
+        "tags": ["scoring", "metrics", "readiness", "evaluation"]
+      },
+      "embedding_text": "Score venture readiness on scale 0-100. Evaluates financial health, team capability, market timing, operational readiness, and 8 other factors. Sends readiness report via email to founder. Used by multiple ventures."
+    },
+    {
+      "id": "SOL-003",
+      "vector_metadata": {
+        "solution_id": "SOL-003",
+        "solution_name": "Supabase to Neo4j Sync",
+        "solution_description": "Pipeline to synchronize venture data from Supabase to Neo4j graph",
+        "problem_solved": "Keep Neo4j in Sync with Supabase",
+        "domain": "infrastructure",
+        "repo": "VEX",
+        "code_path": "vex-wired/vex-neo4j-connector.ts",
+        "language": "TypeScript",
+        "confidence": 0.92,
+        "usage_count": 1,
+        "tags": ["sync", "data-pipeline", "neo4j", "supabase", "infrastructure"]
+      },
+      "embedding_text": "Sync venture data from Supabase database to Neo4j knowledge graph. Creates nodes and relationships for ventures, sectors, capabilities, and control points. Runs on schedule or on-demand. Maintains bidirectional state."
+    }
+  ],
+  "search_examples": [
+    {
+      "query": "How do I call prospects automatically?",
+      "expected_match": "SOL-001",
+      "confidence_threshold": 0.75
+    },
+    {
+      "query": "How do I know if a venture is ready?",
+      "expected_match": "SOL-002",
+      "confidence_threshold": 0.75
+    },
+    {
+      "query": "How do I sync data to the graph database?",
+      "expected_match": "SOL-003",
+      "confidence_threshold": 0.75
+    }
+  ],
+  "upsert_template": {
+    "method": "POST /collections/solutions/points/upsert",
+    "payload": {
+      "points": [
+        {
+          "id": "SOL-004",
+          "vector": "[0.123, 0.456, ..., 0.789]",
+          "payload": {
+            "solution_id": "SOL-004",
+            "solution_name": "New Solution Name",
+            "solution_description": "Description of what it does",
+            "problem_solved": "Problem name",
+            "domain": "domain",
+            "repo": "REPO-ID",
+            "code_path": "path/to/code.ts",
+            "language": "TypeScript",
+            "confidence": 0.95,
+            "usage_count": 0,
+            "tags": ["tag1", "tag2"]
+          }
+        }
+      ]
+    }
+  },
+  "search_template": {
+    "method": "POST /collections/solutions/points/search",
+    "payload": {
+      "vector": "[0.123, 0.456, ..., 0.789]",
+      "limit": 5,
+      "score_threshold": 0.75
+    },
+    "response_example": {
+      "result": [
+        {
+          "id": "SOL-001",
+          "score": 0.92,
+          "payload": {
+            "solution_name": "Cold Call Automation",
+            "code_path": "repos/lt-005-healthroute-courier/src/api/cold-calls.ts"
+          }
+        }
+      ]
+    }
+  }
+}
