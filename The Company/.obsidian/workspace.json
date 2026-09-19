@@ -183,6 +183,7 @@
   },
   "active": "b2031065ed1409e0",
   "lastOpenFiles": [
+    "Company Brain/_REFERENCE/ARCHITECTURE-INTERCONNECTIONS.md",
     "Company Brain/_REFERENCE/WORLDWIDEBRO-HOLDINGS-MASTER-ARCHITECTURE.md",
     "Company Brain/_REFERENCE/DATA-ENGINEERING-PLATFORM-DESIGN.md",
     "Company Brain/_TESTS/omniroute-lead-qualifier-e2e.test.ts",
@@ -218,7 +219,6 @@
     "Company Brain/_REFERENCE/RUNBOOKS/ORCHESTRATOR-TASK-STALLED.md",
     "Company Brain/_REFERENCE/RUNBOOKS/README.md",
     "Company Brain/_REFERENCE/ORCHESTRATOR-MASTER-SPECIFICATION.md",
-    "Company Brain/_TESTS/DISPATCH_ROUTER_TEST_RESULTS.md",
     "Company Brain/repos/career-ops/web/src/app/icon.svg",
     "Company Brain/repos/career-ops/web/public/bimi-logo.svg",
     "Company Brain/repos/career-ops/tests/cv-visual/__screenshots__/standard-zh-long-photo.png",
