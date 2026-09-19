@@ -480,6 +480,33 @@ Master reference for all wiki link alternatives in Company Brain.
 
 ---
 
+## DASHBOARD & UI (TIER 5)
+
+### _REFERENCE/COMMAND-CENTER.md
+**Primary:** [[_REFERENCE/COMMAND-CENTER|COMMAND-CENTER]]
+**Aliases:**
+- [[Command-Center]]
+- [[Orchestrator-Monitoring]]
+- [[Real-Time-View]]
+- [[Task-Visibility]]
+- [[How-To-Monitor]]
+
+**Usage:** How to view the Master Orchestrator's 13-stage loop in real-time. Three dashboards: Task Execution (the loop), Agent Capacity (workforce), Brain Search (knowledge access). Monitoring by role (engineers, executives, PMs).
+
+---
+
+### Orchestrator Dashboard (Live)
+**Primary:** [Orchestrator Dashboard](https://claude.ai/artifact/PdLbgvxpy67CVQFQHBjfVT)
+**Aliases:**
+- [[Orchestrator-Dashboard]]
+- [[Real-Time-Dashboard]]
+- [[Dashboard-Live]]
+- [[Task-Queue-View]]
+
+**Usage:** Real-time visual interface for monitoring the Orchestrator. Shows task flow, agent capacity, revenue trends, brain health, system status. Interactive search and alerts.
+
+---
+
 ### _MEMORY/MEMORY-OS.md
 **Primary:** [[_MEMORY/MEMORY-OS|MEMORY-OS]]
 **Usage:** Memory operating system (10-stage cognitive cycle).
@@ -823,4 +850,4 @@ If you know the topic but not the file:
 
 ---
 
-**Status:** ✅ ACTIVE | **Authority:** CP-027 | **Last Updated:** 2026-09-18 (Tier 4: Runbooks & Safety)
+**Status:** ✅ ACTIVE | **Authority:** CP-027 | **Last Updated:** 2026-09-18 (Tier 5: Dashboard & UI Complete)
