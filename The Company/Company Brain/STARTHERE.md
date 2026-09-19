@@ -261,19 +261,53 @@ Company Brain classifies all operations, ventures, and capabilities across **35 
 
 ---
 
-## 9. SYSTEMS & RUNTIME NODES
+## 9. SYSTEMS & RUNTIME NODES (THE SOVEREIGN ARCHITECTURE)
+
+**The Sovereign Hybrid Pattern (What We Have Implemented)**
+Instead of the stock n8n-io/self-hosted-ai-starter-kit (which packages a slow CPU-only Ollama inside Docker), we have wired the Sovereign Hybrid Pattern:
+
+```text
+ ┌─────────────────────────────────────────────────────────────┐
+ │                      MAC STUDIO M4 MAX                      │
+ │                                                             │
+ │   [ DOCKER ENGINE ]                                         │
+ │   ┌─────────────────┐       ┌────────────────────────────┐  │
+ │   │   n8n Service   │──────>│ Databases in Docker:       │  │
+ │   │  (:5678 on 2TB  │       │ • Qdrant Vector (:6333)    │  │
+ │   │  /Volumes/LaCie)│       │ • Neo4j Graph (:7474/:7687)│  │
+ │   └────────┬────────┘       │ • Postgres (:5433)         │  │
+ │            │                └────────────────────────────┘  │
+ │            │ (via host.docker.internal)                     │
+ │            ▼                                                │
+ │   [ NATIVE MACOS (Metal GPU Accelerated) ]                  │
+ │   ┌──────────────────────────────────────────────────────┐  │
+ │   │ • Ollama (:11434) — qwen2.5-coder:14b (40 GPU Cores) │  │
+ │   │ • Exo MLX (:52415) — Native Distributed Cluster     │  │
+ │   │ • OmniRoute Gateway (:20128)                         │  │
+ │   └──────────────────────────────────────────────────────┘  │
+ └─────────────────────────────────────────────────────────────┘
+                               ▲
+                               │ Tailscale Mesh (100.87.214.70)
+ ┌─────────────────────────────┴───────────────────────────────┐
+ │                      MACBOOK AIR M-SERIES                   │
+ │ • Antigravity / Claude Code Agents                          │
+ │ • cli-anything-n8n harness                                  │
+ │ • Local workspace code & registries                         │
+ └─────────────────────────────────────────────────────────────┘
+```
 
 - **Master Brain Host:** Mac Studio M4 Max (`100.87.214.70`) at `/Volumes/LaCie`.
 - **Mobile Engineering Node:** MacBook Air (`100.121.17.63`) at `/Volumes/T7 Shield`.
 - **Network Mesh:** Tailscale Encrypted Mesh (`Worldwidebro@`, IPs `100.121.17.63`, `100.87.214.70`, `100.80.229.113`).
 - **Knowledge Graph:** Neo4j Community/Enterprise 5.x (`civos_neo4j`, `bolt://100.87.214.70:7687`).
 - **Vector Search:** Qdrant Vector Engine (`civos_qdrant`, `http://100.87.214.70:6333`).
-- **Relational Database:** PostgreSQL 16 (`postgres`, port `5432`).
+- **Relational Database:** PostgreSQL 16 (`postgres`, port `5433`).
 - **Heavy Model Engine:** Native Apple Silicon MLX via `exo` (`http://100.87.214.70:52415/v1`).
-- **Local Model Engine:** Ollama Local (`http://localhost:11434`, `qwen2.5-coder:14b`, `llama3.1:8b`, `hermes3:latest`).
+- **Local Model Engine:** Ollama Local (`http://localhost:11434`, `qwen2.5-coder:14b` utilizing 40 GPU cores).
 - **Model Gateway:** LiteLLM Router (`civos_litellm`, port `4000`).
 - **Traffic Controller:** OmniRoute v3.8.50 running locally as daemon on `:20128` (`http://localhost:20128`) and Mac Studio (`http://100.87.214.70:20128`).
 - **MCP Adapter:** OmniRoute FastMCP Adapter (`/Users/acebless/.omniroute/bin/antigravity-mcp.mjs`) exposing 110 tools to Antigravity IDE.
+- **Workflow Engine:** n8n Container running natively on Mac Studio (`docker.n8n.io/n8nio/n8n:latest`), persisting to `/Volumes/LaCie/n8n_data`, accessible over Tailscale at `http://100.87.214.70:5678`.
 - **Secrets Management:** Bitwarden CLI (`/opt/homebrew/bin/bw`, `SEC-BITWARDEN-001`).
 - **Telemetry & Observability:** OpenObserve (`http://100.87.214.70:5080`).
 - **Edge PaaS:** Vercel Global Edge Network (95 active venture sites).
