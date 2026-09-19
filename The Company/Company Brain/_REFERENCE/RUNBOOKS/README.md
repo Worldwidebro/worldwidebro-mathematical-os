@@ -4,109 +4,151 @@
 
 **Who Should Use:** On-call operators, incident responders, system engineers.
 
-**Structure:** Each runbook follows the format:
-1. **Symptoms** — What the user reports or observes
-2. **Root Cause Analysis** — How to diagnose the problem
-3. **Immediate Action** — What to do right now (before fixing)
-4. **Resolution** — Steps to fix the problem
-5. **Recovery** — How to verify the system is healthy
-6. **Prevention** — How to prevent recurrence
+**Tier 4 Status:** ✅ Complete — 6 runbooks wired + escalation policy
 
 ---
 
-## Runbooks
+## Quick Start
 
-### [Orchestrator Task Stalled](ORCHESTRATOR-TASK-STALLED.md)
-**Symptoms:** Task submitted, but never completes. Status stays "running" for >5 minutes.
+**Got an incident?** Follow these 3 steps:
+
+1. **Identify** → Which symptom matches? See runbook list below
+2. **Diagnose** → Run "Root Cause Analysis" steps in the runbook
+3. **Act** → Follow "Immediate Action" options (pick one)
+
+**Need to escalate?** → See [[ESCALATION-POLICY|ESCALATION-POLICY.md]] (severity matrix + contact info)
+
+---
+
+## All Runbooks (6 Total)
+
+### Revenue & Execution
+
+#### [Orchestrator Task Stalled](ORCHESTRATOR-TASK-STALLED.md)
+**Symptoms:** Task submitted but never completes. Status stays "running" for >5 minutes.
 
 **Root Causes:** OmniRoute timeout, network failure, agent crash, webhook never sent.
 
-**MTTR (Mean Time to Resolution):** 5-15 minutes
+**MTTR (Mean Time to Resolution):** 5-15 minutes | **Severity:** Medium
 
 ---
 
-### [Agent Consistently Fails](AGENT-CONSISTENTLY-FAILS.md)
-**Symptoms:** Agent execution failing >50% of the time. ROI score dropping. Error rates spiking.
-
-**Root Causes:** Model misconfiguration, capability mismatch, insufficient context, timeout too short.
-
-**MTTR:** 10-30 minutes
-
----
-
-### [Webhook Handler Down](WEBHOOK-HANDLER-DOWN.md)
+#### [Webhook Handler Down](WEBHOOK-HANDLER-DOWN.md)
 **Symptoms:** Revenue not being attributed. Revenue logs growing empty. OmniRoute job completes but task_executions never updates.
 
 **Root Causes:** API crashed, database connection failed, queue backlog, unhandled exception.
 
-**MTTR:** 5-10 minutes
+**MTTR:** 5-10 minutes | **Severity:** Critical
 
 ---
 
-### [Revenue Attribution Gap](REVENUE-ATTRIBUTION-GAP.md)
-**Symptoms:** $X in executed tasks, but only $Y attributed (X >> Y). Orphaned revenue_log records. Agent stats not updating.
-
-**Root Causes:** Webhook malformed JSON, missing fields, timestamp mismatch, trigger not firing.
-
-**MTTR:** 10-20 minutes
-
----
-
-### [Neo4j Agent Discovery Broken](NEOJ-AGENT-DISCOVERY-BROKEN.md)
-**Symptoms:** Agent matching returns empty results. Top 3 agents list blank. Only fallback to YAML working.
-
-**Root Causes:** Neo4j connection failed, indexes down, query timeout, capability nodes missing.
-
-**MTTR:** 10-30 minutes
-
----
-
-### [OmniRoute Rate Limited](OMNIROUTE-RATE-LIMITED.md)
-**Symptoms:** Tasks reject with 429 (Too Many Requests). Execution queue backs up. Users report slowness.
-
-**Root Causes:** Concurrent task surge, no backoff logic, rate limit not enforced by client.
-
-**MTTR:** 2-5 minutes
-
----
-
-### [Database Connection Pool Exhausted](DATABASE-POOL-EXHAUSTED.md)
+#### [Database Connection Pool Exhausted](DATABASE-POOL-EXHAUSTED.md)
 **Symptoms:** "too many connections" errors. All API calls timeout. Health check fails.
 
 **Root Causes:** Leak in connection management, task stalled holding open connection, migration running long.
 
-**MTTR:** 5-10 minutes
+**MTTR:** 5-10 minutes | **Severity:** Critical
 
 ---
 
-### [Claude Haiku API Key Invalid](CLAUDE-HAIKU-AUTH-FAILED.md)
+### Knowledge Graph & Discovery
+
+#### [Neo4j Agent Discovery Broken](NEO4J-DISCOVERY-BROKEN.md)
+**Symptoms:** Agent matching returns empty results. Top 3 agents list blank. Only fallback to YAML working.
+
+**Root Causes:** Neo4j connection failed, indexes down, query timeout, capability nodes missing.
+
+**MTTR:** 10-30 minutes | **Severity:** High
+
+---
+
+### Authentication & Keys
+
+#### [Auth/API Key Invalid](AUTH-FAILED.md)
 **Symptoms:** Task classification always falls back to keyword matching. Log shows "401 Unauthorized".
 
 **Root Causes:** Key expired, wrong key loaded, environment variable not set, credentials rotated.
 
-**MTTR:** 2-5 minutes
+**MTTR:** 2-5 minutes | **Severity:** Medium
+
+---
+
+### Escalation & Coordination
+
+#### [Escalation Policy](ESCALATION-POLICY.md)
+**Purpose:** How to escalate incidents from L1 (Support) → L2 (Specialists) → L3 (Executive).
+
+**Contains:**
+- Severity matrix (Critical/High/Medium/Low)
+- Category routing (Execution, Discovery, Auth, Revenue)
+- Contact information for each team
+- Incident response workflow
+- Alerting thresholds
+
+**Use This:** When escalating an incident, or setting up monitoring
 
 ---
 
 ## Using These Runbooks
 
 ### Step 1: Identify the Symptom
-Read the symptom section of relevant runbooks. Which one matches?
+Read the **Symptoms** section of each runbook. Which one matches what you're seeing?
+
+**Example:** If users report "agent discovery returns no results", check [[NEO4J-DISCOVERY-BROKEN]].
 
 ### Step 2: Verify Root Cause
-Follow the "Root Cause Analysis" section to confirm the diagnosis.
+Follow the **Root Cause Analysis** section step-by-step to diagnose the problem.
+
+**Example:** Run the Neo4j health check, verify agent count, check indexes.
 
 ### Step 3: Take Immediate Action
-Stabilize the system (stop bleeding, preserve data, communicate).
+Follow **Immediate Action** options. Pick the one that matches your situation (Low/Medium/High risk).
 
-### Step 4: Resolve
-Follow the "Resolution" steps in order.
+**Example:** Option 1 (restart) vs. Option 2 (use fallback) vs. Option 3 (advanced recovery).
 
-### Step 5: Verify Recovery
-Run the checks in the "Recovery" section to confirm the system is healthy.
+### Step 4: Resolve & Recover
+Execute the **Resolution** steps, then verify in **Recovery** section.
 
-### Step 6: Document & Prevent
-Log the incident. Read the "Prevention" section and open a ticket if needed.
+### Step 5: Prevent Recurrence
+Implement **Prevention** measures to avoid this incident in the future.
+
+---
+
+## By Severity Level
+
+### 🚨 Critical (Page Immediately)
+All API calls failing, revenue tracking broken, database exhausted
+- [[WEBHOOK-HANDLER-DOWN]] (revenue not attributed)
+- [[DATABASE-POOL-EXHAUSTED]] (all connections used)
+- **Escalation:** [[ESCALATION-POLICY]] → Page L2 within 5 min
+
+### ⚠️ High (Page Within 5 min)
+30-70% of tasks failing, database/Neo4j degraded, fallback in use
+- [[NEO4J-DISCOVERY-BROKEN]] (agent discovery empty)
+- [[ORCHESTRATOR-TASK-STALLED]] (affecting multiple tasks)
+- **Escalation:** [[ESCALATION-POLICY]] → Page L2, escalate to L3 if unresolved after 10 min
+
+### ℹ️ Medium (Ticket + 30-min Check-in)
+Single pathway degraded, elevated latency, fallback recovery working
+- [[ORCHESTRATOR-TASK-STALLED]] (single task)
+- [[AUTH-FAILED]] (classification using fallback)
+- **Escalation:** [[ESCALATION-POLICY]] → Create ticket, check-in after 30 min
+
+### 📋 Low (Backlog)
+Minor performance drift, documentation out of date
+- **Escalation:** Add to standard backlog, review in next sprint
+
+---
+
+## By Team Ownership
+
+| Team | Runbooks |
+|------|----------|
+| **Orchestrator Team** | ORCHESTRATOR-TASK-STALLED, WEBHOOK-HANDLER-DOWN |
+| **Infrastructure Team** | DATABASE-POOL-EXHAUSTED |
+| **Knowledge Graph Team** | NEO4J-DISCOVERY-BROKEN |
+| **Security Team** | AUTH-FAILED |
+| **All Teams** | ESCALATION-POLICY |
 
 ---
 
@@ -156,31 +198,58 @@ WHERE te.status = 'success'
 
 ## On-Call Checklist
 
-- [ ] Verify system health (API, DB, OmniRoute, Neo4j)
-- [ ] Check Orchestrator dashboard for stuck tasks
-- [ ] Review error logs (last 1 hour)
-- [ ] Check Slack for incident reports
-- [ ] Escalate if MTTR > 30 minutes
-- [ ] Update incident status in ClickUp
-- [ ] Notify affected users
-- [ ] Document root cause post-incident
-- [ ] Open ticket for prevention
+**When incident is reported:**
+- [ ] Acknowledge and start timer (MTTR clock starts)
+- [ ] Identify symptom → which runbook matches?
+- [ ] Run Root Cause Analysis steps (5-10 min)
+- [ ] Execute Option 1 recovery (low risk)
+- [ ] Update Slack #incidents channel with status
+- [ ] Did Option 1 work?
+  - [ ] YES → Monitor + document + create post-mortem ticket
+  - [ ] NO → Move to Option 2-3 or escalate
+
+**Escalation checklist:**
+- [ ] MTTR exceeded for severity level? (see [[ESCALATION-POLICY]])
+- [ ] Check escalation contacts (Slack handles or PagerDuty)
+- [ ] Include: root cause summary + attempts made + impact + resource needs
+- [ ] Update incident status every 10 minutes
+
+**Post-incident (24-48h):**
+- [ ] Schedule post-mortem meeting
+- [ ] Document root cause, timeline, gaps
+- [ ] Create action items for [[ESCALATION-POLICY]] prevention section
+- [ ] Update runbook based on learnings
+- [ ] Close incident ticket
 
 ---
 
-## Escalation Policy
+## Escalation Contacts
 
-| MTTR | Action |
-|------|--------|
-| < 5 min | Resolve immediately |
-| 5-15 min | Follow runbook, notify Slack |
-| 15-30 min | Escalate to engineering lead |
-| > 30 min | Declare incident, activate war room |
+**L1 (Support On-Call)** — Automatic page from monitoring
+- Alert channel: `#critical-incidents`
+- Response SLA: 15 minutes
+
+**L2 (Domain Specialists)** — Page if L1 can't resolve after 5 min
+- Orchestrator Lead: `@orchestrator-lead` + PagerDuty
+- Infrastructure Lead: `@infra-lead` + PagerDuty
+- Knowledge Graph Lead: `@neo4j-lead` + PagerDuty
+- Security Lead: `@security-lead` + PagerDuty
+
+**L3 (Executive)** — Page if unresolved after 10 min (critical) or 20 min (high)
+- On-call: CEO / CTO (rotating weekly)
+- Channel: `#critical-incidents-exec`
+- Direct escalation: Page directly via PagerDuty
+
+See [[ESCALATION-POLICY|ESCALATION-POLICY.md]] for full contact list and escalation matrix.
 
 ---
 
 ## Related Documentation
 
-- [[ORCHESTRATOR-MASTER-SPECIFICATION|ORCHESTRATOR Master Specification]] — Architecture & APIs
+- [[STARTHERE]] — Master orientation (Phase 0/1 status)
+- [[ORCHESTRATOR-MASTER-SPECIFICATION]] — Architecture & APIs
+- [[ORCHESTRATOR-API-REFERENCE]] — All endpoints with examples
+- [[ORCHESTRATOR-STATE-MACHINE]] — 13-stage loop with decision trees
 - [[REALITY|REALITY.md]] — System health status
 - [[CLAUDE|CLAUDE.md]] — Infrastructure state
+- [[ESCALATION-POLICY]] — Severity matrix & incident workflow

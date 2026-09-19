@@ -393,6 +393,93 @@ Master reference for all wiki link alternatives in Company Brain.
 
 ---
 
+## RUNBOOKS & INCIDENT RESPONSE (TIER 4)
+
+### _REFERENCE/RUNBOOKS/README.md
+**Primary:** [[_REFERENCE/RUNBOOKS/README|RUNBOOKS-INDEX]]
+**Aliases:**
+- [[RUNBOOKS]]
+- [[Incident Response]]
+- [[Operational Procedures]]
+- [[Troubleshooting Guide]]
+
+**Usage:** Hub for all operational runbooks. 6 runbooks covering execution, discovery, auth, and revenue tracking. Quick-start workflow, severity matrix, team ownership.
+
+---
+
+### _REFERENCE/RUNBOOKS/ORCHESTRATOR-TASK-STALLED.md
+**Primary:** [[_REFERENCE/RUNBOOKS/ORCHESTRATOR-TASK-STALLED|TASK-STALLED]]
+**Aliases:**
+- [[Task-Stalled]]
+- [[Stalled-Task]]
+- [[Running-Forever]]
+- [[No-Webhook]]
+
+**Usage:** Task submitted but never completes. Status "running" > 5 min. MTTR 5-15 min. Severity Medium.
+
+---
+
+### _REFERENCE/RUNBOOKS/WEBHOOK-HANDLER-DOWN.md
+**Primary:** [[_REFERENCE/RUNBOOKS/WEBHOOK-HANDLER-DOWN|WEBHOOK-DOWN]]
+**Aliases:**
+- [[Webhook-Down]]
+- [[Revenue-Not-Attributed]]
+- [[Revenue-Tracking-Broken]]
+- [[Handler-Crashed]]
+
+**Usage:** Revenue not attributed. Revenue logs empty. MTTR 5-10 min. Severity Critical.
+
+---
+
+### _REFERENCE/RUNBOOKS/DATABASE-POOL-EXHAUSTED.md
+**Primary:** [[_REFERENCE/RUNBOOKS/DATABASE-POOL-EXHAUSTED|POOL-EXHAUSTED]]
+**Aliases:**
+- [[Connection-Pool-Exhausted]]
+- [[Database-Exhausted]]
+- [[Too-Many-Connections]]
+- [[Connection-Limit]]
+
+**Usage:** All connections used. API timeouts. Health checks fail. MTTR 5-10 min. Severity Critical.
+
+---
+
+### _REFERENCE/RUNBOOKS/NEO4J-DISCOVERY-BROKEN.md
+**Primary:** [[_REFERENCE/RUNBOOKS/NEO4J-DISCOVERY-BROKEN|DISCOVERY-BROKEN]]
+**Aliases:**
+- [[Discovery-Broken]]
+- [[Neo4j-Broken]]
+- [[Agent-Discovery-Failing]]
+- [[No-Agents-Found]]
+
+**Usage:** Agent discovery returns empty. Only YAML fallback. MTTR 10-30 min. Severity High.
+
+---
+
+### _REFERENCE/RUNBOOKS/AUTH-FAILED.md
+**Primary:** [[_REFERENCE/RUNBOOKS/AUTH-FAILED|AUTH-FAILED]]
+**Aliases:**
+- [[API-Key-Invalid]]
+- [[Auth-Broken]]
+- [[401-Unauthorized]]
+- [[Classification-Fallback]]
+
+**Usage:** Classification falls back to keyword matching. API key invalid/expired. MTTR 2-5 min. Severity Medium.
+
+---
+
+### _REFERENCE/RUNBOOKS/ESCALATION-POLICY.md
+**Primary:** [[_REFERENCE/RUNBOOKS/ESCALATION-POLICY|ESCALATION-POLICY]]
+**Aliases:**
+- [[Escalation-Rules]]
+- [[Incident-Escalation]]
+- [[Severity-Matrix]]
+- [[On-Call-Policy]]
+- [[L1-L2-L3]]
+
+**Usage:** Severity matrix (Critical/High/Medium/Low). Category routing. Contact information. Incident response workflow. Alerting thresholds.
+
+---
+
 ### _MEMORY/MEMORY-OS.md
 **Primary:** [[_MEMORY/MEMORY-OS|MEMORY-OS]]
 **Usage:** Memory operating system (10-stage cognitive cycle).
@@ -736,4 +823,4 @@ If you know the topic but not the file:
 
 ---
 
-**Status:** ✅ ACTIVE | **Authority:** CP-027 | **Last Updated:** 2026-09-08 (added _SYSTEMS directory)
+**Status:** ✅ ACTIVE | **Authority:** CP-027 | **Last Updated:** 2026-09-18 (Tier 4: Runbooks & Safety)
