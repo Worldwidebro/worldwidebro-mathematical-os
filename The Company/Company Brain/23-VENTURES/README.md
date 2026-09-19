@@ -29,6 +29,7 @@ The following Tier-1 ventures have production-verified deployments and active mo
 
 | Venture ID | Brand Name | Sector | Commercial Status | Deployment & Links |
 | :--- | :--- | :--- | :--- | :--- |
+| [[VEX\|VEX-001]] | **Worldwidebro VEX** | Flagship Brand & CommandCenter | 🟢 **DEPLOYMENT_READY** | [[23-VENTURES/Worldwidebro-Vex/README\|Local Codebase]] / [[VEX-DEPLOYMENT-READY\|Deployment Guide]] |
 | [[23-VENTURES/RE-001\|RE-001]] | **WorldwideBro Holdings** | [[SECTORS/SEC-020-real-estate-property\|SEC-020 Real Estate]] | 🟢 **INCOME_READY** ($250 Underwriting / $499 Deal Room) | [re-001-worldwidebro-holdings.vercel.app](https://re-001-worldwidebro-holdings.vercel.app) |
 | [[23-VENTURES/LT-005\|LT-005]] | **HealthRoute Courier** | [[SECTORS/SEC-017-logistics-transportation\|SEC-017 Logistics]] | 🟢 **INCOME_READY** ($45 Standard / $85 STAT / $1.2k Retainer) | [healthroute-courier.vercel.app](https://healthroute-courier.vercel.app) |
 | [[23-VENTURES/CON-001\|CON-001]] | **ACE Construction** | [[SECTORS/SEC-002-construction-infrastructure\|SEC-002 Construction]] | 🟢 **INCOME_READY** ($299 Consultation / $1,500 Deposit) | [ace-construction.vercel.app](https://ace-construction.vercel.app) |

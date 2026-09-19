@@ -1,3 +1,5 @@
+[[.planning/README|Planning Overview]] | [[INDEX]] | [[AGENTS]] | [[CLAUDE]]
+
 # Technology Stack
 
 **Analysis Date:** 2026-09-05

@@ -226,6 +226,43 @@ Infrastructure Control Plane (CP-027)
 
 ---
 
+## Documentation & Specification Matrix
+
+### Core Specifications & Integration Protocols
+- [[_MCP/AAS_CORE_MCP_SPEC|AAS Core MCP Spec]] — Autonomous Agent System core MCP specification.
+- [[_MCP/AGENT_QUICK_REFERENCE|Agent Quick Reference]] — Fast reference for tool invocation and schema mapping.
+- [[_MCP/CLAUDE-CODE-OMNIROUTE-INTEGRATION|Claude Code OmniRoute Integration]] — Direct Claude Code connection to OmniRoute.
+- [[_MCP/CODE-SEARCH-STRATEGY|Code Search Strategy]] — Hybrid lexical and AST search architecture.
+- [[_MCP/CONVERSION_DECISION_TREE|Conversion Decision Tree]] — Decision logic for data and format conversions.
+- [[_MCP/DEALFLOW_NEO4J_API|DealFlow Neo4j API]] — Neo4j endpoints and Cypher schemas for DealFlow.
+- [[_MCP/DEALFLOW_POSTGRES_SETUP|DealFlow Postgres Setup]] — PostgreSQL relational schema and indexing.
+- [[_MCP/EXECUTE-ON-MAC-AIR|Execute on Mac Air]] — Field execution runbook for mobile engineering node.
+- [[_MCP/FILE_CONVERSION_SERVICE|File Conversion Service]] — Document parsing and Markdown compilation pipeline.
+- [[_MCP/OMNIROUTE-CLAUDE-CODE-ARCHITECTURE|OmniRoute Claude Code Architecture]] — Dual-plane proxy architecture.
+- [[_MCP/OMNIROUTE-MCP-WIRING|OmniRoute MCP Wiring]] — FastMCP socket configuration and server startup.
+- [[_MCP/OMNIROUTE_A2A_AGENT_FLOW|OmniRoute A2A Agent Flow]] — Agent-to-Agent message passing and task delegation.
+- [[_MCP/OMNIROUTE_AGENT_HOOKUP_SUMMARY|OmniRoute Agent Hookup Summary]] — Swarm activation summary.
+- [[_MCP/OMNIROUTE_DEALFLOW_INTEGRATION|OmniRoute DealFlow Integration]] — CRM pipeline synchronization via MCP.
+- [[_MCP/PHASE3_IMPLEMENTATION|Phase 3 Implementation]] — Long-term MCP tool rollout and lifecycle.
+- [[_MCP/PHASE_1_EXECUTION_PLAN|Phase 1 Execution Plan]] — Phase 1 deployment and validation checklist.
+- [[_MCP/QDRANT_DEAL_DISCOVERY_SETUP|Qdrant Deal Discovery Setup]] — Vector similarity search for opportunities.
+- [[_MCP/QUICK-START-OMNIROUTE|Quick Start OmniRoute]] — Rapid onboarding and test commands.
+- [[_MCP/REAL-AGENT-BLUEPRINT|Real Agent Blueprint]] — Production agent specification with strict grounding.
+- [[_MCP/SESSION-SUMMARY-2026-09-17|Session Summary (2026-09-17)]] — Architecture decision checkpoint.
+- [[_MCP/SYSTEMS-INTEGRATION-MASTER|Systems Integration Master]] — Ecosystem-wide integration topology.
+
+### Capability Units 10–17 Specifications
+- [[_MCP/UNIT-10-SEARCH-CAPABILITIES-SPEC|Unit 10: Search Capabilities]] — Dynamic registry query protocol.
+- [[_MCP/UNIT-11-EXECUTE-CAPABILITY-SPEC|Unit 11: Execute Capability]] — Execution engine and parameter passing.
+- [[_MCP/UNIT-12-ANTHROPIC-PLUGIN-WIRING-SPEC|Unit 12: Anthropic Plugin Wiring]] — Claude tool use mapping.
+- [[_MCP/UNIT-13-ORCHESTRATOR-SPEC|Unit 13: Orchestrator Spec]] — Master workflow coordination specification.
+- [[_MCP/UNIT-14-E2E-TEST-SPEC|Unit 14: E2E Test Spec]] — Automated testing framework for tool interfaces.
+- [[_MCP/UNIT-15-ERROR-RECOVERY-SPEC|Unit 15: Error Recovery Spec]] — Fallback logic, circuit breakers, and retries.
+- [[_MCP/UNIT-16-PERFORMANCE-BASELINE|Unit 16: Performance Baseline]] — Latency targets and throughput thresholds.
+- [[_MCP/UNIT-17-PRODUCTION-DEPLOYMENT|Unit 17: Production Deployment]] — Final deployment and monitoring checklist.
+
+---
+
 **Next Steps:**
 1. Upgrade Python to 3.10+
 2. Install FastMCP

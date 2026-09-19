@@ -1,39 +1,27 @@
-# 45-EVOLUTION
+# 45-EVOLUTION — Continuous Learning & Organizational Evolution
 
-Optimization, self-improvement, skill evolution, architecture
+[[STARTHERE]] | [[REALITY]] | [[ANTIGRAVITY]] | [[50-MASTER-CONTROL]] | [[00-CONSTITUTION]]
 
-## Overview
+**Layer:** 22 (Learning → Evolution → Feedback)  
+**Control Point:** CP-045  
+**Purpose:** Organizational learning from execution, continuous improvement, feedback loops
 
-This domain handles the following responsibilities and operations.
+**Key files:**
+- [[STARTHERE]] — Master orientation (why evolution matters)
+- [[44-LEARNING]] — What we learned this cycle
+- [[43-OUTCOMES]] — Business outcomes that drive evolution
+- [[_MEMORY/MEMORY-OS|MEMORY-OS]] — Persistent learning storage
+- [[55-LOOP-ENGINEERING|LOOP-ENGINEERING]] — Autonomous loop execution
 
-## Key Points
+**How this fits:**
+- Feeds from: [[43-OUTCOMES]] (what happened?)
+- Feeds to: [[00-CONSTITUTION]] (update principles)
+- Related: [[45-EVOLUTION]] (this folder)
 
-- Primary focus area
-- Core operations
-- Key metrics
+**Your role:**
+1. Document what worked (move to [[44-LEARNING]])
+2. Identify patterns and improvements
+3. Update control planes for next cycle
+4. Store in [[_MEMORY/MEMORY-OS|MEMORY-OS]]
 
-## Connected Domains
-
-**Upstream (inputs from):**
-- See [[INDEX]] for full navigation
-
-**Downstream (outputs to):**
-- See [[INDEX]] for full navigation
-
-## Control Points
-
-This domain contains X controllable operations. See [[control-points]] for details.
-
-## Status
-
-🟡 **In Progress**
-
-## Links
-
-- [[INDEX]]
-- [[50-MASTER-CONTROL]]
-- [[_DOCS/architecture]]
-
----
-
-**Updated:** 2026-09-01
+**See:** [[ANTIGRAVITY]] Rules 42 (Continuous Improvement Loop) + Rule 45 (Final Rule)

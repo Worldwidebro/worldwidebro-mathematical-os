@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[INDEX]] | [[REALITY]] | [[ANTIGRAVITY]]
+
 # REPOSITORY-AUDIT.md — Company Brain Ecosystem Comprehensive Audit
 
 **Audit Date:** 2026-09-19  

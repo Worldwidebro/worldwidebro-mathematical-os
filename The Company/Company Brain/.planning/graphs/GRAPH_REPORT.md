@@ -1,3 +1,5 @@
+[[.planning/README|Planning Overview]] | [[INDEX]] | [[AGENTS]] | [[CLAUDE]]
+
 # Graph Report - Company Brain  (2026-09-05)
 
 ## Corpus Check

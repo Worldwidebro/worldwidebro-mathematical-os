@@ -1,3 +1,5 @@
+[[.planning/README|Planning Overview]] | [[INDEX]] | [[AGENTS]] | [[CLAUDE]]
+
 # Codebase Concerns
 
 **Analysis Date:** 2026-09-05

@@ -1,3 +1,5 @@
+[[.agents/rules/README|Rules Index]] | [[INDEX]] | [[AGENTS]] | [[ANTIGRAVITY]]
+
 # Security & Zero-Trust Rules — Company Brain
 
 1. **Zero Exposure of Secrets**:

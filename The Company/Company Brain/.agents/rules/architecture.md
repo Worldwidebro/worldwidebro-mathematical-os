@@ -1,3 +1,5 @@
+[[.agents/rules/README|Rules Index]] | [[INDEX]] | [[AGENTS]] | [[ANTIGRAVITY]]
+
 # Architecture Rules — Company Brain
 
 1. **Layered Isolation**: Always follow `Presentation → Application → Domain → Infrastructure → Data`.

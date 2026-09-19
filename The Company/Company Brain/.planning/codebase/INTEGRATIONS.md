@@ -1,3 +1,5 @@
+[[.planning/README|Planning Overview]] | [[INDEX]] | [[AGENTS]] | [[CLAUDE]]
+
 # External Integrations
 
 **Analysis Date:** 2026-09-05

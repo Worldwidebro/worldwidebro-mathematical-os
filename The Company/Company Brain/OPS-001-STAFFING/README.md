@@ -17,3 +17,9 @@ updated: 2026-09-12
 
 ## Overview
 Dedicated operations workspace for CareerOps automated workforce dispatch and candidate routing.
+
+## OPS-001-STAFFING Document Index
+
+- [[OPS-001-STAFFING/cold-call-playbook|cold-call-playbook]]
+- [[OPS-001-STAFFING/job-order-intake-sop|job-order-intake-sop]]
+- [[OPS-001-STAFFING/post-placement-followup-sop|post-placement-followup-sop]]

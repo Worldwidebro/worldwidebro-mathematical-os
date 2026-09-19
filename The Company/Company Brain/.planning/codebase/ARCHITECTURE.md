@@ -1,3 +1,5 @@
+[[.planning/README|Planning Overview]] | [[INDEX]] | [[AGENTS]] | [[CLAUDE]]
+
 <!-- refreshed: 2026-09-05 -->
 # Architecture
 

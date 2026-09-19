@@ -1,3 +1,5 @@
+[[.agents/rules/README|Rules Index]] | [[INDEX]] | [[AGENTS]] | [[ANTIGRAVITY]]
+
 # Coding Standards Rules — Company Brain
 
 1. **No Fake Completion & No Placeholder Architecture**:

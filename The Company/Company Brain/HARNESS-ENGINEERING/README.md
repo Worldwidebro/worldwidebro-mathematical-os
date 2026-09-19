@@ -17,3 +17,7 @@ updated: 2026-09-12
 
 ## Overview
 Test harnesses, synthetic benchmark generators, and reality validation gates.
+
+## HARNESS-ENGINEERING Document Index
+
+- [[HARNESS-ENGINEERING/REGISTRY|REGISTRY]]

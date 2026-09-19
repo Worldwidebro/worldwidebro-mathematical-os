@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[INDEX]] | [[REALITY]] | [[ANTIGRAVITY]]
+
 # SERVICE-CONTRACT.md — Persistent Service Integration Contract
 
 **System:** WorldwideBro Company Brain Distributed Mesh  

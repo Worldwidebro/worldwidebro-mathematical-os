@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[INDEX]] | [[REALITY]] | [[ANTIGRAVITY]]
+
 # AGENT-INTEGRATION.md — Autonomous Agent Fleet Integration & Governance
 
 **Authority:** Multi-Agent Coordination Control Plane (CP-016)  

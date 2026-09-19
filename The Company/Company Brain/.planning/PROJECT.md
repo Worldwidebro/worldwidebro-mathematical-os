@@ -1,3 +1,5 @@
+[[.planning/README|Planning Overview]] | [[INDEX]] | [[AGENTS]] | [[CLAUDE]]
+
 # Company Brain — Gap Closure & Infrastructure Hardening
 
 ## What This Is

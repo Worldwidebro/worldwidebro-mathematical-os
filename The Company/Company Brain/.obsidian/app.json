@@ -1,1 +1,18 @@
-{}
+{
+  "userIgnoreFilters": [
+    "repos/**",
+    "_TOOLS/**",
+    "**/node_modules/**",
+    ".claude/**",
+    "fractal/**",
+    ".git/**",
+    ".gitnexus_env/**",
+    "**/.venv/**",
+    "**/dist/**",
+    "**/build/**",
+    "**/graphify-out/**",
+    "**/graft/**",
+    "_MCP/ponytail/**",
+    "_EVAL/utopia/**"
+  ]
+}

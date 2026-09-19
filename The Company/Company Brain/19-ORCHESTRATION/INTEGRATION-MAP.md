@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[INDEX]] | [[REALITY]] | [[ANTIGRAVITY]]
+
 # INTEGRATION-MAP.md — Company Brain System Boundary & Dependency Matrix
 
 **Date:** 2026-09-19  

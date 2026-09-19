@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[INDEX]] | [[REALITY]] | [[ANTIGRAVITY]]
+
 # KNOWLEDGE-GRAPH-MAPPING.md — Corporate Knowledge Graph Entity & Relationship Schema
 
 **Authority:** Knowledge Graph & Ontology Control Plane (CP-003)  

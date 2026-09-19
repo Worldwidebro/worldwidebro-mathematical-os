@@ -1,3 +1,5 @@
+[[.agents/rules/README|Rules Index]] | [[INDEX]] | [[AGENTS]] | [[ANTIGRAVITY]]
+
 # Universal Income Loops Rule — Company Brain
 
 > **Authority:** CP-002, CP-027, Rule 1-3  

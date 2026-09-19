@@ -7,6 +7,8 @@ status: ACTIVE
 updated: 2026-09-12
 ---
 
+[[STARTHERE]] | [[INDEX]] | [[REALITY]] | [[ANTIGRAVITY]]
+
 [[STARTHERE]] | [[REALITY]] | [[00-CONSTITUTION/master-private-firm-ontology|MASTER-ONTOLOGY]] | [[UNIFIED_REGISTRY]] | [[SECTOR_INDEX]] | [[INDEX]] | [[ANTIGRAVITY]]
 
 # START HERE — Master Gateway

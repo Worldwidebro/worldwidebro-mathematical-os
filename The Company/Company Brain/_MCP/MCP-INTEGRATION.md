@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[INDEX]] | [[REALITY]] | [[ANTIGRAVITY]]
+
 # MCP-INTEGRATION.md — Model Context Protocol Architecture & Contracts
 
 **Authority:** Infrastructure & AI Tooling Control Plane (CP-027)  

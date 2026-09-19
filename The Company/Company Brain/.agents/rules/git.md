@@ -1,3 +1,5 @@
+[[.agents/rules/README|Rules Index]] | [[INDEX]] | [[AGENTS]] | [[ANTIGRAVITY]]
+
 # Git Safety Rules — Company Brain
 
 1. **Pre-Flight Verification**:

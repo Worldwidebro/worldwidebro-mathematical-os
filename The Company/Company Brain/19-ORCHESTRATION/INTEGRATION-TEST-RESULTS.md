@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[INDEX]] | [[REALITY]] | [[ANTIGRAVITY]]
+
 # INTEGRATION-TEST-RESULTS.md — Empirical Integration Verification & Test Results
 
 **Test Date:** 2026-09-19  

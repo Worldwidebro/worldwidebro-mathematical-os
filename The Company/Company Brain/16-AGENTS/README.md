@@ -131,3 +131,9 @@ For on-demand behavioral personas and procedural operational runbooks imported f
 - 📖 **Full Catalog & Wikilinks (280 Skills):** [[15-SKILLS/README|15-SKILLS Fleet Catalog]]
 - **Divisions Covered:** Academic & Research, Business Operations, Engineering, Finance, Game Development, GIS & Spatial, Healthcare, Marketing, Paid Media, Product, Project Management, Sales, Security, Spatial Computing, Testing, and Specialized Cultural Navigation.
 
+
+## 16-AGENTS Document Index
+
+- [[16-AGENTS/EDU-CLASSROOM|EDU-CLASSROOM]]
+- [[16-AGENTS/HERMES-AGENT|HERMES-AGENT]]
+- [[16-AGENTS/OPENHANDS|OPENHANDS]]

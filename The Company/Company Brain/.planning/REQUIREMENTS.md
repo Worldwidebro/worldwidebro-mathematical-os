@@ -1,3 +1,5 @@
+[[.planning/README|Planning Overview]] | [[INDEX]] | [[AGENTS]] | [[CLAUDE]]
+
 # Requirements: Company Brain — Gap Closure & Infrastructure Hardening
 
 **Defined:** 2026-09-05

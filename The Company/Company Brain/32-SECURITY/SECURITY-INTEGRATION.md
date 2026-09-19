@@ -1,3 +1,5 @@
+[[STARTHERE]] | [[INDEX]] | [[REALITY]] | [[ANTIGRAVITY]]
+
 # SECURITY-INTEGRATION.md — Zero-Trust Security & Permission Governance
 
 **Authority:** Security & Compliance Control Plane (CP-028)  
