@@ -1,0 +1,87 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Agent A2A Schema",
+  "description": "OmniRoute A2A Agent descriptor schema — defines agent capabilities for discovery and routing",
+  "type": "object",
+  "required": ["id", "name", "description", "autonomy_level", "cost_per_use", "success_rate"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique machine-readable agent ID (e.g., 'agent-lead-qualifier-001')",
+      "pattern": "^agent-[a-z0-9-]+$"
+    },
+    "name": {
+      "type": "string",
+      "description": "Human-readable agent name (e.g., 'Lead Qualifier')"
+    },
+    "category": {
+      "type": "string",
+      "enum": ["sales", "product", "engineering", "marketing", "customer_success", "finance", "operations", "security", "research", "support"],
+      "description": "Business domain category"
+    },
+    "domain": {
+      "type": "string",
+      "description": "Organizational domain ID (e.g., '30-REVENUE')",
+      "pattern": "^[0-9]+-[A-Z_]+$"
+    },
+    "description": {
+      "type": "string",
+      "description": "What this agent does and when to invoke it"
+    },
+    "skills": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of skills this agent implements (e.g., ['lead-scoring', 'qualification'])"
+    },
+    "autonomy_level": {
+      "type": "string",
+      "enum": ["L1", "L2", "L3"],
+      "description": "L1: human review mandatory, L2: assisted (human review for high-cost), L3: autonomous"
+    },
+    "cost_per_use": {
+      "type": "number",
+      "description": "USD cost to invoke this agent once",
+      "minimum": 0
+    },
+    "success_rate": {
+      "type": "number",
+      "description": "Historical success rate (0-100%)",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "required_tools": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Tools this agent requires (e.g., ['hubspot', 'supabase'])"
+    },
+    "a2a_endpoint": {
+      "type": "string",
+      "description": "How to invoke via OmniRoute A2A (e.g., 'POST /a2a with skill: lead-qualifier')"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Tags for discovery (e.g., ['scoring', 'qualification', 'lead-gen'])"
+    }
+  },
+  "example": {
+    "id": "agent-lead-qualifier-001",
+    "name": "Lead Qualifier",
+    "category": "sales",
+    "domain": "30-REVENUE",
+    "description": "Scores inbound leads 1-100 based on fit, budget, timeline. Flags high-potential and unqualified leads.",
+    "skills": ["lead-scoring", "qualification", "filtering"],
+    "autonomy_level": "L2",
+    "cost_per_use": 0.15,
+    "success_rate": 92,
+    "required_tools": ["hubspot", "supabase"],
+    "a2a_endpoint": "POST /a2a with method: message/send, skill: lead-qualifier",
+    "tags": ["scoring", "qualification", "sales", "lead-gen"]
+  }
+}

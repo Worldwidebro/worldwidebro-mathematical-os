@@ -1,0 +1,44 @@
+{
+  "id": "agent-lead-qualifier-001",
+  "name": "Lead Qualifier",
+  "category": "sales",
+  "domain": "30-REVENUE",
+  "description": "Scores inbound leads 1-100 based on fit, budget, timeline, authority, need. Flags high-potential and unqualified leads. Integrates with HubSpot for lead data.",
+  "skills": ["lead-scoring", "qualification", "filtering", "scoring-algorithm"],
+  "autonomy_level": "L2",
+  "cost_per_use": 0.15,
+  "success_rate": 92,
+  "required_tools": ["hubspot", "supabase"],
+  "a2a_endpoint": "POST /a2a with method: message/send, skill: lead-qualifier",
+  "tags": ["scoring", "qualification", "sales", "lead-gen", "revenue"],
+  "metadata": {
+    "version": "1.0",
+    "deployed": false,
+    "created_date": "2026-09-19",
+    "last_updated": "2026-09-19",
+    "owner": "CP-033 (Execution)",
+    "sla": {
+      "response_time_ms": 5000,
+      "uptime_percent": 99.5
+    },
+    "cost_envelope": {
+      "estimated_per_task": 0.15,
+      "budget_monthly": 450,
+      "currency": "USD"
+    },
+    "throughput": {
+      "tasks_per_hour": 100,
+      "concurrent_capacity": 10
+    }
+  },
+  "examples": [
+    {
+      "input": "Score these 5 inbound leads from our website form",
+      "output": "Lead scores (1-100) with reasoning per lead, high-potential flag, recommended next action"
+    },
+    {
+      "input": "Qualify: acme-corp inquiry, $500K budget, 3-month timeline",
+      "output": "Score: 92/100 (high fit), recommended: discovery call within 24h"
+    }
+  ]
+}
