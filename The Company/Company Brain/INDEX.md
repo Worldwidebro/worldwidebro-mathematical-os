@@ -26,10 +26,32 @@ Core ontology, 22-stage cognitive flow, 9 organizational fabrics, and 36 entity 
 - **Logic Architecture:** [[_DOCS/LOGIC-ARCHITECTURE-FRAMEWORK|LOGIC-ARCHITECTURE]] — 72 logic layers across 12 domains, 72 control points, autonomous loop patterns. [[_REGISTRIES/CANONICAL/LOGIC_LAYERS_REGISTRY.yaml|Master Registry]]
 - **System Directives:** [[DIRECTIVES/README|DIRECTIVES]] — Constitutional, modular agent rules, and tactical directives.
 - **Executive Governance:** [[EXECUTIVES/README|EXECUTIVES]] — Executive truth ledgers, board governance, and sovereign control.
-- **Artificial Intelligence Core:** [[AI-BRAIN/README|AI-BRAIN]] — [[_INFRASTRUCTURE/OMNIROUTE-MODELS-ROUTING|OMNIROUTE-STATUS]] (289+ models), local MLX models ([[OMNIROUTE-MODELS-ROUTING]]), [[Neo4j]] graph ([[KNOWLEDGE-GRAPH-OMNIROUTE-INTEGRATION]]), and agent fleet.
+- **Artificial Intelligence Core:** [[AI-BRAIN/README|AI-BRAIN]] — [[OMNIROUTE-MODELS-ROUTING|OMNIROUTE-STATUS]] (289+ models), local MLX models ([[OMNIROUTE-MODELS-ROUTING]]), [[08-KNOWLEDGE-GRAPH/README|Neo4j Knowledge Graph]] ([[KNOWLEDGE-GRAPH-OMNIROUTE-INTEGRATION]]), and agent fleet.
 - **AI Ventures & Projects:** [[AI-PROJECTS/README|AI-PROJECTS]] — 722 ventures, 7 core OpCos, and 177 code repositories.
 - **Respect Control Layer:** [[00_RESPECT/RESPECT|RESPECT]] — 20 core rules of respect, ethical boundaries, agency, and accountability.
 - **Memory Operating System:** [[_MEMORY/MEMORY-OS|MEMORY-OS]] — 4-tier memory, 10-signal retrieval, and operational prompt stack.
+
+### System Infrastructure & Operational Gateways
+- **Developer Tools & Code Graphs:** [[_TOOLS/README|_TOOLS]] — GitNexus (14k AST symbols), gbrain (PGLite), gstack (make-pdf), repomix, madge.
+- **Agent Harness Engineering:** [[HARNESS-ENGINEERING/README|HARNESS-ENGINEERING]] — 7-layer agent evaluation harness and test execution suite.
+- **Operational CLI Scripts:** [[scripts/README|scripts]] & [[_SCRIPTS/README|_SCRIPTS]] — Master executable toolchain (`make-pdf`, `gbrain`, `gitnexus`).
+- **Core API Gateway & FastMCP:** [[api/README|api]] & [[_MCP/README|_MCP]] — FastMCP tool interfaces, REST endpoints, and RPC servers.
+- **Telephony & Call Center Runs:** [[calls/README|calls]] — Audio recordings, transcripts, and real-time agent call logs.
+- **VEX Live Telemetry Connectors:** [[vex-wired/README|vex-wired]] — VEX Supabase metrics, Neo4j connectors, and real-time graph feeds.
+- **VEX Command Center Frontend:** [[graft/README|graft]] & [[VEX|Worldwidebro VEX]] — Nanonets Graft UI and flagship command center dashboard.
+- **Evidence & Audit Receipts:** [[receipts/README|receipts]] & [[review-receipts/README|review-receipts]] — Execution proofs and code review verification ledgers.
+- **Agent Roles, Workflows & Directives:** [[.agents/README|.agents]], [[_AGENTS/README|_AGENTS]] & [[16-AGENTS/README|16-AGENTS]] — Modular subagent definitions, workflows, rules, and runtime skills.
+- **Prompt Architecture Stack:** [[_PROMPTS/README|_PROMPTS]] & [[_PROMPTS/10_PRE-ACTION-AWARENESS|AWARENESS]] — 20-point pre-action awareness prompts.
+- **Memory & Storage Infrastructure:** [[_MEMORY/README|_MEMORY]] — 4-tier memory stores, embedding caches, and episodic ledgers.
+- **Knowledge Graph Relationships:** [[_RELATIONSHIPS/README|_RELATIONSHIPS]] & [[_ONTOLOGY/README|_ONTOLOGY]] — Master predicates, ontology models, and entity schemas.
+- **Subsystem Architecture Specifications:** [[_SYSTEMS/README|_SYSTEMS]] & [[_IMPLEMENTATION/README|_IMPLEMENTATION]] — Deep architecture specifications and component guides.
+- **Automated Validation & Tests:** [[_TESTS/README|_TESTS]] & [[_EVAL/README|_EVAL]] — Regression test suites, benchmarks, and eval runners.
+- **Engine & Node Process Runtimes:** [[_ENGINE/README|_ENGINE]] & [[node/README|node]] — Worker engines, job queues, and background services.
+- **Staffing Operations Portal:** [[OPS-001-STAFFING/README|OPS-001-STAFFING]] — Staffing venture dispatch, requisition intake, and onboarding.
+- **Venture Master Directories:** [[VENTURES/README|VENTURES]] & [[23-VENTURES/README|23-VENTURES]] — Portfolio directories for all 789 commercial ventures.
+- **System Historical Archive:** [[_ARCHIVE/README|_ARCHIVE]] — Reconciled historical logs, legacy data, and audit snapshots.
+- **System Planning & Architecture Maps:** [[.planning/README|.planning]] — Project gap closure charters, requirements ledgers, and codebase architecture maps.
+
 
 
 **Newcomer?** Start: [[STARTHERE]] (Orientation) → [[REALITY]] (Truth) → [[00_RESPECT/RESPECT]] (Rules) → [[NAVIGATION_GUIDE]] (5 min)
@@ -87,12 +109,12 @@ Canonical registry: 789 ventures, 893 repos, 22 deployments. Neo4j graph ready.
 ## Strategic
 
 - [[00-CONSTITUTION]] — Mission, vision, principles, governance
-- [[50-MASTER-CONTROL]] — Current state, objectives, blockers, health
-  - [[SEVEN_PLANES]] — 7-plane organizational architecture (Company Brain → Operations)
-  - [[HUNDRED_LAYERS]] — 100-layer control framework (50 domains × 7 planes)
-  - [[CONTROL_MATRIX]] — Control point registry and tool integration
-  - [[EXECUTION_STACK]] — Autonomous execution architecture (Graft + Fractal + herdr)
-  - [[LOOP_ENGINEERING]] — Continuous work discovery and execution (L1/L2/L3 autonomy)
+- [[50-MASTER-CONTROL/README|50-MASTER-CONTROL]] — Current state, objectives, blockers, health
+  - [[45-EVOLUTION/README|EVOLUTION]] — 7-plane organizational architecture (Company Brain → Operations)
+  - [[_DOCS/LOGIC-ARCHITECTURE-FRAMEWORK|LOGIC-ARCHITECTURE]] — 72 logic layers across 12 domains, control point registry
+  - [[_REGISTRIES/CANONICAL/LOGIC_LAYERS_REGISTRY.yaml|CONTROL-POINTS]] — All 500+ control points mapped
+  - [[22-EXECUTION/README|EXECUTION]] — Autonomous execution architecture (Graft + Fractal + agents)
+  - [[55-LOOP-ENGINEERING/README|LOOP-ENGINEERING]] — Continuous work discovery and execution (L1/L2/L3 autonomy)
 
 ---
 
@@ -245,10 +267,79 @@ Canonical registry: 789 ventures, 893 repos, 22 deployments. Neo4j graph ready.
 - [[agent-orchestration-plan]] — Multi-agent coordination protocols and delegation loops.
 - [[multi-agent-sales-orchestration]] — Automated lead discovery, qualification, and outreach swarm.
 - [[CALLCENTER-OS-EXECUTION-LOCKED]] — Inbound/outbound telephony agent runtime.
+- [[CALLCENTER_AGENT_OS_INTEGRATION]] — Automated telephony integration, SIP trunking, and callcenter runtime.
 - [[OPENCLAW-IMPLEMENTATION-ROADMAP]] — OpenClaw agent runtime integration and security boundaries.
+- [[OPENCLAW-SECURITY-INTEGRATION-GUIDE]] — OpenClaw isolation, sandboxing, and security policies.
+- [[OPENWORK-MCP-WRAPPER-DESIGN]] — OpenWork MCP server architecture and tool contracts.
 - [[WIKI_LINK_UPDATES_REQUIRED]] — Agent OS 33-business responsibility architecture and domain routing.
+- [[AGENT-INTEGRATION]] — Universal agent orchestration contracts and Google Agent2Agent protocols.
+- [[MCP-INTEGRATION]] — Model Context Protocol architecture, FastMCP servers, and tool registry.
+- [[SECURITY-INTEGRATION]] — Zero-trust access controls, secret hygiene, and audit logging.
+- [[DEALFLOWV1_INTEGRATION]] — DealFlow v1 CRM and pipeline synchronization.
+- [[KNOWLEDGE-GRAPH-MAPPING]] — Graph relationship mapping across entities, ventures, and repos.
+- [[CAPABILITY-ORCHESTRATOR-PSEUDOCODE]] — Dynamic capability routing and execution engine pseudocode.
+- [[OMNIROUTE-TEST-REPORT-2026-09-09]] — Model latency, fallback, and routing benchmark report.
+- [[CLAUDE-UPDATED-SEP10]] — Live infrastructure update log and runtime verification.
+- [[CLICKUP-CONNECTIVITY-STATUS]] — ClickUp API integration and webhook verification.
+- [[CLICKUP-WORKSPACE-REALITY]] — ClickUp task hierarchy and workspace audit.
+- [[GROWTH_OS_MARKETING_DEPLOYMENT]] — Marketing OS automation and content distribution.
+- [[SALES-TEAM-LOOP]] — End-to-end sales prospecting, qualification, and closing feedback loop.
+- [[SECTOR-ICP-CONTACT-REGISTRY-BUILD-PLAN]] — B2B ICP contact registry construction architecture.
+- [[SERVICE-CONTRACT]] — Master venture-to-client service agreement specifications.
+- [[300-QUESTION-FRAMEWORK-COMPLETION-REPORT]] — Strategic 300-question audit report.
+- [[VEX-DEPLOYMENT-READY]] — VEX engine deployment verification.
+- [[VROOM-SETUP-COMPLETE]] — VROOM vehicle routing optimization engine deployment.
+
+### Strategic Blueprints & Institutional Architecture
+- [[BILLION-DOLLAR-BLUEPRINT]] — Long-term enterprise vision, scale architecture, and capital strategy.
+- [[INSTITUTIONAL-VENTURE-ARCHITECTURE]] — 34-layer wealth structure and private firm holding company mechanics.
+- [[ECOSYSTEM_REALITY]] — Ground-truth operational reality of ventures, nodes, and codebases.
+- [[whoiam-CAREER-GRAPH]] — Founder professional graph, capabilities, and system verification proofs.
+- [[MASTER-LAUNCH-GUIDE]] — Ecosystem-wide deployment and operational launch sequence.
+- [[START_HERE]] — Secondary launchpad linked reciprocally with STARTHERE.
+
+### Venture Sector Portfolios & Completion Audits
+- [[VENTURE-SITES-COMPLETION-STATUS]] — Verification and readiness audit for 5 live web applications.
+- [[VENTURE-SECTOR-MAPPING-COMPLETE]] — Complete mapping of 789 ventures across 35 sectors.
+- [[COMPLETE-37-SECTOR-MAPPING]] — Canonical sector taxonomy and industry codes crosswalk.
+- [[FINAL-37-SECTOR-REDISTRIBUTION]] — Sector reorganization and operational allocation.
+- [[SECTOR-VENTURE-AUDIT-COMPLETE]] — Comprehensive audit of venture maturity across all sectors.
+- [[FOCUS-VENTURES-COMPLETION-GUIDE]] — Actionable sprint guide for Tier-0 ventures (CON-001, LT-005, OPS-001).
+- [[VENTURE-WORKFLOW-AUDIT]] — Cross-venture automation workflows and handoffs.
+- [[VENTURE-CAMPAIGN-TASKS]] — Marketing and go-to-market task schedules.
+- [[VENTURE-SOCIAL-EXECUTION-LT]] — Logistics & Fleet OS marketing channels.
+
+### Venture Field Sprints & Agent Unblockers
+- [[LT-005-WEEK1-EXECUTION-LIVE]] — HealthRoute week 1 launch timeline and operational dispatch.
+- [[LT-005-TODAY-CHECKLIST-SEP-10]] — Daily sprint execution checklist for medical courier.
+- [[LT-005-ANTHROPIC-SALES-PLUGIN-EVAL]] — Evaluation of AI sales outreach plugins for LT-005.
+- [[AGENT-UNBLOCK-CON-001]] — Remediation and unblocking manual for ACE Construction agents.
+- [[AGENT-UNBLOCK-OPS-001]] — Remediation and unblocking manual for Staffing Ops agents.
+
+### Execution Phases, Roadmaps & Task Backlogs
+- [[PHASE_1_QUICKSTART]] — Phase 1 orientation and initialization runbook.
+- [[phase-1-results]] — Empirical results, metrics, and milestones from Phase 1.
+- [[PHASE-2-QUICK-START]] — Phase 2 execution gateway.
+- [[PHASE-2-EXECUTIVE-SUMMARY]] — Executive overview of Phase 2 deliverables and milestones.
+- [[EXECUTION_CHECKPOINT]] — Operational checkpoint log for multi-agent tasks.
+- [[EXECUTION_READINESS_SUMMARY]] — Readiness audit across all operational subsystems.
+- [[EXECUTION_SUMMARY_ALL_4_PHASES]] — Multi-phase execution roadmap across Phases 1-4.
+- [[PATH_B_EXECUTABLE_PLAN]] — Contingency executable plan and alternative pipeline.
+- [[NEXT_100_TASKS_MASTER_ROADMAP]] — Sequenced backlog of next 100 core engineering tasks.
+- [[tasks]] — Live task queue and operational assignments.
+- [[WEEK-1-LIVE-STATUS]] — Live status report for Week 1 execution.
+
+### Repository Audits & Infrastructure Verification
+- [[REPO_STATUS_AND_BLOCKERS]] — Blockers and remediation roadmap for owned repositories.
+- [[REPOSITORY-AUDIT]] — Detailed inventory of repo languages, commits, and licenses.
+- [[OSS-BLOCKER-SOLUTION-STRATEGY]] — Strategy for replacing blocked proprietary tools with open source.
+- [[INTEGRATION-MAP]] — Cross-service network and API routing map.
+- [[INTEGRATION-TEST-RESULTS]] — End-to-end integration test execution logs.
+- [[TEST_SUITE_CREATION_SUMMARY]] — Design and execution summary for automated test suites.
+- [[TRACK-2-INTELLIGENCE-COMPLETE]] — Comprehensive Track 2 repository intelligence verification.
 
 ---
+
 
 ## Sourced Starred Capabilities & Gap Resolutions
 
