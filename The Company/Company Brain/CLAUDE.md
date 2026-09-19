@@ -176,4 +176,38 @@ ssh macstudio                               # Connect to Mac Studio
 
 ---
 
-**Updated:** 2026-09-19 | **Version:** 4.2 (Phase 2 launched, aligned to ANTIGRAVITY.md, Week 2 execution active)
+## GBrain Configuration (Setup Sep 19, 2026)
+
+<!-- gstack-gbrain-configuration:start -->
+
+**Status:** ✅ LIVE — local PGLite brain running, Claude Code MCP registered
+
+| Component | Status | Details |
+|-----------|--------|---------|
+| **CLI** | ✅ Installed | gbrain v0.51.0.0 at `/Users/acebless/.bun/bin/gbrain` |
+| **Engine** | ✅ PGLite | `/Users/acebless/.gbrain/brain.pglite` (local, ~1,600 pages indexed) |
+| **MCP** | ✅ Connected | `gbrain serve` registered in Claude Code (user scope) |
+| **Doctor** | ✅ OK | Schema v159, all migrations applied |
+| **Repo Code** | ✅ Indexed | Company Brain codebase: 1,611 pages, 4,899 chunks |
+| **Repo Policy** | ✅ Read-Write | Code from `origin` (Github) auto-indexed |
+| **Trust Model** | ✅ Personal | Local brain (single-tenant), auto-push mode enabled |
+| **Sync Artifacts** | ✅ Configured | Artifacts-only mode (plans, designs, retros) |
+| **Transcripts** | ✅ Enabled | Session transcripts will be indexed for memory continuity |
+
+**Quick usage:**
+```bash
+gbrain search "query terms"        # Semantic search
+gbrain code-def MyFunction         # Find symbol definition
+gbrain code-refs MyFunction        # Where is it used
+gbrain doctor --json               # Health check
+```
+
+**In Claude Code:** The `mcp__gbrain__*` tools are now available. Restart Claude Code to load them. Use them for semantic code search, context assembly, and memory queries across the Company Brain.
+
+**Cloud sync (if needed later):** To share this brain with other machines, run `gbrain sources add --path --federated ~/.gstack` after setting up a Supabase connection. Local PGLite brains cannot have remote replicas — upgrade to Supabase for that.
+
+<!-- gstack-gbrain-configuration:end -->
+
+---
+
+**Updated:** 2026-09-19 | **Version:** 4.2 (Phase 2 launched, aligned to ANTIGRAVITY.md, Week 2 execution active, gbrain configured Sep 19)
