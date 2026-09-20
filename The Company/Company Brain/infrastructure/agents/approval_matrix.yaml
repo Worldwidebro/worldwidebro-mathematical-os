@@ -1,0 +1,242 @@
+# Approval Matrix — Financial Controls for Agent Decisions
+# Enforced by orchestrator: no spending without approval
+
+approval_rules:
+
+  # CEO (AGT-E001) — Highest authority
+  ceo:
+    max_single_approval: 50000  # USD
+    max_annual_budget: 5000000
+    can_override_other_approvals: true
+    can_approve_categories:
+      - strategic_pivot
+      - venture_acquisition
+      - capital_deployment
+      - board_decisions
+      - cfo_overrides
+      - coo_overrides
+    escalation_path: null  # Terminal
+    approval_time_sla_hours: 4
+
+  # CFO (AGT-E002) — Finance decisions
+  cfo:
+    max_single_approval: 10000  # USD
+    max_annual_budget: 1000000
+    can_override_other_approvals: false
+    can_approve_categories:
+      - payroll
+      - vendor_payment
+      - expense_reimbursement
+      - tax_strategy
+      - debt_facility
+      - credit_line
+    escalation_path: ceo
+    escalation_time_hours: 4  # Escalate to CEO if not approved in 4h
+    approval_time_sla_hours: 2
+
+  # COO (AGT-E003) — Operations/resources
+  coo:
+    max_single_approval: 25000  # USD
+    max_annual_budget: 500000
+    can_override_other_approvals: false
+    can_approve_categories:
+      - headcount_addition  # Max 5 people
+      - venture_scaling
+      - equipment_purchase
+      - facility_lease
+      - sla_mitigation
+      - team_expansion
+    escalation_path: ceo
+    escalation_time_hours: 8
+    approval_time_sla_hours: 2
+
+  # CTO (AGT-E004) — Infrastructure/deployment
+  cto:
+    max_single_approval: 15000  # USD
+    max_annual_budget: 300000
+    can_override_other_approvals: false
+    can_approve_categories:
+      - infrastructure_upgrade
+      - deployment_approval
+      - vendor_tech_purchase
+      - security_tools
+      - monitoring_tools
+    escalation_path: ceo
+    escalation_time_hours: 6
+    approval_time_sla_hours: 1
+
+  # Chief Economist (AGT-E005) — Deal economics
+  chief_economist:
+    max_single_approval: 30000  # USD
+    max_annual_budget: 750000
+    can_override_other_approvals: false
+    can_approve_categories:
+      - deal_structure
+      - pricing_decision
+      - discount_approval
+      - term_modification
+    escalation_path: ceo
+    escalation_time_hours: 2
+    approval_time_sla_hours: 1
+
+  # Sales Orchestrator (AGT-F001)
+  sales_orchestrator:
+    max_single_approval: 5000  # USD
+    max_annual_budget: 100000
+    can_override_other_approvals: false
+    can_approve_categories:
+      - lead_commitment
+      - sales_incentive
+      - demo_cost
+    escalation_path: ceo
+    escalation_time_hours: 24
+    approval_time_sla_hours: 1
+
+  # Finance Orchestrator (AGT-F002)
+  finance_orchestrator:
+    max_single_approval: 2000  # USD
+    max_annual_budget: 50000
+    can_override_other_approvals: false
+    can_approve_categories:
+      - accounting_tool
+      - financial_report
+    escalation_path: cfo
+    escalation_time_hours: 12
+    approval_time_sla_hours: 1
+
+  # Ops Orchestrator (AGT-F003)
+  ops_orchestrator:
+    max_single_approval: 3000  # USD
+    max_annual_budget: 75000
+    can_override_other_approvals: false
+    can_approve_categories:
+      - ops_tool
+      - vendor_coordination
+    escalation_path: coo
+    escalation_time_hours: 12
+    approval_time_sla_hours: 1
+
+  # Tech Orchestrator (AGT-F004)
+  tech_orchestrator:
+    max_single_approval: 2500  # USD
+    max_annual_budget: 60000
+    can_override_other_approvals: false
+    can_approve_categories:
+      - tech_tool
+      - monitoring_service
+    escalation_path: cto
+    escalation_time_hours: 6
+    approval_time_sla_hours: 1
+
+  # Venture Agents (AGT-VEN-*) — Minimal approval
+  venture:
+    max_single_approval: 500  # USD (within venture autonomy)
+    max_annual_budget: 10000
+    can_override_other_approvals: false
+    can_approve_categories:
+      - operational_expense
+      - customer_success
+      - small_tool
+    escalation_path: function_orchestrator
+    escalation_time_hours: 24
+    approval_time_sla_hours: 0.5
+
+# Approval thresholds by category
+categories:
+
+  strategic_pivot:
+    min_approval_tier: ceo
+    min_amount: 0
+    max_amount: unlimited
+    requires_board_vote: true
+
+  venture_acquisition:
+    min_approval_tier: ceo
+    min_amount: 0
+    max_amount: unlimited
+    requires_board_vote: true
+
+  capital_deployment:
+    min_approval_tier: ceo
+    min_amount: 50000
+    max_amount: unlimited
+    requires_board_vote: false
+
+  payroll:
+    min_approval_tier: cfo
+    min_amount: 0
+    max_amount: 500000
+    requires_board_vote: false
+    runs_monthly: true
+
+  headcount_addition:
+    min_approval_tier: coo
+    min_amount: 0
+    max_amount: 500000
+    max_headcount: 5  # Per quarter
+    requires_board_vote: false
+
+  equipment_purchase:
+    min_approval_tier: coo
+    min_amount: 5000
+    max_amount: 100000
+    requires_board_vote: false
+
+  deal_structure:
+    min_approval_tier: chief_economist
+    min_amount: 10000
+    max_amount: 500000
+    requires_board_vote: false
+
+# Approval chain enforcement
+enforcement:
+
+  # If amount > agent's max, auto-escalate
+  auto_escalate_on_threshold_breach: true
+
+  # Prevent agent from self-approving
+  prevent_self_approval: true
+
+  # Log all approvals to Neo4j audit trail
+  audit_logging: true
+  audit_node_type: "ApprovalDecision"
+
+  # Approval deadline enforcement
+  mark_overdue_after_hours: 24
+  escalate_overdue_immediately: true
+
+  # Conflict of interest rules
+  conflict_of_interest:
+    - cfo_cannot_approve_own_salary
+    - coo_cannot_approve_own_team_budget
+    - ceo_cannot_approve_own_equity
+
+  # Duplicate spend detection
+  detect_duplicate_spend:
+    within_days: 7
+    same_vendor_threshold: 0.9  # 90% match
+    same_amount_threshold: 100  # $100 exact match or within
+
+# Off-hours escalation
+off_hours_handling:
+  weekday_business_hours: "09:00-18:00"
+  timezone: "America/New_York"
+
+  after_hours_approval_required: true
+  after_hours_escalate_to: ceo
+  after_hours_sla_minutes: 15  # Must respond within 15 min
+
+  critical_category: "capital_deployment"
+  critical_requires_immediate: true
+
+# Audit trail
+audit:
+  log_all_approvals: true
+  retention_years: 7
+  immutable: true
+  required_fields:
+    - approver_id
+    - decision_time
+    - reasoning
+    - confidence_score
+    - neo4j_reasoning_trace_id

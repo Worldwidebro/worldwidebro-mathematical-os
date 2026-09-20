@@ -1,0 +1,274 @@
+# Agent Registry — Single Source of Truth for 318 Agents
+# Tier: Executive (5), Function (4), Venture (309)
+# Discovery: by ID, by task type, by domain, by deployment phase
+
+agents:
+  # ========================
+  # EXECUTIVE TIER (5)
+  # ========================
+
+  executive_ceo:
+    id: AGT-E001
+    name: "CEO Agent"
+    tier: executive
+    domain: "01-IDENTITY"
+    description: "Strategic direction, capital allocation, board reporting"
+    responsibilities:
+      - strategy
+      - capital_deployment
+      - board_communication
+      - venture_portfolio_health
+    capabilities:
+      - neo4j_context_assembly
+      - decision_logging
+      - approval_enforcement
+      - reasoning_trace
+    neo4j_memory_key: "ceo_agent"
+    deployment_phase: "week_4"
+    approval_threshold: 50000  # USD
+    confidence_threshold: 0.85
+
+  executive_cfo:
+    id: AGT-E002
+    name: "CFO Agent"
+    tier: executive
+    domain: "24-FINANCE"
+    description: "Cash flow, forecasting, tax planning, capital structure"
+    responsibilities:
+      - cash_management
+      - forecasting
+      - tax_planning
+      - capital_deployment
+    capabilities:
+      - neo4j_context_assembly
+      - financial_modeling
+      - approval_enforcement
+    neo4j_memory_key: "cfo_agent"
+    deployment_phase: "week_4"
+    approval_threshold: 10000  # USD
+    confidence_threshold: 0.8
+
+  executive_coo:
+    id: AGT-E003
+    name: "COO Agent"
+    tier: executive
+    domain: "29-OPERATIONS"
+    description: "Venture readiness, resource allocation, SLA monitoring"
+    responsibilities:
+      - venture_operations
+      - resource_allocation
+      - sla_monitoring
+      - escalation_management
+    capabilities:
+      - neo4j_context_assembly
+      - readiness_scoring
+      - escalation_routing
+    neo4j_memory_key: "coo_agent"
+    deployment_phase: "week_4"
+    approval_threshold: 25000  # USD
+    confidence_threshold: 0.82
+
+  executive_cto:
+    id: AGT-E004
+    name: "CTO Agent"
+    tier: executive
+    domain: "56-ENGINEERING"
+    description: "Infrastructure decisions, deployments, tech roadmap"
+    responsibilities:
+      - infrastructure
+      - deployment_approval
+      - tech_roadmap
+      - security_decisions
+    capabilities:
+      - neo4j_context_assembly
+      - deployment_orchestration
+    neo4j_memory_key: "cto_agent"
+    deployment_phase: "week_4"
+    approval_threshold: 15000  # USD
+
+  executive_chief_economist:
+    id: AGT-E005
+    name: "Chief Economist Agent"
+    tier: executive
+    domain: "24-FINANCE"
+    description: "Portfolio economics, deal structure, pricing strategy"
+    responsibilities:
+      - deal_economics
+      - pricing_strategy
+      - portfolio_analysis
+    capabilities:
+      - neo4j_context_assembly
+      - economic_modeling
+    neo4j_memory_key: "chief_economist_agent"
+    deployment_phase: "week_4"
+
+  # ========================
+  # FUNCTION TIER (4)
+  # ========================
+
+  function_sales_orchestrator:
+    id: AGT-F001
+    name: "Sales Orchestrator"
+    tier: function
+    domain: "25-SALES"
+    description: "Routes leads to ventures, tracks pipeline, forecasts"
+    responsibilities:
+      - lead_routing
+      - pipeline_tracking
+      - forecast_updates
+    capabilities:
+      - neo4j_context_assembly
+      - crm_integration
+    neo4j_memory_key: "sales_orchestrator"
+    deployment_phase: "week_4"
+
+  function_finance_orchestrator:
+    id: AGT-F002
+    name: "Finance Orchestrator"
+    tier: function
+    domain: "24-FINANCE"
+    description: "Consolidates P&L, forecasts cash flow, manages payables/receivables"
+    responsibilities:
+      - p_and_l_consolidation
+      - cash_flow_forecasting
+      - payment_orchestration
+    capabilities:
+      - neo4j_context_assembly
+      - financial_consolidation
+    neo4j_memory_key: "finance_orchestrator"
+    deployment_phase: "week_4"
+
+  function_ops_orchestrator:
+    id: AGT-F003
+    name: "Ops Orchestrator"
+    tier: function
+    domain: "29-OPERATIONS"
+    description: "Monitors SLAs, flags exceptions, coordinates responses"
+    responsibilities:
+      - sla_monitoring
+      - exception_handling
+      - incident_coordination
+    capabilities:
+      - neo4j_context_assembly
+      - incident_routing
+    neo4j_memory_key: "ops_orchestrator"
+    deployment_phase: "week_4"
+
+  function_tech_orchestrator:
+    id: AGT-F004
+    name: "Tech Orchestrator"
+    tier: function
+    domain: "56-ENGINEERING"
+    description: "Infrastructure automation, deployment coordination"
+    responsibilities:
+      - infrastructure_automation
+      - deployment_coordination
+      - monitoring_aggregation
+    capabilities:
+      - neo4j_context_assembly
+      - deployment_automation
+    neo4j_memory_key: "tech_orchestrator"
+    deployment_phase: "week_4"
+
+  # ========================
+  # VENTURE TIER (309)
+  # ========================
+  # Example venture agents (sample of 789 ventures)
+  # In production, this is generated from Supabase ventures table
+
+  venture_ops_001:
+    id: "AGT-VEN-OPS-001"
+    name: "OPS-001 Venture Agent"
+    tier: venture
+    domain: "22-VENTURES"
+    venture_id: "OPS-001"
+    description: "Staffing operations agent"
+    responsibilities:
+      - execute_standard_ops
+      - escalate_exceptions
+      - report_metrics
+    capabilities:
+      - neo4j_context_assembly
+      - cold_call_execution
+      - deal_tracking
+    neo4j_memory_key: "vent_ops_001"
+    deployment_phase: "week_4"
+    parent_orchestrator: "AGT-F001"  # Sales Orchestrator
+
+  venture_lt_005:
+    id: "AGT-VEN-LT-005"
+    name: "LT-005 Venture Agent"
+    tier: venture
+    domain: "22-VENTURES"
+    venture_id: "LT-005"
+    description: "HealthRoute logistics agent"
+    responsibilities:
+      - dispatch_optimization
+      - customer_lifecycle
+      - revenue_tracking
+    capabilities:
+      - neo4j_context_assembly
+      - dispatch_automation
+      - crm_sync
+    neo4j_memory_key: "vent_lt_005"
+    deployment_phase: "week_4"
+    parent_orchestrator: "AGT-F001"
+
+  venture_con_001:
+    id: "AGT-VEN-CON-001"
+    name: "CON-001 Venture Agent"
+    tier: venture
+    domain: "22-VENTURES"
+    venture_id: "CON-001"
+    description: "Construction services agent"
+    responsibilities:
+      - project_management
+      - client_communication
+      - crew_coordination
+    capabilities:
+      - neo4j_context_assembly
+      - project_tracking
+    neo4j_memory_key: "vent_con_001"
+    deployment_phase: "week_4"
+    parent_orchestrator: "AGT-F003"  # Ops Orchestrator
+
+  venture_re_001:
+    id: "AGT-VEN-RE-001"
+    name: "RE-001 Venture Agent"
+    tier: venture
+    domain: "22-VENTURES"
+    venture_id: "RE-001"
+    description: "Real estate investment agent"
+    responsibilities:
+      - deal_sourcing
+      - financial_modeling
+      - investor_reporting
+    capabilities:
+      - neo4j_context_assembly
+      - deal_modeling
+      - investor_updates
+    neo4j_memory_key: "vent_re_001"
+    deployment_phase: "week_4"
+    parent_orchestrator: "AGT-E001"  # CEO
+
+  # ... 304 more ventures (auto-generated from Supabase)
+  # Template at: venture_agent_template.py
+
+discovery_methods:
+  - by_id: "Search AGT-{E|F|VEN}-{NNNN}"
+  - by_task: "Search capabilities + domain (neo4j_context_assembly → 50 agents)"
+  - by_domain: "Search domain field (25-SALES → Sales agents)"
+  - by_deployment: "Search deployment_phase (week_4 → 18 agents)"
+  - by_venture: "Search venture_id (OPS-001 → 1 agent)"
+
+# Approval matrix (who can approve what)
+approval_matrix:
+  ceo:
+    max_approval: 50000
+    can_override: true
+  cfo:
+    max_approval: 10000
+    can_override: false
+  coo:
+    max_approval: 25000
+    can_override: false
