@@ -1,7 +1,7 @@
 """
 Venture Orchestrator (AGT-VENTURE-ORCH)
-Decision layer: receives tasks, classifies, discovers ready ventures, routes to execution layer
-Coordinates 309 venture agents across portfolio
+Decision layer with LLM Council deliberation
+Receives tasks → classifies → councils deliberate → routes to execution layer
 """
 
 from typing import List, Dict, Any, Optional
@@ -11,17 +11,22 @@ import asyncio
 from memory_config import MemoryClient
 from agent_memory_client import AgentMemoryClientWrapper
 from agent_discovery_engine import AgentDiscoveryEngine, OrchestratorDiscoveryClient
+from agent_council import AgentCouncil
 from venture_agent_template import VentureAgent
 
 
 class VentureOrchestrator:
     """
     Central coordinator for all venture operations.
-    - Receives tasks from revenue loops
-    - Classifies task requirements
-    - Discovers ready ventures
-    - Distributes to execution layer
-    - Aggregates results + tracks revenue
+    
+    Flow:
+    1. Receive task from revenue loop
+    2. Classify task requirements
+    3. Discover candidate ventures
+    4. Run council deliberation (ventures self-score task fit)
+    5. Select top K ventures via consensus
+    6. Parallelize execution to selected agents
+    7. Aggregate + learn from outcomes
     """
 
     def __init__(self, memory_client: MemoryClient, supabase_client):
@@ -31,16 +36,18 @@ class VentureOrchestrator:
         self.supabase = supabase_client
         self.discovery = AgentDiscoveryEngine(agent_type='orchestration')
         self.orchestrator_api = OrchestratorDiscoveryClient()
+        self.council = AgentCouncil(memory_client, supabase_client)
         self.venture_agents = {}  # Cached venture agent instances
 
     async def initialize(self):
-        """Initialize orchestrator session."""
+        """Initialize orchestrator and council."""
         session = await self.memory_wrapper.create_session(self.agent_id)
         await self.memory_wrapper.add_message(
             self.agent_id,
             "system",
             "Venture Orchestrator initialized",
         )
+        await self.council.initialize()
         return session
 
     async def get_venture_agent(
@@ -58,19 +65,15 @@ class VentureOrchestrator:
             self.venture_agents[venture_id] = agent
         return self.venture_agents[venture_id]
 
-    async def discover_ready_ventures(self, filter_criteria: Dict[str, Any]) -> List[str]:
+    async def discover_candidate_ventures(
+        self, filter_criteria: Dict[str, Any]
+    ) -> List[Dict[str, Any]]:
         """
-        Discover ventures ready for a task.
-        
-        Filter criteria:
-        - segment: industry/segment filter
-        - min_readiness: minimum readiness % (0-100)
-        - max_ventures: max number to parallelize to
-        - sector: geographic or business sector
+        Discover ventures that COULD handle the task.
+        Returns candidate list with metadata for council deliberation.
         """
-        # Query Supabase for venture status
         response = await self.supabase.table("ventures").select(
-            "id, status, readiness_pct, segment, sector"
+            "id, name, status, readiness_pct, segment, sector, capabilities, confidence_score"
         ).filter(
             "status", "eq", "operating"
         ).gte(
@@ -79,25 +82,35 @@ class VentureOrchestrator:
 
         ventures = response.data if response else []
 
-        # Apply segment filter
+        # Apply filters
         if filter_criteria.get("segment"):
             ventures = [
                 v for v in ventures
                 if v.get("segment") == filter_criteria["segment"]
             ]
 
-        # Apply sector filter
         if filter_criteria.get("sector"):
             ventures = [
                 v for v in ventures
                 if v.get("sector") == filter_criteria["sector"]
             ]
 
-        # Limit parallelization
-        max_ventures = filter_criteria.get("max_ventures", 10)
-        venture_ids = [v["id"] for v in ventures[:max_ventures]]
+        # Convert to candidate format
+        candidates = [
+            {
+                "agent_id": f"AGT-VEN-{v['id'].split('-')[1]}",
+                "venture_id": v["id"],
+                "venture_name": v.get("name", v["id"]),
+                "agent_type": "venture",
+                "capabilities": v.get("capabilities", []),
+                "confidence": v.get("confidence_score", 0.5),
+                "readiness_pct": v.get("readiness_pct", 0),
+                "approval_threshold": 500,
+            }
+            for v in ventures
+        ]
 
-        return venture_ids
+        return candidates
 
     async def classify_task(self, task_description: str) -> Dict[str, Any]:
         """Classify task using Orchestrator API."""
@@ -116,12 +129,13 @@ class VentureOrchestrator:
 
     async def route_task(self, task: Dict[str, Any]) -> Dict[str, Any]:
         """
-        End-to-end task routing:
+        End-to-end task routing with council deliberation:
         1. Classify task requirements
-        2. Discover ready ventures
-        3. Parallelize to execution layer
-        4. Aggregate results
-        5. Track revenue attribution
+        2. Discover candidate ventures
+        3. Council deliberates (ventures self-score fit)
+        4. Select top K by consensus
+        5. Parallelize to selected agents
+        6. Aggregate results + track revenue
         """
         task_id = task.get("task_id", f"TASK-{datetime.utcnow().isoformat()}")
         task_description = task.get("description", "")
@@ -136,27 +150,60 @@ class VentureOrchestrator:
                 "error": classification["error"],
             }
         
-        # Step 2: Discover ready ventures
+        # Step 2: Discover candidates
         filter_criteria = task.get("filter_criteria", {
             "min_readiness": 50,
-            "max_ventures": 10,
         })
         
-        ready_ventures = await self.discover_ready_ventures(filter_criteria)
+        candidates = await self.discover_candidate_ventures(filter_criteria)
         
-        if not ready_ventures:
+        if not candidates:
             return {
                 "task_id": task_id,
-                "status": "no_ready_ventures",
-                "ventures_found": 0,
+                "status": "no_candidates",
+                "candidates_found": 0,
                 "filter": filter_criteria,
             }
         
-        # Step 3: Parallelize to venture agents
+        # Step 3: Council deliberation
+        context = {
+            "task_description": task_description,
+            "budget": task.get("budget", 0),
+            "urgency": task.get("urgency", "normal"),
+            "min_readiness": filter_criteria.get("min_readiness", 30),
+            "agent_type_needed": "venture",
+        }
+        
+        council_decision = await self.council.deliberate(
+            task_description=task_description,
+            candidate_agents=candidates,
+            context=context,
+        )
+        
+        if council_decision["status"] != "deliberated":
+            return {
+                "task_id": task_id,
+                "status": "deliberation_failed",
+                "error": "Council could not deliberate",
+            }
+        
+        # Step 4: Select top K ventures
+        ranked_agents = council_decision.get("ranked_agents", [])
+        max_ventures = task.get("max_parallel_ventures", 5)
+        selected_agents = ranked_agents[:max_ventures]
+        
+        if not selected_agents:
+            return {
+                "task_id": task_id,
+                "status": "no_selected_agents",
+            }
+        
+        # Step 5: Parallelize execution
         execution_results = []
         tasks = []
         
-        for venture_id in ready_ventures:
+        for agent_info in selected_agents:
+            venture_id = agent_info["venture_id"]
             agent = await self.get_venture_agent(venture_id, None)
             tasks.append(
                 agent.execute_task({
@@ -170,41 +217,56 @@ class VentureOrchestrator:
         # Run all in parallel
         results = await asyncio.gather(*tasks, return_exceptions=True)
         
-        for venture_id, result in zip(ready_ventures, results):
+        for agent_info, result in zip(selected_agents, results):
+            venture_id = agent_info["venture_id"]
+            council_score = agent_info.get("council_score", 0)
+            
             if isinstance(result, Exception):
                 execution_results.append({
                     "venture_id": venture_id,
+                    "council_score": council_score,
                     "status": "failed",
                     "error": str(result),
                 })
             else:
                 execution_results.append({
                     "venture_id": venture_id,
+                    "council_score": council_score,
                     "status": result.get("outcome", "unknown"),
                     "confidence": result.get("confidence", 0),
                     "trace_id": result.get("trace_id"),
                 })
         
-        # Step 4: Aggregate results
+        # Step 6: Aggregate + learn
         successful = [r for r in execution_results if r["status"] == "completed"]
-        failed = [r for r in execution_results if r["status"] == "failed"]
         
-        # Step 5: Track revenue attribution
+        # Update council confidence scores based on outcomes
+        for result in execution_results:
+            agent_id = f"AGT-VEN-{result['venture_id'].split('-')[1]}"
+            was_successful = result["status"] == "completed"
+            await self.council.learn_from_outcome(
+                deliberation_id=task_id,
+                selected_agent_id=agent_id,
+                was_successful=was_successful,
+            )
+        
+        # Log to Supabase
         trace_id = await self.memory_wrapper.log_decision(
             self.agent_id,
             task_id,
-            f"Routed to {len(ready_ventures)} ventures: {', '.join(ready_ventures)}",
-            confidence=(len(successful) / len(ready_ventures)) if ready_ventures else 0,
+            f"Council routed to {len(selected_agents)} ventures: {[r['venture_id'] for r in selected_agents]}",
+            confidence=(len(successful) / len(selected_agents)) if selected_agents else 0,
             outcome="completed" if successful else "partial",
         )
         
-        # Log to Supabase for analytics
         await self.supabase.table("orchestrator_task_routes").insert({
             "task_id": task_id,
             "orchestrator_id": self.agent_id,
-            "ventures_routed": len(ready_ventures),
-            "ventures_successful": len(successful),
-            "ventures_failed": len(failed),
+            "candidates_discovered": len(candidates),
+            "council_score": council_decision.get("consensus_confidence", 0),
+            "agents_selected": len(selected_agents),
+            "agents_successful": len(successful),
+            "agents_failed": len(execution_results) - len(successful),
             "task_intent": classification.get("intent"),
             "neo4j_trace_id": trace_id,
             "routed_at": datetime.utcnow().isoformat(),
@@ -214,42 +276,29 @@ class VentureOrchestrator:
             "task_id": task_id,
             "status": "completed" if successful else "partial",
             "orchestrator_agent": self.agent_id,
-            "ventures_routed": len(ready_ventures),
-            "ventures_successful": len(successful),
-            "ventures_failed": len(failed),
-            "results": execution_results,
+            "council_decision": {
+                "candidates_evaluated": len(candidates),
+                "consensus_confidence": council_decision.get("consensus_confidence", 0),
+                "agents_selected": len(selected_agents),
+                "top_agent": selected_agents[0].get("venture_id") if selected_agents else None,
+            },
+            "execution_results": execution_results,
+            "agents_successful": len(successful),
+            "agents_failed": len(execution_results) - len(successful),
             "trace_id": trace_id,
         }
-
-    async def parallelize_decision(self, task: Dict[str, Any]) -> str:
-        """
-        Decide: should we parallelize or serialize execution?
-        
-        Returns: "parallelize" | "serialize" | "single_venture"
-        """
-        urgency = task.get("urgency", "normal")
-        budget = task.get("budget", 0)
-        
-        # High urgency + high budget → serialize (focus one venture)
-        if urgency == "critical" and budget > 5000:
-            return "serialize"
-        
-        # Standard task → parallelize to ready ventures
-        return "parallelize"
 
     async def monitor_portfolio(self) -> Dict[str, Any]:
         """
         Portfolio health check: readiness, burn rates, at-risk ventures.
         Runs hourly via Trigger.dev.
         """
-        # Query venture metrics
         response = await self.supabase.table("ventures").select(
             "id, readiness_pct, status, burn_rate, runway_months"
         ).filter("status", "eq", "operating").execute()
         
         ventures = response.data if response else []
         
-        # Categorize
         healthy = [v for v in ventures if v["readiness_pct"] >= 50]
         at_risk = [v for v in ventures if v["readiness_pct"] < 50]
         critical_burn = [v for v in ventures if v["runway_months"] < 3]
