@@ -1,0 +1,111 @@
+{
+  "dashboard": {
+    "title": "API Performance Metrics",
+    "tags": ["api", "performance", "neo4j"],
+    "timezone": "browser",
+    "refresh": "15s",
+    "panels": [
+      {
+        "title": "Request Rate (req/s)",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "rate(http_requests_total{job='api_server'}[1m])"
+          }
+        ]
+      },
+      {
+        "title": "Latency: p50, p95, p99",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "histogram_quantile(0.50, rate(http_request_duration_seconds_bucket{job='api_server'}[5m]))",
+            "legendFormat": "p50"
+          },
+          {
+            "expr": "histogram_quantile(0.95, rate(http_request_duration_seconds_bucket{job='api_server'}[5m]))",
+            "legendFormat": "p95"
+          },
+          {
+            "expr": "histogram_quantile(0.99, rate(http_request_duration_seconds_bucket{job='api_server'}[5m]))",
+            "legendFormat": "p99"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "unit": "seconds"
+          }
+        }
+      },
+      {
+        "title": "Error Rate by Endpoint",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "rate(http_requests_total{job='api_server',status=~'5..'}[5m])"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "unit": "percentunit"
+          }
+        }
+      },
+      {
+        "title": "Neo4j Query Latency",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "rate(neo4j_query_duration_seconds_bucket[5m])"
+          }
+        ]
+      },
+      {
+        "title": "Active Connections",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "neo4j_active_connections"
+          }
+        ]
+      },
+      {
+        "title": "Response Size Distribution",
+        "type": "histogram",
+        "targets": [
+          {
+            "expr": "http_response_size_bytes{job='api_server'}"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "unit": "bytes"
+          }
+        }
+      },
+      {
+        "title": "Cache Hit Rate",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "rate(http_cache_hits_total[5m]) / rate(http_cache_lookups_total[5m])"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "unit": "percentunit"
+          }
+        }
+      },
+      {
+        "title": "Upstream Requests (Supabase, S3)",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "rate(upstream_requests_total[5m])"
+          }
+        ]
+      }
+    ]
+  }
+}

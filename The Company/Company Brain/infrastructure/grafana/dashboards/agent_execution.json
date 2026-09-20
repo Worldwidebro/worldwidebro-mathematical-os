@@ -1,0 +1,107 @@
+{
+  "dashboard": {
+    "title": "Agent Execution Metrics",
+    "tags": ["agents", "execution", "decisions", "reasoning"],
+    "timezone": "browser",
+    "refresh": "1m",
+    "panels": [
+      {
+        "title": "Agents Active (24h)",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "count(agent_active_24h)"
+          }
+        ]
+      },
+      {
+        "title": "Decisions per Hour",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "rate(agent_decisions_total[1h])"
+          }
+        ]
+      },
+      {
+        "title": "Decision Success Rate",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "rate(agent_decisions_success_total[24h]) / rate(agent_decisions_total[24h])"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "unit": "percentunit"
+          }
+        }
+      },
+      {
+        "title": "Reasoning Traces by Agent",
+        "type": "table",
+        "targets": [
+          {
+            "expr": "agent_reasoning_traces_total"
+          }
+        ]
+      },
+      {
+        "title": "Tool Calls per Agent",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "rate(agent_tool_calls_total[5m])"
+          }
+        ]
+      },
+      {
+        "title": "Token Usage (Cumulative)",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "agent_tokens_used_total"
+          }
+        ]
+      },
+      {
+        "title": "Error Rate by Agent",
+        "type": "table",
+        "targets": [
+          {
+            "expr": "rate(agent_errors_total[24h])"
+          }
+        ]
+      },
+      {
+        "title": "Execution Duration (p95)",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "histogram_quantile(0.95, rate(agent_execution_duration_seconds_bucket[5m]))"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "unit": "seconds"
+          }
+        }
+      },
+      {
+        "title": "Confidence Score Trend",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "avg(agent_confidence_score)"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "min": 0,
+            "max": 1
+          }
+        }
+      }
+    ]
+  }
+}

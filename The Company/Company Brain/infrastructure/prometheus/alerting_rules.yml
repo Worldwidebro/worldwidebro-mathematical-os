@@ -1,0 +1,114 @@
+# Prometheus Alerting Rules
+# Alert: service down, pipeline failure, latency spike, data staleness
+
+groups:
+  - name: infrastructure
+    interval: 30s
+    rules:
+      # Neo4j unavailable
+      - alert: Neo4jDown
+        expr: up{job="neo4j"} == 0
+        for: 2m
+        labels:
+          severity: critical
+          service: database
+        annotations:
+          summary: "Neo4j is down"
+          description: "Neo4j at {{ $labels.instance }} has been unreachable for 2 minutes"
+          dashboard: "http://grafana:3000/d/neo4j-health"
+
+      # PostgreSQL unavailable
+      - alert: PostgreSQLDown
+        expr: pg_up{job="postgresql"} == 0
+        for: 2m
+        labels:
+          severity: critical
+          service: database
+        annotations:
+          summary: "PostgreSQL is down"
+          description: "PostgreSQL at {{ $labels.instance }} has been unreachable"
+
+      # High API latency
+      - alert: ApiHighLatency
+        expr: histogram_quantile(0.95, rate(http_request_duration_seconds_bucket{job="api_server"}[5m])) > 1
+        for: 5m
+        labels:
+          severity: warning
+          service: api
+        annotations:
+          summary: "API latency high (p95 > 1s)"
+          description: "API p95 latency is {{ $value }}s"
+
+      # API error rate
+      - alert: ApiHighErrorRate
+        expr: rate(http_requests_total{job="api_server",status=~"5.."}[5m]) > 0.05
+        for: 5m
+        labels:
+          severity: warning
+          service: api
+        annotations:
+          summary: "API error rate > 5%"
+          description: "API error rate is {{ humanize $value }}%"
+
+  - name: analytics_pipeline
+    interval: 60s
+    rules:
+      # dbt run failure
+      - alert: DbtRunFailure
+        expr: dbt_run_status{status="failed"} == 1
+        for: 1m
+        labels:
+          severity: critical
+          service: analytics
+        annotations:
+          summary: "dbt run failed"
+          description: "dbt run failed on model {{ $labels.model }}"
+          action: "Check logs in Airflow"
+
+      # Data freshness (Fivetran sync not updated in last 25 hours)
+      - alert: DataNotFresh
+        expr: (time() - fivetran_last_sync_timestamp) > 90000
+        for: 5m
+        labels:
+          severity: warning
+          service: analytics
+        annotations:
+          summary: "Data not fresh (>25h old)"
+          description: "Last Fivetran sync was {{ humanize $value }} seconds ago"
+
+      # Great Expectations validation failure
+      - alert: DataQualityCheckFailed
+        expr: data_quality_checkpoint_success{checkpoint="ventures_daily"} == 0
+        for: 1m
+        labels:
+          severity: warning
+          service: analytics
+        annotations:
+          summary: "Data quality check failed"
+          description: "Great Expectations checkpoint {{ $labels.checkpoint }} failed"
+          dashboard: "http://openobserve:5080/dashboards/data-quality"
+
+  - name: business_metrics
+    interval: 5m
+    rules:
+      # Portfolio readiness drop
+      - alert: PortfolioReadinessDrop
+        expr: avg(venture_readiness_pct) < 0.25
+        for: 1h
+        labels:
+          severity: warning
+          service: portfolio
+        annotations:
+          summary: "Portfolio average readiness < 25%"
+          description: "Current portfolio readiness: {{ humanize $value }}%"
+
+      # Venture revenue miss
+      - alert: VentureRevenueMiss
+        expr: venture_monthly_revenue < venture_revenue_target * 0.8
+        for: 1d
+        labels:
+          severity: warning
+          service: revenue
+        annotations:
+          summary: "{{ $labels.venture }} revenue miss"
+          description: "{{ $labels.venture }} revenue {{ $value }} is <80% of target"

@@ -1,0 +1,43 @@
+apiVersion: 1
+
+datasources:
+  - name: Prometheus
+    type: prometheus
+    url: http://prometheus:9090
+    access: proxy
+    isDefault: true
+    editable: true
+    jsonData:
+      timeInterval: 30s
+
+  - name: OpenObserve
+    type: grafana-openobserve-datasource
+    url: http://openobserve:5080
+    access: proxy
+    isDefault: false
+    jsonData:
+      basicAuth: true
+      basicAuthUser: admin
+    secureJsonData:
+      basicAuthPassword: "${OPENOBSERVE_PASSWORD}"
+
+  - name: Neo4j
+    type: neo4j-datasource
+    url: bolt://100.87.214.70:7687
+    access: proxy
+    jsonData:
+      authentication: basic
+      authenticationType: basic
+    secureJsonData:
+      basicAuthPassword: "${NEO4J_PASSWORD}"
+
+  - name: PostgreSQL
+    type: postgres
+    url: localhost:5433
+    database: company_brain
+    user: admin
+    access: proxy
+    jsonData:
+      sslmode: disable
+    secureJsonData:
+      password: "${POSTGRES_PASSWORD}"

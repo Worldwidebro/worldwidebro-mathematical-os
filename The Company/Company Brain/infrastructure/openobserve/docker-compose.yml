@@ -1,0 +1,79 @@
+version: '3.8'
+
+services:
+  openobserve:
+    image: public.ecr.aws/zinclabs/openobserve:latest
+    container_name: openobserve
+    ports:
+      - "5080:5080"      # Web UI + API
+      - "5081:5081"      # Alternative HTTP API
+    environment:
+      ZO_ROOT_USER_EMAIL: "admin@worldwidebro.com"
+      ZO_ROOT_USER_PASSWORD: "${OPENOBSERVE_PASSWORD}"
+      ZO_DATA_DIR: /data
+      ZO_CONFIG_FILE: /etc/openobserve/config.toml
+      ZO_NODE_ROLE: "all"
+      ZO_CLUSTER_NAME: "worldwidebro-monitoring"
+      ZO_INSTANCE_NAME: "primary"
+      RUST_LOG: info
+      ZO_WAL_MEMORY_MODE_ENABLED: "false"
+    volumes:
+      - ./config.toml:/etc/openobserve/config.toml:ro
+      - openobserve-data:/data
+    networks:
+      - monitoring
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - ./prometheus/alerting_rules.yml:/etc/prometheus/alerting_rules.yml:ro
+      - prometheus-data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--storage.tsdb.retention.time=30d'
+      - '--web.enable-lifecycle'
+    networks:
+      - monitoring
+    restart: unless-stopped
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    environment:
+      GF_SECURITY_ADMIN_USER: admin
+      GF_SECURITY_ADMIN_PASSWORD: "${GRAFANA_PASSWORD}"
+      GF_INSTALL_PLUGINS: grafana-openobserve-datasource-plugin
+      GF_USERS_ALLOW_SIGN_UP: "false"
+    volumes:
+      - ./grafana/provisioning/datasources:/etc/grafana/provisioning/datasources:ro
+      - ./grafana/provisioning/dashboards:/etc/grafana/provisioning/dashboards:ro
+      - ./grafana/dashboards:/var/lib/grafana/dashboards:ro
+      - grafana-data:/var/lib/grafana
+    depends_on:
+      - prometheus
+      - openobserve
+    networks:
+      - monitoring
+    restart: unless-stopped
+
+volumes:
+  openobserve-data:
+  prometheus-data:
+  grafana-data:
+
+networks:
+  monitoring:
+    driver: bridge

@@ -1,0 +1,74 @@
+{
+  "dashboard": {
+    "title": "Venture Portfolio Overview",
+    "tags": ["portfolio", "ventures", "readiness"],
+    "timezone": "browser",
+    "panels": [
+      {
+        "title": "Total Ventures",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "count(venture_id)"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": { "mode": "thresholds" },
+            "thresholds": { "mode": "absolute", "steps": [{"color": "green", "value": null}] }
+          }
+        }
+      },
+      {
+        "title": "Average Readiness %",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "avg(venture_readiness_pct) * 100"
+          }
+        ]
+      },
+      {
+        "title": "Readiness Distribution",
+        "type": "histogram",
+        "targets": [
+          {
+            "expr": "venture_readiness_pct"
+          }
+        ]
+      },
+      {
+        "title": "Ventures by Sector",
+        "type": "piechart",
+        "targets": [
+          {
+            "expr": "count by (sector) (venture_id)"
+          }
+        ]
+      },
+      {
+        "title": "Total Monthly Revenue",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "sum(venture_monthly_revenue)"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "unit": "currencyUSD"
+          }
+        }
+      },
+      {
+        "title": "Portfolio Cash Position",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "sum(venture_cash_balance)"
+          }
+        ]
+      }
+    ]
+  }
+}

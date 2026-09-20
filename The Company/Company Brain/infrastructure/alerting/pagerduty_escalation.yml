@@ -1,0 +1,118 @@
+# PagerDuty Escalation Configuration
+# Critical alerts → page on-call, business hours → Slack only
+
+integration_key: "${PAGERDUTY_INTEGRATION_KEY}"
+routing_key: "${PAGERDUTY_ROUTING_KEY}"
+
+# Escalation policies by severity
+escalation_policies:
+  critical:
+    name: "Critical Incident"
+    severity_threshold: critical
+    page_oncall: true
+    page_immediately: true
+    notification_channels:
+      - type: pagerduty
+        urgency: high
+      - type: slack
+        channel: "#critical"
+      - type: email
+        recipients: ["ops-lead@worldwidebro.com"]
+    escalation_timeout_mins: 15
+    max_escalations: 3
+
+  high:
+    name: "High Priority"
+    severity_threshold: high
+    page_oncall: true
+    notification_channels:
+      - type: pagerduty
+        urgency: medium
+      - type: slack
+        channel: "#data-alerts"
+    escalation_timeout_mins: 30
+    max_escalations: 2
+
+  medium:
+    name: "Medium Priority"
+    severity_threshold: warning
+    page_oncall: false
+    notification_channels:
+      - type: slack
+        channel: "#data-alerts"
+      - type: email
+        recipients: ["data-team@worldwidebro.com"]
+
+  low:
+    name: "Low Priority"
+    severity_threshold: info
+    page_oncall: false
+    notification_channels:
+      - type: slack
+        channel: "#data-alerts"
+
+# Service definitions
+services:
+  neo4j_database:
+    name: "Neo4j Database"
+    escalation_policy: critical
+    alert_matchers:
+      - service: database
+        alertname: Neo4jDown
+
+  postgresql_database:
+    name: "PostgreSQL"
+    escalation_policy: critical
+    alert_matchers:
+      - service: database
+        alertname: PostgreSQLDown
+
+  api_server:
+    name: "API Server"
+    escalation_policy: high
+    alert_matchers:
+      - service: api
+        alertname: "Api.*"
+
+  analytics_pipeline:
+    name: "Analytics Pipeline"
+    escalation_policy: high
+    alert_matchers:
+      - service: analytics
+        alertname: ".*"
+
+  venture_portfolio:
+    name: "Venture Portfolio"
+    escalation_policy: medium
+    alert_matchers:
+      - service: portfolio
+        alertname: ".*"
+
+# Business hours configuration
+business_hours:
+  timezone: "America/New_York"
+  weekday_start: monday
+  weekday_end: friday
+  start_hour: 9
+  end_hour: 18
+
+# Off-hours escalation (use minimal paging)
+off_hours_escalation:
+  enabled: true
+  policy: critical_only
+  escalation_delay_mins: 10
+
+# Incident grouping
+incident_grouping:
+  enabled: true
+  window_mins: 5
+  group_by:
+    - service
+    - alertname
+
+# Runbook links (auto-include in incident details)
+runbooks:
+  Neo4jDown: "https://wiki.worldwidebro.com/runbooks/neo4j-recovery"
+  DbtRunFailure: "https://wiki.worldwidebro.com/runbooks/dbt-debugging"
+  DataNotFresh: "https://wiki.worldwidebro.com/runbooks/fivetran-recovery"
+  PortfolioReadinessDrop: "https://wiki.worldwidebro.com/runbooks/portfolio-health"

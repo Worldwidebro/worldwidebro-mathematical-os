@@ -1,0 +1,88 @@
+# Prometheus Configuration
+# Scrape targets: Neo4j, Vercel, Node.js API, dbt, business metrics
+
+global:
+  scrape_interval: 30s
+  evaluation_interval: 30s
+  external_labels:
+    cluster: worldwidebro-monitoring
+    environment: production
+
+# Alert rules
+rule_files:
+  - alerting_rules.yml
+
+# Alertmanager configuration
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets: []
+
+# Scrape configurations
+scrape_configs:
+  # Prometheus self-monitoring
+  - job_name: prometheus
+    static_configs:
+      - targets: ['localhost:9090']
+
+  # Neo4j metrics
+  - job_name: neo4j
+    static_configs:
+      - targets: ['100.87.214.70:7474']
+    metrics_path: /metrics
+    scrape_interval: 30s
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: instance
+      - replacement: neo4j
+        target_label: job
+
+  # Node.js API server (localhost:3000)
+  - job_name: api_server
+    static_configs:
+      - targets: ['localhost:3000']
+    metrics_path: /metrics
+    scrape_interval: 15s  # More frequent for API
+
+  # dbt metadata (if exposed on a metrics endpoint)
+  - job_name: dbt_runs
+    static_configs:
+      - targets: ['localhost:8080']  # dbt artifact server (future)
+    metrics_path: /metrics
+    scrape_interval: 60s
+
+  # Vercel deployments (via API scrape)
+  - job_name: vercel_deployments
+    scheme: https
+    static_configs:
+      - targets: ['api.vercel.com']
+    relabel_configs:
+      - source_labels: [__scheme__, __address__]
+        separator: "://"
+        target_label: __param_target
+      - source_labels: [__param_target]
+        target_label: instance
+      - replacement: localhost:8080
+        target_label: __address__
+    scrape_interval: 5m
+
+  # Business metrics (custom collector)
+  - job_name: business_metrics
+    static_configs:
+      - targets: ['localhost:9091']  # Custom exporter
+    scrape_interval: 60s
+
+  # OpenObserve self-monitoring
+  - job_name: openobserve
+    static_configs:
+      - targets: ['localhost:5080']
+    metrics_path: /api/v1/metrics
+    scrape_interval: 30s
+
+  # Venture analytics pipeline
+  - job_name: analytics_pipeline
+    static_configs:
+      - targets: ['localhost:5433']  # PostgreSQL
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: instance

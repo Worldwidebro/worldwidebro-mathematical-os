@@ -1,0 +1,93 @@
+# Alerting Configuration: Slack Notifications
+# Channel routing by severity and service
+
+slack_channels:
+  data_alerts:
+    name: "#data-alerts"
+    url: "${SLACK_WEBHOOK_DATA_ALERTS}"
+    default: true
+    severity_min: warning
+
+  critical_alerts:
+    name: "#critical"
+    url: "${SLACK_WEBHOOK_CRITICAL}"
+    severity_min: critical
+
+  api_performance:
+    name: "#api-team"
+    url: "${SLACK_WEBHOOK_API}"
+    service: api
+    severity_min: warning
+
+  agents:
+    name: "#agent-ops"
+    url: "${SLACK_WEBHOOK_AGENTS}"
+    service: agents
+    severity_min: info
+
+# Alert routing rules
+alert_routes:
+  - match:
+      severity: critical
+    channels:
+      - critical_alerts
+      - data_alerts
+    mention: "@channel"
+
+  - match:
+      service: analytics
+    channels:
+      - data_alerts
+    mention: ""
+
+  - match:
+      service: api
+    channels:
+      - api_performance
+    mention: ""
+
+  - match:
+      service: agents
+    channels:
+      - agents
+    mention: ""
+
+  - match_re:
+      severity: "warning|error"
+    channels:
+      - data_alerts
+    mention: ""
+
+# Message templates
+templates:
+  critical: |
+    🚨 **CRITICAL ALERT** 🚨
+    {{ .GroupLabels.service | toUpper }} / {{ .GroupLabels.severity | toUpper }}
+
+    {{ range .Alerts }}
+    **{{ .Labels.alertname }}**
+    {{ .Annotations.summary }}
+
+    _Details:_ {{ .Annotations.description }}
+    _Duration:_ {{ duration .StartsAt .EndsAt }}
+    {{ if .Annotations.dashboard }}[📊 Dashboard]({{ .Annotations.dashboard }}){{ end }}
+    {{ if .Annotations.runbook }}[📚 Runbook]({{ .Annotations.runbook }}){{ end }}
+    {{ end }}
+
+  warning: |
+    ⚠️ **{{ .GroupLabels.severity | toUpper }}**: {{ .GroupLabels.service }}
+
+    {{ range .Alerts.Firing }}
+    • {{ .Labels.alertname }}: {{ .Annotations.summary }}
+    {{ end }}
+
+    {{ if gt (len .Alerts.Resolved) 0 }}
+    ✅ **Resolved:**
+    {{ range .Alerts.Resolved }}
+    • {{ .Labels.alertname }}
+    {{ end }}
+    {{ end }}
+
+  info: |
+    ℹ️ {{ .GroupLabels.alertname }}
+    {{ .GroupLabels.service }} - {{ .Annotations.summary }}

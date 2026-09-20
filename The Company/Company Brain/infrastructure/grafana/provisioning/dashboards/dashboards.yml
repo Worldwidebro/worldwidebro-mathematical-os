@@ -1,0 +1,44 @@
+apiVersion: 1
+
+providers:
+  - name: 'Default'
+    orgId: 1
+    folder: 'Analytics'
+    type: file
+    disableDeletion: false
+    updateIntervalSeconds: 10
+    allowUiUpdates: true
+    options:
+      path: /var/lib/grafana/dashboards
+
+  - name: 'Venture Portfolio'
+    orgId: 1
+    folder: 'Portfolio'
+    type: file
+    disableDeletion: false
+    options:
+      path: /var/lib/grafana/dashboards/venture_portfolio.json
+
+  - name: 'Pipeline Health'
+    orgId: 1
+    folder: 'Pipeline'
+    type: file
+    disableDeletion: false
+    options:
+      path: /var/lib/grafana/dashboards/pipeline_health.json
+
+  - name: 'API Performance'
+    orgId: 1
+    folder: 'API'
+    type: file
+    disableDeletion: false
+    options:
+      path: /var/lib/grafana/dashboards/api_performance.json
+
+  - name: 'Agent Execution'
+    orgId: 1
+    folder: 'Agents'
+    type: file
+    disableDeletion: false
+    options:
+      path: /var/lib/grafana/dashboards/agent_execution.json

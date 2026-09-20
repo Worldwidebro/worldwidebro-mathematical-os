@@ -1,0 +1,116 @@
+# Prometheus Alertmanager Configuration
+# Routes alerts to Slack, PagerDuty, email based on severity + service
+
+global:
+  resolve_timeout: 5m
+  slack_api_url: "${SLACK_API_URL}"
+
+route:
+  receiver: 'default'
+  group_by: ['alertname', 'service', 'severity']
+  group_wait: 10s
+  group_interval: 10s
+  repeat_interval: 4h
+  routes:
+    # Critical alerts → page on-call + Slack
+    - match:
+        severity: critical
+      receiver: 'critical'
+      group_wait: 0s
+      repeat_interval: 1h
+
+    # High priority → PagerDuty
+    - match:
+        severity: high
+      receiver: 'pagerduty'
+      group_wait: 5s
+
+    # Analytics pipeline alerts → data team
+    - match:
+        service: analytics
+      receiver: 'data-team'
+
+    # API alerts → api team
+    - match:
+        service: api
+      receiver: 'api-team'
+
+    # Portfolio/business → ops
+    - match:
+        service: portfolio
+      receiver: 'ops-team'
+
+receivers:
+  - name: 'default'
+    slack_configs:
+      - channel: '#monitoring'
+        title: '{{ .GroupLabels.alertname }}'
+        text: '{{ range .Alerts }}{{ .Annotations.description }}{{ end }}'
+        send_resolved: true
+
+  - name: 'critical'
+    slack_configs:
+      - channel: '#critical'
+        title: '🚨 CRITICAL: {{ .GroupLabels.alertname }}'
+        text: '{{ range .Alerts }}{{ .Annotations.description }}{{ end }}'
+        send_resolved: true
+    pagerduty_configs:
+      - service_key: '${PAGERDUTY_INTEGRATION_KEY}'
+        description: '{{ .GroupLabels.alertname }}: {{ (index .Alerts 0).Annotations.summary }}'
+        details:
+          firing: '{{ template "pagerduty.default.instances" .Alerts.Firing }}'
+    email_configs:
+      - to: 'ops-lead@worldwidebro.com'
+        smarthost: '${SMTP_HOST}:${SMTP_PORT}'
+        auth_username: '${SMTP_USER}'
+        auth_password: '${SMTP_PASSWORD}'
+        from: 'alerts@worldwidebro.com'
+        headers:
+          Subject: '🚨 CRITICAL ALERT: {{ .GroupLabels.alertname }}'
+
+  - name: 'pagerduty'
+    pagerduty_configs:
+      - service_key: '${PAGERDUTY_INTEGRATION_KEY}'
+        description: 'HIGH: {{ .GroupLabels.alertname }}'
+    slack_configs:
+      - channel: '#incidents'
+
+  - name: 'data-team'
+    slack_configs:
+      - channel: '#data-alerts'
+        title: 'Analytics: {{ .GroupLabels.alertname }}'
+        text: '{{ range .Alerts }}• {{ .Labels.instance }}: {{ .Annotations.summary }}{{ end }}'
+
+  - name: 'api-team'
+    slack_configs:
+      - channel: '#api-team'
+        title: 'API: {{ .GroupLabels.alertname }}'
+        text: '{{ range .Alerts }}{{ .Annotations.description }}{{ end }}'
+
+  - name: 'ops-team'
+    slack_configs:
+      - channel: '#operations'
+
+# Inhibition rules (suppress alerts when other conditions exist)
+inhibit_rules:
+  # Don't alert on Neo4j down if database pod is being restarted
+  - source_match:
+      severity: 'critical'
+      alertname: 'PodRestartingTooOften'
+    target_match:
+      alertname: 'Neo4jDown'
+    equal: ['instance', 'service']
+
+  # Don't alert on API latency if Neo4j is down
+  - source_match:
+      alertname: 'Neo4jDown'
+    target_match:
+      service: 'api'
+    equal: ['cluster']
+
+  # Don't alert on data freshness if Fivetran is known to be down
+  - source_match:
+      alertname: 'FivetranDown'
+    target_match:
+      alertname: 'DataNotFresh'
+    equal: ['service']

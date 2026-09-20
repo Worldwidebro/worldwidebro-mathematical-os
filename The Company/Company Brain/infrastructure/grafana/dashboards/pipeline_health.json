@@ -1,0 +1,117 @@
+{
+  "dashboard": {
+    "title": "Analytics Pipeline Health",
+    "tags": ["pipeline", "fivetran", "dbt", "analytics"],
+    "timezone": "browser",
+    "refresh": "30s",
+    "panels": [
+      {
+        "title": "Fivetran Sync Status",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "fivetran_sync_status"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "mappings": [
+              { "type": "value", "value": "1", "text": "SUCCESS" },
+              { "type": "value", "value": "0", "text": "FAILED" }
+            ]
+          }
+        }
+      },
+      {
+        "title": "Last Fivetran Run",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "time() - fivetran_last_sync_timestamp"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "unit": "seconds"
+          }
+        }
+      },
+      {
+        "title": "Rows Synced (24h)",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "increase(fivetran_rows_synced[24h])"
+          }
+        ]
+      },
+      {
+        "title": "dbt Models Status",
+        "type": "table",
+        "targets": [
+          {
+            "expr": "dbt_model_status"
+          }
+        ]
+      },
+      {
+        "title": "dbt Run Duration (Last 7 Days)",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "dbt_run_duration_seconds"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "unit": "seconds"
+          }
+        }
+      },
+      {
+        "title": "dbt Test Failures (7d)",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "sum(increase(dbt_test_failures[7d]))"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": { "mode": "thresholds" },
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                { "color": "green", "value": null },
+                { "color": "red", "value": 1 }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "title": "Data Quality Checks",
+        "type": "table",
+        "targets": [
+          {
+            "expr": "data_quality_checkpoint_status"
+          }
+        ]
+      },
+      {
+        "title": "Data Freshness (Hours Old)",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "(time() - venture_data_last_updated) / 3600"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "unit": "hours"
+          }
+        }
+      }
+    ]
+  }
+}

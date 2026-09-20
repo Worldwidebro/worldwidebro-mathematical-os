@@ -1,0 +1,63 @@
+# OpenObserve Configuration
+# Storage backend, retention policies, ingestion settings
+
+[app]
+node_role = "all"
+cluster_name = "worldwidebro-monitoring"
+instance_name = "primary"
+
+[storage]
+backend = "disk"
+data_dir = "/data"
+wal_dir = "/data/wal"
+
+# Local file storage
+[storage.disk]
+enabled = true
+data_path = "/data"
+
+# Retention policies
+[storage.retention]
+hot_retention_days = 30
+cold_retention_days = 365
+compression_enabled = true
+compression_format = "zstd"
+
+[ingestion]
+# HTTP ingestion settings
+http_enabled = true
+http_port = 5081
+max_request_body_size = 10485760  # 10MB
+
+# gRPC settings (optional)
+grpc_enabled = false
+grpc_port = 5082
+
+# Batch settings
+batch_size = 1000
+batch_timeout_secs = 5
+
+# Queue settings
+queue_size = 10000
+num_workers = 4
+
+[authentication]
+# Basic auth
+basic_auth_enabled = true
+# OAuth would go here
+
+[api]
+enabled = true
+port = 5080
+log_requests = true
+request_timeout_secs = 30
+
+[logging]
+level = "info"
+format = "json"
+output = "stdout"
+
+[alerting]
+enabled = true
+notification_timeout_secs = 30
+max_alert_history = 1000
