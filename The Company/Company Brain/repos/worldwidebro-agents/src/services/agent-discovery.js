@@ -68,14 +68,12 @@ async function verifyDataCompleteness() {
   try {
     const result = await session.run(`
       MATCH (a:Agent)
-      WITH a,
-        CASE WHEN a.id IS NOT NULL THEN 1 ELSE 0 END as has_id,
-        CASE WHEN a.name IS NOT NULL THEN 1 ELSE 0 END as has_name,
-        CASE WHEN a.domain IS NOT NULL THEN 1 ELSE 0 END as has_domain,
-        CASE WHEN a.status IS NOT NULL THEN 1 ELSE 0 END as has_status,
-        CASE WHEN a.cost_per_invocation IS NOT NULL THEN 1 ELSE 0 END as has_cost,
-        CASE WHEN a.estimated_revenue IS NOT NULL THEN 1 ELSE 0 END as has_revenue
-      WHERE NOT (has_id AND has_name AND has_domain AND has_status AND has_cost AND has_revenue)
+      WHERE a.id IS NULL
+         OR a.name IS NULL
+         OR a.domain IS NULL
+         OR a.status IS NULL
+         OR a.cost_per_invocation IS NULL
+         OR a.estimated_revenue IS NULL
       RETURN count(*) as missing_count, collect(a.id) as agent_ids
     `);
 
