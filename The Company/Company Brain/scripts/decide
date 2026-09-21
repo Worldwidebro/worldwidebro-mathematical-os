@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Company Brain Decision Engine CLI Wrapper
+set -e
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+WORKSPACE_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
+ENGINE_DIR="$WORKSPACE_DIR/_TOOLS/decision-engine"
+VENV_PY="$ENGINE_DIR/.venv/bin/python"
+
+if [ -f "$VENV_PY" ]; then
+    exec "$VENV_PY" -m src.cli "$@"
+elif command -v uv >/dev/null 2>&1; then
+    exec uv run --project "$ENGINE_DIR" python3 -m src.cli "$@"
+elif [ -f "/opt/homebrew/bin/uv" ]; then
+    exec /opt/homebrew/bin/uv run --project "$ENGINE_DIR" python3 -m src.cli "$@"
+else
+    exec python3 -m src.cli "$@"
+fi
