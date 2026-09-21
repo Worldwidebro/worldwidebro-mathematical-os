@@ -1,0 +1,41 @@
+version: 2
+
+models:
+  - name: venture_readiness_mart
+    description: "Dimensional model tracking venture readiness scores and financial posture"
+    columns:
+      - name: venture_id
+        description: "Primary key"
+        tests:
+          - unique
+          - not_null
+      - name: readiness_pct
+        description: "Readiness percentage between 0 and 1"
+        tests:
+          - not_null
+      - name: sector
+        description: "Venture sector categorization"
+        tests:
+          - not_null
+
+  - name: capability_coverage_mart
+    description: "Sector and capability level gap analysis"
+    columns:
+      - name: sector
+        description: "Evaluated sector"
+        tests:
+          - not_null
+      - name: capability_name
+        description: "Standard capability identifier"
+        tests:
+          - not_null
+
+  - name: financial_summary_mart
+    description: "Aggregated monthly financial metrics across ventures"
+    columns:
+      - name: venture_id
+        tests:
+          - not_null
+      - name: monthly_revenue
+        tests:
+          - not_null
