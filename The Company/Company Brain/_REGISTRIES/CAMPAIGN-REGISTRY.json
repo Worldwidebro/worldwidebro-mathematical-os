@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "version": "1.0.0",
-  "last_updated": "2026-09-19T20:27:36.442Z",
+  "last_updated": "2026-09-21T12:17:15.563Z",
   "campaigns": [
     {
       "id": "CAM-001",
@@ -310,6 +310,29 @@
       "primary_kpi": "LEADS_GENERATED",
       "offer_code": "OFR-AUDIT-001",
       "deadline": "2026-10-19",
+      "landing_page_url": "https://growth.worldwidebro.com"
+    },
+    {
+      "id": "CAM-005",
+      "name": "Automated Test Campaign",
+      "slug": "automated-test-campaign",
+      "status": "staging",
+      "reality_status": "VERIFIED",
+      "venture_id": "VEN-001",
+      "channel": "Omnichannel",
+      "channels": [
+        "CHN-OUT-001"
+      ],
+      "spend": "$5,000",
+      "planned_spend_usd": 5000,
+      "actual_spend_usd": 0,
+      "expected_revenue_usd": 25000,
+      "roas": "0.0",
+      "leads": 0,
+      "progress": 5,
+      "primary_kpi": "LEADS_GENERATED",
+      "offer_code": "OFR-AUDIT-001",
+      "deadline": "2026-10-21",
       "landing_page_url": "https://growth.worldwidebro.com"
     }
   ]
