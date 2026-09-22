@@ -1,0 +1,962 @@
+[
+  {
+    "id": "SITE-0001",
+    "name": "Ops Staff 001 Staffing",
+    "venture_id": "OPS-001",
+    "url": "https://ops-staff-001-staffing-worldwidebros-projects.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 492.58,
+    "error": null
+  },
+  {
+    "id": "SITE-0002",
+    "name": "Lt 005 Medical Courier Dispatch",
+    "venture_id": "LT-005",
+    "url": "https://lt-005-medical-courier-dispatch.vercel.app",
+    "http_status": 404,
+    "is_live": false,
+    "latency_ms": 293.04,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "id": "SITE-0003",
+    "name": "Lt 005 Deploy Temp",
+    "venture_id": "LT-005",
+    "url": "https://lt-005-deploy-temp.vercel.app",
+    "http_status": 404,
+    "is_live": false,
+    "latency_ms": 420.96,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "id": "SITE-0004",
+    "name": "Healthroute Courier",
+    "venture_id": "LT-005",
+    "url": "https://healthroute-courier.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 327.04,
+    "error": null
+  },
+  {
+    "id": "SITE-0005",
+    "name": "Re 001 Worldwidebro Holdings",
+    "venture_id": "RE-001",
+    "url": "https://re-001-worldwidebro-holdings.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 308.44,
+    "error": null
+  },
+  {
+    "id": "SITE-0006",
+    "name": "Callcenter",
+    "venture_id": "UNASSIGNED",
+    "url": "https://callcenter-eosin.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 326.51,
+    "error": null
+  },
+  {
+    "id": "SITE-0007",
+    "name": "Constructionos Dashboard",
+    "venture_id": "UNASSIGNED",
+    "url": "https://constructionos-dashboard.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 544.83,
+    "error": null
+  },
+  {
+    "id": "SITE-0008",
+    "name": "Venture Hub",
+    "venture_id": "UNASSIGNED",
+    "url": "https://venture-hub-worldwidebros-projects.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1271.51,
+    "error": null
+  },
+  {
+    "id": "SITE-0009",
+    "name": "Ec 113 Kosmic Kitty",
+    "venture_id": "EC-113",
+    "url": "https://ec-113-kosmic-kitty-worldwidebros-projects.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1271.1,
+    "error": null
+  },
+  {
+    "id": "SITE-0010",
+    "name": "Ec 113 Separate",
+    "venture_id": "EC-113",
+    "url": "https://ec-113-separate-worldwidebros-projects.vercel.app",
+    "http_status": 404,
+    "is_live": false,
+    "latency_ms": 291.98,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "id": "SITE-0011",
+    "name": "Storefront",
+    "venture_id": "UNASSIGNED",
+    "url": "https://storefront-worldwidebros-projects.vercel.app",
+    "http_status": 404,
+    "is_live": false,
+    "latency_ms": 360.79,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "id": "SITE-0012",
+    "name": "Ec 112 Cosmic Kitty",
+    "venture_id": "EC-112",
+    "url": "https://ec-112-cosmic-kitty-worldwidebros-projects.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1298.62,
+    "error": null
+  },
+  {
+    "id": "SITE-0013",
+    "name": "Lt 011 Dispatch Software",
+    "venture_id": "LT-011",
+    "url": "https://lt-011-dispatch-software.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 423.56,
+    "error": null
+  },
+  {
+    "id": "SITE-0014",
+    "name": "Vex Hero Site",
+    "venture_id": "UNASSIGNED",
+    "url": "https://vex-hero-site-sigma.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 369.18,
+    "error": null
+  },
+  {
+    "id": "SITE-0015",
+    "name": "Con 001 Ace Construction",
+    "venture_id": "CON-001",
+    "url": "https://con-001-ace-construction.vercel.app",
+    "http_status": 404,
+    "is_live": false,
+    "latency_ms": 359.68,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "id": "SITE-0016",
+    "name": "Con001 Gsd",
+    "venture_id": "UNASSIGNED",
+    "url": "https://con001-gsd-worldwidebros-projects.vercel.app",
+    "http_status": 404,
+    "is_live": false,
+    "latency_ms": 499.85,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "id": "SITE-0017",
+    "name": "Ec 001 Angels In Daylight",
+    "venture_id": "EC-001",
+    "url": "https://ec-001-angels-in-daylight.vercel.app",
+    "http_status": 404,
+    "is_live": false,
+    "latency_ms": 596.7,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "id": "SITE-0018",
+    "name": "Fin 033 Ai Tax Preparation Service",
+    "venture_id": "FIN-033",
+    "url": "https://fin-033-ai-tax-preparation-service.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 596.47,
+    "error": null
+  },
+  {
+    "id": "SITE-0019",
+    "name": "Fin 021 Tax Deduction Finder",
+    "venture_id": "FIN-021",
+    "url": "https://fin-021-tax-deduction-finder.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 668.78,
+    "error": null
+  },
+  {
+    "id": "SITE-0020",
+    "name": "Fin 009 Crypto Tax Optimizer",
+    "venture_id": "FIN-009",
+    "url": "https://fin-009-crypto-tax-optimizer.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 610.76,
+    "error": null
+  },
+  {
+    "id": "SITE-0021",
+    "name": "Fin 006 Tax Prep Filing Services",
+    "venture_id": "FIN-006",
+    "url": "https://fin-006-tax-prep-filing-services.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 509.65,
+    "error": null
+  },
+  {
+    "id": "SITE-0022",
+    "name": "Hermes Command Center",
+    "venture_id": "UNASSIGNED",
+    "url": "https://hermes-command-center-iota.vercel.app",
+    "http_status": 404,
+    "is_live": false,
+    "latency_ms": 423.88,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "id": "SITE-0023",
+    "name": "Ec 111 Miss Toys",
+    "venture_id": "EC-111",
+    "url": "https://ec-111-miss-toys.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 588.78,
+    "error": null
+  },
+  {
+    "id": "SITE-0024",
+    "name": "Vapi Voice Os",
+    "venture_id": "UNASSIGNED",
+    "url": "https://vapi-voice-os.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 426.78,
+    "error": null
+  },
+  {
+    "id": "SITE-0025",
+    "name": "Divine Johns Portfolio",
+    "venture_id": "UNASSIGNED",
+    "url": "https://divine-johns-portfolio.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 478.7,
+    "error": null
+  },
+  {
+    "id": "SITE-0026",
+    "name": "Tech 062 Iza Os",
+    "venture_id": "UNASSIGNED",
+    "url": "https://tech-062-iza-os.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 539.84,
+    "error": null
+  },
+  {
+    "id": "SITE-0027",
+    "name": "Arbitrage Nexus",
+    "venture_id": "UNASSIGNED",
+    "url": "https://arbitrage-nexus.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 477.32,
+    "error": null
+  },
+  {
+    "id": "SITE-0028",
+    "name": "Genixbank Hero Site",
+    "venture_id": "UNASSIGNED",
+    "url": "https://genixbank-hero-site.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 400.84,
+    "error": null
+  },
+  {
+    "id": "SITE-0029",
+    "name": "Mc 006 Video Production Company",
+    "venture_id": "MC-006",
+    "url": "https://mc-006-video-production-company.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 341.58,
+    "error": null
+  },
+  {
+    "id": "SITE-0030",
+    "name": "Marketeam",
+    "venture_id": "UNASSIGNED",
+    "url": "https://marketeam-beta.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 622.3,
+    "error": null
+  },
+  {
+    "id": "SITE-0031",
+    "name": "Edu Landing Kit Template",
+    "venture_id": "UNASSIGNED",
+    "url": "https://edu-landing-kit-template.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 621.68,
+    "error": null
+  },
+  {
+    "id": "SITE-0032",
+    "name": "Bloom Community Hub",
+    "venture_id": "UNASSIGNED",
+    "url": "https://bloom-community-hub.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 428.58,
+    "error": null
+  },
+  {
+    "id": "SITE-0033",
+    "name": "Comm 014 Veterans Support Ai",
+    "venture_id": "COMM-014",
+    "url": "https://comm-014-veterans-support-ai-worldwidebros-projects.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1203.47,
+    "error": null
+  },
+  {
+    "id": "SITE-0034",
+    "name": "Comm 050 Community Cultural Ai",
+    "venture_id": "COMM-050",
+    "url": "https://comm-050-community-cultural-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1460.93,
+    "error": null
+  },
+  {
+    "id": "SITE-0035",
+    "name": "Comm 049 Public Event Ai",
+    "venture_id": "COMM-049",
+    "url": "https://comm-049-public-event-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1749.73,
+    "error": null
+  },
+  {
+    "id": "SITE-0036",
+    "name": "Comm 048 Community Transportation Ai",
+    "venture_id": "COMM-048",
+    "url": "https://comm-048-community-transportation-a.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1411.02,
+    "error": null
+  },
+  {
+    "id": "SITE-0037",
+    "name": "Comm 047 Public Fitness Ai",
+    "venture_id": "COMM-047",
+    "url": "https://comm-047-public-fitness-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1356.7,
+    "error": null
+  },
+  {
+    "id": "SITE-0038",
+    "name": "Comm 046 Community Pet Care Ai",
+    "venture_id": "COMM-046",
+    "url": "https://comm-046-community-pet-care-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1400.27,
+    "error": null
+  },
+  {
+    "id": "SITE-0039",
+    "name": "Comm 045 Public Childcare Ai",
+    "venture_id": "COMM-045",
+    "url": "https://comm-045-public-childcare-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1254.73,
+    "error": null
+  },
+  {
+    "id": "SITE-0040",
+    "name": "Comm 044 Community Volunteering Ai",
+    "venture_id": "COMM-044",
+    "url": "https://comm-044-community-volunteering-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1471.3,
+    "error": null
+  },
+  {
+    "id": "SITE-0041",
+    "name": "Comm 043 Local Food Network Ai",
+    "venture_id": "COMM-043",
+    "url": "https://comm-043-local-food-network-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1204.97,
+    "error": null
+  },
+  {
+    "id": "SITE-0042",
+    "name": "Comm 042 Community Energy Ai",
+    "venture_id": "COMM-042",
+    "url": "https://comm-042-community-energy-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1405.94,
+    "error": null
+  },
+  {
+    "id": "SITE-0043",
+    "name": "Comm 041 Public Wi Fi Ai",
+    "venture_id": "COMM-041",
+    "url": "https://comm-041-public-wi-fi-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1262.31,
+    "error": null
+  },
+  {
+    "id": "SITE-0044",
+    "name": "Comm 040 Community Recycling Ai",
+    "venture_id": "COMM-040",
+    "url": "https://comm-040-community-recycling-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1437.49,
+    "error": null
+  },
+  {
+    "id": "SITE-0045",
+    "name": "Comm 039 Public Space Ai",
+    "venture_id": "COMM-039",
+    "url": "https://comm-039-public-space-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1230.87,
+    "error": null
+  },
+  {
+    "id": "SITE-0046",
+    "name": "Comm 038 Community Policing Ai",
+    "venture_id": "COMM-038",
+    "url": "https://comm-038-community-policing-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1243.62,
+    "error": null
+  },
+  {
+    "id": "SITE-0047",
+    "name": "Comm 037 Neighborhood Development Ai",
+    "venture_id": "COMM-037",
+    "url": "https://comm-037-neighborhood-development-a.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1516.81,
+    "error": null
+  },
+  {
+    "id": "SITE-0048",
+    "name": "Comm 036 Public Infrastructure Ai",
+    "venture_id": "COMM-036",
+    "url": "https://comm-036-public-infrastructure-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1275.73,
+    "error": null
+  },
+  {
+    "id": "SITE-0049",
+    "name": "Comm 035 Community Arts Ai",
+    "venture_id": "COMM-035",
+    "url": "https://comm-035-community-arts-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1113.37,
+    "error": null
+  },
+  {
+    "id": "SITE-0050",
+    "name": "Comm 034 Senior Tech Support",
+    "venture_id": "COMM-034",
+    "url": "https://comm-034-senior-tech-support.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1208.17,
+    "error": null
+  },
+  {
+    "id": "SITE-0051",
+    "name": "Comm 033 Youth Innovation Hub",
+    "venture_id": "COMM-033",
+    "url": "https://comm-033-youth-innovation-hub.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1142.79,
+    "error": null
+  },
+  {
+    "id": "SITE-0052",
+    "name": "Comm 032 Public Health Ai",
+    "venture_id": "COMM-032",
+    "url": "https://comm-032-public-health-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1297.14,
+    "error": null
+  },
+  {
+    "id": "SITE-0053",
+    "name": "Comm 031 Community Investment Ai",
+    "venture_id": "COMM-031",
+    "url": "https://comm-031-community-investment-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1262.82,
+    "error": null
+  },
+  {
+    "id": "SITE-0054",
+    "name": "Comm 030 Cultural Exchange Ai",
+    "venture_id": "COMM-030",
+    "url": "https://comm-030-cultural-exchange-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1385.67,
+    "error": null
+  },
+  {
+    "id": "SITE-0055",
+    "name": "Comm 029 Community Wellness Ai",
+    "venture_id": "COMM-029",
+    "url": "https://comm-029-community-wellness-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1378.99,
+    "error": null
+  },
+  {
+    "id": "SITE-0056",
+    "name": "Comm 028 Public Safety Ai",
+    "venture_id": "COMM-028",
+    "url": "https://comm-028-public-safety-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1293.36,
+    "error": null
+  },
+  {
+    "id": "SITE-0057",
+    "name": "Comm 027 Local Government Ai",
+    "venture_id": "COMM-027",
+    "url": "https://comm-027-local-government-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1249.42,
+    "error": null
+  },
+  {
+    "id": "SITE-0058",
+    "name": "Comm 026 Public Education Ai",
+    "venture_id": "COMM-026",
+    "url": "https://comm-026-public-education-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1496.5,
+    "error": null
+  },
+  {
+    "id": "SITE-0059",
+    "name": "Comm 025 Community Legal Aid",
+    "venture_id": "COMM-025",
+    "url": "https://comm-025-community-legal-aid.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1432.92,
+    "error": null
+  },
+  {
+    "id": "SITE-0060",
+    "name": "Comm 024 Youth Sports Ai",
+    "venture_id": "COMM-024",
+    "url": "https://comm-024-youth-sports-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1610.34,
+    "error": null
+  },
+  {
+    "id": "SITE-0061",
+    "name": "Comm 023 Elder Companion Ai",
+    "venture_id": "COMM-023",
+    "url": "https://comm-023-elder-companion-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1303.08,
+    "error": null
+  },
+  {
+    "id": "SITE-0062",
+    "name": "Comm 022 Job Training Center",
+    "venture_id": "COMM-022",
+    "url": "https://comm-022-job-training-center.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1412.36,
+    "error": null
+  },
+  {
+    "id": "SITE-0063",
+    "name": "Comm 021 Housing Assistance Ai",
+    "venture_id": "COMM-021",
+    "url": "https://comm-021-housing-assistance-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1223.74,
+    "error": null
+  },
+  {
+    "id": "SITE-0064",
+    "name": "Comm 020 Public Transportation Ai",
+    "venture_id": "COMM-020",
+    "url": "https://comm-020-public-transportation-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1362.62,
+    "error": null
+  },
+  {
+    "id": "SITE-0065",
+    "name": "Comm 019 Community Garden Ai",
+    "venture_id": "COMM-019",
+    "url": "https://comm-019-community-garden-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1256.16,
+    "error": null
+  },
+  {
+    "id": "SITE-0066",
+    "name": "Comm 018 Neighborhood Watch Ai",
+    "venture_id": "COMM-018",
+    "url": "https://comm-018-neighborhood-watch-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1178.97,
+    "error": null
+  },
+  {
+    "id": "SITE-0067",
+    "name": "Comm 017 Local Business Directory",
+    "venture_id": "COMM-017",
+    "url": "https://comm-017-local-business-directory.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1360.02,
+    "error": null
+  },
+  {
+    "id": "SITE-0068",
+    "name": "Comm 016 Community Health Ai",
+    "venture_id": "COMM-016",
+    "url": "https://comm-016-community-health-ai-worldwidebros-projects.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1329.04,
+    "error": null
+  },
+  {
+    "id": "SITE-0069",
+    "name": "Comm 015 Youth Mentorship Program",
+    "venture_id": "COMM-015",
+    "url": "https://comm-015-youth-mentorship-program.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1259.97,
+    "error": null
+  },
+  {
+    "id": "SITE-0070",
+    "name": "Comm 013 Women S Empowerment Network",
+    "venture_id": "COMM-013",
+    "url": "https://comm-013-women-s-empowerment-networ.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1179.18,
+    "error": null
+  },
+  {
+    "id": "SITE-0071",
+    "name": "Comm 012 Black Art Museum Ai",
+    "venture_id": "COMM-012",
+    "url": "https://comm-012-black-art-museum-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1159.3,
+    "error": null
+  },
+  {
+    "id": "SITE-0072",
+    "name": "Comm 011 Indigenous Creator Hub",
+    "venture_id": "COMM-011",
+    "url": "https://comm-011-indigenous-creator-hub.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1300.92,
+    "error": null
+  },
+  {
+    "id": "SITE-0073",
+    "name": "Comm 010 Disaster Relief Ai",
+    "venture_id": "COMM-010",
+    "url": "https://comm-010-disaster-relief-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1408.55,
+    "error": null
+  },
+  {
+    "id": "SITE-0074",
+    "name": "Comm 009 Volunteer Hub Ai",
+    "venture_id": "COMM-009",
+    "url": "https://comm-009-volunteer-hub-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1278.32,
+    "error": null
+  },
+  {
+    "id": "SITE-0075",
+    "name": "Comm 008 Community Fundraising Ai",
+    "venture_id": "COMM-008",
+    "url": "https://comm-008-community-fundraising-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1200.39,
+    "error": null
+  },
+  {
+    "id": "SITE-0076",
+    "name": "Comm 007 Youth Leadership Ai",
+    "venture_id": "COMM-007",
+    "url": "https://comm-007-youth-leadership-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1253.26,
+    "error": null
+  },
+  {
+    "id": "SITE-0077",
+    "name": "Comm 006 Community Technology Access Ai",
+    "venture_id": "COMM-006",
+    "url": "https://comm-006-community-technology-acces.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1368.05,
+    "error": null
+  },
+  {
+    "id": "SITE-0078",
+    "name": "Comm 005 Ace Food Security Ai",
+    "venture_id": "COMM-005",
+    "url": "https://comm-005-ace-food-security-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1560.33,
+    "error": null
+  },
+  {
+    "id": "SITE-0079",
+    "name": "Comm 004 Community Outreach Nonprofit",
+    "venture_id": "COMM-004",
+    "url": "https://comm-004-community-outreach-nonprof.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1368.3,
+    "error": null
+  },
+  {
+    "id": "SITE-0080",
+    "name": "Comm 002 Brotherhood Coaching Network",
+    "venture_id": "COMM-002",
+    "url": "https://comm-002-brotherhood-coaching-netwo.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1386.23,
+    "error": null
+  },
+  {
+    "id": "SITE-0081",
+    "name": "Comm 001 Luminary Worldwide Events",
+    "venture_id": "COMM-001",
+    "url": "https://comm-001-luminary-worldwide-events.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1460.43,
+    "error": null
+  },
+  {
+    "id": "SITE-0082",
+    "name": "Comm 003 Ace Senior Care Connect",
+    "venture_id": "COMM-003",
+    "url": "https://comm-003-ace-senior-care-connect.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1522.16,
+    "error": null
+  },
+  {
+    "id": "SITE-0083",
+    "name": "Quantum Brain Sync Website Gf1F",
+    "venture_id": "UNASSIGNED",
+    "url": "https://quantum-brain-sync-website-gf1f.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 624.56,
+    "error": null
+  },
+  {
+    "id": "SITE-0084",
+    "name": "Quantum Brain Sync Website N7A4",
+    "venture_id": "UNASSIGNED",
+    "url": "https://quantum-brain-sync-website-n7a4.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 666.28,
+    "error": null
+  },
+  {
+    "id": "SITE-0085",
+    "name": "Genixbank Financial System",
+    "venture_id": "UNASSIGNED",
+    "url": "https://genixbank-financial-system.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 522.56,
+    "error": null
+  },
+  {
+    "id": "SITE-0086",
+    "name": "Quantum Brain Sync Website Zevz",
+    "venture_id": "UNASSIGNED",
+    "url": "https://quantum-brain-sync-website-zevz.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 613.26,
+    "error": null
+  },
+  {
+    "id": "SITE-0087",
+    "name": "Simple Landing",
+    "venture_id": "UNASSIGNED",
+    "url": "https://simple-landing-pi.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 485.22,
+    "error": null
+  },
+  {
+    "id": "SITE-0088",
+    "name": "Civilization Os",
+    "venture_id": "UNASSIGNED",
+    "url": "https://civilization-os.vercel.app",
+    "http_status": 404,
+    "is_live": false,
+    "latency_ms": 342.19,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "id": "SITE-0089",
+    "name": "Ps 012 Website Build",
+    "venture_id": "UNASSIGNED",
+    "url": "https://ps-012-website-build.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 497.85,
+    "error": null
+  },
+  {
+    "id": "SITE-0090",
+    "name": "Quantum Brain Sync Website",
+    "venture_id": "UNASSIGNED",
+    "url": "https://quantum-brain-sync-website.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 492.51,
+    "error": null
+  },
+  {
+    "id": "SITE-0091",
+    "name": "Pitch Kit",
+    "venture_id": "UNASSIGNED",
+    "url": "https://pitch-kit-zeta.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 506.47,
+    "error": null
+  },
+  {
+    "id": "SITE-0092",
+    "name": "Bw 001 Up Next Web",
+    "venture_id": "BW-001",
+    "url": "https://bw-001-up-next-web.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 410.6,
+    "error": null
+  },
+  {
+    "id": "SITE-0093",
+    "name": "V0 Integrations Page",
+    "venture_id": "UNASSIGNED",
+    "url": "https://v0-integrations-page-gold.vercel.app",
+    "http_status": 404,
+    "is_live": false,
+    "latency_ms": 552.28,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "id": "SITE-0094",
+    "name": "00 Dashboard",
+    "venture_id": "UNASSIGNED",
+    "url": "https://00-dashboard.vercel.app",
+    "http_status": 404,
+    "is_live": false,
+    "latency_ms": 482.55,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "id": "SITE-0095",
+    "name": "Iza Os Enterprise",
+    "venture_id": "UNASSIGNED",
+    "url": "https://iza-os-enterprise.vercel.app",
+    "http_status": null,
+    "is_live": false,
+    "latency_ms": 5319.47,
+    "error": "timeout: The read operation timed out"
+  },
+  {
+    "id": "SITE-0096",
+    "name": "Worldwidebro Venture Portal",
+    "venture_id": "VEN-001-CORE",
+    "url": "https://worldwidebro-venture-portal.vercel.app",
+    "http_status": 404,
+    "is_live": false,
+    "latency_ms": 368.37,
+    "error": "HTTP Error 404: Not Found"
+  }
+]

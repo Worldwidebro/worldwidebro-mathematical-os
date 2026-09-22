@@ -31,6 +31,23 @@ It answers: **“What is true, what matters, where do I go, and what am I allowe
 
 ---
 
+## 1.5. THE OPERATING PATTERN (THE LLM WIKI)
+
+Company Brain operates on the **LLM Wiki Pattern**. Knowledge is not retrieved from scratch on every query; it is continuously compiled, cross-referenced, and synthesized into a persistent markdown codebase. 
+
+### The Three Architectural Layers
+1. **Raw Sources:** External PDFs, Git repositories, Stripe data dumps, and meeting transcripts. *(Immutable ground truth).*
+2. **The Wiki (Company Brain):** The structured directories of markdown files (`23-VENTURES`, `SECTORS`, `ADRs`), indexed by `gbrain` and `Neo4j`. *(The compounding, interlinked knowledge base).*
+3. **The Schema:** `STARTHERE.md`, `ANTIGRAVITY.md`, `AGENTS.md`, and `CLAUDE.md`. *(The strict configuration rules that govern how the LLM maintains the Wiki).*
+
+### The Division of Labor
+- **The Human's Job:** Curate raw sources, define commercial strategy, navigate the real world, and ask the right questions.
+- **The LLM's Job (Antigravity / Agents):** Do the tedious bookkeeping. When a new source is introduced, the LLM reads it, synthesizes it, updates venture summaries, cross-references sector indices, wires the Neo4j relationships, and maintains the graph. 
+
+*We do not lose knowledge to chat history amnesia. Every session compounds into the Wiki.*
+
+---
+
 ## 2. READ THESE FIRST (MANDATORY OPERATING SEQUENCE)
 
 Before writing code, declaring features, or making changes, read in exact sequence:

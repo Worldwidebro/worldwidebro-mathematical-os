@@ -1,0 +1,2722 @@
+[
+  {
+    "site_id": "SITE-0001",
+    "site_name": "Ops Staff 001 Staffing",
+    "venture_id": "OPS-001",
+    "url": "https://ops-staff-001-staffing-worldwidebros-projects.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 492.58,
+    "sector": "STAFFING & WORKFORCE",
+    "distance_to_cash": "Immediate (< 24h)",
+    "deployment_stack": "Next.js Frontend (Vercel) + PostgreSQL / Gauzy ATS (Mac Studio Docker)",
+    "pipeline_plan": "Candidate submits resume on Vercel -> Webhook fires n8n -> Gauzy ATS registers candidate -> Decision Engine matches trade license -> Twenty CRM notifies recruiter.",
+    "attached_starred_repos": [
+      {
+        "repo": "ever-co/ever-gauzy",
+        "role": "Open-source ATS & HRM platform",
+        "action": "Ingests applicant submissions from Vercel front door into local PostgreSQL candidate pool."
+      },
+      {
+        "repo": "unclecode/crawl4ai",
+        "role": "Autonomous job board scraper",
+        "action": "Scrapes warehouse/distribution job listings in Charlotte to feed high-demand requisition pipeline."
+      },
+      {
+        "repo": "twentyhq/twenty",
+        "role": "Open-source Salesforce CRM alternative",
+        "action": "Tracks corporate staffing contracts, bill rates, and markup margins."
+      },
+      {
+        "repo": "Jakeschincariol/linkedin-agent-skill",
+        "role": "Claude automated LinkedIn outbound",
+        "action": "Executes 21 hook formulas to message Charlotte operations and hiring managers."
+      },
+      {
+        "repo": "n8n-io/n8n",
+        "role": "Workflow automation",
+        "action": "Fires candidate SMS/email confirmations and sends background check forms via webhook."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0002",
+    "site_name": "Lt 005 Medical Courier Dispatch",
+    "venture_id": "LT-005",
+    "url": "https://lt-005-medical-courier-dispatch.vercel.app",
+    "http_status": 404,
+    "is_live": false,
+    "latency_ms": 293.04,
+    "sector": "HEALTHCARE LOGISTICS & MEDICAL COURIER",
+    "distance_to_cash": "Immediate (< 24h)",
+    "deployment_stack": "Next.js Frontend (Vercel) + LT-011 Dispatch Engine (Local API) + SQLite/PGLite",
+    "pipeline_plan": "Clinic manager books STAT pickup on HealthRoute Vercel portal -> n8n validates temperature constraints -> LT-011 assigns closest courier -> Proof-of-delivery PDF generated via Stirling-PDF.",
+    "attached_starred_repos": [
+      {
+        "repo": "Mahanaicoach/google-maps-scraper-kit",
+        "role": "Local Google Maps clinic scraper",
+        "action": "Extracts contacts for 150+ hospital labs, dialysis centers, and urgent care clinics across Charlotte."
+      },
+      {
+        "repo": "n8n-io/n8n",
+        "role": "Visual webhook engine",
+        "action": "Receives STAT specimen pickup requests from HealthRoute portal and dispatches directly to LT-011."
+      },
+      {
+        "repo": "opendatalab/MinerU",
+        "role": "Document/Manifest OCR",
+        "action": "Parses laboratory specimen manifests and chain-of-custody transfer slips."
+      },
+      {
+        "repo": "browser-use/browser-use",
+        "role": "Headless browser RPA",
+        "action": "Automates scheduled pickup bookings on hospital portal interfaces that lack open REST APIs."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0003",
+    "site_name": "Lt 005 Deploy Temp",
+    "venture_id": "LT-005",
+    "url": "https://lt-005-deploy-temp.vercel.app",
+    "http_status": 404,
+    "is_live": false,
+    "latency_ms": 420.96,
+    "sector": "HEALTHCARE LOGISTICS & MEDICAL COURIER",
+    "distance_to_cash": "Immediate (< 24h)",
+    "deployment_stack": "Next.js Frontend (Vercel) + LT-011 Dispatch Engine (Local API) + SQLite/PGLite",
+    "pipeline_plan": "Clinic manager books STAT pickup on HealthRoute Vercel portal -> n8n validates temperature constraints -> LT-011 assigns closest courier -> Proof-of-delivery PDF generated via Stirling-PDF.",
+    "attached_starred_repos": [
+      {
+        "repo": "Mahanaicoach/google-maps-scraper-kit",
+        "role": "Local Google Maps clinic scraper",
+        "action": "Extracts contacts for 150+ hospital labs, dialysis centers, and urgent care clinics across Charlotte."
+      },
+      {
+        "repo": "n8n-io/n8n",
+        "role": "Visual webhook engine",
+        "action": "Receives STAT specimen pickup requests from HealthRoute portal and dispatches directly to LT-011."
+      },
+      {
+        "repo": "opendatalab/MinerU",
+        "role": "Document/Manifest OCR",
+        "action": "Parses laboratory specimen manifests and chain-of-custody transfer slips."
+      },
+      {
+        "repo": "browser-use/browser-use",
+        "role": "Headless browser RPA",
+        "action": "Automates scheduled pickup bookings on hospital portal interfaces that lack open REST APIs."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0004",
+    "site_name": "Healthroute Courier",
+    "venture_id": "LT-005",
+    "url": "https://healthroute-courier.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 327.04,
+    "sector": "HEALTHCARE LOGISTICS & MEDICAL COURIER",
+    "distance_to_cash": "Immediate (< 24h)",
+    "deployment_stack": "Next.js Frontend (Vercel) + LT-011 Dispatch Engine (Local API) + SQLite/PGLite",
+    "pipeline_plan": "Clinic manager books STAT pickup on HealthRoute Vercel portal -> n8n validates temperature constraints -> LT-011 assigns closest courier -> Proof-of-delivery PDF generated via Stirling-PDF.",
+    "attached_starred_repos": [
+      {
+        "repo": "Mahanaicoach/google-maps-scraper-kit",
+        "role": "Local Google Maps clinic scraper",
+        "action": "Extracts contacts for 150+ hospital labs, dialysis centers, and urgent care clinics across Charlotte."
+      },
+      {
+        "repo": "n8n-io/n8n",
+        "role": "Visual webhook engine",
+        "action": "Receives STAT specimen pickup requests from HealthRoute portal and dispatches directly to LT-011."
+      },
+      {
+        "repo": "opendatalab/MinerU",
+        "role": "Document/Manifest OCR",
+        "action": "Parses laboratory specimen manifests and chain-of-custody transfer slips."
+      },
+      {
+        "repo": "browser-use/browser-use",
+        "role": "Headless browser RPA",
+        "action": "Automates scheduled pickup bookings on hospital portal interfaces that lack open REST APIs."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0005",
+    "site_name": "Re 001 Worldwidebro Holdings",
+    "venture_id": "RE-001",
+    "url": "https://re-001-worldwidebro-holdings.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 308.44,
+    "sector": "REAL ESTATE & HOLDINGS",
+    "distance_to_cash": "Direct (< 48h)",
+    "deployment_stack": "Next.js Frontend (Vercel) + Stirling-PDF (:8080) + gstack",
+    "pipeline_plan": "Property address entered -> CloakBrowser fetches county tax and deed history -> Financial model generated -> gstack outputs bank presentation.",
+    "attached_starred_repos": [
+      {
+        "repo": "CloakHQ/CloakBrowser",
+        "role": "Stealth Chromium RPA",
+        "action": "Scrapes county tax assessor portals and GIS parcel registries without Cloudflare IP blocking."
+      },
+      {
+        "repo": "Stirling-Tools/Stirling-PDF",
+        "role": "Document room suite",
+        "action": "Redacts, OCRs, and merges institutional loan packets (SBA 504) on-premise."
+      },
+      {
+        "repo": "garrytan/gstack",
+        "role": "Prospectus compiler",
+        "action": "Compiles publication-grade 16:9 investor pitch decks and data room packages."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0006",
+    "site_name": "Callcenter",
+    "venture_id": "CALLCENTER",
+    "url": "https://callcenter-eosin.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 326.51,
+    "sector": "OMNICHANNEL AI COMMUNICATIONS",
+    "distance_to_cash": "Immediate (< 24h)",
+    "deployment_stack": "Next.js Frontend (Vercel) + Chatwoot + Twilio Voice Webhooks + OmniRoute",
+    "pipeline_plan": "Customer calls or chats on portal -> Twilio routes audio to Meetily Whisper -> OmniRoute classifies intent -> Chatwoot assigns ticket to closer or auto-resolves.",
+    "attached_starred_repos": [
+      {
+        "repo": "chatwoot/chatwoot",
+        "role": "Omnichannel customer support desk",
+        "action": "Consolidates live chat, SMS, and email queues into a single shared inbox."
+      },
+      {
+        "repo": "czlonkowski/n8n-mcp",
+        "role": "n8n MCP bridge",
+        "action": "Allows AI agents to programmatically read and answer inbound customer tickets."
+      },
+      {
+        "repo": "Zackriya-Solutions/meetily",
+        "role": "Fast Whisper live transcription",
+        "action": "Transcribes incoming Twilio calls in real time for sentiment and lead capture."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0007",
+    "site_name": "Constructionos Dashboard",
+    "venture_id": "CON-001",
+    "url": "https://constructionos-dashboard.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 544.83,
+    "sector": "COMMERCIAL CONSTRUCTION & CONTRACTING",
+    "distance_to_cash": "Direct (< 48h)",
+    "deployment_stack": "Next.js Frontend (Vercel) + Typesense (:8108) + Supabase",
+    "pipeline_plan": "Commercial GC submits scope of work on ConstructionOS -> Typesense matches trade packages -> Twenty CRM logs opportunity -> gstack generates quote PDF.",
+    "attached_starred_repos": [
+      {
+        "repo": "typesense/typesense",
+        "role": "In-memory fast catalog search",
+        "action": "Sub-millisecond search over building material catalogs, equipment rentals, and trade contractor rates."
+      },
+      {
+        "repo": "twentyhq/twenty",
+        "role": "Commercial CRM",
+        "action": "Tracks commercial GC bids, subcontractor agreements, and project change orders."
+      },
+      {
+        "repo": "garrytan/gstack",
+        "role": "PDF prospectus and quote generator",
+        "action": "Compiles professional vector PDF project estimate proposals and AIA payment schedules."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0008",
+    "site_name": "Venture Hub",
+    "venture_id": "VEN-001",
+    "url": "https://venture-hub-worldwidebros-projects.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1271.51,
+    "sector": "CORE OPERATING INFRASTRUCTURE",
+    "distance_to_cash": "Infrastructure Core",
+    "deployment_stack": "Next.js on Vercel",
+    "pipeline_plan": "Provides foundational web hosting and user interface access.",
+    "attached_starred_repos": [
+      {
+        "repo": "openobserve/openobserve",
+        "role": "Telemetry & logs",
+        "action": "Collects frontend performance metrics and errors."
+      },
+      {
+        "repo": "DietrichGebert/ponytail",
+        "role": "Anti-bloat guardrail",
+        "action": "Prevents redundant dependencies on web endpoints."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0009",
+    "site_name": "Ec 113 Kosmic Kitty",
+    "venture_id": "EC-113",
+    "url": "https://ec-113-kosmic-kitty-worldwidebros-projects.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1271.1,
+    "sector": "E-COMMERCE & BRANDS",
+    "distance_to_cash": "Direct (< 48h)",
+    "deployment_stack": "Next.js on Vercel + Shopify/Stripe API",
+    "pipeline_plan": "Customer browses 3D interactive storefront -> Adds to cart -> Stripe webhook processes checkout.",
+    "attached_starred_repos": [
+      {
+        "repo": "mutonby/openshorts",
+        "role": "Viral 9:16 short video generator",
+        "action": "Automates product demo clips and social media reels."
+      },
+      {
+        "repo": "MengTo/threeui",
+        "role": "Interactive 3D component catalog",
+        "action": "Renders interactive 3D product previews on Kosmic Kitty storefront."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0010",
+    "site_name": "Ec 113 Separate",
+    "venture_id": "EC-113",
+    "url": "https://ec-113-separate-worldwidebros-projects.vercel.app",
+    "http_status": 404,
+    "is_live": false,
+    "latency_ms": 291.98,
+    "sector": "E-COMMERCE & BRANDS",
+    "distance_to_cash": "Direct (< 48h)",
+    "deployment_stack": "Next.js on Vercel + Shopify/Stripe API",
+    "pipeline_plan": "Customer browses 3D interactive storefront -> Adds to cart -> Stripe webhook processes checkout.",
+    "attached_starred_repos": [
+      {
+        "repo": "mutonby/openshorts",
+        "role": "Viral 9:16 short video generator",
+        "action": "Automates product demo clips and social media reels."
+      },
+      {
+        "repo": "MengTo/threeui",
+        "role": "Interactive 3D component catalog",
+        "action": "Renders interactive 3D product previews on Kosmic Kitty storefront."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0011",
+    "site_name": "Storefront",
+    "venture_id": "UNASSIGNED",
+    "url": "https://storefront-worldwidebros-projects.vercel.app",
+    "http_status": 404,
+    "is_live": false,
+    "latency_ms": 360.79,
+    "sector": "CORE OPERATING INFRASTRUCTURE",
+    "distance_to_cash": "Infrastructure Core",
+    "deployment_stack": "Next.js on Vercel",
+    "pipeline_plan": "Provides foundational web hosting and user interface access.",
+    "attached_starred_repos": [
+      {
+        "repo": "openobserve/openobserve",
+        "role": "Telemetry & logs",
+        "action": "Collects frontend performance metrics and errors."
+      },
+      {
+        "repo": "DietrichGebert/ponytail",
+        "role": "Anti-bloat guardrail",
+        "action": "Prevents redundant dependencies on web endpoints."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0012",
+    "site_name": "Ec 112 Cosmic Kitty",
+    "venture_id": "EC-112",
+    "url": "https://ec-112-cosmic-kitty-worldwidebros-projects.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1298.62,
+    "sector": "E-COMMERCE & BRANDS",
+    "distance_to_cash": "Direct (< 48h)",
+    "deployment_stack": "Next.js on Vercel + Shopify/Stripe API",
+    "pipeline_plan": "Customer browses 3D interactive storefront -> Adds to cart -> Stripe webhook processes checkout.",
+    "attached_starred_repos": [
+      {
+        "repo": "mutonby/openshorts",
+        "role": "Viral 9:16 short video generator",
+        "action": "Automates product demo clips and social media reels."
+      },
+      {
+        "repo": "MengTo/threeui",
+        "role": "Interactive 3D component catalog",
+        "action": "Renders interactive 3D product previews on Kosmic Kitty storefront."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0013",
+    "site_name": "Lt 011 Dispatch Software",
+    "venture_id": "LT-011",
+    "url": "https://lt-011-dispatch-software.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 423.56,
+    "sector": "TRANSPORTATION & FLEET MANAGEMENT",
+    "distance_to_cash": "Direct (< 48h)",
+    "deployment_stack": "Next.js Frontend (Vercel) + OpenObserve (:5080) + OSRM Routing Engine",
+    "pipeline_plan": "Carrier logs into CarrierDispatch -> System ingests rate con PDF -> Calculates optimal multi-stop route -> Live tracking link shared with shipper.",
+    "attached_starred_repos": [
+      {
+        "repo": "openobserve/openobserve",
+        "role": "Rust telemetry & trace logger",
+        "action": "Tracks real-time GPS telemetry, deadhead mileage reduction, and driver transit spans."
+      },
+      {
+        "repo": "bilawalsidhu/gods-eye-view",
+        "role": "Browser satellite & geospatial visualizer",
+        "action": "Renders real-time multi-mode vehicle movements on VEX fleet map."
+      },
+      {
+        "repo": "jsvine/pdfplumber",
+        "role": "Rate sheet table parser",
+        "action": "Parses rate confirmations and bills of lading from freight brokers."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0014",
+    "site_name": "Vex Hero Site",
+    "venture_id": "UNASSIGNED",
+    "url": "https://vex-hero-site-sigma.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 369.18,
+    "sector": "CORE OPERATING INFRASTRUCTURE",
+    "distance_to_cash": "Infrastructure Core",
+    "deployment_stack": "Next.js on Vercel",
+    "pipeline_plan": "Provides foundational web hosting and user interface access.",
+    "attached_starred_repos": [
+      {
+        "repo": "openobserve/openobserve",
+        "role": "Telemetry & logs",
+        "action": "Collects frontend performance metrics and errors."
+      },
+      {
+        "repo": "DietrichGebert/ponytail",
+        "role": "Anti-bloat guardrail",
+        "action": "Prevents redundant dependencies on web endpoints."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0015",
+    "site_name": "Con 001 Ace Construction",
+    "venture_id": "CON-001",
+    "url": "https://con-001-ace-construction.vercel.app",
+    "http_status": 404,
+    "is_live": false,
+    "latency_ms": 359.68,
+    "sector": "COMMERCIAL CONSTRUCTION & CONTRACTING",
+    "distance_to_cash": "Direct (< 48h)",
+    "deployment_stack": "Next.js Frontend (Vercel) + Typesense (:8108) + Supabase",
+    "pipeline_plan": "Commercial GC submits scope of work on ConstructionOS -> Typesense matches trade packages -> Twenty CRM logs opportunity -> gstack generates quote PDF.",
+    "attached_starred_repos": [
+      {
+        "repo": "typesense/typesense",
+        "role": "In-memory fast catalog search",
+        "action": "Sub-millisecond search over building material catalogs, equipment rentals, and trade contractor rates."
+      },
+      {
+        "repo": "twentyhq/twenty",
+        "role": "Commercial CRM",
+        "action": "Tracks commercial GC bids, subcontractor agreements, and project change orders."
+      },
+      {
+        "repo": "garrytan/gstack",
+        "role": "PDF prospectus and quote generator",
+        "action": "Compiles professional vector PDF project estimate proposals and AIA payment schedules."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0016",
+    "site_name": "Con001 Gsd",
+    "venture_id": "UNASSIGNED",
+    "url": "https://con001-gsd-worldwidebros-projects.vercel.app",
+    "http_status": 404,
+    "is_live": false,
+    "latency_ms": 499.85,
+    "sector": "CORE OPERATING INFRASTRUCTURE",
+    "distance_to_cash": "Infrastructure Core",
+    "deployment_stack": "Next.js on Vercel",
+    "pipeline_plan": "Provides foundational web hosting and user interface access.",
+    "attached_starred_repos": [
+      {
+        "repo": "openobserve/openobserve",
+        "role": "Telemetry & logs",
+        "action": "Collects frontend performance metrics and errors."
+      },
+      {
+        "repo": "DietrichGebert/ponytail",
+        "role": "Anti-bloat guardrail",
+        "action": "Prevents redundant dependencies on web endpoints."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0017",
+    "site_name": "Ec 001 Angels In Daylight",
+    "venture_id": "EC-001",
+    "url": "https://ec-001-angels-in-daylight.vercel.app",
+    "http_status": 404,
+    "is_live": false,
+    "latency_ms": 596.7,
+    "sector": "E-COMMERCE & BRANDS",
+    "distance_to_cash": "Direct (< 48h)",
+    "deployment_stack": "Next.js on Vercel + Shopify/Stripe API",
+    "pipeline_plan": "Customer browses 3D interactive storefront -> Adds to cart -> Stripe webhook processes checkout.",
+    "attached_starred_repos": [
+      {
+        "repo": "mutonby/openshorts",
+        "role": "Viral 9:16 short video generator",
+        "action": "Automates product demo clips and social media reels."
+      },
+      {
+        "repo": "MengTo/threeui",
+        "role": "Interactive 3D component catalog",
+        "action": "Renders interactive 3D product previews on Kosmic Kitty storefront."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0018",
+    "site_name": "Fin 033 Ai Tax Preparation Service",
+    "venture_id": "FIN-033",
+    "url": "https://fin-033-ai-tax-preparation-service.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 596.47,
+    "sector": "FINTECH & TAX AI",
+    "distance_to_cash": "Direct (< 48h)",
+    "deployment_stack": "Next.js on Vercel + Python Financial Engines",
+    "pipeline_plan": "User inputs tax scenario -> Decision Engine categorizes deductions -> System generates tax strategy memo.",
+    "attached_starred_repos": [
+      {
+        "repo": "Open-Finance-Lab/AgenticTrading",
+        "role": "Multi-agent financial engine",
+        "action": "Executes quantitative portfolio and crypto tax reconciliation models."
+      },
+      {
+        "repo": "Noisyxl/brier",
+        "role": "Cryptographic prediction receipt ledger",
+        "action": "Maintains immutable audit log of tax optimization and deduction assessments."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0019",
+    "site_name": "Fin 021 Tax Deduction Finder",
+    "venture_id": "FIN-021",
+    "url": "https://fin-021-tax-deduction-finder.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 668.78,
+    "sector": "FINTECH & TAX AI",
+    "distance_to_cash": "Direct (< 48h)",
+    "deployment_stack": "Next.js on Vercel + Python Financial Engines",
+    "pipeline_plan": "User inputs tax scenario -> Decision Engine categorizes deductions -> System generates tax strategy memo.",
+    "attached_starred_repos": [
+      {
+        "repo": "Open-Finance-Lab/AgenticTrading",
+        "role": "Multi-agent financial engine",
+        "action": "Executes quantitative portfolio and crypto tax reconciliation models."
+      },
+      {
+        "repo": "Noisyxl/brier",
+        "role": "Cryptographic prediction receipt ledger",
+        "action": "Maintains immutable audit log of tax optimization and deduction assessments."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0020",
+    "site_name": "Fin 009 Crypto Tax Optimizer",
+    "venture_id": "FIN-009",
+    "url": "https://fin-009-crypto-tax-optimizer.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 610.76,
+    "sector": "FINTECH & TAX AI",
+    "distance_to_cash": "Direct (< 48h)",
+    "deployment_stack": "Next.js on Vercel + Python Financial Engines",
+    "pipeline_plan": "User inputs tax scenario -> Decision Engine categorizes deductions -> System generates tax strategy memo.",
+    "attached_starred_repos": [
+      {
+        "repo": "Open-Finance-Lab/AgenticTrading",
+        "role": "Multi-agent financial engine",
+        "action": "Executes quantitative portfolio and crypto tax reconciliation models."
+      },
+      {
+        "repo": "Noisyxl/brier",
+        "role": "Cryptographic prediction receipt ledger",
+        "action": "Maintains immutable audit log of tax optimization and deduction assessments."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0021",
+    "site_name": "Fin 006 Tax Prep Filing Services",
+    "venture_id": "FIN-006",
+    "url": "https://fin-006-tax-prep-filing-services.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 509.65,
+    "sector": "FINTECH & TAX AI",
+    "distance_to_cash": "Direct (< 48h)",
+    "deployment_stack": "Next.js on Vercel + Python Financial Engines",
+    "pipeline_plan": "User inputs tax scenario -> Decision Engine categorizes deductions -> System generates tax strategy memo.",
+    "attached_starred_repos": [
+      {
+        "repo": "Open-Finance-Lab/AgenticTrading",
+        "role": "Multi-agent financial engine",
+        "action": "Executes quantitative portfolio and crypto tax reconciliation models."
+      },
+      {
+        "repo": "Noisyxl/brier",
+        "role": "Cryptographic prediction receipt ledger",
+        "action": "Maintains immutable audit log of tax optimization and deduction assessments."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0022",
+    "site_name": "Hermes Command Center",
+    "venture_id": "UNASSIGNED",
+    "url": "https://hermes-command-center-iota.vercel.app",
+    "http_status": 404,
+    "is_live": false,
+    "latency_ms": 423.88,
+    "sector": "CORE OPERATING INFRASTRUCTURE",
+    "distance_to_cash": "Infrastructure Core",
+    "deployment_stack": "Next.js on Vercel",
+    "pipeline_plan": "Provides foundational web hosting and user interface access.",
+    "attached_starred_repos": [
+      {
+        "repo": "openobserve/openobserve",
+        "role": "Telemetry & logs",
+        "action": "Collects frontend performance metrics and errors."
+      },
+      {
+        "repo": "DietrichGebert/ponytail",
+        "role": "Anti-bloat guardrail",
+        "action": "Prevents redundant dependencies on web endpoints."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0023",
+    "site_name": "Ec 111 Miss Toys",
+    "venture_id": "EC-111",
+    "url": "https://ec-111-miss-toys.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 588.78,
+    "sector": "E-COMMERCE & BRANDS",
+    "distance_to_cash": "Direct (< 48h)",
+    "deployment_stack": "Next.js on Vercel + Shopify/Stripe API",
+    "pipeline_plan": "Customer browses 3D interactive storefront -> Adds to cart -> Stripe webhook processes checkout.",
+    "attached_starred_repos": [
+      {
+        "repo": "mutonby/openshorts",
+        "role": "Viral 9:16 short video generator",
+        "action": "Automates product demo clips and social media reels."
+      },
+      {
+        "repo": "MengTo/threeui",
+        "role": "Interactive 3D component catalog",
+        "action": "Renders interactive 3D product previews on Kosmic Kitty storefront."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0024",
+    "site_name": "Vapi Voice Os",
+    "venture_id": "UNASSIGNED",
+    "url": "https://vapi-voice-os.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 426.78,
+    "sector": "CORE OPERATING INFRASTRUCTURE",
+    "distance_to_cash": "Infrastructure Core",
+    "deployment_stack": "Next.js on Vercel",
+    "pipeline_plan": "Provides foundational web hosting and user interface access.",
+    "attached_starred_repos": [
+      {
+        "repo": "openobserve/openobserve",
+        "role": "Telemetry & logs",
+        "action": "Collects frontend performance metrics and errors."
+      },
+      {
+        "repo": "DietrichGebert/ponytail",
+        "role": "Anti-bloat guardrail",
+        "action": "Prevents redundant dependencies on web endpoints."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0025",
+    "site_name": "Divine Johns Portfolio",
+    "venture_id": "UNASSIGNED",
+    "url": "https://divine-johns-portfolio.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 478.7,
+    "sector": "CORE OPERATING INFRASTRUCTURE",
+    "distance_to_cash": "Infrastructure Core",
+    "deployment_stack": "Next.js on Vercel",
+    "pipeline_plan": "Provides foundational web hosting and user interface access.",
+    "attached_starred_repos": [
+      {
+        "repo": "openobserve/openobserve",
+        "role": "Telemetry & logs",
+        "action": "Collects frontend performance metrics and errors."
+      },
+      {
+        "repo": "DietrichGebert/ponytail",
+        "role": "Anti-bloat guardrail",
+        "action": "Prevents redundant dependencies on web endpoints."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0026",
+    "site_name": "Tech 062 Iza Os",
+    "venture_id": "UNASSIGNED",
+    "url": "https://tech-062-iza-os.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 539.84,
+    "sector": "CORE OPERATING INFRASTRUCTURE",
+    "distance_to_cash": "Infrastructure Core",
+    "deployment_stack": "Next.js on Vercel",
+    "pipeline_plan": "Provides foundational web hosting and user interface access.",
+    "attached_starred_repos": [
+      {
+        "repo": "openobserve/openobserve",
+        "role": "Telemetry & logs",
+        "action": "Collects frontend performance metrics and errors."
+      },
+      {
+        "repo": "DietrichGebert/ponytail",
+        "role": "Anti-bloat guardrail",
+        "action": "Prevents redundant dependencies on web endpoints."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0027",
+    "site_name": "Arbitrage Nexus",
+    "venture_id": "UNASSIGNED",
+    "url": "https://arbitrage-nexus.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 477.32,
+    "sector": "CORE OPERATING INFRASTRUCTURE",
+    "distance_to_cash": "Infrastructure Core",
+    "deployment_stack": "Next.js on Vercel",
+    "pipeline_plan": "Provides foundational web hosting and user interface access.",
+    "attached_starred_repos": [
+      {
+        "repo": "openobserve/openobserve",
+        "role": "Telemetry & logs",
+        "action": "Collects frontend performance metrics and errors."
+      },
+      {
+        "repo": "DietrichGebert/ponytail",
+        "role": "Anti-bloat guardrail",
+        "action": "Prevents redundant dependencies on web endpoints."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0028",
+    "site_name": "Genixbank Hero Site",
+    "venture_id": "UNASSIGNED",
+    "url": "https://genixbank-hero-site.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 400.84,
+    "sector": "CORE OPERATING INFRASTRUCTURE",
+    "distance_to_cash": "Infrastructure Core",
+    "deployment_stack": "Next.js on Vercel",
+    "pipeline_plan": "Provides foundational web hosting and user interface access.",
+    "attached_starred_repos": [
+      {
+        "repo": "openobserve/openobserve",
+        "role": "Telemetry & logs",
+        "action": "Collects frontend performance metrics and errors."
+      },
+      {
+        "repo": "DietrichGebert/ponytail",
+        "role": "Anti-bloat guardrail",
+        "action": "Prevents redundant dependencies on web endpoints."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0029",
+    "site_name": "Mc 006 Video Production Company",
+    "venture_id": "MC-006",
+    "url": "https://mc-006-video-production-company.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 341.58,
+    "sector": "CORE OPERATING INFRASTRUCTURE",
+    "distance_to_cash": "Infrastructure Core",
+    "deployment_stack": "Next.js on Vercel",
+    "pipeline_plan": "Provides foundational web hosting and user interface access.",
+    "attached_starred_repos": [
+      {
+        "repo": "openobserve/openobserve",
+        "role": "Telemetry & logs",
+        "action": "Collects frontend performance metrics and errors."
+      },
+      {
+        "repo": "DietrichGebert/ponytail",
+        "role": "Anti-bloat guardrail",
+        "action": "Prevents redundant dependencies on web endpoints."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0030",
+    "site_name": "Marketeam",
+    "venture_id": "UNASSIGNED",
+    "url": "https://marketeam-beta.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 622.3,
+    "sector": "CORE OPERATING INFRASTRUCTURE",
+    "distance_to_cash": "Infrastructure Core",
+    "deployment_stack": "Next.js on Vercel",
+    "pipeline_plan": "Provides foundational web hosting and user interface access.",
+    "attached_starred_repos": [
+      {
+        "repo": "openobserve/openobserve",
+        "role": "Telemetry & logs",
+        "action": "Collects frontend performance metrics and errors."
+      },
+      {
+        "repo": "DietrichGebert/ponytail",
+        "role": "Anti-bloat guardrail",
+        "action": "Prevents redundant dependencies on web endpoints."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0031",
+    "site_name": "Edu Landing Kit Template",
+    "venture_id": "UNASSIGNED",
+    "url": "https://edu-landing-kit-template.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 621.68,
+    "sector": "CORE OPERATING INFRASTRUCTURE",
+    "distance_to_cash": "Infrastructure Core",
+    "deployment_stack": "Next.js on Vercel",
+    "pipeline_plan": "Provides foundational web hosting and user interface access.",
+    "attached_starred_repos": [
+      {
+        "repo": "openobserve/openobserve",
+        "role": "Telemetry & logs",
+        "action": "Collects frontend performance metrics and errors."
+      },
+      {
+        "repo": "DietrichGebert/ponytail",
+        "role": "Anti-bloat guardrail",
+        "action": "Prevents redundant dependencies on web endpoints."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0032",
+    "site_name": "Bloom Community Hub",
+    "venture_id": "UNASSIGNED",
+    "url": "https://bloom-community-hub.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 428.58,
+    "sector": "CORE OPERATING INFRASTRUCTURE",
+    "distance_to_cash": "Infrastructure Core",
+    "deployment_stack": "Next.js on Vercel",
+    "pipeline_plan": "Provides foundational web hosting and user interface access.",
+    "attached_starred_repos": [
+      {
+        "repo": "openobserve/openobserve",
+        "role": "Telemetry & logs",
+        "action": "Collects frontend performance metrics and errors."
+      },
+      {
+        "repo": "DietrichGebert/ponytail",
+        "role": "Anti-bloat guardrail",
+        "action": "Prevents redundant dependencies on web endpoints."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0033",
+    "site_name": "Comm 014 Veterans Support Ai",
+    "venture_id": "COMM-014",
+    "url": "https://comm-014-veterans-support-ai-worldwidebros-projects.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1203.47,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0034",
+    "site_name": "Comm 050 Community Cultural Ai",
+    "venture_id": "COMM-050",
+    "url": "https://comm-050-community-cultural-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1460.93,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0035",
+    "site_name": "Comm 049 Public Event Ai",
+    "venture_id": "COMM-049",
+    "url": "https://comm-049-public-event-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1749.73,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0036",
+    "site_name": "Comm 048 Community Transportation Ai",
+    "venture_id": "COMM-048",
+    "url": "https://comm-048-community-transportation-a.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1411.02,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0037",
+    "site_name": "Comm 047 Public Fitness Ai",
+    "venture_id": "COMM-047",
+    "url": "https://comm-047-public-fitness-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1356.7,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0038",
+    "site_name": "Comm 046 Community Pet Care Ai",
+    "venture_id": "COMM-046",
+    "url": "https://comm-046-community-pet-care-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1400.27,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0039",
+    "site_name": "Comm 045 Public Childcare Ai",
+    "venture_id": "COMM-045",
+    "url": "https://comm-045-public-childcare-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1254.73,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0040",
+    "site_name": "Comm 044 Community Volunteering Ai",
+    "venture_id": "COMM-044",
+    "url": "https://comm-044-community-volunteering-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1471.3,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0041",
+    "site_name": "Comm 043 Local Food Network Ai",
+    "venture_id": "COMM-043",
+    "url": "https://comm-043-local-food-network-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1204.97,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0042",
+    "site_name": "Comm 042 Community Energy Ai",
+    "venture_id": "COMM-042",
+    "url": "https://comm-042-community-energy-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1405.94,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0043",
+    "site_name": "Comm 041 Public Wi Fi Ai",
+    "venture_id": "COMM-041",
+    "url": "https://comm-041-public-wi-fi-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1262.31,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0044",
+    "site_name": "Comm 040 Community Recycling Ai",
+    "venture_id": "COMM-040",
+    "url": "https://comm-040-community-recycling-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1437.49,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0045",
+    "site_name": "Comm 039 Public Space Ai",
+    "venture_id": "COMM-039",
+    "url": "https://comm-039-public-space-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1230.87,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0046",
+    "site_name": "Comm 038 Community Policing Ai",
+    "venture_id": "COMM-038",
+    "url": "https://comm-038-community-policing-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1243.62,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0047",
+    "site_name": "Comm 037 Neighborhood Development Ai",
+    "venture_id": "COMM-037",
+    "url": "https://comm-037-neighborhood-development-a.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1516.81,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0048",
+    "site_name": "Comm 036 Public Infrastructure Ai",
+    "venture_id": "COMM-036",
+    "url": "https://comm-036-public-infrastructure-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1275.73,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0049",
+    "site_name": "Comm 035 Community Arts Ai",
+    "venture_id": "COMM-035",
+    "url": "https://comm-035-community-arts-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1113.37,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0050",
+    "site_name": "Comm 034 Senior Tech Support",
+    "venture_id": "COMM-034",
+    "url": "https://comm-034-senior-tech-support.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1208.17,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0051",
+    "site_name": "Comm 033 Youth Innovation Hub",
+    "venture_id": "COMM-033",
+    "url": "https://comm-033-youth-innovation-hub.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1142.79,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0052",
+    "site_name": "Comm 032 Public Health Ai",
+    "venture_id": "COMM-032",
+    "url": "https://comm-032-public-health-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1297.14,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0053",
+    "site_name": "Comm 031 Community Investment Ai",
+    "venture_id": "COMM-031",
+    "url": "https://comm-031-community-investment-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1262.82,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0054",
+    "site_name": "Comm 030 Cultural Exchange Ai",
+    "venture_id": "COMM-030",
+    "url": "https://comm-030-cultural-exchange-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1385.67,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0055",
+    "site_name": "Comm 029 Community Wellness Ai",
+    "venture_id": "COMM-029",
+    "url": "https://comm-029-community-wellness-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1378.99,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0056",
+    "site_name": "Comm 028 Public Safety Ai",
+    "venture_id": "COMM-028",
+    "url": "https://comm-028-public-safety-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1293.36,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0057",
+    "site_name": "Comm 027 Local Government Ai",
+    "venture_id": "COMM-027",
+    "url": "https://comm-027-local-government-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1249.42,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0058",
+    "site_name": "Comm 026 Public Education Ai",
+    "venture_id": "COMM-026",
+    "url": "https://comm-026-public-education-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1496.5,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0059",
+    "site_name": "Comm 025 Community Legal Aid",
+    "venture_id": "COMM-025",
+    "url": "https://comm-025-community-legal-aid.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1432.92,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0060",
+    "site_name": "Comm 024 Youth Sports Ai",
+    "venture_id": "COMM-024",
+    "url": "https://comm-024-youth-sports-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1610.34,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0061",
+    "site_name": "Comm 023 Elder Companion Ai",
+    "venture_id": "COMM-023",
+    "url": "https://comm-023-elder-companion-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1303.08,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0062",
+    "site_name": "Comm 022 Job Training Center",
+    "venture_id": "COMM-022",
+    "url": "https://comm-022-job-training-center.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1412.36,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0063",
+    "site_name": "Comm 021 Housing Assistance Ai",
+    "venture_id": "COMM-021",
+    "url": "https://comm-021-housing-assistance-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1223.74,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0064",
+    "site_name": "Comm 020 Public Transportation Ai",
+    "venture_id": "COMM-020",
+    "url": "https://comm-020-public-transportation-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1362.62,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0065",
+    "site_name": "Comm 019 Community Garden Ai",
+    "venture_id": "COMM-019",
+    "url": "https://comm-019-community-garden-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1256.16,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0066",
+    "site_name": "Comm 018 Neighborhood Watch Ai",
+    "venture_id": "COMM-018",
+    "url": "https://comm-018-neighborhood-watch-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1178.97,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0067",
+    "site_name": "Comm 017 Local Business Directory",
+    "venture_id": "COMM-017",
+    "url": "https://comm-017-local-business-directory.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1360.02,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0068",
+    "site_name": "Comm 016 Community Health Ai",
+    "venture_id": "COMM-016",
+    "url": "https://comm-016-community-health-ai-worldwidebros-projects.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1329.04,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0069",
+    "site_name": "Comm 015 Youth Mentorship Program",
+    "venture_id": "COMM-015",
+    "url": "https://comm-015-youth-mentorship-program.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1259.97,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0070",
+    "site_name": "Comm 013 Women S Empowerment Network",
+    "venture_id": "COMM-013",
+    "url": "https://comm-013-women-s-empowerment-networ.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1179.18,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0071",
+    "site_name": "Comm 012 Black Art Museum Ai",
+    "venture_id": "COMM-012",
+    "url": "https://comm-012-black-art-museum-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1159.3,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0072",
+    "site_name": "Comm 011 Indigenous Creator Hub",
+    "venture_id": "COMM-011",
+    "url": "https://comm-011-indigenous-creator-hub.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1300.92,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0073",
+    "site_name": "Comm 010 Disaster Relief Ai",
+    "venture_id": "COMM-010",
+    "url": "https://comm-010-disaster-relief-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1408.55,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0074",
+    "site_name": "Comm 009 Volunteer Hub Ai",
+    "venture_id": "COMM-009",
+    "url": "https://comm-009-volunteer-hub-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1278.32,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0075",
+    "site_name": "Comm 008 Community Fundraising Ai",
+    "venture_id": "COMM-008",
+    "url": "https://comm-008-community-fundraising-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1200.39,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0076",
+    "site_name": "Comm 007 Youth Leadership Ai",
+    "venture_id": "COMM-007",
+    "url": "https://comm-007-youth-leadership-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1253.26,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0077",
+    "site_name": "Comm 006 Community Technology Access Ai",
+    "venture_id": "COMM-006",
+    "url": "https://comm-006-community-technology-acces.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1368.05,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0078",
+    "site_name": "Comm 005 Ace Food Security Ai",
+    "venture_id": "COMM-005",
+    "url": "https://comm-005-ace-food-security-ai.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1560.33,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0079",
+    "site_name": "Comm 004 Community Outreach Nonprofit",
+    "venture_id": "COMM-004",
+    "url": "https://comm-004-community-outreach-nonprof.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1368.3,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0080",
+    "site_name": "Comm 002 Brotherhood Coaching Network",
+    "venture_id": "COMM-002",
+    "url": "https://comm-002-brotherhood-coaching-netwo.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1386.23,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0081",
+    "site_name": "Comm 001 Luminary Worldwide Events",
+    "venture_id": "COMM-001",
+    "url": "https://comm-001-luminary-worldwide-events.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1460.43,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0082",
+    "site_name": "Comm 003 Ace Senior Care Connect",
+    "venture_id": "COMM-003",
+    "url": "https://comm-003-ace-senior-care-connect.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 1522.16,
+    "sector": "COMMUNITY IMPACT & CIVIC AI",
+    "distance_to_cash": "Grant / Civic Funding",
+    "deployment_stack": "Next.js on Vercel + Local Ollama / Listmonk",
+    "pipeline_plan": "Community member asks for assistance on portal -> Local Ollama agent answers -> If human case manager needed, Listmonk notifies staff.",
+    "attached_starred_repos": [
+      {
+        "repo": "n8n-io/self-hosted-ai-starter-kit",
+        "role": "Turnkey local AI stack",
+        "action": "Powers community Q&A agents using local Ollama models on Mac Studio."
+      },
+      {
+        "repo": "knadh/listmonk",
+        "role": "High-performance newsletter & notification system",
+        "action": "Sends community alerts, veteran benefits bulletins, and event notifications."
+      },
+      {
+        "repo": "coollabsio/coolify",
+        "role": "Self-hosted PaaS",
+        "action": "Hosts lightweight civic web apps on internal mesh at zero hosting cost."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0083",
+    "site_name": "Quantum Brain Sync Website Gf1F",
+    "venture_id": "UNASSIGNED",
+    "url": "https://quantum-brain-sync-website-gf1f.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 624.56,
+    "sector": "CORE OPERATING INFRASTRUCTURE",
+    "distance_to_cash": "Infrastructure Core",
+    "deployment_stack": "Next.js on Vercel",
+    "pipeline_plan": "Provides foundational web hosting and user interface access.",
+    "attached_starred_repos": [
+      {
+        "repo": "openobserve/openobserve",
+        "role": "Telemetry & logs",
+        "action": "Collects frontend performance metrics and errors."
+      },
+      {
+        "repo": "DietrichGebert/ponytail",
+        "role": "Anti-bloat guardrail",
+        "action": "Prevents redundant dependencies on web endpoints."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0084",
+    "site_name": "Quantum Brain Sync Website N7A4",
+    "venture_id": "UNASSIGNED",
+    "url": "https://quantum-brain-sync-website-n7a4.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 666.28,
+    "sector": "CORE OPERATING INFRASTRUCTURE",
+    "distance_to_cash": "Infrastructure Core",
+    "deployment_stack": "Next.js on Vercel",
+    "pipeline_plan": "Provides foundational web hosting and user interface access.",
+    "attached_starred_repos": [
+      {
+        "repo": "openobserve/openobserve",
+        "role": "Telemetry & logs",
+        "action": "Collects frontend performance metrics and errors."
+      },
+      {
+        "repo": "DietrichGebert/ponytail",
+        "role": "Anti-bloat guardrail",
+        "action": "Prevents redundant dependencies on web endpoints."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0085",
+    "site_name": "Genixbank Financial System",
+    "venture_id": "UNASSIGNED",
+    "url": "https://genixbank-financial-system.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 522.56,
+    "sector": "CORE OPERATING INFRASTRUCTURE",
+    "distance_to_cash": "Infrastructure Core",
+    "deployment_stack": "Next.js on Vercel",
+    "pipeline_plan": "Provides foundational web hosting and user interface access.",
+    "attached_starred_repos": [
+      {
+        "repo": "openobserve/openobserve",
+        "role": "Telemetry & logs",
+        "action": "Collects frontend performance metrics and errors."
+      },
+      {
+        "repo": "DietrichGebert/ponytail",
+        "role": "Anti-bloat guardrail",
+        "action": "Prevents redundant dependencies on web endpoints."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0086",
+    "site_name": "Quantum Brain Sync Website Zevz",
+    "venture_id": "UNASSIGNED",
+    "url": "https://quantum-brain-sync-website-zevz.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 613.26,
+    "sector": "CORE OPERATING INFRASTRUCTURE",
+    "distance_to_cash": "Infrastructure Core",
+    "deployment_stack": "Next.js on Vercel",
+    "pipeline_plan": "Provides foundational web hosting and user interface access.",
+    "attached_starred_repos": [
+      {
+        "repo": "openobserve/openobserve",
+        "role": "Telemetry & logs",
+        "action": "Collects frontend performance metrics and errors."
+      },
+      {
+        "repo": "DietrichGebert/ponytail",
+        "role": "Anti-bloat guardrail",
+        "action": "Prevents redundant dependencies on web endpoints."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0087",
+    "site_name": "Simple Landing",
+    "venture_id": "UNASSIGNED",
+    "url": "https://simple-landing-pi.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 485.22,
+    "sector": "CORE OPERATING INFRASTRUCTURE",
+    "distance_to_cash": "Infrastructure Core",
+    "deployment_stack": "Next.js on Vercel",
+    "pipeline_plan": "Provides foundational web hosting and user interface access.",
+    "attached_starred_repos": [
+      {
+        "repo": "openobserve/openobserve",
+        "role": "Telemetry & logs",
+        "action": "Collects frontend performance metrics and errors."
+      },
+      {
+        "repo": "DietrichGebert/ponytail",
+        "role": "Anti-bloat guardrail",
+        "action": "Prevents redundant dependencies on web endpoints."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0088",
+    "site_name": "Civilization Os",
+    "venture_id": "VEN-001",
+    "url": "https://civilization-os.vercel.app",
+    "http_status": 404,
+    "is_live": false,
+    "latency_ms": 342.19,
+    "sector": "CORE OPERATING INFRASTRUCTURE",
+    "distance_to_cash": "Infrastructure Core",
+    "deployment_stack": "Next.js on Vercel",
+    "pipeline_plan": "Provides foundational web hosting and user interface access.",
+    "attached_starred_repos": [
+      {
+        "repo": "openobserve/openobserve",
+        "role": "Telemetry & logs",
+        "action": "Collects frontend performance metrics and errors."
+      },
+      {
+        "repo": "DietrichGebert/ponytail",
+        "role": "Anti-bloat guardrail",
+        "action": "Prevents redundant dependencies on web endpoints."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0089",
+    "site_name": "Ps 012 Website Build",
+    "venture_id": "UNASSIGNED",
+    "url": "https://ps-012-website-build.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 497.85,
+    "sector": "CORE OPERATING INFRASTRUCTURE",
+    "distance_to_cash": "Infrastructure Core",
+    "deployment_stack": "Next.js on Vercel",
+    "pipeline_plan": "Provides foundational web hosting and user interface access.",
+    "attached_starred_repos": [
+      {
+        "repo": "openobserve/openobserve",
+        "role": "Telemetry & logs",
+        "action": "Collects frontend performance metrics and errors."
+      },
+      {
+        "repo": "DietrichGebert/ponytail",
+        "role": "Anti-bloat guardrail",
+        "action": "Prevents redundant dependencies on web endpoints."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0090",
+    "site_name": "Quantum Brain Sync Website",
+    "venture_id": "UNASSIGNED",
+    "url": "https://quantum-brain-sync-website.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 492.51,
+    "sector": "CORE OPERATING INFRASTRUCTURE",
+    "distance_to_cash": "Infrastructure Core",
+    "deployment_stack": "Next.js on Vercel",
+    "pipeline_plan": "Provides foundational web hosting and user interface access.",
+    "attached_starred_repos": [
+      {
+        "repo": "openobserve/openobserve",
+        "role": "Telemetry & logs",
+        "action": "Collects frontend performance metrics and errors."
+      },
+      {
+        "repo": "DietrichGebert/ponytail",
+        "role": "Anti-bloat guardrail",
+        "action": "Prevents redundant dependencies on web endpoints."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0091",
+    "site_name": "Pitch Kit",
+    "venture_id": "UNASSIGNED",
+    "url": "https://pitch-kit-zeta.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 506.47,
+    "sector": "CORE OPERATING INFRASTRUCTURE",
+    "distance_to_cash": "Infrastructure Core",
+    "deployment_stack": "Next.js on Vercel",
+    "pipeline_plan": "Provides foundational web hosting and user interface access.",
+    "attached_starred_repos": [
+      {
+        "repo": "openobserve/openobserve",
+        "role": "Telemetry & logs",
+        "action": "Collects frontend performance metrics and errors."
+      },
+      {
+        "repo": "DietrichGebert/ponytail",
+        "role": "Anti-bloat guardrail",
+        "action": "Prevents redundant dependencies on web endpoints."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0092",
+    "site_name": "Bw 001 Up Next Web",
+    "venture_id": "BW-001",
+    "url": "https://bw-001-up-next-web.vercel.app",
+    "http_status": 200,
+    "is_live": true,
+    "latency_ms": 410.6,
+    "sector": "CORE OPERATING INFRASTRUCTURE",
+    "distance_to_cash": "Infrastructure Core",
+    "deployment_stack": "Next.js on Vercel",
+    "pipeline_plan": "Provides foundational web hosting and user interface access.",
+    "attached_starred_repos": [
+      {
+        "repo": "openobserve/openobserve",
+        "role": "Telemetry & logs",
+        "action": "Collects frontend performance metrics and errors."
+      },
+      {
+        "repo": "DietrichGebert/ponytail",
+        "role": "Anti-bloat guardrail",
+        "action": "Prevents redundant dependencies on web endpoints."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0093",
+    "site_name": "V0 Integrations Page",
+    "venture_id": "UNASSIGNED",
+    "url": "https://v0-integrations-page-gold.vercel.app",
+    "http_status": 404,
+    "is_live": false,
+    "latency_ms": 552.28,
+    "sector": "CORE OPERATING INFRASTRUCTURE",
+    "distance_to_cash": "Infrastructure Core",
+    "deployment_stack": "Next.js on Vercel",
+    "pipeline_plan": "Provides foundational web hosting and user interface access.",
+    "attached_starred_repos": [
+      {
+        "repo": "openobserve/openobserve",
+        "role": "Telemetry & logs",
+        "action": "Collects frontend performance metrics and errors."
+      },
+      {
+        "repo": "DietrichGebert/ponytail",
+        "role": "Anti-bloat guardrail",
+        "action": "Prevents redundant dependencies on web endpoints."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0094",
+    "site_name": "00 Dashboard",
+    "venture_id": "VEN-001",
+    "url": "https://00-dashboard.vercel.app",
+    "http_status": 404,
+    "is_live": false,
+    "latency_ms": 482.55,
+    "sector": "CORE OPERATING INFRASTRUCTURE",
+    "distance_to_cash": "Infrastructure Core",
+    "deployment_stack": "Next.js on Vercel",
+    "pipeline_plan": "Provides foundational web hosting and user interface access.",
+    "attached_starred_repos": [
+      {
+        "repo": "openobserve/openobserve",
+        "role": "Telemetry & logs",
+        "action": "Collects frontend performance metrics and errors."
+      },
+      {
+        "repo": "DietrichGebert/ponytail",
+        "role": "Anti-bloat guardrail",
+        "action": "Prevents redundant dependencies on web endpoints."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0095",
+    "site_name": "Iza Os Enterprise",
+    "venture_id": "VEN-001",
+    "url": "https://iza-os-enterprise.vercel.app",
+    "http_status": null,
+    "is_live": false,
+    "latency_ms": 5319.47,
+    "sector": "CORE OPERATING INFRASTRUCTURE",
+    "distance_to_cash": "Infrastructure Core",
+    "deployment_stack": "Next.js on Vercel",
+    "pipeline_plan": "Provides foundational web hosting and user interface access.",
+    "attached_starred_repos": [
+      {
+        "repo": "openobserve/openobserve",
+        "role": "Telemetry & logs",
+        "action": "Collects frontend performance metrics and errors."
+      },
+      {
+        "repo": "DietrichGebert/ponytail",
+        "role": "Anti-bloat guardrail",
+        "action": "Prevents redundant dependencies on web endpoints."
+      }
+    ]
+  },
+  {
+    "site_id": "SITE-0096",
+    "site_name": "Worldwidebro Venture Portal",
+    "venture_id": "VEN-001-CORE",
+    "url": "https://worldwidebro-venture-portal.vercel.app",
+    "http_status": 404,
+    "is_live": false,
+    "latency_ms": 368.37,
+    "sector": "CORE OPERATING INFRASTRUCTURE",
+    "distance_to_cash": "Infrastructure Core",
+    "deployment_stack": "Next.js on Vercel",
+    "pipeline_plan": "Provides foundational web hosting and user interface access.",
+    "attached_starred_repos": [
+      {
+        "repo": "openobserve/openobserve",
+        "role": "Telemetry & logs",
+        "action": "Collects frontend performance metrics and errors."
+      },
+      {
+        "repo": "DietrichGebert/ponytail",
+        "role": "Anti-bloat guardrail",
+        "action": "Prevents redundant dependencies on web endpoints."
+      }
+    ]
+  }
+]
