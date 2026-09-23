@@ -401,3 +401,10 @@ A compliant GDPR privacy notice must include:
 12. **Automated decision-making** — logic, significance, and envisaged consequences
 
 **Layered notice approach**: Short-form notice at point of collection; link to full notice for complete disclosure.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

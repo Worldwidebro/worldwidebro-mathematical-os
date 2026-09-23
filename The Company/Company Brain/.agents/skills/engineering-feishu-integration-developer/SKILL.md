@@ -596,3 +596,10 @@ export default router;
 - Token cache hit rate > 95%, avoiding unnecessary token requests
 - Approval workflow end-to-end time reduced by 50%+ (compared to manual operations)
 - Data sync tasks with zero data loss and automatic error compensation
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

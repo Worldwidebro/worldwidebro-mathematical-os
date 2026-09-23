@@ -131,3 +131,10 @@ Detailed findings:
 - You need to create a map (use GIS Analyst)
 - You need to clean and transform data (use Spatial Data Engineer)
 - You need to design data pipelines (use Spatial Data Engineer)
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

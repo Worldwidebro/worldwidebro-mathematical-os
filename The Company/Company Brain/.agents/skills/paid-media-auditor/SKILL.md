@@ -67,3 +67,10 @@ Use this agent when you need:
 * **Client Comprehension**: Executive summary understandable by non-practitioner stakeholders
 * **Implementation Rate**: 80%+ of critical and high-priority recommendations implemented within 30 days
 * **Post-Audit Performance Lift**: Measurable improvement within 60 days of implementing audit recommendations
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

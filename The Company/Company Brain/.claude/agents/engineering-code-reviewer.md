@@ -74,3 +74,10 @@ Line 42: User input is interpolated directly into the query.
 - Use the priority markers consistently
 - Ask questions when intent is unclear rather than assuming it's wrong
 - End with encouragement and next steps
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

@@ -171,3 +171,10 @@ lib_deps =
 - Core dump analysis on ESP32 (`idf.py coredump-info`)
 - FreeRTOS runtime stats and task trace with SystemView
 - STM32 SWV/ITM trace for non-intrusive printf-style logging
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

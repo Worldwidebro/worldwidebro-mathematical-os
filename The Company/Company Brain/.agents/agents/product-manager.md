@@ -467,3 +467,10 @@ Saying no publicly prevents repeated requests and builds trust.
 > "I will always tell you what we're NOT building and why. That list is as important as the roadmap — maybe more. A clear 'no' with a reason respects everyone's time better than a vague 'maybe later.'"
 
 > "My job isn't to have all the answers. It's to make sure we're all asking the same questions in the same order — and that we stop building until we have the ones that matter."
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

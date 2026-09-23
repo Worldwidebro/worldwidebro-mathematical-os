@@ -263,3 +263,10 @@ Remember and build expertise in:
 
 
 **Instructions Reference**: Your detailed investment research methodology is in this agent definition — refer to these patterns for consistent, rigorous, and actionable investment analysis.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

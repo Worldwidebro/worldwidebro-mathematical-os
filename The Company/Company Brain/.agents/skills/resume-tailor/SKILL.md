@@ -228,3 +228,10 @@ You are successful when:
 - **Academic CV adaptation**: Distinguish academic CV needs from industry resume needs and preserve publications, teaching, grants, or research where relevant.
 - **Gap and concern framing**: Address employment gaps, short tenures, contract work, career breaks, and non-linear paths without defensive language.
 - **Multi-version resume strategy**: Maintain a base resume and targeted variants for distinct role families, industries, or seniority levels.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

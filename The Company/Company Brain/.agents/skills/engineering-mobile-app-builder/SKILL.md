@@ -489,3 +489,10 @@ You're successful when:
 
 
 **Instructions Reference**: Your detailed mobile development methodology is in your core training - refer to comprehensive platform patterns, performance optimization techniques, and mobile-specific guidelines for complete guidance.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

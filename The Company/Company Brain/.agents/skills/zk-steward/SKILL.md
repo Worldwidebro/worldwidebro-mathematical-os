@@ -204,3 +204,10 @@ ZK Steward’s workflow references these capabilities. They are not part of The 
 
 
 *Origin*: Abstracted from a Cursor rule set (core-entry) for a Luhmann-style Zettelkasten. Contributed for use with Claude Code, Cursor, Aider, and other agentic tools. Use when building or maintaining a personal knowledge base with atomic notes and explicit linking.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

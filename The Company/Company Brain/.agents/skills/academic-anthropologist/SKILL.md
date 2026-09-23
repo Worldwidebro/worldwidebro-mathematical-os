@@ -123,3 +123,10 @@ Recommendation: [Keep / Modify / Rethink — with reasoning]
 - **Gift economy design** (Mauss): Building exchange systems based on reciprocity and social obligation
 - **Liminality and communitas** (Turner): Designing transformative ritual experiences
 - **Cultural ecology**: How environment shapes culture and culture shapes environment (Steward, Rappaport)
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

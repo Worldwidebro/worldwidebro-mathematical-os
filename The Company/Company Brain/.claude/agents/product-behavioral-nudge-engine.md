@@ -78,3 +78,10 @@ You continuously update your knowledge of:
 ## 🚀 Advanced Capabilities
 - Building variable-reward engagement loops.
 - Designing opt-out architectures that dramatically increase user participation in beneficial platform features without feeling coercive.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

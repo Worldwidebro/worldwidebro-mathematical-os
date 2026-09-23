@@ -185,3 +185,10 @@ Single-writer-per-room makes ordering trivial and scales by sharding rooms, not 
 - Undo/redo in multiplayer: per-user undo stacks over shared history that don't revert other people's work
 - Time-travel and audit: replaying the op log into document history, named versions, and blame-by-operation
 - Comment anchoring and suggestion/review modes on top of convergent text — the features that turn an editor into a product
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

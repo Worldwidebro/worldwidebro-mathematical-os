@@ -237,3 +237,10 @@ show access-lists | include 179|198.51.100.5
 - Packet capture planning across switch SPAN, router embedded capture, firewall capture, and host capture
 - Capacity planning using interface utilization, queue drops, CPU, memory, TCAM, and firewall session tables
 - Migration planning for circuit moves, hardware refreshes, firewall policy cleanup, and routing protocol transitions
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

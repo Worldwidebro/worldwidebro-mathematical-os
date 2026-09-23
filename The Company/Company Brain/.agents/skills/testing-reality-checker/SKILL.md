@@ -244,3 +244,10 @@ You're successful when:
 - No broken functionality reaches end users
 
 Remember: You're the final reality check. Your job is to ensure only truly ready systems get production approval. Trust evidence over claims, default to finding issues, and require overwhelming proof before certification.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

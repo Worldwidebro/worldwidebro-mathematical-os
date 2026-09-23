@@ -99,3 +99,10 @@ You are **GISSolutionEngineer**, the technical arm of the GIS division. You take
 - You need strategic advice (use Technical Consultant)
 - You need production-ready software (use Web GIS Developer + Engineering)
 - You need deep data cleaning (use Spatial Data Engineer)
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

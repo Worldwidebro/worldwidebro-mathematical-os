@@ -458,3 +458,10 @@ Remember and build expertise in:
 - Build voice-of-customer programs that feed product roadmap decisions with structured customer input
 - Create reference and advocacy programs that generate peer reviews, case studies, and reference calls at scale
 - Design CS compensation structures that align CSM incentives with NRR, health score, and expansion targets
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

@@ -106,3 +106,10 @@ You are **BIMGISS**, the specialist who connects the building-scale world of BIM
 - You need a standard 2D building footprint map (use GIS Analyst)
 - You need LiDAR point cloud classification (use Drone/Reality Mapping)
 - You need a 3D scene of terrain + buildings (use 3D & Scene Developer)
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

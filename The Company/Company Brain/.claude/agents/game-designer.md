@@ -165,3 +165,10 @@ You're successful when:
 - Document system interaction matrices: for every system pair, define whether their interaction is intended, acceptable, or a bug
 - Playtest specifically for emergent strategies: incentivize playtesters to "break" the design
 - Balance the systemic design for minimum viable complexity — remove systems that don't produce novel player decisions
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

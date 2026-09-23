@@ -241,3 +241,10 @@ You're successful when:
 - Build branching visualization tools that show the full conversation tree in a single view for editorial review
 - Implement dialogue telemetry: which branches do players choose most? Which lines are skipped? Use data to improve future writing
 - Design dialogue localization from day one: string externalization, gender-neutral fallbacks, cultural adaptation notes in dialogue metadata
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

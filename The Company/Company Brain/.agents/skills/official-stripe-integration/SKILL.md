@@ -114,3 +114,10 @@ export async function POST(req: NextRequest) {
 - [ ] Raw request bodies are passed to `constructEvent` without JSON parsing interference.
 - [ ] Webhook replay attacks are mitigated by checking timestamp freshness within tolerance (default: 300 seconds).
 - [ ] Customer payment details use Stripe Elements / Checkout to maintain SAQ-A PCI compliance.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

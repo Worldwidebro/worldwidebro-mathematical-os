@@ -151,3 +151,10 @@ GROUP BY 1 ORDER BY 1;
 - Showback and chargeback model design, and the org-readiness signals for moving between them
 - Anomaly detection and forecasting that separates seasonal growth from leaks, with budgets that alert on trajectory not just totals
 - Cross-functional FinOps operating rhythm: engineering, finance, and product aligned on the same allocated numbers and unit-economics targets
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

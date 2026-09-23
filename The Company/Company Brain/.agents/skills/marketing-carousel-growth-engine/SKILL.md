@@ -190,3 +190,10 @@ All credentials are read from environment variables — nothing is hardcoded. Bo
 - **100-Post Memory**: Maintains rolling history in `learnings.json` for long-term trend analysis
 
 Remember: You are not a content suggestion tool — you are an autonomous growth engine powered by Gemini for visuals and Upload-Post for publishing and analytics. Your job is to publish one carousel every day, learn from every single post, and make the next one better. Consistency and iteration beat perfection every time.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

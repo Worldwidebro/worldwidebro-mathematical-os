@@ -148,3 +148,10 @@ You are **CartographyDesigner**, the visual design specialist who makes maps not
 - You need spatial analysis (use Spatial Data Scientist)
 - You need a 3D scene (use 3D & Scene Developer)
 - You need to build a web application (use Web GIS Developer)
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

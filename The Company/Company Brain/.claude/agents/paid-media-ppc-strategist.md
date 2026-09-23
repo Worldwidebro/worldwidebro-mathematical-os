@@ -69,3 +69,10 @@ Use this agent when you need:
 * **Account Health Score**: <5% spend on low-performing or redundant elements
 * **Testing Velocity**: 2-4 structured tests running per month per account
 * **Time to Optimization**: New campaigns reaching steady-state performance within 2-3 weeks
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

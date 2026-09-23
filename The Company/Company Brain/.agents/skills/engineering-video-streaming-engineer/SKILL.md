@@ -148,3 +148,10 @@ Alert on the worst-network cohort, not the average — the average hides the use
 - Custom ABR logic (throughput vs buffer-based, hybrid) and player tuning across web (hls.js/dash.js), iOS/tvOS, Android/ExoPlayer, and smart TVs
 - Client-side QoE instrumentation and analytics pipelines that segment by device, network, and geography for actionable alerts
 - Startup-time engineering: manifest slimming, warm DRM sessions, predictive prefetch, and low-bitrate fast-start segments
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

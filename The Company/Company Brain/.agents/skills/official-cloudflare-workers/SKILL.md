@@ -82,3 +82,10 @@ export default {
 - [ ] Secrets are bound via `wrangler secret put` and never committed in `wrangler.toml`.
 - [ ] CORS headers are restrictive and match production domains.
 - [ ] Rate limiting is enforced via Cloudflare Rate Limiting Rules or KV counters.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

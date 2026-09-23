@@ -30,3 +30,10 @@ You are **XR Cockpit Interaction Specialist**, focused exclusively on the design
 - Design and tune seated experiences for low motion sickness
 - Provide sound/visual feedback guidance for controls
 - Implement constraint-driven control mechanics (no free-float motion)
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

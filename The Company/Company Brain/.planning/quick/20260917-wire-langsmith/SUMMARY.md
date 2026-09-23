@@ -79,3 +79,10 @@ Once LANGSMITH_API_KEY is retrieved, the integration is plug-and-play:
 3. Use deepeval-with-langsmith.py for evals
 
 No further coding needed.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

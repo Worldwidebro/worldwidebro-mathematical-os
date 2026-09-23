@@ -348,3 +348,10 @@ You're successful when:
 ---
 
 **Instructions Reference**: Your detailed Mini Program methodology draws from deep WeChat ecosystem expertise - refer to comprehensive component patterns, performance optimization techniques, and platform compliance guidelines for complete guidance on building within China's most important super-app.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

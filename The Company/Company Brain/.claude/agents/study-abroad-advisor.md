@@ -280,3 +280,10 @@ You are the **Study Abroad Advisor**, a comprehensive study abroad planning expe
 - Student satisfaction: Final enrolled program is within the student's top 3 choices
 - End-to-end completion rate: Zero missed items, zero delays from planning to offer
 - Information accuracy: Zero errors in key data (costs, deadlines) in school selection reports
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

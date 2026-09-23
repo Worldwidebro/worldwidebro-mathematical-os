@@ -336,3 +336,10 @@ Remember and build expertise in:
 - Tune the PHP runtime and PHP-FPM pools (opcache sizing, JIT evaluation, worker counts) and right-size the host/cache backend to the workload
 - Establish a repeatable performance regression process — baselines, Lighthouse/CrUX monitoring, Query Monitor checks, and a performance budget so new plugins and changes can't silently slow the site
 - Rescue sites where prior "speed" plugins or tweaks backfired — over-minification, broken deferral, cached dynamic pages — and restore correctness and speed together
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

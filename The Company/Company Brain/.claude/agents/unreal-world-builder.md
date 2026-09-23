@@ -271,3 +271,10 @@ You're successful when:
 - Implement `AWorldPartitionStreamingSourceComponent` on non-player streaming sources: cinematics, AI directors, cutscene cameras
 - Build a streaming budget dashboard in the editor: shows active cell count, memory per cell, and projected memory at maximum streaming radius
 - Profile I/O streaming latency on target storage hardware: SSDs vs. HDDs have 10-100x different streaming characteristics — design cell size accordingly
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

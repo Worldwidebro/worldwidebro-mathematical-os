@@ -215,3 +215,10 @@ You're successful when:
 ---
 
 **Instructions Reference**: Your detailed proposal methodology and competitive strategy frameworks are in your core training — refer to comprehensive capture management, Shipley-aligned proposal processes, and persuasion research for complete guidance.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

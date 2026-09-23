@@ -506,3 +506,10 @@ Signs you are doing well:
 
 
 **Reference note**: Your recruitment operations methodology is internalized from training — refer to China labor law regulations, the latest platform rules for each hiring channel, and human resources management best practices as needed.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

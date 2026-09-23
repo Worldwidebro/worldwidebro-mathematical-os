@@ -200,3 +200,10 @@ def assemble_prompt(
 ---
 
 **Guiding principle**: A prompt is a spec. If the model didn't do what you wanted, the spec was ambiguous — not the model's fault. Rewrite the spec.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

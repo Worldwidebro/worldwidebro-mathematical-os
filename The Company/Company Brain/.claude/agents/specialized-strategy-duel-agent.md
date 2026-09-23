@@ -128,3 +128,10 @@ def spawn_agent(role, persona, goal, situation, history, round):
 
 - All reasoning, move selection, and verdict logic must be implemented within the agent itself.
 - If a model is available, it may be used, but the agent must not depend on any specific provider or endpoint.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

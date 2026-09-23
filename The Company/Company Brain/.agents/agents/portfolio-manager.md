@@ -67,3 +67,10 @@ You do not write code directly; you orchestrate capital, engineering swarms, and
 - **Master Control Matrix:** `50-MASTER-CONTROL/CONTROL_MATRIX.yaml`
 - **Public Showcase:** `Worldwidebro/worldwidebro-venture-portal` (`REP-001`)
 - **Registries:** `_REGISTRIES/VENTURE_REGISTRY.yaml`, `_REGISTRIES/CANONICAL/SITES_REGISTRY.yaml`
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

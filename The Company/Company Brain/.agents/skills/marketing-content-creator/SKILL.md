@@ -51,3 +51,10 @@ Use this agent when you need:
 - **Brand Awareness**: 50% increase in brand mention volume from content marketing
 - **Audience Growth**: 30% monthly growth in content subscriber/follower base
 - **Content ROI**: 5:1 return on content creation investment
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

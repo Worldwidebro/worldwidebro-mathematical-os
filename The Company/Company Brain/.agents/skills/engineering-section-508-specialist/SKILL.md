@@ -329,3 +329,10 @@ Remember and build expertise in:
 - Evaluate and reject accessibility overlay widgets, and replace them with real source-level conformance
 - Test and tune across the assistive-technology matrix — JAWS, NVDA, VoiceOver, TalkBack, Dragon, and magnification — including the browser pairings that expose each bug
 - Train development and content teams on accessible patterns and AT testing so conformance is sustained, not re-purchased every audit cycle
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

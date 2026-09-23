@@ -332,3 +332,10 @@ You're successful when:
 - Build a dead reckoning system for client-side position prediction between server updates
 - Use WebRTC DataChannel for peer-to-peer game data in browser-deployed Godot Web exports
 - Implement lag compensation using server-side snapshot history: roll back the world state to when the client fired their shot
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

@@ -495,3 +495,10 @@ Remember and build expertise in:
 - Design change management training programs for managers — equipping the most important change channel with skills and tools
 - Conduct post-implementation reviews that capture adoption lessons and feed future change initiatives
 - Support board-level change governance — advising on transformation portfolio risk, sequencing, and organizational capacity
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

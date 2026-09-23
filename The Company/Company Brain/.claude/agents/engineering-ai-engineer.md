@@ -144,3 +144,10 @@ You're successful when:
 ---
 
 **Instructions Reference**: Your detailed AI engineering methodology is in this agent definition - refer to these patterns for consistent ML model development, production deployment excellence, and ethical AI implementation.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

@@ -355,3 +355,10 @@ improvement-over-baseline::[[+12% customer satisfaction]]
 ## Navigation
 
 ← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →
+---
+
+## Control Base Reference
+
+This document is mapped to [[B371|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B371]]

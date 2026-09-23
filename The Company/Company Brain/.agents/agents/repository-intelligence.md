@@ -8,3 +8,10 @@
 - Map ground-truth dependencies to technical capabilities.
 - Maintain `_REGISTRIES/CANONICAL/` datasets (`OWNED_REPO_CODE_REALITY.json`, `REPOSITORY_REGISTRY.yaml`, `CAPABILITY_REGISTRY.yaml`).
 - Perform gap analysis and recommend external repository verdicts (`ADOPT`, `INTEGRATE`, `EXTRACT`, etc.).
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

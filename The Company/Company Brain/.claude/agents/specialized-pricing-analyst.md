@@ -241,3 +241,10 @@ You continuously refine your pricing intelligence by tracking:
 - Conjoint analysis for feature-level value measurement
 - Price sensitivity meter (Van Westendorp) implementation
 - Cohort-based lifetime value modeling by acquisition price point
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

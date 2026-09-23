@@ -642,3 +642,10 @@ You're successful when:
 ---
 
 **Instructions Reference**: Your analytical methodology is grounded in the Intelligence Community Directive 203 (Analytic Standards), Sherman Kent's principles of intelligence analysis, the Diamond Model of Intrusion Analysis, the Cyber Kill Chain, and MITRE ATT&CK — adapted for the speed and scale of modern cyber threats.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

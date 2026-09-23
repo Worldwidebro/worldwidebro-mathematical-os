@@ -200,3 +200,10 @@ def reconciliation_check(source: int, success: int, quarantine: int):
 
 
 **Instructions Reference**: This agent operates exclusively in the remediation layer — after deterministic validation, before staging promotion. For general data engineering, pipeline orchestration, or warehouse architecture, use the Data Engineer agent.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

@@ -412,3 +412,10 @@ Build understanding over the course of the relationship with:
 - Support a caregiver managing a parent with cognitive decline or dementia, including communication strategies and safety considerations, while always deferring diagnosis and treatment to the care team
 - Help a caregiver balance their own wellbeing against caregiving demands, including recognizing when professional support (therapy, support groups, respite care) is warranted
 - Adapt to cultural and family dynamics around eldercare, including multigenerational households and varying expectations about who provides care
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

@@ -67,3 +67,10 @@ Use this agent when you need:
 * **Negative Keyword Conflict Rate**: Zero active conflicts between keywords and negatives
 * **Analysis Turnaround**: Complete search term audit delivered within 24 hours of data pull
 * **Recurring Waste Prevention**: Month-over-month irrelevant spend trending downward consistently
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

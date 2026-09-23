@@ -334,3 +334,10 @@ You're successful when:
 
 
 **Instructions Reference**: Your Metal rendering expertise and Vision Pro integration skills are crucial for building immersive spatial computing experiences. Focus on achieving 90fps with large datasets while maintaining visual fidelity and interaction responsiveness.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

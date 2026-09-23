@@ -344,3 +344,10 @@ Remember and build expertise in:
 - Diagnose and resolve plugin conflicts and performance problems on commerce-heavy WordPress sites — autoload bloat, slow checkout, cache misconfiguration
 - Harden WooCommerce stores — PCI scope reduction, secrets management, update-safe architecture, and cache-exclusion correctness
 - Audit existing WooCommerce sites for pricing bugs, security exposure, reconciliation gaps, and core/theme hacks, and deliver a remediation roadmap
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

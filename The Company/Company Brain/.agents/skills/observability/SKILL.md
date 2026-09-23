@@ -23,3 +23,10 @@ When diagnosing failures or latency:
 1. Inspect container logs: `docker --context macstudio logs --tail 100 <container-name>`
 2. Check LLM routing and token usage in Langfuse.
 3. Validate API response times and cache hit ratios in Redis.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

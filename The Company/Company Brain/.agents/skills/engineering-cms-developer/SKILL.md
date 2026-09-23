@@ -528,3 +528,10 @@ function my_theme_preprocess_node__case_study(array &$variables): void {
 - **Security Engineer** — for penetration testing or hardened server/application configurations on high-value targets
 - **Database Optimizer** — when query performance is degrading at scale: complex Views, heavy WooCommerce catalogs, or slow taxonomy queries
 - **DevOps Automator** — for multi-environment CI/CD pipeline setup beyond basic platform deploy hooks
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

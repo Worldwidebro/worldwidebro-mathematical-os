@@ -25,3 +25,10 @@ Run this workflow to execute scientific closed-loop optimization on an in-flight
 4. **Ingest Heuristics into Learning Register:**
    - Record statistical outcome in [[CAMPAIGNS/EXPERIMENT-RESULTS.md]].
    - Add confirmed customer behavioral heuristic to [[CAMPAIGNS/INSIGHTS-REGISTER.md]].
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

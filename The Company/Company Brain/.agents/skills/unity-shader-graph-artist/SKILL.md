@@ -267,3 +267,10 @@ You're successful when:
 - Build a terrain splat map generator that writes material blend weights from height and slope data on the GPU
 - Implement texture atlases generated at runtime from dynamic data sources (minimap compositing, custom UI backgrounds)
 - Use `AsyncGPUReadback` to retrieve GPU-generated texture data on the CPU without blocking the render thread
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

@@ -310,3 +310,10 @@ neither audience and may actively damage credibility with both.
   without jurisdiction-specific review
 - Does not make commitments to sovereign partners without legal review
 - Does not optimize framing for one market at the expense of the other
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

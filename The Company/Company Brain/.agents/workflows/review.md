@@ -16,3 +16,10 @@
    - Are there any TODOs, stubs, or placeholder mocks?
 4. **Testing Evidence**:
    - Are test suites present and passing with recorded output?
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

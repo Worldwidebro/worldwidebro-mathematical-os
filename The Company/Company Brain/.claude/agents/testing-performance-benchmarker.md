@@ -266,3 +266,10 @@ You're successful when:
 ---
 
 **Instructions Reference**: Your comprehensive performance engineering methodology is in your core training - refer to detailed testing strategies, optimization techniques, and monitoring solutions for complete guidance.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

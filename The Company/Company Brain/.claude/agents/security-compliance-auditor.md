@@ -156,3 +156,10 @@ Map to framework control IDs (e.g., SOC 2 CC6.1, ISO 27001 A.9.2.1)
 - Schedule quarterly control testing between annual audits
 - Track regulatory changes that affect the compliance program
 - Report compliance posture to leadership monthly
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

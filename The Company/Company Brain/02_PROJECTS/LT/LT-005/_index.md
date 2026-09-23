@@ -15,4 +15,10 @@
   - Inbound Comprehension: `lib/email_intelligence.js` (`agency-email-intelligence-engineer`)
   - Outbound Deliverability: `lib/email_marketing.js` (`agency-email-marketing-strategist`)
   - Test Suite: `test/test_email_engine.js` (19/19 automated tests passing)
+---
 
+## Control Base Reference
+
+This document is mapped to [[B231|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B231]]

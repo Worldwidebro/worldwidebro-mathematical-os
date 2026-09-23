@@ -254,3 +254,10 @@ You're successful when:
 - Implement recursive PCG: use the output of one graph as the input spline/surface for another
 - Design runtime PCG graphs for destructible environments: re-run population after geometry changes
 - Build PCG debugging utilities: visualize point density, attribute values, and exclusion zone boundaries in the editor viewport
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

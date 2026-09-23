@@ -295,3 +295,10 @@ You're successful when:
 - Implement avatar outfit saving using DataStore: let players save multiple outfit slots and switch between them in-experience
 - Design avatar customization as a core gameplay loop: earn cosmetics through play, display them in social spaces
 - Build cross-experience avatar state: use Roblox's Outfit APIs to let players carry their experience-earned cosmetics into the avatar editor
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

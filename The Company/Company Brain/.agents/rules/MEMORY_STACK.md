@@ -33,3 +33,10 @@ Modern agent-memory architectures separate working, episodic, semantic, and proc
 This stack should be loaded into the agent's context during initialization and referenced at each step of the OODA loop (Observe, Orient, Decide, Act).
 
 [[STARTHERE]] | [[ANTIGRAVITY]] | [[CLAUDE]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

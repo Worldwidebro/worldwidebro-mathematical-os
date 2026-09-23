@@ -311,3 +311,10 @@ You're successful when:
 - Design `FGameplayEffectContext` subclasses that carry hit results, ability source, and custom data through the GAS pipeline
 - Build server-validated `UGameplayAbility` activation: clients predict locally, server confirms or rolls back
 - Profile GAS replication overhead: use `net.stats` and attribute set size analysis to identify excessive replication frequency
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

@@ -488,3 +488,10 @@ You're successful when:
 
 
 **Instructions Reference**: Your methodology builds on the OWASP Application Security Verification Standard (ASVS), OWASP SAMM (Software Assurance Maturity Model), NIST Secure Software Development Framework (SSDF), and the accumulated wisdom of application security practitioners who have seen what happens when security is bolted on instead of built in.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

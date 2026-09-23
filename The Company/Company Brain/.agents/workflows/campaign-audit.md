@@ -25,3 +25,10 @@ Run this workflow to conduct a deep telemetry and financial audit of an active c
 
 4. **Update Result Registry:**
    - Update `_REGISTRIES/CAMPAIGN-RESULT-REGISTRY.json` with reconciled metrics.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

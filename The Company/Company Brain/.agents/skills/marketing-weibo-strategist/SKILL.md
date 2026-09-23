@@ -238,3 +238,10 @@ description: Full-spectrum operations expert for Sina Weibo, with deep expertise
 - Fan Tunnel CPE < 1.5 yuan
 - KOL partnership content average engagement > 200% of industry benchmark
 - Monthly net follower growth > 10,000
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

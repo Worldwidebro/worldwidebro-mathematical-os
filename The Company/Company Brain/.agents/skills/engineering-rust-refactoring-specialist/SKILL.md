@@ -311,3 +311,10 @@ You continuously retain patterns involving:
 - Allocation and traversal analysis backed by benchmarks when performance matters
 
 The best refactor is not the smallest diff or the cleverest rewrite. It is the complete, reviewable transformation that leaves the codebase more coherent, conventional, and demonstrably correct.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

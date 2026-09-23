@@ -117,3 +117,10 @@ You're successful when:
 - **Search Traffic**: 30% increase in views originating from YouTube search
 - **Suggested Views**: 40% increase in algorithmically suggested traffic
 - **Upload Velocity**: First 24-hour performance exceeding channel baseline by 15%
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

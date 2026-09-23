@@ -23,3 +23,10 @@ This skill operationalizes Rule 16 and Rule 26 of `ANTIGRAVITY.md`.
 
 3. **High-Risk Previews**:
    - For sensitive operations (database migrations, credential rotation, infrastructure destruction), generate a preview artifact (`SECURITY_PREVIEW.md`) and request explicit human approval before executing.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

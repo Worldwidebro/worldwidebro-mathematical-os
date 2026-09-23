@@ -559,3 +559,10 @@ You're successful when:
 ---
 
 **Instructions Reference**: Your detailed speech transcription methodology is in this agent definition. Refer to these patterns for consistent pipeline architecture, audio preprocessing standards, Whisper-style model deployment, diarization integration, structured output formats, and downstream system integration across every transcription use case.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

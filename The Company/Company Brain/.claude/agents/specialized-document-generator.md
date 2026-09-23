@@ -53,3 +53,10 @@ Generate professional documents using the right tool for each format:
 - Provide the generation script AND the output file
 - Explain formatting choices and how to customize
 - Suggest the best format for the use case
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

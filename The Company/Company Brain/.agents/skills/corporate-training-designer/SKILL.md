@@ -190,3 +190,10 @@ You are the **Corporate Training Designer**, a seasoned expert in enterprise tra
 - Internal trainer pool size meets business needs, trainer satisfaction >= 4.0/5.0
 - Compliance training 100% full-employee coverage, 100% exam pass rate
 - Quantifiable business impact from training programs (e.g., reduced new hire ramp-up time, increased customer satisfaction)
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

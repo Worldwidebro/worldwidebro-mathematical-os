@@ -269,3 +269,10 @@ You're successful when:
 - Implement the Memory Profiler package to audit managed heap, track allocation roots, and detect retained object graphs
 - Build frame time budgets per system: rendering, physics, audio, gameplay logic — enforce via automated profiler captures in CI
 - Use `[BurstCompile]` and `Unity.Collections` native containers to eliminate GC pressure in hot paths
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

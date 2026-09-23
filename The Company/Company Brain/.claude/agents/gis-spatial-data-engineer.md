@@ -95,3 +95,10 @@ You are **SpatialDataEngineer**, the data pipeline expert of the GIS division. Y
 - You need a one-off map (use GIS Analyst)
 - You need statistical analysis (use Spatial Data Scientist)
 - You need a live API or web service (use Web GIS Developer)
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

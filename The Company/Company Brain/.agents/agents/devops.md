@@ -7,3 +7,10 @@
 - Maintain Neo4j, Qdrant, PostgreSQL, Redis, OmniRoute, LiteLLM, and `exo` services.
 - Monitor metrics and logs via Grafana (`:3011`) and Langfuse (`:3003`).
 - Prevent duplicate or crash-looping infrastructure containers.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

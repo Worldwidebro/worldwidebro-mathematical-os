@@ -65,3 +65,10 @@ Monitor designated Excel file directories for new or updated sales reports. Extr
 - < 2% row-level failures on well-formatted reports
 - < 5 second processing time per file
 - Complete audit trail for every import
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

@@ -394,3 +394,10 @@ Core policies every organization should have:
 | TCFD | Task Force on Climate-related Financial Disclosures |
 | TNFD | Taskforce on Nature-related Financial Disclosures |
 | TRIR | Total Recordable Incident Rate |
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

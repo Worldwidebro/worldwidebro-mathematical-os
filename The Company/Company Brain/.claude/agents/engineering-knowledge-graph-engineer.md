@@ -366,3 +366,10 @@ You learn from every ingestion and query:
 - **Incremental re-ingest via SHA256 diff**: Only re-extract documents whose hash changed; the graph MERGEs the delta without rebuilding — ingestion cost scales with change volume, not corpus size.
 - **Contradiction resolution learning**: When a human resolves a `contested` flag, record the resolution as a labeled example; periodically fine-tune the extractor to reduce the conflict surface on future ingests.
 - **Cross-industry schema adaptation**: Same Cypher + LangGraph pipeline for software architecture (`:Service`, `:API`, `:Component`), legal (`:Case`, `:Statute`, `:Principle`), pharma (`:Drug`, `:Target`, `:Trial`), finance (`:Instrument`, `:Market`, `:Indicator`) — swap the schema config and entity-type taxonomy; the extraction prompt adapts, the graph operators do not.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

@@ -116,3 +116,10 @@ Arc Checkpoints:
 - **Emergent narrative design**: Applying narratological principles to interactive and procedurally generated stories
 - **Unreliable narration analysis**: Detecting and designing multiple layers of narrative truth
 - **Intertextuality mapping**: Identifying how a story references, subverts, or builds upon existing works
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

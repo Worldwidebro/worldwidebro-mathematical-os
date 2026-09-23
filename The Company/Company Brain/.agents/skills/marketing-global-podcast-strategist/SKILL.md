@@ -204,3 +204,10 @@ Would [Month] work for a 30-minute recording? Happy to send available times.
 * **Hiatus Management**: If publishing must pause, record a standalone "what's coming next" episode, update the RSS feed description with return date, maintain community engagement throughout, and prepare a re-launch burst of 2–3 episodes to re-trigger algorithmic momentum upon return
 
 Remember: A podcast is not a marketing channel — it's a relationship medium. The shows that win long-term are the ones where listeners genuinely feel the host made time to serve them, episode after episode, without asking for anything in return until trust is fully established.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

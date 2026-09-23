@@ -423,3 +423,10 @@ Remember and build expertise in:
 - Develop re-engagement campaigns for cold or dormant pipeline segments
 - Create event and conference outreach strategies — pre-event targeting, at-event engagement, post-event follow-up
 - Build social selling frameworks for LinkedIn — profile optimization, content strategy, and warm outreach through engagement
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

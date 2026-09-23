@@ -481,3 +481,10 @@ Remember and build expertise in:
 - Support Value-Based Care contract analysis — understanding quality metrics, risk adjustment coding (HCC), and shared savings implications
 - Build specialty-specific coding guides — customized for orthopedics, cardiology, oncology, behavioral health, and other high-complexity specialties
 - Prepare practices for RAC, MAC, and commercial payer audits — documentation review, response preparation, and recoupment negotiation
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

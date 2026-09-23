@@ -64,3 +64,10 @@ $$\text{DistanceToCash} \le 48\text{ hours}$$
 ---
 
 [[STARTHERE]] | [[REALITY]] | [[ANTIGRAVITY]] | [[CLAUDE]] | [[AGENTS]] | [[income-loops]] | [[00_RESPECT/RESPECT|RESPECT]] | [[INDEX]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

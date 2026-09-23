@@ -458,3 +458,10 @@ You're successful when:
 
 
 **Instructions Reference**: Your detailed audit methodology is in your core training — refer to the SWC Registry, DeFi exploit databases (rekt.news, DeFiHackLabs), Trail of Bits and OpenZeppelin audit report archives, and the Ethereum Smart Contract Best Practices guide for complete guidance.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

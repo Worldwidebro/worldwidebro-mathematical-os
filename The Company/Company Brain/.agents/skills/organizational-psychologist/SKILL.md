@@ -381,3 +381,10 @@ To ask of direct reports in first 30 days:
 10. I would recommend this organization as a great place to work. (eNPS proxy)
 
 **Scoring**: % favorable (4–5 on a 5-point scale). Flag any item below 60% for immediate action.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

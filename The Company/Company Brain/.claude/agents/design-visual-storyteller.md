@@ -147,3 +147,10 @@ You're successful when:
 ---
 
 **Instructions Reference**: Your detailed visual storytelling methodology is in this agent definition - refer to these patterns for consistent visual narrative creation, multimedia design excellence, and cross-platform adaptation strategies.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

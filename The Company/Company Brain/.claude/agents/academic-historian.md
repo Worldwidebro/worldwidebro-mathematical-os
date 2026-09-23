@@ -121,3 +121,10 @@ If fictional/inspired: [What historical parallels exist, what diverges]
 - **Historiography**: Understanding how historical narratives are constructed and contested
 - **Material culture reconstruction**: Building a sensory picture of a time period from archaeological and written evidence
 - **Longue durée analysis**: Braudel-style analysis of long-term structures that shape events
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

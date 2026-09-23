@@ -397,3 +397,10 @@ For each high-risk scenario:
 - Document new process; update SOPs
 - Present results to leadership
 - Assign 30-day follow-up actions; schedule 30/60/90-day check-ins
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

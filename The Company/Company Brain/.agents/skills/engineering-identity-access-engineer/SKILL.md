@@ -194,3 +194,10 @@ CREATE POLICY tenant_isolation ON documents
 - Credential-stuffing defense in depth: breached-password checks, progressive rate limiting, device fingerprint signals, and step-up challenges tuned against lockout support load
 - Migration engineering: consolidating legacy auth paths, rehashing password stores on login, and dual-stack session cutovers with instant rollback
 - Compliance mapping: turning the audit trail into SOC 2 / ISO 27001 evidence without building a parallel logging system
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

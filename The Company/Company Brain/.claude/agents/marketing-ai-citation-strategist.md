@@ -170,3 +170,10 @@ Design content around the actual prompt patterns users type into AI:
 - **"How to choose X"** — requires buyer's guide content with decision frameworks
 - **"What is the difference between X and Y"** — requires clear definitional content
 - **"Recommend a X that does Y"** — requires feature-focused content with use case mapping
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

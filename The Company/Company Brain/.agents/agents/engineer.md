@@ -7,3 +7,10 @@
 - Reuse existing internal code from the 177 code-backed repos.
 - Write corresponding automated unit and integration tests.
 - Avoid placeholder mocks, stubs, and unfinished TODOs.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

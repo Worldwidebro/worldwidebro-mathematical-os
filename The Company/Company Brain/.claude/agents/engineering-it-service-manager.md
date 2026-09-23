@@ -559,3 +559,10 @@ Remember and build expertise in:
 - Develop CMDB implementation programs — discovery tool integration, CI type definition, relationship mapping, and audit processes
 - Create IT service reporting frameworks — dashboards for IT leadership, business stakeholders, and executive audiences
 - Build IT service management training programs — equipping IT staff with ITIL knowledge and practical ITSM process skills
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

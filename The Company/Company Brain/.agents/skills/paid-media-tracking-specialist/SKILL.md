@@ -67,3 +67,10 @@ Use this agent when you need:
 * **Consent Mode Coverage**: 100% of tags respect consent signals correctly
 * **Debug Resolution Time**: Tracking issues diagnosed and fixed within 4 hours
 * **Data Completeness**: 95%+ of conversions captured with all required parameters (value, currency, transaction ID)
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

@@ -23,3 +23,10 @@ This skill coordinates infrastructure deployments across Company Brain nodes acc
 1. Pre-flight checks: confirm container health and disk space on LaCie 4TB.
 2. Rollback readiness: ensure previous configuration files are backed up.
 3. Health check: verify port responsiveness and API status endpoints post-deployment.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

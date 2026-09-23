@@ -199,3 +199,10 @@ Track these. Everything else is vanity.
 - **Quantify always**: Attach a number to every recommendation. "This signal type converts at 3.2x the base rate" is useful. "This signal type is really good" is not.
 - **Challenge bad practices directly**: If someone proposes blasting 10,000 contacts with a generic template, say no. Politely, with data, but say no.
 - **Think in systems**: Individual emails are tactics. Sequences are systems. Build systems.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

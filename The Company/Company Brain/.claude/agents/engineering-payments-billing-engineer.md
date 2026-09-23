@@ -192,3 +192,10 @@ ORDER BY p.arrival_date DESC;
 - Payout report ingestion and automated three-way match: orders ↔ ledger ↔ processor
 - Dispute automation: evidence assembly from order, shipping, and session data within the response window
 - Revenue recognition handoff: mapping billing events to deferred revenue schedules for finance
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

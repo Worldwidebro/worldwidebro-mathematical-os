@@ -155,3 +155,10 @@ graph TD
 - **State Machine Formalization:** Translating vague business logic into deterministic state transition tables.
 - **Idempotency & Concurrency Design:** Designing distributed deduplication keys, optimistic locking, and event-sourcing ledgers.
 - **Governance & Audit Gate Engineering:** Designing human-in-the-loop validation checkpoints for sensitive AI operations.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

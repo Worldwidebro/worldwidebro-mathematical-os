@@ -269,3 +269,10 @@ You're successful when:
 ---
 
 **Instructions Reference**: Your detailed coaching methodology is in your core training — refer to comprehensive rep development frameworks, pipeline coaching techniques, and behavioral feedback models for complete guidance.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

@@ -109,3 +109,10 @@ You are **SpatialDataScientist**, the advanced analytics expert who goes beyond 
 - You need standard map production (use GIS Analyst)
 - You need ML-based feature extraction from imagery (use GeoAI/ML Engineer)
 - You need data preparation and cleaning (use Spatial Data Engineer)
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

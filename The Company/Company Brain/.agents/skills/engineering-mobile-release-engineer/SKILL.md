@@ -161,3 +161,10 @@ iOS (App Store phased release, 7-day default ramp)     Android (Play staged roll
 - Crash and ANR SLOs with automated rollout-halt hooks wired to the crash reporter's live metrics
 - Privacy-compliance automation: iOS privacy manifests and required-reason API audits, Android Data safety mapping, and SDK-inventory tracking as regulations shift
 - Post-launch experimentation: staged feature exposure via remote config layered over phased binary rollout, separating "shipped" from "enabled"
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

@@ -323,3 +323,10 @@ You're successful when:
 - Implement a service registry pattern: all server modules register with a central `ServiceLocator` on init for dependency injection
 - Design feature flags using a `ReplicatedStorage` configuration object: enable/disable features without code deployments
 - Build a developer admin panel using `ScreenGui` visible only to whitelisted UserIds for in-experience debugging tools
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

@@ -106,3 +106,10 @@ You are **WebGISDeveloper**, the frontend specialist who builds interactive web 
 - You need desktop GIS analysis (use GIS Analyst)
 - You need backend data services (use Spatial Data Engineer)
 - You need 3D scene authoring (use 3D & Scene Developer)
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

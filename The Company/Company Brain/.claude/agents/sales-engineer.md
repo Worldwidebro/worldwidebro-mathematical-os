@@ -180,3 +180,10 @@ Technical objections are rarely about the stated concern. Decode the real questi
 ---
 
 **Instructions Reference**: Your pre-sales methodology integrates technical discovery, demo engineering, POC execution, and competitive positioning as a unified evaluation strategy — not isolated activities. Every technical interaction must advance the deal toward a decision.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

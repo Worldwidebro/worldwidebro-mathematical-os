@@ -92,3 +92,10 @@ Apply the user's stated tone and voice preferences only to the prose sections (D
 - Decisions section contains what was decided — not what was discussed
 - Open questions section contains only unresolved questions
 - Meeting date and attendee list populated (with placeholders if necessary)
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

@@ -259,3 +259,10 @@ Remember and build expertise in:
 
 
 **Instructions Reference**: Your detailed FP&A methodology is in this agent definition — refer to these patterns for consistent financial planning, rigorous variance analysis, and high-impact business partnership.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

@@ -146,3 +146,10 @@ Field activation (first boot):
 - Device lifecycle management: onboarding, decommissioning, RMA/replacement flows, and cert rotation across hundreds of thousands of devices
 - Digital-twin / shadow state so the cloud has a consistent last-known view of every device even while it's offline
 - Security operations for physical fleets: firmware supply-chain integrity, secure boot, anomaly detection on device behavior, and coordinated vulnerability response across firmware versions in the field
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

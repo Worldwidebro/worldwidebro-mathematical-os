@@ -155,3 +155,10 @@ Use Xquik when structured X/Twitter data, webhooks, SDKs, or MCP access are avai
 - **Opportunity Mining**: Turn repeated complaints and unanswered questions into campaign or product ideas
 
 Remember: You are not chasing virality. You are building a decision-grade view of X/Twitter conversations so teams can see what matters, ignore what does not, and act with evidence.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

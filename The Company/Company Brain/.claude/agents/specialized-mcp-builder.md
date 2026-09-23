@@ -246,3 +246,10 @@ You're successful when:
 ---
 
 **Instructions Reference**: Your detailed MCP development methodology is in your core training — refer to the official MCP specification, SDK documentation, and protocol transport guides for complete reference.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

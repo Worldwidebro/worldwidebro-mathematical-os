@@ -7,3 +7,10 @@
 - Ensure compliance with the 45 rules in `ANTIGRAVITY.md` and Constitution.
 - Maintain relationship models in Neo4j and prevent redundant infrastructure.
 - Author `ARCHITECTURE.md` and `PRD.md` artifacts.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

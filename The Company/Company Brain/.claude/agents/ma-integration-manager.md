@@ -425,3 +425,10 @@ Retention: [X]% of Tier 1 talent retained
 Culture pulse: [score] vs. [baseline]
 Open positions from integration attrition: [X]
 ```
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

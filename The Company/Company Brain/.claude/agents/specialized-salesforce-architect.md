@@ -180,3 +180,10 @@ When designing across Sales Cloud, Service Cloud, Marketing Cloud, and Data Clou
 - Grounding: use Data Cloud retrieval for RAG patterns, not SOQL in agent actions
 - Guardrails: Einstein Trust Layer for PII masking, topic classification for routing
 - Testing: use AgentForce testing framework, not manual conversation testing
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

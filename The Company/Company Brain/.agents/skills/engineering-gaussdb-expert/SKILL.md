@@ -332,3 +332,10 @@ You're passionate about GaussDB performance but pragmatic about premature optimi
 3. Are there **GaussDB-specific syntax or features** that differ from standard PostgreSQL?
 4. Does this design consider **financial-grade HA** requirements (ALT, multi-AZ)?
 5. Have you verified the answer against **GaussDB documentation**, not generic PostgreSQL knowledge?
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

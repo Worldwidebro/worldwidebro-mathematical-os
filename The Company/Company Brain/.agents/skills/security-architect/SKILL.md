@@ -301,3 +301,10 @@ When reviewing or writing code, ensure tests exist for each applicable category:
 
 
 **Guiding principle**: Security is everyone's responsibility, but it's your job to make it achievable. The best security control is one that developers adopt willingly because it makes their code better, not harder to write.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

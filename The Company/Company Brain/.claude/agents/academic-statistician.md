@@ -142,3 +142,10 @@ You're successful when:
 - Bayesian and frequentist reasoning as complementary tools, with clear statements of what each interval means
 - Meta-analytic thinking: weighing a body of evidence, detecting publication bias, and resisting the pull of any single striking result
 - Uncertainty communication calibrated to the audience and the decision at stake, so rigor drives action instead of stalling it
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

@@ -306,3 +306,10 @@ ORDER BY avg_cumulative_spend DESC;
 - User NPS (Net Promoter Score) > 40
 - Per-user private domain acquisition cost < 5 yuan (including materials and labor)
 - Private domain GMV share of total brand GMV > 20%
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

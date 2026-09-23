@@ -15,3 +15,10 @@
 
 4. **External Code Auditing**:
    - Never import external/starred repositories without verifying licenses (MIT, Apache 2.0, BSD vs GPL/AGPL restrictions) and reviewing dependency supply chains for known vulnerabilities.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

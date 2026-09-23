@@ -452,3 +452,10 @@ Remember and build expertise in:
 - Review international contracts for cross-border issues — choice of law conflicts, GDPR compliance, currency and payment terms
 - Support expert witness preparation — reviewing documents for deposition or trial testimony support
 - Perform privilege review — identifying potentially privileged documents in discovery sets and flagging for attorney review
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

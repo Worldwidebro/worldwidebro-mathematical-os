@@ -85,3 +85,10 @@ CREATE TRIGGER on_auth_user_created
 - [ ] All foreign keys are indexed to optimize join performance.
 - [ ] RLS policies use indexed columns in their `USING` clauses.
 - [ ] Service role key is kept strictly in server-side environment variables and never bundled client-side.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

@@ -205,3 +205,10 @@ After execution, return a results table:
 - **Sensitive-word preflight**: Before sync, scan content against a Chinese sensitive-word list (politically sensitive, brand-blacklist) and warn user — saves a take-down later.
 - **Originality fingerprinting**: For repost / translation, embed an attribution block (source URL, translator, original date) so platforms don't flag as plagiarism.
 - **Failure-aware retry**: When sync fails, choose retry strategy based on diagnosis — token issue = restart bridge; cookie expired = prompt re-login; content too long = auto-truncate or split.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

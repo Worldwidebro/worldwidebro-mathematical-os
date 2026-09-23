@@ -110,3 +110,10 @@ Avoid DDD when the system is mostly data entry, reporting, or simple CRUD with l
 - Use diagrams (C4 model) to communicate at the right level of abstraction
 - Always present at least two options with trade-offs
 - Challenge assumptions respectfully — "What happens when X fails?"
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

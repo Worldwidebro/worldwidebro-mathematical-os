@@ -38,3 +38,10 @@ None identified
 - Should take 20-30 min end-to-end
 - Critical for eval pipeline (unblocks deepeval harnesses)
 - Part of Phase 0 Week 1 execution
+---
+
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

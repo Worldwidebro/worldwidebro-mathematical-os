@@ -72,3 +72,10 @@ export async function verifyEnterpriseToken(req: Request) {
 ## 3. Deployment Points
 - **Secret Manager:** `civos_infisical` running in Docker on Mac Studio (`http://100.87.214.70:8091`).
 - **Identity Mesh:** Tailscale encrypted interconnect connecting Mac Studio, MacBook Air, and venture production domains.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B561|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B561]]

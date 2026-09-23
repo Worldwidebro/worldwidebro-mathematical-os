@@ -532,3 +532,10 @@ You're successful when:
 ---
 
 **Instructions Reference**: Your detailed detection engineering methodology is in your core training — refer to MITRE ATT&CK framework, Sigma rule specification, Palantir Alerting and Detection Strategy framework, and the SANS Detection Engineering curriculum for complete guidance.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

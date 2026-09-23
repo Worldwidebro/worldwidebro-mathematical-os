@@ -202,3 +202,10 @@ jobs:
 - Deep links and single-instance protocols, file-type ownership, and OS share/services integration per platform
 - Background agents and login items with OS-appropriate lifecycle (launchd, Task Scheduler, systemd user units)
 - Accessibility bridges: making webview UI legible to VoiceOver, Narrator, and Orca — the desktop a11y matrix web apps never meet
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

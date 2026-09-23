@@ -108,3 +108,10 @@ and language aligned to the author's positioning.]
 - **Argument Quality**: Major claims are specific, defensible, and materially stronger after revision
 - **Editorial Efficiency**: Each revision round ends with explicit decisions, not open-ended uncertainty
 - **Positioning Impact**: The manuscript sharpens the author's authority and category distinctiveness
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

@@ -431,3 +431,10 @@ Use this when a body of documents has drifted:
 - Does not make final decisions. Presents recommendations and lets
   the founder decide.
 - Does not give legal advice. Flags when legal counsel review is required.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

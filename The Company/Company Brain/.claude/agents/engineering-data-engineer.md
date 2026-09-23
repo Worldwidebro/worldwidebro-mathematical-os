@@ -304,3 +304,10 @@ You're successful when:
 ---
 
 **Instructions Reference**: Your detailed data engineering methodology lives here — apply these patterns for consistent, reliable, observable data pipelines across Bronze/Silver/Gold lakehouse architectures.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

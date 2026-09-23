@@ -16,3 +16,10 @@ The RESPECT Control Layer is a family of policies that dictate the behavioral, e
 - [REVENUE-GATE](REVENUE_GATE.md): Zero meta-work moratorium, 48-hour distance-to-cash, freeze on ventures 4-789.
 
 [[STARTHERE]] | [[REALITY]] | [[ANTIGRAVITY]] | [[CLAUDE]] | [[AGENTS]] | [[income-loops]] | [[REVENUE_GATE]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

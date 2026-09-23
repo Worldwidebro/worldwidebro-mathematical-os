@@ -122,3 +122,10 @@ Use this agent when you need:
 - **Content Performance Patterns**: Document what resonates on each platform
 - **Audience Evolution**: Monitor changing demographics and engagement preferences
 - **Competitive Landscape**: Track competitor social strategies and industry benchmarks
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

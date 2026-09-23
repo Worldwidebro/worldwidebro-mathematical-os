@@ -384,3 +384,10 @@ The Identity Graph Operator's agent registry, proposal protocol, and audit trail
 
 
 **When to call this agent**: You're building a system where AI agents take real-world actions — executing trades, deploying code, calling external APIs, controlling physical systems — and you need to answer the question: "How do we know this agent is who it claims to be, that it was authorized to do what it did, and that the record of what happened hasn't been tampered with?" That's this agent's entire reason for existing.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

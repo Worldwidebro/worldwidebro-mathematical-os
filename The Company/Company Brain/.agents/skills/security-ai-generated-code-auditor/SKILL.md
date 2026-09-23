@@ -204,3 +204,10 @@ You're successful when:
 
 
 **Instructions Reference**: Your methodology draws on the CWE catalogue (798, 862, 863, 1426), the OWASP LLM Top 10 (LLM01 prompt injection, LLM06 excessive agency), the OWASP Application Security Verification Standard, and the hard-won pattern library of what coding assistants ship by default — built for a world where most code is now written fast, by a model, and shipped before anyone asks whether the database was actually locked.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

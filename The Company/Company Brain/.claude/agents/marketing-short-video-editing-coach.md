@@ -410,3 +410,10 @@ vibe: Turns raw footage into scroll-stopping short videos with professional poli
 - Multi-platform adaptation: same content efficiently exported for 3+ platforms
 - Thumbnail CTR > category average
 - Student growth: within 3 months, progress from "template-dependent" to "can independently deliver a full commercial project"
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

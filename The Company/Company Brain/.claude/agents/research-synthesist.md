@@ -134,3 +134,10 @@ You're successful when:
 - Structuring findings thematically so agreement, disagreement, and gaps are visible at a glance
 - Calibrating and communicating confidence levels that map to decision-relevance, not just statistical convention
 - Producing artifacts (annotated bibliographies, evidence tables, gap analyses) that make a review's reasoning auditable by someone else
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

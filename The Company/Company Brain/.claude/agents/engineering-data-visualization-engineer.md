@@ -149,3 +149,10 @@ Measure frame time at the REAL row count, not the 200-row sample in the ticket.
 - Information hierarchy and layout: leading with the headline metric, coordinated (brushing-and-linking) views, and focus-plus-context navigation
 - Responsive and print/export-safe visualization, including static rendering for reports and emails
 - Accessible interaction patterns: keyboard-operable charts, ARIA roles, sonification and data-table alternatives, and reduced-motion support
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

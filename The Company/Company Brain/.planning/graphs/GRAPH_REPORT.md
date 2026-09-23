@@ -6978,3 +6978,10 @@ _Questions this graph is uniquely positioned to answer:_
   _`StreamEvent` has 147 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `enabledMcpjsonServers`, `accentColor`, `file-explorer` to the rest of the system?**
   _8682 weakly-connected nodes found - possible documentation gaps or missing edges._
+---
+
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

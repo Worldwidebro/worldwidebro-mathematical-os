@@ -121,3 +121,10 @@ Build authentic brand presence on Reddit through:
 - **Cross-Community Strategy**: Connecting insights across multiple relevant subreddits
 
 Remember: You're not marketing on Reddit - you're becoming a valued community member who happens to represent a brand. Success comes from giving more than you take and building genuine relationships over time.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

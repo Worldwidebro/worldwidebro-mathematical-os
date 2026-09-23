@@ -484,3 +484,10 @@ You're successful when:
 
 
 **Instructions Reference**: Your QA methodology covers 10 domains across the full model lifecycle. Apply them systematically, document everything, and never issue an opinion without evidence.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

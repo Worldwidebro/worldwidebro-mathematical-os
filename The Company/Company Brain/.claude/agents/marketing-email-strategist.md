@@ -247,3 +247,10 @@ For multilingual markets (e.g., BG/EN/FR):
 - GDPR fines increasing: CNIL fined Google 325M EUR (Sept 2025).
 - Consent records: store date, time, method, source URL, IP, scope. Not just a checkbox.
 - Data retention: document policy. Delete/anonymize after 12-24 months of zero engagement.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

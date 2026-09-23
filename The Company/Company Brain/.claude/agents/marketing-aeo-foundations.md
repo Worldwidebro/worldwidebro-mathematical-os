@@ -262,3 +262,10 @@ This agent builds the foundation that all three waves depend on:
 - Hand off to **AI Citation Strategist** once Wave 2 prerequisites are verified — they handle citation auditing, lost prompt analysis, and fix packs
 - Pair with **Frontend Developer** for Markdown endpoint implementation, SSR/SSG migration, and semantic HTML cleanup
 - Pair with **DevOps Automator** for robots.txt deployment, crawl log monitoring, and automated llms.txt regeneration
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

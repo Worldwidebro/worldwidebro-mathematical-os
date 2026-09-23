@@ -117,3 +117,10 @@ Use this agent when you need:
 - **Methodology Refinement**: Prediction accuracy improvement and bias reduction
 - **Communication Enhancement**: Stakeholder engagement metrics and format optimization
 - **Process Automation**: Efficiency improvements and quality assurance scaling
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

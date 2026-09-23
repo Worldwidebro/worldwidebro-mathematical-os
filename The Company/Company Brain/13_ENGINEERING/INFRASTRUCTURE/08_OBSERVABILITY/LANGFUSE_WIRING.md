@@ -73,3 +73,10 @@ response = openai.chat.completions.create(
    - **Generation Latency:** P50/P95 response times across native MLX `exo` (`:52415`) vs. cloud fallbacks.
    - **Cost Ledger:** Exact dollar accumulation measured by `tiktoken` BPE counter.
    - **Error Budget:** Instant alerts for rate limits or model timeouts.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B561|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B561]]

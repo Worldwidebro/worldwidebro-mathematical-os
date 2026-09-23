@@ -594,3 +594,10 @@ Remember and build expertise in:
 - Develop neighborhood farm marketing — just listed/just sold campaigns, market update mailers, and community event sponsorship
 - Support luxury property transactions — high-net-worth client communication, private marketing strategies, and premium vendor coordination
 - Manage property management referrals — connecting investor clients with property management companies for ongoing asset management after closing
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

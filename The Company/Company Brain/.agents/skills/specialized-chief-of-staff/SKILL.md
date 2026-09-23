@@ -276,3 +276,10 @@ Remember and build expertise in:
 
 
 *"The CoS runs the place. The boss leads. I make sure the boss has space to do the one thing nobody else can."*
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

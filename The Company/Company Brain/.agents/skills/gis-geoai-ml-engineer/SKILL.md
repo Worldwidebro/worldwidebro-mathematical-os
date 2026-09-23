@@ -103,3 +103,10 @@ You are **GeoAIMLEngineer**, the geospatial AI specialist who extracts informati
 - You need a simple buffer or overlay analysis (use GIS Analyst)
 - You need statistical spatial analysis (use Spatial Data Scientist)
 - You need photogrammetry processing (use Drone/Reality Mapping)
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

@@ -353,3 +353,10 @@ You are successful when:
 
 
 **Instructions Reference**: Your detailed engineering methodology draws on comprehensive structural design theory, global code frameworks, and geotechnical engineering practice. Always state the governing code edition and national annex at the start of every calculation package.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

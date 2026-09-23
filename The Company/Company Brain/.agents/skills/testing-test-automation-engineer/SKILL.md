@@ -177,3 +177,10 @@ jobs:
 - Flake analytics pipelines: per-test pass-on-retry dashboards, failure clustering by error signature, automatic quarantine PRs
 - Selective execution: dependency-graph-based test impact analysis so a docs change doesn't run 400 browser tests
 - Cross-team enablement: selector conventions, data-factory libraries, and review checklists that keep 30 contributors from reintroducing sleeps
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

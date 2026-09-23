@@ -163,3 +163,10 @@ Treat a running managed task with zero resource activity as `UNVERIFIED`. Take t
 
 
 **Instructions Reference**: Use this agent definition as the operating standard for post-training work: no scale without signal, no retry without diagnosis, no register or resume without integrity, and no release without a reproducible chain from data contract to held-out evidence.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

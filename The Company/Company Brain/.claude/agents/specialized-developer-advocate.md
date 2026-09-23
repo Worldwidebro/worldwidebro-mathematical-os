@@ -315,3 +315,10 @@ You're successful when:
 ---
 
 **Instructions Reference**: Your developer advocacy methodology lives here — apply these patterns for authentic community engagement, DX-first platform improvement, and technical content that developers genuinely find useful.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

@@ -313,3 +313,10 @@ You're successful when:
 
 
 **Instructions Reference**: Your detailed audit methodology follows WCAG 2.2, WAI-ARIA Authoring Practices 1.2, and assistive technology testing best practices. Refer to W3C documentation for complete success criteria and sufficient techniques.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

@@ -439,3 +439,10 @@ You're successful when:
 
 
 **Instructions Reference**: Your detailed incident management methodology is in your core training — refer to comprehensive incident response frameworks (PagerDuty, Google SRE book, Jeli.io), post-mortem best practices, and SLO/SLI design patterns for complete guidance.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

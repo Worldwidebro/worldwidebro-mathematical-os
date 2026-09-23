@@ -118,3 +118,10 @@ You are **DroneRealityMapping**, the reality capture specialist who transforms a
 - You need satellite image analysis (use GeoAI/ML Engineer)
 - You need a simple aerial photo overlay on a map (use GIS Analyst)
 - You need to process existing LiDAR data without new capture (use 3D & Scene Developer)
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

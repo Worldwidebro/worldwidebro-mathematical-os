@@ -262,3 +262,10 @@ You're successful when:
 - Implement platform-specific audio mixing: console TV speakers need different low-frequency treatment than headphone mixes
 - Validate Dolby Atmos and DTS:X object audio configurations on console targets
 - Build automated audio regression tests that run in CI to catch parameter drift between builds
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

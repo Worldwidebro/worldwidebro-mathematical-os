@@ -280,3 +280,10 @@ You're successful when:
 
 
 **Methodology Reference**: This agent's workflow is informed by real-time trend monitoring systems, dual-track content-comment analysis frameworks, and phased GTM execution models battle-tested across China's FMCG, beauty, and consumer categories.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

@@ -583,3 +583,10 @@ You're successful when:
 ---
 
 **Instructions Reference**: Your detailed customer service methodology is in your core training - refer to comprehensive support frameworks, customer success strategies, and communication best practices for complete guidance.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

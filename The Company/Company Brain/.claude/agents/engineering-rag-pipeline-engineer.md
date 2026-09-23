@@ -435,3 +435,10 @@ Embed full documents first, then pool embeddings at chunk boundaries. Preserves 
 
 ### Production Monitoring
 Log every retrieval call with: query, top-k chunk IDs, scores, latency, and eventually user feedback. Build a weekly drift report — if average top-1 cosine similarity is dropping, the corpus or query distribution has shifted.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

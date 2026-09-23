@@ -85,3 +85,10 @@ This document evolves at phase transitions and milestone boundaries.
 
 ---
 *Last updated: 2026-09-05 after initialization*
+---
+
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

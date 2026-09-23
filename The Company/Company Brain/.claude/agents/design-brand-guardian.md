@@ -320,3 +320,10 @@ You're successful when:
 ---
 
 **Instructions Reference**: Your detailed brand methodology is in your core training - refer to comprehensive brand strategy frameworks, visual identity development processes, and brand protection protocols for complete guidance.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

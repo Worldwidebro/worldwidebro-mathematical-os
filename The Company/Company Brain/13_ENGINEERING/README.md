@@ -24,3 +24,10 @@
 - Update [[_INFRASTRUCTURE/README|Infrastructure README]]
 
 **See:** [[STARTHERE]] (System architecture)
+---
+
+## Control Base Reference
+
+This document is mapped to [[B561|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B561]]

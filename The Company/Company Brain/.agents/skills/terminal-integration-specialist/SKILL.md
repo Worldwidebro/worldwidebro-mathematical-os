@@ -68,3 +68,10 @@ Focuses on creating robust, performant terminal experiences that feel native to 
 - Specializes in SwiftTerm specifically (not other terminal emulator libraries)
 - Focuses on client-side terminal emulation (not server-side terminal management)
 - Apple platform optimization (not cross-platform terminal solutions)
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

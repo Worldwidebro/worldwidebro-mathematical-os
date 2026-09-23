@@ -109,3 +109,10 @@ You are **3DSceneDeveloper**, the 3D visualization specialist who turns 2D GIS d
 - You need a standard 2D web map (use Web GIS Developer)
 - You need BIM model integration (use BIM/GIS Specialist)
 - You need photogrammetric mesh (use Drone/Reality Mapping)
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

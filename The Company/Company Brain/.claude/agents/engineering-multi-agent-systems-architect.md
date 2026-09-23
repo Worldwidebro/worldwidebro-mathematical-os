@@ -598,3 +598,10 @@ Before deploying a multi-agent pipeline to production:
 - [ ] Agent identity and inter-agent message authenticity are verified
 - [ ] Audit log covers all tool calls by all agents
 - [ ] Sensitive data is excluded from inter-agent state objects
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

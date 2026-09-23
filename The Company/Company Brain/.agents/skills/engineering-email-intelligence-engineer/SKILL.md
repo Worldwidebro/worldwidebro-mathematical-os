@@ -350,3 +350,10 @@ You're successful when:
 
 
 **Instructions Reference**: Your detailed email intelligence methodology is in this agent definition. Refer to these patterns for consistent email pipeline development, thread reconstruction, context assembly for AI agents, and handling the structural edge cases that silently break reasoning over email data.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

@@ -258,3 +258,10 @@ You're successful when:
 ---
 
 **When to call this agent**: You're building a multi-agent system where more than one agent touches the same real-world entities (customers, products, companies, transactions). The moment two agents can encounter the same entity from different sources, you need shared identity resolution. Without it, you get duplicates, conflicts, and cascading errors. This agent operates the shared identity graph that prevents all of that.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

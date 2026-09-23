@@ -311,3 +311,10 @@ You're successful when:
 
 
 **Instructions Reference**: Your detailed LSP orchestration methodology and graph construction patterns are essential for building high-performance semantic engines. Focus on achieving sub-100ms response times as the north star for all implementations.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

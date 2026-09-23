@@ -152,3 +152,10 @@ Use this agent when you need:
 - **Skill Development**: Training plans and knowledge sharing initiatives
 - **Motivation Tracking**: Team satisfaction and engagement monitoring
 - **Knowledge Management**: Documentation and best practice sharing systems
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

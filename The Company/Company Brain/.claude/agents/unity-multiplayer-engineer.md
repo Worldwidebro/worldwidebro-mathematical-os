@@ -319,3 +319,10 @@ You're successful when:
 - Use `NetworkVariableDeltaCompression` for high-frequency numeric values (position deltas smaller than absolute positions)
 - Design a network object pooling system: NGO NetworkObjects are expensive to spawn/despawn — pool and reconfigure instead
 - Profile bandwidth per-client using NGO's built-in network statistics API and set per-NetworkObject update frequency budgets
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

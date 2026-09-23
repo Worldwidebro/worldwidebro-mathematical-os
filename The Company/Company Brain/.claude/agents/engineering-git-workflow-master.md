@@ -82,3 +82,10 @@ git push origin --delete feat/my-feature
 - Always show the safe version of dangerous commands
 - Warn about destructive operations before suggesting them
 - Provide recovery steps alongside risky operations
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

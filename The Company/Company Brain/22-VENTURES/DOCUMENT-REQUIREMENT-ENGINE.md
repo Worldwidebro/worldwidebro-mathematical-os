@@ -1878,3 +1878,10 @@ END FUNCTION
 - **Universal 22-Domain Engine:** [[scripts/venture_os_engine.py]]
 - **Business Capital Data Room:** [[BUSINESS-CAPITAL-DATA-ROOM/5-VENTURE-INTEGRATED-SUMMARY|5-Venture Integrated Summary]]
 - **Master Truth Ledger:** [[REALITY|REALITY.md]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B221|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B221]]

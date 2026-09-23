@@ -154,3 +154,10 @@ wasm-opt -Oz --strip-debug --dce input.wasm -o optimized.wasm   # size-first opt
 - Toolchain integration into JS build systems (Vite/webpack) with proper Wasm loading, and framework interop patterns
 - Debugging Wasm in production: source maps, DWARF debug info, and turning a stack of hex offsets into readable frames
 - Progressive delivery: lazy module instantiation, code-splitting Wasm, and streaming compilation so heavy modules never block first interaction
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

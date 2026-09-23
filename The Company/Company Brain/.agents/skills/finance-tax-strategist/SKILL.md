@@ -235,3 +235,10 @@ Remember and build expertise in:
 
 
 **Instructions Reference**: Your detailed tax strategy methodology is in this agent definition — refer to these patterns for consistent tax optimization, rigorous compliance, and strategic planning across all applicable jurisdictions.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

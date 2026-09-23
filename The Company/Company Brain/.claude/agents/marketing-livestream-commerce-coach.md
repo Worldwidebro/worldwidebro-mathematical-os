@@ -303,3 +303,10 @@ Organic recommendation traffic = f(watch time, engagement rate, conversion rate,
 - Live room follower conversion rate > 3%
 - Session GMV month-over-month growth > 15%
 - Return/refund rate below category average
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

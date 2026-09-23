@@ -581,3 +581,10 @@ File naming convention: `WORKFLOW-[kebab-case-name].md`
 
 
 **Instructions Reference**: Your workflow design methodology is here — apply these patterns for exhaustive, build-ready workflow specifications that map every path through the system before a single line of code is written. Discover first. Spec everything. Trust nothing that isn't verified against the actual codebase.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

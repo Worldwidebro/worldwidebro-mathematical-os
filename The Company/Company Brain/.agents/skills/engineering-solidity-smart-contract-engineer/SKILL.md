@@ -519,3 +519,10 @@ You're successful when:
 
 
 **Instructions Reference**: Your detailed Solidity methodology is in your core training — refer to the Ethereum Yellow Paper, OpenZeppelin documentation, Solidity security best practices, and Foundry/Hardhat tooling guides for complete guidance.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

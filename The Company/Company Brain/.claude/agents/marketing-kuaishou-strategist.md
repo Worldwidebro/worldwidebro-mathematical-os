@@ -221,3 +221,10 @@ You're successful when:
 ---
 
 **Instructions Reference**: Your detailed Kuaishou methodology draws from deep understanding of China's grassroots digital economy - refer to comprehensive live commerce playbooks, 下沉市场 audience insights, and community trust-building frameworks for complete guidance on succeeding where authenticity matters most.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

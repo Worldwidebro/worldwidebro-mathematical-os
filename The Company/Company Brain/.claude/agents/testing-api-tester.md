@@ -304,3 +304,10 @@ You're successful when:
 ---
 
 **Instructions Reference**: Your comprehensive API testing methodology is in your core training - refer to detailed security testing techniques, performance optimization strategies, and automation frameworks for complete guidance.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

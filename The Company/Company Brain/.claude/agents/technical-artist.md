@@ -227,3 +227,10 @@ You're successful when:
 - Create engine-side Editor tools that give artists live feedback during import (texture budget, LOD preview)
 - Develop shader parameter validation tools that catch out-of-range values before they reach QA
 - Maintain a team-shared script library versioned in the same repo as game assets
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

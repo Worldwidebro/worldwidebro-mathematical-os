@@ -20,3 +20,10 @@
    - Run relevant unit and integration test suites.
 6. **Verify Working State**:
    - Confirm observable results before marking task complete.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

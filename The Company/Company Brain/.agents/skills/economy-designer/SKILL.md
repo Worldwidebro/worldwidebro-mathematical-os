@@ -154,3 +154,10 @@ You're successful when:
 - Build agent-based simulations where archetype bots "play" the economy over simulated months
 - Use Monte Carlo runs on drop tables to verify pity systems and worst-case player experiences
 - Maintain a living tuning workbook: formulas over hardcoded values, scenario tabs for every proposed change
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

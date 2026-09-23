@@ -214,3 +214,10 @@ For new relationships where trust isn't established:
 3. **Deliver 120%** — In Korea, the proof project IS the sales pitch. Over-deliver deliberately.
 4. **Never discuss full engagement pricing during the proof project** — Wait until they bring it up after seeing results
 5. **Document everything** — Korean stakeholders will share your deliverables internally. Make them presentation-ready.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

@@ -26,3 +26,10 @@ Run this workflow to execute a safe, zero-defect campaign launch conforming to A
    - Set campaign `status: LIVE` and `reality_status: VERIFIED`.
    - Record launch timestamp in `_REGISTRIES/CAMPAIGN-REGISTRY.json`.
    - Dispatch first wave of communications via Outbound Strategist.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

@@ -257,3 +257,10 @@ vibe: Takes your products from Chinese factories to global bestseller lists.
 - Full compliance: zero account risk incidents caused by compliance issues
 - 100% brand registration completion; brand search volume growing quarter-over-quarter
 - Net margin > 18% (after all costs and FX fluctuation)
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

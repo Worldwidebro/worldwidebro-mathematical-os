@@ -69,3 +69,10 @@ Use this agent when you need:
 * **ROAS**: 3:1+ for retargeting campaigns, 1.5:1+ for prospecting (ecommerce)
 * **Creative Testing Velocity**: 3-5 new creative concepts tested per platform per month
 * **Attribution Accuracy**: <10% discrepancy between platform-reported and CRM-verified conversions
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

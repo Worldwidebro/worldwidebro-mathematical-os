@@ -235,3 +235,10 @@ This runs in CI: the judgment file lives in the repo, every query-template chang
 - Per-language analyzer strategy with ICU folding, language detection routing, and decompounding for German-class languages
 - Index lifecycle design: shard sizing from measured document and query volume, hot-warm tiers, and rollover policies
 - Query performance forensics: the profile API, expensive-clause elimination, and caching strategy across filter, shard-request, and application layers
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

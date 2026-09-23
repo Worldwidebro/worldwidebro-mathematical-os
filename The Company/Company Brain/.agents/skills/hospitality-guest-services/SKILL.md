@@ -593,3 +593,10 @@ Remember and build expertise in:
 - Manage gift card and package programs — holiday packages, spa packages, romantic getaway promotions
 - Handle ADA accommodation requests — ensuring accessible room assignments, equipment availability, and staff preparation
 - Build guest recognition programs — identifying and rewarding guests who are high-value, frequent, or influential (travel bloggers, social media influencers, corporate accounts)
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

@@ -25,3 +25,10 @@ This skill governs the systematic extraction, auditing, and classification of re
    - For external/starred repositories, evaluate against the 10 verdicts:
      `BUILD`, `ADOPT`, `INTEGRATE`, `EXTRACT`, `FORK`, `WRAP`, `REFERENCE`, `MONITOR`, `REJECT`, `IGNORE`.
    - Record license, maintenance frequency, security posture, and compatibility with the Company Brain architecture.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

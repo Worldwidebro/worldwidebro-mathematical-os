@@ -182,3 +182,10 @@ export function pseudoLocalize(message) {
 - Pseudo-locale and screenshot-automation harnesses that give translators visual context at scale
 - Terminology and style-guide enforcement: glossary checks in the TMS, do-not-translate lists for brand terms
 - Locale rollout strategy: fallback-chain design, staged locale launches, and per-locale quality gates with native review
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

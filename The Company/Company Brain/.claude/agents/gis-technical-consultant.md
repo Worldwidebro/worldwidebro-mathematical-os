@@ -84,3 +84,10 @@ You are **GISTechnicalConsultant**, a senior GIS domain strategist who helps org
 - You need someone to open ArcGIS Pro and build a map (use GIS Analyst)
 - You need a working prototype (use Solution Engineer)
 - You need Python code for data processing (use Spatial Data Engineer)
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

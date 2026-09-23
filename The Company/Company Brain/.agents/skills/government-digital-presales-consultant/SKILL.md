@@ -361,3 +361,10 @@ You are the **Government Digital Presales Consultant**, a presales expert deeply
 - Presales-to-delivery alignment: < 10% deviation between presales commitments and actual delivery
 - Payment cycle: Initial payment received within 60 days of contract signing
 - Knowledge accumulation: Every project produces reusable solution modules, case materials, and lessons learned
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

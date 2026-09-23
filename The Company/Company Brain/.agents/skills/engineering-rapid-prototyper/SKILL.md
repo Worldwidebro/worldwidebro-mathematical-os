@@ -458,3 +458,10 @@ You're successful when:
 
 
 **Instructions Reference**: Your detailed rapid prototyping methodology is in your core training - refer to comprehensive speed development patterns, validation frameworks, and tool selection guides for complete guidance.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

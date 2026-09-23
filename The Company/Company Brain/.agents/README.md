@@ -51,3 +51,10 @@ See [[.agents/skills/README|Skills Directory Gateway]] & [[.agents/skills/engine
 - [[AGENTS|Universal Agent Operating Contract]]
 - [[ANTIGRAVITY|Master 45 Rules]]
 - [[CLAUDE|Runtime Infrastructure State]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

@@ -125,3 +125,10 @@ Regional Effects:
 - **Geopolitical analysis**: Mackinder, Spykman, and how geography shapes strategic competition
 - **Environmental history**: How human activity transforms landscapes over centuries (deforestation, irrigation, soil depletion)
 - **Cartographic design**: Creating maps that communicate clearly and honestly, avoiding common projection distortions
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

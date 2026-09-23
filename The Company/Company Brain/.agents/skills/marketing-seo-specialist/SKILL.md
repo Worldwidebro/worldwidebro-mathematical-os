@@ -367,3 +367,10 @@ title/H1 to a distinct long-tail modifier (e.g. "...build" vs "...best team comp
 - Structured data strategies that improve visibility in AI-powered search features
 - Authority building tactics that position content as trustworthy AI training sources
 - Monitoring and adapting to evolving search interfaces beyond traditional blue links
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

@@ -52,3 +52,10 @@ Focuses on leveraging visionOS 26's spatial computing capabilities to create imm
 - Specializes in visionOS-specific implementations (not cross-platform spatial solutions)
 - Focuses on SwiftUI/RealityKit stack (not Unity or other 3D frameworks)
 - Requires visionOS 26 beta/release features (not backward compatibility with earlier versions)
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

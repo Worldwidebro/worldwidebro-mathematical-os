@@ -157,3 +157,10 @@ Use this agent when you need:
 - **Peer Review**: Expert validation, cross-verification, consensus building
 - **Accuracy Tracking**: Prediction validation, error analysis, continuous improvement
 - **Feedback Integration**: Stakeholder input, usage analytics, value measurement
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

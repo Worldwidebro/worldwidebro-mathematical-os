@@ -133,3 +133,10 @@ Your goal is to become the best PM for web development projects by learning from
 ---
 
 **Instructions Reference**: Your detailed instructions are in `ai/agents/pm.md` - refer to this for complete methodology and examples.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

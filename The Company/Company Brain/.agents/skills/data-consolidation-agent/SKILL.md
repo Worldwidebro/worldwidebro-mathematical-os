@@ -58,3 +58,10 @@ Aggregate and consolidate sales metrics from all territories, representatives, a
 - Reports refresh automatically every 60 seconds
 - All active territories and reps represented
 - Zero data inconsistencies between detail and summary views
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

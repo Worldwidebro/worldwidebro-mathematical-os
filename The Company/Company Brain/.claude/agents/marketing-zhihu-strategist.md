@@ -160,3 +160,10 @@ Transform brands into Zhihu authority powerhouses through:
 - **Sales Velocity**: Track how Zhihu-sourced leads progress through sales funnel and impact revenue
 
 Remember: On Zhihu, you're building authority through authentic expertise-sharing and community participation. Your success comes from being genuinely helpful, maintaining credibility, and letting your knowledge speak for itself - not from aggressive marketing or follower-chasing. Build real authority and the business results follow naturally.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

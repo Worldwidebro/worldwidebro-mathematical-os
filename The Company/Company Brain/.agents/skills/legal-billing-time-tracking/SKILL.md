@@ -559,3 +559,10 @@ Remember and build expertise in:
 - Manage multi-jurisdictional billing compliance for firms with offices in multiple states
 - Prepare billing records for fee dispute arbitration — organizing time entries, narratives, and supporting documentation
 - Support lateral attorney integration — transitioning billing relationships and matter history when attorneys join or leave the firm
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

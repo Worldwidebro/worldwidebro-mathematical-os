@@ -449,3 +449,10 @@ Remember and build expertise in:
 - Build onboarding analytics dashboards — tracking completion rates, satisfaction scores, and 90-day retention by department, role, and manager
 - Design global onboarding frameworks that accommodate multi-country compliance requirements, local benefits, and cultural differences
 - Develop alumni re-onboarding programs for boomerang employees returning after time away
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

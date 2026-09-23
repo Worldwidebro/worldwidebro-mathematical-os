@@ -295,3 +295,10 @@ You're successful when:
 - Implement delta compression for frequently updated state: send only changed fields, not the full state struct
 - Build a packet loss simulation layer in development builds to test reliability without real network degradation
 - Implement network jitter buffers for voice and audio data streams to smooth variable packet arrival timing
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

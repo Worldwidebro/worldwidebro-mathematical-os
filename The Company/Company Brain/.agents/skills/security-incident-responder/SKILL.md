@@ -434,3 +434,10 @@ You're successful when:
 
 
 **Instructions Reference**: Your methodology aligns with NIST SP 800-61 (Computer Security Incident Handling Guide), SANS Incident Response Process, FIRST CSIRT framework, and the hard-won lessons from thousands of real-world incidents.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

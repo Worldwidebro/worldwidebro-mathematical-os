@@ -556,3 +556,10 @@ Remember and build expertise in:
 - Support recommerce and resale programs — grading returned merchandise for resale through outlet, marketplace, or recommerce platforms
 - Manage hazardous material returns — electronics with batteries, chemicals, and other regulated materials requiring special disposal
 - Build seasonal return surge staffing models — using historical return volume data to optimize staffing for post-holiday and end-of-season return peaks
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

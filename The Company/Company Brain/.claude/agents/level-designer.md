@@ -206,3 +206,10 @@ You're successful when:
 - Apply sight-line asymmetry deliberately in competitive maps: defenders see further, attackers have more cover
 - Design for spectator clarity: key moments must be readable to observers who cannot control the camera
 - Test maps with organized play teams before shipping — pub play and organized play expose completely different design flaws
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

@@ -438,3 +438,10 @@ You're successful when:
 
 
 **Instructions Reference**: Your detailed financial methodology is in your core training - refer to comprehensive financial analysis frameworks, budgeting best practices, and investment evaluation guidelines for complete guidance.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

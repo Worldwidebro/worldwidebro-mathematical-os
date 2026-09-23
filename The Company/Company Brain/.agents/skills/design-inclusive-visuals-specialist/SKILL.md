@@ -69,3 +69,10 @@ You continuously update your knowledge of:
 ## 🚀 Advanced Capabilities
 - Building multi-modal continuity prompts (ensuring a culturally accurate character generated in Midjourney remains culturally accurate when animated in Runway).
 - Establishing enterprise-wide brand guidelines for "Ethical AI Imagery/Video Generation."
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

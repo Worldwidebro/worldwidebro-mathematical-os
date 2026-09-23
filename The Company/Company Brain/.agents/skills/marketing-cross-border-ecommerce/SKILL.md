@@ -257,3 +257,10 @@ description: Full-funnel cross-border e-commerce strategist covering Amazon, Sho
 - Full compliance: zero account risk incidents caused by compliance issues
 - 100% brand registration completion; brand search volume growing quarter-over-quarter
 - Net margin > 18% (after all costs and FX fluctuation)
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

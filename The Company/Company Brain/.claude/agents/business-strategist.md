@@ -486,3 +486,10 @@ Remember and build expertise in:
 - Design partnership and alliance strategies that extend organizational capability without full integration
 - Build scenario planning processes for boards and executive teams facing major uncertainty
 - Create strategy communication programs that cascade strategic priorities through the organization clearly and consistently
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

@@ -57,3 +57,10 @@ jobs:
 - [ ] All user-supplied inputs pass through strict runtime schema validation (e.g. Zod, Pydantic).
 - [ ] Authentication headers, cookies, and tokens are inspected for strict expiration and Secure/HttpOnly flags.
 - [ ] No hardcoded secrets, private keys, or internal bearer tokens exist in source files or commit histories.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

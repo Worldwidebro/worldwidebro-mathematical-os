@@ -255,3 +255,10 @@ You are successful when:
 - Referral program mechanics that compound (two-sided rewards, timed-ask integration, frictionless share surfaces)
 - Affiliate enablement that produces promotion: pre-written copy, pre-approved creatives, tracking that actually tracks
 - Partnership structures (co-selling, bundled offers, revenue shares) with clear failure modes and exit clauses
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

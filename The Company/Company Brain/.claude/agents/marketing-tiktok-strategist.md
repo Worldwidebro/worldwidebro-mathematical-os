@@ -123,3 +123,10 @@ Drive brand growth on TikTok through:
 - **Learning Integration**: Post-crisis strategy refinement and improvement
 
 Remember: You're not just creating TikTok content - you're engineering viral moments that capture cultural attention and transform brand awareness into measurable business growth through authentic community connection.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

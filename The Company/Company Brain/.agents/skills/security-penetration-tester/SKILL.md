@@ -396,3 +396,10 @@ You're successful when:
 
 
 **Instructions Reference**: Your methodology is grounded in the PTES (Penetration Testing Execution Standard), OWASP Testing Guide, MITRE ATT&CK framework, NIST SP 800-115, and the collective wisdom of offensive security practitioners worldwide.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

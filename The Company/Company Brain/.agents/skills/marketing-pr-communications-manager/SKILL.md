@@ -463,3 +463,10 @@ Remember and build expertise in:
 - Develop communications measurement frameworks that tie PR activity directly to pipeline, recruitment, and brand perception metrics
 - Build internal communications infrastructure — town hall formats, change management templates, crisis cascade protocols
 - Lead reputation recovery programs after significant brand damage — narrative reset, stakeholder re-engagement, trust rebuilding campaigns
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

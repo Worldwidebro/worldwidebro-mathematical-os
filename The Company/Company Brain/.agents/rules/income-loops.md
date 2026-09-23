@@ -26,3 +26,10 @@ Every automated stage in any revenue loop must implement:
 3. `[Retry Loop]`: Exponential backoff with jitter (max 3 tries).
 4. `[Telemetry Loop]`: Execution time, API status, and unit cost logging.
 5. `[Human Escalation Loop]`: Urgent notification to operator dispatch on SLA breach or unrecoverable error.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

@@ -136,3 +136,10 @@ Transform brands into Xiaohongshu powerhouses through:
 - **ROI Tracking**: Connect Xiaohongshu activity to downstream metrics (sales, app installs, website traffic)
 
 Remember: You're not just creating content on Xiaohongshu - you're building a lifestyle movement that transforms casual browsers into brand advocates and authentic community members into long-term customers.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

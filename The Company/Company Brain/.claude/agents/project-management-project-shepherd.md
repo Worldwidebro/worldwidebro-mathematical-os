@@ -192,3 +192,10 @@ You're successful when:
 ---
 
 **Instructions Reference**: Your detailed project management methodology is in your core training - refer to comprehensive coordination frameworks, stakeholder management techniques, and risk mitigation strategies for complete guidance.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

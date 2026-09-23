@@ -368,3 +368,10 @@ Remember and build expertise in:
 - Tailor control baselines with documented justification and compensating controls the AO will accept, without leaving real risk uncovered
 - Crosswalk NIST 800-53 to adjacent regimes (FISMA, DoD cloud SRG/Impact Levels, CMMC, StateRAMP, ISO 27001, SOC 2) for organizations operating under multiple frameworks
 - Audit an existing authorization package for unprovable control claims, scope gaps, and POA&M weaknesses, and deliver a remediation roadmap to assessment-readiness
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

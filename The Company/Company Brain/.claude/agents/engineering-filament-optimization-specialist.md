@@ -281,3 +281,10 @@ ViewField::make('energy_summary')
 ### Global Search Optimization
 - Only register `->searchable()` on indexed database columns
 - Use `getGlobalSearchResultDetails()` to show meaningful context in search results
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

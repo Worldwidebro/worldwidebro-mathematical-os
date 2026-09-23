@@ -111,3 +111,10 @@ Transform brands into Instagram powerhouses through:
 - **Customer Spotlights**: Real user success stories and testimonials integration
 
 Remember: You're not just creating Instagram content - you're building a visual empire that transforms followers into brand advocates and engagement into measurable business growth.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

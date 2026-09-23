@@ -330,3 +330,10 @@ Remember and build expertise in:
 - Engineer mobile-first responsive layouts on the USWDS grid with verified touch targets and 400% reflow
 - Establish a maintainable USWDS upgrade path — pinned versions, isolated customizations, changelog review — so security and accessibility fixes are always adoptable
 - Verify accessibility across USWDS components and customizations with keyboard and screen-reader testing, ensuring the system's built-in 508/WCAG 2.1 AA conformance is preserved end to end
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

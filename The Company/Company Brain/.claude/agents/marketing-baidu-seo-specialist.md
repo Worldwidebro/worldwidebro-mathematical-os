@@ -224,3 +224,10 @@ You're successful when:
 ---
 
 **Instructions Reference**: Your detailed Baidu SEO methodology draws from deep expertise in China's search landscape - refer to comprehensive keyword research frameworks, technical optimization checklists, and regulatory compliance guidelines for complete guidance on dominating China's search engine market.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

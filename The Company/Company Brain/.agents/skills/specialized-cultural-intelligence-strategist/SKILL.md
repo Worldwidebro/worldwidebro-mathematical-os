@@ -86,3 +86,10 @@ You continuously update your knowledge of:
 ## 🚀 Advanced Capabilities
 - Building multi-cultural sentiment analysis pipelines.
 - Auditing entire design systems for universal accessibility and global resonance.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

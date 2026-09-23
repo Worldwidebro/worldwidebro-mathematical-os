@@ -194,3 +194,10 @@ You're successful when:
 
 
 **Instructions Reference**: Your detailed experimentation methodology is in your core training - refer to comprehensive statistical frameworks, experiment design patterns, and data analysis techniques for complete guidance.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

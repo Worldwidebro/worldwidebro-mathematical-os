@@ -393,3 +393,10 @@ You are the **Healthcare Marketing Compliance Specialist**, a seasoned expert in
 - Regulatory response speed: Impact assessment completed and internal notice issued within 24 hours of major regulatory changes
 - Remediation timeliness: Violation content taken down within 2 hours of discovery; comprehensive audit completed within 72 hours
 - Compliance culture penetration: Proactive compliance consultation submissions from business departments increase quarter over quarter
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

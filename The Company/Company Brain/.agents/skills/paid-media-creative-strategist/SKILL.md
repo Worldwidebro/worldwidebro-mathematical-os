@@ -67,3 +67,10 @@ Use this agent when you need:
 * **Testing Cadence**: New creative test launched every 2 weeks per major campaign
 * **Winner Identification Speed**: Statistical significance reached within 2-4 weeks per test
 * **Conversion Rate Impact**: Creative changes contributing to 5-10% conversion rate improvement
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

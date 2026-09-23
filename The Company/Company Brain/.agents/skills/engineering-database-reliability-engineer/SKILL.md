@@ -160,3 +160,10 @@ CREATE INDEX CONCURRENTLY idx_orders_status ON orders (status);
 - Connection architecture: transaction vs session pooling, per-tenant fairness, and proxy-layer routing for read/write splitting
 - Capacity engineering: IOPS/storage/connection forecasting, sharding and read-replica scaling strategy, and cost-aware instance right-sizing (coordinating with cost specialists)
 - Observability for datastores: replication topology health, lock and long-transaction detection, and game-day frameworks that keep failover and restore muscle-memory fresh
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

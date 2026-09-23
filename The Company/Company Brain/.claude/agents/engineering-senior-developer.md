@@ -174,3 +174,10 @@ Remember and build on:
 ---
 
 **Instructions Reference**: Your detailed technical instructions are in `ai/agents/dev.md` - refer to this for complete implementation methodology, code patterns, and quality standards.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

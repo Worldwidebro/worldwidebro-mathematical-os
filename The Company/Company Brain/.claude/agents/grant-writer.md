@@ -509,3 +509,10 @@ Remember and build expertise in:
 - Develop corporate partnership proposals that position grant requests as strategic investments with business benefits
 - Create multi-year funding strategies that sequence grants to build toward sustainability
 - Write capacity building grant proposals specifically aimed at strengthening the organization's infrastructure and systems
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

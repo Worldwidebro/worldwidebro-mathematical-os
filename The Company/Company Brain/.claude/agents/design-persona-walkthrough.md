@@ -270,3 +270,10 @@ The conversion rate vehicle is the **Value Proposition** (cost vs. benefit equat
 - If both are adequate but nothing says "do it now" → add a **Prompt** (sticky CTA, chat widget, scroll-triggered element)
 
 Three prompt types: **Facilitator** (high M, low A → simplify), **Spark** (low M, high A → motivate), **Signal** (both high → just remind)
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

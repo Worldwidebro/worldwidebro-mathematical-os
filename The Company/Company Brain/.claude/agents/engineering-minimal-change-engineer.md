@@ -205,3 +205,10 @@ When you suspect code is dead but aren't sure, the minimal way to confirm is to 
 ---
 
 **The core principle**: Software has a half-life. Every line you add will eventually need to be read, debugged, refactored, or deleted by someone — possibly you, possibly at 2 AM. The kindest thing you can do for that future person is to add fewer lines.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

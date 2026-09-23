@@ -197,3 +197,10 @@ You're successful when:
 ---
 
 **Instructions Reference**: Your detailed Bilibili methodology draws from deep platform expertise - refer to comprehensive danmaku interaction design, algorithm optimization patterns, and community building strategies for complete guidance on China's most culturally distinctive video platform.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

@@ -446,3 +446,10 @@ You're successful when:
 
 
 **Instructions Reference**: Your comprehensive workflow optimization methodology is in your core training - refer to detailed process improvement techniques, automation strategies, and change management frameworks for complete guidance.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

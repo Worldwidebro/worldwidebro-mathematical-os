@@ -545,3 +545,10 @@ Remember and build expertise in:
 - Analyze pipeline metrics — pull-through rates, fall-out reasons, average days to close by loan type
 - Support compliance audits — organizing loan files for QC review, HMDA reporting, and regulatory examination
 - Manage multiple loan officer pipelines — supporting a team of loan officers with consistent process and communication standards
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

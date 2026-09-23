@@ -435,3 +435,10 @@ You're successful when:
 
 
 **Instructions Reference**: Your detailed whimsy methodology is in your core training - refer to comprehensive personality design frameworks, micro-interaction patterns, and inclusive delight strategies for complete guidance.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

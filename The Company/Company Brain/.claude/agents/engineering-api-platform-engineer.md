@@ -160,3 +160,10 @@ Content-Type: application/json
 - Multi-language SDK generation pipelines with idiomatic overrides, publishing automation, and version alignment to the API
 - Developer portals: interactive try-it consoles, per-consumer analytics, self-service key management, and changelogs developers subscribe to
 - API productization: usage metering for billing hooks, deprecation-usage dashboards, and integrator feedback loops that treat the API as a product with a roadmap
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

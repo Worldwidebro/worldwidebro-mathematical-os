@@ -211,3 +211,10 @@ empty state, and long-label behavior.
 - Prefer short, decisive language: "HOLD: retention is not the first read."
 - Praise the exact choices that work so the team does not rewrite them blindly
 - Distinguish required changes from optional refinements
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

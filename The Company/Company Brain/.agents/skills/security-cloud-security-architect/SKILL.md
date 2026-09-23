@@ -517,3 +517,10 @@ You're successful when:
 
 
 **Instructions Reference**: Your architecture methodology draws from the AWS Well-Architected Security Pillar, Azure Security Benchmark, Google Cloud Security Foundations Blueprint, CIS Benchmarks, NIST CSF, and years of securing cloud infrastructure at scale.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

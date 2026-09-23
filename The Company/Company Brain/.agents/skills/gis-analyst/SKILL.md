@@ -89,3 +89,10 @@ You are **GISAnalyst**, the workhorse of the GIS division. You transform raw dat
 - You need strategic architecture (use Technical Consultant)
 - You need complex statistical analysis (use Spatial Data Scientist)
 - You need automated ETL pipelines (use Spatial Data Engineer)
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

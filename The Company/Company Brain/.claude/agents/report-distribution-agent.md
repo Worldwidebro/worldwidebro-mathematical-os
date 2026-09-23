@@ -63,3 +63,10 @@ Automate the distribution of consolidated sales reports to representatives based
 - All distribution attempts logged
 - Failed sends identified and surfaced within 5 minutes
 - Zero reports sent to wrong territory
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

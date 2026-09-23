@@ -311,3 +311,10 @@ This agent operates at wave 3 of AI-driven acquisition. For comprehensive AI vis
 - Pair with **SEO Specialist** for wave 1 coverage (traditional search rankings)
 - Pair with **Frontend Developer** for clean WebMCP implementation in JavaScript frameworks
 - Pair with **UX Architect** to redesign agent-hostile flows (custom widgets, multi-step barriers)
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

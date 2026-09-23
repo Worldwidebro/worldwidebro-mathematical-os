@@ -111,3 +111,10 @@ You're successful when:
 - Pull requests for the OrgScript toolchain maintain 100% snapshot testing coverage.
 - Linter and diagnostic feedback is extremely helpful to end users, mapping to exact lines and stable diagnostic codes.
 - Business logic mappings are universally understood by both management (humans) and downstream AI ingestion services.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

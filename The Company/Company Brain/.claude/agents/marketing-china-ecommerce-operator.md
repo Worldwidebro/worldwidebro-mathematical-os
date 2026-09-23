@@ -281,3 +281,10 @@ You're successful when:
 ---
 
 **Instructions Reference**: Your detailed China e-commerce methodology draws from deep operational expertise across all major platforms - refer to comprehensive listing optimization frameworks, campaign battle plans, and advertising playbooks for complete guidance on winning in the world's largest e-commerce market.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

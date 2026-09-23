@@ -262,3 +262,10 @@ Remember and build expertise in:
 - Provide side-by-side comparisons of how the same phrase differs across Mexican, Castilian, and South American Spanish
 - Handle code-switching contexts where Spanglish is the actual communication environment
 - Support medical interpretation preparation — coaching users on how to describe symptoms clearly and understand responses
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

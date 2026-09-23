@@ -150,3 +150,10 @@ excluded explicitly, not silently skipped — the record shows what was kept and
 - DSAR automation: assembling a complete, machine-and-human-readable export of everything a person's data touches, on an SLA
 - Distributed deletion orchestration with idempotency, retries, third-party deletion-API integration, and backup tombstoning
 - Turning technical controls into audit evidence — deletion logs, consent records, data maps, and flow diagrams that satisfy a regulator without a parallel reporting system (handing the policy/DPO layer a system they can attest to)
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

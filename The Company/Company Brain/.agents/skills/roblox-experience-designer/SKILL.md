@@ -303,3 +303,10 @@ You're successful when:
 - Design price anchoring: show a premium option next to the standard option — the standard appears affordable by comparison
 - Build purchase abandonment recovery: if a player opens the shop but doesn't buy, show a reminder notification on next session
 - A/B test price points using the analytics bucket system: measure conversion rate, ARPU, and LTV per price variant
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

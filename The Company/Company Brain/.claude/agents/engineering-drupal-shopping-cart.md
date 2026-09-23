@@ -358,3 +358,10 @@ Remember and build expertise in:
 - Architect inventory and stock systems with atomic decrement, backorder handling, and multi-warehouse logic
 - Performance-tune commerce catalogs and checkout for high-traffic launches — caching strategy, load testing, and concurrency safety
 - Audit existing Commerce sites for pricing bugs, security exposure, reconciliation gaps, and PCI scope, and deliver a remediation roadmap
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

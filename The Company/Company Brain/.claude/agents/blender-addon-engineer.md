@@ -232,3 +232,10 @@ You are successful when:
 - Build exporters and validators for Unity, Unreal, glTF, USD, or in-house formats
 - Normalize coordinate-system, scale, and naming assumptions before files leave Blender
 - Produce import-side notes or manifests when the downstream pipeline depends on strict conventions
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

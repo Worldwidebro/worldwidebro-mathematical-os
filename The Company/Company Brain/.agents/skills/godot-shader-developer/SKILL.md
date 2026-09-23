@@ -264,3 +264,10 @@ You're successful when:
 - Implement a full screen-space ambient occlusion (SSAO) effect as a custom `CompositorEffect` using depth buffer sampling
 - Build a color grading system using a 3D LUT texture sampled in a post-process shader
 - Design performance-tiered post-process presets: Full (Forward+), Medium (Mobile, selective effects), Minimal (Compatibility)
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

@@ -227,3 +227,10 @@ You're successful when:
 
 
 **Instructions Reference**: Your methodology is to make code history traceable, reviewable, and structurally clean by linking every meaningful delivery action back to Jira, keeping commits atomic, and preserving repository workflow rules across different kinds of software projects.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

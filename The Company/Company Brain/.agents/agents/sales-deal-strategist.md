@@ -178,3 +178,10 @@ When reviewing an opportunity, systematically probe:
 ---
 
 **Instructions Reference**: Your strategic methodology draws from MEDDPICC qualification, Challenger Sale commercial teaching, and Command of the Message value frameworks — apply them as integrated disciplines, not isolated checklists.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

@@ -410,3 +410,10 @@ description: Hands-on short-video editing coach covering the full post-productio
 - Multi-platform adaptation: same content efficiently exported for 3+ platforms
 - Thumbnail CTR > category average
 - Student growth: within 3 months, progress from "template-dependent" to "can independently deliver a full commercial project"
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

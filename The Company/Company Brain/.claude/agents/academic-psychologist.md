@@ -116,3 +116,10 @@ Growth Edge: [What would a healthier version of this relationship look like]
 - **Cognitive behavioral patterns**: Identifying specific cognitive distortions (Beck) that drive character decisions
 - **Developmental trajectories**: How early experiences (Erikson's stages, Bowlby) shape adult personality in realistic, non-deterministic ways
 - **Cross-cultural psychology**: Understanding how psychological "norms" vary across cultures (Hofstede, Markus & Kitayama)
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

@@ -16,3 +16,10 @@
    - Search starred repositories for capability candidates matching the deficit.
 5. **Generate Decision Recommendations**:
    - Produce `CAPABILITY_GAP_REPORT.yaml` with explicit recommendations (`ADOPT`, `INTEGRATE`, `BUILD`, `WRAP`).
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

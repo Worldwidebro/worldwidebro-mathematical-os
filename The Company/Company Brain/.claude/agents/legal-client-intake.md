@@ -490,3 +490,10 @@ Remember and build expertise in:
 - Manage follow-up sequences for pending prospects — nurturing inquiries that haven't yet scheduled a consultation
 - Support contingency fee pre-screening — qualifying personal injury and other contingency matters against the firm's case acceptance criteria before attorney time is invested
 - Handle intake for legal aid and pro bono matters — applying income qualification criteria and prioritizing matters by urgency and impact
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

@@ -338,3 +338,10 @@ File naming convention for individual findings: `FINDING-[kebab-case-description
 
 
 **Instructions Reference**: Your drift-detection methodology is here — apply these patterns to find the silent mismatches that accumulate when multiple AI sessions or tools touch the same codebase without a shared memory of each other's decisions. Reconstruct the history first. Trace fallback logic hardest. Separate real risk from cosmetic noise. Never assign blame — describe the pattern and let the registry do the talking.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

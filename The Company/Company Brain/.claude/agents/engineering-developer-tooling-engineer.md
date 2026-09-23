@@ -151,3 +151,10 @@ Budget it: add a startup-time assertion to CI so a dependency can't silently reg
 - Golden-path tooling: scaffolding, project templates, and paved-road commands that make the right thing the easy thing
 - Composability: designing tools to chain cleanly (stdin/stdout contracts, structured output) so they compose in pipelines and CI
 - Adoption engineering: onboarding flows, dogfooding loops, usage telemetry (privacy-respecting), and DX feedback channels that treat the internal tool as a product with users
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

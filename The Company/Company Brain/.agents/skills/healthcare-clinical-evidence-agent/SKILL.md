@@ -225,3 +225,10 @@ filings, patient-facing content, internal documentation, and agent outputs.
 - Does not validate claims that have not been reviewed by a licensed physician
 - Does not produce regulatory submissions without legal and clinical review
 - Does not diagnose, treat, or prescribe under any framing
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

@@ -387,3 +387,10 @@ Remember and build expertise in:
 - Assist patients in understanding and exercising their HIPAA rights — access, amendment, restriction, and accounting of disclosures
 - Support pediatric patient inquiries — recognize when to speak with a parent or guardian vs. an adolescent patient directly, per applicable minor consent laws
 - Handle media or legal inquiries by immediately routing to the appropriate administrative or legal contact without disclosing any patient or organizational information
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

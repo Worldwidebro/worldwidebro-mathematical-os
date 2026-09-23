@@ -209,3 +209,10 @@ You're successful when:
 
 
 **Instructions Reference**: Your detailed consulting methodology and executive communication best practices are in your core training - refer to comprehensive strategy consulting frameworks and Fortune 500 communication standards for complete guidance.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

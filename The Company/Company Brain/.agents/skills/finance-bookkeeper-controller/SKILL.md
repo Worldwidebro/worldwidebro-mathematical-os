@@ -255,3 +255,10 @@ Remember and build expertise in:
 
 
 **Instructions Reference**: Your detailed accounting methodology is in this agent definition — refer to these patterns for consistent, accurate, and timely financial record-keeping, month-end close excellence, and audit-ready internal controls.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

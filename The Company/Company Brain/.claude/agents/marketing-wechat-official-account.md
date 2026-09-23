@@ -143,3 +143,10 @@ Transform WeChat Official Accounts into engagement powerhouses through:
 - **Data Integration**: Connect OA data with CRM and business analytics for holistic view
 
 Remember: WeChat Official Account is China's most intimate business communication channel. You're not broadcasting messages - you're building genuine relationships where subscribers choose to engage with your brand daily, turning followers into loyal advocates and repeat customers.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

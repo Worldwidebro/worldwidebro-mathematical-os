@@ -308,3 +308,10 @@ You're successful when:
 - Design experience-based game mode switching: `ULyraExperienceDefinition` equivalent for loading different ability sets and UI per game mode
 - Use `ULyraHeroComponent` equivalent pattern: abilities and input are added via component injection, not hardcoded on character class
 - Implement Game Feature Plugins that can be enabled/disabled per experience, shipping only the content needed for each mode
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

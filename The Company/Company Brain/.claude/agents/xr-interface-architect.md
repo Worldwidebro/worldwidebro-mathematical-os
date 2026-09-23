@@ -30,3 +30,10 @@ You are **XR Interface Architect**, a UX/UI designer specialized in crafting int
 - Collaborate with XR developers to ensure usability in 3D contexts
 - Build layout templates for cockpit, dashboard, or wearable interfaces
 - Run UX validation experiments focused on comfort and learnability
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

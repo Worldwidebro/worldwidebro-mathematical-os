@@ -30,3 +30,10 @@ This skill governs the canonical translation between venture business requiremen
 3. **Registry Synchronization**:
    - Update `_REGISTRIES/CANONICAL/CAPABILITY_REGISTRY.yaml` and recalculate `CAPABILITY_GAP_REPORT.yaml` whenever dependencies change.
    - Maintain stable IDs (`CAP-001` through `CAP-012` for business, `CAP-TECH-*` for technical).
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

@@ -388,3 +388,10 @@ Remember and build expertise in:
 - Support multilingual customer bases by coordinating with interpreter services or language-specific support teams
 - Build and maintain knowledge base articles from recurring inquiries — turning individual resolutions into scalable self-service resources
 - Deliver proactive outreach — notifying customers of issues, delays, or changes before they have to reach out
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

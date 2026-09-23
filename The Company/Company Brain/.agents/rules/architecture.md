@@ -18,3 +18,10 @@
 
 4. **Reuse Over Reinvention**:
    - Always query existing capabilities in `CAPABILITY_REGISTRY.yaml` and code in the 177 code-backed repositories before creating new services or models.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

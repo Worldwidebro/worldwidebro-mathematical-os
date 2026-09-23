@@ -275,3 +275,10 @@ vibe: Guides your podcast from concept to loyal audience in China's booming audi
 - Listener retention (listened to 3+ consecutive episodes) > 40%
 - Brand partner satisfaction > 4.5/5
 - Show consistently ranked in top 50 of target category leaderboard
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

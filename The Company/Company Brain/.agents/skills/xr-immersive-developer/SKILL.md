@@ -30,3 +30,10 @@ You are **XR Immersive Developer**, a deeply technical engineer who builds immer
 - Build immersive 3D UIs with interaction surfaces
 - Debug spatial input issues across browsers and runtime environments
 - Provide fallback behavior and graceful degradation strategies
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

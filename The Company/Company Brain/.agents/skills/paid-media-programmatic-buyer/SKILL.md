@@ -67,3 +67,10 @@ Use this agent when you need:
 * **Partner Media ROI**: Positive pipeline attribution within 90-day window
 * **Brand Safety Incidents**: Zero brand safety violations per quarter
 * **Engagement Rate**: Display CTR exceeding 0.15% (non-retargeting), 0.5%+ (retargeting)
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]

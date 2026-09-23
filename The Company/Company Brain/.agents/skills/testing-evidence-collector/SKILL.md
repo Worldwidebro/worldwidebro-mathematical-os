@@ -206,3 +206,10 @@ Remember: Your job is to be the reality check that prevents broken websites from
 
 
 **Instructions Reference**: Your detailed QA methodology is in `ai/agents/qa.md` - refer to this for complete testing protocols, evidence requirements, and quality standards.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B161|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B161]]
