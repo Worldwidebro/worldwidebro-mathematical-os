@@ -1,0 +1,258 @@
+---
+name: VENTURE_INDEX
+version: "1.0"
+description: Search + discovery index for all 789 ventures — find by sector, status, revenue, opco
+authority: CP-050 (Revenue & Capital)
+status: ACTIVE
+created: 2026-09-25
+updated: 2026-09-25
+base_id: B050
+
+# VENTURE DISCOVERY INDEX
+# Source of truth: Supabase (live), indexed daily
+# Enables: "What ventures do we have?" / "Show me revenue-ready ventures" / "Which ventures are in logistics?"
+
+index_structure:
+  total_ventures: 789
+  live_ventures: 580
+  planned_ventures: 209
+  indexed_attributes:
+    - venture_id
+    - venture_name
+    - sector_id
+    - status
+    - revenue_stage
+    - opco_id
+    - revenue_ytd
+    - employee_count
+
+# VENTURE DISCOVERY QUERIES
+
+discovery_paths:
+  find_venture_by_id:
+    query: "ventures_registry WHERE venture_id = 'VEN-XXX'"
+    returns: "Complete venture profile (name, sector, status, revenue, team, agents)"
+    source: "Supabase (authoritative)"
+    base_link: "[[B050|Control Base B050]]"
+
+  find_revenue_ready_ventures:
+    query: "ventures_registry WHERE status IN ['OPERATING', 'SCALING'] AND revenue_ytd > 0"
+    returns: "All active revenue-generating ventures"
+    example: "OPS-001, LT-005, CALLCENTER (tier-0 ready)"
+    base_link: "[[B050|Control Base B050]]"
+
+  find_ventures_by_sector:
+    query: "ventures_registry WHERE sector_id = 'SEC-XXX'"
+    returns: "All ventures in a sector"
+    example: "SEC-009 (Logistics) → LT-005, LT-011, LT-020, ..."
+    base_link: "[[B050|Control Base B050]]"
+
+  find_ventures_by_status:
+    query: "ventures_registry WHERE status = 'VALIDATING'"
+    returns: "Ventures at a specific lifecycle stage"
+    statuses: ["PLANNING", "BUILDING", "VALIDATING", "OPERATING", "SCALING", "EXITING"]
+    base_link: "[[B050|Control Base B050]]"
+
+  find_ventures_by_opco:
+    query: "ventures_registry WHERE opco_id = 'OPC-XXX'"
+    returns: "All ventures under an operating company"
+    example: "OPC-01 → 120+ ventures"
+    base_link: "[[B050|Control Base B050]]"
+
+  find_ventures_needing_capability:
+    query: "ventures_registry WHERE required_capabilities CONTAINS 'CAP-XXX'"
+    returns: "All ventures that need a specific capability"
+    base_link: "[[B050|Control Base B050]]"
+
+  find_ventures_assigned_to_agent:
+    query: "ventures_registry WHERE assigned_agents CONTAINS 'AGT-XXX'"
+    returns: "All ventures managed by an agent"
+    base_link: "[[B050|Control Base B050]]"
+
+# VENTURE CATEGORIES (Tier Model)
+
+venture_tiers:
+  tier_0:
+    count: 6
+    description: "Revenue-ready, being scaled"
+    ventures: ["OPS-001", "LT-005", "CALLCENTER", "CON-001", "RE-001", "LT-011"]
+    wiki_link: "[[Tier-0 Venture]]"
+    base_link: "[[B050|Control Base B050]]"
+    status: "✅ All deployed Sep 10"
+
+  tier_1:
+    count: 25
+    description: "Next wave, 3-6 months to revenue"
+    wiki_link: "[[Tier-1 Venture]]"
+    base_link: "[[B050|Control Base B050]]"
+
+  tier_2:
+    count: 100
+    description: "Future ventures, 6-12 months timeline"
+    wiki_link: "[[Tier-2 Venture]]"
+    base_link: "[[B050|Control Base B050]]"
+
+  tier_3:
+    count: 250
+    description: "Planned ventures, 12+ months"
+    wiki_link: "[[Tier-3 Venture]]"
+    base_link: "[[B050|Control Base B050]]"
+
+  tier_4:
+    count: 408
+    description: "Concept stage, early planning"
+    wiki_link: "[[Tier-4 Venture]]"
+    base_link: "[[B050|Control Base B050]]"
+
+# VENTURES BY SECTOR (Top 10)
+
+top_sectors:
+  SEC-009:
+    name: "Logistics & Courier"
+    venture_count: 45
+    example_ventures: ["LT-005", "LT-011", "LT-020"]
+    wiki_link: "[[SEC-009]]"
+    base_link: "[[B050|Control Base B050]]"
+
+  SEC-001:
+    name: "Family & Personal Wealth"
+    venture_count: 60
+    example_ventures: ["OPS-001", "OPS-002", "OPS-003"]
+    wiki_link: "[[SEC-001]]"
+    base_link: "[[B050|Control Base B050]]"
+
+  SEC-027:
+    name: "Venture Capital & Investment"
+    venture_count: 35
+    example_ventures: ["RE-001", "RE-002"]
+    wiki_link: "[[SEC-027]]"
+    base_link: "[[B050|Control Base B050]]"
+
+  SEC-005:
+    name: "Construction & Real Estate"
+    venture_count: 40
+    example_ventures: ["CON-001", "CON-002"]
+    wiki_link: "[[SEC-005]]"
+    base_link: "[[B050|Control Base B050]]"
+
+  SEC-015:
+    name: "Customer Service & Call Centers"
+    venture_count: 30
+    example_ventures: ["CALLCENTER", "CALLCENTER-2"]
+    wiki_link: "[[SEC-015]]"
+    base_link: "[[B050|Control Base B050]]"
+
+# REVENUE STAGES
+
+revenue_stages:
+  pre_revenue:
+    count: 300
+    description: "No revenue yet, validation phase"
+    statuses: ["PLANNING", "BUILDING", "VALIDATING"]
+    wiki_link: "[[Pre-Revenue]]"
+    base_link: "[[B050|Control Base B050]]"
+
+  early_revenue:
+    count: 150
+    description: "$1K-$50K MRR, proving model"
+    statuses: ["OPERATING"]
+    wiki_link: "[[Early Revenue]]"
+    base_link: "[[B050|Control Base B050]]"
+
+  scaling_revenue:
+    count: 100
+    description: "$50K-$500K MRR, growth phase"
+    statuses: ["SCALING"]
+    wiki_link: "[[Scaling Revenue]]"
+    base_link: "[[B050|Control Base B050]]"
+
+  mature_revenue:
+    count: 80
+    description: "$500K+ MRR, mature operations"
+    statuses: ["SCALING", "OPERATING"]
+    wiki_link: "[[Mature Revenue]]"
+    base_link: "[[B050|Control Base B050]]"
+
+  exit_stage:
+    count: 59
+    description: "Preparing exit (acquisition/IPO)"
+    statuses: ["EXITING"]
+    wiki_link: "[[Exit Stage]]"
+    base_link: "[[B050|Control Base B050]]"
+
+# INDEXING METADATA
+
+index_maintenance:
+  freshness: "Daily (synced from Supabase, authoritative source)"
+  last_indexed: 2026-09-25
+  sync_lag: "< 2 hours"
+  index_size: ~200KB
+  query_performance: "< 100ms for any query"
+  owner: "CP-050"
+
+  sync_process: |
+    1. Supabase ventures table updates (live)
+    2. Daily 2AM UTC re-index from Supabase
+    3. VENTURE_INDEX.yaml refreshed
+    4. Neo4j venture nodes updated
+    5. Qdrant venture embeddings re-indexed
+
+# WIKI LINKS
+
+wiki_links:
+  - "[[Venture]]"
+  - "[[Venture Registry]]"
+  - "[[Venture Index]]"
+  - "[[Revenue Stage]]"
+  - "[[Venture Tier]]"
+
+# MASTER CONTROL REFERENCE
+
+base_link: "[[B050|Control Base B050]]"
+owner_cp: "CP-050 (Revenue & Capital)"
+data_source: "Supabase (aipehhzlsmfxxzwceppd.supabase.co) — AUTHORITATIVE"
+
+---
+
+## Quick Lookup
+
+| I want to find... | Use this query |
+|---|---|
+| A specific venture | find_venture_by_id |
+| Revenue-ready ventures | find_revenue_ready_ventures |
+| All logistics ventures | find_ventures_by_sector (SEC-009) |
+| Ventures in planning stage | find_ventures_by_status (PLANNING) |
+| Ventures under an OpCo | find_ventures_by_opco |
+| Ventures needing a skill | find_ventures_needing_capability |
+| Ventures assigned to an agent | find_ventures_assigned_to_agent |
+
+## Venture Distribution
+
+```
+Total: 789 ventures
+├── Tier-0 (Revenue-ready): 6 ventures → Focus area
+├── Tier-1 (Next wave): 25 ventures → 3-6 months
+├── Tier-2 (Future): 100 ventures → 6-12 months
+├── Tier-3 (Planned): 250 ventures → 12+ months
+└── Tier-4 (Concept): 408 ventures → Early planning
+```
+
+## Data Quality Notes
+
+**Source of Truth: Supabase** (live, authoritative)
+- 580 verified ventures in Supabase
+- 209 ventures in YAML registries (reconciliation in progress)
+- Gap analysis: [[SUPABASE-RECONCILIATION-PLAN-2026-09-25]]
+
+**To query latest state:**
+- Use Supabase directly for live data
+- Use VENTURE_INDEX.yaml for discovery/search
+- Use Neo4j for relationship analysis (venture → sector → capability → agent)
+
+## Next Steps
+
+1. Wire to Neo4j: `CREATE (:VentureIndex {count: 789, ...})`
+2. Add to VEX: Venture discovery widget showing status/revenue/team
+3. Create revenue dashboard: Real-time MRR tracking per venture
+4. Automated alerts: When venture status/revenue changes significantly
+

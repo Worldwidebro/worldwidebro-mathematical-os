@@ -1,0 +1,199 @@
+---
+name: ENVIRONMENT_REGISTRY
+version: "1.0"
+description: Deployment environment definitions — local/staging/production
+authority: CP-027 (Infrastructure & Orchestration)
+status: ACTIVE
+created: 2026-09-25
+updated: 2026-09-25
+base_id: B027
+
+# ENVIRONMENT CONFIGURATION REGISTRY
+# Defines deployment targets, service endpoints, credentials, resource limits
+
+environments:
+  local:
+    display_name: "Local Development"
+    wiki_link: "[[Local Environment]]"
+    base_link: "[[B027|Control Base B027]]"
+    machine: "Mac Air (This machine)"
+    ip_address: "127.0.0.1"
+    services:
+      neo4j:
+        url: "bolt://localhost:7687"
+        status: "Can connect via Tailscale to Mac Studio"
+        auth: "neo4j / changeme"
+        location: "Mac Studio (remote)"
+
+      postgres:
+        url: "postgresql://localhost:5433"
+        status: "Docker on Mac Studio"
+        auth: "Via environment"
+        location: "Mac Studio (remote)"
+
+      redis:
+        url: "redis://localhost:6379"
+        status: "Docker on Mac Studio"
+        location: "Mac Studio (remote)"
+
+      qdrant:
+        url: "http://localhost:6333"
+        status: "Can reach via Tailscale"
+        location: "Mac Studio (remote)"
+
+      ollama:
+        url: "http://localhost:11434"
+        models:
+          - "nomic-embed-text (local)"
+          - "qwen2.5-coder:14b (Mac Studio via network)"
+          - "hermes3:latest (Mac Studio via network)"
+        location: "Mac Studio (remote)"
+
+    docker_context: "macstudio (Docker context pointing to Mac Studio)"
+    resource_limits:
+      cpu: "4 cores"
+      memory: "8GB"
+    deployment_type: "Single-machine development"
+    purpose: "Local development, testing, debugging"
+    freshness: "Real-time (direct connection)"
+
+  staging:
+    display_name: "Staging Environment"
+    wiki_link: "[[Staging Environment]]"
+    base_link: "[[B027|Control Base B027]]"
+    machine: "Mac Studio (100.87.214.70)"
+    ip_address: "100.87.214.70"
+    services:
+      neo4j:
+        url: "bolt://100.87.214.70:7687"
+        status: "Live (verified)"
+        auth: "Via Bitwarden"
+        location: "Mac Studio"
+
+      postgres:
+        url: "postgresql://100.87.214.70:5433"
+        status: "Live (verified)"
+        auth: "Via environment"
+        location: "Mac Studio"
+
+      qdrant:
+        url: "http://100.87.214.70:6333"
+        status: "Live (verified)"
+        location: "Mac Studio"
+
+      supabase:
+        url: "https://aipehhzlsmfxxzwceppd.supabase.co"
+        status: "Cloud-based"
+        auth: "Via MCP"
+        location: "External"
+
+    docker_context: "macstudio (via Tailscale VPN)"
+    resource_limits:
+      cpu: "12 cores"
+      memory: "64GB"
+      storage: "922GB (external T7 Shield)"
+    deployment_type: "Hybrid (local + cloud services)"
+    purpose: "Integration testing, pre-production validation"
+    freshness: "Daily (sync from local via rsync/git)"
+
+  production:
+    display_name: "Production Environment"
+    wiki_link: "[[Production Environment]]"
+    base_link: "[[B027|Control Base B027]]"
+    machine: "Cloud (Vercel, Supabase, Make.com)"
+    services:
+      vercel:
+        url: "https://vex-hero-site-sigma.vercel.app"
+        status: "Live"
+        auth: "OAuth via Vercel"
+        location: "Vercel (external)"
+        deployment_targets:
+          - "vex-hero-site-sigma.vercel.app (VEX CommandCenter)"
+          - "6 Tier-0 ventures deployed"
+
+      supabase:
+        url: "https://aipehhzlsmfxxzwceppd.supabase.co"
+        status: "Live (authoritative)"
+        auth: "Via MCP"
+        location: "Supabase (external)"
+        data_scope: "789 ventures (live state)"
+
+      make:
+        url: "https://us2.make.com"
+        status: "Live"
+        auth: "OAuth (winnerscirclewcllc@gmail.com)"
+        location: "Make (external)"
+        scope: "Automation scenarios for ventures"
+
+      github:
+        url: "https://github.com/worldwidebro"
+        status: "Live"
+        auth: "SSH key or Personal Access Token"
+        location: "GitHub (external)"
+
+    deployment_type: "Multi-cloud, serverless-first"
+    purpose: "Live revenue-generating ventures"
+    freshness: "Real-time (immediate deployment via CI/CD)"
+    ci_cd_pipeline: "GitHub Actions → Vercel/Supabase"
+
+---
+
+## Environment-Specific Configuration
+
+### Local Development
+```yaml
+environment: local
+service_endpoints:
+  neo4j: bolt://localhost:7687
+  postgres: postgresql://localhost:5433
+  qdrant: http://localhost:6333
+sync_strategy: Direct connection to Mac Studio via Tailscale
+data_freshness: Real-time
+```
+
+### Staging
+```yaml
+environment: staging
+service_endpoints:
+  neo4j: bolt://100.87.214.70:7687
+  postgres: postgresql://100.87.214.70:5433
+  qdrant: http://100.87.214.70:6333
+  supabase: https://aipehhzlsmfxxzwceppd.supabase.co
+sync_strategy: Weekly YAML sync from local, daily Supabase sync
+data_freshness: Daily
+```
+
+### Production
+```yaml
+environment: production
+service_endpoints:
+  vercel: https://vex-hero-site-sigma.vercel.app
+  supabase: https://aipehhzlsmfxxzwceppd.supabase.co
+  make: https://us2.make.com
+  github: https://github.com/worldwidebro
+sync_strategy: CI/CD pipeline (git → GitHub Actions → Vercel/Supabase)
+data_freshness: Real-time
+```
+
+## Routing Rules
+
+**Which environment to use for:**
+- **Development:** Use `local` (testing code changes)
+- **Integration Testing:** Use `staging` (test venture interactions)
+- **User-Facing Features:** Use `production` (VEX, revenue ventures)
+- **Data Analytics:** Use `production` Supabase (source of truth)
+- **Agent Execution:** Use `staging` for testing, `production` for real ventures
+
+## Wiki Links
+
+- "[[Environment]]"
+- "[[Deployment Target]]"
+- "[[Infrastructure]]"
+- "[[Local Environment]]"
+- "[[Staging Environment]]"
+- "[[Production Environment]]"
+
+## Master Control Reference
+
+This document is mapped to [[B027|Control Base B027]].
+

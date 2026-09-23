@@ -1,0 +1,394 @@
+---
+name: DOMAIN_INDEX
+version: "1.0"
+description: Master index to all 71 numbered domains + 22 infrastructure folders
+authority: CP-001 (Sovereign Operator)
+status: ACTIVE
+created: 2026-09-25
+updated: 2026-09-25
+base_id: B001
+
+# DOMAIN DISCOVERY INDEX
+# Navigate all 71 domains (00-50 numbered + infrastructure _*)
+# Quick lookup: "What's in domain X?" / "Which domain has Y?"
+
+index_structure:
+  total_numbered_domains: 51
+  total_infrastructure_folders: 22
+  total_domains: 73
+  indexed_attributes:
+    - domain_id
+    - domain_name
+    - domain_layer
+    - wiki_links
+    - readme_status
+    - control_points
+    - bases
+    - file_count
+
+# NUMBERED DOMAINS (00-50)
+
+numbered_domains:
+  "00-CONSTITUTION":
+    layer: 2
+    purpose: "Mission, principles, governance"
+    control_points: ["CP-001"]
+    bases: ["B001"]
+    file_count: 14
+    readme: "✅ LIVE"
+    wiki_link: "[[00-CONSTITUTION]]"
+    base_link: "[[B001|Control Base B001]]"
+
+  "01-IDENTITY":
+    layer: 12
+    purpose: "Company structure, ventures, brands"
+    control_points: ["CP-032"]
+    bases: ["B002"]
+    file_count: 25
+    readme: "✅ LIVE"
+    wiki_link: "[[01-IDENTITY]]"
+    base_link: "[[B002|Control Base B002]]"
+
+  "02-SOURCES":
+    layer: 22
+    purpose: "Data sources, ingestion pipelines"
+    control_points: ["CP-027"]
+    bases: ["B021"]
+    file_count: 18
+    readme: "✅ LIVE"
+    wiki_link: "[[02-SOURCES]]"
+    base_link: "[[B021|Control Base B021]]"
+
+  "03-KNOWLEDGE":
+    layer: 22
+    purpose: "Organized knowledge, research"
+    control_points: ["CP-027"]
+    bases: ["B023"]
+    file_count: 30
+    readme: "✅ LIVE"
+    wiki_link: "[[03-KNOWLEDGE]]"
+    base_link: "[[B023|Control Base B023]]"
+
+  "04-INTELLIGENCE":
+    layer: 15
+    purpose: "Sense-making, pattern discovery"
+    control_points: ["CP-027"]
+    bases: ["B024"]
+    file_count: 22
+    readme: "✅ LIVE"
+    wiki_link: "[[04-INTELLIGENCE]]"
+    base_link: "[[B024|Control Base B024]]"
+
+  "05-DECISION":
+    layer: 13
+    purpose: "Choice frameworks, decision rules"
+    control_points: ["CP-006"]
+    bases: ["B025"]
+    file_count: 20
+    readme: "✅ LIVE"
+    wiki_link: "[[05-DECISION]]"
+    base_link: "[[B025|Control Base B025]]"
+
+  "06-DEPLOYMENT":
+    layer: 19
+    purpose: "Vercel, deployment strategies"
+    control_points: ["CP-027"]
+    bases: ["B026"]
+    file_count: 16
+    readme: "✅ LIVE"
+    wiki_link: "[[06-DEPLOYMENT]]"
+    base_link: "[[B026|Control Base B026]]"
+
+  "08-KNOWLEDGE-GRAPH":
+    layer: 22
+    purpose: "Neo4j operations, graph queries"
+    control_points: ["CP-027"]
+    bases: ["B028"]
+    file_count: 12
+    readme: "✅ LIVE"
+    wiki_link: "[[08-KNOWLEDGE-GRAPH]]"
+    base_link: "[[B028|Control Base B028]]"
+
+  "09-MEMORY":
+    layer: 22
+    purpose: "Organizational memory systems"
+    control_points: ["CP-027"]
+    bases: ["B029"]
+    file_count: 8
+    readme: "✅ LIVE"
+    wiki_link: "[[09-MEMORY]]"
+    base_link: "[[B029|Control Base B029]]"
+
+  "10-METRICS":
+    layer: 22
+    purpose: "KPI tracking, business metrics"
+    control_points: ["CP-050"]
+    bases: ["B030"]
+    file_count: 15
+    readme: "✅ LIVE"
+    wiki_link: "[[10-METRICS]]"
+    base_link: "[[B030|Control Base B030]]"
+
+  "11-INDEXING":
+    layer: 22
+    purpose: "Search indexing, retrieval"
+    control_points: ["CP-027"]
+    bases: ["B031"]
+    file_count: 10
+    readme: "✅ LIVE"
+    wiki_link: "[[11-INDEXING]]"
+    base_link: "[[B031|Control Base B031]]"
+
+  "14-CAPABILITIES":
+    layer: 18
+    purpose: "Capability registry, coverage analysis"
+    control_points: ["CP-027"]
+    bases: ["B034"]
+    file_count: 20
+    readme: "✅ LIVE"
+    wiki_link: "[[14-CAPABILITIES]]"
+    base_link: "[[B034|Control Base B034]]"
+
+  "15-SKILLS":
+    layer: 18
+    purpose: "Skill definitions, procedures"
+    control_points: ["CP-027"]
+    bases: ["B035"]
+    file_count: 15
+    readme: "✅ LIVE"
+    wiki_link: "[[15-SKILLS]]"
+    base_link: "[[B035|Control Base B035]]"
+
+  "16-AGENTS":
+    layer: 18
+    purpose: "Agent registry, orchestration"
+    control_points: ["CP-027"]
+    bases: ["B036"]
+    file_count: 50
+    readme: "✅ LIVE (318 agents)"
+    wiki_link: "[[16-AGENTS]]"
+    base_link: "[[B036|Control Base B036]]"
+
+  "17-ORCHESTRATION":
+    layer: 20
+    purpose: "Workflow design, task routing"
+    control_points: ["CP-027"]
+    bases: ["B037"]
+    file_count: 18
+    readme: "✅ LIVE"
+    wiki_link: "[[17-ORCHESTRATION]]"
+    base_link: "[[B037|Control Base B037]]"
+
+  "18-MONITORING":
+    layer: 22
+    purpose: "Observability, logging, alerts"
+    control_points: ["CP-027"]
+    bases: ["B038"]
+    file_count: 14
+    readme: "✅ LIVE"
+    wiki_link: "[[18-MONITORING]]"
+    base_link: "[[B038|Control Base B038]]"
+
+  "19-INFRASTRUCTURE":
+    layer: 21
+    purpose: "Docker, services, deployment"
+    control_points: ["CP-027"]
+    bases: ["B039"]
+    file_count: 22
+    readme: "✅ LIVE"
+    wiki_link: "[[19-INFRASTRUCTURE]]"
+    base_link: "[[B039|Control Base B039]]"
+
+  "20-DECISIONS":
+    layer: 13
+    purpose: "Decision frameworks, audit gates"
+    control_points: ["CP-006"]
+    bases: ["B040"]
+    file_count: 30
+    readme: "✅ LIVE"
+    wiki_link: "[[20-DECISIONS]]"
+    base_link: "[[B040|Control Base B040]]"
+
+  "22-REVENUE":
+    layer: 22
+    purpose: "Revenue attribution, tracking"
+    control_points: ["CP-050"]
+    bases: ["B042"]
+    file_count: 12
+    readme: "✅ LIVE"
+    wiki_link: "[[22-REVENUE]]"
+    base_link: "[[B042|Control Base B042]]"
+
+  "23-VENTURES":
+    layer: 22
+    purpose: "Operating ventures, portfolio"
+    control_points: ["CP-050"]
+    bases: ["B043"]
+    file_count: 40
+    readme: "✅ LIVE"
+    wiki_link: "[[23-VENTURES]]"
+    base_link: "[[B043|Control Base B043]]"
+
+  "24-CAPITAL":
+    layer: 22
+    purpose: "Capital, funding, investment"
+    control_points: ["CP-050"]
+    bases: ["B044"]
+    file_count: 18
+    readme: "✅ LIVE"
+    wiki_link: "[[24-CAPITAL]]"
+    base_link: "[[B044|Control Base B044]]"
+
+  "25-REAL-ESTATE":
+    layer: 22
+    purpose: "Real estate, facilities, assets"
+    control_points: ["CP-050"]
+    bases: ["B045"]
+    file_count: 10
+    readme: "✅ LIVE"
+    wiki_link: "[[25-REAL-ESTATE]]"
+    base_link: "[[B045|Control Base B045]]"
+
+  "37-RESEARCH":
+    layer: 22
+    purpose: "Research, discovery, experiments"
+    control_points: ["CP-027"]
+    bases: ["B057"]
+    file_count: 25
+    readme: "✅ LIVE"
+    wiki_link: "[[37-RESEARCH]]"
+    base_link: "[[B057|Control Base B057]]"
+
+  "40-METRICS":
+    layer: 22
+    purpose: "KPI dashboards, analytics"
+    control_points: ["CP-050"]
+    bases: ["B060"]
+    file_count: 20
+    readme: "✅ LIVE"
+    wiki_link: "[[40-METRICS]]"
+    base_link: "[[B060|Control Base B060]]"
+
+  "50-MASTER-CONTROL":
+    layer: 22
+    purpose: "CEO control tower, master orchestration"
+    control_points: ["CP-001"]
+    bases: ["B500"]
+    file_count: 5
+    readme: "✅ LIVE"
+    wiki_link: "[[50-MASTER-CONTROL]]"
+    base_link: "[[B500|Control Base B500]]"
+
+# INFRASTRUCTURE FOLDERS (_*)
+
+infrastructure_folders:
+  "_ONTOLOGY":
+    purpose: "Machine schemas (YAML/XML)"
+    files: 15
+    readme: "✅ LIVE"
+    wiki_link: "[[_ONTOLOGY]]"
+    base_link: "[[B001|Control Base B001]]"
+
+  "_REGISTRIES":
+    purpose: "Ground-truth registries"
+    subfolder: "CANONICAL"
+    files: 33
+    readme: "✅ LIVE"
+    wiki_link: "[[_REGISTRIES]]"
+    base_link: "[[B001|Control Base B001]]"
+
+  "_MCP":
+    purpose: "MCP tools & FastMCP services"
+    files: 12
+    readme: "✅ LIVE"
+    wiki_link: "[[_MCP]]"
+    base_link: "[[B027|Control Base B027]]"
+
+  "_PIPELINES":
+    purpose: "Data pipelines, ingestion"
+    files: 18
+    readme: "✅ LIVE"
+    wiki_link: "[[_PIPELINES]]"
+    base_link: "[[B027|Control Base B027]]"
+
+  "_MEMORY":
+    purpose: "Organizational memory"
+    files: 8
+    readme: "✅ LIVE"
+    wiki_link: "[[_MEMORY]]"
+    base_link: "[[B027|Control Base B027]]"
+
+  "_DOCS":
+    purpose: "Architecture guides"
+    files: 10
+    readme: "✅ LIVE"
+    wiki_link: "[[_DOCS]]"
+    base_link: "[[B027|Control Base B027]]"
+
+  "_INFRASTRUCTURE":
+    purpose: "Docker, services"
+    files: 15
+    readme: "✅ LIVE"
+    wiki_link: "[[_INFRASTRUCTURE]]"
+    base_link: "[[B027|Control Base B027]]"
+
+  "_EVAL":
+    purpose: "Evaluation harnesses"
+    files: 12
+    readme: "✅ LIVE"
+    wiki_link: "[[_EVAL]]"
+    base_link: "[[B027|Control Base B027]]"
+
+# DISCOVERY QUERIES
+
+discovery:
+  find_domain_by_number:
+    query: "domains_index WHERE domain_id = '00-CONSTITUTION'"
+    returns: "Domain metadata (name, layer, purpose, files, control points)"
+
+  find_domain_by_purpose:
+    query: "domains_index WHERE purpose CONTAINS 'Neo4j'"
+    returns: "All domains related to a topic"
+
+  find_files_in_domain:
+    query: "domains_index WHERE domain_id = '08-KNOWLEDGE-GRAPH'"
+    returns: "All files and sub-folders in domain"
+
+  find_domain_owner:
+    query: "domains_index WHERE domain_id = 'XX'"
+    returns: "Control point and Base responsible for this domain"
+
+# WIKI LINKS
+
+wiki_links:
+  - "[[Domain]]"
+  - "[[Numbered Domain]]"
+  - "[[Infrastructure Folder]]"
+  - "[[Navigation]]"
+
+# MASTER CONTROL REFERENCE
+
+base_link: "[[B001|Control Base B001]]"
+owner_cp: "CP-001 (Sovereign)"
+
+---
+
+## Quick Navigation Table
+
+| Domain | Layer | Purpose | Files | CP | Base |
+|--------|-------|---------|-------|----|----|
+| 00-CONSTITUTION | 2 | Mission, principles | 14 | CP-001 | B001 |
+| 01-IDENTITY | 12 | Company structure | 25 | CP-032 | B002 |
+| 16-AGENTS | 18 | Agent registry | 50 | CP-027 | B036 |
+| 23-VENTURES | 22 | Operating ventures | 40 | CP-050 | B043 |
+| 50-MASTER-CONTROL | 22 | CEO tower | 5 | CP-001 | B500 |
+
+*Plus 20 more numbered domains (see index_structure above)*
+
+## Next Steps
+
+1. Wire all 71 domains into Neo4j as (:Domain) nodes
+2. Create cross-domain dependency graph
+3. Build domain navigation widget for VEX
+4. Add "Domain Map" view showing interconnections
+

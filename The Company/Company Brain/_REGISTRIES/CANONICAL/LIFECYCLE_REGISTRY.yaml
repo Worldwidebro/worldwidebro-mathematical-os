@@ -1,0 +1,279 @@
+---
+name: LIFECYCLE_REGISTRY
+version: "1.0"
+description: State enums per entity type — defines all valid status values across system
+authority: CP-001 (Sovereign Operator)
+status: ACTIVE
+created: 2026-09-25
+updated: 2026-09-25
+base_id: B001
+
+# LIFECYCLE STATES UNIFIED
+# Problem: Status/state values vary inconsistently per file
+# Solution: Define canonical enums per entity type, enforce via Neo4j constraints
+
+entity_lifecycles:
+  venture:
+    display_name: "Venture Lifecycle"
+    wiki_link: "[[Venture]]"
+    base_link: "[[B050|Control Base B050]]"
+    states:
+      - id: "PLANNING"
+        description: "Concept phase, business model development"
+        transitions_to: ["BUILDING"]
+      - id: "BUILDING"
+        description: "MVP development, infrastructure setup"
+        transitions_to: ["VALIDATING", "PLANNING"]
+      - id: "VALIDATING"
+        description: "Market validation, customer interviews"
+        transitions_to: ["OPERATING", "BUILDING"]
+      - id: "OPERATING"
+        description: "Revenue-generating, active operations"
+        transitions_to: ["SCALING", "PAUSED", "EXITING"]
+      - id: "SCALING"
+        description: "Growth phase, expanding market reach"
+        transitions_to: ["OPERATING", "PAUSED"]
+      - id: "PAUSED"
+        description: "Temporarily suspended, no active work"
+        transitions_to: ["OPERATING", "EXITING"]
+      - id: "EXITING"
+        description: "Wind-down, acquisition, or IPO"
+        transitions_to: []
+    neo4j_constraint: "MUST be one of above enums, no exceptions"
+
+  agent:
+    display_name: "Agent Lifecycle"
+    wiki_link: "[[Agent]]"
+    base_link: "[[B027|Control Base B027]]"
+    states:
+      - id: "AVAILABLE"
+        description: "Ready for assignment, no active tasks"
+        transitions_to: ["ASSIGNED"]
+      - id: "ASSIGNED"
+        description: "Task assigned, awaiting execution start"
+        transitions_to: ["EXECUTING", "AVAILABLE"]
+      - id: "EXECUTING"
+        description: "Currently processing task"
+        transitions_to: ["PAUSED", "COMPLETED", "FAILED"]
+      - id: "PAUSED"
+        description: "Execution paused, awaiting resume"
+        transitions_to: ["EXECUTING", "AVAILABLE"]
+      - id: "COMPLETED"
+        description: "Task completed successfully"
+        transitions_to: ["AVAILABLE"]
+      - id: "FAILED"
+        description: "Task failed, requires human review"
+        transitions_to: ["AVAILABLE", "RETIRED"]
+      - id: "RETIRED"
+        description: "Agent decommissioned, no new tasks"
+        transitions_to: []
+
+  control_base:
+    display_name: "Control Base Lifecycle"
+    wiki_link: "[[Control Base]]"
+    base_link: "[[B001|Control Base B001]]"
+    states:
+      - id: "DESIGNED"
+        description: "Architecture defined, not yet instantiated"
+        transitions_to: ["INSTANTIATED"]
+      - id: "INSTANTIATED"
+        description: "Created in graph, governance wired"
+        transitions_to: ["ACTIVATED", "ARCHIVED"]
+      - id: "ACTIVATED"
+        description: "Operational, actively managing ventures/agents"
+        transitions_to: ["MONITORING", "ARCHIVED"]
+      - id: "MONITORING"
+        description: "Continuous observation, reactive mode"
+        transitions_to: ["ACTIVATED", "ARCHIVED"]
+      - id: "ARCHIVED"
+        description: "No longer active, historical reference"
+        transitions_to: []
+
+  deployment:
+    display_name: "Deployment Lifecycle"
+    wiki_link: "[[Deployment]]"
+    base_link: "[[B027|Control Base B027]]"
+    states:
+      - id: "DESIGNED"
+        description: "Deployment plan created"
+        transitions_to: ["STAGED"]
+      - id: "STAGED"
+        description: "Deployed to staging environment"
+        transitions_to: ["TESTED", "DESIGNED"]
+      - id: "TESTED"
+        description: "QA testing complete, ready for production"
+        transitions_to: ["DEPLOYED", "STAGED"]
+      - id: "DEPLOYED"
+        description: "Live in production, actively serving"
+        transitions_to: ["MONITORING", "ROLLED_BACK"]
+      - id: "MONITORING"
+        description: "Continuous observation in production"
+        transitions_to: ["DEPLOYED", "ROLLED_BACK"]
+      - id: "ROLLED_BACK"
+        description: "Reverted to previous version"
+        transitions_to: ["DEPLOYED"]
+
+  capability:
+    display_name: "Capability Status"
+    wiki_link: "[[Capability]]"
+    base_link: "[[B027|Control Base B027]]"
+    states:
+      - id: "PLANNED"
+        description: "Capability planned, not yet implemented"
+        transitions_to: ["BUILDING", "CANCELLED"]
+      - id: "BUILDING"
+        description: "Development in progress"
+        transitions_to: ["TESTING", "PLANNED"]
+      - id: "TESTING"
+        description: "QA testing, validation ongoing"
+        transitions_to: ["READY", "BUILDING"]
+      - id: "READY"
+        description: "Ready for adoption by agents/ventures"
+        transitions_to: ["ADOPTING", "DEPRECATED"]
+      - id: "ADOPTING"
+        description: "In use by multiple agents/ventures"
+        transitions_to: ["MATURE", "DEPRECATED"]
+      - id: "MATURE"
+        description: "Stable, widely adopted, well-documented"
+        transitions_to: ["DEPRECATED"]
+      - id: "DEPRECATED"
+        description: "Superseded, scheduled for removal"
+        transitions_to: ["RETIRED"]
+      - id: "RETIRED"
+        description: "No longer available, historical reference"
+        transitions_to: []
+
+  skill:
+    display_name: "Skill Status"
+    wiki_link: "[[Skill]]"
+    base_link: "[[B027|Control Base B027]]"
+    states:
+      - id: "DRAFT"
+        description: "Definition in progress"
+        transitions_to: ["READY"]
+      - id: "READY"
+        description: "Ready for agent assignment"
+        transitions_to: ["ACTIVE", "ARCHIVED"]
+      - id: "ACTIVE"
+        description: "In use by one or more agents"
+        transitions_to: ["DEPRECATED"]
+      - id: "DEPRECATED"
+        description: "Superseded, no new assignments"
+        transitions_to: ["ARCHIVED"]
+      - id: "ARCHIVED"
+        description: "No longer available"
+        transitions_to: []
+
+  workflow:
+    display_name: "Workflow Status"
+    wiki_link: "[[Workflow]]"
+    base_link: "[[B027|Control Base B027]]"
+    states:
+      - id: "DESIGNED"
+        description: "Workflow definition complete"
+        transitions_to: ["ACTIVE", "CANCELLED"]
+      - id: "ACTIVE"
+        description: "Accepting new task instances"
+        transitions_to: ["PAUSED", "ARCHIVED"]
+      - id: "PAUSED"
+        description: "No new instances, existing tasks continue"
+        transitions_to: ["ACTIVE", "ARCHIVED"]
+      - id: "ARCHIVED"
+        description: "No longer available"
+        transitions_to: []
+
+  task:
+    display_name: "Task Status"
+    wiki_link: "[[Task]]"
+    base_link: "[[B027|Control Base B027]]"
+    states:
+      - id: "CREATED"
+        description: "Task created, awaiting assignment"
+        transitions_to: ["ASSIGNED"]
+      - id: "ASSIGNED"
+        description: "Assigned to agent, awaiting execution"
+        transitions_to: ["EXECUTING", "CREATED"]
+      - id: "EXECUTING"
+        description: "Agent actively processing task"
+        transitions_to: ["PAUSED", "COMPLETED", "FAILED"]
+      - id: "PAUSED"
+        description: "Execution paused, awaiting resume"
+        transitions_to: ["EXECUTING", "CREATED"]
+      - id: "COMPLETED"
+        description: "Task finished successfully"
+        transitions_to: []
+      - id: "FAILED"
+        description: "Task failed, human review needed"
+        transitions_to: ["ASSIGNED", "CREATED"]
+
+  registry:
+    display_name: "Registry Status"
+    wiki_link: "[[Registry]]"
+    base_link: "[[B001|Control Base B001]]"
+    states:
+      - id: "DESIGN"
+        description: "Registry schema designed, not yet implemented"
+        transitions_to: ["ACTIVE"]
+      - id: "ACTIVE"
+        description: "Live registry, accepting new records"
+        transitions_to: ["FROZEN", "DEPRECATED"]
+      - id: "FROZEN"
+        description: "Read-only, no new records"
+        transitions_to: ["DEPRECATED"]
+      - id: "DEPRECATED"
+        description: "Superseded by newer registry"
+        transitions_to: ["ARCHIVED"]
+      - id: "ARCHIVED"
+        description: "Historical reference only"
+        transitions_to: []
+
+---
+
+## Enforcement Rules
+
+**Neo4j Constraints:**
+```cypher
+CREATE CONSTRAINT venture_status_enum
+  FOR (v:Entity:Venture)
+  REQUIRE v.lifecycle_state IN ['PLANNING', 'BUILDING', 'VALIDATING', 'OPERATING', 'SCALING', 'PAUSED', 'EXITING']
+
+CREATE CONSTRAINT agent_status_enum
+  FOR (a:Entity:Agent)
+  REQUIRE a.status IN ['AVAILABLE', 'ASSIGNED', 'EXECUTING', 'PAUSED', 'COMPLETED', 'FAILED', 'RETIRED']
+
+-- (Similar constraints for all entity types)
+```
+
+**Git Hook Validation:**
+```bash
+# Pre-commit linter checks:
+if grep -r "status.*=.*['\"]invalid['\"]" *.yaml; then
+  echo "ERROR: Invalid status value detected"
+  exit 1
+fi
+```
+
+## Usage Examples
+
+```yaml
+# Venture status
+venture:
+  venture_id: VEN-005
+  name: "LT-005 Courier"
+  lifecycle_state: "OPERATING"  # Must be from venture enum
+
+# Agent status
+agent:
+  agent_id: AGT-100
+  name: "Venture Manager"
+  status: "AVAILABLE"  # Must be from agent enum
+
+# Task status
+task:
+  task_id: TSK-001
+  workflow_id: WFL-005
+  status: "EXECUTING"  # Must be from task enum
+```
+
+**Transitions:** All state changes must follow transition rules — unauthorized transitions are blocked by workflow logic.
+
