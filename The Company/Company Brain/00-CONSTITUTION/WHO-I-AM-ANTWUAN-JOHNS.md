@@ -25,11 +25,11 @@ next_review: "2026-12-23"
 | Field | Value | Verification |
 |-------|-------|--------------|
 | **Full Legal Name** | Antwuan Johns | ✅ Verified in OPS-001 contracts |
-| **Email** | [TO_VERIFY] | Contact via winnerscirclewcllc@gmail.com |
-| **Phone** | [TO_VERIFY] | Confirm with primary contact |
-| **Mailing Address** | [TO_VERIFY] | Family office headquarters |
-| **Identification** | [TO_VERIFY] | Driver's license or passport |
-| **Birth Date** | [TO_VERIFY] | For legal entity records |
+| **Email** | winnerscirclewcllc@gmail.com | ✅ From system account |
+| **Phone** | [TO_VERIFY — USER INPUT] | Confirm with primary contact |
+| **Mailing Address** | [TO_VERIFY — USER INPUT] | Family office headquarters |
+| **Identification** | [TO_VERIFY — USER INPUT] | Driver's license or passport |
+| **Birth Date** | [TO_VERIFY — USER INPUT] | For legal entity records |
 
 ---
 
