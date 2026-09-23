@@ -592,3 +592,11 @@ UNDERSTAND ──> DECIDE ──> EXECUTE ──> VERIFY ──> LEARN ──> I
 with increasing autonomy and decreasing unnecessary human intervention.
 
 Build systems that **operate**. Do not merely build systems that generate code.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B009|Strategic Constraints]] in the Company Brain's governance layer.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B009]]

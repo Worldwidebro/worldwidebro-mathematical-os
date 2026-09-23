@@ -172,3 +172,11 @@ respect_rules:
 - Contextual Awareness: [[00_RESPECT/RESPECT-AWARENESS]]
 - Accountability & Ownership: [[00_RESPECT/RESPECT-ACCOUNTABILITY]]
 - Escalation Protocols: [[00_RESPECT/RESPECT-ESCALATION]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B009|Strategic Constraints]] in the Company Brain's governance layer.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B009]]

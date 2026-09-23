@@ -158,6 +158,8 @@ control_bases:
     status: ACTIVE
     files:
       - 00-CONSTITUTION/REALITY.md
+      - 00_RESPECT/RESPECT.md
+      - ANTIGRAVITY.md
     relationships:
       - limits: Strategic Objectives
       - monitored_by: Compliance

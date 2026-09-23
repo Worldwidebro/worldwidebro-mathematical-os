@@ -18,3 +18,7 @@ state.json
 server.lock
 sync-state.json
 last-spawn-error.log
+cache/
+tmp/
+ui.lock
+conflicts.json

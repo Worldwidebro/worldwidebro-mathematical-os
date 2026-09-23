@@ -42,6 +42,14 @@
 
 ---
 
+## Control Base Reference
+
+This document is the operational truth ledger for [[B492|Reality State]] in the Company Brain's 22-stage cognitive pipeline.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B492]]
+
+---
+
 ### Tier 2: Buildable in 1-2 Days
 
 | Venture | Status | Product | Technical | Operations | Commercial | Days to Ready |

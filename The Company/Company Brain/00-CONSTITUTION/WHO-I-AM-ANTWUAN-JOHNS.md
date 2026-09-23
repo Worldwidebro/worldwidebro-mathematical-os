@@ -308,3 +308,11 @@ founder_approval_limits:
   any_decision_over_500k: REQUIRES_FOUNDER_APPROVAL
 ```
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B001|Mission]] in the Company Brain's strategic control layer.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B001]]
+
