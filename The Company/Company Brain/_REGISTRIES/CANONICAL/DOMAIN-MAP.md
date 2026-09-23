@@ -247,6 +247,24 @@ All domains should link back to:
 
 ---
 
+## Control Base Architecture
+
+Each domain (00-50) is assigned 10 control bases (500 total):
+
+| Domain | Control Bases | Example Bases |
+|--------|---------------|----|
+| 00-CONSTITUTION | B001-B010 | [[B001|Mission]], [[B009|Strategic Constraints]] |
+| 01-IDENTITY | B011-B020 | [[B011|Organization]], [[B013|Operating Companies]] |
+| 07-ONTOLOGY | B061-B070 | [[B031|Sector Registry]] (domains 2-9) |
+| 16-AGENTS | B141-B150 | [[B141|Agent Registry]], [[B144|Agent Skills]] |
+| 23-VENTURES | B211-B220 | [[B021|Venture Registry]] |
+| 50-MASTER-CONTROL | B491-B500 | [[B491|Control Tower]], [[B492|Reality State]] |
+
+**Reference:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml]] (complete 500-base mapping)
+
+---
+
 **Status:** WIRING LAYER 1 ESTABLISHED (Sep 23, 2026)  
-**Next:** Create core domain INDEX files + update STARTHERE.md
+**Wiki-Linking:** Phase 5 Complete (Sep 25) — All hubs wired to control bases  
+**Next:** Bidirectional linking verification + triage remaining orphaned files
 

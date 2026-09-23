@@ -357,3 +357,13 @@ Canonical registry: 789 ventures, 893 repos, 22 deployments. Neo4j graph ready.
 - [[_TOOLS/AIRLLM|AirLLM SSD Engine]] — Layer-by-layer 70B+ model streaming from external NVMe storage (`lyogavin/airllm`, 33k ★).
 - [[_TOOLS/NEEDLE|Needle Tier-0 Router]] — 14MB ultra-compact edge intent classifier (`cactus-compute/needle`, 10k ★).
 - [[_ONTOLOGY/BITEMPORAL_ONTOLOGY|Bitemporal Knowledge Graph]] — Valid-time vs. transaction-time audit ontology (`deeplethe/utopia`, 1.2k ★).
+
+---
+
+## Master Registry Hub
+
+This catalog indexes all canonical registries and control bases in the Company Brain.
+
+**Core Registries:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml]] (500 control bases) | [[NAVIGATION_ALIASES|NAVIGATION_ALIASES.yaml]] (wiki links) | [[FILE_FORMAT_REGISTRY|FILE_FORMAT_REGISTRY.yaml]] (data schemas)
+
+**Reference:** [[STARTHERE|STARTHERE.md]] for complete orientation.

@@ -561,3 +561,19 @@ The **Company Brain** validates its entire structure (Idea → People → Depart
 
 - **[Connectivity Audit Report](file://_TESTS/CONNECTIVITY/CONNECTIVITY_AUDIT.md)**: Human-readable view of all 500 enterprise connectivity tests and their current status.
 - **[Connectivity Test Registry](file://_REGISTRIES/CONNECTIVITY/CONNECTIVITY-TESTS.json)**: Machine-readable JSON testing matrix for automated validation of the enterprise conveyor belt.
+
+---
+
+## Master Navigation Hub
+
+This document is the entry point for the [[CBP_REGISTRY|500 Control Base Points]] architecture.
+
+**Master Navigation:**
+- **Governance Hub:** [[B009|Strategic Constraints]] (RESPECT, ANTIGRAVITY, Operating Rules)
+- **Strategic Hub:** [[B001|Mission]] (Founder Identity & Authority)
+- **Sector Registry:** [[B031|Sector Registry]] (All 40 sector definitions)
+- **Venture Registry:** [[B021|Venture Registry]] (All operating ventures)
+- **Agent Registry:** [[B141|Agent Registry]] (All AI agents & routing)
+- **Intelligence Tower:** [[B491|Control Tower]] (Master orchestration & evolution)
+
+**Full Control Base Reference:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml]]
