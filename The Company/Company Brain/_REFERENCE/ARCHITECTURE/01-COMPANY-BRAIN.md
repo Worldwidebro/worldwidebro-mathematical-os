@@ -295,3 +295,11 @@ The Brain automatically deprecates knowledge:
 **Next:** Read [[MASTER-ORCHESTRATOR|02-MASTER-ORCHESTRATOR.md]] to understand how the Brain's knowledge drives work distribution.
 
 **Last Updated:** 2026-09-18 | **Architecture Version:** 1.0
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

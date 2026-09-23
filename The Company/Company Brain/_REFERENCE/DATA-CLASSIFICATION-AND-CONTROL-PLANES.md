@@ -412,3 +412,11 @@ START
 **Authority:** [[RESPECT|RESPECT.md]] (governance) + [[ANTIGRAVITY|ANTIGRAVITY.md]] (zero fake completion) + CP decisions  
 **Updated:** 2026-09-22  
 **Status:** GOVERNANCE FRAMEWORK READY
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

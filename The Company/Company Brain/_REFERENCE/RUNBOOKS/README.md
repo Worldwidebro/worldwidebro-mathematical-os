@@ -253,3 +253,11 @@ See [[ESCALATION-POLICY|ESCALATION-POLICY.md]] for full contact list and escalat
 - [[REALITY|REALITY.md]] — System health status
 - [[CLAUDE|CLAUDE.md]] — Infrastructure state
 - [[ESCALATION-POLICY]] — Severity matrix & incident workflow
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

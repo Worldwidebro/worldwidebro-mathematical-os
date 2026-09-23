@@ -644,3 +644,11 @@ OmniRoute
 ```
 
 [[STARTHERE]] | [[INDEX]] | [[_INFRASTRUCTURE/README|Infrastructure Hub]] | [[42-EVALUATION/README|Evaluation Hub]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B52|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B52]]

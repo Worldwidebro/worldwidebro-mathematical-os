@@ -657,3 +657,10 @@ The foundation is 90% there (Supabase, Neo4j, Qdrant). This design connects the 
 
 **Next step:** Approve the design or modify it, then execute Week 1 (Fivetran + S3 setup).
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -72,3 +72,11 @@ See [[IDENTITY]] for governance structure and decision-making authority.
 **Instantiated:** 2026-09-23  
 **Owner:** Master Orchestrator  
 **Authority:** CP-027 (Infrastructure Control Plane)
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

@@ -518,3 +518,11 @@ A: Not yet (Tier 5 planned feature). For now, contact @orchestrator-lead.
 ---
 
 **Status:** ✅ Command Center operational | **Last Updated:** 2026-09-18 | **Authority:** CP-033 (Execution) + CP-027 (Infrastructure)
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

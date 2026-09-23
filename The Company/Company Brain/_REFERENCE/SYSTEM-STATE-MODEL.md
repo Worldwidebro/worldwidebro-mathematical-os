@@ -64,3 +64,10 @@ Agents query before deciding:
 - Every 5 min full refresh from databases
 - Eventual consistency within 5 seconds
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

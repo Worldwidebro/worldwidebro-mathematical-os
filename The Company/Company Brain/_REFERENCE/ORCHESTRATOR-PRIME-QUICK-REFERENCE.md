@@ -354,3 +354,11 @@ For issues or questions:
 2. Verify API key is set
 3. Review test cases for expected behavior
 4. See full documentation: `ORCHESTRATOR-PRIME-CLAUDE-HAIKU-IMPLEMENTATION.md`
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

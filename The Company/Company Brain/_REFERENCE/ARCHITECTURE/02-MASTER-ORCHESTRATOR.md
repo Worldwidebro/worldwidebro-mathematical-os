@@ -486,3 +486,11 @@ The Orchestrator **always**:
 **Next:** Read [[AGENT-SYSTEM|03-AGENT-SYSTEM.md]] to understand who does the work.
 
 **Last Updated:** 2026-09-18 | **Architecture Version:** 1.0
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

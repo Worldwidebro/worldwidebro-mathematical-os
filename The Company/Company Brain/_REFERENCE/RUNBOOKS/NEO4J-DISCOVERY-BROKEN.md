@@ -379,3 +379,11 @@ CREATE TABLE discovery_queries (
 
 **Owned By:** Knowledge Graph Team  
 **Escalation:** If discovery broken > 10 min, page knowledge graph oncall
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -429,3 +429,11 @@ The `classifyTask()` method is now production-ready with:
 - ✅ Graceful degradation
 
 The method classifies tasks in 200-500ms and costs ~$0.001 per classification, making it suitable for real-time agent routing at scale.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

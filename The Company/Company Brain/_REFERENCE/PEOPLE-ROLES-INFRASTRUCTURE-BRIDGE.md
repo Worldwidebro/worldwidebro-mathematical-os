@@ -363,3 +363,11 @@ LEARNING FEEDBACK
 **Next:** PHASE 1 (Verify + Integrate) — Starting Oct 1  
 **Owner:** CP-001 (Enterprise) + CP-027 (Infrastructure)  
 **Commit:** 5af7f6e4
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

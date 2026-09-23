@@ -377,3 +377,11 @@ RECOMMENDATION: Assign AGT-042. If unavailable, escalate for human decision.
 **Next:** Read [[CAPABILITY-SYSTEM|04-CAPABILITY-SYSTEM.md]] to understand how agents are matched to work.
 
 **Last Updated:** 2026-09-18 | **Architecture Version:** 1.0
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

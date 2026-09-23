@@ -63,3 +63,11 @@ Target:   $2,500 (OPS-001) + $299 (CON-001) by Sep 14
 - Full roadmap: [[COMPLETE_ROADMAP|COMPLETE_ROADMAP.md]]
 - Infrastructure: [[INFRASTRUCTURE-STATUS-2026-09|INFRASTRUCTURE-STATUS-2026-09.md]]
 - Operational state: [[OPERATIONAL-STATE-2026-09|OPERATIONAL-STATE-2026-09.md]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

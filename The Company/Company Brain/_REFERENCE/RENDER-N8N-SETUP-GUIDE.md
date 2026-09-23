@@ -375,3 +375,11 @@ render services -o text               # Plain text
 **Generated:** 2026-09-10  
 **Authority:** [[_AGENTS/agent_layer.py|Agent Layer]]  
 **Related:** [[_INFRASTRUCTURE/render-n8n-blueprint.yaml|Blueprint]], [[_INFRASTRUCTURE/render-n8n-setup.sh|Setup Script]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

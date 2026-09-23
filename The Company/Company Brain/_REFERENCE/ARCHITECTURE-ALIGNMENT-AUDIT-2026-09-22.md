@@ -330,3 +330,11 @@ Knowledge Flow:
 **Verification Status:** ✅ **COMPLETE — All 7 layers aligned, ready for Phase 1 execution**  
 **Authority:** AUDIT-2026-09-22 + BASES-CANONICAL-DEFINITION + STARTHERE.md + VEX.md  
 **Last Updated:** 2026-09-22 23:59 UTC
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

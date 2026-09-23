@@ -395,3 +395,11 @@ VITE_PUBLIC_API_URL=https://vex.worldwidebro.com/api
 | Tech Lead | Claude Haiku | 2026-09-18 | ✅ Approved |
 | Infra Eng | TBD | 2026-09-18 | ⏳ Pending |
 | Security | TBD | 2026-09-18 | ⏳ Pending |
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

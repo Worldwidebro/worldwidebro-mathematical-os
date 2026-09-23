@@ -646,3 +646,11 @@ curl -X POST http://localhost:20128/api/orchestrator/execute-task \
 ---
 
 **Last Updated:** 2026-09-18 | **Version:** 1.0 | **Authority:** CP-033 (Execution)
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

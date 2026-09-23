@@ -242,3 +242,10 @@ UPSIDE (3-4 customers + fast close):
 **Owner:** You (sales lead)  
 **Go-Live:** Sep 11, 8:00 AM 🚀
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

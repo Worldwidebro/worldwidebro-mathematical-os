@@ -517,3 +517,11 @@ Do you need to debug/investigate?
 **Generated:** 2026-09-10  
 **Total Organized:** 2,093 skills across 8 phases + cross-cutting
 **Authority:** [[CLAUDE.md|Project Authority]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

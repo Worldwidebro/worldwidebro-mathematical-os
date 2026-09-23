@@ -542,3 +542,10 @@ FOUNDER
 
 **Everything is wired. Everything is connected. Follow the wiki links to understand the full system.**
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

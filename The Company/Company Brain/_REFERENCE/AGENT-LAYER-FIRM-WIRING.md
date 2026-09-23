@@ -271,3 +271,11 @@ The agent layer **executes** your firm structure. It's not separate from it—it
 
 **Generated:** 2026-09-10  
 **Related:** _AGENTS/agent_layer.py, 01-IDENTITY/MASTER-ROLE-REGISTRY.md, STARTHERE.md
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

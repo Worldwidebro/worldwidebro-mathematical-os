@@ -322,3 +322,11 @@ By end of 2026:
 **Status:** COMPLETE ARCHITECTURE DOCUMENTATION READY FOR EXECUTION  
 **Updated:** 2026-09-23  
 **Authority:** All referenced registries + audit verification
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

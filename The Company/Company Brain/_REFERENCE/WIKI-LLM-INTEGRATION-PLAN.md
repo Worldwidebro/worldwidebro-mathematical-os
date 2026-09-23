@@ -364,3 +364,11 @@ Source: [[TYPED-WIKILINKS-GUIDE|_DOCS/TYPED-WIKILINKS-GUIDE.md]]
 **Status:** Design complete, ready for Week 1 implementation  
 **Owner:** Claude Haiku 4.5 (Agent) + User approval on Layer 2/3
 **Next:** Create MCP tool specs for validator + fixer agents
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

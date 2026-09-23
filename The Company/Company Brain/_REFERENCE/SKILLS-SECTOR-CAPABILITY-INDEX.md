@@ -327,3 +327,11 @@ See [[_REFERENCE/SKILLS-PHASE-ROADMAP.md|Skills Phase Roadmap]] for complete map
 **Generated:** 2026-09-10  
 **Authority:** [[00-CONSTITUTION|Constitution]], [[STARTHERE|StartHere]]  
 **Cross-References:** [[_REFERENCE/SKILLS-PHASE-ROADMAP.md|Phase Roadmap]], [[_REFERENCE/ALL-2093-SKILLS-COMPLETE-CATALOG.md|Complete Catalog]], [[CAPABILITY-INDEX|Capability Index]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

@@ -20,3 +20,10 @@ See `ALL_789_VENTURES_36_SECTOR_ALIGNMENT_DEDUPED.csv` for:
 
 [TO_FILL: How are ventures coordinated across this sector?]
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

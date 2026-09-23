@@ -185,3 +185,11 @@ PARTIAL (Mixed format):
 ---
 
 **Status:** AUDIT COMPLETE | RECOMMENDED: Execute Phase 1 immediately to unblock navigation
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

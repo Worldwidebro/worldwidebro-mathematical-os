@@ -642,3 +642,10 @@ Days 6-7 (Sep 15-16): Execution
 **Week 1 revenue confidence:** 80% ($2-5K likely, $7.5K possible)  
 **Critical success factor:** Driver recruitment + cold calling cadence
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

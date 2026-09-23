@@ -217,3 +217,10 @@ This gets us to $1K-$2K Week 1 revenue with minimal legal risk.
 **Critical Path:** Fix 4 blocking items → $1K+ revenue  
 **Full Ready:** Fix all 8 items → $5K+ revenue
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -766,3 +766,11 @@ ls ~/.claude/skills/ | sort | wc -l  # Should show 2093
 **Generated:** 2026-09-10  
 **Authority:** [[CLAUDE.md|Project Authority]]  
 **Source:** `~/.claude/skills/` directory listing (2,093 total)
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

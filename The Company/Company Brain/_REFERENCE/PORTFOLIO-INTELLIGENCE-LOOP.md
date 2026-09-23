@@ -323,3 +323,10 @@ Implementation: Week 2/3 using patterns from starred repo
 
 The question is: What's the next loop you want to see? Or want to optimize?
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -384,3 +384,11 @@ RECOMMENDATION: Buy SaaS (TitleTech). Fastest to capability, lowest risk, predic
 **Next:** Read [[EXECUTION-LOOP|05-EXECUTION-LOOP.md]] to understand the complete flow from objective to outcome.
 
 **Last Updated:** 2026-09-18 | **Architecture Version:** 1.0
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

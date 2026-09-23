@@ -48,3 +48,11 @@
    - Operations that write or alter filesystem state (`write_to_file`, `replace_file_content`, `run_command` with modifying shell scripts) require explicit confirmation when operating outside verified developer workflows.
 3. **Execution Isolation:**
    - Antigravity sandbox isolates unprivileged commands from the root filesystem and blocks unauthorized outbound network traffic unless explicitly elevated (`BypassSandbox: true`).
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B42|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B42]]

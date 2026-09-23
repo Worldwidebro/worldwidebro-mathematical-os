@@ -392,3 +392,11 @@ curl -X POST https://api.anthropic.com/v1/messages \
 
 **Owned By:** Security Team  
 **Escalation:** If auth broken > 10 min, page security team lead
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

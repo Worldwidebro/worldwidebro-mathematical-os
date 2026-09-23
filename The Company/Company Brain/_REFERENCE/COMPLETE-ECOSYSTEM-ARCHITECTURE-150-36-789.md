@@ -642,3 +642,11 @@ Result: A coherent, governed operating system for 789 ventures across 36 sectors
 **Authority:** ALL_789_VENTURES_36_SECTOR_ALIGNMENT.csv (Sep 22) + FAMILY_OFFICE_ECOSYSTEM_ALIGNMENT_MASTER.csv (Sep 22)  
 **Updated:** 2026-09-22  
 **Status:** COMPLETE ARCHITECTURE DOCUMENTATION
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

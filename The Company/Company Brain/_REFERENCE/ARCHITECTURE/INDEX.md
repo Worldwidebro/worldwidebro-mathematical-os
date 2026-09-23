@@ -91,3 +91,11 @@ RESULT: Outcome reported back to Company Brain (feedback loop)
 ---
 
 **Last Updated:** 2026-09-18 | **Architecture Version:** 1.0
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

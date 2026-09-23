@@ -390,3 +390,11 @@ if (webhookBacklog > 100) {
 | 2-5 min | Check logs for root cause |
 | 5-10 min | Escalate to engineering if not resolved |
 | > 10 min | Declare incident, activate war room |
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

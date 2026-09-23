@@ -282,3 +282,11 @@ VEX Dashboard (Home)
 | Portfolio Manager | TBD | 2026-09-18 | ⏳ Pending |
 | Tech Lead | Claude Haiku | 2026-09-18 | ✅ Approved |
 | CFO | TBD | 2026-09-18 | ⏳ Pending |
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

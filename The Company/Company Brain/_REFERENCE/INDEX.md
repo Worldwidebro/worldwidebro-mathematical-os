@@ -27,3 +27,11 @@
 - [[../09-KNOWLEDGE/INDEX|09-KNOWLEDGE]] — Knowledge domain
 - [[../08-KNOWLEDGE-GRAPH/INDEX|08-KNOWLEDGE-GRAPH]] — Graph architecture
 - [[../12-CONTEXT/INDEX|12-CONTEXT]] — Context assembly
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

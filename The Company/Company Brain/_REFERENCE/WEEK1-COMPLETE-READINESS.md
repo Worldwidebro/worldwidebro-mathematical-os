@@ -312,3 +312,11 @@ Final Prep:
 **Generated:** Sep 10, 2026  
 **Next review:** Sep 11, 6am (morning of first calls)  
 **Target revenue:** $1.7K-$7.5K by Sep 15, 11:59pm
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

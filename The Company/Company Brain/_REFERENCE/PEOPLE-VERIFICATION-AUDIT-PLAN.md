@@ -332,3 +332,11 @@ grep -i "empty\|\[to_verify\]" _REGISTRIES/CANONICAL/RESPONSIBILITY-MATRIX.csv |
 **Ongoing:** Oct 7+ (continuous verification as agents discover new people)
 
 Commit: 5af7f6e4
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]
