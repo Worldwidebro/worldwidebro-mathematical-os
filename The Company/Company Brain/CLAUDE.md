@@ -1,9 +1,18 @@
 # CLAUDE.md — Company Brain (Session Guidance)
 
-**Scope:** Active session instructions only; reference docs in `_REFERENCE/` and master plan in global ~/.claude/CLAUDE.md  
-**Updated:** 2026-09-22 (AUDIT COMPLETE)  
-**Authority:** Infrastructure CP-027 + Execution CP-033 + Revenue CP-021  
-**Current Phase:** Week 3 Graph-Native Deployment + Agentic Scaling (Sep 23–30) | [[ANTIGRAVITY|ANTIGRAVITY.md]] (45 operating rules)
+**Scope:** Active session instructions + Bases architecture integration  
+**Updated:** 2026-09-22 (AUDIT + BASES DEFINITION COMPLETE)  
+**Authority:** Infrastructure CP-027 + Execution CP-033 + Revenue CP-021 + [[STARTHERE|STARTHERE.md]] (master orientation)  
+**Architecture Layers:**
+  1. Bases (35 knowledge/operating domains per sector)
+  2. Company Brain (Neo4j graph, Qdrant vectors, Supabase state, Registries)
+  3. Master Orchestrator (13-stage decision loop)
+  4. Agent System (318 agents, 3 autonomy levels)
+  5. Capability System (300+ capabilities, sector-mapped)
+  6. Execution Loop (14-stage work completion)
+  7. VEX CommandCenter (public front door + real-time dashboard)
+
+**Current Phase:** Week 3 Bases Instantiation + Agentic Scaling (Sep 23–30) | [[ANTIGRAVITY|ANTIGRAVITY.md]] (45 operating rules) + [[BASES-CANONICAL-DEFINITION|_ONTOLOGY/BASES-CANONICAL-DEFINITION.md]] (new layer)
 
 ---
 
@@ -39,23 +48,149 @@
 
 ---
 
-## NAMING CONSOLIDATION
+## ARCHITECTURE LAYERS (Complete Stack)
 
-**One system, one name: VEX**
-
-| What | GitHub | Deployed | Status |
-|------|--------|----------|--------|
-| **VEX** | Worldwidebro/Worldwidebro-Vex | vex-hero-site-sigma.vercel.app | ✅ Portfolio live |
-| Growth OS | Worldwidebro/worldwidebro-marketing-os | localhost:3030 | ✅ Dashboard live |
-
-**Removed:** "Venture Portal", "Hermes Command Center" (old naming)
+```
+WORLDWIDEBRO GROUP (Holding Company)
+    │
+    ├── VEX CommandCenter (Public Portal)
+    │   ├── Hero experience + showcase
+    │   ├── Real-time Supabase dashboard
+    │   └── Public portfolio.public.json
+    │
+    ├── BASES LAYER (35 Domain Systems)
+    │   ├── BASE-001 to BASE-036 (1 per sector)
+    │   ├── Knowledge/Ontology/Ventures/Agents per Base
+    │   └── Standard schema (Identity → Outputs)
+    │
+    ├── COMPANY BRAIN (Intelligence)
+    │   ├── Neo4j (20,363+ edges, 35 Base node clusters)
+    │   ├── Qdrant (17,236+ vectors, semantic search)
+    │   ├── Supabase/PostgreSQL (operational state)
+    │   └── Registries (789 ventures, 300+ capabilities, 150 entities)
+    │
+    ├── MASTER ORCHESTRATOR (Coordination)
+    │   ├── 13-stage decision loop
+    │   ├── Continuous observation → learning
+    │   └── Multi-Base coordination
+    │
+    ├── AGENT SYSTEM (Workers)
+    │   ├── 318 agents + 16 routing agents
+    │   ├── L1/L2/L3 autonomy levels
+    │   └── Per-Base agent scoping
+    │
+    ├── CAPABILITY SYSTEM (Inventory)
+    │   ├── 300+ capabilities
+    │   ├── Sector-mapped coverage analysis
+    │   └── Repository + Tool + Skill registries
+    │
+    ├── EXECUTION LOOP (Action)
+    │   ├── 14-stage work completion
+    │   ├── Failure handling + rollback
+    │   └── Revenue attribution
+    │
+    └── LEGAL/FINANCIAL STRUCTURE
+        ├── Family Trust (Principal)
+        ├── 150 Legal Entities (Trusts, HoldCos, OpCos)
+        ├── 36 Operating Companies (OpCos)
+        └── 789 Ventures (mapped to OpCos + Sectors)
+```
 
 ---
 
-## QUICK REFERENCE
+## ECOSYSTEM ALIGNMENT: Bases ↔ VEX ↔ Worldwidebro ↔ 789 Ventures
+
+### Layer 1: Legal Structure (Bottom)
+- **150 Legal Entities** (Family Trust → Asset LLCs → Operating C-Corp)
+- **36 Operating Companies** (opco_id per venture)
+- **789 Ventures** (mapped to OpCos + 36 Sectors + 4 archetypes)
+- See: [[FAMILY_OFFICE_ECOSYSTEM_ALIGNMENT_MASTER|_REGISTRIES/CANONICAL/FAMILY_OFFICE_ECOSYSTEM_ALIGNMENT_MASTER.csv]]
+
+### Layer 2: Knowledge/Operating Domains (NEW)
+- **35 Bases** (BASE-001 to BASE-036, one per sector)
+- Each Base contains: ventures, ontology, knowledge, agents, operations
+- Standard schema: Identity → Knowledge → Market → Ventures → Operations → Technology → Agents → Decisions → Experiments → Outputs
+- See: [[BASES-CANONICAL-DEFINITION|_ONTOLOGY/BASES-CANONICAL-DEFINITION.md]]
+
+### Layer 3: Intelligence Graph (Middle)
+- **Neo4j**: 35 Base node clusters + 789 venture nodes + 300+ capability nodes
+- **Qdrant**: Semantic search over Base knowledge + venture insights
+- **Supabase**: Real-time state (venture metrics, agent performance, revenue)
+- **Registries**: [[ALL_789_VENTURES_36_SECTOR_ALIGNMENT|_REGISTRIES/CANONICAL/ALL_789_VENTURES_36_SECTOR_ALIGNMENT.csv]] (CURRENT TRUTH)
+
+### Layer 4: Coordination & Execution (Middle)
+- **Master Orchestrator**: 13-stage loop (Observe → Understand → Discover → Plan → Decompose → Match → Delegate → Execute → Monitor → Evaluate → Verify → Learn → UpdateBrain)
+- **Agent System**: 318 agents scoped to Bases + OpCos + ventures
+- **Capability System**: 300+ capabilities mapped to sectors and Bases
+- **Execution Loop**: 14-stage work flow (objective → outcome + feedback)
+
+### Layer 5: Public Portal (Top)
+- **VEX CommandCenter**: Real-time dashboard (Supabase-backed)
+  - Portfolio metrics (revenue, active agents, running tasks)
+  - Venture showcase (hero experience)
+  - Founder advisory path
+- **Deployment**: vex-hero-site-sigma.vercel.app (live)
+- See: [[VEX|VEX.md]] + [[VEX-DEPLOYMENT-READY|VEX-DEPLOYMENT-READY.md]]
+
+### How They Connect
+
+```
+USER (Founder/Operator/Investor)
+    ↓
+VEX CommandCenter (Portal)
+    ↓ (Query: "Show me medical logistics ventures")
+Bases Layer (BASE-009: Logistics)
+    ↓ (Find ventures in domain)
+Neo4j Graph (LT-005, LT-011 nodes)
+    ↓ (Retrieve metadata)
+Supabase (Revenue, status, agents)
+    ↓ (Agent assigned)
+Agent (Dispatch Agent in BASE-009)
+    ↓ (Execute action)
+Result (Delivery scheduled)
+    ↓ (Measure)
+Memory (Learning → future decisions)
+```
+
+---
+
+## NAMING CONSOLIDATION
+
+**Unified ecosystem: VEX + Worldwidebro + Bases + Ventures**
+
+| Layer | Name | GitHub | Deployed | Status |
+|-------|------|--------|----------|--------|
+| **Public Portal** | VEX CommandCenter | Worldwidebro/Worldwidebro-Vex | vex-hero-site-sigma.vercel.app | ✅ Live |
+| **Holding Co.** | Worldwidebro Holdings | — | — | ✅ Operating (789 ventures) |
+| **Domains** | Bases (35 systems) | Company Brain | — | ✅ In framework (instantiating) |
+| **Ventures** | 789 companies | Worldwidebro/* repos | Multiple Vercel deploys | ✅ Mapped (ALL_789_VENTURES_36_SECTOR_ALIGNMENT.csv) |
+| **Dashboard** | Growth OS | worldwidebro-marketing-os | localhost:3030 | ✅ Testing |
+
+**Removed terminology:** "Venture Portal", "Hermes Command Center" (superseded by VEX)
+
+---
+
+## MASTER ORIENTATION (Read in Order)
+
+**STARTHERE.md Sequence (Non-negotiable):**
+1. [[STARTHERE|STARTHERE.md]] — Master orientation + architecture layers (Company Brain, Master Orchestrator, Agent System, Capability System, Execution Loop)
+2. [[REALITY|REALITY.md]] — Verified truth (what is actually happening)
+3. [[00_RESPECT/RESPECT|RESPECT.md]] — 20 governance rules
+4. [[ANTIGRAVITY|ANTIGRAVITY.md]] — 45 operating rules (zero fake completion)
+5. [[CLAUDE.md]] (this file) — Infrastructure + Bases + session guidance
+
+**NEW:** Bases Architecture Sequence
+1. [[BASES-CANONICAL-DEFINITION|_ONTOLOGY/BASES-CANONICAL-DEFINITION.md]] — What are Bases? (35 knowledge/operating domains, NOT databases)
+2. [[BASE-INSTANTIATION-AGENTIC-PLAN|20-DECISIONS/BASE-INSTANTIATION-AGENTIC-PLAN.md]] — How to build Bases? (6-week agentic plan, 15-min units, eval-first)
+3. [[VEX|VEX.md]] — How does VEX query Bases? (CommandCenter dashboard + portfolio)
+4. [[ALL_789_VENTURES_36_SECTOR_ALIGNMENT|_REGISTRIES/CANONICAL/ALL_789_VENTURES_36_SECTOR_ALIGNMENT.csv]] — Current venture alignment (which ventures live in which Bases)
+
+**QUICK REFERENCE**
 
 **BASES Architecture:** [[BASES-CANONICAL-DEFINITION|_ONTOLOGY/BASES-CANONICAL-DEFINITION.md]] (35 governed knowledge/operating domains, Sep 22) — **MASTER CONCEPT**  
-**BASE Instantiation Plan:** [[BASE-INSTANTIATION-AGENTIC-PLAN|20-DECISIONS/BASE-INSTANTIATION-AGENTIC-PLAN.md]] (agentic engineering, 6 weeks, Sep 23 kickoff)
+**BASE Instantiation Plan:** [[BASE-INSTANTIATION-AGENTIC-PLAN|20-DECISIONS/BASE-INSTANTIATION-AGENTIC-PLAN.md]] (agentic engineering, 6 weeks, Sep 23 kickoff)  
+**VEX Ecosystem:** [[VEX|VEX.md]] (public CommandCenter + real-time dashboard)  
+**Venture Alignment:** [[ALL_789_VENTURES_36_SECTOR_ALIGNMENT|_REGISTRIES/CANONICAL/ALL_789_VENTURES_36_SECTOR_ALIGNMENT.csv]] (all 789 ventures → OpCos → Bases)
 
 **Audit Trail:** [[AUDIT-2026-09-22|_REFERENCE/AUDIT-2026-09-22.md]] (verified folder structure, sector count, registries, dual naming conflicts)  
 **Logic Architecture:** [[_DOCS/LOGIC-ARCHITECTURE-FRAMEWORK.md]] (72 logic layers, 12 executive divisions, 250+ control points, autonomous loop patterns) — [[_REGISTRIES/CANONICAL/LOGIC_LAYERS_REGISTRY.yaml|Master Registry]]  
