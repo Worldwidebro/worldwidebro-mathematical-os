@@ -1,0 +1,344 @@
+---
+name: onboarding-templates
+description: "Automated onboarding packages: take a role + person, generate complete checklist + requirements"
+version: "1.0"
+created: "2026-09-23"
+authority: "CP-027 (Infrastructure) + CP-001 (Enterprise)"
+
+# When you assign a person to a role, this generates their onboarding package
+# Example: "Add Jane Doe as CFO of Master Holdco"
+# System pulls ROLE-REQUIREMENTS[ROLE-FOE-CFO]
+# Generates ONBOARDING-CHECKLIST for Jane Doe
+# Produces: Onboarding dashboard + completion tracking
+
+onboarding_template_structure:
+
+  sections:
+    - welcome
+    - identity_verification
+    - document_collection
+    - systems_access
+    - training
+    - workflow_assignment
+    - first_deliverable
+    - activation
+
+# ===== WELCOME SECTION =====
+welcome:
+  for_human: |
+    Welcome to [ENTITY NAME]
+
+    You are now assigned to the role of [ROLE TITLE]
+
+    You report to: [MANAGER NAME]
+    You are responsible for: [RESPONSIBILITIES]
+
+    Your onboarding will take approximately [DAYS] days
+
+    Questions? Contact [MANAGER EMAIL] or [ONBOARDING CONTACT]
+
+  for_agent: |
+    Agent [AGENT_NAME] activated for role [ROLE TITLE]
+
+    You are assigned to: [ENTITY NAME]
+    You support: [SUPPORTED WORKFLOWS]
+    You have access to: [SYSTEMS LIST]
+
+    Your capabilities: [SKILLS_LIST]
+    Your approval authority: [LIMITS]
+    Your oversight: [HUMAN APPROVAL CHAIN]
+
+    Questions? Contact: [AGENT MANAGER]
+
+# ===== IDENTITY VERIFICATION SECTION =====
+identity_verification:
+  template: |
+    ## IDENTITY VERIFICATION
+
+    Required items:
+    [LIST_FROM_ROLE_REQUIREMENTS.identity_requirements]
+
+    [ ] Legal name verified
+    [ ] Personal identification collected
+    [ ] Contact information confirmed
+    [ ] Background check initiated (if applicable)
+    [ ] Credentials verified (if applicable)
+
+    Verified by: ____________
+    Date: ____________
+
+  tracking:
+    fields:
+      - item_name
+      - required
+      - submitted
+      - verified
+      - verified_by
+      - verified_date
+      - status
+
+# ===== DOCUMENT COLLECTION SECTION =====
+document_collection:
+  template: |
+    ## DOCUMENTS REQUIRED
+
+    [FOR_EACH documents_required FROM ROLE_REQUIREMENTS]
+
+    [ ] [DOCUMENT_NAME]
+        Due date: [DATE]
+        Storage location: [SYSTEM]
+        Evidence ID: ____________
+
+  tracking:
+    fields:
+      - document_type
+      - required_by_date
+      - submitted_date
+      - evidence_id
+      - stored_location
+      - status
+
+# ===== SYSTEMS ACCESS SECTION =====
+systems_access:
+  template: |
+    ## SYSTEMS ACCESS
+
+    You have been granted access to:
+
+    [FOR_EACH system IN systems_access FROM ROLE_REQUIREMENTS]
+
+    [ ] [SYSTEM_NAME]
+        Access level: [LEVEL]
+        Credentials: [SENT_TO_EMAIL]
+        Test access: [ ] Complete
+        Confirmed by: ____________
+        Date: ____________
+
+  tracking:
+    fields:
+      - system_name
+      - access_level
+      - credentials_sent_date
+      - test_access_completed
+      - verified_by
+      - verified_date
+
+# ===== TRAINING SECTION =====
+training:
+  template: |
+    ## REQUIRED TRAINING
+
+    Complete the following training modules:
+
+    [FOR_EACH training IN training_required FROM ROLE_REQUIREMENTS]
+
+    [ ] [TRAINING_MODULE_NAME]
+        Estimated time: [HOURS] hours
+        Trainer: [NAME]
+        Completion required by: [DATE]
+        Status: ____________
+        Signed off by: ____________
+        Date: ____________
+
+  modules:
+    company_brain_overview:
+      description: "How Company Brain works, who accesses what, how decisions are tracked"
+      duration_hours: 1
+      required_for: "all_roles"
+
+    approval_authority:
+      description: "Your approval limits, escalation rules, how decisions flow"
+      duration_hours: 0.5
+      required_for: "decision_making_roles"
+
+    compliance_framework:
+      description: "Legal/governance requirements for your role"
+      duration_hours: 1
+      required_for: "legal_fiduciary_roles"
+
+    workflow_specific:
+      description: "[ROLE-SPECIFIC] workflows you participate in"
+      duration_hours: 2
+      required_for: "all_assigned_workflows"
+
+    evidence_and_documentation:
+      description: "What evidence you must produce, how to document decisions"
+      duration_hours: 1
+      required_for: "all_roles"
+
+# ===== WORKFLOW ASSIGNMENT SECTION =====
+workflow_assignment:
+  template: |
+    ## WORKFLOWS YOU PARTICIPATE IN
+
+    [FOR_EACH workflow IN workflows FROM ROLE_REQUIREMENTS]
+
+    [ ] [WORKFLOW_NAME]
+        Frequency: [MONTHLY/QUARTERLY/ON_DEMAND]
+        Your role: [WHAT_YOU_DO]
+        Connected to: [OTHER_ROLES]
+        Evidence required: [WHAT_TO_PRODUCE]
+        Training completed: [ ]
+        First task created: ____________
+        Date: ____________
+
+  tracking:
+    fields:
+      - workflow_name
+      - frequency
+      - person_role
+      - connected_roles
+      - evidence_required
+      - training_status
+      - first_task_assigned_date
+
+# ===== FIRST DELIVERABLE SECTION =====
+first_deliverable:
+  template: |
+    ## YOUR FIRST DELIVERABLE
+
+    As proof of onboarding, produce your first evidence artifact:
+
+    First task: [FROM evidence_to_produce]
+    Description: [TASK DESCRIPTION]
+    Due date: [DATE]
+
+    Submit to: [MANAGER NAME]
+    Verification criteria: [QUALITY CHECKLIST]
+
+    Submitted: ____________
+    Verified by: ____________
+    Date verified: ____________
+    Status: ____________
+
+# ===== ACTIVATION SECTION =====
+activation:
+  template: |
+    ## ROLE ACTIVATION
+
+    This person/agent is now authorized for role [ROLE_TITLE] effective [DATE]
+
+    Approval chain:
+    [ ] Manager approval: ____________ (date: __________)
+    [ ] CP approval (if required): ____________ (date: __________)
+    [ ] Executive approval (if required): ____________ (date: __________)
+
+    ROLE IS NOW: [ACTIVE | CONDITIONAL]
+
+    If conditional, specify conditions: ________________________
+
+    Activated by: ____________
+    Date activated: ____________
+
+# ===== SPECIAL CASES =====
+
+advisor_onboarding:
+  template: |
+    ## EXTERNAL ADVISOR ONBOARDING
+
+    This person is an external advisor, not an employee.
+
+    [ ] Engagement letter signed
+    [ ] Scope of work defined
+    [ ] Approval authority documented
+    [ ] System access provisioned (if applicable)
+    [ ] Communication protocol established
+    [ ] Meeting schedule confirmed
+    [ ] Reporting requirements documented
+
+    Engagement type: [TYPE]
+    Engagement duration: [START DATE] to [END DATE]
+    Manager: [NAME]
+
+ai_agent_onboarding:
+  template: |
+    ## AI AGENT ONBOARDING
+
+    This is an autonomous agent, not a human.
+
+    [ ] Agent specification document reviewed
+    [ ] Capability specification verified
+    [ ] Skills tested
+    [ ] Tool access provisioned
+    [ ] Approval authority limits configured
+    [ ] Human oversight chain established
+    [ ] First workflow test completed
+    [ ] Monitoring dashboard configured
+
+    Agent version: [VERSION]
+    Deployed to: [ENVIRONMENT]
+    Overseen by: [HUMAN ROLE]
+
+    First autonomous decision capability: [CAPABILITY]
+    Escalation rules: [RULES]
+
+# ===== COMPLETION CRITERIA =====
+
+activation_checklist:
+  must_complete:
+    - identity_verified: "100% complete"
+    - documents_collected: "100% complete"
+    - systems_access: "All systems tested"
+    - training_completed: "All modules signed off"
+    - first_deliverable: "Submitted and verified"
+    - approval_authority: "Documented and signed"
+    - manager_briefed: "Training/briefing complete"
+
+  then_status: "ACTIVE"
+
+  else_status: "PENDING"
+  else_status_reason: "[BLOCKING_ITEM]"
+
+# ===== AUTO-GENERATION RULES =====
+
+auto_generation:
+  triggered_by: "Role assignment event"
+  input: "person_id + role_id + entity_id"
+
+  pulls_from:
+    - ROLE_REQUIREMENTS[role_id]
+    - PEOPLE_REGISTRY[person_id]
+    - RESPONSIBILITY_MATRIX[entity_id + role_id]
+    - AUTHORITY_MATRIX[role_id]
+
+  generates:
+    - ONBOARDING_CHECKLIST[person_id + role_id + entity_id]
+    - task: "Onboarding manager assigned"
+    - task: "Send welcome email"
+    - task: "Create system access requests"
+    - task: "Schedule training"
+    - task: "Create first deliverable task"
+
+  notifications:
+    - person: "You have been assigned [role] at [entity]"
+    - manager: "[person] assigned to [role] - onboarding started"
+    - onboarding_admin: "New onboarding created: [details]"
+    - system: "Provision access to [systems]"
+
+notes: |
+  CRITICAL USAGE:
+
+  1. This is a TEMPLATE, not a static checklist
+  2. Each assignment generates a NEW checklist from the template
+  3. Fields like [ENTITY_NAME], [ROLE_TITLE], [DAYS] are auto-filled
+  4. Tracks progress toward ACTIVE status
+
+  ACTIVATION LOGIC:
+  - Person/agent assigned to role
+  - Onboarding checklist generated
+  - 7 required items tracked
+  - When ALL 7 complete → Status changes to ACTIVE
+  - If any item blocks → Status stays PENDING
+
+  COMPLETION MEANS:
+  - Person is 100% ready to perform the role
+  - All required information collected
+  - All systems accessible and tested
+  - All training completed and signed off
+  - First work artifact submitted and verified
+
+  TRACKING:
+  - Linked to RESPONSIBILITY-MATRIX (when activated)
+  - Feeds into AUTHORITY-MATRIX (approval limits go live)
+  - Creates tasks in workflow system
+  - Produces audit trail (person activated + date + by whom)

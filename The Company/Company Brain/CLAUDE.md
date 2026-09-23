@@ -3,30 +3,42 @@
 **Scope:** Active session instructions + Bases architecture integration  
 **Updated:** 2026-09-22 (AUDIT + BASES DEFINITION COMPLETE)  
 **Authority:** Infrastructure CP-027 + Execution CP-033 + Revenue CP-021 + [[STARTHERE|STARTHERE.md]] (master orientation)  
-**Architecture Layers:**
-  1. Bases (35 knowledge/operating domains per sector)
-  2. Company Brain (Neo4j graph, Qdrant vectors, Supabase state, Registries)
-  3. Master Orchestrator (13-stage decision loop)
-  4. Agent System (318 agents, 3 autonomy levels)
-  5. Capability System (300+ capabilities, sector-mapped)
-  6. Execution Loop (14-stage work completion)
-  7. VEX CommandCenter (public front door + real-time dashboard)
+**Architecture Layers (Complete Stack):**
+  1. Legal Structure (200 entity types × 150 instances × 789 ventures)
+  2. Bases (35 knowledge/operating domains per sector)
+  3. People + Roles + Onboarding ← NEW (41 people × 40+ roles × entity assignments)
+  4. Company Brain (Neo4j graph, Qdrant vectors, Supabase state, Registries)
+  5. Agent System (30-50 functional agents with 100+ skills, 3 autonomy levels)
+  6. Workflows (sequences + orchestration)
+  7. Loops (recurring control systems + observability)
+  8. Execution Loop (14-stage work completion + evidence generation)
+  9. VEX CommandCenter (public front door + real-time dashboard)
 
 **Current Phase:** Week 3 Bases Instantiation + Agentic Scaling (Sep 23–30) | [[ANTIGRAVITY|ANTIGRAVITY.md]] (45 operating rules) + [[BASES-CANONICAL-DEFINITION|_ONTOLOGY/BASES-CANONICAL-DEFINITION.md]] (new layer)
 
 ---
 
-## STATUS SNAPSHOT — Sep 22, 2026 (VERIFIED)
+## STATUS SNAPSHOT — Sep 23, 2026 (UPDATED)
 
 ✅ **Phase 1 LOCKED** (Sep 6-15) — Agent Enablement complete, audit system operational  
 ✅ **Phase 2 LAUNCHED** (Sep 16-30) — Graph-native refactor (Neo4j schema deployment Sep 18)  
-✅ **Phase 2a PLANNED** (Oct 1 onward) — Agentic scaling (318 agents coordinated across Bases)
-✅ **Bases Architecture DEFINED** (Sep 22) — 35 bounded knowledge/operating domains, standard schema, agentic instantiation plan (6 weeks, $1.2K)
+✅ **Phase 2a DESIGNED** (Sep 23) — Agentic scaling with people+roles bridge (30-50 functional agents, not 318)
+✅ **Bases Architecture DEFINED** (Sep 22) — 35 bounded knowledge/operating domains, standard schema
+✅ **People + Roles LAYER CREATED** (Sep 23) — 4 master registries + onboarding system
+  - PEOPLE-REGISTRY.yaml (21 key people identified)
+  - ROLES-REGISTRY.yaml (40+ standard roles)
+  - RESPONSIBILITY-MATRIX.csv (entity → role → person mappings)
+  - AUTHORITY-MATRIX.yaml (approval thresholds + decision routing)
+  - ROLE-REQUIREMENTS.yaml (what each role needs)
+  - ONBOARDING-TEMPLATES.yaml (automated onboarding packages)
 ✅ **Infrastructure LIVE** — Neo4j (20,363 edges), Qdrant (17,236 vectors), OmniRoute, Ollama  
-✅ **Folder Structure AUDITED** — 132 directories (71 domains + 24 infrastructure), 36 sectors, 789 ventures, 59 canonical registries
-✅ **6 Tier-0 Ventures + Week 2 Execution** → Executing revenue loops (OPS-001, LT-005, CALLCENTER)
+✅ **Folder Structure AUDITED** — 132 directories, 36 sectors, 789 ventures, 59 canonical registries
+✅ **6 Tier-0 Ventures Executing** — OPS-001, LT-005, CALLCENTER (revenue-ready)
 
-📊 **Week 3 Kickoff (Sep 23):** BASE Phase 1 instantiation (BASE-009, BASE-012, BASE-014) | **Target:** 3 production-ready Bases by Oct 6
+📊 **Week 3 Schedule (Sep 23–30):**
+- BASE Phase 1 instantiation (BASE-009, BASE-012, BASE-014) ← Parallel
+- People verification + agent system design (people audit + functional agent framework) ← Parallel
+- **Target:** 3 production-ready Bases + 18+ people VERIFIED + Agent system designed by Oct 6
 
 ---
 
