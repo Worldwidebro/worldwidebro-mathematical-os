@@ -41,7 +41,7 @@ The constitutional layer establishes the **foundational mission, principles, and
 - [[STARTHERE|STARTHERE.md]] — Read first: mandatory orientation sequence
 - [[REALITY|REALITY.md]] — Audited truth ledger (what is actually happening)
 - [[ANTIGRAVITY|ANTIGRAVITY.md]] — 45 operating rules (zero fake completion)
-- [[RESPECT|RESPECT.md]] — 20 core governance rules
+- [[RESPECT|../00_RESPECT/RESPECT.md]] — 20 core governance rules
 
 ### Strategic Direction
 - [[WHO-I-AM-ANTWUAN-JOHNS|WHO-I-AM-ANTWUAN-JOHNS.md]] — Founder identity + philanthropic mission
