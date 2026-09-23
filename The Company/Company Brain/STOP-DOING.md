@@ -26,3 +26,11 @@
    *Spending 4 hours saving $0.02 on local inference while ignoring a $5,000 commercial proposal is financial insanity.*
 8. **STOP keeping dead code alive out of emotional attachment to past effort.**  
    *Sunk cost is not an asset. Delete obsolete branches, containers, and prototypes without sentimentality.*
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -15,3 +15,11 @@ Details the roadmap for activating Knowledge Graph capabilities, unifying regist
 1. **KG Capabilities:** Hybrid Search (`KG-017`), Agent Context Builder (`KG-028`), and Graph API (`KG-048`).
 2. **Registry Consolidation:** Unifying 789 ventures and 300 capabilities into canonical formats.
 3. **Agent Routing:** Connecting LiteLLM, OmniRoute, and local Ollama nodes into an observable network.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

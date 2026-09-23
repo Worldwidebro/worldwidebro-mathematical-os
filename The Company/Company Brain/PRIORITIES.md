@@ -27,3 +27,11 @@
 - [x] **Deploy 12-Domain INFRASTRUCTURE System:** Complete 265 documents under `56-ENGINEERING/INFRASTRUCTURE/`.
 - [x] **Generate 23 Machine-Readable Registries:** Validated JSON in `_REGISTRIES/`.
 - [ ] **Implement Automated Drift Scanner:** Script continuous validation of live Docker state against registries.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

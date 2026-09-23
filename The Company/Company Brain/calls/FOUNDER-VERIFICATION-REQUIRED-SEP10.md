@@ -175,3 +175,11 @@ This is NORMAL. Many businesses don't publish hiring manager direct lines. You'l
 - **Sales Pipelines:** [[20-DECISIONS/CON-001-SALES-PIPELINE|CON-001 Pipeline]], [[20-DECISIONS/LT-005-SALES-PIPELINE|LT-005 Pipeline]], [[20-DECISIONS/OPS-001-SALES-PIPELINE|OPS-001 Pipeline]], [[20-DECISIONS/RE-001-SALES-PIPELINE|RE-001 Pipeline]]
 - **Master Reality Ledger:** [[REALITY|REALITY.md]]
 - **Start Here:** [[STARTHERE|STARTHERE.md]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

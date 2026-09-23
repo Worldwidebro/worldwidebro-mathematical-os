@@ -212,3 +212,10 @@ Company Brain remains **unmonetized** with **zero customer revenue**. Six ventur
 
 **BOTTOM LINE:** We have empty shells. No one is picking up phones, no one is booking deliveries, no one is requesting estimates.
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B001|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B001]]

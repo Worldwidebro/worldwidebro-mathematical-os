@@ -317,3 +317,11 @@ Year 2 (2027):
 **Timeline to $1B valuation:** 12-18 months
 
 **Status:** Ready to begin Week 1 sprint.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

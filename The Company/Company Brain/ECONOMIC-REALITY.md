@@ -71,3 +71,11 @@ ECONOMIC_REALITY:
 
 ## The Commercial Injunction
 Until `customers.paying > 0` and `revenue.last_30d > $0`, any agent or human engineering task that does not directly contribute to packaging, marketing, or delivering the primary commercial offer (`unvalidated_candidates[0]`) is considered **avoidance of economic reality** and prohibited by [`STOP-DOING.md`](file:///Users/acebless/Documents/The%20Company/Company%20Brain/STOP-DOING.md).
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B001|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B001]]

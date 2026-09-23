@@ -110,3 +110,11 @@ Bearer sk-30c31902dc...      JWT eyJhbGciOiJIUzI1...     neo4j / <password>
      3. Maximum retries capped at 3 attempts per provider, 28 attempts across complete pool.
 3. **Circuit Breakers:**
    - Automatically opens on 5 consecutive failures within 60 seconds; cools down for 120 seconds before half-open probe.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

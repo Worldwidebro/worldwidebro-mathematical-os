@@ -174,3 +174,11 @@ node scripts/sync-neo4j-data.mjs
 2. **dbt Environment:** The project is already configured in `analytics/profiles.yml` for PostgreSQL. We can run dbt directly against local Supabase/PostgreSQL.
 3. **Fivetran Configuration:** Configured in `infrastructure/fivetran/fivetran_connectors.yml` to replicate Supabase tables (`ventures`, `capabilities`, `metrics`) into S3.
 4. **Agent Deployment:** Fully implemented via `infrastructure/agents/agent_orchestrator.py` and `infrastructure/agents/test_agent_orchestration.py`.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

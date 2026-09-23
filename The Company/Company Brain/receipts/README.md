@@ -25,3 +25,11 @@ The **`receipts/`** directory contains the raw JSON Lines ledger (`receipts.json
 - **Resource Consumption**: Input tokens, output tokens, latency, and estimated dollar costs.
 - **Signer Identity**: Subagent ID and cryptographic verification signatures.
 - **Evaluation**: Graded continuously by [[_EVAL/README|Operational Evaluation Hub]].
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

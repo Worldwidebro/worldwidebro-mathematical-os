@@ -179,3 +179,11 @@ ANTIGRAVITY.md (Operating Discipline)
 
 **Alignment Status:** ✅ COMPLETE (Sep 19, 2026)  
 **All three layers operational and cross-referenced**
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

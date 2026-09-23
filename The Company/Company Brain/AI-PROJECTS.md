@@ -43,3 +43,11 @@ graph TD
 - [[14-CAPABILITIES/14-CAPABILITIES|14-CAPABILITIES]]: 284 modular capability solutions (`CAP-001` through `CAP-284`).
 - [[COMMERCIAL/OFFERS/OFFER-001-LOCAL-AI-AUDIT|B2B Local AI Audit Offer]]: $7,500 turnkey code and token audit package running 100% on local Mac Studio infrastructure.
 - [[CAMPAIGNS/CAMPAIGN-OS|CAMPAIGN-OS]]: Autonomous multi-channel outbound and inbound marketing engine.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

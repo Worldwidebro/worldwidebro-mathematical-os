@@ -81,3 +81,11 @@ Individual files (discoverable via [[wiki-links]])
 **Total Organization Time:** ~45 minutes
 **Files Organized:** 22,933
 **Folders Wired:** 113 (71 domains + 42 scattered)
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

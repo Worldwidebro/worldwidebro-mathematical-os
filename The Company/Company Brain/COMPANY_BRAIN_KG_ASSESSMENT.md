@@ -16,3 +16,11 @@ Summary of the 50 foundational Knowledge Graph capabilities across Company Brain
 - **Vector Search:** Qdrant `:6333` live with company embedding collections.
 - **Local Storage:** PGLite embedded vector database (`_TOOLS/gbrain`).
 - **Graph Coverage:** 35 sectors wired, 5 primary OpCos modeled with 22-domain dossiers.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

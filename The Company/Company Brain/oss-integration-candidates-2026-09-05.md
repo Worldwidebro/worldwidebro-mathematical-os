@@ -76,3 +76,11 @@ This document formally records the evaluation, trade-offs, and integration decis
 - Execution Stack: [[50-MASTER-CONTROL/EXECUTION_STACK]]
 - Capabilities Index: [[14-CAPABILITIES/CAPABILITIES_INDEX]]
 - External Capability Universe: [[_REGISTRIES/CANONICAL/EXTERNAL_CAPABILITY_UNIVERSE.yaml]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

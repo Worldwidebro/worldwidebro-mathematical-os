@@ -30,3 +30,11 @@ Governs the discovery, AST code verification, dependency mapping, and capability
 1. **Reuse First (`ANTIGRAVITY.md` Rule #2)**: Never write new code without searching the 177 code-bearing repos or the 904 external capability universe.
 2. **Code Reality Over Names**: Never assume a repository has working code from its title or README; check `OWNED_REPO_CODE_REALITY.json`.
 3. **Keep Graph Current**: After modifying code files, run `graphify update .` to keep the AST knowledge graph synchronized.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

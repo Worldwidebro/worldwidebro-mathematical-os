@@ -489,3 +489,10 @@ WARNING: contracts_created = 0 for 12 hours (system down?)
 - Monitor audit logs
 - Patch security vulnerabilities
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

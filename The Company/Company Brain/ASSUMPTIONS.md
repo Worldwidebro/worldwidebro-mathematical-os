@@ -93,3 +93,11 @@ ASM-008:
 ## 2. Assumption Review Cadence
 - **Weekly Audit (Friday 17:00):** Review all `UNTESTED` and `ASSUMED TRUE` items.
 - **Falsification Rule:** If an assumption remains `UNTESTED` for > 30 days without an active experiment, it must be downgraded to `EXPIRED` and stripped from architecture decisions.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

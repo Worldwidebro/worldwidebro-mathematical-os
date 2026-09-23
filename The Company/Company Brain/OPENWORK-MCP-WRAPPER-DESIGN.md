@@ -527,3 +527,10 @@ Agent Query: "Should we pivot to email outreach?"
 **Unit 5 Complete:** ✅ OpenWork MCP wrapper designed  
 **Next:** Unit 6 — Build orchestrator pseudo-code for multi-capability workflows (Sonnet, 20 min)
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

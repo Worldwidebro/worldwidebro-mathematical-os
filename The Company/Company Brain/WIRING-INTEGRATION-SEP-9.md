@@ -278,3 +278,11 @@ Revenue Pipeline:
 **NEXT STEP:** Execute deployment checklist above. Revenue starts flowing within 24-48 hours of wiring completion.
 
 Co-Authored-By: Claude Haiku 4.5 <noreply@anthropic.com>
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -35,3 +35,11 @@ Welcome to the **WorldwideBro / Company Brain** distributed operating system.
 | **System Rules & Principles** | [[ANTIGRAVITY\|ANTIGRAVITY.md]] | 45 non-negotiable operational laws (zero fake completion) |
 | **Master Directory** | [[INDEX\|INDEX.md]] | Comprehensive index of all 67 domains and subsystems |
 | **Wiki Updates Roadmap** | [[WIKI_LINK_UPDATES_REQUIRED\|Wiki Updates Roadmap]] | 33-function business responsibility mapping roadmap |
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

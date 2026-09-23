@@ -48,3 +48,11 @@ graph TD
 - Commercial Offers: [[COMMERCIAL/OFFERS/OFFER-001-LOCAL-AI-AUDIT|Local AI Audit ($7,500 turnkey offer)]]
 - Priority Objectives: [[PRIORITIES]]
 - Sector Taxonomy: [[00-CONSTITUTION/SECTOR-TAXONOMY-MASTER|35 Canonical Sectors]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

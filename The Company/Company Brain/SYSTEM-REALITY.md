@@ -74,3 +74,11 @@ SYSTEM_REALITY:
     active_in_development: 7
     starred_analyzed: 910
 ```
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B001|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B001]]

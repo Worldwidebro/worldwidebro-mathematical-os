@@ -16,3 +16,11 @@ Maps governance control planes (CP-001 through CP-031) to venture financing line
 - **CP-006 (Agents):** Governs algorithmic trading and automated billing.
 - **CP-027 (Infrastructure):** Monitors server costs and local-first hardware budgets.
 - **CP-031 (Security):** Enforces cryptographic bank authorization and escrow locks.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

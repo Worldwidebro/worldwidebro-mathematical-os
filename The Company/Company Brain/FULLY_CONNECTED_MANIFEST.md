@@ -47,3 +47,11 @@ Total core: ~800 files (ready to fully connect)
 **Status:** Manifest created Sep 19, 2026  
 **Next Action:** Execute Phase 2 (generate READMEs + auto-link)  
 **Authority:** Architecture CP-027
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -630,3 +630,10 @@ TOTAL: $0.090 | 7,000 tokens | 23.7 seconds
 
 **Next Phase:** Unit 7+ — Implementation & Live Execution (Phase 1A, Sep 16-30)
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

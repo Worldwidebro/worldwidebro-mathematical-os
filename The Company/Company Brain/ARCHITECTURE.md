@@ -183,3 +183,11 @@ Canonical mapping of the Top Operating Anchor for each sector:
 | **SEC-034** | Decentralized & Web3 | **WEB3-001** | Staging | Immutable private asset trust registry |
 | **SEC-035** | [Discovery & Stealth] | **DISC-001** | Reserved | Opportunistic venture acquisition incubator |
 | **SEC-037** | Quant Trading & Capital | **FIN-037** | 🟢 Live | High-frequency statistical arbitrage system |
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -17,3 +17,11 @@ updated: 2026-09-12
 
 ## Overview
 Inbound and outbound call recordings, transcripts, sentiment audits, and CRM sync payloads.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

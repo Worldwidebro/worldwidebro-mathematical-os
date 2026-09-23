@@ -114,3 +114,11 @@ We audited the live state of OmniRoute against upstream GitHub (`diegosouzapw/Om
 6. **Commercial Launch Assets (Offer Candidate #1) — `IN MARKET`:**
    - Packaged `COMMERCIAL/OFFERS/OFFER-001-LOCAL-AI-AUDIT.md` (`DOC-OFR-001`): 1-page B2B offer for *"Local-First AI Infrastructure & Repo Intelligence Audit"* ($7,500 fixed fee, 48-hour delivery, 3x ROI guarantee).
    - Packaged `COMMERCIAL/OUTREACH/OUTREACH-001-TARGET-PROSPECTS.md` (`DOC-OUT-001`): 5 targeted ICP profiles, cold email and DM scripts, objection handling, and daily execution cadence.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

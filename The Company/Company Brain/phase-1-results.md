@@ -138,3 +138,11 @@
 **Phase 1 Status:** ✅ COMPLETE  
 **Next Phase:** Sales Outreach agents (build call lists)  
 **Timeline:** Call lists ready Sep 10, 2:00 PM
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -17,3 +17,11 @@ Company Brain is designed as an **autonomous company operating system** where hu
 2. **Local-First Sovereignty:** The company's crown jewels (knowledge, memory, graph, reasoning) must run unencumbered on owned local hardware.
 3. **Multi-Subject Zero Trust:** Humans, devices, applications, servers, and AI agents are all subjects requiring explicit identity, credentialing, and policy verification (NIST SP 800-207).
 4. **Zero Waste / Anti-Fake-Completion:** Never claim completion without test proof. Always eliminate duplicated, dead, or crash-looping infrastructure.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -106,3 +106,11 @@ pruning_decisions:
 
 ## Verification Audit Policy
 A pruning decision cannot be marked `CLOSED` without committing the raw shell output of `evidence_required` to [`EVIDENCE.md`](file:///Users/acebless/Documents/The%20Company/Company%20Brain/EVIDENCE.md).
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -263,3 +263,11 @@ See PHASE-2-IMPLEMENTATION-ROADMAP.md for complete troubleshooting
 **Return:** $10K+ value + revenue activated
 
 Let's go. 🚀
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -407,3 +407,11 @@ gbrain doctor --json               # Health check
 ---
 
 **Updated:** 2026-09-25 | **Version:** 4.3 (Ground truth divergence detected Sep 25, 4 founder decisions pending, reconciliation plan created, Phase 2 audit paused)
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

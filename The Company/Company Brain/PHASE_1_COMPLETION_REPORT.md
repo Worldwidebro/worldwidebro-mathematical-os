@@ -375,3 +375,11 @@ Ready for deployment and integration with downstream agents (Phase 2).
 - **Master Truth Ledger:** [[REALITY|REALITY.md]]
 - **Infrastructure Runtime:** [[CLAUDE|CLAUDE.md]]
 - **Start Here:** [[STARTHERE|STARTHERE.md]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

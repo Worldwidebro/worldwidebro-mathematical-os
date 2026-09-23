@@ -32,3 +32,11 @@ Coordinates the agent personas, prompt stacks, memory architecture, ethical resp
 1. **Always-On Protocol:** Execute [[_PROMPTS/10_PRE-ACTION-AWARENESS]] prior to any modifying action.
 2. **Respect Boundaries:** Comply with [[00_RESPECT/RESPECT-BOUNDARIES]] and [[00_RESPECT/RESPECT-AGENCY]].
 3. **No Simulated Completion:** Never report "Done" without verified terminal proof (`ANTIGRAVITY.md` Rule #3).
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

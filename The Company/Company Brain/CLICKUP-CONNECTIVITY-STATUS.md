@@ -262,3 +262,11 @@ node scripts/import-prospects-to-clickup.js \
 - Sector-based campaign management
 
 **Next action**: Run ClickUp setup for LT-011 and RE-001, then build sector registry infrastructure.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

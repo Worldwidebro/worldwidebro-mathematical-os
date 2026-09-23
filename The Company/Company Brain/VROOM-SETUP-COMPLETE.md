@@ -488,3 +488,10 @@ docker-compose -f docker-compose.vroom.yml down -v
 **Team**: Claude Haiku (AI Infrastructure)  
 **Date**: 2026-09-08
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

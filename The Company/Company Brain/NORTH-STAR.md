@@ -28,3 +28,11 @@ $$\text{Infrastructure} \longrightarrow \text{Capabilities} \longrightarrow \tex
 - **Metric 1: External Cash Collected:** Greater than $0.00, growing month-over-month.
 - **Metric 2: Verified Paying Customers:** At least 1 commercial client transacting with our services.
 - **Metric 3: Marginal Cost of Intelligence:** Zero marginal inference cost for local reasoning on owned Apple Silicon hardware.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

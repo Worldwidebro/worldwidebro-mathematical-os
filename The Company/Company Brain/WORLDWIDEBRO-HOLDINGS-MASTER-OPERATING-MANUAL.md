@@ -517,3 +517,11 @@ Less: Preferred stock liquidation     ($0 if all common)
 **Authority:** Worldwidebro Group Master Trustee + Board of Directors  
 **Version:** 1.0 (2026-09-09)  
 **Next Review:** 2026-12-31 (post-Phase 1 execution)
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

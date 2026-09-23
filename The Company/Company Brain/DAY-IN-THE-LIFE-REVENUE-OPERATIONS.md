@@ -778,3 +778,10 @@ This is the machine. You press the accelerator (make calls), the system handles 
 - [ ] CON-001: Monitor Thursday quotes
 - [ ] Review capital readiness for CON-001 (likely $1M+ unlock by end of week)
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -96,3 +96,11 @@ Company Brain is the master operating system and operational control plane coord
    - OmniRoute's background stdio MCP adapter logs SQLite driver initialization warnings when accessed outside the main Next.js daemon runtime.
 3. **Submodule Disconnection:**
    - An old path `The Company/HealthRoute-Courier/.git` was referenced in git index as a broken submodule. Git commands in Company Brain should bypass fsmonitor hooks when querying index.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -161,3 +161,10 @@ For each venture:
 2. Sales coaches validate against prospect data
 3. Ready to execute by Sep 11 EOD
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

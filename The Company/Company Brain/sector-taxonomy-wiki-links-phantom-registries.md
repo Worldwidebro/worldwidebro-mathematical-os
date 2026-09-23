@@ -14,3 +14,11 @@ updated: 2026-09-12
 Audits references across the 35 sectors to identify resolved vs phantom registries:
 - **Resolved Canonical Registries:** `_REGISTRIES/CANONICAL/CAPABILITY_REGISTRY.yaml`, `_REGISTRIES/CANONICAL/ALL-789-VENTURES-COMPLETE.csv`, `_REGISTRIES/ventures-by-sector.yaml`.
 - **Phantom Registries Reconciled:** Missing YAML/JSON stubs consolidated and unified into [`UNIFIED_REGISTRY.md`](file:///Users/acebless/Documents/The%20Company/Company%20Brain/UNIFIED_REGISTRY.md).
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

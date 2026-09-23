@@ -357,3 +357,11 @@ WEEK-1-LIVE-STATUS.md
 **Effort:** ~8-10 hours total  
 **Authority:** Architecture CP-027  
 **Alignment:** ANTIGRAVITY Rule 35 (Canonical sources of truth) + Rule 2 (Systematic understanding)
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

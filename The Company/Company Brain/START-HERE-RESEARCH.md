@@ -20,3 +20,11 @@ Covers research registries, competitive landscape audits, technology evaluation,
 1. Always verify runtime facts before making assumptions.
 2. Maintain strict alignment with CP control planes.
 3. Follow the change loop: `DISCOVER -> UNDERSTAND -> VERIFY -> PLAN -> CHANGE -> TEST -> DEPLOY -> OBSERVE -> VERIFY -> DOCUMENT -> UPDATE`.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

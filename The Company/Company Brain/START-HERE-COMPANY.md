@@ -23,3 +23,11 @@ Covers corporate identity, 700+ venture catalog, holdings structure, capital all
 
 ## System Validation
 - **Connectivity Testing**: The operational integrity of the company is continuously validated via the 500-point Connectivity Matrix. See [[_TESTS/CONNECTIVITY/CONNECTIVITY_AUDIT|CONNECTIVITY_AUDIT.md]] for the health report and [`_REGISTRIES/CONNECTIVITY/CONNECTIVITY-TESTS.json`](file:///Users/acebless/Documents/The%20Company/Company%20Brain/_REGISTRIES/CONNECTIVITY/CONNECTIVITY-TESTS.json) for the registry.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

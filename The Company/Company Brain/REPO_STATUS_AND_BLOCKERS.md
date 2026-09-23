@@ -378,3 +378,10 @@ _EVAL/test_agt_022.py
 
 **Action:** Check repos right now. This decides if Path B launches Sep 12 or Sep 15.
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

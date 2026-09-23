@@ -231,3 +231,10 @@ updated: 2026-09-05
 **Registries:** [[_REGISTRIES/ventures-by-sector.yaml|Ventures]] · [[_REGISTRIES/repositories-by-sector.yaml|Owned Repos]] · [[_REGISTRIES/external-capabilities-by-sector.yaml|External Capabilities]] · [[_REGISTRIES/capabilities-by-sector.yaml|Capabilities]] · [[_REGISTRIES/control-planes-by-sector.yaml|Control Planes]]  
 **Domains:** [[23-VENTURES|Ventures]] · [[13-REPOSITORIES|Repositories]] · [[14-CAPABILITIES|Capabilities]] · [[16-AGENTS|Agents]]
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

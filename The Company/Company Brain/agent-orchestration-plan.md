@@ -168,3 +168,11 @@
 **Authority:** CP-021 (Sales Operations) + CP-006 (Agent Control Plane)  
 **Execution Model:** L1 (agents report) → L2 (agents assist execution with human oversight)  
 **Next Update:** Sep 10, 6:00 AM (Phase 1 research results delivered)
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

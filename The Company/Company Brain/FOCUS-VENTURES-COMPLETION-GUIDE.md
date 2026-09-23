@@ -339,3 +339,11 @@ Once all 5 sites are live and functioning:
 **Status**: Ready to launch 3 sites immediately, 2 sites with minor polish.  
 **Timeline**: All 5 sites operational by end of day 2026-09-08.  
 **Owner**: Venture Operations (CP-033)
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

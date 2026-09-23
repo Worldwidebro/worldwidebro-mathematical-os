@@ -158,3 +158,11 @@ From now on, when scattered/orphaned files are found:
 **Commits:** 3 (fix, refactor, summary)  
 **Files touched:** 105 (moved/created)  
 **Time to execute:** ~2 hours (including audit)
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

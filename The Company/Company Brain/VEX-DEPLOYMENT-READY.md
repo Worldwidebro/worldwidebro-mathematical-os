@@ -37,3 +37,11 @@ npm run dev
 **Result:** See real metrics from Supabase live
 
 Revenue ready: Deploy VEX wiring + wire forms + cold calls = money flowing in 24-48h
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

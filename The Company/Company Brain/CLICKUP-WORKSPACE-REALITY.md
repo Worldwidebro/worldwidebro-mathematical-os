@@ -262,3 +262,11 @@ The HealthRoute structure is **battle-tested**:
 **Total build effort: 4-6 hours of engineering work (mostly scripts)**  
 **Total population effort: 8-12 hours of research**  
 **Total timeline: 2 weeks start to finish**
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B001|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B001]]

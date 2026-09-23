@@ -167,3 +167,11 @@ The VEX Command Center is now fully responsive across all form factors:
 - **Company Brain Workspace:**
   - Local mirror updated at `23-VENTURES/Worldwidebro-Vex`.
   - Architecture formalization committed in `CAPABILITY-FABRIC-ARCHITECTURE.md`.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -451,3 +451,10 @@ Share your information above and I'll:
 3. Set up resume generation
 4. Start optimizing your applications
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

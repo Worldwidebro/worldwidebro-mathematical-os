@@ -367,3 +367,11 @@ This catalog indexes all canonical registries and control bases in the Company B
 **Core Registries:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml]] (500 control bases) | [[NAVIGATION_ALIASES|NAVIGATION_ALIASES.yaml]] (wiki links) | [[FILE_FORMAT_REGISTRY|FILE_FORMAT_REGISTRY.yaml]] (data schemas)
 
 **Reference:** [[STARTHERE|STARTHERE.md]] for complete orientation.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

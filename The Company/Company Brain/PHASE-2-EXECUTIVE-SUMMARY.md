@@ -405,3 +405,10 @@ Then you make the first 10 calls and report results by EOD Sep 14.
 **Return:** $10K+ value + revenue activated + AI workforce  
 **Authority:** Phase 2 Execution Approved (CP-027, CP-033)
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

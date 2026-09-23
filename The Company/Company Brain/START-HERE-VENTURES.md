@@ -36,3 +36,11 @@ Coordinates the incubation, sector classification, repository linkage, commercia
 1. **Commercial Reality First**: Avoid speculative entity creation. Prioritize getting paying customers to the 7 core OpCos.
 2. **Strict Sector Alignment**: Every venture belongs to exactly one primary sector (`SEC-###`).
 3. **Follow the Change Loop**: `DISCOVER -> UNDERSTAND -> VERIFY -> PLAN -> CHANGE -> TEST -> DEPLOY -> OBSERVE -> VERIFY -> DOCUMENT -> UPDATE`.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

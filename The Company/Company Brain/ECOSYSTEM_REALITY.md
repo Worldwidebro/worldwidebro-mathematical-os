@@ -348,3 +348,11 @@ COMM-001-050 → Vercel URLs exist
 - **CON-001** (Construction): $299 Site Walk, $1,500 Mobilization
 - **EC-001** (Apparel): E-commerce (Medusa + Stripe)
 - **FIN-037** (Trading): Performance fees (code exists, NOT deployed)
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B001|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B001]]

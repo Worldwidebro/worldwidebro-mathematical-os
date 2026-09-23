@@ -53,3 +53,11 @@ Each venture currently has its **own isolated Supabase project**:
 3. **Hybrid** → consolidate 3, keep OPS-001 separate
 
 **Your call?**
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

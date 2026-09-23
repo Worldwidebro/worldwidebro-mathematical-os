@@ -110,3 +110,11 @@ Every venture maintained within Company Brain adheres to the 22-domain instituti
   - `scripts/gbrain doctor`: Validates engine integrity and storage configuration.
 
 Refer to [`.agents/rules/`](file:///Users/acebless/Documents/The%20Company/Company%20Brain/.agents/rules) for granular constraints, and activate specialized skills in [`.agents/skills/`](file:///Users/acebless/Documents/The%20Company/Company%20Brain/.agents/skills) when performing specific tasks.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -51,3 +51,11 @@ graph TD
 - [[10-MEMORY/10-MEMORY|10-MEMORY]]: Layer 10 cognitive memory substrate.
 - [[_MEMORY/MEMORY-POLICY|MEMORY-POLICY]]: Epistemic retention and token compaction governance.
 - [[44-LEARNING/44-LEARNING|44-LEARNING]]: Continuous evaluation and learning loops.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]
