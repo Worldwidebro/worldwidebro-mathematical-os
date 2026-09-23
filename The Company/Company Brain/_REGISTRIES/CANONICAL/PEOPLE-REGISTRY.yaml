@@ -1,0 +1,323 @@
+---
+name: people-registry
+description: "Master registry of all people fulfilling estate/family office roles"
+version: "1.0"
+created: "2026-09-23"
+status: "SKELETON - [TO_VERIFY]"
+authority: "CP-001 (Enterprise) + CP-027 (Infrastructure)"
+
+# This registry tracks ACTUAL PEOPLE (individuals, not AI agents)
+# Each person has:
+#   - person_id (unique identifier)
+#   - name (legal name, [TO_VERIFY] if unknown)
+#   - title (primary role)
+#   - organization (employer if external)
+#   - email (contact)
+#   - phone (contact)
+#   - authority_level (what decisions they can make)
+#   - status (UNKNOWN | PENDING_VERIFICATION | VERIFIED | EXPIRED)
+#   - effective_date (when role started)
+#   - notes (any context)
+
+people:
+
+  # ===== FAMILY =====
+  - person_id: PERSON-001
+    name: "[FOUNDER NAME - TO_VERIFY]"
+    title: "Founder"
+    organization: "Worldwidebro Holdings"
+    email: "[TO_VERIFY]"
+    phone: "[TO_VERIFY]"
+    authority_level: "SOVEREIGN"
+    status: "UNKNOWN"
+    effective_date: "2000-01-01"
+    role_ids: [ROLE-FOUNDER, ROLE-PRINCIPAL]
+    notes: "Ultimate decision authority. All decisions ultimately require founder approval."
+
+  - person_id: PERSON-002
+    name: "[SPOUSE/PARTNER NAME - TO_VERIFY]"
+    title: "Spouse/Partner"
+    organization: "Worldwidebro Holdings"
+    email: "[TO_VERIFY]"
+    phone: "[TO_VERIFY]"
+    authority_level: "EXECUTIVE"
+    status: "UNKNOWN"
+    effective_date: "2000-01-01"
+    role_ids: [ROLE-CO-PRINCIPAL]
+    notes: "Co-owner of Family Trust. Estate beneficiary."
+
+  # ===== FAMILY OFFICE EXECUTIVES =====
+  - person_id: PERSON-003
+    name: "[FAMILY OFFICE CEO - TO_VERIFY]"
+    title: "Family Office CEO"
+    organization: "Worldwidebro Family Office"
+    email: "[TO_VERIFY]"
+    phone: "[TO_VERIFY]"
+    authority_level: "EXECUTIVE"
+    status: "UNKNOWN"
+    effective_date: "[TO_VERIFY]"
+    role_ids: [ROLE-FOE-CEO]
+    notes: "Day-to-day family office operations."
+
+  - person_id: PERSON-004
+    name: "[FAMILY OFFICE CFO - TO_VERIFY]"
+    title: "Family Office CFO"
+    organization: "Worldwidebro Family Office"
+    email: "[TO_VERIFY]"
+    phone: "[TO_VERIFY]"
+    authority_level: "EXECUTIVE"
+    status: "UNKNOWN"
+    effective_date: "[TO_VERIFY]"
+    role_ids: [ROLE-FOE-CFO]
+    notes: "Financial oversight. Capital allocation authority up to $[THRESHOLD]."
+
+  - person_id: PERSON-005
+    name: "[FAMILY OFFICE COO - TO_VERIFY]"
+    title: "Family Office COO"
+    organization: "Worldwidebro Family Office"
+    email: "[TO_VERIFY]"
+    phone: "[TO_VERIFY]"
+    authority_level: "EXECUTIVE"
+    status: "UNKNOWN"
+    effective_date: "[TO_VERIFY]"
+    role_ids: [ROLE-FOE-COO]
+    notes: "Operations, HR, workflow management."
+
+  - person_id: PERSON-006
+    name: "[FAMILY OFFICE CIO - TO_VERIFY]"
+    title: "Family Office CIO"
+    organization: "Worldwidebro Family Office"
+    email: "[TO_VERIFY]"
+    phone: "[TO_VERIFY]"
+    authority_level: "EXECUTIVE"
+    status: "UNKNOWN"
+    effective_date: "[TO_VERIFY]"
+    role_ids: [ROLE-FOE-CIO]
+    notes: "Technology, systems, data infrastructure."
+
+  # ===== TRUSTS & FIDUCIARIES =====
+  - person_id: PERSON-007
+    name: "[PRIMARY TRUSTEE - TO_VERIFY]"
+    title: "Trustee (Family Trust)"
+    organization: "Worldwidebro Holdings"
+    email: "[TO_VERIFY]"
+    phone: "[TO_VERIFY]"
+    authority_level: "FIDUCIARY"
+    status: "UNKNOWN"
+    effective_date: "[TO_VERIFY]"
+    role_ids: [ROLE-TRUSTEE-PRIMARY]
+    for_entity: "ENT-001"
+    notes: "Primary trustee of Family Trust. Asset management authority."
+
+  - person_id: PERSON-008
+    name: "[CO-TRUSTEE - TO_VERIFY]"
+    title: "Co-Trustee (Family Trust)"
+    organization: "Worldwidebro Holdings"
+    email: "[TO_VERIFY]"
+    phone: "[TO_VERIFY]"
+    authority_level: "FIDUCIARY"
+    status: "UNKNOWN"
+    effective_date: "[TO_VERIFY]"
+    role_ids: [ROLE-TRUSTEE-CO]
+    for_entity: "ENT-001"
+    notes: "Co-trustee with equal authority."
+
+  - person_id: PERSON-009
+    name: "[TRUST PROTECTOR - TO_VERIFY]"
+    title: "Trust Protector"
+    organization: "[EXTERNAL]"
+    email: "[TO_VERIFY]"
+    phone: "[TO_VERIFY]"
+    authority_level: "ADVISORY"
+    status: "UNKNOWN"
+    effective_date: "[TO_VERIFY]"
+    role_ids: [ROLE-TRUST-PROTECTOR]
+    for_entity: "ENT-001"
+    notes: "Independent oversight. Veto power over trustees if needed."
+
+  # ===== LEGAL & TAX ADVISORS =====
+  - person_id: PERSON-010
+    name: "[ESTATE PLANNING ATTORNEY - TO_VERIFY]"
+    title: "Estate Planning Attorney"
+    organization: "[LAW FIRM - TO_VERIFY]"
+    email: "[TO_VERIFY]"
+    phone: "[TO_VERIFY]"
+    authority_level: "ADVISORY"
+    status: "UNKNOWN"
+    effective_date: "[TO_VERIFY]"
+    role_ids: [ROLE-ATTORNEY-ESTATE]
+    notes: "Legal authority on trusts, wills, succession. Required for major estate changes."
+
+  - person_id: PERSON-011
+    name: "[CORPORATE ATTORNEY - TO_VERIFY]"
+    title: "Corporate Counsel"
+    organization: "[LAW FIRM - TO_VERIFY]"
+    email: "[TO_VERIFY]"
+    phone: "[TO_VERIFY]"
+    authority_level: "ADVISORY"
+    status: "UNKNOWN"
+    effective_date: "[TO_VERIFY]"
+    role_ids: [ROLE-ATTORNEY-CORPORATE]
+    notes: "Legal authority on contracts, entity formation, compliance."
+
+  - person_id: PERSON-012
+    name: "[TAX ADVISOR/CPA - TO_VERIFY]"
+    title: "CPA / Tax Advisor"
+    organization: "[ACCOUNTING FIRM - TO_VERIFY]"
+    email: "[TO_VERIFY]"
+    phone: "[TO_VERIFY]"
+    authority_level: "ADVISORY"
+    status: "UNKNOWN"
+    effective_date: "[TO_VERIFY]"
+    role_ids: [ROLE-TAX-ADVISOR]
+    notes: "Tax strategy, compliance, returns. Required for tax decisions."
+
+  - person_id: PERSON-013
+    name: "[EXTERNAL AUDITOR - TO_VERIFY]"
+    title: "Auditor"
+    organization: "[AUDIT FIRM - TO_VERIFY]"
+    email: "[TO_VERIFY]"
+    phone: "[TO_VERIFY]"
+    authority_level: "ADVISORY"
+    status: "UNKNOWN"
+    effective_date: "[TO_VERIFY]"
+    role_ids: [ROLE-AUDITOR]
+    notes: "Independent audit authority. Annual compliance."
+
+  # ===== FINANCIAL & INVESTMENT =====
+  - person_id: PERSON-014
+    name: "[BANKER - TO_VERIFY]"
+    title: "Private Banker"
+    organization: "[BANK - TO_VERIFY]"
+    email: "[TO_VERIFY]"
+    phone: "[TO_VERIFY]"
+    authority_level: "ADVISORY"
+    status: "UNKNOWN"
+    effective_date: "[TO_VERIFY]"
+    role_ids: [ROLE-BANKER]
+    notes: "Banking relationships, liquidity, treasury."
+
+  - person_id: PERSON-015
+    name: "[INVESTMENT MANAGER - TO_VERIFY]"
+    title: "Portfolio Manager / CIO"
+    organization: "[INVESTMENT FIRM - TO_VERIFY]"
+    email: "[TO_VERIFY]"
+    phone: "[TO_VERIFY]"
+    authority_level: "ADVISORY"
+    status: "UNKNOWN"
+    effective_date: "[TO_VERIFY]"
+    role_ids: [ROLE-INVESTMENT-MANAGER]
+    notes: "Investment decisions, portfolio allocation."
+
+  # ===== INSURANCE =====
+  - person_id: PERSON-016
+    name: "[INSURANCE BROKER - TO_VERIFY]"
+    title: "Insurance Broker"
+    organization: "[INSURANCE FIRM - TO_VERIFY]"
+    email: "[TO_VERIFY]"
+    phone: "[TO_VERIFY]"
+    authority_level: "ADVISORY"
+    status: "UNKNOWN"
+    effective_date: "[TO_VERIFY]"
+    role_ids: [ROLE-INSURANCE-BROKER]
+    notes: "Coverage authority. All major assets must be insured."
+
+  # ===== REAL ESTATE =====
+  - person_id: PERSON-017
+    name: "[REAL ESTATE ATTORNEY - TO_VERIFY]"
+    title: "Real Estate Attorney"
+    organization: "[LAW FIRM - TO_VERIFY]"
+    email: "[TO_VERIFY]"
+    phone: "[TO_VERIFY]"
+    authority_level: "ADVISORY"
+    status: "UNKNOWN"
+    effective_date: "[TO_VERIFY]"
+    role_ids: [ROLE-ATTORNEY-RE]
+    notes: "Real estate legal matters, closings."
+
+  - person_id: PERSON-018
+    name: "[PROPERTY MANAGER - TO_VERIFY]"
+    title: "Property Manager"
+    organization: "[PROPERTY MANAGEMENT FIRM - TO_VERIFY]"
+    email: "[TO_VERIFY]"
+    phone: "[TO_VERIFY]"
+    authority_level: "MANAGEMENT"
+    status: "UNKNOWN"
+    effective_date: "[TO_VERIFY]"
+    role_ids: [ROLE-PROPERTY-MANAGER]
+    notes: "Day-to-day property management, tenant relations."
+
+  # ===== OPERATING COMPANY LEADERSHIP =====
+  - person_id: PERSON-019
+    name: "[OPS-001 FOUNDER - TO_VERIFY]"
+    title: "Founder / CEO (OPS-001)"
+    organization: "OPS-001 Staffing"
+    email: "[TO_VERIFY]"
+    phone: "[TO_VERIFY]"
+    authority_level: "MANAGEMENT"
+    status: "UNKNOWN"
+    effective_date: "[TO_VERIFY]"
+    role_ids: [ROLE-VENTURE-CEO]
+    for_entity: "LT-VENTURE-001"
+    notes: "CEO of OPS-001. Reports to OpCo-014."
+
+  - person_id: PERSON-020
+    name: "[LT-005 FOUNDER - TO_VERIFY]"
+    title: "Founder / CEO (LT-005)"
+    organization: "LT-005 Medical Courier"
+    email: "[TO_VERIFY]"
+    phone: "[TO_VERIFY]"
+    authority_level: "MANAGEMENT"
+    status: "UNKNOWN"
+    effective_date: "[TO_VERIFY]"
+    role_ids: [ROLE-VENTURE-CEO]
+    for_entity: "LT-VENTURE-005"
+    notes: "CEO of LT-005. Reports to OpCo-009 (Logistics)."
+
+  - person_id: PERSON-021
+    name: "[CALLCENTER FOUNDER - TO_VERIFY]"
+    title: "Founder / CEO (CALLCENTER)"
+    organization: "CALLCENTER"
+    email: "[TO_VERIFY]"
+    phone: "[TO_VERIFY]"
+    authority_level: "MANAGEMENT"
+    status: "UNKNOWN"
+    effective_date: "[TO_VERIFY]"
+    role_ids: [ROLE-VENTURE-CEO]
+    for_entity: "LT-VENTURE-CALLCENTER"
+    notes: "CEO of CALLCENTER venture. Reports to OpCo."
+
+  # ===== PLACEHOLDER ROWS FOR SCALING =====
+  # Note: Additional people can be added as they are identified
+  # Total target: ~50-100 people across foundation + advisors + venture CEOs
+  # Use same structure for additional people
+
+control_planes:
+  - cp_id: "CP-001"
+    authority: "Enterprise - can add/update person records"
+  - cp_id: "CP-027"
+    authority: "Infrastructure - can verify people/roles"
+
+notes: |
+  CRITICAL CONTEXT:
+
+  1. This is a SKELETON registry. All entries marked [TO_VERIFY] require human confirmation.
+  2. Status codes:
+     - UNKNOWN: Not yet found/verified
+     - PENDING_VERIFICATION: Data found, awaiting confirmation
+     - VERIFIED: Confirmed with supporting documents
+     - EXPIRED: No longer in role
+
+  3. Authority levels (hierarchical):
+     - SOVEREIGN: Ultimate decision authority (Founder only)
+     - EXECUTIVE: Can make decisions within budget/scope
+     - FIDUCIARY: Legal/trust authority (trustees, protectors)
+     - ADVISORY: Provide guidance (lawyers, CPAs, advisors)
+     - MANAGEMENT: Operational decisions (CEO, managers)
+
+  4. Next step: Query venture repos to find actual people names/emails
+     - Search: README.md, CLAUDE.md, .github/CODEOWNERS
+     - Extract: Founder name, CEO name, contact info
+     - Update: person_id entries with verified data
+
+  5. Once verified: Wire to RESPONSIBILITY-MATRIX to show entity assignments
