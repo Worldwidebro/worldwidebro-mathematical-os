@@ -38,3 +38,11 @@ Governs high availability, automated and manual failover sequences, 3-2-1 backup
 | Restore | [[56-ENGINEERING/INFRASTRUCTURE/11_RESILIENCE/RESTORE|RESTORE]] | `11_RESILIENCE/RESTORE.md` | Domain specification and operational parameters |
 | Rto Rpo | [[56-ENGINEERING/INFRASTRUCTURE/11_RESILIENCE/RTO-RPO|RTO-RPO]] | `11_RESILIENCE/RTO-RPO.md` | Domain specification and operational parameters |
 | Single Points Of Failure | [[56-ENGINEERING/INFRASTRUCTURE/11_RESILIENCE/SINGLE-POINTS-OF-FAILURE|SINGLE-POINTS-OF-FAILURE]] | `11_RESILIENCE/SINGLE-POINTS-OF-FAILURE.md` | Domain specification and operational parameters |
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B66|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B66]]

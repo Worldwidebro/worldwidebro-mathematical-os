@@ -24,3 +24,11 @@ All shared physical infrastructure costs (Mac Studio, drives, fiber network) are
 - FinOps Framework: [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/FINOPS|FINOPS.md]]
 - Unit Economics: [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/UNIT-COST|UNIT-COST.md]]
 - Sector Registry: [[_REGISTRIES/ventures-by-sector.yaml|ventures-by-sector.yaml]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B66|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B66]]

@@ -20,3 +20,11 @@ Execution automatically pauses and notifies the Sovereign Operator if:
 
 - Kill Criteria: [[CAMPAIGNS/KILL-CRITERIA]]
 - Risks: [[CAMPAIGNS/RISKS]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

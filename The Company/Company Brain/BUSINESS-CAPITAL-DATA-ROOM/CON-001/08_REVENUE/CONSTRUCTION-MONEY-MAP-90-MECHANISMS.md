@@ -215,3 +215,11 @@ All calculation algorithms and mathematical models supporting these 90 mechanism
 | **Platform, SaaS & FinTech**| `calculateContractorSaaSBilling`, `calculateFinancingReferralFee`, `calculatePaymentProcessingRevenueShare` | 3 Tests (Pass) |
 | **Asset Ownership & Equity** | `calculateJointVentureWaterfall`, `calculateBuildToRentMetrics`, `calculateBRRRRRefinance`, `calculateFixAndFlipMargin` | 4 Tests (Pass) |
 | **Total Test Suite** | **12 Functional Domain Calculators** | **36/36 Unit Tests Passing (99/99 Project-Wide)** |
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

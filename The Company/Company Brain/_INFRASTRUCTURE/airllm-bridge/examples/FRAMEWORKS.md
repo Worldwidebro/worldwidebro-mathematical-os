@@ -41,3 +41,11 @@
 # 2) llama3.1:8b (Studio Ollama)
 # 3) AirLLM HF model (slow, huge)
 # 4) exo MLX coder (Studio)
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

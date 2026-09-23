@@ -217,3 +217,11 @@ Claude Code (displays response)
 - MCP wiring: [`OMNIROUTE-MCP-WIRING.md`](OMNIROUTE-MCP-WIRING.md)
 
 **Authority:** CP-027 (Infrastructure) + CP-034 (Engineering)
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

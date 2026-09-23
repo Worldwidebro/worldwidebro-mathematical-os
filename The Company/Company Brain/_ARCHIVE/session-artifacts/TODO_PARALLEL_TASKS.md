@@ -245,3 +245,11 @@ Day 9-10: Phase 8 complete (L2 generating leads)
 **Total duration:** ~10 days with parallel execution
 
 **Status:** Ready to execute | **Updated:** 2026-09-01
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

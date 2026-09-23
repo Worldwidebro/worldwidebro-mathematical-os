@@ -23,3 +23,11 @@ Dedicated operations workspace for CareerOps automated workforce dispatch and ca
 - [[OPS-001-STAFFING/cold-call-playbook|cold-call-playbook]]
 - [[OPS-001-STAFFING/job-order-intake-sop|job-order-intake-sop]]
 - [[OPS-001-STAFFING/post-placement-followup-sop|post-placement-followup-sop]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

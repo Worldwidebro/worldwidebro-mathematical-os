@@ -20,3 +20,11 @@ The creation of the **ACE Field OS**, our proprietary mobile verification platfo
 - **Four-Part Test Compliance:** Maintain technical records demonstrating the algorithmic challenges of geotagged daily logs and offline synchronization in environments with poor connectivity.
 - **Payroll Tax Offset:** Apply the federal R&D tax credit against employer payroll taxes, conserving the $140,000 working capital & payroll reserve for our lead superintendents.
 - **Documentation:** Use Git repositories (verified commit 67e7b82) and technical specifications (e.g., threat models, architecture reviews) as primary substantiation for the IRS.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -47,3 +47,11 @@ updated: 2026-09-12
 20. [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/20_DATA_ROOM/|20_DATA_ROOM]] — Master Due Diligence Checklist
 21. [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/21_REPORTS/|21_REPORTS]] — Operational Audits & Reviews
 22. [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/22_SYSTEM/|22_SYSTEM]] — ADRs & Test Verification Harnesses
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

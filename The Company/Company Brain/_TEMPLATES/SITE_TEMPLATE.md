@@ -65,3 +65,11 @@ health:
 - Master Gallery: [[_TEMPLATES/README|Templates Gallery]]
 - Canonical Sites Registry: [[_REGISTRIES/CANONICAL/SITES_REGISTRY.yaml|SITES_REGISTRY.yaml]]
 - Associated Venture Hub: [[23-VENTURES/23-VENTURES]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

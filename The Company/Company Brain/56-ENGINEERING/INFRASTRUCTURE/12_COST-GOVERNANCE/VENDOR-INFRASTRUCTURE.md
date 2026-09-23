@@ -23,3 +23,11 @@ External SaaS dependencies integrated into Company Brain runtime:
 - Vendor Registry: [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/VENDOR-REGISTRY|VENDOR-REGISTRY.md]]
 - Cloud Providers: [[56-ENGINEERING/INFRASTRUCTURE/05_CLOUD/CLOUD-PROVIDERS|CLOUD-PROVIDERS.md]]
 - Cloud Domain: [[56-ENGINEERING/INFRASTRUCTURE/05_CLOUD/CLOUD|CLOUD.md]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B66|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B66]]

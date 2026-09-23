@@ -36,3 +36,11 @@ All telemetry events fire to our local ingest gateway (`http://100.87.214.70:400
 
 - Measurement: [[CAMPAIGNS/MEASUREMENT]]
 - Event Registry: [[_REGISTRIES/CAMPAIGN-EVENT-REGISTRY.json]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -55,3 +55,11 @@ Scale to 650 Fleets / $1,720,000 Revenue in Year 2 (14.11x DSCR)
 
 ### Question 5: What Happens Without the Funding?
 Without funding, CarrierDispatch scales purely through word-of-mouth driver referrals (<15 fleets in Year 1), leaving independent truckers stranded on high-cost legacy software and missing out on the high-margin embedded factoring market.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

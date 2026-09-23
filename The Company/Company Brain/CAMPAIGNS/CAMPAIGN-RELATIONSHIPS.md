@@ -58,3 +58,11 @@ See full definitions, examples, and Cypher templates in the master file:
 - Master Graph Registry: [[_RELATIONSHIPS/CAMPAIGN-RELATIONSHIPS.md]]
 - Extended Ontology: [[_ONTOLOGY/RELATIONSHIPS_EXTENDED.yaml]]
 - Master OS: [[CAMPAIGNS/CAMPAIGN-OS]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

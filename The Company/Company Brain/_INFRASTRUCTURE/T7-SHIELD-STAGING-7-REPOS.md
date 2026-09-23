@@ -599,5 +599,12 @@ This keeps experiments + integration work off the critical LaCie path while Phas
 
 **Authority:** CP-027 (Infrastructure) + Strategic Architecture Review  
 **Next Action:** Begin cloning 7 repos to T7 Shield (in progress)  
-**Follow-up:** Sep 7 - Repository analysis and mapping begins  
+**Follow-up:** Sep 7 - Repository analysis and mapping begins
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

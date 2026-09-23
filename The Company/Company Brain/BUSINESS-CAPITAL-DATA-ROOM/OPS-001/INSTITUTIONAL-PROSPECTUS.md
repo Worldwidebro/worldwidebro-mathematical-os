@@ -467,3 +467,11 @@ If placement volume misses >40%, debt service becomes unsustainable.
 - **Sales Pipeline:** [[20-DECISIONS/OPS-001-SALES-PIPELINE|OPS-001 Sales Pipeline]]
 - **Truth Ledger:** [[REALITY|REALITY.md]]
 - **Start Here:** [[STARTHERE|STARTHERE.md]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

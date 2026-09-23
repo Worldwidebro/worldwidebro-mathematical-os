@@ -14,3 +14,11 @@ Over the past year, WorldwideBro Fleet OS LLC has proven the viability of this m
 We are requesting $500,000 over 18 months to scale the DispatchOS platform across a network of 100 independent regional carriers. This investment will enable us to track, measure, and eliminate an estimated 2 million empty miles, directly reducing greenhouse gas emissions and improving supply chain resilience.
 
 Given the DOT's commitment to optimizing freight networks and reducing transportation-related emissions, we believe there is strong alignment with our work. We welcome the opportunity to discuss how this partnership might advance our shared goals for a sustainable and efficient supply chain.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -344,3 +344,11 @@ _MCP/buzz_sync_agent.py                      # Phase 4.3 ✅
 **Git Status:** Code committed locally; push blocked by 606 MB graph file (git-lfs requires GitHub configuration)
 
 **Next Action:** Fix SSH → Deploy Buzz → Clear blockers → Execute Phases 5-7
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

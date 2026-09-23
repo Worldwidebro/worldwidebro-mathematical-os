@@ -19,3 +19,11 @@ Canonical index of all 42 controllable operational nodes and decision boundaries
 - **Machine-Readable Matrix:** [[50-MASTER-CONTROL/CONTROL_MATRIX.yaml|CONTROL_MATRIX.yaml]]
 - **Template:** [[_TEMPLATES/Control_Point|Control Point Template]]
 - **Operating Contract:** [[ANTIGRAVITY.md]] & [[AGENTS.md]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

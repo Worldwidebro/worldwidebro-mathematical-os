@@ -507,3 +507,10 @@ All queries against the Knowledge Graph require evidence provenance.
 **Effective Date:** Phase 3, Oct 1, 2026  
 **Review Date:** Nov 1, 2026
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

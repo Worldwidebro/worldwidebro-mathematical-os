@@ -687,3 +687,11 @@ Every component across the HealthRoute Email Revenue Funnel is strictly categori
 - **Data Room Prospectus:** [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/COMPILED-MASTER-PROSPECTUS|LT-005 Master Prospectus]]
 - **Sales Coach CLI:** [[scripts/LT-005-SALES-COACH]]
 - **Master Start Here:** [[STARTHERE|STARTHERE.md]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

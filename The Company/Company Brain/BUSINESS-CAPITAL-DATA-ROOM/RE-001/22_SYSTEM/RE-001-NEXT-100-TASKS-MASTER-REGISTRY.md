@@ -216,3 +216,11 @@ Distance-to-Cash (Tier 0): < 24 Hours
 
 **Generated & Maintained by:** Worldwidebro Autonomous Architecture & Engineering Node  
 **Approved by:** CP-027 System Infrastructure + CP-020 Financial Control Plane
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -90,3 +90,11 @@ Company Brain acts as both an **MCP Consumer** (calling external tools, browsers
 # Tool: company-brain -> infrastructure_status
 # Result: Tailscale mesh live (100.87.214.70), Neo4j (:7474), Qdrant (:6333), Exo (:52415) all verified.
 ```
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -309,3 +309,11 @@ Task Name: "[Company] — [Candidate Name] — [Role]"
 - **Data Room Prospectus:** [[BUSINESS-CAPITAL-DATA-ROOM/OPS-001/COMPILED-MASTER-PROSPECTUS|OPS-001 Master Prospectus]]
 - **Sales Coach CLI:** [[scripts/OPS-001-SALES-COACH]]
 - **Start Here:** [[STARTHERE|STARTHERE.md]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -52,3 +52,11 @@ Governs all local area networks, Tailscale WireGuard overlay mesh interconnects,
 | Tailscale | [[56-ENGINEERING/INFRASTRUCTURE/04_NETWORK/TAILSCALE|TAILSCALE]] | `04_NETWORK/TAILSCALE.md` | Domain specification and operational parameters |
 | Tls | [[56-ENGINEERING/INFRASTRUCTURE/04_NETWORK/TLS|TLS]] | `04_NETWORK/TLS.md` | Domain specification and operational parameters |
 | Vpn | [[56-ENGINEERING/INFRASTRUCTURE/04_NETWORK/VPN|VPN]] | `04_NETWORK/VPN.md` | Domain specification and operational parameters |
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B66|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B66]]

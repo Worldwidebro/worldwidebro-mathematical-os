@@ -19,3 +19,11 @@ Following successful deliverable handoff of `OFR-AUDIT-001`, clients are present
 
 - Funnels: [[CAMPAIGNS/FUNNELS]]
 - Expansion: [[CAMPAIGNS/EXPANSION]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

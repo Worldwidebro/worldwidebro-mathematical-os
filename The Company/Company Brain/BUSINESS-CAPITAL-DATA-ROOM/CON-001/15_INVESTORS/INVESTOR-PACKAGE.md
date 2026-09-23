@@ -33,3 +33,11 @@ target_exit: "Acquisition by ConTech / Commercial Services Conglomerate (Year 4-
 ## 3. Exit Strategy & Investor Returns
 * **Target Acquirers:** Regional commercial general contractors (e.g., DPR, Brasfield & Gorrie), national building efficiency platforms (Johnson Controls, Trane Commercial), or ConTech private equity roll-ups.
 * **Valuation Multiple:** Based on typical 8x–12x EBITDA for tech-enabled specialty services, Year 4 estimated enterprise valuation is **\$10.5M–\$14.0M**, yielding a **3.5x–4.6x MOIC** for Seed investors.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -29,3 +29,11 @@
 - [[../10-MEMORY/INDEX|10-MEMORY]] — Memory domain
 - [[../11-INDEXING/INDEX|11-INDEXING]] — Search & discovery
 - [[../12-CONTEXT/INDEX|12-CONTEXT]] — Context assembly
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

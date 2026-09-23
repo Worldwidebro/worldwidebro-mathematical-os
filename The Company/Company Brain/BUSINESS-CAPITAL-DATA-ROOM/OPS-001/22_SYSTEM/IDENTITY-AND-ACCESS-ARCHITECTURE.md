@@ -116,3 +116,11 @@ Every authentication and authorization event produces an immutable structured JS
 ```
 
 Any unauthorized cross-tenant attempt or signature verification failure immediately logs `AUTH_CROSS_TENANT_ATTEMPT` or `AUTH_TOKEN_INVALID` with zero sensitive token material leaked.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

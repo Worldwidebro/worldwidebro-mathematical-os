@@ -312,3 +312,10 @@
 - **Directory:** `90-EXECUTION/` (3 notes)
 - **Gateway Note:** [[90-EXECUTION/README]]
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

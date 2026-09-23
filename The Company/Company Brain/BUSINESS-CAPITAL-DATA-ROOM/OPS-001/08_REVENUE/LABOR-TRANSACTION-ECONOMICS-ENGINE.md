@@ -513,3 +513,11 @@ CONTRIBUTION_PROFIT = REVENUE - TOTAL_LABOR_COST - OTHER_DIRECT_COSTS
 This dual pipeline guarantees that for every transaction:
 > **Worker, Shift, Assignment, Client, Requisition, Recruiter, and Contract**
 the platform can instantly compute exact gross revenue, burdened direct labor costs, external processing allocations, and net contribution profit.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

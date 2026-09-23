@@ -22,3 +22,11 @@ Prospects do not buy software audits randomly; they buy when a catalyst forces a
 - Master OS: [[CAMPAIGNS/CAMPAIGN-OS]]
 - Outreach Strategy: [[CAMPAIGNS/AUDIENCE-STRATEGY]]
 - Automation: [[CAMPAIGNS/AUTOMATION]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

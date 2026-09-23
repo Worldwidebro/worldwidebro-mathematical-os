@@ -407,3 +407,11 @@ See [[WEEK1-EXECUTION-PLAN|20-DECISIONS/WEEK1-EXECUTION-PLAN.md]] for detailed e
 ---
 
 **Updated:** 2026-09-10 | **Version:** 4.0 (Phase 1 complete, 6 ventures live, audit system operational, Week 1 revenue execution ready)
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

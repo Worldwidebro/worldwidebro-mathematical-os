@@ -115,3 +115,11 @@ ACE Construction & Contracting LLC
 2. **Response SLAs:** Any incoming reply or drawing submission must receive a response within **15 minutes**.
 3. **Escalation Trigger:** If a GC requests a bid, immediately trigger `src/app/api/ai/estimate/route.ts` to generate preliminary takeoff bounds.
 4. **Deposit Collection:** Direct all early-stage clients to `/booking/consultation` for upfront $299 capture via Stripe.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -20,3 +20,11 @@ The development of our proprietary software, the 12-layer Labor Market Ontology,
 - **Four-Part Test:** Ensure documentation proves the software development is technological in nature, intended to create new or improved functionality, involves elimination of uncertainty, and relies on a process of experimentation.
 - **Payroll Tax Offset:** Given our operating status, utilize the federal R&D credit to offset up to $500,000 of the employer portion of payroll taxes under the PATH Act.
 - **Documentation:** Maintain Git commit logs (e.g., verified commit c4d32f1), Jira tickets, and architectural diagrams to substantiate the claim.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

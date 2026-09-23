@@ -90,3 +90,11 @@ updated: 2026-09-06
 - Master Gallery: [[_TEMPLATES/README|Templates Gallery]]
 - Master Control Matrix: [[50-MASTER-CONTROL/CONTROL_MATRIX]]
 - Canonical Control Points: [[_REGISTRIES/control-points.md]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -259,3 +259,11 @@ updated: 2026-09-06
 - **OmniRoute Router:** [[_INFRASTRUCTURE/omniroute/README|OmniRoute]]
 - **Master Evaluation Hub:** [[42-EVALUATION/README|42-EVALUATION]]
 - **Runtime Infrastructure State:** [[CLAUDE]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

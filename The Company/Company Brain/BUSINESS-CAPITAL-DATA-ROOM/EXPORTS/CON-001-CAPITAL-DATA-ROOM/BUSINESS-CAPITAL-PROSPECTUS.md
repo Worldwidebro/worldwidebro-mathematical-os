@@ -136,3 +136,11 @@ All supporting evidence is organized in the standardized Data Room folders:
 - **Grant Package:** `13_GRANTS/GRANT-PACKAGE.md` (DOE SBIR Topic 12a)
 - **Loan Package:** `14_LOANS/LOAN-PACKAGE.md` (SBA 7(a) & Surety Bond Guarantee)
 - **Investor Package:** `15_INVESTORS/INVESTOR-PACKAGE.md` (Full Investor Deck & Memo)
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

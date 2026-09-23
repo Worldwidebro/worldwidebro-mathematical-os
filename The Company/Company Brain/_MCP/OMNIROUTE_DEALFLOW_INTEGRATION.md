@@ -346,3 +346,11 @@ if (!document.getElementById('terminal-container')) {
 **Deployer:** Engineering team  
 **Monitoring:** Langfuse (optional, set up in Phase 2)  
 **Runbook:** See [[OmniRoute Deployment Runbook]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

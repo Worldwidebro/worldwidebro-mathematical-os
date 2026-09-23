@@ -45,3 +45,11 @@ Acute Fear: Codebase IP leaking to OpenAI/Anthropic or being used to train third
 - ICP: [[CAMPAIGNS/ICP]]
 - Objections Handling: [[CAMPAIGNS/OBJECTION-HANDLING]]
 - Commercial Outreach: [[COMMERCIAL/OUTREACH/OUTREACH-001-TARGET-PROSPECTS]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

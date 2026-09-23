@@ -24,3 +24,11 @@ updated: 2026-09-06
 - Decisions Domain: [[20-DECISIONS/20-DECISIONS|20-DECISIONS]]
 - Directives Hub: [[DIRECTIVES]]
 - System Principles: [[56-ENGINEERING/INFRASTRUCTURE/01_CORE/INFRASTRUCTURE-PRINCIPLES|INFRASTRUCTURE-PRINCIPLES.md]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B66|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B66]]

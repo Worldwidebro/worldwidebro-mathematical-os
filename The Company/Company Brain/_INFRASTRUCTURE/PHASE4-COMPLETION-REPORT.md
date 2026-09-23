@@ -524,3 +524,11 @@ The Buzz collaboration layer will enable human-AI agent collaboration with full 
 **Status:** ✅ COMPLETE — Ready for Deployment  
 **Effort Expended:** 4 hours (implementation + documentation)  
 **Estimated Deployment Time:** 7-23 hours (depending on phase)
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -154,3 +154,11 @@ python3 -c "from fractal.impl.postgres_mcp_client import get_postgres_client; \
 - **Master Control Hub:** [[50-MASTER-CONTROL/50-MASTER-CONTROL|50-MASTER-CONTROL]]
 - **Runtime State:** [[CLAUDE]]
 - **Capabilities Matrix:** [[14-CAPABILITIES/CAPABILITIES_INDEX]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -350,3 +350,11 @@ Ready for Week 1 revenue execution.
 **Status:** ✅ COMPLETE  
 **Time Spent:** ~20 min (planning/documentation)  
 **Timeline:** Sep 16 (Production deployment)
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

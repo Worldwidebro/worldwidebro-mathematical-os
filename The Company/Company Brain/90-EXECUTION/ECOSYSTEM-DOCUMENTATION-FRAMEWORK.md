@@ -217,3 +217,10 @@ grep "operating\|validating" 90-EXECUTION/UNIT-3-ventures-classified.csv
 **Goal:** Have 20-30 Tier-1 READMEs done by end of week.
 **Outcome:** Full visibility into the operating venture ecosystem.
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

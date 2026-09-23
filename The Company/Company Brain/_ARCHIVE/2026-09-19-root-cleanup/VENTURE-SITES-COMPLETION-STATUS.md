@@ -241,3 +241,11 @@ cd repos/lt-005-medical-courier-dispatch && vercel --prod
 **Summary**: All 5 focus venture sites have complete code, Stripe integration, and Supabase connectivity. 3 are deployed and live. 2 are built and ready for final deployment. All are ready for revenue production.
 
 **Status**: 🟢 **GO-LIVE READY**
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

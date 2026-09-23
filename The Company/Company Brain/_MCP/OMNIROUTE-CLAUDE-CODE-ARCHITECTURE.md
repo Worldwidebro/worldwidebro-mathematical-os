@@ -365,3 +365,11 @@ echo $ANTHROPIC_BASE_URL  # Should print: http://100.87.214.70:20128
 - **Status:** Ready for execution
 
 **Next:** Run setup-claude-omniroute.sh on Mac Studio
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

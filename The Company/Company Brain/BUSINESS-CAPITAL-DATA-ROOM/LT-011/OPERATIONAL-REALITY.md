@@ -61,3 +61,10 @@
 
 **Last Audited:** 2026-09-12 | **Ground Truth Authority:** CP-027 / CP-032
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B001|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B001]]

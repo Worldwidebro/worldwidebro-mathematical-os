@@ -37,3 +37,11 @@ Governs the core infrastructure subsystem overview systems supporting Company Br
 | Infrastructure Standards | [[56-ENGINEERING/INFRASTRUCTURE/01_CORE/INFRASTRUCTURE-STANDARDS|INFRASTRUCTURE-STANDARDS]] | `01_CORE/INFRASTRUCTURE-STANDARDS.md` | Domain specification and operational parameters |
 | Infrastructure Target State | [[56-ENGINEERING/INFRASTRUCTURE/01_CORE/INFRASTRUCTURE-TARGET-STATE|INFRASTRUCTURE-TARGET-STATE]] | `01_CORE/INFRASTRUCTURE-TARGET-STATE.md` | Domain specification and operational parameters |
 | Infrastructure Topology | [[56-ENGINEERING/INFRASTRUCTURE/01_CORE/INFRASTRUCTURE-TOPOLOGY|INFRASTRUCTURE-TOPOLOGY]] | `01_CORE/INFRASTRUCTURE-TOPOLOGY.md` | Domain specification and operational parameters |
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B66|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B66]]

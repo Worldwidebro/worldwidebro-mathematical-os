@@ -20,3 +20,11 @@ All container deployments and model switches must pass HTTP 200 healthchecks and
 - Infrastructure Testing: [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/INFRASTRUCTURE-TESTING|INFRASTRUCTURE-TESTING.md]]
 - Deployment Domain: [[56-ENGINEERING/INFRASTRUCTURE/08_DEPLOYMENT/DEPLOYMENT|DEPLOYMENT.md]]
 - Universal Operating Contract: [[ANTIGRAVITY]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B66|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B66]]

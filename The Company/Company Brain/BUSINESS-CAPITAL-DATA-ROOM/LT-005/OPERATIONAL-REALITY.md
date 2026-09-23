@@ -83,3 +83,11 @@
 - **Sales Pipeline:** [[20-DECISIONS/LT-005-SALES-PIPELINE|LT-005 Sales Pipeline]]
 - **Truth Ledger:** [[REALITY|REALITY.md]]
 - **Start Here:** [[STARTHERE|STARTHERE.md]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B001|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B001]]

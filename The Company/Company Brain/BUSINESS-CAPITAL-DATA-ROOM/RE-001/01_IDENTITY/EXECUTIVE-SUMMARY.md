@@ -9,3 +9,11 @@ WorldwideBro Holdings combines public tax/lien distress data crawling with in-ho
 - Year 1 Gross Billings: $278,880
 - Year 3 Projected Gross Billings: $2,044,280
 - Debt Service Coverage Ratio (Year 1 DSCR): **1.99x**
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

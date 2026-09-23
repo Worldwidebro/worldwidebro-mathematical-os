@@ -228,3 +228,10 @@ def search_capabilities(domain=None, fit_gte=80):
 **Timeline:** Sep 16 (Phase 1A deployment)  
 **Next:** Unit 10 — Implement search_capabilities() (Sep 17)
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

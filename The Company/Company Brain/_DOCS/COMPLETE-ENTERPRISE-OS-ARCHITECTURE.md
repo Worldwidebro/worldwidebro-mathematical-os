@@ -294,3 +294,11 @@ That's the north star.
 - **Master Operating Contract:** [[ANTIGRAVITY|ANTIGRAVITY.md]]
 - **Master Truth Ledger:** [[REALITY|REALITY.md]]
 - **Start Here:** [[STARTHERE|STARTHERE.md]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -203,3 +203,11 @@ If stuck:
 **Status:** Ready to configure  
 **Time to full operation:** ~15-20 minutes (credential entry + testing)  
 **Next step:** Open http://100.87.214.70:20128/dashboard and login
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

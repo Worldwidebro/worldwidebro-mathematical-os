@@ -21,3 +21,11 @@ The Sovereign Operator and Executive Leadership maintain strict fiduciary accoun
 - Governance Charter: [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/INFRASTRUCTURE-GOVERNANCE|INFRASTRUCTURE-GOVERNANCE.md]]
 - Ownership Matrix: [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/INFRASTRUCTURE-OWNERSHIP|INFRASTRUCTURE-OWNERSHIP.md]]
 - Operating Directives: [[DIRECTIVES]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B66|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B66]]

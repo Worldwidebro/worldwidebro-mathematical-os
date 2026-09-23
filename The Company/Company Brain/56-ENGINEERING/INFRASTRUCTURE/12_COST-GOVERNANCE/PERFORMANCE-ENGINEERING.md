@@ -21,3 +21,11 @@ updated: 2026-09-06
 - Database Optimizer: [[.agents/agents/engineering-database-optimizer|Database Optimizer Subagent]]
 - Load Testing: [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/LOAD-TESTING|LOAD-TESTING.md]]
 - Hardware Registry: [LLM Hardware Registry](file:///Users/acebless/Documents/The%20Company/Company%20Brain/_REGISTRIES/LLM_HARDWARE_COMPATIBILITY_REGISTRY.yaml)
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B66|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B66]]

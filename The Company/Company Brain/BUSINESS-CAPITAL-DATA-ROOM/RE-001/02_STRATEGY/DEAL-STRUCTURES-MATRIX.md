@@ -108,3 +108,11 @@ Low Risk / Low Return  ───────────────────
 - **Master Capital Prospectus**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/BUSINESS-CAPITAL-PROSPECTUS.md|BUSINESS-CAPITAL-PROSPECTUS.md]]
 - **Master Venture Specification**: [[23-VENTURES/RE-001|RE-001: WorldwideBro Holdings]]
 - **Sector Master**: [[SECTORS/SEC-020-real-estate-property|SEC-020: Real Estate & Property]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

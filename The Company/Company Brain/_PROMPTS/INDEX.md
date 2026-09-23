@@ -20,3 +20,11 @@ See folder contents: [`_PROMPTS/`](./)
 
 - [[..|Infrastructure Folders]]
 - [[../STARTHERE|Master Navigation]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

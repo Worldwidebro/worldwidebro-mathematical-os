@@ -277,3 +277,11 @@ Send follow-up email → Schedule trial
 **Status:** 🟡 IN PROGRESS (implementation complete, testing next)  
 **Estimated Time Remaining:** 10 min (testing + commit)  
 **Timeline:** Sep 18 (Phase 1A)
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -24,3 +24,11 @@ Canonical catalog of AST verification reports, test suite outputs, and capabilit
 - **Execution Tracking Standard:** [[_PIPELINES/execution/EXECUTION_TRACKING|Execution Tracking]]
 - **Infrastructure Testing:** [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/INFRASTRUCTURE-TESTING|Testing Framework]]
 - **Master Registries Portal:** [[_REGISTRIES/README|Master Registries]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

@@ -44,3 +44,11 @@ Estimated rate range: Prime + 3.00%
 Next steps:          Verify SaaS ARR, review API platform integration costs, obtain owner PFS.
 
 ⚠️ DISCLAIMER: This pre-qualification is not a loan commitment or approval. Final approval is subject to full underwriting review, verification of all income, assets, and credit, and satisfactory appraisal.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

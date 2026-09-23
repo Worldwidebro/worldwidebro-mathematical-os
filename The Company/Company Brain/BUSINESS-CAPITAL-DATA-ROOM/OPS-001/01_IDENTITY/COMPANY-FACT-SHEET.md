@@ -12,3 +12,11 @@
 | Senior Debt Ask | $500,000 SBA 7(a) 10-Yr + $350,000 Payroll Factoring Line |
 | Grant Allocation Ask | $350,000 |
 | Target Equity Valuation | $4,500,000 |
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -242,3 +242,11 @@ ARCHITECTURE.md (Tripartite System)
 **Everything is connected. The system is ready. Restart Claude Code, test the MCP, fix LiteLLM, then execute.**
 
 **4 hours to full operational company brain generating revenue.**
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

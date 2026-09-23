@@ -201,3 +201,11 @@ Wire the Orchestrator class to compose workflows:
 **Status:** 🟡 IN PROGRESS (wiring complete, testing next)  
 **Estimated Time Remaining:** 15 min (testing + commit)  
 **Timeline:** Sep 17 (Phase 1A)
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

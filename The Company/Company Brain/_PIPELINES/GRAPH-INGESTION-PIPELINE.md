@@ -638,3 +638,10 @@ MATCH ()-[r]->() RETURN count(r) as total_edges;
 - Wiki Guide: [[_DOCS/TYPED-WIKILINKS-GUIDE.md]]
 - Logic Layers: [[_REGISTRIES/CANONICAL/LOGIC_LAYERS_REGISTRY.yaml]]
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

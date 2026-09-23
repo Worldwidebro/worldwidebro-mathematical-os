@@ -37,3 +37,11 @@ Governs all computational resources across physical Apple Silicon hosts, virtual
 | Servers | [[56-ENGINEERING/INFRASTRUCTURE/02_COMPUTE/SERVERS|SERVERS]] | `02_COMPUTE/SERVERS.md` | Domain specification and operational parameters |
 | Virtual Machines | [[56-ENGINEERING/INFRASTRUCTURE/02_COMPUTE/VIRTUAL-MACHINES|VIRTUAL-MACHINES]] | `02_COMPUTE/VIRTUAL-MACHINES.md` | Domain specification and operational parameters |
 | Workstations | [[56-ENGINEERING/INFRASTRUCTURE/02_COMPUTE/WORKSTATIONS|WORKSTATIONS]] | `02_COMPUTE/WORKSTATIONS.md` | Domain specification and operational parameters |
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B66|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B66]]

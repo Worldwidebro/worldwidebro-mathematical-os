@@ -23,3 +23,11 @@ We never price based on hours worked. We price based on the value created.
 - Master OS: [[CAMPAIGNS/CAMPAIGN-OS]]
 - Guarantees: [[CAMPAIGNS/GUARANTEES]]
 - Unit Economics: [[CAMPAIGNS/UNIT-ECONOMICS]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

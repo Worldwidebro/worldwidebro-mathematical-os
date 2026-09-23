@@ -160,3 +160,11 @@ All in `/private/tmp/claude-501/.../scratchpad/` for review.
 ⚠️ **LiteLLM:** Docker mount issue (low priority, workaround active)
 
 **System is ready for revenue activation and business execution.**
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

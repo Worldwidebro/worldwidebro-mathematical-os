@@ -106,3 +106,11 @@ CAM-001 (Campaign)
 - ID Registry: [[_REGISTRIES/ID_REGISTRY.yaml]]
 - Hierarchy: [[CAMPAIGNS/CAMPAIGN-HIERARCHY]]
 - Classification: [[CAMPAIGNS/CAMPAIGN-CLASSIFICATION]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

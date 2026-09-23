@@ -17,3 +17,11 @@ LT-011 acts as the horizontal infrastructure layer, monetizing through multiple 
 **Gross Revenue → COGS → Gross Profit → OpEx → EBITDA → Cash Flow**
 *   **COGS:** Server/infrastructure (Vercel, OSRM), Maps/GPS API, SMS/Voice (Twilio), Payment processing (Stripe).
 *   **OpEx:** Engineering, Sales, Support, Administration.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

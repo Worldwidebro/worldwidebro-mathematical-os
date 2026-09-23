@@ -4,3 +4,11 @@
 
 Codebase: `Worldwidebro/re-001-worldwidebro-holdings` (Commit: `a761e80`)
 Surface: https://re-001-worldwidebro-holdings.vercel.app
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -36,3 +36,11 @@ A memory node is flagged for decay or supersession when:
 - **Supersede**: Point pointer to replacement node (`m_old -[:SUPERSEDED_BY]-> m_new`). Exclude `m_old` from default retrieval.
 - **Archive**: Remove from Qdrant vector index; serialize into historical JSONL cold archive on `/Volumes/LaCie/archives/`.
 - **Hard Purge**: Immediate deletion reserved exclusively for accidental ingestion of secrets, credentials, or invalid mock data.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -64,3 +64,11 @@ Coding Agent (Antigravity / Claude Code)
 1. **Query on Demand:** When an agent encounters an unfamiliar library, esoteric protocol, or niche platform not covered in `.agents/skills/`, it should invoke `search_skills` via AAS Core MCP rather than guessing.
 2. **No Persistent Bloat:** Agents read instructions in memory for the duration of the task. They do not write thousands of markdown files to disk unless explicitly approved.
 3. **Artifact Plan Generation:** When building complex new venture stacks, agents can call `compose_stack` to output an immutable `aas-stack.json` file inside the venture repo.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

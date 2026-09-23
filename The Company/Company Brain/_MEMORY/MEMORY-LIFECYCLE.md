@@ -57,3 +57,11 @@ Every piece of information known to Company Brain progresses through an 8-state 
 - **Guard (Proposed → Validated)**: Must possess valid `source_id`, `created_at`, and `confidence >= 0.70`.
 - **Guard (Active → Stale)**: Automatic transition when `current_time - last_verified_at > validity_ttl`.
 - **Guard (Any → Conflict)**: Triggered immediately by contradiction detection algorithms when semantic similarity is high but assertion values are contradictory.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -104,3 +104,11 @@ Vercel Dashboard → Projects → [Project] → Analytics
 **Last Updated:** Sep 9, 2026 (Vercel CLI verified)  
 **Authority:** Infrastructure CP-027  
 **Next Update:** After each new deployment
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

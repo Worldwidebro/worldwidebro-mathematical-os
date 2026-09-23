@@ -22,3 +22,11 @@ updated: 2026-09-06
 ## 2. Connected Documents
 - Master Infrastructure: [[56-ENGINEERING/INFRASTRUCTURE/INFRASTRUCTURE|INFRASTRUCTURE.md]]
 - Operations Control Plane: [[29-OPERATIONS/29-OPERATIONS|29-OPERATIONS]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B66|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B66]]

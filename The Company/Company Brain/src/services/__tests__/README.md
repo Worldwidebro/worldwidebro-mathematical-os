@@ -313,3 +313,11 @@ After tests pass:
 **Created:** September 18, 2026  
 **Status:** Phase 2 Acceptance Tests  
 **Maintained By:** Claude Haiku 4.5
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

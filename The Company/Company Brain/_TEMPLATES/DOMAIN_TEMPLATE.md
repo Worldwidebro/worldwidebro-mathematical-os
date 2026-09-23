@@ -56,3 +56,11 @@ relationships:
 - Master Gallery: [[_TEMPLATES/README|Templates Gallery]]
 - Canonical Domains Registry: `_REGISTRIES/domain_registry.json`
 - Associated Venture Hub: [[23-VENTURES/23-VENTURES]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -244,3 +244,11 @@ $$\text{Market} \rightarrow \text{Lead} \rightarrow \text{Marketing} \rightarrow
 14. **Capital:** Net profits transferred to `WorldwideBro Holdings LLC` (`ENT-031`).
 15. **Investment:** Capital allocated: 50% reserved for `RE-001` commercial warehouse acquisition, 50% reinvested into `OPS-001` driver staffing.
 16. **New Venture:** Operating model replicated into adjacent market or vertical.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

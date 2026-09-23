@@ -20,3 +20,11 @@ Houses Mermaid diagrams mapping Mac Studio hardware, Tailscale mesh CIDR, Docker
 - Network Topology: [[56-ENGINEERING/INFRASTRUCTURE/04_NETWORK/NETWORK-TOPOLOGY|NETWORK-TOPOLOGY.md]]
 - Core Topology: [[56-ENGINEERING/INFRASTRUCTURE/01_CORE/INFRASTRUCTURE-TOPOLOGY|INFRASTRUCTURE-TOPOLOGY.md]]
 - Documentation Standards: [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/INFRASTRUCTURE-DOCUMENTATION|INFRASTRUCTURE-DOCUMENTATION.md]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B66|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B66]]

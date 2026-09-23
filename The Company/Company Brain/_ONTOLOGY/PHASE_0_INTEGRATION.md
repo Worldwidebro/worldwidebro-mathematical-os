@@ -303,3 +303,11 @@ Graduate L1 loop to L2 (assisted execution) after verification.
 - **Master Control Hub:** [[50-MASTER-CONTROL/50-MASTER-CONTROL|50-MASTER-CONTROL]]
 - **Seven Operational Planes:** [[50-MASTER-CONTROL/SEVEN_PLANES|SEVEN_PLANES.md]]
 - **Cognitive Pipelines:** [[_PIPELINES/README|Pipelines Hub]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -66,3 +66,11 @@ The 903 starred repositories (31M+ stars) provide off-the-shelf capabilities tha
 - Owned Repositories: [[_REGISTRIES/OWNED_REPOSITORIES_INVENTORY.md]]
 - Starred Repositories: [[_REGISTRIES/RECONCILIATION_2026_09_01/CAPABILITY_DEPENDENCY_MAP.md]]
 - Tools Registry: [[_REGISTRIES/ID_REGISTRY.yaml]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

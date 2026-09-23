@@ -418,3 +418,10 @@ All components are functional, tested, and ready to ingest the 904-repo universe
 **Generated:** 2026-09-08  
 **Author:** Company Brain Infrastructure (Phase 2)
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

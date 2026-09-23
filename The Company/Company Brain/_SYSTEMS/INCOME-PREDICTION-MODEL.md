@@ -501,3 +501,10 @@ Capital Allocation Recommendation:
 
 **Status:** READY TO TRAIN | **Start:** Week 2 ([[TRADING-INTEGRATION-PLAN]]) | **Owned by:** iza-os-finance-advisor-bot
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

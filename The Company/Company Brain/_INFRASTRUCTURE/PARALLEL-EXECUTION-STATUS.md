@@ -256,3 +256,10 @@ Target: Dec 31 (Full platform operational)
 **Initiated By:** /gsd-fast parallel execution  
 **Authority:** CP-027 (Infrastructure Control Plane)
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

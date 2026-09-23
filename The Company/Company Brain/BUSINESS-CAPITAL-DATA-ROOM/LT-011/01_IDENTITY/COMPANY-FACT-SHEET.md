@@ -12,3 +12,11 @@
 | Senior Debt Ask | $250,000 SBA Express + $250,000 Factoring Revolver |
 | Grant Allocation Ask | $175,000 |
 | Target Equity Valuation | $5,000,000 |
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

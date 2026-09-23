@@ -29,3 +29,11 @@ When OpenAI or Anthropic suffers an outage or throttles API quotas during a spri
 - Master OS: [[CAMPAIGNS/CAMPAIGN-OS]]
 - Jobs-To-Be-Done: [[CAMPAIGNS/JOBS-TO-BE-DONE]]
 - Core Messaging: [[CAMPAIGNS/CORE-MESSAGE]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

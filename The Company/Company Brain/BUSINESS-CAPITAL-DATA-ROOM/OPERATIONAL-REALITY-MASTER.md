@@ -167,3 +167,10 @@ See the following for deep-dive blockers, timelines, and next actions:
 **Next Review:** 2026-09-12 (after first week of execution)  
 **Governed by:** [[REALITY.md]] | [[ECONOMIC-REALITY.md]] | [[ANTIGRAVITY.md]]
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B001|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B001]]

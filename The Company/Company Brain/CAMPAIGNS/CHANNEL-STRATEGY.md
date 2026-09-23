@@ -22,3 +22,11 @@ For an enterprise diagnostic priced at **$7,500**, broad programmatic display ad
 - Master OS: [[CAMPAIGNS/CAMPAIGN-OS]]
 - Channel Mix: [[CAMPAIGNS/CHANNEL-MIX]]
 - Channels Master: [[CAMPAIGNS/CHANNELS]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

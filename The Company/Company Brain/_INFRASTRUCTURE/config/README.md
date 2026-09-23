@@ -18,3 +18,11 @@ Canonical management of `.env.local` bindings, Tailscale node variables, and dae
 - **Infrastructure Registry:** [[_REGISTRIES/INFRASTRUCTURE_REGISTRY.yaml]]
 - **Runtime Environment:** [[CLAUDE.md]]
 - **Master Control:** [[50-MASTER-CONTROL/50-MASTER-CONTROL|50-MASTER-CONTROL]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

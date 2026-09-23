@@ -21,3 +21,11 @@ updated: 2026-09-06
 - Legal Domain: [[31-LEGAL/31-LEGAL|31-LEGAL]]
 - Vendor Registry: [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/VENDOR-REGISTRY|VENDOR-REGISTRY.md]]
 - Service Level Agreements: [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/SLAS|SLAS.md]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B66|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B66]]

@@ -271,3 +271,11 @@ Use this framework when ChatGPT analyzes your ventures to ensure recommendations
 **File ready for ChatGPT:** `/private/tmp/claude-501/-Users-acebless-Documents-The-Company-Company-Brain/85c12b01-8717-4e3a-b504-b57ad1ba78af/scratchpad/789-VENTURES-WITH-GITHUB.csv`
 
 **Your move:** Open ChatGPT, paste one of the analysis prompts above, and let it help you understand the portfolio structure.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

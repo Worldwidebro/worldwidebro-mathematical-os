@@ -31,3 +31,11 @@ We do not blast cold spray-and-pray emails. We deploy **Signal-Based Targeting**
 - Master OS: [[CAMPAIGNS/CAMPAIGN-OS]]
 - Audiences Master: [[CAMPAIGNS/AUDIENCES]]
 - Outbound Channel: [[CAMPAIGNS/CHANNELS/OUTBOUND]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

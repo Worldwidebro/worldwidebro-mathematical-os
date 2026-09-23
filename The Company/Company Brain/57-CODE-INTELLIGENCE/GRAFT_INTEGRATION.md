@@ -87,3 +87,11 @@ When [[FRACTAL_INTEGRATION]] agent spawns for a repository:
 ---
 
 **See also:** [[EXECUTION_STACK]] | [[57-CODE-INTELLIGENCE]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B67|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B67]]

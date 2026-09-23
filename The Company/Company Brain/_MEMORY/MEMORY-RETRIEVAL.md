@@ -43,3 +43,11 @@ Where $T$ is the current task, and $w_i$ represents the normalized weight of sig
 1. **Max Tokens Allocated for Memory**: $\le 15\%$ of total context window (typically 4,000–8,000 tokens maximum).
 2. **Top-K Limit**: Maximum 5 semantic facts, 3 episodic excerpts, and 2 procedural runbooks per prompt.
 3. **Graph Radius**: Maximum 2 hops from target entities in Neo4j during associative retrieval.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

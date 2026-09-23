@@ -217,3 +217,11 @@ curl -s http://mac-studio.tailba9617.ts.net:20128/api/v1/models
 **Last Updated:** 2026-09-09  
 **OmniRoute Version:** diegosouzapw/omniroute:latest  
 **Container Status:** ✅ Running
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

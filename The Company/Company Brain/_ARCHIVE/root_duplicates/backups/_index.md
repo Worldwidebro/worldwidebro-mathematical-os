@@ -18,3 +18,11 @@ updated: 2026-08-06T05:46:10Z
 [[backups/2026-06-05-ventures-backup.csv|2026-06-05-ventures-backup.csv]]: ...
 
 ***
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

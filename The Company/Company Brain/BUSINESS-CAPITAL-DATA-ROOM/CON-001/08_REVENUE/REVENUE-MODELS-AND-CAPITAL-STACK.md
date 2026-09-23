@@ -131,3 +131,11 @@ All 24 payment models and calculation formulas have been implemented in producti
 - **TypeScript Schemas:** [`src/types/payment-business-logic.ts`](file:///Users/acebless/Documents/The%20Company/Company%20Brain/repos/con-001-ace-construction/src/types/payment-business-logic.ts)
 - **Unit Test Coverage:** [`src/__tests__/payment-business-logic.test.ts`](file:///Users/acebless/Documents/The%20Company/Company%20Brain/repos/con-001-ace-construction/src/__tests__/payment-business-logic.test.ts) (**23/23 tests passing**, 86/86 project-wide).
 - **Next.js Production Build:** 127 routes compiled with 0 errors.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

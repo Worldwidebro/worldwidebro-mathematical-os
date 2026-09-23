@@ -162,3 +162,10 @@ For now: **SaaS is fast and works perfectly for the 5-venture pilot.**
 - Docs: https://docs.openclaw.io
 - Email: support@openclaw.io
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

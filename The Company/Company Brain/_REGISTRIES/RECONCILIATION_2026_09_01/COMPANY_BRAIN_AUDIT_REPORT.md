@@ -197,3 +197,11 @@ cat /tmp/COMPANY_BRAIN_NEO4J_IMPORT.cypher | cypher-shell -u neo4j -p <password>
 - **Ventures Portfolio:** [[23-VENTURES/23-VENTURES|23-VENTURES]]
 - **Sector Index:** [[SECTOR_INDEX]]
 - **Master Control Hub:** [[50-MASTER-CONTROL/50-MASTER-CONTROL|50-MASTER-CONTROL]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -121,3 +121,11 @@ All entities in `SHADOW_REGISTRY.yaml` map directly to RDF triples via `SCHEMA.y
 - **Neo4j Graph Architecture:** [[09-KNOWLEDGE/Neo4j|Neo4j]]
 - **45 Ontologies Master:** [[07-ONTOLOGY/45-ONTOLOGIES-MASTER|07-ONTOLOGY]]
 - **Master Control Matrix:** [[50-MASTER-CONTROL/CONTROL_MATRIX|Control Matrix]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

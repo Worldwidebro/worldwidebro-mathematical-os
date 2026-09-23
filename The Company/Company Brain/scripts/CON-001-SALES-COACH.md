@@ -136,3 +136,11 @@
 - **Consultation Conversion Rate Target:** 70%+ GCs say "yes" to on-site audit
 - **Report Attachment Rate:** 60%+ agree to $299 report after on-site findings
 - **Engagement Rate:** 40%+ GCs schedule software pilot within 30 days of report
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -53,3 +53,11 @@ A campaign is considered **DONE** only when:
 - Master System: [[CAMPAIGNS/CAMPAIGN-OS]]
 - QA Standard: [[CAMPAIGNS/QA]]
 - Pre-Launch Checklist: [[CAMPAIGNS/PRE-LAUNCH]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

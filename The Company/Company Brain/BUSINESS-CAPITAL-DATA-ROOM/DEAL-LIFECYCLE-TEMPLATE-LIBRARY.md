@@ -1063,3 +1063,11 @@ Each has distinct document sequences, approval gates, and contingency structures
 5. Update this file with your deal-specific documents as you progress
 
 **Authority:** CP-032 (Business Operations Control Plane) + Venture Finance Domain (Domain 20)
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -194,3 +194,11 @@ All success criteria met or exceeded. Router is:
 **Commit:** `af3b8c2d7`
 
 Week 2 Dispatch Router Build: ✅ COMPLETE
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

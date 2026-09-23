@@ -46,3 +46,11 @@ See [[OMNIROUTE-MODELS-ROUTING]] for model routing architecture using these regi
 - [[_REGISTRIES/network_registry.json]] — Tailscale mesh subnet & DNS mappings.
 - [[_REGISTRIES/database_registry.json]] — Port mappings, volumes, and connection URIs.
 - [[_REGISTRIES/storage_registry.json]] — LaCie, T7 Shield, and internal disk budgets.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

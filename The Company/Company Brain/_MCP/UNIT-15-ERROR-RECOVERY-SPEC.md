@@ -208,3 +208,11 @@ Future error recovery strategies:
 **Status:** ✅ COMPLETE  
 **Time Spent:** ~15 min  
 **Timeline:** Sep 19 (Phase 1A)
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

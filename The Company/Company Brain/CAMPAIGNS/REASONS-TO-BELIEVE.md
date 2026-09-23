@@ -20,3 +20,11 @@
 - Master OS: [[CAMPAIGNS/CAMPAIGN-OS]]
 - Evidence Standards: [[_ONTOLOGY/EVIDENCE_STANDARDS.md]]
 - Claims: [[CAMPAIGNS/CLAIMS]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

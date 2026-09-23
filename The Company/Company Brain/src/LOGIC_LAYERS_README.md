@@ -198,3 +198,11 @@ To add a new logic layer:
 Last updated: 2026-09-18
 Status: Production-ready
 Version: 1.0
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

@@ -21,3 +21,11 @@ Prospects who attend discovery calls but do not purchase immediately are enrolle
 
 - Funnels: [[CAMPAIGNS/FUNNELS]]
 - Email Channel: [[CAMPAIGNS/CHANNELS/EMAIL]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

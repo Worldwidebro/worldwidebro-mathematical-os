@@ -28,3 +28,11 @@ updated: 2026-09-06
 - Risk Overview: [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/INFRASTRUCTURE-RISKS|INFRASTRUCTURE-RISKS.md]]
 - Single Points of Failure: [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/SINGLE-POINTS-OF-FAILURE|SINGLE-POINTS-OF-FAILURE.md]]
 - Risk Control Plane: [[34-RISK/34-RISK|34-RISK]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B66|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B66]]

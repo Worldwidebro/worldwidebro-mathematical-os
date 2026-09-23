@@ -486,3 +486,11 @@ buzz_publish_event(..., secret_key=os.getenv('BUZZ_AGT013_KEY'))
 **Authority:** CP-028 (Collaboration Control Plane) + CP-027 (Infrastructure)  
 **Status:** 🟡 Ready for Phase 4.1 deployment  
 **Last Updated:** 2026-09-08
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

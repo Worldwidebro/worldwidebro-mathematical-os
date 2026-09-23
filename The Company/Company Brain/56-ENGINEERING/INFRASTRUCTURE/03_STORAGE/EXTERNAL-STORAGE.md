@@ -23,3 +23,11 @@ updated: 2026-09-06
 - [[56-ENGINEERING/INFRASTRUCTURE/06_DATA/DATABASES|DATABASES]]
 - [[56-ENGINEERING/INFRASTRUCTURE/11_RESILIENCE/BACKUP-ARCHITECTURE|BACKUP-ARCHITECTURE]]
 - [[_REGISTRIES/storage_registry.json|storage_registry.json]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B66|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B66]]

@@ -44,3 +44,11 @@ All individual channel runbooks are maintained in [`CAMPAIGNS/CHANNELS/`](file:/
 - Channel Strategy: [[CAMPAIGNS/CHANNEL-STRATEGY]]
 - Channel Mix: [[CAMPAIGNS/CHANNEL-MIX]]
 - Touchpoints: [[CAMPAIGNS/TOUCHPOINTS]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

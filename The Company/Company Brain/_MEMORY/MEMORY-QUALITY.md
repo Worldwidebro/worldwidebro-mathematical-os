@@ -28,3 +28,11 @@ Every assertion, entity, and memory atom in Company Brain carries one of the sev
 1. **Rule of Evidence**: Runtime evidence always outranks documentation. Documentation outranks chat inferences.
 2. **Never Elevate Without Proof**: Agents are strictly prohibited from silently converting an `ASSUMED` state into `VERIFIED` without executing concrete test proof (`ANTIGRAVITY.md` Rule #3).
 3. **No Ghost References**: Links to external entities must include Wikidata QID or Wikipedia URL to ground semantic concepts.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

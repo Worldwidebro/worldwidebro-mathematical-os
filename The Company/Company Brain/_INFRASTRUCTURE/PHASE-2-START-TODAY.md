@@ -470,3 +470,10 @@ Once first deal closes and revenue confirmed:
 
 **Success Metric:** First $2,500 revenue by EOD Sep 14 ✅
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

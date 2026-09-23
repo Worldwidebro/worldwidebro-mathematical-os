@@ -58,3 +58,11 @@ Never confuse these categories:
 - **PATTERN**: Recurrent observation across multiple distinct episodes.
 - **PROCEDURE**: Validated sequence of executable steps to produce an outcome.
 - **UNKNOWN**: Explicitly acknowledged lack of empirical data.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -31,3 +31,11 @@ AirLLM allows running massive 70B+ parameter models (such as Llama 3 70B, Qwen 7
 python3 scripts/airllm_batch_runner.py --test
 python3 scripts/airllm_batch_runner.py --model meta-llama/Meta-Llama-3-70B-Instruct --prompt "Audit venture compliance"
 ```
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -28,3 +28,11 @@ In Company Brain, success is never graded on a curve or described with ambiguous
 - Master OS: [[CAMPAIGNS/CAMPAIGN-OS]]
 - Primary Objective: [[CAMPAIGNS/PRIMARY-OBJECTIVE]]
 - Post-Mortem: [[CAMPAIGNS/POST-MORTEM]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

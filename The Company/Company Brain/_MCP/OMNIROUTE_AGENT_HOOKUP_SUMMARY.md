@@ -434,3 +434,11 @@ See `OMNIROUTE_DEALFLOW_INTEGRATION.md` for:
 **Generated:** 2026-09-08  
 **Version:** 1.0 (Complete)  
 **Status:** Ready for DealFlowOS integration
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

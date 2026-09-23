@@ -58,3 +58,11 @@ Scale to 120 Billable Placements / $3,850,000 Year 2 Revenue (8.32x DSCR)
 
 ### Question 5: What Happens Without the Funding?
 Without funding, CareerOps faces a prohibitive 30–45 day cash conversion cycle between paying weekly field worker wages and collecting client net-30 invoices. This structural working capital gap would restrict operations to small direct-hire search fees, forfeiting high-margin recurring contract staffing spreads and abandoning our \$600,000 enterprise LOI backlog.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

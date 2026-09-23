@@ -43,3 +43,11 @@ You are in the canonical **56-ENGINEERING/INFRASTRUCTURE** subsystem. This subsy
 - Read the master control plane: [`INFRASTRUCTURE.md`](file:///Users/acebless/Documents/The%20Company/Company%20Brain/56-ENGINEERING/INFRASTRUCTURE/INFRASTRUCTURE.md).
 - Verify running components: [`01_CORE/INFRASTRUCTURE-REALITY.md`](file:///Users/acebless/Documents/The%20Company/Company%20Brain/56-ENGINEERING/INFRASTRUCTURE/01_CORE/INFRASTRUCTURE-REALITY.md).
 - Check machine-readable registries in [`_REGISTRIES/`](file:///Users/acebless/Documents/The%20Company/Company%20Brain/_REGISTRIES).
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B66|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B66]]

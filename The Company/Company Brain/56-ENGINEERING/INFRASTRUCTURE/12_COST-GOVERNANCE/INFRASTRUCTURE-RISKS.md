@@ -21,3 +21,11 @@ Comprehensive assessment of hardware, network, software, operational, and vendor
 - Single Points of Failure: [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/SINGLE-POINTS-OF-FAILURE|SINGLE-POINTS-OF-FAILURE.md]]
 - Security Risk: [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/SECURITY-RISK|SECURITY-RISK.md]]
 - Risk Control Plane: [[34-RISK/34-RISK|34-RISK]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B66|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B66]]

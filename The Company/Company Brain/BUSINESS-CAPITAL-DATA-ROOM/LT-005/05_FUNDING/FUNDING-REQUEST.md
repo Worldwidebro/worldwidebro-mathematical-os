@@ -57,3 +57,11 @@ Scale to 45 Clinics / $1,968,000 Revenue in Year 2 (6.07x DSCR)
 
 ### Question 5: What Happens Without the Funding?
 Without funding, HealthRoute cannot secure commercial vehicle leases or post the required insurance reserves, preventing the execution of hospital pathology contracts and leaving rural clinics reliant on unreliable rideshare couriers.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

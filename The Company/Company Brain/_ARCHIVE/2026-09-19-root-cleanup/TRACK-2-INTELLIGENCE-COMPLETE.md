@@ -391,3 +391,11 @@ Status: ✅ 100% venture names extracted and mapped
 ---
 
 **Generated:** 2026-09-09 | **Source:** Worldwidebro-Vex/src/data/portfolio.public.json | **Ventures:** 789/789 ✅
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

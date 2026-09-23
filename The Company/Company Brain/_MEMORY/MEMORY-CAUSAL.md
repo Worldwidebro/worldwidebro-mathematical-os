@@ -39,3 +39,11 @@ When a failure or success occurs:
    CREATE (s:Solution {desc: 'Filtered stdout in antigravity-mcp.mjs'})
    CREATE (s)-[:RESOLVED]->(f);
    ```
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

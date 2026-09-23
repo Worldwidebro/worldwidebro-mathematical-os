@@ -978,4 +978,10 @@ status: "BANK_READY / GRANT_READY / INVESTOR_READY"
 - **Enterprise Blueprint:** [[BUSINESS-CAPITAL-DATA-ROOM/00_ENTERPRISE_BLUEPRINT|Enterprise Blueprint]]
 - **Live Deployment:** https://lt-011-dispatch-software.vercel.app
 
+---
 
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

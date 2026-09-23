@@ -69,3 +69,11 @@ The 2022 NAICS revision includes major restructuring in **Retail Trade (Sector 4
 - **Level 3: Industry Group (4-digit)**: 308 industry groups.
 - **Level 4: NAICS Industry (5-digit)**: 692 industries comparable across US, Canada, and Mexico.
 - **Level 5: National Industry (6-digit)**: 1,012 detailed US-specific industry classifications.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

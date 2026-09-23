@@ -50,3 +50,11 @@ Governs the continuous delivery pipeline, multi-environment lifecycle, GitOps sy
 | Terraform | [[56-ENGINEERING/INFRASTRUCTURE/08_DEPLOYMENT/TERRAFORM|TERRAFORM]] | `08_DEPLOYMENT/TERRAFORM.md` | Domain specification and operational parameters |
 | Test | [[56-ENGINEERING/INFRASTRUCTURE/08_DEPLOYMENT/TEST|TEST]] | `08_DEPLOYMENT/TEST.md` | Domain specification and operational parameters |
 | Testing | [[56-ENGINEERING/INFRASTRUCTURE/08_DEPLOYMENT/TESTING|TESTING]] | `08_DEPLOYMENT/TESTING.md` | Domain specification and operational parameters |
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B66|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B66]]

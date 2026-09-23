@@ -31,3 +31,11 @@ Prevent circular reasoning and reopening settled architecture questions:
 ## 2. Invariant Rule
 
 **Do not reopen settled architectural decisions without new empirical evidence or explicit operator direction.**
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

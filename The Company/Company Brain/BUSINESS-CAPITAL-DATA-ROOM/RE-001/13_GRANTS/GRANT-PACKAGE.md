@@ -47,3 +47,11 @@ WorldwideBro Holdings LLC bridges this technology gap through the **Affordable H
 1. **Operating Technology Platform:** Deployed at `https://re-001-worldwidebro-holdings.vercel.app` (Commit `a761e80`).
 2. **Institutional Housing Partnership:** Executed LOI with Carolina Community Land Trust & Housing Alliance (`LOI-RE-001`, \$525,000 co-acquisition commitment) and Tarheel Regional Housing Authority (`LOI-RE-002`, \$180,000 Section 8 voucher commitment).
 3. **Execution Synergy:** Construction scoping and weatherization audits delivered directly through affiliated trade contractor `CON-001`.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

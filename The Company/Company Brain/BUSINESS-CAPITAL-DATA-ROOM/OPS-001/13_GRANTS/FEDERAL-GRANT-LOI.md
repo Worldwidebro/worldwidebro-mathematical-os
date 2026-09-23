@@ -14,3 +14,11 @@ Over our operating history, WorldwideBro Staffing Ops LLC has achieved significa
 We are requesting $600,000 over 24 months to expand our Labor Market Ontology platform to upskill and place 1,500 displaced or underemployed workers in high-demand industrial roles. This investment will enable us to provide targeted micro-credentials and secure stable, high-wage employment for these individuals.
 
 Given the DOL's commitment to workforce innovation and expanding access to quality industrial jobs, we believe there is strong alignment with our work. We welcome the opportunity to discuss how this partnership might advance our shared goals of economic mobility and labor market efficiency.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

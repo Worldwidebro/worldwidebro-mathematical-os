@@ -9,3 +9,11 @@ WorldwideBro Fleet OS LLC operates CarrierDispatch, a transportation management 
 - Year 1 Gross Billings: $540,000
 - Year 3 Projected Gross Billings: $2,950,000
 - Debt Service Coverage Ratio (Year 1 DSCR): **3.73x**
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

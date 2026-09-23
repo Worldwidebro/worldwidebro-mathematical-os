@@ -19,3 +19,11 @@ This document bridges the Canonical External Capability Universe registry with t
 
 ### Purpose
 Tracks external open-source capabilities, libraries, MCP servers, and SaaS integrations that map into the 35 business sectors and 300 internal capabilities (`CAP-001` through `CAP-300`).
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

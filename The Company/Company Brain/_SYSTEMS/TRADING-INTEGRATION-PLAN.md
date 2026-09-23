@@ -425,3 +425,10 @@ WEEK 4: AUTOMATION
 
 **Status:** READY TO EXECUTE | **Next:** Start Week 1 (Sep 8) | **Owned by:** fin-037 team
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -68,3 +68,11 @@ Approximately X controllable operations in this domain. See [[control-points]] f
 - Master Gallery: [[_TEMPLATES/README|Templates Gallery]]
 - Master Domain Index: [[INDEX]]
 - Ontological Foundations: [[07-ONTOLOGY/README]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

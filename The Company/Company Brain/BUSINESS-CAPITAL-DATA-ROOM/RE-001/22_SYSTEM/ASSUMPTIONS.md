@@ -5,3 +5,11 @@
 - Base interest rate on debt: Prime + 2.25%
 - Invoicing cycle: Net-30
 - LOI conversion rate: 85%
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

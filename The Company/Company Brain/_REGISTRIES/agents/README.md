@@ -31,3 +31,11 @@ Canonical directory of routing and execution agent specifications across Company
 
 ## Schema Standard
 Agent specifications are stored in YAML format defining `agent_id`, `routing_key`, `type`, `autonomy_levels`, `capabilities_implemented`, `cost_model`, and `control_plane_mappings`.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

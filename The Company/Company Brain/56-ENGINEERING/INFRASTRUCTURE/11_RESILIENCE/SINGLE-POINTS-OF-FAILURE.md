@@ -24,3 +24,11 @@ updated: 2026-09-06
 - [[56-ENGINEERING/INFRASTRUCTURE/06_DATA/DATABASE-BACKUPS|DATABASE-BACKUPS]]
 - [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/AVAILABILITY-RISK|AVAILABILITY-RISK]]
 - [[_REGISTRIES/infrastructure_risk_registry.json|infrastructure_risk_registry.json]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B66|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B66]]

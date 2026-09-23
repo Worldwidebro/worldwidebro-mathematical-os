@@ -569,3 +569,11 @@ BUSINESS-CAPITAL-DATA-ROOM/LT-005/22_SYSTEM/
 - [TypeScript SDK Guide](https://docs.temporal.io/dev-guide/typescript)
 - [HIPAA Compliance](https://docs.temporal.io/security/hipaa-compliance)
 - [Workflow Patterns](https://docs.temporal.io/workflow-guide/workflow-patterns)
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -55,3 +55,11 @@ WorldwideBro Holdings combines high-margin software data aggregation with physic
 1. **24-Month BRRRR Capital Return:** Upon stabilization and tenant placement, properties are refinanced into 30-year fixed DSCR takeout facilities at 70% LTV of the new appraised ARV, returning up to 100% of initial equity to LPs.
 2. **Preferred Return Accrual:** Investors receive an 8.0% annualized cumulative cash preferred return paid quarterly from Net Operating Income prior to common equity distributions.
 3. **Institutional Buyout / REIT Recapitalization:** At Year 5 (75+ stabilized units, \$16.5M portfolio value), the consolidated assets will be recapitalized or acquired by a national ESG/affordable housing REIT at an estimated **3.5x–4.8x MOIC**.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

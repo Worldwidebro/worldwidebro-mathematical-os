@@ -33,3 +33,11 @@ status: "BANK_READY / GRANT_READY / INVESTOR_READY"
 - [x] **Signed LOI Backlog:** 2 Signed Letters of Intent on file in `08_REVENUE/LOIS/`.
 - [x] **Bonding Brokerage Selection:** International Fidelity pre-qualification initiated for SBA SBG.
 - [ ] **First Bank Draw Verification:** Execute first live draw upon closing of credit facility.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

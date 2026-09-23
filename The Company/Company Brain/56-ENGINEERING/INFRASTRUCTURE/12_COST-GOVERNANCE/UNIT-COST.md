@@ -23,3 +23,11 @@ updated: 2026-09-06
 - FinOps Framework: [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/FINOPS|FINOPS.md]]
 - Commercial Audit Offer: [[COMMERCIAL/OFFERS/OFFER-001-LOCAL-AI-AUDIT|OFFER-001-LOCAL-AI-AUDIT.md ($7,500 package)]]
 - Economic Reality: [[ECONOMIC-REALITY]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B66|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B66]]

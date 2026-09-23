@@ -49,3 +49,11 @@ The full business model is codified across two master architectural matrices:
 - **Turnkey General Contracting**: [[23-VENTURES/CON-001|CON-001: ACE Construction & Contracting LLC]] provides in-house trade labor, eliminating third-party general contractor markups (20%–30%) on all portfolio renovations.
 - **Physical Property Inspection Fleet**: [[23-VENTURES/LT-011|LT-011: CarrierDispatch Fleet OS]] provides distributed mobile field routing for rapid visual site inspections and drone photography across regional MSAs.
 - **Master Capital Prospectus**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/BUSINESS-CAPITAL-PROSPECTUS.md|BUSINESS-CAPITAL-PROSPECTUS.md]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

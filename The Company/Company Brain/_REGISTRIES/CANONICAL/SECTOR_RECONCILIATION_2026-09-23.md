@@ -15,3 +15,11 @@
 - [ ] SEC-027 — create empty BASE record or leave unfilled
 - [ ] SEC-030 — create empty BASE record or leave unfilled
 - [ ] SEC-035 — create empty BASE record or leave unfilled
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

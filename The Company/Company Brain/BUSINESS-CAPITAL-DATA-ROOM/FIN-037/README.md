@@ -152,3 +152,11 @@ Annual run rate: $330K (ramp to $420K by Month 4)
 **Sector:** [[SEC-037]] | [[SEC-008]]  
 **Parent HoldCo:** Financial Services Group HoldCo  
 **Next Review:** 2026-10-15
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

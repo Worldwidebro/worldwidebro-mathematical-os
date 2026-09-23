@@ -28,3 +28,11 @@ Retrieve only the targeted memory slice necessary to execute the task without co
 ## 2. Invariant Rule
 
 **Never load entire raw conversation histories or giant JSON registries into context.** Always query targeted fields or scoped sections.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -21,3 +21,11 @@ updated: 2026-09-06
 - Master Runbooks: [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/RUNBOOKS|RUNBOOKS.md]]
 - Runtime State: [[CLAUDE]]
 - Operations Domain: [[29-OPERATIONS/29-OPERATIONS|29-OPERATIONS]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B66|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B66]]

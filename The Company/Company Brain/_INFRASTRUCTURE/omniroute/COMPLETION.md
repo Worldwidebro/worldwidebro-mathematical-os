@@ -105,3 +105,11 @@ Neo4j Result Storage
 - **OmniRoute Hub:** [[_INFRASTRUCTURE/omniroute/README|OmniRoute]]
 - **Setup Guide:** [[_INFRASTRUCTURE/omniroute/SETUP|Setup Guide]]
 - **Runtime State:** [[CLAUDE]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

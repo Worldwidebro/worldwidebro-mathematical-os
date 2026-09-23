@@ -26,3 +26,11 @@ Traverse the relationship graph and generate multi-dimensional associative links
 ## 2. Invariant Rule
 
 **A node without edges is an orphan.** Whenever creating a new venture, repository, or capability, immediately wire its bidirectional edges in the Neo4j graph and Markdown wikilinks.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -23,3 +23,11 @@ $$\text{Target CAC} = \frac{\text{Total Campaign Spend (\$2,500)}}{\text{Target 
 
 - Unit Economics: [[CAMPAIGNS/UNIT-ECONOMICS]]
 - ROAS: [[CAMPAIGNS/ROAS]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

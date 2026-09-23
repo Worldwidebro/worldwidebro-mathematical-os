@@ -431,3 +431,11 @@ Which would you prefer?
 **Related:** [[CONNECTIVITY-REGISTRY]], [[STORAGE-RELATIONSHIPS-MAP]], [[ARCHITECTURE.md]]  
 **Infrastructure:** T7 Shield 51% full, all services live, all connectivity verified  
 **Harness:** Claude Code ready to execute → Neo4j ready to learn → Obsidian ready to navigate
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

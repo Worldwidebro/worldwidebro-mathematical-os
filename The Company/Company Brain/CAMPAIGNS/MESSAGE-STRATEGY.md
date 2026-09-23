@@ -21,3 +21,11 @@ We deploy three distinct strategic angles across outbound touches:
 - Master OS: [[CAMPAIGNS/CAMPAIGN-OS]]
 - Message Hierarchy: [[CAMPAIGNS/MESSAGE-HIERARCHY]]
 - Pillars: [[CAMPAIGNS/MESSAGING-PILLARS]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

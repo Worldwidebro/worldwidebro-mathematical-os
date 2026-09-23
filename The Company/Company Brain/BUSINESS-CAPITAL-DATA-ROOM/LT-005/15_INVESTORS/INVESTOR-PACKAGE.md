@@ -28,3 +28,11 @@ target_exit: "Acquisition by National Diagnostic Lab (Quest, Labcorp) or Healthc
 * **Direct Driver Contractor Cost:** \$650/month per clinic route.
 * **Gross Profit per Clinic:** **\$550/month (45.8% gross margin)**.
 * **Blended STAT Run Margin:** \$85 run fee vs. \$42 driver cost = **50.6% margin**.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

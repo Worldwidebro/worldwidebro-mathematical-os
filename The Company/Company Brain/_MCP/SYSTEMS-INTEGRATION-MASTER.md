@@ -454,3 +454,10 @@ USER TASK
 
 **Next:** Create AGENT_REGISTRY.yaml (estimate 4-6 hours to tag 275 agents).
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

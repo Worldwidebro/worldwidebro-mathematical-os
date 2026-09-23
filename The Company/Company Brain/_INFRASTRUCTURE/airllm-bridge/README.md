@@ -90,3 +90,11 @@ All of these speak OpenAI `/v1` — see on-disk `examples/FRAMEWORKS.md` and `ex
 - First real load **shards** the HF checkpoint — needs large free disk on LaCie/T7.
 - Tailscale: Studio `100.87.214.70:8020` must be reachable from Air (same pattern as Ollama `:11434`).
 - Do not re-enable broken Tailscale Serve on ports that already bind `*` (Ollama conflict lesson).
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

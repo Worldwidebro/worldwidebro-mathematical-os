@@ -38,3 +38,11 @@ Governs the hybrid cloud topology of Company Brain, balancing local-first physic
 | Multi Cloud | [[56-ENGINEERING/INFRASTRUCTURE/05_CLOUD/MULTI-CLOUD|MULTI-CLOUD]] | `05_CLOUD/MULTI-CLOUD.md` | Domain specification and operational parameters |
 | On Premises | [[56-ENGINEERING/INFRASTRUCTURE/05_CLOUD/ON-PREMISES|ON-PREMISES]] | `05_CLOUD/ON-PREMISES.md` | Domain specification and operational parameters |
 | Remote Infrastructure | [[56-ENGINEERING/INFRASTRUCTURE/05_CLOUD/REMOTE-INFRASTRUCTURE|REMOTE-INFRASTRUCTURE]] | `05_CLOUD/REMOTE-INFRASTRUCTURE.md` | Domain specification and operational parameters |
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B66|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B66]]

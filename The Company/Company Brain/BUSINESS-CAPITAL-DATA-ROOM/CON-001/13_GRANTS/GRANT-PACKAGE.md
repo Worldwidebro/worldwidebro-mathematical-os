@@ -41,3 +41,11 @@ ACE Construction is developing the **ACE Decarbonization Verification Module**, 
 | **Other Direct Costs** | Cloud infrastructure and code validation licenses | \$9,345 |
 | **Indirect Costs (10% MTDC)** | Modified Total Direct Cost calculation (Statutory allowable cap) | \$18,182 |
 | **TOTAL REQUESTED GRANT BUDGET** | **Reconciled exactly with DOE SBIR statutory limit** | **\$200,000** |
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

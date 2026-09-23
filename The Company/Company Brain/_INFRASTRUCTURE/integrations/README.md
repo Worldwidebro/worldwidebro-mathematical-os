@@ -18,3 +18,11 @@ Infrastructure hosting incoming webhooks (ClickUp, Stripe, Vercel, Supabase) and
 - **Cloud Deployments:** [[_REGISTRIES/cloud_registry.json]]
 - **Tools Domain:** [[18-TOOLS/README|18-TOOLS]]
 - **Engineering Hub:** [[56-ENGINEERING/README|56-ENGINEERING]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

@@ -23,3 +23,11 @@ updated: 2026-09-06
 - [[56-ENGINEERING/INFRASTRUCTURE/04_NETWORK/PORTS|PORTS]]
 - [[56-ENGINEERING/INFRASTRUCTURE/11_RESILIENCE/BACKUP|BACKUP]]
 - [[_REGISTRIES/database_registry.json|database_registry.json]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B66|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B66]]

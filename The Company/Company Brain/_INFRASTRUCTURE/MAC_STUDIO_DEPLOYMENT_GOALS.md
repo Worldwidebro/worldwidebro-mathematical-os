@@ -309,3 +309,11 @@ Then Mac Air launches Phases 5-7 (autonomous agents, revenue loop, venture activ
 **Authority:** CP-027 (Infrastructure Control Plane)  
 **Coordination:** Mac Air (via Tailscale tunnel)  
 **Timeline:** Complete by end of day → Revenue loop operational by Week 4
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

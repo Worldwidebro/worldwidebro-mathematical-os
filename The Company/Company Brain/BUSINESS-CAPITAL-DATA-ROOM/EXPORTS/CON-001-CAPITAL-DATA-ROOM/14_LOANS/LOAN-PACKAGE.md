@@ -49,3 +49,11 @@ $$\text{DSCR} = \frac{\text{Net Operating Income (EBITDA)}}{\text{Annual Princip
 1. **Primary Repayment:** Operating cash flow generated from commercial tenant improvements and recurring monthly retainer client draws.
 2. **Secondary Repayment:** Lockbox receivables factoring on AIA progress payments ($150,000–$350,000 per project).
 3. **Tertiary Repayment:** Unconditional personal guarantees of equity owners and liquidation of commercial fleet and diagnostic equipment.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

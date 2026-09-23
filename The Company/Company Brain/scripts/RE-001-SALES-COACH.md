@@ -170,3 +170,11 @@ Each deal memo should include:
 - **Average Investment Per Investor:** $50-100K
 - **Portfolio Yields:** 12-15% average annual returns (typical range across deals)
 - **Repeat Investor Rate:** 60%+ of committed investors participate in follow-on deals
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -5,3 +5,11 @@
 - Zero placeholder architecture.
 - Always keep financial models reconciled with LOI_REGISTRY.yaml and CAPITAL_FACILITIES_REGISTRY.yaml.
 - Never edit .pdf files directly; edit source .md, .yaml, .json, .xlsx and run compile pipeline.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

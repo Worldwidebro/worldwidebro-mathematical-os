@@ -14,3 +14,11 @@ Over the past year, ACE Construction has demonstrated exceptional operational an
 We are requesting $500,000 over 12 months to accelerate the deployment of ACE Field OS across our regional commercial project portfolio. This investment will enable us to standardize energy-efficiency audit trails for over 50 commercial retrofits, directly measuring and verifying emissions reductions and energy savings for our commercial clients.
 
 Given the DOE's commitment to verifiable energy efficiency in the commercial sector and the modernization of building infrastructure, we believe there is strong alignment with our work. We welcome the opportunity to discuss how this partnership might advance our shared goals of sustainable commercial development.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

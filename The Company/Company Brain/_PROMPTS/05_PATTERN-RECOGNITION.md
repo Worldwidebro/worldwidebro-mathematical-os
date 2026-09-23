@@ -38,3 +38,11 @@ pattern_detection:
     - "Intercept process.stdout and filter non-JSON lines or redirect to process.stderr"
     - "Wrap entrypoint in dedicated adapter script before registering with MCP client"
 ```
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

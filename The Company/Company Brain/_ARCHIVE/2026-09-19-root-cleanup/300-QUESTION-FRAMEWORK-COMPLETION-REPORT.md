@@ -276,3 +276,11 @@ All 5 ventures now have institutional-grade intelligence frameworks with integra
 **Generated:** September 8, 2026  
 **Framework Architect:** Claude Haiku 4.5 (4 parallel agents)  
 **Authority:** [[CAPITAL-READINESS-ENGINE.md]] | [[OPERATIONAL-REALITY-MASTER]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

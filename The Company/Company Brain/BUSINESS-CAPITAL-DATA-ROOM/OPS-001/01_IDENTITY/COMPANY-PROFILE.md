@@ -14,3 +14,11 @@ WorldwideBro Staffing Ops LLC captures the high margins of industrial staffing (
 
 ## Corporate Mission
 Bypass credential bias and connect non-degree workers to high-margin technical, logistics, and trade roles via a 12-layer labor ontology.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

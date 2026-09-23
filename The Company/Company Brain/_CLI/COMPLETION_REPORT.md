@@ -178,3 +178,11 @@ Connected to:
 **Generated:** 2026-09-04  
 **Authority:** CP-027 (Infrastructure Control Plane)  
 **Next Review:** Weekly via `cb infrastructure status`
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

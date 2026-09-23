@@ -268,3 +268,10 @@ Each domain (00-50) is assigned 10 control bases (500 total):
 **Wiki-Linking:** Phase 5 Complete (Sep 25) — All hubs wired to control bases  
 **Next:** Bidirectional linking verification + triage remaining orphaned files
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

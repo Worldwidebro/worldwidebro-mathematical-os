@@ -200,3 +200,11 @@ Neo4j schema deployed (constraints, indexes, gates). YAML→Neo4j migration pipe
 **Last Entry:** 2026-09-23  
 **Next Update:** 2026-09-26 (after Phase 1 execution)  
 **Lint Check:** 2026-09-30
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

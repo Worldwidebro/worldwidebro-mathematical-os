@@ -61,3 +61,11 @@ Recycle Bridge Capital to Scale to 75 Units / $16.5M Portfolio Value by Year 3
 
 ### Question 5: What Happens Without the Funding?
 Without access to patient acquisition bridge debt, WorldwideBro Holdings cannot act rapidly on pre-foreclosure tax and probate distress notices. Distressed homes are invariably purchased by speculative Wall Street private equity cash buyers, driving up neighborhood rents, displacing low-income families, and stalling our verified \$705,000 non-profit housing partnership pipeline.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -133,3 +133,11 @@
 **This changes everything:** The portfolio isn't technology-heavy; it's **AI/ML-heavy**. SEC-032 is the true growth engine with 172 ventures (21.8% of portfolio).
 
 **Next Step:** Rebuild Phase 1 launch plan around SEC-032 AI/ML ventures + other high-revenue sectors.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

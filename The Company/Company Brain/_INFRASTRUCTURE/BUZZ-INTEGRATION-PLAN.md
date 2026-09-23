@@ -363,4 +363,12 @@ def buzz_sync_to_neo4j(channel: str, event_id: str) -> dict:
 
 **Authority:** CP-027 (Infrastructure) + CP-006 (Agents)  
 **Last Updated:** 2026-09-06  
-**Status:** 🟡 Ready for implementation  
+**Status:** 🟡 Ready for implementation
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

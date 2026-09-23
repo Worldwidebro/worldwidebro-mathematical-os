@@ -34,3 +34,11 @@ $$\text{DSCR} = \frac{\text{Net Operating Income (EBITDA)}}{\text{Annual Debt Se
 1. **Primary Repayment:** Recurring monthly SaaS subscription fees collected automatically via Stripe ($49/mo and $149/mo).
 2. **Secondary Repayment:** Factoring transaction fees (0.60% net share of gross freight volume swept directly from lockbox payouts).
 3. **Tertiary Repayment:** Corporate UCC-1 blanket lien on enterprise software IP and owner personal guarantee.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

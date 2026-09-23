@@ -32,3 +32,11 @@ target_exit: "Series A Institutional Growth / Strategic Acquisition by Logistics
 ## 3. Exit Comparables
 * **Recent Sector M&A:** Transflo, Trucker Path, Rose Rocket, Motive (KeepTruckin).
 * **Target Exit Valuation:** \$35M–\$55M (6x–8x ARR) within 4–5 years.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

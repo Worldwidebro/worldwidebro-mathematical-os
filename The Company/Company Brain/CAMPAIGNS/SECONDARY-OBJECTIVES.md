@@ -31,3 +31,11 @@ If pursuing a secondary objective endangers the primary cash objective, the seco
 - Master OS: [[CAMPAIGNS/CAMPAIGN-OS]]
 - Objectives Framework: [[CAMPAIGNS/OBJECTIVES]]
 - Targets: [[CAMPAIGNS/TARGETS]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

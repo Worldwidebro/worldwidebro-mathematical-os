@@ -60,3 +60,11 @@
 ---
 
 **Updated:** 2026-09-02 | [[SECTOR-TAXONOMY-MASTER]] | [[SEC-017-logistics-transportation]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B68|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B68]]

@@ -22,3 +22,11 @@ Campaign automations run natively on Company Brain's local-first execution stack
 - Master OS: [[CAMPAIGNS/CAMPAIGN-OS]]
 - Workflows: [[CAMPAIGNS/CAMPAIGN-WORKFLOWS]]
 - Triggers: [[CAMPAIGNS/TRIGGERS]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -33,3 +33,11 @@ Execute institutional learning after completing work or encountering a blocker:
 ## 2. Invariant Rule
 
 **Transform every non-trivial failure into a permanent guardrail so no agent in the fleet repeats it.**
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

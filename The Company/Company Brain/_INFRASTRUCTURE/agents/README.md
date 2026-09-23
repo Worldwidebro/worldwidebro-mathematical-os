@@ -18,3 +18,11 @@ Infrastructure backing autonomous routing and execution agents across Apple Sili
 - **Agent Registry:** [[_REGISTRIES/agents/README|Canonical Agents Registry]]
 - **Master Agents Hub:** [[16-AGENTS/README|16-AGENTS]]
 - **Engineering Hub:** [[56-ENGINEERING/README|56-ENGINEERING]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

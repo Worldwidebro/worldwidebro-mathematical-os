@@ -249,3 +249,11 @@ When a deal is created in DealFlowOS:
 - **API Server:** `/Users/acebless/Documents/The Company/Company Brain/_MCP/dealflow_neo4j_api.py`
 - **Dashboard:** `/Users/acebless/Documents/The Company/Company Brain/dealflow-os.html`
 - **This doc:** `/Users/acebless/Documents/The Company/Company Brain/_MCP/DEALFLOW_NEO4J_API.md`
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

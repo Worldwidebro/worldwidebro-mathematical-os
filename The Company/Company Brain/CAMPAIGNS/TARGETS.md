@@ -34,3 +34,11 @@ To achieve the primary objective of 5 closed deals, the funnel parameters are mo
 - Master OS: [[CAMPAIGNS/CAMPAIGN-OS]]
 - Funnel Architecture: [[CAMPAIGNS/FUNNEL-ARCHITECTURE]]
 - Unit Economics: [[CAMPAIGNS/UNIT-ECONOMICS]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

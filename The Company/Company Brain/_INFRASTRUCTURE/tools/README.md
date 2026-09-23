@@ -18,3 +18,11 @@ Infrastructure hosting developer CLI utilities, shell scripts, and automated mai
 - **CLI Commands Hub:** [[_CLI/README|CLI Commands]]
 - **FastMCP Server:** [[_MCP/README|MCP Architecture]]
 - **Tools Registry:** [[_REGISTRIES/tools/README|Tools Registry]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

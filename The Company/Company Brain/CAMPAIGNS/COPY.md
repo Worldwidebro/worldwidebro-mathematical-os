@@ -38,3 +38,11 @@ WorldwideBro — Local-First AI Systems
 - Master OS: [[CAMPAIGNS/CAMPAIGN-OS]]
 - Creative: [[CAMPAIGNS/CREATIVE]]
 - Outreach Script Vault: [[COMMERCIAL/OUTREACH/OUTREACH-001-TARGET-PROSPECTS]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

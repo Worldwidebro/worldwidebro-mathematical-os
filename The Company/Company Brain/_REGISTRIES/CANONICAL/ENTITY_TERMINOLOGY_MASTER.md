@@ -274,3 +274,11 @@ WORLDWIDEBRO HOLDINGS LLC (ENT-031) — Master HoldCo
 **Created:** 2026-09-23  
 **Authority:** CP-027 (Infrastructure Control Plane)  
 **Status:** CANONICAL — Master reference for all entity terminology
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

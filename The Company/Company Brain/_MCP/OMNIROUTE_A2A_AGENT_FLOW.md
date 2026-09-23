@@ -205,3 +205,11 @@ Dashboard KPI: Agent ROI = sum(revenue_attributed) / sum(cost_incurred)
 ---
 
 **Reference:** OmniRoute A2A docs @ https://github.com/diegosouzapw/OmniRoute/blob/release/v3.8.51/docs/frameworks/A2A-SERVER.md
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

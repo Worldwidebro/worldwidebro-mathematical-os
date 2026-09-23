@@ -211,3 +211,11 @@ BASE-XXX:
 ---
 
 **Status: Phase 1 COMPLETE. Phase 2 begins Sep 25.**
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

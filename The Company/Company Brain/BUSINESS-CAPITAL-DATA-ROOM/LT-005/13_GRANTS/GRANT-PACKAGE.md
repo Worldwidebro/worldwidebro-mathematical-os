@@ -36,3 +36,11 @@ HealthRoute will validate an IoT-to-cloud **Autonomous Cold-Chain & Chain-of-Cus
 | **Other Direct Costs** | AWS GovCloud hosting, HIPAA encryption tools, third-party security audit | \$18,327 |
 | **Indirect Costs (10% MTDC)** | Modified Total Direct Cost statutory rate | \$27,273 |
 | **TOTAL REQUESTED NIH BUDGET** | **Reconciled exactly with NIH statutory Phase I ceiling** | **\$300,000** |
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

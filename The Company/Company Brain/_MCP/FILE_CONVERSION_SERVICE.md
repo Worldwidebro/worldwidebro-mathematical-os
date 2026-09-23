@@ -503,3 +503,11 @@ result = await mcp.call_tool("file_convert",
 ---
 
 **Status:** ✅ READY FOR IMPLEMENTATION | **Authority:** CP-027 | **Last Updated:** 2026-09-06
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

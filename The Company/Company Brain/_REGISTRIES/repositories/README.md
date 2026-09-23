@@ -24,3 +24,11 @@ Canonical registry of 893 owned codebases and 904 starred capability supply chai
 - **Repositories Domain Hub:** [[13-REPOSITORIES/13-REPOSITORIES|13-REPOSITORIES]]
 - **Code Intelligence Hub:** [[57-CODE-INTELLIGENCE/57-CODE-INTELLIGENCE|57-CODE-INTEL]]
 - **Master Registries Portal:** [[_REGISTRIES/README|Master Registries]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

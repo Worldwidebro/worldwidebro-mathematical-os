@@ -81,3 +81,11 @@ $$\text{or} \quad \text{Unsubscribes/Complaints} > \theta_{\text{safety}}$$
 - Architecture: [[CAMPAIGNS/CAMPAIGN-ARCHITECTURE]]
 - Lifecycle: [[CAMPAIGNS/CAMPAIGN-LIFECYCLE]]
 - Unit Economics: [[CAMPAIGNS/UNIT-ECONOMICS]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

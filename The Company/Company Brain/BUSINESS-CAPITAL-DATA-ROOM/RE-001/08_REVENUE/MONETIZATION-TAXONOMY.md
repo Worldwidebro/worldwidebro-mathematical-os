@@ -133,3 +133,11 @@ $$\text{Acquire} \longrightarrow \text{Finance} \longrightarrow \text{Underwrite
 - **Master Capital Prospectus**: [[BUSINESS-CAPITAL-DATA-ROOM/RE-001/BUSINESS-CAPITAL-PROSPECTUS.md|BUSINESS-CAPITAL-PROSPECTUS.md]]
 - **Master Venture Specification**: [[23-VENTURES/RE-001|RE-001: WorldwideBro Holdings]]
 - **In-House Construction Arm**: [[23-VENTURES/CON-001|CON-001: ACE Construction & Contracting LLC]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

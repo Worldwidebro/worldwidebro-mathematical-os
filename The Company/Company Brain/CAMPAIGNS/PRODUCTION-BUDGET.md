@@ -27,3 +27,11 @@
 - Spend Tracking: [[CAMPAIGNS/SPEND]]
 - Unit Economics: [[CAMPAIGNS/UNIT-ECONOMICS]]
 - Registry: [[_REGISTRIES/CAMPAIGN-BUDGET-REGISTRY.json]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -22,3 +22,11 @@ Canonical registry of internal developer tools, CLI scripts, MCP servers, and au
 - **Tools Domain Hub:** [[18-TOOLS/README|18-TOOLS]]
 - **Evaluation Domain Hub:** [[42-EVALUATION/README|42-EVALUATION]]
 - **Master Registries Portal:** [[_REGISTRIES/README|Master Registries]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

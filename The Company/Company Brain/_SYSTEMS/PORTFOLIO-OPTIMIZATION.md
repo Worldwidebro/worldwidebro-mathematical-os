@@ -422,3 +422,10 @@ If operations expand internationally, hedge FX
 
 **Status:** READY TO DEPLOY | **Start:** Week 3 ([[TRADING-INTEGRATION-PLAN]]) | **Owned by:** fin-023 (portfolio AI)
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

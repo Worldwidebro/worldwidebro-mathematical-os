@@ -3,3 +3,11 @@
 # Target Customer Profile
 
 Commercial procurement managers, institutional property directors, and regional authorities requiring bonded, compliant execution.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

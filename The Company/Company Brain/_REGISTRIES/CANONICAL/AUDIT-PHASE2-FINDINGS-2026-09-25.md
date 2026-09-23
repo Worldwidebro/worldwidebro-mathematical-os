@@ -228,3 +228,11 @@ After correcting data:
 **Next:** Founder decision on data source + verification protocol
 
 **Updated:** 2026-09-25 (Phase 2 in progress)
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

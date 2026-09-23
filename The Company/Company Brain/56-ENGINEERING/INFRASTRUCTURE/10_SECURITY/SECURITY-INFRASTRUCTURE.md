@@ -43,3 +43,11 @@ Governs the zero-trust security perimeter, identity and access management, secre
 | Vulnerabilities | [[56-ENGINEERING/INFRASTRUCTURE/10_SECURITY/VULNERABILITIES|VULNERABILITIES]] | `10_SECURITY/VULNERABILITIES.md` | Domain specification and operational parameters |
 | Vulnerability Management | [[56-ENGINEERING/INFRASTRUCTURE/10_SECURITY/VULNERABILITY-MANAGEMENT|VULNERABILITY-MANAGEMENT]] | `10_SECURITY/VULNERABILITY-MANAGEMENT.md` | Domain specification and operational parameters |
 | Zero Trust | [[56-ENGINEERING/INFRASTRUCTURE/10_SECURITY/ZERO-TRUST|ZERO-TRUST]] | `10_SECURITY/ZERO-TRUST.md` | Domain specification and operational parameters |
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B66|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B66]]

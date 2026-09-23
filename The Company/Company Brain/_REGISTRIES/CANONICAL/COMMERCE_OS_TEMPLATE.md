@@ -22,3 +22,11 @@ The built-in CRM is universal and works out-of-the-box for any clone:
 - Customer 360 (VIP tracking, Subscriptions, Timeline)
 - Revenue Intelligence (Cohorts, LTV, Blended CAC)
 - Segments & Automations
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

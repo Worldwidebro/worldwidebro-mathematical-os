@@ -26,3 +26,11 @@ Content is not published for entertainment; it is published to establish technic
 - Master OS: [[CAMPAIGNS/CAMPAIGN-OS]]
 - Content Calendar: [[CAMPAIGNS/CONTENT-CALENDAR]]
 - Editorial Guidelines: [[CAMPAIGNS/EDITORIAL]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

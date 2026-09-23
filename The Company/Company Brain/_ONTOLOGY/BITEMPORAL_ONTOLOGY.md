@@ -56,3 +56,11 @@ RETURN s.revenue, s.active_fleet, s.compliance_status;
 Before any agent (Hermes or OpenHands) triggers a payout, bank transfer, or capital commitment:
 - **Gate 1 (Temporal Precedence):** The transaction valid-time must match current or historical time ($T_v \le \text{now}$).
 - **Gate 2 (Dual Approval):** Commitments exceeding \$10,000 require human-in-the-loop co-signing recorded in Neo4j.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

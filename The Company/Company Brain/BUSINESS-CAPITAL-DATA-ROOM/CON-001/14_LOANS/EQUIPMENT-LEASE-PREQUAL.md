@@ -32,3 +32,11 @@
 **Next Steps:**         Identify specific equipment vendors, secure spec sheets/invoices, and run Section 179 scenario with tax advisors.
 
 *⚠️ DISCLAIMER: This pre-qualification is an underwriting estimate and not a loan commitment. Final terms depend on equipment type and credit review.*
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

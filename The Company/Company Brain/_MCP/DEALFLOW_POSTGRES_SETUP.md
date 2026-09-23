@@ -414,3 +414,11 @@ TRUNCATE TABLE deals CASCADE;
 2. Build deal analytics dashboard from PostgreSQL
 3. Sync deal stage changes back to Neo4j for knowledge graph integration
 4. Set up automated backups of deals table
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

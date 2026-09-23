@@ -357,3 +357,10 @@ This guide shows WHERE agents are. Phase 2a (Oct 2026) makes them INVOKABLE:
 
 **Reference:** [[_MCP/REAL-AGENT-BLUEPRINT.md|Real Agent Blueprint]] — Why 2 agents work + why 273 don't (yet) + how to fix it
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

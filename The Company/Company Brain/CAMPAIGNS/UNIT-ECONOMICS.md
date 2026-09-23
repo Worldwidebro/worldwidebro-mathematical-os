@@ -24,3 +24,11 @@
 - Budget: [[CAMPAIGNS/BUDGET]]
 - LTV: [[CAMPAIGNS/LTV]]
 - Payback: [[CAMPAIGNS/PAYBACK]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

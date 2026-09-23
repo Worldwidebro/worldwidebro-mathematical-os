@@ -46,3 +46,11 @@ When two memories conflict, authority is resolved strictly by this hierarchy:
 4. **Git Versioned Markdown Specification**.
 5. **Session Transcripts / Historical Episodic Logs**.
 6. **Inferred Agent Deduction** (Lowest authority).
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

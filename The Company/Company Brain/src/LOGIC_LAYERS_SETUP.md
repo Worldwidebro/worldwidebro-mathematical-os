@@ -253,3 +253,11 @@ This system integrates with:
 **Status:** Production-Ready  
 **Version:** 1.0  
 **Last Updated:** 2026-09-18
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

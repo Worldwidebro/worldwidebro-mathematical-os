@@ -24,3 +24,11 @@ Canonical registry of technical and operational capabilities across Company Brai
 - **Solution Matrix:** [[14-CAPABILITIES/CAPABILITY_SOLUTION_MATRIX.json|Capability Solution Matrix]]
 - **Blueprint Template:** [[_TEMPLATES/Capability|Capability Template]]
 - **Master Registries Portal:** [[_REGISTRIES/README|Master Registries]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

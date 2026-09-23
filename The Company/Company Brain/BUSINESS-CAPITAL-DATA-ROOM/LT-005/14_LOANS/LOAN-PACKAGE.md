@@ -36,3 +36,11 @@ $$\text{DSCR} = \frac{\text{Net Operating Income (EBITDA)}}{\text{Annual Debt Se
 1. **Primary Repayment:** Recurring monthly clinic retainers paid via electronic ACH.
 2. **Secondary Repayment:** Per-delivery invoice collections from commercial pathology reference laboratories (Net-30).
 3. **Tertiary Repayment:** Liquidation value of custom dual-zone refrigerated cargo vans and personal guarantees of founders.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

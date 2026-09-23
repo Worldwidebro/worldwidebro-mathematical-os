@@ -128,3 +128,10 @@ Hardware asset custody and secure backup rotation are cataloged in:
 - Deployed Web Surfaces: [[_REGISTRIES/CANONICAL/SITES_REGISTRY.yaml]]
 - Multi-Venture Blueprint: [[BUSINESS-CAPITAL-DATA-ROOM/00_ENTERPRISE_BLUEPRINT|Enterprise Blueprint]]
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B68|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B68]]

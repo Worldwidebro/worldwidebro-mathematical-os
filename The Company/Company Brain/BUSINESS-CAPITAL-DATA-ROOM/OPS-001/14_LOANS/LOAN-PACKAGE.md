@@ -33,3 +33,11 @@ $$\text{DSCR} = \frac{\text{Operating Income (EBITDA)}}{\text{Annual Debt Servic
 1. **Primary Repayment:** Dedicated client payment lockbox sweeping receivables on Net-30 commercial contracts.
 2. **Secondary Repayment:** Operating cash flows from 36% gross profit margin on placed hourly billing.
 3. **Tertiary Repayment:** Corporate UCC-1 lien on accounts receivable and owner personal guarantee.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

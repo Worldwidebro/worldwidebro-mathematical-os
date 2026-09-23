@@ -12,3 +12,11 @@ Transform industry standards through rigorous telemetry and software-driven acco
 1. Verification First: No assertions without executable proof.
 2. Capital Efficiency: Strong debt coverage and disciplined cash management.
 3. Operational Precision: Modernized workflows replacing paper and friction.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

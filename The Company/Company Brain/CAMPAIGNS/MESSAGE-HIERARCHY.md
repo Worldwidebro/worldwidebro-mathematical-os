@@ -32,3 +32,11 @@ LEVEL 1: GOVERNING NARRATIVE
 - Master OS: [[CAMPAIGNS/CAMPAIGN-OS]]
 - Core Message: [[CAMPAIGNS/CORE-MESSAGE]]
 - Proof: [[CAMPAIGNS/PROOF]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

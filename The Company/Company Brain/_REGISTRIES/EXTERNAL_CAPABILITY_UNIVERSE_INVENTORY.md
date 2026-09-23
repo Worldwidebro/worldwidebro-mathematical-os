@@ -926,3 +926,11 @@ updated: 2026-09-06
 - **Capabilities Solutions Hub:** [[14-CAPABILITIES/CAPABILITIES_INDEX|14-CAPABILITIES]]
 - **Curated Repositories & Awesome Lists:** [[09-KNOWLEDGE/Awesome-Lists|Awesome Lists]]
 - **Master Registries Portal:** [[_REGISTRIES/README|Master Registries]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -952,3 +952,11 @@ The question is never "Should we build this?"
 The question is: **"What already exists in the open-source world that we can intelligently incorporate?"**
 
 Your 904 starred repos should become the answer engine for that question.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

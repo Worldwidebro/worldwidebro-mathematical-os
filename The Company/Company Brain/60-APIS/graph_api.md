@@ -16,3 +16,11 @@ FastAPI operational server exposing unified knowledge graph, vector similarity, 
 - **Implementation Script:** [`60-APIS/graph_api.py`](file:///Users/acebless/Documents/The%20Company/Company%20Brain/60-APIS/graph_api.py)
 - **Port:** `:8000` (Mac Studio M4 Max)
 - **Auth:** Bearer token authentication
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B70|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B70]]

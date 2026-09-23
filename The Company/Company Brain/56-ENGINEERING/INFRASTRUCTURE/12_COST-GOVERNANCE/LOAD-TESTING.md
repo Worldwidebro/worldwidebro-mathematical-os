@@ -21,3 +21,11 @@ updated: 2026-09-06
 - Stress Testing: [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/STRESS-TESTING|STRESS-TESTING.md]]
 - Performance Engineering: [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/PERFORMANCE-ENGINEERING|PERFORMANCE-ENGINEERING.md]]
 - LLM Hardware Benchmarks: [LLM Hardware Registry](file:///Users/acebless/Documents/The%20Company/Company%20Brain/_REGISTRIES/LLM_HARDWARE_COMPATIBILITY_REGISTRY.yaml)
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B66|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B66]]

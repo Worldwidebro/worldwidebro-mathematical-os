@@ -16,3 +16,11 @@ LT-005 acts as the vertical operations company (Medical Courier), acting as the 
 **Gross Revenue → COGS → Gross Profit → OpEx → EBITDA → Cash Flow**
 *   **COGS:** Driver payments, Fuel, Vehicle costs, Insurance, LT-011 Software Licensing/Transaction fees.
 *   **OpEx:** Local market sales, Compliance/Regulatory, Dispatch labor (if internal), Management.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

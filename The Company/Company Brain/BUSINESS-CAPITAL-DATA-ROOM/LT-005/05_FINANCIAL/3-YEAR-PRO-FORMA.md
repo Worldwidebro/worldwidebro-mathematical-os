@@ -60,3 +60,11 @@ Year 1 DSCR:              $132,100 / $76,100 = 1.74x (Minimum threshold: 1.25x)
 - **Sector Taxonomy:** [[../../../00-CONSTITUTION/SECTOR-TAXONOMY-MASTER.md|Sector Taxonomy Master]]
 - **Technical OS:** [[../22_SYSTEM/ARCHITECTURE.md|27-Domain Operating System Architecture]]
 - **Scorecard:** [[../99_INDEX/CAPITAL-READINESS-SCORECARD.md|Capital Readiness Scorecard]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -27,3 +27,11 @@ status: "BANK_READY / GRANT_READY / INVESTOR_READY"
 | **8. Loan & CDFI Readiness** | **92%** | Verified | CDFI Acquisition Bridge (\$750K) & Commercial 30-Year DSCR (\$1.5M) underwriting packets. |
 | **9. Investor Readiness** | **88%** | Verified | Real estate preferred equity memorandum, 32.2% asset equity cushion, 24-month BRRRR recap. |
 | **COMPOSITE SCORE** | **93.3%** | **PASSED** | **Fully Packaged for CDFI Lenders, HUD Grantmakers, and Real Estate Equity LPs** |
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

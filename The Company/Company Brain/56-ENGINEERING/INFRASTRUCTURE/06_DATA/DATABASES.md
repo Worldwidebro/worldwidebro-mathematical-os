@@ -41,3 +41,11 @@ Governs the polyglot persistence substrate of Company Brain: graph databases, ve
 | Qdrant | [[56-ENGINEERING/INFRASTRUCTURE/06_DATA/QDRANT|QDRANT]] | `06_DATA/QDRANT.md` | Domain specification and operational parameters |
 | Queues | [[56-ENGINEERING/INFRASTRUCTURE/06_DATA/QUEUES|QUEUES]] | `06_DATA/QUEUES.md` | Domain specification and operational parameters |
 | Redis | [[56-ENGINEERING/INFRASTRUCTURE/06_DATA/REDIS|REDIS]] | `06_DATA/REDIS.md` | Domain specification and operational parameters |
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B66|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B66]]

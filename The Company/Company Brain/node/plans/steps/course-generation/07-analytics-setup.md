@@ -54,3 +54,11 @@ Configure learning metrics and outcomes tracking.
 - **Executing Agent:** [[16-AGENTS/AGT-009-education-eval|education-eval]]
 - **Master Evaluation Hub:** [[42-EVALUATION/README|42-EVALUATION]]
 - **Parent Plan:** [[node/plans/course-generation-loop|Course Generation Loop]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

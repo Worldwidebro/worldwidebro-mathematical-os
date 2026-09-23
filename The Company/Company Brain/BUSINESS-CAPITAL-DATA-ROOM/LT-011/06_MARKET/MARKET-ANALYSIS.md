@@ -9,3 +9,11 @@ NAICS Code: 488510 (Freight Transportation Arrangement) / 541511
 - **TAM (Total Addressable Market):** $14.2 Billion (National Market)
 - **SAM (Serviceable Addressable Market):** $1.8 Billion (Regional Operating Corridor)
 - **SOM (Serviceable Obtainable Market):** $25.0 Million (3-Year Market Capture Target)
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

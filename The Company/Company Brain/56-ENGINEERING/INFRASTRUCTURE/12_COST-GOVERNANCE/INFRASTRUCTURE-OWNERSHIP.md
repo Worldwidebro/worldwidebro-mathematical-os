@@ -20,3 +20,11 @@ Defines operational responsibility across host hardware, databases, model router
 - People Domain: [[52-PEOPLE/README|52-PEOPLE]]
 - Executive Role: [[52-PEOPLE/Executive|Executive Role]]
 - Accountability: [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/INFRASTRUCTURE-ACCOUNTABILITY|INFRASTRUCTURE-ACCOUNTABILITY.md]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B66|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B66]]

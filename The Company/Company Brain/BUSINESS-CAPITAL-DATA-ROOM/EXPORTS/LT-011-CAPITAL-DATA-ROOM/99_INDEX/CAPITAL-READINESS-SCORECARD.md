@@ -27,3 +27,11 @@ status: "BANK_READY / GRANT_READY / INVESTOR_READY"
 | **8. Loan / Bank Readiness** | **95%** | Verified | Complete SBA Express application package and factoring partner term sheet ready. |
 | **9. Investor Readiness** | **92%** | Verified | Institutional investor memorandum, SAFE term sheet ($5M cap), 17.4x LTV/CAC. |
 | **COMPOSITE SCORE** | **95.1%** | **PASSED** | **Fully Packaged for Lender & Investor Submission** |
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

@@ -300,3 +300,11 @@ relationship:
 - **Ontology Architecture:** [[07-ONTOLOGY/README|07-ONTOLOGY]]
 - **Evaluation Domain Hub:** [[42-EVALUATION/README|42-EVALUATION]]
 - **Master Control:** [[50-MASTER-CONTROL/50-MASTER-CONTROL]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

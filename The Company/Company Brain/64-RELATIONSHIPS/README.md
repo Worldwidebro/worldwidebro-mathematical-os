@@ -35,3 +35,11 @@ Maps cross-venture contracts, vendor partnerships, customer relationships, and o
 ## Navigation
 
 ← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B74|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B74]]

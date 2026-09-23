@@ -77,3 +77,11 @@ The **Local-First AI Infrastructure & Repo Intelligence Audit** is an intensive,
 - **Payment Link / Wire:** WorldwideBro Commercial Escrow
 - **Contract Type:** Standard Mutual Non-Disclosure Agreement (MNDA) + Statement of Work (SOW)
 - **Direct Engagement Contact:** `founder@worldwidebro.com`
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

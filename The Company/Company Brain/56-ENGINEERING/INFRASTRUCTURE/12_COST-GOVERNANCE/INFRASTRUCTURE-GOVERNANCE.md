@@ -21,3 +21,11 @@ Governs the architecture, deployment, security baseline, and cost control across
 - Executive Portal: [[EXECUTIVES]]
 - Directives Hub: [[DIRECTIVES]]
 - Decision Rights: [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/INFRASTRUCTURE-DECISION-RIGHTS|INFRASTRUCTURE-DECISION-RIGHTS.md]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B66|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B66]]

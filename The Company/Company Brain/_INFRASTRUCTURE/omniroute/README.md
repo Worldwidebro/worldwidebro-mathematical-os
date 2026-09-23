@@ -42,3 +42,11 @@ updated: 2026-09-06
 - **Completion Report:** [[_INFRASTRUCTURE/omniroute/COMPLETION|Integration Completion Report]]
 - **Hardware Registry:** [[_REGISTRIES/LLM_HARDWARE_COMPATIBILITY_REGISTRY.yaml]]
 - **Local Stack Registry:** [[_REGISTRIES/LOCAL_MODEL_AGENT_STACK_REGISTRY.md|LOCAL_MODEL_AGENT_STACK_REGISTRY.md]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

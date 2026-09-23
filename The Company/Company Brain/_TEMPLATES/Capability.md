@@ -65,3 +65,11 @@ updated: 2026-09-06
 - Master Gallery: [[_TEMPLATES/README|Templates Gallery]]
 - Capabilities Index: [[14-CAPABILITIES/CAPABILITIES_INDEX|14-CAPABILITIES]]
 - Canonical Capability Registry: [[_REGISTRIES/CANONICAL/CAPABILITY_REGISTRY.yaml]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -87,3 +87,11 @@ DEBT SERVICE COVERAGE RATIO (DSCR)          1.98x          14.11x          45.09
 | **Working Capital Reserve** | \$65,000 | 6 Months cloud server and telematics spatial API reserves |
 | **Legal & Loan Origination** | \$25,000 | Statutory SBA fees and banking legal documentation |
 | **TOTAL USE OF PROCEEDS** | **\$500,000** | **Fully Reconciled with Capital Facilities Registry** |
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

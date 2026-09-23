@@ -117,3 +117,11 @@ Contact: ___________________________________
 ---
 
 **NOTE:** This is a trial agreement template. For medical courier services involving PHI, legal review is recommended before execution. HealthRoute shall obtain signed HIPAA BAA prior to handling protected health information.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

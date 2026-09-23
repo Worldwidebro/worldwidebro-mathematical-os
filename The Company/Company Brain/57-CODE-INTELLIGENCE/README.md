@@ -39,3 +39,11 @@ The **Code Intelligence Domain** (`57-CODE-INTELLIGENCE`) builds and maintains s
 ## Navigation
 
 ← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B67|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B67]]

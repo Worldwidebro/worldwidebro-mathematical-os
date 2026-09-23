@@ -22,3 +22,11 @@ Canonical registry of local and frontier AI models, quantization weights, and ha
 - **OmniRoute Router:** [[_INFRASTRUCTURE/omniroute/README|OmniRoute Infrastructure]]
 - **AI Research & Benchmarks:** [[37-RESEARCH/AI-RESEARCH|AI-RESEARCH.md]]
 - **Evaluation Domain:** [[42-EVALUATION/README|42-EVALUATION]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

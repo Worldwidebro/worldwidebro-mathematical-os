@@ -472,3 +472,10 @@ export class RecruitmentAgent extends Agent {
 
 **Roadmap:** AppointmentSetter + Closer (Oct) → 10 revenue-ready (Oct) → 50 deployed (Dec) → 150+ (Mar 2027)
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

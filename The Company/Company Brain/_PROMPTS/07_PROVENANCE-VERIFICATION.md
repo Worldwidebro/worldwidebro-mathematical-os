@@ -37,3 +37,11 @@ Enforce rigorous epistemology on all retrieved context before action:
 ## 2. Invariant Rule
 
 **Never present an unverified assumption as an empirical truth.** If you did not test it, state clearly that it is unverified.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

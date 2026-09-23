@@ -14,3 +14,11 @@ WorldwideBro Fleet OS LLC operates CarrierDispatch, a transportation management 
 
 ## Corporate Mission
 Deliver algorithmic dispatch orchestration and deadhead mileage reduction for independent truckload owner-operators.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

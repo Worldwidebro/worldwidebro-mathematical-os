@@ -346,3 +346,11 @@ Target: Reduce 789 to **~200 core ventures** within 90 days.
 **Governance:** VEX (Family Office)  
 **Last Updated:** 2026-09-15  
 **Status:** BUILDING IN REAL-TIME
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

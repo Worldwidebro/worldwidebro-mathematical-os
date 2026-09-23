@@ -517,3 +517,10 @@ The DispatchOS core engine adapts seamlessly across the entire WorldwideBro vent
 - [[BUSINESS-CAPITAL-DATA-ROOM/00_ENTERPRISE_BLUEPRINT|Enterprise Blueprint]] — Family Office & Holding Company Master Structure
 - [[LT-005-OSS-INTEGRATION-ROADMAP|LT-005 OSS Integration Roadmap]] — Medical Specimen Logistics Architecture & Telematics
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

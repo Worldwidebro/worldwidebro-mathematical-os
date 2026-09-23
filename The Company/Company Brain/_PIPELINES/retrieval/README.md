@@ -115,3 +115,11 @@ Executes hybrid search combining dense vector similarity with sparse keyword mat
 - [[60-APIS|API Gateway]] — FastAPI configuration
 - [[PHASE_1_EXECUTION_PLAN|Phase 1 Roadmap]] — Complete timeline + files
 - [[COMPANY_BRAIN_KG_ASSESSMENT|KG Assessment]] — 50 capabilities status (30% complete)
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

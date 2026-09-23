@@ -79,3 +79,11 @@ graph TD
 - Agent Roles: [[CAMPAIGNS/CAMPAIGN-AGENT-ROLES]]
 - Agent Permissions: [[CAMPAIGNS/CAMPAIGN-AGENT-PERMISSIONS]]
 - Automation: [[CAMPAIGNS/CAMPAIGN-AUTOMATION]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

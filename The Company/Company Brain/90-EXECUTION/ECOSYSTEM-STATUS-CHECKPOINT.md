@@ -235,3 +235,11 @@ ACCELERATED: 40-50 hours over 2 weeks = 20-25 hours/week
 **Status: CHECKPOINT COMPLETE**  
 **Next Phase: Tier-1 Identification (Starting Sep 16)**  
 **Estimated Completion: Full Ecosystem Documented by Oct 13**
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

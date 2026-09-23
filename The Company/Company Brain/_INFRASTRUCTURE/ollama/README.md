@@ -18,3 +18,11 @@ Infrastructure hosting Ollama background inference daemon (`:11434`) for edge an
 - **OmniRoute Router:** [[_INFRASTRUCTURE/omniroute/README|OmniRoute]]
 - **Hardware Registry:** [[_REGISTRIES/LLM_HARDWARE_COMPATIBILITY_REGISTRY.yaml]]
 - **Live Infrastructure State:** [[CLAUDE.md]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

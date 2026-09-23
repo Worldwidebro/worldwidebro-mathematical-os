@@ -261,3 +261,10 @@ EXECUTION_READINESS_SUMMARY.md (✅ This file)
 
 Then: Launch Sep 12 or pivot to Sep 13-14 rebuild path.
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

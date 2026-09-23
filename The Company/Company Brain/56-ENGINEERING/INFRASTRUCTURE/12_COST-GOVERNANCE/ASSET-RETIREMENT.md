@@ -21,3 +21,11 @@ updated: 2026-09-06
 - Decommissioning: [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/DECOMMISSIONING|DECOMMISSIONING.md]]
 - Kill List: [[KILL-LIST]]
 - Technical Debt: [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/TECHNICAL-DEBT|TECHNICAL-DEBT.md]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B66|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B66]]

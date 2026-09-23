@@ -20,3 +20,11 @@ Systematic resolution of recurring technical bugs and infrastructure quirks to e
 - Incident Response: [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/INCIDENT-MANAGEMENT|INCIDENT-MANAGEMENT.md]]
 - Root Cause Analysis: [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/ROOT-CAUSE-ANALYSIS|ROOT-CAUSE-ANALYSIS.md]]
 - Technical Debt: [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/TECHNICAL-DEBT|TECHNICAL-DEBT.md]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B66|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B66]]

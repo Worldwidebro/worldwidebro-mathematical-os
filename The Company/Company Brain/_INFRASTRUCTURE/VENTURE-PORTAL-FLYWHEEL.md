@@ -95,3 +95,11 @@ The WorldwideBro venture engine operates as a closed-loop economic flywheel. No 
 1. **Rule #3 Compliance (No Fake Completion):** A venture cannot advance to `prototype` or `mvp` without an executable repository, passing tests, and verified terminal proof.
 2. **Rule #2 Compliance (Internal Reuse First):** Before creating new venture repositories, agents query the 887 existing owned repositories and canonical skills fleet to reuse existing code.
 3. **Continuous Graph Synchronization:** After any venture code change or agent reconfiguration, `graphify update .` updates the Neo4j relational graph and AST indexes.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

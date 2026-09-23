@@ -411,3 +411,11 @@ curl http://localhost:8081/status  # Agent dashboard
 ---
 
 **Status:** ✅ All systems ready. Awaiting your signal.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -33,3 +33,11 @@ When a candidate memory $m_{new}$ is proposed:
 
 1. **Automatic Resolution**: If $m_{new}$ possesses higher provenance authority (e.g. Runtime Probe vs Stale Markdown), $m_{new}$ is marked `VERIFIED` and $m_{old}$ is marked `SUPERSEDED` or `DISPROVEN`.
 2. **Escalation**: If both memories possess identical provenance tier (e.g., conflicting operator statements), the contradiction is logged to `REALITY.md` under **Known Contradictions** and flagged to the operator for immediate resolution.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

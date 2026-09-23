@@ -3,3 +3,11 @@
 # Demand Evidence
 
 Backed by $705,000 in executed Letters of Intent from verified institutional counterparties.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

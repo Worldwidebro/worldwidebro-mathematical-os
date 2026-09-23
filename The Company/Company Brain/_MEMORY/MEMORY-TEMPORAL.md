@@ -34,3 +34,11 @@ Before acting on any retrieved memory, the agent must evaluate:
 1. **Is this fact currently within its validity window?**
 2. **Has any event occurred since `last_verified_at` that would invalidate this fact?**
 3. **If `current_time - last_verified_at > validity_ttl`, trigger an immediate live verification probe before proceeding.**
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

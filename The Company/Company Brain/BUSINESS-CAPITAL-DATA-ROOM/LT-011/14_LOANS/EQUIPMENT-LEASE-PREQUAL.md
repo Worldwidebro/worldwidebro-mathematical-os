@@ -32,3 +32,11 @@
 **Next Steps:**         Finalize equipment vendor quotes, confirm Section 179 eligibility with CPA, and execute Master Lease Agreement.
 
 *⚠️ DISCLAIMER: This pre-qualification is an underwriting estimate and not a loan commitment. Final terms depend on equipment type and credit review.*
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

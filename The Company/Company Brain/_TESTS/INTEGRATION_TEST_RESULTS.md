@@ -269,3 +269,11 @@ Ready to deploy to production Oct 1, 2026.
 ---
 
 Co-Authored-By: Claude Haiku 4.5 <noreply@anthropic.com>
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

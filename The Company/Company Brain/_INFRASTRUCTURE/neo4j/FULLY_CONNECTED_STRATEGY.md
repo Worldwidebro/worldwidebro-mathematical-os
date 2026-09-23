@@ -241,3 +241,10 @@ STARTHERE
 5. Load into Neo4j, verify reachability
 6. **Result:** Fully connected file base (800 files, all discoverable from STARTHERE)
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -70,3 +70,10 @@ For LT-005 pages wiring:
 
 **See:** LT-005 repo `/WIRING-QUICK-START.md` for full details
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

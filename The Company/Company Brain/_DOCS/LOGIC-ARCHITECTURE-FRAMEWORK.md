@@ -343,3 +343,10 @@ Each control plane (CP-001 through CP-072) is a **decision authority** and **ove
 - Navigation: [[_REGISTRIES/CANONICAL/NAVIGATION_ALIASES.yaml]]
 - Master Index: [[INDEX]]
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

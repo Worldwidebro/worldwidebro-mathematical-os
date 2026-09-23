@@ -18,3 +18,11 @@ Infrastructure managing internal Apple Silicon APFS SSDs, external LaCie 4TB HDD
 - **Engineering Storage Hub:** [[56-ENGINEERING/INFRASTRUCTURE/03_STORAGE/STORAGE]]
 - **Data Retention Schedule:** [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/ASSET-DISPOSAL|Asset Disposal]]
 - **Master Control:** [[50-MASTER-CONTROL/50-MASTER-CONTROL|50-MASTER-CONTROL]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

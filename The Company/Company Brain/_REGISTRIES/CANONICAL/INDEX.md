@@ -159,3 +159,11 @@ See [[DOMAIN-MAP|DOMAIN-MAP.md]] for full descriptions. Domain INDEXes (example 
 **Wiki Maintainers:** Claude Haiku 4.5  
 **Last Audit:** 2026-09-23  
 **Architecture:** STARTHERE → INDEX (master) → DOMAIN-MAP (all 71) → Domain INDEXes (one per domain) → Files
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

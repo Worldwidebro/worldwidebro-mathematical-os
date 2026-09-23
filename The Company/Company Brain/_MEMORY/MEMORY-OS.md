@@ -110,3 +110,11 @@ Company Brain operationalizes four distinct memory layers across specialized inf
 - Pre-Response Awareness Protocol: [[_MEMORY/MEMORY-AWARENESS]]
 - Active Registry: [[_MEMORY/MEMORY-REGISTRY.json]]
 - Prompt Stack: [[_PROMPTS/10_PRE-ACTION-AWARENESS]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

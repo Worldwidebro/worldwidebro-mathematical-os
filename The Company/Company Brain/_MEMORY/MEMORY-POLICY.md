@@ -33,3 +33,11 @@
 1. **Commercial Confidentiality**: Venture proprietary algorithms, customer lists, and transaction records must be strictly isolated to their canonical venture scopes.
 2. **Local-First Boundary**: High-sensitivity memory embeddings must only be indexed on local nodes (Mac Studio M4 Max / MacBook Air). No raw proprietary embeddings may be exported to untrusted external third-party vector stores without operator authorization.
 3. **Egress Guardrails**: OmniRoute inference requests referencing semantic memory nodes must sanitize PII (Personally Identifiable Information) before external cloud LLM transmission.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

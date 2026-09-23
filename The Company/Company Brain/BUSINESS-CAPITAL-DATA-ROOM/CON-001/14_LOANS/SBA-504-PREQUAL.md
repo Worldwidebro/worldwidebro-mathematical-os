@@ -34,3 +34,11 @@
 **Next Steps:**         Identify specific facility/machinery, provide purchase agreements, and prepare 3-year pro-forma financials demonstrating revenue lift from the acquired assets.
 
 *⚠️ DISCLAIMER: This pre-qualification is an underwriting estimate and not a loan commitment. Subject to final SBA and CDC approval.*
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

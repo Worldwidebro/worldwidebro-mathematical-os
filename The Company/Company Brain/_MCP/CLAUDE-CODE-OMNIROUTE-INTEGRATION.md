@@ -289,3 +289,11 @@ Provider Router
 
 **Authority:** Infrastructure Control Plane (CP-027) + Gateway Integration  
 **Next:** Execute setup on Mac Studio
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

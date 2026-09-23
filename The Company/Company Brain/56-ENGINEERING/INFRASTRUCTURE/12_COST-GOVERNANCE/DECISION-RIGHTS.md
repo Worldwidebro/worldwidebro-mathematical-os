@@ -14,3 +14,11 @@ updated: 2026-09-06
 > **Authority:** CP-001 & CP-027
 
 This document is an alias gateway redirecting to the canonical infrastructure decision rights RACI matrix.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B66|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B66]]

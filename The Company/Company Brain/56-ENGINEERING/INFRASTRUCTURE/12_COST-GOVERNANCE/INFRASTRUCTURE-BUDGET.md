@@ -22,3 +22,11 @@ updated: 2026-09-06
 - Master Infrastructure Cost: [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/INFRASTRUCTURE-COST|INFRASTRUCTURE-COST.md]]
 - Cost Registry: [[_REGISTRIES/infrastructure_cost_registry.json|infrastructure_cost_registry.json]]
 - Financial Control Plane: [[24-FINANCE/24-FINANCE|24-FINANCE]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B66|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B66]]

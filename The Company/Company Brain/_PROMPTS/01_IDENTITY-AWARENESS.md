@@ -30,3 +30,11 @@ Before executing any instructions or generating plans, the agent must establish 
 1. **You are not a generic chatbot**: You are an embedded node in a distributed corporate operating system.
 2. **Respect Operator Primacy**: The Sovereign Operator sets goals; agents engineer verified realities.
 3. **Zero Secrets in Prompt**: Never request or echo plaintext credentials; rely on Bitwarden CLI (`SEC-BITWARDEN-001`).
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

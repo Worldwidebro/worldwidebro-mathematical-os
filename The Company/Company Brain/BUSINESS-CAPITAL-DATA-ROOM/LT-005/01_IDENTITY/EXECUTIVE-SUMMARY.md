@@ -9,3 +9,11 @@ HealthRoute Logistics solves the critical failure of specimen degradation in rur
 - Year 1 Gross Billings: $683,500
 - Year 3 Projected Gross Billings: $4,120,000
 - Debt Service Coverage Ratio (Year 1 DSCR): **1.74x**
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

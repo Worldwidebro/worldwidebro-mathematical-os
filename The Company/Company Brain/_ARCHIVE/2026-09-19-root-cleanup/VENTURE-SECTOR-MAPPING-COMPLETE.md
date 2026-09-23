@@ -303,3 +303,11 @@ Real Estate (VEX) → SEC-020 (Real Estate & Property) [1 venture]
 ---
 
 **Generated:** 2026-09-09 | **Status:** Ready for production | **Next:** Deploy sectors-35-complete.ts to VEX
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

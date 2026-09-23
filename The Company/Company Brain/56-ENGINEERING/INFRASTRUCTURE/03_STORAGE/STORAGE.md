@@ -35,3 +35,11 @@ Governs all local, external, block, object, and archive storage volumes across C
 | Object Storage | [[56-ENGINEERING/INFRASTRUCTURE/03_STORAGE/OBJECT-STORAGE|OBJECT-STORAGE]] | `03_STORAGE/OBJECT-STORAGE.md` | Domain specification and operational parameters |
 | Storage Architecture | [[56-ENGINEERING/INFRASTRUCTURE/03_STORAGE/STORAGE-ARCHITECTURE|STORAGE-ARCHITECTURE]] | `03_STORAGE/STORAGE-ARCHITECTURE.md` | Domain specification and operational parameters |
 | Storage Inventory | [[56-ENGINEERING/INFRASTRUCTURE/03_STORAGE/STORAGE-INVENTORY|STORAGE-INVENTORY]] | `03_STORAGE/STORAGE-INVENTORY.md` | Domain specification and operational parameters |
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B66|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B66]]

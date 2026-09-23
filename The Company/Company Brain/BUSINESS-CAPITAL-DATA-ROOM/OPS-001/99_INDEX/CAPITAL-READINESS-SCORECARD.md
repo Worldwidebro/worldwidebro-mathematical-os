@@ -27,3 +27,11 @@ status: "BANK_READY / GRANT_READY / INVESTOR_READY"
 | **8. Loan & Factoring Readiness** | **92%** | Verified | SBA 7(a) working capital schedule + committed \$350K payroll factoring facility. |
 | **9. Investor Readiness** | **86%** | Verified | Seed investor memorandum, \$600K raise at \$4.5M valuation cap, 34.7% markup model. |
 | **COMPOSITE SCORE** | **94.2%** | **PASSED** | **Fully Packaged for Bank, DOL Grant, and Growth Equity Review** |
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

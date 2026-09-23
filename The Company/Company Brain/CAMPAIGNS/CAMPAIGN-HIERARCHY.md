@@ -35,3 +35,11 @@ LEVEL 1: HOLDING / ENTERPRISE (WorldwideBro / ORG-001)
 - Master System: [[CAMPAIGNS/CAMPAIGN-OS]]
 - Taxonomy: [[CAMPAIGNS/CAMPAIGN-TAXONOMY]]
 - Registry: [[CAMPAIGNS/CAMPAIGN-REGISTRY]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

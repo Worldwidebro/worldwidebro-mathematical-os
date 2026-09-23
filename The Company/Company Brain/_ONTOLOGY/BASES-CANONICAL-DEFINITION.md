@@ -411,3 +411,11 @@ Therefore: **When referring to "Bases" in Company Brain, always interpret as dom
 **Authority:** User decision (Sep 22, 2026)  
 **Last Updated:** 2026-09-22  
 **Next:** Create BASE-INSTANTIATION-PLAN.md with agentic engineering approach
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

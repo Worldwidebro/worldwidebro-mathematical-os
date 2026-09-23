@@ -151,3 +151,11 @@ Ask during the call:
 - **Pilot-to-Contract Rate:** 75%+ piloting labs sign full contract within 30 days
 - **Average Contract Value:** $3.5K/month (250 specimens/day avg)
 - **Churn Rate Target:** <5% annually (compliance + speed create stickiness)
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

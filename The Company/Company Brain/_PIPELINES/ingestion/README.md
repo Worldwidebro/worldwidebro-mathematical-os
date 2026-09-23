@@ -377,3 +377,11 @@ Version: 1.0
 - CLAUDE.md — Infrastructure configuration
 - PHASE_1_EXECUTION_PLAN.md — Knowledge graph capabilities
 - REPOSITORY_INTELLIGENCE_TASK_LIST.md — Full phase breakdown
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

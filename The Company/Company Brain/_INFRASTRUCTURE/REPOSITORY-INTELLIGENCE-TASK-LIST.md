@@ -396,3 +396,11 @@
 **Generated:** 2026-09-06  
 **Authority:** CP-006 (Agent Control Plane) + CP-027 (Infrastructure)  
 **Review:** AGT-001 (Venture PM), AGT-003 (Technical)
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

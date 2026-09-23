@@ -27,3 +27,11 @@ When a prospect exhibits \(\ge 2\) high-intent signals within a 48-hour window, 
 - Master OS: [[CAMPAIGNS/CAMPAIGN-OS]]
 - Intent Scoring: [[CAMPAIGNS/INTENT]]
 - Automation Triggers: [[CAMPAIGNS/TRIGGERS]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

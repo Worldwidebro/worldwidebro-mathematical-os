@@ -14,3 +14,11 @@ Our organization operates with strong financial discipline and operational capac
 We are requesting $750,000 over 24 months to accelerate the acquisition and renovation of 20 severely distressed properties. This investment will enable us to convert these blighted units into permanently affordable, energy-efficient housing for 20 Section 8 eligible families, directly addressing the affordable housing crisis in our target markets.
 
 Given HUD's commitment to expanding access to affordable housing and eliminating community blight, we believe there is strong alignment with our work. We welcome the opportunity to discuss how this partnership might advance our shared goals of community revitalization and housing equity.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

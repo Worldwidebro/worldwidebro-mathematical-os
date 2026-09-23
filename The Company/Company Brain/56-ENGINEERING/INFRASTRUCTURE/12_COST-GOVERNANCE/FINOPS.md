@@ -32,3 +32,11 @@ FinOps in Company Brain is the operational discipline of continuous, real-time c
 - Master Infrastructure Cost: [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/INFRASTRUCTURE-COST|INFRASTRUCTURE-COST.md]]
 - Financial Control Plane: [[24-FINANCE/24-FINANCE|24-FINANCE]]
 - Commercial Monetization: [[COMMERCIAL/README|COMMERCIAL Offers]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B66|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B66]]

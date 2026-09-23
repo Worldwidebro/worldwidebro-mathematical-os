@@ -174,3 +174,11 @@ neo4j-admin import \
 - **Master Registries Portal:** [[_REGISTRIES/README]]
 - **Canonical Golden Records:** [[_REGISTRIES/CANONICAL/README]]
 - **Ground Truth Ledger:** [[REALITY]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

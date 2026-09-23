@@ -23,3 +23,11 @@ Canonical registry of procedural runbooks, execution skills, and agent operation
 - **Agents Hub:** [[16-AGENTS/README|16-AGENTS]]
 - **Fractal Loops:** [[55-LOOP-ENGINEERING/55-LOOP-ENGINEERING|55-LOOP-ENGINEERING]]
 - **Master Registries Portal:** [[_REGISTRIES/README|Master Registries]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

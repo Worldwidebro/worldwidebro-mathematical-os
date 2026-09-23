@@ -26,3 +26,11 @@ PROSPECT ──> QUALIFIED LEAD (MQL) ──> OPPORTUNITY (SQL) ──> AUDIT CL
 - Master OS: [[CAMPAIGNS/CAMPAIGN-OS]]
 - Funnel Architecture: [[CAMPAIGNS/FUNNEL-ARCHITECTURE]]
 - Sales Handoff: [[CAMPAIGNS/SALES-HANDOFF]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

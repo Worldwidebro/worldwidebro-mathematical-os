@@ -30,3 +30,11 @@ Where weights are calibrated as:
 - Master OS: [[CAMPAIGNS/CAMPAIGN-OS]]
 - Behavior: [[CAMPAIGNS/BEHAVIOR]]
 - Qualification: [[CAMPAIGNS/QUALIFICATION]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -153,3 +153,11 @@ Ask during the initial call:
 - **Average Contract Value:** $1K-1.5K/month (25-40 truck fleet avg)
 - **Customer Lifetime Savings:** $36K-60K/year (12% fuel + 10% labor savings typical)
 - **Churn Rate Target:** <8% annually (ROI keeps customers sticky)
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

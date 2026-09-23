@@ -14,3 +14,11 @@ Our organization has built a highly sustainable and verifiable operational model
 We are requesting $450,000 over 12 months to deploy our IoT temperature tracking and HIPAA state machine infrastructure across 50 rural clinic routes. This investment will enable us to secure the diagnostic pipeline for over 100,000 patient specimens, ensuring equitable access to accurate laboratory diagnostics for rural populations.
 
 Given the NIH's commitment to health equity and the improvement of diagnostic accuracy in underserved areas, we believe there is strong alignment with our work. We welcome the opportunity to discuss how this partnership might advance our shared goals.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -36,3 +36,11 @@ The **`node/`** directory houses production execution plans and structured step 
 - **Loop Orchestration**: [[55-LOOP-ENGINEERING/55-LOOP-ENGINEERING|55-LOOP-ENGINEERING]] & [[fractal]]
 - **Evaluation Agent**: [[16-AGENTS/AGT-009-education-eval|AGT-009 (Education Eval Agent)]]
 - **Database Schema**: [[_INFRASTRUCTURE/supabase-education-schema.sql]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

@@ -185,3 +185,11 @@ This master control plane document provides the canonical map and authoritative 
 | `infrastructure_dependency_registry.json` | Cross-system service dependencies and critical path graphs | [[_REGISTRIES/infrastructure_dependency_registry.json|infrastructure_dependency_registry.json]] |
 | `infrastructure_cost_registry.json` | Component-level hosting, hardware, and operational costs | [[_REGISTRIES/infrastructure_cost_registry.json|infrastructure_cost_registry.json]] |
 | `infrastructure_risk_registry.json` | Single points of failure, failover risks, and disaster mitigations | [[_REGISTRIES/infrastructure_risk_registry.json|infrastructure_risk_registry.json]] |
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B66|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B66]]

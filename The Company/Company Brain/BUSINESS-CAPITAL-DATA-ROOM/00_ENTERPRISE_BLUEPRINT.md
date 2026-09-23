@@ -156,3 +156,10 @@ This blueprint connects directly to the following operating entities in the know
 - [[BUSINESS-CAPITAL-DATA-ROOM/5-VENTURE-INTEGRATED-SUMMARY|5-Venture Integrated Legal + Financial Summary]] — Multi-Venture Taxonomy
 - [[38-OPPORTUNITIES/CAPITAL_STACK/README|Capital Stack Master Index]] — Sovereign Credit Facilities
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -21,3 +21,11 @@ updated: 2026-09-06
 - Scaling Strategy: [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/SCALING|SCALING.md]]
 - Cloud Domain: [[56-ENGINEERING/INFRASTRUCTURE/05_CLOUD/CLOUD|CLOUD.md]]
 - Load Testing: [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/LOAD-TESTING|LOAD-TESTING.md]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B66|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B66]]

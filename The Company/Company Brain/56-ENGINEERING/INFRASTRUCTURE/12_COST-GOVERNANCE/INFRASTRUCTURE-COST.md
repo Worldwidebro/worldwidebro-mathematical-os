@@ -86,3 +86,11 @@ Governs the cost & governance infrastructure domain overview systems supporting 
 | Vendor Infrastructure | [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/VENDOR-INFRASTRUCTURE|VENDOR-INFRASTRUCTURE]] | `12_COST-GOVERNANCE/VENDOR-INFRASTRUCTURE.md` | Domain specification and operational parameters |
 | Vendor Registry | [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/VENDOR-REGISTRY|VENDOR-REGISTRY]] | `12_COST-GOVERNANCE/VENDOR-REGISTRY.md` | Domain specification and operational parameters |
 | Vendor Risk | [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/VENDOR-RISK|VENDOR-RISK]] | `12_COST-GOVERNANCE/VENDOR-RISK.md` | Domain specification and operational parameters |
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B66|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B66]]

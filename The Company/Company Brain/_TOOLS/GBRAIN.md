@@ -49,3 +49,11 @@ GBrain is Garry Tan's persistent, markdown-first AI agent memory system. It prov
 
 ---
 [[INDEX]] | [[08-KNOWLEDGE-GRAPH/README|08-KNOWLEDGE-GRAPH]] | [[10-MEMORY/README|10-MEMORY]] | [[_TOOLS/README|Tools Gateway]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

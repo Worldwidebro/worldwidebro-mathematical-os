@@ -18,3 +18,11 @@ Infrastructure hosting OpenTelemetry collectors, Langfuse trace captures, and Gr
 - **Observability Pipeline:** [[_PIPELINES/observability/README|Observability Pipeline (Stage 10)]]
 - **Infrastructure Monitoring:** [[56-ENGINEERING/INFRASTRUCTURE/09_OBSERVABILITY/OBSERVABILITY]]
 - **Execution Tracking:** [[_PIPELINES/execution/EXECUTION_TRACKING|Execution Tracking]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

@@ -29,3 +29,11 @@ Actively detect and prune obsolete, superseded, or polluting memory artifacts:
 ## 2. Invariant Rule
 
 **Memory quality degrades through unchecked accumulation.** Forgetting and superseding are required to maintain high precision and low token overhead.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

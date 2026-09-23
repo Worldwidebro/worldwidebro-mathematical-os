@@ -125,3 +125,11 @@
 2. Follow up in 24 hours: "Did you get the profiles? Any questions?"
 3. If interest: Schedule 15-min call to discuss wage, start date, onboarding
 4. If placement: Create ClickUp task, set placement fee collection deadline (30 days)
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

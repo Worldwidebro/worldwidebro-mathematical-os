@@ -35,3 +35,11 @@ Governs process execution, container virtualization, Docker engine configuration
 | Reverse Proxy | [[56-ENGINEERING/INFRASTRUCTURE/07_RUNTIME/REVERSE-PROXY|REVERSE-PROXY]] | `07_RUNTIME/REVERSE-PROXY.md` | Domain specification and operational parameters |
 | Service Discovery | [[56-ENGINEERING/INFRASTRUCTURE/07_RUNTIME/SERVICE-DISCOVERY|SERVICE-DISCOVERY]] | `07_RUNTIME/SERVICE-DISCOVERY.md` | Domain specification and operational parameters |
 | Service Mesh | [[56-ENGINEERING/INFRASTRUCTURE/07_RUNTIME/SERVICE-MESH|SERVICE-MESH]] | `07_RUNTIME/SERVICE-MESH.md` | Domain specification and operational parameters |
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B66|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B66]]

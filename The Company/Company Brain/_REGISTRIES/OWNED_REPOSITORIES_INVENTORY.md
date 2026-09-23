@@ -916,3 +916,11 @@ updated: 2026-09-06
 - **Repositories Domain Hub:** [[13-REPOSITORIES/13-REPOSITORIES|13-REPOSITORIES]]
 - **Engineering Domain Hub:** [[56-ENGINEERING/README|56-ENGINEERING]]
 - **Master Registries Portal:** [[_REGISTRIES/README|Master Registries]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

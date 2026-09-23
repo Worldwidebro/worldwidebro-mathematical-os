@@ -66,3 +66,11 @@ updated: 2026-09-06
 | `CAMPAIGN-OBJECTIVE-REGISTRY.json` | JSON | Target conversions and revenue metrics for marketing | [[_REGISTRIES/CAMPAIGN-OBJECTIVE-REGISTRY.json|CAMPAIGN-OBJECTIVE-REGISTRY.json]] |
 | `EXTERNAL_CAPABILITY_UNIVERSE_INVENTORY.md` | Markdown | Master catalog of all 904 external starred supply chain repositories | [[_REGISTRIES/EXTERNAL_CAPABILITY_UNIVERSE_INVENTORY.md|EXTERNAL_CAPABILITY_UNIVERSE_INVENTORY.md]] |
 | `STARRED_REPOS_DEPENDENCY_ANALYSIS.json` | JSON | Dependency analysis of 903 starred open-source libraries | [[_REGISTRIES/RECONCILIATION_2026_09_01/STARRED_REPOS_DEPENDENCY_ANALYSIS.json|STARRED_REPOS_DEPENDENCY_ANALYSIS.json]] |
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

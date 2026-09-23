@@ -30,3 +30,11 @@ Establish working memory by auditing the live situation before proposing or chan
 
 **Do not assume state from memory when an empirical test can verify it in 50 milliseconds.**  
 If you believe a port is open, check it. If you believe a file exists, view it.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

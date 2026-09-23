@@ -12,3 +12,11 @@
 | Senior Debt Ask | $750,000 CDFI Bridge Revolver (4.0%) + $1,500,000 30-Yr DSCR (6.85%) |
 | Grant Allocation Ask | $150,000 |
 | Target Equity Valuation | $5,000,000 |
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

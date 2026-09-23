@@ -116,3 +116,11 @@ daily_sales_rhythm:
     discovery_calls_booked: 1
     audits_closed: "$7,500"
 ```
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

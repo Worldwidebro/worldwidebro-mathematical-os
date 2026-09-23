@@ -16,3 +16,11 @@ Unifies Neo4j relational graph traversals with Qdrant vector semantic similarity
 - **Implementation Script:** [`_PIPELINES/retrieval/hybrid_query.py`](file:///Users/acebless/Documents/The%20Company/Company%20Brain/_PIPELINES/retrieval/hybrid_query.py)
 - **MCP Tool Wrapper:** [`_MCP/hybrid_query_tool.py`](file:///Users/acebless/Documents/The%20Company/Company%20Brain/_MCP/hybrid_query_tool.py)
 - **FastAPI Route:** `POST /api/graph/query` on `:8000`
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -267,3 +267,11 @@ Traversing the Unified Graph:
   4. [Fiduciary Result]:
      • Maximum exposure is capped at the operating entity's working balance; zero risk to the Family Trust, Real Estate, or Holding Company.
 ```
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

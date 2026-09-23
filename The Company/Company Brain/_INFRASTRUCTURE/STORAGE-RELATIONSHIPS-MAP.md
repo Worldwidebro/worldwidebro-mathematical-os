@@ -283,3 +283,11 @@ rsync -av ~/code/ /Volumes/LaCie/backups/studio-code-$(date +%Y%m%d)/
 
 **Maintained by:** CP-027 (Infrastructure Control Plane)  
 **Related:** [[CONNECTIVITY-REGISTRY]], [[CLAUDE.md]], [[INFRASTRUCTURE-STATUS]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -1126,3 +1126,11 @@ Weekly (Monday 9 AM):
 - **Sales Pipeline:** [[20-DECISIONS/RE-001-SALES-PIPELINE|RE-001 Sales Pipeline]]
 - **Truth Ledger:** [[REALITY|REALITY.md]]
 - **Start Here:** [[STARTHERE|STARTHERE.md]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -21,3 +21,11 @@ We do not use artificial, fake countdown timers. Our scarcity is strictly operat
 - Master OS: [[CAMPAIGNS/CAMPAIGN-OS]]
 - Offer Strategy: [[CAMPAIGNS/OFFER-STRATEGY]]
 - AntiGravity Rule #4 (No Fake Scarcity): [[ANTIGRAVITY.md]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

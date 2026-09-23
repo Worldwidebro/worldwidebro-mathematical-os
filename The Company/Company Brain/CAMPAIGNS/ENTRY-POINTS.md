@@ -19,3 +19,11 @@ Every visitor entering the funnel is classified by origin and routed through ded
 
 - Funnels Master: [[CAMPAIGNS/FUNNELS]]
 - Landing Pages: [[CAMPAIGNS/LANDING-PAGES]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

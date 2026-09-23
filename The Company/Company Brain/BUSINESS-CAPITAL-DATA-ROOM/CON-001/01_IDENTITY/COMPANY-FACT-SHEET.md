@@ -12,3 +12,11 @@
 | Senior Debt Ask | $350,000 SBA 7(a) + $150,000 Working Capital Line |
 | Grant Allocation Ask | $200,000 |
 | Target Equity Valuation | $3,500,000 |
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -85,3 +85,11 @@ Human cognition and autonomous agents both require distinct memory subsystems sp
   - Shell harnesses (`_CLI/`).
   - FastMCP tool definitions (`_MCP/fastmcp_server.py`).
 - **Retrieval:** Capability mapping (`CAP-*` IDs) and task intent matching.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

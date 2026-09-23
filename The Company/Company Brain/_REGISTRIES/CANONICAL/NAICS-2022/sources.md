@@ -31,3 +31,11 @@
 - **`***`:** Re-used code, content change (with or without title change)
 - **`****`:** Re-used code, content change at lower level with insignificant impact
 - ***(Blank)*:** No change from 2017 NAICS
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

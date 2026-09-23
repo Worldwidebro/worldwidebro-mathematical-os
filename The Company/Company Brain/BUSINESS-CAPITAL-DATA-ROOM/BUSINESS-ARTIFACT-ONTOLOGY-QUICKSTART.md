@@ -397,3 +397,10 @@ Next Close: LT-005 (Sep 28)
 **Authority:** CP-032 (Business Operations Control Plane)  
 **Governed by:** [[ANTIGRAVITY|ANTIGRAVITY.md]] Rules #3 (Clear Processes) + #15 (Real-Time Visibility)
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

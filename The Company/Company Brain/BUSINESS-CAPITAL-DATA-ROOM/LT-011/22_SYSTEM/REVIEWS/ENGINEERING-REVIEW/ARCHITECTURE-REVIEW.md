@@ -5,3 +5,11 @@
 Live Surface: https://lt-011-dispatch-software.vercel.app
 Commit: 3ec3011
 Verdict: PRODUCTION READY.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -27,3 +27,11 @@ status: "BANK_READY / GRANT_READY / INVESTOR_READY"
 | **8. Loan & CDFI Readiness** | **90%** | Verified | Healthcare CDFI memorandum and equipment lease application schedules ready. |
 | **9. Investor Readiness** | **86%** | Verified | Complete investor memorandum, healthcare moat analysis, 45.8% gross margins. |
 | **COMPOSITE SCORE** | **93.4%** | **PASSED** | **Fully Packaged for CDFI & NIH Review** |
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

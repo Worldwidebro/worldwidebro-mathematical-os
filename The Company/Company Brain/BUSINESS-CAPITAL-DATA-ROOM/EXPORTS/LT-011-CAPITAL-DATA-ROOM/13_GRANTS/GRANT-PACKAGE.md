@@ -34,3 +34,11 @@ WorldwideBro Fleet OS LLC is developing an automated **Corridor Load-Chaining & 
 | **Other Direct Costs** | AWS cloud compute, spatial database hosting, Mapbox quotas | \$6,511 |
 | **Indirect Costs (10% MTDC)** | Modified Total Direct Cost allowable statutory rate | \$15,909 |
 | **TOTAL REQUESTED BUDGET** | **Reconciled exactly with USDOT SBIR guidelines** | **\$175,000** |
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

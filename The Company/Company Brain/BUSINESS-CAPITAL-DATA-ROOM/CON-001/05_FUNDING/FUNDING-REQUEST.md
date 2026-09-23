@@ -58,3 +58,11 @@ Compounding Cash Flow & Accelerated Debt Paydown
 
 ### Question 5: What Happens Without the Funding?
 Without this facility, ACE Construction remains constrained to small, unbonded private residential subcontracts (<$50,000 per job), unable to bid on lucrative commercial tenant improvements or federal public works contracts, and unable to fulfill the 40-home Piedmont Energy Retrofit consortium pipeline.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

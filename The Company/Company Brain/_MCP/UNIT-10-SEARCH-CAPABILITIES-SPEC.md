@@ -160,3 +160,10 @@ Before marking Unit 10 complete:
 **Est. time:** 30 min  
 **Blockers:** None (Unit 9 complete)
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

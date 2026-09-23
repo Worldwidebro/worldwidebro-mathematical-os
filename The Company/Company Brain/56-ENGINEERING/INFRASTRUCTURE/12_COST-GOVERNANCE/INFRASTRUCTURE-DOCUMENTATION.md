@@ -20,3 +20,11 @@ Documentation must reflect running truth. No aspirational stubs, no fake claims 
 - Master Legend: [[STARTHERE]]
 - Executive Truth: [[REALITY]]
 - Architectural Diagrams: [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/INFRASTRUCTURE-DIAGRAMS|INFRASTRUCTURE-DIAGRAMS.md]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B66|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B66]]

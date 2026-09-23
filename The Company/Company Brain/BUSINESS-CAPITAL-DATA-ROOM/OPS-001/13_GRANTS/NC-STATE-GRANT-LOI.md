@@ -24,3 +24,11 @@ Our proprietary 12-layer skill extraction engine integrates directly with state 
 
 ## Conclusion
 CareerOps provides a vital infrastructure for North Carolina's growing industrial and tech economy. We look forward to the opportunity to present a full proposal outlining our workforce impact and software architecture.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -471,3 +471,11 @@ If interest rates spike, factoring funding cost rises from 0.5% to 2%+, compress
 - **Sales Pipeline:** [[20-DECISIONS/LT-011-SALES-PIPELINE|LT-011 Sales Pipeline]]
 - **Truth Ledger:** [[REALITY|REALITY.md]]
 - **Start Here:** [[STARTHERE|STARTHERE.md]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

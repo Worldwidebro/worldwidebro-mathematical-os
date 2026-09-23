@@ -54,3 +54,11 @@ The `_REGISTRIES/CANONICAL/` directory is the authoritative golden record reposi
 - **External Capabilities Universe:** [[_REGISTRIES/EXTERNAL_CAPABILITY_UNIVERSE_INVENTORY|External Universe Inventory]]
 - **Engineering Hub:** [[56-ENGINEERING/README|56-ENGINEERING]]
 - **Master Control Hub:** [[50-MASTER-CONTROL/50-MASTER-CONTROL|50-MASTER-CONTROL]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

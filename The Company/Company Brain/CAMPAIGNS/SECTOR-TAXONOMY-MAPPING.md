@@ -50,3 +50,11 @@ graph TD
 - Capabilities by Sector: [[_REGISTRIES/capabilities-by-sector.yaml]]
 - Control Planes by Sector: [[_REGISTRIES/control-planes-by-sector.yaml]]
 - Master OS: [[CAMPAIGNS/CAMPAIGN-OS]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

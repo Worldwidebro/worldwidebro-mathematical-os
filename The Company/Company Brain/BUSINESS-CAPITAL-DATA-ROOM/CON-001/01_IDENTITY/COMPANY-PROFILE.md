@@ -14,3 +14,11 @@ ACE Construction combines commercial tenant contracting with ACE Field OS, a mob
 
 ## Corporate Mission
 Modernize commercial trade contracting through mobile-first operational precision and verified building envelope decarbonization.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -290,3 +290,11 @@ Year 5 (2032): $14M+ revenue, 3,500+ trucks, mission to become logistics OS (lik
   - [[05_FINANCIAL/3-YEAR-PRO-FORMA.md|Financial Pro Forma]]
   - [[14_LOANS/LOAN-PACKAGE.md|Commercial Loan Underwriting]]
   - [[99_INDEX/CAPITAL-READINESS-SCORECARD.md|Capital Readiness Scorecard]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

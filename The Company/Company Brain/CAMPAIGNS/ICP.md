@@ -25,3 +25,11 @@ An account is classified as **ICP** for `CAM-001` if and only if it meets all 5 
 - Master OS: [[CAMPAIGNS/CAMPAIGN-OS]]
 - Audiences: [[CAMPAIGNS/AUDIENCES]]
 - Qualification Protocol: [[CAMPAIGNS/QUALIFICATION]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

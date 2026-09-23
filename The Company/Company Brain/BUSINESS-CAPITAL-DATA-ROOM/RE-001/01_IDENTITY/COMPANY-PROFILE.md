@@ -14,3 +14,11 @@ WorldwideBro Holdings combines public tax/lien distress data crawling with in-ho
 
 ## Corporate Mission
 Acquire, rehabilitate, and stabilize distressed single-family and small multifamily properties, protecting affordable workforce housing at a 25-35% discount to FMV.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -278,3 +278,11 @@ All 12 Money Pools and ecosystem calculation models are fully implemented and ve
 - **Unit Test Coverage:** **46/46 unit tests passing** (109/109 tests passing across all suites project-wide).
 - **TypeScript Engine:** [`src/lib/finance/payment-engine.ts`](file:///Users/acebless/Documents/The%20Company/Company%20Brain/repos/con-001-ace-construction/src/lib/finance/payment-engine.ts)
 - **Next.js Production Build:** 127/127 static and dynamic routes compiled successfully with 0 errors.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -36,3 +36,11 @@ Governs telemetry, metrics, structured logging, distributed tracing (Langfuse), 
 | Telemetry | [[56-ENGINEERING/INFRASTRUCTURE/09_OBSERVABILITY/TELEMETRY|TELEMETRY]] | `09_OBSERVABILITY/TELEMETRY.md` | Domain specification and operational parameters |
 | Tracing | [[56-ENGINEERING/INFRASTRUCTURE/09_OBSERVABILITY/TRACING|TRACING]] | `09_OBSERVABILITY/TRACING.md` | Domain specification and operational parameters |
 | Uptime | [[56-ENGINEERING/INFRASTRUCTURE/09_OBSERVABILITY/UPTIME|UPTIME]] | `09_OBSERVABILITY/UPTIME.md` | Domain specification and operational parameters |
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B66|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B66]]

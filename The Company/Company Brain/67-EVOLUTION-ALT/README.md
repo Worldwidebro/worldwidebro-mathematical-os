@@ -26,3 +26,11 @@ Observes system bottlenecks and guides algorithmic evolution and capability gene
 ## Navigation
 
 ← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B77|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B77]]

@@ -242,3 +242,11 @@ Week 1 revenue workflow is production-ready!
 **Status:** ✅ COMPLETE  
 **Time Spent:** ~20 min  
 **Timeline:** Sep 19 (Phase 1A)
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

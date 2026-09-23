@@ -143,3 +143,11 @@ Every placement is legally backed by executed contracts in `repos/ops-staff-001-
 - **12 Cold Call Sprint**: [`repos/ops-staff-001-staffing/CALL-TRACKING-TEMPLATE.md`](file:///Users/acebless/Documents/The%20Company/Company%20Brain/repos/ops-staff-001-staffing/CALL-TRACKING-TEMPLATE.md)
 - **Candidate Sourcing**: [`repos/ops-staff-001-staffing/CANDIDATE-SOURCING-PLAN.md`](file:///Users/acebless/Documents/The%20Company/Company%20Brain/repos/ops-staff-001-staffing/CANDIDATE-SOURCING-PLAN.md)
 - **Matching Engine Code**: [`repos/ops-staff-001-staffing/api/match-score.js`](file:///Users/acebless/Documents/The%20Company/Company%20Brain/repos/ops-staff-001-staffing/api/match-score.js)
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

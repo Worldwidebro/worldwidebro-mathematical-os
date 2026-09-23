@@ -348,3 +348,11 @@ python3 scripts/form_submission_to_clickup.py
 - **10% needs instantiation**
 
 **Next decision:** Which phase do you want to execute first?
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

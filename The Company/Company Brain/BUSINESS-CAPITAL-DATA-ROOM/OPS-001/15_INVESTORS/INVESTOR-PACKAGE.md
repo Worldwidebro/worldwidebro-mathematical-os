@@ -44,3 +44,11 @@ WorldwideBro Staffing Ops LLC captures the high-margin spread of industrial and 
 * **Cohort 1 (50 Billable Contractors):** \$3,600,000 Gross Billings → **\$827,000 Annual Gross Profit**.
 * **Cohort 2 (120 Billable Contractors):** \$8,640,000 Gross Billings → **\$1,984,800 Annual Gross Profit**.
 * **EBITDA Margin at Scale:** $\ge 24.5\%$ due to software-driven automated candidate matching and self-service compliance.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

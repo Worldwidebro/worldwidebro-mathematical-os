@@ -30,3 +30,11 @@ Every subject access request must be authenticated, authorized, and encrypted re
 - [[56-ENGINEERING/INFRASTRUCTURE/04_NETWORK/FIREWALL|FIREWALL]]
 - [[56-ENGINEERING/INFRASTRUCTURE/08_DEPLOYMENT/POLICY-AS-CODE|POLICY-AS-CODE]]
 - [[_REGISTRIES/infrastructure_risk_registry.json|infrastructure_risk_registry.json]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B66|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B66]]

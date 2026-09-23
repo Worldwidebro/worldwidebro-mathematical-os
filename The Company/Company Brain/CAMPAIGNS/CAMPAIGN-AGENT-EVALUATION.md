@@ -19,3 +19,11 @@ Before any agent-generated asset is approved for release:
 
 - AI Campaigns: [[CAMPAIGNS/AI-CAMPAIGNS]]
 - Standards: [[CAMPAIGNS/CAMPAIGN-STANDARDS]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

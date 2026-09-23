@@ -43,3 +43,11 @@ Directly mapped to [`COMMERCIAL/OUTREACH/OUTREACH-001-TARGET-PROSPECTS.md`](file
 - Master OS: [[CAMPAIGNS/CAMPAIGN-OS]]
 - Audiences: [[CAMPAIGNS/AUDIENCES]]
 - Outbound Playbook: [[COMMERCIAL/OUTREACH/OUTREACH-001-TARGET-PROSPECTS]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

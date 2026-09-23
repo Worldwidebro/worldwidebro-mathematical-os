@@ -47,3 +47,11 @@ WorldwideBro Staffing Ops LLC addresses this systemic inefficiency by deploying 
 1. **Operating Software Platform:** Production deployment active at `https://ops-staff-001-staffing-worldwidebros-projects.vercel.app` backed by source code in `Worldwidebro/ops-staff-001-staffing`.
 2. **Standardized Legal Contracting Packets:** Fully drafted and approved Master Services Agreement (MSA), Worker Contractor Agreement, dynamic Margin Rate Schedule (targeting 35–37% gross spread), and statutory W-4/I-9 verification workflows.
 3. **Institutional Partnership Pipeline:** Initial LOI established with Industrial Staffing Consortium ($360,000 annualized value) validating commercial and social viability.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

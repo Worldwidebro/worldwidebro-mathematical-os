@@ -94,3 +94,11 @@ updated: 2026-09-06
 - **Course Generation Loop:** [[node/plans/course-generation-loop|Course Generation Loop]]
 - **MCP Server Architecture:** [[_MCP/README|MCP Architecture]]
 - **Tools Domain Hub:** [[18-TOOLS/README|18-TOOLS]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

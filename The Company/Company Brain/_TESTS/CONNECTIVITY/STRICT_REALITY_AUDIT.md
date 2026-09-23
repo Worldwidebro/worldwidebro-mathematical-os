@@ -526,3 +526,11 @@ If a connection cannot be proven via a live API, active Database, or physical ne
 - **Verification Gate Protocol:** [[00-CONSTITUTION/VERIFICATION-GATE-PROTOCOL|VERIFICATION-GATE-PROTOCOL.md]]
 - **Master Truth Ledger:** [[REALITY|REALITY.md]]
 - **Start Here:** [[STARTHERE|STARTHERE.md]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B001|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B001]]

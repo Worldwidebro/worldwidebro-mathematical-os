@@ -278,3 +278,11 @@ The Negotiation Engine surfaces contextual intelligence directly into the Recrui
 > 💡 **Recruiter Desk Alert:**  
 > *"Client offered \$32/hr bill rate for Pipe Welder requisition. Current clearing wage is \$28/hr. Burdened cost is \$32.05/hr, yielding a **-0.15% negative gross margin**.  
 > **Recommended Counter:** Counter at **\$44.00/hr bill rate** with Net 15 terms. This achieves **36.3% platform gross margin** and delivers **\$1,912 monthly contribution profit** per welder."*
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

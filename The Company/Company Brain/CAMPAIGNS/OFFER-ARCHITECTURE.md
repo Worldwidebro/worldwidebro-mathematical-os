@@ -20,3 +20,11 @@
 - Master OS: [[CAMPAIGNS/CAMPAIGN-OS]]
 - Offer Variants: [[CAMPAIGNS/OFFER-VARIANTS]]
 - Guarantees: [[CAMPAIGNS/GUARANTEES]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

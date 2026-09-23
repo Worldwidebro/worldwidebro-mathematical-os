@@ -75,3 +75,10 @@
 **Status:** READY TO EXECUTE  
 **Decision:** Confirm start time (today 5pm or Sunday morning)
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

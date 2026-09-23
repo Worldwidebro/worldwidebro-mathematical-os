@@ -20,3 +20,11 @@ Any breaking architectural change, new external dependency, or database migratio
 - Governance Charter: [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/INFRASTRUCTURE-GOVERNANCE|INFRASTRUCTURE-GOVERNANCE.md]]
 - Architectural Decisions: [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/INFRASTRUCTURE-DECISIONS|INFRASTRUCTURE-DECISIONS.md]]
 - Git Directives: [[.agents/rules/git|Git Rules]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B66|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B66]]

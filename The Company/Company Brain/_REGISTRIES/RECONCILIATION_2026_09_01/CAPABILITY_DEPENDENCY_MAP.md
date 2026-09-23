@@ -217,3 +217,11 @@ updated: 2026-09-06
 - **Canonical Capability Registry:** [[_REGISTRIES/CANONICAL/CAPABILITY_REGISTRY.yaml]]
 - **Dependency Management Architecture:** [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/DEPENDENCY-RISK]]
 - **Master Registries Portal:** [[_REGISTRIES/README]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

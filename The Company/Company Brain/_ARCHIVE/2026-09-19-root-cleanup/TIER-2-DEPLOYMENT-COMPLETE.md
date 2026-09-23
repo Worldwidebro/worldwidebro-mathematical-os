@@ -134,3 +134,11 @@ All 3 Tier-2 ventures pass 4-gate verification:
 **Execution Focus:** Week 1 revenue execution NOW (all 6 ventures ready)
 
 Co-Authored-By: Claude Haiku 4.5 <noreply@anthropic.com>
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -22,3 +22,11 @@ $$V = \frac{\text{Dream Outcome} \times \text{Perceived Likelihood of Achievemen
 - Master OS: [[CAMPAIGNS/CAMPAIGN-OS]]
 - Offer Strategy: [[CAMPAIGNS/OFFER-STRATEGY]]
 - Guarantees: [[CAMPAIGNS/GUARANTEES]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

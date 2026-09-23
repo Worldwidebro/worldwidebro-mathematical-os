@@ -3,3 +3,11 @@
 # Competitive Advantage & Moats
 
 Proprietary operating platform, bonded public sector access, and strong debt service coverage (3.73x DSCR).
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

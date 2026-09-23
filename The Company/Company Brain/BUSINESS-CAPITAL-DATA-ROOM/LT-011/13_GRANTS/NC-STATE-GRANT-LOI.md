@@ -25,3 +25,11 @@ CarrierDispatch integrates real-time load matching with non-recourse embedded fa
 
 ## Conclusion
 North Carolina's position as a logistics hub makes it the ideal proving ground for CarrierDispatch. We welcome the opportunity to submit a full proposal detailing our economic impact and technology roadmap.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

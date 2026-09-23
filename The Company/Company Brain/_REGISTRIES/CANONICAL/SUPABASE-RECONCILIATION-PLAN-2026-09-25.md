@@ -214,3 +214,11 @@ ALTER TABLE opcos ADD COLUMN IF NOT EXISTS status VARCHAR(50);
 **Status: AWAITING DECISIONS ON 4 CRITICAL QUESTIONS**
 
 **Updated:** 2026-09-25 (Sep 25 reconciliation initiated)
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

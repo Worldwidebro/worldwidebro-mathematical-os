@@ -399,3 +399,11 @@ WHERE anomalies_detected IS NOT NULL
 - Loop Engineering Gateway: [[55-LOOP-ENGINEERING/55-LOOP-ENGINEERING|55-LOOP-ENGINEERING]]
 - Runtime Execution Domain: [[22-EXECUTION/22-EXECUTION|22-EXECUTION]]
 - Master Control Gateway: [[50-MASTER-CONTROL/50-MASTER-CONTROL|50-MASTER-CONTROL]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

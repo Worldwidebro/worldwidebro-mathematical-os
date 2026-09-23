@@ -23,3 +23,11 @@ The **`review-receipts/`** directory maintains `review-receipts.jsonl`, the dedi
 - **Reviewer Identity**: Specializing QA subagent (`qa.md`, `reality-checker`, `security-appsec-engineer`).
 - **Verdict States**: `APPROVED`, `CHANGES_REQUESTED`, `REJECTED`.
 - **Enforcement**: Upholds Rule 3 of [[ANTIGRAVITY.md]] (Strictly zero fake completion).
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

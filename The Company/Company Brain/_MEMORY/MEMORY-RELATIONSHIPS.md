@@ -59,3 +59,11 @@ This capability is provided by the **Neo4j Relational Graph** (`bolt://100.87.21
   WHERE NOT (v)-[:IMPLEMENTED_BY]->()-[:PROVIDES_CAPABILITY]->(c)
   RETURN v.id, c.id, ext.name, ext.github_url;
   ```
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

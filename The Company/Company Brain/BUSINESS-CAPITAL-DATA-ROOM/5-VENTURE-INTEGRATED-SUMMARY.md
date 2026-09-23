@@ -839,3 +839,10 @@ Next Milestone: Phase II environmental report (target Sep 28)
 
 **Status:** ✅ PRODUCTION READY - Deploy with Phase 2 (Sep 8-15)
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

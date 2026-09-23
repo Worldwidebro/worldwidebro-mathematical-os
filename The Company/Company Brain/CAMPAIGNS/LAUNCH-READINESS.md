@@ -34,3 +34,11 @@ Every item must be explicitly checked and signed off before unpausing outbound s
 - QA Standard: [[CAMPAIGNS/QA]]
 - Pre-Launch: [[CAMPAIGNS/PRE-LAUNCH]]
 - Launch Protocol: [[CAMPAIGNS/LAUNCH]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

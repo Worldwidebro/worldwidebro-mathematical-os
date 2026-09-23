@@ -293,3 +293,11 @@ Fleet Size: 96 Cloud Ports
 1. **Clear Boundaries:** You now have visual proof of exactly what ground is held (`OPS-001`, `LT-005`, `CON-001`, `RE-001`, `CALLCENTER`) versus what ground is open space.
 2. **Anti-Meta-Work Focus:** You do **not** need to fill the empty desks in Layers 1–3 or Sectors 31–35 right now. They are designated empty space.
 3. **Execution Directive:** Keep the 783 frozen ventures empty, operate the 5 active data rooms, route leads through the 35 automated departments, and collect cash along the 16-step money loop.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -23,3 +23,11 @@ Canonical catalog of external service bindings, third-party API credentials, and
 - **Tools Portal:** [[18-TOOLS/README|18-TOOLS]]
 - **FastMCP Server:** [[_MCP/README|MCP Architecture]]
 - **Master Registries Portal:** [[_REGISTRIES/README|Master Registries]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

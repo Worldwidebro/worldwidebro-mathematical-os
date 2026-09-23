@@ -466,3 +466,11 @@ TRUSTED
 - **Cognition Flow:** [[_ONTOLOGY/COGNITION_FLOW.yaml|Cognition Flow Matrix]]
 - **Governance Portal:** [[46-GOVERNANCE/README|46-GOVERNANCE]]
 - **Truth Status Standard:** [[_ONTOLOGY/TRUTH_STATUS.yaml]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

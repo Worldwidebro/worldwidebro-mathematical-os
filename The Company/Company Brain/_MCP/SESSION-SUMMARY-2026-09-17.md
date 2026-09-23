@@ -334,3 +334,10 @@ Every piece is now discoverable. No scattered systems.
 **Agents working:** 4 (grant-writer, loan-officer, deal-strategist, procurement)  
 **Revenue in pipeline:** $4.85M (from $1.35M funding ask)
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

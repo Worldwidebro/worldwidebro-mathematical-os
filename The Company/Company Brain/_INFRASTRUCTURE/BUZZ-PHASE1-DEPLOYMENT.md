@@ -417,4 +417,12 @@ Once Phase 1 is complete:
 **Status:** 🟡 Ready to begin  
 **Estimated Hours:** 7 hours  
 **Start Date:** Sep 6, 2026  
-**Target Completion:** Sep 12, 2026  
+**Target Completion:** Sep 12, 2026
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

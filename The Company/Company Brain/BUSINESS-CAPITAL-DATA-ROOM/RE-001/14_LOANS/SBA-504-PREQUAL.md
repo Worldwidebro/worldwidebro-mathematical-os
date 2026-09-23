@@ -34,3 +34,11 @@
 **Next Steps:**         Confirm target asset fits owner-occupied criteria, draft business plan detailing job creation/retention (CDC requirement), and align operating entity financials.
 
 *⚠️ DISCLAIMER: This pre-qualification is an underwriting estimate and not a loan commitment. Subject to final SBA and CDC approval.*
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -445,3 +445,10 @@ The following production functions exist and can be reused for Phase 2 schema up
 
 **Updated:** 2026-09-23 (Data scientist reconciliation analysis)
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

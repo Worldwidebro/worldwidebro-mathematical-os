@@ -404,3 +404,11 @@ docker-compose -f 60-APIS/docker-compose.yml up -d
 **Authority:** CP-027 (Infrastructure Control Plane)  
 **Updated:** 2026-09-06  
 **Next Checkpoint:** Sep 19 (all 301+ agents routable)
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B70|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B70]]

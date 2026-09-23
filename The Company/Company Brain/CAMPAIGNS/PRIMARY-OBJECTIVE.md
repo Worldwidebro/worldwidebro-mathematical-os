@@ -32,3 +32,11 @@ The Primary Objective is the sole metric by which the campaign is declared a tri
 - Master OS: [[CAMPAIGNS/CAMPAIGN-OS]]
 - Objectives Framework: [[CAMPAIGNS/OBJECTIVES]]
 - Success Criteria: [[CAMPAIGNS/SUCCESS-CRITERIA]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

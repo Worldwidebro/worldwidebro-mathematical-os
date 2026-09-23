@@ -62,3 +62,11 @@ After completing the task:
 8. **Update relationships** in the knowledge graph.
 9. **Update provenance** timestamps.
 10. **Update reality state** in `REALITY.md` and `UPDATE.md`.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

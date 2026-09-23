@@ -70,3 +70,11 @@ For **LT-005**, the north star metric is: *How many medical deliveries/routes/cu
 For **LT-011**, the north star metric is: *How many dispatch transactions, fleets, operators, assets, and managed-dispatch customers can this infrastructure support profitably?*
 
 This shared technology and operations layer allows WorldwideBro to scale into new verticals (Marine, Aviation, Construction) without duplicating core infrastructure.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

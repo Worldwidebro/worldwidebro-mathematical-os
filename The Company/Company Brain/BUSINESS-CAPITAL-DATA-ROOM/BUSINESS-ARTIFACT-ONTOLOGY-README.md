@@ -455,3 +455,10 @@ By deploying this system, we expect:
 
 **Last updated:** 2026-09-08
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B005|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B005]]

@@ -14,3 +14,11 @@ HealthRoute Logistics solves the critical failure of specimen degradation in rur
 
 ## Corporate Mission
 Provide HIPAA-compliant, cold-chain validated diagnostic specimen transit connecting rural community clinics to regional reference laboratories.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

@@ -21,3 +21,11 @@ updated: 2026-09-06
 - Validation Protocols: [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/INFRASTRUCTURE-VALIDATION|INFRASTRUCTURE-VALIDATION.md]]
 - FastMCP Server: [FastMCP Server](file:///Users/acebless/Documents/The%20Company/Company%20Brain/_MCP/fastmcp_server.py)
 - Testing Domain: [[42-EVALUATION/42-EVALUATION|42-EVALUATION]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B66|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B66]]

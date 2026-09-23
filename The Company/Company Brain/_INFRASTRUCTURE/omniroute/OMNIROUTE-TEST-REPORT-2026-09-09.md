@@ -177,3 +177,11 @@ Once credentials are set, OmniRoute will:
 **Report Generated:** 2026-09-09 00:05 UTC  
 **Test Suite Status:** Ready for credential configuration  
 **Estimated Time to Full Operation:** 1-2 hours (credential retrieval + setup + verification)
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

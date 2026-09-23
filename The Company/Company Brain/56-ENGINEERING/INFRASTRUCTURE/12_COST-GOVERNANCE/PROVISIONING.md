@@ -23,3 +23,11 @@ Automated onboarding of new macOS nodes into Company Brain:
 - Lifecycle Management: [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/INFRASTRUCTURE-LIFECYCLE|INFRASTRUCTURE-LIFECYCLE.md]]
 - Runtime State: [[CLAUDE]]
 - Deployment Domain: [[56-ENGINEERING/INFRASTRUCTURE/08_DEPLOYMENT/DEPLOYMENT|DEPLOYMENT.md]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B66|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B66]]

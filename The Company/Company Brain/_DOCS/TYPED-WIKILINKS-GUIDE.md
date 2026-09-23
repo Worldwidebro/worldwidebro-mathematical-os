@@ -498,3 +498,10 @@ OPTIONAL: INDEX IN QDRANT (semantic search)
 - Agent Definitions: [[16-AGENTS/AGENT-DIRECTIVES.yaml]]
 - Graph Ingestion: [[_PIPELINES/GRAPH-INGESTION-PIPELINE.md]]
 
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

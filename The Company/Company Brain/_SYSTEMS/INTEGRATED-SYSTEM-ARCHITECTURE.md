@@ -450,3 +450,11 @@ LT-011 + OPS-001: Defer until Q1 2027
 ---
 
 **End of document. Version 1.0 | Authority: [[REALITY.md]] | Last updated: 2026-09-08**
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

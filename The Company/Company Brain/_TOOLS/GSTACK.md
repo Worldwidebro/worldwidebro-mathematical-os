@@ -37,3 +37,11 @@ GStack is Garry Tan's opinionated agent workflow suite organizing an AI assistan
 ./scripts/make-pdf generate <input.md> [output.pdf]    # Render vector print PDF
 ./scripts/make-pdf preview <input.md>                  # Live HTML browser preview
 ```
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

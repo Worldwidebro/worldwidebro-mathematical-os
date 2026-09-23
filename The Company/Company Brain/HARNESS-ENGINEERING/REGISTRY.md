@@ -209,3 +209,11 @@ Produces: Observable, auditable, reversible agent decisions
 **Authority:** Domain 11.5 (Agent Harness Engineering) — Part of 18-domain Company Brain taxonomy  
 **Control Plane:** CP-006 (Agent Control Plane), CP-027 (Infrastructure Control Plane)  
 **Related:** [[INTEGRATED-SYSTEM-ARCHITECTURE]], [[TRADING-OS]], [[Agent OS]]
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]

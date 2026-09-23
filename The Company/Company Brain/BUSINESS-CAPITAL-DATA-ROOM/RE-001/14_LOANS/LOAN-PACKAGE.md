@@ -67,3 +67,11 @@ collateral: "First-Lien Recorded Deed of Trust on Residential Real Estate"
 - [x] **Contractor Alignment:** Fixed-price construction master agreement executed with affiliate `CON-001`.
 - [x] **Institutional Pipeline:** \$705,000 in signed LOIs (`LOI-RE-001` CLT co-acquisition, `LOI-RE-002` housing authority).
 - [x] **Insurance Standards:** Builder's risk during rehabilitation converting to standard DP-3 landlord hazard and \$2,000,000 commercial general liability policy.
+
+---
+
+## Control Base Reference
+
+This document is mapped to [[B100|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B100]]
