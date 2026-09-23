@@ -1,0 +1,250 @@
+---
+# LEARNING-GRAPH.yaml
+# Layer 20: Learning & Knowledge Evolution
+# Authority: CP-001 (Sovereign Operator)
+# Generated: 2026-09-25
+# Purpose: Capture how outcomes inform future decisions; close the feedback loop
+#
+# Part of the Graph-of-Graphs operational chain:
+# [[DECISION-GRAPH]] → [[LEARNING-GRAPH]] → [[POLICY-GRAPH]] → [[SEMANTIC-GRAPH]] → [[META-GRAPH]]
+#
+# See also:
+#   - [[DECISION-GRAPH]]: Outcomes feed back into future decisions
+#   - [[POLICY-GRAPH]]: Learnings become policies
+#   - [[INTENT-GRAPH]]: Learnings refine strategy
+
+learning_graph:
+
+  description: |
+    The Learning Graph closes the feedback loop:
+
+    Experiment → Hypothesis → Execution → Outcome → Result Analysis → Lesson Extracted
+                                                                           ↓
+                                                                    Knowledge Captured
+                                                                           ↓
+                                                                    Policy/Process Updated
+                                                                           ↓
+                                                                    Future Decisions Informed
+
+    This layer operationalizes organizational learning and prevents repeating mistakes.
+
+  entity_types:
+
+    - id: "EXPERIMENT"
+      name: "[[Experiment]]"
+      definition: "A deliberate test of a hypothesis"
+      examples:
+        - "[[EXP-LT005-CustomerAcquisition-SMS]] (Test SMS-based customer acquisition)"
+        - "[[EXP-OPS001-Pricing-Tiered]] (Test tiered pricing model)"
+      properties:
+        - id: "experiment_id"
+        - hypothesis: "what do we think will happen?"
+        - test_duration: "how long to run?"
+        - control_group: "baseline"
+        - treatment_group: "variant being tested"
+        - success_metric: "how will we measure success?"
+        - owner: "[[PERSON-*]] or [[TEAM-*]]"
+        - started_at: "when did test start?"
+        - completed_at: "when did it finish?"
+        - status: "RUNNING|COMPLETED|FAILED|ABANDONED"
+
+    - id: "OUTCOME"
+      name: "[[Outcome]]"
+      definition: "What actually happened in the experiment"
+      examples:
+        - "[[OUTCOME-EXP-SMS-AcquisitionCost-$45]] (SMS acquisition cost was $45/customer)"
+      properties:
+        - id: "outcome_id"
+        - experiment: "[[EXPERIMENT-*]] this resulted from"
+        - metric_value: "the measured result"
+        - hypothesis_confirmed: "was hypothesis correct? (boolean)"
+        - confidence: "HIGH|MEDIUM|LOW"
+        - sample_size: "n="
+        - statistical_significance: "p-value or confidence level"
+
+    - id: "RESULT"
+      name: "[[Result]]"
+      definition: "Interpretation of outcome"
+      examples:
+        - "[[RESULT-SMS-Success]] (SMS is 3x cheaper than email; highly significant)"
+      properties:
+        - id: "result_id"
+        - outcome: "[[OUTCOME-*]] being interpreted"
+        - conclusion: "what does this mean?"
+        - confidence: "how sure are we?"
+        - surprising_elements: "did this contradict expectations?"
+
+    - id: "LESSON"
+      name: "[[Lesson]]"
+      definition: "Actionable insight derived from result"
+      examples:
+        - "[[LESSON-SMS-Efficient-Acquisition]] (SMS is our most efficient customer acquisition channel)"
+      properties:
+        - id: "lesson_id"
+        - result: "[[RESULT-*]] this came from"
+        - insight: "what did we learn?"
+        - applicability: "where else does this apply?"
+        - contradictions: "does this conflict with prior knowledge?"
+        - confidence: "how confident are we? (HIGH|MEDIUM|LOW)"
+
+    - id: "KNOWLEDGE"
+      name: "[[Knowledge]]"
+      definition: "Validated, reusable understanding"
+      examples:
+        - "[[KNOWLEDGE-CustomerAcquisition-SMS-Efficiency]] (SMS is 3x more efficient than email)"
+      properties:
+        - id: "knowledge_id"
+        - lesson: "[[LESSON-*]] this is based on"
+        - claim: "the piece of knowledge"
+        - evidence_count: "how many experiments support this?"
+        - last_validated_at: "when was this last confirmed?"
+        - validity_horizon: "how long is this true? (null=permanent)"
+        - contradictions: "any exceptions or conflicts?"
+
+    - id: "POLICY_CHANGE"
+      name: "[[PolicyChange]]"
+      definition: "Operational change resulting from learning"
+      examples:
+        - "[[POLICY-LT005-FocusOnSMSAcquisition]] (Allocate 70% marketing budget to SMS)"
+      properties:
+        - id: "policy_change_id"
+        - knowledge: "[[KNOWLEDGE-*]] this implements"
+        - old_policy: "what were we doing before?"
+        - new_policy: "what do we do now?"
+        - affected_teams: "who does this impact?"
+        - implementation_date: "when do we change?"
+        - expected_impact: "what improvement do we expect?"
+
+  canonical_learning_loops:
+
+    customer_acquisition_learning:
+      - id: "[[EXP-LT005-EmailVsSMS]]"
+        hypothesis: "SMS will have lower acquisition cost than email"
+        test_duration: 30  # days
+        control_group: "Email (status quo)"
+        treatment_group: "SMS (new approach)"
+        success_metric: "Customer acquisition cost (CAC)"
+        owner: "[[PERSON-LT005Manager]]"
+
+      - id: "[[OUTCOME-EmailVsSMS-Complete]]"
+        email_cac: 150
+        sms_cac: 50
+        hypothesis_confirmed: true
+        confidence: "HIGH"
+        sample_size: 500
+        statistical_significance: 0.001  # p < 0.001
+
+      - id: "[[RESULT-SMS-Clear-Winner]]"
+        conclusion: "SMS is 3x more cost-effective; statistically significant; recommend full pivot"
+        confidence: "HIGH"
+
+      - id: "[[LESSON-SMSEfficiency]]"
+        insight: "SMS acquisition is 3x cheaper than email; SMS should be primary channel"
+        applicability: "All B2C customer acquisition"
+        contradictions: "None"
+        confidence: "HIGH"
+
+      - id: "[[KNOWLEDGE-CustomerAcquisition-SMS-3xEfficient]]"
+        claim: "SMS-based customer acquisition is 3x more efficient than email"
+        evidence_count: 1  # will grow as we validate further
+        validity_horizon: null  # assuming permanent
+
+      - id: "[[POLICY-LT005-SMS-First-Strategy]]"
+        new_policy: "Allocate 70% marketing budget to SMS, 20% to email, 10% experimental"
+        affected_teams: "[[TEAM-Marketing]]"
+        implementation_date: "2026-10-01"
+        expected_impact: "20-30% reduction in total CAC"
+
+  relationship_types:
+
+    - id: "TESTS"
+      forward: "[[Experiment]] [[TESTS]] [[Hypothesis]]"
+      inverse: "[[Hypothesis]] [[TESTED_BY]] [[Experiment]]"
+      description: "Experiment validates this hypothesis"
+
+    - id: "PRODUCES"
+      forward: "[[Experiment]] [[PRODUCES]] [[Outcome]]"
+      inverse: "[[Outcome]] [[PRODUCED_BY]] [[Experiment]]"
+      description: "Experiment generates outcome"
+
+    - id: "INTERPRETS"
+      forward: "[[Result]] [[INTERPRETS]] [[Outcome]]"
+      inverse: "[[Outcome]] [[INTERPRETED_BY]] [[Result]]"
+      description: "Result gives meaning to outcome"
+
+    - id: "DERIVES_FROM"
+      forward: "[[Lesson]] [[DERIVES_FROM]] [[Result]]"
+      inverse: "[[Result]] [[YIELDS]] [[Lesson]]"
+      description: "Lesson is extracted from result"
+
+    - id: "VALIDATES"
+      forward: "[[Knowledge]] [[VALIDATED_BY]] [[Lesson]]"
+      inverse: "[[Lesson]] [[VALIDATES]] [[Knowledge]]"
+      description: "Lesson supports knowledge"
+
+    - id: "CONTRADICTS"
+      forward: "[[Knowledge]] [[CONTRADICTS]] [[Knowledge]]"
+      inverse: "[[Knowledge]] [[CONTRADICTED_BY]] [[Knowledge]]"
+      description: "Two pieces of knowledge conflict"
+
+    - id: "IMPLEMENTS"
+      forward: "[[PolicyChange]] [[IMPLEMENTS]] [[Knowledge]]"
+      inverse: "[[Knowledge]] [[IMPLEMENTED_BY]] [[PolicyChange]]"
+      description: "Policy operationalizes knowledge"
+
+  double_loop_learning:
+
+    single_loop: |
+      Detects error within existing framework and fixes it without changing framework.
+      [[Experiment]] → [[Outcome]] → [[Lesson]] → adjust tactics
+
+      Example: "Our SMS cost $50/customer. We tested longer messages and reduced it to $40."
+
+    double_loop: |
+      Questions the framework itself and changes strategy.
+      [[Experiment]] → [[Outcome]] → [[Result]] → [[Lesson]] → [[PolicyChange]] affecting strategy
+
+      Example: "Email doesn't work. Pivot entire acquisition channel strategy to SMS."
+
+    triple_loop: |
+      Questions our values, mission, or fundamental assumptions.
+      Rare. Requires executive-level decision.
+
+      Example: "Maybe we shouldn't pursue this market at all given what we learned."
+
+  graph_constraints:
+
+    constraint_1: "Every [[PolicyChange-*]] must trace back to [[Knowledge-*]]"
+    constraint_2: "Every [[Knowledge-*]] must have [[Evidence-*]]"
+    constraint_3: "If [[Knowledge-*]] contradicts existing [[KNOWLEDGE-*]], contradiction must be resolved"
+    constraint_4: "Experiments must have success metrics defined BEFORE execution"
+    constraint_5: "Outcomes must be measured and recorded (not estimated)"
+
+  integration_with_other_layers:
+
+    integrates_to_decision_graph: |
+      Future decisions are informed by knowledge.
+      Query: "What [[KNOWLEDGE-*]] should inform this [[DECISION-*]]?"
+
+    integrates_to_policy_graph: |
+      Policies are operationalized knowledge.
+      Query: "What knowledge does [[POLICY-*]] implement?"
+
+    integrates_to_intent_graph: |
+      Strategy refines based on learning.
+      Query: "Should we change [[STRATEGY-*]] based on what we learned?"
+
+    integrates_to_event_graph: |
+      Events are analyzed for patterns.
+      Query: "What patterns emerge from these [[EVENT-*]]?"
+
+# STATUS
+status:
+  learning_loops_established: ACTIVE
+  single_loop_functioning: YES
+  double_loop_functioning: PARTIAL  # need more strategic learnings
+  triple_loop_functioning: RARE
+  knowledge_management: LIVE
+  policy_update_automation: READY
+  next_phase: "Implement continuous experiment tracking and automated policy recommendations"
+

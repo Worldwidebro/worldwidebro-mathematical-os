@@ -4,6 +4,15 @@
 # Authority: CP-001 (Sovereign Operator)
 # Generated: 2026-09-25
 # Purpose: Define who/what can act, on what, under what conditions
+#
+# Part of the Graph-of-Graphs operational chain:
+# [[AUTHORITY-GRAPH]] → [[STATE-GRAPH]] → [[LIFECYCLE-GRAPH]] → [[EVENT-GRAPH]] → [[EVIDENCE-GRAPH]] → [[DECISION-GRAPH]]
+#
+# See also:
+#   - [[STATE-GRAPH]]: Uses authority to gate state transitions
+#   - [[DECISION-GRAPH]]: Authority approves decisions
+#   - [[ENTITY-GRAPH]]: Authority owns/controls entities
+#   - [[POLICY-GRAPH]]: Authority enforces policies
 
 authority_graph:
 

@@ -4,6 +4,16 @@
 # Authority: CP-001 (Sovereign Operator)
 # Generated: 2026-09-25
 # Purpose: Model entity progression through stages with milestones, budgets, and success criteria
+#
+# Part of the Graph-of-Graphs operational chain:
+# [[AUTHORITY-GRAPH]] → [[STATE-GRAPH]] → [[LIFECYCLE-GRAPH]] → [[EVENT-GRAPH]] → [[EVIDENCE-GRAPH]] → [[DECISION-GRAPH]]
+#
+# See also:
+#   - [[STATE-GRAPH]]: States map to lifecycle stages
+#   - [[EVENT-GRAPH]]: Milestone achievements recorded as events
+#   - [[DECISION-GRAPH]]: Gate decisions control stage progression
+#   - [[CONSTRAINT-GRAPH]]: Duration budgets are constraints
+#   - [[LEARNING-GRAPH]]: Lifecycle milestones teach patterns
 
 lifecycle_graph:
 

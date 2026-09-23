@@ -3464,3 +3464,24 @@ capabilities_index:
   - AGT-309
   open by addressing the user by name:
   - AGT-309
+
+---
+
+# MASTER REGISTRY LOCATION
+
+master_registry_file: "16-AGENTS/AGENT_MASTER_REGISTRY.md"
+master_registry_status: "ACTIVE (Sep 25, 2026)"
+source_of_truth: "16-AGENTS/AGENT_MASTER_REGISTRY.md"
+
+# CONSOLIDATION DETAILS
+consolidation:
+  date: 2026-09-25
+  from: "318 scattered .md files in ~/.claude/agents/"
+  to: "16-AGENTS/AGENT_MASTER_REGISTRY.md"
+  total_agents_consolidated: 309
+  id_range: "AGT-001 to AGT-318"
+  status: "COMPLETE"
+
+# This registry now serves as the index layer
+# For complete agent definitions, see AGENT_MASTER_REGISTRY.md
+

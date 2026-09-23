@@ -4,6 +4,18 @@
 # Authority: CP-001 (Sovereign Operator)
 # Generated: 2026-09-25
 # Purpose: Complete audit trail of everything that happened, when, to whom, by whom, with what authority
+#
+# Part of the Graph-of-Graphs operational chain:
+# [[AUTHORITY-GRAPH]] → [[STATE-GRAPH]] → [[LIFECYCLE-GRAPH]] → [[EVENT-GRAPH]] → [[EVIDENCE-GRAPH]] → [[DECISION-GRAPH]]
+#
+# IMMUTABLE - Events are append-only, never modified or deleted.
+#
+# See also:
+#   - [[STATE-GRAPH]]: State changes generate events
+#   - [[LIFECYCLE-GRAPH]]: Milestone achievements generate events
+#   - [[EVIDENCE-GRAPH]]: Events are evidenced by and provide evidence
+#   - [[DECISION-GRAPH]]: Decisions trigger events
+#   - [[LEARNING-GRAPH]]: Event patterns inform learning
 
 event_graph:
 

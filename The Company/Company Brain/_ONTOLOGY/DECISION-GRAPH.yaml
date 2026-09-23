@@ -4,6 +4,19 @@
 # Authority: CP-001 (Sovereign Operator)
 # Generated: 2026-09-25
 # Purpose: Model every decision, its options, criteria, authority, and outcomes
+#
+# Part of the Graph-of-Graphs operational chain:
+# [[AUTHORITY-GRAPH]] → [[STATE-GRAPH]] → [[LIFECYCLE-GRAPH]] → [[EVENT-GRAPH]] → [[EVIDENCE-GRAPH]] → [[DECISION-GRAPH]]
+#
+# Synthesizes Authority, State, Lifecycle, Event, and Evidence into actual choices.
+#
+# See also:
+#   - [[AUTHORITY-GRAPH]]: Authority approves decisions
+#   - [[EVIDENCE-GRAPH]]: Evidence supports decision options and criteria
+#   - [[EVENT-GRAPH]]: Decisions trigger events
+#   - [[LIFECYCLE-GRAPH]]: Gate decisions control stage progression
+#   - [[LEARNING-GRAPH]]: Decision outcomes feed learning
+#   - [[INTENT-GRAPH]]: Decisions execute intent hierarchy
 
 decision_graph:
 

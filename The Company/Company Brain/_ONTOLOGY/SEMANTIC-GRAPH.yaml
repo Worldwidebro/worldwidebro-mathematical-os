@@ -1,0 +1,226 @@
+---
+# SEMANTIC-GRAPH.yaml
+# Layer 21: Semantics & Meaning
+# Authority: CP-001 (Sovereign Operator)
+# Generated: 2026-09-25
+# Purpose: Define the vocabulary, terminology, classifications, and shared meaning
+#
+# Part of the Graph-of-Graphs operational chain:
+# [[POLICY-GRAPH]] → [[SEMANTIC-GRAPH]] → [[META-GRAPH]]
+#
+# See also:
+#   - [[POLICY-GRAPH]]: Policies define the rules
+#   - [[META-GRAPH]]: Meta-graph describes the system itself
+
+semantic_graph:
+
+  description: |
+    The Semantic Graph establishes shared meaning across the organization.
+
+    Without shared semantics, the same word means different things to different people:
+    - What is "revenue"? Gross? Net? Including tax?
+    - What is "complete"? Code review done? Tests pass? Deployed to prod?
+    - What is an "active" venture? Has made a sale? Has ongoing revenue? Something else?
+
+    This layer defines the vocabulary and makes meaning explicit.
+
+  entity_types:
+
+    - id: "TERM"
+      name: "[[Term]]"
+      definition: "A word or phrase with a precise meaning in this organization"
+      examples:
+        - "[[TERM-Revenue]] (Money actually received by the venture)"
+        - "[[TERM-MRR]] (Monthly Recurring Revenue; the baseline revenue each month)"
+      properties:
+        - id: "term_id"
+        - term: "the word or phrase"
+        - definition: "what does it mean in THIS organization?"
+        - aliases: "other names for this concept? (list)"
+        - examples: "how is it used in practice?"
+        - antonym: "what is the opposite?"
+        - owner: "[[PERSON-*]] who owns this definition"
+        - created_at: "when was this term formalized?"
+
+    - id: "CLASSIFICATION"
+      name: "[[Classification]]"
+      definition: "A system for categorizing entities"
+      examples:
+        - "[[CLASSIFICATION-VentureState]] (Discovered, Validating, Building, Selling, Generating Revenue, Scaling, Harvest, Exit, Archived)"
+        - "[[CLASSIFICATION-VentureArchetype]] (MarketPlace, ProductLed, Services, Licensing, Research)"
+      properties:
+        - id: "classification_id"
+        - name: "classification name"
+        - categories: "list of valid categories in this classification"
+        - applies_to: "what entities does this classify?"
+        - mutually_exclusive: "can an entity have multiple categories? (boolean)"
+
+    - id: "ENUM"
+      name: "[[Enum]]"
+      definition: "A fixed set of valid values"
+      examples:
+        - "[[ENUM-RiskLevel]] (CRITICAL, HIGH, MEDIUM, LOW)"
+        - "[[ENUM-DecisionStatus]] (PROPOSED, RESEARCHING, READY_FOR_DECISION, APPROVED, EXECUTING, COMPLETE, REJECTED)"
+      properties:
+        - id: "enum_id"
+        - name: "enum name"
+        - valid_values: "list of valid values"
+        - default_value: "what's the default if not specified?"
+
+    - id: "UNIT"
+      name: "[[Unit]]"
+      definition: "A measurement unit with conversion rules"
+      examples:
+        - "[[UNIT-Currency-USD]] (US Dollars)"
+        - "[[UNIT-Time-Days]] (Days)"
+      properties:
+        - id: "unit_id"
+        - unit_type: "what is being measured? (currency, time, distance, weight, etc.)"
+        - symbol: "standard symbol (e.g., USD, km, kg)"
+        - conversion_to_standard: "how to convert to the base unit?"
+        - base_unit: "what's the standard unit for this type?"
+
+    - id: "RELATIONSHIP_TYPE"
+      name: "[[RelationshipType]]"
+      definition: "A formal type of connection between two entities"
+      examples:
+        - "[[RELATIONSHIP-REQUIRES]] (A requires B)"
+        - "[[RELATIONSHIP-OPERATES_IN]] (Venture operates in Sector)"
+      properties:
+        - id: "relationship_type_id"
+        - forward_label: "A [[VERB]] B"
+        - inverse_label: "B [[INVERSE_VERB]] A"
+        - domain: "what type of entity can be A?"
+        - range: "what type of entity can be B?"
+        - cardinality: "one-to-one, one-to-many, many-to-many?"
+
+  canonical_vocabulary:
+
+    revenue_terms:
+      - id: "[[TERM-Revenue]]"
+        definition: "Money actually received by the venture (not accrued, not projected)"
+        examples: "Customer paid invoice; bank account reflects the deposit"
+
+      - id: "[[TERM-MRR]]"
+        definition: "Monthly Recurring Revenue; the baseline revenue each month from active subscriptions"
+        examples: "$50K/month from 1000 customers paying $50/month"
+
+      - id: "[[TERM-ARR]]"
+        definition: "Annual Recurring Revenue; MRR × 12"
+
+      - id: "[[TERM-CAC]]"
+        definition: "Customer Acquisition Cost; total marketing spend divided by new customers acquired"
+
+    venture_state_terms:
+      - id: "[[TERM-Discovered]]"
+        definition: "Venture idea identified but not yet validated with real customers"
+
+      - id: "[[TERM-Validating]]"
+        definition: "Venture is testing core assumptions with real customers; revenue <$1K/month"
+
+      - id: "[[TERM-Revenue-Generating]]"
+        definition: "Venture has proven customer demand and is generating >$1K/month revenue"
+
+  canonical_classifications:
+
+    venture_state_classification:
+      id: "[[CLASSIFICATION-VentureState]]"
+      categories:
+        - "[[STATE-Discovered]]"
+        - "[[STATE-Validating]]"
+        - "[[STATE-Building]]"
+        - "[[STATE-Selling]]"
+        - "[[STATE-Generating-Revenue]]"
+        - "[[STATE-Scaling]]"
+        - "[[STATE-Harvest]]"
+        - "[[STATE-Exit]]"
+        - "[[STATE-Dormant]]"
+        - "[[STATE-Rejected]]"
+        - "[[STATE-Archived]]"
+      mutually_exclusive: true
+
+    venture_archetype_classification:
+      id: "[[CLASSIFICATION-VentureArchetype]]"
+      categories:
+        - "[[ARCHETYPE-MarketPlace]]"
+        - "[[ARCHETYPE-ProductLed]]"
+        - "[[ARCHETYPE-Services]]"
+        - "[[ARCHETYPE-Licensing]]"
+        - "[[ARCHETYPE-Research]]"
+
+  canonical_enums:
+
+    decision_status_enum:
+      id: "[[ENUM-DecisionStatus]]"
+      valid_values:
+        - "PROPOSED (decision identified but not yet researched)"
+        - "RESEARCHING (options being evaluated)"
+        - "READY_FOR_DECISION (options evaluated; awaiting approval)"
+        - "APPROVED (decision made)"
+        - "EXECUTING (decision being implemented)"
+        - "COMPLETE (decision executed; results observed)"
+        - "REJECTED (decision declined)"
+
+    risk_level_enum:
+      id: "[[ENUM-RiskLevel]]"
+      valid_values:
+        - "CRITICAL (system fails if this happens)"
+        - "HIGH (significant impact if this happens)"
+        - "MEDIUM (moderate impact if this happens)"
+        - "LOW (minor impact if this happens)"
+
+  canonical_units:
+
+    currency:
+      - id: "[[UNIT-USD]]"
+        symbol: "$"
+        base_unit: true
+        conversion_to_standard: "1.0"
+
+      - id: "[[UNIT-EUR]]"
+        symbol: "€"
+        conversion_to_standard: "1.09 (current)"
+
+    time:
+      - id: "[[UNIT-Days]]"
+        base_unit: true
+        conversion_to_standard: "1.0"
+
+      - id: "[[UNIT-Weeks]]"
+        conversion_to_standard: "7"
+
+      - id: "[[UNIT-Months]]"
+        conversion_to_standard: "30 (approximate)"
+
+  graph_constraints:
+
+    constraint_1: "Every [[TERM-*]] must have a definition"
+    constraint_2: "Every [[ENUM-*]] must have explicit valid values"
+    constraint_3: "When ambiguity exists, this semantic layer provides the authoritative definition"
+    constraint_4: "All numeric fields must specify their [[UNIT-*]]"
+    constraint_5: "State transitions must use values from [[CLASSIFICATION-VentureState]]"
+
+  integration_with_other_layers:
+
+    integrates_to_policy_graph: |
+      Policies use semantic terms.
+      Query: "What [[POLICY-*]] define [[TERM-MRR]]?"
+
+    integrates_to_decision_graph: |
+      Decisions reference classifications and enums.
+      Query: "Can we move venture to [[STATE-Revenue-Generating]] state?"
+
+    integrates_to_learning_graph: |
+      Learnings introduce new terms.
+      Query: "Should we formalize [[TERM-*]] based on this insight?"
+
+# STATUS
+status:
+  core_vocabulary_defined: COMPLETE
+  revenue_terms_mapped: LIVE
+  venture_state_terms_mapped: LIVE
+  classifications_defined: LIVE
+  enums_standardized: LIVE
+  units_established: LIVE
+  next_phase: "Publish semantic layer to wiki as the source of truth"
+

@@ -1,0 +1,264 @@
+---
+# INTENT-GRAPH.yaml
+# Layer 19: Intent Hierarchy & Goal Decomposition
+# Authority: CP-001 (Sovereign Operator)
+# Generated: 2026-09-25
+# Purpose: Model intention hierarchy from high-level vision through tactical execution
+#
+# Part of the Graph-of-Graphs operational chain:
+# [[LEARNING-GRAPH]] → [[INTENT-GRAPH]] → [[POLICY-GRAPH]] → [[SEMANTIC-GRAPH]] → [[META-GRAPH]]
+#
+# See also:
+#   - [[DECISION-GRAPH]]: Decisions execute intent
+#   - [[LEARNING-GRAPH]]: Outcomes inform refinement of intent
+#   - [[POLICY-GRAPH]]: Policies operationalize intent
+
+intent_graph:
+
+  description: |
+    The Intent Graph breaks down organizational intention into actionable layers:
+
+    Intent (why does this organization exist?)
+        ↓
+    Vision (what do we want to become?)
+        ↓
+    Strategy (how do we get there?)
+        ↓
+    Goals (what are we aiming for this year?)
+        ↓
+    Objectives (what are we delivering this quarter?)
+        ↓
+    Projects/Initiatives (what are we working on now?)
+        ↓
+    Workflows (how will we do it?)
+        ↓
+    Tasks (what's the next step?)
+        ↓
+    Actions (do it)
+        ↓
+    Outcomes (what happened?)
+
+  entity_types:
+
+    - id: "INTENT"
+      name: "[[Intent]]"
+      definition: "The fundamental reason this organization exists"
+      examples:
+        - "[[INTENT-Company]] (Build wealth-generating ventures that solve real problems)"
+      properties:
+        - id: "intent_id"
+        - description: "why do we exist?"
+        - mission: "our fundamental purpose"
+        - values: "what we believe in"
+        - stakeholders: "who we serve?"
+        - created_at: "when was this established?"
+        - last_reviewed_at: "when was it last verified?"
+
+    - id: "VISION"
+      name: "[[Vision]]"
+      definition: "Long-term aspiration (3-5 year horizon)"
+      examples:
+        - "[[VISION-2030]] (Worldwidebro operates 100+ profitable ventures)"
+      properties:
+        - id: "vision_id"
+        - horizon_years: 5
+        - aspiration: "what future state are we building?"
+        - key_metrics: "how will we know we succeeded?"
+
+    - id: "STRATEGY"
+      name: "[[Strategy]]"
+      definition: "How we will achieve the vision"
+      examples:
+        - "[[STRATEGY-Venture-Scaling]] (Focus on proven venture models; scale to $100M+ portfolio)"
+      properties:
+        - id: "strategy_id"
+        - for_vision: "[[VISION-*]] this supports"
+        - strategic_pillars: "core approaches"
+        - competitive_advantage: "what's our edge?"
+        - time_horizon_years: 3
+
+    - id: "GOAL"
+      name: "[[Goal]]"
+      definition: "Annual target aligned with strategy"
+      examples:
+        - "[[GOAL-2026-Revenue-$10M]] (Generate $10M portfolio revenue)"
+      properties:
+        - id: "goal_id"
+        - for_year: 2026
+        - statement: "what do we aim to achieve?"
+        - success_metric: "how will we measure it?"
+        - owner: "[[PERSON-*]] or [[TEAM-*]]"
+        - target_value: 10000000
+        - unit: "USD, ventures, customers, etc."
+
+    - id: "OBJECTIVE"
+      name: "[[Objective]]"
+      definition: "Quarterly target"
+      examples:
+        - "[[OBJECTIVE-Q4-Scale-OPS001]] (Scale OPS-001 to 200 placements/month)"
+      properties:
+        - id: "objective_id"
+        - for_quarter: "Q4-2026"
+        - statement: "what are we delivering?"
+        - target_value: 200
+        - success_criteria: "what does done look like?"
+
+    - id: "PROJECT"
+      name: "[[Project]]"
+      definition: "Bounded initiative with start/end"
+      examples:
+        - "[[PROJECT-LT005-Expansion]] (Expand HealthRoute to new geographies)"
+      properties:
+        - id: "project_id"
+        - objective: "[[OBJECTIVE-*]] this serves"
+        - start_date: "project kickoff"
+        - target_completion_date: "when do we finish?"
+        - owner: "[[PERSON-*]]"
+        - budget: "financial allocation"
+        - team_size: "how many people?"
+
+    - id: "WORKFLOW"
+      name: "[[Workflow]]"
+      definition: "Process/procedure for achieving an objective"
+      examples:
+        - "[[WORKFLOW-LT005-CustomerOnboarding]] (how we onboard new customers)"
+      properties:
+        - id: "workflow_id"
+        - project: "[[PROJECT-*]] this supports"
+        - steps: "ordered list of [[TASK-*]]"
+        - owner: "[[PERSON-*]]"
+        - expected_duration: "how long should this take?"
+        - success_criteria: "how do we know it worked?"
+
+    - id: "TASK"
+      name: "[[Task]]"
+      definition: "Discrete unit of work"
+      examples:
+        - "[[TASK-LT005-OnboardingStep1]] (Collect customer info)"
+      properties:
+        - id: "task_id"
+        - workflow: "[[WORKFLOW-*]] this is part of"
+        - description: "what needs to be done?"
+        - assigned_to: "[[PERSON-*]] or [[AGENT-*]]"
+        - due_date: "when is it due?"
+        - estimated_hours: "how long?"
+        - dependencies: "what must complete first?"
+        - success_criteria: "what does done look like?"
+
+    - id: "ACTION"
+      name: "[[Action]]"
+      definition: "Atomic step in a task"
+      examples:
+        - "[[ACTION-LT005-Step1-EmailCustomer]] (Send welcome email)"
+      properties:
+        - id: "action_id"
+        - task: "[[TASK-*]] this executes"
+        - description: "the exact action"
+        - actor: "[[PERSON-*]] or [[AGENT-*]]"
+        - start_time: "when started?"
+        - end_time: "when completed?"
+        - status: "PENDING|IN_PROGRESS|COMPLETED|FAILED"
+
+  relationship_types:
+
+    - id: "SERVES"
+      forward: "[[Strategy]] [[SERVES]] [[Vision]]"
+      inverse: "[[Vision]] [[SERVED_BY]] [[Strategy]]"
+      description: "This strategy supports this vision"
+
+    - id: "ACHIEVES"
+      forward: "[[Goal]] [[ACHIEVES]] [[Strategy]]"
+      inverse: "[[Strategy]] [[ACHIEVED_BY]] [[Goal]]"
+      description: "This goal advances this strategy"
+
+    - id: "BREAKS_DOWN_TO"
+      forward: "[[Objective]] [[BREAKS_DOWN_TO]] [[Project]]"
+      inverse: "[[Project]] [[PART_OF]] [[Objective]]"
+      description: "Hierarchical decomposition"
+
+    - id: "DEFINED_BY"
+      forward: "[[Project]] [[DEFINED_BY]] [[Workflow]]"
+      inverse: "[[Workflow]] [[DEFINES_EXECUTION_OF]] [[Project]]"
+      description: "Workflow operationalizes project"
+
+    - id: "EXECUTES"
+      forward: "[[Action]] [[EXECUTES]] [[Task]]"
+      inverse: "[[Task]] [[EXECUTED_BY]] [[Action]]"
+      description: "Action carries out task"
+
+  canonical_intent_hierarchy:
+
+    company_intent:
+      id: "[[INTENT-Worldwidebro]]"
+      statement: "Build and scale profitable ventures that solve real problems for real customers"
+      mission: "Create sustainable, repeatable venture operating systems"
+      values: ["Evidence-driven", "Autonomy-enabling", "Profitable growth", "Transparent"]
+
+    five_year_vision:
+      id: "[[VISION-2030-100Ventures]]"
+      aspiration: "Operate 100+ profitable ventures generating $100M+ annual revenue"
+      horizon_years: 4  # 2026 → 2030
+      key_metrics: ["Portfolio revenue", "Venture count", "Avg venture profitability"]
+
+    strategy:
+      id: "[[STRATEGY-Venture-Scaling]]"
+      pillars: ["Prove playbooks", "Systematize operations", "Scale proven models", "Build agent OS"]
+      competitive_advantage: "Graph-native operating system for venture management"
+      time_horizon: 3
+
+    annual_goals_2026:
+      - id: "[[GOAL-2026-Revenue-$5M]]"
+        statement: "Generate $5M portfolio revenue"
+        target_value: 5000000
+        owner: "[[PERSON-CEO]]"
+
+      - id: "[[GOAL-2026-Ventures-50Active]]"
+        statement: "Get 50 ventures to active/revenue-generating state"
+        target_value: 50
+        owner: "[[PERSON-CEO]]"
+
+    q4_2026_objectives:
+      - id: "[[OBJECTIVE-Q4-LT005-Scale-to-$50K-MRR]]"
+        statement: "Scale LT-005 (HealthRoute) to $50K MRR"
+        target_value: 50000
+        success_criteria: "50+ active customers, 50+ deliveries/day, positive unit economics"
+
+      - id: "[[OBJECTIVE-Q4-OPS001-200Placements-Month]]"
+        statement: "OPS-001 reaches 200 placements/month"
+        target_value: 200
+        success_criteria: "Consistent 200+ monthly placements, 80%+ placement rate"
+
+  graph_constraints:
+
+    constraint_1: "Actions must trace back through Tasks → Workflows → Projects → Objectives → Goals → Strategy → Vision → Intent"
+    constraint_2: "Every objective must map to a goal; every goal must map to strategy"
+    constraint_3: "No action should be taken without clear intent lineage"
+    constraint_4: "Workflow changes require [[DECISION-*]] approval"
+    constraint_5: "Task assignments must account for [[RESOURCE-*]] availability and [[CONSTRAINT-*]]"
+
+  integration_with_other_layers:
+
+    integrates_to_decision_graph: |
+      Decisions execute intent.
+      Query: "What decisions advance [[GOAL-2026-Revenue-$5M]]?"
+
+    integrates_to_learning_graph: |
+      Outcomes against intent inform learning.
+      Query: "Did [[OBJECTIVE-Q4-LT005-Scale]] succeed? Why/why not?"
+
+    integrates_to_policy_graph: |
+      Policies operationalize intent.
+      Query: "What policies support [[STRATEGY-Venture-Scaling]]?"
+
+    integrates_to_workflow_graph: |
+      Workflows execute projects.
+      Query: "What workflows do we need to achieve this project?"
+
+# STATUS
+status:
+  master_intent_hierarchy_defined: COMPLETE
+  annual_goals_2026_mapped: LIVE
+  q4_2026_objectives_cascaded: LIVE
+  workflow_execution_clarity: READY
+  next_phase: "Map all actions to intent hierarchy for alignment verification"
+

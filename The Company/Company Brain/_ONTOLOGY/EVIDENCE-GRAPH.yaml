@@ -4,6 +4,18 @@
 # Authority: CP-001 (Sovereign Operator)
 # Generated: 2026-09-25
 # Purpose: Track how we know what we claim; enforce ANTIGRAVITY Rule 31 (No Fake Completion)
+#
+# Part of the Graph-of-Graphs operational chain:
+# [[AUTHORITY-GRAPH]] → [[STATE-GRAPH]] → [[LIFECYCLE-GRAPH]] → [[EVENT-GRAPH]] → [[EVIDENCE-GRAPH]] → [[DECISION-GRAPH]]
+#
+# **CRITICAL:** Operationalizes ANTIGRAVITY Rule 31 — No claim without evidence = UNVERIFIED.
+#
+# See also:
+#   - [[EVENT-GRAPH]]: Events are evidenced
+#   - [[DECISION-GRAPH]]: Decisions require evidence-backed claims
+#   - [[AUTHORITY-GRAPH]]: Authority verifies evidence
+#   - [[LEARNING-GRAPH]]: Contradictions in evidence trigger learning
+#   - [[CONSTRAINT-GRAPH]]: Evidence requirements are constraints
 
 evidence_graph:
 

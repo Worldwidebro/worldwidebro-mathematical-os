@@ -4,6 +4,15 @@
 # Authority: CP-001 (Sovereign Operator)
 # Generated: 2026-09-25
 # Purpose: Track current condition of all entities; enable state-based queries and constraints
+#
+# Part of the Graph-of-Graphs operational chain:
+# [[AUTHORITY-GRAPH]] → [[STATE-GRAPH]] → [[LIFECYCLE-GRAPH]] → [[EVENT-GRAPH]] → [[EVIDENCE-GRAPH]] → [[DECISION-GRAPH]]
+#
+# See also:
+#   - [[AUTHORITY-GRAPH]]: Gates what states are reachable
+#   - [[LIFECYCLE-GRAPH]]: States map to lifecycle stages
+#   - [[EVENT-GRAPH]]: State transitions recorded as events
+#   - [[CONSTRAINT-GRAPH]]: Constraints limit state transitions
 
 state_graph:
 

@@ -1,0 +1,210 @@
+---
+# RESOURCE-GRAPH.yaml
+# Layer 15: Resource Inventory & Allocation
+# Authority: CP-001 (Sovereign Operator)
+# Generated: 2026-09-25
+# Purpose: Model what resources exist, who owns them, how they're allocated, and when they're available
+#
+# Part of the Graph-of-Graphs operational chain:
+# [[DECISION-GRAPH]] → [[RESOURCE-GRAPH]] → [[CONSTRAINT-GRAPH]] → [[DEPENDENCY-GRAPH]] → [[LEARNING-GRAPH]]
+#
+# See also:
+#   - [[CONSTRAINT-GRAPH]]: Resource scarcity creates constraints
+#   - [[DECISION-GRAPH]]: Decisions allocate resources
+#   - [[DEPENDENCY-GRAPH]]: Resources have dependencies
+#   - [[LEARNING-GRAPH]]: Resource allocation patterns inform learning
+
+resource_graph:
+
+  description: |
+    The Resource Graph catalogs every resource in the company:
+    - Capital (cash, credit, equity)
+    - People (employees, contractors, advisors)
+    - Time (person-hours, project timeline budget)
+    - Compute (servers, GPU, database capacity)
+    - Data (datasets, models, knowledge)
+    - Property (real estate, equipment, vehicles)
+    - IP (patents, trademarks, software, frameworks)
+    - Network (relationships, partnerships, distribution)
+    - Attention (leadership time, decision-making bandwidth)
+    - Capacity (production, support, delivery capability)
+
+  entity_types:
+
+    - id: "RESOURCE"
+      name: "[[Resource]]"
+      definition: "Something of value that can be allocated or consumed"
+      examples:
+        - "[[RESOURCE-Capital-500K]] ($500K available capital)"
+        - "[[RESOURCE-VPOps-Time-2026Q4]] (VP Ops 40 hrs/week available)"
+        - "[[RESOURCE-Compute-Database-20GB]] (20GB database capacity)"
+      properties:
+        - id: "resource_id"
+        - resource_type: "CAPITAL|CASH|CREDIT|PEOPLE|TIME|COMPUTE|DATA|PROPERTY|IP|NETWORK|ATTENTION|CAPACITY"
+        - quantity: "amount available"
+        - unit: "dollars, person-hours, GB, etc."
+        - owner: "[[PERSON-*]], [[LEGAL_ENTITY-*]], or system"
+        - allocated_amount: "how much is currently allocated?"
+        - available_amount: "how much is free? (quantity - allocated)"
+        - expires_at: "when does this resource expire? (credit line ends, contract ends, etc.)"
+        - cost_per_unit: "if consumable, cost to use?"
+        - renewal_date: "when is it renewed?"
+
+    - id: "RESOURCE_ALLOCATION"
+      name: "[[ResourceAllocation]]"
+      definition: "Assignment of resource to a purpose"
+      examples:
+        - "[[ALLOC-Capital-50K-to-LT005]] ($50K allocated to HealthRoute)"
+        - "[[ALLOC-VPOps-Time-to-OPS001]] (20 hrs/week to OPS-001)"
+      properties:
+        - id: "allocation_id"
+        - resource: "[[RESOURCE-*]]"
+        - allocated_to: "[[VENTURE-*]], [[PROJECT-*]], [[AGENT-*]]"
+        - amount: "how much allocated?"
+        - allocated_by: "[[AUTHORITY-*]] who approved"
+        - start_date: "when allocation begins"
+        - end_date: "when allocation ends (null=indefinite)"
+        - priority: "relative priority if constrained"
+        - can_reallocate: "can this be moved if needed?"
+        - is_renewable: "is this recurring?"
+
+    - id: "RESOURCE_TYPE"
+      name: "[[ResourceType]]"
+      definition: "A category of resource"
+      examples:
+        - "[[RESOURCE-TYPE-Capital]] (long-term funding)"
+        - "[[RESOURCE-TYPE-PersonHours]] (labor)"
+      properties:
+        - id: "resource_type_id"
+        - name: "display name"
+        - description: "what is this resource?"
+        - is_consumable: "is it consumed when used? (boolean)"
+        - is_renewable: "can it be replenished? (boolean)"
+        - total_available: "company-wide total"
+        - units: "unit of measurement"
+        - constraint_impact: "high/medium/low — how much does shortage constrain us?"
+
+  canonical_resources:
+
+    capital_resources:
+      - id: "[[RESOURCE-Capital-Total-2026]]"
+        type: "CAPITAL"
+        quantity: 1500000  # $1.5M total
+        unit: "USD"
+        owner: "[[FAMILY-TRUST]]"
+        allocated_amount: 750000  # $750K allocated
+        available_amount: 750000  # $750K available
+        expires_at: null
+
+    cash_resources:
+      - id: "[[RESOURCE-Cash-Operating]]"
+        type: "CASH"
+        quantity: 250000
+        unit: "USD"
+        owner: "[[OPCO-001]]"
+        allocated_amount: 100000
+        available_amount: 150000
+
+    people_resources:
+      - id: "[[RESOURCE-VPOps-Time]]"
+        type: "PEOPLE"
+        quantity: 40  # 40 hours/week
+        unit: "person-hours-per-week"
+        owner: "[[PERSON-VPOps]]"
+        allocated_amount: 25
+        available_amount: 15
+        cost_per_unit: 1000  # $1000/hour
+
+    compute_resources:
+      - id: "[[RESOURCE-Database-Capacity]]"
+        type: "COMPUTE"
+        quantity: 100  # 100 GB
+        unit: "GB"
+        owner: "[[INFRASTRUCTURE-Supabase]]"
+        allocated_amount: 45
+        available_amount: 55
+        cost_per_unit: 10  # $10/GB/month
+        renewal_date: "2026-10-01"
+
+    data_resources:
+      - id: "[[RESOURCE-CustomerDatabase]]"
+        type: "DATA"
+        quantity: 5000  # 5,000 customer records
+        unit: "records"
+        owner: "[[VENTURE-LT005]]"
+        allocated_amount: 5000
+        available_amount: 0
+
+    time_resources:
+      - id: "[[RESOURCE-Q4-2026-Development-Time]]"
+        type: "TIME"
+        quantity: 520  # 10 people × 52 weeks
+        unit: "person-weeks"
+        owner: "[[TECH-TEAM]]"
+        allocated_amount: 300
+        available_amount: 220
+        expires_at: "2026-12-31"
+
+  relationship_types:
+
+    - id: "ALLOCATES"
+      forward: "[[Authority]] [[ALLOCATES]] [[Resource]] to [[Venture]]"
+      inverse: "[[Venture]] [[RECEIVES_ALLOCATION]] from [[Authority]]"
+      description: "Resource is allocated to this purpose"
+      properties:
+        - amount: "how much"
+        - approval_date: "when approved"
+
+    - id: "OWNS"
+      forward: "[[Entity]] [[OWNS]] [[Resource]]"
+      inverse: "[[Resource]] [[OWNED_BY]] [[Entity]]"
+      description: "This entity owns this resource"
+
+    - id: "CONSUMES"
+      forward: "[[Venture]] [[CONSUMES]] [[Resource]]"
+      inverse: "[[Resource]] [[CONSUMED_BY]] [[Venture]]"
+      description: "This venture uses this resource"
+      properties:
+        - consumption_rate: "how much per unit time?"
+        - remaining_budget: "how much left?"
+
+    - id: "CONSTRAINED_BY"
+      forward: "[[Venture]] [[CONSTRAINED_BY]] [[Resource]]"
+      inverse: "[[Resource]] [[CONSTRAINS]] [[Venture]]"
+      description: "Shortage of this resource limits this venture"
+
+  graph_constraints:
+
+    constraint_1: "Total allocated cannot exceed total quantity for any resource"
+    constraint_2: "Resource allocations must be approved by appropriate [[AUTHORITY-*]]"
+    constraint_3: "Expired resources cannot be allocated"
+    constraint_4: "Allocation priority determines reallocation order if shortage occurs"
+    constraint_5: "Consumable resources must track consumption rate"
+    constraint_6: "Renewable resources must have renewal dates"
+
+  integration_with_other_layers:
+
+    integrates_to_constraint_graph: |
+      Resource scarcity creates [[CONSTRAINT-*]].
+      Query: "What resources constrain [[VENTURE-LT005]]?"
+
+    integrates_to_dependency_graph: |
+      Critical resources have dependencies.
+      Query: "What happens to LT-005 if database capacity reaches 100%?"
+
+    integrates_to_decision_graph: |
+      Decisions allocate resources.
+      Query: "What [[DECISION-*]] allocated $50K to CON-001?"
+
+    integrates_to_learning_graph: |
+      Resource allocation patterns inform efficiency learning.
+      Query: "Are we over-allocating compute? Under-allocating time?"
+
+# STATUS
+status:
+  total_resource_types: 10
+  resource_examples: 15+
+  allocation_tracking: LIVE
+  constraint_generation: READY
+  next_phase: "Populate with actual company resource inventory"
+
