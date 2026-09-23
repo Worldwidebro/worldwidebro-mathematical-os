@@ -2,7 +2,8 @@
 
 **Updated:** 2026-09-23  
 **Scope:** Data integrity audit for venture classification  
-**Purpose:** Single source of truth for sector, OpCo, Base, and venture mappings
+**Purpose:** Single source of truth for sector, OpCo, Base, and venture mappings  
+**Navigation:** [[STARTHERE]] | [[DOMAIN-MAP|DOMAIN-MAP.md]] | [[LOG|LOG.md]] | [[INDEX|INDEX.md]]
 
 ---
 

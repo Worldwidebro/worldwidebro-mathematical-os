@@ -8,17 +8,17 @@ authority: "CP-001 / CP-027"
 updated: 2026-09-23
 ---
 
-**Navigation:** [[STARTHERE]] | [[REALITY]] | [[RESPECT|00_RESPECT/RESPECT]] | [[INDEX|_REGISTRIES/CANONICAL/INDEX.md]] | [[DOMAIN-MAP|_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[LOG|_REGISTRIES/CANONICAL/LOG.md]]
+**Navigation:** [[STARTHERE]] | [[REALITY]] | [[00_RESPECT/README|RESPECT]] | [[INDEX|_REGISTRIES/CANONICAL/INDEX.md]] | [[DOMAIN-MAP|_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[LOG|_REGISTRIES/CANONICAL/LOG.md]]
 
 # START HERE
 
 > **Canonical Document ID:** `DOC-START-001`  
 > **Authority:** Sovereign Operator & Executive Governance (CP-001 / CP-027)  
-> **Status:** LIVE ORIENTATION LEGEND — Updated 2026-09-09 | **Sep 9 Audit:** [[master-private-firm-ontology|Master Ontology]] + Sector Wiring Gaps + Finance Registry Gaps mapped  
+> **Status:** LIVE ORIENTATION LEGEND — Updated 2026-09-09 | **Sep 9 Audit:** [[00-CONSTITUTION/master-private-firm-ontology|Master Ontology]] + Sector Wiring Gaps + Finance Registry Gaps mapped  
 > **Master Operating Contract:** [[ANTIGRAVITY|ANTIGRAVITY.md]]  
 > **Universal Agent Operating Contract:** [[AGENTS|AGENTS.md]]  
-> **Respect Control Layer:** [[00_RESPECT/RESPECT|RESPECT.md]]  
-> **Memory Operating System:** [[_MEMORY/MEMORY-OS|MEMORY-OS.md]]  
+> **Respect Control Layer:** [[00_RESPECT/README|RESPECT.md]]  
+> **Memory Operating System:** [[_MEMORY/MEMORY-ARCHITECTURE|MEMORY-ARCHITECTURE.md]]  
 > **First-Read Document For:** You, Claude Code, Codex, Gemini, Cursor, Autonomous Subagents, New Collaborators, Future-You.
 
 ---
@@ -73,10 +73,10 @@ Individual files (everything discoverable from above)
 
 Before writing code, declaring features, or making changes, read in exact sequence:
 1. [[REALITY|REALITY.md]] — What is actually true (evidence outranks documentation).
-2. [[00_RESPECT/RESPECT|RESPECT.md]] — The 20 core rules of respect and governance (what we are permitted to do).
+2. [[00_RESPECT/README|RESPECT.md]] — The 20 core rules of respect and governance (what we are permitted to do).
 3. [[ANTIGRAVITY|ANTIGRAVITY.md]] — The 45 non-negotiable operating rules (strictly zero fake completion).
-4. [[_MEMORY/MEMORY-OS|MEMORY-OS.md]] — The 10-stage cognitive cycle & four-tier memory architecture.
-5. [[_PROMPTS/10_PRE-ACTION-AWARENESS|10_PRE-ACTION-AWARENESS.md]] — Mandatory 20-point pre-action awareness checklist.
+4. [[_MEMORY/MEMORY-ARCHITECTURE|MEMORY-ARCHITECTURE.md]] — The 10-stage cognitive cycle & four-tier memory architecture.
+5. [[_PROMPTS/07_PROVENANCE-VERIFICATION|PRE-ACTION-AWARENESS.md]] — Mandatory awareness checklist.
 6. [[AGENTS|AGENTS.md]] — Universal portable agent operating guidelines and system orientation.
 7. [[EVIDENCE|EVIDENCE.md]] — Verified empirical proof log for all system claims.
 8. [[ECONOMIC-REALITY|ECONOMIC-REALITY.md]] — Cash, runway, margins, and commercial survival metrics.
@@ -87,7 +87,7 @@ Before writing code, declaring features, or making changes, read in exact sequen
 13. [[UPDATE|UPDATE.md]] — What changed in the recent working sessions.
 
 ### Master Private Firm Ontology (Sep 9, 2026 — THE BLUEPRINT)
-- [[master-private-firm-ontology|Master Private Firm Ontology.md]] — **THE FOUNDATION:** 34-layer architecture showing how Principal → Family → Private Firm → Holdings → Ventures → Markets → Customers → Revenue feeds back to Capital. Shows that all systems (sectors, ventures, metrics, agents, Neo4j, Obsidian) are views of one graph, not separate databases. **Next phase:** Build PRIVATE-FIRM-ONTOLOGY.xml so all systems speak one vocabulary.
+- [[00-CONSTITUTION/master-private-firm-ontology|Master Private Firm Ontology.md]] — **THE FOUNDATION:** 34-layer architecture showing how Principal → Family → Private Firm → Holdings → Ventures → Markets → Customers → Revenue feeds back to Capital. Shows that all systems (sectors, ventures, metrics, agents, Neo4j, Obsidian) are views of one graph, not separate databases. **Next phase:** Build PRIVATE-FIRM-ONTOLOGY.xml so all systems speak one vocabulary.
 
 ### Capital & Holding Company Architecture
 
@@ -464,8 +464,8 @@ All verified ground-truth registries are located under [[_REGISTRIES/]]:
 
 ## 12. COGNITIVE & ETHICAL CONTROL LAYERS
 
-- **Respect Control Layer:** [[00_RESPECT/RESPECT|RESPECT.md]] & [[00_RESPECT/RESPECT-OS|RESPECT-OS.md]] (20 Core Rules, Boundaries, Agency, Truth).
-- **Memory Operating System:** [[_MEMORY/MEMORY-OS|MEMORY-OS.md]], [[_MEMORY/MEMORY-MODEL|MEMORY-MODEL.md]], and [[_MEMORY/MEMORY-ARCHITECTURE|MEMORY-ARCHITECTURE.md]].
+- **Respect Control Layer:** [[00_RESPECT/README|RESPECT.md]] (20 Core Rules, Boundaries, Agency, Truth).
+- **Memory Operating System:** [[_MEMORY/MEMORY-LIFECYCLE|MEMORY-LIFECYCLE.md]], [[_MEMORY/MEMORY-CONSOLIDATION|MEMORY-CONSOLIDATION.md]], and [[_MEMORY/MEMORY-ARCHITECTURE|MEMORY-ARCHITECTURE.md]].
 - **Operational Prompt Stack:** [[_PROMPTS/10_PRE-ACTION-AWARENESS|10_PRE-ACTION-AWARENESS.md]] (The "Always-On" Pre-Action Protocol).
 - **Memory Registry:** [[_MEMORY/MEMORY-REGISTRY.json]] (Active vector collections and backends).
 

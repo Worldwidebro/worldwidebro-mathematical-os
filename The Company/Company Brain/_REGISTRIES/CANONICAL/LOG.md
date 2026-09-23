@@ -2,7 +2,8 @@
 
 **Purpose:** Append-only record of reconciliation work, discoveries, and milestones  
 **Format:** `## [YYYY-MM-DD] [phase | ingest | query | lint | decision] | Title`  
-**Updated:** 2026-09-23
+**Updated:** 2026-09-23  
+**Navigation:** [[STARTHERE|../../STARTHERE.md]] | [[INDEX|INDEX.md]] | [[DOMAIN-MAP|DOMAIN-MAP.md]] | [[LOG|LOG.md]]
 
 ---
 

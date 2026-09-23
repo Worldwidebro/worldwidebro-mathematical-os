@@ -6,6 +6,20 @@
 
 ---
 
+## SCATTERED & INFRASTRUCTURE DIRECTORIES (Wired Sep 23)
+
+| Folder | Purpose | Index |
+|--------|---------|-------|
+| **_MEMORY** | Memory system, learning cycles | [[../../_MEMORY/INDEX|_MEMORY/INDEX.md]] |
+| **_REFERENCE** | Architecture docs, runbooks | [[../../_REFERENCE/INDEX|_REFERENCE/INDEX.md]] |
+| **00_RESPECT** | Respect framework, accountability | [[../../00_RESPECT/INDEX|00_RESPECT/INDEX.md]] |
+| **_PROMPTS** | Pre-action awareness, decision prompts | See [[../../../_PROMPTS|_PROMPTS/]] |
+| **_AGENTS** | Agent definitions, configurations | See [[../../../_AGENTS|_AGENTS/]] |
+| **_REGISTRIES** | Canonical registries, truth sources | See [[../../../_REGISTRIES|_REGISTRIES/]] |
+| **_ONTOLOGY** | Schema definitions, taxonomies | See [[../../../_ONTOLOGY|_ONTOLOGY/]] |
+
+---
+
 ## WIRING ARCHITECTURE
 
 ```
