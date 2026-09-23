@@ -1,41 +1,40 @@
 # CLAUDE.md — Company Brain (Session Guidance)
 
 **Scope:** Active session instructions only; reference docs in `_REFERENCE/` and master plan in global ~/.claude/CLAUDE.md  
-**Updated:** 2026-09-19  
+**Updated:** 2026-09-22 (AUDIT COMPLETE)  
 **Authority:** Infrastructure CP-027 + Execution CP-033 + Revenue CP-021  
-**Current Phase:** Week 2 Revenue Scaling (Sep 16–22) | [[ANTIGRAVITY|ANTIGRAVITY.md]] (45 operating rules)
+**Current Phase:** Week 3 Graph-Native Deployment + Agentic Scaling (Sep 23–30) | [[ANTIGRAVITY|ANTIGRAVITY.md]] (45 operating rules)
 
 ---
 
-## STATUS SNAPSHOT — Sep 19, 2026
+## STATUS SNAPSHOT — Sep 22, 2026 (VERIFIED)
 
 ✅ **Phase 1 LOCKED** (Sep 6-15) — Agent Enablement complete, audit system operational  
 ✅ **Phase 2 LAUNCHED** (Sep 16-30) — Graph-native refactor (Neo4j schema deployment Sep 18)  
 ✅ **Infrastructure LIVE** — Neo4j (20,363 edges, constraints deployed), Qdrant (17,236 vectors), OmniRoute, Ollama  
-✅ **6 Tier-0 Ventures Verified** — All deployed and HTTP 200:
-- **OPS-001, LT-005, CALLCENTER** (Revenue-Ready) → Making revenue calls Week 2
-- **CON-001, RE-001** (Demo-Ready) → API/engine builds Week 2-3
-- **LT-011** (Skeleton) → Assessment Week 2
+✅ **Folder Structure AUDITED** — 132 directories (71 domains + 24 infrastructure + 37 additional), 36 sectors, 789 ventures, 59 canonical registries (see [[AUDIT-2026-09-22|_REFERENCE/AUDIT-2026-09-22.md]])
+✅ **6 Tier-0 Ventures + Week 2 Execution** → Week 2 results TBD, Week 3 planning active
+✅ **36-Sector Model LIVE** — Executive divisions, portfolio horizons, archetypes mapped in ALL_789_VENTURES_36_SECTOR_ALIGNMENT.csv (Sep 22)
 
-📊 **Week 1 Result:** TBD (Sep 10-15 execution) | **Week 2 Target:** $10K–$25K (scaling)
+📊 **Week 2 Result:** (Sep 10-22 execution recap needed) | **Week 3 Target:** Deploy graph queries + scale 3 revenue loops
 
 ---
 
-## WEEK 2 EXECUTION FOCUS (Sep 16–22)
+## WEEK 3 EXECUTION FOCUS (Sep 23–30)
 
 **Master plan:** [[WEEK1-EXECUTION-PLAN|20-DECISIONS/WEEK1-EXECUTION-PLAN.md]] + [[PHASE-2A-AGENTIC-ENGINEERING-PLAN|20-DECISIONS/PHASE-2A-AGENTIC-ENGINEERING-PLAN.md]]
 
-### Three Revenue-Ready Ventures (Scaling Week 2)
+### Three Revenue-Ready Ventures (Continued Scaling)
 1. **OPS-001** → Cold call campaign + lead follow-up (ANTIGRAVITY Rule 44: Execute → Observe → Verify)
 2. **LT-005** → B2B outreach scaling + booking automation (Rule 2: Determine problem, user, outcome)
 3. **CALLCENTER** → Live call routing + quality scoring (Rule 18: Observability mandated)
 
-### Parallel: Graph-Native Phase 2 (Sep 18–30)
+### Graph-Native Phase 2 Deployment (Sep 18–30)
 - **Neo4j Schema:** Deployed Sep 18 (constraints, indexes, integrity gates live)
-- **YAML→Graph Pipeline:** 14-day migration (Sep 17–Oct 1)
-- **Agent Context Assembly:** Subgraph queries for L2/L3 autonomy
+- **YAML→Graph Pipeline:** 14-day migration (Sep 17–Oct 1) — query new 36-sector model via Cypher
+- **Agent Context Assembly:** Subgraph queries for L2/L3 autonomy via portfolio horizons + archetypes
 
-**See also:** [[VENTURE-AUDIT-FRAMEWORK|20-DECISIONS/VENTURE-AUDIT-FRAMEWORK.md]] (12-layer, Rule 2 enforced) + [[PHASE-2-PHASE-2A-INTEGRATION-MAP|20-DECISIONS/PHASE-2-PHASE-2A-INTEGRATION-MAP.md]]
+**See also:** [[VENTURE-AUDIT-FRAMEWORK|20-DECISIONS/VENTURE-AUDIT-FRAMEWORK.md]] (12-layer, Rule 2 enforced) + [[PHASE-2-PHASE-2A-INTEGRATION-MAP|20-DECISIONS/PHASE-2-PHASE-2A-INTEGRATION-MAP.md]] + [[AUDIT-2026-09-22|_REFERENCE/AUDIT-2026-09-22.md]]
 
 ---
 
@@ -54,10 +53,12 @@
 
 ## QUICK REFERENCE
 
-**Logic Architecture:** [[_DOCS/LOGIC-ARCHITECTURE-FRAMEWORK.md]] (72 logic layers, 12 domains, 72 control points, autonomous loop patterns) — [[_REGISTRIES/CANONICAL/LOGIC_LAYERS_REGISTRY.yaml|Master Registry]]  
+**Audit Trail:** [[AUDIT-2026-09-22|_REFERENCE/AUDIT-2026-09-22.md]] (verified folder structure, sector count, registries, dual naming conflicts)  
+**Logic Architecture:** [[_DOCS/LOGIC-ARCHITECTURE-FRAMEWORK.md]] (72 logic layers, 12 executive divisions, 250+ control points, autonomous loop patterns) — [[_REGISTRIES/CANONICAL/LOGIC_LAYERS_REGISTRY.yaml|Master Registry]]  
 **Infrastructure Status:** [[INFRASTRUCTURE-STATUS-2026-09|_REFERENCE/INFRASTRUCTURE-STATUS-2026-09.md]]  
 **Venture Roadmap:** [[VENTURE-ROADMAP-2026-09|_REFERENCE/VENTURE-ROADMAP-2026-09.md]]  
-**Digital Librarian:** [[DIGITAL-LIBRARIAN-ARCHITECTURE|_REFERENCE/DIGITAL-LIBRARIAN-ARCHITECTURE.md]]
+**36-Sector Model:** [[ALL_789_VENTURES_36_SECTOR_ALIGNMENT|_REGISTRIES/CANONICAL/ALL_789_VENTURES_36_SECTOR_ALIGNMENT.csv]] (Sep 22) — **CURRENT TRUTH**
+**Family Office Architecture:** [[FAMILY_OFFICE_ECOSYSTEM_ALIGNMENT_MASTER|_REGISTRIES/CANONICAL/FAMILY_OFFICE_ECOSYSTEM_ALIGNMENT_MASTER.csv]] (Sep 22, NEW)
 
 **Quick Commands:**
 ```bash
