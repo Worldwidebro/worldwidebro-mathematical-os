@@ -15,3 +15,11 @@ Operating vertical holding entity coordinating ventures, assets, and regulatory 
 - **Sector Registries:**
   - [[_REGISTRIES/ventures-by-sector.yaml|ventures-by-sector.yaml]]
   - [[_REGISTRIES/control-planes-by-sector.yaml|control-planes-by-sector.yaml]]
+
+---
+
+## Control Base Reference
+
+This operating company is mapped to [[B013|Operating Companies]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B013]]
