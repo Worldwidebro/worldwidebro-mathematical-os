@@ -302,3 +302,10 @@ If first day yields 0 interested: DON'T PIVOT. Call 5 more. It's a numbers game.
 **Go-Live:** Sep 11, 8:00 AM 🚀  
 **Report Back:** Sep 15, 5 PM (revenue update)
 
+---
+
+## Control Base Reference
+
+This entity is catalogued in [[B021|Venture Registry]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B021]]

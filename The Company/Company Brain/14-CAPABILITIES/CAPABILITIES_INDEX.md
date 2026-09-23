@@ -344,3 +344,11 @@ This catalog indexes all **300 modular capability solutions** supporting Company
 | **`CAP-298`** | Executive Operations & Real-Time KPI Telemetry | Synthesize operational, financial, and engineering telemetry into a unified real-time executive cockpit. | [[SECTORS/SEC-027-venture-capital-investment|SEC-027]] | [[14-CAPABILITIES/solutions/CAP-298|CAP-298 Document]] |
 | **`CAP-299`** | Chaos Engineering & Crisis Simulation GameDays | Inject controlled failures into production and conduct simulated disaster scenarios to test team readiness. | [[SECTORS/SEC-026-utilities-infrastructure|SEC-026]] | [[14-CAPABILITIES/solutions/CAP-299|CAP-299 Document]] |
 | **`CAP-300`** | Sovereign Company Brain Self-Improvement | Autonomous meta-governance engine that inspects codebase health, heals broken knowledge links, and optimizes corporate operations. | [[SECTORS/SEC-027-venture-capital-investment|SEC-027]] | [[14-CAPABILITIES/solutions/CAP-300|CAP-300 Document]] |
+
+---
+
+## Control Base Reference
+
+This entity is catalogued in [[B145|Agent Tools]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B145]]

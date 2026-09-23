@@ -100,3 +100,11 @@
 - [MedSpeed Hiring](https://www.medspeed.com/news/medspeed-hiring-to-support-healthcare-delivery/)
 - [Stat Experts](https://statexperts.com/)
 - [Priority Dispatch](https://www.prioritydispatch.com/)
+
+---
+
+## Control Base Reference
+
+This entity is catalogued in [[B021|Venture Registry]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B021]]

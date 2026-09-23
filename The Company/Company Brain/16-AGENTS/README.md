@@ -187,3 +187,11 @@ For on-demand behavioral personas and procedural operational runbooks imported f
 ## Navigation
 
 ← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →
+
+---
+
+## Control Base Reference
+
+This entity is catalogued in [[B141|Agent Registry]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B141]]

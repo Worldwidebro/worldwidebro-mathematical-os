@@ -297,4 +297,10 @@ git clone https://github.com/odoo/delivery.git
 - **Grant Opportunity Pack:** [[38-OPPORTUNITIES/GRANTS/LT-005_NIH_HHS_HealthRoute|NIH / HHS SBIR Phase I Action Pack ($250K)]]
 - **5-Venture Summary:** [[BUSINESS-CAPITAL-DATA-ROOM/5-VENTURE-INTEGRATED-SUMMARY|5-Venture Integrated Summary]]
 
+---
 
+## Control Base Reference
+
+This entity is catalogued in [[B021|Venture Registry]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B021]]

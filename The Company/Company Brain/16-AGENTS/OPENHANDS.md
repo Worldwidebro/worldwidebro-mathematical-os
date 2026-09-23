@@ -33,3 +33,11 @@ openhands --version          # Verify OpenHands CLI version (1.16.0)
 openhands serve              # Launch local web GUI on port 3000
 openhands --mount-cwd        # Start session mounting current workspace
 ```
+
+---
+
+## Control Base Reference
+
+This entity is catalogued in [[B141|Agent Registry]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B141]]

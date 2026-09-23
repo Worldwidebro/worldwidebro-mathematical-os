@@ -25,3 +25,11 @@ See folder contents: [`./14-CAPABILITIES/`](./)
 - **Parent Category:** Layer 3: Capabilities
 - **Master Navigation:** [[../INDEX|Index.md]]
 - **All Domains:** [[../DOMAIN-MAP|DOMAIN-MAP.md]]
+
+---
+
+## Control Base Reference
+
+This entity is catalogued in [[B145|Agent Tools]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B145]]

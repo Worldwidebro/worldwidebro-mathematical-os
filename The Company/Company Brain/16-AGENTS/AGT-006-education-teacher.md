@@ -58,3 +58,11 @@ Output: Curriculum → Slides → Classroom package
 **See Also:** [[SEC-037]], [[CP-031]], [[EDU-CLASSROOM]]
 
 **Last Updated:** 2026-09-02 | **Status:** Ready for production ✅
+
+---
+
+## Control Base Reference
+
+This entity is catalogued in [[B141|Agent Registry]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B141]]

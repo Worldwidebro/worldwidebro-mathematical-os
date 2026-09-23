@@ -340,3 +340,10 @@ The rest flows.
 
 You've got this. Recruit drivers independently. Make the calls. Report back Friday with revenue.
 
+---
+
+## Control Base Reference
+
+This entity is catalogued in [[B021|Venture Registry]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B021]]

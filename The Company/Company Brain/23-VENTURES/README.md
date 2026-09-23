@@ -83,3 +83,11 @@ The following Tier-1 ventures have production-verified deployments and active mo
 ## Navigation
 
 ← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →
+
+---
+
+## Control Base Reference
+
+This entity is catalogued in [[B021|Venture Registry]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B021]]

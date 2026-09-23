@@ -47,3 +47,11 @@ HealthRoute Operations Team
 ---
 
 **ATTACHMENT:** LT-005-DRIVER-ONBOARDING.md (complete 15-step onboarding workflow with all provider details and timelines)
+
+---
+
+## Control Base Reference
+
+This entity is catalogued in [[B021|Venture Registry]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B021]]

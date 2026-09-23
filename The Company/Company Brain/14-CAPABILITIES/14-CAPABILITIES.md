@@ -21,3 +21,11 @@ Index and master domain gateway for **[[14-CAPABILITIES]]**.
 - Complete Solutions Index: [[14-CAPABILITIES/CAPABILITIES_INDEX|CAPABILITIES_INDEX.md (300 Capabilities)]]
 - Capability Matrix: [[14-CAPABILITIES/CAPABILITY_SOLUTION_MATRIX.json|CAPABILITY_SOLUTION_MATRIX.json]]
 - Canonical Registry: [[_REGISTRIES/CANONICAL/CAPABILITY_REGISTRY.yaml|CAPABILITY_REGISTRY.yaml]]
+
+---
+
+## Control Base Reference
+
+This entity is catalogued in [[B145|Agent Tools]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B145]]

@@ -179,3 +179,11 @@ Sales Plugin (Anthropic)
 ---
 
 **Unit 2 Complete:** ✅ Sales Plugin evaluation done, GO to Unit 3
+
+---
+
+## Control Base Reference
+
+This entity is catalogued in [[B021|Venture Registry]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B021]]

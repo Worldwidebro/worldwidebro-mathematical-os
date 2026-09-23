@@ -25,3 +25,11 @@ See folder contents: [`./15-SKILLS/`](./)
 - **Parent Category:** Layer 3: Capabilities
 - **Master Navigation:** [[../INDEX|Index.md]]
 - **All Domains:** [[../DOMAIN-MAP|DOMAIN-MAP.md]]
+
+---
+
+## Control Base Reference
+
+This entity is catalogued in [[B144|Agent Skills]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B144]]

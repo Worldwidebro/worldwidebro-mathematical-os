@@ -9,3 +9,10 @@ Index and master domain gateway for **[[15-SKILLS]]**.
 - **Master Orientation:** [[STARTHERE]]
 - **Ground Truth:** [[REALITY]]
 
+---
+
+## Control Base Reference
+
+This entity is catalogued in [[B144|Agent Skills]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B144]]

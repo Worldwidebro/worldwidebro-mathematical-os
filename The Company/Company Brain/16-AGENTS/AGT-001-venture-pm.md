@@ -102,3 +102,11 @@ Venture Project Management routing agent. Routes project orchestration tasks to 
 ---
 
 **See also:** [[16-AGENTS]] | [[\\\_REGISTRIES/agents/AGT-001-venture-pm.yaml]]
+
+---
+
+## Control Base Reference
+
+This entity is catalogued in [[B141|Agent Registry]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B141]]

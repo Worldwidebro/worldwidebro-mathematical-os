@@ -78,3 +78,11 @@ Output: Curriculum → Slides → Classroom package
 - **Analytics Step:** [[node/plans/steps/course-generation/07-analytics-setup|07-analytics-setup.md]]
 - **Agents Hub:** [[16-AGENTS/README|16-AGENTS]]
 - **Agent Registry Spec:** [[_REGISTRIES/agents/AGT-009-education-eval.yaml]]
+
+---
+
+## Control Base Reference
+
+This entity is catalogued in [[B141|Agent Registry]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B141]]

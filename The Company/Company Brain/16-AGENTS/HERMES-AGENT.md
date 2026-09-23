@@ -39,3 +39,11 @@ hermes status     # View live gateway status, auth providers, and messaging link
 hermes doctor     # Comprehensive diagnostics and health check
 hermes chat       # Launch interactive CLI terminal session
 ```
+
+---
+
+## Control Base Reference
+
+This entity is catalogued in [[B141|Agent Registry]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B141]]
