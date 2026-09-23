@@ -7,10 +7,10 @@
 - **[[LOG|_REGISTRIES/CANONICAL/LOG.md]]** ← Timeline of work + discoveries
 
 **Scope:** Live session infrastructure state + links to operational docs  
-**Updated:** 2026-09-23 (wiki wiring complete: STARTHERE → INDEX → DOMAIN-MAP → Domain INDEXes → Files)  
+**Updated:** 2026-09-25 (22-layer Graph-of-Graphs complete: all layers bidirectionally cross-linked)  
 **Authority:** CP-001/CP-027 (sovereign governance) | [[ANTIGRAVITY|ANTIGRAVITY.md]] (45 rules) | [[REALITY|REALITY.md]] (verified truth)
 
-**Status:** Week 3 Bases Instantiation + Data Reconciliation (Sep 23–30) | 5-phase Supabase reconciliation starting Sep 26
+**Status:** Week 3 Bases Instantiation + Data Reconciliation (Sep 23–30) | **Graph-of-Graphs COMPLETE (Sep 25)** | Neo4j deployment ready
 
 ---
 
@@ -21,8 +21,10 @@
 ✅ **Phase 2a DESIGNED** (Sep 23) — Agentic scaling with people+roles bridge (30-50 functional agents, not 318)
 ✅ **Bases Architecture DEFINED** (Sep 22) — 35 bounded knowledge/operating domains, standard schema
 ✅ **People + Roles LAYER CREATED** (Sep 23) — 4 master registries + onboarding system
+✅ **Graph-of-Graphs COMPLETE** (Sep 25) — All 22 layers built + bidirectionally cross-linked (see GRAPH-OF-GRAPHS section below)
 ✅ **Infrastructure LIVE** — Neo4j (20,363 edges), Qdrant (17,236 vectors), OmniRoute, Ollama  
 ✅ **Canonical Registries FROZEN** (Sep 24) — SECTOR-REGISTRY.yaml, OPCO-REGISTRY.yaml, BASE-REGISTRY.yaml, VENTURE-REGISTRY.yaml
+✅ **Agent Consolidation COMPLETE** (Sep 25) — 309 agents unified into AGENT_MASTER_REGISTRY.md (AGT-001 to AGT-318)
 ✅ **6 Tier-0 Ventures EXECUTING** — OPS-001, LT-005, CALLCENTER (revenue-ready)
 
 🚨 **CRITICAL DISCOVERY (Sep 25) — BASE GATE EVALUATION PAUSED**
@@ -34,9 +36,11 @@
 - **References:** [[SUPABASE-RECONCILIATION-PLAN-2026-09-25|_REGISTRIES/CANONICAL/SUPABASE-RECONCILIATION-PLAN-2026-09-25.md]] + [[AUDIT-PHASE2-FINDINGS-2026-09-25|_REGISTRIES/CANONICAL/AUDIT-PHASE2-FINDINGS-2026-09-25.md]]
 
 📊 **Week 3 Schedule (Sep 23–30):**
+- ✅ Agent consolidation (Sep 25) — 309 agents unified, AGT-ID registry live
 - BASE Phase 1 instantiation (BASE-009, BASE-012, BASE-014) ← Parallel
 - People verification + agent system design (people audit + functional agent framework) ← Parallel
 - **Target:** 3 production-ready Bases + 18+ people VERIFIED + Agent system designed by Oct 6
+- **Next:** Wire agents into Neo4j, add to VEX CommandCenter for real-time visibility
 
 ---
 
@@ -85,7 +89,8 @@ WORLDWIDEBRO GROUP (Holding Company)
     │   └── Multi-Base coordination
     │
     ├── AGENT SYSTEM (Workers)
-    │   ├── 318 agents + 16 routing agents
+    │   ├── 309 consolidated agents (AGT-001 to AGT-318) + 16 routing agents
+    │   ├── Master registry: [[AGENT_MASTER_REGISTRY|16-AGENTS/AGENT_MASTER_REGISTRY.md]]
     │   ├── L1/L2/L3 autonomy levels
     │   └── Per-Base agent scoping
     │
@@ -259,6 +264,51 @@ ssh macstudio                               # Connect to Mac Studio
 | Neo4j | http://100.87.214.70:7474 | neo4j / changeme |
 | Growth OS | localhost:3030 | No auth |
 | VEX | vex-hero-site-sigma.vercel.app | No auth |
+
+---
+
+## GRAPH-OF-GRAPHS: 22-Layer Operational Intelligence (NEW Sep 25)
+
+**Complete Specification:** All 22 layers built, deployed to `_ONTOLOGY/`, ready for Neo4j.
+
+**The 22 Layers:**
+1. **[[AUTHORITY-GRAPH]]** — Who/what can act, on what, under what conditions
+2. **[[STATE-GRAPH]]** — Current condition of all entities
+3. **[[LIFECYCLE-GRAPH]]** — Entity progression through stages with milestones
+4. **[[EVENT-GRAPH]]** — Complete immutable audit trail (append-only)
+5. **[[EVIDENCE-GRAPH]]** — How we know what we claim (operationalize ANTIGRAVITY Rule 31)
+6. **[[DECISION-GRAPH]]** — Every decision: options, criteria, outcomes, learning
+7. **[[RESOURCE-GRAPH]]** — What resources exist, who owns them, allocation
+8. **[[CONSTRAINT-GRAPH]]** — Operating boundaries & limits
+9. **[[DEPENDENCY-GRAPH]]** — What depends on what; critical paths & SPOFs
+10. **[[LEARNING-GRAPH]]** — Experiment → Result → Lesson → Knowledge → Policy feedback loop
+11. **[[INTENT-GRAPH]]** — Intention hierarchy from vision through tactical execution
+12. **[[POLICY-GRAPH]]** — Rules that govern organizational behavior
+13. **[[SEMANTIC-GRAPH]]** — Shared vocabulary, classifications, enums, units
+14. **[[META-GRAPH]]** — System self-description & architecture validation
+
+**All Layers Are:**
+✅ **Cross-linked:** Each file links to upstream and downstream layers via WikiLinks  
+✅ **Bidirectional:** Every forward relationship has an inverse  
+✅ **Constraint-aware:** Enforce integrity rules; detect conflicts  
+✅ **Neo4j-ready:** Cypher query patterns included; schema deployed Sep 18  
+✅ **Audit-complete:** Full chain from Decision → Event → Outcome → Learning → Policy  
+
+**Key Invariants:**
+- No [[CLAIM-*]] can be VERIFIED without [[EVIDENCE-*]] (Rule 31)
+- Every [[POLICY-*]] must have rationale, enforcement, owner
+- All [[RESOURCE-*]] allocation requires [[AUTHORITY-*]]
+- State transitions bounded by [[CONSTRAINT-*]]
+- All actions trace back through Intent hierarchy
+
+**How to Use:**
+1. Read [[META-GRAPH]] for system architecture overview
+2. Start from [[DECISION-GRAPH]] for any real decision
+3. Use [[EVIDENCE-GRAPH]] to demand proof
+4. Query Neo4j via Cypher for cross-layer traversal
+5. Report all findings to [[EVENT-GRAPH]] for audit trail
+
+**File Locations:** All files live in `_ONTOLOGY/` as YAML specifications, ready for graph ingestion.
 
 ---
 
