@@ -183,6 +183,7 @@
   },
   "active": "62e5e5b2dcfdd519",
   "lastOpenFiles": [
+    "Company Brain/_ONTOLOGY/LAYERS-6-11-INTEGRATION.md",
     "Company Brain/_ONTOLOGY/DECISION-GRAPH.yaml",
     "Company Brain/_ONTOLOGY/EVIDENCE-GRAPH.yaml",
     "Company Brain/_ONTOLOGY/EVENT-GRAPH.yaml",
@@ -193,7 +194,6 @@
     "Company Brain/_REGISTRIES/CANONICAL/DOMAIN_INDEX.yaml",
     "Company Brain/_REGISTRIES/CANONICAL/CAPABILITY_INDEX.yaml",
     "Company Brain/_REGISTRIES/CANONICAL/QUERY_TEMPLATES.yaml",
-    "Company Brain/_REGISTRIES/CANONICAL/ENVIRONMENT_REGISTRY.yaml",
     "Company Brain/_REFERENCE/ENTITY-REGISTRY-COMPLETE.md",
     "Company Brain/_REFERENCE/RELATIONSHIP-MAP-COMPLETE.md",
     "Company Brain/_REFERENCE/UNIFIED-ENTITY-GRAPH-ARCHITECTURE.md",
