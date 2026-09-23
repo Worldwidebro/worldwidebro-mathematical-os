@@ -1,0 +1,600 @@
+# SECTOR-REGISTRY.yaml
+# Canonical sector definitions for 36-sector model
+# Created: 2026-09-24
+# Authority: Ontology layer (Sep 24 registry freeze)
+
+sectors:
+  # TIER 1: ACTIVE SECTORS (10 sectors, 789 ventures, operating now)
+  SEC-001:
+    id: SEC-001
+    name: Beauty & Wellness
+    status: ACTIVE
+    opco_id: OPCO-001
+    base_id: BASE-001
+    venture_count: 40
+    industries:
+      - Cosmetics
+      - Skincare
+      - Personal care
+      - Fitness
+      - Wellness
+    created: 2026-01-15
+    verification_status: VERIFIED
+
+  SEC-004:
+    id: SEC-004
+    name: Content & Media
+    status: ACTIVE
+    opco_id: OPCO-004
+    base_id: BASE-004
+    venture_count: 71
+    industries:
+      - Publishing
+      - Podcasting
+      - Streaming
+      - News
+      - Entertainment
+    created: 2026-01-15
+    verification_status: VERIFIED
+
+  SEC-005:
+    id: SEC-005
+    name: Education & Training
+    status: ACTIVE
+    opco_id: OPCO-005
+    base_id: BASE-005
+    venture_count: 56
+    industries:
+      - K-12
+      - Higher education
+      - Corporate training
+      - Skill development
+    created: 2026-01-15
+    verification_status: VERIFIED
+
+  SEC-008:
+    id: SEC-008
+    name: Financial Services
+    status: ACTIVE
+    opco_id: OPCO-008
+    base_id: BASE-008
+    venture_count: 76
+    industries:
+      - Banking
+      - Payments
+      - Fintech
+      - Insurance
+      - Investment
+    created: 2026-01-15
+    verification_status: VERIFIED
+
+  SEC-013:
+    id: SEC-013
+    name: Hospitality & Travel
+    status: ACTIVE
+    opco_id: OPCO-013
+    base_id: BASE-013
+    venture_count: 35
+    industries:
+      - Hotels
+      - Resorts
+      - Travel agencies
+      - Tour operators
+      - Food service
+    created: 2026-01-15
+    verification_status: VERIFIED
+
+  SEC-014:
+    id: SEC-014
+    name: Human Resources & Staffing
+    status: ACTIVE
+    opco_id: OPCO-014
+    base_id: BASE-014
+    venture_count: 117
+    industries:
+      - Recruiting
+      - Talent management
+      - Workforce solutions
+      - Payroll
+      - Operations
+    created: 2026-01-15
+    verification_status: VERIFIED
+
+  SEC-017:
+    id: SEC-017
+    name: Logistics & Transportation
+    status: ACTIVE
+    opco_id: OPCO-017
+    base_id: BASE-017
+    venture_count: 30
+    industries:
+      - Freight
+      - Last-mile delivery
+      - Supply chain
+      - Fleet management
+      - Dispatch
+    created: 2026-01-15
+    verification_status: VERIFIED
+
+  SEC-020:
+    id: SEC-020
+    name: Real Estate & Property
+    status: ACTIVE
+    opco_id: OPCO-020
+    base_id: BASE-020
+    venture_count: 1
+    industries:
+      - Commercial real estate
+      - Residential
+      - Property management
+    created: 2026-01-15
+    verification_status: VERIFIED
+    notes: "Low venture count; audit for additional real-estate ventures"
+
+  SEC-024:
+    id: SEC-024
+    name: Technology & Software
+    status: ACTIVE
+    opco_id: OPCO-024
+    base_id: BASE-024
+    venture_count: 243
+    industries:
+      - SaaS
+      - Cloud platforms
+      - Enterprise software
+      - Infrastructure
+      - AI/ML
+    created: 2026-01-15
+    verification_status: VERIFIED
+    notes: "30.8% of portfolio; concentration risk"
+
+  SEC-029:
+    id: SEC-029
+    name: Marketplace & Platform
+    status: ACTIVE
+    opco_id: OPCO-029
+    base_id: BASE-029
+    venture_count: 120
+    industries:
+      - Multi-sided platforms
+      - Buyer-seller networks
+      - Gig economy
+      - Retail
+    created: 2026-01-15
+    verification_status: VERIFIED
+
+  # TIER 2: STAGING SECTORS (25 sectors, opcos assigned, ventures TBD)
+  SEC-002:
+    id: SEC-002
+    name: Construction & Infrastructure
+    status: STAGING
+    opco_id: OPCO-002
+    base_id: null
+    venture_count: null
+    industries:
+      - General contracting
+      - Project management
+      - Materials
+      - Equipment
+    created: 2026-01-15
+    verification_status: PENDING
+    activation_target: Q4 2026
+
+  SEC-003:
+    id: SEC-003
+    name: Consumer Electronics & Hardware
+    status: STAGING
+    opco_id: OPCO-003
+    base_id: null
+    venture_count: null
+    industries:
+      - Smartphones
+      - Wearables
+      - IoT devices
+      - Home appliances
+    created: 2026-01-15
+    verification_status: PENDING
+    activation_target: Q4 2026
+
+  SEC-006:
+    id: SEC-006
+    name: Energy & Utilities
+    status: STAGING
+    opco_id: OPCO-006
+    base_id: null
+    venture_count: null
+    industries:
+      - Renewable energy
+      - Oil & gas
+      - Electricity
+      - Water
+    created: 2026-01-15
+    verification_status: PENDING
+    activation_target: Q4 2026
+
+  SEC-007:
+    id: SEC-007
+    name: Environmental Services
+    status: STAGING
+    opco_id: OPCO-007
+    base_id: null
+    venture_count: null
+    industries:
+      - Waste management
+      - Recycling
+      - Sustainability
+      - Carbon
+    created: 2026-01-15
+    verification_status: PENDING
+    activation_target: Q4 2026
+
+  SEC-009:
+    id: SEC-009
+    name: Food & Agriculture
+    status: STAGING
+    opco_id: OPCO-009
+    base_id: null
+    venture_count: null
+    industries:
+      - Farming
+      - Food production
+      - Distribution
+      - Food tech
+    created: 2026-01-15
+    verification_status: PENDING
+    activation_target: Q4 2026
+
+  SEC-010:
+    id: SEC-010
+    name: Food Service & Restaurants
+    status: STAGING
+    opco_id: OPCO-010
+    base_id: null
+    venture_count: null
+    industries:
+      - QSR
+      - Fine dining
+      - Ghost kitchens
+      - Meal kits
+    created: 2026-01-15
+    verification_status: PENDING
+    activation_target: Q4 2026
+
+  SEC-011:
+    id: SEC-011
+    name: Gaming & Entertainment
+    status: STAGING
+    opco_id: OPCO-011
+    base_id: null
+    venture_count: null
+    industries:
+      - Video games
+      - Esports
+      - Casinos
+      - Gaming platforms
+    created: 2026-01-15
+    verification_status: PENDING
+    activation_target: Q4 2026
+
+  SEC-012:
+    id: SEC-012
+    name: Healthcare & Biotechnology
+    status: STAGING
+    opco_id: OPCO-012
+    base_id: null
+    venture_count: null
+    industries:
+      - Medical devices
+      - Pharma
+      - Biotech
+      - Diagnostics
+      - Healthtech
+    created: 2026-01-15
+    verification_status: PENDING
+    activation_target: Q4 2026
+    notes: "LT-005 (medical logistics) may belong here as secondary sector"
+
+  SEC-015:
+    id: SEC-015
+    name: Insurance
+    status: STAGING
+    opco_id: OPCO-015
+    base_id: null
+    venture_count: null
+    industries:
+      - Property & casualty
+      - Life
+      - Health
+      - Specialty
+      - Reinsurance
+    created: 2026-01-15
+    verification_status: PENDING
+    activation_target: Q4 2026
+
+  SEC-016:
+    id: SEC-016
+    name: Legal & Compliance
+    status: STAGING
+    opco_id: OPCO-016
+    base_id: null
+    venture_count: null
+    industries:
+      - Legal services
+      - Compliance tech
+      - Contract management
+    created: 2026-01-15
+    verification_status: PENDING
+    activation_target: Q4 2026
+
+  SEC-018:
+    id: SEC-018
+    name: Manufacturing & Engineering
+    status: STAGING
+    opco_id: OPCO-018
+    base_id: null
+    venture_count: null
+    industries:
+      - Industrial equipment
+      - Components
+      - Contract manufacturing
+    created: 2026-01-15
+    verification_status: PENDING
+    activation_target: Q4 2026
+
+  SEC-019:
+    id: SEC-019
+    name: Marketing & Advertising
+    status: STAGING
+    opco_id: OPCO-019
+    base_id: null
+    venture_count: null
+    industries:
+      - Ad agencies
+      - Marketing tech
+      - Programmatic ads
+      - Analytics
+    created: 2026-01-15
+    verification_status: PENDING
+    activation_target: Q4 2026
+
+  SEC-021:
+    id: SEC-021
+    name: Retail & E-commerce
+    status: STAGING
+    opco_id: OPCO-021
+    base_id: null
+    venture_count: null
+    industries:
+      - Online retail
+      - Physical stores
+      - Omnichannel
+      - Fulfillment
+    created: 2026-01-15
+    verification_status: PENDING
+    activation_target: Q4 2026
+
+  SEC-022:
+    id: SEC-022
+    name: Telecommunications & Connectivity
+    status: STAGING
+    opco_id: OPCO-022
+    base_id: null
+    venture_count: null
+    industries:
+      - Wireless carriers
+      - Broadband
+      - ISPs
+      - Telecom infrastructure
+      - 5G
+    created: 2026-01-15
+    verification_status: PENDING
+    activation_target: Q4 2026
+
+  SEC-023:
+    id: SEC-023
+    name: Professional Services
+    status: STAGING
+    opco_id: OPCO-023
+    base_id: null
+    venture_count: null
+    industries:
+      - Consulting
+      - Accounting
+      - Audit
+      - Strategy
+      - Design
+      - Architecture
+    created: 2026-01-15
+    verification_status: PENDING
+    activation_target: Q4 2026
+
+  SEC-025:
+    id: SEC-025
+    name: Automotive & Mobility
+    status: STAGING
+    opco_id: OPCO-025
+    base_id: null
+    venture_count: null
+    industries:
+      - Vehicle manufacturing
+      - Autonomous vehicles
+      - Ride-sharing
+    created: 2026-01-15
+    verification_status: PENDING
+    activation_target: Q4 2026
+
+  SEC-026:
+    id: SEC-026
+    name: Utilities & Infrastructure
+    status: STAGING
+    opco_id: OPCO-026
+    base_id: null
+    venture_count: null
+    industries:
+      - Water
+      - Sewer
+      - Waste
+      - Municipal services
+      - Smart grid
+    created: 2026-01-15
+    verification_status: PENDING
+    activation_target: Q4 2026
+
+  SEC-027:
+    id: SEC-027
+    name: Venture Capital & Investment
+    status: STAGING
+    opco_id: OPCO-027
+    base_id: null
+    venture_count: null
+    industries:
+      - VC firms
+      - Angel networks
+      - Equity crowdfunding
+    created: 2026-01-15
+    verification_status: PENDING
+    activation_target: Q4 2026
+
+  SEC-028:
+    id: SEC-028
+    name: B2B Enterprise Software
+    status: STAGING
+    opco_id: OPCO-028
+    base_id: null
+    venture_count: null
+    industries:
+      - ERP
+      - CRM
+      - HCM
+      - Supply chain software
+      - Workflow
+    created: 2026-01-15
+    verification_status: PENDING
+    activation_target: Q4 2026
+    notes: "Potential boundary overlap with SEC-024 (Technology & Software)"
+
+  SEC-030:
+    id: SEC-030
+    name: Fintech & Payments
+    status: STAGING
+    opco_id: OPCO-030
+    base_id: null
+    venture_count: null
+    industries:
+      - Digital payments
+      - Cryptocurrency
+      - Blockchain
+      - Lending
+    created: 2026-01-15
+    verification_status: PENDING
+    activation_target: Q4 2026
+    notes: "⚠️ OpCo collision with SEC-037; see SEC-037 mapping_status"
+
+  SEC-031:
+    id: SEC-031
+    name: Climate & Sustainability
+    status: STAGING
+    opco_id: OPCO-031
+    base_id: null
+    venture_count: null
+    industries:
+      - Carbon monitoring
+      - Renewable energy
+      - ESG tech
+      - Adaptation
+    created: 2026-01-15
+    verification_status: PENDING
+    activation_target: Q4 2026
+
+  SEC-032:
+    id: SEC-032
+    name: Artificial Intelligence & ML
+    status: STAGING
+    opco_id: OPCO-032
+    base_id: null
+    venture_count: null
+    industries:
+      - LLMs
+      - Computer vision
+      - AI infrastructure
+      - Foundation models
+    created: 2026-01-15
+    verification_status: PENDING
+    activation_target: Q4 2026
+    notes: "Potential boundary overlap with SEC-024 (Technology & Software)"
+
+  SEC-033:
+    id: SEC-033
+    name: Cybersecurity & Privacy
+    status: STAGING
+    opco_id: OPCO-033
+    base_id: null
+    venture_count: null
+    industries:
+      - Security software
+      - Incident response
+      - Compliance tools
+    created: 2026-01-15
+    verification_status: PENDING
+    activation_target: Q4 2026
+    notes: "Potential boundary overlap with SEC-024 (Technology & Software)"
+
+  SEC-034:
+    id: SEC-034
+    name: Decentralized & Web3
+    status: STAGING
+    opco_id: OPCO-034
+    base_id: null
+    venture_count: null
+    industries:
+      - Blockchain infrastructure
+      - DeFi
+      - NFTs
+      - DAOs
+      - Exchanges
+    created: 2026-01-15
+    verification_status: PENDING
+    activation_target: Q4 2026
+
+  SEC-035:
+    id: SEC-035
+    name: "[RESERVED] Discovery Slot"
+    status: RESERVED
+    opco_id: null
+    base_id: null
+    venture_count: null
+    industries: []
+    created: 2026-09-24
+    verification_status: PENDING
+    notes: "Reserved for 36th sector identified in VEX analysis; unassigned pending discovery"
+
+  # ANOMALY SECTOR (Pending OpCo resolution)
+  SEC-037:
+    id: SEC-037
+    name: Capital & Quantitative Trading
+    status: STAGING
+    opco_id: null
+    base_id: null
+    venture_count: 3
+    industries:
+      - Algorithmic trading
+      - Statistical arbitrage
+      - Python execution
+    created: 2026-09-24
+    verification_status: PENDING
+    mapping_status: "COLLISION DETECTED"
+    mapping_issue: "Currently mapped to OpCo-030 (Fintech & Payments); requires distinct OpCo (OpCo-037) or reclassification"
+    activation_target: "Q4 2026 (after OpCo resolution)"
+    notes: "Capital trading is operationally distinct from fintech; OpCo assignment unresolved. See OPCO-REGISTRY for status."
+
+metadata:
+  total_sectors: 37
+  active_sectors: 10
+  staging_sectors: 25
+  reserved_sectors: 1
+  anomaly_sectors: 1
+  total_active_ventures: 789
+  last_updated: 2026-09-24
+  registry_version: 1.0
+  authority: Ontology layer (Sep 24 registry freeze)
+  next_review: 2026-10-01
