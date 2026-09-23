@@ -128,23 +128,23 @@ Each of the 789 ventures belongs to exactly one **Business Sector**. Below is th
 | **SEC-004** | Content & Media | OpCo-004 | **MEDIA-001** | `media-network.vercel.app` | `mutonby/openshorts` |
 | **SEC-005** | Education & Training | OpCo-005 | **ET-011** | `trade-academy.vercel.app` | `n8n-io/n8n` |
 | **SEC-006** | Energy & Utilities | OpCo-006 | **ENERGY-001** | `energy-fleet.vercel.app` | `openobserve/openobserve` |
-| **SEC-007** | Environmental Services| OpCo-007 | **ENV-001** | `env-medical-waste.vercel.app` | `LT-011 Dispatch Engine` |
+| **SEC-007** | Environmental Services | OpCo-007 | **ENV-001** | `env-medical-waste.vercel.app` | `LT-011 Dispatch Engine` |
 | **SEC-008** | Financial Services | OpCo-008 | **FIN-001** | `genixbank-hero-site.vercel.app` | `firefly-iii` / `maybe-finance` |
 | **SEC-009** | Food & Agriculture | OpCo-009 | **FOOD-001** | `food-freight.vercel.app` | `n8n-io/n8n` |
 | **SEC-010** | Food Service & Rest. | OpCo-010 | **REST-001** | `cloud-kitchens.vercel.app` | `LT-011 Dispatch Engine` |
-| **SEC-011** | Gaming & Entertainment| OpCo-011 | **EC-111** | `ec-111-miss-toys.vercel.app` | `MengTo/threeui` |
+| **SEC-011** | Gaming & Entertainment | OpCo-011 | **EC-111** | `ec-111-miss-toys.vercel.app` | `MengTo/threeui` |
 | **SEC-012** | Healthcare & Biotech | OpCo-012 | **HC-001** | `hc-diagnostics.vercel.app` | `opendatalab/MinerU` |
 | **SEC-013** | Hospitality & Travel | OpCo-013 | **HOSP-001** | `hosp-housing.vercel.app` | `CloakHQ/CloakBrowser` |
-| **SEC-014** | HR & Staffing | OpCo-014 | **OPS-001** | `ops-staff-001-staffing...vercel.app`| `ever-co/ever-gauzy` |
+| **SEC-014** | HR & Staffing | OpCo-014 | **OPS-001** | `ops-staff-001-staffing...vercel.app` | `ever-co/ever-gauzy` |
 | **SEC-015** | Insurance | OpCo-015 | **INS-001** | `ins-commercial.vercel.app` | `jsvine/pdfplumber` |
 | **SEC-016** | Legal & Compliance | OpCo-016 | **LEGAL-001** | `legal-compliance.vercel.app` | `documenso/documenso` |
 | **SEC-017** | Logistics & Transport | OpCo-017 | **LT-005** | `healthroute-courier.vercel.app` | `Mahanaicoach/google-maps-scraper-kit` |
 | **SEC-018** | Manufacturing & Eng. | OpCo-018 | **MFG-001** | `mfg-enclosures.vercel.app` | `FreeCAD / Blender tools` |
 | **SEC-019** | Marketing & Ads | OpCo-019 | **MKTG-001** | `mktg-b2b.vercel.app` | `Jakeschincariol/linkedin-agent-skill` |
-| **SEC-020** | Real Estate & Property| OpCo-020 | **RE-001** | `re-001-worldwidebro-holdings.vercel.app`| `CloakHQ/CloakBrowser` + `gstack` |
+| **SEC-020** | Real Estate & Property | OpCo-020 | **RE-001** | `re-001-worldwidebro-holdings.vercel.app` | `CloakHQ/CloakBrowser` + `gstack` |
 | **SEC-021** | Retail & E-Commerce | OpCo-021 | **COMM-001** | `comm-storefront.vercel.app` | `v0` + `Vercel Edge` |
-| **SEC-022** | Telecommunications | OpCo-022 | **TELECOM-001**| `telecom-mesh.vercel.app` | `Tailscale WireGuard` |
-| **SEC-023** | Professional Services| OpCo-023 | **PROF-001** | `prof-advisory.vercel.app` | `Noisyxl/brier` |
+| **SEC-022** | Telecommunications | OpCo-022 | **TELECOM-001** | `telecom-mesh.vercel.app` | `Tailscale WireGuard` |
+| **SEC-023** | Professional Services | OpCo-023 | **PROF-001** | `prof-advisory.vercel.app` | `Noisyxl/brier` |
 | **SEC-024** | Tech & Software | OpCo-024 | **TECH-040** | `vex-hero-site-sigma.vercel.app` | `Vite` + `React` + `Tailwind` |
 | **SEC-025** | Automotive & Mobility | OpCo-025 | **AUTO-001** | `auto-fleet-lease.vercel.app` | `LT-011 Fleet Engine` |
 | **SEC-026** | Utilities & Municipal | OpCo-026 | **UTIL-001** | `util-municipal.vercel.app` | `Stirling-Tools/Stirling-PDF` |
