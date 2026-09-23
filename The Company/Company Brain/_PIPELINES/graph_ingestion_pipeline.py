@@ -2,7 +2,15 @@
 """
 Company Brain Graph-Native Ingestion Pipeline
 Convert YAML registries → Neo4j graph-native architecture
-Authority: Phase 2 Graph-Native Migration
+Authority: Phase 2 Graph-Native Migration + Phase C Schema Mapping + Phase B LangGraph Orchestrator
+Status: Phase B (LangGraph extraction + contradiction detection + verification gates) ACTIVE
+
+5-Phase Pipeline:
+  1. Extract (LLM structured output → entities + relationships)
+  2. Merge (MERGE into Neo4j with provenance)
+  3. Detect (Contradiction detection via Cypher)
+  4. Verify (Hard integrity gates)
+  5. Navigate (Update audit log + refresh views)
 """
 
 import asyncio
@@ -16,12 +24,28 @@ import yaml
 from neo4j import AsyncDriver, AsyncSession, Record
 from neo4j import asyncio as neo4j_async
 
+# LangGraph + LLM imports (Phase B: Extraction)
+try:
+    from langgraph.graph import StateGraph, END
+    from pydantic import BaseModel, Field
+    LANGGRAPH_AVAILABLE = True
+except ImportError:
+    LANGGRAPH_AVAILABLE = False
+    print("⚠️  LangGraph not installed. Phase B extraction will be disabled.")
+    print("   Install with: pip install langgraph langchain langchain-openai pydantic")
+
+
+class ExtractionOutput(BaseModel):
+    """LLM structured extraction output (Phase B)"""
+    entities: List[Dict] = Field(description="name, type, confidence 0..1")
+    relationships: List[Dict] = Field(description="subject, object, type, confidence, claim")
+
 
 class GraphIngestionPipeline:
-    """Orchestrates YAML → Neo4j migration with provenance tracking and contradiction detection."""
+    """Orchestrates 5-phase ingestion: Extract → Merge → Detect → Verify → Navigate"""
 
-    def __init__(self, neo4j_uri: str, neo4j_user: str, neo4j_password: str):
-        """Initialize Neo4j driver."""
+    def __init__(self, neo4j_uri: str, neo4j_user: str, neo4j_password: str, llm_model: Optional[str] = None):
+        """Initialize Neo4j driver and optional LLM for Phase B extraction."""
         self.driver: AsyncDriver = neo4j_async.AsyncDriver(
             neo4j_uri, auth=(neo4j_user, neo4j_password)
         )
@@ -29,6 +53,17 @@ class GraphIngestionPipeline:
         self.entities_updated = 0
         self.contradictions_detected = 0
         self.audit_events: List[Dict[str, Any]] = []
+
+        # Phase B: LLM extraction (optional)
+        self.llm_model = llm_model or "gpt-4o-mini"
+        self.extractor = None
+        if LANGGRAPH_AVAILABLE and llm_model:
+            try:
+                from langchain_openai import ChatOpenAI
+                self.extractor = ChatOpenAI(model=self.llm_model).with_structured_output(ExtractionOutput)
+            except Exception as e:
+                print(f"⚠️  Could not initialize LLM extractor: {e}")
+                print("   Extraction phase will use manual entity definitions only.")
 
     async def close(self) -> None:
         """Close Neo4j connection."""
@@ -157,8 +192,88 @@ class GraphIngestionPipeline:
 
         return await result.single()
 
+    async def extract_entities_and_relationships(self, text: str, source_sha: str) -> ExtractionOutput:
+        """
+        Phase B: Extract entities and relationships from text via LLM (or manual definition).
+        Returns structured output ready for merge phase.
+        """
+        if not self.extractor:
+            raise RuntimeError("LLM extractor not initialized. Cannot extract entities.")
+
+        from langchain_core.prompts import ChatPromptTemplate
+
+        prompt = ChatPromptTemplate.from_messages([
+            ("system", """Extract entities and typed relationships from the text.
+               Assign confidence 0..1 based on how explicitly the text supports each claim.
+               Only extract claims the text directly states — never infer.
+               Entity types: Venture, Sector, OpCo, Person, Capability, Agent, Workflow, Loop, Outcome, Decision.
+               Relationship types: OPERATES_IN, REQUIRES, DEPENDS_ON, IMPLEMENTS, USES, EVIDENCED_BY, GENERATES_REVENUE, CONTRADICTS."""),
+            ("human", "{text}"),
+        ])
+
+        chain = prompt | self.extractor
+        extraction = await chain.ainvoke({"text": text})
+
+        # Add source tracking
+        for rel in extraction.relationships:
+            rel["source_sha"] = source_sha
+
+        return extraction
+
+    async def detect_contradictions(self, session: AsyncSession, entity_id: str, relationship_type: str) -> List[Dict]:
+        """
+        Phase 3: Detect contradictions for an entity.
+        Same entity pair, same relationship type, conflicting claims, different sources → flag.
+        """
+        query = """
+        MATCH (a:Entity {entity_id: $entity_id})-[r1:RELATES {type: $rel_type}]->(b:Entity)
+        MATCH (a)-[r2:RELATES {type: $rel_type}]->(b)
+        WHERE r1.source_sha <> r2.source_sha
+          AND r1.claim <> r2.claim
+        RETURN a.entity_id, b.entity_id, r1.claim, r2.claim, r1.source_sha, r2.source_sha
+        """
+
+        result = await session.run(query, {"entity_id": entity_id, "rel_type": relationship_type})
+        records = await result.all()
+
+        contradictions = []
+        for record in records:
+            contradictions.append({
+                "source_entity": record["a.entity_id"],
+                "target_entity": record["b.entity_id"],
+                "claim_1": record["r1.claim"],
+                "claim_2": record["r2.claim"],
+                "source_1": record["r1.source_sha"],
+                "source_2": record["r2.source_sha"]
+            })
+
+            # Create contradiction edge and flag entities
+            await session.run("""
+            MATCH (a:Entity {entity_id: $src}), (b:Entity {entity_id: $tgt})
+            MERGE (a)-[c:CONTRADICTS]->(b)
+            ON CREATE SET
+                c.detected = datetime(),
+                c.sources = [$s1, $s2],
+                c.claims = [$c1, $c2]
+            SET a.contested = true, b.contested = true
+            """, {
+                "src": record["a.entity_id"],
+                "tgt": record["b.entity_id"],
+                "s1": record["r1.source_sha"],
+                "s2": record["r2.source_sha"],
+                "c1": record["r1.claim"],
+                "c2": record["r2.claim"]
+            })
+
+            self.contradictions_detected += 1
+
+        return contradictions
+
     async def verify_integrity_gates(self, session: AsyncSession) -> Dict[str, int]:
-        """Run all integrity gates after bulk ingestion."""
+        """
+        Phase 4: Run all hard verification gates (all must pass).
+        6 gates: dangling refs, missing provenance, contradiction consistency, orphans, needs_review stale, missing properties
+        """
         gates = {}
 
         # Gate 1: Dangling references
@@ -188,6 +303,20 @@ class GraphIngestionPipeline:
         )
         record = await result.single()
         gates["isolated_entities"] = record["count"] if record else 0
+
+        # Gate 5: Stale needs_review flags (>7 days old)
+        result = await session.run(
+            "MATCH (e:Entity {needs_review: true}) WHERE e.updated < datetime() - duration({days: 7}) RETURN COUNT(*) AS count"
+        )
+        record = await result.single()
+        gates["stale_review_flags"] = record["count"] if record else 0
+
+        # Gate 6: Missing properties
+        result = await session.run(
+            "MATCH (e:Entity) WHERE e.confidence IS NULL OR e.created IS NULL RETURN COUNT(*) AS count"
+        )
+        record = await result.single()
+        gates["incomplete_properties"] = record["count"] if record else 0
 
         return gates
 
