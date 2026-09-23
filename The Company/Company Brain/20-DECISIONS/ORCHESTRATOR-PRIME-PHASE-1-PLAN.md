@@ -28,7 +28,7 @@ Load 318 agents from Neo4j `agent_registry` with all fields populated and verify
 ### Prerequisites
 - Neo4j instance running (100.87.214.70:7687 via Mac Studio)
 - Neo4j credentials: neo4j/changeme
-- All 318 agents already loaded from AGENT_REGISTRY.yaml (Sep 18)
+- All 318 agents already loaded from AGENTS_REGISTRY.yaml (Sep 18)
 
 ### Implementation Steps
 
@@ -208,7 +208,7 @@ describe('Agent Discovery', () => {
 
 ### Rollback Plan
 
-If Neo4j unavailable: Fall back to `AGENT_REGISTRY.yaml` file-based discovery (slower, but works)
+If Neo4j unavailable: Fall back to `AGENTS_REGISTRY.yaml` file-based discovery (slower, but works)
 
 ```typescript
 // Fallback: Load from YAML
@@ -216,7 +216,7 @@ import yaml from 'js-yaml';
 import fs from 'fs';
 
 async function fetchAgentsFallback(): Promise<Agent[]> {
-  const data = yaml.load(fs.readFileSync('_REGISTRIES/CANONICAL/AGENT_REGISTRY.yaml', 'utf-8')) as any;
+  const data = yaml.load(fs.readFileSync('_REGISTRIES/CANONICAL/AGENTS_REGISTRY.yaml', 'utf-8')) as any;
   return data.agents || [];
 }
 ```

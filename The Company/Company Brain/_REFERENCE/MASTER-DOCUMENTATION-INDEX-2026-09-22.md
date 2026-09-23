@@ -131,7 +131,7 @@
 ### Canonical Registries
 - **ALL_789_VENTURES_36_SECTOR_ALIGNMENT.csv** (Sep 22) — CURRENT TRUTH for all 789 ventures
 - **FAMILY_OFFICE_ECOSYSTEM_ALIGNMENT_MASTER.csv** (Sep 22) — 150 entities + OpCo mappings
-- **AGENT_REGISTRY.yaml** — 318 agents + capabilities
+- **AGENTS_REGISTRY.yaml** — 318 agents + capabilities
 - **CAPABILITY_REGISTRY.yaml** — 300+ capabilities, sector-mapped
 - **CONTROL_DOMAINS_250.yaml** — All control points
 

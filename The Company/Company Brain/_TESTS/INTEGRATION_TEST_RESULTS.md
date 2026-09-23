@@ -214,7 +214,7 @@ Actual:  100% of tests <500ms
 - Status: ✅ No regression
 
 **Registries (Weeks 1-3)**
-- AGENT_REGISTRY: 309 agents still indexed correctly
+- AGENTS_REGISTRY: 309 agents still indexed correctly
 - SKILL_REGISTRY: 34 skills intact
 - TOOL_GATEWAY_REGISTRY: 20 tools with permissions unchanged
 - CAPABILITY_REGISTRY: 307 capabilities still discoverable

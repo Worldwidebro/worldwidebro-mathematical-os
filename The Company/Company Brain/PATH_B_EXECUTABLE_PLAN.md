@@ -52,7 +52,7 @@ class AgentOrchestrator:
 
 ### Friday Sep 12: Kernel + Registries (8 hours)
 - 08:00-10:00: Create orchestrator_kernel.py (copy your code)
-- 10:00-12:00: Create AGENT_REGISTRY.yaml (document all 16 + AGT-020/21/22)
+- 10:00-12:00: Create AGENTS_REGISTRY.yaml (document all 16 + AGT-020/21/22)
 - 12:00-13:00: Create CAPABILITY_INDEX.yaml (route capabilities to agents)
 - 13:00-14:00: Create registry_loaders.py (load all 12 indexes at startup)
 - 14:00-17:00: Create neo4j_queries.py (agents query graph for context)
@@ -61,7 +61,7 @@ class AgentOrchestrator:
 **Deliverable:** Orchestrator runs + can spawn agents + logs to Neo4j
 
 ### Saturday Sep 13: Existing 16 Agents (8 hours)
-- Document all 16 agents in AGENT_REGISTRY.yaml
+- Document all 16 agents in AGENTS_REGISTRY.yaml
 - Map capabilities to each
 
 **Deliverable:** All 16 agents indexed + queryable
@@ -179,7 +179,7 @@ _MCP/
     └── test_agt_022.py
 
 _REGISTRIES/CANONICAL/
-├── AGENT_REGISTRY.yaml                 (all 19 agents)
+├── AGENTS_REGISTRY.yaml                 (all 19 agents)
 ├── CAPABILITY_INDEX.yaml               (300+ capabilities)
 ├── RESPONSIBILITY_INDEX.yaml           (all workflows)
 ├── SKILL_REGISTRY.yaml                 (reusable skills)

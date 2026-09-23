@@ -282,7 +282,7 @@ ELSE
 ```
 FOR EACH task:
   1. Extract required capability
-  2. Query AGENT_REGISTRY:
+  2. Query AGENTS_REGISTRY:
      - Filter by capability
      - Filter by venture permission
      - Filter by autonomy level

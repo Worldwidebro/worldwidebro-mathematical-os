@@ -153,7 +153,7 @@ _MCP/
   fastmcp_agent_orchestrator.py (to create Sep 12)
 
 _REGISTRIES/CANONICAL/
-  AGENT_REGISTRY.yaml (to create Sep 12)
+  AGENTS_REGISTRY.yaml (to create Sep 12)
   CAPABILITY_INDEX.yaml (to create Sep 12)
   RESPONSIBILITY_INDEX.yaml (to create Sep 12)
   [10 more indexes] (to create Sep 12-14)
@@ -162,7 +162,7 @@ _REGISTRIES/CANONICAL/
 ### ❌ Files that should exist but don't
 
 **Critical missing:**
-- [ ] AGENT_REGISTRY.yaml (need to create Sep 12)
+- [ ] AGENTS_REGISTRY.yaml (need to create Sep 12)
 - [ ] RESPONSIBILITY_INDEX.yaml (need to create Sep 12)
 - [ ] BUSINESS_FUNCTIONS_DIRECTORY.md (need to create Sep 17)
 
@@ -342,7 +342,7 @@ _MCP/intent_classifier.py
 _MCP/agent_call_handler.py
 _MCP/call_execution_logger.py
 
-_REGISTRIES/CANONICAL/AGENT_REGISTRY.yaml
+_REGISTRIES/CANONICAL/AGENTS_REGISTRY.yaml
 _REGISTRIES/CANONICAL/CAPABILITY_INDEX.yaml
 _REGISTRIES/CANONICAL/RESPONSIBILITY_INDEX.yaml
 _REGISTRIES/CANONICAL/SKILL_REGISTRY.yaml

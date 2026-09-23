@@ -78,7 +78,7 @@ RESULT: Outcome reported back to Company Brain (feedback loop)
 - [[RUNBOOKS|_REFERENCE/RUNBOOKS/README.md]] — Incident response guides
 
 **Registries:**
-- [[AGENT_REGISTRY|_REGISTRIES/CANONICAL/AGENT_REGISTRY.yaml]] — 318 agents with capabilities
+- [[AGENTS_REGISTRY|_REGISTRIES/CANONICAL/AGENTS_REGISTRY.yaml]] — 318 agents with capabilities
 - [[CAPABILITY_REGISTRY|_REGISTRIES/CANONICAL/CAPABILITY_REGISTRY.yaml]] — Capability inventory
 - [[NAVIGATION_ALIASES|_REGISTRIES/CANONICAL/NAVIGATION_ALIASES.yaml]] — All wiki link aliases
 

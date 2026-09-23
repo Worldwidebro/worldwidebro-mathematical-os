@@ -31,7 +31,7 @@ updated: 2026-09-17
 
 **5 Critical Gaps Identified:**
 1. ❌ Agent Dispatch Router → ✅ Solution: Deploy AGENT_DISPATCH_ROUTER.js (Oct 2026)
-2. ❌ Master Agent Registry → ✅ Solution: Tag 275 agents in AGENT_REGISTRY.yaml (Week 1)
+2. ❌ Master Agent Registry → ✅ Solution: Tag 275 agents in AGENTS_REGISTRY.yaml (Week 1)
 3. ❌ Skill Registry → ✅ Solution: Index 30+ skills in SKILL_REGISTRY.yaml (Week 1)
 4. ❌ Tool Gateway → ✅ Solution: Create TOOL_GATEWAY_REGISTRY.yaml (Week 1)
 5. ❌ Capability Routing → ✅ Solution: Deploy CAPABILITY_RESOLVER.js (Nov 2026)
@@ -85,7 +85,7 @@ updated: 2026-09-17
 **awesome-agentic-patterns Integration:**
 - 68K-star GitHub repo with agent design patterns
 - Integrate: tool-use, reflection, multi-step, error-recovery patterns
-- Reference in AGENT_REGISTRY.yaml
+- Reference in AGENTS_REGISTRY.yaml
 
 **career-ops Integration:**
 - 68K-star open-source AI job search agent (MIT licensed)
@@ -272,7 +272,7 @@ SYSTEMS_INTEGRATION_MASTER.md
 ├─ [[_MCP/REAL-AGENT-BLUEPRINT|Real Agent Blueprint]]
 │  ├─ [[awesome-agentic-patterns]]
 │  ├─ [[career-ops]]
-│  └─ [[_REGISTRIES/CANONICAL/AGENT_REGISTRY.yaml]]
+│  └─ [[_REGISTRIES/CANONICAL/AGENTS_REGISTRY.yaml]]
 │
 ├─ [[_REGISTRIES/CANONICAL/CONTROL_DOMAINS_250.yaml|250 Control Domains]]
 │  ├─ [[_REGISTRIES/CANONICAL/LOGIC_LAYERS_REGISTRY.yaml]]
@@ -288,7 +288,7 @@ SYSTEMS_INTEGRATION_MASTER.md
 │  └─ [[LT-011]]
 │
 ├─ [[20-DECISIONS/PHASE-2A-SYSTEMS-WIRING-CHECKLIST|Phase 2a Checklist]]
-│  ├─ [[_REGISTRIES/CANONICAL/AGENT_REGISTRY.yaml]]
+│  ├─ [[_REGISTRIES/CANONICAL/AGENTS_REGISTRY.yaml]]
 │  ├─ [[_REGISTRIES/CANONICAL/SKILL_REGISTRY.yaml]]
 │  ├─ [[_REGISTRIES/CANONICAL/TOOL_GATEWAY_REGISTRY.yaml]]
 │  └─ [[VENTURE_FUNDING_OPPORTUNITIES.yaml]]

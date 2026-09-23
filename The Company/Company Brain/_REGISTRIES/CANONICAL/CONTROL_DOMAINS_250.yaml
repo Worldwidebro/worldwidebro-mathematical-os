@@ -464,7 +464,7 @@ control_domains_by_plane:
         name: "Agent Registry"
         description: "Master list of all 275 agents"
         owned_by: [[16-AGENTS]]
-        registry: _REGISTRIES/CANONICAL/AGENT_REGISTRY.yaml
+        registry: _REGISTRIES/CANONICAL/AGENTS_REGISTRY.yaml
 
       - domain_id: DOMAIN-162
         name: "Agent Identity"

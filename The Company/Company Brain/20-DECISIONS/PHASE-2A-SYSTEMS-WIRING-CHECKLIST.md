@@ -49,7 +49,7 @@ updated: 2026-09-17
 # Infer: domain (from filename)
 # Assign: default logic layers (by domain)
 # Assign: autonomy levels (default L1, override for known-good agents)
-# Output: AGENT_REGISTRY.yaml entries
+# Output: AGENTS_REGISTRY.yaml entries
 
 cd .claude/agents
 
@@ -79,7 +79,7 @@ for agent_file in *.md; do
   esac
   
   # Generate YAML entry
-  cat >> _REGISTRIES/CANONICAL/AGENT_REGISTRY.yaml << AGENT_EOF
+  cat >> _REGISTRIES/CANONICAL/AGENTS_REGISTRY.yaml << AGENT_EOF
 
   agent_${id}:
     id: agent-${id}
@@ -110,11 +110,11 @@ Steps:
 - [ ] Write tag-agents.sh (if not exists)
 - [ ] Run script: generates 265 agent entries
 - [ ] Manual review: 50 agents (spot check for accuracy)
-- [ ] Create override file: `AGENT_REGISTRY_OVERRIDES.yaml` (trustworthiness, autonomy level, capabilities)
+- [ ] Create override file: `AGENTS_REGISTRY_OVERRIDES.yaml` (trustworthiness, autonomy level, capabilities)
 - [ ] Merge overrides into main registry
 - [ ] Test: Query 20 random agents by logic layer
 
-**Verification:** All 275 agents in AGENT_REGISTRY.yaml with auto-generated metadata
+**Verification:** All 275 agents in AGENTS_REGISTRY.yaml with auto-generated metadata
 
 ---
 
@@ -622,7 +622,7 @@ Expected: 45+ passing, <5 flaky (ok for this phase)
 **Time:** 4 hours
 
 - [ ] Update `_MCP/SYSTEMS-INTEGRATION-MASTER.md` with actual API signatures
-- [ ] Document `AGENT_REGISTRY.yaml` format (done, but add examples)
+- [ ] Document `AGENTS_REGISTRY.yaml` format (done, but add examples)
 - [ ] Document `SKILL_REGISTRY.yaml` format
 - [ ] Document `TOOL_GATEWAY_REGISTRY.yaml` format
 - [ ] Document `capability-registry.yaml` format

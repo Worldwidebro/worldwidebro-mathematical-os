@@ -155,10 +155,10 @@ LIMIT 5;
 ### Step 5: Check YAML Fallback Registry
 ```bash
 # If Neo4j is down but YAML fallback is working:
-ls -lh _REGISTRIES/CANONICAL/AGENT_REGISTRY.yaml
+ls -lh _REGISTRIES/CANONICAL/AGENTS_REGISTRY.yaml
 
 # Check if YAML registry is up-to-date
-head -50 _REGISTRIES/CANONICAL/AGENT_REGISTRY.yaml | grep "last_updated"
+head -50 _REGISTRIES/CANONICAL/AGENTS_REGISTRY.yaml | grep "last_updated"
 # Compare to Neo4j last_sync_timestamp in database
 
 # If YAML is stale (>1 week old), the fallback is serving stale data
@@ -234,7 +234,7 @@ docker exec neo4j cypher-shell -u neo4j -p changeme "SHOW INDEXES;"
 - Prevention: Enable WAL (write-ahead logging)
 
 **If:** Missing agent nodes
-- Action: Re-run ETL pipeline to reload AGENT_REGISTRY into Neo4j
+- Action: Re-run ETL pipeline to reload AGENTS_REGISTRY into Neo4j
 - Root cause: ETL job failed or never ran
 
 **If:** Index corruption
@@ -245,7 +245,7 @@ docker exec neo4j cypher-shell -u neo4j -p changeme "SHOW INDEXES;"
 ```bash
 # Run the YAML→Neo4j migration pipeline
 cd _PIPELINES/yaml-to-neo4j
-python3 migrate_agents.py --registry _REGISTRIES/CANONICAL/AGENT_REGISTRY.yaml
+python3 migrate_agents.py --registry _REGISTRIES/CANONICAL/AGENTS_REGISTRY.yaml
 
 # Expected output:
 # - Loaded 318 agents from YAML

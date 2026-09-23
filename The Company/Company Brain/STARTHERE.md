@@ -165,7 +165,7 @@ Result reported back to Company Brain (feedback loop)
 
 - **[[_REFERENCE/ORCHESTRATOR-MASTER-SPECIFICATION|Orchestrator Master Specification]]** — Implementation details (API specs, database schema, endpoints, revenue attribution)
 - **[[_REFERENCE/RUNBOOKS/README|Incident Runbooks]]** — Troubleshooting guides for common failure scenarios
-- **[[_REGISTRIES/CANONICAL/AGENT_REGISTRY|Agent Registry]]** — 318 agents with capabilities, performance, autonomy levels
+- **[[_REGISTRIES/CANONICAL/AGENTS_REGISTRY|Agent Registry]]** — 318 agents with capabilities, performance, autonomy levels
 - **[[_REGISTRIES/CANONICAL/CAPABILITY_REGISTRY|Capability Registry]]** — 300+ capabilities mapped to agents and sectors
 
 ---

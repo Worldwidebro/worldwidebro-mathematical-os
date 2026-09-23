@@ -32,7 +32,7 @@
                      ▼
 ┌─────────────────────────────────────────────────────────────────────────┐
 │ OmniRoute Smart Routing Skill                                            │
-│ • Query AGENT_REGISTRY for "lead-qualifier" agent                        │
+│ • Query AGENTS_REGISTRY for "lead-qualifier" agent                        │
 │ • Verify skills match: ["lead-scoring", "qualification"]                 │
 │ • Check autonomy gate: L2 (human review for high-cost) ✅                │
 │ • Validate tool permissions: [hubspot, supabase] ✅                      │
@@ -142,7 +142,7 @@ OmniRoute Agent Registry
 ```
 User Task → OmniRoute /a2a (skill: lead-qualifier)
     ↓
-Smart Routing Skill (checks AGENT_REGISTRY)
+Smart Routing Skill (checks AGENTS_REGISTRY)
     ↓
 Lead Qualifier Agent
     ↓

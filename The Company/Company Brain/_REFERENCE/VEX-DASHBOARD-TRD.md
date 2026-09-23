@@ -269,7 +269,7 @@ LIMIT 1000
 | Service | Failure Impact | Fallback | User Experience |
 |---------|---------------|----------|-----------------|
 | Neo4j | Agents/Graph tabs fail | Use Redis cache | "Loading cached data..." |
-| OmniRoute | Agent discovery fails | Use AGENT_REGISTRY.yaml | "Offline mode" |
+| OmniRoute | Agent discovery fails | Use AGENTS_REGISTRY.yaml | "Offline mode" |
 | Supabase | Ventures fail | Use cached data | "Viewing cached data (1h old)" |
 | ClickUp | Tasks fail | Show cached tasks | "Task updates delayed" |
 | Redis | Cache miss | Query live | Slower response (no cache) |

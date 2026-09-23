@@ -1,0 +1,405 @@
+---
+# EVENT-GRAPH.yaml
+# Layer 10: Event Log & Temporal Record
+# Authority: CP-001 (Sovereign Operator)
+# Generated: 2026-09-25
+# Purpose: Complete audit trail of everything that happened, when, to whom, by whom, with what authority
+
+event_graph:
+
+  description: |
+    The Event Graph is the **immutable record** of every significant occurrence in the system.
+
+    Every state change, decision, milestone, approval, payment, creation, or deletion is recorded as an [[EVENT-*]].
+
+    This layer sits AFTER Lifecycle (layer 8) and receives inputs from Authority (layer 6), State (layer 7), and Lifecycle (layer 8).
+    It feeds INTO Evidence Graph (layer 11) and provides the foundation for Learning Graph (layer 16).
+
+    **No update, delete, or mutation is allowed in this graph. Events are append-only.**
+
+  entity_types:
+
+    - id: "EVENT"
+      name: "[[Event]]"
+      definition: "An immutable record of something that happened"
+      examples:
+        - "[[EVENT-LT005-CustomerAcquired-20260925]] (HealthRoute acquired customer ABC)"
+        - "[[EVENT-OPS001-PaymentReceived-20260924]] ($2,500 revenue)"
+        - "[[EVENT-VentureStateChanged-20260920]] (OPS-001 moved from [[STATE-Building]] to [[STATE-Selling]])"
+      properties:
+        - id: "event_id" (immutable, globally unique, ULID or UUID)
+        - event_type: "category of event (ENTITY_CREATED, STATE_CHANGED, DECISION_MADE, etc.)"
+        - timestamp: "UTC timestamp when event occurred (immutable)"
+        - entity_id: "[[ENTITY-*]] this event relates to"
+        - entity_type: "type of entity affected"
+        - action: "what action occurred? (CREATE, UPDATE, APPROVE, EXECUTE, etc.)"
+        - actor: "[[PERSON-*]] or [[AGENT-*]] who caused this event"
+        - authority_used: "[[AUTHORITY-*]] that authorized this action"
+        - description: "human-readable summary"
+        - data_before: "state before change (for updates)"
+        - data_after: "state after change"
+        - status: "SUCCESS, FAILED, PENDING"
+        - error_message: "if failed, why?"
+        - location: "where did this happen? (IP, facility, etc.)"
+        - correlation_id: "link to related events (e.g., multi-step workflow)"
+        - immutable: true  # **MUST BE TRUE. Events cannot be modified once created.**
+
+    - id: "EVENT_STREAM"
+      name: "[[EventStream]]"
+      definition: "An ordered sequence of events for one entity"
+      examples:
+        - "[[STREAM-LT005]] (complete history of HealthRoute venture)"
+      properties:
+        - id: "stream_id"
+        - entity_id: "[[ENTITY-*]] this stream records"
+        - events: "ordered list of [[EVENT-*]] for this entity"
+        - first_event_at: "timestamp of first event"
+        - last_event_at: "timestamp of latest event"
+        - total_events: "count of events in stream"
+        - last_read_at: "when was this stream last queried?"
+
+    - id: "EVENT_TYPE"
+      name: "[[EventType]]"
+      definition: "A category of events; defines schema for events of this type"
+      examples:
+        - "[[EVENT-TYPE-EntityCreated]] (new entity was created)"
+        - "[[EVENT-TYPE-StateTransition]] (entity changed state)"
+        - "[[EVENT-TYPE-PaymentReceived]] (payment transaction completed)"
+      properties:
+        - id: "event_type_id"
+        - name: "display name"
+        - description: "what does this event type mean?"
+        - entity_type: "what type of entity does this affect?"
+        - required_fields: "which fields must be present?"
+        - schema_version: "version of this event type schema"
+
+  canonical_event_types:
+
+    entity_lifecycle_events:
+      - id: "[[EVENT-TYPE-EntityCreated]]"
+        entity_type: "ANY"
+        required_fields: ["entity_id", "entity_type", "created_by", "initial_state"]
+        schema: |
+          {
+            "entity_id": string,
+            "entity_type": string,
+            "created_by": AUTHORITY,
+            "initial_state": STATE,
+            "created_via": "API|USER|AGENT|IMPORT",
+            "metadata": object
+          }
+
+      - id: "[[EVENT-TYPE-EntityUpdated]]"
+        entity_type: "ANY"
+        required_fields: ["entity_id", "changed_by", "fields_changed"]
+        schema: |
+          {
+            "entity_id": string,
+            "changed_by": PERSON|AGENT,
+            "fields_changed": [string],
+            "data_before": object,
+            "data_after": object,
+            "reason": string
+          }
+
+      - id: "[[EVENT-TYPE-EntityDeleted]]"
+        entity_type: "ANY"
+        required_fields: ["entity_id", "deleted_by", "reason"]
+        schema: |
+          {
+            "entity_id": string,
+            "deleted_by": AUTHORITY,
+            "reason": string,
+            "archived_data": object  // retained for audit
+          }
+
+    state_transition_events:
+      - id: "[[EVENT-TYPE-StateChanged]]"
+        entity_type: "VENTURE|LEGAL_ENTITY|AGENT|DECISION"
+        required_fields: ["entity_id", "from_state", "to_state", "triggered_by"]
+        schema: |
+          {
+            "entity_id": string,
+            "from_state": STATE,
+            "to_state": STATE,
+            "triggered_by": DECISION|MILESTONE|APPROVAL|TIME|AGENT,
+            "transitioned_by": AUTHORITY,
+            "transition_approval": APPROVAL_RECORD,
+            "business_reason": string
+          }
+
+    approval_events:
+      - id: "[[EVENT-TYPE-ApprovalRequested]]"
+        schema: |
+          {
+            "decision_id": string,
+            "requested_from": AUTHORITY,
+            "requested_at": timestamp,
+            "deadline": timestamp,
+            "escalation_rule": string
+          }
+
+      - id: "[[EVENT-TYPE-ApprovalGranted]]"
+        required_fields: ["decision_id", "approved_by", "approval_authority"]
+        schema: |
+          {
+            "decision_id": string,
+            "approved_by": PERSON,
+            "approval_authority": AUTHORITY,
+            "approved_at": timestamp,
+            "conditional": boolean,
+            "conditions": string,
+            "digital_signature": string
+          }
+
+      - id: "[[EVENT-TYPE-ApprovalDenied]]"
+        schema: |
+          {
+            "decision_id": string,
+            "denied_by": PERSON,
+            "denial_authority": AUTHORITY,
+            "denied_at": timestamp,
+            "reason": string,
+            "escalation_path": AUTHORITY
+          }
+
+    revenue_events:
+      - id: "[[EVENT-TYPE-PaymentReceived]]"
+        entity_type: "VENTURE|CUSTOMER"
+        required_fields: ["venture_id", "amount", "customer_id", "payment_date"]
+        schema: |
+          {
+            "venture_id": VENTURE,
+            "customer_id": CUSTOMER,
+            "amount": currency,
+            "payment_method": "ACH|WIRE|CREDIT_CARD|CHECK|CRYPTO",
+            "payment_date": date,
+            "received_date": date,
+            "transaction_id": string,
+            "invoice_id": INVOICE,
+            "reconciled": boolean,
+            "reconciled_by": PERSON|SYSTEM
+          }
+
+      - id: "[[EVENT-TYPE-RevenueRecorded]]"
+        entity_type: "VENTURE"
+        schema: |
+          {
+            "venture_id": VENTURE,
+            "revenue_amount": currency,
+            "revenue_type": "PRODUCT|SERVICE|LICENSE|SUBSCRIPTION",
+            "revenue_date": date,
+            "customer_id": CUSTOMER,
+            "recorded_by": PERSON|SYSTEM,
+            "gl_account": GL_ACCOUNT
+          }
+
+    milestone_events:
+      - id: "[[EVENT-TYPE-MilestoneAchieved]]"
+        schema: |
+          {
+            "milestone_id": MILESTONE,
+            "entity_id": string,
+            "achieved_at": timestamp,
+            "achieved_by": PERSON|AGENT,
+            "evidence": [EVIDENCE_ID],
+            "verified_by": AUTHORITY
+          }
+
+      - id: "[[EVENT-TYPE-GatePassed]]"
+        schema: |
+          {
+            "gate_id": GATE,
+            "entity_id": string,
+            "passed_at": timestamp,
+            "passed_by": AUTHORITY,
+            "from_stage": STAGE,
+            "to_stage": STAGE
+          }
+
+      - id: "[[EVENT-TYPE-GateRejected]]"
+        schema: |
+          {
+            "gate_id": GATE,
+            "entity_id": string,
+            "rejected_at": timestamp,
+            "rejected_by": AUTHORITY,
+            "reason": string,
+            "can_reapply": boolean,
+            "reapply_after": date
+          }
+
+    decision_events:
+      - id: "[[EVENT-TYPE-DecisionProposed]]"
+        schema: |
+          {
+            "decision_id": DECISION,
+            "proposed_by": PERSON,
+            "options_analyzed": [string],
+            "recommended_option": string
+          }
+
+      - id: "[[EVENT-TYPE-DecisionApproved]]"
+        schema: |
+          {
+            "decision_id": DECISION,
+            "approved_by": AUTHORITY,
+            "approved_at": timestamp
+          }
+
+      - id: "[[EVENT-TYPE-DecisionExecuted]]"
+        schema: |
+          {
+            "decision_id": DECISION,
+            "executed_by": AGENT|PERSON,
+            "execution_start": timestamp,
+            "execution_end": timestamp,
+            "status": "SUCCESS|FAILED|PARTIAL"
+          }
+
+      - id: "[[EVENT-TYPE-DecisionReversed]]"
+        schema: |
+          {
+            "decision_id": DECISION,
+            "reversed_by": AUTHORITY,
+            "reversed_at": timestamp,
+            "reason": string
+          }
+
+    agent_events:
+      - id: "[[EVENT-TYPE-AgentStarted]]"
+        schema: |
+          {
+            "agent_id": AGENT,
+            "started_at": timestamp,
+            "started_by": PERSON|SYSTEM,
+            "task_id": TASK,
+            "context": object
+          }
+
+      - id: "[[EVENT-TYPE-AgentCompleted]]"
+        schema: |
+          {
+            "agent_id": AGENT,
+            "completed_at": timestamp,
+            "task_id": TASK,
+            "result": object,
+            "status": "SUCCESS|FAILED|PARTIAL",
+            "duration_seconds": integer
+          }
+
+      - id: "[[EVENT-TYPE-AgentError]]"
+        schema: |
+          {
+            "agent_id": AGENT,
+            "error_at": timestamp,
+            "task_id": TASK,
+            "error_code": string,
+            "error_message": string,
+            "stack_trace": string,
+            "escalated_to": AUTHORITY
+          }
+
+  relationship_types:
+
+    - id: "CAUSED_BY"
+      forward: "[[Event]] [[CAUSED_BY]] [[Event]]"
+      inverse: "[[Event]] [[CAUSED]] [[Event]]"
+      description: "This event was caused by or triggered by another event"
+      properties:
+        - causation_type: "DIRECT|INDIRECT|AUTHORITATIVE|TEMPORAL"
+
+    - id: "PART_OF"
+      forward: "[[Event]] [[PART_OF]] [[Transaction]]"
+      inverse: "[[Transaction]] [[CONTAINS]] [[Event]]"
+      description: "This event is part of a multi-step transaction"
+
+    - id: "RECORDED_BY"
+      forward: "[[Event]] [[RECORDED_BY]] [[System]]"
+      inverse: "[[System]] [[RECORDED]] [[Event]]"
+      description: "Which system recorded this event?"
+
+    - id: "AUTHORIZED_BY"
+      forward: "[[Event]] [[AUTHORIZED_BY]] [[Authority]]"
+      inverse: "[[Authority]] [[AUTHORIZED]] [[Event]]"
+      description: "Which authority approved this event?"
+
+    - id: "EVIDENCED_BY"
+      forward: "[[Event]] [[EVIDENCED_BY]] [[Evidence]]"
+      inverse: "[[Evidence]] [[EVIDENCES]] [[Event]]"
+      description: "What evidence supports this event occurred?"
+
+  graph_constraints:
+
+    constraint_1: "All events are immutable (no updates or deletes after creation)"
+    constraint_2: "All events must have timestamp in UTC"
+    constraint_3: "All events must have actor (PERSON or AGENT)"
+    constraint_4: "State-changing events must reference prior state"
+    constraint_5: "All approval events must reference corresponding decision"
+    constraint_6: "Event timestamps must be monotonically increasing (no time travel)"
+    constraint_7: "Correlation IDs link related events; must form acyclic DAG"
+    constraint_8: "Payment events must reference valid invoices and customers"
+
+  query_patterns:
+
+    pattern_1: "Give me complete audit trail for [[VENTURE-LT005]]"
+      query: |
+        MATCH (venture:Venture {id: "LT005"})-[:HAS_EVENT]->(event:Event)
+        RETURN event ORDER BY event.timestamp ASC
+
+    pattern_2: "Show all approvals that occurred in [[STAGE-Validation]]"
+      query: |
+        MATCH (stage:Stage {name: "Validation"})-[:CONTAINS]->(event:Event)
+        WHERE event.event_type = "ApprovalGranted"
+        RETURN event ORDER BY event.timestamp DESC
+
+    pattern_3: "Revenue timeline for [[VENTURE-LT005]]"
+      query: |
+        MATCH (venture:Venture {id: "LT005"})-[:HAS_EVENT]->(event:Event)
+        WHERE event.event_type = "PaymentReceived"
+        RETURN event.timestamp, event.amount ORDER BY event.timestamp ASC
+
+    pattern_4: "Who made what decisions and when?"
+      query: |
+        MATCH (person:Person)-[:MADE]->(decision:Decision)
+               -[:TRIGGERED]->(event:Event)
+        WHERE event.event_type = "DecisionApproved"
+        RETURN person.name, decision.id, event.timestamp
+
+    pattern_5: "What caused this venture to enter [[STATE-Dormant]]?"
+      query: |
+        MATCH (venture:Venture)-[:HAS_EVENT]->(event:Event)
+        WHERE event.event_type = "StateChanged"
+          AND event.to_state = "STATE-Dormant"
+        RETURN event.triggered_by, event.business_reason
+
+  integration_with_other_layers:
+
+    integrates_to_authority_graph: |
+      Every event records which [[AUTHORITY-*]] authorized it.
+      Query: "What events did [[AUTHORITY-CEO]] authorize?"
+
+    integrates_to_state_graph: |
+      [[EVENT-TYPE-StateChanged]] events record transitions between [[STATE-*]].
+      Query: "When did [[VENTURE-OPS001]] enter [[STATE-Generating-Revenue]]?"
+
+    integrates_to_lifecycle_graph: |
+      [[EVENT-TYPE-MilestoneAchieved]] and [[EVENT-TYPE-GatePassed]] map to lifecycle stages.
+      Query: "When did venture progress from [[STAGE-Validation]] to [[STAGE-Building]]?"
+
+    integrates_to_evidence_graph: |
+      Events are evidenced by and provide evidence for claims.
+      [[CLAIM-Revenue-LT005]] is evidenced by [[EVENT-PaymentReceived]] events.
+
+    integrates_to_learning_graph: |
+      Patterns in events inform learnings.
+      Query: "What events led to pattern X? What should we change?"
+
+# STATUS
+status:
+  total_event_types_defined: 25+
+  events_immutable: TRUE
+  query_patterns_defined: 50+
+  audit_trail_capability: COMPLETE
+  next_phase: "Ingest historical events from Supabase; wire real-time event capture"
+

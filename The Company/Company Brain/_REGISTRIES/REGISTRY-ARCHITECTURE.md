@@ -639,7 +639,7 @@ AGENT_ASSIGNMENT_REGISTRY
     ↓
 "Research Agent handles discovery"
     ↓
-AGENT_REGISTRY
+AGENTS_REGISTRY
     ↓
 AGT-017 (research_executor)
     ↓

@@ -137,7 +137,7 @@ Qdrant Returns: TOP-3 concepts
 - VENTURE_PORTFOLIO_MASTER_INVENTORY.md (all 789 ventures with internal notes)
 - BUSINESS-METRIC-REGISTRY.yaml (financial models, CLV, CAC by venture)
 - CONTROL_DOMAINS_250.yaml (all control plane decisions)
-- AGENT_REGISTRY.yaml (agent capabilities, autonomy levels, performance)
+- AGENTS_REGISTRY.yaml (agent capabilities, autonomy levels, performance)
 - CAPABILITY_GAP_MATRIX.yaml (what we can't do yet)
 - LIVING_INVENTORY_VENTURES.csv (active venture status, not sanitized)
 

@@ -22,7 +22,7 @@ Your task: "Write a cold email to 100 prospects"
 
 SYSTEM RESPONSE:
   1. Parse intent → Logic layers: LOGIC-019 (INFORMATION), LOGIC-049 (COGNITION)
-  2. Query AGENT_REGISTRY: agents supporting LOGIC-019 + LOGIC-049
+  2. Query AGENTS_REGISTRY: agents supporting LOGIC-019 + LOGIC-049
   3. Candidates: Cold Email Writer, Email Strategist, Marketing Specialist
   4. Rank by: trustworthiness (0.89), success rate (87%), cost ($0.50 per email)
   5. Recommend: [[Cold Email Writer]] (top match)
@@ -207,7 +207,7 @@ When task arrives → AGENT_DISPATCH_ROUTER.js flow:
    → Category: Sales/Marketing
 
 2. QUERY REGISTRIES
-   AGENT_REGISTRY.yaml:
+   AGENTS_REGISTRY.yaml:
      - Find agents supporting LOGIC-019 + LOGIC-049
      - Filter by domain 30-REVENUE
      - Result: 5 candidate agents
@@ -345,7 +345,7 @@ All 318 agents in one place: [[_REGISTRIES/CANONICAL/AGENTS_INVENTORY_318.yaml|C
 
 This guide shows WHERE agents are. Phase 2a (Oct 2026) makes them INVOKABLE:
 
-1. **Tag all 318 agents** in AGENT_REGISTRY.yaml (auto-generate from `.md` files)
+1. **Tag all 318 agents** in AGENTS_REGISTRY.yaml (auto-generate from `.md` files)
 2. **Map to logic layers** (what logics does each agent execute?)
 3. **Map to capabilities** (what can each agent help with?)
 4. **Deploy dispatch router** (task → ranked agents)

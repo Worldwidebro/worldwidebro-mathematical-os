@@ -99,7 +99,7 @@ RETURN i, cap, agent
 - Static inventories: agents, skills, tools, workflows, research sources, repositories, capabilities
 
 **Registries:**
-- `AGENT_REGISTRY.yaml` — 318 agents with capabilities, performance history, autonomy level
+- `AGENTS_REGISTRY.yaml` — 318 agents with capabilities, performance history, autonomy level
 - `SKILL_REGISTRY.yaml` — 500+ skills with definitions, prerequisites, cost
 - `TOOL_REGISTRY.yaml` — 1000+ tools with APIs, permissions, rate limits
 - `WORKFLOW_REGISTRY.yaml` — Repeatable processes and loop patterns

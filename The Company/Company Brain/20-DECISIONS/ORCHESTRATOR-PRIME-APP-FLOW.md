@@ -51,7 +51,7 @@ This document shows the complete user journey from task submission through execu
 │  ┌────────────────────────────────────────────────────────────────┐   │
 │  │  STEP 2: FIND BEST AGENT                                       │   │
 │  │  ────────────────────────────────────────────────────────────  │   │
-│  │  ✓ Load 318 agents from AGENT_REGISTRY                         │   │
+│  │  ✓ Load 318 agents from AGENTS_REGISTRY                         │   │
 │  │  ✓ Score each agent:                                           │   │
 │  │    - Intent match (40 pts)                                     │   │
 │  │    - Capability match (20 pts × capability_count)              │   │
@@ -352,7 +352,7 @@ INPUT: TaskClassification
          ↓
 
 LOAD AGENTS
-├─ Read AGENT_REGISTRY.yaml (318 agents)
+├─ Read AGENTS_REGISTRY.yaml (318 agents)
 ├─ Filter for status="READY"
 ├─ Load agent metadata:
 │  ├─ agent_id

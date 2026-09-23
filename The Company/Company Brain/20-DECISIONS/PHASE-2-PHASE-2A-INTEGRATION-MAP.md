@@ -85,7 +85,7 @@ RETURN v.entity_id, v.name, gap.description, gap.entity_id;
 
 **Phase 2a Guarantees:**
 - ✅ No missing context (no query returns null unexpectedly)
-- ✅ No orphaned agents (every agent appears in AGENT_REGISTRY.yaml + Neo4j)
+- ✅ No orphaned agents (every agent appears in AGENTS_REGISTRY.yaml + Neo4j)
 - ✅ No conflicting capability claims (contradictions preserved + flagged)
 - ✅ Provenance intact (every agent action traceable to source decision)
 
@@ -152,7 +152,7 @@ CREATE (deal:Entity:Deal {
 | Day | Phase 2 | Phase 2a | Integration |
 |-----|---------|---------|-------------|
 | Mon 17 | Deploy schema + indexes | Read REAL-AGENT-BLUEPRINT.md | Align on Neo4j query interface |
-| Tue 18 | Test Cypher templates | Build AGENT_REGISTRY.yaml (318 agents) | Verify agent IDs match Neo4j |
+| Tue 18 | Test Cypher templates | Build AGENTS_REGISTRY.yaml (318 agents) | Verify agent IDs match Neo4j |
 | Wed 19 | Migrate sectors + ventures (824 entities) | Build DISPATCH_ROUTER.js logic | Test router with sample agents |
 | Thu 20 | Migrate tools + agents + capabilities | Build SKILL_REGISTRY.yaml | Wire skills to tools |
 | Fri 21 | Ingest Phase 2 docs + detect contradictions | Test revenue attribution pipeline (cold email → deal) | Verify deal entity schema |
@@ -214,7 +214,7 @@ Phase 2 creates (:Agent) nodes; Phase 2a agents must match.
 })
 ```
 
-**Phase 2a (AGENT_REGISTRY.yaml):**
+**Phase 2a (AGENTS_REGISTRY.yaml):**
 ```yaml
 cold-email-writer:
   entity_id: cold-email-writer  # MUST MATCH Neo4j
@@ -341,7 +341,7 @@ RETURN SUM(deal.value) AS total_revenue, COUNT(deal) AS deal_count;
 - [ ] $500K+ revenue attributed to Phase 2a agents by Dec 31
 
 ### Integration Complete ✅
-- [ ] Agent entity_ids in AGENT_REGISTRY.yaml match Neo4j (:Agent) nodes
+- [ ] Agent entity_ids in AGENTS_REGISTRY.yaml match Neo4j (:Agent) nodes
 - [ ] Agent queries return correct venture/capability context (no nulls)
 - [ ] Revenue flows from agent actions → deals → Neo4j Deal entities → revenue reports
 - [ ] Dispatch router ranks agents by trustworthiness + success_rate (sourced from Neo4j)
@@ -355,7 +355,7 @@ RETURN SUM(deal.value) AS total_revenue, COUNT(deal) AS deal_count;
 | Blocker | Owner | Deadline |
 |---------|-------|----------|
 | Neo4j schema finalized | Phase 2 | Sep 18 |
-| AGENT_REGISTRY.yaml schema agreed | Phase 2a | Sep 20 |
+| AGENTS_REGISTRY.yaml schema agreed | Phase 2a | Sep 20 |
 | Cypher query patterns documented | Phase 2 | Sep 21 |
 | Agent context queries tested | Phase 2a | Sep 27 |
 | Revenue attribution schema validated | Both | Sep 27 |

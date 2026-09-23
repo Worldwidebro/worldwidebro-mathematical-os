@@ -258,7 +258,7 @@ VEX Dashboard (Home)
 | Risk | Impact | Mitigation |
 |------|--------|-----------|
 | Neo4j down | All tabs fail | Fallback to Supabase queries + Redis cache |
-| OmniRoute down | Agent tabs fail | Fallback to AGENT_REGISTRY.yaml |
+| OmniRoute down | Agent tabs fail | Fallback to AGENTS_REGISTRY.yaml |
 | ClickUp API down | Tasks tab fails | Queue shows cached data + retry UI |
 | Latency > 500ms | Poor UX | Query caching (Redis) + pre-computed aggregates |
 

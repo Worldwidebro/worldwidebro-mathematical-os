@@ -50,7 +50,7 @@
 
 | Current Name | Should Be | Consistency |
 |---|---|---|
-| AGENT_REGISTRY.yaml | ❌ Duplicate | Duplicate with AGENTS_REGISTRY.yaml |
+| AGENTS_REGISTRY.yaml | ❌ Duplicate | Duplicate with AGENTS_REGISTRY.yaml |
 | AGENTS_REGISTRY.yaml | ✅ Correct | AGENTS_REGISTRY.yaml |
 | AGENTS_INVENTORY_318.yaml | ⚠️ Hybrid | Mixed naming (Registry + Inventory) |
 | AGENT_MASTER_REGISTRY.md | ⏳ Planned | Doesn't exist yet |
@@ -69,7 +69,7 @@
 ### **A. ENTITY REGISTRIES (Who/What/Where)**
 | Registry | Count | Status | Naming | Gap |
 |----------|-------|--------|--------|-----|
-| **AGENT_REGISTRY.yaml** | ? | ❌ DUPLICATE | Wrong pattern | CONSOLIDATE with AGENTS_REGISTRY.yaml |
+| **AGENTS_REGISTRY.yaml** | ? | ❌ DUPLICATE | Wrong pattern | CONSOLIDATE with AGENTS_REGISTRY.yaml |
 | **AGENTS_REGISTRY.yaml** | 318 | ⚠️ PARTIAL | Correct | Needs master definitions + assignments |
 | **AGENTS_INVENTORY_318.yaml** | 318 | ⚠️ METADATA | Hybrid | Metadata-only, no definitions |
 | **PEOPLE-REGISTRY.yaml** | ~21 | ✅ LIVE | Correct | Complete (but linked to agents?) |
@@ -320,7 +320,7 @@ LAYER 3: ENTITY INDEXES (7 files)
 1. ✅ Create `META-REGISTRY.yaml` — Catalog all 33 registries
 2. ✅ Create `TERMINOLOGY_REGISTRY.yaml` — Canonical terms
 3. ✅ Create `AGENT_MASTER_REGISTRY.md` — Consolidate 318 agents
-4. ✅ Rename + deduplicate (AGENT_REGISTRY.yaml ← AGENTS_REGISTRY.yaml, etc.)
+4. ✅ Rename + deduplicate (AGENTS_REGISTRY.yaml ← AGENTS_REGISTRY.yaml, etc.)
 5. ✅ Create `REGISTRY-DEPENDENCIES.yaml` — Data flow map
 
 ### **WEEK 2 (Discovery Layer)**

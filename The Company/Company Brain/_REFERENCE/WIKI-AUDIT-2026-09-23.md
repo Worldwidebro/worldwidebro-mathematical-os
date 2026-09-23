@@ -63,7 +63,7 @@ Recommend **Option B** with migration from memory.
 | Link | Status | Action |
 |------|--------|--------|
 | `[[_REFERENCE/ORCHESTRATOR-MASTER-SPECIFICATION\|Orchestrator Master Specification]]` | ❌ Missing | Create _REFERENCE/ORCHESTRATOR-MASTER-SPECIFICATION.md |
-| `[[_REGISTRIES/CANONICAL/AGENT_REGISTRY\|Agent Registry]]` | ❌ Missing | Create or symlink to 16-AGENTS/AGENT_REGISTRY.yaml |
+| `[[_REGISTRIES/CANONICAL/AGENTS_REGISTRY\|Agent Registry]]` | ❌ Missing | Create or symlink to 16-AGENTS/AGENTS_REGISTRY.yaml |
 | `[[_REGISTRIES/CANONICAL/CAPABILITY_REGISTRY\|Capability Registry]]` | ❌ Missing | Create or symlink to 14-CAPABILITIES/CAPABILITY_REGISTRY.yaml |
 
 **Action:** Create missing specs and standardize registry paths

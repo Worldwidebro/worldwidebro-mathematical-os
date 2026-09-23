@@ -10,13 +10,13 @@ discovery_index:
   # ============================================================
 
   agents:
-    registry_file: _REGISTRIES/CANONICAL/AGENT_REGISTRY.yaml
+    registry_file: _REGISTRIES/CANONICAL/AGENTS_REGISTRY.yaml
     description: "All 275 agents tagged with logic layers, control planes, capabilities, skills, tools"
     record_count: 275
     last_updated: 2026-09-17
     how_to_use: |
       # Find agent for task
-      agent = AGENT_REGISTRY.find_by_logic_layers([LOGIC-049, LOGIC-061])
+      agent = AGENTS_REGISTRY.find_by_logic_layers([LOGIC-049, LOGIC-061])
 
       # Check autonomy level
       if agent.autonomy_level == 'L1': escalate_to_human()
@@ -40,7 +40,7 @@ discovery_index:
     how_to_use: |
       # Find skill for debugging Python
       skill = SKILL_REGISTRY.find_by_capability("python_debugging")
-      agent = AGENT_REGISTRY.find_by_skill_id(skill.id)
+      agent = AGENTS_REGISTRY.find_by_skill_id(skill.id)
 
   # ============================================================
   # TOOLS & MCPs (20+ live)
@@ -95,7 +95,7 @@ discovery_index:
       # → CP-009 (Cognition Control Plane)
 
       # Find agents supporting those layers
-      agents = AGENT_REGISTRY.find_by_logic_layers(logics)
+      agents = AGENTS_REGISTRY.find_by_logic_layers(logics)
 
   # ============================================================
   # CONTROL PLANES (30 total)
@@ -254,7 +254,7 @@ discovery_index:
   # ============================================================
 
   phase_2_wiring_checklist:
-    - [ ] Create AGENT_REGISTRY.yaml (tag 275 agents)
+    - [ ] Create AGENTS_REGISTRY.yaml (tag 275 agents)
     - [ ] Create SKILL_REGISTRY.yaml (30+ skills)
     - [ ] Create TOOL_GATEWAY_REGISTRY.yaml (20+ MCPs)
     - [ ] Build AGENT_DISPATCH_ROUTER.js (task → agent routing)
@@ -273,7 +273,7 @@ discovery_index:
 
 | Need | Check |
 |------|-------|
-| Find an agent for a task | AGENT_REGISTRY (agents.registry_file) |
+| Find an agent for a task | AGENTS_REGISTRY (agents.registry_file) |
 | Call a skill | SKILL_REGISTRY (skills.registry_file) |
 | Check tool permissions | TOOL_GATEWAY_REGISTRY (tools.registry_file) |
 | Understand logic layers | LOGIC_LAYERS_REGISTRY (logic_layers.registry_file) |

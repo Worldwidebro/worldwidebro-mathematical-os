@@ -104,7 +104,7 @@
 
 ## Layer 5: Agent System & Autonomy ✅
 
-**Truth Source:** [[AGENT_REGISTRY|_REGISTRIES/CANONICAL/AGENT_REGISTRY.yaml]]
+**Truth Source:** [[AGENTS_REGISTRY|_REGISTRIES/CANONICAL/AGENTS_REGISTRY.yaml]]
 
 | Aspect | Current | Bases-Ready | Status |
 |--------|---------|-------------|--------|
@@ -120,7 +120,7 @@
 - ✅ Skills inherit from Base ontology (e.g., Dispatch Agent gets Logistics-Base routing skills)
 - ✅ No single agent has unrestricted access (least privilege by Base)
 
-**Reference:** [[AGENT_REGISTRY|Agent Registry]] + [[_REGISTRIES/CANONICAL/AGENTS_INVENTORY_318.yaml]]
+**Reference:** [[AGENTS_REGISTRY|Agent Registry]] + [[_REGISTRIES/CANONICAL/AGENTS_INVENTORY_318.yaml]]
 
 ---
 

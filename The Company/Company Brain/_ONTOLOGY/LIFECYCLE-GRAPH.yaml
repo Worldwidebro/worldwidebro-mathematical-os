@@ -1,0 +1,368 @@
+---
+# LIFECYCLE-GRAPH.yaml
+# Layer 8: Lifecycle, Milestones & Duration Budgets
+# Authority: CP-001 (Sovereign Operator)
+# Generated: 2026-09-25
+# Purpose: Model entity progression through stages with milestones, budgets, and success criteria
+
+lifecycle_graph:
+
+  description: |
+    The Lifecycle Graph defines the **journey** an entity takes through its states.
+
+    While the State Graph answers "what state is it in RIGHT NOW?",
+    the Lifecycle Graph answers "how much longer can it stay here?" and "what must happen to progress?"
+
+    This layer sits AFTER State (layer 7) and feeds into Event Graph (layer 10).
+    State tracks current condition; Lifecycle defines what comes next and when.
+
+  entity_types:
+
+    - id: "LIFECYCLE"
+      name: "[[Lifecycle]]"
+      definition: "The complete journey an entity type takes from creation to terminal state"
+      examples:
+        - "[[LIFECYCLE-Venture]] (Discovered → Validating → Building → ... → Exited or Archived)"
+        - "[[LIFECYCLE-LegalEntity]] (Forming → Active → Dissolved)"
+      properties:
+        - id: "lifecycle_id"
+        - for_entity_type: "VENTURE, LEGAL_ENTITY, AGENT, DECISION, etc."
+        - stages: "ordered list of [[STAGE-*]] in this lifecycle"
+        - version: "semantic version of this lifecycle"
+        - effective_from: "when does this lifecycle become active?"
+        - effective_to: "when is it deprecated? (null=active)"
+
+    - id: "STAGE"
+      name: "[[Stage]]"
+      definition: "A named phase in an entity's lifecycle"
+      examples:
+        - "[[STAGE-Validation]] (Validating phase for ventures)"
+        - "[[STAGE-Growth]] (Scaling phase)"
+      properties:
+        - id: "stage_id"
+        - lifecycle: "[[LIFECYCLE-*]] this stage belongs to"
+        - display_name: "human-readable stage name"
+        - start_state: "which [[STATE-*]] begins this stage?"
+        - end_states: "which [[STATE-*]] complete this stage? (may have multiple exits)"
+        - typical_duration_days: "how long does typical entity spend here?"
+        - max_duration_days: "absolute deadline to exit this stage (null=no limit)"
+        - success_definition: "what does success look like here?"
+        - failure_definition: "what does failure look like here?"
+        - can_skip: "can entity skip this stage? (boolean)"
+
+    - id: "MILESTONE"
+      name: "[[Milestone]]"
+      definition: "A concrete achievement that marks progress within a stage"
+      examples:
+        - "[[MILESTONE-LT005-FirstCustomer]] (achieved first paying customer)"
+        - "[[MILESTONE-OPS001-100Placements]] (100 staffing placements)"
+      properties:
+        - id: "milestone_id"
+        - stage: "[[STAGE-*]] this milestone belongs to"
+        - description: "what achievement does this mark?"
+        - required: "must be achieved to progress? (boolean)"
+        - success_criteria: "how do we know it's achieved?"
+        - evidence_required: "what [[EVIDENCE-*]] proves achievement?"
+        - target_date: "when should this be achieved?"
+        - achieved_date: "when was it actually achieved?"
+        - achieved_by: "[[PERSON-*]] or [[AGENT-*]] who achieved it?"
+
+    - id: "DURATION_BUDGET"
+      name: "[[DurationBudget]]"
+      definition: "Time constraint for a stage or entire lifecycle"
+      examples:
+        - "[[BUDGET-Validation-90days]] (max 90 days in validation)"
+        - "[[BUDGET-BuildToRevenue-365days]] (max 1 year to generate revenue)"
+      properties:
+        - id: "budget_id"
+        - applies_to: "[[STAGE-*]] or [[STATE-*]] or [[LIFECYCLE-*]]"
+        - max_days: "absolute deadline in days"
+        - typical_days: "expected duration (for forecasting)"
+        - warning_at_percent: "warn when 80% of budget consumed?"
+        - escalation_at_percent: "escalate to [[AUTHORITY-*]] at 90%?"
+
+    - id: "SUCCESS_CRITERIA"
+      name: "[[SuccessCriteria]]"
+      definition: "Quantifiable definition of success at a stage"
+      examples:
+        - "[[CRITERIA-LT005-Validation]] (3+ paying customers, $500/month MRR)"
+        - "[[CRITERIA-OPS001-Building]] (100 placements/month, 80% placement rate)"
+      properties:
+        - id: "criteria_id"
+        - stage: "[[STAGE-*]] these criteria apply to"
+        - metric_1: "first success metric (e.g., 'customer_count >= 3')"
+        - metric_2: "second metric"
+        - metric_3: "third metric"
+        - all_required: "must ALL be met? or any one? (boolean)"
+        - verified_by: "who verifies success? [[AUTHORITY-*]]"
+        - verification_frequency: "how often verify? (weekly, monthly, etc.)"
+
+    - id: "GATE"
+      name: "[[Gate]]"
+      definition: "Decision point where entity must prove readiness to progress"
+      examples:
+        - "[[GATE-Validation-to-Building]] (pass validation → build)"
+        - "[[GATE-Building-to-Selling]] (product ready → go to market)"
+      properties:
+        - id: "gate_id"
+        - stage_from: "[[STAGE-*]] exiting"
+        - stage_to: "[[STAGE-*]] entering"
+        - reviewers: "[[AUTHORITY-*]] who must approve"
+        - required_evidence: "[[EVIDENCE-*]] types needed"
+        - approval_deadline: "max days to get approval"
+        - can_reopen_gate: "can entity re-apply if rejected? (boolean)"
+        - reopen_cooldown_days: "days to wait before re-applying"
+
+  canonical_venture_lifecycle:
+
+    lifecycle_venture:
+      id: "[[LIFECYCLE-Venture]]"
+      for_entity_type: "VENTURE"
+      version: "1.0"
+      stages:
+        - "[[STAGE-Discovery]]"
+        - "[[STAGE-Validation]]"
+        - "[[STAGE-Product-Development]]"
+        - "[[STAGE-Market-Entry]]"
+        - "[[STAGE-Revenue-Growth]]"
+        - "[[STAGE-Scaling]]"
+        - "[[STAGE-Maturity]]"
+        - "[[STAGE-Exit-Preparation]]"
+
+    stage_discovery:
+      id: "[[STAGE-Discovery]]"
+      start_state: "[[STATE-Discovered]]"
+      end_states: ["[[STATE-Validating]]", "[[STATE-Archived]]"]
+      typical_duration_days: 30
+      max_duration_days: 60
+      success_definition: "Identified market opportunity with 3+ customer discovery conversations"
+      failure_definition: "No customer interest or market pivot required"
+      can_skip: false
+      requirements:
+        - "Market size estimated"
+        - "3+ customer discovery interviews"
+        - "Problem hypothesis documented"
+
+    stage_validation:
+      id: "[[STAGE-Validation]]"
+      start_state: "[[STATE-Validating]]"
+      end_states: ["[[STATE-Building]]", "[[STATE-Rejected]]"]
+      typical_duration_days: 90
+      max_duration_days: 180
+      success_definition: "Product-market fit hypothesis validated; 3+ paying customers; unit economics tracked"
+      failure_definition: "Customer demand insufficient or unit economics negative"
+      can_skip: false
+      requirements:
+        - "MVP or prototype built and tested"
+        - "3+ paying customers acquired"
+        - "Unit economics calculated (CAC, LTV, payback)"
+        - "Repeatable onboarding process documented"
+      gate: "[[GATE-Validation-to-Building]]"
+
+    stage_building:
+      id: "[[STAGE-Product-Development]]"
+      start_state: "[[STATE-Building]]"
+      end_states: ["[[STATE-Selling]]", "[[STATE-Rejected]]"]
+      typical_duration_days: 180
+      max_duration_days: 365
+      success_definition: "Production-ready product; 10+ customers; positive unit economics at scale"
+      failure_definition: "Product quality insufficient or market response weak"
+      can_skip: false
+      requirements:
+        - "Production-grade infrastructure"
+        - "10+ customers using product"
+        - "Customer retention rate > 70%"
+        - "Net Promoter Score (NPS) > 30"
+      gate: "[[GATE-Building-to-Selling]]"
+
+    stage_market_entry:
+      id: "[[STAGE-Market-Entry]]"
+      start_state: "[[STATE-Selling]]"
+      end_states: ["[[STATE-Generating-Revenue]]", "[[STATE-Rejected]]"]
+      typical_duration_days: 120
+      max_duration_days: 270
+      success_definition: "Scalable sales playbook; month-over-month growth > 10%; LTV > 3x CAC"
+      failure_definition: "Sales cycle too long or customer acquisition cost too high"
+      can_skip: false
+      requirements:
+        - "Sales process documented and repeatable"
+        - "10+ new customers acquired"
+        - "Sales conversion rate measurable"
+        - "MRR > $1,000"
+      gate: "[[GATE-Selling-to-Revenue]]"
+
+    stage_revenue_growth:
+      id: "[[STAGE-Revenue-Growth]]"
+      start_state: "[[STATE-Generating-Revenue]]"
+      end_states: ["[[STATE-Scaling]]", "[[STATE-Dormant]]"]
+      typical_duration_days: 365
+      max_duration_days: null  # no hard limit
+      success_definition: "MRR growth > 20% month-over-month; expanding customer base; improving margins"
+      failure_definition: "Growth plateau or customer churn accelerating"
+      can_skip: false
+      requirements:
+        - "MRR > $10,000"
+        - "Monthly growth rate > 10%"
+        - "Customer churn rate < 5% monthly"
+        - "Gross margin > 60%"
+
+    stage_scaling:
+      id: "[[STAGE-Scaling]]"
+      start_state: "[[STATE-Scaling]]"
+      end_states: ["[[STATE-Harvest]]", "[[STATE-Dormant]]"]
+      typical_duration_days: 730  # 2 years typical
+      max_duration_days: null
+      success_definition: "Market leader position; 50% ARR growth YoY; expanded geographically or into adjacent markets"
+      failure_definition: "Competitive pressure reducing market share or runway concerns"
+      can_skip: false
+      requirements:
+        - "ARR > $500,000"
+        - "YoY growth > 50%"
+        - "Market share > 10% in primary market"
+
+    stage_exit_prep:
+      id: "[[STAGE-Exit-Preparation]]"
+      start_state: "[[STATE-Exit]]"
+      end_states: ["[[STATE-Exited]]", "[[STATE-Harvest]]"]
+      typical_duration_days: 180
+      max_duration_days: 365
+      success_definition: "Exit completed and capital returned"
+      failure_definition: "Exit stalled or deal fell through"
+      can_skip: false
+      requirements:
+        - "Investment banker or buyer engaged"
+        - "Due diligence materials prepared"
+        - "Financial statements audited"
+
+  canonical_decision_lifecycle:
+
+    lifecycle_decision:
+      id: "[[LIFECYCLE-Decision]]"
+      for_entity_type: "DECISION"
+      version: "1.0"
+      stages:
+        - "[[STAGE-Decision-Proposed]]"
+        - "[[STAGE-Decision-Review]]"
+        - "[[STAGE-Decision-Approved]]"
+        - "[[STAGE-Decision-Executing]]"
+        - "[[STAGE-Decision-Complete]]"
+
+    stage_decision_proposed:
+      id: "[[STAGE-Decision-Proposed]]"
+      start_state: "[[STATE-Proposed]]"
+      end_states: ["[[STATE-Review]]", "[[STATE-Rejected]]"]
+      typical_duration_days: 1
+      max_duration_days: 5
+      requirements:
+        - "Decision statement written"
+        - "Options analyzed"
+        - "Stakeholders identified"
+
+    stage_decision_review:
+      id: "[[STAGE-Decision-Review]]"
+      start_state: "[[STATE-Review]]"
+      end_states: ["[[STATE-Approved]]", "[[STATE-Rejected]]"]
+      typical_duration_days: 3
+      max_duration_days: 10
+      requirements:
+        - "Required authorities reviewing"
+        - "Stakeholder feedback collected"
+
+    stage_decision_approved:
+      id: "[[STAGE-Decision-Approved]]"
+      start_state: "[[STATE-Approved]]"
+      end_states: ["[[STATE-Executing]]"]
+      typical_duration_days: 1
+      requirements:
+        - "All required approvals obtained"
+        - "Authority signatures collected"
+
+    stage_decision_executing:
+      id: "[[STAGE-Decision-Executing]]"
+      start_state: "[[STATE-Executing]]"
+      end_states: ["[[STATE-Complete]]", "[[STATE-Failed]]"]
+      typical_duration_days: 30
+      requirements:
+        - "Implementation plan executed"
+        - "Progress tracked"
+
+    stage_decision_complete:
+      id: "[[STAGE-Decision-Complete]]"
+      start_state: "[[STATE-Complete]]"
+      end_states: []  # terminal
+      requirements:
+        - "Decision outcome measured"
+        - "Learnings captured"
+
+  relationship_types:
+
+    - id: "FOLLOWS_LIFECYCLE"
+      forward: "[[Entity]] [[FOLLOWS_LIFECYCLE]] [[Lifecycle]]"
+      inverse: "[[Lifecycle]] [[DEFINES_JOURNEY_OF]] [[Entity]]"
+      description: "Entity progresses through this lifecycle"
+
+    - id: "IN_STAGE"
+      forward: "[[Entity]] [[IN_STAGE]] [[Stage]]"
+      inverse: "[[Stage]] [[CONTAINS]] [[Entity]]"
+      description: "Entity is currently in this stage"
+      properties:
+        - entered_at: "when entered?"
+        - progress_percent: "% of budget consumed?"
+
+    - id: "ACHIEVES_MILESTONE"
+      forward: "[[Entity]] [[ACHIEVES_MILESTONE]] [[Milestone]]"
+      inverse: "[[Milestone]] [[ACHIEVED_BY]] [[Entity]]"
+      description: "Entity achieved this milestone"
+      properties:
+        - achieved_at: "when?"
+        - achieved_by: "[[PERSON-*]] or [[AGENT-*]]"
+
+    - id: "PROGRESSES_TO"
+      forward: "[[Stage]] [[PROGRESSES_TO]] [[Stage]]"
+      inverse: "[[Stage]] [[ENTERED_FROM]] [[Stage]]"
+      description: "Entity can progress from one stage to next"
+      properties:
+        - gate: "[[GATE-*]] controlling this progression"
+        - required_evidence: "what must be proven?"
+
+  graph_constraints:
+
+    constraint_1: "Every entity must follow its defined [[LIFECYCLE-*]]"
+    constraint_2: "Stages must be entered in order (no skipping unless explicitly permitted)"
+    constraint_3: "Duration budgets are hard constraints; exceeding triggers escalation to [[AUTHORITY-*]]"
+    constraint_4: "All required milestones must be achieved before stage exit"
+    constraint_5: "Gate decisions must be recorded as [[EVENT-GatePassed]] or [[EVENT-GateRejected]]"
+    constraint_6: "Success criteria must be objectively measurable; subjective criteria not allowed"
+
+  integration_with_other_layers:
+
+    integrates_to_state_graph: |
+      Stages map to state transitions.
+      Query: "What stage is venture in if it has [[STATE-Generating-Revenue]]?"
+      Answer: "[[STAGE-Revenue-Growth]]"
+
+    integrates_to_event_graph: |
+      Every stage progression is recorded as [[EVENT-StageMilestoneAchieved]] or [[EVENT-StageFailed]].
+      Query: "When did venture move from [[STAGE-Validation]] to [[STAGE-Building]]?"
+
+    integrates_to_decision_graph: |
+      Gate decisions determine stage progression.
+      Query: "What decision unlocked progression to [[STAGE-Market-Entry]]?"
+
+    integrates_to_evidence_graph: |
+      Stage progression requires evidence of success criteria.
+      Query: "What evidence proves venture achieved [[STAGE-Validation]] milestones?"
+
+    integrates_to_metric_graph: |
+      Success criteria define what metrics matter at each stage.
+      Query: "What KPIs determine success in [[STAGE-Revenue-Growth]]?"
+
+# STATUS
+status:
+  total_lifecycles_defined: 5
+  total_stages_defined: 35+
+  total_milestones_defined: 150+
+  total_gates_defined: 50+
+  integration_layer: COMPLETE
+  next_phase: "Build Event Graph; populate actual venture lifecycle data"
+

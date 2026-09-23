@@ -13,11 +13,11 @@
 - **Hours:** 17h | **Status:** LOCKED
 - **Tasks:**
   - 1.1: Wire 2,273 READMEs to Integration Master (4h) ✅
-  - 1.2: Auto-generate Agent Registry for 318 agents (6h) ✅ (AGENT_REGISTRY.yaml, 309 agents)
+  - 1.2: Auto-generate Agent Registry for 318 agents (6h) ✅ (AGENTS_REGISTRY.yaml, 309 agents)
   - 1.3: Create Skill Registry (30+ skills) (4h) ✅ (SKILL_REGISTRY.yaml, 34 skills)
   - 1.4: Create Tool Gateway Registry (20+ MCPs) (3h) ✅ (TOOL_GATEWAY_REGISTRY.yaml, 20 tools, $51,850/mo)
 - **Registries Created:**
-  - AGENT_REGISTRY.yaml (309 agents, L1/L2/L3 split)
+  - AGENTS_REGISTRY.yaml (309 agents, L1/L2/L3 split)
   - SKILL_REGISTRY.yaml (34 skills, 100% discoverability)
   - TOOL_GATEWAY_REGISTRY.yaml (20 tools, RBAC + autonomy levels)
 - **Commit:** ebebed893
@@ -98,7 +98,7 @@
 ### Registries (Week 1-3)
 | Registry | Records | Status | Last Updated |
 |----------|---------|--------|--------------|
-| AGENT_REGISTRY.yaml | 309 agents | ✅ Complete | 2026-09-10 |
+| AGENTS_REGISTRY.yaml | 309 agents | ✅ Complete | 2026-09-10 |
 | SKILL_REGISTRY.yaml | 34 skills | ✅ Complete | 2026-09-10 |
 | TOOL_GATEWAY_REGISTRY.yaml | 20 tools | ✅ Complete | 2026-09-18 |
 | CAPABILITY_REGISTRY.yaml | 307 capabilities | ✅ Complete | 2026-09-18 |
@@ -213,7 +213,7 @@ After Week 4 integration testing complete:
 
 ## DEPENDENCIES & BLOCKERS
 
-- ✅ AGENT_REGISTRY complete (309 agents)
+- ✅ AGENTS_REGISTRY complete (309 agents)
 - ✅ CAPABILITY_REGISTRY complete (307 capabilities)
 - ✅ Dispatch router tested + deployed
 - ✅ Cost/revenue models validated

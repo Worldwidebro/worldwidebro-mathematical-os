@@ -998,7 +998,7 @@ FROM user_invocations;
 - `ORCHESTRATOR-PRIME-QUICK-REFERENCE.md` — Command reference & CLI usage
 - `ORCHESTRATOR-PRIME-CLAUDE-HAIKU-IMPLEMENTATION.md` — Implementation details
 - `20-DECISIONS/PHASE-2A-AGENTIC-ENGINEERING-PLAN.md` — Agent deployment timeline
-- Neo4j agent discovery patterns (AGENT_REGISTRY.yaml)
+- Neo4j agent discovery patterns (AGENTS_REGISTRY.yaml)
 - OmniRoute API documentation (internal)
 
 Co-Authored-By: Claude Haiku 4.5 <noreply@anthropic.com>

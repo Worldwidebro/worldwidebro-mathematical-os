@@ -218,7 +218,7 @@ CONTROL_PLANE — infrastructure/financial/operational layer
 | **Venture Manager** | Defined 3 places | ⚠️ Scattered |
 | **Orchestrator** | Referenced in 5+ files | ⚠️ No canonical location |
 
-**→ ACTION:** Consolidate all agent definitions into `16-AGENTS/MASTER_AGENT_REGISTRY.md`
+**→ ACTION:** Consolidate all agent definitions into `16-AGENTS/MASTER_AGENTS_REGISTRY.md`
 
 ---
 
@@ -312,7 +312,7 @@ agent_status:
 | `./scripts/analyze_company_brain_scatter.py` | `./.claude/skills/` | Become FILE_DISCOVERY_SKILL |
 | `./create_brain.sh` | `_INFRASTRUCTURE/init/` | Document in init procedures |
 | `./fractal/docs/skill.rst` | `16-AGENTS/skill-fundamentals.md` | Convert RST → MD |
-| `./.agents/agents/researcher.md` | `16-AGENTS/MASTER_AGENT_REGISTRY.md` | Consolidate (dedup) |
+| `./.agents/agents/researcher.md` | `16-AGENTS/MASTER_AGENTS_REGISTRY.md` | Consolidate (dedup) |
 
 ---
 
@@ -345,7 +345,7 @@ agent_status:
 | Orphaned scripts not consolidated | 5+ scattered files with their own terminology | Migrate into _PIPELINES + .claude/skills |
 | No control base model implemented | "base" and "control" overloaded | Implement 500-Bases model, use B-XXX |
 | Inconsistent naming conventions | venture vs Venture, SKL vs skill | Enforce via Git hook + linter |
-| Multiple agent definitions | Researcher defined 2+ places | Consolidate into MASTER_AGENT_REGISTRY |
+| Multiple agent definitions | Researcher defined 2+ places | Consolidate into MASTER_AGENTS_REGISTRY |
 | No enum registries | Status/state values vary per file | Create LIFECYCLE_REGISTRY.yaml per entity type |
 
 ---

@@ -139,7 +139,7 @@ export class Closer {
 
 ### Gap #2: No I/O Schema
 ❌ Agents don't specify input/output format  
-✅ Fix: Define schema in AGENT_REGISTRY:
+✅ Fix: Define schema in AGENTS_REGISTRY:
 ```yaml
 input_schema:
   prospectData: {email: string, intent: string, message: string}
@@ -392,7 +392,7 @@ Fill in gaps, scale to full roster.
 1. Browse patterns → identify useful ones
 2. Map to our agent types
 3. Implement pattern in our agents
-4. Test + document in AGENT_REGISTRY
+4. Test + document in AGENTS_REGISTRY
 
 **Key Patterns:**
 - **Tool Use Pattern**: Agent → query tools → synthesis → action

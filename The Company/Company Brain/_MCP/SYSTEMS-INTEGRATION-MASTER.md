@@ -177,7 +177,7 @@ updated: 2026-09-17
 
 **Impact:** Dispatch router can't match tasks to agents intelligently.
 
-**Solution:** Create `_REGISTRIES/CANONICAL/AGENT_REGISTRY.yaml`:
+**Solution:** Create `_REGISTRIES/CANONICAL/AGENTS_REGISTRY.yaml`:
 ```yaml
 agent:
   id: agent-business-strategist-001
@@ -285,7 +285,7 @@ capability:
 ## WIRING PLAN (Execute in Order)
 
 ### Phase 2a: Dispatch & Discovery (Oct 2026, 2 weeks)
-1. Create `AGENT_REGISTRY.yaml` (all 275 agents tagged to logic layers + control planes)
+1. Create `AGENTS_REGISTRY.yaml` (all 275 agents tagged to logic layers + control planes)
 2. Create `SKILL_REGISTRY.yaml` (30+ skills discoverable)
 3. Create `TOOL_GATEWAY_REGISTRY.yaml` (20+ MCPs with permissions)
 4. Build `AGENT_DISPATCH_ROUTER.js` (task → best agent(s) → L1/L2/L3 routing)
@@ -335,7 +335,7 @@ File: `_REGISTRIES/CANONICAL/MASTER_DISCOVERY_INDEX.yaml`
 
 ```yaml
 discovery_index:
-  agents: _REGISTRIES/CANONICAL/AGENT_REGISTRY.yaml (275 agents)
+  agents: _REGISTRIES/CANONICAL/AGENTS_REGISTRY.yaml (275 agents)
   skills: _REGISTRIES/CANONICAL/SKILL_REGISTRY.yaml (30+ skills)
   tools: _REGISTRIES/CANONICAL/TOOL_GATEWAY_REGISTRY.yaml (20+ MCPs)
   capabilities: 14-CAPABILITIES/README.md + capability-registry.yaml (300+)
@@ -386,7 +386,7 @@ class AgentDispatcher {
 ### 4. Create Agent Tagging Script
 Script: `_CLI/tag-agents.sh`
 
-Reads all 275 agents, extracts metadata, builds AGENT_REGISTRY.yaml with:
+Reads all 275 agents, extracts metadata, builds AGENTS_REGISTRY.yaml with:
 - Domain inference from filename
 - Logic layer assignment (manual override support)
 - Control plane association
@@ -417,7 +417,7 @@ USER TASK
     ↓
 [AGENT_DISPATCH_ROUTER.js]
     ├─ Parse intent → logic layers
-    ├─ Query AGENT_REGISTRY (275 agents)
+    ├─ Query AGENTS_REGISTRY (275 agents)
     ├─ Query TOOL_GATEWAY_REGISTRY (20+ MCPs)
     ├─ Query CAPABILITY_REGISTRY (300+ capabilities)
     └─ Query LOGIC_LAYERS_REGISTRY (72 logics)
@@ -452,7 +452,7 @@ USER TASK
 
 **Status:** Framework complete. Ready for Phase 2 build. All pieces exist—just need wiring.
 
-**Next:** Create AGENT_REGISTRY.yaml (estimate 4-6 hours to tag 275 agents).
+**Next:** Create AGENTS_REGISTRY.yaml (estimate 4-6 hours to tag 275 agents).
 
 ---
 

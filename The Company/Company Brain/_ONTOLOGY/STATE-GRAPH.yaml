@@ -1,0 +1,360 @@
+---
+# STATE-GRAPH.yaml
+# Layer 7: State & Condition Tracking
+# Authority: CP-001 (Sovereign Operator)
+# Generated: 2026-09-25
+# Purpose: Track current condition of all entities; enable state-based queries and constraints
+
+state_graph:
+
+  description: |
+    The State Graph models the current condition (state) of every entity in the system.
+
+    Every node in every graph has a current [[STATE-*]]:
+    - Ventures have states: [[STATE-Discovered]], [[STATE-Validating]], [[STATE-Building]], [[STATE-Selling]], etc.
+    - Legal entities have states: [[STATE-Active]], [[STATE-Dormant]], [[STATE-Dissolved]]
+    - Agents have states: [[STATE-Idle]], [[STATE-Running]], [[STATE-Failed]], [[STATE-Waiting]]
+    - Decisions have states: [[STATE-Proposed]], [[STATE-Approved]], [[STATE-Executing]], [[STATE-Complete]]
+
+    This layer sits directly AFTER Authority (layer 6) and directly feeds Event Graph (layer 10).
+    Authority determines what states are reachable; Events record when states changed.
+
+  entity_types:
+
+    - id: "STATE"
+      name: "[[State]]"
+      definition: "A discrete condition that an entity can be in"
+      examples:
+        - "[[STATE-Discovered]] (venture exists, unvalidated)"
+        - "[[STATE-Generating-Revenue]] (venture actively producing income)"
+        - "[[STATE-Dormant]] (venture suspended, not operating)"
+      properties:
+        - id: "state_id" (e.g., STATE-Discovered)
+        - entity_type: "what type of entity has this state? (VENTURE, LEGAL_ENTITY, AGENT, DECISION, etc.)"
+        - display_name: "human-readable state name"
+        - description: "what does this state mean?"
+        - is_terminal: "is this a terminal state? (boolean)"
+        - is_stable: "can entity remain indefinitely? or must it transition? (boolean)"
+        - entered_at: "when entity entered this state"
+        - expires_at: "state expires when? (null=indefinite)"
+        - requires_authority: "which [[AUTHORITY-*]] can trigger entry to this state?"
+
+    - id: "STATE_MACHINE"
+      name: "[[StateMachine]]"
+      definition: "The set of states and transitions for one entity type"
+      examples:
+        - "[[STATE_MACHINE-Venture]] (all venture states and transitions)"
+        - "[[STATE_MACHINE-LegalEntity]] (all legal entity states)"
+        - "[[STATE_MACHINE-Decision]] (decision workflow states)"
+      properties:
+        - id: "state_machine_id"
+        - for_entity_type: "VENTURE, LEGAL_ENTITY, AGENT, DECISION, etc."
+        - states: "list of [[STATE-*]] in this machine"
+        - initial_state: "starting state (e.g., [[STATE-Discovered]])"
+        - terminal_states: "which states end the lifecycle?"
+        - version: "semantic version of this state machine"
+        - deprecated: "is this state machine still active? (boolean)"
+
+    - id: "STATE_TRANSITION"
+      name: "[[StateTransition]]"
+      definition: "A valid transition from one state to another"
+      examples:
+        - "[[TRANSITION-Discovered-to-Validating]] (start validation)"
+        - "[[TRANSITION-Generating-to-Dormant]] (pause operations)"
+      properties:
+        - id: "transition_id"
+        - from_state: "[[STATE-*]] entity must be in"
+        - to_state: "[[STATE-*]] entity moves to"
+        - trigger: "what causes this transition? ([[EVENT-*]], user action, time, etc.)"
+        - requires_authority: "which [[AUTHORITY-*]] must approve?"
+        - requires_evidence: "what proof is needed? (e.g., 'revenue verification')"
+        - max_days: "deadline to complete transition (null=no deadline)"
+        - on_failure: "what state to move to if transition fails?"
+        - idempotent: "can this transition be repeated safely? (boolean)"
+
+  canonical_venture_states:
+
+    discovery_phase:
+      id: "[[STATE-Discovered]]"
+      entity_type: "VENTURE"
+      description: "Venture identified but unvalidated; business model unproven"
+      is_terminal: false
+      is_stable: false
+      max_stable_days: 30
+      requires_authority: "[[AUTHORITY-CEO]]"
+      can_transition_to:
+        - "[[STATE-Validating]]"
+        - "[[STATE-Archived]]"
+
+    validation_phase:
+      id: "[[STATE-Validating]]"
+      entity_type: "VENTURE"
+      description: "Running experiments to validate customer need and business model"
+      is_terminal: false
+      is_stable: false
+      max_stable_days: 90
+      requires_authority: "[[AUTHORITY-CEO]]"
+      success_criteria:
+        - "PMF hypothesis tested"
+        - "Initial customer traction (3+ paying customers)"
+        - "Unit economics tracked"
+      can_transition_to:
+        - "[[STATE-Building]]"
+        - "[[STATE-Rejected]]"
+        - "[[STATE-Archived]]"
+
+    building_phase:
+      id: "[[STATE-Building]]"
+      entity_type: "VENTURE"
+      description: "Actively developing product/service for validated market"
+      is_terminal: false
+      is_stable: false
+      max_stable_days: 180
+      requires_authority: "[[AUTHORITY-CEO]]"
+      success_criteria:
+        - "MVP feature-complete"
+        - "Technical foundations solid"
+        - "First 10+ customers"
+      can_transition_to:
+        - "[[STATE-Selling]]"
+        - "[[STATE-Rejected]]"
+        - "[[STATE-Archived]]"
+
+    selling_phase:
+      id: "[[STATE-Selling]]"
+      entity_type: "VENTURE"
+      description: "Sales-driven growth; product-market fit demonstrated"
+      is_terminal: false
+      is_stable: false
+      max_stable_days: 365
+      requires_authority: "[[AUTHORITY-CEO]]"
+      success_criteria:
+        - "Repeatable sales process"
+        - "Unit economics positive (LTV > 3x CAC)"
+        - "Month-over-month growth > 10%"
+      can_transition_to:
+        - "[[STATE-Generating-Revenue]]"
+        - "[[STATE-Rejected]]"
+        - "[[STATE-Archived]]"
+
+    revenue_phase:
+      id: "[[STATE-Generating-Revenue]]"
+      entity_type: "VENTURE"
+      description: "Proven revenue model; scaling operations"
+      is_terminal: false
+      is_stable: true
+      requires_authority: "[[AUTHORITY-CEO]]"
+      defines_success_by: "revenue_per_month, customer_count, gross_margin"
+      can_transition_to:
+        - "[[STATE-Scaling]]"
+        - "[[STATE-Dormant]]"
+        - "[[STATE-Harvest]]"
+        - "[[STATE-Exit]]"
+
+    scaling_phase:
+      id: "[[STATE-Scaling]]"
+      entity_type: "VENTURE"
+      description: "Rapid expansion; market domination strategy active"
+      is_terminal: false
+      is_stable: true
+      requires_authority: "[[AUTHORITY-CEO]]"
+      defines_success_by: "market_share, growth_rate, international_expansion"
+      can_transition_to:
+        - "[[STATE-Harvest]]"
+        - "[[STATE-Dormant]]"
+        - "[[STATE-Exit]]"
+
+    harvest_phase:
+      id: "[[STATE-Harvest]]"
+      entity_type: "VENTURE"
+      description: "Mature business; optimizing for profitability and cash generation"
+      is_terminal: false
+      is_stable: true
+      requires_authority: "[[AUTHORITY-CEO]]"
+      defines_success_by: "cash_flow, operating_margin, return_on_capital"
+      can_transition_to:
+        - "[[STATE-Exit]]"
+        - "[[STATE-Dormant]]"
+
+    exit_phase:
+      id: "[[STATE-Exit]]"
+      entity_type: "VENTURE"
+      description: "Preparing for exit (sale, acquisition, IPO, dividend)"
+      is_terminal: false
+      is_stable: false
+      max_stable_days: 180
+      requires_authority: "[[AUTHORITY-Founder]]"
+      success_criteria:
+        - "Sale/acquisition closed OR IPO filed OR dividend approved"
+      can_transition_to:
+        - "[[STATE-Exited]]"
+        - "[[STATE-Dormant]]"
+
+    dormant_state:
+      id: "[[STATE-Dormant]]"
+      entity_type: "VENTURE"
+      description: "Operations suspended; venture paused but not terminated"
+      is_terminal: false
+      is_stable: true
+      requires_authority: "[[AUTHORITY-CEO]]"
+      can_transition_to:
+        - "[[STATE-Generating-Revenue]]"
+        - "[[STATE-Archived]]"
+
+    terminal_rejected:
+      id: "[[STATE-Rejected]]"
+      entity_type: "VENTURE"
+      description: "Venture failed validation; decision to not proceed"
+      is_terminal: true
+      is_stable: true
+      requires_authority: "[[AUTHORITY-CEO]]"
+      reason_field: "why was this rejected?"
+
+    terminal_archived:
+      id: "[[STATE-Archived]]"
+      entity_type: "VENTURE"
+      description: "Venture historical; no longer in active portfolio"
+      is_terminal: true
+      is_stable: true
+
+    terminal_exited:
+      id: "[[STATE-Exited]]"
+      entity_type: "VENTURE"
+      description: "Exit completed; capital returned to principal"
+      is_terminal: true
+      is_stable: true
+      exit_value: "proceeds from exit"
+
+  canonical_legal_entity_states:
+
+    entity_forming:
+      id: "[[STATE-Forming]]"
+      entity_type: "LEGAL_ENTITY"
+      description: "Legal entity in formation; not yet officially registered"
+      requires_authority: "[[AUTHORITY-ChiefLegal]]"
+      can_transition_to:
+        - "[[STATE-Active]]"
+
+    entity_active:
+      id: "[[STATE-Active]]"
+      entity_type: "LEGAL_ENTITY"
+      description: "Legally registered and operating"
+      is_stable: true
+      requires_authority: "[[AUTHORITY-ChiefLegal]]"
+      can_transition_to:
+        - "[[STATE-Dormant]]"
+        - "[[STATE-Dissolved]]"
+
+    entity_dormant:
+      id: "[[STATE-Dormant]]"
+      entity_type: "LEGAL_ENTITY"
+      description: "Registered but not actively conducting business"
+      is_stable: true
+      can_transition_to:
+        - "[[STATE-Active]]"
+        - "[[STATE-Dissolved]]"
+
+    entity_dissolved:
+      id: "[[STATE-Dissolved]]"
+      entity_type: "LEGAL_ENTITY"
+      description: "Legally dissolved; no longer exists"
+      is_terminal: true
+
+  canonical_agent_states:
+
+    agent_idle:
+      id: "[[STATE-Idle]]"
+      entity_type: "AGENT"
+      description: "Agent initialized but not running any tasks"
+
+    agent_running:
+      id: "[[STATE-Running]]"
+      entity_type: "AGENT"
+      description: "Agent actively executing a task"
+
+    agent_waiting:
+      id: "[[STATE-Waiting]]"
+      entity_type: "AGENT"
+      description: "Agent waiting for external input or approval"
+      can_transition_to:
+        - "[[STATE-Running]]"
+        - "[[STATE-Failed]]"
+
+    agent_failed:
+      id: "[[STATE-Failed]]"
+      entity_type: "AGENT"
+      description: "Agent encountered error and stopped"
+
+    agent_retired:
+      id: "[[STATE-Retired]]"
+      entity_type: "AGENT"
+      description: "Agent no longer deployed"
+      is_terminal: true
+
+  relationship_types:
+
+    - id: "HAS_STATE"
+      forward: "[[Entity]] [[HAS_STATE]] [[State]]"
+      inverse: "[[State]] [[HELD_BY]] [[Entity]]"
+      description: "Entity is currently in this state"
+      properties:
+        - entered_at: "when did entity enter this state?"
+        - entered_via: "what [[EVENT-*]] or [[TRANSITION-*]] caused this?"
+
+    - id: "ALLOWS_TRANSITION"
+      forward: "[[State]] [[ALLOWS_TRANSITION]] [[State]]"
+      inverse: "[[State]] [[TRANSITABLE_FROM]] [[State]]"
+      description: "Valid state transition"
+      properties:
+        - trigger: "what must happen to trigger?"
+        - requires_approval: "which [[AUTHORITY-*]]?"
+        - requires_evidence: "what proof is needed?"
+
+    - id: "TRANSITION_FAILED"
+      forward: "[[State]] [[TRANSITION_FAILED]] [[State]]"
+      inverse: "[[State]] [[REVERTS_TO]] [[State]]"
+      description: "If transition fails, revert to this state"
+
+  graph_constraints:
+
+    constraint_1: "Every entity must have exactly one [[HAS_STATE]] relationship at any moment"
+    constraint_2: "States must follow valid [[STATE_MACHINE-*]] transitions only"
+    constraint_3: "Terminal states cannot have outgoing transitions"
+    constraint_4: "State transition must be recorded as [[EVENT-StateChanged]] in Event Graph"
+    constraint_5: "State changes require prior [[AUTHORITY-*]] approval per [[StateTransition.requires_authority]]"
+    constraint_6: "State machine versions are immutable; new versions get new machine IDs"
+
+  integration_with_other_layers:
+
+    integrates_to_authority_graph: |
+      State transitions are gated by Authority constraints.
+      Query pattern: "What [[AUTHORITY-*]] must approve transition from [[STATE-Validating]] to [[STATE-Building]]?"
+      Authority Graph answer: "[[AUTHORITY-CEO]] (via [[APPROVAL-VentureStateChange]])"
+
+    integrates_to_event_graph: |
+      Every state change is recorded as an [[EVENT-StateChanged]].
+      Event Graph tracks: when changed, by whom, from what state, to what state, with what evidence.
+      Query: "What events caused this entity to enter [[STATE-Dormant]]?"
+
+    integrates_to_lifecycle_graph: |
+      State machines define entity lifecycles.
+      Lifecycle Graph provides: stages, milestones, duration budgets, success criteria.
+      State Graph tracks: where in lifecycle is entity NOW?
+
+    integrates_to_decision_graph: |
+      Decisions can trigger state changes (e.g., [[DECISION-LT005-Pause]] → [[STATE-Dormant]]).
+      Query: "What decisions led to this state change?"
+
+    integrates_to_evidence_graph: |
+      State transitions must be evidenced.
+      Example: transition to [[STATE-Generating-Revenue]] requires [[EVIDENCE-RevenueVerification]].
+      Query: "What evidence supports claim that venture is in [[STATE-Selling]]?"
+
+# STATUS
+status:
+  total_states_defined: 40+
+  total_state_machines_defined: 8
+  total_transitions_defined: 150+
+  integration_layer: COMPLETE
+  next_phase: "Build Lifecycle Graph; populate actual venture states from Supabase"
+
