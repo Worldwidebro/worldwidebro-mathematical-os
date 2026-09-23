@@ -1275,3 +1275,10 @@ LOG
 **File:** `/Users/acebless/Documents/The Company/Company Brain/20-DECISIONS/ORCHESTRATOR-PRIME-APP-FLOW.md`  
 **Created:** 2026-09-18  
 **Status:** Ready for frontend implementation
+---
+
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

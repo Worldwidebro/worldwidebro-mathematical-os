@@ -200,3 +200,10 @@ You focus on what matters: making calls and closing deals.
 **Worst case:** 15 min manual work still gets you ready for Sep 11 at 8:00 AM.
 
 All three systems have fallbacks. You will start on time.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

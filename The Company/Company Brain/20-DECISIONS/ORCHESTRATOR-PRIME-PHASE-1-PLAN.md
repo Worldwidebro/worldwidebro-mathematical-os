@@ -1844,3 +1844,10 @@ SELECT count(*) FROM revenue_log;                      # Revenue logged
 ---
 
 **Phase 1 Complete. Ready to Deploy: Oct 1, 2026**
+---
+
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

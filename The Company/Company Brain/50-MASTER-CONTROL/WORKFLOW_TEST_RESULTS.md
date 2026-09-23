@@ -106,3 +106,10 @@ Agent reports findings to parent
 ---
 
 **See also:** [[50-MASTER-CONTROL/DEPLOYMENT_CHECKLIST|DEPLOYMENT_CHECKLIST]] | [[50-MASTER-CONTROL/INTEGRATION_SUMMARY|INTEGRATION_SUMMARY]] | [[50-MASTER-CONTROL/EXECUTION_STACK|EXECUTION_STACK]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B501|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B501]]

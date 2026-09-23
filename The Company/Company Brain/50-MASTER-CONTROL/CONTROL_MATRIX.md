@@ -96,3 +96,10 @@ The **Control Matrix** specifies the operational and governance checkpoints acro
 
 ---
 [[INDEX]] | [[00-CONSTITUTION/CONTROL_PLANES_MASTER|Control Planes Master]] | [[50-MASTER-CONTROL/50-MASTER-CONTROL|50-MASTER-CONTROL]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B501|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B501]]

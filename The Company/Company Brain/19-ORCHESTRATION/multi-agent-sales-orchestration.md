@@ -77,3 +77,10 @@ Each venture gets a dedicated 4-agent team:
 ---
 
 **Ready to activate now.** Copy the 5 agent prompts into Claude Code as separate agents.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B191|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B191]]

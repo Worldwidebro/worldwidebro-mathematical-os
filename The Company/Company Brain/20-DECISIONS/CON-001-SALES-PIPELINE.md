@@ -216,3 +216,10 @@ Co-Authored-By: Claude Haiku 4.5 <noreply@anthropic.com>
 - **Social Media & Outreach:** [[VENTURE-SOCIAL-EXECUTION-CON-001|CON-001 Social Media Execution]]
 - **Capital Stack Dossier:** [[38-OPPORTUNITIES/CAPITAL_STACK/CON-001_SBA_Surety_Bond_Draw_Line|CON-001 Capital Stack Dossier]]
 - **Data Room Master Prospectus:** [[BUSINESS-CAPITAL-DATA-ROOM/CON-001/COMPILED-MASTER-PROSPECTUS|CON-001 Master Prospectus]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

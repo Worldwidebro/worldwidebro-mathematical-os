@@ -236,4 +236,10 @@ Result:
 **Start Date:** Sep 10 morning
 **Build Time:** 1-2 hours for full Option C
 **Execution Date:** Sep 11 (with full automation + calendar discipline)
+---
 
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

@@ -13,3 +13,10 @@ Index and master domain gateway for **[[25-SALES]]**.
 - Active Client Offers: [[COMMERCIAL/README|COMMERCIAL Portal]]
 - Turnkey Offer: [[COMMERCIAL/OFFERS/OFFER-001-LOCAL-AI-AUDIT|Local AI Audit ($7,500)]]
 - Target Accounts: [[COMMERCIAL/OUTREACH/OUTREACH-001-TARGET-PROSPECTS|Target Prospects]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B251|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B251]]

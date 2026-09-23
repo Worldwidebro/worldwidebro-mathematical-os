@@ -291,4 +291,10 @@ SELECT COUNT(*) FROM lt005_outreach_log WHERE sent_at > NOW() - INTERVAL '7 days
 **Account Role:** Owner (full admin access)  
 **MCP Status:** Connected + verified  
 **Next Review:** Sep 15, 2026
+---
 
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

@@ -348,4 +348,10 @@ Thread 4: awesome-mcp registry sync
 5. **Graduation:** Agent can use tool → move from L1 to L2
 
 **Result:** 928 repos transformed from "nice to have" → "operational assets"
+---
 
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

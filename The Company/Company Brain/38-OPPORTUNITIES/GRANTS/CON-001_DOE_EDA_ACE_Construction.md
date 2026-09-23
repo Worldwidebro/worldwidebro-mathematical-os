@@ -104,3 +104,10 @@ ACE Construction is a verified commercial venture with active commercial pricing
 - **ACE Field OS License:** \$79/month per contracting crew
 
 The DOE SBIR Phase I grant bridges the gap between basic jobsite management and certified federal energy decarbonization compliance, unlocking nationwide distribution to thousands of weatherization and HVAC contractors.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B381|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B381]]

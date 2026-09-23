@@ -84,3 +84,10 @@ updated: 2026-09-06
 - **Source Registry:** [[37-RESEARCH/SOURCE-REGISTRY]]
 - **Venture Capital & Capital Layer:** [[24-FINANCE/24-FINANCE]]
 - **Opportunities Engine:** [[37-RESEARCH/OPPORTUNITIES]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B371|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B371]]

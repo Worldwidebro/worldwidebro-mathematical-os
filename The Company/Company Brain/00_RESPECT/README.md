@@ -47,3 +47,10 @@ The **`00_RESPECT`** subsystem establishes the inviolable boundaries, ethical ru
 - **Ground Truth**: [[REALITY.md]] & [[EVIDENCE.md]]
 - **Memory Operating System**: [[_MEMORY/MEMORY-OS.md]]
 - **Master Control**: [[50-MASTER-CONTROL/50-MASTER-CONTROL.md]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B371|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B371]]

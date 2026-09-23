@@ -16,3 +16,10 @@ Dynamically extracts a scoped subgraph around active entities, ventures, and cap
 - **Implementation Script:** `12-CONTEXT/agent_context_builder.py`
 - **MCP Tool Wrapper:** `_MCP/context_assembly_tool.py`
 - **FastAPI Route:** `POST /api/graph/context` on `:8000`
+---
+
+## Control Base Reference
+
+This document is mapped to [[B121|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B121]]

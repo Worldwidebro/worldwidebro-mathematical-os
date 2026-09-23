@@ -110,3 +110,10 @@ HealthRoute is not a theoretical model; it is an operating commercial offering:
   - Clinic Monthly Retainer: **\$1,200/month** (includes 30 pickups, dedicated cold-chain logging, and audit portal access)
 - **Phase I De-risking:** Phase I NIH research proves clinical outcome superiority (zero specimen hemolysis/loss).
 - **Phase II Horizon:** Scaling to 150 clinic networks across the Southeast, targeting Medicare/Medicaid diagnostic cost reductions.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B381|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B381]]

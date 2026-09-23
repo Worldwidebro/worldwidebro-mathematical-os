@@ -91,3 +91,10 @@ classDiagram
    - 90.9 MB graph (`graphify-out/graph.json`) indexing functions, classes, markdown headings, and rules across 48 community clusters.
 4. **Local Document Graph (Obsidian / gbrain):**
    - In-document markdown wikilinks parsed dynamically by `gbrain` and rendered interactively in VEX (`/knowledge-graph`).
+---
+
+## Control Base Reference
+
+This document is mapped to [[B081|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B081]]

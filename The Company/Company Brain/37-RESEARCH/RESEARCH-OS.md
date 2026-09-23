@@ -76,3 +76,10 @@ updated: 2026-09-06
 ├── OPPORTUNITIES.md                # Opportunity discovery & signal engine
 └── EVIDENCE.md                     # Ground truth, claims, assumptions, falsifications
 ```
+---
+
+## Control Base Reference
+
+This document is mapped to [[B371|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B371]]

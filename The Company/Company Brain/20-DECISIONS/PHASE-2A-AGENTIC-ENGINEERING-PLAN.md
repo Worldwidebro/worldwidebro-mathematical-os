@@ -246,3 +246,10 @@ After Week 4 integration testing complete:
 **Locked:** Sep 18, 2026 (Week 3 complete)  
 **Next Review:** Sep 25, 2026 (Week 4 results)  
 **Target Ship:** Oct 1, 2026 (50 agents, $500K+ revenue)
+---
+
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

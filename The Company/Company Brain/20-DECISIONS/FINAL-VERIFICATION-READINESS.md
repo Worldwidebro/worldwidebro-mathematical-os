@@ -190,4 +190,10 @@ Total: ~7 hours, non-blocking, can happen after revenue loop closes.
 Start with converter Sep 10 morning. Begin cold calling Sep 11.
 
 Wiki links can wait until after Sep 14 revenue checkpoint.
+---
 
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

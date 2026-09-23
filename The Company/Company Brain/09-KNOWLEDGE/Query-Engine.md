@@ -86,3 +86,10 @@ Vector hits are injected as root anchor nodes in Neo4j, pulling adjacent connect
 - World Model: [[09-KNOWLEDGE/Utopia-World-Model|Utopia Enterprise World Model]]
 - Memory Substrate: [[10-MEMORY/10-MEMORY|10-MEMORY (Qdrant)]]
 - Tools & MCP: [[18-TOOLS/README|18-TOOLS]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B091|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B091]]

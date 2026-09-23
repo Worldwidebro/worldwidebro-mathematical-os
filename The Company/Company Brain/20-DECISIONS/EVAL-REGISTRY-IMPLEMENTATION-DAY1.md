@@ -241,4 +241,10 @@ export default function AgentHarnessProfile({ agentId }: Props) {
 - ✅ VEX dev server running
 - ⏳ LangSmith API key (from Bitwarden)
 - ⏳ deepeval Python library (install via pip)
+---
 
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

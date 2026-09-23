@@ -104,3 +104,10 @@ Mapped under [[SECTORS/SEC-034-decentralized-web3]]:
 - Knowledge Domain: [[09-KNOWLEDGE/09-KNOWLEDGE]]
 - Execution Stack: [[50-MASTER-CONTROL/EXECUTION_STACK]]
 - Sector Profile: [[SECTORS/SEC-034-decentralized-web3]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B091|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B091]]

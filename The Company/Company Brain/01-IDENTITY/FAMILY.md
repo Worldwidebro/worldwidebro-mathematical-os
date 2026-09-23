@@ -317,3 +317,10 @@ This document is the answer to "who is this all for?"
 When business and life pull in opposite directions, this document resolves it.
 
 When you're unsure if a decision is worth making, read this first.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B011|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B011]]

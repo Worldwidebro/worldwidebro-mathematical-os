@@ -14,3 +14,10 @@
 3. **The Financial Boundary**: No financial transaction, payment dispatch, contract signing, or DNS modification may occur autonomously without human authorization.
 4. **The Registry Integrity Boundary**: Never overwrite `_REGISTRIES/` files blindly; use atomic, versioned, or append updates.
 5. **The Memory Boundary**: Never treat a model's high subjective confidence as a substitute for empirical test verification.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B371|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B371]]

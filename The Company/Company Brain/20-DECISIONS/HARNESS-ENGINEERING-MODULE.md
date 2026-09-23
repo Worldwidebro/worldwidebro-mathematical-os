@@ -64,3 +64,10 @@ Every component in this module exists because the model can't do it alone.
 ---
 
 **Reference:** https://github.com/ai-boost/awesome-harness-engineering
+---
+
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

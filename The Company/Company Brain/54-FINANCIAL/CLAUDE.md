@@ -51,3 +51,10 @@
 ---
 
 **Updated:** 2026-09-02 | [[SECTOR-TAXONOMY-MASTER]] | [[SEC-008-financial-services]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B541|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B541]]

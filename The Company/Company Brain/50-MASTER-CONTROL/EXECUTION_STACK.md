@@ -366,3 +366,10 @@ BLR AFFECTS_REPOSITORY CAP
 - [[57-CODE-INTELLIGENCE]] — Code analysis
 - [[22-EXECUTION]] — Execution layer
 - [[32-SECURITY]] — Security policies
+---
+
+## Control Base Reference
+
+This document is mapped to [[B501|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B501]]

@@ -175,3 +175,10 @@ After setting all 5 variables:
 **Timeline:** CON-001 ✅ (complete) | LT-005 ⏳ (awaiting env vars) | OPS-001 ⏳ (awaiting cold calls)  
 **Authority:** Execution CP-033 + Infrastructure CP-027  
 **Next Checkpoint:** Sep 10, 9 AM (call update + deployment verification)
+---
+
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

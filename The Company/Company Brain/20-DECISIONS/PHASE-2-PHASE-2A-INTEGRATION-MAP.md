@@ -413,3 +413,10 @@ feat(phase-2a): Wire agent registry to Neo4j — agents query context, revenue a
 **Updated:** 2026-09-17  
 **Authority:** [[PHASE-2-GRAPH-NATIVE-MIGRATION]] ↔ [[PHASE-2A-AGENTIC-ENGINEERING-PLAN]]  
 **Next:** Execute Phase 2 (Sep 17–Oct 1), then Phase 2a (Oct 1–31)
+---
+
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

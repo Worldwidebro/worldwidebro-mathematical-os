@@ -123,3 +123,10 @@ herdr list-panes
 ---
 
 **See also:** [[50-MASTER-CONTROL/WORKFLOW_TEST_RESULTS|WORKFLOW_TEST_RESULTS]] | [[50-MASTER-CONTROL/EXECUTION_STACK|EXECUTION_STACK]] | [[50-MASTER-CONTROL/INTEGRATION_SUMMARY|INTEGRATION_SUMMARY]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B501|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B501]]

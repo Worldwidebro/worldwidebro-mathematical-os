@@ -66,3 +66,10 @@
 | **n8n Automation Engine** | Business process automation and webhook handlers | HTTP / MCP | JWT Bearer Token | `http://100.87.214.70:5678` | Read/Write | `VERIFIED` | Queued executions; retry with exponential backoff |
 | **BrowserOS Neo** | Agentic browser automation & DOM visual audit | HTTP / MCP | Session UUID | `http://127.0.0.1:9012/mcp` | Read/Write | `VERIFIED` | Disconnected sessions trigger automatic session recovery |
 | **GitHub API** | Canonical repository metadata synchronization | HTTPS REST | Bearer PAT (`GITHUB_TOKEN`) | `https://api.github.com` | Read/Write | `VERIFIED` | Rate-limit throttling with cached catalog fallback |
+---
+
+## Control Base Reference
+
+This document is mapped to [[B191|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B191]]

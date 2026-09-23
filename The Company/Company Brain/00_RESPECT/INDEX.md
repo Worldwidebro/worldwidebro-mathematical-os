@@ -26,3 +26,10 @@
 - [[../00_RESPECT/INDEX|00_RESPECT]] — This domain
 - [[../_MEMORY/INDEX|_MEMORY]] — Organizational memory system
 - [[../10-MEMORY/INDEX|10-MEMORY]] — Memory domain
+---
+
+## Control Base Reference
+
+This document is mapped to [[B371|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B371]]

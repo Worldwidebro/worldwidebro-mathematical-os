@@ -150,3 +150,10 @@
 ---
 
 *Last updated: Sep 8, 2026 | Owner: Claude + Venture Leads*
+---
+
+## Control Base Reference
+
+This document is mapped to [[B191|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B191]]

@@ -249,3 +249,10 @@ LT Medical Courier
 **Weekly review:** Mondays 9am
 
 **Note:** Medical logistics requires compliance-conscious messaging. All materials should emphasize HIPAA-readiness, chain of custody, and audit-trail documentation.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B191|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B191]]

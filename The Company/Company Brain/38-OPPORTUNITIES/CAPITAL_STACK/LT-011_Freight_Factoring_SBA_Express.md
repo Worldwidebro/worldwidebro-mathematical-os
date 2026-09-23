@@ -111,3 +111,10 @@ DEBT SERVICE COVERAGE RATIO (DSCR)          1.98x          14.11x          45.09
 - **Integrated Legal + Financial Summary:** [[BUSINESS-CAPITAL-DATA-ROOM/5-VENTURE-INTEGRATED-SUMMARY|5-Venture Integrated Legal + Financial Summary]]
 - **Sovereign Capital Stack Index:** [[38-OPPORTUNITIES/CAPITAL_STACK/README|38-OPPORTUNITIES/CAPITAL_STACK/README.md]]
 - **Canonical Facilities Registry:** [[_REGISTRIES/CANONICAL/CAPITAL_FACILITIES_REGISTRY.yaml]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B381|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B381]]

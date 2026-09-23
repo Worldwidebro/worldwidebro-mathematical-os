@@ -131,3 +131,10 @@ The entire company operating system operates as a unified 34-layer continuum:
 ## 4. Cross-System Consistency
 
 All software code, database records, graph nodes, and business documents are projections of this master ontology. No database or repo exists outside this framework.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B001|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B001]]

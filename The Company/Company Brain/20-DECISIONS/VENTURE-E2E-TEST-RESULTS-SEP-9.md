@@ -160,3 +160,10 @@ The blocker is not "code doesn't work" — it's "we haven't called customers."
 **Authority:** CP-027 (Infrastructure) + CP-033 (Execution)  
 **Test Date:** Sep 9, 2026  
 **Result:** ✅ ALL SYSTEMS GO
+---
+
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

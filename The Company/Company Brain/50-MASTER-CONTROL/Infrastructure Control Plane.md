@@ -34,3 +34,10 @@ The core hardware, network, database, container, and model routing control plane
 10. [[56-ENGINEERING/INFRASTRUCTURE/10_SECURITY/SECURITY-INFRASTRUCTURE|10_SECURITY]] — NIST SP 800-207 Zero Trust multi-subject, Bitwarden JIT secrets.
 11. [[56-ENGINEERING/INFRASTRUCTURE/11_RESILIENCE/RESILIENCE|11_RESILIENCE]] — High availability, 3-2-1 backup architecture, DR runbooks, RTO/RPO.
 12. [[56-ENGINEERING/INFRASTRUCTURE/12_COST-GOVERNANCE/INFRASTRUCTURE-COST|12_COST-GOVERNANCE]] — FinOps ($309/mo TCO), capacity limits, SOP runbooks, ADRs.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B501|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B501]]

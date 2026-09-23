@@ -356,4 +356,10 @@ Escalation: If founder unreachable in 24h → escalate to co-principal
 **Status:** ✅ Phase 1 (Structure) Complete | 🟡 Phase 2 (Verification) Ready to Start  
 **Last Updated:** 2026-09-23  
 **Next Review:** 2026-09-25 (after founder verification)
+---
 
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

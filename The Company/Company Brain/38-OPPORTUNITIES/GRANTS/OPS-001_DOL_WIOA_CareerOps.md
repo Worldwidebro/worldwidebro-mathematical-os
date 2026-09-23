@@ -112,3 +112,10 @@ Every dollar granted will be measured against USDOL Common Performance Measures:
 3. **Median Earnings:** Target median hourly wage of \$24.50/hr (vs. \$15.00/hr baseline).
 4. **Credential Attainment:** Target 80% completing structured skills verification and certification.
 5. **Measurable Skill Gains:** Target 90% demonstrating measurable advancement on the 12-Layer Skill Graph.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B381|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B381]]

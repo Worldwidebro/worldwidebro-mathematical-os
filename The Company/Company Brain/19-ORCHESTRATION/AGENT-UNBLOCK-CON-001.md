@@ -45,3 +45,10 @@
 **Note:** Mark all placeholder data in ads/landing with [TO DO: CONFIRM WITH VENTURE] — easy to swap once received.
 
 **Blockers removed:** Proceed to full campaign setup. Real data can be layered in without pausing ads.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B191|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B191]]

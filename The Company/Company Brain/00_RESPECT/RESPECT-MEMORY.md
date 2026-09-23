@@ -14,3 +14,10 @@ Just because the system remembers something does not mean it can use it without 
 2. **Do not confuse memory with current reality**: A memory is a snapshot of the past. Always verify that a remembered state is still true today.
 3. **Respect decay and supersession**: Never revive decayed, superseded, or disproven memories to justify a current action.
 4. **Respect the right to be forgotten**: When an operator commands the removal of an entity, secret, or project, all associated working, semantic, and graph records must be purged cleanly.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B371|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B371]]

@@ -82,3 +82,10 @@ Co-Authored-By: Claude Haiku 4.5 <noreply@anthropic.com>
 - **Infrastructure Runtime:** [[CLAUDE|CLAUDE.md]]
 - **Start Here:** [[STARTHERE|STARTHERE.md]]
 - **Constitution Index:** [[00-CONSTITUTION/README|00-CONSTITUTION/README.md]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B001|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B001]]

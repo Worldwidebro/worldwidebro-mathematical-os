@@ -383,4 +383,10 @@ Once you've completed this setup:
 **Owner:** CP-027 (Infrastructure)  
 **Time to complete:** 45 minutes  
 **Questions?** Check Troubleshooting section above or refer to official Meta docs
+---
 
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

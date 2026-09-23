@@ -395,3 +395,10 @@ This document is the identity and operating charter for all systems in the Compa
 **Read [[SOUL|SOUL.md]] first. Then read this. Then read [[PURPOSE|PURPOSE.md]] and [[FAMILY|FAMILY.md]].**
 
 See [[IDENTITY-STACK|IDENTITY-STACK.md]] for the complete nine-layer identity hierarchy.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B011|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B011]]

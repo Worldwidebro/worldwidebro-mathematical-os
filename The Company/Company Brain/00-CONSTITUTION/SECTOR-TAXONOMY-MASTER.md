@@ -197,3 +197,10 @@ SEC-024 (Technology) → OpCo-024 → CP-024, CP-028, CP-032
 
 **Status:** Active | **Next:** Proceed to Task 2 (sector registries)  
 **Created:** 2026-09-02 | **Updated:** 2026-09-02
+---
+
+## Control Base Reference
+
+This document is mapped to [[B001|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B001]]

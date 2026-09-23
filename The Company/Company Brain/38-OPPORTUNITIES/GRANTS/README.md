@@ -47,3 +47,10 @@ All grant dossiers strictly adhere to the 10 Critical Rules of the Grant Writer 
 - **Venture Specifications:** [[23-VENTURES/README|23-VENTURES]]
 - **DispatchOS Contract:** [[_REGISTRIES/CANONICAL/DISPATCH_OS_CANONICAL_CONTRACT|DISPATCH_OS_CANONICAL_CONTRACT.md]]
 - **Labor Market Ontology:** [`_ONTOLOGY/LABOR_MARKET_ONTOLOGY.md`](file:///Users/acebless/Documents/The%20Company/Company%20Brain/_ONTOLOGY/LABOR_MARKET_ONTOLOGY.md)
+---
+
+## Control Base Reference
+
+This document is mapped to [[B381|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B381]]

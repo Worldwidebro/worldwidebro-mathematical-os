@@ -273,3 +273,10 @@ Co-Authored-By: Claude Haiku 4.5 <noreply@anthropic.com>
 - **Social Media & Outreach:** [[VENTURE-SOCIAL-EXECUTION-LT-005|LT-005 Social Media Execution]]
 - **Capital Stack Dossier:** [[38-OPPORTUNITIES/CAPITAL_STACK/LT-005_Healthcare_CDFI_Vehicle_Lease|LT-005 Capital Stack Dossier]]
 - **Data Room Master Prospectus:** [[BUSINESS-CAPITAL-DATA-ROOM/LT-005/COMPILED-MASTER-PROSPECTUS|LT-005 Master Prospectus]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

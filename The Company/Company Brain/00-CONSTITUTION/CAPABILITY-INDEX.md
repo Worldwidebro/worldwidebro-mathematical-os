@@ -287,3 +287,10 @@ Priority mapping (unmapped → sectors):
 **Generated:** 2026-09-10  
 **Authority:** [[00-CONSTITUTION|Constitution]] + [[REALITY|Reality Ledger]]  
 **Source:** [[_ONTOLOGY/CAPABILITY_REGISTRY.yaml]] + [[_REGISTRIES/capabilities-by-sector.yaml]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B001|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B001]]

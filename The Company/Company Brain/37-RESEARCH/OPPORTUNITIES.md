@@ -74,3 +74,10 @@ Where:
 | **Federal Regulation** | Stricter chain-of-custody rules for clinical lab blood transports. | Federal Register / HHS CMS | **`LT-005`**: Implement cryptographically signed digital chain-of-custody in medical courier dispatch app. |
 | **Labor Market** | Delivery driver shortage + 8.4% wage spike in Northeast MSAs. | BLS OEWS / JOLTS | **`LT-011`**: Ship route batching and multi-order dispatch to increase revenue per driver-hour by 35%. |
 | **Corporate Filing** | National courier incumbent reveals 14% customer churn due to late STAT drop-offs. | Form 10-K Risk Factors (EDGAR) | **Commercial**: Launch targeted outbound sales campaign to labs in New York & New Jersey offering guaranteed 45-min STAT response. |
+---
+
+## Control Base Reference
+
+This document is mapped to [[B371|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B371]]

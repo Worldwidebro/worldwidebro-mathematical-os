@@ -65,3 +65,10 @@ updated: 2026-09-06
 - **Source Registry:** [[37-RESEARCH/SOURCE-REGISTRY]]
 - **Legal Domain:** [[31-LEGAL/31-LEGAL]]
 - **Knowledge Core:** [[09-KNOWLEDGE/09-KNOWLEDGE]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B371|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B371]]

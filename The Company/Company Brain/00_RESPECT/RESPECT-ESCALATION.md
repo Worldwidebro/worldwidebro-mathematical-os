@@ -25,3 +25,10 @@ When escalating:
 2. Provide the empirical evidence (error code, conflicting file lines).
 3. Present 2–3 concrete options with trade-offs.
 4. Explicitly request the operator's decision before resuming.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B371|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B371]]

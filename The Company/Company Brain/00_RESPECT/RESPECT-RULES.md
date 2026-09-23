@@ -23,3 +23,10 @@ If you do not know a port, token, file path, or status, output `UNKNOWN` or stat
 
 ### Rule 5: Non-Destructive Git Hygiene
 Never run `git reset --hard`, `git push --force`, or prune branches without verifying git status and uncommitted working files beforehand.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B371|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B371]]

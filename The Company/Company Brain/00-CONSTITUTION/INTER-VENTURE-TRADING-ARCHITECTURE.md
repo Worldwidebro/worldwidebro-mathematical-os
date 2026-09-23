@@ -17,3 +17,10 @@ Defines the internal trading network, cross-venture service-level agreements (SL
 2. **Construction (CON-001)** leases facility assets and fleet equipment from **Holdings Real Estate (RE-001)**.
 3. **Core IP Holding LLC** licenses dispatch software, AI agent swarms, and data engines to operating ventures on arm's-length royalty terms.
 4. **Internal Ledger:** Settlements occur on 30-day cycles via automated intra-company bookkeeping, keeping cash flow centralized within the enterprise.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B001|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B001]]

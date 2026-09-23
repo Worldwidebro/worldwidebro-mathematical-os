@@ -25,3 +25,10 @@ See folder contents: [`./27-CUSTOMERS/`](./)
 - **Parent Category:** Layer 4: Operations
 - **Master Navigation:** [[../INDEX|Index.md]]
 - **All Domains:** [[../DOMAIN-MAP|DOMAIN-MAP.md]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B271|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B271]]

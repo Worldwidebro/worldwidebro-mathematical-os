@@ -1220,3 +1220,10 @@ Each venture has a clear 5-7 day path to $0 → First Revenue. Once first revenu
 **Date Generated:** 2026-09-08  
 **Authority:** [[OPERATIONAL-REALITY-MASTER]] | [[REALITY.md]] | [[ANTIGRAVITY.md]]  
 **Next Review:** 2026-09-15 (after Week 1 execution)
+---
+
+## Control Base Reference
+
+This document is mapped to [[B241|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B241]]

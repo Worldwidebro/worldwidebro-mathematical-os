@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8a6f7fd8c266e3d8",
+            "id": "62e5e5b2dcfdd519",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -181,8 +181,9 @@
       "bases:Create new base": false
     }
   },
-  "active": "8a6f7fd8c266e3d8",
+  "active": "62e5e5b2dcfdd519",
   "lastOpenFiles": [
+    "Company Brain/90-EXECUTION/DUPLICATE_TERMINOLOGY_AUDIT_2026-09-24.md",
     "Company Brain/90-EXECUTION/FILE_INVENTORY_MAP_2026-09-24.md",
     "Company Brain/graphify-out/GRAPH_REPORT.md",
     "Company Brain/_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml",
@@ -209,7 +210,6 @@
     "Company Brain/32-SECURITY/INDEX.md",
     "Company Brain/31-LEGAL/INDEX.md",
     "Company Brain/30-HR/INDEX.md",
-    "Company Brain/29-OPERATIONS/INDEX.md",
     "Company Brain/graft/vex-wired",
     "Company Brain/graft/src/pages/api",
     "Company Brain/graft/src/services/__tests__",

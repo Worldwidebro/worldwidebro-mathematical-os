@@ -22,3 +22,10 @@ Subagents and specialized tools operate with bounded autonomy within their desig
 - Provide clear, unambiguous task definitions and acceptance criteria.
 - Do not micromanage deterministic routines.
 - Verify subagent outputs empirically before accepting completion.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B371|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B371]]

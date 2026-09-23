@@ -236,3 +236,10 @@ All you need to do Sep 11: Pick up phone and start calling.
 *Last updated: Sep 9, 2026, 3:30 PM EDT*  
 *Status: Ready to Execute Sep 11 at 8 AM*  
 *Authority: CP-033 (Execution), CP-021 (Revenue Operations)*
+---
+
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

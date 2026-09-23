@@ -207,3 +207,10 @@ Read [[SOUL|SOUL.md]] when you doubt how to think.
 Read [[WHOIAM|WHOIAM.md]] when you doubt who you serve.
 
 Read [[FAMILY|FAMILY.md]] when you doubt who it's all for.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B011|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B011]]

@@ -371,3 +371,10 @@ By Nov 18, 2026:
 **Next:** Phase 1 Deployment (Sep 18–19) → Phase 2–7 (Sep 19–30) → Production Launch (Oct 1)
 
 See also: `OMNIROUTE-ORCHESTRATOR-PRIME-BUILD-PLAN.md`, `ORCHESTRATOR-PRIME-SUPABASE-SCHEMA.sql`, `src/services/orchestrator-prime.ts`
+---
+
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

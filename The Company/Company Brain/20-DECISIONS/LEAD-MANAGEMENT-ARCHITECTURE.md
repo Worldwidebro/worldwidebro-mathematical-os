@@ -562,3 +562,10 @@ export const syncLeadsEverywhere = skill({
 ---
 
 **Next Step:** Confirm which ventures use ClickUp, then deploy the sync skills.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

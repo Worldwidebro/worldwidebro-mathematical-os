@@ -192,3 +192,10 @@ Date | Venture | Company | Contact | Phone | Script Used | Outcome | Notes | Fol
 ---
 
 **Remember:** The scripts and reminders are already live. All you need to do Sep 11 is pick up the phone and start calling. Everything else is automated. 🚀
+---
+
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

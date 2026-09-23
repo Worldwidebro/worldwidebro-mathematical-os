@@ -259,3 +259,10 @@ All detailed execution plans are stored in Company Brain:
 
 **Master Checklist Owner:** [ASSIGN]  
 **Last Updated:** Sep 8, 2026 | **Next Review:** Sep 15 EOD
+---
+
+## Control Base Reference
+
+This document is mapped to [[B191|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B191]]

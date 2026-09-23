@@ -421,3 +421,10 @@ Time to **sell**, not build.
 - Is it fear of calling? (We need to just do it)
 
 **What's the real blocker?**
+---
+
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

@@ -72,3 +72,10 @@ Following the architecture extraction from [[09-KNOWLEDGE/Utopia-World-Model|Uto
 - Vector Substrate: [[10-MEMORY/10-MEMORY|10-MEMORY (Qdrant)]]
 - World Model: [[09-KNOWLEDGE/Utopia-World-Model|Utopia Enterprise World Model]]
 - Master Control: [[50-MASTER-CONTROL/50-MASTER-CONTROL|50-MASTER-CONTROL]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B091|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B091]]

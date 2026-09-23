@@ -148,3 +148,10 @@ OPTIONAL MATCH (r)-[imp:IMPLEMENTS]->(c:Capability)
 OPTIONAL MATCH (v)-[dep:DEPLOYS]->(s:Site)
 RETURN v.id as Venture, r.name as Repo, collect(c.name) as Capabilities, collect(s.url) as Sites
 ```
+---
+
+## Control Base Reference
+
+This document is mapped to [[B071|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B071]]

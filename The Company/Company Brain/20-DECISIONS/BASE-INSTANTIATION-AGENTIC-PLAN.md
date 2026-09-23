@@ -349,3 +349,10 @@ Verify:
 **Authority:** User + Agentic Engineering Skill  
 **Last Updated:** 2026-09-22  
 **Status:** READY FOR EXECUTION (Sep 23 kickoff)
+---
+
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

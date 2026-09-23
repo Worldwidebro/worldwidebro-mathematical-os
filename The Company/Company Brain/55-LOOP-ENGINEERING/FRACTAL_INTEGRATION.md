@@ -98,3 +98,10 @@ ANO REPORTS_TO ANO | DEC    (communication)
 - Company Brain Integration: [[fractal/wiki/architecture/company_brain_integration|company_brain_integration.md]]
 - Execution Stack: [[50-MASTER-CONTROL/EXECUTION_STACK|EXECUTION_STACK]]
 - Graft Integration: [[57-CODE-INTELLIGENCE/GRAFT_INTEGRATION|GRAFT_INTEGRATION]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B551|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B551]]

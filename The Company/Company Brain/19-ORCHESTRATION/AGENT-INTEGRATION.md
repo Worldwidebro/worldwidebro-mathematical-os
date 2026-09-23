@@ -64,3 +64,10 @@
    - Agents must freeze meta-work on non-core ventures and focus exclusively on Tier-0 ventures (`OPS-001`, `LT-005`, `CALLCENTER`) with distance-to-cash <= 48 hours.
 2. **Audit Logging:**
    - Every agent interaction is captured in local conversation transcripts (`transcript.jsonl`) with tool calls, latency, thinking blocks, and output payloads.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B191|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B191]]

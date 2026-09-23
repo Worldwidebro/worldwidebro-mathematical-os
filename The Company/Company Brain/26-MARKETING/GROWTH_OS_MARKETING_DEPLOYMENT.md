@@ -120,4 +120,10 @@ def get_pipeline(venture_id):
 - Sep 15 afternoon: Wire to DealFlow
 - Sep 16: Test + integrate with VEX Hero
 - Sep 19: Live + visible in growth projections
+---
 
+## Control Base Reference
+
+This document is mapped to [[B261|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B261]]

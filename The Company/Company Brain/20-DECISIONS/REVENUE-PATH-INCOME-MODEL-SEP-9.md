@@ -248,3 +248,10 @@ Expected: "$2,500 YTD" or similar
 **Authority:** Revenue CP-021  
 **Next Checkpoint:** Sep 14, 5 PM (verify $2,500+ in Stripe)  
 **Question?** How to proceed if a step is blocked
+---
+
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

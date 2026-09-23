@@ -25,3 +25,10 @@ See folder contents: [`./18-TOOLS/`](./)
 - **Parent Category:** Layer 3: Capabilities
 - **Master Navigation:** [[../INDEX|Index.md]]
 - **All Domains:** [[../DOMAIN-MAP|DOMAIN-MAP.md]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B181|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B181]]

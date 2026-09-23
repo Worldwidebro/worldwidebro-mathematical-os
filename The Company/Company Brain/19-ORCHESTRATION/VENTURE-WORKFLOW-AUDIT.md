@@ -300,4 +300,10 @@ FRIDAY END:
 **Everything else is automated.**
 
 **Question for you:** Are you ready to make those calls this week?
+---
 
+## Control Base Reference
+
+This document is mapped to [[B191|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B191]]

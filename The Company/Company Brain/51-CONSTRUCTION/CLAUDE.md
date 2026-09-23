@@ -74,3 +74,10 @@ See `/Users/acebless/.claude/CLAUDE.md` for:
 
 **Updated:** 2026-09-02  
 **Master Reference:** [[SECTOR-TAXONOMY-MASTER]] | [[SEC-002-construction-infrastructure]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B511|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B511]]

@@ -22,3 +22,10 @@ This document is an alias gateway redirecting to canonical [[55-LOOP-ENGINEERING
 - Fractal Integration: [[55-LOOP-ENGINEERING/FRACTAL_INTEGRATION|FRACTAL_INTEGRATION.md]]
 - Fractal Engine Master: [[fractal/README|fractal/README.md]]
 - Execution Control Plane: [[22-EXECUTION]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B551|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B551]]

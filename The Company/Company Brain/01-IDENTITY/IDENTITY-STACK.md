@@ -210,3 +210,10 @@ Use it as the filter for all other guidance.
 **Status:** FOUNDATIONAL CHARTER
 
 Read this. Then read the four layers. Then decide.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B011|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B011]]

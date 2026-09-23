@@ -12,3 +12,10 @@
 1. **Context Isolation**: Information obtained within the scope of one venture (e.g. `CON-001`) must not leak into unrelated external communications or non-synergistic venture pipelines.
 2. **Local Vector Protection**: Vector embeddings containing proprietary trade secrets or customer lists must reside exclusively on local nodes (`100.87.214.70` / `100.121.17.63`).
 3. **No Credential Echoing**: Output buffers and logs must scrub authorization headers, basic auth tokens, and session cookies.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B371|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B371]]

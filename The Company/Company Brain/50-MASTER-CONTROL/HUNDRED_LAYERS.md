@@ -145,3 +145,10 @@ Total: ~100-150 distinct control points mapped.
 ---
 
 **See also:** [[SEVEN_PLANES]] | [[CONTROL_MATRIX]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B501|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B501]]

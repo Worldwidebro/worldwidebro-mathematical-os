@@ -146,4 +146,10 @@ task: 1.3d (Tool Gateway Registry)
 **Generated:** 2026-09-18, Task 1.3d  
 **Status:** Ready for Week 2 integration into AGENT_DISPATCH_ROUTER.js  
 **Commit:** Pending
+---
 
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

@@ -284,3 +284,10 @@ Once Phase 2 is complete:
 **Updated:** 2026-09-17  
 **Authority:** User's explicit choice: "b" (Graph-Native Refactor immediately)  
 **Reference:** [[PHASE-2-GRAPH-NATIVE-MIGRATION]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

@@ -289,4 +289,10 @@ Quick question: How many trucks in your fleet, and are you happy with your curre
 ---
 
 Co-Authored-By: Claude Haiku 4.5 <noreply@anthropic.com>
+---
 
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

@@ -83,3 +83,10 @@ We are requesting **\$350,000** over 12 months from DARPA and NIST to formally s
 | **Subtotal Direct Costs (A–E)** | | **\$318,190** |
 | **F. Indirect Costs (Overhead)** | De minimis 10% MTDC adjusted to fit \$350K cap: \$31,810. | **\$31,810** |
 | **TOTAL REQUESTED DARPA/NIST BUDGET** | **Reconciled exactly with statutory ceiling** | **\$350,000** |
+---
+
+## Control Base Reference
+
+This document is mapped to [[B381|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B381]]

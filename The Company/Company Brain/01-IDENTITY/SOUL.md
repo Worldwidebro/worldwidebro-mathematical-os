@@ -466,3 +466,10 @@ Read this before WHOIAM.md.
 Read WHOIAM.md before STARTHERE.md.
 
 Read STARTHERE.md before making any decision.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B011|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B011]]

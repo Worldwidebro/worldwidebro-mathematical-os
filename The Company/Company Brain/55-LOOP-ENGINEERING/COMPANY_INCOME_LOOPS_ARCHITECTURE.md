@@ -432,3 +432,10 @@ python3 _ENGINE/search_n8n_workflows.py "dispatch delivery proof"
 - **Master Operating Contract:** [[ANTIGRAVITY|ANTIGRAVITY.md]]
 - **Revenue Gate Protocol:** [[.agents/rules/REVENUE_GATE|REVENUE_GATE.md]]
 - **Master Start Here:** [[STARTHERE|STARTHERE.md]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B551|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B551]]

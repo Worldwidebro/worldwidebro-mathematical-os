@@ -413,4 +413,10 @@ Slide 5: Risks
 **Authority:** CP-033 (Execution) + CP-021 (Revenue)  
 **Start date:** 2026-09-09  
 **Target:** 100% of Tier-0 (5 ventures) audited weekly by Sep 30
+---
 
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

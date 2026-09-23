@@ -46,3 +46,10 @@ The primary operational core of `56-ENGINEERING` is organized into 12 structured
 - Database Catalog: [[_REGISTRIES/database_registry.json]]
 - Infrastructure Dependencies: [[_REGISTRIES/infrastructure_dependency_registry.json]]
 - System Capabilities: [[14-CAPABILITIES/CAPABILITIES_INDEX|CAPABILITIES_INDEX]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B561|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B561]]

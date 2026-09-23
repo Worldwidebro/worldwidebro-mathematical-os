@@ -694,4 +694,10 @@ Expected: 45+ passing, <5 flaky (ok for this phase)
 **Status:** Ready to start Oct 1, 2026  
 **Next:** Kick-off Phase 2a Week 1  
 **Owner:** Tech Lead + Team
+---
 
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

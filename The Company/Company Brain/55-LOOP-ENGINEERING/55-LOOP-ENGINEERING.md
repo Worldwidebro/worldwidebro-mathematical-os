@@ -37,3 +37,10 @@ Index and master domain gateway for **[[55-LOOP-ENGINEERING]]**.
 - Engineering Control Plane: [[56-ENGINEERING/56-ENGINEERING|56-ENGINEERING]]
 - Code Intelligence: [[57-CODE-INTELLIGENCE/57-CODE-INTELLIGENCE|57-CODE-INTELLIGENCE]]
 - Autonomous Agents: [[16-AGENTS/16-AGENTS|16-AGENTS]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B551|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B551]]

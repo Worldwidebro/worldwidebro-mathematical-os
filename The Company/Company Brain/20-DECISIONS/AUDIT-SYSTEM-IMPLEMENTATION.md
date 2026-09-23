@@ -418,3 +418,10 @@ IF venture.blocker_count > 3
 **Owner:** Operations / Engineering  
 **Cadence:** Weekly operations, monthly portfolio, quarterly capital  
 **Authority:** CP-033 (Execution) + CP-021 (Revenue)
+---
+
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

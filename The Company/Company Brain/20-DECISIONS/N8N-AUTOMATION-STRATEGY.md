@@ -572,3 +572,10 @@ npm install
 **Bottom line: n8n + shared files = 789 ventures generating revenue in 4 weeks instead of 6 months.**
 
 Which n8n workflows should we prioritize importing first?
+---
+
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

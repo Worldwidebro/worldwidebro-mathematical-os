@@ -346,3 +346,10 @@ Now go close those labs. 📞💪
 - Have questions about the discovery sequence?
 
 **Otherwise:** You're ready. See you Sep 11 at 8 AM when the alarm fires.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

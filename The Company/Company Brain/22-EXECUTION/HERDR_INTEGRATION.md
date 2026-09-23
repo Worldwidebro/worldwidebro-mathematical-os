@@ -104,3 +104,10 @@ herdr attach my-agent
 ---
 
 **See also:** [[EXECUTION_STACK]] | [[FRACTAL_INTEGRATION]] | [[22-EXECUTION]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B221|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B221]]

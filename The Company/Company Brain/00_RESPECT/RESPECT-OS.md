@@ -57,3 +57,10 @@ Before an agent emits a tool call, file write, or user response:
 2. **Pre-Check Against Agency**: Does the action make an irreversible financial, structural, or legal decision without explicit operator consent? If yes, escalate.
 3. **Pre-Check Against Truth**: Does the text contain ungrounded assertions or claim tests that were not run? If yes, rectify.
 4. **Post-Check for Accountability**: Did the action leave audit receipts, git commits, and telemetry traces in OpenObserve? If no, record them.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B371|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B371]]

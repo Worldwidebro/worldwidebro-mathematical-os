@@ -286,3 +286,10 @@ Co-Authored-By: Claude Haiku 4.5 <noreply@anthropic.com>
 - [[20-DECISIONS/RE-001-SALES-PIPELINE|RE-001 Sales Pipeline]] & [[scripts/RE-001-SALES-COACH|RE-001 Sales Coach]]
 - [[38-OPPORTUNITIES/CAPITAL_STACK/README|Sovereign Capital Stack Index]]
 - [[BUSINESS-CAPITAL-DATA-ROOM/5-VENTURE-INTEGRATED-SUMMARY|5-Venture Integrated Summary]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

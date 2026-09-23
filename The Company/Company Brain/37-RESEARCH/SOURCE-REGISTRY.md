@@ -199,3 +199,10 @@ sources:
 - **Data Sources Domain:** [[02-SOURCES/02-SOURCES]]
 - **Ingestion Pipeline:** [[03-INGESTION/03-INGESTION]] • [[_PIPELINES/ingestion/README]]
 - **External Universe:** [[_REGISTRIES/CANONICAL/EXTERNAL_CAPABILITY_UNIVERSE.yaml]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B371|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B371]]

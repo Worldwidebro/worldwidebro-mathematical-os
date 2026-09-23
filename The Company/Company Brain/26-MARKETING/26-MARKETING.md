@@ -21,3 +21,10 @@ Index and master domain gateway for **[[26-MARKETING]]**.
 - Master Campaign OS: [[CAMPAIGNS/README|CAMPAIGNS Portal]]
 - Campaign Strategy: [[CAMPAIGNS/CAMPAIGN-STRATEGY|CAMPAIGN-STRATEGY]]
 - Funnel Architecture: [[CAMPAIGNS/FUNNEL-ARCHITECTURE|FUNNEL-ARCHITECTURE]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B261|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B261]]

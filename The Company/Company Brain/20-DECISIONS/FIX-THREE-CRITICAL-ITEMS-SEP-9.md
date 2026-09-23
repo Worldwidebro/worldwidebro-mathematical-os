@@ -210,3 +210,10 @@ Sep 14: Revenue checkpoint ($2,500+ in Stripe)
 
 **Authority:** Revenue Operations (CP-021) + Execution (CP-033)  
 **Next Review:** Sep 10 (call completion) + Sep 14 (revenue validation)
+---
+
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

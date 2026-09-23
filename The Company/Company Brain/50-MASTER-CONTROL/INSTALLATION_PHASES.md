@@ -268,3 +268,10 @@ Company Brain uses awesome as a **capability discovery layer:**
 - Execution Stack: [[50-MASTER-CONTROL/EXECUTION_STACK|EXECUTION_STACK]]
 - Capabilities Index: [[14-CAPABILITIES/CAPABILITIES_INDEX|CAPABILITIES_INDEX]]
 - Canonical Registries: [[_REGISTRIES/README|Registries Hub]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B501|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B501]]

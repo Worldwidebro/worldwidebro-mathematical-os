@@ -557,4 +557,10 @@ Once Phase 2 is operational, Phase 3 becomes possible:
 ## One Sentence
 
 **By Mar 2027, Company Brain transforms global research into autonomous experiments, validated capabilities, and measurable revenue impact.**
+---
 
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

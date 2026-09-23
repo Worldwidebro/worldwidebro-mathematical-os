@@ -124,3 +124,10 @@ Recommend starting with **OPS-001** (lowest friction, fastest revenue):
 **Authority:** CP-021 (Revenue) + CP-027 (Infrastructure) + CP-033 (Execution)  
 **Status:** All ventures LIVE and revenue-ready  
 **Blocker:** Sales execution (phone calls)
+---
+
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

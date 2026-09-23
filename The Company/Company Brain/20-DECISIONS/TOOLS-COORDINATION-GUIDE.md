@@ -452,3 +452,10 @@ Result: "OPS-001 is 95% ready. Only blocker: 8 uncommitted files."
 **Owner:** Operations + Engineering  
 **Authority:** CP-033 (Execution)  
 **Review date:** 2026-09-16 (after first week of coordinated use)
+---
+
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

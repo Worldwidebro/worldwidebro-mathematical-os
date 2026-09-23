@@ -294,4 +294,10 @@ After deploying 166 tasks:
 **Authority:** CP-023 (Sales) + CP-026 (Operations) + CP-012 (Project Management)  
 **Status:** Ready to deploy  
 **Timeline:** Deploy Sep 9 evening, start calling Sep 11
+---
 
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

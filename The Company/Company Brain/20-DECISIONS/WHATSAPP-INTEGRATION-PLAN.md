@@ -329,3 +329,10 @@ RESEARCH-001:
 **Stakeholders:** CP-006 (Operations), CP-021 (Revenue), CP-033 (Execution)
 **Budget:** $3.5K (Meta API, development)
 **Expected ROI:** 30% faster approvals, 40% faster status checks, mobile portfolio control
+---
+
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

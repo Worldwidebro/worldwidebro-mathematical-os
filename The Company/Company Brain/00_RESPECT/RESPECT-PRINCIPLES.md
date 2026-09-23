@@ -14,3 +14,10 @@
 3. **Boundaries as First-Class Entities**: Boundaries are not bugs or obstacles to route around; boundaries define the integrity and safety of the system.
 4. **Reversibility by Default**: Actions with high blast radius must be engineered with reversible rollback mechanisms. Irreversible operations require explicit human confirmation.
 5. **Radical Transparency & Stewardship**: Concealment of failure is a fatal flaw. Every system touched must be left cleaner, more resilient, and more thoroughly documented than it was found.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B371|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B371]]

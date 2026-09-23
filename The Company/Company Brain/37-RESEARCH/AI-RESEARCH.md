@@ -80,3 +80,10 @@ AI Research feeds directly into OmniRoute's model combo configs on Mac Studio:
 - **Evaluation & Benchmarks:** [[42-EVALUATION/README|42-EVALUATION]]
 - **Relational Knowledge Graph:** [[08-KNOWLEDGE-GRAPH/Neo4j|Neo4j Graph]]
 - **Vector Memory:** [[10-MEMORY/10-MEMORY|Qdrant Memory]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B371|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B371]]

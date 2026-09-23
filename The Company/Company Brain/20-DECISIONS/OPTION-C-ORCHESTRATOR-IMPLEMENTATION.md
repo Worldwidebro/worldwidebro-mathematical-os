@@ -273,3 +273,10 @@ python3 scripts/orchestrator_summary.py
 **Status:** ✅ Architecture Complete | ⏳ Execution Scheduled Sep 10, 9 AM
 
 **Next:** Sep 10, 7 AM → Run pre-execution checklist
+---
+
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

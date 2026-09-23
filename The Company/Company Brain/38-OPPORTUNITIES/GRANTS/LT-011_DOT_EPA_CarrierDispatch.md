@@ -122,3 +122,10 @@ Phase I federal grant capital de-risks the high-complexity algorithmic routing e
 - [x] **2 CFR Part 200 Cost Principles:** Zero unallowable costs (no lobbying, alcohol, entertainment, or unverified hardware markups).
 - [x] **Working Code Reality:** Tested against verified commit `d2523fd` in `Worldwidebro/lt-011-dispatch-software`.
 - [x] **Commercialization Strategy:** Hybrid pricing validated on production site (`https://lt-011-dispatch-software.vercel.app`).
+---
+
+## Control Base Reference
+
+This document is mapped to [[B381|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B381]]

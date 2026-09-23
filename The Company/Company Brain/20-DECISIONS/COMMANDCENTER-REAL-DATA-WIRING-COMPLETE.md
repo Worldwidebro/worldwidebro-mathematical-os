@@ -239,3 +239,10 @@ Expected: Real deals, real metrics, real revenue (if any deals in Supabase)
 **Status:** ✅ COMPLETE AND SHIPPED
 
 Next checkpoint: Sep 10, 9 AM (verify live data flowing in dashboard)
+---
+
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

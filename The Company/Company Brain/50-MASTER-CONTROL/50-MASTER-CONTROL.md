@@ -58,3 +58,10 @@ updated: 2026-09-06
 - **Physical & Cloud Infrastructure:** [[56-ENGINEERING/56-ENGINEERING|56-ENGINEERING]]
 - **Code Intelligence Substrate:** [[57-CODE-INTELLIGENCE/57-CODE-INTELLIGENCE|57-CODE-INTELLIGENCE]]
 - **Data & Cognitive Pipelines:** [[_PIPELINES/README|Pipelines Hub]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B501|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B501]]

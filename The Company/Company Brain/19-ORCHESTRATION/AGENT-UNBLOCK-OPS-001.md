@@ -41,3 +41,10 @@
 **Do NOT wait** for perfect lead list — LinkedIn's lookalike algorithm will expand from top 20 to match the profile.
 
 **Blockers removed:** Proceed to campaign setup immediately.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B191|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B191]]

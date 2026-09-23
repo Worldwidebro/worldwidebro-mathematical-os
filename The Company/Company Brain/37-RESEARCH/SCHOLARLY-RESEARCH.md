@@ -110,3 +110,10 @@ Every paper ingested into Mac Studio's Neo4j (`civos_neo4j:7687`) creates the fo
 - **Source Registry:** [[37-RESEARCH/SOURCE-REGISTRY]]
 - **Awesome Lists & Curated Repos:** [[09-KNOWLEDGE/Awesome-Lists]]
 - **Evaluation Domain:** [[42-EVALUATION/README]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B371|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B371]]

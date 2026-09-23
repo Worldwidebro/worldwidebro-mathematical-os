@@ -72,4 +72,10 @@ All credit and loan readiness packs include:
 - **Canonical Grants Registry:** [[_REGISTRIES/CANONICAL/GRANT_OPPORTUNITY_REGISTRY.yaml]]
 - **Data Room Blueprint:** [[BUSINESS-CAPITAL-DATA-ROOM/00_ENTERPRISE_BLUEPRINT|Enterprise Blueprint]]
 - **Financial Ecosystem Mapping:** [[BUSINESS-CAPITAL-DATA-ROOM/FINANCIAL-ECOSYSTEM-MAPPING|Financial Ecosystem Mapping]]
+---
 
+## Control Base Reference
+
+This document is mapped to [[B381|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B381]]

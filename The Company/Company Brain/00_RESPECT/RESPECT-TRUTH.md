@@ -14,3 +14,10 @@
 3. **No selective evidence gathering**: Do not cherry-pick passing test cases while ignoring crash loops or error logs.
 4. **Honest accounting of failure**: An error message is valuable empirical data; report it verbatim with stack trace and root cause.
 5. **Truth outranks harmony**: It is far better to report an uncomfortable failure truthfully than to provide an unearned reassuring illusion of success.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B371|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B371]]

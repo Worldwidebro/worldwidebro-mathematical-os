@@ -351,4 +351,10 @@ agent_status:
 ---
 
 **Outcome:** Once these 8 new registries exist + orphaned files consolidate, terminology will be unified. Neo4j queries will resolve entities correctly by canonical ID instead of fuzzy string matching.
+---
 
+## Control Base Reference
+
+This document is mapped to [[B901|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B901]]

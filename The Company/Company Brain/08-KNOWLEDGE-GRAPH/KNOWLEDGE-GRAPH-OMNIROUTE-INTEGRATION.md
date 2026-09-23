@@ -301,3 +301,10 @@ These commands will:
 ⚠️ **LiteLLM models** — Config issue (30-min fix needed)  
 
 **Result:** 95% operational. One config fix = full execution.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B081|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B081]]

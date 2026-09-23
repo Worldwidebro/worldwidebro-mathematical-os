@@ -79,3 +79,10 @@ WorldwideBro is a domestic technology venture operating a distributed company op
 | **Subtotal Direct Costs (A–E)** | | **\$250,000** |
 | **F. Indirect Costs (Overhead)** | De minimis 10% MTDC. Total direct \$250,000 × 10% = \$25,000. | **\$25,000** |
 | **TOTAL REQUESTED NSF PHASE I BUDGET** | **Reconciled exactly with NSF SBIR statutory ceiling** | **\$275,000** |
+---
+
+## Control Base Reference
+
+This document is mapped to [[B381|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B381]]

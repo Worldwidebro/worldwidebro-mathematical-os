@@ -241,3 +241,10 @@ Sep 10-14:
 **Authority:** Revenue CP-021 + Execution CP-033 + Infrastructure CP-027
 
 **Next Checkpoint:** Sep 10, 9 AM (call completion + deployment verification)
+---
+
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

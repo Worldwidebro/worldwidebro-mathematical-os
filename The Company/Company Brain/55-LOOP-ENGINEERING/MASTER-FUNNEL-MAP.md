@@ -516,3 +516,10 @@ These families act as the top-level spine for the Company Brain / IZA OS, allowi
 ---
 
 [[STARTHERE]] | [[INDEX]] | [[55-LOOP-ENGINEERING/README|Loop Engineering Hub]] | [[07-ONTOLOGY/README|Ontology]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B551|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B551]]

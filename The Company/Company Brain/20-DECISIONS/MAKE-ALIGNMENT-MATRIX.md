@@ -307,3 +307,10 @@ RUNWAY:
 **Updated:** 2026-09-12T18:00:00Z  
 **Owner:** Divine (winnerscirclewcllc@gmail.com)  
 **Next Review:** Sep 13, 09:00 (after G4 dry-run completion)
+---
+
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

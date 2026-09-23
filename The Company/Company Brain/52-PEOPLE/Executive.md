@@ -27,3 +27,10 @@ An **Executive** in the Company Brain ecosystem holds sovereign decision-making 
 - CP-006: Agent Governance & Approvals
 - CP-020: Financial & Revenue Allocation
 - CP-027: Infrastructure Authorization
+---
+
+## Control Base Reference
+
+This document is mapped to [[B521|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B521]]

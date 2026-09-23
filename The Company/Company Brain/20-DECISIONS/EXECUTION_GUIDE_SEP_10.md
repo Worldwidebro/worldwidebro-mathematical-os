@@ -380,3 +380,10 @@ curl -H "Authorization: Bearer $CLICKUP_TOKEN" https://api.clickup.com/api/v3/te
 **Status:** ✅ READY TO EXECUTE SEP 10, 8:00 AM
 
 **Next:** See calendar reminder Sep 11, 8:00 AM 🔔
+---
+
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

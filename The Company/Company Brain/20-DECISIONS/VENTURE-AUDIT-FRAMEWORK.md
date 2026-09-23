@@ -411,3 +411,10 @@ This is the audit system that drives investment decisions and engineering priori
 ---
 
 **Next step:** Apply this framework to each venture and populate with actual evidence.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

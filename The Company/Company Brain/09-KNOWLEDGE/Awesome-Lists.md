@@ -50,3 +50,10 @@ When an agent is tasked with building or discovering a tool:
 - World Model: [[09-KNOWLEDGE/Utopia-World-Model|Utopia Enterprise World Model]]
 - Rollout Roadmap: [[50-MASTER-CONTROL/INSTALLATION_PHASES|INSTALLATION_PHASES.md (Phase 3)]]
 - External Capability Inventory: [[_REGISTRIES/EXTERNAL_CAPABILITY_UNIVERSE_INVENTORY.md]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B091|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B091]]

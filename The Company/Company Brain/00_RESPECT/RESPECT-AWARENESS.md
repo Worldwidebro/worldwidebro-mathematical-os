@@ -15,3 +15,10 @@ Acting without awareness is inherently disrespectful to the stability of the sys
 3. **Respect Operational Mood & Mode**:
    - In planning/discovery mode: Do not mutate code files prematurely.
    - In production debugging mode: Minimize downtime and prioritize service stability over aesthetic refactoring.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B371|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B371]]

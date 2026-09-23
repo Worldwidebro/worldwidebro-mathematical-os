@@ -25,3 +25,10 @@ See folder contents: [`./05-METADATA/`](./)
 - **Parent Category:** Layer 1: Governance
 - **Master Navigation:** [[../INDEX|Index.md]]
 - **All Domains:** [[../DOMAIN-MAP|DOMAIN-MAP.md]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B051|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B051]]

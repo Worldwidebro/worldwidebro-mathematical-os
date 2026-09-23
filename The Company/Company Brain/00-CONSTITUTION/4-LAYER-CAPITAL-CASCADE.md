@@ -55,3 +55,10 @@ graph TD
 ### Layer 4: Holding Company Equity & Sovereign Capital
 - **Mandate:** Permanent capital and minority strategic equity only at the Holdings or parent vehicle level.
 - **Rule:** Operating subsidiaries remain 100% owned or controlled by WorldwideBro.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B001|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B001]]

@@ -433,3 +433,10 @@ This positions you as a **venture operating system with composable agent capabil
 **Document:** Google Skills → Company Brain Integration Plan  
 **Status:** Ready for 15-min proof-of-concept  
 **Next:** Assess fit with LT-005 (medical dispatch) as pilot
+---
+
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

@@ -283,3 +283,10 @@ OPS-001 Staffing
 - **Cold call follow-up (after emails):** [ASSIGN NAME]
 
 **Weekly review meeting:** Mondays 9am
+---
+
+## Control Base Reference
+
+This document is mapped to [[B191|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B191]]

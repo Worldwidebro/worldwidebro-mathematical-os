@@ -369,3 +369,10 @@ SlackIntegration
 ---
 
 **Your n8n instance is loaded. Ready to flip the switch on 789-venture automation.**
+---
+
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

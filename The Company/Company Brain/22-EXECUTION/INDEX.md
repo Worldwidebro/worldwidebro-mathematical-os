@@ -25,3 +25,10 @@ See folder contents: [`./22-EXECUTION/`](./)
 - **Parent Category:** Layer 4: Operations
 - **Master Navigation:** [[../INDEX|Index.md]]
 - **All Domains:** [[../DOMAIN-MAP|DOMAIN-MAP.md]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B221|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B221]]

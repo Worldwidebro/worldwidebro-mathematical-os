@@ -132,4 +132,10 @@ Once Week 1 revenues are secured:
 2. Scale 3 ventures to 3+ each
 3. Launch 5 new ventures with 100% blueprint coverage
 4. Target: +$50K/week by Week 3
+---
 
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

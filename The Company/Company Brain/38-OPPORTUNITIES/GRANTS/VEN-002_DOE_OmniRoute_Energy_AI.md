@@ -83,3 +83,10 @@ We are requesting **\$250,000** in DOE SBIR Phase I funding across 9 months to b
 | **Subtotal Direct Costs (A–E)** | | **\$227,273** |
 | **F. Indirect Costs (Overhead)** | De minimis 10% MTDC. Direct \$227,273 × 10% = \$22,727. | **\$22,727** |
 | **TOTAL REQUESTED DOE PHASE I BUDGET** | **Reconciled exactly with DOE SBIR statutory limit** | **\$250,000** |
+---
+
+## Control Base Reference
+
+This document is mapped to [[B381|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B381]]

@@ -101,3 +101,10 @@ Zero code work needed. Just make calls.
 ---
 
 **Authority:** CP-021 (Revenue) + CP-027 (Infrastructure) + CP-033 (Execution)
+---
+
+## Control Base Reference
+
+This document is mapped to [[B201|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B201]]

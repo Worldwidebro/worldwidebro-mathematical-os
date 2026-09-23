@@ -352,3 +352,10 @@ Add test files:
 
 **Generated:** 2026-09-10  
 **Authority:** [[00-CONSTITUTION|Constitution]] + [[REALITY|Reality Ledger]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B001|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B001]]

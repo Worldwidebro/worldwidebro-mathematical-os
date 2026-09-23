@@ -75,3 +75,10 @@ All fetched time-series are stored canonically in `_REGISTRIES/CANONICAL/ECONOMI
 - **Master Source Registry:** [[37-RESEARCH/SOURCE-REGISTRY]]
 - **Operating Ventures Hub:** [[23-VENTURES/23-VENTURES]]
 - **Economic Reality Ledger:** [[ECONOMIC-REALITY]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B371|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B371]]

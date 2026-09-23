@@ -95,3 +95,10 @@ WorldwideBro Holdings is an operating entity with verified live infrastructure:
   - Express Deal Underwriting: **\$250 per asset review**
   - Institutional Deal Room: **\$499/month**
 - **Non-Profit Impact:** Under this HUD Section 4 grant, non-profit community housing developers receive subsidized access, establishing a sustainable, long-term ecosystem that protects neighborhood equity.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B381|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B381]]

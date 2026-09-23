@@ -404,3 +404,10 @@ Each role wires to:
 **Generated:** 2026-09-10  
 **Authority:** [[00-CONSTITUTION|Constitution]], [[STARTHERE|StartHere]]  
 **Links:** [[SECTOR-TAXONOMY-MASTER|Sectors]], [[CAPABILITY-INDEX|Capabilities]], [[16-AGENTS|Agents]]
+---
+
+## Control Base Reference
+
+This document is mapped to [[B011|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B011]]

@@ -17,3 +17,10 @@ This charter outlines the core functions performed by the WorldwideBro Family Of
 2. **Tax & Legal Sovereignty:** Maintaining jurisdictional compliance, statutory filing calendars, entity registrations, and holding company insulation.
 3. **Intellectual Property Stewardship:** Registering patents, trademarks, copyright deposits, and source code ownership in dedicated IP entities.
 4. **Inter-Generational Governance:** Establishing family constitution, educational curricula, voting trusts, and succession protocols.
+---
+
+## Control Base Reference
+
+This document is mapped to [[B001|Control Base]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B001]]
