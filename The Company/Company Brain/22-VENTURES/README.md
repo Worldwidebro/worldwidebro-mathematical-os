@@ -15,3 +15,13 @@ tags: [domain, ventures, redirect]
 > **Pointer Notice:**  
 > The canonical venture operational hub is located at [[23-VENTURES/23-VENTURES|23-VENTURES]].
 > For institutional capitalization packages and 22-domain dossiers, see [[BUSINESS-CAPITAL-DATA-ROOM/README|BUSINESS-CAPITAL-DATA-ROOM]].
+
+## Files in This Domain
+
+- [[DOCUMENT-REQUIREMENT-ENGINE.md]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

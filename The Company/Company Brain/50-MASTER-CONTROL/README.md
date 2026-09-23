@@ -63,3 +63,24 @@ updated: 2026-09-06
 - **Knowledge Core:** Neo4j (:7687) & Qdrant (:6333) operational.
 - **Inference Router:** OmniRoute (:20128) & LiteLLM (:4000) active.
 - **Loop Engine:** Fractal 1.2.0 installed and verified.
+
+## Files in This Domain
+
+- [[50-MASTER-CONTROL.md]]
+- [[CONTROL_MATRIX.md]]
+- [[CONTROL_MATRIX.yaml]]
+- [[DEPLOYMENT_CHECKLIST.md]]
+- [[EXECUTION_STACK.md]]
+- [[HUNDRED_LAYERS.md]]
+- [[INSTALLATION_PHASES.md]]
+- [[INTEGRATION_SUMMARY.md]]
+- [[Infrastructure Control Plane.md]]
+- [[SESSION_COMPLETION_2026-09-01.md]]
+- [[SEVEN_PLANES.md]]
+- [[WORKFLOW_TEST_RESULTS.md]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

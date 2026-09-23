@@ -33,3 +33,13 @@ See [[\_REGISTRIES/control-points]] for ~ operations in this domain.
 ---
 
 Last updated: 2026-09-01
+
+## Files in This Domain
+
+- [[17-MODELS.md]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

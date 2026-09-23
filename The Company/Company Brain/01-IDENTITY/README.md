@@ -95,3 +95,19 @@ Last updated: 2026-09-02 | Owner: Hermes | Status: Phase 1 Complete ✅
 | **Define organizational structure** | ✅ | `Qdrant` | COO | Company Brain — Organizational Intelligence |
 
 *Governed by [[00-CONSTITUTION/control-planes/CP-002|CP-002: Venture]] under [[50-MASTER-CONTROL/CONTROL_MATRIX|Control Matrix]].*
+
+## Files in This Domain
+
+- [[01-IDENTITY.md]]
+- [[FAMILY.md]]
+- [[IDENTITY-STACK.md]]
+- [[MASTER-ROLE-REGISTRY.md]]
+- [[PURPOSE.md]]
+- [[SOUL.md]]
+- [[WHOIAM.md]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

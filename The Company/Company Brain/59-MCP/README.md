@@ -16,3 +16,13 @@ updated: 2026-09-12
 
 ## Overview
 Centralizes custom Model Context Protocol servers and tool definitions for AI agents.
+
+## Files in This Domain
+
+- [[59-MCP.md]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

@@ -113,3 +113,13 @@ VEX Dashboard → GitHub Repos Tab displays this data live:
 | **Code graph generation** | ✅ | `Graft (TOL-000001)` | Tech Lead | Knowledge Fabric — Unified Organizational Knowledge |
 
 *Governed by [[00-CONSTITUTION/control-planes/CP-028|CP-028: Application]] under [[50-MASTER-CONTROL/CONTROL_MATRIX|Control Matrix]].*
+
+## Files in This Domain
+
+- [[13-REPOSITORIES.md]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

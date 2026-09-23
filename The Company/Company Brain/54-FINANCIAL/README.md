@@ -28,3 +28,14 @@ The **Financial Domain** (`54-FINANCIAL`) oversees enterprise capital allocation
 - **Financial Analysis**: Governed by [[.agents/agents/finance-financial-analyst|Financial Analyst Subagent]].
 - **Payments Engineering**: Governed by [[.agents/agents/engineering-payments-billing-engineer|Payments & Billing Subagent]].
 - **Primary Domain Link**: [[24-FINANCE/24-FINANCE|24-FINANCE Master Domain]].
+
+## Files in This Domain
+
+- [[54-FINANCIAL.md]]
+- [[CLAUDE.md]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

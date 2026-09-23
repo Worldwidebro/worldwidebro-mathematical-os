@@ -36,3 +36,13 @@
 | **Continuous improvement** | 🟡 | `—` | Evolution Engineer | Operations Fabric — Deployment & Incident Response |
 
 *Governed by [[00-CONSTITUTION/control-planes/CP-032|CP-032: AI Governance]] under [[50-MASTER-CONTROL/CONTROL_MATRIX|Control Matrix]].*
+
+## Files in This Domain
+
+- [[45-EVOLUTION.md]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

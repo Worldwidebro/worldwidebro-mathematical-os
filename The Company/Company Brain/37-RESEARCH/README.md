@@ -38,3 +38,22 @@ This domain is governed by the dedicated **Research & External Intelligence Laye
 - **Model Intelligence & Evaluation:** [[17-MODELS/17-MODELS]] • [[42-EVALUATION/README|42-EVALUATION]]
 - **Venture Application:** [[23-VENTURES/23-VENTURES]] • [[SECTOR_INDEX]]
 - **System Architecture:** [[_DOCS/architecture]]
+
+## Files in This Domain
+
+- [[37-RESEARCH.md]]
+- [[AI-RESEARCH.md]]
+- [[EVIDENCE.md]]
+- [[GOVERNMENT-DATA.md]]
+- [[GOVERNMENT-FUNDING.md]]
+- [[OPPORTUNITIES.md]]
+- [[PATENT-INTELLIGENCE.md]]
+- [[RESEARCH-OS.md]]
+- [[SCHOLARLY-RESEARCH.md]]
+- [[SOURCE-REGISTRY.md]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

@@ -35,3 +35,32 @@ This domain defines the formal schema, entity-relationship models, and cross-dom
 - Venture Specifications: [[_TEMPLATES/VENTURE_TEMPLATE|VENTURE_TEMPLATE.md]]
 - Operating Domains: [[_TEMPLATES/Domain|Domain.md]]
 - Control Points: [[_TEMPLATES/Control_Point|Control_Point.md]]
+
+## Files in This Domain
+
+**Total: 47 files**
+
+- [[07-ONTOLOGY.md]]
+- [[45-ONTOLOGIES-MASTER.md]]
+- [[domains/ONT-001.md]]
+- [[domains/ONT-002.md]]
+- [[domains/ONT-003.md]]
+- [[domains/ONT-004.md]]
+- [[domains/ONT-005.md]]
+- [[domains/ONT-006.md]]
+- [[domains/ONT-007.md]]
+- [[domains/ONT-008.md]]
+
+... (32 more files) ...
+
+- [[domains/OPS-041.md]]
+- [[domains/OPS-042.md]]
+- [[domains/OPS-043.md]]
+- [[domains/OPS-044.md]]
+- [[domains/OPS-045.md]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

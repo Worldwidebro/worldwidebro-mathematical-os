@@ -16,3 +16,13 @@ updated: 2026-09-12
 
 ## Overview
 Identifies economies of scope, shared procurement, and cross-sell opportunities across OpCos.
+
+## Files in This Domain
+
+- [[65-SYNERGIES.md]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

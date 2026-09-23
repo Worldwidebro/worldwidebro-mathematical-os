@@ -350,3 +350,8 @@ improvement-over-baseline::[[+12% customer satisfaction]]
 
 **Principle:** Every paper, model, benchmark, and dataset in the research ecosystem has potential to become a Company Brain capability. Our job is to systematically identify, verify, and convert that potential into measurable business value.
 
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

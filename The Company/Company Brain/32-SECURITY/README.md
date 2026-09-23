@@ -40,3 +40,15 @@ This domain contains X controllable operations. See [[control-points]] for detai
 ---
 
 **Updated:** 2026-09-01
+
+## Files in This Domain
+
+- [[27-SECURITY.md]]
+- [[32-SECURITY.md]]
+- [[SECURITY-INTEGRATION.md]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

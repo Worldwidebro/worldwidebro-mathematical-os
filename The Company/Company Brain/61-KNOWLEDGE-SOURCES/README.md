@@ -16,3 +16,13 @@ updated: 2026-09-12
 
 ## Overview
 Documents primary external datasets, regulatory feeds, industry benchmarks, and source evaluation.
+
+## Files in This Domain
+
+- [[61-KNOWLEDGE-SOURCES.md]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

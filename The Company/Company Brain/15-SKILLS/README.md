@@ -459,3 +459,13 @@ Each skill is stored in `.agents/skills/<skill-name>/SKILL.md` with structured Y
 | **Skill composition** | 🟡 | `Fractal (TOL-000002)` | Skill Engineer | Orchestration Fabric — Work Discovery & Agent Coordination |
 
 *Governed by [[00-CONSTITUTION/control-planes/CP-006|CP-006: Agent]] under [[50-MASTER-CONTROL/CONTROL_MATRIX|Control Matrix]].*
+
+## Files in This Domain
+
+- [[15-SKILLS.md]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

@@ -73,3 +73,15 @@ updated: 2026-09-06
 | **Relationship mapping** | ✅ | `Neo4j` | Knowledge Engineer | Knowledge Fabric — Unified Organizational Knowledge |
 
 *Governed by [[00-CONSTITUTION/control-planes/CP-008|CP-008: Tool]] under [[50-MASTER-CONTROL/CONTROL_MATRIX|Control Matrix]].*
+
+## Files in This Domain
+
+- [[08-KNOWLEDGE-GRAPH.md]]
+- [[KNOWLEDGE-GRAPH-MAPPING.md]]
+- [[KNOWLEDGE-GRAPH-OMNIROUTE-INTEGRATION.md]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

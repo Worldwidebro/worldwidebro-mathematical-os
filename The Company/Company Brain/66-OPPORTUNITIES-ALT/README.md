@@ -16,3 +16,13 @@ updated: 2026-09-12
 
 ## Overview
 Pipeline for secondary acquisitions, spin-offs, and opportunistic investments.
+
+## Files in This Domain
+
+- [[66-OPPORTUNITIES-ALT.md]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

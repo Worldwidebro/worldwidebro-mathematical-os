@@ -148,3 +148,32 @@ For on-demand behavioral personas and procedural operational runbooks imported f
 | **Agent spawning** | ✅ | `Fractal (TOL-000002)` | Agent Architect | Orchestration Fabric — Work Discovery & Agent Coordination |
 
 *Governed by [[00-CONSTITUTION/control-planes/CP-006|CP-006: Agent]] under [[50-MASTER-CONTROL/CONTROL_MATRIX|Control Matrix]].*
+
+## Files in This Domain
+
+**Total: 22 files**
+
+- [[16-AGENTS.md]]
+- [[AGT-001-venture-pm.md]]
+- [[AGT-001.md]]
+- [[AGT-002-financial.md]]
+- [[AGT-002.md]]
+- [[AGT-003-technical.md]]
+- [[AGT-003.md]]
+- [[AGT-004-sales.md]]
+- [[AGT-004.md]]
+- [[AGT-005-operations.md]]
+
+... (7 more files) ...
+
+- [[AGT-009-education-eval.md]]
+- [[AGT-009.md]]
+- [[EDU-CLASSROOM.md]]
+- [[HERMES-AGENT.md]]
+- [[OPENHANDS.md]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

@@ -28,3 +28,14 @@ The **Code Intelligence Domain** (`57-CODE-INTELLIGENCE`) builds and maintains s
 - **Pipeline Stage**: [[_PIPELINES/code-intelligence/README|Code Intelligence Pipeline (Stage 07)]].
 - **LSP Indexing**: Governed by [[.agents/skills/lsp-index-engineer/SKILL|lsp-index-engineer]].
 - **Repository Registry**: [[_REGISTRIES/CANONICAL/REPOSITORY_REGISTRY.yaml]].
+
+## Files in This Domain
+
+- [[57-CODE-INTELLIGENCE.md]]
+- [[GRAFT_INTEGRATION.md]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

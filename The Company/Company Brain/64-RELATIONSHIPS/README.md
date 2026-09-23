@@ -16,3 +16,13 @@ updated: 2026-09-12
 
 ## Overview
 Maps cross-venture contracts, vendor partnerships, customer relationships, and ownership graphs.
+
+## Files in This Domain
+
+- [[64-RELATIONSHIPS.md]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

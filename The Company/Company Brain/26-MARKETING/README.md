@@ -52,3 +52,14 @@ All active go-to-market initiatives run natively through the **Campaign Operatin
 - `/campaign-launch` — Pre-flight QA verification and zero-hour launch execution
 - `/campaign-audit` — Real-time telemetry, CAC, and spend pacing audit
 - `/campaign-optimize` — Closed-loop statistical A/B test evaluation and budget tuning
+
+## Files in This Domain
+
+- [[26-MARKETING.md]]
+- [[GROWTH_OS_MARKETING_DEPLOYMENT.md]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

@@ -123,3 +123,32 @@ The [[_REGISTRIES/CANONICAL/LOGIC_LAYERS_REGISTRY.yaml|Logic Layers Registry]] o
 ---
 
 **Last updated:** 2026-09-17 | **Authority:** CP-001, CP-032, CP-050
+
+## Files in This Domain
+
+**Total: 89 files**
+
+- [[00-CONSTITUTION.md]]
+- [[4-LAYER-CAPITAL-CASCADE.md]]
+- [[CAPABILITY-INDEX.md]]
+- [[CONTROL_PLANES_MASTER.md]]
+- [[CP-027.md]]
+- [[CP-031.md]]
+- [[INSTITUTIONAL-FAMILY-OFFICE-FUNCTIONS.md]]
+- [[INTER-VENTURE-TRADING-ARCHITECTURE.md]]
+- [[REALITY.md]]
+- [[SEC-002-Construction.md]]
+
+... (74 more files) ...
+
+- [[opcos/OpCo-031.md]]
+- [[opcos/OpCo-032.md]]
+- [[opcos/OpCo-033.md]]
+- [[opcos/OpCo-034.md]]
+- [[opcos/OpCo-035.md]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

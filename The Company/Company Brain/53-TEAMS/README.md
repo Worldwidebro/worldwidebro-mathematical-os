@@ -16,3 +16,13 @@ updated: 2026-09-12
 
 ## Overview
 Defines operational team compositions, pairing human operators with autonomous agent swarms.
+
+## Files in This Domain
+
+- [[53-TEAMS.md]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

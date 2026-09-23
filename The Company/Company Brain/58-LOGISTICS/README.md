@@ -30,3 +30,14 @@ The **Logistics Domain** (`58-LOGISTICS`) coordinates hardware asset routing, st
 - **Hardware Assets**: Cataloged in [[35-ASSETS/35-ASSETS|35-ASSETS]] and [[_INFRASTRUCTURE/storage/README|Storage Mounts]].
 - **Fleet Logistics**: Grounded in [[SECTORS/SEC-017-logistics-transportation|SEC-017]].
 - **Network Mesh**: Tailscale interconnect coordinated with [[_INFRASTRUCTURE/README]].
+
+## Files in This Domain
+
+- [[58-LOGISTICS.md]]
+- [[CLAUDE.md]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

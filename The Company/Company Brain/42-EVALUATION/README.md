@@ -95,3 +95,14 @@ Evaluates external software packages, SaaS vendors, and internal libraries:
 | **Test coverage validation** | 🟡 | `—` | QA Lead | Verification Fabric — Quality Gates & Confidence |
 
 *Governed by [[00-CONSTITUTION/control-planes/CP-032|CP-032: AI Governance]] under [[50-MASTER-CONTROL/CONTROL_MATRIX|Control Matrix]].*
+
+## Files in This Domain
+
+- [[42-EVALUATION.md]]
+- [[LOCAL-AI-OS-500-TEST-SUITE.md]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

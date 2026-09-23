@@ -81,3 +81,15 @@ Each [[16-AGENTS]] agent has assigned:
 - Every person's relationships with agents are recorded ← **NEW**
 
 **Status:** Active | **Last Updated:** 2026-09-02
+
+## Files in This Domain
+
+- [[52-PEOPLE.md]]
+- [[Executive.md]]
+- [[Person.md]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

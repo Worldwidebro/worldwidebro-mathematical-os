@@ -148,3 +148,15 @@ Automatically identifies:
 **Status:** ✅ Core implementation complete | Ready for deployment  
 **Authority:** [[CP-027|Infrastructure Control Plane]]  
 **Next:** Deploy to OmniRoute
+
+## Files in This Domain
+
+- [[12-CONTEXT.md]]
+- [[agent_context_builder.md]]
+- [[agent_profiles.yaml]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

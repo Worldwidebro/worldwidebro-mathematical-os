@@ -78,3 +78,17 @@ Policies, procedures, playbooks, research, IP, and world models
 | **Knowledge source ingestion** | 🟡 | `Qdrant` | Knowledge Manager | Knowledge Fabric — Unified Organizational Knowledge |
 
 *Governed by [[00-CONSTITUTION/control-planes/CP-013|CP-013: Knowledge]] under [[50-MASTER-CONTROL/CONTROL_MATRIX|Control Matrix]].*
+
+## Files in This Domain
+
+- [[09-KNOWLEDGE.md]]
+- [[Awesome-Lists.md]]
+- [[Neo4j.md]]
+- [[Query-Engine.md]]
+- [[Utopia-World-Model.md]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

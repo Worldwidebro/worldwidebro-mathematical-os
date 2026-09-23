@@ -27,3 +27,14 @@ The **Construction Domain** (`51-CONSTRUCTION`) governs physical job sites, Buil
 - **BIM & GIS Integration**: Managed via [[.agents/skills/gis-bim-specialist/SKILL|gis-bim-specialist]].
 - **Reality Capture**: Drone photogrammetry managed via [[.agents/skills/gis-drone-reality-mapping/SKILL|gis-drone-reality-mapping]].
 - **Civil Engineering**: Structural analysis via [[.agents/skills/academic-geographer/SKILL|academic-geographer]].
+
+## Files in This Domain
+
+- [[51-CONSTRUCTION.md]]
+- [[CLAUDE.md]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

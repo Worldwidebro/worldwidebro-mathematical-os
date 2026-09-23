@@ -33,3 +33,28 @@ See [[\_REGISTRIES/control-points]] for ~ operations in this domain.
 ---
 
 Last updated: 2026-09-01
+
+## Files in This Domain
+
+- [[19-ORCHESTRATION.md]]
+- [[AGENT-INTEGRATION.md]]
+- [[AGENT-UNBLOCK-CON-001.md]]
+- [[AGENT-UNBLOCK-OPS-001.md]]
+- [[INTEGRATION-MAP.md]]
+- [[INTEGRATION-TEST-RESULTS.md]]
+- [[VENTURE-CAMPAIGN-TASKS.md]]
+- [[VENTURE-EXECUTION-MASTER-CHECKLIST.md]]
+- [[VENTURE-SOCIAL-EXECUTION-CON-001.md]]
+- [[VENTURE-SOCIAL-EXECUTION-LT-005.md]]
+- [[VENTURE-SOCIAL-EXECUTION-LT-011.md]]
+- [[VENTURE-SOCIAL-EXECUTION-LT.md]]
+- [[VENTURE-SOCIAL-EXECUTION-OPS-001.md]]
+- [[VENTURE-SOCIAL-EXECUTION-RE-001.md]]
+- [[VENTURE-WORKFLOW-AUDIT.md]]
+- [[multi-agent-sales-orchestration.md]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

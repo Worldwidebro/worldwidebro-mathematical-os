@@ -27,3 +27,14 @@ The **Technology Domain** (`62-TECHNOLOGY`) coordinates advanced compute hardwar
 - **Infrastructure Hub**: [[_INFRASTRUCTURE/README]] & [[_INFRASTRUCTURE/omniroute/README]].
 - **Model Fleet**: [[17-MODELS/17-MODELS]] & [[_REGISTRIES/CANONICAL/EXTERNAL_CAPABILITY_UNIVERSE.yaml]].
 - **Engineering Master**: [[56-ENGINEERING/README]].
+
+## Files in This Domain
+
+- [[62-TECHNOLOGY.md]]
+- [[CLAUDE.md]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

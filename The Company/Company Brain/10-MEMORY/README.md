@@ -62,3 +62,13 @@ Last updated: 2026-09-05
 | **Semantic memory (embeddings)** | ✅ | `Qdrant` | ML Engineer | Knowledge Fabric — Unified Organizational Knowledge |
 
 *Governed by [[00-CONSTITUTION/control-planes/CP-013|CP-013: Knowledge]] under [[50-MASTER-CONTROL/CONTROL_MATRIX|Control Matrix]].*
+
+## Files in This Domain
+
+- [[10-MEMORY.md]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

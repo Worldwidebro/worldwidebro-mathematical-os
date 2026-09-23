@@ -40,3 +40,12 @@ All entities created in Company Brain must strictly conform to canonical bluepri
 - **Evaluation & Verification:** [[42-EVALUATION/README|42-EVALUATION]]
 - **Root Navigation:** [[STARTHERE]] • [[INDEX]]
 
+## Files in This Domain
+
+- [[46-GOVERNANCE.md]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

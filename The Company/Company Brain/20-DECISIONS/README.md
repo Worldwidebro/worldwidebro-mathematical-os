@@ -117,3 +117,32 @@ updated: 2026-09-19
 | **Record strategic decisions** | ✅ | `Neo4j` | CEO | Company Brain — Organizational Intelligence |
 
 *Governed by [[00-CONSTITUTION/control-planes/CP-005|CP-005: Decision]] under [[50-MASTER-CONTROL/CONTROL_MATRIX|Control Matrix]].*
+
+## Files in This Domain
+
+**Total: 73 files**
+
+- [[20-DECISIONS.md]]
+- [[AUDIT-SYSTEM-IMPLEMENTATION.md]]
+- [[AUDIT-SYSTEM-INTEGRATION-SUMMARY.md]]
+- [[BASE-INSTANTIATION-AGENTIC-PLAN.md]]
+- [[CLICKUP-IMPLEMENTATION-GUIDE.md]]
+- [[COMMANDCENTER-REAL-DATA-WIRING-COMPLETE.md]]
+- [[CON-001-SALES-PIPELINE.md]]
+- [[DATA-INTEGRITY-AUDIT-2026-09-23.md]]
+- [[DEPLOYMENT-STATUS-SEP-9.md]]
+- [[EVAL-REGISTRY-IMPLEMENTATION-DAY1.md]]
+
+... (58 more files) ...
+
+- [[WEEK1_EXECUTION_WITH_REPOS.md]]
+- [[WHATSAPP-CREDENTIALS-CHECKLIST.md]]
+- [[WHATSAPP-INTEGRATION-PLAN.md]]
+- [[WHATSAPP-SETUP-GUIDE.md]]
+- [[WIKI-LINK-GAPS-ANALYSIS.md]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

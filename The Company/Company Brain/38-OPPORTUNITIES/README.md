@@ -40,3 +40,26 @@ This domain contains X controllable operations. See [[control-points]] for detai
 ---
 
 **Updated:** 2026-09-01
+
+## Files in This Domain
+
+- [[38-OPPORTUNITIES.md]]
+- [[CAPITAL_STACK/CON-001_SBA_Surety_Bond_Draw_Line.md]]
+- [[CAPITAL_STACK/LT-005_Healthcare_CDFI_Vehicle_Lease.md]]
+- [[CAPITAL_STACK/LT-011_Freight_Factoring_SBA_Express.md]]
+- [[CAPITAL_STACK/OPS-001_Staffing_Payroll_Funding_Facility.md]]
+- [[CAPITAL_STACK/RE-001_CDFI_Acquisition_Debt_DSCR_Packet.md]]
+- [[GRANTS/CON-001_DOE_EDA_ACE_Construction.md]]
+- [[GRANTS/LT-005_NIH_HHS_HealthRoute.md]]
+- [[GRANTS/LT-011_DOT_EPA_CarrierDispatch.md]]
+- [[GRANTS/OPS-001_DOL_WIOA_CareerOps.md]]
+- [[GRANTS/RE-001_HUD_Enterprise_Affordable_Housing.md]]
+- [[GRANTS/VEN-001_NSF_SBIR_Local_AI.md]]
+- [[GRANTS/VEN-002_DOE_OmniRoute_Energy_AI.md]]
+- [[GRANTS/VEN-003_DARPA_NIST_Sovereign_OS.md]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

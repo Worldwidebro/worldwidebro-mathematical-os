@@ -44,3 +44,13 @@ People & Teams (52-PEOPLE)
 ---
 
 Last updated: 2026-09-02
+
+## Files in This Domain
+
+- [[02-SOURCES.md]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

@@ -16,3 +16,13 @@ updated: 2026-09-12
 
 ## Overview
 Governs systemic transitions, policy rollout, and procedural change management.
+
+## Files in This Domain
+
+- [[63-CHANGE-MANAGEMENT.md]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

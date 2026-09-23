@@ -41,3 +41,17 @@ This directory governs recursive multi-agent decomposition, autonomous iterative
 | **Loop execution (L1/L2/L3)** | ✅ | `Loop Engine` | Agent Architect | Orchestration Fabric — Work Discovery & Agent Coordination |
 
 *Governed by [[00-CONSTITUTION/control-planes/CP-010|CP-010: Automation]] under [[50-MASTER-CONTROL/CONTROL_MATRIX|Control Matrix]].*
+
+## Files in This Domain
+
+- [[55-LOOP-ENGINEERING.md]]
+- [[COMPANY_INCOME_LOOPS_ARCHITECTURE.md]]
+- [[FRACTAL_INTEGRATION.md]]
+- [[LOOP_ENGINEERING.md]]
+- [[MASTER-FUNNEL-MAP.md]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

@@ -45,3 +45,13 @@ This domain contains X controllable operations. See [[control-points]] for detai
 - Native Company Brain CLI: [[_CLI/README|Company Brain CLI (_CLI/bin/cb)]]
 - FastMCP Server: [[_MCP/README|FastMCP Server (_MCP/fastmcp_server.py)]]
 - Tools Registry: [[_REGISTRIES/tools/README|_REGISTRIES/tools]]
+
+## Files in This Domain
+
+- [[18-TOOLS.md]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

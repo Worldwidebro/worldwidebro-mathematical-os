@@ -54,3 +54,32 @@ The following Tier-1 ventures have production-verified deployments and active mo
 | **Portfolio oversight** | ✅ | `Neo4j` | Portfolio Manager | Company Brain — Organizational Intelligence |
 
 *Governed by [[00-CONSTITUTION/control-planes/CP-002|CP-002: Venture]] under [[50-MASTER-CONTROL/CONTROL_MATRIX|Control Matrix]].*
+
+## Files in This Domain
+
+**Total: 846 files**
+
+- [[23-VENTURES.md]]
+- [[CON-001.md]]
+- [[EC-001.md]]
+- [[FIN-037.md]]
+- [[LT-005-ANTHROPIC-SALES-PLUGIN-EVAL.md]]
+- [[LT-005-COMPETITOR-RESEARCH.md]]
+- [[LT-005-DRIVER-ONBOARDING.md]]
+- [[LT-005-EMAIL-DRAFT.md]]
+- [[LT-005-OSS-INTEGRATION-ROADMAP.md]]
+- [[LT-005-TODAY-CHECKLIST-SEP-10.md]]
+
+... (831 more files) ...
+
+- [[Worldwidebro-Vex/src/lib/_index.md]]
+- [[Worldwidebro-Vex/src/pages/_index.md]]
+- [[Worldwidebro-Vex/tsconfig.json]]
+- [[Worldwidebro-Vex/tsconfig.node.json]]
+- [[Worldwidebro-Vex/vercel.json]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

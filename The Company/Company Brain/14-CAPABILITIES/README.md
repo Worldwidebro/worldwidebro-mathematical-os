@@ -84,3 +84,32 @@ All capabilities live in `/solutions/CAP-###.md`
 | **Capability routing** | ✅ | `Loop Engine` | Capability Manager | Orchestration Fabric — Work Discovery & Agent Coordination |
 
 *Governed by [[00-CONSTITUTION/control-planes/CP-004|CP-004: Strategy]] under [[50-MASTER-CONTROL/CONTROL_MATRIX|Control Matrix]].*
+
+## Files in This Domain
+
+**Total: 304 files**
+
+- [[14-CAPABILITIES.md]]
+- [[CAPABILITIES_INDEX.md]]
+- [[CAPABILITY_SOLUTION_MATRIX.json]]
+- [[VENTURE_GAP_ANALYSIS.json]]
+- [[solutions/CAP-001.md]]
+- [[solutions/CAP-002.md]]
+- [[solutions/CAP-003.md]]
+- [[solutions/CAP-004.md]]
+- [[solutions/CAP-005.md]]
+- [[solutions/CAP-006.md]]
+
+... (289 more files) ...
+
+- [[solutions/CAP-296.md]]
+- [[solutions/CAP-297.md]]
+- [[solutions/CAP-298.md]]
+- [[solutions/CAP-299.md]]
+- [[solutions/CAP-300.md]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

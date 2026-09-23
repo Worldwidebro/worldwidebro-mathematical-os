@@ -40,3 +40,13 @@ This domain contains X controllable operations. See [[control-points]] for detai
 ---
 
 **Updated:** 2026-09-01
+
+## Files in This Domain
+
+- [[31-LEGAL.md]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

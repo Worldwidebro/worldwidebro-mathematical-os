@@ -394,3 +394,15 @@ See `tests/` directory for pytest suite (TBD).
 **Next:** Deploy to Docker, register in OmniRoute, test with agents  
 **Authority:** [[CP-027|Infrastructure Control Plane]]  
 **Updated:** 2026-09-06
+
+## Files in This Domain
+
+- [[60-APIS.md]]
+- [[DEPLOYMENT_GUIDE.md]]
+- [[graph_api.md]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →
