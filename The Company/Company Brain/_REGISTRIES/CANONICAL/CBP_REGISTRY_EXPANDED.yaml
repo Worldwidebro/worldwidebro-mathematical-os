@@ -1,0 +1,5617 @@
+---
+# CBP_REGISTRY.yaml — 500 Control Base Points
+# Authority: CP-001
+# Status: COMPLETE (2026-09-25)
+# All 500 bases (B001-B500) defined across 50 domains
+
+control_bases:
+
+  B001:
+    id: B001
+    name: Mission
+    domain: 00-CONSTITUTION
+    layer: 2
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 00_constitution
+    sensitivity: internal
+
+  B002:
+    id: B002
+    name: Vision
+    domain: 00-CONSTITUTION
+    layer: 3
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 00_constitution
+    sensitivity: internal
+
+  B003:
+    id: B003
+    name: Strategic Objectives
+    domain: 00-CONSTITUTION
+    layer: 4
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 00_constitution
+    sensitivity: internal
+
+  B004:
+    id: B004
+    name: Annual Goals
+    domain: 00-CONSTITUTION
+    layer: 5
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 00_constitution
+    sensitivity: internal
+
+  B005:
+    id: B005
+    name: Quarterly Goals
+    domain: 00-CONSTITUTION
+    layer: 6
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 00_constitution
+    sensitivity: internal
+
+  B006:
+    id: B006
+    name: Core Values
+    domain: 00-CONSTITUTION
+    layer: 7
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 00_constitution
+    sensitivity: internal
+
+  B007:
+    id: B007
+    name: Decision Authority
+    domain: 00-CONSTITUTION
+    layer: 8
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 00_constitution
+    sensitivity: internal
+
+  B008:
+    id: B008
+    name: Audit Framework
+    domain: 00-CONSTITUTION
+    layer: 9
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 00_constitution
+    sensitivity: internal
+
+  B009:
+    id: B009
+    name: Evolution Path
+    domain: 00-CONSTITUTION
+    layer: 10
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 00_constitution
+    sensitivity: internal
+
+  B010:
+    id: B010
+    name: Master Contracts
+    domain: 00-CONSTITUTION
+    layer: 11
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 00_constitution
+    sensitivity: internal
+
+  B011:
+    id: B011
+    name: Organization Structure
+    domain: 01-IDENTITY
+    layer: 12
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 01_identity
+    sensitivity: internal
+
+  B012:
+    id: B012
+    name: Operating Companies
+    domain: 01-IDENTITY
+    layer: 13
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 01_identity
+    sensitivity: internal
+
+  B013:
+    id: B013
+    name: Ventures Registry
+    domain: 01-IDENTITY
+    layer: 14
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 01_identity
+    sensitivity: internal
+
+  B014:
+    id: B014
+    name: Brand Identity
+    domain: 01-IDENTITY
+    layer: 15
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 01_identity
+    sensitivity: internal
+
+  B015:
+    id: B015
+    name: Legal Entities
+    domain: 01-IDENTITY
+    layer: 16
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 01_identity
+    sensitivity: internal
+
+  B016:
+    id: B016
+    name: Ownership Structure
+    domain: 01-IDENTITY
+    layer: 17
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 01_identity
+    sensitivity: internal
+
+  B017:
+    id: B017
+    name: Entity Relationships
+    domain: 01-IDENTITY
+    layer: 18
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 01_identity
+    sensitivity: internal
+
+  B018:
+    id: B018
+    name: Venture Classification
+    domain: 01-IDENTITY
+    layer: 19
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 01_identity
+    sensitivity: internal
+
+  B019:
+    id: B019
+    name: Master Roster
+    domain: 01-IDENTITY
+    layer: 20
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 01_identity
+    sensitivity: internal
+
+  B020:
+    id: B020
+    name: Entity Dissolution
+    domain: 01-IDENTITY
+    layer: 21
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 01_identity
+    sensitivity: internal
+
+  B021:
+    id: B021
+    name: Data Source Registry
+    domain: 02-SOURCES
+    layer: 22
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 02_sources
+    sensitivity: internal
+
+  B022:
+    id: B022
+    name: Feed Configuration
+    domain: 02-SOURCES
+    layer: 1
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 02_sources
+    sensitivity: internal
+
+  B023:
+    id: B023
+    name: Source Verification
+    domain: 02-SOURCES
+    layer: 2
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 02_sources
+    sensitivity: internal
+
+  B024:
+    id: B024
+    name: Ingestion Pipelines
+    domain: 02-SOURCES
+    layer: 3
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 02_sources
+    sensitivity: internal
+
+  B025:
+    id: B025
+    name: Quality Monitoring
+    domain: 02-SOURCES
+    layer: 4
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 02_sources
+    sensitivity: internal
+
+  B026:
+    id: B026
+    name: Access Control
+    domain: 02-SOURCES
+    layer: 5
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 02_sources
+    sensitivity: internal
+
+  B027:
+    id: B027
+    name: Rate Limiting
+    domain: 02-SOURCES
+    layer: 6
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 02_sources
+    sensitivity: internal
+
+  B028:
+    id: B028
+    name: Error Handling
+    domain: 02-SOURCES
+    layer: 7
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 02_sources
+    sensitivity: internal
+
+  B029:
+    id: B029
+    name: Archive Strategy
+    domain: 02-SOURCES
+    layer: 8
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 02_sources
+    sensitivity: internal
+
+  B030:
+    id: B030
+    name: Source Lifecycle
+    domain: 02-SOURCES
+    layer: 9
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 02_sources
+    sensitivity: internal
+
+  B031:
+    id: B031
+    name: Ingestion Framework
+    domain: 03-INGESTION
+    layer: 10
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 03_ingestion
+    sensitivity: internal
+
+  B032:
+    id: B032
+    name: ETL Workflows
+    domain: 03-INGESTION
+    layer: 11
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 03_ingestion
+    sensitivity: internal
+
+  B033:
+    id: B033
+    name: Data Validation
+    domain: 03-INGESTION
+    layer: 12
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 03_ingestion
+    sensitivity: internal
+
+  B034:
+    id: B034
+    name: Schema Mapping
+    domain: 03-INGESTION
+    layer: 13
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 03_ingestion
+    sensitivity: internal
+
+  B035:
+    id: B035
+    name: Transformation Rules
+    domain: 03-INGESTION
+    layer: 14
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 03_ingestion
+    sensitivity: internal
+
+  B036:
+    id: B036
+    name: Batch Processing
+    domain: 03-INGESTION
+    layer: 15
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 03_ingestion
+    sensitivity: internal
+
+  B037:
+    id: B037
+    name: Real-time Streams
+    domain: 03-INGESTION
+    layer: 16
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 03_ingestion
+    sensitivity: internal
+
+  B038:
+    id: B038
+    name: Error Recovery
+    domain: 03-INGESTION
+    layer: 17
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 03_ingestion
+    sensitivity: internal
+
+  B039:
+    id: B039
+    name: Audit Logging
+    domain: 03-INGESTION
+    layer: 18
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 03_ingestion
+    sensitivity: internal
+
+  B040:
+    id: B040
+    name: Performance Optimization
+    domain: 03-INGESTION
+    layer: 19
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 03_ingestion
+    sensitivity: internal
+
+  B041:
+    id: B041
+    name: Database Inventory
+    domain: 04-DATA
+    layer: 20
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 04_data
+    sensitivity: internal
+
+  B042:
+    id: B042
+    name: Schema Registry
+    domain: 04-DATA
+    layer: 21
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 04_data
+    sensitivity: internal
+
+  B043:
+    id: B043
+    name: Data Dictionary
+    domain: 04-DATA
+    layer: 22
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 04_data
+    sensitivity: internal
+
+  B044:
+    id: B044
+    name: Backup Strategy
+    domain: 04-DATA
+    layer: 1
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 04_data
+    sensitivity: internal
+
+  B045:
+    id: B045
+    name: Access Logs
+    domain: 04-DATA
+    layer: 2
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 04_data
+    sensitivity: internal
+
+  B046:
+    id: B046
+    name: Query Performance
+    domain: 04-DATA
+    layer: 3
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 04_data
+    sensitivity: internal
+
+  B047:
+    id: B047
+    name: Storage Management
+    domain: 04-DATA
+    layer: 4
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 04_data
+    sensitivity: internal
+
+  B048:
+    id: B048
+    name: Archive Storage
+    domain: 04-DATA
+    layer: 5
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 04_data
+    sensitivity: internal
+
+  B049:
+    id: B049
+    name: Recovery Procedures
+    domain: 04-DATA
+    layer: 6
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 04_data
+    sensitivity: internal
+
+  B050:
+    id: B050
+    name: Compliance Status
+    domain: 04-DATA
+    layer: 7
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 04_data
+    sensitivity: internal
+
+  B051:
+    id: B051
+    name: Metadata Schema
+    domain: 05-METADATA
+    layer: 8
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 05_metadata
+    sensitivity: internal
+
+  B052:
+    id: B052
+    name: Attribute Registry
+    domain: 05-METADATA
+    layer: 9
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 05_metadata
+    sensitivity: internal
+
+  B053:
+    id: B053
+    name: Classification System
+    domain: 05-METADATA
+    layer: 10
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 05_metadata
+    sensitivity: internal
+
+  B054:
+    id: B054
+    name: Tagging Strategy
+    domain: 05-METADATA
+    layer: 11
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 05_metadata
+    sensitivity: internal
+
+  B055:
+    id: B055
+    name: Version Control
+    domain: 05-METADATA
+    layer: 12
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 05_metadata
+    sensitivity: internal
+
+  B056:
+    id: B056
+    name: Lineage Tracking
+    domain: 05-METADATA
+    layer: 13
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 05_metadata
+    sensitivity: internal
+
+  B057:
+    id: B057
+    name: Quality Metrics
+    domain: 05-METADATA
+    layer: 14
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 05_metadata
+    sensitivity: internal
+
+  B058:
+    id: B058
+    name: Change Audit
+    domain: 05-METADATA
+    layer: 15
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 05_metadata
+    sensitivity: internal
+
+  B059:
+    id: B059
+    name: Governance Rules
+    domain: 05-METADATA
+    layer: 16
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 05_metadata
+    sensitivity: internal
+
+  B060:
+    id: B060
+    name: Export/Import
+    domain: 05-METADATA
+    layer: 17
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 05_metadata
+    sensitivity: internal
+
+  B061:
+    id: B061
+    name: Entity Matching
+    domain: 06-ENTITY-RESOLUTION
+    layer: 18
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 06_entity_resolution
+    sensitivity: internal
+
+  B062:
+    id: B062
+    name: Deduplication Rules
+    domain: 06-ENTITY-RESOLUTION
+    layer: 19
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 06_entity_resolution
+    sensitivity: internal
+
+  B063:
+    id: B063
+    name: Conflict Resolution
+    domain: 06-ENTITY-RESOLUTION
+    layer: 20
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 06_entity_resolution
+    sensitivity: internal
+
+  B064:
+    id: B064
+    name: Identity Merge
+    domain: 06-ENTITY-RESOLUTION
+    layer: 21
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 06_entity_resolution
+    sensitivity: internal
+
+  B065:
+    id: B065
+    name: Historical Tracking
+    domain: 06-ENTITY-RESOLUTION
+    layer: 22
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 06_entity_resolution
+    sensitivity: internal
+
+  B066:
+    id: B066
+    name: Confidence Scoring
+    domain: 06-ENTITY-RESOLUTION
+    layer: 1
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 06_entity_resolution
+    sensitivity: internal
+
+  B067:
+    id: B067
+    name: Batch Processing
+    domain: 06-ENTITY-RESOLUTION
+    layer: 2
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 06_entity_resolution
+    sensitivity: internal
+
+  B068:
+    id: B068
+    name: Real-time Matching
+    domain: 06-ENTITY-RESOLUTION
+    layer: 3
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 06_entity_resolution
+    sensitivity: internal
+
+  B069:
+    id: B069
+    name: Quality Assurance
+    domain: 06-ENTITY-RESOLUTION
+    layer: 4
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 06_entity_resolution
+    sensitivity: internal
+
+  B070:
+    id: B070
+    name: Audit Trail
+    domain: 06-ENTITY-RESOLUTION
+    layer: 5
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 06_entity_resolution
+    sensitivity: internal
+
+  B071:
+    id: B071
+    name: Type System
+    domain: 07-ONTOLOGY
+    layer: 6
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 07_ontology
+    sensitivity: internal
+
+  B072:
+    id: B072
+    name: Relationship Types
+    domain: 07-ONTOLOGY
+    layer: 7
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 07_ontology
+    sensitivity: internal
+
+  B073:
+    id: B073
+    name: Taxonomy Design
+    domain: 07-ONTOLOGY
+    layer: 8
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 07_ontology
+    sensitivity: internal
+
+  B074:
+    id: B074
+    name: Constraint Definitions
+    domain: 07-ONTOLOGY
+    layer: 9
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 07_ontology
+    sensitivity: internal
+
+  B075:
+    id: B075
+    name: Validation Rules
+    domain: 07-ONTOLOGY
+    layer: 10
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 07_ontology
+    sensitivity: internal
+
+  B076:
+    id: B076
+    name: Extension Points
+    domain: 07-ONTOLOGY
+    layer: 11
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 07_ontology
+    sensitivity: internal
+
+  B077:
+    id: B077
+    name: Version Management
+    domain: 07-ONTOLOGY
+    layer: 12
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 07_ontology
+    sensitivity: internal
+
+  B078:
+    id: B078
+    name: Documentation
+    domain: 07-ONTOLOGY
+    layer: 13
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 07_ontology
+    sensitivity: internal
+
+  B079:
+    id: B079
+    name: Adoption Tracking
+    domain: 07-ONTOLOGY
+    layer: 14
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 07_ontology
+    sensitivity: internal
+
+  B080:
+    id: B080
+    name: Evolution Framework
+    domain: 07-ONTOLOGY
+    layer: 15
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 07_ontology
+    sensitivity: internal
+
+  B081:
+    id: B081
+    name: Graph Schema
+    domain: 08-KNOWLEDGE-GRAPH
+    layer: 16
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 08_knowledge_graph
+    sensitivity: internal
+
+  B082:
+    id: B082
+    name: Node Types
+    domain: 08-KNOWLEDGE-GRAPH
+    layer: 17
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 08_knowledge_graph
+    sensitivity: internal
+
+  B083:
+    id: B083
+    name: Relationship Types
+    domain: 08-KNOWLEDGE-GRAPH
+    layer: 18
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 08_knowledge_graph
+    sensitivity: internal
+
+  B084:
+    id: B084
+    name: Constraints
+    domain: 08-KNOWLEDGE-GRAPH
+    layer: 19
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 08_knowledge_graph
+    sensitivity: internal
+
+  B085:
+    id: B085
+    name: Indexes
+    domain: 08-KNOWLEDGE-GRAPH
+    layer: 20
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 08_knowledge_graph
+    sensitivity: internal
+
+  B086:
+    id: B086
+    name: Performance Tuning
+    domain: 08-KNOWLEDGE-GRAPH
+    layer: 21
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 08_knowledge_graph
+    sensitivity: internal
+
+  B087:
+    id: B087
+    name: Query Library
+    domain: 08-KNOWLEDGE-GRAPH
+    layer: 22
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 08_knowledge_graph
+    sensitivity: internal
+
+  B088:
+    id: B088
+    name: Backup Strategy
+    domain: 08-KNOWLEDGE-GRAPH
+    layer: 1
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 08_knowledge_graph
+    sensitivity: internal
+
+  B089:
+    id: B089
+    name: Migration Tools
+    domain: 08-KNOWLEDGE-GRAPH
+    layer: 2
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 08_knowledge_graph
+    sensitivity: internal
+
+  B090:
+    id: B090
+    name: Health Monitoring
+    domain: 08-KNOWLEDGE-GRAPH
+    layer: 3
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 08_knowledge_graph
+    sensitivity: internal
+
+  B091:
+    id: B091
+    name: Knowledge Synthesis
+    domain: 09-KNOWLEDGE
+    layer: 4
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 09_knowledge
+    sensitivity: internal
+
+  B092:
+    id: B092
+    name: Insight Generation
+    domain: 09-KNOWLEDGE
+    layer: 5
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 09_knowledge
+    sensitivity: internal
+
+  B093:
+    id: B093
+    name: Pattern Recognition
+    domain: 09-KNOWLEDGE
+    layer: 6
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 09_knowledge
+    sensitivity: internal
+
+  B094:
+    id: B094
+    name: Causality Analysis
+    domain: 09-KNOWLEDGE
+    layer: 7
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 09_knowledge
+    sensitivity: internal
+
+  B095:
+    id: B095
+    name: Prediction Models
+    domain: 09-KNOWLEDGE
+    layer: 8
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 09_knowledge
+    sensitivity: internal
+
+  B096:
+    id: B096
+    name: Recommendation Engine
+    domain: 09-KNOWLEDGE
+    layer: 9
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 09_knowledge
+    sensitivity: internal
+
+  B097:
+    id: B097
+    name: Reasoning Chain
+    domain: 09-KNOWLEDGE
+    layer: 10
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 09_knowledge
+    sensitivity: internal
+
+  B098:
+    id: B098
+    name: Evidence Assembly
+    domain: 09-KNOWLEDGE
+    layer: 11
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 09_knowledge
+    sensitivity: internal
+
+  B099:
+    id: B099
+    name: Confidence Scoring
+    domain: 09-KNOWLEDGE
+    layer: 12
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 09_knowledge
+    sensitivity: internal
+
+  B100:
+    id: B100
+    name: Update Frequency
+    domain: 09-KNOWLEDGE
+    layer: 13
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 09_knowledge
+    sensitivity: internal
+
+  B101:
+    id: B101
+    name: Memory Architecture
+    domain: 10-MEMORY
+    layer: 14
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 10_memory
+    sensitivity: internal
+
+  B102:
+    id: B102
+    name: Retention Policy
+    domain: 10-MEMORY
+    layer: 15
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 10_memory
+    sensitivity: internal
+
+  B103:
+    id: B103
+    name: Retrieval System
+    domain: 10-MEMORY
+    layer: 16
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 10_memory
+    sensitivity: internal
+
+  B104:
+    id: B104
+    name: Decay Rules
+    domain: 10-MEMORY
+    layer: 17
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 10_memory
+    sensitivity: internal
+
+  B105:
+    id: B105
+    name: Learning Cycles
+    domain: 10-MEMORY
+    layer: 18
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 10_memory
+    sensitivity: internal
+
+  B106:
+    id: B106
+    name: Feedback Loops
+    domain: 10-MEMORY
+    layer: 19
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 10_memory
+    sensitivity: internal
+
+  B107:
+    id: B107
+    name: Knowledge Compilation
+    domain: 10-MEMORY
+    layer: 20
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 10_memory
+    sensitivity: internal
+
+  B108:
+    id: B108
+    name: Versioning
+    domain: 10-MEMORY
+    layer: 21
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 10_memory
+    sensitivity: internal
+
+  B109:
+    id: B109
+    name: Archival Strategy
+    domain: 10-MEMORY
+    layer: 22
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 10_memory
+    sensitivity: internal
+
+  B110:
+    id: B110
+    name: Continuity Planning
+    domain: 10-MEMORY
+    layer: 1
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 10_memory
+    sensitivity: internal
+
+  B111:
+    id: B111
+    name: Index Registry
+    domain: 11-INDEXING
+    layer: 2
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 11_indexing
+    sensitivity: internal
+
+  B112:
+    id: B112
+    name: Search Schema
+    domain: 11-INDEXING
+    layer: 3
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 11_indexing
+    sensitivity: internal
+
+  B113:
+    id: B113
+    name: Query Language
+    domain: 11-INDEXING
+    layer: 4
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 11_indexing
+    sensitivity: internal
+
+  B114:
+    id: B114
+    name: Ranking Algorithm
+    domain: 11-INDEXING
+    layer: 5
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 11_indexing
+    sensitivity: internal
+
+  B115:
+    id: B115
+    name: Relevance Tuning
+    domain: 11-INDEXING
+    layer: 6
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 11_indexing
+    sensitivity: internal
+
+  B116:
+    id: B116
+    name: Performance Optimization
+    domain: 11-INDEXING
+    layer: 7
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 11_indexing
+    sensitivity: internal
+
+  B117:
+    id: B117
+    name: Coverage Analysis
+    domain: 11-INDEXING
+    layer: 8
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 11_indexing
+    sensitivity: internal
+
+  B118:
+    id: B118
+    name: Freshness Management
+    domain: 11-INDEXING
+    layer: 9
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 11_indexing
+    sensitivity: internal
+
+  B119:
+    id: B119
+    name: Deduplication
+    domain: 11-INDEXING
+    layer: 10
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 11_indexing
+    sensitivity: internal
+
+  B120:
+    id: B120
+    name: Export Formats
+    domain: 11-INDEXING
+    layer: 11
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 11_indexing
+    sensitivity: internal
+
+  B121:
+    id: B121
+    name: Context Builder
+    domain: 12-CONTEXT
+    layer: 12
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 12_context
+    sensitivity: internal
+
+  B122:
+    id: B122
+    name: Relevance Scoring
+    domain: 12-CONTEXT
+    layer: 13
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 12_context
+    sensitivity: internal
+
+  B123:
+    id: B123
+    name: Retrieval Strategy
+    domain: 12-CONTEXT
+    layer: 14
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 12_context
+    sensitivity: internal
+
+  B124:
+    id: B124
+    name: Result Ranking
+    domain: 12-CONTEXT
+    layer: 15
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 12_context
+    sensitivity: internal
+
+  B125:
+    id: B125
+    name: Personalization
+    domain: 12-CONTEXT
+    layer: 16
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 12_context
+    sensitivity: internal
+
+  B126:
+    id: B126
+    name: Temporal Dynamics
+    domain: 12-CONTEXT
+    layer: 17
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 12_context
+    sensitivity: internal
+
+  B127:
+    id: B127
+    name: Cache Strategy
+    domain: 12-CONTEXT
+    layer: 18
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 12_context
+    sensitivity: internal
+
+  B128:
+    id: B128
+    name: Quality Assurance
+    domain: 12-CONTEXT
+    layer: 19
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 12_context
+    sensitivity: internal
+
+  B129:
+    id: B129
+    name: Performance Metrics
+    domain: 12-CONTEXT
+    layer: 20
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 12_context
+    sensitivity: internal
+
+  B130:
+    id: B130
+    name: User Feedback
+    domain: 12-CONTEXT
+    layer: 21
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 12_context
+    sensitivity: internal
+
+  B131:
+    id: B131
+    name: Repository Registry
+    domain: 13-REPOSITORIES
+    layer: 22
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 13_repositories
+    sensitivity: internal
+
+  B132:
+    id: B132
+    name: Code Organization
+    domain: 13-REPOSITORIES
+    layer: 1
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 13_repositories
+    sensitivity: internal
+
+  B133:
+    id: B133
+    name: Documentation Index
+    domain: 13-REPOSITORIES
+    layer: 2
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 13_repositories
+    sensitivity: internal
+
+  B134:
+    id: B134
+    name: Access Control
+    domain: 13-REPOSITORIES
+    layer: 3
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 13_repositories
+    sensitivity: internal
+
+  B135:
+    id: B135
+    name: Deployment Mapping
+    domain: 13-REPOSITORIES
+    layer: 4
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 13_repositories
+    sensitivity: internal
+
+  B136:
+    id: B136
+    name: CI/CD Integration
+    domain: 13-REPOSITORIES
+    layer: 5
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 13_repositories
+    sensitivity: internal
+
+  B137:
+    id: B137
+    name: Code Quality
+    domain: 13-REPOSITORIES
+    layer: 6
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 13_repositories
+    sensitivity: internal
+
+  B138:
+    id: B138
+    name: Dependency Tracking
+    domain: 13-REPOSITORIES
+    layer: 7
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 13_repositories
+    sensitivity: internal
+
+  B139:
+    id: B139
+    name: License Management
+    domain: 13-REPOSITORIES
+    layer: 8
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 13_repositories
+    sensitivity: internal
+
+  B140:
+    id: B140
+    name: Archive Strategy
+    domain: 13-REPOSITORIES
+    layer: 9
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 13_repositories
+    sensitivity: internal
+
+  B141:
+    id: B141
+    name: Capability Definition
+    domain: 14-CAPABILITIES
+    layer: 10
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 14_capabilities
+    sensitivity: internal
+
+  B142:
+    id: B142
+    name: Coverage Analysis
+    domain: 14-CAPABILITIES
+    layer: 11
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 14_capabilities
+    sensitivity: internal
+
+  B143:
+    id: B143
+    name: Capability Mapping
+    domain: 14-CAPABILITIES
+    layer: 12
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 14_capabilities
+    sensitivity: internal
+
+  B144:
+    id: B144
+    name: Gap Assessment
+    domain: 14-CAPABILITIES
+    layer: 13
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 14_capabilities
+    sensitivity: internal
+
+  B145:
+    id: B145
+    name: Integration Points
+    domain: 14-CAPABILITIES
+    layer: 14
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 14_capabilities
+    sensitivity: internal
+
+  B146:
+    id: B146
+    name: Skill Requirements
+    domain: 14-CAPABILITIES
+    layer: 15
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 14_capabilities
+    sensitivity: internal
+
+  B147:
+    id: B147
+    name: Training Paths
+    domain: 14-CAPABILITIES
+    layer: 16
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 14_capabilities
+    sensitivity: internal
+
+  B148:
+    id: B148
+    name: Cost Analysis
+    domain: 14-CAPABILITIES
+    layer: 17
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 14_capabilities
+    sensitivity: internal
+
+  B149:
+    id: B149
+    name: ROI Tracking
+    domain: 14-CAPABILITIES
+    layer: 18
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 14_capabilities
+    sensitivity: internal
+
+  B150:
+    id: B150
+    name: Deprecation Planning
+    domain: 14-CAPABILITIES
+    layer: 19
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 14_capabilities
+    sensitivity: internal
+
+  B151:
+    id: B151
+    name: Skill Definition
+    domain: 15-SKILLS
+    layer: 20
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 15_skills
+    sensitivity: internal
+
+  B152:
+    id: B152
+    name: Procedure Repository
+    domain: 15-SKILLS
+    layer: 21
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 15_skills
+    sensitivity: internal
+
+  B153:
+    id: B153
+    name: Knowledge Base
+    domain: 15-SKILLS
+    layer: 22
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 15_skills
+    sensitivity: internal
+
+  B154:
+    id: B154
+    name: Training Materials
+    domain: 15-SKILLS
+    layer: 1
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 15_skills
+    sensitivity: internal
+
+  B155:
+    id: B155
+    name: Assessment Rubrics
+    domain: 15-SKILLS
+    layer: 2
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 15_skills
+    sensitivity: internal
+
+  B156:
+    id: B156
+    name: Proficiency Levels
+    domain: 15-SKILLS
+    layer: 3
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 15_skills
+    sensitivity: internal
+
+  B157:
+    id: B157
+    name: Certification Path
+    domain: 15-SKILLS
+    layer: 4
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 15_skills
+    sensitivity: internal
+
+  B158:
+    id: B158
+    name: Usage Analytics
+    domain: 15-SKILLS
+    layer: 5
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 15_skills
+    sensitivity: internal
+
+  B159:
+    id: B159
+    name: Feedback Integration
+    domain: 15-SKILLS
+    layer: 6
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 15_skills
+    sensitivity: internal
+
+  B160:
+    id: B160
+    name: Versioning
+    domain: 15-SKILLS
+    layer: 7
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 15_skills
+    sensitivity: internal
+
+  B161:
+    id: B161
+    name: Agent Definition
+    domain: 16-AGENTS
+    layer: 8
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 16_agents
+    sensitivity: internal
+
+  B162:
+    id: B162
+    name: Capability Matrix
+    domain: 16-AGENTS
+    layer: 9
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 16_agents
+    sensitivity: internal
+
+  B163:
+    id: B163
+    name: Autonomy Levels
+    domain: 16-AGENTS
+    layer: 10
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 16_agents
+    sensitivity: internal
+
+  B164:
+    id: B164
+    name: Performance Metrics
+    domain: 16-AGENTS
+    layer: 11
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 16_agents
+    sensitivity: internal
+
+  B165:
+    id: B165
+    name: Error Handling
+    domain: 16-AGENTS
+    layer: 12
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 16_agents
+    sensitivity: internal
+
+  B166:
+    id: B166
+    name: Escalation Paths
+    domain: 16-AGENTS
+    layer: 13
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 16_agents
+    sensitivity: internal
+
+  B167:
+    id: B167
+    name: Resource Allocation
+    domain: 16-AGENTS
+    layer: 14
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 16_agents
+    sensitivity: internal
+
+  B168:
+    id: B168
+    name: Training/Fine-tuning
+    domain: 16-AGENTS
+    layer: 15
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 16_agents
+    sensitivity: internal
+
+  B169:
+    id: B169
+    name: Audit Trail
+    domain: 16-AGENTS
+    layer: 16
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 16_agents
+    sensitivity: internal
+
+  B170:
+    id: B170
+    name: Decommissioning
+    domain: 16-AGENTS
+    layer: 17
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 16_agents
+    sensitivity: internal
+
+  B171:
+    id: B171
+    name: Model Registry
+    domain: 17-MODELS
+    layer: 18
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 17_models
+    sensitivity: internal
+
+  B172:
+    id: B172
+    name: Version Management
+    domain: 17-MODELS
+    layer: 19
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 17_models
+    sensitivity: internal
+
+  B173:
+    id: B173
+    name: Performance Benchmarks
+    domain: 17-MODELS
+    layer: 20
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 17_models
+    sensitivity: internal
+
+  B174:
+    id: B174
+    name: Fine-tuning Datasets
+    domain: 17-MODELS
+    layer: 21
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 17_models
+    sensitivity: internal
+
+  B175:
+    id: B175
+    name: Inference Configuration
+    domain: 17-MODELS
+    layer: 22
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 17_models
+    sensitivity: internal
+
+  B176:
+    id: B176
+    name: Cost Optimization
+    domain: 17-MODELS
+    layer: 1
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 17_models
+    sensitivity: internal
+
+  B177:
+    id: B177
+    name: Compliance Verification
+    domain: 17-MODELS
+    layer: 2
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 17_models
+    sensitivity: internal
+
+  B178:
+    id: B178
+    name: Update Schedule
+    domain: 17-MODELS
+    layer: 3
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 17_models
+    sensitivity: internal
+
+  B179:
+    id: B179
+    name: Rollback Procedures
+    domain: 17-MODELS
+    layer: 4
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 17_models
+    sensitivity: internal
+
+  B180:
+    id: B180
+    name: Monitoring
+    domain: 17-MODELS
+    layer: 5
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 17_models
+    sensitivity: internal
+
+  B181:
+    id: B181
+    name: Tool Registry
+    domain: 18-TOOLS
+    layer: 6
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 18_tools
+    sensitivity: internal
+
+  B182:
+    id: B182
+    name: API Documentation
+    domain: 18-TOOLS
+    layer: 7
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 18_tools
+    sensitivity: internal
+
+  B183:
+    id: B183
+    name: Integration Points
+    domain: 18-TOOLS
+    layer: 8
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 18_tools
+    sensitivity: internal
+
+  B184:
+    id: B184
+    name: Authentication
+    domain: 18-TOOLS
+    layer: 9
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 18_tools
+    sensitivity: internal
+
+  B185:
+    id: B185
+    name: Rate Limiting
+    domain: 18-TOOLS
+    layer: 10
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 18_tools
+    sensitivity: internal
+
+  B186:
+    id: B186
+    name: Error Handling
+    domain: 18-TOOLS
+    layer: 11
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 18_tools
+    sensitivity: internal
+
+  B187:
+    id: B187
+    name: Deprecation Schedule
+    domain: 18-TOOLS
+    layer: 12
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 18_tools
+    sensitivity: internal
+
+  B188:
+    id: B188
+    name: Monitoring
+    domain: 18-TOOLS
+    layer: 13
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 18_tools
+    sensitivity: internal
+
+  B189:
+    id: B189
+    name: Cost Tracking
+    domain: 18-TOOLS
+    layer: 14
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 18_tools
+    sensitivity: internal
+
+  B190:
+    id: B190
+    name: Audit Logging
+    domain: 18-TOOLS
+    layer: 15
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 18_tools
+    sensitivity: internal
+
+  B191:
+    id: B191
+    name: Workflow Engine
+    domain: 19-ORCHESTRATION
+    layer: 16
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 19_orchestration
+    sensitivity: internal
+
+  B192:
+    id: B192
+    name: Process Library
+    domain: 19-ORCHESTRATION
+    layer: 17
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 19_orchestration
+    sensitivity: internal
+
+  B193:
+    id: B193
+    name: Routing Rules
+    domain: 19-ORCHESTRATION
+    layer: 18
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 19_orchestration
+    sensitivity: internal
+
+  B194:
+    id: B194
+    name: State Management
+    domain: 19-ORCHESTRATION
+    layer: 19
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 19_orchestration
+    sensitivity: internal
+
+  B195:
+    id: B195
+    name: Error Recovery
+    domain: 19-ORCHESTRATION
+    layer: 20
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 19_orchestration
+    sensitivity: internal
+
+  B196:
+    id: B196
+    name: Monitoring
+    domain: 19-ORCHESTRATION
+    layer: 21
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 19_orchestration
+    sensitivity: internal
+
+  B197:
+    id: B197
+    name: Performance Optimization
+    domain: 19-ORCHESTRATION
+    layer: 22
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 19_orchestration
+    sensitivity: internal
+
+  B198:
+    id: B198
+    name: Version Control
+    domain: 19-ORCHESTRATION
+    layer: 1
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 19_orchestration
+    sensitivity: internal
+
+  B199:
+    id: B199
+    name: Audit Trail
+    domain: 19-ORCHESTRATION
+    layer: 2
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 19_orchestration
+    sensitivity: internal
+
+  B200:
+    id: B200
+    name: Disaster Recovery
+    domain: 19-ORCHESTRATION
+    layer: 3
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 19_orchestration
+    sensitivity: internal
+
+  B201:
+    id: B201
+    name: Decision Log
+    domain: 20-DECISIONS
+    layer: 4
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 20_decisions
+    sensitivity: internal
+
+  B202:
+    id: B202
+    name: Architecture Decisions
+    domain: 20-DECISIONS
+    layer: 5
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 20_decisions
+    sensitivity: internal
+
+  B203:
+    id: B203
+    name: Trade-off Analysis
+    domain: 20-DECISIONS
+    layer: 6
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 20_decisions
+    sensitivity: internal
+
+  B204:
+    id: B204
+    name: Approval Process
+    domain: 20-DECISIONS
+    layer: 7
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 20_decisions
+    sensitivity: internal
+
+  B205:
+    id: B205
+    name: Implementation Status
+    domain: 20-DECISIONS
+    layer: 8
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 20_decisions
+    sensitivity: internal
+
+  B206:
+    id: B206
+    name: Review Schedule
+    domain: 20-DECISIONS
+    layer: 9
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 20_decisions
+    sensitivity: internal
+
+  B207:
+    id: B207
+    name: Feedback Tracking
+    domain: 20-DECISIONS
+    layer: 10
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 20_decisions
+    sensitivity: internal
+
+  B208:
+    id: B208
+    name: Reversal Procedures
+    domain: 20-DECISIONS
+    layer: 11
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 20_decisions
+    sensitivity: internal
+
+  B209:
+    id: B209
+    name: Learning Extraction
+    domain: 20-DECISIONS
+    layer: 12
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 20_decisions
+    sensitivity: internal
+
+  B210:
+    id: B210
+    name: Archive
+    domain: 20-DECISIONS
+    layer: 13
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 20_decisions
+    sensitivity: internal
+
+  B211:
+    id: B211
+    name: Policy Registry
+    domain: 21-POLICY
+    layer: 14
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 21_policy
+    sensitivity: internal
+
+  B212:
+    id: B212
+    name: SOP Library
+    domain: 21-POLICY
+    layer: 15
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 21_policy
+    sensitivity: internal
+
+  B213:
+    id: B213
+    name: Compliance Framework
+    domain: 21-POLICY
+    layer: 16
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 21_policy
+    sensitivity: internal
+
+  B214:
+    id: B214
+    name: Enforcement Rules
+    domain: 21-POLICY
+    layer: 17
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 21_policy
+    sensitivity: internal
+
+  B215:
+    id: B215
+    name: Audit Procedures
+    domain: 21-POLICY
+    layer: 18
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 21_policy
+    sensitivity: internal
+
+  B216:
+    id: B216
+    name: Exception Handling
+    domain: 21-POLICY
+    layer: 19
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 21_policy
+    sensitivity: internal
+
+  B217:
+    id: B217
+    name: Update Process
+    domain: 21-POLICY
+    layer: 20
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 21_policy
+    sensitivity: internal
+
+  B218:
+    id: B218
+    name: Training Program
+    domain: 21-POLICY
+    layer: 21
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 21_policy
+    sensitivity: internal
+
+  B219:
+    id: B219
+    name: Effectiveness Measurement
+    domain: 21-POLICY
+    layer: 22
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 21_policy
+    sensitivity: internal
+
+  B220:
+    id: B220
+    name: Archival Rules
+    domain: 21-POLICY
+    layer: 1
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 21_policy
+    sensitivity: internal
+
+  B221:
+    id: B221
+    name: Execution Framework
+    domain: 22-EXECUTION
+    layer: 2
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 22_execution
+    sensitivity: internal
+
+  B222:
+    id: B222
+    name: Work Queue
+    domain: 22-EXECUTION
+    layer: 3
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 22_execution
+    sensitivity: internal
+
+  B223:
+    id: B223
+    name: Progress Tracking
+    domain: 22-EXECUTION
+    layer: 4
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 22_execution
+    sensitivity: internal
+
+  B224:
+    id: B224
+    name: Completion Criteria
+    domain: 22-EXECUTION
+    layer: 5
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 22_execution
+    sensitivity: internal
+
+  B225:
+    id: B225
+    name: Quality Assurance
+    domain: 22-EXECUTION
+    layer: 6
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 22_execution
+    sensitivity: internal
+
+  B226:
+    id: B226
+    name: Performance Metrics
+    domain: 22-EXECUTION
+    layer: 7
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 22_execution
+    sensitivity: internal
+
+  B227:
+    id: B227
+    name: Resource Allocation
+    domain: 22-EXECUTION
+    layer: 8
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 22_execution
+    sensitivity: internal
+
+  B228:
+    id: B228
+    name: Escalation Paths
+    domain: 22-EXECUTION
+    layer: 9
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 22_execution
+    sensitivity: internal
+
+  B229:
+    id: B229
+    name: Audit Trail
+    domain: 22-EXECUTION
+    layer: 10
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 22_execution
+    sensitivity: internal
+
+  B230:
+    id: B230
+    name: Learning Integration
+    domain: 22-EXECUTION
+    layer: 11
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 22_execution
+    sensitivity: internal
+
+  B231:
+    id: B231
+    name: Venture Registry
+    domain: 23-VENTURES
+    layer: 12
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 23_ventures
+    sensitivity: internal
+
+  B232:
+    id: B232
+    name: Deployment Status
+    domain: 23-VENTURES
+    layer: 13
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 23_ventures
+    sensitivity: internal
+
+  B233:
+    id: B233
+    name: Operational Metrics
+    domain: 23-VENTURES
+    layer: 14
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 23_ventures
+    sensitivity: internal
+
+  B234:
+    id: B234
+    name: Financial Tracking
+    domain: 23-VENTURES
+    layer: 15
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 23_ventures
+    sensitivity: internal
+
+  B235:
+    id: B235
+    name: Team Assignment
+    domain: 23-VENTURES
+    layer: 16
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 23_ventures
+    sensitivity: internal
+
+  B236:
+    id: B236
+    name: Risk Assessment
+    domain: 23-VENTURES
+    layer: 17
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 23_ventures
+    sensitivity: internal
+
+  B237:
+    id: B237
+    name: Scaling Strategy
+    domain: 23-VENTURES
+    layer: 18
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 23_ventures
+    sensitivity: internal
+
+  B238:
+    id: B238
+    name: Sunset Planning
+    domain: 23-VENTURES
+    layer: 19
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 23_ventures
+    sensitivity: internal
+
+  B239:
+    id: B239
+    name: Knowledge Transfer
+    domain: 23-VENTURES
+    layer: 20
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 23_ventures
+    sensitivity: internal
+
+  B240:
+    id: B240
+    name: Historical Archive
+    domain: 23-VENTURES
+    layer: 21
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 23_ventures
+    sensitivity: internal
+
+  B241:
+    id: B241
+    name: Financial Registry
+    domain: 24-FINANCE
+    layer: 22
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 24_finance
+    sensitivity: internal
+
+  B242:
+    id: B242
+    name: Projection Models
+    domain: 24-FINANCE
+    layer: 1
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 24_finance
+    sensitivity: internal
+
+  B243:
+    id: B243
+    name: Budget Tracking
+    domain: 24-FINANCE
+    layer: 2
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 24_finance
+    sensitivity: internal
+
+  B244:
+    id: B244
+    name: Variance Analysis
+    domain: 24-FINANCE
+    layer: 3
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 24_finance
+    sensitivity: internal
+
+  B245:
+    id: B245
+    name: Cash Flow Forecasting
+    domain: 24-FINANCE
+    layer: 4
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 24_finance
+    sensitivity: internal
+
+  B246:
+    id: B246
+    name: Cost Allocation
+    domain: 24-FINANCE
+    layer: 5
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 24_finance
+    sensitivity: internal
+
+  B247:
+    id: B247
+    name: ROI Analysis
+    domain: 24-FINANCE
+    layer: 6
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 24_finance
+    sensitivity: internal
+
+  B248:
+    id: B248
+    name: Audit Trail
+    domain: 24-FINANCE
+    layer: 7
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 24_finance
+    sensitivity: internal
+
+  B249:
+    id: B249
+    name: Compliance Status
+    domain: 24-FINANCE
+    layer: 8
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 24_finance
+    sensitivity: internal
+
+  B250:
+    id: B250
+    name: Reporting
+    domain: 24-FINANCE
+    layer: 9
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 24_finance
+    sensitivity: internal
+
+  B251:
+    id: B251
+    name: Lead Registry
+    domain: 25-SALES
+    layer: 10
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 25_sales
+    sensitivity: internal
+
+  B252:
+    id: B252
+    name: Pipeline Management
+    domain: 25-SALES
+    layer: 11
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 25_sales
+    sensitivity: internal
+
+  B253:
+    id: B253
+    name: Deal Tracking
+    domain: 25-SALES
+    layer: 12
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 25_sales
+    sensitivity: internal
+
+  B254:
+    id: B254
+    name: Forecast Model
+    domain: 25-SALES
+    layer: 13
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 25_sales
+    sensitivity: internal
+
+  B255:
+    id: B255
+    name: Quota Management
+    domain: 25-SALES
+    layer: 14
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 25_sales
+    sensitivity: internal
+
+  B256:
+    id: B256
+    name: Compensation Tracking
+    domain: 25-SALES
+    layer: 15
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 25_sales
+    sensitivity: internal
+
+  B257:
+    id: B257
+    name: Win/Loss Analysis
+    domain: 25-SALES
+    layer: 16
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 25_sales
+    sensitivity: internal
+
+  B258:
+    id: B258
+    name: Forecast Accuracy
+    domain: 25-SALES
+    layer: 17
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 25_sales
+    sensitivity: internal
+
+  B259:
+    id: B259
+    name: Team Performance
+    domain: 25-SALES
+    layer: 18
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 25_sales
+    sensitivity: internal
+
+  B260:
+    id: B260
+    name: Predictive Modeling
+    domain: 25-SALES
+    layer: 19
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 25_sales
+    sensitivity: internal
+
+  B261:
+    id: B261
+    name: Campaign Registry
+    domain: 26-MARKETING
+    layer: 20
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 26_marketing
+    sensitivity: internal
+
+  B262:
+    id: B262
+    name: Channel Performance
+    domain: 26-MARKETING
+    layer: 21
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 26_marketing
+    sensitivity: internal
+
+  B263:
+    id: B263
+    name: Message Library
+    domain: 26-MARKETING
+    layer: 22
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 26_marketing
+    sensitivity: internal
+
+  B264:
+    id: B264
+    name: Audience Segmentation
+    domain: 26-MARKETING
+    layer: 1
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 26_marketing
+    sensitivity: internal
+
+  B265:
+    id: B265
+    name: Attribution Model
+    domain: 26-MARKETING
+    layer: 2
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 26_marketing
+    sensitivity: internal
+
+  B266:
+    id: B266
+    name: Budget Allocation
+    domain: 26-MARKETING
+    layer: 3
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 26_marketing
+    sensitivity: internal
+
+  B267:
+    id: B267
+    name: A/B Testing
+    domain: 26-MARKETING
+    layer: 4
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 26_marketing
+    sensitivity: internal
+
+  B268:
+    id: B268
+    name: ROI Analysis
+    domain: 26-MARKETING
+    layer: 5
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 26_marketing
+    sensitivity: internal
+
+  B269:
+    id: B269
+    name: Brand Compliance
+    domain: 26-MARKETING
+    layer: 6
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 26_marketing
+    sensitivity: internal
+
+  B270:
+    id: B270
+    name: Archive Strategy
+    domain: 26-MARKETING
+    layer: 7
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 26_marketing
+    sensitivity: internal
+
+  B271:
+    id: B271
+    name: Customer Registry
+    domain: 27-CUSTOMERS
+    layer: 8
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 27_customers
+    sensitivity: internal
+
+  B272:
+    id: B272
+    name: Account Management
+    domain: 27-CUSTOMERS
+    layer: 9
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 27_customers
+    sensitivity: internal
+
+  B273:
+    id: B273
+    name: Support Tickets
+    domain: 27-CUSTOMERS
+    layer: 10
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 27_customers
+    sensitivity: internal
+
+  B274:
+    id: B274
+    name: Satisfaction Metrics
+    domain: 27-CUSTOMERS
+    layer: 11
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 27_customers
+    sensitivity: internal
+
+  B275:
+    id: B275
+    name: Lifetime Value
+    domain: 27-CUSTOMERS
+    layer: 12
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 27_customers
+    sensitivity: internal
+
+  B276:
+    id: B276
+    name: Churn Risk
+    domain: 27-CUSTOMERS
+    layer: 13
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 27_customers
+    sensitivity: internal
+
+  B277:
+    id: B277
+    name: Communication History
+    domain: 27-CUSTOMERS
+    layer: 14
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 27_customers
+    sensitivity: internal
+
+  B278:
+    id: B278
+    name: Contract Status
+    domain: 27-CUSTOMERS
+    layer: 15
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 27_customers
+    sensitivity: internal
+
+  B279:
+    id: B279
+    name: Feedback Integration
+    domain: 27-CUSTOMERS
+    layer: 16
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 27_customers
+    sensitivity: internal
+
+  B280:
+    id: B280
+    name: Data Privacy
+    domain: 27-CUSTOMERS
+    layer: 17
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 27_customers
+    sensitivity: internal
+
+  B281:
+    id: B281
+    name: Product Registry
+    domain: 28-PRODUCT
+    layer: 18
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 28_product
+    sensitivity: internal
+
+  B282:
+    id: B282
+    name: Specification Library
+    domain: 28-PRODUCT
+    layer: 19
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 28_product
+    sensitivity: internal
+
+  B283:
+    id: B283
+    name: Roadmap Management
+    domain: 28-PRODUCT
+    layer: 20
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 28_product
+    sensitivity: internal
+
+  B284:
+    id: B284
+    name: Feature Tracking
+    domain: 28-PRODUCT
+    layer: 21
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 28_product
+    sensitivity: internal
+
+  B285:
+    id: B285
+    name: User Stories
+    domain: 28-PRODUCT
+    layer: 22
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 28_product
+    sensitivity: internal
+
+  B286:
+    id: B286
+    name: Acceptance Criteria
+    domain: 28-PRODUCT
+    layer: 1
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 28_product
+    sensitivity: internal
+
+  B287:
+    id: B287
+    name: Performance Targets
+    domain: 28-PRODUCT
+    layer: 2
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 28_product
+    sensitivity: internal
+
+  B288:
+    id: B288
+    name: Deprecation Schedule
+    domain: 28-PRODUCT
+    layer: 3
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 28_product
+    sensitivity: internal
+
+  B289:
+    id: B289
+    name: Feedback Loop
+    domain: 28-PRODUCT
+    layer: 4
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 28_product
+    sensitivity: internal
+
+  B290:
+    id: B290
+    name: Versioning
+    domain: 28-PRODUCT
+    layer: 5
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 28_product
+    sensitivity: internal
+
+  B291:
+    id: B291
+    name: Process Library
+    domain: 29-OPERATIONS
+    layer: 6
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 29_operations
+    sensitivity: internal
+
+  B292:
+    id: B292
+    name: SOP Registry
+    domain: 29-OPERATIONS
+    layer: 7
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 29_operations
+    sensitivity: internal
+
+  B293:
+    id: B293
+    name: Resource Allocation
+    domain: 29-OPERATIONS
+    layer: 8
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 29_operations
+    sensitivity: internal
+
+  B294:
+    id: B294
+    name: Capacity Planning
+    domain: 29-OPERATIONS
+    layer: 9
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 29_operations
+    sensitivity: internal
+
+  B295:
+    id: B295
+    name: Quality Metrics
+    domain: 29-OPERATIONS
+    layer: 10
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 29_operations
+    sensitivity: internal
+
+  B296:
+    id: B296
+    name: Cycle Time Analysis
+    domain: 29-OPERATIONS
+    layer: 11
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 29_operations
+    sensitivity: internal
+
+  B297:
+    id: B297
+    name: Cost Optimization
+    domain: 29-OPERATIONS
+    layer: 12
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 29_operations
+    sensitivity: internal
+
+  B298:
+    id: B298
+    name: Bottleneck Analysis
+    domain: 29-OPERATIONS
+    layer: 13
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 29_operations
+    sensitivity: internal
+
+  B299:
+    id: B299
+    name: Automation Opportunities
+    domain: 29-OPERATIONS
+    layer: 14
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 29_operations
+    sensitivity: internal
+
+  B300:
+    id: B300
+    name: Continuous Improvement
+    domain: 29-OPERATIONS
+    layer: 15
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 29_operations
+    sensitivity: internal
+
+  B301:
+    id: B301
+    name: Employee Registry
+    domain: 30-HR
+    layer: 16
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 30_hr
+    sensitivity: internal
+
+  B302:
+    id: B302
+    name: Payroll System
+    domain: 30-HR
+    layer: 17
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 30_hr
+    sensitivity: internal
+
+  B303:
+    id: B303
+    name: Benefits Administration
+    domain: 30-HR
+    layer: 18
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 30_hr
+    sensitivity: internal
+
+  B304:
+    id: B304
+    name: Leave Management
+    domain: 30-HR
+    layer: 19
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 30_hr
+    sensitivity: internal
+
+  B305:
+    id: B305
+    name: Performance Reviews
+    domain: 30-HR
+    layer: 20
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 30_hr
+    sensitivity: internal
+
+  B306:
+    id: B306
+    name: Compensation Planning
+    domain: 30-HR
+    layer: 21
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 30_hr
+    sensitivity: internal
+
+  B307:
+    id: B307
+    name: Career Development
+    domain: 30-HR
+    layer: 22
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 30_hr
+    sensitivity: internal
+
+  B308:
+    id: B308
+    name: Organizational Chart
+    domain: 30-HR
+    layer: 1
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 30_hr
+    sensitivity: internal
+
+  B309:
+    id: B309
+    name: Compliance Status
+    domain: 30-HR
+    layer: 2
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 30_hr
+    sensitivity: internal
+
+  B310:
+    id: B310
+    name: Succession Planning
+    domain: 30-HR
+    layer: 3
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 30_hr
+    sensitivity: internal
+
+  B311:
+    id: B311
+    name: Contract Registry
+    domain: 31-LEGAL
+    layer: 4
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 31_legal
+    sensitivity: internal
+
+  B312:
+    id: B312
+    name: Compliance Matrix
+    domain: 31-LEGAL
+    layer: 5
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 31_legal
+    sensitivity: internal
+
+  B313:
+    id: B313
+    name: Legal Hold List
+    domain: 31-LEGAL
+    layer: 6
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 31_legal
+    sensitivity: internal
+
+  B314:
+    id: B314
+    name: Risk Assessment
+    domain: 31-LEGAL
+    layer: 7
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 31_legal
+    sensitivity: internal
+
+  B315:
+    id: B315
+    name: Regulatory Updates
+    domain: 31-LEGAL
+    layer: 8
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 31_legal
+    sensitivity: internal
+
+  B316:
+    id: B316
+    name: Negotiation Tracker
+    domain: 31-LEGAL
+    layer: 9
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 31_legal
+    sensitivity: internal
+
+  B317:
+    id: B317
+    name: Signature Status
+    domain: 31-LEGAL
+    layer: 10
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 31_legal
+    sensitivity: internal
+
+  B318:
+    id: B318
+    name: Archive Management
+    domain: 31-LEGAL
+    layer: 11
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 31_legal
+    sensitivity: internal
+
+  B319:
+    id: B319
+    name: Audit Trail
+    domain: 31-LEGAL
+    layer: 12
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 31_legal
+    sensitivity: internal
+
+  B320:
+    id: B320
+    name: Renewal Schedule
+    domain: 31-LEGAL
+    layer: 13
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 31_legal
+    sensitivity: internal
+
+  B321:
+    id: B321
+    name: Security Policies
+    domain: 32-SECURITY
+    layer: 14
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 32_security
+    sensitivity: internal
+
+  B322:
+    id: B322
+    name: Threat Register
+    domain: 32-SECURITY
+    layer: 15
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 32_security
+    sensitivity: internal
+
+  B323:
+    id: B323
+    name: Incident Log
+    domain: 32-SECURITY
+    layer: 16
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 32_security
+    sensitivity: internal
+
+  B324:
+    id: B324
+    name: Mitigation Tracking
+    domain: 32-SECURITY
+    layer: 17
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 32_security
+    sensitivity: internal
+
+  B325:
+    id: B325
+    name: Compliance Status
+    domain: 32-SECURITY
+    layer: 18
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 32_security
+    sensitivity: internal
+
+  B326:
+    id: B326
+    name: Access Control
+    domain: 32-SECURITY
+    layer: 19
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 32_security
+    sensitivity: internal
+
+  B327:
+    id: B327
+    name: Encryption Keys
+    domain: 32-SECURITY
+    layer: 20
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 32_security
+    sensitivity: internal
+
+  B328:
+    id: B328
+    name: Audit Logging
+    domain: 32-SECURITY
+    layer: 21
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 32_security
+    sensitivity: internal
+
+  B329:
+    id: B329
+    name: Penetration Testing
+    domain: 32-SECURITY
+    layer: 22
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 32_security
+    sensitivity: internal
+
+  B330:
+    id: B330
+    name: Recovery Procedures
+    domain: 32-SECURITY
+    layer: 1
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 32_security
+    sensitivity: internal
+
+  B331:
+    id: B331
+    name: Compliance Framework
+    domain: 33-COMPLIANCE
+    layer: 2
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 33_compliance
+    sensitivity: internal
+
+  B332:
+    id: B332
+    name: Audit Schedule
+    domain: 33-COMPLIANCE
+    layer: 3
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 33_compliance
+    sensitivity: internal
+
+  B333:
+    id: B333
+    name: Finding Tracker
+    domain: 33-COMPLIANCE
+    layer: 4
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 33_compliance
+    sensitivity: internal
+
+  B334:
+    id: B334
+    name: Remediation Status
+    domain: 33-COMPLIANCE
+    layer: 5
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 33_compliance
+    sensitivity: internal
+
+  B335:
+    id: B335
+    name: Control Testing
+    domain: 33-COMPLIANCE
+    layer: 6
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 33_compliance
+    sensitivity: internal
+
+  B336:
+    id: B336
+    name: Evidence Collection
+    domain: 33-COMPLIANCE
+    layer: 7
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 33_compliance
+    sensitivity: internal
+
+  B337:
+    id: B337
+    name: Report Generation
+    domain: 33-COMPLIANCE
+    layer: 8
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 33_compliance
+    sensitivity: internal
+
+  B338:
+    id: B338
+    name: Stakeholder Communication
+    domain: 33-COMPLIANCE
+    layer: 9
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 33_compliance
+    sensitivity: internal
+
+  B339:
+    id: B339
+    name: Trend Analysis
+    domain: 33-COMPLIANCE
+    layer: 10
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 33_compliance
+    sensitivity: internal
+
+  B340:
+    id: B340
+    name: Forecast
+    domain: 33-COMPLIANCE
+    layer: 11
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 33_compliance
+    sensitivity: internal
+
+  B341:
+    id: B341
+    name: Risk Register
+    domain: 34-RISK
+    layer: 12
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 34_risk
+    sensitivity: internal
+
+  B342:
+    id: B342
+    name: Mitigation Tracking
+    domain: 34-RISK
+    layer: 13
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 34_risk
+    sensitivity: internal
+
+  B343:
+    id: B343
+    name: Insurance Policies
+    domain: 34-RISK
+    layer: 14
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 34_risk
+    sensitivity: internal
+
+  B344:
+    id: B344
+    name: Impact Assessment
+    domain: 34-RISK
+    layer: 15
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 34_risk
+    sensitivity: internal
+
+  B345:
+    id: B345
+    name: Residual Risk
+    domain: 34-RISK
+    layer: 16
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 34_risk
+    sensitivity: internal
+
+  B346:
+    id: B346
+    name: Control Effectiveness
+    domain: 34-RISK
+    layer: 17
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 34_risk
+    sensitivity: internal
+
+  B347:
+    id: B347
+    name: Scenario Analysis
+    domain: 34-RISK
+    layer: 18
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 34_risk
+    sensitivity: internal
+
+  B348:
+    id: B348
+    name: Business Continuity
+    domain: 34-RISK
+    layer: 19
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 34_risk
+    sensitivity: internal
+
+  B349:
+    id: B349
+    name: Recovery Planning
+    domain: 34-RISK
+    layer: 20
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 34_risk
+    sensitivity: internal
+
+  B350:
+    id: B350
+    name: Monitoring
+    domain: 34-RISK
+    layer: 21
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 34_risk
+    sensitivity: internal
+
+  B351:
+    id: B351
+    name: Asset Register
+    domain: 35-ASSETS
+    layer: 22
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 35_assets
+    sensitivity: internal
+
+  B352:
+    id: B352
+    name: Depreciation Schedule
+    domain: 35-ASSETS
+    layer: 1
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 35_assets
+    sensitivity: internal
+
+  B353:
+    id: B353
+    name: Maintenance Log
+    domain: 35-ASSETS
+    layer: 2
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 35_assets
+    sensitivity: internal
+
+  B354:
+    id: B354
+    name: Insurance Coverage
+    domain: 35-ASSETS
+    layer: 3
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 35_assets
+    sensitivity: internal
+
+  B355:
+    id: B355
+    name: Disposal Tracking
+    domain: 35-ASSETS
+    layer: 4
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 35_assets
+    sensitivity: internal
+
+  B356:
+    id: B356
+    name: Inventory Reconciliation
+    domain: 35-ASSETS
+    layer: 5
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 35_assets
+    sensitivity: internal
+
+  B357:
+    id: B357
+    name: Location Tracking
+    domain: 35-ASSETS
+    layer: 6
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 35_assets
+    sensitivity: internal
+
+  B358:
+    id: B358
+    name: Compliance Status
+    domain: 35-ASSETS
+    layer: 7
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 35_assets
+    sensitivity: internal
+
+  B359:
+    id: B359
+    name: Upgrade Planning
+    domain: 35-ASSETS
+    layer: 8
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 35_assets
+    sensitivity: internal
+
+  B360:
+    id: B360
+    name: Lifecycle Management
+    domain: 35-ASSETS
+    layer: 9
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 35_assets
+    sensitivity: internal
+
+  B361:
+    id: B361
+    name: Partner Registry
+    domain: 36-PARTNERS
+    layer: 10
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 36_partners
+    sensitivity: internal
+
+  B362:
+    id: B362
+    name: Integration Points
+    domain: 36-PARTNERS
+    layer: 11
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 36_partners
+    sensitivity: internal
+
+  B363:
+    id: B363
+    name: SLA Tracking
+    domain: 36-PARTNERS
+    layer: 12
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 36_partners
+    sensitivity: internal
+
+  B364:
+    id: B364
+    name: Performance Metrics
+    domain: 36-PARTNERS
+    layer: 13
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 36_partners
+    sensitivity: internal
+
+  B365:
+    id: B365
+    name: Contract Management
+    domain: 36-PARTNERS
+    layer: 14
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 36_partners
+    sensitivity: internal
+
+  B366:
+    id: B366
+    name: Revenue Sharing
+    domain: 36-PARTNERS
+    layer: 15
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 36_partners
+    sensitivity: internal
+
+  B367:
+    id: B367
+    name: Escalation Procedures
+    domain: 36-PARTNERS
+    layer: 16
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 36_partners
+    sensitivity: internal
+
+  B368:
+    id: B368
+    name: Communication Plan
+    domain: 36-PARTNERS
+    layer: 17
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 36_partners
+    sensitivity: internal
+
+  B369:
+    id: B369
+    name: Review Schedule
+    domain: 36-PARTNERS
+    layer: 18
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 36_partners
+    sensitivity: internal
+
+  B370:
+    id: B370
+    name: Termination Protocol
+    domain: 36-PARTNERS
+    layer: 19
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 36_partners
+    sensitivity: internal
+
+  B371:
+    id: B371
+    name: Research Library
+    domain: 37-RESEARCH
+    layer: 20
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 37_research
+    sensitivity: internal
+
+  B372:
+    id: B372
+    name: Market Analysis
+    domain: 37-RESEARCH
+    layer: 21
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 37_research
+    sensitivity: internal
+
+  B373:
+    id: B373
+    name: Competitive Intelligence
+    domain: 37-RESEARCH
+    layer: 22
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 37_research
+    sensitivity: internal
+
+  B374:
+    id: B374
+    name: Trend Tracking
+    domain: 37-RESEARCH
+    layer: 1
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 37_research
+    sensitivity: internal
+
+  B375:
+    id: B375
+    name: Opportunity Pipeline
+    domain: 37-RESEARCH
+    layer: 2
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 37_research
+    sensitivity: internal
+
+  B376:
+    id: B376
+    name: Research Schedule
+    domain: 37-RESEARCH
+    layer: 3
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 37_research
+    sensitivity: internal
+
+  B377:
+    id: B377
+    name: Methodology Documentation
+    domain: 37-RESEARCH
+    layer: 4
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 37_research
+    sensitivity: internal
+
+  B378:
+    id: B378
+    name: Findings Archive
+    domain: 37-RESEARCH
+    layer: 5
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 37_research
+    sensitivity: internal
+
+  B379:
+    id: B379
+    name: Recommendation Tracking
+    domain: 37-RESEARCH
+    layer: 6
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 37_research
+    sensitivity: internal
+
+  B380:
+    id: B380
+    name: Update Frequency
+    domain: 37-RESEARCH
+    layer: 7
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 37_research
+    sensitivity: internal
+
+  B381:
+    id: B381
+    name: Opportunity Registry
+    domain: 38-OPPORTUNITIES
+    layer: 8
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 38_opportunities
+    sensitivity: internal
+
+  B382:
+    id: B382
+    name: Analysis Framework
+    domain: 38-OPPORTUNITIES
+    layer: 9
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 38_opportunities
+    sensitivity: internal
+
+  B383:
+    id: B383
+    name: Feasibility Assessment
+    domain: 38-OPPORTUNITIES
+    layer: 10
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 38_opportunities
+    sensitivity: internal
+
+  B384:
+    id: B384
+    name: Resource Estimation
+    domain: 38-OPPORTUNITIES
+    layer: 11
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 38_opportunities
+    sensitivity: internal
+
+  B385:
+    id: B385
+    name: Priority Scoring
+    domain: 38-OPPORTUNITIES
+    layer: 12
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 38_opportunities
+    sensitivity: internal
+
+  B386:
+    id: B386
+    name: Go/No-Go Criteria
+    domain: 38-OPPORTUNITIES
+    layer: 13
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 38_opportunities
+    sensitivity: internal
+
+  B387:
+    id: B387
+    name: Implementation Plan
+    domain: 38-OPPORTUNITIES
+    layer: 14
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 38_opportunities
+    sensitivity: internal
+
+  B388:
+    id: B388
+    name: Success Metrics
+    domain: 38-OPPORTUNITIES
+    layer: 15
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 38_opportunities
+    sensitivity: internal
+
+  B389:
+    id: B389
+    name: Post-Launch Review
+    domain: 38-OPPORTUNITIES
+    layer: 16
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 38_opportunities
+    sensitivity: internal
+
+  B390:
+    id: B390
+    name: Learning Extraction
+    domain: 38-OPPORTUNITIES
+    layer: 17
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 38_opportunities
+    sensitivity: internal
+
+  B391:
+    id: B391
+    name: Experiment Registry
+    domain: 39-EXPERIMENTS
+    layer: 18
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 39_experiments
+    sensitivity: internal
+
+  B392:
+    id: B392
+    name: Test Design
+    domain: 39-EXPERIMENTS
+    layer: 19
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 39_experiments
+    sensitivity: internal
+
+  B393:
+    id: B393
+    name: Hypothesis Tracking
+    domain: 39-EXPERIMENTS
+    layer: 20
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 39_experiments
+    sensitivity: internal
+
+  B394:
+    id: B394
+    name: Result Analysis
+    domain: 39-EXPERIMENTS
+    layer: 21
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 39_experiments
+    sensitivity: internal
+
+  B395:
+    id: B395
+    name: Statistical Significance
+    domain: 39-EXPERIMENTS
+    layer: 22
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 39_experiments
+    sensitivity: internal
+
+  B396:
+    id: B396
+    name: Learning Extraction
+    domain: 39-EXPERIMENTS
+    layer: 1
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 39_experiments
+    sensitivity: internal
+
+  B397:
+    id: B397
+    name: Rollout Planning
+    domain: 39-EXPERIMENTS
+    layer: 2
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 39_experiments
+    sensitivity: internal
+
+  B398:
+    id: B398
+    name: Failure Analysis
+    domain: 39-EXPERIMENTS
+    layer: 3
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 39_experiments
+    sensitivity: internal
+
+  B399:
+    id: B399
+    name: Archive Management
+    domain: 39-EXPERIMENTS
+    layer: 4
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 39_experiments
+    sensitivity: internal
+
+  B400:
+    id: B400
+    name: Pattern Recognition
+    domain: 39-EXPERIMENTS
+    layer: 5
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 39_experiments
+    sensitivity: internal
+
+  B401:
+    id: B401
+    name: Metrics Registry
+    domain: 40-METRICS
+    layer: 6
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 40_metrics
+    sensitivity: internal
+
+  B402:
+    id: B402
+    name: KPI Definition
+    domain: 40-METRICS
+    layer: 7
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 40_metrics
+    sensitivity: internal
+
+  B403:
+    id: B403
+    name: Dashboard Configuration
+    domain: 40-METRICS
+    layer: 8
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 40_metrics
+    sensitivity: internal
+
+  B404:
+    id: B404
+    name: Collection Method
+    domain: 40-METRICS
+    layer: 9
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 40_metrics
+    sensitivity: internal
+
+  B405:
+    id: B405
+    name: Data Freshness
+    domain: 40-METRICS
+    layer: 10
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 40_metrics
+    sensitivity: internal
+
+  B406:
+    id: B406
+    name: Alerting Rules
+    domain: 40-METRICS
+    layer: 11
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 40_metrics
+    sensitivity: internal
+
+  B407:
+    id: B407
+    name: Historical Tracking
+    domain: 40-METRICS
+    layer: 12
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 40_metrics
+    sensitivity: internal
+
+  B408:
+    id: B408
+    name: Trend Analysis
+    domain: 40-METRICS
+    layer: 13
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 40_metrics
+    sensitivity: internal
+
+  B409:
+    id: B409
+    name: Forecast Model
+    domain: 40-METRICS
+    layer: 14
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 40_metrics
+    sensitivity: internal
+
+  B410:
+    id: B410
+    name: Reporting
+    domain: 40-METRICS
+    layer: 15
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 40_metrics
+    sensitivity: internal
+
+  B411:
+    id: B411
+    name: Monitoring Stack
+    domain: 41-OBSERVABILITY
+    layer: 16
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 41_observability
+    sensitivity: internal
+
+  B412:
+    id: B412
+    name: Alert Rules
+    domain: 41-OBSERVABILITY
+    layer: 17
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 41_observability
+    sensitivity: internal
+
+  B413:
+    id: B413
+    name: Metric Collection
+    domain: 41-OBSERVABILITY
+    layer: 18
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 41_observability
+    sensitivity: internal
+
+  B414:
+    id: B414
+    name: Log Aggregation
+    domain: 41-OBSERVABILITY
+    layer: 19
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 41_observability
+    sensitivity: internal
+
+  B415:
+    id: B415
+    name: Trace Management
+    domain: 41-OBSERVABILITY
+    layer: 20
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 41_observability
+    sensitivity: internal
+
+  B416:
+    id: B416
+    name: Incident Detection
+    domain: 41-OBSERVABILITY
+    layer: 21
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 41_observability
+    sensitivity: internal
+
+  B417:
+    id: B417
+    name: Escalation Automation
+    domain: 41-OBSERVABILITY
+    layer: 22
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 41_observability
+    sensitivity: internal
+
+  B418:
+    id: B418
+    name: Dashboard Library
+    domain: 41-OBSERVABILITY
+    layer: 1
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 41_observability
+    sensitivity: internal
+
+  B419:
+    id: B419
+    name: Trend Analysis
+    domain: 41-OBSERVABILITY
+    layer: 2
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 41_observability
+    sensitivity: internal
+
+  B420:
+    id: B420
+    name: Health Scoring
+    domain: 41-OBSERVABILITY
+    layer: 3
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 41_observability
+    sensitivity: internal
+
+  B421:
+    id: B421
+    name: Evaluation Framework
+    domain: 42-EVALUATION
+    layer: 4
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 42_evaluation
+    sensitivity: internal
+
+  B422:
+    id: B422
+    name: Rubric Library
+    domain: 42-EVALUATION
+    layer: 5
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 42_evaluation
+    sensitivity: internal
+
+  B423:
+    id: B423
+    name: Assessment Methodology
+    domain: 42-EVALUATION
+    layer: 6
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 42_evaluation
+    sensitivity: internal
+
+  B424:
+    id: B424
+    name: Quality Standards
+    domain: 42-EVALUATION
+    layer: 7
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 42_evaluation
+    sensitivity: internal
+
+  B425:
+    id: B425
+    name: Score Tracking
+    domain: 42-EVALUATION
+    layer: 8
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 42_evaluation
+    sensitivity: internal
+
+  B426:
+    id: B426
+    name: Peer Review Process
+    domain: 42-EVALUATION
+    layer: 9
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 42_evaluation
+    sensitivity: internal
+
+  B427:
+    id: B427
+    name: Feedback Integration
+    domain: 42-EVALUATION
+    layer: 10
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 42_evaluation
+    sensitivity: internal
+
+  B428:
+    id: B428
+    name: Improvement Planning
+    domain: 42-EVALUATION
+    layer: 11
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 42_evaluation
+    sensitivity: internal
+
+  B429:
+    id: B429
+    name: Archive Management
+    domain: 42-EVALUATION
+    layer: 12
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 42_evaluation
+    sensitivity: internal
+
+  B430:
+    id: B430
+    name: Trend Analysis
+    domain: 42-EVALUATION
+    layer: 13
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 42_evaluation
+    sensitivity: internal
+
+  B431:
+    id: B431
+    name: Outcome Registry
+    domain: 43-OUTCOMES
+    layer: 14
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 43_outcomes
+    sensitivity: internal
+
+  B432:
+    id: B432
+    name: Impact Measurement
+    domain: 43-OUTCOMES
+    layer: 15
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 43_outcomes
+    sensitivity: internal
+
+  B433:
+    id: B433
+    name: Success Criteria
+    domain: 43-OUTCOMES
+    layer: 16
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 43_outcomes
+    sensitivity: internal
+
+  B434:
+    id: B434
+    name: Result Analysis
+    domain: 43-OUTCOMES
+    layer: 17
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 43_outcomes
+    sensitivity: internal
+
+  B435:
+    id: B435
+    name: Learning Extraction
+    domain: 43-OUTCOMES
+    layer: 18
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 43_outcomes
+    sensitivity: internal
+
+  B436:
+    id: B436
+    name: Stakeholder Communication
+    domain: 43-OUTCOMES
+    layer: 19
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 43_outcomes
+    sensitivity: internal
+
+  B437:
+    id: B437
+    name: Historical Tracking
+    domain: 43-OUTCOMES
+    layer: 20
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 43_outcomes
+    sensitivity: internal
+
+  B438:
+    id: B438
+    name: Pattern Recognition
+    domain: 43-OUTCOMES
+    layer: 21
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 43_outcomes
+    sensitivity: internal
+
+  B439:
+    id: B439
+    name: Prediction Model
+    domain: 43-OUTCOMES
+    layer: 22
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 43_outcomes
+    sensitivity: internal
+
+  B440:
+    id: B440
+    name: Archive Strategy
+    domain: 43-OUTCOMES
+    layer: 1
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 43_outcomes
+    sensitivity: internal
+
+  B441:
+    id: B441
+    name: Learning Framework
+    domain: 44-LEARNING
+    layer: 2
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 44_learning
+    sensitivity: internal
+
+  B442:
+    id: B442
+    name: Feedback System
+    domain: 44-LEARNING
+    layer: 3
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 44_learning
+    sensitivity: internal
+
+  B443:
+    id: B443
+    name: Knowledge Extraction
+    domain: 44-LEARNING
+    layer: 4
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 44_learning
+    sensitivity: internal
+
+  B444:
+    id: B444
+    name: Training Delivery
+    domain: 44-LEARNING
+    layer: 5
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 44_learning
+    sensitivity: internal
+
+  B445:
+    id: B445
+    name: Assessment Method
+    domain: 44-LEARNING
+    layer: 6
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 44_learning
+    sensitivity: internal
+
+  B446:
+    id: B446
+    name: Competency Tracking
+    domain: 44-LEARNING
+    layer: 7
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 44_learning
+    sensitivity: internal
+
+  B447:
+    id: B447
+    name: Career Path
+    domain: 44-LEARNING
+    layer: 8
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 44_learning
+    sensitivity: internal
+
+  B448:
+    id: B448
+    name: Knowledge Sharing
+    domain: 44-LEARNING
+    layer: 9
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 44_learning
+    sensitivity: internal
+
+  B449:
+    id: B449
+    name: Continuous Improvement
+    domain: 44-LEARNING
+    layer: 10
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 44_learning
+    sensitivity: internal
+
+  B450:
+    id: B450
+    name: Evolution Planning
+    domain: 44-LEARNING
+    layer: 11
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 44_learning
+    sensitivity: internal
+
+  B451:
+    id: B451
+    name: Evolution Roadmap
+    domain: 45-EVOLUTION
+    layer: 12
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 45_evolution
+    sensitivity: internal
+
+  B452:
+    id: B452
+    name: Improvement Backlog
+    domain: 45-EVOLUTION
+    layer: 13
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 45_evolution
+    sensitivity: internal
+
+  B453:
+    id: B453
+    name: Change Management
+    domain: 45-EVOLUTION
+    layer: 14
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 45_evolution
+    sensitivity: internal
+
+  B454:
+    id: B454
+    name: Impact Analysis
+    domain: 45-EVOLUTION
+    layer: 15
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 45_evolution
+    sensitivity: internal
+
+  B455:
+    id: B455
+    name: Testing Strategy
+    domain: 45-EVOLUTION
+    layer: 16
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 45_evolution
+    sensitivity: internal
+
+  B456:
+    id: B456
+    name: Rollout Plan
+    domain: 45-EVOLUTION
+    layer: 17
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 45_evolution
+    sensitivity: internal
+
+  B457:
+    id: B457
+    name: Communication Schedule
+    domain: 45-EVOLUTION
+    layer: 18
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 45_evolution
+    sensitivity: internal
+
+  B458:
+    id: B458
+    name: Success Metrics
+    domain: 45-EVOLUTION
+    layer: 19
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 45_evolution
+    sensitivity: internal
+
+  B459:
+    id: B459
+    name: Retrospective
+    domain: 45-EVOLUTION
+    layer: 20
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 45_evolution
+    sensitivity: internal
+
+  B460:
+    id: B460
+    name: Archive Management
+    domain: 45-EVOLUTION
+    layer: 21
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 45_evolution
+    sensitivity: internal
+
+  B461:
+    id: B461
+    name: Governance Framework
+    domain: 46-GOVERNANCE
+    layer: 22
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 46_governance
+    sensitivity: internal
+
+  B462:
+    id: B462
+    name: Strategic Planning
+    domain: 46-GOVERNANCE
+    layer: 1
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 46_governance
+    sensitivity: internal
+
+  B463:
+    id: B463
+    name: Stakeholder Management
+    domain: 46-GOVERNANCE
+    layer: 2
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 46_governance
+    sensitivity: internal
+
+  B464:
+    id: B464
+    name: Communication Plan
+    domain: 46-GOVERNANCE
+    layer: 3
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 46_governance
+    sensitivity: internal
+
+  B465:
+    id: B465
+    name: Decision Authority
+    domain: 46-GOVERNANCE
+    layer: 4
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 46_governance
+    sensitivity: internal
+
+  B466:
+    id: B466
+    name: Escalation Paths
+    domain: 46-GOVERNANCE
+    layer: 5
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 46_governance
+    sensitivity: internal
+
+  B467:
+    id: B467
+    name: Performance Tracking
+    domain: 46-GOVERNANCE
+    layer: 6
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 46_governance
+    sensitivity: internal
+
+  B468:
+    id: B468
+    name: Risk Assessment
+    domain: 46-GOVERNANCE
+    layer: 7
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 46_governance
+    sensitivity: internal
+
+  B469:
+    id: B469
+    name: Compliance Status
+    domain: 46-GOVERNANCE
+    layer: 8
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 46_governance
+    sensitivity: internal
+
+  B470:
+    id: B470
+    name: Evolution Timeline
+    domain: 46-GOVERNANCE
+    layer: 9
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 46_governance
+    sensitivity: internal
+
+  B471:
+    id: B471
+    name: Document Registry
+    domain: 47-DOCUMENTS
+    layer: 10
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 47_documents
+    sensitivity: internal
+
+  B472:
+    id: B472
+    name: Version Control
+    domain: 47-DOCUMENTS
+    layer: 11
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 47_documents
+    sensitivity: internal
+
+  B473:
+    id: B473
+    name: Archive Location
+    domain: 47-DOCUMENTS
+    layer: 12
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 47_documents
+    sensitivity: internal
+
+  B474:
+    id: B474
+    name: Retention Schedule
+    domain: 47-DOCUMENTS
+    layer: 13
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 47_documents
+    sensitivity: internal
+
+  B475:
+    id: B475
+    name: Access Control
+    domain: 47-DOCUMENTS
+    layer: 14
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 47_documents
+    sensitivity: internal
+
+  B476:
+    id: B476
+    name: Compliance Tagging
+    domain: 47-DOCUMENTS
+    layer: 15
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 47_documents
+    sensitivity: internal
+
+  B477:
+    id: B477
+    name: Search Index
+    domain: 47-DOCUMENTS
+    layer: 16
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 47_documents
+    sensitivity: internal
+
+  B478:
+    id: B478
+    name: Format Preservation
+    domain: 47-DOCUMENTS
+    layer: 17
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 47_documents
+    sensitivity: internal
+
+  B479:
+    id: B479
+    name: Migration Planning
+    domain: 47-DOCUMENTS
+    layer: 18
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 47_documents
+    sensitivity: internal
+
+  B480:
+    id: B480
+    name: Retrieval Process
+    domain: 47-DOCUMENTS
+    layer: 19
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 47_documents
+    sensitivity: internal
+
+  B481:
+    id: B481
+    name: Automation Registry
+    domain: 48-AUTOMATION
+    layer: 20
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 48_automation
+    sensitivity: internal
+
+  B482:
+    id: B482
+    name: Bot Configuration
+    domain: 48-AUTOMATION
+    layer: 21
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 48_automation
+    sensitivity: internal
+
+  B483:
+    id: B483
+    name: Workflow Design
+    domain: 48-AUTOMATION
+    layer: 22
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 48_automation
+    sensitivity: internal
+
+  B484:
+    id: B484
+    name: Trigger Rules
+    domain: 48-AUTOMATION
+    layer: 1
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 48_automation
+    sensitivity: internal
+
+  B485:
+    id: B485
+    name: Error Handling
+    domain: 48-AUTOMATION
+    layer: 2
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 48_automation
+    sensitivity: internal
+
+  B486:
+    id: B486
+    name: Performance Monitoring
+    domain: 48-AUTOMATION
+    layer: 3
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 48_automation
+    sensitivity: internal
+
+  B487:
+    id: B487
+    name: Usage Analytics
+    domain: 48-AUTOMATION
+    layer: 4
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 48_automation
+    sensitivity: internal
+
+  B488:
+    id: B488
+    name: Cost Optimization
+    domain: 48-AUTOMATION
+    layer: 5
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 48_automation
+    sensitivity: internal
+
+  B489:
+    id: B489
+    name: Maintenance Schedule
+    domain: 48-AUTOMATION
+    layer: 6
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 48_automation
+    sensitivity: internal
+
+  B490:
+    id: B490
+    name: Decommissioning
+    domain: 48-AUTOMATION
+    layer: 7
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 48_automation
+    sensitivity: internal
+
+  B491:
+    id: B491
+    name: Architecture Design
+    domain: 49-SYSTEM
+    layer: 8
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 49_system
+    sensitivity: internal
+
+  B492:
+    id: B492
+    name: Component Registry
+    domain: 49-SYSTEM
+    layer: 9
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 49_system
+    sensitivity: internal
+
+  B493:
+    id: B493
+    name: Integration Map
+    domain: 49-SYSTEM
+    layer: 10
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 49_system
+    sensitivity: internal
+
+  B494:
+    id: B494
+    name: Performance Specifications
+    domain: 49-SYSTEM
+    layer: 11
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 49_system
+    sensitivity: internal
+
+  B495:
+    id: B495
+    name: Scaling Strategy
+    domain: 49-SYSTEM
+    layer: 12
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 49_system
+    sensitivity: internal
+
+  B496:
+    id: B496
+    name: Disaster Recovery
+    domain: 49-SYSTEM
+    layer: 13
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 49_system
+    sensitivity: internal
+
+  B497:
+    id: B497
+    name: Capacity Planning
+    domain: 49-SYSTEM
+    layer: 14
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 49_system
+    sensitivity: internal
+
+  B498:
+    id: B498
+    name: Technology Roadmap
+    domain: 49-SYSTEM
+    layer: 15
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 49_system
+    sensitivity: internal
+
+  B499:
+    id: B499
+    name: Technical Debt
+    domain: 49-SYSTEM
+    layer: 16
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 49_system
+    sensitivity: internal
+
+  B500:
+    id: B500
+    name: Risk Assessment
+    domain: 49-SYSTEM
+    layer: 17
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 49_system
+    sensitivity: internal
+
+  B501:
+    id: B501
+    name: Control Tower
+    domain: 50-MASTER-CONTROL
+    layer: 18
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 50_master_control
+    sensitivity: internal
+
+  B502:
+    id: B502
+    name: System Status
+    domain: 50-MASTER-CONTROL
+    layer: 19
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 50_master_control
+    sensitivity: internal
+
+  B503:
+    id: B503
+    name: Decision Authority
+    domain: 50-MASTER-CONTROL
+    layer: 20
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 50_master_control
+    sensitivity: internal
+
+  B504:
+    id: B504
+    name: Executive Dashboard
+    domain: 50-MASTER-CONTROL
+    layer: 21
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 50_master_control
+    sensitivity: internal
+
+  B505:
+    id: B505
+    name: Strategic Metrics
+    domain: 50-MASTER-CONTROL
+    layer: 22
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 50_master_control
+    sensitivity: internal
+
+  B506:
+    id: B506
+    name: Risk Posture
+    domain: 50-MASTER-CONTROL
+    layer: 1
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 50_master_control
+    sensitivity: internal
+
+  B507:
+    id: B507
+    name: Resource Allocation
+    domain: 50-MASTER-CONTROL
+    layer: 2
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 50_master_control
+    sensitivity: internal
+
+  B508:
+    id: B508
+    name: Incident Command
+    domain: 50-MASTER-CONTROL
+    layer: 3
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 50_master_control
+    sensitivity: internal
+
+  B509:
+    id: B509
+    name: Audit Authority
+    domain: 50-MASTER-CONTROL
+    layer: 4
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 50_master_control
+    sensitivity: internal
+
+  B510:
+    id: B510
+    name: Future Planning
+    domain: 50-MASTER-CONTROL
+    layer: 5
+    type: Control
+    owner: Operation
+    status: ACTIVE
+    source_of_truth: 50_master_control
+    sensitivity: internal
