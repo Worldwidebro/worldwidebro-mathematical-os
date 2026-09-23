@@ -1,0 +1,233 @@
+---
+# META-GRAPH.yaml
+# Layer 22: Meta-Architecture & System Self-Description
+# Authority: CP-001 (Sovereign Operator)
+# Generated: 2026-09-25
+# Purpose: The system describes itself; meta-level rules and architecture constraints
+#
+# Graph-of-Graphs Wiring (Complete 22-Layer Cycle):
+# [[AUTHORITY-GRAPH]] → [[STATE-GRAPH]] → [[LIFECYCLE-GRAPH]] → [[EVENT-GRAPH]] → [[EVIDENCE-GRAPH]] → [[DECISION-GRAPH]] → [[RESOURCE-GRAPH]] → [[CONSTRAINT-GRAPH]] → [[DEPENDENCY-GRAPH]] → [[LEARNING-GRAPH]] → [[INTENT-GRAPH]] → [[POLICY-GRAPH]] → [[SEMANTIC-GRAPH]] → [[META-GRAPH]] ↻ back to [[AUTHORITY-GRAPH]]
+#
+# See also:
+#   - [[SEMANTIC-GRAPH]]: Defines the vocabulary used in this layer
+#   - This file: MASTER specification of the entire graph-of-graphs architecture
+
+meta_graph:
+
+  description: |
+    The Meta-Graph is the system describing itself.
+
+    It answers: "What is this graph system? How does it work? What are the invariants?"
+
+    By describing itself, the Meta-Graph enables:
+    - Validation: "Does this graph follow its own rules?"
+    - Evolution: "How do we change the system while maintaining coherence?"
+    - Debugging: "When something breaks, what layer is responsible?"
+    - Trust: "Is this system trustworthy? Does it deliver what it claims?"
+
+  core_architecture:
+
+    description: |
+      The Graph-of-Graphs is a 22-layer operational intelligence system.
+
+      Each layer models a different dimension of organizational reality:
+      - Layers 1-5: Foundation (Authority, State, Lifecycle, Event, Evidence)
+      - Layers 6-11: Execution (Decision, Resource, Constraint, Dependency, Learning, Policy)
+      - Layers 12-22: Refinement (Semantic, Meta, plus specializations)
+
+      Layers are ordered, bidirectional, and constraint-aware.
+
+    layer_specification:
+      - id: 1
+        name: "[[AUTHORITY-GRAPH]]"
+        purpose: "Who/what can act, on what, under what conditions"
+        entities: "[AUTHORITY, ROLE, PERMISSION, APPROVAL_CHAIN, DELEGATION]"
+        key_invariant: "All state changes require [[AUTHORITY-*]]"
+
+      - id: 2
+        name: "[[STATE-GRAPH]]"
+        purpose: "Current condition of all entities"
+        entities: "[STATE, STATE_MACHINE, STATE_TRANSITION]"
+        key_invariant: "Every entity has exactly one [[HAS_STATE]] at any moment"
+
+      - id: 3
+        name: "[[LIFECYCLE-GRAPH]]"
+        purpose: "Entity progression through stages with milestones"
+        entities: "[LIFECYCLE, STAGE, MILESTONE, GATE]"
+        key_invariant: "Duration budgets are hard constraints; exceeding triggers escalation"
+
+      - id: 4
+        name: "[[EVENT-GRAPH]]"
+        purpose: "Complete immutable audit trail"
+        entities: "[EVENT, EVENT_STREAM, EVENT_TYPE]"
+        key_invariant: "Events are append-only, never modified or deleted"
+
+      - id: 5
+        name: "[[EVIDENCE-GRAPH]]"
+        purpose: "Track how we know what we claim (operationalize ANTIGRAVITY Rule 31)"
+        entities: "[CLAIM, EVIDENCE, VERIFICATION, CONTRADICTION]"
+        key_invariant: "No [[CLAIM-*]] can be VERIFIED without [[EVIDENCE-*]]"
+
+      - id: 6
+        name: "[[DECISION-GRAPH]]"
+        purpose: "Every decision: options, criteria, outcomes, learning"
+        entities: "[DECISION, DECISION_OPTION, DECISION_CRITERIA, DECISION_MATRIX]"
+        key_invariant: "8-step workflow: Propose → Research → Build Matrix → Recommend → Approve → Execute → Measure → Learn"
+
+      - id: 7
+        name: "[[RESOURCE-GRAPH]]"
+        purpose: "What resources exist, who owns them, how allocated"
+        entities: "[RESOURCE, RESOURCE_ALLOCATION, RESOURCE_TYPE]"
+        key_invariant: "Total allocated cannot exceed total quantity"
+
+      - id: 8
+        name: "[[CONSTRAINT-GRAPH]]"
+        purpose: "What limits entities can act within"
+        entities: "[CONSTRAINT, CONSTRAINT_TYPE, CONSTRAINT_VIOLATION]"
+        key_invariant: "No [[DECISION-*]] can violate active [[CONSTRAINT-*]]"
+
+      - id: 9
+        name: "[[DEPENDENCY-GRAPH]]"
+        purpose: "What depends on what; identify bottlenecks and single points of failure"
+        entities: "[DEPENDENCY, CRITICAL_PATH, BOTTLENECK, SINGLE_POINT_OF_FAILURE]"
+        key_invariant: "Every [[VENTURE-*]] must identify its [[CRITICAL_PATH-*]]"
+
+      - id: 10
+        name: "[[LEARNING-GRAPH]]"
+        purpose: "Capture how outcomes inform future decisions; close the feedback loop"
+        entities: "[EXPERIMENT, OUTCOME, RESULT, LESSON, KNOWLEDGE]"
+        key_invariant: "Single-loop, double-loop, and triple-loop learning enabled"
+
+      - id: 11
+        name: "[[POLICY-GRAPH]]"
+        purpose: "Rules and policies that govern organizational behavior"
+        entities: "[POLICY, POLICY_CATEGORY, WORKFLOW]"
+        key_invariant: "All [[POLICY-*]] must have rationale, enforcement, owner"
+
+      - id: 12
+        name: "[[INTENT-GRAPH]]"
+        purpose: "Intention hierarchy from vision through tactical execution"
+        entities: "[INTENT, VISION, STRATEGY, GOAL, OBJECTIVE, PROJECT, WORKFLOW, TASK, ACTION]"
+        key_invariant: "Actions must trace back through decomposition hierarchy to intent"
+
+      - id: 13-21
+        name: "Specialization Layers"
+        purpose: "Domain-specific extensions (e.g., WORKFLOW-GRAPH, RISK-GRAPH, CAPABILITY-GRAPH)"
+        note: "Built on foundation of Layers 1-12; inherit all constraints"
+
+      - id: 22
+        name: "[[META-GRAPH]]"
+        purpose: "System self-description and meta-level validation"
+        entities: "[LAYER, INVARIANT, CONSTRAINT, RELATIONSHIP_TYPE]"
+        key_invariant: "System must describe itself accurately"
+
+  graph_properties:
+
+    bidirectionality:
+      description: "Every forward relationship has an inverse"
+      example: "[[DECISION]] [[REQUIRES]] [[EVIDENCE]] ↔ [[EVIDENCE]] [[SUPPORTS]] [[DECISION]]"
+      invariant: "Inverse relationships must be consistent; if A→B, then B inverse→A"
+
+    constraint_satisfaction:
+      description: "Every query respects all applicable constraints"
+      example: "Cannot allocate resources that violate [[CONSTRAINT-*]]"
+      invariant: "Constraint checker runs before every state change"
+
+    audit_trail:
+      description: "Complete trace from decision to execution to outcome"
+      example: "[[DECISION-*]] → [[EVENT-DecisionApproved]] → [[EVENT-ExecutionStarted]] → [[OUTCOME-*]] → [[LEARNING-*]]"
+      invariant: "No gap in audit trail; every action recorded"
+
+    lineage_tracking:
+      description: "Every entity knows its origin and dependencies"
+      example: "[[VENTURE-LT005]] ← created by [[DECISION-StartLT005]] ← motivated by [[STRATEGY-Venture-Scaling]]"
+
+  validation_protocol:
+
+    layer_consistency:
+      - "Does Layer N use only entities and relationships defined in Layers 1 to N?"
+      - "Do all constraints in Layer N-1 still hold in Layer N?"
+
+    semantic_coherence:
+      - "Does every [[CLAIM-*]] have supporting [[EVIDENCE-*]]?"
+      - "Do [[POLICY-*]] align with [[STRATEGY-*]]?"
+      - "Do [[WORKFLOW-*]] implement [[POLICY-*]]?"
+
+    operational_readiness:
+      - "Are all critical [[RESOURCE-*]] allocated?"
+      - "Are all [[CONSTRAINT-*]] understood and monitored?"
+      - "Do we know the [[CRITICAL_PATH-*]] for each [[VENTURE-*]]?"
+
+  graph_failure_modes:
+
+    circular_dependencies:
+      risk: "A depends on B, B depends on C, C depends on A → deadlock"
+      mitigation: "[[DEPENDENCY-GRAPH]] validates no cycles in critical paths"
+
+    constraint_conflicts:
+      risk: "Two [[CONSTRAINT-*]] that cannot simultaneously be satisfied"
+      mitigation: "Conflicting constraints escalated to [[AUTHORITY-Founder]]"
+
+    decision_debt:
+      risk: "Decisions made but not recorded; organizational memory loss"
+      mitigation: "[[EVENT-GRAPH]] immutability + [[DECISION-GRAPH]] requirement"
+
+    evidence_loss:
+      risk: "Original [[EVIDENCE-*]] deleted or corrupted; [[CLAIM-*]] becomes unverifiable"
+      mitigation: "[[EVENT-GRAPH]] stores complete decision lineage; [[EVIDENCE-GRAPH]] tracks provenance"
+
+  graph_success_criteria:
+
+    completeness: "Every entity and decision is in the graph"
+    accuracy: "The graph reflects current reality; no stale or incorrect data"
+    coherence: "All constraints satisfied; no conflicts or ambiguities"
+    actionability: "An agent can read the graph and know what to do next"
+    learnability: "The graph captures learnings and feeds them back to future decisions"
+
+  usage_protocol:
+
+    querying:
+      - "Start with a question"
+      - "Identify which layer(s) answer that question"
+      - "Traverse relationships forward and backward"
+      - "Verify all constraints at each step"
+      - "Return a decision-ready answer"
+
+    updating:
+      - "Propose a change (new entity, relationship, or constraint)"
+      - "Verify it doesn't violate [[CONSTRAINT-*]]"
+      - "Record in [[EVENT-GRAPH]]"
+      - "Update relevant layers"
+      - "Validate layer consistency"
+      - "Communicate to all stakeholders"
+
+    validating:
+      - "Run the validation protocol"
+      - "If validation fails, identify the layer responsible"
+      - "Escalate to layer owner ([[PERSON-*]])"
+      - "Record remediation in [[LEARNING-GRAPH]]"
+
+  integration_with_other_systems:
+
+    neo4j_deployment:
+      description: "The graph is deployed in Neo4j"
+      note: "Cypher queries traverse layers; constraints become Cypher WHERE clauses"
+
+    observability:
+      description: "Graph state is observable; changes are logged"
+      note: "Every [[EVENT-*]] is a data point; aggregate for metrics"
+
+    api_exposure:
+      description: "Graph is queryable via REST API"
+      note: "Supports read, propose-change, validate, learn workflows"
+
+# STATUS
+status:
+  layer_count: 22
+  relationships_defined: 150+
+  constraints_defined: 100+
+  validation_protocol: DEFINED
+  neo4j_schema: DEPLOYED (Sep 18)
+  api_deployment: READY
+  next_phase: "Deploy observability; track graph queries and changes in production"
+

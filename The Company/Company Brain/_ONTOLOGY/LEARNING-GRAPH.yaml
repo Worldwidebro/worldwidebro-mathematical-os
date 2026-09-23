@@ -5,8 +5,8 @@
 # Generated: 2026-09-25
 # Purpose: Capture how outcomes inform future decisions; close the feedback loop
 #
-# Part of the Graph-of-Graphs operational chain:
-# [[DECISION-GRAPH]] → [[LEARNING-GRAPH]] → [[POLICY-GRAPH]] → [[SEMANTIC-GRAPH]] → [[META-GRAPH]]
+# Graph-of-Graphs Wiring:
+# [[AUTHORITY-GRAPH]] → [[STATE-GRAPH]] → [[LIFECYCLE-GRAPH]] → [[EVENT-GRAPH]] → [[EVIDENCE-GRAPH]] → [[DECISION-GRAPH]] → [[RESOURCE-GRAPH]] → [[CONSTRAINT-GRAPH]] → [[DEPENDENCY-GRAPH]] → [[LEARNING-GRAPH]] → [[INTENT-GRAPH]] → [[POLICY-GRAPH]] → [[SEMANTIC-GRAPH]] → [[META-GRAPH]]
 #
 # See also:
 #   - [[DECISION-GRAPH]]: Outcomes feed back into future decisions

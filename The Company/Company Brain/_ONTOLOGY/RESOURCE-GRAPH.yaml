@@ -5,8 +5,8 @@
 # Generated: 2026-09-25
 # Purpose: Model what resources exist, who owns them, how they're allocated, and when they're available
 #
-# Part of the Graph-of-Graphs operational chain:
-# [[DECISION-GRAPH]] → [[RESOURCE-GRAPH]] → [[CONSTRAINT-GRAPH]] → [[DEPENDENCY-GRAPH]] → [[LEARNING-GRAPH]]
+# Graph-of-Graphs Wiring:
+# [[AUTHORITY-GRAPH]] → [[STATE-GRAPH]] → [[LIFECYCLE-GRAPH]] → [[EVENT-GRAPH]] → [[EVIDENCE-GRAPH]] → [[DECISION-GRAPH]] → [[RESOURCE-GRAPH]] → [[CONSTRAINT-GRAPH]] → [[DEPENDENCY-GRAPH]] → [[LEARNING-GRAPH]] → [[INTENT-GRAPH]] → [[POLICY-GRAPH]] → [[SEMANTIC-GRAPH]] → [[META-GRAPH]]
 #
 # See also:
 #   - [[CONSTRAINT-GRAPH]]: Resource scarcity creates constraints

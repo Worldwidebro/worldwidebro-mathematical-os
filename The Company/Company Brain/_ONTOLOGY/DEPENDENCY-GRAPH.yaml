@@ -5,8 +5,8 @@
 # Generated: 2026-09-25
 # Purpose: Model what depends on what; identify bottlenecks and single points of failure
 #
-# Part of the Graph-of-Graphs operational chain:
-# [[RESOURCE-GRAPH]] → [[CONSTRAINT-GRAPH]] → [[DEPENDENCY-GRAPH]] → [[LEARNING-GRAPH]]
+# Graph-of-Graphs Wiring:
+# [[AUTHORITY-GRAPH]] → [[STATE-GRAPH]] → [[LIFECYCLE-GRAPH]] → [[EVENT-GRAPH]] → [[EVIDENCE-GRAPH]] → [[DECISION-GRAPH]] → [[RESOURCE-GRAPH]] → [[CONSTRAINT-GRAPH]] → [[DEPENDENCY-GRAPH]] → [[LEARNING-GRAPH]] → [[INTENT-GRAPH]] → [[POLICY-GRAPH]] → [[SEMANTIC-GRAPH]] → [[META-GRAPH]]
 #
 # See also:
 #   - [[CONSTRAINT-GRAPH]]: Dependencies create constraints
