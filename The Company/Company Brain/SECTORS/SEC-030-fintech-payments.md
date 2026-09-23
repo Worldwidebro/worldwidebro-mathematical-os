@@ -40,3 +40,11 @@ last_verified: "2026-09-05"
 - Repositories: [[13-REPOSITORIES]]
 - Capabilities: [[14-CAPABILITIES]]
 - Agents: [[16-AGENTS]]
+
+---
+
+## Control Base Reference
+
+This sector is mapped to [[B60|Sector Registry]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B60]]

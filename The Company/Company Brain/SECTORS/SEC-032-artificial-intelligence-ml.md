@@ -57,3 +57,11 @@ last_verified: "2026-09-05"
 - Capabilities: [[14-CAPABILITIES]]
 - Agents: [[16-AGENTS]]
 - Memory Core: [[10-MEMORY]] & [[_MEMORY/MEMORY-OS]]
+
+---
+
+## Control Base Reference
+
+This sector is mapped to [[B62|Sector Registry]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B62]]

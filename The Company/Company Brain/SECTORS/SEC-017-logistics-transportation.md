@@ -69,3 +69,10 @@ last_verified: "2026-09-05"
 - Capital Engine: [[CAPITAL-READINESS-ENGINE|CAPITAL-READINESS-ENGINE.md]]
 - 5-Venture Summary: [[BUSINESS-CAPITAL-DATA-ROOM/5-VENTURE-INTEGRATED-SUMMARY|5-Venture Integrated Summary]]
 
+---
+
+## Control Base Reference
+
+This sector is mapped to [[B47|Sector Registry]] in the Company Brain.
+
+**Wiki Link:** [[CBP_REGISTRY|_REGISTRIES/CANONICAL/CBP_REGISTRY.yaml#B47]]
