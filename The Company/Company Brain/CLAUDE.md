@@ -1,20 +1,16 @@
-# CLAUDE.md — Company Brain (Session Guidance)
+# CLAUDE.md — Company Brain Session Guidance
 
-**Scope:** Active session instructions + Bases architecture integration  
-**Updated:** 2026-09-25 (GROUND TRUTH DIVERGENCE DETECTED — DATA INTEGRITY CRITICAL)  
-**Authority:** Infrastructure CP-027 + Execution CP-033 + Revenue CP-021 + [[STARTHERE|STARTHERE.md]] (master orientation)  
-**Architecture Layers (Complete Stack):**
-  1. Legal Structure (200 entity types × 150 instances × 789 ventures)
-  2. Bases (35 knowledge/operating domains per sector)
-  3. People + Roles + Onboarding ← NEW (41 people × 40+ roles × entity assignments)
-  4. Company Brain (Neo4j graph, Qdrant vectors, Supabase state, Registries)
-  5. Agent System (30-50 functional agents with 100+ skills, 3 autonomy levels)
-  6. Workflows (sequences + orchestration)
-  7. Loops (recurring control systems + observability)
-  8. Execution Loop (14-stage work completion + evidence generation)
-  9. VEX CommandCenter (public front door + real-time dashboard)
+**Master Navigation:**
+- **[[STARTHERE|STARTHERE.md]]** ← Read first (mandatory orientation)
+- **[[INDEX|_REGISTRIES/CANONICAL/INDEX.md]]** ← Master catalog (all sectors, ventures, registries, legal entities)
+- **[[DOMAIN-MAP|_REGISTRIES/CANONICAL/DOMAIN-MAP.md]]** ← All 71 domains + wiring structure
+- **[[LOG|_REGISTRIES/CANONICAL/LOG.md]]** ← Timeline of work + discoveries
 
-**Current Phase:** Week 3 Bases Instantiation + Agentic Scaling (Sep 23–30) | [[ANTIGRAVITY|ANTIGRAVITY.md]] (45 operating rules) + [[BASES-CANONICAL-DEFINITION|_ONTOLOGY/BASES-CANONICAL-DEFINITION.md]] (new layer)
+**Scope:** Live session infrastructure state + links to operational docs  
+**Updated:** 2026-09-23 (wiki wiring complete: STARTHERE → INDEX → DOMAIN-MAP → Domain INDEXes → Files)  
+**Authority:** CP-001/CP-027 (sovereign governance) | [[ANTIGRAVITY|ANTIGRAVITY.md]] (45 rules) | [[REALITY|REALITY.md]] (verified truth)
+
+**Status:** Week 3 Bases Instantiation + Data Reconciliation (Sep 23–30) | 5-phase Supabase reconciliation starting Sep 26
 
 ---
 
