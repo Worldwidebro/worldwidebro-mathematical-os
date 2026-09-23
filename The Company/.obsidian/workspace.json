@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "06e0a79a47125294",
+        "id": "ef773b5b29cd39f3",
         "type": "tabs",
         "children": [
           {
-            "id": "b2031065ed1409e0",
+            "id": "7174699e4e93c335",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -181,8 +181,15 @@
       "bases:Create new base": false
     }
   },
-  "active": "b2031065ed1409e0",
+  "active": "7174699e4e93c335",
   "lastOpenFiles": [
+    "Company Brain/supabase/README.md",
+    "Company Brain/src/README.md",
+    "Company Brain/infrastructure/README.md",
+    "Company Brain/docs/README.md",
+    "Company Brain/analytics/README.md",
+    "Company Brain/_WORK/README.md",
+    "Company Brain/_BASES/README.md",
     "Company Brain/23-VENTURES/INDEX.md",
     "Company Brain/00-CONSTITUTION/INDEX.md",
     "Company Brain/_REGISTRIES/CANONICAL/DOMAIN-MAP.md",
@@ -210,13 +217,6 @@
     "Company Brain/graft/scripts/venture_os_engine.md",
     "Company Brain/graft/scripts/venture_legal_generators.md",
     "Company Brain/graft/scripts/validate_migration_schema.md",
-    "Company Brain/graft/scripts/underwrite_parcel.md",
-    "Company Brain/graft/scripts/test_clean_wiki_audit.md",
-    "Company Brain/graft/scripts/sync_portal_data.md",
-    "Company Brain/graft/scripts/sync_150_entities_to_neo4j.md",
-    "Company Brain/graft/scripts/sync_gbrain_to_neo4j.md",
-    "Company Brain/graft/scripts/send_sales_scripts.md",
-    "Company Brain/graft/scripts/seed_50_states.md",
     "Company Brain/graft/scripts",
     "Company Brain/graft/scratch",
     "Company Brain/mobile_drawer_open.png",

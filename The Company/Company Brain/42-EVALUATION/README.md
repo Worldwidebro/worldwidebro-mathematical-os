@@ -103,6 +103,16 @@ Evaluates external software packages, SaaS vendors, and internal libraries:
 
 ---
 
+
+---
+
+## Related Infrastructure
+
+**Supporting folders outside this domain:**
+
+- [[_TESTS|../../_TESTS/README.md]]
+- [[_EVAL|../../_EVAL/README.md]]
+
 ## Navigation
 
 ← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

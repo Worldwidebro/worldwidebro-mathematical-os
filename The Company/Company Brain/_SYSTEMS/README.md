@@ -1,4 +1,5 @@
 # 📊 _SYSTEMS Directory — Integrated Architecture & Data Flows
+**Maps to domain:** [[49-SYSTEM|../../49-SYSTEM/README.md]]
 
 **Authority:** [[REALITY]] | [[CLAUDE.md]] | [[STARTHERE]]
 
@@ -97,3 +98,9 @@
 ---
 
 **Last Updated:** 2026-09-08 | **Version:** 1.0 | **Maintained by:** Claude Code (this session)
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

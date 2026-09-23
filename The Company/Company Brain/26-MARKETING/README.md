@@ -60,6 +60,15 @@ All active go-to-market initiatives run natively through the **Campaign Operatin
 
 ---
 
+
+---
+
+## Related Infrastructure
+
+**Supporting folders outside this domain:**
+
+- [[CAMPAIGNS|../../CAMPAIGNS/README.md]]
+
 ## Navigation
 
 ← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

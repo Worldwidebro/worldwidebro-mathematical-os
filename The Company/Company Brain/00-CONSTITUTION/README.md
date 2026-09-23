@@ -149,6 +149,15 @@ The [[_REGISTRIES/CANONICAL/LOGIC_LAYERS_REGISTRY.yaml|Logic Layers Registry]] o
 
 ---
 
+
+---
+
+## Related Infrastructure
+
+**Supporting folders outside this domain:**
+
+- [[DIRECTIVES|../../DIRECTIVES/README.md]]
+
 ## Navigation
 
 ← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

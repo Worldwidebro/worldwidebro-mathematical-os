@@ -269,3 +269,9 @@ Infrastructure Control Plane (CP-027)
 2. Install FastMCP
 3. Update Claude Code settings
 4. Test with `infrastructure_status()`
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

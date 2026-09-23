@@ -109,3 +109,9 @@ The 22-domain Data Rooms are generated, audited, and compiled using our autonomo
 | **[[_TOOLS/GBRAIN\|GBrain (`scripts/gbrain`)]]** | **Persistent Diligence & Memory Engine:** Indexes all 22 domains across all 5 ventures into a local PGLite embedded database. Enables hybrid keyword/semantic due diligence Q&A for underwriters and investors. | [`scripts/gbrain`](file:///Users/acebless/Documents/The%20Company/Company%20Brain/scripts/gbrain) |
 | **[[16-AGENTS/HERMES-AGENT\|Hermes Agent]]** | **Investor & Lender Outbound Communications:** Autonomous multi-channel communications gateway (launchd PID 974) managing Telegram, WhatsApp, and Slack updates to capital partners and advisory boards. | [`16-AGENTS/HERMES-AGENT.md`](file:///Users/acebless/Documents/The%20Company/Company%20Brain/16-AGENTS/HERMES-AGENT.md) |
 | **[[16-AGENTS/OPENHANDS\|OpenHands SWE Platform]]** | **Technical Architecture Verification:** Autonomous software development agent (CLI v1.16.0) that audits Domain 07 (Product) and Domain 22 (System) specifications directly against active code in `repos/*`. | [`16-AGENTS/OPENHANDS.md`](file:///Users/acebless/Documents/The%20Company/Company%20Brain/16-AGENTS/OPENHANDS.md) |
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

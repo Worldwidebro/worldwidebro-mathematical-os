@@ -143,6 +143,16 @@ updated: 2026-09-19
 
 ---
 
+
+---
+
+## Related Infrastructure
+
+**Supporting folders outside this domain:**
+
+- [[_IMPLEMENTATION|../../_IMPLEMENTATION/README.md]]
+- [[AI-PROJECTS|../../AI-PROJECTS/README.md]]
+
 ## Navigation
 
 ← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

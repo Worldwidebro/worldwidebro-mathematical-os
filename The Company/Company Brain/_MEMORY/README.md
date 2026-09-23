@@ -55,3 +55,9 @@ Company Brain manages cognitive state across four distinct operational memory la
 - **Vector Database**: Qdrant (`http://100.87.214.70:6333`) via [[_INFRASTRUCTURE/README]]
 - **Prompt Integration**: [[_PROMPTS/03_MEMORY-RETRIEVAL]] & [[_PROMPTS/10_PRE-ACTION-AWARENESS]]
 - **Knowledge Core**: [[08-KNOWLEDGE-GRAPH/README]] & [[09-KNOWLEDGE/README]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

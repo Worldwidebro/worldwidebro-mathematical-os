@@ -28,3 +28,8 @@ Algorithmic trading frameworks, liquidity tracking, and quantitative risk modeli
 ---
 [[INDEX]] | [[STARTHERE]] | [[24-FINANCE/README|24-FINANCE]] | [[54-FINANCIAL/README|54-FINANCIAL]]
 
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

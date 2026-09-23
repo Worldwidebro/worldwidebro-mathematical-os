@@ -81,6 +81,15 @@ updated: 2026-09-06
 
 ---
 
+
+---
+
+## Related Infrastructure
+
+**Supporting folders outside this domain:**
+
+- [[_PROMPTS|../../_PROMPTS/README.md]]
+
 ## Navigation
 
 ← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

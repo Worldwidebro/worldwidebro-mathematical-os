@@ -174,6 +174,16 @@ For on-demand behavioral personas and procedural operational runbooks imported f
 
 ---
 
+
+---
+
+## Related Infrastructure
+
+**Supporting folders outside this domain:**
+
+- [[_AGENTS|../../_AGENTS/README.md]]
+- [[AI-BRAIN|../../AI-BRAIN/README.md]]
+
 ## Navigation
 
 ← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

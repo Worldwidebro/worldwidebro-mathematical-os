@@ -190,3 +190,9 @@ curl -X POST http://100.87.214.70:20128/v1/chat/completions \
 - **Evaluated System**: [[_EVAL/utopia/README|Utopia Enterprise World Model]] | [[09-KNOWLEDGE/Utopia-World-Model|Utopia Documentation Note]]
 - **Inference Runtime**: [[_INFRASTRUCTURE/README|Operational Infrastructure]] | [[_INFRASTRUCTURE/omniroute/README|OmniRoute Gateway]]
 - **Execution & Learning**: [[receipts/receipts.jsonl]] | [[_PIPELINES/learning/README|Learning Pipeline]] | [[44-LEARNING/44-LEARNING]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

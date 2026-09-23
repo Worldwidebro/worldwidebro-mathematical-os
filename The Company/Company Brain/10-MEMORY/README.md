@@ -69,6 +69,16 @@ Last updated: 2026-09-05
 
 ---
 
+
+---
+
+## Related Infrastructure
+
+**Supporting folders outside this domain:**
+
+- [[_MEMORY|../../_MEMORY/README.md]]
+- [[_REFERENCE|../../_REFERENCE/README.md]]
+
 ## Navigation
 
 ← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

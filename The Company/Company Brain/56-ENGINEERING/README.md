@@ -61,6 +61,16 @@ This directory contains the engineering control plane and infrastructure archite
 
 ---
 
+
+---
+
+## Related Infrastructure
+
+**Supporting folders outside this domain:**
+
+- [[HARNESS-ENGINEERING|../../HARNESS-ENGINEERING/README.md]]
+- [[src|../../src/README.md]]
+
 ## Navigation
 
 ← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

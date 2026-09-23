@@ -47,6 +47,15 @@ This domain contains X controllable operations. See [[control-points]] for detai
 
 ---
 
+
+---
+
+## Related Infrastructure
+
+**Supporting folders outside this domain:**
+
+- [[BUSINESS-CAPITAL-DATA-ROOM|../../BUSINESS-CAPITAL-DATA-ROOM/README.md]]
+
 ## Navigation
 
 ← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

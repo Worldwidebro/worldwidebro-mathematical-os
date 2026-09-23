@@ -17,3 +17,9 @@ updated: 2026-09-12
 
 ## Overview
 Agent configuration templates, role prompts, and multi-agent coordination topologies.
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

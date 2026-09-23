@@ -17,3 +17,9 @@ updated: 2026-09-12
 
 ## Overview
 Configuration and deployment state for the WorldwideBro VEX venture portal.
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

@@ -17,3 +17,9 @@ updated: 2026-09-12
 
 ## Overview
 Utility scripts for backup, validation, graph synchronization, and system maintenance.
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

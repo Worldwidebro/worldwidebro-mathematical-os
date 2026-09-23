@@ -37,3 +37,9 @@ Unlike casual Markdown links, entities and edges defined here adhere to strict s
 
 - **Upstream:** [[07-ONTOLOGY/README|07-ONTOLOGY]] | [[_ONTOLOGY/README|_ONTOLOGY Machine Schemas]]
 - **Downstream:** [[23-VENTURES/23-VENTURES|23-VENTURES]] | [[CAMPAIGNS/README|CAMPAIGNS Hub]] | [[COMMERCIAL/README|COMMERCIAL Hub]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

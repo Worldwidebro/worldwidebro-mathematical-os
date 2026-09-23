@@ -47,6 +47,18 @@ This domain contains X controllable operations. See [[control-points]] for detai
 
 ---
 
+
+---
+
+## Related Infrastructure
+
+**Supporting folders outside this domain:**
+
+- [[_TEMPLATES|../../_TEMPLATES/README.md]]
+- [[_DOCS|../../_DOCS/README.md]]
+- [[_ARCHIVE|../../_ARCHIVE/README.md]]
+- [[docs|../../docs/README.md]]
+
 ## Navigation
 
 ← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

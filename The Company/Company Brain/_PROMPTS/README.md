@@ -40,3 +40,9 @@ The **`_PROMPTS/`** directory houses Company Brain's sequential prompt chain tha
 - **Rule 1 Compliance**: Run `10_PRE-ACTION-AWARENESS.md` prior to any code generation or state modification.
 - **Connected Agent Fleet**: [[16-AGENTS/README|16-AGENTS]] & [[_REGISTRIES/agents/README|Agents Registry]]
 - **Cognitive Memory**: [[_MEMORY/MEMORY-OS|MEMORY-OS.md]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

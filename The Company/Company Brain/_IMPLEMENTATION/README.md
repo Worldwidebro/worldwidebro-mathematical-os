@@ -17,3 +17,9 @@ updated: 2026-09-12
 
 ## Overview
 Executable implementation guides, migration checklists, and deployment records.
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

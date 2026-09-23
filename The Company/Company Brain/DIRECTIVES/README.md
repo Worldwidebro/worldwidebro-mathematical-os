@@ -61,3 +61,9 @@ graph TD
 - Executive Truth: [[REALITY]]
 - Infrastructure State: [[CLAUDE]]
 - Domain Master Index: [[INDEX-DOMAINS-COMPLETE]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

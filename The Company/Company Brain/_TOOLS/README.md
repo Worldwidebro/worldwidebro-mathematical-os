@@ -94,3 +94,8 @@ scripts/gbrain query "medical courier revenue model"
 python3 scripts/sync_gbrain_to_neo4j.py
 ```
 
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

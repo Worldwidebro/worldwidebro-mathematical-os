@@ -72,3 +72,9 @@ While [[07-ONTOLOGY/README|07-ONTOLOGY]] provides the human-readable architectur
 - **Human Ontology Portal**: [[07-ONTOLOGY/README]] & [[07-ONTOLOGY/45-ONTOLOGIES-MASTER]]
 - **Relational Graph**: [[08-KNOWLEDGE-GRAPH/README]] (Neo4j)
 - **Registries Gateway**: [[_REGISTRIES/README]] & [[_REGISTRIES/CANONICAL/README]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

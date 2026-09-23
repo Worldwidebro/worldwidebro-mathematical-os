@@ -51,6 +51,17 @@ updated: 2026-09-12
 
 ---
 
+
+---
+
+## Related Infrastructure
+
+**Supporting folders outside this domain:**
+
+- [[_SCRIPTS|../../_SCRIPTS/README.md]]
+- [[_CLI|../../_CLI/README.md]]
+- [[scripts|../../scripts/README.md]]
+
 ## Navigation
 
 ← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

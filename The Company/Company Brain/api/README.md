@@ -17,3 +17,9 @@ updated: 2026-09-12
 
 ## Overview
 FastAPI and Express route handlers connecting internal microservices and database engines.
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

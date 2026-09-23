@@ -23,6 +23,15 @@ Maps cross-venture contracts, vendor partnerships, customer relationships, and o
 
 ---
 
+
+---
+
+## Related Infrastructure
+
+**Supporting folders outside this domain:**
+
+- [[_RELATIONSHIPS|../../_RELATIONSHIPS/README.md]]
+
 ## Navigation
 
 ← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

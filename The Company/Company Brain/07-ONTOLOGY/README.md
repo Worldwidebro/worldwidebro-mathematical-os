@@ -61,6 +61,17 @@ This domain defines the formal schema, entity-relationship models, and cross-dom
 
 ---
 
+
+---
+
+## Related Infrastructure
+
+**Supporting folders outside this domain:**
+
+- [[_ONTOLOGY|../../_ONTOLOGY/README.md]]
+- [[_BASES|../../_BASES/README.md]]
+- [[SECTORS|../../SECTORS/README.md]]
+
 ## Navigation
 
 ← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

@@ -55,6 +55,17 @@ Last updated: 2026-09-01
 
 ---
 
+
+---
+
+## Related Infrastructure
+
+**Supporting folders outside this domain:**
+
+- [[_PIPELINES|../../_PIPELINES/README.md]]
+- [[_ORCHESTRATION|../../_ORCHESTRATION/README.md]]
+- [[_ENGINE|../../_ENGINE/README.md]]
+
 ## Navigation
 
 ← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

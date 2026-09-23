@@ -75,3 +75,9 @@ Company Brain organizes the global commercial economy into **35 canonical busine
 - **Operational Ventures**: [[23-VENTURES/23-VENTURES|23-VENTURES Hub]]
 - **Commercial Monetization**: [[COMMERCIAL/README|COMMERCIAL B2B Offers]]
 - **System Index**: [[STARTHERE]] | [[INDEX]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

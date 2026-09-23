@@ -41,3 +41,9 @@ updated: 2026-09-06
 - Marketing & Campaigns: [[CAMPAIGNS/README|CAMPAIGNS]] & [[26-MARKETING/26-MARKETING|26-MARKETING]]
 - Financial Realities: [[ECONOMIC-REALITY]] & [[24-FINANCE/24-FINANCE|24-FINANCE]]
 - Executive Sign-off: [[EXECUTIVES]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

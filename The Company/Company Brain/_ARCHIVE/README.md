@@ -22,3 +22,9 @@ Preserved historical artifacts, audit snapshots, superseded registries, and past
 ## Historical Audit Receipts
 - [[AUDIT-INDEX-README-SKILLS-SEPTEMBER-19|Audit: Index, README & Skills (Sep 19, 2026)]]
 - [[ORGANIZATION-CLEANUP-COMPLETE-SEP19|Organization Cleanup Complete (Sep 19, 2026)]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

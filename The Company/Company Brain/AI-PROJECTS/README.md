@@ -43,3 +43,9 @@ graph TD
 - [[14-CAPABILITIES/14-CAPABILITIES|14-CAPABILITIES]]: 284 modular capability solutions (`CAP-001` through `CAP-284`).
 - [[COMMERCIAL/OFFERS/OFFER-001-LOCAL-AI-AUDIT|B2B Local AI Audit Offer]]: $7,500 turnkey code and token audit package running 100% on local Mac Studio infrastructure.
 - [[CAMPAIGNS/CAMPAIGN-OS|CAMPAIGN-OS]]: Autonomous multi-channel outbound and inbound marketing engine.
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

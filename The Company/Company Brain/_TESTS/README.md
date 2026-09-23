@@ -11,3 +11,9 @@ updated: 2026-09-12
 
 # _TESTS — Quality Assurance & Verification Suite
 Houses end-to-end testing scripts, integration verifications, and automated quality gates.
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

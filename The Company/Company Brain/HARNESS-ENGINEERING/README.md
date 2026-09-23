@@ -21,3 +21,9 @@ Test harnesses, synthetic benchmark generators, and reality validation gates.
 ## HARNESS-ENGINEERING Document Index
 
 - [[HARNESS-ENGINEERING/REGISTRY|REGISTRY]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

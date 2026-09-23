@@ -17,3 +17,9 @@ updated: 2026-09-12
 
 ## Overview
 Underlying computational engines, parsers, embedding generators, and pipeline wrappers.
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

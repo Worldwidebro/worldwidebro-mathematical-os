@@ -48,3 +48,9 @@ graph TD
 - Commercial Offers: [[COMMERCIAL/OFFERS/OFFER-001-LOCAL-AI-AUDIT|Local AI Audit ($7,500 turnkey offer)]]
 - Priority Objectives: [[PRIORITIES]]
 - Sector Taxonomy: [[00-CONSTITUTION/SECTOR-TAXONOMY-MASTER|35 Canonical Sectors]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →

@@ -53,3 +53,9 @@ The `_TEMPLATES/` directory contains the authoritative blueprint specifications 
 - **Master Control Hub:** [[50-MASTER-CONTROL/50-MASTER-CONTROL|50-MASTER-CONTROL]]
 - **Technical Capabilities:** [[14-CAPABILITIES/CAPABILITIES_INDEX|14-CAPABILITIES]]
 - **Ventures Portfolio:** [[23-VENTURES/23-VENTURES|23-VENTURES]]
+
+---
+
+## Navigation
+
+← [[DOMAIN-MAP|../../_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[INDEX|../../_REGISTRIES/CANONICAL/INDEX.md]] →
