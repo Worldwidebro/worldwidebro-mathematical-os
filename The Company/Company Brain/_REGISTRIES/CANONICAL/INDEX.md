@@ -101,6 +101,39 @@ See [[LOG|LOG.md]] for chronological record of:
 
 ---
 
+## All 71 Domains (Complete Navigation)
+
+See [[DOMAIN-MAP|DOMAIN-MAP.md]] for full descriptions. Domain INDEXes (example template):
+
+### Layer 1: Governance (00-07)
+[[00-CONSTITUTION/INDEX|00]] | [[01-IDENTITY/INDEX|01]] | [[02-SOURCES/INDEX|02]] | [[03-INGESTION/INDEX|03]] | [[04-DATA/INDEX|04]] | [[05-METADATA/INDEX|05]] | [[06-ENTITY-RESOLUTION/INDEX|06]] | [[07-ONTOLOGY/INDEX|07]]
+
+### Layer 2: Intelligence (08-12)
+[[08-KNOWLEDGE-GRAPH/INDEX|08]] | [[09-KNOWLEDGE/INDEX|09]] | [[10-MEMORY/INDEX|10]] | [[11-INDEXING/INDEX|11]] | [[12-CONTEXT/INDEX|12]]
+
+### Layer 3: Capabilities (13-19)
+[[13-REPOSITORIES/INDEX|13]] | [[14-CAPABILITIES/INDEX|14]] | [[15-SKILLS/INDEX|15]] | [[16-AGENTS/INDEX|16]] | [[17-MODELS/INDEX|17]] | [[18-TOOLS/INDEX|18]] | [[19-ORCHESTRATION/INDEX|19]]
+
+### Layer 4: Operations (20-28)
+[[20-DECISIONS/INDEX|20]] | [[21-POLICY/INDEX|21]] | [[22-EXECUTION/INDEX|22]] | [[22-VENTURES/INDEX|22v]] | [[23-VENTURES/INDEX|23]] | [[24-FINANCE/INDEX|24]] | [[25-SALES/INDEX|25]] | [[26-MARKETING/INDEX|26]] | [[27-CUSTOMERS/INDEX|27]] | [[28-PRODUCT/INDEX|28]]
+
+### Layer 5: Business Ops (29-36)
+[[29-OPERATIONS/INDEX|29]] | [[30-HR/INDEX|30]] | [[31-LEGAL/INDEX|31]] | [[32-SECURITY/INDEX|32]] | [[33-COMPLIANCE/INDEX|33]] | [[34-RISK/INDEX|34]] | [[35-ASSETS/INDEX|35]] | [[36-PARTNERS/INDEX|36]]
+
+### Layer 6: Research (37-42)
+[[37-RESEARCH/INDEX|37]] | [[38-OPPORTUNITIES/INDEX|38]] | [[39-EXPERIMENTS/INDEX|39]] | [[40-METRICS/INDEX|40]] | [[41-OBSERVABILITY/INDEX|41]] | [[42-EVALUATION/INDEX|42]]
+
+### Layer 7: Learning (43-50)
+[[43-OUTCOMES/INDEX|43]] | [[44-LEARNING/INDEX|44]] | [[45-EVOLUTION/INDEX|45]] | [[46-GOVERNANCE/INDEX|46]] | [[47-DOCUMENTS/INDEX|47]] | [[48-AUTOMATION/INDEX|48]] | [[49-SYSTEM/INDEX|49]] | [[50-MASTER-CONTROL/INDEX|50]]
+
+### Layer 8: Specialized (51-67)
+[[51-CONSTRUCTION/INDEX|51]] | [[52-PEOPLE/INDEX|52]] | [[53-TEAMS/INDEX|53]] | [[54-FINANCIAL/INDEX|54]] | [[55-LOOP-ENGINEERING/INDEX|55]] | [[56-ENGINEERING/INDEX|56]] | [[57-CODE-INTELLIGENCE/INDEX|57]] | [[58-LOGISTICS/INDEX|58]] | [[59-MCP/INDEX|59]] | [[60-APIS/INDEX|60]] | [[61-KNOWLEDGE-SOURCES/INDEX|61]] | [[62-TECHNOLOGY/INDEX|62]] | [[63-CHANGE-MANAGEMENT/INDEX|63]] | [[64-RELATIONSHIPS/INDEX|64]] | [[65-SYNERGIES/INDEX|65]] | [[66-OPPORTUNITIES-ALT/INDEX|66]] | [[67-EVOLUTION-ALT/INDEX|67]]
+
+### Layer 9: Execution (90)
+[[90-EXECUTION/INDEX|90]]
+
+---
+
 ## Questions & Next Steps
 
 **For Founder (Sep 25-26):**
@@ -116,11 +149,12 @@ See [[LOG|LOG.md]] for chronological record of:
 
 **For Ongoing:**
 - Update this INDEX as new pages are created
-- Check LOG.md for latest activity
+- Check [[LOG|LOG.md]] for latest activity
 - Link related pages with [[wiki-links]]
+- See [[DOMAIN-MAP|DOMAIN-MAP.md]] for full domain descriptions
 
 ---
 
 **Wiki Maintainers:** Claude Haiku 4.5  
 **Last Audit:** 2026-09-23  
-**Next Audit:** 2026-09-26 (after Phase 1 execution)
+**Architecture:** STARTHERE → INDEX (master) → DOMAIN-MAP (all 71) → Domain INDEXes (one per domain) → Files
