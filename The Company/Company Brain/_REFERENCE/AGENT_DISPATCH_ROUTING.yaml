@@ -1,0 +1,596 @@
+---
+# AGENT_DISPATCH_ROUTING.yaml — Phase 1 Agent Routing Assignment
+# Authority: CP-001 (Sovereign Operator)
+# Generated: 2026-09-25
+# Phase: 1 (Sep 26-30)
+# Status: ACTIVE
+
+# Routing Architecture:
+# TASK → [DOMAIN CLASSIFIER] → [AGENT ROUTER] → [AGENT INSTANCE] → [EXECUTOR]
+
+agent_dispatch_routes:
+
+  # ==================================================
+  # LAYER 1: GOVERNANCE & FOUNDATION (00-07)
+  # ==================================================
+
+  "00-CONSTITUTION":
+    base_id: B001
+    primary_agent: "Strategic Planning Agent"
+    secondary_agents: ["Executive Coach", "Vision Advisor"]
+    routing_rule: "route by task_type: [strategic_direction, annual_goals, mission_alignment]"
+    autonomy_level: "L1"  # Report-only (Founder approval required)
+    approval_authority: "Founder (CP-001)"
+    sla_minutes: 480  # 8 hours
+    critical: true
+
+  "01-IDENTITY":
+    base_id: B011
+    primary_agent: "Org Design Agent"
+    secondary_agents: ["Role Assignment Agent", "Structure Optimizer"]
+    routing_rule: "route by task_type: [org_change, role_assignment, structure_design]"
+    autonomy_level: "L2"  # Assisted (Human-in-loop)
+    approval_authority: "Chief of Staff"
+    sla_minutes: 240  # 4 hours
+    critical: true
+
+  "02-SOURCES":
+    base_id: B021
+    primary_agent: "Data Ingestion Agent"
+    secondary_agents: ["Source Monitor", "Quality Gate"]
+    routing_rule: "route by task_type: [source_onboarding, feed_validation, quality_check]"
+    autonomy_level: "L2"
+    approval_authority: "Data Engineering Lead"
+    sla_minutes: 120
+    critical: false
+
+  "03-INGESTION":
+    base_id: B031
+    primary_agent: "ETL Orchestrator Agent"
+    secondary_agents: ["Pipeline Monitor", "Error Handler"]
+    routing_rule: "route by task_type: [pipeline_execution, error_recovery, validation]"
+    autonomy_level: "L3"  # Autonomous (self-healing)
+    approval_authority: "Data Engineering"
+    sla_minutes: 5  # Real-time
+    critical: true
+
+  "04-DATA":
+    base_id: B041
+    primary_agent: "Database Optimizer Agent"
+    secondary_agents: ["Schema Manager", "Query Tuner"]
+    routing_rule: "route by task_type: [schema_change, performance_tuning, backup]"
+    autonomy_level: "L2"
+    approval_authority: "Database Admin"
+    sla_minutes: 60
+    critical: true
+
+  "05-METADATA":
+    base_id: B051
+    primary_agent: "Metadata Steward Agent"
+    secondary_agents: ["Lineage Tracker", "Quality Auditor"]
+    routing_rule: "route by task_type: [lineage_update, quality_metric, classification]"
+    autonomy_level: "L2"
+    approval_authority: "Data Governance"
+    sla_minutes: 240
+    critical: false
+
+  "06-ENTITY-RESOLUTION":
+    base_id: B061
+    primary_agent: "Entity Resolver Agent"
+    secondary_agents: ["Match Scorer", "Conflict Handler"]
+    routing_rule: "route by task_type: [deduplication, merge_logic, conflict_resolution]"
+    autonomy_level: "L3"
+    approval_authority: "Data Quality"
+    sla_minutes: 30
+    critical: false
+
+  "07-ONTOLOGY":
+    base_id: B071
+    primary_agent: "Ontology Manager Agent"
+    secondary_agents: ["Schema Validator", "Versioning Agent"]
+    routing_rule: "route by task_type: [schema_design, relationship_definition, validation]"
+    autonomy_level: "L2"
+    approval_authority: "Chief Architect"
+    sla_minutes: 480
+    critical: true
+
+  # ==================================================
+  # LAYER 2: INTELLIGENCE & KNOWLEDGE (08-12)
+  # ==================================================
+
+  "08-KNOWLEDGE-GRAPH":
+    base_id: B081
+    primary_agent: "Graph Database Agent"
+    secondary_agents: ["Query Optimizer", "Constraint Manager"]
+    routing_rule: "route by task_type: [node_creation, edge_management, query_execution]"
+    autonomy_level: "L3"
+    approval_authority: "Platform Engineering"
+    sla_minutes: 10
+    critical: true
+
+  "09-KNOWLEDGE":
+    base_id: B091
+    primary_agent: "Knowledge Synthesizer Agent"
+    secondary_agents: ["Pattern Recognizer", "Insight Generator"]
+    routing_rule: "route by task_type: [synthesis, pattern_detection, insight_extraction]"
+    autonomy_level: "L2"
+    approval_authority: "Chief Knowledge Officer"
+    sla_minutes: 360
+    critical: false
+
+  "10-MEMORY":
+    base_id: B101
+    primary_agent: "Memory System Agent"
+    secondary_agents: ["Retrieval Agent", "Consolidation Agent"]
+    routing_rule: "route by task_type: [store_memory, retrieve_memory, consolidate_learning]"
+    autonomy_level: "L3"
+    approval_authority: "CKO"
+    sla_minutes: 5
+    critical: false
+
+  "11-INDEXING":
+    base_id: B111
+    primary_agent: "Search Index Agent"
+    secondary_agents: ["Crawler", "Ranker"]
+    routing_rule: "route by task_type: [index_build, rank_results, facet_search]"
+    autonomy_level: "L3"
+    approval_authority: "Platform"
+    sla_minutes: 10
+    critical: false
+
+  "12-CONTEXT":
+    base_id: B121
+    primary_agent: "Context Assembly Agent"
+    secondary_agents: ["Relevance Ranker", "Filter Manager"]
+    routing_rule: "route by task_type: [context_build, relevance_rank, filter_apply]"
+    autonomy_level: "L3"
+    approval_authority: "Platform"
+    sla_minutes: 5
+    critical: true
+
+  # ==================================================
+  # LAYER 3: CAPABILITY SYSTEMS (13-19)
+  # ==================================================
+
+  "13-REPOSITORIES":
+    base_id: B131
+    primary_agent: "Repository Manager Agent"
+    secondary_agents: ["Git Coordinator", "Archive Manager"]
+    routing_rule: "route by task_type: [repo_create, access_control, release_management]"
+    autonomy_level: "L2"
+    approval_authority: "Engineering Lead"
+    sla_minutes: 120
+    critical: false
+
+  "14-CAPABILITIES":
+    base_id: B141
+    primary_agent: "Capability Inventory Agent"
+    secondary_agents: ["Gap Analyzer", "Build-vs-Buy Evaluator"]
+    routing_rule: "route by task_type: [capability_assessment, gap_analysis, sourcing_decision]"
+    autonomy_level: "L2"
+    approval_authority: "Chief Architect"
+    sla_minutes: 240
+    critical: true
+
+  "15-SKILLS":
+    base_id: B151
+    primary_agent: "Skill Development Agent"
+    secondary_agents: ["Competency Mapper", "Training Coordinator"]
+    routing_rule: "route by task_type: [skill_assessment, training_assignment, certification]"
+    autonomy_level: "L2"
+    approval_authority: "Head of People"
+    sla_minutes: 1440
+    critical: false
+
+  "16-AGENTS":
+    base_id: B161
+    primary_agent: "Agent Lifecycle Manager"
+    secondary_agents: ["Capability Evaluator", "Performance Monitor"]
+    routing_rule: "route by task_type: [agent_deploy, capability_eval, performance_review]"
+    autonomy_level: "L3"
+    approval_authority: "Platform Engineering"
+    sla_minutes: 30
+    critical: true
+
+  "17-MODELS":
+    base_id: B171
+    primary_agent: "Model Selection Agent"
+    secondary_agents: ["Performance Evaluator", "Cost Optimizer"]
+    routing_rule: "route by task_type: [model_evaluation, fine_tuning, deployment]"
+    autonomy_level: "L2"
+    approval_authority: "ML Engineering"
+    sla_minutes: 360
+    critical: true
+
+  "18-TOOLS":
+    base_id: B181
+    primary_agent: "Tool Integration Agent"
+    secondary_agents: ["API Coordinator", "Deprecation Manager"]
+    routing_rule: "route by task_type: [tool_integration, versioning, deprecation]"
+    autonomy_level: "L2"
+    approval_authority: "Platform"
+    sla_minutes: 120
+    critical: false
+
+  "19-ORCHESTRATION":
+    base_id: B191
+    primary_agent: "Workflow Orchestrator Agent"
+    secondary_agents: ["Error Recovery Agent", "Monitoring Agent"]
+    routing_rule: "route by task_type: [workflow_design, execution, error_handling]"
+    autonomy_level: "L3"
+    approval_authority: "Platform"
+    sla_minutes: 5
+    critical: true
+
+  # ==================================================
+  # LAYER 4: OPERATIONS & EXECUTION (20-28)
+  # ==================================================
+
+  "20-DECISIONS":
+    base_id: B201
+    primary_agent: "Decision Framework Agent"
+    secondary_agents: ["ADR Writer", "Gate Manager"]
+    routing_rule: "route by task_type: [decision_log, approval_gate, decision_reversal]"
+    autonomy_level: "L1"
+    approval_authority: "Executive"
+    sla_minutes: 240
+    critical: true
+
+  "21-POLICY":
+    base_id: B211
+    primary_agent: "Policy Compliance Agent"
+    secondary_agents: ["Audit Agent", "Exception Handler"]
+    routing_rule: "route by task_type: [policy_enforce, exception_grant, audit_check]"
+    autonomy_level: "L2"
+    approval_authority: "Legal/Compliance"
+    sla_minutes: 480
+    critical: true
+
+  "22-EXECUTION":
+    base_id: B221
+    primary_agent: "Execution Tracker Agent"
+    secondary_agents: ["Progress Monitor", "Blocker Resolver"]
+    routing_rule: "route by task_type: [work_tracking, progress_update, blocker_escalation]"
+    autonomy_level: "L3"
+    approval_authority: "Delivery Lead"
+    sla_minutes: 60
+    critical: true
+
+  "23-VENTURES":
+    base_id: B231
+    primary_agent: "Venture Operations Agent"
+    secondary_agents: ["Status Tracker", "Health Monitor"]
+    routing_rule: "route by venture_id to appropriate venture agent"
+    autonomy_level: "L3"
+    approval_authority: "VP Operations"
+    sla_minutes: 30
+    critical: true
+
+  "24-FINANCE":
+    base_id: B241
+    primary_agent: "Financial Planning Agent"
+    secondary_agents: ["Forecasting Agent", "Budget Manager"]
+    routing_rule: "route by task_type: [budget_plan, forecast, cash_flow_analysis]"
+    autonomy_level: "L2"
+    approval_authority: "CFO"
+    sla_minutes: 480
+    critical: true
+
+  "25-SALES":
+    base_id: B251
+    primary_agent: "Sales Pipeline Agent"
+    secondary_agents: ["Lead Scoring Agent", "Deal Coach Agent"]
+    routing_rule: "route by task_type: [lead_score, deal_route, forecast_update]"
+    autonomy_level: "L3"
+    approval_authority: "VP Sales"
+    sla_minutes: 60
+    critical: true
+    revenue_critical: true
+
+  "26-MARKETING":
+    base_id: B261
+    primary_agent: "Campaign Manager Agent"
+    secondary_agents: ["Content Coordinator", "Performance Analyst"]
+    routing_rule: "route by campaign_id"
+    autonomy_level: "L2"
+    approval_authority: "CMO"
+    sla_minutes: 240
+    critical: false
+
+  "27-CUSTOMERS":
+    base_id: B271
+    primary_agent: "Customer Success Agent"
+    secondary_agents: ["Health Scorer", "Churn Predictor"]
+    routing_rule: "route by customer_segment"
+    autonomy_level: "L3"
+    approval_authority: "VP Customer Success"
+    sla_minutes: 120
+    critical: true
+    revenue_critical: true
+
+  "28-PRODUCT":
+    base_id: B281
+    primary_agent: "Product Manager Agent"
+    secondary_agents: ["Roadmap Planner", "Feature Prioritizer"]
+    routing_rule: "route by product_area"
+    autonomy_level: "L2"
+    approval_authority: "Chief Product Officer"
+    sla_minutes: 480
+    critical: false
+
+  # ==================================================
+  # LAYER 5: BUSINESS OPERATIONS (29-36)
+  # ==================================================
+
+  "29-OPERATIONS":
+    base_id: B291
+    primary_agent: "Operations Manager Agent"
+    secondary_agents: ["Process Optimizer", "Capacity Planner"]
+    routing_rule: "route by process_type"
+    autonomy_level: "L2"
+    approval_authority: "COO"
+    sla_minutes: 240
+    critical: false
+
+  "30-HR":
+    base_id: B301
+    primary_agent: "HR Operations Agent"
+    secondary_agents: ["Payroll Agent", "Recruiting Agent"]
+    routing_rule: "route by hr_function"
+    autonomy_level: "L2"
+    approval_authority: "Chief People Officer"
+    sla_minutes: 480
+    critical: false
+
+  "31-LEGAL":
+    base_id: B311
+    primary_agent: "Legal Compliance Agent"
+    secondary_agents: ["Contract Reviewer", "Risk Assessor"]
+    routing_rule: "route by legal_matter_type"
+    autonomy_level: "L1"
+    approval_authority: "Chief Legal Officer"
+    sla_minutes: 1440
+    critical: true
+
+  "32-SECURITY":
+    base_id: B321
+    primary_agent: "Security Operations Agent"
+    secondary_agents: ["Threat Detector", "Incident Handler"]
+    routing_rule: "route by severity"
+    autonomy_level: "L3"
+    approval_authority: "Chief Security Officer"
+    sla_minutes: 15
+    critical: true
+
+  "33-COMPLIANCE":
+    base_id: B331
+    primary_agent: "Compliance Manager Agent"
+    secondary_agents: ["Audit Coordinator", "Remediation Tracker"]
+    routing_rule: "route by compliance_framework"
+    autonomy_level: "L2"
+    approval_authority: "Compliance Officer"
+    sla_minutes: 720
+    critical: true
+
+  "34-RISK":
+    base_id: B341
+    primary_agent: "Risk Management Agent"
+    secondary_agents: ["Mitigation Planner", "Monitoring Agent"]
+    routing_rule: "route by risk_category"
+    autonomy_level: "L2"
+    approval_authority: "Chief Risk Officer"
+    sla_minutes: 480
+    critical: true
+
+  "35-ASSETS":
+    base_id: B351
+    primary_agent: "Asset Manager Agent"
+    secondary_agents: ["Lifecycle Tracker", "Valuator"]
+    routing_rule: "route by asset_type"
+    autonomy_level: "L2"
+    approval_authority: "CFO"
+    sla_minutes: 240
+    critical: false
+
+  "36-PARTNERS":
+    base_id: B361
+    primary_agent: "Partnership Manager Agent"
+    secondary_agents: ["Integration Coordinator", "Performance Monitor"]
+    routing_rule: "route by partner_type"
+    autonomy_level: "L2"
+    approval_authority: "VP Partnerships"
+    sla_minutes: 240
+    critical: false
+
+  # ==================================================
+  # LAYER 6: RESEARCH & DISCOVERY (37-42)
+  # ==================================================
+
+  "37-RESEARCH":
+    base_id: B371
+    primary_agent: "Market Research Agent"
+    secondary_agents: ["Analyst", "Report Writer"]
+    routing_rule: "route by research_type"
+    autonomy_level: "L2"
+    approval_authority: "Chief Strategist"
+    sla_minutes: 1440
+    critical: false
+
+  "38-OPPORTUNITIES":
+    base_id: B381
+    primary_agent: "Opportunity Scout Agent"
+    secondary_agents: ["Analyzer", "Prioritizer"]
+    routing_rule: "route by opportunity_type"
+    autonomy_level: "L2"
+    approval_authority: "Chief Strategy"
+    sla_minutes: 480
+    critical: true
+
+  "39-EXPERIMENTS":
+    base_id: B391
+    primary_agent: "Experiment Manager Agent"
+    secondary_agents: ["Test Runner", "Results Analyzer"]
+    routing_rule: "route by experiment_type"
+    autonomy_level: "L3"
+    approval_authority: "Chief Innovation Officer"
+    sla_minutes: 60
+    critical: false
+
+  "40-METRICS":
+    base_id: B401
+    primary_agent: "Metrics Dashboard Agent"
+    secondary_agents: ["KPI Tracker", "Alerting Agent"]
+    routing_rule: "route by metric_category"
+    autonomy_level: "L3"
+    approval_authority: "Analytics Lead"
+    sla_minutes: 5
+    critical: true
+
+  "41-OBSERVABILITY":
+    base_id: B411
+    primary_agent: "System Observability Agent"
+    secondary_agents: ["Log Aggregator", "Trace Analyzer"]
+    routing_rule: "route by service"
+    autonomy_level: "L3"
+    approval_authority: "Platform SRE"
+    sla_minutes: 5
+    critical: true
+
+  "42-EVALUATION":
+    base_id: B421
+    primary_agent: "Quality Assurance Agent"
+    secondary_agents: ["Test Designer", "Rubric Validator"]
+    routing_rule: "route by eval_type"
+    autonomy_level: "L2"
+    approval_authority: "QA Lead"
+    sla_minutes: 240
+    critical: false
+
+  # ==================================================
+  # LAYER 7: LEARNING & EVOLUTION (43-50)
+  # ==================================================
+
+  "43-OUTCOMES":
+    base_id: B431
+    primary_agent: "Outcome Tracker Agent"
+    secondary_agents: ["Impact Measurer", "Learning Extractor"]
+    routing_rule: "route by outcome_type"
+    autonomy_level: "L2"
+    approval_authority: "Delivery Lead"
+    sla_minutes: 240
+    critical: false
+
+  "44-LEARNING":
+    base_id: B441
+    primary_agent: "Learning System Agent"
+    secondary_agents: ["Knowledge Capture", "Best Practice Encoder"]
+    routing_rule: "route by learning_source"
+    autonomy_level: "L3"
+    approval_authority: "CKO"
+    sla_minutes: 60
+    critical: false
+
+  "45-EVOLUTION":
+    base_id: B451
+    primary_agent: "System Evolution Agent"
+    secondary_agents: ["Roadmap Planner", "Architecture Updater"]
+    routing_rule: "route by evolution_track"
+    autonomy_level: "L2"
+    approval_authority: "Chief Architect"
+    sla_minutes: 480
+    critical: true
+
+  "46-GOVERNANCE":
+    base_id: B461
+    primary_agent: "Governance Framework Agent"
+    secondary_agents: ["Policy Reviewer", "Board Coordinator"]
+    routing_rule: "route by governance_topic"
+    autonomy_level: "L1"
+    approval_authority: "Chief Governance Officer"
+    sla_minutes: 1440
+    critical: true
+
+  "47-DOCUMENTS":
+    base_id: B471
+    primary_agent: "Document Manager Agent"
+    secondary_agents: ["Archiver", "Versioning Agent"]
+    routing_rule: "route by document_type"
+    autonomy_level: "L2"
+    approval_authority: "Information Manager"
+    sla_minutes: 240
+    critical: false
+
+  "48-AUTOMATION":
+    base_id: B481
+    primary_agent: "Automation Orchestrator Agent"
+    secondary_agents: ["Bot Designer", "Workflow Tester"]
+    routing_rule: "route by automation_domain"
+    autonomy_level: "L3"
+    approval_authority: "Process Automation Lead"
+    sla_minutes: 120
+    critical: false
+
+  "49-SYSTEM":
+    base_id: B491
+    primary_agent: "System Architecture Agent"
+    secondary_agents: ["Infrastructure Manager", "Capacity Planner"]
+    routing_rule: "route by system_component"
+    autonomy_level: "L2"
+    approval_authority: "VP Engineering"
+    sla_minutes: 480
+    critical: true
+
+  "50-MASTER-CONTROL":
+    base_id: B501
+    primary_agent: "Executive Dashboard Agent"
+    secondary_agents: ["Exception Handler", "Strategic Advisor"]
+    routing_rule: "route by control_type"
+    autonomy_level: "L1"
+    approval_authority: "Founder (CP-001)"
+    sla_minutes: 60
+    critical: true
+
+# ==================================================
+# ROUTING METADATA
+# ==================================================
+
+routing_metadata:
+  total_domains: 50
+  total_agents_assigned: 50
+  autonomy_distribution:
+    L1_report_only: 5
+    L2_assisted: 28
+    L3_autonomous: 17
+  critical_paths: 23
+  revenue_critical: 3  # BASE-251, BASE-271, plus others
+  real_time_sla: 12  # < 10 minute SLAs
+  status: "ACTIVE"
+  generated: "2026-09-25"
+  go_live: "2026-09-26"
+
+# ==================================================
+# QUICK REFERENCE: AUTONOMY LEVELS
+# ==================================================
+
+autonomy_definitions:
+  L1_report_only: "Agent proposes, human approves every action (strategic decisions)"
+  L2_assisted: "Agent executes with human oversight (operational decisions)"
+  L3_autonomous: "Agent operates autonomously, escalates exceptions (tactical execution)"
+
+approval_authorities:
+  "Founder (CP-001)": ["Strategic direction", "Master contracts", "Governance"]
+  "Chief Architect": ["Capability assessment", "System evolution", "Schema changes"]
+  "VP Sales": ["Pipeline routing", "Deal strategy", "Forecasting"]
+  "VP Customer Success": ["Churn prevention", "Health scoring", "Retention actions"]
+  "CFO": ["Financial planning", "Budget approval", "Asset management"]
+  "Platform Engineering": ["Agent deployment", "Workflow orchestration", "Graph database"]
+  "Chief Legal Officer": ["Contracts", "Compliance", "Risk mitigation"]
+
+# ==================================================
+# NEXT PHASE: VENTURE ASSIGNMENT
+# ==================================================
+# After agent routing is live (Sep 26-30):
+# - Map 789 ventures to appropriate bases
+# - Assign venture-specific agents
+# - Wire revenue attribution
+# Timeline: Phase 2 (Oct 1-7, 2026)
