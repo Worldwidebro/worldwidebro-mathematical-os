@@ -1,7 +1,7 @@
 # CLAUDE.md — Company Brain (Session Guidance)
 
 **Scope:** Active session instructions + Bases architecture integration  
-**Updated:** 2026-09-22 (AUDIT + BASES DEFINITION COMPLETE)  
+**Updated:** 2026-09-25 (GROUND TRUTH DIVERGENCE DETECTED — DATA INTEGRITY CRITICAL)  
 **Authority:** Infrastructure CP-027 + Execution CP-033 + Revenue CP-021 + [[STARTHERE|STARTHERE.md]] (master orientation)  
 **Architecture Layers (Complete Stack):**
   1. Legal Structure (200 entity types × 150 instances × 789 ventures)
@@ -18,22 +18,24 @@
 
 ---
 
-## STATUS SNAPSHOT — Sep 23, 2026 (UPDATED)
+## STATUS SNAPSHOT — Sep 25, 2026 (GROUND TRUTH DIVERGENCE CRITICAL)
 
 ✅ **Phase 1 LOCKED** (Sep 6-15) — Agent Enablement complete, audit system operational  
 ✅ **Phase 2 LAUNCHED** (Sep 16-30) — Graph-native refactor (Neo4j schema deployment Sep 18)  
 ✅ **Phase 2a DESIGNED** (Sep 23) — Agentic scaling with people+roles bridge (30-50 functional agents, not 318)
 ✅ **Bases Architecture DEFINED** (Sep 22) — 35 bounded knowledge/operating domains, standard schema
 ✅ **People + Roles LAYER CREATED** (Sep 23) — 4 master registries + onboarding system
-  - PEOPLE-REGISTRY.yaml (21 key people identified)
-  - ROLES-REGISTRY.yaml (40+ standard roles)
-  - RESPONSIBILITY-MATRIX.csv (entity → role → person mappings)
-  - AUTHORITY-MATRIX.yaml (approval thresholds + decision routing)
-  - ROLE-REQUIREMENTS.yaml (what each role needs)
-  - ONBOARDING-TEMPLATES.yaml (automated onboarding packages)
 ✅ **Infrastructure LIVE** — Neo4j (20,363 edges), Qdrant (17,236 vectors), OmniRoute, Ollama  
-✅ **Folder Structure AUDITED** — 132 directories, 36 sectors, 789 ventures, 59 canonical registries
-✅ **6 Tier-0 Ventures Executing** — OPS-001, LT-005, CALLCENTER (revenue-ready)
+✅ **Canonical Registries FROZEN** (Sep 24) — SECTOR-REGISTRY.yaml, OPCO-REGISTRY.yaml, BASE-REGISTRY.yaml, VENTURE-REGISTRY.yaml
+✅ **6 Tier-0 Ventures EXECUTING** — OPS-001, LT-005, CALLCENTER (revenue-ready)
+
+🚨 **CRITICAL DISCOVERY (Sep 25) — BASE GATE EVALUATION PAUSED**
+- **Manual registries claim:** 36 sectors, 35 OpCos, 789 ventures (in YAML)
+- **Supabase ground truth shows:** 25 sector categories, 5 OpCos, 580 ventures (verified live)
+- **Phase 2 audit findings:** 3 catastrophic misclassifications (LT-005/LT-011, venture counts 82-90% wrong, SEC-012 unmapped)
+- **Impact:** Cannot evaluate Base gates until venture assignments verified correct
+- **Status:** AWAITING 4 FOUNDER DECISIONS before Supabase schema expansion
+- **References:** [[SUPABASE-RECONCILIATION-PLAN-2026-09-25|_REGISTRIES/CANONICAL/SUPABASE-RECONCILIATION-PLAN-2026-09-25.md]] + [[AUDIT-PHASE2-FINDINGS-2026-09-25|_REGISTRIES/CANONICAL/AUDIT-PHASE2-FINDINGS-2026-09-25.md]]
 
 📊 **Week 3 Schedule (Sep 23–30):**
 - BASE Phase 1 instantiation (BASE-009, BASE-012, BASE-014) ← Parallel
@@ -125,10 +127,10 @@ WORLDWIDEBRO GROUP (Holding Company)
 - See: [[BASES-CANONICAL-DEFINITION|_ONTOLOGY/BASES-CANONICAL-DEFINITION.md]]
 
 ### Layer 3: Intelligence Graph (Middle)
-- **Neo4j**: 35 Base node clusters + 789 venture nodes + 300+ capability nodes
+- **Neo4j**: 35 Base node clusters + 789 venture nodes + 300+ capability nodes (in progress)
 - **Qdrant**: Semantic search over Base knowledge + venture insights
-- **Supabase**: Real-time state (venture metrics, agent performance, revenue)
-- **Registries**: [[ALL_789_VENTURES_36_SECTOR_ALIGNMENT|_REGISTRIES/CANONICAL/ALL_789_VENTURES_36_SECTOR_ALIGNMENT.csv]] (CURRENT TRUTH)
+- **Supabase** ⭐: **OPERATIONAL GROUND TRUTH** — 25 sector categories, 5 OpCos, 580 real ventures, live state
+- **Registries**: [[ALL_789_VENTURES_36_SECTOR_ALIGNMENT|_REGISTRIES/CANONICAL/ALL_789_VENTURES_36_SECTOR_ALIGNMENT.csv]] (PENDING RECONCILIATION)
 
 ### Layer 4: Coordination & Execution (Middle)
 - **Master Orchestrator**: 13-stage loop (Observe → Understand → Discover → Plan → Decompose → Match → Delegate → Execute → Monitor → Evaluate → Verify → Learn → UpdateBrain)
@@ -163,6 +165,39 @@ Result (Delivery scheduled)
     ↓ (Measure)
 Memory (Learning → future decisions)
 ```
+
+---
+
+## 🛑 CRITICAL: PENDING FOUNDER DECISIONS (Sep 25–26)
+
+**Context:** Phase 2 audit revealed ground truth divergence. Supabase is operational reality (580 ventures, 25 sectors); manual registries claim 789 ventures across 36 sectors. Before proceeding with Supabase schema expansion or Base gate evaluation, these 4 decisions must be made.
+
+### Decision 1: Venture Count Reality
+- **In Supabase:** 580 real ventures (verified)
+- **In our registry:** 789 ventures claimed
+- **Gap:** 209 ventures (26.5% missing)
+- **Question:** Are the 209 missing ventures phantom duplicates, real ventures not yet in Supabase, planned ventures, or misclassified in CSV?
+- **Impact:** Venture counts wrong by 82-90% in some sectors (SEC-014, SEC-024, SEC-029); Base gate evaluation invalid until resolved
+- **See:** AUDIT-PHASE2-FINDINGS #2 (venture count discrepancies)
+
+### Decision 2: Sector Model Direction
+- **Option A:** Expand Supabase sectors from 25 categories → 36 SEC-XXX codes (adds complexity, matches our model)
+- **Option B:** Simplify to 25-category Supabase model (less opinionated, but loses sector granularity)
+- **Option C:** Create mapping layer (both models coexist, more maintenance)
+- **Recommended:** Option A (we've already built the 36-sector model; expand Supabase to match it)
+- **Impact:** Determines entire Phase 2-3 infrastructure build
+
+### Decision 3: Bases Table Location
+- **Option A:** Create `bases` table in Supabase (makes gate tracking queryable, centralizes data)
+- **Option B:** Keep in YAML registries, sync via API (keeps flexibility, more manual)
+- **Recommended:** Option A (queryable state is essential for observability)
+- **Impact:** Where BASE-001 to BASE-036 live and how gate evaluation queries them
+
+### Decision 4: Entities Registry Verification
+- **Finding:** `legal_entities` table exists in Supabase (682 records)
+- **Question:** Is this the entities registry? Does it have correct schema (entity_id, legal_name, entity_type, owner, etc.)?
+- **Impact:** Determines whether we expand it or create separate entities_v2 table
+- **Action:** Query schema: `SELECT column_name, data_type FROM information_schema.columns WHERE table_name='legal_entities';`
 
 ---
 
@@ -364,4 +399,15 @@ gbrain doctor --json               # Health check
 
 ---
 
-**Updated:** 2026-09-19 | **Version:** 4.2 (Phase 2 launched, aligned to ANTIGRAVITY.md, Week 2 execution active, gbrain configured Sep 19)
+## RECONCILIATION ROADMAP (Sep 25–30)
+
+**Phase 1: Data Mapping (Sep 26)** — List existing Supabase data, create mapping document  
+**Phase 2: Infrastructure Build (Sep 27–28)** — Update schemas, create bases table, populate missing data  
+**Phase 3: Verification (Sep 29–30)** — Run audit queries, sync local registries from Supabase  
+
+**Blocker:** Phase 2 audit paused. No Base gate evaluation until venture assignments verified.  
+**Next action:** Founder decisions on 4 critical questions above. Then query Supabase to determine truth.
+
+---
+
+**Updated:** 2026-09-25 | **Version:** 4.3 (Ground truth divergence detected Sep 25, 4 founder decisions pending, reconciliation plan created, Phase 2 audit paused)
