@@ -199,7 +199,9 @@ Memory (Learning → future decisions)
 
 **QUICK REFERENCE**
 
-**BASES Architecture:** [[BASES-CANONICAL-DEFINITION|_ONTOLOGY/BASES-CANONICAL-DEFINITION.md]] (35 governed knowledge/operating domains, Sep 22) — **MASTER CONCEPT**  
+**WHO AM I:** [[WHO-I-AM-ANTWUAN-JOHNS|00-CONSTITUTION/WHO-I-AM-ANTWUAN-JOHNS.md]] (Founder identity + authority + philanthropic mission) — **START HERE for founder context**  
+**PEOPLE + ROLES:** [[PEOPLE-ROLES-INFRASTRUCTURE-BRIDGE|_REFERENCE/PEOPLE-ROLES-INFRASTRUCTURE-BRIDGE.md]] (21 people, 40+ roles, approval chains)  
+**BASES Architecture:** [[BASES-CANONICAL-DEFINITION|_ONTOLOGY/BASES-CANONICAL-DEFINITION.md]] (35 governed knowledge/operating domains, Sep 22)  
 **BASE Instantiation Plan:** [[BASE-INSTANTIATION-AGENTIC-PLAN|20-DECISIONS/BASE-INSTANTIATION-AGENTIC-PLAN.md]] (agentic engineering, 6 weeks, Sep 23 kickoff)  
 **VEX Ecosystem:** [[VEX|VEX.md]] (public CommandCenter + real-time dashboard)  
 **Venture Alignment:** [[ALL_789_VENTURES_36_SECTOR_ALIGNMENT|_REGISTRIES/CANONICAL/ALL_789_VENTURES_36_SECTOR_ALIGNMENT.csv]] (all 789 ventures → OpCos → Bases)
