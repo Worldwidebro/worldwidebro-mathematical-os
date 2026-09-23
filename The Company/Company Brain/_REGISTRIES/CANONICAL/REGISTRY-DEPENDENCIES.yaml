@@ -1,0 +1,351 @@
+---
+name: REGISTRY-DEPENDENCIES
+version: "1.0"
+description: Data flow map between all 33 registries — shows what feeds what
+authority: CP-001 (Sovereign Operator)
+status: ACTIVE
+created: 2026-09-25
+updated: 2026-09-25
+base_id: B001
+
+# REGISTRY DEPENDENCY GRAPH
+# Shows which registries are consumed by which others
+# Enables impact analysis before registry changes
+
+dependencies:
+  # AGENTS_REGISTRY feeds to:
+  AGENTS_REGISTRY:
+    feeds_to:
+      - CONTROL_BASES_REGISTRY
+        via: "agent assignment per base"
+        frequency: "weekly"
+      - PEOPLE-REGISTRY
+        via: "agent manager relationship"
+        frequency: "monthly"
+      - SCENARIOS_REGISTRY
+        via: "agent role in scenario"
+        frequency: "weekly"
+      - ROLES-REGISTRY
+        via: "agent permission mapping"
+        frequency: "monthly"
+    consumed_by:
+      - AGENT_MASTER_REGISTRY (planned)
+      - CONTROL_BASES_REGISTRY
+    base_link: "[[B027|Control Base B027]]"
+
+  # VENTURES_REGISTRY feeds to:
+  VENTURES_REGISTRY:
+    feeds_to:
+      - CONTROL_BASES_REGISTRY
+        via: "ventures in base"
+        frequency: "daily"
+      - REVENUE_EVIDENCE_REGISTRY
+        via: "venture revenue tracking"
+        frequency: "daily"
+      - CAPABILITY_REGISTRY
+        via: "venture capability requirements"
+        frequency: "weekly"
+      - BUSINESS-METRIC_REGISTRY
+        via: "venture KPI data"
+        frequency: "daily"
+      - SITES_REGISTRY
+        via: "venture deployment URLs"
+        frequency: "weekly"
+    consumed_by:
+      - CONTROL_BASES_REGISTRY
+      - SCENARIOS_REGISTRY
+    source: "Supabase (live, authoritative)"
+    base_link: "[[B050|Control Base B050]]"
+
+  # SECTORS_REGISTRY feeds to:
+  SECTORS_REGISTRY:
+    feeds_to:
+      - VENTURES_REGISTRY
+        via: "sector assignment per venture"
+        frequency: "quarterly"
+      - CONTROL_BASES_REGISTRY
+        via: "1 base per sector"
+        frequency: "quarterly"
+      - OPCOS_REGISTRY
+        via: "sector → opco mapping"
+        frequency: "quarterly"
+      - CAPABILITY_REGISTRY
+        via: "sector capability coverage"
+        frequency: "monthly"
+    consumed_by:
+      - VENTURES_REGISTRY
+      - CONTROL_BASES_REGISTRY
+    base_link: "[[B001|Control Base B001]]"
+
+  # OPCOS_REGISTRY feeds to:
+  OPCOS_REGISTRY:
+    feeds_to:
+      - VENTURES_REGISTRY
+        via: "venture opco assignment"
+        frequency: "quarterly"
+      - CONTROL_BASES_REGISTRY
+        via: "opco control assignments"
+        frequency: "quarterly"
+      - REVENUE_EVIDENCE_REGISTRY
+        via: "opco revenue aggregation"
+        frequency: "monthly"
+    consumed_by:
+      - VENTURES_REGISTRY
+      - CONTROL_BASES_REGISTRY
+    base_link: "[[B050|Control Base B050]]"
+
+  # CAPABILITY_REGISTRY feeds to:
+  CAPABILITY_REGISTRY:
+    feeds_to:
+      - SKILL_REGISTRY
+        via: "capability → skill mapping"
+        frequency: "monthly"
+      - TOOL_GATEWAY_REGISTRY
+        via: "capability → tool implementation"
+        frequency: "weekly"
+      - CONTROL_BASES_REGISTRY
+        via: "base required capabilities"
+        frequency: "monthly"
+      - VENTURES_REGISTRY
+        via: "venture capability requirements"
+        frequency: "weekly"
+    consumed_by:
+      - SKILL_REGISTRY
+      - TOOL_GATEWAY_REGISTRY
+      - CONTROL_BASES_REGISTRY
+    base_link: "[[B027|Control Base B027]]"
+
+  # SKILL_REGISTRY feeds to:
+  SKILL_REGISTRY:
+    feeds_to:
+      - AGENTS_REGISTRY
+        via: "agent skill assignment"
+        frequency: "weekly"
+      - CONTROL_BASES_REGISTRY
+        via: "base required skills"
+        frequency: "monthly"
+    consumed_by:
+      - AGENTS_REGISTRY
+      - CONTROL_BASES_REGISTRY
+    base_link: "[[B027|Control Base B027]]"
+
+  # TOOL_GATEWAY_REGISTRY feeds to:
+  TOOL_GATEWAY_REGISTRY:
+    feeds_to:
+      - AGENTS_REGISTRY
+        via: "agent tool access"
+        frequency: "weekly"
+      - CONTROL_BASES_REGISTRY
+        via: "base tool availability"
+        frequency: "weekly"
+    consumed_by:
+      - AGENTS_REGISTRY
+      - CONTROL_BASES_REGISTRY
+    base_link: "[[B027|Control Base B027]]"
+
+  # PEOPLE-REGISTRY feeds to:
+  PEOPLE-REGISTRY:
+    feeds_to:
+      - AGENTS_REGISTRY
+        via: "agent owner relationship"
+        frequency: "monthly"
+      - ROLES-REGISTRY
+        via: "person role assignments"
+        frequency: "monthly"
+      - CONTROL_BASES_REGISTRY
+        via: "base owner/manager"
+        frequency: "monthly"
+    consumed_by:
+      - AGENTS_REGISTRY
+      - ROLES-REGISTRY
+      - CONTROL_BASES_REGISTRY
+    base_link: "[[B032|Control Base B032]]"
+
+  # ROLES-REGISTRY feeds to:
+  ROLES-REGISTRY:
+    feeds_to:
+      - PEOPLE-REGISTRY
+        via: "person role assignment"
+        frequency: "monthly"
+      - AGENTS_REGISTRY
+        via: "agent RBAC permissions"
+        frequency: "monthly"
+      - CONTROL_BASES_REGISTRY
+        via: "base role requirements"
+        frequency: "quarterly"
+    consumed_by:
+      - PEOPLE-REGISTRY
+      - AGENTS_REGISTRY
+      - CONTROL_BASES_REGISTRY
+    base_link: "[[B032|Control Base B032]]"
+
+  # CONTROL_BASES_REGISTRY feeds to:
+  CONTROL_BASES_REGISTRY:
+    feeds_to:
+      - AGENTS_REGISTRY
+        via: "agent base assignment"
+        frequency: "weekly"
+      - VENTURES_REGISTRY
+        via: "base venture ownership"
+        frequency: "daily"
+      - SCENARIOS_REGISTRY
+        via: "base scenario availability"
+        frequency: "weekly"
+      - CONTROL_POINTS_REGISTRY
+        via: "base governance chain"
+        frequency: "quarterly"
+    consumed_by:
+      - AGENTS_REGISTRY
+      - VENTURES_REGISTRY
+      - SCENARIOS_REGISTRY
+      - All other registries (aggregated state)
+    base_link: "[[B001|Control Base B001]]"
+    note: "Master control registry — feeds state to all others"
+
+  # CONTROL_POINTS_REGISTRY feeds to:
+  CONTROL_POINTS_REGISTRY:
+    feeds_to:
+      - CONTROL_BASES_REGISTRY
+        via: "governance hierarchy (CP → B)"
+        frequency: "quarterly"
+    consumed_by:
+      - CONTROL_BASES_REGISTRY
+    base_link: "[[B001|Control Base B001]]"
+
+  # REPOSITORY_REGISTRY feeds to:
+  REPOSITORY_REGISTRY:
+    feeds_to:
+      - CAPABILITY_REGISTRY
+        via: "capability implementation repo"
+        frequency: "monthly"
+      - CONTROL_BASES_REGISTRY
+        via: "base repo inventory"
+        frequency: "monthly"
+    consumed_by:
+      - CAPABILITY_REGISTRY
+      - CONTROL_BASES_REGISTRY
+    base_link: "[[B027|Control Base B027]]"
+
+  # BUSINESS-METRIC_REGISTRY feeds to:
+  BUSINESS-METRIC_REGISTRY:
+    feeds_to:
+      - VENTURES_REGISTRY
+        via: "venture KPI values"
+        frequency: "daily"
+      - REVENUE_EVIDENCE_REGISTRY
+        via: "metric as revenue proof"
+        frequency: "weekly"
+      - CONTROL_BASES_REGISTRY
+        via: "base health metrics"
+        frequency: "daily"
+    consumed_by:
+      - VENTURES_REGISTRY
+      - REVENUE_EVIDENCE_REGISTRY
+      - CONTROL_BASES_REGISTRY
+    base_link: "[[B050|Control Base B050]]"
+
+  # SITES_REGISTRY feeds to:
+  SITES_REGISTRY:
+    feeds_to:
+      - VENTURES_REGISTRY
+        via: "venture deployed URL"
+        frequency: "weekly"
+      - CONTROL_BASES_REGISTRY
+        via: "base deployment status"
+        frequency: "weekly"
+    consumed_by:
+      - VENTURES_REGISTRY
+      - CONTROL_BASES_REGISTRY
+    base_link: "[[B027|Control Base B027]]"
+
+  # SCENARIOS_REGISTRY feeds to:
+  SCENARIOS_REGISTRY:
+    feeds_to:
+      - AGENTS_REGISTRY
+        via: "scenario agent roles"
+        frequency: "weekly"
+      - VENTURES_REGISTRY
+        via: "scenario venture execution"
+        frequency: "weekly"
+    consumed_by:
+      - AGENTS_REGISTRY
+      - VENTURES_REGISTRY
+    base_link: "[[B027|Control Base B027]]"
+
+# MISSING REGISTRIES (PLANNED) - DEPENDENCY CHAINS
+
+  TERMINOLOGY_REGISTRY_PLANNED:
+    purpose: "Normalize 50+ duplicate terms across all registries"
+    feeds_to:
+      - "ALL REGISTRIES"
+        via: "canonical term enforcement"
+        frequency: "continuous (linter)"
+    blocker: true
+    base_link: "[[B001|Control Base B001]]"
+
+  AGENT_MASTER_REGISTRY_PLANNED:
+    purpose: "Consolidate 318 agent definitions from scattered files"
+    feeds_to:
+      - AGENTS_REGISTRY
+        via: "authoritative agent defs"
+        frequency: "weekly"
+    blocker: false
+    base_link: "[[B027|Control Base B027]]"
+
+  LIFECYCLE_REGISTRY_PLANNED:
+    purpose: "Define state enums per entity type"
+    feeds_to:
+      - "ALL REGISTRIES"
+        via: "status/lifecycle field values"
+        frequency: "continuous"
+    blocker: true
+    base_link: "[[B001|Control Base B001]]"
+
+  ENVIRONMENT_REGISTRY_PLANNED:
+    purpose: "Define deployment environment enums"
+    feeds_to:
+      - SITES_REGISTRY
+        via: "site environment assignment"
+        frequency: "quarterly"
+      - CONTROL_BASES_REGISTRY
+        via: "base environment"
+        frequency: "quarterly"
+    blocker: true
+    base_link: "[[B027|Control Base B027]]"
+
+---
+
+**Critical Dependency Chains:**
+
+1. **CONTROL_BASES_REGISTRY is the hub** — changes here ripple to all other registries
+2. **VENTURES_REGISTRY is live (Supabase)** — primary source of truth for venture data
+3. **TERMINOLOGY_REGISTRY is a blocker** — must exist before any other changes
+
+**Data Quality Principles:**
+
+1. **Authoritative Source Rule:** Each registry has exactly ONE source of truth
+2. **No Circular Dependencies:** All feeds form DAG (directed acyclic graph), no cycles
+3. **Freshness Guarantees:** Each feed has explicit frequency (daily/weekly/monthly/quarterly)
+4. **Change Propagation:** When source registry updates, all downstream registries must be re-derived
+
+**Example Cascade (VENTURES_REGISTRY changes):**
+
+```
+VENTURES_REGISTRY updates (Supabase live)
+  ↓
+CONTROL_BASES_REGISTRY re-derives (ventures in base)
+  ↓
+BUSINESS-METRIC_REGISTRY updates (base health metrics)
+  ↓
+REVENUE_EVIDENCE_REGISTRY updates (revenue attribution)
+  ↓ (observed in Neo4j after 24h SLA)
+```
+
+**To Add a New Registry:**
+
+1. Define it in META-REGISTRY.yaml
+2. Add its dependencies here
+3. Specify source of truth
+4. Enforce freshness SLA
+5. Wire to Base via base_link
+6. Test upstream cascades

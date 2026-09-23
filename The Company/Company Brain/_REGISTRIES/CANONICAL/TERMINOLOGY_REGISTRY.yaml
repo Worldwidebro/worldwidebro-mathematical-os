@@ -1,0 +1,378 @@
+---
+name: TERMINOLOGY_REGISTRY
+version: "1.0"
+description: Canonical terminology mapping — 50+ terms normalized to single forms
+authority: CP-001 (Sovereign Operator)
+status: ACTIVE
+created: 2026-09-25
+updated: 2026-09-25
+base_id: B001
+
+# TERMINOLOGY CONSOLIDATION
+# Problem: 50+ duplicate terms cause Neo4j entity resolution failures
+# Solution: Single canonical form per concept, all variants mapped
+# Enforcement: Git hook linter pre-commit
+
+terminology:
+  # VENTURE & COMPANY TERMINOLOGY
+  venture:
+    canonical: "venture"
+    id_prefix: "VEN"
+    variants:
+      - "venture"
+      - "Venture"
+      - "VENTURE"
+      - "company"
+      - "Company"
+      - "business_unit"
+      - "operating_venture"
+      - "business"
+    wiki_link: "[[Venture]]"
+    base_link: "[[B050|Control Base B050]]"
+    count_in_codebase: 295
+    neo4j_node_type: "(:Entity:Venture)"
+
+  operating_company:
+    canonical: "operating_company"
+    id_prefix: "OPC"
+    variants:
+      - "opco"
+      - "OpCo"
+      - "OPC"
+      - "operating_company"
+      - "operating company"
+    wiki_link: "[[Operating Company]]"
+    base_link: "[[B050|Control Base B050]]"
+    count_in_codebase: 102
+    neo4j_node_type: "(:Entity:OpCo)"
+
+  sector:
+    canonical: "sector"
+    id_prefix: "SEC"
+    variants:
+      - "sector"
+      - "Sector"
+      - "SECTOR"
+      - "industry"
+      - "vertical"
+      - "domain"
+      - "business_domain"
+      - "knowledge_domain"
+      - "category"
+      - "segment"
+    wiki_link: "[[Sector]]"
+    base_link: "[[B001|Control Base B001]]"
+    count_in_codebase: 108
+    neo4j_node_type: "(:Entity:Sector)"
+    note: "Do NOT use 'domain' for sector — reserved for numbered domains (00-50)"
+
+  # CONTROL & GOVERNANCE TERMINOLOGY
+  control_point:
+    canonical: "control_point"
+    id_prefix: "CP"
+    variants:
+      - "control_point"
+      - "control point"
+      - "CP"
+      - "control-point"
+      - "governance_point"
+    wiki_link: "[[Control Point]]"
+    base_link: "[[B001|Control Base B001]]"
+    count_in_codebase: 101
+    neo4j_node_type: "(:ControlPoint)"
+
+  control_base:
+    canonical: "control_base"
+    id_prefix: "B"
+    variants:
+      - "control_base"
+      - "control base"
+      - "Base"
+      - "base"
+      - "atomic_control_surface"
+      - "B###"
+    wiki_link: "[[Control Base]]"
+    base_link: "[[B001|Control Base B001]]"
+    count_in_codebase: 50
+    neo4j_node_type: "(:ControlBase)"
+    note: "Distinct from numbered_domain (00-50) and sector_base (BASE-001 to BASE-036)"
+
+  control_plane:
+    canonical: "control_plane"
+    variants:
+      - "control_plane"
+      - "control plane"
+      - "plane"
+      - "infrastructure_plane"
+      - "financial_plane"
+      - "operational_plane"
+    wiki_link: "[[Control Plane]]"
+    base_link: "[[B001|Control Base B001]]"
+    count_in_codebase: 45
+    enum_values:
+      - "infrastructure"
+      - "financial"
+      - "operational"
+      - "cognitive"
+    neo4j_property_type: "enum"
+
+  # DEPLOYMENT & ACTIVATION TERMINOLOGY
+  lifecycle_state:
+    canonical: "lifecycle_state"
+    variants:
+      - "state"
+      - "status"
+      - "deploy_status"
+      - "activation_status"
+    wiki_link: "[[Lifecycle]]"
+    base_link: "[[B001|Control Base B001]]"
+    enum_values:
+      - "DESIGNED"
+      - "INSTANTIATED"
+      - "ACTIVATED"
+      - "DEPLOYED"
+      - "MONITORING"
+      - "DECOMMISSIONED"
+    neo4j_property_type: "enum"
+
+  # TESTING & VERIFICATION TERMINOLOGY
+  verification_type:
+    canonical: "verification_type"
+    variants:
+      - "test"
+      - "testing"
+      - "verification"
+      - "validation"
+      - "audit"
+      - "gate"
+    wiki_link: "[[Verification]]"
+    base_link: "[[B027|Control Base B027]]"
+    enum_values:
+      - "test"
+      - "validation"
+      - "verification"
+      - "audit"
+      - "gate"
+    neo4j_property_type: "enum"
+
+  # AGENT TERMINOLOGY
+  agent:
+    canonical: "agent"
+    id_prefix: "AGT"
+    variants:
+      - "agent"
+      - "Agent"
+      - "AGENT"
+      - "AGT"
+      - "autonomous_agent"
+      - "ai_agent"
+    wiki_link: "[[Agent]]"
+    base_link: "[[B027|Control Base B027]]"
+    count_in_codebase: 200
+    neo4j_node_type: "(:Entity:Agent)"
+
+  skill:
+    canonical: "skill"
+    id_prefix: "SKL"
+    variants:
+      - "skill"
+      - "Skill"
+      - "SKILL"
+      - "SKL"
+      - "competency"
+      - "procedure"
+      - "capability"
+    wiki_link: "[[Skill]]"
+    base_link: "[[B027|Control Base B027]]"
+    count_in_codebase: 80
+    neo4j_node_type: "(:Skill)"
+
+  tool:
+    canonical: "tool"
+    id_prefix: "TOL"
+    variants:
+      - "tool"
+      - "Tool"
+      - "TOOL"
+      - "TOL"
+      - "capability"
+      - "external_capability"
+    wiki_link: "[[Tool]]"
+    base_link: "[[B027|Control Base B027]]"
+    count_in_codebase: 100
+    neo4j_node_type: "(:Tool)"
+
+  # CAPABILITY TERMINOLOGY
+  capability:
+    canonical: "capability"
+    id_prefix: "CAP"
+    variants:
+      - "capability"
+      - "Capability"
+      - "CAPABILITY"
+      - "CAP"
+      - "competency"
+      - "feature"
+      - "function"
+    wiki_link: "[[Capability]]"
+    base_link: "[[B027|Control Base B027]]"
+    count_in_codebase: 286
+    neo4j_node_type: "(:Capability)"
+
+  # ENTITY ID TERMINOLOGY
+  entity_id:
+    canonical: "entity_id"
+    variants:
+      - "id"
+      - "entity_id"
+      - "machine_id"
+      - "ulid"
+      - "uuid"
+    wiki_link: "[[Entity ID]]"
+    base_link: "[[B001|Control Base B001]]"
+    format: "ULID (01K4X7G2Y5H9J8ABC123XYZ456)"
+
+  ref_id:
+    canonical: "ref_id"
+    variants:
+      - "ref_id"
+      - "reference_id"
+      - "human_id"
+      - "readable_id"
+    wiki_link: "[[Reference ID]]"
+    base_link: "[[B001|Control Base B001]]"
+    format: "TYPE-000001 (CAP-000247, VEN-001, SEC-001)"
+
+  # ENVIRONMENT TERMINOLOGY
+  environment:
+    canonical: "environment"
+    variants:
+      - "env"
+      - "environment"
+      - "local"
+      - "staging"
+      - "production"
+      - "prod"
+    wiki_link: "[[Environment]]"
+    base_link: "[[B027|Control Base B027]]"
+    enum_values:
+      - "local"
+      - "staging"
+      - "production"
+    neo4j_property_type: "enum"
+
+  # RELATIONSHIP TERMINOLOGY
+  relationship:
+    canonical: "relationship"
+    variants:
+      - "relationship"
+      - "edge"
+      - "connection"
+      - "link"
+      - "association"
+    wiki_link: "[[Relationship]]"
+    base_link: "[[B001|Control Base B001]]"
+    neo4j_concept: "relationship type (OPERATES_IN, REQUIRES, etc.)"
+
+  # DOMAIN TERMINOLOGY (CRITICAL: Do not confuse with sector)
+  numbered_domain:
+    canonical: "numbered_domain"
+    id_format: "00-CONSTITUTION to 50-MASTER-CONTROL"
+    variants:
+      - "domain"
+      - "numbered_domain"
+      - "folder_domain"
+      - "00-CONSTITUTION"
+      - "01-IDENTITY"
+      - "domain_00"
+    wiki_link: "[[Numbered Domain]]"
+    base_link: "[[B001|Control Base B001]]"
+    note: "Do NOT use 'domain' alone — always say 'numbered_domain' or use full folder name"
+
+  # REPOSITORY TERMINOLOGY
+  repository:
+    canonical: "repository"
+    id_prefix: "REP"
+    variants:
+      - "repo"
+      - "repository"
+      - "Repository"
+      - "REPOSITORY"
+      - "REP"
+      - "github_repo"
+    wiki_link: "[[Repository]]"
+    base_link: "[[B027|Control Base B027]]"
+    count_in_codebase: 150
+    neo4j_node_type: "(:Repository)"
+
+  # ORCHESTRATION TERMINOLOGY
+  workflow:
+    canonical: "workflow"
+    id_prefix: "WFL"
+    variants:
+      - "workflow"
+      - "Workflow"
+      - "WORKFLOW"
+      - "WFL"
+      - "process"
+      - "procedure"
+      - "sequence"
+    wiki_link: "[[Workflow]]"
+    base_link: "[[B027|Control Base B027]]"
+    neo4j_node_type: "(:Workflow)"
+
+  # EXECUTION TERMINOLOGY
+  task:
+    canonical: "task"
+    variants:
+      - "task"
+      - "Task"
+      - "TASK"
+      - "work_item"
+      - "item"
+      - "action"
+    wiki_link: "[[Task]]"
+    base_link: "[[B027|Control Base B027]]"
+    neo4j_node_type: "(:Task)"
+
+  # DECISION TERMINOLOGY
+  decision:
+    canonical: "decision"
+    id_prefix: "DEC"
+    variants:
+      - "decision"
+      - "Decision"
+      - "DECISION"
+      - "DEC"
+      - "choice"
+      - "selection"
+    wiki_link: "[[Decision]]"
+    base_link: "[[B027|Control Base B027]]"
+    neo4j_node_type: "(:Decision)"
+
+---
+
+**Application Rules:**
+
+1. **Code Replacement:** Replace all variants with canonical form in codebase
+2. **Neo4j Queries:** Use canonical names in Cypher queries
+3. **Documentation:** Use canonical forms in all docs (MD, YAML)
+4. **Git Hook:** Pre-commit linter enforces canonical terminology
+5. **Database:** All entity properties use canonical snake_case
+
+**Example Enforcement:**
+
+```bash
+# WRONG — uses variant
+MATCH (v:Venture) WHERE v.status = "deploy"
+
+# RIGHT — uses canonical
+MATCH (v:Entity:Venture) WHERE v.lifecycle_state = "DEPLOYED"
+```
+
+**Mapping to Bases:**
+- All terminology owned by B001 (Sovereign)
+- Sub-terms managed by domain-specific Bases:
+  - Agent terminology → B027 (Orchestration)
+  - Capital terminology → B050 (Revenue & Capital)
+  - Deployment terminology → B027 (Infrastructure)
