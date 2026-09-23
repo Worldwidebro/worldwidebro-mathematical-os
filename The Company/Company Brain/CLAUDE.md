@@ -11,12 +11,13 @@
 
 ✅ **Phase 1 LOCKED** (Sep 6-15) — Agent Enablement complete, audit system operational  
 ✅ **Phase 2 LAUNCHED** (Sep 16-30) — Graph-native refactor (Neo4j schema deployment Sep 18)  
-✅ **Infrastructure LIVE** — Neo4j (20,363 edges, constraints deployed), Qdrant (17,236 vectors), OmniRoute, Ollama  
-✅ **Folder Structure AUDITED** — 132 directories (71 domains + 24 infrastructure + 37 additional), 36 sectors, 789 ventures, 59 canonical registries (see [[AUDIT-2026-09-22|_REFERENCE/AUDIT-2026-09-22.md]])
-✅ **6 Tier-0 Ventures + Week 2 Execution** → Week 2 results TBD, Week 3 planning active
-✅ **36-Sector Model LIVE** — Executive divisions, portfolio horizons, archetypes mapped in ALL_789_VENTURES_36_SECTOR_ALIGNMENT.csv (Sep 22)
+✅ **Phase 2a PLANNED** (Oct 1 onward) — Agentic scaling (318 agents coordinated across Bases)
+✅ **Bases Architecture DEFINED** (Sep 22) — 35 bounded knowledge/operating domains, standard schema, agentic instantiation plan (6 weeks, $1.2K)
+✅ **Infrastructure LIVE** — Neo4j (20,363 edges), Qdrant (17,236 vectors), OmniRoute, Ollama  
+✅ **Folder Structure AUDITED** — 132 directories (71 domains + 24 infrastructure), 36 sectors, 789 ventures, 59 canonical registries
+✅ **6 Tier-0 Ventures + Week 2 Execution** → Executing revenue loops (OPS-001, LT-005, CALLCENTER)
 
-📊 **Week 2 Result:** (Sep 10-22 execution recap needed) | **Week 3 Target:** Deploy graph queries + scale 3 revenue loops
+📊 **Week 3 Kickoff (Sep 23):** BASE Phase 1 instantiation (BASE-009, BASE-012, BASE-014) | **Target:** 3 production-ready Bases by Oct 6
 
 ---
 
@@ -53,12 +54,15 @@
 
 ## QUICK REFERENCE
 
+**BASES Architecture:** [[BASES-CANONICAL-DEFINITION|_ONTOLOGY/BASES-CANONICAL-DEFINITION.md]] (35 governed knowledge/operating domains, Sep 22) — **MASTER CONCEPT**  
+**BASE Instantiation Plan:** [[BASE-INSTANTIATION-AGENTIC-PLAN|20-DECISIONS/BASE-INSTANTIATION-AGENTIC-PLAN.md]] (agentic engineering, 6 weeks, Sep 23 kickoff)
+
 **Audit Trail:** [[AUDIT-2026-09-22|_REFERENCE/AUDIT-2026-09-22.md]] (verified folder structure, sector count, registries, dual naming conflicts)  
 **Logic Architecture:** [[_DOCS/LOGIC-ARCHITECTURE-FRAMEWORK.md]] (72 logic layers, 12 executive divisions, 250+ control points, autonomous loop patterns) — [[_REGISTRIES/CANONICAL/LOGIC_LAYERS_REGISTRY.yaml|Master Registry]]  
 **Infrastructure Status:** [[INFRASTRUCTURE-STATUS-2026-09|_REFERENCE/INFRASTRUCTURE-STATUS-2026-09.md]]  
 **Venture Roadmap:** [[VENTURE-ROADMAP-2026-09|_REFERENCE/VENTURE-ROADMAP-2026-09.md]]  
-**36-Sector Model:** [[ALL_789_VENTURES_36_SECTOR_ALIGNMENT|_REGISTRIES/CANONICAL/ALL_789_VENTURES_36_SECTOR_ALIGNMENT.csv]] (Sep 22) — **CURRENT TRUTH**
-**Family Office Architecture:** [[FAMILY_OFFICE_ECOSYSTEM_ALIGNMENT_MASTER|_REGISTRIES/CANONICAL/FAMILY_OFFICE_ECOSYSTEM_ALIGNMENT_MASTER.csv]] (Sep 22, NEW)
+**36-Sector Model:** [[ALL_789_VENTURES_36_SECTOR_ALIGNMENT|_REGISTRIES/CANONICAL/ALL_789_VENTURES_36_SECTOR_ALIGNMENT.csv]] (Sep 22) — SECTOR mapping  
+**Family Office Architecture:** [[FAMILY_OFFICE_ECOSYSTEM_ALIGNMENT_MASTER|_REGISTRIES/CANONICAL/FAMILY_OFFICE_ECOSYSTEM_ALIGNMENT_MASTER.csv]] (Sep 22)
 
 **Quick Commands:**
 ```bash
