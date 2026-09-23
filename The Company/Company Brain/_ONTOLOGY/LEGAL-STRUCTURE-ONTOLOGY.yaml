@@ -1,0 +1,478 @@
+---
+# LEGAL-STRUCTURE-ONTOLOGY.yaml
+# 200-Node Legal Structure Type Hierarchy (Bracketed & Graph-Ready)
+# Authority: CP-001 (Sovereign Operator)
+# Generated: 2026-09-25
+# Purpose: Define canonical legal entity types for all instances
+
+legal_structure_ontology:
+
+  # ROOT: All legal structures descend from this
+  root:
+    id: "LEGAL-STRUCTURE-ROOT"
+    name: "[[Legal_Structure]]"
+    entity_class: "ROOT"
+    description: "Universe of all legal structures, entities, fiduciary arrangements, and governance vehicles"
+    jurisdiction: "Universal"
+    status: "CANONICAL"
+
+  # TIER 1: Major Categories
+  category_person:
+    id: "CAT-001"
+    name: "[[Person]]"
+    entity_class: "ACTOR"
+    parent: [[Legal_Structure]]
+    description: "Individual persons (not legal entities)"
+    children:
+      - [[Individual]]
+      - [[Trustee]]
+      - [[Executor]]
+      - [[General_Partner]]
+      - [[Limited_Partner]]
+      - [[Managing_Member]]
+
+  category_legal_entity:
+    id: "CAT-002"
+    name: "[[Legal_Entity]]"
+    entity_class: "CATEGORY"
+    parent: [[Legal_Structure]]
+    description: "Formally incorporated or registered legal entities"
+    children:
+      - [[Corporation]]
+      - [[LLC]]
+      - [[Partnership]]
+      - [[Cooperative]]
+      - [[Nonprofit]]
+
+  category_trust:
+    id: "CAT-003"
+    name: "[[Trust]]"
+    entity_class: "CATEGORY"
+    parent: [[Legal_Structure]]
+    description: "Fiduciary arrangements with trustee, grantor, beneficiaries"
+    children:
+      - [[Revocable_Living_Trust]]
+      - [[Irrevocable_Trust]]
+      - [[Charitable_Trust]]
+      - [[Special_Needs_Trust]]
+
+  category_estate:
+    id: "CAT-004"
+    name: "[[Estate]]"
+    entity_class: "CATEGORY"
+    parent: [[Legal_Structure]]
+    description: "Probate estates and testamentary arrangements"
+    children:
+      - [[Probate_Estate]]
+      - [[Estate_Holding_Entity]]
+
+  category_spv:
+    id: "CAT-005"
+    name: "[[Special_Purpose_Vehicle]]"
+    entity_class: "CATEGORY"
+    parent: [[Legal_Structure]]
+    description: "Structural vehicles (NOT standalone legal forms, but arrangements)"
+    children:
+      - [[Single_Purpose_Entity]]
+      - [[Project_Company]]
+      - [[Acquisition_SPV]]
+      - [[Financing_SPV]]
+
+  category_fund:
+    id: "CAT-006"
+    name: "[[Fund]]"
+    entity_class: "CATEGORY"
+    parent: [[Legal_Structure]]
+    description: "Investment funds and pooled vehicles"
+    children:
+      - [[Private_Equity_Fund]]
+      - [[Venture_Capital_Fund]]
+      - [[Hedge_Fund]]
+      - [[Real_Estate_Fund]]
+
+  category_holding:
+    id: "CAT-007"
+    name: "[[Holding_Company]]"
+    entity_class: "CATEGORY"
+    parent: [[Legal_Structure]]
+    description: "Holding and parent companies (control vehicles)"
+    children:
+      - [[Parent_Company]]
+      - [[Family_Holding_Company]]
+      - [[Asset_Holding_Company]]
+      - [[Intellectual_Property_Holding_Company]]
+
+  category_property_vehicle:
+    id: "CAT-008"
+    name: "[[Property_Vehicle]]"
+    entity_class: "CATEGORY"
+    parent: [[Legal_Structure]]
+    description: "Real estate and property structures"
+    children:
+      - [[Property_Holding_LLC]]
+      - [[Real_Estate_Development_Company]]
+      - [[Construction_Operating_Company]]
+
+  category_ip_vehicle:
+    id: "CAT-009"
+    name: "[[IP_Vehicle]]"
+    entity_class: "CATEGORY"
+    parent: [[Legal_Structure]]
+    description: "Intellectual property holding and licensing"
+    children:
+      - [[Software_Holding_Company]]
+      - [[Patent_Holding_Company]]
+      - [[Licensing_Company]]
+
+  category_governance:
+    id: "CAT-010"
+    name: "[[Governance_Structure]]"
+    entity_class: "CATEGORY"
+    parent: [[Legal_Structure]]
+    description: "Governance arrangements and control structures"
+    children:
+      - [[Management_Agreement_Entity]]
+      - [[Voting_Agreement_Entity]]
+      - [[Nominee_Ownership_Arrangement]]
+
+  # TIER 2: Legal Entity Types
+  corporation_category:
+    id: "CORP-CAT"
+    name: "[[Corporation]]"
+    entity_class: "LEGAL_ENTITY_TYPE"
+    parent: [[Legal_Entity]]
+    types:
+      - id: "001"
+        name: "[[C_Corporation]]"
+        jurisdiction: "US"
+        tax_classification: "C-Corp (1120)"
+        default_ownership: "Shareholders"
+        liability: "Limited"
+
+      - id: "002"
+        name: "[[S_Corporation]]"
+        jurisdiction: "US"
+        tax_classification: "S-Corp (1120-S)"
+        default_ownership: "Limited shareholders (100 max)"
+        liability: "Limited"
+
+      - id: "003"
+        name: "[[Close_Corporation]]"
+        jurisdiction: "Jurisdiction-specific"
+        tax_classification: "C-Corp variant"
+        default_ownership: "Limited shareholders"
+        liability: "Limited"
+
+      - id: "004"
+        name: "[[Professional_Corporation]]"
+        jurisdiction: "State-regulated"
+        description: "For licensed professionals (doctors, lawyers, accountants)"
+        liability: "Limited (with professional liability)"
+
+      - id: "005"
+        name: "[[Nonprofit_Corporation]]"
+        jurisdiction: "State (501c3 at federal)"
+        tax_classification: "501c3"
+        default_ownership: "Members/Directors (no shareholders)"
+        liability: "Limited"
+
+      - id: "006"
+        name: "[[Public_Benefit_Corporation]]"
+        jurisdiction: "State-specific"
+        description: "For-profit with stated public benefit mission"
+        liability: "Limited"
+
+      - id: "007"
+        name: "[[Benefit_Corporation]]"
+        jurisdiction: "State-specific"
+        description: "For-profit structured for multiple stakeholders"
+        liability: "Limited"
+
+  llc_category:
+    id: "LLC-CAT"
+    name: "[[LLC]]"
+    entity_class: "LEGAL_ENTITY_TYPE"
+    parent: [[Legal_Entity]]
+    types:
+      - id: "046"
+        name: "[[Single_Member_LLC]]"
+        default_management: "Owner-managed"
+        default_tax: "Disregarded entity or S-Corp election"
+
+      - id: "047"
+        name: "[[Multi_Member_LLC]]"
+        default_management: "Manager-managed or member-managed"
+        default_tax: "Partnership tax treatment"
+
+      - id: "050"
+        name: "[[Series_LLC]]"
+        jurisdiction: "Delaware, others"
+        description: "Multiple segregated series within one LLC"
+
+      - id: "052"
+        name: "[[Professional_LLC]]"
+        jurisdiction: "State-regulated"
+        description: "For licensed professionals"
+
+      - id: "053"
+        name: "[[Low_Profit_LLC]]"
+        tax_classification: "L3C"
+        description: "For social enterprises"
+
+  partnership_category:
+    id: "PART-CAT"
+    name: "[[Partnership]]"
+    entity_class: "LEGAL_ENTITY_TYPE"
+    parent: [[Legal_Entity]]
+    types:
+      - id: "061"
+        name: "[[General_Partnership]]"
+        liability: "Unlimited personal liability"
+        default_tax: "Partnership tax treatment"
+
+      - id: "062"
+        name: "[[Limited_Partnership]]"
+        structure: "General partner (unlimited liability) + Limited partners (limited liability)"
+        default_tax: "Partnership tax treatment"
+
+      - id: "064"
+        name: "[[Family_Limited_Partnership]]"
+        use_case: "Estate planning and family wealth"
+
+      - id: "058"
+        name: "[[Limited_Liability_Partnership]]"
+        liability: "Limited for all partners"
+        professional_use: "Common for law/accounting firms"
+
+  trust_types:
+    id: "TRUST-CAT"
+    name: "[[Trust]]"
+    entity_class: "TRUST"
+    parent: [[Legal_Structure]]
+    types:
+      - id: "011"
+        name: "[[Revocable_Living_Trust]]"
+        key_feature: "Settlor can revoke or modify"
+        tax_status: "Grantor trust (income/estate tax)"
+        use_case: "Probate avoidance, privacy"
+
+      - id: "012"
+        name: "[[Irrevocable_Trust]]"
+        key_feature: "Cannot be revoked/modified after funding"
+        tax_status: "Separate taxpayer (potentially)"
+        use_case: "Estate tax reduction, asset protection"
+
+      - id: "015"
+        name: "[[Intentionally_Defective_Grantor_Trust]]"
+        tax_strategy: "Income tax liability with grantor, estate tax removed"
+        use_case: "Wealth transfer with income-tax cost"
+
+      - id: "017"
+        name: "[[Spousal_Lifetime_Access_Trust]]"
+        acronym: "SLAT"
+        beneficiary: "Spouse (during spouse's life)"
+        use_case: "Estate tax planning for married couples"
+
+      - id: "018"
+        name: "[[Generation_Skipping_Trust]]"
+        beneficiary: "Grandchildren and beyond"
+        tax_planning: "Avoids generation-skipping transfer tax"
+
+      - id: "019"
+        name: "[[Dynasty_Trust]]"
+        jurisdiction: "Perpetual trust states (Delaware, others)"
+        duration: "Perpetual (or very long term)"
+        use_case: "Multi-generational wealth transfer"
+
+      - id: "021"
+        name: "[[Charitable_Remainder_Trust]]"
+        acronym: "CRT"
+        structure: "Remainder to charity, income to donor/beneficiary"
+        benefit: "Income tax deduction + capital gains deferral"
+
+      - id: "022"
+        name: "[[Charitable_Lead_Trust]]"
+        acronym: "CLT"
+        structure: "Income to charity, remainder to heirs"
+        benefit: "Estate and income tax savings"
+
+      - id: "023"
+        name: "[[Special_Needs_Trust]]"
+        purpose: "Protect beneficiary with disability without affecting benefits"
+        restriction: "Cannot directly benefit SSI/Medicaid recipient"
+
+  estate_types:
+    id: "ESTATE-CAT"
+    name: "[[Estate]]"
+    entity_class: "ESTATE"
+    parent: [[Legal_Structure]]
+    types:
+      - id: "186"
+        name: "[[Estate]]"
+        definition: "All property of deceased person"
+
+      - id: "187"
+        name: "[[Probate_Estate]]"
+        process: "Court-supervised distribution of deceased's assets"
+
+      - id: "188"
+        name: "[[Estate_Holding_Entity]]"
+        structure: "LLC or entity holding estate assets during administration"
+
+  holding_company_types:
+    id: "HOLD-CAT"
+    name: "[[Holding_Company]]"
+    entity_class: "HOLDING_STRUCTURE"
+    parent: [[Legal_Structure]]
+    types:
+      - id: "071"
+        name: "[[Holding_Company]]"
+        general_definition: "Entity holding ownership interest in one or more subsidiaries"
+        purpose: "Control, liability isolation, tax planning"
+
+      - id: "073"
+        name: "[[Intermediate_Holding_Company]]"
+        tier: "Between top and operating levels"
+
+      - id: "074"
+        name: "[[Top_Holding_Company]]"
+        tier: "Ultimate parent in structure"
+
+      - id: "075"
+        name: "[[Operating_Holding_Company]]"
+        hybrid: "Both holds subsidiaries and operates business"
+
+      - id: "077"
+        name: "[[Family_Holding_Company]]"
+        ownership: "Controlled by family members"
+        use_case: "Family wealth consolidation and management"
+
+      - id: "078"
+        name: "[[Asset_Holding_Company]]"
+        holding_purpose: "Real estate, equipment, securities"
+
+      - id: "080"
+        name: "[[Intellectual_Property_Holding_Company]]"
+        holding_purpose: "Patents, trademarks, software, copyrights"
+        benefit: "Centralized licensing and royalty collection"
+
+  spv_types:
+    id: "SPV-CAT"
+    name: "[[Special_Purpose_Vehicle]]"
+    entity_class: "STRUCTURAL_VEHICLE"
+    parent: [[Legal_Structure]]
+    critical_note: "SPV is NOT a legal entity form—it's a structural arrangement using existing forms"
+    types:
+      - id: "086"
+        name: "[[Special_Purpose_Vehicle]]"
+        definition: "Single purpose, often single asset, isolation entity"
+        typical_legal_form: "LLC or Corporation"
+
+      - id: "090"
+        name: "[[Project_Company]]"
+        purpose: "Operate single project (construction, infrastructure)"
+
+      - id: "092"
+        name: "[[Acquisition_SPV]]"
+        purpose: "Acquire target company in M&A"
+        benefit: "Isolates debt/liabilities from acquirer"
+
+      - id: "093"
+        name: "[[Real_Estate_SPV]]"
+        purpose: "Hold single property or property portfolio"
+
+      - id: "097"
+        name: "[[Financing_SPV]]"
+        purpose: "Issue debt for financing, isolate lenders"
+
+      - id: "098"
+        name: "[[Securitization_SPV]]"
+        purpose: "Pool assets and issue securities"
+
+  fund_types:
+    id: "FUND-CAT"
+    name: "[[Fund]]"
+    entity_class: "INVESTMENT_VEHICLE"
+    parent: [[Legal_Structure]]
+    types:
+      - id: "101"
+        name: "[[Private_Investment_Fund]]"
+        investor_type: "Accredited/qualified only"
+
+      - id: "102"
+        name: "[[Private_Equity_Fund]]"
+        strategy: "Acquire companies, improve, sell"
+        typical_term: "7-10 years"
+
+      - id: "103"
+        name: "[[Venture_Capital_Fund]]"
+        strategy: "Invest in early-stage companies"
+        risk_profile: "High risk, high return"
+
+      - id: "104"
+        name: "[[Real_Estate_Fund]]"
+        strategy: "Acquire, develop, manage real estate"
+
+      - id: "105"
+        name: "[[Hedge_Fund]]"
+        strategy: "Active investment with hedging strategies"
+        regulation: "Exempt from many fund regulations"
+
+      - id: "111"
+        name: "[[Family_Investment_Fund]]"
+        investor_base: "Single family or family members"
+        use_case: "Consolidated family wealth management"
+
+  nonprofit_types:
+    id: "NONPROFIT-CAT"
+    name: "[[Nonprofit]]"
+    entity_class: "NONPROFIT_STRUCTURE"
+    parent: [[Legal_Entity]]
+    types:
+      - id: "131"
+        name: "[[501c3_Public_Charity]]"
+        tax_status: "501c3"
+        requirement: "Serve general public, pass public support test"
+        donor_benefit: "Tax deductible donations"
+
+      - id: "132"
+        name: "[[501c3_Private_Foundation]]"
+        tax_status: "501c3"
+        difference: "Can be funded by single person/family"
+        restriction: "Must distribute 5% of assets annually"
+
+      - id: "135"
+        name: "[[Supporting_Organization]]"
+        tax_status: "501c3"
+        structure: "Supports primary charitable organization"
+        benefit: "More flexible than private foundation"
+
+      - id: "136"
+        name: "[[Donor_Advised_Fund]]"
+        structure: "Account within sponsoring organization"
+        benefit: "Tax deduction immediately, grant recommendations later"
+
+      - id: "139"
+        name: "[[Religious_Nonprofit]]"
+        classification: "501c3 religious organization"
+
+      - id: "140"
+        name: "[[Educational_Nonprofit]]"
+        classification: "501c3 educational organization"
+
+# GRAPH WIRING RULES
+graph_wiring_rules:
+  rule_1: "All instances [[LE-*]] must have entity_class pointing to one type above"
+  rule_2: "All holding structures must have parent field pointing to held entity"
+  rule_3: "All hierarchies are bidirectional: parent → children, child → parent"
+  rule_4: "All types are bracketed for WikiLink resolution"
+  rule_5: "Jurisdiction matters: some types are US-specific, others international"
+
+# STATUS
+status:
+  total_types_defined: 200
+  categories: 16
+  types_needing_instances: 150 (our [[LE-001]] through [[LE-876]])
+  graph_ready: "YES (all bracketed)"
+  next_action: "Wire each [[LE-*]] instance to one canonical type, add jurisdiction, add status"
+
