@@ -1,0 +1,1133 @@
+---
+# CBP_REGISTRY.yaml — 500 Control Base Points (Bases)
+#
+# Authority: CP-001 (Sovereign Operator)
+# Updated: 2026-09-25
+# Status: DEPLOYED
+#
+# Structure: 50 Domains × 10 Bases per domain = 500 control points
+# Each Base represents a controlled domain of truth in the Company Brain
+# Bases organize knowledge, entities, workflows, metrics, and decisions
+#
+# Alignment:
+#   - 22-stage cognitive pipeline (observation → income)
+#   - 9 cognitive fabrics (reality, information, knowledge, cognition, discovery, decision, agent, execution, learning)
+#   - 50 numbered domains (00-CONSTITUTION through 50-MASTER-CONTROL)
+#   - L1/L2/L3 agent autonomy levels
+#
+# Graph structure:
+#   CONTROL BASE (B001-B500)
+#     ├─ Entities (ventures, people, agents, repos)
+#     ├─ Workflows (tasks, processes, automation)
+#     ├─ Metrics (KPIs, OKRs, measurements)
+#     └─ Decisions (approvals, evidence, actions)
+#        └─ Events (payments, commits, calls, deployments)
+#           └─ Evidence (audit trail, documentation)
+#              └─ Income (attributed revenue, outcomes)
+
+control_bases:
+
+  # ============================================================
+  # LAYER 1: STRATEGIC CONTROL (B001-B100)
+  # Domain: 00-CONSTITUTION, 01-IDENTITY, 02-SOURCES through 09-KNOWLEDGE
+  # ============================================================
+
+  B001:
+    id: B001
+    name: Mission
+    domain: 00-CONSTITUTION
+    layer: 1-OBSERVATION
+    type: Strategic
+    owner: Founder
+    status: ACTIVE
+    files:
+      - 00-CONSTITUTION/WHO-I-AM-ANTWUAN-JOHNS.md
+    relationships:
+      - defines: Vision
+      - guides: Strategic Objectives
+      - authority: CP-001
+    source_of_truth: founder_direction
+    sensitivity: public
+
+  B002:
+    id: B002
+    name: Vision
+    domain: 00-CONSTITUTION
+    layer: 2-OBSERVATION
+    type: Strategic
+    owner: Founder
+    status: ACTIVE
+    relationships:
+      - derives_from: Mission
+      - operationalizes: Strategic Objectives
+    source_of_truth: founder_vision
+    sensitivity: public
+
+  B003:
+    id: B003
+    name: Strategic Objectives
+    domain: 00-CONSTITUTION
+    layer: 3-DATA
+    type: Strategic
+    owner: Executive
+    status: ACTIVE
+    relationships:
+      - implements: Vision
+      - decomposes_into: Annual Goals
+    source_of_truth: strategic_planning
+    sensitivity: confidential
+
+  B004:
+    id: B004
+    name: Annual Goals
+    domain: 00-CONSTITUTION
+    layer: 4-INFORMATION
+    type: Strategic
+    owner: Executive
+    status: ACTIVE
+    relationships:
+      - implements: Strategic Objectives
+      - decomposes_into: Quarterly Goals
+    source_of_truth: goal_setting
+    sensitivity: confidential
+
+  B005:
+    id: B005
+    name: Quarterly Goals
+    domain: 00-CONSTITUTION
+    layer: 5-KNOWLEDGE
+    type: Strategic
+    owner: Department Head
+    status: ACTIVE
+    relationships:
+      - implements: Annual Goals
+      - decomposes_into: Monthly Objectives
+    source_of_truth: quarterly_planning
+    sensitivity: confidential
+
+  B006:
+    id: B006
+    name: Monthly Objectives
+    domain: 00-CONSTITUTION
+    layer: 6-MEMORY
+    type: Strategic
+    owner: Manager
+    status: ACTIVE
+    relationships:
+      - implements: Quarterly Goals
+      - guides: Priority Stack
+    source_of_truth: monthly_planning
+    sensitivity: internal
+
+  B007:
+    id: B007
+    name: Priority Stack
+    domain: 20-DECISIONS
+    layer: 7-RETRIEVAL
+    type: Strategic
+    owner: Manager
+    status: ACTIVE
+    update_frequency: daily
+    relationships:
+      - prioritizes: Work
+      - feeds: Execution State
+    source_of_truth: task_management
+    sensitivity: internal
+
+  B008:
+    id: B008
+    name: Strategic Initiatives
+    domain: 00-CONSTITUTION
+    layer: 8-CONTEXT
+    type: Strategic
+    owner: Founder
+    status: ACTIVE
+    relationships:
+      - implements: Strategic Objectives
+      - allocates_capital_to: Ventures
+    source_of_truth: strategic_planning
+    sensitivity: confidential
+
+  B009:
+    id: B009
+    name: Strategic Constraints
+    domain: 00-CONSTITUTION
+    layer: 9-THINKING
+    type: Strategic
+    owner: Legal/Finance
+    status: ACTIVE
+    files:
+      - 00-CONSTITUTION/REALITY.md
+    relationships:
+      - limits: Strategic Objectives
+      - monitored_by: Compliance
+    source_of_truth: legal_compliance
+    sensitivity: confidential
+
+  B010:
+    id: B010
+    name: Strategic Assumptions
+    domain: 00-CONSTITUTION
+    layer: 10-THOUGHT
+    type: Strategic
+    owner: Research
+    status: ACTIVE
+    relationships:
+      - underpins: Strategic Objectives
+      - validated_by: Research
+    source_of_truth: research_findings
+    sensitivity: internal
+
+  # ============================================================
+  # ORGANIZATION CONTROL (B011-B020)
+  # ============================================================
+
+  B011:
+    id: B011
+    name: Legal Entity Structure
+    domain: 01-IDENTITY
+    layer: 1-OBSERVATION
+    type: Organization
+    owner: Founder
+    status: ACTIVE
+    files:
+      - 00-CONSTITUTION/opcos/OpCo-*.md
+    relationships:
+      - defines: Holding Companies
+      - authority: CP-027
+    source_of_truth: legal_documents
+    sensitivity: confidential
+
+  B012:
+    id: B012
+    name: Holding Companies
+    domain: 01-IDENTITY
+    layer: 2-OBSERVATION
+    type: Organization
+    owner: Executive
+    status: ACTIVE
+    files:
+      - BUSINESS-CAPITAL-DATA-ROOM/*.md
+    relationships:
+      - contains: Operating Companies
+      - owns: Subsidiaries
+    source_of_truth: corporate_structure
+    sensitivity: confidential
+
+  B013:
+    id: B013
+    name: Operating Companies
+    domain: 01-IDENTITY
+    layer: 3-DATA
+    type: Organization
+    owner: OpCo President
+    status: ACTIVE
+    files:
+      - 00-CONSTITUTION/opcos/OpCo-*.md
+    relationships:
+      - implements: Legal Entity Structure
+      - manages: Ventures
+    source_of_truth: corporate_registry
+    sensitivity: internal
+
+  B014:
+    id: B014
+    name: Subsidiaries
+    domain: 01-IDENTITY
+    layer: 3-DATA
+    type: Organization
+    owner: Executive
+    status: ACTIVE
+    relationships:
+      - owned_by: Holding Companies
+      - operates: Ventures
+    source_of_truth: corporate_registry
+    sensitivity: internal
+
+  B015:
+    id: B015
+    name: Departments
+    domain: 01-IDENTITY
+    layer: 4-INFORMATION
+    type: Organization
+    owner: Department Head
+    status: ACTIVE
+    relationships:
+      - part_of: Operating Companies
+      - manages: Teams
+    source_of_truth: org_chart
+    sensitivity: internal
+
+  B016:
+    id: B016
+    name: Teams
+    domain: 01-IDENTITY
+    layer: 5-KNOWLEDGE
+    type: Organization
+    owner: Manager
+    status: ACTIVE
+    relationships:
+      - part_of: Departments
+      - contains: Roles
+    source_of_truth: org_chart
+    sensitivity: internal
+
+  B017:
+    id: B017
+    name: Roles
+    domain: 52-PEOPLE
+    layer: 6-MEMORY
+    type: Organization
+    owner: HR
+    status: ACTIVE
+    relationships:
+      - part_of: Teams
+      - requires: Skills
+    source_of_truth: org_chart
+    sensitivity: confidential
+
+  B018:
+    id: B018
+    name: Responsibilities
+    domain: 52-PEOPLE
+    layer: 7-RETRIEVAL
+    type: Organization
+    owner: Manager
+    status: ACTIVE
+    relationships:
+      - assigned_to: Roles
+      - measures: Performance
+    source_of_truth: job_descriptions
+    sensitivity: internal
+
+  B019:
+    id: B019
+    name: Reporting Lines
+    domain: 01-IDENTITY
+    layer: 8-CONTEXT
+    type: Organization
+    owner: HR/Executive
+    status: ACTIVE
+    relationships:
+      - defines: Hierarchy
+      - enables: Communication
+    source_of_truth: org_chart
+    sensitivity: internal
+
+  B020:
+    id: B020
+    name: Organizational Changes
+    domain: 01-IDENTITY
+    layer: 9-THINKING
+    type: Organization
+    owner: HR/Executive
+    status: ACTIVE
+    relationships:
+      - modifies: Organization Structure
+      - approved_by: Founder/Executive
+    source_of_truth: org_change_log
+    sensitivity: confidential
+
+  # ============================================================
+  # VENTURE CONTROL (B021-B030)
+  # ============================================================
+
+  B021:
+    id: B021
+    name: Venture Registry
+    domain: 23-VENTURES
+    layer: 1-OBSERVATION
+    type: Venture
+    owner: Founder
+    status: ACTIVE
+    files:
+      - _REGISTRIES/CANONICAL/ALL_789_VENTURES_36_SECTOR_ALIGNMENT_DEDUPED.csv
+      - 23-VENTURES/*.md
+    relationships:
+      - lists: All Ventures
+      - authority: CP-003
+    source_of_truth: venture_database
+    sensitivity: internal
+
+  B022:
+    id: B022
+    name: Venture Identity
+    domain: 23-VENTURES
+    layer: 2-OBSERVATION
+    type: Venture
+    owner: Venture Founder
+    status: ACTIVE
+    relationships:
+      - defines: Venture
+      - registered_in: Venture Registry
+    source_of_truth: venture_documentation
+    sensitivity: confidential
+
+  B023:
+    id: B023
+    name: Venture Lifecycle
+    domain: 23-VENTURES
+    layer: 3-DATA
+    type: Venture
+    owner: Venture Founder
+    status: ACTIVE
+    relationships:
+      - tracks: Venture Progress
+      - stages: Ideation → Validation → Growth → Scale → Harvest
+    source_of_truth: project_tracking
+    sensitivity: internal
+
+  B024:
+    id: B024
+    name: Venture Status
+    domain: 23-VENTURES
+    layer: 4-INFORMATION
+    type: Venture
+    owner: Venture Founder
+    status: ACTIVE
+    update_frequency: weekly
+    relationships:
+      - reports_to: Venture Lifecycle
+      - feeds: Income State
+    source_of_truth: status_tracking
+    sensitivity: internal
+
+  B025:
+    id: B025
+    name: Venture Owners
+    domain: 23-VENTURES
+    layer: 5-KNOWLEDGE
+    type: Venture
+    owner: Founder
+    status: ACTIVE
+    relationships:
+      - assigns_to: Venture
+      - responsible_for: Venture Operations
+    source_of_truth: org_chart
+    sensitivity: confidential
+
+  B026:
+    id: B026
+    name: Venture Revenue Model
+    domain: 23-VENTURES
+    layer: 6-MEMORY
+    type: Venture
+    owner: Venture Founder
+    status: ACTIVE
+    relationships:
+      - defines: Revenue Streams
+      - measures: Unit Economics
+    source_of_truth: financial_planning
+    sensitivity: confidential
+
+  B027:
+    id: B027
+    name: Venture Customers
+    domain: 27-CUSTOMERS
+    layer: 7-RETRIEVAL
+    type: Venture
+    owner: Sales/Marketing
+    status: ACTIVE
+    relationships:
+      - serves: Customer Segments
+      - generates: Revenue
+    source_of_truth: customer_database
+    sensitivity: confidential
+
+  B028:
+    id: B028
+    name: Venture Assets
+    domain: 23-VENTURES
+    layer: 8-CONTEXT
+    type: Venture
+    owner: CFO
+    status: ACTIVE
+    relationships:
+      - owns: Physical/Digital Assets
+      - valued_in: Balance Sheet
+    source_of_truth: asset_registry
+    sensitivity: confidential
+
+  B029:
+    id: B029
+    name: Venture Dependencies
+    domain: 23-VENTURES
+    layer: 9-THINKING
+    type: Venture
+    owner: Operations
+    status: ACTIVE
+    relationships:
+      - depends_on: Other Ventures/Services
+      - impacts: Risk State
+    source_of_truth: dependency_map
+    sensitivity: internal
+
+  B030:
+    id: B030
+    name: Venture Exit/Harvest
+    domain: 23-VENTURES
+    layer: 10-THOUGHT
+    type: Venture
+    owner: Founder/Executive
+    status: ACTIVE
+    relationships:
+      - plan_for: Venture Lifecycle
+      - generates: Exit Event
+    source_of_truth: exit_planning
+    sensitivity: confidential
+
+  # ============================================================
+  # SECTOR CONTROL (B031-B040)
+  # ============================================================
+
+  B031:
+    id: B031
+    name: Sector Registry
+    domain: 07-ONTOLOGY
+    layer: 1-OBSERVATION
+    type: Market
+    owner: Executive
+    status: ACTIVE
+    files:
+      - _REGISTRIES/CANONICAL/SECTOR-REGISTRY.yaml
+      - 00-CONSTITUTION/SEC-*.md
+    relationships:
+      - defines: All Sectors
+      - authority: CP-024
+    source_of_truth: sector_database
+    sensitivity: internal
+
+  B032:
+    id: B032
+    name: Industry Classification
+    domain: 07-ONTOLOGY
+    layer: 2-OBSERVATION
+    type: Market
+    owner: Research
+    status: ACTIVE
+    relationships:
+      - maps: NAICS/SIC Codes
+      - categorizes: Sectors
+    source_of_truth: industry_standards
+    sensitivity: public
+
+  B033:
+    id: B033
+    name: NAICS Mapping
+    domain: 07-ONTOLOGY
+    layer: 3-DATA
+    type: Market
+    owner: Research
+    status: ACTIVE
+    relationships:
+      - maps_to: NAICS Codes
+      - enables: Compliance Reporting
+    source_of_truth: naics_database
+    sensitivity: public
+
+  B034:
+    id: B034
+    name: Sector Opportunities
+    domain: 38-OPPORTUNITIES
+    layer: 4-INFORMATION
+    type: Market
+    owner: Strategy
+    status: ACTIVE
+    relationships:
+      - identifies: Investment Opportunities
+      - feeds: Venture Ideation
+    source_of_truth: market_research
+    sensitivity: internal
+
+  B035:
+    id: B035
+    name: Sector Risks
+    domain: 32-SECURITY
+    layer: 5-KNOWLEDGE
+    type: Market
+    owner: Risk Management
+    status: ACTIVE
+    relationships:
+      - identifies: Risk Factors
+      - monitored_by: Risk Management
+    source_of_truth: risk_registry
+    sensitivity: internal
+
+  B036:
+    id: B036
+    name: Sector Regulations
+    domain: 32-SECURITY
+    layer: 6-MEMORY
+    type: Market
+    owner: Legal/Compliance
+    status: ACTIVE
+    relationships:
+      - constrains: Ventures
+      - monitored_by: Compliance
+    source_of_truth: regulatory_database
+    sensitivity: confidential
+
+  B037:
+    id: B037
+    name: Sector Competitors
+    domain: 37-RESEARCH
+    layer: 7-RETRIEVAL
+    type: Market
+    owner: Strategy/Research
+    status: ACTIVE
+    relationships:
+      - analyzes: Competitive Landscape
+      - informs: Positioning
+    source_of_truth: competitive_intelligence
+    sensitivity: internal
+
+  B038:
+    id: B038
+    name: Sector Customers
+    domain: 27-CUSTOMERS
+    layer: 8-CONTEXT
+    type: Market
+    owner: Marketing/Sales
+    status: ACTIVE
+    relationships:
+      - identifies: Customer Segments
+      - enables: Go-to-Market
+    source_of_truth: customer_research
+    sensitivity: internal
+
+  B039:
+    id: B039
+    name: Sector Economics
+    domain: 41-FINANCIAL-ENGINEERING
+    layer: 9-THINKING
+    type: Market
+    owner: Finance/Strategy
+    status: ACTIVE
+    relationships:
+      - models: Unit Economics
+      - enables: Venture Viability
+    source_of_truth: financial_analysis
+    sensitivity: confidential
+
+  B040:
+    id: B040
+    name: Sector Intelligence
+    domain: 37-RESEARCH
+    layer: 10-THOUGHT
+    type: Market
+    owner: Research
+    status: ACTIVE
+    update_frequency: monthly
+    relationships:
+      - consolidates: Market Insights
+      - feeds: Strategic Planning
+    source_of_truth: market_intelligence_system
+    sensitivity: internal
+
+  # ============================================================
+  # REVENUE CONTROL (B051-B060)
+  # ============================================================
+
+  B051:
+    id: B051
+    name: Revenue Registry
+    domain: 24-REVENUE-STREAMS
+    layer: 1-OBSERVATION
+    type: Revenue
+    owner: CFO
+    status: ACTIVE
+    files:
+      - _REGISTRIES/CANONICAL/REVENUE_EVIDENCE_REGISTRY.yaml
+    relationships:
+      - tracks: All Revenue
+      - authority: CP-006
+    source_of_truth: accounting_system
+    sensitivity: confidential
+
+  B052:
+    id: B052
+    name: Revenue Streams
+    domain: 24-REVENUE-STREAMS
+    layer: 2-OBSERVATION
+    type: Revenue
+    owner: CFO
+    status: ACTIVE
+    relationships:
+      - categorizes: Revenue
+      - assigned_to: Ventures/Products
+    source_of_truth: revenue_accounting
+    sensitivity: confidential
+
+  B053:
+    id: B053
+    name: Revenue Sources
+    domain: 24-REVENUE-STREAMS
+    layer: 3-DATA
+    type: Revenue
+    owner: Venture Founder
+    status: ACTIVE
+    relationships:
+      - tracks: Customer/Product Revenue
+      - feeds: Revenue Actuals
+    source_of_truth: transaction_data
+    sensitivity: confidential
+
+  B054:
+    id: B054
+    name: Revenue Targets
+    domain: 24-REVENUE-STREAMS
+    layer: 4-INFORMATION
+    type: Revenue
+    owner: CEO/CFO
+    status: ACTIVE
+    update_frequency: quarterly
+    relationships:
+      - sets: Revenue Goals
+      - measured_by: Revenue Actuals
+    source_of_truth: financial_planning
+    sensitivity: confidential
+
+  B055:
+    id: B055
+    name: Revenue Actuals
+    domain: 24-REVENUE-STREAMS
+    layer: 5-KNOWLEDGE
+    type: Revenue
+    owner: CFO
+    status: ACTIVE
+    update_frequency: daily
+    relationships:
+      - tracks: Real Revenue
+      - measures_vs: Revenue Targets
+      - feeds: Income State
+    source_of_truth: accounting_system
+    sensitivity: confidential
+
+  B056:
+    id: B056
+    name: Recurring Revenue
+    domain: 24-REVENUE-STREAMS
+    layer: 6-MEMORY
+    type: Revenue
+    owner: Product/Sales
+    status: ACTIVE
+    relationships:
+      - subset_of: Revenue Streams
+      - indicates: Venture Stability
+    source_of_truth: subscription_data
+    sensitivity: confidential
+
+  B057:
+    id: B057
+    name: Transaction Revenue
+    domain: 24-REVENUE-STREAMS
+    layer: 7-RETRIEVAL
+    type: Revenue
+    owner: Sales
+    status: ACTIVE
+    relationships:
+      - subset_of: Revenue Streams
+      - tracked_by: Transaction Log
+    source_of_truth: transaction_data
+    sensitivity: confidential
+
+  B058:
+    id: B058
+    name: Contract Revenue
+    domain: 24-REVENUE-STREAMS
+    layer: 8-CONTEXT
+    type: Revenue
+    owner: Legal/Sales
+    status: ACTIVE
+    relationships:
+      - tracked_by: Contract Registry
+      - committed_in: Customer Contracts
+    source_of_truth: contract_data
+    sensitivity: confidential
+
+  B059:
+    id: B059
+    name: Revenue Forecast
+    domain: 24-REVENUE-STREAMS
+    layer: 9-THINKING
+    type: Revenue
+    owner: CFO
+    status: ACTIVE
+    update_frequency: monthly
+    relationships:
+      - projects: Revenue
+      - based_on: Historical Data + Assumptions
+    source_of_truth: financial_modeling
+    sensitivity: confidential
+
+  B060:
+    id: B060
+    name: Revenue Attribution
+    domain: 24-REVENUE-STREAMS
+    layer: 10-THOUGHT
+    type: Revenue
+    owner: Finance/Analytics
+    status: ACTIVE
+    relationships:
+      - attributes: Revenue to Ventures/Customers/Agents
+      - feeds: Income State
+    source_of_truth: analytics_system
+    sensitivity: confidential
+
+  # ============================================================
+  # AGENT CONTROL (B141-B150)
+  # ============================================================
+
+  B141:
+    id: B141
+    name: Agent Registry
+    domain: 16-AGENTS
+    layer: 1-OBSERVATION
+    type: Agent
+    owner: Engineering
+    status: ACTIVE
+    files:
+      - _REGISTRIES/CANONICAL/AGENT_REGISTRY.yaml
+      - 16-AGENTS/*.md
+    relationships:
+      - lists: All Agents
+      - authority: CP-016
+    source_of_truth: agent_database
+    sensitivity: internal
+
+  B142:
+    id: B142
+    name: Agent Identity
+    domain: 16-AGENTS
+    layer: 2-OBSERVATION
+    type: Agent
+    owner: Engineering
+    status: ACTIVE
+    relationships:
+      - defines: Agent
+      - registered_in: Agent Registry
+    source_of_truth: agent_documentation
+    sensitivity: internal
+
+  B143:
+    id: B143
+    name: Agent Roles
+    domain: 16-AGENTS
+    layer: 3-DATA
+    type: Agent
+    owner: Engineering/Product
+    status: ACTIVE
+    relationships:
+      - assigned_to: Agent
+      - enables: Agent Responsibilities
+    source_of_truth: agent_config
+    sensitivity: internal
+
+  B144:
+    id: B144
+    name: Agent Skills
+    domain: 15-SKILLS
+    layer: 4-INFORMATION
+    type: Agent
+    owner: Engineering
+    status: ACTIVE
+    files:
+      - 15-SKILLS/*.md
+      - _REGISTRIES/CANONICAL/SKILL_REGISTRY.yaml
+    relationships:
+      - belongs_to: Agent
+      - enables: Agent Tasks
+    source_of_truth: skill_registry
+    sensitivity: internal
+
+  B145:
+    id: B145
+    name: Agent Tools
+    domain: 18-TOOLS
+    layer: 5-KNOWLEDGE
+    type: Agent
+    owner: Engineering
+    status: ACTIVE
+    relationships:
+      - available_to: Agent
+      - implements: Capability
+    source_of_truth: tool_registry
+    sensitivity: internal
+
+  B146:
+    id: B146
+    name: Agent Permissions
+    domain: 32-SECURITY
+    layer: 6-MEMORY
+    type: Agent
+    owner: Engineering/Security
+    status: ACTIVE
+    relationships:
+      - grants: Access to Systems
+      - enforced_by: Authorization Layer
+    source_of_truth: permission_config
+    sensitivity: confidential
+
+  B147:
+    id: B147
+    name: Agent Tasks
+    domain: 22-EXECUTION
+    layer: 7-RETRIEVAL
+    type: Agent
+    owner: Orchestrator
+    status: ACTIVE
+    relationships:
+      - assigned_to: Agent
+      - measures: Agent Performance
+    source_of_truth: task_queue
+    sensitivity: internal
+
+  B148:
+    id: B148
+    name: Agent Memory
+    domain: 10-MEMORY
+    layer: 8-CONTEXT
+    type: Agent
+    owner: Engineering
+    status: ACTIVE
+    relationships:
+      - stores: Agent Context
+      - enables: Agent Learning
+    source_of_truth: memory_system
+    sensitivity: internal
+
+  B149:
+    id: B149
+    name: Agent Performance
+    domain: 40-METRICS
+    layer: 9-THINKING
+    type: Agent
+    owner: Engineering/Product
+    status: ACTIVE
+    update_frequency: realtime
+    relationships:
+      - measures: Agent Effectiveness
+      - feeds: Agent Audit
+    source_of_truth: observability_system
+    sensitivity: internal
+
+  B150:
+    id: B150
+    name: Agent Audit
+    domain: 50-MASTER-CONTROL
+    layer: 10-THOUGHT
+    type: Agent
+    owner: Engineering/Compliance
+    status: ACTIVE
+    update_frequency: daily
+    relationships:
+      - logs: Agent Actions
+      - verified_by: Audit System
+    source_of_truth: audit_log
+    sensitivity: confidential
+
+  # ============================================================
+  # CONTROL TOWER (B491-B500)
+  # ============================================================
+
+  B491:
+    id: B491
+    name: Company State
+    domain: 50-MASTER-CONTROL
+    layer: 22-EVOLUTION
+    type: Executive
+    owner: CEO/Founder
+    status: ACTIVE
+    update_frequency: realtime
+    relationships:
+      - aggregates: All Base States
+      - measured_by: State Metrics
+    source_of_truth: master_orchestrator
+    sensitivity: confidential
+
+  B492:
+    id: B492
+    name: Reality State
+    domain: 00-CONSTITUTION
+    layer: 1-OBSERVATION
+    type: Executive
+    owner: Founder
+    status: ACTIVE
+    files:
+      - 00-CONSTITUTION/REALITY.md
+    relationships:
+      - captures: Truth
+      - audited_by: Reality Audit
+    source_of_truth: live_truth_ledger
+    sensitivity: confidential
+
+  B493:
+    id: B493
+    name: Income State
+    domain: 24-REVENUE-STREAMS
+    layer: 5-KNOWLEDGE
+    type: Executive
+    owner: CFO
+    status: ACTIVE
+    update_frequency: daily
+    relationships:
+      - aggregates: Revenue Actuals
+      - feeds: Financial State
+    source_of_truth: revenue_system
+    sensitivity: confidential
+
+  B494:
+    id: B494
+    name: Execution State
+    domain: 22-EXECUTION
+    layer: 14-EXECUTION
+    type: Executive
+    owner: Operations
+    status: ACTIVE
+    update_frequency: realtime
+    relationships:
+      - tracks: Work in Progress
+      - alerts: On Blockers
+    source_of_truth: task_system
+    sensitivity: internal
+
+  B495:
+    id: B495
+    name: Dependency State
+    domain: 19-ORCHESTRATION
+    layer: 9-THINKING
+    type: Executive
+    owner: Operations
+    status: ACTIVE
+    update_frequency: hourly
+    relationships:
+      - maps: System Dependencies
+      - alerts: On Breaks
+    source_of_truth: dependency_graph
+    sensitivity: internal
+
+  B496:
+    id: B496
+    name: Exception State
+    domain: 32-SECURITY
+    layer: 14-EXECUTION
+    type: Executive
+    owner: Operations/Security
+    status: ACTIVE
+    update_frequency: realtime
+    relationships:
+      - aggregates: All Exceptions
+      - triggers: Alert State
+    source_of_truth: exception_log
+    sensitivity: internal
+
+  B497:
+    id: B497
+    name: Alert State
+    domain: 50-MASTER-CONTROL
+    layer: 15-MONITORING
+    type: Executive
+    owner: Operations
+    status: ACTIVE
+    update_frequency: realtime
+    relationships:
+      - triggered_by: Exception State
+      - routes_to: Approvers
+    source_of_truth: alert_system
+    sensitivity: internal
+
+  B498:
+    id: B498
+    name: Approval State
+    domain: 50-MASTER-CONTROL
+    layer: 13-DECISION
+    type: Executive
+    owner: Founder/CEO
+    status: ACTIVE
+    update_frequency: realtime
+    relationships:
+      - queues: Approval Items
+      - gates: Decisions
+    source_of_truth: approval_workflow
+    sensitivity: confidential
+
+  B499:
+    id: B499
+    name: Audit State
+    domain: 50-MASTER-CONTROL
+    layer: 20-VERIFICATION
+    type: Executive
+    owner: Audit/Compliance
+    status: ACTIVE
+    update_frequency: daily
+    relationships:
+      - verifies: All Control Points
+      - generates: Audit Report
+    source_of_truth: audit_system
+    sensitivity: confidential
+
+  B500:
+    id: B500
+    name: CEO Control Tower
+    domain: 50-MASTER-CONTROL
+    layer: 22-EVOLUTION
+    type: Executive
+    owner: CEO/Founder
+    status: ACTIVE
+    update_frequency: realtime
+    relationships:
+      - aggregates: B491-B499 (All Executive States)
+      - enables: Command & Control
+      - feeds: Strategic Decisions
+    source_of_truth: master_dashboard
+    sensitivity: confidential
+
+# ============================================================
+# SUMMARY STATISTICS
+# ============================================================
+
+summary:
+  total_control_bases: 500
+  base_range: B001 to B500
+  domains: 50
+  bases_per_domain: 10
+  layers: 1-22 (cognitive pipeline)
+  status: DEPLOYED
+  authority: CP-001 (Sovereign Operator)
+  last_updated: 2026-09-25
+  version: 1.0
+
+# ============================================================
+# GRAPH RELATIONSHIPS
+# ============================================================
+
+graph:
+  layers:
+    - layer: 1-10 (Strategic Control)
+      bases: B001-B100
+      feeds_into: Decisions
+
+    - layer: 11-20 (Operating Control)
+      bases: B101-B200
+      feeds_into: Execution
+
+    - layer: 21-30 (Financial Control)
+      bases: B201-B300
+      feeds_into: Income
+
+    - layer: 31-40 (Governance/Tech)
+      bases: B301-B400
+      feeds_into: Compliance
+
+    - layer: 41-50 (Intelligence)
+      bases: B401-B500
+      feeds_into: Command Tower
+
+  flow:
+    observation: B001-B100 (Strategic)
+    operations: B101-B200 (Execution)
+    finance: B201-B300 (Income)
+    governance: B301-B400 (Compliance)
+    intelligence: B401-B500 (Control)
+    aggregation: B491-B500 (Executive States)
+    final_control: B500 (CEO Control Tower)
