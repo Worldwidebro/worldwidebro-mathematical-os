@@ -5,10 +5,10 @@ aliases: ["START_HERE", "START-HERE", "starthere", "start-here", "Orientation", 
 tags: [orientation, master-index, company-brain, governance, start-here]
 status: ACTIVE
 authority: "CP-001 / CP-027"
-updated: 2026-09-09
+updated: 2026-09-23
 ---
 
-[[STARTHERE]] | [[REALITY]] | [[00_RESPECT/RESPECT|RESPECT]] | [[_MEMORY/MEMORY-OS|MEMORY-OS]] | [[_PROMPTS/10_PRE-ACTION-AWARENESS|AWARENESS]] | [[SECTOR_INDEX]] | [[00-CONSTITUTION/SECTOR-TAXONOMY-MASTER|SECTORS]] | [[INDEX]]
+**Navigation:** [[STARTHERE]] | [[REALITY]] | [[RESPECT|00_RESPECT/RESPECT]] | [[INDEX|_REGISTRIES/CANONICAL/INDEX.md]] | [[DOMAIN-MAP|_REGISTRIES/CANONICAL/DOMAIN-MAP.md]] | [[LOG|_REGISTRIES/CANONICAL/LOG.md]]
 
 # START HERE
 
@@ -46,6 +46,27 @@ Company Brain operates on the **LLM Wiki Pattern**. Knowledge is not retrieved f
 
 *We do not lose knowledge to chat history amnesia. Every session compounds into the Wiki.*
 
+### The Wiki Navigation Structure (Sep 23 Wiring Complete)
+
+The Company Brain is organized as a **fully-wired knowledge system** with nothing scattered:
+
+```
+STARTHERE.md (you are here)
+    ↓
+INDEX.md (master catalog of ALL company brain files, sectors, ventures, legal entities)
+    ↓
+DOMAIN-MAP.md (master map of 71 domains, organized into 9 layers)
+    ↓
+Domain INDEX.md (one per domain: 00-CONSTITUTION/INDEX.md, 23-VENTURES/INDEX.md, etc.)
+    ↓
+Individual files (everything discoverable from above)
+```
+
+**Quick Links:**
+- **[[INDEX|_REGISTRIES/CANONICAL/INDEX.md]]** — Master catalog (start here to find anything)
+- **[[DOMAIN-MAP|_REGISTRIES/CANONICAL/DOMAIN-MAP.md]]** — All 71 domains with descriptions
+- **[[LOG|_REGISTRIES/CANONICAL/LOG.md]]** — Chronological timeline of work (what happened, when)
+
 ---
 
 ## 2. READ THESE FIRST (MANDATORY OPERATING SEQUENCE)
@@ -68,12 +89,14 @@ Before writing code, declaring features, or making changes, read in exact sequen
 ### Master Private Firm Ontology (Sep 9, 2026 — THE BLUEPRINT)
 - [[master-private-firm-ontology|Master Private Firm Ontology.md]] — **THE FOUNDATION:** 34-layer architecture showing how Principal → Family → Private Firm → Holdings → Ventures → Markets → Customers → Revenue feeds back to Capital. Shows that all systems (sectors, ventures, metrics, agents, Neo4j, Obsidian) are views of one graph, not separate databases. **Next phase:** Build PRIVATE-FIRM-ONTOLOGY.xml so all systems speak one vocabulary.
 
-### Capital & Holding Company Architecture (NEW)
-- [[WORLDWIDEBRO-HOLDINGS-MASTER-OPERATING-MANUAL]] — Master 789-venture holding company framework (structure, governance, capital allocation, exits)
-- [[00_ENTERPRISE_BLUEPRINT|BUSINESS-CAPITAL-DATA-ROOM/00_ENTERPRISE_BLUEPRINT.md]] — Family office architecture (Family Trust → Asset/IP/Admin LLCs → Operating C-Corp)
-- [[CAPITAL-READINESS-ENGINE]] — 5-venture capital readiness engine (pilot for 789-venture model); only 5 of 789 ventures have financial profiles
-- [[FINANCIAL-ECOSYSTEM-MAPPING|BUSINESS-CAPITAL-DATA-ROOM/FINANCIAL-ECOSYSTEM-MAPPING.md]] — 12-layer financial OS for ventures
-- **Business Metric Registry** (Sep 9 planned) — CFA-framework + 12 research libraries + 500 seed metrics + 789-venture financial profiles + Neo4j integration
+### Capital & Holding Company Architecture
+
+**See:** [[INDEX|_REGISTRIES/CANONICAL/INDEX.md#capital--holding-company-structure]] for complete family office ecosystem, 150 entities, and venture-to-legal-entity mappings.
+
+Key documents:
+- [[WORLDWIDEBRO-HOLDINGS-MASTER-OPERATING-MANUAL]] — Master 789-venture holding company framework
+- [[FAMILY_OFFICE_ECOSYSTEM_ALIGNMENT_MASTER|_REGISTRIES/CANONICAL/FAMILY_OFFICE_ECOSYSTEM_ALIGNMENT_MASTER.md]] — 150-entity legal structure (Layer 1-4: family trusts → OpCos)
+- [[00_ENTERPRISE_BLUEPRINT|BUSINESS-CAPITAL-DATA-ROOM/00_ENTERPRISE_BLUEPRINT.md]] — Family office architecture
 
 ### Supporting Truth & Discipline Ledgers
 - [[KILL-LIST|KILL-LIST.md]] — Formally killed or decommissioned entities.
