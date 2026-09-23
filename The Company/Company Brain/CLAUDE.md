@@ -237,6 +237,8 @@ Memory (Learning → future decisions)
 
 **WHO AM I:** [[WHO-I-AM-ANTWUAN-JOHNS|00-CONSTITUTION/WHO-I-AM-ANTWUAN-JOHNS.md]] (Founder identity + authority + philanthropic mission) — **START HERE for founder context**  
 **PEOPLE + ROLES:** [[PEOPLE-ROLES-INFRASTRUCTURE-BRIDGE|_REFERENCE/PEOPLE-ROLES-INFRASTRUCTURE-BRIDGE.md]] (21 people, 40+ roles, approval chains)  
+**AGENT MASTER REGISTRY:** [[AGENT_MASTER_REGISTRY|16-AGENTS/AGENT_MASTER_REGISTRY.md]] (309 agents, AGT-001 to AGT-318, consolidated Sep 25) — **NEW**  
+**AGENT DISCOVERY:** [[AGENT_INDEX|_REGISTRIES/CANONICAL/AGENT_INDEX.yaml]] (filtered by type/base/sector/capability/skill)  
 **BASES Architecture:** [[BASES-CANONICAL-DEFINITION|_ONTOLOGY/BASES-CANONICAL-DEFINITION.md]] (35 governed knowledge/operating domains, Sep 22)  
 **BASE Instantiation Plan:** [[BASE-INSTANTIATION-AGENTIC-PLAN|20-DECISIONS/BASE-INSTANTIATION-AGENTIC-PLAN.md]] (agentic engineering, 6 weeks, Sep 23 kickoff)  
 **VEX Ecosystem:** [[VEX|VEX.md]] (public CommandCenter + real-time dashboard)  
@@ -447,16 +449,25 @@ gbrain doctor --json               # Health check
 
 ## RECONCILIATION ROADMAP (Sep 25–30)
 
-**Phase 1: Data Mapping (Sep 26)** — List existing Supabase data, create mapping document  
-**Phase 2: Infrastructure Build (Sep 27–28)** — Update schemas, create bases table, populate missing data  
-**Phase 3: Verification (Sep 29–30)** — Run audit queries, sync local registries from Supabase  
+**Completed:**
+- ✅ Agent consolidation (Sep 25) — 309 agents unified, AGT-ID namespace live
+
+**In Progress:**
+- **Phase 1: Data Mapping (Sep 26)** — List existing Supabase data, create mapping document  
+- **Phase 2: Infrastructure Build (Sep 27–28)** — Update schemas, create bases table, populate missing data  
+- **Phase 3: Verification (Sep 29–30)** — Run audit queries, sync local registries from Supabase  
+
+**Agent Wiring Next:**
+- Wire 309 agents into Neo4j as (:Agent) nodes with [:BELONGS_TO] → Base relationships
+- Create VEX CommandCenter agent visibility dashboard (real-time agent assignments + status)
+- Link AGENT_INDEX.yaml to orchestrator for task routing
 
 **Blocker:** Phase 2 audit paused. No Base gate evaluation until venture assignments verified.  
 **Next action:** Founder decisions on 4 critical questions above. Then query Supabase to determine truth.
 
 ---
 
-**Updated:** 2026-09-25 | **Version:** 4.3 (Ground truth divergence detected Sep 25, 4 founder decisions pending, reconciliation plan created, Phase 2 audit paused)
+**Updated:** 2026-09-25 Evening | **Version:** 4.4 (Agent consolidation complete — 309 agents unified into AGENT_MASTER_REGISTRY.md with AGT-001 to AGT-318 indexing, Priority #1 + #2 metadata work complete)
 
 ---
 
