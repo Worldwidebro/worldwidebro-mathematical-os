@@ -192,6 +192,15 @@ CREATES_VALUE_FOR — Benefit (System CREATES_VALUE_FOR Business)
 └── Integrates: All secrets and credentials into the graph
 ```
 
+### Layer 6: Code & Collaboration
+```
+[[GITHUB_MASTER_ONTOLOGY.md]]
+├── Defines: [[GITHUB]], [[REPOSITORY]], [[GIT]], [[CI_CD]], [[EVIDENCE]]
+├── Provides: Code source of truth, execution evidence, automation
+├── Maintains: Repository intelligence, capability mapping, repo-to-revenue
+└── Integrates: All code systems into the graph
+```
+
 ---
 
 ## [CROSS_LINK_MATRIX] — Canonical Relationships
