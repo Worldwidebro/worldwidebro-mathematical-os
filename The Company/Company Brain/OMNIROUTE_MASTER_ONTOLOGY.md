@@ -325,6 +325,38 @@ This comprehensive ontology models OmniRoute as a **first-class system node** wi
 
 ---
 
+## [OMNIROUTE_CONTROL_LOOP] — Cybernetic Feedback System
+
+**OmniRoute learns and self-corrects through a continuous feedback loop:**
+
+```
+[OBSERVE]
+    ↓ (What happened?)
+[MEASURE]
+    ↓ (Latency, cost, success/failure, user satisfaction)
+[CLASSIFY]
+    ↓ (Route class: cost-optimal, speed-optimal, resilience-optimal)
+[SCORE]
+    ↓ (Update confidence scores for route selection)
+[SELECT]
+    ↓ (Choose next route based on updated scores)
+[EXECUTE]
+    ↓ (Send request via selected provider)
+[VERIFY]
+    ↓ (Did it work? Check response, latency, cost)
+[RECORD]
+    ↓ (Log routing decision + outcome to audit trail)
+[LEARN]
+    ↓ (Update model: which routes work best for this request type/user/time-of-day)
+[RECONFIGURE]
+    ↓ (Tune [[AUTO_COMBO]] weights, [[CACHE_AFFINITY]] strategies, fallback orders)
+[OBSERVE] ↺ (loop continues)
+```
+
+**Key principle:** Every request teaches OmniRoute something. Routing decisions improve over time through accumulated feedback.
+
+---
+
 ## [OMNICONDUCTOR] — Agent Fleet Delegation
 
 ```
@@ -397,6 +429,29 @@ This comprehensive ontology models OmniRoute as a **first-class system node** wi
 
 ---
 
+## [SESSION_MANAGEMENT] — Stateful Request Routing
+
+```
+[SESSION]
+│
+├── [SESSION_ID]                 ← Unique session identifier
+├── [CLIENT_IDENTITY]            ← Who is this client?
+├── [SESSION_STATE]              ← Open, active, suspended, closed
+├── [SESSION_CONTEXT]            ← Per-session configuration
+├── [CONTEXT_RELAY]              ← Carry context across requests
+├── [AFFINITY]                   ← Sticky routing to same provider
+├── [CONVERSATION_HISTORY]       ← Multi-turn message context
+├── [STATE_RECOVERY]             ← Resume interrupted sessions
+├── [SESSION_TIMEOUT]            ← Idle timeout enforcement
+├── [GRACEFUL_TERMINATION]       ← Clean session closure
+├── [SESSION_METRICS]            ← Per-session cost/latency
+└── [SESSION_AUDIT_LOG]          ← Immutable session trail
+```
+
+**Purpose:** Maintains state across multiple requests, enables provider affinity, and preserves conversation context in multi-turn interactions.
+
+---
+
 ## [COMPRESSION_STUDIO] — Visual Engine Composition
 
 ```
@@ -429,6 +484,29 @@ This comprehensive ontology models OmniRoute as a **first-class system node** wi
 ├── [LEARN]                      ← Update from observations
 └── [AUDIT]                      ← Verify filter safety
 ```
+
+---
+
+## [MEMORY] — Request & Context Caching
+
+```
+[MEMORY]
+│
+├── [SEMANTIC_CACHE]             ← Cache by meaning (vectors)
+├── [PREFIX_CACHE]               ← Cache by exact prefix match
+├── [CACHE_KEY]                  ← Deterministic cache key
+├── [CACHE_VALUE]                ← Stored response
+├── [TTL]                        ← Time-to-live
+├── [EVICTION_POLICY]            ← LRU, LFU, or custom
+├── [CACHE_HIT_RATE]             ← Monitor effectiveness
+├── [WARM_UP]                    ← Pre-populate cache
+├── [INVALIDATION]               ← Clear stale entries
+├── [COMPRESSION]                ← Compress cached values
+├── [PERSISTENCE]                ← Optional disk backup
+└── [CACHE_STATS]                ← Aggregated metrics
+```
+
+**Purpose:** Reduces latency and cost by caching frequently-used responses. Semantic cache matches similar requests even if exact phrasing differs.
 
 ---
 
@@ -564,6 +642,87 @@ This feature does **not yet exist**. The repo explicitly distinguishes:
 ```
 
 **This is the [[REALITY]] vs [[DESIRED_CAPABILITY]] separation you maintain in [[WHERE_WE_ARE]].**
+
+---
+
+## [MASTER_OMNIROUTE_GRAPH] — Complete System Architecture
+
+```
+                    ┌─── [[CLIENT]]
+                    │
+                    ▼
+            [UNIFIED_API_GATEWAY]
+                    │
+    ┌───────────────┼───────────────┐
+    │               │               │
+    ▼               ▼               ▼
+[AUTH]      [VALIDATION]    [CAPABILITY_DETECT]
+    │               │               │
+    └───────────────┼───────────────┘
+                    ▼
+        [ADMISSION_CONTROL]
+                    │
+    ┌───────────────┼───────────────┐
+    │               │               │
+    ▼               ▼               ▼
+[SESSION]   [QUOTA_CHECK]   [CACHE_LOOKUP]
+    │               │               │
+    │               ▼               │
+    │      [PROVIDER_SELECT]        │
+    │               │               │
+    │       ┌───────┼───────┐       │
+    │       │               │       │
+    │       ▼               ▼       │
+    │   [ROUTING]     [AUTO_COMBO]  │
+    │       │               │       │
+    └───────┼───────────────┼───────┘
+            │               │
+            ▼               ▼
+    [COMPRESSION]  [CONTEXT_RELAY]
+            │               │
+            └───────┬───────┘
+                    ▼
+        [PROTOCOL_TRANSLATION]
+                    │
+                    ▼
+        [UPSTREAM_PROVIDER]
+                    │
+    ┌───────────────┼───────────────┐
+    │               │               │
+    ▼               ▼               ▼
+[RESPONSE]    [STREAMING]     [ERROR]
+    │               │               │
+    │               │       ┌───────┴────────┐
+    │               │       │                │
+    │               │       ▼                ▼
+    │               │   [RETRY]        [FALLBACK]
+    │               │       │                │
+    │               └───────┼────────────────┘
+    │                       │
+    ▼───────────────────────▼
+        [RESPONSE_HEADERS]
+            ├── X-OMNIROUTE-DECISION
+            ├── X-OMNIROUTE-COST
+            ├── X-OMNIROUTE-CACHED
+            └── X-OMNIROUTE-COMPRESSION
+                    │
+    ┌───────────────┼───────────────┐
+    │               │               │
+    ▼               ▼               ▼
+[TELEMETRY]    [LOGGING]       [LEARNING]
+    │               │               │
+    └───────────────┼───────────────┘
+                    ▼
+          [[KNOWLEDGE_GRAPH]]
+                    │
+                    ▼
+          [[WHERE_WE_ARE]]
+                    │
+                    ▼
+          [[NEXT_DECISION]] ↺
+```
+
+**The complete flow:** Client → Authenticate → Validate → Detect capability → Admission control → Session management → Quota check → Cache → Provider selection → Route → Compress → Translate → Upstream → Response → Telemetry → Learning → Feedback loop.
 
 ---
 
