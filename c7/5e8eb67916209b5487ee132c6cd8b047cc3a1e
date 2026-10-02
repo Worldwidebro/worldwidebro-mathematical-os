@@ -1,0 +1,33 @@
+.claude/settings.local.json
+  s_2598e07c2fb503::t_0b7aa0630bd904 24-27
+"Civilization OS/100-development-tools/openbb-platform/user_settings.json"
+  s_b703a4b1de84d0::t_b58f6d1e5522fc 2-6
+Civilization
+  s_b703a4b1de84d0::t_58e48704dbdab0 4-7
+Worldwidebro-Vex
+  s_b703a4b1de84d0::t_2ad0f70b577d55 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "c75e8eb67916209b5487ee132c6cd8b047cc3a1e",
+  "prompts": {},
+  "sessions": {
+    "s_2598e07c2fb503": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "dc35924b-97cb-4f4f-8fcd-d9d91a574b74",
+        "model": "unknown"
+      },
+      "human_author": "Claude Haiku <noreply@anthropic.com>"
+    },
+    "s_b703a4b1de84d0": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1728c1d5-bf1e-4c07-94bb-d2634e0059f5",
+        "model": "unknown"
+      },
+      "human_author": "Claude Haiku <noreply@anthropic.com>"
+    }
+  }
+}
