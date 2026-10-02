@@ -1,0 +1,19 @@
+"The Company/Company Brain/OBSIDIAN_MASTER_ONTOLOGY.md"
+  s_39dfcb184eea53::t_6396ed6852d385 1-612
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "03ca04dd8d422153a33babfe34f671b977b69f48",
+  "prompts": {},
+  "sessions": {
+    "s_39dfcb184eea53": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "8f50b13e-cd10-46c0-9897-433d02653f53",
+        "model": "unknown"
+      },
+      "human_author": "Claude Haiku <noreply@anthropic.com>"
+    }
+  }
+}
