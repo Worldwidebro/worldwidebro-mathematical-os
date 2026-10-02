@@ -183,6 +183,10 @@
   },
   "active": "63eb0034ab443de0",
   "lastOpenFiles": [
+    "_PIPELINES/ingest_connectivity_graph.sh",
+    "_PIPELINES",
+    "_ONTOLOGY/CONNECTIVITY_SCHEMA.cypher",
+    "_ONTOLOGY",
     "SYSTEM_CONNECTIVITY_AUDIT.md",
     "FILESYSTEM_AND_DISKMAP_MASTER_ONTOLOGY.md",
     "_REGISTRIES/CANONICAL/CLAUDE_SUBAGENTS_REGISTRY.yaml",
