@@ -1,0 +1,19 @@
+"The Company/Company Brain/DATA_FLOW.md"
+  s_39dfcb184eea53::t_d3c694b729fba1 1-870
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "d6ef77a3bf4866c819756f35dda48080f72eb701",
+  "prompts": {},
+  "sessions": {
+    "s_39dfcb184eea53": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "8f50b13e-cd10-46c0-9897-433d02653f53",
+        "model": "unknown"
+      },
+      "human_author": "Claude Haiku <noreply@anthropic.com>"
+    }
+  }
+}
