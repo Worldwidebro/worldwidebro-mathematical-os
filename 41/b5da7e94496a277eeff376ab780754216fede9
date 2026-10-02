@@ -1,0 +1,19 @@
+"The Company/Company Brain/_REGISTRIES/CANONICAL/NAVIGATION_ALIASES.yaml"
+  s_39dfcb184eea53::t_6a450da4145d46 892-3938
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "41b5da7e94496a277eeff376ab780754216fede9",
+  "prompts": {},
+  "sessions": {
+    "s_39dfcb184eea53": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "8f50b13e-cd10-46c0-9897-433d02653f53",
+        "model": "unknown"
+      },
+      "human_author": "Claude Haiku <noreply@anthropic.com>"
+    }
+  }
+}
