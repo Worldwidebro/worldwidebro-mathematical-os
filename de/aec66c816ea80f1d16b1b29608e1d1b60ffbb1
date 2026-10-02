@@ -1,0 +1,23 @@
+"The Company/Company Brain/.obsidian/workspace.json"
+  s_0791ba9c313e11::t_5eb18568ba3c16 186-189
+"The Company/Company Brain/_ONTOLOGY/CONNECTIVITY_SCHEMA.cypher"
+  s_0791ba9c313e11::t_dd8886ca2415ae 1-355
+"The Company/Company Brain/_PIPELINES/ingest_connectivity_graph.sh"
+  s_0791ba9c313e11::t_561e38cfb10fbb 1-233
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "deaec66c816ea80f1d16b1b29608e1d1b60ffbb1",
+  "prompts": {},
+  "sessions": {
+    "s_0791ba9c313e11": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "514105f9-2725-4dc9-9a8e-de2e4b241499",
+        "model": "unknown"
+      },
+      "human_author": "Claude Haiku <noreply@anthropic.com>"
+    }
+  }
+}
