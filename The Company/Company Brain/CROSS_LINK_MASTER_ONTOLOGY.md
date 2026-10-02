@@ -201,6 +201,15 @@ CREATES_VALUE_FOR — Benefit (System CREATES_VALUE_FOR Business)
 └── Integrates: All code systems into the graph
 ```
 
+### Layer 7: Physical Storage & Filesystem
+```
+[[FILESYSTEM_AND_DISKMAP_MASTER_ONTOLOGY.md]]
+├── Defines: [[FILESYSTEM]], [[DISK_MAP]], [[FILE_TREE]], [[STORAGE_PATH]]
+├── Maps: Where all data physically lives (disks, volumes, mounts)
+├── Tracks: File lineage, backups, migrations, storage capacity
+└── Verifies: Filesystem connectivity, disk health, data integrity
+```
+
 ---
 
 ## [CROSS_LINK_MATRIX] — Canonical Relationships
