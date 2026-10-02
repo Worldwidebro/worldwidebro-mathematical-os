@@ -1,0 +1,19 @@
+"The Company/Company Brain/SYSTEM_CONNECTIVITY_WIRED.md"
+  s_0791ba9c313e11::t_9cde8f081f1fe8 1-252
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "9cdf64e2f04b97251cff6fec9b9ed86c1c2dbe99",
+  "prompts": {},
+  "sessions": {
+    "s_0791ba9c313e11": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "514105f9-2725-4dc9-9a8e-de2e4b241499",
+        "model": "unknown"
+      },
+      "human_author": "Claude Haiku <noreply@anthropic.com>"
+    }
+  }
+}
