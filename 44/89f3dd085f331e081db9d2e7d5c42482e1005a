@@ -1,0 +1,23 @@
+"The Company/Company Brain/.obsidian/workspace.json"
+  s_0791ba9c313e11::t_3264c80a3c5c97 186-187
+"The Company/Company Brain/SYSTEM_CONNECTIVITY_AUDIT.md"
+  s_0791ba9c313e11::t_dfb9bd71c4f9ca 1-197
+"The Company/Company Brain/WHERE_WE_ARE.md"
+  s_0791ba9c313e11::t_4d506afac70f2d 5,10,17,63-67,145-150,179-180,182-183
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "4489f3dd085f331e081db9d2e7d5c42482e1005a",
+  "prompts": {},
+  "sessions": {
+    "s_0791ba9c313e11": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "514105f9-2725-4dc9-9a8e-de2e4b241499",
+        "model": "unknown"
+      },
+      "human_author": "Claude Haiku <noreply@anthropic.com>"
+    }
+  }
+}
