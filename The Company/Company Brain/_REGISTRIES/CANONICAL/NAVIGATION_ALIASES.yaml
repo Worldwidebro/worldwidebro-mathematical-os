@@ -685,6 +685,36 @@ CLAUDE_OBSERVABILITY:
   - [[SESSION_LOG]]
   - [[AUDIT_LOG]]
 
+CLAUDE_SUBAGENTS:
+  - [[CLAUDE_SUBAGENTS_REGISTRY]]
+  - [[SUBAGENTS]]
+  - [[SPECIALIST_AGENTS]]
+  - [[AGENT_DELEGATION]]
+
+CODE_REVIEWER_AGENT:
+  - [[code-reviewer]]
+  - [[CODE_REVIEWER]]
+
+BUILD_ERROR_AGENT:
+  - [[build-error-resolver]]
+  - [[BUILD_ERROR_RESOLVER]]
+
+SECURITY_REVIEWER_AGENT:
+  - [[security-reviewer]]
+  - [[SECURITY_REVIEWER]]
+
+E2E_TEST_AGENT:
+  - [[e2e-runner]]
+  - [[E2E_RUNNER]]
+
+DATABASE_REVIEWER_AGENT:
+  - [[database-reviewer]]
+  - [[DATABASE_REVIEWER]]
+
+PERFORMANCE_OPTIMIZER_AGENT:
+  - [[performance-optimizer]]
+  - [[PERFORMANCE_OPTIMIZER]]
+
 ## GitHub & Code Layer
 
 GITHUB_MASTER_ONTOLOGY:

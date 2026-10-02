@@ -1,0 +1,790 @@
+---
+name: Claude Subagents Registry
+description: Catalog of specialist agents Claude can spawn for task delegation
+type: agent-registry
+version: 1.0
+updated_at: 2026-10-02T23:55:00Z
+authority: intelligence-platform-layer
+total_agents: 45
+---
+
+# CLAUDE_SUBAGENTS_REGISTRY v1.0
+
+**Comprehensive registry of specialist subagents that [[CLAUDE]] can spawn for task delegation.**
+
+Organized by domain + use case. Each agent has defined tool access, model preference, and confidence scoring.
+
+---
+
+## Code Quality & Review Agents
+
+### code-reviewer
+**Expert code reviewer — correctness bugs, reuse, simplification, efficiency**
+
+```yaml
+agent_id: code-reviewer
+domain: code-quality
+model_preferred: claude-opus-5-5
+fallback_model: claude-sonnet-5-5
+autonomy_level: L2
+confidence_threshold: 0.75
+
+capabilities:
+  - correctness-checking
+  - performance-analysis
+  - security-audit
+  - code-simplification
+  - refactoring-suggestions
+
+tool_access:
+  - git
+  - bash
+  - file-read
+  - source-graph-mcp
+  - graft-mcp
+
+use_cases:
+  - Pull request review
+  - Code audit before merge
+  - Refactoring guidance
+  - Technical debt assessment
+  - Security vulnerability detection
+
+triggers:
+  - User runs /code-review
+  - PR opened with [needs-review] label
+  - Commit to main branch
+  - Before deployment
+
+example_output:
+  findings: "5 issues found"
+  severity: ["bug:2", "efficiency:2", "style:1"]
+  recommendations: ["Fix null check", "Extract helper function", "Add unit test"]
+```
+
+---
+
+### everything-claude-code:build-error-resolver
+**Build & compilation error fixer — minimal diffs, quick resolution**
+
+```yaml
+agent_id: build-error-resolver
+domain: build-systems
+model_preferred: claude-opus-5-5
+fallback_model: claude-sonnet-5-5
+autonomy_level: L2
+confidence_threshold: 0.80
+
+capabilities:
+  - typescript-errors
+  - build-failures
+  - linter-fixes
+  - dependency-resolution
+  - compiler-errors
+
+tool_access:
+  - bash
+  - file-read
+  - file-write
+  - git
+  - npm/yarn/cargo
+
+use_cases:
+  - Fix broken builds
+  - Resolve type errors
+  - Compiler error diagnosis
+  - Dependency version conflicts
+  - Lint rule violations
+
+triggers:
+  - CI build fails
+  - Local build error
+  - Type check failure
+  - Linter reports
+
+specialization:
+  languages: [typescript, rust, go, python, java]
+  severity: critical
+  turnaround: 2-5 minutes
+```
+
+---
+
+### everything-claude-code:security-reviewer
+**Security vulnerability detection — OWASP Top 10, secrets, unsafe patterns**
+
+```yaml
+agent_id: security-reviewer
+domain: security
+model_preferred: claude-opus-5-5
+fallback_model: claude-sonnet-5-5
+autonomy_level: L1  # Always requires approval for security fixes
+confidence_threshold: 0.70
+
+capabilities:
+  - owasp-detection
+  - secret-scanning
+  - sql-injection
+  - xss-prevention
+  - authentication-audit
+  - authorization-audit
+  - crypto-verification
+  - ssrf-detection
+
+tool_access:
+  - file-read
+  - bash
+  - git
+  - semgrep-mcp
+  - sourcegraph-mcp
+
+use_cases:
+  - Pre-deployment security audit
+  - Sensitive code review
+  - API endpoint analysis
+  - User input handling review
+  - Credential management verification
+
+triggers:
+  - Before production deployment
+  - When handling user data
+  - API endpoint changes
+  - Auth/password code changes
+  - Deployment to sensitive environment
+
+rules:
+  - Never auto-fix security issues (L1 only)
+  - Always provide rationale + CWE reference
+  - Suggest specific fixes, not just problems
+  - Escalate critical findings to Slack #security
+```
+
+---
+
+## Build & Compilation Agents
+
+### everything-claude-code:cpp-build-resolver
+**C++ compilation & CMake error fixer**
+
+```yaml
+agent_id: cpp-build-resolver
+domain: build-systems-cpp
+model_preferred: claude-opus-5-5
+fallback_model: claude-sonnet-5-5
+autonomy_level: L2
+confidence_threshold: 0.75
+
+specializations:
+  - cmake-errors
+  - linker-errors
+  - template-errors
+  - dependency-resolution
+  - compiler-flags
+
+tools:
+  - cmake
+  - clang
+  - gcc
+  - ninja
+  - cargo (for Rust interop)
+
+use_cases:
+  - Resolve CMake configuration issues
+  - Fix linker errors
+  - Template compilation failures
+  - Missing symbol resolution
+```
+
+---
+
+### everything-claude-code:go-build-resolver
+**Go build, vet, and linter error resolver**
+
+```yaml
+agent_id: go-build-resolver
+domain: build-systems-go
+model_preferred: claude-sonnet-5-5
+fallback_model: claude-haiku-4-5
+autonomy_level: L2
+confidence_threshold: 0.78
+
+specializations:
+  - go-vet-errors
+  - import-cycles
+  - type-errors
+  - golangci-lint
+  - mod-dependency-issues
+```
+
+---
+
+### everything-claude-code:python-build-resolver
+**Python dependency, syntax, and import error resolver**
+
+```yaml
+agent_id: python-build-resolver
+domain: build-systems-python
+model_preferred: claude-sonnet-5-5
+fallback_model: claude-haiku-4-5
+autonomy_level: L2
+confidence_threshold: 0.76
+
+specializations:
+  - poetry-lock-issues
+  - import-errors
+  - syntax-errors
+  - type-checking (mypy)
+  - pip-dependency-conflicts
+```
+
+---
+
+## Testing & QA Agents
+
+### everything-claude-code:e2e-runner
+**End-to-end testing specialist — Playwright, test flakiness, CI**
+
+```yaml
+agent_id: e2e-runner
+domain: testing
+model_preferred: claude-sonnet-5-5
+fallback_model: claude-haiku-4-5
+autonomy_level: L2
+confidence_threshold: 0.72
+
+capabilities:
+  - test-generation
+  - test-maintenance
+  - flaky-test-elimination
+  - test-parallelization
+  - ci-integration
+  - screenshot-capture
+  - video-recording (via gif-creator)
+
+tool_access:
+  - playwright-mcp
+  - bash
+  - file-read
+  - file-write
+  - git
+
+use_cases:
+  - Write E2E tests for new features
+  - Debug failing tests
+  - Eliminate test flakiness
+  - Quarantine problematic tests
+  - Capture visual evidence
+  - Monitor regressions
+
+triggers:
+  - Feature development
+  - Before production release
+  - Test suite fails intermittently
+  - Regression detected
+
+output_artifacts:
+  - test-files
+  - screenshots
+  - videos (GIF format)
+  - test-traces
+```
+
+---
+
+### everything-claude-code:tdd-guide
+**Test-Driven Development enforcer — write tests first, 80%+ coverage**
+
+```yaml
+agent_id: tdd-guide
+domain: testing
+model_preferred: claude-opus-5-5
+fallback_model: claude-sonnet-5-5
+autonomy_level: L1  # Guides, doesn't auto-implement
+confidence_threshold: 0.65
+
+methodology:
+  - red-green-refactor
+  - test-first design
+  - coverage-enforcement
+  - edge-case discovery
+
+tools:
+  - jest
+  - pytest
+  - rspec
+  - test-frameworks
+
+minimum_coverage: 0.80
+```
+
+---
+
+## Performance & Optimization
+
+### everything-claude-code:performance-optimizer
+**Performance analysis — bottleneck identification, optimization**
+
+```yaml
+agent_id: performance-optimizer
+domain: optimization
+model_preferred: claude-opus-5-5
+fallback_model: claude-sonnet-5-5
+autonomy_level: L2
+confidence_threshold: 0.70
+
+capabilities:
+  - profiling-analysis
+  - bottleneck-detection
+  - bundle-size-reduction
+  - memory-leak-finding
+  - render-optimization
+  - algorithm-improvement
+  - database-query-optimization
+
+tools:
+  - chrome-devtools
+  - profiler-mcp
+  - flamegraph-tools
+  - benchmarking
+
+use_cases:
+  - Optimize slow feature
+  - Reduce bundle size
+  - Improve database query performance
+  - Memory leak investigation
+  - Render performance tuning
+```
+
+---
+
+## Frontend & UI
+
+### everything-claude-code:typescript-reviewer
+**TypeScript & JavaScript code reviewer — types, async, security, idioms**
+
+```yaml
+agent_id: typescript-reviewer
+domain: typescript
+model_preferred: claude-opus-5-5
+fallback_model: claude-sonnet-5-5
+autonomy_level: L2
+confidence_threshold: 0.75
+
+specializations:
+  - type-safety
+  - async-correctness
+  - react-patterns
+  - node-security
+  - idiomatic-js
+  - null-safety
+```
+
+---
+
+### everything-claude-code:flutter-reviewer
+**Flutter & Dart code reviewer — widgets, state management, clean arch**
+
+```yaml
+agent_id: flutter-reviewer
+domain: flutter
+model_preferred: claude-sonnet-5-5
+fallback_model: claude-haiku-4-5
+autonomy_level: L2
+confidence_threshold: 0.72
+
+specializations:
+  - widget-best-practices
+  - state-management-patterns
+  - clean-architecture
+  - performance-pitfalls
+  - accessibility-dart
+```
+
+---
+
+## Backend & Database
+
+### everything-claude-code:database-reviewer
+**PostgreSQL specialist — query optimization, schema design, performance**
+
+```yaml
+agent_id: database-reviewer
+domain: database
+model_preferred: claude-opus-5-5
+fallback_model: claude-sonnet-5-5
+autonomy_level: L1  # Reviews, doesn't auto-execute migrations
+confidence_threshold: 0.75
+
+capabilities:
+  - query-optimization
+  - schema-design
+  - index-strategy
+  - performance-tuning
+  - security-audit
+  - migration-safety
+  - supabase-best-practices
+
+tools:
+  - postgres-cli
+  - explain-plan-analyzer
+  - migration-validator
+
+use_cases:
+  - Review database schema changes
+  - Optimize slow queries
+  - Design migration strategy
+  - Security hardening
+  - Supabase optimization
+```
+
+---
+
+### everything-claude-code:java-reviewer
+**Java & Spring Boot reviewer — layered arch, JPA, security, concurrency**
+
+```yaml
+agent_id: java-reviewer
+domain: java
+model_preferred: claude-opus-5-5
+fallback_model: claude-sonnet-5-5
+autonomy_level: L2
+confidence_threshold: 0.74
+
+specializations:
+  - spring-boot-patterns
+  - jpa-best-practices
+  - security-hardening
+  - concurrency-patterns
+  - dependency-injection
+```
+
+---
+
+## DevOps & Infrastructure
+
+### everything-claude-code:docker-patterns
+**Docker & container specialist — Dockerfile optimization, orchestration**
+
+```yaml
+agent_id: docker-patterns
+domain: infrastructure
+model_preferred: claude-sonnet-5-5
+fallback_model: claude-haiku-4-5
+autonomy_level: L2
+confidence_threshold: 0.78
+
+capabilities:
+  - dockerfile-optimization
+  - multi-stage-builds
+  - security-hardening
+  - layer-caching
+  - compose-orchestration
+  - registry-management
+
+use_cases:
+  - Optimize Dockerfile
+  - Multi-stage build strategy
+  - Container security audit
+  - Docker Compose design
+```
+
+---
+
+### everything-claude-code:kubernetes-architect
+**Kubernetes specialist — manifests, deployments, scaling, observability**
+
+```yaml
+agent_id: kubernetes-architect
+domain: infrastructure
+model_preferred: claude-opus-5-5
+fallback_model: claude-sonnet-5-5
+autonomy_level: L1  # Reviews, doesn't auto-deploy
+confidence_threshold: 0.72
+
+capabilities:
+  - manifest-generation
+  - deployment-strategy
+  - scaling-configuration
+  - service-mesh
+  - observability-setup
+  - security-policies
+```
+
+---
+
+## Documentation & Knowledge
+
+### everything-claude-code:doc-updater
+**Documentation specialist — codemaps, READMEs, architecture guides**
+
+```yaml
+agent_id: doc-updater
+domain: documentation
+model_preferred: claude-sonnet-5-5
+fallback_model: claude-haiku-4-5
+autonomy_level: L2
+confidence_threshold: 0.80
+
+capabilities:
+  - codemap-generation
+  - readme-writing
+  - architecture-documentation
+  - api-documentation
+  - tutorial-creation
+  - changelog-updates
+
+tools:
+  - /update-codemaps
+  - /update-docs
+  - markdown-generator
+
+use_cases:
+  - Generate/update codemaps
+  - Write architecture guides
+  - Create API documentation
+  - Update README files
+  - Document design decisions
+```
+
+---
+
+## Specialized Domains
+
+### 3D & Scene Developer
+**WebGL/Cesium specialist — 3D visualization, terrain, point clouds**
+
+```yaml
+agent_id: 3d-scene-developer
+domain: visualization
+model_preferred: claude-opus-5-5
+fallback_model: claude-sonnet-5-5
+autonomy_level: L2
+
+capabilities:
+  - cesium-js
+  - arcgis-scene-viewer
+  - point-cloud-processing
+  - terrain-modeling
+  - webgl-optimization
+```
+
+---
+
+### Accessibility Auditor
+**WCAG specialist — screen reader testing, inclusive design, compliance**
+
+```yaml
+agent_id: accessibility-auditor
+domain: quality-assurance
+model_preferred: claude-opus-5-5
+fallback_model: claude-sonnet-5-5
+autonomy_level: L1
+
+capabilities:
+  - wcag-audit
+  - screen-reader-testing
+  - keyboard-navigation
+  - color-contrast-validation
+  - aria-correctness
+  - accessibility-reporting
+
+tools:
+  - axe-core-mcp
+  - wave
+  - lighthouse
+  - nvda/jaws-simulation
+
+use_cases:
+  - Pre-launch accessibility audit
+  - Inclusive design review
+  - Compliance verification
+  - Barrier identification
+```
+
+---
+
+## Agent Dispatch Logic
+
+### Routing Rules
+
+```yaml
+dispatch_rules:
+  # Code quality
+  - trigger: "code_review"
+    agents: [code-reviewer, security-reviewer]
+    parallel: true
+
+  # Build failures
+  - trigger: "build_failed"
+    agents:
+      - path: "*.ts"
+        agent: typescript-build-resolver
+      - path: "*.rs"
+        agent: rust-build-resolver
+      - path: "*.go"
+        agent: go-build-resolver
+      - path: "CMakeLists.txt"
+        agent: cpp-build-resolver
+    parallel: true
+
+  # Testing
+  - trigger: "test_coverage_low"
+    agents: [tdd-guide, e2e-runner]
+    parallel: false
+    order: [tdd-guide, e2e-runner]
+
+  # Performance
+  - trigger: "performance_issue"
+    agents: [performance-optimizer]
+    autonomy: L1
+
+  # Security
+  - trigger: "security_audit"
+    agents: [security-reviewer]
+    autonomy: L1
+    requires_approval: true
+
+  # Database
+  - trigger: "schema_change"
+    agents: [database-reviewer]
+    autonomy: L1
+```
+
+---
+
+## Model Selection by Agent Type
+
+```yaml
+model_mapping:
+  complex_reasoning:
+    - opus (0.9 confidence+)
+    - sonnet (0.7-0.9)
+    - haiku (fallback)
+
+  code_generation:
+    - opus (new complex features)
+    - sonnet (incremental changes)
+    - haiku (simple fixes)
+
+  code_review:
+    - opus (security, architecture)
+    - sonnet (general review)
+    - haiku (linting)
+
+  testing:
+    - sonnet (test generation)
+    - haiku (flaky test analysis)
+
+  documentation:
+    - sonnet (comprehensive docs)
+    - haiku (updates, summaries)
+
+  performance:
+    - opus (complex optimization)
+    - sonnet (simple optimization)
+```
+
+---
+
+## Confidence Scoring
+
+**Agent confidence = Success rate on similar tasks**
+
+```yaml
+confidence_levels:
+  0.0-0.40: L0 (Report only, don't execute)
+  0.40-0.60: L1 (Suggest, require approval)
+  0.60-0.85: L2 (Execute with verification)
+  0.85-1.0: L3 (Autonomous operation)
+
+factors:
+  - historical_success_rate
+  - task_complexity
+  - available_context
+  - tool_availability
+  - error_recovery_capability
+```
+
+---
+
+## How to Spawn Subagents
+
+### From Claude Code
+
+```bash
+# Automatic discovery
+claude "review my code"
+# → Spawns: code-reviewer + security-reviewer (parallel)
+
+# Explicit spawn
+/code-review --max-findings all
+
+# Parallel subagents
+/security-reviewer
+/performance-optimizer
+# → Both run in parallel, results merged
+```
+
+### From [[CLAUDEAPI]]
+
+```python
+from anthropic import Anthropic
+
+client = Anthropic()
+
+# Delegate to code reviewer subagent
+response = client.messages.create(
+    model="claude-opus-5-5",
+    messages=[
+        {
+            "role": "user",
+            "content": [
+                {
+                    "type": "text",
+                    "text": "Review this code for security issues"
+                },
+                {
+                    "type": "document",
+                    "source": {"type": "file", "file_id": "..."}
+                }
+            ]
+        }
+    ],
+    system="You are code-reviewer subagent. Review for bugs, security, performance."
+)
+```
+
+### From Neo4j (via MCP)
+
+```cypher
+// Log subagent spawn
+MERGE (task:Task {id: "TASK-001"})
+MERGE (agent:Agent {name: "code-reviewer"})
+MERGE (task)-[:DELEGATED_TO]->(agent)
+SET task.status = "in_progress", agent.confidence_score = 0.78
+```
+
+---
+
+## Integration with [[CLAUDE_AUTONOMY]]
+
+```
+User intent
+    ↓
+Claude assesses confidence
+    ↓ (if < 0.60)
+Spawn L1 agent (suggest only)
+    ↓ (if 0.60-0.85)
+Spawn L2 agent (execute + verify)
+    ↓ (if > 0.85 + verified)
+Spawn L3 agent (autonomous)
+    ↓
+Log decision to [[CLAUDENEO4J]]
+```
+
+---
+
+**Canonical source:** [[CLAUDE_MASTER_ONTOLOGY]]
+**Related:** [[CLAUDE_AUTONOMY]] [[CLAUDE_INTEGRATION_MAP]]
+**Updated:** 2026-10-02
+**Status:** Production registry ✅
