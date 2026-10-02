@@ -1,0 +1,21 @@
+"The Company/Company Brain/CROSS_LINK_MASTER_ONTOLOGY.md"
+  s_39dfcb184eea53::t_479cbc307bc7ef 204-212
+"The Company/Company Brain/FILESYSTEM_AND_DISKMAP_MASTER_ONTOLOGY.md"
+  s_39dfcb184eea53::t_b7e427bbc5cae5 1-805
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "7665c19db1c9b91a04a2412436fc3ebbe07518d9",
+  "prompts": {},
+  "sessions": {
+    "s_39dfcb184eea53": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "8f50b13e-cd10-46c0-9897-433d02653f53",
+        "model": "unknown"
+      },
+      "human_author": "Claude Haiku <noreply@anthropic.com>"
+    }
+  }
+}
