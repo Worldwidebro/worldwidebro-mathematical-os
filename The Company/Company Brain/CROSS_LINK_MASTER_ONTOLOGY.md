@@ -524,6 +524,272 @@ NEXT_MONTH:
 
 ---
 
+---
+
+## [EXTENDED_RELATIONSHIP_TYPES] — 12 Additional Semantics (Unit 8)
+
+### [STORAGE_RELATIONSHIPS]
+```
+STORED_IN      — Data location (File STORED_IN Folder)
+MOUNTED_ON     — Volume binding (Folder MOUNTED_ON Filesystem)
+RESIDES_ON     — Physical location (Filesystem RESIDES_ON Device)
+BACKED_UP_TO   — Replica location (Data BACKED_UP_TO ExternalDrive)
+MIGRATED_TO    — Movement (Data MIGRATED_TO NewLocation)
+```
+
+### [EXECUTION_RELATIONSHIPS]
+```
+EXECUTES       — Agent action (Agent EXECUTES Task)
+DELEGATES_TO   — Reassignment (Manager DELEGATES_TO Agent)
+CHAINS_TO      — Sequential (Task CHAINS_TO NextTask)
+LOOPS_OVER     — Iteration (Workflow LOOPS_OVER DataSet)
+ABORTS_ON      — Failure handling (Task ABORTS_ON Error)
+```
+
+### [LINEAGE_RELATIONSHIPS]
+```
+TRANSFORMS     — Data change (RawData TRANSFORMS to CleanData)
+DERIVED_FROM   — Computation (Metric DERIVED_FROM Ventures)
+AGGREGATES     — Combination (Report AGGREGATES Metrics)
+FILTERS        — Selection (Subset FILTERS from FullSet)
+LINEAGE_CHAIN  — Full ancestry (CurrentData LINEAGE_CHAIN SourceData)
+```
+
+### [DEPENDENCY_RELATIONSHIPS]
+```
+SOFT_DEPENDS   — Recommended (Service SOFT_DEPENDS on Cache)
+HARD_DEPENDS   — Required (Agent HARD_DEPENDS on Capability)
+CIRCULAR_WITH  — Mutual dependency (A CIRCULAR_WITH B)
+BLOCKS_UNTIL   — Blocker (Task BLOCKS_UNTIL Condition)
+WAITS_FOR      — Synchronization (Agent WAITS_FOR Signal)
+```
+
+### [ANNOTATION_RELATIONSHIPS]
+```
+COMMENTED_BY   — Discussion (Document COMMENTED_BY Reviewer)
+FLAGGED_BY     — Marking (Entity FLAGGED_BY QA)
+APPROVED_BY    — Authorization (Change APPROVED_BY Authority)
+REJECTED_BY    — Denial (Change REJECTED_BY Authority)
+REVISED_BY     — Editing (Document REVISED_BY Author)
+```
+
+### [EVIDENCE_RELATIONSHIPS]
+```
+EVIDENCE_LOG   — Proof collection (Claim EVIDENCE_LOG [Test1, Test2])
+VERIFIED_AT    — Timestamp (Evidence VERIFIED_AT DateTime)
+CONFIDENCE     — Certainty metric (Assertion CONFIDENCE 0.95)
+SUPERSEDED_BY  — Obsolescence (OldData SUPERSEDED_BY NewData)
+CONTRADICTED   — Conflict (Claim1 CONTRADICTED Claim2)
+```
+
+### [TEMPORAL_RELATIONSHIPS]
+```
+CREATED_AT     — Birth timestamp (Entity CREATED_AT DateTime)
+MODIFIED_AT    — Last change (Entity MODIFIED_AT DateTime)
+DEPRECATED_AT  — Expiry (Service DEPRECATED_AT DateTime)
+ARCHIVED_AT    — Historical (Document ARCHIVED_AT DateTime)
+VALID_UNTIL    — Expiration (Credential VALID_UNTIL DateTime)
+```
+
+### [AUTHORITY_RELATIONSHIPS]
+```
+OWNED_BY       — Owner (Resource OWNED_BY Organization)
+MANAGED_BY     — Manager (Service MANAGED_BY Team)
+GOVERNED_BY    — Policy (Action GOVERNED_BY Policy)
+AUDITED_BY     — Oversight (Account AUDITED_BY Auditor)
+AUTHORIZED_BY  — Permission (Access AUTHORIZED_BY SecOps)
+```
+
+### [COMPOSITION_RELATIONSHIPS]
+```
+COMPOSED_OF    — Parts (System COMPOSED_OF Subsystems)
+EMBEDDED_IN    — Nesting (Component EMBEDDED_IN Container)
+LAYER_IN       — Stratification (Feature LAYER_IN Application)
+EXTENDS        — Inheritance (SpecializedClass EXTENDS BaseClass)
+IMPLEMENTS     — Interface (Concrete IMPLEMENTS Interface)
+```
+
+### [MAPPING_RELATIONSHIPS]
+```
+ALIAS_FOR      — Name variant (Nickname ALIAS_FOR RealName)
+EQUIVALENT_TO  — Semantic match (Term1 EQUIVALENT_TO Term2)
+MAPS_TO        — Translation (SourceID MAPS_TO TargetID)
+RESOLVES_TO    — Final reference (Bracket RESOLVES_TO Entity)
+NORMALIZED_AS  — Canonical form (VariantForm NORMALIZED_AS StandardForm)
+```
+
+### [MEASUREMENT_RELATIONSHIPS]
+```
+MEASURES       — Metric (SLA MEASURES Availability)
+THRESHOLD_SET  — Limit (Metric THRESHOLD_SET 99.9%)
+TRIGGERS_ALERT — Action (Metric TRIGGERS_ALERT OnFailure)
+TRACKED_BY     — Monitoring (Service TRACKED_BY Dashboard)
+REPORTED_IN    — Aggregation (Metric REPORTED_IN Report)
+```
+
+### [FALLBACK_RELATIONSHIPS]
+```
+PRIMARY_IS     — First choice (Service PRIMARY_IS MainServer)
+FALLBACK_TO    — Backup (MainServer FALLBACK_TO ReplicaServer)
+FAILOVER_TO    — Emergency (FailedService FAILOVER_TO Backup)
+CASCADES_TO    — Propagation (Failure CASCADES_TO DependentSystems)
+RECOVERY_FROM  — Restoration (System RECOVERY_FROM Backup)
+```
+
+**Relationship Coverage: 45+ types total (7 original categories + 12 new = complete semantic grammar)**
+
+---
+
+## [COMPLETE_TRAVERSAL_PATHS] — End-to-End Navigation (Unit 9)
+
+### Path 1: User → Ventures They Control
+```
+[[WHOAMI#Person]]
+  ↓ [OWNS] 
+[[OPERATING_COMPANY]]
+  ↓ [OPERATES_IN]
+[[SECTOR]]
+  ↓ [CONTAINS]
+[[VENTURE]]
+  ↓ [GENERATES]
+[[REVENUE_STREAM]]
+  ↓ [ATTRIBUTED_TO]
+[[FINANCIAL_PROFILE]]
+  → Result: Map person → company ownership → sector scope → ventures → revenue
+```
+
+### Path 2: Venture → Revenue Loops
+```
+[[VENTURE]]
+  ↓ [EXECUTES]
+[[WORKFLOW]]
+  ↓ [INCLUDES]
+[[REVENUE_LOOP]]  (lead-gen → sales → delivery → collection → retention)
+  ↓ [TRACKS]
+[[METRIC]]
+  ↓ [INFORMS]
+[[DECISION]]
+  ↓ [RESULTS_IN]
+[[ACTION]]
+  → Result: From venture through full revenue cycle to decisions and actions
+```
+
+### Path 3: Repository → Deployed Ventures
+```
+[[REPOSITORY]]
+  ↓ [IMPLEMENTS]
+[[CAPABILITY]]
+  ↓ [ENABLES]
+[[AGENT]]
+  ↓ [EXECUTES]
+[[DEPLOYMENT]]
+  ↓ [RUNS_ON]
+[[VENTURE]]
+  ↓ [GENERATES]
+[[OUTCOME]]
+  → Result: Code lineage from repository through execution to business outcome
+```
+
+### Path 4: Agent → Decisions It Made
+```
+[[AGENT]]
+  ↓ [EXECUTES]
+[[TASK]]
+  ↓ [BASED_ON]
+[[CONTEXT_DATA]]
+  ↓ [INFORMS]
+[[LAYA_DECISION]]  (confidence-gated L1/L2/L3)
+  ↓ [LOGGED_IN]
+[[NEO4J_GRAPH]]
+  ↓ [REFERENCES]
+[[DECISION_AUTHORITY]]
+  → Result: Agent decision trail from task through reasoning to authority approval
+```
+
+### Path 5: Capability → Ventures Using It
+```
+[[CAPABILITY]]
+  ↓ [MAPPED_TO]
+[[SKILL_REGISTRY]]
+  ↓ [AVAILABLE_TO]
+[[AGENT]]
+  ↓ [EXECUTES]
+[[WORKFLOW]]
+  ↓ [USED_BY]
+[[VENTURE]]
+  ↓ [CREATES_VALUE_FOR]
+[[STAKEHOLDER]]
+  → Result: Capability discovery from registry through execution to business value
+```
+
+### Path 6: File → Storage → Mount → Device
+```
+[[FILE]]
+  ↓ [STORED_IN]
+[[FOLDER]]
+  ↓ [MOUNTED_ON]
+[[FILESYSTEM]]
+  ↓ [RESIDES_ON]
+[[VOLUME]]
+  ↓ [ATTACHED_TO]
+[[DEVICE]]
+  ↓ [CONNECTIVITY]
+[[NETWORK]]
+  → Result: Complete data lineage from logical file to physical hardware and network
+```
+
+### Path 7: Obsidian Document → Neo4j Entity
+```
+[[MARKDOWN_FILE]]
+  ↓ [CONTAINS]
+[[WIKI_LINK]]
+  ↓ [REFERENCES]
+[[BRACKET_ENTITY]]
+  ↓ [RESOLVES_TO]
+[[MASTER_ONTOLOGY_ENTITY]]
+  ↓ [REPRESENTS]
+[[NEO4J_NODE]]
+  ↓ [CONNECTED_VIA]
+[[NEO4J_EDGE]]
+  → Result: Knowledge source bridge from human-readable markdown to machine graph
+```
+
+### Path 8: Decision → Evidence → Reality → Action
+```
+[[DECISION]]
+  ↓ [BASED_ON]
+[[EVIDENCE]]
+  ↓ [VALIDATES]
+[[ASSERTION]]
+  ↓ [STATUS]
+[[WHERE_WE_ARE#Current_State]]
+  ↓ [INFORMS]
+[[ACTION_PLAN]]
+  ↓ [EXECUTES_TO]
+[[OUTCOME]]
+  → Result: Fully validated decision-to-action chain with evidence and reality checks
+```
+
+### Path 9: Task Blocker → Resolution → Unblocking
+```
+[[TASK]]
+  ↓ [BLOCKED_BY]
+[[BLOCKER]]
+  ↓ [ESCALATES_TO]
+[[DECISION_AUTHORITY]]
+  ↓ [APPROVES]
+[[RESOLUTION]]
+  ↓ [REMOVES]
+[[BLOCKER_CLEARED]]
+  ↓ [UNBLOCKS]
+[[TASK]]  (now executable)
+  → Result: Complete blocker lifecycle from identification through resolution
+```
+
+**Traversal Coverage: 9 complete end-to-end paths showing full navigation from any starting point**
+
+---
+
 **This is what makes the Company Brain navigable instead of just readable.**
 
 **Every [[BRACKET]] is now a semantic entity. Every relationship is now a queryable arc.**
@@ -532,6 +798,6 @@ NEXT_MONTH:
 
 ---
 
-**Related:** [[WHOAMI.md]] · [[WHERE_WE_ARE.md]] · [[DATA_FLOW.md]] · [[INFRASTRUCTURE.md]]
+**Related:** [[WHOAMI.md]] · [[WHERE_WE_ARE.md]] · [[DATA_FLOW.md]] · [[INFRASTRUCTURE.md]] · [[OBSIDIAN_MASTER_ONTOLOGY.md]]
 
-**Master grammar: Enables machine navigation of all knowledge.**
+**Master grammar v1.1: 45+ relationship types, 9 complete traversal paths, machine navigation enabled.**
