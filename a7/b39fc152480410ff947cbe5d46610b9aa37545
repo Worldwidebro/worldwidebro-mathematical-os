@@ -1,0 +1,21 @@
+"The Company/Company Brain/CROSS_LINK_MASTER_ONTOLOGY.md"
+  s_0791ba9c313e11::t_8b73a1f6b6dec8 195-203
+"The Company/Company Brain/_REGISTRIES/CANONICAL/NAVIGATION_ALIASES.yaml"
+  s_0791ba9c313e11::t_26410c9b5bd040 688-861
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "a7b39fc152480410ff947cbe5d46610b9aa37545",
+  "prompts": {},
+  "sessions": {
+    "s_0791ba9c313e11": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "514105f9-2725-4dc9-9a8e-de2e4b241499",
+        "model": "unknown"
+      },
+      "human_author": "Claude Haiku <noreply@anthropic.com>"
+    }
+  }
+}
