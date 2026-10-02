@@ -1,0 +1,53 @@
+"The Company/Company Brain/.obsidian/graph.json"
+  s_39dfcb184eea53::t_e9f726ad377389 1-22
+"The Company/Company Brain/CLAUDE_CAPABILITIES.md"
+  s_0791ba9c313e11::t_d175fcdc324954 1-222
+"The Company/Company Brain/CLAUDE_CODE.md"
+  s_0791ba9c313e11::t_a660fb9997da17 1-434
+"The Company/Company Brain/CLAUDE_MASTER_ONTOLOGY.md"
+  s_0791ba9c313e11::t_08cb9f6d023174 1-404
+"The Company/Company Brain/.obsidian/app.json"
+  s_0791ba9c313e11::t_b05eafb8f6244f 1
+"The Company/Company Brain/.obsidian/appearance.json"
+  s_0791ba9c313e11::t_cb769f07d6f532 1
+"The Company/Company Brain/.obsidian/core-plugins.json"
+  s_0791ba9c313e11::t_03a9e9ffd31d11 1-33
+"The Company/Company Brain/.obsidian/workspace.json"
+  s_0791ba9c313e11::t_2332db71da36c3 1-204
+"The Company/Company Brain/CLAUDE_API.md"
+  s_0791ba9c313e11::t_1069ac6dd762a3 1-435
+"The Company/Company Brain/CLAUDE_AUTONOMY.md"
+  s_0791ba9c313e11::t_830d0c0ef900f8 1-406
+"The Company/Company Brain/CLAUDE_INTEGRATION_MAP.md"
+  s_0791ba9c313e11::t_a13a81c6b3fed0 1-439
+"The Company/Company Brain/CLAUDE_REALITY.md"
+  s_0791ba9c313e11::t_5e2c14021aee48 1-377
+"The Company/Company Brain/GITHUB_MASTER_ONTOLOGY.md"
+  s_0791ba9c313e11::t_6178731200dd89 1-873
+"The Company/Company Brain/_REGISTRIES/CANONICAL/NAVIGATION_ALIASES.yaml"
+  s_0791ba9c313e11::t_b27205d944c159 506-687
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "d81dfce8a3aeca3d2bdcf678fe605a152e386b88",
+  "prompts": {},
+  "sessions": {
+    "s_0791ba9c313e11": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "514105f9-2725-4dc9-9a8e-de2e4b241499",
+        "model": "unknown"
+      },
+      "human_author": "Claude Haiku <noreply@anthropic.com>"
+    },
+    "s_39dfcb184eea53": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "8f50b13e-cd10-46c0-9897-433d02653f53",
+        "model": "unknown"
+      },
+      "human_author": "Claude Haiku <noreply@anthropic.com>"
+    }
+  }
+}
