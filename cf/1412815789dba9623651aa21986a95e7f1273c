@@ -1,0 +1,19 @@
+"The Company/Company Brain/OMNIROUTE_MASTER_ONTOLOGY.md"
+  s_39dfcb184eea53::t_f6696fe5e8f8de 1-977
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "cf1412815789dba9623651aa21986a95e7f1273c",
+  "prompts": {},
+  "sessions": {
+    "s_39dfcb184eea53": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "8f50b13e-cd10-46c0-9897-433d02653f53",
+        "model": "unknown"
+      },
+      "human_author": "Claude Haiku <noreply@anthropic.com>"
+    }
+  }
+}
