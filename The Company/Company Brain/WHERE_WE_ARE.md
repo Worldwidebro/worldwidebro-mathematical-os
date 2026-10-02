@@ -2,18 +2,19 @@
 type: system-state
 canonical: true
 authority: current-reality
-updated_at: 2026-10-02T18:30:00Z
+updated_at: 2026-10-02T23:58:00Z
 verification_date: 2026-10-02
 verification_required: true
 source_of_truth: true
 owner: divinejohns
+last_verified_by: system-connectivity-audit
 ---
 
 # WHERE_WE_ARE — Canonical System State
 
 **Live state registry. Every claim is verified or marked unknown. Updated from evidence, not aspiration.**
 
-Last verified: **2026-10-02 06:30 PM** | Next audit: **2026-10-09**
+Last verified: **2026-10-02 11:58 PM** (Live audit: [[SYSTEM_CONNECTIVITY_AUDIT]]) | Next audit: **2026-10-09**
 
 ---
 
@@ -59,10 +60,11 @@ machine:
     external:
       device: LaCie T7 Shield
       capacity: 1.8 TB
-      used: 900 GB (50%)
-      available: 922 GB
-      status: [VERIFIED]
-      mount: /Volumes/T7\ Shield
+      used: 900 GB (50%) [claimed, NOT VERIFIED]
+      available: 922 GB [claimed, NOT VERIFIED]
+      status: [NOT_MOUNTED] ❌ — Documentation STALE
+      mount: /Volumes/T7\ Shield [UNMOUNTED]
+      note: "Verified 2026-10-02 23:58 — T7 NOT currently mounted on Mac Studio"
   
   operating_system:
     name: macOS Sonoma
@@ -140,10 +142,12 @@ network:
         status: offline or not monitored
   
   ssh:
-    mac_air_to_mac_studio: [VERIFIED]
-    host_config: ~/.ssh/config (3 entries)
-    key: ~/.ssh/id_ed25519 (authorized on Mac Studio)
-    passwordless_login: [VERIFIED]
+    mac_air_to_mac_studio: [VERIFIED] ✅
+    host_config: ~/.ssh/config (3 entries: macstudio, mac-studio, mac-studio-local)
+    key: ~/.ssh/id_ed25519 (ed25519, authorized on Mac Studio)
+    user: divinejohns (NOT aces) ⚠️ CRITICAL
+    passwordless_login: [VERIFIED] ✅
+    test_command: ssh divinejohns@100.87.214.70 "echo Connected!"
     
   local_lan:
     network: 192.168.1.0/24
@@ -172,10 +176,11 @@ network:
 docker:
   engine:
     host: Mac Studio
-    status: [VERIFIED]
-    containers: 70+ active
+    status: [RUNNING] - verified by port responsiveness
+    containers: 70+ volumes detected
     images: pre-built
-    data_location: /Volumes/T7\ Shield/docker/
+    data_location: [UNKNOWN] — claimed /Volumes/T7\ Shield/docker/ BUT T7 not mounted
+    data_location_actual: [NEEDS_VERIFICATION] — Likely on internal drive (95% full)
     
   services:
     count: 8+ core services
