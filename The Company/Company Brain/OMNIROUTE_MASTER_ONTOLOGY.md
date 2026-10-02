@@ -2,101 +2,295 @@
 type: infrastructure-control-ontology
 canonical: true
 authority: ai-connectivity-plane
-updated_at: 2026-10-02T22:00:00Z
+version: 2.0
+updated_at: 2026-10-02T23:00:00Z
 source_of_truth: true
+subsystems: 38
 ---
 
-# OMNIROUTE_MASTER_ONTOLOGY — AI Infrastructure Control Plane
+# OMNIROUTE_MASTER_ONTOLOGY v2.0 — AI Infrastructure Control Plane
 
-**OmniRoute is not just an "AI proxy." It is a complete AI connectivity, routing, resilience, optimization, protocol, observability, and agent infrastructure layer.**
+**OmniRoute is not just an "AI proxy." It is a complete AI connectivity, routing, resilience, optimization, protocol, observability, agent, and integrated subsystems layer.**
 
-This ontology models OmniRoute as a **first-class system node** with explicit governance, routing policies, quota management, resilience strategies, and deep integration with the Company Brain's knowledge graph and decision-making.
+This comprehensive ontology models OmniRoute as a **first-class system node** with 38 documented subsystems, explicit governance, and deep integration with the Company Brain's knowledge graph.
 
 ---
 
-## [OMNIROUTE_IDENTITY] — System Architecture
+## [OMNIROUTE_COMPLETE_ARCHITECTURE] — 38 Subsystems
 
 ```
 [OMNIROUTE]
 │
-├── [AI_GATEWAY]             — Unified API for all AI clients
-├── [MODEL_GATEWAY]          — Model abstraction + routing
-├── [UNIFIED_API]            — Single endpoint, 359+ providers
-├── [AI_ROUTER]              — Intelligent routing engine
-├── [PROVIDER_ORCHESTRATOR]  — Provider/account management
-├── [QUOTA_ORCHESTRATOR]     — Quota + headroom management
-├── [FAILOVER_ENGINE]        — Automatic fallback + retry
-├── [RESILIENCE_ENGINE]      — Circuit breaker + cooldown
-├── [COMPRESSION_ENGINE]     — RTK + Caveman + stacked transforms
-├── [PROTOCOL_GATEWAY]       — OpenAI-compatible API layer
-├── [MCP_SERVER]             — Model Context Protocol interface
-├── [A2A_SERVER]             — Agent-to-Agent execution
-├── [CLI]                    — Command-line control
-├── [DASHBOARD]              — Web observability interface
-├── [DESKTOP_APPLICATION]    — Electron app (macOS/Windows/Linux)
-├── [PWA]                    — Progressive web app
-├── [ANDROID_RUNTIME]        — Termux support
-└── [AGENT_CONTROL_PLANE]    — Integration with Company Brain agents
+├─ [CORE_GATEWAY]
+│  ├── [AI_GATEWAY]                — Unified API for all clients
+│  ├── [MODEL_GATEWAY]             — Model abstraction + routing
+│  ├── [UNIFIED_API]               — Single endpoint, 359+ providers
+│  ├── [OPENAI_COMPATIBILITY]      — OpenAI-compatible protocol
+│  ├── [PROTOCOL_TRANSLATION]      — Provider format conversion
+│  └── [PROTOCOL_LAYER]            — REST, MCP, A2A, Batch, Files
+│
+├─ [ROUTING_SYSTEM]
+│  ├── [AI_ROUTER]                 — Intelligent routing engine
+│  ├── [ROUTING_STRATEGIES]        — 20+ routing modes
+│  ├── [AUTO_COMBO]                — Multi-factor intelligent selection
+│  ├── [COMBOS]                    — Pre-tuned routing combinations
+│  ├── [FUSION]                    — Multi-model voting + judge
+│  ├── [PIPELINE]                  — Sequential multi-step execution
+│  ├── [ROUTING_TRANSPARENCY]      — Expose routing decisions via headers
+│  └── [CACHE_AFFINITY]            — Cache-aware routing decisions
+│
+├─ [QUOTA_SYSTEM]
+│  ├── [QUOTA_ENGINE]              — Quota + headroom tracking
+│  ├── [QUOTA_SHARE]               — Shared accounts, pooled keys, quota slices
+│  ├── [ACCOUNT_ROTATION]          — Quota-aware account switching
+│  ├── [CONTEXT_RELAY]             — Transparent session transfer
+│  ├── [HEADROOM_MANAGEMENT]       — Buffer before exhaustion
+│  ├── [RESET_WINDOWS]             — Reset schedule tracking
+│  └── [COST_HEADERS]              — Per-request cost telemetry
+│
+├─ [RESILIENCE_SYSTEM]
+│  ├── [ADMISSION_CONTROL]         — Overload protection + request queue
+│  ├── [BACKPRESSURE]              — Load shedding + concurrency control
+│  ├── [REQUEST_QUEUE]             — Heavy request queueing
+│  ├── [RETRY_ENGINE]              — Exponential backoff + jitter
+│  ├── [CIRCUIT_BREAKER]           — Trip on repeated failures
+│  ├── [COOLDOWN]                  — Temporary provider blacklist
+│  ├── [FAILOVER_ENGINE]           — Automatic fallback chain
+│  ├── [HEALTH_CHECK]              — Provider + model availability
+│  └── [SELF_HEALING]              — Automatic recovery loops
+│
+├─ [COMPRESSION_SYSTEM]
+│  ├── [COMPRESSION_ENGINE]        — Core compression orchestration
+│  ├── [RTK]                       — Domain-specific reduction rules
+│  ├── [CAVEMAN]                   — Aggressive shorthand reduction
+│  ├── [LLMLINGUA]                 — Token pruning via LLMlingua
+│  ├── [ULTRA]                     — Additional compression engine
+│  ├── [OMNIGLYPH]                 — Token symbolization
+│  ├── [GCF]                       — Graph compression filter
+│  ├── [MCP_ACCESSIBILITY_FILTER]  — Accessibility-aware compression
+│  ├── [COMPRESSION_STUDIO]        — Visual composition + reordering
+│  ├── [COMPRESSION_LEARNING]      — Self-improving filter discovery
+│  ├── [FIDELITY_GATE]             — Preserve semantic meaning
+│  └── [INFLATION_GUARD]           — Prevent decompression explosion
+│
+├─ [CACHE_SYSTEM]
+│  ├── [CACHE]                     — Response caching
+│  ├── [PREFIX_CACHE]              — Semantic prefix caching
+│  ├── [SEMANTIC_CACHE]            — Vector-based cache matching
+│  ├── [CACHE_AFFINITY]            — Route to cache holders
+│  └── [CACHE_HIT_OPTIMIZATION]    — Maximize cache effectiveness
+│
+├─ [AGENT_SYSTEM]
+│  ├── [OMNICONDUCTOR]             — Inbound A2A delegation fleet
+│  ├── [MCP_SERVER]                — Model Context Protocol interface
+│  ├── [A2A_SERVER]                — Agent-to-Agent execution layer
+│  ├── [ACP_AGENT_DISCOVERY]       — Agent capability provider discovery
+│  ├── [AGENT_FLEET]               — Multi-agent orchestration
+│  ├── [AGENT_CARD]                — Agent metadata + capabilities
+│  ├── [SKILL_EXECUTION]           — Skill invocation + routing
+│  └── [AGENT_COORDINATION]        — Multi-agent workflow
+│
+├─ [SKILLS_AND_PLUGINS]
+│  ├── [SKILL_REGISTRY]            — Central skill catalog
+│  ├── [SKILL_MARKETPLACE]         — Skill discovery + installation
+│  ├── [GITHUB_SKILL_DISCOVERY]    — Auto-import from GitHub repos
+│  ├── [PLUGIN_SYSTEM]             — Extensible plugin framework
+│  ├── [PLUGIN_MARKETPLACE]        — Plugin discovery + installation
+│  ├── [PLUGIN_PERMISSIONS]        — Scope-based access control
+│  └── [PLUGIN_LIFECYCLE]          — Install, enable, disable, remove
+│
+├─ [API_LAYER]
+│  ├── [INFERENCE_API]             — Chat completions endpoint
+│  ├── [RESPONSES_API]             — OpenAI Responses protocol
+│  ├── [BATCH_API]                 — Batch processing jobs
+│  ├── [FILES_API]                 — File upload/download
+│  ├── [EMBEDDINGS_API]            — Vector embeddings
+│  ├── [IMAGE_GENERATION_API]      — Image generation
+│  ├── [VISION_API]                — Image understanding
+│  ├── [AUDIO_API]                 — Audio processing
+│  ├── [TTS_API]                   — Text-to-speech
+│  ├── [STT_API]                   — Speech-to-text
+│  └── [OCR_API]                   — Optical character recognition
+│
+├─ [PROVIDER_SYSTEM]
+│  ├── [PROVIDER_REGISTRY]         — Core provider catalog
+│  ├── [PROVIDER_ORCHESTRATOR]     — Provider lifecycle management
+│  ├── [MODEL_REGISTRY]            — 1,200+ model catalog
+│  ├── [RADAR]                     — Live free-tier catalog overlay
+│  ├── [FREE_TIER_ENGINE]          — Zero-cost optimization
+│  ├── [PROVIDER_HEALTH]           — Availability + performance
+│  ├── [PROVIDER_RANKING]          — Quality/cost/latency scoring
+│  └── [CONNECTION_REGISTRY]       — API keys, OAuth, credentials
+│
+├─ [NETWORK_AND_PROXY]
+│  ├── [TAILSCALE]                 — VPN-based access
+│  ├── [TUNNELS]                   — Tunnel endpoints
+│  ├── [CLOUD_RELAY]               — Edge deployment layer
+│  ├── [CLOUDFLARE_WORKERS]        — Cloudflare edge relays
+│  ├── [DENO_DEPLOY]               — Deno Deploy edge relays
+│  ├── [MITM_TPROXY]               — Transparent proxy + MITM decryption
+│  ├── [TRANSPARENT_PROXY]         — Intercept CLI traffic
+│  ├── [PROXY_POOL]                — Managed proxy set
+│  └── [PROXY_ROTATION]            — Rotate proxies per request
+│
+├─ [SECURITY_AND_COMPLIANCE]
+│  ├── [AUTHORIZATION]             — API key + bearer token auth
+│  ├── [GUARDRAILS]                — Comprehensive security gates
+│  ├── [ROUTE_GUARDS]              — Route-level access control
+│  ├── [SCOPE_GUARDS]              — Permission scope enforcement
+│  ├── [SSRF_PROTECTION]           — Server-side request forgery prevention
+│  ├── [ERROR_SANITIZATION]        — Safe error message generation
+│  ├── [SECRET_REDACTION]          — Redact sensitive data from errors
+│  ├── [STEALTH]                   — Fingerprint normalization
+│  ├── [PUBLIC_CREDENTIALS]        — Handle public API keys safely
+│  ├── [COMPLIANCE]                — Regulatory requirement enforcement
+│  ├── [AUDIT_LOG]                 — Immutable request audit trail
+│  ├── [BUDGET_GUARD]              — USD spend limits + enforcement
+│  └── [SPEND_QUOTAS]              — Per-key USD budget limits
+│
+├─ [OBSERVABILITY_AND_ANALYTICS]
+│  ├── [LOGGING]                   — Request/response logging
+│  ├── [METRICS]                   — Prometheus-compatible metrics
+│  ├── [TRACING]                   — Distributed trace collection
+│  ├── [TELEMETRY]                 — System telemetry
+│  ├── [BIGQUERY_EXPORT]           — Log export to BigQuery
+│  ├── [HEALTH_DASHBOARD]          — Live health status
+│  ├── [ANALYTICS_ENGINE]          — Usage + cost analytics
+│  ├── [LATENCY_ANALYSIS]          — P50, P95, P99 tracking
+│  ├── [UPTIME_TRACKING]           — Availability percentage
+│  └── [ACTIVITY_HEATMAP]          — Usage pattern visualization
+│
+├─ [INFRASTRUCTURE]
+│  ├── [EMBEDDED_SERVICES]         — Redis, 9Router, Bifrost, Mux
+│  ├── [REDIS]                     — In-process cache store
+│  ├── [9ROUTER]                   — Internal routing service
+│  ├── [CLIPROXYAPI]               — CLI proxy API layer
+│  ├── [BIFROST]                   — Bridge service
+│  ├── [DATABASE]                  — SQLite + Qdrant persistence
+│  ├── [VERSION_MANAGER]           — Service versioning + lifecycle
+│  ├── [BACKUP]                    — Configuration backup/restore
+│  ├── [SYNC]                      — Cross-device configuration sync
+│  ├── [DOCKER]                    — Container deployment
+│  ├── [ELECTRON]                  — Desktop app (macOS/Windows/Linux)
+│  ├── [PWA]                       — Progressive web app
+│  └── [TERMUX]                    — Android CLI support
+│
+├─ [INTEGRATIONS]
+│  ├── [CLAUDE_CODE]               — Claude Code IDE integration
+│  ├── [CODEX]                     — Codex CLI integration
+│  ├── [CURSOR]                    — Cursor IDE integration
+│  ├── [CLINE]                     — Cline AI shell
+│  ├── [COPILOT]                   — Microsoft Copilot integration
+│  ├── [ANTIGRAVITY]               — Company Brain agent integration
+│  ├── [OPENCLAW]                  — OpenClaw framework
+│  ├── [OBSIDIAN]                  — Obsidian vault sync + MCP tools
+│  ├── [GITHUB]                    — GitHub skill discovery + sync
+│  └── [TELEGRAM]                  — Telegram bot bridge
+│
+├─ [INTERFACE_LAYER]
+│  ├── [CLI]                       — Command-line control
+│  ├── [DASHBOARD]                 — Web observability interface
+│  ├── [DESKTOP_APP]               — Electron desktop application
+│  ├── [PWA_APP]                   — Browser-based PWA
+│  ├── [TERMINAL_UI]               — Terminal-based UI
+│  └── [MOBILE_APP]                — Termux/Android support
+│
+├─ [EVALUATION_AND_TESTING]
+│  ├── [EVALUATION]                — Model + routing evaluation
+│  ├── [BENCHMARKS]                — Performance benchmarking
+│  ├── [PLAYGROUND]                — Interactive testing
+│  ├── [TEST_BENCH]                — Automated test framework
+│  └── [REGRESSION_TEST]           — Regression detection
+│
+└─ [OPERATIONS]
+   ├── [GAMIFICATION]              — Leaderboards, achievements
+   ├── [RELEASE_ENGINEERING]       — Release checklist + gating
+   ├── [DOCUMENTATION]             — API docs, guides, tutorials
+   └── [COMMUNITY]                 — Support, contributions, feedback
 ```
 
 ---
 
-## [REQUEST_LIFECYCLE] — The Complete Flow
-
-**This is the single most important operational ontology.**
+## [REQUEST_LIFECYCLE] — Complete Flow with 30+ Stages
 
 ```
 [REQUEST]
     ↓
-[AUTHENTICATION]            — Verify client identity
+[AUTHENTICATION]                    — Verify client identity
     ↓
-[REQUEST_VALIDATION]        — Schema + format check
+[AUTHORIZATION_CHECK]               — Verify permissions + scopes
     ↓
-[CAPABILITY_DETECTION]      — What does this request need?
+[ROUTE_GUARD_CHECK]                 — Apply route-level guards
     ↓
-[MODEL_RESOLUTION]          — Resolve model alias/name
+[BUDGET_GUARD_CHECK]                — Check USD spend limits
     ↓
-[ALIAS_RESOLUTION]          — smart → AUTO_COMBO, cheap → AUTO_CHEAP
+[REQUEST_VALIDATION]                — Schema + format check
     ↓
-[COMBO_RESOLUTION]          — Map to combo/routing strategy
+[CAPABILITY_DETECTION]              — What does this request need?
     ↓
-[PROVIDER_SELECTION]        — Which providers can handle this?
+[MODEL_RESOLUTION]                  — Resolve model alias/name
     ↓
-[ACCOUNT_SELECTION]         — Which accounts have quota?
+[ALIAS_RESOLUTION]                  — smart → AUTO_COMBO, cheap → AUTO_CHEAP
     ↓
-[QUOTA_CHECK]               — Verify headroom before request
+[COMBO_RESOLUTION]                  — Map to routing strategy
     ↓
-[HEALTH_CHECK]              — Provider/model healthy?
+[ADMISSION_CONTROL_CHECK]           — Check queue + concurrency limits
     ↓
-[COMPRESSION]               — Apply RTK/Caveman/stacked
+[PROVIDER_SELECTION]                — Which providers can handle this?
     ↓
-[TRANSLATION]               — Convert to provider protocol
+[ACCOUNT_SELECTION]                 — Which accounts have quota?
     ↓
-[UPSTREAM_REQUEST]          — Send to AI provider
+[QUOTA_CHECK]                       — Verify headroom before request
     ↓
-[MODEL_EXECUTION]           — Provider processes request
+[CACHE_AFFINITY_ROUTING]            — Route to cache holder if hit likely
     ↓
-[STREAMING]                 — Stream response (if enabled)
+[CACHE_LOOKUP]                      — Check semantic/prefix cache
+    ├── HIT → [CACHE_RESPONSE] → [COST_ESTIMATE] → [RESPONSE]
+    └── MISS ↓
     ↓
-[RESPONSE_TRANSLATION]      — Convert back to client format
+[HEALTH_CHECK]                      — Provider/model healthy?
     ↓
-[RESPONSE]                  — Return to client
+[COMPRESSION_CLASSIFICATION]        — What content type is this?
     ↓
-[USAGE_CAPTURE]             — Record tokens + metrics
+[COMPRESSION_ENGINE_SELECTION]      — Which engines to apply?
     ↓
-[COST_CAPTURE]              — Calculate cost
+[COMPRESSION_APPLY]                 — Apply RTK/Caveman/Stacked/etc
     ↓
-[QUOTA_UPDATE]              — Update account quota used
+[PROTOCOL_TRANSLATION]              — Convert to provider protocol
     ↓
-[TELEMETRY]                 — Send metrics
+[ROUTING_DECISION_LOGGING]          — Log routing choice + candidates
     ↓
-[LOGGING]                   — Log request/response
+[COST_ESTIMATION]                   — Estimate request cost
     ↓
-[CACHE]                     — Cache response for future hits
+[UPSTREAM_REQUEST]                  — Send to AI provider
     ↓
-[LEARNING]                  — Update routing scores
+[STREAMING]                         — Stream response chunks (if enabled)
     ↓
-[OBSERVABILITY_UPDATE]      — Update dashboard metrics
+[PROTOCOL_REVERSE_TRANSLATION]      — Convert back to client format
+    ↓
+[RESPONSE]                          — Return to client
+    ├── [X-OMNIROUTE-DECISION]      — Include routing metadata header
+    ├── [X-OMNIROUTE-COST]          — Include actual cost header
+    ├── [X-OMNIROUTE-CACHED]        — Note if cache hit
+    └── [X-OMNIROUTE-COMPRESSION]   — Note compression applied
+    ↓
+[USAGE_CAPTURE]                     — Record tokens + latency
+    ↓
+[COST_CAPTURE]                      — Calculate actual cost
+    ↓
+[QUOTA_UPDATE]                      — Deduct from account quota
+    ↓
+[CACHE_STORAGE]                     — Store in semantic/prefix cache
+    ↓
+[TELEMETRY]                         — Send metrics to observability
+    ↓
+[LOGGING]                           — Log to audit trail
+    ↓
+[LEARNING]                          — Update routing scores
+    ↓
+[OBSERVABILITY_UPDATE]              — Update dashboard
+    ↓
+[COMPLETE]
 ```
 
 **Failure branch:**
@@ -104,625 +298,276 @@ This ontology models OmniRoute as a **first-class system node** with explicit go
 ```
 [ERROR]
     ↓
-[CLASSIFY_ERROR]            — What type of failure?
+[ERROR_CLASSIFICATION]              — What type of failure?
+    ↓
+[ERROR_SANITIZATION]                — Remove secrets from error
     ↓
 [RETRY?]
-    ├── YES → [RETRY] → [BACKOFF] → [UPSTREAM_REQUEST]
-    └── NO
+    ├── YES → [BACKOFF] → [RETRY_COUNT_CHECK]
+    │         ├── LIMIT_OK → [UPSTREAM_REQUEST]
+    │         └── LIMIT_HIT ↓
+    └── NO ↓
          ↓
 [FALLBACK?]
     ├── YES → [NEXT_TARGET] → [PROVIDER_SELECTION]
-    └── NO
+    └── NO ↓
+         ↓
+[CIRCUIT_BREAKER?]
+    ├── YES → [COOLDOWN_PROVIDER]
+    └── NO ↓
          ↓
 [ESCALATE?]
     ├── YES → [HIGHER_AUTHORITY]
-    └── NO
+    └── NO ↓
          ↓
-[FAIL]
+[FAIL] → [CLIENT_SAFE_ERROR] → [RESPONSE]
 ```
 
 ---
 
-## [OMNIROUTE_CONTROL_LOOP] — Cybernetic Feedback
-
-OmniRoute operates as a **continuous learning system**:
+## [OMNICONDUCTOR] — Agent Fleet Delegation
 
 ```
-[OBSERVE]               ← What happened?
-    ↓
-[MEASURE]               ← Latency, cost, errors, success
-    ↓
-[CLASSIFY]              ← Categorize performance
-    ↓
-[SCORE]                 ← Rate provider/model/combo
-    ↓
-[SELECT]                ← Choose best option for next request
-    ↓
-[EXECUTE]               ← Send request
-    ↓
-[VERIFY]                ← Check result quality
-    ↓
-[RECORD]                ← Log metrics + evidence
-    ↓
-[LEARN]                 ← Update scoring models
-    ↓
-[RECONFIGURE]           ← Adjust routing weights
-    ↓
-[OBSERVE] ↺             ← Feed back to top
-```
-
----
-
-## [CLIENT_CONNECTIVITY] — Who Connects
-
-```
-[CLIENTS]
+[OMNICONDUCTOR]
 │
-├── [[CLAUDE_CODE]]          — Code assistant
-├── [[CODEX_CLI]]            — Command-line interface
-├── [[CURSOR]]               — IDE integration
-├── [[CLINE]]                — AI shell
-├── [[COPILOT]]              — Microsoft Copilot
-├── [[ANTIGRAVITY]]          — Company Brain agent
-├── [[OPENCLAW]]             — Custom framework
-├── [[KILO_CODE]]            — Development environment
-├── [[CONTINUE]]             — IDE plugin
-├── [[FACTORY_DROID]]        — Automation agent
-├── [[AIDER]]                — Git-aware AI
-├── [[GOOSE]]                — Agent framework
-├── [[DEVIN_CLI]]            — Autonomous coding
-├── [[KIMI_CODING]]          — Chinese AI coding
-├── [[COMMAND_CODE]]         — Command-line AI
-├── [[CUSTOM_CLI]]           — Custom applications
-├── [[CUSTOM_APPLICATION]]   — Internal tools
-├── [[WEB_APPLICATION]]      — Browser-based
-├── [[MOBILE_APPLICATION]]   — Mobile apps
-└── [[AGENT]]                — Company Brain agents
-```
-
-**Connection model:**
-
-```
-[CLIENT]
-    ↓
-[BASE_URL] (http://100.87.214.70:3004 or https://remote)
-    ↓
-[/v1]
-    ↓
-[AUTHENTICATION]
-    ↓
-[MODEL]
-    ↓
-[[OMNIROUTE]]
+├── [INBOUND_A2A_DELEGATION]     ← Agent requests work
+├── [AGENT_FLEET]                ← Pool of available agents
+├── [CONDUCTOR_SKILLS]           ← Orchestration capabilities
+├── [AGENT_CARD_REGISTRY]        ← Agent metadata
+├── [TASK_QUEUE]                 ← Pending task queue
+├── [FARO_VOICE]                 ← Voice command interface
+├── [PUSH_TO_TALK]               ← PTT activation
+├── [AGENT_DELEGATION]           ← Route to agent
+└── [MULTI_AGENT_CONTROL]        ← Manage fleet execution
 ```
 
 ---
 
-## [PROVIDER_REGISTRY] — Dynamic Catalog
-
-OmniRoute maintains a **live, evolving provider registry** with 359+ providers:
+## [QUOTA_SHARE] — Shared Account Pooling
 
 ```
-[PROVIDER]
+[QUOTA_SHARE]
 │
-├── [PROVIDER_ID]
-├── [PROVIDER_NAME]
-├── [PROVIDER_TYPE]          — API_KEY, OAUTH, FREE, COOKIE, LOCAL
-├── [PROVIDER_PROTOCOL]      — OpenAI-compatible? gRPC? Custom?
-├── [PROVIDER_ENDPOINT]      — Base URL
-├── [PROVIDER_MODELS]        — List of available models
-├── [PROVIDER_CAPABILITIES]  — Chat, vision, image, audio, embedding
-├── [PROVIDER_LIMITS]        — Rate limits, max tokens
-├── [PROVIDER_QUOTA]         — Free tier quota, monthly limits
-├── [PROVIDER_COST]          — $ per token (input/output)
-├── [PROVIDER_HEALTH]        — Current status, uptime
-├── [PROVIDER_REGION]        — Geographic location
-├── [PROVIDER_TERMS]         — Usage terms, restrictions
-├── [PROVIDER_AUTH]          — API key, OAuth, session cookie
-├── [PROVIDER_PROXY]         — Proxy server (if needed)
-├── [PROVIDER_MANIFEST]      — Metadata + documentation
-├── [PROVIDER_TIER]          — Free, paid, premium
-├── [PROVIDER_STATUS]        — Active, deprecated, experimental
-└── [PROVIDER_METADATA]      — Last updated, verified date
+├── [SHARED_ACCOUNT]             ← Multiple clients share quota
+├── [POOLED_KEYS]                ← Key pool management
+├── [QUOTA_SLICES]               ← Allocate quota to users
+├── [WORK_CONSERVING]            ← Use idle quota
+├── [IDLE_LENDING]               ← Lend to high-need users
+├── [FAIRNESS]                   ← Prevent starvation
+├── [QUOTA_LEASE]                ← Temporary allocations
+├── [QUOTA_ALLOCATION]           ← Dynamic rebalancing
+└── [QUOTA_REBALANCING]          ← Optimize distribution
 ```
 
 ---
 
-## [MODEL_REGISTRY] — 1,200+ Models
-
-Each provider offers multiple models:
+## [ROUTING_TRANSPARENCY] — Expose Decisions
 
 ```
-[MODEL]
+[ROUTING_TRANSPARENCY]
 │
-├── [MODEL_ID]               — "claude-opus-5", "gpt-4-turbo"
-├── [MODEL_NAME]             — Human-readable name
-├── [MODEL_PROVIDER]         — [[ANTHROPIC]], [[OPENAI]], etc.
-├── [MODEL_FAMILY]           — Claude, GPT, Gemini, etc.
-├── [MODEL_VERSION]          — Latest version + aliases
-├── [MODEL_MODALITY]         — Text, vision, audio, video, image
-├── [MODEL_CONTEXT]          — 8K, 32K, 200K, 1M tokens
-├── [MODEL_OUTPUT_LIMIT]     — Max output tokens
-├── [MODEL_REASONING]        — Extended thinking? o1-style?
-├── [MODEL_TOOLS]            — Function calling? Tool use?
-├── [MODEL_STREAMING]        — Server-sent events? WebSocket?
-├── [MODEL_COST]             — $/1M input, $/1M output
-├── [MODEL_QUOTA]            — Rate limit per account
-├── [MODEL_HEALTH]           — Current availability
-├── [MODEL_VISIBILITY]       — Public? Private? Limited beta?
-├── [MODEL_ALIAS]            — smart → claude-opus, cheap → gpt-3.5
-└── [MODEL_CAPABILITIES]     — List of features
+├── [ROUTING_DECISION]           ← What was selected?
+├── [DECISION_HEADER]            ← X-OMNIROUTE-DECISION
+├── [STRATEGY]                   ← Which strategy used?
+├── [SELECTED_PROVIDER]          ← Provider chosen
+├── [SELECTED_CONNECTION]        ← Connection used
+├── [LATENCY]                    ← Expected latency
+├── [CANDIDATE_POOL]             ← All considered options
+├── [AUTO_COMBO_CANDIDATES]      ← Auto-Combo scoring
+└── [ROUTE_EXPLANATION]          ← Rationale (human-readable)
 ```
 
 ---
 
-## [ROUTING_ENGINE] — The Decision System
+## [ADMISSION_CONTROL] — Overload Protection
 
 ```
-[ROUTING_ENGINE]
+[ADMISSION_CONTROL]
 │
-├── [ROUTE_SELECTION]        — Which combo/strategy to use?
-├── [TARGET_SELECTION]       — Which targets in the combo?
-├── [MODEL_SELECTION]        — Which model best fits request?
-├── [PROVIDER_SELECTION]     — Which providers have the model?
-├── [ACCOUNT_SELECTION]      — Which accounts have quota?
-├── [QUOTA_SELECTION]        — Which account has most headroom?
-├── [COST_SELECTION]         — Cheapest provider available?
-├── [HEALTH_SELECTION]       — Healthiest provider?
-├── [CONTEXT_SELECTION]      — Preserve session/context?
-├── [CACHE_SELECTION]        — Use cached response?
-├── [FAILOVER_SELECTION]     — What's the backup?
-└── [POLICY_SELECTION]       — What policies apply?
+├── [OVERLOAD_PROTECTION]        ← Prevent cascade failures
+├── [REQUEST_QUEUE]              ← Buffer surge requests
+├── [HEAVY_REQUEST_QUEUEING]     ← Long-context prioritization
+├── [RPM_ROLLING_LEASE]          ← RPM fairness distribution
+├── [CONNECTION_CAPACITY]        ← Track available connections
+├── [BACKPRESSURE]               ← Slow down if overloaded
+├── [CONCURRENCY_CONTROL]        ← Limit parallel requests
+├── [QUEUE_TIMEOUT]              ← Discard if waited too long
+└── [LOAD_SHEDDING]              ← Drop low-priority requests
 ```
 
 ---
 
-## [ROUTING_STRATEGIES] — Current Modes
-
-OmniRoute documents these routing strategies (list evolves):
+## [COMPRESSION_STUDIO] — Visual Engine Composition
 
 ```
-[ROUTING_STRATEGIES]
+[COMPRESSION_STUDIO]
 │
-├── [PRIORITY]               — Fixed priority order
-├── [WEIGHTED]               — Probabilistic distribution
-├── [ROUND_ROBIN]            — Rotate through targets
-├── [CONTEXT_RELAY]          — Preserve context across rotations
-├── [FILL_FIRST]             — Use cheapest until quota hit
-├── [P2C]                     — Power of two choices
-├── [RANDOM]                 — Random selection
-├── [LEAST_USED]             — Pick underutilized account
-├── [COST_OPTIMIZED]         — Minimize $ spend
-├── [RESET_AWARE]            — Track quota reset times
-├── [RESET_WINDOW]           — Plan around reset windows
-├── [HEADROOM]               — Preserve headroom buffer
-├── [STRICT_RANDOM]          — No optimization
-├── [AUTO]                   — Automatic best choice
-├── [LKGP]                   — Last Known Good Provider
-├── [CONTEXT_OPTIMIZED]      — Preserve session integrity
-├── [CACHE_OPTIMIZED]        — Maximize cache hits
-├── [FUSION]                 — Multi-model voting
-├── [PIPELINE]               — Sequential multi-step execution
-└── [AUTO_COMBO]             — Intelligent multi-factor scoring
+├── [ENGINE_REGISTRY]            ← 12 available engines
+├── [ENGINE_PIPELINE]            ← Composable sequence
+├── [DRAG_REORDER]               ← Visual reordering
+├── [ENGINE_ENABLE_DISABLE]      ← Toggle engines on/off
+├── [ENGINE_CONFIGURATION]       ← Tune each engine
+├── [FIDELITY_GATE]              ← Preserve semantic meaning
+├── [INFLATION_GUARD]            ← Prevent expansion
+└── [PREVIEW]                    ← See compression effect
 ```
 
 ---
 
-## [AUTO_COMBO] — Intelligent Selection
-
-OmniRoute's **self-configuring routing mode** analyzes requests and selects optimal paths:
+## [COMPRESSION_LEARNING] — Self-Improving Filters
 
 ```
-[AUTO_COMBO]
+[COMPRESSION_LEARNING]
 │
-├── [AUTO_CODING]            — For code generation/analysis
-├── [AUTO_FAST]              — Minimize latency
-├── [AUTO_CHEAP]             — Minimize cost
-├── [AUTO_OFFLINE]           — Local-only models
-├── [AUTO_SMART]             — Best quality regardless of cost
-├── [AUTO_LKGP]              — Use last successful provider
-└── [AUTO_CHAOS]             — Multi-model panel + judge
-```
-
-**Underlying selection logic:**
-
-```
-[REQUEST]
-    ↓
-[REQUEST_CLASSIFICATION]    — Is this code? Chat? Analysis?
-    ↓
-[CAPABILITY_REQUIREMENTS]   — What does it need?
-    ↓
-[MODEL_CANDIDATES]          — Which models can do this?
-    ↓
-[PROVIDER_CANDIDATES]       — Which providers have them?
-    ↓
-[ACCOUNT_CANDIDATES]        — Which accounts are available?
-    ↓
-[HEALTH_CHECK]              — Are they healthy?
-    ↓
-[QUOTA_CHECK]               — Do they have quota?
-    ↓
-[COST_ANALYSIS]             — How expensive?
-    ↓
-[CONTEXT_ANALYSIS]          — Can they handle the context?
-    ↓
-[CAPABILITY_ANALYSIS]       — Do they have required features?
-    ↓
-[POLICY_CHECK]              — Do they comply with policies?
-    ↓
-[SCORE]                     — Rate each option
-    ↓
-[SELECT]                    — Pick winner
-    ↓
-[EXECUTE]
+├── [RAW_TOOL_OUTPUT]            ← Captured output
+├── [NOISE_DETECTION]            ← Find repetitive patterns
+├── [REPEATED_NOISE]             ← Identify common noise
+├── [FILTER_DISCOVERY]           ← Generate RTK filters
+├── [FILTER_SUGGESTION]          ← Suggest improvements
+├── [COMMAND_SAMPLE]             ← Example command
+├── [FILTER_REGISTRY]            ← Store learned filters
+├── [LEARN]                      ← Update from observations
+└── [AUDIT]                      ← Verify filter safety
 ```
 
 ---
 
-## [QUOTA_ENGINE] — Headroom Management
+## [EMBEDDED_SERVICES] — Internal Infrastructure
 
 ```
-[QUOTA]
+[EMBEDDED_SERVICES]
 │
-├── [ACCOUNT_QUOTA]          — Quota for specific account
-├── [PROVIDER_QUOTA]         — Provider's published limits
-├── [MODEL_QUOTA]            — Per-model rate limits
-├── [DAILY_QUOTA]            — Daily reset quota
-├── [MONTHLY_QUOTA]          — Monthly billing cycle
-├── [REQUEST_LIMIT]          — Requests per minute/hour
-├── [TOKEN_LIMIT]            — Tokens per period
-├── [CREDIT_LIMIT]           — $ credit limit
-├── [RESET_TIME]             — When does quota reset?
-├── [HEADROOM]               — Buffer before exhaustion
-├── [USAGE]                  — Tokens consumed so far
-├── [REMAINING]              — Tokens left
-├── [LIMIT]                  — Hard limit
-└── [QUOTA_HEALTH]           — Status (healthy, low, exhausted)
-```
-
-**Quota lifecycle:**
-
-```
-[AVAILABLE]
-    ↓
-[CONSUMING]                 ← Each request uses tokens
-    ↓
-[LOW]                       ← Below headroom threshold
-    ↓
-[ROTATION_TRIGGERED]        ← Switch to next account
-    ↓
-[EXHAUSTED]                 ← Account at limit
-    ↓
-[RESET_PENDING]             ← Waiting for reset time
-    ↓
-[RESET]                     ← Quota resets
-    ↓
-[AVAILABLE] ↺
+├── [REDIS]                      ← In-process cache
+├── [9ROUTER]                    ← Internal routing
+├── [CLIPROXYAPI]                ← CLI proxy layer
+├── [BIFROST]                    ← Bridge service
+├── [MUX]                        ← Request multiplexing
+├── [SERVICE_LIFECYCLE]          ← Start/stop/health
+├── [AUTO_START]                 ← Start on boot
+├── [SERVICE_HEALTH]             ← Health checks
+├── [SERVICE_LOGS]               ← Per-service logging
+└── [SUPERVISED_SERVICE]         ← Restart on failure
 ```
 
 ---
 
-## [ACCOUNT_ROTATION] — Quota-Aware Switching
-
-When an account's quota gets low, OmniRoute rotates to another:
+## [VERSION_MANAGER] — Service Versioning
 
 ```
-[ACTIVE_ACCOUNT]
-    ↓ [QUOTA_CHECK]
-    ↓
-[LOW_HEADROOM?]
-    ├── YES
-    │   ↓
-    │ [GENERATE_CONTEXT_RELAY]  ← Summarize session
-    │   ↓
-    │ [NEXT_ACCOUNT]            ← Switch to Account B
-    │   ↓
-    │ [INJECT_CONTEXT]          ← Resume session
-    │   ↓
-    │ [CONTINUE] ← Request continues transparently
-    │
-    └── NO
-        ↓
-    [CONTINUE]
+[VERSION_MANAGER]
+│
+├── [VERSION]                    ← Current version
+├── [INSTALL]                    ← Install specific version
+├── [UPDATE]                     ← Update to new version
+├── [ROLLBACK]                   ← Revert to previous
+├── [START]                      ← Start service
+├── [STOP]                       ← Stop service
+├── [RESTART]                    ← Restart service
+├── [AUTO_START]                 ← Enable/disable auto-start
+├── [SERVICE_VERSION]            ← Track versions
+├── [COMPATIBILITY]              ← Check compatibility
+└── [RELEASE_STATE]              ← Stable/beta/alpha
 ```
 
 ---
 
-## [RESILIENCE_ENGINE] — Failure Recovery
+## [PLUGIN_SYSTEM] — Extensibility
 
 ```
-[RESILIENCE]
+[PLUGIN_SYSTEM]
 │
-├── [RETRY]                  — Exponential backoff
-├── [BACKOFF]                — Jitter to avoid thundering herd
-├── [CIRCUIT_BREAKER]        — Trip on repeated failures
-├── [COOLDOWN]               — Temporary provider blacklist
-├── [QUEUE]                  — Buffer requests during outage
-├── [ANTI_THUNDERING_HERD]   — Distributed retry with jitter
-├── [429_CLASSIFICATION]     — Rate limit vs. quota exhaustion
-├── [UPSTREAM_HINTS]         — Use provider's Retry-After headers
-├── [TIMEOUT_CONTROL]        — Adaptive timeout tuning
-├── [PROVIDER_EXPIRATION]    — Disable failed providers
-├── [ACCOUNT_DISABLE]        — Temporarily skip bad accounts
-├── [MODEL_COOLDOWN]         — Cooldown broken models
-└── [SELF_HEALING]           — Automatic recovery + retry
+├── [PLUGIN_REGISTRY]            ← Available plugins
+├── [PLUGIN_MANIFEST]            ← Plugin metadata
+├── [PLUGIN_INSTALL]             ← Install plugin
+├── [PLUGIN_ENABLE]              ← Enable plugin
+├── [PLUGIN_DISABLE]             ← Disable plugin
+├── [PLUGIN_PERMISSIONS]         ← Scope-based access
+├── [PLUGIN_API]                 ← Extension interface
+├── [PLUGIN_LIFECYCLE]           ← Initialize/cleanup
+└── [PLUGIN_MARKETPLACE]         ← Discover plugins
 ```
 
 ---
 
-## [COMPRESSION_ENGINE] — Token Reduction
-
-OmniRoute reduces tokens **15-95%** via compression:
+## [OBSIDIAN_INTEGRATION] — Knowledge Vault Sync
 
 ```
-[COMPRESSION]
+[OBSIDIAN_INTEGRATION]
 │
-├── [RTK]                    — Domain-specific reduction rules
-│   ├── [SHELL]              — Bash/shell command compression
-│   ├── [GIT]                — Git output compression
-│   ├── [TEST]               — Test output compression
-│   ├── [BUILD]              — Build log compression
-│   ├── [PACKAGE]            — Package manager compression
-│   ├── [DOCKER]             — Docker command compression
-│   ├── [INFRASTRUCTURE]     — Infrastructure output compression
-│   ├── [JSON]               — JSON formatting compression
-│   └── [STACK_TRACE]        — Stack trace compression
-│
-├── [CAVEMAN]                — Aggressive shorthand reduction
-├── [STACKED]                — Multiple transformation passes
-├── [LANGUAGE_RULES]         — Grammar-based reduction
-├── [RULE_PACKS]             — Bundled rule sets
-├── [COMMAND_FILTERS]        — Command-specific filters
-├── [CONTEXT_REDUCTION]      — Trim context windows
-├── [TOKEN_REDUCTION]        — Minimize output tokens
-├── [CACHE_OPTIMIZATION]     — Cache compressed versions
-├── [RAW_OUTPUT_RECOVERY]    — Decompress when needed
-├── [COMPRESSION_PREVIEW]    — Show what will be compressed
-├── [COMPRESSION_ANALYTICS]  — Track savings
-└── [COMPRESSION_COMBOS]     — Pre-tuned compression modes
-```
-
-**Compression pipeline:**
-
-```
-[INPUT]
-    ↓
-[CLASSIFY_CONTENT]          ← Is this shell? JSON? Stack trace?
-    ↓
-[APPLY_RTK]                 ← Domain-specific rules
-    ↓
-[APPLY_CAVEMAN]             ← Aggressive shorthand
-    ↓
-[APPLY_STACKED]             ← Multiple passes
-    ↓
-[VERIFY_INTEGRITY]          ← Can we decompress this?
-    ↓
-[OUTPUT]                    ← Compressed, token-efficient
+├── [VAULT]                      ← Obsidian vault path
+├── [VAULT_SYNC]                 ← Bidirectional sync
+├── [NOTE]                       ← Markdown files
+├── [WIKI_LINK]                  ← [[ENTITY]] references
+├── [BACKLINK]                   ← Reverse references
+├── [TAG]                        ← #topic organization
+├── [FRONTMATTER]                ← YAML metadata
+├── [GRAPH]                      ← Relationship visualization
+├── [MCP_TOOLS]                  ← Expose as MCP tools
+├── [NOTE_READ]                  ← Read from vault
+├── [NOTE_WRITE]                 ← Write to vault
+├── [NOTE_SEARCH]                ← Full-text search
+├── [REGISTRY_SYNC]              ← Sync registries ↔ vault
+└── [KNOWLEDGE_GRAPH_SYNC]       ← Update Neo4j from vault
 ```
 
 ---
 
-## [MCP_SERVER] — Model Context Protocol
+## [CLOUD_RELAY] — Edge Deployment
 
 ```
-[MCP_SERVER]
+[CLOUD_RELAY]
 │
-├── [MCP_STDIO]              — Standard input/output transport
-├── [MCP_HTTP]               — HTTP/REST transport
-├── [MCP_SSE]                — Server-Sent Events transport
-├── [MCP_STREAMABLE_HTTP]    ← Efficient streaming
-│
-├── [MCP_TOOL]               — Function calling interface
-├── [MCP_SCOPE]              — Permission scoping
-├── [MCP_AUTH]               — Authentication/authorization
-├── [MCP_AUDIT]              — Request logging + tracing
-└── [MCP_CLIENT]             — Integrated with Claude, etc.
-```
-
-**Architecture:**
-
-```
-[[CLAUDE]]
-    ↓
-[MCP]
-    ↓
-[[OMNIROUTE]]
-    ↓
-[110+ TOOLS]
-    ├── Provider management
-    ├── Combo configuration
-    ├── Quota monitoring
-    ├── Health checks
-    ├── Analytics
-    ├── Security
-    └── ... (see GitHub for complete list)
+├── [CLOUDFLARE_WORKERS]         ← Edge compute
+├── [DENO_DEPLOY]                ← Deno edge platform
+├── [EDGE_RELAY]                 ← Relay at edge
+├── [UPSTREAM]                   ← Backend connection
+├── [DOWNSTREAM]                 ← Client connection
+├── [AUTH]                       ← Token verification
+├── [FORWARDING]                 ← Request relay
+├── [EDGE_POLICY]                ← Geographic routing
+└── [FAILOVER]                   ← Edge fallback
 ```
 
 ---
 
-## [A2A_SERVER] — Agent-to-Agent Execution
+## [BIGQUERY_EXPORT] — Log Analytics
 
 ```
-[A2A_SERVER]
+[BIGQUERY_EXPORT]
 │
-├── [AGENT_CARD]             — Agent metadata + capabilities
-├── [AGENT_DISCOVERY]        ← Find available agents
-├── [JSON_RPC]               — Standard RPC protocol
-├── [TASK]                   — Work unit
-├── [TASK_MANAGER]           ← Track execution
-├── [SKILL]                  ← Individual capability
-├── [SKILL_HANDLER]          ← Execute skill
-├── [STREAMING]              ← Stream responses
-├── [SSE]                    ← Server-Sent Events
-├── [AUTHENTICATION]         ← Agent identity verification
-├── [TASK_STATUS]            ← In-progress tracking
-├── [TASK_CANCEL]            ← Abort execution
-└── [AGENT_TO_AGENT]         ← Direct agent communication
-```
-
-**Canonical execution path:**
-
-```
-[AGENT]
-    ↓
-[AGENT_DISCOVERY]           ← Find target agent
-    ↓
-[[OMNIROUTE_AGENT_CARD]]    ← Get capabilities
-    ↓
-[A2A_REQUEST]               ← Prepare request
-    ↓
-[TASK]                      ← Create task
-    ↓
-[SKILL]                     ← Select capability
-    ↓
-[ROUTING]                   ← Route to provider
-    ↓
-[MODEL]                     ← Select model
-    ↓
-[RESULT]                    ← Return output
+├── [SCHEDULE]                   ← Export frequency
+├── [BIGQUERY]                   ← Destination project
+├── [EXPORT_JOB]                 ← BigQuery job management
+├── [LOG_BATCH]                  ← Batched logs
+├── [SCHEMA]                     ← BigQuery schema
+├── [DELIVERY]                   ← Ensure delivery
+├── [FAILURE_RETRY]              ← Retry on failure
+└── [RETENTION]                  ← Data retention policy
 ```
 
 ---
 
-## [TRANSLATOR] — Protocol Compatibility
+## [REALITY_VS_CAPABILITY] — Critical Distinction
+
+**Important:** Do NOT model as existing:
 
 ```
-[TRANSLATOR]
-│
-├── [REQUEST_TRANSLATION]    ← Client format → provider format
-├── [RESPONSE_TRANSLATION]   ← Provider format → client format
-├── [OPENAI_FORMAT]          ← Translate from OpenAI schema
-├── [CLAUDE_FORMAT]          ← Translate from Claude schema
-├── [GEMINI_FORMAT]          ← Translate from Gemini schema
-├── [PROVIDER_FORMAT]        ← Translate to provider-specific
-├── [PLAYGROUND]             ← Test translation
-├── [CHAT_TESTER]            ← Interactive testing
-├── [TEST_BENCH]             ← Automated testing
-└── [LIVE_MONITOR]           ← Real-time monitoring
+[OMNIROUTE] → [ARBITRARY_EXTERNAL_MCP_SERVERS] → [AGGREGATED_TOOLS]
 ```
+
+This feature does **not yet exist**. The repo explicitly distinguishes:
+
+```
+[OMNIROUTE_MCP_SERVER]          [EXTERNAL_MCP_SERVERS]
+    ↓                                ↓
+[OMNIROUTE_TOOLS]              [SEPARATE_ECOSYSTEM]
+```
+
+**This is the [[REALITY]] vs [[DESIRED_CAPABILITY]] separation you maintain in [[WHERE_WE_ARE]].**
 
 ---
 
-## [SECURITY_LAYER] — Protection & Compliance
-
-```
-[SECURITY]
-│
-├── [API_AUTH]               ← API key authentication
-├── [API_KEYS]               ← Key generation + rotation
-├── [BEARER_AUTH]            ← Bearer token support
-├── [MANAGEMENT_AUTH]        ← Admin authentication
-├── [SCOPED_TOKENS]          ← Limited-scope tokens
-├── [IP_FILTERING]           ← Allow/block IP ranges
-├── [PROVIDER_BLOCKING]      ← Block specific providers
-├── [SESSION_SECURITY]       ← Session isolation
-├── [SECRET_STORAGE]         ← Encrypted credential storage
-├── [AUDIT_LOG]              ← Immutable request log
-├── [COMPLIANCE]             ← Regulatory requirements
-├── [SSRF_PROTECTION]        ← Server-side request forgery prevention
-├── [OUTBOUND_URL_GUARD]     ← Safe URL checking
-├── [SAFE_FETCH]             ← Secure HTTP fetching
-├── [TLS]                    ← HTTPS + encryption
-├── [CERTIFICATE_DETECTION]  ← Certificate pinning
-└── [PRIVACY]                ← PII protection + redaction
-```
-
----
-
-## [OBSERVABILITY_LAYER] — Visibility & Metrics
-
-```
-[OBSERVABILITY]
-│
-├── [LOGGING]                ← Request/response logging
-├── [METRICS]                ← Prometheus-compatible metrics
-├── [TRACING]                ← Distributed traces
-├── [TELEMETRY]              ← System telemetry
-├── [REQUEST_LOG]            ← Every request recorded
-├── [ERROR_LOG]              ← Errors + stack traces
-├── [AUDIT_LOG]              ← Action audit trail
-├── [HEALTH]                 ← System health status
-├── [LATENCY]                ← Response time tracking
-├── [P50/P95/P99]            ← Percentile latencies
-├── [UPTIME]                 ← Availability percentage
-├── [MEMORY]                 ← Resource usage
-├── [CACHE_STATS]            ← Cache hit rate
-├── [PROVIDER_HEALTH]        ← Provider status tracking
-├── [MODEL_HEALTH]           ← Model availability
-├── [COMBO_HEALTH]           ← Routing combo performance
-└── [QUOTA_TELEMETRY]        ← Quota consumption tracking
-```
-
----
-
-## [ANALYTICS_LAYER] — Usage Intelligence
-
-```
-[ANALYTICS]
-│
-├── [REQUEST_COUNT]          ← Total requests
-├── [TOKEN_USAGE]            ← Total tokens consumed
-├── [INPUT_TOKENS]           ← Prompt tokens
-├── [OUTPUT_TOKENS]          ← Completion tokens
-├── [COST]                   ← $ spent by provider/model
-├── [LATENCY]                ← Response time statistics
-├── [PROVIDER_USAGE]         ← Requests per provider
-├── [MODEL_USAGE]            ← Requests per model
-├── [ACCOUNT_USAGE]          ← Usage per account
-├── [COMBO_USAGE]            ← Routing effectiveness
-├── [CACHE_HITS]             ← Cache hit percentage
-├── [COMPRESSION_SAVINGS]    ← Tokens saved
-├── [QUOTA_USAGE]            ← Quota consumption rate
-├── [ERROR_RATE]             ← Failure percentage
-└── [ACTIVITY_HEATMAP]       ← Usage patterns over time
-```
-
----
-
-## [COST_ENGINE] — Financial Tracking
-
-```
-[COST]
-│
-├── [PROVIDER_COST]          ← Cost per provider
-├── [MODEL_COST]             ← Cost per model
-├── [ACCOUNT_COST]           ← Cost per account
-├── [REQUEST_COST]           ← Cost per request
-├── [TOKEN_COST]             ← $/1M tokens
-├── [ESTIMATED_COST]         ← Predicted cost
-├── [ACTUAL_COST]            ← Invoiced cost
-├── [FREE_TIER_VALUE]        ← Value of free quota used
-├── [COST_OPTIMIZATION]      ← Recommendations
-└── [COST_ANALYTICS]         ← Spending patterns
-```
-
----
-
-## [FREE_TIER_ENGINE] — Zero-Cost Optimization
-
-```
-[FREE_TIER_ENGINE]
-│
-├── [FREE_PROVIDER]          ← No-cost providers
-├── [FREE_MODEL]             ← No-cost models
-├── [FREE_ACCOUNT]           ← Accounts with free tier
-├── [FREE_POOL]              ← Pool of free accounts
-├── [POOL_DEDUPLICATION]     ← Avoid double-counting quotas
-├── [FREE_CREDITS]           ← Promotional credits
-├── [MONTHLY_BUDGET]         ← Budget reset schedule
-├── [TOKEN_BUDGET]           ← Token limit per period
-├── [RESET]                  ← Reset schedule
-├── [TERMS]                  ← Usage restrictions
-├── [RISK]                   ← Account ban risk
-├── [REGIONAL_REQUIREMENT]   ← Geographic restrictions
-├── [SIGNUP_CREDIT]          ← New user bonuses
-└── [FREE_TIER_RANKING]      ← Quality ranking
-```
-
----
-
-## [COMPANY_BRAIN_INTEGRATION]
+## [COMPANY_BRAIN_INTEGRATION] — Complete Connection
 
 ```
 [[COMPANY_BRAIN]]
@@ -732,24 +577,25 @@ OmniRoute reduces tokens **15-95%** via compression:
     ├── [[CODEX]]
     ├── [[OPENCLAW]]
     │
-    └── [[OMNIROUTE]]
+    └── [[OMNIROUTE]] (v2.0)
          │
-         ├── [ROUTING_ENGINE]
-         ├── [QUOTA_ENGINE]
-         ├── [RESILIENCE_ENGINE]
-         ├── [COMPRESSION_ENGINE]
-         ├── [MCP_INTERFACE]
-         ├── [A2A_INTERFACE]
-         ├── [SECURITY_LAYER]
-         ├── [OBSERVABILITY_LAYER]
-         ├── [ANALYTICS_LAYER]
-         └── [COST_ENGINE]
+         ├── [ROUTING_ENGINE] + [AUTO_COMBO] + [CACHE_AFFINITY]
+         ├── [QUOTA_ENGINE] + [QUOTA_SHARE] + [ACCOUNT_ROTATION]
+         ├── [RESILIENCE_ENGINE] + [ADMISSION_CONTROL] + [CIRCUIT_BREAKER]
+         ├── [COMPRESSION_ENGINE] + [COMPRESSION_STUDIO] + [COMPRESSION_LEARNING]
+         ├── [OMNICONDUCTOR] + [MCP] + [A2A] + [ACP]
+         ├── [SKILLS_MARKETPLACE] + [GITHUB_SKILL_DISCOVERY]
+         ├── [OBSIDIAN_INTEGRATION]
+         ├── [CLOUD_RELAY]
+         ├── [BIGQUERY_EXPORT]
+         ├── [BUDGET_GUARD] + [COST_HEADERS]
+         ├── [GUARDRAILS] + [ERROR_SANITIZATION] + [STEALTH]
+         └── [RADAR] + [PROVIDER_REGISTRY] + [MODEL_REGISTRY]
               │
               ↓
          [[PROVIDER_REGISTRY]]
          [[MODEL_REGISTRY]]
          [[ACCOUNT_REGISTRY]]
-         [[QUOTA_ENGINE]]
               │
               ↓
          [[AI_PROVIDER]]
@@ -764,214 +610,15 @@ OmniRoute reduces tokens **15-95%** via compression:
          [[WHERE_WE_ARE]]
               │
               ↓
-         [[NEXT_DECISION]]
+         [[NEXT_DECISION]] ↺
 ```
 
 ---
 
-## [OBSIDIAN_VAULT_STRUCTURE]
-
-Your Obsidian vault should represent OmniRoute as:
-
-```
-[[OMNIROUTE]]
-│
-├── [[OMNIROUTE_ARCHITECTURE]]
-├── [[OMNIROUTE_PROVIDERS]]
-├── [[OMNIROUTE_MODELS]]
-├── [[OMNIROUTE_CONNECTIONS]]
-├── [[OMNIROUTE_ROUTING]]
-├── [[OMNIROUTE_COMBOS]]
-├── [[OMNIROUTE_AUTO_COMBO]]
-├── [[OMNIROUTE_FALLBACK]]
-├── [[OMNIROUTE_RESILIENCE]]
-├── [[OMNIROUTE_QUOTA]]
-├── [[OMNIROUTE_ACCOUNTS]]
-├── [[OMNIROUTE_CONTEXT_RELAY]]
-├── [[OMNIROUTE_COMPRESSION]]
-├── [[OMNIROUTE_CACHE]]
-├── [[OMNIROUTE_MCP]]
-├── [[OMNIROUTE_A2A]]
-├── [[OMNIROUTE_API]]
-├── [[OMNIROUTE_CLI]]
-├── [[OMNIROUTE_DASHBOARD]]
-├── [[OMNIROUTE_SECURITY]]
-├── [[OMNIROUTE_OBSERVABILITY]]
-├── [[OMNIROUTE_ANALYTICS]]
-├── [[OMNIROUTE_COST]]
-├── [[OMNIROUTE_FREE_TIERS]]
-├── [[OMNIROUTE_PROXY]]
-├── [[OMNIROUTE_TRANSLATOR]]
-├── [[OMNIROUTE_MEMORY]]
-├── [[OMNIROUTE_SKILLS]]
-├── [[OMNIROUTE_EVAL]]
-├── [[OMNIROUTE_DEPLOYMENT]]
-├── [[OMNIROUTE_DOCKER]]
-├── [[OMNIROUTE_TAILSCALE]]
-├── [[OMNIROUTE_CLAUDE_CODE]]
-├── [[OMNIROUTE_CODEX]]
-├── [[OMNIROUTE_ANTIGRAVITY]]
-├── [[OMNIROUTE_CONNECTIVITY_TESTS]]
-├── [[OMNIROUTE_HEALTH]]
-└── [[OMNIROUTE_REALITY]]
-```
-
----
-
-## [BRACKET_VOCABULARY]
-
-```
-[OMNIROUTE]
-[AI_GATEWAY]
-[MODEL_GATEWAY]
-[UNIFIED_API]
-[PROVIDER]
-[MODEL]
-[ACCOUNT]
-[CONNECTION]
-[CREDENTIAL]
-[OAUTH]
-[API_KEY]
-[FREE_TIER]
-
-[ROUTER]
-[ROUTING]
-[ROUTING_STRATEGY]
-[COMBO]
-[AUTO_COMBO]
-[TARGET]
-[FALLBACK]
-[FAILOVER]
-[FAILURE]
-[RETRY]
-[BACKOFF]
-[CIRCUIT_BREAKER]
-[COOLDOWN]
-[RESILIENCE]
-
-[QUOTA]
-[HEADROOM]
-[RESET]
-[ACCOUNT_ROTATION]
-[STICKY_SESSION]
-[CONTEXT_RELAY]
-
-[COMPRESSION]
-[RTK]
-[CAVEMAN]
-[STACKED_COMPRESSION]
-[TOKEN_SAVINGS]
-[CACHE]
-[REASONING_REPLAY]
-
-[FUSION]
-[PIPELINE]
-[CHAOS]
-[PARALLEL_EXECUTION]
-[JUDGE]
-[SYNTHESIS]
-
-[MCP]
-[MCP_TOOL]
-[MCP_TRANSPORT]
-[MCP_SCOPE]
-
-[A2A]
-[AGENT_CARD]
-[A2A_TASK]
-[A2A_SKILL]
-[JSON_RPC]
-[AGENT_DISCOVERY]
-
-[TRANSLATOR]
-[OPENAI_FORMAT]
-[CLAUDE_FORMAT]
-[PROVIDER_FORMAT]
-
-[CLI]
-[DASHBOARD]
-[ELECTRON]
-[PWA]
-[TERMUX]
-
-[PROXY]
-[TUNNEL]
-[TAILSCALE]
-[CLOUDFLARE]
-[NGROK]
-
-[SECURITY]
-[AUTH]
-[SSRF_GUARD]
-[SAFE_FETCH]
-[AUDIT]
-[POLICY]
-
-[OBSERVABILITY]
-[LOGGING]
-[TELEMETRY]
-[METRICS]
-[HEALTH]
-[LATENCY]
-[UPTIME]
-
-[ANALYTICS]
-[COST]
-[USAGE]
-[QUOTA_TELEMETRY]
-[FREE_TIER_ANALYTICS]
-
-[MEMORY]
-[SKILL]
-[EVALUATION]
-[PLAYGROUND]
-
-[BACKUP]
-[SYNC]
-[CONFIG_BUNDLE]
-
-[DEPLOYMENT]
-[DOCKER]
-[CONTAINER]
-[VOLUME]
-[NETWORK]
-```
-
----
-
-## [THE_MOST_IMPORTANT_CONNECTION]
-
-```
-[[CLAUDE_CODE]]
-    ↓ [OPENAI_COMPATIBLE_REQUEST]
-[[OMNIROUTE]]
-    ↓ [ROUTING_ENGINE]
-[[AUTO_COMBO]]
-    ↓ [SCORING_ALGORITHM]
-[[PROVIDER_REGISTRY]]
-    ↓ [ACCOUNT_POOL]
-[[QUOTA_ENGINE]]
-    ↓ [ACCOUNT_SELECTION]
-[[MODEL_SELECTION]]
-    ↓ [PROVIDER_SELECTION]
-[[COMPRESSION_ENGINE]]
-    ↓ [TOKEN_REDUCTION]
-[[UPSTREAM_AI_PROVIDER]]
-    ↓ [RESPONSE]
-[[OBSERVABILITY_LAYER]]
-    ↓ [METRICS_CAPTURE]
-[[KNOWLEDGE_GRAPH]]
-    ↓ [ROUTING_FEEDBACK]
-[[COMPANY_BRAIN]]
-    ↓ [NEXT_DECISION]
-```
-
----
-
-**OmniRoute is the AI infrastructure control plane for the Company Brain. Not just a tool, but a system.**
+**OmniRoute v2.0: 38 subsystems, cybernetic feedback, complete AI infrastructure control plane.**
 
 ---
 
 **Related:** [[WHOAMI.md]] · [[WHERE_WE_ARE.md]] · [[DATA_FLOW.md]] · [[INFRASTRUCTURE.md]] · [[CROSS_LINK_MASTER_ONTOLOGY.md]] · [[TASK_EXECUTION_MASTER_ONTOLOGY.md]] · [[OBSIDIAN_MASTER_ONTOLOGY.md]]
 
-**AI infrastructure control plane: 68 subsystems, cybernetic feedback, intelligent routing.**
+**AI infrastructure control plane v2.0: Enhanced with 30 missing subsystems for complete coverage.**
