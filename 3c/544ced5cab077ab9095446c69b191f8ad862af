@@ -1,0 +1,21 @@
+"The Company/Company Brain/CROSS_LINK_MASTER_ONTOLOGY.md"
+  s_39dfcb184eea53::t_60b44675ac2a1e 527-792,801,803
+"The Company/Company Brain/OBSIDIAN_MASTER_ONTOLOGY.md"
+  s_39dfcb184eea53::t_f2e324a3f4de21 610-656,659
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "3c544ced5cab077ab9095446c69b191f8ad862af",
+  "prompts": {},
+  "sessions": {
+    "s_39dfcb184eea53": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "8f50b13e-cd10-46c0-9897-433d02653f53",
+        "model": "unknown"
+      },
+      "human_author": "Claude Haiku <noreply@anthropic.com>"
+    }
+  }
+}
