@@ -14,7 +14,7 @@ This is what lets Claude, Antigravity, agents, and the Company Brain itself trav
 
 ---
 
-## [PURPOSE]
+## [[PURPOSE]]
 
 Turn markdown from **human-readable** into **machine-navigable**.
 
@@ -38,11 +38,11 @@ Into:
 
 ---
 
-## [LINK_TYPES] — The Relationship Semantics
+## [[LINK_TYPES]] — The Relationship Semantics
 
 Every `[[A]] → [[B]]` relationship must have an explicit type:
 
-### [IDENTITY]
+### [[IDENTITY]]
 ```
 IS_A           — Type definition (Venture IS_A Company)
 INSTANCE_OF    — Instance (VEN-000147 INSTANCE_OF Venture)
@@ -50,7 +50,7 @@ REPRESENTS     — Abstraction (OmniRoute REPRESENTS AI_GATEWAY)
 ALIAS_OF       — Alternative name
 ```
 
-### [STRUCTURE]
+### [[STRUCTURE]]
 ```
 PARENT_OF      — Contains (Sector PARENT_OF Ventures)
 CHILD_OF       — Contained by
@@ -59,7 +59,7 @@ CONTAINS       — Has subcomponent
 MEMBER_OF      — Group membership
 ```
 
-### [RELATIONSHIP]
+### [[RELATIONSHIP]]
 ```
 RELATED_TO     — General connection
 CONNECTED_TO   — Network/system connection
@@ -70,7 +70,7 @@ BLOCKS         — Prevents (Blocker BLOCKS Action)
 CONFLICTS_WITH — Mutually exclusive
 ```
 
-### [DATA]
+### [[DATA]]
 ```
 READS          — Consumes (Agent READS from Database)
 WRITES         — Produces (Agent WRITES to Database)
@@ -81,7 +81,7 @@ SOURCES        — Origin (Data SOURCES from API)
 DERIVED_FROM   — Computed (Metric DERIVED_FROM Ventures)
 ```
 
-### [KNOWLEDGE]
+### [[KNOWLEDGE]]
 ```
 DESCRIBES      — Explains (Document DESCRIBES System)
 EXPLAINS       — Detailed explanation
@@ -92,7 +92,7 @@ VERIFIES       — Confirms truth (Test VERIFIES Assumption)
 REFERENCES     — Cites (Document REFERENCES Ontology)
 ```
 
-### [EXECUTION]
+### [[EXECUTION]]
 ```
 TRIGGERS       — Initiates (Event TRIGGERS Action)
 EXECUTES       — Runs (Agent EXECUTES Workflow)
@@ -103,7 +103,7 @@ UPDATES        — Modifies (Action UPDATES Entity)
 COMPLETES      — Finishes (Action COMPLETES Goal)
 ```
 
-### [DECISION]
+### [[DECISION]]
 ```
 INFORMS        — Provides input (Data INFORMS Decision)
 RECOMMENDS     — Suggests (Agent RECOMMENDS Action)
@@ -113,7 +113,7 @@ ESCALATES_TO   — Elevates (Blocker ESCALATES_TO Human)
 RESULTS_IN     — Outcome (Decision RESULTS_IN Action)
 ```
 
-### [INFRASTRUCTURE]
+### [[INFRASTRUCTURE]]
 ```
 HOSTED_ON      — Physical location (Service HOSTED_ON Mac_Studio)
 RUNS_IN        — Runtime environment (Service RUNS_IN Docker)
@@ -124,7 +124,7 @@ ROUTES_THROUGH — Passes via (Traffic ROUTES_THROUGH Tailscale)
 MONITORED_BY   — Watched by (Service MONITORED_BY Health_Check)
 ```
 
-### [BUSINESS]
+### [[BUSINESS]]
 ```
 GENERATES      — Creates (Venture GENERATES Revenue)
 MONETIZES      — Converts to $ (Feature MONETIZES Usage)
@@ -137,7 +137,7 @@ CREATES_VALUE_FOR — Benefit (System CREATES_VALUE_FOR Business)
 
 ---
 
-## [CANONICAL_LAYERS]
+## [[CANONICAL_LAYERS]]
 
 ### Layer 0: Identity & Constitution
 ```
@@ -212,7 +212,7 @@ CREATES_VALUE_FOR — Benefit (System CREATES_VALUE_FOR Business)
 
 ---
 
-## [CROSS_LINK_MATRIX] — Canonical Relationships
+## [[CROSS_LINK_MATRIX]] — Canonical Relationships
 
 | From | Relationship | To | Reason |
 |------|--------------|----|----|
@@ -251,71 +251,71 @@ CREATES_VALUE_FOR — Benefit (System CREATES_VALUE_FOR Business)
 
 ---
 
-## [CROSS_LINKING_RULE]
+## [[CROSS_LINKING_RULE]]
 
 Every canonical entity MUST be interrogatable via these questions:
 
 ```
 [[OMNIROUTE]] must answer:
 
-[WHAT_IS_IT]
+[[WHAT_IS_IT]]
   → Service, AI Gateway, Model Router
 
-[WHERE_IS_IT]
+[[WHERE_IS_IT]]
   → [[MAC_STUDIO]], running in [[DOCKER]], listening on port 3004
 
-[WHO_OWNS_IT]
+[[WHO_OWNS_IT]]
   → [[DIVINEJOHNS]] (technical owner)
 
-[WHO_USES_IT]
+[[WHO_USES_IT]]
   → [[CLAUDE_CODE]], [[ANTIGRAVITY]], [[CODEX]], [[AGENTS]]
 
-[WHAT_DOES_IT_ENABLE]
+[[WHAT_DOES_IT_ENABLE]]
   → [[MODEL_ROUTING]], [[PROVIDER_SWITCHING]], [[FALLBACK_LOGIC]]
 
-[WHAT_DOES_IT_DEPEND_ON]
+[[WHAT_DOES_IT_DEPEND_ON]]
   → [[LITELLM]], [[LLM_PROVIDERS]], [[DOCKER]], [[MAC_STUDIO]]
 
-[WHAT_DEPENDS_ON_IT]
+[[WHAT_DEPENDS_ON_IT]]
   → [[CLAUDE_CODE]], [[AGENTS]], [[WORKFLOWS]]
 
-[WHAT_DATA_DOES_IT_TOUCH]
+[[WHAT_DATA_DOES_IT_TOUCH]]
   → [[PROMPTS]], [[MODEL_RESPONSES]], [[ROUTING_DECISIONS]]
 
-[WHAT_SYSTEMS_DOES_IT_CONNECT]
+[[WHAT_SYSTEMS_DOES_IT_CONNECT]]
   → [[NEO4J]], [[QDRANT]], [[POSTGRESQL]], [[LLM_PROVIDERS]]
 
-[WHAT_REPOSITORY_IMPLEMENTS_IT]
+[[WHAT_REPOSITORY_IMPLEMENTS_IT]]
   → github.com/worldwidebro/omniroute (or integration)
 
-[WHAT_AGENT_USES_IT]
+[[WHAT_AGENT_USES_IT]]
   → [[AGENT_ROUTER]], [[MODEL_SELECTION_AGENT]]
 
-[WHAT_WORKFLOW_USES_IT]
+[[WHAT_WORKFLOW_USES_IT]]
   → [[PROMPT_EXECUTION_WORKFLOW]], [[LLM_INFERENCE_WORKFLOW]]
 
-[WHAT_DECISIONS_DOES_IT_INFORM]
+[[WHAT_DECISIONS_DOES_IT_INFORM]]
   → Which model to use, which provider to call
 
-[WHAT_OUTCOMES_DOES_IT_PRODUCE]
+[[WHAT_OUTCOMES_DOES_IT_PRODUCE]]
   → [[LLM_RESPONSE]], [[ROUTING_METRICS]], [[COST_TRACKING]]
 
-[HOW_IS_IT_VERIFIED]
+[[HOW_IS_IT_VERIFIED]]
   → [[CONNECTIVITY_TEST_2026_10_02#OMNIROUTE]]
 
-[WHAT_EVIDENCE_EXISTS]
+[[WHAT_EVIDENCE_EXISTS]]
   → [[WHERE_WE_ARE#OMNIROUTE]], [[INFRASTRUCTURE#OMNIROUTE]], test results
 
-[WHAT_DOCUMENTS_DESCRIBE_IT]
+[[WHAT_DOCUMENTS_DESCRIBE_IT]]
   → [[INFRASTRUCTURE.md#OMNIROUTE]], [[WHERE_WE_ARE.md#OMNIROUTE]]
 
-[WHAT_IS_ITS_CURRENT_STATE]
-  → [[WHERE_WE_ARE#SERVICES#OMNIROUTE]] = [VERIFIED]
+[[WHAT_IS_ITS_CURRENT_STATE]]
+  → [[WHERE_WE_ARE#SERVICES#OMNIROUTE]] = [[VERIFIED]]
 ```
 
 ---
 
-## [RECURSIVE_LOOP] — The Company Brain Heartbeat
+## [[RECURSIVE_LOOP]] — The Company Brain Heartbeat
 
 Every entity participates in this loop:
 
@@ -355,7 +355,7 @@ Every entity participates in this loop:
 
 ---
 
-## [RESOLUTION_RULES]
+## [[RESOLUTION_RULES]]
 
 ### Rule 1: Every bracket is a node
 ```
@@ -400,7 +400,7 @@ Both directions explicit (or one is derived)
 
 ---
 
-## [NAVIGATION_PATTERNS]
+## [[NAVIGATION_PATTERNS]]
 
 ### "Trace an action to outcome"
 ```
@@ -440,7 +440,7 @@ Both directions explicit (or one is derived)
 
 ---
 
-## [MASTER_ONTOLOGY_HIERARCHY]
+## [[MASTER_ONTOLOGY_HIERARCHY]]
 
 ```
                          [[WHOAMI]]
@@ -490,7 +490,7 @@ Both directions explicit (or one is derived)
 
 ---
 
-## [IMPLEMENTATION]
+## [[IMPLEMENTATION]]
 
 This ontology enables:
 
@@ -503,7 +503,7 @@ This ontology enables:
 
 ---
 
-## [NEXT_ACTIONS]
+## [[NEXT_ACTIONS]]
 
 ```
 NOW:
@@ -526,9 +526,9 @@ NEXT_MONTH:
 
 ---
 
-## [EXTENDED_RELATIONSHIP_TYPES] — 12 Additional Semantics (Unit 8)
+## [[EXTENDED_RELATIONSHIP_TYPES]] — 12 Additional Semantics (Unit 8)
 
-### [STORAGE_RELATIONSHIPS]
+### [[STORAGE_RELATIONSHIPS]]
 ```
 STORED_IN      — Data location (File STORED_IN Folder)
 MOUNTED_ON     — Volume binding (Folder MOUNTED_ON Filesystem)
@@ -537,7 +537,7 @@ BACKED_UP_TO   — Replica location (Data BACKED_UP_TO ExternalDrive)
 MIGRATED_TO    — Movement (Data MIGRATED_TO NewLocation)
 ```
 
-### [EXECUTION_RELATIONSHIPS]
+### [[EXECUTION_RELATIONSHIPS]]
 ```
 EXECUTES       — Agent action (Agent EXECUTES Task)
 DELEGATES_TO   — Reassignment (Manager DELEGATES_TO Agent)
@@ -546,7 +546,7 @@ LOOPS_OVER     — Iteration (Workflow LOOPS_OVER DataSet)
 ABORTS_ON      — Failure handling (Task ABORTS_ON Error)
 ```
 
-### [LINEAGE_RELATIONSHIPS]
+### [[LINEAGE_RELATIONSHIPS]]
 ```
 TRANSFORMS     — Data change (RawData TRANSFORMS to CleanData)
 DERIVED_FROM   — Computation (Metric DERIVED_FROM Ventures)
@@ -555,7 +555,7 @@ FILTERS        — Selection (Subset FILTERS from FullSet)
 LINEAGE_CHAIN  — Full ancestry (CurrentData LINEAGE_CHAIN SourceData)
 ```
 
-### [DEPENDENCY_RELATIONSHIPS]
+### [[DEPENDENCY_RELATIONSHIPS]]
 ```
 SOFT_DEPENDS   — Recommended (Service SOFT_DEPENDS on Cache)
 HARD_DEPENDS   — Required (Agent HARD_DEPENDS on Capability)
@@ -564,7 +564,7 @@ BLOCKS_UNTIL   — Blocker (Task BLOCKS_UNTIL Condition)
 WAITS_FOR      — Synchronization (Agent WAITS_FOR Signal)
 ```
 
-### [ANNOTATION_RELATIONSHIPS]
+### [[ANNOTATION_RELATIONSHIPS]]
 ```
 COMMENTED_BY   — Discussion (Document COMMENTED_BY Reviewer)
 FLAGGED_BY     — Marking (Entity FLAGGED_BY QA)
@@ -573,7 +573,7 @@ REJECTED_BY    — Denial (Change REJECTED_BY Authority)
 REVISED_BY     — Editing (Document REVISED_BY Author)
 ```
 
-### [EVIDENCE_RELATIONSHIPS]
+### [[EVIDENCE_RELATIONSHIPS]]
 ```
 EVIDENCE_LOG   — Proof collection (Claim EVIDENCE_LOG [Test1, Test2])
 VERIFIED_AT    — Timestamp (Evidence VERIFIED_AT DateTime)
@@ -582,7 +582,7 @@ SUPERSEDED_BY  — Obsolescence (OldData SUPERSEDED_BY NewData)
 CONTRADICTED   — Conflict (Claim1 CONTRADICTED Claim2)
 ```
 
-### [TEMPORAL_RELATIONSHIPS]
+### [[TEMPORAL_RELATIONSHIPS]]
 ```
 CREATED_AT     — Birth timestamp (Entity CREATED_AT DateTime)
 MODIFIED_AT    — Last change (Entity MODIFIED_AT DateTime)
@@ -591,7 +591,7 @@ ARCHIVED_AT    — Historical (Document ARCHIVED_AT DateTime)
 VALID_UNTIL    — Expiration (Credential VALID_UNTIL DateTime)
 ```
 
-### [AUTHORITY_RELATIONSHIPS]
+### [[AUTHORITY_RELATIONSHIPS]]
 ```
 OWNED_BY       — Owner (Resource OWNED_BY Organization)
 MANAGED_BY     — Manager (Service MANAGED_BY Team)
@@ -600,7 +600,7 @@ AUDITED_BY     — Oversight (Account AUDITED_BY Auditor)
 AUTHORIZED_BY  — Permission (Access AUTHORIZED_BY SecOps)
 ```
 
-### [COMPOSITION_RELATIONSHIPS]
+### [[COMPOSITION_RELATIONSHIPS]]
 ```
 COMPOSED_OF    — Parts (System COMPOSED_OF Subsystems)
 EMBEDDED_IN    — Nesting (Component EMBEDDED_IN Container)
@@ -609,7 +609,7 @@ EXTENDS        — Inheritance (SpecializedClass EXTENDS BaseClass)
 IMPLEMENTS     — Interface (Concrete IMPLEMENTS Interface)
 ```
 
-### [MAPPING_RELATIONSHIPS]
+### [[MAPPING_RELATIONSHIPS]]
 ```
 ALIAS_FOR      — Name variant (Nickname ALIAS_FOR RealName)
 EQUIVALENT_TO  — Semantic match (Term1 EQUIVALENT_TO Term2)
@@ -618,7 +618,7 @@ RESOLVES_TO    — Final reference (Bracket RESOLVES_TO Entity)
 NORMALIZED_AS  — Canonical form (VariantForm NORMALIZED_AS StandardForm)
 ```
 
-### [MEASUREMENT_RELATIONSHIPS]
+### [[MEASUREMENT_RELATIONSHIPS]]
 ```
 MEASURES       — Metric (SLA MEASURES Availability)
 THRESHOLD_SET  — Limit (Metric THRESHOLD_SET 99.9%)
@@ -627,7 +627,7 @@ TRACKED_BY     — Monitoring (Service TRACKED_BY Dashboard)
 REPORTED_IN    — Aggregation (Metric REPORTED_IN Report)
 ```
 
-### [FALLBACK_RELATIONSHIPS]
+### [[FALLBACK_RELATIONSHIPS]]
 ```
 PRIMARY_IS     — First choice (Service PRIMARY_IS MainServer)
 FALLBACK_TO    — Backup (MainServer FALLBACK_TO ReplicaServer)
@@ -640,20 +640,20 @@ RECOVERY_FROM  — Restoration (System RECOVERY_FROM Backup)
 
 ---
 
-## [COMPLETE_TRAVERSAL_PATHS] — End-to-End Navigation (Unit 9)
+## [[COMPLETE_TRAVERSAL_PATHS]] — End-to-End Navigation (Unit 9)
 
 ### Path 1: User → Ventures They Control
 ```
 [[WHOAMI#Person]]
-  ↓ [OWNS] 
+  ↓ [[OWNS]] 
 [[OPERATING_COMPANY]]
-  ↓ [OPERATES_IN]
+  ↓ [[OPERATES_IN]]
 [[SECTOR]]
-  ↓ [CONTAINS]
+  ↓ [[CONTAINS]]
 [[VENTURE]]
-  ↓ [GENERATES]
+  ↓ [[GENERATES]]
 [[REVENUE_STREAM]]
-  ↓ [ATTRIBUTED_TO]
+  ↓ [[ATTRIBUTED_TO]]
 [[FINANCIAL_PROFILE]]
   → Result: Map person → company ownership → sector scope → ventures → revenue
 ```
@@ -661,15 +661,15 @@ RECOVERY_FROM  — Restoration (System RECOVERY_FROM Backup)
 ### Path 2: Venture → Revenue Loops
 ```
 [[VENTURE]]
-  ↓ [EXECUTES]
+  ↓ [[EXECUTES]]
 [[WORKFLOW]]
-  ↓ [INCLUDES]
+  ↓ [[INCLUDES]]
 [[REVENUE_LOOP]]  (lead-gen → sales → delivery → collection → retention)
-  ↓ [TRACKS]
+  ↓ [[TRACKS]]
 [[METRIC]]
-  ↓ [INFORMS]
+  ↓ [[INFORMS]]
 [[DECISION]]
-  ↓ [RESULTS_IN]
+  ↓ [[RESULTS_IN]]
 [[ACTION]]
   → Result: From venture through full revenue cycle to decisions and actions
 ```
@@ -677,15 +677,15 @@ RECOVERY_FROM  — Restoration (System RECOVERY_FROM Backup)
 ### Path 3: Repository → Deployed Ventures
 ```
 [[REPOSITORY]]
-  ↓ [IMPLEMENTS]
+  ↓ [[IMPLEMENTS]]
 [[CAPABILITY]]
-  ↓ [ENABLES]
+  ↓ [[ENABLES]]
 [[AGENT]]
-  ↓ [EXECUTES]
+  ↓ [[EXECUTES]]
 [[DEPLOYMENT]]
-  ↓ [RUNS_ON]
+  ↓ [[RUNS_ON]]
 [[VENTURE]]
-  ↓ [GENERATES]
+  ↓ [[GENERATES]]
 [[OUTCOME]]
   → Result: Code lineage from repository through execution to business outcome
 ```
@@ -693,15 +693,15 @@ RECOVERY_FROM  — Restoration (System RECOVERY_FROM Backup)
 ### Path 4: Agent → Decisions It Made
 ```
 [[AGENT]]
-  ↓ [EXECUTES]
+  ↓ [[EXECUTES]]
 [[TASK]]
-  ↓ [BASED_ON]
+  ↓ [[BASED_ON]]
 [[CONTEXT_DATA]]
-  ↓ [INFORMS]
+  ↓ [[INFORMS]]
 [[LAYA_DECISION]]  (confidence-gated L1/L2/L3)
-  ↓ [LOGGED_IN]
+  ↓ [[LOGGED_IN]]
 [[NEO4J_GRAPH]]
-  ↓ [REFERENCES]
+  ↓ [[REFERENCES]]
 [[DECISION_AUTHORITY]]
   → Result: Agent decision trail from task through reasoning to authority approval
 ```
@@ -709,15 +709,15 @@ RECOVERY_FROM  — Restoration (System RECOVERY_FROM Backup)
 ### Path 5: Capability → Ventures Using It
 ```
 [[CAPABILITY]]
-  ↓ [MAPPED_TO]
+  ↓ [[MAPPED_TO]]
 [[SKILL_REGISTRY]]
-  ↓ [AVAILABLE_TO]
+  ↓ [[AVAILABLE_TO]]
 [[AGENT]]
-  ↓ [EXECUTES]
+  ↓ [[EXECUTES]]
 [[WORKFLOW]]
-  ↓ [USED_BY]
+  ↓ [[USED_BY]]
 [[VENTURE]]
-  ↓ [CREATES_VALUE_FOR]
+  ↓ [[CREATES_VALUE_FOR]]
 [[STAKEHOLDER]]
   → Result: Capability discovery from registry through execution to business value
 ```
@@ -725,15 +725,15 @@ RECOVERY_FROM  — Restoration (System RECOVERY_FROM Backup)
 ### Path 6: File → Storage → Mount → Device
 ```
 [[FILE]]
-  ↓ [STORED_IN]
+  ↓ [[STORED_IN]]
 [[FOLDER]]
-  ↓ [MOUNTED_ON]
+  ↓ [[MOUNTED_ON]]
 [[FILESYSTEM]]
-  ↓ [RESIDES_ON]
+  ↓ [[RESIDES_ON]]
 [[VOLUME]]
-  ↓ [ATTACHED_TO]
+  ↓ [[ATTACHED_TO]]
 [[DEVICE]]
-  ↓ [CONNECTIVITY]
+  ↓ [[CONNECTIVITY]]
 [[NETWORK]]
   → Result: Complete data lineage from logical file to physical hardware and network
 ```
@@ -741,15 +741,15 @@ RECOVERY_FROM  — Restoration (System RECOVERY_FROM Backup)
 ### Path 7: Obsidian Document → Neo4j Entity
 ```
 [[MARKDOWN_FILE]]
-  ↓ [CONTAINS]
+  ↓ [[CONTAINS]]
 [[WIKI_LINK]]
-  ↓ [REFERENCES]
+  ↓ [[REFERENCES]]
 [[BRACKET_ENTITY]]
-  ↓ [RESOLVES_TO]
+  ↓ [[RESOLVES_TO]]
 [[MASTER_ONTOLOGY_ENTITY]]
-  ↓ [REPRESENTS]
+  ↓ [[REPRESENTS]]
 [[NEO4J_NODE]]
-  ↓ [CONNECTED_VIA]
+  ↓ [[CONNECTED_VIA]]
 [[NEO4J_EDGE]]
   → Result: Knowledge source bridge from human-readable markdown to machine graph
 ```
@@ -757,15 +757,15 @@ RECOVERY_FROM  — Restoration (System RECOVERY_FROM Backup)
 ### Path 8: Decision → Evidence → Reality → Action
 ```
 [[DECISION]]
-  ↓ [BASED_ON]
+  ↓ [[BASED_ON]]
 [[EVIDENCE]]
-  ↓ [VALIDATES]
+  ↓ [[VALIDATES]]
 [[ASSERTION]]
-  ↓ [STATUS]
+  ↓ [[STATUS]]
 [[WHERE_WE_ARE#Current_State]]
-  ↓ [INFORMS]
+  ↓ [[INFORMS]]
 [[ACTION_PLAN]]
-  ↓ [EXECUTES_TO]
+  ↓ [[EXECUTES_TO]]
 [[OUTCOME]]
   → Result: Fully validated decision-to-action chain with evidence and reality checks
 ```
@@ -773,15 +773,15 @@ RECOVERY_FROM  — Restoration (System RECOVERY_FROM Backup)
 ### Path 9: Task Blocker → Resolution → Unblocking
 ```
 [[TASK]]
-  ↓ [BLOCKED_BY]
+  ↓ [[BLOCKED_BY]]
 [[BLOCKER]]
-  ↓ [ESCALATES_TO]
+  ↓ [[ESCALATES_TO]]
 [[DECISION_AUTHORITY]]
-  ↓ [APPROVES]
+  ↓ [[APPROVES]]
 [[RESOLUTION]]
-  ↓ [REMOVES]
+  ↓ [[REMOVES]]
 [[BLOCKER_CLEARED]]
-  ↓ [UNBLOCKS]
+  ↓ [[UNBLOCKS]]
 [[TASK]]  (now executable)
   → Result: Complete blocker lifecycle from identification through resolution
 ```
@@ -801,3 +801,281 @@ RECOVERY_FROM  — Restoration (System RECOVERY_FROM Backup)
 **Related:** [[WHOAMI.md]] · [[WHERE_WE_ARE.md]] · [[DATA_FLOW.md]] · [[INFRASTRUCTURE.md]] · [[OBSIDIAN_MASTER_ONTOLOGY.md]]
 
 **Master grammar v1.1: 45+ relationship types, 9 complete traversal paths, machine navigation enabled.**
+
+# Appendix: Cognition, Thinking, and Question Cross-Links
+
+## 10. The Reality Resolution Loop (Questions)
+
+```text
+[[QUESTION]]
+    [[TARGETS]] → [[ENTITY]]
+
+[[QUESTION]]
+    [[SEEKS]] → [[KNOWLEDGE]]
+
+[[QUESTION]]
+    [[IDENTIFIES]] → [[KNOWLEDGE_GAP]]
+
+[[QUESTION]]
+    [[REQUIRES]] → [[EVIDENCE]]
+
+[[QUESTION]]
+    [[ROUTES_TO]] → [[AGENT]]
+
+[[QUESTION]]
+    [[USES]] → [[TOOL]]
+
+[[QUESTION]]
+    [[SEARCHES]] → [[SOURCE]]
+
+[[QUESTION]]
+    [[GENERATES]] → [[TASK]]
+
+[[QUESTION]]
+    [[INFORMS]] → [[DECISION]]
+
+[[QUESTION]]
+    [[TRIGGERS]] → [[ACTION]]
+
+[[ANSWER]]
+    [[ANSWERS]] → [[QUESTION]]
+
+[[EVIDENCE]]
+    [[SUPPORTS]] → [[ANSWER]]
+
+[[VERIFICATION]]
+    [[VERIFIES]] → [[ANSWER]]
+
+[[ANSWER]]
+    [[UPDATES]] → [[KNOWLEDGE]]
+
+[[FOLLOWUP_QUESTION]]
+    [[FOLLOWS]] → [[ANSWER]]
+```
+
+## 11. The Reasoning Loop (Thinking Frameworks)
+
+```text
+[[QUESTION]]
+    [[REQUIRES]] → [[THINKING_FRAMEWORK]]
+
+[[THINKING_FRAMEWORK]]
+    [[OPERATES_ON]] → [[PROBLEM]]
+
+[[THINKING_FRAMEWORK]]
+    [[USES]] → [[EVIDENCE]]
+
+[[THINKING_FRAMEWORK]]
+    [[GENERATES]] → [[INSIGHT]]
+
+[[INSIGHT]]
+    [[INFORMS]] → [[DECISION]]
+
+[[DECISION]]
+    [[TRIGGERS]] → [[ACTION]]
+
+[[ACTION]]
+    [[PRODUCES]] → [[OUTCOME]]
+
+[[OUTCOME]]
+    [[GENERATES]] → [[FEEDBACK]]
+
+[[FEEDBACK]]
+    [[UPDATES]] → [[KNOWLEDGE]]
+```
+
+## 12. The Learning Path (Cognitive Reading Order)
+
+```text
+[[READING_ORDER]]
+    [[DEFINES]] → [[AWARENESS]]
+
+[[AWARENESS]]
+    [[ENABLES]] → [[UNDERSTANDING]]
+
+[[UNDERSTANDING]]
+    [[EMPOWERS]] → [[THINKING]]
+
+[[THINKING]]
+    [[PRODUCES]] → [[REASONING]]
+
+[[REASONING]]
+    [[GENERATES]] → [[QUESTION]]
+
+[[QUESTION]]
+    [[DEMANDS]] → [[EVIDENCE]]
+
+[[EVIDENCE]]
+    [[REQUIRES]] → [[VERIFICATION]]
+
+[[VERIFICATION]]
+    [[FORMS]] → [[KNOWLEDGE]]
+
+[[KNOWLEDGE]]
+    [[INFORMS]] → [[DECISION]]
+
+[[DECISION]]
+    [[TRIGGERS]] → [[ACTION]]
+
+[[ACTION]]
+    [[YIELDS]] → [[LEARNING]]
+```
+
+## 13. The Knowledge Artifact Lifecycle
+
+```text
+[[OBSERVATION]]
+    [[BECOMES]] → [[NOTE]]
+
+[[DOCUMENT]]
+    [[EXTRACTED_TO]] → [[INDEX]]
+
+[[INDEX]]
+    [[ORGANIZED_BY]] → [[CATALOG]]
+
+[[CATALOG]]
+    [[STRUCTURED_BY]] → [[ONTOLOGY]]
+
+[[ONTOLOGY]]
+    [[FEEDS]] → [[KNOWLEDGE_GRAPH]]
+
+[[KNOWLEDGE_GRAPH]]
+    [[GUIDES]] → [[READING_PATH]]
+
+[[READING_PATH]]
+    [[BUILDS]] → [[UNDERSTANDING]]
+```
+
+## 14. The Capability and Execution Loop
+
+```text
+[[CAPABILITY]]
+    [[IMPLEMENTED_BY]] → [[AGENT]]
+    [[ENABLED_BY]] → [[SKILL]]
+    [[EXECUTED_WITH]] → [[TOOL]]
+    [[CONNECTED_BY]] → [[MCP]]
+    [[EXPOSED_BY]] → [[CLI]]
+    [[POWERED_BY]] → [[MODEL]]
+
+[[AGENT]]
+    [[HAS_CAPABILITY]] → [[CAPABILITY]]
+    [[HAS_SKILL]] → [[SKILL]]
+    [[USES_TOOL]] → [[TOOL]]
+    [[USES_MCP]] → [[MCP]]
+    [[USES_CLI]] → [[CLI]]
+    [[USES_MODEL]] → [[MODEL]]
+    [[EXECUTES]] → [[TASK]]
+    [[DELEGATES_TO]] → [[AGENT]]
+    [[REPORTS_TO]] → [[AGENT]]
+    [[SUPERVISES]] → [[AGENT]]
+    [[HANDOFFS_TO]] → [[AGENT]]
+    [[ESCALATES_TO]] → [[AGENT]]
+    [[PRODUCES]] → [[ARTIFACT]]
+```
+
+## 15. The Company Brain Control Architecture
+
+```text
+[[WHOAMI]]
+    [[GUIDED_BY]] → [[MISSION]]
+
+[[MISSION]]
+    [[ENFORCED_BY]] → [[DIRECTIVES]]
+
+[[DIRECTIVES]]
+    [[COORDINATED_BY]] → [[EXECUTIVES]]
+
+[[EXECUTIVES]]
+    [[PRIORITIZE]] → [[OBJECTIVES]]
+
+[[OBJECTIVES]]
+    [[DECOMPOSED_BY]] → [[ORCHESTRATOR]]
+
+[[ORCHESTRATOR]]
+    [[DELEGATES_TO]] → [[AGENTS]]
+
+[[AGENTS]]
+    [[PRODUCE]] → [[OUTCOMES]]
+
+[[OUTCOMES]]
+    [[MONITORED_BY]] → [[OBSERVABILITY]]
+
+[[OBSERVABILITY]]
+    [[TRIGGERS]] → [[SELF_HEALING]]
+
+[[SELF_HEALING]]
+    [[REQUIRES]] → [[VERIFICATION]]
+
+[[VERIFICATION]]
+    [[UPDATES]] → [[LEARNING]]
+
+[[LEARNING]]
+    [[INFORMS]] → [[KNOWLEDGE_GRAPH]]
+
+[[KNOWLEDGE_GRAPH]]
+    [[PROVIDES]] → [[NEW_CONTEXT]]
+```
+
+## 16. The Full Company Brain Global Graph
+
+```text
+[[WHOAMI]] → [[MISSION]] → [[PRINCIPLES]] → [[DIRECTIVES]] → [[EXECUTIVES]] → [[OBJECTIVES]] → [[QUESTIONS]] → [[THINKING_FRAMEWORKS]] → [[REQUIREMENTS]] → [[CAPABILITIES]] → [[ANTIGRAVITY]] → [[ORCHESTRATOR]]
+
+[[ORCHESTRATOR]]
+    [[EXECUTES_VIA]] → [[AGENTS]]
+
+[[AGENTS]]
+    [[USES_SKILLS]] → [[SKILLS]]
+    [[USES_TOOLS]] → [[TOOLS]]
+    [[CONNECTS_VIA]] → [[MCP]]
+    [[CONNECTS_VIA]] → [[CLI]]
+    [[CONNECTS_VIA]] → [[API]]
+    [[REASONS_VIA]] → [[MODELS]]
+
+[[MODELS]] → [[EXECUTION]] → [[ARTIFACTS]] → [[TESTING]] → [[VERIFICATION]] → [[REALITY]] → [[OUTCOME]] → [[OBSERVABILITY]] → [[SELF_HEALING]] → [[LEARNING]] → [[KNOWLEDGE_GRAPH]] → [[REGISTRIES]] → [[NEW_CONTEXT]]
+```
+
+## 17. The Capability Supply Chain (AAS)
+
+```text
+[[REQUIREMENT]] → [[CAPABILITY_GAP]] → [[SKILL_DISCOVERY]] → [[SKILL_SELECTION]] → [[SKILL_COMPOSITION]] → [[AGENT]]
+
+[[STARRED_REPOSITORY]]
+    [[ANALYZED_BY]] → [[REPOSITORY_INTELLIGENCE]]
+    [[EXTRACTS]] → [[SKILL]]
+    [[MAPS_TO]] → [[CAPABILITY]]
+    [[MATCHES_TO]] → [[AGENT]]
+    [[EXECUTES]] → [[TASK]]
+    [[PRODUCES]] → [[OUTCOME]]
+
+[[REALITY]] → [[OBSERVATION]] → [[KNOWLEDGE]] → [[QUESTION]] → [[THINKING_FRAMEWORK]] → [[REQUIREMENT]] → [[CAPABILITY_GAP]] → [[CAPABILITY_DISCOVERY]] → [[AAS]] → [[SKILL_SELECTION]] → [[SKILL_COMPOSITION]] → [[DIRECTIVE]] → [[EXECUTIVE]] → [[ORCHESTRATOR]] → [[AGENT]] → [[SKILL]] → [[TOOL]] → [[ACTION]] → [[OUTCOME]] → [[OBSERVABILITY]] → [[SELF_HEALING]] → [[VERIFICATION]] → [[EVIDENCE]] → [[KNOWLEDGE_GRAPH]] → [[REGISTRIES]] → [[CAPABILITY_GROWTH]]
+```
+
+## 18. The Recursive Capability Loop (FIND-SKILLS)
+
+```text
+[[CAPABILITY_GAP]]
+    [[RESOLVED_BY]] → [[FIND_SKILLS]]
+
+[[FIND_SKILLS]]
+    [[SEARCHES]] → [[AAS]]
+    [[EVALUATES]] → [[SKILL_CANDIDATES]]
+    [[PRODUCES]] → [[SKILL_SELECTION]]
+
+[[NO_RESULT]]
+    [[TRIGGERS]] → [[CREATE_NEW_SKILL]]
+    [[UPDATES]] → [[SKILL_REGISTRY]]
+```
+
+## 19. The Skill Intelligence Value Chain
+
+```text
+[[GITHUB_STAR]]
+    [[INGESTED_BY]] → [[SKILL_INTELLIGENCE]]
+    [[NORMALIZED_INTO]] → [[CANONICAL_SKILL_NODE]]
+    [[MAPPED_TO]] → [[CAPABILITY]]
+    [[DISCOVERED_BY]] → [[FIND_SKILLS]]
+    [[EXECUTED_BY]] → [[AGENT]]
+    [[GENERATES]] → [[BUSINESS_VALUE]]
+    [[ATTRIBUTED_TO]] → [[REVENUE_ATTRIBUTION]]
+```

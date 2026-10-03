@@ -11,18 +11,18 @@ source_of_truth: true
 
 **GitHub is not merely "where the code lives." It is simultaneously a repository system, collaboration platform, identity/access system, CI/CD automation, security layer, package registry, release system, and evidence source.**
 
-This ontology models **[GITHUB]** as a first-class Company Brain control plane that provides implementation evidence and execution capability for the entire enterprise.
+This ontology models **[[GITHUB]]** as a first-class Company Brain control plane that provides implementation evidence and execution capability for the entire enterprise.
 
 ---
 
 ## Core Principle: Declared ≠ Observed ≠ Verified
 
 ```
-[DECLARED_REPOSITORY_STATE]
+[[DECLARED_REPOSITORY_STATE]]
         ≠
-[OBSERVED_REPOSITORY_STATE]
+[[OBSERVED_REPOSITORY_STATE]]
         ≠
-[VERIFIED_REPOSITORY_STATE]
+[[VERIFIED_REPOSITORY_STATE]]
 ```
 
 Example:
@@ -32,260 +32,260 @@ Example:
 
 ---
 
-## [GITHUB_COMPLETE_ARCHITECTURE] — 18 Domains
+## [[GITHUB_COMPLETE_ARCHITECTURE]] — 18 Domains
 
 ```
-[GITHUB]
+[[GITHUB]]
 
-├─ [IDENTITY]
-│  ├── [GITHUB_ACCOUNT]
-│  ├── [GITHUB_ORGANIZATION]
-│  ├── [GITHUB_USER]
-│  ├── [GITHUB_TEAM]
-│  ├── [GITHUB_BOT]
-│  ├── [GITHUB_APP]
-│  └── [GITHUB_ACTION]
+├─ [[IDENTITY]]
+│  ├── [[GITHUB_ACCOUNT]]
+│  ├── [[GITHUB_ORGANIZATION]]
+│  ├── [[GITHUB_USER]]
+│  ├── [[GITHUB_TEAM]]
+│  ├── [[GITHUB_BOT]]
+│  ├── [[GITHUB_APP]]
+│  └── [[GITHUB_ACTION]]
 │
-├─ [REPOSITORIES]
-│  ├── [REPOSITORY]
-│  ├── [PUBLIC_REPOSITORY]
-│  ├── [PRIVATE_REPOSITORY]
-│  ├── [FORK]
-│  ├── [TEMPLATE_REPOSITORY]
-│  ├── [ARCHIVED_REPOSITORY]
-│  ├── [MONOREPO]
-│  └── [MIRROR]
+├─ [[REPOSITORIES]]
+│  ├── [[REPOSITORY]]
+│  ├── [[PUBLIC_REPOSITORY]]
+│  ├── [[PRIVATE_REPOSITORY]]
+│  ├── [[FORK]]
+│  ├── [[TEMPLATE_REPOSITORY]]
+│  ├── [[ARCHIVED_REPOSITORY]]
+│  ├── [[MONOREPO]]
+│  └── [[MIRROR]]
 │
-├─ [CODE]
-│  ├── [SOURCE_CODE]
-│  ├── [CONFIGURATION]
-│  ├── [DOCUMENTATION]
-│  ├── [SCHEMAS]
-│  ├── [SCRIPTS]
-│  ├── [INFRASTRUCTURE_CODE]
-│  ├── [TESTS]
-│  └── [GENERATED_CODE]
+├─ [[CODE]]
+│  ├── [[SOURCE_CODE]]
+│  ├── [[CONFIGURATION]]
+│  ├── [[DOCUMENTATION]]
+│  ├── [[SCHEMAS]]
+│  ├── [[SCRIPTS]]
+│  ├── [[INFRASTRUCTURE_CODE]]
+│  ├── [[TESTS]]
+│  └── [[GENERATED_CODE]]
 │
-├─ [GIT]
-│  ├── [COMMIT]
-│  ├── [BRANCH]
-│  ├── [TAG]
-│  ├── [RELEASE]
-│  ├── [MERGE]
-│  ├── [REBASE]
-│  ├── [DIFF]
-│  ├── [HISTORY]
-│  ├── [BLAME]
-│  └── [WORKTREE]
+├─ [[GIT]]
+│  ├── [[COMMIT]]
+│  ├── [[BRANCH]]
+│  ├── [[TAG]]
+│  ├── [[RELEASE]]
+│  ├── [[MERGE]]
+│  ├── [[REBASE]]
+│  ├── [[DIFF]]
+│  ├── [[HISTORY]]
+│  ├── [[BLAME]]
+│  └── [[WORKTREE]]
 │
-├─ [PULL_REQUESTS]
-│  ├── [PULL_REQUEST]
-│  ├── [PR_REVIEW]
-│  ├── [APPROVAL]
-│  ├── [CHANGE_REQUEST]
-│  ├── [MERGE]
-│  └── [MERGE_CONFLICT]
+├─ [[PULL_REQUESTS]]
+│  ├── [[PULL_REQUEST]]
+│  ├── [[PR_REVIEW]]
+│  ├── [[APPROVAL]]
+│  ├── [[CHANGE_REQUEST]]
+│  ├── [[MERGE]]
+│  └── [[MERGE_CONFLICT]]
 │
-├─ [ISSUES]
-│  ├── [ISSUE]
-│  ├── [BUG]
-│  ├── [FEATURE_REQUEST]
-│  ├── [TASK]
-│  ├── [DISCUSSION]
-│  ├── [ISSUE_LABEL]
-│  ├── [MILESTONE]
-│  └── [ISSUE_RELATIONSHIP]
+├─ [[ISSUES]]
+│  ├── [[ISSUE]]
+│  ├── [[BUG]]
+│  ├── [[FEATURE_REQUEST]]
+│  ├── [[TASK]]
+│  ├── [[DISCUSSION]]
+│  ├── [[ISSUE_LABEL]]
+│  ├── [[MILESTONE]]
+│  └── [[ISSUE_RELATIONSHIP]]
 │
-├─ [PROJECTS]
-│  ├── [GITHUB_PROJECT]
-│  ├── [PROJECT_BOARD]
-│  ├── [PROJECT_ITEM]
-│  ├── [VIEW]
-│  ├── [FIELD]
-│  └── [PROJECT_AUTOMATION]
+├─ [[PROJECTS]]
+│  ├── [[GITHUB_PROJECT]]
+│  ├── [[PROJECT_BOARD]]
+│  ├── [[PROJECT_ITEM]]
+│  ├── [[VIEW]]
+│  ├── [[FIELD]]
+│  └── [[PROJECT_AUTOMATION]]
 │
-├─ [ACTIONS]
-│  ├── [GITHUB_ACTIONS]
-│  ├── [WORKFLOW]
-│  ├── [WORKFLOW_RUN]
-│  ├── [JOB]
-│  ├── [STEP]
-│  ├── [RUNNER]
-│  ├── [SELF_HOSTED_RUNNER]
-│  ├── [ARTIFACT]
-│  ├── [CACHE]
-│  └── [SCHEDULE]
+├─ [[ACTIONS]]
+│  ├── [[GITHUB_ACTIONS]]
+│  ├── [[WORKFLOW]]
+│  ├── [[WORKFLOW_RUN]]
+│  ├── [[JOB]]
+│  ├── [[STEP]]
+│  ├── [[RUNNER]]
+│  ├── [[SELF_HOSTED_RUNNER]]
+│  ├── [[ARTIFACT]]
+│  ├── [[CACHE]]
+│  └── [[SCHEDULE]]
 │
-├─ [CI_CD]
-│  ├── [CONTINUOUS_INTEGRATION]
-│  ├── [CONTINUOUS_DELIVERY]
-│  ├── [CONTINUOUS_DEPLOYMENT]
-│  ├── [BUILD]
-│  ├── [TEST]
-│  ├── [PACKAGE]
-│  ├── [DEPLOY]
-│  └── [ROLLBACK]
+├─ [[CI_CD]]
+│  ├── [[CONTINUOUS_INTEGRATION]]
+│  ├── [[CONTINUOUS_DELIVERY]]
+│  ├── [[CONTINUOUS_DEPLOYMENT]]
+│  ├── [[BUILD]]
+│  ├── [[TEST]]
+│  ├── [[PACKAGE]]
+│  ├── [[DEPLOY]]
+│  └── [[ROLLBACK]]
 │
-├─ [SECURITY]
-│  ├── [CODE_SCANNING]
-│  ├── [DEPENDABOT]
-│  ├── [SECRET_SCANNING]
-│  ├── [SECURITY_ADVISORY]
-│  ├── [DEPENDENCY]
-│  ├── [VULNERABILITY]
-│  ├── [SECURITY_POLICY]
-│  ├── [CODEOWNERS]
-│  └── [BRANCH_PROTECTION]
+├─ [[SECURITY]]
+│  ├── [[CODE_SCANNING]]
+│  ├── [[DEPENDABOT]]
+│  ├── [[SECRET_SCANNING]]
+│  ├── [[SECURITY_ADVISORY]]
+│  ├── [[DEPENDENCY]]
+│  ├── [[VULNERABILITY]]
+│  ├── [[SECURITY_POLICY]]
+│  ├── [[CODEOWNERS]]
+│  └── [[BRANCH_PROTECTION]]
 │
-├─ [ACCESS_CONTROL]
-│  ├── [AUTHENTICATION]
-│  ├── [AUTHORIZATION]
-│  ├── [ROLE]
-│  ├── [PERMISSION]
-│  ├── [TEAM]
-│  ├── [COLLABORATOR]
-│  ├── [DEPLOY_KEY]
-│  ├── [PERSONAL_ACCESS_TOKEN]
-│  ├── [SSH_KEY]
-│  ├── [GITHUB_APP]
-│  └── [OIDC]
+├─ [[ACCESS_CONTROL]]
+│  ├── [[AUTHENTICATION]]
+│  ├── [[AUTHORIZATION]]
+│  ├── [[ROLE]]
+│  ├── [[PERMISSION]]
+│  ├── [[TEAM]]
+│  ├── [[COLLABORATOR]]
+│  ├── [[DEPLOY_KEY]]
+│  ├── [[PERSONAL_ACCESS_TOKEN]]
+│  ├── [[SSH_KEY]]
+│  ├── [[GITHUB_APP]]
+│  └── [[OIDC]]
 │
-├─ [PACKAGES]
-│  ├── [GITHUB_PACKAGES]
-│  ├── [CONTAINER_IMAGE]
-│  ├── [NPM_PACKAGE]
-│  ├── [MAVEN_PACKAGE]
-│  ├── [RUBYGEMS]
-│  ├── [PYTHON_PACKAGE]
-│  └── [PACKAGE_VERSION]
+├─ [[PACKAGES]]
+│  ├── [[GITHUB_PACKAGES]]
+│  ├── [[CONTAINER_IMAGE]]
+│  ├── [[NPM_PACKAGE]]
+│  ├── [[MAVEN_PACKAGE]]
+│  ├── [[RUBYGEMS]]
+│  ├── [[PYTHON_PACKAGE]]
+│  └── [[PACKAGE_VERSION]]
 │
-├─ [RELEASES]
-│  ├── [RELEASE]
-│  ├── [VERSION]
-│  ├── [TAG]
-│  ├── [RELEASE_NOTES]
-│  ├── [BINARY]
-│  └── [RELEASE_ARTIFACT]
+├─ [[RELEASES]]
+│  ├── [[RELEASE]]
+│  ├── [[VERSION]]
+│  ├── [[TAG]]
+│  ├── [[RELEASE_NOTES]]
+│  ├── [[BINARY]]
+│  └── [[RELEASE_ARTIFACT]]
 │
-├─ [COLLABORATION]
-│  ├── [CODE_REVIEW]
-│  ├── [DISCUSSION]
-│  ├── [COMMENT]
-│  ├── [MENTION]
-│  ├── [NOTIFICATION]
-│  └── [SUBSCRIPTION]
+├─ [[COLLABORATION]]
+│  ├── [[CODE_REVIEW]]
+│  ├── [[DISCUSSION]]
+│  ├── [[COMMENT]]
+│  ├── [[MENTION]]
+│  ├── [[NOTIFICATION]]
+│  └── [[SUBSCRIPTION]]
 │
-├─ [WEBHOOKS]
-│  ├── [WEBHOOK]
-│  ├── [EVENT]
-│  ├── [PAYLOAD]
-│  ├── [DELIVERY]
-│  └── [EVENT_HANDLER]
+├─ [[WEBHOOKS]]
+│  ├── [[WEBHOOK]]
+│  ├── [[EVENT]]
+│  ├── [[PAYLOAD]]
+│  ├── [[DELIVERY]]
+│  └── [[EVENT_HANDLER]]
 │
-├─ [INTEGRATIONS]
-│  ├── [MCP]
-│  ├── [GITHUB_API]
-│  ├── [GITHUB_APP]
-│  ├── [WEBHOOK]
-│  ├── [OAUTH]
-│  ├── [CLAUDE_CODE]
+├─ [[INTEGRATIONS]]
+│  ├── [[MCP]]
+│  ├── [[GITHUB_API]]
+│  ├── [[GITHUB_APP]]
+│  ├── [[WEBHOOK]]
+│  ├── [[OAUTH]]
+│  ├── [[CLAUDE_CODE]]
 │  ├── [ANTIGRAVITY]]
 │  ├── [CODEX]]
 │  ├── [OMNIROUTE]]
-│  └── [CI_CD_SYSTEM]
+│  └── [[CI_CD_SYSTEM]]
 │
-├─ [REPOSITORY_INTELLIGENCE]
-│  ├── [REPOSITORY_DISCOVERY]
-│  ├── [REPOSITORY_CLASSIFICATION]
-│  ├── [REPOSITORY_INDEXING]
-│  ├── [CAPABILITY_EXTRACTION]
-│  ├── [DEPENDENCY_GRAPH]
-│  ├── [CODE_GRAPH]
-│  ├── [ENTITY_RESOLUTION]
-│  ├── [VENTURE_MAPPING]
-│  ├── [REPO_TO_REVENUE]
-│  ├── [GAP_DETECTION]
-│  └── [SYNERGY_DETECTION]
+├─ [[REPOSITORY_INTELLIGENCE]]
+│  ├── [[REPOSITORY_DISCOVERY]]
+│  ├── [[REPOSITORY_CLASSIFICATION]]
+│  ├── [[REPOSITORY_INDEXING]]
+│  ├── [[CAPABILITY_EXTRACTION]]
+│  ├── [[DEPENDENCY_GRAPH]]
+│  ├── [[CODE_GRAPH]]
+│  ├── [[ENTITY_RESOLUTION]]
+│  ├── [[VENTURE_MAPPING]]
+│  ├── [[REPO_TO_REVENUE]]
+│  ├── [[GAP_DETECTION]]
+│  └── [[SYNERGY_DETECTION]]
 │
-├─ [OBSERVABILITY]
-│  ├── [WORKFLOW_LOG]
-│  ├── [BUILD_LOG]
-│  ├── [DEPLOYMENT_LOG]
-│  ├── [AUDIT_LOG]
-│  ├── [SECURITY_EVENT]
-│  └── [TELEMETRY]
+├─ [[OBSERVABILITY]]
+│  ├── [[WORKFLOW_LOG]]
+│  ├── [[BUILD_LOG]]
+│  ├── [[DEPLOYMENT_LOG]]
+│  ├── [[AUDIT_LOG]]
+│  ├── [[SECURITY_EVENT]]
+│  └── [[TELEMETRY]]
 │
-└─ [REALITY]
-   ├── [REPOSITORY_EXISTS]
-   ├── [CODE_EXISTS]
-   ├── [BRANCH_EXISTS]
-   ├── [COMMIT_EXISTS]
-   ├── [WORKFLOW_EXISTS]
-   ├── [BUILD_VERIFIED]
-   ├── [TEST_VERIFIED]
-   ├── [DEPLOYMENT_VERIFIED]
-   ├── [DEPENDENCY_VERIFIED]
-   └── [REPOSITORY_STATE]
+└─ [[REALITY]]
+   ├── [[REPOSITORY_EXISTS]]
+   ├── [[CODE_EXISTS]]
+   ├── [[BRANCH_EXISTS]]
+   ├── [[COMMIT_EXISTS]]
+   ├── [[WORKFLOW_EXISTS]]
+   ├── [[BUILD_VERIFIED]]
+   ├── [[TEST_VERIFIED]]
+   ├── [[DEPLOYMENT_VERIFIED]]
+   ├── [[DEPENDENCY_VERIFIED]]
+   └── [[REPOSITORY_STATE]]
 ```
 
 ---
 
-## [REPOSITORY_AS_ENTITY] — Graph Model
+## [[REPOSITORY_AS_ENTITY]] — Graph Model
 
 Every repository is a first-class entity in the Company Brain graph:
 
 ```
-[REPOSITORY]
+[[REPOSITORY]]
 │
-├── [IDENTITY]
-│   ├── [REPOSITORY_ID]
-│   ├── [NAME]
-│   ├── [GITHUB_URL]
-│   └── [SLUG]
+├── [[IDENTITY]]
+│   ├── [[REPOSITORY_ID]]
+│   ├── [[NAME]]
+│   ├── [[GITHUB_URL]]
+│   └── [[SLUG]]
 │
-├── [OWNERSHIP]
-│   ├── [OWNER]
-│   ├── [ORGANIZATION]
-│   ├── [MAINTAINER]
-│   └── [CONTRIBUTORS]
+├── [[OWNERSHIP]]
+│   ├── [[OWNER]]
+│   ├── [[ORGANIZATION]]
+│   ├── [[MAINTAINER]]
+│   └── [[CONTRIBUTORS]]
 │
-├── [TECHNICAL]
-│   ├── [LANGUAGES]
-│   ├── [FRAMEWORKS]
-│   ├── [DEPENDENCIES]
-│   ├── [CAPABILITIES]
-│   └── [INFRASTRUCTURE]
+├── [[TECHNICAL]]
+│   ├── [[LANGUAGES]]
+│   ├── [[FRAMEWORKS]]
+│   ├── [[DEPENDENCIES]]
+│   ├── [[CAPABILITIES]]
+│   └── [[INFRASTRUCTURE]]
 │
-├── [BUSINESS]
-│   ├── [VENTURE]
-│   ├── [SECTOR]
-│   ├── [OPCO]
-│   ├── [PRODUCT]
-│   └── [REVENUE_MODEL]
+├── [[BUSINESS]]
+│   ├── [[VENTURE]]
+│   ├── [[SECTOR]]
+│   ├── [[OPCO]]
+│   ├── [[PRODUCT]]
+│   └── [[REVENUE_MODEL]]
 │
-├── [CODE]
-│   ├── [SOURCE_CODE]
-│   ├── [TESTS]
-│   ├── [DOCUMENTATION]
-│   └── [INFRASTRUCTURE_CODE]
+├── [[CODE]]
+│   ├── [[SOURCE_CODE]]
+│   ├── [[TESTS]]
+│   ├── [[DOCUMENTATION]]
+│   └── [[INFRASTRUCTURE_CODE]]
 │
-├── [EXECUTION]
-│   ├── [ISSUES]
-│   ├── [PULL_REQUESTS]
-│   ├── [WORKFLOWS]
-│   ├── [RELEASES]
-│   └── [DEPLOYMENTS]
+├── [[EXECUTION]]
+│   ├── [[ISSUES]]
+│   ├── [[PULL_REQUESTS]]
+│   ├── [[WORKFLOWS]]
+│   ├── [[RELEASES]]
+│   └── [[DEPLOYMENTS]]
 │
-└── [STATE]
-    ├── [REPOSITORY_STATE]
-    ├── [HEALTH]
-    ├── [ACTIVITY]
-    └── [LAST_VERIFIED]
+└── [[STATE]]
+    ├── [[REPOSITORY_STATE]]
+    ├── [[HEALTH]]
+    ├── [[ACTIVITY]]
+    └── [[LAST_VERIFIED]]
 ```
 
 ---
 
-## [REPOSITORY_TO_REVENUE_GRAPH] — The Value Chain
+## [[REPOSITORY_TO_REVENUE_GRAPH]] — The Value Chain
 
 ```
 [[REPOSITORY]]
@@ -307,60 +307,60 @@ This connects code directly to business value.
 
 ---
 
-## [PULL_REQUEST_EXECUTION_LOOP] — Complete Workflow
+## [[PULL_REQUEST_EXECUTION_LOOP]] — Complete Workflow
 
 ```
-[REQUIREMENT]
+[[REQUIREMENT]]
       ↓
-[ISSUE]
+[[ISSUE]]
       ↓
-[TASK]
+[[TASK]]
       ↓
-[BRANCH]
+[[BRANCH]]
       ↓
-[CODE_CHANGE]
+[[CODE_CHANGE]]
       ↓
-[COMMIT]
+[[COMMIT]]
       ↓
-[PULL_REQUEST]
+[[PULL_REQUEST]]
       ↓
-[CI_AUTOMATION]
-      ├── [BUILD]
-      ├── [TEST]
-      └── [SECURITY_SCAN]
+[[CI_AUTOMATION]]
+      ├── [[BUILD]]
+      ├── [[TEST]]
+      └── [[SECURITY_SCAN]]
       ↓
-[CODE_REVIEW]
-      ├── [HUMAN_REVIEW]
-      └── [APPROVAL]
+[[CODE_REVIEW]]
+      ├── [[HUMAN_REVIEW]]
+      └── [[APPROVAL]]
       ↓
-[MERGE]
+[[MERGE]]
       ↓
-[DEPLOY]
+[[DEPLOY]]
       ↓
-[VERIFICATION]
+[[VERIFICATION]]
       ↓
-[EVIDENCE]
+[[EVIDENCE]]
       ↓
-[REALITY]
+[[REALITY]]
 ```
 
 ---
 
-## [GITHUB_ACTIONS_ONTOLOGY] — Automation & Evidence
+## [[GITHUB_ACTIONS_ONTOLOGY]] — Automation & Evidence
 
 ```
 [[GITHUB_ACTIONS]]
        ↓
 [[WORKFLOW]]
-       ├── [TRIGGER]
-       │   ├── [PUSH]
-       │   ├── [PULL_REQUEST]
-       │   ├── [ISSUE]
-       │   ├── [RELEASE]
-       │   ├── [SCHEDULE]
-       │   ├── [WEBHOOK]
-       │   ├── [MANUAL_TRIGGER]
-       │   └── [WORKFLOW_DISPATCH]
+       ├── [[TRIGGER]]
+       │   ├── [[PUSH]]
+       │   ├── [[PULL_REQUEST]]
+       │   ├── [[ISSUE]]
+       │   ├── [[RELEASE]]
+       │   ├── [[SCHEDULE]]
+       │   ├── [[WEBHOOK]]
+       │   ├── [[MANUAL_TRIGGER]]
+       │   └── [[WORKFLOW_DISPATCH]]
        ↓
 [[JOB]]
        ↓
@@ -371,12 +371,12 @@ This connects code directly to business value.
 [[OUTPUT]]
        ↓
 [[WORKFLOW_RUN]]
-       ├── [QUEUED]
-       ├── [IN_PROGRESS]
-       ├── [SUCCESS]
-       ├── [FAILURE]
-       ├── [CANCELLED]
-       └── [SKIPPED]
+       ├── [[QUEUED]]
+       ├── [[IN_PROGRESS]]
+       ├── [[SUCCESS]]
+       ├── [[FAILURE]]
+       ├── [[CANCELLED]]
+       └── [[SKIPPED]]
 ```
 
 **Critical:** Workflow runs are EVIDENCE, not claims.
@@ -397,59 +397,59 @@ This connects code directly to business value.
 
 ---
 
-## [REPOSITORY_STATE_MACHINE] — Canonical States
+## [[REPOSITORY_STATE_MACHINE]] — Canonical States
 
 ```
-[REPOSITORY_STATE]
+[[REPOSITORY_STATE]]
 
-├── [UNKNOWN]           — Not yet discovered
-├── [DISCOVERED]        — Found in GitHub
-├── [INDEXED]           — Metadata extracted
-├── [CLASSIFIED]        — Categorized
-├── [MAPPED]            — Linked to ventures/capabilities
-├── [ACTIVE]            — In development
-├── [DEPLOYED]          — Live in production
-├── [MAINTAINED]        — Regular updates
-├── [STALE]             — No recent activity
-├── [ABANDONED]         — Unmaintained
-├── [ARCHIVED]          — Explicitly archived
-├── [DEPRECATED]        — Marked for removal
-└── [DELETED]           — Removed from GitHub
+├── [[UNKNOWN]]           — Not yet discovered
+├── [[DISCOVERED]]        — Found in GitHub
+├── [[INDEXED]]           — Metadata extracted
+├── [[CLASSIFIED]]        — Categorized
+├── [[MAPPED]]            — Linked to ventures/capabilities
+├── [[ACTIVE]]            — In development
+├── [[DEPLOYED]]          — Live in production
+├── [[MAINTAINED]]        — Regular updates
+├── [[STALE]]             — No recent activity
+├── [[ABANDONED]]         — Unmaintained
+├── [[ARCHIVED]]          — Explicitly archived
+├── [[DEPRECATED]]        — Marked for removal
+└── [[DELETED]]           — Removed from GitHub
 ```
 
 ---
 
-## [REPOSITORY_HEALTH] — Facts Over Scores
+## [[REPOSITORY_HEALTH]] — Facts Over Scores
 
 Instead of a single "health score," track observable facts:
 
 ```
-[REPOSITORY_HEALTH]
+[[REPOSITORY_HEALTH]]
 
-├── [LAST_COMMIT]
+├── [[LAST_COMMIT]]
 │   └── timestamp
-├── [OPEN_ISSUES]
+├── [[OPEN_ISSUES]]
 │   └── count
-├── [OPEN_PRS]
+├── [[OPEN_PRS]]
 │   └── count
-├── [FAILED_BUILDS]
+├── [[FAILED_BUILDS]]
 │   └── count
-├── [PASSING_TESTS]
+├── [[PASSING_TESTS]]
 │   └── percentage
-├── [DEPENDENCY_STATUS]
+├── [[DEPENDENCY_STATUS]]
 │   ├── outdated
 │   └── vulnerable
-├── [SECURITY_ALERTS]
+├── [[SECURITY_ALERTS]]
 │   └── count
-├── [DOCUMENTATION_STATUS]
+├── [[DOCUMENTATION_STATUS]]
 │   └── [COMPLETE | PARTIAL | MISSING]
-├── [DEPLOYMENT_STATUS]
+├── [[DEPLOYMENT_STATUS]]
 │   └── [DEPLOYED | UNDEPLOYED]
-├── [MAINTAINER_STATUS]
+├── [[MAINTAINER_STATUS]]
 │   └── [ACTIVE | INACTIVE]
-├── [ACTIVITY]
+├── [[ACTIVITY]]
 │   └── [HIGH | NORMAL | LOW | NONE]
-└── [LAST_VERIFIED]
+└── [[LAST_VERIFIED]]
     └── timestamp
 ```
 
@@ -466,7 +466,7 @@ DEPLOYED = (DEPLOYMENT_STATUS = DEPLOYED) AND (HTTP_HEALTH_CHECK = 200)
 
 ---
 
-## [GITHUB_SECURITY_ONTOLOGY] — Integration with Secrets & Auth
+## [[GITHUB_SECURITY_ONTOLOGY]] — Integration with Secrets & Auth
 
 ```
 [[GITHUB_SECURITY]]
@@ -509,7 +509,7 @@ Connects to [[SECRETS_AND_AUTH]]:
 
 ---
 
-## [AGENT_ACCESS_TO_GITHUB] — Capability Model
+## [[AGENT_ACCESS_TO_GITHUB]] — Capability Model
 
 Agents can consume GitHub as a capability substrate:
 
@@ -560,7 +560,7 @@ Complete workflow:
 
 ---
 
-## [REPOSITORY_INTELLIGENCE_LOOP] — Discovery to Decision
+## [[REPOSITORY_INTELLIGENCE_LOOP]] — Discovery to Decision
 
 ```
 [[GITHUB]]
@@ -623,7 +623,7 @@ Complete workflow:
 
 ---
 
-## [GITHUB_EVIDENCE_TYPES] — What Counts as Proof
+## [[GITHUB_EVIDENCE_TYPES]] — What Counts as Proof
 
 ```
 [[GITHUB_EVIDENCE]]
@@ -652,7 +652,7 @@ Complete workflow:
 
 ---
 
-## [REALITY_VERIFICATION_LOOP] — No Fake Completion
+## [[REALITY_VERIFICATION_LOOP]] — No Fake Completion
 
 ```
 CLAIM
@@ -682,40 +682,40 @@ ACTION: Alert and investigate
 
 ---
 
-## [GITHUB_REALITY] — Source of Truth
+## [[GITHUB_REALITY]] — Source of Truth
 
 ```
-[GITHUB_REALITY]
+[[GITHUB_REALITY]]
 
-├── [REPOSITORY_EXISTS]
+├── [[REPOSITORY_EXISTS]]
 │   ├── Name, URL, visibility verified
 │   └── Last checked: <timestamp>
-├── [CODE_EXISTS]
+├── [[CODE_EXISTS]]
 │   ├── Latest commit hash verified
 │   └── Last checked: <timestamp>
-├── [BRANCH_EXISTS]
+├── [[BRANCH_EXISTS]]
 │   ├── Branch name, head commit verified
 │   └── Last checked: <timestamp>
-├── [WORKFLOW_EXISTS]
+├── [[WORKFLOW_EXISTS]]
 │   ├── Workflow file path verified
 │   └── Last checked: <timestamp>
-├── [WORKFLOW_RUN_VERIFIED]
+├── [[WORKFLOW_RUN_VERIFIED]]
 │   ├── Most recent run checked
 │   ├── Status verified (success/failure)
 │   └── Last checked: <timestamp>
-├── [BUILD_VERIFIED]
+├── [[BUILD_VERIFIED]]
 │   ├── Artifacts present
 │   ├── Build logs available
 │   └── Last checked: <timestamp>
-├── [TESTS_VERIFIED]
+├── [[TESTS_VERIFIED]]
 │   ├── Test count
 │   ├── Pass rate
 │   └── Last checked: <timestamp>
-├── [DEPLOYMENT_VERIFIED]
+├── [[DEPLOYMENT_VERIFIED]]
 │   ├── Deployment environment
 │   ├── Version deployed
 │   └── Last checked: <timestamp>
-└── [SECURITY_VERIFIED]
+└── [[SECURITY_VERIFIED]]
     ├── Secret scan status
     ├── Vulnerabilities count
     └── Last checked: <timestamp>
@@ -723,7 +723,7 @@ ACTION: Alert and investigate
 
 ---
 
-## [GITHUB_CLAUDE_INTEGRATION] — Unified System
+## [[GITHUB_CLAUDE_INTEGRATION]] — Unified System
 
 ```
 [[CLAUDE_CODE]]
@@ -761,7 +761,7 @@ ACTION: Alert and investigate
 
 ---
 
-## [COMPANY_BRAIN_GITHUB_INTEGRATION] — Master Connection
+## [[COMPANY_BRAIN_GITHUB_INTEGRATION]] — Master Connection
 
 ```
                          [[WHOAMI]]
@@ -835,7 +835,7 @@ ACTION: Alert and investigate
 
 ---
 
-## [CRITICAL_ARCHITECTURAL_SEPARATION]
+## [[CRITICAL_ARCHITECTURAL_SEPARATION]]
 
 ```
 [[OBSIDIAN]]

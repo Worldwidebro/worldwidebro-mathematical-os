@@ -32,9 +32,9 @@ relates_to: CLAUDE_MASTER_ONTOLOGY
          KNOWLEDGE      EXECUTION     ORCHESTRATION
          ─────────       ─────────      ──────────
          
-        [Capture]      [Transform]     [Coordinate]
-         [Store]        [Execute]       [Route]
-         [Retrieve]     [Deliver]       [Monitor]
+        [[Capture]]      [[Transform]]     [[Coordinate]]
+         [[Store]]        [[Execute]]       [[Route]]
+         [[Retrieve]]     [[Deliver]]       [[Monitor]]
              │              │              │
         ╔════╩════╗      ╔═══╩═══╗     ╔══╩═══╗
         │          │      │       │     │      │

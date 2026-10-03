@@ -14,7 +14,7 @@ This is the bridge between reality (what actually exists and changes) and the ma
 
 ---
 
-## [OBSIDIAN_ROLE]
+## [[OBSIDIAN_ROLE]]
 
 Obsidian serves four critical functions:
 
@@ -24,73 +24,73 @@ Obsidian serves four critical functions:
 4. **Feedback Loop** — Where outcomes are recorded and learning is captured
 
 ```
-[REALITY]
+[[REALITY]]
     ↓
-[HUMAN_OBSERVATION]
+[[HUMAN_OBSERVATION]]
     ↓
-[MARKDOWN_CAPTURE]
+[[MARKDOWN_CAPTURE]]
     ↓
-[BRACKETED_SEMANTICS]
+[[BRACKETED_SEMANTICS]]
     ↓
-[WIKI_LINKS]
+[[WIKI_LINKS]]
     ↓
-[KNOWLEDGE_GRAPH]
+[[KNOWLEDGE_GRAPH]]
     ↓
-[MACHINE_REASONING]
+[[MACHINE_REASONING]]
     ↓
-[AGENT_EXECUTION]
+[[AGENT_EXECUTION]]
     ↓
-[NEW_REALITY]
+[[NEW_REALITY]]
     ↓
-[OBSIDIAN_UPDATE] ↺
+[[OBSIDIAN_UPDATE]] ↺
 ```
 
 ---
 
-## [OBSIDIAN_ARCHITECTURE] — Three Semantic Layers
+## [[OBSIDIAN_ARCHITECTURE]] — Three Semantic Layers
 
 ### Layer 1: Human Layer
 ```
-[NOTES]         — Freeform thoughts
-[DOCUMENTS]     — Structured writing
-[RESEARCH]      — Exploratory investigation
-[MEETINGS]      — Sync notes + decisions
-[IDEAS]         — Brainstorms + concepts
-[PLANS]         — Strategies + roadmaps
-[DECISIONS]     — Choices + rationale
-[WRITING]       — Formal communication
+[[NOTES]]         — Freeform thoughts
+[[DOCUMENTS]]     — Structured writing
+[[RESEARCH]]      — Exploratory investigation
+[[MEETINGS]]      — Sync notes + decisions
+[[IDEAS]]         — Brainstorms + concepts
+[[PLANS]]         — Strategies + roadmaps
+[[DECISIONS]]     — Choices + rationale
+[[WRITING]]       — Formal communication
 ```
 
 ### Layer 2: Semantic Layer
 ```
-[FRONTMATTER]   — Metadata (type, status, owner, date)
-[BRACKETS]      — Ontology terms ([AGENT], [TASK], [BLOCKED], [VERIFIED])
-[WIKI_LINKS]    — Entity references ([[OMNIROUTE]], [[VENTURE_001]])
-[TAGS]          — Searchable labels (#urgent, #architecture)
-[PROPERTIES]    — Structured fields (status: complete, owner: X)
-[ENTITY_IDS]    — Machine identifiers (VEN-000147, CAP-000082)
-[RELATIONSHIPS] — Connections ([DEPENDS_ON], [EXECUTES], [PRODUCES])
-[STATES]        — Current condition ([IN_PROGRESS], [BLOCKED], [VERIFIED])
-[EVENTS]        — What happened (created, updated, deployed)
+[[FRONTMATTER]]   — Metadata (type, status, owner, date)
+[[BRACKETS]]      — Ontology terms ([[AGENT]], [[TASK]], [[BLOCKED]], [[VERIFIED]])
+[[WIKI_LINKS]]    — Entity references ([[OMNIROUTE]], [[VENTURE_001]])
+[[TAGS]]          — Searchable labels (#urgent, #architecture)
+[[PROPERTIES]]    — Structured fields (status: complete, owner: X)
+[[ENTITY_IDS]]    — Machine identifiers (VEN-000147, CAP-000082)
+[[RELATIONSHIPS]] — Connections ([[DEPENDS_ON]], [[EXECUTES]], [[PRODUCES]])
+[[STATES]]        — Current condition ([[IN_PROGRESS]], [[BLOCKED]], [[VERIFIED]])
+[[EVENTS]]        — What happened (created, updated, deployed)
 ```
 
 ### Layer 3: Machine Layer
 ```
-[INDEX]                 — Full-text search + entity index
-[GRAPH]                 — Wiki link graph visualization
-[REGISTRIES]            — Synchronized to git registries
-[EMBEDDINGS]            — Vector representations for semantic search
-[ENTITY_RESOLUTION]     — Duplicate detection + consolidation
-[LINEAGE]               — Who references whom
-[PROVENANCE]            — Where facts came from
-[QUERIES]               — Datalog-style questions
-[VALIDATION]            — Drift + consistency checks
-[AUTOMATIONS]           — Triggers that run agents
+[[INDEX]]                 — Full-text search + entity index
+[[GRAPH]]                 — Wiki link graph visualization
+[[REGISTRIES]]            — Synchronized to git registries
+[[EMBEDDINGS]]            — Vector representations for semantic search
+[[ENTITY_RESOLUTION]]     — Duplicate detection + consolidation
+[[LINEAGE]]               — Who references whom
+[[PROVENANCE]]            — Where facts came from
+[[QUERIES]]               — Datalog-style questions
+[[VALIDATION]]            — Drift + consistency checks
+[[AUTOMATIONS]]           — Triggers that run agents
 ```
 
 ---
 
-## [WIKI_LINKS] vs [BRACKETS]
+## [[WIKI_LINKS]] vs [[BRACKETS]]
 
 **Critical distinction: Use them for different jobs.**
 
@@ -110,23 +110,23 @@ Use for any entity that has a dedicated markdown file and represents something t
 [[EVIDENCE_001]]            — Proof/test result
 ```
 
-### `[BRACKETS]` — Semantic Concepts / Ontology / States / Relationships
+### `[[BRACKETS]]` — Semantic Concepts / Ontology / States / Relationships
 
 Use for abstract concepts, ontology terms, states, and relationship types:
 
 ```
-[AGENT]             — Type classification
-[TASK]              — Work unit
-[BLOCKED]           — Current state
-[VERIFIED]          — Verification status
-[DEPENDS_ON]        — Relationship type
-[EXECUTES]          — Execution relationship
-[PRODUCES]          — Output relationship
-[MONETIZES]         — Business relationship
-[HOSTED_ON]         — Infrastructure relationship
-[READS]             — Data flow
-[WRITES]            — Data production
-[TRANSFORMS]        — Transformation operation
+[[AGENT]]             — Type classification
+[[TASK]]              — Work unit
+[[BLOCKED]]           — Current state
+[[VERIFIED]]          — Verification status
+[[DEPENDS_ON]]        — Relationship type
+[[EXECUTES]]          — Execution relationship
+[[PRODUCES]]          — Output relationship
+[[MONETIZES]]         — Business relationship
+[[HOSTED_ON]]         — Infrastructure relationship
+[[READS]]             — Data flow
+[[WRITES]]            — Data production
+[[TRANSFORMS]]        — Transformation operation
 ```
 
 ### Combined: Complete Entity Description
@@ -134,36 +134,36 @@ Use for abstract concepts, ontology terms, states, and relationship types:
 ```markdown
 # [[REPOSITORY_INTELLIGENCE]]
 
-[AGENT]
-[CAPABILITY]
-[EXECUTION_SYSTEM]
+[[AGENT]]
+[[CAPABILITY]]
+[[EXECUTION_SYSTEM]]
 
 ## Identity
 - Type: [[CAPABILITY]]
 - Purpose: Automated analysis of external repositories
 - Owner: [[DIVINEJOHNS]]
-- Status: [PRODUCTION]
+- Status: [[PRODUCTION]]
 
 ## Execution
-- [EXECUTES] [[REPOSITORY_SCAN_WORKFLOW]]
-- [READS] [[REPOSITORY_REGISTRY]]
-- [WRITES] [[KNOWLEDGE_GRAPH]]
-- [PRODUCES] [[CAPABILITY_SUMMARY]]
+- [[EXECUTES]] [[REPOSITORY_SCAN_WORKFLOW]]
+- [[READS]] [[REPOSITORY_REGISTRY]]
+- [[WRITES]] [[KNOWLEDGE_GRAPH]]
+- [[PRODUCES]] [[CAPABILITY_SUMMARY]]
 
 ## Impact
-- [MONETIZES] [[OPPORTUNITY_DETECTION]]
-- [ENABLES] [[VENTURE_READINESS_ASSESSMENT]]
-- [HOSTED_ON] [[MAC_STUDIO]]
+- [[MONETIZES]] [[OPPORTUNITY_DETECTION]]
+- [[ENABLES]] [[VENTURE_READINESS_ASSESSMENT]]
+- [[HOSTED_ON]] [[MAC_STUDIO]]
 
 ## Verification
-- [TESTED] against 147 repositories
-- [VERIFIED] by [[DIVINEJOHNS]] (Sep 29, 2026)
-- Last run: [EXECUTED] [[DATE_TIMESTAMP]]
+- [[TESTED]] against 147 repositories
+- [[VERIFIED]] by [[DIVINEJOHNS]] (Sep 29, 2026)
+- Last run: [[EXECUTED]] [[DATE_TIMESTAMP]]
 ```
 
 ---
 
-## [CANONICAL_VAULT_STRUCTURE] — 14 Knowledge Domains
+## [[CANONICAL_VAULT_STRUCTURE]] — 14 Knowledge Domains
 
 ```
 /vault
@@ -310,167 +310,167 @@ Use for abstract concepts, ontology terms, states, and relationship types:
 
 ---
 
-## [MASTER_SEMANTIC_LOOP]
+## [[MASTER_SEMANTIC_LOOP]]
 
 This is the loop that makes Obsidian an **active part** of the system, not a downstream artifact:
 
 ```
-[REALITY]           ← What actually exists/changes
+[[REALITY]]           ← What actually exists/changes
     ↓
-[OBSERVATION]       ← Human or system observes it
+[[OBSERVATION]]       ← Human or system observes it
     ↓
-[CAPTURE]           ← Record in markdown note
+[[CAPTURE]]           ← Record in markdown note
     ↓
-[FRONTMATTER]       ← Add metadata (type, owner, date, status)
+[[FRONTMATTER]]       ← Add metadata (type, owner, date, status)
     ↓
-[BRACKET_EXTRACTION]  ← Extract [ONTOLOGY_TERMS]
+[[BRACKET_EXTRACTION]]  ← Extract [[ONTOLOGY_TERMS]]
     ↓
-[WIKI_LINK_RESOLUTION]  ← Resolve [[ENTITY_REFERENCES]]
+[[WIKI_LINK_RESOLUTION]]  ← Resolve [[ENTITY_REFERENCES]]
     ↓
-[ENTITY_RESOLUTION]   ← Deduplicate, consolidate
+[[ENTITY_RESOLUTION]]   ← Deduplicate, consolidate
     ↓
-[RELATIONSHIP_EXTRACTION]  ← Extract [DEPENDS_ON], [PRODUCES], etc.
+[[RELATIONSHIP_EXTRACTION]]  ← Extract [[DEPENDS_ON]], [[PRODUCES]], etc.
     ↓
-[GRAPH_UPDATE]      ← Write to Neo4j
+[[GRAPH_UPDATE]]      ← Write to Neo4j
     ↓
-[KNOWLEDGE_UPDATE]  ← Indexed, queryable
+[[KNOWLEDGE_UPDATE]]  ← Indexed, queryable
     ↓
-[WHERE_WE_ARE_UPDATE] ← Refresh current state
+[[WHERE_WE_ARE_UPDATE]] ← Refresh current state
     ↓
-[IMPACT_ANALYSIS]   ← What changed? What's affected?
+[[IMPACT_ANALYSIS]]   ← What changed? What's affected?
     ↓
-[TASK_GENERATION]   ← Create work items for changes
+[[TASK_GENERATION]]   ← Create work items for changes
     ↓
-[AGENT_DELEGATION]  ← Route to appropriate agents
+[[AGENT_DELEGATION]]  ← Route to appropriate agents
     ↓
-[EXECUTION]         ← Agents act
+[[EXECUTION]]         ← Agents act
     ↓
-[VERIFICATION]      ← Test, check, validate
+[[VERIFICATION]]      ← Test, check, validate
     ↓
-[EVIDENCE]          ← Gather proof
+[[EVIDENCE]]          ← Gather proof
     ↓
-[OBSIDIAN_UPDATE]   ← Record result back in vault
+[[OBSIDIAN_UPDATE]]   ← Record result back in vault
     ↺
 ```
 
 ---
 
-## [ENTITY_INTERROGATION] — Every Entity Must Answer
+## [[ENTITY_INTERROGATION]] — Every Entity Must Answer
 
 Every meaningful Obsidian object (`[[ENTITY]]`) must be interrogatable:
 
 ```
-[WHAT_IS_IT]
+[[WHAT_IS_IT]]
   → Type, classification, purpose
 
-[WHY_DOES_IT_EXIST]
+[[WHY_DOES_IT_EXIST]]
   → Strategic context, motivation
 
-[WHO_OWNS_IT]
+[[WHO_OWNS_IT]]
   → Accountable party, decision authority
 
-[WHO_USES_IT]
+[[WHO_USES_IT]]
   → Consumers, dependents, downstream systems
 
-[WHERE_IS_IT]
+[[WHERE_IS_IT]]
   → Physical location, system location, repository
 
-[WHAT_DOES_IT_DEPEND_ON]
+[[WHAT_DOES_IT_DEPEND_ON]]
   → Upstream systems, prerequisites, blockers
 
-[WHAT_DEPENDS_ON_IT]
+[[WHAT_DEPENDS_ON_IT]]
   → Downstream impacts, who needs this
 
-[WHAT_DATA_DOES_IT_USE]
+[[WHAT_DATA_DOES_IT_USE]]
   → Inputs, data sources, feeds
 
-[WHAT_DOES_IT_PRODUCE]
+[[WHAT_DOES_IT_PRODUCE]]
   → Outputs, results, side effects
 
-[WHAT_DOES_IT_ENABLE]
+[[WHAT_DOES_IT_ENABLE]]
   → Capabilities it unlocks
 
-[WHAT_REPOSITORY_IMPLEMENTS_IT]
+[[WHAT_REPOSITORY_IMPLEMENTS_IT]]
   → GitHub repo, file path, codebase
 
-[WHAT_AGENT_OPERATES_IT]
+[[WHAT_AGENT_OPERATES_IT]]
   → Which AI agent manages/executes
 
-[WHAT_TASKS_USE_IT]
+[[WHAT_TASKS_USE_IT]]
   → Which work items depend on this
 
-[WHAT_DECISIONS_USE_IT]
+[[WHAT_DECISIONS_USE_IT]]
   → What choices rely on this
 
-[WHAT_OUTCOMES_RESULT]
+[[WHAT_OUTCOMES_RESULT]]
   → Business impact, revenue, learning
 
-[HOW_IS_IT_VERIFIED]
+[[HOW_IS_IT_VERIFIED]]
   → Test, observation, approval method
 
-[WHAT_EVIDENCE_EXISTS]
+[[WHAT_EVIDENCE_EXISTS]]
   → Proof, screenshots, logs, metrics
 
-[WHAT_IS_THE_CURRENT_STATE]
+[[WHAT_IS_THE_CURRENT_STATE]]
   → Live status, health, last updated
 
-[WHEN_WAS_IT_LAST_UPDATED]
+[[WHEN_WAS_IT_LAST_UPDATED]]
   → Timestamp, change frequency
 
-[WHAT_CHANGED]
+[[WHAT_CHANGED]]
   → Recent modifications, delta
 
-[WHAT_IS_NOW_REQUIRED]
+[[WHAT_IS_NOW_REQUIRED]]
   → Next action, dependency, blocker
 ```
 
 ---
 
-## [COMPLETE_ENTITY_TRAVERSAL]
+## [[COMPLETE_ENTITY_TRAVERSAL]]
 
 Every [[ENTITY]] should be reachable via this path:
 
 ```
 [[ENTITY]]
-    ↓ [WHAT_IS_IT]
+    ↓ [[WHAT_IS_IT]]
 [[PURPOSE]]
-    ↓ [WHY_DOES_IT_EXIST]
+    ↓ [[WHY_DOES_IT_EXIST]]
 [[OBJECTIVE]]
-    ↓ [WHAT_IS_REQUIRED]
+    ↓ [[WHAT_IS_REQUIRED]]
 [[REQUIREMENT]]
-    ↓ [WHAT_ENABLES_THIS]
+    ↓ [[WHAT_ENABLES_THIS]]
 [[CAPABILITY]]
-    ↓ [WHO_PROVIDES_THIS]
+    ↓ [[WHO_PROVIDES_THIS]]
 [[AGENT]]
-    ↓ [HOW_IS_THIS_BUILT]
+    ↓ [[HOW_IS_THIS_BUILT]]
 [[REPOSITORY]]
-    ↓ [WHERE_IS_THIS_HOSTED]
+    ↓ [[WHERE_IS_THIS_HOSTED]]
 [[INFRASTRUCTURE]]
-    ↓ [WHAT_DATA_FLOWS]
+    ↓ [[WHAT_DATA_FLOWS]]
 [[DATA_FLOW]]
-    ↓ [WHAT_DOES_THIS_PRODUCE]
+    ↓ [[WHAT_DOES_THIS_PRODUCE]]
 [[KNOWLEDGE]]
-    ↓ [HOW_IS_THIS_USED]
+    ↓ [[HOW_IS_THIS_USED]]
 [[DECISION]]
-    ↓ [WHAT_ACTION_RESULTS]
+    ↓ [[WHAT_ACTION_RESULTS]]
 [[TASK]]
-    ↓ [WHO_EXECUTES_THIS]
+    ↓ [[WHO_EXECUTES_THIS]]
 [[ACTION]]
-    ↓ [WHAT_IS_THE_RESULT]
+    ↓ [[WHAT_IS_THE_RESULT]]
 [[OUTCOME]]
-    ↓ [WHAT_VALUE_IS_CREATED]
+    ↓ [[WHAT_VALUE_IS_CREATED]]
 [[REVENUE]]
-    ↓ [HOW_IS_THIS_PROVEN]
+    ↓ [[HOW_IS_THIS_PROVEN]]
 [[EVIDENCE]]
-    ↓ [WHERE_IS_THIS_RECORDED]
+    ↓ [[WHERE_IS_THIS_RECORDED]]
 [[WHERE_WE_ARE]]
-    ↓ [WHAT_IS_THE_STATE_NOW]
+    ↓ [[WHAT_IS_THE_STATE_NOW]]
 [[ENTITY]]
 ```
 
 ---
 
-## [OBSIDIAN_FRONTMATTER_STANDARD]
+## [[OBSIDIAN_FRONTMATTER_STANDARD]]
 
 Every note should have canonical metadata:
 
@@ -501,7 +501,7 @@ evidence:
   - [[TEST_1]]
   - [[OBSERVATION_1]]
 
-state: [ACTIVE] | [BLOCKED] | [VERIFIED] | [FAILED]
+state: [[ACTIVE]] | [[BLOCKED]] | [[VERIFIED]] | [[FAILED]]
 
 tags:
   - architecture
@@ -513,70 +513,70 @@ tags:
 
 ---
 
-## [BRACKETED_ONTOLOGY] — Standard Terms
+## [[BRACKETED_ONTOLOGY]] — Standard Terms
 
 Every bracket term should be defined in `[[BRACKETED_TERMS]]`:
 
 ```
-[AGENT]             — Autonomous entity capable of decisions and actions
-[TASK]              — Discrete unit of work
-[BLOCKED]           — Cannot proceed; external blocker
-[VERIFIED]          — Evidence confirms state/completion
-[EXECUTED]          — Action completed
-[DEPENDS_ON]        — Requires another entity
-[EXECUTES]          — Runs, operates, implements
-[PRODUCES]          — Creates output/result
-[READS]             — Consumes data from
-[WRITES]            — Produces data to
-[MONETIZES]         — Converts to revenue
-[HOSTED_ON]         — Physical/logical location
-[ENABLES]           — Makes possible
-[TRIGGERS]          — Initiates
-[TRANSFORMS]        — Changes form/content
-[VERIFIES]          — Confirms truth of
-[ESCALATES_TO]      — Moves to higher authority
-[ROTATES_TO]        — Reassigns to
-[HANDOFFS_TO]       — Transfers to
-[REQUIRES_APPROVAL] — Needs authorization
-[FAILED]            — Did not succeed
-[PENDING]           — Waiting for something
-[STALE]             → Potentially out of date
+[[AGENT]]             — Autonomous entity capable of decisions and actions
+[[TASK]]              — Discrete unit of work
+[[BLOCKED]]           — Cannot proceed; external blocker
+[[VERIFIED]]          — Evidence confirms state/completion
+[[EXECUTED]]          — Action completed
+[[DEPENDS_ON]]        — Requires another entity
+[[EXECUTES]]          — Runs, operates, implements
+[[PRODUCES]]          — Creates output/result
+[[READS]]             — Consumes data from
+[[WRITES]]            — Produces data to
+[[MONETIZES]]         — Converts to revenue
+[[HOSTED_ON]]         — Physical/logical location
+[[ENABLES]]           — Makes possible
+[[TRIGGERS]]          — Initiates
+[[TRANSFORMS]]        — Changes form/content
+[[VERIFIES]]          — Confirms truth of
+[[ESCALATES_TO]]      — Moves to higher authority
+[[ROTATES_TO]]        — Reassigns to
+[[HANDOFFS_TO]]       — Transfers to
+[[REQUIRES_APPROVAL]] — Needs authorization
+[[FAILED]]            — Did not succeed
+[[PENDING]]           — Waiting for something
+[[STALE]]             → Potentially out of date
 ```
 
 ---
 
-## [VAULT_AUTOMATION]
+## [[VAULT_AUTOMATION]]
 
 Obsidian should trigger automations:
 
 ```
-[ON_NOTE_CREATE]
+[[ON_NOTE_CREATE]]
   → Extract brackets, wiki links
   → Generate frontmatter template
   → Run entity resolution
   → Update graph
 
-[ON_NOTE_UPDATE]
+[[ON_NOTE_UPDATE]]
   → Detect changes
   → Extract new brackets/links
   → Check for drift
   → Cascade updates to related entities
   → Flag if current state differs from [[WHERE_WE_ARE]]
 
-[ON_LINK_CREATE]
+[[ON_LINK_CREATE]]
   → Validate [[TARGET]] exists
   → Check for circular dependencies
   → Update backlinks
   → Alert if creating breaking change
 
-[ON_STATE_CHANGE]
+[[ON_STATE_CHANGE]]
   → Log state transition
   → Trigger dependent tasks
   → Update WHERE_WE_ARE
   → Alert affected parties
   → Generate next-action suggestions
 
-[ON_VERIFICATION]
+[[ON_VERIFICATION]]
   → Mark verified with timestamp
   → Archive evidence
   → Unlock dependent tasks
@@ -593,11 +593,11 @@ To make this real:
 1. **Create canonical vault structure** — 14 domains, all cross-linked
 2. **Define bracketed ontology** — 50+ terms with consistent meaning
 3. **Wire frontmatter validation** — Enforce standard metadata on all notes
-4. **Implement bracket extraction** — Scanner that finds [TERMS] and creates graph edges
+4. **Implement bracket extraction** — Scanner that finds [[TERMS]] and creates graph edges
 5. **Implement wiki-link validation** — Checks that [[LINKS]] point to real files
 6. **Create entity resolution** — Deduplicates entities, consolidates definitions
 7. **Build graph sync** — Exports Obsidian entities to Neo4j daily
-8. **Create verification workflow** — Enforces evidence before [VERIFIED] state
+8. **Create verification workflow** — Enforces evidence before [[VERIFIED]] state
 9. **Implement cascading updates** — When one entity changes, what else must update?
 10. **Build vault health dashboard** — Shows drift, missing evidence, broken links
 
@@ -607,47 +607,47 @@ To make this real:
 
 ---
 
-## [OBSIDIAN_ENTITY_INVENTORY] — 70-Entity Coverage Map
+## [[OBSIDIAN_ENTITY_INVENTORY]] — 70-Entity Coverage Map
 
 **Complete entity group extracted for NAVIGATION_ALIASES.yaml:**
 
-### [VAULT_DOMAIN] — 5 entities
+### [[VAULT_DOMAIN]] — 5 entities
 - VAULT_STRUCTURE, VAULT_CONFIGURATION, VAULT_SETTINGS, VAULT_BACKUP, VAULT_SYNC
 
-### [DOCUMENT_DOMAIN] — 6 entities
+### [[DOCUMENT_DOMAIN]] — 6 entities
 - MARKDOWN_FILE, FRONTMATTER, YAML_METADATA, CONTENT_BODY, DOCUMENT_TYPE, DOCUMENT_STATUS
 
-### [WIKI_LINK_DOMAIN] — 6 entities
+### [[WIKI_LINK_DOMAIN]] — 6 entities
 - BRACKET_ENTITY, LINK_TARGET, LINK_TEXT, LINK_CONTEXT, BACKLINK, LINK_VALIDATION
 
-### [RELATIONSHIP_DOMAIN] — 6 entities
+### [[RELATIONSHIP_DOMAIN]] — 6 entities
 - RELATIONSHIP_TYPE, BIDIRECTIONAL_LINK, SOURCE_ENTITY, TARGET_ENTITY, RELATIONSHIP_STRENGTH, RELATIONSHIP_EVIDENCE
 
-### [KNOWLEDGE_CAPTURE_DOMAIN] — 6 entities
+### [[KNOWLEDGE_CAPTURE_DOMAIN]] — 6 entities
 - INSIGHT, DECISION, EVIDENCE, ASSUMPTION, LESSON_LEARNED, OBSERVATION_CONTEXT
 
-### [SEMANTIC_TAGS_DOMAIN] — 5 entities
+### [[SEMANTIC_TAGS_DOMAIN]] — 5 entities
 - TAG, LABEL, CATEGORY, PROPERTY, TAXONOMY
 
-### [HIERARCHY_DOMAIN] — 5 entities
+### [[HIERARCHY_DOMAIN]] — 5 entities
 - PARENT_DOCUMENT, CHILD_DOCUMENT, FOLDER_STRUCTURE, NAVIGATION_PATH, BREADCRUMB
 
-### [GRAPH_EXPORT_DOMAIN] — 5 entities
+### [[GRAPH_EXPORT_DOMAIN]] — 5 entities
 - JSON_EXPORT, CYPHER_EXPORT, GRAPH_VISUALIZATION, RELATIONSHIP_MATRIX, ENTITY_INVENTORY
 
-### [ANNOTATION_DOMAIN] — 5 entities
+### [[ANNOTATION_DOMAIN]] — 5 entities
 - COMMENT, HIGHLIGHT, INLINE_NOTE, MARGIN_NOTE, REVISION_MARK
 
-### [SEARCH_DOMAIN] — 5 entities
+### [[SEARCH_DOMAIN]] — 5 entities
 - FULL_TEXT_SEARCH, TAG_SEARCH, LINK_SEARCH, PROPERTY_SEARCH, SAVED_SEARCH
 
-### [INTEGRATION_DOMAIN] — 5 entities
+### [[INTEGRATION_DOMAIN]] — 5 entities
 - COMPANY_BRAIN_SYNC, NEO4J_SYNC, GITHUB_INTEGRATION, CLAUDE_INTEGRATION, OMNIROUTE_INTEGRATION
 
-### [AUTHORSHIP_DOMAIN] — 5 entities
+### [[AUTHORSHIP_DOMAIN]] — 5 entities
 - CREATED_BY, MODIFIED_BY, LAST_MODIFIED, CONTRIBUTION_HISTORY, VERSION_CONTROL
 
-### [REALITY_DOMAIN] — 6 entities
+### [[REALITY_DOMAIN]] — 6 entities
 - DOCUMENT_EXISTS, LINK_VALID, LINK_RESOLVES, SYNC_VERIFIED, GRAPH_UPDATED, BACKUP_VERIFIED
 
 **TOTAL: 70 entity groups for NAVIGATION_ALIASES.yaml expansion**

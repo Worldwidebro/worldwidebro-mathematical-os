@@ -19,7 +19,7 @@ relates_to: CLAUDE_MASTER_ONTOLOGY
 
 ## Core APIs
 
-### [MESSAGES_API]
+### [[MESSAGES_API]]
 **Chat completion with tool use**
 
 ```bash
@@ -64,7 +64,7 @@ Content-Type: application/json
 }
 ```
 
-### [STREAMING]
+### [[STREAMING]]
 **Server-sent events for real-time responses**
 
 ```bash
@@ -88,7 +88,7 @@ Content-Type: application/json
 - `message_delta` — Final metrics
 - `message_stop` — Message complete
 
-### [BATCH_API]
+### [[BATCH_API]]
 **Async batch processing (cost-optimized)**
 
 ```bash
@@ -113,7 +113,7 @@ POST /v1/messages/batches
 
 **Latency:** 24-48 hour completion (variable)
 
-### [FILES_API]
+### [[FILES_API]]
 **Upload + reference files**
 
 ```bash
@@ -157,7 +157,7 @@ POST /v1/messages
 - CSV, JSON, TXT
 - Images (PNG, JPEG, GIF, WebP)
 
-### [TOKEN_COUNTING_API]
+### [[TOKEN_COUNTING_API]]
 **Pre-calculate token cost**
 
 ```bash
@@ -182,7 +182,7 @@ POST /v1/messages/count_tokens
 
 ## Advanced Features
 
-### [TOOL_USE]
+### [[TOOL_USE]]
 **Define + invoke custom tools**
 
 ```json
@@ -225,7 +225,7 @@ POST /v1/messages/count_tokens
 }
 ```
 
-### [VISION]
+### [[VISION]]
 **Image input + understanding**
 
 ```json
@@ -252,7 +252,7 @@ POST /v1/messages/count_tokens
 }
 ```
 
-### [STRUCTURED_OUTPUT]
+### [[STRUCTURED_OUTPUT]]
 **Guaranteed JSON response**
 
 ```json
@@ -278,7 +278,7 @@ POST /v1/messages/count_tokens
 }
 ```
 
-### [PROMPT_CACHING]
+### [[PROMPT_CACHING]]
 **Reuse cached context (50% cost reduction)**
 
 ```json
@@ -335,7 +335,7 @@ message = client.messages.create(
     max_tokens=1024,
     messages=[{"role": "user", "content": "Hello"}]
 )
-print(message.content[0].text)
+print(message.content[[0]].text)
 ```
 
 ### TypeScript
@@ -350,7 +350,7 @@ const message = await client.messages.create({
   max_tokens: 1024,
   messages: [{ role: "user", content: "Hello" }]
 });
-console.log(message.content[0].type === "text" && message.content[0].text);
+console.log(message.content[[0]].type === "text" && message.content[[0]].text);
 ```
 
 ### REST (curl)

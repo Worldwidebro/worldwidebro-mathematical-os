@@ -14,130 +14,130 @@ This is the execution-control layer that prevents fake completion and ensures ev
 
 ---
 
-## [TASK_EXECUTION] — Master Hierarchy
+## [[TASK_EXECUTION]] — Master Hierarchy
 
 ```
-[TASK_EXECUTION]
+[[TASK_EXECUTION]]
 │
-├── [WORK]
-│   ├── [OBJECTIVE]      — Strategic intent
-│   ├── [OUTCOME]        — Measurable result
-│   ├── [REQUIREMENT]    — What must be satisfied
-│   ├── [INITIATIVE]     — Multi-quarter program
-│   ├── [PROJECT]        — Scoped work package
-│   ├── [EPIC]           — Feature-level grouping
-│   ├── [TASK]           — Discrete unit of work
-│   ├── [SUBTASK]        — Task decomposition
-│   └── [ACTION]         — Atomic operation
+├── [[WORK]]
+│   ├── [[OBJECTIVE]]      — Strategic intent
+│   ├── [[OUTCOME]]        — Measurable result
+│   ├── [[REQUIREMENT]]    — What must be satisfied
+│   ├── [[INITIATIVE]]     — Multi-quarter program
+│   ├── [[PROJECT]]        — Scoped work package
+│   ├── [[EPIC]]           — Feature-level grouping
+│   ├── [[TASK]]           — Discrete unit of work
+│   ├── [[SUBTASK]]        — Task decomposition
+│   └── [[ACTION]]         — Atomic operation
 │
-├── [TASK_STATE]         — 23 possible states
-├── [UNCOMPLETED_WORK]   — 10 failure modes
-├── [TASK_DEFINITION]    — Contract for what/why/how
-├── [OWNERSHIP]          — 8 roles (owner, assignee, executor, reviewer, approver, backup, escalation, accountable)
-├── [AGENT_WORK]         — Agent type assignment
-├── [DELEGATION]         — Claim/accept/reject/reassign
-├── [HANDOFF]            — Full state transfer (not just a title)
-├── [ROTATION]           — Policy-driven reassignment
-├── [EXECUTION]          — Plan → Action → Checkpoint → Error → Recovery
-├── [DEPENDENCIES]       — BLOCKS, BLOCKED_BY, REQUIRES, ENABLES
-├── [PROGRESS]           — %, stage, checkpoints, milestones
-├── [VERIFICATION]       — Self-check → Peer → Test → Evidence
-├── [COMPLETION]         — DONE, PARTIAL, VERIFIED, DEPLOYED, CLOSED
-├── [UPDATING]           — Cascading updates to related systems
-├── [FEEDBACK]           — Learning loop (result → lesson → improvement)
-└── [AUDIT]              — Immutable history (created, updated, state, assignment, handoff, rotation)
+├── [[TASK_STATE]]         — 23 possible states
+├── [[UNCOMPLETED_WORK]]   — 10 failure modes
+├── [[TASK_DEFINITION]]    — Contract for what/why/how
+├── [[OWNERSHIP]]          — 8 roles (owner, assignee, executor, reviewer, approver, backup, escalation, accountable)
+├── [[AGENT_WORK]]         — Agent type assignment
+├── [[DELEGATION]]         — Claim/accept/reject/reassign
+├── [[HANDOFF]]            — Full state transfer (not just a title)
+├── [[ROTATION]]           — Policy-driven reassignment
+├── [[EXECUTION]]          — Plan → Action → Checkpoint → Error → Recovery
+├── [[DEPENDENCIES]]       — BLOCKS, BLOCKED_BY, REQUIRES, ENABLES
+├── [[PROGRESS]]           — %, stage, checkpoints, milestones
+├── [[VERIFICATION]]       — Self-check → Peer → Test → Evidence
+├── [[COMPLETION]]         — DONE, PARTIAL, VERIFIED, DEPLOYED, CLOSED
+├── [[UPDATING]]           — Cascading updates to related systems
+├── [[FEEDBACK]]           — Learning loop (result → lesson → improvement)
+└── [[AUDIT]]              — Immutable history (created, updated, state, assignment, handoff, rotation)
 ```
 
 ---
 
-## [TASK_STATE] — 23 Canonical States
+## [[TASK_STATE]] — 23 Canonical States
 
 ```
-[IDEA]                  — Concept, not yet formalized
+[[IDEA]]                  — Concept, not yet formalized
      ↓
-[CAPTURED]              — Documented in system
+[[CAPTURED]]              — Documented in system
      ↓
-[BACKLOG]               — Waiting prioritization
+[[BACKLOG]]               — Waiting prioritization
      ↓
-[READY]                 — Meets DoD, can be assigned
+[[READY]]                 — Meets DoD, can be assigned
      ↓
-[ASSIGNED]              — Owner designated
+[[ASSIGNED]]              — Owner designated
      ↓
-[CLAIMED]               — Executor accepts responsibility
+[[CLAIMED]]               — Executor accepts responsibility
      ↓
-[IN_PROGRESS]           — Active work
+[[IN_PROGRESS]]           — Active work
      │
-     ├─→ [WAITING]      — Blocked on external event
-     ├─→ [BLOCKED]      — Cannot proceed (action required)
-     ├─→ [PAUSED]       — Intentionally suspended
-     ├─→ [HANDOFF_PENDING]  — Ready to hand to new owner
-     └─→ [ROTATION_PENDING] — Time to rotate workers
+     ├─→ [[WAITING]]      — Blocked on external event
+     ├─→ [[BLOCKED]]      — Cannot proceed (action required)
+     ├─→ [[PAUSED]]       — Intentionally suspended
+     ├─→ [[HANDOFF_PENDING]]  — Ready to hand to new owner
+     └─→ [[ROTATION_PENDING]] — Time to rotate workers
      │
-[REVIEW]                — Work submitted for peer/manager review
+[[REVIEW]]                — Work submitted for peer/manager review
      ↓
-[VERIFICATION]          — Testing/evidence collection
+[[VERIFICATION]]          — Testing/evidence collection
      │
-     ├─→ [PASS]         — All criteria met
-     └─→ [FAIL]         — Return to IN_PROGRESS
+     ├─→ [[PASS]]         — All criteria met
+     └─→ [[FAIL]]         — Return to IN_PROGRESS
      │
-[COMPLETED]             — Work physically done (not verified)
+[[COMPLETED]]             — Work physically done (not verified)
      ↓
-[VERIFIED]              — Evidence confirms done, acceptance criteria satisfied
+[[VERIFIED]]              — Evidence confirms done, acceptance criteria satisfied
      ↓
-[DEPLOYED]              — Live/shipped/in production
+[[DEPLOYED]]              — Live/shipped/in production
      ↓
-[CLOSED]                — Task fully resolved, audit trail preserved
+[[CLOSED]]                — Task fully resolved, audit trail preserved
 
-[FAILED]                — Attempt did not produce required result
+[[FAILED]]                — Attempt did not produce required result
      ↓
-[REOPENED]              — Re-attempted after analysis
+[[REOPENED]]              — Re-attempted after analysis
 
-[CANCELLED]             — Work no longer needed
-[DEFERRED]              — Intentionally postponed
-[ARCHIVED]              — Completed but kept for reference
+[[CANCELLED]]             — Work no longer needed
+[[DEFERRED]]              — Intentionally postponed
+[[ARCHIVED]]              — Completed but kept for reference
 ```
 
 ---
 
-## [UNCOMPLETED_WORK] — 10 Failure Modes
+## [[UNCOMPLETED_WORK]] — 10 Failure Modes
 
 Every unfinished task falls into exactly one category:
 
 ```
-[INCOMPLETE]
+[[INCOMPLETE]]
 └── No execution has started or is in progress
 
-[PARTIAL]
+[[PARTIAL]]
 └── Some acceptance criteria satisfied; remainder needed
 
-[BLOCKED]
+[[BLOCKED]]
 └── Cannot proceed; external blocker or missing capability
 
-[WAITING]
+[[WAITING]]
 └── Work halted; awaiting external event/person/decision
 
-[STALE]
+[[STALE]]
 └── Requirements or context may no longer be current
 
-[OVERDUE]
+[[OVERDUE]]
 └── Deadline passed; clock expired
 
-[FAILED]
+[[FAILED]]
 └── Execution attempt did not produce required result
 
-[ABANDONED]
+[[ABANDONED]]
 └── Execution stopped without formal closure or rework
 
-[UNASSIGNED]
+[[UNASSIGNED]]
 └── No accountable executor designated
 
-[UNVERIFIED]
+[[UNVERIFIED]]
 └── Claimed complete but evidence is missing or insufficient
 ```
 
 ---
 
-## [TASK_STATE] ≠ [TASK_TRUTH]
+## [[TASK_STATE]] ≠ [[TASK_TRUTH]]
 
 **This is the critical rule.**
 
@@ -156,288 +156,288 @@ actual_state: unverified
 Therefore, every task maintains **three parallel states:**
 
 ```
-[DECLARED_STATE]   — What the task claims (status field)
+[[DECLARED_STATE]]   — What the task claims (status field)
         +
-[OBSERVED_STATE]   — What the system detects (metrics, logs, tests)
+[[OBSERVED_STATE]]   — What the system detects (metrics, logs, tests)
         +
-[VERIFIED_STATE]   — What humans/tests confirm (evidence, approval)
+[[VERIFIED_STATE]]   — What humans/tests confirm (evidence, approval)
         =
-[ACTUAL_TASK_STATE] — Ground truth (no fakes)
+[[ACTUAL_TASK_STATE]] — Ground truth (no fakes)
 ```
 
 ---
 
-## [TASK_DEFINITION] — Contract for Work
+## [[TASK_DEFINITION]] — Contract for Work
 
 Every task must answer:
 
 ```
-[TASK_ID]               — Unique identifier (TASK-000001)
-[TITLE]                 — Human-readable name
-[DESCRIPTION]           — What needs to be done
-[WHY]                   — Strategic context/reason
-[OBJECTIVE]             — What we're trying to achieve
-[EXPECTED_OUTCOME]      — Measurable result
-[ACCEPTANCE_CRITERIA]   — How we know it's done (7-point scale)
-[DEFINITION_OF_DONE]    — Quality bar (tests pass, docs updated, etc.)
-[PRIORITY]              — P0/P1/P2/P3 (business priority)
-[URGENCY]               — Hours/days/weeks (time sensitivity)
-[IMPACT]                — Revenue, risk, UX, technical debt
-[EFFORT]                — Hours estimated
-[RISK]                  — Known risks/failure modes
-[DEADLINE]              — Hard cutoff or target date
-[CONSTRAINTS]           — Limitations on approach
-[DEPENDENCIES]          — What this task requires
-[OWNER]                 — Accountable party
-[APPROVAL_GATE]         — Who must verify completion
+[[TASK_ID]]               — Unique identifier (TASK-000001)
+[[TITLE]]                 — Human-readable name
+[[DESCRIPTION]]           — What needs to be done
+[[WHY]]                   — Strategic context/reason
+[[OBJECTIVE]]             — What we're trying to achieve
+[[EXPECTED_OUTCOME]]      — Measurable result
+[[ACCEPTANCE_CRITERIA]]   — How we know it's done (7-point scale)
+[[DEFINITION_OF_DONE]]    — Quality bar (tests pass, docs updated, etc.)
+[[PRIORITY]]              — P0/P1/P2/P3 (business priority)
+[[URGENCY]]               — Hours/days/weeks (time sensitivity)
+[[IMPACT]]                — Revenue, risk, UX, technical debt
+[[EFFORT]]                — Hours estimated
+[[RISK]]                  — Known risks/failure modes
+[[DEADLINE]]              — Hard cutoff or target date
+[[CONSTRAINTS]]           — Limitations on approach
+[[DEPENDENCIES]]          — What this task requires
+[[OWNER]]                 — Accountable party
+[[APPROVAL_GATE]]         — Who must verify completion
 ```
 
 ---
 
-## [OWNERSHIP] — 8 Roles
+## [[OWNERSHIP]] — 8 Roles
 
 ```
-[OWNER]                 — Accountable for completion (makes final call)
-[ASSIGNEE]              — Primary executor (may delegate further)
-[EXECUTOR]              — Doing the work (may rotate)
-[REVIEWER]              — Reviews work quality/correctness
-[APPROVER]              — Business/technical approval gate
-[BACKUP]                — Ready to take over if primary blocked
-[ESCALATION_OWNER]      — Resolves blockers/conflicts
-[ACCOUNTABLE_PARTY]     — Final authority if responsibility unclear
+[[OWNER]]                 — Accountable for completion (makes final call)
+[[ASSIGNEE]]              — Primary executor (may delegate further)
+[[EXECUTOR]]              — Doing the work (may rotate)
+[[REVIEWER]]              — Reviews work quality/correctness
+[[APPROVER]]              — Business/technical approval gate
+[[BACKUP]]                — Ready to take over if primary blocked
+[[ESCALATION_OWNER]]      — Resolves blockers/conflicts
+[[ACCOUNTABLE_PARTY]]     — Final authority if responsibility unclear
 ```
 
-**Rule: Every task must have at least [OWNER] and [EXECUTOR]. They can be the same person.**
+**Rule: Every task must have at least [[OWNER]] and [[EXECUTOR]]. They can be the same person.**
 
 ---
 
-## [DELEGATION] — Workflow States
+## [[DELEGATION]] — Workflow States
 
 ```
-[ASSIGN]        → [ASSIGNED]
+[[ASSIGN]]        → [[ASSIGNED]]
      ↓
-[CLAIM]         → [CLAIMED]
+[[CLAIM]]         → [[CLAIMED]]
      ↓
-[ACCEPT]        → [IN_PROGRESS]
+[[ACCEPT]]        → [[IN_PROGRESS]]
 
 or
 
-[REJECT]        → [REASSIGN]
-                → [ASSIGN] (to next person)
+[[REJECT]]        → [[REASSIGN]]
+                → [[ASSIGN]] (to next person)
 
-[REASSIGN]      → Task moves to new executor
-[ESCALATE]      → Problem moves to higher authority
-[DECOMPOSE]     → Task split into subtasks
-[PARALLELIZE]   → Multiple tasks start simultaneously
+[[REASSIGN]]      → Task moves to new executor
+[[ESCALATE]]      → Problem moves to higher authority
+[[DECOMPOSE]]     → Task split into subtasks
+[[PARALLELIZE]]   → Multiple tasks start simultaneously
 ```
 
 ---
 
-## [HANDOFF] — Full State Transfer (Not Just a Title)
+## [[HANDOFF]] — Full State Transfer (Not Just a Title)
 
 Handoff is when work moves from one executor to another **with complete state**.
 
 **Sending worker prepares:**
 
 ```
-[HANDOFF_PACKAGE]
+[[HANDOFF_PACKAGE]]
 │
-├── [OBJECTIVE]              — What we're solving
-├── [CURRENT_STATE]          — System state at handoff moment
-├── [WORK_COMPLETED]         — What's done (commits, files, data)
-├── [WORK_REMAINING]         — What's not done
-├── [FILES_CHANGED]          — Git diffs (or file listing)
-├── [COMMITS]                — Commit hashes for reference
-├── [DATA]                   — Input/output/state changes
-├── [DECISIONS]              — Key architectural choices made
-├── [ASSUMPTIONS]            — What we're assuming is true
-├── [BLOCKERS]               — Problems we hit and workarounds
-├── [DEPENDENCIES]           — What this depends on
-├── [TEST_RESULTS]           — What passed/failed locally
-├── [EVIDENCE]               — Screenshots, logs, proofs
-├── [RISKS]                  — What could go wrong
-├── [NEXT_ACTION]            — Exact next step for new worker
-└── [CONTEXT]                — Mental model / reasoning
+├── [[OBJECTIVE]]              — What we're solving
+├── [[CURRENT_STATE]]          — System state at handoff moment
+├── [[WORK_COMPLETED]]         — What's done (commits, files, data)
+├── [[WORK_REMAINING]]         — What's not done
+├── [[FILES_CHANGED]]          — Git diffs (or file listing)
+├── [[COMMITS]]                — Commit hashes for reference
+├── [[DATA]]                   — Input/output/state changes
+├── [[DECISIONS]]              — Key architectural choices made
+├── [[ASSUMPTIONS]]            — What we're assuming is true
+├── [[BLOCKERS]]               — Problems we hit and workarounds
+├── [[DEPENDENCIES]]           — What this depends on
+├── [[TEST_RESULTS]]           — What passed/failed locally
+├── [[EVIDENCE]]               — Screenshots, logs, proofs
+├── [[RISKS]]                  — What could go wrong
+├── [[NEXT_ACTION]]            — Exact next step for new worker
+└── [[CONTEXT]]                — Mental model / reasoning
 ```
 
 **Receiving worker confirms:**
 
 ```
-[HANDOFF_UNDERSTOOD]    → YES / NO
+[[HANDOFF_UNDERSTOOD]]    → YES / NO
 
 If NO:
-[CLARIFICATION_NEEDED]  → Questions for sending worker
-[RESEND_HANDOFF]        → New handoff package with answers
+[[CLARIFICATION_NEEDED]]  → Questions for sending worker
+[[RESEND_HANDOFF]]        → New handoff package with answers
 
 If YES:
-[HANDOFF_ACCEPTED]
+[[HANDOFF_ACCEPTED]]
         ↓
-[CONTINUATION]
+[[CONTINUATION]]
         ↓
-[NEW_WORKER_EXECUTION]
+[[NEW_WORKER_EXECUTION]]
 ```
 
 **Golden rule:** You should not get "Here is the task. Good luck." You should get **"Here is the exact system state required to continue without reconstructing the previous worker's context."**
 
 ---
 
-## [ROTATION] — Systematic Reassignment
+## [[ROTATION]] — Systematic Reassignment
 
 Rotation is different from handoff. **Rotation is policy-driven; handoff is event-driven.**
 
 Rotation triggers:
 
 ```
-[ROTATION_TRIGGER]
+[[ROTATION_TRIGGER]]
 │
-├── [TIME_LIMIT]             — Max 3 hours on a task
-├── [CAPACITY_LIMIT]         — Worker at max parallel tasks
-├── [AGENT_LIMIT]            — Agent has bandwidth limit (Haiku vs Sonnet)
-├── [SPECIALIST_REQUIRED]    — Need different skill (code → review)
-├── [FAILURE]                — Approach not working; try new executor
-├── [PRIORITY_CHANGE]        — Task priority changed; reassign accordingly
-├── [DEPENDENCY]             — Blocker resolved; rotate to ready
-└── [SCHEDULE]               — Time-based rotation policy
+├── [[TIME_LIMIT]]             — Max 3 hours on a task
+├── [[CAPACITY_LIMIT]]         — Worker at max parallel tasks
+├── [[AGENT_LIMIT]]            — Agent has bandwidth limit (Haiku vs Sonnet)
+├── [[SPECIALIST_REQUIRED]]    — Need different skill (code → review)
+├── [[FAILURE]]                — Approach not working; try new executor
+├── [[PRIORITY_CHANGE]]        — Task priority changed; reassign accordingly
+├── [[DEPENDENCY]]             — Blocker resolved; rotate to ready
+└── [[SCHEDULE]]               — Time-based rotation policy
 ```
 
 Rotation process:
 
 ```
-[ACTIVE_WORK]
+[[ACTIVE_WORK]]
       ↓
-[ROTATION_TRIGGERED]
+[[ROTATION_TRIGGERED]]
       ↓
-[ROTATION_ENGINE]
-      ├── [FIND_CANDIDATE]      — Who's available?
-      ├── [SKILL_MATCH]         — Right skills?
-      ├── [CAPACITY_CHECK]      — Have bandwidth?
-      ├── [AUTHORITY_CHECK]     — Authority to do this work?
-      └── [CONTEXT_TRANSFER]    — State handed off
+[[ROTATION_ENGINE]]
+      ├── [[FIND_CANDIDATE]]      — Who's available?
+      ├── [[SKILL_MATCH]]         — Right skills?
+      ├── [[CAPACITY_CHECK]]      — Have bandwidth?
+      ├── [[AUTHORITY_CHECK]]     — Authority to do this work?
+      └── [[CONTEXT_TRANSFER]]    — State handed off
              ↓
-       [ROTATION_EXECUTE]
+       [[ROTATION_EXECUTE]]
              ↓
-       [NEW_WORKER]
+       [[NEW_WORKER]]
              ↓
-       [CONTINUATION]
+       [[CONTINUATION]]
 ```
 
 ---
 
-## [EXECUTION] — The Work Loop
+## [[EXECUTION]] — The Work Loop
 
 ```
-[START]
+[[START]]
    ↓
-[PLAN]              — Decompose task into subtasks
+[[PLAN]]              — Decompose task into subtasks
    ↓
-[DECOMPOSITION]     — Map to actions, tools, dependencies
+[[DECOMPOSITION]]     — Map to actions, tools, dependencies
    ↓
-[ACTION]            — Do the work
+[[ACTION]]            — Do the work
    ↓
-[TOOL_USE]          — Invoke capabilities, agents, APIs
+[[TOOL_USE]]          — Invoke capabilities, agents, APIs
    ↓
-[PROGRESS]          — Track % complete, stage, checkpoints
-   ├─→ [CHECKPOINT] — Intermediate validation
-   ├─→ [ERROR]      — Something failed
-   │    ├─→ [RECOVERY]   → Retry, workaround, escalate
-   │    └─→ [ESCALATION] → Move to higher authority
-   └─→ [CONTINUE]   → Keep going
+[[PROGRESS]]          — Track % complete, stage, checkpoints
+   ├─→ [[CHECKPOINT]] — Intermediate validation
+   ├─→ [[ERROR]]      — Something failed
+   │    ├─→ [[RECOVERY]]   → Retry, workaround, escalate
+   │    └─→ [[ESCALATION]] → Move to higher authority
+   └─→ [[CONTINUE]]   → Keep going
    ↓
-[STOP]              — Halt (completed, blocked, or cancelled)
+[[STOP]]              — Halt (completed, blocked, or cancelled)
 ```
 
 ---
 
-## [DEPENDENCIES] — Relationship Map
+## [[DEPENDENCIES]] — Relationship Map
 
 ```
-[BLOCKS]            — This task blocks another
-[BLOCKED_BY]        — This task is blocked by another
-[REQUIRES]          — This task needs another to complete first
-[ENABLES]           — This task enables another to start
-[PREDECESSOR]       — Must happen before this
-[SUCCESSOR]         — Must happen after this
-[EXTERNAL_DEPENDENCY]  — Depends on external system/person
-[HUMAN_DEPENDENCY]     — Depends on human decision/action
+[[BLOCKS]]            — This task blocks another
+[[BLOCKED_BY]]        — This task is blocked by another
+[[REQUIRES]]          — This task needs another to complete first
+[[ENABLES]]           — This task enables another to start
+[[PREDECESSOR]]       — Must happen before this
+[[SUCCESSOR]]         — Must happen after this
+[[EXTERNAL_DEPENDENCY]]  — Depends on external system/person
+[[HUMAN_DEPENDENCY]]     — Depends on human decision/action
 ```
 
-**Never execute a task without first resolving all [BLOCKED_BY] dependencies.**
+**Never execute a task without first resolving all [[BLOCKED_BY]] dependencies.**
 
 ---
 
-## [VERIFICATION] — Reality Check
+## [[VERIFICATION]] — Reality Check
 
 **Verification is not optional. Verification prevents fake completion.**
 
 ```
-[COMPLETION_CLAIM]
+[[COMPLETION_CLAIM]]
        ↓
-[SELF_CHECK]        — Executor: "Does this meet acceptance criteria?"
+[[SELF_CHECK]]        — Executor: "Does this meet acceptance criteria?"
        │
-       ├─→ [PASS]   → Continue
-       └─→ [FAIL]   → Back to work
+       ├─→ [[PASS]]   → Continue
+       └─→ [[FAIL]]   → Back to work
        ↓
-[PEER_REVIEW]       — Another human: "Is this correct?"
+[[PEER_REVIEW]]       — Another human: "Is this correct?"
        │
-       ├─→ [APPROVED]   → Continue
-       └─→ [REJECTED]   → Back to work
+       ├─→ [[APPROVED]]   → Continue
+       └─→ [[REJECTED]]   → Back to work
        ↓
-[TEST]              — Automated tests run
+[[TEST]]              — Automated tests run
        │
-       ├─→ [PASS]   → Continue
-       └─→ [FAIL]   → Back to work
+       ├─→ [[PASS]]   → Continue
+       └─→ [[FAIL]]   → Back to work
        ↓
-[EVIDENCE]          — Gather proof (logs, screenshots, data)
+[[EVIDENCE]]          — Gather proof (logs, screenshots, data)
        │
-       ├─→ [SUFFICIENT] → Continue
-       └─→ [MISSING]    → Back to work
+       ├─→ [[SUFFICIENT]] → Continue
+       └─→ [[MISSING]]    → Back to work
        ↓
-[ACCEPTANCE_CRITERIA_CHECK]
+[[ACCEPTANCE_CRITERIA_CHECK]]
        │
        ├─→ [100% MET]   → VERIFIED
-       ├─→ [PARTIAL]    → Back to work
-       └─→ [NOT_MET]    → Back to work
+       ├─→ [[PARTIAL]]    → Back to work
+       └─→ [[NOT_MET]]    → Back to work
        ↓
-[VERIFIED] = [COMPLETED] + [EVIDENCE] + [APPROVAL]
+[[VERIFIED]] = [[COMPLETED]] + [[EVIDENCE]] + [[APPROVAL]]
 ```
 
 ---
 
-## [COMPLETION] — Four States, Not One
+## [[COMPLETION]] — Four States, Not One
 
 ```
-[DONE]              — Executor says it's done (not verified)
-[PARTIAL]           — Some criteria met; remainder needed
-[VERIFIED]          — Independent confirmation: evidence + test + approval
-[DEPLOYED]          — Live/shipped/in production
-[CLOSED]            — Task + audit trail archived; work resolved
+[[DONE]]              — Executor says it's done (not verified)
+[[PARTIAL]]           — Some criteria met; remainder needed
+[[VERIFIED]]          — Independent confirmation: evidence + test + approval
+[[DEPLOYED]]          — Live/shipped/in production
+[[CLOSED]]            — Task + audit trail archived; work resolved
 ```
 
-**A task is NOT complete until [VERIFIED]. [DONE] ≠ [VERIFIED].**
+**A task is NOT complete until [[VERIFIED]]. [[DONE]] ≠ [[VERIFIED]].**
 
 ---
 
-## [UPDATING] — Cascading Changes
+## [[UPDATING]] — Cascading Changes
 
 When a task changes, what else must be updated?
 
 ```
-[EVENT]
+[[EVENT]]
    ↓
-[CHANGE_DETECTED]
+[[CHANGE_DETECTED]]
    ├── Task state changes
    ├── Owner/executor changes
    ├── Deadline changes
    ├── Dependency resolves
    └── Blocker identified
        ↓
-[IMPACT_ANALYSIS]
+[[IMPACT_ANALYSIS]]
    ├── Which other tasks are affected?
    ├── Which registries need updating?
    ├── Which documents are now stale?
    └── Which workflows need re-routing?
        ↓
-[UPDATE_REQUIRED]
+[[UPDATE_REQUIRED]]
    │
    ├── [[TASK]]                → State/owner/deadline update
    ├── [[WHERE_WE_ARE]]        → Current status changes
@@ -448,77 +448,77 @@ When a task changes, what else must be updated?
    ├── [[REGISTRIES]]          → Capability/venture/sector updates
    └── [[SOURCE_OF_TRUTH]]     → Cascade verification
            ↓
-       [UPDATE]
+       [[UPDATE]]
            ↓
-       [VALIDATION]
+       [[VALIDATION]]
            ↓
-       [AUDIT]
+       [[AUDIT]]
            ↓
-   [NEW_SYSTEM_STATE]
+   [[NEW_SYSTEM_STATE]]
 ```
 
 ---
 
-## [FEEDBACK] — Learning Loop
+## [[FEEDBACK]] — Learning Loop
 
 Every completed task produces learning:
 
 ```
-[OUTCOME]           — What resulted?
+[[OUTCOME]]           — What resulted?
        ↓
-[LESSON]            — What did we learn?
-       ├── [POSITIVE] — What went well?
-       ├── [NEGATIVE] — What could improve?
-       └── [NEUTRAL]  — What was new information?
+[[LESSON]]            — What did we learn?
+       ├── [[POSITIVE]] — What went well?
+       ├── [[NEGATIVE]] — What could improve?
+       └── [[NEUTRAL]]  — What was new information?
        ↓
-[ERROR_PATTERN]     — Did we hit a known problem?
-[BOTTLENECK]        — Did execution stall somewhere?
-[CAPABILITY_GAP]    — Did we lack a capability?
-[PROCESS_IMPROVEMENT]  — How could the process be better?
-[AUTOMATION_OPPORTUNITY]  — What could be automated?
+[[ERROR_PATTERN]]     — Did we hit a known problem?
+[[BOTTLENECK]]        — Did execution stall somewhere?
+[[CAPABILITY_GAP]]    — Did we lack a capability?
+[[PROCESS_IMPROVEMENT]]  — How could the process be better?
+[[AUTOMATION_OPPORTUNITY]]  — What could be automated?
        ↓
-[KNOWLEDGE_UPDATE]
+[[KNOWLEDGE_UPDATE]]
        ├── [[KNOWLEDGE_GRAPH]] — Add new relationship/fact
        ├── [[WHERE_WE_ARE]]    — Update capability inventory
        └── [[REGISTRIES]]      — Update capability registry
        ↓
-[NEXT_TASK_IMPROVED] — Better planning, estimation, execution
+[[NEXT_TASK_IMPROVED]] — Better planning, estimation, execution
 ```
 
 ---
 
-## [AUDIT] — Immutable History
+## [[AUDIT]] — Immutable History
 
 Every task maintains a complete audit trail:
 
 ```
-[CREATED_AT]        — Timestamp (never changes)
-[CREATED_BY]        — Creator (never changes)
-[UPDATED_AT]        — Last modification
-[UPDATED_BY]        — Last modifier
+[[CREATED_AT]]        — Timestamp (never changes)
+[[CREATED_BY]]        — Creator (never changes)
+[[UPDATED_AT]]        — Last modification
+[[UPDATED_BY]]        — Last modifier
 
-[STATE_HISTORY]
+[[STATE_HISTORY]]
    └── {state: IDEA → CAPTURED → READY → ASSIGNED → IN_PROGRESS → VERIFIED → CLOSED}
        {timestamp, actor, reason}
 
-[ASSIGNMENT_HISTORY]
+[[ASSIGNMENT_HISTORY]]
    └── {assigned_to: Owner1 → Owner2 → Owner3}
        {timestamp, actor, reason}
 
-[HANDOFF_HISTORY]
+[[HANDOFF_HISTORY]]
    └── {from: Worker1, to: Worker2, timestamp, state_at_handoff}
 
-[ROTATION_HISTORY]
+[[ROTATION_HISTORY]]
    └── {from: Worker1, to: Worker2, trigger, timestamp}
 
-[DECISION_HISTORY]
+[[DECISION_HISTORY]]
    └── {decision: chose X over Y, timestamp, rationale, actor}
 
-[EVIDENCE]
+[[EVIDENCE]]
    └── {test_results, screenshots, logs, approvals}
        {collected_at, verified_by}
 
-[CHANGE_LOG]
+[[CHANGE_LOG]]
    └── {what changed, when, who, why}
        {immutable, timestamped, auditable}
 ```
@@ -609,18 +609,18 @@ Every task maintains a complete audit trail:
 ## The Master Rule: NO FAKE COMPLETION
 
 ```
-[DECLARED_STATE]   ← What the task claims
+[[DECLARED_STATE]]   ← What the task claims
         +
-[OBSERVED_STATE]   ← What the system detects
+[[OBSERVED_STATE]]   ← What the system detects
         +
-[VERIFIED_STATE]   ← What humans/tests confirm
+[[VERIFIED_STATE]]   ← What humans/tests confirm
         =
-[ACTUAL_TASK_STATE] ← Ground truth (immutable, auditable)
+[[ACTUAL_TASK_STATE]] ← Ground truth (immutable, auditable)
 ```
 
-**If declared ≠ verified, the system defaults to [UNVERIFIED].**
+**If declared ≠ verified, the system defaults to [[UNVERIFIED]].**
 
-**If observed contradicts verified, [BLOCKED] with escalation.**
+**If observed contradicts verified, [[BLOCKED]] with escalation.**
 
 **If history shows pattern of false claims → agent's autonomy reduced to L1 (report-only).**
 
@@ -630,15 +630,15 @@ Every task maintains a complete audit trail:
 
 - [ ] Map all existing work to this ontology
 - [ ] Create TASK_STATE statemachine validator
-- [ ] Implement [DECLARED_STATE] + [OBSERVED_STATE] + [VERIFIED_STATE] tracking
-- [ ] Build verification gate that requires evidence before [VERIFIED]
-- [ ] Create handoff template with all [HANDOFF_PACKAGE] fields mandatory
-- [ ] Implement rotation engine that triggers on [ROTATION_TRIGGER]
+- [ ] Implement [[DECLARED_STATE]] + [[OBSERVED_STATE]] + [[VERIFIED_STATE]] tracking
+- [ ] Build verification gate that requires evidence before [[VERIFIED]]
+- [ ] Create handoff template with all [[HANDOFF_PACKAGE]] fields mandatory
+- [ ] Implement rotation engine that triggers on [[ROTATION_TRIGGER]]
 - [ ] Set up cascading updates when task state changes
 - [ ] Wire feedback loop to [[KNOWLEDGE_GRAPH]] for learning capture
 - [ ] Create audit log immutability enforcement
-- [ ] Build dashboard showing [UNCOMPLETED_WORK] by category
-- [ ] Test: Task claims [COMPLETED], system catches missing evidence
+- [ ] Build dashboard showing [[UNCOMPLETED_WORK]] by category
+- [ ] Test: Task claims [[COMPLETED]], system catches missing evidence
 
 ---
 

@@ -1,3 +1,10 @@
+---
+type: master-ontology
+status: conceptual
+prerequisites: []
+requires: []
+---
+
 # Infrastructure Documentation Reference
 
 **Master Document:** `_INFRASTRUCTURE/INFRASTRUCTURE.md`  
@@ -19,19 +26,19 @@
 The master infrastructure document is organized into these bracket sections:
 
 ```
-[INFRASTRUCTURE]
-├── [PHYSICAL_LAYER]          — Machines, storage, hardware
-├── [COMPUTE_LAYER]           — CPU, GPU, Ollama, processes
-├── [STORAGE_LAYER]           — Volumes, bind mounts, data locations
-├── [DOCKER]                  — Containers, images, networks, volumes
-├── [SERVICES]                — Neo4j, Qdrant, PostgreSQL, Redis, OmniRoute, etc.
-├── [NETWORK]                 — Topology, routing, DNS
-├── [TAILSCALE]              — VPN, nodes, connectivity
-├── [CONNECTIVITY_TESTING]   — Evidence matrix with verified tests
-├── [SECURITY]               — Auth, secrets, firewall
-├── [OBSERVABILITY]          — Logging, metrics, health checks
-├── [KNOWN_ISSUES_AND_FIXES] — Issue log with resolutions
-└── [VERIFICATION_COMMANDS]  — Commands to re-verify infrastructure
+[[INFRASTRUCTURE]]
+├── [[PHYSICAL_LAYER]]          — Machines, storage, hardware
+├── [[COMPUTE_LAYER]]           — CPU, GPU, Ollama, processes
+├── [[STORAGE_LAYER]]           — Volumes, bind mounts, data locations
+├── [[DOCKER]]                  — Containers, images, networks, volumes
+├── [[SERVICES]]                — Neo4j, Qdrant, PostgreSQL, Redis, OmniRoute, etc.
+├── [[NETWORK]]                 — Topology, routing, DNS
+├── [[TAILSCALE]]              — VPN, nodes, connectivity
+├── [[CONNECTIVITY_TESTING]]   — Evidence matrix with verified tests
+├── [[SECURITY]]               — Auth, secrets, firewall
+├── [[OBSERVABILITY]]          — Logging, metrics, health checks
+├── [[KNOWN_ISSUES_AND_FIXES]] — Issue log with resolutions
+└── [[VERIFICATION_COMMANDS]]  — Commands to re-verify infrastructure
 ```
 
 ---
@@ -71,30 +78,30 @@ The master infrastructure document is organized into these bracket sections:
 
 2. **Any onboarding guides**
    - Point to [[INFRASTRUCTURE]] for connectivity verification
-   - Use verification commands from [VERIFICATION_COMMANDS]
+   - Use verification commands from [[VERIFICATION_COMMANDS]]
 
 3. **Service configuration docs**
-   - Reference exact ports from [SERVICES] section
-   - Link to connectivity evidence in [CONNECTIVITY_TESTING]
+   - Reference exact ports from [[SERVICES]] section
+   - Link to connectivity evidence in [[CONNECTIVITY_TESTING]]
 
 ---
 
 ## How to Use This Document
 
 ### For Troubleshooting
-→ Go to `[CONNECTIVITY_TESTING]` for evidence matrix  
-→ Check `[KNOWN_ISSUES_AND_FIXES]` for known problems  
-→ Run commands from `[VERIFICATION_COMMANDS]`
+→ Go to `[[CONNECTIVITY_TESTING]]` for evidence matrix  
+→ Check `[[KNOWN_ISSUES_AND_FIXES]]` for known problems  
+→ Run commands from `[[VERIFICATION_COMMANDS]]`
 
 ### For Architecture Decisions
-→ Review `[NETWORK]` and `[DOCKER]` sections  
-→ Understand service topology in `[SERVICES]`  
-→ Check security model in `[SECURITY]`
+→ Review `[[NETWORK]]` and `[[DOCKER]]` sections  
+→ Understand service topology in `[[SERVICES]]`  
+→ Check security model in `[[SECURITY]]`
 
 ### For Operations
-→ Follow `[NEXT_ACTIONS]` for immediate/soon/planned work  
-→ Use `[VERIFICATION_COMMANDS]` regularly  
-→ Monitor `[OBSERVABILITY]` metrics
+→ Follow `[[NEXT_ACTIONS]]` for immediate/soon/planned work  
+→ Use `[[VERIFICATION_COMMANDS]]` regularly  
+→ Monitor `[[OBSERVABILITY]]` metrics
 
 ---
 
@@ -102,7 +109,7 @@ The master infrastructure document is organized into these bracket sections:
 
 - **Daily:** Run verification commands (health checks)
 - **Weekly:** Review logs in OpenObserve
-- **Monthly:** Update [KNOWN_ISSUES_AND_FIXES] with new findings
+- **Monthly:** Update [[KNOWN_ISSUES_AND_FIXES]] with new findings
 - **Quarterly:** Full infrastructure audit (update timestamps)
 
 ---

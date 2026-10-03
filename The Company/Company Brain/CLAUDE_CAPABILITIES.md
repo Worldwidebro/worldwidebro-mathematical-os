@@ -17,35 +17,35 @@ relates_to: CLAUDE_MASTER_ONTOLOGY
 
 ## Foundation Capabilities
 
-### [VISION]
+### [[VISION]]
 - Image understanding + analysis
 - Multi-image comparison
 - PDF + document processing
 - Screenshot interpretation
 - Visual reasoning
 
-### [CODE]
+### [[CODE]]
 - 50+ programming languages
 - Code generation + explanation
 - Debugging + optimization
 - Architecture analysis
 - Test generation
 
-### [REASONING]
+### [[REASONING]]
 - Logic chains
 - Multi-step decomposition
 - Constraint satisfaction
 - Comparative analysis
 - Extended thinking (with thinking token budget)
 
-### [TOOL_USE]
+### [[TOOL_USE]]
 - MCP tool integration
 - Shell command execution
 - File operations (read/write/navigate)
 - API integration
 - Multi-tool orchestration
 
-### [STRUCTURED_OUTPUT]
+### [[STRUCTURED_OUTPUT]]
 - JSON schema generation
 - Deterministic response format
 - Validated data extraction
@@ -98,34 +98,34 @@ relates_to: CLAUDE_MASTER_ONTOLOGY
 
 ## Integration Capabilities
 
-### [CONNECTORS]
+### [[CONNECTORS]]
 - 100+ service integrations
 - OAuth authentication
 - API key management
 - Interactive connector UIs
 - Real-time data sync
 
-### [MCP]
+### [[MCP]]
 - Model Context Protocol
 - Tool discovery + execution
 - Resource access
 - Prompt templates
 - Full governance + permissions
 
-### [ARTIFACTS]
+### [[ARTIFACTS]]
 - Generate + edit live documents
 - Code + design artifacts
 - Interactive tools
 - Sharing + collaboration
 - Export (DOCX, PDF, PPTX)
 
-### [MEMORY]
+### [[MEMORY]]
 - Persistent user memory
 - Cross-session recall
 - Searchable knowledge base
 - Memory scope (user/project/session)
 
-### [PROJECTS]
+### [[PROJECTS]]
 - Workspace organization
 - Custom instructions
 - Knowledge base upload
@@ -136,25 +136,25 @@ relates_to: CLAUDE_MASTER_ONTOLOGY
 
 ## Advanced Capabilities
 
-### [EXTENDED_THINKING]
+### [[EXTENDED_THINKING]]
 - Allocate tokens to reasoning
 - Multi-step problem decomposition
 - Expose thinking chains
 - Cost visible in token usage
 
-### [RESEARCH_MODE]
+### [[RESEARCH_MODE]]
 - Deep multi-source investigation
 - Citation + evidence collection
 - Cross-check + contradiction detection
 - Structured research reports
 
-### [WEB_SEARCH]
+### [[WEB_SEARCH]]
 - Live internet search
 - Recency + freshness
 - Citation generation
 - Search refinement
 
-### [PROMPT_CACHING]
+### [[PROMPT_CACHING]]
 - Reuse cached context
 - Reduced token cost
 - Cache-affinity routing (via [[OMNIROUTE]])
@@ -175,19 +175,19 @@ relates_to: CLAUDE_MASTER_ONTOLOGY
 
 ## Security + Compliance
 
-### [PERMISSIONS]
+### [[PERMISSIONS]]
 - Tool-level access control
 - File path whitelisting
 - Network + API restrictions
 - MCP tool scoping
 
-### [AUDIT_LOG]
+### [[AUDIT_LOG]]
 - All interactions logged
 - Immutable records
 - Searchable history
 - Compliance retention
 
-### [GUARDRAILS]
+### [[GUARDRAILS]]
 - Safety alignment
 - Jailbreak resistance
 - Regulatory compliance
@@ -220,3 +220,7 @@ curl http://100.87.214.70:3004/api/models
 
 **Canonical source:** [[CLAUDE_MASTER_ONTOLOGY]]
 
+
+
+---
+**Related:** [[WHERE_WE_ARE]] · [[CROSS_LINK_MASTER_ONTOLOGY]]

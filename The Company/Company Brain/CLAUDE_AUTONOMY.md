@@ -20,7 +20,7 @@ relates_to: CLAUDE_MASTER_ONTOLOGY
 
 ## Autonomy Levels
 
-### [L0] — Respond Only (No Action)
+### [[L0]] — Respond Only (No Action)
 **Claude responds but takes NO external actions.**
 
 **When to use:**
@@ -45,7 +45,7 @@ Claude: [Provides explanation]
 
 ---
 
-### [L1] — Assist (Read + Suggest)
+### [[L1]] — Assist (Read + Suggest)
 **Claude can READ, UNDERSTAND, and PROPOSE — but REQUIRES APPROVAL before execution.**
 
 **When to use:**
@@ -83,7 +83,7 @@ Claude: [Executes only after confirmation]
 
 ---
 
-### [L2] — Execute (Tool Use + Verify)
+### [[L2]] — Execute (Tool Use + Verify)
 **Claude EXECUTES tool calls and APIs with AUDIT TRAIL, but remains within supervised scope.**
 
 **When to use:**
@@ -130,7 +130,7 @@ User: [Reviews + merges]
 
 ---
 
-### [L3] — Autonomous (Multi-Step + Recovery)
+### [[L3]] — Autonomous (Multi-Step + Recovery)
 **Claude operates INDEPENDENTLY on VERIFIED, HIGH-CONFIDENCE tasks with SELF-RECOVERY.**
 
 **When to use:**
@@ -180,7 +180,7 @@ Claude: [Escalate to human]
 
 **All L1→L2→L3 transitions gated on Laya ML confidence score.**
 
-### [CONFIDENCE_SCORING]
+### [[CONFIDENCE_SCORING]]
 
 ```
 Score Range | Autonomy | Behavior | Example
@@ -217,7 +217,7 @@ score = mapper.assess("Implement new database schema")
 
 ## Human-in-the-Loop Gates
 
-### [APPROVAL_PATTERNS]
+### [[APPROVAL_PATTERNS]]
 
 **L1 → L2 Escalation:**
 ```yaml
@@ -251,7 +251,7 @@ Rollback: Automatic if monitoring detects failure
 
 ## Verification Framework
 
-### [READINESS_CHECKLIST]
+### [[READINESS_CHECKLIST]]
 
 **Before L1→L2 transition:**
 - [ ] Scope clearly defined
@@ -267,7 +267,7 @@ Rollback: Automatic if monitoring detects failure
 - [ ] Rollback procedure tested
 - [ ] Escalation path defined
 
-### [TESTING_REQUIREMENTS]
+### [[TESTING_REQUIREMENTS]]
 
 **L1 tasks:**
 - Manual walkthrough
@@ -404,3 +404,7 @@ Claude: [Verifies improvement]
 **Decision engine:** Laya ML ConfidenceMapper  
 **Logging:** Neo4j KG-007
 
+
+
+---
+**Related:** [[WHERE_WE_ARE]] · [[CROSS_LINK_MASTER_ONTOLOGY]]

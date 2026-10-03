@@ -1,3 +1,10 @@
+---
+type: master-ontology
+status: conceptual
+prerequisites: []
+requires: []
+---
+
 # SYSTEM_CONNECTIVITY_WIRED — Neo4j Graph Integration
 
 **Status:** Connectivity verified and ready to ingest into Neo4j knowledge graph  
@@ -100,8 +107,8 @@ Network {
   status: "active",
   verified_date: "2026-10-02"
 }]->(neo4j:Service)
-(mac_studio:Device)-[RUNS]->(qdrant:Service)
-(mac_studio:Device)-[RUNS]->(omniroute:Service)
+(mac_studio:Device)-[[RUNS]]->(qdrant:Service)
+(mac_studio:Device)-[[RUNS]]->(omniroute:Service)
 ```
 
 **CAN_ACCESS** (Device → Service)
@@ -112,8 +119,8 @@ Network {
   url: "http://100.87.214.70:7474",
   verified_date: "2026-10-02"
 }]->(neo4j:Service)
-(mac_air:Device)-[CAN_ACCESS]->(qdrant:Service)
-(mac_air:Device)-[CAN_ACCESS]->(omniroute:Service)
+(mac_air:Device)-[[CAN_ACCESS]]->(qdrant:Service)
+(mac_air:Device)-[[CAN_ACCESS]]->(omniroute:Service)
 ```
 
 ---
@@ -188,7 +195,7 @@ After ingestion, verify:
 Query:
 ```cypher
 MATCH (n) RETURN COUNT(n) as nodes;
-MATCH ()-[r]->() RETURN COUNT(r) as relationships;
+MATCH ()-[[r]]->() RETURN COUNT(r) as relationships;
 ```
 
 Expected: **7 nodes**, **7 relationships**
@@ -281,3 +288,7 @@ To allow [[CLAUDE]], [[ANTIGRAVITY]], and other automated systems to seamlessly 
 - **Agent Action:** Agents should default to the current active workspace but explicitly resolve `[[COMPANY_BRAIN]]` location by checking these mount points to navigate physical storage seamlessly.
 
 ---
+
+
+---
+**Related:** [[WHERE_WE_ARE]] · [[CROSS_LINK_MASTER_ONTOLOGY]]

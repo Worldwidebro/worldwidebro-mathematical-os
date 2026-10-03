@@ -19,8 +19,8 @@ relates_to: CLAUDE_MASTER_ONTOLOGY
 
 ## Core Layers
 
-### [CLI]
-**Command:** `claude [command] [options]`
+### [[CLI]]
+**Command:** `claude [[command]] [[options]]`
 
 ```bash
 # Start a session in current directory
@@ -38,7 +38,7 @@ claude --model claude-opus-5-5
 
 **Available commands:** See `claude --help`
 
-### [TERMINAL]
+### [[TERMINAL]]
 **Full terminal emulation**
 - Real bash/zsh shell
 - File system read/write
@@ -54,7 +54,7 @@ $ npm test
 $ docker ps
 ```
 
-### [CODEBASE]
+### [[CODEBASE]]
 **Repository intelligence**
 - Automatic context loading
 - Dependency tree mapping
@@ -70,7 +70,7 @@ $ docker ps
 - Indexes code symbols via graft/sourcegraph
 ```
 
-### [FILE_SYSTEM]
+### [[FILE_SYSTEM]]
 **Read/write operations**
 - Read files (exact line ranges)
 - Edit files (diffs, preserve indentation)
@@ -88,7 +88,7 @@ $ docker ps
 - Secret files (.env, credentials)
 - Files in `.gitignore` (unless loaded explicitly)
 
-### [GIT]
+### [[GIT]]
 **Version control integration**
 - Branch creation/switching
 - Commit with message
@@ -112,7 +112,7 @@ $ git checkout -b feature/x
 - GitHub credentials via MCP auth
 - `.claude/CLAUDE.md` git policies
 
-### [BUILD_SYSTEM]
+### [[BUILD_SYSTEM]]
 **Compile + test execution**
 - Invoke build tools (npm, cargo, go, etc.)
 - Run test suites
@@ -128,7 +128,7 @@ $ python -m pytest
 $ docker-compose up
 ```
 
-### [DEBUG]
+### [[DEBUG]]
 **Debugging workflows**
 - Reproduce bugs
 - Add logging
@@ -136,7 +136,7 @@ $ docker-compose up
 - Root cause analysis
 - Test fixes
 
-### [REFACTOR]
+### [[REFACTOR]]
 **Code transformation**
 - Rename symbols (correctly across files)
 - Extract functions
@@ -144,7 +144,7 @@ $ docker-compose up
 - Modernize syntax
 - Apply linting fixes
 
-### [REPOSITORY_INTELLIGENCE]
+### [[REPOSITORY_INTELLIGENCE]]
 **Deep codebase understanding**
 - Symbol definitions + usage
 - Call graphs
@@ -160,7 +160,7 @@ $ docker-compose up
 
 ## Tool Ecosystem
 
-### [MCP]
+### [[MCP]]
 **Any MCP tool is available in Claude Code:**
 
 ```yaml
@@ -179,7 +179,7 @@ claude "create a PR with these changes"
 # → Uses github MCP under the hood
 ```
 
-### [SKILLS]
+### [[SKILLS]]
 **Procedural automation**
 
 ```bash
@@ -192,14 +192,14 @@ claude "create a PR with these changes"
 /gsd-debug "error message"
 ```
 
-### [PLUGINS]
+### [[PLUGINS]]
 **Extensible modules**
 - Custom MCP servers
 - Local automation scripts
 - Shell hooks
 - IDE integrations
 
-### [SUBAGENTS]
+### [[SUBAGENTS]]
 **Delegate to specialists**
 
 ```bash
@@ -217,7 +217,7 @@ claude "create a PR with these changes"
 - `everything-claude-code:security-reviewer` — Security auditor
 - Plus 40+ more
 
-### [HOOKS]
+### [[HOOKS]]
 **Automation triggers**
 
 **Supported events:**
@@ -240,7 +240,7 @@ claude "create a PR with these changes"
 
 ## Permissions & Governance
 
-### [PERMISSIONS]
+### [[PERMISSIONS]]
 **Claude requests approval for:**
 - File write/create/delete
 - Shell command execution
@@ -259,7 +259,7 @@ claude "create a PR with these changes"
 }
 ```
 
-### [CLAUDE_MD]
+### [[CLAUDE_MD]]
 **Per-project instructions** (highest priority)
 
 **File:** `.claude/CLAUDE.md` (in repo root)
@@ -293,7 +293,7 @@ claude "create a PR with these changes"
 [System design]
 ```
 
-### [SANDBOX]
+### [[SANDBOX]]
 **Isolation + safety**
 - File system sandboxing
 - Network isolation
@@ -305,7 +305,7 @@ claude "create a PR with these changes"
 
 ## Session Management
 
-### [SESSION]
+### [[SESSION]]
 **Conversation context**
 - Preserves working directory
 - Maintains git state

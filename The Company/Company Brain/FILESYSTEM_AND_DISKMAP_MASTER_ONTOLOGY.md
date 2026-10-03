@@ -14,7 +14,7 @@ source_of_truth: true
 The critical distinction:
 
 ```
-[FILE_TREE]         [DISK_MAP]          [FILESYSTEM_REALITY]
+[[FILE_TREE]]         [[DISK_MAP]]          [[FILESYSTEM_REALITY]]
     ↓                   ↓                       ↓
 Logical              Physical                Verified
 Organization         Topology                Actual State
@@ -25,11 +25,11 @@ Organization         Topology                Actual State
 ## Core Principle: Path ≠ Disk ≠ Reality
 
 ```
-[DECLARED_PATH]
+[[DECLARED_PATH]]
         ≠
-[OBSERVED_PATH]
+[[OBSERVED_PATH]]
         ≠
-[VERIFIED_PATH]
+[[VERIFIED_PATH]]
 ```
 
 Example:
@@ -39,152 +39,152 @@ Example:
 
 ---
 
-## [FILESYSTEM_COMPLETE_ARCHITECTURE] — 13 Domains
+## [[FILESYSTEM_COMPLETE_ARCHITECTURE]] — 13 Domains
 
 ```
-[FILESYSTEM_AND_DISKMAP]
+[[FILESYSTEM_AND_DISKMAP]]
 
-├─ [FILESYSTEM]
-│  ├── [FILE]
-│  ├── [DIRECTORY]
-│  ├── [SYMLINK]
-│  ├── [MOUNT_POINT]
-│  ├── [MOUNTED_VOLUME]
-│  ├── [PERMISSIONS]
-│  ├── [OWNER]
-│  └── [GROUP]
+├─ [[FILESYSTEM]]
+│  ├── [[FILE]]
+│  ├── [[DIRECTORY]]
+│  ├── [[SYMLINK]]
+│  ├── [[MOUNT_POINT]]
+│  ├── [[MOUNTED_VOLUME]]
+│  ├── [[PERMISSIONS]]
+│  ├── [[OWNER]]
+│  └── [[GROUP]]
 │
-├─ [FILE_TREE]
-│  ├── [ROOT]
-│  ├── [DIRECTORY_TREE]
-│  ├── [PATH]
-│  ├── [ABSOLUTE_PATH]
-│  ├── [RELATIVE_PATH]
-│  ├── [FILE_EXTENSION]
-│  ├── [FILE_TYPE]
-│  └── [TREE_DEPTH]
+├─ [[FILE_TREE]]
+│  ├── [[ROOT]]
+│  ├── [[DIRECTORY_TREE]]
+│  ├── [[PATH]]
+│  ├── [[ABSOLUTE_PATH]]
+│  ├── [[RELATIVE_PATH]]
+│  ├── [[FILE_EXTENSION]]
+│  ├── [[FILE_TYPE]]
+│  └── [[TREE_DEPTH]]
 │
-├─ [DISK]
-│  ├── [PHYSICAL_DISK]
-│  ├── [SSD]
-│  ├── [HDD]
-│  ├── [INTERNAL_STORAGE]
-│  ├── [EXTERNAL_STORAGE]
-│  └── [REMOVABLE_STORAGE]
+├─ [[DISK]]
+│  ├── [[PHYSICAL_DISK]]
+│  ├── [[SSD]]
+│  ├── [[HDD]]
+│  ├── [[INTERNAL_STORAGE]]
+│  ├── [[EXTERNAL_STORAGE]]
+│  └── [[REMOVABLE_STORAGE]]
 │
-├─ [VOLUME]
-│  ├── [VOLUME]
-│  ├── [APFS_VOLUME]
-│  ├── [CONTAINER]
-│  ├── [PARTITION]
-│  ├── [MOUNTED_VOLUME]
-│  └── [MOUNT_POINT]
+├─ [[VOLUME]]
+│  ├── [[VOLUME]]
+│  ├── [[APFS_VOLUME]]
+│  ├── [[CONTAINER]]
+│  ├── [[PARTITION]]
+│  ├── [[MOUNTED_VOLUME]]
+│  └── [[MOUNT_POINT]]
 │
-├─ [STORAGE]
-│  ├── [TOTAL_CAPACITY]
-│  ├── [USED_SPACE]
-│  ├── [FREE_SPACE]
-│  ├── [AVAILABLE_SPACE]
-│  ├── [ALLOCATED_SPACE]
-│  ├── [RESERVED_SPACE]
-│  ├── [SYSTEM_DATA]
-│  └── [TEMPORARY_STORAGE]
+├─ [[STORAGE]]
+│  ├── [[TOTAL_CAPACITY]]
+│  ├── [[USED_SPACE]]
+│  ├── [[FREE_SPACE]]
+│  ├── [[AVAILABLE_SPACE]]
+│  ├── [[ALLOCATED_SPACE]]
+│  ├── [[RESERVED_SPACE]]
+│  ├── [[SYSTEM_DATA]]
+│  └── [[TEMPORARY_STORAGE]]
 │
-├─ [DATA]
-│  ├── [CODE]
-│  ├── [KNOWLEDGE]
-│  ├── [DOCUMENTS]
-│  ├── [DATABASE]
-│  ├── [MODELS]
-│  ├── [CONTAINERS]
-│  ├── [APPLICATION_DATA]
-│  ├── [CONFIGURATION]
-│  ├── [BACKUPS]
-│  ├── [LOGS]
-│  └── [ARTIFACTS]
+├─ [[DATA]]
+│  ├── [[CODE]]
+│  ├── [[KNOWLEDGE]]
+│  ├── [[DOCUMENTS]]
+│  ├── [[DATABASE]]
+│  ├── [[MODELS]]
+│  ├── [[CONTAINERS]]
+│  ├── [[APPLICATION_DATA]]
+│  ├── [[CONFIGURATION]]
+│  ├── [[BACKUPS]]
+│  ├── [[LOGS]]
+│  └── [[ARTIFACTS]]
 │
-├─ [DOCKER_STORAGE]
-│  ├── [DOCKER_ENGINE]
-│  ├── [IMAGE]
-│  ├── [CONTAINER]
-│  ├── [VOLUME]
-│  ├── [BIND_MOUNT]
-│  ├── [NETWORK]
-│  ├── [LAYER]
-│  └── [CONTAINER_DATA]
+├─ [[DOCKER_STORAGE]]
+│  ├── [[DOCKER_ENGINE]]
+│  ├── [[IMAGE]]
+│  ├── [[CONTAINER]]
+│  ├── [[VOLUME]]
+│  ├── [[BIND_MOUNT]]
+│  ├── [[NETWORK]]
+│  ├── [[LAYER]]
+│  └── [[CONTAINER_DATA]]
 │
-├─ [REPOSITORIES]
-│  ├── [GITHUB_REPOSITORY]
-│  ├── [LOCAL_REPOSITORY]
-│  ├── [CLONE]
-│  ├── [WORKTREE]
+├─ [[REPOSITORIES]]
+│  ├── [[GITHUB_REPOSITORY]]
+│  ├── [[LOCAL_REPOSITORY]]
+│  ├── [[CLONE]]
+│  ├── [[WORKTREE]]
 │  ├── [.GIT]
-│  └── [BUILD_ARTIFACT]
+│  └── [[BUILD_ARTIFACT]]
 │
-├─ [KNOWLEDGE_STORAGE]
-│  ├── [OBSIDIAN]
-│  ├── [MARKDOWN]
-│  ├── [WIKI_LINKS]
-│  ├── [BRACKETED_FILES]
-│  ├── [REGISTRIES]
-│  └── [KNOWLEDGE_GRAPH_EXPORTS]
+├─ [[KNOWLEDGE_STORAGE]]
+│  ├── [[OBSIDIAN]]
+│  ├── [[MARKDOWN]]
+│  ├── [[WIKI_LINKS]]
+│  ├── [[BRACKETED_FILES]]
+│  ├── [[REGISTRIES]]
+│  └── [[KNOWLEDGE_GRAPH_EXPORTS]]
 │
-├─ [DATABASE_STORAGE]
-│  ├── [NEO4J]
-│  ├── [QDRANT]
-│  ├── [SQL]
-│  ├── [SUPABASE]
-│  └── [DATABASE_BACKUPS]
+├─ [[DATABASE_STORAGE]]
+│  ├── [[NEO4J]]
+│  ├── [[QDRANT]]
+│  ├── [[SQL]]
+│  ├── [[SUPABASE]]
+│  └── [[DATABASE_BACKUPS]]
 │
-├─ [FILE_INTELLIGENCE]
-│  ├── [FILE_INDEX]
-│  ├── [DIRECTORY_INDEX]
-│  ├── [HASH]
-│  ├── [METADATA]
-│  ├── [DUPLICATE]
-│  ├── [STALE_FILE]
-│  ├── [ORPHAN_FILE]
-│  └── [UNUSED_FILE]
+├─ [[FILE_INTELLIGENCE]]
+│  ├── [[FILE_INDEX]]
+│  ├── [[DIRECTORY_INDEX]]
+│  ├── [[HASH]]
+│  ├── [[METADATA]]
+│  ├── [[DUPLICATE]]
+│  ├── [[STALE_FILE]]
+│  ├── [[ORPHAN_FILE]]
+│  └── [[UNUSED_FILE]]
 │
-├─ [FILE_LINEAGE]
-│  ├── [CREATED_BY]
-│  ├── [COPIED_FROM]
-│  ├── [MOVED_FROM]
-│  ├── [GENERATED_BY]
-│  ├── [DERIVED_FROM]
-│  ├── [SYNCED_FROM]
-│  ├── [BACKED_UP_TO]
-│  └── [RESTORED_FROM]
+├─ [[FILE_LINEAGE]]
+│  ├── [[CREATED_BY]]
+│  ├── [[COPIED_FROM]]
+│  ├── [[MOVED_FROM]]
+│  ├── [[GENERATED_BY]]
+│  ├── [[DERIVED_FROM]]
+│  ├── [[SYNCED_FROM]]
+│  ├── [[BACKED_UP_TO]]
+│  └── [[RESTORED_FROM]]
 │
-├─ [MIGRATION]
-│  ├── [SOURCE]
-│  ├── [DESTINATION]
-│  ├── [TRANSFER]
-│  ├── [SYNC]
-│  ├── [VERIFICATION]
-│  ├── [CHECKSUM]
-│  └── [ROLLBACK]
+├─ [[MIGRATION]]
+│  ├── [[SOURCE]]
+│  ├── [[DESTINATION]]
+│  ├── [[TRANSFER]]
+│  ├── [[SYNC]]
+│  ├── [[VERIFICATION]]
+│  ├── [[CHECKSUM]]
+│  └── [[ROLLBACK]]
 │
-└─ [REALITY]
-   ├── [PATH_EXISTS]
-   ├── [FILE_EXISTS]
-   ├── [DIRECTORY_EXISTS]
-   ├── [MOUNT_EXISTS]
-   ├── [READABLE]
-   ├── [WRITABLE]
-   ├── [ACCESSIBLE]
-   ├── [CHECKSUM_VERIFIED]
-   ├── [BACKUP_VERIFIED]
-   ├── [SYNC_VERIFIED]
-   └── [STORAGE_STATE]
+└─ [[REALITY]]
+   ├── [[PATH_EXISTS]]
+   ├── [[FILE_EXISTS]]
+   ├── [[DIRECTORY_EXISTS]]
+   ├── [[MOUNT_EXISTS]]
+   ├── [[READABLE]]
+   ├── [[WRITABLE]]
+   ├── [[ACCESSIBLE]]
+   ├── [[CHECKSUM_VERIFIED]]
+   ├── [[BACKUP_VERIFIED]]
+   ├── [[SYNC_VERIFIED]]
+   └── [[STORAGE_STATE]]
 ```
 
 ---
 
-## [FILESYSTEM_HIERARCHY] — Logical vs Physical
+## [[FILESYSTEM_HIERARCHY]] — Logical vs Physical
 
 ```
-[FILE_TREE]                         [DISK_MAP]
+[[FILE_TREE]]                         [[DISK_MAP]]
 (Logical Organization)             (Physical Topology)
 
 [[COMPANY_BRAIN]]                  [[MAC_STUDIO]]
@@ -207,20 +207,20 @@ Example:
 
 ---
 
-## [MOUNT_HIERARCHY] — Storage Path Resolution
+## [[MOUNT_HIERARCHY]] — Storage Path Resolution
 
 ```
-[PHYSICAL_DISK]
+[[PHYSICAL_DISK]]
       ↓
-[VOLUME]
+[[VOLUME]]
       ↓
-[MOUNT_POINT]
+[[MOUNT_POINT]]
       ↓
-[PATH]
+[[PATH]]
       ↓
-[DIRECTORY]
+[[DIRECTORY]]
       ↓
-[FILE]
+[[FILE]]
 ```
 
 **Example:**
@@ -241,16 +241,16 @@ File: /Volumes/T7Shield/Company\ Brain/INFRASTRUCTURE/OMNIROUTE.md
 
 ---
 
-## [DOCKER_STORAGE_MAPPING] — Container Data Paths
+## [[DOCKER_STORAGE_MAPPING]] — Container Data Paths
 
 ```
-[HOST_PATH]
+[[HOST_PATH]]
       ↓
-[BIND_MOUNT]
+[[BIND_MOUNT]]
       ↓
-[CONTAINER_PATH]
+[[CONTAINER_PATH]]
       ↓
-[APPLICATION]
+[[APPLICATION]]
 ```
 
 **Example:**
@@ -258,7 +258,7 @@ File: /Volumes/T7Shield/Company\ Brain/INFRASTRUCTURE/OMNIROUTE.md
 ```
 /Volumes/LaCie/omniroute
         ↓
-    [BIND_MOUNT]
+    [[BIND_MOUNT]]
         ↓
      /app/data
         ↓
@@ -270,16 +270,16 @@ File: /Volumes/T7Shield/Company\ Brain/INFRASTRUCTURE/OMNIROUTE.md
 Separate from:
 
 ```
-[DOCKER_VOLUME]
+[[DOCKER_VOLUME]]
       ↓
-[DOCKER_MANAGED_STORAGE]
+[[DOCKER_MANAGED_STORAGE]]
       ↓
-[CONTAINER]
+[[CONTAINER]]
 ```
 
 ---
 
-## [REPOSITORY_STORAGE_GRAPH] — GitHub to Disk
+## [[REPOSITORY_STORAGE_GRAPH]] — GitHub to Disk
 
 ```
 [[GITHUB_REPOSITORY]]
@@ -314,7 +314,7 @@ Mac Studio: /Volumes/LaCie/Repositories/Worldwidebro-Vex
 
 ---
 
-## [FILE_METADATA_ONTOLOGY] — Per-File Reality
+## [[FILE_METADATA_ONTOLOGY]] — Per-File Reality
 
 ```yaml
 file_id: FILE-WHOAMI-001
@@ -371,75 +371,75 @@ reality:
 
 ---
 
-## [STORAGE_CAPACITY_MODEL] — Hierarchical Not Flat
+## [[STORAGE_CAPACITY_MODEL]] — Hierarchical Not Flat
 
 ```
-[TOTAL_CAPACITY]
+[[TOTAL_CAPACITY]]
       │
-      ├── [SYSTEM_DATA]
+      ├── [[SYSTEM_DATA]]
       │   ├── macOS
       │   ├── System Libraries
       │   └── Caches
       │
-      ├── [APPLICATIONS]
+      ├── [[APPLICATIONS]]
       │   ├── Claude
       │   ├── Docker
       │   └── Tools
       │
-      ├── [COMPANY_BRAIN]
+      ├── [[COMPANY_BRAIN]]
       │   ├── Knowledge
       │   ├── Registries
       │   ├── Ontologies
       │   └── Exports
       │
-      ├── [REPOSITORIES]
+      ├── [[REPOSITORIES]]
       │   ├── GitHub Clones
       │   ├── Forks
       │   └── Worktrees
       │
-      ├── [DOCKER_DATA]
+      ├── [[DOCKER_DATA]]
       │   ├── Images
       │   ├── Containers
       │   ├── Volumes
       │   └── Layers
       │
-      ├── [DATABASES]
+      ├── [[DATABASES]]
       │   ├── Neo4j
       │   ├── Qdrant
       │   ├── PostgreSQL
       │   └── Supabase
       │
-      ├── [MODELS]
+      ├── [[MODELS]]
       │   ├── Ollama
       │   ├── qwen2.5-coder
       │   ├── hermes3
       │   └── llama3.1
       │
-      ├── [BACKUPS]
+      ├── [[BACKUPS]]
       │   ├── Time Machine
       │   ├── External Backup
       │   ├── Snapshots
       │   └── Archives
       │
-      └── [FREE]
+      └── [[FREE]]
 ```
 
 ---
 
-## [FILE_LINEAGE_ONTOLOGY] — Prevents Accidental Destruction
+## [[FILE_LINEAGE_ONTOLOGY]] — Prevents Accidental Destruction
 
 Track every file's origin and copies:
 
 ```
-[ORIGINAL]
+[[ORIGINAL]]
     ↓
-[COPY]
+[[COPY]]
     ↓
-[MODIFICATION]
+[[MODIFICATION]]
     ↓
-[DERIVATIVE]
+[[DERIVATIVE]]
     ↓
-[BACKUP]
+[[BACKUP]]
 ```
 
 Relationships:
@@ -473,51 +473,51 @@ Retrieved from: GitHub Commit abc123def456
 
 ---
 
-## [MIGRATION_ONTOLOGY] — Not Just "Copy Complete"
+## [[MIGRATION_ONTOLOGY]] — Not Just "Copy Complete"
 
 ```
-[MIGRATION]
+[[MIGRATION]]
 
 SOURCE
    ↓
-[DISCOVERY]
+[[DISCOVERY]]
    ↓
-[INVENTORY]
+[[INVENTORY]]
    ↓
-[DEPENDENCY_ANALYSIS]
+[[DEPENDENCY_ANALYSIS]]
    ↓
-[DESTINATION_PREPARATION]
+[[DESTINATION_PREPARATION]]
    ↓
-[TRANSFER]
+[[TRANSFER]]
    ↓
-[CHECKSUM_VERIFICATION]
+[[CHECKSUM_VERIFICATION]]
    ↓
-[STRUCTURE_VERIFICATION]
+[[STRUCTURE_VERIFICATION]]
    ↓
-[APPLICATION_VERIFICATION]
+[[APPLICATION_VERIFICATION]]
    ↓
-[CONNECTIVITY_TEST]
+[[CONNECTIVITY_TEST]]
    ↓
-[CUTOVER]
+[[CUTOVER]]
    ↓
-[OLD_LOCATION_STATUS]
-   ├── [KEPT_AS_BACKUP]
-   ├── [ARCHIVED]
-   └── [DESTROYED]
+[[OLD_LOCATION_STATUS]]
+   ├── [[KEPT_AS_BACKUP]]
+   ├── [[ARCHIVED]]
+   └── [[DESTROYED]]
    ↓
-[BACKUP_VERIFICATION]
+[[BACKUP_VERIFICATION]]
    ↓
-[ROLLBACK_PLAN]
+[[ROLLBACK_PLAN]]
    ↓
-[MIGRATION_COMPLETE]
+[[MIGRATION_COMPLETE]]
 ```
 
 **Critical distinction:**
 
 ```
-[FILES_COPIED]
+[[FILES_COPIED]]
       ≠
-[MIGRATION_COMPLETE]
+[[MIGRATION_COMPLETE]]
 ```
 
 Migration only complete when:
@@ -531,7 +531,7 @@ Migration only complete when:
 
 ---
 
-## [DISK_INTELLIGENCE_AGENT] — Automated Scanning
+## [[DISK_INTELLIGENCE_AGENT]] — Automated Scanning
 
 ```
 [[DISK_INTELLIGENCE_AGENT]]
@@ -569,7 +569,7 @@ Produces:
 
 ---
 
-## [FILESYSTEM_CONNECTIVITY_TESTING] — Verification
+## [[FILESYSTEM_CONNECTIVITY_TESTING]] — Verification
 
 Every critical path must have a test:
 
@@ -613,7 +613,7 @@ evidence: UNKNOWN
 
 ---
 
-## [MASTER_PHYSICAL_STORAGE_GRAPH] — Complete Picture
+## [[MASTER_PHYSICAL_STORAGE_GRAPH]] — Complete Picture
 
 ```
                          [[COMPANY_BRAIN]]
@@ -673,7 +673,7 @@ evidence: UNKNOWN
 
 ---
 
-## [PHYSICAL_TO_KNOWLEDGE_CHAIN]
+## [[PHYSICAL_TO_KNOWLEDGE_CHAIN]]
 
 The complete chain from disk to intelligence:
 
@@ -718,7 +718,7 @@ VERIFIED_REALITY
 
 ---
 
-## [COMPANY_BRAIN_STORAGE_ONTOLOGY] — Your Actual Infrastructure
+## [[COMPANY_BRAIN_STORAGE_ONTOLOGY]] — Your Actual Infrastructure
 
 ```
 [[MAC_STUDIO]]
@@ -772,29 +772,29 @@ VERIFIED_REALITY
 
 ---
 
-## [FILESYSTEM_REALITY] — Source of Truth
+## [[FILESYSTEM_REALITY]] — Source of Truth
 
 Not a score. Observable facts:
 
 ```
-[FILESYSTEM_REALITY]
+[[FILESYSTEM_REALITY]]
 
-├── [DIRECTORY_EXISTS]
-├── [FILE_EXISTS]
-├── [READABLE]
-├── [WRITABLE]
-├── [ACCESSIBLE]
-├── [MOUNTED]
-├── [TOTAL_SIZE]
-├── [USED_SIZE]
-├── [FREE_SIZE]
-├── [FILE_COUNT]
-├── [DIRECTORY_COUNT]
-├── [HASH_VERIFIED]
-├── [BACKUP_VERIFIED]
-├── [SYNC_VERIFIED]
-├── [LAST_SCANNED]
-└── [LAST_MODIFIED]
+├── [[DIRECTORY_EXISTS]]
+├── [[FILE_EXISTS]]
+├── [[READABLE]]
+├── [[WRITABLE]]
+├── [[ACCESSIBLE]]
+├── [[MOUNTED]]
+├── [[TOTAL_SIZE]]
+├── [[USED_SIZE]]
+├── [[FREE_SIZE]]
+├── [[FILE_COUNT]]
+├── [[DIRECTORY_COUNT]]
+├── [[HASH_VERIFIED]]
+├── [[BACKUP_VERIFIED]]
+├── [[SYNC_VERIFIED]]
+├── [[LAST_SCANNED]]
+└── [[LAST_MODIFIED]]
 ```
 
 ---

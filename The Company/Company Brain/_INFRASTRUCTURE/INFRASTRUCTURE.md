@@ -1,3 +1,10 @@
+---
+type: master-ontology
+status: conceptual
+prerequisites: []
+requires: []
+---
+
 # INFRASTRUCTURE — Master Ontology
 
 **Last Verified:** 2026-10-02 | **Status:** Production | **Ownership:** @divinejohns  
@@ -8,82 +15,82 @@
 ## Master Machine-to-Business Ontology
 
 ```
-[PHYSICAL_MACHINE]
+[[PHYSICAL_MACHINE]]
         ↓
-[OPERATING_SYSTEM]
+[[OPERATING_SYSTEM]]
         ↓
-[NETWORK_INTERFACE]
+[[NETWORK_INTERFACE]]
         ↓
-[TAILSCALE_NODE]
+[[TAILSCALE_NODE]]
         ↓
-[DOCKER_ENGINE]
+[[DOCKER_ENGINE]]
         ↓
-[CONTAINER]
+[[CONTAINER]]
         ↓
-[SERVICE]
+[[SERVICE]]
         ↓
-[API]
+[[API]]
         ↓
-[APPLICATION]
+[[APPLICATION]]
         ↓
-[AGENT]
+[[AGENT]]
         ↓
-[DATA_FLOW]
+[[DATA_FLOW]]
         ↓
-[KNOWLEDGE_GRAPH]
+[[KNOWLEDGE_GRAPH]]
         ↓
-[DECISION]
+[[DECISION]]
         ↓
-[ACTION]
+[[ACTION]]
         ↓
-[BUSINESS_OUTCOME]
+[[BUSINESS_OUTCOME]]
 ```
 
 ---
 
-## [INFRASTRUCTURE] Root
+## [[INFRASTRUCTURE]] Root
 
 ```
-[INFRASTRUCTURE]
+[[INFRASTRUCTURE]]
 │
-├── [PHYSICAL_LAYER]
-├── [COMPUTE_LAYER]
-├── [STORAGE_LAYER]
-├── [DOCKER]
-├── [SERVICES]
-├── [NETWORK]
-├── [TAILSCALE]
-├── [MAC_STUDIO_CONNECTIVITY]
-├── [MAC_AIR_CONNECTIVITY]
-├── [APPLICATION_LAYER]
-├── [AI_LAYER]
-├── [OBSERVABILITY]
-├── [SECURITY]
-└── [CONNECTIVITY_TESTING]
+├── [[PHYSICAL_LAYER]]
+├── [[COMPUTE_LAYER]]
+├── [[STORAGE_LAYER]]
+├── [[DOCKER]]
+├── [[SERVICES]]
+├── [[NETWORK]]
+├── [[TAILSCALE]]
+├── [[MAC_STUDIO_CONNECTIVITY]]
+├── [[MAC_AIR_CONNECTIVITY]]
+├── [[APPLICATION_LAYER]]
+├── [[AI_LAYER]]
+├── [[OBSERVABILITY]]
+├── [[SECURITY]]
+└── [[CONNECTIVITY_TESTING]]
 ```
 
 ---
 
-## [PHYSICAL_LAYER]
+## [[PHYSICAL_LAYER]]
 
-### [MAC_STUDIO] — Primary Compute Node (100.87.214.70)
+### [[MAC_STUDIO]] — Primary Compute Node (100.87.214.70)
 
 ```
-[MAC_STUDIO]
-├── [HARDWARE]
+[[MAC_STUDIO]]
+├── [[HARDWARE]]
 │   ├── CPU: Apple M2 Ultra (20-core)
 │   ├── GPU: 76-core
 │   ├── RAM: 128 GB unified memory
 │   └── Thermal: Active cooling (24/7 capable)
 │
-├── [STORAGE]
-│   ├── [LOCAL_STORAGE]
+├── [[STORAGE]]
+│   ├── [[LOCAL_STORAGE]]
 │   │   ├── Capacity: 228 GB
 │   │   ├── Used: 217 GB (95% full ⚠️)
 │   │   ├── Available: 11 GB
 │   │   └── Status: CRITICAL (cleanup needed)
 │   │
-│   └── [EXTERNAL_STORAGE]
+│   └── [[EXTERNAL_STORAGE]]
 │       ├── Device: LaCie T7 Shield USB-C
 │       ├── Capacity: 1.8 TB
 │       ├── Used: 900 GB (50% used ✅)
@@ -91,45 +98,45 @@
 │       ├── Mount: /Volumes/T7\ Shield
 │       └── Contains: Docker volumes, models, repos, backups
 │
-├── [POWER]
+├── [[POWER]]
 │   ├── Status: AC (desktop, always on)
 │   └── Consumption: ~500W idle, ~1200W peak
 │
-└── [OPERATING_SYSTEM]
+└── [[OPERATING_SYSTEM]]
     ├── macOS: Sonoma 14.x
     ├── Architecture: Apple Silicon (ARM64)
     └── User: divinejohns
 ```
 
-### [MAC_AIR] — Development Workstation (100.121.17.63)
+### [[MAC_AIR]] — Development Workstation (100.121.17.63)
 
 ```
-[MAC_AIR]
-├── [HARDWARE]
+[[MAC_AIR]]
+├── [[HARDWARE]]
 │   ├── CPU: Apple M3
 │   ├── RAM: 16 GB unified memory
 │   └── Model: MacBook Air 15" 2024
 │
-├── [STORAGE]
+├── [[STORAGE]]
 │   ├── Capacity: 228 GB
 │   ├── Used: 223 GB (98% full ⚠️ CRITICAL)
 │   ├── Available: 5.3 GB
 │   └── Status: Cleanup needed (~100 GB cache)
 │
-├── [POWER]
+├── [[POWER]]
 │   ├── Status: Battery + AC
 │   └── Portable workstation
 │
-└── [OPERATING_SYSTEM]
+└── [[OPERATING_SYSTEM]]
     ├── macOS: Sequoia 15.x
     ├── Architecture: Apple Silicon (ARM64)
     └── User: acebless
 ```
 
-### [T7_SHIELD]
+### [[T7_SHIELD]]
 
 ```
-[T7_SHIELD]
+[[T7_SHIELD]]
 ├── Manufacturer: LaCie
 ├── Capacity: 1.8 TB
 ├── Interface: USB-C (Thunderbolt 3)
@@ -147,20 +154,20 @@
 
 ---
 
-## [COMPUTE_LAYER]
+## [[COMPUTE_LAYER]]
 
-### [MAC_STUDIO]
+### [[MAC_STUDIO]]
 
 ```
-[MAC_STUDIO_COMPUTE]
-├── [DOCKER_ENGINE]
+[[MAC_STUDIO_COMPUTE]]
+├── [[DOCKER_ENGINE]]
 │   ├── Version: Latest
 │   ├── Status: ✅ RUNNING
 │   ├── Containers: 70+ active
 │   ├── Images: Pre-built
 │   └── Data location: /Volumes/T7\ Shield/docker/
 │
-├── [OLLAMA]
+├── [[OLLAMA]]
 │   ├── Status: ✅ RUNNING
 │   ├── Port: 11434
 │   ├── Models:
@@ -169,35 +176,35 @@
 │   │   └── llama3.1:8b (4.9 GB)
 │   └── Total: 18+ GB allocated
 │
-├── [LOCAL_PROCESSES]
+├── [[LOCAL_PROCESSES]]
 │   ├── OmniRoute (v16.3.1)
 │   ├── MCP servers (3x)
 │   ├── Neo4j backend
 │   ├── Qdrant backend
 │   └── LiveKit (real-time comms)
 │
-└── [RESOURCE_LIMITS]
+└── [[RESOURCE_LIMITS]]
     ├── CPU: Shared (multi-core available)
     ├── Memory: Unified memory management
     └── Thermal: Managed by OS
 ```
 
-### [MAC_AIR]
+### [[MAC_AIR]]
 
 ```
-[MAC_AIR_COMPUTE]
-├── [LOCAL_OLLAMA]
+[[MAC_AIR_COMPUTE]]
+├── [[LOCAL_OLLAMA]]
 │   ├── Status: ✅ RUNNING
 │   ├── Port: localhost:11434
 │   ├── Models: nomic-embed-text:latest (274 MB)
 │   └── Use: Text embeddings only
 │
-├── [CLAUDE_CODE]
+├── [[CLAUDE_CODE]]
 │   ├── Status: ✅ ACTIVE
 │   ├── Model: Claude Haiku 4.5
 │   └── Connected to: Mac Studio via Tailscale
 │
-└── [DEVELOPMENT_ENVIRONMENT]
+└── [[DEVELOPMENT_ENVIRONMENT]]
     ├── Git: Installed
     ├── Node.js: Installed
     ├── Python: 3.11+
@@ -206,20 +213,20 @@
 
 ---
 
-## [STORAGE_LAYER]
+## [[STORAGE_LAYER]]
 
 ### Volume Types
 
 ```
-[STORAGE]
-├── [HOST_PATH]
-│   └── [BIND_MOUNT]
+[[STORAGE]]
+├── [[HOST_PATH]]
+│   └── [[BIND_MOUNT]]
 │       ├── HOST: /Volumes/T7\ Shield/...
 │       ├── STATUS: Active
 │       ├── CONTAINERS: 70+
 │       └── USE: Persistent data access
 │
-└── [DOCKER_VOLUME]
+└── [[DOCKER_VOLUME]]
     ├── MANAGED_BY: Docker
     ├── LOCATION: /Volumes/T7\ Shield/docker/volumes/
     ├── COUNT: 150+
@@ -229,25 +236,25 @@
 ### Data Locations
 
 ```
-[OMNIROUTE_DATA]
+[[OMNIROUTE_DATA]]
 ├── Location: /Volumes/T7\ Shield/omniroute/
 ├── Size: ~50 GB
 ├── Contents: Call logs, configurations, SQLite DB
 └── Access: Docker bind mount
 
-[DOCKER_VOLUMES]
+[[DOCKER_VOLUMES]]
 ├── Location: /Volumes/T7\ Shield/docker/volumes/
 ├── Size: ~200 GB
 ├── Containers: Neo4j, Qdrant, PostgreSQL, Redis, etc.
 └── Backup: Daily snapshots
 
-[MODEL_CACHE]
+[[MODEL_CACHE]]
 ├── Location: /Volumes/T7\ Shield/models/
 ├── Size: 30+ GB
 ├── Models: Ollama local models
 └── Shared: Mac Studio ← Mac Air via Tailscale
 
-[REPOSITORIES]
+[[REPOSITORIES]]
 ├── Location: /Volumes/T7\ Shield/repos/
 ├── Size: 500+ GB
 ├── Git: 1,740+ repos indexed
@@ -256,23 +263,23 @@
 
 ---
 
-## [DOCKER]
+## [[DOCKER]]
 
 ```
-[DOCKER]
-├── [DOCKER_ENGINE]
+[[DOCKER]]
+├── [[DOCKER_ENGINE]]
 │   ├── Location: Mac Studio
 │   ├── Status: ✅ RUNNING
 │   ├── Version: Latest Stable
 │   └── Data dir: /Volumes/T7\ Shield/docker/
 │
-├── [DOCKER_COMPOSE]
+├── [[DOCKER_COMPOSE]]
 │   ├── File: _INFRASTRUCTURE/docker-compose.yml
 │   ├── Services: 8 core services
 │   ├── Health checks: All enabled
 │   └── Restart policy: on-failure
 │
-├── [CONTAINERS]
+├── [[CONTAINERS]]
 │   ├── Neo4j (7687, 7474) — Graph DB
 │   ├── Qdrant (6333) — Vector store
 │   ├── PostgreSQL (5433) — Relational DB
@@ -282,19 +289,19 @@
 │   ├── LiveKit — Real-time comms
 │   └── n8n_postgres — Automation DB
 │
-├── [NETWORKS]
+├── [[NETWORKS]]
 │   ├── bridge — Default
 │   ├── host — Mac Studio native
 │   └── custom — Inter-container
 │
-├── [VOLUMES]
+├── [[VOLUMES]]
 │   ├── neo4j_data
 │   ├── qdrant_data
 │   ├── postgres_data
 │   ├── redis_data
 │   └── omniroute_data
 │
-└── [RESOURCE_MANAGEMENT]
+└── [[RESOURCE_MANAGEMENT]]
     ├── CPU limits: Per container
     ├── Memory limits: Per container
     ├── Disk: Shared with T7 Shield
@@ -303,12 +310,12 @@
 
 ---
 
-## [SERVICES]
+## [[SERVICES]]
 
 ```
-[SERVICES_LAYER]
+[[SERVICES_LAYER]]
 │
-├── [OMNIROUTE] ✅
+├── [[OMNIROUTE]] ✅
 │   ├── Port: 3004 (HTTP)
 │   ├── Container: omniroute:latest
 │   ├── Status: LIVE
@@ -321,7 +328,7 @@
 │   ├── MCP: SSE & Stdio transports
 │   └── Last verified: 2026-10-02 06:15 PM
 │
-├── [NEO4J] ✅
+├── [[NEO4J]] ✅
 │   ├── Bolt: bolt://100.87.214.70:7687
 │   ├── Browser: http://100.87.214.70:7474
 │   ├── Container: neo4j:5.23.0
@@ -331,7 +338,7 @@
 │   ├── User: neo4j / changeme (⚠️ change ASAP)
 │   └── Last verified: 2026-10-02 06:15 PM (v5.23.0)
 │
-├── [QDRANT] ✅
+├── [[QDRANT]] ✅
 │   ├── API: http://100.87.214.70:6333
 │   ├── Container: qdrant:latest
 │   ├── Status: LIVE
@@ -340,7 +347,7 @@
 │   ├── Port: 6333
 │   └── Last verified: 2026-10-02 (port open)
 │
-├── [POSTGRESQL]
+├── [[POSTGRESQL]]
 │   ├── Port: 5433 (tunneled from Mac Air)
 │   ├── Container: postgres:latest
 │   ├── Status: ✅ RUNNING
@@ -349,7 +356,7 @@
 │   ├── Tunnel: SSH -L 5433:localhost:5433
 │   └── Last verified: 2026-10-02 (tunnel open)
 │
-├── [REDIS] ✅
+├── [[REDIS]] ✅
 │   ├── Port: 6379 (tunneled from Mac Air)
 │   ├── Container: redis:latest
 │   ├── Status: RUNNING
@@ -357,20 +364,20 @@
 │   ├── Cache: In-memory
 │   └── Last verified: 2026-10-02 (PONG)
 │
-├── [OLLAMA] ✅
+├── [[OLLAMA]] ✅
 │   ├── HTTP: http://100.87.214.70:11434
 │   ├── Status: RUNNING
 │   ├── Models: 3 loaded
 │   ├── Port: 11434
 │   └── Last verified: 2026-10-02 (models list)
 │
-├── [OPENOBSERVE]
+├── [[OPENOBSERVE]]
 │   ├── Port: Custom
 │   ├── Status: RUNNING
 │   ├── Logs: Centralized
 │   └── Metrics: Real-time
 │
-└── [LIVEKIT]
+└── [[LIVEKIT]]
     ├── Ports: 17880-17882
     ├── Status: RUNNING
     ├── Protocol: WebRTC
@@ -379,20 +386,20 @@
 
 ---
 
-## [NETWORK]
+## [[NETWORK]]
 
 ### Network Topology
 
 ```
-[NETWORK_TOPOLOGY]
+[[NETWORK_TOPOLOGY]]
 │
-├── [LOCAL_LAN]
+├── [[LOCAL_LAN]]
 │   ├── Mac Studio: 192.168.1.11
 │   ├── Mac Air: 192.168.1.79
 │   ├── Network: 192.168.1.0/24
 │   └── Status: ✅ ACTIVE (direct LAN)
 │
-├── [TAILSCALE_VPN]
+├── [[TAILSCALE_VPN]]
 │   ├── Tailnet: Worldwidebro@
 │   ├── Mac Studio IP: 100.87.214.70
 │   ├── Mac Air IP: 100.121.17.63
@@ -400,12 +407,12 @@
 │   ├── Connectivity: Direct (192.168.1.11:41641)
 │   └── Fallback: VPN tunnel
 │
-├── [INTERNET]
+├── [[INTERNET]]
 │   ├── Upstream: ISP
 │   ├── DNS: Quad9 + Cloudflare
 │   └── Status: ✅ AVAILABLE
 │
-└── [DNS]
+└── [[DNS]]
     ├── macOS DNS: System
     ├── Tailscale MagicDNS: ✅ ENABLED
     ├── Hosts: macstudio.local, mac-studio
@@ -415,9 +422,9 @@
 ### Network Flows
 
 ```
-[NETWORK_FLOWS]
+[[NETWORK_FLOWS]]
 │
-├── [MAC_AIR_TO_MAC_STUDIO_HTTP]
+├── [[MAC_AIR_TO_MAC_STUDIO_HTTP]]
 │   ├── Source: 100.121.17.63 (Mac Air)
 │   ├── Destination: 100.87.214.70 (Mac Studio)
 │   ├── Ports: 3004 (OmniRoute), 7474 (Neo4j), 6333 (Qdrant), 11434 (Ollama)
@@ -425,7 +432,7 @@
 │   ├── Status: ✅ VERIFIED (2026-10-02)
 │   └── Latency: <5ms (LAN direct)
 │
-├── [MAC_AIR_TO_MAC_STUDIO_SSH]
+├── [[MAC_AIR_TO_MAC_STUDIO_SSH]]
 │   ├── Source: 100.121.17.63 (Mac Air)
 │   ├── Destination: 100.87.214.70:22 (Mac Studio SSH)
 │   ├── Auth: SSH key (id_ed25519)
@@ -433,14 +440,14 @@
 │   ├── Status: ✅ VERIFIED (2026-10-02)
 │   └── Latency: <10ms
 │
-├── [MAC_AIR_DB_TUNNELS]
+├── [[MAC_AIR_DB_TUNNELS]]
 │   ├── PostgreSQL: ssh -N -L 5433:localhost:5433 macstudio
 │   ├── Redis: ssh -N -L 6379:localhost:6379 macstudio
 │   ├── Status: ✅ ACTIVE (PIDs 76623, 76627)
 │   ├── Tunnel type: SSH port forwarding
 │   └── Last verified: 2026-10-02
 │
-└── [CLAUDE_CODE_TO_OMNIROUTE]
+└── [[CLAUDE_CODE_TO_OMNIROUTE]]
     ├── Source: Claude Code (localhost:11434)
     ├── Destination: OmniRoute (100.87.214.70:3004)
     ├── Protocol: HTTP/JSON
@@ -451,17 +458,17 @@
 
 ---
 
-## [TAILSCALE]
+## [[TAILSCALE]]
 
 ```
-[TAILSCALE]
-├── [TAILNET]
+[[TAILSCALE]]
+├── [[TAILNET]]
 │   ├── Name: Worldwidebro@
 │   ├── Nodes: 6 active, 2 offline
 │   ├── Status: ✅ ACTIVE
 │   └── ACLs: All machines can reach each other
 │
-├── [MAC_STUDIO_NODE]
+├── [[MAC_STUDIO_NODE]]
 │   ├── IP: 100.87.214.70
 │   ├── Hostname: mac-studio
 │   ├── Connection: Direct (192.168.1.11:41641)
@@ -470,7 +477,7 @@
 │   ├── Uptime: 99.9%
 │   └── Last seen: Now
 │
-├── [MAC_AIR_NODE]
+├── [[MAC_AIR_NODE]]
 │   ├── IP: 100.121.17.63
 │   ├── Hostname: aces-macbook-air-1
 │   ├── Connection: VPN (no direct LAN available from this IP)
@@ -479,13 +486,13 @@
 │   ├── Uptime: 99.8%
 │   └── Last seen: Now
 │
-├── [OTHER_NODES]
+├── [[OTHER_NODES]]
 │   ├── iPhone: 100.126.240.124 (offline: 79d)
 │   ├── iMac: 100.126.240.61 (offline: 204d)
 │   ├── iPad: 100.110.180.123 (offline: 79d)
 │   └── OmniRoute: 100.80.229.113 (offline: 16d)
 │
-└── [CONNECTIVITY]
+└── [[CONNECTIVITY]]
     ├── Status: ✅ VERIFIED
     ├── Last test: 2026-10-02 06:15 PM
     ├── Protocol: Tailscale UDP + TCP fallback
@@ -494,14 +501,14 @@
 
 ---
 
-## [CONNECTIVITY_TESTING]
+## [[CONNECTIVITY_TESTING]]
 
 ### Evidence Registry
 
 ```
-[CONNECTIVITY_MATRIX]
+[[CONNECTIVITY_MATRIX]]
 │
-├── [DEVICE_TO_DEVICE] ✅
+├── [[DEVICE_TO_DEVICE]] ✅
 │   ├── [MAC_AIR → MAC_STUDIO]
 │   │   ├── Protocol: SSH
 │   │   ├── Command: ssh macstudio "echo works"
@@ -515,7 +522,7 @@
 │       ├── Latency: <5ms (direct LAN)
 │       └── Status: ✅ DIRECT LAN CONNECTION
 │
-├── [DEVICE_TO_SERVICE] ✅
+├── [[DEVICE_TO_SERVICE]] ✅
 │   ├── [MAC_AIR → NEO4J:7474]
 │   │   ├── Command: curl http://100.87.214.70:7474
 │   │   ├── Result: ✅ HTTP 200, version 5.23.0
@@ -540,7 +547,7 @@
 │       ├── Timestamp: 2026-10-02 06:15 PM
 │       └── Type: Model router & gateway
 │
-├── [DATABASE_TUNNELS] ✅
+├── [[DATABASE_TUNNELS]] ✅
 │   ├── [REDIS_TUNNEL:6379]
 │   │   ├── SSH: ssh -N -L 6379:localhost:6379 macstudio
 │   │   ├── Command: redis-cli -h localhost ping
@@ -557,7 +564,7 @@
 │       ├── Timestamp: 2026-10-02 06:15 PM
 │       └── Status: TUNNEL OPEN (DB auth needed)
 │
-└── [APPLICATION_TO_INFRASTRUCTURE]
+└── [[APPLICATION_TO_INFRASTRUCTURE]]
     ├── [CLAUDE_CODE → OMNIROUTE]
     │   ├── Config: ~/.claude/settings.json
     │   ├── MCP Transport: SSE + Stdio
@@ -574,42 +581,42 @@
 
 ---
 
-## [SECURITY]
+## [[SECURITY]]
 
 ```
-[SECURITY_LAYER]
+[[SECURITY_LAYER]]
 │
-├── [AUTHENTICATION]
-│   ├── [SSH]
+├── [[AUTHENTICATION]]
+│   ├── [[SSH]]
 │   │   ├── Key: ~/.ssh/id_ed25519
 │   │   ├── Auth: Passwordless (key-based)
 │   │   ├── Status: ✅ VERIFIED
 │   │   └── Authorized on: Mac Studio
 │   │
-│   ├── [TAILSCALE]
+│   ├── [[TAILSCALE]]
 │   │   ├── Auth: OAuth via Tailscale.com
 │   │   ├── Status: ✅ AUTHENTICATED
 │   │   └── Interval: 24h re-auth
 │   │
-│   └── [OMNIROUTE]
+│   └── [[OMNIROUTE]]
 │       ├── API Key: sk-30c31902dc868c0d-9d94e1-e953ae37 (✅ in ~/.omniroute/config.json)
 │       ├── Usage: OAuth preferred for services
 │       └── Rotation: Quarterly
 │
-├── [AUTHORIZATION]
+├── [[AUTHORIZATION]]
 │   ├── Tailscale ACLs: All machines can reach each other
 │   ├── SSH: Based on key presence in authorized_keys
 │   ├── Docker: Network isolation via bridge
 │   └── OmniRoute: Role-based (admin, user, viewer)
 │
-├── [SECRETS_MANAGEMENT]
+├── [[SECRETS_MANAGEMENT]]
 │   ├── Bitwarden: Master credentials store
 │   ├── .env files: In /Volumes/T7\ Shield (not in git)
 │   ├── SSH keys: ~/.ssh/ (mode 0600)
 │   ├── API keys: Documented in Bitwarden (✅ not hardcoded)
 │   └── TODO: Rotate Neo4j default password (changeme)
 │
-└── [FIREWALL]
+└── [[FIREWALL]]
     ├── macOS firewall: Default (allow SSH)
     ├── Tailscale: Private network (no direct internet exposure)
     ├── Docker: Network namespace isolation
@@ -618,25 +625,25 @@
 
 ---
 
-## [OBSERVABILITY]
+## [[OBSERVABILITY]]
 
 ```
-[OBSERVABILITY_LAYER]
+[[OBSERVABILITY_LAYER]]
 │
-├── [LOGGING]
+├── [[LOGGING]]
 │   ├── OpenObserve: Centralized logs
 │   ├── Docker logs: Per-container
 │   ├── Syslog: macOS system logs
 │   └── Application logs: Various locations
 │
-├── [METRICS]
+├── [[METRICS]]
 │   ├── CPU: Per-container and system
 │   ├── Memory: Unified memory tracking
 │   ├── Disk: /Volumes/T7\ Shield usage
 │   ├── Network: Packet counts, latency
 │   └── Services: Health checks per container
 │
-├── [HEALTH_CHECKS]
+├── [[HEALTH_CHECKS]]
 │   ├── Docker: Built-in health checks
 │   ├── Neo4j: /db/neo4j/tx endpoint
 │   ├── Qdrant: /health endpoint
@@ -644,7 +651,7 @@
 │   ├── Redis: ping command
 │   └── Interval: Every 30s (configurable)
 │
-└── [MONITORING]
+└── [[MONITORING]]
     ├── Uptime: 99.9% target
     ├── Latency: <50ms acceptable
     ├── Error rate: <0.1% acceptable
@@ -653,12 +660,12 @@
 
 ---
 
-## [KNOWN_ISSUES_AND_FIXES]
+## [[KNOWN_ISSUES_AND_FIXES]]
 
 ```
-[ISSUES_LOG]
+[[ISSUES_LOG]]
 
-[ISSUE_001] OmniRoute Port Mismatch
+[[ISSUE_001]] OmniRoute Port Mismatch
 ├── Issue: Documentation said port 20128, actual port 3004
 ├── Impact: Client connections failed
 ├── Root cause: Port configuration drift
@@ -669,20 +676,20 @@
 │   └── Commit: c75e8eb6
 └── Status: ✅ RESOLVED
 
-[ISSUE_002] PostgreSQL Credentials
+[[ISSUE_002]] PostgreSQL Credentials
 ├── Issue: postgres role doesn't exist on Mac Studio
 ├── Impact: Tunnel open, but cannot authenticate
 ├── Root cause: Database initialization not completed
 ├── Fix: Pending (need to configure n8n_postgres user)
 └── Status: ⏳ IN PROGRESS
 
-[ISSUE_003] NFS Export
+[[ISSUE_003]] NFS Export
 ├── Issue: NFS requires sudo, no passwordless sudo configured
 ├── Impact: Cannot mount T7 Shield from Mac Air
 ├── Workaround: Use Syncthing (peer-to-peer sync)
 └── Status: ⏳ DEFER TO SYNCTHING
 
-[ISSUE_004] Mac Air Storage
+[[ISSUE_004]] Mac Air Storage
 ├── Issue: 5.3 GB free (98% full)
 ├── Impact: No room for operations
 ├── Fix: Clean ~/.cache, ~/.npm, ~/Library/Caches
@@ -692,7 +699,7 @@
 
 ---
 
-## [VERIFICATION_COMMANDS]
+## [[VERIFICATION_COMMANDS]]
 
 Use these to re-verify the infrastructure:
 
@@ -704,7 +711,7 @@ ssh macstudio "echo ✅ SSH works"
 curl -s http://100.87.214.70:7474 | jq '.neo4j_version'
 
 # Ollama
-curl -s http://100.87.214.70:11434/api/tags | jq '.models[0].name'
+curl -s http://100.87.214.70:11434/api/tags | jq '.models[[0]].name'
 
 # OmniRoute
 curl -s http://100.87.214.70:3004/dashboard | head -1
@@ -716,7 +723,7 @@ curl -s http://100.87.214.70:6333/health
 redis-cli -h localhost ping
 
 # PostgreSQL tunnel
-psql -h localhost -p 5433 -U [user] -d company_brain -c "SELECT 1;"
+psql -h localhost -p 5433 -U [[user]] -d company_brain -c "SELECT 1;"
 
 # All Tailscale nodes
 tailscale status
@@ -730,23 +737,23 @@ ps aux | grep "ssh -N -L"
 
 ---
 
-## [NEXT_ACTIONS]
+## [[NEXT_ACTIONS]]
 
 ```
-[IMMEDIATE] (This week)
+[[IMMEDIATE]] (This week)
 ├── [ ] Fix Neo4j password (changeme → strong password in Bitwarden)
 ├── [ ] Clean Mac Air storage (target: 100+ GB free)
 ├── [ ] Configure PostgreSQL role for company_brain user
 ├── [ ] Verify Qdrant /health endpoint
 └── [ ] Start Syncthing UI configuration
 
-[SOON] (Next 2 weeks)
+[[SOON]] (Next 2 weeks)
 ├── [ ] Set up Syncthing folder pairs
 ├── [ ] Test folder sync (bidirectional)
 ├── [ ] Document PostgreSQL connection pooling
 └── [ ] Update Docker compose with resource limits
 
-[PLANNED] (Next month)
+[[PLANNED]] (Next month)
 ├── [ ] Set up NFS export (once sudo config resolved)
 ├── [ ] Implement automated backups
 ├── [ ] Add monitoring alerts

@@ -15,13 +15,13 @@
     "semantic_hash": ""
   },
   "/Users/acebless/Documents/The Company/Company Brain/.obsidian/graph.json": {
-    "mtime": 1790980388.007999,
-    "ast_hash": "32a1cc426a4801677529a9acd4a9706b",
+    "mtime": 1790987151.654,
+    "ast_hash": "6c0ed9354c60360e96dae3d77e1c64b6",
     "semantic_hash": ""
   },
   "/Users/acebless/Documents/The Company/Company Brain/.obsidian/workspace.json": {
-    "mtime": 1790985560.052195,
-    "ast_hash": "2d8c53ec45da13e419a5fbe173804d17",
+    "mtime": 1790987144.0530288,
+    "ast_hash": "b630cb00905f7d0539edfc1d3d9ceb4d",
     "semantic_hash": ""
   },
   "/Users/acebless/Documents/The Company/Company Brain/_PIPELINES/ingest_connectivity_graph.sh": {
@@ -30,98 +30,98 @@
     "semantic_hash": ""
   },
   "/Users/acebless/Documents/The Company/Company Brain/CLAUDE_API.md": {
-    "mtime": 1790981111.087881,
-    "ast_hash": "441aecb7cf0a27e87ee82c9f75acdc2b",
+    "mtime": 1790987312.0495207,
+    "ast_hash": "28f289651614be1abcb844c1f3593c8a",
     "semantic_hash": ""
   },
   "/Users/acebless/Documents/The Company/Company Brain/CLAUDE_AUTONOMY.md": {
-    "mtime": 1790981149.0349832,
-    "ast_hash": "9c955ec5661c5df69199765a03c0aa80",
+    "mtime": 1790987312.040217,
+    "ast_hash": "5c60495385d0ce63f9b9964659e8cc2a",
     "semantic_hash": ""
   },
   "/Users/acebless/Documents/The Company/Company Brain/CLAUDE_CAPABILITIES.md": {
-    "mtime": 1790981004.6613512,
-    "ast_hash": "23c579dcd3d0bbcc3154fca64aad048a",
+    "mtime": 1790987312.0482283,
+    "ast_hash": "9850712ac1f9f1c49b87dae0e1d02966",
     "semantic_hash": ""
   },
   "/Users/acebless/Documents/The Company/Company Brain/CLAUDE_CODE.md": {
-    "mtime": 1790981056.3582973,
-    "ast_hash": "ad26c528308ee6d6330796959e870a9b",
+    "mtime": 1790987312.0424392,
+    "ast_hash": "b47d1ab7f7a868334eafc5aa9d000ea8",
     "semantic_hash": ""
   },
   "/Users/acebless/Documents/The Company/Company Brain/CLAUDE_INTEGRATION_MAP.md": {
-    "mtime": 1790985434.0066934,
-    "ast_hash": "26d9499cdf699916272bc6fce602d30c",
+    "mtime": 1790987312.0479007,
+    "ast_hash": "ec2d21bdb51a728545c1640f093f5352",
     "semantic_hash": ""
   },
   "/Users/acebless/Documents/The Company/Company Brain/CLAUDE_MASTER_ONTOLOGY.md": {
-    "mtime": 1790980923.3291945,
-    "ast_hash": "a7b78703c6daf238fc9a1adb385404e3",
+    "mtime": 1790987312.0438719,
+    "ast_hash": "a94b8ad0930da816e42450c05bcfaf67",
     "semantic_hash": ""
   },
   "/Users/acebless/Documents/The Company/Company Brain/CLAUDE_REALITY.md": {
-    "mtime": 1790981208.5884151,
-    "ast_hash": "fdf71874e1f5e235e7c7aae29a388535",
+    "mtime": 1790987312.0463643,
+    "ast_hash": "2fe36b183ab58509434d7f8018a6c57b",
     "semantic_hash": ""
   },
   "/Users/acebless/Documents/The Company/Company Brain/CROSS_LINK_MASTER_ONTOLOGY.md": {
-    "mtime": 1790982657.8754802,
-    "ast_hash": "55b2ca96a8ae4f34d07732d898d27119",
+    "mtime": 1790987312.0460231,
+    "ast_hash": "851a7b9c34a6c13e6957b02e15327368",
     "semantic_hash": ""
   },
   "/Users/acebless/Documents/The Company/Company Brain/DATA_FLOW.md": {
-    "mtime": 1790979743.373273,
-    "ast_hash": "b34bd784e59c971acb67c43a7ee0433a",
+    "mtime": 1790987312.0467722,
+    "ast_hash": "cde84c78959e09713a831245bce44a6a",
     "semantic_hash": ""
   },
   "/Users/acebless/Documents/The Company/Company Brain/FILESYSTEM_AND_DISKMAP_MASTER_ONTOLOGY.md": {
-    "mtime": 1790985558.9662673,
-    "ast_hash": "5abfee754dabfb6d92e3af4f2b768347",
+    "mtime": 1790987312.0445359,
+    "ast_hash": "1b50ad18cc782027bd9b74b13915b71c",
     "semantic_hash": ""
   },
   "/Users/acebless/Documents/The Company/Company Brain/GITHUB_MASTER_ONTOLOGY.md": {
-    "mtime": 1790981233.3791583,
-    "ast_hash": "402b3c814cc3d4edae22307d640ed23c",
+    "mtime": 1790987312.0413377,
+    "ast_hash": "9ec9a0ef608c970d3fb6f74275c4574c",
     "semantic_hash": ""
   },
   "/Users/acebless/Documents/The Company/Company Brain/OBSIDIAN_MASTER_ONTOLOGY.md": {
-    "mtime": 1790982614.1546817,
-    "ast_hash": "498265131ab35d6ed724c6d075f6a658",
+    "mtime": 1790987312.0431583,
+    "ast_hash": "b735bb8ea75a1d7913f41cfa137a2288",
     "semantic_hash": ""
   },
   "/Users/acebless/Documents/The Company/Company Brain/OMNIROUTE_MASTER_ONTOLOGY.md": {
-    "mtime": 1790980833.6594524,
-    "ast_hash": "69ab5eb14528767547e7e1dfaf99805a",
+    "mtime": 1790987312.0504093,
+    "ast_hash": "e466792cf039a6622c954a3cf8e08b1e",
     "semantic_hash": ""
   },
   "/Users/acebless/Documents/The Company/Company Brain/SYSTEM_CONNECTIVITY_AUDIT.md": {
-    "mtime": 1790985553.297237,
-    "ast_hash": "3358dfd394e6ceee86145dd9021d7105",
+    "mtime": 1790986943.2582076,
+    "ast_hash": "6924f5ea26b4c8aed65385e93c2dab35",
     "semantic_hash": ""
   },
   "/Users/acebless/Documents/The Company/Company Brain/SYSTEM_CONNECTIVITY_WIRED.md": {
-    "mtime": 1790985553.2977054,
-    "ast_hash": "8c371a79c469d49a8cc3ea056bde2443",
+    "mtime": 1790987312.0406425,
+    "ast_hash": "76d1bc52c0f468f09f95df9192eeb8e4",
     "semantic_hash": ""
   },
   "/Users/acebless/Documents/The Company/Company Brain/TASK_EXECUTION_MASTER_ONTOLOGY.md": {
-    "mtime": 1790980230.7821872,
-    "ast_hash": "b1361d15c5278e23e73341b37eb04333",
+    "mtime": 1790987312.049147,
+    "ast_hash": "8d65a8523d751bcbdba9bfe5e79535a9",
     "semantic_hash": ""
   },
   "/Users/acebless/Documents/The Company/Company Brain/WHERE_WE_ARE.md": {
-    "mtime": 1790985553.298169,
-    "ast_hash": "c1e1b67a13ced49c8ad7fb3db243de38",
+    "mtime": 1790987312.0452225,
+    "ast_hash": "fca8555e7761b7f5733616920b615e89",
     "semantic_hash": ""
   },
   "/Users/acebless/Documents/The Company/Company Brain/_DOCS/INFRASTRUCTURE_REFERENCE.md": {
-    "mtime": 1790979494.184214,
-    "ast_hash": "8f32ef4fedd04beb278f7948e442753a",
+    "mtime": 1790987312.0677876,
+    "ast_hash": "63b5f599d0c5bf2183038040016d3ec6",
     "semantic_hash": ""
   },
   "/Users/acebless/Documents/The Company/Company Brain/_INFRASTRUCTURE/INFRASTRUCTURE.md": {
-    "mtime": 1790979464.550916,
-    "ast_hash": "38c92218ab61970497db7c16c82f960f",
+    "mtime": 1790987312.1079733,
+    "ast_hash": "232afbadf8467b593b0f5800471d70d5",
     "semantic_hash": ""
   },
   "/Users/acebless/Documents/The Company/Company Brain/_REGISTRIES/CANONICAL/CLAUDE_SUBAGENTS_REGISTRY.yaml": {
@@ -142,6 +142,2346 @@
   "/Users/acebless/Documents/The Company/Company Brain/update_diskmap.py": {
     "mtime": 1790985558.941442,
     "ast_hash": "6035837ea44a926ac8c8c7fb388d7955",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/mount_network_drives.sh": {
+    "mtime": 1790985799.9415367,
+    "ast_hash": "9d750f2c5183eea28a2941640e0bdf50",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/AAS_ARCHITECTURE.md": {
+    "mtime": 1790987030.6056626,
+    "ast_hash": "6f469fedc0febcb24a2daadf8dd0678d",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/AAS_CORE.md": {
+    "mtime": 1790987030.6057208,
+    "ast_hash": "e66eb63588fa3c29fa77c39373563718",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/AAS_IDENTITY.md": {
+    "mtime": 1790987030.605596,
+    "ast_hash": "e70bca6c89fd299b88565e6acbe869dc",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/AGENTIC_AWESOME_SKILLS_MASTER_ONTOLOGY.md": {
+    "mtime": 1790987312.0785959,
+    "ast_hash": "5429d8f7c52083236982c706ea40db9e",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/BUNDLES/BUNDLES.md": {
+    "mtime": 1790987030.6075025,
+    "ast_hash": "4048510e6a9ccf152c521f4c6d618c4c",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/BUNDLES/DOMAIN_BUNDLES.md": {
+    "mtime": 1790987030.6076238,
+    "ast_hash": "30bee24f1f0e6d24e26fa4214334ba2c",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/BUNDLES/GOAL_BUNDLES.md": {
+    "mtime": 1790987030.6077192,
+    "ast_hash": "194c866fd57931aa5fc580ced627dcc5",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/BUNDLES/ROLE_BUNDLES.md": {
+    "mtime": 1790987030.6075609,
+    "ast_hash": "4ab623abc8852f99d557596113dd042e",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/DISCOVERY/CAPABILITY_MATCHING.md": {
+    "mtime": 1790987030.6069815,
+    "ast_hash": "9525cdf68c2e168dbe54726b05a4f217",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/DISCOVERY/DISCOVERY_EVIDENCE.md": {
+    "mtime": 1790987030.6070402,
+    "ast_hash": "18c1a301938f34d76f1bc65895ea53e6",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/DISCOVERY/FILTERING.md": {
+    "mtime": 1790987030.606865,
+    "ast_hash": "424bce20a1d349a72c90d8446e6ee5dc",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/DISCOVERY/MACHINE_DISCOVERY.md": {
+    "mtime": 1790987030.6069221,
+    "ast_hash": "665dbbbcdcaeca33e1bc0b9d76e019ef",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/DISCOVERY/SEARCH.md": {
+    "mtime": 1790987030.6068099,
+    "ast_hash": "157dbb52bf93332ed6dfcf2de913b4ce",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/DISCOVERY/SKILL_DISCOVERY.md": {
+    "mtime": 1790987030.6067555,
+    "ast_hash": "c8ec90f08531d76c83cbde52378f6bbe",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/GRAPH/AAS_COMPANY_BRAIN_INTEGRATION.md": {
+    "mtime": 1790987030.6106944,
+    "ast_hash": "d4339d3d95dc6c5f096b9aba81bda094",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/GRAPH/AAS_KNOWLEDGE_GRAPH.md": {
+    "mtime": 1790987030.6102972,
+    "ast_hash": "18746056b31fe670bca1a54b385f386e",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/GRAPH/AGENT_SKILL_GRAPH.md": {
+    "mtime": 1790987030.6104949,
+    "ast_hash": "878d806066fc0421c6cd3721935f4d25",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/GRAPH/CAPABILITY_GRAPH.md": {
+    "mtime": 1790987030.6104233,
+    "ast_hash": "ca3df34ea350d5481f51b9cbad4c85f3",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/GRAPH/SKILL_GRAPH.md": {
+    "mtime": 1790987030.610367,
+    "ast_hash": "52b34e2998939dbd51931cba3317297f",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/GRAPH/TOOL_SKILL_GRAPH.md": {
+    "mtime": 1790987030.6105561,
+    "ast_hash": "bb2ccc6a36f713218db5299ea59eca00",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/GRAPH/WORKFLOW_GRAPH.md": {
+    "mtime": 1790987030.6106277,
+    "ast_hash": "524a77377e09967fa1946ef8ea24b5de",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/HOSTS/ANTIGRAVITY.md": {
+    "mtime": 1790987030.6083386,
+    "ast_hash": "d93dda7a5c284989485c1cbe5419731b",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/HOSTS/CLAUDE.md": {
+    "mtime": 1790987030.608209,
+    "ast_hash": "0b4ff5002557989dd1db346593f2364e",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/HOSTS/CODEX.md": {
+    "mtime": 1790987030.608271,
+    "ast_hash": "d4e8451e34fc63011a1f317e14dc92c0",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/HOSTS/COPILOT.md": {
+    "mtime": 1790987030.6085203,
+    "ast_hash": "05b6a52c8faf6d02d86fa0fde4c0513b",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/HOSTS/CURSOR.md": {
+    "mtime": 1790987030.608461,
+    "ast_hash": "4d80fd14f7df40c21f028f1cb44ee737",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/HOSTS/GEMINI.md": {
+    "mtime": 1790987030.6083996,
+    "ast_hash": "c5205e124499cfa5c76b4c7801b52c4f",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/HOSTS/KIRO.md": {
+    "mtime": 1790987030.6085842,
+    "ast_hash": "3f5b033894b6aaf4be3b8c18dc427ff4",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/HOSTS/OPENCODE.md": {
+    "mtime": 1790987030.6086519,
+    "ast_hash": "f4bd74b7af9cf3edca694417f1fa68f0",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/INSTALLATION/DRY_RUN.md": {
+    "mtime": 1790987030.6094804,
+    "ast_hash": "1d810b937eecec51d68dccfb839f7b37",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/INSTALLATION/INSTALLATION.md": {
+    "mtime": 1790987030.609369,
+    "ast_hash": "ebf69d871e598332e6413509d10af61d",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/INSTALLATION/INSTALL_FAILURES.md": {
+    "mtime": 1790987030.609771,
+    "ast_hash": "afa2de26b7d6ea64f06868dc2c19b4f3",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/INSTALLATION/INSTALL_PREVIEW.md": {
+    "mtime": 1790987030.6094263,
+    "ast_hash": "440ed9b6a107659edf1406b12bc0abf9",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/INSTALLATION/INSTALL_VERIFICATION.md": {
+    "mtime": 1790987030.6096823,
+    "ast_hash": "9255302b67ff04dc50648ecc8545c7a1",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/MCP/AAS_MCP.md": {
+    "mtime": 1790987030.6087494,
+    "ast_hash": "dfc199ee4bdcf07c216270adee12b40f",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/MCP/MCP_CONFIGURATION.md": {
+    "mtime": 1790987030.6089118,
+    "ast_hash": "9a0ff73f5e515d539a6f9ad71c5a7016",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/MCP/MCP_RESOURCES.md": {
+    "mtime": 1790987030.6088583,
+    "ast_hash": "9035c1c5289d2a32216dd909ad3b5124",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/MCP/MCP_TOOLS.md": {
+    "mtime": 1790987030.6088061,
+    "ast_hash": "79e07b9a8dd9f58ce07047af40a5a8e0",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/MCP/MCP_VERIFICATION.md": {
+    "mtime": 1790987030.6089692,
+    "ast_hash": "dc94cb92c9d5d74f14e3e3cbe82ef57a",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/PLUGINS/PLUGINS.md": {
+    "mtime": 1790987030.6090608,
+    "ast_hash": "325679428b29ee9d6220657857fedb03",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/PLUGINS/PLUGIN_COMPATIBILITY.md": {
+    "mtime": 1790987030.6092772,
+    "ast_hash": "f51ebbe56f769df514b2d0cae4b55d4c",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/PLUGINS/PLUGIN_MANIFESTS.md": {
+    "mtime": 1790987030.6091704,
+    "ast_hash": "8b8d5297c7d325ff7e7a5297e317612d",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/PLUGINS/PLUGIN_REGISTRY.md": {
+    "mtime": 1790987030.609117,
+    "ast_hash": "158734f1307a519ca368f62843c1e299",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/PLUGINS/PLUGIN_SKILLS.md": {
+    "mtime": 1790987030.609224,
+    "ast_hash": "94904483c164cd0d41681d062b618e67",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/SECURITY/CONTENT_REVIEW.md": {
+    "mtime": 1790987030.6101313,
+    "ast_hash": "44b17782284cedd39ac22fd3708e8258",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/SECURITY/EXECUTION_SAFETY.md": {
+    "mtime": 1790987030.610189,
+    "ast_hash": "aae780b216128f274631a24a91f0aa3c",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/SECURITY/RISK_MODEL.md": {
+    "mtime": 1790987030.6100667,
+    "ast_hash": "4247e6e6301d281aa598329cfc8d6fbc",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/SECURITY/SECURITY.md": {
+    "mtime": 1790987030.6099186,
+    "ast_hash": "8c5de953dca8d6b2ce8fa4694fe97e55",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/SECURITY/TRUST_BOUNDARIES.md": {
+    "mtime": 1790987030.6099954,
+    "ast_hash": "9badedf37fbd61b616318a4b4c561571",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/SKILLS/SKILLS.md": {
+    "mtime": 1790987030.6058176,
+    "ast_hash": "5b0b57dd797dec29bdab24f361ca0714",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/SKILLS/SKILL_CATALOG.md": {
+    "mtime": 1790987030.6059933,
+    "ast_hash": "a5b05ccb62ec366420151f9c0bfc30e4",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/SKILLS/SKILL_CATEGORIES.md": {
+    "mtime": 1790987030.6061046,
+    "ast_hash": "b14e7a5aea2c089f535ff8d327d1607b",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/SKILLS/SKILL_COMPATIBILITY.md": {
+    "mtime": 1790987030.6065478,
+    "ast_hash": "f043aea90e4af7757dc919a37fff0c90",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/SKILLS/SKILL_DEPENDENCIES.md": {
+    "mtime": 1790987030.6063387,
+    "ast_hash": "0aba0a339da823257e8ac61538c68dc2",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/SKILLS/SKILL_INDEX.md": {
+    "mtime": 1790987030.6059368,
+    "ast_hash": "a6e56acf50b8f8c000a33a85fa850602",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/SKILLS/SKILL_PROVENANCE.md": {
+    "mtime": 1790987030.6064916,
+    "ast_hash": "ae4e73d5e3acc5d64556bedb8b459c8c",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/SKILLS/SKILL_REGISTRY.md": {
+    "mtime": 1790987030.605876,
+    "ast_hash": "36ac48c9fe443949ceefcf80cd3220ab",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/SKILLS/SKILL_RISK.md": {
+    "mtime": 1790987030.6062243,
+    "ast_hash": "23b559ec474da2e7d77cf27a7bb51942",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/SKILLS/SKILL_SECURITY.md": {
+    "mtime": 1790987030.6066015,
+    "ast_hash": "c41b27fcbb7cc0b6885e74e589ab3177",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/SKILLS/SKILL_TAGS.md": {
+    "mtime": 1790987030.6061661,
+    "ast_hash": "bfa4f65d8b190605c076cbd471b30277",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/SKILLS/SKILL_TYPES.md": {
+    "mtime": 1790987030.606048,
+    "ast_hash": "cb0c68e4e342f7ef310feabab10c1949",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/SKILLS/SKILL_VERIFICATION.md": {
+    "mtime": 1790987030.6066563,
+    "ast_hash": "22912fdf3dc513bf41afd980a2316ada",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/SKILLS/SKILL_VERSIONS.md": {
+    "mtime": 1790987030.606281,
+    "ast_hash": "0c9efdf1822cc6dfc90c95baf088e06a",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/STACKS/SKILL_STACKS.md": {
+    "mtime": 1790987030.6071339,
+    "ast_hash": "4c919f9ee86c6f2e8e87cf7a63d3c7b9",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/STACKS/STACK_COMPOSITION.md": {
+    "mtime": 1790987030.6071866,
+    "ast_hash": "af68f186dd9c8083f3644f6fb335e5d0",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/STACKS/STACK_EVIDENCE.md": {
+    "mtime": 1790987030.6074023,
+    "ast_hash": "1e329a06ebb333323760d1b25074ed85",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/STACKS/STACK_MANIFESTS.md": {
+    "mtime": 1790987030.6072927,
+    "ast_hash": "35ea355debad2d93c5a32edf4e438e7e",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/STACKS/STACK_PLANS.md": {
+    "mtime": 1790987030.6073482,
+    "ast_hash": "d6f6d5637a32eda50eb4aac4e84c73fc",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/STACKS/STACK_VALIDATION.md": {
+    "mtime": 1790987030.6072407,
+    "ast_hash": "af60240c9c98fc4ebef977090a429e61",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/WORKFLOWS/WORKFLOWS.md": {
+    "mtime": 1790987030.6078637,
+    "ast_hash": "e7a52bc5f56bcd61083b0d0e094090af",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/WORKFLOWS/WORKFLOW_DEPENDENCIES.md": {
+    "mtime": 1790987030.6080515,
+    "ast_hash": "79e7b95d7556698b0106ca34df187cbf",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/WORKFLOWS/WORKFLOW_ORDER.md": {
+    "mtime": 1790987030.6079981,
+    "ast_hash": "1ddb96847057210ded53874a1cccd554",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/WORKFLOWS/WORKFLOW_REGISTRY.md": {
+    "mtime": 1790987030.6079366,
+    "ast_hash": "786b9f56fd409d6ee147a99d032035b5",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AAS/WORKFLOWS/WORKFLOW_VERIFICATION.md": {
+    "mtime": 1790987030.6081154,
+    "ast_hash": "13e9db62b4dfa8e9dac2469169b57920",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AGENTS/AGENTS.md": {
+    "mtime": 1790986775.450304,
+    "ast_hash": "06bdca8048fd30227239dab25da6414a",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AGENTS/AGENTS_MASTER_ONTOLOGY.md": {
+    "mtime": 1790986775.4502285,
+    "ast_hash": "dbf1580c990ee73fa4ca5596cc30b3d4",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AGENTS/AGENT_AUTONOMY.md": {
+    "mtime": 1790986775.4520614,
+    "ast_hash": "ca3653d6ad19d587072e020f709712da",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AGENTS/AGENT_CAPABILITIES.md": {
+    "mtime": 1790986775.4506528,
+    "ast_hash": "dd00931e43754d3a1fbdeca249859f78",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AGENTS/AGENT_CLI.md": {
+    "mtime": 1790986775.4508896,
+    "ast_hash": "189f348590a63daaca499f6493e3b389",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AGENTS/AGENT_CONTEXT.md": {
+    "mtime": 1790986775.451011,
+    "ast_hash": "e631af791809cc86601111c1cf2b72f2",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AGENTS/AGENT_DELEGATION.md": {
+    "mtime": 1790986775.4513636,
+    "ast_hash": "dd465d294c898926530331dc67c75718",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AGENTS/AGENT_ESCALATION.md": {
+    "mtime": 1790986775.4515424,
+    "ast_hash": "d402936bc3f37cb0c0f2bf78ec7f3ac7",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AGENTS/AGENT_EVALUATION.md": {
+    "mtime": 1790986775.451779,
+    "ast_hash": "cb842861d5470962ad226cf26589d6be",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AGENTS/AGENT_EXECUTION.md": {
+    "mtime": 1790986775.4516585,
+    "ast_hash": "67b3bc1fbecf3ee663ba8ffed2c7adec",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AGENTS/AGENT_FAILURES.md": {
+    "mtime": 1790986775.4519498,
+    "ast_hash": "d5661e2c8b981aea12b5a9a9e93e3d74",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AGENTS/AGENT_GOVERNANCE.md": {
+    "mtime": 1790986775.4511774,
+    "ast_hash": "5d173cee81bf04fcdddf681c2333c572",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AGENTS/AGENT_HANDOFFS.md": {
+    "mtime": 1790986775.4514225,
+    "ast_hash": "d6a6c2c3464299494955dbe73e4c8ec7",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AGENTS/AGENT_HIERARCHY.md": {
+    "mtime": 1790986775.4505086,
+    "ast_hash": "adf63bc07a6786de3f4be232b2d540c3",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AGENTS/AGENT_LEARNING.md": {
+    "mtime": 1790986775.452009,
+    "ast_hash": "3bdedada4ad920d000b42b4357a084f5",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AGENTS/AGENT_MATCHING.md": {
+    "mtime": 1790986775.4513013,
+    "ast_hash": "d5940bc42bcb2e9ae51736b20cfe1e37",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AGENTS/AGENT_MCP.md": {
+    "mtime": 1790986775.4508276,
+    "ast_hash": "1eb17e914d2ae6d1e302315e4282ff10",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AGENTS/AGENT_MEMORY.md": {
+    "mtime": 1790986775.4510653,
+    "ast_hash": "95f57187a69041bdeb7ba0ea652181e2",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AGENTS/AGENT_MODELS.md": {
+    "mtime": 1790986775.4509501,
+    "ast_hash": "ec82b10fa48caa9b72ac93824fa5f3be",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AGENTS/AGENT_OBSERVABILITY.md": {
+    "mtime": 1790986775.451837,
+    "ast_hash": "b7ae15fb58dd4444a5f58bfb84a87382",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AGENTS/AGENT_ORCHESTRATION.md": {
+    "mtime": 1790986775.4515996,
+    "ast_hash": "4181dcc3c13af943ecfe482bb9fc3d98",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AGENTS/AGENT_PERFORMANCE.md": {
+    "mtime": 1790986775.4518948,
+    "ast_hash": "229e82743cfa8b6dace1db2d463eb246",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AGENTS/AGENT_PERMISSIONS.md": {
+    "mtime": 1790986775.451121,
+    "ast_hash": "09a63a2f7b429e5c41bf8ad3c5936043",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AGENTS/AGENT_REGISTRY.md": {
+    "mtime": 1790986775.4503775,
+    "ast_hash": "7bef3e278086795b2da4c7b300fbbc16",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AGENTS/AGENT_REGISTRY_SYNC.md": {
+    "mtime": 1790986775.4521258,
+    "ast_hash": "009168aa9b8fc614e5701d77b5713999",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AGENTS/AGENT_ROLES.md": {
+    "mtime": 1790986775.4505825,
+    "ast_hash": "e4e8cbf205c587eef94cb4932deb6576",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AGENTS/AGENT_ROTATIONS.md": {
+    "mtime": 1790986775.451475,
+    "ast_hash": "30a073b366764ae9f24860f747f7f612",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AGENTS/AGENT_ROUTING.md": {
+    "mtime": 1790986775.4512408,
+    "ast_hash": "4d385bf8a35719288821e3333516d0e3",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AGENTS/AGENT_SKILLS.md": {
+    "mtime": 1790986775.4507103,
+    "ast_hash": "a6ccf3d065984316b131ec6a785f1912",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AGENTS/AGENT_SOURCE_OF_TRUTH.md": {
+    "mtime": 1790986775.4521968,
+    "ast_hash": "8d21f39237fe175d5f8053e74da67560",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AGENTS/AGENT_TOOLS.md": {
+    "mtime": 1790986775.4507706,
+    "ast_hash": "c1f2f7057294630409ff753ac0e51766",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AGENTS/AGENT_TYPES.md": {
+    "mtime": 1790986775.4504466,
+    "ast_hash": "1d6ab9769d5f7c36dd4f2d385b69860b",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/AGENTS/AGENT_VERIFICATION.md": {
+    "mtime": 1790986775.4517171,
+    "ast_hash": "231b35a1c0514e52e42fc9609edbd0bc",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_2.md": {
+    "mtime": 1790986877.7193205,
+    "ast_hash": "8f26ef6004aeda0d6348f2eb275b156d",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_AGENTS.md": {
+    "mtime": 1790986877.7196271,
+    "ast_hash": "7ee2f65e167597c15e8b8371a86053fb",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_AGENT_DELEGATION.md": {
+    "mtime": 1790986877.719951,
+    "ast_hash": "2544acb0a80a9fe52f20d5c6443d3e9c",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_AGENT_REGISTRY.md": {
+    "mtime": 1790986877.7198262,
+    "ast_hash": "bbeb2c5d0fff28b08b9c7f3ad699f357",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_AGENT_ROLES.md": {
+    "mtime": 1790986877.7197583,
+    "ast_hash": "c89127ce1301259f81008f3b0f93abcd",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_AGENT_ROUTING.md": {
+    "mtime": 1790986877.7198904,
+    "ast_hash": "9022b04f7830911bbcd83b40eac2b48f",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_ARCHITECTURE.md": {
+    "mtime": 1790986877.7191875,
+    "ast_hash": "0231e367843490fb5261f0d22cde92e0",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_ARTIFACTS.md": {
+    "mtime": 1790986877.7208302,
+    "ast_hash": "f412c9f222aa303d4b56cd1ece845f79",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_CLAUDE.md": {
+    "mtime": 1790986877.7220595,
+    "ast_hash": "925ae5f80813524955b95c70ab41f8d5",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_CLI.md": {
+    "mtime": 1790986877.719383,
+    "ast_hash": "addfe070f2f82b32f194e27bf78bb307",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_CLI_COMMANDS.md": {
+    "mtime": 1790986877.7203925,
+    "ast_hash": "be39496470a597869471367881f48886",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_CODEX.md": {
+    "mtime": 1790986877.7221253,
+    "ast_hash": "18caacfeb1800351db4bb37e077bdd6a",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_CONNECTIVITY.md": {
+    "mtime": 1790986877.7225485,
+    "ast_hash": "b8c3fc65bb81ea62bdf0ad7afef9ca54",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_CONNECTIVITY_TESTS.md": {
+    "mtime": 1790986877.7226217,
+    "ast_hash": "1e58e8020a5a3b3be129b7022a2d0634",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_DIRECTIVES.md": {
+    "mtime": 1790986877.721273,
+    "ast_hash": "92687de4596f165044f64d72d3d845cc",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_DOCKER.md": {
+    "mtime": 1790986877.7222428,
+    "ast_hash": "7feeb72b1d45bd9048b12791b920bfdd",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_EXTENSIONS.md": {
+    "mtime": 1790986877.7195125,
+    "ast_hash": "4ca22ccca7c54fa602fe0de84084dbc5",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_FAILURES.md": {
+    "mtime": 1790986877.7218392,
+    "ast_hash": "7d6a535fb7be761e355b11352e438344",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_GITHUB.md": {
+    "mtime": 1790986877.7221851,
+    "ast_hash": "3212660d373b7353c82b5fc4dfd9fd64",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_IDE.md": {
+    "mtime": 1790986877.7194462,
+    "ast_hash": "e413d4f4269feab6f24105430a79afde",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_IDENTITY.md": {
+    "mtime": 1790986877.7190974,
+    "ast_hash": "7a0c914c25c37010604ec6582cde0518",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_INTEGRATION_MAP.md": {
+    "mtime": 1790986877.7226908,
+    "ast_hash": "e76a1bdce5b1f176d41f9c2b48b4c221",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_LOOPS.md": {
+    "mtime": 1790986877.7217612,
+    "ast_hash": "7951c9846ec5dea14702f74e54c5e11a",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_MASTER_ONTOLOGY.md": {
+    "mtime": 1790987312.1266084,
+    "ast_hash": "aba2134a2a1052290b49c42c33064c07",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_MCP.md": {
+    "mtime": 1790986877.7202682,
+    "ast_hash": "3815c47d9a48ad0fbd9165e883795d06",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_MCP_REGISTRY.md": {
+    "mtime": 1790986877.7203348,
+    "ast_hash": "03b6908028c1f9ab57fdbeab5dcf1690",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_NEO4J.md": {
+    "mtime": 1790986877.7223577,
+    "ast_hash": "b489884ef709535b859ff4205da4fe1b",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_OBSERVABILITY.md": {
+    "mtime": 1790986877.7216218,
+    "ast_hash": "45e57d2043d604d352c549257e98bb8a",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_OBSIDIAN.md": {
+    "mtime": 1790986877.722477,
+    "ast_hash": "35877cea0e035d4bdddfb2daa6bacab6",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_OMNIROUTE.md": {
+    "mtime": 1790986877.721968,
+    "ast_hash": "17abfb87aa3a9543ec86c0883a7ad72f",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_PERMISSIONS.md": {
+    "mtime": 1790986877.7213607,
+    "ast_hash": "68a6094f08f0228ff00a9d40038aa00f",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_PROJECTS.md": {
+    "mtime": 1790986877.7204504,
+    "ast_hash": "1bdb3ca06a7049a6ca3b3b60a47a241a",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_QDRANT.md": {
+    "mtime": 1790986877.7224166,
+    "ast_hash": "4848f5c128792b4918f7575014231f52",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_RECOVERY.md": {
+    "mtime": 1790986877.721902,
+    "ast_hash": "3e09f20815665314f25b8918b7ade891",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_REPOSITORIES.md": {
+    "mtime": 1790986877.7206986,
+    "ast_hash": "af6070b333cc26bf4361e32d85016a48",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_RULES.md": {
+    "mtime": 1790986877.7211733,
+    "ast_hash": "410790f958d4d14ace273b3616873224",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_SCHEDULES.md": {
+    "mtime": 1790986877.721061,
+    "ast_hash": "78cee6ce169d5c7a6d93192e4e2a8c96",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_SDK.md": {
+    "mtime": 1790986877.7195704,
+    "ast_hash": "73a31dea6a69c55656828254b3d310ad",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_SECURITY.md": {
+    "mtime": 1790986877.721427,
+    "ast_hash": "3645a045a61983817e7e51a512567a0a",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_SELF_HEALING.md": {
+    "mtime": 1790986877.7216892,
+    "ast_hash": "a86b9b51de86a50cbbd92b809cf0a8b4",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_SKILLS.md": {
+    "mtime": 1790986877.7200148,
+    "ast_hash": "0bfce9409664f24eb864ee1c379e66d6",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_SKILL_REGISTRY.md": {
+    "mtime": 1790986877.7200794,
+    "ast_hash": "b1888aeab88fc4dfd57581466bb532ee",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_SOURCE_OF_TRUTH.md": {
+    "mtime": 1790986877.7228758,
+    "ast_hash": "947609bf724fc679e711e6c4ef77fdaa",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_SUBAGENTS.md": {
+    "mtime": 1790986877.719693,
+    "ast_hash": "1f9d44f9828e34df25bf6f6f125cac92",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_SURFACES.md": {
+    "mtime": 1790986877.7192552,
+    "ast_hash": "3ba439b78663e25ac8160c97fd63fe5f",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_TAILSCALE.md": {
+    "mtime": 1790986877.7223022,
+    "ast_hash": "8dd2315c21f93af65feb02719f545334",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_TASKS.md": {
+    "mtime": 1790986877.7208884,
+    "ast_hash": "bd0537542c0f97f90a1de420309dcf55",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_TESTING.md": {
+    "mtime": 1790986877.7215521,
+    "ast_hash": "2fecc92b1a414f2cdcbcfece3c61a3db",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_TOOLS.md": {
+    "mtime": 1790986877.7201421,
+    "ast_hash": "49eb807af8347978c3c7e93dc6a727e6",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_TOOL_REGISTRY.md": {
+    "mtime": 1790986877.7202046,
+    "ast_hash": "cf88e6556748599ada26bce570aad35b",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_VERIFICATION.md": {
+    "mtime": 1790986877.7214901,
+    "ast_hash": "9b92eca47a4ec52aacfaedebb9b37da2",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_WORKFLOWS.md": {
+    "mtime": 1790986877.7209492,
+    "ast_hash": "046b3c70b5a638f44673d0c4cc4955d0",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_WORKSPACES.md": {
+    "mtime": 1790986877.7205105,
+    "ast_hash": "ac330d8997581f8f7315063f1fa33768",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ANTIGRAVITY/ANTIGRAVITY_WORKTREES.md": {
+    "mtime": 1790986877.7207623,
+    "ast_hash": "22821ac412d32969e0ecc027ccd6d670",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/CAPABILITIES/CAPABILITIES_MASTER_ONTOLOGY.md": {
+    "mtime": 1790986775.452331,
+    "ast_hash": "3d47fdaa637959a30c1da8976560920c",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/CAPABILITIES/CAPABILITY_DISCOVERY.md": {
+    "mtime": 1790986775.452492,
+    "ast_hash": "023b8896bfed4650cfe5c06b77d144a5",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/CAPABILITIES/CAPABILITY_GAPS.md": {
+    "mtime": 1790986775.452601,
+    "ast_hash": "e6923f475c21ff9d0f88c36118ddd7d7",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/CAPABILITIES/CAPABILITY_MAPPING.md": {
+    "mtime": 1790986775.4525504,
+    "ast_hash": "25d108835688d75b583d3ab2e9813cc1",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/CAPABILITIES/CAPABILITY_REGISTRY.md": {
+    "mtime": 1790986775.4524145,
+    "ast_hash": "bfa3783ad7eeaf39a0d0c34d1c46fb26",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/CLI/CLI_DISCOVERY.md": {
+    "mtime": 1790986775.4542572,
+    "ast_hash": "273c60de88954025f687574a82639e27",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/CLI/CLI_EXECUTION.md": {
+    "mtime": 1790986775.454571,
+    "ast_hash": "d0d454fd140001c99ccae577585e2801",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/CLI/CLI_HARNESSES.md": {
+    "mtime": 1790986775.4545114,
+    "ast_hash": "ca10e348c75c473f97cac936d07b7932",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/CLI/CLI_HUB.md": {
+    "mtime": 1790986775.4543161,
+    "ast_hash": "b20f478e3d8f174dd0de144e79e3b834",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/CLI/CLI_INSTALLATION.md": {
+    "mtime": 1790986775.4543824,
+    "ast_hash": "eb0f3bfe06ba7801ebb5f83d06377e86",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/CLI/CLI_MASTER_ONTOLOGY.md": {
+    "mtime": 1790986775.4541364,
+    "ast_hash": "6f66930e4c112c65fb3b74290caa9644",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/CLI/CLI_PREFLIGHT.md": {
+    "mtime": 1790986775.454454,
+    "ast_hash": "7e2343e35c349bb79b7fee62e4ab4be5",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/CLI/CLI_REGISTRY.md": {
+    "mtime": 1790986775.4542007,
+    "ast_hash": "015f0fc8719c7de61641fc27bb0e4198",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/CLI/CLI_VERIFICATION.md": {
+    "mtime": 1790986775.4546344,
+    "ast_hash": "0ef1dc10e38bba78e89027e63376aee4",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/COGNITION/AWARENESS.md": {
+    "mtime": 1790986569.2170234,
+    "ast_hash": "03ff925f783d85efa2cdb8d8818dec55",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/COGNITION/COGNITIVE_ORDER.md": {
+    "mtime": 1790986569.2168581,
+    "ast_hash": "2827facc90071e1af913244fc7e85620",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/COGNITION/COGNITIVE_PREREQUISITES.md": {
+    "mtime": 1790986569.2174804,
+    "ast_hash": "ae444cd0bd2e0cbf43206c35c704c1b4",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/COGNITION/COMPREHENSION.md": {
+    "mtime": 1790986569.2183483,
+    "ast_hash": "069510fb6af93ece418577fc10dbd032",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/COGNITION/DEPTH.md": {
+    "mtime": 1790986569.2155492,
+    "ast_hash": "7fd208f33b0a179764ab6e83690a35d4",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/COGNITION/META_COGNITION.md": {
+    "mtime": 1790986569.2171426,
+    "ast_hash": "fee99569c80cbbfbca2bcd39ca259e47",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/COGNITION/READING_MODE.md": {
+    "mtime": 1790986569.2167072,
+    "ast_hash": "e0305945904f9a6f19f120c168e0e436",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/COGNITION/READING_ORDER_AND_COGNITIVE_DEPTH_MASTER_ONTOLOGY.md": {
+    "mtime": 1790987312.062159,
+    "ast_hash": "c43ba2bc8db799eb7361c92f97ccff04",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/COGNITION/READING_SEQUENCE.md": {
+    "mtime": 1790986569.2182567,
+    "ast_hash": "652ae2395c6a0e2ea2934433ba8b5481",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/COGNITION/ULTRATHINKING.md": {
+    "mtime": 1790986569.2153661,
+    "ast_hash": "87fab8dbe123e7279545a394bd98596c",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/COGNITION/UNDERSTANDING.md": {
+    "mtime": 1790986569.2172935,
+    "ast_hash": "49554ed0a5e71f5043e078523ecc3d86",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/DIRECTIVES/DIRECTIVES_MASTER_ONTOLOGY.md": {
+    "mtime": 1790987312.0520184,
+    "ast_hash": "bb000fc9326eaf3f155a411ab2709760",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/DIRECTIVES/DIRECTIVE_AUTHORITY.md": {
+    "mtime": 1790986831.310111,
+    "ast_hash": "8bbedf2a4b0c5e1ffcf04ccb49d3ca90",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/DIRECTIVES/DIRECTIVE_ENFORCEMENT.md": {
+    "mtime": 1790986831.311078,
+    "ast_hash": "81d7eac77716f58f60e1622bbc8c2cb7",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/DIRECTIVES/DIRECTIVE_IDENTITY.md": {
+    "mtime": 1790986831.3100278,
+    "ast_hash": "285ae07b88b7b580af0badddc72b9244",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/DIRECTIVES/DIRECTIVE_LIFECYCLE.md": {
+    "mtime": 1790986831.3115065,
+    "ast_hash": "2e3f0961468a6b8d89e094151ffa6fb7",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/DIRECTIVES/DIRECTIVE_RULE.md": {
+    "mtime": 1790986831.3102486,
+    "ast_hash": "dcd9324c5adcc7de2b01739e24615847",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/DIRECTIVES/DIRECTIVE_SCOPE.md": {
+    "mtime": 1790986831.3106089,
+    "ast_hash": "d2580d7b6f2ec8eb20131df268699f55",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/DIRECTIVES/DIRECTIVE_TRIGGER.md": {
+    "mtime": 1790986831.3109,
+    "ast_hash": "351ae1ee379e70441699fa1a8bdb2dd2",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/DIRECTIVES/DIRECTIVE_TYPE.md": {
+    "mtime": 1790986831.3101826,
+    "ast_hash": "8b52b06ff6e0da0ce4013bf1a4f33819",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/EXECUTION/COMPANY_BRAIN_AGENTS_TOOLS_SKILLS_MASTER_ONTOLOGY.md": {
+    "mtime": 1790987312.0920167,
+    "ast_hash": "ac45491edbd7e66f930f41fefe719cc8",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/EXECUTIVES/CAIO_AGENT.md": {
+    "mtime": 1790986831.3154368,
+    "ast_hash": "1da936a67fff71155f818076fd085a85",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/EXECUTIVES/CEO_AGENT.md": {
+    "mtime": 1790986831.3137412,
+    "ast_hash": "b510e78290d6ed549c30b694e5d04b50",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/EXECUTIVES/CFO_AGENT.md": {
+    "mtime": 1790986831.314628,
+    "ast_hash": "f70cf30d71dea52f2323d2ac7e49347f",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/EXECUTIVES/CHIEF_DATA_AGENT.md": {
+    "mtime": 1790986831.3165474,
+    "ast_hash": "d58cd008ec280ab2543daee61c73e657",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/EXECUTIVES/CHIEF_LEGAL_AGENT.md": {
+    "mtime": 1790986831.3169909,
+    "ast_hash": "57f37c4d6dc487d6d081a4e90a02731c",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/EXECUTIVES/CHIEF_OF_STAFF_AGENT.md": {
+    "mtime": 1790986831.3140743,
+    "ast_hash": "884a1e1290705dc4d46a229e67e692ea",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/EXECUTIVES/CHIEF_RISK_AGENT.md": {
+    "mtime": 1790986831.3172624,
+    "ast_hash": "af695965374760aca33a704592b35781",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/EXECUTIVES/CHIEF_SECURITY_AGENT.md": {
+    "mtime": 1790986831.316788,
+    "ast_hash": "8f0239ba512d088dd4e04ad7da316222",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/EXECUTIVES/CHIEF_STRATEGY_AGENT.md": {
+    "mtime": 1790986831.3174982,
+    "ast_hash": "9ff261be392f1bd8c427d59e8954e34d",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/EXECUTIVES/CIO_AGENT.md": {
+    "mtime": 1790986831.315007,
+    "ast_hash": "dcb20e71640986c5c6c5668c7822ed76",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/EXECUTIVES/CMO_AGENT.md": {
+    "mtime": 1790986831.3156598,
+    "ast_hash": "5be351ecee6e30767aacf955070570ee",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/EXECUTIVES/COO_AGENT.md": {
+    "mtime": 1790986831.3143425,
+    "ast_hash": "9ca5c1aa10d151feffd4fc25bfaf02bf",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/EXECUTIVES/CPO_AGENT.md": {
+    "mtime": 1790986831.315917,
+    "ast_hash": "0e31efc3b4e04098e4f8f3821f434829",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/EXECUTIVES/CRO_AGENT.md": {
+    "mtime": 1790986831.3161929,
+    "ast_hash": "6377395a60da0417aec9cb092a111b27",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/EXECUTIVES/CTO_AGENT.md": {
+    "mtime": 1790986831.3147466,
+    "ast_hash": "8f5273a6b43415b647d7f4defd435f3b",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/EXECUTIVES/EXECUTIVE_AUTHORITY.md": {
+    "mtime": 1790986831.3122041,
+    "ast_hash": "3b3f50805fb6a85ab38cf60881a8a838",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/EXECUTIVES/EXECUTIVE_COGNITION.md": {
+    "mtime": 1790986831.3124487,
+    "ast_hash": "c22e9de42dc5e048c44361b5d526a6dc",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/EXECUTIVES/EXECUTIVE_CONTROL.md": {
+    "mtime": 1790986831.3129625,
+    "ast_hash": "6ff1d98818f3f5b6e97fbb5bdce2fc96",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/EXECUTIVES/EXECUTIVE_COORDINATION.md": {
+    "mtime": 1790986831.3126843,
+    "ast_hash": "195ff7b38d1456edf1960fa0cd1367f3",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/EXECUTIVES/EXECUTIVE_FEEDBACK.md": {
+    "mtime": 1790986831.3132906,
+    "ast_hash": "637cb5c1b59c2ad04905ab95ce9c4393",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/EXECUTIVES/EXECUTIVE_IDENTITY.md": {
+    "mtime": 1790986831.311956,
+    "ast_hash": "17b14483e572b03fb650f43c5bf0fafd",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/EXECUTIVES/EXECUTIVE_SYSTEM_MASTER_ONTOLOGY.md": {
+    "mtime": 1790987312.0944388,
+    "ast_hash": "e7c2197b21baec08f7b1d76c5d07c143",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/ALTERNATIVES.md": {
+    "mtime": 1790987068.9926174,
+    "ast_hash": "af5b500f1bfb3a90dcacff3da41f5e83",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/ALTERNATIVE_TERMS.md": {
+    "mtime": 1790987068.9901178,
+    "ast_hash": "0c0c7d7a016ea71e367362104df37da1",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/AUTHOR.md": {
+    "mtime": 1790987068.991143,
+    "ast_hash": "b57ba2357e4fdf78afe2368bddb66111",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/CANDIDATES.md": {
+    "mtime": 1790987068.9908152,
+    "ast_hash": "77382f311a80991c6335760930da749c",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/CAN_YOU_DO.md": {
+    "mtime": 1790987068.9886253,
+    "ast_hash": "e04e5089326bf46c32478edeffc059d4",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/CAPABILITY_DISCOVERY.md": {
+    "mtime": 1790987068.988219,
+    "ast_hash": "ef47c4716606983807dadd8fc582dd53",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/CAPABILITY_MATCH.md": {
+    "mtime": 1790987068.9916444,
+    "ast_hash": "26222ec943bacf769529cbf13d3377e7",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/CLI_SEARCH.md": {
+    "mtime": 1790987068.990388,
+    "ast_hash": "0f705af0afe68f9c70d8892d0535f937",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/COMPATIBILITY.md": {
+    "mtime": 1790987068.992002,
+    "ast_hash": "f7742e301f94aee1c395aea658bff413",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/CONFIRMATION.md": {
+    "mtime": 1790987068.993134,
+    "ast_hash": "5d4ee89ba7e8eea22c19ddffb5f69f95",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/CONSTRAINTS.md": {
+    "mtime": 1790987068.9893553,
+    "ast_hash": "05a44995ff48cc30585f7e0a5c7832b5",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/CREATE_NEW_SKILL.md": {
+    "mtime": 1790987068.993437,
+    "ast_hash": "8f6f0453bf02baabab54677932d3820f",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/DIRECT_EXECUTION.md": {
+    "mtime": 1790987068.993375,
+    "ast_hash": "6de8c365cca40121562e527580ff80d4",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/DISCOVERY.md": {
+    "mtime": 1790987068.989677,
+    "ast_hash": "8f0b4fbe83f9156c04ecb7f5fa1c5d23",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/DISCOVERY_RESULT.md": {
+    "mtime": 1790987068.9936182,
+    "ast_hash": "09a4f564c6533986404651ee6d93bba6",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/DOMAIN.md": {
+    "mtime": 1790987068.989023,
+    "ast_hash": "04c64987460b4dd7b9e60bbf3aa1c430",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/DOMAIN_MATCH.md": {
+    "mtime": 1790987068.9917238,
+    "ast_hash": "481ab429478013ebbac5c80b54d2b317",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/EVALUATION.md": {
+    "mtime": 1790987068.99147,
+    "ast_hash": "d82d63f558a74e924d73b559abbe8c08",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/EVIDENCE.md": {
+    "mtime": 1790987068.9914012,
+    "ast_hash": "f565cedd3a934708d0bb51f690f79007",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/EXTEND_CAPABILITIES.md": {
+    "mtime": 1790987068.9886906,
+    "ast_hash": "a04fda198ddcc954e1fd78033d0b7b3c",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/FAILURE.md": {
+    "mtime": 1790987068.99381,
+    "ast_hash": "dacfbd9472289b68998f912ad5e21c6a",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/FIND_A_SKILL.md": {
+    "mtime": 1790987068.9884927,
+    "ast_hash": "3c3584bef24d765b0112c7335d5bc2ca",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/FIND_SKILLS_MASTER_ONTOLOGY.md": {
+    "mtime": 1790987312.1191843,
+    "ast_hash": "525c06cc8062f76c62cb85676cab86e6",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/FIND_SKILLS_SKILL.md": {
+    "mtime": 1790987068.9879835,
+    "ast_hash": "e1b3765e56c4bc59ac7680dcc7d8775b",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/FIND_TEMPLATES.md": {
+    "mtime": 1790987068.9888232,
+    "ast_hash": "cddac1686e57e32ef82909b3d7526871",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/FIND_TOOLS.md": {
+    "mtime": 1790987068.988755,
+    "ast_hash": "42a6b6af596dbed0edc68559ba4e9373",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/FIND_WORKFLOWS.md": {
+    "mtime": 1790987068.9888856,
+    "ast_hash": "1056e27f4416820aafff325554ec0457",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/GITHUB_STARS.md": {
+    "mtime": 1790987068.991079,
+    "ast_hash": "e97dbd4a29826291e81a26c656bfb350",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/GLOBAL.md": {
+    "mtime": 1790987068.992897,
+    "ast_hash": "6fe5e7279d9f29858afb73c8193e05fa",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/HOW_DO_I.md": {
+    "mtime": 1790987068.9884305,
+    "ast_hash": "f9f1cf9ddc2d2e965d673ce543517b09",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/INSTALLATION.md": {
+    "mtime": 1790987068.9926853,
+    "ast_hash": "749e328be9106ef45cc2927fa8ceff66",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/INSTALL_COMMAND.md": {
+    "mtime": 1790987068.9924903,
+    "ast_hash": "cf01b4fe0ea6936cb74a6e0f33c40e7f",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/INSTALL_COUNT.md": {
+    "mtime": 1790987068.990947,
+    "ast_hash": "360585ddf4dbe003fae2914d8cb14950",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/INSTALL_COUNT_METRIC.md": {
+    "mtime": 1790987068.9923098,
+    "ast_hash": "ab421ac3d6b5329d81c0649e737ea07f",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/INSTALL_VERIFICATION.md": {
+    "mtime": 1790987068.9931955,
+    "ast_hash": "0009bdd840a7728f9981f1a6b051a67d",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/IS_THERE_A_SKILL.md": {
+    "mtime": 1790987068.9885602,
+    "ast_hash": "c238cbd9aae9ca913c41055d1c9148ca",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/KEYWORDS.md": {
+    "mtime": 1790987068.990028,
+    "ast_hash": "cdd92a55d05c1865d3a8fcf7a9c6031a",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/LEADERBOARD.md": {
+    "mtime": 1790987068.9898655,
+    "ast_hash": "36a2931033c96de3723cac41633c3141",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/LEARNING.md": {
+    "mtime": 1790987068.9935603,
+    "ast_hash": "2a55b7dff30839cf120e35b3d2a7e2dd",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/MAINTENANCE.md": {
+    "mtime": 1790987068.9913287,
+    "ast_hash": "14e90805e1f44530822ec0f96ea8651c",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/META_SKILL.md": {
+    "mtime": 1790987068.988069,
+    "ast_hash": "a326ad80f365391ecb33e41a68b1fc43",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/NO_MATCH.md": {
+    "mtime": 1790987068.993313,
+    "ast_hash": "dc4122d55de1bf603bfc271b336b72ad",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/NO_RESULT.md": {
+    "mtime": 1790987068.9932525,
+    "ast_hash": "05dbf70155f1a7b08836d57110c71846",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/NPM_SKILLS_CLI.md": {
+    "mtime": 1790987068.9904592,
+    "ast_hash": "a61d8f9d622f5fc815278143941dccbd",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/NPM_SKILLS_FIND.md": {
+    "mtime": 1790987068.990522,
+    "ast_hash": "6540304bd2b8755c1e000c5f06c259cd",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/OWNER.md": {
+    "mtime": 1790987068.9906592,
+    "ast_hash": "df16ee21d139bc683fb502233ce9801b",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/OWNER_FILTER.md": {
+    "mtime": 1790987068.9902105,
+    "ast_hash": "0bf8afc54833a179f1b553725d7496d4",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/PACKAGE.md": {
+    "mtime": 1790987068.992828,
+    "ast_hash": "f1352d8cbc32f52e1eae7c1b74de9352",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/PERFORMANCE.md": {
+    "mtime": 1790987068.993931,
+    "ast_hash": "5cabafe108c6510c3b3819f2a4d89d68",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/PROJECT.md": {
+    "mtime": 1790987068.9929585,
+    "ast_hash": "3f88d60a49c9e9e3b5db20af014727ad",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/PURPOSE.md": {
+    "mtime": 1790987068.9922445,
+    "ast_hash": "47037c20be8f24f0be9c5d03c2ac79df",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/QUALITY.md": {
+    "mtime": 1790987068.9908834,
+    "ast_hash": "3b7381b7a19ce8f28ada4fa0bbdddb89",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/QUALITY_ASSESSMENT.md": {
+    "mtime": 1790987068.9918544,
+    "ast_hash": "245526b3bddf0c839020da77456b343e",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/QUERY.md": {
+    "mtime": 1790987068.9905891,
+    "ast_hash": "738ba2d3604388bee3a9e244e814c6bb",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/RATING.md": {
+    "mtime": 1790987068.9938688,
+    "ast_hash": "4f78dd20af3a2b11bf95fbf7fd0b92a7",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/RECENCY.md": {
+    "mtime": 1790987068.9912689,
+    "ast_hash": "b4ab29ce9304ee0c5f3f573f7a041cee",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/RECOMMENDATION.md": {
+    "mtime": 1790987068.9921238,
+    "ast_hash": "13519a95780a6c557e35304a7e88cae1",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/REGISTRY_UPDATE.md": {
+    "mtime": 1790987068.9939928,
+    "ast_hash": "3b7030266634b82b8d3c2c7a1c14a6da",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/RELEVANCE.md": {
+    "mtime": 1790987068.9915583,
+    "ast_hash": "dc4621a22e98a92c6b1528d2d4039905",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/REPOSITORY.md": {
+    "mtime": 1790987068.991206,
+    "ast_hash": "822d0c3517f57598a266a4aac58c0799",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/REPOSITORY_SEARCH.md": {
+    "mtime": 1790987068.9903057,
+    "ast_hash": "5952dd9a1bf8b4dd26bc4daf6921a3bd",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/REQUEST_UNDERSTANDING.md": {
+    "mtime": 1790987068.988954,
+    "ast_hash": "9741639c3eaed60e2e06d4fb7d6af1ca",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/RESULTS.md": {
+    "mtime": 1790987068.9907362,
+    "ast_hash": "a5350ba1d97caf6c3238cd64ffe5c0b0",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/RISK.md": {
+    "mtime": 1790987068.9920638,
+    "ast_hash": "2210f0f858ac800d5c90185f61ba6d09",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/SEARCH_STRATEGY.md": {
+    "mtime": 1790987068.9899516,
+    "ast_hash": "1f8c861826f9a058cb0f1963ce4b826c",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/SKILLS_ADD.md": {
+    "mtime": 1790987068.9927514,
+    "ast_hash": "4e2b7b3d47ebb699b4cb896d6106520b",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/SKILLS_INIT.md": {
+    "mtime": 1790987068.9934964,
+    "ast_hash": "0791ba9fe7e76077192e2b844f3af55e",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/SKILLS_SH.md": {
+    "mtime": 1790987068.9897711,
+    "ast_hash": "6d5963d014041b74bec34218aba148f2",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/SKILLS_SH_URL.md": {
+    "mtime": 1790987068.9925551,
+    "ast_hash": "c7a750cf34692b8d52554f6cbd998552",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/SKILL_DISCOVERY_AGENT.md": {
+    "mtime": 1790987068.988147,
+    "ast_hash": "6b830fb4d60d8867f701c0eb6f93e164",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/SKILL_LIKELIHOOD.md": {
+    "mtime": 1790987068.9895363,
+    "ast_hash": "3f5aa8806d9e394956a99091218f5fba",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/SKILL_NAME.md": {
+    "mtime": 1790987068.9921827,
+    "ast_hash": "2c359a788a011c3a532ad947faea7fb6",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/SKILL_SUPPLY_CHAIN_ENTRYPOINT.md": {
+    "mtime": 1790987068.9882932,
+    "ast_hash": "d4342e5621625163f870ba02afd7ed94",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/SKILL_USAGE.md": {
+    "mtime": 1790987068.9936814,
+    "ast_hash": "2b27e50e71a0fef4ec627a1631c9c4c2",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/SOURCE.md": {
+    "mtime": 1790987068.9923978,
+    "ast_hash": "561e5e1af0340240580cbf71d469f433",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/SOURCE_REPUTATION.md": {
+    "mtime": 1790987068.9910107,
+    "ast_hash": "b53ac8abd94cc89dcfe4945e445c837c",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/SPECIALIZED_CAPABILITY.md": {
+    "mtime": 1790987068.9891896,
+    "ast_hash": "7d98d18ecd5e84da92e7834a1866ec7a",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/SUCCESS.md": {
+    "mtime": 1790987068.9937463,
+    "ast_hash": "d67ec60b8bc3995c8ae16330869b7417",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/TASK.md": {
+    "mtime": 1790987068.9891057,
+    "ast_hash": "3095c268c97c054fe8f83b29df1f01b7",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/TASK_MATCH.md": {
+    "mtime": 1790987068.9917927,
+    "ast_hash": "dfa1b82a0ff53c144ea34c41bc57077b",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/TRIGGER.md": {
+    "mtime": 1790987068.9883664,
+    "ast_hash": "c47ca0894d60e4eaf6610e2c3503c7f3",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/TRUST.md": {
+    "mtime": 1790987068.99193,
+    "ast_hash": "8516c3b4ee5dd4635db17023ba3bc00a",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FIND_SKILLS/USER_INTENT.md": {
+    "mtime": 1790987068.9892843,
+    "ast_hash": "6608b91c48344805ea6489013d45bf13",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/LITERATURE/AUTHORITY_ARTIFACTS.md": {
+    "mtime": 1790986614.6980388,
+    "ast_hash": "24569dd3481853b75cab4c0f7878e058",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/LITERATURE/BUSINESS_ARTIFACTS.md": {
+    "mtime": 1790986614.6987267,
+    "ast_hash": "d2f1ccf5aa8be96d0f9d0830ae9d56cd",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/LITERATURE/CATALOG_OF_CATALOGS.md": {
+    "mtime": 1790986614.699518,
+    "ast_hash": "2d0becef921766cc2808ae531ad23561",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/LITERATURE/COMMUNICATION_ARTIFACTS.md": {
+    "mtime": 1790986614.6989856,
+    "ast_hash": "279d5395f03688589ab539d317a11d37",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/LITERATURE/DEFINITION_ARTIFACTS.md": {
+    "mtime": 1790986614.6979723,
+    "ast_hash": "025b467099df5ea9defe2f4a7a68dd22",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/LITERATURE/DISCOVERY_ARTIFACTS.md": {
+    "mtime": 1790986614.6978827,
+    "ast_hash": "ba2fe94cb13727d1f88ba73d7c2fc445",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/LITERATURE/EVIDENCE_ARTIFACTS.md": {
+    "mtime": 1790986614.6986043,
+    "ast_hash": "f7beb15018b6d978fe102f761f5d151b",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/LITERATURE/INDEX_OF_INDEXES.md": {
+    "mtime": 1790986614.6994493,
+    "ast_hash": "7f2b52dc53ec3e92da87eafddede1f92",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/LITERATURE/INSTRUCTIONAL_ARTIFACTS.md": {
+    "mtime": 1790986614.6984808,
+    "ast_hash": "d75429f89ca090685adaab4b601a97a7",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/LITERATURE/KNOWLEDGE_ARTIFACTS.md": {
+    "mtime": 1790986614.6980991,
+    "ast_hash": "8d39e091723b3164080147145a304118",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/LITERATURE/KNOWLEDGE_ARTIFACT_LIFECYCLE.md": {
+    "mtime": 1790986614.6993804,
+    "ast_hash": "9d87c6e879385f21077f21d75780f61c",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/LITERATURE/LEGAL_AND_GOVERNANCE_ARTIFACTS.md": {
+    "mtime": 1790986614.6986675,
+    "ast_hash": "2e2291f9f444e7402ceabe0cc06d069e",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/LITERATURE/LIBRARY.md": {
+    "mtime": 1790986614.6993043,
+    "ast_hash": "bbbbdc674d3a3dfd528cc2667f33d970",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/LITERATURE/LITERARY_ARTIFACTS.md": {
+    "mtime": 1790986614.6989183,
+    "ast_hash": "0b865d3a986322268cc20a7343f23808",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/LITERATURE/LITERATURE_AND_KNOWLEDGE_ARTIFACTS_MASTER_ONTOLOGY.md": {
+    "mtime": 1790987312.059346,
+    "ast_hash": "689e7d7c5b4dacffe06a17c252b9fdda",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/LITERATURE/META_KNOWLEDGE_ARTIFACTS.md": {
+    "mtime": 1790986614.6992311,
+    "ast_hash": "9517e5f303e82b4871fb1b027ab4a713",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/LITERATURE/NAVIGATION_ARTIFACTS.md": {
+    "mtime": 1790986614.698417,
+    "ast_hash": "6e3b6fb18588937db20829174edf93d5",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/LITERATURE/ONTOLOGY_OF_ONTOLOGIES.md": {
+    "mtime": 1790986614.6997547,
+    "ast_hash": "e854f30c39ec0ae5bcfe1cb88449594a",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/LITERATURE/PERSONAL_KNOWLEDGE_ARTIFACTS.md": {
+    "mtime": 1790986614.698856,
+    "ast_hash": "ea5381db12dd716c2c11968907c62b1b",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/LITERATURE/PROCEDURAL_ARTIFACTS.md": {
+    "mtime": 1790986614.698541,
+    "ast_hash": "536639227f1646527b0f73a1f6f5a9f1",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/LITERATURE/REFERENCE_ARTIFACTS.md": {
+    "mtime": 1790986614.6981614,
+    "ast_hash": "80c61111a2f9fe8a2f94538d3b87bee5",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/LITERATURE/REGISTRY_OF_REGISTRIES.md": {
+    "mtime": 1790986614.6995928,
+    "ast_hash": "262532205ebda26dd605ddb0ff977c20",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/LITERATURE/STRUCTURAL_ARTIFACTS.md": {
+    "mtime": 1790986614.6982257,
+    "ast_hash": "558c19b3fa6ef29d0d7d8cdd36a922d9",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/LITERATURE/TAXONOMY_OF_TAXONOMIES.md": {
+    "mtime": 1790986614.699828,
+    "ast_hash": "53abddcd6f47cb11bc329efdd977b34e",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/LITERATURE/TECHNICAL_ARTIFACTS.md": {
+    "mtime": 1790986614.6987965,
+    "ast_hash": "41bcc978d2ed352f9d399be22ce32330",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/LITERATURE/TEMPORAL_ARTIFACTS.md": {
+    "mtime": 1790986614.6991484,
+    "ast_hash": "0f6912293682f6e01a24f5033c277e5b",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/LITERATURE/VISUAL_KNOWLEDGE_ARTIFACTS.md": {
+    "mtime": 1790986614.699066,
+    "ast_hash": "ae37fdc49e9777510b6424fdb2995795",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/LOOPS/BUSINESS_LOOPS.md": {
+    "mtime": 1790986831.3196466,
+    "ast_hash": "9f614e3f7b5fabb86b9d248b2c2fff25",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/LOOPS/COGNITIVE_LOOPS.md": {
+    "mtime": 1790986831.319448,
+    "ast_hash": "23609d893652d279cd46ce3299445466",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/LOOPS/KNOWLEDGE_LOOPS.md": {
+    "mtime": 1790986831.3200116,
+    "ast_hash": "e677216ca571c02acb59da7777dbb51a",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/LOOPS/LOOPS_MASTER_ONTOLOGY.md": {
+    "mtime": 1790987312.0975888,
+    "ast_hash": "ce5b834ceb4dd03a52599f5f1781aa99",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/LOOPS/OPERATIONAL_LOOPS.md": {
+    "mtime": 1790986831.3195612,
+    "ast_hash": "87a9881421f0c0d4ba5585c9b7cf392d",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/LOOPS/STRATEGIC_LOOPS.md": {
+    "mtime": 1790986831.32016,
+    "ast_hash": "24df9673c199c011e0a44ef4820ded85",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/LOOPS/TECHNICAL_LOOPS.md": {
+    "mtime": 1790986831.319814,
+    "ast_hash": "a9a8fba6c6eb4ba5f3d99ec3bbe1afb8",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/MCP/MCP_AUTH.md": {
+    "mtime": 1790986775.453838,
+    "ast_hash": "f9d7e955c1110adc3f7b15075dd2d56c",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/MCP/MCP_CONNECTIVITY_TESTS.md": {
+    "mtime": 1790986775.454029,
+    "ast_hash": "b2f8487589f0c55b0d470c7208d3eb2b",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/MCP/MCP_HEALTH.md": {
+    "mtime": 1790986775.4539764,
+    "ast_hash": "07b71599a46aeb5b856ce03da4d56ec4",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/MCP/MCP_MASTER_ONTOLOGY.md": {
+    "mtime": 1790986775.4535499,
+    "ast_hash": "5a2ad207f0518613629484460bfbaabd",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/MCP/MCP_PERMISSIONS.md": {
+    "mtime": 1790986775.453917,
+    "ast_hash": "a1eabc3e3c3cd2cd1d0284aeaba50cd7",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/MCP/MCP_REGISTRY.md": {
+    "mtime": 1790986775.4536092,
+    "ast_hash": "78aa03ce78fa297769cc5dbe819a1036",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/MCP/MCP_RESOURCES.md": {
+    "mtime": 1790986775.453777,
+    "ast_hash": "78bc736bda7966865192deb9beed2134",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/MCP/MCP_SERVERS.md": {
+    "mtime": 1790986775.4536626,
+    "ast_hash": "aead18c9850416f626ce5127d059a3f3",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/MCP/MCP_TOOLS.md": {
+    "mtime": 1790986775.4537215,
+    "ast_hash": "30379c9d64d1091f3f2bd583160f1a22",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ORCHESTRATION/DELEGATION.md": {
+    "mtime": 1790986775.4549809,
+    "ast_hash": "0af5c01620e58813f4e8d64cbb9659d6",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ORCHESTRATION/ESCALATION.md": {
+    "mtime": 1790986775.4551747,
+    "ast_hash": "5b2f8f56fd9a09a593a32a7f3dc8b352",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ORCHESTRATION/EXECUTION_LOOPS.md": {
+    "mtime": 1790986775.4554005,
+    "ast_hash": "aa119071963a9e64a9e15c16decef0f2",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ORCHESTRATION/HANDOFFS.md": {
+    "mtime": 1790986775.4550476,
+    "ast_hash": "51a183a2295eb750744b4c9cb7705a98",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ORCHESTRATION/ORCHESTRATION_MASTER_ONTOLOGY.md": {
+    "mtime": 1790986775.4547625,
+    "ast_hash": "593b25b930d165b07339d941dba5b958",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ORCHESTRATION/ORCHESTRATOR.md": {
+    "mtime": 1790986775.45484,
+    "ast_hash": "985b4c88b40351cfe121585a3c11aee3",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ORCHESTRATION/PARALLELIZATION.md": {
+    "mtime": 1790986775.4552884,
+    "ast_hash": "8f294f86cc02a7dc9ccc24cc98400102",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ORCHESTRATION/ROTATIONS.md": {
+    "mtime": 1790986775.4551113,
+    "ast_hash": "e8ae4067b76b61b8b3ccedfd613e56bb",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ORCHESTRATION/ROUTING.md": {
+    "mtime": 1790986775.454902,
+    "ast_hash": "6e44d609747d8f6a467cda3ea443622c",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ORCHESTRATION/SCHEDULING.md": {
+    "mtime": 1790986775.455235,
+    "ast_hash": "2a1ae9c4adc6f56f52f686cf200bcd2d",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/ORCHESTRATION/WORK_QUEUES.md": {
+    "mtime": 1790986775.4553459,
+    "ast_hash": "f1f74ff77f2c05cb69c5941d50b1322e",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/QUESTIONS/QUESTIONS.md": {
+    "mtime": 1790986569.2091615,
+    "ast_hash": "f84b169baa2a6c1572f38e7edcfb2819",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/QUESTIONS/QUESTION_AGENTS.md": {
+    "mtime": 1790986569.2060838,
+    "ast_hash": "e8192d2afba96a93b9bb578911ff983b",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/QUESTIONS/QUESTION_ANSWERS.md": {
+    "mtime": 1790986569.2076013,
+    "ast_hash": "8cf3bcb6c84b48ae1e38be87d08cf0b7",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/QUESTIONS/QUESTION_AUDIT.md": {
+    "mtime": 1790986569.2076929,
+    "ast_hash": "00ce2146aaeda8733b1740c4b0b24599",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/QUESTIONS/QUESTION_CLASSES.md": {
+    "mtime": 1790986569.206202,
+    "ast_hash": "413751d355e78d9749b0182b7731bc41",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/QUESTIONS/QUESTION_CONTEXT.md": {
+    "mtime": 1790986569.2074196,
+    "ast_hash": "c1ccc46d0af875172e66783dcf6c5ea5",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/QUESTIONS/QUESTION_DECOMPOSITION.md": {
+    "mtime": 1790986569.2052174,
+    "ast_hash": "b0b571b84e3a43276fd21f0148f2489d",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/QUESTIONS/QUESTION_DEPENDENCIES.md": {
+    "mtime": 1790986569.2069907,
+    "ast_hash": "538c551f02dc2a97f0c20422a2a6ca62",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/QUESTIONS/QUESTION_DIMENSIONS.md": {
+    "mtime": 1790986569.2092562,
+    "ast_hash": "b8a6886ccc5426048a92b14a02ddcda3",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/QUESTIONS/QUESTION_DUPLICATES.md": {
+    "mtime": 1790986569.2097628,
+    "ast_hash": "d3910cd13e6bc271fc722fb618117f78",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/QUESTIONS/QUESTION_EVIDENCE.md": {
+    "mtime": 1790986569.2073426,
+    "ast_hash": "8824f391f9820043aa1bbfc7ea2d0c11",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/QUESTIONS/QUESTION_FOLLOWUPS.md": {
+    "mtime": 1790986569.209608,
+    "ast_hash": "42cd2ec3034cd2268a29ace56a63ab6f",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/QUESTIONS/QUESTION_GRAPH.md": {
+    "mtime": 1790986569.205006,
+    "ast_hash": "b59c9b4b1487fe559fa891da33053b39",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/QUESTIONS/QUESTION_INTENTS.md": {
+    "mtime": 1790986569.209455,
+    "ast_hash": "de31c42a3628e6d30506831037d4d091",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/QUESTIONS/QUESTION_MASTER_ONTOLOGY.md": {
+    "mtime": 1790987312.1403434,
+    "ast_hash": "fefe180cd7eeea94cb7d3b311a56c8e4",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/QUESTIONS/QUESTION_ORCHESTRATION.md": {
+    "mtime": 1790986569.2063065,
+    "ast_hash": "c2f93847efb7d281250bf97b47bf31f1",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/QUESTIONS/QUESTION_REALITY.md": {
+    "mtime": 1790986569.2075088,
+    "ast_hash": "65b473b64353c9a74ddf5daa978983b4",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/QUESTIONS/QUESTION_REGISTRY.md": {
+    "mtime": 1790986569.2089782,
+    "ast_hash": "de10e9d1aea014d03091692896123ac2",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/QUESTIONS/QUESTION_RELATIONSHIPS.md": {
+    "mtime": 1790986569.2066524,
+    "ast_hash": "f6779eb275a0397c4f50bbefefb9c354",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/QUESTIONS/QUESTION_RESEARCH.md": {
+    "mtime": 1790986569.2086768,
+    "ast_hash": "4d71855708ac70430c98e53806c1f86e",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/QUESTIONS/QUESTION_ROUTING.md": {
+    "mtime": 1790986569.2070837,
+    "ast_hash": "38106a7d72c7c86de3e83a904bf91ef3",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/QUESTIONS/QUESTION_SCOPE.md": {
+    "mtime": 1790986569.208816,
+    "ast_hash": "b637c45e19577834ee029b14e6acc999",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/QUESTIONS/QUESTION_SOURCE_OF_TRUTH.md": {
+    "mtime": 1790986569.207216,
+    "ast_hash": "7b66ac612e4896536c2f3882ab8f6406",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/QUESTIONS/QUESTION_TARGETS.md": {
+    "mtime": 1790986569.2093503,
+    "ast_hash": "bd6e8535751af291cc245f6e6230b4f8",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/QUESTIONS/QUESTION_TO_ACTION.md": {
+    "mtime": 1790986569.2079413,
+    "ast_hash": "8357ad6e5c1ea55ae8f74fb87380be2c",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/QUESTIONS/QUESTION_TO_DECISION.md": {
+    "mtime": 1790986569.2068644,
+    "ast_hash": "fff5a98ba7f7210b4c6bc2e96fbc0372",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/QUESTIONS/QUESTION_TO_KNOWLEDGE.md": {
+    "mtime": 1790986569.2065127,
+    "ast_hash": "dd7aac27ff2e2c87f1088281f3a82449",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/QUESTIONS/QUESTION_TO_TASK.md": {
+    "mtime": 1790986569.2090614,
+    "ast_hash": "3dc2f724808c977b8042eb739c25e20b",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/QUESTIONS/QUESTION_TYPES.md": {
+    "mtime": 1790986569.2058954,
+    "ast_hash": "2f012b900b43d7b1565b5b4cf5aaa7d4",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/QUESTIONS/QUESTION_VERIFICATION.md": {
+    "mtime": 1790986569.2077901,
+    "ast_hash": "fa48a37e7577624ae2f3cca538e7e48e",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SELF_HEALING/DETECTION.md": {
+    "mtime": 1790986831.3177986,
+    "ast_hash": "d0645408a52e7f15c860594b19388c13",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SELF_HEALING/DIAGNOSIS.md": {
+    "mtime": 1790986831.3182952,
+    "ast_hash": "aa080ddeb6b9c387fe7a4253742b9c3e",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SELF_HEALING/GOVERNANCE.md": {
+    "mtime": 1790986831.3192332,
+    "ast_hash": "812c1e16929a9796ff3f4a82aa6db931",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SELF_HEALING/LEARNING.md": {
+    "mtime": 1790986831.3190184,
+    "ast_hash": "ecbb97cddd50d21ef7c80d7644fa9890",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SELF_HEALING/RECOVERY.md": {
+    "mtime": 1790986831.3184671,
+    "ast_hash": "ad4908720439e8b4d1c06d76c10b1010",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SELF_HEALING/SELF_HEALING_MASTER_ONTOLOGY.md": {
+    "mtime": 1790987312.055846,
+    "ast_hash": "7f13f319bc802e3d827b729133fb26ce",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SELF_HEALING/VERIFICATION.md": {
+    "mtime": 1790986831.3187542,
+    "ast_hash": "98199b1e34f34cfc95cbcd16ef722417",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILLS/SKILLS_MASTER_ONTOLOGY.md": {
+    "mtime": 1790986775.452702,
+    "ast_hash": "b4f1fbe89cf2374d1a5ddee70a083877",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILLS/SKILL_DEPENDENCIES.md": {
+    "mtime": 1790986775.4529006,
+    "ast_hash": "e1eeef4c66b448ae04930a15fc0e12d8",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILLS/SKILL_DISCOVERY.md": {
+    "mtime": 1790986775.4528348,
+    "ast_hash": "ad45b2008a26045ad32f1c18b056c74c",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILLS/SKILL_EVALUATION.md": {
+    "mtime": 1790986775.4530077,
+    "ast_hash": "eb542625830916fcfafabe6dbd0e219e",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILLS/SKILL_REGISTRY.md": {
+    "mtime": 1790986775.452768,
+    "ast_hash": "6096b71ce927fba7fd875dd844370952",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILLS/SKILL_VERSIONS.md": {
+    "mtime": 1790986775.4529557,
+    "ast_hash": "307b7adce561b58582ba92c28be7febb",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILL_INTELLIGENCE/AAS_INDEX.md": {
+    "mtime": 1790987101.8966594,
+    "ast_hash": "bbb113915dbd49edb0fda0c5ac3abfb6",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILL_INTELLIGENCE/AGENT_CAPABILITY_UPDATE.md": {
+    "mtime": 1790987101.8985882,
+    "ast_hash": "4d203e665e4524198a74ac5b03c135a5",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILL_INTELLIGENCE/AGENT_MATCHING.md": {
+    "mtime": 1790987101.8980498,
+    "ast_hash": "bcdcfd3b8d18c4d2cee1aa38c46eaa14",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILL_INTELLIGENCE/ALIAS_MAPPING.md": {
+    "mtime": 1790987101.8977666,
+    "ast_hash": "bad1f4041626b3100d66b215acda99d4",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILL_INTELLIGENCE/ANTIGRAVITY_SKILLS.md": {
+    "mtime": 1790987101.8967438,
+    "ast_hash": "2464b2b57b1ff8660eec262d1b6aa2a2",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILL_INTELLIGENCE/AUTHOR_RESOLUTION.md": {
+    "mtime": 1790987101.8973012,
+    "ast_hash": "d38492f07a378ca45cb5ba3faec7d2a8",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILL_INTELLIGENCE/CANONICAL_SELECTION.md": {
+    "mtime": 1790987101.8976822,
+    "ast_hash": "35d527fc78f57a5ce748a591492ab982",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILL_INTELLIGENCE/CAPABILITY_COLLISION.md": {
+    "mtime": 1790987101.897586,
+    "ast_hash": "6e17e565be578ec03c86a8cc009c4f11",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILL_INTELLIGENCE/CAPABILITY_GRAPH_BUILDER.md": {
+    "mtime": 1790987101.8963635,
+    "ast_hash": "40bdc4a343651cda42992489d24f3159",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILL_INTELLIGENCE/CLAUDE_SKILLS.md": {
+    "mtime": 1790987101.896816,
+    "ast_hash": "6c768f4119ed19c6924b56351d163394",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILL_INTELLIGENCE/CODEX_SKILLS.md": {
+    "mtime": 1790987101.8968894,
+    "ast_hash": "f60f1a26339d1e88ba3a13df73725f8a",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILL_INTELLIGENCE/COST_ANALYSIS.md": {
+    "mtime": 1790987101.8989577,
+    "ast_hash": "8c86fefd40bf3e87b8d798a416f78f2b",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILL_INTELLIGENCE/DEPENDENCY_MAPPING.md": {
+    "mtime": 1790987101.8973658,
+    "ast_hash": "44b432e94d13b840938590a999e42781",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILL_INTELLIGENCE/DOMAIN_CLASSIFICATION.md": {
+    "mtime": 1790987101.8978393,
+    "ast_hash": "ad53dfec5d1282a14d9d1b41cce70928",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILL_INTELLIGENCE/EXACT_MATCH_DETECTION.md": {
+    "mtime": 1790987101.8974316,
+    "ast_hash": "e30d0538267627569ecaf97bab146432",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILL_INTELLIGENCE/FIND_SKILLS_INDEX_UPDATE.md": {
+    "mtime": 1790987101.898734,
+    "ast_hash": "f6eaaa1a9932aca8e4ffc49f92b299ac",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILL_INTELLIGENCE/FORMAT_ALIGNMENT.md": {
+    "mtime": 1790987101.8971038,
+    "ast_hash": "0281e6377f30dbd99ff930ab6062d7a8",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILL_INTELLIGENCE/GRAPH_VALIDATION.md": {
+    "mtime": 1790987101.8985221,
+    "ast_hash": "7eb14036a9b81954da1dff5b965bf66c",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILL_INTELLIGENCE/INGESTION_SYSTEM.md": {
+    "mtime": 1790987101.8962193,
+    "ast_hash": "65607a420ab5619186283666b6ab688c",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILL_INTELLIGENCE/LOCAL_WORKFLOWS.md": {
+    "mtime": 1790987101.8970356,
+    "ast_hash": "ebb1c09fa3bc5a1f805e52acb5dc73e9",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILL_INTELLIGENCE/MCP_SERVERS.md": {
+    "mtime": 1790987101.8969653,
+    "ast_hash": "5687d6507e048e7eb09148d1731cda73",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILL_INTELLIGENCE/METADATA_EXTRACTION.md": {
+    "mtime": 1790987101.897235,
+    "ast_hash": "692d08ea0269dcbe9609fb060a7b51d8",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILL_INTELLIGENCE/NODE_CREATION.md": {
+    "mtime": 1790987101.8983145,
+    "ast_hash": "136cc3c6652d57119601c2b1926270fb",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILL_INTELLIGENCE/NORMALIZATION_SYSTEM.md": {
+    "mtime": 1790987101.8962927,
+    "ast_hash": "94758ba57e9e0e97182d898986559b91",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILL_INTELLIGENCE/ORCHESTRATOR_NOTIFICATION.md": {
+    "mtime": 1790987101.8988087,
+    "ast_hash": "8567f5fff04ad5414cb1b94c5fdf61cd",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILL_INTELLIGENCE/PREREQUISITE_LINKING.md": {
+    "mtime": 1790987101.8984535,
+    "ast_hash": "0fb1b0c579890a39069aef4e6c10f5e3",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILL_INTELLIGENCE/REGISTRY_SYNC.md": {
+    "mtime": 1790987101.8986578,
+    "ast_hash": "17ab921ab5d89427d3b410050922e319",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILL_INTELLIGENCE/RELATIONSHIP_CREATION.md": {
+    "mtime": 1790987101.898387,
+    "ast_hash": "b311685f1ba47acf4870812276fac586",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILL_INTELLIGENCE/REVENUE_ATTRIBUTION.md": {
+    "mtime": 1790987101.8988867,
+    "ast_hash": "e5024cda0a71d5e1d893ef2ad75f3baf",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILL_INTELLIGENCE/ROI_TRACKING.md": {
+    "mtime": 1790987101.8990211,
+    "ast_hash": "dcf9631afe6870ce36e8460ac15af587",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILL_INTELLIGENCE/SCHEMA_VALIDATION.md": {
+    "mtime": 1790987101.8971689,
+    "ast_hash": "cd863b31dbca6e2f95d1f1be1a5683a1",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILL_INTELLIGENCE/SEMANTIC_SIMILARITY.md": {
+    "mtime": 1790987101.8975017,
+    "ast_hash": "42931cc4d48de6f8517ab40b4dd03880",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILL_INTELLIGENCE/SKILL_INTELLIGENCE_ENGINE.md": {
+    "mtime": 1790987101.8961396,
+    "ast_hash": "9aa5d66cad3f44f14b72cbf6d6d7d3a7",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILL_INTELLIGENCE/SKILL_INTELLIGENCE_MASTER_ONTOLOGY.md": {
+    "mtime": 1790987312.063239,
+    "ast_hash": "223b17106934dfe80c25b8d609a5ff62",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILL_INTELLIGENCE/STARRED_REPOSITORIES.md": {
+    "mtime": 1790987101.8965428,
+    "ast_hash": "5c4a96a54c0111b6fa1851f46b24e056",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILL_INTELLIGENCE/STRATEGIC_FIT.md": {
+    "mtime": 1790987101.8990839,
+    "ast_hash": "56d9d1b152cea8f0b0fca4fabd13806f",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILL_INTELLIGENCE/TASK_IDENTIFICATION.md": {
+    "mtime": 1790987101.897917,
+    "ast_hash": "481be594d0f9aa1dbb610612b2b42f9d",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILL_INTELLIGENCE/TOOL_REQUIREMENTS.md": {
+    "mtime": 1790987101.8982372,
+    "ast_hash": "6a9f1153519062ddf536290d81304a0d",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SKILL_INTELLIGENCE/WORKFLOW_ATTACHMENT.md": {
+    "mtime": 1790987101.897986,
+    "ast_hash": "7176893b981e450d2387a29408a43e01",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/THINKING/COGNITION.md": {
+    "mtime": 1790986569.2143173,
+    "ast_hash": "fccffa41d376fa36f094ad97056000ee",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/THINKING/CONSTRAINT_THINKING.md": {
+    "mtime": 1790986569.2146244,
+    "ast_hash": "c545e062ded3f6d58d71922175b4e429",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/THINKING/DECISION_REASONING.md": {
+    "mtime": 1790986569.2129838,
+    "ast_hash": "d89044cb51013740d48f07026881075c",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/THINKING/DECOMPOSITION_THINKING.md": {
+    "mtime": 1790986569.2125752,
+    "ast_hash": "27c32b39932e2c383acfd5631330b10f",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/THINKING/FIRST_PRINCIPLES.md": {
+    "mtime": 1790986569.2123768,
+    "ast_hash": "3f23cca4928c31862095d45c2da27763",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/THINKING/INVERSION.md": {
+    "mtime": 1790986569.2127867,
+    "ast_hash": "59f09105e8d971a6cd98a5ac490bcf4e",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/THINKING/MECHANISM_DESIGN.md": {
+    "mtime": 1790986569.2128959,
+    "ast_hash": "be7569463954d978b2811aff42f3ec8a",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/THINKING/OODA_LOOP.md": {
+    "mtime": 1790986569.214741,
+    "ast_hash": "8227399f546101a7d98162571e547bfb",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/THINKING/OPPORTUNITY_COST_THINKING.md": {
+    "mtime": 1790986569.2121682,
+    "ast_hash": "3b7b95052895af710e018c94ea4f0ac6",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/THINKING/PROBABILISTIC_THINKING.md": {
+    "mtime": 1790986569.2130835,
+    "ast_hash": "d52b4d229284e305e08356a473ca5a8d",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/THINKING/REASONING.md": {
+    "mtime": 1790986569.210015,
+    "ast_hash": "357d31366c7dd791b12e3ae234c556e8",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/THINKING/REASONING_CHAINS.md": {
+    "mtime": 1790986569.2122734,
+    "ast_hash": "baa59f2c236eed95c4dd8baf7292f5e5",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/THINKING/REASONING_EVIDENCE.md": {
+    "mtime": 1790986569.2103534,
+    "ast_hash": "7594c07a2644644211174da5b050cff5",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/THINKING/REASONING_GRAPH.md": {
+    "mtime": 1790986569.2148592,
+    "ast_hash": "bf2f128a5e5570bc3deee9c48457de99",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/THINKING/REASONING_VERIFICATION.md": {
+    "mtime": 1790986569.212677,
+    "ast_hash": "b1754d817e446cbf712f46ff563f9d50",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/THINKING/ROOT_CAUSE_THINKING.md": {
+    "mtime": 1790986569.2124765,
+    "ast_hash": "b99db816bf4b3edae16a199dc9ae234f",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/THINKING/SCENARIO_THINKING.md": {
+    "mtime": 1790986569.2118385,
+    "ast_hash": "16ebac195152580bc61dad16b37f0908",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/THINKING/SECOND_ORDER_THINKING.md": {
+    "mtime": 1790986569.2144744,
+    "ast_hash": "e9cc6762869b98c20a33f2356e72ebfd",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/THINKING/SYSTEMS_THINKING.md": {
+    "mtime": 1790986569.2133782,
+    "ast_hash": "428aff6ccd94ebaa60f47bd39bc8f0d9",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/THINKING/THINKING.md": {
+    "mtime": 1790986569.2120514,
+    "ast_hash": "d7cdf800a38f614374213c23d001a27e",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/THINKING/THINKING_AUDIT.md": {
+    "mtime": 1790986569.215107,
+    "ast_hash": "78a564eea3d19c51bef61500ecbf9905",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/THINKING/THINKING_FRAMEWORKS_MASTER_ONTOLOGY.md": {
+    "mtime": 1790987312.0911033,
+    "ast_hash": "806ca204654cee62ffc2a55a88391fa1",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/THINKING/THINKING_FRAMEWORK_ROUTER.md": {
+    "mtime": 1790986569.2131796,
+    "ast_hash": "211865d96a199390e866411b61dba96e",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/THINKING/THINKING_PIPELINES.md": {
+    "mtime": 1790986569.210185,
+    "ast_hash": "c28519b7c88a54592ce3d2496b81c360",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/TOOLS/TOOLS_MASTER_ONTOLOGY.md": {
+    "mtime": 1790986775.4531116,
+    "ast_hash": "69630f158693b141f792d558680b57ad",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/TOOLS/TOOL_DISCOVERY.md": {
+    "mtime": 1790986775.453247,
+    "ast_hash": "08640c091aeadf07902cfa4576222b5b",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/TOOLS/TOOL_HEALTH.md": {
+    "mtime": 1790986775.4533753,
+    "ast_hash": "d73d62bf5b20231397838493933a982c",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/TOOLS/TOOL_PERMISSIONS.md": {
+    "mtime": 1790986775.4533098,
+    "ast_hash": "a39c4c527f99f1dd80a92e4fbd1abe94",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/TOOLS/TOOL_REGISTRY.md": {
+    "mtime": 1790986775.4531817,
+    "ast_hash": "f22212785d7167b9f6846603a45ed708",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/TOOLS/TOOL_VERIFICATION.md": {
+    "mtime": 1790986775.4534402,
+    "ast_hash": "29298a6c818bb342aeabefd3b403a6b6",
     "semantic_hash": ""
   }
 }

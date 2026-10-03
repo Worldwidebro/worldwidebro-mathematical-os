@@ -16,37 +16,37 @@ Every object has a data-flow story: Where did it come from? What is it? Who tran
 The fundamental recursive loop:
 
 ```
-[REALITY] → [DATA] → [KNOWLEDGE] → [DECISION] → [ACTION] → [OUTCOME] → [FEEDBACK] → [REALITY] ↺
+[[REALITY]] → [[DATA]] → [[KNOWLEDGE]] → [[DECISION]] → [[ACTION]] → [[OUTCOME]] → [[FEEDBACK]] → [[REALITY]] ↺
 ```
 
 ---
 
-## [DATA_FLOW] Root Ontology
+## [[DATA_FLOW]] Root Ontology
 
 ```
-[DATA_FLOW]
-├── [DATA_SOURCES]
-├── [DATA_CAPTURE]
-├── [DATA_TRANSPORT]
-├── [DATA_TRANSFORMATION]
-├── [DATA_VALIDATION]
-├── [DATA_IDENTITY]
-├── [DATA_STORAGE]
-├── [KNOWLEDGE]
-├── [COMPUTATION]
-├── [DECISION]
-├── [ACTION]
-├── [OUTCOMES]
-├── [FEEDBACK]
-├── [OBSERVABILITY]
-├── [SECURITY]
-├── [GOVERNANCE]
-└── [DATA_LIFECYCLE]
+[[DATA_FLOW]]
+├── [[DATA_SOURCES]]
+├── [[DATA_CAPTURE]]
+├── [[DATA_TRANSPORT]]
+├── [[DATA_TRANSFORMATION]]
+├── [[DATA_VALIDATION]]
+├── [[DATA_IDENTITY]]
+├── [[DATA_STORAGE]]
+├── [[KNOWLEDGE]]
+├── [[COMPUTATION]]
+├── [[DECISION]]
+├── [[ACTION]]
+├── [[OUTCOMES]]
+├── [[FEEDBACK]]
+├── [[OBSERVABILITY]]
+├── [[SECURITY]]
+├── [[GOVERNANCE]]
+└── [[DATA_LIFECYCLE]]
 ```
 
 ---
 
-## [DATA_SOURCES] — Where Reality Enters
+## [[DATA_SOURCES]] — Where Reality Enters
 
 ```yaml
 sources:
@@ -103,7 +103,7 @@ sources:
 
 ---
 
-## [DATA_CAPTURE] — Extraction & Ingestion
+## [[DATA_CAPTURE]] — Extraction & Ingestion
 
 ```yaml
 capture:
@@ -144,7 +144,7 @@ capture:
 
 ---
 
-## [DATA_TRANSPORT] — Movement & Routing
+## [[DATA_TRANSPORT]] — Movement & Routing
 
 ```yaml
 transport:
@@ -185,7 +185,7 @@ transport:
 
 ---
 
-## [DATA_TRANSFORMATION] — Normalization & Enrichment
+## [[DATA_TRANSFORMATION]] — Normalization & Enrichment
 
 ```yaml
 transformation:
@@ -245,7 +245,7 @@ transformation:
 
 ---
 
-## [DATA_VALIDATION] — Quality Gates
+## [[DATA_VALIDATION]] — Quality Gates
 
 ```yaml
 validation:
@@ -284,7 +284,7 @@ validation:
 
 ---
 
-## [DATA_IDENTITY] — Entity Resolution
+## [[DATA_IDENTITY]] — Entity Resolution
 
 ```yaml
 identity:
@@ -326,7 +326,7 @@ identity:
 
 ---
 
-## [DATA_STORAGE] — Persistence Layer
+## [[DATA_STORAGE]] — Persistence Layer
 
 ```yaml
 storage:
@@ -372,7 +372,7 @@ storage:
     location: ~/Documents/Company\ Brain
     format: .md with [[wiki links]]
     version: Git-tracked
-    ontology: Bracket notation [SECTION] hierarchy
+    ontology: Bracket notation [[SECTION]] hierarchy
   
   object_storage:
     planned: S3-compatible (future)
@@ -381,7 +381,7 @@ storage:
 
 ---
 
-## [KNOWLEDGE] — Semantic Understanding
+## [[KNOWLEDGE]] — Semantic Understanding
 
 ```yaml
 knowledge:
@@ -389,7 +389,7 @@ knowledge:
   documents:
     where: Obsidian vault + [[INFRASTRUCTURE.md]]
     format: Markdown + [[links]]
-    ontology: Bracket notation [LAYER] hierarchy
+    ontology: Bracket notation [[LAYER]] hierarchy
     
   facts:
     where: Neo4j nodes + relationships
@@ -438,7 +438,7 @@ knowledge:
 
 ---
 
-## [COMPUTATION] — Reasoning & Inference
+## [[COMPUTATION]] — Reasoning & Inference
 
 ```yaml
 computation:
@@ -494,7 +494,7 @@ computation:
 
 ---
 
-## [DECISION] — Choice-Making
+## [[DECISION]] — Choice-Making
 
 ```yaml
 decision:
@@ -534,7 +534,7 @@ decision:
 
 ---
 
-## [ACTION] — Execution
+## [[ACTION]] — Execution
 
 ```yaml
 action:
@@ -584,7 +584,7 @@ action:
 
 ---
 
-## [OUTCOMES] — Results & Impact
+## [[OUTCOMES]] — Results & Impact
 
 ```yaml
 outcomes:
@@ -625,7 +625,7 @@ outcomes:
 
 ---
 
-## [FEEDBACK] — Continuous Improvement
+## [[FEEDBACK]] — Continuous Improvement
 
 ```yaml
 feedback:
@@ -679,7 +679,7 @@ feedback:
 
 ---
 
-## [OBSERVABILITY] — Monitoring & Transparency
+## [[OBSERVABILITY]] — Monitoring & Transparency
 
 ```yaml
 observability:
@@ -724,7 +724,7 @@ observability:
 
 ---
 
-## [SECURITY] — Data Protection
+## [[SECURITY]] — Data Protection
 
 ```yaml
 security:
@@ -765,7 +765,7 @@ security:
 
 ---
 
-## [GOVERNANCE] — Ownership & Accountability
+## [[GOVERNANCE]] — Ownership & Accountability
 
 ```yaml
 governance:
@@ -816,35 +816,35 @@ governance:
 
 ---
 
-## [DATA_LIFECYCLE] — Complete Arc
+## [[DATA_LIFECYCLE]] — Complete Arc
 
 ```
-[REALITY]
+[[REALITY]]
     ↓
-[CREATE] — Entity born (venture created, agent discovered)
+[[CREATE]] — Entity born (venture created, agent discovered)
     ↓
-[INGEST] — Data enters system (via API, file, human input)
+[[INGEST]] — Data enters system (via API, file, human input)
     ↓
-[PROCESS] — Validation, transformation, enrichment
+[[PROCESS]] — Validation, transformation, enrichment
     ↓
-[STORE] — Persisted to Neo4j, PostgreSQL, Qdrant, markdown
+[[STORE]] — Persisted to Neo4j, PostgreSQL, Qdrant, markdown
     ↓
-[ENRICH] — AI analysis, embedding, classification, derivation
+[[ENRICH]] — AI analysis, embedding, classification, derivation
     ↓
-[USE] — Agent queries, decisions, reasoning
+[[USE]] — Agent queries, decisions, reasoning
     ↓
-[SHARE] — Exposed via API, reports, dashboards
+[[SHARE]] — Exposed via API, reports, dashboards
     ↓
-[ARCHIVE] — Moved to cold storage if historical
+[[ARCHIVE]] — Moved to cold storage if historical
     ↓
-[DESTROY] — Deletion on retention policy (GDPR compliance)
+[[DESTROY]] — Deletion on retention policy (GDPR compliance)
     ↓
-[FEEDBACK] ↺ LOOP BACK TO REALITY
+[[FEEDBACK]] ↺ LOOP BACK TO REALITY
 ```
 
 ---
 
-## [NEXT_ACTIONS]
+## [[NEXT_ACTIONS]]
 
 ```
 NOW:

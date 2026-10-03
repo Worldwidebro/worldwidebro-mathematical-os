@@ -47,7 +47,7 @@ VERIFIED_STATE
 
 ## Verification Layers
 
-### [CLAIM]
+### [[CLAIM]]
 **What Claude asserts**
 
 Example claims:
@@ -58,7 +58,7 @@ Example claims:
 
 **Status:** Unverified (L0)
 
-### [EVIDENCE]
+### [[EVIDENCE]]
 **Facts that support or contradict claim**
 
 For "The API is running":
@@ -69,7 +69,7 @@ For "The API is running":
 
 **Status:** Partially verified (L1)
 
-### [SOURCE]
+### [[SOURCE]]
 **Where evidence comes from**
 
 - Docker container health status
@@ -85,7 +85,7 @@ For "The API is running":
 4. **Documentation** — "README says this should work"
 5. **Assumption** — "It should be working"
 
-### [OBSERVATION]
+### [[OBSERVATION]]
 **Claude directly verifies**
 
 ```bash
@@ -106,7 +106,7 @@ Claude: "The API is running (I assume)"
 - Check git status
 - Run tests
 
-### [VERIFICATION]
+### [[VERIFICATION]]
 **Test the claim**
 
 For "The deployment succeeded":
@@ -117,7 +117,7 @@ For "The deployment succeeded":
 - [ ] Metrics normal
 - [ ] Previous version still works (rollback ready)
 
-### [TEST]
+### [[TEST]]
 **Reproducible proof**
 
 ```bash
@@ -128,7 +128,7 @@ $ curl -s http://localhost:3000/health
 # Result: PASS ✓
 ```
 
-### [RESULT]
+### [[RESULT]]
 **Outcome of verification**
 
 **Possible results:**
@@ -138,7 +138,7 @@ $ curl -s http://localhost:3000/health
 - ❓ **UNKNOWN** — No evidence found
 - ⏳ **NOT_TESTED** — Could be true, but unverified
 
-### [CONFIDENCE]
+### [[CONFIDENCE]]
 **Certainty level (0.0 - 1.0)**
 
 | Score | Status | Behavior |
@@ -149,7 +149,7 @@ $ curl -s http://localhost:3000/health
 | 0.85 | High confidence | Reasonable to act on |
 | 1.0 | Certainty = true | Safe to depend on |
 
-### [UNCERTAINTY]
+### [[UNCERTAINTY]]
 **Known unknowns**
 
 Example:
@@ -163,7 +163,7 @@ Unknown: Query performance affected?
 Confidence: 0.65 (moderate, with gaps)
 ```
 
-### [ASSUMPTION]
+### [[ASSUMPTION]]
 **Unverified premise**
 
 Example:
@@ -176,7 +176,7 @@ Assumption: Rollback is straightforward
 Reality check needed before acting
 ```
 
-### [INFERENCE]
+### [[INFERENCE]]
 **Logical deduction from evidence**
 
 ```
@@ -191,7 +191,7 @@ Inference:
 Confidence: 0.8 (high, from multiple signals)
 ```
 
-### [DRIFT]
+### [[DRIFT]]
 **Discrepancy from source-of-truth**
 
 When Claude says X but [[REALITY]] shows Y:

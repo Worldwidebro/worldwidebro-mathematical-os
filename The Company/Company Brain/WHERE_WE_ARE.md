@@ -18,7 +18,7 @@ Last verified: **2026-10-02 11:58 PM** (Live audit: [[SYSTEM_CONNECTIVITY_AUDIT]
 
 ---
 
-## [CURRENT_STATE]
+## [[CURRENT_STATE]]
 
 ```yaml
 system:
@@ -32,9 +32,9 @@ system:
 
 ---
 
-## [MACHINES]
+## [[MACHINES]]
 
-### [MAC_STUDIO] — Primary Compute Node
+### [[MAC_STUDIO]] — Primary Compute Node
 
 ```yaml
 machine:
@@ -42,43 +42,43 @@ machine:
   ip_tailscale: 100.87.214.70
   ip_local: 192.168.1.11
   connection_tailscale: direct LAN (41641)
-  status: [VERIFIED]
+  status: [[VERIFIED]]
   
   hardware:
     cpu: Apple M2 Ultra (20-core)
     gpu: 76-core
     memory: 128 GB unified
-    status: [VERIFIED]
+    status: [[VERIFIED]]
   
   storage:
     internal:
       capacity: 228 GB
       used: 217 GB (95% full)
       available: 11 GB
-      status: [VERIFIED] - CRITICAL (cleanup needed)
+      status: [[VERIFIED]] - CRITICAL (cleanup needed)
     
     external:
       device: LaCie T7 Shield
       capacity: 1.8 TB
       used: 900 GB (50%) [claimed, NOT VERIFIED]
       available: 922 GB [claimed, NOT VERIFIED]
-      status: [NOT_MOUNTED] ❌ — Documentation STALE
-      mount: /Volumes/T7\ Shield [UNMOUNTED]
+      status: [[NOT_MOUNTED]] ❌ — Documentation STALE
+      mount: /Volumes/T7\ Shield [[UNMOUNTED]]
       note: "Verified 2026-10-02 23:58 — T7 NOT currently mounted on Mac Studio"
   
   operating_system:
     name: macOS Sonoma
     version: 14.x
     architecture: ARM64 (Apple Silicon)
-    status: [VERIFIED]
+    status: [[VERIFIED]]
   
   connectivity:
-    ssh: [VERIFIED] - passwordless auth (id_ed25519)
-    tailscale: [VERIFIED] - direct LAN connection
-    dns: [VERIFIED] - MagicDNS working
+    ssh: [[VERIFIED]] - passwordless auth (id_ed25519)
+    tailscale: [[VERIFIED]] - direct LAN connection
+    dns: [[VERIFIED]] - MagicDNS working
 ```
 
-### [MAC_AIR] — Development Workstation
+### [[MAC_AIR]] — Development Workstation
 
 ```yaml
 machine:
@@ -86,52 +86,52 @@ machine:
   ip_tailscale: 100.121.17.63
   ip_local: 192.168.1.79
   connection_tailscale: VPN tunnel (no direct LAN)
-  status: [VERIFIED]
+  status: [[VERIFIED]]
   
   hardware:
     cpu: Apple M3
     memory: 16 GB unified
-    status: [VERIFIED]
+    status: [[VERIFIED]]
   
   storage:
     internal:
       capacity: 228 GB
       used: 223 GB (98% full)
       available: 5.3 GB
-      status: [VERIFIED] - CRITICAL (cleanup needed, target 100+ GB free)
+      status: [[VERIFIED]] - CRITICAL (cleanup needed, target 100+ GB free)
   
   operating_system:
     name: macOS Sequoia
     version: 15.x
     architecture: ARM64 (Apple Silicon)
-    status: [VERIFIED]
+    status: [[VERIFIED]]
   
   connectivity:
-    ssh_to_macstudio: [VERIFIED] - working
-    tailscale: [VERIFIED] - VPN connection
-    docker_remote_context: [NOT_TESTED]
+    ssh_to_macstudio: [[VERIFIED]] - working
+    tailscale: [[VERIFIED]] - VPN connection
+    docker_remote_context: [[NOT_TESTED]]
 ```
 
 ---
 
-## [NETWORK]
+## [[NETWORK]]
 
 ```yaml
 network:
   
   tailscale:
-    status: [VERIFIED]
+    status: [[VERIFIED]]
     tailnet: Worldwidebro@
     
     nodes:
       mac_studio:
         ip: 100.87.214.70
-        connection: [VERIFIED] direct LAN
+        connection: [[VERIFIED]] direct LAN
         latency: <5ms
       
       mac_air:
         ip: 100.121.17.63
-        connection: [VERIFIED] VPN tunnel
+        connection: [[VERIFIED]] VPN tunnel
         latency: <50ms
       
       iphone:
@@ -142,60 +142,60 @@ network:
         status: offline or not monitored
   
   ssh:
-    mac_air_to_mac_studio: [VERIFIED] ✅
+    mac_air_to_mac_studio: [[VERIFIED]] ✅
     host_config: ~/.ssh/config (3 entries: macstudio, mac-studio, mac-studio-local)
     key: ~/.ssh/id_ed25519 (ed25519, authorized on Mac Studio)
     user: divinejohns (NOT aces) ⚠️ CRITICAL
-    passwordless_login: [VERIFIED] ✅
+    passwordless_login: [[VERIFIED]] ✅
     test_command: ssh divinejohns@100.87.214.70 "echo Connected!"
     
   local_lan:
     network: 192.168.1.0/24
     mac_studio: 192.168.1.11
     mac_air: 192.168.1.79
-    status: [VERIFIED]
+    status: [[VERIFIED]]
   
   dns:
-    magicdns: [VERIFIED]
+    magicdns: [[VERIFIED]]
     hosts: macstudio, mac-studio, mac-studio.local
-    resolution: [VERIFIED]
+    resolution: [[VERIFIED]]
   
   internet:
-    status: [VERIFIED]
+    status: [[VERIFIED]]
     upstream: ISP
     dns_backup: Quad9 + Cloudflare
 ```
 
 ---
 
-## [INFRASTRUCTURE]
+## [[INFRASTRUCTURE]]
 
-### [DOCKER]
+### [[DOCKER]]
 
 ```yaml
 docker:
   engine:
     host: Mac Studio
-    status: [RUNNING] - verified by port responsiveness
+    status: [[RUNNING]] - verified by port responsiveness
     containers: 70+ volumes detected
     images: pre-built
-    data_location: [UNKNOWN] — claimed /Volumes/T7\ Shield/docker/ BUT T7 not mounted
-    data_location_actual: [NEEDS_VERIFICATION] — Likely on internal drive (95% full)
+    data_location: [[UNKNOWN]] — claimed /Volumes/T7\ Shield/docker/ BUT T7 not mounted
+    data_location_actual: [[NEEDS_VERIFICATION]] — Likely on internal drive (95% full)
     
   services:
     count: 8+ core services
-    docker_compose_status: [VERIFIED]
-    health_checks: [VERIFIED]
-    restart_policy: [VERIFIED]
+    docker_compose_status: [[VERIFIED]]
+    health_checks: [[VERIFIED]]
+    restart_policy: [[VERIFIED]]
 ```
 
-### [SERVICES]
+### [[SERVICES]]
 
 ```yaml
 services:
   
   omniroute:
-    status: [VERIFIED]
+    status: [[VERIFIED]]
     host: Mac Studio (100.87.214.70)
     port: 3004 (HTTP)
     container: omniroute:latest
@@ -208,7 +208,7 @@ services:
     note: Port corrected from 20128 (documentation drift)
   
   neo4j:
-    status: [VERIFIED]
+    status: [[VERIFIED]]
     host: Mac Studio (100.87.214.70)
     bolt_port: 7687
     browser_port: 7474
@@ -222,7 +222,7 @@ services:
     evidence: [[CONNECTIVITY_TEST_2026_10_02]]
   
   qdrant:
-    status: [VERIFIED]
+    status: [[VERIFIED]]
     host: Mac Studio (100.87.214.70)
     port: 6333
     container: qdrant:latest
@@ -232,7 +232,7 @@ services:
     last_verified: 2026-10-02 18:15 UTC
   
   ollama:
-    status: [VERIFIED]
+    status: [[VERIFIED]]
     host: Mac Studio (100.87.214.70)
     port: 11434
     models:
@@ -243,90 +243,90 @@ services:
     evidence: curl http://100.87.214.70:11434/api/tags
   
   postgresql:
-    status: [TUNNEL_OPEN] - auth pending
+    status: [[TUNNEL_OPEN]] - auth pending
     host: Mac Studio (Docker)
     port: 5433 (tunneled from Mac Air)
     container: postgres:latest
     database: company_brain
     ssh_tunnel: ssh -N -L 5433:localhost:5433 macstudio
     tunnel_pid: 76623
-    tunnel_status: [VERIFIED] ACTIVE
-    auth_status: [BLOCKED] - role configuration needed
+    tunnel_status: [[VERIFIED]] ACTIVE
+    auth_status: [[BLOCKED]] - role configuration needed
     last_verified: 2026-10-02 18:15 UTC
   
   redis:
-    status: [VERIFIED]
+    status: [[VERIFIED]]
     host: Mac Studio (Docker)
     port: 6379 (tunneled from Mac Air)
     container: redis:latest
     ssh_tunnel: ssh -N -L 6379:localhost:6379 macstudio
     tunnel_pid: 76627
     tunnel_test: redis-cli -h localhost ping → PONG
-    tunnel_status: [VERIFIED] ACTIVE
+    tunnel_status: [[VERIFIED]] ACTIVE
     last_verified: 2026-10-02 18:15 UTC
   
   openobserve:
-    status: [RUNNING]
+    status: [[RUNNING]]
     role: Centralized logging
-    last_verified: [NOT_TESTED]
+    last_verified: [[NOT_TESTED]]
   
   livekit:
-    status: [RUNNING]
+    status: [[RUNNING]]
     ports: 17880-17882
     role: Real-time communications
-    last_verified: [NOT_TESTED]
+    last_verified: [[NOT_TESTED]]
 ```
 
 ---
 
-## [APPLICATIONS]
+## [[APPLICATIONS]]
 
 ```yaml
 applications:
   
   claude_code:
-    status: [VERIFIED]
+    status: [[VERIFIED]]
     model: Claude Haiku 4.5
-    connection_to_omniroute: [CONFIGURED] (updated 2026-10-02)
+    connection_to_omniroute: [[CONFIGURED]] (updated 2026-10-02)
     config_file: ~/.claude/settings.json
     omniroute_urls:
       localhost: http://localhost:3004
       remote: http://100.87.214.70:3004
-    mcp_enabled: [VERIFIED]
+    mcp_enabled: [[VERIFIED]]
     
   claude:
-    status: [VERIFIED]
+    status: [[VERIFIED]]
     role: Main AI assistant
     access_via: Web or CLI
     
   antigravity:
-    status: [NOT_TESTED]
+    status: [[NOT_TESTED]]
     
   codex:
-    status: [NOT_TESTED]
+    status: [[NOT_TESTED]]
     
   obsidian:
-    status: [VERIFIED]
+    status: [[VERIFIED]]
     vault: /Users/acebless/Documents/The\ Company/Company\ Brain
-    plugins: [VERIFIED]
+    plugins: [[VERIFIED]]
 ```
 
 ---
 
-## [AI_SYSTEM]
+## [[AI_SYSTEM]]
 
 ```yaml
 ai_system:
   
   model_router:
     omniroute:
-      status: [VERIFIED]
+      status: [[VERIFIED]]
       role: Primary model gateway
       port: 3004
       
   local_llms:
     ollama:
-      status: [VERIFIED]
+      status: [[VERIFIED]]
       host: Mac Studio
       port: 11434
       models: 3 available
@@ -334,52 +334,52 @@ ai_system:
   mcp:
     server:
       omniroute:
-        status: [VERIFIED]
+        status: [[VERIFIED]]
         transport: [SSE, Stdio]
       
       company_brain:
-        status: [VERIFIED]
+        status: [[VERIFIED]]
         tools: [infrastructure_status, test_e2e, neo4j_status]
     
     client:
       claude_code:
-        status: [VERIFIED]
+        status: [[VERIFIED]]
       
       other_clients:
-        status: [PARTIAL]
+        status: [[PARTIAL]]
   
   agents:
     count_registered: 309 in Neo4j
-    status: [PARTIAL]
+    status: [[PARTIAL]]
     note: Can discover via Neo4j, routing via OmniRoute
     
   a2a:
-    status: [NOT_TESTED]
+    status: [[NOT_TESTED]]
 ```
 
 ---
 
-## [KNOWLEDGE_SYSTEM]
+## [[KNOWLEDGE_SYSTEM]]
 
 ```yaml
 knowledge_system:
   
   markdown_vault:
     location: /Users/acebless/Documents/The\ Company/Company\ Brain
-    status: [VERIFIED]
+    status: [[VERIFIED]]
     
   wiki_links:
     syntax: [[DOCUMENT_NAME]]
     coverage: Partial
-    status: [PARTIAL]
+    status: [[PARTIAL]]
     
   neo4j:
-    status: [VERIFIED]
+    status: [[VERIFIED]]
     edges: 20,363
     entities: 3000+
     
   qdrant:
-    status: [VERIFIED]
+    status: [[VERIFIED]]
     vectors: 17,236
     
   source_of_truth_hierarchy:
@@ -392,7 +392,7 @@ knowledge_system:
 
 ---
 
-## [WORK]
+## [[WORK]]
 
 ```yaml
 work:
@@ -426,7 +426,7 @@ work:
 
 ---
 
-## [CONNECTIVITY_TESTS]
+## [[CONNECTIVITY_TESTS]]
 
 ```yaml
 connectivity_tests:
@@ -462,7 +462,7 @@ connectivity_tests:
       result: ✅ Port listening
       timestamp: 2026-10-02 18:15 UTC
     
-    - [TAILSCALE]
+    - [[TAILSCALE]]
       evidence: "tailscale status"
       result: ✅ Direct LAN connection
       latency: <5ms
@@ -481,7 +481,7 @@ connectivity_tests:
 
 ---
 
-## [BLOCKERS]
+## [[BLOCKERS]]
 
 ```yaml
 blockers:
@@ -515,64 +515,64 @@ blockers:
 
 ---
 
-## [RISKS]
+## [[RISKS]]
 
 ```yaml
 risks:
   
   single_point_of_failure:
-    - Mac Studio crashes: [MEDIUM]
+    - Mac Studio crashes: [[MEDIUM]]
       mitigation: "Regular backups to T7 Shield"
     
-    - Tailscale down: [LOW]
+    - Tailscale down: [[LOW]]
       mitigation: "Direct LAN available for local connectivity"
     
-    - Storage full: [HIGH]
+    - Storage full: [[HIGH]]
       mitigation: "Delete old Docker volumes, clean cache"
   
   data_loss:
-    - Incomplete backups: [MEDIUM]
+    - Incomplete backups: [[MEDIUM]]
       evidence: "No automated backup script"
       mitigation: "Set up daily snapshots"
     
-    - Untracked changes: [LOW]
+    - Untracked changes: [[LOW]]
       evidence: "Git commits tracked, uncommitted changes rare"
   
   security:
-    - Default Neo4j password: [HIGH]
+    - Default Neo4j password: [[HIGH]]
       evidence: "neo4j / changeme still in use"
       mitigation: "Change immediately to Bitwarden secret"
     
-    - SSH key exposure: [LOW]
+    - SSH key exposure: [[LOW]]
       evidence: "Keys in ~/.ssh, proper permissions (0600)"
       mitigation: "Quarterly rotation"
     
-    - API keys hardcoded: [LOW]
+    - API keys hardcoded: [[LOW]]
       evidence: "OmniRoute key in ~/.omniroute/config.json (not in git)"
       mitigation: "Already isolated, monitor for drift"
   
   drift:
-    - Documentation vs reality: [MEDIUM]
+    - Documentation vs reality: [[MEDIUM]]
       evidence: "OmniRoute port was 20128 in docs, 3004 actual"
       mitigation: "This document (WHERE_WE_ARE.md)"
     
-    - Configuration drift: [MEDIUM]
+    - Configuration drift: [[MEDIUM]]
       evidence: "Docker configs scattered"
       mitigation: "INFRASTRUCTURE.md as source of truth"
   
   dependency_risk:
-    - OmniRoute depends on Docker: [MEDIUM]
+    - OmniRoute depends on Docker: [[MEDIUM]]
       failure_mode: "If Docker crashes, no model routing"
       mitigation: "Docker health checks enabled"
     
-    - Ollama model cache: [LOW]
+    - Ollama model cache: [[LOW]]
       failure_mode: "Models deleted, need re-download"
       mitigation: "Models on T7 Shield external storage"
 ```
 
 ---
 
-## [METRICS]
+## [[METRICS]]
 
 ```yaml
 metrics:
@@ -605,15 +605,15 @@ metrics:
     
   agents:
     registered: 309 in Neo4j
-    discoverable: [PARTIAL] (need routing verification)
+    discoverable: [[PARTIAL]] (need routing verification)
     skills: 300+
 ```
 
 ---
 
-## [NEXT_ACTIONS]
+## [[NEXT_ACTIONS]]
 
-### [NOW] (Today/Tonight)
+### [[NOW]] (Today/Tonight)
 
 ```
 [ ] Change Neo4j password (changeme → Bitwarden secret)
@@ -621,7 +621,7 @@ metrics:
 [ ] Verify all tunnel PIDs still running
 ```
 
-### [TODAY_OR_TOMORROW]
+### [[TODAY_OR_TOMORROW]]
 
 ```
 [ ] Clean Mac Air storage (target 100+ GB free):
@@ -641,7 +641,7 @@ metrics:
     - createdb -O company_brain company_brain
 ```
 
-### [THIS_WEEK]
+### [[THIS_WEEK]]
 
 ```
 [ ] Complete Syncthing folder pairing
@@ -654,7 +654,7 @@ metrics:
 [ ] Verify all connectivity after storage cleanup
 ```
 
-### [NEXT_WEEK]
+### [[NEXT_WEEK]]
 
 ```
 [ ] Set up automated Docker backups
@@ -663,7 +663,7 @@ metrics:
 [ ] Review and update this document
 ```
 
-### [WAITING_FOR]
+### [[WAITING_FOR]]
 
 ```
 [ ] PostgreSQL auth configuration complete
@@ -673,7 +673,7 @@ metrics:
 
 ---
 
-## [CHANGE_LOG]
+## [[CHANGE_LOG]]
 
 ```
 2026-10-02 18:30 UTC
@@ -696,7 +696,7 @@ IMPACT:
 
 ---
 
-## [SUMMARY]
+## [[SUMMARY]]
 
 **Infrastructure:** ✅ Verified (95% confident)  
 **Connectivity:** ✅ All tests passed (7/7)  
@@ -717,3 +717,50 @@ IMPACT:
 
 ## Current Blockers
 - 🚨 **OmniRoute Gateway Down**: The `omniroute` Docker container on the Mac Studio is currently in a crash loop (`Restarting (7)`). Needs immediate logs/triage.
+
+## [[COGNITIVE_ENGINES]]
+
+New cognitive frameworks driving the Reality Resolution Loop:
+- [[QUESTION_MASTER_ONTOLOGY]]
+- [[THINKING_FRAMEWORKS_MASTER_ONTOLOGY]]
+- [[READING_ORDER_AND_COGNITIVE_DEPTH_MASTER_ONTOLOGY]]
+- [[LITERATURE_AND_KNOWLEDGE_ARTIFACTS_MASTER_ONTOLOGY]]
+
+
+## [[EXECUTION_ENGINES]]
+
+The operational systems that convert capability into action:
+- [[COMPANY_BRAIN_AGENTS_TOOLS_SKILLS_MASTER_ONTOLOGY]]
+
+
+## [[CONTROL_ENGINES]]
+
+The governance, coordination, healing, and recurring systems:
+- [[DIRECTIVES_MASTER_ONTOLOGY]]
+- [[EXECUTIVE_SYSTEM_MASTER_ONTOLOGY]]
+- [[SELF_HEALING_MASTER_ONTOLOGY]]
+- [[LOOPS_MASTER_ONTOLOGY]]
+
+
+## [[EXECUTION_SUBSTRATE]]
+
+The platform environment running the execution graph:
+- [[ANTIGRAVITY_MASTER_ONTOLOGY]]
+
+
+## [[CAPABILITY_SUPPLY_CHAIN]]
+
+The discovery, validation, and composition mechanism for procedural skills:
+- [[AGENTIC_AWESOME_SKILLS_MASTER_ONTOLOGY]]
+
+
+## [[META_SKILLS]]
+
+Capabilities whose function is to evaluate, discover, or install other capabilities:
+- [[FIND_SKILLS_MASTER_ONTOLOGY]]
+
+
+## [[INTELLIGENCE_ENGINES]]
+
+Systems that ingest, normalize, and map external information into actionable capabilities:
+- [[SKILL_INTELLIGENCE_MASTER_ONTOLOGY]]

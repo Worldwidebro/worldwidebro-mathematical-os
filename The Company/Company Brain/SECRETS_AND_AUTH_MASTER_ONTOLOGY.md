@@ -11,16 +11,16 @@ source_of_truth: true
 
 **The Company Brain must understand credentials without possessing them.**
 
-This ontology models **[SECRETS_AND_AUTH]** as a first-class control plane, separate from but fully integrated with the Company Brain's knowledge graph.
+This ontology models **[[SECRETS_AND_AUTH]]** as a first-class control plane, separate from but fully integrated with the Company Brain's knowledge graph.
 
 ---
 
 ## Core Principle: Metadata ≠ Value
 
 ```
-[SECRET_METADATA]
+[[SECRET_METADATA]]
         ≠
-[SECRET_VALUE]
+[[SECRET_VALUE]]
 ```
 
 **The Company Brain knows:**
@@ -37,243 +37,243 @@ This ontology models **[SECRETS_AND_AUTH]** as a first-class control plane, sepa
 
 ---
 
-## [SECRETS_AND_AUTH_COMPLETE_ARCHITECTURE] — 9 Domains
+## [[SECRETS_AND_AUTH_COMPLETE_ARCHITECTURE]] — 9 Domains
 
 ```
-[SECRETS_AND_AUTH]
+[[SECRETS_AND_AUTH]]
 
-├─ [IDENTITY]
-│  ├── [HUMAN_IDENTITY]
-│  ├── [SERVICE_IDENTITY]
-│  ├── [AGENT_IDENTITY]
-│  ├── [APPLICATION_IDENTITY]
-│  ├── [MACHINE_IDENTITY]
-│  ├── [ORGANIZATION_IDENTITY]
-│  └── [WORKLOAD_IDENTITY]
+├─ [[IDENTITY]]
+│  ├── [[HUMAN_IDENTITY]]
+│  ├── [[SERVICE_IDENTITY]]
+│  ├── [[AGENT_IDENTITY]]
+│  ├── [[APPLICATION_IDENTITY]]
+│  ├── [[MACHINE_IDENTITY]]
+│  ├── [[ORGANIZATION_IDENTITY]]
+│  └── [[WORKLOAD_IDENTITY]]
 │
-├─ [SECRETS]
-│  ├── [PASSWORDS]
-│  ├── [API_KEYS]
-│  ├── [ACCESS_TOKENS]
-│  ├── [REFRESH_TOKENS]
-│  ├── [SESSION_TOKENS]
-│  ├── [OAUTH_CREDENTIALS]
-│  ├── [CLIENT_SECRETS]
-│  ├── [PRIVATE_KEYS]
-│  ├── [SSH_KEYS]
-│  ├── [CERTIFICATES]
-│  ├── [SIGNING_KEYS]
-│  ├── [ENCRYPTION_KEYS]
-│  ├── [WEBHOOK_SECRETS]
-│  ├── [DATABASE_CREDENTIALS]
-│  ├── [SERVICE_CREDENTIALS]
-│  └── [RECOVERY_CODES]
+├─ [[SECRETS]]
+│  ├── [[PASSWORDS]]
+│  ├── [[API_KEYS]]
+│  ├── [[ACCESS_TOKENS]]
+│  ├── [[REFRESH_TOKENS]]
+│  ├── [[SESSION_TOKENS]]
+│  ├── [[OAUTH_CREDENTIALS]]
+│  ├── [[CLIENT_SECRETS]]
+│  ├── [[PRIVATE_KEYS]]
+│  ├── [[SSH_KEYS]]
+│  ├── [[CERTIFICATES]]
+│  ├── [[SIGNING_KEYS]]
+│  ├── [[ENCRYPTION_KEYS]]
+│  ├── [[WEBHOOK_SECRETS]]
+│  ├── [[DATABASE_CREDENTIALS]]
+│  ├── [[SERVICE_CREDENTIALS]]
+│  └── [[RECOVERY_CODES]]
 │
-├─ [AUTHENTICATION]
-│  ├── [AUTHENTICATION_METHOD]
-│  ├── [PASSWORD_AUTH]
-│  ├── [PASSKEY]
-│  ├── [MFA]
-│  ├── [TOTP]
-│  ├── [HARDWARE_KEY]
-│  ├── [BIOMETRIC]
-│  ├── [OAUTH]
-│  ├── [OIDC]
-│  ├── [SAML]
-│  ├── [SSH_AUTH]
-│  ├── [CERTIFICATE_AUTH]
-│  └── [WORKLOAD_AUTH]
+├─ [[AUTHENTICATION]]
+│  ├── [[AUTHENTICATION_METHOD]]
+│  ├── [[PASSWORD_AUTH]]
+│  ├── [[PASSKEY]]
+│  ├── [[MFA]]
+│  ├── [[TOTP]]
+│  ├── [[HARDWARE_KEY]]
+│  ├── [[BIOMETRIC]]
+│  ├── [[OAUTH]]
+│  ├── [[OIDC]]
+│  ├── [[SAML]]
+│  ├── [[SSH_AUTH]]
+│  ├── [[CERTIFICATE_AUTH]]
+│  └── [[WORKLOAD_AUTH]]
 │
-├─ [AUTHORIZATION]
-│  ├── [ROLE]
-│  ├── [PERMISSION]
-│  ├── [SCOPE]
-│  ├── [POLICY]
-│  ├── [ACCESS_LEVEL]
-│  ├── [RESOURCE_ACCESS]
-│  ├── [ADMIN_ACCESS]
-│  └── [LEAST_PRIVILEGE]
+├─ [[AUTHORIZATION]]
+│  ├── [[ROLE]]
+│  ├── [[PERMISSION]]
+│  ├── [[SCOPE]]
+│  ├── [[POLICY]]
+│  ├── [[ACCESS_LEVEL]]
+│  ├── [[RESOURCE_ACCESS]]
+│  ├── [[ADMIN_ACCESS]]
+│  └── [[LEAST_PRIVILEGE]]
 │
-├─ [SECRET_STORAGE]
-│  ├── [PASSWORD_MANAGER]
-│  ├── [SECRET_MANAGER]
-│  ├── [KEYCHAIN]
-│  ├── [ENVIRONMENT_VARIABLE]
-│  ├── [DOCKER_SECRET]
-│  ├── [KUBERNETES_SECRET]
-│  ├── [CLOUD_SECRET_STORE]
-│  ├── [ENCRYPTED_FILE]
-│  └── [HARDWARE_SECURITY_MODULE]
+├─ [[SECRET_STORAGE]]
+│  ├── [[PASSWORD_MANAGER]]
+│  ├── [[SECRET_MANAGER]]
+│  ├── [[KEYCHAIN]]
+│  ├── [[ENVIRONMENT_VARIABLE]]
+│  ├── [[DOCKER_SECRET]]
+│  ├── [[KUBERNETES_SECRET]]
+│  ├── [[CLOUD_SECRET_STORE]]
+│  ├── [[ENCRYPTED_FILE]]
+│  └── [[HARDWARE_SECURITY_MODULE]]
 │
-├─ [SECRET_LIFECYCLE]
-│  ├── [GENERATE]
-│  ├── [PROVISION]
-│  ├── [STORE]
-│  ├── [DISTRIBUTE]
-│  ├── [USE]
-│  ├── [ROTATE]
-│  ├── [REVOKE]
-│  ├── [EXPIRE]
-│  ├── [REPLACE]
-│  ├── [ARCHIVE]
-│  └── [DESTROY]
+├─ [[SECRET_LIFECYCLE]]
+│  ├── [[GENERATE]]
+│  ├── [[PROVISION]]
+│  ├── [[STORE]]
+│  ├── [[DISTRIBUTE]]
+│  ├── [[USE]]
+│  ├── [[ROTATE]]
+│  ├── [[REVOKE]]
+│  ├── [[EXPIRE]]
+│  ├── [[REPLACE]]
+│  ├── [[ARCHIVE]]
+│  └── [[DESTROY]]
 │
-├─ [SECRET_DISCOVERY]
-│  ├── [SECRET_SCAN]
-│  ├── [LEAK_DETECTION]
-│  ├── [GIT_HISTORY_SCAN]
-│  ├── [ENVIRONMENT_SCAN]
-│  ├── [CONFIG_SCAN]
-│  ├── [LOG_SCAN]
-│  ├── [DOCUMENT_SCAN]
-│  └── [CODE_SCAN]
+├─ [[SECRET_DISCOVERY]]
+│  ├── [[SECRET_SCAN]]
+│  ├── [[LEAK_DETECTION]]
+│  ├── [[GIT_HISTORY_SCAN]]
+│  ├── [[ENVIRONMENT_SCAN]]
+│  ├── [[CONFIG_SCAN]]
+│  ├── [[LOG_SCAN]]
+│  ├── [[DOCUMENT_SCAN]]
+│  └── [[CODE_SCAN]]
 │
-├─ [AUDIT]
-│  ├── [ACCESS_LOG]
-│  ├── [AUTH_LOG]
-│  ├── [TOKEN_USAGE]
-│  ├── [SECRET_ROTATION_LOG]
-│  ├── [REVOCATION_LOG]
-│  ├── [SECURITY_EVENT]
-│  └── [INCIDENT]
+├─ [[AUDIT]]
+│  ├── [[ACCESS_LOG]]
+│  ├── [[AUTH_LOG]]
+│  ├── [[TOKEN_USAGE]]
+│  ├── [[SECRET_ROTATION_LOG]]
+│  ├── [[REVOCATION_LOG]]
+│  ├── [[SECURITY_EVENT]]
+│  └── [[INCIDENT]]
 │
-└─ [REALITY]
-   ├── [SECRET_EXISTS]
-   ├── [SECRET_LOCATION]
-   ├── [SECRET_OWNER]
-   ├── [SECRET_STATUS]
-   ├── [SECRET_EXPIRATION]
-   ├── [ACCESS_VERIFIED]
-   ├── [ROTATION_VERIFIED]
-   └── [REVOCATION_VERIFIED]
+└─ [[REALITY]]
+   ├── [[SECRET_EXISTS]]
+   ├── [[SECRET_LOCATION]]
+   ├── [[SECRET_OWNER]]
+   ├── [[SECRET_STATUS]]
+   ├── [[SECRET_EXPIRATION]]
+   ├── [[ACCESS_VERIFIED]]
+   ├── [[ROTATION_VERIFIED]]
+   └── [[REVOCATION_VERIFIED]]
 ```
 
 ---
 
-## [IDENTITY_AUTHENTICATION_FLOW] — The Core Loop
+## [[IDENTITY_AUTHENTICATION_FLOW]] — The Core Loop
 
 ```
-[IDENTITY]
+[[IDENTITY]]
     ↓ (Who are you?)
-[AUTHENTICATION]
+[[AUTHENTICATION]]
     ↓ (Prove it)
-[SESSION]
+[[SESSION]]
     ↓ (Logged in)
-[AUTHORIZATION]
+[[AUTHORIZATION]]
     ↓ (What are you allowed to do?)
-[PERMISSION]
+[[PERMISSION]]
     ↓ (Grant access)
-[RESOURCE]
+[[RESOURCE]]
     ↓ (Use the resource)
-[AUDIT]
+[[AUDIT]]
     ↓ (Log the action)
-[REALITY]
+[[REALITY]]
     ↓ (Record what happened)
 [[NEXT_ACTION]] ↺
 ```
 
 ---
 
-## [SECRET_LIFECYCLE_FLOW] — Birth to Death
+## [[SECRET_LIFECYCLE_FLOW]] — Birth to Death
 
 ```
-[GENERATE]
+[[GENERATE]]
     ↓ (Create credential)
-[STORE]
+[[STORE]]
     ↓ (Place in secret manager)
-[PROVISION]
+[[PROVISION]]
     ↓ (Distribute to consumers)
-[USE]
+[[USE]]
     ↓ (Authenticate/authorize with it)
-[MONITOR]
+[[MONITOR]]
     ↓ (Watch for expiration/compromise)
-[ROTATE]
+[[ROTATE]]
     ↓ (Replace with new credential)
-[REVOKE]
+[[REVOKE]]
     ↓ (Disable old credential)
-[DESTROY]
+[[DESTROY]]
     ↓ (Securely erase)
-[AUDIT]
+[[AUDIT]]
     ↓ (Log lifecycle)
 [[NEXT_CREDENTIAL]] ↺
 ```
 
 ---
 
-## [SECRET_TYPES] — Credential Taxonomy
+## [[SECRET_TYPES]] — Credential Taxonomy
 
-### [PASSWORDS]
+### [[PASSWORDS]]
 ```
-├── [HUMAN_PASSWORD]
-├── [SERVICE_PASSWORD]
-├── [DATABASE_PASSWORD]
-├── [ADMIN_PASSWORD]
-├── [APPLICATION_PASSWORD]
-├── [ROOT_PASSWORD]
-└── [RECOVERY_PASSWORD]
-```
-
-### [API_KEYS]
-```
-├── [PROVIDER_API_KEY]
-├── [SERVICE_API_KEY]
-├── [APPLICATION_API_KEY]
-├── [PUBLIC_API_KEY]
-├── [PRIVATE_API_KEY]
-├── [READ_ONLY_KEY]
-└── [ADMIN_KEY]
+├── [[HUMAN_PASSWORD]]
+├── [[SERVICE_PASSWORD]]
+├── [[DATABASE_PASSWORD]]
+├── [[ADMIN_PASSWORD]]
+├── [[APPLICATION_PASSWORD]]
+├── [[ROOT_PASSWORD]]
+└── [[RECOVERY_PASSWORD]]
 ```
 
-### [TOKENS]
+### [[API_KEYS]]
 ```
-├── [ACCESS_TOKEN]
-├── [REFRESH_TOKEN]
-├── [SESSION_TOKEN]
-├── [BEARER_TOKEN]
-├── [OAUTH_TOKEN]
-├── [JWT]
-├── [WEBHOOK_TOKEN]
-├── [PERSONAL_ACCESS_TOKEN]
-└── [SERVICE_TOKEN]
+├── [[PROVIDER_API_KEY]]
+├── [[SERVICE_API_KEY]]
+├── [[APPLICATION_API_KEY]]
+├── [[PUBLIC_API_KEY]]
+├── [[PRIVATE_API_KEY]]
+├── [[READ_ONLY_KEY]]
+└── [[ADMIN_KEY]]
 ```
 
-### [KEYS]
+### [[TOKENS]]
 ```
-├── [SSH_PRIVATE_KEY]
-├── [SSH_PUBLIC_KEY]
-├── [TLS_PRIVATE_KEY]
-├── [TLS_CERTIFICATE]
-├── [SIGNING_KEY]
-├── [ENCRYPTION_KEY]
-├── [KMS_KEY]
-├── [GPG_KEY]
-└── [HARDWARE_KEY]
+├── [[ACCESS_TOKEN]]
+├── [[REFRESH_TOKEN]]
+├── [[SESSION_TOKEN]]
+├── [[BEARER_TOKEN]]
+├── [[OAUTH_TOKEN]]
+├── [[JWT]]
+├── [[WEBHOOK_TOKEN]]
+├── [[PERSONAL_ACCESS_TOKEN]]
+└── [[SERVICE_TOKEN]]
 ```
 
----
-
-## [AUTHENTICATION_METHODS] — How Identity is Proven
-
+### [[KEYS]]
 ```
-[AUTHENTICATION_METHOD]
-
-├── [PASSWORD_AUTH]          ← Username + password
-├── [PASSKEY]                ← WebAuthn/FIDO2
-├── [MFA]                    ← Multi-factor (password + TOTP/hardware)
-├── [TOTP]                   ← Time-based one-time password
-├── [HARDWARE_KEY]           ← Physical security key
-├── [BIOMETRIC]              ← Fingerprint/Face/Iris
-├── [OAUTH]                  ← Delegated authorization
-├── [OIDC]                   ← Identity delegation
-├── [SAML]                   ← Enterprise SSO
-├── [SSH_AUTH]               ← SSH key-based auth
-├── [CERTIFICATE_AUTH]       ← TLS certificate
-└── [WORKLOAD_AUTH]          ← Service-to-service authentication
+├── [[SSH_PRIVATE_KEY]]
+├── [[SSH_PUBLIC_KEY]]
+├── [[TLS_PRIVATE_KEY]]
+├── [[TLS_CERTIFICATE]]
+├── [[SIGNING_KEY]]
+├── [[ENCRYPTION_KEY]]
+├── [[KMS_KEY]]
+├── [[GPG_KEY]]
+└── [[HARDWARE_KEY]]
 ```
 
 ---
 
-## [AUTHENTICATION_VS_AUTHORIZATION] — Critical Distinction
+## [[AUTHENTICATION_METHODS]] — How Identity is Proven
+
+```
+[[AUTHENTICATION_METHOD]]
+
+├── [[PASSWORD_AUTH]]          ← Username + password
+├── [[PASSKEY]]                ← WebAuthn/FIDO2
+├── [[MFA]]                    ← Multi-factor (password + TOTP/hardware)
+├── [[TOTP]]                   ← Time-based one-time password
+├── [[HARDWARE_KEY]]           ← Physical security key
+├── [[BIOMETRIC]]              ← Fingerprint/Face/Iris
+├── [[OAUTH]]                  ← Delegated authorization
+├── [[OIDC]]                   ← Identity delegation
+├── [[SAML]]                   ← Enterprise SSO
+├── [[SSH_AUTH]]               ← SSH key-based auth
+├── [[CERTIFICATE_AUTH]]       ← TLS certificate
+└── [[WORKLOAD_AUTH]]          ← Service-to-service authentication
+```
+
+---
+
+## [[AUTHENTICATION_VS_AUTHORIZATION]] — Critical Distinction
 
 ```
 AUTHENTICATION (AuthN)
@@ -319,53 +319,53 @@ ACTION
 
 ---
 
-## [SECRET_STORAGE_SYSTEMS] — Where Secrets Live
+## [[SECRET_STORAGE_SYSTEMS]] — Where Secrets Live
 
 ```
-[SECRET_STORAGE]
+[[SECRET_STORAGE]]
 
-├── [PASSWORD_MANAGER]
+├── [[PASSWORD_MANAGER]]
 │   ├── 1Password
 │   ├── Bitwarden
 │   ├── LastPass
 │   └── KeePass
 │
-├── [SECRET_MANAGER]
+├── [[SECRET_MANAGER]]
 │   ├── AWS Secrets Manager
 │   ├── Azure Key Vault
 │   ├── Google Secret Manager
 │   └── HashiCorp Vault
 │
-├── [KEYCHAIN]
+├── [[KEYCHAIN]]
 │   ├── macOS Keychain
 │   ├── Windows Credential Manager
 │   └── GNOME Keyring
 │
-├── [ENVIRONMENT_VARIABLE]
+├── [[ENVIRONMENT_VARIABLE]]
 │   ├── .env files (NEVER in Git)
 │   ├── ~/.bashrc / ~/.zshrc
 │   └── Shell environment
 │
-├── [DOCKER_SECRET]
+├── [[DOCKER_SECRET]]
 │   ├── Docker Swarm secrets
 │   ├── Docker Compose secrets
 │   └── Docker volume mounts
 │
-├── [KUBERNETES_SECRET]
+├── [[KUBERNETES_SECRET]]
 │   ├── etcd (encrypted)
 │   ├── Sealed Secrets
 │   └── External Secrets Operator
 │
-├── [CLOUD_SECRET_STORE]
+├── [[CLOUD_SECRET_STORE]]
 │   ├── AWS Systems Manager Parameter Store
 │   ├── Google Cloud Secret Manager
 │   └── Azure Key Vault
 │
-├── [ENCRYPTED_FILE]
+├── [[ENCRYPTED_FILE]]
 │   ├── Encrypted with age/gpg
 │   └── Stored in secure location
 │
-└── [HARDWARE_SECURITY_MODULE]
+└── [[HARDWARE_SECURITY_MODULE]]
     ├── YubiKey
     ├── Nitrokey
     └── Hardware tokens
@@ -373,44 +373,44 @@ ACTION
 
 ---
 
-## [SECRET_DISCOVERY_FLOW] — Detection & Response
+## [[SECRET_DISCOVERY_FLOW]] — Detection & Response
 
 ```
-[SECRET_DETECTED]
+[[SECRET_DETECTED]]
       ↓
-[CLASSIFY]
-      ├── [FALSE_POSITIVE]
-      ├── [PUBLIC_NON_SECRET]
-      ├── [TEST_CREDENTIAL]
-      ├── [REAL_CREDENTIAL]
-      └── [COMPROMISED_CREDENTIAL]
+[[CLASSIFY]]
+      ├── [[FALSE_POSITIVE]]
+      ├── [[PUBLIC_NON_SECRET]]
+      ├── [[TEST_CREDENTIAL]]
+      ├── [[REAL_CREDENTIAL]]
+      └── [[COMPROMISED_CREDENTIAL]]
       ↓
-[IDENTIFY_PROVIDER]
+[[IDENTIFY_PROVIDER]]
       ↓
-[IDENTIFY_OWNER]
+[[IDENTIFY_OWNER]]
       ↓
-[IDENTIFY_CONSUMER]
+[[IDENTIFY_CONSUMER]]
       ↓
-[CHECK_EXPOSURE]
+[[CHECK_EXPOSURE]]
       ↓
-[ASSESS_RISK]
+[[ASSESS_RISK]]
       ↓
-[REVOKE_IF_NECESSARY]
+[[REVOKE_IF_NECESSARY]]
       ↓
-[ROTATE]
+[[ROTATE]]
       ↓
-[REMOVE_FROM_SOURCE]
+[[REMOVE_FROM_SOURCE]]
       ↓
-[VERIFY_REMOVAL]
+[[VERIFY_REMOVAL]]
       ↓
-[AUDIT]
+[[AUDIT]]
       ↓
-[MONITORING]
+[[MONITORING]]
 ```
 
 ---
 
-## [CREDENTIAL_REGISTRY_FORMAT] — Metadata Structure
+## [[CREDENTIAL_REGISTRY_FORMAT]] — Metadata Structure
 
 Every credential has metadata (in Company Brain) separate from the value (in Secret Manager):
 
@@ -479,22 +479,22 @@ related:
 
 ---
 
-## [ENVIRONMENT_SEPARATION] — Isolation by Tier
+## [[ENVIRONMENT_SEPARATION]] — Isolation by Tier
 
 ```
-[ENVIRONMENT]
+[[ENVIRONMENT]]
 
-├── [LOCAL]
+├── [[LOCAL]]
 │   └── Dev machine credentials
-├── [DEV]
+├── [[DEV]]
 │   └── Development server credentials
-├── [TEST]
+├── [[TEST]]
 │   └── Test environment credentials
-├── [STAGING]
+├── [[STAGING]]
 │   └── Staging environment credentials
-├── [PRODUCTION]
+├── [[PRODUCTION]]
 │   └── Production credentials (highest security)
-└── [DISASTER_RECOVERY]
+└── [[DISASTER_RECOVERY]]
     └── DR site credentials
 ```
 
@@ -510,47 +510,47 @@ PRODUCTION_API_KEY
 
 ---
 
-## [DOCKER_SECRET_ONTOLOGY] — Container Credentials
+## [[DOCKER_SECRET_ONTOLOGY]] — Container Credentials
 
 ```
-[DOCKER]
+[[DOCKER]]
    ↓
-[CONTAINER]
+[[CONTAINER]]
    ↓
-[SECRET_INJECTION]
-   ├── [ENVIRONMENT_VARIABLE]
-   ├── [SECRET_FILE]
-   ├── [DOCKER_SECRET]
-   └── [EXTERNAL_SECRET_MANAGER]
+[[SECRET_INJECTION]]
+   ├── [[ENVIRONMENT_VARIABLE]]
+   ├── [[SECRET_FILE]]
+   ├── [[DOCKER_SECRET]]
+   └── [[EXTERNAL_SECRET_MANAGER]]
 
 CORRECT:
-    [SECRET_MANAGER]
+    [[SECRET_MANAGER]]
         ↓
-    [SECRET_INJECTION]
+    [[SECRET_INJECTION]]
         ↓
-    [CONTAINER]
+    [[CONTAINER]]
 
 WRONG:
-    [SECRET]
+    [[SECRET]]
         ↓
     [docker-compose.yml]
         ↓
-    [GIT]
+    [[GIT]]
 ```
 
 ---
 
-## [CREDENTIAL_DEPENDENCY_GRAPH] — Impact Analysis
+## [[CREDENTIAL_DEPENDENCY_GRAPH]] — Impact Analysis
 
 Allows the Company Brain to answer: **"What breaks if this credential expires?"**
 
 ```
 [SECRET: SEC-OMNIROUTE-001]
-   ├── [AUTHENTICATES] → [[OMNIROUTE]]
-   ├── [AUTHORIZES] → [MODEL_ROUTING]
-   ├── [USED_BY] → [[CLAUDE_CODE]]
-   ├── [USED_BY] → [[OPENCLAW]]
-   └── [USED_BY] → [[ANTIGRAVITY]]
+   ├── [[AUTHENTICATES]] → [[OMNIROUTE]]
+   ├── [[AUTHORIZES]] → [[MODEL_ROUTING]]
+   ├── [[USED_BY]] → [[CLAUDE_CODE]]
+   ├── [[USED_BY]] → [[OPENCLAW]]
+   └── [[USED_BY]] → [[ANTIGRAVITY]]
         ↓
    [[OMNIROUTE]]
         ↓
@@ -560,7 +560,7 @@ Allows the Company Brain to answer: **"What breaks if this credential expires?"*
         ↓
    [[TASK_EXECUTION]]
         ↓
-   [DEPENDENCY_IMPACT]
+   [[DEPENDENCY_IMPACT]]
 
 Result:
     SECRET EXPIRATION
@@ -576,7 +576,7 @@ Result:
 
 ---
 
-## [AUTH_CONNECTIVITY_TESTING] — Verification
+## [[AUTH_CONNECTIVITY_TESTING]] — Verification
 
 Every credential should have associated connectivity tests:
 
@@ -615,12 +615,12 @@ secret_exposed: false
 
 ---
 
-## [SECURITY_REALITY] — The Source of Truth
+## [[SECURITY_REALITY]] — The Source of Truth
 
 ```
-[SECURITY_REALITY]
+[[SECURITY_REALITY]]
 
-├── [SECRET_METADATA]
+├── [[SECRET_METADATA]]
 │   ├── ID
 │   ├── TYPE
 │   ├── PROVIDER
@@ -630,14 +630,14 @@ secret_exposed: false
 │   ├── STATUS
 │   └── EXPIRATION
 │
-├── [SECRET_VERIFICATION]
+├── [[SECRET_VERIFICATION]]
 │   ├── EXISTS: [VERIFIED | NOT_VERIFIED]
 │   ├── ACCESSIBLE: [VERIFIED | NOT_VERIFIED]
 │   ├── SCOPE: [VERIFIED | NOT_VERIFIED]
 │   ├── EXPIRATION: [NOT_VERIFIED | EXPIRING | EXPIRED]
 │   └── ROTATION: [VERIFIED | OVERDUE]
 │
-├── [SECURITY_EVENTS]
+├── [[SECURITY_EVENTS]]
 │   ├── CREATED
 │   ├── ROTATED
 │   ├── REVOKED
@@ -645,7 +645,7 @@ secret_exposed: false
 │   ├── COMPROMISED
 │   └── DESTROYED
 │
-└── [AUDIT_TRAIL]
+└── [[AUDIT_TRAIL]]
     ├── WHO ACCESSED
     ├── WHEN
     ├── WHAT_THEY_DID
@@ -655,7 +655,7 @@ secret_exposed: false
 
 ---
 
-## [COMPANY_BRAIN_SECURITY_INTEGRATION] — Full Wiring
+## [[COMPANY_BRAIN_SECURITY_INTEGRATION]] — Full Wiring
 
 ```
 [[WHOAMI]]
@@ -663,42 +663,42 @@ secret_exposed: false
     ↓
 [[IDENTITY]]
     │ (Who are we?)
-    ├── [HUMAN_IDENTITY]
-    ├── [SERVICE_IDENTITY]
-    ├── [AGENT_IDENTITY]
-    └── [WORKLOAD_IDENTITY]
+    ├── [[HUMAN_IDENTITY]]
+    ├── [[SERVICE_IDENTITY]]
+    ├── [[AGENT_IDENTITY]]
+    └── [[WORKLOAD_IDENTITY]]
     ↓
 [[AUTHENTICATION]]
     │ (How do we prove it?)
-    ├── [PASSWORD_AUTH]
-    ├── [OAUTH]
-    ├── [SAML]
-    └── [CERTIFICATE_AUTH]
+    ├── [[PASSWORD_AUTH]]
+    ├── [[OAUTH]]
+    ├── [[SAML]]
+    └── [[CERTIFICATE_AUTH]]
     ↓
 [[SESSION]]
     │ (Am I still logged in?)
-    ├── [SESSION_TOKEN]
-    ├── [EXPIRATION]
-    └── [REVOCATION]
+    ├── [[SESSION_TOKEN]]
+    ├── [[EXPIRATION]]
+    └── [[REVOCATION]]
     ↓
 [[AUTHORIZATION]]
     │ (What are we allowed to do?)
-    ├── [ROLE]
-    ├── [PERMISSION]
-    └── [SCOPE]
+    ├── [[ROLE]]
+    ├── [[PERMISSION]]
+    └── [[SCOPE]]
     ↓
 [[SECRETS]]
     │ (What credentials exist?)
-    ├── [API_KEYS]
-    ├── [TOKENS]
-    ├── [PASSWORDS]
-    └── [CERTIFICATES]
+    ├── [[API_KEYS]]
+    ├── [[TOKENS]]
+    ├── [[PASSWORDS]]
+    └── [[CERTIFICATES]]
     ↓
 [[SECRET_STORAGE]]
     │ (Where are they kept?)
-    ├── [KEYCHAIN]
-    ├── [SECRET_MANAGER]
-    └── [CLOUD_VAULT]
+    ├── [[KEYCHAIN]]
+    ├── [[SECRET_MANAGER]]
+    └── [[CLOUD_VAULT]]
     ↓
 [[INFRASTRUCTURE]]
     │ (What systems use them?)
@@ -715,23 +715,23 @@ secret_exposed: false
     ↓
 [[AUDIT]]
     │ (What happened?)
-    ├── [ACCESS_LOG]
-    ├── [AUTH_LOG]
-    └── [SECURITY_EVENT]
+    ├── [[ACCESS_LOG]]
+    ├── [[AUTH_LOG]]
+    └── [[SECURITY_EVENT]]
     ↓
 [[REALITY]]
     │ (Current verified state)
-    ├── [SECRETS_VERIFIED]
-    ├── [CREDENTIALS_ACTIVE]
-    ├── [ACCESS_CURRENT]
-    └── [EXPIRATION_CHECKED]
+    ├── [[SECRETS_VERIFIED]]
+    ├── [[CREDENTIALS_ACTIVE]]
+    ├── [[ACCESS_CURRENT]]
+    └── [[EXPIRATION_CHECKED]]
     ↓
 [[NEXT_ACTION]] ↺
 ```
 
 ---
 
-## [GOLDEN_RULE] — Never Do This
+## [[GOLDEN_RULE]] — Never Do This
 
 **NEVER place these in Company Brain:**
 
@@ -760,19 +760,19 @@ secret_exposed: false
 
 ---
 
-## [IMPLEMENTATION_ARCHITECTURE]
+## [[IMPLEMENTATION_ARCHITECTURE]]
 
 ```
 ┌─────────────────────────────────────┐
 │  [[COMPANY_BRAIN]]                  │
 │                                     │
 │  ├── [[SECRETS_AND_AUTH]]           │
-│  │   ├── [SECRET_REGISTRY]          │
-│  │   ├── [CREDENTIAL_REGISTRY]      │
-│  │   ├── [IDENTITY_REGISTRY]        │
-│  │   ├── [ACCESS_REGISTRY]          │
-│  │   ├── [AUTH_CONNECTIVITY_TESTS]  │
-│  │   └── [SECURITY_REALITY]         │
+│  │   ├── [[SECRET_REGISTRY]]          │
+│  │   ├── [[CREDENTIAL_REGISTRY]]      │
+│  │   ├── [[IDENTITY_REGISTRY]]        │
+│  │   ├── [[ACCESS_REGISTRY]]          │
+│  │   ├── [[AUTH_CONNECTIVITY_TESTS]]  │
+│  │   └── [[SECURITY_REALITY]]         │
 │  │                                   │
 │  └── [[KNOWLEDGE_GRAPH]]            │
 │      (Neo4j relationships)           │
