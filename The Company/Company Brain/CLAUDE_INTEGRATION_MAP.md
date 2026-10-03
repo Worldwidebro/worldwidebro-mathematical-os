@@ -437,3 +437,12 @@ Retry with new permission
 **Related:** All layer docs (OMNIROUTE, OBSIDIAN, NEO4J, etc.)  
 **See also:** [[TASK_EXECUTION_MASTER_ONTOLOGY]]
 
+
+## Hardware & Folder Navigation for [[CLAUDE]]
+
+To ensure Claude (and associated agent frameworks) can easily traverse the physical infrastructure, the integration map explicitly defines connectivity paths:
+
+1. **[[MAC_STUDIO]] Navigation:** Claude can route queries via the alias `ssh macstudio` (configured in ~/.ssh/config) to trigger graph commands on the Neo4j instance running on the Studio.
+2. **[[T7_SHIELD]] Navigation:** When instructed to backup or read bulk repositories, Claude will expect to mount and access `/Volumes/T7Shield`.
+3. **[[COMPANY_BRAIN]] Folder:** The operational knowledge directory currently resides at `/Users/acebless/Documents/The Company/Company Brain` (on the Mac Air) and syncs to `/Volumes/T7Shield/Company Brain`. Claude uses `[[SYSTEM_CONNECTIVITY_WIRED]]` to resolve these mount points automatically.
+

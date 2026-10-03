@@ -14,6 +14,10 @@
 │                     (Primary Compute Node)                   │
 │                                                               │
 │  Docker Services:                                            │
+│    ├─ Neo4j (7474) ─── 20,363 edges (Up 5 days)              │
+│    ├─ Qdrant (6333) ── 17,236 vectors (Up 5 days)            │
+│    ├─ n8n (5678) ───── Active (Up 45 hours)                  │
+│    └─ OmniRoute (3004) ─ ❌ CRASH LOOPING (Restarting)        │
 │    ├─ Neo4j (7474) ─── 20,363 edges, company_brain DB      │
 │    ├─ Qdrant (6333) ── 17,236 vectors, 5+ collections      │
 │    └─ OmniRoute (3004) ─ 110 AI tools, MCP gateway         │
@@ -210,7 +214,9 @@ Expected: **7 nodes**, **7 relationships**
 
 ### Storage Crisis 🔴
 - **Mac Air:** 641 MB free (98% full)
-- **Mac Studio:** 11 GB free (95% full)
+- **Mac Studio (Internal):** 33 GB free (93% full)
+- **LaCie:** 1.7 TB free
+- **T7 Shield:** 758 GB free (Currently mounted here)
 - **Action:** Free up space IMMEDIATELY
   ```bash
   # Mac Air
@@ -250,3 +256,28 @@ Expected: **7 nodes**, **7 relationships**
 **Last Verified:** 2026-10-02 23:58 UTC  
 **Next:** Run ingest script on Mac Studio
 
+
+## Physical & Data Navigation for [[CLAUDE]] and [[AGENTS]]
+
+To allow [[CLAUDE]], [[ANTIGRAVITY]], and other automated systems to seamlessly navigate the physical hardware layout, the following deterministic path definitions map logical nodes to literal filesystem paths. 
+
+### Primary Navigational Pathways
+
+**1. Accessing [[MAC_STUDIO]] (Compute Node)**
+- **Logical:** `[[MAC_STUDIO]]` -> `[[LACIE]]` -> `[[COMPANY_BRAIN]]`
+- **Wired Connection (from Mac Air):** SSH via `100.87.214.70` (Tailscale) or `192.168.1.11` (LAN)
+- **Agent Action:** When an agent needs compute resources, Qdrant vectors, or Neo4j queries on the Studio, execute SSH commands using `ssh macstudio` (which leverages the ~/.ssh/config alias).
+
+**2. Accessing [[T7_SHIELD]] (External NVMe)**
+- **Logical:** `[[T7_SHIELD_EXTERNAL]]` 
+- **Mount Point:** `/Volumes/T7Shield` (or `/Volumes/T7\ Shield`)
+- **Agent Action:** Validate mount via `ls -la /Volumes/T7*`. If present, this is the canonical cold storage/transfer node.
+
+**3. Accessing [[COMPANY_BRAIN]] (Working Folder)**
+- **Logical:** `[[COMPANY_BRAIN_WORKING]]`
+- **T7 Shield Path:** `/Volumes/T7Shield/Company Brain`
+- **Mac Air Local Path:** `/Users/acebless/Documents/The Company/Company Brain`
+- **Mac Studio Path:** `/Volumes/LaCie/Company Brain`
+- **Agent Action:** Agents should default to the current active workspace but explicitly resolve `[[COMPANY_BRAIN]]` location by checking these mount points to navigate physical storage seamlessly.
+
+---

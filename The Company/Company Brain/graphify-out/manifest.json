@@ -1,0 +1,147 @@
+{
+  "/Users/acebless/Documents/The Company/Company Brain/.obsidian/app.json": {
+    "mtime": 1790979669.9536016,
+    "ast_hash": "99914b932bd37a50b983c5e7c90ae93b",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/.obsidian/appearance.json": {
+    "mtime": 1790979669.9538386,
+    "ast_hash": "99914b932bd37a50b983c5e7c90ae93b",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/.obsidian/core-plugins.json": {
+    "mtime": 1790979669.512191,
+    "ast_hash": "7c877bea49eaeabb100563bd157b9051",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/.obsidian/graph.json": {
+    "mtime": 1790980388.007999,
+    "ast_hash": "32a1cc426a4801677529a9acd4a9706b",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/.obsidian/workspace.json": {
+    "mtime": 1790985560.052195,
+    "ast_hash": "2d8c53ec45da13e419a5fbe173804d17",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/_PIPELINES/ingest_connectivity_graph.sh": {
+    "mtime": 1790983487.8500862,
+    "ast_hash": "f56d85f36d4f24bf01e6f0bd9e174ef4",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/CLAUDE_API.md": {
+    "mtime": 1790981111.087881,
+    "ast_hash": "441aecb7cf0a27e87ee82c9f75acdc2b",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/CLAUDE_AUTONOMY.md": {
+    "mtime": 1790981149.0349832,
+    "ast_hash": "9c955ec5661c5df69199765a03c0aa80",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/CLAUDE_CAPABILITIES.md": {
+    "mtime": 1790981004.6613512,
+    "ast_hash": "23c579dcd3d0bbcc3154fca64aad048a",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/CLAUDE_CODE.md": {
+    "mtime": 1790981056.3582973,
+    "ast_hash": "ad26c528308ee6d6330796959e870a9b",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/CLAUDE_INTEGRATION_MAP.md": {
+    "mtime": 1790985434.0066934,
+    "ast_hash": "26d9499cdf699916272bc6fce602d30c",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/CLAUDE_MASTER_ONTOLOGY.md": {
+    "mtime": 1790980923.3291945,
+    "ast_hash": "a7b78703c6daf238fc9a1adb385404e3",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/CLAUDE_REALITY.md": {
+    "mtime": 1790981208.5884151,
+    "ast_hash": "fdf71874e1f5e235e7c7aae29a388535",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/CROSS_LINK_MASTER_ONTOLOGY.md": {
+    "mtime": 1790982657.8754802,
+    "ast_hash": "55b2ca96a8ae4f34d07732d898d27119",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/DATA_FLOW.md": {
+    "mtime": 1790979743.373273,
+    "ast_hash": "b34bd784e59c971acb67c43a7ee0433a",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/FILESYSTEM_AND_DISKMAP_MASTER_ONTOLOGY.md": {
+    "mtime": 1790985558.9662673,
+    "ast_hash": "5abfee754dabfb6d92e3af4f2b768347",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/GITHUB_MASTER_ONTOLOGY.md": {
+    "mtime": 1790981233.3791583,
+    "ast_hash": "402b3c814cc3d4edae22307d640ed23c",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/OBSIDIAN_MASTER_ONTOLOGY.md": {
+    "mtime": 1790982614.1546817,
+    "ast_hash": "498265131ab35d6ed724c6d075f6a658",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/OMNIROUTE_MASTER_ONTOLOGY.md": {
+    "mtime": 1790980833.6594524,
+    "ast_hash": "69ab5eb14528767547e7e1dfaf99805a",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SYSTEM_CONNECTIVITY_AUDIT.md": {
+    "mtime": 1790985553.297237,
+    "ast_hash": "3358dfd394e6ceee86145dd9021d7105",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/SYSTEM_CONNECTIVITY_WIRED.md": {
+    "mtime": 1790985553.2977054,
+    "ast_hash": "8c371a79c469d49a8cc3ea056bde2443",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/TASK_EXECUTION_MASTER_ONTOLOGY.md": {
+    "mtime": 1790980230.7821872,
+    "ast_hash": "b1361d15c5278e23e73341b37eb04333",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/WHERE_WE_ARE.md": {
+    "mtime": 1790985553.298169,
+    "ast_hash": "c1e1b67a13ced49c8ad7fb3db243de38",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/_DOCS/INFRASTRUCTURE_REFERENCE.md": {
+    "mtime": 1790979494.184214,
+    "ast_hash": "8f32ef4fedd04beb278f7948e442753a",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/_INFRASTRUCTURE/INFRASTRUCTURE.md": {
+    "mtime": 1790979464.550916,
+    "ast_hash": "38c92218ab61970497db7c16c82f960f",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/_REGISTRIES/CANONICAL/CLAUDE_SUBAGENTS_REGISTRY.yaml": {
+    "mtime": 1790981476.995621,
+    "ast_hash": "21268e4a905ec3653c192fc332498a6b",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/_REGISTRIES/CANONICAL/NAVIGATION_ALIASES.yaml": {
+    "mtime": 1790981700.754912,
+    "ast_hash": "555ee49f2dee424a7b35c71c3f907d78",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/update.py": {
+    "mtime": 1790985553.2743738,
+    "ast_hash": "83e3be66df2ecf973c84900ed592db31",
+    "semantic_hash": ""
+  },
+  "/Users/acebless/Documents/The Company/Company Brain/update_diskmap.py": {
+    "mtime": 1790985558.941442,
+    "ast_hash": "6035837ea44a926ac8c8c7fb388d7955",
+    "semantic_hash": ""
+  }
+}

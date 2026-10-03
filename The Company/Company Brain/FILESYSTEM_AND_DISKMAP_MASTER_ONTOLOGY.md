@@ -197,9 +197,9 @@ Example:
                                           ├── [[DATABASES]]
                                           └── [[BACKUPS]]
 
-[[MAC_AIR]]
+[[MAC_AIR]] (or [[MAC_STUDIO]])
     ├── [[INTERNAL_SSD]]
-    └── [[T7_SHIELD]]
+    └── [[T7_SHIELD]] (Roaming - currently on Mac Studio)
         ├── [[COMPANY_BRAIN_WORKING]]
         ├── [[REPOSITORIES]]
         └── [[TRANSFER_STAGING]]

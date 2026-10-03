@@ -713,3 +713,7 @@ IMPACT:
 **Maintain this document by:** Running [[CONNECTIVITY_TESTS]] weekly, updating timestamps, marking verified claims only, escalating blockers immediately.
 
 **This is the control plane. Everything else flows from here.**
+
+
+## Current Blockers
+- 🚨 **OmniRoute Gateway Down**: The `omniroute` Docker container on the Mac Studio is currently in a crash loop (`Restarting (7)`). Needs immediate logs/triage.
